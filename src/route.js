@@ -1,99 +1,119 @@
-const SLUG = /^[a-z0-9]+(?:-[a-z0-9]+)*$/;
+const SLUG = /^[a-z0-9]+(?:-[a-z0-9]+)*$/
 
-export function alternates(pathname) {
-  if (pathname === "/") return { html: "/", md: "/.md", json: "/.json" };
-  return { html: pathname, md: `${pathname}.md`, json: `${pathname}.json` };
-}
+export const alternates = (pathname) =>
+  pathname === '/'
+    ? { html: '/', md: '/.md', json: '/.json' }
+    : { html: pathname, md: `${pathname}.md`, json: `${pathname}.json` }
 
-export function parseUrl(url) {
-  const rawPath = url.pathname;
-  if (rawPath.length > 1 && rawPath.endsWith("/")) {
-    const pathname = rawPath.slice(0, -1) || "/";
+export const parseUrl = (url) => {
+  const rawPath = url.pathname
+  if (rawPath.length > 1 && rawPath.endsWith('/')) {
+    const pathname = rawPath.slice(0, -1) || '/'
     return {
-      kind: "redirect",
-      format: "html",
+      kind: 'redirect',
+      format: 'html',
       pathname,
       location: pathname + url.search,
-    };
+    }
   }
 
-  let format = "html";
-  let path = rawPath;
-  if (rawPath.endsWith(".md")) {
-    format = "md";
-    path = rawPath.slice(0, -3);
-  } else if (rawPath.endsWith(".json")) {
-    format = "json";
-    path = rawPath.slice(0, -5);
+  let format = 'html'
+  let path = rawPath
+  if (rawPath.endsWith('.md')) {
+    format = 'md'
+    path = rawPath.slice(0, -3)
+  } else if (rawPath.endsWith('.json')) {
+    format = 'json'
+    path = rawPath.slice(0, -5)
   }
-  if (path === "") path = "/";
+  if (path === '') path = '/'
 
-  if (format === "html") {
-    if (path === "/robots.txt") return route("robots", format, path);
-    if (path === "/sitemap.xml") return route("sitemap", format, path);
-    if (path === "/llms.txt") return route("llms", format, path);
-    if (path === "/style.css") return route("style", format, path);
-    if (path.startsWith("/images/")) return objectRoute("image", path, "images");
-    if (path.startsWith("/audio/")) return objectRoute("audio", path, "audio");
+  if (format === 'html') {
+    if (path === '/robots.txt') return route('robots', format, path)
+    if (path === '/sitemap.xml') return route('sitemap', format, path)
+    if (path === '/llms.txt') return route('llms', format, path)
+    if (path === '/style.css') return route('style', format, path)
+    if (path.startsWith('/images/')) return objectRoute('image', path, 'images')
+    if (path.startsWith('/audio/')) return objectRoute('audio', path, 'audio')
   }
 
-  if (path === "/") return route("home", format, "/");
-  if (path === "/species") return { ...route("species-index", format, path), kvKey: "index/species" };
-  if (path === "/families") return { ...route("families-index", format, path), kvKey: "index/families" };
+  if (path === '/') return route('home', format, '/')
+  if (path === '/species')
+    return { ...route('species-index', format, path), kvKey: 'index/species' }
+  if (path === '/families')
+    return { ...route('families-index', format, path), kvKey: 'index/families' }
 
-  const species = path.match(/^\/species\/([^/]+)$/);
+  const species = path.match(/^\/species\/([^/]+)$/)
   if (species) {
-    const slug = matchSlug(species[1]);
-    if (!slug) return route("not-found", format, path);
-    return { ...route("species", format, `/species/${slug}`), slug, kvKey: `species/${slug}` };
+    const slug = matchSlug(species[1])
+    if (!slug) return route('not-found', format, path)
+    return {
+      ...route('species', format, `/species/${slug}`),
+      slug,
+      kvKey: `species/${slug}`,
+    }
   }
 
-  const family = path.match(/^\/family\/([^/]+)$/);
+  const family = path.match(/^\/family\/([^/]+)$/)
   if (family) {
-    const slug = matchSlug(family[1]);
-    if (!slug) return route("not-found", format, path);
-    return { ...route("family", format, `/family/${slug}`), slug, kvKey: `family/${slug}` };
+    const slug = matchSlug(family[1])
+    if (!slug) return route('not-found', format, path)
+    return {
+      ...route('family', format, `/family/${slug}`),
+      slug,
+      kvKey: `family/${slug}`,
+    }
   }
 
-  const vocab = path.match(/^\/vocab\/([^/]+)$/);
+  const vocab = path.match(/^\/vocab\/([^/]+)$/)
   if (vocab) {
-    const slug = matchSlug(vocab[1]);
-    if (!slug) return route("not-found", format, path);
-    return { ...route("vocab", format, `/vocab/${slug}`), slug, kvKey: `vocab/${slug}` };
+    const slug = matchSlug(vocab[1])
+    if (!slug) return route('not-found', format, path)
+    return {
+      ...route('vocab', format, `/vocab/${slug}`),
+      slug,
+      kvKey: `vocab/${slug}`,
+    }
   }
 
-  return route("not-found", format, path);
+  return route('not-found', format, path)
 }
 
-function route(kind, format, pathname) {
-  return { kind, format, pathname };
+const route = (kind, format, pathname) => ({ kind, format, pathname })
+
+const objectRoute = (kind, path, prefix) => {
+  const key = safeObjectKey(path.slice(`/${prefix}/`.length))
+  if (!key) return route('not-found', 'html', path)
+  return { kind, format: 'html', pathname: path, objectKey: key }
 }
 
-function objectRoute(kind, path, prefix) {
-  const key = safeObjectKey(path.slice(`/${prefix}/`.length));
-  if (!key) return route("not-found", "html", path);
-  return { kind, format: "html", pathname: path, objectKey: key };
-}
-
-function matchSlug(segment) {
-  let decoded;
+const matchSlug = (segment) => {
+  let decoded
   try {
-    decoded = decodeURIComponent(segment);
+    decoded = decodeURIComponent(segment)
   } catch {
-    return null;
+    return null
   }
-  return SLUG.test(decoded) ? decoded : null;
+  return SLUG.test(decoded) ? decoded : null
 }
 
-export function safeObjectKey(raw) {
-  let key;
+export const safeObjectKey = (raw) => {
+  let key
   try {
-    key = decodeURIComponent(raw);
+    key = decodeURIComponent(raw)
   } catch {
-    return null;
+    return null
   }
-  if (!key || key.startsWith("/") || key.endsWith("/") || key.includes("\\") || key.includes("\0")) return null;
-  const parts = key.split("/");
-  if (parts.some((part) => part === "" || part === "." || part === "..")) return null;
-  return key;
+  if (
+    !key ||
+    key.startsWith('/') ||
+    key.endsWith('/') ||
+    key.includes('\\') ||
+    key.includes('\0')
+  )
+    return null
+  const parts = key.split('/')
+  if (parts.some((part) => part === '' || part === '.' || part === '..'))
+    return null
+  return key
 }

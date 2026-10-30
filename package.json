@@ -6,6 +6,8 @@
   "description": "Birds of Kruger National Park, served by a Cloudflare Worker.",
   "scripts": {
     "test": "node --test",
+    "lint": "eslint . && prettier --check \"**/*.{js,mjs}\"",
+    "format": "prettier --write \"**/*.{js,mjs}\"",
     "seed": "node scripts/seed.mjs",
     "dev": "wrangler dev",
     "check": "wrangler deploy --dry-run --outdir dist"
@@ -15,6 +17,9 @@
   },
   "devDependencies": {
     "ajv": "^8.20.0",
+    "eslint": "^10.14.0",
+    "globals": "^17.13.0",
+    "prettier": "^3.9.10",
     "wrangler": "^4.156.0"
   }
 }

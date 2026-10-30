@@ -1,24 +1,24 @@
 export const palette = {
   light: {
-    bg: "#FDF6E3",
-    text: "#1F2A1F",
-    heading: "#28602a",
-    accent: "#7A5A00",
-    headerBg: "#28602a",
-    headerFg: "#F6C64D",
+    bg: '#FDF6E3',
+    text: '#1F2A1F',
+    heading: '#28602a',
+    accent: '#7A5A00',
+    headerBg: '#28602a',
+    headerFg: '#F6C64D',
   },
   dark: {
-    bg: "#12301A",
-    text: "#F3EFE0",
-    heading: "#F6C64D",
-    accent: "#8FD18F",
-    headerBg: "#28602a",
-    headerFg: "#F6C64D",
+    bg: '#12301A',
+    text: '#F3EFE0',
+    heading: '#F6C64D',
+    accent: '#8FD18F',
+    headerBg: '#28602a',
+    headerFg: '#F6C64D',
   },
-};
+}
 
-const light = palette.light;
-const dark = palette.dark;
+const light = palette.light
+const dark = palette.dark
 
 export const css = `/* KNP Birds field guide. Gold is header text and decoration, never body text on the cream page. Green is body headings in light mode and decoration in dark mode. */
 :root {
@@ -323,4 +323,4 @@ th { color: var(--heading); font-weight: 700; }
   .site-header { border-bottom-color: CanvasText; }
   .mark, .sample { border-color: CanvasText; }
 }
-`;
+`

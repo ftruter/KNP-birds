@@ -17,91 +17,105 @@
  *   data/index/<name>.json   → index/<name>
  *   data/vocab/<name>.json   → vocab/<name>
  */
-import { readdir, readFile, writeFile } from "node:fs/promises";
-import path from "node:path";
-import { fileURLToPath } from "node:url";
+import { readdir, readFile, writeFile } from 'node:fs/promises'
+import path from 'node:path'
+import { fileURLToPath } from 'node:url'
 
-const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
+const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..')
 
-const COUNTABLE_UNITS = new Set(["individuals", "pairs", "breeding pairs"]);
+const COUNTABLE_UNITS = new Set(['individuals', 'pairs', 'breeding pairs'])
 
-export function speciesNames(species) {
-  const source = species?.commonNames || species?.names || {};
-  const names = {};
-  if (typeof source.en === "string" && source.en.trim()) names.en = source.en.trim();
-  if (typeof source.af === "string" && source.af.trim()) names.af = source.af.trim();
-  return names;
+export const speciesNames = (species) => {
+  const source = species?.commonNames || species?.names || {}
+  const names = {}
+  if (typeof source.en === 'string' && source.en.trim())
+    names.en = source.en.trim()
+  if (typeof source.af === 'string' && source.af.trim())
+    names.af = source.af.trim()
+  return names
 }
 
-export function embedSpecies(species) {
-  return {
-    slug: species.slug,
-    scientificName: species.scientificName,
-    names: speciesNames(species),
-  };
-}
+export const embedSpecies = (species) => ({
+  slug: species.slug,
+  scientificName: species.scientificName,
+  names: speciesNames(species),
+})
 
 /** A species counts only when both bounds and a unit are present. */
-export function countedIndividuals(species) {
-  const population = species?.population;
-  const unit = population?.unit;
-  const low = population?.estimate?.low;
-  const high = population?.estimate?.high;
-  if (!COUNTABLE_UNITS.has(unit) || !Number.isInteger(low) || !Number.isInteger(high)) return null;
-  const factor = unit === "individuals" ? 1 : 2;
-  return { low: low * factor, high: high * factor };
+export const countedIndividuals = (species) => {
+  const population = species?.population
+  const unit = population?.unit
+  const low = population?.estimate?.low
+  const high = population?.estimate?.high
+  if (
+    !COUNTABLE_UNITS.has(unit) ||
+    !Number.isInteger(low) ||
+    !Number.isInteger(high)
+  )
+    return null
+  const factor = unit === 'individuals' ? 1 : 2
+  return { low: low * factor, high: high * factor }
 }
 
-export function individualMidpoint(species) {
-  const counted = countedIndividuals(species);
-  if (!counted) return null;
-  return Math.round((counted.low + counted.high) / 2);
+export const individualMidpoint = (species) => {
+  const counted = countedIndividuals(species)
+  if (!counted) return null
+  return Math.round((counted.low + counted.high) / 2)
 }
 
-export function totalMidpoint(population) {
-  if (!Number.isInteger(population?.low) || !Number.isInteger(population?.high)) return null;
-  return Math.round((population.low + population.high) / 2);
+export const totalMidpoint = (population) => {
+  if (!Number.isInteger(population?.low) || !Number.isInteger(population?.high))
+    return null
+  return Math.round((population.low + population.high) / 2)
 }
 
-function compareScientificName(a, b) {
-  return a.localeCompare(b, "en", { sensitivity: "base" }) || a.localeCompare(b, "en");
-}
+const compareScientificName = (a, b) =>
+  a.localeCompare(b, 'en', { sensitivity: 'base' }) || a.localeCompare(b, 'en')
 
 /** Up to three slugs: estimated birds first (highest midpoint), then unestimated, then scientific name. */
-export function iconicSpecies(speciesDocs) {
+export const iconicSpecies = (speciesDocs) => {
   const ranked = speciesDocs.slice().sort((a, b) => {
-    const aMid = individualMidpoint(a);
-    const bMid = individualMidpoint(b);
-    const aKnown = aMid != null;
-    const bKnown = bMid != null;
-    if (aKnown !== bKnown) return aKnown ? -1 : 1;
-    if (aKnown && bKnown && aMid !== bMid) return bMid - aMid;
-    return compareScientificName(a.scientificName, b.scientificName) || a.slug.localeCompare(b.slug);
-  });
-  return ranked.slice(0, 3).map((species) => species.slug);
+    const aMid = individualMidpoint(a)
+    const bMid = individualMidpoint(b)
+    const aKnown = aMid != null
+    const bKnown = bMid != null
+    if (aKnown !== bKnown) return aKnown ? -1 : 1
+    if (aKnown && bKnown && aMid !== bMid) return bMid - aMid
+    return (
+      compareScientificName(a.scientificName, b.scientificName) ||
+      a.slug.localeCompare(b.slug)
+    )
+  })
+  return ranked.slice(0, 3).map((species) => species.slug)
 }
 
-export function indexValue(names, population) {
-  return {
-    en: names.en,
-    af: names.af ?? null,
-    population: Number.isInteger(population) ? population : null,
-  };
+export const indexValue = (names, population) => ({
+  en: names.en,
+  af: names.af ?? null,
+  population: Number.isInteger(population) ? population : null,
+})
+
+const dictionaryByScientificName = (rows) => {
+  const ordered = rows
+    .slice()
+    .sort((a, b) => compareScientificName(a.scientificName, b.scientificName))
+  const dictionary = {}
+  for (const row of ordered) dictionary[row.scientificName] = row.value
+  return dictionary
 }
 
-function dictionaryByScientificName(rows) {
-  const ordered = rows.slice().sort((a, b) => compareScientificName(a.scientificName, b.scientificName));
-  const dictionary = {};
-  for (const row of ordered) dictionary[row.scientificName] = row.value;
-  return dictionary;
-}
-
-export function familyPopulation(speciesDocs) {
-  const speciesTotal = speciesDocs.length;
-  const counted = speciesDocs.map(countedIndividuals).filter(Boolean);
-  const complete = speciesTotal > 0 && counted.length === speciesTotal;
+export const familyPopulation = (speciesDocs) => {
+  const speciesTotal = speciesDocs.length
+  const counted = speciesDocs.map(countedIndividuals).filter(Boolean)
+  const complete = speciesTotal > 0 && counted.length === speciesTotal
   if (counted.length === 0) {
-    return { low: null, high: null, speciesCounted: 0, speciesTotal, complete: false };
+    return {
+      low: null,
+      high: null,
+      speciesCounted: 0,
+      speciesTotal,
+      complete: false,
+    }
   }
   return {
     low: counted.reduce((sum, item) => sum + item.low, 0),
@@ -109,23 +123,23 @@ export function familyPopulation(speciesDocs) {
     speciesCounted: counted.length,
     speciesTotal,
     complete,
-  };
+  }
 }
 
-function byScientificName(a, b) {
-  return a.scientificName.localeCompare(b.scientificName, "en") || a.slug.localeCompare(b.slug);
+const byScientificName = (a, b) =>
+  a.scientificName.localeCompare(b.scientificName, 'en') ||
+  a.slug.localeCompare(b.slug)
+
+const copyNames = (names) => {
+  const copy = { en: names.en }
+  if (names.af) copy.af = names.af
+  return copy
 }
 
-function copyNames(names) {
-  const copy = { en: names.en };
-  if (names.af) copy.af = names.af;
-  return copy;
-}
-
-export function deriveFamilyDocument(family, speciesDocs) {
-  const species = speciesDocs.slice().sort(byScientificName).map(embedSpecies);
+export const deriveFamilyDocument = (family, speciesDocs) => {
+  const species = speciesDocs.slice().sort(byScientificName).map(embedSpecies)
   return {
-    kind: "family",
+    kind: 'family',
     slug: family.slug,
     scientificName: family.scientificName,
     commonNames: copyNames(family.commonNames),
@@ -134,125 +148,168 @@ export function deriveFamilyDocument(family, speciesDocs) {
     species,
     iconicSpecies: iconicSpecies(speciesDocs),
     population: familyPopulation(speciesDocs),
-  };
+  }
 }
 
-export function deriveSpeciesIndex(speciesDocs) {
-  return dictionaryByScientificName(speciesDocs.map((species) => ({
-    scientificName: species.scientificName,
-    value: indexValue(speciesNames(species), individualMidpoint(species)),
-  })));
-}
+export const deriveSpeciesIndex = (speciesDocs) =>
+  dictionaryByScientificName(
+    speciesDocs.map((species) => ({
+      scientificName: species.scientificName,
+      value: indexValue(speciesNames(species), individualMidpoint(species)),
+    })),
+  )
 
-export function deriveFamiliesIndex(familyDocs) {
-  return dictionaryByScientificName(familyDocs.map((family) => ({
-    scientificName: family.scientificName,
-    value: indexValue(copyNames(family.commonNames), totalMidpoint(family.population)),
-  })));
-}
+export const deriveFamiliesIndex = (familyDocs) =>
+  dictionaryByScientificName(
+    familyDocs.map((family) => ({
+      scientificName: family.scientificName,
+      value: indexValue(
+        copyNames(family.commonNames),
+        totalMidpoint(family.population),
+      ),
+    })),
+  )
 
-export function deriveAll(speciesDocs, familyDocs) {
-  const familiesBySlug = new Map(familyDocs.map((family) => [family.slug, family]));
-  const grouped = new Map(familyDocs.map((family) => [family.slug, []]));
+export const deriveAll = (speciesDocs, familyDocs) => {
+  const familiesBySlug = new Map(
+    familyDocs.map((family) => [family.slug, family]),
+  )
+  const grouped = new Map(familyDocs.map((family) => [family.slug, []]))
   for (const species of speciesDocs) {
     if (!familiesBySlug.has(species.family)) {
-      throw new Error(`Species ${species.slug} names family ${species.family}, which has no family file`);
+      throw new Error(
+        `Species ${species.slug} names family ${species.family}, which has no family file`,
+      )
     }
-    grouped.get(species.family).push(species);
+    grouped.get(species.family).push(species)
   }
-  const families = familyDocs.map((family) => deriveFamilyDocument(family, grouped.get(family.slug)));
+  const families = familyDocs.map((family) =>
+    deriveFamilyDocument(family, grouped.get(family.slug)),
+  )
   return {
     families,
     speciesIndex: deriveSpeciesIndex(speciesDocs),
     familiesIndex: deriveFamiliesIndex(families),
-  };
+  }
 }
 
-export async function readCatalog(dataDir = path.join(root, "data")) {
-  const species = [];
-  const families = [];
-  for (const file of await walk(path.join(dataDir, "species"))) {
-    species.push(JSON.parse(await readFile(file, "utf8")));
+export const readCatalog = async (dataDir = path.join(root, 'data')) => {
+  const species = []
+  const families = []
+  for (const file of await walk(path.join(dataDir, 'species'))) {
+    species.push(JSON.parse(await readFile(file, 'utf8')))
   }
-  for (const file of await walk(path.join(dataDir, "family"))) {
-    families.push(JSON.parse(await readFile(file, "utf8")));
+  for (const file of await walk(path.join(dataDir, 'family'))) {
+    families.push(JSON.parse(await readFile(file, 'utf8')))
   }
-  return { species, families };
+  return { species, families }
 }
 
-export async function writeDerived(dataDir = path.join(root, "data")) {
-  const { species, families } = await readCatalog(dataDir);
-  const derived = deriveAll(species, families);
-  const writes = [];
+export const writeDerived = async (dataDir = path.join(root, 'data')) => {
+  const { species, families } = await readCatalog(dataDir)
+  const derived = deriveAll(species, families)
+  const writes = []
   for (const family of derived.families) {
-    writes.push(writeJson(path.join(dataDir, "family", `${family.slug}.json`), family));
+    writes.push(
+      writeJson(path.join(dataDir, 'family', `${family.slug}.json`), family),
+    )
   }
-  writes.push(writeJson(path.join(dataDir, "index", "species.json"), derived.speciesIndex));
-  writes.push(writeJson(path.join(dataDir, "index", "families.json"), derived.familiesIndex));
-  await Promise.all(writes);
-  return derived;
+  writes.push(
+    writeJson(
+      path.join(dataDir, 'index', 'species.json'),
+      derived.speciesIndex,
+    ),
+  )
+  writes.push(
+    writeJson(
+      path.join(dataDir, 'index', 'families.json'),
+      derived.familiesIndex,
+    ),
+  )
+  await Promise.all(writes)
+  return derived
 }
 
-function writeJson(file, value) {
-  return writeFile(file, `${JSON.stringify(value, null, 2)}\n`);
-}
+const writeJson = (file, value) =>
+  writeFile(file, `${JSON.stringify(value, null, 2)}\n`)
 
-export async function collectEntries(dataDir = path.join(root, "data")) {
-  const files = await walk(dataDir);
-  const entries = [];
+export const collectEntries = async (dataDir = path.join(root, 'data')) => {
+  const files = await walk(dataDir)
+  const entries = []
   for (const file of files) {
-    const relative = path.relative(dataDir, file).split(path.sep).join("/");
-    const key = keyFor(relative);
-    if (!key) continue;
-    const text = await readFile(file, "utf8");
-    let data;
+    const relative = path.relative(dataDir, file).split(path.sep).join('/')
+    const key = keyFor(relative)
+    if (!key) continue
+    const text = await readFile(file, 'utf8')
+    let data
     try {
-      data = JSON.parse(text);
+      data = JSON.parse(text)
     } catch (error) {
-      throw new Error(`${relative} is not JSON: ${error.message}`);
+      throw new Error(`${relative} is not JSON: ${error.message}`)
     }
-    assertKeyMatchesDocument(key, data, relative);
-    entries.push({ key, value: text, file: path.posix.join("data", relative) });
+    assertKeyMatchesDocument(key, data, relative)
+    entries.push({ key, value: text, file: path.posix.join('data', relative) })
   }
-  entries.sort((a, b) => a.key.localeCompare(b.key));
-  return entries;
+  entries.sort((a, b) => a.key.localeCompare(b.key))
+  return entries
 }
 
-export function keyFor(relativePosix) {
-  if (!relativePosix.endsWith(".json")) return null;
-  const without = relativePosix.slice(0, -".json".length);
-  if (/^(species|family|index|vocab)\/[a-z0-9]+(?:-[a-z0-9]+)*$/.test(without)) return without;
-  return null;
+export const keyFor = (relativePosix) => {
+  if (!relativePosix.endsWith('.json')) return null
+  const without = relativePosix.slice(0, -'.json'.length)
+  if (/^(species|family|index|vocab)\/[a-z0-9]+(?:-[a-z0-9]+)*$/.test(without))
+    return without
+  return null
 }
 
-function assertKeyMatchesDocument(key, data, relative) {
-  const [prefix, slug] = key.split("/");
-  if (prefix === "species" || prefix === "family" || prefix === "vocab") {
-    if (data.slug !== slug) throw new Error(`${relative} slug is ${data.slug}, expected ${slug}`);
+const assertKeyMatchesDocument = (key, data, relative) => {
+  const [prefix, slug] = key.split('/')
+  if (prefix === 'species' || prefix === 'family' || prefix === 'vocab') {
+    if (data.slug !== slug)
+      throw new Error(`${relative} slug is ${data.slug}, expected ${slug}`)
   }
-  if (prefix === "index" && (data == null || typeof data !== "object" || Array.isArray(data))) {
-    throw new Error(`${relative} must be an object keyed by scientific name`);
+  if (
+    prefix === 'index' &&
+    (data == null || typeof data !== 'object' || Array.isArray(data))
+  ) {
+    throw new Error(`${relative} must be an object keyed by scientific name`)
   }
-  if ((prefix === "species" || prefix === "family") && typeof data.scientificName === "string") {
-    const expected = data.scientificName.trim().toLowerCase().replaceAll(" ", "-");
-    if (expected !== slug) throw new Error(`${relative} scientific name does not match ${slug}`);
+  if (
+    (prefix === 'species' || prefix === 'family') &&
+    typeof data.scientificName === 'string'
+  ) {
+    const expected = data.scientificName
+      .trim()
+      .toLowerCase()
+      .replaceAll(' ', '-')
+    if (expected !== slug)
+      throw new Error(`${relative} scientific name does not match ${slug}`)
   }
 }
 
-async function walk(dir) {
-  const found = [];
-  const items = await readdir(dir, { withFileTypes: true });
+const walk = async (dir) => {
+  const found = []
+  const items = await readdir(dir, { withFileTypes: true })
   for (const item of items) {
-    const full = path.join(dir, item.name);
-    if (item.isDirectory()) found.push(...await walk(full));
-    else if (item.isFile() && item.name.endsWith(".json")) found.push(full);
+    const full = path.join(dir, item.name)
+    if (item.isDirectory()) found.push(...(await walk(full)))
+    else if (item.isFile() && item.name.endsWith('.json')) found.push(full)
   }
-  return found;
+  return found
 }
 
-if (process.argv[1] && path.resolve(process.argv[1]) === fileURLToPath(import.meta.url)) {
-  if (process.argv.includes("--write")) await writeDerived();
-  const entries = await collectEntries();
-  for (const entry of entries) console.error(`${entry.key}\t${entry.file}`);
-  process.stdout.write(`${JSON.stringify(entries.map(({ key, value }) => ({ key, value })), null, 2)}\n`);
+if (
+  process.argv[1] &&
+  path.resolve(process.argv[1]) === fileURLToPath(import.meta.url)
+) {
+  if (process.argv.includes('--write')) await writeDerived()
+  const entries = await collectEntries()
+  for (const entry of entries) console.error(`${entry.key}\t${entry.file}`)
+  process.stdout.write(
+    `${JSON.stringify(
+      entries.map(({ key, value }) => ({ key, value })),
+      null,
+      2,
+    )}\n`,
+  )
 }

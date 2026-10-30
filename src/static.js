@@ -1,23 +1,25 @@
-import { escapeXml } from "./escape.js";
-import { indexRows } from "./guide.js";
+import { escapeXml } from './escape.js'
+import { indexRows } from './guide.js'
 
-export function robotsTxt(origin) {
-  return `User-agent: *\nAllow: /\n\nSitemap: ${origin}/sitemap.xml\n`;
+export const robotsTxt = (origin) =>
+  `User-agent: *\nAllow: /\n\nSitemap: ${origin}/sitemap.xml\n`
+
+export const sitemapXml = (origin, speciesIndex, familiesIndex) => {
+  const urls = ['/']
+  if (speciesIndex) urls.push('/species')
+  if (familiesIndex) urls.push('/families')
+  urls.push('/vocab/colours')
+  for (const entry of indexRows(speciesIndex))
+    urls.push(`/species/${entry.slug}`)
+  for (const entry of indexRows(familiesIndex))
+    urls.push(`/family/${entry.slug}`)
+  const body = urls
+    .map((path) => `  <url><loc>${escapeXml(origin + path)}</loc></url>`)
+    .join('\n')
+  return `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${body}\n</urlset>\n`
 }
 
-export function sitemapXml(origin, speciesIndex, familiesIndex) {
-  const urls = ["/", ];
-  if (speciesIndex) urls.push("/species");
-  if (familiesIndex) urls.push("/families");
-  urls.push("/vocab/colours");
-  for (const entry of indexRows(speciesIndex)) urls.push(`/species/${entry.slug}`);
-  for (const entry of indexRows(familiesIndex)) urls.push(`/family/${entry.slug}`);
-  const body = urls.map((path) => `  <url><loc>${escapeXml(origin + path)}</loc></url>`).join("\n");
-  return `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${body}\n</urlset>\n`;
-}
-
-export function llmsTxt(origin) {
-  return `# Birds of Kruger National Park
+export const llmsTxt = (origin) => `# Birds of Kruger National Park
 
 > An open field guide to the birds of Kruger National Park and neighbouring Marloth Park, South Africa. Written for people and for AI agents. Every page is server-rendered. There is no client-side JavaScript.
 
@@ -90,5 +92,4 @@ Images carry \`view\`, \`age\`, \`sex\`, \`season\`, \`source\`, \`author\`, \`l
 - [Species index, Markdown](${origin}/species.md)
 - [Families index, Markdown](${origin}/families.md)
 - [Colour vocabulary, JSON](${origin}/vocab/colours.json)
-`;
-}
+`
