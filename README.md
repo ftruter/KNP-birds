@@ -29,13 +29,16 @@ Every page is fully rendered on the server. Visitors never need JavaScript to re
 
 ### One URL, three formats
 
-The file extension on a URL picks the format:
+The file extension on a URL picks the format. Page URLs are derived directly from the KV keys: the KV key `species/<latin-name>` serves `/species/<latin-name>`, `family/<latin-name>` serves `/family/<latin-name>`, and likewise for index keys.
 
 | URL | Format | For |
 | --- | --- | --- |
 | `/species/<latin-name>` | HTML | People in a browser |
 | `/species/<latin-name>.md` | Markdown | AI agents (fewer tokens) |
 | `/species/<latin-name>.json` | JSON | Anyone using the data as an API |
+| `/family/<latin-name>` | HTML | People in a browser |
+| `/family/<latin-name>.md` | Markdown | AI agents (fewer tokens) |
+| `/family/<latin-name>.json` | JSON | Anyone using the data as an API |
 
 The same rule applies to every page, including the indexes.
 
@@ -46,6 +49,7 @@ All content lives in a Cloudflare Workers KV namespace as JSON values:
 | Key | Value |
 | --- | --- |
 | `species/<latin-name>` | One JSON document per species (about 540 entries) |
+| `family/<latin-name>` | One JSON document per bird family (about 78 entries), describing the family and listing its species |
 | `index/species` | The list of all species |
 | `index/families` | The list of all families and their species |
 
