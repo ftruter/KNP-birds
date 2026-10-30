@@ -9,6 +9,8 @@
  * species files, then the script prints bulk-put JSON. Without --write it
  * prints the files as they are. Derived fields are not edited by hand.
  * `npm run deploy` always derives first and uploads the remote namespace.
+ * A family index population is 0 when no species estimate is known. A species
+ * index population stays null in that case.
  * Keys:
  *   data/species/<slug>.json → species/<slug>
  *   data/family/<slug>.json  → family/<slug>
@@ -163,7 +165,7 @@ export const deriveFamiliesIndex = (familyDocs) =>
       scientificName: family.scientificName,
       value: indexValue(
         copyNames(family.commonNames),
-        totalMidpoint(family.population),
+        totalMidpoint(family.population) ?? 0,
       ),
     })),
   )
