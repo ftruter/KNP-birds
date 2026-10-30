@@ -1,16 +1,14 @@
 /**
- * Print Cloudflare KV bulk-put JSON for the files in data/.
- *
- *   node scripts/seed.mjs > /tmp/knp-birds-kv.json
- *   npx wrangler kv bulk put /tmp/knp-birds-kv.json \
- *     --namespace-id d241348305f646e29c30880c361f6bf6 \
- *     --remote
+ * Derived fields and the KV payload for data/.
  *
  *   node scripts/seed.mjs --write
+ *   npm run kv:dry-run
+ *   npm run deploy
  *
  * --write refreshes derived fields in family and index documents from the
- * species files, then the script prints the bulk JSON. Without --write it
+ * species files, then the script prints bulk-put JSON. Without --write it
  * prints the files as they are. Derived fields are not edited by hand.
+ * `npm run deploy` always derives first and uploads the remote namespace.
  * Keys:
  *   data/species/<slug>.json → species/<slug>
  *   data/family/<slug>.json  → family/<slug>

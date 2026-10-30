@@ -1,6 +1,6 @@
 import assert from 'node:assert/strict'
 import { test } from 'node:test'
-import { PAGE_CACHE } from '../src/cache.js'
+import { KV_CONSISTENCY_MS, NO_STORE, PAGE_CACHE } from '../src/cache.js'
 import { handleRequest } from '../src/worker.js'
 import {
   cacheHarness,
@@ -11,7 +11,7 @@ import {
   requestContext,
 } from './helpers.js'
 
-const app = async (records, bucket) => {
+const app = async (records, bucket, env = {}) => {
   const kv = mockKv(records)
   const images = mockBucket(bucket)
   return {
@@ -27,6 +27,7 @@ const app = async (records, bucket) => {
         {
           BIRDS_KV: kv.kv,
           IMAGES: images.bucket,
+          ...env,
         },
         ctx,
       )
@@ -149,6 +150,79 @@ test('sitemap lists the sample species and vocab', async () => {
   const llms = await (await site.fetch('/llms.txt')).text()
   assert.match(llms, /vocab\/colours/)
   assert.match(llms, /No visible difference/)
+})
+
+test('a new data version misses the Cache API', async () => {
+  const cache = cacheHarness()
+  try {
+    const { records } = await loadStore()
+    const settled = { DATA_PUBLISHED_AT: String(Date.now() - 120_000) }
+    const first = await app(records, {}, { ...settled, DATA_VERSION: 'one' })
+    await (await first.fetch('/species?utm=1')).text()
+    const reads = first.kv.gets.length
+    assert.ok(reads > 0)
+    await (await first.fetch('/species')).text()
+    assert.equal(first.kv.gets.length, reads)
+    const next = await app(records, {}, { ...settled, DATA_VERSION: 'two' })
+    const response = await next.fetch('/species')
+    assert.equal(response.headers.get('cache-control'), PAGE_CACHE)
+    assert.match(await response.text(), /Species/)
+    assert.ok(next.kv.gets.length > 0)
+    const redeployed = await app(
+      records,
+      {},
+      {
+        ...settled,
+        DATA_VERSION: 'one',
+        CF_VERSION_METADATA: { id: 'version-b' },
+      },
+    )
+    await (await redeployed.fetch('/species')).text()
+    assert.ok(redeployed.kv.gets.length > 0)
+  } finally {
+    cache.uninstall()
+  }
+})
+
+test('KV reads stay uncached until the publish window has passed', async () => {
+  const cache = cacheHarness()
+  try {
+    const { records } = await loadStore()
+    const fresh = await app(
+      records,
+      {},
+      {
+        DATA_VERSION: 'one',
+        DATA_PUBLISHED_AT: String(Date.now()),
+        CF_VERSION_METADATA: { id: 'version-a' },
+      },
+    )
+    const first = await fresh.fetch('/families')
+    assert.equal(first.headers.get('cache-control'), NO_STORE)
+    await first.text()
+    const reads = fresh.kv.gets.length
+    const second = await fresh.fetch('/families')
+    assert.equal(second.headers.get('cache-control'), NO_STORE)
+    await second.text()
+    assert.ok(fresh.kv.gets.length > reads)
+    const settled = await app(
+      records,
+      {},
+      {
+        DATA_VERSION: 'one',
+        DATA_PUBLISHED_AT: String(Date.now() - KV_CONSISTENCY_MS),
+        CF_VERSION_METADATA: { id: 'version-b' },
+      },
+    )
+    const warm = await settled.fetch('/')
+    assert.equal(warm.headers.get('cache-control'), PAGE_CACHE)
+    await warm.text()
+    const settledReads = settled.kv.gets.length
+    await (await settled.fetch('/')).text()
+    assert.equal(settled.kv.gets.length, settledReads)
+  } finally {
+    cache.uninstall()
+  }
 })
 
 test('POST is rejected and HEAD has no body', async () => {

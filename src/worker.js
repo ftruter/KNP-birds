@@ -18,7 +18,12 @@ export const handleRequest = async (request, env, ctx) => {
     if (request.method !== 'GET' && request.method !== 'HEAD') {
       return methodNotAllowed(format)
     }
-    return await withCache(request, ctx, () => renderRoute(request, env, route))
+    return await withCache(
+      request,
+      ctx,
+      () => renderRoute(request, env, route),
+      env,
+    )
   } catch (error) {
     console.error(
       JSON.stringify({
