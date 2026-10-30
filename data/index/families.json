@@ -2,16 +2,431 @@
   "Accipitridae": {
     "en": "Hawks, eagles and kites",
     "af": null,
-    "population": null
+    "population": 0
+  },
+  "Acrocephalidae": {
+    "en": "Reed warblers and allies",
+    "af": null,
+    "population": 0
+  },
+  "Alaudidae": {
+    "en": "Larks",
+    "af": "Lewerikke",
+    "population": 0
+  },
+  "Alcedinidae": {
+    "en": "Kingfishers",
+    "af": "Visvangers",
+    "population": 0
+  },
+  "Anatidae": {
+    "en": "Ducks, geese and swans",
+    "af": "Eende",
+    "population": 0
+  },
+  "Anhingidae": {
+    "en": "Darters",
+    "af": "Slanghalsvoël",
+    "population": 0
+  },
+  "Apodidae": {
+    "en": "Swifts",
+    "af": "Windswaels",
+    "population": 0
+  },
+  "Ardeidae": {
+    "en": "Herons, egrets and bitterns",
+    "af": "Reiers",
+    "population": 0
+  },
+  "Bucerotidae": {
+    "en": "Hornbills",
+    "af": "Neushoringvoëls",
+    "population": 0
   },
   "Bucorvidae": {
     "en": "Ground-hornbills",
     "af": "Bromvoëls",
-    "population": null
+    "population": 0
+  },
+  "Buphagidae": {
+    "en": "Oxpeckers",
+    "af": "Renostervoëls",
+    "population": 0
+  },
+  "Burhinidae": {
+    "en": "Thick-knees",
+    "af": "Dikkoppe",
+    "population": 0
+  },
+  "Campephagidae": {
+    "en": "Cuckooshrikes",
+    "af": "Katakoeroes",
+    "population": 0
+  },
+  "Caprimulgidae": {
+    "en": "Nightjars",
+    "af": "Naguile",
+    "population": 0
+  },
+  "Charadriidae": {
+    "en": "Plovers and lapwings",
+    "af": "Strandkiewiete",
+    "population": 0
+  },
+  "Ciconiidae": {
+    "en": "Storks",
+    "af": "Ooievaars",
+    "population": 0
+  },
+  "Cisticolidae": {
+    "en": "Cisticolas and allies",
+    "af": "Klopklopies",
+    "population": 0
+  },
+  "Coliidae": {
+    "en": "Mousebirds",
+    "af": "Muisvoëls",
+    "population": 0
+  },
+  "Columbidae": {
+    "en": "Pigeons and doves",
+    "af": "Duiwe",
+    "population": 0
   },
   "Coraciidae": {
     "en": "Rollers",
     "af": "Troupante",
-    "population": null
+    "population": 0
+  },
+  "Corvidae": {
+    "en": "Crows and ravens",
+    "af": "Kraaie",
+    "population": 0
+  },
+  "Cuculidae": {
+    "en": "Cuckoos",
+    "af": "Koekoeke",
+    "population": 0
+  },
+  "Dicruridae": {
+    "en": "Drongos",
+    "af": "Byvanger",
+    "population": 0
+  },
+  "Emberizidae": {
+    "en": "Buntings",
+    "af": "Streepkoppies",
+    "population": 0
+  },
+  "Estrildidae": {
+    "en": "Waxbills and allies",
+    "af": "Sysies",
+    "population": 0
+  },
+  "Falconidae": {
+    "en": "Falcons and kestrels",
+    "af": "Valke",
+    "population": 0
+  },
+  "Fringillidae": {
+    "en": "Finches and canaries",
+    "af": "Kanaries",
+    "population": 0
+  },
+  "Glareolidae": {
+    "en": "Coursers and pratincoles",
+    "af": "Drawwertjies",
+    "population": 0
+  },
+  "Heliornithidae": {
+    "en": "Finfoots",
+    "af": "Watertrapper",
+    "population": 0
+  },
+  "Hirundinidae": {
+    "en": "Swallows and martins",
+    "af": "Swaels",
+    "population": 0
+  },
+  "Indicatoridae": {
+    "en": "Honeyguides",
+    "af": "Heuningwysers",
+    "population": 0
+  },
+  "Jacanidae": {
+    "en": "Jacanas",
+    "af": "Langtoon",
+    "population": 0
+  },
+  "Laniidae": {
+    "en": "Shrikes",
+    "af": "Laksmanne",
+    "population": 0
+  },
+  "Laridae": {
+    "en": "Gulls, terns and skimmers",
+    "af": "Meeue",
+    "population": 0
+  },
+  "Leiothrichidae": {
+    "en": "Laughingthrushes and babblers",
+    "af": "Katlagters",
+    "population": 0
+  },
+  "Locustellidae": {
+    "en": "Grassbirds and allies",
+    "af": null,
+    "population": 0
+  },
+  "Lybiidae": {
+    "en": "African barbets",
+    "af": "Houtkappers",
+    "population": 0
+  },
+  "Macrosphenidae": {
+    "en": "African warblers",
+    "af": null,
+    "population": 0
+  },
+  "Malaconotidae": {
+    "en": "Bushshrikes",
+    "af": "Boslaksmanne",
+    "population": 0
+  },
+  "Meropidae": {
+    "en": "Bee-eaters",
+    "af": "Byvreters",
+    "population": 0
+  },
+  "Monarchidae": {
+    "en": "Monarchs",
+    "af": null,
+    "population": 0
+  },
+  "Motacillidae": {
+    "en": "Wagtails and pipits",
+    "af": "Kwikkies",
+    "population": 0
+  },
+  "Muscicapidae": {
+    "en": "Chats and Old World flycatchers",
+    "af": "Vlieëvangers",
+    "population": 0
+  },
+  "Musophagidae": {
+    "en": "Turacos",
+    "af": "Loeries",
+    "population": 0
+  },
+  "Nectariniidae": {
+    "en": "Sunbirds",
+    "af": "Suikerbekkies",
+    "population": 0
+  },
+  "Nicatoridae": {
+    "en": "Nicators",
+    "af": null,
+    "population": 0
+  },
+  "Numididae": {
+    "en": "Guineafowl",
+    "af": "Tarentaal",
+    "population": 0
+  },
+  "Oriolidae": {
+    "en": "Orioles",
+    "af": "Wielewale",
+    "population": 0
+  },
+  "Otididae": {
+    "en": "Bustards",
+    "af": "Korhane",
+    "population": 0
+  },
+  "Pandionidae": {
+    "en": "Ospreys",
+    "af": "Visvalk",
+    "population": 0
+  },
+  "Paridae": {
+    "en": "Tits",
+    "af": "Mese",
+    "population": 0
+  },
+  "Passeridae": {
+    "en": "Old World sparrows",
+    "af": "Mossies",
+    "population": 0
+  },
+  "Pelecanidae": {
+    "en": "Pelicans",
+    "af": "Pelikane",
+    "population": 0
+  },
+  "Phalacrocoracidae": {
+    "en": "Cormorants",
+    "af": "Duikers",
+    "population": 0
+  },
+  "Phasianidae": {
+    "en": "Francolins, spurfowl and quails",
+    "af": "Patryse",
+    "population": 0
+  },
+  "Phoenicopteridae": {
+    "en": "Flamingos",
+    "af": "Flaminke",
+    "population": 0
+  },
+  "Phoeniculidae": {
+    "en": "Wood-hoopoes",
+    "af": "Kakelaars",
+    "population": 0
+  },
+  "Phylloscopidae": {
+    "en": "Leaf warblers",
+    "af": null,
+    "population": 0
+  },
+  "Picidae": {
+    "en": "Woodpeckers",
+    "af": "Spegte",
+    "population": 0
+  },
+  "Platysteiridae": {
+    "en": "Wattle-eyes and batises",
+    "af": "Bosbontrokkies",
+    "population": 0
+  },
+  "Ploceidae": {
+    "en": "Weavers and widowbirds",
+    "af": "Wewers",
+    "population": 0
+  },
+  "Podicipedidae": {
+    "en": "Grebes",
+    "af": "Dobbertjies",
+    "population": 0
+  },
+  "Psittacidae": {
+    "en": "African and New World parrots",
+    "af": "Papegaai",
+    "population": 0
+  },
+  "Pteroclidae": {
+    "en": "Sandgrouse",
+    "af": "Sandpatryse",
+    "population": 0
+  },
+  "Pycnonotidae": {
+    "en": "Bulbuls",
+    "af": "Tiptolle",
+    "population": 0
+  },
+  "Rallidae": {
+    "en": "Rails, crakes and coots",
+    "af": "Riethane",
+    "population": 0
+  },
+  "Recurvirostridae": {
+    "en": "Stilts and avocets",
+    "af": "Elsies",
+    "population": 0
+  },
+  "Remizidae": {
+    "en": "Penduline tits",
+    "af": "Kapokvoëls",
+    "population": 0
+  },
+  "Rostratulidae": {
+    "en": "Painted-snipes",
+    "af": "Goudsnip",
+    "population": 0
+  },
+  "Sagittariidae": {
+    "en": "Secretarybird",
+    "af": "Sekretarisvoël",
+    "population": 0
+  },
+  "Sarothruridae": {
+    "en": "Flufftails",
+    "af": "Vleikuikens",
+    "population": 0
+  },
+  "Scolopacidae": {
+    "en": "Sandpipers and snipes",
+    "af": "Strandlopers",
+    "population": 0
+  },
+  "Scopidae": {
+    "en": "Hamerkop",
+    "af": "Hamerkop",
+    "population": 0
+  },
+  "Strigidae": {
+    "en": "Owls",
+    "af": "Uile",
+    "population": 0
+  },
+  "Struthionidae": {
+    "en": "Ostriches",
+    "af": "Volstruis",
+    "population": 0
+  },
+  "Sturnidae": {
+    "en": "Starlings",
+    "af": "Spreeus",
+    "population": 0
+  },
+  "Sylviidae": {
+    "en": "Sylviid warblers",
+    "af": "Sangers",
+    "population": 0
+  },
+  "Threskiornithidae": {
+    "en": "Ibises and spoonbills",
+    "af": "Ibisse",
+    "population": 0
+  },
+  "Trogonidae": {
+    "en": "Trogons",
+    "af": "Bosloerie",
+    "population": 0
+  },
+  "Turdidae": {
+    "en": "Thrushes",
+    "af": "Lysters",
+    "population": 0
+  },
+  "Turnicidae": {
+    "en": "Buttonquails",
+    "af": "Kwarteltjie",
+    "population": 0
+  },
+  "Tytonidae": {
+    "en": "Barn owls",
+    "af": "Tyto-uile",
+    "population": 0
+  },
+  "Upupidae": {
+    "en": "Hoopoes",
+    "af": "Hoephoep",
+    "population": 0
+  },
+  "Vangidae": {
+    "en": "Helmetshrikes",
+    "af": "Helmlaksmanne",
+    "population": 0
+  },
+  "Viduidae": {
+    "en": "Indigobirds and whydahs",
+    "af": "Rooibekkies",
+    "population": 0
+  },
+  "Zosteropidae": {
+    "en": "White-eyes",
+    "af": "Glasogie",
+    "population": 0
   }
 }
