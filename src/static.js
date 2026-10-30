@@ -1,4 +1,5 @@
 import { escapeXml } from "./escape.js";
+import { indexRows } from "./guide.js";
 
 export function robotsTxt(origin) {
   return `User-agent: *\nAllow: /\n\nSitemap: ${origin}/sitemap.xml\n`;
@@ -9,12 +10,8 @@ export function sitemapXml(origin, speciesIndex, familiesIndex) {
   if (speciesIndex) urls.push("/species");
   if (familiesIndex) urls.push("/families");
   urls.push("/vocab/colours");
-  for (const entry of speciesIndex?.entries || []) {
-    if (entry?.slug) urls.push(`/species/${entry.slug}`);
-  }
-  for (const entry of familiesIndex?.entries || []) {
-    if (entry?.slug) urls.push(`/family/${entry.slug}`);
-  }
+  for (const entry of indexRows(speciesIndex)) urls.push(`/species/${entry.slug}`);
+  for (const entry of indexRows(familiesIndex)) urls.push(`/family/${entry.slug}`);
   const body = urls.map((path) => `  <url><loc>${escapeXml(origin + path)}</loc></url>`).join("\n");
   return `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${body}\n</urlset>\n`;
 }
@@ -77,7 +74,13 @@ The six comparisons on a species page are derived, not stored as prose:
 
 When both sides are described and no mark differs, the page says "No visible difference".
 
-\`population\` is an approximate KNP estimate: \`estimate.low\`, \`estimate.high\`, \`unit\`, \`trend\`, \`confidence\`, \`asOf\`, \`notes\`, and \`sources\`. Sample species leave the numbers null.
+\`population\` is an approximate KNP estimate: \`estimate.low\`, \`estimate.high\`, \`unit\`, \`trend\`, \`confidence\`, \`asOf\`, \`notes\`, and \`sources\`. Sample species leave the numbers null. A pair counts as two individuals when totals are added up.
+
+Each family embeds its species and a population total. \`iconicSpecies\` is up to three species slugs, most numerous first (the midpoint of low and high, in individuals). Species with no estimate come after those, then alphabetical scientific name. The family page shows those species and their photographs first.
+
+## Indexes
+
+\`index/species\` and \`index/families\` are JSON objects. The keys are scientific names, in case-insensitive alphabetical order, so a search can narrow as someone types. Each value is exactly \`{ "en", "af", "population" }\`. \`population\` is one integer, the midpoint in individuals, or \`null\`. \`af\` is \`null\` when there is no Afrikaans name. The URL slug is the key in lowercase with spaces turned into hyphens (\`Coracias caudatus\` becomes \`coracias-caudatus\`).
 
 Images carry \`view\`, \`age\`, \`sex\`, \`season\`, \`source\`, \`author\`, \`license\`, and \`aiGenerated\`. The page labels AI-generated images in the caption.
 

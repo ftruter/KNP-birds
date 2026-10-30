@@ -52,6 +52,50 @@ export function countedIndividuals(species) {
   return { low: low * factor, high: high * factor };
 }
 
+export function individualMidpoint(species) {
+  const counted = countedIndividuals(species);
+  if (!counted) return null;
+  return Math.round((counted.low + counted.high) / 2);
+}
+
+export function totalMidpoint(population) {
+  if (!Number.isInteger(population?.low) || !Number.isInteger(population?.high)) return null;
+  return Math.round((population.low + population.high) / 2);
+}
+
+function compareScientificName(a, b) {
+  return a.localeCompare(b, "en", { sensitivity: "base" }) || a.localeCompare(b, "en");
+}
+
+/** Up to three slugs: estimated birds first (highest midpoint), then unestimated, then scientific name. */
+export function iconicSpecies(speciesDocs) {
+  const ranked = speciesDocs.slice().sort((a, b) => {
+    const aMid = individualMidpoint(a);
+    const bMid = individualMidpoint(b);
+    const aKnown = aMid != null;
+    const bKnown = bMid != null;
+    if (aKnown !== bKnown) return aKnown ? -1 : 1;
+    if (aKnown && bKnown && aMid !== bMid) return bMid - aMid;
+    return compareScientificName(a.scientificName, b.scientificName) || a.slug.localeCompare(b.slug);
+  });
+  return ranked.slice(0, 3).map((species) => species.slug);
+}
+
+export function indexValue(names, population) {
+  return {
+    en: names.en,
+    af: names.af ?? null,
+    population: Number.isInteger(population) ? population : null,
+  };
+}
+
+function dictionaryByScientificName(rows) {
+  const ordered = rows.slice().sort((a, b) => compareScientificName(a.scientificName, b.scientificName));
+  const dictionary = {};
+  for (const row of ordered) dictionary[row.scientificName] = row.value;
+  return dictionary;
+}
+
 export function familyPopulation(speciesDocs) {
   const speciesTotal = speciesDocs.length;
   const counted = speciesDocs.map(countedIndividuals).filter(Boolean);
@@ -88,38 +132,23 @@ export function deriveFamilyDocument(family, speciesDocs) {
     summary: family.summary,
     sampleData: family.sampleData === true,
     species,
+    iconicSpecies: iconicSpecies(speciesDocs),
     population: familyPopulation(speciesDocs),
   };
 }
 
 export function deriveSpeciesIndex(speciesDocs) {
-  return {
-    kind: "index",
-    name: "species",
-    sampleData: speciesDocs.some((species) => species.sampleData === true),
-    entries: speciesDocs.slice().sort(byScientificName).map((species) => ({
-      slug: species.slug,
-      scientificName: species.scientificName,
-      names: speciesNames(species),
-      family: species.family,
-      status: species.status,
-    })),
-  };
+  return dictionaryByScientificName(speciesDocs.map((species) => ({
+    scientificName: species.scientificName,
+    value: indexValue(speciesNames(species), individualMidpoint(species)),
+  })));
 }
 
 export function deriveFamiliesIndex(familyDocs) {
-  return {
-    kind: "index",
-    name: "families",
-    sampleData: familyDocs.some((family) => family.sampleData === true),
-    entries: familyDocs.slice().sort(byScientificName).map((family) => ({
-      slug: family.slug,
-      scientificName: family.scientificName,
-      commonNames: copyNames(family.commonNames),
-      species: family.species,
-      population: family.population,
-    })),
-  };
+  return dictionaryByScientificName(familyDocs.map((family) => ({
+    scientificName: family.scientificName,
+    value: indexValue(copyNames(family.commonNames), totalMidpoint(family.population)),
+  })));
 }
 
 export function deriveAll(speciesDocs, familyDocs) {
@@ -201,8 +230,8 @@ function assertKeyMatchesDocument(key, data, relative) {
   if (prefix === "species" || prefix === "family" || prefix === "vocab") {
     if (data.slug !== slug) throw new Error(`${relative} slug is ${data.slug}, expected ${slug}`);
   }
-  if (prefix === "index" && data.name !== slug) {
-    throw new Error(`${relative} name is ${data.name}, expected ${slug}`);
+  if (prefix === "index" && (data == null || typeof data !== "object" || Array.isArray(data))) {
+    throw new Error(`${relative} must be an object keyed by scientific name`);
   }
   if ((prefix === "species" || prefix === "family") && typeof data.scientificName === "string") {
     const expected = data.scientificName.trim().toLowerCase().replaceAll(" ", "-");

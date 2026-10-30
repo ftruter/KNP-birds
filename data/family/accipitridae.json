@@ -17,6 +17,9 @@
       }
     }
   ],
+  "iconicSpecies": [
+    "haliaeetus-vocifer"
+  ],
   "population": {
     "low": null,
     "high": null,

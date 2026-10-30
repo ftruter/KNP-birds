@@ -24,6 +24,41 @@ export const CONFIDENCE_LABEL = {
   high: "High",
 };
 
+export function slugFromScientificName(name) {
+  return String(name ?? "").trim().toLowerCase().replaceAll(" ", "-");
+}
+
+export function indexRows(doc) {
+  if (!doc || typeof doc !== "object" || Array.isArray(doc)) return [];
+  return Object.keys(doc).map((scientificName) => {
+    const value = doc[scientificName] ?? {};
+    const names = { en: typeof value.en === "string" && value.en ? value.en : scientificName };
+    if (typeof value.af === "string" && value.af.trim()) names.af = value.af.trim();
+    return {
+      scientificName,
+      slug: slugFromScientificName(scientificName),
+      names,
+      population: Number.isInteger(value.population) ? value.population : null,
+    };
+  });
+}
+
+export function orderFamilySpecies(species, iconic) {
+  const list = Array.isArray(species) ? species : [];
+  const rank = new Map((Array.isArray(iconic) ? iconic : []).map((slug, index) => [slug, index]));
+  return list.slice().sort((a, b) => {
+    const aRank = rank.has(a.slug) ? rank.get(a.slug) : Number.POSITIVE_INFINITY;
+    const bRank = rank.has(b.slug) ? rank.get(b.slug) : Number.POSITIVE_INFINITY;
+    if (aRank !== bRank) return aRank - bRank;
+    return String(a.scientificName).localeCompare(String(b.scientificName), "en", { sensitivity: "base" });
+  });
+}
+
+export function indexPopulationLine(population, label) {
+  if (!Number.isInteger(population)) return `${label}: no numeric figure yet.`;
+  return `${label}: about ${population} individuals.`;
+}
+
 export function englishName(doc) {
   return doc?.names?.en || doc?.commonNames?.en || doc?.scientificName || doc?.slug || "Untitled";
 }

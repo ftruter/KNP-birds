@@ -133,17 +133,25 @@ test("escaped names cannot inject markup, and AI images are labelled", async () 
 
 test("a family page shows the derived approximate total", async () => {
   const doc = await readJson("data/family/coraciidae.json");
-  const html = renderFamilyHtml({ origin: "https://birds.truter.world", doc });
+  const roller = await readJson("data/species/coracias-caudatus.json");
+  const html = renderFamilyHtml({
+    origin: "https://birds.truter.world",
+    doc,
+    plates: [{ doc: roller, imagesAvailable: {} }],
+  });
   assert.match(html, /Approximate total/);
   assert.match(html, /Includes 0 of 1 species/);
   assert.match(html, /This total is incomplete/);
+  assert.match(html, /First to look for/);
+  assert.ok(html.indexOf("First to look for") < html.indexOf("Species in this copy"));
   assert.match(html, /href="\/species\/coracias-caudatus"/);
   assert.match(html, /Gewone Troupant/);
   assert.doesNotMatch(html, /<script/i);
-  const markdown = renderFamilyMarkdown(doc);
+  const markdown = renderFamilyMarkdown(doc, [{ doc: roller, imagesAvailable: {} }]);
   assert.match(markdown, /\*\*Approximate total\.\*\*/);
   assert.match(markdown, /Includes 0 of 1 species/);
   assert.match(markdown, /This total is incomplete/);
+  assert.match(markdown, /## First to look for/);
 });
 
 test("markdown and json-facing copy keep the population label", async () => {

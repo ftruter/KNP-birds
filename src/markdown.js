@@ -6,13 +6,14 @@ import {
   CALL_TYPE,
   SAMPLE_NOTICE,
   afrikaansName,
-  byEnglishName,
   englishName,
   familyLabel,
-  familyTotalLine,
   familyTotalModel,
   imageAlt,
+  indexPopulationLine,
+  indexRows,
   objectPath,
+  orderFamilySpecies,
   populationModel,
   sizeLabel,
   statusLabel,
@@ -21,12 +22,12 @@ import {
 import { alternates } from "./route.js";
 
 export function renderHomeMarkdown({ speciesIndex, familiesIndex }) {
-  const species = entries(speciesIndex).slice().sort(byEnglishName);
-  const families = entries(familiesIndex).slice().sort(byEnglishName);
+  const species = indexRows(speciesIndex);
+  const families = indexRows(familiesIndex);
   return pageMd({
     path: "/",
     title: "Birds of Kruger National Park",
-    sample: Boolean(speciesIndex?.sampleData || familiesIndex?.sampleData),
+    sample: false,
     body: `An open field guide to the birds of Kruger National Park and neighbouring Marloth Park. Pages are server-rendered. There is no client-side JavaScript.
 
 Resident species are included, plus summer migrants. Rare vagrants are left out.
@@ -55,31 +56,27 @@ ${linkLines(families, (entry) => `/family/${entry.slug}`, (entry) => `${englishN
 }
 
 export function renderSpeciesIndexMarkdown(doc) {
-  const list = entries(doc).slice().sort(byEnglishName);
+  const list = indexRows(doc);
   return pageMd({
     path: "/species",
     title: "Species",
-    sample: Boolean(doc?.sampleData),
-    body: list.map((entry) => `- [${englishName(entry)}](/species/${entry.slug}) (${entry.scientificName}) — ${statusLabel(entry.status)} — [${familyLabel(entry.family)}](/family/${entry.family})`).join("\n") || "No species have been published yet.",
+    sample: false,
+    body: list.map((entry) => `- [${englishName(entry)}](/species/${entry.slug}) (${entry.scientificName})${afrikaansName(entry) ? ` — ${afrikaansName(entry)}` : ""} — ${indexPopulationLine(entry.population, "Approximate estimate")}`).join("\n") || "No species have been published yet.",
   });
 }
 
 export function renderFamiliesIndexMarkdown(doc) {
-  const list = entries(doc).slice().sort(byEnglishName);
+  const list = indexRows(doc);
   return pageMd({
     path: "/families",
     title: "Families",
-    sample: Boolean(doc?.sampleData),
-    body: list.map((entry) => {
-      const count = Array.isArray(entry.species) ? entry.species.length : 0;
-      const total = entry.population ? ` ${familyTotalLine(entry.population)}` : "";
-      return `- [${englishName(entry)}](/family/${entry.slug}) (${entry.scientificName}) — ${count} in this copy.${total}`;
-    }).join("\n"),
+    sample: false,
+    body: list.map((entry) => `- [${englishName(entry)}](/family/${entry.slug}) (${entry.scientificName}) — ${indexPopulationLine(entry.population, "Approximate total")}`).join("\n"),
   });
 }
 
-export function renderFamilyMarkdown(doc) {
-  const species = (Array.isArray(doc.species) ? doc.species : []).slice().sort(byEnglishName);
+export function renderFamilyMarkdown(doc, plates = []) {
+  const species = orderFamilySpecies(doc.species, doc.iconicSpecies);
   const af = afrikaansName(doc);
   return pageMd({
     path: `/family/${doc.slug}`,
@@ -90,6 +87,8 @@ export function renderFamilyMarkdown(doc) {
 ${af ? `${af}\n\n` : ""}${doc.summary || ""}
 
 ${familyPopulationMarkdown(doc.population)}
+
+${iconicMarkdown(plates)}
 
 ## Species in this copy
 
@@ -163,6 +162,19 @@ export function renderNotFoundMarkdown(path) {
 - [Species](/species)
 - [Families](/families)`,
   });
+}
+
+function iconicMarkdown(plates) {
+  if (!plates?.length) return "";
+  return `## First to look for
+
+${plates.map((plate) => {
+    const images = Array.isArray(plate.doc.images) ? plate.doc.images : [];
+    const picture = images.length === 0
+      ? "_No photograph is stored for this species yet._"
+      : images.map((image) => imageMarkdown(plate.doc, image)).join("\n\n");
+    return `### [${englishName(plate.doc)}](/species/${plate.doc.slug})\n\n${picture}`;
+  }).join("\n\n")}`;
 }
 
 function familyPopulationMarkdown(population) {

@@ -1,81 +1,17 @@
 {
-  "kind": "index",
-  "name": "families",
-  "sampleData": true,
-  "entries": [
-    {
-      "slug": "accipitridae",
-      "scientificName": "Accipitridae",
-      "commonNames": {
-        "en": "Hawks, eagles and kites"
-      },
-      "species": [
-        {
-          "slug": "haliaeetus-vocifer",
-          "scientificName": "Haliaeetus vocifer",
-          "names": {
-            "en": "African Fish Eagle",
-            "af": "Visarend"
-          }
-        }
-      ],
-      "population": {
-        "low": null,
-        "high": null,
-        "speciesCounted": 0,
-        "speciesTotal": 1,
-        "complete": false
-      }
-    },
-    {
-      "slug": "bucorvidae",
-      "scientificName": "Bucorvidae",
-      "commonNames": {
-        "en": "Ground-hornbills",
-        "af": "Bromvoëls"
-      },
-      "species": [
-        {
-          "slug": "bucorvus-leadbeateri",
-          "scientificName": "Bucorvus leadbeateri",
-          "names": {
-            "en": "Southern Ground Hornbill",
-            "af": "Bromvoël"
-          }
-        }
-      ],
-      "population": {
-        "low": null,
-        "high": null,
-        "speciesCounted": 0,
-        "speciesTotal": 1,
-        "complete": false
-      }
-    },
-    {
-      "slug": "coraciidae",
-      "scientificName": "Coraciidae",
-      "commonNames": {
-        "en": "Rollers",
-        "af": "Troupante"
-      },
-      "species": [
-        {
-          "slug": "coracias-caudatus",
-          "scientificName": "Coracias caudatus",
-          "names": {
-            "en": "Lilac-breasted Roller",
-            "af": "Gewone Troupant"
-          }
-        }
-      ],
-      "population": {
-        "low": null,
-        "high": null,
-        "speciesCounted": 0,
-        "speciesTotal": 1,
-        "complete": false
-      }
-    }
-  ]
+  "Accipitridae": {
+    "en": "Hawks, eagles and kites",
+    "af": null,
+    "population": null
+  },
+  "Bucorvidae": {
+    "en": "Ground-hornbills",
+    "af": "Bromvoëls",
+    "population": null
+  },
+  "Coraciidae": {
+    "en": "Rollers",
+    "af": "Troupante",
+    "population": null
+  }
 }

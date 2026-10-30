@@ -5,7 +5,7 @@ import path from "node:path";
 import { test } from "node:test";
 import { fileURLToPath } from "node:url";
 import { collectColourTokens } from "../src/marks.js";
-import { collectEntries, deriveAll, familyPopulation, readCatalog } from "../scripts/seed.mjs";
+import { collectEntries, deriveAll, familyPopulation, iconicSpecies, readCatalog } from "../scripts/seed.mjs";
 import { readJson } from "./helpers.js";
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
@@ -37,7 +37,16 @@ test("every data file matches the schema, slugs, and colour vocabulary", async (
   for (const entry of entries) {
     const data = JSON.parse(entry.value);
     assert.equal(validate(data), true, `${entry.key} ${ajv.errorsText(validate.errors)}`);
-    assert.equal(data.sampleData, true, entry.key);
+    if (entry.key.startsWith("index/")) {
+      const keys = Object.keys(data);
+      const sorted = keys.slice().sort((a, b) => a.localeCompare(b, "en", { sensitivity: "base" }) || a.localeCompare(b, "en"));
+      assert.deepEqual(keys, sorted, `${entry.key} key order`);
+      for (const value of Object.values(data)) {
+        assert.deepEqual(Object.keys(value), ["en", "af", "population"]);
+      }
+    } else {
+      assert.equal(data.sampleData, true, entry.key);
+    }
   }
   for (const slug of ["coracias-caudatus", "haliaeetus-vocifer", "bucorvus-leadbeateri"]) {
     const species = await readJson(`data/species/${slug}.json`);
@@ -63,12 +72,14 @@ test("derived family and index fields match the species files", async () => {
   assert.deepEqual(await readJson("data/index/species.json"), derived.speciesIndex);
   assert.deepEqual(await readJson("data/index/families.json"), derived.familiesIndex);
   for (const family of derived.families) {
-    assert.equal(family.population.low, null);
-    assert.equal(family.population.high, null);
-    assert.equal(family.population.speciesCounted, 0);
-    assert.equal(family.population.speciesTotal, family.species.length);
     assert.equal(family.population.complete, false);
+    assert.deepEqual(family.iconicSpecies, family.species.map((item) => item.slug));
   }
+  const speciesKeys = Object.keys(derived.speciesIndex);
+  assert.deepEqual(speciesKeys, ["Bucorvus leadbeateri", "Coracias caudatus", "Haliaeetus vocifer"]);
+  assert.equal(derived.speciesIndex["Coracias caudatus"].population, null);
+  assert.equal(derived.speciesIndex["Coraciidae"], undefined);
+  assert.deepEqual(Object.keys(derived.familiesIndex), ["Accipitridae", "Bucorvidae", "Coraciidae"]);
 });
 
 test("family totals count pairs as two individuals and stay incomplete while any species has no estimate", () => {
@@ -99,10 +110,25 @@ test("family totals count pairs as two individuals and stay incomplete while any
   });
 });
 
+test("iconic species put the highest midpoint first and cap the list at three", () => {
+  const bird = (slug, scientificName, low, high, unit) => ({
+    slug,
+    scientificName,
+    population: { estimate: { low, high }, unit },
+  });
+  const ranked = iconicSpecies([
+    bird("few", "Zzz zzz", 1, 1, "individuals"),
+    bird("many", "Mmm mmm", 10, 12, "pairs"),
+    bird("none-b", "Bbb bbb", null, null, null),
+    bird("none-a", "Aaa aaa", null, null, null),
+  ]);
+  assert.deepEqual(ranked, ["many", "few", "none-a"]);
+});
+
 test("family lists and indexes agree", async () => {
   const speciesIndex = await readJson("data/index/species.json");
-  const familyIndex = await readJson("data/index/families.json");
-  const speciesSlugs = speciesIndex.entries.map((entry) => entry.slug).sort();
-  const fromFamilies = familyIndex.entries.flatMap((entry) => entry.species.map((species) => species.slug)).sort();
+  const families = ["accipitridae", "bucorvidae", "coraciidae"].map((slug) => readJson(`data/family/${slug}.json`));
+  const speciesSlugs = Object.keys(speciesIndex).map((name) => name.trim().toLowerCase().replaceAll(" ", "-")).sort();
+  const fromFamilies = (await Promise.all(families)).flatMap((family) => family.species.map((species) => species.slug)).sort();
   assert.deepEqual(speciesSlugs, fromFamilies);
 });

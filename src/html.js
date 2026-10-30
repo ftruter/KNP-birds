@@ -6,13 +6,14 @@ import {
   CALL_TYPE,
   SAMPLE_NOTICE,
   afrikaansName,
-  byEnglishName,
   englishName,
   familyLabel,
-  familyTotalLine,
   familyTotalModel,
   imageAlt,
+  indexPopulationLine,
+  indexRows,
   objectPath,
+  orderFamilySpecies,
   populationModel,
   sizeLabel,
   statusLabel,
@@ -29,11 +30,9 @@ const NAV = [
 ];
 
 export function renderHomeHtml({ origin, speciesIndex, familiesIndex }) {
-  const species = entries(speciesIndex).slice().sort(byEnglishName);
-  const families = entries(familiesIndex).slice().sort(byEnglishName);
-  const sample = Boolean(speciesIndex?.sampleData || familiesIndex?.sampleData);
+  const species = indexRows(speciesIndex);
+  const families = indexRows(familiesIndex);
   const main = `
-${sample ? sampleNotice() : ""}
 <h1>Birds of Kruger National Park</h1>
 <p>An open field guide to the birds of Kruger National Park and neighbouring Marloth Park. It is written for people and for AI agents. Pages are rendered on the server. Nothing here needs JavaScript.</p>
 <p>The full list is resident species, plus summer migrants. Rare vagrants are left out. ${countSentence(species.length, families.length, speciesIndex, familiesIndex)}</p>
@@ -65,13 +64,12 @@ ${linkList(families, (entry) => `/family/${entry.slug}`, (entry) => `${englishNa
 }
 
 export function renderSpeciesIndexHtml({ origin, doc }) {
-  const list = entries(doc).slice().sort(byEnglishName);
+  const list = indexRows(doc);
   const main = `
-${doc?.sampleData ? sampleNotice() : ""}
 <h1>Species</h1>
-<p>${list.length === 0 ? "No species have been published yet." : `${list.length} ${list.length === 1 ? "species is" : "species are"} published in this copy.`}</p>
+<p>${list.length === 0 ? "No species have been published yet." : `${list.length} ${list.length === 1 ? "species is" : "species are"} published in this copy. The list is alphabetical by scientific name.`}</p>
 <ul class="species-list">
-${list.map((entry) => `<li><a href="/species/${escapeHtml(entry.slug)}">${escapeHtml(englishName(entry))}</a> <em>${escapeHtml(entry.scientificName || "")}</em> — ${escapeHtml(statusLabel(entry.status))} — <a href="/family/${escapeHtml(entry.family)}">${escapeHtml(familyLabel(entry.family))}</a></li>`).join("\n")}
+${list.map((entry) => `<li><a href="/species/${escapeHtml(entry.slug)}">${escapeHtml(englishName(entry))}</a> <em>${escapeHtml(entry.scientificName)}</em>${afrikaansName(entry) ? ` — ${escapeHtml(afrikaansName(entry))}` : ""} — ${escapeHtml(indexPopulationLine(entry.population, "Approximate estimate"))}</li>`).join("\n")}
 </ul>`;
   return layout({
     title: "Species · KNP Birds",
@@ -85,16 +83,12 @@ ${list.map((entry) => `<li><a href="/species/${escapeHtml(entry.slug)}">${escape
 }
 
 export function renderFamiliesIndexHtml({ origin, doc }) {
-  const list = entries(doc).slice().sort(byEnglishName);
+  const list = indexRows(doc);
   const main = `
-${doc?.sampleData ? sampleNotice() : ""}
 <h1>Families</h1>
+<p>Alphabetical by scientific name.</p>
 <ul class="species-list">
-${list.map((entry) => {
-    const count = Array.isArray(entry.species) ? entry.species.length : 0;
-    const total = entry.population ? ` ${escapeHtml(familyTotalLine(entry.population))}` : "";
-    return `<li><a href="/family/${escapeHtml(entry.slug)}">${escapeHtml(englishName(entry))}</a> <em>${escapeHtml(entry.scientificName || "")}</em> — ${count} in this copy.${total}</li>`;
-  }).join("\n")}
+${list.map((entry) => `<li><a href="/family/${escapeHtml(entry.slug)}">${escapeHtml(englishName(entry))}</a> <em>${escapeHtml(entry.scientificName)}</em> — ${escapeHtml(indexPopulationLine(entry.population, "Approximate total"))}</li>`).join("\n")}
 </ul>`;
   return layout({
     title: "Families · KNP Birds",
@@ -107,8 +101,8 @@ ${list.map((entry) => {
   });
 }
 
-export function renderFamilyHtml({ origin, doc }) {
-  const species = (Array.isArray(doc.species) ? doc.species : []).slice().sort(byEnglishName);
+export function renderFamilyHtml({ origin, doc, plates = [] }) {
+  const species = orderFamilySpecies(doc.species, doc.iconicSpecies);
   const main = `
 ${doc.sampleData ? sampleNotice() : ""}
 <p class="kicker">Family</p>
@@ -117,6 +111,7 @@ ${doc.sampleData ? sampleNotice() : ""}
 ${afrikaansName(doc) ? `<p class="afrikaans">${escapeHtml(afrikaansName(doc))}</p>` : ""}
 ${paragraphs(doc.summary)}
 ${familyPopulationHtml(doc.population)}
+${iconicHtml(plates)}
 <h2>Species in this copy</h2>
 <ul class="species-list">
 ${species.map((entry) => `<li><a href="/species/${escapeHtml(entry.slug)}">${escapeHtml(englishName(entry))}</a> <em>${escapeHtml(entry.scientificName || "")}</em>${afrikaansName(entry) ? ` — ${escapeHtml(afrikaansName(entry))}` : ""}</li>`).join("\n")}
@@ -283,6 +278,15 @@ function recordingsHtml(recordings) {
     const sourceLink = source ? `<a href="${escapeHtml(source)}">Source</a>` : "";
     return ` ${bits[0]}: ${[link, credit, sourceLink].filter(Boolean).join(". ")}.`;
   }).join("");
+}
+
+function iconicHtml(plates) {
+  if (!plates?.length) return "";
+  return `<h2>First to look for</h2>
+${plates.map((plate) => `<section>
+<h3><a href="/species/${escapeHtml(plate.doc.slug)}">${escapeHtml(englishName(plate.doc))}</a></h3>
+${figures(plate.doc, Array.isArray(plate.doc.images) ? plate.doc.images : [], plate.imagesAvailable)}
+</section>`).join("\n")}`;
 }
 
 function familyPopulationHtml(population) {

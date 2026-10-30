@@ -63,9 +63,9 @@ async function renderHome(env, origin, format) {
     return jsonPage({
       kind: "home",
       title: "Birds of Kruger National Park",
-      sampleData: Boolean(species?.data?.sampleData || families?.data?.sampleData),
-      species: species?.data?.entries ?? [],
-      families: families?.data?.entries ?? [],
+      sampleData: false,
+      species: species?.data ?? {},
+      families: families?.data ?? {},
       census: "Population figures on species pages are approximate. Kruger has no formal bird census.",
     }, origin, "/", "home");
   }
@@ -102,9 +102,10 @@ async function renderDocument(env, origin, route) {
     return route.format === "md" ? mdPage(body, origin, route.pathname, tag) : htmlPage(body, origin, route.pathname, tag);
   }
   if (route.kind === "family") {
+    const plates = await iconicPlates(env, doc.data, route.format);
     const body = route.format === "md"
-      ? renderFamilyMarkdown(doc.data)
-      : renderFamilyHtml({ origin, doc: doc.data });
+      ? renderFamilyMarkdown(doc.data, plates)
+      : renderFamilyHtml({ origin, doc: doc.data, plates });
     return route.format === "md" ? mdPage(body, origin, route.pathname, tag) : htmlPage(body, origin, route.pathname, tag);
   }
   if (route.kind === "vocab") {
@@ -121,6 +122,20 @@ async function renderDocument(env, origin, route) {
     ? renderSpeciesMarkdown({ doc: doc.data, colourMap })
     : renderSpeciesHtml({ origin, doc: doc.data, colourMap, imagesAvailable });
   return route.format === "md" ? mdPage(body, origin, route.pathname, tag) : htmlPage(body, origin, route.pathname, tag);
+}
+
+async function iconicPlates(env, family, format) {
+  const slugs = Array.isArray(family?.iconicSpecies) ? family.iconicSpecies : [];
+  const plates = [];
+  for (const slug of slugs) {
+    const species = await readDocument(env.BIRDS_KV, `species/${slug}`);
+    if (!species) continue;
+    plates.push({
+      doc: species.data,
+      imagesAvailable: format === "html" ? await availability(env.IMAGES, species.data.images) : {},
+    });
+  }
+  return plates;
 }
 
 async function availability(bucket, images) {

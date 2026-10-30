@@ -18,6 +18,9 @@
       }
     }
   ],
+  "iconicSpecies": [
+    "bucorvus-leadbeateri"
+  ],
   "population": {
     "low": null,
     "high": null,

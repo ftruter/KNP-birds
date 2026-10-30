@@ -48,6 +48,16 @@ test("pages are served in html, markdown, and json", async () => {
   const colours = await site.fetch("/vocab/colours");
   assert.equal(colours.status, 200);
   assert.match(await colours.text(), /slate-grey/);
+
+  const index = await (await site.fetch("/species.json")).json();
+  assert.deepEqual(Object.keys(index), ["Bucorvus leadbeateri", "Coracias caudatus", "Haliaeetus vocifer"]);
+  assert.deepEqual(index["Coracias caudatus"], {
+    en: "Lilac-breasted Roller",
+    af: "Gewone Troupant",
+    population: null,
+  });
+  const familyPage = await site.fetch("/family/coraciidae");
+  assert.match(await familyPage.text(), /First to look for/);
 });
 
 test("missing pages 404 in all three formats", async () => {
