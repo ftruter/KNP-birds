@@ -61,6 +61,44 @@ More index keys will be added as needed.
 - Cloudflare's CDN caches responses in front of the Worker, so most requests never reach it.
 - Served from `birds.truter.world` for now; a dedicated domain may follow.
 
+## Deploy
+
+Workers Builds on `main` should use:
+
+- Build command: `npm ci`
+- Deploy command: `npm run deploy`
+
+`npm run deploy` fails the build if either step fails:
+
+1. Regenerates derived fields from `data/` and uploads them to the `BIRDS_KV` namespace (`wrangler kv bulk put --remote --binding BIRDS_KV`). Re-running writes the same keys again. Keys removed from `data/` are deleted only when they start with `species/`, `family/`, `index/`, or `vocab/`. Any other key in the namespace is left alone.
+2. Deploys the Worker with `DATA_VERSION` (a SHA-256 of that payload) and `DATA_PUBLISHED_AT` (the time the upload finished).
+
+KV is written before the Worker so the new version renders the data it advertises.
+
+Check the upload locally, without a Cloudflare token:
+
+```sh
+npm run kv:dry-run
+```
+
+That prints the keys and byte sizes. It still refreshes derived files under `data/`. It does not list or change the remote namespace, so it cannot show deletions. `npm run kv:publish` uploads KV and stops; it does not deploy the Worker, so it does not bust the edge cache. Production deploys go through `npm run deploy`.
+
+The build token, supplied as `CLOUDFLARE_API_TOKEN`, needs:
+
+- Account → Workers Scripts → Edit, to deploy the Worker
+- Account → Workers KV Storage → Edit, to list, write, and delete keys
+- Zone → Workers Routes → Edit, because deploy reconciles the `birds.truter.world` custom domain
+
+The default Workers Builds token already includes those. The account id is `account_id` in `wrangler.toml`; Workers Builds also sets `CLOUDFLARE_ACCOUNT_ID`.
+
+### Cache after a data deploy
+
+Workers Caching (`[cache] enabled` in `wrangler.toml`) sits in front of the Worker and includes the Worker version in its cache key, so a new deployment does not serve pages stored for the previous version. Changing KV alone does not create a version. `DATA_VERSION` is a Worker var, so a data-only deploy still produces a new version and that edge cache starts empty.
+
+The Cache API (`caches.default`) is separate. It is not partitioned by Worker version, and it ignores `stale-while-revalidate`. It would keep the previous render for `s-maxage` (one hour on pages, one day on assets such as CSS). The first request after deploy misses Workers Caching, can hit that Cache API entry, and Workers Caching would then store the stale body for the new version: one hour of freshness plus 24 hours of `stale-while-revalidate` on pages. The Cache API key includes `DATA_VERSION` and the Worker version id, so a data or code deploy misses both layers.
+
+KV reads can also keep a previous value for up to 60 seconds (the default `cacheTtl`). For 70 seconds after `DATA_PUBLISHED_AT`, responses are `no-store`, so a stale read is not frozen into the edge cache. Browsers still keep a normal response for `max-age` (five minutes on pages) once caching resumes.
+
 ## Coding style
 
 The Worker, seed script, and tests run on current stable V8. Write modern JavaScript.

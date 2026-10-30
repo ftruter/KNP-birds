@@ -9,6 +9,9 @@
     "lint": "eslint . && prettier --check \"**/*.{js,mjs}\"",
     "format": "prettier --write \"**/*.{js,mjs}\"",
     "seed": "node scripts/seed.mjs",
+    "kv:dry-run": "node scripts/publish-kv.mjs --dry-run",
+    "kv:publish": "node scripts/publish-kv.mjs",
+    "deploy": "node scripts/deploy.mjs",
     "dev": "wrangler dev",
     "check": "wrangler deploy --dry-run --outdir dist"
   },

@@ -9,27 +9,71 @@ export const OBJECT_CACHE =
 export const REDIRECT_CACHE = 'public, max-age=3600, s-maxage=86400'
 export const NO_STORE = 'no-store'
 
-export const cacheRequest = (url) => {
+/**
+ * KV reads keep a previous value for the default cacheTtl, 60 seconds.
+ * The extra 10 seconds covers clock skew between the build and the edge.
+ * While this window is open, responses are no-store so a stale KV read
+ * cannot be frozen into Workers Caching for s-maxage.
+ */
+export const KV_CONSISTENCY_MS = 70_000
+
+export const cacheVersion = (env) =>
+  [env?.DATA_VERSION, env?.CF_VERSION_METADATA?.id]
+    .filter((part) => typeof part === 'string' && part.length > 0)
+    .join('.')
+
+export const kvReadMayBeStale = (env, now = Date.now()) => {
+  const publishedAt = Number(env?.DATA_PUBLISHED_AT)
+  return Number.isFinite(publishedAt)
+    ? now - publishedAt < KV_CONSISTENCY_MS
+    : false
+}
+
+export const cacheRequest = (url, version) => {
   const canonical = new URL(url)
   canonical.search = ''
   canonical.hash = ''
+  if (version) canonical.searchParams.set('v', version)
   return new Request(canonical.toString(), { method: 'GET' })
 }
 
+const hideWhileKvSettles = (response) => {
+  const headers = new Headers(response.headers)
+  headers.set('cache-control', NO_STORE)
+  return new Response(response.body, {
+    status: response.status,
+    statusText: response.statusText,
+    headers,
+  })
+}
+
+const sharedCacheAllowed = (response) =>
+  (response.status === 200 ||
+    response.status === 301 ||
+    response.status === 404) &&
+  !String(response.headers.get('cache-control') || '').includes('no-store')
+
 /**
  * Workers Caching (wrangler `cache.enabled`) stores the response in front of
- * the Worker from Cache-Control. The Cache API here is a second lookup so a
- * request that still reaches the Worker can skip KV and rendering.
- * s-maxage is about an hour for pages. stale-while-revalidate is included for
- * caches that honour it; the Cache API itself does not implement that directive.
+ * the Worker and includes the Worker version in its cache key. A new version
+ * does not serve the previous version's pages. KV changes alone do not create
+ * a version, so deploy sets DATA_VERSION from a hash of the payload.
+ *
+ * The Cache API is a second lookup for requests that still reach the Worker.
+ * It is not partitioned by version and it ignores stale-while-revalidate, so
+ * it would keep the previous render for s-maxage (an hour for pages, a day
+ * for assets). The new version would then store that stale body for the full
+ * freshness window. The cache key therefore includes DATA_VERSION and the
+ * Worker version id.
  */
-export const withCache = async (request, ctx, produce) => {
+export const withCache = async (request, ctx, produce, env) => {
   const method = request.method.toUpperCase()
   if (method !== 'GET' && method !== 'HEAD') return produce()
 
+  const settling = kvReadMayBeStale(env)
   const cache = globalThis.caches?.default
-  const key = cacheRequest(request.url)
-  if (cache) {
+  const key = cacheRequest(request.url, cacheVersion(env))
+  if (cache && !settling) {
     try {
       const hit = await cache.match(key)
       if (hit) {
@@ -45,13 +89,9 @@ export const withCache = async (request, ctx, produce) => {
     }
   }
 
-  const response = await produce()
-  if (
-    cache &&
-    (response.status === 200 ||
-      response.status === 301 ||
-      response.status === 404)
-  ) {
+  const produced = await produce()
+  const response = settling ? hideWhileKvSettles(produced) : produced
+  if (cache && sharedCacheAllowed(response)) {
     const job = cache
       .put(key, response.clone())
       .catch((error) => logCache('cache put failed', error))
