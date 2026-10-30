@@ -11,8 +11,17 @@
     {
       "slug": "haliaeetus-vocifer",
       "scientificName": "Haliaeetus vocifer",
-      "commonNames": { "en": "African Fish Eagle", "af": "Visarend" },
-      "status": "resident"
+      "names": {
+        "en": "African Fish Eagle",
+        "af": "Visarend"
+      }
     }
-  ]
+  ],
+  "population": {
+    "low": null,
+    "high": null,
+    "speciesCounted": 0,
+    "speciesTotal": 1,
+    "complete": false
+  }
 }

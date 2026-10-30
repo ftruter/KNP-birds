@@ -1,7 +1,7 @@
 import assert from "node:assert/strict";
 import { test } from "node:test";
-import { renderSpeciesHtml } from "../src/html.js";
-import { renderSpeciesMarkdown } from "../src/markdown.js";
+import { renderFamilyHtml, renderSpeciesHtml } from "../src/html.js";
+import { renderFamilyMarkdown, renderSpeciesMarkdown } from "../src/markdown.js";
 import { colourMapFromDoc } from "../src/store.js";
 import { palette, css } from "../src/style.js";
 import { readJson } from "./helpers.js";
@@ -129,6 +129,21 @@ test("escaped names cannot inject markup, and AI images are labelled", async () 
   });
   assert.match(missing, /Photograph not in the store yet/);
   assert.doesNotMatch(missing, /<img /);
+});
+
+test("a family page shows the derived approximate total", async () => {
+  const doc = await readJson("data/family/coraciidae.json");
+  const html = renderFamilyHtml({ origin: "https://birds.truter.world", doc });
+  assert.match(html, /Approximate total/);
+  assert.match(html, /Includes 0 of 1 species/);
+  assert.match(html, /This total is incomplete/);
+  assert.match(html, /href="\/species\/coracias-caudatus"/);
+  assert.match(html, /Gewone Troupant/);
+  assert.doesNotMatch(html, /<script/i);
+  const markdown = renderFamilyMarkdown(doc);
+  assert.match(markdown, /\*\*Approximate total\.\*\*/);
+  assert.match(markdown, /Includes 0 of 1 species/);
+  assert.match(markdown, /This total is incomplete/);
 });
 
 test("markdown and json-facing copy keep the population label", async () => {

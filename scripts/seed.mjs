@@ -6,18 +6,167 @@
  *     --namespace-id d241348305f646e29c30880c361f6bf6 \
  *     --remote
  *
- * This does not contact Cloudflare. Each value is the file's JSON text.
+ *   node scripts/seed.mjs --write
+ *
+ * --write refreshes derived fields in family and index documents from the
+ * species files, then the script prints the bulk JSON. Without --write it
+ * prints the files as they are. Derived fields are not edited by hand.
  * Keys:
  *   data/species/<slug>.json → species/<slug>
  *   data/family/<slug>.json  → family/<slug>
  *   data/index/<name>.json   → index/<name>
  *   data/vocab/<name>.json   → vocab/<name>
  */
-import { readdir, readFile } from "node:fs/promises";
+import { readdir, readFile, writeFile } from "node:fs/promises";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
+
+const COUNTABLE_UNITS = new Set(["individuals", "pairs", "breeding pairs"]);
+
+export function speciesNames(species) {
+  const source = species?.commonNames || species?.names || {};
+  const names = {};
+  if (typeof source.en === "string" && source.en.trim()) names.en = source.en.trim();
+  if (typeof source.af === "string" && source.af.trim()) names.af = source.af.trim();
+  return names;
+}
+
+export function embedSpecies(species) {
+  return {
+    slug: species.slug,
+    scientificName: species.scientificName,
+    names: speciesNames(species),
+  };
+}
+
+/** A species counts only when both bounds and a unit are present. */
+export function countedIndividuals(species) {
+  const population = species?.population;
+  const unit = population?.unit;
+  const low = population?.estimate?.low;
+  const high = population?.estimate?.high;
+  if (!COUNTABLE_UNITS.has(unit) || !Number.isInteger(low) || !Number.isInteger(high)) return null;
+  const factor = unit === "individuals" ? 1 : 2;
+  return { low: low * factor, high: high * factor };
+}
+
+export function familyPopulation(speciesDocs) {
+  const speciesTotal = speciesDocs.length;
+  const counted = speciesDocs.map(countedIndividuals).filter(Boolean);
+  const complete = speciesTotal > 0 && counted.length === speciesTotal;
+  if (counted.length === 0) {
+    return { low: null, high: null, speciesCounted: 0, speciesTotal, complete: false };
+  }
+  return {
+    low: counted.reduce((sum, item) => sum + item.low, 0),
+    high: counted.reduce((sum, item) => sum + item.high, 0),
+    speciesCounted: counted.length,
+    speciesTotal,
+    complete,
+  };
+}
+
+function byScientificName(a, b) {
+  return a.scientificName.localeCompare(b.scientificName, "en") || a.slug.localeCompare(b.slug);
+}
+
+function copyNames(names) {
+  const copy = { en: names.en };
+  if (names.af) copy.af = names.af;
+  return copy;
+}
+
+export function deriveFamilyDocument(family, speciesDocs) {
+  const species = speciesDocs.slice().sort(byScientificName).map(embedSpecies);
+  return {
+    kind: "family",
+    slug: family.slug,
+    scientificName: family.scientificName,
+    commonNames: copyNames(family.commonNames),
+    summary: family.summary,
+    sampleData: family.sampleData === true,
+    species,
+    population: familyPopulation(speciesDocs),
+  };
+}
+
+export function deriveSpeciesIndex(speciesDocs) {
+  return {
+    kind: "index",
+    name: "species",
+    sampleData: speciesDocs.some((species) => species.sampleData === true),
+    entries: speciesDocs.slice().sort(byScientificName).map((species) => ({
+      slug: species.slug,
+      scientificName: species.scientificName,
+      names: speciesNames(species),
+      family: species.family,
+      status: species.status,
+    })),
+  };
+}
+
+export function deriveFamiliesIndex(familyDocs) {
+  return {
+    kind: "index",
+    name: "families",
+    sampleData: familyDocs.some((family) => family.sampleData === true),
+    entries: familyDocs.slice().sort(byScientificName).map((family) => ({
+      slug: family.slug,
+      scientificName: family.scientificName,
+      commonNames: copyNames(family.commonNames),
+      species: family.species,
+      population: family.population,
+    })),
+  };
+}
+
+export function deriveAll(speciesDocs, familyDocs) {
+  const familiesBySlug = new Map(familyDocs.map((family) => [family.slug, family]));
+  const grouped = new Map(familyDocs.map((family) => [family.slug, []]));
+  for (const species of speciesDocs) {
+    if (!familiesBySlug.has(species.family)) {
+      throw new Error(`Species ${species.slug} names family ${species.family}, which has no family file`);
+    }
+    grouped.get(species.family).push(species);
+  }
+  const families = familyDocs.map((family) => deriveFamilyDocument(family, grouped.get(family.slug)));
+  return {
+    families,
+    speciesIndex: deriveSpeciesIndex(speciesDocs),
+    familiesIndex: deriveFamiliesIndex(families),
+  };
+}
+
+export async function readCatalog(dataDir = path.join(root, "data")) {
+  const species = [];
+  const families = [];
+  for (const file of await walk(path.join(dataDir, "species"))) {
+    species.push(JSON.parse(await readFile(file, "utf8")));
+  }
+  for (const file of await walk(path.join(dataDir, "family"))) {
+    families.push(JSON.parse(await readFile(file, "utf8")));
+  }
+  return { species, families };
+}
+
+export async function writeDerived(dataDir = path.join(root, "data")) {
+  const { species, families } = await readCatalog(dataDir);
+  const derived = deriveAll(species, families);
+  const writes = [];
+  for (const family of derived.families) {
+    writes.push(writeJson(path.join(dataDir, "family", `${family.slug}.json`), family));
+  }
+  writes.push(writeJson(path.join(dataDir, "index", "species.json"), derived.speciesIndex));
+  writes.push(writeJson(path.join(dataDir, "index", "families.json"), derived.familiesIndex));
+  await Promise.all(writes);
+  return derived;
+}
+
+function writeJson(file, value) {
+  return writeFile(file, `${JSON.stringify(value, null, 2)}\n`);
+}
 
 export async function collectEntries(dataDir = path.join(root, "data")) {
   const files = await walk(dataDir);
@@ -73,6 +222,7 @@ async function walk(dir) {
 }
 
 if (process.argv[1] && path.resolve(process.argv[1]) === fileURLToPath(import.meta.url)) {
+  if (process.argv.includes("--write")) await writeDerived();
   const entries = await collectEntries();
   for (const entry of entries) console.error(`${entry.key}\t${entry.file}`);
   process.stdout.write(`${JSON.stringify(entries.map(({ key, value }) => ({ key, value })), null, 2)}\n`);

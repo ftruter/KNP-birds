@@ -12,8 +12,17 @@
     {
       "slug": "coracias-caudatus",
       "scientificName": "Coracias caudatus",
-      "commonNames": { "en": "Lilac-breasted Roller", "af": "Gewone Troupant" },
-      "status": "resident"
+      "names": {
+        "en": "Lilac-breasted Roller",
+        "af": "Gewone Troupant"
+      }
     }
-  ]
+  ],
+  "population": {
+    "low": null,
+    "high": null,
+    "speciesCounted": 0,
+    "speciesTotal": 1,
+    "complete": false
+  }
 }

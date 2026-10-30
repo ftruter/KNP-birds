@@ -2,12 +2,15 @@ import { diffSpecies } from "./diff.js";
 import { escapeHtml, inlineText, safeHttpUrl } from "./escape.js";
 import {
   APPROXIMATE_LABEL,
+  APPROXIMATE_TOTAL,
   CALL_TYPE,
   SAMPLE_NOTICE,
   afrikaansName,
   byEnglishName,
   englishName,
   familyLabel,
+  familyTotalLine,
+  familyTotalModel,
   imageAlt,
   objectPath,
   populationModel,
@@ -89,7 +92,8 @@ ${doc?.sampleData ? sampleNotice() : ""}
 <ul class="species-list">
 ${list.map((entry) => {
     const count = Array.isArray(entry.species) ? entry.species.length : 0;
-    return `<li><a href="/family/${escapeHtml(entry.slug)}">${escapeHtml(englishName(entry))}</a> <em>${escapeHtml(entry.scientificName || "")}</em> — ${count} ${count === 1 ? "species" : "species"} in this copy</li>`;
+    const total = entry.population ? ` ${escapeHtml(familyTotalLine(entry.population))}` : "";
+    return `<li><a href="/family/${escapeHtml(entry.slug)}">${escapeHtml(englishName(entry))}</a> <em>${escapeHtml(entry.scientificName || "")}</em> — ${count} in this copy.${total}</li>`;
   }).join("\n")}
 </ul>`;
   return layout({
@@ -112,9 +116,10 @@ ${doc.sampleData ? sampleNotice() : ""}
 <p class="latin">${escapeHtml(doc.scientificName || "")}</p>
 ${afrikaansName(doc) ? `<p class="afrikaans">${escapeHtml(afrikaansName(doc))}</p>` : ""}
 ${paragraphs(doc.summary)}
+${familyPopulationHtml(doc.population)}
 <h2>Species in this copy</h2>
 <ul class="species-list">
-${species.map((entry) => `<li><a href="/species/${escapeHtml(entry.slug)}">${escapeHtml(englishName(entry))}</a> <em>${escapeHtml(entry.scientificName || "")}</em>${entry.status ? ` — ${escapeHtml(statusLabel(entry.status))}` : ""}</li>`).join("\n")}
+${species.map((entry) => `<li><a href="/species/${escapeHtml(entry.slug)}">${escapeHtml(englishName(entry))}</a> <em>${escapeHtml(entry.scientificName || "")}</em>${afrikaansName(entry) ? ` — ${escapeHtml(afrikaansName(entry))}` : ""}</li>`).join("\n")}
 </ul>`;
   return layout({
     title: `${englishName(doc)} · KNP Birds`,
@@ -278,6 +283,21 @@ function recordingsHtml(recordings) {
     const sourceLink = source ? `<a href="${escapeHtml(source)}">Source</a>` : "";
     return ` ${bits[0]}: ${[link, credit, sourceLink].filter(Boolean).join(". ")}.`;
   }).join("");
+}
+
+function familyPopulationHtml(population) {
+  const model = familyTotalModel(population);
+  const range = model.range
+    ? `<p class="estimate-range">${escapeHtml(model.range)}</p>`
+    : `<p class="estimate-range">No numeric total yet.</p>`;
+  return `<section class="population" aria-labelledby="family-population-title">
+<h2 id="family-population-title">Population</h2>
+<p class="estimate-label">${escapeHtml(APPROXIMATE_TOTAL)}</p>
+<p>Kruger has no formal bird census. This adds up the species estimates and counts every pair as two individuals.</p>
+${range}
+<p>${escapeHtml(model.coverage)}</p>
+${model.complete ? "" : "<p>This total is incomplete.</p>"}
+</section>`;
 }
 
 function populationHtml(model) {

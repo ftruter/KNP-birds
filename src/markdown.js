@@ -2,12 +2,15 @@ import { diffSpecies } from "./diff.js";
 import { inlineText, safeHttpUrl } from "./escape.js";
 import {
   APPROXIMATE_LABEL,
+  APPROXIMATE_TOTAL,
   CALL_TYPE,
   SAMPLE_NOTICE,
   afrikaansName,
   byEnglishName,
   englishName,
   familyLabel,
+  familyTotalLine,
+  familyTotalModel,
   imageAlt,
   objectPath,
   populationModel,
@@ -69,7 +72,8 @@ export function renderFamiliesIndexMarkdown(doc) {
     sample: Boolean(doc?.sampleData),
     body: list.map((entry) => {
       const count = Array.isArray(entry.species) ? entry.species.length : 0;
-      return `- [${englishName(entry)}](/family/${entry.slug}) (${entry.scientificName}) — ${count} in this copy`;
+      const total = entry.population ? ` ${familyTotalLine(entry.population)}` : "";
+      return `- [${englishName(entry)}](/family/${entry.slug}) (${entry.scientificName}) — ${count} in this copy.${total}`;
     }).join("\n"),
   });
 }
@@ -85,9 +89,11 @@ export function renderFamilyMarkdown(doc) {
 
 ${af ? `${af}\n\n` : ""}${doc.summary || ""}
 
+${familyPopulationMarkdown(doc.population)}
+
 ## Species in this copy
 
-${species.map((entry) => `- [${englishName(entry)}](/species/${entry.slug}) (${entry.scientificName})${entry.status ? ` — ${statusLabel(entry.status)}` : ""}`).join("\n")}`,
+${species.map((entry) => `- [${englishName(entry)}](/species/${entry.slug}) (${entry.scientificName})${afrikaansName(entry) ? ` — ${afrikaansName(entry)}` : ""}`).join("\n")}`,
   });
 }
 
@@ -157,6 +163,19 @@ export function renderNotFoundMarkdown(path) {
 - [Species](/species)
 - [Families](/families)`,
   });
+}
+
+function familyPopulationMarkdown(population) {
+  const model = familyTotalModel(population);
+  return `## Population
+
+**${APPROXIMATE_TOTAL}.** Kruger has no formal bird census. This adds up the species estimates and counts every pair as two individuals.
+
+${model.range || "No numeric total yet."}
+
+${model.coverage}
+
+${model.complete ? "" : "This total is incomplete."}`;
 }
 
 function comparisonMarkdown(section, colourMap) {

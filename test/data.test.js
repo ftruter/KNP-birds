@@ -5,7 +5,7 @@ import path from "node:path";
 import { test } from "node:test";
 import { fileURLToPath } from "node:url";
 import { collectColourTokens } from "../src/marks.js";
-import { collectEntries } from "../scripts/seed.mjs";
+import { collectEntries, deriveAll, familyPopulation, readCatalog } from "../scripts/seed.mjs";
 import { readJson } from "./helpers.js";
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
@@ -54,10 +54,55 @@ test("every data file matches the schema, slugs, and colour vocabulary", async (
   }
 });
 
+test("derived family and index fields match the species files", async () => {
+  const { species, families } = await readCatalog();
+  const derived = deriveAll(species, families);
+  for (const family of derived.families) {
+    assert.deepEqual(await readJson(`data/family/${family.slug}.json`), family, family.slug);
+  }
+  assert.deepEqual(await readJson("data/index/species.json"), derived.speciesIndex);
+  assert.deepEqual(await readJson("data/index/families.json"), derived.familiesIndex);
+  for (const family of derived.families) {
+    assert.equal(family.population.low, null);
+    assert.equal(family.population.high, null);
+    assert.equal(family.population.speciesCounted, 0);
+    assert.equal(family.population.speciesTotal, family.species.length);
+    assert.equal(family.population.complete, false);
+  }
+});
+
+test("family totals count pairs as two individuals and stay incomplete while any species has no estimate", () => {
+  const pairs = { population: { estimate: { low: 10, high: 12 }, unit: "pairs" } };
+  const breedingPairs = { population: { estimate: { low: 3, high: 4 }, unit: "breeding pairs" } };
+  const individuals = { population: { estimate: { low: 5, high: 5 }, unit: "individuals" } };
+  const missing = { population: { estimate: { low: null, high: null }, unit: null } };
+  assert.deepEqual(familyPopulation([pairs, individuals, missing]), {
+    low: 25,
+    high: 29,
+    speciesCounted: 2,
+    speciesTotal: 3,
+    complete: false,
+  });
+  assert.deepEqual(familyPopulation([breedingPairs]), {
+    low: 6,
+    high: 8,
+    speciesCounted: 1,
+    speciesTotal: 1,
+    complete: true,
+  });
+  assert.deepEqual(familyPopulation([missing]), {
+    low: null,
+    high: null,
+    speciesCounted: 0,
+    speciesTotal: 1,
+    complete: false,
+  });
+});
+
 test("family lists and indexes agree", async () => {
   const speciesIndex = await readJson("data/index/species.json");
   const familyIndex = await readJson("data/index/families.json");
   const speciesSlugs = speciesIndex.entries.map((entry) => entry.slug).sort();
-  const fromFamilies = familyIndex.entries.flatMap((entry) => entry.species).sort();
+  const fromFamilies = familyIndex.entries.flatMap((entry) => entry.species.map((species) => species.slug)).sort();
   assert.deepEqual(speciesSlugs, fromFamilies);
 });

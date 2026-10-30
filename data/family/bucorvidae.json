@@ -12,8 +12,17 @@
     {
       "slug": "bucorvus-leadbeateri",
       "scientificName": "Bucorvus leadbeateri",
-      "commonNames": { "en": "Southern Ground Hornbill", "af": "Bromvoël" },
-      "status": "resident"
+      "names": {
+        "en": "Southern Ground Hornbill",
+        "af": "Bromvoël"
+      }
     }
-  ]
+  ],
+  "population": {
+    "low": null,
+    "high": null,
+    "speciesCounted": 0,
+    "speciesTotal": 1,
+    "complete": false
+  }
 }

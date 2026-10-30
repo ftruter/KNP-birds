@@ -1,5 +1,6 @@
 export const SAMPLE_NOTICE = "Sample content, to be verified.";
 export const APPROXIMATE_LABEL = "Approximate estimate";
+export const APPROXIMATE_TOTAL = "Approximate total";
 
 export const CALL_TYPE = {
   song: "Song",
@@ -24,11 +25,11 @@ export const CONFIDENCE_LABEL = {
 };
 
 export function englishName(doc) {
-  return doc?.commonNames?.en || doc?.scientificName || doc?.slug || "Untitled";
+  return doc?.names?.en || doc?.commonNames?.en || doc?.scientificName || doc?.slug || "Untitled";
 }
 
 export function afrikaansName(doc) {
-  const name = doc?.commonNames?.af;
+  const name = doc?.names?.af || doc?.commonNames?.af;
   return typeof name === "string" && name.trim() ? name.trim() : "";
 }
 
@@ -52,6 +53,31 @@ export function sizeLabel(size) {
 
 export function byEnglishName(a, b) {
   return englishName(a).localeCompare(englishName(b), "en");
+}
+
+export function familyTotalModel(population) {
+  const low = Number.isInteger(population?.low) ? population.low : null;
+  const high = Number.isInteger(population?.high) ? population.high : null;
+  let range = null;
+  if (low != null && high != null) range = low === high ? `${low} individuals` : `${low}–${high} individuals`;
+  else if (low != null) range = `at least ${low} individuals`;
+  else if (high != null) range = `up to ${high} individuals`;
+  const counted = Number.isInteger(population?.speciesCounted) ? population.speciesCounted : 0;
+  const total = Number.isInteger(population?.speciesTotal) ? population.speciesTotal : 0;
+  return {
+    range,
+    counted,
+    total,
+    complete: population?.complete === true,
+    coverage: `Includes ${counted} of ${total} species.`,
+  };
+}
+
+export function familyTotalLine(population) {
+  const model = familyTotalModel(population);
+  const figure = model.range || "no numeric total yet";
+  const incomplete = model.complete ? "" : " This total is incomplete.";
+  return `${APPROXIMATE_TOTAL}: ${figure}. ${model.coverage}${incomplete}`;
 }
 
 export function populationModel(population) {

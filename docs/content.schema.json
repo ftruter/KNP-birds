@@ -313,21 +313,32 @@
         }
       }
     },
-    "speciesRef": {
+    "embeddedSpecies": {
       "type": "object",
       "additionalProperties": false,
-      "required": ["slug", "scientificName", "commonNames"],
+      "required": ["slug", "scientificName", "names"],
       "properties": {
         "slug": { "$ref": "#/$defs/slug" },
         "scientificName": { "type": "string", "minLength": 1 },
-        "commonNames": { "$ref": "#/$defs/commonNames" },
-        "status": { "$ref": "#/$defs/status" }
+        "names": { "$ref": "#/$defs/commonNames" }
+      }
+    },
+    "familyPopulation": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["low", "high", "speciesCounted", "speciesTotal", "complete"],
+      "properties": {
+        "low": { "$ref": "#/$defs/nullableInt" },
+        "high": { "$ref": "#/$defs/nullableInt" },
+        "speciesCounted": { "type": "integer", "minimum": 0 },
+        "speciesTotal": { "type": "integer", "minimum": 0 },
+        "complete": { "type": "boolean" }
       }
     },
     "family": {
       "type": "object",
       "additionalProperties": false,
-      "required": ["kind", "slug", "scientificName", "commonNames", "summary", "sampleData", "species"],
+      "required": ["kind", "slug", "scientificName", "commonNames", "summary", "sampleData", "species", "population"],
       "properties": {
         "kind": { "const": "family" },
         "slug": { "$ref": "#/$defs/slug" },
@@ -337,8 +348,36 @@
         "sampleData": { "type": "boolean" },
         "species": {
           "type": "array",
-          "items": { "$ref": "#/$defs/speciesRef" }
-        }
+          "items": { "$ref": "#/$defs/embeddedSpecies" }
+        },
+        "population": { "$ref": "#/$defs/familyPopulation" }
+      }
+    },
+    "speciesIndexEntry": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["slug", "scientificName", "names", "family", "status"],
+      "properties": {
+        "slug": { "$ref": "#/$defs/slug" },
+        "scientificName": { "type": "string", "minLength": 1 },
+        "names": { "$ref": "#/$defs/commonNames" },
+        "family": { "$ref": "#/$defs/slug" },
+        "status": { "$ref": "#/$defs/status" }
+      }
+    },
+    "familyIndexEntry": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["slug", "scientificName", "commonNames", "species", "population"],
+      "properties": {
+        "slug": { "$ref": "#/$defs/slug" },
+        "scientificName": { "type": "string", "minLength": 1 },
+        "commonNames": { "$ref": "#/$defs/commonNames" },
+        "species": {
+          "type": "array",
+          "items": { "$ref": "#/$defs/embeddedSpecies" }
+        },
+        "population": { "$ref": "#/$defs/familyPopulation" }
       }
     },
     "index": {
@@ -349,26 +388,38 @@
         "kind": { "const": "index" },
         "name": { "enum": ["species", "families"] },
         "sampleData": { "type": "boolean" },
-        "entries": {
-          "type": "array",
-          "items": {
-            "type": "object",
-            "additionalProperties": false,
-            "required": ["slug", "scientificName", "commonNames"],
+        "entries": { "type": "array" }
+      },
+      "allOf": [
+        {
+          "if": {
+            "properties": { "name": { "const": "species" } },
+            "required": ["name"]
+          },
+          "then": {
             "properties": {
-              "slug": { "$ref": "#/$defs/slug" },
-              "scientificName": { "type": "string", "minLength": 1 },
-              "commonNames": { "$ref": "#/$defs/commonNames" },
-              "family": { "$ref": "#/$defs/slug" },
-              "status": { "$ref": "#/$defs/status" },
-              "species": {
+              "entries": {
                 "type": "array",
-                "items": { "$ref": "#/$defs/slug" }
+                "items": { "$ref": "#/$defs/speciesIndexEntry" }
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": { "name": { "const": "families" } },
+            "required": ["name"]
+          },
+          "then": {
+            "properties": {
+              "entries": {
+                "type": "array",
+                "items": { "$ref": "#/$defs/familyIndexEntry" }
               }
             }
           }
         }
-      }
+      ]
     },
     "colours": {
       "type": "object",
