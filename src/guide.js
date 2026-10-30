@@ -69,6 +69,16 @@ export const indexPopulationLine = (population, label) =>
     ? `${label}: no numeric figure yet.`
     : `${label}: about ${population} individuals.`
 
+/** Index value 0 means the family total has not been rolled up yet. */
+export const familyIndexPopulationLine = (population) =>
+  indexPopulationLine(
+    Number.isInteger(population) && population > 0 ? population : null,
+    APPROXIMATE_TOTAL,
+  )
+
+export const EMPTY_FAMILY_SPECIES =
+  'No species from this family are published in this copy yet.'
+
 export const englishName = (doc) =>
   doc?.names?.en ||
   doc?.commonNames?.en ||

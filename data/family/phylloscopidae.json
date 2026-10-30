@@ -1,0 +1,19 @@
+{
+  "kind": "family",
+  "slug": "phylloscopidae",
+  "scientificName": "Phylloscopidae",
+  "commonNames": {
+    "en": "Leaf warblers"
+  },
+  "summary": "Field notes for this family are still to be written.",
+  "sampleData": true,
+  "species": [],
+  "iconicSpecies": [],
+  "population": {
+    "low": null,
+    "high": null,
+    "speciesCounted": 0,
+    "speciesTotal": 0,
+    "complete": false
+  }
+}

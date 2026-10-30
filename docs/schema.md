@@ -128,7 +128,7 @@ The page renders a range (`low–high`, `at least low`, or `up to high`) with th
 
 `kind` is `"family"`. `slug` is the scientific family name in lowercase (`coraciidae`). The family's own `commonNames`, `summary`, and `sampleData` are written by hand. Two fields are derived by `scripts/seed.mjs` from the species files and are not edited by hand:
 
-`species` is every species whose `family` slug matches, sorted by scientific name. Each item is `{ slug, scientificName, names: { en, af } }`. `names.af` is omitted when the species has no Afrikaans name. A family page can list them without reading every species document.
+`species` is every species whose `family` slug matches, sorted by scientific name. Each item is `{ slug, scientificName, names: { en, af } }`. `names.af` is omitted when the species has no Afrikaans name. A family page can list them without reading every species document. The array may be empty when no species from that family are published yet. `iconicSpecies` is then empty too. The page says that no species from the family are published in this copy, and it omits the Afrikaans line when `commonNames.af` is absent. It does not invent a name.
 
 `iconicSpecies` is an ordered list of up to three species slugs from that family. Species with an estimate come first, most prevalent first. Prevalence is the midpoint of `low` and `high` after converting to individuals (`pairs` and `breeding pairs` count as two). Species with no estimate follow, and ties are broken by scientific name, case-insensitive. The family page shows these species, and their photographs, before the rest of the list.
 

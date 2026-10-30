@@ -85,6 +85,58 @@ test('pages are served in html, markdown, and json', async () => {
   assert.match(await familyPage.text(), /First to look for/)
 })
 
+test('a new family stub and the full families index render in every format', async () => {
+  const { records } = await loadStore()
+  const site = await app(records)
+  const html = await site.fetch('/family/alcedinidae')
+  assert.equal(html.status, 200)
+  assert.equal(html.headers.get('content-type'), 'text/html; charset=utf-8')
+  const htmlBody = await html.text()
+  assert.match(htmlBody, /Kingfishers/)
+  assert.match(htmlBody, /Visvangers/)
+  assert.match(
+    htmlBody,
+    /No species from this family are published in this copy yet/,
+  )
+  assert.doesNotMatch(htmlBody, /<script/i)
+
+  const markdown = await site.fetch('/family/alcedinidae.md')
+  assert.equal(
+    markdown.headers.get('content-type'),
+    'text/markdown; charset=utf-8',
+  )
+  assert.match(await markdown.text(), /Visvangers/)
+
+  const json = await site.fetch('/family/alcedinidae.json')
+  assert.equal(
+    json.headers.get('content-type'),
+    'application/json; charset=utf-8',
+  )
+  const data = await json.json()
+  assert.equal(data.scientificName, 'Alcedinidae')
+  assert.deepEqual(data.species, [])
+  assert.deepEqual(data.iconicSpecies, [])
+  assert.equal(data.population.speciesCounted, 0)
+  assert.equal(data.population.speciesTotal, 0)
+
+  const unnamed = await (await site.fetch('/family/acrocephalidae')).text()
+  assert.match(unnamed, /Reed warblers and allies/)
+  assert.doesNotMatch(unnamed, /class="afrikaans"/)
+
+  const indexHtml = await (await site.fetch('/families')).text()
+  assert.equal((indexHtml.match(/href="\/family\//g) || []).length, 86)
+  assert.match(indexHtml, /Visvangers/)
+  assert.doesNotMatch(indexHtml, /about 0 individuals/)
+  const indexMd = await (await site.fetch('/families.md')).text()
+  assert.equal((indexMd.match(/\]\(\/family\//g) || []).length, 86)
+  const indexJson = await (await site.fetch('/families.json')).json()
+  assert.equal(Object.keys(indexJson).length, 86)
+  assert.equal(indexJson.Accipitridae.af, null)
+  assert.equal(indexJson.Accipitridae.en, 'Hawks, eagles and kites')
+  assert.equal(indexJson.Alcedinidae.af, 'Visvangers')
+  assert.equal(indexJson.Accipitridae.population, 0)
+})
+
 test('missing pages 404 in all three formats', async () => {
   const { records } = await loadStore()
   const site = await app(records)
