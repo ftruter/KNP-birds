@@ -1,0 +1,28 @@
+{
+  "kind": "index",
+  "name": "species",
+  "sampleData": true,
+  "entries": [
+    {
+      "slug": "bucorvus-leadbeateri",
+      "scientificName": "Bucorvus leadbeateri",
+      "commonNames": { "en": "Southern Ground Hornbill", "af": "Bromvoël" },
+      "family": "bucorvidae",
+      "status": "resident"
+    },
+    {
+      "slug": "coracias-caudatus",
+      "scientificName": "Coracias caudatus",
+      "commonNames": { "en": "Lilac-breasted Roller", "af": "Gewone Troupant" },
+      "family": "coraciidae",
+      "status": "resident"
+    },
+    {
+      "slug": "haliaeetus-vocifer",
+      "scientificName": "Haliaeetus vocifer",
+      "commonNames": { "en": "African Fish Eagle", "af": "Visarend" },
+      "family": "accipitridae",
+      "status": "resident"
+    }
+  ]
+}

@@ -1,0 +1,101 @@
+export const SAMPLE_NOTICE = "Sample content, to be verified.";
+export const APPROXIMATE_LABEL = "Approximate estimate";
+
+export const CALL_TYPE = {
+  song: "Song",
+  call: "Call",
+  alarm: "Alarm",
+  contact: "Contact",
+  duet: "Duet",
+  other: "Other",
+};
+
+export const TREND_LABEL = {
+  increasing: "Increasing",
+  stable: "Stable",
+  decreasing: "Decreasing",
+  unknown: "Unknown",
+};
+
+export const CONFIDENCE_LABEL = {
+  low: "Low",
+  medium: "Medium",
+  high: "High",
+};
+
+export function englishName(doc) {
+  return doc?.commonNames?.en || doc?.scientificName || doc?.slug || "Untitled";
+}
+
+export function afrikaansName(doc) {
+  const name = doc?.commonNames?.af;
+  return typeof name === "string" && name.trim() ? name.trim() : "";
+}
+
+export function statusLabel(status) {
+  if (status === "resident") return "Resident";
+  if (status === "summer-migrant") return "Summer migrant";
+  return status ? String(status) : "";
+}
+
+export function familyLabel(slug) {
+  if (!slug) return "";
+  return slug.charAt(0).toUpperCase() + slug.slice(1);
+}
+
+export function sizeLabel(size) {
+  const range = size?.lengthCm;
+  if (!range || typeof range.min !== "number" || typeof range.max !== "number") return "";
+  const length = range.min === range.max ? `${range.min} cm` : `${range.min}–${range.max} cm`;
+  return size.note ? `${length}. ${size.note}` : length;
+}
+
+export function byEnglishName(a, b) {
+  return englishName(a).localeCompare(englishName(b), "en");
+}
+
+export function populationModel(population) {
+  const estimate = population?.estimate ?? {};
+  const low = Number.isInteger(estimate.low) ? estimate.low : null;
+  const high = Number.isInteger(estimate.high) ? estimate.high : null;
+  const unit = typeof population?.unit === "string" ? population.unit : "";
+  let range = null;
+  if (low != null && high != null) range = low === high ? `${low}` : `${low}–${high}`;
+  else if (low != null) range = `at least ${low}`;
+  else if (high != null) range = `up to ${high}`;
+  if (range && unit) range = `${range} ${unit}`;
+  return {
+    range,
+    trend: TREND_LABEL[population?.trend] || TREND_LABEL.unknown,
+    confidence: CONFIDENCE_LABEL[population?.confidence] || "",
+    asOf: Number.isInteger(population?.asOf) ? population.asOf : null,
+    notes: typeof population?.notes === "string" ? population.notes.trim() : "",
+    sources: Array.isArray(population?.sources) ? population.sources : [],
+  };
+}
+
+export function viewLabel(view) {
+  const labels = {
+    "flight-above": "In flight from above",
+    "flight-below": "In flight from below",
+    "perched-front": "Perched, front",
+    "perched-back": "Perched, back",
+    "perched-side": "Perched, side",
+  };
+  return labels[view] || view || "";
+}
+
+export function imageAlt(doc, image) {
+  if (typeof image?.alt === "string" && image.alt.trim()) return image.alt.trim();
+  const bits = [englishName(doc)];
+  if (image?.age && image.age !== "any") bits.push(image.age);
+  if (image?.sex && image.sex !== "any") bits.push(image.sex);
+  if (image?.season && image.season !== "any") bits.push(image.season);
+  const view = viewLabel(image?.view);
+  if (view) bits.push(view.toLowerCase());
+  return bits.join(", ");
+}
+
+export function objectPath(prefix, key) {
+  return `/${prefix}/${String(key).split("/").map(encodeURIComponent).join("/")}`;
+}

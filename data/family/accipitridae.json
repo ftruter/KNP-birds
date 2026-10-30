@@ -1,0 +1,18 @@
+{
+  "kind": "family",
+  "slug": "accipitridae",
+  "scientificName": "Accipitridae",
+  "commonNames": {
+    "en": "Hawks, eagles and kites"
+  },
+  "summary": "A large family of diurnal hawks, eagles, kites and their relatives. This sample lists only the species loaded so far. Kruger has many more members of this family.",
+  "sampleData": true,
+  "species": [
+    {
+      "slug": "haliaeetus-vocifer",
+      "scientificName": "Haliaeetus vocifer",
+      "commonNames": { "en": "African Fish Eagle", "af": "Visarend" },
+      "status": "resident"
+    }
+  ]
+}

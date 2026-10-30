@@ -1,0 +1,25 @@
+{
+  "kind": "index",
+  "name": "families",
+  "sampleData": true,
+  "entries": [
+    {
+      "slug": "accipitridae",
+      "scientificName": "Accipitridae",
+      "commonNames": { "en": "Hawks, eagles and kites" },
+      "species": ["haliaeetus-vocifer"]
+    },
+    {
+      "slug": "bucorvidae",
+      "scientificName": "Bucorvidae",
+      "commonNames": { "en": "Ground-hornbills", "af": "Bromvoëls" },
+      "species": ["bucorvus-leadbeateri"]
+    },
+    {
+      "slug": "coraciidae",
+      "scientificName": "Coraciidae",
+      "commonNames": { "en": "Rollers", "af": "Troupante" },
+      "species": ["coracias-caudatus"]
+    }
+  ]
+}
