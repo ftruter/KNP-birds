@@ -1,0 +1,74 @@
+{
+  "kind": "species",
+  "slug": "haliaeetus-vocifer",
+  "scientificName": "Haliaeetus vocifer",
+  "commonNames": {
+    "en": "African Fish Eagle",
+    "af": "Visarend"
+  },
+  "family": "accipitridae",
+  "status": "resident",
+  "size": {
+    "lengthCm": { "min": 63, "max": 73 },
+    "note": "Females average larger than males. Figures are approximate."
+  },
+  "summary": "A large eagle of rivers and lakes. Adults have a white head, chest and tail, a chestnut body, and dark flight feathers. The call is a loud ringing yelp, often given by a pair together.",
+  "sampleData": true,
+  "population": {
+    "estimate": { "low": null, "high": null },
+    "unit": null,
+    "trend": "unknown",
+    "confidence": null,
+    "asOf": null,
+    "notes": "to be researched",
+    "sources": []
+  },
+  "variants": [
+    {
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "marks": {
+        "bill": { "colour": "black", "shape": "hooked" },
+        "eye": { "iris": null, "ring": null },
+        "legs": { "colour": "yellow" },
+        "head": { "crown": "white", "face": "white", "throat": "white" },
+        "upperparts": { "back": "dark-brown", "rump": null },
+        "underparts": { "breast": "white", "belly": "chestnut" },
+        "wings": { "above": "dark-brown", "below": ["chestnut", "black"] },
+        "tail": { "colour": "white", "shape": null }
+      }
+    },
+    {
+      "age": "juvenile",
+      "sex": "any",
+      "season": "any",
+      "marks": {
+        "bill": { "colour": null, "shape": null },
+        "eye": { "iris": null, "ring": null },
+        "legs": { "colour": null },
+        "head": { "crown": "brown", "face": "brown", "throat": "brown" },
+        "upperparts": { "back": "brown", "rump": null },
+        "underparts": { "breast": "brown", "belly": "brown" },
+        "wings": { "above": "brown", "below": "brown" },
+        "tail": { "colour": "brown", "shape": null }
+      }
+    }
+  ],
+  "viewNotes": [
+    { "view": "flight-above", "note": "Dark brown wings, a white head, and a white tail." },
+    { "view": "flight-below", "note": "White head and chest, chestnut underwing coverts, dark flight feathers, and a white tail." },
+    { "view": "perched-front", "note": "White head and chest, and a chestnut belly." },
+    { "view": "perched-back", "note": "White head and tail against dark brown wings." },
+    { "view": "perched-side", "note": "White head and chest, chestnut belly, dark wings, and a white tail." }
+  ],
+  "calls": [
+    {
+      "sex": "any",
+      "type": "duet",
+      "description": "A loud ringing yelp, often given by a pair together. This sample does not separate the two voices.",
+      "recordings": []
+    }
+  ],
+  "images": []
+}

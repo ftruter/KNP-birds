@@ -1,0 +1,405 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://birds.truter.world/schema/content.schema.json",
+  "title": "KNP Birds content document",
+  "oneOf": [
+    { "$ref": "#/$defs/species" },
+    { "$ref": "#/$defs/family" },
+    { "$ref": "#/$defs/index" },
+    { "$ref": "#/$defs/colours" }
+  ],
+  "$defs": {
+    "slug": {
+      "type": "string",
+      "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$"
+    },
+    "commonNames": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["en"],
+      "properties": {
+        "en": { "type": "string", "minLength": 1 },
+        "af": { "type": "string", "minLength": 1 }
+      }
+    },
+    "status": {
+      "enum": ["resident", "summer-migrant"]
+    },
+    "colourValue": {
+      "description": "A colour name from vocab/colours, an array of those names, or null when unknown.",
+      "anyOf": [
+        { "type": "null" },
+        { "type": "string", "minLength": 1 },
+        {
+          "type": "array",
+          "minItems": 1,
+          "uniqueItems": true,
+          "items": { "type": "string", "minLength": 1 }
+        }
+      ]
+    },
+    "textOrNull": {
+      "anyOf": [
+        { "type": "null" },
+        { "type": "string", "minLength": 1 }
+      ]
+    },
+    "marks": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["bill", "eye", "legs", "head", "upperparts", "underparts", "wings", "tail"],
+      "properties": {
+        "bill": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["colour", "shape"],
+          "properties": {
+            "colour": { "$ref": "#/$defs/colourValue" },
+            "shape": { "$ref": "#/$defs/textOrNull" }
+          }
+        },
+        "eye": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["iris", "ring"],
+          "properties": {
+            "iris": { "$ref": "#/$defs/colourValue" },
+            "ring": { "$ref": "#/$defs/colourValue" }
+          }
+        },
+        "legs": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["colour"],
+          "properties": {
+            "colour": { "$ref": "#/$defs/colourValue" }
+          }
+        },
+        "head": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["crown", "face", "throat"],
+          "properties": {
+            "crown": { "$ref": "#/$defs/colourValue" },
+            "face": { "$ref": "#/$defs/colourValue" },
+            "throat": { "$ref": "#/$defs/colourValue" }
+          }
+        },
+        "upperparts": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["back", "rump"],
+          "properties": {
+            "back": { "$ref": "#/$defs/colourValue" },
+            "rump": { "$ref": "#/$defs/colourValue" }
+          }
+        },
+        "underparts": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["breast", "belly"],
+          "properties": {
+            "breast": { "$ref": "#/$defs/colourValue" },
+            "belly": { "$ref": "#/$defs/colourValue" }
+          }
+        },
+        "wings": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["above", "below"],
+          "properties": {
+            "above": { "$ref": "#/$defs/colourValue" },
+            "below": { "$ref": "#/$defs/colourValue" }
+          }
+        },
+        "tail": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["colour", "shape"],
+          "properties": {
+            "colour": { "$ref": "#/$defs/colourValue" },
+            "shape": { "$ref": "#/$defs/textOrNull" }
+          }
+        }
+      }
+    },
+    "variant": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["age", "sex", "season", "marks"],
+      "properties": {
+        "age": { "enum": ["chick", "juvenile", "immature", "adult"] },
+        "sex": { "enum": ["male", "female", "any"] },
+        "season": { "enum": ["breeding", "non-breeding", "any"] },
+        "marks": { "$ref": "#/$defs/marks" }
+      }
+    },
+    "view": {
+      "enum": ["flight-above", "flight-below", "perched-front", "perched-back", "perched-side"]
+    },
+    "image": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["key", "view", "age", "sex", "season", "source", "author", "license", "aiGenerated"],
+      "properties": {
+        "key": { "type": "string", "minLength": 1 },
+        "view": { "$ref": "#/$defs/view" },
+        "age": { "enum": ["chick", "juvenile", "immature", "adult"] },
+        "sex": { "enum": ["male", "female", "any"] },
+        "season": { "enum": ["breeding", "non-breeding", "any"] },
+        "source": { "type": "string" },
+        "author": { "type": "string" },
+        "license": { "type": "string" },
+        "aiGenerated": { "type": "boolean" },
+        "alt": { "type": "string" }
+      }
+    },
+    "recording": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["key", "source", "author", "license"],
+      "properties": {
+        "key": { "type": "string", "minLength": 1 },
+        "source": { "type": "string" },
+        "author": { "type": "string" },
+        "license": { "type": "string" }
+      }
+    },
+    "call": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["sex", "type", "description", "recordings"],
+      "properties": {
+        "sex": { "enum": ["male", "female", "any"] },
+        "type": { "enum": ["song", "call", "alarm", "contact", "duet", "other"] },
+        "description": { "type": "string", "minLength": 1 },
+        "recordings": {
+          "type": "array",
+          "items": { "$ref": "#/$defs/recording" }
+        }
+      }
+    },
+    "nullableInt": {
+      "anyOf": [
+        { "type": "null" },
+        { "type": "integer", "minimum": 0 }
+      ]
+    },
+    "population": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["estimate", "unit", "trend", "confidence", "asOf", "notes", "sources"],
+      "properties": {
+        "estimate": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["low", "high"],
+          "properties": {
+            "low": { "$ref": "#/$defs/nullableInt" },
+            "high": { "$ref": "#/$defs/nullableInt" }
+          }
+        },
+        "unit": {
+          "anyOf": [
+            { "type": "null" },
+            { "enum": ["individuals", "pairs", "breeding pairs"] }
+          ]
+        },
+        "trend": { "enum": ["increasing", "stable", "decreasing", "unknown"] },
+        "confidence": {
+          "anyOf": [
+            { "type": "null" },
+            { "enum": ["low", "medium", "high"] }
+          ]
+        },
+        "asOf": {
+          "anyOf": [
+            { "type": "null" },
+            { "type": "integer", "minimum": 1800, "maximum": 2100 }
+          ]
+        },
+        "notes": { "type": "string" },
+        "sources": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": ["title", "url", "publisher", "year"],
+            "properties": {
+              "title": { "type": "string", "minLength": 1 },
+              "url": { "anyOf": [{ "type": "null" }, { "type": "string", "minLength": 1 }] },
+              "publisher": { "anyOf": [{ "type": "null" }, { "type": "string", "minLength": 1 }] },
+              "year": {
+                "anyOf": [
+                  { "type": "null" },
+                  { "type": "integer", "minimum": 1800, "maximum": 2100 }
+                ]
+              }
+            }
+          }
+        }
+      }
+    },
+    "species": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "kind",
+        "slug",
+        "scientificName",
+        "commonNames",
+        "family",
+        "status",
+        "size",
+        "summary",
+        "sampleData",
+        "population",
+        "variants",
+        "viewNotes",
+        "calls",
+        "images"
+      ],
+      "properties": {
+        "kind": { "const": "species" },
+        "slug": { "$ref": "#/$defs/slug" },
+        "scientificName": { "type": "string", "minLength": 1 },
+        "commonNames": { "$ref": "#/$defs/commonNames" },
+        "family": { "$ref": "#/$defs/slug" },
+        "status": { "$ref": "#/$defs/status" },
+        "size": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["lengthCm"],
+          "properties": {
+            "lengthCm": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": ["min", "max"],
+              "properties": {
+                "min": { "type": "number", "exclusiveMinimum": 0 },
+                "max": { "type": "number", "exclusiveMinimum": 0 }
+              }
+            },
+            "note": { "type": "string" }
+          }
+        },
+        "summary": { "type": "string", "minLength": 1 },
+        "sampleData": { "type": "boolean" },
+        "population": { "$ref": "#/$defs/population" },
+        "variants": {
+          "type": "array",
+          "minItems": 1,
+          "items": { "$ref": "#/$defs/variant" }
+        },
+        "viewNotes": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": ["view", "note"],
+            "properties": {
+              "view": { "$ref": "#/$defs/view" },
+              "note": { "type": "string", "minLength": 1 }
+            }
+          }
+        },
+        "calls": {
+          "type": "array",
+          "items": { "$ref": "#/$defs/call" }
+        },
+        "images": {
+          "type": "array",
+          "items": { "$ref": "#/$defs/image" }
+        }
+      }
+    },
+    "embeddedSpecies": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["slug", "scientificName", "names"],
+      "properties": {
+        "slug": { "$ref": "#/$defs/slug" },
+        "scientificName": { "type": "string", "minLength": 1 },
+        "names": { "$ref": "#/$defs/commonNames" }
+      }
+    },
+    "familyPopulation": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["low", "high", "speciesCounted", "speciesTotal", "complete"],
+      "properties": {
+        "low": { "$ref": "#/$defs/nullableInt" },
+        "high": { "$ref": "#/$defs/nullableInt" },
+        "speciesCounted": { "type": "integer", "minimum": 0 },
+        "speciesTotal": { "type": "integer", "minimum": 0 },
+        "complete": { "type": "boolean" }
+      }
+    },
+    "family": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["kind", "slug", "scientificName", "commonNames", "summary", "sampleData", "species", "iconicSpecies", "population"],
+      "properties": {
+        "kind": { "const": "family" },
+        "slug": { "$ref": "#/$defs/slug" },
+        "scientificName": { "type": "string", "minLength": 1 },
+        "commonNames": { "$ref": "#/$defs/commonNames" },
+        "summary": { "type": "string", "minLength": 1 },
+        "sampleData": { "type": "boolean" },
+        "species": {
+          "type": "array",
+          "items": { "$ref": "#/$defs/embeddedSpecies" }
+        },
+        "iconicSpecies": {
+          "type": "array",
+          "maxItems": 3,
+          "uniqueItems": true,
+          "items": { "$ref": "#/$defs/slug" }
+        },
+        "population": { "$ref": "#/$defs/familyPopulation" }
+      }
+    },
+    "indexEntry": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["en", "af", "population"],
+      "properties": {
+        "en": { "type": "string", "minLength": 1 },
+        "af": { "anyOf": [{ "type": "null" }, { "type": "string", "minLength": 1 }] },
+        "population": { "anyOf": [{ "type": "null" }, { "type": "integer", "minimum": 0 }] }
+      }
+    },
+    "index": {
+      "type": "object",
+      "additionalProperties": { "$ref": "#/$defs/indexEntry" },
+      "propertyNames": { "type": "string", "minLength": 1 }
+    },
+    "colours": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["kind", "name", "slug", "sampleData", "summary", "colours"],
+      "properties": {
+        "kind": { "const": "vocab" },
+        "name": { "const": "colours" },
+        "slug": { "const": "colours" },
+        "sampleData": { "type": "boolean" },
+        "summary": { "type": "string", "minLength": 1 },
+        "colours": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": ["name", "hex", "ridgway", "smithe"],
+            "properties": {
+              "name": { "$ref": "#/$defs/slug" },
+              "hex": { "type": "string", "pattern": "^#[0-9A-Fa-f]{6}$" },
+              "ridgway": { "anyOf": [{ "type": "null" }, { "type": "string", "minLength": 1 }] },
+              "smithe": { "anyOf": [{ "type": "null" }, { "type": "string", "minLength": 1 }] }
+            }
+          }
+        }
+      }
+    }
+  }
+}

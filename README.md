@@ -61,6 +61,31 @@ More index keys will be added as needed.
 - Cloudflare's CDN caches responses in front of the Worker, so most requests never reach it.
 - Served from `birds.truter.world` for now; a dedicated domain may follow.
 
+## Coding style
+
+The Worker, seed script, and tests run on current stable V8. Write modern JavaScript.
+
+1. No semicolons at the end of a line. Rely on automatic semicolon insertion. Add a leading semicolon only when ASI would otherwise join two statements.
+2. Single-quoted strings by default. Use double quotes only when the string contains an apostrophe. Use a template literal only when interpolating or when the string is more than one line.
+
+```js
+const slug = (name) => name.trim().toLowerCase().replaceAll(' ', '-')
+const title = "Kruger's birds"
+```
+
+3. A function whose body is only a `return` is an arrow function: `const name = (args) => value`, not `function name(args) { return value }`. Prefer `const` arrow functions in general.
+4. Use a ternary instead of `if` / `else` that only returns. A guard such as `if (!x) return ''; return y` is `!x ? '' : y`. When a ternary breaks across lines, put `?` and `:` at the start of the line. Do not nest ternaries more than two deep; use a small helper instead.
+
+```js
+const iconicMarkdown = (plates) =>
+  !plates?.length
+    ? ''
+    : `## First to look for
+${plates.map(renderPlate).join('\n\n')}`
+```
+
+`npm run format` runs Prettier (`semi: false`, `singleQuote: true`). `npm run lint` runs ESLint with `arrow-body-style`, `prefer-arrow-callback`, `func-style` set to expression (arrow functions allowed), `no-else-return`, `prefer-const`, and `quotes` aligned with Prettier.
+
 ## Contributing
 
 This is a public open source project. Pull requests are welcome, but only the project owner ([@ftruter](https://github.com/ftruter)) can approve and merge them.

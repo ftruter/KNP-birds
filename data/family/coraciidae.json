@@ -1,0 +1,31 @@
+{
+  "kind": "family",
+  "slug": "coraciidae",
+  "scientificName": "Coraciidae",
+  "commonNames": {
+    "en": "Rollers",
+    "af": "Troupante"
+  },
+  "summary": "Rollers are compact, colourful birds that often perch in the open and chase insects in flight. This sample lists only the species loaded so far, not every roller in Kruger.",
+  "sampleData": true,
+  "species": [
+    {
+      "slug": "coracias-caudatus",
+      "scientificName": "Coracias caudatus",
+      "names": {
+        "en": "Lilac-breasted Roller",
+        "af": "Gewone Troupant"
+      }
+    }
+  ],
+  "iconicSpecies": [
+    "coracias-caudatus"
+  ],
+  "population": {
+    "low": null,
+    "high": null,
+    "speciesCounted": 0,
+    "speciesTotal": 1,
+    "complete": false
+  }
+}

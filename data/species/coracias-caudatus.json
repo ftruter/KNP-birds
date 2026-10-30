@@ -1,0 +1,74 @@
+{
+  "kind": "species",
+  "slug": "coracias-caudatus",
+  "scientificName": "Coracias caudatus",
+  "commonNames": {
+    "en": "Lilac-breasted Roller",
+    "af": "Gewone Troupant"
+  },
+  "family": "coraciidae",
+  "status": "resident",
+  "size": {
+    "lengthCm": { "min": 36, "max": 38 },
+    "note": "Length includes the tail streamers. Figures are approximate."
+  },
+  "summary": "A compact, brightly coloured roller of open savanna. Adults show lilac on the throat and breast, turquoise underparts, and long outer tail streamers. Often sits in the open on a bare perch.",
+  "sampleData": true,
+  "population": {
+    "estimate": { "low": null, "high": null },
+    "unit": null,
+    "trend": "unknown",
+    "confidence": null,
+    "asOf": null,
+    "notes": "to be researched",
+    "sources": []
+  },
+  "variants": [
+    {
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "marks": {
+        "bill": { "colour": "black", "shape": null },
+        "eye": { "iris": null, "ring": null },
+        "legs": { "colour": null },
+        "head": { "crown": "olive", "face": "lilac", "throat": "lilac" },
+        "upperparts": { "back": "brown", "rump": "turquoise" },
+        "underparts": { "breast": "lilac", "belly": "turquoise" },
+        "wings": { "above": "turquoise", "below": "turquoise" },
+        "tail": { "colour": "turquoise", "shape": "long outer streamers" }
+      }
+    },
+    {
+      "age": "juvenile",
+      "sex": "any",
+      "season": "any",
+      "marks": {
+        "bill": { "colour": null, "shape": null },
+        "eye": { "iris": null, "ring": null },
+        "legs": { "colour": null },
+        "head": { "crown": null, "face": null, "throat": "buff" },
+        "upperparts": { "back": null, "rump": null },
+        "underparts": { "breast": "buff", "belly": null },
+        "wings": { "above": null, "below": null },
+        "tail": { "colour": null, "shape": "shorter streamers" }
+      }
+    }
+  ],
+  "viewNotes": [
+    { "view": "flight-above", "note": "Turquoise wings and a brown back, with the tail streamers trailing." },
+    { "view": "flight-below", "note": "Turquoise underwings and belly, with the lilac breast." },
+    { "view": "perched-front", "note": "Lilac throat and breast face the viewer." },
+    { "view": "perched-back", "note": "Brown back and turquoise rump, with the tail streamers behind." },
+    { "view": "perched-side", "note": "Lilac breast, turquoise belly, and long outer tail streamers." }
+  ],
+  "calls": [
+    {
+      "sex": "any",
+      "type": "call",
+      "description": "A harsh rattle.",
+      "recordings": []
+    }
+  ],
+  "images": []
+}

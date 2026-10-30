@@ -1,0 +1,44 @@
+"$schema" = "./node_modules/wrangler/config-schema.json"
+name = "knp-birds"
+main = "src/worker.js"
+account_id = "fd74641e5d61594bd1580237979194aa"
+compatibility_date = "2026-10-30"
+# Upload the ES modules as separate files. No bundler is required.
+no_bundle = true
+find_additional_modules = true
+
+[[rules]]
+type = "ESModule"
+globs = ["**/*.js"]
+fallthrough = true
+
+# Workers Caching sits in front of the Worker and honours Cache-Control.
+[cache]
+enabled = true
+
+[observability]
+enabled = true
+
+[observability.logs]
+enabled = true
+head_sampling_rate = 1
+invocation_logs = true
+
+[observability.traces]
+enabled = true
+head_sampling_rate = 1
+
+[observability.issues]
+enabled = true
+
+[[kv_namespaces]]
+binding = "BIRDS_KV"
+id = "d241348305f646e29c30880c361f6bf6"
+
+[[r2_buckets]]
+binding = "IMAGES"
+bucket_name = "knp-birds-images"
+
+[[routes]]
+pattern = "birds.truter.world"
+custom_domain = true

@@ -1,0 +1,31 @@
+{
+  "kind": "family",
+  "slug": "bucorvidae",
+  "scientificName": "Bucorvidae",
+  "commonNames": {
+    "en": "Ground-hornbills",
+    "af": "Bromvoëls"
+  },
+  "summary": "Ground-hornbills are very large, mostly terrestrial hornbills. In Kruger the family is represented by the Southern Ground Hornbill. This sample lists only the species loaded so far.",
+  "sampleData": true,
+  "species": [
+    {
+      "slug": "bucorvus-leadbeateri",
+      "scientificName": "Bucorvus leadbeateri",
+      "names": {
+        "en": "Southern Ground Hornbill",
+        "af": "Bromvoël"
+      }
+    }
+  ],
+  "iconicSpecies": [
+    "bucorvus-leadbeateri"
+  ],
+  "population": {
+    "low": null,
+    "high": null,
+    "speciesCounted": 0,
+    "speciesTotal": 1,
+    "complete": false
+  }
+}

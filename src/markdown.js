@@ -1,0 +1,307 @@
+import { diffSpecies } from './diff.js'
+import { inlineText, safeHttpUrl } from './escape.js'
+import {
+  APPROXIMATE_LABEL,
+  APPROXIMATE_TOTAL,
+  CALL_TYPE,
+  SAMPLE_NOTICE,
+  afrikaansName,
+  englishName,
+  familyLabel,
+  familyTotalModel,
+  imageAlt,
+  indexPopulationLine,
+  indexRows,
+  objectPath,
+  orderFamilySpecies,
+  populationModel,
+  sizeLabel,
+  statusLabel,
+  viewLabel,
+} from './guide.js'
+import { alternates } from './route.js'
+
+export const renderHomeMarkdown = ({ speciesIndex, familiesIndex }) => {
+  const species = indexRows(speciesIndex)
+  const families = indexRows(familiesIndex)
+  return pageMd({
+    path: '/',
+    title: 'Birds of Kruger National Park',
+    sample: false,
+    body: `An open field guide to the birds of Kruger National Park and neighbouring Marloth Park. Pages are server-rendered. There is no client-side JavaScript.
+
+Resident species are included, plus summer migrants. Rare vagrants are left out.
+
+## What these pages compare
+
+1. Chicks and juveniles against adults
+2. Winter (non-breeding) plumage against summer (breeding) plumage
+3. Males against females
+4. A bird in flight, from above and from below
+5. A perched or walking bird, from the front, the back and the side
+6. Calls and songs of males and females
+
+Age, season and sex come from diffing structured field marks. Null means unknown. Flight and perched views use notes and photographs. Population figures are an ${APPROXIMATE_LABEL.toLowerCase()}. Kruger has no formal bird census.
+
+## Species
+
+${linkLines(
+  species,
+  (entry) => `/species/${entry.slug}`,
+  (entry) => `${englishName(entry)} (${entry.scientificName})`,
+)}
+
+## Families
+
+${linkLines(
+  families,
+  (entry) => `/family/${entry.slug}`,
+  (entry) => `${englishName(entry)} (${entry.scientificName})`,
+)}
+
+[Colour names](/vocab/colours)`,
+  })
+}
+
+export const renderSpeciesIndexMarkdown = (doc) => {
+  const list = indexRows(doc)
+  return pageMd({
+    path: '/species',
+    title: 'Species',
+    sample: false,
+    body:
+      list
+        .map(
+          (entry) =>
+            `- [${englishName(entry)}](/species/${entry.slug}) (${entry.scientificName})${afrikaansName(entry) ? ` — ${afrikaansName(entry)}` : ''} — ${indexPopulationLine(entry.population, 'Approximate estimate')}`,
+        )
+        .join('\n') || 'No species have been published yet.',
+  })
+}
+
+export const renderFamiliesIndexMarkdown = (doc) => {
+  const list = indexRows(doc)
+  return pageMd({
+    path: '/families',
+    title: 'Families',
+    sample: false,
+    body: list
+      .map(
+        (entry) =>
+          `- [${englishName(entry)}](/family/${entry.slug}) (${entry.scientificName}) — ${indexPopulationLine(entry.population, 'Approximate total')}`,
+      )
+      .join('\n'),
+  })
+}
+
+export const renderFamilyMarkdown = (doc, plates = []) => {
+  const species = orderFamilySpecies(doc.species, doc.iconicSpecies)
+  const af = afrikaansName(doc)
+  return pageMd({
+    path: `/family/${doc.slug}`,
+    title: englishName(doc),
+    sample: Boolean(doc.sampleData),
+    body: `_${doc.scientificName}_
+
+${af ? `${af}\n\n` : ''}${doc.summary || ''}
+
+${familyPopulationMarkdown(doc.population)}
+
+${iconicMarkdown(plates)}
+
+## Species in this copy
+
+${species.map((entry) => `- [${englishName(entry)}](/species/${entry.slug}) (${entry.scientificName})${afrikaansName(entry) ? ` — ${afrikaansName(entry)}` : ''}`).join('\n')}`,
+  })
+}
+
+export const renderVocabMarkdown = (doc) => {
+  const colours = Array.isArray(doc.colours) ? doc.colours : []
+  return pageMd({
+    path: '/vocab/colours',
+    title: 'Colours',
+    sample: Boolean(doc.sampleData),
+    body: `${doc.summary || ''}
+
+Hex values are display swatches. Ridgway and Smithe equivalents are empty.
+
+${colours.map((colour) => `- ${colour.name} (${colour.hex})`).join('\n')}`,
+  })
+}
+
+export const renderSpeciesMarkdown = ({ doc, colourMap }) => {
+  const comparisons = diffSpecies(doc)
+  const population = populationModel(doc.population)
+  const images = Array.isArray(doc.images) ? doc.images : []
+  const af = afrikaansName(doc)
+  const body = `_${doc.scientificName}_ · [${familyLabel(doc.family)}](/family/${doc.family}) · ${statusLabel(doc.status)}
+
+${af ? `${af}\n\n` : ''}${doc.summary || ''}
+
+- Status: ${statusLabel(doc.status)}
+- Size: ${sizeLabel(doc.size) || 'Not recorded'}
+
+## Photographs
+
+${images.length === 0 ? '_No photograph is stored for this species yet._' : images.map((image) => imageMarkdown(doc, image)).join('\n\n')}
+
+## Telling it apart
+
+${comparisons.map((section) => comparisonMarkdown(section, colourMap)).join('\n\n')}
+
+## Population
+
+**${APPROXIMATE_LABEL}.** Kruger has no formal bird census. Any figure here is approximate.
+
+${population.range || 'No numeric estimate yet.'}
+
+Trend: ${population.trend}.
+
+${population.notes}
+
+${population.confidence ? `Confidence: ${population.confidence}.\n\n` : ''}${population.asOf ? `As of ${population.asOf}.\n\n` : ''}### Sources
+
+${population.sources.length === 0 ? 'No sources cited yet.' : population.sources.map((source) => sourceLine(source)).join('\n')}`
+  return pageMd({
+    path: `/species/${doc.slug}`,
+    title: englishName(doc),
+    sample: Boolean(doc.sampleData),
+    body,
+  })
+}
+
+export const renderNotFoundMarkdown = (path) =>
+  pageMd({
+    path,
+    title: 'Not found',
+    sample: false,
+    body: `No page is published at \`${path}\`.
+
+- [Home](/)
+- [Species](/species)
+- [Families](/families)`,
+  })
+
+const iconicMarkdown = (plates) =>
+  !plates?.length
+    ? ''
+    : `## First to look for
+
+${plates
+  .map((plate) => {
+    const images = Array.isArray(plate.doc.images) ? plate.doc.images : []
+    const picture =
+      images.length === 0
+        ? '_No photograph is stored for this species yet._'
+        : images.map((image) => imageMarkdown(plate.doc, image)).join('\n\n')
+    return `### [${englishName(plate.doc)}](/species/${plate.doc.slug})\n\n${picture}`
+  })
+  .join('\n\n')}`
+
+const familyPopulationMarkdown = (population) => {
+  const model = familyTotalModel(population)
+  return `## Population
+
+**${APPROXIMATE_TOTAL}.** Kruger has no formal bird census. This adds up the species estimates and counts every pair as two individuals.
+
+${model.range || 'No numeric total yet.'}
+
+${model.coverage}
+
+${model.complete ? '' : 'This total is incomplete.'}`
+}
+
+const comparisonMarkdown = (section, colourMap) => {
+  const lines = [`### ${section.title}`]
+  if (section.notice) lines.push('', `**${section.notice}.**`)
+  const context = section.rows?.find((row) => row.context)?.context
+  if (context) lines.push('', `Compared on ${context} plumage.`)
+  if (section.rows?.length) {
+    lines.push(
+      '',
+      `| Mark | ${section.columns.join(' | ')} |`,
+      `| --- | ${section.columns.map(() => '---').join(' | ')} |`,
+    )
+    for (const row of section.rows) {
+      const cells = section.columns.map((column) =>
+        cellMarkdown(row.cells[column], colourMap),
+      )
+      lines.push(`| ${row.mark} | ${cells.join(' | ')} |`)
+    }
+  }
+  if (section.sharedNote) lines.push('', section.sharedNote)
+  for (const note of section.notes || [])
+    lines.push('', `**${note.label}.** ${note.text}`)
+  if (section.id === 'calls') lines.push('', callsMarkdown(section))
+  return lines.join('\n')
+}
+
+const cellMarkdown = (cell, colourMap) =>
+  !cell
+    ? 'Not recorded'
+    : cell.kind === 'text'
+      ? cell.text.replaceAll('|', '/')
+      : cell.names
+          .map((name) => {
+            const hex = colourMap?.get?.(name)
+            return hex ? `${name} (${hex})` : name
+          })
+          .join(', ')
+
+const callsMarkdown = (section) => {
+  const shared = callLines(section.shared)
+  return section.status === 'not-described'
+    ? ''
+    : section.status !== 'differs'
+      ? `The notes below are not separated by sex.\n\n${shared}`
+      : `${shared}\n\n#### Males\n\n${callLines(section.male)}\n\n#### Females\n\n${callLines(section.female)}`
+}
+
+const callLines = (calls) =>
+  !calls?.length
+    ? 'None recorded separately.'
+    : calls
+        .map((call) => {
+          const recordings = (call.recordings || [])
+            .map((recording) => {
+              const href = recording.key
+                ? objectPath('audio', recording.key)
+                : ''
+              return href ? ` Recording: ${href}.` : ''
+            })
+            .join('')
+          return `- ${CALL_TYPE[call.type] || 'Call'}: ${call.description || ''}${recordings}`
+        })
+        .join('\n')
+
+const imageMarkdown = (doc, image) => {
+  const alt = imageAlt(doc, image)
+  const label = image.aiGenerated
+    ? 'AI-generated image'
+    : 'Photograph, not AI-generated'
+  const source = safeHttpUrl(image.source)
+  return `![${alt}](${objectPath('images', image.key)})\n\n${label}. ${viewLabel(image.view)}. ${[image.author, image.license].filter(Boolean).join('. ')}${source ? `. Source: ${source}` : ''}`
+}
+
+const sourceLine = (source) => {
+  const url = safeHttpUrl(source.url)
+  const bits = [
+    source.title || 'Untitled source',
+    source.publisher,
+    source.year,
+  ].filter(Boolean)
+  return `- ${bits.join('. ')}${url ? ` ${url}` : ''}`
+}
+
+const pageMd = ({ path, title, sample, body }) => {
+  const alts = alternates(path)
+  const banner = sample ? `> ${SAMPLE_NOTICE}\n\n` : ''
+  return `# ${inlineText(title)}\n\n${banner}${body.trim()}\n\n---\n\nAlso available as [HTML](${alts.html}) and [JSON](${alts.json}).\n`
+}
+
+const entries = (doc) => (Array.isArray(doc?.entries) ? doc.entries : [])
+
+const linkLines = (items, href, label) =>
+  items.length === 0
+    ? 'Nothing is published here yet.'
+    : items.map((item) => `- [${label(item)}](${href(item)})`).join('\n')

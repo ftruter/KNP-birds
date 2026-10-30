@@ -1,0 +1,89 @@
+{
+  "kind": "species",
+  "slug": "bucorvus-leadbeateri",
+  "scientificName": "Bucorvus leadbeateri",
+  "commonNames": {
+    "en": "Southern Ground Hornbill",
+    "af": "Bromvoël"
+  },
+  "family": "bucorvidae",
+  "status": "resident",
+  "size": {
+    "lengthCm": { "min": 90, "max": 100 },
+    "note": "A very large ground bird. Figures are approximate."
+  },
+  "summary": "A very large, mostly black hornbill that walks the savanna in groups. Adults have bare red skin on the face and throat. White patches show in the wings in flight.",
+  "sampleData": true,
+  "population": {
+    "estimate": { "low": null, "high": null },
+    "unit": null,
+    "trend": "unknown",
+    "confidence": null,
+    "asOf": null,
+    "notes": "to be researched",
+    "sources": []
+  },
+  "variants": [
+    {
+      "age": "adult",
+      "sex": "male",
+      "season": "any",
+      "marks": {
+        "bill": { "colour": "black", "shape": null },
+        "eye": { "iris": null, "ring": null },
+        "legs": { "colour": "black" },
+        "head": { "crown": "black", "face": "red", "throat": "red" },
+        "upperparts": { "back": "black", "rump": "black" },
+        "underparts": { "breast": "black", "belly": "black" },
+        "wings": { "above": ["black", "white"], "below": ["black", "white"] },
+        "tail": { "colour": "black", "shape": null }
+      }
+    },
+    {
+      "age": "adult",
+      "sex": "female",
+      "season": "any",
+      "marks": {
+        "bill": { "colour": "black", "shape": null },
+        "eye": { "iris": null, "ring": null },
+        "legs": { "colour": "black" },
+        "head": { "crown": "black", "face": "red", "throat": ["red", "blue"] },
+        "upperparts": { "back": "black", "rump": "black" },
+        "underparts": { "breast": "black", "belly": "black" },
+        "wings": { "above": ["black", "white"], "below": ["black", "white"] },
+        "tail": { "colour": "black", "shape": null }
+      }
+    },
+    {
+      "age": "juvenile",
+      "sex": "any",
+      "season": "any",
+      "marks": {
+        "bill": { "colour": null, "shape": null },
+        "eye": { "iris": null, "ring": null },
+        "legs": { "colour": null },
+        "head": { "crown": null, "face": "buff", "throat": null },
+        "upperparts": { "back": "dark-brown", "rump": null },
+        "underparts": { "breast": "dark-brown", "belly": "dark-brown" },
+        "wings": { "above": null, "below": null },
+        "tail": { "colour": null, "shape": null }
+      }
+    }
+  ],
+  "viewNotes": [
+    { "view": "flight-above", "note": "Black wings with a white patch in the primaries." },
+    { "view": "flight-below", "note": "Black wings with a white patch in the primaries." },
+    { "view": "perched-front", "note": "Red face and throat, a heavy dark bill, and a black body." },
+    { "view": "perched-back", "note": "Black back and tail. The red face is hidden." },
+    { "view": "perched-side", "note": "A tall black profile, a long tail, and the red face." }
+  ],
+  "calls": [
+    {
+      "sex": "any",
+      "type": "call",
+      "description": "Deep booming notes, often before dawn.",
+      "recordings": []
+    }
+  ],
+  "images": []
+}
