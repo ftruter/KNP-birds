@@ -1,0 +1,20 @@
+{
+  "kind": "family",
+  "slug": "scolopacidae",
+  "scientificName": "Scolopacidae",
+  "commonNames": {
+    "en": "Sandpipers and snipes",
+    "af": "Strandlopers"
+  },
+  "summary": "Field notes for this family are still to be written.",
+  "sampleData": true,
+  "species": [],
+  "iconicSpecies": [],
+  "population": {
+    "low": null,
+    "high": null,
+    "speciesCounted": 0,
+    "speciesTotal": 0,
+    "complete": false
+  }
+}

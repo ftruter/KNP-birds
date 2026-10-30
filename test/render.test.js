@@ -1,7 +1,15 @@
 import assert from 'node:assert/strict'
 import { test } from 'node:test'
-import { renderFamilyHtml, renderSpeciesHtml } from '../src/html.js'
-import { renderFamilyMarkdown, renderSpeciesMarkdown } from '../src/markdown.js'
+import {
+  renderFamiliesIndexHtml,
+  renderFamilyHtml,
+  renderSpeciesHtml,
+} from '../src/html.js'
+import {
+  renderFamiliesIndexMarkdown,
+  renderFamilyMarkdown,
+  renderSpeciesMarkdown,
+} from '../src/markdown.js'
 import { colourMapFromDoc } from '../src/store.js'
 import { palette, css } from '../src/style.js'
 import { readJson } from './helpers.js'
@@ -172,6 +180,79 @@ test('a family page shows the derived approximate total', async () => {
   assert.match(markdown, /Includes 0 of 1 species/)
   assert.match(markdown, /This total is incomplete/)
   assert.match(markdown, /## First to look for/)
+})
+
+test('a family stub lists no species and does not invent an Afrikaans name', async () => {
+  const kingfishers = await readJson('data/family/alcedinidae.json')
+  const html = renderFamilyHtml({
+    origin: 'https://birds.truter.world',
+    doc: kingfishers,
+    plates: [],
+  })
+  assert.match(html, /Kingfishers/)
+  assert.match(html, /class="afrikaans">Visvangers</)
+  assert.match(
+    html,
+    /No species from this family are published in this copy yet/,
+  )
+  assert.doesNotMatch(html, /First to look for/)
+  assert.doesNotMatch(html, /<ul class="species-list">/)
+  const markdown = renderFamilyMarkdown(kingfishers, [])
+  assert.match(markdown, /Visvangers/)
+  assert.match(markdown, /No species from this family are published/)
+  assert.doesNotMatch(markdown, /## First to look for/)
+
+  const warblers = await readJson('data/family/acrocephalidae.json')
+  const unnamed = renderFamilyHtml({
+    origin: 'https://birds.truter.world',
+    doc: warblers,
+    plates: [],
+  })
+  assert.match(unnamed, /Reed warblers and allies/)
+  assert.doesNotMatch(unnamed, /class="afrikaans"/)
+  assert.doesNotMatch(unnamed, />null</)
+  const unnamedMd = renderFamilyMarkdown(warblers, [])
+  assert.match(
+    unnamedMd,
+    /_Acrocephalidae_\n\nField notes for this family are still to be written/,
+  )
+})
+
+test('the families index shows Afrikaans only when a name is recorded', () => {
+  const doc = {
+    Accipitridae: {
+      en: 'Hawks, eagles and kites',
+      af: null,
+      population: 0,
+    },
+    Alcedinidae: {
+      en: 'Kingfishers',
+      af: 'Visvangers',
+      population: 0,
+    },
+  }
+  const html = renderFamiliesIndexHtml({
+    origin: 'https://birds.truter.world',
+    doc,
+  })
+  assert.match(html, /Kingfishers<\/a> <em>Alcedinidae<\/em> — Visvangers —/)
+  assert.match(
+    html,
+    /Hawks, eagles and kites<\/a> <em>Accipitridae<\/em> — Approximate total/,
+  )
+  assert.match(html, /Approximate total: no numeric figure yet/)
+  assert.doesNotMatch(html, /about 0 individuals/)
+  assert.doesNotMatch(html, />null</)
+  const markdown = renderFamiliesIndexMarkdown(doc)
+  assert.match(
+    markdown,
+    /Kingfishers\]\(\/family\/alcedinidae\) \(Alcedinidae\) — Visvangers —/,
+  )
+  assert.match(
+    markdown,
+    /Hawks, eagles and kites\]\(\/family\/accipitridae\) \(Accipitridae\) — Approximate total: no numeric figure yet/,
+  )
+  assert.doesNotMatch(markdown, /null/)
 })
 
 test('markdown and json-facing copy keep the population label', async () => {

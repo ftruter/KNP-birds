@@ -1,0 +1,20 @@
+{
+  "kind": "family",
+  "slug": "recurvirostridae",
+  "scientificName": "Recurvirostridae",
+  "commonNames": {
+    "en": "Stilts and avocets",
+    "af": "Elsies"
+  },
+  "summary": "Field notes for this family are still to be written.",
+  "sampleData": true,
+  "species": [],
+  "iconicSpecies": [],
+  "population": {
+    "low": null,
+    "high": null,
+    "speciesCounted": 0,
+    "speciesTotal": 0,
+    "complete": false
+  }
+}

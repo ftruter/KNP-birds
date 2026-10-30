@@ -6,7 +6,9 @@ import {
   CALL_TYPE,
   SAMPLE_NOTICE,
   afrikaansName,
+  EMPTY_FAMILY_SPECIES,
   englishName,
+  familyIndexPopulationLine,
   familyLabel,
   familyTotalModel,
   imageAlt,
@@ -97,7 +99,7 @@ export const renderFamiliesIndexHtml = ({ origin, doc }) => {
 <h1>Families</h1>
 <p>Alphabetical by scientific name.</p>
 <ul class="species-list">
-${list.map((entry) => `<li><a href="/family/${escapeHtml(entry.slug)}">${escapeHtml(englishName(entry))}</a> <em>${escapeHtml(entry.scientificName)}</em> — ${escapeHtml(indexPopulationLine(entry.population, 'Approximate total'))}</li>`).join('\n')}
+${list.map((entry) => `<li><a href="/family/${escapeHtml(entry.slug)}">${escapeHtml(englishName(entry))}</a> <em>${escapeHtml(entry.scientificName)}</em>${afrikaansName(entry) ? ` — ${escapeHtml(afrikaansName(entry))}` : ''} — ${escapeHtml(familyIndexPopulationLine(entry.population))}</li>`).join('\n')}
 </ul>`
   return layout({
     title: 'Families · KNP Birds',
@@ -122,9 +124,7 @@ ${paragraphs(doc.summary)}
 ${familyPopulationHtml(doc.population)}
 ${iconicHtml(plates)}
 <h2>Species in this copy</h2>
-<ul class="species-list">
-${species.map((entry) => `<li><a href="/species/${escapeHtml(entry.slug)}">${escapeHtml(englishName(entry))}</a> <em>${escapeHtml(entry.scientificName || '')}</em>${afrikaansName(entry) ? ` — ${escapeHtml(afrikaansName(entry))}` : ''}</li>`).join('\n')}
-</ul>`
+${familySpeciesList(species)}`
   return layout({
     title: `${englishName(doc)} · KNP Birds`,
     description: inlineText(doc.summary || englishName(doc)),
@@ -308,6 +308,13 @@ const recordingsHtml = (recordings) =>
           return ` ${bits[0]}: ${[link, credit, sourceLink].filter(Boolean).join('. ')}.`
         })
         .join('')
+
+const familySpeciesList = (species) =>
+  species.length === 0
+    ? `<p>${escapeHtml(EMPTY_FAMILY_SPECIES)}</p>`
+    : `<ul class="species-list">
+${species.map((entry) => `<li><a href="/species/${escapeHtml(entry.slug)}">${escapeHtml(englishName(entry))}</a> <em>${escapeHtml(entry.scientificName || '')}</em>${afrikaansName(entry) ? ` — ${escapeHtml(afrikaansName(entry))}` : ''}</li>`).join('\n')}
+</ul>`
 
 const iconicHtml = (plates) =>
   !plates?.length

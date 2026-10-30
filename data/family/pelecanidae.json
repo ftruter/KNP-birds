@@ -1,0 +1,20 @@
+{
+  "kind": "family",
+  "slug": "pelecanidae",
+  "scientificName": "Pelecanidae",
+  "commonNames": {
+    "en": "Pelicans",
+    "af": "Pelikane"
+  },
+  "summary": "Field notes for this family are still to be written.",
+  "sampleData": true,
+  "species": [],
+  "iconicSpecies": [],
+  "population": {
+    "low": null,
+    "high": null,
+    "speciesCounted": 0,
+    "speciesTotal": 0,
+    "complete": false
+  }
+}

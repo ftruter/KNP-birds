@@ -82,7 +82,7 @@ Each family embeds its species and a population total. \`iconicSpecies\` is up t
 
 ## Indexes
 
-\`index/species\` and \`index/families\` are JSON objects. The keys are scientific names, in case-insensitive alphabetical order, so a search can narrow as someone types. Each value is exactly \`{ "en", "af", "population" }\`. \`population\` is one integer, the midpoint in individuals, or \`null\`. \`af\` is \`null\` when there is no Afrikaans name. The URL slug is the key in lowercase with spaces turned into hyphens (\`Coracias caudatus\` becomes \`coracias-caudatus\`).
+\`index/species\` and \`index/families\` are JSON objects. The keys are scientific names, in case-insensitive alphabetical order, so a search can narrow as someone types. Each value is exactly \`{ "en", "af", "population" }\`. For a species, \`population\` is the midpoint in individuals, or \`null\` when unknown. For a family it is that midpoint, or \`0\` when no species estimate is known yet. \`af\` is \`null\` when there is no Afrikaans name. The URL slug is the key in lowercase with spaces turned into hyphens (\`Coracias caudatus\` becomes \`coracias-caudatus\`).
 
 Images carry \`view\`, \`age\`, \`sex\`, \`season\`, \`source\`, \`author\`, \`license\`, and \`aiGenerated\`. The page labels AI-generated images in the caption.
 

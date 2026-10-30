@@ -1,0 +1,20 @@
+{
+  "kind": "family",
+  "slug": "columbidae",
+  "scientificName": "Columbidae",
+  "commonNames": {
+    "en": "Pigeons and doves",
+    "af": "Duiwe"
+  },
+  "summary": "Field notes for this family are still to be written.",
+  "sampleData": true,
+  "species": [],
+  "iconicSpecies": [],
+  "population": {
+    "low": null,
+    "high": null,
+    "speciesCounted": 0,
+    "speciesTotal": 0,
+    "complete": false
+  }
+}

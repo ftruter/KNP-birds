@@ -6,7 +6,9 @@ import {
   CALL_TYPE,
   SAMPLE_NOTICE,
   afrikaansName,
+  EMPTY_FAMILY_SPECIES,
   englishName,
+  familyIndexPopulationLine,
   familyLabel,
   familyTotalModel,
   imageAlt,
@@ -88,7 +90,7 @@ export const renderFamiliesIndexMarkdown = (doc) => {
     body: list
       .map(
         (entry) =>
-          `- [${englishName(entry)}](/family/${entry.slug}) (${entry.scientificName}) — ${indexPopulationLine(entry.population, 'Approximate total')}`,
+          `- [${englishName(entry)}](/family/${entry.slug}) (${entry.scientificName})${afrikaansName(entry) ? ` — ${afrikaansName(entry)}` : ''} — ${familyIndexPopulationLine(entry.population)}`,
       )
       .join('\n'),
   })
@@ -111,7 +113,7 @@ ${iconicMarkdown(plates)}
 
 ## Species in this copy
 
-${species.map((entry) => `- [${englishName(entry)}](/species/${entry.slug}) (${entry.scientificName})${afrikaansName(entry) ? ` — ${afrikaansName(entry)}` : ''}`).join('\n')}`,
+${familySpeciesMarkdown(species)}`,
   })
 }
 
@@ -181,6 +183,16 @@ export const renderNotFoundMarkdown = (path) =>
 - [Species](/species)
 - [Families](/families)`,
   })
+
+const familySpeciesMarkdown = (species) =>
+  species.length === 0
+    ? EMPTY_FAMILY_SPECIES
+    : species
+        .map(
+          (entry) =>
+            `- [${englishName(entry)}](/species/${entry.slug}) (${entry.scientificName})${afrikaansName(entry) ? ` — ${afrikaansName(entry)}` : ''}`,
+        )
+        .join('\n')
 
 const iconicMarkdown = (plates) =>
   !plates?.length

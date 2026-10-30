@@ -1,0 +1,20 @@
+{
+  "kind": "family",
+  "slug": "meropidae",
+  "scientificName": "Meropidae",
+  "commonNames": {
+    "en": "Bee-eaters",
+    "af": "Byvreters"
+  },
+  "summary": "Field notes for this family are still to be written.",
+  "sampleData": true,
+  "species": [],
+  "iconicSpecies": [],
+  "population": {
+    "low": null,
+    "high": null,
+    "speciesCounted": 0,
+    "speciesTotal": 0,
+    "complete": false
+  }
+}
