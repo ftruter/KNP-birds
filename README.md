@@ -51,6 +51,7 @@ All content lives in a Cloudflare Workers KV namespace as JSON values:
 | `family/<latin-name>` | One JSON document per bird family, describing the family and listing its species |
 | `index/species` | The list of all species |
 | `index/families` | The list of all families and their species |
+| `index/credits` | Sources, taxonomy, media credits, and site credits for `/credits` |
 
 More index keys will be added as needed.
 

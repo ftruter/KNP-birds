@@ -468,6 +468,172 @@ const placeholderSvg =
 </g>
 </svg>`
 
+const listed = (value) => (Array.isArray(value) ? value : [])
+
+const licenceHtml = (item, missing) => {
+  const url = safeHttpUrl(item?.licenceUrl)
+  const name = typeof item?.licence === 'string' ? item.licence.trim() : ''
+  const label = escapeHtml(name || 'Licence terms')
+  const linked = url ? `<a href="${escapeHtml(url)}">${label}</a>` : label
+  return !name && !url ? missing : `Licence: ${linked}.`
+}
+
+const citationHtml = (source) => {
+  const url = safeHttpUrl(source?.url)
+  const title = escapeHtml(source?.title || 'Untitled source')
+  const titleHtml = url ? `<a href="${escapeHtml(url)}">${title}</a>` : title
+  const bits = [
+    titleHtml,
+    source?.publisher ? escapeHtml(source.publisher) : '',
+    source?.year != null ? escapeHtml(String(source.year)) : '',
+  ].filter(Boolean)
+  return bits.join('. ')
+}
+
+const callLabel = (credit) =>
+  credit?.callType
+    ? `${escapeHtml(CALL_TYPE[credit.callType] || credit.callType)}. `
+    : ''
+
+const sourcePhrase = (value) => {
+  const text = typeof value === 'string' ? value.trim() : ''
+  const href = safeHttpUrl(text)
+  return !text
+    ? 'Source not recorded.'
+    : href
+      ? `Source: <a href="${escapeHtml(href)}">${escapeHtml(href)}</a>.`
+      : `Source: ${escapeHtml(text)}.`
+}
+
+const attributionHtml = (item, kind) => {
+  const ai =
+    item?.aiGenerated === true
+      ? `<span class="ai-label">${kind === 'recording' ? 'AI-generated recording' : 'AI-generated image'}</span>. `
+      : ''
+  const author = item?.author
+    ? `Author: ${escapeHtml(item.author)}. `
+    : 'Author not recorded. '
+  return `${ai}${author}${licenceHtml(item, 'Licence not recorded.')} ${sourcePhrase(item?.sourceUrl)}`
+}
+
+const assetLink = (prefix, key) =>
+  `<a href="${escapeHtml(objectPath(prefix, key))}">${escapeHtml(key)}</a>`
+
+const CREDIT_HEADING = {
+  image: 'Photographs',
+  recording: 'Recordings',
+  source: 'Population sources',
+}
+
+const creditItems = (items, kind) =>
+  items
+    .map((item) =>
+      kind === 'source'
+        ? `<li>${citationHtml(item)}</li>`
+        : `<li>${assetLink(kind === 'recording' ? 'audio' : 'images', item.key)}. ${callLabel(item)}${attributionHtml(item, kind)}</li>`,
+    )
+    .join('\n')
+
+const creditList = (items, kind) =>
+  !items.length
+    ? ''
+    : `<h4>${CREDIT_HEADING[kind]}</h4>
+<ul>
+${creditItems(items, kind)}
+</ul>`
+
+const dataSourceHtml = (source) => {
+  const url = safeHttpUrl(source.url)
+  const name = escapeHtml(source.name || 'Untitled source')
+  const title = url ? `<a href="${escapeHtml(url)}">${name}</a>` : name
+  const links = listed(source.links)
+    .map((link) => {
+      const href = safeHttpUrl(link?.url)
+      return href
+        ? `<a href="${escapeHtml(href)}">${escapeHtml(link.label || href)}</a>`
+        : ''
+    })
+    .filter(Boolean)
+  const also = links.length ? `<p>Also: ${links.join('. ')}.</p>` : ''
+  return `<li>
+<p>${title}</p>
+<p>${escapeHtml(source.usedFor || '')}</p>
+${also}
+<p>${licenceHtml(source, 'Licence unknown.')}</p>
+</li>`
+}
+
+const speciesCreditHtml = (group) => `<section>
+<h3><a href="/species/${escapeHtml(group.slug)}">${escapeHtml(group.commonName || group.scientificName)}</a> <em>${escapeHtml(group.scientificName || '')}</em></h3>
+${creditList(listed(group.images), 'image')}
+${creditList(listed(group.recordings), 'recording')}
+${creditList(listed(group.sources), 'source')}
+</section>`
+
+const mediaHtml = (doc) => {
+  const groups = listed(doc?.species)
+  const note = doc?.mediaNote
+    ? `<p>${escapeHtml(doc.mediaNote)}</p>`
+    : groups.length
+      ? ''
+      : '<p>No photos or recordings have been added so far.</p>'
+  return `<h2>Photographs, recordings, and population sources</h2>
+${note}
+${groups.map(speciesCreditHtml).join('\n')}`
+}
+
+const maintainerHtml = (handle) =>
+  /^[A-Za-z0-9-]+$/.test(handle)
+    ? `<a href="https://github.com/${escapeHtml(handle)}">${escapeHtml(handle)}</a>`
+    : escapeHtml(handle || '')
+
+const siteHtml = (site) => {
+  const repo = safeHttpUrl(site?.repository)
+  const licenceUrl = safeHttpUrl(site?.licenceUrl)
+  const licenceName =
+    site?.licence === 'Apache-2.0'
+      ? 'Apache License 2.0'
+      : site?.licence || 'Apache-2.0'
+  const licenceLink = licenceUrl
+    ? `<a href="${escapeHtml(licenceUrl)}">${escapeHtml(licenceName)}</a>`
+    : escapeHtml(licenceName)
+  const repoLink = repo
+    ? `<a href="${escapeHtml(repo)}">${escapeHtml(repo)}</a>`
+    : escapeHtml(site?.repository || '')
+  return !site
+    ? ''
+    : `<h2>This site</h2>
+<p>KNP Birds is open source under the ${licenceLink} licence. The code is at ${repoLink}.</p>
+<p>Built and maintained by ${maintainerHtml(site.maintainer)}.</p>
+${site.palette ? `<p>${escapeHtml(site.palette)}</p>` : ''}
+${site.affiliation ? `<p>${escapeHtml(site.affiliation)}</p>` : ''}`
+}
+
+const taxonomyHtml = (taxonomy) => `<h2>Taxonomy</h2>
+<p><strong>${escapeHtml(taxonomy?.authority || 'IOC / BirdLife South Africa')}</strong>. ${escapeHtml(taxonomy?.summary || '')}</p>`
+
+export const renderCreditsHtml = ({ origin, doc }) => {
+  const sources = listed(doc?.dataSources)
+  const main = `
+<h1>Credits</h1>
+<p>Checklists and references used for the family and species lists, the taxonomy those names follow, and credit for photographs, recordings, and this site.</p>
+<h2>Data sources</h2>
+${sources.length ? `<ol>\n${sources.map(dataSourceHtml).join('\n')}\n</ol>` : '<p>No data sources are recorded.</p>'}
+${taxonomyHtml(doc?.taxonomy)}
+${mediaHtml(doc)}
+${siteHtml(doc?.site)}`
+  return layout({
+    title: 'Credits · KNP Birds',
+    description:
+      'Sources, taxonomy, and credits for the birds of Kruger National Park.',
+    origin,
+    path: '/credits',
+    nav: '',
+    crumbs: crumbs([{ href: '/credits', label: 'Credits', current: true }]),
+    main,
+  })
+}
+
 const layout = ({
   title,
   description,
@@ -515,7 +681,7 @@ ${main}
 <footer class="site-footer">
 <div class="wrap">
 <p>Also available as <a href="${escapeHtml(alts.md)}">Markdown</a> and <a href="${escapeHtml(alts.json)}">JSON</a>.</p>
-<p><a href="/llms.txt">llms.txt</a> · <a href="/sitemap.xml">Sitemap</a></p>
+<p><a href="/llms.txt">llms.txt</a> · <a href="/sitemap.xml">Sitemap</a> · <a href="/credits"${path === '/credits' ? ' aria-current="page"' : ''}>Credits</a></p>
 <p>Birds of Kruger National Park. An open field guide for people and for AI agents.</p>
 </div>
 </footer>

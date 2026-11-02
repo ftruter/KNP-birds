@@ -9,8 +9,10 @@ import { collectColourTokens } from '../src/marks.js'
 import {
   collectEntries,
   deriveAll,
+  deriveCredits,
   familyPopulation,
   iconicSpecies,
+  NO_MEDIA_NOTE,
   readCatalog,
   writeDerived,
 } from '../scripts/seed.mjs'
@@ -56,7 +58,7 @@ test('every data file matches the schema, slugs, and colour vocabulary', async (
     keys.filter(
       (key) => !key.startsWith('family/') && !key.startsWith('species/'),
     ),
-    ['index/families', 'index/species', 'vocab/colours'],
+    ['index/credits', 'index/families', 'index/species', 'vocab/colours'],
   )
   for (const entry of entries) {
     const data = JSON.parse(entry.value)
@@ -65,20 +67,20 @@ test('every data file matches the schema, slugs, and colour vocabulary', async (
       true,
       `${entry.key} ${ajv.errorsText(validate.errors)}`,
     )
-    if (entry.key.startsWith('index/')) {
-      const keys = Object.keys(data)
-      const sorted = keys
+    if (entry.key === 'index/species' || entry.key === 'index/families') {
+      const names = Object.keys(data)
+      const sorted = names
         .slice()
         .sort(
           (a, b) =>
             a.localeCompare(b, 'en', { sensitivity: 'base' }) ||
             a.localeCompare(b, 'en'),
         )
-      assert.deepEqual(keys, sorted, `${entry.key} key order`)
+      assert.deepEqual(names, sorted, `${entry.key} key order`)
       for (const value of Object.values(data)) {
         assert.deepEqual(Object.keys(value), ['en', 'af', 'population'])
       }
-    } else {
+    } else if (entry.key !== 'index/credits') {
       assert.equal(data.sampleData, true, entry.key)
     }
   }
@@ -119,6 +121,7 @@ test('derived family and index fields match the species files', async () => {
   )
   const committedFamilies = await readJson('data/index/families.json')
   assert.deepEqual(committedFamilies, derived.familiesIndex)
+  assert.deepEqual(await readJson('data/index/credits.json'), derived.credits)
   assert.equal(Object.keys(committedFamilies).length, 86)
   for (const value of Object.values(committedFamilies))
     assert.equal(value.population, 0)
@@ -204,6 +207,12 @@ test('seed --write reproduces the committed families index and keeps unknown spe
     assert.deepEqual(
       derived.speciesIndex,
       await readJson('data/index/species.json'),
+    )
+    assert.deepEqual(
+      JSON.parse(
+        await readFile(path.join(dataDir, 'index/credits.json'), 'utf8'),
+      ),
+      derived.credits,
     )
   } finally {
     await rm(dir, { recursive: true, force: true })
@@ -304,6 +313,138 @@ test('iconic species are the top three by population and stay empty when none is
       bird('none-a', 'Aaa aaa', null, null, null),
     ]),
     [],
+  )
+})
+
+test('credits follow images, recordings, and population sources', () => {
+  const roller = {
+    slug: 'coracias-caudatus',
+    scientificName: 'Coracias caudatus',
+    commonNames: { en: 'Lilac-breasted Roller', af: 'Gewone Troupant' },
+    images: [
+      {
+        key: 'rollers/adult.jpg',
+        author: 'A. Photographer',
+        license: 'CC BY 4.0',
+        licenceUrl: 'https://creativecommons.org/licenses/by/4.0/',
+        source: 'https://example.com/photo',
+        aiGenerated: true,
+      },
+      {
+        key: 'rollers/side.jpg',
+        author: 'A. Painter',
+        licence: 'CC0',
+        license: 'CC BY 4.0',
+        sourceUrl: 'https://example.com/side',
+        source: 'https://example.com/ignored',
+        aiGenerated: false,
+      },
+    ],
+    calls: [
+      {
+        type: 'call',
+        recordings: [
+          {
+            key: 'calls/rattle.mp3',
+            author: '',
+            license: '',
+            source: 'not a url',
+            aiGenerated: true,
+          },
+        ],
+      },
+      { type: 'song', recordings: [{ source: 'https://example.com/no-key' }] },
+    ],
+    population: {
+      sources: [
+        {
+          title: 'A field note',
+          url: 'https://example.com/note',
+          publisher: 'Example',
+          year: 2010,
+        },
+        { title: '   ', url: null, publisher: null, year: null },
+      ],
+    },
+  }
+  const empty = {
+    slug: 'aaa-aaa',
+    scientificName: 'Aaa aaa',
+    commonNames: { en: 'Empty Bird' },
+    images: [],
+    calls: [{ type: 'song', recordings: [] }],
+    population: { sources: [] },
+  }
+  const later = {
+    slug: 'aaa-bbb',
+    scientificName: 'Aaa bbb',
+    commonNames: { en: 'Earlier Bird' },
+    images: [],
+    calls: [],
+    population: {
+      sources: [
+        { title: 'Only a citation', url: null, publisher: null, year: null },
+      ],
+    },
+  }
+  const credits = deriveCredits([roller, empty, later])
+  assert.equal(credits.mediaNote, null)
+  assert.deepEqual(
+    credits.species.map((species) => species.scientificName),
+    ['Aaa bbb', 'Coracias caudatus'],
+  )
+  assert.equal(credits.species[1].commonName, 'Lilac-breasted Roller')
+  assert.equal(credits.species[1].images[0].aiGenerated, true)
+  assert.equal(credits.species[1].images[0].licence, 'CC BY 4.0')
+  assert.equal(
+    credits.species[1].images[0].sourceUrl,
+    'https://example.com/photo',
+  )
+  assert.equal(credits.species[1].images[1].licence, 'CC0')
+  assert.equal(
+    credits.species[1].images[1].sourceUrl,
+    'https://example.com/side',
+  )
+  assert.equal(credits.species[1].images[1].aiGenerated, false)
+  assert.deepEqual(credits.species[1].recordings[0], {
+    key: 'calls/rattle.mp3',
+    author: null,
+    licence: null,
+    licenceUrl: null,
+    sourceUrl: 'not a url',
+    aiGenerated: true,
+    callType: 'call',
+  })
+  assert.equal(credits.species[1].recordings.length, 1)
+  assert.deepEqual(credits.species[1].sources, [
+    {
+      title: 'A field note',
+      url: 'https://example.com/note',
+      publisher: 'Example',
+      year: 2010,
+    },
+  ])
+  assert.equal(credits.species[0].images.length, 0)
+  assert.equal(credits.species[0].sources[0].title, 'Only a citation')
+  const none = deriveCredits([empty])
+  assert.equal(none.mediaNote, NO_MEDIA_NOTE)
+  assert.deepEqual(none.species, [])
+  assert.equal(none.site.maintainer, 'ftruter')
+  assert.equal(none.site.repository, 'https://github.com/ftruter/KNP-birds')
+  assert.equal(none.site.licence, 'Apache-2.0')
+  assert.equal(none.taxonomy.authority, 'IOC / BirdLife South Africa')
+  const birda = none.dataSources.find((source) =>
+    source.name.startsWith('Birda'),
+  )
+  const wikipedia = none.dataSources.find((source) =>
+    source.name.startsWith('Wikipedia'),
+  )
+  assert.equal(birda.licence, null)
+  assert.equal(birda.licenceUrl, null)
+  assert.equal(wikipedia.licence, 'CC BY-SA 4.0')
+  assert.equal(
+    none.dataSources.filter((source) => source.licence == null).length,
+    5,
   )
 })
 

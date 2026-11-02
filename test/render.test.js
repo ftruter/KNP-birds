@@ -1,6 +1,7 @@
 import assert from 'node:assert/strict'
 import { test } from 'node:test'
 import {
+  renderCreditsHtml,
   renderFamiliesIndexHtml,
   renderFamilyHtml,
   renderHomeHtml,
@@ -9,12 +10,14 @@ import {
 } from '../src/html.js'
 import { UNPUBLISHED_SPECIES } from '../src/guide.js'
 import {
+  renderCreditsMarkdown,
   renderFamiliesIndexMarkdown,
   renderFamilyMarkdown,
   renderHomeMarkdown,
   renderSpeciesIndexMarkdown,
   renderSpeciesMarkdown,
 } from '../src/markdown.js'
+import { deriveCredits } from '../scripts/seed.mjs'
 import { colourMapFromDoc } from '../src/store.js'
 import { palette, css } from '../src/style.js'
 import { readJson } from './helpers.js'
@@ -404,6 +407,7 @@ test('the home page counts the species and family indexes', async () => {
   )
   assert.equal(speciesCount, 493)
   assert.equal(familyCount, 86)
+  assert.match(html, /href="\/credits"/)
   const sized = renderHomeHtml({
     origin: 'https://birds.truter.world',
     speciesIndex: {
@@ -426,4 +430,120 @@ test('the home page counts the species and family indexes', async () => {
     const family = await readJson(`data/family/${slug}.json`)
     assert.doesNotMatch(family.summary, /loaded so far|this sample|not every/i)
   }
+})
+
+test('the credits page names sources, taxonomy, and the site, and credits media from the data', async () => {
+  const doc = await readJson('data/index/credits.json')
+  const html = renderCreditsHtml({
+    origin: 'https://birds.truter.world',
+    doc,
+  })
+  const markdown = renderCreditsMarkdown(doc)
+  assert.match(html, /<h1>Credits<\/h1>/)
+  assert.match(html, /href="\/credits" aria-current="page"/)
+  assert.match(
+    html,
+    /rel="canonical" href="https:\/\/birds\.truter\.world\/credits"/,
+  )
+  assert.doesNotMatch(html, /<script/i)
+  for (const name of [
+    'Birda SABAP2 Kruger checklist',
+    'BirdLife South Africa Checklist of Birds in South Africa 2026',
+    'SANParks Kruger birds checklist',
+    'Avibase',
+    'Wikipedia',
+    'Waterberg Bioquest',
+  ]) {
+    assert.ok(html.includes(name), name)
+    assert.ok(markdown.includes(name), name)
+  }
+  assert.equal((html.match(/Licence unknown\./g) || []).length, 5)
+  assert.match(html, /CC BY-SA 4\.0/)
+  assert.match(
+    html,
+    /href="https:\/\/creativecommons\.org\/licenses\/by-sa\/4\.0\/"/,
+  )
+  assert.match(html, /IOC \/ BirdLife South Africa/)
+  assert.match(html, /No photos or recordings have been added so far/)
+  assert.match(markdown, /No photos or recordings have been added so far/)
+  assert.match(html, /Apache License 2\.0/)
+  assert.match(html, /href="https:\/\/github\.com\/ftruter\/KNP-birds"/)
+  assert.match(html, /href="https:\/\/github\.com\/ftruter"/)
+  assert.match(html, /Built and maintained by/)
+  assert.match(html, />ftruter</)
+  assert.match(html, /Springbok gold/)
+  assert.match(html, /colour inspiration only/)
+  assert.match(html, /no implied endorsement/)
+  assert.match(html, /isn&#39;t affiliated with SANParks/)
+  assert.match(markdown, /isn't affiliated with SANParks/)
+  assert.doesNotMatch(html, /CC BY-NC|All rights reserved|public domain/i)
+  const headings = [...html.matchAll(/<h([1-6])\b/g)].map((match) =>
+    Number(match[1]),
+  )
+  assert.equal(headings.filter((level) => level === 1).length, 1)
+  let previous = 0
+  for (const level of headings) {
+    assert.ok(level <= previous + 1, `heading jumped to ${level}`)
+    previous = level
+  }
+
+  const credited = deriveCredits([
+    {
+      slug: 'coracias-caudatus',
+      scientificName: 'Coracias caudatus',
+      commonNames: { en: 'Lilac-breasted Roller' },
+      images: [
+        {
+          key: 'rollers/<adult>.jpg',
+          author: '<script>',
+          license: 'CC BY 4.0',
+          source: 'javascript:alert(1)',
+          aiGenerated: true,
+        },
+      ],
+      calls: [
+        {
+          type: 'song',
+          recordings: [
+            {
+              key: 'calls/rattle.mp3',
+              author: 'A. Listener',
+              license: null,
+              source: 'https://example.com/audio',
+              aiGenerated: false,
+            },
+          ],
+        },
+      ],
+      population: {
+        sources: [
+          {
+            title: 'A field note',
+            url: 'https://example.com/note',
+            publisher: 'Example',
+            year: 2010,
+          },
+        ],
+      },
+    },
+  ])
+  const media = renderCreditsHtml({
+    origin: 'https://birds.truter.world',
+    doc: credited,
+  })
+  assert.match(media, /AI-generated image/)
+  assert.match(media, /href="\/species\/coracias-caudatus"/)
+  assert.match(media, /href="\/images\/rollers\/%3Cadult%3E\.jpg"/)
+  assert.match(media, /&lt;script&gt;/)
+  assert.doesNotMatch(media, /href="javascript:/)
+  assert.match(media, /Licence not recorded/)
+  assert.match(media, /href="https:\/\/example\.com\/note"/)
+  assert.match(media, /href="\/audio\/calls\/rattle\.mp3"/)
+  assert.doesNotMatch(media, /No photos or recordings have been added so far/)
+  const mediaMd = renderCreditsMarkdown(credited)
+  assert.match(mediaMd, /AI-generated image/)
+  assert.match(mediaMd, /#### Photographs/)
+  assert.match(mediaMd, /#### Recordings/)
+  assert.match(mediaMd, /#### Population sources/)
+  assert.match(mediaMd, /A field note/)
 })

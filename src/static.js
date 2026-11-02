@@ -8,7 +8,7 @@ export const sitemapXml = (origin, speciesIndex, familiesIndex) => {
   const urls = ['/']
   if (speciesIndex) urls.push('/species')
   if (familiesIndex) urls.push('/families')
-  urls.push('/vocab/colours')
+  urls.push('/vocab/colours', '/credits')
   for (const entry of indexRows(speciesIndex))
     urls.push(`/species/${entry.slug}`)
   for (const entry of indexRows(familiesIndex))
@@ -41,6 +41,7 @@ The file extension selects the format. Page paths come straight from the KV keys
 | \`species/<slug>\` | ${origin}/species/<slug> |
 | \`family/<slug>\` | ${origin}/family/<slug> |
 | \`vocab/colours\` | ${origin}/vocab/colours |
+| \`index/credits\` | ${origin}/credits |
 
 The home page is also ${origin}/.md and ${origin}/.json. Slugs are the lowercase scientific name with hyphens, for example \`coracias-caudatus\`.
 
@@ -86,7 +87,9 @@ Each family embeds its species and a population total. \`iconicSpecies\` is up t
 
 \`index/species\` and \`index/families\` are JSON objects. The keys are scientific names, in case-insensitive alphabetical order, so a search can narrow as someone types. Each value is exactly \`{ "en", "af", "population" }\`. For a species, \`population\` is the midpoint in individuals, or \`null\` when unknown. For a family it is that midpoint, or \`0\` when no species estimate is known yet. \`af\` is \`null\` when there is no Afrikaans name. The URL slug is the key in lowercase with spaces turned into hyphens (\`Coracias caudatus\` becomes \`coracias-caudatus\`).
 
-Images carry \`view\`, \`age\`, \`sex\`, \`season\`, \`source\`, \`author\`, \`license\`, and \`aiGenerated\`. The page labels AI-generated images in the caption.
+Images carry \`view\`, \`age\`, \`sex\`, \`season\`, \`source\`, \`author\`, \`license\`, an optional \`licenceUrl\`, and \`aiGenerated\`. The page labels AI-generated images in the caption. Recordings use the same attribution fields. \`aiGenerated\` is optional on a recording.
+
+\`index/credits\` is derived with the indexes. It lists the checklists behind the family and species lists, the IOC / BirdLife South Africa naming, photograph and recording credit grouped by species, and the Apache-2.0 licence for this site.
 
 ## Start here
 
@@ -94,4 +97,5 @@ Images carry \`view\`, \`age\`, \`sex\`, \`season\`, \`source\`, \`author\`, \`l
 - [Species index, Markdown](${origin}/species.md)
 - [Families index, Markdown](${origin}/families.md)
 - [Colour vocabulary, JSON](${origin}/vocab/colours.json)
+- [Credits, Markdown](${origin}/credits.md)
 `

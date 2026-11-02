@@ -321,6 +321,142 @@ const sourceLine = (source) => {
   return `- ${bits.join('. ')}${url ? ` ${url}` : ''}`
 }
 
+const listed = (value) => (Array.isArray(value) ? value : [])
+
+const mdLink = (url, label) => {
+  const href = safeHttpUrl(url)
+  return href ? `[${inlineText(label)}](${href})` : inlineText(label)
+}
+
+const mdLicence = (item, missing) => {
+  const name = typeof item?.licence === 'string' ? item.licence.trim() : ''
+  const href = safeHttpUrl(item?.licenceUrl)
+  return !name && !href
+    ? missing
+    : `Licence: ${href ? mdLink(href, name || 'Licence terms') : inlineText(name)}.`
+}
+
+const mdSource = (value) => {
+  const text = typeof value === 'string' ? value.trim() : ''
+  const href = safeHttpUrl(text)
+  return !text
+    ? 'Source not recorded.'
+    : href
+      ? `Source: ${mdLink(href, href)}.`
+      : `Source: ${inlineText(text)}.`
+}
+
+const mdAttribution = (item, kind) => {
+  const ai =
+    item?.aiGenerated === true
+      ? `${kind === 'recording' ? 'AI-generated recording' : 'AI-generated image'}. `
+      : ''
+  const author = item?.author
+    ? `Author: ${inlineText(item.author)}. `
+    : 'Author not recorded. '
+  return `${ai}${author}${mdLicence(item, 'Licence not recorded.')} ${mdSource(item?.sourceUrl)}`
+}
+
+const mdCall = (credit) =>
+  credit?.callType ? `${CALL_TYPE[credit.callType] || credit.callType}. ` : ''
+
+const mdCitation = (item) => {
+  const bits = [
+    mdLink(item.url, item.title || 'Untitled source'),
+    item.publisher ? inlineText(item.publisher) : '',
+    item.year != null ? String(item.year) : '',
+  ].filter(Boolean)
+  return bits.join('. ')
+}
+
+const mdCredits = (items, kind, heading) =>
+  !items.length
+    ? ''
+    : `#### ${heading}
+
+${items
+  .map((item) =>
+    kind === 'source'
+      ? `- ${mdCitation(item)}`
+      : `- [${item.key}](${objectPath(kind === 'recording' ? 'audio' : 'images', item.key)}). ${mdCall(item)}${mdAttribution(item, kind)}`,
+  )
+  .join('\n')}`
+
+const mdDataSource = (source) => {
+  const links = listed(source.links)
+    .map((link) =>
+      safeHttpUrl(link?.url) ? mdLink(link.url, link.label || link.url) : '',
+    )
+    .filter(Boolean)
+  const lines = [
+    `- ${mdLink(source.url, source.name || 'Untitled source')}`,
+    '',
+    `  ${inlineText(source.usedFor || '')}`,
+  ]
+  if (links.length) lines.push('', `  Also: ${links.join('. ')}.`)
+  lines.push('', `  ${mdLicence(source, 'Licence unknown.')}`)
+  return lines.join('\n')
+}
+
+const mdSpecies = (group) =>
+  `### [${inlineText(group.commonName || group.scientificName)}](/species/${group.slug}) (_${inlineText(group.scientificName || '')}_)
+
+${mdCredits(listed(group.images), 'image', 'Photographs')}
+${mdCredits(listed(group.recordings), 'recording', 'Recordings')}
+${mdCredits(listed(group.sources), 'source', 'Population sources')}`
+
+const mdSite = (site) => {
+  const licenceName =
+    site?.licence === 'Apache-2.0'
+      ? 'Apache License 2.0'
+      : site?.licence || 'Apache-2.0'
+  const handle = typeof site?.maintainer === 'string' ? site.maintainer : ''
+  const maintainer = /^[A-Za-z0-9-]+$/.test(handle)
+    ? `[${handle}](https://github.com/${handle})`
+    : inlineText(handle)
+  return !site
+    ? ''
+    : `## This site
+
+KNP Birds is open source under the ${mdLink(site.licenceUrl, licenceName)} licence. The code is at ${mdLink(site.repository, site.repository || 'https://github.com/ftruter/KNP-birds')}.
+
+Built and maintained by ${maintainer}.
+
+${inlineText(site.palette || '')}
+
+${inlineText(site.affiliation || '')}`
+}
+
+export const renderCreditsMarkdown = (doc) => {
+  const sources = listed(doc?.dataSources)
+  const groups = listed(doc?.species)
+  const note =
+    doc?.mediaNote ||
+    (groups.length ? '' : 'No photos or recordings have been added so far.')
+  return pageMd({
+    path: '/credits',
+    title: 'Credits',
+    sample: false,
+    body: `Checklists and references used for the family and species lists, the taxonomy those names follow, and credit for photographs, recordings, and this site.
+
+## Data sources
+
+${sources.length ? sources.map(mdDataSource).join('\n\n') : 'No data sources are recorded.'}
+
+## Taxonomy
+
+**${inlineText(doc?.taxonomy?.authority || 'IOC / BirdLife South Africa')}.** ${inlineText(doc?.taxonomy?.summary || '')}
+
+## Photographs, recordings, and population sources
+
+${note}
+
+${groups.map(mdSpecies).join('\n\n')}
+
+${mdSite(doc?.site)}`,
+  })
+}
+
 const pageMd = ({ path, title, sample, body }) => {
   const alts = alternates(path)
   const banner = sample ? `> ${SAMPLE_NOTICE}\n\n` : ''

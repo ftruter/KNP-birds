@@ -33,6 +33,9 @@ test('format and KV key selection', () => {
     ],
     ['/families', 'families-index', 'html', '/families'],
     ['/families.json', 'families-index', 'json', '/families'],
+    ['/credits', 'credits', 'html', '/credits'],
+    ['/credits.md', 'credits', 'md', '/credits'],
+    ['/credits.json', 'credits', 'json', '/credits'],
     ['/family/coraciidae', 'family', 'html', '/family/coraciidae'],
     ['/family/coraciidae.md', 'family', 'md', '/family/coraciidae'],
     ['/vocab/colours', 'vocab', 'html', '/vocab/colours'],
@@ -56,6 +59,7 @@ test('format and KV key selection', () => {
   assert.equal(parsed('/family/accipitridae').kvKey, 'family/accipitridae')
   assert.equal(parsed('/species').kvKey, 'index/species')
   assert.equal(parsed('/families').kvKey, 'index/families')
+  assert.equal(parsed('/credits').kvKey, 'index/credits')
   assert.equal(parsed('/vocab/colours').kvKey, 'vocab/colours')
 })
 
