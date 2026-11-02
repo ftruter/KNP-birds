@@ -8,6 +8,8 @@ import {
   afrikaansName,
   EMPTY_FAMILY_SPECIES,
   englishName,
+  speciesDetailsPublished,
+  UNPUBLISHED_SPECIES,
   familyIndexPopulationLine,
   familyLabel,
   familyTotalModel,
@@ -168,25 +170,18 @@ export const renderSpeciesHtml = ({
   colourMap,
   imagesAvailable,
 }) => {
-  const comparisons = diffSpecies(doc)
+  const published = speciesDetailsPublished(doc)
+  const comparisons = published ? diffSpecies(doc) : []
   const population = populationModel(doc.population)
   const images = Array.isArray(doc.images) ? doc.images : []
+  const status = doc.status ? ` · ${escapeHtml(statusLabel(doc.status))}` : ''
   const main = `
 ${doc.sampleData ? sampleNotice() : ''}
-<p class="kicker"><a href="/family/${escapeHtml(doc.family)}">${escapeHtml(familyLabel(doc.family))}</a> · ${escapeHtml(statusLabel(doc.status))}</p>
+<p class="kicker"><a href="/family/${escapeHtml(doc.family)}">${escapeHtml(familyLabel(doc.family))}</a>${status}</p>
 <h1>${escapeHtml(englishName(doc))}</h1>
 <p class="latin">${escapeHtml(doc.scientificName || '')}</p>
 ${afrikaansName(doc) ? `<p class="afrikaans">${escapeHtml(afrikaansName(doc))}</p>` : ''}
-${paragraphs(doc.summary)}
-<dl class="facts">
-<dt>Status</dt><dd>${escapeHtml(statusLabel(doc.status))}</dd>
-<dt>Size</dt><dd>${escapeHtml(sizeLabel(doc.size) || 'Not recorded')}</dd>
-<dt>Family</dt><dd><a href="/family/${escapeHtml(doc.family)}">${escapeHtml(familyLabel(doc.family))}</a></dd>
-</dl>
-<h2>Photographs</h2>
-${figures(doc, images, imagesAvailable, colourMap)}
-<h2>Telling it apart</h2>
-${comparisons.map((section) => comparisonSection(section, colourMap)).join('\n')}
+${published ? publishedSpeciesHtml(doc, comparisons, images, imagesAvailable, colourMap) : `<p>${escapeHtml(UNPUBLISHED_SPECIES)}</p>`}
 ${populationHtml(population)}`
   return layout({
     title: `${englishName(doc)} (${doc.scientificName}) · KNP Birds`,
@@ -221,6 +216,23 @@ export const renderNotFoundHtml = ({ origin, path }) => {
     main,
   })
 }
+
+const publishedSpeciesHtml = (
+  doc,
+  comparisons,
+  images,
+  imagesAvailable,
+  colourMap,
+) => `${paragraphs(doc.summary)}
+<dl class="facts">
+<dt>Status</dt><dd>${escapeHtml(statusLabel(doc.status))}</dd>
+<dt>Size</dt><dd>${escapeHtml(sizeLabel(doc.size) || 'Not recorded')}</dd>
+<dt>Family</dt><dd><a href="/family/${escapeHtml(doc.family)}">${escapeHtml(familyLabel(doc.family))}</a></dd>
+</dl>
+<h2>Photographs</h2>
+${figures(doc, images, imagesAvailable, colourMap)}
+<h2>Telling it apart</h2>
+${comparisons.map((section) => comparisonSection(section, colourMap)).join('\n')}`
 
 const comparisonSection = (section, colourMap) => {
   const context = section.rows?.find((row) => row.context)?.context

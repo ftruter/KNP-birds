@@ -1,0 +1,28 @@
+{
+  "kind": "species",
+  "slug": "spatula-hottentota",
+  "scientificName": "Spatula hottentota",
+  "commonNames": {
+    "en": "Blue-billed Teal",
+    "af": "Gevlekte Eend"
+  },
+  "family": "anatidae",
+  "summary": "The details for this species have not been published yet.",
+  "sampleData": true,
+  "population": {
+    "estimate": {
+      "low": null,
+      "high": null
+    },
+    "unit": null,
+    "trend": "unknown",
+    "confidence": null,
+    "asOf": null,
+    "notes": "to be researched",
+    "sources": []
+  },
+  "variants": [],
+  "viewNotes": [],
+  "calls": [],
+  "images": []
+}

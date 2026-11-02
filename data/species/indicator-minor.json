@@ -1,0 +1,28 @@
+{
+  "kind": "species",
+  "slug": "indicator-minor",
+  "scientificName": "Indicator minor",
+  "commonNames": {
+    "en": "Lesser Honeyguide",
+    "af": "Kleinheuningwyser"
+  },
+  "family": "indicatoridae",
+  "summary": "The details for this species have not been published yet.",
+  "sampleData": true,
+  "population": {
+    "estimate": {
+      "low": null,
+      "high": null
+    },
+    "unit": null,
+    "trend": "unknown",
+    "confidence": null,
+    "asOf": null,
+    "notes": "to be researched",
+    "sources": []
+  },
+  "variants": [],
+  "viewNotes": [],
+  "calls": [],
+  "images": []
+}

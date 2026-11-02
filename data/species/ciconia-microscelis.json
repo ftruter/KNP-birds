@@ -1,0 +1,28 @@
+{
+  "kind": "species",
+  "slug": "ciconia-microscelis",
+  "scientificName": "Ciconia microscelis",
+  "commonNames": {
+    "en": "African Woolly-necked Stork",
+    "af": "Wolnekooievaar"
+  },
+  "family": "ciconiidae",
+  "summary": "The details for this species have not been published yet.",
+  "sampleData": true,
+  "population": {
+    "estimate": {
+      "low": null,
+      "high": null
+    },
+    "unit": null,
+    "trend": "unknown",
+    "confidence": null,
+    "asOf": null,
+    "notes": "to be researched",
+    "sources": []
+  },
+  "variants": [],
+  "viewNotes": [],
+  "calls": [],
+  "images": []
+}

@@ -29,11 +29,11 @@ No extension is HTML. `.md` is Markdown (`text/markdown; charset=utf-8`). `.json
 | `slug`, `scientificName` | Identity. The slug matches the KV key. |
 | `commonNames.en` | English name. `commonNames.af` is optional Afrikaans. |
 | `family` | Family slug. |
-| `status` | `resident` or `summer-migrant`. Vagrants are not in the list. |
-| `size.lengthCm` | `{ "min", "max" }` in centimetres, plus an optional `note`. |
+| `status` | `resident` or `summer-migrant`. Omitted when it has not been published. Vagrants are not in the list. |
+| `size.lengthCm` | `{ "min", "max" }` in centimetres, plus an optional `note`. The whole `size` object is omitted when length has not been published. |
 | `summary` | A short plain-language description. |
 | `sampleData` | `true` while the text is still a sample. The page says "Sample content, to be verified." |
-| `variants` | Plumage described as structured marks. See below. |
+| `variants` | Plumage described as structured marks. An empty array means the marks have not been published. See below. |
 | `viewNotes` | Optional notes for flight and perched views. Not variants. |
 | `calls` | Vocalisations. |
 | `images` | Photographs in the R2 bucket. May be empty. |
@@ -123,6 +123,12 @@ There is no formal bird census for Kruger. `population` is an approximate estima
 | `sources` | Citations: `title`, `url`, `publisher`, `year`. `url`, `publisher`, and `year` may be null. |
 
 The page renders a range (`low–high`, `at least low`, or `up to high`) with the label **Approximate estimate**, then the trend, the note, and the sources. Sample species in this repository set `estimate` to null, `trend` to `unknown`, and `notes` to `to be researched`. They do not invent counts.
+
+### Unpublished species
+
+A stub has the scientific name, English and Afrikaans names, the family slug, `sampleData: true`, and a population object with null figures. `variants`, `viewNotes`, `calls`, and `images` are empty arrays. `status` and `size` are omitted, because a placeholder resident status or a made-up length would be a false claim. The JSON Schema used to require `status`, `size`, and at least one variant. Those three constraints are relaxed so an unpublished species still validates. Calls, view notes, and images were already allowed to be empty.
+
+The page says "The details for this species have not been published yet." It does not render the photograph block or the six comparison sections, which would otherwise be empty or would say "No visible difference" with nothing recorded. It omits the Afrikaans line when `commonNames.af` is absent. The population section still explains that no numeric estimate has been entered.
 
 ## Family
 

@@ -32,7 +32,7 @@ test('lilac-breasted roller diffs', async () => {
 })
 
 test('african fish eagle flight and age diffs', async () => {
-  const doc = await readJson('data/species/haliaeetus-vocifer.json')
+  const doc = await readJson('data/species/icthyophaga-vocifer.json')
   const [age, season, sex, flight] = diffSpecies(doc)
   assert.equal(age.status, 'differs')
   const tail = age.rows.find((row) => row.mark === 'Tail colour')

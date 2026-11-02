@@ -1,0 +1,28 @@
+{
+  "kind": "species",
+  "slug": "apalis-ruddi",
+  "scientificName": "Apalis ruddi",
+  "commonNames": {
+    "en": "Rudd’s Apalis",
+    "af": "Ruddkleinjantjie"
+  },
+  "family": "cisticolidae",
+  "summary": "The details for this species have not been published yet.",
+  "sampleData": true,
+  "population": {
+    "estimate": {
+      "low": null,
+      "high": null
+    },
+    "unit": null,
+    "trend": "unknown",
+    "confidence": null,
+    "asOf": null,
+    "notes": "to be researched",
+    "sources": []
+  },
+  "variants": [],
+  "viewNotes": [],
+  "calls": [],
+  "images": []
+}

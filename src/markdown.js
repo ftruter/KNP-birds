@@ -8,6 +8,8 @@ import {
   afrikaansName,
   EMPTY_FAMILY_SPECIES,
   englishName,
+  speciesDetailsPublished,
+  UNPUBLISHED_SPECIES,
   familyIndexPopulationLine,
   familyLabel,
   familyTotalModel,
@@ -132,13 +134,14 @@ ${colours.map((colour) => `- ${colour.name} (${colour.hex})`).join('\n')}`,
 }
 
 export const renderSpeciesMarkdown = ({ doc, colourMap }) => {
-  const comparisons = diffSpecies(doc)
+  const published = speciesDetailsPublished(doc)
+  const comparisons = published ? diffSpecies(doc) : []
   const population = populationModel(doc.population)
   const images = Array.isArray(doc.images) ? doc.images : []
   const af = afrikaansName(doc)
-  const body = `_${doc.scientificName}_ · [${familyLabel(doc.family)}](/family/${doc.family}) · ${statusLabel(doc.status)}
-
-${af ? `${af}\n\n` : ''}${doc.summary || ''}
+  const status = doc.status ? ` · ${statusLabel(doc.status)}` : ''
+  const details = published
+    ? `${doc.summary || ''}
 
 - Status: ${statusLabel(doc.status)}
 - Size: ${sizeLabel(doc.size) || 'Not recorded'}
@@ -149,7 +152,11 @@ ${images.length === 0 ? '_No photograph is stored for this species yet._' : imag
 
 ## Telling it apart
 
-${comparisons.map((section) => comparisonMarkdown(section, colourMap)).join('\n\n')}
+${comparisons.map((section) => comparisonMarkdown(section, colourMap)).join('\n\n')}`
+    : UNPUBLISHED_SPECIES
+  const body = `_${doc.scientificName}_ · [${familyLabel(doc.family)}](/family/${doc.family})${status}
+
+${af ? `${af}\n\n` : ''}${details}
 
 ## Population
 

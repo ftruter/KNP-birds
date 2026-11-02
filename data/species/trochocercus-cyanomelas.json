@@ -1,0 +1,28 @@
+{
+  "kind": "species",
+  "slug": "trochocercus-cyanomelas",
+  "scientificName": "Trochocercus cyanomelas",
+  "commonNames": {
+    "en": "Blue-mantled Crested Flycatcher",
+    "af": "Bloukuifvlieëvanger"
+  },
+  "family": "monarchidae",
+  "summary": "The details for this species have not been published yet.",
+  "sampleData": true,
+  "population": {
+    "estimate": {
+      "low": null,
+      "high": null
+    },
+    "unit": null,
+    "trend": "unknown",
+    "confidence": null,
+    "asOf": null,
+    "notes": "to be researched",
+    "sources": []
+  },
+  "variants": [],
+  "viewNotes": [],
+  "calls": [],
+  "images": []
+}

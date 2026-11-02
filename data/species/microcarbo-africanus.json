@@ -1,0 +1,28 @@
+{
+  "kind": "species",
+  "slug": "microcarbo-africanus",
+  "scientificName": "Microcarbo africanus",
+  "commonNames": {
+    "en": "Reed Cormorant",
+    "af": "Rietduiker"
+  },
+  "family": "phalacrocoracidae",
+  "summary": "The details for this species have not been published yet.",
+  "sampleData": true,
+  "population": {
+    "estimate": {
+      "low": null,
+      "high": null
+    },
+    "unit": null,
+    "trend": "unknown",
+    "confidence": null,
+    "asOf": null,
+    "notes": "to be researched",
+    "sources": []
+  },
+  "variants": [],
+  "viewNotes": [],
+  "calls": [],
+  "images": []
+}

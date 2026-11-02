@@ -1,0 +1,28 @@
+{
+  "kind": "species",
+  "slug": "telacanthura-ussheri",
+  "scientificName": "Telacanthura ussheri",
+  "commonNames": {
+    "en": "Mottled Spinetail",
+    "af": "Gevlekte Stekelstert"
+  },
+  "family": "apodidae",
+  "summary": "The details for this species have not been published yet.",
+  "sampleData": true,
+  "population": {
+    "estimate": {
+      "low": null,
+      "high": null
+    },
+    "unit": null,
+    "trend": "unknown",
+    "confidence": null,
+    "asOf": null,
+    "notes": "to be researched",
+    "sources": []
+  },
+  "variants": [],
+  "viewNotes": [],
+  "calls": [],
+  "images": []
+}

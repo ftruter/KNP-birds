@@ -1,0 +1,28 @@
+{
+  "kind": "species",
+  "slug": "melaniparus-niger",
+  "scientificName": "Melaniparus niger",
+  "commonNames": {
+    "en": "Southern Black Tit",
+    "af": "Gewone Swartmees"
+  },
+  "family": "paridae",
+  "summary": "The details for this species have not been published yet.",
+  "sampleData": true,
+  "population": {
+    "estimate": {
+      "low": null,
+      "high": null
+    },
+    "unit": null,
+    "trend": "unknown",
+    "confidence": null,
+    "asOf": null,
+    "notes": "to be researched",
+    "sources": []
+  },
+  "variants": [],
+  "viewNotes": [],
+  "calls": [],
+  "images": []
+}

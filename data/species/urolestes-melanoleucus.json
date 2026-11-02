@@ -1,0 +1,28 @@
+{
+  "kind": "species",
+  "slug": "urolestes-melanoleucus",
+  "scientificName": "Urolestes melanoleucus",
+  "commonNames": {
+    "en": "Magpie Shrike",
+    "af": "Langstertlaksman"
+  },
+  "family": "laniidae",
+  "summary": "The details for this species have not been published yet.",
+  "sampleData": true,
+  "population": {
+    "estimate": {
+      "low": null,
+      "high": null
+    },
+    "unit": null,
+    "trend": "unknown",
+    "confidence": null,
+    "asOf": null,
+    "notes": "to be researched",
+    "sources": []
+  },
+  "variants": [],
+  "viewNotes": [],
+  "calls": [],
+  "images": []
+}

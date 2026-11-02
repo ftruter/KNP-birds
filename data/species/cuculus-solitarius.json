@@ -1,0 +1,28 @@
+{
+  "kind": "species",
+  "slug": "cuculus-solitarius",
+  "scientificName": "Cuculus solitarius",
+  "commonNames": {
+    "en": "Red-chested Cuckoo",
+    "af": "Piet-my-vrou"
+  },
+  "family": "cuculidae",
+  "summary": "The details for this species have not been published yet.",
+  "sampleData": true,
+  "population": {
+    "estimate": {
+      "low": null,
+      "high": null
+    },
+    "unit": null,
+    "trend": "unknown",
+    "confidence": null,
+    "asOf": null,
+    "notes": "to be researched",
+    "sources": []
+  },
+  "variants": [],
+  "viewNotes": [],
+  "calls": [],
+  "images": []
+}

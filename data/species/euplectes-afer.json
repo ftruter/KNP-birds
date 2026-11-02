@@ -1,0 +1,28 @@
+{
+  "kind": "species",
+  "slug": "euplectes-afer",
+  "scientificName": "Euplectes afer",
+  "commonNames": {
+    "en": "Yellow-crowned Bishop",
+    "af": "Goudgeelvink"
+  },
+  "family": "ploceidae",
+  "summary": "The details for this species have not been published yet.",
+  "sampleData": true,
+  "population": {
+    "estimate": {
+      "low": null,
+      "high": null
+    },
+    "unit": null,
+    "trend": "unknown",
+    "confidence": null,
+    "asOf": null,
+    "notes": "to be researched",
+    "sources": []
+  },
+  "variants": [],
+  "viewNotes": [],
+  "calls": [],
+  "images": []
+}

@@ -1,0 +1,28 @@
+{
+  "kind": "species",
+  "slug": "crithagra-citrinipectus",
+  "scientificName": "Crithagra citrinipectus",
+  "commonNames": {
+    "en": "Lemon-breasted Canary",
+    "af": "Geelborskanarie"
+  },
+  "family": "fringillidae",
+  "summary": "The details for this species have not been published yet.",
+  "sampleData": true,
+  "population": {
+    "estimate": {
+      "low": null,
+      "high": null
+    },
+    "unit": null,
+    "trend": "unknown",
+    "confidence": null,
+    "asOf": null,
+    "notes": "to be researched",
+    "sources": []
+  },
+  "variants": [],
+  "viewNotes": [],
+  "calls": [],
+  "images": []
+}

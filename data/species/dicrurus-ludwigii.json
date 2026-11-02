@@ -1,0 +1,28 @@
+{
+  "kind": "species",
+  "slug": "dicrurus-ludwigii",
+  "scientificName": "Dicrurus ludwigii",
+  "commonNames": {
+    "en": "Common Square-tailed Drongo",
+    "af": "Kleinbyvanger"
+  },
+  "family": "dicruridae",
+  "summary": "The details for this species have not been published yet.",
+  "sampleData": true,
+  "population": {
+    "estimate": {
+      "low": null,
+      "high": null
+    },
+    "unit": null,
+    "trend": "unknown",
+    "confidence": null,
+    "asOf": null,
+    "notes": "to be researched",
+    "sources": []
+  },
+  "variants": [],
+  "viewNotes": [],
+  "calls": [],
+  "images": []
+}

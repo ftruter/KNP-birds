@@ -1,0 +1,28 @@
+{
+  "kind": "species",
+  "slug": "spermestes-bicolor",
+  "scientificName": "Spermestes bicolor",
+  "commonNames": {
+    "en": "Red-backed Mannikin",
+    "af": "Rooirugfret"
+  },
+  "family": "estrildidae",
+  "summary": "The details for this species have not been published yet.",
+  "sampleData": true,
+  "population": {
+    "estimate": {
+      "low": null,
+      "high": null
+    },
+    "unit": null,
+    "trend": "unknown",
+    "confidence": null,
+    "asOf": null,
+    "notes": "to be researched",
+    "sources": []
+  },
+  "variants": [],
+  "viewNotes": [],
+  "calls": [],
+  "images": []
+}

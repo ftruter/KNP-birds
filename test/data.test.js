@@ -33,10 +33,15 @@ test('every data file matches the schema, slugs, and colour vocabulary', async (
     assert.match(colour.hex, /^#[0-9A-Fa-f]{6}$/)
   }
   const familiesIndex = await readJson('data/index/families.json')
+  const speciesIndex = await readJson('data/index/species.json')
   const familyKeys = Object.keys(familiesIndex).map(
     (name) => `family/${name.trim().toLowerCase().replaceAll(' ', '-')}`,
   )
+  const speciesKeys = Object.keys(speciesIndex).map(
+    (name) => `species/${name.trim().toLowerCase().replaceAll(' ', '-')}`,
+  )
   assert.equal(familyKeys.length, 86)
+  assert.equal(speciesKeys.length, 493)
   const entries = await collectEntries()
   const keys = entries.map((entry) => entry.key).sort()
   assert.deepEqual(
@@ -44,15 +49,14 @@ test('every data file matches the schema, slugs, and colour vocabulary', async (
     familyKeys.slice().sort(),
   )
   assert.deepEqual(
-    keys.filter((key) => !key.startsWith('family/')),
-    [
-      'index/families',
-      'index/species',
-      'species/bucorvus-leadbeateri',
-      'species/coracias-caudatus',
-      'species/haliaeetus-vocifer',
-      'vocab/colours',
-    ],
+    keys.filter((key) => key.startsWith('species/')),
+    speciesKeys.slice().sort(),
+  )
+  assert.deepEqual(
+    keys.filter(
+      (key) => !key.startsWith('family/') && !key.startsWith('species/'),
+    ),
+    ['index/families', 'index/species', 'vocab/colours'],
   )
   for (const entry of entries) {
     const data = JSON.parse(entry.value)
@@ -80,7 +84,7 @@ test('every data file matches the schema, slugs, and colour vocabulary', async (
   }
   for (const slug of [
     'coracias-caudatus',
-    'haliaeetus-vocifer',
+    'icthyophaga-vocifer',
     'bucorvus-leadbeateri',
   ]) {
     const species = await readJson(`data/species/${slug}.json`)

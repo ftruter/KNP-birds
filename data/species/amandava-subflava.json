@@ -1,0 +1,28 @@
+{
+  "kind": "species",
+  "slug": "amandava-subflava",
+  "scientificName": "Amandava subflava",
+  "commonNames": {
+    "en": "Orange-breasted Waxbill",
+    "af": "Rooiassie"
+  },
+  "family": "estrildidae",
+  "summary": "The details for this species have not been published yet.",
+  "sampleData": true,
+  "population": {
+    "estimate": {
+      "low": null,
+      "high": null
+    },
+    "unit": null,
+    "trend": "unknown",
+    "confidence": null,
+    "asOf": null,
+    "notes": "to be researched",
+    "sources": []
+  },
+  "variants": [],
+  "viewNotes": [],
+  "calls": [],
+  "images": []
+}

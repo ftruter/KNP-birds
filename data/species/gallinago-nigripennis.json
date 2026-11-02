@@ -1,0 +1,28 @@
+{
+  "kind": "species",
+  "slug": "gallinago-nigripennis",
+  "scientificName": "Gallinago nigripennis",
+  "commonNames": {
+    "en": "African Snipe",
+    "af": "Afrikaanse Snip"
+  },
+  "family": "scolopacidae",
+  "summary": "The details for this species have not been published yet.",
+  "sampleData": true,
+  "population": {
+    "estimate": {
+      "low": null,
+      "high": null
+    },
+    "unit": null,
+    "trend": "unknown",
+    "confidence": null,
+    "asOf": null,
+    "notes": "to be researched",
+    "sources": []
+  },
+  "variants": [],
+  "viewNotes": [],
+  "calls": [],
+  "images": []
+}

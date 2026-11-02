@@ -1,0 +1,28 @@
+{
+  "kind": "species",
+  "slug": "columba-arquatrix",
+  "scientificName": "Columba arquatrix",
+  "commonNames": {
+    "en": "African Olive Pigeon",
+    "af": "Geelbekbosduif"
+  },
+  "family": "columbidae",
+  "summary": "The details for this species have not been published yet.",
+  "sampleData": true,
+  "population": {
+    "estimate": {
+      "low": null,
+      "high": null
+    },
+    "unit": null,
+    "trend": "unknown",
+    "confidence": null,
+    "asOf": null,
+    "notes": "to be researched",
+    "sources": []
+  },
+  "variants": [],
+  "viewNotes": [],
+  "calls": [],
+  "images": []
+}

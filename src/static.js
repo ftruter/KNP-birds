@@ -76,6 +76,8 @@ The six comparisons on a species page are derived, not stored as prose:
 
 When both sides are described and no mark differs, the page says "No visible difference".
 
+A species with empty \`variants\`, \`viewNotes\`, \`calls\`, and \`images\` has not had its field details published. The page says "The details for this species have not been published yet." and skips those sections. \`status\` and \`size\` may be omitted until they are known. \`population\` is still present, with null figures. The Afrikaans line is omitted when \`af\` is missing.
+
 \`population\` is an approximate KNP estimate: \`estimate.low\`, \`estimate.high\`, \`unit\`, \`trend\`, \`confidence\`, \`asOf\`, \`notes\`, and \`sources\`. Sample species leave the numbers null. A pair counts as two individuals when totals are added up.
 
 Each family embeds its species and a population total. \`iconicSpecies\` is up to three species slugs, most numerous first (the midpoint of low and high, in individuals). Species with no estimate come after those, then alphabetical scientific name. The family page shows those species and their photographs first.
