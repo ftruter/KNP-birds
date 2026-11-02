@@ -8,13 +8,22 @@
   },
   "summary": "Field notes for this family are still to be written.",
   "sampleData": true,
-  "species": [],
+  "species": [
+    {
+      "slug": "zosterops-anderssoni",
+      "scientificName": "Zosterops anderssoni",
+      "names": {
+        "en": "Southern Yellow White-eye",
+        "af": "Geelglasogie"
+      }
+    }
+  ],
   "iconicSpecies": [],
   "population": {
     "low": null,
     "high": null,
     "speciesCounted": 0,
-    "speciesTotal": 0,
+    "speciesTotal": 1,
     "complete": false
   }
 }

@@ -8,13 +8,102 @@
   },
   "summary": "Field notes for this family are still to be written.",
   "sampleData": true,
-  "species": [],
+  "species": [
+    {
+      "slug": "anarhynchus-asiaticus",
+      "scientificName": "Anarhynchus asiaticus",
+      "names": {
+        "en": "Caspian Plover",
+        "af": "Asiatiese Strandkiewiet"
+      }
+    },
+    {
+      "slug": "anarhynchus-marginatus",
+      "scientificName": "Anarhynchus marginatus",
+      "names": {
+        "en": "White-fronted Plover",
+        "af": "Vaalstrandkiewiet"
+      }
+    },
+    {
+      "slug": "anarhynchus-pallidus",
+      "scientificName": "Anarhynchus pallidus",
+      "names": {
+        "en": "Chestnut-banded Plover",
+        "af": "Rooibandstrandkiewiet"
+      }
+    },
+    {
+      "slug": "anarhynchus-pecuarius",
+      "scientificName": "Anarhynchus pecuarius",
+      "names": {
+        "en": "Kittlitz’s Plover",
+        "af": "Geelborsstrandkiewiet"
+      }
+    },
+    {
+      "slug": "charadrius-hiaticula",
+      "scientificName": "Charadrius hiaticula",
+      "names": {
+        "en": "Common Ringed Plover",
+        "af": "Ringnekstrandkiewiet"
+      }
+    },
+    {
+      "slug": "thinornis-tricollaris",
+      "scientificName": "Thinornis tricollaris",
+      "names": {
+        "en": "Three-banded Plover",
+        "af": "Driebandstrandkiewiet"
+      }
+    },
+    {
+      "slug": "vanellus-albiceps",
+      "scientificName": "Vanellus albiceps",
+      "names": {
+        "en": "White-crowned Lapwing",
+        "af": "Witkopkiewiet"
+      }
+    },
+    {
+      "slug": "vanellus-armatus",
+      "scientificName": "Vanellus armatus",
+      "names": {
+        "en": "Blacksmith Lapwing",
+        "af": "Bontkiewiet"
+      }
+    },
+    {
+      "slug": "vanellus-coronatus",
+      "scientificName": "Vanellus coronatus",
+      "names": {
+        "en": "Crowned Lapwing",
+        "af": "Kroonkiewiet"
+      }
+    },
+    {
+      "slug": "vanellus-lugubris",
+      "scientificName": "Vanellus lugubris",
+      "names": {
+        "en": "Senegal Lapwing",
+        "af": "Kleinswartvlerkkiewiet"
+      }
+    },
+    {
+      "slug": "vanellus-senegallus",
+      "scientificName": "Vanellus senegallus",
+      "names": {
+        "en": "African Wattled Lapwing",
+        "af": "Lelkiewiet"
+      }
+    }
+  ],
   "iconicSpecies": [],
   "population": {
     "low": null,
     "high": null,
     "speciesCounted": 0,
-    "speciesTotal": 0,
+    "speciesTotal": 11,
     "complete": false
   }
 }

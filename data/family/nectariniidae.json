@@ -8,13 +8,94 @@
   },
   "summary": "Field notes for this family are still to be written.",
   "sampleData": true,
-  "species": [],
+  "species": [
+    {
+      "slug": "chalcomitra-amethystina",
+      "scientificName": "Chalcomitra amethystina",
+      "names": {
+        "en": "Amethyst Sunbird",
+        "af": "Swartsuikerbekkie"
+      }
+    },
+    {
+      "slug": "chalcomitra-senegalensis",
+      "scientificName": "Chalcomitra senegalensis",
+      "names": {
+        "en": "Scarlet-chested Sunbird",
+        "af": "Rooiborssuikerbekkie"
+      }
+    },
+    {
+      "slug": "cinnyris-afer",
+      "scientificName": "Cinnyris afer",
+      "names": {
+        "en": "Greater Double-collared Sunbird",
+        "af": "Groot-rooibandsuikerbekkie"
+      }
+    },
+    {
+      "slug": "cinnyris-bifasciatus",
+      "scientificName": "Cinnyris bifasciatus",
+      "names": {
+        "en": "Purple-banded Sunbird",
+        "af": "Purperbandsuikerbekkie"
+      }
+    },
+    {
+      "slug": "cinnyris-chalybeus",
+      "scientificName": "Cinnyris chalybeus",
+      "names": {
+        "en": "Southern Double-collared Sunbird",
+        "af": "Klein-rooibandsuikerbekkie"
+      }
+    },
+    {
+      "slug": "cinnyris-mariquensis",
+      "scientificName": "Cinnyris mariquensis",
+      "names": {
+        "en": "Marico Sunbird",
+        "af": "Maricosuikerbekkie"
+      }
+    },
+    {
+      "slug": "cinnyris-talatala",
+      "scientificName": "Cinnyris talatala",
+      "names": {
+        "en": "White-bellied Sunbird",
+        "af": "Witpenssuikerbekkie"
+      }
+    },
+    {
+      "slug": "cyanomitra-olivacea",
+      "scientificName": "Cyanomitra olivacea",
+      "names": {
+        "en": "Olive Sunbird",
+        "af": "Olyfsuikerbekkie"
+      }
+    },
+    {
+      "slug": "hedydipna-collaris",
+      "scientificName": "Hedydipna collaris",
+      "names": {
+        "en": "Collared Sunbird",
+        "af": "Kortbeksuikerbekkie"
+      }
+    },
+    {
+      "slug": "nectarinia-famosa",
+      "scientificName": "Nectarinia famosa",
+      "names": {
+        "en": "Malachite Sunbird",
+        "af": "Jangroentjie"
+      }
+    }
+  ],
   "iconicSpecies": [],
   "population": {
     "low": null,
     "high": null,
     "speciesCounted": 0,
-    "speciesTotal": 0,
+    "speciesTotal": 10,
     "complete": false
   }
 }

@@ -8,13 +8,158 @@
   },
   "summary": "Field notes for this family are still to be written.",
   "sampleData": true,
-  "species": [],
+  "species": [
+    {
+      "slug": "amblyospiza-albifrons",
+      "scientificName": "Amblyospiza albifrons",
+      "names": {
+        "en": "Thick-billed Weaver",
+        "af": "Dikbekwewer"
+      }
+    },
+    {
+      "slug": "bubalornis-niger",
+      "scientificName": "Bubalornis niger",
+      "names": {
+        "en": "Red-billed Buffalo Weaver",
+        "af": "Buffelwewer"
+      }
+    },
+    {
+      "slug": "euplectes-afer",
+      "scientificName": "Euplectes afer",
+      "names": {
+        "en": "Yellow-crowned Bishop",
+        "af": "Goudgeelvink"
+      }
+    },
+    {
+      "slug": "euplectes-albonotatus",
+      "scientificName": "Euplectes albonotatus",
+      "names": {
+        "en": "White-winged Widowbird",
+        "af": "Witvlerkflap"
+      }
+    },
+    {
+      "slug": "euplectes-ardens",
+      "scientificName": "Euplectes ardens",
+      "names": {
+        "en": "Red-collared Widowbird",
+        "af": "Rooikeelflap"
+      }
+    },
+    {
+      "slug": "euplectes-axillaris",
+      "scientificName": "Euplectes axillaris",
+      "names": {
+        "en": "Fan-tailed Widowbird",
+        "af": "Kortstertflap"
+      }
+    },
+    {
+      "slug": "euplectes-orix",
+      "scientificName": "Euplectes orix",
+      "names": {
+        "en": "Southern Red Bishop",
+        "af": "Rooivink"
+      }
+    },
+    {
+      "slug": "plocepasser-mahali",
+      "scientificName": "Plocepasser mahali",
+      "names": {
+        "en": "White-browed Sparrow-Weaver",
+        "af": "Koringvoël"
+      }
+    },
+    {
+      "slug": "ploceus-capensis",
+      "scientificName": "Ploceus capensis",
+      "names": {
+        "en": "Cape Weaver",
+        "af": "Kaapse Wewer"
+      }
+    },
+    {
+      "slug": "ploceus-cucullatus",
+      "scientificName": "Ploceus cucullatus",
+      "names": {
+        "en": "Village Weaver",
+        "af": "Bontrugwewer"
+      }
+    },
+    {
+      "slug": "ploceus-intermedius",
+      "scientificName": "Ploceus intermedius",
+      "names": {
+        "en": "Lesser Masked Weaver",
+        "af": "Kleingeelvink"
+      }
+    },
+    {
+      "slug": "ploceus-ocularis",
+      "scientificName": "Ploceus ocularis",
+      "names": {
+        "en": "Spectacled Weaver",
+        "af": "Brilwewer"
+      }
+    },
+    {
+      "slug": "ploceus-subaureus",
+      "scientificName": "Ploceus subaureus",
+      "names": {
+        "en": "Yellow (Eastern Golden) Weaver",
+        "af": "Geelwewer"
+      }
+    },
+    {
+      "slug": "ploceus-velatus",
+      "scientificName": "Ploceus velatus",
+      "names": {
+        "en": "Southern Masked Weaver",
+        "af": "Swartkeelgeelvink"
+      }
+    },
+    {
+      "slug": "ploceus-xanthops",
+      "scientificName": "Ploceus xanthops",
+      "names": {
+        "en": "African (Holub’s) Golden Weaver",
+        "af": "Goudwewer"
+      }
+    },
+    {
+      "slug": "ploceus-xanthopterus",
+      "scientificName": "Ploceus xanthopterus",
+      "names": {
+        "en": "Southern Brown-throated Weaver",
+        "af": "Bruinkeelwewer"
+      }
+    },
+    {
+      "slug": "quelea-quelea",
+      "scientificName": "Quelea quelea",
+      "names": {
+        "en": "Red-billed Quelea",
+        "af": "Rooibekkwelea"
+      }
+    },
+    {
+      "slug": "sporopipes-squamifrons",
+      "scientificName": "Sporopipes squamifrons",
+      "names": {
+        "en": "Scaly-feathered Finch (Weaver)",
+        "af": "Baardmannetjie"
+      }
+    }
+  ],
   "iconicSpecies": [],
   "population": {
     "low": null,
     "high": null,
     "speciesCounted": 0,
-    "speciesTotal": 0,
+    "speciesTotal": 18,
     "complete": false
   }
 }

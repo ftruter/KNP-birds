@@ -167,7 +167,7 @@ test('a family page shows the derived approximate total', async () => {
     plates: [{ doc: roller, imagesAvailable: {} }],
   })
   assert.match(html, /Approximate total/)
-  assert.match(html, /Includes 0 of 1 species/)
+  assert.match(html, /Includes 0 of 5 species/)
   assert.match(html, /This total is incomplete/)
   assert.match(html, /First to look for/)
   assert.ok(
@@ -180,12 +180,12 @@ test('a family page shows the derived approximate total', async () => {
     { doc: roller, imagesAvailable: {} },
   ])
   assert.match(markdown, /\*\*Approximate total\.\*\*/)
-  assert.match(markdown, /Includes 0 of 1 species/)
+  assert.match(markdown, /Includes 0 of 5 species/)
   assert.match(markdown, /This total is incomplete/)
   assert.match(markdown, /## First to look for/)
 })
 
-test('a family stub lists no species and does not invent an Afrikaans name', async () => {
+test('a family page lists its species and an empty family does not invent an Afrikaans name', async () => {
   const kingfishers = await readJson('data/family/alcedinidae.json')
   const html = renderFamilyHtml({
     origin: 'https://birds.truter.world',
@@ -194,16 +194,39 @@ test('a family stub lists no species and does not invent an Afrikaans name', asy
   })
   assert.match(html, /Kingfishers/)
   assert.match(html, /class="afrikaans">Visvangers</)
-  assert.match(
+  assert.match(html, /href="\/species\/corythornis-cristatus"/)
+  assert.match(html, /Malachite Kingfisher/)
+  assert.doesNotMatch(html, /First to look for/)
+  assert.doesNotMatch(
     html,
     /No species from this family are published in this copy yet/,
   )
-  assert.doesNotMatch(html, /First to look for/)
-  assert.doesNotMatch(html, /<ul class="species-list">/)
   const markdown = renderFamilyMarkdown(kingfishers, [])
   assert.match(markdown, /Visvangers/)
-  assert.match(markdown, /No species from this family are published/)
+  assert.match(
+    markdown,
+    /\[Malachite Kingfisher\]\(\/species\/corythornis-cristatus\)/,
+  )
   assert.doesNotMatch(markdown, /## First to look for/)
+  assert.doesNotMatch(markdown, /No species from this family are published/)
+  const empty = {
+    ...kingfishers,
+    species: [],
+    iconicSpecies: [],
+    commonNames: { en: 'Kingfishers' },
+    population: { ...kingfishers.population, speciesTotal: 0 },
+  }
+  const emptyHtml = renderFamilyHtml({
+    origin: 'https://birds.truter.world',
+    doc: empty,
+    plates: [],
+  })
+  assert.match(
+    emptyHtml,
+    /No species from this family are published in this copy yet/,
+  )
+  assert.doesNotMatch(emptyHtml, /class="afrikaans"/)
+  assert.doesNotMatch(emptyHtml, /<ul class="species-list">/)
 
   const warblers = await readJson('data/family/acrocephalidae.json')
   const unnamed = renderFamilyHtml({

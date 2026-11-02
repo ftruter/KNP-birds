@@ -8,13 +8,94 @@
   },
   "summary": "Field notes for this family are still to be written.",
   "sampleData": true,
-  "species": [],
+  "species": [
+    {
+      "slug": "actitis-hypoleucos",
+      "scientificName": "Actitis hypoleucos",
+      "names": {
+        "en": "Common Sandpiper",
+        "af": "Gewone Ruiter"
+      }
+    },
+    {
+      "slug": "calidris-ferruginea",
+      "scientificName": "Calidris ferruginea",
+      "names": {
+        "en": "Curlew Sandpiper",
+        "af": "Krombekstrandloper"
+      }
+    },
+    {
+      "slug": "calidris-melanotos",
+      "scientificName": "Calidris melanotos",
+      "names": {
+        "en": "Pectoral Sandpiper",
+        "af": "Geelpootstrandloper"
+      }
+    },
+    {
+      "slug": "calidris-minuta",
+      "scientificName": "Calidris minuta",
+      "names": {
+        "en": "Little Stint",
+        "af": "Kleinstrandloper"
+      }
+    },
+    {
+      "slug": "calidris-pugnax",
+      "scientificName": "Calidris pugnax",
+      "names": {
+        "en": "Ruff",
+        "af": "Kemphaan"
+      }
+    },
+    {
+      "slug": "gallinago-nigripennis",
+      "scientificName": "Gallinago nigripennis",
+      "names": {
+        "en": "African Snipe",
+        "af": "Afrikaanse Snip"
+      }
+    },
+    {
+      "slug": "tringa-glareola",
+      "scientificName": "Tringa glareola",
+      "names": {
+        "en": "Wood Sandpiper",
+        "af": "Bosruiter"
+      }
+    },
+    {
+      "slug": "tringa-nebularia",
+      "scientificName": "Tringa nebularia",
+      "names": {
+        "en": "Common Greenshank",
+        "af": "Groenpootruiter"
+      }
+    },
+    {
+      "slug": "tringa-ochropus",
+      "scientificName": "Tringa ochropus",
+      "names": {
+        "en": "Green Sandpiper",
+        "af": "Witgatruiter"
+      }
+    },
+    {
+      "slug": "tringa-stagnatilis",
+      "scientificName": "Tringa stagnatilis",
+      "names": {
+        "en": "Marsh Sandpiper",
+        "af": "Moerasruiter"
+      }
+    }
+  ],
   "iconicSpecies": [],
   "population": {
     "low": null,
     "high": null,
     "speciesCounted": 0,
-    "speciesTotal": 0,
+    "speciesTotal": 10,
     "complete": false
   }
 }

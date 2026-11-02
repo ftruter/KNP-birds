@@ -8,13 +8,54 @@
   },
   "summary": "Field notes for this family are still to be written.",
   "sampleData": true,
-  "species": [],
+  "species": [
+    {
+      "slug": "eurocephalus-anguitimens",
+      "scientificName": "Eurocephalus anguitimens",
+      "names": {
+        "en": "Southern White-crowned Shrike",
+        "af": "Kremetartlaksman"
+      }
+    },
+    {
+      "slug": "lanius-collaris",
+      "scientificName": "Lanius collaris",
+      "names": {
+        "en": "Southern Fiscal",
+        "af": "Fiskaallaksman"
+      }
+    },
+    {
+      "slug": "lanius-collurio",
+      "scientificName": "Lanius collurio",
+      "names": {
+        "en": "Red-backed Shrike",
+        "af": "Rooiruglaksman"
+      }
+    },
+    {
+      "slug": "lanius-minor",
+      "scientificName": "Lanius minor",
+      "names": {
+        "en": "Lesser Grey Shrike",
+        "af": "Gryslaksman"
+      }
+    },
+    {
+      "slug": "urolestes-melanoleucus",
+      "scientificName": "Urolestes melanoleucus",
+      "names": {
+        "en": "Magpie Shrike",
+        "af": "Langstertlaksman"
+      }
+    }
+  ],
   "iconicSpecies": [],
   "population": {
     "low": null,
     "high": null,
     "speciesCounted": 0,
-    "speciesTotal": 0,
+    "speciesTotal": 5,
     "complete": false
   }
 }

@@ -8,13 +8,126 @@
   },
   "summary": "Field notes for this family are still to be written.",
   "sampleData": true,
-  "species": [],
+  "species": [
+    {
+      "slug": "cecropis-abyssinica",
+      "scientificName": "Cecropis abyssinica",
+      "names": {
+        "en": "Lesser Striped Swallow",
+        "af": "Kleinstreepswael"
+      }
+    },
+    {
+      "slug": "cecropis-cucullata",
+      "scientificName": "Cecropis cucullata",
+      "names": {
+        "en": "Greater Striped Swallow",
+        "af": "Grootstreepswael"
+      }
+    },
+    {
+      "slug": "cecropis-semirufa",
+      "scientificName": "Cecropis semirufa",
+      "names": {
+        "en": "Red-breasted Swallow",
+        "af": "Rooiborsswael"
+      }
+    },
+    {
+      "slug": "cecropis-senegalensis",
+      "scientificName": "Cecropis senegalensis",
+      "names": {
+        "en": "Mosque Swallow",
+        "af": "Moskeeswael"
+      }
+    },
+    {
+      "slug": "delichon-urbicum",
+      "scientificName": "Delichon urbicum",
+      "names": {
+        "en": "Western House Martin",
+        "af": "Huisswael"
+      }
+    },
+    {
+      "slug": "hirundo-albigularis",
+      "scientificName": "Hirundo albigularis",
+      "names": {
+        "en": "White-throated Swallow",
+        "af": "Witkeelswael"
+      }
+    },
+    {
+      "slug": "hirundo-dimidiata",
+      "scientificName": "Hirundo dimidiata",
+      "names": {
+        "en": "Pearl-breasted Swallow",
+        "af": "Pêrelborsswael"
+      }
+    },
+    {
+      "slug": "hirundo-rustica",
+      "scientificName": "Hirundo rustica",
+      "names": {
+        "en": "Barn Swallow",
+        "af": "Europese Swael"
+      }
+    },
+    {
+      "slug": "hirundo-smithii",
+      "scientificName": "Hirundo smithii",
+      "names": {
+        "en": "Wire-tailed Swallow",
+        "af": "Draadstertswael"
+      }
+    },
+    {
+      "slug": "neophedina-cincta",
+      "scientificName": "Neophedina cincta",
+      "names": {
+        "en": "Banded Martin",
+        "af": "Gebande Oewerswael"
+      }
+    },
+    {
+      "slug": "pseudhirundo-griseopyga",
+      "scientificName": "Pseudhirundo griseopyga",
+      "names": {
+        "en": "Grey-rumped Swallow",
+        "af": "Gryskruisswael"
+      }
+    },
+    {
+      "slug": "ptyonoprogne-fuligula",
+      "scientificName": "Ptyonoprogne fuligula",
+      "names": {
+        "en": "Large Rock Martin",
+        "af": "Grootkransswael"
+      }
+    },
+    {
+      "slug": "riparia-paludicola",
+      "scientificName": "Riparia paludicola",
+      "names": {
+        "en": "Brown-throated Martin",
+        "af": "Afrikaanse Oewerswael"
+      }
+    },
+    {
+      "slug": "riparia-riparia",
+      "scientificName": "Riparia riparia",
+      "names": {
+        "en": "Sand Martin",
+        "af": "Europese Oewerswael"
+      }
+    }
+  ],
   "iconicSpecies": [],
   "population": {
     "low": null,
     "high": null,
     "speciesCounted": 0,
-    "speciesTotal": 0,
+    "speciesTotal": 14,
     "complete": false
   }
 }

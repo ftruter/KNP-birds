@@ -8,13 +8,22 @@
   },
   "summary": "Field notes for this family are still to be written.",
   "sampleData": true,
-  "species": [],
+  "species": [
+    {
+      "slug": "anthoscopus-caroli",
+      "scientificName": "Anthoscopus caroli",
+      "names": {
+        "en": "Grey Penduline-tit",
+        "af": "Gryskapokvoël"
+      }
+    }
+  ],
   "iconicSpecies": [],
   "population": {
     "low": null,
     "high": null,
     "speciesCounted": 0,
-    "speciesTotal": 0,
+    "speciesTotal": 1,
     "complete": false
   }
 }

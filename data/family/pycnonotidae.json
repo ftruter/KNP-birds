@@ -8,13 +8,54 @@
   },
   "summary": "Field notes for this family are still to be written.",
   "sampleData": true,
-  "species": [],
+  "species": [
+    {
+      "slug": "andropadus-importunus",
+      "scientificName": "Andropadus importunus",
+      "names": {
+        "en": "Sombre Greenbul",
+        "af": "Gewone Willie"
+      }
+    },
+    {
+      "slug": "chlorocichla-flaviventris",
+      "scientificName": "Chlorocichla flaviventris",
+      "names": {
+        "en": "Yellow-bellied Greenbul",
+        "af": "Geelborswillie"
+      }
+    },
+    {
+      "slug": "phyllastrephus-flavostriatus",
+      "scientificName": "Phyllastrephus flavostriatus",
+      "names": {
+        "en": "Yellow-streaked Greenbul",
+        "af": "Geelstreepboskruiper"
+      }
+    },
+    {
+      "slug": "phyllastrephus-terrestris",
+      "scientificName": "Phyllastrephus terrestris",
+      "names": {
+        "en": "Terrestrial Brownbul",
+        "af": "Boskrapper"
+      }
+    },
+    {
+      "slug": "pycnonotus-barbatus",
+      "scientificName": "Pycnonotus barbatus",
+      "names": {
+        "en": "Common (Dark-capped) Bulbul",
+        "af": "Swartoogtiptol"
+      }
+    }
+  ],
   "iconicSpecies": [],
   "population": {
     "low": null,
     "high": null,
     "speciesCounted": 0,
-    "speciesTotal": 0,
+    "speciesTotal": 5,
     "complete": false
   }
 }

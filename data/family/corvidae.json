@@ -8,13 +8,38 @@
   },
   "summary": "Field notes for this family are still to be written.",
   "sampleData": true,
-  "species": [],
+  "species": [
+    {
+      "slug": "corvus-albicollis",
+      "scientificName": "Corvus albicollis",
+      "names": {
+        "en": "White-necked Raven",
+        "af": "Withalskraai"
+      }
+    },
+    {
+      "slug": "corvus-albus",
+      "scientificName": "Corvus albus",
+      "names": {
+        "en": "Pied Crow",
+        "af": "Witborskraai"
+      }
+    },
+    {
+      "slug": "corvus-capensis",
+      "scientificName": "Corvus capensis",
+      "names": {
+        "en": "Cape Crow",
+        "af": "Swartkraai"
+      }
+    }
+  ],
   "iconicSpecies": [],
   "population": {
     "low": null,
     "high": null,
     "speciesCounted": 0,
-    "speciesTotal": 0,
+    "speciesTotal": 3,
     "complete": false
   }
 }

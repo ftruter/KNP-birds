@@ -8,13 +8,134 @@
   },
   "summary": "Field notes for this family are still to be written.",
   "sampleData": true,
-  "species": [],
+  "species": [
+    {
+      "slug": "ardea-alba",
+      "scientificName": "Ardea alba",
+      "names": {
+        "en": "Great Egret",
+        "af": "Grootwitreier"
+      }
+    },
+    {
+      "slug": "ardea-brachyrhyncha",
+      "scientificName": "Ardea brachyrhyncha",
+      "names": {
+        "en": "Yellow-billed Egret",
+        "af": "Geelbekwitreier"
+      }
+    },
+    {
+      "slug": "ardea-cinerea",
+      "scientificName": "Ardea cinerea",
+      "names": {
+        "en": "Grey Heron",
+        "af": "Bloureier"
+      }
+    },
+    {
+      "slug": "ardea-goliath",
+      "scientificName": "Ardea goliath",
+      "names": {
+        "en": "Goliath Heron",
+        "af": "Reusereier"
+      }
+    },
+    {
+      "slug": "ardea-ibis",
+      "scientificName": "Ardea ibis",
+      "names": {
+        "en": "Western Cattle Egret",
+        "af": "Veereier"
+      }
+    },
+    {
+      "slug": "ardea-melanocephala",
+      "scientificName": "Ardea melanocephala",
+      "names": {
+        "en": "Black-headed Heron",
+        "af": "Swartkopreier"
+      }
+    },
+    {
+      "slug": "ardea-purpurea",
+      "scientificName": "Ardea purpurea",
+      "names": {
+        "en": "Purple Heron",
+        "af": "Rooireier"
+      }
+    },
+    {
+      "slug": "ardeola-ralloides",
+      "scientificName": "Ardeola ralloides",
+      "names": {
+        "en": "Squacco Heron",
+        "af": "Ralreier"
+      }
+    },
+    {
+      "slug": "botaurus-minutus",
+      "scientificName": "Botaurus minutus",
+      "names": {
+        "en": "Little Bittern",
+        "af": "Kleinrietreier"
+      }
+    },
+    {
+      "slug": "botaurus-sturmii",
+      "scientificName": "Botaurus sturmii",
+      "names": {
+        "en": "Dwarf Bittern",
+        "af": "Dwergrietreier"
+      }
+    },
+    {
+      "slug": "butorides-atricapilla",
+      "scientificName": "Butorides atricapilla",
+      "names": {
+        "en": "Little Heron",
+        "af": "Groenrugreier"
+      }
+    },
+    {
+      "slug": "calherodius-leuconotus",
+      "scientificName": "Calherodius leuconotus",
+      "names": {
+        "en": "White-backed Night Heron",
+        "af": "Witrugnagreier"
+      }
+    },
+    {
+      "slug": "egretta-ardesiaca",
+      "scientificName": "Egretta ardesiaca",
+      "names": {
+        "en": "Black Heron",
+        "af": "Swartreier"
+      }
+    },
+    {
+      "slug": "egretta-garzetta",
+      "scientificName": "Egretta garzetta",
+      "names": {
+        "en": "Little Egret",
+        "af": "Kleinwitreier"
+      }
+    },
+    {
+      "slug": "nycticorax-nycticorax",
+      "scientificName": "Nycticorax nycticorax",
+      "names": {
+        "en": "Black-crowned Night Heron",
+        "af": "Gewone Nagreier"
+      }
+    }
+  ],
   "iconicSpecies": [],
   "population": {
     "low": null,
     "high": null,
     "speciesCounted": 0,
-    "speciesTotal": 0,
+    "speciesTotal": 15,
     "complete": false
   }
 }

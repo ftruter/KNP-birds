@@ -8,13 +8,22 @@
   },
   "summary": "Field notes for this family are still to be written.",
   "sampleData": true,
-  "species": [],
+  "species": [
+    {
+      "slug": "melaniparus-niger",
+      "scientificName": "Melaniparus niger",
+      "names": {
+        "en": "Southern Black Tit",
+        "af": "Gewone Swartmees"
+      }
+    }
+  ],
   "iconicSpecies": [],
   "population": {
     "low": null,
     "high": null,
     "speciesCounted": 0,
-    "speciesTotal": 0,
+    "speciesTotal": 1,
     "complete": false
   }
 }

@@ -8,13 +8,86 @@
   },
   "summary": "Field notes for this family are still to be written.",
   "sampleData": true,
-  "species": [],
+  "species": [
+    {
+      "slug": "alcedo-semitorquata",
+      "scientificName": "Alcedo semitorquata",
+      "names": {
+        "en": "Half-collared Kingfisher",
+        "af": "Blouvisvanger"
+      }
+    },
+    {
+      "slug": "ceryle-rudis",
+      "scientificName": "Ceryle rudis",
+      "names": {
+        "en": "Pied Kingfisher",
+        "af": "Bontvisvanger"
+      }
+    },
+    {
+      "slug": "corythornis-cristatus",
+      "scientificName": "Corythornis cristatus",
+      "names": {
+        "en": "Malachite Kingfisher",
+        "af": "Kuifkopvisvanger"
+      }
+    },
+    {
+      "slug": "halcyon-albiventris",
+      "scientificName": "Halcyon albiventris",
+      "names": {
+        "en": "Brown-hooded Kingfisher",
+        "af": "Bruinkopvisvanger"
+      }
+    },
+    {
+      "slug": "halcyon-chelicuti",
+      "scientificName": "Halcyon chelicuti",
+      "names": {
+        "en": "Striped Kingfisher",
+        "af": "Gestreepte Visvanger"
+      }
+    },
+    {
+      "slug": "halcyon-leucocephala",
+      "scientificName": "Halcyon leucocephala",
+      "names": {
+        "en": "Grey-headed Kingfisher",
+        "af": "Gryskopvisvanger"
+      }
+    },
+    {
+      "slug": "halcyon-senegalensis",
+      "scientificName": "Halcyon senegalensis",
+      "names": {
+        "en": "Woodland Kingfisher",
+        "af": "Bosveldvisvanger"
+      }
+    },
+    {
+      "slug": "ispidina-picta",
+      "scientificName": "Ispidina picta",
+      "names": {
+        "en": "African Pygmy Kingfisher",
+        "af": "Dwergvisvanger"
+      }
+    },
+    {
+      "slug": "megaceryle-maxima",
+      "scientificName": "Megaceryle maxima",
+      "names": {
+        "en": "Giant Kingfisher",
+        "af": "Reusevisvanger"
+      }
+    }
+  ],
   "iconicSpecies": [],
   "population": {
     "low": null,
     "high": null,
     "speciesCounted": 0,
-    "speciesTotal": 0,
+    "speciesTotal": 9,
     "complete": false
   }
 }

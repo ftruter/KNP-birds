@@ -8,13 +8,62 @@
   },
   "summary": "Field notes for this family are still to be written.",
   "sampleData": true,
-  "species": [],
+  "species": [
+    {
+      "slug": "caprimulgus-europaeus",
+      "scientificName": "Caprimulgus europaeus",
+      "names": {
+        "en": "European Nightjar",
+        "af": "Europese Naguil"
+      }
+    },
+    {
+      "slug": "caprimulgus-fossii",
+      "scientificName": "Caprimulgus fossii",
+      "names": {
+        "en": "Square-tailed Nightjar",
+        "af": "Laeveldnaguil"
+      }
+    },
+    {
+      "slug": "caprimulgus-pectoralis",
+      "scientificName": "Caprimulgus pectoralis",
+      "names": {
+        "en": "Fiery-necked Nightjar",
+        "af": "Afrikaanse Naguil"
+      }
+    },
+    {
+      "slug": "caprimulgus-rufigena",
+      "scientificName": "Caprimulgus rufigena",
+      "names": {
+        "en": "Rufous-cheeked Nightjar",
+        "af": "Rooiwangnaguil"
+      }
+    },
+    {
+      "slug": "caprimulgus-tristigma",
+      "scientificName": "Caprimulgus tristigma",
+      "names": {
+        "en": "Freckled Nightjar",
+        "af": "Donkernaguil"
+      }
+    },
+    {
+      "slug": "caprimulgus-vexillarius",
+      "scientificName": "Caprimulgus vexillarius",
+      "names": {
+        "en": "Pennant-winged Nightjar",
+        "af": "Wimpelvlerknaguil"
+      }
+    }
+  ],
   "iconicSpecies": [],
   "population": {
     "low": null,
     "high": null,
     "speciesCounted": 0,
-    "speciesTotal": 0,
+    "speciesTotal": 6,
     "complete": false
   }
 }

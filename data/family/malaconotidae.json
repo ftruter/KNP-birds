@@ -8,13 +8,110 @@
   },
   "summary": "Field notes for this family are still to be written.",
   "sampleData": true,
-  "species": [],
+  "species": [
+    {
+      "slug": "chlorophoneus-nigrifrons",
+      "scientificName": "Chlorophoneus nigrifrons",
+      "names": {
+        "en": "Black-fronted Bush-shrike",
+        "af": "Swartoogboslaksman"
+      }
+    },
+    {
+      "slug": "chlorophoneus-olivaceus",
+      "scientificName": "Chlorophoneus olivaceus",
+      "names": {
+        "en": "Olive Bush-Shrike",
+        "af": "Olyfboslaksman"
+      }
+    },
+    {
+      "slug": "chlorophoneus-sulfureopectus",
+      "scientificName": "Chlorophoneus sulfureopectus",
+      "names": {
+        "en": "Orange-breasted Bush-Shrike",
+        "af": "Oranjeborsboslaksman"
+      }
+    },
+    {
+      "slug": "dryoscopus-cubla",
+      "scientificName": "Dryoscopus cubla",
+      "names": {
+        "en": "Black-backed Puffback",
+        "af": "Sneeubal"
+      }
+    },
+    {
+      "slug": "laniarius-atrococcineus",
+      "scientificName": "Laniarius atrococcineus",
+      "names": {
+        "en": "Crimson-breasted Shrike",
+        "af": "Rooiborslaksman"
+      }
+    },
+    {
+      "slug": "laniarius-ferrugineus",
+      "scientificName": "Laniarius ferrugineus",
+      "names": {
+        "en": "Southern Boubou",
+        "af": "Suidelike Waterfiskaal"
+      }
+    },
+    {
+      "slug": "laniarius-major",
+      "scientificName": "Laniarius major",
+      "names": {
+        "en": "Tropical Boubou",
+        "af": "Tropiese Waterfiskaal"
+      }
+    },
+    {
+      "slug": "malaconotus-blanchoti",
+      "scientificName": "Malaconotus blanchoti",
+      "names": {
+        "en": "Grey-headed Bush-Shrike",
+        "af": "Spookvoël"
+      }
+    },
+    {
+      "slug": "nilaus-afer",
+      "scientificName": "Nilaus afer",
+      "names": {
+        "en": "Brubru",
+        "af": "Bontroklaksman"
+      }
+    },
+    {
+      "slug": "tchagra-australis",
+      "scientificName": "Tchagra australis",
+      "names": {
+        "en": "Brown-crowned Tchagra",
+        "af": "Rooivlerktjagra"
+      }
+    },
+    {
+      "slug": "tchagra-senegalus",
+      "scientificName": "Tchagra senegalus",
+      "names": {
+        "en": "Black-crowned Tchagra",
+        "af": "Swartkroontjagra"
+      }
+    },
+    {
+      "slug": "telophorus-viridis",
+      "scientificName": "Telophorus viridis",
+      "names": {
+        "en": "Gorgeous Bush-Shrike",
+        "af": "Konkoit"
+      }
+    }
+  ],
   "iconicSpecies": [],
   "population": {
     "low": null,
     "high": null,
     "speciesCounted": 0,
-    "speciesTotal": 0,
+    "speciesTotal": 12,
     "complete": false
   }
 }

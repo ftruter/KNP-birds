@@ -8,13 +8,78 @@
   },
   "summary": "Field notes for this family are still to be written.",
   "sampleData": true,
-  "species": [],
+  "species": [
+    {
+      "slug": "campocolinus-coqui",
+      "scientificName": "Campocolinus coqui",
+      "names": {
+        "en": "Coqui Francolin",
+        "af": "Swempie"
+      }
+    },
+    {
+      "slug": "coturnix-coturnix",
+      "scientificName": "Coturnix coturnix",
+      "names": {
+        "en": "Common Quail",
+        "af": "Afrikaanse Kwartel"
+      }
+    },
+    {
+      "slug": "coturnix-delegorguei",
+      "scientificName": "Coturnix delegorguei",
+      "names": {
+        "en": "Harlequin Quail",
+        "af": "Bontkwartel"
+      }
+    },
+    {
+      "slug": "ortygornis-sephaena",
+      "scientificName": "Ortygornis sephaena",
+      "names": {
+        "en": "Crested Francolin",
+        "af": "Bospatrys"
+      }
+    },
+    {
+      "slug": "pternistis-afer",
+      "scientificName": "Pternistis afer",
+      "names": {
+        "en": "Red-necked Spurfowl",
+        "af": "Rooikeelfisant"
+      }
+    },
+    {
+      "slug": "pternistis-natalensis",
+      "scientificName": "Pternistis natalensis",
+      "names": {
+        "en": "Natal Spurfowl",
+        "af": "Natalse Fisant"
+      }
+    },
+    {
+      "slug": "pternistis-swainsonii",
+      "scientificName": "Pternistis swainsonii",
+      "names": {
+        "en": "Swainson’s Spurfowl",
+        "af": "Bosveldfisant"
+      }
+    },
+    {
+      "slug": "scleroptila-shelleyi",
+      "scientificName": "Scleroptila shelleyi",
+      "names": {
+        "en": "Shelley’s Francolin",
+        "af": "Laeveldpatrys"
+      }
+    }
+  ],
   "iconicSpecies": [],
   "population": {
     "low": null,
     "high": null,
     "speciesCounted": 0,
-    "speciesTotal": 0,
+    "speciesTotal": 8,
     "complete": false
   }
 }

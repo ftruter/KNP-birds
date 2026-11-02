@@ -8,13 +8,86 @@
   },
   "summary": "Field notes for this family are still to be written.",
   "sampleData": true,
-  "species": [],
+  "species": [
+    {
+      "slug": "bubo-africanus",
+      "scientificName": "Bubo africanus",
+      "names": {
+        "en": "Spotted Eagle-Owl",
+        "af": "Gevlekte Ooruil"
+      }
+    },
+    {
+      "slug": "bubo-capensis",
+      "scientificName": "Bubo capensis",
+      "names": {
+        "en": "Cape Eagle-Owl",
+        "af": "Kaapse Ooruil"
+      }
+    },
+    {
+      "slug": "glaucidium-capense",
+      "scientificName": "Glaucidium capense",
+      "names": {
+        "en": "African Barred Owlet",
+        "af": "Gebande Uil"
+      }
+    },
+    {
+      "slug": "glaucidium-perlatum",
+      "scientificName": "Glaucidium perlatum",
+      "names": {
+        "en": "Pearl-spotted Owlet",
+        "af": "Witkoluil"
+      }
+    },
+    {
+      "slug": "ketupa-lactea",
+      "scientificName": "Ketupa lactea",
+      "names": {
+        "en": "Verreaux’s Eagle-Owl",
+        "af": "Reuse-ooruil"
+      }
+    },
+    {
+      "slug": "otus-senegalensis",
+      "scientificName": "Otus senegalensis",
+      "names": {
+        "en": "African Scops Owl",
+        "af": "Skopsuil"
+      }
+    },
+    {
+      "slug": "ptilopsis-granti",
+      "scientificName": "Ptilopsis granti",
+      "names": {
+        "en": "Southern White-faced Owl",
+        "af": "Witwanguil"
+      }
+    },
+    {
+      "slug": "scotopelia-peli",
+      "scientificName": "Scotopelia peli",
+      "names": {
+        "en": "Pel’s Fishing Owl",
+        "af": "Visuil"
+      }
+    },
+    {
+      "slug": "strix-woodfordii",
+      "scientificName": "Strix woodfordii",
+      "names": {
+        "en": "African Wood Owl",
+        "af": "Bosuil"
+      }
+    }
+  ],
   "iconicSpecies": [],
   "population": {
     "low": null,
     "high": null,
     "speciesCounted": 0,
-    "speciesTotal": 0,
+    "speciesTotal": 9,
     "complete": false
   }
 }

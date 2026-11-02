@@ -8,13 +8,86 @@
   },
   "summary": "Field notes for this family are still to be written.",
   "sampleData": true,
-  "species": [],
+  "species": [
+    {
+      "slug": "acridotheres-tristis",
+      "scientificName": "Acridotheres tristis",
+      "names": {
+        "en": "Common Myna",
+        "af": "Indiese Spreeu"
+      }
+    },
+    {
+      "slug": "cinnyricinclus-leucogaster",
+      "scientificName": "Cinnyricinclus leucogaster",
+      "names": {
+        "en": "Violet-backed Starling",
+        "af": "Witborsspreeu"
+      }
+    },
+    {
+      "slug": "creatophora-cinerea",
+      "scientificName": "Creatophora cinerea",
+      "names": {
+        "en": "Wattled Starling",
+        "af": "Lelspreeu"
+      }
+    },
+    {
+      "slug": "lamprotornis-australis",
+      "scientificName": "Lamprotornis australis",
+      "names": {
+        "en": "Burchell’s Starling",
+        "af": "Grootglansspreeu"
+      }
+    },
+    {
+      "slug": "lamprotornis-chalybaeus",
+      "scientificName": "Lamprotornis chalybaeus",
+      "names": {
+        "en": "Greater Blue-eared Starling",
+        "af": "Groot-blouoorglansspreeu"
+      }
+    },
+    {
+      "slug": "lamprotornis-mevesii",
+      "scientificName": "Lamprotornis mevesii",
+      "names": {
+        "en": "Meves’s Starling",
+        "af": "Langstertglansspreeu"
+      }
+    },
+    {
+      "slug": "lamprotornis-nitens",
+      "scientificName": "Lamprotornis nitens",
+      "names": {
+        "en": "Cape (Glossy) Starling",
+        "af": "Kleinglansspreeu"
+      }
+    },
+    {
+      "slug": "notopholia-corusca",
+      "scientificName": "Notopholia corusca",
+      "names": {
+        "en": "Black-bellied Starling",
+        "af": "Swartpensglansspreeu"
+      }
+    },
+    {
+      "slug": "onychognathus-morio",
+      "scientificName": "Onychognathus morio",
+      "names": {
+        "en": "Red-winged Starling",
+        "af": "Rooivlerkspreeu"
+      }
+    }
+  ],
   "iconicSpecies": [],
   "population": {
     "low": null,
     "high": null,
     "speciesCounted": 0,
-    "speciesTotal": 0,
+    "speciesTotal": 9,
     "complete": false
   }
 }

@@ -8,13 +8,46 @@
   },
   "summary": "Field notes for this family are still to be written.",
   "sampleData": true,
-  "species": [],
+  "species": [
+    {
+      "slug": "turdus-libonyana",
+      "scientificName": "Turdus libonyana",
+      "names": {
+        "en": "Kurrichane Thrush",
+        "af": "Rooibeklyster"
+      }
+    },
+    {
+      "slug": "turdus-litsitsirupa",
+      "scientificName": "Turdus litsitsirupa",
+      "names": {
+        "en": "Groundscraper Thrush",
+        "af": "Gevlekte Lyster"
+      }
+    },
+    {
+      "slug": "turdus-olivaceus",
+      "scientificName": "Turdus olivaceus",
+      "names": {
+        "en": "Olive Thrush",
+        "af": "Olyflyster"
+      }
+    },
+    {
+      "slug": "turdus-smithi",
+      "scientificName": "Turdus smithi",
+      "names": {
+        "en": "Karoo Thrush",
+        "af": "Geelbeklyster"
+      }
+    }
+  ],
   "iconicSpecies": [],
   "population": {
     "low": null,
     "high": null,
     "speciesCounted": 0,
-    "speciesTotal": 0,
+    "speciesTotal": 4,
     "complete": false
   }
 }

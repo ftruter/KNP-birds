@@ -8,13 +8,126 @@
   },
   "summary": "Field notes for this family are still to be written.",
   "sampleData": true,
-  "species": [],
+  "species": [
+    {
+      "slug": "centropus-burchellii",
+      "scientificName": "Centropus burchellii",
+      "names": {
+        "en": "Burchell’s Coucal",
+        "af": "Gewone Vleiloerie"
+      }
+    },
+    {
+      "slug": "centropus-grillii",
+      "scientificName": "Centropus grillii",
+      "names": {
+        "en": "Black Coucal",
+        "af": "Swartvleiloerie"
+      }
+    },
+    {
+      "slug": "centropus-senegalensis",
+      "scientificName": "Centropus senegalensis",
+      "names": {
+        "en": "Senegal Coucal",
+        "af": "Senegalvleiloerie"
+      }
+    },
+    {
+      "slug": "chrysococcyx-caprius",
+      "scientificName": "Chrysococcyx caprius",
+      "names": {
+        "en": "Diederik Cuckoo",
+        "af": "Diederikkie"
+      }
+    },
+    {
+      "slug": "chrysococcyx-cupreus",
+      "scientificName": "Chrysococcyx cupreus",
+      "names": {
+        "en": "African Emerald Cuckoo",
+        "af": "Mooimeisie"
+      }
+    },
+    {
+      "slug": "chrysococcyx-klaas",
+      "scientificName": "Chrysococcyx klaas",
+      "names": {
+        "en": "Klaas’s Cuckoo",
+        "af": "Meitjie"
+      }
+    },
+    {
+      "slug": "clamator-glandarius",
+      "scientificName": "Clamator glandarius",
+      "names": {
+        "en": "Great Spotted Cuckoo",
+        "af": "Gevlekte Koekoek"
+      }
+    },
+    {
+      "slug": "clamator-jacobinus",
+      "scientificName": "Clamator jacobinus",
+      "names": {
+        "en": "Jacobin Cuckoo",
+        "af": "Bontnuwejaarsvoël"
+      }
+    },
+    {
+      "slug": "clamator-levaillantii",
+      "scientificName": "Clamator levaillantii",
+      "names": {
+        "en": "Levaillant’s Cuckoo",
+        "af": "Gestreepte Nuwejaarsvoël"
+      }
+    },
+    {
+      "slug": "cuculus-canorus",
+      "scientificName": "Cuculus canorus",
+      "names": {
+        "en": "Common Cuckoo",
+        "af": "Europese Koekoek"
+      }
+    },
+    {
+      "slug": "cuculus-clamosus",
+      "scientificName": "Cuculus clamosus",
+      "names": {
+        "en": "Black Cuckoo",
+        "af": "Swartkoekoek"
+      }
+    },
+    {
+      "slug": "cuculus-gularis",
+      "scientificName": "Cuculus gularis",
+      "names": {
+        "en": "African Cuckoo",
+        "af": "Afrikaanse Koekoek"
+      }
+    },
+    {
+      "slug": "cuculus-solitarius",
+      "scientificName": "Cuculus solitarius",
+      "names": {
+        "en": "Red-chested Cuckoo",
+        "af": "Piet-my-vrou"
+      }
+    },
+    {
+      "slug": "pachycoccyx-audeberti",
+      "scientificName": "Pachycoccyx audeberti",
+      "names": {
+        "en": "Thick-billed Cuckoo",
+        "af": "Dikbekkoekoek"
+      }
+    }
+  ],
   "iconicSpecies": [],
   "population": {
     "low": null,
     "high": null,
     "speciesCounted": 0,
-    "speciesTotal": 0,
+    "speciesTotal": 14,
     "complete": false
   }
 }

@@ -8,13 +8,158 @@
   },
   "summary": "Field notes for this family are still to be written.",
   "sampleData": true,
-  "species": [],
+  "species": [
+    {
+      "slug": "amadina-erythrocephala",
+      "scientificName": "Amadina erythrocephala",
+      "names": {
+        "en": "Red-headed Finch",
+        "af": "Rooikopvink"
+      }
+    },
+    {
+      "slug": "amadina-fasciata",
+      "scientificName": "Amadina fasciata",
+      "names": {
+        "en": "Cut-throat Finch",
+        "af": "Bandkeelvink"
+      }
+    },
+    {
+      "slug": "amandava-subflava",
+      "scientificName": "Amandava subflava",
+      "names": {
+        "en": "Orange-breasted Waxbill",
+        "af": "Rooiassie"
+      }
+    },
+    {
+      "slug": "brunhilda-erythronotos",
+      "scientificName": "Brunhilda erythronotos",
+      "names": {
+        "en": "Black-faced Waxbill",
+        "af": "Swartwangsysie"
+      }
+    },
+    {
+      "slug": "coccopygia-melanotis",
+      "scientificName": "Coccopygia melanotis",
+      "names": {
+        "en": "Swee Waxbill",
+        "af": "Suidelike Swie"
+      }
+    },
+    {
+      "slug": "estrilda-astrild",
+      "scientificName": "Estrilda astrild",
+      "names": {
+        "en": "Common Waxbill",
+        "af": "Rooibeksysie"
+      }
+    },
+    {
+      "slug": "granatina-granatina",
+      "scientificName": "Granatina granatina",
+      "names": {
+        "en": "Violet-eared Waxbill",
+        "af": "Koningblousysie"
+      }
+    },
+    {
+      "slug": "hypargos-margaritatus",
+      "scientificName": "Hypargos margaritatus",
+      "names": {
+        "en": "Pink-throated Twinspot",
+        "af": "Rooskeelkolpensie"
+      }
+    },
+    {
+      "slug": "lagonosticta-rhodopareia",
+      "scientificName": "Lagonosticta rhodopareia",
+      "names": {
+        "en": "Jameson’s Firefinch",
+        "af": "Jamesonvuurvinkie"
+      }
+    },
+    {
+      "slug": "lagonosticta-rubricata",
+      "scientificName": "Lagonosticta rubricata",
+      "names": {
+        "en": "African Firefinch",
+        "af": "Kaapse Vuurvinkie"
+      }
+    },
+    {
+      "slug": "lagonosticta-senegala",
+      "scientificName": "Lagonosticta senegala",
+      "names": {
+        "en": "Red-billed Firefinch",
+        "af": "Rooibekvuurvinkie"
+      }
+    },
+    {
+      "slug": "ortygospiza-atricollis",
+      "scientificName": "Ortygospiza atricollis",
+      "names": {
+        "en": "Quailfinch",
+        "af": "Gewone Kwartelvinkie"
+      }
+    },
+    {
+      "slug": "pytilia-afra",
+      "scientificName": "Pytilia afra",
+      "names": {
+        "en": "Orange-winged Pytilia",
+        "af": "Oranjevlerkmelba"
+      }
+    },
+    {
+      "slug": "pytilia-melba",
+      "scientificName": "Pytilia melba",
+      "names": {
+        "en": "Green-winged Pytilia",
+        "af": "Gewone Melba"
+      }
+    },
+    {
+      "slug": "spermestes-bicolor",
+      "scientificName": "Spermestes bicolor",
+      "names": {
+        "en": "Red-backed Mannikin",
+        "af": "Rooirugfret"
+      }
+    },
+    {
+      "slug": "spermestes-cucullata",
+      "scientificName": "Spermestes cucullata",
+      "names": {
+        "en": "Bronze Mannikin",
+        "af": "Gewone Fret"
+      }
+    },
+    {
+      "slug": "spermestes-fringilloides",
+      "scientificName": "Spermestes fringilloides",
+      "names": {
+        "en": "Magpie Mannikin",
+        "af": "Dikbekfret"
+      }
+    },
+    {
+      "slug": "uraeginthus-angolensis",
+      "scientificName": "Uraeginthus angolensis",
+      "names": {
+        "en": "Blue Waxbill",
+        "af": "Gewone Blousysie"
+      }
+    }
+  ],
   "iconicSpecies": [],
   "population": {
     "low": null,
     "high": null,
     "speciesCounted": 0,
-    "speciesTotal": 0,
+    "speciesTotal": 18,
     "complete": false
   }
 }

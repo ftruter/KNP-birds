@@ -8,13 +8,118 @@
   },
   "summary": "Field notes for this family are still to be written.",
   "sampleData": true,
-  "species": [],
+  "species": [
+    {
+      "slug": "alopochen-aegyptiaca",
+      "scientificName": "Alopochen aegyptiaca",
+      "names": {
+        "en": "Egyptian Goose",
+        "af": "Kolgans"
+      }
+    },
+    {
+      "slug": "anas-capensis",
+      "scientificName": "Anas capensis",
+      "names": {
+        "en": "Cape Teal",
+        "af": "Teeleend"
+      }
+    },
+    {
+      "slug": "anas-erythrorhyncha",
+      "scientificName": "Anas erythrorhyncha",
+      "names": {
+        "en": "Red-billed Teal",
+        "af": "Rooibekeend"
+      }
+    },
+    {
+      "slug": "anas-sparsa",
+      "scientificName": "Anas sparsa",
+      "names": {
+        "en": "African Black Duck",
+        "af": "Swarteend"
+      }
+    },
+    {
+      "slug": "anas-undulata",
+      "scientificName": "Anas undulata",
+      "names": {
+        "en": "Yellow-billed Duck",
+        "af": "Geelbekeend"
+      }
+    },
+    {
+      "slug": "dendrocygna-bicolor",
+      "scientificName": "Dendrocygna bicolor",
+      "names": {
+        "en": "Fulvous Whistling Duck",
+        "af": "Fluiteend"
+      }
+    },
+    {
+      "slug": "dendrocygna-viduata",
+      "scientificName": "Dendrocygna viduata",
+      "names": {
+        "en": "White-faced Whistling Duck",
+        "af": "Nonnetjie-eend"
+      }
+    },
+    {
+      "slug": "netta-erythrophthalma",
+      "scientificName": "Netta erythrophthalma",
+      "names": {
+        "en": "Southern Pochard",
+        "af": "Bruineend"
+      }
+    },
+    {
+      "slug": "nettapus-auritus",
+      "scientificName": "Nettapus auritus",
+      "names": {
+        "en": "African Pygmy Goose",
+        "af": "Dwerggans"
+      }
+    },
+    {
+      "slug": "plectropterus-gambensis",
+      "scientificName": "Plectropterus gambensis",
+      "names": {
+        "en": "Spur-winged Goose",
+        "af": "Wildemakou"
+      }
+    },
+    {
+      "slug": "sarkidiornis-melanotos",
+      "scientificName": "Sarkidiornis melanotos",
+      "names": {
+        "en": "Knob-billed Duck",
+        "af": "Knobbeleend"
+      }
+    },
+    {
+      "slug": "spatula-hottentota",
+      "scientificName": "Spatula hottentota",
+      "names": {
+        "en": "Blue-billed Teal",
+        "af": "Gevlekte Eend"
+      }
+    },
+    {
+      "slug": "thalassornis-leuconotus",
+      "scientificName": "Thalassornis leuconotus",
+      "names": {
+        "en": "White-backed Duck",
+        "af": "Witrugeend"
+      }
+    }
+  ],
   "iconicSpecies": [],
   "population": {
     "low": null,
     "high": null,
     "speciesCounted": 0,
-    "speciesTotal": 0,
+    "speciesTotal": 13,
     "complete": false
   }
 }

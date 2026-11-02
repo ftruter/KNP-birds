@@ -10,7 +10,8 @@
  * prints the files as they are. Derived fields are not edited by hand.
  * `npm run deploy` always derives first and uploads the remote namespace.
  * A family index population is 0 when no species estimate is known. A species
- * index population stays null in that case.
+ * index population stays null in that case. iconicSpecies is empty when no
+ * species in the family has an estimate.
  * Keys:
  *   data/species/<slug>.json → species/<slug>
  *   data/family/<slug>.json  → family/<slug>
@@ -72,22 +73,21 @@ export const totalMidpoint = (population) => {
 const compareScientificName = (a, b) =>
   a.localeCompare(b, 'en', { sensitivity: 'base' }) || a.localeCompare(b, 'en')
 
-/** Up to three slugs: estimated birds first (highest midpoint), then unestimated, then scientific name. */
-export const iconicSpecies = (speciesDocs) => {
-  const ranked = speciesDocs.slice().sort((a, b) => {
-    const aMid = individualMidpoint(a)
-    const bMid = individualMidpoint(b)
-    const aKnown = aMid != null
-    const bKnown = bMid != null
-    if (aKnown !== bKnown) return aKnown ? -1 : 1
-    if (aKnown && bKnown && aMid !== bMid) return bMid - aMid
-    return (
-      compareScientificName(a.scientificName, b.scientificName) ||
-      a.slug.localeCompare(b.slug)
-    )
-  })
-  return ranked.slice(0, 3).map((species) => species.slug)
-}
+/** Up to three slugs, highest population midpoint first. Species with no estimate are left out. */
+export const iconicSpecies = (speciesDocs) =>
+  speciesDocs
+    .filter((species) => individualMidpoint(species) != null)
+    .slice()
+    .sort((a, b) => {
+      const aMid = individualMidpoint(a)
+      const bMid = individualMidpoint(b)
+      return aMid !== bMid
+        ? bMid - aMid
+        : compareScientificName(a.scientificName, b.scientificName) ||
+            a.slug.localeCompare(b.slug)
+    })
+    .slice(0, 3)
+    .map((species) => species.slug)
 
 export const indexValue = (names, population) => ({
   en: names.en,

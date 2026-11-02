@@ -148,19 +148,40 @@ test('derived family and index fields match the species files', async () => {
     assert.equal(family.population.speciesCounted, 0)
     assert.equal(family.population.low, null)
     assert.equal(family.population.high, null)
-    assert.deepEqual(
-      family.iconicSpecies,
-      family.species.map((item) => item.slug),
-    )
+    assert.deepEqual(family.iconicSpecies, [])
+    assert.ok(family.species.length >= 1, family.slug)
   }
   const speciesKeys = Object.keys(derived.speciesIndex)
-  assert.deepEqual(speciesKeys, [
-    'Bucorvus leadbeateri',
-    'Coracias caudatus',
-    'Haliaeetus vocifer',
-  ])
+  assert.equal(speciesKeys.length, 493)
   assert.equal(derived.speciesIndex['Coracias caudatus'].population, null)
+  assert.equal(
+    derived.speciesIndex['Icthyophaga vocifer'].en,
+    'African Fish Eagle',
+  )
+  assert.equal(derived.speciesIndex['Haliaeetus vocifer'], undefined)
   assert.equal(derived.speciesIndex['Coraciidae'], undefined)
+  for (const value of Object.values(derived.speciesIndex))
+    assert.equal(value.population, null)
+})
+
+test('the derived species index matches the committed index and every species family exists', async () => {
+  const { species, families } = await readCatalog()
+  const derived = deriveAll(species, families)
+  assert.deepEqual(
+    await readJson('data/index/species.json'),
+    derived.speciesIndex,
+  )
+  const familySlugs = new Set(families.map((family) => family.slug))
+  assert.equal(familySlugs.size, 86)
+  for (const bird of species) {
+    assert.equal(familySlugs.has(bird.family), true, bird.slug)
+    assert.equal(
+      bird.family,
+      bird.family.trim().toLowerCase().replaceAll(' ', '-'),
+    )
+  }
+  assert.equal(species.length, 493)
+  assert.equal(Object.keys(derived.speciesIndex).length, 493)
 })
 
 test('seed --write reproduces the committed families index and keeps unknown species populations null', async () => {
@@ -180,6 +201,10 @@ test('seed --write reproduces the committed families index and keeps unknown spe
       await readJson('data/index/families.json'),
     )
     assert.equal(derived.speciesIndex['Coracias caudatus'].population, null)
+    assert.deepEqual(
+      derived.speciesIndex,
+      await readJson('data/index/species.json'),
+    )
   } finally {
     await rm(dir, { recursive: true, force: true })
   }
@@ -258,7 +283,7 @@ test('family totals count pairs as two individuals and stay incomplete while any
   })
 })
 
-test('iconic species put the highest midpoint first and cap the list at three', () => {
+test('iconic species are the top three by population and stay empty when none is known', () => {
   const bird = (slug, scientificName, low, high, unit) => ({
     slug,
     scientificName,
@@ -267,10 +292,19 @@ test('iconic species put the highest midpoint first and cap the list at three', 
   const ranked = iconicSpecies([
     bird('few', 'Zzz zzz', 1, 1, 'individuals'),
     bird('many', 'Mmm mmm', 10, 12, 'pairs'),
+    bird('mid', 'Qqq qqq', 4, 4, 'individuals'),
+    bird('also', 'Rrr rrr', 3, 3, 'individuals'),
     bird('none-b', 'Bbb bbb', null, null, null),
     bird('none-a', 'Aaa aaa', null, null, null),
   ])
-  assert.deepEqual(ranked, ['many', 'few', 'none-a'])
+  assert.deepEqual(ranked, ['many', 'mid', 'also'])
+  assert.deepEqual(
+    iconicSpecies([
+      bird('none-b', 'Bbb bbb', null, null, null),
+      bird('none-a', 'Aaa aaa', null, null, null),
+    ]),
+    [],
+  )
 })
 
 test('family lists and indexes agree', async () => {

@@ -8,13 +8,30 @@
   },
   "summary": "Field notes for this family are still to be written.",
   "sampleData": true,
-  "species": [],
+  "species": [
+    {
+      "slug": "guttera-edouardi",
+      "scientificName": "Guttera edouardi",
+      "names": {
+        "en": "Southern Crested Guineafowl",
+        "af": "Kuifkoptarentaal"
+      }
+    },
+    {
+      "slug": "numida-meleagris",
+      "scientificName": "Numida meleagris",
+      "names": {
+        "en": "Helmeted Guineafowl",
+        "af": "Gewone Tarentaal"
+      }
+    }
+  ],
   "iconicSpecies": [],
   "population": {
     "low": null,
     "high": null,
     "speciesCounted": 0,
-    "speciesTotal": 0,
+    "speciesTotal": 2,
     "complete": false
   }
 }

@@ -8,13 +8,54 @@
   },
   "summary": "Field notes for this family are still to be written.",
   "sampleData": true,
-  "species": [],
+  "species": [
+    {
+      "slug": "bycanistes-bucinator",
+      "scientificName": "Bycanistes bucinator",
+      "names": {
+        "en": "Trumpeter Hornbill",
+        "af": "Gewone Boskraai"
+      }
+    },
+    {
+      "slug": "lophoceros-alboterminatus",
+      "scientificName": "Lophoceros alboterminatus",
+      "names": {
+        "en": "Crowned Hornbill",
+        "af": "Gekroonde Neushoringvoël"
+      }
+    },
+    {
+      "slug": "lophoceros-nasutus",
+      "scientificName": "Lophoceros nasutus",
+      "names": {
+        "en": "African Grey Hornbill",
+        "af": "Grysneushoringvoël"
+      }
+    },
+    {
+      "slug": "tockus-leucomelas",
+      "scientificName": "Tockus leucomelas",
+      "names": {
+        "en": "Southern Yellow-billed Hornbill",
+        "af": "Geelbekneushoringvoël"
+      }
+    },
+    {
+      "slug": "tockus-rufirostris",
+      "scientificName": "Tockus rufirostris",
+      "names": {
+        "en": "Southern Red-billed Hornbill",
+        "af": "Rooibekneushoringvoël"
+      }
+    }
+  ],
   "iconicSpecies": [],
   "population": {
     "low": null,
     "high": null,
     "speciesCounted": 0,
-    "speciesTotal": 0,
+    "speciesTotal": 5,
     "complete": false
   }
 }

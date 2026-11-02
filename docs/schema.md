@@ -136,7 +136,7 @@ The page says "The details for this species have not been published yet." It doe
 
 `species` is every species whose `family` slug matches, sorted by scientific name. Each item is `{ slug, scientificName, names: { en, af } }`. `names.af` is omitted when the species has no Afrikaans name. A family page can list them without reading every species document. The array may be empty when no species from that family are published yet. `iconicSpecies` is then empty too. The page says that no species from the family are published in this copy, and it omits the Afrikaans line when `commonNames.af` is absent. It does not invent a name.
 
-`iconicSpecies` is an ordered list of up to three species slugs from that family. Species with an estimate come first, most prevalent first. Prevalence is the midpoint of `low` and `high` after converting to individuals (`pairs` and `breeding pairs` count as two). Species with no estimate follow, and ties are broken by scientific name, case-insensitive. The family page shows these species, and their photographs, before the rest of the list.
+`iconicSpecies` is an ordered list of up to three species slugs from that family, the ones with the highest population. Prevalence is the midpoint of `low` and `high` after converting to individuals (`pairs` and `breeding pairs` count as two). Species with no estimate are left out. When none of the species has an estimate, `iconicSpecies` is empty, including when the family has no published species yet. Ties are broken by scientific name, case-insensitive. The family page shows these species, and their photographs, before the rest of the list.
 
 `population` is an approximate total for the family:
 
