@@ -86,12 +86,16 @@ test('species HTML has the six comparisons, population, and no client script', a
   assert.match(html, /class="population"/)
   assert.match(html, /Approximate estimate/)
   assert.match(html, /No numeric estimate yet/)
-  assert.match(html, /to be researched/)
-  assert.match(html, /No sources cited yet/)
-  assert.match(html, /Sample content, to be verified/)
+  assert.match(html, /Months in Kruger/)
+  assert.match(html, /All year/)
+  assert.match(html, /Habitat/)
+  assert.match(html, /Similar species/)
+  assert.match(html, /<h2>Sources<\/h2>/)
+  assert.match(html, /Not stored on this site yet/)
+  assert.match(html, /<img /)
+  assert.doesNotMatch(html, /Sample content, to be verified/)
   assert.match(html, /rel="alternate" type="text\/markdown"/)
   assert.match(html, /rel="alternate" type="application\/json"/)
-  assert.match(html, /No photograph is stored for this species yet/)
   assert.doesNotMatch(html, /<script/i)
   assert.doesNotMatch(html, /\sstyle=/)
   const headings = [...html.matchAll(/<h([1-6])\b/g)].map((match) =>
@@ -464,8 +468,13 @@ test('the credits page names sources, taxonomy, and the site, and credits media 
     /href="https:\/\/creativecommons\.org\/licenses\/by-sa\/4\.0\/"/,
   )
   assert.match(html, /IOC \/ BirdLife South Africa/)
-  assert.match(html, /No photos or recordings have been added so far/)
-  assert.match(markdown, /No photos or recordings have been added so far/)
+  assert.match(html, /keep their own licences/)
+  assert.match(markdown, /keep their own licences/)
+  assert.doesNotMatch(html, /No photos or recordings have been added so far/)
+  assert.doesNotMatch(
+    markdown,
+    /No photos or recordings have been added so far/,
+  )
   assert.match(html, /Apache License 2\.0/)
   assert.match(html, /href="https:\/\/github\.com\/ftruter\/KNP-birds"/)
   assert.match(html, /href="https:\/\/github\.com\/ftruter"/)
@@ -476,7 +485,8 @@ test('the credits page names sources, taxonomy, and the site, and credits media 
   assert.match(html, /no implied endorsement/)
   assert.match(html, /isn&#39;t affiliated with SANParks/)
   assert.match(markdown, /isn't affiliated with SANParks/)
-  assert.doesNotMatch(html, /CC BY-NC|All rights reserved|public domain/i)
+  assert.doesNotMatch(html, /All rights reserved/i)
+  assert.match(html, /CC BY-NC-SA 4\.0/)
   const headings = [...html.matchAll(/<h([1-6])\b/g)].map((match) =>
     Number(match[1]),
   )
@@ -544,6 +554,6 @@ test('the credits page names sources, taxonomy, and the site, and credits media 
   assert.match(mediaMd, /AI-generated image/)
   assert.match(mediaMd, /#### Photographs/)
   assert.match(mediaMd, /#### Recordings/)
-  assert.match(mediaMd, /#### Population sources/)
+  assert.match(mediaMd, /#### Sources/)
   assert.match(mediaMd, /A field note/)
 })

@@ -7,8 +7,95 @@
     "af": "Europese Troupant"
   },
   "family": "coraciidae",
-  "summary": "The details for this species have not been published yet.",
-  "sampleData": true,
+  "status": "palearctic-migrant",
+  "monthsPresent": [
+    10,
+    11,
+    12,
+    1,
+    2,
+    3,
+    4,
+    5
+  ],
+  "size": {
+    "lengthCm": {
+      "min": 29,
+      "max": 32
+    },
+    "note": "Collins Bird Guide gives 29–32 cm. Newman's Birds gives 30–31 cm."
+  },
+  "habitat": "Open woodland, bushveld, and grassland with perches, including the eastern lowveld. It avoids open arid country.",
+  "summary": "A Palearctic migrant that spends the non-breeding season in Kruger. Most birds are present from December to March, with arrivals from October and occasional birds into May. Adults are pale blue or greenish on the head and underparts, with a brown back, blue wings tipped blue-black, and no tail streamers. The sexes look alike. The juvenile is a drabber version of the adult; part-by-part juvenile colours are not published in the sources used here, and the chick is not described.",
+  "sampleData": false,
+  "similar": [
+    {
+      "slug": "coracias-caudatus",
+      "note": "Lilac-breasted Roller has a lilac breast and long straight tail streamers. European Roller has neither."
+    },
+    {
+      "slug": "coracias-spatulatus",
+      "note": "Racket-tailed Roller has spatulate tips on the outer tail feathers. European Roller has no tail streamers."
+    },
+    {
+      "slug": "coracias-naevius",
+      "note": "Purple Roller has a white eyebrow and purple underparts streaked white, on a square tail."
+    },
+    {
+      "slug": "eurystomus-glaucurus",
+      "note": "Broad-billed Roller has a broad yellow bill and cinnamon upperparts."
+    }
+  ],
+  "sources": [
+    {
+      "title": "European roller",
+      "url": "https://en.wikipedia.org/wiki/European_roller",
+      "publisher": "Wikipedia",
+      "year": 2026
+    },
+    {
+      "title": "European Roller",
+      "url": "https://newmansbirds.com/birds/european-roller/",
+      "publisher": "Newman's Birds",
+      "year": null
+    },
+    {
+      "title": "European Roller. The atlas of southern African birds",
+      "url": "https://sabap2.adu.org.za/docs/sabap1/446.pdf",
+      "publisher": "Avian Demography Unit",
+      "year": 1997
+    },
+    {
+      "title": "Coracias garrulus (European roller)",
+      "url": "https://www.biodiversityexplorer.info/birds/coraciidae/coracias_garrulus.htm",
+      "publisher": "Biodiversity Explorer",
+      "year": null
+    },
+    {
+      "title": "Web-sourced photographic methods reveal dietary composition and shifts in resident and migrant Coracias rollers in southern Africa",
+      "url": "https://doi.org/10.15641/bo.1227",
+      "publisher": "Biodiversity Observations",
+      "year": 2023
+    },
+    {
+      "title": "European Roller species factsheet",
+      "url": "https://datazone.birdlife.org/species/factsheet/european-roller-coracias-garrulus",
+      "publisher": "BirdLife International",
+      "year": 2019
+    },
+    {
+      "title": "Birds of Kruger National Park – a checklist",
+      "url": "https://birda.org/kruger-national-park-birding-checklist/",
+      "publisher": "Birda",
+      "year": 2026
+    },
+    {
+      "title": "Birds checklist – Kruger National Park",
+      "url": "https://www.sanparks.org/parks/kruger/explore/fauna-flora/birds/checklist",
+      "publisher": "SANParks",
+      "year": null
+    }
+  ],
   "population": {
     "estimate": {
       "low": null,
@@ -18,11 +105,191 @@
     "trend": "unknown",
     "confidence": null,
     "asOf": null,
-    "notes": "to be researched",
-    "sources": []
+    "notes": "No Kruger census figure was found. The Birda SABAP2 Kruger checklist, consulted on 2 November 2026, lists 6,526 records, which are atlas records and not birds. BirdLife (2019) places the global population in the band 100,000–499,999 mature individuals and treats the global trend as decreasing. SABAP1 reported roadside densities for Namibia and Botswana, not for Kruger. No Kruger range is entered. The Kruger trend is unknown; the global decline is not treated as a park trend.",
+    "sources": [
+      {
+        "title": "Birds of Kruger National Park – a checklist",
+        "url": "https://birda.org/kruger-national-park-birding-checklist/",
+        "publisher": "Birda",
+        "year": 2026
+      },
+      {
+        "title": "European Roller species factsheet",
+        "url": "https://datazone.birdlife.org/species/factsheet/european-roller-coracias-garrulus",
+        "publisher": "BirdLife International",
+        "year": 2019
+      },
+      {
+        "title": "European Roller. The atlas of southern African birds",
+        "url": "https://sabap2.adu.org.za/docs/sabap1/446.pdf",
+        "publisher": "Avian Demography Unit",
+        "year": 1997
+      },
+      {
+        "title": "Birds checklist – Kruger National Park",
+        "url": "https://www.sanparks.org/parks/kruger/explore/fauna-flora/birds/checklist",
+        "publisher": "SANParks",
+        "year": null
+      }
+    ]
   },
-  "variants": [],
-  "viewNotes": [],
-  "calls": [],
-  "images": []
+  "variants": [
+    {
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "marks": {
+        "bill": {
+          "colour": null,
+          "shape": null
+        },
+        "eye": {
+          "iris": null,
+          "ring": null
+        },
+        "legs": {
+          "colour": null
+        },
+        "head": {
+          "crown": [
+            "blue",
+            "green"
+          ],
+          "face": [
+            "blue",
+            "green"
+          ],
+          "throat": [
+            "blue",
+            "green"
+          ]
+        },
+        "upperparts": {
+          "back": [
+            "brown",
+            "orange"
+          ],
+          "rump": null
+        },
+        "underparts": {
+          "breast": [
+            "blue",
+            "green"
+          ],
+          "belly": [
+            "blue",
+            "green"
+          ]
+        },
+        "wings": {
+          "above": [
+            "blue",
+            "black"
+          ],
+          "below": [
+            "blue",
+            "black"
+          ]
+        },
+        "tail": {
+          "colour": null,
+          "shape": "no streamers"
+        }
+      }
+    }
+  ],
+  "viewNotes": [
+    {
+      "view": "flight-above",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Brown back and electric-blue wings, with blue-black ends to the flight feathers. There are no tail streamers."
+    },
+    {
+      "view": "flight-below",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Pale blue underparts and blue flight feathers ending blue-black. The texts used here do not give the underwing a separate colour from the upperwing."
+    },
+    {
+      "view": "perched-front",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Pale blue or greenish head and underparts face the viewer, without a lilac breast."
+    },
+    {
+      "view": "perched-back",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Brown upperparts and a tail without streamers."
+    },
+    {
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Pale blue or greenish head and underparts, a brown back, and no tail streamers."
+    }
+  ],
+  "calls": [
+    {
+      "sex": "any",
+      "type": "call",
+      "description": "Mostly silent in southern Africa, sometimes a harsh 'rack-kack, kacker'; the sexes are described as similar and are not given different calls.",
+      "recordings": [
+        {
+          "key": "xeno-canto/XC634335",
+          "source": "https://xeno-canto.org/634335",
+          "fileUrl": "https://xeno-canto.org/sounds/uploaded/AVYPWXFRAR/XC634335-rla..mp3.mp3",
+          "author": "paulo kivuyo",
+          "license": "CC BY-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ]
+    },
+    {
+      "sex": "any",
+      "type": "alarm",
+      "description": "A harsh, crow-like call, given as a raucous series when alarmed.",
+      "recordings": []
+    }
+  ],
+  "images": [
+    {
+      "key": "coracias-garrulus/perched-side.jpg",
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "source": "https://commons.wikimedia.org/wiki/File:Scharrelaar_-_European_roller_-_Coracias_garrulus.jpg",
+      "fileUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/33/Scharrelaar_-_European_roller_-_Coracias_garrulus.jpg/1280px-Scharrelaar_-_European_roller_-_Coracias_garrulus.jpg",
+      "author": "Bouke ten Cate",
+      "license": "CC BY 4.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by/4.0/",
+      "aiGenerated": false,
+      "hosted": false,
+      "alt": "European Roller perched side-on, without tail streamers"
+    },
+    {
+      "key": "coracias-garrulus/flight-below.jpg",
+      "view": "flight-below",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "source": "https://commons.wikimedia.org/wiki/File:European_roller_(Coracias_garrulus)_in_flight.jpg",
+      "fileUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/40/European_roller_%28Coracias_garrulus%29_in_flight.jpg/1280px-European_roller_%28Coracias_garrulus%29_in_flight.jpg",
+      "author": "Charles J. Sharp",
+      "license": "CC BY-SA 4.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "aiGenerated": false,
+      "hosted": false,
+      "alt": "European Roller in flight, showing the pale underside and dark wing tips"
+    }
+  ]
 }

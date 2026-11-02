@@ -178,17 +178,20 @@ export const deriveFamiliesIndex = (familyDocs) =>
 const textOrNull = (value) =>
   typeof value === 'string' && value.trim() ? value.trim() : null
 
-const creditFrom = (item) =>
-  textOrNull(item?.key)
-    ? {
-        key: textOrNull(item.key),
-        author: textOrNull(item.author),
-        licence: textOrNull(item.licence ?? item.license),
-        licenceUrl: textOrNull(item.licenceUrl),
-        sourceUrl: textOrNull(item.sourceUrl ?? item.source),
-        aiGenerated: item.aiGenerated === true,
-      }
-    : null
+const creditFrom = (item) => {
+  const key = textOrNull(item?.key)
+  if (!key) return null
+  const credit = {
+    key,
+    author: textOrNull(item.author),
+    licence: textOrNull(item.licence ?? item.license),
+    licenceUrl: textOrNull(item.licenceUrl),
+    sourceUrl: textOrNull(item.sourceUrl ?? item.source),
+    aiGenerated: item.aiGenerated === true,
+  }
+  if (item.hosted === false) credit.hosted = false
+  return credit
+}
 
 const taggedCredit = (credit, callType) =>
   callType ? { ...credit, callType } : credit
@@ -208,23 +211,28 @@ const imageCredits = (species) =>
     .map(creditFrom)
     .filter(Boolean)
 
-const citedSources = (species) =>
-  (Array.isArray(species?.population?.sources)
+const citedSources = (species) => {
+  const populationSources = Array.isArray(species?.population?.sources)
     ? species.population.sources
     : []
-  ).flatMap((source) => {
+  const speciesSources = Array.isArray(species?.sources) ? species.sources : []
+  const seen = new Set()
+  return populationSources.concat(speciesSources).flatMap((source) => {
     const title = textOrNull(source?.title)
-    return title
-      ? [
-          {
-            title,
-            url: textOrNull(source.url),
-            publisher: textOrNull(source.publisher),
-            year: Number.isInteger(source.year) ? source.year : null,
-          },
-        ]
-      : []
+    const url = textOrNull(source?.url)
+    const identity = `${title || ''}|${url || ''}`
+    if (!title || seen.has(identity)) return []
+    seen.add(identity)
+    return [
+      {
+        title,
+        url,
+        publisher: textOrNull(source.publisher),
+        year: Number.isInteger(source.year) ? source.year : null,
+      },
+    ]
   })
+}
 
 const speciesCredits = (species) => {
   const images = imageCredits(species)
@@ -320,6 +328,8 @@ const SITE = {
   palette:
     'The green and gold are inspired by the SANParks green and the Springbok gold. The palette is colour inspiration only, with no implied endorsement.',
   affiliation: "This site isn't affiliated with SANParks.",
+  media:
+    'Photographs and recordings keep their own licences. They are not covered by the Apache-2.0 licence of this code. The site is non-commercial: it has no ads, no subscriptions, and no paywall.',
 }
 
 export const NO_MEDIA_NOTE = 'No photos or recordings have been added so far.'

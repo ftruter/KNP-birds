@@ -20,6 +20,8 @@ import {
   imageAlt,
   indexPopulationLine,
   indexRows,
+  licenceForbidsDerivatives,
+  monthsLabel,
   objectPath,
   orderFamilySpecies,
   populationModel,
@@ -153,15 +155,17 @@ export const renderSpeciesMarkdown = ({ doc, colourMap }) => {
     ? `${doc.summary || ''}
 
 - Status: ${statusLabel(doc.status)}
-- Size: ${sizeLabel(doc.size) || 'Not recorded'}
-
+${monthsLabel(doc.monthsPresent) ? `- Months in Kruger: ${monthsLabel(doc.monthsPresent)}\n` : ''}- Size: ${sizeLabel(doc.size) || 'Not recorded'}
+${doc.habitat ? `- Habitat: ${doc.habitat}\n` : ''}
 ## Photographs
 
 ${images.length === 0 ? '_No photograph is stored for this species yet._' : images.map((image) => imageMarkdown(doc, image)).join('\n\n')}
 
 ## Telling it apart
 
-${comparisons.map((section) => comparisonMarkdown(section, colourMap)).join('\n\n')}`
+${comparisons.map((section) => comparisonMarkdown(section, colourMap)).join('\n\n')}
+${similarMarkdown(doc)}
+${sourcesMarkdown(doc.sources)}`
     : UNPUBLISHED_SPECIES
   const body = `_${doc.scientificName}_ · [${familyLabel(doc.family)}](/family/${doc.family})${status}
 
@@ -292,10 +296,23 @@ const callLines = (calls) =>
         .map((call) => {
           const recordings = (call.recordings || [])
             .map((recording) => {
-              const href = recording.key
-                ? objectPath('audio', recording.key)
-                : ''
-              return href ? ` Recording: ${href}.` : ''
+              const hosted = recording.hosted !== false && recording.key
+              const href = hosted ? objectPath('audio', recording.key) : ''
+              const source = safeHttpUrl(recording.source)
+              const fileUrl =
+                safeHttpUrl(recording.fileUrl) &&
+                !licenceForbidsDerivatives(recording.license)
+                  ? recording.fileUrl
+                  : ''
+              const bits = [
+                href ? `Recording: ${href}` : '',
+                recording.author || '',
+                recording.license || '',
+                source ? `Source: ${source}` : '',
+                fileUrl ? `File: ${fileUrl}` : '',
+                hosted ? '' : 'Not stored on this site.',
+              ].filter(Boolean)
+              return bits.length ? ` ${bits.join('. ')}.` : ''
             })
             .join('')
           return `- ${CALL_TYPE[call.type] || 'Call'}: ${call.description || ''}${recordings}`
@@ -308,7 +325,48 @@ const imageMarkdown = (doc, image) => {
     ? 'AI-generated image'
     : 'Photograph, not AI-generated'
   const source = safeHttpUrl(image.source)
-  return `![${alt}](${objectPath('images', image.key)})\n\n${label}. ${viewLabel(image.view)}. ${[image.author, image.license].filter(Boolean).join('. ')}${source ? `. Source: ${source}` : ''}`
+  const remote =
+    image.hosted === false &&
+    safeHttpUrl(image.fileUrl) &&
+    !licenceForbidsDerivatives(image.license)
+      ? image.fileUrl
+      : ''
+  const src = remote || objectPath('images', image.key)
+  const stored = remote ? ' Not stored on this site yet.' : ''
+  return `![${alt}](${src})\n\n${label}. ${viewLabel(image.view)}. ${[image.author, image.license].filter(Boolean).join('. ')}${source ? `. Source: ${source}` : ''}.${stored}`
+}
+
+const scientificFromSlug = (slug) => {
+  const parts = String(slug || '').split('-')
+  const genus = parts[0] || ''
+  const species = parts.slice(1).join('-')
+  return genus
+    ? `${genus.charAt(0).toUpperCase()}${genus.slice(1)} ${species}`.trim()
+    : ''
+}
+
+const similarMarkdown = (doc) => {
+  const items = Array.isArray(doc?.similar) ? doc.similar : []
+  return items.length === 0
+    ? ''
+    : `## Similar species
+
+${items
+  .map((item) => {
+    const name = scientificFromSlug(item?.slug)
+    const link = item?.slug ? `[${name}](/species/${item.slug})` : name
+    return `- ${link}. ${item?.note || ''}`
+  })
+  .join('\n')}`
+}
+
+const sourcesMarkdown = (sources) => {
+  const list = Array.isArray(sources) ? sources : []
+  return list.length === 0
+    ? ''
+    : `## Sources
+
+${list.map((source) => sourceLine(source)).join('\n')}`
 }
 
 const sourceLine = (source) => {
@@ -378,7 +436,7 @@ ${items
   .map((item) =>
     kind === 'source'
       ? `- ${mdCitation(item)}`
-      : `- [${item.key}](${objectPath(kind === 'recording' ? 'audio' : 'images', item.key)}). ${mdCall(item)}${mdAttribution(item, kind)}`,
+      : `- ${item?.hosted === false ? '' : `[${item.key}](${objectPath(kind === 'recording' ? 'audio' : 'images', item.key)}). `}${mdCall(item)}${mdAttribution(item, kind)}`,
   )
   .join('\n')}`
 
@@ -403,7 +461,7 @@ const mdSpecies = (group) =>
 
 ${mdCredits(listed(group.images), 'image', 'Photographs')}
 ${mdCredits(listed(group.recordings), 'recording', 'Recordings')}
-${mdCredits(listed(group.sources), 'source', 'Population sources')}`
+${mdCredits(listed(group.sources), 'source', 'Sources')}`
 
 const mdSite = (site) => {
   const licenceName =
@@ -424,7 +482,9 @@ Built and maintained by ${maintainer}.
 
 ${inlineText(site.palette || '')}
 
-${inlineText(site.affiliation || '')}`
+${inlineText(site.affiliation || '')}
+
+${inlineText(site.media || '')}`
 }
 
 export const renderCreditsMarkdown = (doc) => {

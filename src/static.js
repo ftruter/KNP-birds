@@ -75,6 +75,8 @@ The six comparisons on a species page are derived, not stored as prose:
 5. Perched: optional notes tagged \`perched-front\`, \`perched-back\` and \`perched-side\`.
 6. Calls: the \`calls\` array, grouped by sex. Each call has \`sex\`, \`type\` (song, call, alarm, contact, duet, other), a short \`description\`, and optional \`recordings\`.
 
+\`status\` is \`resident\`, \`intra-african-migrant\`, or \`palearctic-migrant\`. \`monthsPresent\` lists the months the bird is in Kruger. \`habitat\` and \`similar\` are optional. \`sources\` is the bibliography for the species text.
+
 When both sides are described and no mark differs, the page says "No visible difference".
 
 A species with empty \`variants\`, \`viewNotes\`, \`calls\`, and \`images\` has not had its field details published. The page says "The details for this species have not been published yet." and skips those sections. \`status\` and \`size\` may be omitted until they are known. \`population\` is still present, with null figures. The Afrikaans line is omitted when \`af\` is missing.
@@ -87,7 +89,7 @@ Each family embeds its species and a population total. \`iconicSpecies\` is up t
 
 \`index/species\` and \`index/families\` are JSON objects. The keys are scientific names, in case-insensitive alphabetical order, so a search can narrow as someone types. Each value is exactly \`{ "en", "af", "population" }\`. For a species, \`population\` is the midpoint in individuals, or \`null\` when unknown. For a family it is that midpoint, or \`0\` when no species estimate is known yet. \`af\` is \`null\` when there is no Afrikaans name. The URL slug is the key in lowercase with spaces turned into hyphens (\`Coracias caudatus\` becomes \`coracias-caudatus\`).
 
-Images carry \`view\`, \`age\`, \`sex\`, \`season\`, \`source\`, \`author\`, \`license\`, an optional \`licenceUrl\`, and \`aiGenerated\`. The page labels AI-generated images in the caption. Recordings use the same attribution fields. \`aiGenerated\` is optional on a recording.
+Images carry \`view\`, \`age\`, \`sex\`, \`season\`, \`source\`, \`author\`, \`license\`, an optional \`licenceUrl\`, and \`aiGenerated\`. \`fileUrl\` and \`hosted: false\` mean the file is not in the bucket yet: the page shows the source file when the licence allows it. Recordings use the same attribution fields. \`aiGenerated\` is optional on a recording. Photograph and recording licences stay with each file. They are not covered by the Apache-2.0 licence of the code. The page policy allows those HTTPS images and audio files. It still allows no scripts.
 
 \`index/credits\` is derived with the indexes. It lists the checklists behind the family and species lists, the IOC / BirdLife South Africa naming, photograph and recording credit grouped by species, and the Apache-2.0 licence for this site.
 

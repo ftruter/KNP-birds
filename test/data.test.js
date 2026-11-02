@@ -81,14 +81,14 @@ test('every data file matches the schema, slugs, and colour vocabulary', async (
         assert.deepEqual(Object.keys(value), ['en', 'af', 'population'])
       }
     } else if (entry.key !== 'index/credits') {
-      assert.equal(data.sampleData, true, entry.key)
+      const sourced =
+        entry.key === 'family/coraciidae' ||
+        entry.key.startsWith('species/coracias-') ||
+        entry.key === 'species/eurystomus-glaucurus'
+      assert.equal(data.sampleData, !sourced, entry.key)
     }
   }
-  for (const slug of [
-    'coracias-caudatus',
-    'icthyophaga-vocifer',
-    'bucorvus-leadbeateri',
-  ]) {
+  for (const slug of ['icthyophaga-vocifer', 'bucorvus-leadbeateri']) {
     const species = await readJson(`data/species/${slug}.json`)
     const unknown = collectColourTokens(species).filter(
       (token) => !names.has(token),
@@ -103,6 +103,14 @@ test('every data file matches the schema, slugs, and colour vocabulary', async (
     assert.equal(species.population.asOf, null)
     assert.equal(species.images.length, 0)
   }
+  const roller = await readJson('data/species/coracias-caudatus.json')
+  assert.equal(roller.sampleData, false)
+  assert.equal(roller.population.estimate.low, null)
+  assert.equal(roller.population.estimate.high, null)
+  assert.equal(roller.population.trend, 'unknown')
+  assert.ok(roller.population.sources.length > 0)
+  assert.ok(roller.sources.length > 0)
+  assert.ok(roller.images.length > 0)
 })
 
 test('derived family and index fields match the species files', async () => {

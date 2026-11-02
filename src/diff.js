@@ -36,14 +36,23 @@ const noticeFor = (status, missing) =>
       ? missing
       : null
 
-const noteMap = (viewNotes) => {
+const noteText = (entry) =>
+  typeof entry?.note === 'string' ? entry.note.trim() : ''
+
+const groupedNotes = (viewNotes, age) => {
   const map = {}
+  const extras = []
   for (const entry of Array.isArray(viewNotes) ? viewNotes : []) {
-    if (!entry?.view || typeof entry.note !== 'string') continue
-    const text = entry.note.trim()
-    if (text) map[entry.view] = text
+    const text = noteText(entry)
+    if (!entry?.view || !text) continue
+    const entryAge = entry.age || 'any'
+    if (!age || entryAge === 'any' || entryAge === age) {
+      if (!map[entry.view] || entryAge === age) map[entry.view] = text
+    } else if (AGE_LABEL[entryAge]) {
+      extras.push({ view: entry.view, label: AGE_LABEL[entryAge], text })
+    }
   }
-  return map
+  return { map, extras }
 }
 
 const ageSnapshot = (variants, age, group, field) => {
@@ -301,11 +310,23 @@ const wingPair = (variants) => {
   return { above: null, below: null, age: null }
 }
 
+const flightExtraNotes = (extras) =>
+  extras
+    .filter(
+      (item) => item.view === 'flight-above' || item.view === 'flight-below',
+    )
+    .map((item) => ({
+      label: `${item.label}, ${item.view === 'flight-above' ? 'from above' : 'from below'}`,
+      text: item.text,
+    }))
+
 export const diffFlight = (variants, viewNotes) => {
-  const notes = noteMap(viewNotes)
+  const wingsForNotes = wingPair(variants)
+  const grouped = groupedNotes(viewNotes, wingsForNotes.age || 'adult')
+  const notes = grouped.map
   const aboveNote = notes['flight-above'] || ''
   const belowNote = notes['flight-below'] || ''
-  const wings = wingPair(variants)
+  const wings = wingsForNotes
   const rows = []
   let status = 'not-described'
   if (wings.above && wings.below) {
@@ -334,7 +355,8 @@ export const diffFlight = (variants, viewNotes) => {
   })).filter((row) => row.text)
   const sharedNote = aboveNote && aboveNote === belowNote ? aboveNote : ''
   const notesDiffer = noteRows.length > 0 && !sharedNote
-  if (notesDiffer) status = 'differs'
+  const extraNotes = flightExtraNotes(grouped.extras)
+  if (notesDiffer || extraNotes.length > 0) status = 'differs'
   return {
     id: 'flight',
     title: 'In flight, from above vs from below',
@@ -345,7 +367,7 @@ export const diffFlight = (variants, viewNotes) => {
     ),
     columns: rows.length > 0 ? ['From above', 'From below'] : [],
     rows,
-    notes: notesDiffer ? noteRows : [],
+    notes: notesDiffer ? noteRows.concat(extraNotes) : extraNotes,
     sharedNote:
       status === 'no-visible-difference'
         ? sharedNote
@@ -356,11 +378,26 @@ export const diffFlight = (variants, viewNotes) => {
 }
 
 export const diffPerched = (viewNotes) => {
-  const notes = noteMap(viewNotes)
+  const tagged = (Array.isArray(viewNotes) ? viewNotes : []).some(
+    (entry) => entry?.age === 'adult',
+  )
+  const grouped = groupedNotes(viewNotes, tagged ? 'adult' : null)
+  const notes = grouped.map
   const filled = PERCHED_VIEWS.map(([id, label]) => ({
     label,
     text: notes[id] || '',
   })).filter((row) => row.text)
+  const perchedSide = {
+    'perched-front': 'front',
+    'perched-back': 'back',
+    'perched-side': 'side',
+  }
+  const extraNotes = grouped.extras
+    .filter((item) => perchedSide[item.view])
+    .map((item) => ({
+      label: `${item.label}, ${perchedSide[item.view]}`,
+      text: item.text,
+    }))
   const unique = new Set(filled.map((row) => row.text))
   let status = 'no-visible-difference'
   let sharedNote = ''
@@ -381,7 +418,7 @@ export const diffPerched = (viewNotes) => {
     notice: status === 'no-visible-difference' ? NO_VISIBLE_DIFFERENCE : null,
     columns: [],
     rows: [],
-    notes: noteRows,
+    notes: noteRows.concat(extraNotes),
     sharedNote,
   }
 }

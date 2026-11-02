@@ -64,7 +64,8 @@ test('pages are served in html, markdown, and json', async () => {
   )
   const data = await json.json()
   assert.equal(data.scientificName, 'Coracias caudatus')
-  assert.equal(data.population.notes, 'to be researched')
+  assert.equal(data.population.estimate.low, null)
+  assert.match(data.population.notes, /no formal bird census/i)
 
   const colours = await site.fetch('/vocab/colours')
   assert.equal(colours.status, 200)
@@ -266,7 +267,9 @@ test('credits is served in html, markdown, and json from index/credits', async (
   assert.equal(html.headers.get('content-type'), 'text/html; charset=utf-8')
   const body = await html.text()
   assert.match(body, /<h1>Credits<\/h1>/)
-  assert.match(body, /No photos or recordings have been added so far/)
+  assert.match(body, /keep their own licences/)
+  assert.match(body, /Lilac-breasted Roller/)
+  assert.doesNotMatch(body, /No photos or recordings have been added so far/)
   assert.doesNotMatch(body, /<script/i)
   assert.match(html.headers.get('link') || '', /\/credits\.md/)
   const markdown = await site.fetch('/credits.md')
@@ -279,11 +282,9 @@ test('credits is served in html, markdown, and json from index/credits', async (
   assert.equal(json.kind, 'credits')
   assert.equal(json.site.maintainer, 'ftruter')
   assert.equal(json.site.licence, 'Apache-2.0')
-  assert.equal(
-    json.mediaNote,
-    'No photos or recordings have been added so far.',
-  )
-  assert.deepEqual(json.species, [])
+  assert.equal(json.mediaNote, null)
+  assert.ok(json.species.some((item) => item.slug === 'coracias-caudatus'))
+  assert.match(json.site.media, /not covered by the Apache-2.0/)
 })
 
 test('a new data version misses the Cache API', async () => {
