@@ -8,13 +8,38 @@
   },
   "summary": "Field notes for this family are still to be written.",
   "sampleData": true,
-  "species": [],
+  "species": [
+    {
+      "slug": "campephaga-flava",
+      "scientificName": "Campephaga flava",
+      "names": {
+        "en": "Black Cuckooshrike",
+        "af": "Swartkatakoeroe"
+      }
+    },
+    {
+      "slug": "ceblepyris-caesius",
+      "scientificName": "Ceblepyris caesius",
+      "names": {
+        "en": "Grey Cuckooshrike",
+        "af": "Bloukatakoeroe"
+      }
+    },
+    {
+      "slug": "ceblepyris-pectoralis",
+      "scientificName": "Ceblepyris pectoralis",
+      "names": {
+        "en": "White-breasted Cuckooshrike",
+        "af": "Witborskatakoeroe"
+      }
+    }
+  ],
   "iconicSpecies": [],
   "population": {
     "low": null,
     "high": null,
     "speciesCounted": 0,
-    "speciesTotal": 0,
+    "speciesTotal": 3,
     "complete": false
   }
 }

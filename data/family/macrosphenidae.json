@@ -7,13 +7,30 @@
   },
   "summary": "Field notes for this family are still to be written.",
   "sampleData": true,
-  "species": [],
+  "species": [
+    {
+      "slug": "sphenoeacus-afer",
+      "scientificName": "Sphenoeacus afer",
+      "names": {
+        "en": "Cape Grassbird",
+        "af": "Grasvoël"
+      }
+    },
+    {
+      "slug": "sylvietta-rufescens",
+      "scientificName": "Sylvietta rufescens",
+      "names": {
+        "en": "Long-billed Crombec",
+        "af": "Bosveldstompstert"
+      }
+    }
+  ],
   "iconicSpecies": [],
   "population": {
     "low": null,
     "high": null,
     "speciesCounted": 0,
-    "speciesTotal": 0,
+    "speciesTotal": 2,
     "complete": false
   }
 }

@@ -8,13 +8,86 @@
   },
   "summary": "Field notes for this family are still to be written.",
   "sampleData": true,
-  "species": [],
+  "species": [
+    {
+      "slug": "amirafra-rufocinnamomea",
+      "scientificName": "Amirafra rufocinnamomea",
+      "names": {
+        "en": "Flappet Lark",
+        "af": "Laeveldklappertjie"
+      }
+    },
+    {
+      "slug": "calandrella-cinerea",
+      "scientificName": "Calandrella cinerea",
+      "names": {
+        "en": "Red-capped Lark",
+        "af": "Rooikoplewerik"
+      }
+    },
+    {
+      "slug": "calendulauda-africanoides",
+      "scientificName": "Calendulauda africanoides",
+      "names": {
+        "en": "Fawn-coloured Lark",
+        "af": "Vaalbruinlewerik"
+      }
+    },
+    {
+      "slug": "calendulauda-sabota",
+      "scientificName": "Calendulauda sabota",
+      "names": {
+        "en": "Sabota Lark",
+        "af": "Sabotalewerik"
+      }
+    },
+    {
+      "slug": "corypha-africana",
+      "scientificName": "Corypha africana",
+      "names": {
+        "en": "Rufous-naped Lark",
+        "af": "Rooineklewerik"
+      }
+    },
+    {
+      "slug": "eremopterix-leucotis",
+      "scientificName": "Eremopterix leucotis",
+      "names": {
+        "en": "Chestnut-backed Sparrow-Lark",
+        "af": "Rooiruglewerik"
+      }
+    },
+    {
+      "slug": "eremopterix-verticalis",
+      "scientificName": "Eremopterix verticalis",
+      "names": {
+        "en": "Grey-backed Sparrow-lark",
+        "af": "Grysruglewerik"
+      }
+    },
+    {
+      "slug": "mirafra-passerina",
+      "scientificName": "Mirafra passerina",
+      "names": {
+        "en": "Monotonous Lark",
+        "af": "Bosveldlewerik"
+      }
+    },
+    {
+      "slug": "pinarocorys-nigricans",
+      "scientificName": "Pinarocorys nigricans",
+      "names": {
+        "en": "Dusky Lark",
+        "af": "Donkerlewerik"
+      }
+    }
+  ],
   "iconicSpecies": [],
   "population": {
     "low": null,
     "high": null,
     "speciesCounted": 0,
-    "speciesTotal": 0,
+    "speciesTotal": 9,
     "complete": false
   }
 }

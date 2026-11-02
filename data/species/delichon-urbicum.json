@@ -1,0 +1,28 @@
+{
+  "kind": "species",
+  "slug": "delichon-urbicum",
+  "scientificName": "Delichon urbicum",
+  "commonNames": {
+    "en": "Western House Martin",
+    "af": "Huisswael"
+  },
+  "family": "hirundinidae",
+  "summary": "The details for this species have not been published yet.",
+  "sampleData": true,
+  "population": {
+    "estimate": {
+      "low": null,
+      "high": null
+    },
+    "unit": null,
+    "trend": "unknown",
+    "confidence": null,
+    "asOf": null,
+    "notes": "to be researched",
+    "sources": []
+  },
+  "variants": [],
+  "viewNotes": [],
+  "calls": [],
+  "images": []
+}

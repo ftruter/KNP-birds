@@ -9,22 +9,332 @@
   "sampleData": true,
   "species": [
     {
-      "slug": "haliaeetus-vocifer",
-      "scientificName": "Haliaeetus vocifer",
+      "slug": "accipiter-ovampensis",
+      "scientificName": "Accipiter ovampensis",
+      "names": {
+        "en": "Ovambo Sparrowhawk",
+        "af": "Ovambosperwer"
+      }
+    },
+    {
+      "slug": "aerospiza-tachiro",
+      "scientificName": "Aerospiza tachiro",
+      "names": {
+        "en": "African Goshawk",
+        "af": "Afrikaanse Sperwer"
+      }
+    },
+    {
+      "slug": "aquila-nipalensis",
+      "scientificName": "Aquila nipalensis",
+      "names": {
+        "en": "Steppe Eagle",
+        "af": "Steppe-arend"
+      }
+    },
+    {
+      "slug": "aquila-rapax",
+      "scientificName": "Aquila rapax",
+      "names": {
+        "en": "Tawny Eagle",
+        "af": "Roofarend"
+      }
+    },
+    {
+      "slug": "aquila-spilogaster",
+      "scientificName": "Aquila spilogaster",
+      "names": {
+        "en": "African Hawk Eagle",
+        "af": "Grootjagarend"
+      }
+    },
+    {
+      "slug": "aquila-verreauxii",
+      "scientificName": "Aquila verreauxii",
+      "names": {
+        "en": "Verreaux’s Eagle",
+        "af": "Witkruisarend"
+      }
+    },
+    {
+      "slug": "astur-melanoleucus",
+      "scientificName": "Astur melanoleucus",
+      "names": {
+        "en": "Black Sparrowhawk",
+        "af": "Swartsperwer"
+      }
+    },
+    {
+      "slug": "aviceda-cuculoides",
+      "scientificName": "Aviceda cuculoides",
+      "names": {
+        "en": "African Cuckoo Hawk",
+        "af": "Koekoekvalk"
+      }
+    },
+    {
+      "slug": "buteo-buteo",
+      "scientificName": "Buteo buteo",
+      "names": {
+        "en": "Common (Steppe) Buzzard",
+        "af": "Bruinjakkalsvoël"
+      }
+    },
+    {
+      "slug": "buteo-rufofuscus",
+      "scientificName": "Buteo rufofuscus",
+      "names": {
+        "en": "Jackal Buzzard",
+        "af": "Rooiborsjakkalsvoël"
+      }
+    },
+    {
+      "slug": "buteo-trizonatus",
+      "scientificName": "Buteo trizonatus",
+      "names": {
+        "en": "Forest Buzzard",
+        "af": "Bosjakkalsvoël"
+      }
+    },
+    {
+      "slug": "circaetus-cinereus",
+      "scientificName": "Circaetus cinereus",
+      "names": {
+        "en": "Brown Snake Eagle",
+        "af": "Bruinslangarend"
+      }
+    },
+    {
+      "slug": "circaetus-pectoralis",
+      "scientificName": "Circaetus pectoralis",
+      "names": {
+        "en": "Black-chested Snake Eagle",
+        "af": "Swartborsslangarend"
+      }
+    },
+    {
+      "slug": "circus-macrourus",
+      "scientificName": "Circus macrourus",
+      "names": {
+        "en": "Pallid Harrier",
+        "af": "Witborsvleivalk"
+      }
+    },
+    {
+      "slug": "circus-pygargus",
+      "scientificName": "Circus pygargus",
+      "names": {
+        "en": "Montagu’s Harrier",
+        "af": "Blouvleivalk"
+      }
+    },
+    {
+      "slug": "circus-ranivorus",
+      "scientificName": "Circus ranivorus",
+      "names": {
+        "en": "African Marsh Harrier",
+        "af": "Afrikaanse Vleivalk"
+      }
+    },
+    {
+      "slug": "clanga-pomarina",
+      "scientificName": "Clanga pomarina",
+      "names": {
+        "en": "Lesser Spotted Eagle",
+        "af": "Gevlekte Arend"
+      }
+    },
+    {
+      "slug": "elanus-caeruleus",
+      "scientificName": "Elanus caeruleus",
+      "names": {
+        "en": "Black-winged Kite",
+        "af": "Blouvalk"
+      }
+    },
+    {
+      "slug": "gypohierax-angolensis",
+      "scientificName": "Gypohierax angolensis",
+      "names": {
+        "en": "Palm-nut Vulture",
+        "af": "Witaasvoël"
+      }
+    },
+    {
+      "slug": "gyps-africanus",
+      "scientificName": "Gyps africanus",
+      "names": {
+        "en": "White-backed Vulture",
+        "af": "Witrugaasvoël"
+      }
+    },
+    {
+      "slug": "gyps-coprotheres",
+      "scientificName": "Gyps coprotheres",
+      "names": {
+        "en": "Cape Vulture",
+        "af": "Kransaasvoël"
+      }
+    },
+    {
+      "slug": "hieraaetus-pennatus",
+      "scientificName": "Hieraaetus pennatus",
+      "names": {
+        "en": "Booted Eagle",
+        "af": "Dwergarend"
+      }
+    },
+    {
+      "slug": "hieraaetus-wahlbergi",
+      "scientificName": "Hieraaetus wahlbergi",
+      "names": {
+        "en": "Wahlberg’s Eagle",
+        "af": "Bruinarend"
+      }
+    },
+    {
+      "slug": "icthyophaga-vocifer",
+      "scientificName": "Icthyophaga vocifer",
       "names": {
         "en": "African Fish Eagle",
         "af": "Visarend"
       }
+    },
+    {
+      "slug": "kaupifalco-monogrammicus",
+      "scientificName": "Kaupifalco monogrammicus",
+      "names": {
+        "en": "Lizard Buzzard",
+        "af": "Akkedisvalk"
+      }
+    },
+    {
+      "slug": "lophaetus-occipitalis",
+      "scientificName": "Lophaetus occipitalis",
+      "names": {
+        "en": "Long-crested Eagle",
+        "af": "Langkuifarend"
+      }
+    },
+    {
+      "slug": "macheiramphus-alcinus",
+      "scientificName": "Macheiramphus alcinus",
+      "names": {
+        "en": "Bat Hawk",
+        "af": "Vlermuisvalk"
+      }
+    },
+    {
+      "slug": "melierax-metabates",
+      "scientificName": "Melierax metabates",
+      "names": {
+        "en": "Dark Chanting Goshawk",
+        "af": "Donkersingvalk"
+      }
+    },
+    {
+      "slug": "micronisus-gabar",
+      "scientificName": "Micronisus gabar",
+      "names": {
+        "en": "Gabar Goshawk",
+        "af": "Witkruissperwer"
+      }
+    },
+    {
+      "slug": "milvus-migrans",
+      "scientificName": "Milvus migrans",
+      "names": {
+        "en": "Black Kite",
+        "af": "Swartwou"
+      }
+    },
+    {
+      "slug": "necrosyrtes-monachus",
+      "scientificName": "Necrosyrtes monachus",
+      "names": {
+        "en": "Hooded Vulture",
+        "af": "Monnikaasvoël"
+      }
+    },
+    {
+      "slug": "pernis-apivorus",
+      "scientificName": "Pernis apivorus",
+      "names": {
+        "en": "European Honey Buzzard",
+        "af": "Wespedief"
+      }
+    },
+    {
+      "slug": "polemaetus-bellicosus",
+      "scientificName": "Polemaetus bellicosus",
+      "names": {
+        "en": "Martial Eagle",
+        "af": "Breëkoparend"
+      }
+    },
+    {
+      "slug": "polyboroides-typus",
+      "scientificName": "Polyboroides typus",
+      "names": {
+        "en": "African Harrier-Hawk",
+        "af": "Kaalwangvalk"
+      }
+    },
+    {
+      "slug": "stephanoaetus-coronatus",
+      "scientificName": "Stephanoaetus coronatus",
+      "names": {
+        "en": "Crowned Eagle",
+        "af": "Kroonarend"
+      }
+    },
+    {
+      "slug": "tachyspiza-badia",
+      "scientificName": "Tachyspiza badia",
+      "names": {
+        "en": "Shikra",
+        "af": "Gebande Sperwer"
+      }
+    },
+    {
+      "slug": "tachyspiza-minulla",
+      "scientificName": "Tachyspiza minulla",
+      "names": {
+        "en": "Little Sparrowhawk",
+        "af": "Kleinsperwer"
+      }
+    },
+    {
+      "slug": "terathopius-ecaudatus",
+      "scientificName": "Terathopius ecaudatus",
+      "names": {
+        "en": "Bateleur",
+        "af": "Berghaan"
+      }
+    },
+    {
+      "slug": "torgos-tracheliotos",
+      "scientificName": "Torgos tracheliotos",
+      "names": {
+        "en": "Lappet-faced Vulture",
+        "af": "Swartaasvoël"
+      }
+    },
+    {
+      "slug": "trigonoceps-occipitalis",
+      "scientificName": "Trigonoceps occipitalis",
+      "names": {
+        "en": "White-headed Vulture",
+        "af": "Witkopaasvoël"
+      }
     }
   ],
-  "iconicSpecies": [
-    "haliaeetus-vocifer"
-  ],
+  "iconicSpecies": [],
   "population": {
     "low": null,
     "high": null,
     "speciesCounted": 0,
-    "speciesTotal": 1,
+    "speciesTotal": 40,
     "complete": false
   }
 }

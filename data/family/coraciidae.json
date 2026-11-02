@@ -16,16 +16,46 @@
         "en": "Lilac-breasted Roller",
         "af": "Gewone Troupant"
       }
+    },
+    {
+      "slug": "coracias-garrulus",
+      "scientificName": "Coracias garrulus",
+      "names": {
+        "en": "European Roller",
+        "af": "Europese Troupant"
+      }
+    },
+    {
+      "slug": "coracias-naevius",
+      "scientificName": "Coracias naevius",
+      "names": {
+        "en": "Purple Roller",
+        "af": "Groottroupant"
+      }
+    },
+    {
+      "slug": "coracias-spatulatus",
+      "scientificName": "Coracias spatulatus",
+      "names": {
+        "en": "Racket-tailed Roller",
+        "af": "Knopsterttroupant"
+      }
+    },
+    {
+      "slug": "eurystomus-glaucurus",
+      "scientificName": "Eurystomus glaucurus",
+      "names": {
+        "en": "Broad-billed Roller",
+        "af": "Geelbektroupant"
+      }
     }
   ],
-  "iconicSpecies": [
-    "coracias-caudatus"
-  ],
+  "iconicSpecies": [],
   "population": {
     "low": null,
     "high": null,
     "speciesCounted": 0,
-    "speciesTotal": 1,
+    "speciesTotal": 5,
     "complete": false
   }
 }

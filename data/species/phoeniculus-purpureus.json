@@ -1,0 +1,28 @@
+{
+  "kind": "species",
+  "slug": "phoeniculus-purpureus",
+  "scientificName": "Phoeniculus purpureus",
+  "commonNames": {
+    "en": "Green Wood-hoopoe",
+    "af": "Rooibekkakelaar"
+  },
+  "family": "phoeniculidae",
+  "summary": "The details for this species have not been published yet.",
+  "sampleData": true,
+  "population": {
+    "estimate": {
+      "low": null,
+      "high": null
+    },
+    "unit": null,
+    "trend": "unknown",
+    "confidence": null,
+    "asOf": null,
+    "notes": "to be researched",
+    "sources": []
+  },
+  "variants": [],
+  "viewNotes": [],
+  "calls": [],
+  "images": []
+}

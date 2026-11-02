@@ -8,13 +8,30 @@
   },
   "summary": "Field notes for this family are still to be written.",
   "sampleData": true,
-  "species": [],
+  "species": [
+    {
+      "slug": "phoeniconaias-minor",
+      "scientificName": "Phoeniconaias minor",
+      "names": {
+        "en": "Lesser Flamingo",
+        "af": "Kleinflamink"
+      }
+    },
+    {
+      "slug": "phoenicopterus-roseus",
+      "scientificName": "Phoenicopterus roseus",
+      "names": {
+        "en": "Greater Flamingo",
+        "af": "Grootflamink"
+      }
+    }
+  ],
   "iconicSpecies": [],
   "population": {
     "low": null,
     "high": null,
     "speciesCounted": 0,
-    "speciesTotal": 0,
+    "speciesTotal": 2,
     "complete": false
   }
 }

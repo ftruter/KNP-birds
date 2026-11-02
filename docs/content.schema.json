@@ -249,8 +249,6 @@
         "scientificName",
         "commonNames",
         "family",
-        "status",
-        "size",
         "summary",
         "sampleData",
         "population",
@@ -288,7 +286,7 @@
         "population": { "$ref": "#/$defs/population" },
         "variants": {
           "type": "array",
-          "minItems": 1,
+          "description": "Empty when field marks have not been published yet.",
           "items": { "$ref": "#/$defs/variant" }
         },
         "viewNotes": {

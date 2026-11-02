@@ -8,13 +8,94 @@
   },
   "summary": "Field notes for this family are still to be written.",
   "sampleData": true,
-  "species": [],
+  "species": [
+    {
+      "slug": "aenigmatolimnas-marginalis",
+      "scientificName": "Aenigmatolimnas marginalis",
+      "names": {
+        "en": "Striped Crake",
+        "af": "Gestreepte Riethaan"
+      }
+    },
+    {
+      "slug": "crecopsis-egregia",
+      "scientificName": "Crecopsis egregia",
+      "names": {
+        "en": "African Crake",
+        "af": "Afrikaanse Riethaan"
+      }
+    },
+    {
+      "slug": "crex-crex",
+      "scientificName": "Crex crex",
+      "names": {
+        "en": "Corn Crake",
+        "af": "Kwartelkoning"
+      }
+    },
+    {
+      "slug": "fulica-cristata",
+      "scientificName": "Fulica cristata",
+      "names": {
+        "en": "Red-knobbed Coot",
+        "af": "Bleshoender"
+      }
+    },
+    {
+      "slug": "gallinula-chloropus",
+      "scientificName": "Gallinula chloropus",
+      "names": {
+        "en": "Common Moorhen",
+        "af": "Grootwaterhoender"
+      }
+    },
+    {
+      "slug": "paragallinula-angulata",
+      "scientificName": "Paragallinula angulata",
+      "names": {
+        "en": "Lesser Moorhen",
+        "af": "Kleinwaterhoender"
+      }
+    },
+    {
+      "slug": "porphyrio-alleni",
+      "scientificName": "Porphyrio alleni",
+      "names": {
+        "en": "Allen’s Gallinule",
+        "af": "Kleinkoningriethaan"
+      }
+    },
+    {
+      "slug": "porphyrio-porphyrio",
+      "scientificName": "Porphyrio porphyrio",
+      "names": {
+        "en": "Purple Swamphen",
+        "af": "Grootkoningriethaan"
+      }
+    },
+    {
+      "slug": "rallus-caerulescens",
+      "scientificName": "Rallus caerulescens",
+      "names": {
+        "en": "African Rail",
+        "af": "Grootriethaan"
+      }
+    },
+    {
+      "slug": "zapornia-flavirostra",
+      "scientificName": "Zapornia flavirostra",
+      "names": {
+        "en": "Black Crake",
+        "af": "Swartriethaan"
+      }
+    }
+  ],
   "iconicSpecies": [],
   "population": {
     "low": null,
     "high": null,
     "speciesCounted": 0,
-    "speciesTotal": 0,
+    "speciesTotal": 10,
     "complete": false
   }
 }

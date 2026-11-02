@@ -1,0 +1,28 @@
+{
+  "kind": "species",
+  "slug": "apus-apus",
+  "scientificName": "Apus apus",
+  "commonNames": {
+    "en": "Common Swift",
+    "af": "Europese Windswael"
+  },
+  "family": "apodidae",
+  "summary": "The details for this species have not been published yet.",
+  "sampleData": true,
+  "population": {
+    "estimate": {
+      "low": null,
+      "high": null
+    },
+    "unit": null,
+    "trend": "unknown",
+    "confidence": null,
+    "asOf": null,
+    "notes": "to be researched",
+    "sources": []
+  },
+  "variants": [],
+  "viewNotes": [],
+  "calls": [],
+  "images": []
+}

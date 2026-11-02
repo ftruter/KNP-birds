@@ -8,13 +8,62 @@
   },
   "summary": "Field notes for this family are still to be written.",
   "sampleData": true,
-  "species": [],
+  "species": [
+    {
+      "slug": "merops-apiaster",
+      "scientificName": "Merops apiaster",
+      "names": {
+        "en": "European Bee-eater",
+        "af": "Europese Byvreter"
+      }
+    },
+    {
+      "slug": "merops-bullockoides",
+      "scientificName": "Merops bullockoides",
+      "names": {
+        "en": "White-fronted Bee-eater",
+        "af": "Rooikeelbyvreter"
+      }
+    },
+    {
+      "slug": "merops-hirundineus",
+      "scientificName": "Merops hirundineus",
+      "names": {
+        "en": "Swallow-tailed Bee-eater",
+        "af": "Swaelstertbyvreter"
+      }
+    },
+    {
+      "slug": "merops-nubicoides",
+      "scientificName": "Merops nubicoides",
+      "names": {
+        "en": "Southern Carmine Bee-eater",
+        "af": "Rooiborsbyvreter"
+      }
+    },
+    {
+      "slug": "merops-persicus",
+      "scientificName": "Merops persicus",
+      "names": {
+        "en": "Blue-cheeked Bee-eater",
+        "af": "Blouwangbyvreter"
+      }
+    },
+    {
+      "slug": "merops-pusillus",
+      "scientificName": "Merops pusillus",
+      "names": {
+        "en": "Little Bee-eater",
+        "af": "Kleinbyvreter"
+      }
+    }
+  ],
   "iconicSpecies": [],
   "population": {
     "low": null,
     "high": null,
     "speciesCounted": 0,
-    "speciesTotal": 0,
+    "speciesTotal": 6,
     "complete": false
   }
 }

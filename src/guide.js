@@ -79,6 +79,15 @@ export const familyIndexPopulationLine = (population) =>
 export const EMPTY_FAMILY_SPECIES =
   'No species from this family are published in this copy yet.'
 
+export const UNPUBLISHED_SPECIES =
+  'The details for this species have not been published yet.'
+
+/** Field marks, calls, or photographs are present. An empty stub is not. */
+export const speciesDetailsPublished = (doc) =>
+  ['variants', 'viewNotes', 'calls', 'images'].some(
+    (key) => Array.isArray(doc?.[key]) && doc[key].length > 0,
+  )
+
 export const englishName = (doc) =>
   doc?.names?.en ||
   doc?.commonNames?.en ||

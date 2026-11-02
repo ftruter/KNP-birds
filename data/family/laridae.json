@@ -8,13 +8,46 @@
   },
   "summary": "Field notes for this family are still to be written.",
   "sampleData": true,
-  "species": [],
+  "species": [
+    {
+      "slug": "chlidonias-hybrida",
+      "scientificName": "Chlidonias hybrida",
+      "names": {
+        "en": "Whiskered Tern",
+        "af": "Witbaardsterretjie"
+      }
+    },
+    {
+      "slug": "chlidonias-leucopterus",
+      "scientificName": "Chlidonias leucopterus",
+      "names": {
+        "en": "White-winged Tern",
+        "af": "Witvlerksterretjie"
+      }
+    },
+    {
+      "slug": "chroicocephalus-cirrocephalus",
+      "scientificName": "Chroicocephalus cirrocephalus",
+      "names": {
+        "en": "Grey-headed Gull",
+        "af": "Gryskopmeeu"
+      }
+    },
+    {
+      "slug": "rynchops-flavirostris",
+      "scientificName": "Rynchops flavirostris",
+      "names": {
+        "en": "African Skimmer",
+        "af": "Waterploeër"
+      }
+    }
+  ],
   "iconicSpecies": [],
   "population": {
     "low": null,
     "high": null,
     "speciesCounted": 0,
-    "speciesTotal": 0,
+    "speciesTotal": 4,
     "complete": false
   }
 }

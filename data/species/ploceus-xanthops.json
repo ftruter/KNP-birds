@@ -1,0 +1,28 @@
+{
+  "kind": "species",
+  "slug": "ploceus-xanthops",
+  "scientificName": "Ploceus xanthops",
+  "commonNames": {
+    "en": "African (Holub’s) Golden Weaver",
+    "af": "Goudwewer"
+  },
+  "family": "ploceidae",
+  "summary": "The details for this species have not been published yet.",
+  "sampleData": true,
+  "population": {
+    "estimate": {
+      "low": null,
+      "high": null
+    },
+    "unit": null,
+    "trend": "unknown",
+    "confidence": null,
+    "asOf": null,
+    "notes": "to be researched",
+    "sources": []
+  },
+  "variants": [],
+  "viewNotes": [],
+  "calls": [],
+  "images": []
+}

@@ -8,13 +8,118 @@
   },
   "summary": "Field notes for this family are still to be written.",
   "sampleData": true,
-  "species": [],
+  "species": [
+    {
+      "slug": "aplopelia-larvata",
+      "scientificName": "Aplopelia larvata",
+      "names": {
+        "en": "Lemon Dove",
+        "af": "Kaneelduifie"
+      }
+    },
+    {
+      "slug": "columba-arquatrix",
+      "scientificName": "Columba arquatrix",
+      "names": {
+        "en": "African Olive Pigeon",
+        "af": "Geelbekbosduif"
+      }
+    },
+    {
+      "slug": "columba-guinea",
+      "scientificName": "Columba guinea",
+      "names": {
+        "en": "Speckled Pigeon",
+        "af": "Kransduif"
+      }
+    },
+    {
+      "slug": "columba-livia",
+      "scientificName": "Columba livia",
+      "names": {
+        "en": "Rock Dove",
+        "af": "Tuinduif"
+      }
+    },
+    {
+      "slug": "oena-capensis",
+      "scientificName": "Oena capensis",
+      "names": {
+        "en": "Namaqua Dove",
+        "af": "Namakwaduifie"
+      }
+    },
+    {
+      "slug": "spilopelia-senegalensis",
+      "scientificName": "Spilopelia senegalensis",
+      "names": {
+        "en": "Laughing Dove",
+        "af": "Rooiborsduifie"
+      }
+    },
+    {
+      "slug": "streptopelia-capicola",
+      "scientificName": "Streptopelia capicola",
+      "names": {
+        "en": "Cape Turtle (Ring-necked) Dove",
+        "af": "Gewone Tortelduif"
+      }
+    },
+    {
+      "slug": "streptopelia-decipiens",
+      "scientificName": "Streptopelia decipiens",
+      "names": {
+        "en": "African Mourning (Mourning Collared) Dove",
+        "af": "Rooioogtortelduif"
+      }
+    },
+    {
+      "slug": "streptopelia-semitorquata",
+      "scientificName": "Streptopelia semitorquata",
+      "names": {
+        "en": "Red-eyed Dove",
+        "af": "Grootringduif"
+      }
+    },
+    {
+      "slug": "treron-calvus",
+      "scientificName": "Treron calvus",
+      "names": {
+        "en": "African Green Pigeon",
+        "af": "Papegaaiduif"
+      }
+    },
+    {
+      "slug": "turtur-afer",
+      "scientificName": "Turtur afer",
+      "names": {
+        "en": "Blue-spotted Wood Dove",
+        "af": "Blouvlekduifie"
+      }
+    },
+    {
+      "slug": "turtur-chalcospilos",
+      "scientificName": "Turtur chalcospilos",
+      "names": {
+        "en": "Emerald-spotted Wood Dove",
+        "af": "Groenvlekduifie"
+      }
+    },
+    {
+      "slug": "turtur-tympanistria",
+      "scientificName": "Turtur tympanistria",
+      "names": {
+        "en": "Tambourine Dove",
+        "af": "Witborsduifie"
+      }
+    }
+  ],
   "iconicSpecies": [],
   "population": {
     "low": null,
     "high": null,
     "speciesCounted": 0,
-    "speciesTotal": 0,
+    "speciesTotal": 13,
     "complete": false
   }
 }

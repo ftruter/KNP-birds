@@ -8,13 +8,30 @@
   },
   "summary": "Field notes for this family are still to be written.",
   "sampleData": true,
-  "species": [],
+  "species": [
+    {
+      "slug": "actophilornis-africanus",
+      "scientificName": "Actophilornis africanus",
+      "names": {
+        "en": "African Jacana",
+        "af": "Grootlangtoon"
+      }
+    },
+    {
+      "slug": "microparra-capensis",
+      "scientificName": "Microparra capensis",
+      "names": {
+        "en": "Lesser Jacana",
+        "af": "Dwerglangtoon"
+      }
+    }
+  ],
   "iconicSpecies": [],
   "population": {
     "low": null,
     "high": null,
     "speciesCounted": 0,
-    "speciesTotal": 0,
+    "speciesTotal": 2,
     "complete": false
   }
 }

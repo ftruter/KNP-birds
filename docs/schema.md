@@ -29,11 +29,11 @@ No extension is HTML. `.md` is Markdown (`text/markdown; charset=utf-8`). `.json
 | `slug`, `scientificName` | Identity. The slug matches the KV key. |
 | `commonNames.en` | English name. `commonNames.af` is optional Afrikaans. |
 | `family` | Family slug. |
-| `status` | `resident` or `summer-migrant`. Vagrants are not in the list. |
-| `size.lengthCm` | `{ "min", "max" }` in centimetres, plus an optional `note`. |
+| `status` | `resident` or `summer-migrant`. Omitted when it has not been published. Vagrants are not in the list. |
+| `size.lengthCm` | `{ "min", "max" }` in centimetres, plus an optional `note`. The whole `size` object is omitted when length has not been published. |
 | `summary` | A short plain-language description. |
 | `sampleData` | `true` while the text is still a sample. The page says "Sample content, to be verified." |
-| `variants` | Plumage described as structured marks. See below. |
+| `variants` | Plumage described as structured marks. An empty array means the marks have not been published. See below. |
 | `viewNotes` | Optional notes for flight and perched views. Not variants. |
 | `calls` | Vocalisations. |
 | `images` | Photographs in the R2 bucket. May be empty. |
@@ -124,13 +124,19 @@ There is no formal bird census for Kruger. `population` is an approximate estima
 
 The page renders a range (`low–high`, `at least low`, or `up to high`) with the label **Approximate estimate**, then the trend, the note, and the sources. Sample species in this repository set `estimate` to null, `trend` to `unknown`, and `notes` to `to be researched`. They do not invent counts.
 
+### Unpublished species
+
+A stub has the scientific name, English and Afrikaans names, the family slug, `sampleData: true`, and a population object with null figures. `variants`, `viewNotes`, `calls`, and `images` are empty arrays. `status` and `size` are omitted, because a placeholder resident status or a made-up length would be a false claim. The JSON Schema used to require `status`, `size`, and at least one variant. Those three constraints are relaxed so an unpublished species still validates. Calls, view notes, and images were already allowed to be empty.
+
+The page says "The details for this species have not been published yet." It does not render the photograph block or the six comparison sections, which would otherwise be empty or would say "No visible difference" with nothing recorded. It omits the Afrikaans line when `commonNames.af` is absent. The population section still explains that no numeric estimate has been entered.
+
 ## Family
 
 `kind` is `"family"`. `slug` is the scientific family name in lowercase (`coraciidae`). The family's own `commonNames`, `summary`, and `sampleData` are written by hand. Two fields are derived by `scripts/seed.mjs` from the species files and are not edited by hand:
 
 `species` is every species whose `family` slug matches, sorted by scientific name. Each item is `{ slug, scientificName, names: { en, af } }`. `names.af` is omitted when the species has no Afrikaans name. A family page can list them without reading every species document. The array may be empty when no species from that family are published yet. `iconicSpecies` is then empty too. The page says that no species from the family are published in this copy, and it omits the Afrikaans line when `commonNames.af` is absent. It does not invent a name.
 
-`iconicSpecies` is an ordered list of up to three species slugs from that family. Species with an estimate come first, most prevalent first. Prevalence is the midpoint of `low` and `high` after converting to individuals (`pairs` and `breeding pairs` count as two). Species with no estimate follow, and ties are broken by scientific name, case-insensitive. The family page shows these species, and their photographs, before the rest of the list.
+`iconicSpecies` is an ordered list of up to three species slugs from that family, the ones with the highest population. Prevalence is the midpoint of `low` and `high` after converting to individuals (`pairs` and `breeding pairs` count as two). Species with no estimate are left out. When none of the species has an estimate, `iconicSpecies` is empty, including when the family has no published species yet. Ties are broken by scientific name, case-insensitive. The family page shows these species, and their photographs, before the rest of the list.
 
 `population` is an approximate total for the family:
 

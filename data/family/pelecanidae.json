@@ -8,13 +8,30 @@
   },
   "summary": "Field notes for this family are still to be written.",
   "sampleData": true,
-  "species": [],
+  "species": [
+    {
+      "slug": "pelecanus-onocrotalus",
+      "scientificName": "Pelecanus onocrotalus",
+      "names": {
+        "en": "Great White Pelican",
+        "af": "Witpelikaan"
+      }
+    },
+    {
+      "slug": "pelecanus-rufescens",
+      "scientificName": "Pelecanus rufescens",
+      "names": {
+        "en": "Pink-backed Pelican",
+        "af": "Kleinpelikaan"
+      }
+    }
+  ],
   "iconicSpecies": [],
   "population": {
     "low": null,
     "high": null,
     "speciesCounted": 0,
-    "speciesTotal": 0,
+    "speciesTotal": 2,
     "complete": false
   }
 }

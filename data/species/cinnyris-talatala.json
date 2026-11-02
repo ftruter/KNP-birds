@@ -1,0 +1,28 @@
+{
+  "kind": "species",
+  "slug": "cinnyris-talatala",
+  "scientificName": "Cinnyris talatala",
+  "commonNames": {
+    "en": "White-bellied Sunbird",
+    "af": "Witpenssuikerbekkie"
+  },
+  "family": "nectariniidae",
+  "summary": "The details for this species have not been published yet.",
+  "sampleData": true,
+  "population": {
+    "estimate": {
+      "low": null,
+      "high": null
+    },
+    "unit": null,
+    "trend": "unknown",
+    "confidence": null,
+    "asOf": null,
+    "notes": "to be researched",
+    "sources": []
+  },
+  "variants": [],
+  "viewNotes": [],
+  "calls": [],
+  "images": []
+}

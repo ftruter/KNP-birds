@@ -8,13 +8,46 @@
   },
   "summary": "Field notes for this family are still to be written.",
   "sampleData": true,
-  "species": [],
+  "species": [
+    {
+      "slug": "indicator-indicator",
+      "scientificName": "Indicator indicator",
+      "names": {
+        "en": "Greater Honeyguide",
+        "af": "Grootheuningwyser"
+      }
+    },
+    {
+      "slug": "indicator-minor",
+      "scientificName": "Indicator minor",
+      "names": {
+        "en": "Lesser Honeyguide",
+        "af": "Kleinheuningwyser"
+      }
+    },
+    {
+      "slug": "indicator-variegatus",
+      "scientificName": "Indicator variegatus",
+      "names": {
+        "en": "Scaly-throated Honeyguide",
+        "af": "Gevlekte Heuningwyser"
+      }
+    },
+    {
+      "slug": "prodotiscus-regulus",
+      "scientificName": "Prodotiscus regulus",
+      "names": {
+        "en": "Brown-backed Honeybird",
+        "af": "Skerpbekheuningvoël"
+      }
+    }
+  ],
   "iconicSpecies": [],
   "population": {
     "low": null,
     "high": null,
     "speciesCounted": 0,
-    "speciesTotal": 0,
+    "speciesTotal": 4,
     "complete": false
   }
 }

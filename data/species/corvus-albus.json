@@ -1,0 +1,28 @@
+{
+  "kind": "species",
+  "slug": "corvus-albus",
+  "scientificName": "Corvus albus",
+  "commonNames": {
+    "en": "Pied Crow",
+    "af": "Witborskraai"
+  },
+  "family": "corvidae",
+  "summary": "The details for this species have not been published yet.",
+  "sampleData": true,
+  "population": {
+    "estimate": {
+      "low": null,
+      "high": null
+    },
+    "unit": null,
+    "trend": "unknown",
+    "confidence": null,
+    "asOf": null,
+    "notes": "to be researched",
+    "sources": []
+  },
+  "variants": [],
+  "viewNotes": [],
+  "calls": [],
+  "images": []
+}

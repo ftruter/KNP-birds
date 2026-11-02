@@ -8,13 +8,38 @@
   },
   "summary": "Field notes for this family are still to be written.",
   "sampleData": true,
-  "species": [],
+  "species": [
+    {
+      "slug": "batis-capensis",
+      "scientificName": "Batis capensis",
+      "names": {
+        "en": "Cape Batis",
+        "af": "Kaapse Bosbontrokkie"
+      }
+    },
+    {
+      "slug": "batis-molitor",
+      "scientificName": "Batis molitor",
+      "names": {
+        "en": "Chinspot Batis",
+        "af": "Witliesbosbontrokkie"
+      }
+    },
+    {
+      "slug": "platysteira-peltata",
+      "scientificName": "Platysteira peltata",
+      "names": {
+        "en": "Black-throated Wattle-eye",
+        "af": "Beloogbosbontrokkie"
+      }
+    }
+  ],
   "iconicSpecies": [],
   "population": {
     "low": null,
     "high": null,
     "speciesCounted": 0,
-    "speciesTotal": 0,
+    "speciesTotal": 3,
     "complete": false
   }
 }

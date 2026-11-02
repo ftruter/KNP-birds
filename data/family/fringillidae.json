@@ -8,13 +8,62 @@
   },
   "summary": "Field notes for this family are still to be written.",
   "sampleData": true,
-  "species": [],
+  "species": [
+    {
+      "slug": "crithagra-atrogularis",
+      "scientificName": "Crithagra atrogularis",
+      "names": {
+        "en": "Black-throated Canary",
+        "af": "Bergkanarie"
+      }
+    },
+    {
+      "slug": "crithagra-citrinipectus",
+      "scientificName": "Crithagra citrinipectus",
+      "names": {
+        "en": "Lemon-breasted Canary",
+        "af": "Geelborskanarie"
+      }
+    },
+    {
+      "slug": "crithagra-gularis",
+      "scientificName": "Crithagra gularis",
+      "names": {
+        "en": "Streaky-headed Seedeater",
+        "af": "Streepkopkanarie"
+      }
+    },
+    {
+      "slug": "crithagra-scotops",
+      "scientificName": "Crithagra scotops",
+      "names": {
+        "en": "Forest Canary",
+        "af": "Gestreepte Kanarie"
+      }
+    },
+    {
+      "slug": "crithagra-sulphurata",
+      "scientificName": "Crithagra sulphurata",
+      "names": {
+        "en": "Brimstone Canary",
+        "af": "Dikbekkanarie"
+      }
+    },
+    {
+      "slug": "serinus-canicollis",
+      "scientificName": "Serinus canicollis",
+      "names": {
+        "en": "Cape Canary",
+        "af": "Kaapse Kanarie"
+      }
+    }
+  ],
   "iconicSpecies": [],
   "population": {
     "low": null,
     "high": null,
     "speciesCounted": 0,
-    "speciesTotal": 0,
+    "speciesTotal": 6,
     "complete": false
   }
 }

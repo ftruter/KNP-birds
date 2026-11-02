@@ -71,18 +71,63 @@ test('pages are served in html, markdown, and json', async () => {
   assert.match(await colours.text(), /slate-grey/)
 
   const index = await (await site.fetch('/species.json')).json()
-  assert.deepEqual(Object.keys(index), [
-    'Bucorvus leadbeateri',
-    'Coracias caudatus',
-    'Haliaeetus vocifer',
-  ])
+  assert.equal(Object.keys(index).length, 493)
   assert.deepEqual(index['Coracias caudatus'], {
     en: 'Lilac-breasted Roller',
     af: 'Gewone Troupant',
     population: null,
   })
-  const familyPage = await site.fetch('/family/coraciidae')
-  assert.match(await familyPage.text(), /First to look for/)
+  assert.deepEqual(index['Icthyophaga vocifer'], {
+    en: 'African Fish Eagle',
+    af: 'Visarend',
+    population: null,
+  })
+  assert.equal(index['Haliaeetus vocifer'], undefined)
+  assert.equal(index['Bucorvus leadbeateri'].en, 'Southern Ground-Hornbill')
+  for (const value of Object.values(index)) {
+    assert.equal(value.population, null)
+    assert.equal(Object.hasOwn(value, 'family'), false)
+  }
+  const familyPage = await (await site.fetch('/family/coraciidae')).text()
+  assert.match(familyPage, /href="\/species\/coracias-caudatus"/)
+  assert.match(familyPage, /Lilac-breasted Roller/)
+  assert.match(familyPage, /Includes 0 of 5 species/)
+  assert.doesNotMatch(familyPage, /First to look for/)
+})
+
+test('a species stub renders in html, markdown, and json', async () => {
+  const { records } = await loadStore()
+  const site = await app(records)
+  const html = await site.fetch('/species/struthio-camelus')
+  assert.equal(html.status, 200)
+  assert.equal(html.headers.get('content-type'), 'text/html; charset=utf-8')
+  const htmlBody = await html.text()
+  assert.match(htmlBody, /Common Ostrich/)
+  assert.match(htmlBody, /Volstruis/)
+  assert.match(
+    htmlBody,
+    /The details for this species have not been published yet/,
+  )
+  assert.doesNotMatch(htmlBody, /Telling it apart/)
+  assert.doesNotMatch(htmlBody, /<script/i)
+  const markdown = await site.fetch('/species/struthio-camelus.md')
+  assert.equal(
+    markdown.headers.get('content-type'),
+    'text/markdown; charset=utf-8',
+  )
+  assert.match(
+    await markdown.text(),
+    /The details for this species have not been published yet/,
+  )
+  const json = await (await site.fetch('/species/struthio-camelus.json')).json()
+  assert.equal(json.scientificName, 'Struthio camelus')
+  assert.equal(json.family, 'struthionidae')
+  assert.deepEqual(json.variants, [])
+  assert.deepEqual(json.calls, [])
+  assert.deepEqual(json.images, [])
+  assert.equal(json.population.estimate.low, null)
+  assert.equal(json.population.estimate.high, null)
+  assert.equal(json.commonNames.af, 'Volstruis')
 })
 
 test('a new family stub and the full families index render in every format', async () => {
@@ -94,7 +139,9 @@ test('a new family stub and the full families index render in every format', asy
   const htmlBody = await html.text()
   assert.match(htmlBody, /Kingfishers/)
   assert.match(htmlBody, /Visvangers/)
-  assert.match(
+  assert.match(htmlBody, /href="\/species\/corythornis-cristatus"/)
+  assert.match(htmlBody, /Includes 0 of 9 species/)
+  assert.doesNotMatch(
     htmlBody,
     /No species from this family are published in this copy yet/,
   )
@@ -105,7 +152,12 @@ test('a new family stub and the full families index render in every format', asy
     markdown.headers.get('content-type'),
     'text/markdown; charset=utf-8',
   )
-  assert.match(await markdown.text(), /Visvangers/)
+  const markdownBody = await markdown.text()
+  assert.match(markdownBody, /Visvangers/)
+  assert.match(
+    markdownBody,
+    /\[Malachite Kingfisher\]\(\/species\/corythornis-cristatus\)/,
+  )
 
   const json = await site.fetch('/family/alcedinidae.json')
   assert.equal(
@@ -114,10 +166,13 @@ test('a new family stub and the full families index render in every format', asy
   )
   const data = await json.json()
   assert.equal(data.scientificName, 'Alcedinidae')
-  assert.deepEqual(data.species, [])
+  assert.equal(data.species.length, 9)
+  assert.ok(data.species.some((item) => item.slug === 'corythornis-cristatus'))
   assert.deepEqual(data.iconicSpecies, [])
   assert.equal(data.population.speciesCounted, 0)
-  assert.equal(data.population.speciesTotal, 0)
+  assert.equal(data.population.speciesTotal, 9)
+  assert.equal(data.population.low, null)
+  assert.equal(data.population.high, null)
 
   const unnamed = await (await site.fetch('/family/acrocephalidae')).text()
   assert.match(unnamed, /Reed warblers and allies/)
@@ -283,7 +338,7 @@ test('POST is rejected and HEAD has no body', async () => {
   const post = await site.fetch('/species', { method: 'POST' })
   assert.equal(post.status, 405)
   assert.equal(post.headers.get('allow'), 'GET, HEAD')
-  const head = await site.fetch('/species/haliaeetus-vocifer', {
+  const head = await site.fetch('/species/icthyophaga-vocifer', {
     method: 'HEAD',
   })
   assert.equal(head.status, 200)

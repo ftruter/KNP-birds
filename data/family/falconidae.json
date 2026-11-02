@@ -8,13 +8,86 @@
   },
   "summary": "Field notes for this family are still to be written.",
   "sampleData": true,
-  "species": [],
+  "species": [
+    {
+      "slug": "falco-amurensis",
+      "scientificName": "Falco amurensis",
+      "names": {
+        "en": "Amur Falcon",
+        "af": "Oostelike Rooipootvalk"
+      }
+    },
+    {
+      "slug": "falco-biarmicus",
+      "scientificName": "Falco biarmicus",
+      "names": {
+        "en": "Lanner Falcon",
+        "af": "Edelvalk"
+      }
+    },
+    {
+      "slug": "falco-concolor",
+      "scientificName": "Falco concolor",
+      "names": {
+        "en": "Sooty Falcon",
+        "af": "Roetvalk"
+      }
+    },
+    {
+      "slug": "falco-dickinsoni",
+      "scientificName": "Falco dickinsoni",
+      "names": {
+        "en": "Dickinson’s Kestrel",
+        "af": "Dickinsongrysvalk"
+      }
+    },
+    {
+      "slug": "falco-naumanni",
+      "scientificName": "Falco naumanni",
+      "names": {
+        "en": "Lesser Kestrel",
+        "af": "Kleinrooivalk"
+      }
+    },
+    {
+      "slug": "falco-peregrinus",
+      "scientificName": "Falco peregrinus",
+      "names": {
+        "en": "Peregrine Falcon",
+        "af": "Swerfvalk"
+      }
+    },
+    {
+      "slug": "falco-rupicolus",
+      "scientificName": "Falco rupicolus",
+      "names": {
+        "en": "Rock Kestrel",
+        "af": "Kransvalk"
+      }
+    },
+    {
+      "slug": "falco-subbuteo",
+      "scientificName": "Falco subbuteo",
+      "names": {
+        "en": "Eurasian Hobby",
+        "af": "Europese Boomvalk"
+      }
+    },
+    {
+      "slug": "falco-vespertinus",
+      "scientificName": "Falco vespertinus",
+      "names": {
+        "en": "Red-footed Falcon",
+        "af": "Westelike Rooipootvalk"
+      }
+    }
+  ],
   "iconicSpecies": [],
   "population": {
     "low": null,
     "high": null,
     "speciesCounted": 0,
-    "speciesTotal": 0,
+    "speciesTotal": 9,
     "complete": false
   }
 }

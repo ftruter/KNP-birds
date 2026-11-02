@@ -1,0 +1,28 @@
+{
+  "kind": "species",
+  "slug": "hypargos-margaritatus",
+  "scientificName": "Hypargos margaritatus",
+  "commonNames": {
+    "en": "Pink-throated Twinspot",
+    "af": "Rooskeelkolpensie"
+  },
+  "family": "estrildidae",
+  "summary": "The details for this species have not been published yet.",
+  "sampleData": true,
+  "population": {
+    "estimate": {
+      "low": null,
+      "high": null
+    },
+    "unit": null,
+    "trend": "unknown",
+    "confidence": null,
+    "asOf": null,
+    "notes": "to be researched",
+    "sources": []
+  },
+  "variants": [],
+  "viewNotes": [],
+  "calls": [],
+  "images": []
+}

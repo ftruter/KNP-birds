@@ -8,13 +8,30 @@
   },
   "summary": "Field notes for this family are still to be written.",
   "sampleData": true,
-  "species": [],
+  "species": [
+    {
+      "slug": "buphagus-africanus",
+      "scientificName": "Buphagus africanus",
+      "names": {
+        "en": "Yellow-billed Oxpecker",
+        "af": "Geelbekrenostervoël"
+      }
+    },
+    {
+      "slug": "buphagus-erythroryncha",
+      "scientificName": "Buphagus erythroryncha",
+      "names": {
+        "en": "Red-billed Oxpecker",
+        "af": "Rooibekrenostervoël"
+      }
+    }
+  ],
   "iconicSpecies": [],
   "population": {
     "low": null,
     "high": null,
     "speciesCounted": 0,
-    "speciesTotal": 0,
+    "speciesTotal": 2,
     "complete": false
   }
 }

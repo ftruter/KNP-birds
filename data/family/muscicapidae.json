@@ -8,13 +8,206 @@
   },
   "summary": "Field notes for this family are still to be written.",
   "sampleData": true,
-  "species": [],
+  "species": [
+    {
+      "slug": "agricola-pallidus",
+      "scientificName": "Agricola pallidus",
+      "names": {
+        "en": "Pale Flycatcher",
+        "af": "Muiskleurvlieëvanger"
+      }
+    },
+    {
+      "slug": "bradornis-mariquensis",
+      "scientificName": "Bradornis mariquensis",
+      "names": {
+        "en": "Marico Flycatcher",
+        "af": "Maricovlieëvanger"
+      }
+    },
+    {
+      "slug": "cercotrichas-leucophrys",
+      "scientificName": "Cercotrichas leucophrys",
+      "names": {
+        "en": "White-browed Scrub Robin",
+        "af": "Gestreepte Wipstert"
+      }
+    },
+    {
+      "slug": "cichladusa-arquata",
+      "scientificName": "Cichladusa arquata",
+      "names": {
+        "en": "Collared Palm Thrush",
+        "af": "Palmmôrelyster"
+      }
+    },
+    {
+      "slug": "cossypha-dichroa",
+      "scientificName": "Cossypha dichroa",
+      "names": {
+        "en": "Chorister Robin-chat",
+        "af": "Lawaaimakerjanfrederik"
+      }
+    },
+    {
+      "slug": "cossypha-heuglini",
+      "scientificName": "Cossypha heuglini",
+      "names": {
+        "en": "White-browed Robin-chat",
+        "af": "Heuglinjanfrederik"
+      }
+    },
+    {
+      "slug": "cossypha-natalensis",
+      "scientificName": "Cossypha natalensis",
+      "names": {
+        "en": "Red-capped Robin-chat",
+        "af": "Nataljanfrederik"
+      }
+    },
+    {
+      "slug": "dessonornis-caffer",
+      "scientificName": "Dessonornis caffer",
+      "names": {
+        "en": "Cape Robin-chat",
+        "af": "Gewone Janfrederik"
+      }
+    },
+    {
+      "slug": "dessonornis-humeralis",
+      "scientificName": "Dessonornis humeralis",
+      "names": {
+        "en": "White-throated Robin-chat",
+        "af": "Witkeeljanfrederik"
+      }
+    },
+    {
+      "slug": "fraseria-caerulescens",
+      "scientificName": "Fraseria caerulescens",
+      "names": {
+        "en": "Ashy Flycatcher",
+        "af": "Blougrysvlieëvanger"
+      }
+    },
+    {
+      "slug": "fraseria-plumbea",
+      "scientificName": "Fraseria plumbea",
+      "names": {
+        "en": "Grey Tit-flycatcher",
+        "af": "Waaierstertvlieëvanger"
+      }
+    },
+    {
+      "slug": "luscinia-luscinia",
+      "scientificName": "Luscinia luscinia",
+      "names": {
+        "en": "Thrush Nightingale",
+        "af": "Lysternagtegaal"
+      }
+    },
+    {
+      "slug": "melaenornis-pammelaina",
+      "scientificName": "Melaenornis pammelaina",
+      "names": {
+        "en": "Southern Black Flycatcher",
+        "af": "Swartvlieëvanger"
+      }
+    },
+    {
+      "slug": "monticola-rupestris",
+      "scientificName": "Monticola rupestris",
+      "names": {
+        "en": "Cape Rock Thrush",
+        "af": "Kaapse Kliplyster"
+      }
+    },
+    {
+      "slug": "muscicapa-adusta",
+      "scientificName": "Muscicapa adusta",
+      "names": {
+        "en": "African Dusky Flycatcher",
+        "af": "Donkervlieëvanger"
+      }
+    },
+    {
+      "slug": "myrmecocichla-arnotti",
+      "scientificName": "Myrmecocichla arnotti",
+      "names": {
+        "en": "Arnot’s Chat",
+        "af": "Bontpiek"
+      }
+    },
+    {
+      "slug": "oenanthe-familiaris",
+      "scientificName": "Oenanthe familiaris",
+      "names": {
+        "en": "Familiar Chat",
+        "af": "Gewone Spekvreter"
+      }
+    },
+    {
+      "slug": "oenanthe-pileata",
+      "scientificName": "Oenanthe pileata",
+      "names": {
+        "en": "Capped Wheatear",
+        "af": "Hoëveldskaapwagter"
+      }
+    },
+    {
+      "slug": "pogonocichla-stellata",
+      "scientificName": "Pogonocichla stellata",
+      "names": {
+        "en": "White-starred Robin",
+        "af": "Witkoljanfrederik"
+      }
+    },
+    {
+      "slug": "saxicola-torquatus",
+      "scientificName": "Saxicola torquatus",
+      "names": {
+        "en": "African Stonechat",
+        "af": "Gewone Bontrokkie"
+      }
+    },
+    {
+      "slug": "sigelus-silens",
+      "scientificName": "Sigelus silens",
+      "names": {
+        "en": "Fiscal Flycatcher",
+        "af": "Fiskaalvlieëvanger"
+      }
+    },
+    {
+      "slug": "thamnolaea-cinnamomeiventris",
+      "scientificName": "Thamnolaea cinnamomeiventris",
+      "names": {
+        "en": "Mocking Cliff Chat",
+        "af": "Dassievoël"
+      }
+    },
+    {
+      "slug": "tychaedon-quadrivirgata",
+      "scientificName": "Tychaedon quadrivirgata",
+      "names": {
+        "en": "Bearded Scrub Robin",
+        "af": "Baardwipstert"
+      }
+    },
+    {
+      "slug": "tychaedon-signata",
+      "scientificName": "Tychaedon signata",
+      "names": {
+        "en": "Brown Scrub Robin",
+        "af": "Bruinwipstert"
+      }
+    }
+  ],
   "iconicSpecies": [],
   "population": {
     "low": null,
     "high": null,
     "speciesCounted": 0,
-    "speciesTotal": 0,
+    "speciesTotal": 24,
     "complete": false
   }
 }

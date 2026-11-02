@@ -8,13 +8,22 @@
   },
   "summary": "Field notes for this family are still to be written.",
   "sampleData": true,
-  "species": [],
+  "species": [
+    {
+      "slug": "tyto-alba",
+      "scientificName": "Tyto alba",
+      "names": {
+        "en": "Western Barn Owl",
+        "af": "Nonnetjie-uil"
+      }
+    }
+  ],
   "iconicSpecies": [],
   "population": {
     "low": null,
     "high": null,
     "speciesCounted": 0,
-    "speciesTotal": 0,
+    "speciesTotal": 1,
     "complete": false
   }
 }

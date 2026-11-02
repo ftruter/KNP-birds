@@ -8,13 +8,78 @@
   },
   "summary": "Field notes for this family are still to be written.",
   "sampleData": true,
-  "species": [],
+  "species": [
+    {
+      "slug": "anastomus-lamelligerus",
+      "scientificName": "Anastomus lamelligerus",
+      "names": {
+        "en": "African Openbill",
+        "af": "Oopbekooievaar"
+      }
+    },
+    {
+      "slug": "ciconia-abdimii",
+      "scientificName": "Ciconia abdimii",
+      "names": {
+        "en": "Abdim’s Stork",
+        "af": "Kleinswartooievaar"
+      }
+    },
+    {
+      "slug": "ciconia-ciconia",
+      "scientificName": "Ciconia ciconia",
+      "names": {
+        "en": "White Stork",
+        "af": "Witooievaar"
+      }
+    },
+    {
+      "slug": "ciconia-microscelis",
+      "scientificName": "Ciconia microscelis",
+      "names": {
+        "en": "African Woolly-necked Stork",
+        "af": "Wolnekooievaar"
+      }
+    },
+    {
+      "slug": "ciconia-nigra",
+      "scientificName": "Ciconia nigra",
+      "names": {
+        "en": "Black Stork",
+        "af": "Grootswartooievaar"
+      }
+    },
+    {
+      "slug": "ephippiorhynchus-senegalensis",
+      "scientificName": "Ephippiorhynchus senegalensis",
+      "names": {
+        "en": "Saddle-billed Stork",
+        "af": "Saalbekooievaar"
+      }
+    },
+    {
+      "slug": "leptoptilos-crumenifer",
+      "scientificName": "Leptoptilos crumenifer",
+      "names": {
+        "en": "Marabou Stork",
+        "af": "Maraboe"
+      }
+    },
+    {
+      "slug": "mycteria-ibis",
+      "scientificName": "Mycteria ibis",
+      "names": {
+        "en": "Yellow-billed Stork",
+        "af": "Nimmersat"
+      }
+    }
+  ],
   "iconicSpecies": [],
   "population": {
     "low": null,
     "high": null,
     "speciesCounted": 0,
-    "speciesTotal": 0,
+    "speciesTotal": 8,
     "complete": false
   }
 }

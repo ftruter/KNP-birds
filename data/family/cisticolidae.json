@@ -8,13 +8,182 @@
   },
   "summary": "Field notes for this family are still to be written.",
   "sampleData": true,
-  "species": [],
+  "species": [
+    {
+      "slug": "apalis-flavida",
+      "scientificName": "Apalis flavida",
+      "names": {
+        "en": "Yellow-breasted Apalis",
+        "af": "Geelborskleinjantjie"
+      }
+    },
+    {
+      "slug": "apalis-ruddi",
+      "scientificName": "Apalis ruddi",
+      "names": {
+        "en": "Rudd’s Apalis",
+        "af": "Ruddkleinjantjie"
+      }
+    },
+    {
+      "slug": "apalis-thoracica",
+      "scientificName": "Apalis thoracica",
+      "names": {
+        "en": "Bar-throated Apalis",
+        "af": "Bandkeelkleinjantjie"
+      }
+    },
+    {
+      "slug": "calamonastes-fasciolatus",
+      "scientificName": "Calamonastes fasciolatus",
+      "names": {
+        "en": "Barred Wren-Warbler",
+        "af": "Gebande Sanger"
+      }
+    },
+    {
+      "slug": "calamonastes-stierlingi",
+      "scientificName": "Calamonastes stierlingi",
+      "names": {
+        "en": "Stierling’s Wren-Warbler",
+        "af": "Stierlingsanger"
+      }
+    },
+    {
+      "slug": "camaroptera-brachyura",
+      "scientificName": "Camaroptera brachyura",
+      "names": {
+        "en": "Bleating Camaroptera",
+        "af": "Kwêkwêvoël"
+      }
+    },
+    {
+      "slug": "cisticola-aberrans",
+      "scientificName": "Cisticola aberrans",
+      "names": {
+        "en": "Rock-loving (Lazy) Cisticola",
+        "af": "Luitinktinkie"
+      }
+    },
+    {
+      "slug": "cisticola-aridulus",
+      "scientificName": "Cisticola aridulus",
+      "names": {
+        "en": "Desert Cisticola",
+        "af": "Woestynklopkloppie"
+      }
+    },
+    {
+      "slug": "cisticola-chiniana",
+      "scientificName": "Cisticola chiniana",
+      "names": {
+        "en": "Rattling Cisticola",
+        "af": "Bosveldtinktinkie"
+      }
+    },
+    {
+      "slug": "cisticola-erythrops",
+      "scientificName": "Cisticola erythrops",
+      "names": {
+        "en": "Red-faced Cisticola",
+        "af": "Rooiwangtinktinkie"
+      }
+    },
+    {
+      "slug": "cisticola-fulvicapilla",
+      "scientificName": "Cisticola fulvicapilla",
+      "names": {
+        "en": "Neddicky",
+        "af": "Neddikkie"
+      }
+    },
+    {
+      "slug": "cisticola-galactotes",
+      "scientificName": "Cisticola galactotes",
+      "names": {
+        "en": "Rufous-winged Cisticola",
+        "af": "Swartrugtinktinkie"
+      }
+    },
+    {
+      "slug": "cisticola-juncidis",
+      "scientificName": "Cisticola juncidis",
+      "names": {
+        "en": "Zitting Cisticola",
+        "af": "Landeryklopkloppie"
+      }
+    },
+    {
+      "slug": "cisticola-natalensis",
+      "scientificName": "Cisticola natalensis",
+      "names": {
+        "en": "Croaking Cisticola",
+        "af": "Groottinktinkie"
+      }
+    },
+    {
+      "slug": "cisticola-tinniens",
+      "scientificName": "Cisticola tinniens",
+      "names": {
+        "en": "Levaillant’s Cisticola",
+        "af": "Vleitinktinkie"
+      }
+    },
+    {
+      "slug": "eremomela-icteropygialis",
+      "scientificName": "Eremomela icteropygialis",
+      "names": {
+        "en": "Yellow-bellied Eremomela",
+        "af": "Geelpensbossanger"
+      }
+    },
+    {
+      "slug": "eremomela-scotops",
+      "scientificName": "Eremomela scotops",
+      "names": {
+        "en": "Green-capped Eremomela",
+        "af": "Donkerwangbossanger"
+      }
+    },
+    {
+      "slug": "eremomela-usticollis",
+      "scientificName": "Eremomela usticollis",
+      "names": {
+        "en": "Burnt-necked Eremomela",
+        "af": "Bruinkeelbossanger"
+      }
+    },
+    {
+      "slug": "prinia-flavicans",
+      "scientificName": "Prinia flavicans",
+      "names": {
+        "en": "Black-chested Prinia",
+        "af": "Swartbandlangstertjie"
+      }
+    },
+    {
+      "slug": "prinia-hypoxantha",
+      "scientificName": "Prinia hypoxantha",
+      "names": {
+        "en": "Drakensberg Prinia",
+        "af": "Drakensberglangstertjie"
+      }
+    },
+    {
+      "slug": "prinia-subflava",
+      "scientificName": "Prinia subflava",
+      "names": {
+        "en": "Tawny-flanked Prinia",
+        "af": "Bruinsylangstertjie"
+      }
+    }
+  ],
   "iconicSpecies": [],
   "population": {
     "low": null,
     "high": null,
     "speciesCounted": 0,
-    "speciesTotal": 0,
+    "speciesTotal": 21,
     "complete": false
   }
 }

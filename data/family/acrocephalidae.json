@@ -7,13 +7,78 @@
   },
   "summary": "Field notes for this family are still to be written.",
   "sampleData": true,
-  "species": [],
+  "species": [
+    {
+      "slug": "acrocephalus-arundinaceus",
+      "scientificName": "Acrocephalus arundinaceus",
+      "names": {
+        "en": "Great Reed Warbler",
+        "af": "Grootrietsanger"
+      }
+    },
+    {
+      "slug": "acrocephalus-gracilirostris",
+      "scientificName": "Acrocephalus gracilirostris",
+      "names": {
+        "en": "Lesser Swamp Warbler",
+        "af": "Kaapse Rietsanger"
+      }
+    },
+    {
+      "slug": "acrocephalus-palustris",
+      "scientificName": "Acrocephalus palustris",
+      "names": {
+        "en": "Marsh Warbler",
+        "af": "Europese Rietsanger"
+      }
+    },
+    {
+      "slug": "acrocephalus-schoenobaenus",
+      "scientificName": "Acrocephalus schoenobaenus",
+      "names": {
+        "en": "Sedge Warbler",
+        "af": "Europese Vleisanger"
+      }
+    },
+    {
+      "slug": "acrocephalus-scirpaceus",
+      "scientificName": "Acrocephalus scirpaceus",
+      "names": {
+        "en": "Common Reed Warbler",
+        "af": "Kleinrietsanger"
+      }
+    },
+    {
+      "slug": "hippolais-icterina",
+      "scientificName": "Hippolais icterina",
+      "names": {
+        "en": "Icterine Warbler",
+        "af": "Spotsanger"
+      }
+    },
+    {
+      "slug": "hippolais-olivetorum",
+      "scientificName": "Hippolais olivetorum",
+      "names": {
+        "en": "Olive-tree Warbler",
+        "af": "Olyfboomsanger"
+      }
+    },
+    {
+      "slug": "iduna-natalensis",
+      "scientificName": "Iduna natalensis",
+      "names": {
+        "en": "African (Dark-capped) Yellow Warbler",
+        "af": "Geelsanger"
+      }
+    }
+  ],
   "iconicSpecies": [],
   "population": {
     "low": null,
     "high": null,
     "speciesCounted": 0,
-    "speciesTotal": 0,
+    "speciesTotal": 8,
     "complete": false
   }
 }

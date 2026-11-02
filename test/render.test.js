@@ -4,10 +4,13 @@ import {
   renderFamiliesIndexHtml,
   renderFamilyHtml,
   renderSpeciesHtml,
+  renderSpeciesIndexHtml,
 } from '../src/html.js'
+import { UNPUBLISHED_SPECIES } from '../src/guide.js'
 import {
   renderFamiliesIndexMarkdown,
   renderFamilyMarkdown,
+  renderSpeciesIndexMarkdown,
   renderSpeciesMarkdown,
 } from '../src/markdown.js'
 import { colourMapFromDoc } from '../src/store.js'
@@ -101,7 +104,7 @@ test('species HTML has the six comparisons, population, and no client script', a
 })
 
 test('escaped names cannot inject markup, and AI images are labelled', async () => {
-  const doc = await readJson('data/species/haliaeetus-vocifer.json')
+  const doc = await readJson('data/species/icthyophaga-vocifer.json')
   doc.commonNames = { en: '<script>alert(1)</script>' }
   doc.images = [
     {
@@ -164,7 +167,7 @@ test('a family page shows the derived approximate total', async () => {
     plates: [{ doc: roller, imagesAvailable: {} }],
   })
   assert.match(html, /Approximate total/)
-  assert.match(html, /Includes 0 of 1 species/)
+  assert.match(html, /Includes 0 of 5 species/)
   assert.match(html, /This total is incomplete/)
   assert.match(html, /First to look for/)
   assert.ok(
@@ -177,12 +180,12 @@ test('a family page shows the derived approximate total', async () => {
     { doc: roller, imagesAvailable: {} },
   ])
   assert.match(markdown, /\*\*Approximate total\.\*\*/)
-  assert.match(markdown, /Includes 0 of 1 species/)
+  assert.match(markdown, /Includes 0 of 5 species/)
   assert.match(markdown, /This total is incomplete/)
   assert.match(markdown, /## First to look for/)
 })
 
-test('a family stub lists no species and does not invent an Afrikaans name', async () => {
+test('a family page lists its species and an empty family does not invent an Afrikaans name', async () => {
   const kingfishers = await readJson('data/family/alcedinidae.json')
   const html = renderFamilyHtml({
     origin: 'https://birds.truter.world',
@@ -191,16 +194,39 @@ test('a family stub lists no species and does not invent an Afrikaans name', asy
   })
   assert.match(html, /Kingfishers/)
   assert.match(html, /class="afrikaans">Visvangers</)
-  assert.match(
+  assert.match(html, /href="\/species\/corythornis-cristatus"/)
+  assert.match(html, /Malachite Kingfisher/)
+  assert.doesNotMatch(html, /First to look for/)
+  assert.doesNotMatch(
     html,
     /No species from this family are published in this copy yet/,
   )
-  assert.doesNotMatch(html, /First to look for/)
-  assert.doesNotMatch(html, /<ul class="species-list">/)
   const markdown = renderFamilyMarkdown(kingfishers, [])
   assert.match(markdown, /Visvangers/)
-  assert.match(markdown, /No species from this family are published/)
+  assert.match(
+    markdown,
+    /\[Malachite Kingfisher\]\(\/species\/corythornis-cristatus\)/,
+  )
   assert.doesNotMatch(markdown, /## First to look for/)
+  assert.doesNotMatch(markdown, /No species from this family are published/)
+  const empty = {
+    ...kingfishers,
+    species: [],
+    iconicSpecies: [],
+    commonNames: { en: 'Kingfishers' },
+    population: { ...kingfishers.population, speciesTotal: 0 },
+  }
+  const emptyHtml = renderFamilyHtml({
+    origin: 'https://birds.truter.world',
+    doc: empty,
+    plates: [],
+  })
+  assert.match(
+    emptyHtml,
+    /No species from this family are published in this copy yet/,
+  )
+  assert.doesNotMatch(emptyHtml, /class="afrikaans"/)
+  assert.doesNotMatch(emptyHtml, /<ul class="species-list">/)
 
   const warblers = await readJson('data/family/acrocephalidae.json')
   const unnamed = renderFamilyHtml({
@@ -264,11 +290,96 @@ test('markdown and json-facing copy keep the population label', async () => {
       ['blue', '#2A5A9A'],
     ]),
   })
-  assert.match(markdown, /^# Southern Ground Hornbill/)
+  assert.match(markdown, /^# Southern Ground-Hornbill/)
   assert.match(markdown, /text\/markdown|Also available as \[HTML\]/)
   assert.match(markdown, /\*\*Approximate estimate\.\*\*/)
   assert.match(markdown, /to be researched/)
   assert.match(markdown, /No visible difference/)
   assert.match(markdown, /red \(#B4232C\)/)
   assert.match(markdown, /Sample content, to be verified/)
+})
+
+test('a species stub states that details are unpublished and skips empty sections', async () => {
+  const doc = await readJson('data/species/struthio-camelus.json')
+  const html = renderSpeciesHtml({
+    origin: 'https://birds.truter.world',
+    doc,
+    colourMap: new Map(),
+    imagesAvailable: {},
+  })
+  assert.match(html, /<h1>Common Ostrich<\/h1>/)
+  assert.match(html, /class="latin">Struthio camelus</)
+  assert.match(html, /class="afrikaans">Volstruis</)
+  assert.match(html, new RegExp(UNPUBLISHED_SPECIES))
+  assert.match(html, /href="\/family\/struthionidae"/)
+  assert.match(html, /No numeric estimate yet/)
+  assert.match(html, /to be researched/)
+  assert.doesNotMatch(html, /Telling it apart/)
+  assert.doesNotMatch(html, /Chick and juvenile/)
+  assert.doesNotMatch(html, /No photograph is stored/)
+  assert.doesNotMatch(html, /No visible difference/)
+  assert.doesNotMatch(html, /<script/i)
+  const headings = [...html.matchAll(/<h([1-6])\b/g)].map((match) =>
+    Number(match[1]),
+  )
+  let previous = 0
+  for (const level of headings) {
+    assert.ok(level <= previous + 1, `heading jumped to ${level}`)
+    previous = level
+  }
+  const markdown = renderSpeciesMarkdown({ doc, colourMap: new Map() })
+  assert.match(markdown, /^# Common Ostrich/)
+  assert.match(markdown, /Volstruis/)
+  assert.match(markdown, new RegExp(UNPUBLISHED_SPECIES))
+  assert.match(markdown, /\[Struthionidae\]\(\/family\/struthionidae\)/)
+  assert.doesNotMatch(markdown, /## Photographs/)
+  assert.doesNotMatch(markdown, /## Telling it apart/)
+  assert.match(markdown, /## Population/)
+  const unnamed = structuredClone(doc)
+  delete unnamed.commonNames.af
+  const bare = renderSpeciesHtml({
+    origin: 'https://birds.truter.world',
+    doc: unnamed,
+    colourMap: new Map(),
+    imagesAvailable: {},
+  })
+  assert.doesNotMatch(bare, /class="afrikaans"/)
+  assert.doesNotMatch(bare, />null</)
+  const bareMd = renderSpeciesMarkdown({
+    doc: unnamed,
+    colourMap: new Map(),
+  })
+  assert.doesNotMatch(bareMd, /Volstruis/)
+  assert.doesNotMatch(bareMd, /null/)
+})
+
+test('the species index lists every scientific name and skips a missing Afrikaans name', () => {
+  const doc = {
+    'Bucorvus leadbeateri': {
+      en: 'Southern Ground-Hornbill',
+      af: 'Bromvoël',
+      population: null,
+    },
+    'Struthio camelus': {
+      en: 'Common Ostrich',
+      af: null,
+      population: null,
+    },
+  }
+  const html = renderSpeciesIndexHtml({
+    origin: 'https://birds.truter.world',
+    doc,
+  })
+  assert.match(html, /href="\/species\/struthio-camelus"/)
+  assert.match(html, /href="\/species\/bucorvus-leadbeateri"/)
+  assert.match(html, /Bromvoël/)
+  assert.match(html, /Approximate estimate: no numeric figure yet/)
+  assert.doesNotMatch(html, />null</)
+  assert.doesNotMatch(html, /about null/)
+  const markdown = renderSpeciesIndexMarkdown(doc)
+  assert.match(
+    markdown,
+    /Common Ostrich\]\(\/species\/struthio-camelus\) \(Struthio camelus\) — Approximate estimate/,
+  )
+  assert.doesNotMatch(markdown, /null/)
 })

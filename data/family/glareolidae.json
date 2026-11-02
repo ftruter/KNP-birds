@@ -8,13 +8,54 @@
   },
   "summary": "Field notes for this family are still to be written.",
   "sampleData": true,
-  "species": [],
+  "species": [
+    {
+      "slug": "cursorius-temminckii",
+      "scientificName": "Cursorius temminckii",
+      "names": {
+        "en": "Temminck’s Courser",
+        "af": "Trekdrawwertjie"
+      }
+    },
+    {
+      "slug": "glareola-nordmanni",
+      "scientificName": "Glareola nordmanni",
+      "names": {
+        "en": "Black-winged Pratincole",
+        "af": "Swartvlerksprinkaanvoël"
+      }
+    },
+    {
+      "slug": "glareola-pratincola",
+      "scientificName": "Glareola pratincola",
+      "names": {
+        "en": "Collared Pratincole",
+        "af": "Rooivlerksprinkaanvoël"
+      }
+    },
+    {
+      "slug": "rhinoptilus-chalcopterus",
+      "scientificName": "Rhinoptilus chalcopterus",
+      "names": {
+        "en": "Bronze-winged Courser",
+        "af": "Bronsvlerkdrawwertjie"
+      }
+    },
+    {
+      "slug": "rhinoptilus-cinctus",
+      "scientificName": "Rhinoptilus cinctus",
+      "names": {
+        "en": "Three-banded Courser",
+        "af": "Driebanddrawwertjie"
+      }
+    }
+  ],
   "iconicSpecies": [],
   "population": {
     "low": null,
     "high": null,
     "speciesCounted": 0,
-    "speciesTotal": 0,
+    "speciesTotal": 5,
     "complete": false
   }
 }

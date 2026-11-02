@@ -1,0 +1,28 @@
+{
+  "kind": "species",
+  "slug": "uraeginthus-angolensis",
+  "scientificName": "Uraeginthus angolensis",
+  "commonNames": {
+    "en": "Blue Waxbill",
+    "af": "Gewone Blousysie"
+  },
+  "family": "estrildidae",
+  "summary": "The details for this species have not been published yet.",
+  "sampleData": true,
+  "population": {
+    "estimate": {
+      "low": null,
+      "high": null
+    },
+    "unit": null,
+    "trend": "unknown",
+    "confidence": null,
+    "asOf": null,
+    "notes": "to be researched",
+    "sources": []
+  },
+  "variants": [],
+  "viewNotes": [],
+  "calls": [],
+  "images": []
+}

@@ -8,13 +8,86 @@
   },
   "summary": "Field notes for this family are still to be written.",
   "sampleData": true,
-  "species": [],
+  "species": [
+    {
+      "slug": "apus-affinis",
+      "scientificName": "Apus affinis",
+      "names": {
+        "en": "Little Swift",
+        "af": "Kleinwindswael"
+      }
+    },
+    {
+      "slug": "apus-apus",
+      "scientificName": "Apus apus",
+      "names": {
+        "en": "Common Swift",
+        "af": "Europese Windswael"
+      }
+    },
+    {
+      "slug": "apus-barbatus",
+      "scientificName": "Apus barbatus",
+      "names": {
+        "en": "African Black Swift",
+        "af": "Swartwindswael"
+      }
+    },
+    {
+      "slug": "apus-caffer",
+      "scientificName": "Apus caffer",
+      "names": {
+        "en": "White-rumped Swift",
+        "af": "Witkruiswindswael"
+      }
+    },
+    {
+      "slug": "apus-horus",
+      "scientificName": "Apus horus",
+      "names": {
+        "en": "Horus Swift",
+        "af": "Horuswindswael"
+      }
+    },
+    {
+      "slug": "cypsiurus-parvus",
+      "scientificName": "Cypsiurus parvus",
+      "names": {
+        "en": "African Palm Swift",
+        "af": "Palmwindswael"
+      }
+    },
+    {
+      "slug": "neafrapus-boehmi",
+      "scientificName": "Neafrapus boehmi",
+      "names": {
+        "en": "Böhm’s Spinetail",
+        "af": "Witpensstekelstert"
+      }
+    },
+    {
+      "slug": "tachymarptis-melba",
+      "scientificName": "Tachymarptis melba",
+      "names": {
+        "en": "Alpine Swift",
+        "af": "Witpenswindswael"
+      }
+    },
+    {
+      "slug": "telacanthura-ussheri",
+      "scientificName": "Telacanthura ussheri",
+      "names": {
+        "en": "Mottled Spinetail",
+        "af": "Gevlekte Stekelstert"
+      }
+    }
+  ],
   "iconicSpecies": [],
   "population": {
     "low": null,
     "high": null,
     "speciesCounted": 0,
-    "speciesTotal": 0,
+    "speciesTotal": 9,
     "complete": false
   }
 }

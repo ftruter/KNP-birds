@@ -8,13 +8,30 @@
   },
   "summary": "Field notes for this family are still to be written.",
   "sampleData": true,
-  "species": [],
+  "species": [
+    {
+      "slug": "himantopus-himantopus",
+      "scientificName": "Himantopus himantopus",
+      "names": {
+        "en": "Black-winged Stilt",
+        "af": "Rooipootelsie"
+      }
+    },
+    {
+      "slug": "recurvirostra-avosetta",
+      "scientificName": "Recurvirostra avosetta",
+      "names": {
+        "en": "Pied Avocet",
+        "af": "Bontelsie"
+      }
+    }
+  ],
   "iconicSpecies": [],
   "population": {
     "low": null,
     "high": null,
     "speciesCounted": 0,
-    "speciesTotal": 0,
+    "speciesTotal": 2,
     "complete": false
   }
 }

@@ -7,13 +7,30 @@
   },
   "summary": "Field notes for this family are still to be written.",
   "sampleData": true,
-  "species": [],
+  "species": [
+    {
+      "slug": "terpsiphone-viridis",
+      "scientificName": "Terpsiphone viridis",
+      "names": {
+        "en": "African Paradise Flycatcher",
+        "af": "Paradysvlieëvanger"
+      }
+    },
+    {
+      "slug": "trochocercus-cyanomelas",
+      "scientificName": "Trochocercus cyanomelas",
+      "names": {
+        "en": "Blue-mantled Crested Flycatcher",
+        "af": "Bloukuifvlieëvanger"
+      }
+    }
+  ],
   "iconicSpecies": [],
   "population": {
     "low": null,
     "high": null,
     "speciesCounted": 0,
-    "speciesTotal": 0,
+    "speciesTotal": 2,
     "complete": false
   }
 }

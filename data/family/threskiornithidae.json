@@ -8,13 +8,54 @@
   },
   "summary": "Field notes for this family are still to be written.",
   "sampleData": true,
-  "species": [],
+  "species": [
+    {
+      "slug": "bostrychia-hagedash",
+      "scientificName": "Bostrychia hagedash",
+      "names": {
+        "en": "Hadeda (Hadada) Ibis",
+        "af": "Hadeda"
+      }
+    },
+    {
+      "slug": "geronticus-calvus",
+      "scientificName": "Geronticus calvus",
+      "names": {
+        "en": "Southern Bald Ibis",
+        "af": "Kalkoenibis"
+      }
+    },
+    {
+      "slug": "platalea-alba",
+      "scientificName": "Platalea alba",
+      "names": {
+        "en": "African Spoonbill",
+        "af": "Lepelaar"
+      }
+    },
+    {
+      "slug": "plegadis-falcinellus",
+      "scientificName": "Plegadis falcinellus",
+      "names": {
+        "en": "Glossy Ibis",
+        "af": "Glansibis"
+      }
+    },
+    {
+      "slug": "threskiornis-aethiopicus",
+      "scientificName": "Threskiornis aethiopicus",
+      "names": {
+        "en": "African Sacred Ibis",
+        "af": "Skoorsteenveër"
+      }
+    }
+  ],
   "iconicSpecies": [],
   "population": {
     "low": null,
     "high": null,
     "speciesCounted": 0,
-    "speciesTotal": 0,
+    "speciesTotal": 5,
     "complete": false
   }
 }

@@ -1,0 +1,28 @@
+{
+  "kind": "species",
+  "slug": "tachybaptus-ruficollis",
+  "scientificName": "Tachybaptus ruficollis",
+  "commonNames": {
+    "en": "Little Grebe",
+    "af": "Kleindobbertjie"
+  },
+  "family": "podicipedidae",
+  "summary": "The details for this species have not been published yet.",
+  "sampleData": true,
+  "population": {
+    "estimate": {
+      "low": null,
+      "high": null
+    },
+    "unit": null,
+    "trend": "unknown",
+    "confidence": null,
+    "asOf": null,
+    "notes": "to be researched",
+    "sources": []
+  },
+  "variants": [],
+  "viewNotes": [],
+  "calls": [],
+  "images": []
+}

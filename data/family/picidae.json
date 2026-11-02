@@ -8,13 +8,62 @@
   },
   "summary": "Field notes for this family are still to be written.",
   "sampleData": true,
-  "species": [],
+  "species": [
+    {
+      "slug": "campethera-abingoni",
+      "scientificName": "Campethera abingoni",
+      "names": {
+        "en": "Golden-tailed Woodpecker",
+        "af": "Goudstertspeg"
+      }
+    },
+    {
+      "slug": "campethera-bennettii",
+      "scientificName": "Campethera bennettii",
+      "names": {
+        "en": "Bennett’s Woodpecker",
+        "af": "Bennettspeg"
+      }
+    },
+    {
+      "slug": "chloropicus-namaquus",
+      "scientificName": "Chloropicus namaquus",
+      "names": {
+        "en": "Bearded Woodpecker",
+        "af": "Baardspeg"
+      }
+    },
+    {
+      "slug": "dendropicos-fuscescens",
+      "scientificName": "Dendropicos fuscescens",
+      "names": {
+        "en": "Cardinal Woodpecker",
+        "af": "Kardinaalspeg"
+      }
+    },
+    {
+      "slug": "dendropicos-griseocephalus",
+      "scientificName": "Dendropicos griseocephalus",
+      "names": {
+        "en": "Olive Woodpecker",
+        "af": "Gryskopspeg"
+      }
+    },
+    {
+      "slug": "jynx-ruficollis",
+      "scientificName": "Jynx ruficollis",
+      "names": {
+        "en": "Red-throated Wryneck",
+        "af": "Draaihals"
+      }
+    }
+  ],
   "iconicSpecies": [],
   "population": {
     "low": null,
     "high": null,
     "speciesCounted": 0,
-    "speciesTotal": 0,
+    "speciesTotal": 6,
     "complete": false
   }
 }

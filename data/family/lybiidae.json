@@ -8,13 +8,54 @@
   },
   "summary": "Field notes for this family are still to be written.",
   "sampleData": true,
-  "species": [],
+  "species": [
+    {
+      "slug": "lybius-torquatus",
+      "scientificName": "Lybius torquatus",
+      "names": {
+        "en": "Black-collared Barbet",
+        "af": "Rooikophoutkapper"
+      }
+    },
+    {
+      "slug": "pogoniulus-bilineatus",
+      "scientificName": "Pogoniulus bilineatus",
+      "names": {
+        "en": "Yellow-rumped Tinkerbird",
+        "af": "Swartblestinker"
+      }
+    },
+    {
+      "slug": "pogoniulus-chrysoconus",
+      "scientificName": "Pogoniulus chrysoconus",
+      "names": {
+        "en": "Yellow-fronted Tinkerbird",
+        "af": "Geelblestinker"
+      }
+    },
+    {
+      "slug": "trachyphonus-vaillantii",
+      "scientificName": "Trachyphonus vaillantii",
+      "names": {
+        "en": "Crested Barbet",
+        "af": "Kuifkophoutkapper"
+      }
+    },
+    {
+      "slug": "tricholaema-leucomelas",
+      "scientificName": "Tricholaema leucomelas",
+      "names": {
+        "en": "Acacia Pied Barbet",
+        "af": "Bonthoutkapper"
+      }
+    }
+  ],
   "iconicSpecies": [],
   "population": {
     "low": null,
     "high": null,
     "speciesCounted": 0,
-    "speciesTotal": 0,
+    "speciesTotal": 5,
     "complete": false
   }
 }

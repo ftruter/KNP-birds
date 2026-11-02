@@ -8,13 +8,70 @@
   },
   "summary": "Field notes for this family are still to be written.",
   "sampleData": true,
-  "species": [],
+  "species": [
+    {
+      "slug": "anomalospiza-imberbis",
+      "scientificName": "Anomalospiza imberbis",
+      "names": {
+        "en": "Cuckoo Finch",
+        "af": "Koekoekvink"
+      }
+    },
+    {
+      "slug": "vidua-chalybeata",
+      "scientificName": "Vidua chalybeata",
+      "names": {
+        "en": "Village Indigobird",
+        "af": "Staalblouvinkie"
+      }
+    },
+    {
+      "slug": "vidua-funerea",
+      "scientificName": "Vidua funerea",
+      "names": {
+        "en": "Dusky Indigobird",
+        "af": "Gewone Blouvinkie"
+      }
+    },
+    {
+      "slug": "vidua-macroura",
+      "scientificName": "Vidua macroura",
+      "names": {
+        "en": "Pin-tailed Whydah",
+        "af": "Koningrooibekkie"
+      }
+    },
+    {
+      "slug": "vidua-paradisaea",
+      "scientificName": "Vidua paradisaea",
+      "names": {
+        "en": "Long-tailed Paradise Whydah",
+        "af": "Gewone Paradysvink"
+      }
+    },
+    {
+      "slug": "vidua-purpurascens",
+      "scientificName": "Vidua purpurascens",
+      "names": {
+        "en": "Purple Indigobird",
+        "af": "Witpootblouvinkie"
+      }
+    },
+    {
+      "slug": "vidua-regia",
+      "scientificName": "Vidua regia",
+      "names": {
+        "en": "Shaft-tailed Whydah",
+        "af": "Pylstertrooibekkie"
+      }
+    }
+  ],
   "iconicSpecies": [],
   "population": {
     "low": null,
     "high": null,
     "speciesCounted": 0,
-    "speciesTotal": 0,
+    "speciesTotal": 7,
     "complete": false
   }
 }

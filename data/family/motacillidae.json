@@ -8,13 +8,102 @@
   },
   "summary": "Field notes for this family are still to be written.",
   "sampleData": true,
-  "species": [],
+  "species": [
+    {
+      "slug": "anthus-caffer",
+      "scientificName": "Anthus caffer",
+      "names": {
+        "en": "Bushveld Pipit",
+        "af": "Bosveldkoester"
+      }
+    },
+    {
+      "slug": "anthus-cinnamomeus",
+      "scientificName": "Anthus cinnamomeus",
+      "names": {
+        "en": "African Pipit",
+        "af": "Gewone Koester"
+      }
+    },
+    {
+      "slug": "anthus-leucophrys",
+      "scientificName": "Anthus leucophrys",
+      "names": {
+        "en": "Plain-backed Pipit",
+        "af": "Donkerkoester"
+      }
+    },
+    {
+      "slug": "anthus-lineiventris",
+      "scientificName": "Anthus lineiventris",
+      "names": {
+        "en": "Striped Pipit",
+        "af": "Gestreepte Koester"
+      }
+    },
+    {
+      "slug": "anthus-nicholsoni",
+      "scientificName": "Anthus nicholsoni",
+      "names": {
+        "en": "Nicholson’s Pipit",
+        "af": "Nicholsonkoester"
+      }
+    },
+    {
+      "slug": "anthus-vaalensis",
+      "scientificName": "Anthus vaalensis",
+      "names": {
+        "en": "Buffy Pipit",
+        "af": "Vaalkoester"
+      }
+    },
+    {
+      "slug": "macronyx-croceus",
+      "scientificName": "Macronyx croceus",
+      "names": {
+        "en": "Yellow-throated Longclaw",
+        "af": "Geelkeelkalkoentjie"
+      }
+    },
+    {
+      "slug": "motacilla-aguimp",
+      "scientificName": "Motacilla aguimp",
+      "names": {
+        "en": "African Pied Wagtail",
+        "af": "Bontkwikkie"
+      }
+    },
+    {
+      "slug": "motacilla-capensis",
+      "scientificName": "Motacilla capensis",
+      "names": {
+        "en": "Cape Wagtail",
+        "af": "Gewone Kwikkie"
+      }
+    },
+    {
+      "slug": "motacilla-clara",
+      "scientificName": "Motacilla clara",
+      "names": {
+        "en": "Mountain Wagtail",
+        "af": "Bergkwikkie"
+      }
+    },
+    {
+      "slug": "motacilla-flava",
+      "scientificName": "Motacilla flava",
+      "names": {
+        "en": "Western Yellow Wagtail",
+        "af": "Geelkwikkie"
+      }
+    }
+  ],
   "iconicSpecies": [],
   "population": {
     "low": null,
     "high": null,
     "speciesCounted": 0,
-    "speciesTotal": 0,
+    "speciesTotal": 11,
     "complete": false
   }
 }
