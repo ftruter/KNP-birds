@@ -95,7 +95,7 @@ export const diffAge = (variants) => {
     status,
     notice: noticeFor(
       status,
-      'This sample describes only one age, so the ages cannot be compared.',
+      'Only one age is described, so the ages cannot be compared.',
     ),
     columns,
     rows,
@@ -197,7 +197,7 @@ export const diffSex = (variants) => {
     rows,
     ['Male', 'Female'],
     comparable,
-    'This sample does not describe both sexes.',
+    'Both sexes are not described.',
   )
 }
 
@@ -237,7 +237,7 @@ export const diffSeason = (variants) => {
     rows,
     [SEASON_LABEL['non-breeding'], SEASON_LABEL.breeding],
     comparable,
-    'This sample does not describe both seasons.',
+    'Both seasons are not described.',
   )
 }
 
@@ -341,7 +341,7 @@ export const diffFlight = (variants, viewNotes) => {
     status,
     notice: noticeFor(
       status,
-      'Wing colour from above and below is not described in this sample.',
+      'Wing colour from above and below is not described.',
     ),
     columns: rows.length > 0 ? ['From above', 'From below'] : [],
     rows,
@@ -395,7 +395,7 @@ export const diffCalls = (calls) => {
   let notice = NO_VISIBLE_DIFFERENCE
   if (list.length === 0) {
     status = 'not-described'
-    notice = 'Calls are not described in this sample.'
+    notice = 'Calls are not described.'
   } else if (male.length > 0 || female.length > 0) {
     status = 'differs'
     notice = null

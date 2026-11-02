@@ -7,6 +7,10 @@ import {
   SAMPLE_NOTICE,
   afrikaansName,
   EMPTY_FAMILY_SPECIES,
+  EMPTY_INDEX,
+  FAMILY_SPECIES_HEADING,
+  catalogSentence,
+  listIntro,
   englishName,
   speciesDetailsPublished,
   UNPUBLISHED_SPECIES,
@@ -39,7 +43,7 @@ export const renderHomeHtml = ({ origin, speciesIndex, familiesIndex }) => {
   const main = `
 <h1>Birds of Kruger National Park</h1>
 <p>An open field guide to the birds of Kruger National Park and neighbouring Marloth Park. It is written for people and for AI agents. Pages are rendered on the server. Nothing here needs JavaScript.</p>
-<p>The full list is resident species, plus summer migrants. Rare vagrants are left out. ${countSentence(species.length, families.length, speciesIndex, familiesIndex)}</p>
+<p>The full list is resident species, plus summer migrants. Rare vagrants are left out. ${escapeHtml(catalogSentence(species.length, families.length, speciesIndex, familiesIndex))}</p>
 <h2>What these pages compare</h2>
 <ol>
 <li>Chicks and juveniles against adults</li>
@@ -80,7 +84,7 @@ export const renderSpeciesIndexHtml = ({ origin, doc }) => {
   const list = indexRows(doc)
   const main = `
 <h1>Species</h1>
-<p>${list.length === 0 ? 'No species have been published yet.' : `${list.length} ${list.length === 1 ? 'species is' : 'species are'} published in this copy. The list is alphabetical by scientific name.`}</p>
+<p>${escapeHtml(listIntro(list.length, 'species', 'species'))}</p>
 <ul class="species-list">
 ${list.map((entry) => `<li><a href="/species/${escapeHtml(entry.slug)}">${escapeHtml(englishName(entry))}</a> <em>${escapeHtml(entry.scientificName)}</em>${afrikaansName(entry) ? ` — ${escapeHtml(afrikaansName(entry))}` : ''} — ${escapeHtml(indexPopulationLine(entry.population, 'Approximate estimate'))}</li>`).join('\n')}
 </ul>`
@@ -99,7 +103,7 @@ export const renderFamiliesIndexHtml = ({ origin, doc }) => {
   const list = indexRows(doc)
   const main = `
 <h1>Families</h1>
-<p>Alphabetical by scientific name.</p>
+<p>${escapeHtml(listIntro(list.length, 'family', 'families'))}</p>
 <ul class="species-list">
 ${list.map((entry) => `<li><a href="/family/${escapeHtml(entry.slug)}">${escapeHtml(englishName(entry))}</a> <em>${escapeHtml(entry.scientificName)}</em>${afrikaansName(entry) ? ` — ${escapeHtml(afrikaansName(entry))}` : ''} — ${escapeHtml(familyIndexPopulationLine(entry.population))}</li>`).join('\n')}
 </ul>`
@@ -125,7 +129,7 @@ ${afrikaansName(doc) ? `<p class="afrikaans">${escapeHtml(afrikaansName(doc))}</
 ${paragraphs(doc.summary)}
 ${familyPopulationHtml(doc.population)}
 ${iconicHtml(plates)}
-<h2>Species in this copy</h2>
+<h2>${FAMILY_SPECIES_HEADING}</h2>
 ${familySpeciesList(species)}`
   return layout({
     title: `${englishName(doc)} · KNP Birds`,
@@ -533,19 +537,9 @@ const paragraphs = (text) =>
 
 const entries = (doc) => (Array.isArray(doc?.entries) ? doc.entries : [])
 
-const countSentence = (
-  speciesCount,
-  familyCount,
-  speciesIndex,
-  familiesIndex,
-) =>
-  !speciesIndex && !familiesIndex
-    ? 'The species and family lists have not been loaded yet.'
-    : `This copy has ${speciesCount} ${speciesCount === 1 ? 'species' : 'species'} and ${familyCount} ${familyCount === 1 ? 'family' : 'families'} loaded.`
-
 const linkList = (items, href, label) =>
   items.length === 0
-    ? '<p>Nothing is published here yet.</p>'
+    ? `<p>${escapeHtml(EMPTY_INDEX)}</p>`
     : `<ul class="species-list">
 ${items.map((item) => `<li><a href="${escapeHtml(href(item))}">${escapeHtml(label(item))}</a></li>`).join('\n')}
 </ul>`

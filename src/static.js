@@ -78,7 +78,7 @@ When both sides are described and no mark differs, the page says "No visible dif
 
 A species with empty \`variants\`, \`viewNotes\`, \`calls\`, and \`images\` has not had its field details published. The page says "The details for this species have not been published yet." and skips those sections. \`status\` and \`size\` may be omitted until they are known. \`population\` is still present, with null figures. The Afrikaans line is omitted when \`af\` is missing.
 
-\`population\` is an approximate KNP estimate: \`estimate.low\`, \`estimate.high\`, \`unit\`, \`trend\`, \`confidence\`, \`asOf\`, \`notes\`, and \`sources\`. Sample species leave the numbers null. A pair counts as two individuals when totals are added up.
+\`population\` is an approximate KNP estimate: \`estimate.low\`, \`estimate.high\`, \`unit\`, \`trend\`, \`confidence\`, \`asOf\`, \`notes\`, and \`sources\`. Species leave the numbers null until an estimate is entered. A pair counts as two individuals when totals are added up.
 
 Each family embeds its species and a population total. \`iconicSpecies\` is up to three species slugs, most numerous first (the midpoint of low and high, in individuals). Species with no estimate are left out, so the list is empty when every figure is still null. The family page shows those species and their photographs first, then the full list.
 

@@ -2,7 +2,7 @@
 
 KV stores one JSON document per key. This file describes those documents. The machine-readable schema is [`content.schema.json`](content.schema.json) (JSON Schema draft 2020-12).
 
-Colour names are not enumerated in the schema. They must match `vocab/colours`, and the tests check the sample species against that list.
+Colour names are not enumerated in the schema. They must match `vocab/colours`, and the tests check species that record field marks against that list.
 
 ## Keys and URLs
 
@@ -122,7 +122,7 @@ There is no formal bird census for Kruger. `population` is an approximate estima
 | `notes` | Plain text. |
 | `sources` | Citations: `title`, `url`, `publisher`, `year`. `url`, `publisher`, and `year` may be null. |
 
-The page renders a range (`low–high`, `at least low`, or `up to high`) with the label **Approximate estimate**, then the trend, the note, and the sources. Sample species in this repository set `estimate` to null, `trend` to `unknown`, and `notes` to `to be researched`. They do not invent counts.
+The page renders a range (`low–high`, `at least low`, or `up to high`) with the label **Approximate estimate**, then the trend, the note, and the sources. Species in this repository set `estimate` to null, `trend` to `unknown`, and `notes` to `to be researched`. They do not invent counts.
 
 ### Unpublished species
 
@@ -134,7 +134,7 @@ The page says "The details for this species have not been published yet." It doe
 
 `kind` is `"family"`. `slug` is the scientific family name in lowercase (`coraciidae`). The family's own `commonNames`, `summary`, and `sampleData` are written by hand. Two fields are derived by `scripts/seed.mjs` from the species files and are not edited by hand:
 
-`species` is every species whose `family` slug matches, sorted by scientific name. Each item is `{ slug, scientificName, names: { en, af } }`. `names.af` is omitted when the species has no Afrikaans name. A family page can list them without reading every species document. The array may be empty when no species from that family are published yet. `iconicSpecies` is then empty too. The page says that no species from the family are published in this copy, and it omits the Afrikaans line when `commonNames.af` is absent. It does not invent a name.
+`species` is every species whose `family` slug matches, sorted by scientific name. Each item is `{ slug, scientificName, names: { en, af } }`. `names.af` is omitted when the species has no Afrikaans name. A family page can list them without reading every species document. The array may be empty when no species document uses that family. `iconicSpecies` is then empty too. The page says that no species from the family are listed, and it omits the Afrikaans line when `commonNames.af` is absent. It does not invent a name.
 
 `iconicSpecies` is an ordered list of up to three species slugs from that family, the ones with the highest population. Prevalence is the midpoint of `low` and `high` after converting to individuals (`pairs` and `breeding pairs` count as two). Species with no estimate are left out. When none of the species has an estimate, `iconicSpecies` is empty, including when the family has no published species yet. Ties are broken by scientific name, case-insensitive. The family page shows these species, and their photographs, before the rest of the list.
 
@@ -149,7 +149,7 @@ The page says "The details for this species have not been published yet." It doe
 
 A species counts only when `estimate.low` and `estimate.high` are both integers and `unit` is set. `individuals` are added as they are. `pairs` and `breeding pairs` count as two individuals each. The family total is always in individuals.
 
-The page labels it **Approximate total** and says how many species are included. When `complete` is false it says the total is incomplete. The sample families have null species estimates, so their totals are null, `speciesCounted` is 0, and `complete` is false. A family with no published species uses the same null bounds, with `speciesTotal` 0.
+The page labels it **Approximate total** and says how many species are included. When `complete` is false it says the total is incomplete. Every family in the repository has null species estimates, so the totals are null, `speciesCounted` is 0, and `complete` is false. A family with no species uses the same null bounds, with `speciesTotal` 0.
 
 `node scripts/seed.mjs --write` rewrites these fields, and the indexes below, from the species files. The families index stores an unknown total as `0`, not `null`, so the command reproduces `data/index/families.json`. Species index entries stay `null` until a species estimate exists.
 
