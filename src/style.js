@@ -263,6 +263,7 @@ th { color: var(--heading); font-weight: 700; }
 }
 
 .plate img, .plate-art { display: block; width: 100%; height: auto; }
+audio { display: block; width: 100%; margin-top: 0.4rem; }
 .plate-art .sky { fill: var(--plate-bg); }
 .plate-art .ground { fill: var(--plate-ground); }
 .plate-art .ink { stroke: var(--plate-ink); fill: none; }

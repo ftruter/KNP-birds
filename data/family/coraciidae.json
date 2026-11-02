@@ -7,7 +7,7 @@
     "af": "Troupante"
   },
   "summary": "Rollers are compact, colourful birds that often perch in the open and chase insects in flight. The list on this page includes every roller recorded for Kruger.",
-  "sampleData": true,
+  "sampleData": false,
   "species": [
     {
       "slug": "coracias-caudatus",

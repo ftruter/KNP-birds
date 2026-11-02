@@ -30,14 +30,18 @@ No extension is HTML. `.md` is Markdown (`text/markdown; charset=utf-8`). `.json
 | `slug`, `scientificName` | Identity. The slug matches the KV key. |
 | `commonNames.en` | English name. `commonNames.af` is optional Afrikaans. |
 | `family` | Family slug. |
-| `status` | `resident` or `summer-migrant`. Omitted when it has not been published. Vagrants are not in the list. |
+| `status` | `resident`, `intra-african-migrant`, or `palearctic-migrant`. `summer-migrant` remains valid for older documents. Omitted when it has not been published. Vagrants are not in the list. |
 | `size.lengthCm` | `{ "min", "max" }` in centimetres, plus an optional `note`. The whole `size` object is omitted when length has not been published. |
 | `summary` | A short plain-language description. |
-| `sampleData` | `true` while the text is still a sample. The page says "Sample content, to be verified." |
+| `sampleData` | `true` while the text is still a sample. The page says "Sample content, to be verified." `false` once the species text is sourced. |
+| `monthsPresent` | Optional. Months the species is present in Kruger, as integers `1`–`12`. All twelve means all year. |
+| `habitat` | Optional. One plain sentence on habitat in Kruger. |
+| `similar` | Optional. Other species and how to tell them apart. Each item is `{ slug, note }`. |
+| `sources` | Optional bibliography for the species text. Same shape as a population citation. Population sources stay on `population.sources`. |
 | `variants` | Plumage described as structured marks. An empty array means the marks have not been published. See below. |
-| `viewNotes` | Optional notes for flight and perched views. Not variants. |
+| `viewNotes` | Optional notes for flight and perched views. Not variants. A note may set `age`, `sex`, and `season` when the view differs by variant. Omitted, those three mean `any`. |
 | `calls` | Vocalisations. |
-| `images` | Photographs in the R2 bucket. May be empty. |
+| `images` | Photographs. May be empty. A file can live in the R2 bucket or, until an upload exists, only as metadata plus `fileUrl`. |
 | `population` | An approximate Kruger population estimate. See below. |
 
 ### Variants and marks
@@ -74,25 +78,27 @@ The page does not store comparison prose. It diffs the variants.
 3. **Male vs female.** Same rule, with `sex: "any"` applying to both.
 4. **In flight, above vs below.** `wings.above` is compared with `wings.below` on the best-described age (adult first). Optional `viewNotes` tagged `flight-above` and `flight-below` are shown with that diff. These are not extra variants.
 5. **Perched or walking, front vs back vs side.** Optional notes tagged `perched-front`, `perched-back`, and `perched-side`. Photographs use the same tags.
-6. **Calls, males vs females.** The `calls` array. Entries with `sex: "any"` are shared. When only shared calls exist, the page says "No visible difference".
+6. **Calls, males vs females.** The `calls` array. Entries with `sex: "any"` are shared. When only shared calls exist, the page says "No visible difference". The call text itself says when the sexes sound alike.
 
 "No visible difference" is used only when both sides are described and no recorded mark differs. A side with no variant is "not described", which is not the same claim.
 
 ### View notes and images
 
 ```json
-{ "view": "perched-side", "note": "Lilac breast and long outer tail streamers." }
+{ "view": "perched-side", "age": "adult", "sex": "any", "season": "any", "note": "Lilac breast and long outer tail streamers." }
 ```
 
-`view` is `flight-above`, `flight-below`, `perched-front`, `perched-back`, or `perched-side`.
+`view` is `flight-above`, `flight-below`, `perched-front`, `perched-back`, or `perched-side`. `age`, `sex`, and `season` are optional. The flight and perched comparisons use the adult note when one is set, and show other ages underneath. A note with no age still applies to the comparison.
 
 Each image:
 
 | Field | Meaning |
 | --- | --- |
-| `key` | R2 object key, served at `/images/<key>`. |
+| `key` | Object key. When the file is in the R2 bucket it is served at `/images/<key>`. |
 | `view`, `age`, `sex`, `season` | Same vocabularies as variants and view notes. |
-| `source` | Source URL, or another short source note. The credits page copies this to `sourceUrl`. |
+| `source` | Source page URL, or another short source note. The credits page copies this to `sourceUrl`. |
+| `fileUrl` | Optional file URL used for display when the photograph is not in the R2 bucket. It may be the original file or a rendition the licence already allows, such as a Wikimedia thumbnail. ND items are not displayed this way. |
+| `hosted` | Optional. `false` means the file is not in the R2 bucket. The page then shows `fileUrl` when the licence allows display, and does not link a missing `/images/` object. |
 | `author` | Who made the photograph. |
 | `license` | Licence name, for example `CC BY 4.0`. The field name stays `license`. The credits page copies it to `licence`. |
 | `licenceUrl` | Optional. A link to the licence terms, or `null` when there is no URL. Omitted when it has not been filled in. |
@@ -110,7 +116,9 @@ Each image:
 }
 ```
 
-`type` is `song`, `call`, `alarm`, `contact`, `duet`, or `other`. `description` is one short sentence. A recording, when present, has an R2 `key` (served at `/audio/<key>`), plus the same attribution as an image: `source`, `author`, `license`, and an optional `licenceUrl`. `aiGenerated` is optional on a recording. The credits page treats `true` as an AI-generated recording. The call object itself has no attribution fields. Credit is collected from each recording.
+`type` is `song`, `call`, `alarm`, `contact`, `duet`, or `other`. `description` is one short sentence. A recording, when present, has a `key`, plus the same attribution as an image: `source`, `author`, `license`, and an optional `licenceUrl`. `fileUrl` is an optional direct audio URL. `hosted: false` means the file is not in the R2 bucket: the page links `source` and can play `fileUrl`, and it does not link a missing `/audio/` object. `aiGenerated` is optional on a recording. The credits page treats `true` as an AI-generated recording. The call object itself has no attribution fields. Credit is collected from each recording.
+
+Media licences are separate from the Apache-2.0 licence of the code. CC BY, CC BY-SA, CC BY-NC, and CC BY-NC-SA may be shown. ND items are linked rather than displayed if showing them would mean resizing or cropping.
 
 ### Population
 
@@ -126,7 +134,7 @@ There is no formal bird census for Kruger. `population` is an approximate estima
 | `notes` | Plain text. |
 | `sources` | Citations: `title`, `url`, `publisher`, `year`. `url`, `publisher`, and `year` may be null. |
 
-The page renders a range (`low–high`, `at least low`, or `up to high`) with the label **Approximate estimate**, then the trend, the note, and the sources. Species in this repository set `estimate` to null, `trend` to `unknown`, and `notes` to `to be researched`. They do not invent counts.
+The page renders a range (`low–high`, `at least low`, or `up to high`) with the label **Approximate estimate**, then the trend, the note, and the sources. Unpublished species set `estimate` to null, `trend` to `unknown`, and `notes` to `to be researched`. A researched species still uses null numbers when no census figure can be cited. It does not invent a count. The note says so, and `sources` cites what was checked.
 
 ### Unpublished species
 
@@ -177,11 +185,11 @@ The sitemap is built from these two documents, plus the home page, `/vocab/colou
 
 `taxonomy` records the naming authority. Names in this guide follow IOC / BirdLife South Africa.
 
-`species` lists only species that have at least one image, one call recording, or one population source. Each group has `slug`, `scientificName`, `commonName`, `images`, `recordings`, and `sources`. An image or recording credit has `key`, `author`, `licence`, `licenceUrl`, `sourceUrl`, and `aiGenerated`. Empty attribution is `null`, which the page renders as not recorded. `licence` is copied from the species field `license`, and `sourceUrl` from `source`. A recording may also have `callType`. `sources` copies `population.sources` (`title`, `url`, `publisher`, `year`).
+`species` lists only species that have at least one image, one call recording, or one population source. Each group has `slug`, `scientificName`, `commonName`, `images`, `recordings`, and `sources`. An image or recording credit has `key`, `author`, `licence`, `licenceUrl`, `sourceUrl`, and `aiGenerated`. Empty attribution is `null`, which the page renders as not recorded. `licence` is copied from the species field `license`, and `sourceUrl` from `source`. A recording may also have `callType`. `sources` copies `population.sources` and the species `sources` list (`title`, `url`, `publisher`, `year`), without repeating the same title and URL. The heading on the credits page is "Sources".
 
 `mediaNote` is "No photos or recordings have been added so far." when no image and no recording is present. It is `null` once either exists. Population sources can still be listed while that sentence is set.
 
-`site` is the repository, the Apache-2.0 licence, the maintainer handle `ftruter`, the palette note, and the line that this site is not affiliated with SANParks. The green and gold are colour inspiration only.
+`site` is the repository, the Apache-2.0 licence, the maintainer handle `ftruter`, the palette note, the line that this site is not affiliated with SANParks, and `media`. `media` says that photographs and recordings keep their own licences and are not covered by Apache-2.0. The green and gold are colour inspiration only.
 
 ## Colour vocabulary
 

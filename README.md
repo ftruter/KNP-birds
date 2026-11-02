@@ -135,3 +135,5 @@ The website comes first; species research and content follow.
 ## License
 
 This project is licensed under the [Apache License 2.0](LICENSE).
+
+Photographs and recordings keep their own licences. They are not covered by the Apache-2.0 licence of this code. The site is non-commercial: it has no ads, no subscriptions, and no paywall.

@@ -7,8 +7,87 @@
     "af": "Groottroupant"
   },
   "family": "coraciidae",
-  "summary": "The details for this species have not been published yet.",
-  "sampleData": true,
+  "status": "resident",
+  "monthsPresent": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+  ],
+  "size": {
+    "lengthCm": {
+      "min": 35,
+      "max": 40
+    },
+    "note": "Newman's Birds gives 36–40 cm. A general account gives 35–40 cm."
+  },
+  "habitat": "Dry woodland and thornveld, including mopane and other broad-leaved or acacia bush, more uniform cover than the Lilac-breasted Roller uses.",
+  "summary": "A large resident roller with a square tail, a white eyebrow, olive-green upperparts, and deep purple underparts streaked white. Southern birds, including those in Kruger, have the olive-green crown rather than a rufous one. The sexes are not separately described. The immature is duller, without part-by-part colours in the sources used here, and the chick is not described. Some birds move locally, and the northern Transvaal is named as a wintering area for part of the regional population.",
+  "sampleData": false,
+  "similar": [
+    {
+      "slug": "coracias-caudatus",
+      "note": "Lilac-breasted Roller has an unstreaked lilac breast, a turquoise belly, and long tail streamers."
+    },
+    {
+      "slug": "coracias-garrulus",
+      "note": "European Roller is pale blue or greenish below, without a white eyebrow or white streaking, and it is absent in winter."
+    },
+    {
+      "slug": "coracias-spatulatus",
+      "note": "Racket-tailed Roller has plain blue underparts and racket-tipped tail streamers, not a square tail."
+    },
+    {
+      "slug": "eurystomus-glaucurus",
+      "note": "Broad-billed Roller has a yellow bill and unstreaked cinnamon upperparts."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Purple roller",
+      "url": "https://en.wikipedia.org/wiki/Purple_roller",
+      "publisher": "Wikipedia",
+      "year": 2026
+    },
+    {
+      "title": "Purple Roller",
+      "url": "https://newmansbirds.com/birds/purple-roller/",
+      "publisher": "Newman's Birds",
+      "year": null
+    },
+    {
+      "title": "Purple Roller. The atlas of southern African birds",
+      "url": "https://sabap2.adu.org.za/docs/sabap1/449.pdf",
+      "publisher": "Avian Demography Unit",
+      "year": 1997
+    },
+    {
+      "title": "Coracias naevius (Purple roller)",
+      "url": "https://www.biodiversityexplorer.info/birds/coraciidae/coracias_naevius.htm",
+      "publisher": "Biodiversity Explorer",
+      "year": null
+    },
+    {
+      "title": "Birds of Kruger National Park – a checklist",
+      "url": "https://birda.org/kruger-national-park-birding-checklist/",
+      "publisher": "Birda",
+      "year": 2026
+    },
+    {
+      "title": "Birds checklist – Kruger National Park",
+      "url": "https://www.sanparks.org/parks/kruger/explore/fauna-flora/birds/checklist",
+      "publisher": "SANParks",
+      "year": null
+    }
+  ],
   "population": {
     "estimate": {
       "low": null,
@@ -18,11 +97,191 @@
     "trend": "unknown",
     "confidence": null,
     "asOf": null,
-    "notes": "to be researched",
-    "sources": []
+    "notes": "No Kruger census figure was found. The Birda SABAP2 Kruger checklist, consulted on 2 November 2026, lists 3,872 records. That is a count of atlas records, not birds. SABAP1 gives roadside densities for Namibia and Botswana, not a Kruger total. No range is entered.",
+    "sources": [
+      {
+        "title": "Birds of Kruger National Park – a checklist",
+        "url": "https://birda.org/kruger-national-park-birding-checklist/",
+        "publisher": "Birda",
+        "year": 2026
+      },
+      {
+        "title": "Purple Roller. The atlas of southern African birds",
+        "url": "https://sabap2.adu.org.za/docs/sabap1/449.pdf",
+        "publisher": "Avian Demography Unit",
+        "year": 1997
+      },
+      {
+        "title": "Birds checklist – Kruger National Park",
+        "url": "https://www.sanparks.org/parks/kruger/explore/fauna-flora/birds/checklist",
+        "publisher": "SANParks",
+        "year": null
+      }
+    ]
   },
-  "variants": [],
-  "viewNotes": [],
-  "calls": [],
-  "images": []
+  "variants": [
+    {
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "marks": {
+        "bill": {
+          "colour": null,
+          "shape": null
+        },
+        "eye": {
+          "iris": null,
+          "ring": null
+        },
+        "legs": {
+          "colour": null
+        },
+        "head": {
+          "crown": [
+            "olive",
+            "green"
+          ],
+          "face": "white",
+          "throat": [
+            "purple",
+            "white"
+          ]
+        },
+        "upperparts": {
+          "back": [
+            "olive",
+            "green"
+          ],
+          "rump": null
+        },
+        "underparts": {
+          "breast": [
+            "purple",
+            "white"
+          ],
+          "belly": [
+            "purple",
+            "white"
+          ]
+        },
+        "wings": {
+          "above": "blue",
+          "below": "blue"
+        },
+        "tail": {
+          "colour": null,
+          "shape": "square"
+        }
+      }
+    }
+  ],
+  "viewNotes": [
+    {
+      "view": "flight-above",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Olive-green upperparts and blue wings. A flight photograph shows the raised wing blue to purple. The square tail has no streamers."
+    },
+    {
+      "view": "flight-below",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "White-streaked purple underparts. The texts used here call the wing feathers brilliant blue and do not name a separate underwing colour."
+    },
+    {
+      "view": "perched-front",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "A white eyebrow and deep purple underparts heavily streaked white."
+    },
+    {
+      "view": "perched-back",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Olive-green upperparts, a white patch on the nape, and a dark square tail. The tail colour itself is only described as dark."
+    },
+    {
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "White eyebrow, olive-green upperparts, streaked purple underparts, and a square tail."
+    }
+  ],
+  "calls": [
+    {
+      "sex": "any",
+      "type": "call",
+      "description": "A grating 'ka' or 'gaa', repeated rapidly and evenly; the sexes are not given different calls.",
+      "recordings": [
+        {
+          "key": "xeno-canto/XC715786",
+          "source": "https://xeno-canto.org/715786",
+          "fileUrl": "https://xeno-canto.org/sounds/uploaded/HMBDEWEZVS/XC715786-20%20G%20Away.mp3",
+          "author": "Tony Archer",
+          "license": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ]
+    },
+    {
+      "sex": "any",
+      "type": "other",
+      "description": "In display, a continuous 'ka-raa-ka-raa-ka-raa' as the bird rises.",
+      "recordings": []
+    }
+  ],
+  "images": [
+    {
+      "key": "coracias-naevius/kruger-side.jpg",
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "source": "https://commons.wikimedia.org/wiki/File:Purple_roller_(Coracias_naevius_mosambicus)_Kruger.jpg",
+      "fileUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/91/Purple_roller_%28Coracias_naevius_mosambicus%29_Kruger.jpg/1280px-Purple_roller_%28Coracias_naevius_mosambicus%29_Kruger.jpg",
+      "author": "Charles J. Sharp",
+      "license": "CC BY-SA 4.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "aiGenerated": false,
+      "hosted": false,
+      "alt": "Adult Purple Roller perched side-on in Kruger National Park"
+    },
+    {
+      "key": "coracias-naevius/perched-side.jpg",
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "source": "https://commons.wikimedia.org/wiki/File:150_Purple_roller_in_Etosha_National_Park_Photo_by_Giles_Laurent.jpg",
+      "fileUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b7/150_Purple_roller_in_Etosha_National_Park_Photo_by_Giles_Laurent.jpg/1280px-150_Purple_roller_in_Etosha_National_Park_Photo_by_Giles_Laurent.jpg",
+      "author": "Giles Laurent",
+      "license": "CC BY-SA 4.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "aiGenerated": false,
+      "hosted": false,
+      "alt": "Adult Purple Roller perched side-on, showing the white eyebrow and streaked underparts"
+    },
+    {
+      "key": "coracias-naevius/flight-above.jpg",
+      "view": "flight-above",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "source": "https://commons.wikimedia.org/wiki/File:151_Purple_roller_in_flight_in_Etosha_National_Park_Photo_by_Giles_Laurent.jpg",
+      "fileUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/09/151_Purple_roller_in_flight_in_Etosha_National_Park_Photo_by_Giles_Laurent.jpg/1280px-151_Purple_roller_in_flight_in_Etosha_National_Park_Photo_by_Giles_Laurent.jpg",
+      "author": "Giles Laurent",
+      "license": "CC BY-SA 4.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "aiGenerated": false,
+      "hosted": false,
+      "alt": "Adult Purple Roller in flight with the upperwing raised"
+    }
+  ]
 }

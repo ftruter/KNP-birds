@@ -24,7 +24,12 @@
       }
     },
     "status": {
-      "enum": ["resident", "summer-migrant"]
+      "enum": [
+        "resident",
+        "intra-african-migrant",
+        "palearctic-migrant",
+        "summer-migrant"
+      ]
     },
     "colourValue": {
       "description": "A colour name from vocab/colours, an array of those names, or null when unknown.",
@@ -153,7 +158,9 @@
         "license": { "type": "string" },
         "licenceUrl": { "$ref": "#/$defs/textOrNull" },
         "aiGenerated": { "type": "boolean" },
-        "alt": { "type": "string" }
+        "alt": { "type": "string" },
+        "fileUrl": { "type": "string", "minLength": 1 },
+        "hosted": { "type": "boolean" }
       }
     },
     "recording": {
@@ -166,7 +173,9 @@
         "author": { "type": "string" },
         "license": { "type": "string" },
         "licenceUrl": { "$ref": "#/$defs/textOrNull" },
-        "aiGenerated": { "type": "boolean" }
+        "aiGenerated": { "type": "boolean" },
+        "fileUrl": { "type": "string", "minLength": 1 },
+        "hosted": { "type": "boolean" }
       }
     },
     "call": {
@@ -287,6 +296,30 @@
         },
         "summary": { "type": "string", "minLength": 1 },
         "sampleData": { "type": "boolean" },
+        "monthsPresent": {
+          "type": "array",
+          "minItems": 1,
+          "maxItems": 12,
+          "uniqueItems": true,
+          "items": { "type": "integer", "minimum": 1, "maximum": 12 }
+        },
+        "habitat": { "type": "string", "minLength": 1 },
+        "similar": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": ["slug", "note"],
+            "properties": {
+              "slug": { "$ref": "#/$defs/slug" },
+              "note": { "type": "string", "minLength": 1 }
+            }
+          }
+        },
+        "sources": {
+          "type": "array",
+          "items": { "$ref": "#/$defs/citation" }
+        },
         "population": { "$ref": "#/$defs/population" },
         "variants": {
           "type": "array",
@@ -301,6 +334,9 @@
             "required": ["view", "note"],
             "properties": {
               "view": { "$ref": "#/$defs/view" },
+              "age": { "enum": ["chick", "juvenile", "immature", "adult"] },
+              "sex": { "enum": ["male", "female", "any"] },
+              "season": { "enum": ["breeding", "non-breeding", "any"] },
               "note": { "type": "string", "minLength": 1 }
             }
           }
@@ -412,6 +448,7 @@
         "licenceUrl": { "$ref": "#/$defs/textOrNull" },
         "sourceUrl": { "$ref": "#/$defs/textOrNull" },
         "aiGenerated": { "type": "boolean" },
+        "hosted": { "type": "boolean" },
         "callType": { "type": "string", "minLength": 1 }
       }
     },
@@ -481,14 +518,15 @@
         "site": {
           "type": "object",
           "additionalProperties": false,
-          "required": ["repository", "licence", "licenceUrl", "maintainer", "palette", "affiliation"],
+          "required": ["repository", "licence", "licenceUrl", "maintainer", "palette", "affiliation", "media"],
           "properties": {
             "repository": { "type": "string", "minLength": 1 },
             "licence": { "type": "string", "minLength": 1 },
             "licenceUrl": { "type": "string", "minLength": 1 },
             "maintainer": { "type": "string", "minLength": 1 },
             "palette": { "type": "string", "minLength": 1 },
-            "affiliation": { "type": "string", "minLength": 1 }
+            "affiliation": { "type": "string", "minLength": 1 },
+            "media": { "type": "string", "minLength": 1 }
           }
         }
       }

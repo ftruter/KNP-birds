@@ -20,6 +20,8 @@ import {
   imageAlt,
   indexPopulationLine,
   indexRows,
+  licenceForbidsDerivatives,
+  monthsLabel,
   objectPath,
   orderFamilySpecies,
   populationModel,
@@ -230,13 +232,17 @@ const publishedSpeciesHtml = (
 ) => `${paragraphs(doc.summary)}
 <dl class="facts">
 <dt>Status</dt><dd>${escapeHtml(statusLabel(doc.status))}</dd>
+${monthsLabel(doc.monthsPresent) ? `<dt>Months in Kruger</dt><dd>${escapeHtml(monthsLabel(doc.monthsPresent))}</dd>` : ''}
 <dt>Size</dt><dd>${escapeHtml(sizeLabel(doc.size) || 'Not recorded')}</dd>
+${doc.habitat ? `<dt>Habitat</dt><dd>${escapeHtml(doc.habitat)}</dd>` : ''}
 <dt>Family</dt><dd><a href="/family/${escapeHtml(doc.family)}">${escapeHtml(familyLabel(doc.family))}</a></dd>
 </dl>
 <h2>Photographs</h2>
 ${figures(doc, images, imagesAvailable, colourMap)}
 <h2>Telling it apart</h2>
-${comparisons.map((section) => comparisonSection(section, colourMap)).join('\n')}`
+${comparisons.map((section) => comparisonSection(section, colourMap)).join('\n')}
+${similarHtml(doc)}
+${sourcesSection(doc.sources)}`
 
 const comparisonSection = (section, colourMap) => {
   const context = section.rows?.find((row) => row.context)?.context
@@ -308,9 +314,14 @@ const recordingsHtml = (recordings) =>
     ? ''
     : recordings
         .map((recording) => {
-          const href = recording?.key ? objectPath('audio', recording.key) : ''
+          const hosted = recording?.hosted !== false && recording?.key
+          const href = hosted ? objectPath('audio', recording.key) : ''
           const source = safeHttpUrl(recording?.source)
-          const bits = ['Recording']
+          const fileUrl = safeHttpUrl(recording?.fileUrl)
+          const playable =
+            fileUrl && !licenceForbidsDerivatives(recording?.license)
+              ? `<audio controls src="${escapeHtml(fileUrl)}"></audio>`
+              : ''
           const link = href
             ? `<a href="${escapeHtml(href)}">${escapeHtml(recording.key)}</a>`
             : ''
@@ -318,12 +329,53 @@ const recordingsHtml = (recordings) =>
             .filter(Boolean)
             .map((part) => escapeHtml(part))
             .join('. ')
+          const licence = safeHttpUrl(recording?.licenceUrl)
+          const licenceLink = licence
+            ? `<a href="${escapeHtml(licence)}">Licence</a>`
+            : ''
           const sourceLink = source
             ? `<a href="${escapeHtml(source)}">Source</a>`
             : ''
-          return ` ${bits[0]}: ${[link, credit, sourceLink].filter(Boolean).join('. ')}.`
+          const stored = hosted ? '' : 'Not stored on this site.'
+          return ` Recording: ${[link, credit, licenceLink, sourceLink, stored].filter(Boolean).join('. ')}.${playable}`
         })
         .join('')
+
+const scientificFromSlug = (slug) => {
+  const parts = String(slug || '').split('-')
+  const genus = parts[0] || ''
+  const species = parts.slice(1).join('-')
+  return genus
+    ? `${genus.charAt(0).toUpperCase()}${genus.slice(1)} ${species}`.trim()
+    : ''
+}
+
+const similarHtml = (doc) => {
+  const items = Array.isArray(doc?.similar) ? doc.similar : []
+  return items.length === 0
+    ? ''
+    : `<h2>Similar species</h2>
+<ul>
+${items
+  .map((item) => {
+    const name = scientificFromSlug(item?.slug)
+    const href = item?.slug ? `/species/${item.slug}` : ''
+    const link = href
+      ? `<a href="${escapeHtml(href)}"><em>${escapeHtml(name)}</em></a>`
+      : escapeHtml(name)
+    return `<li>${link}. ${escapeHtml(item?.note || '')}</li>`
+  })
+  .join('\n')}
+</ul>`
+}
+
+const sourcesSection = (sources) => {
+  const list = Array.isArray(sources) ? sources : []
+  return list.length === 0
+    ? ''
+    : `<h2>Sources</h2>
+${sourcesHtml(list)}`
+}
 
 const familySpeciesList = (species) =>
   species.length === 0
@@ -409,16 +461,27 @@ const figures = (doc, images, imagesAvailable, colourMap) => {
     .map((image) => {
       const available = imagesAvailable?.[image.key] === true
       const caption = imageCaption(image, colourMap)
-      if (!available)
-        return placeholder(
-          `Photograph not in the store yet. ${caption.text}`,
-          caption.html,
-        )
+      const remote =
+        !available &&
+        safeHttpUrl(image?.fileUrl) &&
+        !licenceForbidsDerivatives(image?.license)
+          ? safeHttpUrl(image.fileUrl)
+          : ''
       const alt = imageAlt(doc, image)
-      return `<figure class="plate">
+      if (available)
+        return `<figure class="plate">
 <img src="${escapeHtml(objectPath('images', image.key))}" alt="${escapeHtml(alt)}" loading="lazy">
 <figcaption>${caption.html}</figcaption>
 </figure>`
+      if (remote)
+        return `<figure class="plate">
+<img src="${escapeHtml(remote)}" alt="${escapeHtml(alt)}" loading="lazy">
+<figcaption>Not stored on this site yet. ${caption.html}</figcaption>
+</figure>`
+      return placeholder(
+        `Photograph not in the store yet. ${caption.text}`,
+        caption.html,
+      )
     })
     .join('\n')
 }
@@ -522,7 +585,7 @@ const assetLink = (prefix, key) =>
 const CREDIT_HEADING = {
   image: 'Photographs',
   recording: 'Recordings',
-  source: 'Population sources',
+  source: 'Sources',
 }
 
 const creditItems = (items, kind) =>
@@ -530,7 +593,7 @@ const creditItems = (items, kind) =>
     .map((item) =>
       kind === 'source'
         ? `<li>${citationHtml(item)}</li>`
-        : `<li>${assetLink(kind === 'recording' ? 'audio' : 'images', item.key)}. ${callLabel(item)}${attributionHtml(item, kind)}</li>`,
+        : `<li>${item?.hosted === false ? '' : `${assetLink(kind === 'recording' ? 'audio' : 'images', item.key)}. `}${callLabel(item)}${attributionHtml(item, kind)}</li>`,
     )
     .join('\n')
 
@@ -606,7 +669,8 @@ const siteHtml = (site) => {
 <p>KNP Birds is open source under the ${licenceLink} licence. The code is at ${repoLink}.</p>
 <p>Built and maintained by ${maintainerHtml(site.maintainer)}.</p>
 ${site.palette ? `<p>${escapeHtml(site.palette)}</p>` : ''}
-${site.affiliation ? `<p>${escapeHtml(site.affiliation)}</p>` : ''}`
+${site.affiliation ? `<p>${escapeHtml(site.affiliation)}</p>` : ''}
+${site.media ? `<p>${escapeHtml(site.media)}</p>` : ''}`
 }
 
 const taxonomyHtml = (taxonomy) => `<h2>Taxonomy</h2>

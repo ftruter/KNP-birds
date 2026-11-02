@@ -16,7 +16,7 @@ test('lilac-breasted roller diffs', async () => {
   assert.equal(age.status, 'differs')
   const breast = age.rows.find((row) => row.mark === 'Breast')
   assert.deepEqual(breast.cells.Adult.names, ['lilac'])
-  assert.deepEqual(breast.cells.Juvenile.names, ['buff'])
+  assert.deepEqual(breast.cells.Juvenile.names, ['rufous', 'tawny'])
   assert.equal(
     age.rows.some((row) => row.mark === 'Iris'),
     false,
@@ -25,10 +25,15 @@ test('lilac-breasted roller diffs', async () => {
   assert.equal(season.notice, 'No visible difference')
   assert.equal(sex.status, 'no-visible-difference')
   assert.equal(flight.status, 'differs')
-  assert.equal(flight.rows.length, 0)
+  assert.deepEqual(flight.rows[0].cells['From above'].names, [
+    'blue',
+    'black',
+    'purple',
+  ])
+  assert.deepEqual(flight.rows[0].cells['From below'].names, ['blue', 'black'])
   assert.equal(perched.status, 'differs')
   assert.equal(calls.status, 'no-visible-difference')
-  assert.match(calls.shared[0].description, /harsh rattle/)
+  assert.match(calls.shared[0].description, /harsh rattling/)
 })
 
 test('african fish eagle flight and age diffs', async () => {

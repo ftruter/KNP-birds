@@ -11,7 +11,7 @@ const SECURITY = {
 }
 
 const PAGE_CSP =
-  "default-src 'none'; style-src 'self'; img-src 'self'; base-uri 'none'; form-action 'none'; frame-ancestors 'none'; script-src 'none'"
+  "default-src 'none'; style-src 'self'; img-src 'self' https:; media-src 'self' https:; base-uri 'none'; form-action 'none'; frame-ancestors 'none'; script-src 'none'"
 const OBJECT_CSP =
   "default-src 'none'; style-src 'none'; script-src 'none'; sandbox"
 

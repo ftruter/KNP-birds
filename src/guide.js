@@ -122,8 +122,40 @@ export const afrikaansName = (doc) => {
 
 const STATUS_LABEL = {
   resident: 'Resident',
+  'intra-african-migrant': 'Intra-African migrant',
+  'palearctic-migrant': 'Palearctic migrant',
   'summer-migrant': 'Summer migrant',
 }
+
+const MONTHS = [
+  'January',
+  'February',
+  'March',
+  'April',
+  'May',
+  'June',
+  'July',
+  'August',
+  'September',
+  'October',
+  'November',
+  'December',
+]
+
+export const monthsLabel = (months) => {
+  const names = (Array.isArray(months) ? months : [])
+    .filter((month) => Number.isInteger(month) && month >= 1 && month <= 12)
+    .map((month) => MONTHS[month - 1])
+  return names.length === 0
+    ? ''
+    : names.length === 12
+      ? 'All year'
+      : names.join(', ')
+}
+
+/** ND licences are linked, not resized or cropped for display. */
+export const licenceForbidsDerivatives = (licence) =>
+  typeof licence === 'string' && /no-?deriv|-nd\b/i.test(licence)
 
 export const statusLabel = (status) =>
   STATUS_LABEL[status] ?? (status ? String(status) : '')
