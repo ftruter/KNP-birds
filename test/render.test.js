@@ -3,6 +3,7 @@ import { test } from 'node:test'
 import {
   renderFamiliesIndexHtml,
   renderFamilyHtml,
+  renderHomeHtml,
   renderSpeciesHtml,
   renderSpeciesIndexHtml,
 } from '../src/html.js'
@@ -10,6 +11,7 @@ import { UNPUBLISHED_SPECIES } from '../src/guide.js'
 import {
   renderFamiliesIndexMarkdown,
   renderFamilyMarkdown,
+  renderHomeMarkdown,
   renderSpeciesIndexMarkdown,
   renderSpeciesMarkdown,
 } from '../src/markdown.js'
@@ -171,7 +173,7 @@ test('a family page shows the derived approximate total', async () => {
   assert.match(html, /This total is incomplete/)
   assert.match(html, /First to look for/)
   assert.ok(
-    html.indexOf('First to look for') < html.indexOf('Species in this copy'),
+    html.indexOf('First to look for') < html.indexOf('Species in this family'),
   )
   assert.match(html, /href="\/species\/coracias-caudatus"/)
   assert.match(html, /Gewone Troupant/)
@@ -197,10 +199,7 @@ test('a family page lists its species and an empty family does not invent an Afr
   assert.match(html, /href="\/species\/corythornis-cristatus"/)
   assert.match(html, /Malachite Kingfisher/)
   assert.doesNotMatch(html, /First to look for/)
-  assert.doesNotMatch(
-    html,
-    /No species from this family are published in this copy yet/,
-  )
+  assert.doesNotMatch(html, /No species from this family are listed/)
   const markdown = renderFamilyMarkdown(kingfishers, [])
   assert.match(markdown, /Visvangers/)
   assert.match(
@@ -221,10 +220,7 @@ test('a family page lists its species and an empty family does not invent an Afr
     doc: empty,
     plates: [],
   })
-  assert.match(
-    emptyHtml,
-    /No species from this family are published in this copy yet/,
-  )
+  assert.match(emptyHtml, /No species from this family are listed/)
   assert.doesNotMatch(emptyHtml, /class="afrikaans"/)
   assert.doesNotMatch(emptyHtml, /<ul class="species-list">/)
 
@@ -370,6 +366,8 @@ test('the species index lists every scientific name and skips a missing Afrikaan
     origin: 'https://birds.truter.world',
     doc,
   })
+  assert.match(html, /The guide lists 2 species/)
+  assert.doesNotMatch(html, /this copy/i)
   assert.match(html, /href="\/species\/struthio-camelus"/)
   assert.match(html, /href="\/species\/bucorvus-leadbeateri"/)
   assert.match(html, /Bromvoël/)
@@ -381,5 +379,51 @@ test('the species index lists every scientific name and skips a missing Afrikaan
     markdown,
     /Common Ostrich\]\(\/species\/struthio-camelus\) \(Struthio camelus\) — Approximate estimate/,
   )
+  assert.match(markdown, /The guide lists 2 species/)
   assert.doesNotMatch(markdown, /null/)
+})
+
+test('the home page counts the species and family indexes', async () => {
+  const speciesIndex = await readJson('data/index/species.json')
+  const familiesIndex = await readJson('data/index/families.json')
+  const speciesCount = Object.keys(speciesIndex).length
+  const familyCount = Object.keys(familiesIndex).length
+  const sentence = `The guide lists ${speciesCount} species in ${familyCount} families.`
+  const html = renderHomeHtml({
+    origin: 'https://birds.truter.world',
+    speciesIndex,
+    familiesIndex,
+  })
+  const markdown = renderHomeMarkdown({ speciesIndex, familiesIndex })
+  assert.match(html, new RegExp(sentence.replaceAll('.', '\\.')))
+  assert.match(markdown, new RegExp(sentence.replaceAll('.', '\\.')))
+  assert.doesNotMatch(html, /loaded so far|This copy has|have not been loaded/i)
+  assert.doesNotMatch(
+    markdown,
+    /loaded so far|This copy has|have not been loaded/i,
+  )
+  assert.equal(speciesCount, 493)
+  assert.equal(familyCount, 86)
+  const sized = renderHomeHtml({
+    origin: 'https://birds.truter.world',
+    speciesIndex: {
+      'Coracias caudatus': {
+        en: 'Lilac-breasted Roller',
+        af: 'Gewone Troupant',
+        population: null,
+      },
+    },
+    familiesIndex: {
+      Coraciidae: { en: 'Rollers', af: 'Troupante', population: 0 },
+      Bucorvidae: { en: 'Ground-hornbills', af: 'Bromvoëls', population: 0 },
+    },
+  })
+  assert.match(sized, /The guide lists 1 species in 2 families/)
+  assert.doesNotMatch(sized, /493/)
+  const missing = renderHomeHtml({ origin: 'https://birds.truter.world' })
+  assert.match(missing, /The species and family lists are not available/)
+  for (const slug of ['accipitridae', 'bucorvidae', 'coraciidae']) {
+    const family = await readJson(`data/family/${slug}.json`)
+    assert.doesNotMatch(family.summary, /loaded so far|this sample|not every/i)
+  }
 })

@@ -6,9 +6,8 @@ Live site (coming soon): <https://birds.truter.world>
 
 ## What's in scope
 
-- Roughly 500 resident species in winter, rising to about 540 in summer as migrants arrive, grouped into about 78 families (the exact count depends on the taxonomy used).
+- Residents and summer migrants: 493 species in 86 families. Rare vagrants are left out. Page counts come from `data/index/species.json` and `data/index/families.json`.
 - The same species list applies to Marloth Park, which borders KNP across the Crocodile River.
-- Rare vagrants that turn up now and then are **not** counted as "Birds of KNP" and are left out.
 
 ## What the site helps you tell apart
 
@@ -48,8 +47,8 @@ All content lives in a Cloudflare Workers KV namespace as JSON values:
 
 | Key | Value |
 | --- | --- |
-| `species/<latin-name>` | One JSON document per species (about 540 entries) |
-| `family/<latin-name>` | One JSON document per bird family (about 78 entries), describing the family and listing its species |
+| `species/<latin-name>` | One JSON document per species |
+| `family/<latin-name>` | One JSON document per bird family, describing the family and listing its species |
 | `index/species` | The list of all species |
 | `index/families` | The list of all families and their species |
 

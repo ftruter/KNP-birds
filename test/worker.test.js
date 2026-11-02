@@ -141,10 +141,7 @@ test('a new family stub and the full families index render in every format', asy
   assert.match(htmlBody, /Visvangers/)
   assert.match(htmlBody, /href="\/species\/corythornis-cristatus"/)
   assert.match(htmlBody, /Includes 0 of 9 species/)
-  assert.doesNotMatch(
-    htmlBody,
-    /No species from this family are published in this copy yet/,
-  )
+  assert.doesNotMatch(htmlBody, /No species from this family are listed/)
   assert.doesNotMatch(htmlBody, /<script/i)
 
   const markdown = await site.fetch('/family/alcedinidae.md')
@@ -237,7 +234,7 @@ test('images stream from R2 and missing keys 404', async () => {
   assert.equal(audio.status, 404)
 })
 
-test('sitemap lists the sample species and vocab', async () => {
+test('sitemap lists species, families, and the colour vocabulary', async () => {
   const { records } = await loadStore()
   const site = await app(records)
   const response = await site.fetch('/sitemap.xml')

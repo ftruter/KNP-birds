@@ -66,7 +66,7 @@
     {
       "sex": "any",
       "type": "duet",
-      "description": "A loud ringing yelp, often given by a pair together. This sample does not separate the two voices.",
+      "description": "A loud ringing yelp, often given by a pair together, with the two voices kept as one call.",
       "recordings": []
     }
   ],

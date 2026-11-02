@@ -7,6 +7,10 @@ import {
   SAMPLE_NOTICE,
   afrikaansName,
   EMPTY_FAMILY_SPECIES,
+  EMPTY_INDEX,
+  FAMILY_SPECIES_HEADING,
+  catalogSentence,
+  listIntro,
   englishName,
   speciesDetailsPublished,
   UNPUBLISHED_SPECIES,
@@ -34,7 +38,7 @@ export const renderHomeMarkdown = ({ speciesIndex, familiesIndex }) => {
     sample: false,
     body: `An open field guide to the birds of Kruger National Park and neighbouring Marloth Park. Pages are server-rendered. There is no client-side JavaScript.
 
-Resident species are included, plus summer migrants. Rare vagrants are left out.
+Resident species are included, plus summer migrants. Rare vagrants are left out. ${catalogSentence(species.length, families.length, speciesIndex, familiesIndex)}
 
 ## What these pages compare
 
@@ -69,32 +73,37 @@ ${linkLines(
 
 export const renderSpeciesIndexMarkdown = (doc) => {
   const list = indexRows(doc)
+  const lines = list
+    .map(
+      (entry) =>
+        `- [${englishName(entry)}](/species/${entry.slug}) (${entry.scientificName})${afrikaansName(entry) ? ` — ${afrikaansName(entry)}` : ''} — ${indexPopulationLine(entry.population, 'Approximate estimate')}`,
+    )
+    .join('\n')
   return pageMd({
     path: '/species',
     title: 'Species',
     sample: false,
-    body:
-      list
-        .map(
-          (entry) =>
-            `- [${englishName(entry)}](/species/${entry.slug}) (${entry.scientificName})${afrikaansName(entry) ? ` — ${afrikaansName(entry)}` : ''} — ${indexPopulationLine(entry.population, 'Approximate estimate')}`,
-        )
-        .join('\n') || 'No species have been published yet.',
+    body: [listIntro(list.length, 'species', 'species'), lines]
+      .filter(Boolean)
+      .join('\n\n'),
   })
 }
 
 export const renderFamiliesIndexMarkdown = (doc) => {
   const list = indexRows(doc)
+  const lines = list
+    .map(
+      (entry) =>
+        `- [${englishName(entry)}](/family/${entry.slug}) (${entry.scientificName})${afrikaansName(entry) ? ` — ${afrikaansName(entry)}` : ''} — ${familyIndexPopulationLine(entry.population)}`,
+    )
+    .join('\n')
   return pageMd({
     path: '/families',
     title: 'Families',
     sample: false,
-    body: list
-      .map(
-        (entry) =>
-          `- [${englishName(entry)}](/family/${entry.slug}) (${entry.scientificName})${afrikaansName(entry) ? ` — ${afrikaansName(entry)}` : ''} — ${familyIndexPopulationLine(entry.population)}`,
-      )
-      .join('\n'),
+    body: [listIntro(list.length, 'family', 'families'), lines]
+      .filter(Boolean)
+      .join('\n\n'),
   })
 }
 
@@ -113,7 +122,7 @@ ${familyPopulationMarkdown(doc.population)}
 
 ${iconicMarkdown(plates)}
 
-## Species in this copy
+## ${FAMILY_SPECIES_HEADING}
 
 ${familySpeciesMarkdown(species)}`,
   })
@@ -322,5 +331,5 @@ const entries = (doc) => (Array.isArray(doc?.entries) ? doc.entries : [])
 
 const linkLines = (items, href, label) =>
   items.length === 0
-    ? 'Nothing is published here yet.'
+    ? EMPTY_INDEX
     : items.map((item) => `- [${label(item)}](${href(item)})`).join('\n')

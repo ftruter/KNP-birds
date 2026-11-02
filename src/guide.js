@@ -76,8 +76,28 @@ export const familyIndexPopulationLine = (population) =>
     APPROXIMATE_TOTAL,
   )
 
-export const EMPTY_FAMILY_SPECIES =
-  'No species from this family are published in this copy yet.'
+export const EMPTY_FAMILY_SPECIES = 'No species from this family are listed.'
+
+export const EMPTY_INDEX = 'Nothing is listed here yet.'
+
+export const FAMILY_SPECIES_HEADING = 'Species in this family'
+
+const countWord = (count, one, many) => (count === 1 ? one : many)
+
+export const catalogSentence = (
+  speciesCount,
+  familyCount,
+  speciesIndex,
+  familiesIndex,
+) =>
+  !speciesIndex && !familiesIndex
+    ? 'The species and family lists are not available.'
+    : `The guide lists ${speciesCount} species in ${familyCount} ${countWord(familyCount, 'family', 'families')}.`
+
+export const listIntro = (count, one, many) =>
+  count === 0
+    ? `No ${many} are listed yet.`
+    : `The guide lists ${count} ${countWord(count, one, many)}. The list is alphabetical by scientific name.`
 
 export const UNPUBLISHED_SPECIES =
   'The details for this species have not been published yet.'
