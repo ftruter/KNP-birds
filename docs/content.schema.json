@@ -6,7 +6,8 @@
     { "$ref": "#/$defs/species" },
     { "$ref": "#/$defs/family" },
     { "$ref": "#/$defs/index" },
-    { "$ref": "#/$defs/colours" }
+    { "$ref": "#/$defs/colours" },
+    { "$ref": "#/$defs/credits" }
   ],
   "$defs": {
     "slug": {
@@ -150,6 +151,7 @@
         "source": { "type": "string" },
         "author": { "type": "string" },
         "license": { "type": "string" },
+        "licenceUrl": { "$ref": "#/$defs/textOrNull" },
         "aiGenerated": { "type": "boolean" },
         "alt": { "type": "string" }
       }
@@ -162,7 +164,9 @@
         "key": { "type": "string", "minLength": 1 },
         "source": { "type": "string" },
         "author": { "type": "string" },
-        "license": { "type": "string" }
+        "license": { "type": "string" },
+        "licenceUrl": { "$ref": "#/$defs/textOrNull" },
+        "aiGenerated": { "type": "boolean" }
       }
     },
     "call": {
@@ -371,6 +375,123 @@
       "type": "object",
       "additionalProperties": { "$ref": "#/$defs/indexEntry" },
       "propertyNames": { "type": "string", "minLength": 1 }
+    },
+    "creditsLink": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["label", "url"],
+      "properties": {
+        "label": { "type": "string", "minLength": 1 },
+        "url": { "type": "string", "minLength": 1 }
+      }
+    },
+    "dataSource": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["name", "url", "usedFor", "licence", "licenceUrl"],
+      "properties": {
+        "name": { "type": "string", "minLength": 1 },
+        "url": { "type": "string", "minLength": 1 },
+        "links": {
+          "type": "array",
+          "items": { "$ref": "#/$defs/creditsLink" }
+        },
+        "usedFor": { "type": "string", "minLength": 1 },
+        "licence": { "$ref": "#/$defs/textOrNull" },
+        "licenceUrl": { "$ref": "#/$defs/textOrNull" }
+      }
+    },
+    "mediaCredit": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["key", "author", "licence", "licenceUrl", "sourceUrl", "aiGenerated"],
+      "properties": {
+        "key": { "type": "string", "minLength": 1 },
+        "author": { "$ref": "#/$defs/textOrNull" },
+        "licence": { "$ref": "#/$defs/textOrNull" },
+        "licenceUrl": { "$ref": "#/$defs/textOrNull" },
+        "sourceUrl": { "$ref": "#/$defs/textOrNull" },
+        "aiGenerated": { "type": "boolean" },
+        "callType": { "type": "string", "minLength": 1 }
+      }
+    },
+    "citation": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["title", "url", "publisher", "year"],
+      "properties": {
+        "title": { "type": "string", "minLength": 1 },
+        "url": { "$ref": "#/$defs/textOrNull" },
+        "publisher": { "$ref": "#/$defs/textOrNull" },
+        "year": {
+          "anyOf": [
+            { "type": "null" },
+            { "type": "integer", "minimum": 1800, "maximum": 2100 }
+          ]
+        }
+      }
+    },
+    "speciesCredits": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["slug", "scientificName", "commonName", "images", "recordings", "sources"],
+      "properties": {
+        "slug": { "$ref": "#/$defs/slug" },
+        "scientificName": { "type": "string", "minLength": 1 },
+        "commonName": { "type": "string", "minLength": 1 },
+        "images": {
+          "type": "array",
+          "items": { "$ref": "#/$defs/mediaCredit" }
+        },
+        "recordings": {
+          "type": "array",
+          "items": { "$ref": "#/$defs/mediaCredit" }
+        },
+        "sources": {
+          "type": "array",
+          "items": { "$ref": "#/$defs/citation" }
+        }
+      }
+    },
+    "credits": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["kind", "dataSources", "taxonomy", "mediaNote", "species", "site"],
+      "properties": {
+        "kind": { "const": "credits" },
+        "dataSources": {
+          "type": "array",
+          "minItems": 1,
+          "items": { "$ref": "#/$defs/dataSource" }
+        },
+        "taxonomy": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["authority", "summary"],
+          "properties": {
+            "authority": { "type": "string", "minLength": 1 },
+            "summary": { "type": "string", "minLength": 1 }
+          }
+        },
+        "mediaNote": { "$ref": "#/$defs/textOrNull" },
+        "species": {
+          "type": "array",
+          "items": { "$ref": "#/$defs/speciesCredits" }
+        },
+        "site": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["repository", "licence", "licenceUrl", "maintainer", "palette", "affiliation"],
+          "properties": {
+            "repository": { "type": "string", "minLength": 1 },
+            "licence": { "type": "string", "minLength": 1 },
+            "licenceUrl": { "type": "string", "minLength": 1 },
+            "maintainer": { "type": "string", "minLength": 1 },
+            "palette": { "type": "string", "minLength": 1 },
+            "affiliation": { "type": "string", "minLength": 1 }
+          }
+        }
+      }
     },
     "colours": {
       "type": "object",

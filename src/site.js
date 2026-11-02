@@ -7,6 +7,7 @@ import {
 import {
   renderFamiliesIndexHtml,
   renderFamilyHtml,
+  renderCreditsHtml,
   renderHomeHtml,
   renderNotFoundHtml,
   renderSpeciesHtml,
@@ -16,6 +17,7 @@ import {
 import {
   renderFamiliesIndexMarkdown,
   renderFamilyMarkdown,
+  renderCreditsMarkdown,
   renderHomeMarkdown,
   renderNotFoundMarkdown,
   renderSpeciesIndexMarkdown,
@@ -61,6 +63,7 @@ export const renderRoute = async (request, env, route) => {
     case 'species':
     case 'family':
     case 'vocab':
+    case 'credits':
       return renderDocument(env, origin, route)
     case 'not-found':
       return notFound(origin, route)
@@ -160,6 +163,15 @@ const renderDocument = async (env, origin, route) => {
       route.format === 'md'
         ? renderVocabMarkdown(doc.data)
         : renderVocabHtml({ origin, doc: doc.data })
+    return route.format === 'md'
+      ? mdPage(body, origin, route.pathname, tag)
+      : htmlPage(body, origin, route.pathname, tag)
+  }
+  if (route.kind === 'credits') {
+    const body =
+      route.format === 'md'
+        ? renderCreditsMarkdown(doc.data)
+        : renderCreditsHtml({ origin, doc: doc.data })
     return route.format === 'md'
       ? mdPage(body, origin, route.pathname, tag)
       : htmlPage(body, origin, route.pathname, tag)
@@ -312,5 +324,6 @@ const cacheTag = (route, data) => {
     return `vocab,${data.slug || route.slug || data.name}`
   if (route.kind === 'species-index') return 'index,species'
   if (route.kind === 'families-index') return 'index,families'
+  if (route.kind === 'credits') return 'index,credits'
   return route.kind
 }

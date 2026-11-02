@@ -249,11 +249,41 @@ test('sitemap lists species, families, and the colour vocabulary', async () => {
   )
   assert.match(xml, /\/family\/bucorvidae</)
   assert.match(xml, /\/vocab\/colours</)
+  assert.match(xml, /\/credits</)
   const robots = await (await site.fetch('/robots.txt')).text()
   assert.match(robots, /Sitemap: https:\/\/birds\.truter\.world\/sitemap\.xml/)
   const llms = await (await site.fetch('/llms.txt')).text()
   assert.match(llms, /vocab\/colours/)
   assert.match(llms, /No visible difference/)
+  assert.match(llms, /\/credits/)
+})
+
+test('credits is served in html, markdown, and json from index/credits', async () => {
+  const { records } = await loadStore()
+  const site = await app(records)
+  const html = await site.fetch('/credits')
+  assert.equal(html.status, 200)
+  assert.equal(html.headers.get('content-type'), 'text/html; charset=utf-8')
+  const body = await html.text()
+  assert.match(body, /<h1>Credits<\/h1>/)
+  assert.match(body, /No photos or recordings have been added so far/)
+  assert.doesNotMatch(body, /<script/i)
+  assert.match(html.headers.get('link') || '', /\/credits\.md/)
+  const markdown = await site.fetch('/credits.md')
+  assert.equal(
+    markdown.headers.get('content-type'),
+    'text/markdown; charset=utf-8',
+  )
+  assert.match(await markdown.text(), /^# Credits/)
+  const json = await (await site.fetch('/credits.json')).json()
+  assert.equal(json.kind, 'credits')
+  assert.equal(json.site.maintainer, 'ftruter')
+  assert.equal(json.site.licence, 'Apache-2.0')
+  assert.equal(
+    json.mediaNote,
+    'No photos or recordings have been added so far.',
+  )
+  assert.deepEqual(json.species, [])
 })
 
 test('a new data version misses the Cache API', async () => {

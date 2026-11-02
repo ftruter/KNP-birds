@@ -17,6 +17,11 @@
  *   data/family/<slug>.json  → family/<slug>
  *   data/index/<name>.json   → index/<name>
  *   data/vocab/<name>.json   → vocab/<name>
+ *
+ * index/credits is derived here too. Media lines come from species images,
+ * call recordings, and population sources. The checklist list is fixed, from
+ * docs/families-sources.md and docs/species-sources.md. A licence is null
+ * when it is not known. The page says so, and this script does not invent one.
  */
 import { readdir, readFile, writeFile } from 'node:fs/promises'
 import path from 'node:path'
@@ -170,6 +175,175 @@ export const deriveFamiliesIndex = (familyDocs) =>
     })),
   )
 
+const textOrNull = (value) =>
+  typeof value === 'string' && value.trim() ? value.trim() : null
+
+const creditFrom = (item) =>
+  textOrNull(item?.key)
+    ? {
+        key: textOrNull(item.key),
+        author: textOrNull(item.author),
+        licence: textOrNull(item.licence ?? item.license),
+        licenceUrl: textOrNull(item.licenceUrl),
+        sourceUrl: textOrNull(item.sourceUrl ?? item.source),
+        aiGenerated: item.aiGenerated === true,
+      }
+    : null
+
+const taggedCredit = (credit, callType) =>
+  callType ? { ...credit, callType } : credit
+
+const recordingCredits = (species) =>
+  (Array.isArray(species?.calls) ? species.calls : []).flatMap((call) =>
+    (Array.isArray(call?.recordings) ? call.recordings : []).flatMap(
+      (recording) => {
+        const credit = creditFrom(recording)
+        return credit ? [taggedCredit(credit, textOrNull(call?.type))] : []
+      },
+    ),
+  )
+
+const imageCredits = (species) =>
+  (Array.isArray(species?.images) ? species.images : [])
+    .map(creditFrom)
+    .filter(Boolean)
+
+const citedSources = (species) =>
+  (Array.isArray(species?.population?.sources)
+    ? species.population.sources
+    : []
+  ).flatMap((source) => {
+    const title = textOrNull(source?.title)
+    return title
+      ? [
+          {
+            title,
+            url: textOrNull(source.url),
+            publisher: textOrNull(source.publisher),
+            year: Number.isInteger(source.year) ? source.year : null,
+          },
+        ]
+      : []
+  })
+
+const speciesCredits = (species) => {
+  const images = imageCredits(species)
+  const recordings = recordingCredits(species)
+  const sources = citedSources(species)
+  const empty = !images.length && !recordings.length && !sources.length
+  return empty
+    ? null
+    : {
+        slug: species.slug,
+        scientificName: species.scientificName,
+        commonName: speciesNames(species).en || species.scientificName,
+        images,
+        recordings,
+        sources,
+      }
+}
+
+const DATA_SOURCES = [
+  {
+    name: 'Birda SABAP2 Kruger checklist',
+    url: 'https://birda.org/kruger-national-park-birding-checklist/',
+    links: [
+      {
+        label: 'GBIF occurrence download',
+        url: 'https://doi.org/10.15468/dl.9k98vu',
+      },
+    ],
+    usedFor:
+      'Primary filter for families and species that regularly occur in Kruger. SABAP2 observation counts separate residents, regular migrants, and regular visitors from rare and accidental records. The checklist cites the GBIF occurrence download linked here.',
+    licence: null,
+    licenceUrl: null,
+  },
+  {
+    name: 'BirdLife South Africa Checklist of Birds in South Africa 2026',
+    url: 'https://birdlife.org.za/resource/birdlife-south-africa-checklist-of-birds-in-south-africa/',
+    links: [
+      {
+        label: '2026 PDF',
+        url: 'https://birdlife.org.za/wp-content/uploads/BLSA-Checklist-2026-v3.pdf',
+      },
+    ],
+    usedFor:
+      'Official national list. Scientific names, English names, Afrikaans species names, and vagrant status come from this checklist.',
+    licence: null,
+    licenceUrl: null,
+  },
+  {
+    name: 'SANParks Kruger birds checklist',
+    url: 'https://www.sanparks.org/parks/kruger/explore/fauna-flora/birds/checklist',
+    usedFor:
+      'Park checklist, cited as 546 species. Used as context for which birds are treated as regular in Kruger. It did not supply the master species list.',
+    licence: null,
+    licenceUrl: null,
+  },
+  {
+    name: 'Avibase — Kruger National Park',
+    url: 'https://avibase.bsc-eoc.org/checklist.jsp?region=ZA000003',
+    usedFor:
+      'Family-ordered checklist used as a cross-check. The default taxonomy there is Clements, with an IOC option. It informed borderline regular-versus-vagrant judgement and was not the master list.',
+    licence: null,
+    licenceUrl: null,
+  },
+  {
+    name: 'Wikipedia — List of birds of South Africa',
+    url: 'https://en.wikipedia.org/wiki/List_of_birds_of_South_Africa',
+    usedFor:
+      'Cross-check of family structure. The page is arranged on Clements and notes BirdLife South Africa status. The licence below is the licence of the Wikipedia text.',
+    licence: 'CC BY-SA 4.0',
+    licenceUrl: 'https://creativecommons.org/licenses/by-sa/4.0/',
+  },
+  {
+    name: 'Waterberg Bioquest — Voëls',
+    url: 'http://www.waterberg-bioquest.co.za/voels.html',
+    usedFor:
+      'Afrikaans family headings. Waterberg is outside Kruger. A heading was used only where a stable southern African family name could be verified. Species Afrikaans names were not taken from this page.',
+    licence: null,
+    licenceUrl: null,
+  },
+]
+
+const TAXONOMY = {
+  authority: 'IOC / BirdLife South Africa',
+  summary:
+    'Scientific names, English names, and family placement follow the IOC World Bird List as adopted by the BirdLife South Africa Checklist of Birds in South Africa 2026. Afrikaans species names come from that checklist. Afrikaans family headings come from Waterberg Bioquest only where a stable heading could be verified, and are left blank otherwise.',
+}
+
+const SITE = {
+  repository: 'https://github.com/ftruter/KNP-birds',
+  licence: 'Apache-2.0',
+  licenceUrl: 'https://www.apache.org/licenses/LICENSE-2.0',
+  maintainer: 'ftruter',
+  palette:
+    'The green and gold are inspired by the SANParks green and the Springbok gold. The palette is colour inspiration only, with no implied endorsement.',
+  affiliation: "This site isn't affiliated with SANParks.",
+}
+
+export const NO_MEDIA_NOTE = 'No photos or recordings have been added so far.'
+
+export const deriveCredits = (speciesDocs) => {
+  const species = speciesDocs
+    .map(speciesCredits)
+    .filter(Boolean)
+    .sort((a, b) => compareScientificName(a.scientificName, b.scientificName))
+  const images = species.reduce((sum, item) => sum + item.images.length, 0)
+  const recordings = species.reduce(
+    (sum, item) => sum + item.recordings.length,
+    0,
+  )
+  return {
+    kind: 'credits',
+    dataSources: DATA_SOURCES.map((source) => ({ ...source })),
+    taxonomy: { ...TAXONOMY },
+    mediaNote: images === 0 && recordings === 0 ? NO_MEDIA_NOTE : null,
+    species,
+    site: { ...SITE },
+  }
+}
+
 export const deriveAll = (speciesDocs, familyDocs) => {
   const familiesBySlug = new Map(
     familyDocs.map((family) => [family.slug, family]),
@@ -190,6 +364,7 @@ export const deriveAll = (speciesDocs, familyDocs) => {
     families,
     speciesIndex: deriveSpeciesIndex(speciesDocs),
     familiesIndex: deriveFamiliesIndex(families),
+    credits: deriveCredits(speciesDocs),
   }
 }
 
@@ -225,6 +400,9 @@ export const writeDerived = async (dataDir = path.join(root, 'data')) => {
       path.join(dataDir, 'index', 'families.json'),
       derived.familiesIndex,
     ),
+  )
+  writes.push(
+    writeJson(path.join(dataDir, 'index', 'credits.json'), derived.credits),
   )
   await Promise.all(writes)
   return derived

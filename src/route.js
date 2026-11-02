@@ -42,6 +42,8 @@ export const parseUrl = (url) => {
     return { ...route('species-index', format, path), kvKey: 'index/species' }
   if (path === '/families')
     return { ...route('families-index', format, path), kvKey: 'index/families' }
+  if (path === '/credits')
+    return { ...route('credits', format, path), kvKey: 'index/credits' }
 
   const species = path.match(/^\/species\/([^/]+)$/)
   if (species) {

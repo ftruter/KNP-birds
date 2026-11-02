@@ -1,0 +1,73 @@
+{
+  "kind": "credits",
+  "dataSources": [
+    {
+      "name": "Birda SABAP2 Kruger checklist",
+      "url": "https://birda.org/kruger-national-park-birding-checklist/",
+      "links": [
+        {
+          "label": "GBIF occurrence download",
+          "url": "https://doi.org/10.15468/dl.9k98vu"
+        }
+      ],
+      "usedFor": "Primary filter for families and species that regularly occur in Kruger. SABAP2 observation counts separate residents, regular migrants, and regular visitors from rare and accidental records. The checklist cites the GBIF occurrence download linked here.",
+      "licence": null,
+      "licenceUrl": null
+    },
+    {
+      "name": "BirdLife South Africa Checklist of Birds in South Africa 2026",
+      "url": "https://birdlife.org.za/resource/birdlife-south-africa-checklist-of-birds-in-south-africa/",
+      "links": [
+        {
+          "label": "2026 PDF",
+          "url": "https://birdlife.org.za/wp-content/uploads/BLSA-Checklist-2026-v3.pdf"
+        }
+      ],
+      "usedFor": "Official national list. Scientific names, English names, Afrikaans species names, and vagrant status come from this checklist.",
+      "licence": null,
+      "licenceUrl": null
+    },
+    {
+      "name": "SANParks Kruger birds checklist",
+      "url": "https://www.sanparks.org/parks/kruger/explore/fauna-flora/birds/checklist",
+      "usedFor": "Park checklist, cited as 546 species. Used as context for which birds are treated as regular in Kruger. It did not supply the master species list.",
+      "licence": null,
+      "licenceUrl": null
+    },
+    {
+      "name": "Avibase — Kruger National Park",
+      "url": "https://avibase.bsc-eoc.org/checklist.jsp?region=ZA000003",
+      "usedFor": "Family-ordered checklist used as a cross-check. The default taxonomy there is Clements, with an IOC option. It informed borderline regular-versus-vagrant judgement and was not the master list.",
+      "licence": null,
+      "licenceUrl": null
+    },
+    {
+      "name": "Wikipedia — List of birds of South Africa",
+      "url": "https://en.wikipedia.org/wiki/List_of_birds_of_South_Africa",
+      "usedFor": "Cross-check of family structure. The page is arranged on Clements and notes BirdLife South Africa status. The licence below is the licence of the Wikipedia text.",
+      "licence": "CC BY-SA 4.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/"
+    },
+    {
+      "name": "Waterberg Bioquest — Voëls",
+      "url": "http://www.waterberg-bioquest.co.za/voels.html",
+      "usedFor": "Afrikaans family headings. Waterberg is outside Kruger. A heading was used only where a stable southern African family name could be verified. Species Afrikaans names were not taken from this page.",
+      "licence": null,
+      "licenceUrl": null
+    }
+  ],
+  "taxonomy": {
+    "authority": "IOC / BirdLife South Africa",
+    "summary": "Scientific names, English names, and family placement follow the IOC World Bird List as adopted by the BirdLife South Africa Checklist of Birds in South Africa 2026. Afrikaans species names come from that checklist. Afrikaans family headings come from Waterberg Bioquest only where a stable heading could be verified, and are left blank otherwise."
+  },
+  "mediaNote": "No photos or recordings have been added so far.",
+  "species": [],
+  "site": {
+    "repository": "https://github.com/ftruter/KNP-birds",
+    "licence": "Apache-2.0",
+    "licenceUrl": "https://www.apache.org/licenses/LICENSE-2.0",
+    "maintainer": "ftruter",
+    "palette": "The green and gold are inspired by the SANParks green and the Springbok gold. The palette is colour inspiration only, with no implied endorsement.",
+    "affiliation": "This site isn't affiliated with SANParks."
+  }
+}
