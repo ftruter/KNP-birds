@@ -1,7 +1,832 @@
 {
+  "Accipiter ovampensis": {
+    "en": "Ovambo Sparrowhawk",
+    "af": "Ovambosperwer",
+    "population": null
+  },
+  "Acridotheres tristis": {
+    "en": "Common Myna",
+    "af": "Indiese Spreeu",
+    "population": null
+  },
+  "Acrocephalus arundinaceus": {
+    "en": "Great Reed Warbler",
+    "af": "Grootrietsanger",
+    "population": null
+  },
+  "Acrocephalus gracilirostris": {
+    "en": "Lesser Swamp Warbler",
+    "af": "Kaapse Rietsanger",
+    "population": null
+  },
+  "Acrocephalus palustris": {
+    "en": "Marsh Warbler",
+    "af": "Europese Rietsanger",
+    "population": null
+  },
+  "Acrocephalus schoenobaenus": {
+    "en": "Sedge Warbler",
+    "af": "Europese Vleisanger",
+    "population": null
+  },
+  "Acrocephalus scirpaceus": {
+    "en": "Common Reed Warbler",
+    "af": "Kleinrietsanger",
+    "population": null
+  },
+  "Actitis hypoleucos": {
+    "en": "Common Sandpiper",
+    "af": "Gewone Ruiter",
+    "population": null
+  },
+  "Actophilornis africanus": {
+    "en": "African Jacana",
+    "af": "Grootlangtoon",
+    "population": null
+  },
+  "Aenigmatolimnas marginalis": {
+    "en": "Striped Crake",
+    "af": "Gestreepte Riethaan",
+    "population": null
+  },
+  "Aerospiza tachiro": {
+    "en": "African Goshawk",
+    "af": "Afrikaanse Sperwer",
+    "population": null
+  },
+  "Agricola pallidus": {
+    "en": "Pale Flycatcher",
+    "af": "Muiskleurvlieëvanger",
+    "population": null
+  },
+  "Alcedo semitorquata": {
+    "en": "Half-collared Kingfisher",
+    "af": "Blouvisvanger",
+    "population": null
+  },
+  "Alopochen aegyptiaca": {
+    "en": "Egyptian Goose",
+    "af": "Kolgans",
+    "population": null
+  },
+  "Amadina erythrocephala": {
+    "en": "Red-headed Finch",
+    "af": "Rooikopvink",
+    "population": null
+  },
+  "Amadina fasciata": {
+    "en": "Cut-throat Finch",
+    "af": "Bandkeelvink",
+    "population": null
+  },
+  "Amandava subflava": {
+    "en": "Orange-breasted Waxbill",
+    "af": "Rooiassie",
+    "population": null
+  },
+  "Amblyospiza albifrons": {
+    "en": "Thick-billed Weaver",
+    "af": "Dikbekwewer",
+    "population": null
+  },
+  "Amirafra rufocinnamomea": {
+    "en": "Flappet Lark",
+    "af": "Laeveldklappertjie",
+    "population": null
+  },
+  "Anarhynchus asiaticus": {
+    "en": "Caspian Plover",
+    "af": "Asiatiese Strandkiewiet",
+    "population": null
+  },
+  "Anarhynchus marginatus": {
+    "en": "White-fronted Plover",
+    "af": "Vaalstrandkiewiet",
+    "population": null
+  },
+  "Anarhynchus pallidus": {
+    "en": "Chestnut-banded Plover",
+    "af": "Rooibandstrandkiewiet",
+    "population": null
+  },
+  "Anarhynchus pecuarius": {
+    "en": "Kittlitz’s Plover",
+    "af": "Geelborsstrandkiewiet",
+    "population": null
+  },
+  "Anas capensis": {
+    "en": "Cape Teal",
+    "af": "Teeleend",
+    "population": null
+  },
+  "Anas erythrorhyncha": {
+    "en": "Red-billed Teal",
+    "af": "Rooibekeend",
+    "population": null
+  },
+  "Anas sparsa": {
+    "en": "African Black Duck",
+    "af": "Swarteend",
+    "population": null
+  },
+  "Anas undulata": {
+    "en": "Yellow-billed Duck",
+    "af": "Geelbekeend",
+    "population": null
+  },
+  "Anastomus lamelligerus": {
+    "en": "African Openbill",
+    "af": "Oopbekooievaar",
+    "population": null
+  },
+  "Andropadus importunus": {
+    "en": "Sombre Greenbul",
+    "af": "Gewone Willie",
+    "population": null
+  },
+  "Anhinga rufa": {
+    "en": "African Darter",
+    "af": "Slanghalsvoël",
+    "population": null
+  },
+  "Anomalospiza imberbis": {
+    "en": "Cuckoo Finch",
+    "af": "Koekoekvink",
+    "population": null
+  },
+  "Anthoscopus caroli": {
+    "en": "Grey Penduline-tit",
+    "af": "Gryskapokvoël",
+    "population": null
+  },
+  "Anthus caffer": {
+    "en": "Bushveld Pipit",
+    "af": "Bosveldkoester",
+    "population": null
+  },
+  "Anthus cinnamomeus": {
+    "en": "African Pipit",
+    "af": "Gewone Koester",
+    "population": null
+  },
+  "Anthus leucophrys": {
+    "en": "Plain-backed Pipit",
+    "af": "Donkerkoester",
+    "population": null
+  },
+  "Anthus lineiventris": {
+    "en": "Striped Pipit",
+    "af": "Gestreepte Koester",
+    "population": null
+  },
+  "Anthus nicholsoni": {
+    "en": "Nicholson’s Pipit",
+    "af": "Nicholsonkoester",
+    "population": null
+  },
+  "Anthus vaalensis": {
+    "en": "Buffy Pipit",
+    "af": "Vaalkoester",
+    "population": null
+  },
+  "Apalis flavida": {
+    "en": "Yellow-breasted Apalis",
+    "af": "Geelborskleinjantjie",
+    "population": null
+  },
+  "Apalis ruddi": {
+    "en": "Rudd’s Apalis",
+    "af": "Ruddkleinjantjie",
+    "population": null
+  },
+  "Apalis thoracica": {
+    "en": "Bar-throated Apalis",
+    "af": "Bandkeelkleinjantjie",
+    "population": null
+  },
+  "Apaloderma narina": {
+    "en": "Narina Trogon",
+    "af": "Bosloerie",
+    "population": null
+  },
+  "Aplopelia larvata": {
+    "en": "Lemon Dove",
+    "af": "Kaneelduifie",
+    "population": null
+  },
+  "Apus affinis": {
+    "en": "Little Swift",
+    "af": "Kleinwindswael",
+    "population": null
+  },
+  "Apus apus": {
+    "en": "Common Swift",
+    "af": "Europese Windswael",
+    "population": null
+  },
+  "Apus barbatus": {
+    "en": "African Black Swift",
+    "af": "Swartwindswael",
+    "population": null
+  },
+  "Apus caffer": {
+    "en": "White-rumped Swift",
+    "af": "Witkruiswindswael",
+    "population": null
+  },
+  "Apus horus": {
+    "en": "Horus Swift",
+    "af": "Horuswindswael",
+    "population": null
+  },
+  "Aquila nipalensis": {
+    "en": "Steppe Eagle",
+    "af": "Steppe-arend",
+    "population": null
+  },
+  "Aquila rapax": {
+    "en": "Tawny Eagle",
+    "af": "Roofarend",
+    "population": null
+  },
+  "Aquila spilogaster": {
+    "en": "African Hawk Eagle",
+    "af": "Grootjagarend",
+    "population": null
+  },
+  "Aquila verreauxii": {
+    "en": "Verreaux’s Eagle",
+    "af": "Witkruisarend",
+    "population": null
+  },
+  "Ardea alba": {
+    "en": "Great Egret",
+    "af": "Grootwitreier",
+    "population": null
+  },
+  "Ardea brachyrhyncha": {
+    "en": "Yellow-billed Egret",
+    "af": "Geelbekwitreier",
+    "population": null
+  },
+  "Ardea cinerea": {
+    "en": "Grey Heron",
+    "af": "Bloureier",
+    "population": null
+  },
+  "Ardea goliath": {
+    "en": "Goliath Heron",
+    "af": "Reusereier",
+    "population": null
+  },
+  "Ardea ibis": {
+    "en": "Western Cattle Egret",
+    "af": "Veereier",
+    "population": null
+  },
+  "Ardea melanocephala": {
+    "en": "Black-headed Heron",
+    "af": "Swartkopreier",
+    "population": null
+  },
+  "Ardea purpurea": {
+    "en": "Purple Heron",
+    "af": "Rooireier",
+    "population": null
+  },
+  "Ardeola ralloides": {
+    "en": "Squacco Heron",
+    "af": "Ralreier",
+    "population": null
+  },
+  "Ardeotis kori": {
+    "en": "Kori Bustard",
+    "af": "Gompou",
+    "population": null
+  },
+  "Astur melanoleucus": {
+    "en": "Black Sparrowhawk",
+    "af": "Swartsperwer",
+    "population": null
+  },
+  "Aviceda cuculoides": {
+    "en": "African Cuckoo Hawk",
+    "af": "Koekoekvalk",
+    "population": null
+  },
+  "Batis capensis": {
+    "en": "Cape Batis",
+    "af": "Kaapse Bosbontrokkie",
+    "population": null
+  },
+  "Batis molitor": {
+    "en": "Chinspot Batis",
+    "af": "Witliesbosbontrokkie",
+    "population": null
+  },
+  "Bostrychia hagedash": {
+    "en": "Hadeda (Hadada) Ibis",
+    "af": "Hadeda",
+    "population": null
+  },
+  "Botaurus minutus": {
+    "en": "Little Bittern",
+    "af": "Kleinrietreier",
+    "population": null
+  },
+  "Botaurus sturmii": {
+    "en": "Dwarf Bittern",
+    "af": "Dwergrietreier",
+    "population": null
+  },
+  "Bradornis mariquensis": {
+    "en": "Marico Flycatcher",
+    "af": "Maricovlieëvanger",
+    "population": null
+  },
+  "Bradypterus baboecala": {
+    "en": "Little Rush Warbler",
+    "af": "Kaapse Vleisanger",
+    "population": null
+  },
+  "Bradypterus barratti": {
+    "en": "Barratt’s Warbler",
+    "af": "Ruigtesanger",
+    "population": null
+  },
+  "Brunhilda erythronotos": {
+    "en": "Black-faced Waxbill",
+    "af": "Swartwangsysie",
+    "population": null
+  },
+  "Bubalornis niger": {
+    "en": "Red-billed Buffalo Weaver",
+    "af": "Buffelwewer",
+    "population": null
+  },
+  "Bubo africanus": {
+    "en": "Spotted Eagle-Owl",
+    "af": "Gevlekte Ooruil",
+    "population": null
+  },
+  "Bubo capensis": {
+    "en": "Cape Eagle-Owl",
+    "af": "Kaapse Ooruil",
+    "population": null
+  },
   "Bucorvus leadbeateri": {
-    "en": "Southern Ground Hornbill",
+    "en": "Southern Ground-Hornbill",
     "af": "Bromvoël",
+    "population": null
+  },
+  "Buphagus africanus": {
+    "en": "Yellow-billed Oxpecker",
+    "af": "Geelbekrenostervoël",
+    "population": null
+  },
+  "Buphagus erythroryncha": {
+    "en": "Red-billed Oxpecker",
+    "af": "Rooibekrenostervoël",
+    "population": null
+  },
+  "Burhinus capensis": {
+    "en": "Spotted Thick-knee",
+    "af": "Gewone Dikkop",
+    "population": null
+  },
+  "Burhinus vermiculatus": {
+    "en": "Water Thick-knee",
+    "af": "Waterdikkop",
+    "population": null
+  },
+  "Buteo buteo": {
+    "en": "Common (Steppe) Buzzard",
+    "af": "Bruinjakkalsvoël",
+    "population": null
+  },
+  "Buteo rufofuscus": {
+    "en": "Jackal Buzzard",
+    "af": "Rooiborsjakkalsvoël",
+    "population": null
+  },
+  "Buteo trizonatus": {
+    "en": "Forest Buzzard",
+    "af": "Bosjakkalsvoël",
+    "population": null
+  },
+  "Butorides atricapilla": {
+    "en": "Little Heron",
+    "af": "Groenrugreier",
+    "population": null
+  },
+  "Bycanistes bucinator": {
+    "en": "Trumpeter Hornbill",
+    "af": "Gewone Boskraai",
+    "population": null
+  },
+  "Calamonastes fasciolatus": {
+    "en": "Barred Wren-Warbler",
+    "af": "Gebande Sanger",
+    "population": null
+  },
+  "Calamonastes stierlingi": {
+    "en": "Stierling’s Wren-Warbler",
+    "af": "Stierlingsanger",
+    "population": null
+  },
+  "Calandrella cinerea": {
+    "en": "Red-capped Lark",
+    "af": "Rooikoplewerik",
+    "population": null
+  },
+  "Calendulauda africanoides": {
+    "en": "Fawn-coloured Lark",
+    "af": "Vaalbruinlewerik",
+    "population": null
+  },
+  "Calendulauda sabota": {
+    "en": "Sabota Lark",
+    "af": "Sabotalewerik",
+    "population": null
+  },
+  "Calherodius leuconotus": {
+    "en": "White-backed Night Heron",
+    "af": "Witrugnagreier",
+    "population": null
+  },
+  "Calidris ferruginea": {
+    "en": "Curlew Sandpiper",
+    "af": "Krombekstrandloper",
+    "population": null
+  },
+  "Calidris melanotos": {
+    "en": "Pectoral Sandpiper",
+    "af": "Geelpootstrandloper",
+    "population": null
+  },
+  "Calidris minuta": {
+    "en": "Little Stint",
+    "af": "Kleinstrandloper",
+    "population": null
+  },
+  "Calidris pugnax": {
+    "en": "Ruff",
+    "af": "Kemphaan",
+    "population": null
+  },
+  "Camaroptera brachyura": {
+    "en": "Bleating Camaroptera",
+    "af": "Kwêkwêvoël",
+    "population": null
+  },
+  "Campephaga flava": {
+    "en": "Black Cuckooshrike",
+    "af": "Swartkatakoeroe",
+    "population": null
+  },
+  "Campethera abingoni": {
+    "en": "Golden-tailed Woodpecker",
+    "af": "Goudstertspeg",
+    "population": null
+  },
+  "Campethera bennettii": {
+    "en": "Bennett’s Woodpecker",
+    "af": "Bennettspeg",
+    "population": null
+  },
+  "Campocolinus coqui": {
+    "en": "Coqui Francolin",
+    "af": "Swempie",
+    "population": null
+  },
+  "Caprimulgus europaeus": {
+    "en": "European Nightjar",
+    "af": "Europese Naguil",
+    "population": null
+  },
+  "Caprimulgus fossii": {
+    "en": "Square-tailed Nightjar",
+    "af": "Laeveldnaguil",
+    "population": null
+  },
+  "Caprimulgus pectoralis": {
+    "en": "Fiery-necked Nightjar",
+    "af": "Afrikaanse Naguil",
+    "population": null
+  },
+  "Caprimulgus rufigena": {
+    "en": "Rufous-cheeked Nightjar",
+    "af": "Rooiwangnaguil",
+    "population": null
+  },
+  "Caprimulgus tristigma": {
+    "en": "Freckled Nightjar",
+    "af": "Donkernaguil",
+    "population": null
+  },
+  "Caprimulgus vexillarius": {
+    "en": "Pennant-winged Nightjar",
+    "af": "Wimpelvlerknaguil",
+    "population": null
+  },
+  "Catriscus brevirostris": {
+    "en": "Broad-tailed Warbler (Fan-tailed Grassbird)",
+    "af": "Breëstertsanger",
+    "population": null
+  },
+  "Ceblepyris caesius": {
+    "en": "Grey Cuckooshrike",
+    "af": "Bloukatakoeroe",
+    "population": null
+  },
+  "Ceblepyris pectoralis": {
+    "en": "White-breasted Cuckooshrike",
+    "af": "Witborskatakoeroe",
+    "population": null
+  },
+  "Cecropis abyssinica": {
+    "en": "Lesser Striped Swallow",
+    "af": "Kleinstreepswael",
+    "population": null
+  },
+  "Cecropis cucullata": {
+    "en": "Greater Striped Swallow",
+    "af": "Grootstreepswael",
+    "population": null
+  },
+  "Cecropis semirufa": {
+    "en": "Red-breasted Swallow",
+    "af": "Rooiborsswael",
+    "population": null
+  },
+  "Cecropis senegalensis": {
+    "en": "Mosque Swallow",
+    "af": "Moskeeswael",
+    "population": null
+  },
+  "Centropus burchellii": {
+    "en": "Burchell’s Coucal",
+    "af": "Gewone Vleiloerie",
+    "population": null
+  },
+  "Centropus grillii": {
+    "en": "Black Coucal",
+    "af": "Swartvleiloerie",
+    "population": null
+  },
+  "Centropus senegalensis": {
+    "en": "Senegal Coucal",
+    "af": "Senegalvleiloerie",
+    "population": null
+  },
+  "Cercotrichas leucophrys": {
+    "en": "White-browed Scrub Robin",
+    "af": "Gestreepte Wipstert",
+    "population": null
+  },
+  "Ceryle rudis": {
+    "en": "Pied Kingfisher",
+    "af": "Bontvisvanger",
+    "population": null
+  },
+  "Chalcomitra amethystina": {
+    "en": "Amethyst Sunbird",
+    "af": "Swartsuikerbekkie",
+    "population": null
+  },
+  "Chalcomitra senegalensis": {
+    "en": "Scarlet-chested Sunbird",
+    "af": "Rooiborssuikerbekkie",
+    "population": null
+  },
+  "Charadrius hiaticula": {
+    "en": "Common Ringed Plover",
+    "af": "Ringnekstrandkiewiet",
+    "population": null
+  },
+  "Chlidonias hybrida": {
+    "en": "Whiskered Tern",
+    "af": "Witbaardsterretjie",
+    "population": null
+  },
+  "Chlidonias leucopterus": {
+    "en": "White-winged Tern",
+    "af": "Witvlerksterretjie",
+    "population": null
+  },
+  "Chlorocichla flaviventris": {
+    "en": "Yellow-bellied Greenbul",
+    "af": "Geelborswillie",
+    "population": null
+  },
+  "Chlorophoneus nigrifrons": {
+    "en": "Black-fronted Bush-shrike",
+    "af": "Swartoogboslaksman",
+    "population": null
+  },
+  "Chlorophoneus olivaceus": {
+    "en": "Olive Bush-Shrike",
+    "af": "Olyfboslaksman",
+    "population": null
+  },
+  "Chlorophoneus sulfureopectus": {
+    "en": "Orange-breasted Bush-Shrike",
+    "af": "Oranjeborsboslaksman",
+    "population": null
+  },
+  "Chloropicus namaquus": {
+    "en": "Bearded Woodpecker",
+    "af": "Baardspeg",
+    "population": null
+  },
+  "Chroicocephalus cirrocephalus": {
+    "en": "Grey-headed Gull",
+    "af": "Gryskopmeeu",
+    "population": null
+  },
+  "Chrysococcyx caprius": {
+    "en": "Diederik Cuckoo",
+    "af": "Diederikkie",
+    "population": null
+  },
+  "Chrysococcyx cupreus": {
+    "en": "African Emerald Cuckoo",
+    "af": "Mooimeisie",
+    "population": null
+  },
+  "Chrysococcyx klaas": {
+    "en": "Klaas’s Cuckoo",
+    "af": "Meitjie",
+    "population": null
+  },
+  "Cichladusa arquata": {
+    "en": "Collared Palm Thrush",
+    "af": "Palmmôrelyster",
+    "population": null
+  },
+  "Ciconia abdimii": {
+    "en": "Abdim’s Stork",
+    "af": "Kleinswartooievaar",
+    "population": null
+  },
+  "Ciconia ciconia": {
+    "en": "White Stork",
+    "af": "Witooievaar",
+    "population": null
+  },
+  "Ciconia microscelis": {
+    "en": "African Woolly-necked Stork",
+    "af": "Wolnekooievaar",
+    "population": null
+  },
+  "Ciconia nigra": {
+    "en": "Black Stork",
+    "af": "Grootswartooievaar",
+    "population": null
+  },
+  "Cinnyricinclus leucogaster": {
+    "en": "Violet-backed Starling",
+    "af": "Witborsspreeu",
+    "population": null
+  },
+  "Cinnyris afer": {
+    "en": "Greater Double-collared Sunbird",
+    "af": "Groot-rooibandsuikerbekkie",
+    "population": null
+  },
+  "Cinnyris bifasciatus": {
+    "en": "Purple-banded Sunbird",
+    "af": "Purperbandsuikerbekkie",
+    "population": null
+  },
+  "Cinnyris chalybeus": {
+    "en": "Southern Double-collared Sunbird",
+    "af": "Klein-rooibandsuikerbekkie",
+    "population": null
+  },
+  "Cinnyris mariquensis": {
+    "en": "Marico Sunbird",
+    "af": "Maricosuikerbekkie",
+    "population": null
+  },
+  "Cinnyris talatala": {
+    "en": "White-bellied Sunbird",
+    "af": "Witpenssuikerbekkie",
+    "population": null
+  },
+  "Circaetus cinereus": {
+    "en": "Brown Snake Eagle",
+    "af": "Bruinslangarend",
+    "population": null
+  },
+  "Circaetus pectoralis": {
+    "en": "Black-chested Snake Eagle",
+    "af": "Swartborsslangarend",
+    "population": null
+  },
+  "Circus macrourus": {
+    "en": "Pallid Harrier",
+    "af": "Witborsvleivalk",
+    "population": null
+  },
+  "Circus pygargus": {
+    "en": "Montagu’s Harrier",
+    "af": "Blouvleivalk",
+    "population": null
+  },
+  "Circus ranivorus": {
+    "en": "African Marsh Harrier",
+    "af": "Afrikaanse Vleivalk",
+    "population": null
+  },
+  "Cisticola aberrans": {
+    "en": "Rock-loving (Lazy) Cisticola",
+    "af": "Luitinktinkie",
+    "population": null
+  },
+  "Cisticola aridulus": {
+    "en": "Desert Cisticola",
+    "af": "Woestynklopkloppie",
+    "population": null
+  },
+  "Cisticola chiniana": {
+    "en": "Rattling Cisticola",
+    "af": "Bosveldtinktinkie",
+    "population": null
+  },
+  "Cisticola erythrops": {
+    "en": "Red-faced Cisticola",
+    "af": "Rooiwangtinktinkie",
+    "population": null
+  },
+  "Cisticola fulvicapilla": {
+    "en": "Neddicky",
+    "af": "Neddikkie",
+    "population": null
+  },
+  "Cisticola galactotes": {
+    "en": "Rufous-winged Cisticola",
+    "af": "Swartrugtinktinkie",
+    "population": null
+  },
+  "Cisticola juncidis": {
+    "en": "Zitting Cisticola",
+    "af": "Landeryklopkloppie",
+    "population": null
+  },
+  "Cisticola natalensis": {
+    "en": "Croaking Cisticola",
+    "af": "Groottinktinkie",
+    "population": null
+  },
+  "Cisticola tinniens": {
+    "en": "Levaillant’s Cisticola",
+    "af": "Vleitinktinkie",
+    "population": null
+  },
+  "Clamator glandarius": {
+    "en": "Great Spotted Cuckoo",
+    "af": "Gevlekte Koekoek",
+    "population": null
+  },
+  "Clamator jacobinus": {
+    "en": "Jacobin Cuckoo",
+    "af": "Bontnuwejaarsvoël",
+    "population": null
+  },
+  "Clamator levaillantii": {
+    "en": "Levaillant’s Cuckoo",
+    "af": "Gestreepte Nuwejaarsvoël",
+    "population": null
+  },
+  "Clanga pomarina": {
+    "en": "Lesser Spotted Eagle",
+    "af": "Gevlekte Arend",
+    "population": null
+  },
+  "Coccopygia melanotis": {
+    "en": "Swee Waxbill",
+    "af": "Suidelike Swie",
+    "population": null
+  },
+  "Colius striatus": {
+    "en": "Speckled Mousebird",
+    "af": "Gevlekte Muisvoël",
+    "population": null
+  },
+  "Columba arquatrix": {
+    "en": "African Olive Pigeon",
+    "af": "Geelbekbosduif",
+    "population": null
+  },
+  "Columba guinea": {
+    "en": "Speckled Pigeon",
+    "af": "Kransduif",
+    "population": null
+  },
+  "Columba livia": {
+    "en": "Rock Dove",
+    "af": "Tuinduif",
     "population": null
   },
   "Coracias caudatus": {
@@ -9,9 +834,1634 @@
     "af": "Gewone Troupant",
     "population": null
   },
-  "Haliaeetus vocifer": {
+  "Coracias garrulus": {
+    "en": "European Roller",
+    "af": "Europese Troupant",
+    "population": null
+  },
+  "Coracias naevius": {
+    "en": "Purple Roller",
+    "af": "Groottroupant",
+    "population": null
+  },
+  "Coracias spatulatus": {
+    "en": "Racket-tailed Roller",
+    "af": "Knopsterttroupant",
+    "population": null
+  },
+  "Corvus albicollis": {
+    "en": "White-necked Raven",
+    "af": "Withalskraai",
+    "population": null
+  },
+  "Corvus albus": {
+    "en": "Pied Crow",
+    "af": "Witborskraai",
+    "population": null
+  },
+  "Corvus capensis": {
+    "en": "Cape Crow",
+    "af": "Swartkraai",
+    "population": null
+  },
+  "Corypha africana": {
+    "en": "Rufous-naped Lark",
+    "af": "Rooineklewerik",
+    "population": null
+  },
+  "Corythornis cristatus": {
+    "en": "Malachite Kingfisher",
+    "af": "Kuifkopvisvanger",
+    "population": null
+  },
+  "Cossypha dichroa": {
+    "en": "Chorister Robin-chat",
+    "af": "Lawaaimakerjanfrederik",
+    "population": null
+  },
+  "Cossypha heuglini": {
+    "en": "White-browed Robin-chat",
+    "af": "Heuglinjanfrederik",
+    "population": null
+  },
+  "Cossypha natalensis": {
+    "en": "Red-capped Robin-chat",
+    "af": "Nataljanfrederik",
+    "population": null
+  },
+  "Coturnix coturnix": {
+    "en": "Common Quail",
+    "af": "Afrikaanse Kwartel",
+    "population": null
+  },
+  "Coturnix delegorguei": {
+    "en": "Harlequin Quail",
+    "af": "Bontkwartel",
+    "population": null
+  },
+  "Creatophora cinerea": {
+    "en": "Wattled Starling",
+    "af": "Lelspreeu",
+    "population": null
+  },
+  "Crecopsis egregia": {
+    "en": "African Crake",
+    "af": "Afrikaanse Riethaan",
+    "population": null
+  },
+  "Crex crex": {
+    "en": "Corn Crake",
+    "af": "Kwartelkoning",
+    "population": null
+  },
+  "Crinifer concolor": {
+    "en": "Grey Go-away-bird",
+    "af": "Kwêvoël",
+    "population": null
+  },
+  "Crithagra atrogularis": {
+    "en": "Black-throated Canary",
+    "af": "Bergkanarie",
+    "population": null
+  },
+  "Crithagra citrinipectus": {
+    "en": "Lemon-breasted Canary",
+    "af": "Geelborskanarie",
+    "population": null
+  },
+  "Crithagra gularis": {
+    "en": "Streaky-headed Seedeater",
+    "af": "Streepkopkanarie",
+    "population": null
+  },
+  "Crithagra scotops": {
+    "en": "Forest Canary",
+    "af": "Gestreepte Kanarie",
+    "population": null
+  },
+  "Crithagra sulphurata": {
+    "en": "Brimstone Canary",
+    "af": "Dikbekkanarie",
+    "population": null
+  },
+  "Cuculus canorus": {
+    "en": "Common Cuckoo",
+    "af": "Europese Koekoek",
+    "population": null
+  },
+  "Cuculus clamosus": {
+    "en": "Black Cuckoo",
+    "af": "Swartkoekoek",
+    "population": null
+  },
+  "Cuculus gularis": {
+    "en": "African Cuckoo",
+    "af": "Afrikaanse Koekoek",
+    "population": null
+  },
+  "Cuculus solitarius": {
+    "en": "Red-chested Cuckoo",
+    "af": "Piet-my-vrou",
+    "population": null
+  },
+  "Curruca communis": {
+    "en": "Common Whitethroat",
+    "af": "Witkeelsanger",
+    "population": null
+  },
+  "Cursorius temminckii": {
+    "en": "Temminck’s Courser",
+    "af": "Trekdrawwertjie",
+    "population": null
+  },
+  "Cyanomitra olivacea": {
+    "en": "Olive Sunbird",
+    "af": "Olyfsuikerbekkie",
+    "population": null
+  },
+  "Cypsiurus parvus": {
+    "en": "African Palm Swift",
+    "af": "Palmwindswael",
+    "population": null
+  },
+  "Delichon urbicum": {
+    "en": "Western House Martin",
+    "af": "Huisswael",
+    "population": null
+  },
+  "Dendrocygna bicolor": {
+    "en": "Fulvous Whistling Duck",
+    "af": "Fluiteend",
+    "population": null
+  },
+  "Dendrocygna viduata": {
+    "en": "White-faced Whistling Duck",
+    "af": "Nonnetjie-eend",
+    "population": null
+  },
+  "Dendropicos fuscescens": {
+    "en": "Cardinal Woodpecker",
+    "af": "Kardinaalspeg",
+    "population": null
+  },
+  "Dendropicos griseocephalus": {
+    "en": "Olive Woodpecker",
+    "af": "Gryskopspeg",
+    "population": null
+  },
+  "Dessonornis caffer": {
+    "en": "Cape Robin-chat",
+    "af": "Gewone Janfrederik",
+    "population": null
+  },
+  "Dessonornis humeralis": {
+    "en": "White-throated Robin-chat",
+    "af": "Witkeeljanfrederik",
+    "population": null
+  },
+  "Dicrurus adsimilis": {
+    "en": "Fork-tailed Drongo",
+    "af": "Mikstertbyvanger",
+    "population": null
+  },
+  "Dicrurus ludwigii": {
+    "en": "Common Square-tailed Drongo",
+    "af": "Kleinbyvanger",
+    "population": null
+  },
+  "Dryoscopus cubla": {
+    "en": "Black-backed Puffback",
+    "af": "Sneeubal",
+    "population": null
+  },
+  "Egretta ardesiaca": {
+    "en": "Black Heron",
+    "af": "Swartreier",
+    "population": null
+  },
+  "Egretta garzetta": {
+    "en": "Little Egret",
+    "af": "Kleinwitreier",
+    "population": null
+  },
+  "Elanus caeruleus": {
+    "en": "Black-winged Kite",
+    "af": "Blouvalk",
+    "population": null
+  },
+  "Emberiza flaviventris": {
+    "en": "Golden-breasted Bunting",
+    "af": "Rooirugstreepkoppie",
+    "population": null
+  },
+  "Emberiza impetuani": {
+    "en": "Lark-like Bunting",
+    "af": "Vaalstreepkoppie",
+    "population": null
+  },
+  "Emberiza tahapisi": {
+    "en": "Cinnamon-breasted Bunting",
+    "af": "Klipstreepkoppie",
+    "population": null
+  },
+  "Ephippiorhynchus senegalensis": {
+    "en": "Saddle-billed Stork",
+    "af": "Saalbekooievaar",
+    "population": null
+  },
+  "Eremomela icteropygialis": {
+    "en": "Yellow-bellied Eremomela",
+    "af": "Geelpensbossanger",
+    "population": null
+  },
+  "Eremomela scotops": {
+    "en": "Green-capped Eremomela",
+    "af": "Donkerwangbossanger",
+    "population": null
+  },
+  "Eremomela usticollis": {
+    "en": "Burnt-necked Eremomela",
+    "af": "Bruinkeelbossanger",
+    "population": null
+  },
+  "Eremopterix leucotis": {
+    "en": "Chestnut-backed Sparrow-Lark",
+    "af": "Rooiruglewerik",
+    "population": null
+  },
+  "Eremopterix verticalis": {
+    "en": "Grey-backed Sparrow-lark",
+    "af": "Grysruglewerik",
+    "population": null
+  },
+  "Estrilda astrild": {
+    "en": "Common Waxbill",
+    "af": "Rooibeksysie",
+    "population": null
+  },
+  "Euplectes afer": {
+    "en": "Yellow-crowned Bishop",
+    "af": "Goudgeelvink",
+    "population": null
+  },
+  "Euplectes albonotatus": {
+    "en": "White-winged Widowbird",
+    "af": "Witvlerkflap",
+    "population": null
+  },
+  "Euplectes ardens": {
+    "en": "Red-collared Widowbird",
+    "af": "Rooikeelflap",
+    "population": null
+  },
+  "Euplectes axillaris": {
+    "en": "Fan-tailed Widowbird",
+    "af": "Kortstertflap",
+    "population": null
+  },
+  "Euplectes orix": {
+    "en": "Southern Red Bishop",
+    "af": "Rooivink",
+    "population": null
+  },
+  "Eurocephalus anguitimens": {
+    "en": "Southern White-crowned Shrike",
+    "af": "Kremetartlaksman",
+    "population": null
+  },
+  "Eurystomus glaucurus": {
+    "en": "Broad-billed Roller",
+    "af": "Geelbektroupant",
+    "population": null
+  },
+  "Falco amurensis": {
+    "en": "Amur Falcon",
+    "af": "Oostelike Rooipootvalk",
+    "population": null
+  },
+  "Falco biarmicus": {
+    "en": "Lanner Falcon",
+    "af": "Edelvalk",
+    "population": null
+  },
+  "Falco concolor": {
+    "en": "Sooty Falcon",
+    "af": "Roetvalk",
+    "population": null
+  },
+  "Falco dickinsoni": {
+    "en": "Dickinson’s Kestrel",
+    "af": "Dickinsongrysvalk",
+    "population": null
+  },
+  "Falco naumanni": {
+    "en": "Lesser Kestrel",
+    "af": "Kleinrooivalk",
+    "population": null
+  },
+  "Falco peregrinus": {
+    "en": "Peregrine Falcon",
+    "af": "Swerfvalk",
+    "population": null
+  },
+  "Falco rupicolus": {
+    "en": "Rock Kestrel",
+    "af": "Kransvalk",
+    "population": null
+  },
+  "Falco subbuteo": {
+    "en": "Eurasian Hobby",
+    "af": "Europese Boomvalk",
+    "population": null
+  },
+  "Falco vespertinus": {
+    "en": "Red-footed Falcon",
+    "af": "Westelike Rooipootvalk",
+    "population": null
+  },
+  "Fraseria caerulescens": {
+    "en": "Ashy Flycatcher",
+    "af": "Blougrysvlieëvanger",
+    "population": null
+  },
+  "Fraseria plumbea": {
+    "en": "Grey Tit-flycatcher",
+    "af": "Waaierstertvlieëvanger",
+    "population": null
+  },
+  "Fulica cristata": {
+    "en": "Red-knobbed Coot",
+    "af": "Bleshoender",
+    "population": null
+  },
+  "Gallinago nigripennis": {
+    "en": "African Snipe",
+    "af": "Afrikaanse Snip",
+    "population": null
+  },
+  "Gallinula chloropus": {
+    "en": "Common Moorhen",
+    "af": "Grootwaterhoender",
+    "population": null
+  },
+  "Geronticus calvus": {
+    "en": "Southern Bald Ibis",
+    "af": "Kalkoenibis",
+    "population": null
+  },
+  "Glareola nordmanni": {
+    "en": "Black-winged Pratincole",
+    "af": "Swartvlerksprinkaanvoël",
+    "population": null
+  },
+  "Glareola pratincola": {
+    "en": "Collared Pratincole",
+    "af": "Rooivlerksprinkaanvoël",
+    "population": null
+  },
+  "Glaucidium capense": {
+    "en": "African Barred Owlet",
+    "af": "Gebande Uil",
+    "population": null
+  },
+  "Glaucidium perlatum": {
+    "en": "Pearl-spotted Owlet",
+    "af": "Witkoluil",
+    "population": null
+  },
+  "Granatina granatina": {
+    "en": "Violet-eared Waxbill",
+    "af": "Koningblousysie",
+    "population": null
+  },
+  "Guttera edouardi": {
+    "en": "Southern Crested Guineafowl",
+    "af": "Kuifkoptarentaal",
+    "population": null
+  },
+  "Gymnoris superciliaris": {
+    "en": "Yellow-throated Petronia",
+    "af": "Geelvlekmossie",
+    "population": null
+  },
+  "Gypohierax angolensis": {
+    "en": "Palm-nut Vulture",
+    "af": "Witaasvoël",
+    "population": null
+  },
+  "Gyps africanus": {
+    "en": "White-backed Vulture",
+    "af": "Witrugaasvoël",
+    "population": null
+  },
+  "Gyps coprotheres": {
+    "en": "Cape Vulture",
+    "af": "Kransaasvoël",
+    "population": null
+  },
+  "Halcyon albiventris": {
+    "en": "Brown-hooded Kingfisher",
+    "af": "Bruinkopvisvanger",
+    "population": null
+  },
+  "Halcyon chelicuti": {
+    "en": "Striped Kingfisher",
+    "af": "Gestreepte Visvanger",
+    "population": null
+  },
+  "Halcyon leucocephala": {
+    "en": "Grey-headed Kingfisher",
+    "af": "Gryskopvisvanger",
+    "population": null
+  },
+  "Halcyon senegalensis": {
+    "en": "Woodland Kingfisher",
+    "af": "Bosveldvisvanger",
+    "population": null
+  },
+  "Hedydipna collaris": {
+    "en": "Collared Sunbird",
+    "af": "Kortbeksuikerbekkie",
+    "population": null
+  },
+  "Hieraaetus pennatus": {
+    "en": "Booted Eagle",
+    "af": "Dwergarend",
+    "population": null
+  },
+  "Hieraaetus wahlbergi": {
+    "en": "Wahlberg’s Eagle",
+    "af": "Bruinarend",
+    "population": null
+  },
+  "Himantopus himantopus": {
+    "en": "Black-winged Stilt",
+    "af": "Rooipootelsie",
+    "population": null
+  },
+  "Hippolais icterina": {
+    "en": "Icterine Warbler",
+    "af": "Spotsanger",
+    "population": null
+  },
+  "Hippolais olivetorum": {
+    "en": "Olive-tree Warbler",
+    "af": "Olyfboomsanger",
+    "population": null
+  },
+  "Hirundo albigularis": {
+    "en": "White-throated Swallow",
+    "af": "Witkeelswael",
+    "population": null
+  },
+  "Hirundo dimidiata": {
+    "en": "Pearl-breasted Swallow",
+    "af": "Pêrelborsswael",
+    "population": null
+  },
+  "Hirundo rustica": {
+    "en": "Barn Swallow",
+    "af": "Europese Swael",
+    "population": null
+  },
+  "Hirundo smithii": {
+    "en": "Wire-tailed Swallow",
+    "af": "Draadstertswael",
+    "population": null
+  },
+  "Hypargos margaritatus": {
+    "en": "Pink-throated Twinspot",
+    "af": "Rooskeelkolpensie",
+    "population": null
+  },
+  "Icthyophaga vocifer": {
     "en": "African Fish Eagle",
     "af": "Visarend",
+    "population": null
+  },
+  "Iduna natalensis": {
+    "en": "African (Dark-capped) Yellow Warbler",
+    "af": "Geelsanger",
+    "population": null
+  },
+  "Indicator indicator": {
+    "en": "Greater Honeyguide",
+    "af": "Grootheuningwyser",
+    "population": null
+  },
+  "Indicator minor": {
+    "en": "Lesser Honeyguide",
+    "af": "Kleinheuningwyser",
+    "population": null
+  },
+  "Indicator variegatus": {
+    "en": "Scaly-throated Honeyguide",
+    "af": "Gevlekte Heuningwyser",
+    "population": null
+  },
+  "Ispidina picta": {
+    "en": "African Pygmy Kingfisher",
+    "af": "Dwergvisvanger",
+    "population": null
+  },
+  "Jynx ruficollis": {
+    "en": "Red-throated Wryneck",
+    "af": "Draaihals",
+    "population": null
+  },
+  "Kaupifalco monogrammicus": {
+    "en": "Lizard Buzzard",
+    "af": "Akkedisvalk",
+    "population": null
+  },
+  "Ketupa lactea": {
+    "en": "Verreaux’s Eagle-Owl",
+    "af": "Reuse-ooruil",
+    "population": null
+  },
+  "Lagonosticta rhodopareia": {
+    "en": "Jameson’s Firefinch",
+    "af": "Jamesonvuurvinkie",
+    "population": null
+  },
+  "Lagonosticta rubricata": {
+    "en": "African Firefinch",
+    "af": "Kaapse Vuurvinkie",
+    "population": null
+  },
+  "Lagonosticta senegala": {
+    "en": "Red-billed Firefinch",
+    "af": "Rooibekvuurvinkie",
+    "population": null
+  },
+  "Lamprotornis australis": {
+    "en": "Burchell’s Starling",
+    "af": "Grootglansspreeu",
+    "population": null
+  },
+  "Lamprotornis chalybaeus": {
+    "en": "Greater Blue-eared Starling",
+    "af": "Groot-blouoorglansspreeu",
+    "population": null
+  },
+  "Lamprotornis mevesii": {
+    "en": "Meves’s Starling",
+    "af": "Langstertglansspreeu",
+    "population": null
+  },
+  "Lamprotornis nitens": {
+    "en": "Cape (Glossy) Starling",
+    "af": "Kleinglansspreeu",
+    "population": null
+  },
+  "Laniarius atrococcineus": {
+    "en": "Crimson-breasted Shrike",
+    "af": "Rooiborslaksman",
+    "population": null
+  },
+  "Laniarius ferrugineus": {
+    "en": "Southern Boubou",
+    "af": "Suidelike Waterfiskaal",
+    "population": null
+  },
+  "Laniarius major": {
+    "en": "Tropical Boubou",
+    "af": "Tropiese Waterfiskaal",
+    "population": null
+  },
+  "Lanius collaris": {
+    "en": "Southern Fiscal",
+    "af": "Fiskaallaksman",
+    "population": null
+  },
+  "Lanius collurio": {
+    "en": "Red-backed Shrike",
+    "af": "Rooiruglaksman",
+    "population": null
+  },
+  "Lanius minor": {
+    "en": "Lesser Grey Shrike",
+    "af": "Gryslaksman",
+    "population": null
+  },
+  "Leptoptilos crumenifer": {
+    "en": "Marabou Stork",
+    "af": "Maraboe",
+    "population": null
+  },
+  "Lissotis melanogaster": {
+    "en": "Black-bellied Bustard",
+    "af": "Langbeenkorhaan",
+    "population": null
+  },
+  "Locustella fluviatilis": {
+    "en": "River Warbler",
+    "af": "Sprinkaansanger",
+    "population": null
+  },
+  "Lophaetus occipitalis": {
+    "en": "Long-crested Eagle",
+    "af": "Langkuifarend",
+    "population": null
+  },
+  "Lophoceros alboterminatus": {
+    "en": "Crowned Hornbill",
+    "af": "Gekroonde Neushoringvoël",
+    "population": null
+  },
+  "Lophoceros nasutus": {
+    "en": "African Grey Hornbill",
+    "af": "Grysneushoringvoël",
+    "population": null
+  },
+  "Lophotis ruficrista": {
+    "en": "Red-crested Korhaan",
+    "af": "Boskorhaan",
+    "population": null
+  },
+  "Luscinia luscinia": {
+    "en": "Thrush Nightingale",
+    "af": "Lysternagtegaal",
+    "population": null
+  },
+  "Lybius torquatus": {
+    "en": "Black-collared Barbet",
+    "af": "Rooikophoutkapper",
+    "population": null
+  },
+  "Macheiramphus alcinus": {
+    "en": "Bat Hawk",
+    "af": "Vlermuisvalk",
+    "population": null
+  },
+  "Macronyx croceus": {
+    "en": "Yellow-throated Longclaw",
+    "af": "Geelkeelkalkoentjie",
+    "population": null
+  },
+  "Malaconotus blanchoti": {
+    "en": "Grey-headed Bush-Shrike",
+    "af": "Spookvoël",
+    "population": null
+  },
+  "Megaceryle maxima": {
+    "en": "Giant Kingfisher",
+    "af": "Reusevisvanger",
+    "population": null
+  },
+  "Melaenornis pammelaina": {
+    "en": "Southern Black Flycatcher",
+    "af": "Swartvlieëvanger",
+    "population": null
+  },
+  "Melaniparus niger": {
+    "en": "Southern Black Tit",
+    "af": "Gewone Swartmees",
+    "population": null
+  },
+  "Melierax metabates": {
+    "en": "Dark Chanting Goshawk",
+    "af": "Donkersingvalk",
+    "population": null
+  },
+  "Merops apiaster": {
+    "en": "European Bee-eater",
+    "af": "Europese Byvreter",
+    "population": null
+  },
+  "Merops bullockoides": {
+    "en": "White-fronted Bee-eater",
+    "af": "Rooikeelbyvreter",
+    "population": null
+  },
+  "Merops hirundineus": {
+    "en": "Swallow-tailed Bee-eater",
+    "af": "Swaelstertbyvreter",
+    "population": null
+  },
+  "Merops nubicoides": {
+    "en": "Southern Carmine Bee-eater",
+    "af": "Rooiborsbyvreter",
+    "population": null
+  },
+  "Merops persicus": {
+    "en": "Blue-cheeked Bee-eater",
+    "af": "Blouwangbyvreter",
+    "population": null
+  },
+  "Merops pusillus": {
+    "en": "Little Bee-eater",
+    "af": "Kleinbyvreter",
+    "population": null
+  },
+  "Microcarbo africanus": {
+    "en": "Reed Cormorant",
+    "af": "Rietduiker",
+    "population": null
+  },
+  "Micronisus gabar": {
+    "en": "Gabar Goshawk",
+    "af": "Witkruissperwer",
+    "population": null
+  },
+  "Microparra capensis": {
+    "en": "Lesser Jacana",
+    "af": "Dwerglangtoon",
+    "population": null
+  },
+  "Milvus migrans": {
+    "en": "Black Kite",
+    "af": "Swartwou",
+    "population": null
+  },
+  "Mirafra passerina": {
+    "en": "Monotonous Lark",
+    "af": "Bosveldlewerik",
+    "population": null
+  },
+  "Monticola rupestris": {
+    "en": "Cape Rock Thrush",
+    "af": "Kaapse Kliplyster",
+    "population": null
+  },
+  "Motacilla aguimp": {
+    "en": "African Pied Wagtail",
+    "af": "Bontkwikkie",
+    "population": null
+  },
+  "Motacilla capensis": {
+    "en": "Cape Wagtail",
+    "af": "Gewone Kwikkie",
+    "population": null
+  },
+  "Motacilla clara": {
+    "en": "Mountain Wagtail",
+    "af": "Bergkwikkie",
+    "population": null
+  },
+  "Motacilla flava": {
+    "en": "Western Yellow Wagtail",
+    "af": "Geelkwikkie",
+    "population": null
+  },
+  "Muscicapa adusta": {
+    "en": "African Dusky Flycatcher",
+    "af": "Donkervlieëvanger",
+    "population": null
+  },
+  "Mycteria ibis": {
+    "en": "Yellow-billed Stork",
+    "af": "Nimmersat",
+    "population": null
+  },
+  "Myrmecocichla arnotti": {
+    "en": "Arnot’s Chat",
+    "af": "Bontpiek",
+    "population": null
+  },
+  "Neafrapus boehmi": {
+    "en": "Böhm’s Spinetail",
+    "af": "Witpensstekelstert",
+    "population": null
+  },
+  "Necrosyrtes monachus": {
+    "en": "Hooded Vulture",
+    "af": "Monnikaasvoël",
+    "population": null
+  },
+  "Nectarinia famosa": {
+    "en": "Malachite Sunbird",
+    "af": "Jangroentjie",
+    "population": null
+  },
+  "Neophedina cincta": {
+    "en": "Banded Martin",
+    "af": "Gebande Oewerswael",
+    "population": null
+  },
+  "Netta erythrophthalma": {
+    "en": "Southern Pochard",
+    "af": "Bruineend",
+    "population": null
+  },
+  "Nettapus auritus": {
+    "en": "African Pygmy Goose",
+    "af": "Dwerggans",
+    "population": null
+  },
+  "Nicator gularis": {
+    "en": "Eastern Nicator",
+    "af": "Geelvleknikator",
+    "population": null
+  },
+  "Nilaus afer": {
+    "en": "Brubru",
+    "af": "Bontroklaksman",
+    "population": null
+  },
+  "Notopholia corusca": {
+    "en": "Black-bellied Starling",
+    "af": "Swartpensglansspreeu",
+    "population": null
+  },
+  "Numida meleagris": {
+    "en": "Helmeted Guineafowl",
+    "af": "Gewone Tarentaal",
+    "population": null
+  },
+  "Nycticorax nycticorax": {
+    "en": "Black-crowned Night Heron",
+    "af": "Gewone Nagreier",
+    "population": null
+  },
+  "Oena capensis": {
+    "en": "Namaqua Dove",
+    "af": "Namakwaduifie",
+    "population": null
+  },
+  "Oenanthe familiaris": {
+    "en": "Familiar Chat",
+    "af": "Gewone Spekvreter",
+    "population": null
+  },
+  "Oenanthe pileata": {
+    "en": "Capped Wheatear",
+    "af": "Hoëveldskaapwagter",
+    "population": null
+  },
+  "Onychognathus morio": {
+    "en": "Red-winged Starling",
+    "af": "Rooivlerkspreeu",
+    "population": null
+  },
+  "Oriolus auratus": {
+    "en": "African Golden Oriole",
+    "af": "Afrikaanse Wielewaal",
+    "population": null
+  },
+  "Oriolus larvatus": {
+    "en": "Black-headed Oriole",
+    "af": "Swartkopwielewaal",
+    "population": null
+  },
+  "Oriolus oriolus": {
+    "en": "Eurasian Golden Oriole",
+    "af": "Europese Wielewaal",
+    "population": null
+  },
+  "Ortygornis sephaena": {
+    "en": "Crested Francolin",
+    "af": "Bospatrys",
+    "population": null
+  },
+  "Ortygospiza atricollis": {
+    "en": "Quailfinch",
+    "af": "Gewone Kwartelvinkie",
+    "population": null
+  },
+  "Otus senegalensis": {
+    "en": "African Scops Owl",
+    "af": "Skopsuil",
+    "population": null
+  },
+  "Pachycoccyx audeberti": {
+    "en": "Thick-billed Cuckoo",
+    "af": "Dikbekkoekoek",
+    "population": null
+  },
+  "Pandion haliaetus": {
+    "en": "Osprey",
+    "af": "Visvalk",
+    "population": null
+  },
+  "Paragallinula angulata": {
+    "en": "Lesser Moorhen",
+    "af": "Kleinwaterhoender",
+    "population": null
+  },
+  "Passer diffusus": {
+    "en": "Southern Grey-headed Sparrow",
+    "af": "Gryskopmossie",
+    "population": null
+  },
+  "Passer domesticus": {
+    "en": "House Sparrow",
+    "af": "Huismossie",
+    "population": null
+  },
+  "Passer melanurus": {
+    "en": "Cape Sparrow",
+    "af": "Gewone Mossie",
+    "population": null
+  },
+  "Pelecanus onocrotalus": {
+    "en": "Great White Pelican",
+    "af": "Witpelikaan",
+    "population": null
+  },
+  "Pelecanus rufescens": {
+    "en": "Pink-backed Pelican",
+    "af": "Kleinpelikaan",
+    "population": null
+  },
+  "Pernis apivorus": {
+    "en": "European Honey Buzzard",
+    "af": "Wespedief",
+    "population": null
+  },
+  "Phalacrocorax carbo": {
+    "en": "Great (White-breasted) Cormorant",
+    "af": "Witborsduiker",
+    "population": null
+  },
+  "Phoeniconaias minor": {
+    "en": "Lesser Flamingo",
+    "af": "Kleinflamink",
+    "population": null
+  },
+  "Phoenicopterus roseus": {
+    "en": "Greater Flamingo",
+    "af": "Grootflamink",
+    "population": null
+  },
+  "Phoeniculus purpureus": {
+    "en": "Green Wood-hoopoe",
+    "af": "Rooibekkakelaar",
+    "population": null
+  },
+  "Phyllastrephus flavostriatus": {
+    "en": "Yellow-streaked Greenbul",
+    "af": "Geelstreepboskruiper",
+    "population": null
+  },
+  "Phyllastrephus terrestris": {
+    "en": "Terrestrial Brownbul",
+    "af": "Boskrapper",
+    "population": null
+  },
+  "Phylloscopus ruficapilla": {
+    "en": "Yellow-throated Woodland Warbler",
+    "af": "Geelkeelsanger",
+    "population": null
+  },
+  "Phylloscopus trochilus": {
+    "en": "Willow Warbler",
+    "af": "Hofsanger",
+    "population": null
+  },
+  "Pinarocorys nigricans": {
+    "en": "Dusky Lark",
+    "af": "Donkerlewerik",
+    "population": null
+  },
+  "Platalea alba": {
+    "en": "African Spoonbill",
+    "af": "Lepelaar",
+    "population": null
+  },
+  "Platysteira peltata": {
+    "en": "Black-throated Wattle-eye",
+    "af": "Beloogbosbontrokkie",
+    "population": null
+  },
+  "Plectropterus gambensis": {
+    "en": "Spur-winged Goose",
+    "af": "Wildemakou",
+    "population": null
+  },
+  "Plegadis falcinellus": {
+    "en": "Glossy Ibis",
+    "af": "Glansibis",
+    "population": null
+  },
+  "Plocepasser mahali": {
+    "en": "White-browed Sparrow-Weaver",
+    "af": "Koringvoël",
+    "population": null
+  },
+  "Ploceus capensis": {
+    "en": "Cape Weaver",
+    "af": "Kaapse Wewer",
+    "population": null
+  },
+  "Ploceus cucullatus": {
+    "en": "Village Weaver",
+    "af": "Bontrugwewer",
+    "population": null
+  },
+  "Ploceus intermedius": {
+    "en": "Lesser Masked Weaver",
+    "af": "Kleingeelvink",
+    "population": null
+  },
+  "Ploceus ocularis": {
+    "en": "Spectacled Weaver",
+    "af": "Brilwewer",
+    "population": null
+  },
+  "Ploceus subaureus": {
+    "en": "Yellow (Eastern Golden) Weaver",
+    "af": "Geelwewer",
+    "population": null
+  },
+  "Ploceus velatus": {
+    "en": "Southern Masked Weaver",
+    "af": "Swartkeelgeelvink",
+    "population": null
+  },
+  "Ploceus xanthops": {
+    "en": "African (Holub’s) Golden Weaver",
+    "af": "Goudwewer",
+    "population": null
+  },
+  "Ploceus xanthopterus": {
+    "en": "Southern Brown-throated Weaver",
+    "af": "Bruinkeelwewer",
+    "population": null
+  },
+  "Podica senegalensis": {
+    "en": "African Finfoot",
+    "af": "Watertrapper",
+    "population": null
+  },
+  "Pogoniulus bilineatus": {
+    "en": "Yellow-rumped Tinkerbird",
+    "af": "Swartblestinker",
+    "population": null
+  },
+  "Pogoniulus chrysoconus": {
+    "en": "Yellow-fronted Tinkerbird",
+    "af": "Geelblestinker",
+    "population": null
+  },
+  "Pogonocichla stellata": {
+    "en": "White-starred Robin",
+    "af": "Witkoljanfrederik",
+    "population": null
+  },
+  "Poicephalus cryptoxanthus": {
+    "en": "Brown-headed Parrot",
+    "af": "Bruinkoppapegaai",
+    "population": null
+  },
+  "Poicephalus meyeri": {
+    "en": "Meyer’s Parrot",
+    "af": "Bosveldpapegaai",
+    "population": null
+  },
+  "Polemaetus bellicosus": {
+    "en": "Martial Eagle",
+    "af": "Breëkoparend",
+    "population": null
+  },
+  "Polyboroides typus": {
+    "en": "African Harrier-Hawk",
+    "af": "Kaalwangvalk",
+    "population": null
+  },
+  "Porphyrio alleni": {
+    "en": "Allen’s Gallinule",
+    "af": "Kleinkoningriethaan",
+    "population": null
+  },
+  "Porphyrio porphyrio": {
+    "en": "Purple Swamphen",
+    "af": "Grootkoningriethaan",
+    "population": null
+  },
+  "Prinia flavicans": {
+    "en": "Black-chested Prinia",
+    "af": "Swartbandlangstertjie",
+    "population": null
+  },
+  "Prinia hypoxantha": {
+    "en": "Drakensberg Prinia",
+    "af": "Drakensberglangstertjie",
+    "population": null
+  },
+  "Prinia subflava": {
+    "en": "Tawny-flanked Prinia",
+    "af": "Bruinsylangstertjie",
+    "population": null
+  },
+  "Prionops plumatus": {
+    "en": "White-crested Helmet-Shrike",
+    "af": "Withelmlaksman",
+    "population": null
+  },
+  "Prionops retzii": {
+    "en": "Retz’s Helmet-Shrike",
+    "af": "Swarthelmlaksman",
+    "population": null
+  },
+  "Prodotiscus regulus": {
+    "en": "Brown-backed Honeybird",
+    "af": "Skerpbekheuningvoël",
+    "population": null
+  },
+  "Pseudhirundo griseopyga": {
+    "en": "Grey-rumped Swallow",
+    "af": "Gryskruisswael",
+    "population": null
+  },
+  "Pternistis afer": {
+    "en": "Red-necked Spurfowl",
+    "af": "Rooikeelfisant",
+    "population": null
+  },
+  "Pternistis natalensis": {
+    "en": "Natal Spurfowl",
+    "af": "Natalse Fisant",
+    "population": null
+  },
+  "Pternistis swainsonii": {
+    "en": "Swainson’s Spurfowl",
+    "af": "Bosveldfisant",
+    "population": null
+  },
+  "Pterocles bicinctus": {
+    "en": "Double-banded Sandgrouse",
+    "af": "Dubbelbandsandpatrys",
+    "population": null
+  },
+  "Ptilopsis granti": {
+    "en": "Southern White-faced Owl",
+    "af": "Witwanguil",
+    "population": null
+  },
+  "Ptyonoprogne fuligula": {
+    "en": "Large Rock Martin",
+    "af": "Grootkransswael",
+    "population": null
+  },
+  "Pycnonotus barbatus": {
+    "en": "Common (Dark-capped) Bulbul",
+    "af": "Swartoogtiptol",
+    "population": null
+  },
+  "Pytilia afra": {
+    "en": "Orange-winged Pytilia",
+    "af": "Oranjevlerkmelba",
+    "population": null
+  },
+  "Pytilia melba": {
+    "en": "Green-winged Pytilia",
+    "af": "Gewone Melba",
+    "population": null
+  },
+  "Quelea quelea": {
+    "en": "Red-billed Quelea",
+    "af": "Rooibekkwelea",
+    "population": null
+  },
+  "Rallus caerulescens": {
+    "en": "African Rail",
+    "af": "Grootriethaan",
+    "population": null
+  },
+  "Recurvirostra avosetta": {
+    "en": "Pied Avocet",
+    "af": "Bontelsie",
+    "population": null
+  },
+  "Rhinopomastus cyanomelas": {
+    "en": "Common Scimitarbill",
+    "af": "Swartbekkakelaar",
+    "population": null
+  },
+  "Rhinoptilus chalcopterus": {
+    "en": "Bronze-winged Courser",
+    "af": "Bronsvlerkdrawwertjie",
+    "population": null
+  },
+  "Rhinoptilus cinctus": {
+    "en": "Three-banded Courser",
+    "af": "Driebanddrawwertjie",
+    "population": null
+  },
+  "Riparia paludicola": {
+    "en": "Brown-throated Martin",
+    "af": "Afrikaanse Oewerswael",
+    "population": null
+  },
+  "Riparia riparia": {
+    "en": "Sand Martin",
+    "af": "Europese Oewerswael",
+    "population": null
+  },
+  "Rostratula benghalensis": {
+    "en": "Greater Painted-Snipe",
+    "af": "Goudsnip",
+    "population": null
+  },
+  "Rynchops flavirostris": {
+    "en": "African Skimmer",
+    "af": "Waterploeër",
+    "population": null
+  },
+  "Sagittarius serpentarius": {
+    "en": "Secretarybird",
+    "af": "Sekretarisvoël",
+    "population": null
+  },
+  "Sarkidiornis melanotos": {
+    "en": "Knob-billed Duck",
+    "af": "Knobbeleend",
+    "population": null
+  },
+  "Sarothrura elegans": {
+    "en": "Buff-spotted Flufftail",
+    "af": "Gevlekte Vleikuiken",
+    "population": null
+  },
+  "Sarothrura rufa": {
+    "en": "Red-chested Flufftail",
+    "af": "Rooiborsvleikuiken",
+    "population": null
+  },
+  "Saxicola torquatus": {
+    "en": "African Stonechat",
+    "af": "Gewone Bontrokkie",
+    "population": null
+  },
+  "Scleroptila shelleyi": {
+    "en": "Shelley’s Francolin",
+    "af": "Laeveldpatrys",
+    "population": null
+  },
+  "Scopus umbretta": {
+    "en": "Hamerkop",
+    "af": "Hamerkop",
+    "population": null
+  },
+  "Scotopelia peli": {
+    "en": "Pel’s Fishing Owl",
+    "af": "Visuil",
+    "population": null
+  },
+  "Serinus canicollis": {
+    "en": "Cape Canary",
+    "af": "Kaapse Kanarie",
+    "population": null
+  },
+  "Sigelus silens": {
+    "en": "Fiscal Flycatcher",
+    "af": "Fiskaalvlieëvanger",
+    "population": null
+  },
+  "Spatula hottentota": {
+    "en": "Blue-billed Teal",
+    "af": "Gevlekte Eend",
+    "population": null
+  },
+  "Spermestes bicolor": {
+    "en": "Red-backed Mannikin",
+    "af": "Rooirugfret",
+    "population": null
+  },
+  "Spermestes cucullata": {
+    "en": "Bronze Mannikin",
+    "af": "Gewone Fret",
+    "population": null
+  },
+  "Spermestes fringilloides": {
+    "en": "Magpie Mannikin",
+    "af": "Dikbekfret",
+    "population": null
+  },
+  "Sphenoeacus afer": {
+    "en": "Cape Grassbird",
+    "af": "Grasvoël",
+    "population": null
+  },
+  "Spilopelia senegalensis": {
+    "en": "Laughing Dove",
+    "af": "Rooiborsduifie",
+    "population": null
+  },
+  "Sporopipes squamifrons": {
+    "en": "Scaly-feathered Finch (Weaver)",
+    "af": "Baardmannetjie",
+    "population": null
+  },
+  "Stephanoaetus coronatus": {
+    "en": "Crowned Eagle",
+    "af": "Kroonarend",
+    "population": null
+  },
+  "Streptopelia capicola": {
+    "en": "Cape Turtle (Ring-necked) Dove",
+    "af": "Gewone Tortelduif",
+    "population": null
+  },
+  "Streptopelia decipiens": {
+    "en": "African Mourning (Mourning Collared) Dove",
+    "af": "Rooioogtortelduif",
+    "population": null
+  },
+  "Streptopelia semitorquata": {
+    "en": "Red-eyed Dove",
+    "af": "Grootringduif",
+    "population": null
+  },
+  "Strix woodfordii": {
+    "en": "African Wood Owl",
+    "af": "Bosuil",
+    "population": null
+  },
+  "Struthio camelus": {
+    "en": "Common Ostrich",
+    "af": "Volstruis",
+    "population": null
+  },
+  "Sylvia borin": {
+    "en": "Garden Warbler",
+    "af": "Tuinsanger",
+    "population": null
+  },
+  "Sylvietta rufescens": {
+    "en": "Long-billed Crombec",
+    "af": "Bosveldstompstert",
+    "population": null
+  },
+  "Tachybaptus ruficollis": {
+    "en": "Little Grebe",
+    "af": "Kleindobbertjie",
+    "population": null
+  },
+  "Tachymarptis melba": {
+    "en": "Alpine Swift",
+    "af": "Witpenswindswael",
+    "population": null
+  },
+  "Tachyspiza badia": {
+    "en": "Shikra",
+    "af": "Gebande Sperwer",
+    "population": null
+  },
+  "Tachyspiza minulla": {
+    "en": "Little Sparrowhawk",
+    "af": "Kleinsperwer",
+    "population": null
+  },
+  "Tauraco corythaix": {
+    "en": "Knysna Turaco",
+    "af": "Knysnaloerie",
+    "population": null
+  },
+  "Tchagra australis": {
+    "en": "Brown-crowned Tchagra",
+    "af": "Rooivlerktjagra",
+    "population": null
+  },
+  "Tchagra senegalus": {
+    "en": "Black-crowned Tchagra",
+    "af": "Swartkroontjagra",
+    "population": null
+  },
+  "Telacanthura ussheri": {
+    "en": "Mottled Spinetail",
+    "af": "Gevlekte Stekelstert",
+    "population": null
+  },
+  "Telophorus viridis": {
+    "en": "Gorgeous Bush-Shrike",
+    "af": "Konkoit",
+    "population": null
+  },
+  "Terathopius ecaudatus": {
+    "en": "Bateleur",
+    "af": "Berghaan",
+    "population": null
+  },
+  "Terpsiphone viridis": {
+    "en": "African Paradise Flycatcher",
+    "af": "Paradysvlieëvanger",
+    "population": null
+  },
+  "Thalassornis leuconotus": {
+    "en": "White-backed Duck",
+    "af": "Witrugeend",
+    "population": null
+  },
+  "Thamnolaea cinnamomeiventris": {
+    "en": "Mocking Cliff Chat",
+    "af": "Dassievoël",
+    "population": null
+  },
+  "Thinornis tricollaris": {
+    "en": "Three-banded Plover",
+    "af": "Driebandstrandkiewiet",
+    "population": null
+  },
+  "Threskiornis aethiopicus": {
+    "en": "African Sacred Ibis",
+    "af": "Skoorsteenveër",
+    "population": null
+  },
+  "Tockus leucomelas": {
+    "en": "Southern Yellow-billed Hornbill",
+    "af": "Geelbekneushoringvoël",
+    "population": null
+  },
+  "Tockus rufirostris": {
+    "en": "Southern Red-billed Hornbill",
+    "af": "Rooibekneushoringvoël",
+    "population": null
+  },
+  "Torgos tracheliotos": {
+    "en": "Lappet-faced Vulture",
+    "af": "Swartaasvoël",
+    "population": null
+  },
+  "Trachyphonus vaillantii": {
+    "en": "Crested Barbet",
+    "af": "Kuifkophoutkapper",
+    "population": null
+  },
+  "Treron calvus": {
+    "en": "African Green Pigeon",
+    "af": "Papegaaiduif",
+    "population": null
+  },
+  "Tricholaema leucomelas": {
+    "en": "Acacia Pied Barbet",
+    "af": "Bonthoutkapper",
+    "population": null
+  },
+  "Trigonoceps occipitalis": {
+    "en": "White-headed Vulture",
+    "af": "Witkopaasvoël",
+    "population": null
+  },
+  "Tringa glareola": {
+    "en": "Wood Sandpiper",
+    "af": "Bosruiter",
+    "population": null
+  },
+  "Tringa nebularia": {
+    "en": "Common Greenshank",
+    "af": "Groenpootruiter",
+    "population": null
+  },
+  "Tringa ochropus": {
+    "en": "Green Sandpiper",
+    "af": "Witgatruiter",
+    "population": null
+  },
+  "Tringa stagnatilis": {
+    "en": "Marsh Sandpiper",
+    "af": "Moerasruiter",
+    "population": null
+  },
+  "Trochocercus cyanomelas": {
+    "en": "Blue-mantled Crested Flycatcher",
+    "af": "Bloukuifvlieëvanger",
+    "population": null
+  },
+  "Turdoides jardineii": {
+    "en": "Arrow-marked Babbler",
+    "af": "Pylvlekkatlagter",
+    "population": null
+  },
+  "Turdus libonyana": {
+    "en": "Kurrichane Thrush",
+    "af": "Rooibeklyster",
+    "population": null
+  },
+  "Turdus litsitsirupa": {
+    "en": "Groundscraper Thrush",
+    "af": "Gevlekte Lyster",
+    "population": null
+  },
+  "Turdus olivaceus": {
+    "en": "Olive Thrush",
+    "af": "Olyflyster",
+    "population": null
+  },
+  "Turdus smithi": {
+    "en": "Karoo Thrush",
+    "af": "Geelbeklyster",
+    "population": null
+  },
+  "Turnix sylvaticus": {
+    "en": "Common (Kurrichane) Buttonquail",
+    "af": "Bosveldkwarteltjie",
+    "population": null
+  },
+  "Turtur afer": {
+    "en": "Blue-spotted Wood Dove",
+    "af": "Blouvlekduifie",
+    "population": null
+  },
+  "Turtur chalcospilos": {
+    "en": "Emerald-spotted Wood Dove",
+    "af": "Groenvlekduifie",
+    "population": null
+  },
+  "Turtur tympanistria": {
+    "en": "Tambourine Dove",
+    "af": "Witborsduifie",
+    "population": null
+  },
+  "Tychaedon quadrivirgata": {
+    "en": "Bearded Scrub Robin",
+    "af": "Baardwipstert",
+    "population": null
+  },
+  "Tychaedon signata": {
+    "en": "Brown Scrub Robin",
+    "af": "Bruinwipstert",
+    "population": null
+  },
+  "Tyto alba": {
+    "en": "Western Barn Owl",
+    "af": "Nonnetjie-uil",
+    "population": null
+  },
+  "Upupa epops": {
+    "en": "Common Hoopoe",
+    "af": "Hoephoep",
+    "population": null
+  },
+  "Uraeginthus angolensis": {
+    "en": "Blue Waxbill",
+    "af": "Gewone Blousysie",
+    "population": null
+  },
+  "Urocolius indicus": {
+    "en": "Red-faced Mousebird",
+    "af": "Rooiwangmuisvoël",
+    "population": null
+  },
+  "Urolestes melanoleucus": {
+    "en": "Magpie Shrike",
+    "af": "Langstertlaksman",
+    "population": null
+  },
+  "Vanellus albiceps": {
+    "en": "White-crowned Lapwing",
+    "af": "Witkopkiewiet",
+    "population": null
+  },
+  "Vanellus armatus": {
+    "en": "Blacksmith Lapwing",
+    "af": "Bontkiewiet",
+    "population": null
+  },
+  "Vanellus coronatus": {
+    "en": "Crowned Lapwing",
+    "af": "Kroonkiewiet",
+    "population": null
+  },
+  "Vanellus lugubris": {
+    "en": "Senegal Lapwing",
+    "af": "Kleinswartvlerkkiewiet",
+    "population": null
+  },
+  "Vanellus senegallus": {
+    "en": "African Wattled Lapwing",
+    "af": "Lelkiewiet",
+    "population": null
+  },
+  "Vidua chalybeata": {
+    "en": "Village Indigobird",
+    "af": "Staalblouvinkie",
+    "population": null
+  },
+  "Vidua funerea": {
+    "en": "Dusky Indigobird",
+    "af": "Gewone Blouvinkie",
+    "population": null
+  },
+  "Vidua macroura": {
+    "en": "Pin-tailed Whydah",
+    "af": "Koningrooibekkie",
+    "population": null
+  },
+  "Vidua paradisaea": {
+    "en": "Long-tailed Paradise Whydah",
+    "af": "Gewone Paradysvink",
+    "population": null
+  },
+  "Vidua purpurascens": {
+    "en": "Purple Indigobird",
+    "af": "Witpootblouvinkie",
+    "population": null
+  },
+  "Vidua regia": {
+    "en": "Shaft-tailed Whydah",
+    "af": "Pylstertrooibekkie",
+    "population": null
+  },
+  "Zapornia flavirostra": {
+    "en": "Black Crake",
+    "af": "Swartriethaan",
+    "population": null
+  },
+  "Zosterops anderssoni": {
+    "en": "Southern Yellow White-eye",
+    "af": "Geelglasogie",
     "population": null
   }
 }
