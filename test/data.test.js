@@ -83,8 +83,15 @@ test('every data file matches the schema, slugs, and colour vocabulary', async (
     } else if (entry.key !== 'index/credits') {
       const sourced =
         entry.key === 'family/coraciidae' ||
+        entry.key === 'family/alcedinidae' ||
         entry.key.startsWith('species/coracias-') ||
-        entry.key === 'species/eurystomus-glaucurus'
+        entry.key === 'species/eurystomus-glaucurus' ||
+        entry.key.startsWith('species/alcedo-') ||
+        entry.key.startsWith('species/ceryle-') ||
+        entry.key.startsWith('species/corythornis-') ||
+        entry.key.startsWith('species/halcyon-') ||
+        entry.key.startsWith('species/ispidina-') ||
+        entry.key === 'species/megaceryle-maxima'
       assert.equal(data.sampleData, !sourced, entry.key)
     }
   }

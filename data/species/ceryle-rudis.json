@@ -7,8 +7,81 @@
     "af": "Bontvisvanger"
   },
   "family": "alcedinidae",
-  "summary": "The details for this species have not been published yet.",
-  "sampleData": true,
+  "status": "resident",
+  "monthsPresent": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+  ],
+  "size": {
+    "lengthCm": {
+      "min": 25,
+      "max": 29
+    },
+    "note": "Newman's Birds gives 28–29 cm. Animal Diversity Web gives 25–29 cm."
+  },
+  "habitat": "Almost any open water with fish: rivers, perennial streams, dams, lakes, estuaries, coastal lagoons and rock pools. Hovers often, so it depends less on overhanging perches than other kingfishers. It leaves waters that dry up.",
+  "summary": "A boldly black-and-white, crested kingfisher with a stout black bill. It often hovers over open water before plunge-diving. It is the only kingfisher in the region where the sexes differ in their breast-bands: two bands in the male, one (often broken) in the female.",
+  "sampleData": false,
+  "similar": [
+    {
+      "slug": "megaceryle-maxima",
+      "note": "Giant is much larger (43–46 cm vs 28–29 cm), with fine white spotting on black upperparts and chestnut on the breast (male) or belly (female). Pied is pure black and white and hovers habitually (Newman's; eBird)."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Newman's Birds — Pied Kingfisher species page (text from Newman's Birds of Southern Africa)",
+      "url": "https://newmansbirds.com/birds/pied-kingfisher/",
+      "publisher": "Newman's Birds / Struik Nature (online edition)",
+      "year": null
+    },
+    {
+      "title": "Animal Diversity Web — Ceryle rudis",
+      "url": "https://animaldiversity.org/accounts/Ceryle_rudis/",
+      "publisher": "University of Michigan Museum of Zoology",
+      "year": null
+    },
+    {
+      "title": "The Atlas of Southern African Birds, Vol. 1, pp. 638–641 (spread 427)",
+      "url": "https://sabap2.birdmap.africa/docs/sabap1/427.pdf",
+      "publisher": "BirdLife South Africa / Avian Demography Unit",
+      "year": 1997
+    },
+    {
+      "title": "The Atlas of Southern African Birds, Vol. 1, pp. 638–641 (spread 428)",
+      "url": "https://sabap2.birdmap.africa/docs/sabap1/428.pdf",
+      "publisher": "BirdLife South Africa / Avian Demography Unit",
+      "year": 1997
+    },
+    {
+      "title": "Biodiversity Explorer species text (summarised from Roberts Birds of Southern Africa VIIth ed., Hockey, Dean & Ryan 2005)",
+      "url": "https://www.biodiversityexplorer.info/birds/cerylidae/ceryle_rudis.htm",
+      "publisher": "Iziko Museums of South Africa",
+      "year": null
+    },
+    {
+      "title": "eBird species account — Pied Kingfisher",
+      "url": "https://ebird.org/species/piekin1",
+      "publisher": "Cornell Lab of Ornithology",
+      "year": null
+    },
+    {
+      "title": "Wikipedia — Pied kingfisher",
+      "url": "https://en.wikipedia.org/wiki/Pied_kingfisher",
+      "publisher": "Wikimedia Foundation",
+      "year": 2026
+    }
+  ],
   "population": {
     "estimate": {
       "low": 2048,
@@ -35,8 +108,357 @@
     },
     "tierApplied": "D"
   },
-  "variants": [],
-  "viewNotes": [],
-  "calls": [],
-  "images": []
+  "variants": [
+    {
+      "age": "adult",
+      "sex": "male",
+      "season": "any",
+      "marks": {
+        "bill": {
+          "colour": "black",
+          "shape": "stout, dagger-like"
+        },
+        "eye": {
+          "iris": null,
+          "ring": null
+        },
+        "legs": {
+          "colour": null
+        },
+        "head": {
+          "crown": [
+            "black",
+            "white"
+          ],
+          "face": [
+            "black",
+            "white"
+          ],
+          "throat": "white"
+        },
+        "upperparts": {
+          "back": [
+            "black",
+            "white"
+          ],
+          "rump": null
+        },
+        "underparts": {
+          "breast": [
+            "white",
+            "black"
+          ],
+          "belly": "white",
+          "pattern": "two complete black breast-bands, the lower one narrower (Newman's)"
+        },
+        "wings": {
+          "above": [
+            "black",
+            "white"
+          ],
+          "below": null
+        },
+        "tail": {
+          "colour": null,
+          "shape": null
+        }
+      }
+    },
+    {
+      "age": "adult",
+      "sex": "female",
+      "season": "any",
+      "marks": {
+        "bill": {
+          "colour": "black",
+          "shape": "stout, dagger-like"
+        },
+        "eye": {
+          "iris": null,
+          "ring": null
+        },
+        "legs": {
+          "colour": null
+        },
+        "head": {
+          "crown": [
+            "black",
+            "white"
+          ],
+          "face": [
+            "black",
+            "white"
+          ],
+          "throat": "white"
+        },
+        "upperparts": {
+          "back": [
+            "black",
+            "white"
+          ],
+          "rump": null
+        },
+        "underparts": {
+          "breast": [
+            "white",
+            "black"
+          ],
+          "belly": "white",
+          "pattern": "one black breast-band, often broken in the middle (Newman's; Wikipedia)"
+        },
+        "wings": {
+          "above": [
+            "black",
+            "white"
+          ],
+          "below": null
+        },
+        "tail": {
+          "colour": null,
+          "shape": null
+        }
+      }
+    },
+    {
+      "age": "juvenile",
+      "sex": "any",
+      "season": "any",
+      "marks": {
+        "bill": {
+          "colour": null,
+          "shape": "shorter than adult"
+        },
+        "eye": {
+          "iris": null,
+          "ring": null
+        },
+        "legs": {
+          "colour": null
+        },
+        "head": {
+          "crown": null,
+          "face": null,
+          "throat": [
+            "white",
+            "brown"
+          ]
+        },
+        "upperparts": {
+          "back": null,
+          "rump": null
+        },
+        "underparts": {
+          "breast": [
+            "white",
+            "grey",
+            "brown"
+          ],
+          "belly": null
+        },
+        "wings": {
+          "above": null,
+          "below": null
+        },
+        "tail": {
+          "colour": null,
+          "shape": null
+        }
+      }
+    }
+  ],
+  "viewNotes": [
+    {
+      "view": "perched-front",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "The male has two complete black breast-bands, the lower one narrower. The female has one black band, often broken in the centre (Newman's; Wikipedia)."
+    },
+    {
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "The black mask with white supercilium, the short crest and the heavy black bill show well side-on."
+    },
+    {
+      "view": "perched-back",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "The back and wings are barred and spotted black and white; the crown is black."
+    },
+    {
+      "view": "flight-above",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Hovers with the body angled and the wings beating fast before plunging (Newman's). The upperwing is black and white."
+    },
+    {
+      "view": "flight-below",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Seen from below, the breast-bands still separate the sexes. The underwing colour is not described in the sources used here."
+    }
+  ],
+  "calls": [
+    {
+      "sex": "any",
+      "type": "call",
+      "description": "A high-pitched twittering, often by two or more birds at once (Newman's). In courtship dances, a repeated 'werk……werkwerkwerk'; an anxiety call, a low 'jerp'; a threat call, a staccato 'chikerkerker' (ADW).",
+      "recordings": [
+        {
+          "key": "xeno-canto/XC1148067",
+          "source": "https://xeno-canto.org/1148067",
+          "fileUrl": "https://xeno-canto.org/sounds/uploaded/YSGTQVRQZI/XC1148067-20260514_KNP_AKaramitsos_XA40_A066C056_260514YG_SLE_250HP_-3dB_comb_PKing-Fisher.wav",
+          "author": "African Bioacoustics Community",
+          "license": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "aiGenerated": false,
+          "hosted": false
+        },
+        {
+          "key": "xeno-canto/XC638453",
+          "source": "https://xeno-canto.org/638453",
+          "fileUrl": "https://xeno-canto.org/sounds/uploaded/HMBDEWEZVS/XC638453-2%20Pied%20kingfisher.mp3",
+          "author": "Tony Archer",
+          "license": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "aiGenerated": false,
+          "hosted": false
+        },
+        {
+          "key": "xeno-canto/XC834484",
+          "source": "https://xeno-canto.org/834484",
+          "fileUrl": "https://xeno-canto.org/sounds/uploaded/JDCTKFMBKV/XC834484-KingfisherPied_KaalspruitdamBFN_20231008.wav",
+          "author": "Dawie de Swardt",
+          "license": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ]
+    }
+  ],
+  "images": [
+    {
+      "key": "ceryle-rudis/pair-front.jpg",
+      "view": "perched-front",
+      "age": "adult",
+      "sex": "mixed",
+      "season": "any",
+      "source": "https://commons.wikimedia.org/wiki/File:Pied_kingfishers_(Ceryle_rudis_rudis)_Botswana_male_(L)_female_(R)_2.jpg",
+      "fileUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2d/Pied_kingfishers_%28Ceryle_rudis_rudis%29_Botswana_male_%28L%29_female_%28R%29_2.jpg/1280px-Pied_kingfishers_%28Ceryle_rudis_rudis%29_Botswana_male_%28L%29_female_%28R%29_2.jpg",
+      "author": "Charles J. Sharp",
+      "license": "CC BY-SA 4.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "aiGenerated": false,
+      "hosted": false,
+      "alt": "Pair of Pied Kingfishers perched, front view: male (left) with two breast-bands, female (right) with one; Botswana.",
+      "caption": "Pair of Pied Kingfishers perched, front view: male (left) with two breast-bands, female (right) with one; Botswana."
+    },
+    {
+      "key": "ceryle-rudis/female-side.jpg",
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "female",
+      "season": "any",
+      "source": "https://commons.wikimedia.org/wiki/File:Pied_kingfisher_(Ceryle_rudis)_female_Kruger.jpg",
+      "fileUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/78/Pied_kingfisher_%28Ceryle_rudis%29_female_Kruger.jpg/1280px-Pied_kingfisher_%28Ceryle_rudis%29_female_Kruger.jpg",
+      "author": "Charles J. Sharp",
+      "license": "CC BY-SA 4.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "aiGenerated": false,
+      "hosted": false,
+      "alt": "Female Pied Kingfisher perched, side view, showing the single breast-band; Kruger National Park.",
+      "caption": "Female Pied Kingfisher perched, side view, showing the single breast-band; Kruger National Park."
+    },
+    {
+      "key": "ceryle-rudis/male-side.jpg",
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "male",
+      "season": "any",
+      "source": "https://commons.wikimedia.org/wiki/File:Pied_kingfisher_(Ceryle_rudis_rudis)_male.jpg",
+      "fileUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/53/Pied_kingfisher_%28Ceryle_rudis_rudis%29_male.jpg/1280px-Pied_kingfisher_%28Ceryle_rudis_rudis%29_male.jpg",
+      "author": "Charles J. Sharp",
+      "license": "CC BY-SA 4.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "aiGenerated": false,
+      "hosted": false,
+      "alt": "Male Pied Kingfisher perched, side view, showing the double breast-band; Uganda.",
+      "caption": "Male Pied Kingfisher perched, side view, showing the double breast-band; Uganda."
+    },
+    {
+      "key": "ceryle-rudis/perched-back.jpg",
+      "view": "perched-back",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "source": "https://commons.wikimedia.org/wiki/File:Pied_Kingfisher_(Ceryle_rudis)_January_14,_2025.jpg",
+      "fileUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/04/Pied_Kingfisher_%28Ceryle_rudis%29_January_14%2C_2025.jpg/1280px-Pied_Kingfisher_%28Ceryle_rudis%29_January_14%2C_2025.jpg",
+      "author": "Bernard Dupont",
+      "license": "CC BY-SA 2.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by-sa/2.0/",
+      "aiGenerated": false,
+      "hosted": false,
+      "alt": "Pied Kingfisher perched, rear/side view, showing the barred black-and-white upperparts; Sabie causeway, Kruger.",
+      "caption": "Pied Kingfisher perched, rear/side view, showing the barred black-and-white upperparts; Sabie causeway, Kruger."
+    },
+    {
+      "key": "ceryle-rudis/female-flight-below.jpg",
+      "view": "flight-below",
+      "age": "adult",
+      "sex": "female",
+      "season": "any",
+      "source": "https://commons.wikimedia.org/wiki/File:Day_31_Pied_Kingfisher_(Ceryle_rudis)_female_diving_..._(53273965438).jpg",
+      "fileUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/86/Day_31_Pied_Kingfisher_%28Ceryle_rudis%29_female_diving_..._%2853273965438%29.jpg/1280px-Day_31_Pied_Kingfisher_%28Ceryle_rudis%29_female_diving_..._%2853273965438%29.jpg",
+      "author": "Bernard Dupont",
+      "license": "CC BY-SA 2.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by-sa/2.0/",
+      "aiGenerated": false,
+      "hosted": false,
+      "alt": "Female Pied Kingfisher diving, seen from below; Kruger National Park.",
+      "caption": "Female Pied Kingfisher diving, seen from below; Kruger National Park."
+    },
+    {
+      "key": "ceryle-rudis/flight-above.jpg",
+      "view": "flight-above",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "source": "https://commons.wikimedia.org/wiki/File:Pied_Kingfisher_(Ceryle_rudis)_hovering_..._(46787045441).jpg",
+      "fileUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1b/Pied_Kingfisher_%28Ceryle_rudis%29_hovering_..._%2846787045441%29.jpg/1280px-Pied_Kingfisher_%28Ceryle_rudis%29_hovering_..._%2846787045441%29.jpg",
+      "author": "Bernard Dupont",
+      "license": "CC BY-SA 2.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by-sa/2.0/",
+      "aiGenerated": false,
+      "hosted": false,
+      "alt": "Pied Kingfisher hovering, upperwing visible; Kruger National Park. Sex not determinable from the image.",
+      "caption": "Pied Kingfisher hovering, upperwing visible; Kruger National Park. Sex not determinable from the image."
+    },
+    {
+      "key": "ceryle-rudis/male-flight-side.jpg",
+      "view": "flight-side",
+      "age": "adult",
+      "sex": "male",
+      "season": "any",
+      "source": "https://commons.wikimedia.org/wiki/File:Pied_kingfisher_(Ceryle_rudis_rudis)_male_in_flight.jpg",
+      "fileUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/30/Pied_kingfisher_%28Ceryle_rudis_rudis%29_male_in_flight.jpg/1280px-Pied_kingfisher_%28Ceryle_rudis_rudis%29_male_in_flight.jpg",
+      "author": "Charles J. Sharp",
+      "license": "CC BY-SA 4.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "aiGenerated": false,
+      "hosted": false,
+      "alt": "Male Pied Kingfisher in flight, side-on, over water; Uganda.",
+      "caption": "Male Pied Kingfisher in flight, side-on, over water; Uganda."
+    }
+  ],
+  "research": {
+    "confidence": "high",
+    "needsReview": false,
+    "note": "No seasonal plumage change is described. Iris, leg and underwing colours are not stated in the sources used. The breast-band difference is from Newman's and Wikipedia."
+  }
 }

@@ -23,6 +23,7 @@ import {
   indexPopulationLine,
   indexRows,
   licenceForbidsDerivatives,
+  mediaSexLabel,
   monthsLabel,
   objectPath,
   orderFamilySpecies,
@@ -335,7 +336,12 @@ const imageMarkdown = (doc, image) => {
       : ''
   const src = remote || objectPath('images', image.key)
   const stored = remote ? ' Not stored on this site yet.' : ''
-  return `![${alt}](${src})\n\n${label}. ${viewLabel(image.view)}. ${[image.author, image.license].filter(Boolean).join('. ')}${source ? `. Source: ${source}` : ''}.${stored}`
+  const detail = [
+    mediaSexLabel(image.sex),
+    viewLabel(image.view),
+    typeof image.caption === 'string' ? image.caption.trim() : '',
+  ].filter(Boolean)
+  return `![${alt}](${src})\n\n${label}. ${detail.join('. ')}. ${[image.author, image.license].filter(Boolean).join('. ')}${source ? `. Source: ${source}` : ''}.${stored}`
 }
 
 const scientificFromSlug = (slug) => {

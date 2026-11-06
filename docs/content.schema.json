@@ -88,7 +88,8 @@
           "properties": {
             "crown": { "$ref": "#/$defs/colourValue" },
             "face": { "$ref": "#/$defs/colourValue" },
-            "throat": { "$ref": "#/$defs/colourValue" }
+            "throat": { "$ref": "#/$defs/colourValue" },
+            "pattern": { "$ref": "#/$defs/textOrNull" }
           }
         },
         "upperparts": {
@@ -97,7 +98,8 @@
           "required": ["back", "rump"],
           "properties": {
             "back": { "$ref": "#/$defs/colourValue" },
-            "rump": { "$ref": "#/$defs/colourValue" }
+            "rump": { "$ref": "#/$defs/colourValue" },
+            "pattern": { "$ref": "#/$defs/textOrNull" }
           }
         },
         "underparts": {
@@ -106,7 +108,8 @@
           "required": ["breast", "belly"],
           "properties": {
             "breast": { "$ref": "#/$defs/colourValue" },
-            "belly": { "$ref": "#/$defs/colourValue" }
+            "belly": { "$ref": "#/$defs/colourValue" },
+            "pattern": { "$ref": "#/$defs/textOrNull" }
           }
         },
         "wings": {
@@ -115,7 +118,8 @@
           "required": ["above", "below"],
           "properties": {
             "above": { "$ref": "#/$defs/colourValue" },
-            "below": { "$ref": "#/$defs/colourValue" }
+            "below": { "$ref": "#/$defs/colourValue" },
+            "pattern": { "$ref": "#/$defs/textOrNull" }
           }
         },
         "tail": {
@@ -141,7 +145,16 @@
       }
     },
     "view": {
-      "enum": ["flight-above", "flight-below", "perched-front", "perched-back", "perched-side"]
+      "enum": [
+        "flight-above",
+        "flight-below",
+        "flight-side",
+        "perched-front",
+        "perched-back",
+        "perched-side",
+        "display-front",
+        "display-back"
+      ]
     },
     "image": {
       "type": "object",
@@ -151,7 +164,7 @@
         "key": { "type": "string", "minLength": 1 },
         "view": { "$ref": "#/$defs/view" },
         "age": { "enum": ["chick", "juvenile", "immature", "adult"] },
-        "sex": { "enum": ["male", "female", "any"] },
+        "sex": { "enum": ["male", "female", "any", "mixed"] },
         "season": { "enum": ["breeding", "non-breeding", "any"] },
         "source": { "type": "string" },
         "author": { "type": "string" },
@@ -159,6 +172,7 @@
         "licenceUrl": { "$ref": "#/$defs/textOrNull" },
         "aiGenerated": { "type": "boolean" },
         "alt": { "type": "string" },
+        "caption": { "type": "string", "minLength": 1 },
         "fileUrl": { "type": "string", "minLength": 1 },
         "hosted": { "type": "boolean" }
       }
@@ -391,7 +405,19 @@
         "images": {
           "type": "array",
           "items": { "$ref": "#/$defs/image" }
-        }
+        },
+        "research": { "$ref": "#/$defs/research" }
+      }
+    },
+    "research": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["confidence", "needsReview", "note"],
+      "description": "Internal research indicator. It is not a claim that every fact on the page has the same authority.",
+      "properties": {
+        "confidence": { "enum": ["low", "medium", "high"] },
+        "needsReview": { "type": "boolean" },
+        "note": { "type": "string", "minLength": 1 }
       }
     },
     "embeddedSpecies": {

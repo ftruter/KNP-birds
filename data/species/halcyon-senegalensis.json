@@ -7,8 +7,78 @@
     "af": "Bosveldvisvanger"
   },
   "family": "alcedinidae",
-  "summary": "The details for this species have not been published yet.",
-  "sampleData": true,
+  "status": "intra-african-migrant",
+  "monthsPresent": [
+    10,
+    11,
+    12,
+    1,
+    2,
+    3,
+    4
+  ],
+  "size": {
+    "lengthCm": {
+      "min": 23,
+      "max": 24
+    },
+    "note": "Newman's Birds gives 23–24 cm. Wikipedia gives 23 cm."
+  },
+  "habitat": "Well-developed woodland and mixed bushveld, especially tall riverine Acacia stands and Mopane, and riverine or swamp-fringing woodland. Often far from water. Hunts from an exposed perch.",
+  "summary": "A loud summer visitor with an electric turquoise back, black shoulders, whitish head and underparts, a black stripe from the bill through the eye, and a bill red above and black below. The trilling song is a familiar Kruger summer sound. Dark grey legs are from Wikipedia only. Newman's says the immature bill is usually red, sometimes with a black tip; Wikipedia says brown, and a Kruger photograph shows a dark bill.",
+  "sampleData": false,
+  "similar": [
+    {
+      "slug": "halcyon-albiventris",
+      "note": "Brown-hooded has a wholly red bill, a streaked brown head and buffy, streaked underparts (Newman's)."
+    },
+    {
+      "slug": "halcyon-chelicuti",
+      "note": "Striped also has a two-tone bill but is smaller and grey-brown, with a black eye-stripe round the nape (Newman's)."
+    },
+    {
+      "slug": "halcyon-leucocephala",
+      "note": "Grey-headed has an all-red bill, a grey head and a chestnut belly (Newman's)."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Newman's Birds — Woodland Kingfisher species page (text from Newman's Birds of Southern Africa)",
+      "url": "https://newmansbirds.com/birds/woodland-kingfisher/",
+      "publisher": "Newman's Birds / Struik Nature (online edition)",
+      "year": null
+    },
+    {
+      "title": "The Atlas of Southern African Birds, Vol. 1, pp. 650–653 (spread 433)",
+      "url": "https://sabap2.birdmap.africa/docs/sabap1/433.pdf",
+      "publisher": "BirdLife South Africa / Avian Demography Unit",
+      "year": 1997
+    },
+    {
+      "title": "The Atlas of Southern African Birds, Vol. 1, pp. 650–653 (spread 434)",
+      "url": "https://sabap2.birdmap.africa/docs/sabap1/434.pdf",
+      "publisher": "BirdLife South Africa / Avian Demography Unit",
+      "year": 1997
+    },
+    {
+      "title": "Biodiversity Explorer species text (summarised from Roberts Birds of Southern Africa VIIth ed., Hockey, Dean & Ryan 2005)",
+      "url": "https://www.biodiversityexplorer.info/birds/dacelonidae/halcyon_senegalensis.htm",
+      "publisher": "Iziko Museums of South Africa",
+      "year": null
+    },
+    {
+      "title": "eBird species account — Woodland Kingfisher",
+      "url": "https://ebird.org/species/wookin1",
+      "publisher": "Cornell Lab of Ornithology",
+      "year": null
+    },
+    {
+      "title": "Wikipedia — Woodland kingfisher",
+      "url": "https://en.wikipedia.org/wiki/Woodland_kingfisher",
+      "publisher": "Wikimedia Foundation",
+      "year": 2026
+    }
+  ],
   "population": {
     "estimate": {
       "low": 8192,
@@ -35,8 +105,311 @@
     },
     "tierApplied": "D"
   },
-  "variants": [],
-  "viewNotes": [],
-  "calls": [],
-  "images": []
+  "variants": [
+    {
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "marks": {
+        "bill": {
+          "colour": [
+            "red",
+            "black"
+          ],
+          "shape": "large, dagger-like"
+        },
+        "eye": {
+          "iris": null,
+          "ring": null
+        },
+        "legs": {
+          "colour": "grey"
+        },
+        "head": {
+          "crown": "white",
+          "face": [
+            "white",
+            "black"
+          ],
+          "throat": "white"
+        },
+        "upperparts": {
+          "back": "blue",
+          "rump": "blue"
+        },
+        "underparts": {
+          "breast": "white",
+          "belly": "white"
+        },
+        "wings": {
+          "above": [
+            "blue",
+            "black"
+          ],
+          "below": [
+            "white",
+            "black"
+          ]
+        },
+        "tail": {
+          "colour": "blue",
+          "shape": null
+        }
+      }
+    },
+    {
+      "age": "juvenile",
+      "sex": "any",
+      "season": "any",
+      "marks": {
+        "bill": {
+          "colour": [
+            "brown",
+            "red"
+          ],
+          "shape": "Newman's says the immature bill is usually all red, sometimes with a black tip. Wikipedia says brown. A Kruger photograph shows a dark bill."
+        },
+        "eye": {
+          "iris": null,
+          "ring": null
+        },
+        "legs": {
+          "colour": null
+        },
+        "head": {
+          "crown": null,
+          "face": null,
+          "throat": null
+        },
+        "upperparts": {
+          "back": null,
+          "rump": null
+        },
+        "underparts": {
+          "breast": null,
+          "belly": null
+        },
+        "wings": {
+          "above": null,
+          "below": null
+        },
+        "tail": {
+          "colour": null,
+          "shape": null
+        }
+      }
+    }
+  ],
+  "viewNotes": [
+    {
+      "view": "perched-front",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Front-on, the clean white underparts and head, and the red-over-black bill (eBird; Newman's)."
+    },
+    {
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Side-on, the black stripe from bill to ear-coverts and the two-tone bill (Newman's)."
+    },
+    {
+      "view": "perched-back",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "From behind, the electric turquoise-blue back contrasts with the black shoulders (Newman's; eBird)."
+    },
+    {
+      "view": "flight-below",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "White underwing-coverts and black flight feathers (Wikipedia). The wing-spread display shows the same pattern; it is not a flight shot."
+    },
+    {
+      "view": "flight-above",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "From above, the blue back and wing panel show against the black coverts (Wikipedia). The display photograph shows this upperwing; it is not a flight shot."
+    }
+  ],
+  "calls": [
+    {
+      "sex": "any",
+      "type": "song",
+      "description": "A loud 'yimp-trrrrrrrrrr', the last part drawn out and descending, sometimes given with the wings extended (Newman's; eBird). Newman's says the male gives this continuously after arrival until breeding ends. No different female song is described, and some recordings are of pairs, so it is not stored as a male-only song.",
+      "recordings": [
+        {
+          "key": "xeno-canto/XC780264",
+          "source": "https://xeno-canto.org/780264",
+          "fileUrl": "https://xeno-canto.org/sounds/uploaded/CZDNDLXZWN/XC780264-19991210_04a1a_Kingfisher%2C-Woodland_Nambwe-Is%2C-Caprivi%2C-Namibia_XC_READY.mp3",
+          "author": "Rick Nuttall",
+          "license": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "aiGenerated": false,
+          "hosted": false
+        },
+        {
+          "key": "xeno-canto/XC1080056",
+          "source": "https://xeno-canto.org/1080056",
+          "fileUrl": "https://xeno-canto.org/sounds/uploaded/QXGZDUUJUO/XC1080056-Woodland-kingfisher-Hadada-ibis-Kruger-Berg-en-Dal-260124-054317_Tr1-.mp3",
+          "author": "JJSUN",
+          "license": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "aiGenerated": false,
+          "hosted": false
+        },
+        {
+          "key": "xeno-canto/XC368169",
+          "source": "https://xeno-canto.org/368169",
+          "fileUrl": "https://xeno-canto.org/sounds/uploaded/RFRTVEHIZX/XC368169-170401a_WoodlandKingfisher_Satara_OC.mp3",
+          "author": "Oscar Campbell",
+          "license": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ]
+    },
+    {
+      "sex": "any",
+      "type": "alarm",
+      "description": "An alarm call, from a recording the recordist labelled as an alarm. The field-guide texts used here do not describe it.",
+      "recordings": [
+        {
+          "key": "xeno-canto/XC213653",
+          "source": "https://xeno-canto.org/213653",
+          "fileUrl": "https://xeno-canto.org/sounds/uploaded/XVXHTBZRRW/XC213653-Woodland%20Kingfisher%20%28Alarm%20Calls%29%202014_02_10%2012-58%20Maun.mp3",
+          "author": "Tom Wulf",
+          "license": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ]
+    }
+  ],
+  "images": [
+    {
+      "key": "halcyon-senegalensis/perched-front.jpg",
+      "view": "perched-front",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "source": "https://commons.wikimedia.org/wiki/File:Woodland_Kingfisher_(Halcyon_senegalensis_cyanoleuca)_calling_..._(33050691128).jpg",
+      "fileUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b2/Woodland_Kingfisher_%28Halcyon_senegalensis_cyanoleuca%29_calling_..._%2833050691128%29.jpg/1280px-Woodland_Kingfisher_%28Halcyon_senegalensis_cyanoleuca%29_calling_..._%2833050691128%29.jpg",
+      "author": "Bernard Dupont",
+      "license": "CC BY-SA 2.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by-sa/2.0/",
+      "aiGenerated": false,
+      "hosted": false,
+      "alt": "Woodland Kingfisher calling, front view, showing the white underparts and red-and-black bill; Kruger National Park.",
+      "caption": "Woodland Kingfisher calling, front view, showing the white underparts and red-and-black bill; Kruger National Park."
+    },
+    {
+      "key": "halcyon-senegalensis/perched-side.jpg",
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "source": "https://commons.wikimedia.org/wiki/File:Woodland_Kingfisher_(Halcyon_senegalensis)_(13851371514).jpg",
+      "fileUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/04/Woodland_Kingfisher_%28Halcyon_senegalensis%29_%2813851371514%29.jpg/1280px-Woodland_Kingfisher_%28Halcyon_senegalensis%29_%2813851371514%29.jpg",
+      "author": "Bernard Dupont",
+      "license": "CC BY-SA 2.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by-sa/2.0/",
+      "aiGenerated": false,
+      "hosted": false,
+      "alt": "Woodland Kingfisher perched, side view, showing the black eye-stripe and two-tone bill; H1-6 north of Letaba, Kruger National Park.",
+      "caption": "Woodland Kingfisher perched, side view, showing the black eye-stripe and two-tone bill; H1-6 north of Letaba, Kruger National Park."
+    },
+    {
+      "key": "halcyon-senegalensis/perched-back.jpg",
+      "view": "perched-back",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "source": "https://commons.wikimedia.org/wiki/File:Woodland_Kingfisher_(Halcyon_senegalensis)_(11711035593),_crop.jpg",
+      "fileUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fb/Woodland_Kingfisher_%28Halcyon_senegalensis%29_%2811711035593%29%2C_crop.jpg/1280px-Woodland_Kingfisher_%28Halcyon_senegalensis%29_%2811711035593%29%2C_crop.jpg",
+      "author": "Bernard Dupont",
+      "license": "CC BY-SA 2.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by-sa/2.0/",
+      "aiGenerated": false,
+      "hosted": false,
+      "alt": "Woodland Kingfisher, rear three-quarter view, showing the turquoise back and black shoulders; H1-7 near Shingwedzi, Kruger National Park.",
+      "caption": "Woodland Kingfisher, rear three-quarter view, showing the turquoise back and black shoulders; H1-7 near Shingwedzi, Kruger National Park."
+    },
+    {
+      "key": "halcyon-senegalensis/display-front.jpg",
+      "view": "display-front",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "source": "https://commons.wikimedia.org/wiki/File:Woodland_Kingfisher_(Halcyon_senegalensis_cyanoleuca)_calling_with_wing_display_..._(31985036897).jpg",
+      "fileUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/98/Woodland_Kingfisher_%28Halcyon_senegalensis_cyanoleuca%29_calling_with_wing_display_..._%2831985036897%29.jpg/1280px-Woodland_Kingfisher_%28Halcyon_senegalensis_cyanoleuca%29_calling_with_wing_display_..._%2831985036897%29.jpg",
+      "author": "Bernard Dupont",
+      "license": "CC BY-SA 2.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by-sa/2.0/",
+      "aiGenerated": false,
+      "hosted": false,
+      "alt": "Woodland Kingfisher calling with wings spread, showing the white underwing-coverts and black flight feathers; Maroela Loop, Kruger National Park.",
+      "caption": "Woodland Kingfisher calling with wings spread, showing the white underwing-coverts and black flight feathers; Maroela Loop, Kruger National Park."
+    },
+    {
+      "key": "halcyon-senegalensis/display-back.jpg",
+      "view": "display-back",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "source": "https://commons.wikimedia.org/wiki/File:Woodland_Kingfisher_(Halcyon_senegalensis_cyanoleuca)_calling_with_wing_display_..._(46011880615).jpg",
+      "fileUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f3/Woodland_Kingfisher_%28Halcyon_senegalensis_cyanoleuca%29_calling_with_wing_display_..._%2846011880615%29.jpg/1280px-Woodland_Kingfisher_%28Halcyon_senegalensis_cyanoleuca%29_calling_with_wing_display_..._%2846011880615%29.jpg",
+      "author": "Bernard Dupont",
+      "license": "CC BY-SA 2.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by-sa/2.0/",
+      "aiGenerated": false,
+      "hosted": false,
+      "alt": "Woodland Kingfisher calling with wings spread, seen from behind, showing the upperwing; Kruger National Park.",
+      "caption": "Woodland Kingfisher calling with wings spread, seen from behind, showing the upperwing; Kruger National Park."
+    },
+    {
+      "key": "halcyon-senegalensis/juvenile-kruger.jpg",
+      "view": "perched-side",
+      "age": "juvenile",
+      "sex": "any",
+      "season": "any",
+      "source": "https://www.inaturalist.org/observations/267055479",
+      "fileUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/479876815/large.jpg",
+      "author": "Jeanette Zitzer",
+      "license": "CC BY-NC-SA 4.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+      "aiGenerated": false,
+      "hosted": false,
+      "alt": "Juvenile Woodland Kingfisher with a dark bill; Kruger National Park, March 2025.",
+      "caption": "Juvenile Woodland Kingfisher with a dark bill; Kruger National Park, March 2025."
+    },
+    {
+      "key": "halcyon-senegalensis/chick-nest.jpg",
+      "view": "perched-front",
+      "age": "chick",
+      "sex": "any",
+      "season": "any",
+      "source": "https://www.inaturalist.org/observations/13860260",
+      "fileUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/20458324/large.jpeg",
+      "author": "fayne",
+      "license": "CC BY-NC 4.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+      "aiGenerated": false,
+      "hosted": false,
+      "alt": "Woodland Kingfisher nestling looking out of its nest cavity in a willow tree; Greater Woodmead Estate, Gauteng.",
+      "caption": "Woodland Kingfisher nestling looking out of its nest cavity in a willow tree; Greater Woodmead Estate, Gauteng."
+    }
+  ],
+  "research": {
+    "confidence": "high",
+    "needsReview": false,
+    "note": "No seasonal plumage change is described; the bird is absent in winter. Dark grey legs are from Wikipedia only. Juvenile bill colour conflicts between Newman's and Wikipedia. Wing-spread photographs are displays, not flight."
+  }
 }

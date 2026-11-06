@@ -23,6 +23,7 @@ import {
   indexPopulationLine,
   indexRows,
   licenceForbidsDerivatives,
+  mediaSexLabel,
   monthsLabel,
   objectPath,
   orderFamilySpecies,
@@ -493,6 +494,9 @@ const imageCaption = (image) => {
     ? 'AI-generated image'
     : 'Photograph, not AI-generated'
   const view = viewLabel(image?.view)
+  const sex = mediaSexLabel(image?.sex)
+  const captionText =
+    typeof image?.caption === 'string' ? image.caption.trim() : ''
   const source = safeHttpUrl(image?.source)
   const credit = [image?.author, image?.license]
     .filter(Boolean)
@@ -503,8 +507,9 @@ const imageCaption = (image) => {
     : image?.source
       ? escapeHtml(image.source)
       : ''
-  const html = `<span class="ai-label">${escapeHtml(label)}</span>${view ? ` ${escapeHtml(view)}.` : ''}${credit ? ` ${credit}.` : ''}${sourceHtml ? ` ${sourceHtml}.` : ''}`
-  const text = [label, view, image?.author, image?.license]
+  const detail = [sex, view, captionText].filter(Boolean)
+  const html = `<span class="ai-label">${escapeHtml(label)}</span>${detail.length ? ` ${detail.map((part) => escapeHtml(part)).join('. ')}.` : ''}${credit ? ` ${credit}.` : ''}${sourceHtml ? ` ${sourceHtml}.` : ''}`
+  const text = [label, sex, view, captionText, image?.author, image?.license]
     .filter(Boolean)
     .join('. ')
   return { html, text }

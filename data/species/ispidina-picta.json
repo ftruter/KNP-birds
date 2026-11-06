@@ -7,8 +7,64 @@
     "af": "Dwergvisvanger"
   },
   "family": "alcedinidae",
-  "summary": "The details for this species have not been published yet.",
-  "sampleData": true,
+  "status": "intra-african-migrant",
+  "monthsPresent": [
+    10,
+    11,
+    12,
+    1,
+    2,
+    3,
+    4
+  ],
+  "size": {
+    "lengthCm": {
+      "min": 12,
+      "max": 13
+    },
+    "note": "Newman's Birds gives 13 cm. Wikipedia gives 12 cm."
+  },
+  "habitat": "Woodland, savanna and coastal or evergreen forest edges, usually away from water. Still-hunts insects on the ground from a low perch. Near the edge of its range it uses riverine woodland.",
+  "summary": "The region's smallest kingfisher, a summer visitor to woodland. It has an orange face with a lilac wash on the ear-coverts, a deep blue crown that does not reach the eye, and a red bill and feet. The sexes look alike. No front-view photograph was verified. The juvenile's black bill is from Wikipedia only.",
+  "sampleData": false,
+  "similar": [
+    {
+      "slug": "corythornis-cristatus",
+      "note": "Malachite has a turquoise, barred crest that reaches the eye, has no mauve on the face, and lives at water (Newman's; eBird). SABAP1 notes that winter 'Pygmy' records may be Malachite."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Newman's Birds — African Pygmy Kingfisher species page (text from Newman's Birds of Southern Africa)",
+      "url": "https://newmansbirds.com/birds/african-pygmy-kingfisher/",
+      "publisher": "Newman's Birds / Struik Nature (online edition)",
+      "year": null
+    },
+    {
+      "title": "The Atlas of Southern African Birds, Vol. 1, pp. 648–649",
+      "url": "https://sabap2.birdmap.africa/docs/sabap1/432.pdf",
+      "publisher": "BirdLife South Africa / Avian Demography Unit",
+      "year": 1997
+    },
+    {
+      "title": "Biodiversity Explorer species text (summarised from Roberts Birds of Southern Africa VIIth ed., Hockey, Dean & Ryan 2005)",
+      "url": "https://www.biodiversityexplorer.info/birds/alcedinidae/ispidina_picta.htm",
+      "publisher": "Iziko Museums of South Africa",
+      "year": null
+    },
+    {
+      "title": "eBird species account — African Pygmy Kingfisher",
+      "url": "https://ebird.org/species/afpkin1",
+      "publisher": "Cornell Lab of Ornithology",
+      "year": null
+    },
+    {
+      "title": "Wikipedia — African pygmy kingfisher",
+      "url": "https://en.wikipedia.org/wiki/African_pygmy_kingfisher",
+      "publisher": "Wikimedia Foundation",
+      "year": 2026
+    }
+  ],
   "population": {
     "estimate": {
       "low": 1024,
@@ -35,8 +91,205 @@
     },
     "tierApplied": "D"
   },
-  "variants": [],
-  "viewNotes": [],
-  "calls": [],
-  "images": []
+  "variants": [
+    {
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "marks": {
+        "bill": {
+          "colour": "red",
+          "shape": "dagger-like"
+        },
+        "eye": {
+          "iris": null,
+          "ring": null
+        },
+        "legs": {
+          "colour": "red"
+        },
+        "head": {
+          "crown": "blue",
+          "face": [
+            "orange",
+            "lilac"
+          ],
+          "throat": null
+        },
+        "upperparts": {
+          "back": "blue",
+          "rump": "blue"
+        },
+        "underparts": {
+          "breast": "buff",
+          "belly": "buff"
+        },
+        "wings": {
+          "above": "blue",
+          "below": null
+        },
+        "tail": {
+          "colour": "blue",
+          "shape": null
+        }
+      }
+    },
+    {
+      "age": "juvenile",
+      "sex": "any",
+      "season": "any",
+      "marks": {
+        "bill": {
+          "colour": "black",
+          "shape": "black bill, with less violet on the ear-coverts (Wikipedia only)"
+        },
+        "eye": {
+          "iris": null,
+          "ring": null
+        },
+        "legs": {
+          "colour": null
+        },
+        "head": {
+          "crown": null,
+          "face": [
+            "orange",
+            "lilac"
+          ],
+          "throat": null
+        },
+        "upperparts": {
+          "back": null,
+          "rump": null
+        },
+        "underparts": {
+          "breast": null,
+          "belly": null
+        },
+        "wings": {
+          "above": null,
+          "below": null
+        },
+        "tail": {
+          "colour": null,
+          "shape": null
+        }
+      }
+    }
+  ],
+  "viewNotes": [
+    {
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Side-on, the key mark is the mauve/violet wash on the ear-coverts below an orange eyebrow; the dark blue crown stops above the eye (Newman's)."
+    },
+    {
+      "view": "perched-back",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "From behind, the upperparts are uniform deep blue from crown to tail (Newman's)."
+    },
+    {
+      "view": "flight-above",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "The upperparts are deep blue (Newman's). The underwing is not described in the sources used here."
+    }
+  ],
+  "calls": [
+    {
+      "sex": "any",
+      "type": "call",
+      "description": "No territorial call. A hissing 'chip' or 'tseep' in flight (Newman's); a harsh 'tsik' (eBird); a high, insect-like 'tsip-tsip' in flight (Wikipedia).",
+      "recordings": [
+        {
+          "key": "xeno-canto/XC438156",
+          "source": "https://xeno-canto.org/438156",
+          "fileUrl": "https://xeno-canto.org/sounds/uploaded/GQMCPIVNXX/XC438156-African%20Pygmy%20Kingfisher.mp3",
+          "author": "Tim Cockcroft",
+          "license": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ]
+    },
+    {
+      "sex": "any",
+      "type": "song",
+      "description": "Newman's says there is no territorial call. A recordist describes a male and female singing a daily duet (XC453305). That recording was not checked against a published song description.",
+      "recordings": [
+        {
+          "key": "xeno-canto/XC453305",
+          "source": "https://xeno-canto.org/453305",
+          "fileUrl": "https://xeno-canto.org/sounds/uploaded/TSMVYZCIWC/XC453305-afr%20pygmy%20kingf.mp3",
+          "author": "Ehren Eksteen",
+          "license": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ]
+    },
+    {
+      "sex": "any",
+      "type": "other",
+      "description": "Juvenile begging call, recorded in West Africa (race ferrugina, not the southern natalensis).",
+      "recordings": [
+        {
+          "key": "xeno-canto/XC998136",
+          "source": "https://xeno-canto.org/998136",
+          "fileUrl": "https://xeno-canto.org/sounds/uploaded/RGSEIIJGHA/XC998136-AfricanPygmyKingfisher_Cocody_250510_4472_edited.mp3",
+          "author": "Bram Piot",
+          "license": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ]
+    }
+  ],
+  "images": [
+    {
+      "key": "ispidina-picta/perched-side.jpg",
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "source": "https://commons.wikimedia.org/wiki/File:African_Pygmy_Kingfisher_(Ispidina_picta)_(33161482716).jpg",
+      "fileUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bf/African_Pygmy_Kingfisher_%28Ispidina_picta%29_%2833161482716%29.jpg/1280px-African_Pygmy_Kingfisher_%28Ispidina_picta%29_%2833161482716%29.jpg",
+      "author": "Bernard Dupont",
+      "license": "CC BY-SA 2.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by-sa/2.0/",
+      "aiGenerated": false,
+      "hosted": false,
+      "alt": "African Pygmy Kingfisher perched, side view, showing the violet ear-covert wash and red bill; Lekgalameetse, Limpopo.",
+      "caption": "African Pygmy Kingfisher perched, side view, showing the violet ear-covert wash and red bill; Lekgalameetse, Limpopo."
+    },
+    {
+      "key": "ispidina-picta/perched-back.jpg",
+      "view": "perched-back",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "source": "https://commons.wikimedia.org/wiki/File:Ispidina_picta_1_(Martin_Mecnarowski).jpg",
+      "fileUrl": "https://upload.wikimedia.org/wikipedia/commons/5/58/Ispidina_picta_1_%28Martin_Mecnarowski%29.jpg",
+      "author": "Martin Mecnarowski",
+      "license": "CC BY-SA 3.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "aiGenerated": false,
+      "hosted": false,
+      "alt": "African Pygmy Kingfisher perched, back view, showing the uniform deep-blue upperparts; Entabeni, South Africa.",
+      "caption": "African Pygmy Kingfisher perched, back view, showing the uniform deep-blue upperparts; Entabeni, South Africa."
+    }
+  ],
+  "research": {
+    "confidence": "medium",
+    "needsReview": true,
+    "note": "Needs review: two photographs and no verified front view. Juvenile bill colour is from Wikipedia only. The begging recording is race ferrugina from Côte d'Ivoire, not the southern race. Newman's says there is no territorial call; one recordist describes a duet."
+  }
 }
