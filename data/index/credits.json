@@ -229,14 +229,102 @@
       "slug": "alcedo-semitorquata",
       "scientificName": "Alcedo semitorquata",
       "commonName": "Half-collared Kingfisher",
-      "images": [],
-      "recordings": [],
+      "images": [
+        {
+          "key": "alcedo-semitorquata/perched-front.jpg",
+          "author": "Christiaan Viljoen",
+          "licence": "CC BY 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by/4.0/",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Alcedo_semitorquata_semitorquata_398905306.jpg",
+          "aiGenerated": false,
+          "hosted": false
+        },
+        {
+          "key": "alcedo-semitorquata/perched-side.jpg",
+          "author": "Noeleen du Toit",
+          "licence": "CC BY-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Alcedo_semitorquata_semitorquata_293744887.jpg",
+          "aiGenerated": false,
+          "hosted": false
+        },
+        {
+          "key": "alcedo-semitorquata/perched-back.jpg",
+          "author": "Timothy Whitehead",
+          "licence": "CC BY 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by/4.0/",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Alcedo_semitorquata_343908959.jpg",
+          "aiGenerated": false,
+          "hosted": false
+        },
+        {
+          "key": "alcedo-semitorquata/hover-side.jpg",
+          "author": "Dave Brown",
+          "licence": "CC0",
+          "licenceUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Alcedo_semitorquata_614547580.jpg",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ],
+      "recordings": [
+        {
+          "key": "xeno-canto/XC305474",
+          "author": "Tim Cockcroft",
+          "licence": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "sourceUrl": "https://xeno-canto.org/305474",
+          "aiGenerated": false,
+          "hosted": false,
+          "callType": "call"
+        },
+        {
+          "key": "xeno-canto/XC645316",
+          "author": "Tim Cockcroft",
+          "licence": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "sourceUrl": "https://xeno-canto.org/645316",
+          "aiGenerated": false,
+          "hosted": false,
+          "callType": "call"
+        }
+      ],
       "sources": [
         {
           "title": "Kemp A.C., Herholdt J.J., Whyte I. & Harrison J. (2001). Birds of the two largest national parks in South Africa: a method to generate estimates of population size for all species and assess their conservation ecology. S. Afr. J. Sci. 97: 393–403.",
           "url": "https://journals.co.za/doi/pdf/10.10520/EJC97367",
           "publisher": "South African Journal of Science",
           "year": 2001
+        },
+        {
+          "title": "Newman's Birds — Half Collared Kingfisher species page (text from Newman's Birds of Southern Africa)",
+          "url": "https://newmansbirds.com/birds/half-collared-kingfisher/",
+          "publisher": "Newman's Birds / Struik Nature (online edition)",
+          "year": null
+        },
+        {
+          "title": "The Atlas of Southern African Birds, Vol. 1, pp. 644–645",
+          "url": "https://sabap2.birdmap.africa/docs/sabap1/430.pdf",
+          "publisher": "BirdLife South Africa / Avian Demography Unit",
+          "year": 1997
+        },
+        {
+          "title": "Biodiversity Explorer species text (summarised from Roberts Birds of Southern Africa VIIth ed., Hockey, Dean & Ryan 2005)",
+          "url": "https://www.biodiversityexplorer.info/birds/alcedinidae/alcedo_semitorquata.htm",
+          "publisher": "Iziko Museums of South Africa",
+          "year": null
+        },
+        {
+          "title": "eBird species account — Half-collared Kingfisher",
+          "url": "https://ebird.org/species/hackin1",
+          "publisher": "Cornell Lab of Ornithology",
+          "year": null
+        },
+        {
+          "title": "Wikipedia — Half-collared kingfisher",
+          "url": "https://en.wikipedia.org/wiki/Half-collared_kingfisher",
+          "publisher": "Wikimedia Foundation",
+          "year": 2026
         }
       ]
     },
@@ -1660,14 +1748,151 @@
       "slug": "ceryle-rudis",
       "scientificName": "Ceryle rudis",
       "commonName": "Pied Kingfisher",
-      "images": [],
-      "recordings": [],
+      "images": [
+        {
+          "key": "ceryle-rudis/pair-front.jpg",
+          "author": "Charles J. Sharp",
+          "licence": "CC BY-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Pied_kingfishers_(Ceryle_rudis_rudis)_Botswana_male_(L)_female_(R)_2.jpg",
+          "aiGenerated": false,
+          "hosted": false
+        },
+        {
+          "key": "ceryle-rudis/female-side.jpg",
+          "author": "Charles J. Sharp",
+          "licence": "CC BY-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Pied_kingfisher_(Ceryle_rudis)_female_Kruger.jpg",
+          "aiGenerated": false,
+          "hosted": false
+        },
+        {
+          "key": "ceryle-rudis/male-side.jpg",
+          "author": "Charles J. Sharp",
+          "licence": "CC BY-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Pied_kingfisher_(Ceryle_rudis_rudis)_male.jpg",
+          "aiGenerated": false,
+          "hosted": false
+        },
+        {
+          "key": "ceryle-rudis/perched-back.jpg",
+          "author": "Bernard Dupont",
+          "licence": "CC BY-SA 2.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-sa/2.0/",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Pied_Kingfisher_(Ceryle_rudis)_January_14,_2025.jpg",
+          "aiGenerated": false,
+          "hosted": false
+        },
+        {
+          "key": "ceryle-rudis/female-flight-below.jpg",
+          "author": "Bernard Dupont",
+          "licence": "CC BY-SA 2.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-sa/2.0/",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Day_31_Pied_Kingfisher_(Ceryle_rudis)_female_diving_..._(53273965438).jpg",
+          "aiGenerated": false,
+          "hosted": false
+        },
+        {
+          "key": "ceryle-rudis/flight-above.jpg",
+          "author": "Bernard Dupont",
+          "licence": "CC BY-SA 2.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-sa/2.0/",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Pied_Kingfisher_(Ceryle_rudis)_hovering_..._(46787045441).jpg",
+          "aiGenerated": false,
+          "hosted": false
+        },
+        {
+          "key": "ceryle-rudis/male-flight-side.jpg",
+          "author": "Charles J. Sharp",
+          "licence": "CC BY-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Pied_kingfisher_(Ceryle_rudis_rudis)_male_in_flight.jpg",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ],
+      "recordings": [
+        {
+          "key": "xeno-canto/XC1148067",
+          "author": "African Bioacoustics Community",
+          "licence": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "sourceUrl": "https://xeno-canto.org/1148067",
+          "aiGenerated": false,
+          "hosted": false,
+          "callType": "call"
+        },
+        {
+          "key": "xeno-canto/XC638453",
+          "author": "Tony Archer",
+          "licence": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "sourceUrl": "https://xeno-canto.org/638453",
+          "aiGenerated": false,
+          "hosted": false,
+          "callType": "call"
+        },
+        {
+          "key": "xeno-canto/XC834484",
+          "author": "Dawie de Swardt",
+          "licence": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "sourceUrl": "https://xeno-canto.org/834484",
+          "aiGenerated": false,
+          "hosted": false,
+          "callType": "call"
+        }
+      ],
       "sources": [
         {
           "title": "Kemp A.C., Herholdt J.J., Whyte I. & Harrison J. (2001). Birds of the two largest national parks in South Africa: a method to generate estimates of population size for all species and assess their conservation ecology. S. Afr. J. Sci. 97: 393–403.",
           "url": "https://journals.co.za/doi/pdf/10.10520/EJC97367",
           "publisher": "South African Journal of Science",
           "year": 2001
+        },
+        {
+          "title": "Newman's Birds — Pied Kingfisher species page (text from Newman's Birds of Southern Africa)",
+          "url": "https://newmansbirds.com/birds/pied-kingfisher/",
+          "publisher": "Newman's Birds / Struik Nature (online edition)",
+          "year": null
+        },
+        {
+          "title": "Animal Diversity Web — Ceryle rudis",
+          "url": "https://animaldiversity.org/accounts/Ceryle_rudis/",
+          "publisher": "University of Michigan Museum of Zoology",
+          "year": null
+        },
+        {
+          "title": "The Atlas of Southern African Birds, Vol. 1, pp. 638–641 (spread 427)",
+          "url": "https://sabap2.birdmap.africa/docs/sabap1/427.pdf",
+          "publisher": "BirdLife South Africa / Avian Demography Unit",
+          "year": 1997
+        },
+        {
+          "title": "The Atlas of Southern African Birds, Vol. 1, pp. 638–641 (spread 428)",
+          "url": "https://sabap2.birdmap.africa/docs/sabap1/428.pdf",
+          "publisher": "BirdLife South Africa / Avian Demography Unit",
+          "year": 1997
+        },
+        {
+          "title": "Biodiversity Explorer species text (summarised from Roberts Birds of Southern Africa VIIth ed., Hockey, Dean & Ryan 2005)",
+          "url": "https://www.biodiversityexplorer.info/birds/cerylidae/ceryle_rudis.htm",
+          "publisher": "Iziko Museums of South Africa",
+          "year": null
+        },
+        {
+          "title": "eBird species account — Pied Kingfisher",
+          "url": "https://ebird.org/species/piekin1",
+          "publisher": "Cornell Lab of Ornithology",
+          "year": null
+        },
+        {
+          "title": "Wikipedia — Pied kingfisher",
+          "url": "https://en.wikipedia.org/wiki/Pied_kingfisher",
+          "publisher": "Wikimedia Foundation",
+          "year": 2026
         }
       ]
     },
@@ -2785,14 +3010,126 @@
       "slug": "corythornis-cristatus",
       "scientificName": "Corythornis cristatus",
       "commonName": "Malachite Kingfisher",
-      "images": [],
-      "recordings": [],
+      "images": [
+        {
+          "key": "corythornis-cristatus/perched-front.jpg",
+          "author": "Bernard Dupont",
+          "licence": "CC BY-SA 2.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-sa/2.0/",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Malachite_Kingfisher_(Corythornis_cristatus)_(52746880154).jpg",
+          "aiGenerated": false,
+          "hosted": false
+        },
+        {
+          "key": "corythornis-cristatus/perched-side.jpg",
+          "author": "Bernard Dupont",
+          "licence": "CC BY-SA 2.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-sa/2.0/",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Malachite_Kingfisher_(Corythornis_cristatus)_(51850756117).jpg",
+          "aiGenerated": false,
+          "hosted": false
+        },
+        {
+          "key": "corythornis-cristatus/perched-back.jpg",
+          "author": "Bernard Dupont",
+          "licence": "CC BY-SA 2.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-sa/2.0/",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Day_7_Malachite_Kingfisher_(Corythornis_cristatus)_(53216008032).jpg",
+          "aiGenerated": false,
+          "hosted": false
+        },
+        {
+          "key": "corythornis-cristatus/immature-side.jpg",
+          "author": "Bernard Dupont",
+          "licence": "CC BY-SA 2.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-sa/2.0/",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Malachite_Kingfisher_(Corythornis_cristatus)_immature.jpg",
+          "aiGenerated": false,
+          "hosted": false
+        },
+        {
+          "key": "corythornis-cristatus/juvenile-side.jpg",
+          "author": "Tom Tarrant",
+          "licence": "CC BY-SA 3.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Malachitekingfisherjuv.jpg",
+          "aiGenerated": false,
+          "hosted": false
+        },
+        {
+          "key": "corythornis-cristatus/juvenile-back-kruger.jpg",
+          "author": "maritzasouthafrica",
+          "licence": "CC BY-NC 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+          "sourceUrl": "https://www.inaturalist.org/observations/9679586",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ],
+      "recordings": [
+        {
+          "key": "xeno-canto/XC369825",
+          "author": "Tim Cockcroft",
+          "licence": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "sourceUrl": "https://xeno-canto.org/369825",
+          "aiGenerated": false,
+          "hosted": false,
+          "callType": "call"
+        },
+        {
+          "key": "xeno-canto/XC429330",
+          "author": "Derek Solomon",
+          "licence": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "sourceUrl": "https://xeno-canto.org/429330",
+          "aiGenerated": false,
+          "hosted": false,
+          "callType": "call"
+        }
+      ],
       "sources": [
         {
           "title": "Kemp A.C., Herholdt J.J., Whyte I. & Harrison J. (2001). Birds of the two largest national parks in South Africa: a method to generate estimates of population size for all species and assess their conservation ecology. S. Afr. J. Sci. 97: 393–403.",
           "url": "https://journals.co.za/doi/pdf/10.10520/EJC97367",
           "publisher": "South African Journal of Science",
           "year": 2001
+        },
+        {
+          "title": "Newman's Birds — Malachite Kingfisher species page (text from Newman's Birds of Southern Africa)",
+          "url": "https://newmansbirds.com/birds/malachite-kingfisher/",
+          "publisher": "Newman's Birds / Struik Nature (online edition)",
+          "year": null
+        },
+        {
+          "title": "The Atlas of Southern African Birds, Vol. 1, pp. 644–647 (spread 430)",
+          "url": "https://sabap2.birdmap.africa/docs/sabap1/430.pdf",
+          "publisher": "BirdLife South Africa / Avian Demography Unit",
+          "year": 1997
+        },
+        {
+          "title": "The Atlas of Southern African Birds, Vol. 1, pp. 644–647 (spread 431)",
+          "url": "https://sabap2.birdmap.africa/docs/sabap1/431.pdf",
+          "publisher": "BirdLife South Africa / Avian Demography Unit",
+          "year": 1997
+        },
+        {
+          "title": "Biodiversity Explorer species text (summarised from Roberts Birds of Southern Africa VIIth ed., Hockey, Dean & Ryan 2005)",
+          "url": "https://www.biodiversityexplorer.info/birds/alcedinidae/alcedo_cristata.htm",
+          "publisher": "Iziko Museums of South Africa",
+          "year": null
+        },
+        {
+          "title": "eBird species account — Malachite Kingfisher",
+          "url": "https://ebird.org/species/malkin1",
+          "publisher": "Cornell Lab of Ornithology",
+          "year": null
+        },
+        {
+          "title": "Wikipedia — Malachite kingfisher",
+          "url": "https://en.wikipedia.org/wiki/Malachite_kingfisher",
+          "publisher": "Wikimedia Foundation",
+          "year": 2026
         }
       ]
     },
@@ -3910,14 +4247,168 @@
       "slug": "halcyon-albiventris",
       "scientificName": "Halcyon albiventris",
       "commonName": "Brown-hooded Kingfisher",
-      "images": [],
-      "recordings": [],
+      "images": [
+        {
+          "key": "halcyon-albiventris/perched-front.jpg",
+          "author": "Bernard Dupont",
+          "licence": "CC BY-SA 2.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-sa/2.0/",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Brown-hooded_Kingfisher_(Halcyon_albiventris)_(52516321036).jpg",
+          "aiGenerated": false,
+          "hosted": false
+        },
+        {
+          "key": "halcyon-albiventris/male-front.jpg",
+          "author": "Derek Keats",
+          "licence": "CC BY 2.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by/2.0/",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Male_Brown-hooded_Kingfisher,_Halcyon_albiventris_singing_for_his_mate,_Tzaneen_area,_Limpopo,_South_Africa_(14690551380).jpg",
+          "aiGenerated": false,
+          "hosted": false
+        },
+        {
+          "key": "halcyon-albiventris/male-side.jpg",
+          "author": "Hans Hillewaert",
+          "licence": "CC BY-SA 3.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Halcyon_albiventris_(male).jpg",
+          "aiGenerated": false,
+          "hosted": false
+        },
+        {
+          "key": "halcyon-albiventris/male-back.jpg",
+          "author": "Charles J. Sharp",
+          "licence": "CC BY-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Brown-hooded_kingfisher_(Halcyon_albiventris)_male_Phinda.jpg",
+          "aiGenerated": false,
+          "hosted": false
+        },
+        {
+          "key": "halcyon-albiventris/female-back.jpg",
+          "author": "Peter Vos",
+          "licence": "CC BY-NC 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+          "sourceUrl": "https://www.inaturalist.org/observations/167487549",
+          "aiGenerated": false,
+          "hosted": false
+        },
+        {
+          "key": "halcyon-albiventris/female-front.jpg",
+          "author": "Colin Ralston",
+          "licence": "CC BY-NC 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+          "sourceUrl": "https://www.inaturalist.org/observations/66572742",
+          "aiGenerated": false,
+          "hosted": false
+        },
+        {
+          "key": "halcyon-albiventris/juvenile-side.jpg",
+          "author": "Alan Manson",
+          "licence": "CC BY-SA 2.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-sa/2.0/",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Juvenile_Brown-hooded_Kingfisher_(Halcyon_albiventris).jpg",
+          "aiGenerated": false,
+          "hosted": false
+        },
+        {
+          "key": "halcyon-albiventris/juvenile-front.jpg",
+          "author": "Peter Vos",
+          "licence": "CC BY-NC 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+          "sourceUrl": "https://www.inaturalist.org/observations/64650299",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ],
+      "recordings": [
+        {
+          "key": "xeno-canto/XC1137527",
+          "author": "African Bioacoustics Community",
+          "licence": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "sourceUrl": "https://xeno-canto.org/1137527",
+          "aiGenerated": false,
+          "hosted": false,
+          "callType": "call"
+        },
+        {
+          "key": "xeno-canto/XC382948",
+          "author": "Faansie Peacock",
+          "licence": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "sourceUrl": "https://xeno-canto.org/382948",
+          "aiGenerated": false,
+          "hosted": false,
+          "callType": "call"
+        },
+        {
+          "key": "xeno-canto/XC532199",
+          "author": "W.J. Rossouw",
+          "licence": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "sourceUrl": "https://xeno-canto.org/532199",
+          "aiGenerated": false,
+          "hosted": false,
+          "callType": "call"
+        },
+        {
+          "key": "xeno-canto/XC1141626",
+          "author": "Walter Wallner",
+          "licence": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "sourceUrl": "https://xeno-canto.org/1141626",
+          "aiGenerated": false,
+          "hosted": false,
+          "callType": "song"
+        },
+        {
+          "key": "xeno-canto/XC952485",
+          "author": "Jenny Sharland",
+          "licence": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "sourceUrl": "https://xeno-canto.org/952485",
+          "aiGenerated": false,
+          "hosted": false,
+          "callType": "song"
+        }
+      ],
       "sources": [
         {
           "title": "Kemp A.C., Herholdt J.J., Whyte I. & Harrison J. (2001). Birds of the two largest national parks in South Africa: a method to generate estimates of population size for all species and assess their conservation ecology. S. Afr. J. Sci. 97: 393–403.",
           "url": "https://journals.co.za/doi/pdf/10.10520/EJC97367",
           "publisher": "South African Journal of Science",
           "year": 2001
+        },
+        {
+          "title": "Newman's Birds — Brown Hooded Kingfisher species page (text from Newman's Birds of Southern Africa)",
+          "url": "https://newmansbirds.com/birds/brown-hooded-kingfisher/",
+          "publisher": "Newman's Birds / Struik Nature (online edition)",
+          "year": null
+        },
+        {
+          "title": "The Atlas of Southern African Birds, Vol. 1, pp. 654–655",
+          "url": "https://sabap2.birdmap.africa/docs/sabap1/435.pdf",
+          "publisher": "BirdLife South Africa / Avian Demography Unit",
+          "year": 1997
+        },
+        {
+          "title": "Biodiversity Explorer species text (summarised from Roberts Birds of Southern Africa VIIth ed., Hockey, Dean & Ryan 2005)",
+          "url": "https://www.biodiversityexplorer.info/birds/dacelonidae/halcyon_albiventris.htm",
+          "publisher": "Iziko Museums of South Africa",
+          "year": null
+        },
+        {
+          "title": "eBird species account — Brown-hooded Kingfisher",
+          "url": "https://ebird.org/species/brhkin1",
+          "publisher": "Cornell Lab of Ornithology",
+          "year": null
+        },
+        {
+          "title": "Wikipedia — Brown-hooded kingfisher",
+          "url": "https://en.wikipedia.org/wiki/Brown-hooded_kingfisher",
+          "publisher": "Wikimedia Foundation",
+          "year": 2026
         }
       ]
     },
@@ -3925,14 +4416,131 @@
       "slug": "halcyon-chelicuti",
       "scientificName": "Halcyon chelicuti",
       "commonName": "Striped Kingfisher",
-      "images": [],
-      "recordings": [],
+      "images": [
+        {
+          "key": "halcyon-chelicuti/perched-front.jpg",
+          "author": "Jens N. Lallensack",
+          "licence": "CC BY 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by/4.0/",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Halcyon_chelicuti_chelicuti_230256798.jpg",
+          "aiGenerated": false,
+          "hosted": false
+        },
+        {
+          "key": "halcyon-chelicuti/perched-side.jpg",
+          "author": "Judy Gallagher",
+          "licence": "CC BY 2.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by/2.0/",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Brown-hooded_Kingfisher_-_Halcyon_albiventris,_Mala_Mala_Game_Reserve,_Mpumalanga,_South_Africa.jpg",
+          "aiGenerated": false,
+          "hosted": false
+        },
+        {
+          "key": "halcyon-chelicuti/display-back.jpg",
+          "author": "Derek Keats",
+          "licence": "CC BY 2.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by/2.0/",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Striped_kingfisher,_Halcyon_chelicuti,_at_Loodswaai,_Gauteng,_South_Africa._-_50563025348.jpg",
+          "aiGenerated": false,
+          "hosted": false
+        },
+        {
+          "key": "halcyon-chelicuti/juvenile-side.jpg",
+          "author": "Charles J. Sharp",
+          "licence": "CC BY-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Striped_kingfisher_(Halcyon_chelicuti_chelicuti)_juvenile.jpg",
+          "aiGenerated": false,
+          "hosted": false
+        },
+        {
+          "key": "halcyon-chelicuti/juvenile-front.jpg",
+          "author": "ANDRIES VAN TONDER",
+          "licence": "CC BY-NC 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+          "sourceUrl": "https://www.inaturalist.org/observations/153299843",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ],
+      "recordings": [
+        {
+          "key": "xeno-canto/XC501576",
+          "author": "Hayley",
+          "licence": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "sourceUrl": "https://xeno-canto.org/501576",
+          "aiGenerated": false,
+          "hosted": false,
+          "callType": "song"
+        },
+        {
+          "key": "xeno-canto/XC462092",
+          "author": "Wolbert Hermus",
+          "licence": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "sourceUrl": "https://xeno-canto.org/462092",
+          "aiGenerated": false,
+          "hosted": false,
+          "callType": "song"
+        },
+        {
+          "key": "xeno-canto/XC960871",
+          "author": "Ehren Eksteen",
+          "licence": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "sourceUrl": "https://xeno-canto.org/960871",
+          "aiGenerated": false,
+          "hosted": false,
+          "callType": "song"
+        },
+        {
+          "key": "xeno-canto/XC628100",
+          "author": "paulo kivuyo",
+          "licence": "CC BY-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+          "sourceUrl": "https://xeno-canto.org/628100",
+          "aiGenerated": false,
+          "hosted": false,
+          "callType": "song"
+        }
+      ],
       "sources": [
         {
           "title": "Kemp A.C., Herholdt J.J., Whyte I. & Harrison J. (2001). Birds of the two largest national parks in South Africa: a method to generate estimates of population size for all species and assess their conservation ecology. S. Afr. J. Sci. 97: 393–403.",
           "url": "https://journals.co.za/doi/pdf/10.10520/EJC97367",
           "publisher": "South African Journal of Science",
           "year": 2001
+        },
+        {
+          "title": "Newman's Birds — Striped Kingfisher species page (text from Newman's Birds of Southern Africa)",
+          "url": "https://newmansbirds.com/birds/striped-kingfisher/",
+          "publisher": "Newman's Birds / Struik Nature (online edition)",
+          "year": null
+        },
+        {
+          "title": "The Atlas of Southern African Birds, Vol. 1, pp. 658–659",
+          "url": "https://sabap2.birdmap.africa/docs/sabap1/437.pdf",
+          "publisher": "BirdLife South Africa / Avian Demography Unit",
+          "year": 1997
+        },
+        {
+          "title": "Biodiversity Explorer species text (summarised from Roberts Birds of Southern Africa VIIth ed., Hockey, Dean & Ryan 2005)",
+          "url": "https://www.biodiversityexplorer.info/birds/dacelonidae/halcyon_chelicuti.htm",
+          "publisher": "Iziko Museums of South Africa",
+          "year": null
+        },
+        {
+          "title": "eBird species account — Striped Kingfisher",
+          "url": "https://ebird.org/species/strkin1",
+          "publisher": "Cornell Lab of Ornithology",
+          "year": null
+        },
+        {
+          "title": "Wikipedia — Striped kingfisher",
+          "url": "https://en.wikipedia.org/wiki/Striped_kingfisher",
+          "publisher": "Wikimedia Foundation",
+          "year": 2026
         }
       ]
     },
@@ -3940,14 +4548,102 @@
       "slug": "halcyon-leucocephala",
       "scientificName": "Halcyon leucocephala",
       "commonName": "Grey-headed Kingfisher",
-      "images": [],
-      "recordings": [],
+      "images": [
+        {
+          "key": "halcyon-leucocephala/perched-front.jpg",
+          "author": "Charles J. Sharp",
+          "licence": "CC BY-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Grey-headed_kingfisher_(Halcyon_leucocephala)_2.jpg",
+          "aiGenerated": false,
+          "hosted": false
+        },
+        {
+          "key": "halcyon-leucocephala/perched-side.jpg",
+          "author": "Bernard Dupont",
+          "licence": "CC BY-SA 2.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-sa/2.0/",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Grey-headed_Kingfisher_(Halcyon_leucocephala)_(11929836715),_crop.jpg",
+          "aiGenerated": false,
+          "hosted": false
+        },
+        {
+          "key": "halcyon-leucocephala/perched-back.jpg",
+          "author": "Derek Keats",
+          "licence": "CC BY 2.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by/2.0/",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Grey-headed_kingfisher,_Halcyon_leucocephala,_at_Kruger_National_Park,_South_Africa_-_51756128121.jpg",
+          "aiGenerated": false,
+          "hosted": false
+        },
+        {
+          "key": "halcyon-leucocephala/juvenile.jpg",
+          "author": "alassanesakpega",
+          "licence": "CC BY-NC 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+          "sourceUrl": "https://www.inaturalist.org/observations/278973259",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ],
+      "recordings": [
+        {
+          "key": "xeno-canto/XC697680",
+          "author": "isaac kilusu",
+          "licence": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "sourceUrl": "https://xeno-canto.org/697680",
+          "aiGenerated": false,
+          "hosted": false,
+          "callType": "call"
+        },
+        {
+          "key": "xeno-canto/XC591625",
+          "author": "isaac kilusu",
+          "licence": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "sourceUrl": "https://xeno-canto.org/591625",
+          "aiGenerated": false,
+          "hosted": false,
+          "callType": "call"
+        }
+      ],
       "sources": [
         {
           "title": "Kemp A.C., Herholdt J.J., Whyte I. & Harrison J. (2001). Birds of the two largest national parks in South Africa: a method to generate estimates of population size for all species and assess their conservation ecology. S. Afr. J. Sci. 97: 393–403.",
           "url": "https://journals.co.za/doi/pdf/10.10520/EJC97367",
           "publisher": "South African Journal of Science",
           "year": 2001
+        },
+        {
+          "title": "Newman's Birds — Grey Headed Kingfisher species page (text from Newman's Birds of Southern Africa)",
+          "url": "https://newmansbirds.com/birds/grey-headed-kingfisher/",
+          "publisher": "Newman's Birds / Struik Nature (online edition)",
+          "year": null
+        },
+        {
+          "title": "The Atlas of Southern African Birds, Vol. 1, pp. 656–657",
+          "url": "https://sabap2.birdmap.africa/docs/sabap1/436.pdf",
+          "publisher": "BirdLife South Africa / Avian Demography Unit",
+          "year": 1997
+        },
+        {
+          "title": "Biodiversity Explorer species text (summarised from Roberts Birds of Southern Africa VIIth ed., Hockey, Dean & Ryan 2005)",
+          "url": "https://www.biodiversityexplorer.info/birds/dacelonidae/halcyon_leucocephala.htm",
+          "publisher": "Iziko Museums of South Africa",
+          "year": null
+        },
+        {
+          "title": "eBird species account — Grey-headed Kingfisher",
+          "url": "https://ebird.org/species/gyhkin1",
+          "publisher": "Cornell Lab of Ornithology",
+          "year": null
+        },
+        {
+          "title": "Wikipedia — Grey-headed kingfisher",
+          "url": "https://en.wikipedia.org/wiki/Grey-headed_kingfisher",
+          "publisher": "Wikimedia Foundation",
+          "year": 2026
         }
       ]
     },
@@ -3955,14 +4651,155 @@
       "slug": "halcyon-senegalensis",
       "scientificName": "Halcyon senegalensis",
       "commonName": "Woodland Kingfisher",
-      "images": [],
-      "recordings": [],
+      "images": [
+        {
+          "key": "halcyon-senegalensis/perched-front.jpg",
+          "author": "Bernard Dupont",
+          "licence": "CC BY-SA 2.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-sa/2.0/",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Woodland_Kingfisher_(Halcyon_senegalensis_cyanoleuca)_calling_..._(33050691128).jpg",
+          "aiGenerated": false,
+          "hosted": false
+        },
+        {
+          "key": "halcyon-senegalensis/perched-side.jpg",
+          "author": "Bernard Dupont",
+          "licence": "CC BY-SA 2.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-sa/2.0/",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Woodland_Kingfisher_(Halcyon_senegalensis)_(13851371514).jpg",
+          "aiGenerated": false,
+          "hosted": false
+        },
+        {
+          "key": "halcyon-senegalensis/perched-back.jpg",
+          "author": "Bernard Dupont",
+          "licence": "CC BY-SA 2.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-sa/2.0/",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Woodland_Kingfisher_(Halcyon_senegalensis)_(11711035593),_crop.jpg",
+          "aiGenerated": false,
+          "hosted": false
+        },
+        {
+          "key": "halcyon-senegalensis/display-front.jpg",
+          "author": "Bernard Dupont",
+          "licence": "CC BY-SA 2.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-sa/2.0/",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Woodland_Kingfisher_(Halcyon_senegalensis_cyanoleuca)_calling_with_wing_display_..._(31985036897).jpg",
+          "aiGenerated": false,
+          "hosted": false
+        },
+        {
+          "key": "halcyon-senegalensis/display-back.jpg",
+          "author": "Bernard Dupont",
+          "licence": "CC BY-SA 2.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-sa/2.0/",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Woodland_Kingfisher_(Halcyon_senegalensis_cyanoleuca)_calling_with_wing_display_..._(46011880615).jpg",
+          "aiGenerated": false,
+          "hosted": false
+        },
+        {
+          "key": "halcyon-senegalensis/juvenile-kruger.jpg",
+          "author": "Jeanette Zitzer",
+          "licence": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "sourceUrl": "https://www.inaturalist.org/observations/267055479",
+          "aiGenerated": false,
+          "hosted": false
+        },
+        {
+          "key": "halcyon-senegalensis/chick-nest.jpg",
+          "author": "fayne",
+          "licence": "CC BY-NC 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+          "sourceUrl": "https://www.inaturalist.org/observations/13860260",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ],
+      "recordings": [
+        {
+          "key": "xeno-canto/XC780264",
+          "author": "Rick Nuttall",
+          "licence": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "sourceUrl": "https://xeno-canto.org/780264",
+          "aiGenerated": false,
+          "hosted": false,
+          "callType": "song"
+        },
+        {
+          "key": "xeno-canto/XC1080056",
+          "author": "JJSUN",
+          "licence": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "sourceUrl": "https://xeno-canto.org/1080056",
+          "aiGenerated": false,
+          "hosted": false,
+          "callType": "song"
+        },
+        {
+          "key": "xeno-canto/XC368169",
+          "author": "Oscar Campbell",
+          "licence": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "sourceUrl": "https://xeno-canto.org/368169",
+          "aiGenerated": false,
+          "hosted": false,
+          "callType": "song"
+        },
+        {
+          "key": "xeno-canto/XC213653",
+          "author": "Tom Wulf",
+          "licence": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "sourceUrl": "https://xeno-canto.org/213653",
+          "aiGenerated": false,
+          "hosted": false,
+          "callType": "alarm"
+        }
+      ],
       "sources": [
         {
           "title": "Kemp A.C., Herholdt J.J., Whyte I. & Harrison J. (2001). Birds of the two largest national parks in South Africa: a method to generate estimates of population size for all species and assess their conservation ecology. S. Afr. J. Sci. 97: 393–403.",
           "url": "https://journals.co.za/doi/pdf/10.10520/EJC97367",
           "publisher": "South African Journal of Science",
           "year": 2001
+        },
+        {
+          "title": "Newman's Birds — Woodland Kingfisher species page (text from Newman's Birds of Southern Africa)",
+          "url": "https://newmansbirds.com/birds/woodland-kingfisher/",
+          "publisher": "Newman's Birds / Struik Nature (online edition)",
+          "year": null
+        },
+        {
+          "title": "The Atlas of Southern African Birds, Vol. 1, pp. 650–653 (spread 433)",
+          "url": "https://sabap2.birdmap.africa/docs/sabap1/433.pdf",
+          "publisher": "BirdLife South Africa / Avian Demography Unit",
+          "year": 1997
+        },
+        {
+          "title": "The Atlas of Southern African Birds, Vol. 1, pp. 650–653 (spread 434)",
+          "url": "https://sabap2.birdmap.africa/docs/sabap1/434.pdf",
+          "publisher": "BirdLife South Africa / Avian Demography Unit",
+          "year": 1997
+        },
+        {
+          "title": "Biodiversity Explorer species text (summarised from Roberts Birds of Southern Africa VIIth ed., Hockey, Dean & Ryan 2005)",
+          "url": "https://www.biodiversityexplorer.info/birds/dacelonidae/halcyon_senegalensis.htm",
+          "publisher": "Iziko Museums of South Africa",
+          "year": null
+        },
+        {
+          "title": "eBird species account — Woodland Kingfisher",
+          "url": "https://ebird.org/species/wookin1",
+          "publisher": "Cornell Lab of Ornithology",
+          "year": null
+        },
+        {
+          "title": "Wikipedia — Woodland kingfisher",
+          "url": "https://en.wikipedia.org/wiki/Woodland_kingfisher",
+          "publisher": "Wikimedia Foundation",
+          "year": 2026
         }
       ]
     },
@@ -4210,14 +5047,94 @@
       "slug": "ispidina-picta",
       "scientificName": "Ispidina picta",
       "commonName": "African Pygmy Kingfisher",
-      "images": [],
-      "recordings": [],
+      "images": [
+        {
+          "key": "ispidina-picta/perched-side.jpg",
+          "author": "Bernard Dupont",
+          "licence": "CC BY-SA 2.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-sa/2.0/",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:African_Pygmy_Kingfisher_(Ispidina_picta)_(33161482716).jpg",
+          "aiGenerated": false,
+          "hosted": false
+        },
+        {
+          "key": "ispidina-picta/perched-back.jpg",
+          "author": "Martin Mecnarowski",
+          "licence": "CC BY-SA 3.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Ispidina_picta_1_(Martin_Mecnarowski).jpg",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ],
+      "recordings": [
+        {
+          "key": "xeno-canto/XC438156",
+          "author": "Tim Cockcroft",
+          "licence": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "sourceUrl": "https://xeno-canto.org/438156",
+          "aiGenerated": false,
+          "hosted": false,
+          "callType": "call"
+        },
+        {
+          "key": "xeno-canto/XC453305",
+          "author": "Ehren Eksteen",
+          "licence": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "sourceUrl": "https://xeno-canto.org/453305",
+          "aiGenerated": false,
+          "hosted": false,
+          "callType": "song"
+        },
+        {
+          "key": "xeno-canto/XC998136",
+          "author": "Bram Piot",
+          "licence": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "sourceUrl": "https://xeno-canto.org/998136",
+          "aiGenerated": false,
+          "hosted": false,
+          "callType": "other"
+        }
+      ],
       "sources": [
         {
           "title": "Kemp A.C., Herholdt J.J., Whyte I. & Harrison J. (2001). Birds of the two largest national parks in South Africa: a method to generate estimates of population size for all species and assess their conservation ecology. S. Afr. J. Sci. 97: 393–403.",
           "url": "https://journals.co.za/doi/pdf/10.10520/EJC97367",
           "publisher": "South African Journal of Science",
           "year": 2001
+        },
+        {
+          "title": "Newman's Birds — African Pygmy Kingfisher species page (text from Newman's Birds of Southern Africa)",
+          "url": "https://newmansbirds.com/birds/african-pygmy-kingfisher/",
+          "publisher": "Newman's Birds / Struik Nature (online edition)",
+          "year": null
+        },
+        {
+          "title": "The Atlas of Southern African Birds, Vol. 1, pp. 648–649",
+          "url": "https://sabap2.birdmap.africa/docs/sabap1/432.pdf",
+          "publisher": "BirdLife South Africa / Avian Demography Unit",
+          "year": 1997
+        },
+        {
+          "title": "Biodiversity Explorer species text (summarised from Roberts Birds of Southern Africa VIIth ed., Hockey, Dean & Ryan 2005)",
+          "url": "https://www.biodiversityexplorer.info/birds/alcedinidae/ispidina_picta.htm",
+          "publisher": "Iziko Museums of South Africa",
+          "year": null
+        },
+        {
+          "title": "eBird species account — African Pygmy Kingfisher",
+          "url": "https://ebird.org/species/afpkin1",
+          "publisher": "Cornell Lab of Ornithology",
+          "year": null
+        },
+        {
+          "title": "Wikipedia — African pygmy kingfisher",
+          "url": "https://en.wikipedia.org/wiki/African_pygmy_kingfisher",
+          "publisher": "Wikimedia Foundation",
+          "year": 2026
         }
       ]
     },
@@ -4645,14 +5562,136 @@
       "slug": "megaceryle-maxima",
       "scientificName": "Megaceryle maxima",
       "commonName": "Giant Kingfisher",
-      "images": [],
-      "recordings": [],
+      "images": [
+        {
+          "key": "megaceryle-maxima/male-front.jpg",
+          "author": "Derek Keats",
+          "licence": "CC BY 2.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by/2.0/",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Giant_Kingfisher,_Megaceryle_maxima,_at_Kruger_National_Park,_South_Africa_-_male.jpg",
+          "aiGenerated": false,
+          "hosted": false
+        },
+        {
+          "key": "megaceryle-maxima/male-side.jpg",
+          "author": "Bernard Dupont",
+          "licence": "CC BY-SA 2.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-sa/2.0/",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Giant_Kingfisher_(Megaceryle_maxima)_male_..._(52513331652).jpg",
+          "aiGenerated": false,
+          "hosted": false
+        },
+        {
+          "key": "megaceryle-maxima/female-side.jpg",
+          "author": "Bernard Dupont",
+          "licence": "CC BY-SA 2.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-sa/2.0/",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Giant_Kingfisher_(Megaceryle_maximus)_female_(16502602066).jpg",
+          "aiGenerated": false,
+          "hosted": false
+        },
+        {
+          "key": "megaceryle-maxima/perched-back.jpg",
+          "author": "D. Gordon E. Robertson",
+          "licence": "CC BY-SA 3.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Giant_Kingfisher.jpg",
+          "aiGenerated": false,
+          "hosted": false
+        },
+        {
+          "key": "megaceryle-maxima/female-flight-below.jpg",
+          "author": "Derek Keats",
+          "licence": "CC BY 2.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by/2.0/",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Giant_Kingfisher,_Megaceryle_maxima_at_Rietvlei_Nature_Reserve,_South_Africa_(22257285286).jpg",
+          "aiGenerated": false,
+          "hosted": false
+        },
+        {
+          "key": "megaceryle-maxima/flight-above.jpg",
+          "author": "Derek Keats",
+          "licence": "CC BY 2.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by/2.0/",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Giant_Kingfisher,_Megaceryle_maxima_at_Rietvlei_Nature_Reserve,_South_Africa_(21662279993).jpg",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ],
+      "recordings": [
+        {
+          "key": "xeno-canto/XC1152464",
+          "author": "African Bioacoustics Community",
+          "licence": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "sourceUrl": "https://xeno-canto.org/1152464",
+          "aiGenerated": false,
+          "hosted": false,
+          "callType": "call"
+        },
+        {
+          "key": "xeno-canto/XC694496",
+          "author": "Tony Archer",
+          "licence": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "sourceUrl": "https://xeno-canto.org/694496",
+          "aiGenerated": false,
+          "hosted": false,
+          "callType": "call"
+        },
+        {
+          "key": "xeno-canto/XC811972",
+          "author": "Maarten Sluijter",
+          "licence": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "sourceUrl": "https://xeno-canto.org/811972",
+          "aiGenerated": false,
+          "hosted": false,
+          "callType": "call"
+        }
+      ],
       "sources": [
         {
           "title": "Kemp A.C., Herholdt J.J., Whyte I. & Harrison J. (2001). Birds of the two largest national parks in South Africa: a method to generate estimates of population size for all species and assess their conservation ecology. S. Afr. J. Sci. 97: 393–403.",
           "url": "https://journals.co.za/doi/pdf/10.10520/EJC97367",
           "publisher": "South African Journal of Science",
           "year": 2001
+        },
+        {
+          "title": "Newman's Birds — Giant Kingfisher species page (text from Newman's Birds of Southern Africa)",
+          "url": "https://newmansbirds.com/birds/giant-kingfisher/",
+          "publisher": "Newman's Birds / Struik Nature (online edition)",
+          "year": null
+        },
+        {
+          "title": "The Atlas of Southern African Birds, Vol. 1, pp. 640–643 (spread 428)",
+          "url": "https://sabap2.birdmap.africa/docs/sabap1/428.pdf",
+          "publisher": "BirdLife South Africa / Avian Demography Unit",
+          "year": 1997
+        },
+        {
+          "title": "The Atlas of Southern African Birds, Vol. 1, pp. 640–643 (spread 429)",
+          "url": "https://sabap2.birdmap.africa/docs/sabap1/429.pdf",
+          "publisher": "BirdLife South Africa / Avian Demography Unit",
+          "year": 1997
+        },
+        {
+          "title": "Biodiversity Explorer species text (summarised from Roberts Birds of Southern Africa VIIth ed., Hockey, Dean & Ryan 2005)",
+          "url": "https://www.biodiversityexplorer.info/birds/cerylidae/ceryle_maxima.htm",
+          "publisher": "Iziko Museums of South Africa",
+          "year": null
+        },
+        {
+          "title": "eBird species account — Giant Kingfisher",
+          "url": "https://ebird.org/species/giakin3",
+          "publisher": "Cornell Lab of Ornithology",
+          "year": null
+        },
+        {
+          "title": "Wikipedia — Giant kingfisher",
+          "url": "https://en.wikipedia.org/wiki/Giant_kingfisher",
+          "publisher": "Wikimedia Foundation",
+          "year": 2026
         }
       ]
     },

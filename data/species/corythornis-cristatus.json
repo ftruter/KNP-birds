@@ -7,8 +7,79 @@
     "af": "Kuifkopvisvanger"
   },
   "family": "alcedinidae",
-  "summary": "The details for this species have not been published yet.",
-  "sampleData": true,
+  "status": "resident",
+  "monthsPresent": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+  ],
+  "size": {
+    "lengthCm": {
+      "min": 13,
+      "max": 14
+    },
+    "note": "Newman's Birds gives 14 cm. Wikipedia gives about 13 cm (14 cm in southern Africa)."
+  },
+  "habitat": "Almost any water with fringing vegetation, especially sluggish rivers, streams and dams overhung by reeds, sedges, grasses or shrubs. Perches low on a reed, branch or rock. Wanders when not breeding and leaves waters that dry up.",
+  "summary": "A tiny waterside kingfisher with a turquoise, black-barred crest that reaches the eye, orange cheeks and underparts, and a red bill (black in juveniles). The sexes look alike. Biodiversity Explorer, summarising Roberts, says the eyes open at 10–12 days and the young fledge at 22–25 days; it does not describe the chick's plumage.",
+  "sampleData": false,
+  "similar": [
+    {
+      "slug": "ispidina-picta",
+      "note": "Pygmy has mauve/violet ear-coverts, a deep-blue crown the same colour as the back that does not reach the eye (orange eyebrow below it), and usually hunts insects in woodland away from water. Malachite's turquoise cap reaches the eye and it has no mauve on the face (Newman's)."
+    },
+    {
+      "slug": "alcedo-semitorquata",
+      "note": "Half-collared is larger, with a black bill and blue (not orange) cheeks. Beware juvenile Malachite, which also has a black bill but keeps orange on the face (Newman's; eBird)."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Newman's Birds — Malachite Kingfisher species page (text from Newman's Birds of Southern Africa)",
+      "url": "https://newmansbirds.com/birds/malachite-kingfisher/",
+      "publisher": "Newman's Birds / Struik Nature (online edition)",
+      "year": null
+    },
+    {
+      "title": "The Atlas of Southern African Birds, Vol. 1, pp. 644–647 (spread 430)",
+      "url": "https://sabap2.birdmap.africa/docs/sabap1/430.pdf",
+      "publisher": "BirdLife South Africa / Avian Demography Unit",
+      "year": 1997
+    },
+    {
+      "title": "The Atlas of Southern African Birds, Vol. 1, pp. 644–647 (spread 431)",
+      "url": "https://sabap2.birdmap.africa/docs/sabap1/431.pdf",
+      "publisher": "BirdLife South Africa / Avian Demography Unit",
+      "year": 1997
+    },
+    {
+      "title": "Biodiversity Explorer species text (summarised from Roberts Birds of Southern Africa VIIth ed., Hockey, Dean & Ryan 2005)",
+      "url": "https://www.biodiversityexplorer.info/birds/alcedinidae/alcedo_cristata.htm",
+      "publisher": "Iziko Museums of South Africa",
+      "year": null
+    },
+    {
+      "title": "eBird species account — Malachite Kingfisher",
+      "url": "https://ebird.org/species/malkin1",
+      "publisher": "Cornell Lab of Ornithology",
+      "year": null
+    },
+    {
+      "title": "Wikipedia — Malachite kingfisher",
+      "url": "https://en.wikipedia.org/wiki/Malachite_kingfisher",
+      "publisher": "Wikimedia Foundation",
+      "year": 2026
+    }
+  ],
   "population": {
     "estimate": {
       "low": 2048,
@@ -35,8 +106,256 @@
     },
     "tierApplied": "D"
   },
-  "variants": [],
-  "viewNotes": [],
-  "calls": [],
-  "images": []
+  "variants": [
+    {
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "marks": {
+        "bill": {
+          "colour": "red",
+          "shape": "dagger-like"
+        },
+        "eye": {
+          "iris": null,
+          "ring": null
+        },
+        "legs": {
+          "colour": "red"
+        },
+        "head": {
+          "crown": [
+            "turquoise",
+            "black"
+          ],
+          "face": "orange",
+          "throat": "white"
+        },
+        "upperparts": {
+          "back": "blue",
+          "rump": null
+        },
+        "underparts": {
+          "breast": "orange",
+          "belly": "orange"
+        },
+        "wings": {
+          "above": "blue",
+          "below": null
+        },
+        "tail": {
+          "colour": null,
+          "shape": null
+        }
+      }
+    },
+    {
+      "age": "juvenile",
+      "sex": "any",
+      "season": "any",
+      "marks": {
+        "bill": {
+          "colour": "black",
+          "shape": null
+        },
+        "eye": {
+          "iris": null,
+          "ring": null
+        },
+        "legs": {
+          "colour": null
+        },
+        "head": {
+          "crown": null,
+          "face": "orange",
+          "throat": null
+        },
+        "upperparts": {
+          "back": null,
+          "rump": null
+        },
+        "underparts": {
+          "breast": null,
+          "belly": null
+        },
+        "wings": {
+          "above": null,
+          "below": null
+        },
+        "tail": {
+          "colour": null,
+          "shape": null
+        }
+      }
+    }
+  ],
+  "viewNotes": [
+    {
+      "view": "perched-front",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Front-on, the orange underparts and the white throat show; the red bill is diagnostic against Half-collared."
+    },
+    {
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Side-on, check where the cap reaches: the turquoise crown runs down to the eye, and there is no mauve on the ear-coverts (Newman's)."
+    },
+    {
+      "view": "perched-back",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "From behind, the metallic blue back and the white neck-side patches show (Wikipedia)."
+    },
+    {
+      "view": "flight-above",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "The upperparts are bright metallic blue (Newman's; Wikipedia). The underwing is not described in the sources used here."
+    },
+    {
+      "view": "perched-side",
+      "age": "juvenile",
+      "sex": "any",
+      "season": "any",
+      "note": "Juveniles have a black bill, which risks confusion with Half-collared; look for the orange cheeks (Newman's)."
+    }
+  ],
+  "calls": [
+    {
+      "sex": "any",
+      "type": "call",
+      "description": "A shrill 'peep-peep' when flushed (Newman's); a harsh 'tshik', often in flight (eBird).",
+      "recordings": [
+        {
+          "key": "xeno-canto/XC369825",
+          "source": "https://xeno-canto.org/369825",
+          "fileUrl": "https://xeno-canto.org/sounds/uploaded/GQMCPIVNXX/XC369825-Malachite%20Kingfisher.mp3",
+          "author": "Tim Cockcroft",
+          "license": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "aiGenerated": false,
+          "hosted": false
+        },
+        {
+          "key": "xeno-canto/XC429330",
+          "source": "https://xeno-canto.org/429330",
+          "fileUrl": "https://xeno-canto.org/sounds/uploaded/DNKBTPCMSQ/XC429330-Kingfisher%20Malachite%20Mazvikadei%20180602-100912.mp3",
+          "author": "Derek Solomon",
+          "license": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ]
+    }
+  ],
+  "images": [
+    {
+      "key": "corythornis-cristatus/perched-front.jpg",
+      "view": "perched-front",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "source": "https://commons.wikimedia.org/wiki/File:Malachite_Kingfisher_(Corythornis_cristatus)_(52746880154).jpg",
+      "fileUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/53/Malachite_Kingfisher_%28Corythornis_cristatus%29_%2852746880154%29.jpg/1280px-Malachite_Kingfisher_%28Corythornis_cristatus%29_%2852746880154%29.jpg",
+      "author": "Bernard Dupont",
+      "license": "CC BY-SA 2.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by-sa/2.0/",
+      "aiGenerated": false,
+      "hosted": false,
+      "alt": "Malachite Kingfisher perched, front view; S100 near Satara, Kruger National Park.",
+      "caption": "Malachite Kingfisher perched, front view; S100 near Satara, Kruger National Park."
+    },
+    {
+      "key": "corythornis-cristatus/perched-side.jpg",
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "source": "https://commons.wikimedia.org/wiki/File:Malachite_Kingfisher_(Corythornis_cristatus)_(51850756117).jpg",
+      "fileUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3a/Malachite_Kingfisher_%28Corythornis_cristatus%29_%2851850756117%29.jpg/1280px-Malachite_Kingfisher_%28Corythornis_cristatus%29_%2851850756117%29.jpg",
+      "author": "Bernard Dupont",
+      "license": "CC BY-SA 2.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by-sa/2.0/",
+      "aiGenerated": false,
+      "hosted": false,
+      "alt": "Malachite Kingfisher perched, side view, showing the turquoise crest reaching the eye; Sunset Dam, Kruger National Park.",
+      "caption": "Malachite Kingfisher perched, side view, showing the turquoise crest reaching the eye; Sunset Dam, Kruger National Park."
+    },
+    {
+      "key": "corythornis-cristatus/perched-back.jpg",
+      "view": "perched-back",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "source": "https://commons.wikimedia.org/wiki/File:Day_7_Malachite_Kingfisher_(Corythornis_cristatus)_(53216008032).jpg",
+      "fileUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b0/Day_7_Malachite_Kingfisher_%28Corythornis_cristatus%29_%2853216008032%29.jpg/1280px-Day_7_Malachite_Kingfisher_%28Corythornis_cristatus%29_%2853216008032%29.jpg",
+      "author": "Bernard Dupont",
+      "license": "CC BY-SA 2.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by-sa/2.0/",
+      "aiGenerated": false,
+      "hosted": false,
+      "alt": "Malachite Kingfisher perched, back view; Lake Panic, Kruger National Park.",
+      "caption": "Malachite Kingfisher perched, back view; Lake Panic, Kruger National Park."
+    },
+    {
+      "key": "corythornis-cristatus/immature-side.jpg",
+      "view": "perched-side",
+      "age": "immature",
+      "sex": "any",
+      "season": "any",
+      "source": "https://commons.wikimedia.org/wiki/File:Malachite_Kingfisher_(Corythornis_cristatus)_immature.jpg",
+      "fileUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/be/Malachite_Kingfisher_%28Corythornis_cristatus%29_immature.jpg/1280px-Malachite_Kingfisher_%28Corythornis_cristatus%29_immature.jpg",
+      "author": "Bernard Dupont",
+      "license": "CC BY-SA 2.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by-sa/2.0/",
+      "aiGenerated": false,
+      "hosted": false,
+      "alt": "Immature Malachite Kingfisher with a dark bill; Wakkerstroom, Mpumalanga.",
+      "caption": "Immature Malachite Kingfisher with a dark bill; Wakkerstroom, Mpumalanga."
+    },
+    {
+      "key": "corythornis-cristatus/juvenile-side.jpg",
+      "view": "perched-side",
+      "age": "juvenile",
+      "sex": "any",
+      "season": "any",
+      "source": "https://commons.wikimedia.org/wiki/File:Malachitekingfisherjuv.jpg",
+      "fileUrl": "https://upload.wikimedia.org/wikipedia/commons/7/7f/Malachitekingfisherjuv.jpg",
+      "author": "Tom Tarrant",
+      "license": "CC BY-SA 3.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "aiGenerated": false,
+      "hosted": false,
+      "alt": "Juvenile Malachite Kingfisher with a black bill; Uganda.",
+      "caption": "Juvenile Malachite Kingfisher with a black bill; Uganda."
+    },
+    {
+      "key": "corythornis-cristatus/juvenile-back-kruger.jpg",
+      "view": "perched-back",
+      "age": "juvenile",
+      "sex": "any",
+      "season": "any",
+      "source": "https://www.inaturalist.org/observations/9679586",
+      "fileUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/13230772/large.jpg",
+      "author": "maritzasouthafrica",
+      "license": "CC BY-NC 4.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+      "aiGenerated": false,
+      "hosted": false,
+      "alt": "Juvenile Malachite Kingfisher with a black bill, back view; Skukuza–Lower Sabie road, Kruger National Park.",
+      "caption": "Juvenile Malachite Kingfisher with a black bill, back view; Skukuza–Lower Sabie road, Kruger National Park."
+    }
+  ],
+  "research": {
+    "confidence": "high",
+    "needsReview": false,
+    "note": "No seasonal plumage change is described. Chick plumage is not described; Biodiversity Explorer gives only the timing of the eyes opening and fledging."
+  }
 }

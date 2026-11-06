@@ -6,8 +6,8 @@
     "en": "Kingfishers",
     "af": "Visvangers"
   },
-  "summary": "Field notes for this family are still to be written.",
-  "sampleData": true,
+  "summary": "Kingfishers are compact birds with large bills. Most hunt from a perch; the Pied Kingfisher often hovers. Kruger has nine species. Older southern African lists sometimes split these birds into Alcedinidae, Cerylidae and Halcyonidae (or Dacelonidae). This site follows IOC and BirdLife South Africa and keeps one family, Alcedinidae.",
+  "sampleData": false,
   "species": [
     {
       "slug": "alcedo-semitorquata",

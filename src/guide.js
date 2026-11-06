@@ -259,19 +259,33 @@ export const viewLabel = (view) => {
   const labels = {
     'flight-above': 'In flight from above',
     'flight-below': 'In flight from below',
+    'flight-side': 'In flight, from the side',
     'perched-front': 'Perched, front',
     'perched-back': 'Perched, back',
     'perched-side': 'Perched, side',
+    'display-front': 'Wing-spread display, front',
+    'display-back': 'Wing-spread display, back',
   }
   return labels[view] || view || ''
 }
+
+/** Sex label for a photograph. `any` stays blank so a single sex is not implied. */
+export const mediaSexLabel = (sex) =>
+  sex === 'male'
+    ? 'Male'
+    : sex === 'female'
+      ? 'Female'
+      : sex === 'mixed'
+        ? 'Male and female'
+        : ''
 
 export const imageAlt = (doc, image) => {
   if (typeof image?.alt === 'string' && image.alt.trim())
     return image.alt.trim()
   const bits = [englishName(doc)]
   if (image?.age && image.age !== 'any') bits.push(image.age)
-  if (image?.sex && image.sex !== 'any') bits.push(image.sex)
+  const sex = mediaSexLabel(image?.sex)
+  if (sex) bits.push(sex.toLowerCase())
   if (image?.season && image.season !== 'any') bits.push(image.season)
   const view = viewLabel(image?.view)
   if (view) bits.push(view.toLowerCase())

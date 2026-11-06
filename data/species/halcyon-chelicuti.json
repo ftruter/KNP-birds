@@ -7,8 +7,73 @@
     "af": "Gestreepte Visvanger"
   },
   "family": "alcedinidae",
-  "summary": "The details for this species have not been published yet.",
-  "sampleData": true,
+  "status": "resident",
+  "monthsPresent": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+  ],
+  "size": {
+    "lengthCm": {
+      "min": 16,
+      "max": 19
+    },
+    "note": "Newman's Birds gives 18–19 cm. Wikipedia gives 16–18 cm for the nominate race."
+  },
+  "habitat": "Relatively open broadleaved and Acacia woodland and mixed bushveld, usually perched high on an outer branch far from water. Not especially tied to rivers.",
+  "summary": "A small grey-brown woodland kingfisher with a streaked crown, a bold black eye-stripe running round the nape above a white collar, and a two-coloured bill, dark above and red below. Blue shows mainly in flight or in the wing-opening display. The sexes are hard to separate: Wikipedia gives males a buffy-grey crown ground and a black underwing bar, and females a brownish crown ground without that bar. Newman's says the male's underwing is darker. No sexed photograph was verified.",
+  "sampleData": false,
+  "similar": [
+    {
+      "slug": "halcyon-albiventris",
+      "note": "Brown-hooded is larger, with a heavier, wholly red bill, less obvious eye-stripes and buffy underparts (Newman's)."
+    },
+    {
+      "slug": "halcyon-senegalensis",
+      "note": "Woodland also has a bicoloured bill, but it is larger, with a bright turquoise back and white underparts (Newman's)."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Newman's Birds — Striped Kingfisher species page (text from Newman's Birds of Southern Africa)",
+      "url": "https://newmansbirds.com/birds/striped-kingfisher/",
+      "publisher": "Newman's Birds / Struik Nature (online edition)",
+      "year": null
+    },
+    {
+      "title": "The Atlas of Southern African Birds, Vol. 1, pp. 658–659",
+      "url": "https://sabap2.birdmap.africa/docs/sabap1/437.pdf",
+      "publisher": "BirdLife South Africa / Avian Demography Unit",
+      "year": 1997
+    },
+    {
+      "title": "Biodiversity Explorer species text (summarised from Roberts Birds of Southern Africa VIIth ed., Hockey, Dean & Ryan 2005)",
+      "url": "https://www.biodiversityexplorer.info/birds/dacelonidae/halcyon_chelicuti.htm",
+      "publisher": "Iziko Museums of South Africa",
+      "year": null
+    },
+    {
+      "title": "eBird species account — Striped Kingfisher",
+      "url": "https://ebird.org/species/strkin1",
+      "publisher": "Cornell Lab of Ornithology",
+      "year": null
+    },
+    {
+      "title": "Wikipedia — Striped kingfisher",
+      "url": "https://en.wikipedia.org/wiki/Striped_kingfisher",
+      "publisher": "Wikimedia Foundation",
+      "year": 2026
+    }
+  ],
   "population": {
     "estimate": {
       "low": 8192,
@@ -35,8 +100,347 @@
     },
     "tierApplied": "D"
   },
-  "variants": [],
-  "viewNotes": [],
-  "calls": [],
-  "images": []
+  "variants": [
+    {
+      "age": "adult",
+      "sex": "male",
+      "season": "any",
+      "marks": {
+        "bill": {
+          "colour": [
+            "black",
+            "red"
+          ],
+          "shape": "dagger-like"
+        },
+        "eye": {
+          "iris": null,
+          "ring": null
+        },
+        "legs": {
+          "colour": "red"
+        },
+        "head": {
+          "crown": [
+            "brown",
+            "grey"
+          ],
+          "face": [
+            "black",
+            "white"
+          ],
+          "throat": "white",
+          "pattern": "crown streaked dark brown on a buffy-grey ground (Wikipedia only)"
+        },
+        "upperparts": {
+          "back": [
+            "grey",
+            "brown"
+          ],
+          "rump": "blue"
+        },
+        "underparts": {
+          "breast": [
+            "white",
+            "buff",
+            "brown"
+          ],
+          "belly": "white"
+        },
+        "wings": {
+          "above": [
+            "blue",
+            "white"
+          ],
+          "below": [
+            "white",
+            "black"
+          ],
+          "pattern": "white linings, a black border, and a black bar at the base of the primaries (Wikipedia). Newman's says the male underwing is darker"
+        },
+        "tail": {
+          "colour": "blue",
+          "shape": null
+        }
+      }
+    },
+    {
+      "age": "adult",
+      "sex": "female",
+      "season": "any",
+      "marks": {
+        "bill": {
+          "colour": [
+            "black",
+            "red"
+          ],
+          "shape": "dagger-like"
+        },
+        "eye": {
+          "iris": null,
+          "ring": null
+        },
+        "legs": {
+          "colour": "red"
+        },
+        "head": {
+          "crown": "brown",
+          "face": [
+            "black",
+            "white"
+          ],
+          "throat": "white",
+          "pattern": "crown streaked dark brown on a brownish ground (Wikipedia only)"
+        },
+        "upperparts": {
+          "back": [
+            "grey",
+            "brown"
+          ],
+          "rump": "blue"
+        },
+        "underparts": {
+          "breast": [
+            "white",
+            "buff",
+            "brown"
+          ],
+          "belly": "white"
+        },
+        "wings": {
+          "above": [
+            "blue",
+            "white"
+          ],
+          "below": [
+            "white",
+            "black"
+          ],
+          "pattern": "white linings and a black border, without the male's black primary bar (Wikipedia). Newman's says the female underwing is paler"
+        },
+        "tail": {
+          "colour": "blue",
+          "shape": null
+        }
+      }
+    },
+    {
+      "age": "juvenile",
+      "sex": "any",
+      "season": "any",
+      "marks": {
+        "bill": {
+          "colour": [
+            "black",
+            "red"
+          ],
+          "shape": "dull red on the lower mandible (Wikipedia only)"
+        },
+        "eye": {
+          "iris": null,
+          "ring": null
+        },
+        "legs": {
+          "colour": null
+        },
+        "head": {
+          "crown": "brown",
+          "face": null,
+          "throat": null
+        },
+        "upperparts": {
+          "back": null,
+          "rump": null
+        },
+        "underparts": {
+          "breast": [
+            "white",
+            "brown"
+          ],
+          "belly": null
+        },
+        "wings": {
+          "above": null,
+          "below": null
+        },
+        "tail": {
+          "colour": null,
+          "shape": null
+        }
+      }
+    }
+  ],
+  "viewNotes": [
+    {
+      "view": "perched-front",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Front-on, the off-white, streaked underparts and the two-tone bill (red below) stand out."
+    },
+    {
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Side-on, the black eye-stripe running round the nape above the white collar is the best mark (Newman's)."
+    },
+    {
+      "view": "perched-back",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Perched, the bird looks grey-brown above. The blue lower back, secondaries and tail are 'much more visible when the bird flies than when it is perched', or when it opens its wings in display (Wikipedia)."
+    },
+    {
+      "view": "flight-below",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "White wing-linings with a black border. Males also have a black bar at the base of the primaries, so the underwing looks darker; females lack that bar (Wikipedia; Newman's)."
+    },
+    {
+      "view": "flight-above",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "The blue lower back and secondaries show, with a white patch at the base of the primaries (Wikipedia). The display photograph shows this upperwing; it is not a flight shot."
+    }
+  ],
+  "calls": [
+    {
+      "sex": "any",
+      "type": "song",
+      "description": "A 'tirrrrrr, deeeoo-deeeoo-deeeoo' (Newman's); a loud, ringing 'teeep-tiiii-rrrrrrr' and rollicking 'trrreerrr-treeerr' calls (eBird). Pairs duet while performing a wing-opening display, most often in the evening (Newman's). No source consulted assigns different parts to male and female.",
+      "recordings": [
+        {
+          "key": "xeno-canto/XC501576",
+          "source": "https://xeno-canto.org/501576",
+          "fileUrl": "https://xeno-canto.org/sounds/uploaded/YSILLPIDKW/XC501576-tweet.mp3",
+          "author": "Hayley",
+          "license": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "aiGenerated": false,
+          "hosted": false
+        },
+        {
+          "key": "xeno-canto/XC462092",
+          "source": "https://xeno-canto.org/462092",
+          "fileUrl": "https://xeno-canto.org/sounds/uploaded/ELJNEGDKGC/XC462092-Striped%20Kingfisher.mp3",
+          "author": "Wolbert Hermus",
+          "license": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "aiGenerated": false,
+          "hosted": false
+        },
+        {
+          "key": "xeno-canto/XC960871",
+          "source": "https://xeno-canto.org/960871",
+          "fileUrl": "https://xeno-canto.org/sounds/uploaded/TSMVYZCIWC/XC960871-20240707-gestrvisvanger.mp3",
+          "author": "Ehren Eksteen",
+          "license": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "aiGenerated": false,
+          "hosted": false
+        },
+        {
+          "key": "xeno-canto/XC628100",
+          "source": "https://xeno-canto.org/628100",
+          "fileUrl": "https://xeno-canto.org/sounds/uploaded/AVYPWXFRAR/XC628100-strp%20kng..mp3.mp3",
+          "author": "paulo kivuyo",
+          "license": "CC BY-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ]
+    }
+  ],
+  "images": [
+    {
+      "key": "halcyon-chelicuti/perched-front.jpg",
+      "view": "perched-front",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "source": "https://commons.wikimedia.org/wiki/File:Halcyon_chelicuti_chelicuti_230256798.jpg",
+      "fileUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e5/Halcyon_chelicuti_chelicuti_230256798.jpg/1280px-Halcyon_chelicuti_chelicuti_230256798.jpg",
+      "author": "Jens N. Lallensack",
+      "license": "CC BY 4.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by/4.0/",
+      "aiGenerated": false,
+      "hosted": false,
+      "alt": "Striped Kingfisher perched, front view, showing the two-tone bill; Berg-en-Dal, Kruger National Park.",
+      "caption": "Striped Kingfisher perched, front view, showing the two-tone bill; Berg-en-Dal, Kruger National Park."
+    },
+    {
+      "key": "halcyon-chelicuti/perched-side.jpg",
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "source": "https://commons.wikimedia.org/wiki/File:Brown-hooded_Kingfisher_-_Halcyon_albiventris,_Mala_Mala_Game_Reserve,_Mpumalanga,_South_Africa.jpg",
+      "fileUrl": "https://upload.wikimedia.org/wikipedia/commons/0/0b/Brown-hooded_Kingfisher_-_Halcyon_albiventris%2C_Mala_Mala_Game_Reserve%2C_Mpumalanga%2C_South_Africa.jpg",
+      "author": "Judy Gallagher",
+      "license": "CC BY 2.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by/2.0/",
+      "aiGenerated": false,
+      "hosted": false,
+      "alt": "Striped Kingfisher perched, side view, showing the black eye-stripe, white collar and two-tone bill; Mala Mala, Mpumalanga. The Commons file is named Brown-hooded Kingfisher; the bird and the file description are Striped.",
+      "caption": "Striped Kingfisher perched, side view, showing the black eye-stripe, white collar and two-tone bill; Mala Mala, Mpumalanga. The Commons file is named Brown-hooded Kingfisher; the bird and the file description are Striped."
+    },
+    {
+      "key": "halcyon-chelicuti/display-back.jpg",
+      "view": "display-back",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "source": "https://commons.wikimedia.org/wiki/File:Striped_kingfisher,_Halcyon_chelicuti,_at_Loodswaai,_Gauteng,_South_Africa._-_50563025348.jpg",
+      "fileUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/34/Striped_kingfisher%2C_Halcyon_chelicuti%2C_at_Loodswaai%2C_Gauteng%2C_South_Africa._-_50563025348.jpg/1280px-Striped_kingfisher%2C_Halcyon_chelicuti%2C_at_Loodswaai%2C_Gauteng%2C_South_Africa._-_50563025348.jpg",
+      "author": "Derek Keats",
+      "license": "CC BY 2.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by/2.0/",
+      "aiGenerated": false,
+      "hosted": false,
+      "alt": "Striped Kingfisher from behind with wings spread in display, showing the blue rump and secondaries and the white primary patch; Loodswaai, Gauteng.",
+      "caption": "Striped Kingfisher from behind with wings spread in display, showing the blue rump and secondaries and the white primary patch; Loodswaai, Gauteng."
+    },
+    {
+      "key": "halcyon-chelicuti/juvenile-side.jpg",
+      "view": "perched-side",
+      "age": "juvenile",
+      "sex": "any",
+      "season": "any",
+      "source": "https://commons.wikimedia.org/wiki/File:Striped_kingfisher_(Halcyon_chelicuti_chelicuti)_juvenile.jpg",
+      "fileUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e6/Striped_kingfisher_%28Halcyon_chelicuti_chelicuti%29_juvenile.jpg/1280px-Striped_kingfisher_%28Halcyon_chelicuti_chelicuti%29_juvenile.jpg",
+      "author": "Charles J. Sharp",
+      "license": "CC BY-SA 4.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "aiGenerated": false,
+      "hosted": false,
+      "alt": "Juvenile Striped Kingfisher perched; Semliki, Uganda (nominate chelicuti).",
+      "caption": "Juvenile Striped Kingfisher perched; Semliki, Uganda (nominate chelicuti)."
+    },
+    {
+      "key": "halcyon-chelicuti/juvenile-front.jpg",
+      "view": "perched-front",
+      "age": "juvenile",
+      "sex": "any",
+      "season": "any",
+      "source": "https://www.inaturalist.org/observations/153299843",
+      "fileUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/264758684/large.jpeg",
+      "author": "ANDRIES VAN TONDER",
+      "license": "CC BY-NC 4.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+      "aiGenerated": false,
+      "hosted": false,
+      "alt": "Juvenile Striped Kingfisher, front three-quarter view: fluffy, with a short bill, dull red lower mandible and dusky-tipped breast feathers; Hwange, Zimbabwe.",
+      "caption": "Juvenile Striped Kingfisher, front three-quarter view: fluffy, with a short bill, dull red lower mandible and dusky-tipped breast feathers; Hwange, Zimbabwe."
+    }
+  ],
+  "research": {
+    "confidence": "medium",
+    "needsReview": false,
+    "note": "Crown-ground and underwing-bar sex differences are subtle. Wikipedia is the main source; Newman's says the male underwing is darker. No sexed photograph was verified. Juvenile plumage detail is from Wikipedia only."
+  }
 }

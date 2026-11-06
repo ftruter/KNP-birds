@@ -49,7 +49,7 @@ No extension is HTML. `.md` is Markdown (`text/markdown; charset=utf-8`). `.json
 Each variant is one combination of:
 
 - `age`: `chick`, `juvenile`, `immature`, or `adult`
-- `sex`: `male`, `female`, or `any` (the marks apply to both sexes)
+- `sex`: `male`, `female`, or `any` (the marks apply to both sexes). A photograph of a male and a female together uses `mixed` on the image only.
 - `season`: `breeding` (summer), `non-breeding` (winter), or `any`
 
 `marks` names body parts. Every part is present. Unknown fields are `null`.
@@ -88,7 +88,13 @@ The page does not store comparison prose. It diffs the variants.
 { "view": "perched-side", "age": "adult", "sex": "any", "season": "any", "note": "Lilac breast and long outer tail streamers." }
 ```
 
-`view` is `flight-above`, `flight-below`, `perched-front`, `perched-back`, or `perched-side`. `age`, `sex`, and `season` are optional. The flight and perched comparisons use the adult note when one is set, and show other ages underneath. A note with no age still applies to the comparison.
+`view` is `flight-above`, `flight-below`, `flight-side`, `perched-front`, `perched-back`, `perched-side`, `display-front`, or `display-back`. `flight-side` is a side-on flight or hover. `display-front` and `display-back` are wing-spread displays, not flight. The above-versus-below comparison uses only `flight-above` and `flight-below`. `age`, `sex`, and `season` are optional. The flight and perched comparisons use the adult note when one is set, and show other ages underneath. A note with no age still applies to the comparison.
+
+`head`, `upperparts`, `underparts`, and `wings` may set an optional `pattern` string. It is compared like bill shape, for a mark that is not a colour, such as the number of breast-bands.
+
+An image may set `caption`. The page shows it with the view label. `sex: "mixed"` is labelled "Male and female".
+
+`research` is optional: `confidence` (`low`, `medium`, or `high`), `needsReview`, and a `note`. It records uneven confidence. It is not rendered as a claim that every sentence has the same authority. Weak facts stay attributed in the text they affect.
 
 Each image:
 
