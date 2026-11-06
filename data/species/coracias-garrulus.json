@@ -98,40 +98,29 @@
   ],
   "population": {
     "estimate": {
-      "low": null,
-      "high": null
+      "low": 8192,
+      "high": 32768
     },
-    "unit": null,
+    "unit": "matureIndividuals",
     "trend": "unknown",
-    "confidence": null,
-    "asOf": null,
-    "notes": "No Kruger census figure was found. The Birda SABAP2 Kruger checklist, consulted on 2 November 2026, lists 6,526 records, which are atlas records and not birds. BirdLife (2019) places the global population in the band 100,000–499,999 mature individuals and treats the global trend as decreasing. SABAP1 reported roadside densities for Namibia and Botswana, not for Kruger. No Kruger range is entered. The Kruger trend is unknown; the global decline is not treated as a park trend.",
+    "confidence": "low",
+    "asOf": 2001,
+    "notes": "Kemp et al. 2001 order-of-magnitude threshold 2^14=16384 mature individuals (non-breeding visitor); paper interval half–double → 8192–32768. Non-breeding Palearctic visitor; Kemp uses upper neighbouring threshold for visitors.",
     "sources": [
       {
-        "title": "Birds of Kruger National Park – a checklist",
-        "url": "https://birda.org/kruger-national-park-birding-checklist/",
-        "publisher": "Birda",
-        "year": 2026
-      },
-      {
-        "title": "European Roller species factsheet",
-        "url": "https://datazone.birdlife.org/species/factsheet/european-roller-coracias-garrulus",
-        "publisher": "BirdLife International",
-        "year": 2019
-      },
-      {
-        "title": "European Roller. The atlas of southern African birds",
-        "url": "https://sabap2.adu.org.za/docs/sabap1/446.pdf",
-        "publisher": "Avian Demography Unit",
-        "year": 1997
-      },
-      {
-        "title": "Birds checklist – Kruger National Park",
-        "url": "https://www.sanparks.org/parks/kruger/explore/fauna-flora/birds/checklist",
-        "publisher": "SANParks",
-        "year": null
+        "title": "Kemp A.C., Herholdt J.J., Whyte I. & Harrison J. (2001). Birds of the two largest national parks in South Africa: a method to generate estimates of population size for all species and assess their conservation ecology. S. Afr. J. Sci. 97: 393–403.",
+        "url": "https://journals.co.za/doi/pdf/10.10520/EJC97367",
+        "publisher": "South African Journal of Science",
+        "year": 2001
       }
-    ]
+    ],
+    "kemp": {
+      "paperName": "European Roller",
+      "threshold": 16384,
+      "thresholdExponent": 14,
+      "status": "NB"
+    },
+    "tierApplied": "D"
   },
   "variants": [
     {

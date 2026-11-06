@@ -58,11 +58,15 @@
       }
     }
   ],
-  "iconicSpecies": [],
+  "iconicSpecies": [
+    "crithagra-gularis",
+    "crithagra-atrogularis",
+    "crithagra-sulphurata"
+  ],
   "population": {
-    "low": null,
-    "high": null,
-    "speciesCounted": 0,
+    "low": 580,
+    "high": 2320,
+    "speciesCounted": 5,
     "speciesTotal": 6,
     "complete": false
   }

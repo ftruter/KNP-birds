@@ -329,11 +329,15 @@
       }
     }
   ],
-  "iconicSpecies": [],
+  "iconicSpecies": [
+    "elanus-caeruleus",
+    "hieraaetus-wahlbergi",
+    "micronisus-gabar"
+  ],
   "population": {
-    "low": null,
-    "high": null,
-    "speciesCounted": 0,
+    "low": 12754,
+    "high": 51016,
+    "speciesCounted": 36,
     "speciesTotal": 40,
     "complete": false
   }

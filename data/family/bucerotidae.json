@@ -50,11 +50,15 @@
       }
     }
   ],
-  "iconicSpecies": [],
+  "iconicSpecies": [
+    "tockus-leucomelas",
+    "lophoceros-nasutus",
+    "bycanistes-bucinator"
+  ],
   "population": {
-    "low": null,
-    "high": null,
-    "speciesCounted": 0,
+    "low": 49536,
+    "high": 198144,
+    "speciesCounted": 4,
     "speciesTotal": 5,
     "complete": false
   }

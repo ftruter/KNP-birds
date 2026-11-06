@@ -82,12 +82,16 @@
       }
     }
   ],
-  "iconicSpecies": [],
+  "iconicSpecies": [
+    "halcyon-albiventris",
+    "halcyon-chelicuti",
+    "halcyon-senegalensis"
+  ],
   "population": {
-    "low": null,
-    "high": null,
-    "speciesCounted": 0,
+    "low": 30592,
+    "high": 122368,
+    "speciesCounted": 9,
     "speciesTotal": 9,
-    "complete": false
+    "complete": true
   }
 }

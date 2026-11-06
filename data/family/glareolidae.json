@@ -50,11 +50,15 @@
       }
     }
   ],
-  "iconicSpecies": [],
+  "iconicSpecies": [
+    "rhinoptilus-chalcopterus",
+    "cursorius-temminckii",
+    "glareola-pratincola"
+  ],
   "population": {
-    "low": null,
-    "high": null,
-    "speciesCounted": 0,
+    "low": 2576,
+    "high": 10304,
+    "speciesCounted": 4,
     "speciesTotal": 5,
     "complete": false
   }

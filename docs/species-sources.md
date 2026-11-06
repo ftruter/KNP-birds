@@ -2,7 +2,7 @@
 
 **Date:** 2026-11-02 (Africa/Johannesburg)  
 **Deliverable:** `data/index/species.json`  
-**Scope:** Bird species that regularly occur in Kruger National Park (and Marloth Park / south of the Crocodile River): residents, regular migrants, and regular visitors. Rare and accidental vagrants are excluded. Population figures are `null` for every species (no estimate has been entered yet).
+**Scope:** Bird species that regularly occur in Kruger National Park (and Marloth Park / south of the Crocodile River): residents, regular migrants, and regular visitors. Rare and accidental vagrants are excluded. Population figures are cited separately in [population-sources.md](population-sources.md). This note records how the species list was chosen. At the time of that list, every `population` value was still `null`.
 
 The index is a keyed dictionary (scientific name → `{ en, af, population }`), keys sorted alphabetically, 2-space indent. It matches the species index shape in [ftruter/KNP-birds](https://github.com/ftruter/KNP-birds). `family` is not stored on the index. It lives on each species document, as a family slug. `population` is `null` here, not `0`. The families index uses `0` for an unknown total. A species index entry stays `null` until an estimate exists.
 
@@ -14,7 +14,7 @@ The index is a keyed dictionary (scientific name → `{ en, af, population }`), 
 - **Species whose family is not in the 86:** 0 — none (would have been flagged, not added)
 - **Null Afrikaans names:** 0
 - **Duplicate English names:** 0 — none
-- **`population`:** all `null` (placeholder for later occupancy work)
+- **`population`:** null on this list when it was first written. Kemp et al. 2001 figures now live on the species documents. See [population-sources.md](population-sources.md).
 
 ## Sources
 
@@ -318,5 +318,5 @@ Sum of per-family counts = 493 (matches total).
 - Keys sorted A–Z by scientific name
 - Every species family (held beside the index while the list was built, and later on the species document) is one of the 86 keys in `data/index/families.json`
 - No duplicate English names
-- All `af` non-null; all `population` null
+- All `af` non-null. Population values are no longer all null; see [population-sources.md](population-sources.md).
 

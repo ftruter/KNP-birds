@@ -50,11 +50,15 @@
       }
     }
   ],
-  "iconicSpecies": [],
+  "iconicSpecies": [
+    "pycnonotus-barbatus",
+    "andropadus-importunus",
+    "chlorocichla-flaviventris"
+  ],
   "population": {
-    "low": null,
-    "high": null,
-    "speciesCounted": 0,
+    "low": 147456,
+    "high": 589824,
+    "speciesCounted": 4,
     "speciesTotal": 5,
     "complete": false
   }

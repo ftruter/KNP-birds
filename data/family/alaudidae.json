@@ -82,11 +82,15 @@
       }
     }
   ],
-  "iconicSpecies": [],
+  "iconicSpecies": [
+    "calendulauda-sabota",
+    "mirafra-passerina",
+    "amirafra-rufocinnamomea"
+  ],
   "population": {
-    "low": null,
-    "high": null,
-    "speciesCounted": 0,
+    "low": 342784,
+    "high": 1371136,
+    "speciesCounted": 8,
     "speciesTotal": 9,
     "complete": false
   }

@@ -114,11 +114,15 @@
       }
     }
   ],
-  "iconicSpecies": [],
+  "iconicSpecies": [
+    "alopochen-aegyptiaca",
+    "dendrocygna-viduata",
+    "sarkidiornis-melanotos"
+  ],
   "population": {
-    "low": null,
-    "high": null,
-    "speciesCounted": 0,
+    "low": 3300,
+    "high": 13200,
+    "speciesCounted": 12,
     "speciesTotal": 13,
     "complete": false
   }

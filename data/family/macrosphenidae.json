@@ -25,11 +25,13 @@
       }
     }
   ],
-  "iconicSpecies": [],
+  "iconicSpecies": [
+    "sylvietta-rufescens"
+  ],
   "population": {
-    "low": null,
-    "high": null,
-    "speciesCounted": 0,
+    "low": 131072,
+    "high": 524288,
+    "speciesCounted": 1,
     "speciesTotal": 2,
     "complete": false
   }

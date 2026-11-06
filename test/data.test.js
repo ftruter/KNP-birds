@@ -94,23 +94,39 @@ test('every data file matches the schema, slugs, and colour vocabulary', async (
       (token) => !names.has(token),
     )
     assert.deepEqual(unknown, [], `${slug} uses colours outside the vocabulary`)
-    assert.equal(species.population.estimate.low, null)
-    assert.equal(species.population.estimate.high, null)
-    assert.equal(species.population.trend, 'unknown')
-    assert.equal(species.population.notes, 'to be researched')
-    assert.deepEqual(species.population.sources, [])
-    assert.equal(species.population.unit, null)
-    assert.equal(species.population.asOf, null)
     assert.equal(species.images.length, 0)
   }
+  const fishEagle = await readJson('data/species/icthyophaga-vocifer.json')
+  assert.equal(fishEagle.population.unit, 'matureIndividuals')
+  assert.equal(fishEagle.population.estimate.low, 64)
+  assert.equal(fishEagle.population.estimate.high, 256)
+  assert.equal(fishEagle.population.tierApplied, 'D')
+  assert.equal(fishEagle.calls.length, 1)
+  assert.equal(fishEagle.variants.length, 2)
+  const hornbill = await readJson('data/species/bucorvus-leadbeateri.json')
+  assert.equal(hornbill.sampleData, true)
+  assert.equal(hornbill.population.unit, 'groups')
+  assert.equal(hornbill.population.estimate.low, 180)
+  assert.equal(hornbill.population.estimate.high, 180)
+  assert.equal(hornbill.population.tierApplied, 'A')
+  assert.equal(hornbill.population.kempBaseline.estimate.low, 128)
+  assert.equal(hornbill.population.kempBaseline.estimate.high, 512)
+  assert.equal(hornbill.calls.length, 1)
+  assert.equal(hornbill.variants.length, 3)
   const roller = await readJson('data/species/coracias-caudatus.json')
   assert.equal(roller.sampleData, false)
-  assert.equal(roller.population.estimate.low, null)
-  assert.equal(roller.population.estimate.high, null)
+  assert.equal(roller.population.estimate.low, 8192)
+  assert.equal(roller.population.estimate.high, 32768)
+  assert.equal(roller.population.unit, 'matureIndividuals')
   assert.equal(roller.population.trend, 'unknown')
+  assert.equal(roller.population.confidence, 'low')
+  assert.equal(roller.population.asOf, 2001)
+  assert.equal(roller.population.tierApplied, 'D')
+  assert.equal(roller.population.kemp.threshold, 16384)
   assert.ok(roller.population.sources.length > 0)
-  assert.ok(roller.sources.length > 0)
-  assert.ok(roller.images.length > 0)
+  assert.equal(roller.sources.length, 8)
+  assert.equal(roller.images.length, 4)
+  assert.equal(roller.calls.length, 2)
 })
 
 test('derived family and index fields match the species files', async () => {
@@ -131,13 +147,11 @@ test('derived family and index fields match the species files', async () => {
   assert.deepEqual(committedFamilies, derived.familiesIndex)
   assert.deepEqual(await readJson('data/index/credits.json'), derived.credits)
   assert.equal(Object.keys(committedFamilies).length, 86)
-  for (const value of Object.values(committedFamilies))
-    assert.equal(value.population, 0)
-  assert.deepEqual(committedFamilies.Accipitridae, {
-    en: 'Hawks, eagles and kites',
-    af: null,
-    population: 0,
-  })
+  assert.equal(committedFamilies.Accipitridae.en, 'Hawks, eagles and kites')
+  assert.equal(committedFamilies.Accipitridae.af, null)
+  assert.ok(committedFamilies.Accipitridae.population > 0)
+  assert.equal(committedFamilies.Bucorvidae.population, 0)
+  assert.equal(committedFamilies.Coraciidae.population, 47400)
   assert.equal(committedFamilies.Bucorvidae.af, 'Bromvoëls')
   assert.equal(committedFamilies.Coraciidae.af, 'Troupante')
   assert.deepEqual(
@@ -155,24 +169,59 @@ test('derived family and index fields match the species files', async () => {
     ],
   )
   for (const family of derived.families) {
-    assert.equal(family.population.complete, false)
-    assert.equal(family.population.speciesCounted, 0)
-    assert.equal(family.population.low, null)
-    assert.equal(family.population.high, null)
-    assert.deepEqual(family.iconicSpecies, [])
+    const counted = family.population.speciesCounted
+    const total = family.population.speciesTotal
+    assert.equal(family.population.complete, total > 0 && counted === total)
     assert.ok(family.species.length >= 1, family.slug)
+    if (counted === 0) {
+      assert.equal(family.population.low, null)
+      assert.equal(family.population.high, null)
+      assert.deepEqual(family.iconicSpecies, [])
+    }
   }
+  const rollers = derived.families.find(
+    (family) => family.slug === 'coraciidae',
+  )
+  assert.deepEqual(rollers.population, {
+    low: 18960,
+    high: 75840,
+    speciesCounted: 5,
+    speciesTotal: 5,
+    complete: true,
+  })
+  assert.deepEqual(rollers.iconicSpecies, [
+    'coracias-caudatus',
+    'coracias-garrulus',
+    'coracias-naevius',
+  ])
+  const hornbills = derived.families.find(
+    (family) => family.slug === 'bucorvidae',
+  )
+  assert.equal(hornbills.population.speciesCounted, 0)
+  assert.equal(hornbills.population.complete, false)
+  const hawks = derived.families.find(
+    (family) => family.slug === 'accipitridae',
+  )
+  assert.equal(hawks.population.speciesCounted, 36)
+  assert.equal(hawks.population.speciesTotal, 40)
+  assert.equal(hawks.population.complete, false)
+  assert.equal(hawks.iconicSpecies.includes('gyps-africanus'), false)
+  assert.equal(hawks.iconicSpecies.includes('polemaetus-bellicosus'), false)
   const speciesKeys = Object.keys(derived.speciesIndex)
   assert.equal(speciesKeys.length, 493)
-  assert.equal(derived.speciesIndex['Coracias caudatus'].population, null)
+  assert.equal(derived.speciesIndex['Coracias caudatus'].population, 20480)
+  assert.equal(derived.speciesIndex['Bucorvus leadbeateri'].population, null)
   assert.equal(
     derived.speciesIndex['Icthyophaga vocifer'].en,
     'African Fish Eagle',
   )
+  assert.equal(derived.speciesIndex['Icthyophaga vocifer'].population, 160)
   assert.equal(derived.speciesIndex['Haliaeetus vocifer'], undefined)
   assert.equal(derived.speciesIndex['Coraciidae'], undefined)
-  for (const value of Object.values(derived.speciesIndex))
-    assert.equal(value.population, null)
+  const unknownIndex = Object.values(derived.speciesIndex).filter(
+    (value) => value.population == null,
+  )
+  assert.equal(unknownIndex.length, 44)
 })
 
 test('the derived species index matches the committed index and every species family exists', async () => {
@@ -211,7 +260,7 @@ test('seed --write reproduces the committed families index and keeps unknown spe
       derived.familiesIndex,
       await readJson('data/index/families.json'),
     )
-    assert.equal(derived.speciesIndex['Coracias caudatus'].population, null)
+    assert.equal(derived.speciesIndex['Coracias caudatus'].population, 20480)
     assert.deepEqual(
       derived.speciesIndex,
       await readJson('data/index/species.json'),
@@ -237,7 +286,7 @@ test('a known species midpoint is kept and an uncounted family stays at 0', () =
         family: 'coraciidae',
         population: {
           estimate: { low: 10, high: 20 },
-          unit: 'individuals',
+          unit: 'matureIndividuals',
         },
       },
     ],
@@ -264,34 +313,43 @@ test('a known species midpoint is kept and an uncounted family stays at 0', () =
   assert.equal(derived.speciesIndex['Coracias caudatus'].population, 15)
 })
 
-test('family totals count pairs as two individuals and stay incomplete while any species has no estimate', () => {
-  const pairs = {
-    population: { estimate: { low: 10, high: 12 }, unit: 'pairs' },
+test('family totals add only mature individuals and stay partial when a species is left out', () => {
+  const mature = {
+    population: {
+      estimate: { low: 8, high: 32 },
+      unit: 'matureIndividuals',
+    },
+  }
+  const groups = {
+    population: { estimate: { low: 180, high: 180 }, unit: 'groups' },
   }
   const breedingPairs = {
-    population: { estimate: { low: 3, high: 4 }, unit: 'breeding pairs' },
+    population: { estimate: { low: 25, high: 30 }, unit: 'breedingPairs' },
   }
-  const individuals = {
-    population: { estimate: { low: 5, high: 5 }, unit: 'individuals' },
+  const territories = {
+    population: { estimate: { low: 100, high: 100 }, unit: 'territories' },
   }
   const missing = {
     population: { estimate: { low: null, high: null }, unit: null },
   }
-  assert.deepEqual(familyPopulation([pairs, individuals, missing]), {
-    low: 25,
-    high: 29,
+  assert.deepEqual(
+    familyPopulation([mature, groups, breedingPairs, territories, missing]),
+    {
+      low: 8,
+      high: 32,
+      speciesCounted: 1,
+      speciesTotal: 5,
+      complete: false,
+    },
+  )
+  assert.deepEqual(familyPopulation([mature, mature]), {
+    low: 16,
+    high: 64,
     speciesCounted: 2,
-    speciesTotal: 3,
-    complete: false,
-  })
-  assert.deepEqual(familyPopulation([breedingPairs]), {
-    low: 6,
-    high: 8,
-    speciesCounted: 1,
-    speciesTotal: 1,
+    speciesTotal: 2,
     complete: true,
   })
-  assert.deepEqual(familyPopulation([missing]), {
+  assert.deepEqual(familyPopulation([groups]), {
     low: null,
     high: null,
     speciesCounted: 0,
@@ -307,10 +365,12 @@ test('iconic species are the top three by population and stay empty when none is
     population: { estimate: { low, high }, unit },
   })
   const ranked = iconicSpecies([
-    bird('few', 'Zzz zzz', 1, 1, 'individuals'),
-    bird('many', 'Mmm mmm', 10, 12, 'pairs'),
-    bird('mid', 'Qqq qqq', 4, 4, 'individuals'),
-    bird('also', 'Rrr rrr', 3, 3, 'individuals'),
+    bird('few', 'Zzz zzz', 1, 1, 'matureIndividuals'),
+    bird('many', 'Mmm mmm', 10, 12, 'matureIndividuals'),
+    bird('mid', 'Qqq qqq', 4, 4, 'matureIndividuals'),
+    bird('also', 'Rrr rrr', 3, 3, 'matureIndividuals'),
+    bird('groups', 'Aaa groups', 1000, 1000, 'groups'),
+    bird('pairs', 'Bbb pairs', 1000, 1000, 'breedingPairs'),
     bird('none-b', 'Bbb bbb', null, null, null),
     bird('none-a', 'Aaa aaa', null, null, null),
   ])
@@ -452,8 +512,13 @@ test('credits follow images, recordings, and population sources', () => {
   assert.equal(wikipedia.licence, 'CC BY-SA 4.0')
   assert.equal(
     none.dataSources.filter((source) => source.licence == null).length,
-    5,
+    6,
   )
+  const kemp = none.dataSources.find((source) => source.name.startsWith('Kemp'))
+  assert.ok(kemp)
+  assert.match(kemp.usedFor, /T\/2 to 2T/)
+  assert.equal(kemp.licence, null)
+  assert.equal(kemp.links[0].label, 'Sabinet archive PDF')
 })
 
 test('family lists and indexes agree', async () => {
@@ -467,4 +532,109 @@ test('family lists and indexes agree', async () => {
     .sort()
   assert.deepEqual(speciesSlugs, fromFamilies)
   assert.equal(families.length, 86)
+})
+
+test('Kemp estimates cover mapped species and leave ambiguous rows unsourced', async () => {
+  const { species } = await readCatalog()
+  const unsourcedNote =
+    'No sourced Kruger estimate is currently available; taxonomy or later records require separate research.'
+  const withFigure = species.filter(
+    (bird) => bird.population.estimate.low != null,
+  )
+  const without = species.filter((bird) => bird.population.estimate.low == null)
+  assert.equal(species.length, 493)
+  assert.equal(withFigure.length, 453)
+  assert.equal(without.length, 40)
+  const tierA = withFigure.filter((bird) => bird.population.tierApplied === 'A')
+  const tierD = withFigure.filter((bird) => bird.population.tierApplied === 'D')
+  assert.equal(tierA.length, 4)
+  assert.equal(tierD.length, 449)
+  assert.deepEqual(tierA.map((bird) => bird.scientificName).sort(), [
+    'Bucorvus leadbeateri',
+    'Ephippiorhynchus senegalensis',
+    'Gyps africanus',
+    'Polemaetus bellicosus',
+  ])
+  for (const bird of tierA) {
+    const baseline = bird.population.kempBaseline
+    const kemp = bird.population.kemp
+    assert.equal(baseline.unit, 'matureIndividuals')
+    assert.equal(baseline.estimate.low, kemp.threshold / 2)
+    assert.equal(baseline.estimate.high, kemp.threshold * 2)
+    assert.equal(2 ** kemp.thresholdExponent, kemp.threshold)
+    assert.notEqual(bird.population.unit, 'matureIndividuals')
+    assert.ok(bird.population.sources.some((source) => source.year === 2001))
+    assert.ok(
+      bird.population.sources.some(
+        (source) => source.year !== 2001 || source.year == null,
+      ),
+    )
+  }
+  for (const bird of tierD) {
+    const kemp = bird.population.kemp
+    assert.equal(bird.population.unit, 'matureIndividuals', bird.slug)
+    assert.equal(bird.population.confidence, 'low', bird.slug)
+    assert.equal(bird.population.asOf, 2001, bird.slug)
+    assert.equal(bird.population.estimate.low, kemp.threshold / 2, bird.slug)
+    assert.equal(bird.population.estimate.high, kemp.threshold * 2, bird.slug)
+    assert.equal(2 ** kemp.thresholdExponent, kemp.threshold, bird.slug)
+    assert.equal(bird.population.kempBaseline, undefined, bird.slug)
+    assert.equal(bird.population.sources.length, 1, bird.slug)
+    assert.match(bird.population.sources[0].title, /Kemp A\.C\./)
+    assert.match(bird.population.notes, /half–double/)
+  }
+  for (const bird of without) {
+    assert.equal(bird.population.estimate.high, null, bird.slug)
+    assert.equal(bird.population.unit, null, bird.slug)
+    assert.equal(bird.population.notes, unsourcedNote, bird.slug)
+    assert.deepEqual(bird.population.sources, [], bird.slug)
+    assert.equal(bird.population.kemp, undefined, bird.slug)
+    assert.equal(bird.population.tierApplied, undefined, bird.slug)
+  }
+  const marsh = species.find((bird) => bird.slug === 'acrocephalus-palustris')
+  assert.equal(marsh.population.kemp.paperName, 'European Marsh Warbler')
+  assert.equal(marsh.population.kemp.threshold, 1024)
+  assert.match(marsh.population.notes, /different taxon and is not used/)
+  const harrier = species.find((bird) => bird.slug === 'circus-ranivorus')
+  assert.equal(harrier.population.kemp.paperName, 'African Marsh Harrier')
+  assert.equal(harrier.population.kemp.threshold, 4)
+  const kite = species.find((bird) => bird.slug === 'milvus-migrans')
+  assert.equal(kite.population.kemp.paperName, 'Black Kite')
+  assert.equal(kite.population.estimate.low, 128)
+  for (const slug of [
+    'tockus-rufirostris',
+    'anthoscopus-caroli',
+    'buteo-buteo',
+    'ardea-brachyrhyncha',
+  ]) {
+    const bird = species.find((item) => item.slug === slug)
+    assert.equal(bird.population.estimate.low, null, slug)
+  }
+  const media = {
+    'coracias-caudatus': [4, 2],
+    'coracias-garrulus': [2, 2],
+    'coracias-naevius': [3, 2],
+    'coracias-spatulatus': [2, 1],
+    'eurystomus-glaucurus': [2, 1],
+  }
+  for (const [slug, counts] of Object.entries(media)) {
+    const bird = species.find((item) => item.slug === slug)
+    assert.equal(bird.sampleData, false, slug)
+    assert.equal(bird.images.length, counts[0], slug)
+    assert.equal(bird.calls.length, counts[1], slug)
+    assert.ok(bird.sources.length > 0, slug)
+  }
+  const stork = species.find(
+    (bird) => bird.slug === 'ephippiorhynchus-senegalensis',
+  )
+  assert.equal(stork.population.unit, 'breedingPairs')
+  assert.deepEqual(stork.population.estimate, { low: 25, high: 30 })
+  const martial = species.find((bird) => bird.slug === 'polemaetus-bellicosus')
+  assert.equal(martial.population.unit, 'territories')
+  assert.deepEqual(martial.population.estimate, { low: 100, high: 100 })
+  const vulture = species.find((bird) => bird.slug === 'gyps-africanus')
+  assert.deepEqual(vulture.population.estimate, { low: 742, high: 1066 })
+  const lappet = species.find((bird) => bird.slug === 'torgos-tracheliotos')
+  assert.equal(lappet.population.tierApplied, 'D')
+  assert.equal(lappet.population.kemp.threshold, 64)
 })

@@ -122,25 +122,28 @@ Media licences are separate from the Apache-2.0 licence of the code. CC BY, CC B
 
 ### Population
 
-There is no formal bird census for Kruger. `population` is an approximate estimate, and the page says so.
+`population` is an approximate Kruger estimate. The method, the Kemp et al. 2001 citation, and the half-to-double interval are written once in [`population-sources.md`](population-sources.md).
 
 | Field | Meaning |
 | --- | --- |
-| `estimate.low`, `estimate.high` | Integers, or `null`. Both null means no number has been entered. |
-| `unit` | `individuals`, `pairs`, `breeding pairs`, or `null` when there is no estimate. |
+| `estimate.low`, `estimate.high` | Integers, or `null`. Both null means no sourced figure has been entered. |
+| `unit` | `matureIndividuals`, `groups`, `breedingPairs`, `territories`, `individuals`, `pairs`, `breeding pairs`, or `null` when there is no estimate. |
 | `trend` | `increasing`, `stable`, `decreasing`, or `unknown`. |
 | `confidence` | `low`, `medium`, `high`, or `null`. |
 | `asOf` | Year of the estimate, or `null`. |
-| `notes` | Plain text. |
+| `notes` | Plain text. One short sentence for a species with no sourced figure. |
 | `sources` | Citations: `title`, `url`, `publisher`, `year`. `url`, `publisher`, and `year` may be null. |
+| `kemp` | Optional. The Kemp et al. 2001 row: `paperName`, `threshold` (T = 2^n), `thresholdExponent`, and `status` (`RB`, `VB`, or `NB`). |
+| `kempBaseline` | Optional. The Kemp mature-individual range kept when a later survey replaces `estimate`. |
+| `tierApplied` | Optional. `D` for a Kemp threshold, `A` when a park survey replaces it. |
 
-The page renders a range (`low–high`, `at least low`, or `up to high`) with the label **Approximate estimate**, then the trend, the note, and the sources. Unpublished species set `estimate` to null, `trend` to `unknown`, and `notes` to `to be researched`. A researched species still uses null numbers when no census figure can be cited. It does not invent a count. The note says so, and `sources` cites what was checked.
+The page renders a range (`low–high`, `at least low`, or `up to high`) with a readable unit, the label **Approximate estimate**, then the trend, the note, a Kemp baseline line when `kempBaseline` is set, and the sources. A species with no sourced figure keeps both bounds null. It does not invent a count. The note says so.
 
 ### Unpublished species
 
-A stub has the scientific name, English and Afrikaans names, the family slug, `sampleData: true`, and a population object with null figures. `variants`, `viewNotes`, `calls`, and `images` are empty arrays. `status` and `size` are omitted, because a placeholder resident status or a made-up length would be a false claim. The JSON Schema used to require `status`, `size`, and at least one variant. Those three constraints are relaxed so an unpublished species still validates. Calls, view notes, and images were already allowed to be empty.
+A stub has the scientific name, English and Afrikaans names, the family slug, and `sampleData: true`. `variants`, `viewNotes`, `calls`, and `images` are empty arrays. `status` and `size` are omitted, because a placeholder resident status or a made-up length would be a false claim. `population` may still carry a cited estimate. The JSON Schema used to require `status`, `size`, and at least one variant. Those three constraints are relaxed so an unpublished species still validates. Calls, view notes, and images were already allowed to be empty.
 
-The page says "The details for this species have not been published yet." It does not render the photograph block or the six comparison sections, which would otherwise be empty or would say "No visible difference" with nothing recorded. It omits the Afrikaans line when `commonNames.af` is absent. The population section still explains that no numeric estimate has been entered.
+The page says "The details for this species have not been published yet." It does not render the photograph block or the six comparison sections, which would otherwise be empty or would say "No visible difference" with nothing recorded. It omits the Afrikaans line when `commonNames.af` is absent. The population section still shows a cited estimate, or says that no numeric estimate has been entered.
 
 ## Family
 
@@ -148,22 +151,20 @@ The page says "The details for this species have not been published yet." It doe
 
 `species` is every species whose `family` slug matches, sorted by scientific name. Each item is `{ slug, scientificName, names: { en, af } }`. `names.af` is omitted when the species has no Afrikaans name. A family page can list them without reading every species document. The array may be empty when no species document uses that family. `iconicSpecies` is then empty too. The page says that no species from the family are listed, and it omits the Afrikaans line when `commonNames.af` is absent. It does not invent a name.
 
-`iconicSpecies` is an ordered list of up to three species slugs from that family, the ones with the highest population. Prevalence is the midpoint of `low` and `high` after converting to individuals (`pairs` and `breeding pairs` count as two). Species with no estimate are left out. When none of the species has an estimate, `iconicSpecies` is empty, including when the family has no published species yet. Ties are broken by scientific name, case-insensitive. The family page shows these species, and their photographs, before the rest of the list.
+`iconicSpecies` is an ordered list of up to three species slugs from that family, the ones with the highest mature-individual midpoint (`(low + high) / 2`). Only `unit: "matureIndividuals"` counts. Groups, breeding pairs, territories, and species with no figure are left out. When none of the species has that unit, `iconicSpecies` is empty. Ties are broken by scientific name, case-insensitive. The family page shows these species, and their photographs, before the rest of the list.
 
-`population` is an approximate total for the family:
+`population` is an approximate total for the family, in mature individuals:
 
 | Field | Meaning |
 | --- | --- |
-| `low`, `high` | Sum of the species estimates, or `null` when none of the species has an estimate. |
-| `speciesCounted` | How many species had both bounds and a unit. |
+| `low`, `high` | Sum of the species `matureIndividuals` bounds, or `null` when none of the species has that unit. |
+| `speciesCounted` | How many species had both bounds and `unit: "matureIndividuals"`. |
 | `speciesTotal` | How many species are embedded. |
-| `complete` | `true` only when every species had an estimate. Otherwise `false`. |
+| `complete` | `true` only when every species was counted. Otherwise `false`, including when a species uses another unit. |
 
-A species counts only when `estimate.low` and `estimate.high` are both integers and `unit` is set. `individuals` are added as they are. `pairs` and `breeding pairs` count as two individuals each. The family total is always in individuals.
+Other units are not converted and are not mixed into the sum. The page labels the total **Approximate total** and says how many species are included. When `complete` is false it says the total is incomplete. A family with no species uses null bounds, with `speciesTotal` 0.
 
-The page labels it **Approximate total** and says how many species are included. When `complete` is false it says the total is incomplete. Every family in the repository has null species estimates, so the totals are null, `speciesCounted` is 0, and `complete` is false. A family with no species uses the same null bounds, with `speciesTotal` 0.
-
-`node scripts/seed.mjs --write` rewrites these fields, and the indexes below, from the species files. The families index stores an unknown total as `0`, not `null`, so the command reproduces `data/index/families.json`. Species index entries stay `null` until a species estimate exists.
+`node scripts/seed.mjs --write` rewrites these fields, and the indexes below, from the species files. The families index stores an unknown total as `0`, not `null`. A species index entry is the mature-individual midpoint, or `null` when that unit is absent.
 
 ## Indexes
 
@@ -173,7 +174,7 @@ Both indexes are generated by the same script. Each file is a JSON object and no
 { "en": "Lilac-breasted Roller", "af": "Gewone Troupant", "population": null }
 ```
 
-`en` is the English name. `af` is the Afrikaans name, or `null`. `population` is one integer. For a species it is the midpoint of its estimate in individuals, or `null` when that estimate is unknown. For a family it is the midpoint of the family total, or `0` when no species estimate is known yet. The families index page treats that `0` as no numeric total, matching a family document whose bounds are null. There are no other fields. A page that needs a slug lowercases the key and turns spaces into hyphens.
+`en` is the English name. `af` is the Afrikaans name, or `null`. `population` is one integer. For a species it is the midpoint of its mature-individual estimate, or `null` when that unit is absent. For a family it is the midpoint of the family total, or `0` when no species in the family has a mature-individual estimate. The families index page treats that `0` as no numeric total, matching a family document whose bounds are null. There are no other fields. A page that needs a slug lowercases the key and turns spaces into hyphens.
 
 The sitemap is built from these two documents, plus the home page, `/vocab/colours`, and `/credits`.
 

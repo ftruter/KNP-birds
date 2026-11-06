@@ -26,11 +26,13 @@
       }
     }
   ],
-  "iconicSpecies": [],
+  "iconicSpecies": [
+    "dicrurus-adsimilis"
+  ],
   "population": {
-    "low": null,
-    "high": null,
-    "speciesCounted": 0,
+    "low": 65536,
+    "high": 262144,
+    "speciesCounted": 1,
     "speciesTotal": 2,
     "complete": false
   }

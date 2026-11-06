@@ -28,6 +28,7 @@ import { objectExists, objectHttpResponse } from './objects.js'
 import { jsonBody, pageResponse, redirectResponse } from './respond.js'
 import { css } from './style.js'
 import { colourMapFromKv, readDocument } from './store.js'
+import { HOME_POPULATION_INTRO } from './guide.js'
 import { llmsTxt, robotsTxt, sitemapXml } from './static.js'
 
 export const renderRoute = async (request, env, route) => {
@@ -85,8 +86,7 @@ const renderHome = async (env, origin, format) => {
         sampleData: false,
         species: species?.data ?? {},
         families: families?.data ?? {},
-        census:
-          'Population figures on species pages are approximate. Kruger has no formal bird census.',
+        census: HOME_POPULATION_INTRO,
       },
       origin,
       '/',

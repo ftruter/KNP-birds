@@ -202,11 +202,15 @@
       }
     }
   ],
-  "iconicSpecies": [],
+  "iconicSpecies": [
+    "cercotrichas-leucophrys",
+    "melaenornis-pammelaina",
+    "agricola-pallidus"
+  ],
   "population": {
-    "low": null,
-    "high": null,
-    "speciesCounted": 0,
+    "low": 113201,
+    "high": 452804,
+    "speciesCounted": 22,
     "speciesTotal": 24,
     "complete": false
   }

@@ -215,7 +215,17 @@
         "unit": {
           "anyOf": [
             { "type": "null" },
-            { "enum": ["individuals", "pairs", "breeding pairs"] }
+            {
+              "enum": [
+                "matureIndividuals",
+                "individuals",
+                "pairs",
+                "breeding pairs",
+                "breedingPairs",
+                "groups",
+                "territories"
+              ]
+            }
           ]
         },
         "trend": { "enum": ["increasing", "stable", "decreasing", "unknown"] },
@@ -250,7 +260,40 @@
               }
             }
           }
-        }
+        },
+        "kemp": { "$ref": "#/$defs/kempThreshold" },
+        "kempBaseline": { "$ref": "#/$defs/kempBaseline" },
+        "tierApplied": { "enum": ["A", "D"] }
+      }
+    },
+    "kempThreshold": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["paperName", "threshold", "thresholdExponent", "status"],
+      "properties": {
+        "paperName": { "type": "string", "minLength": 1 },
+        "threshold": { "type": "integer", "minimum": 1 },
+        "thresholdExponent": { "type": "integer", "minimum": 0, "maximum": 40 },
+        "status": { "enum": ["RB", "VB", "NB"] }
+      }
+    },
+    "kempBaseline": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["estimate", "unit", "asOf", "notes"],
+      "properties": {
+        "estimate": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["low", "high"],
+          "properties": {
+            "low": { "type": "integer", "minimum": 0 },
+            "high": { "type": "integer", "minimum": 0 }
+          }
+        },
+        "unit": { "const": "matureIndividuals" },
+        "asOf": { "type": "integer", "minimum": 1800, "maximum": 2100 },
+        "notes": { "type": "string", "minLength": 1 }
       }
     },
     "species": {

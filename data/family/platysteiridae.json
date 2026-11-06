@@ -34,12 +34,16 @@
       }
     }
   ],
-  "iconicSpecies": [],
+  "iconicSpecies": [
+    "batis-molitor",
+    "platysteira-peltata",
+    "batis-capensis"
+  ],
   "population": {
-    "low": null,
-    "high": null,
-    "speciesCounted": 0,
+    "low": 131648,
+    "high": 526592,
+    "speciesCounted": 3,
     "speciesTotal": 3,
-    "complete": false
+    "complete": true
   }
 }

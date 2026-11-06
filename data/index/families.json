@@ -2,47 +2,47 @@
   "Accipitridae": {
     "en": "Hawks, eagles and kites",
     "af": null,
-    "population": 0
+    "population": 31885
   },
   "Acrocephalidae": {
     "en": "Reed warblers and allies",
     "af": null,
-    "population": 0
+    "population": 16800
   },
   "Alaudidae": {
     "en": "Larks",
     "af": "Lewerikke",
-    "population": 0
+    "population": 856960
   },
   "Alcedinidae": {
     "en": "Kingfishers",
     "af": "Visvangers",
-    "population": 0
+    "population": 76480
   },
   "Anatidae": {
     "en": "Ducks, geese and swans",
     "af": "Eende",
-    "population": 0
+    "population": 8250
   },
   "Anhingidae": {
     "en": "Darters",
     "af": "Slanghalsvoël",
-    "population": 0
+    "population": 160
   },
   "Apodidae": {
     "en": "Swifts",
     "af": "Windswaels",
-    "population": 0
+    "population": 12800
   },
   "Ardeidae": {
     "en": "Herons, egrets and bitterns",
     "af": "Reiers",
-    "population": 0
+    "population": 4540
   },
   "Bucerotidae": {
     "en": "Hornbills",
     "af": "Neushoringvoëls",
-    "population": 0
+    "population": 123840
   },
   "Bucorvidae": {
     "en": "Ground-hornbills",
@@ -52,287 +52,287 @@
   "Buphagidae": {
     "en": "Oxpeckers",
     "af": "Renostervoëls",
-    "population": 0
+    "population": 41600
   },
   "Burhinidae": {
     "en": "Thick-knees",
     "af": "Dikkoppe",
-    "population": 0
+    "population": 12800
   },
   "Campephagidae": {
     "en": "Cuckooshrikes",
     "af": "Katakoeroes",
-    "population": 0
+    "population": 10285
   },
   "Caprimulgidae": {
     "en": "Nightjars",
     "af": "Naguile",
-    "population": 0
+    "population": 169000
   },
   "Charadriidae": {
     "en": "Plovers and lapwings",
     "af": "Strandkiewiete",
-    "population": 0
+    "population": 27610
   },
   "Ciconiidae": {
     "en": "Storks",
     "af": "Ooievaars",
-    "population": 0
+    "population": 6605
   },
   "Cisticolidae": {
     "en": "Cisticolas and allies",
     "af": "Klopklopies",
-    "population": 0
+    "population": 914725
   },
   "Coliidae": {
     "en": "Mousebirds",
     "af": "Muisvoëls",
-    "population": 0
+    "population": 40960
   },
   "Columbidae": {
     "en": "Pigeons and doves",
     "af": "Duiwe",
-    "population": 0
+    "population": 489055
   },
   "Coraciidae": {
     "en": "Rollers",
     "af": "Troupante",
-    "population": 0
+    "population": 47400
   },
   "Corvidae": {
     "en": "Crows and ravens",
     "af": "Kraaie",
-    "population": 0
+    "population": 28
   },
   "Cuculidae": {
     "en": "Cuckoos",
     "af": "Koekoeke",
-    "population": 0
+    "population": 147253
   },
   "Dicruridae": {
     "en": "Drongos",
     "af": "Byvanger",
-    "population": 0
+    "population": 163840
   },
   "Emberizidae": {
     "en": "Buntings",
     "af": "Streepkoppies",
-    "population": 0
+    "population": 102480
   },
   "Estrildidae": {
     "en": "Waxbills and allies",
     "af": "Sysies",
-    "population": 0
+    "population": 896440
   },
   "Falconidae": {
     "en": "Falcons and kestrels",
     "af": "Valke",
-    "population": 0
+    "population": 6695
   },
   "Fringillidae": {
     "en": "Finches and canaries",
     "af": "Kanaries",
-    "population": 0
+    "population": 1450
   },
   "Glareolidae": {
     "en": "Coursers and pratincoles",
     "af": "Drawwertjies",
-    "population": 0
+    "population": 6440
   },
   "Heliornithidae": {
     "en": "Finfoots",
     "af": "Watertrapper",
-    "population": 0
+    "population": 320
   },
   "Hirundinidae": {
     "en": "Swallows and martins",
     "af": "Swaels",
-    "population": 0
+    "population": 176803
   },
   "Indicatoridae": {
     "en": "Honeyguides",
     "af": "Heuningwysers",
-    "population": 0
+    "population": 21800
   },
   "Jacanidae": {
     "en": "Jacanas",
     "af": "Langtoon",
-    "population": 0
+    "population": 2580
   },
   "Laniidae": {
     "en": "Shrikes",
     "af": "Laksmanne",
-    "population": 0
+    "population": 117765
   },
   "Laridae": {
     "en": "Gulls, terns and skimmers",
     "af": "Meeue",
-    "population": 0
+    "population": 55
   },
   "Leiothrichidae": {
     "en": "Laughingthrushes and babblers",
     "af": "Katlagters",
-    "population": 0
+    "population": 81920
   },
   "Locustellidae": {
     "en": "Grassbirds and allies",
     "af": null,
-    "population": 0
+    "population": 2720
   },
   "Lybiidae": {
     "en": "African barbets",
     "af": "Houtkappers",
-    "population": 0
+    "population": 73000
   },
   "Macrosphenidae": {
     "en": "African warblers",
     "af": null,
-    "population": 0
+    "population": 327680
   },
   "Malaconotidae": {
     "en": "Bushshrikes",
     "af": "Boslaksmanne",
-    "population": 0
+    "population": 568523
   },
   "Meropidae": {
     "en": "Bee-eaters",
     "af": "Byvreters",
-    "population": 0
+    "population": 28205
   },
   "Monarchidae": {
     "en": "Monarchs",
     "af": null,
-    "population": 0
+    "population": 20490
   },
   "Motacillidae": {
     "en": "Wagtails and pipits",
     "af": "Kwikkies",
-    "population": 0
+    "population": 144030
   },
   "Muscicapidae": {
     "en": "Chats and Old World flycatchers",
     "af": "Vlieëvangers",
-    "population": 0
+    "population": 283003
   },
   "Musophagidae": {
     "en": "Turacos",
     "af": "Loeries",
-    "population": 0
+    "population": 81920
   },
   "Nectariniidae": {
     "en": "Sunbirds",
     "af": "Suikerbekkies",
-    "population": 0
+    "population": 144660
   },
   "Nicatoridae": {
     "en": "Nicators",
     "af": null,
-    "population": 0
+    "population": 1280
   },
   "Numididae": {
     "en": "Guineafowl",
     "af": "Tarentaal",
-    "population": 0
+    "population": 83200
   },
   "Oriolidae": {
     "en": "Orioles",
     "af": "Wielewale",
-    "population": 0
+    "population": 46400
   },
   "Otididae": {
     "en": "Bustards",
     "af": "Korhane",
-    "population": 0
+    "population": 31040
   },
   "Pandionidae": {
     "en": "Ospreys",
     "af": "Visvalk",
-    "population": 0
+    "population": 5
   },
   "Paridae": {
     "en": "Tits",
     "af": "Mese",
-    "population": 0
+    "population": 20480
   },
   "Passeridae": {
     "en": "Old World sparrows",
     "af": "Mossies",
-    "population": 0
+    "population": 194560
   },
   "Pelecanidae": {
     "en": "Pelicans",
     "af": "Pelikane",
-    "population": 0
+    "population": 13
   },
   "Phalacrocoracidae": {
     "en": "Cormorants",
     "af": "Duikers",
-    "population": 0
+    "population": 240
   },
   "Phasianidae": {
     "en": "Francolins, spurfowl and quails",
     "af": "Patryse",
-    "population": 0
+    "population": 424963
   },
   "Phoenicopteridae": {
     "en": "Flamingos",
     "af": "Flaminke",
-    "population": 0
+    "population": 30
   },
   "Phoeniculidae": {
     "en": "Wood-hoopoes",
     "af": "Kakelaars",
-    "population": 0
+    "population": 40960
   },
   "Phylloscopidae": {
     "en": "Leaf warblers",
     "af": null,
-    "population": 0
+    "population": 40960
   },
   "Picidae": {
     "en": "Woodpeckers",
     "af": "Spegte",
-    "population": 0
+    "population": 87045
   },
   "Platysteiridae": {
     "en": "Wattle-eyes and batises",
     "af": "Bosbontrokkies",
-    "population": 0
+    "population": 329120
   },
   "Ploceidae": {
     "en": "Weavers and widowbirds",
     "af": "Wewers",
-    "population": 0
+    "population": 42399383
   },
   "Podicipedidae": {
     "en": "Grebes",
     "af": "Dobbertjies",
-    "population": 0
+    "population": 640
   },
   "Psittacidae": {
     "en": "African and New World parrots",
     "af": "Papegaai",
-    "population": 0
+    "population": 5125
   },
   "Pteroclidae": {
     "en": "Sandgrouse",
     "af": "Sandpatryse",
-    "population": 0
+    "population": 20480
   },
   "Pycnonotidae": {
     "en": "Bulbuls",
     "af": "Tiptolle",
-    "population": 0
+    "population": 368640
   },
   "Rallidae": {
     "en": "Rails, crakes and coots",
     "af": "Riethane",
-    "population": 0
+    "population": 6380
   },
   "Recurvirostridae": {
     "en": "Stilts and avocets",
     "af": "Elsies",
-    "population": 0
+    "population": 50
   },
   "Remizidae": {
     "en": "Penduline tits",
@@ -342,91 +342,91 @@
   "Rostratulidae": {
     "en": "Painted-snipes",
     "af": "Goudsnip",
-    "population": 0
+    "population": 160
   },
   "Sagittariidae": {
     "en": "Secretarybird",
     "af": "Sekretarisvoël",
-    "population": 0
+    "population": 320
   },
   "Sarothruridae": {
     "en": "Flufftails",
     "af": "Vleikuikens",
-    "population": 0
+    "population": 43
   },
   "Scolopacidae": {
     "en": "Sandpipers and snipes",
     "af": "Strandlopers",
-    "population": 0
+    "population": 6045
   },
   "Scopidae": {
     "en": "Hamerkop",
     "af": "Hamerkop",
-    "population": 0
+    "population": 1280
   },
   "Strigidae": {
     "en": "Owls",
     "af": "Uile",
-    "population": 0
+    "population": 47120
   },
   "Struthionidae": {
     "en": "Ostriches",
     "af": "Volstruis",
-    "population": 0
+    "population": 320
   },
   "Sturnidae": {
     "en": "Starlings",
     "af": "Spreeus",
-    "population": 0
+    "population": 312720
   },
   "Sylviidae": {
     "en": "Sylviid warblers",
     "af": "Sangers",
-    "population": 0
+    "population": 5120
   },
   "Threskiornithidae": {
     "en": "Ibises and spoonbills",
     "af": "Ibisse",
-    "population": 0
+    "population": 2610
   },
   "Trogonidae": {
     "en": "Trogons",
     "af": "Bosloerie",
-    "population": 0
+    "population": 640
   },
   "Turdidae": {
     "en": "Thrushes",
     "af": "Lysters",
-    "population": 0
+    "population": 51200
   },
   "Turnicidae": {
     "en": "Buttonquails",
     "af": "Kwarteltjie",
-    "population": 0
+    "population": 655360
   },
   "Tytonidae": {
     "en": "Barn owls",
     "af": "Tyto-uile",
-    "population": 0
+    "population": 5120
   },
   "Upupidae": {
     "en": "Hoopoes",
     "af": "Hoephoep",
-    "population": 0
+    "population": 10240
   },
   "Vangidae": {
     "en": "Helmetshrikes",
     "af": "Helmlaksmanne",
-    "population": 0
+    "population": 25600
   },
   "Viduidae": {
     "en": "Indigobirds and whydahs",
     "af": "Rooibekkies",
-    "population": 0
+    "population": 63360
   },
   "Zosteropidae": {
     "en": "White-eyes",
     "af": "Glasogie",
-    "population": 0
+    "population": 5120
   }
 }

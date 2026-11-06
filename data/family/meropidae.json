@@ -58,12 +58,16 @@
       }
     }
   ],
-  "iconicSpecies": [],
+  "iconicSpecies": [
+    "merops-bullockoides",
+    "merops-pusillus",
+    "merops-nubicoides"
+  ],
   "population": {
-    "low": null,
-    "high": null,
-    "speciesCounted": 0,
+    "low": 11282,
+    "high": 45128,
+    "speciesCounted": 6,
     "speciesTotal": 6,
-    "complete": false
+    "complete": true
   }
 }

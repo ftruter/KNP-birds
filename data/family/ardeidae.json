@@ -130,11 +130,15 @@
       }
     }
   ],
-  "iconicSpecies": [],
+  "iconicSpecies": [
+    "butorides-atricapilla",
+    "ardea-cinerea",
+    "ardea-goliath"
+  ],
   "population": {
-    "low": null,
-    "high": null,
-    "speciesCounted": 0,
+    "low": 1816,
+    "high": 7264,
+    "speciesCounted": 14,
     "speciesTotal": 15,
     "complete": false
   }

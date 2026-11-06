@@ -34,12 +34,16 @@
       }
     }
   ],
-  "iconicSpecies": [],
+  "iconicSpecies": [
+    "emberiza-flaviventris",
+    "emberiza-tahapisi",
+    "emberiza-impetuani"
+  ],
   "population": {
-    "low": null,
-    "high": null,
-    "speciesCounted": 0,
+    "low": 40992,
+    "high": 163968,
+    "speciesCounted": 3,
     "speciesTotal": 3,
-    "complete": false
+    "complete": true
   }
 }

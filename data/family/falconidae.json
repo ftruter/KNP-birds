@@ -82,12 +82,16 @@
       }
     }
   ],
-  "iconicSpecies": [],
+  "iconicSpecies": [
+    "falco-amurensis",
+    "falco-naumanni",
+    "falco-subbuteo"
+  ],
   "population": {
-    "low": null,
-    "high": null,
-    "speciesCounted": 0,
+    "low": 2678,
+    "high": 10712,
+    "speciesCounted": 9,
     "speciesTotal": 9,
-    "complete": false
+    "complete": true
   }
 }

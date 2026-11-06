@@ -42,11 +42,15 @@
       }
     }
   ],
-  "iconicSpecies": [],
+  "iconicSpecies": [
+    "passer-diffusus",
+    "gymnoris-superciliaris",
+    "passer-domesticus"
+  ],
   "population": {
-    "low": null,
-    "high": null,
-    "speciesCounted": 0,
+    "low": 77824,
+    "high": 311296,
+    "speciesCounted": 3,
     "speciesTotal": 4,
     "complete": false
   }

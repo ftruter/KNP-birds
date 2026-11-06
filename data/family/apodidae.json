@@ -82,12 +82,16 @@
       }
     }
   ],
-  "iconicSpecies": [],
+  "iconicSpecies": [
+    "apus-affinis",
+    "apus-caffer",
+    "cypsiurus-parvus"
+  ],
   "population": {
-    "low": null,
-    "high": null,
-    "speciesCounted": 0,
+    "low": 5120,
+    "high": 20480,
+    "speciesCounted": 9,
     "speciesTotal": 9,
-    "complete": false
+    "complete": true
   }
 }
