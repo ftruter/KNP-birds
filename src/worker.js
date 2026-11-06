@@ -1,10 +1,16 @@
 import { withCache } from './cache.js'
+import { bindMcpRequest, MCP_PATH, mcpHandler } from './mcp.js'
 import { parseUrl } from './route.js'
 import { methodNotAllowed, serverError } from './respond.js'
 import { renderRoute } from './site.js'
 
 export default {
   async fetch(request, env, ctx) {
+    const url = new URL(request.url)
+    if (url.pathname === MCP_PATH) {
+      bindMcpRequest(request, env)
+      return mcpHandler(request, env, ctx)
+    }
     return handleRequest(request, env, ctx)
   },
 }

@@ -29,6 +29,7 @@ import {
   statusLabel,
   viewLabel,
 } from './guide.js'
+import { ARD_LINK } from './head.js'
 import { alternates } from './route.js'
 
 const NAV = [
@@ -719,6 +720,7 @@ const layout = ({
 <link rel="canonical" href="${escapeHtml(origin + alts.html)}">
 <link rel="alternate" type="text/markdown" href="${escapeHtml(alts.md)}" title="Markdown">
 <link rel="alternate" type="application/json" href="${escapeHtml(alts.json)}" title="JSON">
+${ARD_LINK}
 <link rel="stylesheet" href="/style.css">
 </head>
 <body>
