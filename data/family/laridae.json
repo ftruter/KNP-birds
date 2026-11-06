@@ -42,11 +42,15 @@
       }
     }
   ],
-  "iconicSpecies": [],
+  "iconicSpecies": [
+    "chlidonias-leucopterus",
+    "chroicocephalus-cirrocephalus",
+    "chlidonias-hybrida"
+  ],
   "population": {
-    "low": null,
-    "high": null,
-    "speciesCounted": 0,
+    "low": 22,
+    "high": 88,
+    "speciesCounted": 3,
     "speciesTotal": 4,
     "complete": false
   }

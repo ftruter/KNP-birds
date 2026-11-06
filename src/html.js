@@ -14,13 +14,16 @@ import {
   englishName,
   speciesDetailsPublished,
   UNPUBLISHED_SPECIES,
+  FAMILY_TOTAL_INTRO,
   familyIndexPopulationLine,
   familyLabel,
   familyTotalModel,
+  HOME_POPULATION_INTRO,
   imageAlt,
   indexPopulationLine,
   indexRows,
   licenceForbidsDerivatives,
+  mediaSexLabel,
   monthsLabel,
   objectPath,
   orderFamilySpecies,
@@ -57,7 +60,7 @@ export const renderHomeHtml = ({ origin, speciesIndex, familiesIndex }) => {
 <li>Calls and songs of males and females</li>
 </ol>
 <p>Age, season and sex are worked out by comparing structured field marks. A mark left blank is unknown, not a claim that the part has no colour. Flight and perched views use notes and photographs. Where nothing differs, the page says so.</p>
-<p>Population figures are an <strong>${escapeHtml(APPROXIMATE_LABEL.toLowerCase())}</strong>. Kruger has no formal bird census.</p>
+<p>${escapeHtml(HOME_POPULATION_INTRO)}</p>
 <h2>Species</h2>
 ${linkList(
   species,
@@ -406,7 +409,7 @@ const familyPopulationHtml = (population) => {
   return `<section class="population" aria-labelledby="family-population-title">
 <h2 id="family-population-title">Population</h2>
 <p class="estimate-label">${escapeHtml(APPROXIMATE_TOTAL)}</p>
-<p>Kruger has no formal bird census. This adds up the species estimates and counts every pair as two individuals.</p>
+<p>${escapeHtml(FAMILY_TOTAL_INTRO)}</p>
 ${range}
 <p>${escapeHtml(model.coverage)}</p>
 ${model.complete ? '' : '<p>This total is incomplete.</p>'}
@@ -426,10 +429,10 @@ const populationHtml = (model) => {
   return `<section class="population" aria-labelledby="population-title">
 <h2 id="population-title">Population</h2>
 <p class="estimate-label">${escapeHtml(APPROXIMATE_LABEL)}</p>
-<p>Kruger has no formal bird census. Any figure here is approximate.</p>
 ${range}
 <p>Trend: ${escapeHtml(model.trend)}.</p>
 ${model.notes ? `<p>${escapeHtml(model.notes)}</p>` : ''}
+${model.baseline ? `<p>${escapeHtml(model.baseline)}</p>` : ''}
 ${extra}
 <h3>Sources</h3>
 ${sourcesHtml(model.sources)}
@@ -492,6 +495,9 @@ const imageCaption = (image) => {
     ? 'AI-generated image'
     : 'Photograph, not AI-generated'
   const view = viewLabel(image?.view)
+  const sex = mediaSexLabel(image?.sex)
+  const captionText =
+    typeof image?.caption === 'string' ? image.caption.trim() : ''
   const source = safeHttpUrl(image?.source)
   const credit = [image?.author, image?.license]
     .filter(Boolean)
@@ -502,8 +508,9 @@ const imageCaption = (image) => {
     : image?.source
       ? escapeHtml(image.source)
       : ''
-  const html = `<span class="ai-label">${escapeHtml(label)}</span>${view ? ` ${escapeHtml(view)}.` : ''}${credit ? ` ${credit}.` : ''}${sourceHtml ? ` ${sourceHtml}.` : ''}`
-  const text = [label, view, image?.author, image?.license]
+  const detail = [sex, view, captionText].filter(Boolean)
+  const html = `<span class="ai-label">${escapeHtml(label)}</span>${detail.length ? ` ${detail.map((part) => escapeHtml(part)).join('. ')}.` : ''}${credit ? ` ${credit}.` : ''}${sourceHtml ? ` ${sourceHtml}.` : ''}`
+  const text = [label, sex, view, captionText, image?.author, image?.license]
     .filter(Boolean)
     .join('. ')
   return { html, text }

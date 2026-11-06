@@ -24,7 +24,7 @@ Identifiers are always `urn:air:birds.truter.world:...`. `url` values use the or
 
 An entry's `type` is the media type of the document at `url`. The MCP entry's type is `application/mcp-server-card+json` and its `url` is `/mcp/server-card`. The transport URL inside the card (`/mcp`) is not advertised as if it were the card.
 
-The catalog stays small: the server card, the home JSON (species and family indexes, with counts), `llms.txt`, credits, and the colour vocabulary. Species plumage, calls and licences are on the pages those documents point to. Empty `variants`, `calls` or `images` mean the details are not published. Population numbers stay null when no estimate is stored.
+The catalog stays small: the server card, the home JSON (species and family indexes, with counts), `llms.txt`, credits, and the colour vocabulary. Species plumage, calls and licences are on the pages those documents point to. Empty `variants`, `calls` or `images` mean the details are not published. A species index `population` is the mature-individual midpoint, or null when that unit is absent. Groups, breeding pairs, and territories stay on the species document and are not turned into that midpoint. Search returns the published range and unit, and a Kemp baseline only when `kempBaseline` is stored.
 
 ## Cache
 

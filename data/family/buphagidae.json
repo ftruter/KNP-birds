@@ -26,12 +26,15 @@
       }
     }
   ],
-  "iconicSpecies": [],
+  "iconicSpecies": [
+    "buphagus-erythroryncha",
+    "buphagus-africanus"
+  ],
   "population": {
-    "low": null,
-    "high": null,
-    "speciesCounted": 0,
+    "low": 16640,
+    "high": 66560,
+    "speciesCounted": 2,
     "speciesTotal": 2,
-    "complete": false
+    "complete": true
   }
 }

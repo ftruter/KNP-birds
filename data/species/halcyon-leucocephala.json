@@ -7,22 +7,305 @@
     "af": "Gryskopvisvanger"
   },
   "family": "alcedinidae",
-  "summary": "The details for this species have not been published yet.",
-  "sampleData": true,
+  "status": "intra-african-migrant",
+  "monthsPresent": [
+    9,
+    10,
+    11,
+    12,
+    1,
+    2,
+    3,
+    4
+  ],
+  "size": {
+    "lengthCm": {
+      "min": 20,
+      "max": 21
+    },
+    "note": "Newman's Birds gives 20 cm. Wikipedia gives an average of 21 cm."
+  },
+  "habitat": "Almost any well-developed woodland, including Acacia and Mopane, and mixed bushveld. It prefers relatively mesic woodland for breeding, often riverine, nesting in a tunnel in a sand or clay bank. Non-breeding migrants also use degraded bushveld and even sewage works.",
+  "summary": "A summer visitor to woodland, with a grey head and breast, a chestnut belly, deep blue wings and tail, black on the upper back and shoulders, and a red bill. It is not very vocal. Newman's calls the mantle grey and the back royal blue; Wikipedia says the mantle and back are black with a bright blue rump. Photographs checked for this page show a black upper back and a blue rump, and the marks follow that. The front photograph and both recordings are from Kenya (nominate race), not the southern race. The juvenile photograph is from Benin.",
+  "sampleData": false,
+  "similar": [
+    {
+      "slug": "halcyon-albiventris",
+      "note": "Brown-hooded is larger and has a streaked brown head and streaked buffy breast and flanks with no chestnut belly. In flight its underwings are all cinnamon; Grey-headed's are white and rufous (Newman's; eBird)."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Newman's Birds — Grey Headed Kingfisher species page (text from Newman's Birds of Southern Africa)",
+      "url": "https://newmansbirds.com/birds/grey-headed-kingfisher/",
+      "publisher": "Newman's Birds / Struik Nature (online edition)",
+      "year": null
+    },
+    {
+      "title": "The Atlas of Southern African Birds, Vol. 1, pp. 656–657",
+      "url": "https://sabap2.birdmap.africa/docs/sabap1/436.pdf",
+      "publisher": "BirdLife South Africa / Avian Demography Unit",
+      "year": 1997
+    },
+    {
+      "title": "Biodiversity Explorer species text (summarised from Roberts Birds of Southern Africa VIIth ed., Hockey, Dean & Ryan 2005)",
+      "url": "https://www.biodiversityexplorer.info/birds/dacelonidae/halcyon_leucocephala.htm",
+      "publisher": "Iziko Museums of South Africa",
+      "year": null
+    },
+    {
+      "title": "eBird species account — Grey-headed Kingfisher",
+      "url": "https://ebird.org/species/gyhkin1",
+      "publisher": "Cornell Lab of Ornithology",
+      "year": null
+    },
+    {
+      "title": "Wikipedia — Grey-headed kingfisher",
+      "url": "https://en.wikipedia.org/wiki/Grey-headed_kingfisher",
+      "publisher": "Wikimedia Foundation",
+      "year": 2026
+    }
+  ],
   "population": {
     "estimate": {
-      "low": null,
-      "high": null
+      "low": 128,
+      "high": 512
     },
-    "unit": null,
+    "unit": "matureIndividuals",
     "trend": "unknown",
-    "confidence": null,
-    "asOf": null,
-    "notes": "to be researched",
-    "sources": []
+    "confidence": "low",
+    "asOf": 2001,
+    "notes": "Kemp et al. 2001 order-of-magnitude threshold 2^8=256 mature individuals (visiting breeder); paper interval half–double → 128–512.",
+    "sources": [
+      {
+        "title": "Kemp A.C., Herholdt J.J., Whyte I. & Harrison J. (2001). Birds of the two largest national parks in South Africa: a method to generate estimates of population size for all species and assess their conservation ecology. S. Afr. J. Sci. 97: 393–403.",
+        "url": "https://journals.co.za/doi/pdf/10.10520/EJC97367",
+        "publisher": "South African Journal of Science",
+        "year": 2001
+      }
+    ],
+    "kemp": {
+      "paperName": "Greyhooded Kingfisher",
+      "threshold": 256,
+      "thresholdExponent": 8,
+      "status": "VB"
+    },
+    "tierApplied": "D"
   },
-  "variants": [],
-  "viewNotes": [],
-  "calls": [],
-  "images": []
+  "variants": [
+    {
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "marks": {
+        "bill": {
+          "colour": "red",
+          "shape": "long, sharp, dagger-like"
+        },
+        "eye": {
+          "iris": null,
+          "ring": null
+        },
+        "legs": {
+          "colour": null
+        },
+        "head": {
+          "crown": "grey",
+          "face": "grey",
+          "throat": "grey"
+        },
+        "upperparts": {
+          "back": "black",
+          "rump": "blue"
+        },
+        "underparts": {
+          "breast": "grey",
+          "belly": "chestnut"
+        },
+        "wings": {
+          "above": [
+            "blue",
+            "black"
+          ],
+          "below": [
+            "white",
+            "rufous"
+          ]
+        },
+        "tail": {
+          "colour": "blue",
+          "shape": null
+        }
+      }
+    },
+    {
+      "age": "chick",
+      "sex": "any",
+      "season": "any",
+      "marks": {
+        "bill": {
+          "colour": "black",
+          "shape": null
+        },
+        "eye": {
+          "iris": null,
+          "ring": null
+        },
+        "legs": {
+          "colour": "brown"
+        },
+        "head": {
+          "crown": null,
+          "face": null,
+          "throat": null
+        },
+        "upperparts": {
+          "back": null,
+          "rump": null
+        },
+        "underparts": {
+          "breast": null,
+          "belly": null
+        },
+        "wings": {
+          "above": null,
+          "below": null
+        },
+        "tail": {
+          "colour": null,
+          "shape": null
+        }
+      }
+    }
+  ],
+  "viewNotes": [
+    {
+      "view": "perched-front",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Front-on, the grey head and breast sit above a chestnut belly, with a red bill (Newman's; eBird)."
+    },
+    {
+      "view": "perched-back",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "From behind, the upper back and shoulders are black and the rump, wings and tail are blue. Newman's calls the mantle grey and the back royal blue; Wikipedia says the mantle and back are black with a bright blue rump."
+    },
+    {
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Side-on, the black wing-coverts show against the blue flight feathers (Newman's)."
+    },
+    {
+      "view": "flight-below",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "White-and-rufous underwings, against Brown-hooded's all-cinnamon (eBird)."
+    }
+  ],
+  "calls": [
+    {
+      "sex": "any",
+      "type": "call",
+      "description": "Not very vocal: a weak, descending 'chi-chi-chi-chi' (Newman's); a strident trilling 't-t-t-t-t-t-t' and a repeated, squeaky 'tsury, tsury' (eBird); a warning call, a series of sharp 'tchk' notes (Wikipedia). SABAP1 notes that non-breeding migrants can be silent and easily overlooked. Both recordings are from Kenya (nominate race), not southern Africa.",
+      "recordings": [
+        {
+          "key": "xeno-canto/XC697680",
+          "source": "https://xeno-canto.org/697680",
+          "fileUrl": "https://xeno-canto.org/sounds/uploaded/FAMEEAPTYE/XC697680-Hleucocephalus%20excited%201805.mp3",
+          "author": "isaac kilusu",
+          "license": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "aiGenerated": false,
+          "hosted": false
+        },
+        {
+          "key": "xeno-canto/XC591625",
+          "source": "https://xeno-canto.org/591625",
+          "fileUrl": "https://xeno-canto.org/sounds/uploaded/FAMEEAPTYE/XC591625-kingfisher%20grey%20headed.mp3",
+          "author": "isaac kilusu",
+          "license": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ]
+    }
+  ],
+  "images": [
+    {
+      "key": "halcyon-leucocephala/perched-front.jpg",
+      "view": "perched-front",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "source": "https://commons.wikimedia.org/wiki/File:Grey-headed_kingfisher_(Halcyon_leucocephala)_2.jpg",
+      "fileUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a8/Grey-headed_kingfisher_%28Halcyon_leucocephala%29_2.jpg/1280px-Grey-headed_kingfisher_%28Halcyon_leucocephala%29_2.jpg",
+      "author": "Charles J. Sharp",
+      "license": "CC BY-SA 4.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "aiGenerated": false,
+      "hosted": false,
+      "alt": "Grey-headed Kingfisher perched, front view, showing the grey breast and chestnut belly; Lake Naivasha, Kenya (nominate race).",
+      "caption": "Grey-headed Kingfisher perched, front view, showing the grey breast and chestnut belly; Lake Naivasha, Kenya (nominate race)."
+    },
+    {
+      "key": "halcyon-leucocephala/perched-side.jpg",
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "source": "https://commons.wikimedia.org/wiki/File:Grey-headed_Kingfisher_(Halcyon_leucocephala)_(11929836715),_crop.jpg",
+      "fileUrl": "https://upload.wikimedia.org/wikipedia/commons/9/95/Grey-headed_Kingfisher_%28Halcyon_leucocephala%29_%2811929836715%29%2C_crop.jpg",
+      "author": "Bernard Dupont",
+      "license": "CC BY-SA 2.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by-sa/2.0/",
+      "aiGenerated": false,
+      "hosted": false,
+      "alt": "Grey-headed Kingfisher perched, side view; H1-6 north of Letaba, Kruger National Park.",
+      "caption": "Grey-headed Kingfisher perched, side view; H1-6 north of Letaba, Kruger National Park."
+    },
+    {
+      "key": "halcyon-leucocephala/perched-back.jpg",
+      "view": "perched-back",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "source": "https://commons.wikimedia.org/wiki/File:Grey-headed_kingfisher,_Halcyon_leucocephala,_at_Kruger_National_Park,_South_Africa_-_51756128121.jpg",
+      "fileUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c2/Grey-headed_kingfisher%2C_Halcyon_leucocephala%2C_at_Kruger_National_Park%2C_South_Africa_-_51756128121.jpg/1280px-Grey-headed_kingfisher%2C_Halcyon_leucocephala%2C_at_Kruger_National_Park%2C_South_Africa_-_51756128121.jpg",
+      "author": "Derek Keats",
+      "license": "CC BY 2.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by/2.0/",
+      "aiGenerated": false,
+      "hosted": false,
+      "alt": "Grey-headed Kingfisher perched, back view, showing the blue rump and wings; Kruger National Park.",
+      "caption": "Grey-headed Kingfisher perched, back view, showing the blue rump and wings; Kruger National Park."
+    },
+    {
+      "key": "halcyon-leucocephala/juvenile.jpg",
+      "view": "perched-side",
+      "age": "juvenile",
+      "sex": "any",
+      "season": "any",
+      "source": "https://www.inaturalist.org/observations/278973259",
+      "fileUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/500938278/large.jpeg",
+      "author": "alassanesakpega",
+      "license": "CC BY-NC 4.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+      "aiGenerated": false,
+      "hosted": false,
+      "alt": "Juvenile Grey-headed Kingfisher with a dark bill and buffy plumage; Matéri, Benin (West African bird, not the southern race).",
+      "caption": "Juvenile Grey-headed Kingfisher with a dark bill and buffy plumage; Matéri, Benin (West African bird, not the southern race)."
+    }
+  ],
+  "research": {
+    "confidence": "medium",
+    "needsReview": true,
+    "note": "Needs review: the front photograph and both recordings are from Kenya (nominate), and the juvenile photograph is from Benin. Mantle colour conflicts between Newman's (grey) and Wikipedia (black). The marks use the black upper back seen in the photographs. No flight photograph was verified."
+  }
 }

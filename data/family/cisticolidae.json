@@ -178,11 +178,15 @@
       }
     }
   ],
-  "iconicSpecies": [],
+  "iconicSpecies": [
+    "cisticola-chiniana",
+    "camaroptera-brachyura",
+    "prinia-subflava"
+  ],
   "population": {
-    "low": null,
-    "high": null,
-    "speciesCounted": 0,
+    "low": 365890,
+    "high": 1463560,
+    "speciesCounted": 18,
     "speciesTotal": 21,
     "complete": false
   }

@@ -1,4 +1,4 @@
-import { catalogSentence, indexRows } from './guide.js'
+import { HOME_POPULATION_INTRO, catalogSentence, indexRows } from './guide.js'
 import { serverCard, SERVER_CARD_PATH } from './mcp.js'
 
 const CONTEXT = 'https://agenticresourcediscovery.org/context/v1'
@@ -49,8 +49,8 @@ const homeDescription = (speciesIndex, familiesIndex, guide) => {
     familiesIndex,
   )
   if (!guide.listed)
-    return `Home JSON for the Kruger National Park field guide. ${sentence} Population figures are approximate. Kruger has no formal bird census.`
-  return `Home JSON for the Kruger National Park field guide. ${sentence} ${guide.afrikaans} ${plural(guide.afrikaans, 'species has', 'species have')} an Afrikaans name. ${guide.populations} ${plural(guide.populations, 'species has', 'species have')} a numeric population midpoint. Population figures are approximate. Kruger has no formal bird census.`
+    return `Home JSON for the Kruger National Park field guide. ${sentence} ${HOME_POPULATION_INTRO}`
+  return `Home JSON for the Kruger National Park field guide. ${sentence} ${guide.afrikaans} ${plural(guide.afrikaans, 'species has', 'species have')} an Afrikaans name. ${guide.populations} ${plural(guide.populations, 'species has', 'species have')} a mature-individual population midpoint. ${HOME_POPULATION_INTRO}`
 }
 
 const homeQueries = (guide) => {
@@ -63,7 +63,7 @@ const homeQueries = (guide) => {
     named
       ? `What is the Afrikaans name of the ${named.names.en}?`
       : 'Which Kruger species have an Afrikaans name?',
-    'Which Kruger species have a numeric population estimate?',
+    'Which Kruger species have a mature-individual population midpoint?',
     family?.names?.af
       ? `What is the Afrikaans name of the ${family.scientificName} family?`
       : 'How many bird families does this field guide list?',

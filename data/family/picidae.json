@@ -58,11 +58,15 @@
       }
     }
   ],
-  "iconicSpecies": [],
+  "iconicSpecies": [
+    "dendropicos-fuscescens",
+    "campethera-abingoni",
+    "campethera-bennettii"
+  ],
   "population": {
-    "low": null,
-    "high": null,
-    "speciesCounted": 0,
+    "low": 34818,
+    "high": 139272,
+    "speciesCounted": 5,
     "speciesTotal": 6,
     "complete": false
   }

@@ -98,12 +98,16 @@
       }
     }
   ],
-  "iconicSpecies": [],
+  "iconicSpecies": [
+    "anthus-caffer",
+    "anthus-cinnamomeus",
+    "macronyx-croceus"
+  ],
   "population": {
-    "low": null,
-    "high": null,
-    "speciesCounted": 0,
+    "low": 57612,
+    "high": 230448,
+    "speciesCounted": 11,
     "speciesTotal": 11,
-    "complete": false
+    "complete": true
   }
 }

@@ -34,12 +34,16 @@
       }
     }
   ],
-  "iconicSpecies": [],
+  "iconicSpecies": [
+    "lophotis-ruficrista",
+    "lissotis-melanogaster",
+    "ardeotis-kori"
+  ],
   "population": {
-    "low": null,
-    "high": null,
-    "speciesCounted": 0,
+    "low": 12416,
+    "high": 49664,
+    "speciesCounted": 3,
     "speciesTotal": 3,
-    "complete": false
+    "complete": true
   }
 }

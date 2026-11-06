@@ -18,12 +18,14 @@
       }
     }
   ],
-  "iconicSpecies": [],
+  "iconicSpecies": [
+    "struthio-camelus"
+  ],
   "population": {
-    "low": null,
-    "high": null,
-    "speciesCounted": 0,
+    "low": 128,
+    "high": 512,
+    "speciesCounted": 1,
     "speciesTotal": 1,
-    "complete": false
+    "complete": true
   }
 }

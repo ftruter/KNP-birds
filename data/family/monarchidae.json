@@ -25,12 +25,15 @@
       }
     }
   ],
-  "iconicSpecies": [],
+  "iconicSpecies": [
+    "terpsiphone-viridis",
+    "trochocercus-cyanomelas"
+  ],
   "population": {
-    "low": null,
-    "high": null,
-    "speciesCounted": 0,
+    "low": 8196,
+    "high": 32784,
+    "speciesCounted": 2,
     "speciesTotal": 2,
-    "complete": false
+    "complete": true
   }
 }

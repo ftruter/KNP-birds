@@ -98,12 +98,16 @@
       }
     }
   ],
-  "iconicSpecies": [],
+  "iconicSpecies": [
+    "vanellus-coronatus",
+    "vanellus-armatus",
+    "vanellus-lugubris"
+  ],
   "population": {
-    "low": null,
-    "high": null,
-    "speciesCounted": 0,
+    "low": 11044,
+    "high": 44176,
+    "speciesCounted": 11,
     "speciesTotal": 11,
-    "complete": false
+    "complete": true
   }
 }

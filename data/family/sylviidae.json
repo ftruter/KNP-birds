@@ -26,11 +26,13 @@
       }
     }
   ],
-  "iconicSpecies": [],
+  "iconicSpecies": [
+    "sylvia-borin"
+  ],
   "population": {
-    "low": null,
-    "high": null,
-    "speciesCounted": 0,
+    "low": 2048,
+    "high": 8192,
+    "speciesCounted": 1,
     "speciesTotal": 2,
     "complete": false
   }

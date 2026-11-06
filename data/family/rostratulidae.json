@@ -18,12 +18,14 @@
       }
     }
   ],
-  "iconicSpecies": [],
+  "iconicSpecies": [
+    "rostratula-benghalensis"
+  ],
   "population": {
-    "low": null,
-    "high": null,
-    "speciesCounted": 0,
+    "low": 64,
+    "high": 256,
+    "speciesCounted": 1,
     "speciesTotal": 1,
-    "complete": false
+    "complete": true
   }
 }

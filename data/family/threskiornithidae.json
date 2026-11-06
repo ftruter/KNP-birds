@@ -50,11 +50,15 @@
       }
     }
   ],
-  "iconicSpecies": [],
+  "iconicSpecies": [
+    "bostrychia-hagedash",
+    "platalea-alba",
+    "threskiornis-aethiopicus"
+  ],
   "population": {
-    "low": null,
-    "high": null,
-    "speciesCounted": 0,
+    "low": 1044,
+    "high": 4176,
+    "speciesCounted": 4,
     "speciesTotal": 5,
     "complete": false
   }

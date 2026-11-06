@@ -7,22 +7,317 @@
     "af": "Blouvisvanger"
   },
   "family": "alcedinidae",
-  "summary": "The details for this species have not been published yet.",
-  "sampleData": true,
+  "status": "resident",
+  "monthsPresent": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+  ],
+  "size": {
+    "lengthCm": {
+      "min": 18,
+      "max": 20
+    },
+    "note": "Newman's Birds gives 20 cm. Wikipedia gives about 18 cm."
+  },
+  "habitat": "Clear, fast-flowing streams and rivers with well-wooded banks, often near rapids; also small, heavily wooded inland waters. Perches low over water on exposed roots or overhanging branches.",
+  "summary": "A small river kingfisher, scarce in Kruger at the edge of its escarpment-stream range, and present in every month. Adults have a black bill, bright blue upperparts, a blue half-collar on each side of the breast, and cinnamon underparts. It is easily confused with the much commoner Malachite Kingfisher, which has a red bill as an adult and orange cheeks. Wikipedia is the only source used here for some red at the base of the female's lower mandible; Newman's and eBird do not state it. Juvenile and chick plumage are not described in the sources used here.",
+  "sampleData": false,
+  "similar": [
+    {
+      "slug": "corythornis-cristatus",
+      "note": "Malachite is smaller (14 cm vs 20 cm), adults have a red bill and red-orange cheeks, and the turquoise crown reaches the eye. Juvenile Malachite also has a dark bill, but keeps orange on the face; Half-collared has a blue face with no orange (eBird; Newman's)."
+    },
+    {
+      "slug": "ispidina-picta",
+      "note": "Pygmy has a red bill, mauve/violet ear-coverts and an orange eyebrow, is a summer visitor, and usually hunts in woodland away from water (Newman's)."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Newman's Birds — Half Collared Kingfisher species page (text from Newman's Birds of Southern Africa)",
+      "url": "https://newmansbirds.com/birds/half-collared-kingfisher/",
+      "publisher": "Newman's Birds / Struik Nature (online edition)",
+      "year": null
+    },
+    {
+      "title": "The Atlas of Southern African Birds, Vol. 1, pp. 644–645",
+      "url": "https://sabap2.birdmap.africa/docs/sabap1/430.pdf",
+      "publisher": "BirdLife South Africa / Avian Demography Unit",
+      "year": 1997
+    },
+    {
+      "title": "Biodiversity Explorer species text (summarised from Roberts Birds of Southern Africa VIIth ed., Hockey, Dean & Ryan 2005)",
+      "url": "https://www.biodiversityexplorer.info/birds/alcedinidae/alcedo_semitorquata.htm",
+      "publisher": "Iziko Museums of South Africa",
+      "year": null
+    },
+    {
+      "title": "eBird species account — Half-collared Kingfisher",
+      "url": "https://ebird.org/species/hackin1",
+      "publisher": "Cornell Lab of Ornithology",
+      "year": null
+    },
+    {
+      "title": "Wikipedia — Half-collared kingfisher",
+      "url": "https://en.wikipedia.org/wiki/Half-collared_kingfisher",
+      "publisher": "Wikimedia Foundation",
+      "year": 2026
+    }
+  ],
   "population": {
     "estimate": {
-      "low": null,
-      "high": null
+      "low": 512,
+      "high": 2048
     },
-    "unit": null,
+    "unit": "matureIndividuals",
     "trend": "unknown",
-    "confidence": null,
-    "asOf": null,
-    "notes": "to be researched",
-    "sources": []
+    "confidence": "low",
+    "asOf": 2001,
+    "notes": "Kemp et al. 2001 order-of-magnitude threshold 2^10=1024 mature individuals (resident breeder); paper interval half–double → 512–2048.",
+    "sources": [
+      {
+        "title": "Kemp A.C., Herholdt J.J., Whyte I. & Harrison J. (2001). Birds of the two largest national parks in South Africa: a method to generate estimates of population size for all species and assess their conservation ecology. S. Afr. J. Sci. 97: 393–403.",
+        "url": "https://journals.co.za/doi/pdf/10.10520/EJC97367",
+        "publisher": "South African Journal of Science",
+        "year": 2001
+      }
+    ],
+    "kemp": {
+      "paperName": "Halfcollared Kingfisher",
+      "threshold": 1024,
+      "thresholdExponent": 10,
+      "status": "RB"
+    },
+    "tierApplied": "D"
   },
-  "variants": [],
-  "viewNotes": [],
-  "calls": [],
-  "images": []
+  "variants": [
+    {
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "marks": {
+        "bill": {
+          "colour": "black",
+          "shape": "long, dagger-shaped"
+        },
+        "eye": {
+          "iris": null,
+          "ring": null
+        },
+        "legs": {
+          "colour": "red"
+        },
+        "head": {
+          "crown": "blue",
+          "face": "blue",
+          "throat": "white"
+        },
+        "upperparts": {
+          "back": "blue",
+          "rump": "blue"
+        },
+        "underparts": {
+          "breast": "cinnamon",
+          "belly": "cinnamon"
+        },
+        "wings": {
+          "above": "blue",
+          "below": null
+        },
+        "tail": {
+          "colour": null,
+          "shape": null
+        }
+      }
+    },
+    {
+      "age": "adult",
+      "sex": "female",
+      "season": "any",
+      "marks": {
+        "bill": {
+          "colour": [
+            "black",
+            "red"
+          ],
+          "shape": "long and dagger-shaped, with some red at the base of the lower mandible (Wikipedia only; Newman's and eBird do not state it)"
+        },
+        "eye": {
+          "iris": null,
+          "ring": null
+        },
+        "legs": {
+          "colour": null
+        },
+        "head": {
+          "crown": null,
+          "face": null,
+          "throat": null
+        },
+        "upperparts": {
+          "back": null,
+          "rump": null
+        },
+        "underparts": {
+          "breast": null,
+          "belly": null
+        },
+        "wings": {
+          "above": null,
+          "below": null
+        },
+        "tail": {
+          "colour": null,
+          "shape": null
+        }
+      }
+    }
+  ],
+  "viewNotes": [
+    {
+      "view": "perched-front",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Front-on, the cinnamon belly and the dark blue half-collar on each breast side frame a whitish throat. The face is blue, with no orange (eBird)."
+    },
+    {
+      "view": "perched-back",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "From behind, the upperparts are all bright blue, back to the rump (Newman's)."
+    },
+    {
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "In side view, the long black bill and the red legs are the key marks against Malachite (Newman's)."
+    },
+    {
+      "view": "flight-side",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Flies low and fast along the stream."
+    },
+    {
+      "view": "flight-above",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "In flight the upperparts are bright blue, and the bird flies low and fast along the stream (Newman's). The underwing is not described in the sources used here."
+    }
+  ],
+  "calls": [
+    {
+      "sex": "any",
+      "type": "call",
+      "description": "A shrill 'teep' or 'seek-seek' (Newman's); a high-pitched 'seet' (eBird).",
+      "recordings": [
+        {
+          "key": "xeno-canto/XC305474",
+          "source": "https://xeno-canto.org/305474",
+          "fileUrl": "https://xeno-canto.org/sounds/uploaded/GQMCPIVNXX/XC305474-Half-collared%20Kingfisher%20xc.mp3",
+          "author": "Tim Cockcroft",
+          "license": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "aiGenerated": false,
+          "hosted": false
+        },
+        {
+          "key": "xeno-canto/XC645316",
+          "source": "https://xeno-canto.org/645316",
+          "fileUrl": "https://xeno-canto.org/sounds/uploaded/GQMCPIVNXX/XC645316-Half-collared%20Kingfisher1.mp3",
+          "author": "Tim Cockcroft",
+          "license": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ]
+    }
+  ],
+  "images": [
+    {
+      "key": "alcedo-semitorquata/perched-front.jpg",
+      "view": "perched-front",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "source": "https://commons.wikimedia.org/wiki/File:Alcedo_semitorquata_semitorquata_398905306.jpg",
+      "fileUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/dd/Alcedo_semitorquata_semitorquata_398905306.jpg/1280px-Alcedo_semitorquata_semitorquata_398905306.jpg",
+      "author": "Christiaan Viljoen",
+      "license": "CC BY 4.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by/4.0/",
+      "aiGenerated": false,
+      "hosted": false,
+      "alt": "Half-collared Kingfisher perched, front view, showing the cinnamon underparts and blue half-collar patches; South Africa.",
+      "caption": "Half-collared Kingfisher perched, front view, showing the cinnamon underparts and blue half-collar patches; South Africa."
+    },
+    {
+      "key": "alcedo-semitorquata/perched-side.jpg",
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "source": "https://commons.wikimedia.org/wiki/File:Alcedo_semitorquata_semitorquata_293744887.jpg",
+      "fileUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7a/Alcedo_semitorquata_semitorquata_293744887.jpg/1280px-Alcedo_semitorquata_semitorquata_293744887.jpg",
+      "author": "Noeleen du Toit",
+      "license": "CC BY-SA 4.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "aiGenerated": false,
+      "hosted": false,
+      "alt": "Half-collared Kingfisher perched, side view, with the long black bill.",
+      "caption": "Half-collared Kingfisher perched, side view, with the long black bill."
+    },
+    {
+      "key": "alcedo-semitorquata/perched-back.jpg",
+      "view": "perched-back",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "source": "https://commons.wikimedia.org/wiki/File:Alcedo_semitorquata_343908959.jpg",
+      "fileUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c2/Alcedo_semitorquata_343908959.jpg/1280px-Alcedo_semitorquata_343908959.jpg",
+      "author": "Timothy Whitehead",
+      "license": "CC BY 4.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by/4.0/",
+      "aiGenerated": false,
+      "hosted": false,
+      "alt": "Half-collared Kingfisher perched, back view, showing the bright blue upperparts; Zambia.",
+      "caption": "Half-collared Kingfisher perched, back view, showing the bright blue upperparts; Zambia."
+    },
+    {
+      "key": "alcedo-semitorquata/hover-side.jpg",
+      "view": "flight-side",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "source": "https://commons.wikimedia.org/wiki/File:Alcedo_semitorquata_614547580.jpg",
+      "fileUrl": "https://upload.wikimedia.org/wikipedia/commons/8/8f/Alcedo_semitorquata_614547580.jpg",
+      "author": "Dave Brown",
+      "license": "CC0",
+      "licenceUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "aiGenerated": false,
+      "hosted": false,
+      "alt": "Half-collared Kingfisher hovering low over water, side-on; underwing only partly visible.",
+      "caption": "Half-collared Kingfisher hovering low over water, side-on; underwing only partly visible."
+    }
+  ],
+  "research": {
+    "confidence": "medium",
+    "needsReview": false,
+    "note": "Female bill-base colour is from Wikipedia only. Juvenile plumage is not described in the sources used. Scarce in Kruger; months follow SABAP1 and were checked against GBIF month facets. Counts and threat status are omitted."
+  }
 }

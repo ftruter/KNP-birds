@@ -74,12 +74,16 @@
       }
     }
   ],
-  "iconicSpecies": [],
+  "iconicSpecies": [
+    "coturnix-delegorguei",
+    "coturnix-coturnix",
+    "ortygornis-sephaena"
+  ],
   "population": {
-    "low": null,
-    "high": null,
-    "speciesCounted": 0,
+    "low": 169985,
+    "high": 679940,
+    "speciesCounted": 8,
     "speciesTotal": 8,
-    "complete": false
+    "complete": true
   }
 }

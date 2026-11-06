@@ -74,11 +74,15 @@
       }
     }
   ],
-  "iconicSpecies": [],
+  "iconicSpecies": [
+    "ciconia-ciconia",
+    "ciconia-abdimii",
+    "anastomus-lamelligerus"
+  ],
   "population": {
-    "low": null,
-    "high": null,
-    "speciesCounted": 0,
+    "low": 2642,
+    "high": 10568,
+    "speciesCounted": 7,
     "speciesTotal": 8,
     "complete": false
   }

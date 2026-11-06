@@ -1,4 +1,4 @@
-import { afrikaansName, indexRows } from './guide.js'
+import { afrikaansName, indexRows, unitLabel } from './guide.js'
 import { readDocument } from './store.js'
 
 const SNIPPET = 180
@@ -94,21 +94,39 @@ const identificationText = (doc) => {
   return parts.join('\n')
 }
 
-const populationOf = (kind, population, midpoint) => {
-  const low = Number.isInteger(population?.estimate?.low)
-    ? population.estimate.low
-    : Number.isInteger(population?.low)
-      ? population.low
-      : null
-  const high = Number.isInteger(population?.estimate?.high)
-    ? population.estimate.high
-    : Number.isInteger(population?.high)
-      ? population.high
-      : null
+const integerOrNull = (value) => (Number.isInteger(value) ? value : null)
+
+const boundOrNull = (estimate, fallback) =>
+  integerOrNull(estimate) ?? integerOrNull(fallback)
+
+const baselineOf = (baseline) => {
+  if (!baseline || typeof baseline !== 'object') return null
+  const low = integerOrNull(baseline.estimate?.low)
+  const high = integerOrNull(baseline.estimate?.high)
+  if (low == null && high == null) return null
   const unit =
+    typeof baseline.unit === 'string' && baseline.unit ? baseline.unit : null
+  const asOf = integerOrNull(baseline.asOf)
+  return {
+    ...(low != null ? { low } : {}),
+    ...(high != null ? { high } : {}),
+    ...(unit ? { unit } : {}),
+    ...(asOf != null ? { asOf } : {}),
+  }
+}
+
+const populationOf = (kind, population, midpoint) => {
+  const low = boundOrNull(population?.estimate?.low, population?.low)
+  const high = boundOrNull(population?.estimate?.high, population?.high)
+  const storedUnit =
     typeof population?.unit === 'string' && population.unit
       ? population.unit
       : null
+  const unit =
+    storedUnit ||
+    (kind === 'family' && (low != null || high != null)
+      ? 'matureIndividuals'
+      : null)
   const mid =
     kind === 'family'
       ? Number.isInteger(midpoint) && midpoint > 0
@@ -117,12 +135,32 @@ const populationOf = (kind, population, midpoint) => {
       : Number.isInteger(midpoint)
         ? midpoint
         : null
-  if (low == null && high == null && mid == null) return null
-  return {
+  const asOf = integerOrNull(population?.asOf)
+  const tierApplied =
+    typeof population?.tierApplied === 'string' && population.tierApplied
+      ? population.tierApplied
+      : null
+  const kempBaseline = baselineOf(population?.kempBaseline)
+  if (low == null && high == null && mid == null && !kempBaseline) return null
+  const figure = {
     ...(low != null ? { low } : {}),
     ...(high != null ? { high } : {}),
     ...(unit ? { unit } : {}),
     ...(mid != null ? { midpoint: mid } : {}),
+    ...(asOf != null ? { asOf } : {}),
+    ...(tierApplied ? { tierApplied } : {}),
+    ...(kempBaseline ? { kempBaseline } : {}),
+  }
+  if (kind !== 'family') return figure
+  const speciesCounted = integerOrNull(population?.speciesCounted)
+  const speciesTotal = integerOrNull(population?.speciesTotal)
+  return {
+    ...figure,
+    ...(speciesCounted != null ? { speciesCounted } : {}),
+    ...(speciesTotal != null ? { speciesTotal } : {}),
+    ...(typeof population?.complete === 'boolean'
+      ? { complete: population.complete }
+      : {}),
   }
 }
 
@@ -309,16 +347,28 @@ const pagesFor = (origin, record) => {
 
 const populationBounds = (population) => {
   if (population.low != null && population.high != null)
-    return `${population.low}–${population.high}`
+    return population.low === population.high
+      ? `${population.low}`
+      : `${population.low}–${population.high}`
+  if (population.low != null) return `at least ${population.low}`
+  if (population.high != null) return `up to ${population.high}`
   if (population.midpoint != null) return `midpoint ${population.midpoint}`
-  if (population.low != null) return String(population.low)
-  return String(population.high)
+  return ''
+}
+
+const figureText = (population) => {
+  const range = populationBounds(population)
+  const label = unitLabel(population.unit)
+  return label ? `${range} ${label}` : range
 }
 
 const populationText = (population) => {
   if (!population) return 'No numeric population estimate is published.'
-  const unit = population.unit ? ` ${population.unit}` : ''
-  return `Population estimate: ${populationBounds(population)}${unit}.`
+  const baseline = population.kempBaseline
+  const kept = baseline
+    ? ` Kemp et al. 2001 baseline kept for comparison: ${figureText(baseline)}.`
+    : ''
+  return `Population estimate: ${figureText(population)}.${kept}`
 }
 
 export const searchRecords = (records, rawQuery, limit, origin) => {

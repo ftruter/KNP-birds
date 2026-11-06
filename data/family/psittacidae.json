@@ -26,12 +26,15 @@
       }
     }
   ],
-  "iconicSpecies": [],
+  "iconicSpecies": [
+    "poicephalus-cryptoxanthus",
+    "poicephalus-meyeri"
+  ],
   "population": {
-    "low": null,
-    "high": null,
-    "speciesCounted": 0,
+    "low": 2050,
+    "high": 8200,
+    "speciesCounted": 2,
     "speciesTotal": 2,
-    "complete": false
+    "complete": true
   }
 }

@@ -64,8 +64,10 @@ test('pages are served in html, markdown, and json', async () => {
   )
   const data = await json.json()
   assert.equal(data.scientificName, 'Coracias caudatus')
-  assert.equal(data.population.estimate.low, null)
-  assert.match(data.population.notes, /no formal bird census/i)
+  assert.equal(data.population.estimate.low, 8192)
+  assert.equal(data.population.estimate.high, 32768)
+  assert.equal(data.population.unit, 'matureIndividuals')
+  assert.match(data.population.notes, /Kemp et al\. 2001/)
 
   const colours = await site.fetch('/vocab/colours')
   assert.equal(colours.status, 200)
@@ -76,24 +78,28 @@ test('pages are served in html, markdown, and json', async () => {
   assert.deepEqual(index['Coracias caudatus'], {
     en: 'Lilac-breasted Roller',
     af: 'Gewone Troupant',
-    population: null,
+    population: 20480,
   })
   assert.deepEqual(index['Icthyophaga vocifer'], {
     en: 'African Fish Eagle',
     af: 'Visarend',
-    population: null,
+    population: 160,
   })
   assert.equal(index['Haliaeetus vocifer'], undefined)
   assert.equal(index['Bucorvus leadbeateri'].en, 'Southern Ground-Hornbill')
+  assert.equal(index['Bucorvus leadbeateri'].population, null)
+  let unknown = 0
   for (const value of Object.values(index)) {
-    assert.equal(value.population, null)
+    if (value.population == null) unknown += 1
     assert.equal(Object.hasOwn(value, 'family'), false)
   }
+  assert.equal(unknown, 44)
   const familyPage = await (await site.fetch('/family/coraciidae')).text()
   assert.match(familyPage, /href="\/species\/coracias-caudatus"/)
   assert.match(familyPage, /Lilac-breasted Roller/)
-  assert.match(familyPage, /Includes 0 of 5 species/)
-  assert.doesNotMatch(familyPage, /First to look for/)
+  assert.match(familyPage, /Includes 5 of 5 species/)
+  assert.match(familyPage, /18960–75840 mature individuals/)
+  assert.match(familyPage, /First to look for/)
 })
 
 test('a species stub renders in html, markdown, and json', async () => {
@@ -126,8 +132,9 @@ test('a species stub renders in html, markdown, and json', async () => {
   assert.deepEqual(json.variants, [])
   assert.deepEqual(json.calls, [])
   assert.deepEqual(json.images, [])
-  assert.equal(json.population.estimate.low, null)
-  assert.equal(json.population.estimate.high, null)
+  assert.equal(json.population.estimate.low, 128)
+  assert.equal(json.population.estimate.high, 512)
+  assert.equal(json.population.unit, 'matureIndividuals')
   assert.equal(json.commonNames.af, 'Volstruis')
 })
 
@@ -141,7 +148,8 @@ test('a new family stub and the full families index render in every format', asy
   assert.match(htmlBody, /Kingfishers/)
   assert.match(htmlBody, /Visvangers/)
   assert.match(htmlBody, /href="\/species\/corythornis-cristatus"/)
-  assert.match(htmlBody, /Includes 0 of 9 species/)
+  assert.match(htmlBody, /Includes 9 of 9 species/)
+  assert.doesNotMatch(htmlBody, /This total is incomplete/)
   assert.doesNotMatch(htmlBody, /No species from this family are listed/)
   assert.doesNotMatch(htmlBody, /<script/i)
 
@@ -166,11 +174,12 @@ test('a new family stub and the full families index render in every format', asy
   assert.equal(data.scientificName, 'Alcedinidae')
   assert.equal(data.species.length, 9)
   assert.ok(data.species.some((item) => item.slug === 'corythornis-cristatus'))
-  assert.deepEqual(data.iconicSpecies, [])
-  assert.equal(data.population.speciesCounted, 0)
+  assert.equal(data.iconicSpecies.length, 3)
+  assert.equal(data.population.speciesCounted, 9)
   assert.equal(data.population.speciesTotal, 9)
-  assert.equal(data.population.low, null)
-  assert.equal(data.population.high, null)
+  assert.equal(data.population.complete, true)
+  assert.equal(data.population.low, 30592)
+  assert.equal(data.population.high, 122368)
 
   const unnamed = await (await site.fetch('/family/acrocephalidae')).text()
   assert.match(unnamed, /Reed warblers and allies/)
@@ -187,7 +196,9 @@ test('a new family stub and the full families index render in every format', asy
   assert.equal(indexJson.Accipitridae.af, null)
   assert.equal(indexJson.Accipitridae.en, 'Hawks, eagles and kites')
   assert.equal(indexJson.Alcedinidae.af, 'Visvangers')
-  assert.equal(indexJson.Accipitridae.population, 0)
+  assert.equal(indexJson.Accipitridae.population, 31885)
+  assert.equal(indexJson.Bucorvidae.population, 0)
+  assert.equal(indexJson.Remizidae.population, 0)
 })
 
 test('missing pages 404 in all three formats', async () => {

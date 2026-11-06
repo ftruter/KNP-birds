@@ -154,11 +154,15 @@
       }
     }
   ],
-  "iconicSpecies": [],
+  "iconicSpecies": [
+    "quelea-quelea",
+    "ploceus-intermedius",
+    "ploceus-velatus"
+  ],
   "population": {
-    "low": null,
-    "high": null,
-    "speciesCounted": 0,
+    "low": 16959753,
+    "high": 67839012,
+    "speciesCounted": 16,
     "speciesTotal": 18,
     "complete": false
   }

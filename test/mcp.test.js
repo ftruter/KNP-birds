@@ -115,7 +115,14 @@ test('search finds rollers, Afrikaans, scientific names, families, and misses', 
   )
   assert.equal(lilac.scientificName, 'Coracias caudatus')
   assert.equal(lilac.afrikaansName, 'Gewone Troupant')
-  assert.equal(lilac.population, null)
+  assert.deepEqual(lilac.population, {
+    low: 8192,
+    high: 32768,
+    unit: 'matureIndividuals',
+    midpoint: 20480,
+    asOf: 2001,
+    tierApplied: 'D',
+  })
   assert.equal(lilac.pages.html, `${origin}/species/coracias-caudatus`)
   assert.equal(lilac.pages.markdown, `${origin}/species/coracias-caudatus.md`)
   assert.equal(lilac.pages.json, `${origin}/species/coracias-caudatus.json`)
@@ -148,6 +155,15 @@ test('search finds rollers, Afrikaans, scientific names, families, and misses', 
   assert.equal(familyHit.scientificName, 'Coraciidae')
   assert.equal(familyHit.englishName, 'Rollers')
   assert.equal(familyHit.pages.html, `${origin}/family/coraciidae`)
+  assert.deepEqual(familyHit.population, {
+    low: 18960,
+    high: 75840,
+    unit: 'matureIndividuals',
+    midpoint: 47400,
+    speciesCounted: 5,
+    speciesTotal: 5,
+    complete: true,
+  })
 
   const empty = await callSearch(env, { query: 'zzzznotabird' })
   assert.equal(empty.message.result.structuredContent.total, 0)
@@ -158,6 +174,45 @@ test('search finds rollers, Afrikaans, scientific names, families, and misses', 
   const limited = await callSearch(env, { query: 'roller', limit: 1 })
   assert.equal(limited.message.result.structuredContent.results.length, 1)
   assert.ok(limited.message.result.structuredContent.total > 1)
+})
+
+test('search returns ranges, other units, null estimates, and Tier A baselines', async () => {
+  const { env } = await envFor()
+  const hornbill = await callSearch(env, { query: 'Bucorvus leadbeateri' })
+  const groups = hornbill.message.result.structuredContent.results[0]
+  assert.equal(groups.englishName, 'Southern Ground-Hornbill')
+  assert.equal(groups.population.midpoint, undefined)
+  assert.deepEqual(groups.population, {
+    low: 180,
+    high: 180,
+    unit: 'groups',
+    asOf: 2023,
+    tierApplied: 'A',
+    kempBaseline: {
+      low: 128,
+      high: 512,
+      unit: 'matureIndividuals',
+      asOf: 2001,
+    },
+  })
+  assert.match(hornbill.message.result.content[0].text, /180 groups/)
+  assert.match(
+    hornbill.message.result.content[0].text,
+    /baseline kept for comparison: 128–512 mature individuals/,
+  )
+  assert.doesNotMatch(
+    hornbill.message.result.content[0].text,
+    /Population estimate: 128–512/,
+  )
+
+  const unsourced = await callSearch(env, { query: 'Turdus olivaceus' })
+  const thrush = unsourced.message.result.structuredContent.results[0]
+  assert.equal(thrush.scientificName, 'Turdus olivaceus')
+  assert.equal(thrush.population, null)
+  assert.match(
+    unsourced.message.result.content[0].text,
+    /No numeric population estimate is published/,
+  )
 })
 
 test('search rejects empty and oversized limits without leaking internals', async () => {

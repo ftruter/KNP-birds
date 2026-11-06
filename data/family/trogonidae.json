@@ -18,12 +18,14 @@
       }
     }
   ],
-  "iconicSpecies": [],
+  "iconicSpecies": [
+    "apaloderma-narina"
+  ],
   "population": {
-    "low": null,
-    "high": null,
-    "speciesCounted": 0,
+    "low": 256,
+    "high": 1024,
+    "speciesCounted": 1,
     "speciesTotal": 1,
-    "complete": false
+    "complete": true
   }
 }

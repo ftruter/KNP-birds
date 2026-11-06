@@ -7,22 +7,383 @@
     "af": "Reusevisvanger"
   },
   "family": "alcedinidae",
-  "summary": "The details for this species have not been published yet.",
-  "sampleData": true,
+  "status": "resident",
+  "monthsPresent": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+  ],
+  "size": {
+    "lengthCm": {
+      "min": 42,
+      "max": 46
+    },
+    "note": "Newman's Birds gives 43–46 cm. Wikipedia gives 42–46 cm."
+  },
+  "habitat": "Large rivers and their major tributaries with well-wooded, steep banks; also smaller streams, dams, lakes, estuaries and coastal lagoons. Perches on a branch, bridge, wire or boulder over water.",
+  "summary": "Africa's largest kingfisher: black, finely spotted white, with a shaggy crest and a huge black bill. The chestnut is on the breast in the male and on the belly in the female. The female's underwing is chestnut (eBird). The male's underwing colour is not stated in the sources used here.",
+  "sampleData": false,
+  "similar": [
+    {
+      "slug": "ceryle-rudis",
+      "note": "Pied is much smaller and pure black and white, with no chestnut. It hovers habitually, which Giant does only briefly and occasionally (Newman's)."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Newman's Birds — Giant Kingfisher species page (text from Newman's Birds of Southern Africa)",
+      "url": "https://newmansbirds.com/birds/giant-kingfisher/",
+      "publisher": "Newman's Birds / Struik Nature (online edition)",
+      "year": null
+    },
+    {
+      "title": "The Atlas of Southern African Birds, Vol. 1, pp. 640–643 (spread 428)",
+      "url": "https://sabap2.birdmap.africa/docs/sabap1/428.pdf",
+      "publisher": "BirdLife South Africa / Avian Demography Unit",
+      "year": 1997
+    },
+    {
+      "title": "The Atlas of Southern African Birds, Vol. 1, pp. 640–643 (spread 429)",
+      "url": "https://sabap2.birdmap.africa/docs/sabap1/429.pdf",
+      "publisher": "BirdLife South Africa / Avian Demography Unit",
+      "year": 1997
+    },
+    {
+      "title": "Biodiversity Explorer species text (summarised from Roberts Birds of Southern Africa VIIth ed., Hockey, Dean & Ryan 2005)",
+      "url": "https://www.biodiversityexplorer.info/birds/cerylidae/ceryle_maxima.htm",
+      "publisher": "Iziko Museums of South Africa",
+      "year": null
+    },
+    {
+      "title": "eBird species account — Giant Kingfisher",
+      "url": "https://ebird.org/species/giakin3",
+      "publisher": "Cornell Lab of Ornithology",
+      "year": null
+    },
+    {
+      "title": "Wikipedia — Giant kingfisher",
+      "url": "https://en.wikipedia.org/wiki/Giant_kingfisher",
+      "publisher": "Wikimedia Foundation",
+      "year": 2026
+    }
+  ],
   "population": {
     "estimate": {
-      "low": null,
-      "high": null
+      "low": 256,
+      "high": 1024
     },
-    "unit": null,
+    "unit": "matureIndividuals",
     "trend": "unknown",
-    "confidence": null,
-    "asOf": null,
-    "notes": "to be researched",
-    "sources": []
+    "confidence": "low",
+    "asOf": 2001,
+    "notes": "Kemp et al. 2001 order-of-magnitude threshold 2^9=512 mature individuals (resident breeder); paper interval half–double → 256–1024.",
+    "sources": [
+      {
+        "title": "Kemp A.C., Herholdt J.J., Whyte I. & Harrison J. (2001). Birds of the two largest national parks in South Africa: a method to generate estimates of population size for all species and assess their conservation ecology. S. Afr. J. Sci. 97: 393–403.",
+        "url": "https://journals.co.za/doi/pdf/10.10520/EJC97367",
+        "publisher": "South African Journal of Science",
+        "year": 2001
+      }
+    ],
+    "kemp": {
+      "paperName": "Giant Kingfisher",
+      "threshold": 512,
+      "thresholdExponent": 9,
+      "status": "RB"
+    },
+    "tierApplied": "D"
   },
-  "variants": [],
-  "viewNotes": [],
-  "calls": [],
-  "images": []
+  "variants": [
+    {
+      "age": "adult",
+      "sex": "male",
+      "season": "any",
+      "marks": {
+        "bill": {
+          "colour": "black",
+          "shape": "huge, dagger-like"
+        },
+        "eye": {
+          "iris": null,
+          "ring": null
+        },
+        "legs": {
+          "colour": null
+        },
+        "head": {
+          "crown": [
+            "black",
+            "white"
+          ],
+          "face": [
+            "black",
+            "white"
+          ],
+          "throat": "white"
+        },
+        "upperparts": {
+          "back": [
+            "black",
+            "white"
+          ],
+          "rump": null
+        },
+        "underparts": {
+          "breast": "chestnut",
+          "belly": [
+            "white",
+            "black"
+          ]
+        },
+        "wings": {
+          "above": [
+            "black",
+            "white"
+          ],
+          "below": null,
+          "pattern": "underwing colour is not stated in the sources used here"
+        },
+        "tail": {
+          "colour": null,
+          "shape": null
+        }
+      }
+    },
+    {
+      "age": "adult",
+      "sex": "female",
+      "season": "any",
+      "marks": {
+        "bill": {
+          "colour": "black",
+          "shape": "huge, dagger-like"
+        },
+        "eye": {
+          "iris": null,
+          "ring": null
+        },
+        "legs": {
+          "colour": null
+        },
+        "head": {
+          "crown": [
+            "black",
+            "white"
+          ],
+          "face": [
+            "black",
+            "white"
+          ],
+          "throat": "white"
+        },
+        "upperparts": {
+          "back": [
+            "black",
+            "white"
+          ],
+          "rump": null
+        },
+        "underparts": {
+          "breast": [
+            "black",
+            "white"
+          ],
+          "belly": "chestnut"
+        },
+        "wings": {
+          "above": [
+            "black",
+            "white"
+          ],
+          "below": null,
+          "pattern": "chestnut underwing (eBird)"
+        },
+        "tail": {
+          "colour": null,
+          "shape": null
+        }
+      }
+    }
+  ],
+  "viewNotes": [
+    {
+      "view": "perched-front",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "On the male the chestnut sits across the breast and the belly is white. On the female the chestnut sits on the belly, below a black breast-band spotted white (eBird; Wikipedia)."
+    },
+    {
+      "view": "perched-back",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "From behind, the bird is dark with fine white spots, and the shaggy crest shows. The sexes cannot be told apart from the back."
+    },
+    {
+      "view": "flight-below",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "The female's underwing is chestnut, with the chestnut belly (eBird). The male's underwing colour is not stated in the sources used here."
+    },
+    {
+      "view": "flight-above",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "The upperwing is dark and white-spotted. No source consulted describes a sex difference from above."
+    }
+  ],
+  "calls": [
+    {
+      "sex": "any",
+      "type": "call",
+      "description": "A raucous 'kek-kek-kek-kek-kek', recalling a Hamerkop (Newman's); harsh, rapidly repeated 'kek' and 'kakh' calls (eBird); a loud 'wak wak wak' (Wikipedia). The Kruger recording near Skukuza was identified on the xeno-canto forum.",
+      "recordings": [
+        {
+          "key": "xeno-canto/XC1152464",
+          "source": "https://xeno-canto.org/1152464",
+          "fileUrl": "https://xeno-canto.org/sounds/uploaded/YSGTQVRQZI/XC1152464-20260520_KNP_AKaramitsos_XA60_A028C016_260520Y4_SLE_250HP_-3dB_Giant-Kingfisher.wav",
+          "author": "African Bioacoustics Community",
+          "license": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "aiGenerated": false,
+          "hosted": false
+        },
+        {
+          "key": "xeno-canto/XC694496",
+          "source": "https://xeno-canto.org/694496",
+          "fileUrl": "https://xeno-canto.org/sounds/uploaded/HMBDEWEZVS/XC694496-2%20G%20KFisher.mp3",
+          "author": "Tony Archer",
+          "license": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "aiGenerated": false,
+          "hosted": false
+        },
+        {
+          "key": "xeno-canto/XC811972",
+          "source": "https://xeno-canto.org/811972",
+          "fileUrl": "https://xeno-canto.org/sounds/uploaded/UWFNNKHNAE/XC811972-221206_1716.mp3",
+          "author": "Maarten Sluijter",
+          "license": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ]
+    }
+  ],
+  "images": [
+    {
+      "key": "megaceryle-maxima/male-front.jpg",
+      "view": "perched-front",
+      "age": "adult",
+      "sex": "male",
+      "season": "any",
+      "source": "https://commons.wikimedia.org/wiki/File:Giant_Kingfisher,_Megaceryle_maxima,_at_Kruger_National_Park,_South_Africa_-_male.jpg",
+      "fileUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bf/Giant_Kingfisher%2C_Megaceryle_maxima%2C_at_Kruger_National_Park%2C_South_Africa_-_male.jpg/1280px-Giant_Kingfisher%2C_Megaceryle_maxima%2C_at_Kruger_National_Park%2C_South_Africa_-_male.jpg",
+      "author": "Derek Keats",
+      "license": "CC BY 2.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by/2.0/",
+      "aiGenerated": false,
+      "hosted": false,
+      "alt": "Male Giant Kingfisher perched, front view, showing the chestnut breast; Kruger National Park.",
+      "caption": "Male Giant Kingfisher perched, front view, showing the chestnut breast; Kruger National Park."
+    },
+    {
+      "key": "megaceryle-maxima/male-side.jpg",
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "male",
+      "season": "any",
+      "source": "https://commons.wikimedia.org/wiki/File:Giant_Kingfisher_(Megaceryle_maxima)_male_..._(52513331652).jpg",
+      "fileUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/73/Giant_Kingfisher_%28Megaceryle_maxima%29_male_..._%2852513331652%29.jpg/1280px-Giant_Kingfisher_%28Megaceryle_maxima%29_male_..._%2852513331652%29.jpg",
+      "author": "Bernard Dupont",
+      "license": "CC BY-SA 2.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by-sa/2.0/",
+      "aiGenerated": false,
+      "hosted": false,
+      "alt": "Male Giant Kingfisher perched, side view; Sabie bridge area, Kruger National Park.",
+      "caption": "Male Giant Kingfisher perched, side view; Sabie bridge area, Kruger National Park."
+    },
+    {
+      "key": "megaceryle-maxima/female-side.jpg",
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "female",
+      "season": "any",
+      "source": "https://commons.wikimedia.org/wiki/File:Giant_Kingfisher_(Megaceryle_maximus)_female_(16502602066).jpg",
+      "fileUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/db/Giant_Kingfisher_%28Megaceryle_maximus%29_female_%2816502602066%29.jpg/1280px-Giant_Kingfisher_%28Megaceryle_maximus%29_female_%2816502602066%29.jpg",
+      "author": "Bernard Dupont",
+      "license": "CC BY-SA 2.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by-sa/2.0/",
+      "aiGenerated": false,
+      "hosted": false,
+      "alt": "Female Giant Kingfisher perched, side view, showing the chestnut belly; Kruger National Park.",
+      "caption": "Female Giant Kingfisher perched, side view, showing the chestnut belly; Kruger National Park."
+    },
+    {
+      "key": "megaceryle-maxima/perched-back.jpg",
+      "view": "perched-back",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "source": "https://commons.wikimedia.org/wiki/File:Giant_Kingfisher.jpg",
+      "fileUrl": "https://upload.wikimedia.org/wikipedia/commons/0/09/Giant_Kingfisher.jpg",
+      "author": "D. Gordon E. Robertson",
+      "license": "CC BY-SA 3.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "aiGenerated": false,
+      "hosted": false,
+      "alt": "Giant Kingfisher perched, back view, showing the white-spotted dark upperparts; Kruger National Park. Sex not determinable.",
+      "caption": "Giant Kingfisher perched, back view, showing the white-spotted dark upperparts; Kruger National Park. Sex not determinable."
+    },
+    {
+      "key": "megaceryle-maxima/female-flight-below.jpg",
+      "view": "flight-below",
+      "age": "adult",
+      "sex": "female",
+      "season": "any",
+      "source": "https://commons.wikimedia.org/wiki/File:Giant_Kingfisher,_Megaceryle_maxima_at_Rietvlei_Nature_Reserve,_South_Africa_(22257285286).jpg",
+      "fileUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7b/Giant_Kingfisher%2C_Megaceryle_maxima_at_Rietvlei_Nature_Reserve%2C_South_Africa_%2822257285286%29.jpg/1280px-Giant_Kingfisher%2C_Megaceryle_maxima_at_Rietvlei_Nature_Reserve%2C_South_Africa_%2822257285286%29.jpg",
+      "author": "Derek Keats",
+      "license": "CC BY 2.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by/2.0/",
+      "aiGenerated": false,
+      "hosted": false,
+      "alt": "Female Giant Kingfisher in flight, showing the chestnut belly and underwing; Rietvlei Nature Reserve, Gauteng.",
+      "caption": "Female Giant Kingfisher in flight, showing the chestnut belly and underwing; Rietvlei Nature Reserve, Gauteng."
+    },
+    {
+      "key": "megaceryle-maxima/flight-above.jpg",
+      "view": "flight-above",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "source": "https://commons.wikimedia.org/wiki/File:Giant_Kingfisher,_Megaceryle_maxima_at_Rietvlei_Nature_Reserve,_South_Africa_(21662279993).jpg",
+      "fileUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d7/Giant_Kingfisher%2C_Megaceryle_maxima_at_Rietvlei_Nature_Reserve%2C_South_Africa_%2821662279993%29.jpg/1280px-Giant_Kingfisher%2C_Megaceryle_maxima_at_Rietvlei_Nature_Reserve%2C_South_Africa_%2821662279993%29.jpg",
+      "author": "Derek Keats",
+      "license": "CC BY 2.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by/2.0/",
+      "aiGenerated": false,
+      "hosted": false,
+      "alt": "Giant Kingfisher in flight, carrying a crab, upperwing visible; Rietvlei Nature Reserve. Sex not determinable.",
+      "caption": "Giant Kingfisher in flight, carrying a crab, upperwing visible; Rietvlei Nature Reserve. Sex not determinable."
+    }
+  ],
+  "research": {
+    "confidence": "high",
+    "needsReview": false,
+    "note": "No seasonal plumage change is described. Juvenile plumage is not described. The female underwing is chestnut in eBird; the male underwing colour is not stated."
+  }
 }

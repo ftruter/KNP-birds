@@ -15,13 +15,45 @@
   "summary": "A very large, mostly black hornbill that walks the savanna in groups. Adults have bare red skin on the face and throat. White patches show in the wings in flight.",
   "sampleData": true,
   "population": {
-    "estimate": { "low": null, "high": null },
-    "unit": null,
+    "estimate": {
+      "low": 180,
+      "high": 180
+    },
+    "unit": "groups",
     "trend": "unknown",
-    "confidence": null,
-    "asOf": null,
-    "notes": "to be researched",
-    "sources": []
+    "confidence": "high",
+    "asOf": 2023,
+    "notes": "Tier A override: ~180 breeding groups in ~88% of KNP pentads (SANParks monitoring). Kemp 2001 baseline was 128–512 mature individuals (2^8).",
+    "sources": [
+      {
+        "title": "SANParks Scientific Services (2023). The thunderbird is trending thanks to citizen science.",
+        "url": "https://www.sanparks.org/conservation/scientific-services/stories/the-thunderbird-is-trending-thanks-to-citizen-science",
+        "publisher": "SANParks Scientific Services",
+        "year": 2023
+      },
+      {
+        "title": "Kemp A.C., Herholdt J.J., Whyte I. & Harrison J. (2001). Birds of the two largest national parks in South Africa: a method to generate estimates of population size for all species and assess their conservation ecology. S. Afr. J. Sci. 97: 393–403.",
+        "url": "https://journals.co.za/doi/pdf/10.10520/EJC97367",
+        "publisher": "South African Journal of Science",
+        "year": 2001
+      }
+    ],
+    "kemp": {
+      "paperName": "Southern Ground Hornbill",
+      "threshold": 256,
+      "thresholdExponent": 8,
+      "status": "RB"
+    },
+    "kempBaseline": {
+      "estimate": {
+        "low": 128,
+        "high": 512
+      },
+      "unit": "matureIndividuals",
+      "asOf": 2001,
+      "notes": "Kemp et al. 2001 order-of-magnitude threshold 2^8=256 mature individuals (resident breeder); paper interval half–double → 128–512."
+    },
+    "tierApplied": "A"
   },
   "variants": [
     {

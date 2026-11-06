@@ -7,22 +7,480 @@
     "af": "Bruinkopvisvanger"
   },
   "family": "alcedinidae",
-  "summary": "The details for this species have not been published yet.",
-  "sampleData": true,
+  "status": "resident",
+  "monthsPresent": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+  ],
+  "size": {
+    "lengthCm": {
+      "min": 22,
+      "max": 24
+    },
+    "note": "Newman's Birds gives 23–24 cm. Wikipedia gives about 22 cm."
+  },
+  "habitat": "Mixed bushveld, woodland, riverine forest and forest edges, and degraded areas with trees. Often in large gardens and parks. Usually hunts insects from a low branch away from water, and occasionally fishes.",
+  "summary": "A common dry-land kingfisher with a streaked brown head, a heavy red bill, a blue rump and tail, and a buffy streaked breast and flanks. Males have a black mantle and shoulders; females are brown there and, in Wikipedia, more streaked below. In flight the underwings are cinnamon. Wikipedia is the only source used here for carmine legs (recorded as red), a dark brown iris, and a brown bill tip; Newman's calls the bill wholly red.",
+  "sampleData": false,
+  "similar": [
+    {
+      "slug": "halcyon-leucocephala",
+      "note": "Grey-headed has a plain grey head and breast, a chestnut belly, and white-and-rufous (not all-cinnamon) underwings. Brown-hooded is larger, with a streaked brown head and streaked buffy breast and flanks (Newman's; eBird)."
+    },
+    {
+      "slug": "halcyon-chelicuti",
+      "note": "Striped is smaller and has a two-coloured bill (dark above, red below), a bold black eye-stripe to the nape and a white collar. Brown-hooded's bill is larger, heavier and wholly red (Newman's)."
+    },
+    {
+      "slug": "halcyon-senegalensis",
+      "note": "Woodland has a bicoloured bill (red above, black below), a bright turquoise-blue back, and white underparts and head (Newman's; eBird)."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Newman's Birds — Brown Hooded Kingfisher species page (text from Newman's Birds of Southern Africa)",
+      "url": "https://newmansbirds.com/birds/brown-hooded-kingfisher/",
+      "publisher": "Newman's Birds / Struik Nature (online edition)",
+      "year": null
+    },
+    {
+      "title": "The Atlas of Southern African Birds, Vol. 1, pp. 654–655",
+      "url": "https://sabap2.birdmap.africa/docs/sabap1/435.pdf",
+      "publisher": "BirdLife South Africa / Avian Demography Unit",
+      "year": 1997
+    },
+    {
+      "title": "Biodiversity Explorer species text (summarised from Roberts Birds of Southern Africa VIIth ed., Hockey, Dean & Ryan 2005)",
+      "url": "https://www.biodiversityexplorer.info/birds/dacelonidae/halcyon_albiventris.htm",
+      "publisher": "Iziko Museums of South Africa",
+      "year": null
+    },
+    {
+      "title": "eBird species account — Brown-hooded Kingfisher",
+      "url": "https://ebird.org/species/brhkin1",
+      "publisher": "Cornell Lab of Ornithology",
+      "year": null
+    },
+    {
+      "title": "Wikipedia — Brown-hooded kingfisher",
+      "url": "https://en.wikipedia.org/wiki/Brown-hooded_kingfisher",
+      "publisher": "Wikimedia Foundation",
+      "year": 2026
+    }
+  ],
   "population": {
     "estimate": {
-      "low": null,
-      "high": null
+      "low": 8192,
+      "high": 32768
     },
-    "unit": null,
+    "unit": "matureIndividuals",
     "trend": "unknown",
-    "confidence": null,
-    "asOf": null,
-    "notes": "to be researched",
-    "sources": []
+    "confidence": "low",
+    "asOf": 2001,
+    "notes": "Kemp et al. 2001 order-of-magnitude threshold 2^14=16384 mature individuals (resident breeder); paper interval half–double → 8192–32768.",
+    "sources": [
+      {
+        "title": "Kemp A.C., Herholdt J.J., Whyte I. & Harrison J. (2001). Birds of the two largest national parks in South Africa: a method to generate estimates of population size for all species and assess their conservation ecology. S. Afr. J. Sci. 97: 393–403.",
+        "url": "https://journals.co.za/doi/pdf/10.10520/EJC97367",
+        "publisher": "South African Journal of Science",
+        "year": 2001
+      }
+    ],
+    "kemp": {
+      "paperName": "Brownhooded Kingfisher",
+      "threshold": 16384,
+      "thresholdExponent": 14,
+      "status": "RB"
+    },
+    "tierApplied": "D"
   },
-  "variants": [],
-  "viewNotes": [],
-  "calls": [],
-  "images": []
+  "variants": [
+    {
+      "age": "adult",
+      "sex": "male",
+      "season": "any",
+      "marks": {
+        "bill": {
+          "colour": [
+            "red",
+            "brown"
+          ],
+          "shape": "heavy, dagger-like"
+        },
+        "eye": {
+          "iris": "brown",
+          "ring": null
+        },
+        "legs": {
+          "colour": "red"
+        },
+        "head": {
+          "crown": [
+            "brown",
+            "black"
+          ],
+          "face": "brown",
+          "throat": "white"
+        },
+        "upperparts": {
+          "back": "black",
+          "rump": "blue"
+        },
+        "underparts": {
+          "breast": [
+            "tawny",
+            "buff"
+          ],
+          "belly": "buff",
+          "pattern": "tawny breast with dark streaks (Wikipedia)"
+        },
+        "wings": {
+          "above": [
+            "black",
+            "blue"
+          ],
+          "below": "cinnamon"
+        },
+        "tail": {
+          "colour": "blue",
+          "shape": null
+        }
+      }
+    },
+    {
+      "age": "adult",
+      "sex": "female",
+      "season": "any",
+      "marks": {
+        "bill": {
+          "colour": [
+            "red",
+            "brown"
+          ],
+          "shape": "heavy, dagger-like"
+        },
+        "eye": {
+          "iris": "brown",
+          "ring": null
+        },
+        "legs": {
+          "colour": "red"
+        },
+        "head": {
+          "crown": [
+            "brown",
+            "black"
+          ],
+          "face": "brown",
+          "throat": "white"
+        },
+        "upperparts": {
+          "back": "brown",
+          "rump": "blue"
+        },
+        "underparts": {
+          "breast": [
+            "tawny",
+            "buff"
+          ],
+          "belly": "buff",
+          "pattern": "more heavily streaked underparts than the male (Wikipedia)"
+        },
+        "wings": {
+          "above": [
+            "brown",
+            "blue"
+          ],
+          "below": "cinnamon"
+        },
+        "tail": {
+          "colour": "blue",
+          "shape": null
+        }
+      }
+    },
+    {
+      "age": "juvenile",
+      "sex": "any",
+      "season": "any",
+      "marks": {
+        "bill": {
+          "colour": null,
+          "shape": null
+        },
+        "eye": {
+          "iris": null,
+          "ring": null
+        },
+        "legs": {
+          "colour": null
+        },
+        "head": {
+          "crown": null,
+          "face": null,
+          "throat": null
+        },
+        "upperparts": {
+          "back": null,
+          "rump": null
+        },
+        "underparts": {
+          "breast": [
+            "white",
+            "brown"
+          ],
+          "belly": null
+        },
+        "wings": {
+          "above": null,
+          "below": null
+        },
+        "tail": {
+          "colour": null,
+          "shape": null
+        }
+      }
+    }
+  ],
+  "viewNotes": [
+    {
+      "view": "perched-back",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "From behind, the male's mantle and shoulders are black and the female's are brown, against a blue rump and tail (Newman's)."
+    },
+    {
+      "view": "perched-front",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Front-on, look for the streaked tawny-buff breast and flanks and the heavy all-red bill."
+    },
+    {
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Side-on, the eye-stripe is less obvious than in Striped, and the bill is heavier and all red (Newman's)."
+    },
+    {
+      "view": "flight-below",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "The underwings are cinnamon in flight; in Grey-headed they are white and rufous (eBird)."
+    }
+  ],
+  "calls": [
+    {
+      "sex": "any",
+      "type": "call",
+      "description": "A loud, descending 'kik-kik-kik-kik' (Newman's); a short, descending 'ki-ti-ti-ti-it' (eBird); a sharp 'cheerit' when alarmed (Wikipedia). The Kruger recording near Skukuza was identified on the xeno-canto forum.",
+      "recordings": [
+        {
+          "key": "xeno-canto/XC1137527",
+          "source": "https://xeno-canto.org/1137527",
+          "fileUrl": "https://xeno-canto.org/sounds/uploaded/YSGTQVRQZI/XC1137527-20260509_KNP_AKaramitsos_XA60_A024C140_260509MY_SLE_-3dB_split_Unid2.wav",
+          "author": "African Bioacoustics Community",
+          "license": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "aiGenerated": false,
+          "hosted": false
+        },
+        {
+          "key": "xeno-canto/XC382948",
+          "source": "https://xeno-canto.org/382948",
+          "fileUrl": "https://xeno-canto.org/sounds/uploaded/TWAAJJHMEH/XC382948-Kingfisher%20BH_Mjejane_170708_03_B_edit.mp3",
+          "author": "Faansie Peacock",
+          "license": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "aiGenerated": false,
+          "hosted": false
+        },
+        {
+          "key": "xeno-canto/XC532199",
+          "source": "https://xeno-canto.org/532199",
+          "fileUrl": "https://xeno-canto.org/sounds/uploaded/RLSEYIEVCI/XC532199-Brown-hooded%20Kingfisher.mp3",
+          "author": "W.J. Rossouw",
+          "license": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ]
+    },
+    {
+      "sex": "any",
+      "type": "song",
+      "description": "Song is a 'tiiiu' or 'ki-ti-ti-ti' trill, given while vibrating the wings (Wikipedia). On XC952485 the recordist describes a male singing with raised wings and a female responding. That is one recording, not a published difference in the song.",
+      "recordings": [
+        {
+          "key": "xeno-canto/XC1141626",
+          "source": "https://xeno-canto.org/1141626",
+          "fileUrl": "https://xeno-canto.org/sounds/uploaded/WSTMKZEHKY/XC1141626-260220-083623-Brown-hooded-Kingfisher-A.wav",
+          "author": "Walter Wallner",
+          "license": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "aiGenerated": false,
+          "hosted": false
+        },
+        {
+          "key": "xeno-canto/XC952485",
+          "source": "https://xeno-canto.org/952485",
+          "fileUrl": "https://xeno-canto.org/sounds/uploaded/EGCCECBTGC/XC952485-Brown-hooded-Kingfisher-display-song-2024-03-22-06.35.wav",
+          "author": "Jenny Sharland",
+          "license": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ]
+    }
+  ],
+  "images": [
+    {
+      "key": "halcyon-albiventris/perched-front.jpg",
+      "view": "perched-front",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "source": "https://commons.wikimedia.org/wiki/File:Brown-hooded_Kingfisher_(Halcyon_albiventris)_(52516321036).jpg",
+      "fileUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e3/Brown-hooded_Kingfisher_%28Halcyon_albiventris%29_%2852516321036%29.jpg/1280px-Brown-hooded_Kingfisher_%28Halcyon_albiventris%29_%2852516321036%29.jpg",
+      "author": "Bernard Dupont",
+      "license": "CC BY-SA 2.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by-sa/2.0/",
+      "aiGenerated": false,
+      "hosted": false,
+      "alt": "Brown-hooded Kingfisher perched, front view; H10, Kruger National Park. Sex not determinable from the image.",
+      "caption": "Brown-hooded Kingfisher perched, front view; H10, Kruger National Park. Sex not determinable from the image."
+    },
+    {
+      "key": "halcyon-albiventris/male-front.jpg",
+      "view": "perched-front",
+      "age": "adult",
+      "sex": "male",
+      "season": "any",
+      "source": "https://commons.wikimedia.org/wiki/File:Male_Brown-hooded_Kingfisher,_Halcyon_albiventris_singing_for_his_mate,_Tzaneen_area,_Limpopo,_South_Africa_(14690551380).jpg",
+      "fileUrl": "https://upload.wikimedia.org/wikipedia/commons/4/49/Male_Brown-hooded_Kingfisher%2C_Halcyon_albiventris_singing_for_his_mate%2C_Tzaneen_area%2C_Limpopo%2C_South_Africa_%2814690551380%29.jpg",
+      "author": "Derek Keats",
+      "license": "CC BY 2.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by/2.0/",
+      "aiGenerated": false,
+      "hosted": false,
+      "alt": "Male Brown-hooded Kingfisher singing, front view; Tzaneen, Limpopo (sex as given by the photographer).",
+      "caption": "Male Brown-hooded Kingfisher singing, front view; Tzaneen, Limpopo (sex as given by the photographer)."
+    },
+    {
+      "key": "halcyon-albiventris/male-side.jpg",
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "male",
+      "season": "any",
+      "source": "https://commons.wikimedia.org/wiki/File:Halcyon_albiventris_(male).jpg",
+      "fileUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/97/Halcyon_albiventris_%28male%29.jpg/1280px-Halcyon_albiventris_%28male%29.jpg",
+      "author": "Hans Hillewaert",
+      "license": "CC BY-SA 3.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "aiGenerated": false,
+      "hosted": false,
+      "alt": "Male Brown-hooded Kingfisher perched, side view, showing the black back; Zambia.",
+      "caption": "Male Brown-hooded Kingfisher perched, side view, showing the black back; Zambia."
+    },
+    {
+      "key": "halcyon-albiventris/male-back.jpg",
+      "view": "perched-back",
+      "age": "adult",
+      "sex": "male",
+      "season": "any",
+      "source": "https://commons.wikimedia.org/wiki/File:Brown-hooded_kingfisher_(Halcyon_albiventris)_male_Phinda.jpg",
+      "fileUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6b/Brown-hooded_kingfisher_%28Halcyon_albiventris%29_male_Phinda.jpg/1280px-Brown-hooded_kingfisher_%28Halcyon_albiventris%29_male_Phinda.jpg",
+      "author": "Charles J. Sharp",
+      "license": "CC BY-SA 4.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "aiGenerated": false,
+      "hosted": false,
+      "alt": "Male Brown-hooded Kingfisher, rear three-quarter view, showing the black mantle and blue rump; Phinda, KwaZulu-Natal.",
+      "caption": "Male Brown-hooded Kingfisher, rear three-quarter view, showing the black mantle and blue rump; Phinda, KwaZulu-Natal."
+    },
+    {
+      "key": "halcyon-albiventris/female-back.jpg",
+      "view": "perched-back",
+      "age": "adult",
+      "sex": "female",
+      "season": "any",
+      "source": "https://www.inaturalist.org/observations/167487549",
+      "fileUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/290149347/large.jpeg",
+      "author": "Peter Vos",
+      "license": "CC BY-NC 4.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+      "aiGenerated": false,
+      "hosted": false,
+      "alt": "Female Brown-hooded Kingfisher, back/side view, showing the brown (not black) back and wing-coverts; Port Shepstone, KwaZulu-Natal.",
+      "caption": "Female Brown-hooded Kingfisher, back/side view, showing the brown (not black) back and wing-coverts; Port Shepstone, KwaZulu-Natal."
+    },
+    {
+      "key": "halcyon-albiventris/female-front.jpg",
+      "view": "perched-front",
+      "age": "adult",
+      "sex": "female",
+      "season": "any",
+      "source": "https://www.inaturalist.org/observations/66572742",
+      "fileUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/107349076/large.jpeg",
+      "author": "Colin Ralston",
+      "license": "CC BY-NC 4.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+      "aiGenerated": false,
+      "hosted": false,
+      "alt": "Female Brown-hooded Kingfisher, front view, showing the streaked breast; Garden Route Botanical Garden, George.",
+      "caption": "Female Brown-hooded Kingfisher, front view, showing the streaked breast; Garden Route Botanical Garden, George."
+    },
+    {
+      "key": "halcyon-albiventris/juvenile-side.jpg",
+      "view": "perched-side",
+      "age": "juvenile",
+      "sex": "any",
+      "season": "any",
+      "source": "https://commons.wikimedia.org/wiki/File:Juvenile_Brown-hooded_Kingfisher_(Halcyon_albiventris).jpg",
+      "fileUrl": "https://upload.wikimedia.org/wikipedia/commons/9/9a/Juvenile_Brown-hooded_Kingfisher_%28Halcyon_albiventris%29.jpg",
+      "author": "Alan Manson",
+      "license": "CC BY-SA 2.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by-sa/2.0/",
+      "aiGenerated": false,
+      "hosted": false,
+      "alt": "Juvenile Brown-hooded Kingfisher just out of the nest.",
+      "caption": "Juvenile Brown-hooded Kingfisher just out of the nest."
+    },
+    {
+      "key": "halcyon-albiventris/juvenile-front.jpg",
+      "view": "perched-front",
+      "age": "juvenile",
+      "sex": "any",
+      "season": "any",
+      "source": "https://www.inaturalist.org/observations/64650299",
+      "fileUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/103965546/large.jpeg",
+      "author": "Peter Vos",
+      "license": "CC BY-NC 4.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+      "aiGenerated": false,
+      "hosted": false,
+      "alt": "Juvenile Brown-hooded Kingfisher with a dark bill and scaly breast; KwaZulu-Natal (observer location given as \"Home\").",
+      "caption": "Juvenile Brown-hooded Kingfisher with a dark bill and scaly breast; KwaZulu-Natal (observer location given as \"Home\")."
+    }
+  ],
+  "research": {
+    "confidence": "medium",
+    "needsReview": false,
+    "note": "Leg colour, iris and the brown bill tip are from Wikipedia only. Newman's calls the bill wholly red and separates the sexes by brown versus black wings and shoulders. No flight photograph was verified."
+  }
 }

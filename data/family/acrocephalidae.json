@@ -73,11 +73,15 @@
       }
     }
   ],
-  "iconicSpecies": [],
+  "iconicSpecies": [
+    "acrocephalus-arundinaceus",
+    "hippolais-icterina",
+    "acrocephalus-gracilirostris"
+  ],
   "population": {
-    "low": null,
-    "high": null,
-    "speciesCounted": 0,
+    "low": 6720,
+    "high": 26880,
+    "speciesCounted": 7,
     "speciesTotal": 8,
     "complete": false
   }

@@ -9,9 +9,12 @@
  * species files, then the script prints bulk-put JSON. Without --write it
  * prints the files as they are. Derived fields are not edited by hand.
  * `npm run deploy` always derives first and uploads the remote namespace.
- * A family index population is 0 when no species estimate is known. A species
- * index population stays null in that case. iconicSpecies is empty when no
- * species in the family has an estimate.
+ * A family index population is 0 when no mature-individual estimate is known.
+ * A species index population stays null in that case, including when the
+ * species is counted in another unit. iconicSpecies is empty when no species
+ * in the family has a mature-individual estimate. Family totals add only
+ * matureIndividuals. Groups, breeding pairs, and territories are left out,
+ * and the total is partial when any species is left out.
  * Keys:
  *   data/species/<slug>.json → species/<slug>
  *   data/family/<slug>.json  → family/<slug>
@@ -20,16 +23,15 @@
  *
  * index/credits is derived here too. Media lines come from species images,
  * call recordings, and population sources. The checklist list is fixed, from
- * docs/families-sources.md and docs/species-sources.md. A licence is null
- * when it is not known. The page says so, and this script does not invent one.
+ * docs/families-sources.md, docs/species-sources.md, and
+ * docs/population-sources.md. A licence is null when it is not known. The
+ * page says so, and this script does not invent one.
  */
 import { readdir, readFile, writeFile } from 'node:fs/promises'
 import path from 'node:path'
 import { fileURLToPath } from 'node:url'
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..')
-
-const COUNTABLE_UNITS = new Set(['individuals', 'pairs', 'breeding pairs'])
 
 export const speciesNames = (species) => {
   const source = species?.commonNames || species?.names || {}
@@ -47,24 +49,22 @@ export const embedSpecies = (species) => ({
   names: speciesNames(species),
 })
 
-/** A species counts only when both bounds and a unit are present. */
-export const countedIndividuals = (species) => {
+/** Family totals add mature individuals only. Other units are not converted. */
+export const countedMatureIndividuals = (species) => {
   const population = species?.population
-  const unit = population?.unit
   const low = population?.estimate?.low
   const high = population?.estimate?.high
   if (
-    !COUNTABLE_UNITS.has(unit) ||
+    population?.unit !== 'matureIndividuals' ||
     !Number.isInteger(low) ||
     !Number.isInteger(high)
   )
     return null
-  const factor = unit === 'individuals' ? 1 : 2
-  return { low: low * factor, high: high * factor }
+  return { low, high }
 }
 
 export const individualMidpoint = (species) => {
-  const counted = countedIndividuals(species)
+  const counted = countedMatureIndividuals(species)
   if (!counted) return null
   return Math.round((counted.low + counted.high) / 2)
 }
@@ -78,7 +78,7 @@ export const totalMidpoint = (population) => {
 const compareScientificName = (a, b) =>
   a.localeCompare(b, 'en', { sensitivity: 'base' }) || a.localeCompare(b, 'en')
 
-/** Up to three slugs, highest population midpoint first. Species with no estimate are left out. */
+/** Up to three slugs, highest mature-individual midpoint first. Other units are left out. */
 export const iconicSpecies = (speciesDocs) =>
   speciesDocs
     .filter((species) => individualMidpoint(species) != null)
@@ -111,7 +111,7 @@ const dictionaryByScientificName = (rows) => {
 
 export const familyPopulation = (speciesDocs) => {
   const speciesTotal = speciesDocs.length
-  const counted = speciesDocs.map(countedIndividuals).filter(Boolean)
+  const counted = speciesDocs.map(countedMatureIndividuals).filter(Boolean)
   const complete = speciesTotal > 0 && counted.length === speciesTotal
   if (counted.length === 0) {
     return {
@@ -252,6 +252,20 @@ const speciesCredits = (species) => {
 }
 
 const DATA_SOURCES = [
+  {
+    name: 'Kemp, Herholdt, Whyte & Harrison 2001',
+    url: 'https://journals.co.za/doi/pdf/10.10520/EJC97367',
+    links: [
+      {
+        label: 'Sabinet archive PDF',
+        url: 'http://reference.sabinet.co.za/webx/access/electronic_journals/sajsci/sajsci_v97_n9_a16.pdf',
+      },
+    ],
+    usedFor:
+      'Order-of-magnitude Kruger population thresholds. Kemp et al. (2001) estimated mature individuals capable of reproduction, snapped to a power of two. For a threshold T the range stored here is T/2 to 2T. Resident breeders use the lower neighbouring threshold; visiting breeders and non-breeding visitors use the upper neighbouring threshold. These figures are not a park census. Ambiguous taxonomy and species with no Kemp row have no number. Four later park surveys replace the Kemp range and keep it as a baseline. This site cites the numbers and does not host the PDF or the appendix.',
+    licence: null,
+    licenceUrl: null,
+  },
   {
     name: 'Birda SABAP2 Kruger checklist',
     url: 'https://birda.org/kruger-national-park-birding-checklist/',

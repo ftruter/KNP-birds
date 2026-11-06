@@ -34,12 +34,16 @@
       }
     }
   ],
-  "iconicSpecies": [],
+  "iconicSpecies": [
+    "corvus-albus",
+    "corvus-albicollis",
+    "corvus-capensis"
+  ],
   "population": {
-    "low": null,
-    "high": null,
-    "speciesCounted": 0,
+    "low": 11,
+    "high": 44,
+    "speciesCounted": 3,
     "speciesTotal": 3,
-    "complete": false
+    "complete": true
   }
 }
