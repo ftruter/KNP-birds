@@ -26,12 +26,15 @@
       }
     }
   ],
-  "iconicSpecies": [],
+  "iconicSpecies": [
+    "actophilornis-africanus",
+    "microparra-capensis"
+  ],
   "population": {
-    "low": null,
-    "high": null,
-    "speciesCounted": 0,
+    "low": 1032,
+    "high": 4128,
+    "speciesCounted": 2,
     "speciesTotal": 2,
-    "complete": false
+    "complete": true
   }
 }

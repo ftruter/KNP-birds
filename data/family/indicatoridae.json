@@ -42,12 +42,16 @@
       }
     }
   ],
-  "iconicSpecies": [],
+  "iconicSpecies": [
+    "indicator-indicator",
+    "indicator-minor",
+    "prodotiscus-regulus"
+  ],
   "population": {
-    "low": null,
-    "high": null,
-    "speciesCounted": 0,
+    "low": 8720,
+    "high": 34880,
+    "speciesCounted": 4,
     "speciesTotal": 4,
-    "complete": false
+    "complete": true
   }
 }

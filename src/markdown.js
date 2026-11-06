@@ -14,9 +14,11 @@ import {
   englishName,
   speciesDetailsPublished,
   UNPUBLISHED_SPECIES,
+  FAMILY_TOTAL_INTRO,
   familyIndexPopulationLine,
   familyLabel,
   familyTotalModel,
+  HOME_POPULATION_INTRO,
   imageAlt,
   indexPopulationLine,
   indexRows,
@@ -51,7 +53,7 @@ Resident species are included, plus summer migrants. Rare vagrants are left out.
 5. A perched or walking bird, from the front, the back and the side
 6. Calls and songs of males and females
 
-Age, season and sex come from diffing structured field marks. Null means unknown. Flight and perched views use notes and photographs. Population figures are an ${APPROXIMATE_LABEL.toLowerCase()}. Kruger has no formal bird census.
+Age, season and sex come from diffing structured field marks. Null means unknown. Flight and perched views use notes and photographs. ${HOME_POPULATION_INTRO}
 
 ## Species
 
@@ -173,7 +175,7 @@ ${af ? `${af}\n\n` : ''}${details}
 
 ## Population
 
-**${APPROXIMATE_LABEL}.** Kruger has no formal bird census. Any figure here is approximate.
+**${APPROXIMATE_LABEL}.**
 
 ${population.range || 'No numeric estimate yet.'}
 
@@ -181,7 +183,7 @@ Trend: ${population.trend}.
 
 ${population.notes}
 
-${population.confidence ? `Confidence: ${population.confidence}.\n\n` : ''}${population.asOf ? `As of ${population.asOf}.\n\n` : ''}### Sources
+${population.baseline ? `${population.baseline}\n\n` : ''}${population.confidence ? `Confidence: ${population.confidence}.\n\n` : ''}${population.asOf ? `As of ${population.asOf}.\n\n` : ''}### Sources
 
 ${population.sources.length === 0 ? 'No sources cited yet.' : population.sources.map((source) => sourceLine(source)).join('\n')}`
   return pageMd({
@@ -234,7 +236,7 @@ const familyPopulationMarkdown = (population) => {
   const model = familyTotalModel(population)
   return `## Population
 
-**${APPROXIMATE_TOTAL}.** Kruger has no formal bird census. This adds up the species estimates and counts every pair as two individuals.
+**${APPROXIMATE_TOTAL}.** ${FAMILY_TOTAL_INTRO}
 
 ${model.range || 'No numeric total yet.'}
 

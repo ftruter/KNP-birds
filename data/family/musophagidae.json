@@ -26,11 +26,13 @@
       }
     }
   ],
-  "iconicSpecies": [],
+  "iconicSpecies": [
+    "crinifer-concolor"
+  ],
   "population": {
-    "low": null,
-    "high": null,
-    "speciesCounted": 0,
+    "low": 32768,
+    "high": 131072,
+    "speciesCounted": 1,
     "speciesTotal": 2,
     "complete": false
   }

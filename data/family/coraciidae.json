@@ -50,12 +50,16 @@
       }
     }
   ],
-  "iconicSpecies": [],
+  "iconicSpecies": [
+    "coracias-caudatus",
+    "coracias-garrulus",
+    "coracias-naevius"
+  ],
   "population": {
-    "low": null,
-    "high": null,
-    "speciesCounted": 0,
+    "low": 18960,
+    "high": 75840,
+    "speciesCounted": 5,
     "speciesTotal": 5,
-    "complete": false
+    "complete": true
   }
 }

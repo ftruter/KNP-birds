@@ -18,12 +18,14 @@
       }
     }
   ],
-  "iconicSpecies": [],
+  "iconicSpecies": [
+    "scopus-umbretta"
+  ],
   "population": {
-    "low": null,
-    "high": null,
-    "speciesCounted": 0,
+    "low": 512,
+    "high": 2048,
+    "speciesCounted": 1,
     "speciesTotal": 1,
-    "complete": false
+    "complete": true
   }
 }

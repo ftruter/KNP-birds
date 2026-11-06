@@ -106,12 +106,16 @@
       }
     }
   ],
-  "iconicSpecies": [],
+  "iconicSpecies": [
+    "dryoscopus-cubla",
+    "laniarius-ferrugineus",
+    "nilaus-afer"
+  ],
   "population": {
-    "low": null,
-    "high": null,
-    "speciesCounted": 0,
+    "low": 227409,
+    "high": 909636,
+    "speciesCounted": 12,
     "speciesTotal": 12,
-    "complete": false
+    "complete": true
   }
 }

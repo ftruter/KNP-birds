@@ -122,11 +122,15 @@
       }
     }
   ],
-  "iconicSpecies": [],
+  "iconicSpecies": [
+    "chrysococcyx-caprius",
+    "centropus-burchellii",
+    "chrysococcyx-klaas"
+  ],
   "population": {
-    "low": null,
-    "high": null,
-    "speciesCounted": 0,
+    "low": 58901,
+    "high": 235604,
+    "speciesCounted": 13,
     "speciesTotal": 14,
     "complete": false
   }

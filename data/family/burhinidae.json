@@ -26,12 +26,15 @@
       }
     }
   ],
-  "iconicSpecies": [],
+  "iconicSpecies": [
+    "burhinus-capensis",
+    "burhinus-vermiculatus"
+  ],
   "population": {
-    "low": null,
-    "high": null,
-    "speciesCounted": 0,
+    "low": 5120,
+    "high": 20480,
+    "speciesCounted": 2,
     "speciesTotal": 2,
-    "complete": false
+    "complete": true
   }
 }

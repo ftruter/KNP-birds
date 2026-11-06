@@ -58,12 +58,16 @@
       }
     }
   ],
-  "iconicSpecies": [],
+  "iconicSpecies": [
+    "caprimulgus-fossii",
+    "caprimulgus-pectoralis",
+    "caprimulgus-tristigma"
+  ],
   "population": {
-    "low": null,
-    "high": null,
-    "speciesCounted": 0,
+    "low": 67600,
+    "high": 270400,
+    "speciesCounted": 6,
     "speciesTotal": 6,
-    "complete": false
+    "complete": true
   }
 }

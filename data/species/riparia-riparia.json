@@ -11,15 +11,29 @@
   "sampleData": true,
   "population": {
     "estimate": {
-      "low": null,
-      "high": null
+      "low": 64,
+      "high": 256
     },
-    "unit": null,
+    "unit": "matureIndividuals",
     "trend": "unknown",
-    "confidence": null,
-    "asOf": null,
-    "notes": "to be researched",
-    "sources": []
+    "confidence": "low",
+    "asOf": 2001,
+    "notes": "Kemp et al. 2001 order-of-magnitude threshold 2^7=128 mature individuals (non-breeding visitor); paper interval half–double → 64–256.",
+    "sources": [
+      {
+        "title": "Kemp A.C., Herholdt J.J., Whyte I. & Harrison J. (2001). Birds of the two largest national parks in South Africa: a method to generate estimates of population size for all species and assess their conservation ecology. S. Afr. J. Sci. 97: 393–403.",
+        "url": "https://journals.co.za/doi/pdf/10.10520/EJC97367",
+        "publisher": "South African Journal of Science",
+        "year": 2001
+      }
+    ],
+    "kemp": {
+      "paperName": "Sand Martin",
+      "threshold": 128,
+      "thresholdExponent": 7,
+      "status": "NB"
+    },
+    "tierApplied": "D"
   },
   "variants": [],
   "viewNotes": [],

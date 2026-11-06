@@ -2,7 +2,7 @@
 
 **Date:** 2026-10-30 (Africa/Johannesburg)  
 **Deliverable:** `data/index/families.json`  
-**Scope:** Bird families that regularly occur in Kruger National Park (and Marloth Park / south of the Crocodile River): residents, regular migrants, and regular visitors. Families represented only by rare/accidental vagrants are excluded. Population counts are `0` for every family (to be derived later from species).
+**Scope:** Bird families that regularly occur in Kruger National Park (and Marloth Park / south of the Crocodile River): residents, regular migrants, and regular visitors. Families represented only by rare/accidental vagrants are excluded. Family population totals are derived from species documents by `scripts/seed.mjs`. When this list was first written, every family total was `0` because no species estimate had been entered. See [population-sources.md](population-sources.md).
 
 ## Family count
 
@@ -22,7 +22,7 @@ Keyed dictionary (scientific family name → `{ en, af, population }`), keys sor
 | Bucorvidae | Ground-hornbills / Bromvoëls | same |
 | Coraciidae | Rollers / Troupante | same |
 
-`population` is `0` here (sample had `null`); per product request for this seed step.
+`population` was `0` here when the list was first written (the sample had `null`). `scripts/seed.mjs` now fills it from species estimates. Unknown family totals stay `0`.
 
 ## Sources
 

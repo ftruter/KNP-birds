@@ -11,15 +11,44 @@
   "sampleData": true,
   "population": {
     "estimate": {
-      "low": null,
-      "high": null
+      "low": 25,
+      "high": 30
     },
-    "unit": null,
+    "unit": "breedingPairs",
     "trend": "unknown",
-    "confidence": null,
-    "asOf": null,
-    "notes": "to be researched",
-    "sources": []
+    "confidence": "medium",
+    "asOf": 2015,
+    "notes": "Tier A override: SANParks 25–30 breeding pairs (+ few non-breeders). Kemp 2001 baseline was 16–64 mature individuals (2^5, visiting breeder).",
+    "sources": [
+      {
+        "title": "SANParks — Kruger’s Big 6",
+        "url": "https://www.sanparks.org/travel/plan/groups/birders/krugers-big-6",
+        "publisher": "SANParks",
+        "year": null
+      },
+      {
+        "title": "Kemp A.C., Herholdt J.J., Whyte I. & Harrison J. (2001). Birds of the two largest national parks in South Africa: a method to generate estimates of population size for all species and assess their conservation ecology. S. Afr. J. Sci. 97: 393–403.",
+        "url": "https://journals.co.za/doi/pdf/10.10520/EJC97367",
+        "publisher": "South African Journal of Science",
+        "year": 2001
+      }
+    ],
+    "kemp": {
+      "paperName": "Saddlebilled Stork",
+      "threshold": 32,
+      "thresholdExponent": 5,
+      "status": "VB"
+    },
+    "kempBaseline": {
+      "estimate": {
+        "low": 16,
+        "high": 64
+      },
+      "unit": "matureIndividuals",
+      "asOf": 2001,
+      "notes": "Kemp et al. 2001 order-of-magnitude threshold 2^5=32 mature individuals (visiting breeder); paper interval half–double → 16–64."
+    },
+    "tierApplied": "A"
   },
   "variants": [],
   "viewNotes": [],

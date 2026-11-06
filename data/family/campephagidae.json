@@ -34,12 +34,16 @@
       }
     }
   ],
-  "iconicSpecies": [],
+  "iconicSpecies": [
+    "campephaga-flava",
+    "ceblepyris-pectoralis",
+    "ceblepyris-caesius"
+  ],
   "population": {
-    "low": null,
-    "high": null,
-    "speciesCounted": 0,
+    "low": 4114,
+    "high": 16456,
+    "speciesCounted": 3,
     "speciesTotal": 3,
-    "complete": false
+    "complete": true
   }
 }

@@ -25,11 +25,13 @@
       }
     }
   ],
-  "iconicSpecies": [],
+  "iconicSpecies": [
+    "phylloscopus-trochilus"
+  ],
   "population": {
-    "low": null,
-    "high": null,
-    "speciesCounted": 0,
+    "low": 16384,
+    "high": 65536,
+    "speciesCounted": 1,
     "speciesTotal": 2,
     "complete": false
   }

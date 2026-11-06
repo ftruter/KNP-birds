@@ -90,12 +90,16 @@
       }
     }
   ],
-  "iconicSpecies": [],
+  "iconicSpecies": [
+    "zapornia-flavirostra",
+    "paragallinula-angulata",
+    "crex-crex"
+  ],
   "population": {
-    "low": null,
-    "high": null,
-    "speciesCounted": 0,
+    "low": 2552,
+    "high": 10208,
+    "speciesCounted": 10,
     "speciesTotal": 10,
-    "complete": false
+    "complete": true
   }
 }

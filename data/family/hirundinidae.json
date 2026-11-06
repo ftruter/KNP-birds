@@ -122,12 +122,16 @@
       }
     }
   ],
-  "iconicSpecies": [],
+  "iconicSpecies": [
+    "hirundo-rustica",
+    "cecropis-abyssinica",
+    "cecropis-semirufa"
+  ],
   "population": {
-    "low": null,
-    "high": null,
-    "speciesCounted": 0,
+    "low": 70721,
+    "high": 282884,
+    "speciesCounted": 14,
     "speciesTotal": 14,
-    "complete": false
+    "complete": true
   }
 }

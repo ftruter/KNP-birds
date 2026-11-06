@@ -82,11 +82,15 @@
       }
     }
   ],
-  "iconicSpecies": [],
+  "iconicSpecies": [
+    "glaucidium-perlatum",
+    "otus-senegalensis",
+    "ptilopsis-granti"
+  ],
   "population": {
-    "low": null,
-    "high": null,
-    "speciesCounted": 0,
+    "low": 18848,
+    "high": 75392,
+    "speciesCounted": 8,
     "speciesTotal": 9,
     "complete": false
   }

@@ -114,12 +114,16 @@
       }
     }
   ],
-  "iconicSpecies": [],
+  "iconicSpecies": [
+    "spilopelia-senegalensis",
+    "streptopelia-capicola",
+    "turtur-chalcospilos"
+  ],
   "population": {
-    "low": null,
-    "high": null,
-    "speciesCounted": 0,
+    "low": 195622,
+    "high": 782488,
+    "speciesCounted": 13,
     "speciesTotal": 13,
-    "complete": false
+    "complete": true
   }
 }

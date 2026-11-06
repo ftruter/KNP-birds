@@ -41,11 +41,15 @@
       }
     }
   ],
-  "iconicSpecies": [],
+  "iconicSpecies": [
+    "bradypterus-baboecala",
+    "catriscus-brevirostris",
+    "locustella-fluviatilis"
+  ],
   "population": {
-    "low": null,
-    "high": null,
-    "speciesCounted": 0,
+    "low": 1088,
+    "high": 4352,
+    "speciesCounted": 3,
     "speciesTotal": 4,
     "complete": false
   }

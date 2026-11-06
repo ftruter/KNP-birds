@@ -85,7 +85,11 @@ test('species HTML has the six comparisons, population, and no client script', a
   assert.match(html, /fill="#B07CC8"/)
   assert.match(html, /class="population"/)
   assert.match(html, /Approximate estimate/)
-  assert.match(html, /No numeric estimate yet/)
+  assert.match(html, /8192–32768 mature individuals/)
+  assert.match(html, /Kemp et al\. 2001/)
+  assert.match(html, /Confidence: Low/)
+  assert.match(html, /As of 2001/)
+  assert.doesNotMatch(html, /No numeric estimate yet/)
   assert.match(html, /Months in Kruger/)
   assert.match(html, /All year/)
   assert.match(html, /Habitat/)
@@ -176,8 +180,10 @@ test('a family page shows the derived approximate total', async () => {
     plates: [{ doc: roller, imagesAvailable: {} }],
   })
   assert.match(html, /Approximate total/)
-  assert.match(html, /Includes 0 of 5 species/)
-  assert.match(html, /This total is incomplete/)
+  assert.match(html, /18960–75840 mature individuals/)
+  assert.match(html, /Includes 5 of 5 species/)
+  assert.match(html, /mature-individual estimates only/)
+  assert.doesNotMatch(html, /This total is incomplete/)
   assert.match(html, /First to look for/)
   assert.ok(
     html.indexOf('First to look for') < html.indexOf('Species in this family'),
@@ -189,8 +195,9 @@ test('a family page shows the derived approximate total', async () => {
     { doc: roller, imagesAvailable: {} },
   ])
   assert.match(markdown, /\*\*Approximate total\.\*\*/)
-  assert.match(markdown, /Includes 0 of 5 species/)
-  assert.match(markdown, /This total is incomplete/)
+  assert.match(markdown, /18960–75840 mature individuals/)
+  assert.match(markdown, /Includes 5 of 5 species/)
+  assert.doesNotMatch(markdown, /This total is incomplete/)
   assert.match(markdown, /## First to look for/)
 })
 
@@ -296,7 +303,12 @@ test('markdown and json-facing copy keep the population label', async () => {
   assert.match(markdown, /^# Southern Ground-Hornbill/)
   assert.match(markdown, /text\/markdown|Also available as \[HTML\]/)
   assert.match(markdown, /\*\*Approximate estimate\.\*\*/)
-  assert.match(markdown, /to be researched/)
+  assert.match(markdown, /180 groups/)
+  assert.match(
+    markdown,
+    /baseline kept for comparison: 128–512 mature individuals/,
+  )
+  assert.match(markdown, /Kemp et al\. 2001/)
   assert.match(markdown, /No visible difference/)
   assert.match(markdown, /red \(#B4232C\)/)
   assert.match(markdown, /Sample content, to be verified/)
@@ -315,8 +327,22 @@ test('a species stub states that details are unpublished and skips empty section
   assert.match(html, /class="afrikaans">Volstruis</)
   assert.match(html, new RegExp(UNPUBLISHED_SPECIES))
   assert.match(html, /href="\/family\/struthionidae"/)
-  assert.match(html, /No numeric estimate yet/)
-  assert.match(html, /to be researched/)
+  assert.match(html, /128–512 mature individuals/)
+  assert.match(html, /Kemp et al\. 2001/)
+  assert.doesNotMatch(html, /No numeric estimate yet/)
+  const unsourced = await readJson('data/species/buteo-buteo.json')
+  const unsourcedHtml = renderSpeciesHtml({
+    origin: 'https://birds.truter.world',
+    doc: unsourced,
+    colourMap: new Map(),
+    imagesAvailable: {},
+  })
+  assert.match(unsourcedHtml, /No numeric estimate yet/)
+  assert.match(
+    unsourcedHtml,
+    /No sourced Kruger estimate is currently available/,
+  )
+  assert.doesNotMatch(unsourcedHtml, /8192|2048|1024/)
   assert.doesNotMatch(html, /Telling it apart/)
   assert.doesNotMatch(html, /Chick and juvenile/)
   assert.doesNotMatch(html, /No photograph is stored/)
@@ -461,7 +487,10 @@ test('the credits page names sources, taxonomy, and the site, and credits media 
     assert.ok(html.includes(name), name)
     assert.ok(markdown.includes(name), name)
   }
-  assert.equal((html.match(/Licence unknown\./g) || []).length, 5)
+  assert.match(html, /Kemp, Herholdt, Whyte &amp; Harrison 2001/)
+  assert.match(markdown, /Kemp, Herholdt, Whyte & Harrison 2001/)
+  assert.match(html, /T\/2 to 2T/)
+  assert.equal((html.match(/Licence unknown\./g) || []).length, 6)
   assert.match(html, /CC BY-SA 4\.0/)
   assert.match(
     html,

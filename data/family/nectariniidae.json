@@ -90,11 +90,15 @@
       }
     }
   ],
-  "iconicSpecies": [],
+  "iconicSpecies": [
+    "cinnyris-talatala",
+    "cinnyris-mariquensis",
+    "chalcomitra-senegalensis"
+  ],
   "population": {
-    "low": null,
-    "high": null,
-    "speciesCounted": 0,
+    "low": 57864,
+    "high": 231456,
+    "speciesCounted": 6,
     "speciesTotal": 10,
     "complete": false
   }

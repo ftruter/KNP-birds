@@ -82,11 +82,15 @@
       }
     }
   ],
-  "iconicSpecies": [],
+  "iconicSpecies": [
+    "creatophora-cinerea",
+    "cinnyricinclus-leucogaster",
+    "lamprotornis-chalybaeus"
+  ],
   "population": {
-    "low": null,
-    "high": null,
-    "speciesCounted": 0,
+    "low": 125088,
+    "high": 500352,
+    "speciesCounted": 8,
     "speciesTotal": 9,
     "complete": false
   }

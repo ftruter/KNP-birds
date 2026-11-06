@@ -66,12 +66,16 @@
       }
     }
   ],
-  "iconicSpecies": [],
+  "iconicSpecies": [
+    "vidua-macroura",
+    "vidua-paradisaea",
+    "vidua-chalybeata"
+  ],
   "population": {
-    "low": null,
-    "high": null,
-    "speciesCounted": 0,
+    "low": 25344,
+    "high": 101376,
+    "speciesCounted": 7,
     "speciesTotal": 7,
-    "complete": false
+    "complete": true
   }
 }
