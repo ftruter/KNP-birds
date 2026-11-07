@@ -123,6 +123,16 @@ test('ARD and ai-catalog manifests share entries and match the official schemas'
     home.description,
     new RegExp(String(Object.keys(familiesIndex).length)),
   )
+  assert.match(home.description, /\/llms\.txt/)
+  assert.ok(home.representativeQueries.length <= 5)
+  assert.equal(
+    ard.entries.some((item) => item.type === 'text/plain'),
+    false,
+  )
+  assert.equal(
+    ard.entries.every((item) => item.type.startsWith('application/')),
+    true,
+  )
   const card = await (await app.fetch('/mcp/server-card')).json()
   const mcp = ard.entries.find(
     (item) => item.type === 'application/mcp-server-card+json',
@@ -192,10 +202,10 @@ test('a catalog without published indexes omits missing documents', async () => 
     [
       'urn:air:birds.truter.world:mcp:field-guide',
       'urn:air:birds.truter.world:guide:home',
-      'urn:air:birds.truter.world:guide:llms',
     ],
   )
   assert.match(ard.entries[1].description, /not available/i)
+  assert.match(ard.entries[1].description, /\/llms\.txt/)
   for (const item of ard.entries) {
     const response = await app.fetch(new URL(item.url).pathname)
     assert.equal(response.status, 200, item.url)
