@@ -3,9 +3,11 @@ name = "knp-birds"
 main = "src/worker.js"
 account_id = "fd74641e5d61594bd1580237979194aa"
 compatibility_date = "2026-10-30"
-# Upload the ES modules as separate files. No bundler is required.
-no_bundle = true
-find_additional_modules = true
+# agents/mcp/server imports node:async_hooks. The Agents SDK documents this flag.
+compatibility_flags = ["nodejs_compat"]
+# npm packages (agents, the MCP server, zod) are bare specifiers. no_bundle
+# uploads only project files, so the Worker is bundled and those imports resolve.
+no_bundle = false
 
 [[rules]]
 type = "ESModule"

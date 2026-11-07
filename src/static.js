@@ -2,7 +2,7 @@ import { escapeXml } from './escape.js'
 import { HOME_POPULATION_INTRO, indexRows } from './guide.js'
 
 export const robotsTxt = (origin) =>
-  `User-agent: *\nAllow: /\n\nSitemap: ${origin}/sitemap.xml\n`
+  `User-agent: *\nAllow: /\n\nSitemap: ${origin}/sitemap.xml\nAgentmap: ${origin}/.well-known/ard.json\n`
 
 export const sitemapXml = (origin, speciesIndex, familiesIndex) => {
   const urls = ['/']
@@ -52,6 +52,10 @@ HTML pages link their Markdown and JSON alternates with \`<link rel="alternate">
 - ${origin}/robots.txt
 - ${origin}/sitemap.xml (built from the species and family indexes)
 - ${origin}/llms.txt (this file)
+- ${origin}/.well-known/ard.json (Agentic Resource Discovery manifest, [ARD v0.91](https://github.com/ards-project/ard-spec/blob/main/spec/ard.md))
+- ${origin}/.well-known/ai-catalog.json (predecessor catalog; same entries)
+- ${origin}/mcp/server-card (MCP server card, \`application/mcp-server-card+json\`)
+- ${origin}/mcp (public read-only MCP search; POST, one tool named \`search\`)
 - ${origin}/style.css
 - ${origin}/images/<r2-key> streams a photograph from object storage
 - ${origin}/audio/<r2-key> streams a call recording from the same bucket

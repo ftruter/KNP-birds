@@ -27,8 +27,10 @@ import {
 import { objectExists, objectHttpResponse } from './objects.js'
 import { jsonBody, pageResponse, redirectResponse } from './respond.js'
 import { css } from './style.js'
-import { colourMapFromKv, readDocument } from './store.js'
+import { discoveryDocuments } from './ard.js'
 import { HOME_POPULATION_INTRO } from './guide.js'
+import { CARD_MEDIA_TYPE } from './mcp.js'
+import { colourMapFromKv, readDocument } from './store.js'
 import { llmsTxt, robotsTxt, sitemapXml } from './static.js'
 
 export const renderRoute = async (request, env, route) => {
@@ -54,6 +56,10 @@ export const renderRoute = async (request, env, route) => {
       return textResponse(css, 'text/css; charset=utf-8', ASSET_CACHE, 'style')
     case 'sitemap':
       return renderSitemap(env, origin)
+    case 'ard':
+    case 'ai-catalog':
+    case 'server-card':
+      return renderDiscovery(env, origin, route.kind)
     case 'image':
     case 'audio':
       return renderObject(env, route.objectKey)
@@ -219,6 +225,34 @@ const availability = async (bucket, images) => {
   return Object.fromEntries(pairs)
 }
 
+const renderDiscovery = async (env, origin, kind) => {
+  const [species, families, credits, colours] = await Promise.all([
+    readOptional(env.BIRDS_KV, 'index/species'),
+    readOptional(env.BIRDS_KV, 'index/families'),
+    readOptional(env.BIRDS_KV, 'index/credits'),
+    readOptional(env.BIRDS_KV, 'vocab/colours'),
+  ])
+  const docs = discoveryDocuments({
+    origin,
+    speciesIndex: species?.data,
+    familiesIndex: families?.data,
+    credits: credits?.data,
+    colours: colours?.data,
+  })
+  if (kind === 'server-card')
+    return jsonDocument(
+      docs.card,
+      PAGE_CACHE,
+      'server-card',
+      `${CARD_MEDIA_TYPE}; charset=utf-8`,
+    )
+  return jsonDocument(
+    kind === 'ard' ? docs.ard : docs.catalog,
+    PAGE_CACHE,
+    'ard',
+  )
+}
+
 const renderSitemap = async (env, origin) => {
   const [species, families] = await Promise.all([
     readOptional(env.BIRDS_KV, 'index/species'),
@@ -311,6 +345,19 @@ const jsonPage = (value, origin, path, cacheTag) =>
     cache: PAGE_CACHE,
     path,
     origin,
+    cacheTag,
+  })
+
+const jsonDocument = (
+  value,
+  cache,
+  cacheTag,
+  contentType = 'application/json; charset=utf-8',
+) =>
+  pageResponse({
+    body: jsonBody(value),
+    contentType,
+    cache,
     cacheTag,
   })
 

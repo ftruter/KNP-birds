@@ -7,6 +7,17 @@ export const alternates = (pathname) =>
 
 export const parseUrl = (url) => {
   const rawPath = url.pathname
+  if (
+    rawPath === '/.well-known/ard.json' ||
+    rawPath === '/.well-known/ai-catalog.json'
+  ) {
+    return route(
+      rawPath.endsWith('/ard.json') ? 'ard' : 'ai-catalog',
+      'json',
+      rawPath,
+    )
+  }
+
   if (rawPath.length > 1 && rawPath.endsWith('/')) {
     const pathname = rawPath.slice(0, -1) || '/'
     return {
@@ -27,6 +38,8 @@ export const parseUrl = (url) => {
     path = rawPath.slice(0, -5)
   }
   if (path === '') path = '/'
+
+  if (path === '/mcp/server-card') return route('server-card', 'json', path)
 
   if (format === 'html') {
     if (path === '/robots.txt') return route('robots', format, path)

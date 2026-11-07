@@ -45,6 +45,14 @@ test('format and KV key selection', () => {
     ['/sitemap.xml', 'sitemap', 'html', '/sitemap.xml'],
     ['/llms.txt', 'llms', 'html', '/llms.txt'],
     ['/style.css', 'style', 'html', '/style.css'],
+    ['/.well-known/ard.json', 'ard', 'json', '/.well-known/ard.json'],
+    [
+      '/.well-known/ai-catalog.json',
+      'ai-catalog',
+      'json',
+      '/.well-known/ai-catalog.json',
+    ],
+    ['/mcp/server-card', 'server-card', 'json', '/mcp/server-card'],
   ]
   for (const [pathname, kind, format, canonical] of cases) {
     const route = parsed(pathname)
@@ -101,4 +109,13 @@ test('trailing slashes redirect to the canonical path', () => {
 test('static files are not treated as markdown or json pages', () => {
   assert.equal(parsed('/style.css.md').kind, 'not-found')
   assert.equal(parsed('/robots.txt.json').kind, 'not-found')
+  assert.equal(parsed('/.well-known/ard').kind, 'not-found')
+  assert.equal(parsed('/.well-known/ard.json.md').kind, 'not-found')
+  assert.equal(parsed('/mcp').kind, 'not-found')
+})
+
+test('a trailing slash on the ARD manifest redirects to the canonical path', () => {
+  const route = parsed('/.well-known/ard.json/')
+  assert.equal(route.kind, 'redirect')
+  assert.equal(route.location, '/.well-known/ard.json')
 })

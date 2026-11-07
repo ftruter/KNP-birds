@@ -1,5 +1,6 @@
 import { NO_STORE } from './cache.js'
 import { escapeHtml } from './escape.js'
+import { ARD_LINK } from './head.js'
 import { alternates } from './route.js'
 
 const SECURITY = {
@@ -94,7 +95,7 @@ export const methodNotAllowed = (format) => {
   }
   headers.set('content-type', 'text/html; charset=utf-8')
   return new Response(
-    '<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><title>Method not allowed</title></head><body><h1>Method not allowed</h1><p>Use GET.</p></body></html>\n',
+    `<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><title>Method not allowed</title>${ARD_LINK}</head><body><h1>Method not allowed</h1><p>Use GET.</p></body></html>\n`,
     {
       status: 405,
       headers,
@@ -123,7 +124,7 @@ export const serverError = (format) => {
   }
   headers.set('content-type', 'text/html; charset=utf-8')
   const body = `<!DOCTYPE html>
-<html lang="en"><head><meta charset="utf-8"><title>Something went wrong · KNP Birds</title></head>
+<html lang="en"><head><meta charset="utf-8"><title>Something went wrong · KNP Birds</title>${ARD_LINK}</head>
 <body><h1>Something went wrong</h1><p>This page could not be rendered.</p><p><a href="/">Home</a></p></body></html>\n`
   return new Response(body, { status: 500, headers })
 }
