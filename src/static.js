@@ -1,24 +1,8 @@
-import { escapeXml } from './escape.js'
-import { HOME_POPULATION_INTRO, indexRows } from './guide.js'
+import { HOME_POPULATION_INTRO } from './guide.js'
 import { agentNote } from './head.js'
 
 export const robotsTxt = (origin) =>
   `User-agent: *\nAllow: /\n\nSitemap: ${origin}/sitemap.xml\nAgentmap: ${origin}/.well-known/ard.json\n`
-
-export const sitemapXml = (origin, speciesIndex, familiesIndex) => {
-  const urls = ['/']
-  if (speciesIndex) urls.push('/species')
-  if (familiesIndex) urls.push('/families')
-  urls.push('/vocab/colours', '/credits')
-  for (const entry of indexRows(speciesIndex))
-    urls.push(`/species/${entry.slug}`)
-  for (const entry of indexRows(familiesIndex))
-    urls.push(`/family/${entry.slug}`)
-  const body = urls
-    .map((path) => `  <url><loc>${escapeXml(origin + path)}</loc></url>`)
-    .join('\n')
-  return `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${body}\n</urlset>\n`
-}
 
 export const llmsTxt = (origin) => `# Agent guide: birds of Kruger National Park
 
@@ -47,6 +31,7 @@ The file extension selects the format. Page paths come straight from the KV keys
 | \`family/<slug>\` | ${origin}/family/<slug> |
 | \`vocab/colours\` | ${origin}/vocab/colours |
 | \`index/credits\` | ${origin}/credits |
+| (composed) | ${origin}/sitemap |
 
 The home page is also ${origin}/.md and ${origin}/.json. Slugs are the lowercase scientific name with hyphens, for example \`coracias-caudatus\`.
 
@@ -57,7 +42,8 @@ Responses other than image and audio bytes, and other than \`POST /mcp\`, also s
 ## Other files
 
 - ${origin}/robots.txt
-- ${origin}/sitemap.xml (built from the species and family indexes)
+- ${origin}/sitemap (human-readable map of the guide)
+- ${origin}/sitemap.xml (one \`<loc>\` per HTML page, in the same order as ${origin}/sitemap)
 - ${origin}/llms.txt (this file)
 - ${origin}/.well-known/ard.json (Agentic Resource Discovery manifest, [ARD v0.91](https://github.com/ards-project/ard-spec/blob/main/spec/ard.md))
 - ${origin}/.well-known/ai-catalog.json (predecessor catalog; same entries)
@@ -109,8 +95,9 @@ Images carry \`view\`, \`age\`, \`sex\`, \`season\`, \`source\`, \`author\`, \`l
 ## Start here
 
 - [Home, Markdown](${origin}/.md)
-- [Species index, Markdown](${origin}/species.md)
+- [Sitemap, Markdown](${origin}/sitemap.md)
 - [Families index, Markdown](${origin}/families.md)
+- [Species index, Markdown](${origin}/species.md)
 - [Colour vocabulary, JSON](${origin}/vocab/colours.json)
 - [Credits, Markdown](${origin}/credits.md)
 `

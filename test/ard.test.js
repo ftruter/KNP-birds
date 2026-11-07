@@ -201,11 +201,15 @@ test('a catalog without published indexes omits missing documents', async () => 
     ard.entries.map((item) => item.identifier),
     [
       'urn:air:birds.truter.world:mcp:field-guide',
+      'urn:air:birds.truter.world:guide:sitemap',
       'urn:air:birds.truter.world:guide:home',
     ],
   )
-  assert.match(ard.entries[1].description, /not available/i)
-  assert.match(ard.entries[1].description, /\/llms\.txt/)
+  const home = ard.entries.find((item) =>
+    item.identifier.endsWith(':guide:home'),
+  )
+  assert.match(home.description, /not available/i)
+  assert.match(home.description, /\/llms\.txt/)
   for (const item of ard.entries) {
     const response = await app.fetch(new URL(item.url).pathname)
     assert.equal(response.status, 200, item.url)

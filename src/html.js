@@ -38,6 +38,7 @@ import {
 import { agentUrls } from './head.js'
 import { familyTableHtml, speciesTableHtml } from './lists.js'
 import { alternates } from './route.js'
+import { sitemapEntries } from './sitemap.js'
 
 const NAV = [
   ['home', '/', 'Home'],
@@ -767,6 +768,37 @@ ${site.media ? `<p>${escapeHtml(site.media)}</p>` : ''}`
 const taxonomyHtml = (taxonomy) => `<h2>Taxonomy</h2>
 <p><strong>${escapeHtml(taxonomy?.authority || 'IOC / BirdLife South Africa')}</strong>. ${escapeHtml(taxonomy?.summary || '')}</p>`
 
+const sitemapItem = (node) => {
+  const latin = node.latin
+    ? ` <span class="sitemap-latin">${escapeHtml(node.latin)}</span>`
+    : ''
+  const children = node.children?.length
+    ? `\n<ul class="sitemap-nest">\n${node.children.map(sitemapItem).join('\n')}\n</ul>`
+    : ''
+  const current = node.href === '/sitemap' ? ' aria-current="page"' : ''
+  return `<li><a href="${escapeHtml(node.href)}"${current}>${escapeHtml(node.name)}</a>${latin}${children}</li>`
+}
+
+export const renderSitemapHtml = ({ origin, tree }) => {
+  const main = `
+<h1>Sitemap</h1>
+<p>Every page in this field guide. Families are alphabetical by English name, and the birds in a family follow it in the same order. The species list is every bird, alphabetical by English name. <a href="/sitemap.xml">Sitemap XML</a> lists each HTML page once.</p>
+<nav aria-label="Sitemap">
+<ol class="sitemap">
+${sitemapEntries(tree).map(sitemapItem).join('\n')}
+</ol>
+</nav>`
+  return layout({
+    title: 'Sitemap · KNP Birds',
+    description: 'Pages in the Kruger National Park field guide.',
+    origin,
+    path: '/sitemap',
+    nav: '',
+    crumbs: crumbs([{ href: '/sitemap', label: 'Sitemap', current: true }]),
+    main,
+  })
+}
+
 export const renderCreditsHtml = ({ origin, doc }) => {
   const sources = listed(doc?.dataSources)
   const main = `
@@ -843,7 +875,7 @@ ${main}
 </div>
 <div>
 ${agentHtml(origin)}
-<p><a href="/llms.txt">llms.txt</a> · <a href="/sitemap.xml">Sitemap</a> · <a href="/credits"${path === '/credits' ? ' aria-current="page"' : ''}>Credits</a></p>
+<p><a href="/llms.txt">llms.txt</a> · <a href="/sitemap"${path === '/sitemap' ? ' aria-current="page"' : ''}>Sitemap</a> · <a href="/credits"${path === '/credits' ? ' aria-current="page"' : ''}>Credits</a></p>
 </div>
 </div>
 </div>

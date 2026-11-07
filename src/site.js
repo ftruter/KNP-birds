@@ -10,6 +10,7 @@ import {
   renderCreditsHtml,
   renderHomeHtml,
   renderNotFoundHtml,
+  renderSitemapHtml,
   renderSpeciesHtml,
   renderSpeciesIndexHtml,
   renderVocabHtml,
@@ -20,6 +21,7 @@ import {
   renderCreditsMarkdown,
   renderHomeMarkdown,
   renderNotFoundMarkdown,
+  renderSitemapMarkdown,
   renderSpeciesIndexMarkdown,
   renderSpeciesMarkdown,
   renderVocabMarkdown,
@@ -29,12 +31,13 @@ import { jsonBody, pageResponse, redirectResponse } from './respond.js'
 import { css } from './style.js'
 import { discoveryDocuments } from './ard.js'
 import { loadListCatalog, rowsForSpeciesIndex } from './catalog.js'
-import { HOME_POPULATION_INTRO } from './guide.js'
+import { HOME_POPULATION_INTRO, indexRows } from './guide.js'
 import { numberFormatFor } from './numbers.js'
 import { CARD_MEDIA_TYPE } from './mcp.js'
 import { applyRecordingOverlay } from './recordings.js'
 import { colourMapFromKv, readDocument } from './store.js'
-import { llmsTxt, robotsTxt, sitemapXml } from './static.js'
+import { buildSitemap, sitemapEntries, sitemapXml } from './sitemap.js'
+import { llmsTxt, robotsTxt } from './static.js'
 
 export const renderRoute = async (request, env, route) => {
   const origin = new URL(request.url).origin
@@ -61,6 +64,8 @@ export const renderRoute = async (request, env, route) => {
       return textResponse(css, 'text/css; charset=utf-8', ASSET_CACHE, 'style')
     case 'sitemap':
       return renderSitemap(env, origin)
+    case 'sitemap-page':
+      return renderSitemapPage(env, route, view)
     case 'ard':
     case 'ai-catalog':
     case 'server-card':
@@ -316,17 +321,47 @@ const renderDiscovery = async (env, origin, kind) => {
   )
 }
 
-const renderSitemap = async (env, origin) => {
+const loadSitemapTree = async (env) => {
   const [species, families] = await Promise.all([
     readOptional(env.BIRDS_KV, 'index/species'),
     readOptional(env.BIRDS_KV, 'index/families'),
   ])
-  return textResponse(
-    sitemapXml(origin, species?.data, families?.data),
+  const docs = await Promise.all(
+    indexRows(families?.data).map(async (row) => {
+      const doc = await readOptional(env.BIRDS_KV, `family/${row.slug}`)
+      return doc?.data ?? null
+    }),
+  )
+  return buildSitemap(families?.data, docs.filter(Boolean), species?.data)
+}
+
+const renderSitemap = async (env, origin) =>
+  textResponse(
+    sitemapXml(origin, await loadSitemapTree(env)),
     'application/xml; charset=utf-8',
     PAGE_CACHE,
     'sitemap',
   )
+
+const renderSitemapPage = async (env, route, view) => {
+  const tree = await loadSitemapTree(env)
+  const entries = sitemapEntries(tree)
+  const { origin } = view
+  if (route.format === 'json') {
+    return jsonPage(
+      { kind: 'sitemap', title: 'Sitemap', entries },
+      origin,
+      '/sitemap',
+      'sitemap-page',
+    )
+  }
+  const body =
+    route.format === 'md'
+      ? renderSitemapMarkdown({ origin, tree })
+      : renderSitemapHtml({ origin, tree })
+  return route.format === 'md'
+    ? mdPage(body, origin, '/sitemap', 'sitemap-page')
+    : htmlPage(body, origin, '/sitemap', 'sitemap-page')
 }
 
 const renderObject = async (env, key) => {

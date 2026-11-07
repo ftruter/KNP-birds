@@ -760,7 +760,7 @@ audio {
 
 @media (forced-colors: active) {
   .site-header { border-block-end-color: CanvasText; }
-  .mark, .sample, .plate, .table-wrap, .population, .hero, .compare-list li, .species-card, .facts {
+  .mark, .sample, .plate, .table-wrap, .population, .hero, .compare-list li, .species-card, .facts, .sitemap > li {
     border-color: CanvasText;
     box-shadow: none;
   }
@@ -768,6 +768,46 @@ audio {
     background: Highlight;
     color: HighlightText;
     box-shadow: none;
+  }
+}
+
+.sitemap {
+  list-style: none;
+  margin: 1rem 0 0;
+  padding: 0;
+  display: grid;
+  gap: 0.85rem;
+}
+
+.sitemap > li {
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-sm);
+  padding: 0.85rem 1rem 1rem;
+}
+
+.sitemap a { font-family: var(--sans); font-weight: 700; }
+
+.sitemap-nest {
+  list-style: none;
+  margin: 0.55rem 0 0;
+  padding: 0;
+  display: grid;
+  gap: 0.4rem 1.25rem;
+}
+
+.sitemap-latin {
+  margin-inline-start: 0.35rem;
+  color: var(--accent);
+  font-style: italic;
+  font-weight: 400;
+}
+
+@container wrap (min-width: 52rem) {
+  .sitemap > li > .sitemap-nest {
+    grid-template-columns: repeat(auto-fill, minmax(18rem, 1fr));
+    align-items: start;
   }
 }
 
