@@ -7,8 +7,61 @@
     "af": "Bruinarend"
   },
   "family": "accipitridae",
-  "summary": "The details for this species have not been published yet.",
-  "sampleData": true,
+  "status": "intra-african-migrant",
+  "monthsPresent": [
+    8,
+    9,
+    10,
+    11,
+    12,
+    1,
+    2,
+    3
+  ],
+  "size": {
+    "lengthCm": {
+      "min": 53,
+      "max": 61
+    },
+    "note": "Wikipedia 53–61 cm. Newman's online size field was blank (#VALUE!); use Wikipedia with note."
+  },
+  "habitat": "Woodland savanna; rarely montane forest. Nests in tall trees reused over years. Common summer-breeding brown eagle in Kruger (Newman's; SABAP1).",
+  "summary": "A medium brown eagle and the most common brown eagle in Kruger in summer. Narrow parallel wings and a longish square tail held mostly closed. Feet, cere and gape yellow; eye dark. Several morphs including dark-headed and pale/white-headed birds (Newman's).",
+  "sampleData": false,
+  "similar": [
+    {
+      "slug": "aquila-rapax",
+      "note": "Tawny is bulkier with broader wings and a shorter rounded tail; gape line differs from Wahlberg's slightly downturned gape (Newman's vs Lesser Spotted note)."
+    },
+    {
+      "slug": "hieraaetus-pennatus",
+      "note": "Booted is smaller with white shoulder patch (pale morph) and translucent primary wedge (Newman's)."
+    },
+    {
+      "slug": "aquila-spilogaster",
+      "note": "African Hawk-Eagle adult is boldly black-and-white below; immature brown can confuse (SABAP1)."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Newman's Birds — Wahlberg’s Eagle species page",
+      "url": "https://newmansbirds.com/birds/wahlbergs-eagle/",
+      "publisher": "Newman's Birds / Struik Nature (online edition)",
+      "year": null
+    },
+    {
+      "title": "The Atlas of Southern African Birds, Vol. 1 (spread 135)",
+      "url": "https://sabap2.birdmap.africa/docs/sabap1/135.pdf",
+      "publisher": "BirdLife South Africa / Avian Demography Unit",
+      "year": 1997
+    },
+    {
+      "title": "Wikipedia — Wahlberg’s Eagle",
+      "url": "https://en.wikipedia.org/wiki/Wahlberg%27s_eagle",
+      "publisher": "Wikimedia Foundation",
+      "year": null
+    }
+  ],
   "population": {
     "estimate": {
       "low": 2048,
@@ -35,8 +88,201 @@
     },
     "tierApplied": "D"
   },
-  "variants": [],
-  "viewNotes": [],
-  "calls": [],
-  "images": []
+  "variants": [
+    {
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "marks": {
+        "bill": {
+          "colour": "black",
+          "shape": "hooked"
+        },
+        "eye": {
+          "iris": "dark-brown",
+          "ring": null
+        },
+        "legs": {
+          "colour": "yellow"
+        },
+        "head": {
+          "crown": "dark-brown",
+          "face": "dark-brown",
+          "throat": "dark-brown"
+        },
+        "upperparts": {
+          "back": "dark-brown",
+          "rump": null
+        },
+        "underparts": {
+          "breast": "dark-brown",
+          "belly": "dark-brown"
+        },
+        "wings": {
+          "above": "dark-brown",
+          "below": null,
+          "pattern": "narrow parallel"
+        },
+        "tail": {
+          "colour": "dark-brown",
+          "shape": "longish square, mostly closed"
+        }
+      }
+    }
+  ],
+  "viewNotes": [
+    {
+      "view": "perched-side",
+      "note": "Side view shows the key field marks summarised for Wahlberg’s Eagle: see variants. (Newman's).",
+      "age": "adult",
+      "sex": "any",
+      "season": "any"
+    },
+    {
+      "view": "flight-below",
+      "note": "Narrow parallel wings and longish square tail held mostly closed; no dark secondary edge (Newmans).",
+      "age": "adult",
+      "sex": "any",
+      "season": "any"
+    },
+    {
+      "view": "flight-above",
+      "note": "Narrow parallel wings and longish square tail held mostly closed; no dark secondary edge (Newmans). Upperwing details as in variants.",
+      "age": "adult",
+      "sex": "any",
+      "season": "any"
+    }
+  ],
+  "calls": [
+    {
+      "sex": "any",
+      "type": "call",
+      "description": "Whistling 'peeeeoo' in flight; vocal in courtship (Newman's).",
+      "recordings": [
+        {
+          "key": "xeno-canto/XC881394",
+          "source": "https://xeno-canto.org/881394",
+          "fileUrl": "https://xeno-canto.org/sounds/uploaded/OHDVJMHMQE/XC881394-20240307-073210_Wahlbergs-Eagle_Meru-NP_edited.wav",
+          "author": "Oliver Fowler",
+          "license": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "aiGenerated": false,
+          "hosted": false
+        },
+        {
+          "key": "xeno-canto/XC352650",
+          "source": "https://xeno-canto.org/352650",
+          "fileUrl": "https://xeno-canto.org/sounds/uploaded/HBSLCUKXGS/XC352650-Wahlberg%27s%20Eagle.mp3",
+          "author": "David C. Moyer",
+          "license": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ]
+    }
+  ],
+  "images": [
+    {
+      "key": "hieraaetus-wahlbergi/perched-side-1.jpg",
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "source": "https://commons.wikimedia.org/wiki/File:Aquila_wahlbergi.jpg",
+      "fileUrl": "https://upload.wikimedia.org/wikipedia/commons/8/8f/Aquila_wahlbergi.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+      "author": "Doug newman at English Wikipedia",
+      "license": "Public domain",
+      "licenceUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "aiGenerated": false,
+      "hosted": false,
+      "alt": "Wahlberg’s Eagle — perched-side, adult. Graham Searlle, Photographed in Kruger National Park, South Africa",
+      "caption": "Wahlberg’s Eagle — perched-side, adult. Graham Searlle, Photographed in Kruger National Park, South Africa"
+    },
+    {
+      "key": "hieraaetus-wahlbergi/perched-back-2.jpg",
+      "view": "perched-back",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "source": "https://www.inaturalist.org/observations/337309383",
+      "fileUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/613153045/large.jpg",
+      "author": "Will Richardson",
+      "license": "CC BY-NC 4.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+      "aiGenerated": false,
+      "hosted": false,
+      "alt": "Wahlberg’s Eagle — perched-back, adult. Waterberg District Municipality, South Africa",
+      "caption": "Wahlberg’s Eagle — perched-back, adult. Waterberg District Municipality, South Africa"
+    },
+    {
+      "key": "hieraaetus-wahlbergi/flight-above-3.jpg",
+      "view": "flight-above",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "source": "https://commons.wikimedia.org/wiki/File:Hieraaetus_wahlbergi,_Pietersburg,_Kellermann,_a.jpg",
+      "fileUrl": "https://upload.wikimedia.org/wikipedia/commons/9/9e/Hieraaetus_wahlbergi%2C_Pietersburg%2C_Kellermann%2C_a.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+      "author": "Leonie Kellermann",
+      "license": "CC BY-SA 4.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "aiGenerated": false,
+      "hosted": false,
+      "alt": "Wahlberg’s Eagle — flight-above, adult. Wahlberg's eagle in flight at Vencor near Pietersburg, Limpopo, South Africa",
+      "caption": "Wahlberg’s Eagle — flight-above, adult. Wahlberg's eagle in flight at Vencor near Pietersburg, Limpopo, South Africa"
+    },
+    {
+      "key": "hieraaetus-wahlbergi/flight-below-4.jpg",
+      "view": "flight-below",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "source": "https://commons.wikimedia.org/wiki/File:Wahlberg's_Eagle_(Hieraaetus_wahlbergi)_(8080043861).jpg",
+      "fileUrl": "https://upload.wikimedia.org/wikipedia/commons/a/a3/Wahlberg%27s_Eagle_%28Hieraaetus_wahlbergi%29_%288080043861%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+      "author": "Ron Knight from Seaford, East Sussex, United Kingdom",
+      "license": "CC BY 2.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by/2.0",
+      "aiGenerated": false,
+      "hosted": false,
+      "alt": "Wahlberg’s Eagle — flight-below, adult. Wahlberg's eagle flying over Ngaundere Ranch in Cameroon, 2011",
+      "caption": "Wahlberg’s Eagle — flight-below, adult. Wahlberg's eagle flying over Ngaundere Ranch in Cameroon, 2011"
+    },
+    {
+      "key": "hieraaetus-wahlbergi/perched-side-5.jpg",
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "source": "https://commons.wikimedia.org/wiki/File:Day_24_Wahlberg's_Eagle_(Hieraaetus_wahlbergi)_(53471594494).jpg",
+      "fileUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0b/Day_24_Wahlberg%27s_Eagle_%28Hieraaetus_wahlbergi%29_%2853471594494%29.jpg/1280px-Day_24_Wahlberg%27s_Eagle_%28Hieraaetus_wahlbergi%29_%2853471594494%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "author": "Bernard DUPONT from FRANCE",
+      "license": "CC BY-SA 2.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+      "aiGenerated": false,
+      "hosted": false,
+      "alt": "Wahlberg’s Eagle — perched-side, adult. H3 Road South of Afsaal, Kruger NP, Mpumalanga, SOUTH AFRICA",
+      "caption": "Wahlberg’s Eagle — perched-side, adult. H3 Road South of Afsaal, Kruger NP, Mpumalanga, SOUTH AFRICA"
+    },
+    {
+      "key": "hieraaetus-wahlbergi/perched-side-6.jpg",
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "source": "https://commons.wikimedia.org/wiki/File:Day_24_Wahlberg's_Eagle_(Hieraaetus_wahlbergi)_mobbed_by_two_Fork-tailed_Drongos_(Dicrurus_adsimilis)_(53257250259).jpg",
+      "fileUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3d/Day_24_Wahlberg%27s_Eagle_%28Hieraaetus_wahlbergi%29_mobbed_by_two_Fork-tailed_Drongos_%28Dicrurus_adsimilis%29_%2853257250259%29.jpg/1280px-Day_24_Wahlberg%27s_Eagle_%28Hieraaetus_wahlbergi%29_mobbed_by_two_Fork-tailed_Drongos_%28Dicrurus_adsimilis%29_%2853257250259%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "author": "Bernard DUPONT from FRANCE",
+      "license": "CC BY-SA 2.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+      "aiGenerated": false,
+      "hosted": false,
+      "alt": "Wahlberg’s Eagle — perched-side, adult. H3 Road South of Afsaal, Kruger NP, Mpumalanga, SOUTH AFRICA",
+      "caption": "Wahlberg’s Eagle — perched-side, adult. H3 Road South of Afsaal, Kruger NP, Mpumalanga, SOUTH AFRICA"
+    }
+  ],
+  "research": {
+    "confidence": "medium",
+    "needsReview": false,
+    "note": "Research confidence was medium-high and is stored as medium. No seasonal plumage change is described in the sources consulted, except presence/absence of migrants. Gaps: No juvenile/immature image in selected set. Structured marks keep the common form. The pale form is not a separate variant. Dark-headed and white-headed individuals also occur (Newman's). The schema has no morph field. Colour phrases outside the vocabulary were stored as the nearest swatch: dark to dark-brown."
+  }
 }

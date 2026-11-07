@@ -7,8 +7,57 @@
     "af": "Donkersingvalk"
   },
   "family": "accipitridae",
-  "summary": "The details for this species have not been published yet.",
-  "sampleData": true,
+  "status": "resident",
+  "monthsPresent": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+  ],
+  "size": {
+    "lengthCm": {
+      "min": 50,
+      "max": 56
+    },
+    "note": "Newman's 50–56 cm."
+  },
+  "habitat": "Broad-leaved woodland and mixed bushveld; usually perches within the canopy (Newman's). In southern Africa mainly northeastern lowveld/Zimbabwe; Kruger is in range (SABAP1).",
+  "summary": "A large grey chanting goshawk, darker grey than Pale Chanting, with fine grey barring below, red cere and legs, and a dark tip to the secondaries in flight (Newman's).",
+  "sampleData": false,
+  "similar": [
+    {
+      "slug": "micronisus-gabar",
+      "note": "Gabar is much smaller with a white rump (Newman's)."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Newman's Birds — Dark Chanting Goshawk species page",
+      "url": "https://newmansbirds.com/birds/dark-chanting-goshawk/",
+      "publisher": "Newman's Birds / Struik Nature (online edition)",
+      "year": null
+    },
+    {
+      "title": "The Atlas of Southern African Birds, Vol. 1 (spread 163)",
+      "url": "https://sabap2.birdmap.africa/docs/sabap1/163.pdf",
+      "publisher": "BirdLife South Africa / Avian Demography Unit",
+      "year": 1997
+    },
+    {
+      "title": "Wikipedia — Dark Chanting Goshawk",
+      "url": "https://en.wikipedia.org/wiki/Dark_chanting_goshawk",
+      "publisher": "Wikimedia Foundation",
+      "year": null
+    }
+  ],
   "population": {
     "estimate": {
       "low": 128,
@@ -35,8 +84,270 @@
     },
     "tierApplied": "D"
   },
-  "variants": [],
-  "viewNotes": [],
-  "calls": [],
-  "images": []
+  "variants": [
+    {
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "marks": {
+        "bill": {
+          "colour": [
+            "red",
+            "black"
+          ],
+          "shape": "red cere; black tip"
+        },
+        "eye": {
+          "iris": "brown",
+          "ring": null
+        },
+        "legs": {
+          "colour": "red"
+        },
+        "head": {
+          "crown": [
+            "dark-brown",
+            "grey"
+          ],
+          "face": [
+            "dark-brown",
+            "grey"
+          ],
+          "throat": "grey"
+        },
+        "upperparts": {
+          "back": [
+            "dark-brown",
+            "grey"
+          ],
+          "rump": "grey"
+        },
+        "underparts": {
+          "breast": "grey",
+          "belly": "grey",
+          "pattern": "fine grey barring"
+        },
+        "wings": {
+          "above": [
+            "dark-brown",
+            "grey"
+          ],
+          "below": null,
+          "pattern": "darker secondaries tip"
+        },
+        "tail": {
+          "colour": [
+            "dark-brown",
+            "white"
+          ],
+          "shape": "rounded; dark with white tip"
+        }
+      }
+    },
+    {
+      "age": "immature",
+      "sex": "any",
+      "season": "any",
+      "marks": {
+        "bill": {
+          "colour": null,
+          "shape": null
+        },
+        "eye": {
+          "iris": null,
+          "ring": null
+        },
+        "legs": {
+          "colour": null
+        },
+        "head": {
+          "crown": null,
+          "face": null,
+          "throat": null
+        },
+        "upperparts": {
+          "back": "brown",
+          "rump": null
+        },
+        "underparts": {
+          "breast": "brown",
+          "belly": null,
+          "pattern": "brown streaked; barred"
+        },
+        "wings": {
+          "above": null,
+          "below": null
+        },
+        "tail": {
+          "colour": null,
+          "shape": null
+        }
+      }
+    }
+  ],
+  "viewNotes": [
+    {
+      "view": "perched-side",
+      "note": "Side view shows the key field marks summarised for Dark Chanting Goshawk: see variants. (Newman's).",
+      "age": "adult",
+      "sex": "any",
+      "season": "any"
+    },
+    {
+      "view": "flight-below",
+      "note": "Dark tip to secondaries; grey chanting-goshawk shape (Newmans).",
+      "age": "adult",
+      "sex": "any",
+      "season": "any"
+    },
+    {
+      "view": "flight-above",
+      "note": "Dark tip to secondaries; grey chanting-goshawk shape (Newmans). Upperwing details as in variants.",
+      "age": "adult",
+      "sex": "any",
+      "season": "any"
+    }
+  ],
+  "calls": [
+    {
+      "sex": "any",
+      "type": "call",
+      "description": "Musical chanting (species group); Newman's page emphasises similarity to Pale Chanting rather than a unique transcription.",
+      "recordings": [
+        {
+          "key": "xeno-canto/XC589156",
+          "source": "https://xeno-canto.org/589156",
+          "fileUrl": "https://xeno-canto.org/sounds/uploaded/MVAUXAWNUX/XC589156-20200917_104631_darkchantghawk1.mp3",
+          "author": "Sun Madakan",
+          "license": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "aiGenerated": false,
+          "hosted": false
+        },
+        {
+          "key": "xeno-canto/XC597079",
+          "source": "https://xeno-canto.org/597079",
+          "fileUrl": "https://xeno-canto.org/sounds/uploaded/MVAUXAWNUX/XC597079-20201020_102704_DrkChntHwk1.mp3",
+          "author": "Sun Madakan",
+          "license": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "aiGenerated": false,
+          "hosted": false
+        },
+        {
+          "key": "xeno-canto/XC597075",
+          "source": "https://xeno-canto.org/597075",
+          "fileUrl": "https://xeno-canto.org/sounds/uploaded/MVAUXAWNUX/XC597075-20201020_112440_DrkChantGshawk2.mp3",
+          "author": "Sun Madakan",
+          "license": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ]
+    }
+  ],
+  "images": [
+    {
+      "key": "melierax-metabates/perched-side-1.jpg",
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "source": "https://commons.wikimedia.org/wiki/File:Dark_Chanting-Goshawk_(Melierax_metabates)_(52728029218).jpg",
+      "fileUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ef/Dark_Chanting-Goshawk_%28Melierax_metabates%29_%2852728029218%29.jpg/1280px-Dark_Chanting-Goshawk_%28Melierax_metabates%29_%2852728029218%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "author": "Bernard DUPONT from FRANCE",
+      "license": "CC BY-SA 2.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+      "aiGenerated": false,
+      "hosted": false,
+      "alt": "Dark Chanting Goshawk — perched-side, adult. H1-1 Road South of Skukuza, Kruger NP, Mpumalanga, SOUTH AFRICA",
+      "caption": "Dark Chanting Goshawk — perched-side, adult. H1-1 Road South of Skukuza, Kruger NP, Mpumalanga, SOUTH AFRICA"
+    },
+    {
+      "key": "melierax-metabates/flight-above-2.jpg",
+      "view": "flight-above",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "source": "https://commons.wikimedia.org/wiki/File:Dark_chanting_goshawk_(Melierax_metabates_metabates)_in_flight_Serengeti.jpg",
+      "fileUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/99/Dark_chanting_goshawk_%28Melierax_metabates_metabates%29_in_flight_Serengeti.jpg/1280px-Dark_chanting_goshawk_%28Melierax_metabates_metabates%29_in_flight_Serengeti.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "author": "Charles J. Sharp",
+      "license": "CC BY-SA 4.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "aiGenerated": false,
+      "hosted": false,
+      "alt": "Dark Chanting Goshawk — flight-above, adult. Dark chanting goshawk ( Melierax metabates metabates ), Serengeti National Park, Tanzania",
+      "caption": "Dark Chanting Goshawk — flight-above, adult. Dark chanting goshawk ( Melierax metabates metabates ), Serengeti National Park, Tanzania"
+    },
+    {
+      "key": "melierax-metabates/perched-side-3.jpg",
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "source": "https://commons.wikimedia.org/wiki/File:Dark_Chanting-Goshawk_(Melierax_metabates)_(52731489793).jpg",
+      "fileUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/41/Dark_Chanting-Goshawk_%28Melierax_metabates%29_%2852731489793%29.jpg/1280px-Dark_Chanting-Goshawk_%28Melierax_metabates%29_%2852731489793%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "author": "Bernard DUPONT from FRANCE",
+      "license": "CC BY-SA 2.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+      "aiGenerated": false,
+      "hosted": false,
+      "alt": "Dark Chanting Goshawk — perched-side, adult. H1-1 Road South of Skukuza, Kruger NP, Mpumalanga, SOUTH AFRICA",
+      "caption": "Dark Chanting Goshawk — perched-side, adult. H1-1 Road South of Skukuza, Kruger NP, Mpumalanga, SOUTH AFRICA"
+    },
+    {
+      "key": "melierax-metabates/perched-side-4.jpg",
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "source": "https://commons.wikimedia.org/wiki/File:Dark_Chanting-Goshawk_(Melierax_metabates)_(52959591513).jpg",
+      "fileUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6d/Dark_Chanting-Goshawk_%28Melierax_metabates%29_%2852959591513%29.jpg/1280px-Dark_Chanting-Goshawk_%28Melierax_metabates%29_%2852959591513%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "author": "Bernard DUPONT from FRANCE",
+      "license": "CC BY-SA 2.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+      "aiGenerated": false,
+      "hosted": false,
+      "alt": "Dark Chanting Goshawk — perched-side, adult. H1-1 Road South of Skukuza, Kruger NP, Mpumalanga, SOUTH AFRICA",
+      "caption": "Dark Chanting Goshawk — perched-side, adult. H1-1 Road South of Skukuza, Kruger NP, Mpumalanga, SOUTH AFRICA"
+    },
+    {
+      "key": "melierax-metabates/perched-side-5.jpg",
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "source": "https://commons.wikimedia.org/wiki/File:Dark_Chanting_Goshawk_(Melierax_metabates)_-_Flickr_-_berniedup.jpg",
+      "fileUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/49/Dark_Chanting_Goshawk_%28Melierax_metabates%29_-_Flickr_-_berniedup.jpg/1280px-Dark_Chanting_Goshawk_%28Melierax_metabates%29_-_Flickr_-_berniedup.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "author": "Bernard DUPONT from FRANCE",
+      "license": "CC BY-SA 2.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+      "aiGenerated": false,
+      "hosted": false,
+      "alt": "Dark Chanting Goshawk — perched-side, adult. S114 Road South of Skukuza, Kruger NP, Mpumalanga, SOUTH AFRICA",
+      "caption": "Dark Chanting Goshawk — perched-side, adult. S114 Road South of Skukuza, Kruger NP, Mpumalanga, SOUTH AFRICA"
+    },
+    {
+      "key": "melierax-metabates/perched-side-6.jpg",
+      "view": "perched-side",
+      "age": "immature",
+      "sex": "any",
+      "season": "any",
+      "source": "https://commons.wikimedia.org/wiki/File:Dark_Chanting-Goshawk_(Melierax_metabates)_immature_..._(53120176715).jpg",
+      "fileUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/57/Dark_Chanting-Goshawk_%28Melierax_metabates%29_immature_..._%2853120176715%29.jpg/1280px-Dark_Chanting-Goshawk_%28Melierax_metabates%29_immature_..._%2853120176715%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "author": "Bernard DUPONT from FRANCE",
+      "license": "CC BY-SA 2.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+      "aiGenerated": false,
+      "hosted": false,
+      "alt": "Dark Chanting Goshawk — perched-side, immature. H1-2 Road East of Skukuza, Kruger NP, Mpumalanga, SOUTH AFRICA",
+      "caption": "Dark Chanting Goshawk — perched-side, immature. H1-2 Road East of Skukuza, Kruger NP, Mpumalanga, SOUTH AFRICA"
+    }
+  ],
+  "research": {
+    "confidence": "medium",
+    "needsReview": false,
+    "note": "Research confidence was medium-high and is stored as medium. No seasonal plumage change is described in the sources consulted, except presence/absence of migrants. Pale Chanting Goshawk (Melierax canorus) is not on the Kruger list. Newman's says it is paler grey, typically in more arid country to the west and south, with paler secondaries. Colour phrases outside the vocabulary were stored as the nearest swatch: dark to dark-brown."
+  }
 }

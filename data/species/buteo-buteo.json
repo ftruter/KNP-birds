@@ -7,8 +7,79 @@
     "af": "Bruinjakkalsvoël"
   },
   "family": "accipitridae",
-  "summary": "The details for this species have not been published yet.",
-  "sampleData": true,
+  "status": "palearctic-migrant",
+  "monthsPresent": [
+    10,
+    11,
+    12,
+    1,
+    2,
+    3
+  ],
+  "size": {
+    "lengthCm": {
+      "min": 45,
+      "max": 50
+    },
+    "note": "Newman's Birds gives about 45 cm. Southern African non-breeding birds are race vulpinus (Steppe Buzzard)."
+  },
+  "habitat": "Open country, savanna and woodland edge; often on poles and roadside perches in summer (Newman's; SABAP1).",
+  "summary": "A common Palearctic summer visitor. Plumage highly variable from dark brown to red-brown; darkest above, streaked and banded below (Newman's). Southern African birds are the Steppe Buzzard race (B. b. vulpinus).",
+  "sampleData": false,
+  "similar": [
+    {
+      "slug": "buteo-trizonatus",
+      "note": "Forest Buzzard is a scarce endemic, slightly smaller, usually with a whiter central breast and less heavily marked flanks; prefers forest/plantation edge (Newman's). Extremely difficult in the field."
+    },
+    {
+      "slug": "buteo-rufofuscus",
+      "note": "Jackal Buzzard adult has a chestnut breast and tail and is largely resident in hills (Newman's)."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Newman's Birds — Common Buzzard species page (text from Newman's Birds of Southern Africa)",
+      "url": "https://newmansbirds.com/birds/common-buzzard/",
+      "publisher": "Newman's Birds / Struik Nature (online edition)",
+      "year": null
+    },
+    {
+      "title": "The Atlas of Southern African Birds, Vol. 1 (spread 149)",
+      "url": "https://sabap2.birdmap.africa/docs/sabap1/149.pdf",
+      "publisher": "BirdLife South Africa / Avian Demography Unit",
+      "year": 1997
+    },
+    {
+      "title": "Wikipedia — Common buzzard",
+      "url": "https://en.wikipedia.org/wiki/Common_buzzard",
+      "publisher": "Wikimedia Foundation",
+      "year": 2026
+    },
+    {
+      "title": "Wikipedia — Steppe buzzard",
+      "url": "https://en.wikipedia.org/wiki/Steppe_buzzard",
+      "publisher": "Wikimedia Foundation",
+      "year": 2026
+    },
+    {
+      "title": "GBIF occurrence month facets for Buteo buteo, Kruger bounding box (lon 31.0–32.04, lat −25.53 to −22.33, country ZA)",
+      "url": "https://api.gbif.org/v1/occurrence/search",
+      "publisher": "GBIF.org",
+      "year": 2026
+    },
+    {
+      "title": "xeno-canto recordings (metadata via GBIF dataset b1047888-ae52-4179-9dd5-5448ea342a24)",
+      "url": "https://xeno-canto.org/",
+      "publisher": "xeno-canto.org / GBIF",
+      "year": 2026
+    },
+    {
+      "title": "Wikimedia Commons species category images",
+      "url": "https://commons.wikimedia.org/",
+      "publisher": "Wikimedia Commons",
+      "year": 2026
+    }
+  ],
   "population": {
     "estimate": {
       "low": null,
@@ -21,8 +92,208 @@
     "notes": "No sourced Kruger estimate is currently available; taxonomy or later records require separate research.",
     "sources": []
   },
-  "variants": [],
-  "viewNotes": [],
-  "calls": [],
-  "images": []
+  "variants": [
+    {
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "marks": {
+        "bill": {
+          "colour": [
+            "black",
+            "yellow"
+          ],
+          "shape": "hooked"
+        },
+        "eye": {
+          "iris": "brown",
+          "ring": null
+        },
+        "legs": {
+          "colour": "yellow"
+        },
+        "head": {
+          "crown": "brown",
+          "face": "brown",
+          "throat": [
+            "brown",
+            "white"
+          ]
+        },
+        "upperparts": {
+          "back": "brown",
+          "rump": null
+        },
+        "underparts": {
+          "breast": [
+            "brown",
+            "white"
+          ],
+          "belly": [
+            "brown",
+            "white"
+          ]
+        },
+        "wings": {
+          "above": "brown",
+          "below": [
+            "brown",
+            "white"
+          ]
+        },
+        "tail": {
+          "colour": "brown",
+          "shape": null
+        }
+      }
+    }
+  ],
+  "viewNotes": [
+    {
+      "view": "perched-side",
+      "note": "Robust buzzard shape; variable brown plumage; yellow legs and cere (Newman's).",
+      "age": "adult",
+      "sex": "any",
+      "season": "any"
+    },
+    {
+      "view": "flight-below",
+      "note": "Underwing pattern variable with morph; typically pale flight-feather bases with darker carpal patch (Wikipedia).",
+      "age": "adult",
+      "sex": "any",
+      "season": "any"
+    }
+  ],
+  "calls": [
+    {
+      "sex": "any",
+      "type": "call",
+      "description": "A loud mewing 'peee-oo' familiar in Europe; often quieter in Africa. Open SA recordings included.",
+      "recordings": [
+        {
+          "key": "xeno-canto/XC1039689",
+          "source": "https://xeno-canto.org/1039689",
+          "fileUrl": "https://xeno-canto.org/sounds/uploaded/YSGTQVRQZI/XC1039689-20250911_KIRST_AK_A050C033_250911VR_CXA60_SLE_250HzHP_-3dBNORM_split.wav",
+          "author": "African Bioacoustics Community",
+          "license": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "aiGenerated": false,
+          "hosted": false
+        },
+        {
+          "key": "xeno-canto/XC526851",
+          "source": "https://xeno-canto.org/526851",
+          "fileUrl": "https://xeno-canto.org/sounds/uploaded/UKNJRQCOGA/XC526851-20200211-121419-0001.mp3",
+          "author": "Stanislav Novotny",
+          "license": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ]
+    }
+  ],
+  "images": [
+    {
+      "key": "buteo-buteo/perched-side-adult-any.jpg",
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "source": "https://commons.wikimedia.org/wiki/File:Day_85_Steppe_Buzzard_(Buteo_buteo_vulpinus)_(53399433721).jpg",
+      "fileUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1e/Day_85_Steppe_Buzzard_%28Buteo_buteo_vulpinus%29_%2853399433721%29.jpg/1280px-Day_85_Steppe_Buzzard_%28Buteo_buteo_vulpinus%29_%2853399433721%29.jpg",
+      "author": "Bernard Dupont",
+      "license": "CC BY-SA 2.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by-sa/2.0/",
+      "aiGenerated": false,
+      "hosted": false,
+      "alt": "Adult Steppe Buzzard (Buteo buteo vulpinus) perched; Kruger National Park.",
+      "caption": "Adult Steppe Buzzard (Buteo buteo vulpinus) perched; Kruger National Park."
+    },
+    {
+      "key": "buteo-buteo/perched-side-adult-any-2.jpg",
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "source": "https://commons.wikimedia.org/wiki/File:Day_85_Steppe_Buzzard_(Buteo_buteo_vulpinus)_(53860530815).jpg",
+      "fileUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ad/Day_85_Steppe_Buzzard_%28Buteo_buteo_vulpinus%29_%2853860530815%29.jpg/1280px-Day_85_Steppe_Buzzard_%28Buteo_buteo_vulpinus%29_%2853860530815%29.jpg",
+      "author": "Bernard Dupont",
+      "license": "CC BY-SA 2.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by-sa/2.0/",
+      "aiGenerated": false,
+      "hosted": false,
+      "alt": "Adult Steppe Buzzard perched, alternative angle; Kruger National Park.",
+      "caption": "Adult Steppe Buzzard perched, alternative angle; Kruger National Park."
+    },
+    {
+      "key": "buteo-buteo/perched-side-adult-any-3.jpg",
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "source": "https://commons.wikimedia.org/wiki/File:Buteo_buteo_vulpinus,_Kruger_NP_(6608140453).jpg",
+      "fileUrl": "https://upload.wikimedia.org/wikipedia/commons/2/2f/Buteo_buteo_vulpinus%2C_Kruger_NP_%286608140453%29.jpg",
+      "author": "Mike's Birds from Riverside, CA, US",
+      "license": "CC BY-SA 2.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by-sa/2.0/",
+      "aiGenerated": false,
+      "hosted": false,
+      "alt": "Steppe Buzzard perched; Kruger National Park.",
+      "caption": "Steppe Buzzard perched; Kruger National Park."
+    },
+    {
+      "key": "buteo-buteo/perched-side-adult-any-4.jpg",
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "source": "https://commons.wikimedia.org/wiki/File:Steppe_Buzzard_(Buteo_vulpinus)_(6035921650).jpg",
+      "fileUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/08/Steppe_Buzzard_%28Buteo_vulpinus%29_%286035921650%29.jpg/1280px-Steppe_Buzzard_%28Buteo_vulpinus%29_%286035921650%29.jpg",
+      "author": "Bernard Dupont",
+      "license": "CC BY-SA 2.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by-sa/2.0/",
+      "aiGenerated": false,
+      "hosted": false,
+      "alt": "Steppe Buzzard perched; southern Africa.",
+      "caption": "Steppe Buzzard perched; southern Africa."
+    },
+    {
+      "key": "buteo-buteo/flight-side-adult-any.jpg",
+      "view": "flight-side",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "source": "https://commons.wikimedia.org/wiki/File:Buteo_buteo_-near_Greytown,_KwaZulu-Natal,_South_Africa_-flying-8_(1).jpg",
+      "fileUrl": "https://upload.wikimedia.org/wikipedia/commons/4/4c/Buteo_buteo_-near_Greytown%2C_KwaZulu-Natal%2C_South_Africa_-flying-8_%281%29.jpg",
+      "author": "Alan Manson",
+      "license": "CC BY-SA 2.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by-sa/2.0/",
+      "aiGenerated": false,
+      "hosted": false,
+      "alt": "Steppe/Common Buzzard in flight; KwaZulu-Natal, South Africa.",
+      "caption": "Steppe/Common Buzzard in flight; KwaZulu-Natal, South Africa."
+    },
+    {
+      "key": "buteo-buteo/perched-side-adult-any-5.jpg",
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "source": "https://commons.wikimedia.org/wiki/File:Common_buzzard_(Buteo_buteo_vulpinus)_2.jpg",
+      "fileUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8a/Common_buzzard_%28Buteo_buteo_vulpinus%29_2.jpg/1280px-Common_buzzard_%28Buteo_buteo_vulpinus%29_2.jpg",
+      "author": "מינוזיג",
+      "license": "CC BY-SA 4.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "aiGenerated": false,
+      "hosted": false,
+      "alt": "Adult Steppe Buzzard (vulpinus) perched.",
+      "caption": "Adult Steppe Buzzard (vulpinus) perched."
+    }
+  ],
+  "research": {
+    "confidence": "medium",
+    "needsReview": false,
+    "note": "Status is stored as palearctic-migrant. The research treated this as a Palearctic summer visitor, which is the same movement, and palearctic-migrant is the status this site already uses. No breeding plumage in Africa; morph and age variation dominate. Gaps: Biodiversity Explorer page for Buteo buteo was not found (404). Confusion with Forest Buzzard is unresolved in many photos. Juvenile text thin in open sources used. GBIF Kruger peak Oct–Mar. Curated images prefer labelled B. b. vulpinus / Steppe Buzzard from Kruger and nearby. monthsPresent set from Newman/SABAP seasonality cross-checked with GBIF Kruger month facets (not abundance)."
+  }
 }

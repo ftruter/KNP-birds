@@ -7,8 +7,57 @@
     "af": "Langkuifarend"
   },
   "family": "accipitridae",
-  "summary": "The details for this species have not been published yet.",
-  "sampleData": true,
+  "status": "resident",
+  "monthsPresent": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+  ],
+  "size": {
+    "lengthCm": {
+      "min": 53,
+      "max": 58
+    },
+    "note": "Newman's 53–58 cm. Wikipedia 53–58 cm."
+  },
+  "habitat": "Forest fringes, exotic plantations (especially Eucalyptus) and wooded valleys; prefers hilly, moist conditions (Newman's). Scarcer in dry Kruger lowveld than in eastern wetlands/escarpment.",
+  "summary": "Dark eagle with an unmistakable long crest and bold white wing 'windows' in flight. Legs may be white (especially males) or black-and-white (Newman's).",
+  "sampleData": false,
+  "similar": [
+    {
+      "slug": "polemaetus-bellicosus",
+      "note": "Martial is much larger with spotted underparts (adult) and no long crest (Newman's)."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Newman's Birds — Long-crested Eagle species page",
+      "url": "https://newmansbirds.com/birds/long-crested-eagle/",
+      "publisher": "Newman's Birds / Struik Nature (online edition)",
+      "year": null
+    },
+    {
+      "title": "The Atlas of Southern African Birds, Vol. 1 (spread 139)",
+      "url": "https://sabap2.birdmap.africa/docs/sabap1/139.pdf",
+      "publisher": "BirdLife South Africa / Avian Demography Unit",
+      "year": 1997
+    },
+    {
+      "title": "Wikipedia — Long-crested Eagle",
+      "url": "https://en.wikipedia.org/wiki/Long-crested_eagle",
+      "publisher": "Wikimedia Foundation",
+      "year": null
+    }
+  ],
   "population": {
     "estimate": {
       "low": 2,
@@ -35,8 +84,173 @@
     },
     "tierApplied": "D"
   },
-  "variants": [],
-  "viewNotes": [],
-  "calls": [],
-  "images": []
+  "variants": [
+    {
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "marks": {
+        "bill": {
+          "colour": [
+            "yellow",
+            "black"
+          ],
+          "shape": "hooked; yellow cere"
+        },
+        "eye": {
+          "iris": "yellow",
+          "ring": null
+        },
+        "legs": {
+          "colour": [
+            "white",
+            "black"
+          ]
+        },
+        "head": {
+          "crown": "black",
+          "face": "black",
+          "throat": "black",
+          "pattern": "black with long crest"
+        },
+        "upperparts": {
+          "back": "black",
+          "rump": null
+        },
+        "underparts": {
+          "breast": "black",
+          "belly": "black"
+        },
+        "wings": {
+          "above": [
+            "black",
+            "white"
+          ],
+          "below": "white",
+          "pattern": "black with bold white windows; white panels"
+        },
+        "tail": {
+          "colour": "black",
+          "shape": null
+        }
+      }
+    }
+  ],
+  "viewNotes": [
+    {
+      "view": "perched-side",
+      "note": "Side view shows the key field marks summarised for Long-crested Eagle: see variants. (Newman's).",
+      "age": "adult",
+      "sex": "any",
+      "season": "any"
+    },
+    {
+      "view": "flight-below",
+      "note": "Bold white wing windows distinctive (Newmans).",
+      "age": "adult",
+      "sex": "any",
+      "season": "any"
+    },
+    {
+      "view": "flight-above",
+      "note": "Bold white wing windows distinctive (Newmans). Upperwing details as in variants.",
+      "age": "adult",
+      "sex": "any",
+      "season": "any"
+    }
+  ],
+  "calls": [
+    {
+      "sex": "any",
+      "type": "call",
+      "description": "Shrill 'weee-er' or 'peerr-wee' sometimes in flight (Newman's).",
+      "recordings": [
+        {
+          "key": "xeno-canto/XC910891",
+          "source": "https://xeno-canto.org/910891",
+          "fileUrl": "https://xeno-canto.org/sounds/uploaded/PEMGIBGFTN/XC910891-MtMoreland.wav",
+          "author": "Nick Schaller",
+          "license": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "aiGenerated": false,
+          "hosted": false
+        },
+        {
+          "key": "xeno-canto/XC561580",
+          "source": "https://xeno-canto.org/561580",
+          "fileUrl": "https://xeno-canto.org/sounds/uploaded/GQMCPIVNXX/XC561580-Long-crested%20Eagle.mp3",
+          "author": "Tim Cockcroft",
+          "license": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "aiGenerated": false,
+          "hosted": false
+        },
+        {
+          "key": "xeno-canto/XC449486",
+          "source": "https://xeno-canto.org/449486",
+          "fileUrl": "https://xeno-canto.org/sounds/uploaded/ISPFAAOURA/XC449486-Long-crested%20Eagle%2C%20Clarens%2C%20Dec%202018_0411.mp3",
+          "author": "Murray Christian",
+          "license": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ]
+    }
+  ],
+  "images": [
+    {
+      "key": "lophaetus-occipitalis/perched-side-1.jpg",
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "source": "https://commons.wikimedia.org/wiki/File:Long-crested_Eagle_(Lophaetus_occipitalis)_KwaZulu_Natal.jpg",
+      "fileUrl": "https://upload.wikimedia.org/wikipedia/commons/1/1c/Long-crested_Eagle_%28Lophaetus_occipitalis%29_KwaZulu_Natal.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+      "author": "Derek Keats from Johannesburg, South Africa",
+      "license": "CC BY 2.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by/2.0",
+      "aiGenerated": false,
+      "hosted": false,
+      "alt": "Long-crested Eagle — perched-side, adult. Long-crested Eagle Lophaetus occipitalis , KwaZulu Natal, South Africa.",
+      "caption": "Long-crested Eagle — perched-side, adult. Long-crested Eagle Lophaetus occipitalis , KwaZulu Natal, South Africa."
+    },
+    {
+      "key": "lophaetus-occipitalis/flight-above-2.jpg",
+      "view": "flight-above",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "source": "https://www.inaturalist.org/observations/97515716",
+      "fileUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/162192276/large.jpeg",
+      "author": "Peter Vos",
+      "license": "CC BY-NC 4.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+      "aiGenerated": false,
+      "hosted": false,
+      "alt": "Long-crested Eagle — flight-above, adult. Sea Park, Port Shepstone, 4241, South Africa",
+      "caption": "Long-crested Eagle — flight-above, adult. Sea Park, Port Shepstone, 4241, South Africa"
+    },
+    {
+      "key": "lophaetus-occipitalis/perched-side-3.jpg",
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "source": "https://commons.wikimedia.org/wiki/File:Long-crested_eagle_(Lophaetus_occipitalis).jpg",
+      "fileUrl": "https://upload.wikimedia.org/wikipedia/commons/8/81/Long-crested_eagle_%28Lophaetus_occipitalis%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+      "author": "Lip Kee Yap",
+      "license": "CC BY-SA 2.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+      "aiGenerated": false,
+      "hosted": false,
+      "alt": "Long-crested Eagle — perched-side, adult. Long-crested eagle Kwa Madwala, Mpumalanga, South Africa, on 9th. October 2009",
+      "caption": "Long-crested Eagle — perched-side, adult. Long-crested eagle Kwa Madwala, Mpumalanga, South Africa, on 9th. October 2009"
+    }
+  ],
+  "research": {
+    "confidence": "medium",
+    "needsReview": false,
+    "note": "No seasonal plumage change is described in the sources consulted, except presence/absence of migrants. Gaps: No juvenile/immature image in selected set. No Kruger-labelled image in the selected set."
+  }
 }

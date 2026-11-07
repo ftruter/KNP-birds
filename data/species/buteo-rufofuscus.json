@@ -7,8 +7,85 @@
     "af": "Rooiborsjakkalsvoël"
   },
   "family": "accipitridae",
-  "summary": "The details for this species have not been published yet.",
-  "sampleData": true,
+  "status": "resident",
+  "monthsPresent": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+  ],
+  "size": {
+    "lengthCm": {
+      "min": 44,
+      "max": 53
+    },
+    "note": "Newman's Birds gives 44–53 cm. Southern African endemic."
+  },
+  "habitat": "Hilly or montane regions and adjacent grassland (Newman's). Scarce in Kruger lowveld; more typical of escarpment and highveld.",
+  "summary": "A dark brown buzzard with a distinctive chestnut breast and tail; underwings dark brown and white (Newman's). Endemic resident.",
+  "sampleData": false,
+  "similar": [
+    {
+      "slug": "buteo-buteo",
+      "note": "Steppe Buzzard lacks the solid chestnut breast and tail of adult Jackal (Newman's)."
+    },
+    {
+      "slug": "buteo-trizonatus",
+      "note": "Forest Buzzard is smaller, forest-linked, without chestnut breast/tail (Newman's)."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Newman's Birds — Jackal Buzzard species page (text from Newman's Birds of Southern Africa)",
+      "url": "https://newmansbirds.com/birds/jackal-buzzard/",
+      "publisher": "Newman's Birds / Struik Nature (online edition)",
+      "year": null
+    },
+    {
+      "title": "The Atlas of Southern African Birds, Vol. 1 (spread 152)",
+      "url": "https://sabap2.birdmap.africa/docs/sabap1/152.pdf",
+      "publisher": "BirdLife South Africa / Avian Demography Unit",
+      "year": 1997
+    },
+    {
+      "title": "Biodiversity Explorer species text (summarised from Roberts Birds of Southern Africa VIIth ed., Hockey, Dean & Ryan 2005)",
+      "url": "https://www.biodiversityexplorer.info/birds/accipitridae/buteo_rufofuscus.htm",
+      "publisher": "Iziko Museums of South Africa",
+      "year": null
+    },
+    {
+      "title": "Wikipedia — Jackal buzzard",
+      "url": "https://en.wikipedia.org/wiki/Jackal_buzzard",
+      "publisher": "Wikimedia Foundation",
+      "year": 2026
+    },
+    {
+      "title": "GBIF occurrence month facets for Buteo rufofuscus, Kruger bounding box (lon 31.0–32.04, lat −25.53 to −22.33, country ZA)",
+      "url": "https://api.gbif.org/v1/occurrence/search",
+      "publisher": "GBIF.org",
+      "year": 2026
+    },
+    {
+      "title": "xeno-canto recordings (metadata via GBIF dataset b1047888-ae52-4179-9dd5-5448ea342a24)",
+      "url": "https://xeno-canto.org/",
+      "publisher": "xeno-canto.org / GBIF",
+      "year": 2026
+    },
+    {
+      "title": "Wikimedia Commons species category images",
+      "url": "https://commons.wikimedia.org/",
+      "publisher": "Wikimedia Commons",
+      "year": 2026
+    }
+  ],
   "population": {
     "estimate": {
       "low": 1,
@@ -35,8 +112,212 @@
     },
     "tierApplied": "D"
   },
-  "variants": [],
-  "viewNotes": [],
-  "calls": [],
-  "images": []
+  "variants": [
+    {
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "marks": {
+        "bill": {
+          "colour": [
+            "black",
+            "yellow"
+          ],
+          "shape": "hooked"
+        },
+        "eye": {
+          "iris": "brown",
+          "ring": null
+        },
+        "legs": {
+          "colour": "yellow"
+        },
+        "head": {
+          "crown": "brown",
+          "face": "brown",
+          "throat": "brown"
+        },
+        "upperparts": {
+          "back": "brown",
+          "rump": null
+        },
+        "underparts": {
+          "breast": "chestnut",
+          "belly": "brown"
+        },
+        "wings": {
+          "above": [
+            "brown",
+            "white"
+          ],
+          "below": [
+            "brown",
+            "white"
+          ]
+        },
+        "tail": {
+          "colour": "chestnut",
+          "shape": "wide, short"
+        }
+      }
+    },
+    {
+      "age": "immature",
+      "sex": "any",
+      "season": "any",
+      "marks": {
+        "bill": {
+          "colour": null,
+          "shape": null
+        },
+        "eye": {
+          "iris": null,
+          "ring": null
+        },
+        "legs": {
+          "colour": "yellow"
+        },
+        "head": {
+          "crown": null,
+          "face": null,
+          "throat": null
+        },
+        "upperparts": {
+          "back": "brown",
+          "rump": null
+        },
+        "underparts": {
+          "breast": [
+            "brown",
+            "white"
+          ],
+          "belly": null
+        },
+        "wings": {
+          "above": null,
+          "below": null
+        },
+        "tail": {
+          "colour": null,
+          "shape": null
+        }
+      }
+    }
+  ],
+  "viewNotes": [
+    {
+      "view": "perched-front",
+      "note": "Chestnut breast is the key mark (Newman's).",
+      "age": "adult",
+      "sex": "any",
+      "season": "any"
+    },
+    {
+      "view": "flight-below",
+      "note": "Dark-and-white underwing with chestnut tail (Newman's).",
+      "age": "adult",
+      "sex": "any",
+      "season": "any"
+    }
+  ],
+  "calls": [
+    {
+      "sex": "any",
+      "type": "call",
+      "description": "A loud, jackal-like yelping call (source of the English name in older lore); ringing mew in flight. Open SA recordings included.",
+      "recordings": [
+        {
+          "key": "xeno-canto/XC1090801",
+          "source": "https://xeno-canto.org/1090801",
+          "fileUrl": "https://xeno-canto.org/sounds/uploaded/YSGTQVRQZI/XC1090801-20260324_Newlands_ACharman_Phone_142049_SLE_250HP_-3dB_split.wav",
+          "author": "African Bioacoustics Community",
+          "license": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "aiGenerated": false,
+          "hosted": false
+        },
+        {
+          "key": "xeno-canto/XC397385",
+          "source": "https://xeno-canto.org/397385",
+          "fileUrl": "https://xeno-canto.org/sounds/uploaded/SJRAXPTEKH/XC397385-Jackal%20Buzzard.mp3",
+          "author": "Alan Collett",
+          "license": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ]
+    }
+  ],
+  "images": [
+    {
+      "key": "buteo-rufofuscus/perched-front-adult-any.jpg",
+      "view": "perched-front",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "source": "https://commons.wikimedia.org/wiki/File:Jackal_buzzard,_Buteo_rufofuscus,_at_Kgalagadi_Transfrontier_Park,_Northern_Cape,_South_Africa_(33833544004).jpg",
+      "fileUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/dc/Jackal_buzzard%2C_Buteo_rufofuscus%2C_at_Kgalagadi_Transfrontier_Park%2C_Northern_Cape%2C_South_Africa_%2833833544004%29.jpg/1280px-Jackal_buzzard%2C_Buteo_rufofuscus%2C_at_Kgalagadi_Transfrontier_Park%2C_Northern_Cape%2C_South_Africa_%2833833544004%29.jpg",
+      "author": "Derek Keats",
+      "license": "CC BY 2.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by/2.0/",
+      "aiGenerated": false,
+      "hosted": false,
+      "alt": "Adult Jackal Buzzard perched front view; Kgalagadi.",
+      "caption": "Adult Jackal Buzzard perched front view; Kgalagadi."
+    },
+    {
+      "key": "buteo-rufofuscus/perched-side-adult-any.jpg",
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "source": "https://commons.wikimedia.org/wiki/File:Jackal_Buzzard_(Buteo_rufofuscus)_(54299100189).jpg",
+      "fileUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/aa/Jackal_Buzzard_%28Buteo_rufofuscus%29_%2854299100189%29.jpg/1280px-Jackal_Buzzard_%28Buteo_rufofuscus%29_%2854299100189%29.jpg",
+      "author": "Bernard Dupont",
+      "license": "CC BY-SA 2.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by-sa/2.0/",
+      "aiGenerated": false,
+      "hosted": false,
+      "alt": "Adult Jackal Buzzard perched, side view.",
+      "caption": "Adult Jackal Buzzard perched, side view."
+    },
+    {
+      "key": "buteo-rufofuscus/perched-side-immature-any.jpg",
+      "view": "perched-side",
+      "age": "immature",
+      "sex": "any",
+      "season": "any",
+      "source": "https://commons.wikimedia.org/wiki/File:Jackal_Buzzard_(Buteo_rufofuscus)_immature_(32126652941).jpg",
+      "fileUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b6/Jackal_Buzzard_%28Buteo_rufofuscus%29_immature_%2832126652941%29.jpg/1280px-Jackal_Buzzard_%28Buteo_rufofuscus%29_immature_%2832126652941%29.jpg",
+      "author": "Bernard Dupont",
+      "license": "CC BY-SA 2.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by-sa/2.0/",
+      "aiGenerated": false,
+      "hosted": false,
+      "alt": "Immature Jackal Buzzard perched.",
+      "caption": "Immature Jackal Buzzard perched."
+    },
+    {
+      "key": "buteo-rufofuscus/flight-side-adult-any.jpg",
+      "view": "flight-side",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "source": "https://commons.wikimedia.org/wiki/File:Jackal_Buzzard_Taking_Flight.JPG",
+      "fileUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d9/Jackal_Buzzard_Taking_Flight.JPG/1280px-Jackal_Buzzard_Taking_Flight.JPG",
+      "author": "Gouldingken",
+      "license": "CC BY-SA 4.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "aiGenerated": false,
+      "hosted": false,
+      "alt": "Jackal Buzzard taking flight.",
+      "caption": "Jackal Buzzard taking flight."
+    }
+  ],
+  "research": {
+    "confidence": "medium",
+    "needsReview": false,
+    "note": "No seasonal plumage change; immature differs from adult. Gaps: Rare in Kruger lowveld (low GBIF); images from Kgalagadi/hills used. Chick not covered. Southern African endemic. Immature vs Steppe Buzzard is a classic confusion pair."
+  }
 }

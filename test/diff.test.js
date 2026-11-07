@@ -42,15 +42,19 @@ test('african fish eagle flight and age diffs', async () => {
   assert.equal(age.status, 'differs')
   const tail = age.rows.find((row) => row.mark === 'Tail colour')
   assert.deepEqual(tail.cells.Adult.names, ['white'])
-  assert.deepEqual(tail.cells.Juvenile.names, ['brown'])
+  assert.deepEqual(tail.cells.Immature.names, ['brown'])
   assert.equal(season.status, 'no-visible-difference')
   assert.equal(sex.status, 'no-visible-difference')
   assert.equal(flight.status, 'differs')
-  assert.deepEqual(flight.rows[0].cells['From above'].names, ['dark-brown'])
-  assert.deepEqual(flight.rows[0].cells['From below'].names, [
-    'chestnut',
-    'black',
-  ])
+  assert.equal(flight.rows.length, 0)
+  assert.match(
+    flight.notes.find((row) => row.label === 'From above').text,
+    /dark brown/,
+  )
+  assert.match(
+    flight.notes.find((row) => row.label === 'From below').text,
+    /chestnut belly/,
+  )
 })
 
 test('southern ground hornbill sex diff is the throat only', async () => {

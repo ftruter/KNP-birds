@@ -7,8 +7,61 @@
     "af": "Witkopaasvoël"
   },
   "family": "accipitridae",
-  "summary": "The details for this species have not been published yet.",
-  "sampleData": true,
+  "status": "resident",
+  "monthsPresent": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+  ],
+  "size": {
+    "lengthCm": {
+      "min": 85,
+      "max": 85
+    },
+    "note": "Newman's 85 cm. Wikipedia gives similar large-vulture size."
+  },
+  "habitat": "Woodland and savanna; prefers baobabs for nesting. Usually pairs; often first at carcasses but feeds aside from the melee (Newman's; SABAP1).",
+  "summary": "Large angular-headed vulture with white head, neck and underparts, pink face and legs, and a heavy blue-and-red bill. Female has white inner secondaries visible at rest and in flight; male's secondaries dark (Newman's).",
+  "sampleData": false,
+  "similar": [
+    {
+      "slug": "torgos-tracheliotos",
+      "note": "Lappet-faced has a crimson head and dark body with white pants, not a white head (Newman's)."
+    },
+    {
+      "slug": "necrosyrtes-monachus",
+      "note": "Hooded is much smaller and wholly brown with a slender bill (Newman's)."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Newman's Birds — White-headed Vulture species page",
+      "url": "https://newmansbirds.com/birds/white-headed-vulture/",
+      "publisher": "Newman's Birds / Struik Nature (online edition)",
+      "year": null
+    },
+    {
+      "title": "The Atlas of Southern African Birds, Vol. 1 (spread 125)",
+      "url": "https://sabap2.birdmap.africa/docs/sabap1/125.pdf",
+      "publisher": "BirdLife South Africa / Avian Demography Unit",
+      "year": 1997
+    },
+    {
+      "title": "Wikipedia — White-headed Vulture",
+      "url": "https://en.wikipedia.org/wiki/White-headed_vulture",
+      "publisher": "Wikimedia Foundation",
+      "year": null
+    }
+  ],
   "population": {
     "estimate": {
       "low": 32,
@@ -35,8 +88,279 @@
     },
     "tierApplied": "D"
   },
-  "variants": [],
-  "viewNotes": [],
-  "calls": [],
-  "images": []
+  "variants": [
+    {
+      "age": "adult",
+      "sex": "male",
+      "season": "any",
+      "marks": {
+        "bill": {
+          "colour": [
+            "blue",
+            "red"
+          ],
+          "shape": "heavy angular"
+        },
+        "eye": {
+          "iris": "brown",
+          "ring": null
+        },
+        "legs": {
+          "colour": "pink"
+        },
+        "head": {
+          "crown": "white",
+          "face": "pink",
+          "throat": "white",
+          "pattern": "bare pink"
+        },
+        "upperparts": {
+          "back": "dark-brown",
+          "rump": null
+        },
+        "underparts": {
+          "breast": [
+            "dark-brown",
+            "white"
+          ],
+          "belly": "white",
+          "pattern": "dark brown upper; white lower"
+        },
+        "wings": {
+          "above": "dark-brown",
+          "below": "dark-brown",
+          "pattern": "dark secondaries"
+        },
+        "tail": {
+          "colour": "dark-brown",
+          "shape": null
+        }
+      }
+    },
+    {
+      "age": "adult",
+      "sex": "female",
+      "season": "any",
+      "marks": {
+        "bill": {
+          "colour": [
+            "blue",
+            "red"
+          ],
+          "shape": "heavy angular"
+        },
+        "eye": {
+          "iris": null,
+          "ring": null
+        },
+        "legs": {
+          "colour": "pink"
+        },
+        "head": {
+          "crown": "white",
+          "face": "pink",
+          "throat": "white",
+          "pattern": "bare pink"
+        },
+        "upperparts": {
+          "back": null,
+          "rump": null
+        },
+        "underparts": {
+          "breast": [
+            "dark-brown",
+            "white"
+          ],
+          "belly": "white",
+          "pattern": "dark upper; white lower"
+        },
+        "wings": {
+          "above": [
+            "dark-brown",
+            "white"
+          ],
+          "below": "white",
+          "pattern": "dark with white inner secondaries; white inner secondaries"
+        },
+        "tail": {
+          "colour": null,
+          "shape": null
+        }
+      }
+    },
+    {
+      "age": "immature",
+      "sex": "any",
+      "season": "any",
+      "marks": {
+        "bill": {
+          "colour": null,
+          "shape": null
+        },
+        "eye": {
+          "iris": null,
+          "ring": null
+        },
+        "legs": {
+          "colour": null
+        },
+        "head": {
+          "crown": "tawny",
+          "face": "pink",
+          "throat": null
+        },
+        "upperparts": {
+          "back": null,
+          "rump": null
+        },
+        "underparts": {
+          "breast": null,
+          "belly": null,
+          "pattern": "browner"
+        },
+        "wings": {
+          "above": null,
+          "below": null
+        },
+        "tail": {
+          "colour": null,
+          "shape": null
+        }
+      }
+    }
+  ],
+  "viewNotes": [
+    {
+      "view": "perched-side",
+      "note": "Side view shows the key field marks summarised for White-headed Vulture: see variants. (Newman's).",
+      "age": "adult",
+      "sex": "any",
+      "season": "any"
+    },
+    {
+      "view": "flight-below",
+      "note": "White head and body; female white inner secondaries (Newmans).",
+      "age": "adult",
+      "sex": "any",
+      "season": "any"
+    },
+    {
+      "view": "flight-above",
+      "note": "White head and body; female white inner secondaries (Newmans). Upperwing details as in variants.",
+      "age": "adult",
+      "sex": "any",
+      "season": "any"
+    }
+  ],
+  "calls": [
+    {
+      "sex": "any",
+      "type": "call",
+      "description": "Usually silent; hisses/squeals at carcasses (Newman's family text).",
+      "recordings": []
+    }
+  ],
+  "images": [
+    {
+      "key": "trigonoceps-occipitalis/perched-side-1.jpg",
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "source": "https://www.inaturalist.org/observations/9945112",
+      "fileUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/13651423/large.jpeg",
+      "author": "copper",
+      "license": "CC BY-NC 4.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+      "aiGenerated": false,
+      "hosted": false,
+      "alt": "White-headed Vulture — perched-side, adult. Kruger National Park, ZA-MP-EH, ZA-MP, ZA",
+      "caption": "White-headed Vulture — perched-side, adult. Kruger National Park, ZA-MP-EH, ZA-MP, ZA"
+    },
+    {
+      "key": "trigonoceps-occipitalis/perched-front-2.jpg",
+      "view": "perched-front",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "source": "https://commons.wikimedia.org/wiki/File:Day_12_White-headed_Vulture_(Trigonoceps_occipitalis)_(53439819016).jpg",
+      "fileUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/43/Day_12_White-headed_Vulture_%28Trigonoceps_occipitalis%29_%2853439819016%29.jpg/1280px-Day_12_White-headed_Vulture_%28Trigonoceps_occipitalis%29_%2853439819016%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "author": "Bernard DUPONT from FRANCE",
+      "license": "CC BY-SA 2.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+      "aiGenerated": false,
+      "hosted": false,
+      "alt": "White-headed Vulture — perched-front, adult. Kumana Waterhole, H1-3 Road North of Tshokwane, Kruger NP, Mpumalanga, SOUTH AFRICA",
+      "caption": "White-headed Vulture — perched-front, adult. Kumana Waterhole, H1-3 Road North of Tshokwane, Kruger NP, Mpumalanga, SOUTH AFRICA"
+    },
+    {
+      "key": "trigonoceps-occipitalis/perched-back-3.jpg",
+      "view": "perched-back",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "source": "https://commons.wikimedia.org/wiki/File:Day_49_White-headed_Vulture_(Trigonoceps_occipitalis)_and_White-backed_Vulture_(Gyps_africanus)_below_..._(53315807724).jpg",
+      "fileUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/dd/Day_49_White-headed_Vulture_%28Trigonoceps_occipitalis%29_and_White-backed_Vulture_%28Gyps_africanus%29_below_..._%2853315807724%29.jpg/1280px-Day_49_White-headed_Vulture_%28Trigonoceps_occipitalis%29_and_White-backed_Vulture_%28Gyps_africanus%29_below_..._%2853315807724%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "author": "Bernard DUPONT from FRANCE",
+      "license": "CC BY-SA 2.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+      "aiGenerated": false,
+      "hosted": false,
+      "alt": "White-headed Vulture — perched-back, adult. S106 Road East of Orpen, Kruger NP, Mpumalanga, SOUTH AFRICA The file title also names White-backed Vulture.",
+      "caption": "White-headed Vulture — perched-back, adult. S106 Road East of Orpen, Kruger NP, Mpumalanga, SOUTH AFRICA The file title also names White-backed Vulture."
+    },
+    {
+      "key": "trigonoceps-occipitalis/flight-above-4.jpg",
+      "view": "flight-above",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "source": "https://commons.wikimedia.org/wiki/File:Trigonoceps_occipitalis_-Kruger_National_Park,_South_Africa_-flying-8.jpg",
+      "fileUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/22/Trigonoceps_occipitalis_-Kruger_National_Park%2C_South_Africa_-flying-8.jpg/1280px-Trigonoceps_occipitalis_-Kruger_National_Park%2C_South_Africa_-flying-8.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "author": "hyper7pro",
+      "license": "CC BY 2.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by/2.0",
+      "aiGenerated": false,
+      "hosted": false,
+      "alt": "White-headed Vulture — flight-above, adult. A White-headed Vulture flying at Kruger National Park, South Africa.",
+      "caption": "White-headed Vulture — flight-above, adult. A White-headed Vulture flying at Kruger National Park, South Africa."
+    },
+    {
+      "key": "trigonoceps-occipitalis/perched-front-5.jpg",
+      "view": "perched-front",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "source": "https://commons.wikimedia.org/wiki/File:Day_12_White-headed_Vulture_(Trigonoceps_occipitalis)_and_Hooded_Vulture_(Necrosyrtes_monachus)_sharing_a_carcass_..._(53228649773).jpg",
+      "fileUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2b/Day_12_White-headed_Vulture_%28Trigonoceps_occipitalis%29_and_Hooded_Vulture_%28Necrosyrtes_monachus%29_sharing_a_carcass_..._%2853228649773%29.jpg/1280px-Day_12_White-headed_Vulture_%28Trigonoceps_occipitalis%29_and_Hooded_Vulture_%28Necrosyrtes_monachus%29_sharing_a_carcass_..._%2853228649773%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "author": "Bernard DUPONT from FRANCE",
+      "license": "CC BY-SA 2.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+      "aiGenerated": false,
+      "hosted": false,
+      "alt": "White-headed Vulture — perched-front, adult. Kumana Waterhole, H1-3 Road North of Tshokwane, Kruger NP, Mpumalanga, SOUTH AFRICA The file title also names Hooded Vulture.",
+      "caption": "White-headed Vulture — perched-front, adult. Kumana Waterhole, H1-3 Road North of Tshokwane, Kruger NP, Mpumalanga, SOUTH AFRICA The file title also names Hooded Vulture."
+    },
+    {
+      "key": "trigonoceps-occipitalis/perched-front-6.jpg",
+      "view": "perched-front",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "source": "https://commons.wikimedia.org/wiki/File:Day_12_White-headed_Vulture_(Trigonoceps_occipitalis)_and_Hooded_Vulture_(Necrosyrtes_monachus)_sharing_a_carcass_..._(53438890892).jpg",
+      "fileUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/98/Day_12_White-headed_Vulture_%28Trigonoceps_occipitalis%29_and_Hooded_Vulture_%28Necrosyrtes_monachus%29_sharing_a_carcass_..._%2853438890892%29.jpg/1280px-Day_12_White-headed_Vulture_%28Trigonoceps_occipitalis%29_and_Hooded_Vulture_%28Necrosyrtes_monachus%29_sharing_a_carcass_..._%2853438890892%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "author": "Bernard DUPONT from FRANCE",
+      "license": "CC BY-SA 2.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+      "aiGenerated": false,
+      "hosted": false,
+      "alt": "White-headed Vulture — perched-front, adult. Kumana Waterhole, H1-3 Road North of Tshokwane, Kruger NP, Mpumalanga, SOUTH AFRICA The file title also names Hooded Vulture.",
+      "caption": "White-headed Vulture — perched-front, adult. Kumana Waterhole, H1-3 Road North of Tshokwane, Kruger NP, Mpumalanga, SOUTH AFRICA The file title also names Hooded Vulture."
+    }
+  ],
+  "research": {
+    "confidence": "medium",
+    "needsReview": false,
+    "note": "No seasonal plumage change is described in the sources consulted, except presence/absence of migrants. Gaps: No juvenile/immature image in selected set. No openly licensed xeno-canto recording found via GBIF. Colour phrases outside the vocabulary were stored as the nearest swatch: dark to dark-brown; pinkish to pink."
+  }
 }

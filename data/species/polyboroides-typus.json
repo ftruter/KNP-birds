@@ -7,8 +7,57 @@
     "af": "Kaalwangvalk"
   },
   "family": "accipitridae",
-  "summary": "The details for this species have not been published yet.",
-  "sampleData": true,
+  "status": "resident",
+  "monthsPresent": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+  ],
+  "size": {
+    "lengthCm": {
+      "min": 60,
+      "max": 66
+    },
+    "note": "Newman's 60–66 cm."
+  },
+  "habitat": "Woodland, forest edge, palm savanna and suburbia; clambers about tree cavities and weaver colonies using double-jointed legs (Newman's; SABAP1 Gymnogene).",
+  "summary": "Large grey hawk with black flight feathers, black tail with a bold white band, and bare yellow facial skin. Immature brown. Also called Gymnogene (Newman's; SABAP1).",
+  "sampleData": false,
+  "similar": [
+    {
+      "slug": "melierax-metabates",
+      "note": "Dark Chanting lacks bare yellow face and bold single white tail-band of Harrier-Hawk (Newman's)."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Newman's Birds — African Harrier-Hawk species page",
+      "url": "https://newmansbirds.com/birds/african-harrier-hawk/",
+      "publisher": "Newman's Birds / Struik Nature (online edition)",
+      "year": null
+    },
+    {
+      "title": "The Atlas of Southern African Birds, Vol. 1 (spread 169)",
+      "url": "https://sabap2.birdmap.africa/docs/sabap1/169.pdf",
+      "publisher": "BirdLife South Africa / Avian Demography Unit",
+      "year": 1997
+    },
+    {
+      "title": "Wikipedia — African Harrier-Hawk",
+      "url": "https://en.wikipedia.org/wiki/African_harrier-hawk",
+      "publisher": "Wikimedia Foundation",
+      "year": null
+    }
+  ],
   "population": {
     "estimate": {
       "low": 128,
@@ -35,8 +84,262 @@
     },
     "tierApplied": "D"
   },
-  "variants": [],
-  "viewNotes": [],
-  "calls": [],
-  "images": []
+  "variants": [
+    {
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "marks": {
+        "bill": {
+          "colour": [
+            "yellow",
+            "black"
+          ],
+          "shape": "yellow cere"
+        },
+        "eye": {
+          "iris": "dark-brown",
+          "ring": null
+        },
+        "legs": {
+          "colour": "yellow"
+        },
+        "head": {
+          "crown": "grey",
+          "face": "yellow",
+          "throat": "grey",
+          "pattern": "bare yellow"
+        },
+        "upperparts": {
+          "back": "grey",
+          "rump": null
+        },
+        "underparts": {
+          "breast": "grey",
+          "belly": null,
+          "pattern": "finely barred"
+        },
+        "wings": {
+          "above": [
+            "grey",
+            "black"
+          ],
+          "below": "black",
+          "pattern": "black flight feathers"
+        },
+        "tail": {
+          "colour": [
+            "black",
+            "white"
+          ],
+          "shape": "black with bold white central band"
+        }
+      }
+    },
+    {
+      "age": "immature",
+      "sex": "any",
+      "season": "any",
+      "marks": {
+        "bill": {
+          "colour": null,
+          "shape": null
+        },
+        "eye": {
+          "iris": null,
+          "ring": null
+        },
+        "legs": {
+          "colour": null
+        },
+        "head": {
+          "crown": "brown",
+          "face": null,
+          "throat": "brown",
+          "pattern": "duller bare face"
+        },
+        "upperparts": {
+          "back": "brown",
+          "rump": null
+        },
+        "underparts": {
+          "breast": "brown",
+          "belly": "brown"
+        },
+        "wings": {
+          "above": null,
+          "below": null
+        },
+        "tail": {
+          "colour": null,
+          "shape": null
+        }
+      }
+    }
+  ],
+  "viewNotes": [
+    {
+      "view": "perched-side",
+      "note": "Side view shows the key field marks summarised for African Harrier-Hawk: see variants. (Newman's).",
+      "age": "adult",
+      "sex": "any",
+      "season": "any"
+    },
+    {
+      "view": "flight-below",
+      "note": "Black flight feathers and bold white tail-band (Newmans).",
+      "age": "adult",
+      "sex": "any",
+      "season": "any"
+    },
+    {
+      "view": "flight-above",
+      "note": "Black flight feathers and bold white tail-band (Newmans). Upperwing details as in variants.",
+      "age": "adult",
+      "sex": "any",
+      "season": "any"
+    }
+  ],
+  "calls": [
+    {
+      "sex": "any",
+      "type": "call",
+      "description": "Drawn-out whistling screams; often noisy near nests (Wikipedia).",
+      "recordings": [
+        {
+          "key": "xeno-canto/XC1039698",
+          "source": "https://xeno-canto.org/1039698",
+          "fileUrl": "https://xeno-canto.org/sounds/uploaded/YSGTQVRQZI/XC1039698-20250909_HB_AK_A050C005_250909RA_CXA60_SLE_250HzHP_-3dBNORM_Hawk-only.wav",
+          "author": "African Bioacoustics Community",
+          "license": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "aiGenerated": false,
+          "hosted": false
+        },
+        {
+          "key": "xeno-canto/XC580274",
+          "source": "https://xeno-canto.org/580274",
+          "fileUrl": "https://xeno-canto.org/sounds/uploaded/HMBDEWEZVS/XC580274-1%20A%20Harrier-hawk.mp3",
+          "author": "Tony Archer",
+          "license": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "aiGenerated": false,
+          "hosted": false
+        },
+        {
+          "key": "xeno-canto/XC958205",
+          "source": "https://xeno-canto.org/958205",
+          "fileUrl": "https://xeno-canto.org/sounds/uploaded/CHZTWCVJZM/XC958205-Gymnogene-d-Afrique-04-01-2025-17h30-maison---04-01-2025-17.52.wav",
+          "author": "François Morand",
+          "license": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ]
+    }
+  ],
+  "images": [
+    {
+      "key": "polyboroides-typus/perched-side-1.jpg",
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "source": "https://commons.wikimedia.org/wiki/File:African_Harrier-Hawk_(Polyboroides_typus).jpg",
+      "fileUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a3/African_Harrier-Hawk_%28Polyboroides_typus%29.jpg/1280px-African_Harrier-Hawk_%28Polyboroides_typus%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "author": "Bernard DUPONT",
+      "license": "CC BY-SA 2.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+      "aiGenerated": false,
+      "hosted": false,
+      "alt": "African Harrier-Hawk — perched-side, adult. H4-1 Road East of Skukuza, Kruger NP, Mpumalanga, SOUTH AFRICA",
+      "caption": "African Harrier-Hawk — perched-side, adult. H4-1 Road East of Skukuza, Kruger NP, Mpumalanga, SOUTH AFRICA"
+    },
+    {
+      "key": "polyboroides-typus/perched-back-2.jpg",
+      "view": "perched-back",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "source": "https://www.inaturalist.org/observations/145836194",
+      "fileUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/250586027/large.jpg",
+      "author": "Marie Delport",
+      "license": "CC BY-NC 4.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+      "aiGenerated": false,
+      "hosted": false,
+      "alt": "African Harrier-Hawk — perched-back, adult. Colchester, Gqeberha, South Africa",
+      "caption": "African Harrier-Hawk — perched-back, adult. Colchester, Gqeberha, South Africa"
+    },
+    {
+      "key": "polyboroides-typus/flight-above-3.jpg",
+      "view": "flight-above",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "source": "https://commons.wikimedia.org/wiki/File:African_harrier-hawk_(Polyboroides_typus_-_gymnogene)_in_flight.jpg",
+      "fileUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/ce/African_harrier-hawk_%28Polyboroides_typus_-_gymnogene%29_in_flight.jpg/1280px-African_harrier-hawk_%28Polyboroides_typus_-_gymnogene%29_in_flight.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "author": "Charles J. Sharp",
+      "license": "CC BY-SA 4.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "aiGenerated": false,
+      "hosted": false,
+      "alt": "African Harrier-Hawk — flight-above, adult. African harrier-hawk ( Polyboroides typus ), gymnogene , Queen Elizabeth Park, Uganda",
+      "caption": "African Harrier-Hawk — flight-above, adult. African harrier-hawk ( Polyboroides typus ), gymnogene , Queen Elizabeth Park, Uganda"
+    },
+    {
+      "key": "polyboroides-typus/perched-side-4.jpg",
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "source": "https://commons.wikimedia.org/wiki/File:African_Harrier-Hawk_(Polyboroides_typus)_(51901186498).jpg",
+      "fileUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9e/African_Harrier-Hawk_%28Polyboroides_typus%29_%2851901186498%29.jpg/1280px-African_Harrier-Hawk_%28Polyboroides_typus%29_%2851901186498%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "author": "Bernard DUPONT from FRANCE",
+      "license": "CC BY-SA 2.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+      "aiGenerated": false,
+      "hosted": false,
+      "alt": "African Harrier-Hawk — perched-side, adult. H1-2 Road East of Skukuza, Kruger NP, Mpumalanga, SOUTH AFRICA",
+      "caption": "African Harrier-Hawk — perched-side, adult. H1-2 Road East of Skukuza, Kruger NP, Mpumalanga, SOUTH AFRICA"
+    },
+    {
+      "key": "polyboroides-typus/perched-side-5.jpg",
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "source": "https://commons.wikimedia.org/wiki/File:African_Harrier-Hawk_(Polyboroides_typus)_(51901471306).jpg",
+      "fileUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a0/African_Harrier-Hawk_%28Polyboroides_typus%29_%2851901471306%29.jpg/1280px-African_Harrier-Hawk_%28Polyboroides_typus%29_%2851901471306%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "author": "Bernard DUPONT from FRANCE",
+      "license": "CC BY-SA 2.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+      "aiGenerated": false,
+      "hosted": false,
+      "alt": "African Harrier-Hawk — perched-side, adult. H1-2 Road East of Skukuza, Kruger NP, Mpumalanga, SOUTH AFRICA",
+      "caption": "African Harrier-Hawk — perched-side, adult. H1-2 Road East of Skukuza, Kruger NP, Mpumalanga, SOUTH AFRICA"
+    },
+    {
+      "key": "polyboroides-typus/perched-side-6.jpg",
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "source": "https://commons.wikimedia.org/wiki/File:African_Harrier-Hawk_(Polyboroides_typus)_(51901559303).jpg",
+      "fileUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b4/African_Harrier-Hawk_%28Polyboroides_typus%29_%2851901559303%29.jpg/1280px-African_Harrier-Hawk_%28Polyboroides_typus%29_%2851901559303%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "author": "Bernard DUPONT from FRANCE",
+      "license": "CC BY-SA 2.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+      "aiGenerated": false,
+      "hosted": false,
+      "alt": "African Harrier-Hawk — perched-side, adult. H1-2 Road East of Skukuza, Kruger NP, Mpumalanga, SOUTH AFRICA",
+      "caption": "African Harrier-Hawk — perched-side, adult. H1-2 Road East of Skukuza, Kruger NP, Mpumalanga, SOUTH AFRICA"
+    }
+  ],
+  "research": {
+    "confidence": "medium",
+    "needsReview": false,
+    "note": "Research confidence was medium-high and is stored as medium. No seasonal plumage change is described in the sources consulted, except presence/absence of migrants. Gaps: No juvenile/immature image in selected set. Colour phrases outside the vocabulary were stored as the nearest swatch: dark to dark-brown."
+  }
 }

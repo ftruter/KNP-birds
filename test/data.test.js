@@ -81,17 +81,14 @@ test('every data file matches the schema, slugs, and colour vocabulary', async (
         assert.deepEqual(Object.keys(value), ['en', 'af', 'population'])
       }
     } else if (entry.key !== 'index/credits') {
+      const sourcedFamily = new Set([
+        'coraciidae',
+        'alcedinidae',
+        'accipitridae',
+      ])
       const sourced =
-        entry.key === 'family/coraciidae' ||
-        entry.key === 'family/alcedinidae' ||
-        entry.key.startsWith('species/coracias-') ||
-        entry.key === 'species/eurystomus-glaucurus' ||
-        entry.key.startsWith('species/alcedo-') ||
-        entry.key.startsWith('species/ceryle-') ||
-        entry.key.startsWith('species/corythornis-') ||
-        entry.key.startsWith('species/halcyon-') ||
-        entry.key.startsWith('species/ispidina-') ||
-        entry.key === 'species/megaceryle-maxima'
+        (data.kind === 'family' && sourcedFamily.has(data.slug)) ||
+        (data.kind === 'species' && sourcedFamily.has(data.family))
       assert.equal(data.sampleData, !sourced, entry.key)
     }
   }
@@ -101,9 +98,10 @@ test('every data file matches the schema, slugs, and colour vocabulary', async (
       (token) => !names.has(token),
     )
     assert.deepEqual(unknown, [], `${slug} uses colours outside the vocabulary`)
-    assert.equal(species.images.length, 0)
   }
   const fishEagle = await readJson('data/species/icthyophaga-vocifer.json')
+  assert.equal(fishEagle.sampleData, false)
+  assert.ok(fishEagle.images.length > 0)
   assert.equal(fishEagle.population.unit, 'matureIndividuals')
   assert.equal(fishEagle.population.estimate.low, 64)
   assert.equal(fishEagle.population.estimate.high, 256)
@@ -111,6 +109,7 @@ test('every data file matches the schema, slugs, and colour vocabulary', async (
   assert.equal(fishEagle.calls.length, 1)
   assert.equal(fishEagle.variants.length, 2)
   const hornbill = await readJson('data/species/bucorvus-leadbeateri.json')
+  assert.equal(hornbill.images.length, 0)
   assert.equal(hornbill.sampleData, true)
   assert.equal(hornbill.population.unit, 'groups')
   assert.equal(hornbill.population.estimate.low, 180)

@@ -7,8 +7,61 @@
     "af": "Dwergarend"
   },
   "family": "accipitridae",
-  "summary": "The details for this species have not been published yet.",
-  "sampleData": true,
+  "status": "summer-migrant",
+  "monthsPresent": [
+    9,
+    10,
+    11,
+    12,
+    1,
+    2,
+    3,
+    4
+  ],
+  "size": {
+    "lengthCm": {
+      "min": 48,
+      "max": 52
+    },
+    "note": "Newman's 48–52 cm. Wikipedia gives length ~40–55 cm range depending on sex; wingspan quoted separately."
+  },
+  "habitat": "Hunts in hilly and open country, woodland and semi-desert; avoids dense forest. Local southern African breeders use montane cliffs (Cape/Namibia); Palearctic migrants range more widely in summer (Newman's; SABAP1).",
+  "summary": "A small eagle of buzzard proportions with light and dark colour morphs. Pale morph (most common) has whitish underparts and a diagnostic white shoulder patch at rest; dark morph is largely dark brown. In flight a translucent wedge on the inner primaries is visible (Newman's).",
+  "sampleData": false,
+  "similar": [
+    {
+      "slug": "hieraaetus-wahlbergi",
+      "note": "Wahlberg's is longer-winged with a longer square tail held mostly closed; lacks Booted's white shoulder patch and pale primary wedge (Newman's)."
+    },
+    {
+      "slug": "milvus-migrans",
+      "note": "Kites have a forked tail; Booted's tail is not forked though upperwing can show a pale panel like a kite (Newman's)."
+    },
+    {
+      "slug": "aquila-rapax",
+      "note": "Tawny is larger and bulkier; immature Booted can still look small-eagle-like (field guides)."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Newman's Birds — Booted Eagle species page",
+      "url": "https://newmansbirds.com/birds/booted-eagle/",
+      "publisher": "Newman's Birds / Struik Nature (online edition)",
+      "year": null
+    },
+    {
+      "title": "The Atlas of Southern African Birds, Vol. 1 (spread 136)",
+      "url": "https://sabap2.birdmap.africa/docs/sabap1/136.pdf",
+      "publisher": "BirdLife South Africa / Avian Demography Unit",
+      "year": 1997
+    },
+    {
+      "title": "Wikipedia — Booted Eagle",
+      "url": "https://en.wikipedia.org/wiki/Booted_eagle",
+      "publisher": "Wikimedia Foundation",
+      "year": null
+    }
+  ],
   "population": {
     "estimate": {
       "low": 8,
@@ -35,8 +88,175 @@
     },
     "tierApplied": "D"
   },
-  "variants": [],
-  "viewNotes": [],
-  "calls": [],
-  "images": []
+  "variants": [
+    {
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "marks": {
+        "bill": {
+          "colour": "black",
+          "shape": "hooked"
+        },
+        "eye": {
+          "iris": "brown",
+          "ring": null
+        },
+        "legs": {
+          "colour": "yellow"
+        },
+        "head": {
+          "crown": "brown",
+          "face": "brown",
+          "throat": [
+            "white",
+            "buff"
+          ]
+        },
+        "upperparts": {
+          "back": "dark-brown",
+          "rump": null
+        },
+        "underparts": {
+          "breast": [
+            "white",
+            "buff"
+          ],
+          "belly": [
+            "white",
+            "buff"
+          ]
+        },
+        "wings": {
+          "above": "dark-brown",
+          "below": null,
+          "pattern": "pale panel on inner coverts; pale with darker flight feathers"
+        },
+        "tail": {
+          "colour": [
+            "grey",
+            "brown"
+          ],
+          "shape": "square, not forked"
+        }
+      }
+    }
+  ],
+  "viewNotes": [
+    {
+      "view": "perched-side",
+      "note": "Side view shows the key field marks summarised for Booted Eagle: see variants. (Newman's).",
+      "age": "adult",
+      "sex": "any",
+      "season": "any"
+    },
+    {
+      "view": "flight-below",
+      "note": "Translucent wedge on inner primaries; pale upperwing panel can recall a kite but tail not forked (Newmans).",
+      "age": "adult",
+      "sex": "any",
+      "season": "any"
+    },
+    {
+      "view": "flight-above",
+      "note": "Translucent wedge on inner primaries; pale upperwing panel can recall a kite but tail not forked (Newmans). Upperwing details as in variants.",
+      "age": "adult",
+      "sex": "any",
+      "season": "any"
+    }
+  ],
+  "calls": [
+    {
+      "sex": "any",
+      "type": "call",
+      "description": "Not strongly described on Newman's species page; generally a thin whistle in display (Wikipedia).",
+      "recordings": [
+        {
+          "key": "xeno-canto/XC437622",
+          "source": "https://xeno-canto.org/437622",
+          "fileUrl": "https://xeno-canto.org/sounds/uploaded/ISPFAAOURA/XC437622-Booted%20Eagle%2C%20Helderberg%2C%2007%20October%202018_9959.mp3",
+          "author": "Murray Christian",
+          "license": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "aiGenerated": false,
+          "hosted": false
+        },
+        {
+          "key": "xeno-canto/XC351821",
+          "source": "https://xeno-canto.org/351821",
+          "fileUrl": "https://xeno-canto.org/sounds/uploaded/SJRAXPTEKH/XC351821-140308_4002.mp3",
+          "author": "Alan Collett",
+          "license": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "aiGenerated": false,
+          "hosted": false
+        },
+        {
+          "key": "xeno-canto/XC301874",
+          "source": "https://xeno-canto.org/301874",
+          "fileUrl": "https://xeno-canto.org/sounds/uploaded/SJRAXPTEKH/XC301874-130315_2204.mp3",
+          "author": "Alan Collett",
+          "license": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ]
+    }
+  ],
+  "images": [
+    {
+      "key": "hieraaetus-pennatus/perched-side-1.jpg",
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "source": "https://commons.wikimedia.org/wiki/File:Booted_Eagle_(Hieraaetus_pennatus).jpg",
+      "fileUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ea/Booted_Eagle_%28Hieraaetus_pennatus%29.jpg/1280px-Booted_Eagle_%28Hieraaetus_pennatus%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "author": "gilgit2",
+      "license": "CC BY-SA 2.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+      "aiGenerated": false,
+      "hosted": false,
+      "alt": "Booted Eagle, adult, perched-side",
+      "caption": "Booted Eagle, adult, perched-side"
+    },
+    {
+      "key": "hieraaetus-pennatus/perched-front-2.jpg",
+      "view": "perched-front",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "source": "https://commons.wikimedia.org/wiki/File:Booted_eagle,_Hieraaetus_pennatus,_at_Kgalagadi_Transfrontier_Pa_(32334023348).jpg",
+      "fileUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bc/Booted_eagle%2C_Hieraaetus_pennatus%2C_at_Kgalagadi_Transfrontier_Pa_%2832334023348%29.jpg/1280px-Booted_eagle%2C_Hieraaetus_pennatus%2C_at_Kgalagadi_Transfrontier_Pa_%2832334023348%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "author": "Derek Keats from Johannesburg, South Africa",
+      "license": "CC BY 2.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by/2.0",
+      "aiGenerated": false,
+      "hosted": false,
+      "alt": "Booted Eagle — perched-front, adult. Booted eagle, Hieraaetus pennatus, at Kgalagadi Transfrontier Pa",
+      "caption": "Booted Eagle — perched-front, adult. Booted eagle, Hieraaetus pennatus, at Kgalagadi Transfrontier Pa"
+    },
+    {
+      "key": "hieraaetus-pennatus/flight-above-3.jpg",
+      "view": "flight-above",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "source": "https://commons.wikimedia.org/wiki/File:Booted_eagle,Hieraaetus_pennatus,_flight.jpg",
+      "fileUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4b/Booted_eagle%2CHieraaetus_pennatus%2C_flight.jpg/1280px-Booted_eagle%2CHieraaetus_pennatus%2C_flight.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "author": "Shino jacob koottanad",
+      "license": "CC BY-SA 4.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "aiGenerated": false,
+      "hosted": false,
+      "alt": "Booted Eagle — flight-above, adult. booted eagle,Hieraaetus pennatus",
+      "caption": "Booted Eagle — flight-above, adult. booted eagle,Hieraaetus pennatus"
+    }
+  ],
+  "research": {
+    "confidence": "medium",
+    "needsReview": false,
+    "note": "Status is stored as summer-migrant. Kruger birds are mostly summer visitors from southern African breeders, with possible Palearctic birds, so neither palearctic-migrant nor intra-african-migrant alone fits. summer-migrant is the existing vocabulary for that. No seasonal plumage change is described in the sources consulted, except presence/absence of migrants. Gaps: No juvenile/immature image in selected set. No Kruger-labelled image in the selected set. Structured marks keep the common form. The dark form is not a separate variant. Dark morph entirely dark brown below; can be confused with other medium raptors (Newman's; SABAP1). The schema has no morph field. Colour phrases outside the vocabulary were stored as the nearest swatch: pale yellow to yellow."
+  }
 }

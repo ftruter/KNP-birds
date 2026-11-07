@@ -7,8 +7,57 @@
     "af": "Vlermuisvalk"
   },
   "family": "accipitridae",
-  "summary": "The details for this species have not been published yet.",
-  "sampleData": true,
+  "status": "resident",
+  "monthsPresent": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+  ],
+  "size": {
+    "lengthCm": {
+      "min": 45,
+      "max": 45
+    },
+    "note": "Newman's 45 cm."
+  },
+  "habitat": "Riparian forests, evergreen forest and heavily wooded regions; prefers light-barked trees such as baobabs; also edges of exotic plantations. Crepuscular (Newman's; SABAP1).",
+  "summary": "A dark-brown crepuscular hawk with pale yellow eyes and white legs; white throat with a dark mesial streak. Specialises on bats and swifts at dusk (Newman's).",
+  "sampleData": false,
+  "similar": [
+    {
+      "slug": "milvus-migrans",
+      "note": "Kites are diurnal scavengers with forked tails; Bat Hawk has a square/rounded falcon-like outline at dusk (field guides)."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Newman's Birds — Bat Hawk species page",
+      "url": "https://newmansbirds.com/birds/bat-hawk/",
+      "publisher": "Newman's Birds / Struik Nature (online edition)",
+      "year": null
+    },
+    {
+      "title": "The Atlas of Southern African Birds, Vol. 1 (spread 129)",
+      "url": "https://sabap2.birdmap.africa/docs/sabap1/129.pdf",
+      "publisher": "BirdLife South Africa / Avian Demography Unit",
+      "year": 1997
+    },
+    {
+      "title": "Wikipedia — Bat Hawk",
+      "url": "https://en.wikipedia.org/wiki/Bat_hawk",
+      "publisher": "Wikimedia Foundation",
+      "year": null
+    }
+  ],
   "population": {
     "estimate": {
       "low": 4,
@@ -35,8 +84,117 @@
     },
     "tierApplied": "D"
   },
-  "variants": [],
-  "viewNotes": [],
-  "calls": [],
-  "images": []
+  "variants": [
+    {
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "marks": {
+        "bill": {
+          "colour": "black",
+          "shape": "hooked, wide gape"
+        },
+        "eye": {
+          "iris": "yellow",
+          "ring": null
+        },
+        "legs": {
+          "colour": "white"
+        },
+        "head": {
+          "crown": "dark-brown",
+          "face": "dark-brown",
+          "throat": [
+            "white",
+            "dark-brown"
+          ],
+          "pattern": "white with dark mesial streak"
+        },
+        "upperparts": {
+          "back": "dark-brown",
+          "rump": null
+        },
+        "underparts": {
+          "breast": "dark-brown",
+          "belly": "dark-brown"
+        },
+        "wings": {
+          "above": "dark-brown",
+          "below": null
+        },
+        "tail": {
+          "colour": "dark-brown",
+          "shape": null
+        }
+      }
+    }
+  ],
+  "viewNotes": [
+    {
+      "view": "perched-side",
+      "note": "Side view shows the key field marks summarised for Bat Hawk: see variants. (Newman's).",
+      "age": "adult",
+      "sex": "any",
+      "season": "any"
+    },
+    {
+      "view": "flight-below",
+      "note": "Falcon-like outline at dusk; dark with white throat (Newmans).",
+      "age": "adult",
+      "sex": "any",
+      "season": "any"
+    },
+    {
+      "view": "flight-above",
+      "note": "Falcon-like outline at dusk; dark with white throat (Newmans). Upperwing details as in variants.",
+      "age": "adult",
+      "sex": "any",
+      "season": "any"
+    }
+  ],
+  "calls": [
+    {
+      "sex": "any",
+      "type": "call",
+      "description": "Seldom heard; thin high whistle reported in literature (Wikipedia); Newman's page does not quote a call transcription.",
+      "recordings": [
+        {
+          "key": "xeno-canto/XC730910",
+          "source": "https://xeno-canto.org/730910",
+          "fileUrl": "https://xeno-canto.org/sounds/uploaded/TGBFXDVERJ/XC730910-Macheiramphus%20alcinus_Gomatong_MixPre-346.mp3",
+          "author": "GABRIEL LEITE",
+          "license": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "aiGenerated": false,
+          "hosted": false
+        },
+        {
+          "key": "xeno-canto/XC422135",
+          "source": "https://xeno-canto.org/422135",
+          "fileUrl": "https://xeno-canto.org/sounds/uploaded/OTVUCEGYZN/XC422135-Bat%20Hawk%20200218%20Kina.mp3",
+          "author": "Hans Groot",
+          "license": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "aiGenerated": false,
+          "hosted": false
+        },
+        {
+          "key": "xeno-canto/XC244201",
+          "source": "https://xeno-canto.org/244201",
+          "fileUrl": "https://xeno-canto.org/sounds/uploaded/PWDLINYMKL/XC244201-Bat%20Hawk1GT2015.mp3",
+          "author": "Mike Nelson",
+          "license": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ]
+    }
+  ],
+  "images": [],
+  "research": {
+    "confidence": "medium",
+    "needsReview": true,
+    "note": "No seasonal plumage change is described in the sources consulted, except presence/absence of migrants. Gaps: No juvenile/immature image in selected set. No Kruger-labelled image in the selected set. Photos left out: The file is a Bat Hawk light aircraft, not the bird. No photograph of the bird is published. Colour phrases outside the vocabulary were stored as the nearest swatch: dark to dark-brown; pale yellow to yellow."
+  }
 }

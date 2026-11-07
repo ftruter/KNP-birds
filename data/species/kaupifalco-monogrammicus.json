@@ -7,8 +7,61 @@
     "af": "Akkedisvalk"
   },
   "family": "accipitridae",
-  "summary": "The details for this species have not been published yet.",
-  "sampleData": true,
+  "status": "resident",
+  "monthsPresent": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+  ],
+  "size": {
+    "lengthCm": {
+      "min": 35,
+      "max": 37
+    },
+    "note": "Newman's 35–37 cm. Wikipedia agrees 35–37 cm."
+  },
+  "habitat": "Broad-leaved woodland, mixed bushveld and well-treed farmlands. Often perches in canopy or on poles; nomadic toward more arid areas in winter (Newman's; SABAP1 higher winter reporting).",
+  "summary": "A small stocky grey hawk with a diagnostic white throat crossed by a vertical black streak, red cere and legs, and a bold white band on a black tail (Newman's).",
+  "sampleData": false,
+  "similar": [
+    {
+      "slug": "tachyspiza-badia",
+      "note": "Shikra lacks the black throat streak and white tail-band; has red eyes and rufous banding to the throat (Newman's)."
+    },
+    {
+      "slug": "micronisus-gabar",
+      "note": "Gabar has a white rump in flight and lacks the throat streak/tail-band combo (Newman's; SABAP1)."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Newman's Birds — Lizard Buzzard species page",
+      "url": "https://newmansbirds.com/birds/lizard-buzzard/",
+      "publisher": "Newman's Birds / Struik Nature (online edition)",
+      "year": null
+    },
+    {
+      "title": "The Atlas of Southern African Birds, Vol. 1 (spread 154)",
+      "url": "https://sabap2.birdmap.africa/docs/sabap1/154.pdf",
+      "publisher": "BirdLife South Africa / Avian Demography Unit",
+      "year": 1997
+    },
+    {
+      "title": "Wikipedia — Lizard Buzzard",
+      "url": "https://en.wikipedia.org/wiki/Lizard_buzzard",
+      "publisher": "Wikimedia Foundation",
+      "year": null
+    }
+  ],
   "population": {
     "estimate": {
       "low": 256,
@@ -35,8 +88,264 @@
     },
     "tierApplied": "D"
   },
-  "variants": [],
-  "viewNotes": [],
-  "calls": [],
-  "images": []
+  "variants": [
+    {
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "marks": {
+        "bill": {
+          "colour": [
+            "red",
+            "black"
+          ],
+          "shape": "small aquiline; red cere; black tip"
+        },
+        "eye": {
+          "iris": "brown",
+          "ring": null
+        },
+        "legs": {
+          "colour": "red"
+        },
+        "head": {
+          "crown": "grey",
+          "face": "grey",
+          "throat": [
+            "white",
+            "black"
+          ],
+          "pattern": "white with vertical black streak"
+        },
+        "upperparts": {
+          "back": "grey",
+          "rump": null
+        },
+        "underparts": {
+          "breast": "grey",
+          "belly": [
+            "grey",
+            "white"
+          ],
+          "pattern": "banded grey-white"
+        },
+        "wings": {
+          "above": "grey",
+          "below": null
+        },
+        "tail": {
+          "colour": [
+            "black",
+            "white"
+          ],
+          "shape": "black with bold white band"
+        }
+      }
+    },
+    {
+      "age": "immature",
+      "sex": "any",
+      "season": "any",
+      "marks": {
+        "bill": {
+          "colour": null,
+          "shape": null
+        },
+        "eye": {
+          "iris": null,
+          "ring": null
+        },
+        "legs": {
+          "colour": null
+        },
+        "head": {
+          "crown": null,
+          "face": null,
+          "throat": null,
+          "pattern": "streak less clear"
+        },
+        "upperparts": {
+          "back": "buff",
+          "rump": null
+        },
+        "underparts": {
+          "breast": "buff",
+          "belly": "buff"
+        },
+        "wings": {
+          "above": null,
+          "below": null
+        },
+        "tail": {
+          "colour": null,
+          "shape": null
+        }
+      }
+    }
+  ],
+  "viewNotes": [
+    {
+      "view": "perched-side",
+      "note": "Side view shows the key field marks summarised for Lizard Buzzard: see variants. (Newman's).",
+      "age": "adult",
+      "sex": "any",
+      "season": "any"
+    },
+    {
+      "view": "flight-below",
+      "note": "Stocky; bold white tail-band conspicuous (Newmans).",
+      "age": "adult",
+      "sex": "any",
+      "season": "any"
+    },
+    {
+      "view": "flight-above",
+      "note": "Stocky; bold white tail-band conspicuous (Newmans). Upperwing details as in variants.",
+      "age": "adult",
+      "sex": "any",
+      "season": "any"
+    }
+  ],
+  "calls": [
+    {
+      "sex": "any",
+      "type": "call",
+      "description": "Whistling 'klioo-klu-klu-klu' while perched; also ringing 'peeeeo' (Newman's).",
+      "recordings": [
+        {
+          "key": "xeno-canto/XC1165785",
+          "source": "https://xeno-canto.org/1165785",
+          "fileUrl": "https://xeno-canto.org/sounds/uploaded/YIKAQIVHQJ/XC1165785-8423.-Lizard-Buzzard---Toro-Semuliki-Wildlife-Reserve---05-AUG-2026---1141---1.wav",
+          "author": "Jonathan Onongo",
+          "license": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "aiGenerated": false,
+          "hosted": false
+        },
+        {
+          "key": "xeno-canto/XC1165786",
+          "source": "https://xeno-canto.org/1165786",
+          "fileUrl": "https://xeno-canto.org/sounds/uploaded/YIKAQIVHQJ/XC1165786-8423.-Lizard-Buzzard---Toro-Semuliki-Wildlife-Reserve---05-AUG-2026---1142---1.wav",
+          "author": "Jonathan Onongo",
+          "license": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "aiGenerated": false,
+          "hosted": false
+        },
+        {
+          "key": "xeno-canto/XC975911",
+          "source": "https://xeno-canto.org/975911",
+          "fileUrl": "https://xeno-canto.org/sounds/uploaded/YIKAQIVHQJ/XC975911-25408.-Lizard-Buzzard-%2B-Lesser-Honeyguide---Kiyanga%2C-Mitooma---25-FEB-2025---1.wav",
+          "author": "Jonathan Onongo",
+          "license": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ]
+    }
+  ],
+  "images": [
+    {
+      "key": "kaupifalco-monogrammicus/perched-side-1.jpg",
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "source": "https://commons.wikimedia.org/wiki/File:Lizard_Buzzard_(Kaupifalco_monogrammicus)_(52130888403).jpg",
+      "fileUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4b/Lizard_Buzzard_%28Kaupifalco_monogrammicus%29_%2852130888403%29.jpg/1280px-Lizard_Buzzard_%28Kaupifalco_monogrammicus%29_%2852130888403%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "author": "Bernard DUPONT from FRANCE",
+      "license": "CC BY-SA 2.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+      "aiGenerated": false,
+      "hosted": false,
+      "alt": "Lizard Buzzard — perched-side, adult. S8 Road West of Pretoriuskop, Kruger NP, Mpumalanga, SOUTH AFRICA",
+      "caption": "Lizard Buzzard — perched-side, adult. S8 Road West of Pretoriuskop, Kruger NP, Mpumalanga, SOUTH AFRICA"
+    },
+    {
+      "key": "kaupifalco-monogrammicus/perched-side-2.jpg",
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "source": "https://commons.wikimedia.org/wiki/File:Lizard_Buzzard_(Kaupifalco_monogrammicus)_(52499190288).jpg",
+      "fileUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/87/Lizard_Buzzard_%28Kaupifalco_monogrammicus%29_%2852499190288%29.jpg/1280px-Lizard_Buzzard_%28Kaupifalco_monogrammicus%29_%2852499190288%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "author": "Bernard DUPONT from FRANCE",
+      "license": "CC BY-SA 2.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+      "aiGenerated": false,
+      "hosted": false,
+      "alt": "Lizard Buzzard — perched-side, adult. H3 Road North of Malelane Gate, Kruger NP, Mpumalanga, SOUTH AFRICA",
+      "caption": "Lizard Buzzard — perched-side, adult. H3 Road North of Malelane Gate, Kruger NP, Mpumalanga, SOUTH AFRICA"
+    },
+    {
+      "key": "kaupifalco-monogrammicus/perched-side-3.jpg",
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "source": "https://commons.wikimedia.org/wiki/File:Lizard_Buzzard_(Kaupifalco_monogrammicus)_(52795796759).jpg",
+      "fileUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fc/Lizard_Buzzard_%28Kaupifalco_monogrammicus%29_%2852795796759%29.jpg/1280px-Lizard_Buzzard_%28Kaupifalco_monogrammicus%29_%2852795796759%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "author": "Bernard DUPONT from FRANCE",
+      "license": "CC BY-SA 2.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+      "aiGenerated": false,
+      "hosted": false,
+      "alt": "Lizard Buzzard — perched-side, adult. S119 Road East of Malelane, Kruger NP, Mpumalanga, SOUTH AFRICA",
+      "caption": "Lizard Buzzard — perched-side, adult. S119 Road East of Malelane, Kruger NP, Mpumalanga, SOUTH AFRICA"
+    },
+    {
+      "key": "kaupifalco-monogrammicus/perched-side-4.jpg",
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "source": "https://commons.wikimedia.org/wiki/File:Lizard_Buzzard_(Kaupifalco_monogrammicus)_(53062787571).jpg",
+      "fileUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c9/Lizard_Buzzard_%28Kaupifalco_monogrammicus%29_%2853062787571%29.jpg/1280px-Lizard_Buzzard_%28Kaupifalco_monogrammicus%29_%2853062787571%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "author": "Bernard DUPONT from FRANCE",
+      "license": "CC BY-SA 2.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+      "aiGenerated": false,
+      "hosted": false,
+      "alt": "Lizard Buzzard — perched-side, adult. S25 Road East of Malelane, Kruger NP, Mpumalanga, SOUTH AFRICA",
+      "caption": "Lizard Buzzard — perched-side, adult. S25 Road East of Malelane, Kruger NP, Mpumalanga, SOUTH AFRICA"
+    },
+    {
+      "key": "kaupifalco-monogrammicus/perched-side-5.jpg",
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "source": "https://commons.wikimedia.org/wiki/File:Lizard_Buzzard_(Kaupifalco_monogrammicus)_(53063173110).jpg",
+      "fileUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c7/Lizard_Buzzard_%28Kaupifalco_monogrammicus%29_%2853063173110%29.jpg/1280px-Lizard_Buzzard_%28Kaupifalco_monogrammicus%29_%2853063173110%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "author": "Bernard DUPONT from FRANCE",
+      "license": "CC BY-SA 2.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+      "aiGenerated": false,
+      "hosted": false,
+      "alt": "Lizard Buzzard — perched-side, adult. S25 Road East of Malelane, Kruger NP, Mpumalanga, SOUTH AFRICA",
+      "caption": "Lizard Buzzard — perched-side, adult. S25 Road East of Malelane, Kruger NP, Mpumalanga, SOUTH AFRICA"
+    },
+    {
+      "key": "kaupifalco-monogrammicus/perched-side-6.jpg",
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "source": "https://www.inaturalist.org/observations/386616666",
+      "fileUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/707890288/large.jpg",
+      "author": "Gianluca Zani",
+      "license": "CC BY-NC 4.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+      "aiGenerated": false,
+      "hosted": false,
+      "alt": "Lizard Buzzard — perched-side, adult. Kruger Park, Sudafrica",
+      "caption": "Lizard Buzzard — perched-side, adult. Kruger Park, Sudafrica"
+    }
+  ],
+  "research": {
+    "confidence": "medium",
+    "needsReview": false,
+    "note": "No seasonal plumage change is described in the sources consulted, except presence/absence of migrants. Gaps: No juvenile/immature image in selected set. No flight image in selected set. Colour phrases outside the vocabulary were stored as the nearest swatch: buffy to buff."
+  }
 }

@@ -7,8 +7,78 @@
     "af": "Blouvleivalk"
   },
   "family": "accipitridae",
-  "summary": "The details for this species have not been published yet.",
-  "sampleData": true,
+  "status": "palearctic-migrant",
+  "monthsPresent": [
+    11,
+    12,
+    1,
+    2,
+    3
+  ],
+  "size": {
+    "lengthCm": {
+      "min": 40,
+      "max": 47
+    },
+    "note": "Newman's Birds gives 40–47 cm."
+  },
+  "habitat": "Grassland, savanna and floodplains; frequently in the same areas as Pallid Harrier (Newman's).",
+  "summary": "An uncommon Palearctic summer visitor. Male is grey with a black bar across the secondaries and black primaries; belly and underwings white streaked rufous. Female/immature are brown ringtails (Newman's).",
+  "sampleData": false,
+  "similar": [
+    {
+      "slug": "circus-macrourus",
+      "note": "Male Pallid is paler grey without the black secondary bar; female/immature Pallid has a clearer pale collar and less rufous streaking (Newman's; Wikipedia)."
+    },
+    {
+      "slug": "circus-ranivorus",
+      "note": "African Marsh Harrier is a darker resident of marshes (Newman's)."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Newman's Birds — Montagus Harrier species page (text from Newman's Birds of Southern Africa)",
+      "url": "https://newmansbirds.com/birds/montagus-harrier/",
+      "publisher": "Newman's Birds / Struik Nature (online edition)",
+      "year": null
+    },
+    {
+      "title": "The Atlas of Southern African Birds, Vol. 1 (spread 166)",
+      "url": "https://sabap2.birdmap.africa/docs/sabap1/166.pdf",
+      "publisher": "BirdLife South Africa / Avian Demography Unit",
+      "year": 1997
+    },
+    {
+      "title": "Biodiversity Explorer species text (summarised from Roberts Birds of Southern Africa VIIth ed., Hockey, Dean & Ryan 2005)",
+      "url": "https://www.biodiversityexplorer.info/birds/accipitridae/circus_pygargus.htm",
+      "publisher": "Iziko Museums of South Africa",
+      "year": null
+    },
+    {
+      "title": "Wikipedia — Montagu%27s harrier",
+      "url": "https://en.wikipedia.org/wiki/Montagu%27s_harrier",
+      "publisher": "Wikimedia Foundation",
+      "year": 2026
+    },
+    {
+      "title": "GBIF occurrence month facets for Circus pygargus, Kruger bounding box (lon 31.0–32.04, lat −25.53 to −22.33, country ZA)",
+      "url": "https://api.gbif.org/v1/occurrence/search",
+      "publisher": "GBIF.org",
+      "year": 2026
+    },
+    {
+      "title": "xeno-canto recordings (metadata via GBIF dataset b1047888-ae52-4179-9dd5-5448ea342a24)",
+      "url": "https://xeno-canto.org/",
+      "publisher": "xeno-canto.org / GBIF",
+      "year": 2026
+    },
+    {
+      "title": "Wikimedia Commons species category images",
+      "url": "https://commons.wikimedia.org/",
+      "publisher": "Wikimedia Commons",
+      "year": 2026
+    }
+  ],
   "population": {
     "estimate": {
       "low": 32,
@@ -35,8 +105,212 @@
     },
     "tierApplied": "D"
   },
-  "variants": [],
-  "viewNotes": [],
-  "calls": [],
-  "images": []
+  "variants": [
+    {
+      "age": "adult",
+      "sex": "male",
+      "season": "any",
+      "marks": {
+        "bill": {
+          "colour": "black",
+          "shape": "hooked"
+        },
+        "eye": {
+          "iris": "yellow",
+          "ring": null
+        },
+        "legs": {
+          "colour": "yellow"
+        },
+        "head": {
+          "crown": "grey",
+          "face": "grey",
+          "throat": "white"
+        },
+        "upperparts": {
+          "back": "grey",
+          "rump": null
+        },
+        "underparts": {
+          "breast": "grey",
+          "belly": [
+            "white",
+            "rufous"
+          ]
+        },
+        "wings": {
+          "above": [
+            "grey",
+            "black"
+          ],
+          "below": [
+            "white",
+            "rufous"
+          ]
+        },
+        "tail": {
+          "colour": "grey",
+          "shape": "long"
+        }
+      }
+    },
+    {
+      "age": "adult",
+      "sex": "female",
+      "season": "any",
+      "marks": {
+        "bill": {
+          "colour": "black",
+          "shape": "hooked"
+        },
+        "eye": {
+          "iris": "yellow",
+          "ring": null
+        },
+        "legs": {
+          "colour": "yellow"
+        },
+        "head": {
+          "crown": "brown",
+          "face": "brown",
+          "throat": "buff"
+        },
+        "upperparts": {
+          "back": "brown",
+          "rump": null
+        },
+        "underparts": {
+          "breast": [
+            "brown",
+            "buff"
+          ],
+          "belly": "buff"
+        },
+        "wings": {
+          "above": "brown",
+          "below": null
+        },
+        "tail": {
+          "colour": "brown",
+          "shape": "long"
+        }
+      }
+    }
+  ],
+  "viewNotes": [
+    {
+      "view": "flight-below",
+      "note": "Grey with black secondary bar and black primaries; rufous-streaked white belly (Newman's).",
+      "age": "adult",
+      "sex": "male",
+      "season": "any"
+    },
+    {
+      "view": "flight-side",
+      "note": "Low, buoyant harrier flight over grassland (Newman's).",
+      "age": "adult",
+      "sex": "any",
+      "season": "any"
+    }
+  ],
+  "calls": [
+    {
+      "sex": "any",
+      "type": "call",
+      "description": "Usually silent in Africa. Breeding-range recordings included.",
+      "recordings": [
+        {
+          "key": "xeno-canto/XC1152357",
+          "source": "https://xeno-canto.org/1152357",
+          "fileUrl": "https://xeno-canto.org/sounds/uploaded/PRVFBYIQYZ/XC1152357-circus-pygargus-5-hide-del-cenizo-15-04-2026.mp3",
+          "author": "Esperanza Poveda",
+          "license": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "aiGenerated": false,
+          "hosted": false
+        },
+        {
+          "key": "xeno-canto/XC1152382",
+          "source": "https://xeno-canto.org/1152382",
+          "fileUrl": "https://xeno-canto.org/sounds/uploaded/PRVFBYIQYZ/XC1152382-circus-pygargus-22-hide-del-cenizo-15-04-2026.mp3",
+          "author": "Esperanza Poveda",
+          "license": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ]
+    }
+  ],
+  "images": [
+    {
+      "key": "circus-pygargus/flight-side-adult-male.jpg",
+      "view": "flight-side",
+      "age": "adult",
+      "sex": "male",
+      "season": "any",
+      "source": "https://commons.wikimedia.org/wiki/File:Montague%27s_harrier_(Circus_pygargus)_male_in_flight_Kebili.jpg",
+      "fileUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/02/Montague%27s_harrier_%28Circus_pygargus%29_male_in_flight_Kebili.jpg/1280px-Montague%27s_harrier_%28Circus_pygargus%29_male_in_flight_Kebili.jpg",
+      "author": "Charles J. Sharp",
+      "license": "CC BY-SA 4.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "aiGenerated": false,
+      "hosted": false,
+      "alt": "Adult male Montagu's Harrier in flight.",
+      "caption": "Adult male Montagu's Harrier in flight."
+    },
+    {
+      "key": "circus-pygargus/flight-side-adult-male-2.jpg",
+      "view": "flight-side",
+      "age": "adult",
+      "sex": "male",
+      "season": "any",
+      "source": "https://commons.wikimedia.org/wiki/File:Circus_pygargus_male_flight.jpg",
+      "fileUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/65/Circus_pygargus_male_flight.jpg/1280px-Circus_pygargus_male_flight.jpg",
+      "author": "Donald Macauley from Carshalton, Surrey, UK",
+      "license": "CC BY-SA 2.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by-sa/2.0/",
+      "aiGenerated": false,
+      "hosted": false,
+      "alt": "Adult male Montagu's Harrier in flight, alternative.",
+      "caption": "Adult male Montagu's Harrier in flight, alternative."
+    },
+    {
+      "key": "circus-pygargus/flight-side-adult-any.jpg",
+      "view": "flight-side",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "source": "https://commons.wikimedia.org/wiki/File:A_Montagu%27s_Harrier_flying_low_over_the_grasslands_(50959069597).jpg",
+      "fileUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/08/A_Montagu%27s_Harrier_flying_low_over_the_grasslands_%2850959069597%29.jpg/1280px-A_Montagu%27s_Harrier_flying_low_over_the_grasslands_%2850959069597%29.jpg",
+      "author": "Hari K Patibanda",
+      "license": "CC BY 2.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by/2.0/",
+      "aiGenerated": false,
+      "hosted": false,
+      "alt": "Montagu's Harrier flying low over grassland.",
+      "caption": "Montagu's Harrier flying low over grassland."
+    },
+    {
+      "key": "circus-pygargus/perched-side-adult-any.jpg",
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "source": "https://commons.wikimedia.org/wiki/File:A_Montague_Harrier_from_Close_(49515938787).jpg",
+      "fileUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/63/A_Montague_Harrier_from_Close_%2849515938787%29.jpg/1280px-A_Montague_Harrier_from_Close_%2849515938787%29.jpg",
+      "author": "Hari K Patibanda",
+      "license": "CC BY 2.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by/2.0/",
+      "aiGenerated": false,
+      "hosted": false,
+      "alt": "Montagu's Harrier perched close view.",
+      "caption": "Montagu's Harrier perched close view."
+    }
+  ],
+  "research": {
+    "confidence": "medium",
+    "needsReview": false,
+    "note": "Status is stored as palearctic-migrant. The research treated this as a Palearctic summer visitor, which is the same movement, and palearctic-migrant is the status this site already uses. No seasonal change in Africa; strong sexual dimorphism. Gaps: No Kruger photos found. Juvenile image coverage thin. GBIF Kruger peak Dec–Feb. monthsPresent set from Newman/SABAP seasonality cross-checked with GBIF Kruger month facets (not abundance)."
+  }
 }

@@ -7,8 +7,87 @@
     "af": "Blouvalk"
   },
   "family": "accipitridae",
-  "summary": "The details for this species have not been published yet.",
-  "sampleData": true,
+  "status": "resident",
+  "monthsPresent": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+  ],
+  "size": {
+    "lengthCm": {
+      "min": 30,
+      "max": 35
+    },
+    "note": "Newman's Birds gives about 30 cm. Also called Black-shouldered Kite in older southern-African guides."
+  },
+  "habitat": "Grasslands, broad-leaved woodland, mixed bushveld and well-treed farmlands; often hovers over open ground (Newman's).",
+  "summary": "A small, stocky grey-and-white kite with black shoulder-patches and black wingtips; eyes red in adults (Newman's: below white, wingtips black; above grey with black shoulder-patches). Common in Kruger.",
+  "sampleData": false,
+  "similar": [
+    {
+      "slug": "accipiter-ovampensis",
+      "note": "Ovambo Sparrowhawk has barred underparts and Accipiter shape, not clean white underparts with black shoulders (Newman's)."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Newman's Birds — Black Winged Kite species page (text from Newman's Birds of Southern Africa)",
+      "url": "https://newmansbirds.com/birds/black-winged-kite/",
+      "publisher": "Newman's Birds / Struik Nature (online edition)",
+      "year": null
+    },
+    {
+      "title": "The Atlas of Southern African Birds, Vol. 1 (spread 126)",
+      "url": "https://sabap2.birdmap.africa/docs/sabap1/126.pdf",
+      "publisher": "BirdLife South Africa / Avian Demography Unit",
+      "year": 1997
+    },
+    {
+      "title": "The Atlas of Southern African Birds, Vol. 1 (spread 127)",
+      "url": "https://sabap2.birdmap.africa/docs/sabap1/127.pdf",
+      "publisher": "BirdLife South Africa / Avian Demography Unit",
+      "year": 1997
+    },
+    {
+      "title": "Biodiversity Explorer species text (summarised from Roberts Birds of Southern Africa VIIth ed., Hockey, Dean & Ryan 2005)",
+      "url": "https://www.biodiversityexplorer.info/birds/accipitridae/elanus_caeruleus.htm",
+      "publisher": "Iziko Museums of South Africa",
+      "year": null
+    },
+    {
+      "title": "Wikipedia — Black-winged kite",
+      "url": "https://en.wikipedia.org/wiki/Black-winged_kite",
+      "publisher": "Wikimedia Foundation",
+      "year": 2026
+    },
+    {
+      "title": "GBIF occurrence month facets for Elanus caeruleus, Kruger bounding box (lon 31.0–32.04, lat −25.53 to −22.33, country ZA)",
+      "url": "https://api.gbif.org/v1/occurrence/search",
+      "publisher": "GBIF.org",
+      "year": 2026
+    },
+    {
+      "title": "xeno-canto recordings (metadata via GBIF dataset b1047888-ae52-4179-9dd5-5448ea342a24)",
+      "url": "https://xeno-canto.org/",
+      "publisher": "xeno-canto.org / GBIF",
+      "year": 2026
+    },
+    {
+      "title": "Wikimedia Commons species category images",
+      "url": "https://commons.wikimedia.org/",
+      "publisher": "Wikimedia Commons",
+      "year": 2026
+    }
+  ],
   "population": {
     "estimate": {
       "low": 2048,
@@ -35,8 +114,244 @@
     },
     "tierApplied": "D"
   },
-  "variants": [],
-  "viewNotes": [],
-  "calls": [],
-  "images": []
+  "variants": [
+    {
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "marks": {
+        "bill": {
+          "colour": "black",
+          "shape": "small, hooked"
+        },
+        "eye": {
+          "iris": "red",
+          "ring": null
+        },
+        "legs": {
+          "colour": "yellow"
+        },
+        "head": {
+          "crown": "grey",
+          "face": [
+            "grey",
+            "white"
+          ],
+          "throat": "white"
+        },
+        "upperparts": {
+          "back": "grey",
+          "rump": null
+        },
+        "underparts": {
+          "breast": "white",
+          "belly": "white"
+        },
+        "wings": {
+          "above": [
+            "grey",
+            "black"
+          ],
+          "below": [
+            "white",
+            "black"
+          ]
+        },
+        "tail": {
+          "colour": "grey",
+          "shape": null
+        }
+      }
+    },
+    {
+      "age": "juvenile",
+      "sex": "any",
+      "season": "any",
+      "marks": {
+        "bill": {
+          "colour": null,
+          "shape": null
+        },
+        "eye": {
+          "iris": "brown",
+          "ring": null
+        },
+        "legs": {
+          "colour": "yellow"
+        },
+        "head": {
+          "crown": [
+            "grey",
+            "brown"
+          ],
+          "face": null,
+          "throat": "white"
+        },
+        "upperparts": {
+          "back": [
+            "grey",
+            "brown"
+          ],
+          "rump": null
+        },
+        "underparts": {
+          "breast": [
+            "white",
+            "brown"
+          ],
+          "belly": "white"
+        },
+        "wings": {
+          "above": null,
+          "below": null
+        },
+        "tail": {
+          "colour": null,
+          "shape": null
+        }
+      }
+    }
+  ],
+  "viewNotes": [
+    {
+      "view": "perched-side",
+      "note": "Grey upperparts with black shoulder; white underparts; red eye (Newman's; Wikipedia).",
+      "age": "adult",
+      "sex": "any",
+      "season": "any"
+    },
+    {
+      "view": "flight-below",
+      "note": "White body and underwing with black wingtips; often hovers (Newman's).",
+      "age": "adult",
+      "sex": "any",
+      "season": "any"
+    }
+  ],
+  "calls": [
+    {
+      "sex": "any",
+      "type": "call",
+      "description": "A clear, whistled call; also soft contact calls. Open SA recordings included.",
+      "recordings": [
+        {
+          "key": "xeno-canto/XC1087114",
+          "source": "https://xeno-canto.org/1087114",
+          "fileUrl": "https://xeno-canto.org/sounds/uploaded/YSGTQVRQZI/XC1087114-20260301_DV_AKaramitsos_XA60_A016C227_260301LN_SLE_350HP_-3dB_split_comb.wav",
+          "author": "African Bioacoustics Community",
+          "license": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "aiGenerated": false,
+          "hosted": false
+        },
+        {
+          "key": "xeno-canto/XC1059222",
+          "source": "https://xeno-canto.org/1059222",
+          "fileUrl": "https://xeno-canto.org/sounds/uploaded/OYXLQBTHRH/XC1059222-MixPre-983_Elanus-caeruleus_YB.wav",
+          "author": "Yoann Blanchon",
+          "license": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "aiGenerated": false,
+          "hosted": false
+        },
+        {
+          "key": "xeno-canto/XC1081037",
+          "source": "https://xeno-canto.org/1081037",
+          "fileUrl": "https://xeno-canto.org/sounds/uploaded/YSGTQVRQZI/XC1081037-20260117_MUIZ_TGridley_124417_iphone_SLE_1500HP_-3B_kite.wav",
+          "author": "African Bioacoustics Community",
+          "license": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ]
+    }
+  ],
+  "images": [
+    {
+      "key": "elanus-caeruleus/perched-side-adult-any.jpg",
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "source": "https://commons.wikimedia.org/wiki/File:Day_23_Black-winged_Kite_(Elanus_caeruleus)_(53469627758).jpg",
+      "fileUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6a/Day_23_Black-winged_Kite_%28Elanus_caeruleus%29_%2853469627758%29.jpg/1280px-Day_23_Black-winged_Kite_%28Elanus_caeruleus%29_%2853469627758%29.jpg",
+      "author": "Bernard Dupont",
+      "license": "CC BY-SA 2.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by-sa/2.0/",
+      "aiGenerated": false,
+      "hosted": false,
+      "alt": "Adult Black-winged Kite perched; Kruger National Park.",
+      "caption": "Adult Black-winged Kite perched; Kruger National Park."
+    },
+    {
+      "key": "elanus-caeruleus/perched-side-adult-any-2.jpg",
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "source": "https://commons.wikimedia.org/wiki/File:Black-winged_Kite_(Elanus_caeruleus)_(53080174662).jpg",
+      "fileUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fb/Black-winged_Kite_%28Elanus_caeruleus%29_%2853080174662%29.jpg/1280px-Black-winged_Kite_%28Elanus_caeruleus%29_%2853080174662%29.jpg",
+      "author": "Bernard Dupont",
+      "license": "CC BY-SA 2.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by-sa/2.0/",
+      "aiGenerated": false,
+      "hosted": false,
+      "alt": "Adult Black-winged Kite perched; Kruger National Park.",
+      "caption": "Adult Black-winged Kite perched; Kruger National Park."
+    },
+    {
+      "key": "elanus-caeruleus/perched-side-juvenile-any.jpg",
+      "view": "perched-side",
+      "age": "juvenile",
+      "sex": "any",
+      "season": "any",
+      "source": "https://commons.wikimedia.org/wiki/File:Black-shouldered_Kite_(Elanus_caeruleus)_juvenile_(6516744505).jpg",
+      "fileUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7c/Black-shouldered_Kite_%28Elanus_caeruleus%29_juvenile_%286516744505%29.jpg/1280px-Black-shouldered_Kite_%28Elanus_caeruleus%29_juvenile_%286516744505%29.jpg",
+      "author": "Bernard Dupont",
+      "license": "CC BY-SA 2.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by-sa/2.0/",
+      "aiGenerated": false,
+      "hosted": false,
+      "alt": "Juvenile Black-winged Kite perched; Kruger area.",
+      "caption": "Juvenile Black-winged Kite perched; Kruger area."
+    },
+    {
+      "key": "elanus-caeruleus/perched-front-adult-any.jpg",
+      "view": "perched-front",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "source": "https://commons.wikimedia.org/wiki/File:Black-shouldered_Kite_(Elanus_caeruleus)_in_rainbow_light_(14019639475).jpg",
+      "fileUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/53/Black-shouldered_Kite_%28Elanus_caeruleus%29_in_rainbow_light_%2814019639475%29.jpg/1280px-Black-shouldered_Kite_%28Elanus_caeruleus%29_in_rainbow_light_%2814019639475%29.jpg",
+      "author": "Bernard Dupont",
+      "license": "CC BY-SA 2.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by-sa/2.0/",
+      "aiGenerated": false,
+      "hosted": false,
+      "alt": "Adult Black-winged Kite front view; Kruger.",
+      "caption": "Adult Black-winged Kite front view; Kruger."
+    },
+    {
+      "key": "elanus-caeruleus/perched-side-adult-any-3.jpg",
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "source": "https://commons.wikimedia.org/wiki/File:Black-winged_kite_(Elanus_caeruleus_caeruleus)_Serengeti.jpg",
+      "fileUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2f/Black-winged_kite_%28Elanus_caeruleus_caeruleus%29_Serengeti.jpg/1280px-Black-winged_kite_%28Elanus_caeruleus_caeruleus%29_Serengeti.jpg",
+      "author": "Charles J. Sharp",
+      "license": "CC BY-SA 4.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "aiGenerated": false,
+      "hosted": false,
+      "alt": "Adult Black-winged Kite perched; Serengeti.",
+      "caption": "Adult Black-winged Kite perched; Serengeti."
+    }
+  ],
+  "research": {
+    "confidence": "high",
+    "needsReview": false,
+    "note": "No seasonal plumage change; juvenile differs. Gaps: Flight-above curated image not selected. Also widely called Black-shouldered Kite in southern Africa. Common year-round in Kruger."
+  }
 }

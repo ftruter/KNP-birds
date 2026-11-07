@@ -7,8 +7,52 @@
     "af": "Wespedief"
   },
   "family": "accipitridae",
-  "summary": "The details for this species have not been published yet.",
-  "sampleData": true,
+  "status": "palearctic-migrant",
+  "monthsPresent": [
+    10,
+    11,
+    12,
+    1,
+    2,
+    3,
+    4
+  ],
+  "size": {
+    "lengthCm": {
+      "min": 54,
+      "max": 60
+    },
+    "note": "Newman's 54–60 cm. Wikipedia 52–60 cm."
+  },
+  "habitat": "Woodland and forest edge where wasp/bee nests are available; Palearctic non-breeding visitor (Newman's; SABAP1).",
+  "summary": "Buzzard-sized but small-headed with a longish neck and pigeon-like face. Plumage highly variable (pale to dark); typically barred underparts and a banded tail. Specialises on wasp larvae (Newman's; Wikipedia).",
+  "sampleData": false,
+  "similar": [
+    {
+      "slug": "buteo-buteo",
+      "note": "Common/Steppe Buzzard has a larger head, shorter neck and different underwing pattern; Honey Buzzard looks small-headed in flight (Newman's)."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Newman's Birds — European Honey Buzzard species page",
+      "url": "https://newmansbirds.com/birds/european-honey-buzzard/",
+      "publisher": "Newman's Birds / Struik Nature (online edition)",
+      "year": null
+    },
+    {
+      "title": "The Atlas of Southern African Birds, Vol. 1 (spread 130)",
+      "url": "https://sabap2.birdmap.africa/docs/sabap1/130.pdf",
+      "publisher": "BirdLife South Africa / Avian Demography Unit",
+      "year": 1997
+    },
+    {
+      "title": "Wikipedia — European Honey Buzzard",
+      "url": "https://en.wikipedia.org/wiki/European_honey_buzzard",
+      "publisher": "Wikimedia Foundation",
+      "year": null
+    }
+  ],
   "population": {
     "estimate": {
       "low": 8,
@@ -35,8 +79,188 @@
     },
     "tierApplied": "D"
   },
-  "variants": [],
-  "viewNotes": [],
-  "calls": [],
-  "images": []
+  "variants": [
+    {
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "marks": {
+        "bill": {
+          "colour": [
+            "black",
+            "grey"
+          ],
+          "shape": "small aquiline"
+        },
+        "eye": {
+          "iris": "yellow",
+          "ring": null
+        },
+        "legs": {
+          "colour": "yellow"
+        },
+        "head": {
+          "crown": [
+            "grey",
+            "brown"
+          ],
+          "face": null,
+          "throat": null,
+          "pattern": "pigeon-like small head; variable"
+        },
+        "upperparts": {
+          "back": "brown",
+          "rump": null,
+          "pattern": "brown variable"
+        },
+        "underparts": {
+          "breast": null,
+          "belly": null,
+          "pattern": "barred variable"
+        },
+        "wings": {
+          "above": "brown",
+          "below": "dark-brown",
+          "pattern": "barred, carpal dark"
+        },
+        "tail": {
+          "colour": null,
+          "shape": "longish rounded; banded"
+        }
+      }
+    }
+  ],
+  "viewNotes": [
+    {
+      "view": "perched-side",
+      "note": "Side view shows the key field marks summarised for European Honey Buzzard: see variants. (Newman's).",
+      "age": "adult",
+      "sex": "any",
+      "season": "any"
+    },
+    {
+      "view": "flight-below",
+      "note": "Small-headed; banded tail; variable underwing (Newmans).",
+      "age": "adult",
+      "sex": "any",
+      "season": "any"
+    },
+    {
+      "view": "flight-above",
+      "note": "Small-headed; banded tail; variable underwing (Newmans). Upperwing details as in variants.",
+      "age": "adult",
+      "sex": "any",
+      "season": "any"
+    }
+  ],
+  "calls": [
+    {
+      "sex": "any",
+      "type": "call",
+      "description": "Seldom calls in Africa non-breeding grounds; whistling calls on breeding grounds (Wikipedia).",
+      "recordings": [
+        {
+          "key": "xeno-canto/XC1100928",
+          "source": "https://xeno-canto.org/1100928",
+          "fileUrl": "https://xeno-canto.org/sounds/uploaded/HVBWFBBDKO/XC1100928-pecchiaiolo_0410_z160426-200447.mp3",
+          "author": "Dimitri",
+          "license": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "aiGenerated": false,
+          "hosted": false
+        },
+        {
+          "key": "xeno-canto/XC1143593",
+          "source": "https://xeno-canto.org/1143593",
+          "fileUrl": "https://xeno-canto.org/sounds/uploaded/HVBWFBBDKO/XC1143593-pecchiaiolo_sgiac_z090626-171546.wav",
+          "author": "Dimitri",
+          "license": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "aiGenerated": false,
+          "hosted": false
+        },
+        {
+          "key": "xeno-canto/XC1141922",
+          "source": "https://xeno-canto.org/1141922",
+          "fileUrl": "https://xeno-canto.org/sounds/uploaded/MCFGTDXKHO/XC1141922-20260607_090309XC.mp3",
+          "author": "brickegickel",
+          "license": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ]
+    }
+  ],
+  "images": [
+    {
+      "key": "pernis-apivorus/perched-side-1.jpg",
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "source": "https://www.inaturalist.org/observations/105975160",
+      "fileUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/177935143/large.jpeg",
+      "author": "leuli",
+      "license": "CC BY-NC 4.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+      "aiGenerated": false,
+      "hosted": false,
+      "alt": "European Honey Buzzard — perched-side, adult. Kruger National Park, Ehlanzeni, Mpumalanga, South Africa",
+      "caption": "European Honey Buzzard — perched-side, adult. Kruger National Park, Ehlanzeni, Mpumalanga, South Africa"
+    },
+    {
+      "key": "pernis-apivorus/flight-above-2.jpg",
+      "view": "flight-above",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "source": "https://commons.wikimedia.org/wiki/File:European_honey-buzzard_(Pernis_apivorus)_in_flight_Babadag.jpg",
+      "fileUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d5/European_honey-buzzard_%28Pernis_apivorus%29_in_flight_Babadag.jpg/1280px-European_honey-buzzard_%28Pernis_apivorus%29_in_flight_Babadag.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "author": "Charles J. Sharp",
+      "license": "CC BY-SA 4.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "aiGenerated": false,
+      "hosted": false,
+      "alt": "European Honey Buzzard — flight-above, adult. European honey-buzzard (Pernis apivorus) Babadag, Turkey",
+      "caption": "European Honey Buzzard — flight-above, adult. European honey-buzzard (Pernis apivorus) Babadag, Turkey"
+    },
+    {
+      "key": "pernis-apivorus/perched-side-3.jpg",
+      "view": "perched-side",
+      "age": "immature",
+      "sex": "any",
+      "season": "any",
+      "source": "https://commons.wikimedia.org/wiki/File:Pernis_apivorus,_onvolwassene,_Unguana,_Birding_Weto,_a.jpg",
+      "fileUrl": "https://upload.wikimedia.org/wikipedia/commons/1/10/Pernis_apivorus%2C_onvolwassene%2C_Unguana%2C_Birding_Weto%2C_a.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+      "author": "Maans Booysen, Birding Weto",
+      "license": "CC BY-SA 4.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "aiGenerated": false,
+      "hosted": false,
+      "alt": "European Honey Buzzard — perched-side, immature. An immature European honey buzzard at Unguana in Inhambane province, southern Mozambique. Note the yellow cere and dull",
+      "caption": "European Honey Buzzard — perched-side, immature. An immature European honey buzzard at Unguana in Inhambane province, southern Mozambique. Note the yellow cere and dull"
+    },
+    {
+      "key": "pernis-apivorus/perched-side-4.jpg",
+      "view": "perched-side",
+      "age": "juvenile",
+      "sex": "any",
+      "season": "any",
+      "source": "https://commons.wikimedia.org/wiki/File:Pernis_apivorus_juv._080718.jpg",
+      "fileUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fb/Pernis_apivorus_juv._080718.jpg/1280px-Pernis_apivorus_juv._080718.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "author": "Accipiter (R. Altenkamp, Berlin)",
+      "license": "CC BY-SA 3.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "aiGenerated": false,
+      "hosted": false,
+      "alt": "European Honey Buzzard — perched-side, chick. Honey buzzard (Pernis apivorus). Two nestlings on nest (age 30 and 28 days). Forest Jungfernheide, Berlin, Germany. Pict",
+      "caption": "European Honey Buzzard — perched-side, chick. Honey buzzard (Pernis apivorus). Two nestlings on nest (age 30 and 28 days). Forest Jungfernheide, Berlin, Germany. Pict"
+    }
+  ],
+  "research": {
+    "confidence": "medium",
+    "needsReview": false,
+    "note": "Research confidence was medium-high and is stored as medium. Status is stored as palearctic-migrant. The European Honey Buzzard is a Palearctic summer visitor. No seasonal plumage change is described in the sources consulted, except presence/absence of migrants. Colour phrases outside the vocabulary were stored as the nearest swatch: dark to dark-brown."
+  }
 }

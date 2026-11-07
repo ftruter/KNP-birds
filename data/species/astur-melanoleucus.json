@@ -7,8 +7,85 @@
     "af": "Swartsperwer"
   },
   "family": "accipitridae",
-  "summary": "The details for this species have not been published yet.",
-  "sampleData": true,
+  "status": "resident",
+  "monthsPresent": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+  ],
+  "size": {
+    "lengthCm": {
+      "min": 46,
+      "max": 58
+    },
+    "note": "Newman's Birds gives 46–58 cm. Formerly Accipiter melanoleucus."
+  },
+  "habitat": "Tall trees, riverine forest, woodland and especially Eucalyptus plantations; retiring but increasingly suburban in parts of South Africa (Newman's; SABAP1).",
+  "summary": "A large black-and-white hawk (or all-dark melanistic form) with long yellow legs. Normal morph: blackish above, white below; thighs and vent speckled or barred (Newman's). Recently placed in Astur.",
+  "sampleData": false,
+  "similar": [
+    {
+      "slug": "aerospiza-tachiro",
+      "note": "African Goshawk is smaller with rufous barring below, not clean white or melanistic black (Newman's)."
+    },
+    {
+      "slug": "aquila-spilogaster",
+      "note": "African Hawk-Eagle soars on longer wings and has feathered legs; different silhouette."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Newman's Birds — Black Sparrowhawk species page (text from Newman's Birds of Southern Africa)",
+      "url": "https://newmansbirds.com/birds/black-sparrowhawk/",
+      "publisher": "Newman's Birds / Struik Nature (online edition)",
+      "year": null
+    },
+    {
+      "title": "The Atlas of Southern African Birds, Vol. 1 (spread 158)",
+      "url": "https://sabap2.birdmap.africa/docs/sabap1/158.pdf",
+      "publisher": "BirdLife South Africa / Avian Demography Unit",
+      "year": 1997
+    },
+    {
+      "title": "Biodiversity Explorer species text (summarised from Roberts Birds of Southern Africa VIIth ed., Hockey, Dean & Ryan 2005)",
+      "url": "https://www.biodiversityexplorer.info/birds/accipitridae/accipiter_melanoleucus.htm",
+      "publisher": "Iziko Museums of South Africa",
+      "year": null
+    },
+    {
+      "title": "Wikipedia — Black sparrowhawk",
+      "url": "https://en.wikipedia.org/wiki/Black_sparrowhawk",
+      "publisher": "Wikimedia Foundation",
+      "year": 2026
+    },
+    {
+      "title": "GBIF occurrence month facets for Accipiter melanoleucus, Kruger bounding box (lon 31.0–32.04, lat −25.53 to −22.33, country ZA)",
+      "url": "https://api.gbif.org/v1/occurrence/search",
+      "publisher": "GBIF.org",
+      "year": 2026
+    },
+    {
+      "title": "xeno-canto recordings (metadata via GBIF dataset b1047888-ae52-4179-9dd5-5448ea342a24)",
+      "url": "https://xeno-canto.org/",
+      "publisher": "xeno-canto.org / GBIF",
+      "year": 2026
+    },
+    {
+      "title": "Wikimedia Commons species category images",
+      "url": "https://commons.wikimedia.org/",
+      "publisher": "Wikimedia Commons",
+      "year": 2026
+    }
+  ],
   "population": {
     "estimate": {
       "low": 16,
@@ -35,8 +112,216 @@
     },
     "tierApplied": "D"
   },
-  "variants": [],
-  "viewNotes": [],
-  "calls": [],
-  "images": []
+  "variants": [
+    {
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "marks": {
+        "bill": {
+          "colour": "black",
+          "shape": "hooked"
+        },
+        "eye": {
+          "iris": [
+            "yellow",
+            "orange"
+          ],
+          "ring": null
+        },
+        "legs": {
+          "colour": "yellow"
+        },
+        "head": {
+          "crown": "black",
+          "face": "black",
+          "throat": "white"
+        },
+        "upperparts": {
+          "back": "black",
+          "rump": null
+        },
+        "underparts": {
+          "breast": "white",
+          "belly": "white"
+        },
+        "wings": {
+          "above": "black",
+          "below": null
+        },
+        "tail": {
+          "colour": "black",
+          "shape": "long"
+        }
+      }
+    },
+    {
+      "age": "immature",
+      "sex": "any",
+      "season": "any",
+      "marks": {
+        "bill": {
+          "colour": null,
+          "shape": null
+        },
+        "eye": {
+          "iris": null,
+          "ring": null
+        },
+        "legs": {
+          "colour": "yellow"
+        },
+        "head": {
+          "crown": "brown",
+          "face": null,
+          "throat": null
+        },
+        "upperparts": {
+          "back": "brown",
+          "rump": null
+        },
+        "underparts": {
+          "breast": [
+            "brown",
+            "white"
+          ],
+          "belly": null
+        },
+        "wings": {
+          "above": null,
+          "below": null
+        },
+        "tail": {
+          "colour": null,
+          "shape": null
+        }
+      }
+    }
+  ],
+  "viewNotes": [
+    {
+      "view": "perched-side",
+      "note": "Black upperparts, white underparts (or all-dark if melanistic), long yellow legs (Newman's).",
+      "age": "adult",
+      "sex": "any",
+      "season": "any"
+    },
+    {
+      "view": "flight-side",
+      "note": "Short rounded Accipiter wings and long tail; powerful low flight through trees (Wikipedia).",
+      "age": "adult",
+      "sex": "any",
+      "season": "any"
+    }
+  ],
+  "calls": [
+    {
+      "sex": "any",
+      "type": "call",
+      "description": "A loud, repeated kekking call, especially near the nest. No sex difference stated in the sources consulted.",
+      "recordings": [
+        {
+          "key": "xeno-canto/XC950482",
+          "source": "https://xeno-canto.org/950482",
+          "fileUrl": "https://xeno-canto.org/sounds/uploaded/CCUCXWCPSW/XC950482-2024_10_10-Astur-melanoleucus2.mp3",
+          "author": "Nick Talbot",
+          "license": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "aiGenerated": false,
+          "hosted": false
+        },
+        {
+          "key": "xeno-canto/XC695163",
+          "source": "https://xeno-canto.org/695163",
+          "fileUrl": "https://xeno-canto.org/sounds/uploaded/HMBDEWEZVS/XC695163-7%20B%20S%20Hawk.mp3",
+          "author": "Tony Archer",
+          "license": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "aiGenerated": false,
+          "hosted": false
+        },
+        {
+          "key": "xeno-canto/XC1184194",
+          "source": "https://xeno-canto.org/1184194",
+          "fileUrl": "https://xeno-canto.org/sounds/uploaded/BLXNBOBSQB/XC1184194-Black-Sparrowhawk-call1e.wav",
+          "author": "Paul Lynch",
+          "license": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ]
+    }
+  ],
+  "images": [
+    {
+      "key": "astur-melanoleucus/perched-side-adult-any.jpg",
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "source": "https://commons.wikimedia.org/wiki/File:Black_Sparrowhawk_(Accipiter_melanoleucus)_melanistic_form_(30688362345).jpg",
+      "fileUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c5/Black_Sparrowhawk_%28Accipiter_melanoleucus%29_melanistic_form_%2830688362345%29.jpg/1280px-Black_Sparrowhawk_%28Accipiter_melanoleucus%29_melanistic_form_%2830688362345%29.jpg",
+      "author": "Bernard Dupont",
+      "license": "CC BY-SA 2.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by-sa/2.0/",
+      "aiGenerated": false,
+      "hosted": false,
+      "alt": "Melanistic Black Sparrowhawk perched; South Africa (Bernard Dupont).",
+      "caption": "Melanistic Black Sparrowhawk perched; South Africa (Bernard Dupont)."
+    },
+    {
+      "key": "astur-melanoleucus/perched-side-immature-any.jpg",
+      "view": "perched-side",
+      "age": "immature",
+      "sex": "any",
+      "season": "any",
+      "source": "https://commons.wikimedia.org/wiki/File:Accipiter_melanoleucus_(8458758156).jpg",
+      "fileUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/78/Accipiter_melanoleucus_%288458758156%29.jpg/1280px-Accipiter_melanoleucus_%288458758156%29.jpg",
+      "author": "Donald Hobern from Copenhagen, Denmark",
+      "license": "CC BY 2.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by/2.0/",
+      "aiGenerated": false,
+      "hosted": false,
+      "alt": "Immature Black Sparrowhawk perched.",
+      "caption": "Immature Black Sparrowhawk perched."
+    },
+    {
+      "key": "astur-melanoleucus/flight-side-adult-any.jpg",
+      "view": "flight-side",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "source": "https://commons.wikimedia.org/wiki/File:Black_Sparrowhawk_in_flight_x.jpg",
+      "fileUrl": "https://upload.wikimedia.org/wikipedia/commons/5/58/Black_Sparrowhawk_in_flight_x.jpg",
+      "author": "Oggmus",
+      "license": "CC BY-SA 4.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "aiGenerated": false,
+      "hosted": false,
+      "alt": "Black Sparrowhawk in flight.",
+      "caption": "Black Sparrowhawk in flight."
+    },
+    {
+      "key": "astur-melanoleucus/perched-side-juvenile-any.jpg",
+      "view": "perched-side",
+      "age": "juvenile",
+      "sex": "any",
+      "season": "any",
+      "source": "https://commons.wikimedia.org/wiki/File:Black_Sparrowhawk_juvenile_x.jpg",
+      "fileUrl": "https://upload.wikimedia.org/wikipedia/commons/9/95/Black_Sparrowhawk_juvenile_x.jpg",
+      "author": "Oggmus",
+      "license": "CC BY-SA 4.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "aiGenerated": false,
+      "hosted": false,
+      "alt": "Juvenile Black Sparrowhawk perched.",
+      "caption": "Juvenile Black Sparrowhawk perched."
+    }
+  ],
+  "research": {
+    "confidence": "medium",
+    "needsReview": false,
+    "note": "No seasonal plumage change. Gaps: Kruger-specific photos scarce (Dupont SA photos used). Uncommon in Kruger core (low GBIF). Photos left out: A repeated file was omitted. Taxonomy: Astur melanoleucus in recent IOC; many sources still Accipiter melanoleucus. Melanistic morph common in some South African populations."
+  }
 }

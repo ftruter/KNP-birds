@@ -5,8 +5,8 @@
   "commonNames": {
     "en": "Hawks, eagles and kites"
   },
-  "summary": "A large family of diurnal hawks, eagles, kites and their relatives. The list on this page includes every member of the family recorded for Kruger.",
-  "sampleData": true,
+  "summary": "Hawks, eagles, kites and vultures are diurnal raptors with hooked bills and strong feet. Kruger has 40 species, from sparrowhawks and kites to large eagles and vultures. Scientific names follow the IOC list used by BirdLife South Africa. That list places the African Goshawk in Aerospiza, the Black Sparrowhawk in Astur, the Shikra and Little Sparrowhawk in Tachyspiza, the Lesser Spotted Eagle in Clanga, and the African Fish Eagle in Icthyophaga. Milvus migrans is kept as one species. In Kruger the common summer kite is the yellow-billed African form, and the species account covers that form beside the scarcer black-billed Palearctic birds.",
+  "sampleData": false,
   "species": [
     {
       "slug": "accipiter-ovampensis",
