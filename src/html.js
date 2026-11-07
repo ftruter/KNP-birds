@@ -8,7 +8,6 @@ import {
   SAMPLE_NOTICE,
   afrikaansName,
   EMPTY_FAMILY_SPECIES,
-  EMPTY_INDEX,
   FAMILY_SPECIES_HEADING,
   catalogSentence,
   listIntro,
@@ -16,25 +15,28 @@ import {
   speciesDetailsPublished,
   UNPUBLISHED_SPECIES,
   FAMILY_TOTAL_INTRO,
-  familyIndexPopulationLine,
   familyLabel,
   familyTotalModel,
   HOME_POPULATION_INTRO,
   imageAlt,
-  indexPopulationLine,
   indexRows,
   licenceForbidsDerivatives,
   mediaSexLabel,
   monthsLabel,
   objectPath,
-  orderFamilySpecies,
   populationModel,
   sizeLabel,
   statusLabel,
   viewLabel,
 } from './guide.js'
 import { ARD_LINK } from './head.js'
+import {
+  rowsForFamilies,
+  rowsForFamily,
+  rowsForSpeciesIndex,
+} from './catalog.js'
 import { agentUrls } from './head.js'
+import { familyTableHtml, speciesTableHtml } from './lists.js'
 import { alternates } from './route.js'
 
 const NAV = [
@@ -45,16 +47,27 @@ const NAV = [
   ['agents', '/llms.txt', 'For agents'],
 ]
 
-export const renderHomeHtml = ({ origin, speciesIndex, familiesIndex }) => {
+export const renderHomeHtml = ({
+  origin,
+  speciesIndex,
+  familiesIndex,
+  catalog,
+  format,
+  query,
+}) => {
   const species = indexRows(speciesIndex)
   const families = indexRows(familiesIndex)
   const main = `
+<div class="hero">
+<div class="hero-copy">
 <h1>Birds of Kruger National Park</h1>
 <p>An open field guide to the birds of Kruger National Park and neighbouring Marloth Park. It is written for people and for AI agents. Pages are rendered on the server. Nothing here needs JavaScript.</p>
 ${agentHtml(origin)}
 <p>The full list is resident species, plus summer migrants. Rare vagrants are left out. ${escapeHtml(catalogSentence(species.length, families.length, speciesIndex, familiesIndex))}</p>
+</div>
+<div class="hero-points">
 <h2>What these pages compare</h2>
-<ol>
+<ol class="compare-list">
 <li>Chicks and juveniles against adults</li>
 <li>Winter (non-breeding) plumage against summer (breeding) plumage</li>
 <li>Males against females</li>
@@ -62,20 +75,27 @@ ${agentHtml(origin)}
 <li>A perched or walking bird, from the front, the back and the side</li>
 <li>Calls and songs of males and females</li>
 </ol>
+</div>
+</div>
 <p>Age, season and sex are worked out by comparing structured field marks. A mark left blank is unknown, not a claim that the part has no colour. Flight and perched views use notes and photographs. Where nothing differs, the page says so.</p>
 <p>${escapeHtml(HOME_POPULATION_INTRO)}</p>
 <h2>Species</h2>
-${linkList(
-  species,
-  (entry) => `/species/${entry.slug}`,
-  (entry) => `${englishName(entry)} (${entry.scientificName})`,
-)}
+${speciesTableHtml({
+  rows: rowsForSpeciesIndex(speciesIndex, catalog),
+  path: '/',
+  query,
+  format,
+  withFamily: true,
+  caption: 'Species',
+})}
 <h2>Families</h2>
-${linkList(
-  families,
-  (entry) => `/family/${entry.slug}`,
-  (entry) => `${englishName(entry)} (${entry.scientificName})`,
-)}
+${familyTableHtml({
+  rows: rowsForFamilies(familiesIndex, catalog),
+  path: '/',
+  query,
+  format,
+  caption: 'Families',
+})}
 <p><a href="/vocab/colours">Colour names</a> used in the field marks.</p>`
   return layout({
     title: 'Birds of Kruger National Park',
@@ -89,14 +109,25 @@ ${linkList(
   })
 }
 
-export const renderSpeciesIndexHtml = ({ origin, doc }) => {
+export const renderSpeciesIndexHtml = ({
+  origin,
+  doc,
+  catalog,
+  format,
+  query,
+}) => {
   const list = indexRows(doc)
   const main = `
 <h1>Species</h1>
 <p>${escapeHtml(listIntro(list.length, 'species', 'species'))}</p>
-<ul class="species-list">
-${list.map((entry) => `<li><a href="/species/${escapeHtml(entry.slug)}">${escapeHtml(englishName(entry))}</a> <em>${escapeHtml(entry.scientificName)}</em>${afrikaansName(entry) ? ` — ${escapeHtml(afrikaansName(entry))}` : ''} — ${escapeHtml(indexPopulationLine(entry.population, 'Approximate estimate'))}</li>`).join('\n')}
-</ul>`
+${speciesTableHtml({
+  rows: rowsForSpeciesIndex(doc, catalog),
+  path: '/species',
+  query,
+  format,
+  caption: 'Species',
+})}
+`
   return layout({
     title: 'Species · KNP Birds',
     description: 'Species published in this field guide.',
@@ -108,14 +139,25 @@ ${list.map((entry) => `<li><a href="/species/${escapeHtml(entry.slug)}">${escape
   })
 }
 
-export const renderFamiliesIndexHtml = ({ origin, doc }) => {
+export const renderFamiliesIndexHtml = ({
+  origin,
+  doc,
+  catalog,
+  format,
+  query,
+}) => {
   const list = indexRows(doc)
   const main = `
 <h1>Families</h1>
 <p>${escapeHtml(listIntro(list.length, 'family', 'families'))}</p>
-<ul class="species-list">
-${list.map((entry) => `<li><a href="/family/${escapeHtml(entry.slug)}">${escapeHtml(englishName(entry))}</a> <em>${escapeHtml(entry.scientificName)}</em>${afrikaansName(entry) ? ` — ${escapeHtml(afrikaansName(entry))}` : ''} — ${escapeHtml(familyIndexPopulationLine(entry.population))}</li>`).join('\n')}
-</ul>`
+${familyTableHtml({
+  rows: rowsForFamilies(doc, catalog),
+  path: '/families',
+  query,
+  format,
+  caption: 'Families',
+})}
+`
   return layout({
     title: 'Families · KNP Birds',
     description: 'Bird families published in this field guide.',
@@ -127,19 +169,37 @@ ${list.map((entry) => `<li><a href="/family/${escapeHtml(entry.slug)}">${escapeH
   })
 }
 
-export const renderFamilyHtml = ({ origin, doc, plates = [] }) => {
-  const species = orderFamilySpecies(doc.species, doc.iconicSpecies)
+export const renderFamilyHtml = ({
+  origin,
+  doc,
+  plates = [],
+  catalog,
+  format,
+  query,
+}) => {
   const main = `
 ${doc.sampleData ? sampleNotice() : ''}
 <p class="kicker">Family</p>
 <h1>${escapeHtml(englishName(doc))}</h1>
 <p class="latin">${escapeHtml(doc.scientificName || '')}</p>
 ${afrikaansName(doc) ? `<p class="afrikaans">${escapeHtml(afrikaansName(doc))}</p>` : ''}
+<div class="split">
+<div class="split-copy">
 ${paragraphs(doc.summary)}
-${familyPopulationHtml(doc.population)}
+</div>
+${familyPopulationHtml(doc.population, format)}
+</div>
 ${iconicHtml(plates)}
 <h2>${FAMILY_SPECIES_HEADING}</h2>
-${familySpeciesList(species)}`
+${speciesTableHtml({
+  rows: rowsForFamily(doc, catalog),
+  path: `/family/${doc.slug}`,
+  query,
+  format,
+  caption: FAMILY_SPECIES_HEADING,
+  empty: EMPTY_FAMILY_SPECIES,
+})}
+`
   return layout({
     title: `${englishName(doc)} · KNP Birds`,
     description: inlineText(doc.summary || englishName(doc)),
@@ -182,20 +242,29 @@ export const renderSpeciesHtml = ({
   doc,
   colourMap,
   imagesAvailable,
+  format,
 }) => {
   const published = speciesDetailsPublished(doc)
   const comparisons = published ? diffSpecies(doc) : []
-  const population = populationModel(doc.population)
+  const population = populationModel(doc.population, format)
   const images = Array.isArray(doc.images) ? doc.images : []
   const status = doc.status ? ` · ${escapeHtml(statusLabel(doc.status))}` : ''
   const main = `
 ${doc.sampleData ? sampleNotice() : ''}
+<div class="species-id">
 <p class="kicker"><a href="/family/${escapeHtml(doc.family)}">${escapeHtml(familyLabel(doc.family))}</a>${status}</p>
 <h1>${escapeHtml(englishName(doc))}</h1>
 <p class="latin">${escapeHtml(doc.scientificName || '')}</p>
 ${afrikaansName(doc) ? `<p class="afrikaans">${escapeHtml(afrikaansName(doc))}</p>` : ''}
+</div>
+<div class="species-layout">
+<div class="species-main">
 ${published ? publishedSpeciesHtml(doc, comparisons, images, imagesAvailable, colourMap) : `<p>${escapeHtml(UNPUBLISHED_SPECIES)}</p>`}
-${populationHtml(population)}`
+</div>
+<aside class="species-aside">
+${populationHtml(population)}
+</aside>
+</div>`
   return layout({
     title: `${englishName(doc)} (${doc.scientificName}) · KNP Birds`,
     description: inlineText(doc.summary || englishName(doc)),
@@ -245,7 +314,9 @@ ${doc.habitat ? `<dt>Habitat</dt><dd>${escapeHtml(doc.habitat)}</dd>` : ''}
 <dt>Family</dt><dd><a href="/family/${escapeHtml(doc.family)}">${escapeHtml(familyLabel(doc.family))}</a></dd>
 </dl>
 <h2>Photographs</h2>
+<div class="gallery">
 ${figures(doc, images, imagesAvailable, colourMap)}
+</div>
 <h2>Telling it apart</h2>
 ${comparisons.map((section) => comparisonSection(section, colourMap)).join('\n')}
 ${similarHtml(doc)}
@@ -393,28 +464,25 @@ const sourcesSection = (sources) => {
 ${sourcesHtml(list)}`
 }
 
-const familySpeciesList = (species) =>
-  species.length === 0
-    ? `<p>${escapeHtml(EMPTY_FAMILY_SPECIES)}</p>`
-    : `<ul class="species-list">
-${species.map((entry) => `<li><a href="/species/${escapeHtml(entry.slug)}">${escapeHtml(englishName(entry))}</a> <em>${escapeHtml(entry.scientificName || '')}</em>${afrikaansName(entry) ? ` — ${escapeHtml(afrikaansName(entry))}` : ''}</li>`).join('\n')}
-</ul>`
-
 const iconicHtml = (plates) =>
   !plates?.length
     ? ''
     : `<h2>First to look for</h2>
+<div class="card-grid">
 ${plates
   .map(
-    (plate) => `<section>
+    (plate) => `<section class="species-card">
 <h3><a href="/species/${escapeHtml(plate.doc.slug)}">${escapeHtml(englishName(plate.doc))}</a></h3>
+<div class="gallery">
 ${figures(plate.doc, Array.isArray(plate.doc.images) ? plate.doc.images : [], plate.imagesAvailable)}
+</div>
 </section>`,
   )
-  .join('\n')}`
+  .join('\n')}
+</div>`
 
-const familyPopulationHtml = (population) => {
-  const model = familyTotalModel(population)
+const familyPopulationHtml = (population, format) => {
+  const model = familyTotalModel(population, format)
   const range = model.range
     ? `<p class="estimate-range">${escapeHtml(model.range)}</p>`
     : '<p class="estimate-range">No numeric total yet.</p>'
@@ -749,10 +817,10 @@ ${ARD_LINK}
 <a class="skip" href="#main">Skip to content</a>
 <header class="site-header">
 <div class="wrap mast">
+<div class="brand">
 <p class="site-name"><a href="/">KNP Birds</a></p>
 <p class="site-tag">Kruger National Park</p>
 </div>
-<div class="wrap">
 <nav aria-label="Site">
 <ul class="nav-list">
 ${NAV.map(([key, href, label]) => `<li><a href="${href}"${nav === key ? ' aria-current="page"' : ''}>${label}</a></li>`).join('\n')}
@@ -768,10 +836,16 @@ ${main}
 </main>
 <footer class="site-footer">
 <div class="wrap">
+<div class="footer-grid">
+<div>
+<p class="footer-lead">Birds of Kruger National Park. An open field guide for people and for AI agents.</p>
 <p>Also available as <a href="${escapeHtml(alts.md)}">Markdown</a> and <a href="${escapeHtml(alts.json)}">JSON</a>.</p>
+</div>
+<div>
 ${agentHtml(origin)}
 <p><a href="/llms.txt">llms.txt</a> · <a href="/sitemap.xml">Sitemap</a> · <a href="/credits"${path === '/credits' ? ' aria-current="page"' : ''}>Credits</a></p>
-<p>Birds of Kruger National Park. An open field guide for people and for AI agents.</p>
+</div>
+</div>
 </div>
 </footer>
 </body>
@@ -796,13 +870,6 @@ const paragraphs = (text) =>
     .join('\n')
 
 const entries = (doc) => (Array.isArray(doc?.entries) ? doc.entries : [])
-
-const linkList = (items, href, label) =>
-  items.length === 0
-    ? `<p>${escapeHtml(EMPTY_INDEX)}</p>`
-    : `<ul class="species-list">
-${items.map((item) => `<li><a href="${escapeHtml(href(item))}">${escapeHtml(label(item))}</a></li>`).join('\n')}
-</ul>`
 
 const crumbs = (items) => {
   const rest = (items ?? []).map((item) =>

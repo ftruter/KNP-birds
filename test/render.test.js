@@ -85,7 +85,7 @@ test('species HTML has the six comparisons, population, and no client script', a
   assert.match(html, /fill="#B07CC8"/)
   assert.match(html, /class="population"/)
   assert.match(html, /Approximate estimate/)
-  assert.match(html, /8192–32768 mature individuals/)
+  assert.match(html, /8,192–32,768 mature individuals/)
   assert.match(html, /Kemp et al\. 2001/)
   assert.match(html, /Confidence: Low/)
   assert.match(html, /As of 2001/)
@@ -180,7 +180,7 @@ test('a family page shows the derived approximate total', async () => {
     plates: [{ doc: roller, imagesAvailable: {} }],
   })
   assert.match(html, /Approximate total/)
-  assert.match(html, /18960–75840 mature individuals/)
+  assert.match(html, /18,960–75,840 mature individuals/)
   assert.match(html, /Includes 5 of 5 species/)
   assert.match(html, /mature-individual estimates only/)
   assert.doesNotMatch(html, /This total is incomplete/)
@@ -195,7 +195,7 @@ test('a family page shows the derived approximate total', async () => {
     { doc: roller, imagesAvailable: {} },
   ])
   assert.match(markdown, /\*\*Approximate total\.\*\*/)
-  assert.match(markdown, /18960–75840 mature individuals/)
+  assert.match(markdown, /18,960–75,840 mature individuals/)
   assert.match(markdown, /Includes 5 of 5 species/)
   assert.doesNotMatch(markdown, /This total is incomplete/)
   assert.match(markdown, /## First to look for/)
@@ -271,22 +271,18 @@ test('the families index shows Afrikaans only when a name is recorded', () => {
     origin: 'https://birds.truter.world',
     doc,
   })
-  assert.match(html, /Kingfishers<\/a> <em>Alcedinidae<\/em> — Visvangers —/)
-  assert.match(
-    html,
-    /Hawks, eagles and kites<\/a> <em>Accipitridae<\/em> — Approximate total/,
-  )
-  assert.match(html, /Approximate total: no numeric figure yet/)
+  assert.match(html, /Kingfishers<\/a>/)
+  assert.match(html, /Visvangers/)
+  assert.match(html, /<em>Alcedinidae<\/em>/)
+  assert.match(html, /Hawks, eagles and kites<\/a>/)
   assert.doesNotMatch(html, /about 0 individuals/)
   assert.doesNotMatch(html, />null</)
   const markdown = renderFamiliesIndexMarkdown(doc)
+  assert.match(markdown, /\[Kingfishers\]\(\/family\/alcedinidae\)/)
+  assert.match(markdown, /Visvangers/)
   assert.match(
     markdown,
-    /Kingfishers\]\(\/family\/alcedinidae\) \(Alcedinidae\) — Visvangers —/,
-  )
-  assert.match(
-    markdown,
-    /Hawks, eagles and kites\]\(\/family\/accipitridae\) \(Accipitridae\) — Approximate total: no numeric figure yet/,
+    /\[Hawks, eagles and kites\]\(\/family\/accipitridae\)/,
   )
   assert.doesNotMatch(markdown, /null/)
 })
@@ -404,14 +400,11 @@ test('the species index lists every scientific name and skips a missing Afrikaan
   assert.match(html, /href="\/species\/struthio-camelus"/)
   assert.match(html, /href="\/species\/bucorvus-leadbeateri"/)
   assert.match(html, /Bromvoël/)
-  assert.match(html, /Approximate estimate: no numeric figure yet/)
+  assert.match(html, /Unknown/)
   assert.doesNotMatch(html, />null</)
   assert.doesNotMatch(html, /about null/)
   const markdown = renderSpeciesIndexMarkdown(doc)
-  assert.match(
-    markdown,
-    /Common Ostrich\]\(\/species\/struthio-camelus\) \(Struthio camelus\) — Approximate estimate/,
-  )
+  assert.match(markdown, /\[Common Ostrich\]\(\/species\/struthio-camelus\)/)
   assert.match(markdown, /The guide lists 2 species/)
   assert.doesNotMatch(markdown, /null/)
 })

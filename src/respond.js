@@ -24,6 +24,7 @@ export const pageResponse = ({
   path,
   origin,
   cacheTag,
+  vary,
 }) => {
   const headers = new Headers(SECURITY)
   headers.set('content-type', contentType)
@@ -40,6 +41,7 @@ export const pageResponse = ({
       ]
     : []
   headers.set('link', linkHeader(pageLinks))
+  if (vary) headers.set('vary', vary)
   return new Response(body, { status, headers })
 }
 
