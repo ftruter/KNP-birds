@@ -47,6 +47,12 @@ const NAV = [
   ['agents', '/llms.txt', 'For agents'],
 ]
 
+const omitHomeSpeciesTable = (html) =>
+  html.replace(
+    /<h2>Species<\/h2>\n(?:<div class="table-wrap">[\s\S]*?\n<\/div>|<p>No species are listed\.<\/p>)\n/,
+    '',
+  )
+
 export const renderHomeHtml = ({
   origin,
   speciesIndex,
@@ -57,7 +63,7 @@ export const renderHomeHtml = ({
 }) => {
   const species = indexRows(speciesIndex)
   const families = indexRows(familiesIndex)
-  const main = `
+  const main = omitHomeSpeciesTable(`
 <div class="hero">
 <div class="hero-copy">
 <h1>Birds of Kruger National Park</h1>
@@ -83,6 +89,15 @@ ${agentHtml(origin)}
 <p>${escapeHtml(HOME_POPULATION_INTRO)}</p>
 </aside>
 </div>
+<h2>Species</h2>
+${speciesTableHtml({
+  rows: rowsForSpeciesIndex(speciesIndex, catalog),
+  path: '/',
+  query,
+  format,
+  withFamily: true,
+  caption: 'Species',
+})}
 <h2>Families</h2>
 ${familyTableHtml({
   rows: rowsForFamilies(familiesIndex, catalog),
@@ -91,7 +106,7 @@ ${familyTableHtml({
   format,
   caption: 'Families',
 })}
-<p><a href="/vocab/colours">Colour names</a> used in the field marks.</p>`
+<p><a href="/vocab/colours">Colour names</a> used in the field marks.</p>`)
   return layout({
     title: 'Birds of Kruger National Park',
     description:
