@@ -57,12 +57,16 @@ export const renderHomeHtml = ({
   const species = indexRows(speciesIndex)
   const families = indexRows(familiesIndex)
   const main = `
+<div class="hero">
+<div class="hero-copy">
 <h1>Birds of Kruger National Park</h1>
 <p>An open field guide to the birds of Kruger National Park and neighbouring Marloth Park. It is written for people and for AI agents. Pages are rendered on the server. Nothing here needs JavaScript.</p>
 ${agentHtml(origin)}
 <p>The full list is resident species, plus summer migrants. Rare vagrants are left out. ${escapeHtml(catalogSentence(species.length, families.length, speciesIndex, familiesIndex))}</p>
+</div>
+<div class="hero-points">
 <h2>What these pages compare</h2>
-<ol>
+<ol class="compare-list">
 <li>Chicks and juveniles against adults</li>
 <li>Winter (non-breeding) plumage against summer (breeding) plumage</li>
 <li>Males against females</li>
@@ -70,6 +74,8 @@ ${agentHtml(origin)}
 <li>A perched or walking bird, from the front, the back and the side</li>
 <li>Calls and songs of males and females</li>
 </ol>
+</div>
+</div>
 <p>Age, season and sex are worked out by comparing structured field marks. A mark left blank is unknown, not a claim that the part has no colour. Flight and perched views use notes and photographs. Where nothing differs, the page says so.</p>
 <p>${escapeHtml(HOME_POPULATION_INTRO)}</p>
 <h2>Species</h2>
@@ -176,8 +182,12 @@ ${doc.sampleData ? sampleNotice() : ''}
 <h1>${escapeHtml(englishName(doc))}</h1>
 <p class="latin">${escapeHtml(doc.scientificName || '')}</p>
 ${afrikaansName(doc) ? `<p class="afrikaans">${escapeHtml(afrikaansName(doc))}</p>` : ''}
+<div class="split">
+<div class="split-copy">
 ${paragraphs(doc.summary)}
+</div>
 ${familyPopulationHtml(doc.population, format)}
+</div>
 ${iconicHtml(plates)}
 <h2>${FAMILY_SPECIES_HEADING}</h2>
 ${speciesTableHtml({
@@ -240,12 +250,20 @@ export const renderSpeciesHtml = ({
   const status = doc.status ? ` · ${escapeHtml(statusLabel(doc.status))}` : ''
   const main = `
 ${doc.sampleData ? sampleNotice() : ''}
+<div class="species-id">
 <p class="kicker"><a href="/family/${escapeHtml(doc.family)}">${escapeHtml(familyLabel(doc.family))}</a>${status}</p>
 <h1>${escapeHtml(englishName(doc))}</h1>
 <p class="latin">${escapeHtml(doc.scientificName || '')}</p>
 ${afrikaansName(doc) ? `<p class="afrikaans">${escapeHtml(afrikaansName(doc))}</p>` : ''}
+</div>
+<div class="species-layout">
+<div class="species-main">
 ${published ? publishedSpeciesHtml(doc, comparisons, images, imagesAvailable, colourMap) : `<p>${escapeHtml(UNPUBLISHED_SPECIES)}</p>`}
-${populationHtml(population)}`
+</div>
+<aside class="species-aside">
+${populationHtml(population)}
+</aside>
+</div>`
   return layout({
     title: `${englishName(doc)} (${doc.scientificName}) · KNP Birds`,
     description: inlineText(doc.summary || englishName(doc)),
@@ -295,7 +313,9 @@ ${doc.habitat ? `<dt>Habitat</dt><dd>${escapeHtml(doc.habitat)}</dd>` : ''}
 <dt>Family</dt><dd><a href="/family/${escapeHtml(doc.family)}">${escapeHtml(familyLabel(doc.family))}</a></dd>
 </dl>
 <h2>Photographs</h2>
+<div class="gallery">
 ${figures(doc, images, imagesAvailable, colourMap)}
+</div>
 <h2>Telling it apart</h2>
 ${comparisons.map((section) => comparisonSection(section, colourMap)).join('\n')}
 ${similarHtml(doc)}
@@ -438,14 +458,18 @@ const iconicHtml = (plates) =>
   !plates?.length
     ? ''
     : `<h2>First to look for</h2>
+<div class="card-grid">
 ${plates
   .map(
-    (plate) => `<section>
+    (plate) => `<section class="species-card">
 <h3><a href="/species/${escapeHtml(plate.doc.slug)}">${escapeHtml(englishName(plate.doc))}</a></h3>
+<div class="gallery">
 ${figures(plate.doc, Array.isArray(plate.doc.images) ? plate.doc.images : [], plate.imagesAvailable)}
+</div>
 </section>`,
   )
-  .join('\n')}`
+  .join('\n')}
+</div>`
 
 const familyPopulationHtml = (population, format) => {
   const model = familyTotalModel(population, format)
@@ -780,10 +804,10 @@ ${ARD_LINK}
 <a class="skip" href="#main">Skip to content</a>
 <header class="site-header">
 <div class="wrap mast">
+<div class="brand">
 <p class="site-name"><a href="/">KNP Birds</a></p>
 <p class="site-tag">Kruger National Park</p>
 </div>
-<div class="wrap">
 <nav aria-label="Site">
 <ul class="nav-list">
 ${NAV.map(([key, href, label]) => `<li><a href="${href}"${nav === key ? ' aria-current="page"' : ''}>${label}</a></li>`).join('\n')}
@@ -799,10 +823,16 @@ ${main}
 </main>
 <footer class="site-footer">
 <div class="wrap">
+<div class="footer-grid">
+<div>
+<p class="footer-lead">Birds of Kruger National Park. An open field guide for people and for AI agents.</p>
 <p>Also available as <a href="${escapeHtml(alts.md)}">Markdown</a> and <a href="${escapeHtml(alts.json)}">JSON</a>.</p>
+</div>
+<div>
 ${agentHtml(origin)}
 <p><a href="/llms.txt">llms.txt</a> · <a href="/sitemap.xml">Sitemap</a> · <a href="/credits"${path === '/credits' ? ' aria-current="page"' : ''}>Credits</a></p>
-<p>Birds of Kruger National Park. An open field guide for people and for AI agents.</p>
+</div>
+</div>
 </div>
 </footer>
 </body>

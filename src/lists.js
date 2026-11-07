@@ -117,7 +117,14 @@ const headerHtml = (column, active, path) => {
       : 'ascending'
     : 'none'
   const mark = current ? (active.dir === 'desc' ? '▼' : '▲') : ''
-  return `<th scope="col" aria-sort="${aria}"><a href="${escapeHtml(`${path}?sort=${column.id}&dir=${dir}`)}">${escapeHtml(column.label)}</a>${mark ? ` <span class="sort-mark" aria-hidden="true">${mark}</span>` : ''}</th>`
+  const numeric =
+    column.id === 'summer' ||
+    column.id === 'winter' ||
+    column.id.endsWith('Count')
+  const markHtml = mark
+    ? ` <span class="sort-mark" aria-hidden="true">${mark}</span>`
+    : ''
+  return `<th scope="col"${numeric ? ' class="num"' : ''} aria-sort="${aria}"><a href="${escapeHtml(`${path}?sort=${column.id}&dir=${dir}`)}">${escapeHtml(column.label)}${markHtml}</a></th>`
 }
 
 const familyTitle = (row) =>
