@@ -86,7 +86,7 @@ export const renderRoute = async (request, env, route) => {
 
 const renderHome = async (env, format, view) => {
   const [species, families, catalog] = await Promise.all([
-    readOptional(env.BIRDS_KV, 'index/species'),
+    format === 'json' ? null : readOptional(env.BIRDS_KV, 'index/species'),
     readOptional(env.BIRDS_KV, 'index/families'),
     format === 'json' ? null : loadListCatalog(env.BIRDS_KV, env?.DATA_VERSION),
   ])
@@ -97,7 +97,6 @@ const renderHome = async (env, format, view) => {
         kind: 'home',
         title: 'Birds of Kruger National Park',
         sampleData: false,
-        species: species?.data ?? {},
         families: families?.data ?? {},
         census: HOME_POPULATION_INTRO,
       },

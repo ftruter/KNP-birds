@@ -102,6 +102,23 @@ test('pages are served in html, markdown, and json', async () => {
   assert.match(familyPage, /First to look for/)
 })
 
+test('home json lists families and leaves the species index at /species', async () => {
+  const { records } = await loadStore()
+  const site = await app(records)
+  const home = await (await site.fetch('/.json')).json()
+  assert.equal(home.kind, 'home')
+  assert.equal(Object.hasOwn(home, 'species'), false)
+  assert.equal(Object.keys(home.families).length, 86)
+  assert.equal(home.families.Accipitridae.en, 'Hawks, eagles and kites')
+  const html = await (await site.fetch('/')).text()
+  assert.match(html, /Summer species count/)
+  assert.match(html, /Winter species count/)
+  assert.doesNotMatch(html, /<h2>Species<\/h2>/)
+  const markdown = await (await site.fetch('/.md')).text()
+  assert.match(markdown, /## Families/)
+  assert.doesNotMatch(markdown, /## Species/)
+})
+
 test('a species stub renders in html, markdown, and json', async () => {
   const { records } = await loadStore()
   const site = await app(records)

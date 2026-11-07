@@ -35,7 +35,6 @@ const speciesSortValue = (row, column) => {
   if (column === 'en') return textOf(row.en)
   if (column === 'af') return textOf(row.af)
   if (column === 'latin') return textOf(row.scientificName)
-  if (column === 'family') return textOf(row.familyLatin)
   if (column === 'summer' || column === 'winter') {
     if (row.presence?.[column] !== true) return null
     return row.estimate ? row.estimate.sort : null
@@ -81,19 +80,13 @@ export const sortRows = (rows, column, dir, valueOf) => {
   return copy
 }
 
-const speciesColumns = (withFamily) => {
-  const columns = [
-    { id: 'en', label: 'English' },
-    { id: 'af', label: 'Afrikaans' },
-    { id: 'latin', label: 'Latin' },
-  ]
-  if (withFamily) columns.push({ id: 'family', label: 'Family' })
-  columns.push(
-    { id: 'summer', label: 'Summer population' },
-    { id: 'winter', label: 'Winter population' },
-  )
-  return columns
-}
+const speciesColumns = [
+  { id: 'en', label: 'English' },
+  { id: 'af', label: 'Afrikaans' },
+  { id: 'latin', label: 'Latin' },
+  { id: 'summer', label: 'Summer population' },
+  { id: 'winter', label: 'Winter population' },
+]
 
 const familyColumns = () => [
   { id: 'en', label: 'English' },
@@ -127,16 +120,12 @@ const headerHtml = (column, active, path) => {
   return `<th scope="col"${numeric ? ' class="num"' : ''} aria-sort="${aria}"><a href="${escapeHtml(`${path}?sort=${column.id}&dir=${dir}`)}">${escapeHtml(column.label)}${markHtml}</a></th>`
 }
 
-const familyTitle = (row) =>
-  row.familyAf ? `${row.familyEn}, ${row.familyAf}` : row.familyEn || ''
-
 const speciesCells = (row, format) => {
   const view = { ...row, format }
   return {
     en: `<th scope="row"><a href="/species/${escapeHtml(row.slug)}">${escapeHtml(row.en)}</a></th>`,
     af: `<td>${escapeHtml(row.af || '—')}</td>`,
     latin: `<td><em>${escapeHtml(row.scientificName)}</em></td>`,
-    family: `<td><a href="/family/${escapeHtml(row.familySlug)}" title="${escapeHtml(familyTitle(row))}">${escapeHtml(row.familyLatin || '—')}</a></td>`,
     summer: `<td class="num">${escapeHtml(seasonPopulation(view, 'summer'))}</td>`,
     winter: `<td class="num">${escapeHtml(seasonPopulation(view, 'winter'))}</td>`,
   }
@@ -187,11 +176,10 @@ export const speciesTableHtml = ({
   path,
   query,
   format,
-  withFamily = false,
   caption = 'Species',
   empty = 'No species are listed.',
 }) => {
-  const columns = speciesColumns(withFamily)
+  const columns = speciesColumns
   const active = {
     ...parseListQuery(
       query,
@@ -239,18 +227,15 @@ export const familyTableHtml = ({
 
 const mdCell = (value) => String(value ?? '—').replaceAll('|', '\\|')
 
-const mdSpeciesRow = (row, format, withFamily) => {
+const mdSpeciesRow = (row, format) => {
   const view = { ...row, format }
   const cells = [
     `[${row.en}](/species/${row.slug})`,
     row.af || '—',
     `*${row.scientificName}*`,
+    seasonPopulation(view, 'summer'),
+    seasonPopulation(view, 'winter'),
   ]
-  if (withFamily)
-    cells.push(
-      row.familyLatin ? `[${row.familyLatin}](/family/${row.familySlug})` : '—',
-    )
-  cells.push(seasonPopulation(view, 'summer'), seasonPopulation(view, 'winter'))
   return `| ${cells.map(mdCell).join(' | ')} |`
 }
 
@@ -277,15 +262,13 @@ const mdTable = (headers, lines) =>
 export const speciesTableMarkdown = ({
   rows,
   format,
-  withFamily = false,
   empty = 'No species are listed.',
 }) => {
   if (!rows.length) return empty
-  const columns = speciesColumns(withFamily)
   const ordered = sortRows(rows, 'en', 'asc', speciesSortValue)
   return `${mdTable(
-    columns.map((column) => column.label),
-    ordered.map((row) => mdSpeciesRow(row, format, withFamily)),
+    speciesColumns.map((column) => column.label),
+    ordered.map((row) => mdSpeciesRow(row, format)),
   )}
 
 ${SEASON_NOTE} ${SORT_NOTE}`

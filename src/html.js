@@ -41,8 +41,8 @@ import { alternates } from './route.js'
 
 const NAV = [
   ['home', '/', 'Home'],
-  ['species', '/species', 'Species'],
   ['families', '/families', 'Families'],
+  ['species', '/species', 'Species'],
   ['colours', '/vocab/colours', 'Colours'],
   ['agents', '/llms.txt', 'For agents'],
 ]
@@ -79,15 +79,6 @@ ${agentHtml(origin)}
 </div>
 <p>Age, season and sex are worked out by comparing structured field marks. A mark left blank is unknown, not a claim that the part has no colour. Flight and perched views use notes and photographs. Where nothing differs, the page says so.</p>
 <p>${escapeHtml(HOME_POPULATION_INTRO)}</p>
-<h2>Species</h2>
-${speciesTableHtml({
-  rows: rowsForSpeciesIndex(speciesIndex, catalog),
-  path: '/',
-  query,
-  format,
-  withFamily: true,
-  caption: 'Species',
-})}
 <h2>Families</h2>
 ${familyTableHtml({
   rows: rowsForFamilies(familiesIndex, catalog),
@@ -285,8 +276,8 @@ export const renderNotFoundHtml = ({ origin, path }) => {
 <p>No page is published at <code>${escapeHtml(path)}</code>.</p>
 <ul>
 <li><a href="/">Home</a></li>
-<li><a href="/species">Species</a></li>
 <li><a href="/families">Families</a></li>
+<li><a href="/species">Species</a></li>
 </ul>`
   return layout({
     title: 'Not found · KNP Birds',

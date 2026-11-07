@@ -431,6 +431,18 @@ test('the home page counts the species and family indexes', async () => {
   assert.equal(speciesCount, 493)
   assert.equal(familyCount, 86)
   assert.match(html, /href="\/credits"/)
+  assert.doesNotMatch(html, /<h2>Species<\/h2>/)
+  assert.doesNotMatch(html, /href="\/species\//)
+  assert.match(html, /<h2>Families<\/h2>/)
+  assert.match(html, /Summer species count/)
+  assert.match(html, /Winter species count/)
+  assert.doesNotMatch(markdown, /## Species\n/)
+  assert.match(markdown, /## Families/)
+  const nav = html.match(/<ul class="nav-list">[\s\S]*?<\/ul>/)[0]
+  assert.deepEqual(
+    [...nav.matchAll(/>([^<]+)<\/a>/g)].map((match) => match[1]),
+    ['Home', 'Families', 'Species', 'Colours', 'For agents'],
+  )
   const sized = renderHomeHtml({
     origin: 'https://birds.truter.world',
     speciesIndex: {
