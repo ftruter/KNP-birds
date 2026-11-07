@@ -668,6 +668,49 @@ caption, .season-note {
   border-radius: calc(var(--radius-lg) - 0.4rem);
 }
 
+.zoom {
+  display: block;
+  inline-size: 100%;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  color: inherit;
+  font: inherit;
+  text-align: start;
+  cursor: zoom-in;
+}
+
+.plate.is-zoomed {
+  position: fixed;
+  z-index: 999;
+  inset: 0;
+  inline-size: 100vw;
+  block-size: 100vh;
+  max-inline-size: none;
+  margin: 0;
+  padding: 0;
+  overflow: auto;
+  border-radius: 0;
+  background: var(--bg);
+}
+
+.plate.is-zoomed .zoom { cursor: zoom-out; }
+
+.plate.is-zoomed img {
+  inline-size: 100%;
+  block-size: auto;
+  border-radius: 0;
+}
+
+.plate.is-zoomed figcaption {
+  position: sticky;
+  inset-block-end: 0;
+  margin: 0;
+  padding: 0.75rem 1rem 1rem;
+  background: var(--surface);
+}
+
 audio {
   display: block;
   inline-size: 100%;

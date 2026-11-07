@@ -48,7 +48,11 @@ test('pages are served in html, markdown, and json', async () => {
   assert.equal(html.headers.get('cache-control'), PAGE_CACHE)
   const body = await html.text()
   assert.match(body, /Lilac-breasted Roller/)
-  assert.doesNotMatch(body, /<script/i)
+  assert.match(
+    body,
+    /<script type="module" defer src="\/app\.js\?v=[0-9a-f]+"><\/script>/,
+  )
+  assert.doesNotMatch(body, /<script(?! type="module")/i)
 
   const markdown = await site.fetch('/species/coracias-caudatus.md')
   assert.equal(
@@ -133,7 +137,11 @@ test('a species stub renders in html, markdown, and json', async () => {
     /The details for this species have not been published yet/,
   )
   assert.doesNotMatch(htmlBody, /Telling it apart/)
-  assert.doesNotMatch(htmlBody, /<script/i)
+  assert.match(
+    htmlBody,
+    /<script type="module" defer src="\/app\.js\?v=[0-9a-f]+"><\/script>/,
+  )
+  assert.doesNotMatch(htmlBody, /<script(?! type="module")/i)
   const markdown = await site.fetch('/species/struthio-camelus.md')
   assert.equal(
     markdown.headers.get('content-type'),
@@ -168,7 +176,11 @@ test('a new family stub and the full families index render in every format', asy
   assert.match(htmlBody, /Includes 9 of 9 species/)
   assert.doesNotMatch(htmlBody, /This total is incomplete/)
   assert.doesNotMatch(htmlBody, /No species from this family are listed/)
-  assert.doesNotMatch(htmlBody, /<script/i)
+  assert.match(
+    htmlBody,
+    /<script type="module" defer src="\/app\.js\?v=[0-9a-f]+"><\/script>/,
+  )
+  assert.doesNotMatch(htmlBody, /<script(?! type="module")/i)
 
   const markdown = await site.fetch('/family/alcedinidae.md')
   assert.equal(
@@ -298,7 +310,11 @@ test('credits is served in html, markdown, and json from index/credits', async (
   assert.match(body, /keep their own licences/)
   assert.match(body, /Lilac-breasted Roller/)
   assert.doesNotMatch(body, /No photos or recordings have been added so far/)
-  assert.doesNotMatch(body, /<script/i)
+  assert.match(
+    body,
+    /<script type="module" defer src="\/app\.js\?v=[0-9a-f]+"><\/script>/,
+  )
+  assert.doesNotMatch(body, /<script(?! type="module")/i)
   assert.match(html.headers.get('link') || '', /\/credits\.md/)
   const markdown = await site.fetch('/credits.md')
   assert.equal(

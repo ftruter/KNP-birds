@@ -26,6 +26,7 @@ import {
 } from './markdown.js'
 import { objectExists, objectHttpResponse } from './objects.js'
 import { jsonBody, pageResponse, redirectResponse } from './respond.js'
+import { clientJs } from './client.js'
 import { css } from './style.js'
 import { discoveryDocuments } from './ard.js'
 import { loadListCatalog, rowsForSpeciesIndex } from './catalog.js'
@@ -59,6 +60,13 @@ export const renderRoute = async (request, env, route) => {
       )
     case 'style':
       return textResponse(css, 'text/css; charset=utf-8', ASSET_CACHE, 'style')
+    case 'script':
+      return textResponse(
+        clientJs,
+        'text/javascript; charset=utf-8',
+        ASSET_CACHE,
+        'script',
+      )
     case 'sitemap':
       return renderSitemap(env, origin)
     case 'ard':

@@ -26,7 +26,7 @@ This file is the agent guide for ${origin}. It is not the home page. The home pa
 
 ${agentNote(origin)}
 
-> An open field guide to the birds of Kruger National Park and neighbouring Marloth Park, South Africa. Written for people and for AI agents. Every page is server-rendered. There is no client-side JavaScript.
+> An open field guide to the birds of Kruger National Park and neighbouring Marloth Park, South Africa. Written for people and for AI agents. Every page is server-rendered. JavaScript is optional: the pages, sort links, and photographs work with it off.
 
 The list is resident species, plus summer migrants. Rare vagrants are left out. Documents with \`sampleData: true\` are sample content and still need checking. ${HOME_POPULATION_INTRO}
 

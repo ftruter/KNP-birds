@@ -45,6 +45,7 @@ test('format and KV key selection', () => {
     ['/sitemap.xml', 'sitemap', 'html', '/sitemap.xml'],
     ['/llms.txt', 'llms', 'html', '/llms.txt'],
     ['/style.css', 'style', 'html', '/style.css'],
+    ['/app.js', 'script', 'html', '/app.js'],
     ['/.well-known/ard.json', 'ard', 'json', '/.well-known/ard.json'],
     [
       '/.well-known/ai-catalog.json',

@@ -60,7 +60,7 @@ test('pages, files, and errors share the discovery Link header', async () => {
     assert.equal(response.headers.get('link'), expected, pathname)
     assert.match(
       response.headers.get('content-security-policy'),
-      /script-src 'none'/,
+      /script-src 'self'/,
       pathname,
     )
   }
@@ -69,6 +69,7 @@ test('pages, files, and errors share the discovery Link header', async () => {
     '/robots.txt',
     '/sitemap.xml',
     '/style.css',
+    '/app.js',
     '/.well-known/ard.json',
     '/mcp/server-card',
   ]) {
