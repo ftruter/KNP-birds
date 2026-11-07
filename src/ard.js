@@ -41,16 +41,17 @@ const facts = (speciesIndex, familiesIndex) => {
   }
 }
 
-const homeDescription = (speciesIndex, familiesIndex, guide) => {
+const homeDescription = (origin, speciesIndex, familiesIndex, guide) => {
   const sentence = catalogSentence(
     guide.speciesCount,
     guide.familyCount,
     speciesIndex,
     familiesIndex,
   )
+  const agentGuide = `The agent guide at ${origin}/llms.txt explains how to fetch HTML, Markdown and JSON, and how field marks, calls and licences are stored.`
   if (!guide.listed)
-    return `Home JSON for the Kruger National Park field guide. ${sentence} ${HOME_POPULATION_INTRO}`
-  return `Home JSON for the Kruger National Park field guide. ${sentence} ${guide.afrikaans} ${plural(guide.afrikaans, 'species has', 'species have')} an Afrikaans name. ${guide.populations} ${plural(guide.populations, 'species has', 'species have')} a mature-individual population midpoint. ${HOME_POPULATION_INTRO}`
+    return `Home JSON for the Kruger National Park field guide. ${sentence} ${HOME_POPULATION_INTRO} ${agentGuide}`
+  return `Home JSON for the Kruger National Park field guide. ${sentence} ${guide.afrikaans} ${plural(guide.afrikaans, 'species has', 'species have')} an Afrikaans name. ${guide.populations} ${plural(guide.populations, 'species has', 'species have')} a mature-individual population midpoint. ${HOME_POPULATION_INTRO} ${agentGuide}`
 }
 
 const homeQueries = (guide) => {
@@ -114,7 +115,7 @@ export const discoveryDocuments = ({
       displayName: 'Kruger bird list',
       type: 'application/json',
       url: `${origin}/.json`,
-      description: homeDescription(speciesIndex, familiesIndex, guide),
+      description: homeDescription(origin, speciesIndex, familiesIndex, guide),
       capabilities: [
         'SpeciesIndex',
         'FamilyIndex',
@@ -123,22 +124,6 @@ export const discoveryDocuments = ({
       ],
       representativeQueries: homeQueries(guide),
       tags: ['kruger', 'birds', 'species', 'families'],
-    }),
-    entry({
-      identifier: 'guide:llms',
-      displayName: 'Agent guide to KNP Birds',
-      type: 'text/plain',
-      url: `${origin}/llms.txt`,
-      description:
-        'How to fetch HTML, Markdown and JSON, and how field marks, calls, populations and media licences are stored. Null means a mark was not recorded.',
-      capabilities: ['AgentGuide', 'FieldMarks', 'Calls', 'MediaLicences'],
-      representativeQueries: [
-        'How do I fetch a Kruger species page as Markdown or JSON?',
-        'How are age, season and sex plumage marks compared?',
-        'What does a null colour on a field mark mean?',
-        'Where are photograph and recording licences described?',
-      ],
-      tags: ['kruger', 'birds', 'agents', 'markdown'],
     }),
   ]
   if (credits && typeof credits === 'object') {
