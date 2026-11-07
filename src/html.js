@@ -77,8 +77,12 @@ ${agentHtml(origin)}
 </ol>
 </div>
 </div>
+<div class="lead-split">
 <p>Age, season and sex are worked out by comparing structured field marks. A mark left blank is unknown, not a claim that the part has no colour. Flight and perched views use notes and photographs. Where nothing differs, the page says so.</p>
+<aside class="lead-note">
 <p>${escapeHtml(HOME_POPULATION_INTRO)}</p>
+</aside>
+</div>
 <h2>Families</h2>
 ${familyTableHtml({
   rows: rowsForFamilies(familiesIndex, catalog),

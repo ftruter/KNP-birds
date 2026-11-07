@@ -221,7 +221,7 @@ main {
   padding-block: 0.35rem 2.75rem;
 }
 
-main .wrap > p { max-inline-size: 70ch; }
+main .wrap > p { max-inline-size: 75ch; }
 
 h1, h2, h3, h4 {
   color: var(--heading);
@@ -312,7 +312,6 @@ code {
 
 .hero h1 { margin-block-start: 0; }
 .hero h2 { margin-block-start: 0; }
-.hero-copy p { max-inline-size: 62ch; }
 
 @container wrap (min-width: 58rem) {
   .hero {
@@ -411,15 +410,34 @@ code {
   align-items: start;
 }
 
-.species-main > p,
-.split-copy > p { max-inline-size: 68ch; }
+.lead-split {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 1rem 2.5rem;
+  align-items: start;
+  margin-block: 0.15rem 0.35rem;
+}
+
+.lead-split > p { margin-block: 0; max-inline-size: none; }
+
+.lead-note {
+  margin: 0;
+  padding: 1rem 1.15rem;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-sm);
+}
+
+.lead-note p { margin: 0; }
 
 @container wrap (min-width: 52rem) {
-  .species-layout {
-    grid-template-columns: minmax(0, 1fr) minmax(17rem, 22.5rem);
-  }
+  .lead-split,
   .split {
-    grid-template-columns: minmax(0, 1.45fr) minmax(16rem, 24rem);
+    grid-template-columns: minmax(0, 75ch) minmax(18rem, 1fr);
+  }
+  .species-layout {
+    grid-template-columns: minmax(0, 1fr) minmax(18rem, 24rem);
   }
   .species-aside { position: sticky; inset-block-start: 1rem; }
 }
