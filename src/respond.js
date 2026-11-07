@@ -1,6 +1,6 @@
 import { NO_STORE } from './cache.js'
 import { escapeHtml } from './escape.js'
-import { ARD_LINK } from './head.js'
+import { ARD_LINK, agentNote } from './head.js'
 import { alternates } from './route.js'
 
 const SECURITY = {
@@ -73,7 +73,7 @@ export const redirectResponse = (location, cache) => {
   return new Response(null, { status: 301, headers })
 }
 
-export const methodNotAllowed = (format) => {
+export const methodNotAllowed = (format, origin) => {
   const headers = new Headers(SECURITY)
   headers.set('allow', 'GET, HEAD')
   headers.set('cache-control', NO_STORE)
@@ -88,10 +88,13 @@ export const methodNotAllowed = (format) => {
   }
   if (format === 'md') {
     headers.set('content-type', 'text/markdown; charset=utf-8')
-    return new Response('# Method not allowed\n\nUse GET.\n', {
-      status: 405,
-      headers,
-    })
+    return new Response(
+      `# Method not allowed\n\n${agentNote(origin)}\n\nUse GET.\n`,
+      {
+        status: 405,
+        headers,
+      },
+    )
   }
   headers.set('content-type', 'text/html; charset=utf-8')
   return new Response(
@@ -103,7 +106,7 @@ export const methodNotAllowed = (format) => {
   )
 }
 
-export const serverError = (format) => {
+export const serverError = (format, origin) => {
   const headers = new Headers(SECURITY)
   headers.set('cache-control', NO_STORE)
   headers.set('content-security-policy', PAGE_CSP)
@@ -118,7 +121,7 @@ export const serverError = (format) => {
   if (format === 'md') {
     headers.set('content-type', 'text/markdown; charset=utf-8')
     return new Response(
-      '# Something went wrong\n\nThis page could not be rendered.\n',
+      `# Something went wrong\n\n${agentNote(origin)}\n\nThis page could not be rendered.\n`,
       { status: 500, headers },
     )
   }

@@ -32,12 +32,14 @@ import {
   statusLabel,
   viewLabel,
 } from './guide.js'
+import { agentNote } from './head.js'
 import { alternates } from './route.js'
 
-export const renderHomeMarkdown = ({ speciesIndex, familiesIndex }) => {
+export const renderHomeMarkdown = ({ origin, speciesIndex, familiesIndex }) => {
   const species = indexRows(speciesIndex)
   const families = indexRows(familiesIndex)
   return pageMd({
+    origin,
     path: '/',
     title: 'Birds of Kruger National Park',
     sample: false,
@@ -76,7 +78,7 @@ ${linkLines(
   })
 }
 
-export const renderSpeciesIndexMarkdown = (doc) => {
+export const renderSpeciesIndexMarkdown = (doc, origin) => {
   const list = indexRows(doc)
   const lines = list
     .map(
@@ -85,6 +87,7 @@ export const renderSpeciesIndexMarkdown = (doc) => {
     )
     .join('\n')
   return pageMd({
+    origin,
     path: '/species',
     title: 'Species',
     sample: false,
@@ -94,7 +97,7 @@ export const renderSpeciesIndexMarkdown = (doc) => {
   })
 }
 
-export const renderFamiliesIndexMarkdown = (doc) => {
+export const renderFamiliesIndexMarkdown = (doc, origin) => {
   const list = indexRows(doc)
   const lines = list
     .map(
@@ -103,6 +106,7 @@ export const renderFamiliesIndexMarkdown = (doc) => {
     )
     .join('\n')
   return pageMd({
+    origin,
     path: '/families',
     title: 'Families',
     sample: false,
@@ -112,10 +116,11 @@ export const renderFamiliesIndexMarkdown = (doc) => {
   })
 }
 
-export const renderFamilyMarkdown = (doc, plates = []) => {
+export const renderFamilyMarkdown = (doc, plates = [], origin) => {
   const species = orderFamilySpecies(doc.species, doc.iconicSpecies)
   const af = afrikaansName(doc)
   return pageMd({
+    origin,
     path: `/family/${doc.slug}`,
     title: englishName(doc),
     sample: Boolean(doc.sampleData),
@@ -133,9 +138,10 @@ ${familySpeciesMarkdown(species)}`,
   })
 }
 
-export const renderVocabMarkdown = (doc) => {
+export const renderVocabMarkdown = (doc, origin) => {
   const colours = Array.isArray(doc.colours) ? doc.colours : []
   return pageMd({
+    origin,
     path: '/vocab/colours',
     title: 'Colours',
     sample: Boolean(doc.sampleData),
@@ -147,7 +153,7 @@ ${colours.map((colour) => `- ${colour.name} (${colour.hex})`).join('\n')}`,
   })
 }
 
-export const renderSpeciesMarkdown = ({ doc, colourMap }) => {
+export const renderSpeciesMarkdown = ({ doc, colourMap, origin }) => {
   const published = speciesDetailsPublished(doc)
   const comparisons = published ? diffSpecies(doc) : []
   const population = populationModel(doc.population)
@@ -188,6 +194,7 @@ ${population.baseline ? `${population.baseline}\n\n` : ''}${population.confidenc
 
 ${population.sources.length === 0 ? 'No sources cited yet.' : population.sources.map((source) => sourceLine(source)).join('\n')}`
   return pageMd({
+    origin,
     path: `/species/${doc.slug}`,
     title: englishName(doc),
     sample: Boolean(doc.sampleData),
@@ -195,8 +202,9 @@ ${population.sources.length === 0 ? 'No sources cited yet.' : population.sources
   })
 }
 
-export const renderNotFoundMarkdown = (path) =>
+export const renderNotFoundMarkdown = (path, origin) =>
   pageMd({
+    origin,
     path,
     title: 'Not found',
     sample: false,
@@ -495,13 +503,14 @@ ${inlineText(site.affiliation || '')}
 ${inlineText(site.media || '')}`
 }
 
-export const renderCreditsMarkdown = (doc) => {
+export const renderCreditsMarkdown = (doc, origin) => {
   const sources = listed(doc?.dataSources)
   const groups = listed(doc?.species)
   const note =
     doc?.mediaNote ||
     (groups.length ? '' : 'No photos or recordings have been added so far.')
   return pageMd({
+    origin,
     path: '/credits',
     title: 'Credits',
     sample: false,
@@ -525,10 +534,10 @@ ${mdSite(doc?.site)}`,
   })
 }
 
-const pageMd = ({ path, title, sample, body }) => {
+const pageMd = ({ path, title, sample, body, origin }) => {
   const alts = alternates(path)
   const banner = sample ? `> ${SAMPLE_NOTICE}\n\n` : ''
-  return `# ${inlineText(title)}\n\n${banner}${body.trim()}\n\n---\n\nAlso available as [HTML](${alts.html}) and [JSON](${alts.json}).\n`
+  return `# ${inlineText(title)}\n\n${agentNote(origin)}\n\n${banner}${body.trim()}\n\n---\n\nAlso available as [HTML](${alts.html}) and [JSON](${alts.json}).\n`
 }
 
 const entries = (doc) => (Array.isArray(doc?.entries) ? doc.entries : [])

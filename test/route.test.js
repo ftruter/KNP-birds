@@ -114,6 +114,21 @@ test('static files are not treated as markdown or json pages', () => {
   assert.equal(parsed('/mcp').kind, 'not-found')
 })
 
+test('llms.txt is not the home page, including case, slash, and query variants', () => {
+  assert.equal(parsed('/llms.txt').kind, 'llms')
+  assert.equal(parsed('/llms.txt').format, 'html')
+  const upper = parsed('/LLMS.TXT')
+  assert.equal(upper.kind, 'redirect')
+  assert.equal(upper.location, '/llms.txt')
+  assert.equal(parsed('/llms.txt/').kind, 'redirect')
+  assert.equal(parsed('/llms.txt/').location, '/llms.txt')
+  assert.equal(parsed('/LLMS.TXT/?x=1').location, '/llms.txt?x=1')
+  assert.equal(parsed('/llms.txt.md').kind, 'not-found')
+  assert.equal(parsed('/llms.txt.md').format, 'md')
+  assert.equal(parsed('/.md').kind, 'home')
+  assert.equal(parsed('/.md').format, 'md')
+})
+
 test('a trailing slash on the ARD manifest redirects to the canonical path', () => {
   const route = parsed('/.well-known/ard.json/')
   assert.equal(route.kind, 'redirect')

@@ -18,6 +18,19 @@ export const parseUrl = (url) => {
     )
   }
 
+  const llmsPath =
+    rawPath.length > 1 && rawPath.endsWith('/') ? rawPath.slice(0, -1) : rawPath
+  if (llmsPath.toLowerCase() === '/llms.txt') {
+    return rawPath === '/llms.txt'
+      ? route('llms', 'html', '/llms.txt')
+      : {
+          kind: 'redirect',
+          format: 'html',
+          pathname: '/llms.txt',
+          location: '/llms.txt' + url.search,
+        }
+  }
+
   if (rawPath.length > 1 && rawPath.endsWith('/')) {
     const pathname = rawPath.slice(0, -1) || '/'
     return {
