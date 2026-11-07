@@ -7,8 +7,65 @@
     "af": "Gebande Sperwer"
   },
   "family": "accipitridae",
-  "summary": "The details for this species have not been published yet.",
-  "sampleData": true,
+  "status": "resident",
+  "monthsPresent": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+  ],
+  "size": {
+    "lengthCm": {
+      "min": 30,
+      "max": 34
+    },
+    "note": "Newman's 30–34 cm (as Accipiter badius). Wikipedia 26–30 cm for some Asian taxa; African birds around Newman's range.; Females are larger than males."
+  },
+  "habitat": "Wide range of woodland types, even semi-arid regions; singly (Newman's).",
+  "summary": "Small Accipiter with rufous-banded underparts extending to the throat, grey upperparts, red eyes without a strong eye-ring, and slender yellow legs. Immature streaked/banded rufous below (Newman's). Formerly Accipiter badius; moved to Tachyspiza in recent taxonomy.",
+  "sampleData": false,
+  "similar": [
+    {
+      "slug": "tachyspiza-minulla",
+      "note": "Little Sparrowhawk is smaller with yellow eyes and white uppertail spots (Newman's)."
+    },
+    {
+      "slug": "micronisus-gabar",
+      "note": "Gabar has grey (unbanded) throat/breast and a white rump (Newman's)."
+    },
+    {
+      "slug": "aerospiza-tachiro",
+      "note": "African Goshawk is larger with coarser barring and different head pattern (field guides)."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Newman's Birds — Shikra species page",
+      "url": "https://newmansbirds.com/birds/shikra/",
+      "publisher": "Newman's Birds / Struik Nature (online edition)",
+      "year": null
+    },
+    {
+      "title": "The Atlas of Southern African Birds, Vol. 1 (spread 159)",
+      "url": "https://sabap2.birdmap.africa/docs/sabap1/159.pdf",
+      "publisher": "BirdLife South Africa / Avian Demography Unit",
+      "year": 1997
+    },
+    {
+      "title": "Wikipedia — Shikra",
+      "url": "https://en.wikipedia.org/wiki/Shikra",
+      "publisher": "Wikimedia Foundation",
+      "year": null
+    }
+  ],
   "population": {
     "estimate": {
       "low": 2048,
@@ -35,8 +92,210 @@
     },
     "tierApplied": "D"
   },
-  "variants": [],
-  "viewNotes": [],
-  "calls": [],
-  "images": []
+  "variants": [
+    {
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "marks": {
+        "bill": {
+          "colour": [
+            "yellow",
+            "black"
+          ],
+          "shape": "small sharp; yellow cere"
+        },
+        "eye": {
+          "iris": "red",
+          "ring": null
+        },
+        "legs": {
+          "colour": "yellow"
+        },
+        "head": {
+          "crown": "grey",
+          "face": "grey",
+          "throat": "rufous",
+          "pattern": "rufous-banded"
+        },
+        "upperparts": {
+          "back": "grey",
+          "rump": null
+        },
+        "underparts": {
+          "breast": "rufous",
+          "belly": "rufous",
+          "pattern": "rufous-banded"
+        },
+        "wings": {
+          "above": "grey",
+          "below": null
+        },
+        "tail": {
+          "colour": "grey",
+          "shape": "long; grey barred"
+        }
+      }
+    },
+    {
+      "age": "immature",
+      "sex": "any",
+      "season": "any",
+      "marks": {
+        "bill": {
+          "colour": null,
+          "shape": null
+        },
+        "eye": {
+          "iris": [
+            "yellow",
+            "orange"
+          ],
+          "ring": null
+        },
+        "legs": {
+          "colour": null
+        },
+        "head": {
+          "crown": null,
+          "face": null,
+          "throat": null
+        },
+        "upperparts": {
+          "back": "brown",
+          "rump": null
+        },
+        "underparts": {
+          "breast": "rufous",
+          "belly": null,
+          "pattern": "rufous streaks and bands; banded"
+        },
+        "wings": {
+          "above": null,
+          "below": null
+        },
+        "tail": {
+          "colour": null,
+          "shape": null
+        }
+      }
+    }
+  ],
+  "viewNotes": [
+    {
+      "view": "perched-side",
+      "note": "Side view shows the key field marks summarised for Shikra: see variants. (Newman's).",
+      "age": "adult",
+      "sex": "any",
+      "season": "any"
+    },
+    {
+      "view": "flight-below",
+      "note": "Short rounded wings, long tail; rufous-banded body from below (Newmans).",
+      "age": "adult",
+      "sex": "any",
+      "season": "any"
+    },
+    {
+      "view": "flight-above",
+      "note": "From above, the upperwing is grey (Newman's).",
+      "age": "adult",
+      "sex": "any",
+      "season": "any"
+    }
+  ],
+  "calls": [
+    {
+      "sex": "any",
+      "type": "call",
+      "description": "High 'ki-ki-ki' type Accipiter calls (Wikipedia); Newman's emphasises field marks.",
+      "recordings": [
+        {
+          "key": "xeno-canto/XC1095967",
+          "source": "https://xeno-canto.org/1095967",
+          "fileUrl": "https://xeno-canto.org/sounds/uploaded/FAMEEAPTYE/XC1095967-shikraflight701.mp3",
+          "author": "isaac kilusu",
+          "license": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "aiGenerated": false,
+          "hosted": false
+        },
+        {
+          "key": "xeno-canto/XC1095965",
+          "source": "https://xeno-canto.org/1095965",
+          "fileUrl": "https://xeno-canto.org/sounds/uploaded/FAMEEAPTYE/XC1095965-shikra-turkana637.mp3",
+          "author": "isaac kilusu",
+          "license": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "aiGenerated": false,
+          "hosted": false
+        },
+        {
+          "key": "xeno-canto/XC1076938",
+          "source": "https://xeno-canto.org/1076938",
+          "fileUrl": "https://xeno-canto.org/sounds/uploaded/UXLMRFIWLM/XC1076938-ShikraGirgaon29012026.wav",
+          "author": "Omkar Godbole",
+          "license": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ]
+    }
+  ],
+  "images": [
+    {
+      "key": "tachyspiza-badia/perched-side-1.jpg",
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "source": "https://www.inaturalist.org/observations/391829734",
+      "fileUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/718009575/large.jpg",
+      "author": "Johann Engelbrecht",
+      "license": "CC BY-NC 4.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+      "aiGenerated": false,
+      "hosted": false,
+      "alt": "Shikra — perched-side, adult. Kruger Park, South Africa",
+      "caption": "Shikra — perched-side, adult. Kruger Park, South Africa"
+    },
+    {
+      "key": "tachyspiza-badia/perched-side-3.jpg",
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "source": "https://www.inaturalist.org/observations/259181036",
+      "fileUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/465196547/large.jpg",
+      "author": "Ehren",
+      "license": "CC BY-NC 4.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+      "aiGenerated": false,
+      "hosted": false,
+      "alt": "Shikra — perched-side, adult. Kruger Park, Bushbuckridge, Mpumalanga, ZA",
+      "caption": "Shikra — perched-side, adult. Kruger Park, Bushbuckridge, Mpumalanga, ZA"
+    },
+    {
+      "key": "tachyspiza-badia/perched-side-5.jpg",
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "source": "https://www.inaturalist.org/observations/10215197",
+      "fileUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/14114136/large.jpeg",
+      "author": "copper",
+      "license": "CC BY-NC 4.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+      "aiGenerated": false,
+      "hosted": false,
+      "alt": "Shikra — perched-side, adult. Gomondwane rd, Kruger NP",
+      "caption": "Shikra — perched-side, adult. Gomondwane rd, Kruger NP"
+    }
+  ],
+  "research": {
+    "confidence": "medium",
+    "needsReview": false,
+    "note": "No seasonal plumage change is described in the sources consulted, except presence/absence of migrants. Gaps: No juvenile/immature image in selected set. No flight image in selected set. Photos left out: A repeated file was omitted."
+  }
 }

@@ -79,14 +79,124 @@
       "slug": "accipiter-ovampensis",
       "scientificName": "Accipiter ovampensis",
       "commonName": "Ovambo Sparrowhawk",
-      "images": [],
-      "recordings": [],
+      "images": [
+        {
+          "key": "accipiter-ovampensis/perched-side-adult-any.jpg",
+          "author": "Matthew Fainman",
+          "licence": "CC BY 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by/4.0/",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Accipiter_ovampensis_86899083.jpg",
+          "aiGenerated": false,
+          "hosted": false
+        },
+        {
+          "key": "accipiter-ovampensis/perched-front-adult-any.jpg",
+          "author": "Matthew Fainman",
+          "licence": "CC BY 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by/4.0/",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Accipiter_ovampensis_86899094.jpg",
+          "aiGenerated": false,
+          "hosted": false
+        },
+        {
+          "key": "accipiter-ovampensis/perched-side-adult-any-2.jpg",
+          "author": "Matthew Fainman",
+          "licence": "CC BY 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by/4.0/",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Accipiter_ovampensis_377641165.jpg",
+          "aiGenerated": false,
+          "hosted": false
+        },
+        {
+          "key": "accipiter-ovampensis/perched-side-adult-any-3.jpg",
+          "author": "i_c_riddell",
+          "licence": "CC BY 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by/4.0/",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Accipiter_ovampensis_878999.jpg",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ],
+      "recordings": [
+        {
+          "key": "xeno-canto/XC613465",
+          "author": "Tony Archer",
+          "licence": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "sourceUrl": "https://xeno-canto.org/613465",
+          "aiGenerated": false,
+          "hosted": false,
+          "callType": "call"
+        },
+        {
+          "key": "xeno-canto/XC686715",
+          "author": "Tony Archer",
+          "licence": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "sourceUrl": "https://xeno-canto.org/686715",
+          "aiGenerated": false,
+          "hosted": false,
+          "callType": "call"
+        },
+        {
+          "key": "xeno-canto/XC400368",
+          "author": "Tony",
+          "licence": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "sourceUrl": "https://xeno-canto.org/400368",
+          "aiGenerated": false,
+          "hosted": false,
+          "callType": "call"
+        }
+      ],
       "sources": [
         {
           "title": "Kemp A.C., Herholdt J.J., Whyte I. & Harrison J. (2001). Birds of the two largest national parks in South Africa: a method to generate estimates of population size for all species and assess their conservation ecology. S. Afr. J. Sci. 97: 393–403.",
           "url": "https://journals.co.za/doi/pdf/10.10520/EJC97367",
           "publisher": "South African Journal of Science",
           "year": 2001
+        },
+        {
+          "title": "Newman's Birds — Ovambo Sparrowhawk species page (text from Newman's Birds of Southern Africa)",
+          "url": "https://newmansbirds.com/birds/ovambo-sparrowhawk/",
+          "publisher": "Newman's Birds / Struik Nature (online edition)",
+          "year": null
+        },
+        {
+          "title": "The Atlas of Southern African Birds, Vol. 1 (spread 156)",
+          "url": "https://sabap2.birdmap.africa/docs/sabap1/156.pdf",
+          "publisher": "BirdLife South Africa / Avian Demography Unit",
+          "year": 1997
+        },
+        {
+          "title": "Biodiversity Explorer species text (summarised from Roberts Birds of Southern Africa VIIth ed., Hockey, Dean & Ryan 2005)",
+          "url": "https://www.biodiversityexplorer.info/birds/accipitridae/accipiter_ovampensis.htm",
+          "publisher": "Iziko Museums of South Africa",
+          "year": null
+        },
+        {
+          "title": "Wikipedia — Ovambo sparrowhawk",
+          "url": "https://en.wikipedia.org/wiki/Ovambo_sparrowhawk",
+          "publisher": "Wikimedia Foundation",
+          "year": 2026
+        },
+        {
+          "title": "GBIF occurrence month facets for Accipiter ovampensis, Kruger bounding box (lon 31.0–32.04, lat −25.53 to −22.33, country ZA)",
+          "url": "https://api.gbif.org/v1/occurrence/search",
+          "publisher": "GBIF.org",
+          "year": 2026
+        },
+        {
+          "title": "xeno-canto recordings (metadata via GBIF dataset b1047888-ae52-4179-9dd5-5448ea342a24)",
+          "url": "https://xeno-canto.org/",
+          "publisher": "xeno-canto.org / GBIF",
+          "year": 2026
+        },
+        {
+          "title": "Wikimedia Commons species category images",
+          "url": "https://commons.wikimedia.org/",
+          "publisher": "Wikimedia Commons",
+          "year": 2026
         }
       ]
     },
@@ -199,14 +309,124 @@
       "slug": "aerospiza-tachiro",
       "scientificName": "Aerospiza tachiro",
       "commonName": "African Goshawk",
-      "images": [],
-      "recordings": [],
+      "images": [
+        {
+          "key": "aerospiza-tachiro/perched-side-juvenile-any.jpg",
+          "author": "i_c_riddell",
+          "licence": "CC BY 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by/4.0/",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:African_Goshawk,_Newlands,_Harare,_Zimbabwe_imported_from_iNaturalist_photo_385910841.jpg",
+          "aiGenerated": false,
+          "hosted": false
+        },
+        {
+          "key": "aerospiza-tachiro/flight-side-adult-any.jpg",
+          "author": "Zieger M",
+          "licence": "CC BY-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:African_Goshawk_fl_114ND500_DSC3226-kl.jpg",
+          "aiGenerated": false,
+          "hosted": false
+        },
+        {
+          "key": "aerospiza-tachiro/perched-side-adult-any.jpg",
+          "author": "Wynand Uys",
+          "licence": "CC BY 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by/4.0/",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Accipiter_tachiro_tachiro_216740509.jpg",
+          "aiGenerated": false,
+          "hosted": false
+        },
+        {
+          "key": "aerospiza-tachiro/perched-side-adult-male.jpg",
+          "author": "Stuart Hind 123",
+          "licence": "CC BY-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:African_goshawk2.jpg",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ],
+      "recordings": [
+        {
+          "key": "xeno-canto/XC1137538",
+          "author": "African Bioacoustics Community",
+          "licence": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "sourceUrl": "https://xeno-canto.org/1137538",
+          "aiGenerated": false,
+          "hosted": false,
+          "callType": "call"
+        },
+        {
+          "key": "xeno-canto/XC1148697",
+          "author": "African Bioacoustics Community",
+          "licence": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "sourceUrl": "https://xeno-canto.org/1148697",
+          "aiGenerated": false,
+          "hosted": false,
+          "callType": "call"
+        },
+        {
+          "key": "xeno-canto/XC1148407",
+          "author": "African Bioacoustics Community",
+          "licence": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "sourceUrl": "https://xeno-canto.org/1148407",
+          "aiGenerated": false,
+          "hosted": false,
+          "callType": "call"
+        }
+      ],
       "sources": [
         {
           "title": "Kemp A.C., Herholdt J.J., Whyte I. & Harrison J. (2001). Birds of the two largest national parks in South Africa: a method to generate estimates of population size for all species and assess their conservation ecology. S. Afr. J. Sci. 97: 393–403.",
           "url": "https://journals.co.za/doi/pdf/10.10520/EJC97367",
           "publisher": "South African Journal of Science",
           "year": 2001
+        },
+        {
+          "title": "Newman's Birds — African Goshawk species page (text from Newman's Birds of Southern Africa)",
+          "url": "https://newmansbirds.com/birds/african-goshawk/",
+          "publisher": "Newman's Birds / Struik Nature (online edition)",
+          "year": null
+        },
+        {
+          "title": "The Atlas of Southern African Birds, Vol. 1 (spread 160)",
+          "url": "https://sabap2.birdmap.africa/docs/sabap1/160.pdf",
+          "publisher": "BirdLife South Africa / Avian Demography Unit",
+          "year": 1997
+        },
+        {
+          "title": "Biodiversity Explorer species text (summarised from Roberts Birds of Southern Africa VIIth ed., Hockey, Dean & Ryan 2005)",
+          "url": "https://www.biodiversityexplorer.info/birds/accipitridae/accipiter_tachiro.htm",
+          "publisher": "Iziko Museums of South Africa",
+          "year": null
+        },
+        {
+          "title": "Wikipedia — African goshawk",
+          "url": "https://en.wikipedia.org/wiki/African_goshawk",
+          "publisher": "Wikimedia Foundation",
+          "year": 2026
+        },
+        {
+          "title": "GBIF occurrence month facets for Accipiter tachiro, Kruger bounding box (lon 31.0–32.04, lat −25.53 to −22.33, country ZA)",
+          "url": "https://api.gbif.org/v1/occurrence/search",
+          "publisher": "GBIF.org",
+          "year": 2026
+        },
+        {
+          "title": "xeno-canto recordings (metadata via GBIF dataset b1047888-ae52-4179-9dd5-5448ea342a24)",
+          "url": "https://xeno-canto.org/",
+          "publisher": "xeno-canto.org / GBIF",
+          "year": 2026
+        },
+        {
+          "title": "Wikimedia Commons species category images",
+          "url": "https://commons.wikimedia.org/",
+          "publisher": "Wikimedia Commons",
+          "year": 2026
         }
       ]
     },
@@ -827,14 +1047,96 @@
       "slug": "aquila-nipalensis",
       "scientificName": "Aquila nipalensis",
       "commonName": "Steppe Eagle",
-      "images": [],
-      "recordings": [],
+      "images": [
+        {
+          "key": "aquila-nipalensis/perched-side-adult-any.jpg",
+          "author": "Bernard Dupont",
+          "licence": "CC BY-SA 2.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-sa/2.0/",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Steppe_Eagle_(Aquila_nipalensis_orientalis)_(32477787604).jpg",
+          "aiGenerated": false,
+          "hosted": false
+        },
+        {
+          "key": "aquila-nipalensis/perched-side-adult-any-3.jpg",
+          "author": "diego_cue",
+          "licence": "CC BY-SA 3.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Eagle_at_Chobe_National_Park_-_Botswana_-_panoramio.jpg",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ],
+      "recordings": [
+        {
+          "key": "xeno-canto/XC1174915",
+          "author": "Bo Shunqi 薄顺奇",
+          "licence": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "sourceUrl": "https://xeno-canto.org/1174915",
+          "aiGenerated": false,
+          "hosted": false,
+          "callType": "call"
+        },
+        {
+          "key": "xeno-canto/XC1174914",
+          "author": "Bo Shunqi 薄顺奇",
+          "licence": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "sourceUrl": "https://xeno-canto.org/1174914",
+          "aiGenerated": false,
+          "hosted": false,
+          "callType": "call"
+        }
+      ],
       "sources": [
         {
           "title": "Kemp A.C., Herholdt J.J., Whyte I. & Harrison J. (2001). Birds of the two largest national parks in South Africa: a method to generate estimates of population size for all species and assess their conservation ecology. S. Afr. J. Sci. 97: 393–403.",
           "url": "https://journals.co.za/doi/pdf/10.10520/EJC97367",
           "publisher": "South African Journal of Science",
           "year": 2001
+        },
+        {
+          "title": "Newman's Birds — Steppe Eagle species page (text from Newman's Birds of Southern Africa)",
+          "url": "https://newmansbirds.com/birds/steppe-eagle/",
+          "publisher": "Newman's Birds / Struik Nature (online edition)",
+          "year": null
+        },
+        {
+          "title": "The Atlas of Southern African Birds, Vol. 1 (spread 133)",
+          "url": "https://sabap2.birdmap.africa/docs/sabap1/133.pdf",
+          "publisher": "BirdLife South Africa / Avian Demography Unit",
+          "year": 1997
+        },
+        {
+          "title": "Biodiversity Explorer species text (summarised from Roberts Birds of Southern Africa VIIth ed., Hockey, Dean & Ryan 2005)",
+          "url": "https://www.biodiversityexplorer.info/birds/accipitridae/aquila_nipalensis.htm",
+          "publisher": "Iziko Museums of South Africa",
+          "year": null
+        },
+        {
+          "title": "Wikipedia — Steppe eagle",
+          "url": "https://en.wikipedia.org/wiki/Steppe_eagle",
+          "publisher": "Wikimedia Foundation",
+          "year": 2026
+        },
+        {
+          "title": "GBIF occurrence month facets for Aquila nipalensis, Kruger bounding box (lon 31.0–32.04, lat −25.53 to −22.33, country ZA)",
+          "url": "https://api.gbif.org/v1/occurrence/search",
+          "publisher": "GBIF.org",
+          "year": 2026
+        },
+        {
+          "title": "xeno-canto recordings (metadata via GBIF dataset b1047888-ae52-4179-9dd5-5448ea342a24)",
+          "url": "https://xeno-canto.org/",
+          "publisher": "xeno-canto.org / GBIF",
+          "year": 2026
+        },
+        {
+          "title": "Wikimedia Commons species category images",
+          "url": "https://commons.wikimedia.org/",
+          "publisher": "Wikimedia Commons",
+          "year": 2026
         }
       ]
     },
@@ -842,14 +1144,113 @@
       "slug": "aquila-rapax",
       "scientificName": "Aquila rapax",
       "commonName": "Tawny Eagle",
-      "images": [],
-      "recordings": [],
+      "images": [
+        {
+          "key": "aquila-rapax/perched-side-adult-any.jpg",
+          "author": "Bernard Dupont",
+          "licence": "CC BY-SA 2.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-sa/2.0/",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Tawny_Eagle_(Aquila_rapax)_(51838537386).jpg",
+          "aiGenerated": false,
+          "hosted": false
+        },
+        {
+          "key": "aquila-rapax/perched-side-adult-any-2.jpg",
+          "author": "Bernard Dupont",
+          "licence": "CC BY-SA 2.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-sa/2.0/",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Day_39_Tawny_Eagles_(Aquila_rapax)_(53291734663).jpg",
+          "aiGenerated": false,
+          "hosted": false
+        },
+        {
+          "key": "aquila-rapax/perched-front-adult-any.jpg",
+          "author": "Bernard Dupont",
+          "licence": "CC BY-SA 2.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-sa/2.0/",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Tawny_Eagle_(Aquila_rapax)_with_full_crop.jpg",
+          "aiGenerated": false,
+          "hosted": false
+        },
+        {
+          "key": "aquila-rapax/perched-side-adult-any-3.jpg",
+          "author": "Bernard Dupont",
+          "licence": "CC BY-SA 2.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-sa/2.0/",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Day_8_Tawny_Eagle_(Aquila_rapax)_(53219722576).jpg",
+          "aiGenerated": false,
+          "hosted": false
+        },
+        {
+          "key": "aquila-rapax/perched-side-adult-any-4.jpg",
+          "author": "Charles J. Sharp",
+          "licence": "CC BY-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Tawny_eagle_(Aquila_rapax)_Serengeti.jpg",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ],
+      "recordings": [
+        {
+          "key": "xeno-canto/XC459459",
+          "author": "Raphaël Nussbaumer",
+          "licence": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "sourceUrl": "https://xeno-canto.org/459459",
+          "aiGenerated": false,
+          "hosted": false,
+          "callType": "call"
+        }
+      ],
       "sources": [
         {
           "title": "Kemp A.C., Herholdt J.J., Whyte I. & Harrison J. (2001). Birds of the two largest national parks in South Africa: a method to generate estimates of population size for all species and assess their conservation ecology. S. Afr. J. Sci. 97: 393–403.",
           "url": "https://journals.co.za/doi/pdf/10.10520/EJC97367",
           "publisher": "South African Journal of Science",
           "year": 2001
+        },
+        {
+          "title": "Newman's Birds — Tawny Eagle species page (text from Newman's Birds of Southern Africa)",
+          "url": "https://newmansbirds.com/birds/tawny-eagle/",
+          "publisher": "Newman's Birds / Struik Nature (online edition)",
+          "year": null
+        },
+        {
+          "title": "The Atlas of Southern African Birds, Vol. 1 (spread 132)",
+          "url": "https://sabap2.birdmap.africa/docs/sabap1/132.pdf",
+          "publisher": "BirdLife South Africa / Avian Demography Unit",
+          "year": 1997
+        },
+        {
+          "title": "Biodiversity Explorer species text (summarised from Roberts Birds of Southern Africa VIIth ed., Hockey, Dean & Ryan 2005)",
+          "url": "https://www.biodiversityexplorer.info/birds/accipitridae/aquila_rapax.htm",
+          "publisher": "Iziko Museums of South Africa",
+          "year": null
+        },
+        {
+          "title": "Wikipedia — Tawny eagle",
+          "url": "https://en.wikipedia.org/wiki/Tawny_eagle",
+          "publisher": "Wikimedia Foundation",
+          "year": 2026
+        },
+        {
+          "title": "GBIF occurrence month facets for Aquila rapax, Kruger bounding box (lon 31.0–32.04, lat −25.53 to −22.33, country ZA)",
+          "url": "https://api.gbif.org/v1/occurrence/search",
+          "publisher": "GBIF.org",
+          "year": 2026
+        },
+        {
+          "title": "xeno-canto recordings (metadata via GBIF dataset b1047888-ae52-4179-9dd5-5448ea342a24)",
+          "url": "https://xeno-canto.org/",
+          "publisher": "xeno-canto.org / GBIF",
+          "year": 2026
+        },
+        {
+          "title": "Wikimedia Commons species category images",
+          "url": "https://commons.wikimedia.org/",
+          "publisher": "Wikimedia Commons",
+          "year": 2026
         }
       ]
     },
@@ -857,14 +1258,142 @@
       "slug": "aquila-spilogaster",
       "scientificName": "Aquila spilogaster",
       "commonName": "African Hawk Eagle",
-      "images": [],
-      "recordings": [],
+      "images": [
+        {
+          "key": "aquila-spilogaster/perched-side-adult-any.jpg",
+          "author": "Bernard Dupont",
+          "licence": "CC BY-SA 2.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-sa/2.0/",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:African_Hawk-eagle_(Aquila_spilogaster)_(17343495465).jpg",
+          "aiGenerated": false,
+          "hosted": false
+        },
+        {
+          "key": "aquila-spilogaster/perched-side-adult-any-2.jpg",
+          "author": "Bernard Dupont",
+          "licence": "CC BY-SA 2.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-sa/2.0/",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Day_15_African_Hawk-Eagle_(Aquila_spilogaster)_(53235171227).jpg",
+          "aiGenerated": false,
+          "hosted": false
+        },
+        {
+          "key": "aquila-spilogaster/perched-side-immature-any.jpg",
+          "author": "Bernard Dupont",
+          "licence": "CC BY-SA 2.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-sa/2.0/",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:African_Hawk_Eagle_(Aquila_spilogaster)_immature_(17213088987).jpg",
+          "aiGenerated": false,
+          "hosted": false
+        },
+        {
+          "key": "aquila-spilogaster/perched-side-immature-any-2.jpg",
+          "author": "Bernard Dupont",
+          "licence": "CC BY-SA 2.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-sa/2.0/",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Day_51_African_Hawk-Eagle_(Aquila_spilogaster)_immature_..._(53320134398).jpg",
+          "aiGenerated": false,
+          "hosted": false
+        },
+        {
+          "key": "aquila-spilogaster/perched-side-adult-any-3.jpg",
+          "author": "Charles J. Sharp",
+          "licence": "CC BY-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:African_hawk-eagle_(Aquila_spilogaster).jpg",
+          "aiGenerated": false,
+          "hosted": false
+        },
+        {
+          "key": "aquila-spilogaster/perched-side-adult-any-4.jpg",
+          "author": "Charles J. Sharp",
+          "licence": "CC BY-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:African_hawk_eagles_(Aquila_spilogaster)_2.jpg",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ],
+      "recordings": [
+        {
+          "key": "xeno-canto/XC194777",
+          "author": "Thibaut Chansac",
+          "licence": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "sourceUrl": "https://xeno-canto.org/194777",
+          "aiGenerated": false,
+          "hosted": false,
+          "callType": "call"
+        },
+        {
+          "key": "xeno-canto/XC194771",
+          "author": "Thibaut Chansac",
+          "licence": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "sourceUrl": "https://xeno-canto.org/194771",
+          "aiGenerated": false,
+          "hosted": false,
+          "callType": "call"
+        },
+        {
+          "key": "xeno-canto/XC267752",
+          "author": "Andrew Spencer",
+          "licence": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "sourceUrl": "https://xeno-canto.org/267752",
+          "aiGenerated": false,
+          "hosted": false,
+          "callType": "call"
+        }
+      ],
       "sources": [
         {
           "title": "Kemp A.C., Herholdt J.J., Whyte I. & Harrison J. (2001). Birds of the two largest national parks in South Africa: a method to generate estimates of population size for all species and assess their conservation ecology. S. Afr. J. Sci. 97: 393–403.",
           "url": "https://journals.co.za/doi/pdf/10.10520/EJC97367",
           "publisher": "South African Journal of Science",
           "year": 2001
+        },
+        {
+          "title": "Newman's Birds — African Hawk Eagle species page (text from Newman's Birds of Southern Africa)",
+          "url": "https://newmansbirds.com/birds/african-hawk-eagle/",
+          "publisher": "Newman's Birds / Struik Nature (online edition)",
+          "year": null
+        },
+        {
+          "title": "The Atlas of Southern African Birds, Vol. 1 (spread 137)",
+          "url": "https://sabap2.birdmap.africa/docs/sabap1/137.pdf",
+          "publisher": "BirdLife South Africa / Avian Demography Unit",
+          "year": 1997
+        },
+        {
+          "title": "Biodiversity Explorer species text (summarised from Roberts Birds of Southern Africa VIIth ed., Hockey, Dean & Ryan 2005)",
+          "url": "https://www.biodiversityexplorer.info/birds/accipitridae/aquila_spilogaster.htm",
+          "publisher": "Iziko Museums of South Africa",
+          "year": null
+        },
+        {
+          "title": "Wikipedia — African hawk-eagle",
+          "url": "https://en.wikipedia.org/wiki/African_hawk-eagle",
+          "publisher": "Wikimedia Foundation",
+          "year": 2026
+        },
+        {
+          "title": "GBIF occurrence month facets for Hieraaetus spilogaster, Kruger bounding box (lon 31.0–32.04, lat −25.53 to −22.33, country ZA)",
+          "url": "https://api.gbif.org/v1/occurrence/search",
+          "publisher": "GBIF.org",
+          "year": 2026
+        },
+        {
+          "title": "xeno-canto recordings (metadata via GBIF dataset b1047888-ae52-4179-9dd5-5448ea342a24)",
+          "url": "https://xeno-canto.org/",
+          "publisher": "xeno-canto.org / GBIF",
+          "year": 2026
+        },
+        {
+          "title": "Wikimedia Commons species category images",
+          "url": "https://commons.wikimedia.org/",
+          "publisher": "Wikimedia Commons",
+          "year": 2026
         }
       ]
     },
@@ -872,14 +1401,106 @@
       "slug": "aquila-verreauxii",
       "scientificName": "Aquila verreauxii",
       "commonName": "Verreaux’s Eagle",
-      "images": [],
-      "recordings": [],
+      "images": [
+        {
+          "key": "aquila-verreauxii/perched-side-adult-any.jpg",
+          "author": "Derek Keats",
+          "licence": "CC BY 2.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by/2.0/",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Verreaux%27s_Eagle_(Black_Eagle),_Aquila_verreauxii,_at_Walter_Sisulu_National_Botanical_Garden,_Gauteng,_South_Africa_(28822882654).jpg",
+          "aiGenerated": false,
+          "hosted": false
+        },
+        {
+          "key": "aquila-verreauxii/perched-side-adult-female.jpg",
+          "author": "Derek Keats",
+          "licence": "CC BY 2.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by/2.0/",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Black_eagle_yesterday_at_Walter_SIsulu_National_Botanical_Garden_(36173878660).jpg",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ],
+      "recordings": [
+        {
+          "key": "xeno-canto/XC519736",
+          "author": "Alan Collett",
+          "licence": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "sourceUrl": "https://xeno-canto.org/519736",
+          "aiGenerated": false,
+          "hosted": false,
+          "callType": "call"
+        },
+        {
+          "key": "xeno-canto/XC428788",
+          "author": "Alan Collett",
+          "licence": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "sourceUrl": "https://xeno-canto.org/428788",
+          "aiGenerated": false,
+          "hosted": false,
+          "callType": "call"
+        },
+        {
+          "key": "xeno-canto/XC192183",
+          "author": "Alan Collett",
+          "licence": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "sourceUrl": "https://xeno-canto.org/192183",
+          "aiGenerated": false,
+          "hosted": false,
+          "callType": "call"
+        }
+      ],
       "sources": [
         {
           "title": "Kemp A.C., Herholdt J.J., Whyte I. & Harrison J. (2001). Birds of the two largest national parks in South Africa: a method to generate estimates of population size for all species and assess their conservation ecology. S. Afr. J. Sci. 97: 393–403.",
           "url": "https://journals.co.za/doi/pdf/10.10520/EJC97367",
           "publisher": "South African Journal of Science",
           "year": 2001
+        },
+        {
+          "title": "Newman's Birds — Verreauxs Eagle species page (text from Newman's Birds of Southern Africa)",
+          "url": "https://newmansbirds.com/birds/verreauxs-eagle/",
+          "publisher": "Newman's Birds / Struik Nature (online edition)",
+          "year": null
+        },
+        {
+          "title": "The Atlas of Southern African Birds, Vol. 1 (spread 131)",
+          "url": "https://sabap2.birdmap.africa/docs/sabap1/131.pdf",
+          "publisher": "BirdLife South Africa / Avian Demography Unit",
+          "year": 1997
+        },
+        {
+          "title": "Biodiversity Explorer species text (summarised from Roberts Birds of Southern Africa VIIth ed., Hockey, Dean & Ryan 2005)",
+          "url": "https://www.biodiversityexplorer.info/birds/accipitridae/aquila_verreauxii.htm",
+          "publisher": "Iziko Museums of South Africa",
+          "year": null
+        },
+        {
+          "title": "Wikipedia — Verreaux%27s eagle",
+          "url": "https://en.wikipedia.org/wiki/Verreaux%27s_eagle",
+          "publisher": "Wikimedia Foundation",
+          "year": 2026
+        },
+        {
+          "title": "GBIF occurrence month facets for Aquila verreauxii, Kruger bounding box (lon 31.0–32.04, lat −25.53 to −22.33, country ZA)",
+          "url": "https://api.gbif.org/v1/occurrence/search",
+          "publisher": "GBIF.org",
+          "year": 2026
+        },
+        {
+          "title": "xeno-canto recordings (metadata via GBIF dataset b1047888-ae52-4179-9dd5-5448ea342a24)",
+          "url": "https://xeno-canto.org/",
+          "publisher": "xeno-canto.org / GBIF",
+          "year": 2026
+        },
+        {
+          "title": "Wikimedia Commons species category images",
+          "url": "https://commons.wikimedia.org/",
+          "publisher": "Wikimedia Commons",
+          "year": 2026
         }
       ]
     },
@@ -1007,14 +1628,124 @@
       "slug": "astur-melanoleucus",
       "scientificName": "Astur melanoleucus",
       "commonName": "Black Sparrowhawk",
-      "images": [],
-      "recordings": [],
+      "images": [
+        {
+          "key": "astur-melanoleucus/perched-side-adult-any.jpg",
+          "author": "Bernard Dupont",
+          "licence": "CC BY-SA 2.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-sa/2.0/",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Black_Sparrowhawk_(Accipiter_melanoleucus)_melanistic_form_(30688362345).jpg",
+          "aiGenerated": false,
+          "hosted": false
+        },
+        {
+          "key": "astur-melanoleucus/perched-side-immature-any.jpg",
+          "author": "Donald Hobern from Copenhagen, Denmark",
+          "licence": "CC BY 2.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by/2.0/",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Accipiter_melanoleucus_(8458758156).jpg",
+          "aiGenerated": false,
+          "hosted": false
+        },
+        {
+          "key": "astur-melanoleucus/flight-side-adult-any.jpg",
+          "author": "Oggmus",
+          "licence": "CC BY-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Black_Sparrowhawk_in_flight_x.jpg",
+          "aiGenerated": false,
+          "hosted": false
+        },
+        {
+          "key": "astur-melanoleucus/perched-side-juvenile-any.jpg",
+          "author": "Oggmus",
+          "licence": "CC BY-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Black_Sparrowhawk_juvenile_x.jpg",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ],
+      "recordings": [
+        {
+          "key": "xeno-canto/XC950482",
+          "author": "Nick Talbot",
+          "licence": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "sourceUrl": "https://xeno-canto.org/950482",
+          "aiGenerated": false,
+          "hosted": false,
+          "callType": "call"
+        },
+        {
+          "key": "xeno-canto/XC695163",
+          "author": "Tony Archer",
+          "licence": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "sourceUrl": "https://xeno-canto.org/695163",
+          "aiGenerated": false,
+          "hosted": false,
+          "callType": "call"
+        },
+        {
+          "key": "xeno-canto/XC1184194",
+          "author": "Paul Lynch",
+          "licence": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "sourceUrl": "https://xeno-canto.org/1184194",
+          "aiGenerated": false,
+          "hosted": false,
+          "callType": "call"
+        }
+      ],
       "sources": [
         {
           "title": "Kemp A.C., Herholdt J.J., Whyte I. & Harrison J. (2001). Birds of the two largest national parks in South Africa: a method to generate estimates of population size for all species and assess their conservation ecology. S. Afr. J. Sci. 97: 393–403.",
           "url": "https://journals.co.za/doi/pdf/10.10520/EJC97367",
           "publisher": "South African Journal of Science",
           "year": 2001
+        },
+        {
+          "title": "Newman's Birds — Black Sparrowhawk species page (text from Newman's Birds of Southern Africa)",
+          "url": "https://newmansbirds.com/birds/black-sparrowhawk/",
+          "publisher": "Newman's Birds / Struik Nature (online edition)",
+          "year": null
+        },
+        {
+          "title": "The Atlas of Southern African Birds, Vol. 1 (spread 158)",
+          "url": "https://sabap2.birdmap.africa/docs/sabap1/158.pdf",
+          "publisher": "BirdLife South Africa / Avian Demography Unit",
+          "year": 1997
+        },
+        {
+          "title": "Biodiversity Explorer species text (summarised from Roberts Birds of Southern Africa VIIth ed., Hockey, Dean & Ryan 2005)",
+          "url": "https://www.biodiversityexplorer.info/birds/accipitridae/accipiter_melanoleucus.htm",
+          "publisher": "Iziko Museums of South Africa",
+          "year": null
+        },
+        {
+          "title": "Wikipedia — Black sparrowhawk",
+          "url": "https://en.wikipedia.org/wiki/Black_sparrowhawk",
+          "publisher": "Wikimedia Foundation",
+          "year": 2026
+        },
+        {
+          "title": "GBIF occurrence month facets for Accipiter melanoleucus, Kruger bounding box (lon 31.0–32.04, lat −25.53 to −22.33, country ZA)",
+          "url": "https://api.gbif.org/v1/occurrence/search",
+          "publisher": "GBIF.org",
+          "year": 2026
+        },
+        {
+          "title": "xeno-canto recordings (metadata via GBIF dataset b1047888-ae52-4179-9dd5-5448ea342a24)",
+          "url": "https://xeno-canto.org/",
+          "publisher": "xeno-canto.org / GBIF",
+          "year": 2026
+        },
+        {
+          "title": "Wikimedia Commons species category images",
+          "url": "https://commons.wikimedia.org/",
+          "publisher": "Wikimedia Commons",
+          "year": 2026
         }
       ]
     },
@@ -1022,14 +1753,104 @@
       "slug": "aviceda-cuculoides",
       "scientificName": "Aviceda cuculoides",
       "commonName": "African Cuckoo Hawk",
-      "images": [],
-      "recordings": [],
+      "images": [
+        {
+          "key": "aviceda-cuculoides/perched-side-adult-any.jpg",
+          "author": "Charles J. Sharp",
+          "licence": "CC BY-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:African_cuckoo-hawk_(Aviceda_cuculoides)_Lake_Sibaya.jpg",
+          "aiGenerated": false,
+          "hosted": false
+        },
+        {
+          "key": "aviceda-cuculoides/perched-side-adult-any-2.jpg",
+          "author": "Matthew Fainman",
+          "licence": "CC BY 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by/4.0/",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Aviceda_cuculoides_verreauxii_149350286.jpg",
+          "aiGenerated": false,
+          "hosted": false
+        },
+        {
+          "key": "aviceda-cuculoides/flight-side-adult-any.jpg",
+          "author": "Neil Crawford from Sweden",
+          "licence": "CC BY 2.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by/2.0/",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:African_Cuckoo-Hawk_(Aviceda_cuculoides)_in_flight.jpg",
+          "aiGenerated": false,
+          "hosted": false
+        },
+        {
+          "key": "aviceda-cuculoides/perched-front-adult-any.jpg",
+          "author": "Andrew Deacon",
+          "licence": "CC0 1.0",
+          "licenceUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Aviceda_cuculoides_verreauxii_60968516.jpg",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ],
+      "recordings": [
+        {
+          "key": "xeno-canto/XC449481",
+          "author": "Murray Christian",
+          "licence": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "sourceUrl": "https://xeno-canto.org/449481",
+          "aiGenerated": false,
+          "hosted": false,
+          "callType": "call"
+        }
+      ],
       "sources": [
         {
           "title": "Kemp A.C., Herholdt J.J., Whyte I. & Harrison J. (2001). Birds of the two largest national parks in South Africa: a method to generate estimates of population size for all species and assess their conservation ecology. S. Afr. J. Sci. 97: 393–403.",
           "url": "https://journals.co.za/doi/pdf/10.10520/EJC97367",
           "publisher": "South African Journal of Science",
           "year": 2001
+        },
+        {
+          "title": "Newman's Birds — African Cuckoo Hawk species page (text from Newman's Birds of Southern Africa)",
+          "url": "https://newmansbirds.com/birds/african-cuckoo-hawk/",
+          "publisher": "Newman's Birds / Struik Nature (online edition)",
+          "year": null
+        },
+        {
+          "title": "The Atlas of Southern African Birds, Vol. 1 (spread 128)",
+          "url": "https://sabap2.birdmap.africa/docs/sabap1/128.pdf",
+          "publisher": "BirdLife South Africa / Avian Demography Unit",
+          "year": 1997
+        },
+        {
+          "title": "Biodiversity Explorer species text (summarised from Roberts Birds of Southern Africa VIIth ed., Hockey, Dean & Ryan 2005)",
+          "url": "https://www.biodiversityexplorer.info/birds/accipitridae/aviceda_cuculoides.htm",
+          "publisher": "Iziko Museums of South Africa",
+          "year": null
+        },
+        {
+          "title": "Wikipedia — African cuckoo-hawk",
+          "url": "https://en.wikipedia.org/wiki/African_cuckoo-hawk",
+          "publisher": "Wikimedia Foundation",
+          "year": 2026
+        },
+        {
+          "title": "GBIF occurrence month facets for Aviceda cuculoides, Kruger bounding box (lon 31.0–32.04, lat −25.53 to −22.33, country ZA)",
+          "url": "https://api.gbif.org/v1/occurrence/search",
+          "publisher": "GBIF.org",
+          "year": 2026
+        },
+        {
+          "title": "xeno-canto recordings (metadata via GBIF dataset b1047888-ae52-4179-9dd5-5448ea342a24)",
+          "url": "https://xeno-canto.org/",
+          "publisher": "xeno-canto.org / GBIF",
+          "year": 2026
+        },
+        {
+          "title": "Wikimedia Commons species category images",
+          "url": "https://commons.wikimedia.org/",
+          "publisher": "Wikimedia Commons",
+          "year": 2026
         }
       ]
     },
@@ -1265,17 +2086,336 @@
       ]
     },
     {
+      "slug": "buteo-buteo",
+      "scientificName": "Buteo buteo",
+      "commonName": "Common (Steppe) Buzzard",
+      "images": [
+        {
+          "key": "buteo-buteo/perched-side-adult-any.jpg",
+          "author": "Bernard Dupont",
+          "licence": "CC BY-SA 2.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-sa/2.0/",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Day_85_Steppe_Buzzard_(Buteo_buteo_vulpinus)_(53399433721).jpg",
+          "aiGenerated": false,
+          "hosted": false
+        },
+        {
+          "key": "buteo-buteo/perched-side-adult-any-2.jpg",
+          "author": "Bernard Dupont",
+          "licence": "CC BY-SA 2.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-sa/2.0/",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Day_85_Steppe_Buzzard_(Buteo_buteo_vulpinus)_(53860530815).jpg",
+          "aiGenerated": false,
+          "hosted": false
+        },
+        {
+          "key": "buteo-buteo/perched-side-adult-any-3.jpg",
+          "author": "Mike's Birds from Riverside, CA, US",
+          "licence": "CC BY-SA 2.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-sa/2.0/",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Buteo_buteo_vulpinus,_Kruger_NP_(6608140453).jpg",
+          "aiGenerated": false,
+          "hosted": false
+        },
+        {
+          "key": "buteo-buteo/perched-side-adult-any-4.jpg",
+          "author": "Bernard Dupont",
+          "licence": "CC BY-SA 2.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-sa/2.0/",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Steppe_Buzzard_(Buteo_vulpinus)_(6035921650).jpg",
+          "aiGenerated": false,
+          "hosted": false
+        },
+        {
+          "key": "buteo-buteo/flight-side-adult-any.jpg",
+          "author": "Alan Manson",
+          "licence": "CC BY-SA 2.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-sa/2.0/",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Buteo_buteo_-near_Greytown,_KwaZulu-Natal,_South_Africa_-flying-8_(1).jpg",
+          "aiGenerated": false,
+          "hosted": false
+        },
+        {
+          "key": "buteo-buteo/perched-side-adult-any-5.jpg",
+          "author": "מינוזיג",
+          "licence": "CC BY-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Common_buzzard_(Buteo_buteo_vulpinus)_2.jpg",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ],
+      "recordings": [
+        {
+          "key": "xeno-canto/XC1039689",
+          "author": "African Bioacoustics Community",
+          "licence": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "sourceUrl": "https://xeno-canto.org/1039689",
+          "aiGenerated": false,
+          "hosted": false,
+          "callType": "call"
+        },
+        {
+          "key": "xeno-canto/XC526851",
+          "author": "Stanislav Novotny",
+          "licence": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "sourceUrl": "https://xeno-canto.org/526851",
+          "aiGenerated": false,
+          "hosted": false,
+          "callType": "call"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Newman's Birds — Common Buzzard species page (text from Newman's Birds of Southern Africa)",
+          "url": "https://newmansbirds.com/birds/common-buzzard/",
+          "publisher": "Newman's Birds / Struik Nature (online edition)",
+          "year": null
+        },
+        {
+          "title": "The Atlas of Southern African Birds, Vol. 1 (spread 149)",
+          "url": "https://sabap2.birdmap.africa/docs/sabap1/149.pdf",
+          "publisher": "BirdLife South Africa / Avian Demography Unit",
+          "year": 1997
+        },
+        {
+          "title": "Wikipedia — Common buzzard",
+          "url": "https://en.wikipedia.org/wiki/Common_buzzard",
+          "publisher": "Wikimedia Foundation",
+          "year": 2026
+        },
+        {
+          "title": "Wikipedia — Steppe buzzard",
+          "url": "https://en.wikipedia.org/wiki/Steppe_buzzard",
+          "publisher": "Wikimedia Foundation",
+          "year": 2026
+        },
+        {
+          "title": "GBIF occurrence month facets for Buteo buteo, Kruger bounding box (lon 31.0–32.04, lat −25.53 to −22.33, country ZA)",
+          "url": "https://api.gbif.org/v1/occurrence/search",
+          "publisher": "GBIF.org",
+          "year": 2026
+        },
+        {
+          "title": "xeno-canto recordings (metadata via GBIF dataset b1047888-ae52-4179-9dd5-5448ea342a24)",
+          "url": "https://xeno-canto.org/",
+          "publisher": "xeno-canto.org / GBIF",
+          "year": 2026
+        },
+        {
+          "title": "Wikimedia Commons species category images",
+          "url": "https://commons.wikimedia.org/",
+          "publisher": "Wikimedia Commons",
+          "year": 2026
+        }
+      ]
+    },
+    {
       "slug": "buteo-rufofuscus",
       "scientificName": "Buteo rufofuscus",
       "commonName": "Jackal Buzzard",
-      "images": [],
-      "recordings": [],
+      "images": [
+        {
+          "key": "buteo-rufofuscus/perched-front-adult-any.jpg",
+          "author": "Derek Keats",
+          "licence": "CC BY 2.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by/2.0/",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Jackal_buzzard,_Buteo_rufofuscus,_at_Kgalagadi_Transfrontier_Park,_Northern_Cape,_South_Africa_(33833544004).jpg",
+          "aiGenerated": false,
+          "hosted": false
+        },
+        {
+          "key": "buteo-rufofuscus/perched-side-adult-any.jpg",
+          "author": "Bernard Dupont",
+          "licence": "CC BY-SA 2.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-sa/2.0/",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Jackal_Buzzard_(Buteo_rufofuscus)_(54299100189).jpg",
+          "aiGenerated": false,
+          "hosted": false
+        },
+        {
+          "key": "buteo-rufofuscus/perched-side-immature-any.jpg",
+          "author": "Bernard Dupont",
+          "licence": "CC BY-SA 2.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-sa/2.0/",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Jackal_Buzzard_(Buteo_rufofuscus)_immature_(32126652941).jpg",
+          "aiGenerated": false,
+          "hosted": false
+        },
+        {
+          "key": "buteo-rufofuscus/flight-side-adult-any.jpg",
+          "author": "Gouldingken",
+          "licence": "CC BY-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Jackal_Buzzard_Taking_Flight.JPG",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ],
+      "recordings": [
+        {
+          "key": "xeno-canto/XC1090801",
+          "author": "African Bioacoustics Community",
+          "licence": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "sourceUrl": "https://xeno-canto.org/1090801",
+          "aiGenerated": false,
+          "hosted": false,
+          "callType": "call"
+        },
+        {
+          "key": "xeno-canto/XC397385",
+          "author": "Alan Collett",
+          "licence": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "sourceUrl": "https://xeno-canto.org/397385",
+          "aiGenerated": false,
+          "hosted": false,
+          "callType": "call"
+        }
+      ],
       "sources": [
         {
           "title": "Kemp A.C., Herholdt J.J., Whyte I. & Harrison J. (2001). Birds of the two largest national parks in South Africa: a method to generate estimates of population size for all species and assess their conservation ecology. S. Afr. J. Sci. 97: 393–403.",
           "url": "https://journals.co.za/doi/pdf/10.10520/EJC97367",
           "publisher": "South African Journal of Science",
           "year": 2001
+        },
+        {
+          "title": "Newman's Birds — Jackal Buzzard species page (text from Newman's Birds of Southern Africa)",
+          "url": "https://newmansbirds.com/birds/jackal-buzzard/",
+          "publisher": "Newman's Birds / Struik Nature (online edition)",
+          "year": null
+        },
+        {
+          "title": "The Atlas of Southern African Birds, Vol. 1 (spread 152)",
+          "url": "https://sabap2.birdmap.africa/docs/sabap1/152.pdf",
+          "publisher": "BirdLife South Africa / Avian Demography Unit",
+          "year": 1997
+        },
+        {
+          "title": "Biodiversity Explorer species text (summarised from Roberts Birds of Southern Africa VIIth ed., Hockey, Dean & Ryan 2005)",
+          "url": "https://www.biodiversityexplorer.info/birds/accipitridae/buteo_rufofuscus.htm",
+          "publisher": "Iziko Museums of South Africa",
+          "year": null
+        },
+        {
+          "title": "Wikipedia — Jackal buzzard",
+          "url": "https://en.wikipedia.org/wiki/Jackal_buzzard",
+          "publisher": "Wikimedia Foundation",
+          "year": 2026
+        },
+        {
+          "title": "GBIF occurrence month facets for Buteo rufofuscus, Kruger bounding box (lon 31.0–32.04, lat −25.53 to −22.33, country ZA)",
+          "url": "https://api.gbif.org/v1/occurrence/search",
+          "publisher": "GBIF.org",
+          "year": 2026
+        },
+        {
+          "title": "xeno-canto recordings (metadata via GBIF dataset b1047888-ae52-4179-9dd5-5448ea342a24)",
+          "url": "https://xeno-canto.org/",
+          "publisher": "xeno-canto.org / GBIF",
+          "year": 2026
+        },
+        {
+          "title": "Wikimedia Commons species category images",
+          "url": "https://commons.wikimedia.org/",
+          "publisher": "Wikimedia Commons",
+          "year": 2026
+        }
+      ]
+    },
+    {
+      "slug": "buteo-trizonatus",
+      "scientificName": "Buteo trizonatus",
+      "commonName": "Forest Buzzard",
+      "images": [
+        {
+          "key": "buteo-trizonatus/perched-side-adult-any.jpg",
+          "author": "Derek Keats",
+          "licence": "CC BY 2.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by/2.0/",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Forest_Buzzard,_Buteo_trizonatus,_at_Hangklip_Forest,_Makhado,_Limpopo_Province,_South_Africa.jpg",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ],
+      "recordings": [
+        {
+          "key": "xeno-canto/XC289313",
+          "author": "Daniel Danckwerts",
+          "licence": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "sourceUrl": "https://xeno-canto.org/289313",
+          "aiGenerated": false,
+          "hosted": false,
+          "callType": "call"
+        },
+        {
+          "key": "xeno-canto/XC289315",
+          "author": "Daniel Danckwerts",
+          "licence": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "sourceUrl": "https://xeno-canto.org/289315",
+          "aiGenerated": false,
+          "hosted": false,
+          "callType": "call"
+        },
+        {
+          "key": "xeno-canto/XC289314",
+          "author": "Daniel Danckwerts",
+          "licence": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "sourceUrl": "https://xeno-canto.org/289314",
+          "aiGenerated": false,
+          "hosted": false,
+          "callType": "call"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Newman's Birds — Forest Buzzard species page (text from Newman's Birds of Southern Africa)",
+          "url": "https://newmansbirds.com/birds/forest-buzzard/",
+          "publisher": "Newman's Birds / Struik Nature (online edition)",
+          "year": null
+        },
+        {
+          "title": "The Atlas of Southern African Birds, Vol. 1 (spread 150)",
+          "url": "https://sabap2.birdmap.africa/docs/sabap1/150.pdf",
+          "publisher": "BirdLife South Africa / Avian Demography Unit",
+          "year": 1997
+        },
+        {
+          "title": "Biodiversity Explorer species text (summarised from Roberts Birds of Southern Africa VIIth ed., Hockey, Dean & Ryan 2005)",
+          "url": "https://www.biodiversityexplorer.info/birds/accipitridae/buteo_trizonatus.htm",
+          "publisher": "Iziko Museums of South Africa",
+          "year": null
+        },
+        {
+          "title": "Wikipedia — Forest buzzard",
+          "url": "https://en.wikipedia.org/wiki/Forest_buzzard",
+          "publisher": "Wikimedia Foundation",
+          "year": 2026
+        },
+        {
+          "title": "GBIF occurrence month facets for Buteo trizonatus, Kruger bounding box (lon 31.0–32.04, lat −25.53 to −22.33, country ZA)",
+          "url": "https://api.gbif.org/v1/occurrence/search",
+          "publisher": "GBIF.org",
+          "year": 2026
+        },
+        {
+          "title": "xeno-canto recordings (metadata via GBIF dataset b1047888-ae52-4179-9dd5-5448ea342a24)",
+          "url": "https://xeno-canto.org/",
+          "publisher": "xeno-canto.org / GBIF",
+          "year": 2026
+        },
+        {
+          "title": "Wikimedia Commons species category images",
+          "url": "https://commons.wikimedia.org/",
+          "publisher": "Wikimedia Commons",
+          "year": 2026
         }
       ]
     },
@@ -2245,14 +3385,113 @@
       "slug": "circaetus-cinereus",
       "scientificName": "Circaetus cinereus",
       "commonName": "Brown Snake Eagle",
-      "images": [],
-      "recordings": [],
+      "images": [
+        {
+          "key": "circaetus-cinereus/perched-side-adult-any.jpg",
+          "author": "Bernard Dupont",
+          "licence": "CC BY-SA 2.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-sa/2.0/",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Brown_Snake_Eagle_(Circaetus_cinereus)_(16669444076).jpg",
+          "aiGenerated": false,
+          "hosted": false
+        },
+        {
+          "key": "circaetus-cinereus/perched-side-adult-any-2.jpg",
+          "author": "Bernard Dupont",
+          "licence": "CC BY-SA 2.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-sa/2.0/",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Brown_Snake-Eagle_(Circaetus_cinereus)_(52739088017).jpg",
+          "aiGenerated": false,
+          "hosted": false
+        },
+        {
+          "key": "circaetus-cinereus/perched-side-immature-any.jpg",
+          "author": "Bernard Dupont",
+          "licence": "CC BY-SA 2.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-sa/2.0/",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Brown_Snake_Eagle_(Circaetus_cinereus)_(16523251576).jpg",
+          "aiGenerated": false,
+          "hosted": false
+        },
+        {
+          "key": "circaetus-cinereus/flight-side-adult-any.jpg",
+          "author": "Alandmanson",
+          "licence": "CC BY 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by/4.0/",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Snake_Eagle_Brown_2010_10_07_11640.jpg",
+          "aiGenerated": false,
+          "hosted": false
+        },
+        {
+          "key": "circaetus-cinereus/perched-front-adult-any.jpg",
+          "author": "Derek Keats",
+          "licence": "CC BY 2.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by/2.0/",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Brown_Snake_Eagle,_Circaetus_cinereus_at_Kruger_National_Park_(12404663613).jpg",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ],
+      "recordings": [
+        {
+          "key": "xeno-canto/XC863207",
+          "author": "Donovan",
+          "licence": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "sourceUrl": "https://xeno-canto.org/863207",
+          "aiGenerated": false,
+          "hosted": false,
+          "callType": "call"
+        }
+      ],
       "sources": [
         {
           "title": "Kemp A.C., Herholdt J.J., Whyte I. & Harrison J. (2001). Birds of the two largest national parks in South Africa: a method to generate estimates of population size for all species and assess their conservation ecology. S. Afr. J. Sci. 97: 393–403.",
           "url": "https://journals.co.za/doi/pdf/10.10520/EJC97367",
           "publisher": "South African Journal of Science",
           "year": 2001
+        },
+        {
+          "title": "Newman's Birds — Brown Snake Eagle species page (text from Newman's Birds of Southern Africa)",
+          "url": "https://newmansbirds.com/birds/brown-snake-eagle/",
+          "publisher": "Newman's Birds / Struik Nature (online edition)",
+          "year": null
+        },
+        {
+          "title": "The Atlas of Southern African Birds, Vol. 1 (spread 142)",
+          "url": "https://sabap2.birdmap.africa/docs/sabap1/142.pdf",
+          "publisher": "BirdLife South Africa / Avian Demography Unit",
+          "year": 1997
+        },
+        {
+          "title": "Biodiversity Explorer species text (summarised from Roberts Birds of Southern Africa VIIth ed., Hockey, Dean & Ryan 2005)",
+          "url": "https://www.biodiversityexplorer.info/birds/accipitridae/circaetus_cinereus.htm",
+          "publisher": "Iziko Museums of South Africa",
+          "year": null
+        },
+        {
+          "title": "Wikipedia — Brown snake eagle",
+          "url": "https://en.wikipedia.org/wiki/Brown_snake_eagle",
+          "publisher": "Wikimedia Foundation",
+          "year": 2026
+        },
+        {
+          "title": "GBIF occurrence month facets for Circaetus cinereus, Kruger bounding box (lon 31.0–32.04, lat −25.53 to −22.33, country ZA)",
+          "url": "https://api.gbif.org/v1/occurrence/search",
+          "publisher": "GBIF.org",
+          "year": 2026
+        },
+        {
+          "title": "xeno-canto recordings (metadata via GBIF dataset b1047888-ae52-4179-9dd5-5448ea342a24)",
+          "url": "https://xeno-canto.org/",
+          "publisher": "xeno-canto.org / GBIF",
+          "year": 2026
+        },
+        {
+          "title": "Wikimedia Commons species category images",
+          "url": "https://commons.wikimedia.org/",
+          "publisher": "Wikimedia Commons",
+          "year": 2026
         }
       ]
     },
@@ -2260,7 +3499,26 @@
       "slug": "circaetus-pectoralis",
       "scientificName": "Circaetus pectoralis",
       "commonName": "Black-chested Snake Eagle",
-      "images": [],
+      "images": [
+        {
+          "key": "circaetus-pectoralis/flight-side-adult-any.jpg",
+          "author": "Charles J. Sharp",
+          "licence": "CC BY-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Black-chested_snake-eagle_(Circaetus_pectoralis)_in_flight.jpg",
+          "aiGenerated": false,
+          "hosted": false
+        },
+        {
+          "key": "circaetus-pectoralis/flight-side-adult-any-2.jpg",
+          "author": "Michaelphillipr",
+          "licence": "CC BY-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Black-chested_snake_eagle.jpg",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ],
       "recordings": [],
       "sources": [
         {
@@ -2268,6 +3526,48 @@
           "url": "https://journals.co.za/doi/pdf/10.10520/EJC97367",
           "publisher": "South African Journal of Science",
           "year": 2001
+        },
+        {
+          "title": "Newman's Birds — Black Chested Snake Eagle species page (text from Newman's Birds of Southern Africa)",
+          "url": "https://newmansbirds.com/birds/black-chested-snake-eagle/",
+          "publisher": "Newman's Birds / Struik Nature (online edition)",
+          "year": null
+        },
+        {
+          "title": "The Atlas of Southern African Birds, Vol. 1 (spread 143)",
+          "url": "https://sabap2.birdmap.africa/docs/sabap1/143.pdf",
+          "publisher": "BirdLife South Africa / Avian Demography Unit",
+          "year": 1997
+        },
+        {
+          "title": "Biodiversity Explorer species text (summarised from Roberts Birds of Southern Africa VIIth ed., Hockey, Dean & Ryan 2005)",
+          "url": "https://www.biodiversityexplorer.info/birds/accipitridae/circaetus_pectoralis.htm",
+          "publisher": "Iziko Museums of South Africa",
+          "year": null
+        },
+        {
+          "title": "Wikipedia — Black-chested snake eagle",
+          "url": "https://en.wikipedia.org/wiki/Black-chested_snake_eagle",
+          "publisher": "Wikimedia Foundation",
+          "year": 2026
+        },
+        {
+          "title": "GBIF occurrence month facets for Circaetus pectoralis, Kruger bounding box (lon 31.0–32.04, lat −25.53 to −22.33, country ZA)",
+          "url": "https://api.gbif.org/v1/occurrence/search",
+          "publisher": "GBIF.org",
+          "year": 2026
+        },
+        {
+          "title": "xeno-canto recordings (metadata via GBIF dataset b1047888-ae52-4179-9dd5-5448ea342a24)",
+          "url": "https://xeno-canto.org/",
+          "publisher": "xeno-canto.org / GBIF",
+          "year": 2026
+        },
+        {
+          "title": "Wikimedia Commons species category images",
+          "url": "https://commons.wikimedia.org/",
+          "publisher": "Wikimedia Commons",
+          "year": 2026
         }
       ]
     },
@@ -2275,14 +3575,114 @@
       "slug": "circus-macrourus",
       "scientificName": "Circus macrourus",
       "commonName": "Pallid Harrier",
-      "images": [],
-      "recordings": [],
+      "images": [
+        {
+          "key": "circus-macrourus/perched-side-adult-any.jpg",
+          "author": "Dominic Sherony",
+          "licence": "CC BY-SA 2.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-sa/2.0/",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Pallid_Harrier_(Circus_macrourus)_(31620410527).jpg",
+          "aiGenerated": false,
+          "hosted": false
+        },
+        {
+          "key": "circus-macrourus/perched-front-adult-male.jpg",
+          "author": "Andrew Smith",
+          "licence": "Public domain",
+          "licenceUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Circus_macrourus_1838.jpg",
+          "aiGenerated": false,
+          "hosted": false
+        },
+        {
+          "key": "circus-macrourus/perched-side-adult-female.jpg",
+          "author": "Andrew Smith",
+          "licence": "Public domain",
+          "licenceUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Circus_macrourus_young_female_1838.jpg",
+          "aiGenerated": false,
+          "hosted": false
+        },
+        {
+          "key": "circus-macrourus/flight-side-adult-any.jpg",
+          "author": "Gannu03",
+          "licence": "CC BY-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Pallid_Harrier_in_flight_from_Little_Rann_of_Kutch,_Gujarat_01.jpg",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ],
+      "recordings": [
+        {
+          "key": "xeno-canto/XC549572",
+          "author": "Jan Studecky",
+          "licence": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "sourceUrl": "https://xeno-canto.org/549572",
+          "aiGenerated": false,
+          "hosted": false,
+          "callType": "call"
+        },
+        {
+          "key": "xeno-canto/XC571877",
+          "author": "Jan Studecky",
+          "licence": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "sourceUrl": "https://xeno-canto.org/571877",
+          "aiGenerated": false,
+          "hosted": false,
+          "callType": "call"
+        }
+      ],
       "sources": [
         {
           "title": "Kemp A.C., Herholdt J.J., Whyte I. & Harrison J. (2001). Birds of the two largest national parks in South Africa: a method to generate estimates of population size for all species and assess their conservation ecology. S. Afr. J. Sci. 97: 393–403.",
           "url": "https://journals.co.za/doi/pdf/10.10520/EJC97367",
           "publisher": "South African Journal of Science",
           "year": 2001
+        },
+        {
+          "title": "The Atlas of Southern African Birds, Vol. 1 (spread 167)",
+          "url": "https://sabap2.birdmap.africa/docs/sabap1/167.pdf",
+          "publisher": "BirdLife South Africa / Avian Demography Unit",
+          "year": 1997
+        },
+        {
+          "title": "Biodiversity Explorer species text (summarised from Roberts Birds of Southern Africa VIIth ed., Hockey, Dean & Ryan 2005)",
+          "url": "https://www.biodiversityexplorer.info/birds/accipitridae/circus_macrourus.htm",
+          "publisher": "Iziko Museums of South Africa",
+          "year": null
+        },
+        {
+          "title": "Wikipedia — Pallid harrier",
+          "url": "https://en.wikipedia.org/wiki/Pallid_harrier",
+          "publisher": "Wikimedia Foundation",
+          "year": 2026
+        },
+        {
+          "title": "GBIF occurrence month facets for Circus macrourus, Kruger bounding box (lon 31.0–32.04, lat −25.53 to −22.33, country ZA)",
+          "url": "https://api.gbif.org/v1/occurrence/search",
+          "publisher": "GBIF.org",
+          "year": 2026
+        },
+        {
+          "title": "xeno-canto recordings (metadata via GBIF dataset b1047888-ae52-4179-9dd5-5448ea342a24)",
+          "url": "https://xeno-canto.org/",
+          "publisher": "xeno-canto.org / GBIF",
+          "year": 2026
+        },
+        {
+          "title": "Wikimedia Commons species category images",
+          "url": "https://commons.wikimedia.org/",
+          "publisher": "Wikimedia Commons",
+          "year": 2026
+        },
+        {
+          "title": "Newman's Birds — Pallid Harrier page (404)",
+          "url": "https://newmansbirds.com/birds/pallid-harrier/",
+          "publisher": "Newman's Birds",
+          "year": null
         }
       ]
     },
@@ -2290,14 +3690,114 @@
       "slug": "circus-pygargus",
       "scientificName": "Circus pygargus",
       "commonName": "Montagu’s Harrier",
-      "images": [],
-      "recordings": [],
+      "images": [
+        {
+          "key": "circus-pygargus/flight-side-adult-male.jpg",
+          "author": "Charles J. Sharp",
+          "licence": "CC BY-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Montague%27s_harrier_(Circus_pygargus)_male_in_flight_Kebili.jpg",
+          "aiGenerated": false,
+          "hosted": false
+        },
+        {
+          "key": "circus-pygargus/flight-side-adult-male-2.jpg",
+          "author": "Donald Macauley from Carshalton, Surrey, UK",
+          "licence": "CC BY-SA 2.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-sa/2.0/",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Circus_pygargus_male_flight.jpg",
+          "aiGenerated": false,
+          "hosted": false
+        },
+        {
+          "key": "circus-pygargus/flight-side-adult-any.jpg",
+          "author": "Hari K Patibanda",
+          "licence": "CC BY 2.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by/2.0/",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:A_Montagu%27s_Harrier_flying_low_over_the_grasslands_(50959069597).jpg",
+          "aiGenerated": false,
+          "hosted": false
+        },
+        {
+          "key": "circus-pygargus/perched-side-adult-any.jpg",
+          "author": "Hari K Patibanda",
+          "licence": "CC BY 2.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by/2.0/",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:A_Montague_Harrier_from_Close_(49515938787).jpg",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ],
+      "recordings": [
+        {
+          "key": "xeno-canto/XC1152357",
+          "author": "Esperanza Poveda",
+          "licence": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "sourceUrl": "https://xeno-canto.org/1152357",
+          "aiGenerated": false,
+          "hosted": false,
+          "callType": "call"
+        },
+        {
+          "key": "xeno-canto/XC1152382",
+          "author": "Esperanza Poveda",
+          "licence": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "sourceUrl": "https://xeno-canto.org/1152382",
+          "aiGenerated": false,
+          "hosted": false,
+          "callType": "call"
+        }
+      ],
       "sources": [
         {
           "title": "Kemp A.C., Herholdt J.J., Whyte I. & Harrison J. (2001). Birds of the two largest national parks in South Africa: a method to generate estimates of population size for all species and assess their conservation ecology. S. Afr. J. Sci. 97: 393–403.",
           "url": "https://journals.co.za/doi/pdf/10.10520/EJC97367",
           "publisher": "South African Journal of Science",
           "year": 2001
+        },
+        {
+          "title": "Newman's Birds — Montagus Harrier species page (text from Newman's Birds of Southern Africa)",
+          "url": "https://newmansbirds.com/birds/montagus-harrier/",
+          "publisher": "Newman's Birds / Struik Nature (online edition)",
+          "year": null
+        },
+        {
+          "title": "The Atlas of Southern African Birds, Vol. 1 (spread 166)",
+          "url": "https://sabap2.birdmap.africa/docs/sabap1/166.pdf",
+          "publisher": "BirdLife South Africa / Avian Demography Unit",
+          "year": 1997
+        },
+        {
+          "title": "Biodiversity Explorer species text (summarised from Roberts Birds of Southern Africa VIIth ed., Hockey, Dean & Ryan 2005)",
+          "url": "https://www.biodiversityexplorer.info/birds/accipitridae/circus_pygargus.htm",
+          "publisher": "Iziko Museums of South Africa",
+          "year": null
+        },
+        {
+          "title": "Wikipedia — Montagu%27s harrier",
+          "url": "https://en.wikipedia.org/wiki/Montagu%27s_harrier",
+          "publisher": "Wikimedia Foundation",
+          "year": 2026
+        },
+        {
+          "title": "GBIF occurrence month facets for Circus pygargus, Kruger bounding box (lon 31.0–32.04, lat −25.53 to −22.33, country ZA)",
+          "url": "https://api.gbif.org/v1/occurrence/search",
+          "publisher": "GBIF.org",
+          "year": 2026
+        },
+        {
+          "title": "xeno-canto recordings (metadata via GBIF dataset b1047888-ae52-4179-9dd5-5448ea342a24)",
+          "url": "https://xeno-canto.org/",
+          "publisher": "xeno-canto.org / GBIF",
+          "year": 2026
+        },
+        {
+          "title": "Wikimedia Commons species category images",
+          "url": "https://commons.wikimedia.org/",
+          "publisher": "Wikimedia Commons",
+          "year": 2026
         }
       ]
     },
@@ -2305,7 +3805,44 @@
       "slug": "circus-ranivorus",
       "scientificName": "Circus ranivorus",
       "commonName": "African Marsh Harrier",
-      "images": [],
+      "images": [
+        {
+          "key": "circus-ranivorus/perched-side-adult-any.jpg",
+          "author": "Malcolm Macgregor",
+          "licence": "CC BY 2.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by/2.0/",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:African_Marsh_Harrier,_Botswana_(6127140777).jpg",
+          "aiGenerated": false,
+          "hosted": false
+        },
+        {
+          "key": "circus-ranivorus/perched-side-adult-any-2.jpg",
+          "author": "Christiaan Viljoen",
+          "licence": "CC BY 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by/4.0/",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Circus_ranivorus_361290652.jpg",
+          "aiGenerated": false,
+          "hosted": false
+        },
+        {
+          "key": "circus-ranivorus/perched-side-adult-any-3.jpg",
+          "author": "Alandmanson",
+          "licence": "CC BY 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by/4.0/",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Harrier_African_Marsh_2013_08_08_07_35_32_4537b.jpg",
+          "aiGenerated": false,
+          "hosted": false
+        },
+        {
+          "key": "circus-ranivorus/perched-side-adult-any-4.jpg",
+          "author": "Лариса Артемьева",
+          "licence": "CC0 1.0",
+          "licenceUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Circus_ranivorus_545828195.jpg",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ],
       "recordings": [],
       "sources": [
         {
@@ -2313,6 +3850,48 @@
           "url": "https://journals.co.za/doi/pdf/10.10520/EJC97367",
           "publisher": "South African Journal of Science",
           "year": 2001
+        },
+        {
+          "title": "Newman's Birds — African Marsh Harrier species page (text from Newman's Birds of Southern Africa)",
+          "url": "https://newmansbirds.com/birds/african-marsh-harrier/",
+          "publisher": "Newman's Birds / Struik Nature (online edition)",
+          "year": null
+        },
+        {
+          "title": "The Atlas of Southern African Birds, Vol. 1 (spread 165)",
+          "url": "https://sabap2.birdmap.africa/docs/sabap1/165.pdf",
+          "publisher": "BirdLife South Africa / Avian Demography Unit",
+          "year": 1997
+        },
+        {
+          "title": "Biodiversity Explorer species text (summarised from Roberts Birds of Southern Africa VIIth ed., Hockey, Dean & Ryan 2005)",
+          "url": "https://www.biodiversityexplorer.info/birds/accipitridae/circus_ranivorus.htm",
+          "publisher": "Iziko Museums of South Africa",
+          "year": null
+        },
+        {
+          "title": "Wikipedia — African marsh harrier",
+          "url": "https://en.wikipedia.org/wiki/African_marsh_harrier",
+          "publisher": "Wikimedia Foundation",
+          "year": 2026
+        },
+        {
+          "title": "GBIF occurrence month facets for Circus ranivorus, Kruger bounding box (lon 31.0–32.04, lat −25.53 to −22.33, country ZA)",
+          "url": "https://api.gbif.org/v1/occurrence/search",
+          "publisher": "GBIF.org",
+          "year": 2026
+        },
+        {
+          "title": "xeno-canto recordings (metadata via GBIF dataset b1047888-ae52-4179-9dd5-5448ea342a24)",
+          "url": "https://xeno-canto.org/",
+          "publisher": "xeno-canto.org / GBIF",
+          "year": 2026
+        },
+        {
+          "title": "Wikimedia Commons species category images",
+          "url": "https://commons.wikimedia.org/",
+          "publisher": "Wikimedia Commons",
+          "year": 2026
         }
       ]
     },
@@ -2485,14 +4064,105 @@
       "slug": "clanga-pomarina",
       "scientificName": "Clanga pomarina",
       "commonName": "Lesser Spotted Eagle",
-      "images": [],
-      "recordings": [],
+      "images": [
+        {
+          "key": "clanga-pomarina/perched-side-adult-any.jpg",
+          "author": "Charles J. Sharp",
+          "licence": "CC BY-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Lesser-spotted_eagle_(Clanga_pomarina)_Pieniny.jpg",
+          "aiGenerated": false,
+          "hosted": false
+        },
+        {
+          "key": "clanga-pomarina/perched-side-adult-any-2.jpg",
+          "author": "Dominic Sherony",
+          "licence": "CC BY-SA 2.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-sa/2.0/",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Lesser-spotted_Eagle_(Clanga_pomarina)_(46497411462).jpg",
+          "aiGenerated": false,
+          "hosted": false
+        },
+        {
+          "key": "clanga-pomarina/flight-side-adult-any.jpg",
+          "author": "Wolbrum avner",
+          "licence": "CC BY-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Lesser_spotted_eagle_2016.jpg",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ],
+      "recordings": [
+        {
+          "key": "xeno-canto/XC1028980",
+          "author": "Uku Paal",
+          "licence": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "sourceUrl": "https://xeno-canto.org/1028980",
+          "aiGenerated": false,
+          "hosted": false,
+          "callType": "call"
+        },
+        {
+          "key": "xeno-canto/XC825782",
+          "author": "Andris Dekants",
+          "licence": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "sourceUrl": "https://xeno-canto.org/825782",
+          "aiGenerated": false,
+          "hosted": false,
+          "callType": "call"
+        }
+      ],
       "sources": [
         {
           "title": "Kemp A.C., Herholdt J.J., Whyte I. & Harrison J. (2001). Birds of the two largest national parks in South Africa: a method to generate estimates of population size for all species and assess their conservation ecology. S. Afr. J. Sci. 97: 393–403.",
           "url": "https://journals.co.za/doi/pdf/10.10520/EJC97367",
           "publisher": "South African Journal of Science",
           "year": 2001
+        },
+        {
+          "title": "Newman's Birds — Lesser Spotted Eagle species page (text from Newman's Birds of Southern Africa)",
+          "url": "https://newmansbirds.com/birds/lesser-spotted-eagle/",
+          "publisher": "Newman's Birds / Struik Nature (online edition)",
+          "year": null
+        },
+        {
+          "title": "The Atlas of Southern African Birds, Vol. 1 (spread 134)",
+          "url": "https://sabap2.birdmap.africa/docs/sabap1/134.pdf",
+          "publisher": "BirdLife South Africa / Avian Demography Unit",
+          "year": 1997
+        },
+        {
+          "title": "Biodiversity Explorer species text (summarised from Roberts Birds of Southern Africa VIIth ed., Hockey, Dean & Ryan 2005)",
+          "url": "https://www.biodiversityexplorer.info/birds/accipitridae/aquila_pomarina.htm",
+          "publisher": "Iziko Museums of South Africa",
+          "year": null
+        },
+        {
+          "title": "Wikipedia — Lesser spotted eagle",
+          "url": "https://en.wikipedia.org/wiki/Lesser_spotted_eagle",
+          "publisher": "Wikimedia Foundation",
+          "year": 2026
+        },
+        {
+          "title": "GBIF occurrence month facets for Clanga pomarina, Kruger bounding box (lon 31.0–32.04, lat −25.53 to −22.33, country ZA)",
+          "url": "https://api.gbif.org/v1/occurrence/search",
+          "publisher": "GBIF.org",
+          "year": 2026
+        },
+        {
+          "title": "xeno-canto recordings (metadata via GBIF dataset b1047888-ae52-4179-9dd5-5448ea342a24)",
+          "url": "https://xeno-canto.org/",
+          "publisher": "xeno-canto.org / GBIF",
+          "year": 2026
+        },
+        {
+          "title": "Wikimedia Commons species category images",
+          "url": "https://commons.wikimedia.org/",
+          "publisher": "Wikimedia Commons",
+          "year": 2026
         }
       ]
     },
@@ -3557,14 +5227,139 @@
       "slug": "elanus-caeruleus",
       "scientificName": "Elanus caeruleus",
       "commonName": "Black-winged Kite",
-      "images": [],
-      "recordings": [],
+      "images": [
+        {
+          "key": "elanus-caeruleus/perched-side-adult-any.jpg",
+          "author": "Bernard Dupont",
+          "licence": "CC BY-SA 2.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-sa/2.0/",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Day_23_Black-winged_Kite_(Elanus_caeruleus)_(53469627758).jpg",
+          "aiGenerated": false,
+          "hosted": false
+        },
+        {
+          "key": "elanus-caeruleus/perched-side-adult-any-2.jpg",
+          "author": "Bernard Dupont",
+          "licence": "CC BY-SA 2.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-sa/2.0/",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Black-winged_Kite_(Elanus_caeruleus)_(53080174662).jpg",
+          "aiGenerated": false,
+          "hosted": false
+        },
+        {
+          "key": "elanus-caeruleus/perched-side-juvenile-any.jpg",
+          "author": "Bernard Dupont",
+          "licence": "CC BY-SA 2.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-sa/2.0/",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Black-shouldered_Kite_(Elanus_caeruleus)_juvenile_(6516744505).jpg",
+          "aiGenerated": false,
+          "hosted": false
+        },
+        {
+          "key": "elanus-caeruleus/perched-front-adult-any.jpg",
+          "author": "Bernard Dupont",
+          "licence": "CC BY-SA 2.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-sa/2.0/",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Black-shouldered_Kite_(Elanus_caeruleus)_in_rainbow_light_(14019639475).jpg",
+          "aiGenerated": false,
+          "hosted": false
+        },
+        {
+          "key": "elanus-caeruleus/perched-side-adult-any-3.jpg",
+          "author": "Charles J. Sharp",
+          "licence": "CC BY-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Black-winged_kite_(Elanus_caeruleus_caeruleus)_Serengeti.jpg",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ],
+      "recordings": [
+        {
+          "key": "xeno-canto/XC1087114",
+          "author": "African Bioacoustics Community",
+          "licence": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "sourceUrl": "https://xeno-canto.org/1087114",
+          "aiGenerated": false,
+          "hosted": false,
+          "callType": "call"
+        },
+        {
+          "key": "xeno-canto/XC1059222",
+          "author": "Yoann Blanchon",
+          "licence": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "sourceUrl": "https://xeno-canto.org/1059222",
+          "aiGenerated": false,
+          "hosted": false,
+          "callType": "call"
+        },
+        {
+          "key": "xeno-canto/XC1081037",
+          "author": "African Bioacoustics Community",
+          "licence": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "sourceUrl": "https://xeno-canto.org/1081037",
+          "aiGenerated": false,
+          "hosted": false,
+          "callType": "call"
+        }
+      ],
       "sources": [
         {
           "title": "Kemp A.C., Herholdt J.J., Whyte I. & Harrison J. (2001). Birds of the two largest national parks in South Africa: a method to generate estimates of population size for all species and assess their conservation ecology. S. Afr. J. Sci. 97: 393–403.",
           "url": "https://journals.co.za/doi/pdf/10.10520/EJC97367",
           "publisher": "South African Journal of Science",
           "year": 2001
+        },
+        {
+          "title": "Newman's Birds — Black Winged Kite species page (text from Newman's Birds of Southern Africa)",
+          "url": "https://newmansbirds.com/birds/black-winged-kite/",
+          "publisher": "Newman's Birds / Struik Nature (online edition)",
+          "year": null
+        },
+        {
+          "title": "The Atlas of Southern African Birds, Vol. 1 (spread 126)",
+          "url": "https://sabap2.birdmap.africa/docs/sabap1/126.pdf",
+          "publisher": "BirdLife South Africa / Avian Demography Unit",
+          "year": 1997
+        },
+        {
+          "title": "The Atlas of Southern African Birds, Vol. 1 (spread 127)",
+          "url": "https://sabap2.birdmap.africa/docs/sabap1/127.pdf",
+          "publisher": "BirdLife South Africa / Avian Demography Unit",
+          "year": 1997
+        },
+        {
+          "title": "Biodiversity Explorer species text (summarised from Roberts Birds of Southern Africa VIIth ed., Hockey, Dean & Ryan 2005)",
+          "url": "https://www.biodiversityexplorer.info/birds/accipitridae/elanus_caeruleus.htm",
+          "publisher": "Iziko Museums of South Africa",
+          "year": null
+        },
+        {
+          "title": "Wikipedia — Black-winged kite",
+          "url": "https://en.wikipedia.org/wiki/Black-winged_kite",
+          "publisher": "Wikimedia Foundation",
+          "year": 2026
+        },
+        {
+          "title": "GBIF occurrence month facets for Elanus caeruleus, Kruger bounding box (lon 31.0–32.04, lat −25.53 to −22.33, country ZA)",
+          "url": "https://api.gbif.org/v1/occurrence/search",
+          "publisher": "GBIF.org",
+          "year": 2026
+        },
+        {
+          "title": "xeno-canto recordings (metadata via GBIF dataset b1047888-ae52-4179-9dd5-5448ea342a24)",
+          "url": "https://xeno-canto.org/",
+          "publisher": "xeno-canto.org / GBIF",
+          "year": 2026
+        },
+        {
+          "title": "Wikimedia Commons species category images",
+          "url": "https://commons.wikimedia.org/",
+          "publisher": "Wikimedia Commons",
+          "year": 2026
         }
       ]
     },
@@ -4190,14 +5985,86 @@
       "slug": "gypohierax-angolensis",
       "scientificName": "Gypohierax angolensis",
       "commonName": "Palm-nut Vulture",
-      "images": [],
-      "recordings": [],
+      "images": [
+        {
+          "key": "gypohierax-angolensis/perched-side-adult-any.jpg",
+          "author": "Derek Keats",
+          "licence": "CC BY 2.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by/2.0/",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Palm-nut_vulture,_Gypohierax_angolensis,_at_Ndumo_Nature_Reserve,_KwaZulu-Natal,_South_Africa_(28447075624).jpg",
+          "aiGenerated": false,
+          "hosted": false
+        },
+        {
+          "key": "gypohierax-angolensis/flight-side-adult-any.jpg",
+          "author": "Charles J. Sharp",
+          "licence": "CC BY-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Palm_nut_vulture_(Gypohierax_angolensis)_on_nest.jpg",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ],
+      "recordings": [
+        {
+          "key": "xeno-canto/XC613298",
+          "author": "Rod Cassidy",
+          "licence": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "sourceUrl": "https://xeno-canto.org/613298",
+          "aiGenerated": false,
+          "hosted": false,
+          "callType": "call"
+        }
+      ],
       "sources": [
         {
           "title": "Kemp A.C., Herholdt J.J., Whyte I. & Harrison J. (2001). Birds of the two largest national parks in South Africa: a method to generate estimates of population size for all species and assess their conservation ecology. S. Afr. J. Sci. 97: 393–403.",
           "url": "https://journals.co.za/doi/pdf/10.10520/EJC97367",
           "publisher": "South African Journal of Science",
           "year": 2001
+        },
+        {
+          "title": "Newman's Birds — Palm Nut Vulture species page (text from Newman's Birds of Southern Africa)",
+          "url": "https://newmansbirds.com/birds/palm-nut-vulture/",
+          "publisher": "Newman's Birds / Struik Nature (online edition)",
+          "year": null
+        },
+        {
+          "title": "The Atlas of Southern African Birds, Vol. 1 (spread 147)",
+          "url": "https://sabap2.birdmap.africa/docs/sabap1/147.pdf",
+          "publisher": "BirdLife South Africa / Avian Demography Unit",
+          "year": 1997
+        },
+        {
+          "title": "Biodiversity Explorer species text (summarised from Roberts Birds of Southern Africa VIIth ed., Hockey, Dean & Ryan 2005)",
+          "url": "https://www.biodiversityexplorer.info/birds/accipitridae/gypohierax_angolensis.htm",
+          "publisher": "Iziko Museums of South Africa",
+          "year": null
+        },
+        {
+          "title": "Wikipedia — Palm-nut vulture",
+          "url": "https://en.wikipedia.org/wiki/Palm-nut_vulture",
+          "publisher": "Wikimedia Foundation",
+          "year": 2026
+        },
+        {
+          "title": "GBIF occurrence month facets for Gypohierax angolensis, Kruger bounding box (lon 31.0–32.04, lat −25.53 to −22.33, country ZA)",
+          "url": "https://api.gbif.org/v1/occurrence/search",
+          "publisher": "GBIF.org",
+          "year": 2026
+        },
+        {
+          "title": "xeno-canto recordings (metadata via GBIF dataset b1047888-ae52-4179-9dd5-5448ea342a24)",
+          "url": "https://xeno-canto.org/",
+          "publisher": "xeno-canto.org / GBIF",
+          "year": 2026
+        },
+        {
+          "title": "Wikimedia Commons species category images",
+          "url": "https://commons.wikimedia.org/",
+          "publisher": "Wikimedia Commons",
+          "year": 2026
         }
       ]
     },
@@ -4205,8 +6072,84 @@
       "slug": "gyps-africanus",
       "scientificName": "Gyps africanus",
       "commonName": "White-backed Vulture",
-      "images": [],
-      "recordings": [],
+      "images": [
+        {
+          "key": "gyps-africanus/perched-side-adult-any.jpg",
+          "author": "Charles J. Sharp",
+          "licence": "CC BY-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:White-backed_vulture_(Gyps_africanus)_Kruger.jpg",
+          "aiGenerated": false,
+          "hosted": false
+        },
+        {
+          "key": "gyps-africanus/perched-side-adult-any-2.jpg",
+          "author": "Charles J. Sharp",
+          "licence": "CC BY-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:White-backed_vulture_(Gyps_africanus)_Kruger_2.jpg",
+          "aiGenerated": false,
+          "hosted": false
+        },
+        {
+          "key": "gyps-africanus/perched-side-adult-any-3.jpg",
+          "author": "Bernard Dupont",
+          "licence": "CC BY-SA 2.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-sa/2.0/",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:White-backed_Vulture_(Gyps_africanus)_festing_on_impala_carcass_..._(54101216062).jpg",
+          "aiGenerated": false,
+          "hosted": false
+        },
+        {
+          "key": "gyps-africanus/flight-below-juvenile-any.jpg",
+          "author": "Charles J. Sharp",
+          "licence": "CC BY-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:White-backed_vulture_(Gyps_africanus)_juvenile_in_flight.jpg",
+          "aiGenerated": false,
+          "hosted": false
+        },
+        {
+          "key": "gyps-africanus/flight-side-immature-any.jpg",
+          "author": "Charles J. Sharp",
+          "licence": "CC BY-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:White-backed_vulture_(Gyps_africanus)_sub_adult_in_flight.jpg",
+          "aiGenerated": false,
+          "hosted": false
+        },
+        {
+          "key": "gyps-africanus/perched-side-adult-any-4.jpg",
+          "author": "Bernard Dupont",
+          "licence": "CC BY-SA 2.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-sa/2.0/",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:White-backed_Vultures_(Gyps_africanus)_adult_feeding_chick_on_nest_..._(33236011832).jpg",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ],
+      "recordings": [
+        {
+          "key": "xeno-canto/XC978231",
+          "author": "Ehren Eksteen",
+          "licence": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "sourceUrl": "https://xeno-canto.org/978231",
+          "aiGenerated": false,
+          "hosted": false,
+          "callType": "call"
+        },
+        {
+          "key": "xeno-canto/XC661236",
+          "author": "Derek Solomon",
+          "licence": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "sourceUrl": "https://xeno-canto.org/661236",
+          "aiGenerated": false,
+          "hosted": false,
+          "callType": "call"
+        }
+      ],
       "sources": [
         {
           "title": "Murn & Botha (2016). Ostrich. doi:10.2989/00306525.2016.1221478",
@@ -4225,6 +6168,54 @@
           "url": "https://journals.co.za/doi/pdf/10.10520/EJC97367",
           "publisher": "South African Journal of Science",
           "year": 2001
+        },
+        {
+          "title": "Newman's Birds — White Backed Vulture species page (text from Newman's Birds of Southern Africa)",
+          "url": "https://newmansbirds.com/birds/white-backed-vulture/",
+          "publisher": "Newman's Birds / Struik Nature (online edition)",
+          "year": null
+        },
+        {
+          "title": "The Atlas of Southern African Birds, Vol. 1 (spread 122)",
+          "url": "https://sabap2.birdmap.africa/docs/sabap1/122.pdf",
+          "publisher": "BirdLife South Africa / Avian Demography Unit",
+          "year": 1997
+        },
+        {
+          "title": "The Atlas of Southern African Birds, Vol. 1 (spread 123)",
+          "url": "https://sabap2.birdmap.africa/docs/sabap1/123.pdf",
+          "publisher": "BirdLife South Africa / Avian Demography Unit",
+          "year": 1997
+        },
+        {
+          "title": "Biodiversity Explorer species text (summarised from Roberts Birds of Southern Africa VIIth ed., Hockey, Dean & Ryan 2005)",
+          "url": "https://www.biodiversityexplorer.info/birds/accipitridae/gyps_africanus.htm",
+          "publisher": "Iziko Museums of South Africa",
+          "year": null
+        },
+        {
+          "title": "Wikipedia — White-backed vulture",
+          "url": "https://en.wikipedia.org/wiki/White-backed_vulture",
+          "publisher": "Wikimedia Foundation",
+          "year": 2026
+        },
+        {
+          "title": "GBIF occurrence month facets for Gyps africanus, Kruger bounding box (lon 31.0–32.04, lat −25.53 to −22.33, country ZA)",
+          "url": "https://api.gbif.org/v1/occurrence/search",
+          "publisher": "GBIF.org",
+          "year": 2026
+        },
+        {
+          "title": "xeno-canto recordings (metadata via GBIF dataset b1047888-ae52-4179-9dd5-5448ea342a24)",
+          "url": "https://xeno-canto.org/",
+          "publisher": "xeno-canto.org / GBIF",
+          "year": 2026
+        },
+        {
+          "title": "Wikimedia Commons species category images",
+          "url": "https://commons.wikimedia.org/",
+          "publisher": "Wikimedia Commons",
+          "year": 2026
         }
       ]
     },
@@ -4232,14 +6223,71 @@
       "slug": "gyps-coprotheres",
       "scientificName": "Gyps coprotheres",
       "commonName": "Cape Vulture",
-      "images": [],
-      "recordings": [],
+      "images": [
+        {
+          "key": "gyps-coprotheres/perched-side-1.jpg",
+          "author": "agujaceratops",
+          "licence": "CC BY 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by/4.0/",
+          "sourceUrl": "https://www.inaturalist.org/observations/135010967",
+          "aiGenerated": false,
+          "hosted": false
+        },
+        {
+          "key": "gyps-coprotheres/perched-front-2.jpg",
+          "author": "JMK",
+          "licence": "CC BY-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Pretoria-dieretuin,_Gyps_coprotheres,_kop,_a.jpg",
+          "aiGenerated": false,
+          "hosted": false
+        },
+        {
+          "key": "gyps-coprotheres/flight-above-4.jpg",
+          "author": "NJR ZA",
+          "licence": "CC BY-SA 3.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Cape_Vulture-001.jpg",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ],
+      "recordings": [
+        {
+          "key": "xeno-canto/XC369789",
+          "author": "W.J. Rossouw",
+          "licence": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "sourceUrl": "https://xeno-canto.org/369789",
+          "aiGenerated": false,
+          "hosted": false,
+          "callType": "call"
+        }
+      ],
       "sources": [
         {
           "title": "Kemp A.C., Herholdt J.J., Whyte I. & Harrison J. (2001). Birds of the two largest national parks in South Africa: a method to generate estimates of population size for all species and assess their conservation ecology. S. Afr. J. Sci. 97: 393–403.",
           "url": "https://journals.co.za/doi/pdf/10.10520/EJC97367",
           "publisher": "South African Journal of Science",
           "year": 2001
+        },
+        {
+          "title": "Newman's Birds — Cape Vulture species page",
+          "url": "https://newmansbirds.com/birds/cape-vulture/",
+          "publisher": "Newman's Birds / Struik Nature (online edition)",
+          "year": null
+        },
+        {
+          "title": "The Atlas of Southern African Birds, Vol. 1 (spread 122)",
+          "url": "https://sabap2.birdmap.africa/docs/sabap1/122.pdf",
+          "publisher": "BirdLife South Africa / Avian Demography Unit",
+          "year": 1997
+        },
+        {
+          "title": "Wikipedia — Cape Vulture",
+          "url": "https://en.wikipedia.org/wiki/Cape_vulture",
+          "publisher": "Wikimedia Foundation",
+          "year": null
         }
       ]
     },
@@ -4822,14 +6870,91 @@
       "slug": "hieraaetus-pennatus",
       "scientificName": "Hieraaetus pennatus",
       "commonName": "Booted Eagle",
-      "images": [],
-      "recordings": [],
+      "images": [
+        {
+          "key": "hieraaetus-pennatus/perched-side-1.jpg",
+          "author": "gilgit2",
+          "licence": "CC BY-SA 2.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Booted_Eagle_(Hieraaetus_pennatus).jpg",
+          "aiGenerated": false,
+          "hosted": false
+        },
+        {
+          "key": "hieraaetus-pennatus/perched-front-2.jpg",
+          "author": "Derek Keats from Johannesburg, South Africa",
+          "licence": "CC BY 2.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by/2.0",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Booted_eagle,_Hieraaetus_pennatus,_at_Kgalagadi_Transfrontier_Pa_(32334023348).jpg",
+          "aiGenerated": false,
+          "hosted": false
+        },
+        {
+          "key": "hieraaetus-pennatus/flight-above-3.jpg",
+          "author": "Shino jacob koottanad",
+          "licence": "CC BY-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Booted_eagle,Hieraaetus_pennatus,_flight.jpg",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ],
+      "recordings": [
+        {
+          "key": "xeno-canto/XC437622",
+          "author": "Murray Christian",
+          "licence": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "sourceUrl": "https://xeno-canto.org/437622",
+          "aiGenerated": false,
+          "hosted": false,
+          "callType": "call"
+        },
+        {
+          "key": "xeno-canto/XC351821",
+          "author": "Alan Collett",
+          "licence": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "sourceUrl": "https://xeno-canto.org/351821",
+          "aiGenerated": false,
+          "hosted": false,
+          "callType": "call"
+        },
+        {
+          "key": "xeno-canto/XC301874",
+          "author": "Alan Collett",
+          "licence": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "sourceUrl": "https://xeno-canto.org/301874",
+          "aiGenerated": false,
+          "hosted": false,
+          "callType": "call"
+        }
+      ],
       "sources": [
         {
           "title": "Kemp A.C., Herholdt J.J., Whyte I. & Harrison J. (2001). Birds of the two largest national parks in South Africa: a method to generate estimates of population size for all species and assess their conservation ecology. S. Afr. J. Sci. 97: 393–403.",
           "url": "https://journals.co.za/doi/pdf/10.10520/EJC97367",
           "publisher": "South African Journal of Science",
           "year": 2001
+        },
+        {
+          "title": "Newman's Birds — Booted Eagle species page",
+          "url": "https://newmansbirds.com/birds/booted-eagle/",
+          "publisher": "Newman's Birds / Struik Nature (online edition)",
+          "year": null
+        },
+        {
+          "title": "The Atlas of Southern African Birds, Vol. 1 (spread 136)",
+          "url": "https://sabap2.birdmap.africa/docs/sabap1/136.pdf",
+          "publisher": "BirdLife South Africa / Avian Demography Unit",
+          "year": 1997
+        },
+        {
+          "title": "Wikipedia — Booted Eagle",
+          "url": "https://en.wikipedia.org/wiki/Booted_eagle",
+          "publisher": "Wikimedia Foundation",
+          "year": null
         }
       ]
     },
@@ -4837,14 +6962,108 @@
       "slug": "hieraaetus-wahlbergi",
       "scientificName": "Hieraaetus wahlbergi",
       "commonName": "Wahlberg’s Eagle",
-      "images": [],
-      "recordings": [],
+      "images": [
+        {
+          "key": "hieraaetus-wahlbergi/perched-side-1.jpg",
+          "author": "Doug newman at English Wikipedia",
+          "licence": "Public domain",
+          "licenceUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Aquila_wahlbergi.jpg",
+          "aiGenerated": false,
+          "hosted": false
+        },
+        {
+          "key": "hieraaetus-wahlbergi/perched-back-2.jpg",
+          "author": "Will Richardson",
+          "licence": "CC BY-NC 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+          "sourceUrl": "https://www.inaturalist.org/observations/337309383",
+          "aiGenerated": false,
+          "hosted": false
+        },
+        {
+          "key": "hieraaetus-wahlbergi/flight-above-3.jpg",
+          "author": "Leonie Kellermann",
+          "licence": "CC BY-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Hieraaetus_wahlbergi,_Pietersburg,_Kellermann,_a.jpg",
+          "aiGenerated": false,
+          "hosted": false
+        },
+        {
+          "key": "hieraaetus-wahlbergi/flight-below-4.jpg",
+          "author": "Ron Knight from Seaford, East Sussex, United Kingdom",
+          "licence": "CC BY 2.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by/2.0",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Wahlberg's_Eagle_(Hieraaetus_wahlbergi)_(8080043861).jpg",
+          "aiGenerated": false,
+          "hosted": false
+        },
+        {
+          "key": "hieraaetus-wahlbergi/perched-side-5.jpg",
+          "author": "Bernard DUPONT from FRANCE",
+          "licence": "CC BY-SA 2.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Day_24_Wahlberg's_Eagle_(Hieraaetus_wahlbergi)_(53471594494).jpg",
+          "aiGenerated": false,
+          "hosted": false
+        },
+        {
+          "key": "hieraaetus-wahlbergi/perched-side-6.jpg",
+          "author": "Bernard DUPONT from FRANCE",
+          "licence": "CC BY-SA 2.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Day_24_Wahlberg's_Eagle_(Hieraaetus_wahlbergi)_mobbed_by_two_Fork-tailed_Drongos_(Dicrurus_adsimilis)_(53257250259).jpg",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ],
+      "recordings": [
+        {
+          "key": "xeno-canto/XC881394",
+          "author": "Oliver Fowler",
+          "licence": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "sourceUrl": "https://xeno-canto.org/881394",
+          "aiGenerated": false,
+          "hosted": false,
+          "callType": "call"
+        },
+        {
+          "key": "xeno-canto/XC352650",
+          "author": "David C. Moyer",
+          "licence": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "sourceUrl": "https://xeno-canto.org/352650",
+          "aiGenerated": false,
+          "hosted": false,
+          "callType": "call"
+        }
+      ],
       "sources": [
         {
           "title": "Kemp A.C., Herholdt J.J., Whyte I. & Harrison J. (2001). Birds of the two largest national parks in South Africa: a method to generate estimates of population size for all species and assess their conservation ecology. S. Afr. J. Sci. 97: 393–403.",
           "url": "https://journals.co.za/doi/pdf/10.10520/EJC97367",
           "publisher": "South African Journal of Science",
           "year": 2001
+        },
+        {
+          "title": "Newman's Birds — Wahlberg’s Eagle species page",
+          "url": "https://newmansbirds.com/birds/wahlbergs-eagle/",
+          "publisher": "Newman's Birds / Struik Nature (online edition)",
+          "year": null
+        },
+        {
+          "title": "The Atlas of Southern African Birds, Vol. 1 (spread 135)",
+          "url": "https://sabap2.birdmap.africa/docs/sabap1/135.pdf",
+          "publisher": "BirdLife South Africa / Avian Demography Unit",
+          "year": 1997
+        },
+        {
+          "title": "Wikipedia — Wahlberg’s Eagle",
+          "url": "https://en.wikipedia.org/wiki/Wahlberg%27s_eagle",
+          "publisher": "Wikimedia Foundation",
+          "year": null
         }
       ]
     },
@@ -4972,14 +7191,118 @@
       "slug": "icthyophaga-vocifer",
       "scientificName": "Icthyophaga vocifer",
       "commonName": "African Fish Eagle",
-      "images": [],
-      "recordings": [],
+      "images": [
+        {
+          "key": "icthyophaga-vocifer/perched-side-1.jpg",
+          "author": "Bernard DUPONT from FRANCE",
+          "licence": "CC BY-SA 2.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:African_Fish-Eagle_(Haliaeetus_vocifer)_(53091141268).jpg",
+          "aiGenerated": false,
+          "hosted": false
+        },
+        {
+          "key": "icthyophaga-vocifer/flight-above-2.jpg",
+          "author": "Charles J. Sharp",
+          "licence": "CC BY-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:African_fish_eagle_(Haliaeetus_vocifer)_juvenile_in_flight.jpg",
+          "aiGenerated": false,
+          "hosted": false
+        },
+        {
+          "key": "icthyophaga-vocifer/perched-side-3.jpg",
+          "author": "Bernard DUPONT from FRANCE",
+          "licence": "CC BY-SA 2.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:African_Fish-Eagles_(Haliaeetus_vocifer)_pair_..._(52477641337).jpg",
+          "aiGenerated": false,
+          "hosted": false
+        },
+        {
+          "key": "icthyophaga-vocifer/perched-side-4.jpg",
+          "author": "Bernard DUPONT from FRANCE",
+          "licence": "CC BY-SA 2.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Day_17_African_Fish-Eagle_(Haliaeetus_vocifer)_with_prey_..._(53241128178).jpg",
+          "aiGenerated": false,
+          "hosted": false
+        },
+        {
+          "key": "icthyophaga-vocifer/perched-side-5.jpg",
+          "author": "Bernard DUPONT from FRANCE",
+          "licence": "CC BY-SA 2.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Day_1_African_Fish-Eagle_(Haliaeetus_vocifer)_looking_for_fish_..._(53203434299).jpg",
+          "aiGenerated": false,
+          "hosted": false
+        },
+        {
+          "key": "icthyophaga-vocifer/perched-side-6.jpg",
+          "author": "Bernard DUPONT from FRANCE",
+          "licence": "CC BY-SA 2.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Day_30_African_Fish-Eagle_(Haliaeetus_vocifer)_(53272057759).jpg",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ],
+      "recordings": [
+        {
+          "key": "xeno-canto/XC1149038",
+          "author": "African Bioacoustics Community",
+          "licence": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "sourceUrl": "https://xeno-canto.org/1149038",
+          "aiGenerated": false,
+          "hosted": false,
+          "callType": "call"
+        },
+        {
+          "key": "xeno-canto/XC1149045",
+          "author": "African Bioacoustics Community",
+          "licence": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "sourceUrl": "https://xeno-canto.org/1149045",
+          "aiGenerated": false,
+          "hosted": false,
+          "callType": "call"
+        },
+        {
+          "key": "xeno-canto/XC1144970",
+          "author": "Walter Wallner",
+          "licence": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "sourceUrl": "https://xeno-canto.org/1144970",
+          "aiGenerated": false,
+          "hosted": false,
+          "callType": "call"
+        }
+      ],
       "sources": [
         {
           "title": "Kemp A.C., Herholdt J.J., Whyte I. & Harrison J. (2001). Birds of the two largest national parks in South Africa: a method to generate estimates of population size for all species and assess their conservation ecology. S. Afr. J. Sci. 97: 393–403.",
           "url": "https://journals.co.za/doi/pdf/10.10520/EJC97367",
           "publisher": "South African Journal of Science",
           "year": 2001
+        },
+        {
+          "title": "Newman's Birds — African Fish Eagle species page",
+          "url": "https://newmansbirds.com/birds/african-fish-eagle/",
+          "publisher": "Newman's Birds / Struik Nature (online edition)",
+          "year": null
+        },
+        {
+          "title": "The Atlas of Southern African Birds, Vol. 1 (spread 148)",
+          "url": "https://sabap2.birdmap.africa/docs/sabap1/148.pdf",
+          "publisher": "BirdLife South Africa / Avian Demography Unit",
+          "year": 1997
+        },
+        {
+          "title": "Wikipedia — African Fish Eagle",
+          "url": "https://en.wikipedia.org/wiki/African_fish_eagle",
+          "publisher": "Wikimedia Foundation",
+          "year": null
         }
       ]
     },
@@ -5157,14 +7480,118 @@
       "slug": "kaupifalco-monogrammicus",
       "scientificName": "Kaupifalco monogrammicus",
       "commonName": "Lizard Buzzard",
-      "images": [],
-      "recordings": [],
+      "images": [
+        {
+          "key": "kaupifalco-monogrammicus/perched-side-1.jpg",
+          "author": "Bernard DUPONT from FRANCE",
+          "licence": "CC BY-SA 2.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Lizard_Buzzard_(Kaupifalco_monogrammicus)_(52130888403).jpg",
+          "aiGenerated": false,
+          "hosted": false
+        },
+        {
+          "key": "kaupifalco-monogrammicus/perched-side-2.jpg",
+          "author": "Bernard DUPONT from FRANCE",
+          "licence": "CC BY-SA 2.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Lizard_Buzzard_(Kaupifalco_monogrammicus)_(52499190288).jpg",
+          "aiGenerated": false,
+          "hosted": false
+        },
+        {
+          "key": "kaupifalco-monogrammicus/perched-side-3.jpg",
+          "author": "Bernard DUPONT from FRANCE",
+          "licence": "CC BY-SA 2.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Lizard_Buzzard_(Kaupifalco_monogrammicus)_(52795796759).jpg",
+          "aiGenerated": false,
+          "hosted": false
+        },
+        {
+          "key": "kaupifalco-monogrammicus/perched-side-4.jpg",
+          "author": "Bernard DUPONT from FRANCE",
+          "licence": "CC BY-SA 2.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Lizard_Buzzard_(Kaupifalco_monogrammicus)_(53062787571).jpg",
+          "aiGenerated": false,
+          "hosted": false
+        },
+        {
+          "key": "kaupifalco-monogrammicus/perched-side-5.jpg",
+          "author": "Bernard DUPONT from FRANCE",
+          "licence": "CC BY-SA 2.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Lizard_Buzzard_(Kaupifalco_monogrammicus)_(53063173110).jpg",
+          "aiGenerated": false,
+          "hosted": false
+        },
+        {
+          "key": "kaupifalco-monogrammicus/perched-side-6.jpg",
+          "author": "Gianluca Zani",
+          "licence": "CC BY-NC 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+          "sourceUrl": "https://www.inaturalist.org/observations/386616666",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ],
+      "recordings": [
+        {
+          "key": "xeno-canto/XC1165785",
+          "author": "Jonathan Onongo",
+          "licence": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "sourceUrl": "https://xeno-canto.org/1165785",
+          "aiGenerated": false,
+          "hosted": false,
+          "callType": "call"
+        },
+        {
+          "key": "xeno-canto/XC1165786",
+          "author": "Jonathan Onongo",
+          "licence": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "sourceUrl": "https://xeno-canto.org/1165786",
+          "aiGenerated": false,
+          "hosted": false,
+          "callType": "call"
+        },
+        {
+          "key": "xeno-canto/XC975911",
+          "author": "Jonathan Onongo",
+          "licence": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "sourceUrl": "https://xeno-canto.org/975911",
+          "aiGenerated": false,
+          "hosted": false,
+          "callType": "call"
+        }
+      ],
       "sources": [
         {
           "title": "Kemp A.C., Herholdt J.J., Whyte I. & Harrison J. (2001). Birds of the two largest national parks in South Africa: a method to generate estimates of population size for all species and assess their conservation ecology. S. Afr. J. Sci. 97: 393–403.",
           "url": "https://journals.co.za/doi/pdf/10.10520/EJC97367",
           "publisher": "South African Journal of Science",
           "year": 2001
+        },
+        {
+          "title": "Newman's Birds — Lizard Buzzard species page",
+          "url": "https://newmansbirds.com/birds/lizard-buzzard/",
+          "publisher": "Newman's Birds / Struik Nature (online edition)",
+          "year": null
+        },
+        {
+          "title": "The Atlas of Southern African Birds, Vol. 1 (spread 154)",
+          "url": "https://sabap2.birdmap.africa/docs/sabap1/154.pdf",
+          "publisher": "BirdLife South Africa / Avian Demography Unit",
+          "year": 1997
+        },
+        {
+          "title": "Wikipedia — Lizard Buzzard",
+          "url": "https://en.wikipedia.org/wiki/Lizard_buzzard",
+          "publisher": "Wikimedia Foundation",
+          "year": null
         }
       ]
     },
@@ -5427,14 +7854,91 @@
       "slug": "lophaetus-occipitalis",
       "scientificName": "Lophaetus occipitalis",
       "commonName": "Long-crested Eagle",
-      "images": [],
-      "recordings": [],
+      "images": [
+        {
+          "key": "lophaetus-occipitalis/perched-side-1.jpg",
+          "author": "Derek Keats from Johannesburg, South Africa",
+          "licence": "CC BY 2.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by/2.0",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Long-crested_Eagle_(Lophaetus_occipitalis)_KwaZulu_Natal.jpg",
+          "aiGenerated": false,
+          "hosted": false
+        },
+        {
+          "key": "lophaetus-occipitalis/flight-above-2.jpg",
+          "author": "Peter Vos",
+          "licence": "CC BY-NC 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+          "sourceUrl": "https://www.inaturalist.org/observations/97515716",
+          "aiGenerated": false,
+          "hosted": false
+        },
+        {
+          "key": "lophaetus-occipitalis/perched-side-3.jpg",
+          "author": "Lip Kee Yap",
+          "licence": "CC BY-SA 2.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Long-crested_eagle_(Lophaetus_occipitalis).jpg",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ],
+      "recordings": [
+        {
+          "key": "xeno-canto/XC910891",
+          "author": "Nick Schaller",
+          "licence": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "sourceUrl": "https://xeno-canto.org/910891",
+          "aiGenerated": false,
+          "hosted": false,
+          "callType": "call"
+        },
+        {
+          "key": "xeno-canto/XC561580",
+          "author": "Tim Cockcroft",
+          "licence": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "sourceUrl": "https://xeno-canto.org/561580",
+          "aiGenerated": false,
+          "hosted": false,
+          "callType": "call"
+        },
+        {
+          "key": "xeno-canto/XC449486",
+          "author": "Murray Christian",
+          "licence": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "sourceUrl": "https://xeno-canto.org/449486",
+          "aiGenerated": false,
+          "hosted": false,
+          "callType": "call"
+        }
+      ],
       "sources": [
         {
           "title": "Kemp A.C., Herholdt J.J., Whyte I. & Harrison J. (2001). Birds of the two largest national parks in South Africa: a method to generate estimates of population size for all species and assess their conservation ecology. S. Afr. J. Sci. 97: 393–403.",
           "url": "https://journals.co.za/doi/pdf/10.10520/EJC97367",
           "publisher": "South African Journal of Science",
           "year": 2001
+        },
+        {
+          "title": "Newman's Birds — Long-crested Eagle species page",
+          "url": "https://newmansbirds.com/birds/long-crested-eagle/",
+          "publisher": "Newman's Birds / Struik Nature (online edition)",
+          "year": null
+        },
+        {
+          "title": "The Atlas of Southern African Birds, Vol. 1 (spread 139)",
+          "url": "https://sabap2.birdmap.africa/docs/sabap1/139.pdf",
+          "publisher": "BirdLife South Africa / Avian Demography Unit",
+          "year": 1997
+        },
+        {
+          "title": "Wikipedia — Long-crested Eagle",
+          "url": "https://en.wikipedia.org/wiki/Long-crested_eagle",
+          "publisher": "Wikimedia Foundation",
+          "year": null
         }
       ]
     },
@@ -5518,13 +8022,62 @@
       "scientificName": "Macheiramphus alcinus",
       "commonName": "Bat Hawk",
       "images": [],
-      "recordings": [],
+      "recordings": [
+        {
+          "key": "xeno-canto/XC730910",
+          "author": "GABRIEL LEITE",
+          "licence": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "sourceUrl": "https://xeno-canto.org/730910",
+          "aiGenerated": false,
+          "hosted": false,
+          "callType": "call"
+        },
+        {
+          "key": "xeno-canto/XC422135",
+          "author": "Hans Groot",
+          "licence": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "sourceUrl": "https://xeno-canto.org/422135",
+          "aiGenerated": false,
+          "hosted": false,
+          "callType": "call"
+        },
+        {
+          "key": "xeno-canto/XC244201",
+          "author": "Mike Nelson",
+          "licence": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "sourceUrl": "https://xeno-canto.org/244201",
+          "aiGenerated": false,
+          "hosted": false,
+          "callType": "call"
+        }
+      ],
       "sources": [
         {
           "title": "Kemp A.C., Herholdt J.J., Whyte I. & Harrison J. (2001). Birds of the two largest national parks in South Africa: a method to generate estimates of population size for all species and assess their conservation ecology. S. Afr. J. Sci. 97: 393–403.",
           "url": "https://journals.co.za/doi/pdf/10.10520/EJC97367",
           "publisher": "South African Journal of Science",
           "year": 2001
+        },
+        {
+          "title": "Newman's Birds — Bat Hawk species page",
+          "url": "https://newmansbirds.com/birds/bat-hawk/",
+          "publisher": "Newman's Birds / Struik Nature (online edition)",
+          "year": null
+        },
+        {
+          "title": "The Atlas of Southern African Birds, Vol. 1 (spread 129)",
+          "url": "https://sabap2.birdmap.africa/docs/sabap1/129.pdf",
+          "publisher": "BirdLife South Africa / Avian Demography Unit",
+          "year": 1997
+        },
+        {
+          "title": "Wikipedia — Bat Hawk",
+          "url": "https://en.wikipedia.org/wiki/Bat_hawk",
+          "publisher": "Wikimedia Foundation",
+          "year": null
         }
       ]
     },
@@ -5729,14 +8282,118 @@
       "slug": "melierax-metabates",
       "scientificName": "Melierax metabates",
       "commonName": "Dark Chanting Goshawk",
-      "images": [],
-      "recordings": [],
+      "images": [
+        {
+          "key": "melierax-metabates/perched-side-1.jpg",
+          "author": "Bernard DUPONT from FRANCE",
+          "licence": "CC BY-SA 2.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Dark_Chanting-Goshawk_(Melierax_metabates)_(52728029218).jpg",
+          "aiGenerated": false,
+          "hosted": false
+        },
+        {
+          "key": "melierax-metabates/flight-above-2.jpg",
+          "author": "Charles J. Sharp",
+          "licence": "CC BY-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Dark_chanting_goshawk_(Melierax_metabates_metabates)_in_flight_Serengeti.jpg",
+          "aiGenerated": false,
+          "hosted": false
+        },
+        {
+          "key": "melierax-metabates/perched-side-3.jpg",
+          "author": "Bernard DUPONT from FRANCE",
+          "licence": "CC BY-SA 2.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Dark_Chanting-Goshawk_(Melierax_metabates)_(52731489793).jpg",
+          "aiGenerated": false,
+          "hosted": false
+        },
+        {
+          "key": "melierax-metabates/perched-side-4.jpg",
+          "author": "Bernard DUPONT from FRANCE",
+          "licence": "CC BY-SA 2.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Dark_Chanting-Goshawk_(Melierax_metabates)_(52959591513).jpg",
+          "aiGenerated": false,
+          "hosted": false
+        },
+        {
+          "key": "melierax-metabates/perched-side-5.jpg",
+          "author": "Bernard DUPONT from FRANCE",
+          "licence": "CC BY-SA 2.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Dark_Chanting_Goshawk_(Melierax_metabates)_-_Flickr_-_berniedup.jpg",
+          "aiGenerated": false,
+          "hosted": false
+        },
+        {
+          "key": "melierax-metabates/perched-side-6.jpg",
+          "author": "Bernard DUPONT from FRANCE",
+          "licence": "CC BY-SA 2.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Dark_Chanting-Goshawk_(Melierax_metabates)_immature_..._(53120176715).jpg",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ],
+      "recordings": [
+        {
+          "key": "xeno-canto/XC589156",
+          "author": "Sun Madakan",
+          "licence": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "sourceUrl": "https://xeno-canto.org/589156",
+          "aiGenerated": false,
+          "hosted": false,
+          "callType": "call"
+        },
+        {
+          "key": "xeno-canto/XC597079",
+          "author": "Sun Madakan",
+          "licence": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "sourceUrl": "https://xeno-canto.org/597079",
+          "aiGenerated": false,
+          "hosted": false,
+          "callType": "call"
+        },
+        {
+          "key": "xeno-canto/XC597075",
+          "author": "Sun Madakan",
+          "licence": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "sourceUrl": "https://xeno-canto.org/597075",
+          "aiGenerated": false,
+          "hosted": false,
+          "callType": "call"
+        }
+      ],
       "sources": [
         {
           "title": "Kemp A.C., Herholdt J.J., Whyte I. & Harrison J. (2001). Birds of the two largest national parks in South Africa: a method to generate estimates of population size for all species and assess their conservation ecology. S. Afr. J. Sci. 97: 393–403.",
           "url": "https://journals.co.za/doi/pdf/10.10520/EJC97367",
           "publisher": "South African Journal of Science",
           "year": 2001
+        },
+        {
+          "title": "Newman's Birds — Dark Chanting Goshawk species page",
+          "url": "https://newmansbirds.com/birds/dark-chanting-goshawk/",
+          "publisher": "Newman's Birds / Struik Nature (online edition)",
+          "year": null
+        },
+        {
+          "title": "The Atlas of Southern African Birds, Vol. 1 (spread 163)",
+          "url": "https://sabap2.birdmap.africa/docs/sabap1/163.pdf",
+          "publisher": "BirdLife South Africa / Avian Demography Unit",
+          "year": 1997
+        },
+        {
+          "title": "Wikipedia — Dark Chanting Goshawk",
+          "url": "https://en.wikipedia.org/wiki/Dark_chanting_goshawk",
+          "publisher": "Wikimedia Foundation",
+          "year": null
         }
       ]
     },
@@ -5849,14 +8506,118 @@
       "slug": "micronisus-gabar",
       "scientificName": "Micronisus gabar",
       "commonName": "Gabar Goshawk",
-      "images": [],
-      "recordings": [],
+      "images": [
+        {
+          "key": "micronisus-gabar/perched-side-1.jpg",
+          "author": "Paul Hoekman",
+          "licence": "CC BY 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by/4.0/",
+          "sourceUrl": "https://www.inaturalist.org/observations/280778651",
+          "aiGenerated": false,
+          "hosted": false
+        },
+        {
+          "key": "micronisus-gabar/perched-front-2.jpg",
+          "author": "Bernard DUPONT from FRANCE",
+          "licence": "CC BY-SA 2.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Gabar_Goshawk_(Melierax_gabar)_(6487152705).jpg",
+          "aiGenerated": false,
+          "hosted": false
+        },
+        {
+          "key": "micronisus-gabar/perched-side-3.jpg",
+          "author": "Ernest Porter",
+          "licence": "CC BY-NC 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+          "sourceUrl": "https://www.inaturalist.org/observations/10970441",
+          "aiGenerated": false,
+          "hosted": false
+        },
+        {
+          "key": "micronisus-gabar/perched-side-4.jpg",
+          "author": "christiaan_viljoen",
+          "licence": "CC BY 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by/4.0",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:2021-04-08_Micronisus_gabar,_Mokala_National_Park,_South_Africa_3.jpg",
+          "aiGenerated": false,
+          "hosted": false
+        },
+        {
+          "key": "micronisus-gabar/perched-side-5.jpg",
+          "author": "christiaan_viljoen",
+          "licence": "CC BY 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by/4.0",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:2021-04-08_Micronisus_gabar,_Mokala_National_Park,_South_Africa_4.jpg",
+          "aiGenerated": false,
+          "hosted": false
+        },
+        {
+          "key": "micronisus-gabar/perched-side-6.jpg",
+          "author": "flowcomm",
+          "licence": "CC BY 2.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by/2.0",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Dark_morph_of_Gabar_goshawk,_Madikwe_(52231265754).jpg",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ],
+      "recordings": [
+        {
+          "key": "xeno-canto/XC1100393",
+          "author": "Marna Buys",
+          "licence": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "sourceUrl": "https://xeno-canto.org/1100393",
+          "aiGenerated": false,
+          "hosted": false,
+          "callType": "call"
+        },
+        {
+          "key": "xeno-canto/XC1141677",
+          "author": "Bs4D",
+          "licence": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "sourceUrl": "https://xeno-canto.org/1141677",
+          "aiGenerated": false,
+          "hosted": false,
+          "callType": "call"
+        },
+        {
+          "key": "xeno-canto/XC700773",
+          "author": "Tony Archer",
+          "licence": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "sourceUrl": "https://xeno-canto.org/700773",
+          "aiGenerated": false,
+          "hosted": false,
+          "callType": "call"
+        }
+      ],
       "sources": [
         {
           "title": "Kemp A.C., Herholdt J.J., Whyte I. & Harrison J. (2001). Birds of the two largest national parks in South Africa: a method to generate estimates of population size for all species and assess their conservation ecology. S. Afr. J. Sci. 97: 393–403.",
           "url": "https://journals.co.za/doi/pdf/10.10520/EJC97367",
           "publisher": "South African Journal of Science",
           "year": 2001
+        },
+        {
+          "title": "Newman's Birds — Gabar Goshawk species page",
+          "url": "https://newmansbirds.com/birds/gabar-goshawk/",
+          "publisher": "Newman's Birds / Struik Nature (online edition)",
+          "year": null
+        },
+        {
+          "title": "The Atlas of Southern African Birds, Vol. 1 (spread 161)",
+          "url": "https://sabap2.birdmap.africa/docs/sabap1/161.pdf",
+          "publisher": "BirdLife South Africa / Avian Demography Unit",
+          "year": 1997
+        },
+        {
+          "title": "Wikipedia — Gabar Goshawk",
+          "url": "https://en.wikipedia.org/wiki/Gabar_goshawk",
+          "publisher": "Wikimedia Foundation",
+          "year": null
         }
       ]
     },
@@ -5879,14 +8640,100 @@
       "slug": "milvus-migrans",
       "scientificName": "Milvus migrans",
       "commonName": "Black Kite",
-      "images": [],
-      "recordings": [],
+      "images": [
+        {
+          "key": "milvus-migrans/perched-side-1.jpg",
+          "author": "Jakub Hałun",
+          "licence": "CC BY-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:20191203_Milvus_migrans_govinda_0541_6421_DxO.jpg",
+          "aiGenerated": false,
+          "hosted": false
+        },
+        {
+          "key": "milvus-migrans/perched-front-2.jpg",
+          "author": "Tim Sträter",
+          "licence": "CC BY 2.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by/2.0",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Milvus_migrans_head.jpg",
+          "aiGenerated": false,
+          "hosted": false
+        },
+        {
+          "key": "milvus-migrans/flight-above-3.jpg",
+          "author": "ADARSHluck",
+          "licence": "CC BY-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Black_kite_(Milvus_migrans)_D35_6638_01.jpg",
+          "aiGenerated": false,
+          "hosted": false
+        },
+        {
+          "key": "milvus-migrans/perched-side-4.jpg",
+          "author": "Mildeep",
+          "licence": "CC BY-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Black_Kite_(Milvus_migrans)-_Juvenile.jpg",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ],
+      "recordings": [
+        {
+          "key": "xeno-canto/XC1075223",
+          "author": "Jonathan Onongo",
+          "licence": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "sourceUrl": "https://xeno-canto.org/1075223",
+          "aiGenerated": false,
+          "hosted": false,
+          "callType": "call"
+        },
+        {
+          "key": "xeno-canto/XC1092243",
+          "author": "Sven Normant",
+          "licence": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "sourceUrl": "https://xeno-canto.org/1092243",
+          "aiGenerated": false,
+          "hosted": false,
+          "callType": "call"
+        },
+        {
+          "key": "xeno-canto/XC1099112",
+          "author": "Tom Cooney",
+          "licence": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "sourceUrl": "https://xeno-canto.org/1099112",
+          "aiGenerated": false,
+          "hosted": false,
+          "callType": "call"
+        }
+      ],
       "sources": [
         {
           "title": "Kemp A.C., Herholdt J.J., Whyte I. & Harrison J. (2001). Birds of the two largest national parks in South Africa: a method to generate estimates of population size for all species and assess their conservation ecology. S. Afr. J. Sci. 97: 393–403.",
           "url": "https://journals.co.za/doi/pdf/10.10520/EJC97367",
           "publisher": "South African Journal of Science",
           "year": 2001
+        },
+        {
+          "title": "Newman's Birds — Black Kite species page",
+          "url": "https://newmansbirds.com/birds/yellow-billed-kite/",
+          "publisher": "Newman's Birds / Struik Nature (online edition)",
+          "year": null
+        },
+        {
+          "title": "The Atlas of Southern African Birds, Vol. 1 (spread 126)",
+          "url": "https://sabap2.birdmap.africa/docs/sabap1/126.pdf",
+          "publisher": "BirdLife South Africa / Avian Demography Unit",
+          "year": 1997
+        },
+        {
+          "title": "Wikipedia — Black Kite",
+          "url": "https://en.wikipedia.org/wiki/Black_kite",
+          "publisher": "Wikimedia Foundation",
+          "year": null
         }
       ]
     },
@@ -6029,7 +8876,62 @@
       "slug": "necrosyrtes-monachus",
       "scientificName": "Necrosyrtes monachus",
       "commonName": "Hooded Vulture",
-      "images": [],
+      "images": [
+        {
+          "key": "necrosyrtes-monachus/perched-side-1.jpg",
+          "author": "Bernard DUPONT from FRANCE",
+          "licence": "CC BY-SA 2.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Day_20_Hooded_Vultures_(Necrosyrtes_monachus)_(53248492003).jpg",
+          "aiGenerated": false,
+          "hosted": false
+        },
+        {
+          "key": "necrosyrtes-monachus/perched-front-2.jpg",
+          "author": "Cliff from Arlington, Virginia, USA",
+          "licence": "CC BY 2.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by/2.0",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Hooded_Vulture_(Necrosyrtes_monachus)_(2855059480).jpg",
+          "aiGenerated": false,
+          "hosted": false
+        },
+        {
+          "key": "necrosyrtes-monachus/perched-side-3.jpg",
+          "author": "Bernard DUPONT from FRANCE",
+          "licence": "CC BY-SA 2.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Day_20_Hooded_Vultures_(Necrosyrtes_monachus)_looking_in_buffalo_bowels_..._(53248194651).jpg",
+          "aiGenerated": false,
+          "hosted": false
+        },
+        {
+          "key": "necrosyrtes-monachus/perched-side-4.jpg",
+          "author": "Bernard DUPONT from FRANCE",
+          "licence": "CC BY-SA 2.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Hooded_Vulture_(Necrosyrtes_monachus)_(32466950623).jpg",
+          "aiGenerated": false,
+          "hosted": false
+        },
+        {
+          "key": "necrosyrtes-monachus/perched-side-5.jpg",
+          "author": "Bernard DUPONT from FRANCE",
+          "licence": "CC BY-SA 2.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Hooded_Vulture_(Necrosyrtes_monachus)_(33588736368).jpg",
+          "aiGenerated": false,
+          "hosted": false
+        },
+        {
+          "key": "necrosyrtes-monachus/perched-side-6.jpg",
+          "author": "Bernard DUPONT from FRANCE",
+          "licence": "CC BY-SA 2.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Hooded_Vulture_(Necrosyrtes_monachus)_(51681773800).jpg",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ],
       "recordings": [],
       "sources": [
         {
@@ -6037,6 +8939,24 @@
           "url": "https://journals.co.za/doi/pdf/10.10520/EJC97367",
           "publisher": "South African Journal of Science",
           "year": 2001
+        },
+        {
+          "title": "Newman's Birds — Hooded Vulture species page",
+          "url": "https://newmansbirds.com/birds/hooded-vulture/",
+          "publisher": "Newman's Birds / Struik Nature (online edition)",
+          "year": null
+        },
+        {
+          "title": "The Atlas of Southern African Birds, Vol. 1 (spread 121)",
+          "url": "https://sabap2.birdmap.africa/docs/sabap1/121.pdf",
+          "publisher": "BirdLife South Africa / Avian Demography Unit",
+          "year": 1997
+        },
+        {
+          "title": "Wikipedia — Hooded Vulture",
+          "url": "https://en.wikipedia.org/wiki/Hooded_vulture",
+          "publisher": "Wikimedia Foundation",
+          "year": null
         }
       ]
     },
@@ -6419,14 +9339,100 @@
       "slug": "pernis-apivorus",
       "scientificName": "Pernis apivorus",
       "commonName": "European Honey Buzzard",
-      "images": [],
-      "recordings": [],
+      "images": [
+        {
+          "key": "pernis-apivorus/perched-side-1.jpg",
+          "author": "leuli",
+          "licence": "CC BY-NC 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+          "sourceUrl": "https://www.inaturalist.org/observations/105975160",
+          "aiGenerated": false,
+          "hosted": false
+        },
+        {
+          "key": "pernis-apivorus/flight-above-2.jpg",
+          "author": "Charles J. Sharp",
+          "licence": "CC BY-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:European_honey-buzzard_(Pernis_apivorus)_in_flight_Babadag.jpg",
+          "aiGenerated": false,
+          "hosted": false
+        },
+        {
+          "key": "pernis-apivorus/perched-side-3.jpg",
+          "author": "Maans Booysen, Birding Weto",
+          "licence": "CC BY-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Pernis_apivorus,_onvolwassene,_Unguana,_Birding_Weto,_a.jpg",
+          "aiGenerated": false,
+          "hosted": false
+        },
+        {
+          "key": "pernis-apivorus/perched-side-4.jpg",
+          "author": "Accipiter (R. Altenkamp, Berlin)",
+          "licence": "CC BY-SA 3.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Pernis_apivorus_juv._080718.jpg",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ],
+      "recordings": [
+        {
+          "key": "xeno-canto/XC1100928",
+          "author": "Dimitri",
+          "licence": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "sourceUrl": "https://xeno-canto.org/1100928",
+          "aiGenerated": false,
+          "hosted": false,
+          "callType": "call"
+        },
+        {
+          "key": "xeno-canto/XC1143593",
+          "author": "Dimitri",
+          "licence": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "sourceUrl": "https://xeno-canto.org/1143593",
+          "aiGenerated": false,
+          "hosted": false,
+          "callType": "call"
+        },
+        {
+          "key": "xeno-canto/XC1141922",
+          "author": "brickegickel",
+          "licence": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "sourceUrl": "https://xeno-canto.org/1141922",
+          "aiGenerated": false,
+          "hosted": false,
+          "callType": "call"
+        }
+      ],
       "sources": [
         {
           "title": "Kemp A.C., Herholdt J.J., Whyte I. & Harrison J. (2001). Birds of the two largest national parks in South Africa: a method to generate estimates of population size for all species and assess their conservation ecology. S. Afr. J. Sci. 97: 393–403.",
           "url": "https://journals.co.za/doi/pdf/10.10520/EJC97367",
           "publisher": "South African Journal of Science",
           "year": 2001
+        },
+        {
+          "title": "Newman's Birds — European Honey Buzzard species page",
+          "url": "https://newmansbirds.com/birds/european-honey-buzzard/",
+          "publisher": "Newman's Birds / Struik Nature (online edition)",
+          "year": null
+        },
+        {
+          "title": "The Atlas of Southern African Birds, Vol. 1 (spread 130)",
+          "url": "https://sabap2.birdmap.africa/docs/sabap1/130.pdf",
+          "publisher": "BirdLife South Africa / Avian Demography Unit",
+          "year": 1997
+        },
+        {
+          "title": "Wikipedia — European Honey Buzzard",
+          "url": "https://en.wikipedia.org/wiki/European_honey_buzzard",
+          "publisher": "Wikimedia Foundation",
+          "year": null
         }
       ]
     },
@@ -6794,8 +9800,94 @@
       "slug": "polemaetus-bellicosus",
       "scientificName": "Polemaetus bellicosus",
       "commonName": "Martial Eagle",
-      "images": [],
-      "recordings": [],
+      "images": [
+        {
+          "key": "polemaetus-bellicosus/perched-side-1.jpg",
+          "author": "Bernard DUPONT from FRANCE",
+          "licence": "CC BY-SA 2.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Martial_Eagle_(Polemaetus_bellicosus)_(51854471490).jpg",
+          "aiGenerated": false,
+          "hosted": false
+        },
+        {
+          "key": "polemaetus-bellicosus/perched-front-2.jpg",
+          "author": "Bernard DUPONT from FRANCE",
+          "licence": "CC BY-SA 2.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Martial_Eagle_(Polemaetus_bellicosus)_juvenile_..._(31240849197).jpg",
+          "aiGenerated": false,
+          "hosted": false
+        },
+        {
+          "key": "polemaetus-bellicosus/flight-above-3.jpg",
+          "author": "Charles J. Sharp",
+          "licence": "CC BY-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Martial_eagle_(Polemaetus_bellicosus)_in_flight.jpg",
+          "aiGenerated": false,
+          "hosted": false
+        },
+        {
+          "key": "polemaetus-bellicosus/perched-side-4.jpg",
+          "author": "Bernard DUPONT from FRANCE",
+          "licence": "CC BY-SA 2.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Martial_Eagle_(Polemaetus_bellicosus)_(51859478088).jpg",
+          "aiGenerated": false,
+          "hosted": false
+        },
+        {
+          "key": "polemaetus-bellicosus/perched-side-5.jpg",
+          "author": "Bernard DUPONT from FRANCE",
+          "licence": "CC BY-SA 2.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Martial_Eagle_(Polemaetus_bellicosus)_(51860062880).jpg",
+          "aiGenerated": false,
+          "hosted": false
+        },
+        {
+          "key": "polemaetus-bellicosus/perched-side-6.jpg",
+          "author": "Bernard DUPONT from FRANCE",
+          "licence": "CC BY-SA 2.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Martial_Eagle_(Polemaetus_bellicosus)_immature_with_bird_prey_..._(52522352665).jpg",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ],
+      "recordings": [
+        {
+          "key": "xeno-canto/XC392028",
+          "author": "Tom Wulf",
+          "licence": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "sourceUrl": "https://xeno-canto.org/392028",
+          "aiGenerated": false,
+          "hosted": false,
+          "callType": "call"
+        },
+        {
+          "key": "xeno-canto/XC1148983",
+          "author": "Kileo Jumah",
+          "licence": "CC0 1.0",
+          "licenceUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+          "sourceUrl": "https://xeno-canto.org/1148983",
+          "aiGenerated": false,
+          "hosted": false,
+          "callType": "call"
+        },
+        {
+          "key": "xeno-canto/XC772438",
+          "author": "isaac kilusu",
+          "licence": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "sourceUrl": "https://xeno-canto.org/772438",
+          "aiGenerated": false,
+          "hosted": false,
+          "callType": "call"
+        }
+      ],
       "sources": [
         {
           "title": "BirdLife South Africa Red List — Martial Eagle (2025)",
@@ -6808,6 +9900,24 @@
           "url": "https://journals.co.za/doi/pdf/10.10520/EJC97367",
           "publisher": "South African Journal of Science",
           "year": 2001
+        },
+        {
+          "title": "Newman's Birds — Martial Eagle species page",
+          "url": "https://newmansbirds.com/birds/martial-eagle/",
+          "publisher": "Newman's Birds / Struik Nature (online edition)",
+          "year": null
+        },
+        {
+          "title": "The Atlas of Southern African Birds, Vol. 1 (spread 140)",
+          "url": "https://sabap2.birdmap.africa/docs/sabap1/140.pdf",
+          "publisher": "BirdLife South Africa / Avian Demography Unit",
+          "year": 1997
+        },
+        {
+          "title": "Wikipedia — Martial Eagle",
+          "url": "https://en.wikipedia.org/wiki/Martial_eagle",
+          "publisher": "Wikimedia Foundation",
+          "year": null
         }
       ]
     },
@@ -6815,14 +9925,118 @@
       "slug": "polyboroides-typus",
       "scientificName": "Polyboroides typus",
       "commonName": "African Harrier-Hawk",
-      "images": [],
-      "recordings": [],
+      "images": [
+        {
+          "key": "polyboroides-typus/perched-side-1.jpg",
+          "author": "Bernard DUPONT",
+          "licence": "CC BY-SA 2.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:African_Harrier-Hawk_(Polyboroides_typus).jpg",
+          "aiGenerated": false,
+          "hosted": false
+        },
+        {
+          "key": "polyboroides-typus/perched-back-2.jpg",
+          "author": "Marie Delport",
+          "licence": "CC BY-NC 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+          "sourceUrl": "https://www.inaturalist.org/observations/145836194",
+          "aiGenerated": false,
+          "hosted": false
+        },
+        {
+          "key": "polyboroides-typus/flight-above-3.jpg",
+          "author": "Charles J. Sharp",
+          "licence": "CC BY-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:African_harrier-hawk_(Polyboroides_typus_-_gymnogene)_in_flight.jpg",
+          "aiGenerated": false,
+          "hosted": false
+        },
+        {
+          "key": "polyboroides-typus/perched-side-4.jpg",
+          "author": "Bernard DUPONT from FRANCE",
+          "licence": "CC BY-SA 2.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:African_Harrier-Hawk_(Polyboroides_typus)_(51901186498).jpg",
+          "aiGenerated": false,
+          "hosted": false
+        },
+        {
+          "key": "polyboroides-typus/perched-side-5.jpg",
+          "author": "Bernard DUPONT from FRANCE",
+          "licence": "CC BY-SA 2.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:African_Harrier-Hawk_(Polyboroides_typus)_(51901471306).jpg",
+          "aiGenerated": false,
+          "hosted": false
+        },
+        {
+          "key": "polyboroides-typus/perched-side-6.jpg",
+          "author": "Bernard DUPONT from FRANCE",
+          "licence": "CC BY-SA 2.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:African_Harrier-Hawk_(Polyboroides_typus)_(51901559303).jpg",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ],
+      "recordings": [
+        {
+          "key": "xeno-canto/XC1039698",
+          "author": "African Bioacoustics Community",
+          "licence": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "sourceUrl": "https://xeno-canto.org/1039698",
+          "aiGenerated": false,
+          "hosted": false,
+          "callType": "call"
+        },
+        {
+          "key": "xeno-canto/XC580274",
+          "author": "Tony Archer",
+          "licence": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "sourceUrl": "https://xeno-canto.org/580274",
+          "aiGenerated": false,
+          "hosted": false,
+          "callType": "call"
+        },
+        {
+          "key": "xeno-canto/XC958205",
+          "author": "François Morand",
+          "licence": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "sourceUrl": "https://xeno-canto.org/958205",
+          "aiGenerated": false,
+          "hosted": false,
+          "callType": "call"
+        }
+      ],
       "sources": [
         {
           "title": "Kemp A.C., Herholdt J.J., Whyte I. & Harrison J. (2001). Birds of the two largest national parks in South Africa: a method to generate estimates of population size for all species and assess their conservation ecology. S. Afr. J. Sci. 97: 393–403.",
           "url": "https://journals.co.za/doi/pdf/10.10520/EJC97367",
           "publisher": "South African Journal of Science",
           "year": 2001
+        },
+        {
+          "title": "Newman's Birds — African Harrier-Hawk species page",
+          "url": "https://newmansbirds.com/birds/african-harrier-hawk/",
+          "publisher": "Newman's Birds / Struik Nature (online edition)",
+          "year": null
+        },
+        {
+          "title": "The Atlas of Southern African Birds, Vol. 1 (spread 169)",
+          "url": "https://sabap2.birdmap.africa/docs/sabap1/169.pdf",
+          "publisher": "BirdLife South Africa / Avian Demography Unit",
+          "year": 1997
+        },
+        {
+          "title": "Wikipedia — African Harrier-Hawk",
+          "url": "https://en.wikipedia.org/wiki/African_harrier-hawk",
+          "publisher": "Wikimedia Foundation",
+          "year": null
         }
       ]
     },
@@ -7430,14 +10644,100 @@
       "slug": "stephanoaetus-coronatus",
       "scientificName": "Stephanoaetus coronatus",
       "commonName": "Crowned Eagle",
-      "images": [],
-      "recordings": [],
+      "images": [
+        {
+          "key": "stephanoaetus-coronatus/perched-side-1.jpg",
+          "author": "Derek Keats from Johannesburg, South Africa",
+          "licence": "CC BY 2.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by/2.0",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Crowned_Eagle_(Stephanoaetus_coronatus),_at_Ndumo_Nature_Reserve,_KwaZulu-Natal,_South_Africa_(28328495184).jpg",
+          "aiGenerated": false,
+          "hosted": false
+        },
+        {
+          "key": "stephanoaetus-coronatus/perched-front-2.jpg",
+          "author": "Peter Vos",
+          "licence": "CC BY-NC 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+          "sourceUrl": "https://www.inaturalist.org/observations/59196802",
+          "aiGenerated": false,
+          "hosted": false
+        },
+        {
+          "key": "stephanoaetus-coronatus/flight-above-3.jpg",
+          "author": "Peter Vos",
+          "licence": "CC BY-NC 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+          "sourceUrl": "https://www.inaturalist.org/observations/305706599",
+          "aiGenerated": false,
+          "hosted": false
+        },
+        {
+          "key": "stephanoaetus-coronatus/perched-side-4.jpg",
+          "author": "Charles J. Sharp",
+          "licence": "CC BY-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:African_crowned_eagle_(Stephanoaetus_coronatus)_immature.jpg",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ],
+      "recordings": [
+        {
+          "key": "xeno-canto/XC1048064",
+          "author": "African Bioacoustics Community",
+          "licence": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "sourceUrl": "https://xeno-canto.org/1048064",
+          "aiGenerated": false,
+          "hosted": false,
+          "callType": "call"
+        },
+        {
+          "key": "xeno-canto/XC1048065",
+          "author": "African Bioacoustics Community",
+          "licence": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "sourceUrl": "https://xeno-canto.org/1048065",
+          "aiGenerated": false,
+          "hosted": false,
+          "callType": "call"
+        },
+        {
+          "key": "xeno-canto/XC1006960",
+          "author": "Richard White",
+          "licence": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "sourceUrl": "https://xeno-canto.org/1006960",
+          "aiGenerated": false,
+          "hosted": false,
+          "callType": "call"
+        }
+      ],
       "sources": [
         {
           "title": "Kemp A.C., Herholdt J.J., Whyte I. & Harrison J. (2001). Birds of the two largest national parks in South Africa: a method to generate estimates of population size for all species and assess their conservation ecology. S. Afr. J. Sci. 97: 393–403.",
           "url": "https://journals.co.za/doi/pdf/10.10520/EJC97367",
           "publisher": "South African Journal of Science",
           "year": 2001
+        },
+        {
+          "title": "Newman's Birds — Crowned Eagle species page",
+          "url": "https://newmansbirds.com/birds/crowned-eagle/",
+          "publisher": "Newman's Birds / Struik Nature (online edition)",
+          "year": null
+        },
+        {
+          "title": "The Atlas of Southern African Birds, Vol. 1 (spread 141)",
+          "url": "https://sabap2.birdmap.africa/docs/sabap1/141.pdf",
+          "publisher": "BirdLife South Africa / Avian Demography Unit",
+          "year": 1997
+        },
+        {
+          "title": "Wikipedia — Crowned Eagle",
+          "url": "https://en.wikipedia.org/wiki/Crowned_eagle",
+          "publisher": "Wikimedia Foundation",
+          "year": null
         }
       ]
     },
@@ -7580,14 +10880,91 @@
       "slug": "tachyspiza-badia",
       "scientificName": "Tachyspiza badia",
       "commonName": "Shikra",
-      "images": [],
-      "recordings": [],
+      "images": [
+        {
+          "key": "tachyspiza-badia/perched-side-1.jpg",
+          "author": "Johann Engelbrecht",
+          "licence": "CC BY-NC 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+          "sourceUrl": "https://www.inaturalist.org/observations/391829734",
+          "aiGenerated": false,
+          "hosted": false
+        },
+        {
+          "key": "tachyspiza-badia/perched-side-3.jpg",
+          "author": "Ehren",
+          "licence": "CC BY-NC 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+          "sourceUrl": "https://www.inaturalist.org/observations/259181036",
+          "aiGenerated": false,
+          "hosted": false
+        },
+        {
+          "key": "tachyspiza-badia/perched-side-5.jpg",
+          "author": "copper",
+          "licence": "CC BY-NC 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+          "sourceUrl": "https://www.inaturalist.org/observations/10215197",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ],
+      "recordings": [
+        {
+          "key": "xeno-canto/XC1095967",
+          "author": "isaac kilusu",
+          "licence": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "sourceUrl": "https://xeno-canto.org/1095967",
+          "aiGenerated": false,
+          "hosted": false,
+          "callType": "call"
+        },
+        {
+          "key": "xeno-canto/XC1095965",
+          "author": "isaac kilusu",
+          "licence": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "sourceUrl": "https://xeno-canto.org/1095965",
+          "aiGenerated": false,
+          "hosted": false,
+          "callType": "call"
+        },
+        {
+          "key": "xeno-canto/XC1076938",
+          "author": "Omkar Godbole",
+          "licence": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "sourceUrl": "https://xeno-canto.org/1076938",
+          "aiGenerated": false,
+          "hosted": false,
+          "callType": "call"
+        }
+      ],
       "sources": [
         {
           "title": "Kemp A.C., Herholdt J.J., Whyte I. & Harrison J. (2001). Birds of the two largest national parks in South Africa: a method to generate estimates of population size for all species and assess their conservation ecology. S. Afr. J. Sci. 97: 393–403.",
           "url": "https://journals.co.za/doi/pdf/10.10520/EJC97367",
           "publisher": "South African Journal of Science",
           "year": 2001
+        },
+        {
+          "title": "Newman's Birds — Shikra species page",
+          "url": "https://newmansbirds.com/birds/shikra/",
+          "publisher": "Newman's Birds / Struik Nature (online edition)",
+          "year": null
+        },
+        {
+          "title": "The Atlas of Southern African Birds, Vol. 1 (spread 159)",
+          "url": "https://sabap2.birdmap.africa/docs/sabap1/159.pdf",
+          "publisher": "BirdLife South Africa / Avian Demography Unit",
+          "year": 1997
+        },
+        {
+          "title": "Wikipedia — Shikra",
+          "url": "https://en.wikipedia.org/wiki/Shikra",
+          "publisher": "Wikimedia Foundation",
+          "year": null
         }
       ]
     },
@@ -7595,14 +10972,118 @@
       "slug": "tachyspiza-minulla",
       "scientificName": "Tachyspiza minulla",
       "commonName": "Little Sparrowhawk",
-      "images": [],
-      "recordings": [],
+      "images": [
+        {
+          "key": "tachyspiza-minulla/perched-side-1.jpg",
+          "author": "Bernard DUPONT from FRANCE",
+          "licence": "CC BY-SA 2.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Little_Sparrowhawk_(Accipiter_minullus)_(17148898167).jpg",
+          "aiGenerated": false,
+          "hosted": false
+        },
+        {
+          "key": "tachyspiza-minulla/perched-side-2.jpg",
+          "author": "Bernard DUPONT from FRANCE",
+          "licence": "CC BY-SA 2.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Little_Sparrowhawk_(Accipiter_minullus)_(17330272436).jpg",
+          "aiGenerated": false,
+          "hosted": false
+        },
+        {
+          "key": "tachyspiza-minulla/perched-side-3.jpg",
+          "author": "Bernard DUPONT from FRANCE",
+          "licence": "CC BY-SA 2.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Little_Sparrowhawk_(Accipiter_minullus)_(17330272436)_(cropped).jpg",
+          "aiGenerated": false,
+          "hosted": false
+        },
+        {
+          "key": "tachyspiza-minulla/perched-side-4.jpg",
+          "author": "Bernard DUPONT from FRANCE",
+          "licence": "CC BY-SA 2.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Little_Sparrowhawk_(Accipiter_minullus)_(17330414916).jpg",
+          "aiGenerated": false,
+          "hosted": false
+        },
+        {
+          "key": "tachyspiza-minulla/perched-side-5.jpg",
+          "author": "Bernard DUPONT from FRANCE",
+          "licence": "CC BY-SA 2.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Little_Sparrowhawk_(Accipiter_minullus)_(17356320075).jpg",
+          "aiGenerated": false,
+          "hosted": false
+        },
+        {
+          "key": "tachyspiza-minulla/perched-side-6.jpg",
+          "author": "Bernard DUPONT from FRANCE",
+          "licence": "CC BY-SA 2.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Little_Sparrowhawk_(Accipiter_minullus)_immature_(31215969532).jpg",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ],
+      "recordings": [
+        {
+          "key": "xeno-canto/XC933196",
+          "author": "Daan van der Hoeven",
+          "licence": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "sourceUrl": "https://xeno-canto.org/933196",
+          "aiGenerated": false,
+          "hosted": false,
+          "callType": "call"
+        },
+        {
+          "key": "xeno-canto/XC960879",
+          "author": "Ehren Eksteen",
+          "licence": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "sourceUrl": "https://xeno-canto.org/960879",
+          "aiGenerated": false,
+          "hosted": false,
+          "callType": "call"
+        },
+        {
+          "key": "xeno-canto/XC697064",
+          "author": "Tony Archer",
+          "licence": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "sourceUrl": "https://xeno-canto.org/697064",
+          "aiGenerated": false,
+          "hosted": false,
+          "callType": "call"
+        }
+      ],
       "sources": [
         {
           "title": "Kemp A.C., Herholdt J.J., Whyte I. & Harrison J. (2001). Birds of the two largest national parks in South Africa: a method to generate estimates of population size for all species and assess their conservation ecology. S. Afr. J. Sci. 97: 393–403.",
           "url": "https://journals.co.za/doi/pdf/10.10520/EJC97367",
           "publisher": "South African Journal of Science",
           "year": 2001
+        },
+        {
+          "title": "Newman's Birds — Little Sparrowhawk species page",
+          "url": "https://newmansbirds.com/birds/little-sparrowhawk/",
+          "publisher": "Newman's Birds / Struik Nature (online edition)",
+          "year": null
+        },
+        {
+          "title": "The Atlas of Southern African Birds, Vol. 1 (spread 157)",
+          "url": "https://sabap2.birdmap.africa/docs/sabap1/157.pdf",
+          "publisher": "BirdLife South Africa / Avian Demography Unit",
+          "year": 1997
+        },
+        {
+          "title": "Wikipedia — Little Sparrowhawk",
+          "url": "https://en.wikipedia.org/wiki/Little_sparrowhawk",
+          "publisher": "Wikimedia Foundation",
+          "year": null
         }
       ]
     },
@@ -7670,14 +11151,108 @@
       "slug": "terathopius-ecaudatus",
       "scientificName": "Terathopius ecaudatus",
       "commonName": "Bateleur",
-      "images": [],
-      "recordings": [],
+      "images": [
+        {
+          "key": "terathopius-ecaudatus/perched-side-1.jpg",
+          "author": "Bernard DUPONT",
+          "licence": "CC BY-SA 2.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Bateleur_(Terathopius_ecaudatus)_male.jpg",
+          "aiGenerated": false,
+          "hosted": false
+        },
+        {
+          "key": "terathopius-ecaudatus/perched-front-2.jpg",
+          "author": "Bernard DUPONT",
+          "licence": "CC BY-SA 2.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Bateleur_(Terathopius_ecaudatus)_male_coming_to_Cubitje_Quap_Waterhole.jpg",
+          "aiGenerated": false,
+          "hosted": false
+        },
+        {
+          "key": "terathopius-ecaudatus/flight-above-3.jpg",
+          "author": "Charles J. Sharp",
+          "licence": "CC BY-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Bateleur_(Terathopius_ecaudatus)_male_in_flight_Serengeti.jpg",
+          "aiGenerated": false,
+          "hosted": false
+        },
+        {
+          "key": "terathopius-ecaudatus/perched-side-4.jpg",
+          "author": "Bernard DUPONT from FRANCE",
+          "licence": "CC BY-SA 2.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Bateleur_(Terathopius_ecaudatus)_male_..._(54180577959).jpg",
+          "aiGenerated": false,
+          "hosted": false
+        },
+        {
+          "key": "terathopius-ecaudatus/perched-side-5.jpg",
+          "author": "Bernard DUPONT",
+          "licence": "CC BY-SA 2.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Bateleur_(Terathopius_ecaudatus)_male_..._-_54493360573.jpg",
+          "aiGenerated": false,
+          "hosted": false
+        },
+        {
+          "key": "terathopius-ecaudatus/perched-side-6.jpg",
+          "author": "Bernard DUPONT from FRANCE",
+          "licence": "CC BY-SA 2.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Bateleur_Eagle_(Terathopius_ecaudatus)_female_(12908938095).jpg",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ],
+      "recordings": [
+        {
+          "key": "xeno-canto/XC940363",
+          "author": "Vikram",
+          "licence": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "sourceUrl": "https://xeno-canto.org/940363",
+          "aiGenerated": false,
+          "hosted": false,
+          "callType": "call"
+        },
+        {
+          "key": "xeno-canto/XC940364",
+          "author": "Vikram",
+          "licence": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "sourceUrl": "https://xeno-canto.org/940364",
+          "aiGenerated": false,
+          "hosted": false,
+          "callType": "call"
+        }
+      ],
       "sources": [
         {
           "title": "Kemp A.C., Herholdt J.J., Whyte I. & Harrison J. (2001). Birds of the two largest national parks in South Africa: a method to generate estimates of population size for all species and assess their conservation ecology. S. Afr. J. Sci. 97: 393–403.",
           "url": "https://journals.co.za/doi/pdf/10.10520/EJC97367",
           "publisher": "South African Journal of Science",
           "year": 2001
+        },
+        {
+          "title": "Newman's Birds — Bateleur species page",
+          "url": "https://newmansbirds.com/birds/bateleur/",
+          "publisher": "Newman's Birds / Struik Nature (online edition)",
+          "year": null
+        },
+        {
+          "title": "The Atlas of Southern African Birds, Vol. 1 (spread 132)",
+          "url": "https://sabap2.birdmap.africa/docs/sabap1/132.pdf",
+          "publisher": "BirdLife South Africa / Avian Demography Unit",
+          "year": 1997
+        },
+        {
+          "title": "Wikipedia — Bateleur",
+          "url": "https://en.wikipedia.org/wiki/Bateleur",
+          "publisher": "Wikimedia Foundation",
+          "year": null
         }
       ]
     },
@@ -7775,7 +11350,62 @@
       "slug": "torgos-tracheliotos",
       "scientificName": "Torgos tracheliotos",
       "commonName": "Lappet-faced Vulture",
-      "images": [],
+      "images": [
+        {
+          "key": "torgos-tracheliotos/perched-side-1.jpg",
+          "author": "Callum Evans",
+          "licence": "CC BY-NC 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+          "sourceUrl": "https://www.inaturalist.org/observations/94301482",
+          "aiGenerated": false,
+          "hosted": false
+        },
+        {
+          "key": "torgos-tracheliotos/perched-front-2.jpg",
+          "author": "Bernard DUPONT from FRANCE",
+          "licence": "CC BY-SA 2.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Day_78_Lappet-faced_Vulture_(Torgos_tracheliotos)_(53382676127).jpg",
+          "aiGenerated": false,
+          "hosted": false
+        },
+        {
+          "key": "torgos-tracheliotos/perched-back-3.jpg",
+          "author": "Bernard DUPONT from FRANCE",
+          "licence": "CC BY-SA 2.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Lappet-faced_Vulture_(Torgos_tracheliotos)_and_White-backed_Vulture_(Gyps_africanus)_(51859117786).jpg",
+          "aiGenerated": false,
+          "hosted": false
+        },
+        {
+          "key": "torgos-tracheliotos/flight-above-4.jpg",
+          "author": "Charles J. Sharp",
+          "licence": "CC BY-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Lappet-faced_vulture_(Torgos_tracheliotos)_in_flight_Kruger.jpg",
+          "aiGenerated": false,
+          "hosted": false
+        },
+        {
+          "key": "torgos-tracheliotos/perched-front-5.jpg",
+          "author": "Bernard DUPONT from FRANCE",
+          "licence": "CC BY-SA 2.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Day_84_Lappet-faced_Vulture_(Torgos_tracheliotos)_(53397532779).jpg",
+          "aiGenerated": false,
+          "hosted": false
+        },
+        {
+          "key": "torgos-tracheliotos/perched-front-6.jpg",
+          "author": "Bernard DUPONT from FRANCE",
+          "licence": "CC BY-SA 2.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Lappet-faced_Vulture_(Torgos_tracheliotos)_(33317710636).jpg",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ],
       "recordings": [],
       "sources": [
         {
@@ -7783,6 +11413,24 @@
           "url": "https://journals.co.za/doi/pdf/10.10520/EJC97367",
           "publisher": "South African Journal of Science",
           "year": 2001
+        },
+        {
+          "title": "Newman's Birds — Lappet-faced Vulture species page",
+          "url": "https://newmansbirds.com/birds/lappet-faced-vulture/",
+          "publisher": "Newman's Birds / Struik Nature (online edition)",
+          "year": null
+        },
+        {
+          "title": "The Atlas of Southern African Birds, Vol. 1 (spread 124)",
+          "url": "https://sabap2.birdmap.africa/docs/sabap1/124.pdf",
+          "publisher": "BirdLife South Africa / Avian Demography Unit",
+          "year": 1997
+        },
+        {
+          "title": "Wikipedia — Lappet-faced Vulture",
+          "url": "https://en.wikipedia.org/wiki/Lappet-faced_vulture",
+          "publisher": "Wikimedia Foundation",
+          "year": null
         }
       ]
     },
@@ -7835,7 +11483,62 @@
       "slug": "trigonoceps-occipitalis",
       "scientificName": "Trigonoceps occipitalis",
       "commonName": "White-headed Vulture",
-      "images": [],
+      "images": [
+        {
+          "key": "trigonoceps-occipitalis/perched-side-1.jpg",
+          "author": "copper",
+          "licence": "CC BY-NC 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+          "sourceUrl": "https://www.inaturalist.org/observations/9945112",
+          "aiGenerated": false,
+          "hosted": false
+        },
+        {
+          "key": "trigonoceps-occipitalis/perched-front-2.jpg",
+          "author": "Bernard DUPONT from FRANCE",
+          "licence": "CC BY-SA 2.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Day_12_White-headed_Vulture_(Trigonoceps_occipitalis)_(53439819016).jpg",
+          "aiGenerated": false,
+          "hosted": false
+        },
+        {
+          "key": "trigonoceps-occipitalis/perched-back-3.jpg",
+          "author": "Bernard DUPONT from FRANCE",
+          "licence": "CC BY-SA 2.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Day_49_White-headed_Vulture_(Trigonoceps_occipitalis)_and_White-backed_Vulture_(Gyps_africanus)_below_..._(53315807724).jpg",
+          "aiGenerated": false,
+          "hosted": false
+        },
+        {
+          "key": "trigonoceps-occipitalis/flight-above-4.jpg",
+          "author": "hyper7pro",
+          "licence": "CC BY 2.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by/2.0",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Trigonoceps_occipitalis_-Kruger_National_Park,_South_Africa_-flying-8.jpg",
+          "aiGenerated": false,
+          "hosted": false
+        },
+        {
+          "key": "trigonoceps-occipitalis/perched-front-5.jpg",
+          "author": "Bernard DUPONT from FRANCE",
+          "licence": "CC BY-SA 2.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Day_12_White-headed_Vulture_(Trigonoceps_occipitalis)_and_Hooded_Vulture_(Necrosyrtes_monachus)_sharing_a_carcass_..._(53228649773).jpg",
+          "aiGenerated": false,
+          "hosted": false
+        },
+        {
+          "key": "trigonoceps-occipitalis/perched-front-6.jpg",
+          "author": "Bernard DUPONT from FRANCE",
+          "licence": "CC BY-SA 2.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Day_12_White-headed_Vulture_(Trigonoceps_occipitalis)_and_Hooded_Vulture_(Necrosyrtes_monachus)_sharing_a_carcass_..._(53438890892).jpg",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ],
       "recordings": [],
       "sources": [
         {
@@ -7843,6 +11546,24 @@
           "url": "https://journals.co.za/doi/pdf/10.10520/EJC97367",
           "publisher": "South African Journal of Science",
           "year": 2001
+        },
+        {
+          "title": "Newman's Birds — White-headed Vulture species page",
+          "url": "https://newmansbirds.com/birds/white-headed-vulture/",
+          "publisher": "Newman's Birds / Struik Nature (online edition)",
+          "year": null
+        },
+        {
+          "title": "The Atlas of Southern African Birds, Vol. 1 (spread 125)",
+          "url": "https://sabap2.birdmap.africa/docs/sabap1/125.pdf",
+          "publisher": "BirdLife South Africa / Avian Demography Unit",
+          "year": 1997
+        },
+        {
+          "title": "Wikipedia — White-headed Vulture",
+          "url": "https://en.wikipedia.org/wiki/White-headed_vulture",
+          "publisher": "Wikimedia Foundation",
+          "year": null
         }
       ]
     },

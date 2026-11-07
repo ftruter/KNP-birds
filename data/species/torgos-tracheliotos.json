@@ -7,8 +7,61 @@
     "af": "Swartaasvoël"
   },
   "family": "accipitridae",
-  "summary": "The details for this species have not been published yet.",
-  "sampleData": true,
+  "status": "resident",
+  "monthsPresent": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+  ],
+  "size": {
+    "lengthCm": {
+      "min": 95,
+      "max": 115
+    },
+    "note": "Newman's 115 cm. Wikipedia 95–115 cm. Newman's species page uses Torgos tracheliotus (single i); IOC spelling tracheliotos."
+  },
+  "habitat": "Bushveld; in arid west thornveld and desert. Usually pairs; dominates other vultures at carcasses (Newman's; SABAP1).",
+  "summary": "Huge massive-billed vulture with crimson bare head and neck, dark body, streaked underparts and white 'pants' in adults. Immature has dark pants and mottled mantle (Newman's).",
+  "sampleData": false,
+  "similar": [
+    {
+      "slug": "trigonoceps-occipitalis",
+      "note": "White-headed has a white head and underparts and a blue-and-red bill (Newman's)."
+    },
+    {
+      "slug": "gyps-africanus",
+      "note": "White-backed is smaller-billed and paler (Newman's)."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Newman's Birds — Lappet-faced Vulture species page",
+      "url": "https://newmansbirds.com/birds/lappet-faced-vulture/",
+      "publisher": "Newman's Birds / Struik Nature (online edition)",
+      "year": null
+    },
+    {
+      "title": "The Atlas of Southern African Birds, Vol. 1 (spread 124)",
+      "url": "https://sabap2.birdmap.africa/docs/sabap1/124.pdf",
+      "publisher": "BirdLife South Africa / Avian Demography Unit",
+      "year": 1997
+    },
+    {
+      "title": "Wikipedia — Lappet-faced Vulture",
+      "url": "https://en.wikipedia.org/wiki/Lappet-faced_vulture",
+      "publisher": "Wikimedia Foundation",
+      "year": null
+    }
+  ],
   "population": {
     "estimate": {
       "low": 32,
@@ -35,8 +88,236 @@
     },
     "tierApplied": "D"
   },
-  "variants": [],
-  "viewNotes": [],
-  "calls": [],
-  "images": []
+  "variants": [
+    {
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "marks": {
+        "bill": {
+          "colour": "horn",
+          "shape": "massive hooked"
+        },
+        "eye": {
+          "iris": "brown",
+          "ring": null
+        },
+        "legs": {
+          "colour": [
+            "grey",
+            "blue"
+          ]
+        },
+        "head": {
+          "crown": "red",
+          "face": "red",
+          "throat": null,
+          "pattern": "bare crimson; bare crimson with lappets"
+        },
+        "upperparts": {
+          "back": "dark-brown",
+          "rump": null
+        },
+        "underparts": {
+          "breast": "dark-brown",
+          "belly": [
+            "dark-brown",
+            "white"
+          ],
+          "pattern": "streaked dark; dark with white pants"
+        },
+        "wings": {
+          "above": "dark-brown",
+          "below": [
+            "dark-brown",
+            "white"
+          ],
+          "pattern": "dark contrasting white pants"
+        },
+        "tail": {
+          "colour": "dark-brown",
+          "shape": null
+        }
+      }
+    },
+    {
+      "age": "immature",
+      "sex": "any",
+      "season": "any",
+      "marks": {
+        "bill": {
+          "colour": null,
+          "shape": null
+        },
+        "eye": {
+          "iris": null,
+          "ring": null
+        },
+        "legs": {
+          "colour": null
+        },
+        "head": {
+          "crown": null,
+          "face": "red",
+          "throat": null,
+          "pattern": "duller red"
+        },
+        "upperparts": {
+          "back": [
+            "dark-brown",
+            "white"
+          ],
+          "rump": null,
+          "pattern": "dark with white mottling"
+        },
+        "underparts": {
+          "breast": "dark-brown",
+          "belly": "dark-brown",
+          "pattern": "dark pants"
+        },
+        "wings": {
+          "above": null,
+          "below": null
+        },
+        "tail": {
+          "colour": null,
+          "shape": null
+        }
+      }
+    }
+  ],
+  "viewNotes": [
+    {
+      "view": "perched-side",
+      "note": "Side view shows the key field marks summarised for Lappet-faced Vulture: see variants. (Newman's).",
+      "age": "adult",
+      "sex": "any",
+      "season": "any"
+    },
+    {
+      "view": "flight-below",
+      "note": "Huge; white pants contrast with dark body/underwings (Newmans).",
+      "age": "adult",
+      "sex": "any",
+      "season": "any"
+    },
+    {
+      "view": "flight-above",
+      "note": "Huge; white pants contrast with dark body/underwings (Newmans). Upperwing details as in variants.",
+      "age": "adult",
+      "sex": "any",
+      "season": "any"
+    }
+  ],
+  "calls": [
+    {
+      "sex": "any",
+      "type": "call",
+      "description": "Usually silent; hisses/squeals at carcasses (Newman's family text).",
+      "recordings": []
+    }
+  ],
+  "images": [
+    {
+      "key": "torgos-tracheliotos/perched-side-1.jpg",
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "source": "https://www.inaturalist.org/observations/94301482",
+      "fileUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/156419358/large.jpeg",
+      "author": "Callum Evans",
+      "license": "CC BY-NC 4.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+      "aiGenerated": false,
+      "hosted": false,
+      "alt": "Lappet-faced Vulture — perched-side, adult. Kruger Park, South Africa",
+      "caption": "Lappet-faced Vulture — perched-side, adult. Kruger Park, South Africa"
+    },
+    {
+      "key": "torgos-tracheliotos/perched-front-2.jpg",
+      "view": "perched-front",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "source": "https://commons.wikimedia.org/wiki/File:Day_78_Lappet-faced_Vulture_(Torgos_tracheliotos)_(53382676127).jpg",
+      "fileUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8b/Day_78_Lappet-faced_Vulture_%28Torgos_tracheliotos%29_%2853382676127%29.jpg/1280px-Day_78_Lappet-faced_Vulture_%28Torgos_tracheliotos%29_%2853382676127%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "author": "Bernard DUPONT from FRANCE",
+      "license": "CC BY-SA 2.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+      "aiGenerated": false,
+      "hosted": false,
+      "alt": "Lappet-faced Vulture — perched-front, adult. S130 Road South of Lower Sabie, Kruger NP, Mpumalanga, SOUTH AFRICA",
+      "caption": "Lappet-faced Vulture — perched-front, adult. S130 Road South of Lower Sabie, Kruger NP, Mpumalanga, SOUTH AFRICA"
+    },
+    {
+      "key": "torgos-tracheliotos/perched-back-3.jpg",
+      "view": "perched-back",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "source": "https://commons.wikimedia.org/wiki/File:Lappet-faced_Vulture_(Torgos_tracheliotos)_and_White-backed_Vulture_(Gyps_africanus)_(51859117786).jpg",
+      "fileUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4f/Lappet-faced_Vulture_%28Torgos_tracheliotos%29_and_White-backed_Vulture_%28Gyps_africanus%29_%2851859117786%29.jpg/1280px-Lappet-faced_Vulture_%28Torgos_tracheliotos%29_and_White-backed_Vulture_%28Gyps_africanus%29_%2851859117786%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "author": "Bernard DUPONT from FRANCE",
+      "license": "CC BY-SA 2.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+      "aiGenerated": false,
+      "hosted": false,
+      "alt": "Lappet-faced Vulture — perched-back, adult. H7 Road West of Satara, Kruger NP, Mpumalanga, SOUTH AFRICA The file title also names White-backed Vulture.",
+      "caption": "Lappet-faced Vulture — perched-back, adult. H7 Road West of Satara, Kruger NP, Mpumalanga, SOUTH AFRICA The file title also names White-backed Vulture."
+    },
+    {
+      "key": "torgos-tracheliotos/flight-above-4.jpg",
+      "view": "flight-above",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "source": "https://commons.wikimedia.org/wiki/File:Lappet-faced_vulture_(Torgos_tracheliotos)_in_flight_Kruger.jpg",
+      "fileUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/95/Lappet-faced_vulture_%28Torgos_tracheliotos%29_in_flight_Kruger.jpg/1280px-Lappet-faced_vulture_%28Torgos_tracheliotos%29_in_flight_Kruger.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "author": "Charles J. Sharp",
+      "license": "CC BY-SA 4.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "aiGenerated": false,
+      "hosted": false,
+      "alt": "Lappet-faced Vulture — flight-above, adult. Lappet-faced vulture (Torgos tracheliotos) in flight over Kruger National Park, South Africa",
+      "caption": "Lappet-faced Vulture — flight-above, adult. Lappet-faced vulture (Torgos tracheliotos) in flight over Kruger National Park, South Africa"
+    },
+    {
+      "key": "torgos-tracheliotos/perched-front-5.jpg",
+      "view": "perched-front",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "source": "https://commons.wikimedia.org/wiki/File:Day_84_Lappet-faced_Vulture_(Torgos_tracheliotos)_(53397532779).jpg",
+      "fileUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f2/Day_84_Lappet-faced_Vulture_%28Torgos_tracheliotos%29_%2853397532779%29.jpg/1280px-Day_84_Lappet-faced_Vulture_%28Torgos_tracheliotos%29_%2853397532779%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "author": "Bernard DUPONT from FRANCE",
+      "license": "CC BY-SA 2.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+      "aiGenerated": false,
+      "hosted": false,
+      "alt": "Lappet-faced Vulture — perched-front, adult. H3 Road North of Malelane Gate, Kruger NP, Mpumalanga, SOUTH AFRICA",
+      "caption": "Lappet-faced Vulture — perched-front, adult. H3 Road North of Malelane Gate, Kruger NP, Mpumalanga, SOUTH AFRICA"
+    },
+    {
+      "key": "torgos-tracheliotos/perched-front-6.jpg",
+      "view": "perched-front",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "source": "https://commons.wikimedia.org/wiki/File:Lappet-faced_Vulture_(Torgos_tracheliotos)_(33317710636).jpg",
+      "fileUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/52/Lappet-faced_Vulture_%28Torgos_tracheliotos%29_%2833317710636%29.jpg/1280px-Lappet-faced_Vulture_%28Torgos_tracheliotos%29_%2833317710636%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "author": "Bernard DUPONT from FRANCE",
+      "license": "CC BY-SA 2.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+      "aiGenerated": false,
+      "hosted": false,
+      "alt": "Lappet-faced Vulture — perched-front, adult. S128 Road North of Lower Sabie, Kruger NP, Mpumalanga, SOUTH AFRICA",
+      "caption": "Lappet-faced Vulture — perched-front, adult. S128 Road North of Lower Sabie, Kruger NP, Mpumalanga, SOUTH AFRICA"
+    }
+  ],
+  "research": {
+    "confidence": "medium",
+    "needsReview": false,
+    "note": "No seasonal plumage change is described in the sources consulted, except presence/absence of migrants. Gaps: No juvenile/immature image in selected set. No openly licensed xeno-canto recording found via GBIF. Colour phrases outside the vocabulary were stored as the nearest swatch: blue-grey to blue and grey; crimson to red; dark to dark-brown."
+  }
 }

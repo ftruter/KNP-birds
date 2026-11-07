@@ -7,8 +7,54 @@
     "af": "Swartwou"
   },
   "family": "accipitridae",
-  "summary": "The details for this species have not been published yet.",
-  "sampleData": true,
+  "status": "intra-african-migrant",
+  "monthsPresent": [
+    8,
+    9,
+    10,
+    11,
+    12,
+    1,
+    2,
+    3,
+    4
+  ],
+  "size": {
+    "lengthCm": {
+      "min": 55,
+      "max": 55
+    },
+    "note": "Newman's Yellow-billed Kite page (Milvus parasitus) gives 55 cm. Project slug is milvus-migrans with Afrikaans Swartwou; taxonomy note required."
+  },
+  "habitat": "Wide range of habitats; often aggregates at food sources. Common Kruger summer kite is the yellow-billed African form (Newman's; SABAP1).",
+  "summary": "Fork-tailed scavenger kite. In Kruger the abundant summer bird is the Yellow-billed form (often split as M. aegyptius/parasitus): adult with yellow-based bill, brown head, dark eye, deeply forked tail. Palearctic Black Kite (M. m. migrans) is scarcer, with darker bill and paler head (Newman's; SABAP1).",
+  "sampleData": false,
+  "similar": [
+    {
+      "slug": "hieraaetus-pennatus",
+      "note": "Booted Eagle pale morph can show a kite-like pale upperwing panel but lacks a forked tail (Newman's)."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Newman's Birds — Black Kite species page",
+      "url": "https://newmansbirds.com/birds/yellow-billed-kite/",
+      "publisher": "Newman's Birds / Struik Nature (online edition)",
+      "year": null
+    },
+    {
+      "title": "The Atlas of Southern African Birds, Vol. 1 (spread 126)",
+      "url": "https://sabap2.birdmap.africa/docs/sabap1/126.pdf",
+      "publisher": "BirdLife South Africa / Avian Demography Unit",
+      "year": 1997
+    },
+    {
+      "title": "Wikipedia — Black Kite",
+      "url": "https://en.wikipedia.org/wiki/Black_kite",
+      "publisher": "Wikimedia Foundation",
+      "year": null
+    }
+  ],
   "population": {
     "estimate": {
       "low": 128,
@@ -35,8 +81,225 @@
     },
     "tierApplied": "D"
   },
-  "variants": [],
-  "viewNotes": [],
-  "calls": [],
-  "images": []
+  "variants": [
+    {
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "marks": {
+        "bill": {
+          "colour": [
+            "yellow",
+            "black"
+          ],
+          "shape": "hooked; yellow base; black tip"
+        },
+        "eye": {
+          "iris": "dark-brown",
+          "ring": null
+        },
+        "legs": {
+          "colour": "yellow"
+        },
+        "head": {
+          "crown": "brown",
+          "face": "brown",
+          "throat": "brown"
+        },
+        "upperparts": {
+          "back": "dark-brown",
+          "rump": null
+        },
+        "underparts": {
+          "breast": "dark-brown",
+          "belly": "dark-brown"
+        },
+        "wings": {
+          "above": "dark-brown",
+          "below": "dark-brown",
+          "pattern": "dark with paler panel"
+        },
+        "tail": {
+          "colour": "dark-brown",
+          "shape": "deeply forked"
+        }
+      }
+    },
+    {
+      "age": "immature",
+      "sex": "any",
+      "season": "any",
+      "marks": {
+        "bill": {
+          "colour": [
+            "black",
+            "yellow"
+          ],
+          "shape": "yellow cere"
+        },
+        "eye": {
+          "iris": null,
+          "ring": null
+        },
+        "legs": {
+          "colour": null
+        },
+        "head": {
+          "crown": null,
+          "face": null,
+          "throat": null
+        },
+        "upperparts": {
+          "back": null,
+          "rump": null
+        },
+        "underparts": {
+          "breast": "rufous",
+          "belly": "rufous",
+          "pattern": "rufous-tinged"
+        },
+        "wings": {
+          "above": null,
+          "below": null
+        },
+        "tail": {
+          "colour": null,
+          "shape": "less deeply forked"
+        }
+      }
+    }
+  ],
+  "viewNotes": [
+    {
+      "view": "perched-side",
+      "note": "Side view shows the key field marks summarised for Black Kite: see variants. (Newman's).",
+      "age": "adult",
+      "sex": "any",
+      "season": "any"
+    },
+    {
+      "view": "flight-below",
+      "note": "Forked tail twisting in leisurely flight (Newmans).",
+      "age": "adult",
+      "sex": "any",
+      "season": "any"
+    },
+    {
+      "view": "flight-above",
+      "note": "Forked tail twisting in leisurely flight (Newmans). Upperwing details as in variants.",
+      "age": "adult",
+      "sex": "any",
+      "season": "any"
+    }
+  ],
+  "calls": [
+    {
+      "sex": "any",
+      "type": "call",
+      "description": "While flying sometimes 'kleeeuw' ending with a trill (Newman's Yellow-billed).",
+      "recordings": [
+        {
+          "key": "xeno-canto/XC1075223",
+          "source": "https://xeno-canto.org/1075223",
+          "fileUrl": "https://xeno-canto.org/sounds/uploaded/YIKAQIVHQJ/XC1075223-8650.-Black-Kite---Kabaale-Refinery%2C-Hoima---08-Jan-2026---1605---1.wav",
+          "author": "Jonathan Onongo",
+          "license": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "aiGenerated": false,
+          "hosted": false
+        },
+        {
+          "key": "xeno-canto/XC1092243",
+          "source": "https://xeno-canto.org/1092243",
+          "fileUrl": "https://xeno-canto.org/sounds/uploaded/MPDFSJHTXH/XC1092243-Milan_noir_Milvus_migrans_call_costa_C.mp3",
+          "author": "Sven Normant",
+          "license": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "aiGenerated": false,
+          "hosted": false
+        },
+        {
+          "key": "xeno-canto/XC1099112",
+          "source": "https://xeno-canto.org/1099112",
+          "fileUrl": "https://xeno-canto.org/sounds/uploaded/ITCSVQRUMF/XC1099112-Black-Kite-3-April-2024-Bolonia.mp3",
+          "author": "Tom Cooney",
+          "license": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ]
+    }
+  ],
+  "images": [
+    {
+      "key": "milvus-migrans/perched-side-1.jpg",
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "source": "https://commons.wikimedia.org/wiki/File:20191203_Milvus_migrans_govinda_0541_6421_DxO.jpg",
+      "fileUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2b/20191203_Milvus_migrans_govinda_0541_6421_DxO.jpg/1280px-20191203_Milvus_migrans_govinda_0541_6421_DxO.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "author": "Jakub Hałun",
+      "license": "CC BY-SA 4.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "aiGenerated": false,
+      "hosted": false,
+      "alt": "Black Kite — perched-side, adult. Black kite ( Milvus migrans govinda ) in Delhi",
+      "caption": "Black Kite — perched-side, adult. Black kite ( Milvus migrans govinda ) in Delhi"
+    },
+    {
+      "key": "milvus-migrans/perched-front-2.jpg",
+      "view": "perched-front",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "source": "https://commons.wikimedia.org/wiki/File:Milvus_migrans_head.jpg",
+      "fileUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2e/Milvus_migrans_head.jpg/1280px-Milvus_migrans_head.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "author": "Tim Sträter",
+      "license": "CC BY 2.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by/2.0",
+      "aiGenerated": false,
+      "hosted": false,
+      "alt": "Black Kite — perched-front, adult. The Black Kite ( Milvus migrans ) is a medium-sized bird of prey in the family Accipitridae, which also includes many",
+      "caption": "Black Kite — perched-front, adult. The Black Kite ( Milvus migrans ) is a medium-sized bird of prey in the family Accipitridae, which also includes many"
+    },
+    {
+      "key": "milvus-migrans/flight-above-3.jpg",
+      "view": "flight-above",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "source": "https://commons.wikimedia.org/wiki/File:Black_kite_(Milvus_migrans)_D35_6638_01.jpg",
+      "fileUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/df/Black_kite_%28Milvus_migrans%29_D35_6638_01.jpg/1280px-Black_kite_%28Milvus_migrans%29_D35_6638_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "author": "ADARSHluck",
+      "license": "CC BY-SA 4.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "aiGenerated": false,
+      "hosted": false,
+      "alt": "Black Kite — flight-above, adult. Black kite (Milvus migrans) in flight, Mandi, HP, India. 6 Jun. 2021.",
+      "caption": "Black Kite — flight-above, adult. Black kite (Milvus migrans) in flight, Mandi, HP, India. 6 Jun. 2021."
+    },
+    {
+      "key": "milvus-migrans/perched-side-4.jpg",
+      "view": "perched-side",
+      "age": "juvenile",
+      "sex": "any",
+      "season": "any",
+      "source": "https://commons.wikimedia.org/wiki/File:Black_Kite_(Milvus_migrans)-_Juvenile.jpg",
+      "fileUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a3/Black_Kite_%28Milvus_migrans%29-_Juvenile.jpg/1280px-Black_Kite_%28Milvus_migrans%29-_Juvenile.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "author": "Mildeep",
+      "license": "CC BY-SA 4.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "aiGenerated": false,
+      "hosted": false,
+      "alt": "Black Kite — perched-side, juvenile. Black Kite ( Milvus migrans )- Juvenile at Neelbarahi forest, Bhaktapur, Nepal .",
+      "caption": "Black Kite — perched-side, juvenile. Black Kite ( Milvus migrans )- Juvenile at Neelbarahi forest, Bhaktapur, Nepal ."
+    }
+  ],
+  "research": {
+    "confidence": "medium",
+    "needsReview": true,
+    "note": "Research confidence was medium-high and is stored as medium. The list keeps Milvus migrans (Black Kite, Swartwou), matching the IOC name used in this repo. Newman's splits Yellow-billed Kite (Milvus parasitus, Geelbekwou). Kruger's common summer kite is the yellow-billed African form, and the structured marks are that form. The scarcer black-billed Palearctic bird is described in the summary. No seasonal plumage change is described in the sources consulted, except presence/absence of migrants. Gaps: No Kruger-labelled image in the selected set. Structured marks keep the common form. The black-kite form is not a separate variant. Palearctic Black Kite (M. m. migrans): blacker bill, pale greyish head, pale eyes, less deeply forked tail (Newman's comparison; SABAP1). Scarcer in southern Africa than Yellow-billed. The schema has no morph field. Colour phrases outside the vocabulary were stored as the nearest swatch: dark to dark-brown. Project lists a single milvus-migrans (Black Kite / Swartwou). Newman's and modern SA lists often split Yellow-billed Kite (Geelbekwou, M. parasitus/aegyptius) from Black Kite (Swartwou, M. migrans). SABAP1 treated Yellowbilled as M. m. parasitus and Black as M. m. migrans/lineatus on the same spread (126). Research record covers both forms and flags the split."
+  }
 }

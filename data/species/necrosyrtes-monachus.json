@@ -7,8 +7,61 @@
     "af": "Monnikaasvoël"
   },
   "family": "accipitridae",
-  "summary": "The details for this species have not been published yet.",
-  "sampleData": true,
+  "status": "resident",
+  "monthsPresent": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+  ],
+  "size": {
+    "lengthCm": {
+      "min": 70,
+      "max": 70
+    },
+    "note": "Newman's 70 cm. Wikipedia 62–72 cm."
+  },
+  "habitat": "Protected game areas, Okavango and Zambezi valley; woodland and savanna near water. Often at carcasses and camps (Newman's; SABAP1).",
+  "summary": "A small slender-billed brown vulture with a bare pinkish face and a 'hood' of downy feathers. Much smaller than Lappet-faced or White-headed (Newman's).",
+  "sampleData": false,
+  "similar": [
+    {
+      "slug": "trigonoceps-occipitalis",
+      "note": "White-headed is larger with white head/underparts and a heavy red-and-blue bill (Newman's)."
+    },
+    {
+      "slug": "torgos-tracheliotos",
+      "note": "Lappet-faced is huge with crimson head and massive bill (Newman's)."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Newman's Birds — Hooded Vulture species page",
+      "url": "https://newmansbirds.com/birds/hooded-vulture/",
+      "publisher": "Newman's Birds / Struik Nature (online edition)",
+      "year": null
+    },
+    {
+      "title": "The Atlas of Southern African Birds, Vol. 1 (spread 121)",
+      "url": "https://sabap2.birdmap.africa/docs/sabap1/121.pdf",
+      "publisher": "BirdLife South Africa / Avian Demography Unit",
+      "year": 1997
+    },
+    {
+      "title": "Wikipedia — Hooded Vulture",
+      "url": "https://en.wikipedia.org/wiki/Hooded_vulture",
+      "publisher": "Wikimedia Foundation",
+      "year": null
+    }
+  ],
   "population": {
     "estimate": {
       "low": 32,
@@ -35,8 +88,183 @@
     },
     "tierApplied": "D"
   },
-  "variants": [],
-  "viewNotes": [],
-  "calls": [],
-  "images": []
+  "variants": [
+    {
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "marks": {
+        "bill": {
+          "colour": "horn",
+          "shape": "slender hooked"
+        },
+        "eye": {
+          "iris": "brown",
+          "ring": null
+        },
+        "legs": {
+          "colour": [
+            "grey",
+            "pink"
+          ]
+        },
+        "head": {
+          "crown": "brown",
+          "face": "pink",
+          "throat": null,
+          "pattern": "downy brown hood; bare pinkish"
+        },
+        "upperparts": {
+          "back": "brown",
+          "rump": null
+        },
+        "underparts": {
+          "breast": "brown",
+          "belly": "brown"
+        },
+        "wings": {
+          "above": "brown",
+          "below": "brown"
+        },
+        "tail": {
+          "colour": "brown",
+          "shape": null
+        }
+      }
+    }
+  ],
+  "viewNotes": [
+    {
+      "view": "perched-side",
+      "note": "Side view shows the key field marks summarised for Hooded Vulture: see variants. (Newman's).",
+      "age": "adult",
+      "sex": "any",
+      "season": "any"
+    },
+    {
+      "view": "flight-below",
+      "note": "Small brown vulture silhouette; slender bill (Newmans).",
+      "age": "adult",
+      "sex": "any",
+      "season": "any"
+    },
+    {
+      "view": "flight-above",
+      "note": "Small brown vulture silhouette; slender bill (Newmans). Upperwing details as in variants.",
+      "age": "adult",
+      "sex": "any",
+      "season": "any"
+    }
+  ],
+  "calls": [
+    {
+      "sex": "any",
+      "type": "call",
+      "description": "Usually silent; hisses/squeals at carcasses (Newman's family text).",
+      "recordings": []
+    }
+  ],
+  "images": [
+    {
+      "key": "necrosyrtes-monachus/perched-side-1.jpg",
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "source": "https://commons.wikimedia.org/wiki/File:Day_20_Hooded_Vultures_(Necrosyrtes_monachus)_(53248492003).jpg",
+      "fileUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/ba/Day_20_Hooded_Vultures_%28Necrosyrtes_monachus%29_%2853248492003%29.jpg/1280px-Day_20_Hooded_Vultures_%28Necrosyrtes_monachus%29_%2853248492003%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "author": "Bernard DUPONT from FRANCE",
+      "license": "CC BY-SA 2.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+      "aiGenerated": false,
+      "hosted": false,
+      "alt": "Hooded Vulture — perched-side, adult. H3 Road North of Afsaal, Kruger NP, Mpumalanga, SOUTH AFRICA",
+      "caption": "Hooded Vulture — perched-side, adult. H3 Road North of Afsaal, Kruger NP, Mpumalanga, SOUTH AFRICA"
+    },
+    {
+      "key": "necrosyrtes-monachus/perched-front-2.jpg",
+      "view": "perched-front",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "source": "https://commons.wikimedia.org/wiki/File:Hooded_Vulture_(Necrosyrtes_monachus)_(2855059480).jpg",
+      "fileUrl": "https://upload.wikimedia.org/wikipedia/commons/f/f0/Hooded_Vulture_%28Necrosyrtes_monachus%29_%282855059480%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+      "author": "Cliff from Arlington, Virginia, USA",
+      "license": "CC BY 2.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by/2.0",
+      "aiGenerated": false,
+      "hosted": false,
+      "alt": "Hooded Vulture — perched-front, adult. Hooded Vultures are small vultures about 26 inches long. Females are larger than males. They are dark brown, have rather",
+      "caption": "Hooded Vulture — perched-front, adult. Hooded Vultures are small vultures about 26 inches long. Females are larger than males. They are dark brown, have rather"
+    },
+    {
+      "key": "necrosyrtes-monachus/perched-side-3.jpg",
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "source": "https://commons.wikimedia.org/wiki/File:Day_20_Hooded_Vultures_(Necrosyrtes_monachus)_looking_in_buffalo_bowels_..._(53248194651).jpg",
+      "fileUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/11/Day_20_Hooded_Vultures_%28Necrosyrtes_monachus%29_looking_in_buffalo_bowels_..._%2853248194651%29.jpg/1280px-Day_20_Hooded_Vultures_%28Necrosyrtes_monachus%29_looking_in_buffalo_bowels_..._%2853248194651%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "author": "Bernard DUPONT from FRANCE",
+      "license": "CC BY-SA 2.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+      "aiGenerated": false,
+      "hosted": false,
+      "alt": "Hooded Vulture — perched-side, adult. H3 Road North of Afsaal, Kruger NP, Mpumalanga, SOUTH AFRICA",
+      "caption": "Hooded Vulture — perched-side, adult. H3 Road North of Afsaal, Kruger NP, Mpumalanga, SOUTH AFRICA"
+    },
+    {
+      "key": "necrosyrtes-monachus/perched-side-4.jpg",
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "source": "https://commons.wikimedia.org/wiki/File:Hooded_Vulture_(Necrosyrtes_monachus)_(32466950623).jpg",
+      "fileUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6e/Hooded_Vulture_%28Necrosyrtes_monachus%29_%2832466950623%29.jpg/1280px-Hooded_Vulture_%28Necrosyrtes_monachus%29_%2832466950623%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "author": "Bernard DUPONT from FRANCE",
+      "license": "CC BY-SA 2.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+      "aiGenerated": false,
+      "hosted": false,
+      "alt": "Hooded Vulture — perched-side, adult. S100 Road East of Satara, Kruger NP, Mpumalanga, SOUTH AFRICA",
+      "caption": "Hooded Vulture — perched-side, adult. S100 Road East of Satara, Kruger NP, Mpumalanga, SOUTH AFRICA"
+    },
+    {
+      "key": "necrosyrtes-monachus/perched-side-5.jpg",
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "source": "https://commons.wikimedia.org/wiki/File:Hooded_Vulture_(Necrosyrtes_monachus)_(33588736368).jpg",
+      "fileUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a7/Hooded_Vulture_%28Necrosyrtes_monachus%29_%2833588736368%29.jpg/1280px-Hooded_Vulture_%28Necrosyrtes_monachus%29_%2833588736368%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "author": "Bernard DUPONT from FRANCE",
+      "license": "CC BY-SA 2.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+      "aiGenerated": false,
+      "hosted": false,
+      "alt": "Hooded Vulture — perched-side, adult. H4-1 Road East of Skukuza, Kruger NP, SOUTH AFRICA",
+      "caption": "Hooded Vulture — perched-side, adult. H4-1 Road East of Skukuza, Kruger NP, SOUTH AFRICA"
+    },
+    {
+      "key": "necrosyrtes-monachus/perched-side-6.jpg",
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "source": "https://commons.wikimedia.org/wiki/File:Hooded_Vulture_(Necrosyrtes_monachus)_(51681773800).jpg",
+      "fileUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/85/Hooded_Vulture_%28Necrosyrtes_monachus%29_%2851681773800%29.jpg/1280px-Hooded_Vulture_%28Necrosyrtes_monachus%29_%2851681773800%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "author": "Bernard DUPONT from FRANCE",
+      "license": "CC BY-SA 2.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+      "aiGenerated": false,
+      "hosted": false,
+      "alt": "Hooded Vulture — perched-side, adult. S30 Road East of Skukuza, Kruger NP, Mpumalanga, SOUTH AFRICA",
+      "caption": "Hooded Vulture — perched-side, adult. S30 Road East of Skukuza, Kruger NP, Mpumalanga, SOUTH AFRICA"
+    }
+  ],
+  "research": {
+    "confidence": "low",
+    "needsReview": true,
+    "note": "Research confidence was medium-low and is stored as low. No seasonal plumage change is described in the sources consulted, except presence/absence of migrants. Gaps: No juvenile/immature image in selected set. No flight image in selected set. No openly licensed xeno-canto recording found via GBIF. Colour phrases outside the vocabulary were stored as the nearest swatch: pinkish to pink."
+  }
 }

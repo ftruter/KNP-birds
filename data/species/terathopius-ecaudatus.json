@@ -7,8 +7,57 @@
     "af": "Berghaan"
   },
   "family": "accipitridae",
-  "summary": "The details for this species have not been published yet.",
-  "sampleData": true,
+  "status": "resident",
+  "monthsPresent": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+  ],
+  "size": {
+    "lengthCm": {
+      "min": 55,
+      "max": 70
+    },
+    "note": "Newman's 55–70 cm. Wikipedia 55–70 cm."
+  },
+  "habitat": "Bushveld and woodland; nests in large Acacia or Jackalberry trees. Classic Kruger raptor (Newman's; SABAP1).",
+  "summary": "Bulky black eagle-like raptor with red face and legs, tawny wing-coverts, very short tail (adults look almost tailless in flight) and a rocking flight. Female has tawny secondaries; male has a wider black trailing edge. Immature brown for several years (Newman's).",
+  "sampleData": false,
+  "similar": [
+    {
+      "slug": "circaetus-pectoralis",
+      "note": "Snake eagles have longer tails and lack Bateleur's red face/rocking flight (field guides)."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Newman's Birds — Bateleur species page",
+      "url": "https://newmansbirds.com/birds/bateleur/",
+      "publisher": "Newman's Birds / Struik Nature (online edition)",
+      "year": null
+    },
+    {
+      "title": "The Atlas of Southern African Birds, Vol. 1 (spread 132)",
+      "url": "https://sabap2.birdmap.africa/docs/sabap1/132.pdf",
+      "publisher": "BirdLife South Africa / Avian Demography Unit",
+      "year": 1997
+    },
+    {
+      "title": "Wikipedia — Bateleur",
+      "url": "https://en.wikipedia.org/wiki/Bateleur",
+      "publisher": "Wikimedia Foundation",
+      "year": null
+    }
+  ],
   "population": {
     "estimate": {
       "low": 256,
@@ -35,8 +84,297 @@
     },
     "tierApplied": "D"
   },
-  "variants": [],
-  "viewNotes": [],
-  "calls": [],
-  "images": []
+  "variants": [
+    {
+      "age": "adult",
+      "sex": "male",
+      "season": "any",
+      "marks": {
+        "bill": {
+          "colour": [
+            "red",
+            "black"
+          ],
+          "shape": "hooked; red cere; black tip"
+        },
+        "eye": {
+          "iris": "brown",
+          "ring": null
+        },
+        "legs": {
+          "colour": "red"
+        },
+        "head": {
+          "crown": "black",
+          "face": "red",
+          "throat": "black",
+          "pattern": "bare red"
+        },
+        "upperparts": {
+          "back": "chestnut",
+          "rump": null
+        },
+        "underparts": {
+          "breast": "black",
+          "belly": "black"
+        },
+        "wings": {
+          "above": [
+            "tawny",
+            "black"
+          ],
+          "below": "black",
+          "pattern": "tawny coverts; black with wide black trailing edge"
+        },
+        "tail": {
+          "colour": "black",
+          "shape": "very short"
+        }
+      }
+    },
+    {
+      "age": "adult",
+      "sex": "female",
+      "season": "any",
+      "marks": {
+        "bill": {
+          "colour": null,
+          "shape": null
+        },
+        "eye": {
+          "iris": null,
+          "ring": null
+        },
+        "legs": {
+          "colour": "red"
+        },
+        "head": {
+          "crown": "black",
+          "face": "red",
+          "throat": "black",
+          "pattern": "bare red"
+        },
+        "upperparts": {
+          "back": null,
+          "rump": null
+        },
+        "underparts": {
+          "breast": "black",
+          "belly": "black"
+        },
+        "wings": {
+          "above": "tawny",
+          "below": "tawny",
+          "pattern": "tawny coverts; tawny secondaries"
+        },
+        "tail": {
+          "colour": "black",
+          "shape": "very short"
+        }
+      }
+    },
+    {
+      "age": "immature",
+      "sex": "any",
+      "season": "any",
+      "marks": {
+        "bill": {
+          "colour": null,
+          "shape": null
+        },
+        "eye": {
+          "iris": null,
+          "ring": null
+        },
+        "legs": {
+          "colour": [
+            "slate-grey",
+            "purple"
+          ]
+        },
+        "head": {
+          "crown": "brown",
+          "face": [
+            "slate-grey",
+            "purple"
+          ],
+          "throat": "brown",
+          "pattern": "slaty to purple bare skin"
+        },
+        "upperparts": {
+          "back": "brown",
+          "rump": null,
+          "pattern": "dull brown"
+        },
+        "underparts": {
+          "breast": "brown",
+          "belly": "brown",
+          "pattern": "dull brown"
+        },
+        "wings": {
+          "above": null,
+          "below": null
+        },
+        "tail": {
+          "colour": "brown",
+          "shape": "longer than adult"
+        }
+      }
+    }
+  ],
+  "viewNotes": [
+    {
+      "view": "perched-side",
+      "note": "Side view shows the key field marks summarised for Bateleur: see variants. (Newman's).",
+      "age": "adult",
+      "sex": "any",
+      "season": "any"
+    },
+    {
+      "view": "flight-below",
+      "note": "Almost tailless; rocking flight; sexed by trailing-edge/secondaries (Newmans).",
+      "age": "adult",
+      "sex": "any",
+      "season": "any"
+    },
+    {
+      "view": "flight-above",
+      "note": "Almost tailless; rocking flight; sexed by trailing-edge/secondaries (Newmans). Upperwing details as in variants.",
+      "age": "adult",
+      "sex": "any",
+      "season": "any"
+    }
+  ],
+  "calls": [
+    {
+      "sex": "any",
+      "type": "call",
+      "description": "Loud 'schaaaaaaaw' in flight; perched 'kau-kau-kauko-aaagh'; sometimes wing-claps (Newman's).",
+      "recordings": [
+        {
+          "key": "xeno-canto/XC940363",
+          "source": "https://xeno-canto.org/940363",
+          "fileUrl": "https://xeno-canto.org/sounds/uploaded/TSGYTKHDSW/XC940363-Not-analyzed-2024-09-13-12-53-35-in-Berlin.wav",
+          "author": "Vikram",
+          "license": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "aiGenerated": false,
+          "hosted": false
+        },
+        {
+          "key": "xeno-canto/XC940364",
+          "source": "https://xeno-canto.org/940364",
+          "fileUrl": "https://xeno-canto.org/sounds/uploaded/TSGYTKHDSW/XC940364-Common-Raven-2024-09-13-12-54-16-in-Berlin.wav",
+          "author": "Vikram",
+          "license": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ]
+    }
+  ],
+  "images": [
+    {
+      "key": "terathopius-ecaudatus/perched-side-1.jpg",
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "male",
+      "season": "any",
+      "source": "https://commons.wikimedia.org/wiki/File:Bateleur_(Terathopius_ecaudatus)_male.jpg",
+      "fileUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/25/Bateleur_%28Terathopius_ecaudatus%29_male.jpg/1280px-Bateleur_%28Terathopius_ecaudatus%29_male.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "author": "Bernard DUPONT",
+      "license": "CC BY-SA 2.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+      "aiGenerated": false,
+      "hosted": false,
+      "alt": "Bateleur — perched-side, adult. H1-3 Road South of Satara, Kruger NP, Mpumalanga, SOUTH AFRICA",
+      "caption": "Bateleur — perched-side, adult. H1-3 Road South of Satara, Kruger NP, Mpumalanga, SOUTH AFRICA"
+    },
+    {
+      "key": "terathopius-ecaudatus/perched-front-2.jpg",
+      "view": "perched-front",
+      "age": "adult",
+      "sex": "male",
+      "season": "any",
+      "source": "https://commons.wikimedia.org/wiki/File:Bateleur_(Terathopius_ecaudatus)_male_coming_to_Cubitje_Quap_Waterhole.jpg",
+      "fileUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/63/Bateleur_%28Terathopius_ecaudatus%29_male_coming_to_Cubitje_Quap_Waterhole.jpg/1280px-Bateleur_%28Terathopius_ecaudatus%29_male_coming_to_Cubitje_Quap_Waterhole.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "author": "Bernard DUPONT",
+      "license": "CC BY-SA 2.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+      "aiGenerated": false,
+      "hosted": false,
+      "alt": "Bateleur — perched-front, adult. Kgalagadi Transfrontier Park, Northern Cape, SOUTH AFRICA",
+      "caption": "Bateleur — perched-front, adult. Kgalagadi Transfrontier Park, Northern Cape, SOUTH AFRICA"
+    },
+    {
+      "key": "terathopius-ecaudatus/flight-above-3.jpg",
+      "view": "flight-above",
+      "age": "adult",
+      "sex": "male",
+      "season": "any",
+      "source": "https://commons.wikimedia.org/wiki/File:Bateleur_(Terathopius_ecaudatus)_male_in_flight_Serengeti.jpg",
+      "fileUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/94/Bateleur_%28Terathopius_ecaudatus%29_male_in_flight_Serengeti.jpg/1280px-Bateleur_%28Terathopius_ecaudatus%29_male_in_flight_Serengeti.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "author": "Charles J. Sharp",
+      "license": "CC BY-SA 4.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "aiGenerated": false,
+      "hosted": false,
+      "alt": "Bateleur — flight-above, adult. Bateleur ( Terathopius ecaudatus ) male in flight, Serengeti National Park, Tanzania",
+      "caption": "Bateleur — flight-above, adult. Bateleur ( Terathopius ecaudatus ) male in flight, Serengeti National Park, Tanzania"
+    },
+    {
+      "key": "terathopius-ecaudatus/perched-side-4.jpg",
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "male",
+      "season": "any",
+      "source": "https://commons.wikimedia.org/wiki/File:Bateleur_(Terathopius_ecaudatus)_male_..._(54180577959).jpg",
+      "fileUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1d/Bateleur_%28Terathopius_ecaudatus%29_male_..._%2854180577959%29.jpg/1280px-Bateleur_%28Terathopius_ecaudatus%29_male_..._%2854180577959%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "author": "Bernard DUPONT from FRANCE",
+      "license": "CC BY-SA 2.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+      "aiGenerated": false,
+      "hosted": false,
+      "alt": "Bateleur — perched-side, adult. H1-3 Road South of Satara, Kruger NP, Mpumalanga, SOUTH AFRICA",
+      "caption": "Bateleur — perched-side, adult. H1-3 Road South of Satara, Kruger NP, Mpumalanga, SOUTH AFRICA"
+    },
+    {
+      "key": "terathopius-ecaudatus/perched-side-5.jpg",
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "male",
+      "season": "any",
+      "source": "https://commons.wikimedia.org/wiki/File:Bateleur_(Terathopius_ecaudatus)_male_..._-_54493360573.jpg",
+      "fileUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/37/Bateleur_%28Terathopius_ecaudatus%29_male_..._-_54493360573.jpg/1280px-Bateleur_%28Terathopius_ecaudatus%29_male_..._-_54493360573.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "author": "Bernard DUPONT",
+      "license": "CC BY-SA 2.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+      "aiGenerated": false,
+      "hosted": false,
+      "alt": "Bateleur — perched-side, adult. H1-3 Road South of Satara, Kruger NP, Mpumalanga, SOUTH AFRICA",
+      "caption": "Bateleur — perched-side, adult. H1-3 Road South of Satara, Kruger NP, Mpumalanga, SOUTH AFRICA"
+    },
+    {
+      "key": "terathopius-ecaudatus/perched-side-6.jpg",
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "female",
+      "season": "any",
+      "source": "https://commons.wikimedia.org/wiki/File:Bateleur_Eagle_(Terathopius_ecaudatus)_female_(12908938095).jpg",
+      "fileUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/04/Bateleur_Eagle_%28Terathopius_ecaudatus%29_female_%2812908938095%29.jpg/1280px-Bateleur_Eagle_%28Terathopius_ecaudatus%29_female_%2812908938095%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "author": "Bernard DUPONT from FRANCE",
+      "license": "CC BY-SA 2.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+      "aiGenerated": false,
+      "hosted": false,
+      "alt": "Bateleur — perched-side, adult. S10 Road North of Pretoriuskop, Kruger NP, SOUTH AFRICA",
+      "caption": "Bateleur — perched-side, adult. S10 Road North of Pretoriuskop, Kruger NP, SOUTH AFRICA"
+    }
+  ],
+  "research": {
+    "confidence": "medium",
+    "needsReview": false,
+    "note": "No seasonal plumage change is described in the sources consulted, except presence/absence of migrants. Gaps: No juvenile/immature image in selected set. Only captive/zoo recordings found for calls. Colour phrases outside the vocabulary were stored as the nearest swatch: slaty to slate-grey."
+  }
 }

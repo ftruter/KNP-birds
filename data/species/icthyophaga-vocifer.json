@@ -8,12 +8,56 @@
   },
   "family": "accipitridae",
   "status": "resident",
+  "monthsPresent": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+  ],
   "size": {
-    "lengthCm": { "min": 63, "max": 73 },
-    "note": "Females average larger than males. Figures are approximate."
+    "lengthCm": {
+      "min": 63,
+      "max": 73
+    },
+    "note": "Newman's 63–73 cm. Wikipedia 63–75 cm. Scientific name on Newman's still Haliaeetus vocifer; IOC/Clements recently moved many fish-eagles to Icthyophaga."
   },
-  "summary": "A large eagle of rivers and lakes. Adults have a white head, chest and tail, a chestnut body, and dark flight feathers. The call is a loud ringing yelp, often given by a pair together.",
-  "sampleData": true,
+  "habitat": "Territorial pairs at inland waters, rivers and remoter seashores; hunts mainly from a perch (Newman's; SABAP1).",
+  "summary": "Iconic African raptor with white head and breast, chestnut belly and dark wings; yellow cere and legs. Far-carrying ringing call. Immatures mottled brown for several years (Newman's).",
+  "sampleData": false,
+  "similar": [
+    {
+      "slug": "gypohierax-angolensis",
+      "note": "Palm-nut Vulture has a short white tail like Fish Eagle but different body pattern and habitat (Newman's flight note)."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Newman's Birds — African Fish Eagle species page",
+      "url": "https://newmansbirds.com/birds/african-fish-eagle/",
+      "publisher": "Newman's Birds / Struik Nature (online edition)",
+      "year": null
+    },
+    {
+      "title": "The Atlas of Southern African Birds, Vol. 1 (spread 148)",
+      "url": "https://sabap2.birdmap.africa/docs/sabap1/148.pdf",
+      "publisher": "BirdLife South Africa / Avian Demography Unit",
+      "year": 1997
+    },
+    {
+      "title": "Wikipedia — African Fish Eagle",
+      "url": "https://en.wikipedia.org/wiki/African_fish_eagle",
+      "publisher": "Wikimedia Foundation",
+      "year": null
+    }
+  ],
   "population": {
     "estimate": {
       "low": 64,
@@ -46,46 +90,252 @@
       "sex": "any",
       "season": "any",
       "marks": {
-        "bill": { "colour": "black", "shape": "hooked" },
-        "eye": { "iris": null, "ring": null },
-        "legs": { "colour": "yellow" },
-        "head": { "crown": "white", "face": "white", "throat": "white" },
-        "upperparts": { "back": "dark-brown", "rump": null },
-        "underparts": { "breast": "white", "belly": "chestnut" },
-        "wings": { "above": "dark-brown", "below": ["chestnut", "black"] },
-        "tail": { "colour": "white", "shape": null }
+        "bill": {
+          "colour": [
+            "yellow",
+            "black"
+          ],
+          "shape": "hooked; yellow cere; black tip"
+        },
+        "eye": {
+          "iris": "brown",
+          "ring": null
+        },
+        "legs": {
+          "colour": "yellow"
+        },
+        "head": {
+          "crown": "white",
+          "face": "white",
+          "throat": "white"
+        },
+        "upperparts": {
+          "back": "white",
+          "rump": null,
+          "pattern": "white mantle"
+        },
+        "underparts": {
+          "breast": "white",
+          "belly": "chestnut"
+        },
+        "wings": {
+          "above": "dark-brown",
+          "below": "dark-brown"
+        },
+        "tail": {
+          "colour": "white",
+          "shape": "short"
+        }
       }
     },
     {
-      "age": "juvenile",
+      "age": "immature",
       "sex": "any",
       "season": "any",
       "marks": {
-        "bill": { "colour": null, "shape": null },
-        "eye": { "iris": null, "ring": null },
-        "legs": { "colour": null },
-        "head": { "crown": "brown", "face": "brown", "throat": "brown" },
-        "upperparts": { "back": "brown", "rump": null },
-        "underparts": { "breast": "brown", "belly": "brown" },
-        "wings": { "above": "brown", "below": "brown" },
-        "tail": { "colour": "brown", "shape": null }
+        "bill": {
+          "colour": null,
+          "shape": null
+        },
+        "eye": {
+          "iris": null,
+          "ring": null
+        },
+        "legs": {
+          "colour": null
+        },
+        "head": {
+          "crown": "brown",
+          "face": "brown",
+          "throat": "white"
+        },
+        "upperparts": {
+          "back": null,
+          "rump": null
+        },
+        "underparts": {
+          "breast": [
+            "white",
+            "brown"
+          ],
+          "belly": "brown",
+          "pattern": "whitish with brown streaks"
+        },
+        "wings": {
+          "above": "brown",
+          "below": null,
+          "pattern": "mottled"
+        },
+        "tail": {
+          "colour": "brown",
+          "shape": null
+        }
       }
     }
   ],
   "viewNotes": [
-    { "view": "flight-above", "note": "Dark brown wings, a white head, and a white tail." },
-    { "view": "flight-below", "note": "White head and chest, chestnut underwing coverts, dark flight feathers, and a white tail." },
-    { "view": "perched-front", "note": "White head and chest, and a chestnut belly." },
-    { "view": "perched-back", "note": "White head and tail against dark brown wings." },
-    { "view": "perched-side", "note": "White head and chest, chestnut belly, dark wings, and a white tail." }
+    {
+      "view": "perched-side",
+      "note": "Side view shows the key field marks summarised for African Fish Eagle: see variants. (Newman's).",
+      "age": "adult",
+      "sex": "any",
+      "season": "any"
+    },
+    {
+      "view": "flight-below",
+      "note": "Broad wings and short white tail; chestnut belly visible from below (Newmans).",
+      "age": "adult",
+      "sex": "any",
+      "season": "any"
+    },
+    {
+      "view": "flight-above",
+      "note": "From above, the upperwing is dark brown (Newman's).",
+      "age": "adult",
+      "sex": "any",
+      "season": "any"
+    }
   ],
   "calls": [
     {
       "sex": "any",
-      "type": "duet",
-      "description": "A loud ringing yelp, often given by a pair together, with the two voices kept as one call.",
-      "recordings": []
+      "type": "call",
+      "description": "'weee-ah, hyo-hyo-hyo' in air or perched, tossing head backwards; male's voice more shrill (Newman's).",
+      "recordings": [
+        {
+          "key": "xeno-canto/XC1149038",
+          "source": "https://xeno-canto.org/1149038",
+          "fileUrl": "https://xeno-canto.org/sounds/uploaded/YSGTQVRQZI/XC1149038-20260517_KNP_AKaramitsos_XA60_A026C224_260517YV_SLE_400HP_-3dB_comb.wav",
+          "author": "African Bioacoustics Community",
+          "license": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "aiGenerated": false,
+          "hosted": false
+        },
+        {
+          "key": "xeno-canto/XC1149045",
+          "source": "https://xeno-canto.org/1149045",
+          "fileUrl": "https://xeno-canto.org/sounds/uploaded/YSGTQVRQZI/XC1149045-20260517_KNP_AKaramitsos_XA60_A026C241_260517OT_SLE_400HP_-3dB_split_Fish-Eagle.wav",
+          "author": "African Bioacoustics Community",
+          "license": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "aiGenerated": false,
+          "hosted": false
+        },
+        {
+          "key": "xeno-canto/XC1144970",
+          "source": "https://xeno-canto.org/1144970",
+          "fileUrl": "https://xeno-canto.org/sounds/uploaded/WSTMKZEHKY/XC1144970-260302-084405-A.-Fish-Eagle-C.wav",
+          "author": "Walter Wallner",
+          "license": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ]
     }
   ],
-  "images": []
+  "images": [
+    {
+      "key": "icthyophaga-vocifer/perched-side-1.jpg",
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "source": "https://commons.wikimedia.org/wiki/File:African_Fish-Eagle_(Haliaeetus_vocifer)_(53091141268).jpg",
+      "fileUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3c/African_Fish-Eagle_%28Haliaeetus_vocifer%29_%2853091141268%29.jpg/1280px-African_Fish-Eagle_%28Haliaeetus_vocifer%29_%2853091141268%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "author": "Bernard DUPONT from FRANCE",
+      "license": "CC BY-SA 2.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+      "aiGenerated": false,
+      "hosted": false,
+      "alt": "African Fish Eagle — perched-side, adult. H4-2 Road East of Lower Sabie, Kruger NP, Mpumalanga, SOUTH AFRICA",
+      "caption": "African Fish Eagle — perched-side, adult. H4-2 Road East of Lower Sabie, Kruger NP, Mpumalanga, SOUTH AFRICA"
+    },
+    {
+      "key": "icthyophaga-vocifer/flight-above-2.jpg",
+      "view": "flight-above",
+      "age": "juvenile",
+      "sex": "any",
+      "season": "any",
+      "source": "https://commons.wikimedia.org/wiki/File:African_fish_eagle_(Haliaeetus_vocifer)_juvenile_in_flight.jpg",
+      "fileUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7d/African_fish_eagle_%28Haliaeetus_vocifer%29_juvenile_in_flight.jpg/1280px-African_fish_eagle_%28Haliaeetus_vocifer%29_juvenile_in_flight.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "author": "Charles J. Sharp",
+      "license": "CC BY-SA 4.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "aiGenerated": false,
+      "hosted": false,
+      "alt": "African Fish Eagle — flight-above, juvenile. African fish eagle ( Haliaeetus vocifer ) juvenile in flight, Lake Ziway, Ethiopia",
+      "caption": "African Fish Eagle — flight-above, juvenile. African fish eagle ( Haliaeetus vocifer ) juvenile in flight, Lake Ziway, Ethiopia"
+    },
+    {
+      "key": "icthyophaga-vocifer/perched-side-3.jpg",
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "source": "https://commons.wikimedia.org/wiki/File:African_Fish-Eagles_(Haliaeetus_vocifer)_pair_..._(52477641337).jpg",
+      "fileUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2f/African_Fish-Eagles_%28Haliaeetus_vocifer%29_pair_..._%2852477641337%29.jpg/1280px-African_Fish-Eagles_%28Haliaeetus_vocifer%29_pair_..._%2852477641337%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "author": "Bernard DUPONT from FRANCE",
+      "license": "CC BY-SA 2.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+      "aiGenerated": false,
+      "hosted": false,
+      "alt": "African Fish Eagle — perched-side, adult. H10 Road North of Lower Sabie, Kruger NP, Mpumalanga, SOUTH AFRICA",
+      "caption": "African Fish Eagle — perched-side, adult. H10 Road North of Lower Sabie, Kruger NP, Mpumalanga, SOUTH AFRICA"
+    },
+    {
+      "key": "icthyophaga-vocifer/perched-side-4.jpg",
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "source": "https://commons.wikimedia.org/wiki/File:Day_17_African_Fish-Eagle_(Haliaeetus_vocifer)_with_prey_..._(53241128178).jpg",
+      "fileUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/54/Day_17_African_Fish-Eagle_%28Haliaeetus_vocifer%29_with_prey_..._%2853241128178%29.jpg/1280px-Day_17_African_Fish-Eagle_%28Haliaeetus_vocifer%29_with_prey_..._%2853241128178%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "author": "Bernard DUPONT from FRANCE",
+      "license": "CC BY-SA 2.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+      "aiGenerated": false,
+      "hosted": false,
+      "alt": "African Fish Eagle — perched-side, adult. H4-2 Road East of Lower Sabie, Kruger NP, Mpumalanga, SOUTH AFRICA",
+      "caption": "African Fish Eagle — perched-side, adult. H4-2 Road East of Lower Sabie, Kruger NP, Mpumalanga, SOUTH AFRICA"
+    },
+    {
+      "key": "icthyophaga-vocifer/perched-side-5.jpg",
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "source": "https://commons.wikimedia.org/wiki/File:Day_1_African_Fish-Eagle_(Haliaeetus_vocifer)_looking_for_fish_..._(53203434299).jpg",
+      "fileUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c6/Day_1_African_Fish-Eagle_%28Haliaeetus_vocifer%29_looking_for_fish_..._%2853203434299%29.jpg/1280px-Day_1_African_Fish-Eagle_%28Haliaeetus_vocifer%29_looking_for_fish_..._%2853203434299%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "author": "Bernard DUPONT from FRANCE",
+      "license": "CC BY-SA 2.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+      "aiGenerated": false,
+      "hosted": false,
+      "alt": "African Fish Eagle — perched-side, adult. Lake Panic Bird Hide, S42 Road West of Skukuza, Kruger NP, Mpumalanga, SOUTH AFRICA",
+      "caption": "African Fish Eagle — perched-side, adult. Lake Panic Bird Hide, S42 Road West of Skukuza, Kruger NP, Mpumalanga, SOUTH AFRICA"
+    },
+    {
+      "key": "icthyophaga-vocifer/perched-side-6.jpg",
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "source": "https://commons.wikimedia.org/wiki/File:Day_30_African_Fish-Eagle_(Haliaeetus_vocifer)_(53272057759).jpg",
+      "fileUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5d/Day_30_African_Fish-Eagle_%28Haliaeetus_vocifer%29_%2853272057759%29.jpg/1280px-Day_30_African_Fish-Eagle_%28Haliaeetus_vocifer%29_%2853272057759%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "author": "Bernard DUPONT from FRANCE",
+      "license": "CC BY-SA 2.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+      "aiGenerated": false,
+      "hosted": false,
+      "alt": "African Fish Eagle — perched-side, adult. H4-2 Road East of Lower Sabie, Kruger NP, Mpumalanga, SOUTH AFRICA",
+      "caption": "African Fish Eagle — perched-side, adult. H4-2 Road East of Lower Sabie, Kruger NP, Mpumalanga, SOUTH AFRICA"
+    }
+  ],
+  "research": {
+    "confidence": "medium",
+    "needsReview": false,
+    "note": "Research confidence was medium-high and is stored as medium. No seasonal plumage change is described in the sources consulted, except presence/absence of migrants. Colour phrases outside the vocabulary were stored as the nearest swatch: brownish to brown; dark to dark-brown; whitish to white."
+  }
 }

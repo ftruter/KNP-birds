@@ -7,8 +7,61 @@
     "af": "Breëkoparend"
   },
   "family": "accipitridae",
-  "summary": "The details for this species have not been published yet.",
-  "sampleData": true,
+  "status": "resident",
+  "monthsPresent": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+  ],
+  "size": {
+    "lengthCm": {
+      "min": 78,
+      "max": 83
+    },
+    "note": "Newman's 78–83 cm. Wikipedia 78–96 cm (sexually dimorphic)."
+  },
+  "habitat": "Bushveld, woodland and thornveld; also open plains. Relies on large trees for nests. Locally common in Kruger (Newman's; SABAP1).",
+  "summary": "Africa's largest eagle: dark brown upperparts and throat, white underparts spotted dark, short crest, long legs. Immature pale below. Soars very high (Newman's).",
+  "sampleData": false,
+  "similar": [
+    {
+      "slug": "circaetus-pectoralis",
+      "note": "Black-chested Snake Eagle has an unspotted white belly and unfeathered legs (Newman's)."
+    },
+    {
+      "slug": "stephanoaetus-coronatus",
+      "note": "Crowned Eagle is forest-based with heavily barred underparts and a longer crest (Newman's)."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Newman's Birds — Martial Eagle species page",
+      "url": "https://newmansbirds.com/birds/martial-eagle/",
+      "publisher": "Newman's Birds / Struik Nature (online edition)",
+      "year": null
+    },
+    {
+      "title": "The Atlas of Southern African Birds, Vol. 1 (spread 140)",
+      "url": "https://sabap2.birdmap.africa/docs/sabap1/140.pdf",
+      "publisher": "BirdLife South Africa / Avian Demography Unit",
+      "year": 1997
+    },
+    {
+      "title": "Wikipedia — Martial Eagle",
+      "url": "https://en.wikipedia.org/wiki/Martial_eagle",
+      "publisher": "Wikimedia Foundation",
+      "year": null
+    }
+  ],
   "population": {
     "estimate": {
       "low": 100,
@@ -50,8 +103,266 @@
     },
     "tierApplied": "A"
   },
-  "variants": [],
-  "viewNotes": [],
-  "calls": [],
-  "images": []
+  "variants": [
+    {
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "marks": {
+        "bill": {
+          "colour": [
+            "black",
+            "yellow"
+          ],
+          "shape": "heavy hooked; yellow cere"
+        },
+        "eye": {
+          "iris": [
+            "yellow",
+            "orange"
+          ],
+          "ring": null
+        },
+        "legs": {
+          "colour": "yellow"
+        },
+        "head": {
+          "crown": "dark-brown",
+          "face": "dark-brown",
+          "throat": "dark-brown",
+          "pattern": "short crest"
+        },
+        "upperparts": {
+          "back": "dark-brown",
+          "rump": null
+        },
+        "underparts": {
+          "breast": [
+            "white",
+            "dark-brown"
+          ],
+          "belly": [
+            "white",
+            "dark-brown"
+          ],
+          "pattern": "white spotted dark"
+        },
+        "wings": {
+          "above": "dark-brown",
+          "below": null,
+          "pattern": "pale spotted"
+        },
+        "tail": {
+          "colour": "dark-brown",
+          "shape": "dark barred"
+        }
+      }
+    },
+    {
+      "age": "immature",
+      "sex": "any",
+      "season": "any",
+      "marks": {
+        "bill": {
+          "colour": null,
+          "shape": null
+        },
+        "eye": {
+          "iris": null,
+          "ring": null
+        },
+        "legs": {
+          "colour": null
+        },
+        "head": {
+          "crown": "brown",
+          "face": null,
+          "throat": null,
+          "pattern": "pale brown; pale"
+        },
+        "upperparts": {
+          "back": "brown",
+          "rump": null
+        },
+        "underparts": {
+          "breast": "white",
+          "belly": "white",
+          "pattern": "pale white"
+        },
+        "wings": {
+          "above": null,
+          "below": null
+        },
+        "tail": {
+          "colour": null,
+          "shape": null
+        }
+      }
+    }
+  ],
+  "viewNotes": [
+    {
+      "view": "perched-side",
+      "note": "Side view shows the key field marks summarised for Martial Eagle: see variants. (Newman's).",
+      "age": "adult",
+      "sex": "any",
+      "season": "any"
+    },
+    {
+      "view": "flight-below",
+      "note": "Very large; spotted white underparts from below (adult) (Newmans).",
+      "age": "adult",
+      "sex": "any",
+      "season": "any"
+    },
+    {
+      "view": "flight-above",
+      "note": "From above, the upperwing is dark brown (Newman's).",
+      "age": "adult",
+      "sex": "any",
+      "season": "any"
+    }
+  ],
+  "calls": [
+    {
+      "sex": "any",
+      "type": "call",
+      "description": "Loud whistling calls in display; often silent when soaring (Wikipedia/Newman's context).",
+      "recordings": [
+        {
+          "key": "xeno-canto/XC392028",
+          "source": "https://xeno-canto.org/392028",
+          "fileUrl": "https://xeno-canto.org/sounds/uploaded/XVXHTBZRRW/XC392028-Martial%20Eagle%20FC%2020170312%201055%20ZA%20hinter%20Kosi%20Bay%20TW%20LS_5.mp3",
+          "author": "Tom Wulf",
+          "license": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "aiGenerated": false,
+          "hosted": false
+        },
+        {
+          "key": "xeno-canto/XC1148983",
+          "source": "https://xeno-canto.org/1148983",
+          "fileUrl": "https://xeno-canto.org/sounds/uploaded/ZPOTJDOCCS/XC1148983-Martial-Eagle-3-mc.mp3",
+          "author": "Kileo Jumah",
+          "license": "CC0 1.0",
+          "licenceUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+          "aiGenerated": false,
+          "hosted": false
+        },
+        {
+          "key": "xeno-canto/XC772438",
+          "source": "https://xeno-canto.org/772438",
+          "fileUrl": "https://xeno-canto.org/sounds/uploaded/FAMEEAPTYE/XC772438-martial-eagle-1745.mp3",
+          "author": "isaac kilusu",
+          "license": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ]
+    }
+  ],
+  "images": [
+    {
+      "key": "polemaetus-bellicosus/perched-side-1.jpg",
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "source": "https://commons.wikimedia.org/wiki/File:Martial_Eagle_(Polemaetus_bellicosus)_(51854471490).jpg",
+      "fileUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ef/Martial_Eagle_%28Polemaetus_bellicosus%29_%2851854471490%29.jpg/1280px-Martial_Eagle_%28Polemaetus_bellicosus%29_%2851854471490%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "author": "Bernard DUPONT from FRANCE",
+      "license": "CC BY-SA 2.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+      "aiGenerated": false,
+      "hosted": false,
+      "alt": "Martial Eagle — perched-side, adult. H4-1 Road, East of Skukuza, Kruger NP, Mpumalanga, SOUTH AFRICA",
+      "caption": "Martial Eagle — perched-side, adult. H4-1 Road, East of Skukuza, Kruger NP, Mpumalanga, SOUTH AFRICA"
+    },
+    {
+      "key": "polemaetus-bellicosus/perched-front-2.jpg",
+      "view": "perched-front",
+      "age": "juvenile",
+      "sex": "any",
+      "season": "any",
+      "source": "https://commons.wikimedia.org/wiki/File:Martial_Eagle_(Polemaetus_bellicosus)_juvenile_..._(31240849197).jpg",
+      "fileUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/27/Martial_Eagle_%28Polemaetus_bellicosus%29_juvenile_..._%2831240849197%29.jpg/1280px-Martial_Eagle_%28Polemaetus_bellicosus%29_juvenile_..._%2831240849197%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "author": "Bernard DUPONT from FRANCE",
+      "license": "CC BY-SA 2.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+      "aiGenerated": false,
+      "hosted": false,
+      "alt": "Martial Eagle — perched-front, juvenile. Auob Riverbed South of Batulama, Kgalagadi Transfrontier Park , Northern Cape, SOUTH AFRICA",
+      "caption": "Martial Eagle — perched-front, juvenile. Auob Riverbed South of Batulama, Kgalagadi Transfrontier Park , Northern Cape, SOUTH AFRICA"
+    },
+    {
+      "key": "polemaetus-bellicosus/flight-above-3.jpg",
+      "view": "flight-above",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "source": "https://commons.wikimedia.org/wiki/File:Martial_eagle_(Polemaetus_bellicosus)_in_flight.jpg",
+      "fileUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1b/Martial_eagle_%28Polemaetus_bellicosus%29_in_flight.jpg/1280px-Martial_eagle_%28Polemaetus_bellicosus%29_in_flight.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "author": "Charles J. Sharp",
+      "license": "CC BY-SA 4.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "aiGenerated": false,
+      "hosted": false,
+      "alt": "Martial Eagle — flight-above, adult. Martial eagle ( Polemaetus bellicosus ) in flight, Matetsi Safari Area, Zimbabwe",
+      "caption": "Martial Eagle — flight-above, adult. Martial eagle ( Polemaetus bellicosus ) in flight, Matetsi Safari Area, Zimbabwe"
+    },
+    {
+      "key": "polemaetus-bellicosus/perched-side-4.jpg",
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "source": "https://commons.wikimedia.org/wiki/File:Martial_Eagle_(Polemaetus_bellicosus)_(51859478088).jpg",
+      "fileUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9d/Martial_Eagle_%28Polemaetus_bellicosus%29_%2851859478088%29.jpg/1280px-Martial_Eagle_%28Polemaetus_bellicosus%29_%2851859478088%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "author": "Bernard DUPONT from FRANCE",
+      "license": "CC BY-SA 2.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+      "aiGenerated": false,
+      "hosted": false,
+      "alt": "Martial Eagle — perched-side, adult. H7 Road East of Orpen, Kruger NP, Mpumalanga, SOUTH AFRICA",
+      "caption": "Martial Eagle — perched-side, adult. H7 Road East of Orpen, Kruger NP, Mpumalanga, SOUTH AFRICA"
+    },
+    {
+      "key": "polemaetus-bellicosus/perched-side-5.jpg",
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "source": "https://commons.wikimedia.org/wiki/File:Martial_Eagle_(Polemaetus_bellicosus)_(51860062880).jpg",
+      "fileUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9b/Martial_Eagle_%28Polemaetus_bellicosus%29_%2851860062880%29.jpg/1280px-Martial_Eagle_%28Polemaetus_bellicosus%29_%2851860062880%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "author": "Bernard DUPONT from FRANCE",
+      "license": "CC BY-SA 2.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+      "aiGenerated": false,
+      "hosted": false,
+      "alt": "Martial Eagle — perched-side, adult. H7 Road East of Orpen, Kruger NP, Mpumalanga, SOUTH AFRICA",
+      "caption": "Martial Eagle — perched-side, adult. H7 Road East of Orpen, Kruger NP, Mpumalanga, SOUTH AFRICA"
+    },
+    {
+      "key": "polemaetus-bellicosus/perched-side-6.jpg",
+      "view": "perched-side",
+      "age": "immature",
+      "sex": "any",
+      "season": "any",
+      "source": "https://commons.wikimedia.org/wiki/File:Martial_Eagle_(Polemaetus_bellicosus)_immature_with_bird_prey_..._(52522352665).jpg",
+      "fileUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3c/Martial_Eagle_%28Polemaetus_bellicosus%29_immature_with_bird_prey_..._%2852522352665%29.jpg/1280px-Martial_Eagle_%28Polemaetus_bellicosus%29_immature_with_bird_prey_..._%2852522352665%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "author": "Bernard DUPONT from FRANCE",
+      "license": "CC BY-SA 2.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+      "aiGenerated": false,
+      "hosted": false,
+      "alt": "Martial Eagle — perched-side, immature. H4-2 Road North of Crocodile Bridge, Kruger NP, Mpumalanga, SOUTH AFRICA",
+      "caption": "Martial Eagle — perched-side, immature. H4-2 Road North of Crocodile Bridge, Kruger NP, Mpumalanga, SOUTH AFRICA"
+    }
+  ],
+  "research": {
+    "confidence": "medium",
+    "needsReview": false,
+    "note": "Research confidence was medium-high and is stored as medium. No seasonal plumage change is described in the sources consulted, except presence/absence of migrants. Colour phrases outside the vocabulary were stored as the nearest swatch: dark to dark-brown."
+  }
 }

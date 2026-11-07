@@ -7,8 +7,78 @@
     "af": "Bosjakkalsvoël"
   },
   "family": "accipitridae",
-  "summary": "The details for this species have not been published yet.",
-  "sampleData": true,
+  "monthsPresent": [
+    1,
+    2,
+    3,
+    4,
+    6,
+    7,
+    8,
+    10,
+    11,
+    12
+  ],
+  "size": {
+    "lengthCm": {
+      "min": 41,
+      "max": 48
+    },
+    "note": "Newman's Birds gives about 45 cm. Southern African endemic; split from Mountain Buzzard B. oreophilus."
+  },
+  "habitat": "Montane plantations and forest or adjacent grassy plateaux; perches on the fringe of open areas (Newman's). Essentially absent from Kruger lowveld — rare/vagrant at best.",
+  "summary": "An uncommon endemic forest buzzard, very similar to Steppe Buzzard. Somewhat smaller; dark brown above, white below with brown blotching; central breast usually white; flanks only blotched in immatures (Newman's).",
+  "sampleData": false,
+  "similar": [
+    {
+      "slug": "buteo-buteo",
+      "note": "Steppe Buzzard is the common summer visitor; Forest is slightly smaller with a typically whiter central breast and forest/plantation habitat (Newman's). Extremely difficult; many records may be misidentified Steppe Buzzards (SABAP1)."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Newman's Birds — Forest Buzzard species page (text from Newman's Birds of Southern Africa)",
+      "url": "https://newmansbirds.com/birds/forest-buzzard/",
+      "publisher": "Newman's Birds / Struik Nature (online edition)",
+      "year": null
+    },
+    {
+      "title": "The Atlas of Southern African Birds, Vol. 1 (spread 150)",
+      "url": "https://sabap2.birdmap.africa/docs/sabap1/150.pdf",
+      "publisher": "BirdLife South Africa / Avian Demography Unit",
+      "year": 1997
+    },
+    {
+      "title": "Biodiversity Explorer species text (summarised from Roberts Birds of Southern Africa VIIth ed., Hockey, Dean & Ryan 2005)",
+      "url": "https://www.biodiversityexplorer.info/birds/accipitridae/buteo_trizonatus.htm",
+      "publisher": "Iziko Museums of South Africa",
+      "year": null
+    },
+    {
+      "title": "Wikipedia — Forest buzzard",
+      "url": "https://en.wikipedia.org/wiki/Forest_buzzard",
+      "publisher": "Wikimedia Foundation",
+      "year": 2026
+    },
+    {
+      "title": "GBIF occurrence month facets for Buteo trizonatus, Kruger bounding box (lon 31.0–32.04, lat −25.53 to −22.33, country ZA)",
+      "url": "https://api.gbif.org/v1/occurrence/search",
+      "publisher": "GBIF.org",
+      "year": 2026
+    },
+    {
+      "title": "xeno-canto recordings (metadata via GBIF dataset b1047888-ae52-4179-9dd5-5448ea342a24)",
+      "url": "https://xeno-canto.org/",
+      "publisher": "xeno-canto.org / GBIF",
+      "year": 2026
+    },
+    {
+      "title": "Wikimedia Commons species category images",
+      "url": "https://commons.wikimedia.org/",
+      "publisher": "Wikimedia Commons",
+      "year": 2026
+    }
+  ],
   "population": {
     "estimate": {
       "low": null,
@@ -21,8 +91,125 @@
     "notes": "No sourced Kruger estimate is currently available; taxonomy or later records require separate research.",
     "sources": []
   },
-  "variants": [],
-  "viewNotes": [],
-  "calls": [],
-  "images": []
+  "variants": [
+    {
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "marks": {
+        "bill": {
+          "colour": [
+            "black",
+            "yellow"
+          ],
+          "shape": "hooked"
+        },
+        "eye": {
+          "iris": "brown",
+          "ring": null
+        },
+        "legs": {
+          "colour": "yellow"
+        },
+        "head": {
+          "crown": "brown",
+          "face": "brown",
+          "throat": "white"
+        },
+        "upperparts": {
+          "back": "brown",
+          "rump": null
+        },
+        "underparts": {
+          "breast": [
+            "white",
+            "brown"
+          ],
+          "belly": [
+            "white",
+            "brown"
+          ]
+        },
+        "wings": {
+          "above": "brown",
+          "below": null
+        },
+        "tail": {
+          "colour": "brown",
+          "shape": null
+        }
+      }
+    }
+  ],
+  "viewNotes": [
+    {
+      "view": "perched-side",
+      "note": "White central breast with blotched flanks; forest edge perch (Newman's).",
+      "age": "adult",
+      "sex": "any",
+      "season": "any"
+    }
+  ],
+  "calls": [
+    {
+      "sex": "any",
+      "type": "call",
+      "description": "A mewing buzzard call similar to Common Buzzard. Open recordings from Cape forests included.",
+      "recordings": [
+        {
+          "key": "xeno-canto/XC289313",
+          "source": "https://xeno-canto.org/289313",
+          "fileUrl": "https://xeno-canto.org/sounds/uploaded/UDDNOHEKEN/XC289313-Buzzard%2C%20Forest%20%281%29%3B%20Seaview%20EC%2003-11-2015.mp3",
+          "author": "Daniel Danckwerts",
+          "license": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "aiGenerated": false,
+          "hosted": false
+        },
+        {
+          "key": "xeno-canto/XC289315",
+          "source": "https://xeno-canto.org/289315",
+          "fileUrl": "https://xeno-canto.org/sounds/uploaded/UDDNOHEKEN/XC289315-Buzzard%2C%20Forest%20%283%29%3B%20Seaview%20EC%2003-11-2015.mp3",
+          "author": "Daniel Danckwerts",
+          "license": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "aiGenerated": false,
+          "hosted": false
+        },
+        {
+          "key": "xeno-canto/XC289314",
+          "source": "https://xeno-canto.org/289314",
+          "fileUrl": "https://xeno-canto.org/sounds/uploaded/UDDNOHEKEN/XC289314-Buzzard%2C%20Forest%20%282%29%3B%20Seaview%20EC%2003-11-2015.mp3",
+          "author": "Daniel Danckwerts",
+          "license": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ]
+    }
+  ],
+  "images": [
+    {
+      "key": "buteo-trizonatus/perched-side-adult-any.jpg",
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "source": "https://commons.wikimedia.org/wiki/File:Forest_Buzzard,_Buteo_trizonatus,_at_Hangklip_Forest,_Makhado,_Limpopo_Province,_South_Africa.jpg",
+      "fileUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b7/Forest_Buzzard%2C_Buteo_trizonatus%2C_at_Hangklip_Forest%2C_Makhado%2C_Limpopo_Province%2C_South_Africa.jpg/1280px-Forest_Buzzard%2C_Buteo_trizonatus%2C_at_Hangklip_Forest%2C_Makhado%2C_Limpopo_Province%2C_South_Africa.jpg",
+      "author": "Derek Keats",
+      "license": "CC BY 2.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by/2.0/",
+      "aiGenerated": false,
+      "hosted": false,
+      "alt": "Adult Forest Buzzard perched; Hangklip Forest, Mpumalanga.",
+      "caption": "Adult Forest Buzzard perched; Hangklip Forest, Mpumalanga."
+    }
+  ],
+  "research": {
+    "confidence": "low",
+    "needsReview": true,
+    "note": "Status is omitted. This is a rare visitor in Kruger, and the site has no vagrant status. The vocabulary is resident, intra-african-migrant, palearctic-migrant, and the older summer-migrant. No seasonal plumage change described. Gaps: Only 22 GBIF records in Kruger box — treat as rare visitor/vagrant. Flight photos not curated. Confusion with Steppe Buzzard undermines many historical records (SABAP1). Photos left out: A repeated file was omitted. Endemic. Split from Buteo oreophilus (Mountain Buzzard). Images from Hangklip Forest, Mpumalanga (not Kruger). monthsPresent set from Newman/SABAP seasonality cross-checked with GBIF Kruger month facets (not abundance)."
+  }
 }

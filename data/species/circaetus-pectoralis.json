@@ -7,8 +7,85 @@
     "af": "Swartborsslangarend"
   },
   "family": "accipitridae",
-  "summary": "The details for this species have not been published yet.",
-  "sampleData": true,
+  "status": "resident",
+  "monthsPresent": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+  ],
+  "size": {
+    "lengthCm": {
+      "min": 63,
+      "max": 68
+    },
+    "note": "Newman's Birds gives 63–68 cm."
+  },
+  "habitat": "Bushveld and grassland; often flying high and hovering — the only eagle that hovers regularly (Newman's).",
+  "summary": "Adult looks blackish with bare legs; in flight shows predominantly pale underwings and a white belly below a dark chest (Newman's). Differs from Martial Eagle in bare legs and unspotted underparts.",
+  "sampleData": false,
+  "similar": [
+    {
+      "slug": "circaetus-cinereus",
+      "note": "Brown Snake-Eagle is uniformly brown with no white belly/underwing panels (Newman's)."
+    },
+    {
+      "slug": "aquila-spilogaster",
+      "note": "African Hawk-Eagle has feathered legs and streaked white underparts, not a solid dark chest (Newman's)."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Newman's Birds — Black Chested Snake Eagle species page (text from Newman's Birds of Southern Africa)",
+      "url": "https://newmansbirds.com/birds/black-chested-snake-eagle/",
+      "publisher": "Newman's Birds / Struik Nature (online edition)",
+      "year": null
+    },
+    {
+      "title": "The Atlas of Southern African Birds, Vol. 1 (spread 143)",
+      "url": "https://sabap2.birdmap.africa/docs/sabap1/143.pdf",
+      "publisher": "BirdLife South Africa / Avian Demography Unit",
+      "year": 1997
+    },
+    {
+      "title": "Biodiversity Explorer species text (summarised from Roberts Birds of Southern Africa VIIth ed., Hockey, Dean & Ryan 2005)",
+      "url": "https://www.biodiversityexplorer.info/birds/accipitridae/circaetus_pectoralis.htm",
+      "publisher": "Iziko Museums of South Africa",
+      "year": null
+    },
+    {
+      "title": "Wikipedia — Black-chested snake eagle",
+      "url": "https://en.wikipedia.org/wiki/Black-chested_snake_eagle",
+      "publisher": "Wikimedia Foundation",
+      "year": 2026
+    },
+    {
+      "title": "GBIF occurrence month facets for Circaetus pectoralis, Kruger bounding box (lon 31.0–32.04, lat −25.53 to −22.33, country ZA)",
+      "url": "https://api.gbif.org/v1/occurrence/search",
+      "publisher": "GBIF.org",
+      "year": 2026
+    },
+    {
+      "title": "xeno-canto recordings (metadata via GBIF dataset b1047888-ae52-4179-9dd5-5448ea342a24)",
+      "url": "https://xeno-canto.org/",
+      "publisher": "xeno-canto.org / GBIF",
+      "year": 2026
+    },
+    {
+      "title": "Wikimedia Commons species category images",
+      "url": "https://commons.wikimedia.org/",
+      "publisher": "Wikimedia Commons",
+      "year": 2026
+    }
+  ],
   "population": {
     "estimate": {
       "low": 32,
@@ -35,8 +112,165 @@
     },
     "tierApplied": "D"
   },
-  "variants": [],
-  "viewNotes": [],
-  "calls": [],
-  "images": []
+  "variants": [
+    {
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "marks": {
+        "bill": {
+          "colour": [
+            "black",
+            "grey"
+          ],
+          "shape": "hooked"
+        },
+        "eye": {
+          "iris": "yellow",
+          "ring": null
+        },
+        "legs": {
+          "colour": [
+            "white",
+            "grey"
+          ]
+        },
+        "head": {
+          "crown": [
+            "brown",
+            "black"
+          ],
+          "face": [
+            "brown",
+            "black"
+          ],
+          "throat": "white"
+        },
+        "upperparts": {
+          "back": [
+            "brown",
+            "black"
+          ],
+          "rump": null
+        },
+        "underparts": {
+          "breast": [
+            "black",
+            "brown"
+          ],
+          "belly": "white"
+        },
+        "wings": {
+          "above": "brown",
+          "below": "white"
+        },
+        "tail": {
+          "colour": "brown",
+          "shape": null
+        }
+      }
+    },
+    {
+      "age": "juvenile",
+      "sex": "any",
+      "season": "any",
+      "marks": {
+        "bill": {
+          "colour": null,
+          "shape": null
+        },
+        "eye": {
+          "iris": "yellow",
+          "ring": null
+        },
+        "legs": {
+          "colour": "white"
+        },
+        "head": {
+          "crown": null,
+          "face": null,
+          "throat": null
+        },
+        "upperparts": {
+          "back": "brown",
+          "rump": null
+        },
+        "underparts": {
+          "breast": "brown",
+          "belly": "brown"
+        },
+        "wings": {
+          "above": null,
+          "below": null
+        },
+        "tail": {
+          "colour": null,
+          "shape": null
+        }
+      }
+    }
+  ],
+  "viewNotes": [
+    {
+      "view": "perched-side",
+      "note": "Dark chest, white belly, bare legs, yellow eye (Newman's).",
+      "age": "adult",
+      "sex": "any",
+      "season": "any"
+    },
+    {
+      "view": "flight-below",
+      "note": "Pale underwings and white belly with dark chest band (Newman's).",
+      "age": "adult",
+      "sex": "any",
+      "season": "any"
+    }
+  ],
+  "calls": [
+    {
+      "sex": "any",
+      "type": "call",
+      "description": "Seldom heard; a harsh cry reported. No openly licensed southern-African recording found in the GBIF/xeno-canto extract used.",
+      "recordings": []
+    }
+  ],
+  "images": [
+    {
+      "key": "circaetus-pectoralis/flight-side-adult-any.jpg",
+      "view": "flight-side",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "source": "https://commons.wikimedia.org/wiki/File:Black-chested_snake-eagle_(Circaetus_pectoralis)_in_flight.jpg",
+      "fileUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/33/Black-chested_snake-eagle_%28Circaetus_pectoralis%29_in_flight.jpg/1280px-Black-chested_snake-eagle_%28Circaetus_pectoralis%29_in_flight.jpg",
+      "author": "Charles J. Sharp",
+      "license": "CC BY-SA 4.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "aiGenerated": false,
+      "hosted": false,
+      "alt": "Adult Black-chested Snake-Eagle perched; Kruger National Park.",
+      "caption": "Adult Black-chested Snake-Eagle perched; Kruger National Park."
+    },
+    {
+      "key": "circaetus-pectoralis/flight-side-adult-any-2.jpg",
+      "view": "flight-side",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "source": "https://commons.wikimedia.org/wiki/File:Black-chested_snake_eagle.jpg",
+      "fileUrl": "https://upload.wikimedia.org/wikipedia/commons/e/e6/Black-chested_snake_eagle.jpg",
+      "author": "Michaelphillipr",
+      "license": "CC BY-SA 4.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "aiGenerated": false,
+      "hosted": false,
+      "alt": "Black-chested Snake-Eagle in flight, showing pale underwings.",
+      "caption": "Black-chested Snake-Eagle in flight, showing pale underwings."
+    }
+  ],
+  "research": {
+    "confidence": "high",
+    "needsReview": false,
+    "note": "No seasonal plumage change; juvenile differs from adult. Gaps: No usable open call recording found. Chick undescribed. Photos left out: A repeated file was omitted. Regular resident in Kruger. Only eagle that regularly hovers (Newman's)."
+  }
 }

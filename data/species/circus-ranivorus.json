@@ -7,8 +7,85 @@
     "af": "Afrikaanse Vleivalk"
   },
   "family": "accipitridae",
-  "summary": "The details for this species have not been published yet.",
-  "sampleData": true,
+  "status": "resident",
+  "monthsPresent": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+  ],
+  "size": {
+    "lengthCm": {
+      "min": 44,
+      "max": 49
+    },
+    "note": "Newman's Birds gives 44–49 cm."
+  },
+  "habitat": "Marshland and reed beds; occasionally cultivated fields; nomadic tendencies (Newman's). Scarce in Kruger.",
+  "summary": "A dark brown, long-winged harrier; paler brown below; underwings well barred; flies low over wetlands (Newman's). Resident with a fragmented distribution.",
+  "sampleData": false,
+  "similar": [
+    {
+      "slug": "circus-macrourus",
+      "note": "Pallid Harrier is a pale summer visitor of open grassland, not dark marsh-brown (Newman's)."
+    },
+    {
+      "slug": "circus-pygargus",
+      "note": "Montagu's is a summer visitor; male grey, not uniform dark brown (Newman's)."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Newman's Birds — African Marsh Harrier species page (text from Newman's Birds of Southern Africa)",
+      "url": "https://newmansbirds.com/birds/african-marsh-harrier/",
+      "publisher": "Newman's Birds / Struik Nature (online edition)",
+      "year": null
+    },
+    {
+      "title": "The Atlas of Southern African Birds, Vol. 1 (spread 165)",
+      "url": "https://sabap2.birdmap.africa/docs/sabap1/165.pdf",
+      "publisher": "BirdLife South Africa / Avian Demography Unit",
+      "year": 1997
+    },
+    {
+      "title": "Biodiversity Explorer species text (summarised from Roberts Birds of Southern Africa VIIth ed., Hockey, Dean & Ryan 2005)",
+      "url": "https://www.biodiversityexplorer.info/birds/accipitridae/circus_ranivorus.htm",
+      "publisher": "Iziko Museums of South Africa",
+      "year": null
+    },
+    {
+      "title": "Wikipedia — African marsh harrier",
+      "url": "https://en.wikipedia.org/wiki/African_marsh_harrier",
+      "publisher": "Wikimedia Foundation",
+      "year": 2026
+    },
+    {
+      "title": "GBIF occurrence month facets for Circus ranivorus, Kruger bounding box (lon 31.0–32.04, lat −25.53 to −22.33, country ZA)",
+      "url": "https://api.gbif.org/v1/occurrence/search",
+      "publisher": "GBIF.org",
+      "year": 2026
+    },
+    {
+      "title": "xeno-canto recordings (metadata via GBIF dataset b1047888-ae52-4179-9dd5-5448ea342a24)",
+      "url": "https://xeno-canto.org/",
+      "publisher": "xeno-canto.org / GBIF",
+      "year": 2026
+    },
+    {
+      "title": "Wikimedia Commons species category images",
+      "url": "https://commons.wikimedia.org/",
+      "publisher": "Wikimedia Commons",
+      "year": 2026
+    }
+  ],
   "population": {
     "estimate": {
       "low": 2,
@@ -35,8 +112,143 @@
     },
     "tierApplied": "D"
   },
-  "variants": [],
-  "viewNotes": [],
-  "calls": [],
-  "images": []
+  "variants": [
+    {
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "marks": {
+        "bill": {
+          "colour": "black",
+          "shape": "hooked"
+        },
+        "eye": {
+          "iris": "yellow",
+          "ring": null
+        },
+        "legs": {
+          "colour": "yellow"
+        },
+        "head": {
+          "crown": "brown",
+          "face": "brown",
+          "throat": "brown"
+        },
+        "upperparts": {
+          "back": "brown",
+          "rump": null
+        },
+        "underparts": {
+          "breast": "brown",
+          "belly": "brown"
+        },
+        "wings": {
+          "above": "brown",
+          "below": [
+            "brown",
+            "white"
+          ]
+        },
+        "tail": {
+          "colour": "brown",
+          "shape": "long"
+        }
+      }
+    }
+  ],
+  "viewNotes": [
+    {
+      "view": "perched-side",
+      "note": "Uniform rich brown plumage; long legs and wings (Newman's).",
+      "age": "adult",
+      "sex": "any",
+      "season": "any"
+    },
+    {
+      "view": "flight-below",
+      "note": "Well-barred underwings; low quartering flight over reeds (Newman's).",
+      "age": "adult",
+      "sex": "any",
+      "season": "any"
+    }
+  ],
+  "calls": [
+    {
+      "sex": "any",
+      "type": "call",
+      "description": "A high-pitched whistle near the nest; otherwise quiet. No openly licensed recording found in the extract used.",
+      "recordings": []
+    }
+  ],
+  "images": [
+    {
+      "key": "circus-ranivorus/perched-side-adult-any.jpg",
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "source": "https://commons.wikimedia.org/wiki/File:African_Marsh_Harrier,_Botswana_(6127140777).jpg",
+      "fileUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ad/African_Marsh_Harrier%2C_Botswana_%286127140777%29.jpg/1280px-African_Marsh_Harrier%2C_Botswana_%286127140777%29.jpg",
+      "author": "Malcolm Macgregor",
+      "license": "CC BY 2.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by/2.0/",
+      "aiGenerated": false,
+      "hosted": false,
+      "alt": "Adult African Marsh Harrier perched; Botswana.",
+      "caption": "Adult African Marsh Harrier perched; Botswana."
+    },
+    {
+      "key": "circus-ranivorus/perched-side-adult-any-2.jpg",
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "source": "https://commons.wikimedia.org/wiki/File:Circus_ranivorus_361290652.jpg",
+      "fileUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d8/Circus_ranivorus_361290652.jpg/1280px-Circus_ranivorus_361290652.jpg",
+      "author": "Christiaan Viljoen",
+      "license": "CC BY 4.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by/4.0/",
+      "aiGenerated": false,
+      "hosted": false,
+      "alt": "Adult African Marsh Harrier perched.",
+      "caption": "Adult African Marsh Harrier perched."
+    },
+    {
+      "key": "circus-ranivorus/perched-side-adult-any-3.jpg",
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "source": "https://commons.wikimedia.org/wiki/File:Harrier_African_Marsh_2013_08_08_07_35_32_4537b.jpg",
+      "fileUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fa/Harrier_African_Marsh_2013_08_08_07_35_32_4537b.jpg/1280px-Harrier_African_Marsh_2013_08_08_07_35_32_4537b.jpg",
+      "author": "Alandmanson",
+      "license": "CC BY 4.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by/4.0/",
+      "aiGenerated": false,
+      "hosted": false,
+      "alt": "Adult African Marsh Harrier perched.",
+      "caption": "Adult African Marsh Harrier perched."
+    },
+    {
+      "key": "circus-ranivorus/perched-side-adult-any-4.jpg",
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "source": "https://commons.wikimedia.org/wiki/File:Circus_ranivorus_545828195.jpg",
+      "fileUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/86/Circus_ranivorus_545828195.jpg/1280px-Circus_ranivorus_545828195.jpg",
+      "author": "Лариса Артемьева",
+      "license": "CC0 1.0",
+      "licenceUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "aiGenerated": false,
+      "hosted": false,
+      "alt": "African Marsh Harrier perched.",
+      "caption": "African Marsh Harrier perched."
+    }
+  ],
+  "research": {
+    "confidence": "medium",
+    "needsReview": false,
+    "note": "No seasonal plumage change described. Gaps: No open call recording. Scarce in Kruger (61 GBIF). Flight photos not in curated set. Fragmented resident; wetland-dependent."
+  }
 }

@@ -7,8 +7,85 @@
     "af": "Ovambosperwer"
   },
   "family": "accipitridae",
-  "summary": "The details for this species have not been published yet.",
-  "sampleData": true,
+  "status": "resident",
+  "monthsPresent": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+  ],
+  "size": {
+    "lengthCm": {
+      "min": 33,
+      "max": 40
+    },
+    "note": "Newman's Birds gives 33–40 cm.; Females are larger than males."
+  },
+  "habitat": "Tall woodland and woodland edge, often hunting from high perches at the edge of open areas; also exotic plantations in parts of its range (Newman's; SABAP1).",
+  "summary": "A medium-sized Accipiter of woodland. Adult is grey above with fine grey barring below that reaches the throat; eyes dark; cere red and legs orange (Newman's). Easily confused with other grey Accipiters; the dark eye and red cere help.",
+  "sampleData": false,
+  "similar": [
+    {
+      "slug": "astur-melanoleucus",
+      "note": "Black Sparrowhawk is much larger (46–58 cm), typically black above and white below (or melanistic), with yellow legs (Newman's)."
+    },
+    {
+      "slug": "aerospiza-tachiro",
+      "note": "African Goshawk has yellow eyes and legs, grey cere, and rufous (not grey) barring below (Newman's)."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Newman's Birds — Ovambo Sparrowhawk species page (text from Newman's Birds of Southern Africa)",
+      "url": "https://newmansbirds.com/birds/ovambo-sparrowhawk/",
+      "publisher": "Newman's Birds / Struik Nature (online edition)",
+      "year": null
+    },
+    {
+      "title": "The Atlas of Southern African Birds, Vol. 1 (spread 156)",
+      "url": "https://sabap2.birdmap.africa/docs/sabap1/156.pdf",
+      "publisher": "BirdLife South Africa / Avian Demography Unit",
+      "year": 1997
+    },
+    {
+      "title": "Biodiversity Explorer species text (summarised from Roberts Birds of Southern Africa VIIth ed., Hockey, Dean & Ryan 2005)",
+      "url": "https://www.biodiversityexplorer.info/birds/accipitridae/accipiter_ovampensis.htm",
+      "publisher": "Iziko Museums of South Africa",
+      "year": null
+    },
+    {
+      "title": "Wikipedia — Ovambo sparrowhawk",
+      "url": "https://en.wikipedia.org/wiki/Ovambo_sparrowhawk",
+      "publisher": "Wikimedia Foundation",
+      "year": 2026
+    },
+    {
+      "title": "GBIF occurrence month facets for Accipiter ovampensis, Kruger bounding box (lon 31.0–32.04, lat −25.53 to −22.33, country ZA)",
+      "url": "https://api.gbif.org/v1/occurrence/search",
+      "publisher": "GBIF.org",
+      "year": 2026
+    },
+    {
+      "title": "xeno-canto recordings (metadata via GBIF dataset b1047888-ae52-4179-9dd5-5448ea342a24)",
+      "url": "https://xeno-canto.org/",
+      "publisher": "xeno-canto.org / GBIF",
+      "year": 2026
+    },
+    {
+      "title": "Wikimedia Commons species category images",
+      "url": "https://commons.wikimedia.org/",
+      "publisher": "Wikimedia Commons",
+      "year": 2026
+    }
+  ],
   "population": {
     "estimate": {
       "low": 16,
@@ -35,8 +112,229 @@
     },
     "tierApplied": "D"
   },
-  "variants": [],
-  "viewNotes": [],
-  "calls": [],
-  "images": []
+  "variants": [
+    {
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "marks": {
+        "bill": {
+          "colour": "grey",
+          "shape": "hooked, Accipiter-like"
+        },
+        "eye": {
+          "iris": "dark-brown",
+          "ring": null
+        },
+        "legs": {
+          "colour": "orange"
+        },
+        "head": {
+          "crown": "grey",
+          "face": "grey",
+          "throat": [
+            "grey",
+            "white"
+          ]
+        },
+        "upperparts": {
+          "back": "grey",
+          "rump": null
+        },
+        "underparts": {
+          "breast": [
+            "grey",
+            "white"
+          ],
+          "belly": [
+            "grey",
+            "white"
+          ]
+        },
+        "wings": {
+          "above": "grey",
+          "below": null
+        },
+        "tail": {
+          "colour": null,
+          "shape": null
+        }
+      }
+    },
+    {
+      "age": "juvenile",
+      "sex": "any",
+      "season": "any",
+      "marks": {
+        "bill": {
+          "colour": null,
+          "shape": null
+        },
+        "eye": {
+          "iris": null,
+          "ring": null
+        },
+        "legs": {
+          "colour": null
+        },
+        "head": {
+          "crown": null,
+          "face": null,
+          "throat": null
+        },
+        "upperparts": {
+          "back": "brown",
+          "rump": null
+        },
+        "underparts": {
+          "breast": [
+            "brown",
+            "white"
+          ],
+          "belly": null
+        },
+        "wings": {
+          "above": null,
+          "below": null
+        },
+        "tail": {
+          "colour": null,
+          "shape": null
+        }
+      }
+    }
+  ],
+  "viewNotes": [
+    {
+      "view": "perched-front",
+      "note": "Grey barring on the underparts reaches the throat; dark eye and red cere are visible (Newman's).",
+      "age": "adult",
+      "sex": "any",
+      "season": "any"
+    },
+    {
+      "view": "perched-side",
+      "note": "Plain grey upperparts, long Accipiter tail, orange legs (Newman's; Wikipedia).",
+      "age": "adult",
+      "sex": "any",
+      "season": "any"
+    },
+    {
+      "view": "flight-below",
+      "note": "No detailed underwing description in Newman's meta text; Accipiter flight silhouette with rounded wings and long tail. Flight photos scarce in open Commons for this species.",
+      "age": "adult",
+      "sex": "any",
+      "season": "any"
+    }
+  ],
+  "calls": [
+    {
+      "sex": "any",
+      "type": "call",
+      "description": "A high-pitched Accipiter call; sources consulted give little southern-African call detail beyond general Accipiter vocalisations. Recordings included where openly licensed.",
+      "recordings": [
+        {
+          "key": "xeno-canto/XC613465",
+          "source": "https://xeno-canto.org/613465",
+          "fileUrl": "https://xeno-canto.org/sounds/uploaded/HMBDEWEZVS/XC613465-3%20Ovambo%20SH.mp3",
+          "author": "Tony Archer",
+          "license": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "aiGenerated": false,
+          "hosted": false
+        },
+        {
+          "key": "xeno-canto/XC686715",
+          "source": "https://xeno-canto.org/686715",
+          "fileUrl": "https://xeno-canto.org/sounds/uploaded/HMBDEWEZVS/XC686715-20%20PMV%20Ovamb%20Bee%20Myna%20etc.mp3",
+          "author": "Tony Archer",
+          "license": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "aiGenerated": false,
+          "hosted": false
+        },
+        {
+          "key": "xeno-canto/XC400368",
+          "source": "https://xeno-canto.org/400368",
+          "fileUrl": "https://xeno-canto.org/sounds/uploaded/HMBDEWEZVS/XC400368-Rheebokfontein%20%2017.2.2017.mp3",
+          "author": "Tony",
+          "license": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ]
+    }
+  ],
+  "images": [
+    {
+      "key": "accipiter-ovampensis/perched-side-adult-any.jpg",
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "source": "https://commons.wikimedia.org/wiki/File:Accipiter_ovampensis_86899083.jpg",
+      "fileUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fd/Accipiter_ovampensis_86899083.jpg/1280px-Accipiter_ovampensis_86899083.jpg",
+      "author": "Matthew Fainman",
+      "license": "CC BY 4.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by/4.0/",
+      "aiGenerated": false,
+      "hosted": false,
+      "alt": "Ovambo Sparrowhawk perched, side view; southern Africa.",
+      "caption": "Ovambo Sparrowhawk perched, side view; southern Africa."
+    },
+    {
+      "key": "accipiter-ovampensis/perched-front-adult-any.jpg",
+      "view": "perched-front",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "source": "https://commons.wikimedia.org/wiki/File:Accipiter_ovampensis_86899094.jpg",
+      "fileUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/33/Accipiter_ovampensis_86899094.jpg/1280px-Accipiter_ovampensis_86899094.jpg",
+      "author": "Matthew Fainman",
+      "license": "CC BY 4.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by/4.0/",
+      "aiGenerated": false,
+      "hosted": false,
+      "alt": "Ovambo Sparrowhawk perched, front/three-quarter view; southern Africa.",
+      "caption": "Ovambo Sparrowhawk perched, front/three-quarter view; southern Africa."
+    },
+    {
+      "key": "accipiter-ovampensis/perched-side-adult-any-2.jpg",
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "source": "https://commons.wikimedia.org/wiki/File:Accipiter_ovampensis_377641165.jpg",
+      "fileUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/eb/Accipiter_ovampensis_377641165.jpg/1280px-Accipiter_ovampensis_377641165.jpg",
+      "author": "Matthew Fainman",
+      "license": "CC BY 4.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by/4.0/",
+      "aiGenerated": false,
+      "hosted": false,
+      "alt": "Ovambo Sparrowhawk perched; southern Africa.",
+      "caption": "Ovambo Sparrowhawk perched; southern Africa."
+    },
+    {
+      "key": "accipiter-ovampensis/perched-side-adult-any-3.jpg",
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "source": "https://commons.wikimedia.org/wiki/File:Accipiter_ovampensis_878999.jpg",
+      "fileUrl": "https://upload.wikimedia.org/wikipedia/commons/5/5d/Accipiter_ovampensis_878999.jpg",
+      "author": "i_c_riddell",
+      "license": "CC BY 4.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by/4.0/",
+      "aiGenerated": false,
+      "hosted": false,
+      "alt": "Ovambo Sparrowhawk perched; southern Africa.",
+      "caption": "Ovambo Sparrowhawk perched; southern Africa."
+    }
+  ],
+  "research": {
+    "confidence": "medium",
+    "needsReview": false,
+    "note": "No seasonal plumage change described in the sources consulted. Gaps: No verified Kruger image found on Commons. Flight-above/below photos scarce. Chick undescribed in open sources. Call descriptions thin in Newman's online text. Colour phrases outside the vocabulary were stored as the nearest swatch: dark to dark-brown. Present in Kruger all months at low GBIF counts (scarce). Newman's online red-list badge not used."
+  }
 }

@@ -7,8 +7,85 @@
     "af": "Witkruisarend"
   },
   "family": "accipitridae",
-  "summary": "The details for this species have not been published yet.",
-  "sampleData": true,
+  "status": "resident",
+  "monthsPresent": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+  ],
+  "size": {
+    "lengthCm": {
+      "min": 80,
+      "max": 90
+    },
+    "note": "Newman's Birds gives about 84 cm."
+  },
+  "habitat": "Mountains, cliffs and rocky hills with hyrax; scarce in Kruger, mainly on rocky outcrops/escarpment (Newman's; SABAP1).",
+  "summary": "A very large black eagle with a diagnostic white V on the back; cere and feet yellow. In flight the wings are narrow-based with a pale flash in the primaries (Newman's).",
+  "sampleData": false,
+  "similar": [
+    {
+      "slug": "aquila-spilogaster",
+      "note": "African Hawk-Eagle is smaller and white below with streaks, not all-black with a white back-V (Newman's)."
+    },
+    {
+      "slug": "astur-melanoleucus",
+      "note": "Melanistic Black Sparrowhawk lacks the white back-V and Aquila proportions."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Newman's Birds — Verreauxs Eagle species page (text from Newman's Birds of Southern Africa)",
+      "url": "https://newmansbirds.com/birds/verreauxs-eagle/",
+      "publisher": "Newman's Birds / Struik Nature (online edition)",
+      "year": null
+    },
+    {
+      "title": "The Atlas of Southern African Birds, Vol. 1 (spread 131)",
+      "url": "https://sabap2.birdmap.africa/docs/sabap1/131.pdf",
+      "publisher": "BirdLife South Africa / Avian Demography Unit",
+      "year": 1997
+    },
+    {
+      "title": "Biodiversity Explorer species text (summarised from Roberts Birds of Southern Africa VIIth ed., Hockey, Dean & Ryan 2005)",
+      "url": "https://www.biodiversityexplorer.info/birds/accipitridae/aquila_verreauxii.htm",
+      "publisher": "Iziko Museums of South Africa",
+      "year": null
+    },
+    {
+      "title": "Wikipedia — Verreaux%27s eagle",
+      "url": "https://en.wikipedia.org/wiki/Verreaux%27s_eagle",
+      "publisher": "Wikimedia Foundation",
+      "year": 2026
+    },
+    {
+      "title": "GBIF occurrence month facets for Aquila verreauxii, Kruger bounding box (lon 31.0–32.04, lat −25.53 to −22.33, country ZA)",
+      "url": "https://api.gbif.org/v1/occurrence/search",
+      "publisher": "GBIF.org",
+      "year": 2026
+    },
+    {
+      "title": "xeno-canto recordings (metadata via GBIF dataset b1047888-ae52-4179-9dd5-5448ea342a24)",
+      "url": "https://xeno-canto.org/",
+      "publisher": "xeno-canto.org / GBIF",
+      "year": 2026
+    },
+    {
+      "title": "Wikimedia Commons species category images",
+      "url": "https://commons.wikimedia.org/",
+      "publisher": "Wikimedia Commons",
+      "year": 2026
+    }
+  ],
   "population": {
     "estimate": {
       "low": 8,
@@ -35,8 +112,188 @@
     },
     "tierApplied": "D"
   },
-  "variants": [],
-  "viewNotes": [],
-  "calls": [],
-  "images": []
+  "variants": [
+    {
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "marks": {
+        "bill": {
+          "colour": [
+            "black",
+            "yellow"
+          ],
+          "shape": "heavy, hooked"
+        },
+        "eye": {
+          "iris": "brown",
+          "ring": null
+        },
+        "legs": {
+          "colour": "yellow"
+        },
+        "head": {
+          "crown": "black",
+          "face": "black",
+          "throat": "black"
+        },
+        "upperparts": {
+          "back": "black",
+          "rump": null
+        },
+        "underparts": {
+          "breast": "black",
+          "belly": "black"
+        },
+        "wings": {
+          "above": "black",
+          "below": "black"
+        },
+        "tail": {
+          "colour": "black",
+          "shape": null
+        }
+      }
+    },
+    {
+      "age": "juvenile",
+      "sex": "any",
+      "season": "any",
+      "marks": {
+        "bill": {
+          "colour": null,
+          "shape": null
+        },
+        "eye": {
+          "iris": null,
+          "ring": null
+        },
+        "legs": {
+          "colour": "yellow"
+        },
+        "head": {
+          "crown": "brown",
+          "face": "brown",
+          "throat": "brown"
+        },
+        "upperparts": {
+          "back": "brown",
+          "rump": null
+        },
+        "underparts": {
+          "breast": "brown",
+          "belly": "brown"
+        },
+        "wings": {
+          "above": null,
+          "below": null
+        },
+        "tail": {
+          "colour": null,
+          "shape": null
+        }
+      }
+    }
+  ],
+  "viewNotes": [
+    {
+      "view": "perched-back",
+      "note": "The white scapular V is diagnostic from behind (Newman's).",
+      "age": "adult",
+      "sex": "any",
+      "season": "any"
+    },
+    {
+      "view": "perched-side",
+      "note": "All-black body with yellow cere/feet; white V may show at the shoulder (Newman's).",
+      "age": "adult",
+      "sex": "any",
+      "season": "any"
+    },
+    {
+      "view": "flight-above",
+      "note": "Narrow-based wings with pale primary flash; white V on back (Newman's).",
+      "age": "adult",
+      "sex": "any",
+      "season": "any"
+    }
+  ],
+  "calls": [
+    {
+      "sex": "any",
+      "type": "call",
+      "description": "A loud, ringing call in display; otherwise often silent. Open recordings are from southern Africa outside Kruger.",
+      "recordings": [
+        {
+          "key": "xeno-canto/XC519736",
+          "source": "https://xeno-canto.org/519736",
+          "fileUrl": "https://xeno-canto.org/sounds/uploaded/SJRAXPTEKH/XC519736-Verreaux%27s%20Eagle.mp3",
+          "author": "Alan Collett",
+          "license": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "aiGenerated": false,
+          "hosted": false
+        },
+        {
+          "key": "xeno-canto/XC428788",
+          "source": "https://xeno-canto.org/428788",
+          "fileUrl": "https://xeno-canto.org/sounds/uploaded/SJRAXPTEKH/XC428788-Verreaux%27s%20chick.mp3",
+          "author": "Alan Collett",
+          "license": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "aiGenerated": false,
+          "hosted": false
+        },
+        {
+          "key": "xeno-canto/XC192183",
+          "source": "https://xeno-canto.org/192183",
+          "fileUrl": "https://xeno-canto.org/sounds/uploaded/SJRAXPTEKH/XC192183-713_8257.mp3",
+          "author": "Alan Collett",
+          "license": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ]
+    }
+  ],
+  "images": [
+    {
+      "key": "aquila-verreauxii/perched-side-adult-any.jpg",
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "source": "https://commons.wikimedia.org/wiki/File:Verreaux%27s_Eagle_(Black_Eagle),_Aquila_verreauxii,_at_Walter_Sisulu_National_Botanical_Garden,_Gauteng,_South_Africa_(28822882654).jpg",
+      "fileUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e3/Verreaux%27s_Eagle_%28Black_Eagle%29%2C_Aquila_verreauxii%2C_at_Walter_Sisulu_National_Botanical_Garden%2C_Gauteng%2C_South_Africa_%2828822882654%29.jpg/1280px-Verreaux%27s_Eagle_%28Black_Eagle%29%2C_Aquila_verreauxii%2C_at_Walter_Sisulu_National_Botanical_Garden%2C_Gauteng%2C_South_Africa_%2828822882654%29.jpg",
+      "author": "Derek Keats",
+      "license": "CC BY 2.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by/2.0/",
+      "aiGenerated": false,
+      "hosted": false,
+      "alt": "Adult Verreaux's Eagle perched, side view; Walter Sisulu NBG, South Africa.",
+      "caption": "Adult Verreaux's Eagle perched, side view; Walter Sisulu NBG, South Africa."
+    },
+    {
+      "key": "aquila-verreauxii/perched-side-adult-female.jpg",
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "female",
+      "season": "any",
+      "source": "https://commons.wikimedia.org/wiki/File:Black_eagle_yesterday_at_Walter_SIsulu_National_Botanical_Garden_(36173878660).jpg",
+      "fileUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/35/Black_eagle_yesterday_at_Walter_SIsulu_National_Botanical_Garden_%2836173878660%29.jpg/1280px-Black_eagle_yesterday_at_Walter_SIsulu_National_Botanical_Garden_%2836173878660%29.jpg",
+      "author": "Derek Keats",
+      "license": "CC BY 2.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by/2.0/",
+      "aiGenerated": false,
+      "hosted": false,
+      "alt": "Verreaux's Eagle perched; Walter Sisulu NBG.",
+      "caption": "Verreaux's Eagle perched; Walter Sisulu NBG."
+    }
+  ],
+  "research": {
+    "confidence": "medium",
+    "needsReview": false,
+    "note": "No seasonal plumage change; multi-year immature sequence. Gaps: No verified Kruger photo in the curated set (Walter Sisulu NBG used). Flight-below image not curated. Photos left out: A repeated file was omitted. Scarce in Kruger (low but year-round GBIF). Also called Black Eagle in older southern-African guides."
+  }
 }

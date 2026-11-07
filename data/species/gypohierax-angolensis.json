@@ -7,8 +7,79 @@
     "af": "Witaasvoël"
   },
   "family": "accipitridae",
-  "summary": "The details for this species have not been published yet.",
-  "sampleData": true,
+  "monthsPresent": [
+    1,
+    2,
+    3,
+    4,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+  ],
+  "size": {
+    "lengthCm": {
+      "min": 57,
+      "max": 65
+    },
+    "note": "Newman's Birds gives about 60 cm."
+  },
+  "habitat": "East coastal regions with oil/raffia palms; in South Africa largely the KZN coast (Newman's). Rare visitor to Kruger.",
+  "summary": "A distinctive white vulture-like raptor with black wings and tail; horn-coloured bill and legs (Newman's). Rare visitor and localised resident to the KZN coast; not a regular Kruger species.",
+  "sampleData": false,
+  "similar": [
+    {
+      "slug": "gyps-africanus",
+      "note": "White-backed Vulture is larger, brownish, with a bare neck and white back patch — not clean white with black wings (Newman's)."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Newman's Birds — Palm Nut Vulture species page (text from Newman's Birds of Southern Africa)",
+      "url": "https://newmansbirds.com/birds/palm-nut-vulture/",
+      "publisher": "Newman's Birds / Struik Nature (online edition)",
+      "year": null
+    },
+    {
+      "title": "The Atlas of Southern African Birds, Vol. 1 (spread 147)",
+      "url": "https://sabap2.birdmap.africa/docs/sabap1/147.pdf",
+      "publisher": "BirdLife South Africa / Avian Demography Unit",
+      "year": 1997
+    },
+    {
+      "title": "Biodiversity Explorer species text (summarised from Roberts Birds of Southern Africa VIIth ed., Hockey, Dean & Ryan 2005)",
+      "url": "https://www.biodiversityexplorer.info/birds/accipitridae/gypohierax_angolensis.htm",
+      "publisher": "Iziko Museums of South Africa",
+      "year": null
+    },
+    {
+      "title": "Wikipedia — Palm-nut vulture",
+      "url": "https://en.wikipedia.org/wiki/Palm-nut_vulture",
+      "publisher": "Wikimedia Foundation",
+      "year": 2026
+    },
+    {
+      "title": "GBIF occurrence month facets for Gypohierax angolensis, Kruger bounding box (lon 31.0–32.04, lat −25.53 to −22.33, country ZA)",
+      "url": "https://api.gbif.org/v1/occurrence/search",
+      "publisher": "GBIF.org",
+      "year": 2026
+    },
+    {
+      "title": "xeno-canto recordings (metadata via GBIF dataset b1047888-ae52-4179-9dd5-5448ea342a24)",
+      "url": "https://xeno-canto.org/",
+      "publisher": "xeno-canto.org / GBIF",
+      "year": 2026
+    },
+    {
+      "title": "Wikimedia Commons species category images",
+      "url": "https://commons.wikimedia.org/",
+      "publisher": "Wikimedia Commons",
+      "year": 2026
+    }
+  ],
   "population": {
     "estimate": {
       "low": 1,
@@ -35,8 +106,170 @@
     },
     "tierApplied": "D"
   },
-  "variants": [],
-  "viewNotes": [],
-  "calls": [],
-  "images": []
+  "variants": [
+    {
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "marks": {
+        "bill": {
+          "colour": [
+            "horn",
+            "grey"
+          ],
+          "shape": "heavy"
+        },
+        "eye": {
+          "iris": [
+            "yellow",
+            "brown"
+          ],
+          "ring": null
+        },
+        "legs": {
+          "colour": [
+            "horn",
+            "grey"
+          ]
+        },
+        "head": {
+          "crown": "white",
+          "face": "white",
+          "throat": "white"
+        },
+        "upperparts": {
+          "back": "white",
+          "rump": null
+        },
+        "underparts": {
+          "breast": "white",
+          "belly": "white"
+        },
+        "wings": {
+          "above": "black",
+          "below": "black"
+        },
+        "tail": {
+          "colour": "black",
+          "shape": null
+        }
+      }
+    },
+    {
+      "age": "immature",
+      "sex": "any",
+      "season": "any",
+      "marks": {
+        "bill": {
+          "colour": null,
+          "shape": null
+        },
+        "eye": {
+          "iris": null,
+          "ring": null
+        },
+        "legs": {
+          "colour": null
+        },
+        "head": {
+          "crown": "brown",
+          "face": "brown",
+          "throat": null
+        },
+        "upperparts": {
+          "back": "brown",
+          "rump": null
+        },
+        "underparts": {
+          "breast": "brown",
+          "belly": "brown"
+        },
+        "wings": {
+          "above": [
+            "brown",
+            "black"
+          ],
+          "below": null
+        },
+        "tail": {
+          "colour": null,
+          "shape": null
+        }
+      }
+    }
+  ],
+  "viewNotes": [
+    {
+      "view": "perched-side",
+      "note": "Striking white body with black flight feathers and tail (Newman's).",
+      "age": "adult",
+      "sex": "any",
+      "season": "any"
+    },
+    {
+      "view": "flight-side",
+      "note": "White coverts contrast with black remiges and tail (Newman's).",
+      "age": "adult",
+      "sex": "any",
+      "season": "any"
+    }
+  ],
+  "calls": [
+    {
+      "sex": "any",
+      "type": "call",
+      "description": "Mostly silent; soft croaks at the nest. Very few open recordings.",
+      "recordings": [
+        {
+          "key": "xeno-canto/XC613298",
+          "source": "https://xeno-canto.org/613298",
+          "fileUrl": "https://xeno-canto.org/sounds/uploaded/NNOPYSZDYZ/XC613298-Vulture-palm-nut-2021-01-06-10.24.29-AM.mp3",
+          "author": "Rod Cassidy",
+          "license": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ]
+    }
+  ],
+  "images": [
+    {
+      "key": "gypohierax-angolensis/perched-side-adult-any.jpg",
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "source": "https://commons.wikimedia.org/wiki/File:Palm-nut_vulture,_Gypohierax_angolensis,_at_Ndumo_Nature_Reserve,_KwaZulu-Natal,_South_Africa_(28447075624).jpg",
+      "fileUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0d/Palm-nut_vulture%2C_Gypohierax_angolensis%2C_at_Ndumo_Nature_Reserve%2C_KwaZulu-Natal%2C_South_Africa_%2828447075624%29.jpg/1280px-Palm-nut_vulture%2C_Gypohierax_angolensis%2C_at_Ndumo_Nature_Reserve%2C_KwaZulu-Natal%2C_South_Africa_%2828447075624%29.jpg",
+      "author": "Derek Keats",
+      "license": "CC BY 2.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by/2.0/",
+      "aiGenerated": false,
+      "hosted": false,
+      "alt": "Adult Palm-nut Vulture perched; Ndumo, KwaZulu-Natal.",
+      "caption": "Adult Palm-nut Vulture perched; Ndumo, KwaZulu-Natal."
+    },
+    {
+      "key": "gypohierax-angolensis/flight-side-adult-any.jpg",
+      "view": "flight-side",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "source": "https://commons.wikimedia.org/wiki/File:Palm_nut_vulture_(Gypohierax_angolensis)_on_nest.jpg",
+      "fileUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2a/Palm_nut_vulture_%28Gypohierax_angolensis%29_on_nest.jpg/1280px-Palm_nut_vulture_%28Gypohierax_angolensis%29_on_nest.jpg",
+      "author": "Charles J. Sharp",
+      "license": "CC BY-SA 4.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "aiGenerated": false,
+      "hosted": false,
+      "alt": "Palm-nut Vulture in flight; Semliki.",
+      "caption": "Palm-nut Vulture in flight; Semliki."
+    }
+  ],
+  "research": {
+    "confidence": "medium",
+    "needsReview": true,
+    "note": "Status is omitted. This is a rare visitor in Kruger, and the site has no vagrant status. The vocabulary is resident, intra-african-migrant, palearctic-migrant, and the older summer-migrant. No seasonal plumage change; immature brown. Gaps: Only 31 GBIF records in Kruger box — rare visitor. Images from Ndumo (KZN), not Kruger. Photos left out: A repeated file was omitted. Diet includes oil-palm fruits as well as carrion/crabs (BE/Wikipedia). monthsPresent set from Newman/SABAP seasonality cross-checked with GBIF Kruger month facets (not abundance)."
+  }
 }

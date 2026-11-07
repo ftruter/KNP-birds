@@ -7,8 +7,61 @@
     "af": "Kransaasvoël"
   },
   "family": "accipitridae",
-  "summary": "The details for this species have not been published yet.",
-  "sampleData": true,
+  "status": "resident",
+  "monthsPresent": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+  ],
+  "size": {
+    "lengthCm": {
+      "min": 105,
+      "max": 115
+    },
+    "note": "Newman's 105–115 cm. Wikipedia 96–115 cm."
+  },
+  "habitat": "Forages over open country and woodland; breeds on tall cliffs (colonies May–Oct). In Kruger mainly a visitor/wanderer from escarpment colonies; often soars high and may perch on pylons (Newman's; SABAP1).",
+  "summary": "A large, pale endemic African vulture. Adults are very pale brown to whitish on the body with dark flight feathers and a honey-coloured eye; immatures are warmer rufous-brown with pinker neck skin. Easily confused with White-backed Vulture where ranges overlap (Newman's).",
+  "sampleData": false,
+  "similar": [
+    {
+      "slug": "gyps-africanus",
+      "note": "White-backed is smaller; adult has a contrasting white lower back (visible in flight from above); eye dark, not honey-coloured (Newman's)."
+    },
+    {
+      "slug": "torgos-tracheliotos",
+      "note": "Lappet-faced is darker-bodied with a massive bill and crimson bare head; white 'pants' in adults (Newman's)."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Newman's Birds — Cape Vulture species page",
+      "url": "https://newmansbirds.com/birds/cape-vulture/",
+      "publisher": "Newman's Birds / Struik Nature (online edition)",
+      "year": null
+    },
+    {
+      "title": "The Atlas of Southern African Birds, Vol. 1 (spread 122)",
+      "url": "https://sabap2.birdmap.africa/docs/sabap1/122.pdf",
+      "publisher": "BirdLife South Africa / Avian Demography Unit",
+      "year": 1997
+    },
+    {
+      "title": "Wikipedia — Cape Vulture",
+      "url": "https://en.wikipedia.org/wiki/Cape_vulture",
+      "publisher": "Wikimedia Foundation",
+      "year": null
+    }
+  ],
   "population": {
     "estimate": {
       "low": 64,
@@ -35,8 +88,217 @@
     },
     "tierApplied": "D"
   },
-  "variants": [],
-  "viewNotes": [],
-  "calls": [],
-  "images": []
+  "variants": [
+    {
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "marks": {
+        "bill": {
+          "colour": [
+            "horn",
+            "black"
+          ],
+          "shape": "heavy, hooked"
+        },
+        "eye": {
+          "iris": [
+            "gold",
+            "yellow",
+            "brown"
+          ],
+          "ring": null
+        },
+        "legs": {
+          "colour": [
+            "grey",
+            "black"
+          ]
+        },
+        "head": {
+          "crown": [
+            "brown",
+            "white"
+          ],
+          "face": [
+            "blue",
+            "grey"
+          ],
+          "throat": null,
+          "pattern": "pale brown; blue-grey bare neck"
+        },
+        "upperparts": {
+          "back": [
+            "brown",
+            "white"
+          ],
+          "rump": null,
+          "pattern": "pale brown; pale"
+        },
+        "underparts": {
+          "breast": "brown",
+          "belly": "brown",
+          "pattern": "pale brown"
+        },
+        "wings": {
+          "above": [
+            "brown",
+            "black"
+          ],
+          "below": null,
+          "pattern": "pale brown coverts; black flight feathers; darker outer primaries contrast with paler inners"
+        },
+        "tail": {
+          "colour": "black",
+          "shape": null
+        }
+      }
+    },
+    {
+      "age": "immature",
+      "sex": "any",
+      "season": "any",
+      "marks": {
+        "bill": {
+          "colour": null,
+          "shape": null
+        },
+        "eye": {
+          "iris": null,
+          "ring": null
+        },
+        "legs": {
+          "colour": null
+        },
+        "head": {
+          "crown": null,
+          "face": "pink",
+          "throat": null,
+          "pattern": "pink neck"
+        },
+        "upperparts": {
+          "back": [
+            "rufous",
+            "brown"
+          ],
+          "rump": null
+        },
+        "underparts": {
+          "breast": [
+            "rufous",
+            "brown"
+          ],
+          "belly": [
+            "rufous",
+            "brown"
+          ]
+        },
+        "wings": {
+          "above": null,
+          "below": null
+        },
+        "tail": {
+          "colour": null,
+          "shape": null
+        }
+      }
+    }
+  ],
+  "viewNotes": [
+    {
+      "view": "perched-side",
+      "note": "Side view shows the key field marks summarised for Cape Vulture: see variants. (Newman's).",
+      "age": "adult",
+      "sex": "any",
+      "season": "any"
+    },
+    {
+      "view": "flight-below",
+      "note": "From below: darker outer primaries contrast with paler inners; pale body (Newmans).",
+      "age": "adult",
+      "sex": "any",
+      "season": "any"
+    },
+    {
+      "view": "flight-above",
+      "note": "From above, the upperwing is brown, black (Newman's).",
+      "age": "adult",
+      "sex": "any",
+      "season": "any"
+    }
+  ],
+  "calls": [
+    {
+      "sex": "any",
+      "type": "call",
+      "description": "Normally silent; hisses and squeals when squabbling over food (Newman's family text).",
+      "recordings": [
+        {
+          "key": "xeno-canto/XC369789",
+          "source": "https://xeno-canto.org/369789",
+          "fileUrl": "https://xeno-canto.org/sounds/uploaded/RLSEYIEVCI/XC369789-cape%20vulture.mp3",
+          "author": "W.J. Rossouw",
+          "license": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ]
+    }
+  ],
+  "images": [
+    {
+      "key": "gyps-coprotheres/perched-side-1.jpg",
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "source": "https://www.inaturalist.org/observations/135010967",
+      "fileUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/230217479/large.jpeg",
+      "author": "agujaceratops",
+      "license": "CC BY 4.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by/4.0/",
+      "aiGenerated": false,
+      "hosted": false,
+      "alt": "Cape Vulture — perched-side, adult. Mopani, Kruger National Park, Limpopo, South Africa",
+      "caption": "Cape Vulture — perched-side, adult. Mopani, Kruger National Park, Limpopo, South Africa"
+    },
+    {
+      "key": "gyps-coprotheres/perched-front-2.jpg",
+      "view": "perched-front",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "source": "https://commons.wikimedia.org/wiki/File:Pretoria-dieretuin,_Gyps_coprotheres,_kop,_a.jpg",
+      "fileUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/33/Pretoria-dieretuin%2C_Gyps_coprotheres%2C_kop%2C_a.jpg/1280px-Pretoria-dieretuin%2C_Gyps_coprotheres%2C_kop%2C_a.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "author": "JMK",
+      "license": "CC BY-SA 4.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "aiGenerated": false,
+      "hosted": false,
+      "alt": "Cape Vulture — perched-front, adult. Gyps coprotheres, head and upper body, Pretoria Zoo",
+      "caption": "Cape Vulture — perched-front, adult. Gyps coprotheres, head and upper body, Pretoria Zoo"
+    },
+    {
+      "key": "gyps-coprotheres/flight-above-4.jpg",
+      "view": "flight-above",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "source": "https://commons.wikimedia.org/wiki/File:Cape_Vulture-001.jpg",
+      "fileUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/dc/Cape_Vulture-001.jpg/1280px-Cape_Vulture-001.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "author": "NJR ZA",
+      "license": "CC BY-SA 3.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "aiGenerated": false,
+      "hosted": false,
+      "alt": "Cape Vulture — flight-above, adult. Cape Vulture ( Gyps coprotheres ) in flight at the Rhino and Lion Nature Reserve, Cradle of Humankind , Gauteng, South",
+      "caption": "Cape Vulture — flight-above, adult. Cape Vulture ( Gyps coprotheres ) in flight at the Rhino and Lion Nature Reserve, Cradle of Humankind , Gauteng, South"
+    }
+  ],
+  "research": {
+    "confidence": "medium",
+    "needsReview": false,
+    "note": "Research confidence was medium-high and is stored as medium. No seasonal plumage change is described in the sources consulted, except presence/absence of migrants. Gaps: No juvenile/immature image in selected set. Photos left out: The file name says Cape Vulture but the description says White-backed Vulture (Gyps africanus), so the photo was left out. Colour phrases outside the vocabulary were stored as the nearest swatch: blue-grey to blue and grey; honey to gold; whitish to white."
+  }
 }

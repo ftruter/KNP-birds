@@ -7,8 +7,61 @@
     "af": "Kleinsperwer"
   },
   "family": "accipitridae",
-  "summary": "The details for this species have not been published yet.",
-  "sampleData": true,
+  "status": "resident",
+  "monthsPresent": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+  ],
+  "size": {
+    "lengthCm": {
+      "min": 23,
+      "max": 25
+    },
+    "note": "Newman's 23–25 cm. Wikipedia 23–27 cm."
+  },
+  "habitat": "Densely wooded situations, forest fringes, riverine forest, woodland and exotic stands (Newman's).",
+  "summary": "Very small Accipiter with yellow eyes (may flush redder when breeding), yellow eye-ring, cere and legs. Two white spots on the black uppertail; finely barred underparts with pale rufous flanks (Newman's). Formerly Accipiter minullus.",
+  "sampleData": false,
+  "similar": [
+    {
+      "slug": "tachyspiza-badia",
+      "note": "Shikra is larger with red eyes and rufous banding to the throat; no white uppertail spots (Newman's)."
+    },
+    {
+      "slug": "micronisus-gabar",
+      "note": "Gabar has red eyes and a white rump (Newman's)."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Newman's Birds — Little Sparrowhawk species page",
+      "url": "https://newmansbirds.com/birds/little-sparrowhawk/",
+      "publisher": "Newman's Birds / Struik Nature (online edition)",
+      "year": null
+    },
+    {
+      "title": "The Atlas of Southern African Birds, Vol. 1 (spread 157)",
+      "url": "https://sabap2.birdmap.africa/docs/sabap1/157.pdf",
+      "publisher": "BirdLife South Africa / Avian Demography Unit",
+      "year": 1997
+    },
+    {
+      "title": "Wikipedia — Little Sparrowhawk",
+      "url": "https://en.wikipedia.org/wiki/Little_sparrowhawk",
+      "publisher": "Wikimedia Foundation",
+      "year": null
+    }
+  ],
   "population": {
     "estimate": {
       "low": 1024,
@@ -35,8 +88,259 @@
     },
     "tierApplied": "D"
   },
-  "variants": [],
-  "viewNotes": [],
-  "calls": [],
-  "images": []
+  "variants": [
+    {
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "marks": {
+        "bill": {
+          "colour": [
+            "yellow",
+            "black"
+          ],
+          "shape": "small sharp; yellow cere"
+        },
+        "eye": {
+          "iris": "yellow",
+          "ring": "yellow"
+        },
+        "legs": {
+          "colour": "yellow"
+        },
+        "head": {
+          "crown": "grey",
+          "face": "grey",
+          "throat": null,
+          "pattern": "pale barred"
+        },
+        "upperparts": {
+          "back": "grey",
+          "rump": null
+        },
+        "underparts": {
+          "breast": null,
+          "belly": "rufous",
+          "pattern": "finely barred; pale rufous flanks"
+        },
+        "wings": {
+          "above": "grey",
+          "below": null,
+          "pattern": "barred"
+        },
+        "tail": {
+          "colour": [
+            "black",
+            "white"
+          ],
+          "shape": "long; black with two white spots above"
+        }
+      }
+    },
+    {
+      "age": "immature",
+      "sex": "any",
+      "season": "any",
+      "marks": {
+        "bill": {
+          "colour": null,
+          "shape": null
+        },
+        "eye": {
+          "iris": null,
+          "ring": null
+        },
+        "legs": {
+          "colour": null
+        },
+        "head": {
+          "crown": null,
+          "face": null,
+          "throat": null
+        },
+        "upperparts": {
+          "back": "brown",
+          "rump": null
+        },
+        "underparts": {
+          "breast": null,
+          "belly": null,
+          "pattern": "heavily spotted; spotted"
+        },
+        "wings": {
+          "above": null,
+          "below": null
+        },
+        "tail": {
+          "colour": null,
+          "shape": null
+        }
+      }
+    }
+  ],
+  "viewNotes": [
+    {
+      "view": "perched-side",
+      "note": "Side view shows the key field marks summarised for Little Sparrowhawk: see variants. (Newman's).",
+      "age": "adult",
+      "sex": "any",
+      "season": "any"
+    },
+    {
+      "view": "flight-below",
+      "note": "From below, finely barred, with rufous flanks (Newman's).",
+      "age": "adult",
+      "sex": "any",
+      "season": "any"
+    },
+    {
+      "view": "flight-above",
+      "note": "From above, two white spots show on the tail (Newman's).",
+      "age": "adult",
+      "sex": "any",
+      "season": "any"
+    }
+  ],
+  "calls": [
+    {
+      "sex": "any",
+      "type": "call",
+      "description": "Single-syllabled 'ki' rapidly repeated (Newman's).",
+      "recordings": [
+        {
+          "key": "xeno-canto/XC933196",
+          "source": "https://xeno-canto.org/933196",
+          "fileUrl": "https://xeno-canto.org/sounds/uploaded/UKDFMOJDDN/XC933196-little-sparrowhawk.mp3",
+          "author": "Daan van der Hoeven",
+          "license": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "aiGenerated": false,
+          "hosted": false
+        },
+        {
+          "key": "xeno-canto/XC960879",
+          "source": "https://xeno-canto.org/960879",
+          "fileUrl": "https://xeno-canto.org/sounds/uploaded/TSMVYZCIWC/XC960879-20241205little-sparrowhawk.wav",
+          "author": "Ehren Eksteen",
+          "license": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "aiGenerated": false,
+          "hosted": false
+        },
+        {
+          "key": "xeno-canto/XC697064",
+          "source": "https://xeno-canto.org/697064",
+          "fileUrl": "https://xeno-canto.org/sounds/uploaded/HMBDEWEZVS/XC697064-9%20L%20S%20Hawk.mp3",
+          "author": "Tony Archer",
+          "license": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ]
+    }
+  ],
+  "images": [
+    {
+      "key": "tachyspiza-minulla/perched-side-1.jpg",
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "source": "https://commons.wikimedia.org/wiki/File:Little_Sparrowhawk_(Accipiter_minullus)_(17148898167).jpg",
+      "fileUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e8/Little_Sparrowhawk_%28Accipiter_minullus%29_%2817148898167%29.jpg/1280px-Little_Sparrowhawk_%28Accipiter_minullus%29_%2817148898167%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "author": "Bernard DUPONT from FRANCE",
+      "license": "CC BY-SA 2.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+      "aiGenerated": false,
+      "hosted": false,
+      "alt": "Little Sparrowhawk — perched-side, adult. H7 Road East of Orpen, Kruger NP, SOUTH AFRICA",
+      "caption": "Little Sparrowhawk — perched-side, adult. H7 Road East of Orpen, Kruger NP, SOUTH AFRICA"
+    },
+    {
+      "key": "tachyspiza-minulla/perched-side-2.jpg",
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "source": "https://commons.wikimedia.org/wiki/File:Little_Sparrowhawk_(Accipiter_minullus)_(17330272436).jpg",
+      "fileUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7c/Little_Sparrowhawk_%28Accipiter_minullus%29_%2817330272436%29.jpg/1280px-Little_Sparrowhawk_%28Accipiter_minullus%29_%2817330272436%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "author": "Bernard DUPONT from FRANCE",
+      "license": "CC BY-SA 2.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+      "aiGenerated": false,
+      "hosted": false,
+      "alt": "Little Sparrowhawk — perched-side, adult. H7 Road East of Orpen, Kruger NP, SOUTH AFRICA",
+      "caption": "Little Sparrowhawk — perched-side, adult. H7 Road East of Orpen, Kruger NP, SOUTH AFRICA"
+    },
+    {
+      "key": "tachyspiza-minulla/perched-side-3.jpg",
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "source": "https://commons.wikimedia.org/wiki/File:Little_Sparrowhawk_(Accipiter_minullus)_(17330272436)_(cropped).jpg",
+      "fileUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/63/Little_Sparrowhawk_%28Accipiter_minullus%29_%2817330272436%29_%28cropped%29.jpg/1280px-Little_Sparrowhawk_%28Accipiter_minullus%29_%2817330272436%29_%28cropped%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "author": "Bernard DUPONT from FRANCE",
+      "license": "CC BY-SA 2.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+      "aiGenerated": false,
+      "hosted": false,
+      "alt": "Little Sparrowhawk — perched-side, adult. H7 Road East of Orpen, Kruger NP, SOUTH AFRICA",
+      "caption": "Little Sparrowhawk — perched-side, adult. H7 Road East of Orpen, Kruger NP, SOUTH AFRICA"
+    },
+    {
+      "key": "tachyspiza-minulla/perched-side-4.jpg",
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "source": "https://commons.wikimedia.org/wiki/File:Little_Sparrowhawk_(Accipiter_minullus)_(17330414916).jpg",
+      "fileUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f3/Little_Sparrowhawk_%28Accipiter_minullus%29_%2817330414916%29.jpg/1280px-Little_Sparrowhawk_%28Accipiter_minullus%29_%2817330414916%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "author": "Bernard DUPONT from FRANCE",
+      "license": "CC BY-SA 2.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+      "aiGenerated": false,
+      "hosted": false,
+      "alt": "Little Sparrowhawk — perched-side, adult. H7 Road East of Orpen, Kruger NP, SOUTH AFRICA",
+      "caption": "Little Sparrowhawk — perched-side, adult. H7 Road East of Orpen, Kruger NP, SOUTH AFRICA"
+    },
+    {
+      "key": "tachyspiza-minulla/perched-side-5.jpg",
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "source": "https://commons.wikimedia.org/wiki/File:Little_Sparrowhawk_(Accipiter_minullus)_(17356320075).jpg",
+      "fileUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/93/Little_Sparrowhawk_%28Accipiter_minullus%29_%2817356320075%29.jpg/1280px-Little_Sparrowhawk_%28Accipiter_minullus%29_%2817356320075%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "author": "Bernard DUPONT from FRANCE",
+      "license": "CC BY-SA 2.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+      "aiGenerated": false,
+      "hosted": false,
+      "alt": "Little Sparrowhawk — perched-side, adult. H7 Road East of Orpen, Kruger NP, SOUTH AFRICA",
+      "caption": "Little Sparrowhawk — perched-side, adult. H7 Road East of Orpen, Kruger NP, SOUTH AFRICA"
+    },
+    {
+      "key": "tachyspiza-minulla/perched-side-6.jpg",
+      "view": "perched-side",
+      "age": "immature",
+      "sex": "any",
+      "season": "any",
+      "source": "https://commons.wikimedia.org/wiki/File:Little_Sparrowhawk_(Accipiter_minullus)_immature_(31215969532).jpg",
+      "fileUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1a/Little_Sparrowhawk_%28Accipiter_minullus%29_immature_%2831215969532%29.jpg/1280px-Little_Sparrowhawk_%28Accipiter_minullus%29_immature_%2831215969532%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "author": "Bernard DUPONT from FRANCE",
+      "license": "CC BY-SA 2.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+      "aiGenerated": false,
+      "hosted": false,
+      "alt": "Little Sparrowhawk — perched-side, immature. Skukuza Nursery, Kruger NP, Mpumalanga, SOUTH AFRICA",
+      "caption": "Little Sparrowhawk — perched-side, immature. Skukuza Nursery, Kruger NP, Mpumalanga, SOUTH AFRICA"
+    }
+  ],
+  "research": {
+    "confidence": "medium",
+    "needsReview": false,
+    "note": "Research confidence was medium-high and is stored as medium. No seasonal plumage change is described in the sources consulted, except presence/absence of migrants. Gaps: No flight image in selected set."
+  }
 }

@@ -7,8 +7,80 @@
     "af": "Steppe-arend"
   },
   "family": "accipitridae",
-  "summary": "The details for this species have not been published yet.",
-  "sampleData": true,
+  "status": "palearctic-migrant",
+  "monthsPresent": [
+    10,
+    11,
+    12,
+    1,
+    2,
+    3,
+    4
+  ],
+  "size": {
+    "lengthCm": {
+      "min": 70,
+      "max": 80
+    },
+    "note": "Newman's Birds gives about 75 cm."
+  },
+  "habitat": "Open savanna, woodland edge and game country; often near carcasses with other large eagles and vultures (Newman's; Wikipedia).",
+  "summary": "A large, dark brown Palearctic migrant eagle with fully feathered legs. Adult is plain dark brown with orange-yellow gape and feet; the long gape line extending beyond the centre of the eye separates it from Tawny Eagle (Newman's; Wikipedia).",
+  "sampleData": false,
+  "similar": [
+    {
+      "slug": "aquila-rapax",
+      "note": "Tawny Eagle is resident, often paler/tawny or mottled; gape does not extend as far past the eye centre; oval vs round nostril differences also cited (Wikipedia; Newman's)."
+    },
+    {
+      "slug": "clanga-pomarina",
+      "note": "Lesser Spotted Eagle is smaller (~65 cm) with narrowly feathered 'stovepipe' legs; immatures show white spots on the folded wings (Newman's)."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Newman's Birds — Steppe Eagle species page (text from Newman's Birds of Southern Africa)",
+      "url": "https://newmansbirds.com/birds/steppe-eagle/",
+      "publisher": "Newman's Birds / Struik Nature (online edition)",
+      "year": null
+    },
+    {
+      "title": "The Atlas of Southern African Birds, Vol. 1 (spread 133)",
+      "url": "https://sabap2.birdmap.africa/docs/sabap1/133.pdf",
+      "publisher": "BirdLife South Africa / Avian Demography Unit",
+      "year": 1997
+    },
+    {
+      "title": "Biodiversity Explorer species text (summarised from Roberts Birds of Southern Africa VIIth ed., Hockey, Dean & Ryan 2005)",
+      "url": "https://www.biodiversityexplorer.info/birds/accipitridae/aquila_nipalensis.htm",
+      "publisher": "Iziko Museums of South Africa",
+      "year": null
+    },
+    {
+      "title": "Wikipedia — Steppe eagle",
+      "url": "https://en.wikipedia.org/wiki/Steppe_eagle",
+      "publisher": "Wikimedia Foundation",
+      "year": 2026
+    },
+    {
+      "title": "GBIF occurrence month facets for Aquila nipalensis, Kruger bounding box (lon 31.0–32.04, lat −25.53 to −22.33, country ZA)",
+      "url": "https://api.gbif.org/v1/occurrence/search",
+      "publisher": "GBIF.org",
+      "year": 2026
+    },
+    {
+      "title": "xeno-canto recordings (metadata via GBIF dataset b1047888-ae52-4179-9dd5-5448ea342a24)",
+      "url": "https://xeno-canto.org/",
+      "publisher": "xeno-canto.org / GBIF",
+      "year": 2026
+    },
+    {
+      "title": "Wikimedia Commons species category images",
+      "url": "https://commons.wikimedia.org/",
+      "publisher": "Wikimedia Commons",
+      "year": 2026
+    }
+  ],
   "population": {
     "estimate": {
       "low": 256,
@@ -35,8 +107,171 @@
     },
     "tierApplied": "D"
   },
-  "variants": [],
-  "viewNotes": [],
-  "calls": [],
-  "images": []
+  "variants": [
+    {
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "marks": {
+        "bill": {
+          "colour": [
+            "black",
+            "grey"
+          ],
+          "shape": "heavy, hooked"
+        },
+        "eye": {
+          "iris": null,
+          "ring": null
+        },
+        "legs": {
+          "colour": "yellow"
+        },
+        "head": {
+          "crown": "brown",
+          "face": "brown",
+          "throat": "brown"
+        },
+        "upperparts": {
+          "back": "brown",
+          "rump": null
+        },
+        "underparts": {
+          "breast": "brown",
+          "belly": "brown"
+        },
+        "wings": {
+          "above": "brown",
+          "below": null
+        },
+        "tail": {
+          "colour": "brown",
+          "shape": null
+        }
+      }
+    },
+    {
+      "age": "juvenile",
+      "sex": "any",
+      "season": "any",
+      "marks": {
+        "bill": {
+          "colour": null,
+          "shape": null
+        },
+        "eye": {
+          "iris": null,
+          "ring": null
+        },
+        "legs": {
+          "colour": "yellow"
+        },
+        "head": {
+          "crown": null,
+          "face": null,
+          "throat": null
+        },
+        "upperparts": {
+          "back": null,
+          "rump": null
+        },
+        "underparts": {
+          "breast": null,
+          "belly": null
+        },
+        "wings": {
+          "above": null,
+          "below": null
+        },
+        "tail": {
+          "colour": null,
+          "shape": null
+        }
+      }
+    }
+  ],
+  "viewNotes": [
+    {
+      "view": "perched-side",
+      "note": "Uniform dark brown with long yellow gape line and feathered legs (Newman's; Wikipedia).",
+      "age": "adult",
+      "sex": "any",
+      "season": "any"
+    },
+    {
+      "view": "flight-below",
+      "note": "Dark underwing; exact pale panels vary with age. Compare carefully with Tawny and Lesser Spotted (Wikipedia).",
+      "age": "adult",
+      "sex": "any",
+      "season": "any"
+    }
+  ],
+  "calls": [
+    {
+      "sex": "any",
+      "type": "call",
+      "description": "Generally silent on the non-breeding grounds in southern Africa; open recordings available are mostly from the Palearctic breeding range.",
+      "recordings": [
+        {
+          "key": "xeno-canto/XC1174915",
+          "source": "https://xeno-canto.org/1174915",
+          "fileUrl": "https://xeno-canto.org/sounds/uploaded/YNOAMCSSHX/XC1174915-Steppe-Eagle-%E8%8D%89%E5%8E%9F%E9%9B%95-call-%E8%B5%A4%E9%A2%88%E9%B8%ADX8-CICADA-%E5%8A%A8%E7%89%A9%E5%9B%AD202603070705_1864---A.mp3",
+          "author": "Bo Shunqi 薄顺奇",
+          "license": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "aiGenerated": false,
+          "hosted": false
+        },
+        {
+          "key": "xeno-canto/XC1174914",
+          "source": "https://xeno-canto.org/1174914",
+          "fileUrl": "https://xeno-canto.org/sounds/uploaded/YNOAMCSSHX/XC1174914-Steppe-Eagle-%E8%8D%89%E5%8E%9F%E9%9B%95-call-X8-CICADA-%E5%8A%A8%E7%89%A9%E5%9B%AD-2511160753_1661--A.mp3",
+          "author": "Bo Shunqi 薄顺奇",
+          "license": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ]
+    }
+  ],
+  "images": [
+    {
+      "key": "aquila-nipalensis/perched-side-adult-any.jpg",
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "source": "https://commons.wikimedia.org/wiki/File:Steppe_Eagle_(Aquila_nipalensis_orientalis)_(32477787604).jpg",
+      "fileUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/de/Steppe_Eagle_%28Aquila_nipalensis_orientalis%29_%2832477787604%29.jpg/1280px-Steppe_Eagle_%28Aquila_nipalensis_orientalis%29_%2832477787604%29.jpg",
+      "author": "Bernard Dupont",
+      "license": "CC BY-SA 2.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by-sa/2.0/",
+      "aiGenerated": false,
+      "hosted": false,
+      "alt": "Steppe Eagle perched, side view.",
+      "caption": "Steppe Eagle perched, side view."
+    },
+    {
+      "key": "aquila-nipalensis/perched-side-adult-any-3.jpg",
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "source": "https://commons.wikimedia.org/wiki/File:Eagle_at_Chobe_National_Park_-_Botswana_-_panoramio.jpg",
+      "fileUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ac/Eagle_at_Chobe_National_Park_-_Botswana_-_panoramio.jpg/1280px-Eagle_at_Chobe_National_Park_-_Botswana_-_panoramio.jpg",
+      "author": "diego_cue",
+      "license": "CC BY-SA 3.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "aiGenerated": false,
+      "hosted": false,
+      "alt": "Steppe Eagle perched; Chobe National Park, Botswana.",
+      "caption": "Steppe Eagle perched; Chobe National Park, Botswana."
+    }
+  ],
+  "research": {
+    "confidence": "medium",
+    "needsReview": false,
+    "note": "Status is stored as palearctic-migrant. The research treated this as a Palearctic summer visitor, which is the same movement, and palearctic-migrant is the status this site already uses. No breeding plumage change in Africa; age-related plumage variation is substantial. Gaps: Few Kruger-labelled Commons photos; many Steppe Eagle images are from Asia. Sexes alike; no sexed images. Quiet in Africa — local call recordings scarce. Photos left out: A repeated file was omitted. GBIF Kruger months peak Oct–Mar (Palearctic summer visitor). Confusion with dark Tawny Eagles is a known field problem. monthsPresent set from Newman/SABAP seasonality cross-checked with GBIF Kruger month facets (not abundance)."
+  }
 }
