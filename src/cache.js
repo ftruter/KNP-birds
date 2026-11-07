@@ -1,3 +1,5 @@
+import { resolveLocale } from './numbers.js'
+
 export const PAGE_CACHE =
   'public, max-age=300, s-maxage=3600, stale-while-revalidate=86400'
 export const NOT_FOUND_CACHE =
@@ -29,12 +31,68 @@ export const kvReadMayBeStale = (env, now = Date.now()) => {
     : false
 }
 
-export const cacheRequest = (url, version) => {
-  const canonical = new URL(url)
-  canonical.search = ''
-  canonical.hash = ''
-  if (version) canonical.searchParams.set('v', version)
-  return new Request(canonical.toString(), { method: 'GET' })
+const LIST_COLUMNS = {
+  '/': [
+    'en',
+    'af',
+    'latin',
+    'summer',
+    'winter',
+    'family',
+    'summerCount',
+    'winterCount',
+  ],
+  '/species': ['en', 'af', 'latin', 'summer', 'winter'],
+  '/families': [
+    'en',
+    'af',
+    'latin',
+    'summer',
+    'winter',
+    'summerCount',
+    'winterCount',
+  ],
+}
+
+const listColumns = (pathname) =>
+  LIST_COLUMNS[pathname] ||
+  (pathname.startsWith('/family/') ? LIST_COLUMNS['/species'] : null)
+
+const formatsNumbers = (pathname) =>
+  !pathname.endsWith('.json') &&
+  !pathname.startsWith('/images/') &&
+  !pathname.startsWith('/audio/') &&
+  !pathname.startsWith('/.well-known/') &&
+  pathname !== '/robots.txt' &&
+  pathname !== '/sitemap.xml' &&
+  pathname !== '/llms.txt' &&
+  pathname !== '/style.css' &&
+  pathname !== '/mcp/server-card'
+
+export const cacheRequest = (url, version, acceptLanguage) => {
+  const source = new URL(url)
+  const sort = source.searchParams.get('sort')
+  const dir = source.searchParams.get('dir')
+  const path =
+    source.pathname.length > 1 && source.pathname.endsWith('/')
+      ? source.pathname.slice(0, -1)
+      : source.pathname
+  source.search = ''
+  source.hash = ''
+  if (version) source.searchParams.set('v', version)
+  if (formatsNumbers(path)) {
+    source.searchParams.set('lang', resolveLocale(acceptLanguage))
+    const columns = path.endsWith('.md') ? null : listColumns(path)
+    if (
+      columns &&
+      columns.includes(sort) &&
+      (dir === 'asc' || dir === 'desc')
+    ) {
+      source.searchParams.set('sort', sort)
+      source.searchParams.set('dir', dir)
+    }
+  }
+  return new Request(source.toString(), { method: 'GET' })
 }
 
 const hideWhileKvSettles = (response) => {
@@ -72,7 +130,11 @@ export const withCache = async (request, ctx, produce, env) => {
 
   const settling = kvReadMayBeStale(env)
   const cache = globalThis.caches?.default
-  const key = cacheRequest(request.url, cacheVersion(env))
+  const key = cacheRequest(
+    request.url,
+    cacheVersion(env),
+    request.headers.get('accept-language'),
+  )
   if (cache && !settling) {
     try {
       const hit = await cache.match(key)

@@ -1,3 +1,5 @@
+import { formatInteger } from './numbers.js'
+
 export const SAMPLE_NOTICE = 'Sample content, to be verified.'
 export const APPROXIMATE_LABEL = 'Approximate estimate'
 export const APPROXIMATE_TOTAL = 'Approximate total'
@@ -194,63 +196,65 @@ export const sizeLabel = (size) => {
 export const byEnglishName = (a, b) =>
   englishName(a).localeCompare(englishName(b), 'en')
 
-const rangeText = (low, high, unit) => {
+const rangeText = (low, high, unit, format) => {
+  const fmt = (value) => formatInteger(value, format)
   let range = null
   if (low != null && high != null)
-    range = low === high ? `${low}` : `${low}–${high}`
-  else if (low != null) range = `at least ${low}`
-  else if (high != null) range = `up to ${high}`
+    range = low === high ? fmt(low) : `${fmt(low)}–${fmt(high)}`
+  else if (low != null) range = `at least ${fmt(low)}`
+  else if (high != null) range = `up to ${fmt(high)}`
   const label = unitLabel(unit)
   return range && label ? `${range} ${label}` : range
 }
 
-export const familyTotalModel = (population) => {
+export const familyTotalModel = (population, format) => {
   const low = Number.isInteger(population?.low) ? population.low : null
   const high = Number.isInteger(population?.high) ? population.high : null
-  const range = rangeText(low, high, 'matureIndividuals')
+  const range = rangeText(low, high, 'matureIndividuals', format)
   const counted = Number.isInteger(population?.speciesCounted)
     ? population.speciesCounted
     : 0
   const total = Number.isInteger(population?.speciesTotal)
     ? population.speciesTotal
     : 0
+  const fmt = (value) => formatInteger(value, format)
   return {
     range,
     counted,
     total,
     complete: population?.complete === true,
-    coverage: `Includes ${counted} of ${total} species.`,
+    coverage: `Includes ${fmt(counted)} of ${fmt(total)} species.`,
   }
 }
 
-export const familyTotalLine = (population) => {
-  const model = familyTotalModel(population)
+export const familyTotalLine = (population, format) => {
+  const model = familyTotalModel(population, format)
   const figure = model.range || 'no numeric total yet'
   const incomplete = model.complete ? '' : ' This total is incomplete.'
   return `${APPROXIMATE_TOTAL}: ${figure}. ${model.coverage}${incomplete}`
 }
 
-export const baselineLine = (baseline) => {
+export const baselineLine = (baseline, format) => {
   const estimate = baseline?.estimate ?? {}
   const low = Number.isInteger(estimate.low) ? estimate.low : null
   const high = Number.isInteger(estimate.high) ? estimate.high : null
-  const range = rangeText(low, high, baseline?.unit)
+  const range = rangeText(low, high, baseline?.unit, format)
   if (!range) return ''
   const year = Number.isInteger(baseline.asOf) ? ` (${baseline.asOf})` : ''
   return `Kemp et al. 2001 baseline kept for comparison: ${range}${year}.`
 }
 
-export const populationModel = (population) => {
+export const populationModel = (population, format) => {
   const estimate = population?.estimate ?? {}
   const low = Number.isInteger(estimate.low) ? estimate.low : null
   const high = Number.isInteger(estimate.high) ? estimate.high : null
   return {
-    range: rangeText(low, high, population?.unit),
+    range: rangeText(low, high, population?.unit, format),
     trend: TREND_LABEL[population?.trend] || TREND_LABEL.unknown,
     confidence: CONFIDENCE_LABEL[population?.confidence] || '',
     asOf: Number.isInteger(population?.asOf) ? population.asOf : null,
     notes: typeof population?.notes === 'string' ? population.notes.trim() : '',
-    baseline: baselineLine(population?.kempBaseline),
+    baseline: baselineLine(population?.kempBaseline, format),
     sources: Array.isArray(population?.sources) ? population.sources : [],
   }
 }
