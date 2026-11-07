@@ -5,7 +5,7 @@
   "type": "module",
   "description": "Birds of Kruger National Park, served by a Cloudflare Worker.",
   "scripts": {
-    "test": "node --test",
+    "test": "NODE_OPTIONS='--import ./test/register-raw-client.mjs --experimental-vm-modules' node --test",
     "lint": "eslint . && prettier --check \"**/*.{js,mjs}\"",
     "format": "prettier --write \"**/*.{js,mjs}\"",
     "seed": "node scripts/seed.mjs",
@@ -23,6 +23,7 @@
     "ajv": "^8.20.0",
     "eslint": "^10.14.0",
     "globals": "^17.13.0",
+    "playwright": "^1.56.1",
     "prettier": "^3.9.10",
     "wrangler": "^4.156.0"
   },

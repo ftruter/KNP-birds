@@ -681,6 +681,11 @@ caption, .season-note {
   cursor: zoom-in;
 }
 
+.zoom img {
+  -webkit-user-drag: none;
+  user-select: none;
+}
+
 .plate.is-zoomed {
   position: fixed;
   z-index: 999;

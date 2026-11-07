@@ -610,7 +610,7 @@ const imageCaption = (image) => {
 
 const plateFigure = (image, caption) => `<figure class="plate">
 <button type="button" class="zoom" aria-pressed="false" aria-label="Zoom photograph">
-${image}
+${image.replace('<img ', '<img draggable="false" ')}
 </button>
 <figcaption>${caption}</figcaption>
 </figure>`
