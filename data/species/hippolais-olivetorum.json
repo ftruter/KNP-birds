@@ -7,8 +7,60 @@
     "af": "Olyfboomsanger"
   },
   "family": "acrocephalidae",
-  "summary": "The details for this species have not been published yet.",
-  "sampleData": true,
+  "status": "palearctic-migrant",
+  "monthsPresent": [
+    11,
+    12,
+    1,
+    2,
+    3
+  ],
+  "size": {
+    "lengthCm": {
+      "min": 18,
+      "max": 18
+    },
+    "note": "Wikipedia, citing eBird, gives 18 cm. Raijmakers gives wing length 79–93 mm and does not give total length."
+  },
+  "habitat": "Low thick Acacia, especially umbrella thorn and black thorn, and other thorn thickets; also moist woodland.",
+  "summary": "A large grey Hippolais and a local Palearctic non-breeding visitor of thornveld. Adults are grey to brownish-grey above, with a short white eyebrow, a white eye-ring, a long two-coloured bill, a whitish wing panel, and whitish underparts that can show a grey breast band. The tail has whitish outer edges. The sexes look alike. Juvenile and chick plumage is not described in the texts used here.",
+  "sampleData": false,
+  "similar": [
+    {
+      "slug": "hippolais-icterina",
+      "note": "Icterine Warbler is smaller and usually yellow below, with a yellow wing panel and bluish-grey legs. Olive-tree Warbler is greyer, longer-billed and whitish below."
+    },
+    {
+      "slug": "acrocephalus-arundinaceus",
+      "note": "Great Reed Warbler can be confused with Olive-tree Warbler by song alone. Great Reed Warbler is browner, has a rufous rump, and uses reeds and lush cover rather than dry Acacia thicket."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Identifying warblers in the hand",
+      "url": "http://safring.adu.org.za/downloads/raijmakerswarblerid.pdf",
+      "publisher": "SAFRING",
+      "year": null
+    },
+    {
+      "title": "The Atlas of Southern African Birds, Vol. 2 (Olivetree Warbler)",
+      "url": "https://sabap2.birdmap.africa/docs/sabap1/626.pdf",
+      "publisher": "BirdLife South Africa",
+      "year": 1997
+    },
+    {
+      "title": "Hippolais olivetorum (Olive-tree warbler), summarised from Roberts VII",
+      "url": "https://www.biodiversityexplorer.info/birds/sylviidae/hippolais_olivetorum.htm",
+      "publisher": "Iziko Museums of South Africa",
+      "year": null
+    },
+    {
+      "title": "Olive-tree warbler",
+      "url": "https://en.wikipedia.org/wiki/Olive-tree_warbler",
+      "publisher": "Wikipedia",
+      "year": 2026
+    }
+  ],
   "population": {
     "estimate": {
       "low": 512,
@@ -35,8 +87,192 @@
     },
     "tierApplied": "D"
   },
-  "variants": [],
-  "viewNotes": [],
-  "calls": [],
-  "images": []
+  "variants": [
+    {
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "marks": {
+        "bill": {
+          "colour": [
+            "horn",
+            "brown",
+            "yellow"
+          ],
+          "shape": "long, thick and dagger-like; the culmen is pale horn-brown and the lower mandible is yellowish at the base"
+        },
+        "eye": {
+          "iris": "brown",
+          "ring": "white"
+        },
+        "legs": {
+          "colour": [
+            "grey",
+            "blue"
+          ]
+        },
+        "head": {
+          "crown": [
+            "brown",
+            "grey"
+          ],
+          "face": [
+            "white",
+            "grey",
+            "brown"
+          ],
+          "throat": "white"
+        },
+        "upperparts": {
+          "back": [
+            "grey",
+            "brown"
+          ],
+          "rump": [
+            "buff",
+            "olive"
+          ]
+        },
+        "underparts": {
+          "breast": [
+            "white",
+            "grey"
+          ],
+          "belly": "white",
+          "pattern": "white with a slight cream or yellow tinge; the sides of the neck and breast are grey and may form a breast band, and the flanks are washed grey"
+        },
+        "wings": {
+          "above": [
+            "brown",
+            "white"
+          ],
+          "below": [
+            "white",
+            "cream"
+          ],
+          "pattern": "whitish edges of the secondaries and tertials form a wing panel; greater coverts are edged and tipped white"
+        },
+        "tail": {
+          "colour": [
+            "grey",
+            "brown",
+            "white"
+          ],
+          "shape": "long and square; outer webs and tips of the outer feathers are whitish"
+        }
+      }
+    }
+  ],
+  "viewNotes": [
+    {
+      "view": "flight-above",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Grey or brownish-grey upperparts and a dark tail with whitish outer edges. In fresh plumage the rump and uppertail-coverts are buffish-olive."
+    },
+    {
+      "view": "flight-below",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Underwing-coverts and axillaries are creamy-white. A spread underwing photograph was not found."
+    },
+    {
+      "view": "perched-front",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "A short white eyebrow from the bill to the eye, a narrow white eye-ring, and whitish underparts. A grey wash at the sides of the breast can meet as a band."
+    },
+    {
+      "view": "perched-back",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Grey-brown mantle and a dark tail with pale outer edges. The rump is buffish-olive only when the plumage is fresh."
+    },
+    {
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "A sloping forehead, a long orange-yellow and horn bill, a whitish wing panel and pale underparts, usually in Acacia."
+    }
+  ],
+  "calls": [
+    {
+      "sex": "any",
+      "type": "song",
+      "description": "A fast, gruff, loud song that repeats chacking sounds with softer notes between them; the texts used here do not assign it to one sex.",
+      "recordings": [
+        {
+          "key": "xeno-canto/XC176955",
+          "source": "https://xeno-canto.org/176955",
+          "fileUrl": "https://xeno-canto.org/sounds/uploaded/JPBSNBUUEF/XC176955-Olive-tree%20Warbler1.mp3",
+          "author": "Jerome Fischer",
+          "license": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ]
+    },
+    {
+      "sex": "any",
+      "type": "call",
+      "description": "A deep chack; the texts used here do not assign it to one sex.",
+      "recordings": [
+        {
+          "key": "xeno-canto/XC336507",
+          "source": "https://xeno-canto.org/336507",
+          "fileUrl": "https://xeno-canto.org/sounds/uploaded/LWQSEALRCJ/XC336507-Olive-tree.mp3",
+          "author": "Heidi Vibe Frederiksen",
+          "license": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ]
+    }
+  ],
+  "images": [
+    {
+      "key": "hippolais-olivetorum/mopani-side.jpg",
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "source": "https://www.inaturalist.org/observations/254891440",
+      "fileUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/456663048/large.jpg",
+      "author": "simonescrase",
+      "license": "CC BY-NC 4.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+      "aiGenerated": false,
+      "hosted": false,
+      "alt": "Olive-tree Warbler perched side-on in flowering thorn, Mopani district",
+      "caption": "Olive-tree Warbler perched side-on in flowering thorn, Mopani district"
+    },
+    {
+      "key": "hippolais-olivetorum/skukuza-side.jpg",
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "source": "https://www.inaturalist.org/observations/343456345",
+      "fileUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/625641672/large.jpg",
+      "author": "Corrie du Toit",
+      "license": "CC BY-NC 4.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+      "aiGenerated": false,
+      "hosted": false,
+      "alt": "Olive-tree Warbler perched side-on at Skukuza, showing the pale wing panel and long bill",
+      "caption": "Olive-tree Warbler perched side-on at Skukuza, showing the pale wing panel and long bill"
+    }
+  ],
+  "research": {
+    "confidence": "medium",
+    "needsReview": false,
+    "note": "Status is palearctic-migrant. Months are November–March. SABAP1 says the earliest arrivals are in the second half of November, most birds arrive in December, and departure is in the second half of March. Raijmakers says December to March. SABAP1 says the whole non-breeding population is centred on the southern African thornbelt and that the song is the usual clue. No grade-A recording from southern Africa was ahead of the grade-A song from Greece or the grade-A call from Israel. Juvenile, chick and a clear flight photograph were not found. The iNaturalist observer name for the Mopani photograph is the account name simonescrase; no separate personal name is published there."
+  }
 }

@@ -13,6 +13,56 @@
         }
       ]
     },
+    "acrocephalus-arundinaceus": {
+      "calls": [
+        {
+          "index": 0,
+          "quality": {
+            "xeno-canto/XC364288": "A"
+          }
+        }
+      ]
+    },
+    "acrocephalus-gracilirostris": {
+      "calls": [
+        {
+          "index": 0,
+          "quality": {
+            "xeno-canto/XC422219": "A"
+          }
+        }
+      ]
+    },
+    "acrocephalus-palustris": {
+      "calls": [
+        {
+          "index": 0,
+          "quality": {
+            "xeno-canto/XC633451": "A"
+          }
+        }
+      ]
+    },
+    "acrocephalus-schoenobaenus": {
+      "calls": [
+        {
+          "index": 0,
+          "quality": {
+            "xeno-canto/XC129503": "A"
+          }
+        }
+      ]
+    },
+    "acrocephalus-scirpaceus": {
+      "calls": [
+        {
+          "index": 0,
+          "quality": {
+            "xeno-canto/XC488497": "A"
+          }
+        }
+      ]
+    },
     "aerospiza-tachiro": {
       "calls": [
         {
@@ -580,6 +630,38 @@
         }
       ]
     },
+    "hippolais-icterina": {
+      "calls": [
+        {
+          "index": 0,
+          "quality": {
+            "xeno-canto/XC27125": "A"
+          }
+        },
+        {
+          "index": 1,
+          "quality": {
+            "xeno-canto/XC448260": "A"
+          }
+        }
+      ]
+    },
+    "hippolais-olivetorum": {
+      "calls": [
+        {
+          "index": 0,
+          "quality": {
+            "xeno-canto/XC176955": "A"
+          }
+        },
+        {
+          "index": 1,
+          "quality": {
+            "xeno-canto/XC336507": "A"
+          }
+        }
+      ]
+    },
     "icthyophaga-vocifer": {
       "calls": [
         {
@@ -588,6 +670,22 @@
             "xeno-canto/XC1149038": "B",
             "xeno-canto/XC1149045": "B",
             "xeno-canto/XC1144970": "C"
+          }
+        }
+      ]
+    },
+    "iduna-natalensis": {
+      "calls": [
+        {
+          "index": 0,
+          "quality": {
+            "xeno-canto/XC292912": "A"
+          }
+        },
+        {
+          "index": 1,
+          "quality": {
+            "xeno-canto/XC390679": "B"
           }
         }
       ]

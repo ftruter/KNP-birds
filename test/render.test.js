@@ -258,7 +258,7 @@ test('a family page lists its species and an empty family does not invent an Afr
   const unnamedMd = renderFamilyMarkdown(warblers, [])
   assert.match(
     unnamedMd,
-    /_Acrocephalidae_\n\nField notes for this family are still to be written/,
+    /_Acrocephalidae_\n\nReed warblers and allies are small insectivorous songbirds/,
   )
 })
 

@@ -7,8 +7,72 @@
     "af": "Spotsanger"
   },
   "family": "acrocephalidae",
-  "summary": "The details for this species have not been published yet.",
-  "sampleData": true,
+  "status": "palearctic-migrant",
+  "monthsPresent": [
+    10,
+    11,
+    12,
+    1,
+    2,
+    3,
+    4
+  ],
+  "size": {
+    "lengthCm": {
+      "min": 14,
+      "max": 15
+    },
+    "note": "Newman's Birds gives 14–15 cm."
+  },
+  "habitat": "Taller mixed, Acacia and broad-leaved woodland, from the mid-stratum to the canopy, and riverine trees in drier bushveld.",
+  "summary": "A Palearctic warbler of woodland canopy, larger than a Willow Warbler and usually yellow below. Adults are greenish-brown above with a pale yellow panel on the closed wing, a vague yellow supercilium and yellow eye-ring, and lemon-yellow underparts. The sexes look alike. Worn birds can be almost without yellow and browner above. The colour of a juvenile, and of a newly hatched chick, is not described in the texts used here.",
+  "sampleData": false,
+  "similar": [
+    {
+      "slug": "phylloscopus-trochilus",
+      "note": "Willow Warbler is smaller. Icterine Warbler has a broader bill, an orange or yellow lower mandible, yellow-edged wing coverts and a square tail tip."
+    },
+    {
+      "slug": "iduna-natalensis",
+      "note": "African Yellow Warbler has blackish legs and uses reeds or rank waterside cover. Icterine Warbler has bluish-grey legs and prefers drier woodland."
+    },
+    {
+      "slug": "hippolais-olivetorum",
+      "note": "Olive-tree Warbler is larger and greyer, with a longer two-coloured bill and a whitish rather than yellow wing panel."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Identifying warblers in the hand",
+      "url": "http://safring.adu.org.za/downloads/raijmakerswarblerid.pdf",
+      "publisher": "SAFRING",
+      "year": null
+    },
+    {
+      "title": "The Atlas of Southern African Birds, Vol. 2 (Icterine Warbler)",
+      "url": "https://sabap2.birdmap.africa/docs/sabap1/625.pdf",
+      "publisher": "BirdLife South Africa",
+      "year": 1997
+    },
+    {
+      "title": "Hippolais icterina (Icterine warbler), summarised from Roberts VII",
+      "url": "https://www.biodiversityexplorer.info/birds/sylviidae/hippolais_icterina.htm",
+      "publisher": "Iziko Museums of South Africa",
+      "year": null
+    },
+    {
+      "title": "Icterine Warbler",
+      "url": "https://newmansbirds.com/birds/icterine-warbler/",
+      "publisher": "Newman's Birds",
+      "year": null
+    },
+    {
+      "title": "Icterine warbler",
+      "url": "https://en.wikipedia.org/wiki/Icterine_warbler",
+      "publisher": "Wikipedia",
+      "year": 2026
+    }
+  ],
   "population": {
     "estimate": {
       "low": 2048,
@@ -35,8 +99,182 @@
     },
     "tierApplied": "D"
   },
-  "variants": [],
-  "viewNotes": [],
-  "calls": [],
-  "images": []
+  "variants": [
+    {
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "marks": {
+        "bill": {
+          "colour": [
+            "dark-brown",
+            "yellow",
+            "orange"
+          ],
+          "shape": "broad-based and fairly long; dark brown with a yellow cutting edge, and a yellowish-flesh to orange lower mandible"
+        },
+        "eye": {
+          "iris": [
+            "brown",
+            "olive"
+          ],
+          "ring": "yellow"
+        },
+        "legs": {
+          "colour": [
+            "grey",
+            "blue"
+          ]
+        },
+        "head": {
+          "crown": "olive",
+          "face": [
+            "yellow",
+            "olive"
+          ],
+          "throat": "yellow"
+        },
+        "upperparts": {
+          "back": [
+            "green",
+            "brown"
+          ],
+          "rump": null
+        },
+        "underparts": {
+          "breast": "yellow",
+          "belly": "yellow",
+          "pattern": "lemon-yellow, with brown on the sides of the breast and flanks; worn birds may be pale buff-white with only a faint yellow hue"
+        },
+        "wings": {
+          "above": [
+            "black",
+            "brown",
+            "yellow"
+          ],
+          "below": "yellow",
+          "pattern": "yellow edges of the secondaries, tertials and greater coverts form a panel on the closed wing"
+        },
+        "tail": {
+          "colour": [
+            "brown",
+            "yellow"
+          ],
+          "shape": "long and almost square, the outer feathers narrowly edged yellowish; the tip is not notched"
+        }
+      }
+    }
+  ],
+  "viewNotes": [
+    {
+      "view": "flight-above",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Greenish-brown upperparts and a dark tail with narrow yellowish edges. The closed wing shows a yellow panel, which is the same pale edging seen from above when the wing is not fully spread."
+    },
+    {
+      "view": "flight-below",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Axillaries, underwing-coverts and the bend of the wing are pale yellow. A spread underwing was not found in an open photograph."
+    },
+    {
+      "view": "perched-front",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Pale yellow lores, a vague yellowish supercilium and a yellow eye-ring around an olive face, with lemon-yellow throat and breast."
+    },
+    {
+      "view": "perched-back",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Greenish-brown mantle and a dark, almost square tail. The rump is not given a separate colour in the texts used here."
+    },
+    {
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "A peaked or flat crown, a broad-based bill with an orange or yellow lower mandible, bluish-grey legs, yellow underparts and a pale panel on the folded wing."
+    }
+  ],
+  "calls": [
+    {
+      "sex": "any",
+      "type": "song",
+      "description": "A repetitive jumble of warbled notes, some pleasant and some harsh and nasal, often given from the canopy; the texts used here do not separate the sexes.",
+      "recordings": [
+        {
+          "key": "xeno-canto/XC27125",
+          "source": "https://xeno-canto.org/27125",
+          "fileUrl": "https://xeno-canto.org/sounds/uploaded/BPSDQEOJWG/HarmsangareHammarsudden1976.mp3",
+          "author": "Patrik Åberg",
+          "license": "CC BY-NC-SA 3.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/3.0/",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ]
+    },
+    {
+      "sex": "any",
+      "type": "call",
+      "description": "A short teck, or tec, tec, tec; the texts used here do not assign it to one sex.",
+      "recordings": [
+        {
+          "key": "xeno-canto/XC448260",
+          "source": "https://xeno-canto.org/448260",
+          "fileUrl": "https://xeno-canto.org/sounds/uploaded/BPSDQEOJWG/XC448260--H%C3%A4rms%C3%A5ngare-lockl%C3%A4te-Eneb%C3%A5gsudden%2C%20Brevik%20Vg-%282017-07-10%2020.01%29-LS140010A.mp3",
+          "author": "Patrik Åberg",
+          "license": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ]
+    }
+  ],
+  "images": [
+    {
+      "key": "hippolais-icterina/ehlanzeni-front.jpg",
+      "view": "perched-front",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "source": "https://www.inaturalist.org/observations/333164098",
+      "fileUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/604797705/large.jpg",
+      "author": "Marc Cronje",
+      "license": "CC BY-NC 4.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+      "aiGenerated": false,
+      "hosted": false,
+      "alt": "Icterine Warbler perched front-on in a tree, Ehlanzeni district",
+      "caption": "Icterine Warbler perched front-on in a tree, Ehlanzeni district"
+    },
+    {
+      "key": "hippolais-icterina/mopani-back.jpg",
+      "view": "perched-back",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "source": "https://www.inaturalist.org/observations/196678643",
+      "fileUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/346203121/large.jpeg",
+      "author": "Christiaan Viljoen",
+      "license": "CC BY 4.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by/4.0/",
+      "aiGenerated": false,
+      "hosted": false,
+      "alt": "Icterine Warbler seen from below and behind in an acacia, Mopani district",
+      "caption": "Icterine Warbler seen from below and behind in an acacia, Mopani district"
+    }
+  ],
+  "research": {
+    "confidence": "medium",
+    "needsReview": false,
+    "note": "Status is palearctic-migrant. Months are October–April. SABAP1 says the first birds reach the northern zones by mid-October, peak arrival is in November, and most leave in the second half of March and early April. Raijmakers says the beginning of November to the beginning of April. SABAP1 says it sings through the non-breeding season. Worn birds that lack yellow are described by Raijmakers, but both the worn and fresh stages fall in the southern summer, so they are not stored as winter and summer plumages. No grade-A song from southern Africa outranked the grade-A songs from Sweden under the site’s grade-first rule. Chick and juvenile plumage, and a sharp flight photograph, were not found."
+  }
 }
