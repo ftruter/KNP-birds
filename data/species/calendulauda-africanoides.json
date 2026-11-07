@@ -7,8 +7,48 @@
     "af": "Vaalbruinlewerik"
   },
   "family": "alaudidae",
-  "summary": "The details for this species have not been published yet.",
-  "sampleData": true,
+  "status": "resident",
+  "monthsPresent": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+  ],
+  "habitat": "Sandy open Acacia savanna, broad-leaved woodland and shrubland, foraging on bare or sparsely grassed ground. In the north it is local.",
+  "summary": "A resident lark of sandy savanna, local in the north. Adults have a fairly conspicuous white eyebrow, a white stripe below the eye that is hard to see, and white underparts that contrast with light to dark rufous upperparts in the southern subspecies. The sexes are not described as differing. A total length, and a juvenile or chick colour, are not given in the texts used here.",
+  "sampleData": false,
+  "similar": [
+    {
+      "slug": "calendulauda-sabota",
+      "note": "Sabota Lark is more heavily streaked on the breast, has no rufous wing edges, and its white eyebrow is the stronger mark."
+    },
+    {
+      "slug": "corypha-africana",
+      "note": "Rufous-naped Lark is larger, with a crest, a streaked rufous breast and a whistled song from an open perch."
+    }
+  ],
+  "sources": [
+    {
+      "title": "The Atlas of Southern African Birds, Vol. 2 (Fawncoloured Lark)",
+      "url": "https://sabap2.birdmap.africa/docs/sabap1/497.pdf",
+      "publisher": "BirdLife South Africa",
+      "year": 1997
+    },
+    {
+      "title": "Fawn-coloured lark",
+      "url": "https://en.wikipedia.org/wiki/Fawn-coloured_lark",
+      "publisher": "Wikipedia",
+      "year": 2026
+    }
+  ],
   "population": {
     "estimate": {
       "low": 512,
@@ -35,8 +75,142 @@
     },
     "tierApplied": "D"
   },
-  "variants": [],
-  "viewNotes": [],
-  "calls": [],
-  "images": []
+  "variants": [
+    {
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "marks": {
+        "bill": {
+          "colour": null,
+          "shape": null
+        },
+        "eye": {
+          "iris": null,
+          "ring": null
+        },
+        "legs": {
+          "colour": null
+        },
+        "head": {
+          "crown": null,
+          "face": "white",
+          "throat": null,
+          "pattern": "white eyebrow, and a white stripe below the eye that is difficult to see"
+        },
+        "upperparts": {
+          "back": "rufous",
+          "rump": null,
+          "pattern": "light to dark rufous upperparts in the southern subspecies"
+        },
+        "underparts": {
+          "breast": "white",
+          "belly": "white"
+        },
+        "wings": {
+          "above": null,
+          "below": null
+        },
+        "tail": {
+          "colour": null,
+          "shape": null
+        }
+      }
+    }
+  ],
+  "viewNotes": [
+    {
+      "view": "flight-above",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Rufous upperparts. A separate wing pattern is not described."
+    },
+    {
+      "view": "flight-below",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "The underwing is not described. The song is given from a bush or tree in the breeding season."
+    },
+    {
+      "view": "perched-front",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "White eyebrow and white underparts. The white stripe below the eye is a close-range mark."
+    },
+    {
+      "view": "perched-back",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Light to dark rufous upperparts. The rump is not given a separate colour."
+    },
+    {
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "The contrast of white underparts with rufous upperparts, plus the white eyebrow, is the profile described for the southern subspecies."
+    }
+  ],
+  "calls": [
+    {
+      "sex": "any",
+      "type": "song",
+      "description": "A bustling song given from a bush or tree in the breeding season; the texts used here do not transcribe it or assign it to one sex.",
+      "recordings": [
+        {
+          "key": "xeno-canto/XC28606",
+          "source": "https://xeno-canto.org/28606",
+          "fileUrl": "https://xeno-canto.org/sounds/uploaded/BPSDQEOJWG/Fawn-coloredLarkWitsand2006-12-22.mp3",
+          "author": "Patrik Åberg",
+          "license": "CC BY-NC-SA 3.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/3.0/",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ]
+    }
+  ],
+  "images": [
+    {
+      "key": "calendulauda-africanoides/mopani-side.jpg",
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "source": "https://www.inaturalist.org/observations/196023427",
+      "fileUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/345007703/large.jpg",
+      "author": "Duncan McKenzie",
+      "license": "CC BY-NC 4.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+      "aiGenerated": false,
+      "hosted": false,
+      "alt": "Fawn-coloured Lark perched side-on in the Mopani district",
+      "caption": "Fawn-coloured Lark perched side-on in the Mopani district"
+    },
+    {
+      "key": "calendulauda-africanoides/mopani-perch.jpg",
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "source": "https://www.inaturalist.org/observations/109627573",
+      "fileUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/184803444/large.jpg",
+      "author": "Niall Perrins",
+      "license": "CC BY-NC 4.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+      "aiGenerated": false,
+      "hosted": false,
+      "alt": "Fawn-coloured Lark on a bare perch in the Mopani district",
+      "caption": "Fawn-coloured Lark on a bare perch in the Mopani district"
+    }
+  ],
+  "research": {
+    "confidence": "low",
+    "needsReview": true,
+    "note": "Status is resident. SABAP1 treats the winter drop in reporting as lower conspicuousness, and notes pale Kalahari birds moving into eastern Botswana in drought. All twelve months are listed on that resident conclusion. The rufous-and-white contrast is published for the southern subspecies; Kruger is on the northern edge of the range. Bill, eye, leg and wing colours, total length, and chick plumage are not in the texts used here. The grade A song is from Witsand, not Kruger. Both photographs are distant."
+  }
 }

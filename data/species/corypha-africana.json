@@ -7,8 +7,67 @@
     "af": "Rooineklewerik"
   },
   "family": "alaudidae",
-  "summary": "The details for this species have not been published yet.",
-  "sampleData": true,
+  "status": "resident",
+  "monthsPresent": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+  ],
+  "size": {
+    "lengthCm": {
+      "min": 15,
+      "max": 19
+    },
+    "note": "Wikipedia gives 15–18 cm. Newman's Birds gives 18–19 cm."
+  },
+  "habitat": "Open grassland and open savanna with bare ground, sparse grass, and perches such as termite mounds, bushes or posts.",
+  "summary": "A large, stocky resident lark of open grassland and savanna. Adults have a short crest, a creamy-buff eyebrow, streaked brown upperparts, a rufous nape and rufous flight feathers, an unmarked throat, and a pale rufous breast with darker streaks. The male raises the crest when singing. Juveniles have bold black spots edged buff on the crown, mantle and wing coverts, and blotchier breast spots. Chick down is not described.",
+  "sampleData": false,
+  "similar": [
+    {
+      "slug": "amirafra-rufocinnamomea",
+      "note": "Flappet Lark is a woodland bird whose display is a high cruise with wing-claps, not a whistled phrase from a perch."
+    },
+    {
+      "slug": "mirafra-passerina",
+      "note": "Monotonous Lark is smaller, with a plain face, a rufous wing panel and a white throat, and it does not raise a crest."
+    }
+  ],
+  "sources": [
+    {
+      "title": "The Atlas of Southern African Birds, Vol. 2 (Rufousnaped Lark)",
+      "url": "https://sabap2.birdmap.africa/docs/sabap1/494.pdf",
+      "publisher": "BirdLife South Africa",
+      "year": 1997
+    },
+    {
+      "title": "Mirafra africana (Rufous-naped lark), summarised from Roberts VII",
+      "url": "https://www.biodiversityexplorer.info/birds/alaudidae/mirafra_africana.htm",
+      "publisher": "Iziko Museums of South Africa",
+      "year": null
+    },
+    {
+      "title": "Rufous-naped Lark",
+      "url": "https://newmansbirds.com/birds/rufous-naped-lark/",
+      "publisher": "Newman's Birds",
+      "year": null
+    },
+    {
+      "title": "Rufous-naped lark",
+      "url": "https://en.wikipedia.org/wiki/Rufous-naped_lark",
+      "publisher": "Wikipedia",
+      "year": 2026
+    }
+  ],
   "population": {
     "estimate": {
       "low": 4096,
@@ -35,8 +94,226 @@
     },
     "tierApplied": "D"
   },
-  "variants": [],
-  "viewNotes": [],
-  "calls": [],
-  "images": []
+  "variants": [
+    {
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "marks": {
+        "bill": {
+          "colour": [
+            "black",
+            "pink"
+          ],
+          "shape": "long, strong and slightly decurved; blackish and pinkish"
+        },
+        "eye": {
+          "iris": "brown",
+          "ring": null
+        },
+        "legs": {
+          "colour": "pink"
+        },
+        "head": {
+          "crown": [
+            "chestnut",
+            "rufous",
+            "buff"
+          ],
+          "face": [
+            "buff",
+            "cream"
+          ],
+          "throat": "buff",
+          "pattern": "short erectile crest; creamy-buff eyebrow merging with the lores; nape streaked, the margins chestnut, rufous, buff or grey-brown"
+        },
+        "upperparts": {
+          "back": "brown",
+          "rump": "dark-brown",
+          "pattern": "streaked upperparts; the mantle is lighter brown than the back"
+        },
+        "underparts": {
+          "breast": [
+            "rufous",
+            "buff",
+            "brown"
+          ],
+          "belly": [
+            "rufous",
+            "buff"
+          ],
+          "pattern": "unmarked throat; pale rufous upper breast streaked and spotted darker brown; flanks darker than the belly"
+        },
+        "wings": {
+          "above": "rufous",
+          "below": "rufous",
+          "pattern": "rufous flight feathers, showing as a rufous panel on the closed wing"
+        },
+        "tail": {
+          "colour": [
+            "dark-brown",
+            "buff",
+            "rufous"
+          ],
+          "shape": "dark brown, the outer webs buff, tawny or rufous"
+        }
+      }
+    },
+    {
+      "age": "juvenile",
+      "sex": "any",
+      "season": "any",
+      "marks": {
+        "bill": {
+          "colour": null,
+          "shape": null
+        },
+        "eye": {
+          "iris": null,
+          "ring": null
+        },
+        "legs": {
+          "colour": null
+        },
+        "head": {
+          "crown": [
+            "black",
+            "buff"
+          ],
+          "face": null,
+          "throat": null,
+          "pattern": "bold black spots edged buff on the crown"
+        },
+        "upperparts": {
+          "back": [
+            "black",
+            "buff"
+          ],
+          "rump": null,
+          "pattern": "bold black spots edged buff on the mantle"
+        },
+        "underparts": {
+          "breast": [
+            "buff",
+            "black"
+          ],
+          "belly": null,
+          "pattern": "breast spotting more blotchy or diffuse than the adult"
+        },
+        "wings": {
+          "above": [
+            "black",
+            "buff"
+          ],
+          "below": null
+        },
+        "tail": {
+          "colour": null,
+          "shape": null
+        }
+      }
+    }
+  ],
+  "viewNotes": [
+    {
+      "view": "flight-above",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "The wings look conspicuously rufous, and the outer edges of the primaries form a rufous panel when the wing is closed."
+    },
+    {
+      "view": "flight-below",
+      "age": "adult",
+      "sex": "male",
+      "season": "any",
+      "note": "The underwing-coverts are rufous. Flight is rather heavy. The male also sings in an aerial cruise, especially at dusk."
+    },
+    {
+      "view": "perched-front",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "A creamy-buff eyebrow and an unmarked throat, with a pale rufous breast streaked darker brown."
+    },
+    {
+      "view": "perched-back",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Streaked brown mantle, a darker brown rump, and a rufous nape that is only obvious at close range."
+    },
+    {
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "male",
+      "season": "any",
+      "note": "Heavy bill, rufous wing edges and, when the male is singing, a raised crest. At other times the crest is not visible."
+    },
+    {
+      "view": "perched-side",
+      "age": "juvenile",
+      "sex": "any",
+      "season": "any",
+      "note": "Bold black spots edged buff on the crown, mantle and wing coverts, with blotchier breast spots than the adult."
+    }
+  ],
+  "calls": [
+    {
+      "sex": "male",
+      "type": "song",
+      "description": "The male repeats a melancholy tseep-tseeooo about every eight seconds from a perch, and also imitates other birds during an aerial cruise; a female song is not described.",
+      "recordings": [
+        {
+          "key": "xeno-canto/XC391863",
+          "source": "https://xeno-canto.org/391863",
+          "fileUrl": "https://xeno-canto.org/sounds/uploaded/LMIEGTGPZZ/XC391863-Rufous-naped%20Lark.mp3",
+          "author": "Werner van der Walt",
+          "license": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ]
+    }
+  ],
+  "images": [
+    {
+      "key": "corypha-africana/kruger-back.jpg",
+      "view": "perched-back",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "source": "https://www.inaturalist.org/observations/186025929",
+      "fileUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/324933821/large.jpg",
+      "author": "Cole Wolf",
+      "license": "CC BY 4.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by/4.0/",
+      "aiGenerated": false,
+      "hosted": false,
+      "alt": "Rufous-naped Lark from behind on a log in the Ehlanzeni district",
+      "caption": "Rufous-naped Lark from behind on a log in the Ehlanzeni district"
+    },
+    {
+      "key": "corypha-africana/kruger-side.jpg",
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "male",
+      "season": "any",
+      "source": "https://www.inaturalist.org/observations/72588680",
+      "fileUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/118367687/large.jpeg",
+      "author": "copper",
+      "license": "CC BY-NC 4.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+      "aiGenerated": false,
+      "hosted": false,
+      "alt": "Rufous-naped Lark singing with the crest raised, Kruger National Park",
+      "caption": "Rufous-naped Lark singing with the crest raised, Kruger National Park"
+    }
+  ],
+  "research": {
+    "confidence": "medium",
+    "needsReview": false,
+    "note": "Placed in Corypha by the IOC list used here; SABAP1 and Roberts still used Mirafra africana. Status is resident. SABAP1 found no regular seasonal movement, so all twelve months are listed. Western birds are paler below; the account follows the rufous northeastern plumage. Chick down is not described. The grade A song is from Gauteng. No spread-wing photograph was found. The iNaturalist name on the singing photograph is the account name copper."
+  }
 }

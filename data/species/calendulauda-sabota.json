@@ -7,8 +7,61 @@
     "af": "Sabotalewerik"
   },
   "family": "alaudidae",
-  "summary": "The details for this species have not been published yet.",
-  "sampleData": true,
+  "status": "resident",
+  "monthsPresent": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+  ],
+  "size": {
+    "lengthCm": {
+      "min": 15,
+      "max": 15
+    },
+    "note": "Newman's Birds gives 15 cm."
+  },
+  "habitat": "Bushveld and woodland with sparse grass or stony ground, especially mopane, and also Acacia savanna and the edges of wooded drainage lines.",
+  "summary": "A common resident of Kruger woodland. Eastern birds, including those in the lowveld, are the browner, slender-billed form. Adults are well streaked above and on the breast, with a white eyebrow, no rufous wing edges, and white to pale-buff outer tail feathers. The sexes are not described as differing. Newman’s family note says immature larks are generally more speckled; a species-specific juvenile or chick colour is not given.",
+  "sampleData": false,
+  "similar": [
+    {
+      "slug": "calendulauda-africanoides",
+      "note": "Fawn-coloured Lark has rufous upperparts and whiter underparts. Sabota Lark is more heavily streaked on the breast and has no rufous wing edges."
+    },
+    {
+      "slug": "mirafra-passerina",
+      "note": "Monotonous Lark has a rufous wing panel and an eyebrow that stops short of the bill. Sabota Lark’s white eyebrow is present in every race."
+    }
+  ],
+  "sources": [
+    {
+      "title": "The Atlas of Southern African Birds, Vol. 2 (Sabota Lark)",
+      "url": "https://sabap2.birdmap.africa/docs/sabap1/498.pdf",
+      "publisher": "BirdLife South Africa",
+      "year": 1997
+    },
+    {
+      "title": "Sabota Lark",
+      "url": "https://newmansbirds.com/birds/sabota-lark/",
+      "publisher": "Newman's Birds",
+      "year": null
+    },
+    {
+      "title": "Sabota lark",
+      "url": "https://en.wikipedia.org/wiki/Sabota_lark",
+      "publisher": "Wikipedia",
+      "year": 2026
+    }
+  ],
   "population": {
     "estimate": {
       "low": 131072,
@@ -35,8 +88,151 @@
     },
     "tierApplied": "D"
   },
-  "variants": [],
-  "viewNotes": [],
-  "calls": [],
-  "images": []
+  "variants": [
+    {
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "marks": {
+        "bill": {
+          "colour": null,
+          "shape": "slender in the eastern race; thicker in the arid west"
+        },
+        "eye": {
+          "iris": null,
+          "ring": null
+        },
+        "legs": {
+          "colour": null
+        },
+        "head": {
+          "crown": null,
+          "face": "white",
+          "throat": null,
+          "pattern": "white eyebrow, distinctive in every race"
+        },
+        "upperparts": {
+          "back": "brown",
+          "rump": null,
+          "pattern": "well streaked above; brownest in the east"
+        },
+        "underparts": {
+          "breast": [
+            "buff",
+            "brown"
+          ],
+          "belly": null,
+          "pattern": "well streaked on the breast"
+        },
+        "wings": {
+          "above": "brown",
+          "below": null,
+          "pattern": "no rufous edges on the wing"
+        },
+        "tail": {
+          "colour": [
+            "white",
+            "buff",
+            "brown"
+          ],
+          "shape": "outer feathers white to pale buff"
+        }
+      }
+    }
+  ],
+  "viewNotes": [
+    {
+      "view": "flight-above",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Streaked brown upperparts without a rufous wing panel. The outer tail feathers are white to pale buff."
+    },
+    {
+      "view": "flight-below",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "The underwing is not described. The song may also be given in hovering flight."
+    },
+    {
+      "view": "perched-front",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "A white eyebrow and a streaked breast. Eastern birds have a slender bill."
+    },
+    {
+      "view": "perched-back",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Well-streaked brown upperparts and pale outer tail feathers. The rump is not given a separate colour."
+    },
+    {
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "The white eyebrow, streaked breast and plain wing, without rufous edges, show in profile. It often sings from a tree."
+    }
+  ],
+  "calls": [
+    {
+      "sex": "any",
+      "type": "song",
+      "description": "A high, melodious and variable song of notes, whistles, trills and buzzy sounds, including imitations of other birds, from a tree or in hovering flight; the texts used here do not assign it to one sex.",
+      "recordings": [
+        {
+          "key": "xeno-canto/XC872621",
+          "source": "https://xeno-canto.org/872621",
+          "fileUrl": "https://xeno-canto.org/sounds/uploaded/LWQXRZHFCU/XC872621-2024-02-06-07_49-sabota-lark.mp3",
+          "author": "Niall Perrins",
+          "license": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ]
+    }
+  ],
+  "images": [
+    {
+      "key": "calendulauda-sabota/kruger-canopy.jpg",
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "source": "https://www.inaturalist.org/observations/365307275",
+      "fileUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/666954813/large.jpg",
+      "author": "rastor",
+      "license": "CC BY-NC 4.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+      "aiGenerated": false,
+      "hosted": false,
+      "alt": "Sabota Lark perched side-on in a tree in Kruger National Park",
+      "caption": "Sabota Lark perched side-on in a tree in Kruger National Park"
+    },
+    {
+      "key": "calendulauda-sabota/kruger-side.jpg",
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "source": "https://www.inaturalist.org/observations/29621892",
+      "fileUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/46236157/large.jpeg",
+      "author": "copper",
+      "license": "CC BY-NC 4.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+      "aiGenerated": false,
+      "hosted": false,
+      "alt": "Sabota Lark perched side-on near Punda Maria, showing the pale eyebrow and streaked breast",
+      "caption": "Sabota Lark perched side-on near Punda Maria, showing the pale eyebrow and streaked breast"
+    }
+  ],
+  "research": {
+    "confidence": "medium",
+    "needsReview": false,
+    "note": "Status is resident. SABAP1 found no seasonal movement, with only local shifts after rain, so all twelve months are listed. Kruger birds belong to the eastern, slender-billed group. Eye, leg and belly colours are not named. Chick colour is not described. The grade A song was recorded in the Kruger area. The account names rastor and copper are the iNaturalist account names."
+  }
 }

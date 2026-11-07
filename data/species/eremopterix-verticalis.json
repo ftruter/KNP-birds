@@ -7,8 +7,48 @@
     "af": "Grysruglewerik"
   },
   "family": "alaudidae",
-  "summary": "The details for this species have not been published yet.",
-  "sampleData": true,
+  "size": {
+    "lengthCm": {
+      "min": 12,
+      "max": 13
+    },
+    "note": "Newman's Birds gives 12–13 cm."
+  },
+  "habitat": "Semi-arid and arid plains, sparse grassland, dry pans, burnt ground and fallow fields, usually on pale sandy or calcrete soils. Eastern records are sporadic.",
+  "summary": "A small nomadic sparrow-lark of the arid west, only sporadic farther east. The male has a grey back and a strongly patterned black-and-white head, including a small white cap. The female is pale grey-brown, with light breast streaking, unstreaked flanks and a black patch on the lower belly. Immatures resemble the female but are variably spotted buff and white above. Chick down is not described. A Kruger month list is not given in the texts used here.",
+  "sampleData": false,
+  "similar": [
+    {
+      "slug": "eremopterix-leucotis",
+      "note": "Chestnut-backed Sparrow-Lark has chestnut wing coverts and grey underwings. Grey-backed Sparrow-Lark has a grey or sandy-grey back, and the male has a white cap."
+    }
+  ],
+  "sources": [
+    {
+      "title": "The Atlas of Southern African Birds, Vol. 2 (Greybacked Finchlark)",
+      "url": "https://sabap2.birdmap.africa/docs/sabap1/516.pdf",
+      "publisher": "BirdLife South Africa",
+      "year": 1997
+    },
+    {
+      "title": "Eremopterix verticalis (Grey-backed sparrowlark), summarised from Roberts VII",
+      "url": "https://www.biodiversityexplorer.info/birds/alaudidae/eremopterix_verticalis.htm",
+      "publisher": "Iziko Museums of South Africa",
+      "year": null
+    },
+    {
+      "title": "Grey-backed Sparrow-Lark",
+      "url": "https://newmansbirds.com/birds/grey-backed-sparrow-lark/",
+      "publisher": "Newman's Birds",
+      "year": null
+    },
+    {
+      "title": "Grey-backed Sparrow-lark (Eremopterix verticalis)",
+      "url": "https://thebdi.org/2023/09/11/grey-backed-sparrow-lark-eremopterix-verticalis/",
+      "publisher": "Biodiversity and Development Institute",
+      "year": 2023
+    }
+  ],
   "population": {
     "estimate": {
       "low": null,
@@ -21,8 +61,225 @@
     "notes": "No sourced Kruger estimate is currently available; taxonomy or later records require separate research.",
     "sources": []
   },
-  "variants": [],
-  "viewNotes": [],
-  "calls": [],
-  "images": []
+  "variants": [
+    {
+      "age": "adult",
+      "sex": "male",
+      "season": "any",
+      "marks": {
+        "bill": {
+          "colour": null,
+          "shape": null
+        },
+        "eye": {
+          "iris": null,
+          "ring": null
+        },
+        "legs": {
+          "colour": null
+        },
+        "head": {
+          "crown": "white",
+          "face": [
+            "black",
+            "white"
+          ],
+          "throat": null,
+          "pattern": "strongly patterned black-and-white head, with a small white cap"
+        },
+        "upperparts": {
+          "back": "grey",
+          "rump": null
+        },
+        "underparts": {
+          "breast": null,
+          "belly": null
+        },
+        "wings": {
+          "above": null,
+          "below": null
+        },
+        "tail": {
+          "colour": null,
+          "shape": null
+        }
+      }
+    },
+    {
+      "age": "adult",
+      "sex": "female",
+      "season": "any",
+      "marks": {
+        "bill": {
+          "colour": null,
+          "shape": null
+        },
+        "eye": {
+          "iris": null,
+          "ring": null
+        },
+        "legs": {
+          "colour": null
+        },
+        "head": {
+          "crown": null,
+          "face": null,
+          "throat": null
+        },
+        "upperparts": {
+          "back": [
+            "grey",
+            "brown"
+          ],
+          "rump": null,
+          "pattern": "pale grey-brown upperparts; wing coverts sandy grey rather than reddish"
+        },
+        "underparts": {
+          "breast": [
+            "grey",
+            "buff"
+          ],
+          "belly": "black",
+          "pattern": "light streaking on the breast, unstreaked flanks, and a black patch on the lower belly"
+        },
+        "wings": {
+          "above": null,
+          "below": null
+        },
+        "tail": {
+          "colour": null,
+          "shape": null
+        }
+      }
+    },
+    {
+      "age": "immature",
+      "sex": "any",
+      "season": "any",
+      "marks": {
+        "bill": {
+          "colour": null,
+          "shape": null
+        },
+        "eye": {
+          "iris": null,
+          "ring": null
+        },
+        "legs": {
+          "colour": null
+        },
+        "head": {
+          "crown": null,
+          "face": null,
+          "throat": null
+        },
+        "upperparts": {
+          "back": [
+            "buff",
+            "white",
+            "grey"
+          ],
+          "rump": null,
+          "pattern": "like the female, but variably spotted buff and white above"
+        },
+        "underparts": {
+          "breast": null,
+          "belly": "black"
+        },
+        "wings": {
+          "above": null,
+          "below": null
+        },
+        "tail": {
+          "colour": null,
+          "shape": null
+        }
+      }
+    }
+  ],
+  "viewNotes": [
+    {
+      "view": "flight-above",
+      "age": "adult",
+      "sex": "male",
+      "season": "any",
+      "note": "Grey upperparts on the male. The male’s display is a circling song flight 15–30 m up, often with the legs dangling. A spread upperwing colour is not described."
+    },
+    {
+      "view": "flight-below",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "The underwing is not described. Flocks fly up with a chirping flight call."
+    },
+    {
+      "view": "perched-front",
+      "age": "adult",
+      "sex": "male",
+      "season": "any",
+      "note": "The male’s head is black and white, with a small white cap. The female’s breast is lightly streaked."
+    },
+    {
+      "view": "perched-back",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "The male’s back is grey, which is the mark against the other sparrow-larks. The female’s back is pale grey-brown."
+    },
+    {
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Male: white cap and black-and-white face on a grey back. Female: pale grey-brown, with a black patch on the lower belly."
+    }
+  ],
+  "calls": [
+    {
+      "sex": "any",
+      "type": "call",
+      "description": "Flocks give shrill chirps while feeding, and a chirping call in flight; the texts used here do not assign these calls to one sex.",
+      "recordings": [
+        {
+          "key": "xeno-canto/XC288401",
+          "source": "https://xeno-canto.org/288401",
+          "fileUrl": "https://xeno-canto.org/sounds/uploaded/SJRAXPTEKH/XC288401-713_0175.mp3",
+          "author": "Alan Collett",
+          "license": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ]
+    },
+    {
+      "sex": "male",
+      "type": "song",
+      "description": "The singing male circles in a series of undulations, often with the legs dangling. The texts used here do not transcribe that song.",
+      "recordings": []
+    }
+  ],
+  "images": [
+    {
+      "key": "eremopterix-verticalis/mopani-pair.jpg",
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "mixed",
+      "season": "any",
+      "source": "https://www.inaturalist.org/observations/194580645",
+      "fileUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/342069618/large.jpeg",
+      "author": "wildguide-",
+      "license": "CC BY-NC 4.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+      "aiGenerated": false,
+      "hosted": false,
+      "alt": "Male Grey-backed Sparrow-Lark in front and a second bird behind, Mopani district",
+      "caption": "Male Grey-backed Sparrow-Lark in front and a second bird behind, Mopani district"
+    }
+  ],
+  "research": {
+    "confidence": "medium",
+    "needsReview": true,
+    "note": "No Kemp figure is stored, and that population object is unchanged. SABAP1 and the Biodiversity and Development Institute describe nomadic movements and irruptions into the east, and do not give a Kruger month list, so months and a movement status are omitted. The male’s underpart colours, apart from the black-and-white head, are not spelled out. The best non-ND call is grade B from the Eastern Cape. Grade A files for this species in the catalogue used here were ND and were not used. The display song has no recording. The iNaturalist account name is wildguide-."
+  }
 }

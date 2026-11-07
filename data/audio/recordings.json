@@ -95,6 +95,16 @@
         }
       ]
     },
+    "amirafra-rufocinnamomea": {
+      "calls": [
+        {
+          "index": 0,
+          "quality": {
+            "xeno-canto/XC266874": "A"
+          }
+        }
+      ]
+    },
     "aquila-nipalensis": {
       "calls": [
         {
@@ -249,6 +259,42 @@
             "xeno-canto/XC289313": "B",
             "xeno-canto/XC289315": "B",
             "xeno-canto/XC289314": "B"
+          }
+        }
+      ]
+    },
+    "calandrella-cinerea": {
+      "calls": [
+        {
+          "index": 0,
+          "quality": {
+            "xeno-canto/XC666780": "A"
+          }
+        },
+        {
+          "index": 1,
+          "quality": {
+            "xeno-canto/XC126286": "A"
+          }
+        }
+      ]
+    },
+    "calendulauda-africanoides": {
+      "calls": [
+        {
+          "index": 0,
+          "quality": {
+            "xeno-canto/XC28606": "A"
+          }
+        }
+      ]
+    },
+    "calendulauda-sabota": {
+      "calls": [
+        {
+          "index": 0,
+          "quality": {
+            "xeno-canto/XC872621": "A"
           }
         }
       ]
@@ -456,6 +502,16 @@
         }
       ]
     },
+    "corypha-africana": {
+      "calls": [
+        {
+          "index": 0,
+          "quality": {
+            "xeno-canto/XC391863": "A"
+          }
+        }
+      ]
+    },
     "corythornis-cristatus": {
       "calls": [
         {
@@ -474,6 +530,32 @@
             "xeno-canto/XC1087114": "A",
             "xeno-canto/XC1059222": "A",
             "xeno-canto/XC1081037": "B"
+          }
+        }
+      ]
+    },
+    "eremopterix-leucotis": {
+      "calls": [
+        {
+          "index": 0,
+          "quality": {
+            "xeno-canto/XC989383": "A"
+          }
+        },
+        {
+          "index": 1,
+          "quality": {
+            "xeno-canto/XC209983": "A"
+          }
+        }
+      ]
+    },
+    "eremopterix-verticalis": {
+      "calls": [
+        {
+          "index": 0,
+          "quality": {
+            "xeno-canto/XC288401": "B"
           }
         }
       ]
@@ -847,6 +929,16 @@
               "quality": "A"
             }
           ]
+        }
+      ]
+    },
+    "mirafra-passerina": {
+      "calls": [
+        {
+          "index": 0,
+          "quality": {
+            "xeno-canto/XC203723": "A"
+          }
         }
       ]
     },

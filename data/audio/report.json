@@ -1,11 +1,11 @@
 {
   "source": "xeno-canto explore catalogue, API v3 recording fields",
   "counts": {
-    "slots": 74,
+    "slots": 86,
     "swapped": 17,
     "added": 7,
-    "kept": 47,
-    "none": 3,
+    "kept": 57,
+    "none": 5,
     "cleaned": 0
   },
   "noUsableRecording": [
@@ -23,6 +23,16 @@
       "slug": "acrocephalus-palustris",
       "scientificName": "Acrocephalus palustris",
       "type": "song"
+    },
+    {
+      "slug": "eremopterix-verticalis",
+      "scientificName": "Eremopterix verticalis",
+      "type": "song"
+    },
+    {
+      "slug": "pinarocorys-nigricans",
+      "scientificName": "Pinarocorys nigricans",
+      "type": "call"
     }
   ],
   "speciesWithoutAnyRecording": [
@@ -1274,6 +1284,194 @@
       "locality": "Ebeneser dam area, Haernertsburg, Limpopo",
       "cleaned": false,
       "license": "CC BY-NC-SA 4.0"
+    },
+    {
+      "slug": "amirafra-rufocinnamomea",
+      "scientificName": "Amirafra rufocinnamomea",
+      "index": 0,
+      "type": "song",
+      "action": "kept",
+      "from": [
+        "266874"
+      ],
+      "to": "266874",
+      "quality": "A",
+      "country": "Ethiopia",
+      "locality": "Gambela, Dembidolo Road",
+      "cleaned": false,
+      "license": "CC BY-NC-SA 4.0"
+    },
+    {
+      "slug": "calandrella-cinerea",
+      "scientificName": "Calandrella cinerea",
+      "index": 0,
+      "type": "song",
+      "action": "kept",
+      "from": [
+        "666780"
+      ],
+      "to": "666780",
+      "quality": "A",
+      "country": "South Africa",
+      "locality": "Bathurst, Kap River District, Eastern Cape",
+      "cleaned": false,
+      "license": "CC BY-NC-SA 4.0"
+    },
+    {
+      "slug": "calandrella-cinerea",
+      "scientificName": "Calandrella cinerea",
+      "index": 1,
+      "type": "call",
+      "action": "kept",
+      "from": [
+        "126286"
+      ],
+      "to": "126286",
+      "quality": "A",
+      "country": "South Africa",
+      "locality": "Benfontijn Gamereserve, Lejweleputswa, Free State",
+      "cleaned": false,
+      "license": "CC BY-NC-SA 3.0"
+    },
+    {
+      "slug": "calendulauda-africanoides",
+      "scientificName": "Calendulauda africanoides",
+      "index": 0,
+      "type": "song",
+      "action": "kept",
+      "from": [
+        "28606"
+      ],
+      "to": "28606",
+      "quality": "A",
+      "country": "South Africa",
+      "locality": "Witsand",
+      "cleaned": false,
+      "license": "CC BY-NC-SA 3.0"
+    },
+    {
+      "slug": "calendulauda-sabota",
+      "scientificName": "Calendulauda sabota",
+      "index": 0,
+      "type": "song",
+      "action": "kept",
+      "from": [
+        "872621"
+      ],
+      "to": "872621",
+      "quality": "A",
+      "country": "South Africa",
+      "locality": "Kruger Park, Mopani District Municipality, Limpopo",
+      "cleaned": false,
+      "license": "CC BY-NC-SA 4.0"
+    },
+    {
+      "slug": "corypha-africana",
+      "scientificName": "Corypha africana",
+      "index": 0,
+      "type": "song",
+      "action": "kept",
+      "from": [
+        "391863"
+      ],
+      "to": "391863",
+      "quality": "A",
+      "country": "South Africa",
+      "locality": "Krugersdorp, West Rand, Gauteng",
+      "cleaned": false,
+      "license": "CC BY-NC-SA 4.0"
+    },
+    {
+      "slug": "eremopterix-leucotis",
+      "scientificName": "Eremopterix leucotis",
+      "index": 0,
+      "type": "call",
+      "action": "kept",
+      "from": [
+        "989383"
+      ],
+      "to": "989383",
+      "quality": "A",
+      "country": "Chad",
+      "locality": "Am Djéména Bilala, Fitri, Batha",
+      "cleaned": false,
+      "license": "CC BY-NC-SA 4.0"
+    },
+    {
+      "slug": "eremopterix-leucotis",
+      "scientificName": "Eremopterix leucotis",
+      "index": 1,
+      "type": "song",
+      "action": "kept",
+      "from": [
+        "209983"
+      ],
+      "to": "209983",
+      "quality": "A",
+      "country": "Ethiopia",
+      "locality": "Aledeghe Wildlife Reserve",
+      "cleaned": false,
+      "license": "CC BY-NC-SA 4.0"
+    },
+    {
+      "slug": "eremopterix-verticalis",
+      "scientificName": "Eremopterix verticalis",
+      "index": 0,
+      "type": "call",
+      "action": "kept",
+      "from": [
+        "288401"
+      ],
+      "to": "288401",
+      "quality": "B",
+      "country": "South Africa",
+      "locality": "Aberdeen Plain, Eastern Cape",
+      "cleaned": false,
+      "license": "CC BY-NC-SA 4.0"
+    },
+    {
+      "slug": "eremopterix-verticalis",
+      "scientificName": "Eremopterix verticalis",
+      "index": 1,
+      "type": "song",
+      "action": "none",
+      "from": [],
+      "to": "",
+      "quality": "",
+      "country": "",
+      "locality": "",
+      "cleaned": false,
+      "license": ""
+    },
+    {
+      "slug": "mirafra-passerina",
+      "scientificName": "Mirafra passerina",
+      "index": 0,
+      "type": "song",
+      "action": "kept",
+      "from": [
+        "203723"
+      ],
+      "to": "203723",
+      "quality": "A",
+      "country": "South Africa",
+      "locality": "Pietersburg (Polokwane) Game Preserve, Limpopo",
+      "cleaned": false,
+      "license": "CC BY-NC-SA 4.0"
+    },
+    {
+      "slug": "pinarocorys-nigricans",
+      "scientificName": "Pinarocorys nigricans",
+      "index": 0,
+      "type": "call",
+      "action": "none",
+      "from": [],
+      "to": "",
+      "quality": "",
+      "country": "",
+      "locality": "",
+      "cleaned": false,
+      "license": ""
     }
   ]
 }

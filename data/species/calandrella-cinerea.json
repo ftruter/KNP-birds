@@ -7,8 +7,63 @@
     "af": "Rooikoplewerik"
   },
   "family": "alaudidae",
-  "summary": "The details for this species have not been published yet.",
-  "sampleData": true,
+  "status": "intra-african-migrant",
+  "monthsPresent": [
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    1,
+    2
+  ],
+  "size": {
+    "lengthCm": {
+      "min": 15,
+      "max": 15
+    },
+    "note": "Newman's Birds gives 15 cm."
+  },
+  "habitat": "Short, grazed or burnt grass, dry pans, airstrips and dirt roads, and bare ground where it can run.",
+  "summary": "A small lark with a rufous crown and rufous patches at the sides of the breast, and otherwise plain pale underparts. The upperparts are streaked grey to brown, and the shade varies. The sexes look alike. Immatures lack the rufous crown and shoulders, are dark brown above, and have a blackish-speckled breast; Wikipedia also describes white spots on the dark upperparts. Chick down is not described. The crest is raised in display and is usually not noticeable.",
+  "sampleData": false,
+  "similar": [
+    {
+      "slug": "eremopterix-leucotis",
+      "note": "Chestnut-backed Sparrow-Lark males are black below with a chestnut back. Red-capped Lark has a rufous cap, rufous breast-side patches and plain pale underparts."
+    },
+    {
+      "slug": "corypha-africana",
+      "note": "Rufous-naped Lark is larger and streaked on the breast, with a crest it holds up while singing and no neat rufous cap."
+    }
+  ],
+  "sources": [
+    {
+      "title": "The Atlas of Southern African Birds, Vol. 2 (Redcapped Lark)",
+      "url": "https://sabap2.birdmap.africa/docs/sabap1/507.pdf",
+      "publisher": "BirdLife South Africa",
+      "year": 1997
+    },
+    {
+      "title": "Calandrella cinerea (Red-capped lark), summarised from Roberts VII",
+      "url": "https://www.biodiversityexplorer.info/birds/alaudidae/calandrella_cinerea.htm",
+      "publisher": "Iziko Museums of South Africa",
+      "year": null
+    },
+    {
+      "title": "Red-capped Lark",
+      "url": "https://newmansbirds.com/birds/red-capped-lark/",
+      "publisher": "Newman's Birds",
+      "year": null
+    },
+    {
+      "title": "Red-capped lark",
+      "url": "https://en.wikipedia.org/wiki/Red-capped_lark",
+      "publisher": "Wikipedia",
+      "year": 2026
+    }
+  ],
   "population": {
     "estimate": {
       "low": 2048,
@@ -35,8 +90,226 @@
     },
     "tierApplied": "D"
   },
-  "variants": [],
-  "viewNotes": [],
-  "calls": [],
-  "images": []
+  "variants": [
+    {
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "marks": {
+        "bill": {
+          "colour": null,
+          "shape": null
+        },
+        "eye": {
+          "iris": null,
+          "ring": null
+        },
+        "legs": {
+          "colour": null
+        },
+        "head": {
+          "crown": "rufous",
+          "face": [
+            "white",
+            "rufous"
+          ],
+          "throat": null,
+          "pattern": "rufous cap; the short crest is raised in display and is usually flat"
+        },
+        "upperparts": {
+          "back": [
+            "grey",
+            "brown"
+          ],
+          "rump": null,
+          "pattern": "streaked grey to brown upperparts; the hue varies"
+        },
+        "underparts": {
+          "breast": [
+            "white",
+            "rufous"
+          ],
+          "belly": "white",
+          "pattern": "plain underparts with rufous patches at the sides of the breast"
+        },
+        "wings": {
+          "above": "rufous",
+          "below": null,
+          "pattern": "rufous shoulders"
+        },
+        "tail": {
+          "colour": null,
+          "shape": null
+        }
+      }
+    },
+    {
+      "age": "immature",
+      "sex": "any",
+      "season": "any",
+      "marks": {
+        "bill": {
+          "colour": null,
+          "shape": null
+        },
+        "eye": {
+          "iris": null,
+          "ring": null
+        },
+        "legs": {
+          "colour": null
+        },
+        "head": {
+          "crown": "dark-brown",
+          "face": null,
+          "throat": null,
+          "pattern": "no rufous cap"
+        },
+        "upperparts": {
+          "back": "dark-brown",
+          "rump": null,
+          "pattern": "dark brown upperparts; Wikipedia describes white spots on them"
+        },
+        "underparts": {
+          "breast": [
+            "buff",
+            "black"
+          ],
+          "belly": null,
+          "pattern": "breast well speckled blackish; no rufous shoulder patches"
+        },
+        "wings": {
+          "above": [
+            "dark-brown",
+            "white"
+          ],
+          "below": null,
+          "pattern": "no rufous shoulders"
+        },
+        "tail": {
+          "colour": null,
+          "shape": null
+        }
+      }
+    }
+  ],
+  "viewNotes": [
+    {
+      "view": "flight-above",
+      "age": "adult",
+      "sex": "male",
+      "season": "any",
+      "note": "Streaked grey-brown upperparts and rufous shoulders. Males rise almost vertically into the wind in display, rising and dipping."
+    },
+    {
+      "view": "flight-below",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "The underwing is not described. Birds fly short distances and drop again."
+    },
+    {
+      "view": "perched-front",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Rufous crown and rufous patches at the sides of the breast, with a pale unmarked centre to the underparts."
+    },
+    {
+      "view": "perched-back",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Streaked upperparts and a rufous cap seen from above. The rump is not given a separate colour."
+    },
+    {
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Upright stance, rufous cap and rufous breast-side patches. It runs on short grass, pans and roads."
+    },
+    {
+      "view": "perched-side",
+      "age": "immature",
+      "sex": "any",
+      "season": "any",
+      "note": "Dark brown above, without the adult’s rufous cap and shoulders, and with a blackish-speckled breast."
+    }
+  ],
+  "calls": [
+    {
+      "sex": "male",
+      "type": "song",
+      "description": "The male’s display song is a jumble of whistles and short trills, and it can imitate other birds. A female song is not described.",
+      "recordings": [
+        {
+          "key": "xeno-canto/XC666780",
+          "source": "https://xeno-canto.org/666780",
+          "fileUrl": "https://xeno-canto.org/sounds/uploaded/GQMCPIVNXX/XC666780-Red-capped%20Lark.mp3",
+          "author": "Tim Cockcroft",
+          "license": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ]
+    },
+    {
+      "sex": "any",
+      "type": "call",
+      "description": "A brief cheep, chirrup or cheeree, compared with a sparrow; the texts used here do not assign it to one sex.",
+      "recordings": [
+        {
+          "key": "xeno-canto/XC126286",
+          "source": "https://xeno-canto.org/126286",
+          "fileUrl": "https://xeno-canto.org/sounds/uploaded/HZKCNRIPRH/XC126286-RedCappedLark07Jan2013BenfontijnFreeStateSouthAfrika.mp3",
+          "author": "Sander Bot",
+          "license": "CC BY-NC-SA 3.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/3.0/",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ]
+    }
+  ],
+  "images": [
+    {
+      "key": "calandrella-cinerea/letaba-side.jpg",
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "source": "https://www.inaturalist.org/observations/151731850",
+      "fileUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/261846156/large.jpeg",
+      "author": "Pieter Kotze",
+      "license": "CC BY-NC 4.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+      "aiGenerated": false,
+      "hosted": false,
+      "alt": "Red-capped Lark walking side-on in Kruger, with a rufous cap and rufous breast patches",
+      "caption": "Red-capped Lark walking side-on in Kruger, with a rufous cap and rufous breast patches"
+    },
+    {
+      "key": "calandrella-cinerea/olifants-front.jpg",
+      "view": "perched-front",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "source": "https://www.inaturalist.org/observations/329538415",
+      "fileUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/597367749/large.jpg",
+      "author": "Charley Hesse",
+      "license": "CC BY-NC 4.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+      "aiGenerated": false,
+      "hosted": false,
+      "alt": "Red-capped Lark in short grass at Olifants, Kruger",
+      "caption": "Red-capped Lark in short grass at Olifants, Kruger"
+    }
+  ],
+  "research": {
+    "confidence": "medium",
+    "needsReview": true,
+    "note": "Kemp classed it as a visiting breeder. SABAP1 describes partial migration: movement into the southern grasslands in winter and dispersal into the northern Transvaal, Botswana and Namibia in summer, and says the pattern is unclear. Transvaal egg-laying is July–February. Months stored are July–February. Eye, bill and leg colours are not named. Chick down is not described. Both recordings are grade A from outside Kruger. No underwing photograph was found."
+  }
 }

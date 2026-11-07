@@ -7,8 +7,51 @@
     "af": "Bosveldlewerik"
   },
   "family": "alaudidae",
-  "summary": "The details for this species have not been published yet.",
-  "sampleData": true,
+  "status": "intra-african-migrant",
+  "monthsPresent": [
+    10,
+    11,
+    12,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+  ],
+  "habitat": "Fairly dry open woodland with bare or stony ground, including shrubby Acacia, mopane and mixed broad-leaved woodland, and bushwillow along drainage lines.",
+  "summary": "A nomadic lowveld lark that appears in numbers, breeds, and moves on. Adults are compact, with a small bill, a plain face, an indistinct eyebrow that stops short of the bill, streaked upperparts, a rufous wing panel, a white throat, a lightly streaked buff chest and a pale belly. The sexes are not described as differing in plumage. Males sing from bushes and in display flight. A total length, and juvenile or chick colours, are not given in the texts used here.",
+  "sampleData": false,
+  "similar": [
+    {
+      "slug": "calendulauda-sabota",
+      "note": "Sabota Lark has a white eyebrow that reaches the bill area and no rufous wing panel. Monotonous Lark’s white throat is obvious when it sings."
+    },
+    {
+      "slug": "corypha-africana",
+      "note": "Rufous-naped Lark is larger, crested, and whistles from an open perch. Monotonous Lark has a plain face and a rufous wing panel."
+    }
+  ],
+  "sources": [
+    {
+      "title": "The Atlas of Southern African Birds, Vol. 2 (Monotonous Lark)",
+      "url": "https://sabap2.birdmap.africa/docs/sabap1/493.pdf",
+      "publisher": "BirdLife South Africa",
+      "year": 1997
+    },
+    {
+      "title": "Mirafra passerina (Monotonous lark), summarised from Roberts VII",
+      "url": "https://www.biodiversityexplorer.info/birds/alaudidae/mirafra_passerina.htm",
+      "publisher": "Iziko Museums of South Africa",
+      "year": null
+    },
+    {
+      "title": "Monotonous lark",
+      "url": "https://en.wikipedia.org/wiki/Monotonous_lark",
+      "publisher": "Wikipedia",
+      "year": 2026
+    }
+  ],
   "population": {
     "estimate": {
       "low": 131072,
@@ -35,8 +78,128 @@
     },
     "tierApplied": "D"
   },
-  "variants": [],
-  "viewNotes": [],
-  "calls": [],
-  "images": []
+  "variants": [
+    {
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "marks": {
+        "bill": {
+          "colour": null,
+          "shape": "small"
+        },
+        "eye": {
+          "iris": null,
+          "ring": null
+        },
+        "legs": {
+          "colour": null
+        },
+        "head": {
+          "crown": null,
+          "face": "buff",
+          "throat": "white",
+          "pattern": "plain face; the white eyebrow stops short of the bill and is indistinct"
+        },
+        "upperparts": {
+          "back": "brown",
+          "rump": null,
+          "pattern": "streaked upperparts"
+        },
+        "underparts": {
+          "breast": "buff",
+          "belly": "white",
+          "pattern": "lightly streaked buff chest between the white throat and the pale belly"
+        },
+        "wings": {
+          "above": "rufous",
+          "below": null,
+          "pattern": "distinct rufous panel on the wing"
+        },
+        "tail": {
+          "colour": null,
+          "shape": null
+        }
+      }
+    }
+  ],
+  "viewNotes": [
+    {
+      "view": "flight-above",
+      "age": "adult",
+      "sex": "male",
+      "season": "any",
+      "note": "Streaked upperparts and a rufous wing panel. Males use bushes for display flights. The tail pattern is not described beyond an old alternative name, white-tailed lark, which the texts used here do not explain."
+    },
+    {
+      "view": "flight-below",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "The underwing is not described."
+    },
+    {
+      "view": "perched-front",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "A white throat, conspicuous when the bird is singing, and a lightly streaked buff chest."
+    },
+    {
+      "view": "perched-back",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Streaked upperparts. The rump is not given a separate colour."
+    },
+    {
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Small bill, plain face, rufous wing panel and white throat in one profile."
+    }
+  ],
+  "calls": [
+    {
+      "sex": "male",
+      "type": "song",
+      "description": "The male’s song is the field mark when the bird is otherwise hard to identify; the texts used here call it distinctive and do not transcribe the notes. A female song is not described.",
+      "recordings": [
+        {
+          "key": "xeno-canto/XC203723",
+          "source": "https://xeno-canto.org/203723",
+          "fileUrl": "https://xeno-canto.org/sounds/uploaded/QQQGKJQCCM/XC203723-monotenouslark.mp3",
+          "author": "Keith Blomerley",
+          "license": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ]
+    }
+  ],
+  "images": [
+    {
+      "key": "mirafra-passerina/mopani-side.jpg",
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "male",
+      "season": "any",
+      "source": "https://www.inaturalist.org/observations/21445990",
+      "fileUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/33181283/large.jpeg",
+      "author": "tjeerd",
+      "license": "CC BY-NC 4.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+      "aiGenerated": false,
+      "hosted": false,
+      "alt": "Monotonous Lark singing side-on in the Mopani district, with a white throat",
+      "caption": "Monotonous Lark singing side-on in the Mopani district, with a white throat"
+    }
+  ],
+  "research": {
+    "confidence": "medium",
+    "needsReview": true,
+    "note": "Kemp classed it as a visiting breeder. SABAP1 calls the movements nomadic and not fully understood, and says it is sometimes treated as an intra-African migrant. Months are October–June, covering Roberts egg-laying from October to March and atlas breeding records from January to June. July–September are not listed. The song syllables are not transcribed in these texts. The grade A recording is from Polokwane; a grade B song from Kruger was not preferred. Chick plumage and a total length were not found. The iNaturalist account name is tjeerd."
+  }
 }
