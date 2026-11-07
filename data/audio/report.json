@@ -1,0 +1,1084 @@
+{
+  "source": "xeno-canto explore catalogue, API v3 recording fields",
+  "counts": {
+    "slots": 62,
+    "swapped": 17,
+    "added": 7,
+    "kept": 36,
+    "none": 2,
+    "cleaned": 0
+  },
+  "noUsableRecording": [
+    {
+      "slug": "torgos-tracheliotos",
+      "scientificName": "Torgos tracheliotos",
+      "type": "call"
+    },
+    {
+      "slug": "trigonoceps-occipitalis",
+      "scientificName": "Trigonoceps occipitalis",
+      "type": "call"
+    }
+  ],
+  "speciesWithoutAnyRecording": [
+    {
+      "slug": "torgos-tracheliotos",
+      "scientificName": "Torgos tracheliotos"
+    },
+    {
+      "slug": "trigonoceps-occipitalis",
+      "scientificName": "Trigonoceps occipitalis"
+    }
+  ],
+  "cleaned": [],
+  "cleanErrors": [
+    {
+      "slug": "gyps-coprotheres",
+      "id": "369789",
+      "localFile": "data/audio/files/XC369789-cleaned.mp3",
+      "error": "✘ [ERROR] In a non-interactive environment, it's necessary to set a CLOUDFLARE_API_TOKEN environment variable for wrangler to work. Please go to https://developers.cloudflare.com/fundamentals/api/get-started/create-token/ for instructions on how to create an api token, and assign its value to CLOUDFLARE_API_TOKEN.\n\n  \n  To continue without logging in, rerun this command with `--temporary`. Wrangler will use a temporary account and print a claim URL.\n\n\n🪵  Logs were written to \"/home/ubuntu/.config/.wrangler/logs/wrangler-2026-11-07_19-53-23_939.log\""
+    }
+  ],
+  "slots": [
+    {
+      "slug": "accipiter-ovampensis",
+      "scientificName": "Accipiter ovampensis",
+      "index": 0,
+      "type": "call",
+      "action": "kept",
+      "from": [
+        "613465",
+        "686715",
+        "400368"
+      ],
+      "to": "613465",
+      "quality": "A",
+      "country": "South Africa",
+      "locality": "City of Matlosana (near Klerksdorp), Southern DC, North West",
+      "cleaned": false,
+      "license": "CC BY-NC-SA 4.0"
+    },
+    {
+      "slug": "aerospiza-tachiro",
+      "scientificName": "Aerospiza tachiro",
+      "index": 0,
+      "type": "call",
+      "action": "kept",
+      "from": [
+        "1137538",
+        "1148697",
+        "1148407"
+      ],
+      "to": "1137538",
+      "quality": "A",
+      "country": "South Africa",
+      "locality": "Kruger Park (near Skukuza), Ehlanzeni District Municipality, Mpumalanga",
+      "cleaned": false,
+      "license": "CC BY-NC-SA 4.0"
+    },
+    {
+      "slug": "alcedo-semitorquata",
+      "scientificName": "Alcedo semitorquata",
+      "index": 0,
+      "type": "call",
+      "action": "swapped",
+      "from": [
+        "305474",
+        "645316"
+      ],
+      "to": "1102306",
+      "quality": "A",
+      "country": "Zambia",
+      "locality": "Kasanka NP, Ndolwa, Chitambo, Central Province",
+      "cleaned": false,
+      "license": "CC BY-NC-SA 4.0"
+    },
+    {
+      "slug": "aquila-nipalensis",
+      "scientificName": "Aquila nipalensis",
+      "index": 0,
+      "type": "call",
+      "action": "kept",
+      "from": [
+        "1174915",
+        "1174914"
+      ],
+      "to": "1174915",
+      "quality": "A",
+      "country": "China",
+      "locality": "Shanghai Zoo, Shanghai Shi",
+      "cleaned": false,
+      "license": "CC BY-NC-SA 4.0"
+    },
+    {
+      "slug": "aquila-rapax",
+      "scientificName": "Aquila rapax",
+      "index": 0,
+      "type": "call",
+      "action": "swapped",
+      "from": [
+        "459459"
+      ],
+      "to": "1044220",
+      "quality": "A",
+      "country": "Kenya",
+      "locality": "Samburu National Reserve, Samburu County",
+      "cleaned": false,
+      "license": "CC BY-NC-SA 4.0"
+    },
+    {
+      "slug": "aquila-spilogaster",
+      "scientificName": "Aquila spilogaster",
+      "index": 0,
+      "type": "call",
+      "action": "kept",
+      "from": [
+        "194777",
+        "194771",
+        "267752"
+      ],
+      "to": "194777",
+      "quality": "A",
+      "country": "Tanzania",
+      "locality": "Manyoni, Singida",
+      "cleaned": false,
+      "license": "CC BY-NC-SA 4.0"
+    },
+    {
+      "slug": "aquila-verreauxii",
+      "scientificName": "Aquila verreauxii",
+      "index": 0,
+      "type": "call",
+      "action": "swapped",
+      "from": [
+        "519736",
+        "428788",
+        "192183"
+      ],
+      "to": "392307",
+      "quality": "B",
+      "country": "South Africa",
+      "locality": "Kransvleipoort, Clanwilliam, Western Cape",
+      "cleaned": false,
+      "license": "CC BY-NC-ND 4.0"
+    },
+    {
+      "slug": "astur-melanoleucus",
+      "scientificName": "Astur melanoleucus",
+      "index": 0,
+      "type": "call",
+      "action": "kept",
+      "from": [
+        "950482",
+        "695163",
+        "1184194"
+      ],
+      "to": "950482",
+      "quality": "A",
+      "country": "South Africa",
+      "locality": "Tokai Park (near Cape Town), City of Cape Town Metropolitan Municipality, Western Cape",
+      "cleaned": false,
+      "license": "CC BY-NC-SA 4.0"
+    },
+    {
+      "slug": "aviceda-cuculoides",
+      "scientificName": "Aviceda cuculoides",
+      "index": 0,
+      "type": "call",
+      "action": "swapped",
+      "from": [
+        "449481"
+      ],
+      "to": "788596",
+      "quality": "A",
+      "country": "Ghana",
+      "locality": "Abrafo forest",
+      "cleaned": false,
+      "license": "CC BY-NC-SA 4.0"
+    },
+    {
+      "slug": "bucorvus-leadbeateri",
+      "scientificName": "Bucorvus leadbeateri",
+      "index": 0,
+      "type": "call",
+      "action": "added",
+      "from": [],
+      "to": "1149598",
+      "quality": "A",
+      "country": "South Africa",
+      "locality": "Kruger Park (near Skukuza), Ehlanzeni District Municipality, Mpumalanga",
+      "cleaned": false,
+      "license": "CC BY-NC-SA 4.0"
+    },
+    {
+      "slug": "buteo-buteo",
+      "scientificName": "Buteo buteo",
+      "index": 0,
+      "type": "call",
+      "action": "swapped",
+      "from": [
+        "1039689",
+        "526851"
+      ],
+      "to": "151184",
+      "quality": "A",
+      "country": "Poland",
+      "locality": "Gmina Urszulin, Włodawa County, Lublin Voivodeship",
+      "cleaned": false,
+      "license": "CC BY-NC-SA 3.0"
+    },
+    {
+      "slug": "buteo-rufofuscus",
+      "scientificName": "Buteo rufofuscus",
+      "index": 0,
+      "type": "call",
+      "action": "kept",
+      "from": [
+        "1090801",
+        "397385"
+      ],
+      "to": "1090801",
+      "quality": "A",
+      "country": "South Africa",
+      "locality": "City of Cape Town (near Cape Town), City of Cape Town Metropolitan Municipality, Western Cape",
+      "cleaned": false,
+      "license": "CC BY-NC-SA 4.0"
+    },
+    {
+      "slug": "buteo-trizonatus",
+      "scientificName": "Buteo trizonatus",
+      "index": 0,
+      "type": "call",
+      "action": "kept",
+      "from": [
+        "289313",
+        "289315",
+        "289314"
+      ],
+      "to": "289313",
+      "quality": "B",
+      "country": "South Africa",
+      "locality": "Port Elizabeth, Port Elizabeth, Eastern Cape",
+      "cleaned": false,
+      "license": "CC BY-NC-SA 4.0"
+    },
+    {
+      "slug": "ceryle-rudis",
+      "scientificName": "Ceryle rudis",
+      "index": 0,
+      "type": "call",
+      "action": "kept",
+      "from": [
+        "1148067",
+        "638453",
+        "834484"
+      ],
+      "to": "1148067",
+      "quality": "A",
+      "country": "South Africa",
+      "locality": "Kruger Park (near Skukuza), Ehlanzeni District Municipality, Mpumalanga",
+      "cleaned": false,
+      "license": "CC BY-NC-SA 4.0"
+    },
+    {
+      "slug": "circaetus-cinereus",
+      "scientificName": "Circaetus cinereus",
+      "index": 0,
+      "type": "call",
+      "action": "kept",
+      "from": [
+        "863207"
+      ],
+      "to": "863207",
+      "quality": "A",
+      "country": "Zambia",
+      "locality": "Mafuta, Kafue, Lusaka Province",
+      "cleaned": false,
+      "license": "CC BY-NC-SA 4.0"
+    },
+    {
+      "slug": "circaetus-pectoralis",
+      "scientificName": "Circaetus pectoralis",
+      "index": 0,
+      "type": "call",
+      "action": "added",
+      "from": [],
+      "to": "57552",
+      "quality": "A",
+      "country": "Ethiopia",
+      "locality": "Awash National Park",
+      "cleaned": false,
+      "license": "CC BY-NC-ND 2.5"
+    },
+    {
+      "slug": "circus-macrourus",
+      "scientificName": "Circus macrourus",
+      "index": 0,
+      "type": "call",
+      "action": "kept",
+      "from": [
+        "549572",
+        "571877"
+      ],
+      "to": "549572",
+      "quality": "A",
+      "country": "Czech Republic",
+      "locality": "Dobřichov, Kolín, Středočeský kraj",
+      "cleaned": false,
+      "license": "CC BY-NC-SA 4.0"
+    },
+    {
+      "slug": "circus-pygargus",
+      "scientificName": "Circus pygargus",
+      "index": 0,
+      "type": "call",
+      "action": "kept",
+      "from": [
+        "1152357",
+        "1152382"
+      ],
+      "to": "1152357",
+      "quality": "A",
+      "country": "Spain",
+      "locality": "La Serena (near Helechal), Badajoz, Extremadura",
+      "cleaned": false,
+      "license": "CC BY-NC-SA 4.0"
+    },
+    {
+      "slug": "circus-ranivorus",
+      "scientificName": "Circus ranivorus",
+      "index": 0,
+      "type": "call",
+      "action": "added",
+      "from": [],
+      "to": "433948",
+      "quality": "B",
+      "country": "South Africa",
+      "locality": "Port Alfred, Western District, Eastern Cape",
+      "cleaned": false,
+      "license": "CC BY-NC-SA 4.0"
+    },
+    {
+      "slug": "clanga-pomarina",
+      "scientificName": "Clanga pomarina",
+      "index": 0,
+      "type": "call",
+      "action": "kept",
+      "from": [
+        "1028980",
+        "825782"
+      ],
+      "to": "1028980",
+      "quality": "A",
+      "country": "Estonia",
+      "locality": "Valgjärve Parish, Põlva County",
+      "cleaned": false,
+      "license": "CC BY-NC-SA 4.0"
+    },
+    {
+      "slug": "coracias-caudatus",
+      "scientificName": "Coracias caudatus",
+      "index": 0,
+      "type": "call",
+      "action": "kept",
+      "from": [
+        "949678"
+      ],
+      "to": "949678",
+      "quality": "A",
+      "country": "South Africa",
+      "locality": "Maruleng (near Phalaborwa), Mopani District Municipality, Limpopo",
+      "cleaned": false,
+      "license": "CC BY-NC-SA 4.0"
+    },
+    {
+      "slug": "coracias-caudatus",
+      "scientificName": "Coracias caudatus",
+      "index": 1,
+      "type": "other",
+      "action": "added",
+      "from": [],
+      "to": "756688",
+      "quality": "A",
+      "country": "South Africa",
+      "locality": "Maruleng (near Mica), Mopani, Limpopo",
+      "cleaned": false,
+      "license": "CC BY-NC-SA 4.0"
+    },
+    {
+      "slug": "coracias-garrulus",
+      "scientificName": "Coracias garrulus",
+      "index": 0,
+      "type": "call",
+      "action": "swapped",
+      "from": [
+        "634335"
+      ],
+      "to": "113065",
+      "quality": "A",
+      "country": "India",
+      "locality": "Amreli, Gujarat",
+      "cleaned": false,
+      "license": "CC BY-NC-SA 3.0"
+    },
+    {
+      "slug": "coracias-garrulus",
+      "scientificName": "Coracias garrulus",
+      "index": 1,
+      "type": "alarm",
+      "action": "added",
+      "from": [],
+      "to": "805546",
+      "quality": "A",
+      "country": "France",
+      "locality": "Arrondissement de Montpellier (near Loupian), Hérault, Occitanie",
+      "cleaned": false,
+      "license": "CC BY-NC-SA 4.0"
+    },
+    {
+      "slug": "coracias-naevius",
+      "scientificName": "Coracias naevius",
+      "index": 0,
+      "type": "call",
+      "action": "kept",
+      "from": [
+        "715786"
+      ],
+      "to": "715786",
+      "quality": "A",
+      "country": "South Africa",
+      "locality": "Pomfret, Bophirima, North West",
+      "cleaned": false,
+      "license": "CC BY-NC-SA 4.0"
+    },
+    {
+      "slug": "coracias-naevius",
+      "scientificName": "Coracias naevius",
+      "index": 1,
+      "type": "other",
+      "action": "added",
+      "from": [],
+      "to": "715786",
+      "quality": "A",
+      "country": "South Africa",
+      "locality": "Pomfret, Bophirima, North West",
+      "cleaned": false,
+      "license": "CC BY-NC-SA 4.0"
+    },
+    {
+      "slug": "coracias-spatulatus",
+      "scientificName": "Coracias spatulatus",
+      "index": 0,
+      "type": "call",
+      "action": "swapped",
+      "from": [
+        "660428"
+      ],
+      "to": "854401",
+      "quality": "A",
+      "country": "Zambia",
+      "locality": "Mwekera Forestry College, Kitwe, Copperbelt",
+      "cleaned": false,
+      "license": "CC BY-NC-ND 4.0"
+    },
+    {
+      "slug": "corythornis-cristatus",
+      "scientificName": "Corythornis cristatus",
+      "index": 0,
+      "type": "call",
+      "action": "kept",
+      "from": [
+        "369825",
+        "429330"
+      ],
+      "to": "369825",
+      "quality": "A",
+      "country": "South Africa",
+      "locality": "Port Alfred, Eastern Cape",
+      "cleaned": false,
+      "license": "CC BY-NC-SA 4.0"
+    },
+    {
+      "slug": "elanus-caeruleus",
+      "scientificName": "Elanus caeruleus",
+      "index": 0,
+      "type": "call",
+      "action": "kept",
+      "from": [
+        "1087114",
+        "1059222",
+        "1081037"
+      ],
+      "to": "1087114",
+      "quality": "A",
+      "country": "South Africa",
+      "locality": "City of Cape Town (near Cape Town), City of Cape Town Metropolitan Municipality, Western Cape",
+      "cleaned": false,
+      "license": "CC BY-NC-SA 4.0"
+    },
+    {
+      "slug": "eurystomus-glaucurus",
+      "scientificName": "Eurystomus glaucurus",
+      "index": 0,
+      "type": "call",
+      "action": "kept",
+      "from": [
+        "745582"
+      ],
+      "to": "745582",
+      "quality": "A",
+      "country": "Zambia",
+      "locality": "Kasanka National Park",
+      "cleaned": false,
+      "license": "CC BY-NC-SA 4.0"
+    },
+    {
+      "slug": "gypohierax-angolensis",
+      "scientificName": "Gypohierax angolensis",
+      "index": 0,
+      "type": "call",
+      "action": "swapped",
+      "from": [
+        "613298"
+      ],
+      "to": "620855",
+      "quality": "B",
+      "country": "Tanzania",
+      "locality": "Ngezi Forest, Pemba North Region, Pemba island",
+      "cleaned": false,
+      "license": "CC BY-NC-SA 4.0"
+    },
+    {
+      "slug": "gyps-africanus",
+      "scientificName": "Gyps africanus",
+      "index": 0,
+      "type": "call",
+      "action": "kept",
+      "from": [
+        "978231",
+        "661236"
+      ],
+      "to": "978231",
+      "quality": "A",
+      "country": "South Africa",
+      "locality": "Kruger Park (near Sabie Park), Ehlanzeni District Municipality, Mpumalanga",
+      "cleaned": false,
+      "license": "CC BY-NC-SA 4.0"
+    },
+    {
+      "slug": "gyps-coprotheres",
+      "scientificName": "Gyps coprotheres",
+      "index": 0,
+      "type": "call",
+      "action": "kept",
+      "from": [
+        "369789"
+      ],
+      "to": "369789",
+      "quality": "C",
+      "country": "South Africa",
+      "locality": "Msikaba Gorge 31°18'6.80\"S 29°55'36.88\"E",
+      "cleaned": false,
+      "license": "CC BY-NC-SA 4.0"
+    },
+    {
+      "slug": "halcyon-albiventris",
+      "scientificName": "Halcyon albiventris",
+      "index": 0,
+      "type": "call",
+      "action": "kept",
+      "from": [
+        "1137527",
+        "382948",
+        "532199"
+      ],
+      "to": "1137527",
+      "quality": "A",
+      "country": "South Africa",
+      "locality": "Kruger Park (near Skukuza), Ehlanzeni District Municipality, Mpumalanga",
+      "cleaned": false,
+      "license": "CC BY-NC-SA 4.0"
+    },
+    {
+      "slug": "halcyon-albiventris",
+      "scientificName": "Halcyon albiventris",
+      "index": 1,
+      "type": "song",
+      "action": "kept",
+      "from": [
+        "1141626",
+        "952485"
+      ],
+      "to": "1141626",
+      "quality": "A",
+      "country": "South Africa",
+      "locality": "Mossel Bay Local Municipality (near Great Brak River), Garden Route District Municipality, Western Cape",
+      "cleaned": false,
+      "license": "CC BY-NC-SA 4.0"
+    },
+    {
+      "slug": "halcyon-chelicuti",
+      "scientificName": "Halcyon chelicuti",
+      "index": 0,
+      "type": "song",
+      "action": "kept",
+      "from": [
+        "501576",
+        "462092",
+        "960871",
+        "628100"
+      ],
+      "to": "501576",
+      "quality": "A",
+      "country": "South Africa",
+      "locality": "Mjejane Private Game Reserve, Hectorspruit, Mpumalanga",
+      "cleaned": false,
+      "license": "CC BY-NC-SA 4.0"
+    },
+    {
+      "slug": "halcyon-leucocephala",
+      "scientificName": "Halcyon leucocephala",
+      "index": 0,
+      "type": "call",
+      "action": "kept",
+      "from": [
+        "697680",
+        "591625"
+      ],
+      "to": "697680",
+      "quality": "A",
+      "country": "Kenya",
+      "locality": "Mandegee farm, oloitoktok",
+      "cleaned": false,
+      "license": "CC BY-NC-SA 4.0"
+    },
+    {
+      "slug": "halcyon-senegalensis",
+      "scientificName": "Halcyon senegalensis",
+      "index": 0,
+      "type": "song",
+      "action": "kept",
+      "from": [
+        "780264",
+        "1080056",
+        "368169"
+      ],
+      "to": "780264",
+      "quality": "A",
+      "country": "Namibia",
+      "locality": "Nambwa Campsite / Island, Zambezi Region, Namibia",
+      "cleaned": false,
+      "license": "CC BY-NC-SA 4.0"
+    },
+    {
+      "slug": "halcyon-senegalensis",
+      "scientificName": "Halcyon senegalensis",
+      "index": 1,
+      "type": "alarm",
+      "action": "swapped",
+      "from": [
+        "213653"
+      ],
+      "to": "28682",
+      "quality": "A",
+      "country": "South Africa",
+      "locality": "Kruger NP",
+      "cleaned": false,
+      "license": "CC BY-NC-SA 3.0"
+    },
+    {
+      "slug": "hieraaetus-pennatus",
+      "scientificName": "Hieraaetus pennatus",
+      "index": 0,
+      "type": "call",
+      "action": "swapped",
+      "from": [
+        "437622",
+        "351821",
+        "301874"
+      ],
+      "to": "176712",
+      "quality": "A",
+      "country": "Uzbekistan",
+      "locality": "Zaamin National Park, Zaamin District, Jizzakh Province",
+      "cleaned": false,
+      "license": "CC BY-NC-SA 4.0"
+    },
+    {
+      "slug": "hieraaetus-wahlbergi",
+      "scientificName": "Hieraaetus wahlbergi",
+      "index": 0,
+      "type": "call",
+      "action": "kept",
+      "from": [
+        "881394",
+        "352650"
+      ],
+      "to": "881394",
+      "quality": "B",
+      "country": "Kenya",
+      "locality": "Meru National Park, Meru County",
+      "cleaned": false,
+      "license": "CC BY-NC-SA 4.0"
+    },
+    {
+      "slug": "icthyophaga-vocifer",
+      "scientificName": "Icthyophaga vocifer",
+      "index": 0,
+      "type": "call",
+      "action": "kept",
+      "from": [
+        "1149038",
+        "1149045",
+        "1144970"
+      ],
+      "to": "1149038",
+      "quality": "B",
+      "country": "South Africa",
+      "locality": "Kruger Park (near Skukuza), Ehlanzeni District Municipality, Mpumalanga",
+      "cleaned": false,
+      "license": "CC BY-NC-SA 4.0"
+    },
+    {
+      "slug": "ispidina-picta",
+      "scientificName": "Ispidina picta",
+      "index": 0,
+      "type": "call",
+      "action": "swapped",
+      "from": [
+        "438156"
+      ],
+      "to": "209955",
+      "quality": "A",
+      "country": "Ethiopia",
+      "locality": "Baro River, 3 km east of Gambela",
+      "cleaned": false,
+      "license": "CC BY-NC-SA 4.0"
+    },
+    {
+      "slug": "ispidina-picta",
+      "scientificName": "Ispidina picta",
+      "index": 1,
+      "type": "song",
+      "action": "swapped",
+      "from": [
+        "453305"
+      ],
+      "to": "1105394",
+      "quality": "A",
+      "country": "Uganda",
+      "locality": "Entebbe Botanic Garden",
+      "cleaned": false,
+      "license": "CC BY-NC-SA 4.0"
+    },
+    {
+      "slug": "ispidina-picta",
+      "scientificName": "Ispidina picta",
+      "index": 2,
+      "type": "other",
+      "action": "swapped",
+      "from": [
+        "998136"
+      ],
+      "to": "209956",
+      "quality": "A",
+      "country": "Ethiopia",
+      "locality": "Gambela, trail from the Metu road to the Baro River",
+      "cleaned": false,
+      "license": "CC BY-NC-SA 4.0"
+    },
+    {
+      "slug": "kaupifalco-monogrammicus",
+      "scientificName": "Kaupifalco monogrammicus",
+      "index": 0,
+      "type": "call",
+      "action": "kept",
+      "from": [
+        "1165785",
+        "1165786",
+        "975911"
+      ],
+      "to": "1165785",
+      "quality": "A",
+      "country": "Uganda",
+      "locality": "Toro Semuliki Wildlife Reserve",
+      "cleaned": false,
+      "license": "CC BY-NC-SA 4.0"
+    },
+    {
+      "slug": "lophaetus-occipitalis",
+      "scientificName": "Lophaetus occipitalis",
+      "index": 0,
+      "type": "call",
+      "action": "kept",
+      "from": [
+        "910891",
+        "561580",
+        "449486"
+      ],
+      "to": "910891",
+      "quality": "A",
+      "country": "South Africa",
+      "locality": "Mount Moreland, eThekwini Metropolitan Municipality, KwaZulu-Natal",
+      "cleaned": false,
+      "license": "CC BY-NC-SA 4.0"
+    },
+    {
+      "slug": "macheiramphus-alcinus",
+      "scientificName": "Macheiramphus alcinus",
+      "index": 0,
+      "type": "call",
+      "action": "swapped",
+      "from": [
+        "730910",
+        "422135",
+        "244201"
+      ],
+      "to": "758044",
+      "quality": "A",
+      "country": "South Africa",
+      "locality": "Greater Tzaneen Local Municipality (near Tzaneen), Mopani District Municipality, Limpopo",
+      "cleaned": false,
+      "license": "CC BY-NC-ND 4.0"
+    },
+    {
+      "slug": "megaceryle-maxima",
+      "scientificName": "Megaceryle maxima",
+      "index": 0,
+      "type": "call",
+      "action": "kept",
+      "from": [
+        "1152464",
+        "694496",
+        "811972"
+      ],
+      "to": "1152464",
+      "quality": "A",
+      "country": "South Africa",
+      "locality": "Kruger Park (near Skukuza), Ehlanzeni District Municipality, Mpumalanga",
+      "cleaned": false,
+      "license": "CC BY-NC-SA 4.0"
+    },
+    {
+      "slug": "melierax-metabates",
+      "scientificName": "Melierax metabates",
+      "index": 0,
+      "type": "call",
+      "action": "swapped",
+      "from": [
+        "589156",
+        "597079",
+        "597075"
+      ],
+      "to": "280442",
+      "quality": "A",
+      "country": "South Africa",
+      "locality": "Pretoriuskop area, Kruger National Park, Mpumalanga",
+      "cleaned": false,
+      "license": "CC BY-NC-ND 4.0"
+    },
+    {
+      "slug": "micronisus-gabar",
+      "scientificName": "Micronisus gabar",
+      "index": 0,
+      "type": "call",
+      "action": "kept",
+      "from": [
+        "1100393",
+        "1141677",
+        "700773"
+      ],
+      "to": "1100393",
+      "quality": "A",
+      "country": "South Africa",
+      "locality": "Zaagkuilsdrift",
+      "cleaned": false,
+      "license": "CC BY-NC-SA 4.0"
+    },
+    {
+      "slug": "milvus-migrans",
+      "scientificName": "Milvus migrans",
+      "index": 0,
+      "type": "call",
+      "action": "swapped",
+      "from": [
+        "1075223",
+        "1092243",
+        "1099112"
+      ],
+      "to": "168353",
+      "quality": "A",
+      "country": "India",
+      "locality": "Rajkot, Gujarat",
+      "cleaned": false,
+      "license": "CC BY-NC-SA 3.0"
+    },
+    {
+      "slug": "necrosyrtes-monachus",
+      "scientificName": "Necrosyrtes monachus",
+      "index": 0,
+      "type": "call",
+      "action": "added",
+      "from": [],
+      "to": "277865",
+      "quality": "B",
+      "country": "Ethiopia",
+      "locality": "Gambela, Dembidolo Road",
+      "cleaned": false,
+      "license": "CC BY-NC-ND 4.0"
+    },
+    {
+      "slug": "pernis-apivorus",
+      "scientificName": "Pernis apivorus",
+      "index": 0,
+      "type": "call",
+      "action": "swapped",
+      "from": [
+        "1100928",
+        "1143593",
+        "1141922"
+      ],
+      "to": "154438",
+      "quality": "A",
+      "country": "Poland",
+      "locality": "Gmina Krynki (near Krynki), Sokółka County, Podlaskie Voivodeship",
+      "cleaned": false,
+      "license": "CC BY-NC-SA 3.0"
+    },
+    {
+      "slug": "polemaetus-bellicosus",
+      "scientificName": "Polemaetus bellicosus",
+      "index": 0,
+      "type": "call",
+      "action": "kept",
+      "from": [
+        "392028",
+        "1148983",
+        "772438"
+      ],
+      "to": "392028",
+      "quality": "A",
+      "country": "South Africa",
+      "locality": "Emangusi (near Makhaya), North Uthungulu, KwaZulu-Natal",
+      "cleaned": false,
+      "license": "CC BY-NC-SA 4.0"
+    },
+    {
+      "slug": "polyboroides-typus",
+      "scientificName": "Polyboroides typus",
+      "index": 0,
+      "type": "call",
+      "action": "kept",
+      "from": [
+        "1039698",
+        "580274",
+        "958205"
+      ],
+      "to": "1039698",
+      "quality": "A",
+      "country": "South Africa",
+      "locality": "City of Cape Town (near Cape Town), City of Cape Town Metropolitan Municipality, Western Cape",
+      "cleaned": false,
+      "license": "CC BY-NC-SA 4.0"
+    },
+    {
+      "slug": "stephanoaetus-coronatus",
+      "scientificName": "Stephanoaetus coronatus",
+      "index": 0,
+      "type": "call",
+      "action": "kept",
+      "from": [
+        "1048064",
+        "1048065",
+        "1006960"
+      ],
+      "to": "1048064",
+      "quality": "A",
+      "country": "South Africa",
+      "locality": "2nd Gate (near Westville), eThekwini Metropolitan Municipality, KwaZulu-Natal",
+      "cleaned": false,
+      "license": "CC BY-NC-SA 4.0"
+    },
+    {
+      "slug": "tachyspiza-badia",
+      "scientificName": "Tachyspiza badia",
+      "index": 0,
+      "type": "call",
+      "action": "kept",
+      "from": [
+        "1095967",
+        "1095965",
+        "1076938"
+      ],
+      "to": "1095967",
+      "quality": "A",
+      "country": "Kenya",
+      "locality": "Todonyang mission (near Todonyang)Turkana County",
+      "cleaned": false,
+      "license": "CC BY-NC-SA 4.0"
+    },
+    {
+      "slug": "tachyspiza-minulla",
+      "scientificName": "Tachyspiza minulla",
+      "index": 0,
+      "type": "call",
+      "action": "kept",
+      "from": [
+        "933196",
+        "960879",
+        "697064"
+      ],
+      "to": "933196",
+      "quality": "B",
+      "country": "South Africa",
+      "locality": "Kruger Park (near Kruger National Park), Mopani District Municipality, Limpopo",
+      "cleaned": false,
+      "license": "CC BY-NC-SA 4.0"
+    },
+    {
+      "slug": "terathopius-ecaudatus",
+      "scientificName": "Terathopius ecaudatus",
+      "index": 0,
+      "type": "call",
+      "action": "kept",
+      "from": [
+        "940363",
+        "940364"
+      ],
+      "to": "940363",
+      "quality": "A",
+      "country": "Germany",
+      "locality": "Tierpark Berlin (near Berlin), Berlin",
+      "cleaned": false,
+      "license": "CC BY-NC-SA 4.0"
+    },
+    {
+      "slug": "torgos-tracheliotos",
+      "scientificName": "Torgos tracheliotos",
+      "index": 0,
+      "type": "call",
+      "action": "none",
+      "from": [],
+      "to": "",
+      "quality": "",
+      "country": "",
+      "locality": "",
+      "cleaned": false,
+      "license": ""
+    },
+    {
+      "slug": "trigonoceps-occipitalis",
+      "scientificName": "Trigonoceps occipitalis",
+      "index": 0,
+      "type": "call",
+      "action": "none",
+      "from": [],
+      "to": "",
+      "quality": "",
+      "country": "",
+      "locality": "",
+      "cleaned": false,
+      "license": ""
+    }
+  ]
+}

@@ -3,3 +3,5 @@ node_modules/
 .dev.vars
 dist/
 *.log
+data/audio/.cache/
+data/audio/files/

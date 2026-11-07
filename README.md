@@ -59,6 +59,8 @@ All content lives in a Cloudflare Workers KV namespace as JSON values:
 | `index/families`       | The list of all families and their species                                       |
 | `index/credits`        | Sources, taxonomy, media credits, and site credits for `/credits`                |
 
+Call recordings are chosen by `node scripts/process-recordings.mjs` and stored in `data/audio/recordings.json`. Pages merge that overlay onto the species document. See [docs/audio.md](docs/audio.md).
+
 More index keys will be added as needed.
 
 ### Hosting

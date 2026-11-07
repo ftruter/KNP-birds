@@ -122,7 +122,9 @@ Each image:
 }
 ```
 
-`type` is `song`, `call`, `alarm`, `contact`, `duet`, or `other`. `description` is one short sentence. A recording, when present, has a `key`, plus the same attribution as an image: `source`, `author`, `license`, and an optional `licenceUrl`. `fileUrl` is an optional direct audio URL. `hosted: false` means the file is not in the R2 bucket: the page links `source` and can play `fileUrl`, and it does not link a missing `/audio/` object. `aiGenerated` is optional on a recording. The credits page treats `true` as an AI-generated recording. The call object itself has no attribution fields. Credit is collected from each recording.
+`type` is `song`, `call`, `alarm`, `contact`, `duet`, or `other`. `description` is one short sentence. A recording, when present, has a `key`, plus the same attribution as an image: `source`, `author`, `license`, and an optional `licenceUrl`. `fileUrl` is an optional direct audio URL. `hosted: false` means the file is not in the R2 bucket: the page links `source` and can play `fileUrl`, and it does not link a missing `/audio/` object. `quality` is the xeno-canto grade (`A` best, then `B`, `C`, `D`, `E`). `modified` is a short note when this site publishes a filtered derivative. `aiGenerated` is optional on a recording. The credits page treats `true` as an AI-generated recording. The call object itself has no attribution fields. Credit is collected from each recording.
+
+Species files keep the field notes. The chosen recording, its grade, and any filter note live in [`data/audio/recordings.json`](audio.md) and are merged onto the call when HTML, Markdown, and JSON are rendered. A slot that is already grade A is left as it is. A cleaned file is hosted in R2 under the same licence. ND recordings are not edited.
 
 Media licences are separate from the Apache-2.0 licence of the code. CC BY, CC BY-SA, CC BY-NC, and CC BY-NC-SA may be shown. ND items are linked rather than displayed if showing them would mean resizing or cropping.
 

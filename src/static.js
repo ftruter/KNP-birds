@@ -84,7 +84,7 @@ The six comparisons on a species page are derived, not stored as prose:
 3. Sex: diff male against female. A variant with sex \`any\` applies to both.
 4. Flight: diff \`wings.above\` against \`wings.below\`, plus optional notes tagged \`flight-above\` and \`flight-below\`. A side-on flight photograph may use \`flight-side\`. A wing-spread display may use \`display-front\` or \`display-back\`. Those three are not treated as the above-versus-below flight diff.
 5. Perched: optional notes tagged \`perched-front\`, \`perched-back\` and \`perched-side\`.
-6. Calls: the \`calls\` array, grouped by sex. Each call has \`sex\`, \`type\` (song, call, alarm, contact, duet, other), a short \`description\`, and optional \`recordings\`.
+6. Calls: the \`calls\` array, grouped by sex. Each call has \`sex\`, \`type\` (song, call, alarm, contact, duet, other), a short \`description\`, and optional \`recordings\`. A recording may include \`quality\` (xeno-canto grade, A best) and \`modified\` when a wind-noise filter was applied. The grade and any replacement are merged from the audio overlay at render time; the species file itself stays the field note.
 
 \`status\` is \`resident\`, \`intra-african-migrant\`, or \`palearctic-migrant\`. \`monthsPresent\` lists the months the bird is in Kruger. \`habitat\` and \`similar\` are optional. \`sources\` is the bibliography for the species text.
 
