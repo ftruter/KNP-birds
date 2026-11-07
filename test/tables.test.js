@@ -116,7 +116,7 @@ test('sort is English by default, nulls last both ways, and Latin breaks ties', 
   assert.equal(afDesc[0].af, 'B')
 })
 
-test('the home species table adds Family and the header links sort', () => {
+test('a species table sorts and does not add a family column', () => {
   const html = speciesTableHtml({
     rows: [
       row('Buteo buteo', 'Common Buzzard', {
@@ -124,15 +124,14 @@ test('the home species table adds Family and the header links sort', () => {
         presence: { summer: true, winter: false },
       }),
     ],
-    path: '/',
-    query: 'https://birds.truter.world/?sort=latin&dir=desc',
+    path: '/species',
+    query: 'https://birds.truter.world/species?sort=latin&dir=desc',
     format,
-    withFamily: true,
   })
   assert.match(html, /aria-sort="descending"/)
-  assert.match(html, /href="\/\?sort=latin&amp;dir=asc"/)
-  assert.match(html, /title="Hawks, eagles and kites"/)
-  assert.match(html, />Accipitridae</)
+  assert.match(html, /href="\/species\?sort=latin&amp;dir=asc"/)
+  assert.doesNotMatch(html, />Family</)
+  assert.doesNotMatch(html, /Accipitridae/)
   assert.match(html, /64–256/)
   assert.match(html, /<td class="num">—<\/td>/)
   assert.match(html, /October to March/)

@@ -68,14 +68,6 @@ Resident species are included, plus summer migrants. Rare vagrants are left out.
 
 Age, season and sex come from diffing structured field marks. Null means unknown. Flight and perched views use notes and photographs. ${HOME_POPULATION_INTRO}
 
-## Species
-
-${speciesTableMarkdown({
-  rows: rowsForSpeciesIndex(speciesIndex, catalog),
-  format,
-  withFamily: true,
-})}
-
 ## Families
 
 ${familyTableMarkdown({
@@ -229,8 +221,8 @@ export const renderNotFoundMarkdown = (path, origin) =>
     body: `No page is published at \`${path}\`.
 
 - [Home](/)
-- [Species](/species)
-- [Families](/families)`,
+- [Families](/families)
+- [Species](/species)`,
   })
 
 const iconicMarkdown = (plates) =>

@@ -32,16 +32,7 @@ export const kvReadMayBeStale = (env, now = Date.now()) => {
 }
 
 const LIST_COLUMNS = {
-  '/': [
-    'en',
-    'af',
-    'latin',
-    'summer',
-    'winter',
-    'family',
-    'summerCount',
-    'winterCount',
-  ],
+  '/': ['en', 'af', 'latin', 'summer', 'winter', 'summerCount', 'winterCount'],
   '/species': ['en', 'af', 'latin', 'summer', 'winter'],
   '/families': [
     'en',

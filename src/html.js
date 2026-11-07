@@ -41,11 +41,17 @@ import { alternates } from './route.js'
 
 const NAV = [
   ['home', '/', 'Home'],
-  ['species', '/species', 'Species'],
   ['families', '/families', 'Families'],
+  ['species', '/species', 'Species'],
   ['colours', '/vocab/colours', 'Colours'],
   ['agents', '/llms.txt', 'For agents'],
 ]
+
+const omitHomeSpeciesTable = (html) =>
+  html.replace(
+    /<h2>Species<\/h2>\n(?:<div class="table-wrap">[\s\S]*?\n<\/div>|<p>No species are listed\.<\/p>)\n/,
+    '',
+  )
 
 export const renderHomeHtml = ({
   origin,
@@ -57,7 +63,7 @@ export const renderHomeHtml = ({
 }) => {
   const species = indexRows(speciesIndex)
   const families = indexRows(familiesIndex)
-  const main = `
+  const main = omitHomeSpeciesTable(`
 <div class="hero">
 <div class="hero-copy">
 <h1>Birds of Kruger National Park</h1>
@@ -77,8 +83,12 @@ ${agentHtml(origin)}
 </ol>
 </div>
 </div>
+<div class="lead-split">
 <p>Age, season and sex are worked out by comparing structured field marks. A mark left blank is unknown, not a claim that the part has no colour. Flight and perched views use notes and photographs. Where nothing differs, the page says so.</p>
+<aside class="lead-note">
 <p>${escapeHtml(HOME_POPULATION_INTRO)}</p>
+</aside>
+</div>
 <h2>Species</h2>
 ${speciesTableHtml({
   rows: rowsForSpeciesIndex(speciesIndex, catalog),
@@ -96,7 +106,7 @@ ${familyTableHtml({
   format,
   caption: 'Families',
 })}
-<p><a href="/vocab/colours">Colour names</a> used in the field marks.</p>`
+<p><a href="/vocab/colours">Colour names</a> used in the field marks.</p>`)
   return layout({
     title: 'Birds of Kruger National Park',
     description:
@@ -285,8 +295,8 @@ export const renderNotFoundHtml = ({ origin, path }) => {
 <p>No page is published at <code>${escapeHtml(path)}</code>.</p>
 <ul>
 <li><a href="/">Home</a></li>
-<li><a href="/species">Species</a></li>
 <li><a href="/families">Families</a></li>
+<li><a href="/species">Species</a></li>
 </ul>`
   return layout({
     title: 'Not found · KNP Birds',
