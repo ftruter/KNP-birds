@@ -128,7 +128,11 @@ test('the sitemap page is nested in html, markdown, and json', async () => {
   const html = await (await fetch('/sitemap')).text()
   assert.match(html, /<h1>Sitemap<\/h1>/)
   assert.match(html, /href="\/sitemap" aria-current="page"/)
-  assert.doesNotMatch(html, /<script/i)
+  assert.match(
+    html,
+    /<script type="module" defer src="\/app\.js\?v=[0-9a-f]+"><\/script>/,
+  )
+  assert.doesNotMatch(html, /<script(?! type="module")/i)
   const nav = html.match(/<ul class="nav-list">[\s\S]*?<\/ul>/)[0]
   assert.equal(nav.includes('Sitemap'), false)
   assert.match(html, /<footer[\s\S]*href="\/sitemap"/)

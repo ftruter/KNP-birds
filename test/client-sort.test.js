@@ -2,7 +2,7 @@ import assert from 'node:assert/strict'
 import { test } from 'node:test'
 import { clientJs } from '../src/client.js'
 import { sortRows } from '../src/lists.js'
-import { compareSortKeys } from '../src/sort.js'
+import { evaluateClient } from './client-module.js'
 
 const row = (latin, en, extra = {}) => ({
   scientificName: latin,
@@ -21,8 +21,8 @@ const speciesValue = (item, column) => {
   return item.scientificName
 }
 
-test('the browser comparator matches the server sort, including nulls and Latin ties', () => {
-  assert.equal(clientJs.includes(compareSortKeys.toString()), true)
+test('the browser comparator matches the server sort, including nulls and Latin ties', async () => {
+  const compareSortKeys = await evaluateClient(clientJs)
   const rows = [
     row('Zeta zeta', 'Zebra', { af: null }),
     row('Alpha alpha', 'Zebra', {
@@ -96,4 +96,18 @@ test('pages keep server sort links and only allow a same-origin module', async (
     'text/javascript; charset=utf-8',
   )
   assert.equal(await script.text(), clientJs)
+  const roller = await handleRequest(
+    new Request('https://birds.truter.world/species/coracias-garrulus'),
+    { BIRDS_KV: kv.kv, IMAGES: mockBucket().bucket },
+    requestContext(),
+  )
+  const photo = await roller.text()
+  assert.match(photo, /<button type="button" class="zoom"/)
+  assert.match(photo, /<img draggable="false" /)
+  const css = await handleRequest(
+    new Request('https://birds.truter.world/style.css'),
+    { BIRDS_KV: kv.kv, IMAGES: mockBucket().bucket },
+    requestContext(),
+  )
+  assert.match(await css.text(), /-webkit-user-drag:\s*none/)
 })
