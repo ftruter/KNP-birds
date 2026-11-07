@@ -54,7 +54,7 @@ export const renderHomeMarkdown = ({
     path: '/',
     title: 'Birds of Kruger National Park',
     sample: false,
-    body: `An open field guide to the birds of Kruger National Park and neighbouring Marloth Park. Pages are server-rendered. There is no client-side JavaScript.
+    body: `An open field guide to the birds of Kruger National Park and neighbouring Marloth Park. Pages are server-rendered. JavaScript is optional.
 
 Resident species are included, plus summer migrants. Rare vagrants are left out. ${catalogSentence(species.length, families.length, speciesIndex, familiesIndex)}
 

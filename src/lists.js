@@ -1,4 +1,5 @@
 import { escapeHtml } from './escape.js'
+import { compareSortKeys } from './sort.js'
 import {
   SEASON_NOTE,
   formatEstimate,
@@ -8,11 +9,6 @@ import {
 
 const SORT_NOTE =
   'The HTML table sorts with ?sort= and dir=asc or dir=desc. The default is English, A to Z. Latin breaks ties. Empty values sort last.'
-
-const latinCompare = (a, b) =>
-  String(a.scientificName).localeCompare(String(b.scientificName), 'en', {
-    sensitivity: 'base',
-  })
 
 const textOf = (value) =>
   typeof value === 'string' && value.trim() ? value.trim() : null
@@ -62,21 +58,13 @@ const familySortValue = (row, column) => {
 
 export const sortRows = (rows, column, dir, valueOf) => {
   const copy = rows.slice()
-  copy.sort((a, b) => {
-    const av = valueOf(a, column)
-    const bv = valueOf(b, column)
-    const aMissing = av == null || av === ''
-    const bMissing = bv == null || bv === ''
-    if (aMissing && bMissing) return latinCompare(a, b)
-    if (aMissing) return 1
-    if (bMissing) return -1
-    const primary =
-      typeof av === 'number'
-        ? av - bv
-        : String(av).localeCompare(String(bv), 'en', { sensitivity: 'base' })
-    const directed = dir === 'desc' ? -primary : primary
-    return directed || latinCompare(a, b)
-  })
+  copy.sort((a, b) =>
+    compareSortKeys(
+      { value: valueOf(a, column), latin: a.scientificName },
+      { value: valueOf(b, column), latin: b.scientificName },
+      dir,
+    ),
+  )
   return copy
 }
 
@@ -120,14 +108,21 @@ const headerHtml = (column, active, path) => {
   return `<th scope="col"${numeric ? ' class="num"' : ''} aria-sort="${aria}"><a href="${escapeHtml(`${path}?sort=${column.id}&dir=${dir}`)}">${escapeHtml(column.label)}${markHtml}</a></th>`
 }
 
+const sortAttr = (value) =>
+  value == null || value === ''
+    ? ''
+    : typeof value === 'number'
+      ? ` data-sort-value="${value}" data-sort-number`
+      : ` data-sort-value="${escapeHtml(String(value))}"`
+
 const speciesCells = (row, format) => {
   const view = { ...row, format }
   return {
-    en: `<th scope="row"><a href="/species/${escapeHtml(row.slug)}">${escapeHtml(row.en)}</a></th>`,
-    af: `<td>${escapeHtml(row.af || '—')}</td>`,
-    latin: `<td><em>${escapeHtml(row.scientificName)}</em></td>`,
-    summer: `<td class="num">${escapeHtml(seasonPopulation(view, 'summer'))}</td>`,
-    winter: `<td class="num">${escapeHtml(seasonPopulation(view, 'winter'))}</td>`,
+    en: `<th scope="row"${sortAttr(textOf(row.en))}><a href="/species/${escapeHtml(row.slug)}">${escapeHtml(row.en)}</a></th>`,
+    af: `<td${sortAttr(textOf(row.af))}>${escapeHtml(row.af || '—')}</td>`,
+    latin: `<td${sortAttr(textOf(row.scientificName))}><em>${escapeHtml(row.scientificName)}</em></td>`,
+    summer: `<td class="num"${sortAttr(speciesSortValue(row, 'summer'))}>${escapeHtml(seasonPopulation(view, 'summer'))}</td>`,
+    winter: `<td class="num"${sortAttr(speciesSortValue(row, 'winter'))}>${escapeHtml(seasonPopulation(view, 'winter'))}</td>`,
   }
 }
 
@@ -139,13 +134,13 @@ const seasonPopulation = (row, season) => {
 }
 
 const familyCells = (row, format) => ({
-  en: `<th scope="row"><a href="/family/${escapeHtml(row.slug)}">${escapeHtml(row.en)}</a></th>`,
-  af: `<td>${escapeHtml(row.af || '—')}</td>`,
-  latin: `<td><em>${escapeHtml(row.scientificName)}</em></td>`,
-  summer: `<td class="num">${escapeHtml(formatSeasonTotal(row.summer, format))}</td>`,
-  winter: `<td class="num">${escapeHtml(formatSeasonTotal(row.winter, format))}</td>`,
-  summerCount: `<td class="num">${escapeHtml(formatSeasonCount(row.summer, format))}</td>`,
-  winterCount: `<td class="num">${escapeHtml(formatSeasonCount(row.winter, format))}</td>`,
+  en: `<th scope="row"${sortAttr(textOf(row.en))}><a href="/family/${escapeHtml(row.slug)}">${escapeHtml(row.en)}</a></th>`,
+  af: `<td${sortAttr(textOf(row.af))}>${escapeHtml(row.af || '—')}</td>`,
+  latin: `<td${sortAttr(textOf(row.scientificName))}><em>${escapeHtml(row.scientificName)}</em></td>`,
+  summer: `<td class="num"${sortAttr(familySortValue(row, 'summer'))}>${escapeHtml(formatSeasonTotal(row.summer, format))}</td>`,
+  winter: `<td class="num"${sortAttr(familySortValue(row, 'winter'))}>${escapeHtml(formatSeasonTotal(row.winter, format))}</td>`,
+  summerCount: `<td class="num"${sortAttr(familySortValue(row, 'summerCount'))}>${escapeHtml(formatSeasonCount(row.summer, format))}</td>`,
+  winterCount: `<td class="num"${sortAttr(familySortValue(row, 'winterCount'))}>${escapeHtml(formatSeasonCount(row.winter, format))}</td>`,
 })
 
 const tableHtml = ({ caption, columns, rows, cells, path, active, empty }) => {
@@ -163,7 +158,7 @@ ${columns.map((column) => headerHtml(column, active, path)).join('\n')}
 ${ordered
   .map((row) => {
     const rendered = cells(row)
-    return `<tr>${columns.map((column) => rendered[column.id]).join('')}</tr>`
+    return `<tr data-latin="${escapeHtml(row.scientificName)}">${columns.map((column) => rendered[column.id]).join('')}</tr>`
   })
   .join('\n')}
 </tbody>

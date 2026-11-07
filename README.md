@@ -22,9 +22,9 @@ For each species, where it applies:
 
 ## House rules
 
-### Server-side rendering, no client JavaScript
+### Server-side rendering, optional JavaScript
 
-Every page is fully rendered on the server. Visitors never need JavaScript to read or navigate the site, because many AI agents still cannot handle JavaScript-heavy sites. We'll revisit this around late 2027 after surveying what agents can do by then.
+Every page is fully rendered on the server. Visitors can read, navigate, and sort with JavaScript off. A small same-origin script adds in-browser table sorting and photo zoom.
 
 ### One URL, three formats
 

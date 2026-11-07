@@ -59,6 +59,7 @@ export const parseUrl = (url) => {
     if (path === '/sitemap.xml') return route('sitemap', format, path)
     if (path === '/llms.txt') return route('llms', format, path)
     if (path === '/style.css') return route('style', format, path)
+    if (path === '/app.js') return route('script', format, path)
     if (path.startsWith('/images/')) return objectRoute('image', path, 'images')
     if (path.startsWith('/audio/')) return objectRoute('audio', path, 'audio')
   }

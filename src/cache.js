@@ -58,6 +58,7 @@ const formatsNumbers = (pathname) =>
   pathname !== '/sitemap.xml' &&
   pathname !== '/llms.txt' &&
   pathname !== '/style.css' &&
+  pathname !== '/app.js' &&
   pathname !== '/mcp/server-card'
 
 export const cacheRequest = (url, version, acceptLanguage) => {

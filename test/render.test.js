@@ -100,7 +100,11 @@ test('species HTML has the six comparisons, population, and no client script', a
   assert.doesNotMatch(html, /Sample content, to be verified/)
   assert.match(html, /rel="alternate" type="text\/markdown"/)
   assert.match(html, /rel="alternate" type="application\/json"/)
-  assert.doesNotMatch(html, /<script/i)
+  assert.match(
+    html,
+    /<script type="module" defer src="\/app\.js\?v=[0-9a-f]+"><\/script>/,
+  )
+  assert.doesNotMatch(html, /<script(?! type="module")/i)
   assert.doesNotMatch(html, /\sstyle=/)
   const headings = [...html.matchAll(/<h([1-6])\b/g)].map((match) =>
     Number(match[1]),
@@ -190,7 +194,11 @@ test('a family page shows the derived approximate total', async () => {
   )
   assert.match(html, /href="\/species\/coracias-caudatus"/)
   assert.match(html, /Gewone Troupant/)
-  assert.doesNotMatch(html, /<script/i)
+  assert.match(
+    html,
+    /<script type="module" defer src="\/app\.js\?v=[0-9a-f]+"><\/script>/,
+  )
+  assert.doesNotMatch(html, /<script(?! type="module")/i)
   const markdown = renderFamilyMarkdown(doc, [
     { doc: roller, imagesAvailable: {} },
   ])
@@ -343,7 +351,11 @@ test('a species stub states that details are unpublished and skips empty section
   assert.doesNotMatch(html, /Chick and juvenile/)
   assert.doesNotMatch(html, /No photograph is stored/)
   assert.doesNotMatch(html, /No visible difference/)
-  assert.doesNotMatch(html, /<script/i)
+  assert.match(
+    html,
+    /<script type="module" defer src="\/app\.js\?v=[0-9a-f]+"><\/script>/,
+  )
+  assert.doesNotMatch(html, /<script(?! type="module")/i)
   const headings = [...html.matchAll(/<h([1-6])\b/g)].map((match) =>
     Number(match[1]),
   )
@@ -480,7 +492,11 @@ test('the credits page names sources, taxonomy, and the site, and credits media 
     html,
     /rel="canonical" href="https:\/\/birds\.truter\.world\/credits"/,
   )
-  assert.doesNotMatch(html, /<script/i)
+  assert.match(
+    html,
+    /<script type="module" defer src="\/app\.js\?v=[0-9a-f]+"><\/script>/,
+  )
+  assert.doesNotMatch(html, /<script(?! type="module")/i)
   for (const name of [
     'Birda SABAP2 Kruger checklist',
     'BirdLife South Africa Checklist of Birds in South Africa 2026',

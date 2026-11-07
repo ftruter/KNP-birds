@@ -36,6 +36,7 @@ import {
   rowsForSpeciesIndex,
 } from './catalog.js'
 import { agentUrls } from './head.js'
+import { clientSrc } from './client.js'
 import { familyTableHtml, speciesTableHtml } from './lists.js'
 import { alternates } from './route.js'
 import { sitemapEntries } from './sitemap.js'
@@ -68,7 +69,7 @@ export const renderHomeHtml = ({
 <div class="hero">
 <div class="hero-copy">
 <h1>Birds of Kruger National Park</h1>
-<p>An open field guide to the birds of Kruger National Park and neighbouring Marloth Park. It is written for people and for AI agents. Pages are rendered on the server. Nothing here needs JavaScript.</p>
+<p>An open field guide to the birds of Kruger National Park and neighbouring Marloth Park. It is written for people and for AI agents. Pages are rendered on the server. JavaScript is optional: sorting and photo zoom still work from the links and the page when it is off.</p>
 ${agentHtml(origin)}
 <p>The full list is resident species, plus summer migrants. Rare vagrants are left out. ${escapeHtml(catalogSentence(species.length, families.length, speciesIndex, familiesIndex))}</p>
 </div>
@@ -564,15 +565,15 @@ const figures = (doc, images, imagesAvailable, colourMap) => {
           : ''
       const alt = imageAlt(doc, image)
       if (available)
-        return `<figure class="plate">
-<img src="${escapeHtml(objectPath('images', image.key))}" alt="${escapeHtml(alt)}" loading="lazy">
-<figcaption>${caption.html}</figcaption>
-</figure>`
+        return plateFigure(
+          `<img src="${escapeHtml(objectPath('images', image.key))}" alt="${escapeHtml(alt)}" loading="lazy">`,
+          caption.html,
+        )
       if (remote)
-        return `<figure class="plate">
-<img src="${escapeHtml(remote)}" alt="${escapeHtml(alt)}" loading="lazy">
-<figcaption>Not stored on this site yet. ${caption.html}</figcaption>
-</figure>`
+        return plateFigure(
+          `<img src="${escapeHtml(remote)}" alt="${escapeHtml(alt)}" loading="lazy">`,
+          `Not stored on this site yet. ${caption.html}`,
+        )
       return placeholder(
         `Photograph not in the store yet. ${caption.text}`,
         caption.html,
@@ -606,6 +607,13 @@ const imageCaption = (image) => {
     .join('. ')
   return { html, text }
 }
+
+const plateFigure = (image, caption) => `<figure class="plate">
+<button type="button" class="zoom" aria-pressed="false" aria-label="Zoom photograph">
+${image}
+</button>
+<figcaption>${caption}</figcaption>
+</figure>`
 
 const placeholder = (text, extraHtml = '') => `<figure class="plate">
 ${placeholderSvg()}
@@ -854,6 +862,7 @@ const layout = ({
 <link rel="alternate" type="application/json" href="${escapeHtml(alts.json)}" title="JSON">
 ${ARD_LINK}
 <link rel="stylesheet" href="/style.css">
+<script type="module" defer src="${clientSrc}"></script>
 </head>
 <body>
 <a class="skip" href="#main">Skip to content</a>

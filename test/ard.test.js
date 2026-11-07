@@ -156,7 +156,11 @@ test('HTML heads advertise rel=ard and not the predecessor relation', async () =
       new RegExp(ARD_LINK.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')),
     )
     assert.equal(body.includes('rel="ai-catalog"'), false, pathname)
-    assert.doesNotMatch(body, /<script/i)
+    assert.match(
+      body,
+      /<script type="module" defer src="\/app\.js\?v=[0-9a-f]+"><\/script>/,
+    )
+    assert.doesNotMatch(body, /<script(?! type="module")/i)
   }
 })
 
