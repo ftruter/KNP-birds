@@ -7,7 +7,6 @@ import {
   SAMPLE_NOTICE,
   afrikaansName,
   EMPTY_FAMILY_SPECIES,
-  EMPTY_INDEX,
   FAMILY_SPECIES_HEADING,
   catalogSentence,
   listIntro,
@@ -15,25 +14,28 @@ import {
   speciesDetailsPublished,
   UNPUBLISHED_SPECIES,
   FAMILY_TOTAL_INTRO,
-  familyIndexPopulationLine,
   familyLabel,
   familyTotalModel,
   HOME_POPULATION_INTRO,
   imageAlt,
-  indexPopulationLine,
   indexRows,
   licenceForbidsDerivatives,
   mediaSexLabel,
   monthsLabel,
   objectPath,
-  orderFamilySpecies,
   populationModel,
   sizeLabel,
   statusLabel,
   viewLabel,
 } from './guide.js'
 import { ARD_LINK } from './head.js'
+import {
+  rowsForFamilies,
+  rowsForFamily,
+  rowsForSpeciesIndex,
+} from './catalog.js'
 import { agentUrls } from './head.js'
+import { familyTableHtml, speciesTableHtml } from './lists.js'
 import { alternates } from './route.js'
 
 const NAV = [
@@ -44,7 +46,14 @@ const NAV = [
   ['agents', '/llms.txt', 'For agents'],
 ]
 
-export const renderHomeHtml = ({ origin, speciesIndex, familiesIndex }) => {
+export const renderHomeHtml = ({
+  origin,
+  speciesIndex,
+  familiesIndex,
+  catalog,
+  format,
+  query,
+}) => {
   const species = indexRows(speciesIndex)
   const families = indexRows(familiesIndex)
   const main = `
@@ -64,17 +73,22 @@ ${agentHtml(origin)}
 <p>Age, season and sex are worked out by comparing structured field marks. A mark left blank is unknown, not a claim that the part has no colour. Flight and perched views use notes and photographs. Where nothing differs, the page says so.</p>
 <p>${escapeHtml(HOME_POPULATION_INTRO)}</p>
 <h2>Species</h2>
-${linkList(
-  species,
-  (entry) => `/species/${entry.slug}`,
-  (entry) => `${englishName(entry)} (${entry.scientificName})`,
-)}
+${speciesTableHtml({
+  rows: rowsForSpeciesIndex(speciesIndex, catalog),
+  path: '/',
+  query,
+  format,
+  withFamily: true,
+  caption: 'Species',
+})}
 <h2>Families</h2>
-${linkList(
-  families,
-  (entry) => `/family/${entry.slug}`,
-  (entry) => `${englishName(entry)} (${entry.scientificName})`,
-)}
+${familyTableHtml({
+  rows: rowsForFamilies(familiesIndex, catalog),
+  path: '/',
+  query,
+  format,
+  caption: 'Families',
+})}
 <p><a href="/vocab/colours">Colour names</a> used in the field marks.</p>`
   return layout({
     title: 'Birds of Kruger National Park',
@@ -88,14 +102,25 @@ ${linkList(
   })
 }
 
-export const renderSpeciesIndexHtml = ({ origin, doc }) => {
+export const renderSpeciesIndexHtml = ({
+  origin,
+  doc,
+  catalog,
+  format,
+  query,
+}) => {
   const list = indexRows(doc)
   const main = `
 <h1>Species</h1>
 <p>${escapeHtml(listIntro(list.length, 'species', 'species'))}</p>
-<ul class="species-list">
-${list.map((entry) => `<li><a href="/species/${escapeHtml(entry.slug)}">${escapeHtml(englishName(entry))}</a> <em>${escapeHtml(entry.scientificName)}</em>${afrikaansName(entry) ? ` — ${escapeHtml(afrikaansName(entry))}` : ''} — ${escapeHtml(indexPopulationLine(entry.population, 'Approximate estimate'))}</li>`).join('\n')}
-</ul>`
+${speciesTableHtml({
+  rows: rowsForSpeciesIndex(doc, catalog),
+  path: '/species',
+  query,
+  format,
+  caption: 'Species',
+})}
+`
   return layout({
     title: 'Species · KNP Birds',
     description: 'Species published in this field guide.',
@@ -107,14 +132,25 @@ ${list.map((entry) => `<li><a href="/species/${escapeHtml(entry.slug)}">${escape
   })
 }
 
-export const renderFamiliesIndexHtml = ({ origin, doc }) => {
+export const renderFamiliesIndexHtml = ({
+  origin,
+  doc,
+  catalog,
+  format,
+  query,
+}) => {
   const list = indexRows(doc)
   const main = `
 <h1>Families</h1>
 <p>${escapeHtml(listIntro(list.length, 'family', 'families'))}</p>
-<ul class="species-list">
-${list.map((entry) => `<li><a href="/family/${escapeHtml(entry.slug)}">${escapeHtml(englishName(entry))}</a> <em>${escapeHtml(entry.scientificName)}</em>${afrikaansName(entry) ? ` — ${escapeHtml(afrikaansName(entry))}` : ''} — ${escapeHtml(familyIndexPopulationLine(entry.population))}</li>`).join('\n')}
-</ul>`
+${familyTableHtml({
+  rows: rowsForFamilies(doc, catalog),
+  path: '/families',
+  query,
+  format,
+  caption: 'Families',
+})}
+`
   return layout({
     title: 'Families · KNP Birds',
     description: 'Bird families published in this field guide.',
@@ -126,8 +162,14 @@ ${list.map((entry) => `<li><a href="/family/${escapeHtml(entry.slug)}">${escapeH
   })
 }
 
-export const renderFamilyHtml = ({ origin, doc, plates = [] }) => {
-  const species = orderFamilySpecies(doc.species, doc.iconicSpecies)
+export const renderFamilyHtml = ({
+  origin,
+  doc,
+  plates = [],
+  catalog,
+  format,
+  query,
+}) => {
   const main = `
 ${doc.sampleData ? sampleNotice() : ''}
 <p class="kicker">Family</p>
@@ -135,10 +177,18 @@ ${doc.sampleData ? sampleNotice() : ''}
 <p class="latin">${escapeHtml(doc.scientificName || '')}</p>
 ${afrikaansName(doc) ? `<p class="afrikaans">${escapeHtml(afrikaansName(doc))}</p>` : ''}
 ${paragraphs(doc.summary)}
-${familyPopulationHtml(doc.population)}
+${familyPopulationHtml(doc.population, format)}
 ${iconicHtml(plates)}
 <h2>${FAMILY_SPECIES_HEADING}</h2>
-${familySpeciesList(species)}`
+${speciesTableHtml({
+  rows: rowsForFamily(doc, catalog),
+  path: `/family/${doc.slug}`,
+  query,
+  format,
+  caption: FAMILY_SPECIES_HEADING,
+  empty: EMPTY_FAMILY_SPECIES,
+})}
+`
   return layout({
     title: `${englishName(doc)} · KNP Birds`,
     description: inlineText(doc.summary || englishName(doc)),
@@ -181,10 +231,11 @@ export const renderSpeciesHtml = ({
   doc,
   colourMap,
   imagesAvailable,
+  format,
 }) => {
   const published = speciesDetailsPublished(doc)
   const comparisons = published ? diffSpecies(doc) : []
-  const population = populationModel(doc.population)
+  const population = populationModel(doc.population, format)
   const images = Array.isArray(doc.images) ? doc.images : []
   const status = doc.status ? ` · ${escapeHtml(statusLabel(doc.status))}` : ''
   const main = `
@@ -383,13 +434,6 @@ const sourcesSection = (sources) => {
 ${sourcesHtml(list)}`
 }
 
-const familySpeciesList = (species) =>
-  species.length === 0
-    ? `<p>${escapeHtml(EMPTY_FAMILY_SPECIES)}</p>`
-    : `<ul class="species-list">
-${species.map((entry) => `<li><a href="/species/${escapeHtml(entry.slug)}">${escapeHtml(englishName(entry))}</a> <em>${escapeHtml(entry.scientificName || '')}</em>${afrikaansName(entry) ? ` — ${escapeHtml(afrikaansName(entry))}` : ''}</li>`).join('\n')}
-</ul>`
-
 const iconicHtml = (plates) =>
   !plates?.length
     ? ''
@@ -403,8 +447,8 @@ ${figures(plate.doc, Array.isArray(plate.doc.images) ? plate.doc.images : [], pl
   )
   .join('\n')}`
 
-const familyPopulationHtml = (population) => {
-  const model = familyTotalModel(population)
+const familyPopulationHtml = (population, format) => {
+  const model = familyTotalModel(population, format)
   const range = model.range
     ? `<p class="estimate-range">${escapeHtml(model.range)}</p>`
     : '<p class="estimate-range">No numeric total yet.</p>'
@@ -783,13 +827,6 @@ const paragraphs = (text) =>
     .join('\n')
 
 const entries = (doc) => (Array.isArray(doc?.entries) ? doc.entries : [])
-
-const linkList = (items, href, label) =>
-  items.length === 0
-    ? `<p>${escapeHtml(EMPTY_INDEX)}</p>`
-    : `<ul class="species-list">
-${items.map((item) => `<li><a href="${escapeHtml(href(item))}">${escapeHtml(label(item))}</a></li>`).join('\n')}
-</ul>`
 
 const crumbs = (items) => {
   const rest = (items ?? []).map((item) =>

@@ -244,9 +244,14 @@ a:hover { text-decoration-thickness: 2px; }
   letter-spacing: 0.02em;
 }
 
-.table-wrap { overflow-x: auto; }
+.table-wrap {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  margin: 1rem 0 0.4rem;
+}
 
 table { width: 100%; border-collapse: collapse; }
+table.species { min-width: 42rem; }
 th, td {
   text-align: left;
   vertical-align: top;
@@ -254,6 +259,15 @@ th, td {
   border-bottom: 1px solid var(--rule);
 }
 th { color: var(--heading); font-weight: 700; }
+th a { color: inherit; text-decoration-thickness: 1px; }
+td.num, th.num { text-align: right; white-space: nowrap; }
+.sort-mark { font-size: 0.75em; }
+caption, .season-note {
+  text-align: left;
+  color: var(--text);
+  font-size: 0.92rem;
+  margin: 0.35rem 0 0.8rem;
+}
 
 .plate {
   margin: 1.1rem 0 1.4rem;

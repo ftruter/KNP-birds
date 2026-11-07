@@ -28,13 +28,17 @@ import { objectExists, objectHttpResponse } from './objects.js'
 import { jsonBody, pageResponse, redirectResponse } from './respond.js'
 import { css } from './style.js'
 import { discoveryDocuments } from './ard.js'
+import { loadListCatalog, rowsForSpeciesIndex } from './catalog.js'
 import { HOME_POPULATION_INTRO } from './guide.js'
+import { numberFormatFor } from './numbers.js'
 import { CARD_MEDIA_TYPE } from './mcp.js'
 import { colourMapFromKv, readDocument } from './store.js'
 import { llmsTxt, robotsTxt, sitemapXml } from './static.js'
 
 export const renderRoute = async (request, env, route) => {
   const origin = new URL(request.url).origin
+  const numbers = numberFormatFor(request.headers.get('accept-language'))
+  const view = { origin, numbers, query: request.url }
   switch (route.kind) {
     case 'redirect':
       return redirectResponse(route.location, REDIRECT_CACHE)
@@ -64,14 +68,14 @@ export const renderRoute = async (request, env, route) => {
     case 'audio':
       return renderObject(env, route.objectKey)
     case 'home':
-      return renderHome(env, origin, route.format)
+      return renderHome(env, route.format, view)
     case 'species-index':
     case 'families-index':
     case 'species':
     case 'family':
     case 'vocab':
     case 'credits':
-      return renderDocument(env, origin, route)
+      return renderDocument(env, route, view)
     case 'not-found':
       return notFound(origin, route)
     default:
@@ -79,11 +83,13 @@ export const renderRoute = async (request, env, route) => {
   }
 }
 
-const renderHome = async (env, origin, format) => {
-  const [species, families] = await Promise.all([
+const renderHome = async (env, format, view) => {
+  const [species, families, catalog] = await Promise.all([
     readOptional(env.BIRDS_KV, 'index/species'),
     readOptional(env.BIRDS_KV, 'index/families'),
+    format === 'json' ? null : loadListCatalog(env.BIRDS_KV, env?.DATA_VERSION),
   ])
+  const { origin } = view
   if (format === 'json') {
     return jsonPage(
       {
@@ -99,31 +105,26 @@ const renderHome = async (env, origin, format) => {
       'home',
     )
   }
+  const shared = {
+    origin,
+    speciesIndex: species?.data,
+    familiesIndex: families?.data,
+    catalog,
+    format: view.numbers.integer,
+  }
   if (format === 'md') {
-    return mdPage(
-      renderHomeMarkdown({
-        origin,
-        speciesIndex: species?.data,
-        familiesIndex: families?.data,
-      }),
-      origin,
-      '/',
-      'home',
-    )
+    return mdPage(renderHomeMarkdown(shared), origin, '/', 'home')
   }
   return htmlPage(
-    renderHomeHtml({
-      origin,
-      speciesIndex: species?.data,
-      familiesIndex: families?.data,
-    }),
+    renderHomeHtml({ ...shared, query: view.query }),
     origin,
     '/',
     'home',
   )
 }
 
-const renderDocument = async (env, origin, route) => {
+const renderDocument = async (env, route, view) => {
+  const { origin } = view
   const doc = await readDocument(env.BIRDS_KV, route.kvKey)
   if (!doc) return notFound(origin, route)
   const tag = cacheTag(route, doc.data)
@@ -138,29 +139,70 @@ const renderDocument = async (env, origin, route) => {
     })
   }
   if (route.kind === 'species-index') {
+    const rows = rowsForSpeciesIndex(
+      doc.data,
+      await listCatalog(env, route.format),
+    )
     const body =
       route.format === 'md'
-        ? renderSpeciesIndexMarkdown(doc.data, origin)
-        : renderSpeciesIndexHtml({ origin, doc: doc.data })
+        ? renderSpeciesIndexMarkdown(
+            doc.data,
+            origin,
+            { species: rows },
+            view.numbers.integer,
+          )
+        : renderSpeciesIndexHtml({
+            origin,
+            doc: doc.data,
+            catalog: { species: rows },
+            format: view.numbers.integer,
+            query: view.query,
+          })
     return route.format === 'md'
       ? mdPage(body, origin, route.pathname, tag)
       : htmlPage(body, origin, route.pathname, tag)
   }
   if (route.kind === 'families-index') {
+    const catalog = await listCatalog(env, route.format)
     const body =
       route.format === 'md'
-        ? renderFamiliesIndexMarkdown(doc.data, origin)
-        : renderFamiliesIndexHtml({ origin, doc: doc.data })
+        ? renderFamiliesIndexMarkdown(
+            doc.data,
+            origin,
+            catalog,
+            view.numbers.integer,
+          )
+        : renderFamiliesIndexHtml({
+            origin,
+            doc: doc.data,
+            catalog,
+            format: view.numbers.integer,
+            query: view.query,
+          })
     return route.format === 'md'
       ? mdPage(body, origin, route.pathname, tag)
       : htmlPage(body, origin, route.pathname, tag)
   }
   if (route.kind === 'family') {
     const plates = await iconicPlates(env, doc.data, route.format)
+    const catalog = await listCatalog(env, route.format)
     const body =
       route.format === 'md'
-        ? renderFamilyMarkdown(doc.data, plates, origin)
-        : renderFamilyHtml({ origin, doc: doc.data, plates })
+        ? renderFamilyMarkdown(
+            doc.data,
+            plates,
+            origin,
+            catalog,
+            view.numbers.integer,
+          )
+        : renderFamilyHtml({
+            origin,
+            doc: doc.data,
+            plates,
+            catalog,
+            format: view.numbers.integer,
+            query: view.query,
+          })
     return route.format === 'md'
       ? mdPage(body, origin, route.pathname, tag)
       : htmlPage(body, origin, route.pathname, tag)
@@ -191,8 +233,19 @@ const renderDocument = async (env, origin, route) => {
   ])
   const body =
     route.format === 'md'
-      ? renderSpeciesMarkdown({ doc: doc.data, colourMap, origin })
-      : renderSpeciesHtml({ origin, doc: doc.data, colourMap, imagesAvailable })
+      ? renderSpeciesMarkdown({
+          doc: doc.data,
+          colourMap,
+          origin,
+          format: view.numbers.integer,
+        })
+      : renderSpeciesHtml({
+          origin,
+          doc: doc.data,
+          colourMap,
+          imagesAvailable,
+          format: view.numbers.integer,
+        })
   return route.format === 'md'
     ? mdPage(body, origin, route.pathname, tag)
     : htmlPage(body, origin, route.pathname, tag)
@@ -327,6 +380,7 @@ const htmlPage = (body, origin, path, cacheTag) =>
     path,
     origin,
     cacheTag,
+    vary: 'Accept-Language',
   })
 
 const mdPage = (body, origin, path, cacheTag) =>
@@ -337,7 +391,13 @@ const mdPage = (body, origin, path, cacheTag) =>
     path,
     origin,
     cacheTag,
+    vary: 'Accept-Language',
   })
+
+const listCatalog = (env, format) =>
+  format === 'json'
+    ? Promise.resolve(null)
+    : loadListCatalog(env.BIRDS_KV, env?.DATA_VERSION)
 
 const jsonPage = (value, origin, path, cacheTag) =>
   pageResponse({
