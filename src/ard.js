@@ -111,6 +111,20 @@ export const discoveryDocuments = ({
       tags: ['kruger', 'birds', 'search', 'mcp'],
     }),
     entry({
+      identifier: 'guide:sitemap',
+      displayName: 'Field guide sitemap',
+      type: 'application/json',
+      url: `${origin}/sitemap.json`,
+      description:
+        'Nested list of every page in the Kruger field guide: home, this sitemap, colours, families with their species, the species index, and credits.',
+      capabilities: ['Sitemap', 'FamilyIndex', 'SpeciesIndex'],
+      representativeQueries: [
+        'Which pages does this field guide publish?',
+        'Which species are in a Kruger bird family?',
+      ],
+      tags: ['kruger', 'birds', 'sitemap'],
+    }),
+    entry({
       identifier: 'guide:home',
       displayName: 'Kruger bird list',
       type: 'application/json',

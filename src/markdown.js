@@ -38,6 +38,7 @@ import {
 import { agentNote } from './head.js'
 import { familyTableMarkdown, speciesTableMarkdown } from './lists.js'
 import { alternates } from './route.js'
+import { sitemapEntries } from './sitemap.js'
 
 export const renderHomeMarkdown = ({
   origin,
@@ -508,6 +509,30 @@ ${inlineText(site.affiliation || '')}
 
 ${inlineText(site.media || '')}`
 }
+
+const sitemapMarkdown = (node, depth) => {
+  const latin = node.latin ? ` (*${node.latin}*)` : ''
+  const line = `${'  '.repeat(depth)}- [${node.name}](${node.href})${latin}`
+  const children = node.children?.length
+    ? `\n${node.children.map((child) => sitemapMarkdown(child, depth + 1)).join('\n')}`
+    : ''
+  return `${line}${children}`
+}
+
+export const renderSitemapMarkdown = ({ origin, tree }) =>
+  pageMd({
+    origin,
+    path: '/sitemap',
+    title: 'Sitemap',
+    sample: false,
+    body: `Every page in this field guide. Families are alphabetical by English name, and the birds in a family follow it in the same order. The species list is every bird, alphabetical by English name.
+
+${sitemapEntries(tree)
+  .map((entry) => sitemapMarkdown(entry, 0))
+  .join('\n')}
+
+Machine-readable list: [sitemap.xml](/sitemap.xml).`,
+  })
 
 export const renderCreditsMarkdown = (doc, origin) => {
   const sources = listed(doc?.dataSources)

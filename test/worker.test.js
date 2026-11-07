@@ -274,7 +274,7 @@ test('sitemap lists species, families, and the colour vocabulary', async () => {
   )
   assert.match(
     xml,
-    /https:\/\/birds\.truter\.world\/species\/coracias-caudatus</,
+    /<loc>https:\/\/birds\.truter\.world\/species\/coracias-caudatus<\/loc>/,
   )
   assert.match(xml, /\/family\/bucorvidae</)
   assert.match(xml, /\/vocab\/colours</)

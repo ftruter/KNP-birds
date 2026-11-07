@@ -64,6 +64,7 @@ export const parseUrl = (url) => {
   }
 
   if (path === '/') return route('home', format, '/')
+  if (path === '/sitemap') return route('sitemap-page', format, path)
   if (path === '/species')
     return { ...route('species-index', format, path), kvKey: 'index/species' }
   if (path === '/families')
