@@ -32,6 +32,7 @@ import { loadListCatalog, rowsForSpeciesIndex } from './catalog.js'
 import { HOME_POPULATION_INTRO } from './guide.js'
 import { numberFormatFor } from './numbers.js'
 import { CARD_MEDIA_TYPE } from './mcp.js'
+import { applyRecordingOverlay } from './recordings.js'
 import { colourMapFromKv, readDocument } from './store.js'
 import { llmsTxt, robotsTxt, sitemapXml } from './static.js'
 
@@ -127,10 +128,18 @@ const renderDocument = async (env, route, view) => {
   const { origin } = view
   const doc = await readDocument(env.BIRDS_KV, route.kvKey)
   if (!doc) return notFound(origin, route)
+  const data =
+    route.kind === 'species' ? applyRecordingOverlay(doc.data) : doc.data
   const tag = cacheTag(route, doc.data)
   if (route.format === 'json') {
+    const body =
+      data === doc.data
+        ? doc.text.endsWith('\n')
+          ? doc.text
+          : `${doc.text}\n`
+        : `${JSON.stringify(data, null, 2)}\n`
     return pageResponse({
-      body: doc.text.endsWith('\n') ? doc.text : `${doc.text}\n`,
+      body,
       contentType: 'application/json; charset=utf-8',
       cache: PAGE_CACHE,
       path: route.pathname,
@@ -228,20 +237,20 @@ const renderDocument = async (env, route, view) => {
   const [colourMap, imagesAvailable] = await Promise.all([
     colourMapFromKv(env.BIRDS_KV),
     route.format === 'html'
-      ? availability(env.IMAGES, doc.data.images)
+      ? availability(env.IMAGES, data.images)
       : Promise.resolve({}),
   ])
   const body =
     route.format === 'md'
       ? renderSpeciesMarkdown({
-          doc: doc.data,
+          doc: data,
           colourMap,
           origin,
           format: view.numbers.integer,
         })
       : renderSpeciesHtml({
           origin,
-          doc: doc.data,
+          doc: data,
           colourMap,
           imagesAvailable,
           format: view.numbers.integer,

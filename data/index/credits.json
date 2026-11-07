@@ -126,6 +126,7 @@
           "sourceUrl": "https://xeno-canto.org/613465",
           "aiGenerated": false,
           "hosted": false,
+          "quality": "A",
           "callType": "call"
         },
         {
@@ -136,6 +137,7 @@
           "sourceUrl": "https://xeno-canto.org/686715",
           "aiGenerated": false,
           "hosted": false,
+          "quality": "B",
           "callType": "call"
         },
         {
@@ -146,6 +148,7 @@
           "sourceUrl": "https://xeno-canto.org/400368",
           "aiGenerated": false,
           "hosted": false,
+          "quality": "B",
           "callType": "call"
         }
       ],
@@ -356,6 +359,7 @@
           "sourceUrl": "https://xeno-canto.org/1137538",
           "aiGenerated": false,
           "hosted": false,
+          "quality": "A",
           "callType": "call"
         },
         {
@@ -366,6 +370,7 @@
           "sourceUrl": "https://xeno-canto.org/1148697",
           "aiGenerated": false,
           "hosted": false,
+          "quality": "A",
           "callType": "call"
         },
         {
@@ -376,6 +381,7 @@
           "sourceUrl": "https://xeno-canto.org/1148407",
           "aiGenerated": false,
           "hosted": false,
+          "quality": "A",
           "callType": "call"
         }
       ],
@@ -489,23 +495,14 @@
       ],
       "recordings": [
         {
-          "key": "xeno-canto/XC305474",
-          "author": "Tim Cockcroft",
+          "key": "xeno-canto/XC1102306",
+          "author": "Magnus Wadstein",
           "licence": "CC BY-NC-SA 4.0",
           "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
-          "sourceUrl": "https://xeno-canto.org/305474",
+          "sourceUrl": "https://xeno-canto.org/1102306",
           "aiGenerated": false,
           "hosted": false,
-          "callType": "call"
-        },
-        {
-          "key": "xeno-canto/XC645316",
-          "author": "Tim Cockcroft",
-          "licence": "CC BY-NC-SA 4.0",
-          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
-          "sourceUrl": "https://xeno-canto.org/645316",
-          "aiGenerated": false,
-          "hosted": false,
+          "quality": "A",
           "callType": "call"
         }
       ],
@@ -1076,6 +1073,7 @@
           "sourceUrl": "https://xeno-canto.org/1174915",
           "aiGenerated": false,
           "hosted": false,
+          "quality": "A",
           "callType": "call"
         },
         {
@@ -1086,6 +1084,7 @@
           "sourceUrl": "https://xeno-canto.org/1174914",
           "aiGenerated": false,
           "hosted": false,
+          "quality": "A",
           "callType": "call"
         }
       ],
@@ -1193,13 +1192,14 @@
       ],
       "recordings": [
         {
-          "key": "xeno-canto/XC459459",
-          "author": "Raphaël Nussbaumer",
+          "key": "xeno-canto/XC1044220",
+          "author": "Oliver Fowler",
           "licence": "CC BY-NC-SA 4.0",
           "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
-          "sourceUrl": "https://xeno-canto.org/459459",
+          "sourceUrl": "https://xeno-canto.org/1044220",
           "aiGenerated": false,
           "hosted": false,
+          "quality": "A",
           "callType": "call"
         }
       ],
@@ -1323,6 +1323,7 @@
           "sourceUrl": "https://xeno-canto.org/194777",
           "aiGenerated": false,
           "hosted": false,
+          "quality": "B",
           "callType": "call"
         },
         {
@@ -1333,6 +1334,7 @@
           "sourceUrl": "https://xeno-canto.org/194771",
           "aiGenerated": false,
           "hosted": false,
+          "quality": "C",
           "callType": "call"
         },
         {
@@ -1343,6 +1345,7 @@
           "sourceUrl": "https://xeno-canto.org/267752",
           "aiGenerated": false,
           "hosted": false,
+          "quality": "A",
           "callType": "call"
         }
       ],
@@ -1423,33 +1426,14 @@
       ],
       "recordings": [
         {
-          "key": "xeno-canto/XC519736",
-          "author": "Alan Collett",
-          "licence": "CC BY-NC-SA 4.0",
-          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
-          "sourceUrl": "https://xeno-canto.org/519736",
+          "key": "xeno-canto/XC392307",
+          "author": "Peter Boesman",
+          "licence": "CC BY-NC-ND 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-nd/4.0/",
+          "sourceUrl": "https://xeno-canto.org/392307",
           "aiGenerated": false,
           "hosted": false,
-          "callType": "call"
-        },
-        {
-          "key": "xeno-canto/XC428788",
-          "author": "Alan Collett",
-          "licence": "CC BY-NC-SA 4.0",
-          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
-          "sourceUrl": "https://xeno-canto.org/428788",
-          "aiGenerated": false,
-          "hosted": false,
-          "callType": "call"
-        },
-        {
-          "key": "xeno-canto/XC192183",
-          "author": "Alan Collett",
-          "licence": "CC BY-NC-SA 4.0",
-          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
-          "sourceUrl": "https://xeno-canto.org/192183",
-          "aiGenerated": false,
-          "hosted": false,
+          "quality": "B",
           "callType": "call"
         }
       ],
@@ -1675,6 +1659,7 @@
           "sourceUrl": "https://xeno-canto.org/950482",
           "aiGenerated": false,
           "hosted": false,
+          "quality": "A",
           "callType": "call"
         },
         {
@@ -1685,6 +1670,7 @@
           "sourceUrl": "https://xeno-canto.org/695163",
           "aiGenerated": false,
           "hosted": false,
+          "quality": "A",
           "callType": "call"
         },
         {
@@ -1695,6 +1681,7 @@
           "sourceUrl": "https://xeno-canto.org/1184194",
           "aiGenerated": false,
           "hosted": false,
+          "quality": "B",
           "callType": "call"
         }
       ],
@@ -1793,13 +1780,14 @@
       ],
       "recordings": [
         {
-          "key": "xeno-canto/XC449481",
-          "author": "Murray Christian",
+          "key": "xeno-canto/XC788596",
+          "author": "Alain Verneau",
           "licence": "CC BY-NC-SA 4.0",
           "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
-          "sourceUrl": "https://xeno-canto.org/449481",
+          "sourceUrl": "https://xeno-canto.org/788596",
           "aiGenerated": false,
           "hosted": false,
+          "quality": "A",
           "callType": "call"
         }
       ],
@@ -2009,7 +1997,19 @@
       "scientificName": "Bucorvus leadbeateri",
       "commonName": "Southern Ground-Hornbill",
       "images": [],
-      "recordings": [],
+      "recordings": [
+        {
+          "key": "xeno-canto/XC1149598",
+          "author": "African Bioacoustics Community",
+          "licence": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "sourceUrl": "https://xeno-canto.org/1149598",
+          "aiGenerated": false,
+          "hosted": false,
+          "quality": "A",
+          "callType": "call"
+        }
+      ],
       "sources": [
         {
           "title": "SANParks Scientific Services (2023). The thunderbird is trending thanks to citizen science.",
@@ -2147,23 +2147,14 @@
       ],
       "recordings": [
         {
-          "key": "xeno-canto/XC1039689",
-          "author": "African Bioacoustics Community",
-          "licence": "CC BY-NC-SA 4.0",
-          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
-          "sourceUrl": "https://xeno-canto.org/1039689",
+          "key": "xeno-canto/XC151184",
+          "author": "Jarek Matusiak",
+          "licence": "CC BY-NC-SA 3.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/3.0/",
+          "sourceUrl": "https://xeno-canto.org/151184",
           "aiGenerated": false,
           "hosted": false,
-          "callType": "call"
-        },
-        {
-          "key": "xeno-canto/XC526851",
-          "author": "Stanislav Novotny",
-          "licence": "CC BY-NC-SA 4.0",
-          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
-          "sourceUrl": "https://xeno-canto.org/526851",
-          "aiGenerated": false,
-          "hosted": false,
+          "quality": "A",
           "callType": "call"
         }
       ],
@@ -2263,6 +2254,7 @@
           "sourceUrl": "https://xeno-canto.org/1090801",
           "aiGenerated": false,
           "hosted": false,
+          "quality": "A",
           "callType": "call"
         },
         {
@@ -2273,6 +2265,7 @@
           "sourceUrl": "https://xeno-canto.org/397385",
           "aiGenerated": false,
           "hosted": false,
+          "quality": "C",
           "callType": "call"
         }
       ],
@@ -2351,6 +2344,7 @@
           "sourceUrl": "https://xeno-canto.org/289313",
           "aiGenerated": false,
           "hosted": false,
+          "quality": "B",
           "callType": "call"
         },
         {
@@ -2361,6 +2355,7 @@
           "sourceUrl": "https://xeno-canto.org/289315",
           "aiGenerated": false,
           "hosted": false,
+          "quality": "B",
           "callType": "call"
         },
         {
@@ -2371,6 +2366,7 @@
           "sourceUrl": "https://xeno-canto.org/289314",
           "aiGenerated": false,
           "hosted": false,
+          "quality": "B",
           "callType": "call"
         }
       ],
@@ -2962,6 +2958,7 @@
           "sourceUrl": "https://xeno-canto.org/1148067",
           "aiGenerated": false,
           "hosted": false,
+          "quality": "A",
           "callType": "call"
         },
         {
@@ -2972,6 +2969,7 @@
           "sourceUrl": "https://xeno-canto.org/638453",
           "aiGenerated": false,
           "hosted": false,
+          "quality": "A",
           "callType": "call"
         },
         {
@@ -2982,6 +2980,7 @@
           "sourceUrl": "https://xeno-canto.org/834484",
           "aiGenerated": false,
           "hosted": false,
+          "quality": "A",
           "callType": "call"
         }
       ],
@@ -3441,6 +3440,7 @@
           "sourceUrl": "https://xeno-canto.org/863207",
           "aiGenerated": false,
           "hosted": false,
+          "quality": "A",
           "callType": "call"
         }
       ],
@@ -3519,7 +3519,19 @@
           "hosted": false
         }
       ],
-      "recordings": [],
+      "recordings": [
+        {
+          "key": "xeno-canto/XC57552",
+          "author": "Toon Spanhove",
+          "licence": "CC BY-NC-ND 2.5",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-nd/2.5/",
+          "sourceUrl": "https://xeno-canto.org/57552",
+          "aiGenerated": false,
+          "hosted": false,
+          "quality": "A",
+          "callType": "call"
+        }
+      ],
       "sources": [
         {
           "title": "Kemp A.C., Herholdt J.J., Whyte I. & Harrison J. (2001). Birds of the two largest national parks in South Africa: a method to generate estimates of population size for all species and assess their conservation ecology. S. Afr. J. Sci. 97: 393–403.",
@@ -3622,6 +3634,7 @@
           "sourceUrl": "https://xeno-canto.org/549572",
           "aiGenerated": false,
           "hosted": false,
+          "quality": "A",
           "callType": "call"
         },
         {
@@ -3632,6 +3645,7 @@
           "sourceUrl": "https://xeno-canto.org/571877",
           "aiGenerated": false,
           "hosted": false,
+          "quality": "A",
           "callType": "call"
         }
       ],
@@ -3737,6 +3751,7 @@
           "sourceUrl": "https://xeno-canto.org/1152357",
           "aiGenerated": false,
           "hosted": false,
+          "quality": "A",
           "callType": "call"
         },
         {
@@ -3747,6 +3762,7 @@
           "sourceUrl": "https://xeno-canto.org/1152382",
           "aiGenerated": false,
           "hosted": false,
+          "quality": "A",
           "callType": "call"
         }
       ],
@@ -3843,7 +3859,19 @@
           "hosted": false
         }
       ],
-      "recordings": [],
+      "recordings": [
+        {
+          "key": "xeno-canto/XC433948",
+          "author": "Lynette Rudman",
+          "licence": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "sourceUrl": "https://xeno-canto.org/433948",
+          "aiGenerated": false,
+          "hosted": false,
+          "quality": "B",
+          "callType": "call"
+        }
+      ],
       "sources": [
         {
           "title": "Kemp A.C., Herholdt J.J., Whyte I. & Harrison J. (2001). Birds of the two largest national parks in South Africa: a method to generate estimates of population size for all species and assess their conservation ecology. S. Afr. J. Sci. 97: 393–403.",
@@ -4102,6 +4130,7 @@
           "sourceUrl": "https://xeno-canto.org/1028980",
           "aiGenerated": false,
           "hosted": false,
+          "quality": "A",
           "callType": "call"
         },
         {
@@ -4112,6 +4141,7 @@
           "sourceUrl": "https://xeno-canto.org/825782",
           "aiGenerated": false,
           "hosted": false,
+          "quality": "A",
           "callType": "call"
         }
       ],
@@ -4292,7 +4322,19 @@
           "sourceUrl": "https://xeno-canto.org/949678",
           "aiGenerated": false,
           "hosted": false,
+          "quality": "A",
           "callType": "call"
+        },
+        {
+          "key": "xeno-canto/XC756688",
+          "author": "Derek Solomon",
+          "licence": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "sourceUrl": "https://xeno-canto.org/756688",
+          "aiGenerated": false,
+          "hosted": false,
+          "quality": "A",
+          "callType": "other"
         }
       ],
       "sources": [
@@ -4378,14 +4420,26 @@
       ],
       "recordings": [
         {
-          "key": "xeno-canto/XC634335",
-          "author": "paulo kivuyo",
-          "licence": "CC BY-SA 4.0",
-          "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
-          "sourceUrl": "https://xeno-canto.org/634335",
+          "key": "xeno-canto/XC113065",
+          "author": "vir joshi",
+          "licence": "CC BY-NC-SA 3.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/3.0/",
+          "sourceUrl": "https://xeno-canto.org/113065",
           "aiGenerated": false,
           "hosted": false,
+          "quality": "A",
           "callType": "call"
+        },
+        {
+          "key": "xeno-canto/XC805546",
+          "author": "Stanislas Wroza",
+          "licence": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "sourceUrl": "https://xeno-canto.org/805546",
+          "aiGenerated": false,
+          "hosted": false,
+          "quality": "A",
+          "callType": "alarm"
         }
       ],
       "sources": [
@@ -4487,7 +4541,19 @@
           "sourceUrl": "https://xeno-canto.org/715786",
           "aiGenerated": false,
           "hosted": false,
+          "quality": "A",
           "callType": "call"
+        },
+        {
+          "key": "xeno-canto/XC715786",
+          "author": "Tony Archer",
+          "licence": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "sourceUrl": "https://xeno-canto.org/715786",
+          "aiGenerated": false,
+          "hosted": false,
+          "quality": "A",
+          "callType": "other"
         }
       ],
       "sources": [
@@ -4561,13 +4627,14 @@
       ],
       "recordings": [
         {
-          "key": "xeno-canto/XC660428",
-          "author": "Stephen Lowe",
-          "licence": "CC BY-SA 4.0",
-          "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
-          "sourceUrl": "https://xeno-canto.org/660428",
+          "key": "xeno-canto/XC854401",
+          "author": "Dries Van de Loock",
+          "licence": "CC BY-NC-ND 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-nd/4.0/",
+          "sourceUrl": "https://xeno-canto.org/854401",
           "aiGenerated": false,
           "hosted": false,
+          "quality": "A",
           "callType": "call"
         }
       ],
@@ -4745,6 +4812,7 @@
           "sourceUrl": "https://xeno-canto.org/369825",
           "aiGenerated": false,
           "hosted": false,
+          "quality": "A",
           "callType": "call"
         },
         {
@@ -5283,6 +5351,7 @@
           "sourceUrl": "https://xeno-canto.org/1087114",
           "aiGenerated": false,
           "hosted": false,
+          "quality": "A",
           "callType": "call"
         },
         {
@@ -5293,6 +5362,7 @@
           "sourceUrl": "https://xeno-canto.org/1059222",
           "aiGenerated": false,
           "hosted": false,
+          "quality": "A",
           "callType": "call"
         },
         {
@@ -5303,6 +5373,7 @@
           "sourceUrl": "https://xeno-canto.org/1081037",
           "aiGenerated": false,
           "hosted": false,
+          "quality": "B",
           "callType": "call"
         }
       ],
@@ -5627,6 +5698,7 @@
           "sourceUrl": "https://xeno-canto.org/745582",
           "aiGenerated": false,
           "hosted": false,
+          "quality": "A",
           "callType": "call"
         }
       ],
@@ -6007,13 +6079,14 @@
       ],
       "recordings": [
         {
-          "key": "xeno-canto/XC613298",
-          "author": "Rod Cassidy",
+          "key": "xeno-canto/XC620855",
+          "author": "Louis A. Hansen",
           "licence": "CC BY-NC-SA 4.0",
           "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
-          "sourceUrl": "https://xeno-canto.org/613298",
+          "sourceUrl": "https://xeno-canto.org/620855",
           "aiGenerated": false,
           "hosted": false,
+          "quality": "B",
           "callType": "call"
         }
       ],
@@ -6137,6 +6210,7 @@
           "sourceUrl": "https://xeno-canto.org/978231",
           "aiGenerated": false,
           "hosted": false,
+          "quality": "A",
           "callType": "call"
         },
         {
@@ -6147,6 +6221,7 @@
           "sourceUrl": "https://xeno-canto.org/661236",
           "aiGenerated": false,
           "hosted": false,
+          "quality": "A",
           "callType": "call"
         }
       ],
@@ -6261,6 +6336,7 @@
           "sourceUrl": "https://xeno-canto.org/369789",
           "aiGenerated": false,
           "hosted": false,
+          "quality": "C",
           "callType": "call"
         }
       ],
@@ -6378,6 +6454,7 @@
           "sourceUrl": "https://xeno-canto.org/1137527",
           "aiGenerated": false,
           "hosted": false,
+          "quality": "A",
           "callType": "call"
         },
         {
@@ -6388,6 +6465,7 @@
           "sourceUrl": "https://xeno-canto.org/382948",
           "aiGenerated": false,
           "hosted": false,
+          "quality": "A",
           "callType": "call"
         },
         {
@@ -6408,6 +6486,7 @@
           "sourceUrl": "https://xeno-canto.org/1141626",
           "aiGenerated": false,
           "hosted": false,
+          "quality": "A",
           "callType": "song"
         },
         {
@@ -6418,6 +6497,7 @@
           "sourceUrl": "https://xeno-canto.org/952485",
           "aiGenerated": false,
           "hosted": false,
+          "quality": "A",
           "callType": "song"
         }
       ],
@@ -6520,6 +6600,7 @@
           "sourceUrl": "https://xeno-canto.org/501576",
           "aiGenerated": false,
           "hosted": false,
+          "quality": "C",
           "callType": "song"
         },
         {
@@ -6530,6 +6611,7 @@
           "sourceUrl": "https://xeno-canto.org/462092",
           "aiGenerated": false,
           "hosted": false,
+          "quality": "A",
           "callType": "song"
         },
         {
@@ -6540,6 +6622,7 @@
           "sourceUrl": "https://xeno-canto.org/960871",
           "aiGenerated": false,
           "hosted": false,
+          "quality": "A",
           "callType": "song"
         },
         {
@@ -6550,6 +6633,7 @@
           "sourceUrl": "https://xeno-canto.org/628100",
           "aiGenerated": false,
           "hosted": false,
+          "quality": "C",
           "callType": "song"
         }
       ],
@@ -6643,6 +6727,7 @@
           "sourceUrl": "https://xeno-canto.org/697680",
           "aiGenerated": false,
           "hosted": false,
+          "quality": "A",
           "callType": "call"
         },
         {
@@ -6653,6 +6738,7 @@
           "sourceUrl": "https://xeno-canto.org/591625",
           "aiGenerated": false,
           "hosted": false,
+          "quality": "A",
           "callType": "call"
         }
       ],
@@ -6773,6 +6859,7 @@
           "sourceUrl": "https://xeno-canto.org/780264",
           "aiGenerated": false,
           "hosted": false,
+          "quality": "A",
           "callType": "song"
         },
         {
@@ -6783,6 +6870,7 @@
           "sourceUrl": "https://xeno-canto.org/1080056",
           "aiGenerated": false,
           "hosted": false,
+          "quality": "A",
           "callType": "song"
         },
         {
@@ -6793,16 +6881,18 @@
           "sourceUrl": "https://xeno-canto.org/368169",
           "aiGenerated": false,
           "hosted": false,
+          "quality": "A",
           "callType": "song"
         },
         {
-          "key": "xeno-canto/XC213653",
-          "author": "Tom Wulf",
-          "licence": "CC BY-NC-SA 4.0",
-          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
-          "sourceUrl": "https://xeno-canto.org/213653",
+          "key": "xeno-canto/XC28682",
+          "author": "Patrik Åberg",
+          "licence": "CC BY-NC-SA 3.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/3.0/",
+          "sourceUrl": "https://xeno-canto.org/28682",
           "aiGenerated": false,
           "hosted": false,
+          "quality": "A",
           "callType": "alarm"
         }
       ],
@@ -6901,33 +6991,14 @@
       ],
       "recordings": [
         {
-          "key": "xeno-canto/XC437622",
-          "author": "Murray Christian",
+          "key": "xeno-canto/XC176712",
+          "author": "Manuel Schweizer",
           "licence": "CC BY-NC-SA 4.0",
           "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
-          "sourceUrl": "https://xeno-canto.org/437622",
+          "sourceUrl": "https://xeno-canto.org/176712",
           "aiGenerated": false,
           "hosted": false,
-          "callType": "call"
-        },
-        {
-          "key": "xeno-canto/XC351821",
-          "author": "Alan Collett",
-          "licence": "CC BY-NC-SA 4.0",
-          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
-          "sourceUrl": "https://xeno-canto.org/351821",
-          "aiGenerated": false,
-          "hosted": false,
-          "callType": "call"
-        },
-        {
-          "key": "xeno-canto/XC301874",
-          "author": "Alan Collett",
-          "licence": "CC BY-NC-SA 4.0",
-          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
-          "sourceUrl": "https://xeno-canto.org/301874",
-          "aiGenerated": false,
-          "hosted": false,
+          "quality": "A",
           "callType": "call"
         }
       ],
@@ -7027,6 +7098,7 @@
           "sourceUrl": "https://xeno-canto.org/881394",
           "aiGenerated": false,
           "hosted": false,
+          "quality": "B",
           "callType": "call"
         },
         {
@@ -7037,6 +7109,7 @@
           "sourceUrl": "https://xeno-canto.org/352650",
           "aiGenerated": false,
           "hosted": false,
+          "quality": "B",
           "callType": "call"
         }
       ],
@@ -7256,6 +7329,7 @@
           "sourceUrl": "https://xeno-canto.org/1149038",
           "aiGenerated": false,
           "hosted": false,
+          "quality": "B",
           "callType": "call"
         },
         {
@@ -7266,6 +7340,7 @@
           "sourceUrl": "https://xeno-canto.org/1149045",
           "aiGenerated": false,
           "hosted": false,
+          "quality": "B",
           "callType": "call"
         },
         {
@@ -7276,6 +7351,7 @@
           "sourceUrl": "https://xeno-canto.org/1144970",
           "aiGenerated": false,
           "hosted": false,
+          "quality": "C",
           "callType": "call"
         }
       ],
@@ -7392,33 +7468,36 @@
       ],
       "recordings": [
         {
-          "key": "xeno-canto/XC438156",
-          "author": "Tim Cockcroft",
+          "key": "xeno-canto/XC209955",
+          "author": "Andrew Spencer",
           "licence": "CC BY-NC-SA 4.0",
           "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
-          "sourceUrl": "https://xeno-canto.org/438156",
+          "sourceUrl": "https://xeno-canto.org/209955",
           "aiGenerated": false,
           "hosted": false,
+          "quality": "A",
           "callType": "call"
         },
         {
-          "key": "xeno-canto/XC453305",
-          "author": "Ehren Eksteen",
+          "key": "xeno-canto/XC1105394",
+          "author": "Jonathan Onongo",
           "licence": "CC BY-NC-SA 4.0",
           "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
-          "sourceUrl": "https://xeno-canto.org/453305",
+          "sourceUrl": "https://xeno-canto.org/1105394",
           "aiGenerated": false,
           "hosted": false,
+          "quality": "A",
           "callType": "song"
         },
         {
-          "key": "xeno-canto/XC998136",
-          "author": "Bram Piot",
+          "key": "xeno-canto/XC209956",
+          "author": "Andrew Spencer",
           "licence": "CC BY-NC-SA 4.0",
           "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
-          "sourceUrl": "https://xeno-canto.org/998136",
+          "sourceUrl": "https://xeno-canto.org/209956",
           "aiGenerated": false,
           "hosted": false,
+          "quality": "A",
           "callType": "other"
         }
       ],
@@ -7545,6 +7624,7 @@
           "sourceUrl": "https://xeno-canto.org/1165785",
           "aiGenerated": false,
           "hosted": false,
+          "quality": "C",
           "callType": "call"
         },
         {
@@ -7555,6 +7635,7 @@
           "sourceUrl": "https://xeno-canto.org/1165786",
           "aiGenerated": false,
           "hosted": false,
+          "quality": "C",
           "callType": "call"
         },
         {
@@ -7565,6 +7646,7 @@
           "sourceUrl": "https://xeno-canto.org/975911",
           "aiGenerated": false,
           "hosted": false,
+          "quality": "A",
           "callType": "call"
         }
       ],
@@ -7892,6 +7974,7 @@
           "sourceUrl": "https://xeno-canto.org/910891",
           "aiGenerated": false,
           "hosted": false,
+          "quality": "B",
           "callType": "call"
         },
         {
@@ -7902,6 +7985,7 @@
           "sourceUrl": "https://xeno-canto.org/561580",
           "aiGenerated": false,
           "hosted": false,
+          "quality": "B",
           "callType": "call"
         },
         {
@@ -7912,6 +7996,7 @@
           "sourceUrl": "https://xeno-canto.org/449486",
           "aiGenerated": false,
           "hosted": false,
+          "quality": "A",
           "callType": "call"
         }
       ],
@@ -8024,33 +8109,14 @@
       "images": [],
       "recordings": [
         {
-          "key": "xeno-canto/XC730910",
-          "author": "GABRIEL LEITE",
-          "licence": "CC BY-NC-SA 4.0",
-          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
-          "sourceUrl": "https://xeno-canto.org/730910",
+          "key": "xeno-canto/XC758044",
+          "author": "Nature sounds by Simply Birding",
+          "licence": "CC BY-NC-ND 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-nd/4.0/",
+          "sourceUrl": "https://xeno-canto.org/758044",
           "aiGenerated": false,
           "hosted": false,
-          "callType": "call"
-        },
-        {
-          "key": "xeno-canto/XC422135",
-          "author": "Hans Groot",
-          "licence": "CC BY-NC-SA 4.0",
-          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
-          "sourceUrl": "https://xeno-canto.org/422135",
-          "aiGenerated": false,
-          "hosted": false,
-          "callType": "call"
-        },
-        {
-          "key": "xeno-canto/XC244201",
-          "author": "Mike Nelson",
-          "licence": "CC BY-NC-SA 4.0",
-          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
-          "sourceUrl": "https://xeno-canto.org/244201",
-          "aiGenerated": false,
-          "hosted": false,
+          "quality": "A",
           "callType": "call"
         }
       ],
@@ -8180,6 +8246,7 @@
           "sourceUrl": "https://xeno-canto.org/1152464",
           "aiGenerated": false,
           "hosted": false,
+          "quality": "A",
           "callType": "call"
         },
         {
@@ -8190,6 +8257,7 @@
           "sourceUrl": "https://xeno-canto.org/694496",
           "aiGenerated": false,
           "hosted": false,
+          "quality": "A",
           "callType": "call"
         },
         {
@@ -8200,6 +8268,7 @@
           "sourceUrl": "https://xeno-canto.org/811972",
           "aiGenerated": false,
           "hosted": false,
+          "quality": "A",
           "callType": "call"
         }
       ],
@@ -8340,33 +8409,14 @@
       ],
       "recordings": [
         {
-          "key": "xeno-canto/XC589156",
-          "author": "Sun Madakan",
-          "licence": "CC BY-NC-SA 4.0",
-          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
-          "sourceUrl": "https://xeno-canto.org/589156",
+          "key": "xeno-canto/XC280442",
+          "author": "Peter Boesman",
+          "licence": "CC BY-NC-ND 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-nd/4.0/",
+          "sourceUrl": "https://xeno-canto.org/280442",
           "aiGenerated": false,
           "hosted": false,
-          "callType": "call"
-        },
-        {
-          "key": "xeno-canto/XC597079",
-          "author": "Sun Madakan",
-          "licence": "CC BY-NC-SA 4.0",
-          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
-          "sourceUrl": "https://xeno-canto.org/597079",
-          "aiGenerated": false,
-          "hosted": false,
-          "callType": "call"
-        },
-        {
-          "key": "xeno-canto/XC597075",
-          "author": "Sun Madakan",
-          "licence": "CC BY-NC-SA 4.0",
-          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
-          "sourceUrl": "https://xeno-canto.org/597075",
-          "aiGenerated": false,
-          "hosted": false,
+          "quality": "A",
           "callType": "call"
         }
       ],
@@ -8571,6 +8621,7 @@
           "sourceUrl": "https://xeno-canto.org/1100393",
           "aiGenerated": false,
           "hosted": false,
+          "quality": "A",
           "callType": "call"
         },
         {
@@ -8581,6 +8632,7 @@
           "sourceUrl": "https://xeno-canto.org/1141677",
           "aiGenerated": false,
           "hosted": false,
+          "quality": "D",
           "callType": "call"
         },
         {
@@ -8591,6 +8643,7 @@
           "sourceUrl": "https://xeno-canto.org/700773",
           "aiGenerated": false,
           "hosted": false,
+          "quality": "C",
           "callType": "call"
         }
       ],
@@ -8680,33 +8733,14 @@
       ],
       "recordings": [
         {
-          "key": "xeno-canto/XC1075223",
-          "author": "Jonathan Onongo",
-          "licence": "CC BY-NC-SA 4.0",
-          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
-          "sourceUrl": "https://xeno-canto.org/1075223",
+          "key": "xeno-canto/XC168353",
+          "author": "vir joshi",
+          "licence": "CC BY-NC-SA 3.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/3.0/",
+          "sourceUrl": "https://xeno-canto.org/168353",
           "aiGenerated": false,
           "hosted": false,
-          "callType": "call"
-        },
-        {
-          "key": "xeno-canto/XC1092243",
-          "author": "Sven Normant",
-          "licence": "CC BY-NC-SA 4.0",
-          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
-          "sourceUrl": "https://xeno-canto.org/1092243",
-          "aiGenerated": false,
-          "hosted": false,
-          "callType": "call"
-        },
-        {
-          "key": "xeno-canto/XC1099112",
-          "author": "Tom Cooney",
-          "licence": "CC BY-NC-SA 4.0",
-          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
-          "sourceUrl": "https://xeno-canto.org/1099112",
-          "aiGenerated": false,
-          "hosted": false,
+          "quality": "A",
           "callType": "call"
         }
       ],
@@ -8932,7 +8966,19 @@
           "hosted": false
         }
       ],
-      "recordings": [],
+      "recordings": [
+        {
+          "key": "xeno-canto/XC277865",
+          "author": "Andrew Spencer",
+          "licence": "CC BY-NC-ND 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-nd/4.0/",
+          "sourceUrl": "https://xeno-canto.org/277865",
+          "aiGenerated": false,
+          "hosted": false,
+          "quality": "B",
+          "callType": "call"
+        }
+      ],
       "sources": [
         {
           "title": "Kemp A.C., Herholdt J.J., Whyte I. & Harrison J. (2001). Birds of the two largest national parks in South Africa: a method to generate estimates of population size for all species and assess their conservation ecology. S. Afr. J. Sci. 97: 393–403.",
@@ -9379,33 +9425,14 @@
       ],
       "recordings": [
         {
-          "key": "xeno-canto/XC1100928",
-          "author": "Dimitri",
-          "licence": "CC BY-NC-SA 4.0",
-          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
-          "sourceUrl": "https://xeno-canto.org/1100928",
+          "key": "xeno-canto/XC154438",
+          "author": "Tomek Tumiel",
+          "licence": "CC BY-NC-SA 3.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/3.0/",
+          "sourceUrl": "https://xeno-canto.org/154438",
           "aiGenerated": false,
           "hosted": false,
-          "callType": "call"
-        },
-        {
-          "key": "xeno-canto/XC1143593",
-          "author": "Dimitri",
-          "licence": "CC BY-NC-SA 4.0",
-          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
-          "sourceUrl": "https://xeno-canto.org/1143593",
-          "aiGenerated": false,
-          "hosted": false,
-          "callType": "call"
-        },
-        {
-          "key": "xeno-canto/XC1141922",
-          "author": "brickegickel",
-          "licence": "CC BY-NC-SA 4.0",
-          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
-          "sourceUrl": "https://xeno-canto.org/1141922",
-          "aiGenerated": false,
-          "hosted": false,
+          "quality": "A",
           "callType": "call"
         }
       ],
@@ -9865,6 +9892,7 @@
           "sourceUrl": "https://xeno-canto.org/392028",
           "aiGenerated": false,
           "hosted": false,
+          "quality": "B",
           "callType": "call"
         },
         {
@@ -9875,6 +9903,7 @@
           "sourceUrl": "https://xeno-canto.org/1148983",
           "aiGenerated": false,
           "hosted": false,
+          "quality": "A",
           "callType": "call"
         },
         {
@@ -9885,6 +9914,7 @@
           "sourceUrl": "https://xeno-canto.org/772438",
           "aiGenerated": false,
           "hosted": false,
+          "quality": "B",
           "callType": "call"
         }
       ],
@@ -9990,6 +10020,7 @@
           "sourceUrl": "https://xeno-canto.org/1039698",
           "aiGenerated": false,
           "hosted": false,
+          "quality": "A",
           "callType": "call"
         },
         {
@@ -10000,6 +10031,7 @@
           "sourceUrl": "https://xeno-canto.org/580274",
           "aiGenerated": false,
           "hosted": false,
+          "quality": "D",
           "callType": "call"
         },
         {
@@ -10010,6 +10042,7 @@
           "sourceUrl": "https://xeno-canto.org/958205",
           "aiGenerated": false,
           "hosted": false,
+          "quality": "A",
           "callType": "call"
         }
       ],
@@ -10691,6 +10724,7 @@
           "sourceUrl": "https://xeno-canto.org/1048064",
           "aiGenerated": false,
           "hosted": false,
+          "quality": "A",
           "callType": "call"
         },
         {
@@ -10701,6 +10735,7 @@
           "sourceUrl": "https://xeno-canto.org/1048065",
           "aiGenerated": false,
           "hosted": false,
+          "quality": "A",
           "callType": "call"
         },
         {
@@ -10711,6 +10746,7 @@
           "sourceUrl": "https://xeno-canto.org/1006960",
           "aiGenerated": false,
           "hosted": false,
+          "quality": "B",
           "callType": "call"
         }
       ],
@@ -10918,6 +10954,7 @@
           "sourceUrl": "https://xeno-canto.org/1095967",
           "aiGenerated": false,
           "hosted": false,
+          "quality": "B",
           "callType": "call"
         },
         {
@@ -10928,6 +10965,7 @@
           "sourceUrl": "https://xeno-canto.org/1095965",
           "aiGenerated": false,
           "hosted": false,
+          "quality": "A",
           "callType": "call"
         },
         {
@@ -10938,6 +10976,7 @@
           "sourceUrl": "https://xeno-canto.org/1076938",
           "aiGenerated": false,
           "hosted": false,
+          "quality": "C",
           "callType": "call"
         }
       ],
@@ -11037,6 +11076,7 @@
           "sourceUrl": "https://xeno-canto.org/933196",
           "aiGenerated": false,
           "hosted": false,
+          "quality": "B",
           "callType": "call"
         },
         {
@@ -11047,6 +11087,7 @@
           "sourceUrl": "https://xeno-canto.org/960879",
           "aiGenerated": false,
           "hosted": false,
+          "quality": "B",
           "callType": "call"
         },
         {
@@ -11057,6 +11098,7 @@
           "sourceUrl": "https://xeno-canto.org/697064",
           "aiGenerated": false,
           "hosted": false,
+          "quality": "C",
           "callType": "call"
         }
       ],
@@ -11216,6 +11258,7 @@
           "sourceUrl": "https://xeno-canto.org/940363",
           "aiGenerated": false,
           "hosted": false,
+          "quality": "A",
           "callType": "call"
         },
         {
@@ -11226,6 +11269,7 @@
           "sourceUrl": "https://xeno-canto.org/940364",
           "aiGenerated": false,
           "hosted": false,
+          "quality": "A",
           "callType": "call"
         }
       ],

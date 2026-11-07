@@ -22,7 +22,8 @@
  *   data/vocab/<name>.json   → vocab/<name>
  *
  * index/credits is derived here too. Media lines come from species images,
- * call recordings, and population sources. The checklist list is fixed, from
+ * call recordings after data/audio/recordings.json is merged, and
+ * population sources. The checklist list is fixed, from
  * docs/families-sources.md, docs/species-sources.md, and
  * docs/population-sources.md. A licence is null when it is not known. The
  * page says so, and this script does not invent one.
@@ -30,6 +31,7 @@
 import { readdir, readFile, writeFile } from 'node:fs/promises'
 import path from 'node:path'
 import { fileURLToPath } from 'node:url'
+import { applyRecordingOverlay, recordingOverlay } from '../src/recordings.js'
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..')
 
@@ -190,6 +192,9 @@ const creditFrom = (item) => {
     aiGenerated: item.aiGenerated === true,
   }
   if (item.hosted === false) credit.hosted = false
+  if (/^[A-E]$/.test(item.quality || '')) credit.quality = item.quality
+  if (typeof item.modified === 'string' && item.modified.trim())
+    credit.modified = item.modified.trim()
   return credit
 }
 
@@ -234,9 +239,10 @@ const citedSources = (species) => {
   })
 }
 
-const speciesCredits = (species) => {
-  const images = imageCredits(species)
-  const recordings = recordingCredits(species)
+const speciesCredits = (species, overlay = null) => {
+  const documented = overlay ? applyRecordingOverlay(species, overlay) : species
+  const images = imageCredits(documented)
+  const recordings = recordingCredits(documented)
   const sources = citedSources(species)
   const empty = !images.length && !recordings.length && !sources.length
   return empty
@@ -348,9 +354,9 @@ const SITE = {
 
 export const NO_MEDIA_NOTE = 'No photos or recordings have been added so far.'
 
-export const deriveCredits = (speciesDocs) => {
+export const deriveCredits = (speciesDocs, overlay = null) => {
   const species = speciesDocs
-    .map(speciesCredits)
+    .map((species) => speciesCredits(species, overlay))
     .filter(Boolean)
     .sort((a, b) => compareScientificName(a.scientificName, b.scientificName))
   const images = species.reduce((sum, item) => sum + item.images.length, 0)
@@ -388,7 +394,7 @@ export const deriveAll = (speciesDocs, familyDocs) => {
     families,
     speciesIndex: deriveSpeciesIndex(speciesDocs),
     familiesIndex: deriveFamiliesIndex(families),
-    credits: deriveCredits(speciesDocs),
+    credits: deriveCredits(speciesDocs, recordingOverlay),
   }
 }
 

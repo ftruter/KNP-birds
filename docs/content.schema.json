@@ -189,7 +189,9 @@
         "licenceUrl": { "$ref": "#/$defs/textOrNull" },
         "aiGenerated": { "type": "boolean" },
         "fileUrl": { "type": "string", "minLength": 1 },
-        "hosted": { "type": "boolean" }
+        "hosted": { "type": "boolean" },
+        "quality": { "enum": ["A", "B", "C", "D", "E"] },
+        "modified": { "type": "string", "minLength": 1 }
       }
     },
     "call": {
@@ -518,7 +520,9 @@
         "sourceUrl": { "$ref": "#/$defs/textOrNull" },
         "aiGenerated": { "type": "boolean" },
         "hosted": { "type": "boolean" },
-        "callType": { "type": "string", "minLength": 1 }
+        "callType": { "type": "string", "minLength": 1 },
+        "quality": { "enum": ["A", "B", "C", "D", "E"] },
+        "modified": { "type": "string", "minLength": 1 }
       }
     },
     "citation": {

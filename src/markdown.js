@@ -1,4 +1,5 @@
 import { diffSpecies } from './diff.js'
+import { recordingNotes } from './recordings.js'
 import { inlineText, safeHttpUrl } from './escape.js'
 import {
   APPROXIMATE_LABEL,
@@ -318,10 +319,12 @@ const callLines = (calls) =>
               const href = hosted ? objectPath('audio', recording.key) : ''
               const source = safeHttpUrl(recording.source)
               const fileUrl =
-                safeHttpUrl(recording.fileUrl) &&
-                !licenceForbidsDerivatives(recording.license)
-                  ? recording.fileUrl
-                  : ''
+                recording.hosted === true
+                  ? ''
+                  : safeHttpUrl(recording.fileUrl) &&
+                      !licenceForbidsDerivatives(recording.license)
+                    ? recording.fileUrl
+                    : ''
               const bits = [
                 href ? `Recording: ${href}` : '',
                 recording.author || '',
@@ -329,6 +332,7 @@ const callLines = (calls) =>
                 source ? `Source: ${source}` : '',
                 fileUrl ? `File: ${fileUrl}` : '',
                 hosted ? '' : 'Not stored on this site.',
+                ...recordingNotes(recording),
               ].filter(Boolean)
               return bits.length ? ` ${bits.join('. ')}.` : ''
             })
@@ -435,7 +439,10 @@ const mdAttribution = (item, kind) => {
   const author = item?.author
     ? `Author: ${inlineText(item.author)}. `
     : 'Author not recorded. '
-  return `${ai}${author}${mdLicence(item, 'Licence not recorded.')} ${mdSource(item?.sourceUrl)}`
+  const notes = recordingNotes(item)
+    .map((note) => `${inlineText(note)}.`)
+    .join(' ')
+  return `${ai}${author}${mdLicence(item, 'Licence not recorded.')} ${mdSource(item?.sourceUrl)}${notes ? ` ${notes}` : ''}`
 }
 
 const mdCall = (credit) =>

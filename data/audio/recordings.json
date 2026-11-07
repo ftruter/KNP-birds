@@ -1,0 +1,867 @@
+{
+  "source": "xeno-canto explore catalogue, API v3 recording fields",
+  "species": {
+    "accipiter-ovampensis": {
+      "calls": [
+        {
+          "index": 0,
+          "quality": {
+            "xeno-canto/XC613465": "A",
+            "xeno-canto/XC686715": "B",
+            "xeno-canto/XC400368": "B"
+          }
+        }
+      ]
+    },
+    "aerospiza-tachiro": {
+      "calls": [
+        {
+          "index": 0,
+          "quality": {
+            "xeno-canto/XC1137538": "A",
+            "xeno-canto/XC1148697": "A",
+            "xeno-canto/XC1148407": "A"
+          }
+        }
+      ]
+    },
+    "alcedo-semitorquata": {
+      "calls": [
+        {
+          "index": 0,
+          "recordings": [
+            {
+              "key": "xeno-canto/XC1102306",
+              "source": "https://xeno-canto.org/1102306",
+              "author": "Magnus Wadstein",
+              "license": "CC BY-NC-SA 4.0",
+              "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+              "aiGenerated": false,
+              "fileUrl": "https://xeno-canto.org/sounds/uploaded/CQARALZBNN/XC1102306-Half-collared-kingfisher-260227_2161.mp3",
+              "hosted": false,
+              "quality": "A"
+            }
+          ]
+        }
+      ]
+    },
+    "aquila-nipalensis": {
+      "calls": [
+        {
+          "index": 0,
+          "quality": {
+            "xeno-canto/XC1174915": "A",
+            "xeno-canto/XC1174914": "A"
+          }
+        }
+      ]
+    },
+    "aquila-rapax": {
+      "calls": [
+        {
+          "index": 0,
+          "recordings": [
+            {
+              "key": "xeno-canto/XC1044220",
+              "source": "https://xeno-canto.org/1044220",
+              "author": "Oliver Fowler",
+              "license": "CC BY-NC-SA 4.0",
+              "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+              "aiGenerated": false,
+              "fileUrl": "https://xeno-canto.org/sounds/uploaded/OHDVJMHMQE/XC1044220-20250928-100103_Tawny-Eagle_Samburu_trimmed.mp3",
+              "hosted": false,
+              "quality": "A"
+            }
+          ]
+        }
+      ]
+    },
+    "aquila-spilogaster": {
+      "calls": [
+        {
+          "index": 0,
+          "quality": {
+            "xeno-canto/XC194777": "B",
+            "xeno-canto/XC194771": "C",
+            "xeno-canto/XC267752": "A"
+          }
+        }
+      ]
+    },
+    "aquila-verreauxii": {
+      "calls": [
+        {
+          "index": 0,
+          "recordings": [
+            {
+              "key": "xeno-canto/XC392307",
+              "source": "https://xeno-canto.org/392307",
+              "author": "Peter Boesman",
+              "license": "CC BY-NC-ND 4.0",
+              "licenceUrl": "https://creativecommons.org/licenses/by-nc-nd/4.0/",
+              "aiGenerated": false,
+              "fileUrl": "https://xeno-canto.org/sounds/uploaded/OOECIWCSWV/XC392307-LS106278%20Verreaux%20Eagle%20Q%20begging%20call%20B.mp3",
+              "hosted": false,
+              "quality": "B"
+            }
+          ]
+        }
+      ]
+    },
+    "astur-melanoleucus": {
+      "calls": [
+        {
+          "index": 0,
+          "quality": {
+            "xeno-canto/XC950482": "A",
+            "xeno-canto/XC695163": "A",
+            "xeno-canto/XC1184194": "B"
+          }
+        }
+      ]
+    },
+    "aviceda-cuculoides": {
+      "calls": [
+        {
+          "index": 0,
+          "recordings": [
+            {
+              "key": "xeno-canto/XC788596",
+              "source": "https://xeno-canto.org/788596",
+              "author": "Alain Verneau",
+              "license": "CC BY-NC-SA 4.0",
+              "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+              "aiGenerated": false,
+              "fileUrl": "https://xeno-canto.org/sounds/uploaded/NOJNUVZEHB/XC788596-Africancuckoohawk_1144XC.mp3",
+              "hosted": false,
+              "quality": "A"
+            }
+          ]
+        }
+      ]
+    },
+    "bucorvus-leadbeateri": {
+      "calls": [
+        {
+          "index": 0,
+          "recordings": [
+            {
+              "key": "xeno-canto/XC1149598",
+              "source": "https://xeno-canto.org/1149598",
+              "author": "African Bioacoustics Community",
+              "license": "CC BY-NC-SA 4.0",
+              "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+              "aiGenerated": false,
+              "fileUrl": "https://xeno-canto.org/sounds/uploaded/YSGTQVRQZI/XC1149598-20260520_KNP_AKaramitsos_XA60_A028C013_2605207D_SLE_-3dB_Hornbill.mp3",
+              "hosted": false,
+              "quality": "A"
+            }
+          ]
+        }
+      ]
+    },
+    "buteo-buteo": {
+      "calls": [
+        {
+          "index": 0,
+          "recordings": [
+            {
+              "key": "xeno-canto/XC151184",
+              "source": "https://xeno-canto.org/151184",
+              "author": "Jarek Matusiak",
+              "license": "CC BY-NC-SA 3.0",
+              "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/3.0/",
+              "aiGenerated": false,
+              "fileUrl": "https://xeno-canto.org/sounds/uploaded/ZNCDXTUOFL/XC151184-Buteo_buteo_Poland_Jarek_Matusiak_20131012_36.mp3",
+              "hosted": false,
+              "quality": "A"
+            }
+          ]
+        }
+      ]
+    },
+    "buteo-rufofuscus": {
+      "calls": [
+        {
+          "index": 0,
+          "quality": {
+            "xeno-canto/XC1090801": "A",
+            "xeno-canto/XC397385": "C"
+          }
+        }
+      ]
+    },
+    "buteo-trizonatus": {
+      "calls": [
+        {
+          "index": 0,
+          "quality": {
+            "xeno-canto/XC289313": "B",
+            "xeno-canto/XC289315": "B",
+            "xeno-canto/XC289314": "B"
+          }
+        }
+      ]
+    },
+    "ceryle-rudis": {
+      "calls": [
+        {
+          "index": 0,
+          "quality": {
+            "xeno-canto/XC1148067": "A",
+            "xeno-canto/XC638453": "A",
+            "xeno-canto/XC834484": "A"
+          }
+        }
+      ]
+    },
+    "circaetus-cinereus": {
+      "calls": [
+        {
+          "index": 0,
+          "quality": {
+            "xeno-canto/XC863207": "A"
+          }
+        }
+      ]
+    },
+    "circaetus-pectoralis": {
+      "calls": [
+        {
+          "index": 0,
+          "recordings": [
+            {
+              "key": "xeno-canto/XC57552",
+              "source": "https://xeno-canto.org/57552",
+              "author": "Toon Spanhove",
+              "license": "CC BY-NC-ND 2.5",
+              "licenceUrl": "https://creativecommons.org/licenses/by-nc-nd/2.5/",
+              "aiGenerated": false,
+              "fileUrl": "https://xeno-canto.org/sounds/uploaded/IMSJENLAJS/black-chested_snake-eagle_%28juvenile_Awash_NP_Ethiopia%29.mp3",
+              "hosted": false,
+              "quality": "A"
+            }
+          ]
+        }
+      ]
+    },
+    "circus-macrourus": {
+      "calls": [
+        {
+          "index": 0,
+          "quality": {
+            "xeno-canto/XC549572": "A",
+            "xeno-canto/XC571877": "A"
+          }
+        }
+      ]
+    },
+    "circus-pygargus": {
+      "calls": [
+        {
+          "index": 0,
+          "quality": {
+            "xeno-canto/XC1152357": "A",
+            "xeno-canto/XC1152382": "A"
+          }
+        }
+      ]
+    },
+    "circus-ranivorus": {
+      "calls": [
+        {
+          "index": 0,
+          "recordings": [
+            {
+              "key": "xeno-canto/XC433948",
+              "source": "https://xeno-canto.org/433948",
+              "author": "Lynette Rudman",
+              "license": "CC BY-NC-SA 4.0",
+              "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+              "aiGenerated": false,
+              "fileUrl": "https://xeno-canto.org/sounds/uploaded/SGLTZLDXYI/XC433948-african%20marsh%20harrier%20calling%20XC.mp3",
+              "hosted": false,
+              "quality": "B"
+            }
+          ]
+        }
+      ]
+    },
+    "clanga-pomarina": {
+      "calls": [
+        {
+          "index": 0,
+          "quality": {
+            "xeno-canto/XC1028980": "A",
+            "xeno-canto/XC825782": "A"
+          }
+        }
+      ]
+    },
+    "coracias-caudatus": {
+      "calls": [
+        {
+          "index": 0,
+          "quality": {
+            "xeno-canto/XC949678": "A"
+          }
+        },
+        {
+          "index": 1,
+          "recordings": [
+            {
+              "key": "xeno-canto/XC756688",
+              "source": "https://xeno-canto.org/756688",
+              "author": "Derek Solomon",
+              "license": "CC BY-NC-SA 4.0",
+              "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+              "aiGenerated": false,
+              "fileUrl": "https://xeno-canto.org/sounds/uploaded/DNKBTPCMSQ/XC756688-Lilac-breasted-Roller-Sausage-Tree-221002-085108.mp3",
+              "hosted": false,
+              "quality": "A"
+            }
+          ]
+        }
+      ]
+    },
+    "coracias-garrulus": {
+      "calls": [
+        {
+          "index": 0,
+          "recordings": [
+            {
+              "key": "xeno-canto/XC113065",
+              "source": "https://xeno-canto.org/113065",
+              "author": "vir joshi",
+              "license": "CC BY-NC-SA 3.0",
+              "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/3.0/",
+              "aiGenerated": false,
+              "fileUrl": "https://xeno-canto.org/sounds/uploaded/ZXGYSIOPJJ/XC113065-european%20roller.mp3",
+              "hosted": false,
+              "quality": "A"
+            }
+          ]
+        },
+        {
+          "index": 1,
+          "recordings": [
+            {
+              "key": "xeno-canto/XC805546",
+              "source": "https://xeno-canto.org/805546",
+              "author": "Stanislas Wroza",
+              "license": "CC BY-NC-SA 4.0",
+              "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+              "aiGenerated": false,
+              "fileUrl": "https://xeno-canto.org/sounds/uploaded/SDPCHKOHRH/XC805546-Rollier-d-Europe-cris-d-interactions-++.mp3",
+              "hosted": false,
+              "quality": "A"
+            }
+          ]
+        }
+      ]
+    },
+    "coracias-naevius": {
+      "calls": [
+        {
+          "index": 0,
+          "quality": {
+            "xeno-canto/XC715786": "A"
+          }
+        },
+        {
+          "index": 1,
+          "recordings": [
+            {
+              "key": "xeno-canto/XC715786",
+              "source": "https://xeno-canto.org/715786",
+              "author": "Tony Archer",
+              "license": "CC BY-NC-SA 4.0",
+              "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+              "aiGenerated": false,
+              "fileUrl": "https://xeno-canto.org/sounds/uploaded/HMBDEWEZVS/XC715786-20%20G%20Away.mp3",
+              "hosted": false,
+              "quality": "A"
+            }
+          ]
+        }
+      ]
+    },
+    "coracias-spatulatus": {
+      "calls": [
+        {
+          "index": 0,
+          "recordings": [
+            {
+              "key": "xeno-canto/XC854401",
+              "source": "https://xeno-canto.org/854401",
+              "author": "Dries Van de Loock",
+              "license": "CC BY-NC-ND 4.0",
+              "licenceUrl": "https://creativecommons.org/licenses/by-nc-nd/4.0/",
+              "aiGenerated": false,
+              "fileUrl": "https://xeno-canto.org/sounds/uploaded/IIJAXHKSCC/XC854401-racket-tailed-roller-%28call%29-mwekera%2Ckitwe_ZAMBIA_20231014_082053_01.mp3",
+              "hosted": false,
+              "quality": "A"
+            }
+          ]
+        }
+      ]
+    },
+    "corythornis-cristatus": {
+      "calls": [
+        {
+          "index": 0,
+          "quality": {
+            "xeno-canto/XC369825": "A"
+          }
+        }
+      ]
+    },
+    "elanus-caeruleus": {
+      "calls": [
+        {
+          "index": 0,
+          "quality": {
+            "xeno-canto/XC1087114": "A",
+            "xeno-canto/XC1059222": "A",
+            "xeno-canto/XC1081037": "B"
+          }
+        }
+      ]
+    },
+    "eurystomus-glaucurus": {
+      "calls": [
+        {
+          "index": 0,
+          "quality": {
+            "xeno-canto/XC745582": "A"
+          }
+        }
+      ]
+    },
+    "gypohierax-angolensis": {
+      "calls": [
+        {
+          "index": 0,
+          "recordings": [
+            {
+              "key": "xeno-canto/XC620855",
+              "source": "https://xeno-canto.org/620855",
+              "author": "Louis A. Hansen",
+              "license": "CC BY-NC-SA 4.0",
+              "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+              "aiGenerated": false,
+              "fileUrl": "https://xeno-canto.org/sounds/uploaded/SGNUEQHVBW/XC620855-210114_0491_plus_00m31s_PalmnutVulture_call_VolUpAggressLowPAss_StopBandFilter.mp3",
+              "hosted": false,
+              "quality": "B"
+            }
+          ]
+        }
+      ]
+    },
+    "gyps-africanus": {
+      "calls": [
+        {
+          "index": 0,
+          "quality": {
+            "xeno-canto/XC978231": "A",
+            "xeno-canto/XC661236": "A"
+          }
+        }
+      ]
+    },
+    "gyps-coprotheres": {
+      "calls": [
+        {
+          "index": 0,
+          "quality": {
+            "xeno-canto/XC369789": "C"
+          }
+        }
+      ]
+    },
+    "halcyon-albiventris": {
+      "calls": [
+        {
+          "index": 0,
+          "quality": {
+            "xeno-canto/XC1137527": "A",
+            "xeno-canto/XC382948": "A"
+          }
+        },
+        {
+          "index": 1,
+          "quality": {
+            "xeno-canto/XC1141626": "A",
+            "xeno-canto/XC952485": "A"
+          }
+        }
+      ]
+    },
+    "halcyon-chelicuti": {
+      "calls": [
+        {
+          "index": 0,
+          "quality": {
+            "xeno-canto/XC501576": "C",
+            "xeno-canto/XC462092": "A",
+            "xeno-canto/XC960871": "A",
+            "xeno-canto/XC628100": "C"
+          }
+        }
+      ]
+    },
+    "halcyon-leucocephala": {
+      "calls": [
+        {
+          "index": 0,
+          "quality": {
+            "xeno-canto/XC697680": "A",
+            "xeno-canto/XC591625": "A"
+          }
+        }
+      ]
+    },
+    "halcyon-senegalensis": {
+      "calls": [
+        {
+          "index": 0,
+          "quality": {
+            "xeno-canto/XC780264": "A",
+            "xeno-canto/XC1080056": "A",
+            "xeno-canto/XC368169": "A"
+          }
+        },
+        {
+          "index": 1,
+          "recordings": [
+            {
+              "key": "xeno-canto/XC28682",
+              "source": "https://xeno-canto.org/28682",
+              "author": "Patrik Åberg",
+              "license": "CC BY-NC-SA 3.0",
+              "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/3.0/",
+              "aiGenerated": false,
+              "fileUrl": "https://xeno-canto.org/sounds/uploaded/BPSDQEOJWG/WoodlandKingfisherKruger2007-01-07.mp3",
+              "hosted": false,
+              "quality": "A"
+            }
+          ]
+        }
+      ]
+    },
+    "hieraaetus-pennatus": {
+      "calls": [
+        {
+          "index": 0,
+          "recordings": [
+            {
+              "key": "xeno-canto/XC176712",
+              "source": "https://xeno-canto.org/176712",
+              "author": "Manuel Schweizer",
+              "license": "CC BY-NC-SA 4.0",
+              "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+              "aiGenerated": false,
+              "fileUrl": "https://xeno-canto.org/sounds/uploaded/KIFILMEEEO/XC176712-Booted_Eagle_R1_0009.mp3",
+              "hosted": false,
+              "quality": "A"
+            }
+          ]
+        }
+      ]
+    },
+    "hieraaetus-wahlbergi": {
+      "calls": [
+        {
+          "index": 0,
+          "quality": {
+            "xeno-canto/XC881394": "B",
+            "xeno-canto/XC352650": "B"
+          }
+        }
+      ]
+    },
+    "icthyophaga-vocifer": {
+      "calls": [
+        {
+          "index": 0,
+          "quality": {
+            "xeno-canto/XC1149038": "B",
+            "xeno-canto/XC1149045": "B",
+            "xeno-canto/XC1144970": "C"
+          }
+        }
+      ]
+    },
+    "ispidina-picta": {
+      "calls": [
+        {
+          "index": 0,
+          "recordings": [
+            {
+              "key": "xeno-canto/XC209955",
+              "source": "https://xeno-canto.org/209955",
+              "author": "Andrew Spencer",
+              "license": "CC BY-NC-SA 4.0",
+              "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+              "aiGenerated": false,
+              "fileUrl": "https://xeno-canto.org/sounds/uploaded/CDTGHVBGZP/XC209955-African%20Pygmy-Kingfisher2014-12-14-1.mp3",
+              "hosted": false,
+              "quality": "A"
+            }
+          ]
+        },
+        {
+          "index": 1,
+          "recordings": [
+            {
+              "key": "xeno-canto/XC1105394",
+              "source": "https://xeno-canto.org/1105394",
+              "author": "Jonathan Onongo",
+              "license": "CC BY-NC-SA 4.0",
+              "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+              "aiGenerated": false,
+              "fileUrl": "https://xeno-canto.org/sounds/uploaded/YIKAQIVHQJ/XC1105394-10597_African-Pygmy-Kingfisher---Entebbe-Botanical-Garden---02-MAY-2026---083127---1.mp3",
+              "hosted": false,
+              "quality": "A"
+            }
+          ]
+        },
+        {
+          "index": 2,
+          "recordings": [
+            {
+              "key": "xeno-canto/XC209956",
+              "source": "https://xeno-canto.org/209956",
+              "author": "Andrew Spencer",
+              "license": "CC BY-NC-SA 4.0",
+              "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+              "aiGenerated": false,
+              "fileUrl": "https://xeno-canto.org/sounds/uploaded/CDTGHVBGZP/XC209956-African%20Pygmy-Kingfisher2014-12-16-1.mp3",
+              "hosted": false,
+              "quality": "A"
+            }
+          ]
+        }
+      ]
+    },
+    "kaupifalco-monogrammicus": {
+      "calls": [
+        {
+          "index": 0,
+          "quality": {
+            "xeno-canto/XC1165785": "C",
+            "xeno-canto/XC1165786": "C",
+            "xeno-canto/XC975911": "A"
+          }
+        }
+      ]
+    },
+    "lophaetus-occipitalis": {
+      "calls": [
+        {
+          "index": 0,
+          "quality": {
+            "xeno-canto/XC910891": "B",
+            "xeno-canto/XC561580": "B",
+            "xeno-canto/XC449486": "A"
+          }
+        }
+      ]
+    },
+    "macheiramphus-alcinus": {
+      "calls": [
+        {
+          "index": 0,
+          "recordings": [
+            {
+              "key": "xeno-canto/XC758044",
+              "source": "https://xeno-canto.org/758044",
+              "author": "Nature sounds by Simply Birding",
+              "license": "CC BY-NC-ND 4.0",
+              "licenceUrl": "https://creativecommons.org/licenses/by-nc-nd/4.0/",
+              "aiGenerated": false,
+              "fileUrl": "https://xeno-canto.org/sounds/uploaded/RDCYTRBPDJ/XC758044-Bat-Hawk---M.-a.-anderssoni---contact-call---DN---Magoebaskloof-South-Africa---Aug-2013.mp3",
+              "hosted": false,
+              "quality": "A"
+            }
+          ]
+        }
+      ]
+    },
+    "megaceryle-maxima": {
+      "calls": [
+        {
+          "index": 0,
+          "quality": {
+            "xeno-canto/XC1152464": "A",
+            "xeno-canto/XC694496": "A",
+            "xeno-canto/XC811972": "A"
+          }
+        }
+      ]
+    },
+    "melierax-metabates": {
+      "calls": [
+        {
+          "index": 0,
+          "recordings": [
+            {
+              "key": "xeno-canto/XC280442",
+              "source": "https://xeno-canto.org/280442",
+              "author": "Peter Boesman",
+              "license": "CC BY-NC-ND 4.0",
+              "licenceUrl": "https://creativecommons.org/licenses/by-nc-nd/4.0/",
+              "aiGenerated": false,
+              "fileUrl": "https://xeno-canto.org/sounds/uploaded/OOECIWCSWV/XC280442-LS_53474%20Dark%20Chanting%20Goshawk%20call%20AA.mp3",
+              "hosted": false,
+              "quality": "A"
+            }
+          ]
+        }
+      ]
+    },
+    "micronisus-gabar": {
+      "calls": [
+        {
+          "index": 0,
+          "quality": {
+            "xeno-canto/XC1100393": "A",
+            "xeno-canto/XC1141677": "D",
+            "xeno-canto/XC700773": "C"
+          }
+        }
+      ]
+    },
+    "milvus-migrans": {
+      "calls": [
+        {
+          "index": 0,
+          "recordings": [
+            {
+              "key": "xeno-canto/XC168353",
+              "source": "https://xeno-canto.org/168353",
+              "author": "vir joshi",
+              "license": "CC BY-NC-SA 3.0",
+              "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/3.0/",
+              "aiGenerated": false,
+              "fileUrl": "https://xeno-canto.org/sounds/uploaded/ZXGYSIOPJJ/XC168353-black%20kite%20a131221_001xeno.mp3",
+              "hosted": false,
+              "quality": "A"
+            }
+          ]
+        }
+      ]
+    },
+    "necrosyrtes-monachus": {
+      "calls": [
+        {
+          "index": 0,
+          "recordings": [
+            {
+              "key": "xeno-canto/XC277865",
+              "source": "https://xeno-canto.org/277865",
+              "author": "Andrew Spencer",
+              "license": "CC BY-NC-ND 4.0",
+              "licenceUrl": "https://creativecommons.org/licenses/by-nc-nd/4.0/",
+              "aiGenerated": false,
+              "fileUrl": "https://xeno-canto.org/sounds/uploaded/CDTGHVBGZP/XC277865-Hooded%20Vulture2014-12-17-2.mp3",
+              "hosted": false,
+              "quality": "B"
+            }
+          ]
+        }
+      ]
+    },
+    "pernis-apivorus": {
+      "calls": [
+        {
+          "index": 0,
+          "recordings": [
+            {
+              "key": "xeno-canto/XC154438",
+              "source": "https://xeno-canto.org/154438",
+              "author": "Tomek Tumiel",
+              "license": "CC BY-NC-SA 3.0",
+              "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/3.0/",
+              "aiGenerated": false,
+              "fileUrl": "https://xeno-canto.org/sounds/uploaded/EHAHTZIMID/XC154438-PEA%2015-08-2013.mp3",
+              "hosted": false,
+              "quality": "A"
+            }
+          ]
+        }
+      ]
+    },
+    "polemaetus-bellicosus": {
+      "calls": [
+        {
+          "index": 0,
+          "quality": {
+            "xeno-canto/XC392028": "B",
+            "xeno-canto/XC1148983": "A",
+            "xeno-canto/XC772438": "B"
+          }
+        }
+      ]
+    },
+    "polyboroides-typus": {
+      "calls": [
+        {
+          "index": 0,
+          "quality": {
+            "xeno-canto/XC1039698": "A",
+            "xeno-canto/XC580274": "D",
+            "xeno-canto/XC958205": "A"
+          }
+        }
+      ]
+    },
+    "stephanoaetus-coronatus": {
+      "calls": [
+        {
+          "index": 0,
+          "quality": {
+            "xeno-canto/XC1048064": "A",
+            "xeno-canto/XC1048065": "A",
+            "xeno-canto/XC1006960": "B"
+          }
+        }
+      ]
+    },
+    "tachyspiza-badia": {
+      "calls": [
+        {
+          "index": 0,
+          "quality": {
+            "xeno-canto/XC1095967": "B",
+            "xeno-canto/XC1095965": "A",
+            "xeno-canto/XC1076938": "C"
+          }
+        }
+      ]
+    },
+    "tachyspiza-minulla": {
+      "calls": [
+        {
+          "index": 0,
+          "quality": {
+            "xeno-canto/XC933196": "B",
+            "xeno-canto/XC960879": "B",
+            "xeno-canto/XC697064": "C"
+          }
+        }
+      ]
+    },
+    "terathopius-ecaudatus": {
+      "calls": [
+        {
+          "index": 0,
+          "quality": {
+            "xeno-canto/XC940363": "A",
+            "xeno-canto/XC940364": "A"
+          }
+        }
+      ]
+    }
+  }
+}

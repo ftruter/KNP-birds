@@ -1,4 +1,5 @@
 import { diffSpecies } from './diff.js'
+import { recordingNotes } from './recordings.js'
 import { escapeHtml, inlineText, safeHttpUrl } from './escape.js'
 import {
   APPROXIMATE_LABEL,
@@ -395,9 +396,15 @@ const recordingsHtml = (recordings) =>
           const href = hosted ? objectPath('audio', recording.key) : ''
           const source = safeHttpUrl(recording?.source)
           const fileUrl = safeHttpUrl(recording?.fileUrl)
+          const playSrc =
+            recording?.hosted === true
+              ? href
+              : fileUrl && !licenceForbidsDerivatives(recording?.license)
+                ? fileUrl
+                : ''
           const playable =
-            fileUrl && !licenceForbidsDerivatives(recording?.license)
-              ? `<audio controls src="${escapeHtml(fileUrl)}"></audio>`
+            playSrc && !licenceForbidsDerivatives(recording?.license)
+              ? `<audio controls src="${escapeHtml(playSrc)}"></audio>`
               : ''
           const link = href
             ? `<a href="${escapeHtml(href)}">${escapeHtml(recording.key)}</a>`
@@ -414,7 +421,10 @@ const recordingsHtml = (recordings) =>
             ? `<a href="${escapeHtml(source)}">Source</a>`
             : ''
           const stored = hosted ? '' : 'Not stored on this site.'
-          return ` Recording: ${[link, credit, licenceLink, sourceLink, stored].filter(Boolean).join('. ')}.${playable}`
+          const notes = recordingNotes(recording).map((note) =>
+            escapeHtml(note),
+          )
+          return ` Recording: ${[link, credit, licenceLink, sourceLink, stored, ...notes].filter(Boolean).join('. ')}.${playable}`
         })
         .join('')
 
@@ -654,7 +664,10 @@ const attributionHtml = (item, kind) => {
   const author = item?.author
     ? `Author: ${escapeHtml(item.author)}. `
     : 'Author not recorded. '
-  return `${ai}${author}${licenceHtml(item, 'Licence not recorded.')} ${sourcePhrase(item?.sourceUrl)}`
+  const notes = recordingNotes(item)
+    .map((note) => `${escapeHtml(note)}.`)
+    .join(' ')
+  return `${ai}${author}${licenceHtml(item, 'Licence not recorded.')} ${sourcePhrase(item?.sourceUrl)}${notes ? ` ${notes}` : ''}`
 }
 
 const assetLink = (prefix, key) =>
