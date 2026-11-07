@@ -7,8 +7,63 @@
     "af": "Geelsanger"
   },
   "family": "acrocephalidae",
-  "summary": "The details for this species have not been published yet.",
-  "sampleData": true,
+  "status": "resident",
+  "monthsPresent": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+  ],
+  "size": {
+    "lengthCm": {
+      "min": 13,
+      "max": 15
+    },
+    "note": "Newman's Birds gives 14–15 cm. Wikipedia, citing HBW, gives 13 cm."
+  },
+  "habitat": "Rank vegetation along streams and gullies, reedbed and forest edges, and bracken or briar away from water. In the lowveld it is scarce.",
+  "summary": "A bright yellow warbler of rank cover, with a browner crown and blackish legs. Males are bright yellow below with an olive wash on the sides. Females are duller yellow. Immatures are orange-yellow, with buffier wing edges, rump and tail. The colour of a newly hatched chick is not described in the texts used here. Older lists used the name Chloropeta natalensis.",
+  "sampleData": false,
+  "similar": [
+    {
+      "slug": "hippolais-icterina",
+      "note": "Icterine Warbler has bluish-grey legs, a pale wing panel and drier woodland. African Yellow Warbler has blackish legs and wetter, ranker cover."
+    }
+  ],
+  "sources": [
+    {
+      "title": "The Atlas of Southern African Birds, Vol. 2 (Yellow Warbler)",
+      "url": "https://sabap2.birdmap.africa/docs/sabap1/637.pdf",
+      "publisher": "BirdLife South Africa",
+      "year": 1997
+    },
+    {
+      "title": "Chloropeta natalensis (Dark-capped yellow warbler), summarised from Roberts VII",
+      "url": "https://www.biodiversityexplorer.info/birds/sylviidae/chloropeta_natalensis.htm",
+      "publisher": "Iziko Museums of South Africa",
+      "year": null
+    },
+    {
+      "title": "African Yellow Warbler",
+      "url": "https://newmansbirds.com/birds/african-yellow-warbler/",
+      "publisher": "Newman's Birds",
+      "year": null
+    },
+    {
+      "title": "African yellow warbler",
+      "url": "https://en.wikipedia.org/wiki/African_yellow_warbler",
+      "publisher": "Wikipedia",
+      "year": 2026
+    }
+  ],
   "population": {
     "estimate": {
       "low": 64,
@@ -35,8 +90,268 @@
     },
     "tierApplied": "D"
   },
-  "variants": [],
-  "viewNotes": [],
-  "calls": [],
-  "images": []
+  "variants": [
+    {
+      "age": "adult",
+      "sex": "male",
+      "season": "any",
+      "marks": {
+        "bill": {
+          "colour": [
+            "horn",
+            "black"
+          ],
+          "shape": "slender; the upper mandible is pale and the lower mandible is blackish"
+        },
+        "eye": {
+          "iris": null,
+          "ring": null
+        },
+        "legs": {
+          "colour": "black"
+        },
+        "head": {
+          "crown": [
+            "brown",
+            "yellow"
+          ],
+          "face": "yellow",
+          "throat": "yellow"
+        },
+        "upperparts": {
+          "back": [
+            "yellow",
+            "brown"
+          ],
+          "rump": "yellow"
+        },
+        "underparts": {
+          "breast": "yellow",
+          "belly": "yellow",
+          "pattern": "bright yellow, with an olive wash on the sides of the breast, flanks and lower belly"
+        },
+        "wings": {
+          "above": [
+            "brown",
+            "yellow"
+          ],
+          "below": null
+        },
+        "tail": {
+          "colour": [
+            "yellow",
+            "brown"
+          ],
+          "shape": null
+        }
+      }
+    },
+    {
+      "age": "adult",
+      "sex": "female",
+      "season": "any",
+      "marks": {
+        "bill": {
+          "colour": null,
+          "shape": null
+        },
+        "eye": {
+          "iris": null,
+          "ring": null
+        },
+        "legs": {
+          "colour": null
+        },
+        "head": {
+          "crown": null,
+          "face": null,
+          "throat": null
+        },
+        "upperparts": {
+          "back": null,
+          "rump": null
+        },
+        "underparts": {
+          "breast": "yellow",
+          "belly": "yellow",
+          "pattern": "duller yellow than the male"
+        },
+        "wings": {
+          "above": null,
+          "below": null
+        },
+        "tail": {
+          "colour": null,
+          "shape": null
+        }
+      }
+    },
+    {
+      "age": "immature",
+      "sex": "any",
+      "season": "any",
+      "marks": {
+        "bill": {
+          "colour": null,
+          "shape": null
+        },
+        "eye": {
+          "iris": null,
+          "ring": null
+        },
+        "legs": {
+          "colour": null
+        },
+        "head": {
+          "crown": null,
+          "face": null,
+          "throat": null
+        },
+        "upperparts": {
+          "back": null,
+          "rump": "buff"
+        },
+        "underparts": {
+          "breast": [
+            "orange",
+            "yellow"
+          ],
+          "belly": [
+            "orange",
+            "yellow"
+          ]
+        },
+        "wings": {
+          "above": [
+            "brown",
+            "buff"
+          ],
+          "below": null
+        },
+        "tail": {
+          "colour": "buff",
+          "shape": null
+        }
+      }
+    }
+  ],
+  "viewNotes": [
+    {
+      "view": "flight-above",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Yellowish-brown upperparts, a yellower rump and brown flight feathers edged yellow. A separate upperwing pattern, such as a panel, is not described."
+    },
+    {
+      "view": "flight-below",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "The underwing is not described in the texts used here."
+    },
+    {
+      "view": "perched-front",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "A bright yellow throat and breast under a slightly browner crown. The bill is slender, pale above and blackish below."
+    },
+    {
+      "view": "perched-back",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Yellowish-brown upperparts and tail, with a yellower rump. The crown is a little browner than the back."
+    },
+    {
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Yellow underparts, a dark cap, blackish legs and a longer tail than a yellow weaver. It usually stays low, then climbs a stem to sing."
+    },
+    {
+      "view": "perched-side",
+      "age": "immature",
+      "sex": "any",
+      "season": "any",
+      "note": "Immatures are orange-yellow rather than bright yellow, and the wing edges, rump and tail are more buff."
+    }
+  ],
+  "calls": [
+    {
+      "sex": "any",
+      "type": "song",
+      "description": "A quick, often-repeated trrp-trrp-chiri-chiri-chiri-chiri; the texts used here do not say that females sing a different song.",
+      "recordings": [
+        {
+          "key": "xeno-canto/XC292912",
+          "source": "https://xeno-canto.org/292912",
+          "fileUrl": "https://xeno-canto.org/sounds/uploaded/TWAAJJHMEH/XC292912-Warbler%20DC%20Yellow_Sphinx_151123_37_A_edit2.mp3",
+          "author": "Faansie Peacock",
+          "license": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ]
+    },
+    {
+      "sex": "any",
+      "type": "alarm",
+      "description": "A sharp tsk or chirr; the texts used here do not assign the alarm to one sex.",
+      "recordings": [
+        {
+          "key": "xeno-canto/XC390679",
+          "source": "https://xeno-canto.org/390679",
+          "fileUrl": "https://xeno-canto.org/sounds/uploaded/JDCTKFMBKV/XC390679-04YthrwwarblerEbeneserdam.mp3",
+          "author": "Dawie de Swardt",
+          "license": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ]
+    }
+  ],
+  "images": [
+    {
+      "key": "iduna-natalensis/kruger-side.jpg",
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "source": "https://www.inaturalist.org/observations/337955048",
+      "fileUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/614481322/large.jpg",
+      "author": "Nico",
+      "license": "CC BY-NC 4.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+      "aiGenerated": false,
+      "hosted": false,
+      "alt": "African Yellow Warbler perched side-on in rank stems, Kruger",
+      "caption": "African Yellow Warbler perched side-on in rank stems, Kruger"
+    },
+    {
+      "key": "iduna-natalensis/sunset-front.jpg",
+      "view": "perched-front",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "source": "https://www.inaturalist.org/observations/34722721",
+      "fileUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/54677886/large.jpeg",
+      "author": "copper",
+      "license": "CC BY-NC 4.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+      "aiGenerated": false,
+      "hosted": false,
+      "alt": "African Yellow Warbler perched front-on at Sunset Dam, Kruger",
+      "caption": "African Yellow Warbler perched front-on at Sunset Dam, Kruger"
+    }
+  ],
+  "research": {
+    "confidence": "medium",
+    "needsReview": true,
+    "note": "Kemp classed it as a visiting breeder. SABAP1 found no seasonal movement in the atlas models and called it resident, with a post-breeding shift to lower altitudes in winter, and cited Tarboton and others for it being a rare visitor to the lowveld. Newman says it is present in lower-lying localities during winter. All twelve months are stored from that resident conclusion, not from a Kruger month count. The iris is not named in the texts used here. The underwing is not described. The alarm recording is grade B from Limpopo because no grade-A call was in the catalogue; the song is grade A from the Drakensberg. Chick down is not described. Wikipedia also gives the song as chip-chip-chip-whee-lee-wheeo; Newman’s transcription is the one stored because it is the southern African field guide."
+  }
 }

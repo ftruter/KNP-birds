@@ -5,8 +5,8 @@
   "commonNames": {
     "en": "Reed warblers and allies"
   },
-  "summary": "Field notes for this family are still to be written.",
-  "sampleData": true,
+  "summary": "Reed warblers and allies are small insectivorous songbirds. Most are plain brown and live in reeds or rank cover, while Hippolais spends the non-breeding season in woodland. Kruger has eight species. Older southern African lists placed these birds in Sylviidae. This site follows IOC and BirdLife South Africa and keeps them in Acrocephalidae. The African Yellow Warbler is Iduna natalensis, formerly Chloropeta. The African reed warbler is included in the Common Reed Warbler, Acrocephalus scirpaceus, and that account is the African breeding population.",
+  "sampleData": false,
   "species": [
     {
       "slug": "acrocephalus-arundinaceus",

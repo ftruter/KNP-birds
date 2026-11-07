@@ -7,8 +7,66 @@
     "af": "Europese Vleisanger"
   },
   "family": "acrocephalidae",
-  "summary": "The details for this species have not been published yet.",
-  "sampleData": true,
+  "status": "palearctic-migrant",
+  "monthsPresent": [
+    10,
+    11,
+    12,
+    1,
+    2,
+    3,
+    4
+  ],
+  "size": {
+    "lengthCm": {
+      "min": 11.5,
+      "max": 13
+    },
+    "note": "Wikipedia, citing BTO BirdFacts, gives 11.5–13 cm and a weight around 12 g."
+  },
+  "habitat": "Short swamp vegetation near water, including sedges, inundated grass, tall weeds and the edges of reeds, dams and sewage ponds.",
+  "summary": "The only streaked Acrocephalus in southern Africa, and a Palearctic non-breeding visitor of wet edges. Adults have a streaked olive-brown crown and mantle, a broad creamy supercilium, an unstreaked rufous rump, and creamy underparts with rufous flanks. The sexes look alike; ringing can separate them by brood patch or cloaca, not by plumage. Juveniles have dark spots on the breast. The colour of a newly hatched chick is not described in the texts used here.",
+  "sampleData": false,
+  "similar": [
+    {
+      "slug": "acrocephalus-scirpaceus",
+      "note": "Common Reed Warbler is plain above. Sedge Warbler has a streaked crown and mantle and a broad creamy supercilium."
+    },
+    {
+      "slug": "acrocephalus-gracilirostris",
+      "note": "Lesser Swamp Warbler is plain brown above, larger, and unstreaked, with a long tail."
+    },
+    {
+      "slug": "acrocephalus-arundinaceus",
+      "note": "Great Reed Warbler is plain and much larger. It shares wet habitat but has no blackish streaks on the mantle."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Identifying warblers in the hand",
+      "url": "http://safring.adu.org.za/downloads/raijmakerswarblerid.pdf",
+      "publisher": "SAFRING",
+      "year": null
+    },
+    {
+      "title": "The Atlas of Southern African Birds, Vol. 2 (European Sedge Warbler)",
+      "url": "https://sabap2.birdmap.africa/docs/sabap1/634.pdf",
+      "publisher": "BirdLife South Africa",
+      "year": 1997
+    },
+    {
+      "title": "Acrocephalus schoenobaenus (Sedge warbler), summarised from Roberts VII",
+      "url": "https://www.biodiversityexplorer.info/birds/sylviidae/acrocephalus_schoenobaenus.htm",
+      "publisher": "Iziko Museums of South Africa",
+      "year": null
+    },
+    {
+      "title": "Sedge warbler",
+      "url": "https://en.wikipedia.org/wiki/Sedge_warbler",
+      "publisher": "Wikipedia",
+      "year": 2026
+    }
+  ],
   "population": {
     "estimate": {
       "low": 512,
@@ -35,8 +93,225 @@
     },
     "tierApplied": "D"
   },
-  "variants": [],
-  "viewNotes": [],
-  "calls": [],
-  "images": []
+  "variants": [
+    {
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "marks": {
+        "bill": {
+          "colour": [
+            "black",
+            "yellow"
+          ],
+          "shape": "strong and pointed; blackish-brown, with the base of the lower mandible yellowish-flesh"
+        },
+        "eye": {
+          "iris": "brown",
+          "ring": null
+        },
+        "legs": {
+          "colour": [
+            "grey",
+            "brown"
+          ]
+        },
+        "head": {
+          "crown": [
+            "olive",
+            "brown",
+            "black"
+          ],
+          "face": [
+            "cream",
+            "brown"
+          ],
+          "throat": [
+            "cream",
+            "white"
+          ],
+          "pattern": "broad creamy supercilium and a crown streaked blackish-brown"
+        },
+        "upperparts": {
+          "back": [
+            "olive",
+            "brown",
+            "black"
+          ],
+          "rump": "rufous",
+          "pattern": "mantle and back streaked blackish-brown"
+        },
+        "underparts": {
+          "breast": [
+            "cream",
+            "buff"
+          ],
+          "belly": [
+            "cream",
+            "white"
+          ],
+          "pattern": "creamy-white to buff, with rufous flanks"
+        },
+        "wings": {
+          "above": [
+            "black",
+            "brown"
+          ],
+          "below": [
+            "white",
+            "buff"
+          ]
+        },
+        "tail": {
+          "colour": "brown",
+          "shape": "slightly rounded, dark brown with pale edging"
+        }
+      }
+    },
+    {
+      "age": "juvenile",
+      "sex": "any",
+      "season": "any",
+      "marks": {
+        "bill": {
+          "colour": null,
+          "shape": null
+        },
+        "eye": {
+          "iris": null,
+          "ring": null
+        },
+        "legs": {
+          "colour": null
+        },
+        "head": {
+          "crown": null,
+          "face": null,
+          "throat": null
+        },
+        "upperparts": {
+          "back": null,
+          "rump": null
+        },
+        "underparts": {
+          "breast": [
+            "cream",
+            "black"
+          ],
+          "belly": null,
+          "pattern": "dark spots on the breast"
+        },
+        "wings": {
+          "above": null,
+          "below": null
+        },
+        "tail": {
+          "colour": null,
+          "shape": null
+        }
+      }
+    }
+  ],
+  "viewNotes": [
+    {
+      "view": "flight-above",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Streaked olive-brown mantle, an unstreaked rufous rump, and blackish-brown flight feathers edged pale brown. Tertials are broadly pale-edged."
+    },
+    {
+      "view": "flight-below",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Underwing-coverts are whitish with buffish centres. The underside of the flight feathers is not separately described."
+    },
+    {
+      "view": "perched-front",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "A broad creamy supercilium over dusky lores, with a creamy throat. The streaked crown is visible above the bill."
+    },
+    {
+      "view": "perched-back",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "The streaked mantle contrasts with the plain rufous rump and the dark tail."
+    },
+    {
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "The creamy supercilium, streaked crown and back, and rufous rump show together. It is less of a reed-stem skulker than the plain reed warblers."
+    },
+    {
+      "view": "perched-front",
+      "age": "juvenile",
+      "sex": "any",
+      "season": "any",
+      "note": "Juveniles have dark spots on the breast. A pale central crown stripe can make them harder to separate from other streaked warblers, but those species are not on the Kruger list."
+    }
+  ],
+  "calls": [
+    {
+      "sex": "male",
+      "type": "song",
+      "description": "The male’s song is a run of chattering phrases and can include mimicry of other species.",
+      "recordings": [
+        {
+          "key": "xeno-canto/XC129503",
+          "source": "https://xeno-canto.org/129503",
+          "fileUrl": "https://xeno-canto.org/sounds/uploaded/AZXHPBEVSA/XC129503-SedgeWarblerSong210512.mp3",
+          "author": "Mathias Ritschard",
+          "license": "CC BY-NC-SA 3.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/3.0/",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ]
+    }
+  ],
+  "images": [
+    {
+      "key": "acrocephalus-schoenobaenus/back.jpg",
+      "view": "perched-back",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "source": "https://commons.wikimedia.org/wiki/File:Acrocephalus_schoenobaenus_(on_Phragmites_australis).jpg",
+      "fileUrl": "https://upload.wikimedia.org/wikipedia/commons/a/a8/Acrocephalus_schoenobaenus_%28on_Phragmites_australis%29.jpg",
+      "author": "Hans Hillewaert",
+      "license": "CC BY-SA 3.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "aiGenerated": false,
+      "hosted": false,
+      "alt": "Sedge Warbler from behind on reed stems, showing the streaked mantle",
+      "caption": "Sedge Warbler from behind on reed stems, showing the streaked mantle"
+    },
+    {
+      "key": "acrocephalus-schoenobaenus/side.jpg",
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "source": "https://commons.wikimedia.org/wiki/File:Acrocephalus_schoenobaenus_-Rutland_Water,_Rutland,_England-8.jpg",
+      "fileUrl": "https://upload.wikimedia.org/wikipedia/commons/3/3e/Acrocephalus_schoenobaenus_-Rutland_Water%2C_Rutland%2C_England-8.jpg",
+      "author": "Andy Vernon",
+      "license": "CC BY 2.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by/2.0/",
+      "aiGenerated": false,
+      "hosted": false,
+      "alt": "Sedge Warbler perched side-on in sedges at Rutland Water, England, with a broad pale supercilium",
+      "caption": "Sedge Warbler perched side-on in sedges at Rutland Water, England, with a broad pale supercilium"
+    }
+  ],
+  "research": {
+    "confidence": "medium",
+    "needsReview": false,
+    "note": "Status is palearctic-migrant. Months are October–April. SABAP1 says arrival runs from late October, records before the end of October should be treated cautiously, and departure is in March–April, with no reliable winter records. Raijmakers says November to the end of April. No openly licensed Kruger photograph and no grade-A southern African song were found. The song used is grade A from Poland. A female song is not described. Chick down is not described. Another grade-A file in the same catalogue, XC129494, has a file name that says Marsh Warbler, so it was not used."
+  }
 }

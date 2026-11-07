@@ -7,8 +7,65 @@
     "af": "Grootrietsanger"
   },
   "family": "acrocephalidae",
-  "summary": "The details for this species have not been published yet.",
-  "sampleData": true,
+  "status": "palearctic-migrant",
+  "monthsPresent": [
+    11,
+    12,
+    1,
+    2,
+    3,
+    4
+  ],
+  "size": {
+    "lengthCm": {
+      "min": 16,
+      "max": 21
+    },
+    "note": "Wikipedia gives 16–21 cm."
+  },
+  "habitat": "Tall reeds and bulrushes, and in the wetter north and east also lush thickets and tall grass, including vegetation away from open water.",
+  "summary": "A large plain reed warbler and a Palearctic non-breeding visitor. Adults are olive-brown above with a rufous rump, a strong creamy supercilium, and creamy-white underparts that are warm buff on the flanks. The sexes look alike. Young birds are richer buff below. The colour of a newly hatched chick is not described in the texts used here.",
+  "sampleData": false,
+  "similar": [
+    {
+      "slug": "acrocephalus-scirpaceus",
+      "note": "Common Reed Warbler is much smaller, with a weaker supercilium. In the hand its wing is about 49–65 mm, against about 82–102 mm for Great Reed Warbler."
+    },
+    {
+      "slug": "acrocephalus-gracilirostris",
+      "note": "Lesser Swamp Warbler is a resident of reedbeds, whiter below, with a tail that is longer than the wing. It lacks the Great Reed Warbler’s heavy build."
+    },
+    {
+      "slug": "hippolais-olivetorum",
+      "note": "Olive-tree Warbler can sound similar, but it keeps to Acacia thickets on dry ground rather than reedbeds."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Identifying warblers in the hand",
+      "url": "http://safring.adu.org.za/downloads/raijmakerswarblerid.pdf",
+      "publisher": "SAFRING",
+      "year": null
+    },
+    {
+      "title": "The Atlas of Southern African Birds, Vol. 2 (Great Reed Warbler)",
+      "url": "https://sabap2.birdmap.africa/docs/sabap1/628.pdf",
+      "publisher": "BirdLife South Africa",
+      "year": 1997
+    },
+    {
+      "title": "Acrocephalus arundinaceus (Great reed-warbler), summarised from Roberts VII",
+      "url": "https://www.biodiversityexplorer.info/birds/sylviidae/acrocephalus_arundinaceus.htm",
+      "publisher": "Iziko Museums of South Africa",
+      "year": null
+    },
+    {
+      "title": "Great reed warbler",
+      "url": "https://en.wikipedia.org/wiki/Great_reed_warbler",
+      "publisher": "Wikipedia",
+      "year": 2026
+    }
+  ],
   "population": {
     "estimate": {
       "low": 2048,
@@ -35,8 +92,216 @@
     },
     "tierApplied": "D"
   },
-  "variants": [],
-  "viewNotes": [],
-  "calls": [],
-  "images": []
+  "variants": [
+    {
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "marks": {
+        "bill": {
+          "colour": [
+            "dark-brown",
+            "pink"
+          ],
+          "shape": "long, strong and pointed; the lower mandible is pinkish-flesh with a dark tip"
+        },
+        "eye": {
+          "iris": [
+            "brown",
+            "olive"
+          ],
+          "ring": "cream"
+        },
+        "legs": {
+          "colour": "brown"
+        },
+        "head": {
+          "crown": [
+            "olive",
+            "brown"
+          ],
+          "face": [
+            "brown",
+            "cream",
+            "grey"
+          ],
+          "throat": [
+            "cream",
+            "white"
+          ]
+        },
+        "upperparts": {
+          "back": [
+            "olive",
+            "brown"
+          ],
+          "rump": "rufous"
+        },
+        "underparts": {
+          "breast": [
+            "cream",
+            "white"
+          ],
+          "belly": [
+            "cream",
+            "white"
+          ],
+          "pattern": "lower throat and upper breast often faintly streaked pale brown; sides of the breast and flanks warm buff"
+        },
+        "wings": {
+          "above": [
+            "grey",
+            "brown",
+            "olive"
+          ],
+          "below": "buff"
+        },
+        "tail": {
+          "colour": "brown",
+          "shape": "brown feathers with pale tips"
+        }
+      }
+    },
+    {
+      "age": "juvenile",
+      "sex": "any",
+      "season": "any",
+      "marks": {
+        "bill": {
+          "colour": null,
+          "shape": null
+        },
+        "eye": {
+          "iris": null,
+          "ring": null
+        },
+        "legs": {
+          "colour": null
+        },
+        "head": {
+          "crown": null,
+          "face": null,
+          "throat": null
+        },
+        "upperparts": {
+          "back": null,
+          "rump": null
+        },
+        "underparts": {
+          "breast": "buff",
+          "belly": "buff"
+        },
+        "wings": {
+          "above": null,
+          "below": null
+        },
+        "tail": {
+          "colour": null,
+          "shape": null
+        }
+      }
+    }
+  ],
+  "viewNotes": [
+    {
+      "view": "flight-above",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Olive-brown upperparts, a rufous rump, and dark grey-brown flight feathers with olive-brown edges. The upperwing is not described as having a pale panel."
+    },
+    {
+      "view": "flight-below",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Underwing-coverts are buff. The underside of the flight feathers is not separately described."
+    },
+    {
+      "view": "perched-front",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "A buffish-yellow to creamy-white supercilium and a creamy-white eye-ring sit over brown cheeks, with a creamy-white throat and breast. The bill is long and dark, with a pinkish lower mandible."
+    },
+    {
+      "view": "perched-back",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Olive-brown mantle and a rufous rump, with a brown tail that has pale tips."
+    },
+    {
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "A heavy plain warbler: long bill, strong supercilium, olive-brown back, rufous rump, and creamy underparts that become warm buff on the flanks. Legs are described as greyish-brown, greenish-brown, pale brown or yellowish-brown."
+    },
+    {
+      "view": "perched-front",
+      "age": "juvenile",
+      "sex": "any",
+      "season": "any",
+      "note": "Young birds are richer buff below than adults. Other juvenile marks are not separately described."
+    }
+  ],
+  "calls": [
+    {
+      "sex": "any",
+      "type": "song",
+      "description": "A loud far-carrying chatter, carr-carr-cree-cree-cree-jet-jet, with whistles and mimicry; the texts used here do not say whether females give the same song.",
+      "recordings": [
+        {
+          "key": "xeno-canto/XC364288",
+          "source": "https://xeno-canto.org/364288",
+          "fileUrl": "https://xeno-canto.org/sounds/uploaded/TWAAJJHMEH/XC364288-Warbler%20Great%20Reed_Wilge_161231_56_A_short.mp3",
+          "author": "Faansie Peacock",
+          "license": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ]
+    }
+  ],
+  "images": [
+    {
+      "key": "acrocephalus-arundinaceus/mopani-side.jpg",
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "source": "https://www.inaturalist.org/observations/202040964",
+      "fileUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/356756087/large.jpg",
+      "author": "Duncan McKenzie",
+      "license": "CC BY-NC 4.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+      "aiGenerated": false,
+      "hosted": false,
+      "alt": "Adult Great Reed Warbler perched side-on in reeds, Mopani district",
+      "caption": "Adult Great Reed Warbler perched side-on in reeds, Mopani district"
+    },
+    {
+      "key": "acrocephalus-arundinaceus/ehlanzeni-side.jpg",
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "source": "https://www.inaturalist.org/observations/195748593",
+      "fileUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/344454028/large.jpg",
+      "author": "Duncan McKenzie",
+      "license": "CC BY-NC 4.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+      "aiGenerated": false,
+      "hosted": false,
+      "alt": "Adult Great Reed Warbler perched side-on in leafy cover, Ehlanzeni district",
+      "caption": "Adult Great Reed Warbler perched side-on in leafy cover, Ehlanzeni district"
+    }
+  ],
+  "research": {
+    "confidence": "medium",
+    "needsReview": false,
+    "note": "Status is palearctic-migrant, matching Kemp’s non-breeding visitor. Months are November–April: SABAP1 gives the main influx as late November and December and departure in March–April, and says September and October records should be treated cautiously. Raijmakers recorded birds from October. No open photograph shows the upperwing or underwing clearly, and chick down is not described. The song recording is grade A from Gauteng, not Kruger. Worn and freshly moulted birds both occur in the southern summer, so that change is not stored as a summer-versus-winter plumage."
+  }
 }

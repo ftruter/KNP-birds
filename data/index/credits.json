@@ -207,14 +207,69 @@
       "slug": "acrocephalus-arundinaceus",
       "scientificName": "Acrocephalus arundinaceus",
       "commonName": "Great Reed Warbler",
-      "images": [],
-      "recordings": [],
+      "images": [
+        {
+          "key": "acrocephalus-arundinaceus/mopani-side.jpg",
+          "author": "Duncan McKenzie",
+          "licence": "CC BY-NC 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+          "sourceUrl": "https://www.inaturalist.org/observations/202040964",
+          "aiGenerated": false,
+          "hosted": false
+        },
+        {
+          "key": "acrocephalus-arundinaceus/ehlanzeni-side.jpg",
+          "author": "Duncan McKenzie",
+          "licence": "CC BY-NC 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+          "sourceUrl": "https://www.inaturalist.org/observations/195748593",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ],
+      "recordings": [
+        {
+          "key": "xeno-canto/XC364288",
+          "author": "Faansie Peacock",
+          "licence": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "sourceUrl": "https://xeno-canto.org/364288",
+          "aiGenerated": false,
+          "hosted": false,
+          "quality": "A",
+          "callType": "song"
+        }
+      ],
       "sources": [
         {
           "title": "Kemp A.C., Herholdt J.J., Whyte I. & Harrison J. (2001). Birds of the two largest national parks in South Africa: a method to generate estimates of population size for all species and assess their conservation ecology. S. Afr. J. Sci. 97: 393–403.",
           "url": "https://journals.co.za/doi/pdf/10.10520/EJC97367",
           "publisher": "South African Journal of Science",
           "year": 2001
+        },
+        {
+          "title": "Identifying warblers in the hand",
+          "url": "http://safring.adu.org.za/downloads/raijmakerswarblerid.pdf",
+          "publisher": "SAFRING",
+          "year": null
+        },
+        {
+          "title": "The Atlas of Southern African Birds, Vol. 2 (Great Reed Warbler)",
+          "url": "https://sabap2.birdmap.africa/docs/sabap1/628.pdf",
+          "publisher": "BirdLife South Africa",
+          "year": 1997
+        },
+        {
+          "title": "Acrocephalus arundinaceus (Great reed-warbler), summarised from Roberts VII",
+          "url": "https://www.biodiversityexplorer.info/birds/sylviidae/acrocephalus_arundinaceus.htm",
+          "publisher": "Iziko Museums of South Africa",
+          "year": null
+        },
+        {
+          "title": "Great reed warbler",
+          "url": "https://en.wikipedia.org/wiki/Great_reed_warbler",
+          "publisher": "Wikipedia",
+          "year": 2026
         }
       ]
     },
@@ -222,14 +277,75 @@
       "slug": "acrocephalus-gracilirostris",
       "scientificName": "Acrocephalus gracilirostris",
       "commonName": "Lesser Swamp Warbler",
-      "images": [],
-      "recordings": [],
+      "images": [
+        {
+          "key": "acrocephalus-gracilirostris/malelane-front.jpg",
+          "author": "Tivan Kotze",
+          "licence": "CC BY-NC 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+          "sourceUrl": "https://www.inaturalist.org/observations/301776181",
+          "aiGenerated": false,
+          "hosted": false
+        },
+        {
+          "key": "acrocephalus-gracilirostris/side.jpg",
+          "author": "Bernard DUPONT",
+          "licence": "CC BY-SA 2.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-sa/2.0/",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Lesser_Swamp_Warbler_(Acrocephalus_gracilirostris)_(32764243466).jpg",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ],
+      "recordings": [
+        {
+          "key": "xeno-canto/XC422219",
+          "author": "Tony Archer",
+          "licence": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "sourceUrl": "https://xeno-canto.org/422219",
+          "aiGenerated": false,
+          "hosted": false,
+          "quality": "A",
+          "callType": "song"
+        }
+      ],
       "sources": [
         {
           "title": "Kemp A.C., Herholdt J.J., Whyte I. & Harrison J. (2001). Birds of the two largest national parks in South Africa: a method to generate estimates of population size for all species and assess their conservation ecology. S. Afr. J. Sci. 97: 393–403.",
           "url": "https://journals.co.za/doi/pdf/10.10520/EJC97367",
           "publisher": "South African Journal of Science",
           "year": 2001
+        },
+        {
+          "title": "Identifying warblers in the hand",
+          "url": "http://safring.adu.org.za/downloads/raijmakerswarblerid.pdf",
+          "publisher": "SAFRING",
+          "year": null
+        },
+        {
+          "title": "The Atlas of Southern African Birds, Vol. 2 (Cape Reed Warbler)",
+          "url": "https://sabap2.birdmap.africa/docs/sabap1/635.pdf",
+          "publisher": "BirdLife South Africa",
+          "year": 1997
+        },
+        {
+          "title": "Acrocephalus gracilirostris (Lesser swamp-warbler), summarised from Roberts VII",
+          "url": "https://www.biodiversityexplorer.info/birds/sylviidae/acrocephalus_gracilirostris.htm",
+          "publisher": "Iziko Museums of South Africa",
+          "year": null
+        },
+        {
+          "title": "Lesser swamp warbler",
+          "url": "https://en.wikipedia.org/wiki/Lesser_swamp_warbler",
+          "publisher": "Wikipedia",
+          "year": 2026
+        },
+        {
+          "title": "Lesser Swamp Warbler (Acrocephalus gracilirostris)",
+          "url": "https://thebdi.org/2026/02/23/lesser-swamp-warbler-acrocephalus-gracilirostris/",
+          "publisher": "Biodiversity and Development Institute",
+          "year": 2026
         }
       ]
     },
@@ -237,14 +353,69 @@
       "slug": "acrocephalus-palustris",
       "scientificName": "Acrocephalus palustris",
       "commonName": "Marsh Warbler",
-      "images": [],
-      "recordings": [],
+      "images": [
+        {
+          "key": "acrocephalus-palustris/mopani-side.jpg",
+          "author": "Niall Perrins",
+          "licence": "CC BY-NC 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+          "sourceUrl": "https://www.inaturalist.org/observations/373839099",
+          "aiGenerated": false,
+          "hosted": false
+        },
+        {
+          "key": "acrocephalus-palustris/front.jpg",
+          "author": "Аимаина хикари",
+          "licence": "CC0 1.0",
+          "licenceUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Acrocephalus_palustris_Irpin4.JPG",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ],
+      "recordings": [
+        {
+          "key": "xeno-canto/XC633451",
+          "author": "Lynette Rudman",
+          "licence": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "sourceUrl": "https://xeno-canto.org/633451",
+          "aiGenerated": false,
+          "hosted": false,
+          "quality": "A",
+          "callType": "song"
+        }
+      ],
       "sources": [
         {
           "title": "Kemp A.C., Herholdt J.J., Whyte I. & Harrison J. (2001). Birds of the two largest national parks in South Africa: a method to generate estimates of population size for all species and assess their conservation ecology. S. Afr. J. Sci. 97: 393–403.",
           "url": "https://journals.co.za/doi/pdf/10.10520/EJC97367",
           "publisher": "South African Journal of Science",
           "year": 2001
+        },
+        {
+          "title": "Identifying warblers in the hand",
+          "url": "http://safring.adu.org.za/downloads/raijmakerswarblerid.pdf",
+          "publisher": "SAFRING",
+          "year": null
+        },
+        {
+          "title": "The Atlas of Southern African Birds, Vol. 2 (European Marsh Warbler)",
+          "url": "https://sabap2.birdmap.africa/docs/sabap1/633.pdf",
+          "publisher": "BirdLife South Africa",
+          "year": 1997
+        },
+        {
+          "title": "Acrocephalus palustris (Marsh warbler), summarised from Roberts VII",
+          "url": "https://www.biodiversityexplorer.info/birds/sylviidae/acrocephalus_palustris.htm",
+          "publisher": "Iziko Museums of South Africa",
+          "year": null
+        },
+        {
+          "title": "Marsh warbler",
+          "url": "https://en.wikipedia.org/wiki/Marsh_warbler",
+          "publisher": "Wikipedia",
+          "year": 2026
         }
       ]
     },
@@ -252,14 +423,133 @@
       "slug": "acrocephalus-schoenobaenus",
       "scientificName": "Acrocephalus schoenobaenus",
       "commonName": "Sedge Warbler",
-      "images": [],
-      "recordings": [],
+      "images": [
+        {
+          "key": "acrocephalus-schoenobaenus/back.jpg",
+          "author": "Hans Hillewaert",
+          "licence": "CC BY-SA 3.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Acrocephalus_schoenobaenus_(on_Phragmites_australis).jpg",
+          "aiGenerated": false,
+          "hosted": false
+        },
+        {
+          "key": "acrocephalus-schoenobaenus/side.jpg",
+          "author": "Andy Vernon",
+          "licence": "CC BY 2.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by/2.0/",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Acrocephalus_schoenobaenus_-Rutland_Water,_Rutland,_England-8.jpg",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ],
+      "recordings": [
+        {
+          "key": "xeno-canto/XC129503",
+          "author": "Mathias Ritschard",
+          "licence": "CC BY-NC-SA 3.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/3.0/",
+          "sourceUrl": "https://xeno-canto.org/129503",
+          "aiGenerated": false,
+          "hosted": false,
+          "quality": "A",
+          "callType": "song"
+        }
+      ],
       "sources": [
         {
           "title": "Kemp A.C., Herholdt J.J., Whyte I. & Harrison J. (2001). Birds of the two largest national parks in South Africa: a method to generate estimates of population size for all species and assess their conservation ecology. S. Afr. J. Sci. 97: 393–403.",
           "url": "https://journals.co.za/doi/pdf/10.10520/EJC97367",
           "publisher": "South African Journal of Science",
           "year": 2001
+        },
+        {
+          "title": "Identifying warblers in the hand",
+          "url": "http://safring.adu.org.za/downloads/raijmakerswarblerid.pdf",
+          "publisher": "SAFRING",
+          "year": null
+        },
+        {
+          "title": "The Atlas of Southern African Birds, Vol. 2 (European Sedge Warbler)",
+          "url": "https://sabap2.birdmap.africa/docs/sabap1/634.pdf",
+          "publisher": "BirdLife South Africa",
+          "year": 1997
+        },
+        {
+          "title": "Acrocephalus schoenobaenus (Sedge warbler), summarised from Roberts VII",
+          "url": "https://www.biodiversityexplorer.info/birds/sylviidae/acrocephalus_schoenobaenus.htm",
+          "publisher": "Iziko Museums of South Africa",
+          "year": null
+        },
+        {
+          "title": "Sedge warbler",
+          "url": "https://en.wikipedia.org/wiki/Sedge_warbler",
+          "publisher": "Wikipedia",
+          "year": 2026
+        }
+      ]
+    },
+    {
+      "slug": "acrocephalus-scirpaceus",
+      "scientificName": "Acrocephalus scirpaceus",
+      "commonName": "Common Reed Warbler",
+      "images": [
+        {
+          "key": "acrocephalus-scirpaceus/mopani-back.jpg",
+          "author": "Alan Manson",
+          "licence": "CC BY 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by/4.0/",
+          "sourceUrl": "https://www.inaturalist.org/observations/250427511",
+          "aiGenerated": false,
+          "hosted": false
+        },
+        {
+          "key": "acrocephalus-scirpaceus/back.jpg",
+          "author": "Alan Manson",
+          "licence": "CC BY-SA 2.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-sa/2.0/",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:African_Reed_Warbler_(Acrocephalus_baeticatus)_from_behind,_looking_to_the_right.jpg",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ],
+      "recordings": [
+        {
+          "key": "xeno-canto/XC488497",
+          "author": "Derek Solomon",
+          "licence": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "sourceUrl": "https://xeno-canto.org/488497",
+          "aiGenerated": false,
+          "hosted": false,
+          "quality": "A",
+          "callType": "song"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Identifying warblers in the hand",
+          "url": "http://safring.adu.org.za/downloads/raijmakerswarblerid.pdf",
+          "publisher": "SAFRING",
+          "year": null
+        },
+        {
+          "title": "The Atlas of Southern African Birds, Vol. 2 (African Marsh Warbler)",
+          "url": "https://sabap2.birdmap.africa/docs/sabap1/631.pdf",
+          "publisher": "BirdLife South Africa",
+          "year": 1997
+        },
+        {
+          "title": "Acrocephalus baeticatus (African reed-warbler), summarised from Roberts VII",
+          "url": "https://www.biodiversityexplorer.info/birds/sylviidae/acrocephalus_baeticatus.htm",
+          "publisher": "Iziko Museums of South Africa",
+          "year": null
+        },
+        {
+          "title": "Common reed warbler",
+          "url": "https://en.wikipedia.org/wiki/Common_reed_warbler",
+          "publisher": "Wikipedia",
+          "year": 2026
         }
       ]
     },
@@ -7159,14 +7449,86 @@
       "slug": "hippolais-icterina",
       "scientificName": "Hippolais icterina",
       "commonName": "Icterine Warbler",
-      "images": [],
-      "recordings": [],
+      "images": [
+        {
+          "key": "hippolais-icterina/ehlanzeni-front.jpg",
+          "author": "Marc Cronje",
+          "licence": "CC BY-NC 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+          "sourceUrl": "https://www.inaturalist.org/observations/333164098",
+          "aiGenerated": false,
+          "hosted": false
+        },
+        {
+          "key": "hippolais-icterina/mopani-back.jpg",
+          "author": "Christiaan Viljoen",
+          "licence": "CC BY 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by/4.0/",
+          "sourceUrl": "https://www.inaturalist.org/observations/196678643",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ],
+      "recordings": [
+        {
+          "key": "xeno-canto/XC27125",
+          "author": "Patrik Åberg",
+          "licence": "CC BY-NC-SA 3.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/3.0/",
+          "sourceUrl": "https://xeno-canto.org/27125",
+          "aiGenerated": false,
+          "hosted": false,
+          "quality": "A",
+          "callType": "song"
+        },
+        {
+          "key": "xeno-canto/XC448260",
+          "author": "Patrik Åberg",
+          "licence": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "sourceUrl": "https://xeno-canto.org/448260",
+          "aiGenerated": false,
+          "hosted": false,
+          "quality": "A",
+          "callType": "call"
+        }
+      ],
       "sources": [
         {
           "title": "Kemp A.C., Herholdt J.J., Whyte I. & Harrison J. (2001). Birds of the two largest national parks in South Africa: a method to generate estimates of population size for all species and assess their conservation ecology. S. Afr. J. Sci. 97: 393–403.",
           "url": "https://journals.co.za/doi/pdf/10.10520/EJC97367",
           "publisher": "South African Journal of Science",
           "year": 2001
+        },
+        {
+          "title": "Identifying warblers in the hand",
+          "url": "http://safring.adu.org.za/downloads/raijmakerswarblerid.pdf",
+          "publisher": "SAFRING",
+          "year": null
+        },
+        {
+          "title": "The Atlas of Southern African Birds, Vol. 2 (Icterine Warbler)",
+          "url": "https://sabap2.birdmap.africa/docs/sabap1/625.pdf",
+          "publisher": "BirdLife South Africa",
+          "year": 1997
+        },
+        {
+          "title": "Hippolais icterina (Icterine warbler), summarised from Roberts VII",
+          "url": "https://www.biodiversityexplorer.info/birds/sylviidae/hippolais_icterina.htm",
+          "publisher": "Iziko Museums of South Africa",
+          "year": null
+        },
+        {
+          "title": "Icterine Warbler",
+          "url": "https://newmansbirds.com/birds/icterine-warbler/",
+          "publisher": "Newman's Birds",
+          "year": null
+        },
+        {
+          "title": "Icterine warbler",
+          "url": "https://en.wikipedia.org/wiki/Icterine_warbler",
+          "publisher": "Wikipedia",
+          "year": 2026
         }
       ]
     },
@@ -7174,14 +7536,80 @@
       "slug": "hippolais-olivetorum",
       "scientificName": "Hippolais olivetorum",
       "commonName": "Olive-tree Warbler",
-      "images": [],
-      "recordings": [],
+      "images": [
+        {
+          "key": "hippolais-olivetorum/mopani-side.jpg",
+          "author": "simonescrase",
+          "licence": "CC BY-NC 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+          "sourceUrl": "https://www.inaturalist.org/observations/254891440",
+          "aiGenerated": false,
+          "hosted": false
+        },
+        {
+          "key": "hippolais-olivetorum/skukuza-side.jpg",
+          "author": "Corrie du Toit",
+          "licence": "CC BY-NC 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+          "sourceUrl": "https://www.inaturalist.org/observations/343456345",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ],
+      "recordings": [
+        {
+          "key": "xeno-canto/XC176955",
+          "author": "Jerome Fischer",
+          "licence": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "sourceUrl": "https://xeno-canto.org/176955",
+          "aiGenerated": false,
+          "hosted": false,
+          "quality": "A",
+          "callType": "song"
+        },
+        {
+          "key": "xeno-canto/XC336507",
+          "author": "Heidi Vibe Frederiksen",
+          "licence": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "sourceUrl": "https://xeno-canto.org/336507",
+          "aiGenerated": false,
+          "hosted": false,
+          "quality": "A",
+          "callType": "call"
+        }
+      ],
       "sources": [
         {
           "title": "Kemp A.C., Herholdt J.J., Whyte I. & Harrison J. (2001). Birds of the two largest national parks in South Africa: a method to generate estimates of population size for all species and assess their conservation ecology. S. Afr. J. Sci. 97: 393–403.",
           "url": "https://journals.co.za/doi/pdf/10.10520/EJC97367",
           "publisher": "South African Journal of Science",
           "year": 2001
+        },
+        {
+          "title": "Identifying warblers in the hand",
+          "url": "http://safring.adu.org.za/downloads/raijmakerswarblerid.pdf",
+          "publisher": "SAFRING",
+          "year": null
+        },
+        {
+          "title": "The Atlas of Southern African Birds, Vol. 2 (Olivetree Warbler)",
+          "url": "https://sabap2.birdmap.africa/docs/sabap1/626.pdf",
+          "publisher": "BirdLife South Africa",
+          "year": 1997
+        },
+        {
+          "title": "Hippolais olivetorum (Olive-tree warbler), summarised from Roberts VII",
+          "url": "https://www.biodiversityexplorer.info/birds/sylviidae/hippolais_olivetorum.htm",
+          "publisher": "Iziko Museums of South Africa",
+          "year": null
+        },
+        {
+          "title": "Olive-tree warbler",
+          "url": "https://en.wikipedia.org/wiki/Olive-tree_warbler",
+          "publisher": "Wikipedia",
+          "year": 2026
         }
       ]
     },
@@ -7386,14 +7814,80 @@
       "slug": "iduna-natalensis",
       "scientificName": "Iduna natalensis",
       "commonName": "African (Dark-capped) Yellow Warbler",
-      "images": [],
-      "recordings": [],
+      "images": [
+        {
+          "key": "iduna-natalensis/kruger-side.jpg",
+          "author": "Nico",
+          "licence": "CC BY-NC 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+          "sourceUrl": "https://www.inaturalist.org/observations/337955048",
+          "aiGenerated": false,
+          "hosted": false
+        },
+        {
+          "key": "iduna-natalensis/sunset-front.jpg",
+          "author": "copper",
+          "licence": "CC BY-NC 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+          "sourceUrl": "https://www.inaturalist.org/observations/34722721",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ],
+      "recordings": [
+        {
+          "key": "xeno-canto/XC292912",
+          "author": "Faansie Peacock",
+          "licence": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "sourceUrl": "https://xeno-canto.org/292912",
+          "aiGenerated": false,
+          "hosted": false,
+          "quality": "A",
+          "callType": "song"
+        },
+        {
+          "key": "xeno-canto/XC390679",
+          "author": "Dawie de Swardt",
+          "licence": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "sourceUrl": "https://xeno-canto.org/390679",
+          "aiGenerated": false,
+          "hosted": false,
+          "quality": "B",
+          "callType": "alarm"
+        }
+      ],
       "sources": [
         {
           "title": "Kemp A.C., Herholdt J.J., Whyte I. & Harrison J. (2001). Birds of the two largest national parks in South Africa: a method to generate estimates of population size for all species and assess their conservation ecology. S. Afr. J. Sci. 97: 393–403.",
           "url": "https://journals.co.za/doi/pdf/10.10520/EJC97367",
           "publisher": "South African Journal of Science",
           "year": 2001
+        },
+        {
+          "title": "The Atlas of Southern African Birds, Vol. 2 (Yellow Warbler)",
+          "url": "https://sabap2.birdmap.africa/docs/sabap1/637.pdf",
+          "publisher": "BirdLife South Africa",
+          "year": 1997
+        },
+        {
+          "title": "Chloropeta natalensis (Dark-capped yellow warbler), summarised from Roberts VII",
+          "url": "https://www.biodiversityexplorer.info/birds/sylviidae/chloropeta_natalensis.htm",
+          "publisher": "Iziko Museums of South Africa",
+          "year": null
+        },
+        {
+          "title": "African Yellow Warbler",
+          "url": "https://newmansbirds.com/birds/african-yellow-warbler/",
+          "publisher": "Newman's Birds",
+          "year": null
+        },
+        {
+          "title": "African yellow warbler",
+          "url": "https://en.wikipedia.org/wiki/African_yellow_warbler",
+          "publisher": "Wikipedia",
+          "year": 2026
         }
       ]
     },

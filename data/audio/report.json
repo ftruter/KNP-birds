@@ -1,11 +1,11 @@
 {
   "source": "xeno-canto explore catalogue, API v3 recording fields",
   "counts": {
-    "slots": 62,
+    "slots": 74,
     "swapped": 17,
     "added": 7,
-    "kept": 36,
-    "none": 2,
+    "kept": 47,
+    "none": 3,
     "cleaned": 0
   },
   "noUsableRecording": [
@@ -18,6 +18,11 @@
       "slug": "trigonoceps-occipitalis",
       "scientificName": "Trigonoceps occipitalis",
       "type": "call"
+    },
+    {
+      "slug": "acrocephalus-palustris",
+      "scientificName": "Acrocephalus palustris",
+      "type": "song"
     }
   ],
   "speciesWithoutAnyRecording": [
@@ -1079,6 +1084,196 @@
       "locality": "",
       "cleaned": false,
       "license": ""
+    },
+    {
+      "slug": "acrocephalus-arundinaceus",
+      "scientificName": "Acrocephalus arundinaceus",
+      "index": 0,
+      "type": "song",
+      "action": "kept",
+      "from": [
+        "364288"
+      ],
+      "to": "364288",
+      "quality": "A",
+      "country": "South Africa",
+      "locality": "Wilge River Valley, Bronkhorstspruit, Gauteng",
+      "cleaned": false,
+      "license": "CC BY-NC-SA 4.0"
+    },
+    {
+      "slug": "acrocephalus-gracilirostris",
+      "scientificName": "Acrocephalus gracilirostris",
+      "index": 0,
+      "type": "song",
+      "action": "kept",
+      "from": [
+        "422219"
+      ],
+      "to": "422219",
+      "quality": "A",
+      "country": "South Africa",
+      "locality": "Klerksdorp, Southern DC, North West",
+      "cleaned": false,
+      "license": "CC BY-NC-SA 4.0"
+    },
+    {
+      "slug": "acrocephalus-palustris",
+      "scientificName": "Acrocephalus palustris",
+      "index": 0,
+      "type": "song",
+      "action": "kept",
+      "from": [
+        "633451"
+      ],
+      "to": "633451",
+      "quality": "A",
+      "country": "South Africa",
+      "locality": "Ndlambe Local Municipality (near Seafield), Western District, Eastern Cape",
+      "cleaned": false,
+      "license": "CC BY-NC-SA 4.0"
+    },
+    {
+      "slug": "acrocephalus-palustris",
+      "scientificName": "Acrocephalus palustris",
+      "index": 1,
+      "type": "song",
+      "action": "none",
+      "from": [],
+      "to": "",
+      "quality": "",
+      "country": "",
+      "locality": "",
+      "cleaned": false,
+      "license": ""
+    },
+    {
+      "slug": "acrocephalus-schoenobaenus",
+      "scientificName": "Acrocephalus schoenobaenus",
+      "index": 0,
+      "type": "song",
+      "action": "kept",
+      "from": [
+        "129503"
+      ],
+      "to": "129503",
+      "quality": "A",
+      "country": "Poland",
+      "locality": "Bialowieza",
+      "cleaned": false,
+      "license": "CC BY-NC-SA 3.0"
+    },
+    {
+      "slug": "acrocephalus-scirpaceus",
+      "scientificName": "Acrocephalus scirpaceus",
+      "index": 0,
+      "type": "song",
+      "action": "kept",
+      "from": [
+        "488497"
+      ],
+      "to": "488497",
+      "quality": "A",
+      "country": "South Africa",
+      "locality": "Kruger Park, Ehlanzeni, Mpumalanga",
+      "cleaned": false,
+      "license": "CC BY-NC-SA 4.0"
+    },
+    {
+      "slug": "hippolais-icterina",
+      "scientificName": "Hippolais icterina",
+      "index": 0,
+      "type": "song",
+      "action": "kept",
+      "from": [
+        "27125"
+      ],
+      "to": "27125",
+      "quality": "A",
+      "country": "Sweden",
+      "locality": "Hammarsudden, Brevik, Västergötland",
+      "cleaned": false,
+      "license": "CC BY-NC-SA 3.0"
+    },
+    {
+      "slug": "hippolais-icterina",
+      "scientificName": "Hippolais icterina",
+      "index": 1,
+      "type": "call",
+      "action": "kept",
+      "from": [
+        "448260"
+      ],
+      "to": "448260",
+      "quality": "A",
+      "country": "Sweden",
+      "locality": "Enebågsudden, Brevik, Västergötland",
+      "cleaned": false,
+      "license": "CC BY-NC-SA 4.0"
+    },
+    {
+      "slug": "hippolais-olivetorum",
+      "scientificName": "Hippolais olivetorum",
+      "index": 0,
+      "type": "song",
+      "action": "kept",
+      "from": [
+        "176955"
+      ],
+      "to": "176955",
+      "quality": "A",
+      "country": "Greece",
+      "locality": "Lesbos Prefecture, North Aegean, Egeo",
+      "cleaned": false,
+      "license": "CC BY-NC-SA 4.0"
+    },
+    {
+      "slug": "hippolais-olivetorum",
+      "scientificName": "Hippolais olivetorum",
+      "index": 1,
+      "type": "call",
+      "action": "kept",
+      "from": [
+        "336507"
+      ],
+      "to": "336507",
+      "quality": "A",
+      "country": "Israel",
+      "locality": "International Birding and Research Centre Eilat (IBRCE)",
+      "cleaned": false,
+      "license": "CC BY-NC-SA 4.0"
+    },
+    {
+      "slug": "iduna-natalensis",
+      "scientificName": "Iduna natalensis",
+      "index": 0,
+      "type": "song",
+      "action": "kept",
+      "from": [
+        "292912"
+      ],
+      "to": "292912",
+      "quality": "A",
+      "country": "South Africa",
+      "locality": "Sphinx, above Monk's Cowl, Drakensberg, KwaZulu-Natal",
+      "cleaned": false,
+      "license": "CC BY-NC-SA 4.0"
+    },
+    {
+      "slug": "iduna-natalensis",
+      "scientificName": "Iduna natalensis",
+      "index": 1,
+      "type": "alarm",
+      "action": "kept",
+      "from": [
+        "390679"
+      ],
+      "to": "390679",
+      "quality": "B",
+      "country": "South Africa",
+      "locality": "Ebeneser dam area, Haernertsburg, Limpopo",
+      "cleaned": false,
+      "license": "CC BY-NC-SA 4.0"
     }
   ]
 }

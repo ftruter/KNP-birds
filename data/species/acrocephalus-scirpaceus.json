@@ -7,8 +7,68 @@
     "af": "Kleinrietsanger"
   },
   "family": "acrocephalidae",
-  "summary": "The details for this species have not been published yet.",
-  "sampleData": true,
+  "status": "intra-african-migrant",
+  "monthsPresent": [
+    9,
+    10,
+    11,
+    12,
+    1,
+    2,
+    3,
+    4,
+    5
+  ],
+  "size": {
+    "lengthCm": {
+      "min": 13,
+      "max": 13
+    },
+    "note": "Wikipedia, citing Cramp 1992, gives 13 cm for the species as a whole. Raijmakers gives wing length 49–65 mm for the southern African birds and does not give total length."
+  },
+  "habitat": "Reedbeds, sedges and other dense vegetation in or beside water, and also shrubs, tall grass and wooded places, including drier cover outside the breeding season.",
+  "summary": "The small breeding reed warbler of southern Africa, kept by IOC and BirdLife South Africa inside Common Reed Warbler. Birds in Kruger are that African population, formerly called African Reed Warbler. Adults are warm brown above with a rufous rump, an indistinct eyebrow, and buffish-white underparts with cinnamon-buff flanks. The sexes look alike. Young birds are richer buff below, and immatures have a paler yellow gape flange than adults. The colour of a newly hatched chick is not described in the texts used here. The rare Palearctic reed warbler is not given a separate account.",
+  "sampleData": false,
+  "similar": [
+    {
+      "slug": "acrocephalus-palustris",
+      "note": "Marsh Warbler is more olive, usually in thicket away from reeds, and its adult rump is not rufous. The songs differ. Silent birds are a known identification problem and may need measurements."
+    },
+    {
+      "slug": "acrocephalus-gracilirostris",
+      "note": "Lesser Swamp Warbler is larger, darker above, whiter below, and has a stronger eyebrow and a longer tail."
+    },
+    {
+      "slug": "acrocephalus-arundinaceus",
+      "note": "Great Reed Warbler looks like a much larger, heavier-billed version with a stronger supercilium."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Identifying warblers in the hand",
+      "url": "http://safring.adu.org.za/downloads/raijmakerswarblerid.pdf",
+      "publisher": "SAFRING",
+      "year": null
+    },
+    {
+      "title": "The Atlas of Southern African Birds, Vol. 2 (African Marsh Warbler)",
+      "url": "https://sabap2.birdmap.africa/docs/sabap1/631.pdf",
+      "publisher": "BirdLife South Africa",
+      "year": 1997
+    },
+    {
+      "title": "Acrocephalus baeticatus (African reed-warbler), summarised from Roberts VII",
+      "url": "https://www.biodiversityexplorer.info/birds/sylviidae/acrocephalus_baeticatus.htm",
+      "publisher": "Iziko Museums of South Africa",
+      "year": null
+    },
+    {
+      "title": "Common reed warbler",
+      "url": "https://en.wikipedia.org/wiki/Common_reed_warbler",
+      "publisher": "Wikipedia",
+      "year": 2026
+    }
+  ],
   "population": {
     "estimate": {
       "low": null,
@@ -21,8 +81,207 @@
     "notes": "No sourced Kruger estimate is currently available; taxonomy or later records require separate research.",
     "sources": []
   },
-  "variants": [],
-  "viewNotes": [],
-  "calls": [],
-  "images": []
+  "variants": [
+    {
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "marks": {
+        "bill": {
+          "colour": [
+            "black",
+            "brown",
+            "pink"
+          ],
+          "shape": "slender and pointed; blackish-horn to brown, sometimes with a yellowish edge, and a pinkish-flesh lower mandible"
+        },
+        "eye": {
+          "iris": "brown",
+          "ring": null
+        },
+        "legs": {
+          "colour": [
+            "olive",
+            "brown"
+          ]
+        },
+        "head": {
+          "crown": "brown",
+          "face": [
+            "brown",
+            "buff"
+          ],
+          "throat": [
+            "buff",
+            "white"
+          ]
+        },
+        "upperparts": {
+          "back": "brown",
+          "rump": "rufous"
+        },
+        "underparts": {
+          "breast": [
+            "buff",
+            "white",
+            "cinnamon"
+          ],
+          "belly": [
+            "buff",
+            "white"
+          ],
+          "pattern": "buffish-white, with cinnamon-buff to rufous flanks"
+        },
+        "wings": {
+          "above": "brown",
+          "below": "buff"
+        },
+        "tail": {
+          "colour": "brown",
+          "shape": "dark brown, sometimes with a buffish tip; the folded wing does not extend beyond the rump"
+        }
+      }
+    },
+    {
+      "age": "juvenile",
+      "sex": "any",
+      "season": "any",
+      "marks": {
+        "bill": {
+          "colour": null,
+          "shape": null
+        },
+        "eye": {
+          "iris": null,
+          "ring": null
+        },
+        "legs": {
+          "colour": null
+        },
+        "head": {
+          "crown": null,
+          "face": null,
+          "throat": null
+        },
+        "upperparts": {
+          "back": null,
+          "rump": null
+        },
+        "underparts": {
+          "breast": "buff",
+          "belly": "buff"
+        },
+        "wings": {
+          "above": null,
+          "below": null
+        },
+        "tail": {
+          "colour": null,
+          "shape": null
+        }
+      }
+    }
+  ],
+  "viewNotes": [
+    {
+      "view": "flight-above",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Warm medium-brown upperparts with a rufous rump and uppertail-coverts. The flight feathers are dark brown with pale brown fringes. There is no described wing panel."
+    },
+    {
+      "view": "flight-below",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Underwing-coverts are buff. The underside of the flight feathers is not separately described. The wing is more rounded than in Marsh Warbler."
+    },
+    {
+      "view": "perched-front",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "An indistinct eyebrow over a brown face, and buffish-white underparts. The bill is slim."
+    },
+    {
+      "view": "perched-back",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Warm brown mantle and a rufous rump, with a dark brown tail."
+    },
+    {
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "A small warm-brown warbler whose folded wing stops at the rump. Legs are olive-green to olive-brown or yellowish-grey to flesh-brown, with yellow soles."
+    },
+    {
+      "view": "perched-front",
+      "age": "juvenile",
+      "sex": "any",
+      "season": "any",
+      "note": "Young birds are richer buff below. Immatures keep a pale yellow gape flange; adults have a brighter yellow to yellow-orange flange. Tongue spots can remain for some time after fledging."
+    }
+  ],
+  "calls": [
+    {
+      "sex": "any",
+      "type": "song",
+      "description": "The species’ song is a slow chatter, jit-jit-jit, with whistles and mimicry; the texts used here do not give a separate transcription for the southern African breeding birds, or say that females sing a different song.",
+      "recordings": [
+        {
+          "key": "xeno-canto/XC488497",
+          "source": "https://xeno-canto.org/488497",
+          "fileUrl": "https://xeno-canto.org/sounds/uploaded/DNKBTPCMSQ/XC488497-African%20Reed%20Warbler%20190710-072243.mp3",
+          "author": "Derek Solomon",
+          "license": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ]
+    }
+  ],
+  "images": [
+    {
+      "key": "acrocephalus-scirpaceus/mopani-back.jpg",
+      "view": "perched-back",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "source": "https://www.inaturalist.org/observations/250427511",
+      "fileUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/447879379/large.jpg",
+      "author": "Alan Manson",
+      "license": "CC BY 4.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by/4.0/",
+      "aiGenerated": false,
+      "hosted": false,
+      "alt": "Common Reed Warbler, the African population, seen from behind in the Mopani district",
+      "caption": "Common Reed Warbler, the African population, seen from behind in the Mopani district"
+    },
+    {
+      "key": "acrocephalus-scirpaceus/back.jpg",
+      "view": "perched-back",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "source": "https://commons.wikimedia.org/wiki/File:African_Reed_Warbler_(Acrocephalus_baeticatus)_from_behind,_looking_to_the_right.jpg",
+      "fileUrl": "https://upload.wikimedia.org/wikipedia/commons/b/b2/African_Reed_Warbler_%28Acrocephalus_baeticatus%29_from_behind%2C_looking_to_the_right.jpg",
+      "author": "Alan Manson",
+      "license": "CC BY-SA 2.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by-sa/2.0/",
+      "aiGenerated": false,
+      "hosted": false,
+      "alt": "African Reed Warbler from behind, looking to the right",
+      "caption": "African Reed Warbler from behind, looking to the right"
+    }
+  ],
+  "research": {
+    "confidence": "medium",
+    "needsReview": true,
+    "note": "BirdLife South Africa and IOC place the African breeding birds in Acrocephalus scirpaceus. This account uses Raijmakers and SABAP1 on that African population, not the rare Palearctic birds Raijmakers treated separately as European Reed Warbler. Months are September–May, the period Raijmakers says the African birds are present, with some overwintering that is not listed as the regular season. SABAP1 found more overwintering in the north and called the species resident in Swaziland. The Kruger population field is unchanged and still has no Kemp figure. The song recording is grade A from Kruger and is filed on xeno-canto as the African bird. Chick down and a sharp flight photograph were not found."
+  }
 }

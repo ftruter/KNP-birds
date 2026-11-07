@@ -7,8 +7,77 @@
     "af": "Kaapse Rietsanger"
   },
   "family": "acrocephalidae",
-  "summary": "The details for this species have not been published yet.",
-  "sampleData": true,
+  "status": "resident",
+  "monthsPresent": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+  ],
+  "size": {
+    "lengthCm": {
+      "min": 14,
+      "max": 16
+    },
+    "note": "Wikipedia gives 14–16 cm and a weight around 20 g."
+  },
+  "habitat": "Reedbeds and bulrushes in standing or slow water, including rivers, pans, marshes and dams.",
+  "summary": "A fairly large resident reed warbler of standing water. Adults are dark brown above with rufous fringes and a rufous-washed rump, a clear whitish supercilium, and white underparts with buff to rufous flanks. The sexes look alike, though males are larger. Juveniles are very similar; one southern African account says they are darker below and have a less distinct eyebrow. The colour of a newly hatched chick is not described in the texts used here.",
+  "sampleData": false,
+  "similar": [
+    {
+      "slug": "acrocephalus-scirpaceus",
+      "note": "Common Reed Warbler is smaller and warmer brown, with a weaker eyebrow. Lesser Swamp Warbler looks whiter below and has a longer tail."
+    },
+    {
+      "slug": "acrocephalus-arundinaceus",
+      "note": "Great Reed Warbler is larger and heavier-billed, buffier below, and is a summer visitor rather than a resident."
+    },
+    {
+      "slug": "bradypterus-baboecala",
+      "note": "Little Rush Warbler has streaking on the throat or breast and pinkish legs. Lesser Swamp Warbler is unstreaked below and has darker legs."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Identifying warblers in the hand",
+      "url": "http://safring.adu.org.za/downloads/raijmakerswarblerid.pdf",
+      "publisher": "SAFRING",
+      "year": null
+    },
+    {
+      "title": "The Atlas of Southern African Birds, Vol. 2 (Cape Reed Warbler)",
+      "url": "https://sabap2.birdmap.africa/docs/sabap1/635.pdf",
+      "publisher": "BirdLife South Africa",
+      "year": 1997
+    },
+    {
+      "title": "Acrocephalus gracilirostris (Lesser swamp-warbler), summarised from Roberts VII",
+      "url": "https://www.biodiversityexplorer.info/birds/sylviidae/acrocephalus_gracilirostris.htm",
+      "publisher": "Iziko Museums of South Africa",
+      "year": null
+    },
+    {
+      "title": "Lesser swamp warbler",
+      "url": "https://en.wikipedia.org/wiki/Lesser_swamp_warbler",
+      "publisher": "Wikipedia",
+      "year": 2026
+    },
+    {
+      "title": "Lesser Swamp Warbler (Acrocephalus gracilirostris)",
+      "url": "https://thebdi.org/2026/02/23/lesser-swamp-warbler-acrocephalus-gracilirostris/",
+      "publisher": "Biodiversity and Development Institute",
+      "year": 2026
+    }
+  ],
   "population": {
     "estimate": {
       "low": 1024,
@@ -35,8 +104,171 @@
     },
     "tierApplied": "D"
   },
-  "variants": [],
-  "viewNotes": [],
-  "calls": [],
-  "images": []
+  "variants": [
+    {
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "marks": {
+        "bill": {
+          "colour": [
+            "dark-brown",
+            "horn",
+            "pink"
+          ],
+          "shape": "long and strong, with a slightly downcurved upper mandible; the lower mandible is light horn, pinkish or sometimes yellowish"
+        },
+        "eye": {
+          "iris": "brown",
+          "ring": null
+        },
+        "legs": {
+          "colour": [
+            "grey",
+            "blue"
+          ]
+        },
+        "head": {
+          "crown": [
+            "grey",
+            "brown"
+          ],
+          "face": [
+            "white",
+            "cream",
+            "grey"
+          ],
+          "throat": "white"
+        },
+        "upperparts": {
+          "back": [
+            "brown",
+            "rufous"
+          ],
+          "rump": [
+            "brown",
+            "rufous"
+          ]
+        },
+        "underparts": {
+          "breast": "white",
+          "belly": "white",
+          "pattern": "sometimes a slight greyish or buffish tinge; flanks buff to light rufous"
+        },
+        "wings": {
+          "above": "brown",
+          "below": "buff"
+        },
+        "tail": {
+          "colour": [
+            "brown",
+            "rufous"
+          ],
+          "shape": "long and dark, edged rufous; in the hand the tail is longer than the wing"
+        }
+      }
+    }
+  ],
+  "viewNotes": [
+    {
+      "view": "flight-above",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Dark brown upperparts with rufous feather edges and a richer rufous wash on the rump. The flight feathers are dark brown, often edged buff or rufous."
+    },
+    {
+      "view": "flight-below",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Underwing-coverts are buffish. The underside of the flight feathers is not separately described."
+    },
+    {
+      "view": "perched-front",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "A whitish or cream supercilium over a grey-brown face, and a white throat and breast. The bill is long and mostly dark."
+    },
+    {
+      "view": "perched-back",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Dark brown mantle and a rufous-washed rump, with a long dark tail edged rufous."
+    },
+    {
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "White underparts, a clear pale eyebrow, and a long tail in one profile. Legs are bluish-horn to dark grey in the hand; a field account calls them dark brown."
+    },
+    {
+      "view": "perched-side",
+      "age": "juvenile",
+      "sex": "any",
+      "season": "any",
+      "note": "Biodiversity and Development Institute says juveniles are darker below and have a less distinct eyebrow. Wikipedia says adults and juveniles are very similar, and does not name a different colour."
+    }
+  ],
+  "calls": [
+    {
+      "sex": "any",
+      "type": "song",
+      "description": "A rich melodious series of bubbly phrases and trills, such as cheerup chee trrreee, with pauses between phrases; the texts used here do not separate the sexes.",
+      "recordings": [
+        {
+          "key": "xeno-canto/XC422219",
+          "source": "https://xeno-canto.org/422219",
+          "fileUrl": "https://xeno-canto.org/sounds/uploaded/HMBDEWEZVS/XC422219-Buffeldoorn%20ext%20road%2024.6.2018.mp3",
+          "author": "Tony Archer",
+          "license": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ]
+    }
+  ],
+  "images": [
+    {
+      "key": "acrocephalus-gracilirostris/malelane-front.jpg",
+      "view": "perched-front",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "source": "https://www.inaturalist.org/observations/301776181",
+      "fileUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/543823605/large.jpg",
+      "author": "Tivan Kotze",
+      "license": "CC BY-NC 4.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+      "aiGenerated": false,
+      "hosted": false,
+      "alt": "Adult Lesser Swamp Warbler clinging front-on to a reed, Malelane, Kruger",
+      "caption": "Adult Lesser Swamp Warbler clinging front-on to a reed, Malelane, Kruger"
+    },
+    {
+      "key": "acrocephalus-gracilirostris/side.jpg",
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "source": "https://commons.wikimedia.org/wiki/File:Lesser_Swamp_Warbler_(Acrocephalus_gracilirostris)_(32764243466).jpg",
+      "fileUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ed/Lesser_Swamp_Warbler_%28Acrocephalus_gracilirostris%29_%2832764243466%29.jpg/1280px-Lesser_Swamp_Warbler_%28Acrocephalus_gracilirostris%29_%2832764243466%29.jpg",
+      "author": "Bernard DUPONT",
+      "license": "CC BY-SA 2.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by-sa/2.0/",
+      "aiGenerated": false,
+      "hosted": false,
+      "alt": "Adult Lesser Swamp Warbler perched side-on at the water’s edge, with one wing raised",
+      "caption": "Adult Lesser Swamp Warbler perched side-on at the water’s edge, with one wing raised"
+    }
+  ],
+  "research": {
+    "confidence": "medium",
+    "needsReview": false,
+    "note": "Status is resident. SABAP1 found no seasonal movement, so all twelve months are listed. BDI and Raijmakers disagree on the exact leg colour, and BDI and Wikipedia disagree on how distinct the juvenile is, so no juvenile colour was stored. Chick down and a clear flight photograph were not found. The song is grade A from North West, not Kruger."
+  }
 }

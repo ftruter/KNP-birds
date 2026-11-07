@@ -7,8 +7,54 @@
     "af": "Europese Rietsanger"
   },
   "family": "acrocephalidae",
-  "summary": "The details for this species have not been published yet.",
-  "sampleData": true,
+  "status": "palearctic-migrant",
+  "monthsPresent": [
+    11,
+    12,
+    1,
+    2,
+    3,
+    4
+  ],
+  "habitat": "Dense lush thickets and rank herbaceous growth, usually away from water, including woodland edge and tangled undergrowth.",
+  "summary": "A small plain Palearctic warbler of thickets rather than reedbeds. Adults are olive-brown above, including a yellowish-brown rump that is not rufous, with a short creamy eyebrow and buffy-white underparts washed yellowish. The sexes look alike. First-year birds are warmer brown and may show a rufous tinge on the rump. The colour of a newly hatched chick is not described in the texts used here. A published total length was not in the texts used here.",
+  "sampleData": false,
+  "similar": [
+    {
+      "slug": "acrocephalus-scirpaceus",
+      "note": "Common Reed Warbler keeps more to reeds, is warmer brown, and has a rufous rump. Silent birds need in-hand measurements; the songs differ, and Marsh Warbler mimics other species."
+    },
+    {
+      "slug": "hippolais-icterina",
+      "note": "Icterine Warbler is yellower below when fresh and shows a pale panel on the closed wing. It also uses the tree canopy more."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Identifying warblers in the hand",
+      "url": "http://safring.adu.org.za/downloads/raijmakerswarblerid.pdf",
+      "publisher": "SAFRING",
+      "year": null
+    },
+    {
+      "title": "The Atlas of Southern African Birds, Vol. 2 (European Marsh Warbler)",
+      "url": "https://sabap2.birdmap.africa/docs/sabap1/633.pdf",
+      "publisher": "BirdLife South Africa",
+      "year": 1997
+    },
+    {
+      "title": "Acrocephalus palustris (Marsh warbler), summarised from Roberts VII",
+      "url": "https://www.biodiversityexplorer.info/birds/sylviidae/acrocephalus_palustris.htm",
+      "publisher": "Iziko Museums of South Africa",
+      "year": null
+    },
+    {
+      "title": "Marsh warbler",
+      "url": "https://en.wikipedia.org/wiki/Marsh_warbler",
+      "publisher": "Wikipedia",
+      "year": 2026
+    }
+  ],
   "population": {
     "estimate": {
       "low": 512,
@@ -35,8 +81,238 @@
     },
     "tierApplied": "D"
   },
-  "variants": [],
-  "viewNotes": [],
-  "calls": [],
-  "images": []
+  "variants": [
+    {
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "marks": {
+        "bill": {
+          "colour": [
+            "brown",
+            "yellow"
+          ],
+          "shape": "shorter and stronger than Common Reed Warbler, with a steeper forehead; the lower mandible is pale yellowish-horn or flesh"
+        },
+        "eye": {
+          "iris": [
+            "olive",
+            "brown"
+          ],
+          "ring": "cream"
+        },
+        "legs": {
+          "colour": [
+            "pink",
+            "yellow"
+          ]
+        },
+        "head": {
+          "crown": [
+            "grey",
+            "brown",
+            "olive"
+          ],
+          "face": [
+            "olive",
+            "brown",
+            "cream"
+          ],
+          "throat": [
+            "white",
+            "cream"
+          ]
+        },
+        "upperparts": {
+          "back": [
+            "olive",
+            "brown"
+          ],
+          "rump": [
+            "olive",
+            "yellow"
+          ]
+        },
+        "underparts": {
+          "breast": [
+            "buff",
+            "white",
+            "yellow"
+          ],
+          "belly": [
+            "white",
+            "cream"
+          ],
+          "pattern": "buffy-white and washed yellowish, with darker flanks"
+        },
+        "wings": {
+          "above": [
+            "brown",
+            "olive"
+          ],
+          "below": [
+            "yellow",
+            "buff"
+          ]
+        },
+        "tail": {
+          "colour": [
+            "black",
+            "brown"
+          ],
+          "shape": null
+        }
+      }
+    },
+    {
+      "age": "immature",
+      "sex": "any",
+      "season": "any",
+      "marks": {
+        "bill": {
+          "colour": null,
+          "shape": null
+        },
+        "eye": {
+          "iris": null,
+          "ring": null
+        },
+        "legs": {
+          "colour": null
+        },
+        "head": {
+          "crown": null,
+          "face": null,
+          "throat": null
+        },
+        "upperparts": {
+          "back": "brown",
+          "rump": [
+            "rufous",
+            "brown"
+          ]
+        },
+        "underparts": {
+          "breast": null,
+          "belly": null
+        },
+        "wings": {
+          "above": null,
+          "below": null
+        },
+        "tail": {
+          "colour": null,
+          "shape": null
+        }
+      }
+    }
+  ],
+  "viewNotes": [
+    {
+      "view": "flight-above",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Plain olive-brown upperparts. The rump is tinged yellowish-brown and is not rufous. No pale wing panel is described."
+    },
+    {
+      "view": "flight-below",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Underwing-coverts are yellowish-buff. The underside of the flight feathers is not separately described."
+    },
+    {
+      "view": "perched-front",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "A short creamy eyebrow and thin creamy eye-ring, with a white or creamy throat and a yellowish wash on the breast."
+    },
+    {
+      "view": "perched-back",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Olive-brown mantle and a yellowish-brown rump, with a blackish-brown tail. Fresh plumage is more olive-green on the head."
+    },
+    {
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "A small olive-brown warbler with pinkish legs and a short eyebrow, usually in thicket rather than in a reed stem. The forehead is steeper than on Common Reed Warbler."
+    },
+    {
+      "view": "perched-back",
+      "age": "immature",
+      "sex": "any",
+      "season": "any",
+      "note": "First-year birds are warmer brown and may have a rufous tinge on the rump, so they can look like a reed warbler."
+    }
+  ],
+  "calls": [
+    {
+      "sex": "male",
+      "type": "song",
+      "description": "The male’s song imitates other birds, on average about 75 species, learned in the hatching summer and the first winter in Africa.",
+      "recordings": [
+        {
+          "key": "xeno-canto/XC633451",
+          "source": "https://xeno-canto.org/633451",
+          "fileUrl": "https://xeno-canto.org/sounds/uploaded/SGLTZLDXYI/XC633451-Marsh%20Warbler%20Kap%20River%20exc%20March%2021.mp3",
+          "author": "Lynette Rudman",
+          "license": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ]
+    },
+    {
+      "sex": "female",
+      "type": "song",
+      "description": "Females may give a simple song without imitation; the texts used here do not describe that song beyond saying it lacks mimicry.",
+      "recordings": []
+    }
+  ],
+  "images": [
+    {
+      "key": "acrocephalus-palustris/mopani-side.jpg",
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "source": "https://www.inaturalist.org/observations/373839099",
+      "fileUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/683243226/large.jpg",
+      "author": "Niall Perrins",
+      "license": "CC BY-NC 4.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+      "aiGenerated": false,
+      "hosted": false,
+      "alt": "Marsh Warbler singing from dense leafy cover, Mopani district",
+      "caption": "Marsh Warbler singing from dense leafy cover, Mopani district"
+    },
+    {
+      "key": "acrocephalus-palustris/front.jpg",
+      "view": "perched-front",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "source": "https://commons.wikimedia.org/wiki/File:Acrocephalus_palustris_Irpin4.JPG",
+      "fileUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c9/Acrocephalus_palustris_Irpin4.JPG/1280px-Acrocephalus_palustris_Irpin4.JPG",
+      "author": "Аимаина хикари",
+      "license": "CC0 1.0",
+      "licenceUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "aiGenerated": false,
+      "hosted": false,
+      "alt": "Marsh Warbler perched front-on, Irpin, Ukraine",
+      "caption": "Marsh Warbler perched front-on, Irpin, Ukraine"
+    }
+  ],
+  "research": {
+    "confidence": "medium",
+    "needsReview": false,
+    "note": "Status is palearctic-migrant. Months are November–April from Raijmakers and SABAP1, which says arrival is mostly in December and departure is in April. SABAP1 also says it sings on the non-breeding grounds. No total length was published in the texts used here; Raijmakers gives wing 60–76 mm. No grade-A recording is labelled as a female. The male song used is grade A from the Eastern Cape. A sharp Kruger photograph was not used because the only candidate was too blurred to show the marks. Chick down is not described."
+  }
 }
