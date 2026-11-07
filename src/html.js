@@ -33,6 +33,7 @@ import {
   viewLabel,
 } from './guide.js'
 import { ARD_LINK } from './head.js'
+import { agentUrls } from './head.js'
 import { alternates } from './route.js'
 
 const NAV = [
@@ -49,6 +50,7 @@ export const renderHomeHtml = ({ origin, speciesIndex, familiesIndex }) => {
   const main = `
 <h1>Birds of Kruger National Park</h1>
 <p>An open field guide to the birds of Kruger National Park and neighbouring Marloth Park. It is written for people and for AI agents. Pages are rendered on the server. Nothing here needs JavaScript.</p>
+${agentHtml(origin)}
 <p>The full list is resident species, plus summer migrants. Rare vagrants are left out. ${escapeHtml(catalogSentence(species.length, families.length, speciesIndex, familiesIndex))}</p>
 <h2>What these pages compare</h2>
 <ol>
@@ -754,6 +756,7 @@ ${main}
 <footer class="site-footer">
 <div class="wrap">
 <p>Also available as <a href="${escapeHtml(alts.md)}">Markdown</a> and <a href="${escapeHtml(alts.json)}">JSON</a>.</p>
+${agentHtml(origin)}
 <p><a href="/llms.txt">llms.txt</a> · <a href="/sitemap.xml">Sitemap</a> · <a href="/credits"${path === '/credits' ? ' aria-current="page"' : ''}>Credits</a></p>
 <p>Birds of Kruger National Park. An open field guide for people and for AI agents.</p>
 </div>
@@ -761,6 +764,11 @@ ${main}
 </body>
 </html>
 `
+}
+
+const agentHtml = (origin) => {
+  const urls = agentUrls(origin)
+  return `<p>AI agents: this guide has a public read-only MCP server at <a href="${escapeHtml(urls.mcp)}">${escapeHtml(urls.mcp)}</a> (streamable HTTP, one tool: <code>search</code>). <a href="${escapeHtml(urls.card)}">Server card</a>. <a href="${escapeHtml(urls.ard)}">Discovery</a>.</p>`
 }
 
 const sampleNotice = () =>

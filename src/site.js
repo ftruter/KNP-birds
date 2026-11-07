@@ -102,6 +102,7 @@ const renderHome = async (env, origin, format) => {
   if (format === 'md') {
     return mdPage(
       renderHomeMarkdown({
+        origin,
         speciesIndex: species?.data,
         familiesIndex: families?.data,
       }),
@@ -139,7 +140,7 @@ const renderDocument = async (env, origin, route) => {
   if (route.kind === 'species-index') {
     const body =
       route.format === 'md'
-        ? renderSpeciesIndexMarkdown(doc.data)
+        ? renderSpeciesIndexMarkdown(doc.data, origin)
         : renderSpeciesIndexHtml({ origin, doc: doc.data })
     return route.format === 'md'
       ? mdPage(body, origin, route.pathname, tag)
@@ -148,7 +149,7 @@ const renderDocument = async (env, origin, route) => {
   if (route.kind === 'families-index') {
     const body =
       route.format === 'md'
-        ? renderFamiliesIndexMarkdown(doc.data)
+        ? renderFamiliesIndexMarkdown(doc.data, origin)
         : renderFamiliesIndexHtml({ origin, doc: doc.data })
     return route.format === 'md'
       ? mdPage(body, origin, route.pathname, tag)
@@ -158,7 +159,7 @@ const renderDocument = async (env, origin, route) => {
     const plates = await iconicPlates(env, doc.data, route.format)
     const body =
       route.format === 'md'
-        ? renderFamilyMarkdown(doc.data, plates)
+        ? renderFamilyMarkdown(doc.data, plates, origin)
         : renderFamilyHtml({ origin, doc: doc.data, plates })
     return route.format === 'md'
       ? mdPage(body, origin, route.pathname, tag)
@@ -167,7 +168,7 @@ const renderDocument = async (env, origin, route) => {
   if (route.kind === 'vocab') {
     const body =
       route.format === 'md'
-        ? renderVocabMarkdown(doc.data)
+        ? renderVocabMarkdown(doc.data, origin)
         : renderVocabHtml({ origin, doc: doc.data })
     return route.format === 'md'
       ? mdPage(body, origin, route.pathname, tag)
@@ -176,7 +177,7 @@ const renderDocument = async (env, origin, route) => {
   if (route.kind === 'credits') {
     const body =
       route.format === 'md'
-        ? renderCreditsMarkdown(doc.data)
+        ? renderCreditsMarkdown(doc.data, origin)
         : renderCreditsHtml({ origin, doc: doc.data })
     return route.format === 'md'
       ? mdPage(body, origin, route.pathname, tag)
@@ -190,7 +191,7 @@ const renderDocument = async (env, origin, route) => {
   ])
   const body =
     route.format === 'md'
-      ? renderSpeciesMarkdown({ doc: doc.data, colourMap })
+      ? renderSpeciesMarkdown({ doc: doc.data, colourMap, origin })
       : renderSpeciesHtml({ origin, doc: doc.data, colourMap, imagesAvailable })
   return route.format === 'md'
     ? mdPage(body, origin, route.pathname, tag)
@@ -300,7 +301,7 @@ const notFound = (origin, route) => {
   }
   if (format === 'md') {
     return pageResponse({
-      body: renderNotFoundMarkdown(path),
+      body: renderNotFoundMarkdown(path, origin),
       status: 404,
       contentType: 'text/markdown; charset=utf-8',
       cache: NOT_FOUND_CACHE,

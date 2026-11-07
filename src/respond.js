@@ -1,6 +1,6 @@
 import { NO_STORE } from './cache.js'
 import { escapeHtml } from './escape.js'
-import { ARD_LINK } from './head.js'
+import { ARD_LINK, agentNote, linkHeader } from './head.js'
 import { alternates } from './route.js'
 
 const SECURITY = {
@@ -31,17 +31,15 @@ export const pageResponse = ({
   headers.set('cache-control', cache)
   headers.set('access-control-allow-origin', '*')
   if (cacheTag) headers.set('cache-tag', cacheTag)
-  if (path && origin) {
-    const alts = alternates(path)
-    headers.set(
-      'link',
-      [
+  const alts = path && origin ? alternates(path) : null
+  const pageLinks = alts
+    ? [
         `<${origin}${alts.html}>; rel="canonical"`,
         `<${origin}${alts.md}>; rel="alternate"; type="text/markdown"`,
         `<${origin}${alts.json}>; rel="alternate"; type="application/json"`,
-      ].join(', '),
-    )
-  }
+      ]
+    : []
+  headers.set('link', linkHeader(pageLinks))
   return new Response(body, { status, headers })
 }
 
@@ -70,14 +68,16 @@ export const redirectResponse = (location, cache) => {
   headers.set('content-security-policy', PAGE_CSP)
   headers.set('cache-control', cache)
   headers.set('location', location)
+  headers.set('link', linkHeader())
   return new Response(null, { status: 301, headers })
 }
 
-export const methodNotAllowed = (format) => {
+export const methodNotAllowed = (format, origin) => {
   const headers = new Headers(SECURITY)
   headers.set('allow', 'GET, HEAD')
   headers.set('cache-control', NO_STORE)
   headers.set('content-security-policy', PAGE_CSP)
+  headers.set('link', linkHeader())
   headers.set('access-control-allow-origin', '*')
   if (format === 'json') {
     headers.set('content-type', 'application/json; charset=utf-8')
@@ -88,10 +88,13 @@ export const methodNotAllowed = (format) => {
   }
   if (format === 'md') {
     headers.set('content-type', 'text/markdown; charset=utf-8')
-    return new Response('# Method not allowed\n\nUse GET.\n', {
-      status: 405,
-      headers,
-    })
+    return new Response(
+      `# Method not allowed\n\n${agentNote(origin)}\n\nUse GET.\n`,
+      {
+        status: 405,
+        headers,
+      },
+    )
   }
   headers.set('content-type', 'text/html; charset=utf-8')
   return new Response(
@@ -103,11 +106,12 @@ export const methodNotAllowed = (format) => {
   )
 }
 
-export const serverError = (format) => {
+export const serverError = (format, origin) => {
   const headers = new Headers(SECURITY)
   headers.set('cache-control', NO_STORE)
   headers.set('content-security-policy', PAGE_CSP)
   headers.set('access-control-allow-origin', '*')
+  headers.set('link', linkHeader())
   if (format === 'json') {
     headers.set('content-type', 'application/json; charset=utf-8')
     return new Response(
@@ -118,7 +122,7 @@ export const serverError = (format) => {
   if (format === 'md') {
     headers.set('content-type', 'text/markdown; charset=utf-8')
     return new Response(
-      '# Something went wrong\n\nThis page could not be rendered.\n',
+      `# Something went wrong\n\n${agentNote(origin)}\n\nThis page could not be rendered.\n`,
       { status: 500, headers },
     )
   }

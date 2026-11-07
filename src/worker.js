@@ -22,7 +22,7 @@ export const handleRequest = async (request, env, ctx) => {
     const route = parseUrl(url)
     format = route.format || 'html'
     if (request.method !== 'GET' && request.method !== 'HEAD') {
-      return methodNotAllowed(format)
+      return methodNotAllowed(format, url.origin)
     }
     return await withCache(
       request,
@@ -38,6 +38,6 @@ export const handleRequest = async (request, env, ctx) => {
         error: error instanceof Error ? error.message : String(error),
       }),
     )
-    return serverError(format)
+    return serverError(format, url.origin)
   }
 }

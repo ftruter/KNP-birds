@@ -1,5 +1,6 @@
 import { escapeXml } from './escape.js'
 import { HOME_POPULATION_INTRO, indexRows } from './guide.js'
+import { agentNote } from './head.js'
 
 export const robotsTxt = (origin) =>
   `User-agent: *\nAllow: /\n\nSitemap: ${origin}/sitemap.xml\nAgentmap: ${origin}/.well-known/ard.json\n`
@@ -19,7 +20,11 @@ export const sitemapXml = (origin, speciesIndex, familiesIndex) => {
   return `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${body}\n</urlset>\n`
 }
 
-export const llmsTxt = (origin) => `# Birds of Kruger National Park
+export const llmsTxt = (origin) => `# Agent guide: birds of Kruger National Park
+
+This file is the agent guide for ${origin}. It is not the home page. The home page in Markdown is ${origin}/.md.
+
+${agentNote(origin)}
 
 > An open field guide to the birds of Kruger National Park and neighbouring Marloth Park, South Africa. Written for people and for AI agents. Every page is server-rendered. There is no client-side JavaScript.
 
@@ -46,6 +51,8 @@ The file extension selects the format. Page paths come straight from the KV keys
 The home page is also ${origin}/.md and ${origin}/.json. Slugs are the lowercase scientific name with hyphens, for example \`coracias-caudatus\`.
 
 HTML pages link their Markdown and JSON alternates with \`<link rel="alternate">\` and in the footer.
+
+Responses other than image and audio bytes, and other than \`POST /mcp\`, also send an HTTP \`Link\` header. It points at ${origin}/.well-known/ard.json (\`rel="ard"\`), this file (\`rel="describedby"\`), and ${origin}/mcp/server-card. The card relation is the extension URI \`https://birds.truter.world/rel/mcp-server-card\`. ARD and the MCP server-card draft do not define a relation for that card. Page responses add \`rel="canonical"\` and the Markdown and JSON alternates to the same header.
 
 ## Other files
 

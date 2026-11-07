@@ -14,6 +14,20 @@ The live site publishes [Agentic Resource Discovery (ARD) v0.91](https://github.
 
 `robots.txt` also carries `Agentmap:` pointing at the ARD manifest. v0.91 lists that directive as one way to advertise an entry source.
 
+## HTTP Link header
+
+Every HTML, Markdown, JSON, `llms.txt`, `robots.txt`, and sitemap response, including redirects and the short error documents, sends one RFC 8288 `Link` header. Page responses also keep their canonical URL and the `.md` / `.json` alternates in that header. The HTML `<link rel="alternate">` elements are unchanged. Image and audio streams do not send it, and neither does `POST /mcp`.
+
+The header always ends with:
+
+```
+</.well-known/ard.json>; rel="ard"; type="application/json", </llms.txt>; rel="describedby"; type="text/plain", </mcp/server-card>; rel="https://birds.truter.world/rel/mcp-server-card"; type="application/mcp-server-card+json"
+```
+
+`rel="ard"` is the relation ARD v0.91 §5.1 defines for the manifest. `rel="describedby"` is the registered relation (RFC 6892) for `llms.txt`, which describes the guide. ARD v0.91 does not define a relation for an MCP server card, and the MCP server-card draft does not either. The IANA link-relation registry has no card relation. `rel="service"` and `rel="service-desc"` describe the current page, not a separate MCP server, so they are the wrong fit. The card therefore uses the extension relation `https://birds.truter.world/rel/mcp-server-card`. That URI names the relation. It is not a standard, and it is not a document this site serves.
+
+The targets are root-relative, so they follow the host that served the response. The header is set on the response before the page cache stores it, so a cache hit keeps it. It does not change `Cache-Control` or the content security policy.
+
 There is no `rel="ai-catalog"` link. v0.91 says publishers emit `rel="ard"`, and that consulting the predecessor relation is optional for consumers. The predecessor file is still served, because older clients fetch the path directly. A second link relation is not required, and this site does not add one.
 
 ## One entry list
