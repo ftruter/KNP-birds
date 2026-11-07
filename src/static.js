@@ -52,6 +52,8 @@ The home page is also ${origin}/.md and ${origin}/.json. Slugs are the lowercase
 
 HTML pages link their Markdown and JSON alternates with \`<link rel="alternate">\` and in the footer.
 
+Responses other than image and audio bytes, and other than \`POST /mcp\`, also send an HTTP \`Link\` header. It points at ${origin}/.well-known/ard.json (\`rel="ard"\`), this file (\`rel="describedby"\`), and ${origin}/mcp/server-card. The card relation is the extension URI \`https://birds.truter.world/rel/mcp-server-card\`. ARD and the MCP server-card draft do not define a relation for that card. Page responses add \`rel="canonical"\` and the Markdown and JSON alternates to the same header.
+
 ## Other files
 
 - ${origin}/robots.txt

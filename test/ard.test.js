@@ -2,7 +2,7 @@ import assert from 'node:assert/strict'
 import { readFile } from 'node:fs/promises'
 import { test } from 'node:test'
 import Ajv from 'ajv/dist/2020.js'
-import { ARD_LINK } from '../src/head.js'
+import { ARD_LINK, DISCOVERY_LINK } from '../src/head.js'
 import { KV_CONSISTENCY_MS, NO_STORE, PAGE_CACHE } from '../src/cache.js'
 import { handleRequest } from '../src/worker.js'
 import { cacheHarness, loadStore, mockKv, requestContext } from './helpers.js'
@@ -88,7 +88,8 @@ test('ARD and ai-catalog manifests share entries and match the official schemas'
   )
   assert.equal(ardResponse.headers.get('cache-control'), PAGE_CACHE)
   assert.equal(catalogResponse.headers.get('cache-control'), PAGE_CACHE)
-  assert.equal(ardResponse.headers.get('link'), null)
+  assert.equal(ardResponse.headers.get('link'), DISCOVERY_LINK)
+  assert.doesNotMatch(ardResponse.headers.get('link'), /\.md/)
   const ard = await ardResponse.json()
   const catalog = await catalogResponse.json()
   assert.equal(errorsOf(validateManifest, ard), '')

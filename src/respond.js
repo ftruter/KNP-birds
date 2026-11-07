@@ -1,6 +1,6 @@
 import { NO_STORE } from './cache.js'
 import { escapeHtml } from './escape.js'
-import { ARD_LINK, agentNote } from './head.js'
+import { ARD_LINK, agentNote, linkHeader } from './head.js'
 import { alternates } from './route.js'
 
 const SECURITY = {
@@ -31,17 +31,15 @@ export const pageResponse = ({
   headers.set('cache-control', cache)
   headers.set('access-control-allow-origin', '*')
   if (cacheTag) headers.set('cache-tag', cacheTag)
-  if (path && origin) {
-    const alts = alternates(path)
-    headers.set(
-      'link',
-      [
+  const alts = path && origin ? alternates(path) : null
+  const pageLinks = alts
+    ? [
         `<${origin}${alts.html}>; rel="canonical"`,
         `<${origin}${alts.md}>; rel="alternate"; type="text/markdown"`,
         `<${origin}${alts.json}>; rel="alternate"; type="application/json"`,
-      ].join(', '),
-    )
-  }
+      ]
+    : []
+  headers.set('link', linkHeader(pageLinks))
   return new Response(body, { status, headers })
 }
 
@@ -70,6 +68,7 @@ export const redirectResponse = (location, cache) => {
   headers.set('content-security-policy', PAGE_CSP)
   headers.set('cache-control', cache)
   headers.set('location', location)
+  headers.set('link', linkHeader())
   return new Response(null, { status: 301, headers })
 }
 
@@ -78,6 +77,7 @@ export const methodNotAllowed = (format, origin) => {
   headers.set('allow', 'GET, HEAD')
   headers.set('cache-control', NO_STORE)
   headers.set('content-security-policy', PAGE_CSP)
+  headers.set('link', linkHeader())
   headers.set('access-control-allow-origin', '*')
   if (format === 'json') {
     headers.set('content-type', 'application/json; charset=utf-8')
@@ -111,6 +111,7 @@ export const serverError = (format, origin) => {
   headers.set('cache-control', NO_STORE)
   headers.set('content-security-policy', PAGE_CSP)
   headers.set('access-control-allow-origin', '*')
+  headers.set('link', linkHeader())
   if (format === 'json') {
     headers.set('content-type', 'application/json; charset=utf-8')
     return new Response(
