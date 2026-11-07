@@ -95,9 +95,9 @@ Images carry \`view\`, \`age\`, \`sex\`, \`season\`, \`source\`, \`author\`, \`l
 ## Start here
 
 - [Home, Markdown](${origin}/.md)
-- [Sitemap, Markdown](${origin}/sitemap.md)
-- [Families index, Markdown](${origin}/families.md)
 - [Species index, Markdown](${origin}/species.md)
+- [Families index, Markdown](${origin}/families.md)
 - [Colour vocabulary, JSON](${origin}/vocab/colours.json)
 - [Credits, Markdown](${origin}/credits.md)
+- [Sitemap, Markdown](${origin}/sitemap.md)
 `
