@@ -7,8 +7,67 @@
     "af": "Slanghalsvoël"
   },
   "family": "anhingidae",
-  "summary": "The details for this species have not been published yet.",
-  "sampleData": true,
+  "status": "resident",
+  "monthsPresent": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+  ],
+  "size": {
+    "lengthCm": {
+      "min": 79,
+      "max": 80
+    },
+    "note": "Newman's Birds gives 79 cm. Wikipedia gives 80 cm."
+  },
+  "habitat": "Still or slow fresh water with fish, including wetlands, rivers, streams, dams and sewage works, especially where dead trees, rocks or banks provide a resting place. It avoids fast, turbulent water and is rarely on estuaries or coastal lagoons.",
+  "summary": "A slender diver of quiet inland water. The neck is long and kinked, the bill is straight and pointed rather than hooked, and the bird swims with only the head and neck above the surface. The crown and body are very dark brown. The male is blacker than the female, with a grey bill, a rufous front to the neck and silvery-beige plumes on the mantle when breeding. The female is browner, with a creamy-white bill and a sandy front to the neck. A thin white stripe runs along the side of the rufous neck. Immatures resemble the female, with indistinct head and neck markings. The chick’s down is not described in these texts.",
+  "sampleData": false,
+  "similar": [
+    {
+      "slug": "microcarbo-africanus",
+      "note": "Reed Cormorant shares the same fresh water and prey. African Darter is slimmer, swims with only the head and kinked neck showing, and has a straight pointed bill. Newman says that bill is not hooked, and Wikipedia says the pointed bill prevents confusion with cormorants."
+    },
+    {
+      "slug": "phalacrocorax-carbo",
+      "note": "Great Cormorant is the other cormorant with a similar inland range in SABAP1. It lacks the darter’s long kinked neck and rufous or sandy fore-neck. The darter’s bill is straight and pointed."
+    }
+  ],
+  "sources": [
+    {
+      "title": "The Atlas of Southern African Birds, Vol. 1 (Darter)",
+      "url": "https://sabap2.birdmap.africa/docs/sabap1/060.pdf",
+      "publisher": "BirdLife South Africa",
+      "year": 1997
+    },
+    {
+      "title": "African Darter",
+      "url": "https://newmansbirds.com/birds/african-darter/",
+      "publisher": "Newman's Birds",
+      "year": 2026
+    },
+    {
+      "title": "Anhinga rufa (African darter)",
+      "url": "https://www.biodiversityexplorer.info/birds/anhingidae/anhinga_rufa.htm",
+      "publisher": "Biodiversity Explorer",
+      "year": null
+    },
+    {
+      "title": "African darter",
+      "url": "https://en.wikipedia.org/wiki/African_darter",
+      "publisher": "Wikipedia",
+      "year": 2026
+    }
+  ],
   "population": {
     "estimate": {
       "low": 64,
@@ -35,8 +94,252 @@
     },
     "tierApplied": "D"
   },
-  "variants": [],
-  "viewNotes": [],
-  "calls": [],
-  "images": []
+  "variants": [
+    {
+      "age": "adult",
+      "sex": "male",
+      "season": "any",
+      "marks": {
+        "bill": {
+          "colour": "grey",
+          "shape": "straight and pointed, not hooked; grey"
+        },
+        "eye": {
+          "iris": null,
+          "ring": null
+        },
+        "legs": {
+          "colour": null
+        },
+        "head": {
+          "crown": "black",
+          "face": [
+            "rufous",
+            "white"
+          ],
+          "throat": "rufous",
+          "pattern": "Newman: the male is blacker than the female and the front of the neck is rufous. Wikipedia: a thin white stripe along the side of the neck, on a rufous background, and glossy black plumage with white streaking."
+        },
+        "upperparts": {
+          "back": [
+            "black",
+            "white"
+          ],
+          "rump": null,
+          "pattern": "White streaking on the dark upperparts. Newman: silvery-beige plumes on the mantle when breeding. Those plumes were not stored as a summer plumage, because SABAP1 records breeding in every month in the northeastern zones."
+        },
+        "underparts": {
+          "breast": "black",
+          "belly": "black",
+          "pattern": null
+        },
+        "wings": {
+          "above": "black",
+          "below": null,
+          "pattern": "The wing colour in flight is not described separately from the black body. After swimming the bird perches with the wings outstretched."
+        },
+        "tail": {
+          "colour": null,
+          "shape": null
+        }
+      }
+    },
+    {
+      "age": "adult",
+      "sex": "female",
+      "season": "any",
+      "marks": {
+        "bill": {
+          "colour": [
+            "cream",
+            "white"
+          ],
+          "shape": "straight and pointed; creamy white"
+        },
+        "eye": {
+          "iris": null,
+          "ring": null
+        },
+        "legs": {
+          "colour": null
+        },
+        "head": {
+          "crown": "dark-brown",
+          "face": [
+            "buff",
+            "white"
+          ],
+          "throat": "buff",
+          "pattern": "Newman: the female is browner than the male and the front of the neck is sandy. The sandy fore-neck is stored as buff. Wikipedia’s white lateral neck stripe is included."
+        },
+        "upperparts": {
+          "back": "brown",
+          "rump": null,
+          "pattern": null
+        },
+        "underparts": {
+          "breast": "brown",
+          "belly": "brown",
+          "pattern": null
+        },
+        "wings": {
+          "above": "dark-brown",
+          "below": null,
+          "pattern": "Browner than the male. The underwing is not given a separate colour."
+        },
+        "tail": {
+          "colour": null,
+          "shape": null
+        }
+      }
+    }
+  ],
+  "viewNotes": [
+    {
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "A long thin neck with a kink and a straight pointed bill. On the water only the head and neck show."
+    },
+    {
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "male",
+      "season": "any",
+      "note": "Blacker than the female, with a grey bill and a rufous front to the neck. Silvery-beige mantle plumes are present when breeding."
+    },
+    {
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "female",
+      "season": "any",
+      "note": "Browner than the male, with a creamy-white bill and a sandy front to the neck."
+    },
+    {
+      "view": "perched-side",
+      "age": "immature",
+      "sex": "any",
+      "season": "any",
+      "note": "Newman says the immature is similar to the female, with indistinct head and neck markings. No separate part colours are named."
+    },
+    {
+      "view": "perched-front",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "The front of the neck is rufous on the male and sandy on the female. A thin white stripe runs along the side of the neck."
+    },
+    {
+      "view": "perched-back",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "The body is very dark brown, blacker on the male. The wings are often held open after swimming. Breeding males show silvery-beige plumes on the mantle."
+    },
+    {
+      "view": "flight-above",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "The upperwing colour in flight is not described. The body is very dark brown, and the male is blacker."
+    },
+    {
+      "view": "flight-below",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "The underwing colour is not described. The outstretched wings after swimming are a perched drying posture."
+    }
+  ],
+  "calls": [
+    {
+      "sex": "any",
+      "type": "call",
+      "description": "A guttural ger-ge-ger-ger-gerkgerr-ger, given for long periods while perched. Newman does not separate the sexes. The grade A catalogue files are ND, so this grade B Eastern Cape call is the highest playable recording. It is not labelled by sex.",
+      "recordings": [
+        {
+          "key": "xeno-canto/XC326628",
+          "source": "https://xeno-canto.org/326628",
+          "fileUrl": "https://xeno-canto.org/sounds/uploaded/SGLTZLDXYI/XC326628-African%20darter.mp3",
+          "author": "Lynette Rudman",
+          "license": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ]
+    }
+  ],
+  "images": [
+    {
+      "key": "anhinga-rufa/skukuza-side.jpg",
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "source": "https://www.inaturalist.org/observations/297794336",
+      "fileUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/536339356/large.jpg",
+      "author": "Darío De la Fuente",
+      "license": "CC BY 4.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by/4.0/",
+      "aiGenerated": false,
+      "hosted": false,
+      "alt": "African Darter perched side-on near Skukuza, Kruger, with a kinked neck and a pale bill",
+      "caption": "African Darter perched side-on near Skukuza, Kruger, with a kinked neck and a pale bill"
+    },
+    {
+      "key": "anhinga-rufa/mopani-front.jpg",
+      "view": "perched-front",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "source": "https://www.inaturalist.org/observations/287813882",
+      "fileUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/517536510/large.jpg",
+      "author": "Wayne and Pam Osborn",
+      "license": "CC BY-NC 4.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+      "aiGenerated": false,
+      "hosted": false,
+      "alt": "African Darter perched front-on in Mopani, Kruger, with both wings spread and a white stripe on the neck",
+      "caption": "African Darter perched front-on in Mopani, Kruger, with both wings spread and a white stripe on the neck"
+    },
+    {
+      "key": "anhinga-rufa/mjejane-back.jpg",
+      "view": "perched-back",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "source": "https://www.inaturalist.org/observations/125795314",
+      "fileUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/213360718/large.jpeg",
+      "author": "Richard Gill",
+      "license": "CC BY-NC 4.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+      "aiGenerated": false,
+      "hosted": false,
+      "alt": "African Darter seen from behind on a rock at Mjejane, beside Kruger, with a pale neck",
+      "caption": "African Darter seen from behind on a rock at Mjejane, beside Kruger, with a pale neck"
+    },
+    {
+      "key": "anhinga-rufa/klaserie-below.jpg",
+      "view": "flight-below",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "source": "https://www.inaturalist.org/observations/25934056",
+      "fileUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/40223079/large.jpeg",
+      "author": "Shaun Swanepoel",
+      "license": "CC BY 4.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by/4.0/",
+      "aiGenerated": false,
+      "hosted": false,
+      "alt": "Backlit African Darter in flight near Klaserie, seen from below, with the plumage colour lost in silhouette",
+      "caption": "Backlit African Darter in flight near Klaserie, seen from below, with the plumage colour lost in silhouette"
+    }
+  ],
+  "research": {
+    "confidence": "medium",
+    "needsReview": false,
+    "note": "Status is resident and all twelve months are listed. Newman calls it a common resident. SABAP1 records partial seasonal changes in numbers elsewhere, but the models do not show a seasonal absence, and the Biodiversity Explorer summary of Roberts VII calls it mainly sedentary. Breeding mantle plumes were not stored as summer plumage because northeastern breeding is recorded in every month. SABAP1 used the name Anhinga melanogaster for this bird. Chick down, leg and eye colour, a flight photograph from above, and a sexed call were not found. The three grade A recordings are ND. The Wikipedia description section lacked inline citations in February 2025, so the white neck stripe and the 80 cm length are cited from that page alongside Newman."
+  }
 }

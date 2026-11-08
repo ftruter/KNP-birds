@@ -6,8 +6,8 @@
     "en": "Darters",
     "af": "Slanghalsvoël"
   },
-  "summary": "Field notes for this family are still to be written.",
-  "sampleData": true,
+  "summary": "Darters are slender diving birds with a long kinked neck and a straight pointed bill. Kruger has one species, the African Darter, Anhinga rufa. SABAP1 listed that bird as Anhinga melanogaster.",
+  "sampleData": false,
   "species": [
     {
       "slug": "anhinga-rufa",

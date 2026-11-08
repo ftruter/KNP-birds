@@ -1355,14 +1355,87 @@
       "slug": "anhinga-rufa",
       "scientificName": "Anhinga rufa",
       "commonName": "African Darter",
-      "images": [],
-      "recordings": [],
+      "images": [
+        {
+          "key": "anhinga-rufa/skukuza-side.jpg",
+          "author": "Darío De la Fuente",
+          "licence": "CC BY 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by/4.0/",
+          "sourceUrl": "https://www.inaturalist.org/observations/297794336",
+          "aiGenerated": false,
+          "hosted": false
+        },
+        {
+          "key": "anhinga-rufa/mopani-front.jpg",
+          "author": "Wayne and Pam Osborn",
+          "licence": "CC BY-NC 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+          "sourceUrl": "https://www.inaturalist.org/observations/287813882",
+          "aiGenerated": false,
+          "hosted": false
+        },
+        {
+          "key": "anhinga-rufa/mjejane-back.jpg",
+          "author": "Richard Gill",
+          "licence": "CC BY-NC 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+          "sourceUrl": "https://www.inaturalist.org/observations/125795314",
+          "aiGenerated": false,
+          "hosted": false
+        },
+        {
+          "key": "anhinga-rufa/klaserie-below.jpg",
+          "author": "Shaun Swanepoel",
+          "licence": "CC BY 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by/4.0/",
+          "sourceUrl": "https://www.inaturalist.org/observations/25934056",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ],
+      "recordings": [
+        {
+          "key": "xeno-canto/XC326628",
+          "author": "Lynette Rudman",
+          "licence": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "sourceUrl": "https://xeno-canto.org/326628",
+          "aiGenerated": false,
+          "hosted": false,
+          "quality": "B",
+          "callType": "call"
+        }
+      ],
       "sources": [
         {
           "title": "Kemp A.C., Herholdt J.J., Whyte I. & Harrison J. (2001). Birds of the two largest national parks in South Africa: a method to generate estimates of population size for all species and assess their conservation ecology. S. Afr. J. Sci. 97: 393–403.",
           "url": "https://journals.co.za/doi/pdf/10.10520/EJC97367",
           "publisher": "South African Journal of Science",
           "year": 2001
+        },
+        {
+          "title": "The Atlas of Southern African Birds, Vol. 1 (Darter)",
+          "url": "https://sabap2.birdmap.africa/docs/sabap1/060.pdf",
+          "publisher": "BirdLife South Africa",
+          "year": 1997
+        },
+        {
+          "title": "African Darter",
+          "url": "https://newmansbirds.com/birds/african-darter/",
+          "publisher": "Newman's Birds",
+          "year": 2026
+        },
+        {
+          "title": "Anhinga rufa (African darter)",
+          "url": "https://www.biodiversityexplorer.info/birds/anhingidae/anhinga_rufa.htm",
+          "publisher": "Biodiversity Explorer",
+          "year": null
+        },
+        {
+          "title": "African darter",
+          "url": "https://en.wikipedia.org/wiki/African_darter",
+          "publisher": "Wikipedia",
+          "year": 2026
         }
       ]
     },

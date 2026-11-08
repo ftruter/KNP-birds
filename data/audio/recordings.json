@@ -195,6 +195,16 @@
         }
       ]
     },
+    "anhinga-rufa": {
+      "calls": [
+        {
+          "index": 0,
+          "quality": {
+            "xeno-canto/XC326628": "B"
+          }
+        }
+      ]
+    },
     "aquila-nipalensis": {
       "calls": [
         {
