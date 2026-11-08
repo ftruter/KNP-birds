@@ -7,8 +7,64 @@
     "af": "Donkerlewerik"
   },
   "family": "alaudidae",
-  "summary": "The details for this species have not been published yet.",
-  "sampleData": true,
+  "status": "intra-african-migrant",
+  "monthsPresent": [
+    10,
+    11,
+    12,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+  ],
+  "size": {
+    "lengthCm": {
+      "min": 19,
+      "max": 19
+    },
+    "note": "Newman's Birds gives 19 cm."
+  },
+  "habitat": "Grassy clearings and short grass in mesic and semi-arid savanna, especially beside bushwillow or mopane, and also heavily grazed paddocks and gravel roads.",
+  "summary": "A non-breeding intra-African migrant to the lowveld. It is dark above, with bold markings on the face and breast, a heavier bill than a Groundscraper Thrush, and white legs. It flicks its wings open while walking and flies with a sharp dip. The sexes are not described as differing. Newman states that it has no distinctive call. Juvenile and chick colours are not described.",
+  "sampleData": false,
+  "similar": [
+    {
+      "slug": "turdus-litsitsirupa",
+      "note": "Groundscraper Thrush has similar bold face and breast markings. Dusky Lark is darker above, with a more robust bill and white legs, and it flicks the wings while walking."
+    },
+    {
+      "slug": "corypha-africana",
+      "note": "Rufous-naped Lark is a resident with rufous wings and a whistled song. Dusky Lark is a dark migrant of clearings and does not have that song."
+    }
+  ],
+  "sources": [
+    {
+      "title": "The Atlas of Southern African Birds, Vol. 2 (Dusky Lark)",
+      "url": "https://sabap2.birdmap.africa/docs/sabap1/505.pdf",
+      "publisher": "BirdLife South Africa",
+      "year": 1997
+    },
+    {
+      "title": "Pinarocorys nigricans (Dusky lark), summarised from Roberts VII",
+      "url": "https://www.biodiversityexplorer.info/birds/alaudidae/pinarocorys_nigricans.htm",
+      "publisher": "Iziko Museums of South Africa",
+      "year": null
+    },
+    {
+      "title": "Dusky Lark",
+      "url": "https://newmansbirds.com/birds/dusky-lark/",
+      "publisher": "Newman's Birds",
+      "year": null
+    },
+    {
+      "title": "Dusky lark",
+      "url": "https://en.wikipedia.org/wiki/Dusky_lark",
+      "publisher": "Wikipedia",
+      "year": 2026
+    }
+  ],
   "population": {
     "estimate": {
       "low": 256,
@@ -35,8 +91,131 @@
     },
     "tierApplied": "D"
   },
-  "variants": [],
-  "viewNotes": [],
-  "calls": [],
-  "images": []
+  "variants": [
+    {
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "marks": {
+        "bill": {
+          "colour": null,
+          "shape": "more robust than Groundscraper Thrush"
+        },
+        "eye": {
+          "iris": null,
+          "ring": null
+        },
+        "legs": {
+          "colour": "white"
+        },
+        "head": {
+          "crown": null,
+          "face": "dark-brown",
+          "throat": null,
+          "pattern": "bold markings on the face"
+        },
+        "upperparts": {
+          "back": "dark-brown",
+          "rump": null
+        },
+        "underparts": {
+          "breast": "dark-brown",
+          "belly": null,
+          "pattern": "bold markings on the breast"
+        },
+        "wings": {
+          "above": null,
+          "below": null
+        },
+        "tail": {
+          "colour": null,
+          "shape": null
+        }
+      }
+    }
+  ],
+  "viewNotes": [
+    {
+      "view": "flight-above",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Dark upperparts. The flight is sharply dipping. A separate upperwing pattern is not described."
+    },
+    {
+      "view": "flight-below",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "The underwing is not described. It flicks the wings open while walking, which is not a spread-wing flight view."
+    },
+    {
+      "view": "perched-front",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Bold face and breast markings. The bill is robust and the legs are white."
+    },
+    {
+      "view": "perched-back",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Dark upperparts, darker than a Groundscraper Thrush. The rump is not given a separate colour in the texts used here, though an old name is rufous-rumped bush lark."
+    },
+    {
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Dark upperparts, bold face and breast pattern, heavy bill and white legs, usually on open ground in woodland."
+    }
+  ],
+  "calls": [
+    {
+      "sex": "any",
+      "type": "call",
+      "description": "Newman states that it has no distinctive call. The texts used here do not transcribe a song or assign any sound to one sex.",
+      "recordings": []
+    }
+  ],
+  "images": [
+    {
+      "key": "pinarocorys-nigricans/kruger-side.jpg",
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "source": "https://www.inaturalist.org/observations/288267419",
+      "fileUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/518350115/large.jpg",
+      "author": "Gigi Laidler",
+      "license": "CC BY-NC 4.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+      "aiGenerated": false,
+      "hosted": false,
+      "alt": "Dusky Lark standing side-on in Kruger National Park, with pale legs",
+      "caption": "Dusky Lark standing side-on in Kruger National Park, with pale legs"
+    },
+    {
+      "key": "pinarocorys-nigricans/mopani-side.jpg",
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "source": "https://www.inaturalist.org/observations/204147392",
+      "fileUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/360794857/large.jpeg",
+      "author": "Christiaan Viljoen",
+      "license": "CC BY 4.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by/4.0/",
+      "aiGenerated": false,
+      "hosted": false,
+      "alt": "Dusky Lark walking side-on in the Mopani district",
+      "caption": "Dusky Lark walking side-on in the Mopani district"
+    }
+  ],
+  "research": {
+    "confidence": "medium",
+    "needsReview": false,
+    "note": "Status is intra-african-migrant, matching Kemp’s non-breeding visitor. SABAP1 and Roberts say it arrives from late October into November and returns north from April to June, so months are October–June. The two xeno-canto recordings found were both ND and were not used. Breast and face colours are described only as bold and dark, not as a named palette beyond that. Chick and juvenile plumage are not described. An old English name, rufous-rumped bush lark, is recorded by Wikipedia without a plumage description in the texts used here."
+  }
 }

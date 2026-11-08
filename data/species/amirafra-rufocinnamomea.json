@@ -7,8 +7,67 @@
     "af": "Laeveldklappertjie"
   },
   "family": "alaudidae",
-  "summary": "The details for this species have not been published yet.",
-  "sampleData": true,
+  "status": "resident",
+  "monthsPresent": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+  ],
+  "size": {
+    "lengthCm": {
+      "min": 16,
+      "max": 16
+    },
+    "note": "Newman's Birds gives 16 cm."
+  },
+  "habitat": "Grassy clearings and drainage lines in broad-leaved woodland, including Burkea, miombo and Zambezi teak, and also Acacia savanna.",
+  "summary": "A lowveld resident lark, best known for the male’s high display flight. The eastern race, the one in the lowveld, is the rufous one, with a longer bill than the pallid northwestern race. The sexes are not described as differing in plumage. A species-specific juvenile or chick colour is not given in the texts used here.",
+  "sampleData": false,
+  "similar": [
+    {
+      "slug": "corypha-africana",
+      "note": "Rufous-naped Lark sings a whistled phrase from a perch and shows a crest and a rufous wing patch. Flappet Lark rises high and gives wing-claps."
+    },
+    {
+      "slug": "calendulauda-sabota",
+      "note": "Sabota Lark is streaked on the breast, has a white eyebrow, and lacks rufous edges on the wing."
+    }
+  ],
+  "sources": [
+    {
+      "title": "The Atlas of Southern African Birds, Vol. 2 (Flappet Lark)",
+      "url": "https://sabap2.birdmap.africa/docs/sabap1/496.pdf",
+      "publisher": "BirdLife South Africa",
+      "year": 1997
+    },
+    {
+      "title": "Mirafra rufocinnamomea (Flappet lark), summarised from Roberts VII",
+      "url": "https://www.biodiversityexplorer.info/birds/alaudidae/mirafra_rufocinnamomea.htm",
+      "publisher": "Iziko Museums of South Africa",
+      "year": null
+    },
+    {
+      "title": "Flappet Lark",
+      "url": "https://newmansbirds.com/birds/flappet-lark/",
+      "publisher": "Newman's Birds",
+      "year": null
+    },
+    {
+      "title": "Flappet lark",
+      "url": "https://en.wikipedia.org/wiki/Flappet_lark",
+      "publisher": "Wikipedia",
+      "year": 2026
+    }
+  ],
   "population": {
     "estimate": {
       "low": 65536,
@@ -35,8 +94,140 @@
     },
     "tierApplied": "D"
   },
-  "variants": [],
-  "viewNotes": [],
-  "calls": [],
-  "images": []
+  "variants": [
+    {
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "marks": {
+        "bill": {
+          "colour": null,
+          "shape": "longer and less stout than the pallid northwestern race; the eastern lowveld race is the rufous one"
+        },
+        "eye": {
+          "iris": null,
+          "ring": null
+        },
+        "legs": {
+          "colour": null
+        },
+        "head": {
+          "crown": null,
+          "face": null,
+          "throat": null
+        },
+        "upperparts": {
+          "back": "rufous",
+          "rump": null
+        },
+        "underparts": {
+          "breast": null,
+          "belly": null
+        },
+        "wings": {
+          "above": null,
+          "below": null
+        },
+        "tail": {
+          "colour": null,
+          "shape": null
+        }
+      }
+    }
+  ],
+  "viewNotes": [
+    {
+      "view": "flight-above",
+      "age": "adult",
+      "sex": "male",
+      "season": "any",
+      "note": "The male rises to about 50–100 m, circling and giving short bursts of wing-claps. The upperwing colour is not separately described."
+    },
+    {
+      "view": "flight-below",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "The underwing is not described in the texts used here. After the display the bird drops abruptly."
+    },
+    {
+      "view": "perched-front",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "The face and underpart colours are not named in the species texts used here. The eastern race is the rufous one."
+    },
+    {
+      "view": "perched-back",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "The eastern race is rufous above. A separate rump colour is not given."
+    },
+    {
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "A rufous lowveld lark with a longer bill than the northwestern race. It is unobtrusive outside the display season."
+    }
+  ],
+  "calls": [
+    {
+      "sex": "male",
+      "type": "song",
+      "description": "In the display the male gives a thin wispy tuee-tui and bursts of wing-claps, a muffled purrit-purrit like a ringing telephone; a female song is not described.",
+      "recordings": [
+        {
+          "key": "xeno-canto/XC266874",
+          "source": "https://xeno-canto.org/266874",
+          "fileUrl": "https://xeno-canto.org/sounds/uploaded/CDTGHVBGZP/XC266874-Flappet%20Lark2014-12-15-2.mp3",
+          "author": "Andrew Spencer",
+          "license": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ]
+    }
+  ],
+  "images": [
+    {
+      "key": "amirafra-rufocinnamomea/kruger-back.jpg",
+      "view": "perched-back",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "source": "https://www.inaturalist.org/observations/341651951",
+      "fileUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/622011736/large.jpg",
+      "author": "Sameer Shaik",
+      "license": "CC BY 4.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by/4.0/",
+      "aiGenerated": false,
+      "hosted": false,
+      "alt": "Flappet Lark perched from behind in Kruger National Park",
+      "caption": "Flappet Lark perched from behind in Kruger National Park"
+    },
+    {
+      "key": "amirafra-rufocinnamomea/kruger-front.jpg",
+      "view": "perched-front",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "source": "https://www.inaturalist.org/observations/329537847",
+      "fileUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/597366653/large.jpg",
+      "author": "Charley Hesse",
+      "license": "CC BY-NC 4.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+      "aiGenerated": false,
+      "hosted": false,
+      "alt": "Flappet Lark perched front-on in Kruger National Park",
+      "caption": "Flappet Lark perched front-on in Kruger National Park"
+    }
+  ],
+  "research": {
+    "confidence": "medium",
+    "needsReview": true,
+    "note": "Status is resident. SABAP1 found no seasonal movement, only lower winter conspicuousness, so all twelve months are listed. Newman’s species text names the eastern race as rufous and gives the display, and does not name underpart, eye, leg or bill colours. Chick and juvenile plumage are not described. The grade A song is from Ethiopia. A grade B song from northern South Africa exists and was not preferred, because grade comes first. No flight photograph was found."
+  }
 }

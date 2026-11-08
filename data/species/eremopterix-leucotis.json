@@ -7,8 +7,67 @@
     "af": "Rooiruglewerik"
   },
   "family": "alaudidae",
-  "summary": "The details for this species have not been published yet.",
-  "sampleData": true,
+  "status": "resident",
+  "monthsPresent": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+  ],
+  "size": {
+    "lengthCm": {
+      "min": 11,
+      "max": 13
+    },
+    "note": "Wikipedia gives 11 cm. Newman's Birds gives 12–13 cm."
+  },
+  "habitat": "Open savanna and short grassland with bare ground, including recently burnt ground, fallow fields, road verges and airstrips, often on reddish soils.",
+  "summary": "A small, strongly patterned sparrow-lark. The male is black on the head and underparts, with white patches on the nape and behind the eye, and chestnut upperparts. The female is streaked buff-white on the head and underparts, with a thin whitish collar, a dark belly patch, and mottled chestnut upperparts. Young birds are like the female. Both sexes have grey underwings. Chick down is not described.",
+  "sampleData": false,
+  "similar": [
+    {
+      "slug": "eremopterix-verticalis",
+      "note": "Grey-backed Sparrow-Lark has a grey back. Its male has a small white cap. Female Chestnut-backed Sparrow-Lark is darker above, with reddish wing coverts and bolder breast streaks."
+    },
+    {
+      "slug": "calandrella-cinerea",
+      "note": "Red-capped Lark has a rufous cap and rufous breast-side patches on pale underparts, and the sexes look alike."
+    }
+  ],
+  "sources": [
+    {
+      "title": "The Atlas of Southern African Birds, Vol. 2 (Chestnutbacked Finchlark)",
+      "url": "https://sabap2.birdmap.africa/docs/sabap1/515.pdf",
+      "publisher": "BirdLife South Africa",
+      "year": 1997
+    },
+    {
+      "title": "Eremopterix leucotis (Chestnut-backed sparrowlark), summarised from Roberts VII",
+      "url": "https://www.biodiversityexplorer.info/birds/alaudidae/eremopterix_leucotis.htm",
+      "publisher": "Iziko Museums of South Africa",
+      "year": null
+    },
+    {
+      "title": "Chestnut-backed Sparrow-Lark",
+      "url": "https://newmansbirds.com/birds/chestnut-backed-sparrow-lark/",
+      "publisher": "Newman's Birds",
+      "year": null
+    },
+    {
+      "title": "Chestnut-backed sparrow-lark",
+      "url": "https://en.wikipedia.org/wiki/Chestnut-backed_sparrow-lark",
+      "publisher": "Wikipedia",
+      "year": 2026
+    }
+  ],
   "population": {
     "estimate": {
       "low": 8192,
@@ -35,8 +94,220 @@
     },
     "tierApplied": "D"
   },
-  "variants": [],
-  "viewNotes": [],
-  "calls": [],
-  "images": []
+  "variants": [
+    {
+      "age": "adult",
+      "sex": "male",
+      "season": "any",
+      "marks": {
+        "bill": {
+          "colour": "grey",
+          "shape": "thick"
+        },
+        "eye": {
+          "iris": null,
+          "ring": null
+        },
+        "legs": {
+          "colour": null
+        },
+        "head": {
+          "crown": "black",
+          "face": [
+            "black",
+            "white"
+          ],
+          "throat": "black",
+          "pattern": "black head with white patches on the nape and behind the eyes"
+        },
+        "upperparts": {
+          "back": "chestnut",
+          "rump": null,
+          "pattern": "chestnut with some dark streaking"
+        },
+        "underparts": {
+          "breast": "black",
+          "belly": "black"
+        },
+        "wings": {
+          "above": "chestnut",
+          "below": "grey"
+        },
+        "tail": {
+          "colour": null,
+          "shape": null
+        }
+      }
+    },
+    {
+      "age": "adult",
+      "sex": "female",
+      "season": "any",
+      "marks": {
+        "bill": {
+          "colour": null,
+          "shape": null
+        },
+        "eye": {
+          "iris": null,
+          "ring": null
+        },
+        "legs": {
+          "colour": null
+        },
+        "head": {
+          "crown": [
+            "buff",
+            "white"
+          ],
+          "face": [
+            "buff",
+            "white"
+          ],
+          "throat": null,
+          "pattern": "heavily streaked head and a thin whitish nape collar"
+        },
+        "upperparts": {
+          "back": "chestnut",
+          "rump": null,
+          "pattern": "chestnut upperparts with mottling"
+        },
+        "underparts": {
+          "breast": [
+            "buff",
+            "white"
+          ],
+          "belly": "black",
+          "pattern": "heavily streaked buff-white underparts and a dark belly spot"
+        },
+        "wings": {
+          "above": "chestnut",
+          "below": "grey"
+        },
+        "tail": {
+          "colour": null,
+          "shape": null
+        }
+      }
+    }
+  ],
+  "viewNotes": [
+    {
+      "view": "flight-above",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Chestnut wing coverts. The bird makes off low and irregularly, then resettles."
+    },
+    {
+      "view": "flight-below",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Both sexes have grey underwings, which separates them from the other sparrow-larks in Newman’s account."
+    },
+    {
+      "view": "perched-front",
+      "age": "adult",
+      "sex": "male",
+      "season": "any",
+      "note": "The male’s face and breast are black, with a white patch behind the eye. The female’s face is streaked buff-white."
+    },
+    {
+      "view": "perched-back",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Chestnut upperparts. The male’s white nape patch and the female’s thin whitish collar show from behind."
+    },
+    {
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Male: black underparts, white cheek patch and chestnut back. Female: streaked buff underparts, a dark belly spot and chestnut coverts."
+    },
+    {
+      "view": "perched-side",
+      "age": "juvenile",
+      "sex": "any",
+      "season": "any",
+      "note": "Young birds are like the female. A separate chick colour is not described."
+    }
+  ],
+  "calls": [
+    {
+      "sex": "any",
+      "type": "call",
+      "description": "A sharp rattling chip-chwep; the texts used here do not assign it to one sex.",
+      "recordings": [
+        {
+          "key": "xeno-canto/XC989383",
+          "source": "https://xeno-canto.org/989383",
+          "fileUrl": "https://xeno-canto.org/sounds/uploaded/KGENRQCZVH/XC989383-ERELEU_calls_NDJBilala_03042025_11h30.mp3",
+          "author": "Julien Birard",
+          "license": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ]
+    },
+    {
+      "sex": "any",
+      "type": "song",
+      "description": "A pretty song given in fluttering flight; the texts used here do not transcribe it or assign it to one sex.",
+      "recordings": [
+        {
+          "key": "xeno-canto/XC209983",
+          "source": "https://xeno-canto.org/209983",
+          "fileUrl": "https://xeno-canto.org/sounds/uploaded/CDTGHVBGZP/XC209983-Chestnut-backed%20Sparrow-Lark2014-12-26-1.mp3",
+          "author": "Andrew Spencer",
+          "license": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ]
+    }
+  ],
+  "images": [
+    {
+      "key": "eremopterix-leucotis/kruger-male-side.jpg",
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "male",
+      "season": "any",
+      "source": "https://www.inaturalist.org/observations/392909501",
+      "fileUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/720115098/large.jpg",
+      "author": "Lukas Zangl",
+      "license": "CC BY 4.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by/4.0/",
+      "aiGenerated": false,
+      "hosted": false,
+      "alt": "Male Chestnut-backed Sparrow-Lark side-on on burnt ground in Kruger",
+      "caption": "Male Chestnut-backed Sparrow-Lark side-on on burnt ground in Kruger"
+    },
+    {
+      "key": "eremopterix-leucotis/ehlanzeni-male.jpg",
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "male",
+      "season": "any",
+      "source": "https://www.inaturalist.org/observations/108243911",
+      "fileUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/182210759/large.jpg",
+      "author": "maritzasouthafrica",
+      "license": "CC BY-NC 4.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+      "aiGenerated": false,
+      "hosted": false,
+      "alt": "Male Chestnut-backed Sparrow-Lark feeding in the Ehlanzeni district",
+      "caption": "Male Chestnut-backed Sparrow-Lark feeding in the Ehlanzeni district"
+    }
+  ],
+  "research": {
+    "confidence": "medium",
+    "needsReview": true,
+    "note": "Kemp classed it as a visiting breeder. Newman calls it a resident, and SABAP1 says it is resident in some areas and nomadic in the Transvaal, with records in every season. All twelve months are listed. A female photograph and a flight photograph were not found in the open Kruger set used here. Both grade A recordings are from outside southern Africa; no higher-grade southern African file was available. The iNaturalist account name on the second photograph is maritzasouthafrica. Chick down is not described."
+  }
 }

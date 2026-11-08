@@ -914,14 +914,69 @@
       "slug": "amirafra-rufocinnamomea",
       "scientificName": "Amirafra rufocinnamomea",
       "commonName": "Flappet Lark",
-      "images": [],
-      "recordings": [],
+      "images": [
+        {
+          "key": "amirafra-rufocinnamomea/kruger-back.jpg",
+          "author": "Sameer Shaik",
+          "licence": "CC BY 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by/4.0/",
+          "sourceUrl": "https://www.inaturalist.org/observations/341651951",
+          "aiGenerated": false,
+          "hosted": false
+        },
+        {
+          "key": "amirafra-rufocinnamomea/kruger-front.jpg",
+          "author": "Charley Hesse",
+          "licence": "CC BY-NC 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+          "sourceUrl": "https://www.inaturalist.org/observations/329537847",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ],
+      "recordings": [
+        {
+          "key": "xeno-canto/XC266874",
+          "author": "Andrew Spencer",
+          "licence": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "sourceUrl": "https://xeno-canto.org/266874",
+          "aiGenerated": false,
+          "hosted": false,
+          "quality": "A",
+          "callType": "song"
+        }
+      ],
       "sources": [
         {
           "title": "Kemp A.C., Herholdt J.J., Whyte I. & Harrison J. (2001). Birds of the two largest national parks in South Africa: a method to generate estimates of population size for all species and assess their conservation ecology. S. Afr. J. Sci. 97: 393–403.",
           "url": "https://journals.co.za/doi/pdf/10.10520/EJC97367",
           "publisher": "South African Journal of Science",
           "year": 2001
+        },
+        {
+          "title": "The Atlas of Southern African Birds, Vol. 2 (Flappet Lark)",
+          "url": "https://sabap2.birdmap.africa/docs/sabap1/496.pdf",
+          "publisher": "BirdLife South Africa",
+          "year": 1997
+        },
+        {
+          "title": "Mirafra rufocinnamomea (Flappet lark), summarised from Roberts VII",
+          "url": "https://www.biodiversityexplorer.info/birds/alaudidae/mirafra_rufocinnamomea.htm",
+          "publisher": "Iziko Museums of South Africa",
+          "year": null
+        },
+        {
+          "title": "Flappet Lark",
+          "url": "https://newmansbirds.com/birds/flappet-lark/",
+          "publisher": "Newman's Birds",
+          "year": null
+        },
+        {
+          "title": "Flappet lark",
+          "url": "https://en.wikipedia.org/wiki/Flappet_lark",
+          "publisher": "Wikipedia",
+          "year": 2026
         }
       ]
     },
@@ -2754,14 +2809,80 @@
       "slug": "calandrella-cinerea",
       "scientificName": "Calandrella cinerea",
       "commonName": "Red-capped Lark",
-      "images": [],
-      "recordings": [],
+      "images": [
+        {
+          "key": "calandrella-cinerea/letaba-side.jpg",
+          "author": "Pieter Kotze",
+          "licence": "CC BY-NC 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+          "sourceUrl": "https://www.inaturalist.org/observations/151731850",
+          "aiGenerated": false,
+          "hosted": false
+        },
+        {
+          "key": "calandrella-cinerea/olifants-front.jpg",
+          "author": "Charley Hesse",
+          "licence": "CC BY-NC 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+          "sourceUrl": "https://www.inaturalist.org/observations/329538415",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ],
+      "recordings": [
+        {
+          "key": "xeno-canto/XC666780",
+          "author": "Tim Cockcroft",
+          "licence": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "sourceUrl": "https://xeno-canto.org/666780",
+          "aiGenerated": false,
+          "hosted": false,
+          "quality": "A",
+          "callType": "song"
+        },
+        {
+          "key": "xeno-canto/XC126286",
+          "author": "Sander Bot",
+          "licence": "CC BY-NC-SA 3.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/3.0/",
+          "sourceUrl": "https://xeno-canto.org/126286",
+          "aiGenerated": false,
+          "hosted": false,
+          "quality": "A",
+          "callType": "call"
+        }
+      ],
       "sources": [
         {
           "title": "Kemp A.C., Herholdt J.J., Whyte I. & Harrison J. (2001). Birds of the two largest national parks in South Africa: a method to generate estimates of population size for all species and assess their conservation ecology. S. Afr. J. Sci. 97: 393–403.",
           "url": "https://journals.co.za/doi/pdf/10.10520/EJC97367",
           "publisher": "South African Journal of Science",
           "year": 2001
+        },
+        {
+          "title": "The Atlas of Southern African Birds, Vol. 2 (Redcapped Lark)",
+          "url": "https://sabap2.birdmap.africa/docs/sabap1/507.pdf",
+          "publisher": "BirdLife South Africa",
+          "year": 1997
+        },
+        {
+          "title": "Calandrella cinerea (Red-capped lark), summarised from Roberts VII",
+          "url": "https://www.biodiversityexplorer.info/birds/alaudidae/calandrella_cinerea.htm",
+          "publisher": "Iziko Museums of South Africa",
+          "year": null
+        },
+        {
+          "title": "Red-capped Lark",
+          "url": "https://newmansbirds.com/birds/red-capped-lark/",
+          "publisher": "Newman's Birds",
+          "year": null
+        },
+        {
+          "title": "Red-capped lark",
+          "url": "https://en.wikipedia.org/wiki/Red-capped_lark",
+          "publisher": "Wikipedia",
+          "year": 2026
         }
       ]
     },
@@ -2769,14 +2890,57 @@
       "slug": "calendulauda-africanoides",
       "scientificName": "Calendulauda africanoides",
       "commonName": "Fawn-coloured Lark",
-      "images": [],
-      "recordings": [],
+      "images": [
+        {
+          "key": "calendulauda-africanoides/mopani-side.jpg",
+          "author": "Duncan McKenzie",
+          "licence": "CC BY-NC 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+          "sourceUrl": "https://www.inaturalist.org/observations/196023427",
+          "aiGenerated": false,
+          "hosted": false
+        },
+        {
+          "key": "calendulauda-africanoides/mopani-perch.jpg",
+          "author": "Niall Perrins",
+          "licence": "CC BY-NC 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+          "sourceUrl": "https://www.inaturalist.org/observations/109627573",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ],
+      "recordings": [
+        {
+          "key": "xeno-canto/XC28606",
+          "author": "Patrik Åberg",
+          "licence": "CC BY-NC-SA 3.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/3.0/",
+          "sourceUrl": "https://xeno-canto.org/28606",
+          "aiGenerated": false,
+          "hosted": false,
+          "quality": "A",
+          "callType": "song"
+        }
+      ],
       "sources": [
         {
           "title": "Kemp A.C., Herholdt J.J., Whyte I. & Harrison J. (2001). Birds of the two largest national parks in South Africa: a method to generate estimates of population size for all species and assess their conservation ecology. S. Afr. J. Sci. 97: 393–403.",
           "url": "https://journals.co.za/doi/pdf/10.10520/EJC97367",
           "publisher": "South African Journal of Science",
           "year": 2001
+        },
+        {
+          "title": "The Atlas of Southern African Birds, Vol. 2 (Fawncoloured Lark)",
+          "url": "https://sabap2.birdmap.africa/docs/sabap1/497.pdf",
+          "publisher": "BirdLife South Africa",
+          "year": 1997
+        },
+        {
+          "title": "Fawn-coloured lark",
+          "url": "https://en.wikipedia.org/wiki/Fawn-coloured_lark",
+          "publisher": "Wikipedia",
+          "year": 2026
         }
       ]
     },
@@ -2784,14 +2948,63 @@
       "slug": "calendulauda-sabota",
       "scientificName": "Calendulauda sabota",
       "commonName": "Sabota Lark",
-      "images": [],
-      "recordings": [],
+      "images": [
+        {
+          "key": "calendulauda-sabota/kruger-canopy.jpg",
+          "author": "rastor",
+          "licence": "CC BY-NC 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+          "sourceUrl": "https://www.inaturalist.org/observations/365307275",
+          "aiGenerated": false,
+          "hosted": false
+        },
+        {
+          "key": "calendulauda-sabota/kruger-side.jpg",
+          "author": "copper",
+          "licence": "CC BY-NC 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+          "sourceUrl": "https://www.inaturalist.org/observations/29621892",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ],
+      "recordings": [
+        {
+          "key": "xeno-canto/XC872621",
+          "author": "Niall Perrins",
+          "licence": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "sourceUrl": "https://xeno-canto.org/872621",
+          "aiGenerated": false,
+          "hosted": false,
+          "quality": "A",
+          "callType": "song"
+        }
+      ],
       "sources": [
         {
           "title": "Kemp A.C., Herholdt J.J., Whyte I. & Harrison J. (2001). Birds of the two largest national parks in South Africa: a method to generate estimates of population size for all species and assess their conservation ecology. S. Afr. J. Sci. 97: 393–403.",
           "url": "https://journals.co.za/doi/pdf/10.10520/EJC97367",
           "publisher": "South African Journal of Science",
           "year": 2001
+        },
+        {
+          "title": "The Atlas of Southern African Birds, Vol. 2 (Sabota Lark)",
+          "url": "https://sabap2.birdmap.africa/docs/sabap1/498.pdf",
+          "publisher": "BirdLife South Africa",
+          "year": 1997
+        },
+        {
+          "title": "Sabota Lark",
+          "url": "https://newmansbirds.com/birds/sabota-lark/",
+          "publisher": "Newman's Birds",
+          "year": null
+        },
+        {
+          "title": "Sabota lark",
+          "url": "https://en.wikipedia.org/wiki/Sabota_lark",
+          "publisher": "Wikipedia",
+          "year": 2026
         }
       ]
     },
@@ -5022,14 +5235,69 @@
       "slug": "corypha-africana",
       "scientificName": "Corypha africana",
       "commonName": "Rufous-naped Lark",
-      "images": [],
-      "recordings": [],
+      "images": [
+        {
+          "key": "corypha-africana/kruger-back.jpg",
+          "author": "Cole Wolf",
+          "licence": "CC BY 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by/4.0/",
+          "sourceUrl": "https://www.inaturalist.org/observations/186025929",
+          "aiGenerated": false,
+          "hosted": false
+        },
+        {
+          "key": "corypha-africana/kruger-side.jpg",
+          "author": "copper",
+          "licence": "CC BY-NC 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+          "sourceUrl": "https://www.inaturalist.org/observations/72588680",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ],
+      "recordings": [
+        {
+          "key": "xeno-canto/XC391863",
+          "author": "Werner van der Walt",
+          "licence": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "sourceUrl": "https://xeno-canto.org/391863",
+          "aiGenerated": false,
+          "hosted": false,
+          "quality": "A",
+          "callType": "song"
+        }
+      ],
       "sources": [
         {
           "title": "Kemp A.C., Herholdt J.J., Whyte I. & Harrison J. (2001). Birds of the two largest national parks in South Africa: a method to generate estimates of population size for all species and assess their conservation ecology. S. Afr. J. Sci. 97: 393–403.",
           "url": "https://journals.co.za/doi/pdf/10.10520/EJC97367",
           "publisher": "South African Journal of Science",
           "year": 2001
+        },
+        {
+          "title": "The Atlas of Southern African Birds, Vol. 2 (Rufousnaped Lark)",
+          "url": "https://sabap2.birdmap.africa/docs/sabap1/494.pdf",
+          "publisher": "BirdLife South Africa",
+          "year": 1997
+        },
+        {
+          "title": "Mirafra africana (Rufous-naped lark), summarised from Roberts VII",
+          "url": "https://www.biodiversityexplorer.info/birds/alaudidae/mirafra_africana.htm",
+          "publisher": "Iziko Museums of South Africa",
+          "year": null
+        },
+        {
+          "title": "Rufous-naped Lark",
+          "url": "https://newmansbirds.com/birds/rufous-naped-lark/",
+          "publisher": "Newman's Birds",
+          "year": null
+        },
+        {
+          "title": "Rufous-naped lark",
+          "url": "https://en.wikipedia.org/wiki/Rufous-naped_lark",
+          "publisher": "Wikipedia",
+          "year": 2026
         }
       ]
     },
@@ -5839,14 +6107,135 @@
       "slug": "eremopterix-leucotis",
       "scientificName": "Eremopterix leucotis",
       "commonName": "Chestnut-backed Sparrow-Lark",
-      "images": [],
-      "recordings": [],
+      "images": [
+        {
+          "key": "eremopterix-leucotis/kruger-male-side.jpg",
+          "author": "Lukas Zangl",
+          "licence": "CC BY 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by/4.0/",
+          "sourceUrl": "https://www.inaturalist.org/observations/392909501",
+          "aiGenerated": false,
+          "hosted": false
+        },
+        {
+          "key": "eremopterix-leucotis/ehlanzeni-male.jpg",
+          "author": "maritzasouthafrica",
+          "licence": "CC BY-NC 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+          "sourceUrl": "https://www.inaturalist.org/observations/108243911",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ],
+      "recordings": [
+        {
+          "key": "xeno-canto/XC989383",
+          "author": "Julien Birard",
+          "licence": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "sourceUrl": "https://xeno-canto.org/989383",
+          "aiGenerated": false,
+          "hosted": false,
+          "quality": "A",
+          "callType": "call"
+        },
+        {
+          "key": "xeno-canto/XC209983",
+          "author": "Andrew Spencer",
+          "licence": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "sourceUrl": "https://xeno-canto.org/209983",
+          "aiGenerated": false,
+          "hosted": false,
+          "quality": "A",
+          "callType": "song"
+        }
+      ],
       "sources": [
         {
           "title": "Kemp A.C., Herholdt J.J., Whyte I. & Harrison J. (2001). Birds of the two largest national parks in South Africa: a method to generate estimates of population size for all species and assess their conservation ecology. S. Afr. J. Sci. 97: 393–403.",
           "url": "https://journals.co.za/doi/pdf/10.10520/EJC97367",
           "publisher": "South African Journal of Science",
           "year": 2001
+        },
+        {
+          "title": "The Atlas of Southern African Birds, Vol. 2 (Chestnutbacked Finchlark)",
+          "url": "https://sabap2.birdmap.africa/docs/sabap1/515.pdf",
+          "publisher": "BirdLife South Africa",
+          "year": 1997
+        },
+        {
+          "title": "Eremopterix leucotis (Chestnut-backed sparrowlark), summarised from Roberts VII",
+          "url": "https://www.biodiversityexplorer.info/birds/alaudidae/eremopterix_leucotis.htm",
+          "publisher": "Iziko Museums of South Africa",
+          "year": null
+        },
+        {
+          "title": "Chestnut-backed Sparrow-Lark",
+          "url": "https://newmansbirds.com/birds/chestnut-backed-sparrow-lark/",
+          "publisher": "Newman's Birds",
+          "year": null
+        },
+        {
+          "title": "Chestnut-backed sparrow-lark",
+          "url": "https://en.wikipedia.org/wiki/Chestnut-backed_sparrow-lark",
+          "publisher": "Wikipedia",
+          "year": 2026
+        }
+      ]
+    },
+    {
+      "slug": "eremopterix-verticalis",
+      "scientificName": "Eremopterix verticalis",
+      "commonName": "Grey-backed Sparrow-lark",
+      "images": [
+        {
+          "key": "eremopterix-verticalis/mopani-pair.jpg",
+          "author": "wildguide-",
+          "licence": "CC BY-NC 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+          "sourceUrl": "https://www.inaturalist.org/observations/194580645",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ],
+      "recordings": [
+        {
+          "key": "xeno-canto/XC288401",
+          "author": "Alan Collett",
+          "licence": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "sourceUrl": "https://xeno-canto.org/288401",
+          "aiGenerated": false,
+          "hosted": false,
+          "quality": "B",
+          "callType": "call"
+        }
+      ],
+      "sources": [
+        {
+          "title": "The Atlas of Southern African Birds, Vol. 2 (Greybacked Finchlark)",
+          "url": "https://sabap2.birdmap.africa/docs/sabap1/516.pdf",
+          "publisher": "BirdLife South Africa",
+          "year": 1997
+        },
+        {
+          "title": "Eremopterix verticalis (Grey-backed sparrowlark), summarised from Roberts VII",
+          "url": "https://www.biodiversityexplorer.info/birds/alaudidae/eremopterix_verticalis.htm",
+          "publisher": "Iziko Museums of South Africa",
+          "year": null
+        },
+        {
+          "title": "Grey-backed Sparrow-Lark",
+          "url": "https://newmansbirds.com/birds/grey-backed-sparrow-lark/",
+          "publisher": "Newman's Birds",
+          "year": null
+        },
+        {
+          "title": "Grey-backed Sparrow-lark (Eremopterix verticalis)",
+          "url": "https://thebdi.org/2023/09/11/grey-backed-sparrow-lark-eremopterix-verticalis/",
+          "publisher": "Biodiversity and Development Institute",
+          "year": 2023
         }
       ]
     },
@@ -9269,14 +9658,54 @@
       "slug": "mirafra-passerina",
       "scientificName": "Mirafra passerina",
       "commonName": "Monotonous Lark",
-      "images": [],
-      "recordings": [],
+      "images": [
+        {
+          "key": "mirafra-passerina/mopani-side.jpg",
+          "author": "tjeerd",
+          "licence": "CC BY-NC 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+          "sourceUrl": "https://www.inaturalist.org/observations/21445990",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ],
+      "recordings": [
+        {
+          "key": "xeno-canto/XC203723",
+          "author": "Keith Blomerley",
+          "licence": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "sourceUrl": "https://xeno-canto.org/203723",
+          "aiGenerated": false,
+          "hosted": false,
+          "quality": "A",
+          "callType": "song"
+        }
+      ],
       "sources": [
         {
           "title": "Kemp A.C., Herholdt J.J., Whyte I. & Harrison J. (2001). Birds of the two largest national parks in South Africa: a method to generate estimates of population size for all species and assess their conservation ecology. S. Afr. J. Sci. 97: 393–403.",
           "url": "https://journals.co.za/doi/pdf/10.10520/EJC97367",
           "publisher": "South African Journal of Science",
           "year": 2001
+        },
+        {
+          "title": "The Atlas of Southern African Birds, Vol. 2 (Monotonous Lark)",
+          "url": "https://sabap2.birdmap.africa/docs/sabap1/493.pdf",
+          "publisher": "BirdLife South Africa",
+          "year": 1997
+        },
+        {
+          "title": "Mirafra passerina (Monotonous lark), summarised from Roberts VII",
+          "url": "https://www.biodiversityexplorer.info/birds/alaudidae/mirafra_passerina.htm",
+          "publisher": "Iziko Museums of South Africa",
+          "year": null
+        },
+        {
+          "title": "Monotonous lark",
+          "url": "https://en.wikipedia.org/wiki/Monotonous_lark",
+          "publisher": "Wikipedia",
+          "year": 2026
         }
       ]
     },
@@ -10051,7 +10480,26 @@
       "slug": "pinarocorys-nigricans",
       "scientificName": "Pinarocorys nigricans",
       "commonName": "Dusky Lark",
-      "images": [],
+      "images": [
+        {
+          "key": "pinarocorys-nigricans/kruger-side.jpg",
+          "author": "Gigi Laidler",
+          "licence": "CC BY-NC 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+          "sourceUrl": "https://www.inaturalist.org/observations/288267419",
+          "aiGenerated": false,
+          "hosted": false
+        },
+        {
+          "key": "pinarocorys-nigricans/mopani-side.jpg",
+          "author": "Christiaan Viljoen",
+          "licence": "CC BY 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by/4.0/",
+          "sourceUrl": "https://www.inaturalist.org/observations/204147392",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ],
       "recordings": [],
       "sources": [
         {
@@ -10059,6 +10507,30 @@
           "url": "https://journals.co.za/doi/pdf/10.10520/EJC97367",
           "publisher": "South African Journal of Science",
           "year": 2001
+        },
+        {
+          "title": "The Atlas of Southern African Birds, Vol. 2 (Dusky Lark)",
+          "url": "https://sabap2.birdmap.africa/docs/sabap1/505.pdf",
+          "publisher": "BirdLife South Africa",
+          "year": 1997
+        },
+        {
+          "title": "Pinarocorys nigricans (Dusky lark), summarised from Roberts VII",
+          "url": "https://www.biodiversityexplorer.info/birds/alaudidae/pinarocorys_nigricans.htm",
+          "publisher": "Iziko Museums of South Africa",
+          "year": null
+        },
+        {
+          "title": "Dusky Lark",
+          "url": "https://newmansbirds.com/birds/dusky-lark/",
+          "publisher": "Newman's Birds",
+          "year": null
+        },
+        {
+          "title": "Dusky lark",
+          "url": "https://en.wikipedia.org/wiki/Dusky_lark",
+          "publisher": "Wikipedia",
+          "year": 2026
         }
       ]
     },

@@ -6,8 +6,8 @@
     "en": "Larks",
     "af": "Lewerikke"
   },
-  "summary": "Field notes for this family are still to be written.",
-  "sampleData": true,
+  "summary": "Larks are small terrestrial songbirds of open ground. Many are streaked above and pale below, and males of several species sing from a perch or in a display flight. Kruger has nine species. Names follow IOC and BirdLife South Africa. The Flappet Lark is Amirafra rufocinnamomea, the Rufous-naped Lark is Corypha africana, and the Fawn-coloured and Sabota Larks are in Calendulauda. Older lists placed those four in Mirafra.",
+  "sampleData": false,
   "species": [
     {
       "slug": "amirafra-rufocinnamomea",
