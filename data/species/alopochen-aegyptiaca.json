@@ -7,8 +7,57 @@
     "af": "Kolgans"
   },
   "family": "anatidae",
-  "summary": "The details for this species have not been published yet.",
-  "sampleData": true,
+  "status": "resident",
+  "monthsPresent": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+  ],
+  "size": {
+    "lengthCm": {
+      "min": 71,
+      "max": 71
+    },
+    "note": "Newman's Birds gives 71 cm."
+  },
+  "habitat": "Almost any inland water with some open shore, including rivers, dams, pans and sewage ponds, and sandbanks when rivers are in flood.",
+  "summary": "A large, long-necked goose of open inland water. Adults have a rufous neck and upper body, paler underparts, a pink bill, long pink legs and rufous patches around the eyes. The sexes look alike. Immatures are duller, without a separate set of part colours in these texts. A large white area of the wing is hidden at rest and shows when the wing opens.",
+  "sampleData": false,
+  "similar": [
+    {
+      "slug": "plectropterus-gambensis",
+      "note": "Spur-winged Goose is larger and glossy black, with white forewings in flight. Egyptian Goose is buff and rufous with pink legs and a pink bill."
+    }
+  ],
+  "sources": [
+    {
+      "title": "The Atlas of Southern African Birds, Vol. 1 (Egyptian Goose)",
+      "url": "https://sabap2.birdmap.africa/docs/sabap1/102.pdf",
+      "publisher": "BirdLife South Africa",
+      "year": 1997
+    },
+    {
+      "title": "Egyptian Goose",
+      "url": "https://newmansbirds.com/birds/egyptian-goose/",
+      "publisher": "Newman's Birds",
+      "year": 2026
+    },
+    {
+      "title": "Egyptian goose",
+      "url": "https://en.wikipedia.org/wiki/Egyptian_goose",
+      "publisher": "Wikipedia",
+      "year": 2026
+    }
+  ],
   "population": {
     "estimate": {
       "low": 2048,
@@ -35,8 +84,163 @@
     },
     "tierApplied": "D"
   },
-  "variants": [],
-  "viewNotes": [],
-  "calls": [],
-  "images": []
+  "variants": [
+    {
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "marks": {
+        "bill": {
+          "colour": "pink",
+          "shape": "pink, on a long neck"
+        },
+        "eye": {
+          "iris": null,
+          "ring": null
+        },
+        "legs": {
+          "colour": "pink"
+        },
+        "head": {
+          "crown": "rufous",
+          "face": "rufous",
+          "throat": "buff",
+          "pattern": "Rufous patches around the eyes. Newman describes the neck and upper body as rufous and the underparts as pale. Wikipedia says the sexes are identical in plumage and that males are larger."
+        },
+        "upperparts": {
+          "back": "rufous",
+          "rump": null,
+          "pattern": null
+        },
+        "underparts": {
+          "breast": "buff",
+          "belly": "buff",
+          "pattern": null
+        },
+        "wings": {
+          "above": "white",
+          "below": null,
+          "pattern": "Wikipedia says a large part of the wing is white and is hidden by the coverts at rest."
+        },
+        "tail": {
+          "colour": null,
+          "shape": null
+        }
+      }
+    }
+  ],
+  "viewNotes": [
+    {
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Long pink legs, a pink bill and rufous eye-patches on a long-necked, pale-bodied goose."
+    },
+    {
+      "view": "perched-front",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "The pink bill and rufous eye-patches are both visible from the front. The white wing panel stays hidden while the wing is closed."
+    },
+    {
+      "view": "perched-back",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "The upper body is rufous. The white wing panel is not the resting back."
+    },
+    {
+      "view": "flight-above",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "The white wing panel shows once the wing is open."
+    },
+    {
+      "view": "flight-below",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "The underwing is not given a separate colour in these texts."
+    },
+    {
+      "view": "perched-side",
+      "age": "juvenile",
+      "sex": "any",
+      "season": "any",
+      "note": "Newman says the immature is duller, without naming different part colours."
+    }
+  ],
+  "calls": [
+    {
+      "sex": "male",
+      "type": "call",
+      "description": "A husky wheeze. Newman says both sexes extend the head and neck when calling. Wikipedia also describes a hoarse, subdued quack and a breathy sequence.",
+      "recordings": []
+    },
+    {
+      "sex": "female",
+      "type": "call",
+      "description": "A harsh, nasal, high-pitched hur-hur-hur-hur.",
+      "recordings": []
+    },
+    {
+      "sex": "any",
+      "type": "call",
+      "description": "Newman separates the male wheeze from the female hur-hur-hur-hur. The catalogue cut is not labelled male or female. Grade A, South Africa. Free State, not Kruger. A grade A file from Kruger was not used because its filename says african goose.",
+      "recordings": [
+        {
+          "key": "xeno-canto/XC816922",
+          "source": "https://xeno-canto.org/816922",
+          "fileUrl": "https://xeno-canto.org/sounds/uploaded/JDCTKFMBKV/XC816922-GooseEgyptian_SevendamsBFN_20230716.mp3",
+          "author": "Dawie de Swardt",
+          "license": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ]
+    }
+  ],
+  "images": [
+    {
+      "key": "alopochen-aegyptiaca/skukuza-above.jpg",
+      "view": "flight-above",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "source": "https://www.inaturalist.org/observations/252252824",
+      "fileUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/451531191/large.jpeg",
+      "author": "quentm",
+      "license": "CC BY-NC 4.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+      "aiGenerated": false,
+      "hosted": false,
+      "alt": "Two Egyptian Geese flying over water near Skukuza, Kruger, showing the white upperwing panels",
+      "caption": "Two Egyptian Geese flying over water near Skukuza, Kruger, showing the white upperwing panels"
+    },
+    {
+      "key": "alopochen-aegyptiaca/olifants-front.jpg",
+      "view": "perched-front",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "source": "https://www.inaturalist.org/observations/102893941",
+      "fileUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/172093008/large.jpg",
+      "author": "Andre Harmse",
+      "license": "CC BY-NC 4.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+      "aiGenerated": false,
+      "hosted": false,
+      "alt": "Egyptian Goose standing front-on on the Olifants shore, Kruger, with both wings spread",
+      "caption": "Egyptian Goose standing front-on on the Olifants shore, Kruger, with both wings spread"
+    }
+  ],
+  "research": {
+    "confidence": "medium",
+    "needsReview": false,
+    "note": "Status is resident. SABAP1 calls it an abundant widespread resident, nomadic mainly in drier regions, with a winter influx to the Cape rather than a Kruger absence, so all twelve months are listed. The green speculum visible in photographs was not named by these texts, so it was not stored. Chick down is not described. The call is grade A from the Free State and is not sexed."
+  }
 }

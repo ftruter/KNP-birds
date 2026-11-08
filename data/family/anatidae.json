@@ -6,8 +6,8 @@
     "en": "Ducks, geese and swans",
     "af": "Eende"
   },
-  "summary": "Field notes for this family are still to be written.",
-  "sampleData": true,
+  "summary": "Ducks, geese and whistling ducks of inland water. Kruger has thirteen species. Names follow IOC and BirdLife South Africa. The Blue-billed Teal is Spatula hottentota, formerly placed in Anas as the Hottentot Teal. The Knob-billed Duck is Sarkidiornis melanotos. The Egyptian Goose is Alopochen aegyptiaca.",
+  "sampleData": false,
   "species": [
     {
       "slug": "alopochen-aegyptiaca",

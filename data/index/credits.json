@@ -839,14 +839,63 @@
       "slug": "alopochen-aegyptiaca",
       "scientificName": "Alopochen aegyptiaca",
       "commonName": "Egyptian Goose",
-      "images": [],
-      "recordings": [],
+      "images": [
+        {
+          "key": "alopochen-aegyptiaca/skukuza-above.jpg",
+          "author": "quentm",
+          "licence": "CC BY-NC 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+          "sourceUrl": "https://www.inaturalist.org/observations/252252824",
+          "aiGenerated": false,
+          "hosted": false
+        },
+        {
+          "key": "alopochen-aegyptiaca/olifants-front.jpg",
+          "author": "Andre Harmse",
+          "licence": "CC BY-NC 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+          "sourceUrl": "https://www.inaturalist.org/observations/102893941",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ],
+      "recordings": [
+        {
+          "key": "xeno-canto/XC816922",
+          "author": "Dawie de Swardt",
+          "licence": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "sourceUrl": "https://xeno-canto.org/816922",
+          "aiGenerated": false,
+          "hosted": false,
+          "quality": "A",
+          "callType": "call"
+        }
+      ],
       "sources": [
         {
           "title": "Kemp A.C., Herholdt J.J., Whyte I. & Harrison J. (2001). Birds of the two largest national parks in South Africa: a method to generate estimates of population size for all species and assess their conservation ecology. S. Afr. J. Sci. 97: 393–403.",
           "url": "https://journals.co.za/doi/pdf/10.10520/EJC97367",
           "publisher": "South African Journal of Science",
           "year": 2001
+        },
+        {
+          "title": "The Atlas of Southern African Birds, Vol. 1 (Egyptian Goose)",
+          "url": "https://sabap2.birdmap.africa/docs/sabap1/102.pdf",
+          "publisher": "BirdLife South Africa",
+          "year": 1997
+        },
+        {
+          "title": "Egyptian Goose",
+          "url": "https://newmansbirds.com/birds/egyptian-goose/",
+          "publisher": "Newman's Birds",
+          "year": 2026
+        },
+        {
+          "title": "Egyptian goose",
+          "url": "https://en.wikipedia.org/wiki/Egyptian_goose",
+          "publisher": "Wikipedia",
+          "year": 2026
         }
       ]
     },
@@ -1041,17 +1090,115 @@
       ]
     },
     {
+      "slug": "anas-capensis",
+      "scientificName": "Anas capensis",
+      "commonName": "Cape Teal",
+      "images": [
+        {
+          "key": "anas-capensis/ehlanzeni-side.jpg",
+          "author": "Darío De la Fuente",
+          "licence": "CC BY 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by/4.0/",
+          "sourceUrl": "https://www.inaturalist.org/observations/294640468",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ],
+      "recordings": [
+        {
+          "key": "xeno-canto/XC268591",
+          "author": "Lynette Rudman",
+          "licence": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "sourceUrl": "https://xeno-canto.org/268591",
+          "aiGenerated": false,
+          "hosted": false,
+          "quality": "B",
+          "callType": "call"
+        }
+      ],
+      "sources": [
+        {
+          "title": "The Atlas of Southern African Birds, Vol. 1 (Cape Teal)",
+          "url": "https://sabap2.birdmap.africa/docs/sabap1/106.pdf",
+          "publisher": "BirdLife South Africa",
+          "year": 1997
+        },
+        {
+          "title": "Cape Teal",
+          "url": "https://newmansbirds.com/birds/cape-teal/",
+          "publisher": "Newman's Birds",
+          "year": 2026
+        },
+        {
+          "title": "Cape teal",
+          "url": "https://en.wikipedia.org/wiki/Cape_teal",
+          "publisher": "Wikipedia",
+          "year": 2026
+        }
+      ]
+    },
+    {
       "slug": "anas-erythrorhyncha",
       "scientificName": "Anas erythrorhyncha",
       "commonName": "Red-billed Teal",
-      "images": [],
-      "recordings": [],
+      "images": [
+        {
+          "key": "anas-erythrorhyncha/mopani-side.jpg",
+          "author": "Paul Hoekman",
+          "licence": "CC BY 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by/4.0/",
+          "sourceUrl": "https://www.inaturalist.org/observations/280800842",
+          "aiGenerated": false,
+          "hosted": false
+        },
+        {
+          "key": "anas-erythrorhyncha/mopani-swim.jpg",
+          "author": "Roelof van der Breggen",
+          "licence": "CC BY-NC 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+          "sourceUrl": "https://www.inaturalist.org/observations/68957580",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ],
+      "recordings": [
+        {
+          "key": "xeno-canto/XC649290",
+          "author": "Lynette Rudman",
+          "licence": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "sourceUrl": "https://xeno-canto.org/649290",
+          "aiGenerated": false,
+          "hosted": false,
+          "quality": "B",
+          "callType": "call"
+        }
+      ],
       "sources": [
         {
           "title": "Kemp A.C., Herholdt J.J., Whyte I. & Harrison J. (2001). Birds of the two largest national parks in South Africa: a method to generate estimates of population size for all species and assess their conservation ecology. S. Afr. J. Sci. 97: 393–403.",
           "url": "https://journals.co.za/doi/pdf/10.10520/EJC97367",
           "publisher": "South African Journal of Science",
           "year": 2001
+        },
+        {
+          "title": "The Atlas of Southern African Birds, Vol. 1 (Red-billed Teal)",
+          "url": "https://sabap2.birdmap.africa/docs/sabap1/108.pdf",
+          "publisher": "BirdLife South Africa",
+          "year": 1997
+        },
+        {
+          "title": "Red-billed Teal",
+          "url": "https://newmansbirds.com/birds/red-billed-teal/",
+          "publisher": "Newman's Birds",
+          "year": 2026
+        },
+        {
+          "title": "Red-billed teal",
+          "url": "https://en.wikipedia.org/wiki/Red-billed_teal",
+          "publisher": "Wikipedia",
+          "year": 2026
         }
       ]
     },
@@ -1059,14 +1206,63 @@
       "slug": "anas-sparsa",
       "scientificName": "Anas sparsa",
       "commonName": "African Black Duck",
-      "images": [],
-      "recordings": [],
+      "images": [
+        {
+          "key": "anas-sparsa/skukuza-side.jpg",
+          "author": "John White",
+          "licence": "CC BY 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by/4.0/",
+          "sourceUrl": "https://www.inaturalist.org/observations/379199953",
+          "aiGenerated": false,
+          "hosted": false
+        },
+        {
+          "key": "anas-sparsa/skukuza-back.jpg",
+          "author": "marajua",
+          "licence": "CC BY-NC 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+          "sourceUrl": "https://www.inaturalist.org/observations/237123051",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ],
+      "recordings": [
+        {
+          "key": "xeno-canto/XC464064",
+          "author": "Tim Cockcroft",
+          "licence": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "sourceUrl": "https://xeno-canto.org/464064",
+          "aiGenerated": false,
+          "hosted": false,
+          "quality": "B",
+          "callType": "call"
+        }
+      ],
       "sources": [
         {
           "title": "Kemp A.C., Herholdt J.J., Whyte I. & Harrison J. (2001). Birds of the two largest national parks in South Africa: a method to generate estimates of population size for all species and assess their conservation ecology. S. Afr. J. Sci. 97: 393–403.",
           "url": "https://journals.co.za/doi/pdf/10.10520/EJC97367",
           "publisher": "South African Journal of Science",
           "year": 2001
+        },
+        {
+          "title": "The Atlas of Southern African Birds, Vol. 1 (African Black Duck)",
+          "url": "https://sabap2.birdmap.africa/docs/sabap1/105.pdf",
+          "publisher": "BirdLife South Africa",
+          "year": 1997
+        },
+        {
+          "title": "African Black Duck",
+          "url": "https://newmansbirds.com/birds/african-black-duck/",
+          "publisher": "Newman's Birds",
+          "year": 2026
+        },
+        {
+          "title": "African black duck",
+          "url": "https://en.wikipedia.org/wiki/African_black_duck",
+          "publisher": "Wikipedia",
+          "year": 2026
         }
       ]
     },
@@ -1074,14 +1270,54 @@
       "slug": "anas-undulata",
       "scientificName": "Anas undulata",
       "commonName": "Yellow-billed Duck",
-      "images": [],
-      "recordings": [],
+      "images": [
+        {
+          "key": "anas-undulata/malelane-side.jpg",
+          "author": "Tivan Kotze",
+          "licence": "CC BY-NC 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+          "sourceUrl": "https://www.inaturalist.org/observations/306966854",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ],
+      "recordings": [
+        {
+          "key": "xeno-canto/XC1051974",
+          "author": "African Bioacoustics Community",
+          "licence": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "sourceUrl": "https://xeno-canto.org/1051974",
+          "aiGenerated": false,
+          "hosted": false,
+          "quality": "A",
+          "callType": "call"
+        }
+      ],
       "sources": [
         {
           "title": "Kemp A.C., Herholdt J.J., Whyte I. & Harrison J. (2001). Birds of the two largest national parks in South Africa: a method to generate estimates of population size for all species and assess their conservation ecology. S. Afr. J. Sci. 97: 393–403.",
           "url": "https://journals.co.za/doi/pdf/10.10520/EJC97367",
           "publisher": "South African Journal of Science",
           "year": 2001
+        },
+        {
+          "title": "The Atlas of Southern African Birds, Vol. 1 (Yellow-billed Duck)",
+          "url": "https://sabap2.birdmap.africa/docs/sabap1/104.pdf",
+          "publisher": "BirdLife South Africa",
+          "year": 1997
+        },
+        {
+          "title": "Yellow-billed Duck",
+          "url": "https://newmansbirds.com/birds/yellow-billed-duck/",
+          "publisher": "Newman's Birds",
+          "year": 2026
+        },
+        {
+          "title": "Yellow-billed duck",
+          "url": "https://en.wikipedia.org/wiki/Yellow-billed_duck",
+          "publisher": "Wikipedia",
+          "year": 2026
         }
       ]
     },
@@ -5718,14 +5954,54 @@
       "slug": "dendrocygna-bicolor",
       "scientificName": "Dendrocygna bicolor",
       "commonName": "Fulvous Whistling Duck",
-      "images": [],
-      "recordings": [],
+      "images": [
+        {
+          "key": "dendrocygna-bicolor/sabie-side.jpg",
+          "author": "Mark Brown",
+          "licence": "CC BY-NC 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+          "sourceUrl": "https://www.inaturalist.org/observations/333030312",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ],
+      "recordings": [
+        {
+          "key": "xeno-canto/XC1173525",
+          "author": "African Bioacoustics Community",
+          "licence": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "sourceUrl": "https://xeno-canto.org/1173525",
+          "aiGenerated": false,
+          "hosted": false,
+          "quality": "A",
+          "callType": "call"
+        }
+      ],
       "sources": [
         {
           "title": "Kemp A.C., Herholdt J.J., Whyte I. & Harrison J. (2001). Birds of the two largest national parks in South Africa: a method to generate estimates of population size for all species and assess their conservation ecology. S. Afr. J. Sci. 97: 393–403.",
           "url": "https://journals.co.za/doi/pdf/10.10520/EJC97367",
           "publisher": "South African Journal of Science",
           "year": 2001
+        },
+        {
+          "title": "The Atlas of Southern African Birds, Vol. 1 (Fulvous Duck)",
+          "url": "https://sabap2.birdmap.africa/docs/sabap1/100.pdf",
+          "publisher": "BirdLife South Africa",
+          "year": 1997
+        },
+        {
+          "title": "Fulvous Whistling Duck",
+          "url": "https://newmansbirds.com/birds/fulvous-whistling-duck/",
+          "publisher": "Newman's Birds",
+          "year": 2026
+        },
+        {
+          "title": "Fulvous whistling duck",
+          "url": "https://en.wikipedia.org/wiki/Fulvous_whistling_duck",
+          "publisher": "Wikipedia",
+          "year": 2026
         }
       ]
     },
@@ -5733,14 +6009,63 @@
       "slug": "dendrocygna-viduata",
       "scientificName": "Dendrocygna viduata",
       "commonName": "White-faced Whistling Duck",
-      "images": [],
-      "recordings": [],
+      "images": [
+        {
+          "key": "dendrocygna-viduata/ehlanzeni-side.jpg",
+          "author": "Pedro Beja",
+          "licence": "CC BY-NC 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+          "sourceUrl": "https://www.inaturalist.org/observations/8680539",
+          "aiGenerated": false,
+          "hosted": false
+        },
+        {
+          "key": "dendrocygna-viduata/ehlanzeni-flock.jpg",
+          "author": "Richard Gill",
+          "licence": "CC BY-NC 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+          "sourceUrl": "https://www.inaturalist.org/observations/178706537",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ],
+      "recordings": [
+        {
+          "key": "xeno-canto/XC225375",
+          "author": "Joe Klaiber",
+          "licence": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "sourceUrl": "https://xeno-canto.org/225375",
+          "aiGenerated": false,
+          "hosted": false,
+          "quality": "A",
+          "callType": "call"
+        }
+      ],
       "sources": [
         {
           "title": "Kemp A.C., Herholdt J.J., Whyte I. & Harrison J. (2001). Birds of the two largest national parks in South Africa: a method to generate estimates of population size for all species and assess their conservation ecology. S. Afr. J. Sci. 97: 393–403.",
           "url": "https://journals.co.za/doi/pdf/10.10520/EJC97367",
           "publisher": "South African Journal of Science",
           "year": 2001
+        },
+        {
+          "title": "The Atlas of Southern African Birds, Vol. 1 (White-faced Duck)",
+          "url": "https://sabap2.birdmap.africa/docs/sabap1/099.pdf",
+          "publisher": "BirdLife South Africa",
+          "year": 1997
+        },
+        {
+          "title": "White-faced Whistling Duck",
+          "url": "https://newmansbirds.com/birds/white-faced-whistling-duck/",
+          "publisher": "Newman's Birds",
+          "year": 2026
+        },
+        {
+          "title": "White-faced whistling duck",
+          "url": "https://en.wikipedia.org/wiki/White-faced_whistling_duck",
+          "publisher": "Wikipedia",
+          "year": 2026
         }
       ]
     },
@@ -9948,7 +10273,17 @@
       "slug": "netta-erythrophthalma",
       "scientificName": "Netta erythrophthalma",
       "commonName": "Southern Pochard",
-      "images": [],
+      "images": [
+        {
+          "key": "netta-erythrophthalma/ehlanzeni-female.jpg",
+          "author": "Heinrich Human",
+          "licence": "CC BY-NC 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+          "sourceUrl": "https://www.inaturalist.org/observations/333854473",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ],
       "recordings": [],
       "sources": [
         {
@@ -9956,6 +10291,24 @@
           "url": "https://journals.co.za/doi/pdf/10.10520/EJC97367",
           "publisher": "South African Journal of Science",
           "year": 2001
+        },
+        {
+          "title": "The Atlas of Southern African Birds, Vol. 1 (Southern Pochard)",
+          "url": "https://sabap2.birdmap.africa/docs/sabap1/113.pdf",
+          "publisher": "BirdLife South Africa",
+          "year": 1997
+        },
+        {
+          "title": "Southern Pochard",
+          "url": "https://newmansbirds.com/birds/southern-pochard/",
+          "publisher": "Newman's Birds",
+          "year": 2026
+        },
+        {
+          "title": "Southern pochard",
+          "url": "https://en.wikipedia.org/wiki/Southern_pochard",
+          "publisher": "Wikipedia",
+          "year": 2026
         }
       ]
     },
@@ -9963,14 +10316,63 @@
       "slug": "nettapus-auritus",
       "scientificName": "Nettapus auritus",
       "commonName": "African Pygmy Goose",
-      "images": [],
-      "recordings": [],
+      "images": [
+        {
+          "key": "nettapus-auritus/ehlanzeni-male.jpg",
+          "author": "Niall Perrins",
+          "licence": "CC BY-NC 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+          "sourceUrl": "https://www.inaturalist.org/observations/106845621",
+          "aiGenerated": false,
+          "hosted": false
+        },
+        {
+          "key": "nettapus-auritus/leeupan-male.jpg",
+          "author": "maritzasouthafrica",
+          "licence": "CC BY-NC 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+          "sourceUrl": "https://www.inaturalist.org/observations/108302943",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ],
+      "recordings": [
+        {
+          "key": "xeno-canto/XC267474",
+          "author": "Andrew Spencer",
+          "licence": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "sourceUrl": "https://xeno-canto.org/267474",
+          "aiGenerated": false,
+          "hosted": false,
+          "quality": "A",
+          "callType": "call"
+        }
+      ],
       "sources": [
         {
           "title": "Kemp A.C., Herholdt J.J., Whyte I. & Harrison J. (2001). Birds of the two largest national parks in South Africa: a method to generate estimates of population size for all species and assess their conservation ecology. S. Afr. J. Sci. 97: 393–403.",
           "url": "https://journals.co.za/doi/pdf/10.10520/EJC97367",
           "publisher": "South African Journal of Science",
           "year": 2001
+        },
+        {
+          "title": "The Atlas of Southern African Birds, Vol. 1 (Pygmy Goose)",
+          "url": "https://sabap2.birdmap.africa/docs/sabap1/114.pdf",
+          "publisher": "BirdLife South Africa",
+          "year": 1997
+        },
+        {
+          "title": "African Pygmy Goose",
+          "url": "https://newmansbirds.com/birds/african-pygmy-goose/",
+          "publisher": "Newman's Birds",
+          "year": 2026
+        },
+        {
+          "title": "African pygmy goose",
+          "url": "https://en.wikipedia.org/wiki/African_pygmy_goose",
+          "publisher": "Wikipedia",
+          "year": 2026
         }
       ]
     },
@@ -10568,14 +10970,63 @@
       "slug": "plectropterus-gambensis",
       "scientificName": "Plectropterus gambensis",
       "commonName": "Spur-winged Goose",
-      "images": [],
-      "recordings": [],
+      "images": [
+        {
+          "key": "plectropterus-gambensis/shingwedzi-side.jpg",
+          "author": "moxcalvitiumtorgos",
+          "licence": "CC BY-NC 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+          "sourceUrl": "https://www.inaturalist.org/observations/335248928",
+          "aiGenerated": false,
+          "hosted": false
+        },
+        {
+          "key": "plectropterus-gambensis/mopani-side.jpg",
+          "author": "Sergey Shestakov",
+          "licence": "CC BY-NC 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+          "sourceUrl": "https://www.inaturalist.org/observations/254719719",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ],
+      "recordings": [
+        {
+          "key": "xeno-canto/XC126343",
+          "author": "Sander Bot",
+          "licence": "CC BY-NC-SA 3.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/3.0/",
+          "sourceUrl": "https://xeno-canto.org/126343",
+          "aiGenerated": false,
+          "hosted": false,
+          "quality": "A",
+          "callType": "call"
+        }
+      ],
       "sources": [
         {
           "title": "Kemp A.C., Herholdt J.J., Whyte I. & Harrison J. (2001). Birds of the two largest national parks in South Africa: a method to generate estimates of population size for all species and assess their conservation ecology. S. Afr. J. Sci. 97: 393–403.",
           "url": "https://journals.co.za/doi/pdf/10.10520/EJC97367",
           "publisher": "South African Journal of Science",
           "year": 2001
+        },
+        {
+          "title": "The Atlas of Southern African Birds, Vol. 1 (Spur-winged Goose)",
+          "url": "https://sabap2.birdmap.africa/docs/sabap1/116.pdf",
+          "publisher": "BirdLife South Africa",
+          "year": 1997
+        },
+        {
+          "title": "Spur-winged Goose",
+          "url": "https://newmansbirds.com/birds/spur-winged-goose/",
+          "publisher": "Newman's Birds",
+          "year": 2026
+        },
+        {
+          "title": "Spur-winged goose",
+          "url": "https://en.wikipedia.org/wiki/Spur-winged_goose",
+          "publisher": "Wikipedia",
+          "year": 2026
         }
       ]
     },
@@ -11433,14 +11884,63 @@
       "slug": "sarkidiornis-melanotos",
       "scientificName": "Sarkidiornis melanotos",
       "commonName": "Knob-billed Duck",
-      "images": [],
-      "recordings": [],
+      "images": [
+        {
+          "key": "sarkidiornis-melanotos/marloth-male.jpg",
+          "author": "copper",
+          "licence": "CC BY-NC 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+          "sourceUrl": "https://www.inaturalist.org/observations/10039927",
+          "aiGenerated": false,
+          "hosted": false
+        },
+        {
+          "key": "sarkidiornis-melanotos/gomondwane-male.jpg",
+          "author": "copper",
+          "licence": "CC BY-NC 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+          "sourceUrl": "https://www.inaturalist.org/observations/9738801",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ],
+      "recordings": [
+        {
+          "key": "xeno-canto/XC150138",
+          "author": "vir joshi",
+          "licence": "CC BY-NC-SA 3.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/3.0/",
+          "sourceUrl": "https://xeno-canto.org/150138",
+          "aiGenerated": false,
+          "hosted": false,
+          "quality": "A",
+          "callType": "call"
+        }
+      ],
       "sources": [
         {
           "title": "Kemp A.C., Herholdt J.J., Whyte I. & Harrison J. (2001). Birds of the two largest national parks in South Africa: a method to generate estimates of population size for all species and assess their conservation ecology. S. Afr. J. Sci. 97: 393–403.",
           "url": "https://journals.co.za/doi/pdf/10.10520/EJC97367",
           "publisher": "South African Journal of Science",
           "year": 2001
+        },
+        {
+          "title": "The Atlas of Southern African Birds, Vol. 1 (Knob-billed Duck)",
+          "url": "https://sabap2.birdmap.africa/docs/sabap1/115.pdf",
+          "publisher": "BirdLife South Africa",
+          "year": 1997
+        },
+        {
+          "title": "Knob-billed Duck",
+          "url": "https://newmansbirds.com/birds/knob-billed-duck/",
+          "publisher": "Newman's Birds",
+          "year": 2026
+        },
+        {
+          "title": "Knob-billed duck",
+          "url": "https://en.wikipedia.org/wiki/Knob-billed_duck",
+          "publisher": "Wikipedia",
+          "year": 2026
         }
       ]
     },
@@ -11568,14 +12068,63 @@
       "slug": "spatula-hottentota",
       "scientificName": "Spatula hottentota",
       "commonName": "Blue-billed Teal",
-      "images": [],
-      "recordings": [],
+      "images": [
+        {
+          "key": "spatula-hottentota/mopani-reeds.jpg",
+          "author": "Duncan McKenzie",
+          "licence": "CC BY-NC 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+          "sourceUrl": "https://www.inaturalist.org/observations/233040698",
+          "aiGenerated": false,
+          "hosted": false
+        },
+        {
+          "key": "spatula-hottentota/phalaborwa-side.jpg",
+          "author": "Gareth Preiss",
+          "licence": "CC BY-NC 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+          "sourceUrl": "https://www.inaturalist.org/observations/198897084",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ],
+      "recordings": [
+        {
+          "key": "xeno-canto/XC210051",
+          "author": "Andrew Spencer",
+          "licence": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "sourceUrl": "https://xeno-canto.org/210051",
+          "aiGenerated": false,
+          "hosted": false,
+          "quality": "A",
+          "callType": "call"
+        }
+      ],
       "sources": [
         {
           "title": "Kemp A.C., Herholdt J.J., Whyte I. & Harrison J. (2001). Birds of the two largest national parks in South Africa: a method to generate estimates of population size for all species and assess their conservation ecology. S. Afr. J. Sci. 97: 393–403.",
           "url": "https://journals.co.za/doi/pdf/10.10520/EJC97367",
           "publisher": "South African Journal of Science",
           "year": 2001
+        },
+        {
+          "title": "The Atlas of Southern African Birds, Vol. 1 (Hottentot Teal)",
+          "url": "https://sabap2.birdmap.africa/docs/sabap1/107.pdf",
+          "publisher": "BirdLife South Africa",
+          "year": 1997
+        },
+        {
+          "title": "Blue-billed Teal",
+          "url": "https://newmansbirds.com/birds/blue-billed-teal/",
+          "publisher": "Newman's Birds",
+          "year": 2026
+        },
+        {
+          "title": "Hottentot teal",
+          "url": "https://en.wikipedia.org/wiki/Hottentot_teal",
+          "publisher": "Wikipedia",
+          "year": 2026
         }
       ]
     },
@@ -12285,14 +12834,63 @@
       "slug": "thalassornis-leuconotus",
       "scientificName": "Thalassornis leuconotus",
       "commonName": "White-backed Duck",
-      "images": [],
-      "recordings": [],
+      "images": [
+        {
+          "key": "thalassornis-leuconotus/ehlanzeni-side.jpg",
+          "author": "Duncan McKenzie",
+          "licence": "CC BY-NC 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+          "sourceUrl": "https://www.inaturalist.org/observations/196221800",
+          "aiGenerated": false,
+          "hosted": false
+        },
+        {
+          "key": "thalassornis-leuconotus/kruger-front.jpg",
+          "author": "Jeanette Zitzer",
+          "licence": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "sourceUrl": "https://www.inaturalist.org/observations/367422455",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ],
+      "recordings": [
+        {
+          "key": "xeno-canto/XC809424",
+          "author": "Luke Goddard",
+          "licence": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "sourceUrl": "https://xeno-canto.org/809424",
+          "aiGenerated": false,
+          "hosted": false,
+          "quality": "A",
+          "callType": "call"
+        }
+      ],
       "sources": [
         {
           "title": "Kemp A.C., Herholdt J.J., Whyte I. & Harrison J. (2001). Birds of the two largest national parks in South Africa: a method to generate estimates of population size for all species and assess their conservation ecology. S. Afr. J. Sci. 97: 393–403.",
           "url": "https://journals.co.za/doi/pdf/10.10520/EJC97367",
           "publisher": "South African Journal of Science",
           "year": 2001
+        },
+        {
+          "title": "The Atlas of Southern African Birds, Vol. 1 (White-backed Duck)",
+          "url": "https://sabap2.birdmap.africa/docs/sabap1/101.pdf",
+          "publisher": "BirdLife South Africa",
+          "year": 1997
+        },
+        {
+          "title": "White-backed Duck",
+          "url": "https://newmansbirds.com/birds/white-backed-duck/",
+          "publisher": "Newman's Birds",
+          "year": 2026
+        },
+        {
+          "title": "White-backed duck",
+          "url": "https://en.wikipedia.org/wiki/White-backed_duck",
+          "publisher": "Wikipedia",
+          "year": 2026
         }
       ]
     },

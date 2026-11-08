@@ -95,12 +95,102 @@
         }
       ]
     },
+    "alopochen-aegyptiaca": {
+      "calls": [
+        {
+          "index": 0,
+          "quality": {}
+        },
+        {
+          "index": 1,
+          "quality": {}
+        },
+        {
+          "index": 2,
+          "quality": {
+            "xeno-canto/XC816922": "A"
+          }
+        }
+      ]
+    },
     "amirafra-rufocinnamomea": {
       "calls": [
         {
           "index": 0,
           "quality": {
             "xeno-canto/XC266874": "A"
+          }
+        }
+      ]
+    },
+    "anas-capensis": {
+      "calls": [
+        {
+          "index": 0,
+          "quality": {}
+        },
+        {
+          "index": 1,
+          "quality": {}
+        },
+        {
+          "index": 2,
+          "quality": {
+            "xeno-canto/XC268591": "B"
+          }
+        }
+      ]
+    },
+    "anas-erythrorhyncha": {
+      "calls": [
+        {
+          "index": 0,
+          "quality": {}
+        },
+        {
+          "index": 1,
+          "quality": {}
+        },
+        {
+          "index": 2,
+          "quality": {
+            "xeno-canto/XC649290": "B"
+          }
+        }
+      ]
+    },
+    "anas-sparsa": {
+      "calls": [
+        {
+          "index": 0,
+          "quality": {}
+        },
+        {
+          "index": 1,
+          "quality": {}
+        },
+        {
+          "index": 2,
+          "quality": {
+            "xeno-canto/XC464064": "B"
+          }
+        }
+      ]
+    },
+    "anas-undulata": {
+      "calls": [
+        {
+          "index": 0,
+          "quality": {}
+        },
+        {
+          "index": 1,
+          "quality": {}
+        },
+        {
+          "index": 2,
+          "quality": {
+            "xeno-canto/XC1051974": "A"
           }
         }
       ]
@@ -518,6 +608,26 @@
           "index": 0,
           "quality": {
             "xeno-canto/XC369825": "A"
+          }
+        }
+      ]
+    },
+    "dendrocygna-bicolor": {
+      "calls": [
+        {
+          "index": 0,
+          "quality": {
+            "xeno-canto/XC1173525": "A"
+          }
+        }
+      ]
+    },
+    "dendrocygna-viduata": {
+      "calls": [
+        {
+          "index": 0,
+          "quality": {
+            "xeno-canto/XC225375": "A"
           }
         }
       ]
@@ -962,6 +1072,32 @@
         }
       ]
     },
+    "netta-erythrophthalma": {
+      "calls": [
+        {
+          "index": 0,
+          "quality": {}
+        }
+      ]
+    },
+    "nettapus-auritus": {
+      "calls": [
+        {
+          "index": 0,
+          "quality": {}
+        },
+        {
+          "index": 1,
+          "quality": {}
+        },
+        {
+          "index": 2,
+          "quality": {
+            "xeno-canto/XC267474": "A"
+          }
+        }
+      ]
+    },
     "pernis-apivorus": {
       "calls": [
         {
@@ -979,6 +1115,20 @@
               "quality": "A"
             }
           ]
+        }
+      ]
+    },
+    "plectropterus-gambensis": {
+      "calls": [
+        {
+          "index": 0,
+          "quality": {}
+        },
+        {
+          "index": 1,
+          "quality": {
+            "xeno-canto/XC126343": "A"
+          }
         }
       ]
     },
@@ -1002,6 +1152,26 @@
             "xeno-canto/XC1039698": "A",
             "xeno-canto/XC580274": "D",
             "xeno-canto/XC958205": "A"
+          }
+        }
+      ]
+    },
+    "sarkidiornis-melanotos": {
+      "calls": [
+        {
+          "index": 0,
+          "quality": {
+            "xeno-canto/XC150138": "A"
+          }
+        }
+      ]
+    },
+    "spatula-hottentota": {
+      "calls": [
+        {
+          "index": 0,
+          "quality": {
+            "xeno-canto/XC210051": "A"
           }
         }
       ]
@@ -1049,6 +1219,16 @@
           "quality": {
             "xeno-canto/XC940363": "A",
             "xeno-canto/XC940364": "A"
+          }
+        }
+      ]
+    },
+    "thalassornis-leuconotus": {
+      "calls": [
+        {
+          "index": 0,
+          "quality": {
+            "xeno-canto/XC809424": "A"
           }
         }
       ]

@@ -7,8 +7,42 @@
     "af": "Teeleend"
   },
   "family": "anatidae",
-  "summary": "The details for this species have not been published yet.",
-  "sampleData": true,
+  "size": {
+    "lengthCm": {
+      "min": 46,
+      "max": 46
+    },
+    "note": "Newman's Birds gives 46 cm."
+  },
+  "habitat": "Brackish and saline waters, saltpans, sewage ponds, coastal lagoons and tidal mudflats, more than fresh inland pans.",
+  "summary": "A small, very pale duck with a pink upturned bill and a uniform head. At a distance it can look almost white. In flight the speculum is mostly white with a dark green centre. The sexes are similar. Immatures resemble adults, and young birds lack the pink on the bill. Newman says it is usually silent. Wikipedia describes a clear whistle from the breeding male and a feeble quack from the female.",
+  "sampleData": false,
+  "similar": [
+    {
+      "slug": "anas-erythrorhyncha",
+      "note": "Red-billed Teal also has a reddish bill, but it has a dark cap, a pale face and a spotted body. Cape Teal is paler and the head is uniform."
+    }
+  ],
+  "sources": [
+    {
+      "title": "The Atlas of Southern African Birds, Vol. 1 (Cape Teal)",
+      "url": "https://sabap2.birdmap.africa/docs/sabap1/106.pdf",
+      "publisher": "BirdLife South Africa",
+      "year": 1997
+    },
+    {
+      "title": "Cape Teal",
+      "url": "https://newmansbirds.com/birds/cape-teal/",
+      "publisher": "Newman's Birds",
+      "year": 2026
+    },
+    {
+      "title": "Cape teal",
+      "url": "https://en.wikipedia.org/wiki/Cape_teal",
+      "publisher": "Wikipedia",
+      "year": 2026
+    }
+  ],
   "population": {
     "estimate": {
       "low": null,
@@ -21,8 +55,150 @@
     "notes": "No sourced Kruger estimate is currently available; taxonomy or later records require separate research.",
     "sources": []
   },
-  "variants": [],
-  "viewNotes": [],
-  "calls": [],
-  "images": []
+  "variants": [
+    {
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "marks": {
+        "bill": {
+          "colour": "pink",
+          "shape": "upturned and pink"
+        },
+        "eye": {
+          "iris": null,
+          "ring": null
+        },
+        "legs": {
+          "colour": null
+        },
+        "head": {
+          "crown": "white",
+          "face": "white",
+          "throat": "white",
+          "pattern": "SABAP1 says the head pattern is uniform. Newman says the bird looks almost white at a distance. Wikipedia says the back is browner and the sexes are similar."
+        },
+        "upperparts": {
+          "back": "brown",
+          "rump": null,
+          "pattern": null
+        },
+        "underparts": {
+          "breast": "white",
+          "belly": "white",
+          "pattern": null
+        },
+        "wings": {
+          "above": [
+            "white",
+            "green"
+          ],
+          "below": null,
+          "pattern": "Newman: a predominantly white speculum with a dark green central patch."
+        },
+        "tail": {
+          "colour": null,
+          "shape": null
+        }
+      }
+    }
+  ],
+  "viewNotes": [
+    {
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "A small pale duck with a pink upturned bill and no dark cap."
+    },
+    {
+      "view": "perched-front",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "The uniform pale head and pink bill are the front view. There is no dark crown."
+    },
+    {
+      "view": "perched-back",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "The back is browner than the pale body. The speculum is a flight mark."
+    },
+    {
+      "view": "flight-above",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "The speculum is mostly white with a dark green centre."
+    },
+    {
+      "view": "flight-below",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "The underwing is not given a separate colour in these texts."
+    },
+    {
+      "view": "perched-side",
+      "age": "juvenile",
+      "sex": "any",
+      "season": "any",
+      "note": "Wikipedia says young birds lack the pink on the bill. Newman says the immature otherwise resembles the adult. The replacement bill colour is not named."
+    }
+  ],
+  "calls": [
+    {
+      "sex": "male",
+      "type": "call",
+      "description": "Wikipedia says the breeding male has a clear whistle. Newman says the species is usually silent.",
+      "recordings": []
+    },
+    {
+      "sex": "female",
+      "type": "call",
+      "description": "Wikipedia says the female has a feeble quack.",
+      "recordings": []
+    },
+    {
+      "sex": "any",
+      "type": "call",
+      "description": "Newman says the species is usually silent. The catalogue cut is not labelled male or female. Grade B, South Africa. A grade A file whose name ends in Cteal-cf was skipped because the cf marks an uncertain identification.",
+      "recordings": [
+        {
+          "key": "xeno-canto/XC268591",
+          "source": "https://xeno-canto.org/268591",
+          "fileUrl": "https://xeno-canto.org/sounds/uploaded/SGLTZLDXYI/XC268591-Cape%20teal16aug15_1.mp3",
+          "author": "Lynette Rudman",
+          "license": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ]
+    }
+  ],
+  "images": [
+    {
+      "key": "anas-capensis/ehlanzeni-side.jpg",
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "source": "https://www.inaturalist.org/observations/294640468",
+      "fileUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/530342589/large.jpg",
+      "author": "Darío De la Fuente",
+      "license": "CC BY 4.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by/4.0/",
+      "aiGenerated": false,
+      "hosted": false,
+      "alt": "Two Cape Teals standing side-on on a rock beside water in Ehlanzeni, Kruger",
+      "caption": "Two Cape Teals standing side-on on a rock beside water in Ehlanzeni, Kruger"
+    }
+  ],
+  "research": {
+    "confidence": "medium",
+    "needsReview": false,
+    "note": "Months in Kruger are not listed. SABAP1 places it mainly in drier pans and calls it an uncommon visitor to Swaziland and a rare vagrant to southern Mozambique, while the models show no clear migration. Newman treats it as a resident of brackish water. Chick down and the underwing are not described. The call is grade B from the Eastern Cape. The only higher grade in the catalogue had an uncertain cf filename."
+  }
 }

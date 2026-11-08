@@ -7,8 +7,57 @@
     "af": "Dwerggans"
   },
   "family": "anatidae",
-  "summary": "The details for this species have not been published yet.",
-  "sampleData": true,
+  "status": "resident",
+  "monthsPresent": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+  ],
+  "size": {
+    "lengthCm": {
+      "min": 33,
+      "max": 33
+    },
+    "note": "Newman's Birds gives 33 cm."
+  },
+  "habitat": "Clear, still inland waters with waterlilies and pondweed, and some emergent grass or reeds, including quiet pans, dams and pools. It also uses temporarily flooded grassland.",
+  "summary": "A tiny goose of lily pans. Newman identifies it by the dark green upperparts, orange body and short yellow bill, with white wing panels in flight. The male has a white face, black eye-patches, a black crown down the nape, green ear-patches and a white collar. Wikipedia describes the male breast and flanks as chestnut and the belly as white. The female has a grey face, a dark brown eye-stripe and a dark brown crown. The immature resembles the female. The male twitters and the female gives a weak quack and a twittering whistle.",
+  "sampleData": false,
+  "similar": [
+    {
+      "slug": "thalassornis-leuconotus",
+      "note": "White-backed Duck shares lily-covered water but is mottled, with a pale spot at the base of a black bill. African Pygmy Goose has a white face, a short yellow bill and an orange body."
+    }
+  ],
+  "sources": [
+    {
+      "title": "The Atlas of Southern African Birds, Vol. 1 (Pygmy Goose)",
+      "url": "https://sabap2.birdmap.africa/docs/sabap1/114.pdf",
+      "publisher": "BirdLife South Africa",
+      "year": 1997
+    },
+    {
+      "title": "African Pygmy Goose",
+      "url": "https://newmansbirds.com/birds/african-pygmy-goose/",
+      "publisher": "Newman's Birds",
+      "year": 2026
+    },
+    {
+      "title": "African pygmy goose",
+      "url": "https://en.wikipedia.org/wiki/African_pygmy_goose",
+      "publisher": "Wikipedia",
+      "year": 2026
+    }
+  ],
   "population": {
     "estimate": {
       "low": 4,
@@ -35,8 +84,279 @@
     },
     "tierApplied": "D"
   },
-  "variants": [],
-  "viewNotes": [],
-  "calls": [],
-  "images": []
+  "variants": [
+    {
+      "age": "adult",
+      "sex": "male",
+      "season": "any",
+      "marks": {
+        "bill": {
+          "colour": [
+            "yellow",
+            "black"
+          ],
+          "shape": "short and yellow, with a black tip"
+        },
+        "eye": {
+          "iris": "brown",
+          "ring": null
+        },
+        "legs": {
+          "colour": [
+            "slate-grey",
+            "black"
+          ]
+        },
+        "head": {
+          "crown": "black",
+          "face": [
+            "white",
+            "green",
+            "black"
+          ],
+          "throat": "white",
+          "pattern": "Wikipedia: white face, black eye-patches, an iridescent black crown down the nape, powder-green ear-patches and a white collar on the upper neck."
+        },
+        "upperparts": {
+          "back": "green",
+          "rump": null,
+          "pattern": "Newman: dark green upperparts."
+        },
+        "underparts": {
+          "breast": [
+            "orange",
+            "buff"
+          ],
+          "belly": "white",
+          "pattern": "Newman calls the body orange and the summary line orange-beige. Wikipedia names the male lower neck, breast and flanks chestnut, and the belly white."
+        },
+        "wings": {
+          "above": [
+            "black",
+            "green",
+            "white"
+          ],
+          "below": null,
+          "pattern": "White wing panels are diagnostic in flight. Wikipedia: black wings, metallic green coverts and a white bar on the outer secondaries."
+        },
+        "tail": {
+          "colour": "black",
+          "shape": null
+        }
+      }
+    },
+    {
+      "age": "adult",
+      "sex": "female",
+      "season": "any",
+      "marks": {
+        "bill": {
+          "colour": "yellow",
+          "shape": "short and yellow"
+        },
+        "eye": {
+          "iris": null,
+          "ring": null
+        },
+        "legs": {
+          "colour": null
+        },
+        "head": {
+          "crown": "dark-brown",
+          "face": [
+            "grey",
+            "brown"
+          ],
+          "throat": null,
+          "pattern": "Wikipedia: a grey face, a dark brown eye-stripe, smudged brown cheeks and nape, and a dark brown forehead, crown and nape. The female breast and flanks were not in the text used here."
+        },
+        "upperparts": {
+          "back": "green",
+          "rump": null,
+          "pattern": null
+        },
+        "underparts": {
+          "breast": null,
+          "belly": null,
+          "pattern": null
+        },
+        "wings": {
+          "above": "white",
+          "below": null,
+          "pattern": "Newman gives the white wing panels as a species mark in flight."
+        },
+        "tail": {
+          "colour": null,
+          "shape": null
+        }
+      }
+    },
+    {
+      "age": "immature",
+      "sex": "any",
+      "season": "any",
+      "marks": {
+        "bill": {
+          "colour": "yellow",
+          "shape": null
+        },
+        "eye": {
+          "iris": null,
+          "ring": null
+        },
+        "legs": {
+          "colour": null
+        },
+        "head": {
+          "crown": "dark-brown",
+          "face": [
+            "grey",
+            "brown"
+          ],
+          "throat": null,
+          "pattern": "Newman says the immature resembles the female."
+        },
+        "upperparts": {
+          "back": "green",
+          "rump": null,
+          "pattern": null
+        },
+        "underparts": {
+          "breast": null,
+          "belly": null,
+          "pattern": null
+        },
+        "wings": {
+          "above": null,
+          "below": null,
+          "pattern": null
+        },
+        "tail": {
+          "colour": null,
+          "shape": null
+        }
+      }
+    }
+  ],
+  "viewNotes": [
+    {
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Male: a white face, green ear-patch, black crown and short yellow bill on an orange body. The bird sits low among lilies."
+    },
+    {
+      "view": "perched-front",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "The male white face and black eye-patch are the front pattern. The bill is short and yellow with a black tip."
+    },
+    {
+      "view": "perched-back",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "The upperparts are dark green. The white wing panel is hidden at rest."
+    },
+    {
+      "view": "flight-above",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "White panels on the wing are the flight mark."
+    },
+    {
+      "view": "flight-below",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "The underwing is not given a separate colour in these texts."
+    },
+    {
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "female",
+      "season": "any",
+      "note": "The female face is grey, with a dark brown eye-stripe and a dark brown crown. Newman does not describe a separate female body colour."
+    },
+    {
+      "view": "perched-side",
+      "age": "immature",
+      "sex": "any",
+      "season": "any",
+      "note": "Newman says the immature resembles the female."
+    }
+  ],
+  "calls": [
+    {
+      "sex": "male",
+      "type": "call",
+      "description": "A soft twittering whistle, choo-choo or pee-wee, and a repeated subdued tsu-tswi.",
+      "recordings": []
+    },
+    {
+      "sex": "female",
+      "type": "call",
+      "description": "A weak quack and a twittering whistle.",
+      "recordings": []
+    },
+    {
+      "sex": "any",
+      "type": "call",
+      "description": "The sexed calls are from Newman. The catalogue cut is not labelled male or female. Grade A, Ethiopia. Lake Awassa, Ethiopia. No playable southern African grade A file outranked it.",
+      "recordings": [
+        {
+          "key": "xeno-canto/XC267474",
+          "source": "https://xeno-canto.org/267474",
+          "fileUrl": "https://xeno-canto.org/sounds/uploaded/CDTGHVBGZP/XC267474-African%20Pygmy-Goose2015-1-9-4.mp3",
+          "author": "Andrew Spencer",
+          "license": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ]
+    }
+  ],
+  "images": [
+    {
+      "key": "nettapus-auritus/ehlanzeni-male.jpg",
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "male",
+      "season": "any",
+      "source": "https://www.inaturalist.org/observations/106845621",
+      "fileUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/179580893/large.jpg",
+      "author": "Niall Perrins",
+      "license": "CC BY-NC 4.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+      "aiGenerated": false,
+      "hosted": false,
+      "alt": "Male African Pygmy Goose swimming side-on among waterlilies in Ehlanzeni, Kruger",
+      "caption": "Male African Pygmy Goose swimming side-on among waterlilies in Ehlanzeni, Kruger"
+    },
+    {
+      "key": "nettapus-auritus/leeupan-male.jpg",
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "male",
+      "season": "any",
+      "source": "https://www.inaturalist.org/observations/108302943",
+      "fileUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/182321690/large.jpg",
+      "author": "maritzasouthafrica",
+      "license": "CC BY-NC 4.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+      "aiGenerated": false,
+      "hosted": false,
+      "alt": "Male African Pygmy Goose swimming side-on in reeds at Leeupan, Kruger",
+      "caption": "Male African Pygmy Goose swimming side-on in reeds at Leeupan, Kruger"
+    }
+  ],
+  "research": {
+    "confidence": "medium",
+    "needsReview": false,
+    "note": "Status is resident and all twelve months are listed. SABAP1 names the Limpopo floodplain in northern Kruger as a Transvaal locality and says local numbers follow waterlily growth rather than a regional migration. The female body colours were cut off in the Wikipedia text, so they were left empty. Chick down, a female photograph and the underwing were not found. The call is grade A from Ethiopia and is not sexed. Newman’s orange body and Wikipedia’s chestnut male underparts are both cited."
+  }
 }

@@ -7,8 +7,57 @@
     "af": "Wildemakou"
   },
   "family": "anatidae",
-  "summary": "The details for this species have not been published yet.",
-  "sampleData": true,
+  "status": "resident",
+  "monthsPresent": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+  ],
+  "size": {
+    "lengthCm": {
+      "min": 102,
+      "max": 102
+    },
+    "note": "Newman's Birds gives 102 cm. Wikipedia says males are noticeably larger than females."
+  },
+  "habitat": "Any inland water, especially larger waters used for the wing moult, and floodplains in bushveld. It also forages in croplands and perches in dead trees.",
+  "summary": "A very large glossy black goose. The male has a fleshy caruncle on the forehead and a variable amount of white on the face and underparts, least in southern populations. Wikipedia adds a red bill and a larger red facial patch on the male, with a knob at the base of the upper mandible. In flight the white forewings separate it from Knob-billed Duck. The immature is brown, with little or no white. The male gives a soft high cherwit in flight, and either sex can give chi-chi-chi-chi.",
+  "sampleData": false,
+  "similar": [
+    {
+      "slug": "sarkidiornis-melanotos",
+      "note": "Knob-billed Duck has white underparts and all-dark wings. Spur-winged Goose shows prominent white forewings in flight and is glossy black."
+    }
+  ],
+  "sources": [
+    {
+      "title": "The Atlas of Southern African Birds, Vol. 1 (Spur-winged Goose)",
+      "url": "https://sabap2.birdmap.africa/docs/sabap1/116.pdf",
+      "publisher": "BirdLife South Africa",
+      "year": 1997
+    },
+    {
+      "title": "Spur-winged Goose",
+      "url": "https://newmansbirds.com/birds/spur-winged-goose/",
+      "publisher": "Newman's Birds",
+      "year": 2026
+    },
+    {
+      "title": "Spur-winged goose",
+      "url": "https://en.wikipedia.org/wiki/Spur-winged_goose",
+      "publisher": "Wikipedia",
+      "year": 2026
+    }
+  ],
   "population": {
     "estimate": {
       "low": 32,
@@ -35,8 +84,259 @@
     },
     "tierApplied": "D"
   },
-  "variants": [],
-  "viewNotes": [],
-  "calls": [],
-  "images": []
+  "variants": [
+    {
+      "age": "adult",
+      "sex": "male",
+      "season": "any",
+      "marks": {
+        "bill": {
+          "colour": "red",
+          "shape": "red, with a knob at the base of the upper mandible and a fleshy forehead caruncle"
+        },
+        "eye": {
+          "iris": null,
+          "ring": null
+        },
+        "legs": {
+          "colour": null
+        },
+        "head": {
+          "crown": "black",
+          "face": [
+            "black",
+            "white",
+            "red"
+          ],
+          "throat": "black",
+          "pattern": "Newman: a variable amount of white on the face, least in southern populations. Wikipedia: a larger red facial patch than the female."
+        },
+        "upperparts": {
+          "back": "black",
+          "rump": null,
+          "pattern": "Glossy black."
+        },
+        "underparts": {
+          "breast": [
+            "black",
+            "white"
+          ],
+          "belly": [
+            "black",
+            "white"
+          ],
+          "pattern": "White on the underparts is variable and least extensive in southern populations."
+        },
+        "wings": {
+          "above": [
+            "white",
+            "black"
+          ],
+          "below": null,
+          "pattern": "Prominent white forewings in flight."
+        },
+        "tail": {
+          "colour": null,
+          "shape": null
+        }
+      }
+    },
+    {
+      "age": "adult",
+      "sex": "female",
+      "season": "any",
+      "marks": {
+        "bill": {
+          "colour": "red",
+          "shape": null
+        },
+        "eye": {
+          "iris": null,
+          "ring": null
+        },
+        "legs": {
+          "colour": null
+        },
+        "head": {
+          "crown": "black",
+          "face": "black",
+          "throat": "black",
+          "pattern": "Wikipedia says the male has the larger red facial patch and the knob. A separate female face pattern was not described beyond less white and no large caruncle."
+        },
+        "upperparts": {
+          "back": "black",
+          "rump": null,
+          "pattern": null
+        },
+        "underparts": {
+          "breast": "black",
+          "belly": "black",
+          "pattern": null
+        },
+        "wings": {
+          "above": [
+            "white",
+            "black"
+          ],
+          "below": null,
+          "pattern": "The white forewings are the species mark in flight."
+        },
+        "tail": {
+          "colour": null,
+          "shape": null
+        }
+      }
+    },
+    {
+      "age": "juvenile",
+      "sex": "any",
+      "season": "any",
+      "marks": {
+        "bill": {
+          "colour": null,
+          "shape": null
+        },
+        "eye": {
+          "iris": null,
+          "ring": null
+        },
+        "legs": {
+          "colour": null
+        },
+        "head": {
+          "crown": "brown",
+          "face": "brown",
+          "throat": "brown",
+          "pattern": "Newman: brown, with little or no white."
+        },
+        "upperparts": {
+          "back": "brown",
+          "rump": null,
+          "pattern": null
+        },
+        "underparts": {
+          "breast": "brown",
+          "belly": "brown",
+          "pattern": null
+        },
+        "wings": {
+          "above": "brown",
+          "below": null,
+          "pattern": null
+        },
+        "tail": {
+          "colour": null,
+          "shape": null
+        }
+      }
+    }
+  ],
+  "viewNotes": [
+    {
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "A very large glossy black goose. The male shows a red bill, a forehead caruncle and some white on the face or wing."
+    },
+    {
+      "view": "perched-front",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "The red bill and any white on the face are the front marks. Southern birds have the least white."
+    },
+    {
+      "view": "perched-back",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "The folded wing can show a white bar. The back is glossy black on the adult."
+    },
+    {
+      "view": "flight-above",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "The white forewings separate it from Knob-billed Duck."
+    },
+    {
+      "view": "flight-below",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "The underwing is not given a separate colour in these texts."
+    },
+    {
+      "view": "perched-side",
+      "age": "juvenile",
+      "sex": "any",
+      "season": "any",
+      "note": "The immature is brown and shows little or no white."
+    }
+  ],
+  "calls": [
+    {
+      "sex": "male",
+      "type": "call",
+      "description": "A soft, high-pitched cherwit in flight.",
+      "recordings": []
+    },
+    {
+      "sex": "any",
+      "type": "call",
+      "description": "Either sex can give a four-syllable chi-chi-chi-chi. The catalogue cut is not labelled male or female. Grade A, South Africa. The type is a flight call, from the Free State.",
+      "recordings": [
+        {
+          "key": "xeno-canto/XC126343",
+          "source": "https://xeno-canto.org/126343",
+          "fileUrl": "https://xeno-canto.org/sounds/uploaded/HZKCNRIPRH/XC126343-SpurWingedGoose21Jan2013BenfontijnFreeStateSouthAfrika.mp3",
+          "author": "Sander Bot",
+          "license": "CC BY-NC-SA 3.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/3.0/",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ]
+    }
+  ],
+  "images": [
+    {
+      "key": "plectropterus-gambensis/shingwedzi-side.jpg",
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "male",
+      "season": "any",
+      "source": "https://www.inaturalist.org/observations/335248928",
+      "fileUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/608984800/large.jpg",
+      "author": "moxcalvitiumtorgos",
+      "license": "CC BY-NC 4.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+      "aiGenerated": false,
+      "hosted": false,
+      "alt": "Spur-winged Goose standing side-on at Shingwedzi, Kruger, with a red bill and a white wing bar",
+      "caption": "Spur-winged Goose standing side-on at Shingwedzi, Kruger, with a red bill and a white wing bar"
+    },
+    {
+      "key": "plectropterus-gambensis/mopani-side.jpg",
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "male",
+      "season": "any",
+      "source": "https://www.inaturalist.org/observations/254719719",
+      "fileUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/456312729/large.jpg",
+      "author": "Sergey Shestakov",
+      "license": "CC BY-NC 4.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+      "aiGenerated": false,
+      "hosted": false,
+      "alt": "Spur-winged Goose standing side-on in Mopani, Kruger, with a red face and little white on the body",
+      "caption": "Spur-winged Goose standing side-on in Mopani, Kruger, with a red face and little white on the body"
+    }
+  ],
+  "research": {
+    "confidence": "medium",
+    "needsReview": false,
+    "note": "Status is resident and all twelve months are listed. SABAP1 says it is dispersive without long-distance ring recoveries, and that the winter decline in the models matches breeding and lower conspicuousness rather than absence. Newman describes winter wing-moult gatherings. The female face was not given its own colour beyond the male’s larger red patch, so the female face is stored as black. Chick down and the underwing are not described. The flight call is grade A from the Free State and is not sexed."
+  }
 }
