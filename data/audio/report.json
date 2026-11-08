@@ -1,11 +1,11 @@
 {
   "source": "xeno-canto explore catalogue, API v3 recording fields",
   "counts": {
-    "slots": 86,
+    "slots": 112,
     "swapped": 17,
-    "added": 7,
+    "added": 19,
     "kept": 57,
-    "none": 5,
+    "none": 19,
     "cleaned": 0
   },
   "noUsableRecording": [
@@ -33,6 +33,76 @@
       "slug": "pinarocorys-nigricans",
       "scientificName": "Pinarocorys nigricans",
       "type": "call"
+    },
+    {
+      "slug": "alopochen-aegyptiaca",
+      "scientificName": "Alopochen aegyptiaca",
+      "type": "call"
+    },
+    {
+      "slug": "alopochen-aegyptiaca",
+      "scientificName": "Alopochen aegyptiaca",
+      "type": "call"
+    },
+    {
+      "slug": "anas-capensis",
+      "scientificName": "Anas capensis",
+      "type": "call"
+    },
+    {
+      "slug": "anas-capensis",
+      "scientificName": "Anas capensis",
+      "type": "call"
+    },
+    {
+      "slug": "anas-erythrorhyncha",
+      "scientificName": "Anas erythrorhyncha",
+      "type": "call"
+    },
+    {
+      "slug": "anas-erythrorhyncha",
+      "scientificName": "Anas erythrorhyncha",
+      "type": "call"
+    },
+    {
+      "slug": "anas-sparsa",
+      "scientificName": "Anas sparsa",
+      "type": "call"
+    },
+    {
+      "slug": "anas-sparsa",
+      "scientificName": "Anas sparsa",
+      "type": "call"
+    },
+    {
+      "slug": "anas-undulata",
+      "scientificName": "Anas undulata",
+      "type": "call"
+    },
+    {
+      "slug": "anas-undulata",
+      "scientificName": "Anas undulata",
+      "type": "call"
+    },
+    {
+      "slug": "netta-erythrophthalma",
+      "scientificName": "Netta erythrophthalma",
+      "type": "call"
+    },
+    {
+      "slug": "nettapus-auritus",
+      "scientificName": "Nettapus auritus",
+      "type": "call"
+    },
+    {
+      "slug": "nettapus-auritus",
+      "scientificName": "Nettapus auritus",
+      "type": "call"
+    },
+    {
+      "slug": "plectropterus-gambensis",
+      "scientificName": "Plectropterus gambensis",
+      "type": "call"
     }
   ],
   "speciesWithoutAnyRecording": [
@@ -43,6 +113,10 @@
     {
       "slug": "trigonoceps-occipitalis",
       "scientificName": "Trigonoceps occipitalis"
+    },
+    {
+      "slug": "netta-erythrophthalma",
+      "scientificName": "Netta erythrophthalma"
     }
   ],
   "cleaned": [],
@@ -1472,6 +1546,370 @@
       "locality": "",
       "cleaned": false,
       "license": ""
+    },
+    {
+      "slug": "alopochen-aegyptiaca",
+      "scientificName": "Alopochen aegyptiaca",
+      "index": 0,
+      "type": "call",
+      "action": "none",
+      "from": [],
+      "to": "",
+      "quality": "",
+      "country": "",
+      "locality": "",
+      "cleaned": false,
+      "license": ""
+    },
+    {
+      "slug": "alopochen-aegyptiaca",
+      "scientificName": "Alopochen aegyptiaca",
+      "index": 1,
+      "type": "call",
+      "action": "none",
+      "from": [],
+      "to": "",
+      "quality": "",
+      "country": "",
+      "locality": "",
+      "cleaned": false,
+      "license": ""
+    },
+    {
+      "slug": "alopochen-aegyptiaca",
+      "scientificName": "Alopochen aegyptiaca",
+      "index": 2,
+      "type": "call",
+      "action": "added",
+      "from": [],
+      "to": "816922",
+      "quality": "A",
+      "country": "South Africa",
+      "locality": "Seven Dams Conservancy, Bloemfontein, Free State",
+      "cleaned": false,
+      "license": "CC BY-NC-SA 4.0"
+    },
+    {
+      "slug": "anas-capensis",
+      "scientificName": "Anas capensis",
+      "index": 0,
+      "type": "call",
+      "action": "none",
+      "from": [],
+      "to": "",
+      "quality": "",
+      "country": "",
+      "locality": "",
+      "cleaned": false,
+      "license": ""
+    },
+    {
+      "slug": "anas-capensis",
+      "scientificName": "Anas capensis",
+      "index": 1,
+      "type": "call",
+      "action": "none",
+      "from": [],
+      "to": "",
+      "quality": "",
+      "country": "",
+      "locality": "",
+      "cleaned": false,
+      "license": ""
+    },
+    {
+      "slug": "anas-capensis",
+      "scientificName": "Anas capensis",
+      "index": 2,
+      "type": "call",
+      "action": "added",
+      "from": [],
+      "to": "268591",
+      "quality": "B",
+      "country": "South Africa",
+      "locality": "Grahamstown, Western District, Eastern Cape",
+      "cleaned": false,
+      "license": "CC BY-NC-SA 4.0"
+    },
+    {
+      "slug": "anas-erythrorhyncha",
+      "scientificName": "Anas erythrorhyncha",
+      "index": 0,
+      "type": "call",
+      "action": "none",
+      "from": [],
+      "to": "",
+      "quality": "",
+      "country": "",
+      "locality": "",
+      "cleaned": false,
+      "license": ""
+    },
+    {
+      "slug": "anas-erythrorhyncha",
+      "scientificName": "Anas erythrorhyncha",
+      "index": 1,
+      "type": "call",
+      "action": "none",
+      "from": [],
+      "to": "",
+      "quality": "",
+      "country": "",
+      "locality": "",
+      "cleaned": false,
+      "license": ""
+    },
+    {
+      "slug": "anas-erythrorhyncha",
+      "scientificName": "Anas erythrorhyncha",
+      "index": 2,
+      "type": "call",
+      "action": "added",
+      "from": [],
+      "to": "649290",
+      "quality": "B",
+      "country": "South Africa",
+      "locality": "Grahamstown, Western District, Eastern Cape",
+      "cleaned": false,
+      "license": "CC BY-NC-SA 4.0"
+    },
+    {
+      "slug": "anas-sparsa",
+      "scientificName": "Anas sparsa",
+      "index": 0,
+      "type": "call",
+      "action": "none",
+      "from": [],
+      "to": "",
+      "quality": "",
+      "country": "",
+      "locality": "",
+      "cleaned": false,
+      "license": ""
+    },
+    {
+      "slug": "anas-sparsa",
+      "scientificName": "Anas sparsa",
+      "index": 1,
+      "type": "call",
+      "action": "none",
+      "from": [],
+      "to": "",
+      "quality": "",
+      "country": "",
+      "locality": "",
+      "cleaned": false,
+      "license": ""
+    },
+    {
+      "slug": "anas-sparsa",
+      "scientificName": "Anas sparsa",
+      "index": 2,
+      "type": "call",
+      "action": "added",
+      "from": [],
+      "to": "464064",
+      "quality": "B",
+      "country": "South Africa",
+      "locality": "Bathurst",
+      "cleaned": false,
+      "license": "CC BY-NC-SA 4.0"
+    },
+    {
+      "slug": "anas-undulata",
+      "scientificName": "Anas undulata",
+      "index": 0,
+      "type": "call",
+      "action": "none",
+      "from": [],
+      "to": "",
+      "quality": "",
+      "country": "",
+      "locality": "",
+      "cleaned": false,
+      "license": ""
+    },
+    {
+      "slug": "anas-undulata",
+      "scientificName": "Anas undulata",
+      "index": 1,
+      "type": "call",
+      "action": "none",
+      "from": [],
+      "to": "",
+      "quality": "",
+      "country": "",
+      "locality": "",
+      "cleaned": false,
+      "license": ""
+    },
+    {
+      "slug": "anas-undulata",
+      "scientificName": "Anas undulata",
+      "index": 2,
+      "type": "call",
+      "action": "added",
+      "from": [],
+      "to": "1051974",
+      "quality": "A",
+      "country": "South Africa",
+      "locality": "Botterblom Nature Reserve (near Cape Town), City of Cape Town Metropolitan Municipality, Western Cape",
+      "cleaned": false,
+      "license": "CC BY-NC-SA 4.0"
+    },
+    {
+      "slug": "dendrocygna-bicolor",
+      "scientificName": "Dendrocygna bicolor",
+      "index": 0,
+      "type": "call",
+      "action": "added",
+      "from": [],
+      "to": "1173525",
+      "quality": "A",
+      "country": "South Africa",
+      "locality": "Cape Town, Cape Town, Western Cape",
+      "cleaned": false,
+      "license": "CC BY-NC-SA 4.0"
+    },
+    {
+      "slug": "dendrocygna-viduata",
+      "scientificName": "Dendrocygna viduata",
+      "index": 0,
+      "type": "call",
+      "action": "added",
+      "from": [],
+      "to": "225375",
+      "quality": "A",
+      "country": "Venezuela",
+      "locality": "Los Llanos, Apure",
+      "cleaned": false,
+      "license": "CC BY-NC-SA 4.0"
+    },
+    {
+      "slug": "netta-erythrophthalma",
+      "scientificName": "Netta erythrophthalma",
+      "index": 0,
+      "type": "call",
+      "action": "none",
+      "from": [],
+      "to": "",
+      "quality": "",
+      "country": "",
+      "locality": "",
+      "cleaned": false,
+      "license": ""
+    },
+    {
+      "slug": "nettapus-auritus",
+      "scientificName": "Nettapus auritus",
+      "index": 0,
+      "type": "call",
+      "action": "none",
+      "from": [],
+      "to": "",
+      "quality": "",
+      "country": "",
+      "locality": "",
+      "cleaned": false,
+      "license": ""
+    },
+    {
+      "slug": "nettapus-auritus",
+      "scientificName": "Nettapus auritus",
+      "index": 1,
+      "type": "call",
+      "action": "none",
+      "from": [],
+      "to": "",
+      "quality": "",
+      "country": "",
+      "locality": "",
+      "cleaned": false,
+      "license": ""
+    },
+    {
+      "slug": "nettapus-auritus",
+      "scientificName": "Nettapus auritus",
+      "index": 2,
+      "type": "call",
+      "action": "added",
+      "from": [],
+      "to": "267474",
+      "quality": "A",
+      "country": "Ethiopia",
+      "locality": "Lake Awassa",
+      "cleaned": false,
+      "license": "CC BY-NC-SA 4.0"
+    },
+    {
+      "slug": "plectropterus-gambensis",
+      "scientificName": "Plectropterus gambensis",
+      "index": 0,
+      "type": "call",
+      "action": "none",
+      "from": [],
+      "to": "",
+      "quality": "",
+      "country": "",
+      "locality": "",
+      "cleaned": false,
+      "license": ""
+    },
+    {
+      "slug": "plectropterus-gambensis",
+      "scientificName": "Plectropterus gambensis",
+      "index": 1,
+      "type": "call",
+      "action": "added",
+      "from": [],
+      "to": "126343",
+      "quality": "A",
+      "country": "South Africa",
+      "locality": "Benfontijn Gamereserve, Lejweleputswa, Free State",
+      "cleaned": false,
+      "license": "CC BY-NC-SA 3.0"
+    },
+    {
+      "slug": "sarkidiornis-melanotos",
+      "scientificName": "Sarkidiornis melanotos",
+      "index": 0,
+      "type": "call",
+      "action": "added",
+      "from": [],
+      "to": "150138",
+      "quality": "A",
+      "country": "India",
+      "locality": "saldi pond amreli",
+      "cleaned": false,
+      "license": "CC BY-NC-SA 3.0"
+    },
+    {
+      "slug": "spatula-hottentota",
+      "scientificName": "Spatula hottentota",
+      "index": 0,
+      "type": "call",
+      "action": "added",
+      "from": [],
+      "to": "210051",
+      "quality": "A",
+      "country": "Ethiopia",
+      "locality": "Lake Boyo marshes",
+      "cleaned": false,
+      "license": "CC BY-NC-SA 4.0"
+    },
+    {
+      "slug": "thalassornis-leuconotus",
+      "scientificName": "Thalassornis leuconotus",
+      "index": 0,
+      "type": "call",
+      "action": "added",
+      "from": [],
+      "to": "809424",
+      "quality": "A",
+      "country": "South Africa",
+      "locality": "Strandfontein Sewage Works, Cape Town, Western Cape",
+      "cleaned": false,
+      "license": "CC BY-NC-SA 4.0"
     }
   ]
 }

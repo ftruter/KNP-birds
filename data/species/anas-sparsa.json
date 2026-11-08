@@ -7,8 +7,57 @@
     "af": "Swarteend"
   },
   "family": "anatidae",
-  "summary": "The details for this species have not been published yet.",
-  "sampleData": true,
+  "status": "resident",
+  "monthsPresent": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+  ],
+  "size": {
+    "lengthCm": {
+      "min": 48,
+      "max": 57
+    },
+    "note": "Newman's Birds gives 51–54 cm. Wikipedia gives 48–57 cm and says the male is larger."
+  },
+  "habitat": "Streams and rivers with stony bottoms and wooded banks by day, including pools in running water. Pairs move to larger open waters to roost at sunset.",
+  "summary": "A dark grey-brown river duck with bold white spots on the wings and back and an iridescent blue speculum edged white. The bill is dark and the legs are orange. On the water it looks short-necked and long-bodied. It is darker than Yellow-billed Duck and lacks that species’ yellow bill. The immature is browner, with buffy spots and a white-barred belly. The female quacks loudly in flight and the male gives a very quiet weep.",
+  "sampleData": false,
+  "similar": [
+    {
+      "slug": "anas-undulata",
+      "note": "Yellow-billed Duck has a bright yellow bill with a black patch and pale feather edges. African Black Duck is darker, with white spots on the back and wings and a dark bill."
+    }
+  ],
+  "sources": [
+    {
+      "title": "The Atlas of Southern African Birds, Vol. 1 (African Black Duck)",
+      "url": "https://sabap2.birdmap.africa/docs/sabap1/105.pdf",
+      "publisher": "BirdLife South Africa",
+      "year": 1997
+    },
+    {
+      "title": "African Black Duck",
+      "url": "https://newmansbirds.com/birds/african-black-duck/",
+      "publisher": "Newman's Birds",
+      "year": 2026
+    },
+    {
+      "title": "African black duck",
+      "url": "https://en.wikipedia.org/wiki/African_black_duck",
+      "publisher": "Wikipedia",
+      "year": 2026
+    }
+  ],
   "population": {
     "estimate": {
       "low": 64,
@@ -35,8 +84,213 @@
     },
     "tierApplied": "D"
   },
-  "variants": [],
-  "viewNotes": [],
-  "calls": [],
-  "images": []
+  "variants": [
+    {
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "marks": {
+        "bill": {
+          "colour": "black",
+          "shape": "dark"
+        },
+        "eye": {
+          "iris": null,
+          "ring": null
+        },
+        "legs": {
+          "colour": "orange"
+        },
+        "head": {
+          "crown": "dark-brown",
+          "face": "dark-brown",
+          "throat": "dark-brown",
+          "pattern": null
+        },
+        "upperparts": {
+          "back": "dark-brown",
+          "rump": null,
+          "pattern": "Bold white spots on the back. Newman says the swimming bird looks short-necked and long-bodied."
+        },
+        "underparts": {
+          "breast": "dark-brown",
+          "belly": "dark-brown",
+          "pattern": null
+        },
+        "wings": {
+          "above": [
+            "blue",
+            "white",
+            "dark-brown"
+          ],
+          "below": null,
+          "pattern": "Iridescent blue speculum with a white border, and bold white spots on the wings. Wikipedia calls the speculum purplish blue."
+        },
+        "tail": {
+          "colour": null,
+          "shape": null
+        }
+      }
+    },
+    {
+      "age": "juvenile",
+      "sex": "any",
+      "season": "any",
+      "marks": {
+        "bill": {
+          "colour": "black",
+          "shape": null
+        },
+        "eye": {
+          "iris": null,
+          "ring": null
+        },
+        "legs": {
+          "colour": "orange"
+        },
+        "head": {
+          "crown": "brown",
+          "face": "brown",
+          "throat": "brown",
+          "pattern": null
+        },
+        "upperparts": {
+          "back": "brown",
+          "rump": null,
+          "pattern": "Newman: browner than the adult, with buffy spots."
+        },
+        "underparts": {
+          "breast": "brown",
+          "belly": "white",
+          "pattern": "The belly is barred white."
+        },
+        "wings": {
+          "above": [
+            "blue",
+            "buff"
+          ],
+          "below": null,
+          "pattern": "Spots are buffy rather than white."
+        },
+        "tail": {
+          "colour": null,
+          "shape": null
+        }
+      }
+    }
+  ],
+  "viewNotes": [
+    {
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Dark grey-brown, short-necked and long-bodied, with white spots on the wing and back and an orange leg."
+    },
+    {
+      "view": "perched-front",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "The dark bill and plain dark head show from the front. The yellow bill of a Yellow-billed Duck is absent."
+    },
+    {
+      "view": "perched-back",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "White spots on the back are the rear pattern."
+    },
+    {
+      "view": "flight-above",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "The blue speculum has a white border, and the wing spots show from above."
+    },
+    {
+      "view": "flight-below",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "The underwing is not given a separate colour in these texts."
+    },
+    {
+      "view": "perched-side",
+      "age": "juvenile",
+      "sex": "any",
+      "season": "any",
+      "note": "The immature is browner, with buffy spots and a white-barred belly."
+    }
+  ],
+  "calls": [
+    {
+      "sex": "male",
+      "type": "call",
+      "description": "An almost imperceptible weep, weep, weep, mostly when the pair is flying.",
+      "recordings": []
+    },
+    {
+      "sex": "female",
+      "type": "call",
+      "description": "A persistent loud quacking in flight.",
+      "recordings": []
+    },
+    {
+      "sex": "any",
+      "type": "call",
+      "description": "Newman says the pair mostly calls in flight. The catalogue cut is not labelled male or female. Grade B, South Africa. Eastern Cape. The grade A catalogue files are not playable licences.",
+      "recordings": [
+        {
+          "key": "xeno-canto/XC464064",
+          "source": "https://xeno-canto.org/464064",
+          "fileUrl": "https://xeno-canto.org/sounds/uploaded/GQMCPIVNXX/XC464064-African%20Black%20Duck.mp3",
+          "author": "Tim Cockcroft",
+          "license": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ]
+    }
+  ],
+  "images": [
+    {
+      "key": "anas-sparsa/skukuza-side.jpg",
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "source": "https://www.inaturalist.org/observations/379199953",
+      "fileUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/693607158/large.jpg",
+      "author": "John White",
+      "license": "CC BY 4.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by/4.0/",
+      "aiGenerated": false,
+      "hosted": false,
+      "alt": "African Black Duck standing side-on at the water’s edge near Skukuza, Kruger, with white wing spots",
+      "caption": "African Black Duck standing side-on at the water’s edge near Skukuza, Kruger, with white wing spots"
+    },
+    {
+      "key": "anas-sparsa/skukuza-back.jpg",
+      "view": "perched-back",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "source": "https://www.inaturalist.org/observations/237123051",
+      "fileUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/421955148/large.jpeg",
+      "author": "marajua",
+      "license": "CC BY-NC 4.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+      "aiGenerated": false,
+      "hosted": false,
+      "alt": "African Black Duck seen from behind in shallow water near Skukuza, Kruger, with white spots on the back",
+      "caption": "African Black Duck seen from behind in shallow water near Skukuza, Kruger, with white spots on the back"
+    }
+  ],
+  "research": {
+    "confidence": "medium",
+    "needsReview": false,
+    "note": "Status is resident. SABAP1 says it is sedentary, which the models confirm, so all twelve months are listed. Chick down and the underwing are not described. The recording is grade B from the Eastern Cape because the grade A files are not playable."
+  }
 }

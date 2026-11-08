@@ -7,8 +7,61 @@
     "af": "Rooibekeend"
   },
   "family": "anatidae",
-  "summary": "The details for this species have not been published yet.",
-  "sampleData": true,
+  "status": "resident",
+  "monthsPresent": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+  ],
+  "size": {
+    "lengthCm": {
+      "min": 48,
+      "max": 48
+    },
+    "note": "Newman's Birds gives 48 cm."
+  },
+  "habitat": "Lakes, floodplains, dams and sewage ponds, including shallow fresh water with grassy edges. Numbers on seasonal waters rise after rain.",
+  "summary": "A medium dabbling duck with a pinkish-red bill, a dark cap, a pale face and spotting over the body. It is larger than Blue-billed Teal, which has a blue-grey bill and an unspeckled rear body. In flight the speculum is creamy, and Wikipedia describes the secondaries as buff with a black stripe. The sexes are similar. Juveniles are duller. Sounds are soft at close range, and the female can give a louder series of quacks.",
+  "sampleData": false,
+  "similar": [
+    {
+      "slug": "spatula-hottentota",
+      "note": "Blue-billed Teal is much smaller, with a grey-blue bill and no speckling on the rear body. Red-billed Teal has a pinkish-red bill and spotting over the whole body."
+    },
+    {
+      "slug": "anas-capensis",
+      "note": "Cape Teal also has a reddish bill, but it is paler, with a uniform head and no dark cap."
+    }
+  ],
+  "sources": [
+    {
+      "title": "The Atlas of Southern African Birds, Vol. 1 (Red-billed Teal)",
+      "url": "https://sabap2.birdmap.africa/docs/sabap1/108.pdf",
+      "publisher": "BirdLife South Africa",
+      "year": 1997
+    },
+    {
+      "title": "Red-billed Teal",
+      "url": "https://newmansbirds.com/birds/red-billed-teal/",
+      "publisher": "Newman's Birds",
+      "year": 2026
+    },
+    {
+      "title": "Red-billed teal",
+      "url": "https://en.wikipedia.org/wiki/Red-billed_teal",
+      "publisher": "Wikipedia",
+      "year": 2026
+    }
+  ],
   "population": {
     "estimate": {
       "low": 64,
@@ -35,8 +88,163 @@
     },
     "tierApplied": "D"
   },
-  "variants": [],
-  "viewNotes": [],
-  "calls": [],
-  "images": []
+  "variants": [
+    {
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "marks": {
+        "bill": {
+          "colour": "red",
+          "shape": "pinkish red"
+        },
+        "eye": {
+          "iris": null,
+          "ring": null
+        },
+        "legs": {
+          "colour": null
+        },
+        "head": {
+          "crown": "black",
+          "face": "buff",
+          "throat": "buff",
+          "pattern": "Wikipedia: a blackish cap and nape contrast with a pale face. The sexes are similar."
+        },
+        "upperparts": {
+          "back": "brown",
+          "rump": null,
+          "pattern": "The body is spotted. Newman says the spotting covers the body."
+        },
+        "underparts": {
+          "breast": "brown",
+          "belly": "brown",
+          "pattern": "Feathers are scalloped with white."
+        },
+        "wings": {
+          "above": "buff",
+          "below": null,
+          "pattern": "Newman: a creamy speculum. Wikipedia: the secondaries are buff with a black stripe."
+        },
+        "tail": {
+          "colour": null,
+          "shape": null
+        }
+      }
+    }
+  ],
+  "viewNotes": [
+    {
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "A dark cap, pale face and pinkish-red bill, with spotting along the body."
+    },
+    {
+      "view": "perched-front",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "The dark cap and pale cheeks meet on the front of the head, and the red bill is obvious."
+    },
+    {
+      "view": "perched-back",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "The spotted back continues the body pattern. The creamy speculum is a flight mark."
+    },
+    {
+      "view": "flight-above",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "The speculum is creamy. Wikipedia adds a black stripe on the buff secondaries."
+    },
+    {
+      "view": "flight-below",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "The underwing is not given a separate colour in these texts."
+    },
+    {
+      "view": "perched-side",
+      "age": "juvenile",
+      "sex": "any",
+      "season": "any",
+      "note": "Wikipedia says juveniles are duller. The texts do not name which parts change."
+    }
+  ],
+  "calls": [
+    {
+      "sex": "male",
+      "type": "call",
+      "description": "Wikipedia describes the male call as a whzzt.",
+      "recordings": []
+    },
+    {
+      "sex": "female",
+      "type": "call",
+      "description": "Newman says the female may give a louder series of quacks that decrease in volume. Wikipedia calls the female sound a soft, mallard-like quack.",
+      "recordings": []
+    },
+    {
+      "sex": "any",
+      "type": "call",
+      "description": "Most sounds are soft and audible only at close range. The catalogue cut is not labelled male or female. Grade B, South Africa. The grade A catalogue file is ND, so this grade B Eastern Cape cut is the highest playable one. The filename says the bird was swimming.",
+      "recordings": [
+        {
+          "key": "xeno-canto/XC649290",
+          "source": "https://xeno-canto.org/649290",
+          "fileUrl": "https://xeno-canto.org/sounds/uploaded/SGLTZLDXYI/XC649290-Red-billed%20Teal%20swimming.mp3",
+          "author": "Lynette Rudman",
+          "license": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ]
+    }
+  ],
+  "images": [
+    {
+      "key": "anas-erythrorhyncha/mopani-side.jpg",
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "source": "https://www.inaturalist.org/observations/280800842",
+      "fileUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/504361702/large.jpeg",
+      "author": "Paul Hoekman",
+      "license": "CC BY 4.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by/4.0/",
+      "aiGenerated": false,
+      "hosted": false,
+      "alt": "Red-billed Teal standing side-on on a muddy shore in Mopani, Kruger",
+      "caption": "Red-billed Teal standing side-on on a muddy shore in Mopani, Kruger"
+    },
+    {
+      "key": "anas-erythrorhyncha/mopani-swim.jpg",
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "source": "https://www.inaturalist.org/observations/68957580",
+      "fileUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/111786492/large.jpg",
+      "author": "Roelof van der Breggen",
+      "license": "CC BY-NC 4.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+      "aiGenerated": false,
+      "hosted": false,
+      "alt": "Red-billed Teal swimming side-on among flooded grass in Mopani, Kruger",
+      "caption": "Red-billed Teal swimming side-on among flooded grass in Mopani, Kruger"
+    }
+  ],
+  "research": {
+    "confidence": "medium",
+    "needsReview": false,
+    "note": "Status is resident. SABAP1 says it is largely resident and disperses to seasonal waters after rain, including long movements, so all twelve months are listed rather than a seasonal absence. Juvenile colours, chick down and the underwing are not described. The recording is grade B because the grade A file is not a playable licence."
+  }
 }

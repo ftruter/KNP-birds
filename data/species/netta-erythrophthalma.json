@@ -7,8 +7,42 @@
     "af": "Bruineend"
   },
   "family": "anatidae",
-  "summary": "The details for this species have not been published yet.",
-  "sampleData": true,
+  "size": {
+    "lengthCm": {
+      "min": 51,
+      "max": 51
+    },
+    "note": "Newman's Birds gives 51 cm."
+  },
+  "habitat": "Deep, clear fresh water, in pairs or flocks.",
+  "summary": "A dark diving duck of deep fresh water. The male has a blue-grey bill, a uniform dark head and back, a crimson eye and a longer neck than Maccoa Duck. Newman describes him as entirely dark brown with a bronzy sheen. The female has a whitish crescent on the sides of the head and white on the throat and at the base of the bill. In flight a whitish speculum runs the full width of the wing. Newman says there is no distinctive call. The African birds are the race brunnea.",
+  "sampleData": false,
+  "similar": [
+    {
+      "slug": "anas-undulata",
+      "note": "Yellow-billed Duck has a yellow bill with a black patch and pale-edged feathers. A male Southern Pochard is more uniformly dark, with a blue-grey bill and a crimson eye."
+    }
+  ],
+  "sources": [
+    {
+      "title": "The Atlas of Southern African Birds, Vol. 1 (Southern Pochard)",
+      "url": "https://sabap2.birdmap.africa/docs/sabap1/113.pdf",
+      "publisher": "BirdLife South Africa",
+      "year": 1997
+    },
+    {
+      "title": "Southern Pochard",
+      "url": "https://newmansbirds.com/birds/southern-pochard/",
+      "publisher": "Newman's Birds",
+      "year": 2026
+    },
+    {
+      "title": "Southern pochard",
+      "url": "https://en.wikipedia.org/wiki/Southern_pochard",
+      "publisher": "Wikipedia",
+      "year": 2026
+    }
+  ],
   "population": {
     "estimate": {
       "low": 16,
@@ -35,8 +69,184 @@
     },
     "tierApplied": "D"
   },
-  "variants": [],
-  "viewNotes": [],
-  "calls": [],
-  "images": []
+  "variants": [
+    {
+      "age": "adult",
+      "sex": "male",
+      "season": "any",
+      "marks": {
+        "bill": {
+          "colour": [
+            "blue",
+            "grey"
+          ],
+          "shape": "blue-grey"
+        },
+        "eye": {
+          "iris": "red",
+          "ring": null
+        },
+        "legs": {
+          "colour": null
+        },
+        "head": {
+          "crown": "dark-brown",
+          "face": "dark-brown",
+          "throat": "dark-brown",
+          "pattern": "Uniform dark head. Newman says the male is entirely dark brown with a bronzy sheen, and the eye is crimson."
+        },
+        "upperparts": {
+          "back": "dark-brown",
+          "rump": null,
+          "pattern": "Uniform dark back."
+        },
+        "underparts": {
+          "breast": "dark-brown",
+          "belly": "dark-brown",
+          "pattern": null
+        },
+        "wings": {
+          "above": "white",
+          "below": null,
+          "pattern": "A whitish speculum extends the full width of the wing."
+        },
+        "tail": {
+          "colour": null,
+          "shape": null
+        }
+      }
+    },
+    {
+      "age": "adult",
+      "sex": "female",
+      "season": "any",
+      "marks": {
+        "bill": {
+          "colour": [
+            "blue",
+            "grey",
+            "white"
+          ],
+          "shape": "blue-grey, white at the base"
+        },
+        "eye": {
+          "iris": null,
+          "ring": null
+        },
+        "legs": {
+          "colour": null
+        },
+        "head": {
+          "crown": "dark-brown",
+          "face": [
+            "dark-brown",
+            "white"
+          ],
+          "throat": "white",
+          "pattern": "A whitish crescent on the sides of the head, and white on the throat and at the base of the bill. Newman says the female has dark upperparts only."
+        },
+        "upperparts": {
+          "back": "dark-brown",
+          "rump": null,
+          "pattern": null
+        },
+        "underparts": {
+          "breast": null,
+          "belly": null,
+          "pattern": null
+        },
+        "wings": {
+          "above": "white",
+          "below": null,
+          "pattern": "The whitish speculum is described for the species in flight."
+        },
+        "tail": {
+          "colour": null,
+          "shape": null
+        }
+      }
+    }
+  ],
+  "viewNotes": [
+    {
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Male: a uniform dark head, a crimson eye and a blue-grey bill. Female: a pale crescent on the side of the head."
+    },
+    {
+      "view": "perched-front",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "The female crescent and white throat show from the front. The male face is uniformly dark, with a red eye."
+    },
+    {
+      "view": "perched-back",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "The male back is uniformly dark. The female upperparts are the dark half of the pattern."
+    },
+    {
+      "view": "flight-above",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "The whitish speculum runs the full width of the wing."
+    },
+    {
+      "view": "flight-below",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "The underwing is not given a separate colour in these texts."
+    },
+    {
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "male",
+      "season": "any",
+      "note": "The male eye is crimson and the head and back are uniform."
+    },
+    {
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "female",
+      "season": "any",
+      "note": "The female has a whitish crescent on the side of the head and white at the bill base."
+    }
+  ],
+  "calls": [
+    {
+      "sex": "any",
+      "type": "call",
+      "description": "Newman says there is no distinctive call. No playable recording was found: the catalogue files for this species are ND.",
+      "recordings": []
+    }
+  ],
+  "images": [
+    {
+      "key": "netta-erythrophthalma/ehlanzeni-female.jpg",
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "female",
+      "season": "any",
+      "source": "https://www.inaturalist.org/observations/333854473",
+      "fileUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/606149055/large.jpg",
+      "author": "Heinrich Human",
+      "license": "CC BY-NC 4.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+      "aiGenerated": false,
+      "hosted": false,
+      "alt": "Female Southern Pochard swimming side-on in Ehlanzeni, Kruger, with a pale crescent on the head",
+      "caption": "Female Southern Pochard swimming side-on in Ehlanzeni, Kruger, with a pale crescent on the head"
+    }
+  ],
+  "research": {
+    "confidence": "medium",
+    "needsReview": false,
+    "note": "Months in Kruger are not listed. SABAP1 says it is thinly distributed and nomadic in the Transvaal and scarce in the northern Transvaal, with partial moult and other movements. A male photograph, chick down, juvenile plumage and a playable call were not found. Wikipedia did not add a usable plumage paragraph beyond the sexes already in Newman. Maccoa Duck is the comparison in Newman and is not on the Kruger list, so it is not linked."
+  }
 }

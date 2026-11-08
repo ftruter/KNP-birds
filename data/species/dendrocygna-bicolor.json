@@ -7,8 +7,42 @@
     "af": "Fluiteend"
   },
   "family": "anatidae",
-  "summary": "The details for this species have not been published yet.",
-  "sampleData": true,
+  "size": {
+    "lengthCm": {
+      "min": 46,
+      "max": 46
+    },
+    "note": "Newman's Birds gives 46 cm."
+  },
+  "habitat": "Larger inland waters and floodplains with plentiful aquatic vegetation. It often feeds and roosts with White-faced Whistling Duck.",
+  "summary": "A long-legged whistling duck with golden-brown plumage and cream flank feathers. Wikipedia describes a rich buff head, neck and breast, a darker back, a dark crown stripe down the nape, a long grey bill, grey legs, brown wings above, black wings below and a white crescent on the rump against a black tail. The female is slightly smaller and duller. The immature resembles the adult in Newman, while Wikipedia says the juvenile is paler below with duller flanks. It is less vocal than White-faced Whistling Duck and repeats tsoo-ee. The white rump in flight separates it from that species.",
+  "sampleData": false,
+  "similar": [
+    {
+      "slug": "dendrocygna-viduata",
+      "note": "White-faced Whistling Duck has a white face and a black head and neck. Fulvous Whistling Duck is golden-brown, with cream flank feathers and a white rump crescent in flight."
+    }
+  ],
+  "sources": [
+    {
+      "title": "The Atlas of Southern African Birds, Vol. 1 (Fulvous Duck)",
+      "url": "https://sabap2.birdmap.africa/docs/sabap1/100.pdf",
+      "publisher": "BirdLife South Africa",
+      "year": 1997
+    },
+    {
+      "title": "Fulvous Whistling Duck",
+      "url": "https://newmansbirds.com/birds/fulvous-whistling-duck/",
+      "publisher": "Newman's Birds",
+      "year": 2026
+    },
+    {
+      "title": "Fulvous whistling duck",
+      "url": "https://en.wikipedia.org/wiki/Fulvous_whistling_duck",
+      "publisher": "Wikipedia",
+      "year": 2026
+    }
+  ],
   "population": {
     "estimate": {
       "low": 32,
@@ -35,8 +69,171 @@
     },
     "tierApplied": "D"
   },
-  "variants": [],
-  "viewNotes": [],
-  "calls": [],
-  "images": []
+  "variants": [
+    {
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "marks": {
+        "bill": {
+          "colour": "grey",
+          "shape": "long and grey"
+        },
+        "eye": {
+          "iris": null,
+          "ring": null
+        },
+        "legs": {
+          "colour": "grey"
+        },
+        "head": {
+          "crown": "dark-brown",
+          "face": "buff",
+          "throat": "buff",
+          "pattern": "Wikipedia: a dark crown stripe continues down the nape. The female is slightly smaller and duller."
+        },
+        "upperparts": {
+          "back": "brown",
+          "rump": "white",
+          "pattern": "Newman: cream flank feathers on golden-brown plumage. Wikipedia: whitish flank stripes."
+        },
+        "underparts": {
+          "breast": "buff",
+          "belly": "buff",
+          "pattern": null
+        },
+        "wings": {
+          "above": "brown",
+          "below": "black",
+          "pattern": "Wikipedia: brown above and black below, with no white wing markings."
+        },
+        "tail": {
+          "colour": "black",
+          "shape": "contrasts with the white rump crescent"
+        }
+      }
+    },
+    {
+      "age": "juvenile",
+      "sex": "any",
+      "season": "any",
+      "marks": {
+        "bill": {
+          "colour": "grey",
+          "shape": null
+        },
+        "eye": {
+          "iris": null,
+          "ring": null
+        },
+        "legs": {
+          "colour": "grey"
+        },
+        "head": {
+          "crown": "dark-brown",
+          "face": "buff",
+          "throat": "buff",
+          "pattern": null
+        },
+        "upperparts": {
+          "back": "brown",
+          "rump": "white",
+          "pattern": null
+        },
+        "underparts": {
+          "breast": "cream",
+          "belly": "cream",
+          "pattern": "Wikipedia: paler underparts and duller flanks than the adult. Newman says the immature resembles the adult."
+        },
+        "wings": {
+          "above": "brown",
+          "below": "black",
+          "pattern": null
+        },
+        "tail": {
+          "colour": "black",
+          "shape": null
+        }
+      }
+    }
+  ],
+  "viewNotes": [
+    {
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Golden-brown, with cream feathers along the flank, a buff head and a long grey bill. The stance is erect."
+    },
+    {
+      "view": "perched-front",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "The buff face and dark crown stripe show from the front. There is no white face."
+    },
+    {
+      "view": "perched-back",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "The darker back and the cream flank feathers are the rear pattern on the water. The white rump shows in flight."
+    },
+    {
+      "view": "flight-above",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "The wings are brown above and have no white panel. The rump crescent is white."
+    },
+    {
+      "view": "flight-below",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Wikipedia says the wings are black from below."
+    }
+  ],
+  "calls": [
+    {
+      "sex": "any",
+      "type": "call",
+      "description": "Less vocal than White-faced Whistling Duck. It repeats two resonant notes, tsoo-ee. The texts used here do not separate the sexes. The catalogue cut is not labelled male or female. Grade A, South Africa. Western Cape.",
+      "recordings": [
+        {
+          "key": "xeno-canto/XC1173525",
+          "source": "https://xeno-canto.org/1173525",
+          "fileUrl": "https://xeno-canto.org/sounds/uploaded/YSGTQVRQZI/XC1173525-20260317_STRNDF_AKaramitsos_XA60_A019C210_2603179G_SLE_250HP_-3dB_Fulvous-Duck.mp3",
+          "author": "African Bioacoustics Community",
+          "license": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ]
+    }
+  ],
+  "images": [
+    {
+      "key": "dendrocygna-bicolor/sabie-side.jpg",
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "source": "https://www.inaturalist.org/observations/333030312",
+      "fileUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/604526843/large.jpg",
+      "author": "Mark Brown",
+      "license": "CC BY-NC 4.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+      "aiGenerated": false,
+      "hosted": false,
+      "alt": "Fulvous Whistling Ducks standing side-on along the Sabie River, Kruger",
+      "caption": "Fulvous Whistling Ducks standing side-on along the Sabie River, Kruger"
+    }
+  ],
+  "research": {
+    "confidence": "medium",
+    "needsReview": false,
+    "note": "Months in Kruger are not listed. SABAP1 says the movements are poorly understood, with a southward breeding movement in summer and a northward return after breeding, plus local nomadism. Newman calls it nomadic when not breeding. Chick down is not described. The call is grade A from the Western Cape."
+  }
 }

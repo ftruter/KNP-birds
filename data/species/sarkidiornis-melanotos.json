@@ -7,8 +7,53 @@
     "af": "Knobbeleend"
   },
   "family": "anatidae",
-  "summary": "The details for this species have not been published yet.",
-  "sampleData": true,
+  "status": "intra-african-migrant",
+  "monthsPresent": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    12
+  ],
+  "size": {
+    "lengthCm": {
+      "min": 64,
+      "max": 79
+    },
+    "note": "Newman's Birds gives 64–79 cm and says the male is much larger than the female."
+  },
+  "habitat": "Seasonally flooded pans and vleis in savanna and woodland, including mopane in Zimbabwe, plus marshes, floodplains, estuaries and small shallow dams. It perches in dead trees.",
+  "summary": "A large duck with glossy dark blue upperparts, white underparts and a black-speckled head and neck. The male is much larger and has a fleshy caruncle on the forehead and bill. The head and neck are washed yellow when he is breeding. The female is duller and has no caruncle. Wikipedia adds light grey flanks, sometimes whitish on the female, and a low croak when flushed. The first-year bird has dark brown upperparts, pale buff underparts and an eye-stripe. The sub-adult is closer to the female, with orange-buff underparts and heavier spotting on the head and neck. The wings are all dark, unlike the white forewings of a Spur-winged Goose.",
+  "sampleData": false,
+  "similar": [
+    {
+      "slug": "plectropterus-gambensis",
+      "note": "Spur-winged Goose is glossy black with white forewings. Knob-billed Duck has white underparts, a speckled head and all-dark wings."
+    }
+  ],
+  "sources": [
+    {
+      "title": "The Atlas of Southern African Birds, Vol. 1 (Knob-billed Duck)",
+      "url": "https://sabap2.birdmap.africa/docs/sabap1/115.pdf",
+      "publisher": "BirdLife South Africa",
+      "year": 1997
+    },
+    {
+      "title": "Knob-billed Duck",
+      "url": "https://newmansbirds.com/birds/knob-billed-duck/",
+      "publisher": "Newman's Birds",
+      "year": 2026
+    },
+    {
+      "title": "Knob-billed duck",
+      "url": "https://en.wikipedia.org/wiki/Knob-billed_duck",
+      "publisher": "Wikipedia",
+      "year": 2026
+    }
+  ],
   "population": {
     "estimate": {
       "low": 512,
@@ -35,8 +80,311 @@
     },
     "tierApplied": "D"
   },
-  "variants": [],
-  "viewNotes": [],
-  "calls": [],
-  "images": []
+  "variants": [
+    {
+      "age": "adult",
+      "sex": "male",
+      "season": "any",
+      "marks": {
+        "bill": {
+          "colour": "black",
+          "shape": "black, with a large fleshy caruncle on the forehead and bill"
+        },
+        "eye": {
+          "iris": null,
+          "ring": null
+        },
+        "legs": {
+          "colour": null
+        },
+        "head": {
+          "crown": [
+            "white",
+            "black"
+          ],
+          "face": [
+            "white",
+            "black"
+          ],
+          "throat": "white",
+          "pattern": "Black-speckled white head and neck. Newman says the head and neck are washed yellow when breeding. The yellow wash is breeding condition, not a separate winter plumage."
+        },
+        "upperparts": {
+          "back": "blue",
+          "rump": null,
+          "pattern": "Glossy dark blue to blue-black, with blue and green iridescence on the secondaries."
+        },
+        "underparts": {
+          "breast": "white",
+          "belly": "white",
+          "pattern": "Wikipedia: flanks light grey."
+        },
+        "wings": {
+          "above": "black",
+          "below": null,
+          "pattern": "SABAP1 describes all-black wings, which separates the species from Spur-winged Goose in flight."
+        },
+        "tail": {
+          "colour": "black",
+          "shape": null
+        }
+      }
+    },
+    {
+      "age": "adult",
+      "sex": "female",
+      "season": "any",
+      "marks": {
+        "bill": {
+          "colour": "black",
+          "shape": "no caruncle"
+        },
+        "eye": {
+          "iris": null,
+          "ring": null
+        },
+        "legs": {
+          "colour": null
+        },
+        "head": {
+          "crown": [
+            "white",
+            "black"
+          ],
+          "face": [
+            "white",
+            "black"
+          ],
+          "throat": "white",
+          "pattern": "Speckled, duller than the male, and without a caruncle."
+        },
+        "upperparts": {
+          "back": "blue",
+          "rump": null,
+          "pattern": null
+        },
+        "underparts": {
+          "breast": "white",
+          "belly": "white",
+          "pattern": "Wikipedia says the flanks are sometimes whitish on the female."
+        },
+        "wings": {
+          "above": "black",
+          "below": null,
+          "pattern": null
+        },
+        "tail": {
+          "colour": "black",
+          "shape": null
+        }
+      }
+    },
+    {
+      "age": "juvenile",
+      "sex": "any",
+      "season": "any",
+      "marks": {
+        "bill": {
+          "colour": "black",
+          "shape": null
+        },
+        "eye": {
+          "iris": null,
+          "ring": null
+        },
+        "legs": {
+          "colour": null
+        },
+        "head": {
+          "crown": "dark-brown",
+          "face": "buff",
+          "throat": "buff",
+          "pattern": "Newman: a distinct eye-stripe in the first year. Wikipedia: the young are dull buff below and on the face and neck, with a dark eyestripe."
+        },
+        "upperparts": {
+          "back": "dark-brown",
+          "rump": null,
+          "pattern": null
+        },
+        "underparts": {
+          "breast": "buff",
+          "belly": "buff",
+          "pattern": "Pale buff underparts."
+        },
+        "wings": {
+          "above": "dark-brown",
+          "below": null,
+          "pattern": null
+        },
+        "tail": {
+          "colour": null,
+          "shape": null
+        }
+      }
+    },
+    {
+      "age": "immature",
+      "sex": "any",
+      "season": "any",
+      "marks": {
+        "bill": {
+          "colour": "black",
+          "shape": null
+        },
+        "eye": {
+          "iris": null,
+          "ring": null
+        },
+        "legs": {
+          "colour": null
+        },
+        "head": {
+          "crown": [
+            "white",
+            "black"
+          ],
+          "face": [
+            "white",
+            "black"
+          ],
+          "throat": "buff",
+          "pattern": "Heavier spotting on the head and neck than the adult female. Newman’s sub-adult."
+        },
+        "upperparts": {
+          "back": "blue",
+          "rump": null,
+          "pattern": null
+        },
+        "underparts": {
+          "breast": [
+            "orange",
+            "buff"
+          ],
+          "belly": [
+            "orange",
+            "buff"
+          ],
+          "pattern": "Orange-buff underparts."
+        },
+        "wings": {
+          "above": "black",
+          "below": null,
+          "pattern": null
+        },
+        "tail": {
+          "colour": null,
+          "shape": null
+        }
+      }
+    }
+  ],
+  "viewNotes": [
+    {
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Male: a huge dark knob, a speckled white head and neck, white underparts and a dark glossy back. He often perches."
+    },
+    {
+      "view": "perched-front",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "The knob and the speckled face are the front marks of a male. The female has the speckled face without the caruncle."
+    },
+    {
+      "view": "perched-back",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "The upperparts are glossy blue-black. The wings look all dark at rest."
+    },
+    {
+      "view": "flight-above",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "The wings are all dark, without the white forewing of a Spur-winged Goose."
+    },
+    {
+      "view": "flight-below",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "The underwing is not given a colour separate from the all-dark wing."
+    },
+    {
+      "view": "perched-side",
+      "age": "juvenile",
+      "sex": "any",
+      "season": "any",
+      "note": "The first-year bird has dark brown upperparts, pale buff underparts and an eye-stripe."
+    },
+    {
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "female",
+      "season": "any",
+      "note": "The female is duller and has no caruncle. The flanks may be whitish."
+    }
+  ],
+  "calls": [
+    {
+      "sex": "any",
+      "type": "call",
+      "description": "Newman says the species is mostly silent. Wikipedia adds a low croak when flushed. The texts do not separate the sexes. The catalogue cut is not labelled male or female. Grade A, India. The filename uses the name comb duck. India. No higher playable grade from southern Africa was ahead of it.",
+      "recordings": [
+        {
+          "key": "xeno-canto/XC150138",
+          "source": "https://xeno-canto.org/150138",
+          "fileUrl": "https://xeno-canto.org/sounds/uploaded/ZXGYSIOPJJ/XC150138-comb%20duck%20x.mp3",
+          "author": "vir joshi",
+          "license": "CC BY-NC-SA 3.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/3.0/",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ]
+    }
+  ],
+  "images": [
+    {
+      "key": "sarkidiornis-melanotos/marloth-male.jpg",
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "male",
+      "season": "any",
+      "source": "https://www.inaturalist.org/observations/10039927",
+      "fileUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/13813083/large.jpeg",
+      "author": "copper",
+      "license": "CC BY-NC 4.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+      "aiGenerated": false,
+      "hosted": false,
+      "alt": "Male Knob-billed Duck perched side-on at Marloth Park, with a large bill knob",
+      "caption": "Male Knob-billed Duck perched side-on at Marloth Park, with a large bill knob"
+    },
+    {
+      "key": "sarkidiornis-melanotos/gomondwane-male.jpg",
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "male",
+      "season": "any",
+      "source": "https://www.inaturalist.org/observations/9738801",
+      "fileUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/13328657/large.jpeg",
+      "author": "copper",
+      "license": "CC BY-NC 4.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+      "aiGenerated": false,
+      "hosted": false,
+      "alt": "Male Knob-billed Duck swimming side-on on the Gomondwane loop, Kruger, with a yellow wash on the neck",
+      "caption": "Male Knob-billed Duck swimming side-on on the Gomondwane loop, Kruger, with a yellow wash on the neck"
+    }
+  ],
+  "research": {
+    "confidence": "medium",
+    "needsReview": false,
+    "note": "Status is an intra-African migrant. SABAP1 says it is widespread in the Transvaal lowveld mainly from December to July and that models show a large-scale winter departure, so those eight months are listed. The breeding yellow wash is described in the male note and was not stored as a summer-versus-winter plumage. Chick down and a female photograph were not found. The call is grade A from India."
+  }
 }

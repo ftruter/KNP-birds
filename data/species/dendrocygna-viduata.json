@@ -7,8 +7,57 @@
     "af": "Nonnetjie-eend"
   },
   "family": "anatidae",
-  "summary": "The details for this species have not been published yet.",
-  "sampleData": true,
+  "status": "intra-african-migrant",
+  "monthsPresent": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+  ],
+  "size": {
+    "lengthCm": {
+      "min": 48,
+      "max": 48
+    },
+    "note": "Newman's Birds gives 48 cm."
+  },
+  "habitat": "Large rivers, lakes, dams, estuaries, floodplains and sewage ponds, especially with surface and emergent vegetation. Breeding pairs also use small pans. Birds rest on shorelines and sandbanks.",
+  "summary": "An erect whistling duck with a white face, a black head and neck and darker plumage than Fulvous Whistling Duck. Wikipedia adds a chestnut neck, dark brown to black back and wings, and black underparts with fine white barring on the flanks. The bill is long and grey. The sexes are similar. The immature has a brown-smudged face, and Wikipedia says the juvenile head is less contrasted. The call is a loud shrill swee-swee-sweeoo, often from a flying flock.",
+  "sampleData": false,
+  "similar": [
+    {
+      "slug": "dendrocygna-bicolor",
+      "note": "Fulvous Whistling Duck lacks the white face and is golden-brown, with a white rump crescent in flight. The two often roost together."
+    }
+  ],
+  "sources": [
+    {
+      "title": "The Atlas of Southern African Birds, Vol. 1 (White-faced Duck)",
+      "url": "https://sabap2.birdmap.africa/docs/sabap1/099.pdf",
+      "publisher": "BirdLife South Africa",
+      "year": 1997
+    },
+    {
+      "title": "White-faced Whistling Duck",
+      "url": "https://newmansbirds.com/birds/white-faced-whistling-duck/",
+      "publisher": "Newman's Birds",
+      "year": 2026
+    },
+    {
+      "title": "White-faced whistling duck",
+      "url": "https://en.wikipedia.org/wiki/White-faced_whistling_duck",
+      "publisher": "Wikipedia",
+      "year": 2026
+    }
+  ],
   "population": {
     "estimate": {
       "low": 512,
@@ -35,8 +84,209 @@
     },
     "tierApplied": "D"
   },
-  "variants": [],
-  "viewNotes": [],
-  "calls": [],
-  "images": []
+  "variants": [
+    {
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "marks": {
+        "bill": {
+          "colour": "grey",
+          "shape": "long and grey"
+        },
+        "eye": {
+          "iris": null,
+          "ring": null
+        },
+        "legs": {
+          "colour": null
+        },
+        "head": {
+          "crown": "black",
+          "face": "white",
+          "throat": "chestnut",
+          "pattern": "Newman: black head and neck and an erect stance. Wikipedia: the neck is chestnut and the white face is variable. The sexes are similar."
+        },
+        "upperparts": {
+          "back": [
+            "dark-brown",
+            "black"
+          ],
+          "rump": null,
+          "pattern": null
+        },
+        "underparts": {
+          "breast": "chestnut",
+          "belly": "black",
+          "pattern": "Wikipedia: black underparts with fine white barring on the flanks."
+        },
+        "wings": {
+          "above": [
+            "dark-brown",
+            "black"
+          ],
+          "below": null,
+          "pattern": null
+        },
+        "tail": {
+          "colour": null,
+          "shape": null
+        }
+      }
+    },
+    {
+      "age": "juvenile",
+      "sex": "any",
+      "season": "any",
+      "marks": {
+        "bill": {
+          "colour": "grey",
+          "shape": null
+        },
+        "eye": {
+          "iris": null,
+          "ring": null
+        },
+        "legs": {
+          "colour": null
+        },
+        "head": {
+          "crown": "black",
+          "face": [
+            "white",
+            "brown"
+          ],
+          "throat": "chestnut",
+          "pattern": "Newman: the immature face is smudged brown. Wikipedia: the juvenile head is less contrasted."
+        },
+        "upperparts": {
+          "back": [
+            "dark-brown",
+            "black"
+          ],
+          "rump": null,
+          "pattern": null
+        },
+        "underparts": {
+          "breast": "chestnut",
+          "belly": "black",
+          "pattern": null
+        },
+        "wings": {
+          "above": [
+            "dark-brown",
+            "black"
+          ],
+          "below": null,
+          "pattern": null
+        },
+        "tail": {
+          "colour": null,
+          "shape": null
+        }
+      }
+    }
+  ],
+  "viewNotes": [
+    {
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "A white face, black crown and chestnut neck on an upright duck. The bill is long and grey."
+    },
+    {
+      "view": "perched-front",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "The white face surrounds the front of the head and stops at the black crown."
+    },
+    {
+      "view": "perched-back",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "The back and wings are dark brown to black. The white face is not a rear mark."
+    },
+    {
+      "view": "flight-above",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "The upperwing is dark, without the white rump crescent of Fulvous Whistling Duck."
+    },
+    {
+      "view": "flight-below",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "The underwing is not given a separate colour in these texts."
+    },
+    {
+      "view": "perched-front",
+      "age": "juvenile",
+      "sex": "any",
+      "season": "any",
+      "note": "The immature face is smudged brown, so the white is less clean."
+    }
+  ],
+  "calls": [
+    {
+      "sex": "any",
+      "type": "call",
+      "description": "A loud shrill swee-swee-sweeoo, often from many birds in a flying flock. The texts used here do not separate the sexes. The catalogue cut is not labelled male or female. Grade A, Venezuela. This is the highest playable grade. No playable grade A recording from South Africa was in the catalogue.",
+      "recordings": [
+        {
+          "key": "xeno-canto/XC225375",
+          "source": "https://xeno-canto.org/225375",
+          "fileUrl": "https://xeno-canto.org/sounds/uploaded/TNPOVFLZMY/XC225375-215-White-faced-Whistling-Duck.mp3",
+          "author": "Joe Klaiber",
+          "license": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ]
+    }
+  ],
+  "images": [
+    {
+      "key": "dendrocygna-viduata/ehlanzeni-side.jpg",
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "source": "https://www.inaturalist.org/observations/8680539",
+      "fileUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/11631282/large.jpg",
+      "author": "Pedro Beja",
+      "license": "CC BY-NC 4.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+      "aiGenerated": false,
+      "hosted": false,
+      "alt": "White-faced Whistling Ducks swimming side-on in Ehlanzeni, Kruger",
+      "caption": "White-faced Whistling Ducks swimming side-on in Ehlanzeni, Kruger"
+    },
+    {
+      "key": "dendrocygna-viduata/ehlanzeni-flock.jpg",
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "source": "https://www.inaturalist.org/observations/178706537",
+      "fileUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/310961821/large.jpeg",
+      "author": "Richard Gill",
+      "license": "CC BY-NC 4.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+      "aiGenerated": false,
+      "hosted": false,
+      "alt": "A flock of White-faced Whistling Ducks on a vegetated pan in Ehlanzeni, Kruger",
+      "caption": "A flock of White-faced Whistling Ducks on a vegetated pan in Ehlanzeni, Kruger"
+    }
+  ],
+  "research": {
+    "confidence": "medium",
+    "needsReview": false,
+    "note": "Status is an intra-African migrant and all twelve months are listed. SABAP1 describes a winter movement to the lowveld and also a model of northward departure in winter, so neither season was dropped. Chick down and the underwing are not described. The call is grade A from Venezuela."
+  }
 }

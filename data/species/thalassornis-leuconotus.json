@@ -7,8 +7,57 @@
     "af": "Witrugeend"
   },
   "family": "anatidae",
-  "summary": "The details for this species have not been published yet.",
-  "sampleData": true,
+  "status": "resident",
+  "monthsPresent": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+  ],
+  "size": {
+    "lengthCm": {
+      "min": 43,
+      "max": 43
+    },
+    "note": "Newman's Birds gives 43 cm."
+  },
+  "habitat": "Quiet, clear inland waters with emergent and floating vegetation, including natural pans, floodplains, river backwaters, lagoons and dams.",
+  "summary": "A low-swimming duck of vegetated pans. The white back shows only in flight. On the water the marks are a pale spot at the base of the black bill, a sharply tapering bill with a deep base, and a humped back sloping to a submerged tail. The head and neck are buff, densely spotted black and darkest on the crown. The rest of the upperparts are spotted and barred dark brown, rufous and white. SABAP1 calls the plumage mottled black and ochre. The immature resembles the adult. The call is a soft whistle, cur-wee. The sexes are not separated in these texts.",
+  "sampleData": false,
+  "similar": [
+    {
+      "slug": "nettapus-auritus",
+      "note": "African Pygmy Goose uses the same lily pans but has a white face, a short yellow bill and an orange body. White-backed Duck is mottled and has a pale spot at the base of a black bill."
+    }
+  ],
+  "sources": [
+    {
+      "title": "The Atlas of Southern African Birds, Vol. 1 (White-backed Duck)",
+      "url": "https://sabap2.birdmap.africa/docs/sabap1/101.pdf",
+      "publisher": "BirdLife South Africa",
+      "year": 1997
+    },
+    {
+      "title": "White-backed Duck",
+      "url": "https://newmansbirds.com/birds/white-backed-duck/",
+      "publisher": "Newman's Birds",
+      "year": 2026
+    },
+    {
+      "title": "White-backed duck",
+      "url": "https://en.wikipedia.org/wiki/White-backed_duck",
+      "publisher": "Wikipedia",
+      "year": 2026
+    }
+  ],
   "population": {
     "estimate": {
       "low": 4,
@@ -35,8 +84,158 @@
     },
     "tierApplied": "D"
   },
-  "variants": [],
-  "viewNotes": [],
-  "calls": [],
-  "images": []
+  "variants": [
+    {
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "marks": {
+        "bill": {
+          "colour": "black",
+          "shape": "black, sharply tapering, with a deep base and a pale spot at the base"
+        },
+        "eye": {
+          "iris": null,
+          "ring": null
+        },
+        "legs": {
+          "colour": null
+        },
+        "head": {
+          "crown": "black",
+          "face": [
+            "buff",
+            "black"
+          ],
+          "throat": "buff",
+          "pattern": "Head and neck buff, densely spotted black, darkest on the crown."
+        },
+        "upperparts": {
+          "back": [
+            "dark-brown",
+            "rufous",
+            "white"
+          ],
+          "rump": "white",
+          "pattern": "Spotted and barred dark brown, rufous and white. The white back shows in flight and when the wings are drooped. SABAP1 also says mottled black and ochre."
+        },
+        "underparts": {
+          "breast": "buff",
+          "belly": "buff",
+          "pattern": null
+        },
+        "wings": {
+          "above": null,
+          "below": null,
+          "pattern": null
+        },
+        "tail": {
+          "colour": null,
+          "shape": "submerged while swimming, the back humped and sloping down to it"
+        }
+      }
+    }
+  ],
+  "viewNotes": [
+    {
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "A low, humped duck with a pale spot at the base of a deep black bill and a buff head spotted black."
+    },
+    {
+      "view": "perched-front",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "The pale spot sits at the base of the bill and is visible from the front, on a densely spotted buff face."
+    },
+    {
+      "view": "perched-back",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "The white back is the rear mark in flight. On the water the tail is submerged and the back is humped."
+    },
+    {
+      "view": "flight-above",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "The white back shows from above in flight. SABAP1 also says it can show when the wings are drooped."
+    },
+    {
+      "view": "flight-below",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "The underwing is not given a separate colour in these texts."
+    },
+    {
+      "view": "perched-side",
+      "age": "juvenile",
+      "sex": "any",
+      "season": "any",
+      "note": "Newman says the immature resembles the adult."
+    }
+  ],
+  "calls": [
+    {
+      "sex": "any",
+      "type": "call",
+      "description": "A soft whistle, cur-wee. The texts used here do not separate the sexes. The catalogue cut is not labelled male or female. Grade A, South Africa. Western Cape.",
+      "recordings": [
+        {
+          "key": "xeno-canto/XC809424",
+          "source": "https://xeno-canto.org/809424",
+          "fileUrl": "https://xeno-canto.org/sounds/uploaded/RKQPZQAYOU/XC809424-WBD2.mp3",
+          "author": "Luke Goddard",
+          "license": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ]
+    }
+  ],
+  "images": [
+    {
+      "key": "thalassornis-leuconotus/ehlanzeni-side.jpg",
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "source": "https://www.inaturalist.org/observations/196221800",
+      "fileUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/345404095/large.jpg",
+      "author": "Duncan McKenzie",
+      "license": "CC BY-NC 4.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+      "aiGenerated": false,
+      "hosted": false,
+      "alt": "White-backed Duck swimming side-on in Ehlanzeni, Kruger, with a pale spot at the bill base",
+      "caption": "White-backed Duck swimming side-on in Ehlanzeni, Kruger, with a pale spot at the bill base"
+    },
+    {
+      "key": "thalassornis-leuconotus/kruger-front.jpg",
+      "view": "perched-front",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "source": "https://www.inaturalist.org/observations/367422455",
+      "fileUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/670994285/large.jpg",
+      "author": "Jeanette Zitzer",
+      "license": "CC BY-NC-SA 4.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+      "aiGenerated": false,
+      "hosted": false,
+      "alt": "White-backed Duck swimming front-on among water plants in Kruger, showing the pale spot beside the bill",
+      "caption": "White-backed Duck swimming front-on among water plants in Kruger, showing the pale spot beside the bill"
+    }
+  ],
+  "research": {
+    "confidence": "medium",
+    "needsReview": false,
+    "note": "Status is resident and all twelve months are listed. SABAP1 says it is nomadic with no clear movement pattern, and the models are flat. The immature is said to resemble the adult, so no separate juvenile colours were stored. Chick down and the underwing are not described. The call is grade A from the Western Cape."
+  }
 }

@@ -7,8 +7,57 @@
     "af": "Gevlekte Eend"
   },
   "family": "anatidae",
-  "summary": "The details for this species have not been published yet.",
-  "sampleData": true,
+  "status": "resident",
+  "monthsPresent": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+  ],
+  "size": {
+    "lengthCm": {
+      "min": 35,
+      "max": 35
+    },
+    "note": "Newman's Birds gives 35 cm."
+  },
+  "habitat": "Quiet fresh water with emergent vegetation, including shallow marshes, pans, dams and sewage ponds. Newman says it spends much of the day resting out of the water.",
+  "summary": "A very small brown-capped teal with a grey-blue bill. It differs from Red-billed Teal in that small size, the blue-grey rather than pinkish-red bill, and the lack of speckling on the rear body. When it swims, the flank feathers usually overlap the wing in a zigzag line. Wikipedia’s account of adult males adds a paler face, throat and breast, a blackish ear patch, and an iridescent green speculum. Newman does not separate the sexes and says it is normally silent. The scientific name was Anas hottentota in SABAP1.",
+  "sampleData": false,
+  "similar": [
+    {
+      "slug": "anas-erythrorhyncha",
+      "note": "Red-billed Teal is larger, with a pinkish-red bill and spotting over the whole body, including the rear. Blue-billed Teal has a grey-blue bill and an unspeckled rear body."
+    }
+  ],
+  "sources": [
+    {
+      "title": "The Atlas of Southern African Birds, Vol. 1 (Hottentot Teal)",
+      "url": "https://sabap2.birdmap.africa/docs/sabap1/107.pdf",
+      "publisher": "BirdLife South Africa",
+      "year": 1997
+    },
+    {
+      "title": "Blue-billed Teal",
+      "url": "https://newmansbirds.com/birds/blue-billed-teal/",
+      "publisher": "Newman's Birds",
+      "year": 2026
+    },
+    {
+      "title": "Hottentot teal",
+      "url": "https://en.wikipedia.org/wiki/Hottentot_teal",
+      "publisher": "Wikipedia",
+      "year": 2026
+    }
+  ],
   "population": {
     "estimate": {
       "low": 8,
@@ -35,8 +84,150 @@
     },
     "tierApplied": "D"
   },
-  "variants": [],
-  "viewNotes": [],
-  "calls": [],
-  "images": []
+  "variants": [
+    {
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "marks": {
+        "bill": {
+          "colour": [
+            "blue",
+            "grey"
+          ],
+          "shape": "grey-blue"
+        },
+        "eye": {
+          "iris": null,
+          "ring": null
+        },
+        "legs": {
+          "colour": null
+        },
+        "head": {
+          "crown": "brown",
+          "face": "buff",
+          "throat": "buff",
+          "pattern": "Newman: a small brown-capped duck. Wikipedia’s adult male has a dark brown crown, a paler face, throat and breast, and a blackish thumb-shaped ear patch. A separate female plumage was not in these texts."
+        },
+        "upperparts": {
+          "back": "brown",
+          "rump": null,
+          "pattern": "No speckling on the rear body. Swimming birds show a zigzag line where the flank feathers overlap the wing."
+        },
+        "underparts": {
+          "breast": "buff",
+          "belly": "brown",
+          "pattern": null
+        },
+        "wings": {
+          "above": [
+            "black",
+            "green"
+          ],
+          "below": null,
+          "pattern": "Wikipedia, for adult males: the upperwing is blackish with a greenish gloss on the coverts and an iridescent green speculum."
+        },
+        "tail": {
+          "colour": null,
+          "shape": null
+        }
+      }
+    }
+  ],
+  "viewNotes": [
+    {
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "A very small teal with a brown cap, a paler face and a grey-blue bill. The rear body is not speckled."
+    },
+    {
+      "view": "perched-front",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "The brown cap and blue-grey bill show from the front. The bill is not pink."
+    },
+    {
+      "view": "perched-back",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "The rear body lacks the spotting of a Red-billed Teal. The flank feathers overlap the wing in a zigzag when the bird is swimming."
+    },
+    {
+      "view": "flight-above",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Wikipedia describes the adult male upperwing as blackish with a green speculum."
+    },
+    {
+      "view": "flight-below",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "The underwing is not given a separate colour in these texts."
+    }
+  ],
+  "calls": [
+    {
+      "sex": "any",
+      "type": "call",
+      "description": "Newman says it is normally silent. The catalogue cut is not labelled male or female. Grade A, Ethiopia. Lake Boyo, Ethiopia.",
+      "recordings": [
+        {
+          "key": "xeno-canto/XC210051",
+          "source": "https://xeno-canto.org/210051",
+          "fileUrl": "https://xeno-canto.org/sounds/uploaded/CDTGHVBGZP/XC210051-Hottentot%20Teal2015-1-9-1.mp3",
+          "author": "Andrew Spencer",
+          "license": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ]
+    }
+  ],
+  "images": [
+    {
+      "key": "spatula-hottentota/mopani-reeds.jpg",
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "source": "https://www.inaturalist.org/observations/233040698",
+      "fileUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/414106677/large.jpg",
+      "author": "Duncan McKenzie",
+      "license": "CC BY-NC 4.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+      "aiGenerated": false,
+      "hosted": false,
+      "alt": "Blue-billed Teal swimming side-on among reeds in Mopani, Kruger",
+      "caption": "Blue-billed Teal swimming side-on among reeds in Mopani, Kruger"
+    },
+    {
+      "key": "spatula-hottentota/phalaborwa-side.jpg",
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "source": "https://www.inaturalist.org/observations/198897084",
+      "fileUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/350654647/large.jpeg",
+      "author": "Gareth Preiss",
+      "license": "CC BY-NC 4.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+      "aiGenerated": false,
+      "hosted": false,
+      "alt": "Two Blue-billed Teals standing side-on on floating vegetation near Phalaborwa, Kruger",
+      "caption": "Two Blue-billed Teals standing side-on on floating vegetation near Phalaborwa, Kruger"
+    }
+  ],
+  "research": {
+    "confidence": "medium",
+    "needsReview": false,
+    "note": "Status is resident and all twelve months are listed. SABAP1 says it is usually sedentary, with local movements, and that the dry-season visitor pattern is for the Zimbabwean plateau. The female plumage and chick down are not described. The green speculum is cited from Wikipedia’s adult-male sentence. The call is grade A from Ethiopia."
+  }
 }

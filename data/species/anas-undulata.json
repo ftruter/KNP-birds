@@ -7,8 +7,42 @@
     "af": "Geelbekeend"
   },
   "family": "anatidae",
-  "summary": "The details for this species have not been published yet.",
-  "sampleData": true,
+  "size": {
+    "lengthCm": {
+      "min": 51,
+      "max": 58
+    },
+    "note": "Newman's Birds gives 53–58 cm. Wikipedia gives 51–58 cm."
+  },
+  "habitat": "Open waters, including estuaries, lakes, dams, flooded land, pans and slow rivers with pools. It avoids fast water and gathers on larger waters in the dry season.",
+  "summary": "A dark brown duck whose bright yellow bill has a black central patch. The feathers are brown with white edges, broadest on the flanks and underparts, so the body looks ashy, and the head and neck are dusky. In flight there is an iridescent emerald speculum, and Wikipedia says the wings are whitish below. The northeastern race is darker, with a brighter bill and a blue speculum. The immature has buff-edged feathers and more heavily spotted underparts. The female quacks on take-off and Wikipedia gives the male a teal-like whistle.",
+  "sampleData": false,
+  "similar": [
+    {
+      "slug": "anas-sparsa",
+      "note": "African Black Duck is darker, with a dark bill and bold white spots on the back and wings. Yellow-billed Duck has a yellow bill with a black patch and pale feather edges."
+    }
+  ],
+  "sources": [
+    {
+      "title": "The Atlas of Southern African Birds, Vol. 1 (Yellow-billed Duck)",
+      "url": "https://sabap2.birdmap.africa/docs/sabap1/104.pdf",
+      "publisher": "BirdLife South Africa",
+      "year": 1997
+    },
+    {
+      "title": "Yellow-billed Duck",
+      "url": "https://newmansbirds.com/birds/yellow-billed-duck/",
+      "publisher": "Newman's Birds",
+      "year": 2026
+    },
+    {
+      "title": "Yellow-billed duck",
+      "url": "https://en.wikipedia.org/wiki/Yellow-billed_duck",
+      "publisher": "Wikipedia",
+      "year": 2026
+    }
+  ],
   "population": {
     "estimate": {
       "low": 4,
@@ -35,8 +69,199 @@
     },
     "tierApplied": "D"
   },
-  "variants": [],
-  "viewNotes": [],
-  "calls": [],
-  "images": []
+  "variants": [
+    {
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "marks": {
+        "bill": {
+          "colour": [
+            "yellow",
+            "black"
+          ],
+          "shape": "bright yellow with a black central patch"
+        },
+        "eye": {
+          "iris": null,
+          "ring": null
+        },
+        "legs": {
+          "colour": null
+        },
+        "head": {
+          "crown": "dark-brown",
+          "face": "dark-brown",
+          "throat": "dark-brown",
+          "pattern": "Head and neck are dusky. Wikipedia says the northeastern race is darker and has a brighter bill."
+        },
+        "upperparts": {
+          "back": "brown",
+          "rump": null,
+          "pattern": "Brown feathers edged white, giving an ashy appearance."
+        },
+        "underparts": {
+          "breast": "brown",
+          "belly": "brown",
+          "pattern": "White edges are broadest on the flanks and underparts."
+        },
+        "wings": {
+          "above": [
+            "green",
+            "blue"
+          ],
+          "below": "white",
+          "pattern": "Newman describes an emerald speculum. Wikipedia says the northeastern race has a blue speculum and that the wings are whitish below."
+        },
+        "tail": {
+          "colour": null,
+          "shape": null
+        }
+      }
+    },
+    {
+      "age": "juvenile",
+      "sex": "any",
+      "season": "any",
+      "marks": {
+        "bill": {
+          "colour": [
+            "yellow",
+            "black"
+          ],
+          "shape": null
+        },
+        "eye": {
+          "iris": null,
+          "ring": null
+        },
+        "legs": {
+          "colour": null
+        },
+        "head": {
+          "crown": "dark-brown",
+          "face": "dark-brown",
+          "throat": "dark-brown",
+          "pattern": null
+        },
+        "upperparts": {
+          "back": "buff",
+          "rump": null,
+          "pattern": "Newman: buff-edged feathers."
+        },
+        "underparts": {
+          "breast": "buff",
+          "belly": "buff",
+          "pattern": "Underparts are more heavily spotted than on the adult."
+        },
+        "wings": {
+          "above": "green",
+          "below": "white",
+          "pattern": null
+        },
+        "tail": {
+          "colour": null,
+          "shape": null
+        }
+      }
+    }
+  ],
+  "viewNotes": [
+    {
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "A dusky head and a bright yellow bill with a black central patch, on a brown body edged pale."
+    },
+    {
+      "view": "perched-front",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "The yellow bill and its black patch are the front mark. The head is dusky rather than capped."
+    },
+    {
+      "view": "perched-back",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Pale edges on the brown back give the ashy look from behind."
+    },
+    {
+      "view": "flight-above",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "The speculum is emerald in Newman and blue in Wikipedia’s northeastern race."
+    },
+    {
+      "view": "flight-below",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Wikipedia says the wings are whitish from below."
+    },
+    {
+      "view": "perched-side",
+      "age": "juvenile",
+      "sex": "any",
+      "season": "any",
+      "note": "The immature has buff-edged feathers and more heavily spotted underparts."
+    }
+  ],
+  "calls": [
+    {
+      "sex": "male",
+      "type": "call",
+      "description": "Wikipedia says the male has a teal-like whistle. Newman says there is no distinctive call apart from the female take-off quacks.",
+      "recordings": []
+    },
+    {
+      "sex": "female",
+      "type": "call",
+      "description": "Loud, evenly spaced quacks on take-off.",
+      "recordings": []
+    },
+    {
+      "sex": "any",
+      "type": "call",
+      "description": "The sexed descriptions are from Newman and Wikipedia. The catalogue cut is not labelled male or female. Grade A, South Africa. The type is a flight call, from the Western Cape.",
+      "recordings": [
+        {
+          "key": "xeno-canto/XC1051974",
+          "source": "https://xeno-canto.org/1051974",
+          "fileUrl": "https://xeno-canto.org/sounds/uploaded/YSGTQVRQZI/XC1051974-20251002_DV_AKaramitsos_MVI_0064_SLE_250HzHP_-3dBNORM.mp3",
+          "author": "African Bioacoustics Community",
+          "license": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ]
+    }
+  ],
+  "images": [
+    {
+      "key": "anas-undulata/malelane-side.jpg",
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "source": "https://www.inaturalist.org/observations/306966854",
+      "fileUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/553623019/large.jpg",
+      "author": "Tivan Kotze",
+      "license": "CC BY-NC 4.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+      "aiGenerated": false,
+      "hosted": false,
+      "alt": "Yellow-billed Duck standing side-on on concrete near Malelane, Kruger",
+      "caption": "Yellow-billed Duck standing side-on on concrete near Malelane, Kruger"
+    }
+  ],
+  "research": {
+    "confidence": "medium",
+    "needsReview": false,
+    "note": "Months in Kruger are not listed. SABAP1 says it is rare in southern Mozambique and Zimbabwe and has no regular migration where it is common. Newman calls it a very common resident of open water. Those accounts do not give a Kruger calendar. Chick down is not described. The flight call is grade A from the Western Cape and is not sexed."
+  }
 }
