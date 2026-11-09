@@ -6,8 +6,8 @@
     "en": "Grebes",
     "af": "Dobbertjies"
   },
-  "summary": "Field notes for this family are still to be written.",
-  "sampleData": true,
+  "summary": "Grebes. Little Grebe is the only species in this list. It is a small, almost tailless waterbird, dark brown above, with a chestnut face and neck and a creamy bill spot when breeding. At other times the underparts are dull and the eyes are dark. Chicks are striped and ride on the parents’ backs.",
+  "sampleData": false,
   "species": [
     {
       "slug": "tachybaptus-ruficollis",
