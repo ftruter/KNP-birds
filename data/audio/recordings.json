@@ -3576,6 +3576,36 @@
           }
         }
       ]
+    },
+    "ardeotis-kori": {
+      "calls": [
+        {
+          "index": 0,
+          "quality": {
+            "xeno-canto/XC209987": "A"
+          }
+        }
+      ]
+    },
+    "lissotis-melanogaster": {
+      "calls": [
+        {
+          "index": 0,
+          "quality": {
+            "xeno-canto/XC1052028": "A"
+          }
+        }
+      ]
+    },
+    "lophotis-ruficrista": {
+      "calls": [
+        {
+          "index": 0,
+          "quality": {
+            "xeno-canto/XC209351": "A"
+          }
+        }
+      ]
     }
   }
 }

@@ -7,8 +7,30 @@
     "af": "Gompou"
   },
   "family": "otididae",
-  "summary": "The details for this species have not been published yet.",
-  "sampleData": true,
+  "size": {
+    "lengthCm": {
+      "min": 134,
+      "max": 134
+    },
+    "note": "Newman's Birds gives 134 cm. The male is about 20 per cent larger than the female."
+  },
+  "habitat": "Singly, in pairs or in groups in open woodland, bushveld and semi-arid grassland.",
+  "summary": "A common resident. Identified by its huge size and the crest at the rear of the head. The back and wings are light brown, the wing coverts have black-and-white markings, the neck is grey, the underparts are white and the legs are pale yellow. Sexes are alike. In courtship the male inflates the throat-pouch, splays the frontal neck feathers to show their white bases, draws the crested head back, droops the wings and deflects the tail up and forwards with the white undertail coverts splayed. The courtship call is a deep wum, wum, wum, wum, wummmmm. It walks slowly and flies reluctantly. The Kemp code RB was left unchanged.",
+  "sampleData": false,
+  "sources": [
+    {
+      "title": "Kori Bustard",
+      "url": "https://newmansbirds.com/birds/kori-bustard/",
+      "publisher": "Newman's Birds",
+      "year": 2026
+    },
+    {
+      "title": "Kemp A.C., Herholdt J.J., Whyte I. & Harrison J. (2001). Birds of the two largest national parks in South Africa: a method to generate estimates of population size for all species and assess their conservation ecology. S. Afr. J. Sci. 97: 393–403.",
+      "url": "https://journals.co.za/doi/pdf/10.10520/EJC97367",
+      "publisher": "South African Journal of Science",
+      "year": 2001
+    }
+  ],
   "population": {
     "estimate": {
       "low": 128,
@@ -35,8 +57,218 @@
     },
     "tierApplied": "D"
   },
-  "variants": [],
-  "viewNotes": [],
-  "calls": [],
-  "images": []
+  "variants": [
+    {
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "marks": {
+        "bill": {
+          "colour": null,
+          "shape": null
+        },
+        "eye": {
+          "iris": null,
+          "ring": null
+        },
+        "legs": {
+          "colour": "yellow"
+        },
+        "head": {
+          "crown": null,
+          "face": null,
+          "throat": null,
+          "pattern": "Crest at the rear of the head. Neck grey. Pale yellow legs."
+        },
+        "upperparts": {
+          "back": null,
+          "rump": null,
+          "pattern": "Back light brown."
+        },
+        "underparts": {
+          "breast": "white",
+          "belly": "white"
+        },
+        "wings": {
+          "above": null,
+          "below": null,
+          "pattern": "Wings light brown. Coverts with black-and-white markings."
+        },
+        "tail": {
+          "colour": null,
+          "shape": null
+        }
+      }
+    },
+    {
+      "age": "adult",
+      "sex": "male",
+      "season": "breeding",
+      "marks": {
+        "bill": {
+          "colour": null,
+          "shape": null
+        },
+        "eye": {
+          "iris": null,
+          "ring": null
+        },
+        "legs": {
+          "colour": null
+        },
+        "head": {
+          "crown": null,
+          "face": null,
+          "throat": null,
+          "pattern": "Crest raised and the head drawn back. The throat-pouch is inflated and the frontal neck feathers are splayed, showing white bases."
+        },
+        "upperparts": {
+          "back": null,
+          "rump": null
+        },
+        "underparts": {
+          "breast": null,
+          "belly": null
+        },
+        "wings": {
+          "above": null,
+          "below": null,
+          "pattern": "Wings drooped."
+        },
+        "tail": {
+          "colour": null,
+          "shape": "Tail deflected upwards and forwards to the neck, with the white undertail coverts splayed."
+        }
+      }
+    }
+  ],
+  "viewNotes": [
+    {
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Huge, with a crest at the rear of the head, a grey neck and white underparts."
+    },
+    {
+      "view": "perched-front",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Grey neck and the rear crest."
+    },
+    {
+      "view": "perched-back",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Light brown back and wings, with black-and-white markings on the coverts."
+    },
+    {
+      "view": "flight-above",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Light brown wings with black-and-white covert markings."
+    },
+    {
+      "view": "flight-below",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "White underparts."
+    },
+    {
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "male",
+      "season": "breeding",
+      "note": "Throat-pouch inflated, neck feathers splayed to show white bases, crest raised and head drawn back."
+    },
+    {
+      "view": "perched-front",
+      "age": "adult",
+      "sex": "male",
+      "season": "breeding",
+      "note": "White bases of the frontal neck feathers."
+    },
+    {
+      "view": "perched-back",
+      "age": "adult",
+      "sex": "male",
+      "season": "breeding",
+      "note": "Wings drooped and the tail deflected up towards the neck."
+    },
+    {
+      "view": "flight-above",
+      "age": "adult",
+      "sex": "male",
+      "season": "breeding",
+      "note": "The display flight was not given a separate pattern."
+    },
+    {
+      "view": "flight-below",
+      "age": "adult",
+      "sex": "male",
+      "season": "breeding",
+      "note": "White undertail coverts splayed. The standing underparts are white."
+    }
+  ],
+  "calls": [
+    {
+      "sex": "male",
+      "type": "call",
+      "description": "In courtship a deep wum, wum, wum, wum, wummmmm. Grade A call from Awash National Park, Ethiopia. It is the only openly licensed grade A. The filename is XC209987-Kori Bustard2014-12-23-1.mp3.",
+      "recordings": [
+        {
+          "key": "xeno-canto/XC209987",
+          "source": "https://xeno-canto.org/209987",
+          "fileUrl": "https://xeno-canto.org/sounds/uploaded/CDTGHVBGZP/XC209987-Kori%20Bustard2014-12-23-1.mp3",
+          "author": "Andrew Spencer",
+          "license": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ]
+    }
+  ],
+  "images": [
+    {
+      "key": "ardeotis-kori/side.jpg",
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "source": "https://www.inaturalist.org/observations/71426215",
+      "fileUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/116289494/large.jpg",
+      "author": "Dave Brown",
+      "license": "CC0 1.0",
+      "licenceUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "aiGenerated": false,
+      "hosted": false,
+      "alt": "Kori Bustard, crested head, grey neck and light brown back",
+      "caption": "Kori Bustard in Kruger, crest at the rear of the head, grey neck and a light brown back."
+    }
+  ],
+  "research": {
+    "confidence": "medium",
+    "needsReview": false,
+    "note": "Newman calls it a common resident, so status is resident and all twelve months are listed. Light brown is not a colour token. Pale yellow legs are stored as yellow. Population figures and the Kemp code RB were left unchanged."
+  },
+  "status": "resident",
+  "monthsPresent": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+  ]
 }

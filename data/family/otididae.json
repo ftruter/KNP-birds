@@ -6,8 +6,8 @@
     "en": "Bustards",
     "af": "Korhane"
   },
-  "summary": "Field notes for this family are still to be written.",
-  "sampleData": true,
+  "summary": "Bustards and korhaans. Kori Bustard is the huge grey-necked resident. Black-bellied Bustard is the long-legged grassland bird, black below in the male and white below in the female. Red-crested Korhaan has a rufous crest that is usually hidden, and brown upper parts with creamy arrow shapes.",
+  "sampleData": false,
   "species": [
     {
       "slug": "ardeotis-kori",

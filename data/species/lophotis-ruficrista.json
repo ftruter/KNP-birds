@@ -7,8 +7,36 @@
     "af": "Boskorhaan"
   },
   "family": "otididae",
-  "summary": "The details for this species have not been published yet.",
-  "sampleData": true,
+  "size": {
+    "lengthCm": {
+      "min": 53,
+      "max": 53
+    },
+    "note": "Newman's Birds gives 53 cm on the Red-crested Korhaan page."
+  },
+  "habitat": "The colour key says woodland.",
+  "summary": "The colour key says the rufous crest is not normally visible and is erected from the nape in courtship, and that the upper parts are brown with creamy arrow shapes. Newman’s page uses the name Lophotus ruficrista. This file keeps Lophotis ruficrista. The description paragraph on that page is the Temminck’s Courser account, also printed on the Temminck’s Courser page, so it was not used. Status and months are unset. The Kemp paper name Redcrested Korhaan and the code RB were left unchanged.",
+  "sampleData": false,
+  "sources": [
+    {
+      "title": "Red-crested Korhaan",
+      "url": "https://newmansbirds.com/birds/red-crested-korhaan/",
+      "publisher": "Newman's Birds",
+      "year": 2026
+    },
+    {
+      "title": "Temminck’s Courser",
+      "url": "https://newmansbirds.com/birds/temmincks-courser/",
+      "publisher": "Newman's Birds",
+      "year": 2026
+    },
+    {
+      "title": "Kemp A.C., Herholdt J.J., Whyte I. & Harrison J. (2001). Birds of the two largest national parks in South Africa: a method to generate estimates of population size for all species and assess their conservation ecology. S. Afr. J. Sci. 97: 393–403.",
+      "url": "https://journals.co.za/doi/pdf/10.10520/EJC97367",
+      "publisher": "South African Journal of Science",
+      "year": 2001
+    }
+  ],
   "population": {
     "estimate": {
       "low": 8192,
@@ -35,8 +63,126 @@
     },
     "tierApplied": "D"
   },
-  "variants": [],
-  "viewNotes": [],
-  "calls": [],
-  "images": []
+  "variants": [
+    {
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "marks": {
+        "bill": {
+          "colour": null,
+          "shape": null
+        },
+        "eye": {
+          "iris": null,
+          "ring": null
+        },
+        "legs": {
+          "colour": null
+        },
+        "head": {
+          "crown": null,
+          "face": null,
+          "throat": null,
+          "pattern": "Rufous crest, not normally visible, erected from the nape in courtship."
+        },
+        "upperparts": {
+          "back": "brown",
+          "rump": null,
+          "pattern": "Brown above, with creamy arrow shapes."
+        },
+        "underparts": {
+          "breast": null,
+          "belly": null
+        },
+        "wings": {
+          "above": null,
+          "below": null
+        },
+        "tail": {
+          "colour": null,
+          "shape": null
+        }
+      }
+    }
+  ],
+  "viewNotes": [
+    {
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "The rufous crest is not normally visible. It is erected from the nape in courtship."
+    },
+    {
+      "view": "perched-front",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Crest at the nape when erected. The face was not given a colour."
+    },
+    {
+      "view": "perched-back",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Brown upper parts with creamy arrow shapes."
+    },
+    {
+      "view": "flight-above",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "A flight pattern was not given in the colour key."
+    },
+    {
+      "view": "flight-below",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "The underparts were not given in the colour key."
+    }
+  ],
+  "calls": [
+    {
+      "sex": "any",
+      "type": "call",
+      "description": "The colour key does not describe the voice. The description paragraph on the Red-crested Korhaan page is the Temminck’s Courser account and was not used. Grade A call from Kruger National Park, Ehlanzeni. The filename is XC209351-2015-01-04_05.58 RC Korhaan.mp3.",
+      "recordings": [
+        {
+          "key": "xeno-canto/XC209351",
+          "source": "https://xeno-canto.org/209351",
+          "fileUrl": "https://xeno-canto.org/sounds/uploaded/LWQXRZHFCU/XC209351-2015-01-04_05.58%20RC%20Korhaan.mp3",
+          "author": "Niall Perrins",
+          "license": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ]
+    }
+  ],
+  "images": [
+    {
+      "key": "lophotis-ruficrista/side.jpg",
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "source": "https://www.inaturalist.org/observations/99600075",
+      "fileUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/166069341/large.jpeg",
+      "author": "Mark Bolnik",
+      "license": "CC BY 4.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by/4.0/",
+      "aiGenerated": false,
+      "hosted": false,
+      "alt": "Red-crested Korhaan with the rufous crest erected and brown upper parts",
+      "caption": "Red-crested Korhaan near Satara, rufous crest erected and brown upper parts with pale arrow shapes."
+    }
+  ],
+  "research": {
+    "confidence": "medium",
+    "needsReview": true,
+    "note": "The colour key matches Red-crested Korhaan. The description paragraph matches Temminck’s Courser and was not used, so status and monthsPresent are unset and the plumage is only the key. That is why this needs review. Population figures, the Kemp paper name Redcrested Korhaan and the code RB were left unchanged."
+  }
 }

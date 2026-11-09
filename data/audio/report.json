@@ -1,9 +1,9 @@
 {
   "source": "xeno-canto explore catalogue, API v3 recording fields",
   "counts": {
-    "slots": 351,
+    "slots": 354,
     "swapped": 17,
-    "added": 249,
+    "added": 252,
     "kept": 57,
     "none": 28,
     "cleaned": 0
@@ -5303,6 +5303,48 @@
       "quality": "A",
       "country": "Spain",
       "locality": "Parc eòlic de Rubió",
+      "cleaned": false,
+      "license": "CC BY-NC-SA 4.0"
+    },
+    {
+      "slug": "ardeotis-kori",
+      "scientificName": "Ardeotis kori",
+      "index": 0,
+      "type": "call",
+      "action": "added",
+      "from": [],
+      "to": "209987",
+      "quality": "A",
+      "country": "Ethiopia",
+      "locality": "Awash National Park",
+      "cleaned": false,
+      "license": "CC BY-NC-SA 4.0"
+    },
+    {
+      "slug": "lissotis-melanogaster",
+      "scientificName": "Lissotis melanogaster",
+      "index": 0,
+      "type": "call",
+      "action": "added",
+      "from": [],
+      "to": "1052028",
+      "quality": "A",
+      "country": "Uganda",
+      "locality": "Murchison Falls National Park, Acholl District",
+      "cleaned": false,
+      "license": "CC BY-NC-SA 4.0"
+    },
+    {
+      "slug": "lophotis-ruficrista",
+      "scientificName": "Lophotis ruficrista",
+      "index": 0,
+      "type": "call",
+      "action": "added",
+      "from": [],
+      "to": "209351",
+      "quality": "A",
+      "country": "South Africa",
+      "locality": "Kruger National Park (near Kruger Park), Ehlanzeni, Mpumalanga",
       "cleaned": false,
       "license": "CC BY-NC-SA 4.0"
     }
