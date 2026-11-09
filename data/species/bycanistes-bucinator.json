@@ -7,8 +7,45 @@
     "af": "Gewone Boskraai"
   },
   "family": "bucerotidae",
-  "summary": "The details for this species have not been published yet.",
-  "sampleData": true,
+  "status": "resident",
+  "monthsPresent": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+  ],
+  "size": {
+    "lengthCm": {
+      "min": 58,
+      "max": 65
+    },
+    "note": "Newman's Birds gives 58–65 cm."
+  },
+  "habitat": "Well-developed riverine forest, lowland forest and moist woodland, feeding in the canopy of large fruiting trees.",
+  "summary": "A large pied hornbill of the lowland forest, with a huge dusky bill and casque and pink facial skin. The underparts are the whiter of the large pied hornbills, and the underwings have white edges. The call is a loud, far-carrying waaaa-aaa-aaa-aaa-aaaaaa, like a crying baby, often from several birds at once. The sexes and the immature are not separated in this account.",
+  "sampleData": false,
+  "similar": [
+    {
+      "slug": "lophoceros-alboterminatus",
+      "note": "Crowned Hornbill is smaller, with a red bill that has a yellow base and plain dark grey-brown upperparts, not a huge dusky casque."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Trumpeter Hornbill",
+      "url": "https://newmansbirds.com/birds/trumpeter-hornbill/",
+      "publisher": "Newman's Birds",
+      "year": 2026
+    }
+  ],
   "population": {
     "estimate": {
       "low": 256,
@@ -35,8 +72,128 @@
     },
     "tierApplied": "D"
   },
-  "variants": [],
-  "viewNotes": [],
-  "calls": [],
-  "images": []
+  "variants": [
+    {
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "marks": {
+        "bill": {
+          "colour": "dark-brown",
+          "shape": "huge and dusky, with a large casque"
+        },
+        "eye": {
+          "iris": null,
+          "ring": null
+        },
+        "legs": {
+          "colour": null
+        },
+        "head": {
+          "crown": "black",
+          "face": "pink",
+          "throat": "black",
+          "pattern": "Pink facial skin. The bill is dusky, not yellow."
+        },
+        "upperparts": {
+          "back": "black",
+          "rump": null,
+          "pattern": "Pied: dark upperparts and whiter underparts than the comparison species Newman names."
+        },
+        "underparts": {
+          "breast": "white",
+          "belly": "white",
+          "pattern": null
+        },
+        "wings": {
+          "above": "black",
+          "below": "white",
+          "pattern": "White edges on the underwings."
+        },
+        "tail": {
+          "colour": null,
+          "shape": null
+        }
+      }
+    }
+  ],
+  "viewNotes": [
+    {
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Huge dusky bill and casque, pink face, black upperparts and white underparts, usually in the canopy."
+    },
+    {
+      "view": "perched-front",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "The pink face and the big casque dominate the front view."
+    },
+    {
+      "view": "perched-back",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Dark back. White underparts are not the rear mark."
+    },
+    {
+      "view": "flight-above",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Dark above. A separate upperwing pattern was not named."
+    },
+    {
+      "view": "flight-below",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "White edges on the underwings, and more white on the underparts."
+    }
+  ],
+  "calls": [
+    {
+      "sex": "any",
+      "type": "call",
+      "description": "A loud, far-carrying waaaa-aaa-aaa-aaa-aaaaaa, like a crying baby, often from several birds at once. The texts do not separate the sexes. Grade A from Kruger, near Skukuza.",
+      "recordings": [
+        {
+          "key": "xeno-canto/XC1149405",
+          "source": "https://xeno-canto.org/1149405",
+          "fileUrl": "https://xeno-canto.org/sounds/uploaded/YSGTQVRQZI/XC1149405-20260519_KNP_AKaramitsos_XA60_A027C052_2605195O_SLE_250HP_-3dB_split_comb_THornbill.mp3",
+          "author": "African Bioacoustics Community",
+          "license": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ]
+    }
+  ],
+  "images": [
+    {
+      "key": "bycanistes-bucinator/side.jpg",
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "source": "https://www.inaturalist.org/observations/195962996",
+      "fileUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/344886527/large.jpg",
+      "author": "Lara Antoniades",
+      "license": "CC BY-NC 4.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+      "aiGenerated": false,
+      "hosted": false,
+      "alt": "Trumpeter Hornbill perched side-on in a Kruger fruiting tree, with a large dusky casque and white underparts",
+      "caption": "Trumpeter Hornbill perched side-on in a Kruger fruiting tree, with a large dusky casque and white underparts"
+    }
+  ],
+  "research": {
+    "confidence": "medium",
+    "needsReview": false,
+    "note": "Status is resident and all twelve months are listed. Newman calls it a common lowland resident. Silvery-cheeked Hornbill is the comparison in Newman and is not on the Kruger list, so it is not linked. Chick down, a sexed call and a flight photograph are gaps. The call is grade A from Kruger."
+  }
 }

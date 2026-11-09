@@ -1,9 +1,9 @@
 {
   "source": "xeno-canto explore catalogue, API v3 recording fields",
   "counts": {
-    "slots": 139,
+    "slots": 144,
     "swapped": 17,
-    "added": 43,
+    "added": 48,
     "kept": 57,
     "none": 22,
     "cleaned": 0
@@ -2305,6 +2305,76 @@
       "quality": "A",
       "country": "South Africa",
       "locality": "South Africa",
+      "cleaned": false,
+      "license": "CC BY-NC-SA 4.0"
+    },
+    {
+      "slug": "bycanistes-bucinator",
+      "scientificName": "Bycanistes bucinator",
+      "index": 0,
+      "type": "call",
+      "action": "added",
+      "from": [],
+      "to": "1149405",
+      "quality": "A",
+      "country": "South Africa",
+      "locality": "Kruger Park (near Skukuza), Ehlanzeni District Municipality",
+      "cleaned": false,
+      "license": "CC BY-NC-SA 4.0"
+    },
+    {
+      "slug": "lophoceros-alboterminatus",
+      "scientificName": "Lophoceros alboterminatus",
+      "index": 0,
+      "type": "call",
+      "action": "added",
+      "from": [],
+      "to": "444684",
+      "quality": "A",
+      "country": "Kenya",
+      "locality": "Uasin Gishu County",
+      "cleaned": false,
+      "license": "CC BY-NC-SA 4.0"
+    },
+    {
+      "slug": "lophoceros-nasutus",
+      "scientificName": "Lophoceros nasutus",
+      "index": 0,
+      "type": "call",
+      "action": "added",
+      "from": [],
+      "to": "1080078",
+      "quality": "A",
+      "country": "South Africa",
+      "locality": "Skukuza Rest Camp, Ehlanzeni, Mpumalanga",
+      "cleaned": false,
+      "license": "CC BY-NC-SA 4.0"
+    },
+    {
+      "slug": "tockus-leucomelas",
+      "scientificName": "Tockus leucomelas",
+      "index": 0,
+      "type": "call",
+      "action": "added",
+      "from": [],
+      "to": "610219",
+      "quality": "A",
+      "country": "South Africa",
+      "locality": "Near Zaakkuil Lodge, Hammanskraal, Limpopo",
+      "cleaned": false,
+      "license": "CC BY-NC-SA 4.0"
+    },
+    {
+      "slug": "tockus-rufirostris",
+      "scientificName": "Tockus rufirostris",
+      "index": 0,
+      "type": "call",
+      "action": "added",
+      "from": [],
+      "to": "802491",
+      "quality": "A",
+      "country": "South Africa",
+      "locality": "Temba, City of Tshwane Metropolitan Municipality, Gauteng",
       "cleaned": false,
       "license": "CC BY-NC-SA 4.0"
     }

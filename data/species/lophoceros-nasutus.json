@@ -7,8 +7,45 @@
     "af": "Grysneushoringvoël"
   },
   "family": "bucerotidae",
-  "summary": "The details for this species have not been published yet.",
-  "sampleData": true,
+  "status": "resident",
+  "monthsPresent": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+  ],
+  "size": {
+    "lengthCm": {
+      "min": 43,
+      "max": 48
+    },
+    "note": "Newman's Birds gives 43–48 cm."
+  },
+  "habitat": "Dry mixed bushveld, savanna and thornveld. Pairs, and in winter flocks of up to about 30. Mainly arboreal.",
+  "summary": "A common bushveld hornbill. The male has a rather small dark bill. The female has a smaller casque, a creamy upper mandible and a red bill tip. Both sexes have a white eyebrow and pale feather edges on the wings. The upperparts are dark grey and the wings are mottled brown, with a cream patch on the bill. The immature has a browner head and indistinct eyebrows. The call is a thin piping series given with the bill pointing skywards.",
+  "sampleData": false,
+  "similar": [
+    {
+      "slug": "tockus-leucomelas",
+      "note": "Southern Yellow-billed Hornbill has a large yellow bill and pied plumage. African Grey Hornbill has a small dark or cream-and-red bill and a white eyebrow."
+    }
+  ],
+  "sources": [
+    {
+      "title": "African Grey Hornbill",
+      "url": "https://newmansbirds.com/birds/african-grey-hornbill/",
+      "publisher": "Newman's Birds",
+      "year": 2026
+    }
+  ],
   "population": {
     "estimate": {
       "low": 16384,
@@ -35,8 +72,217 @@
     },
     "tierApplied": "D"
   },
-  "variants": [],
-  "viewNotes": [],
-  "calls": [],
-  "images": []
+  "variants": [
+    {
+      "age": "adult",
+      "sex": "male",
+      "season": "any",
+      "marks": {
+        "bill": {
+          "colour": "black",
+          "shape": "rather small and dark"
+        },
+        "eye": {
+          "iris": null,
+          "ring": null
+        },
+        "legs": {
+          "colour": null
+        },
+        "head": {
+          "crown": "grey",
+          "face": "white",
+          "throat": "grey",
+          "pattern": "Diagnostic white eyebrow. Dark grey upperparts."
+        },
+        "upperparts": {
+          "back": "grey",
+          "rump": null,
+          "pattern": "Mottled brown wings."
+        },
+        "underparts": {
+          "breast": "grey",
+          "belly": "white",
+          "pattern": null
+        },
+        "wings": {
+          "above": "brown",
+          "below": null,
+          "pattern": "Pale feather edges and mottled brown wings."
+        },
+        "tail": {
+          "colour": null,
+          "shape": null
+        }
+      }
+    },
+    {
+      "age": "adult",
+      "sex": "female",
+      "season": "any",
+      "marks": {
+        "bill": {
+          "colour": [
+            "cream",
+            "red"
+          ],
+          "shape": "smaller casque; upper mandible creamy and the tip red"
+        },
+        "eye": {
+          "iris": null,
+          "ring": null
+        },
+        "legs": {
+          "colour": null
+        },
+        "head": {
+          "crown": "grey",
+          "face": "white",
+          "throat": "grey",
+          "pattern": "White eyebrow, as on the male."
+        },
+        "upperparts": {
+          "back": "grey",
+          "rump": null,
+          "pattern": "Mottled brown wings."
+        },
+        "underparts": {
+          "breast": "grey",
+          "belly": "white",
+          "pattern": null
+        },
+        "wings": {
+          "above": "brown",
+          "below": null,
+          "pattern": "Pale feather edges."
+        },
+        "tail": {
+          "colour": null,
+          "shape": null
+        }
+      }
+    },
+    {
+      "age": "juvenile",
+      "sex": "any",
+      "season": "any",
+      "marks": {
+        "bill": {
+          "colour": "dark-brown",
+          "shape": null
+        },
+        "eye": {
+          "iris": null,
+          "ring": null
+        },
+        "legs": {
+          "colour": null
+        },
+        "head": {
+          "crown": "brown",
+          "face": "brown",
+          "throat": "grey",
+          "pattern": "Browner head and indistinct eyebrows."
+        },
+        "upperparts": {
+          "back": "grey",
+          "rump": null,
+          "pattern": null
+        },
+        "underparts": {
+          "breast": "grey",
+          "belly": "white",
+          "pattern": null
+        },
+        "wings": {
+          "above": "brown",
+          "below": null,
+          "pattern": null
+        },
+        "tail": {
+          "colour": null,
+          "shape": null
+        }
+      }
+    }
+  ],
+  "viewNotes": [
+    {
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "White eyebrow, dark grey upperparts and mottled brown wings. The male’s bill is small and dark; the female’s upper mandible is creamy with a red tip."
+    },
+    {
+      "view": "perched-front",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "The white eyebrow and the bill colour separate the sexes from the front."
+    },
+    {
+      "view": "perched-back",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Dark grey back and pale-edged wings."
+    },
+    {
+      "view": "flight-above",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Mottled brown wings. A separate upperwing flight pattern was not named."
+    },
+    {
+      "view": "flight-below",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "The underwing colour was not named."
+    }
+  ],
+  "calls": [
+    {
+      "sex": "any",
+      "type": "call",
+      "description": "A thin, piping, plaintive series, phe, phephee, pheephee, pheeoo, phew, pheeoo-pheeooo, given with the bill pointing skywards. The texts do not separate the sexes. Grade A from Skukuza.",
+      "recordings": [
+        {
+          "key": "xeno-canto/XC1080078",
+          "source": "https://xeno-canto.org/1080078",
+          "fileUrl": "https://xeno-canto.org/sounds/uploaded/QXGZDUUJUO/XC1080078-Africa-grey-hornbill--Kruger-Skukuza-260125-091311_Tr1-.mp3",
+          "author": "JJSUN",
+          "license": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ]
+    }
+  ],
+  "images": [
+    {
+      "key": "lophoceros-nasutus/front.jpg",
+      "view": "perched-front",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "source": "https://www.inaturalist.org/observations/330421817",
+      "fileUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/599163460/large.jpg",
+      "author": "Africa Gomez",
+      "license": "CC BY-NC 4.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+      "aiGenerated": false,
+      "hosted": false,
+      "alt": "African Grey Hornbill perched in a Kruger treetop, facing forward, with a pale eyebrow and a dark bill",
+      "caption": "African Grey Hornbill perched in a Kruger treetop, facing forward, with a pale eyebrow and a dark bill"
+    }
+  ],
+  "research": {
+    "confidence": "medium",
+    "needsReview": false,
+    "note": "Status is resident and all twelve months are listed. Newman calls it a common resident and notes winter flocks, which are not an absence. Chick down and a flight photograph are gaps. The call is grade A from Skukuza and is not sexed."
+  }
 }

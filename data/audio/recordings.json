@@ -529,6 +529,16 @@
         }
       ]
     },
+    "bycanistes-bucinator": {
+      "calls": [
+        {
+          "index": 0,
+          "quality": {
+            "xeno-canto/XC1149405": "A"
+          }
+        }
+      ]
+    },
     "calandrella-cinerea": {
       "calls": [
         {
@@ -1174,6 +1184,26 @@
         }
       ]
     },
+    "lophoceros-alboterminatus": {
+      "calls": [
+        {
+          "index": 0,
+          "quality": {
+            "xeno-canto/XC444684": "A"
+          }
+        }
+      ]
+    },
+    "lophoceros-nasutus": {
+      "calls": [
+        {
+          "index": 0,
+          "quality": {
+            "xeno-canto/XC1080078": "A"
+          }
+        }
+      ]
+    },
     "macheiramphus-alcinus": {
       "calls": [
         {
@@ -1485,6 +1515,26 @@
           "index": 0,
           "quality": {
             "xeno-canto/XC809424": "A"
+          }
+        }
+      ]
+    },
+    "tockus-leucomelas": {
+      "calls": [
+        {
+          "index": 0,
+          "quality": {
+            "xeno-canto/XC610219": "A"
+          }
+        }
+      ]
+    },
+    "tockus-rufirostris": {
+      "calls": [
+        {
+          "index": 0,
+          "quality": {
+            "xeno-canto/XC802491": "A"
           }
         }
       ]
