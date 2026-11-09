@@ -7,8 +7,45 @@
     "af": "Dikbekkanarie"
   },
   "family": "fringillidae",
-  "summary": "The details for this species have not been published yet.",
-  "sampleData": true,
+  "status": "resident",
+  "monthsPresent": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+  ],
+  "size": {
+    "lengthCm": {
+      "min": 14,
+      "max": 15
+    },
+    "note": "Newman's Birds gives 14–15 cm."
+  },
+  "habitat": "Singly, in pairs or in small flocks on bushy hillsides, in kloofs, at forest fringes, in bracken-briar and in riverside thickets.",
+  "summary": "A common resident. A thickset, heavy-billed yellow canary. The male is dark green above and on the breast. The female is paler above and entirely yellow below. Southern birds are duller olive-green with dark-streaked upper parts. Northern birds are paler, more yellow and smaller. The immature is duller. The song is slower, huskier and less tuneful than other canaries. The Kemp name is Bully Canary and the code NB was left unchanged.",
+  "sampleData": false,
+  "similar": [
+    {
+      "slug": "serinus-canicollis",
+      "note": "Cape Canary has a grey nape and ear coverts, with the rest yellow. Brimstone Canary is the heavy-billed bird, dark green on the male’s breast."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Brimstone Canary",
+      "url": "https://newmansbirds.com/birds/brimstone-canary/",
+      "publisher": "Newman's Birds",
+      "year": 2026
+    }
+  ],
   "population": {
     "estimate": {
       "low": 16,
@@ -35,8 +72,214 @@
     },
     "tierApplied": "D"
   },
-  "variants": [],
-  "viewNotes": [],
-  "calls": [],
-  "images": []
+  "variants": [
+    {
+      "age": "adult",
+      "sex": "male",
+      "season": "any",
+      "marks": {
+        "bill": {
+          "colour": null,
+          "shape": "Heavy."
+        },
+        "eye": {
+          "iris": null,
+          "ring": null
+        },
+        "legs": {
+          "colour": null
+        },
+        "head": {
+          "crown": null,
+          "face": null,
+          "throat": null,
+          "pattern": "Northern birds have a dark crown extending to the base of the bill."
+        },
+        "upperparts": {
+          "back": "green",
+          "rump": null,
+          "pattern": "Dark green above. Southern birds are dull olive-green with dark streaks. Northern birds are paler and more yellow."
+        },
+        "underparts": {
+          "breast": "green",
+          "belly": null,
+          "pattern": "Dark green on the breast."
+        },
+        "wings": {
+          "above": null,
+          "below": null,
+          "pattern": null
+        },
+        "tail": {
+          "colour": null,
+          "shape": null
+        }
+      }
+    },
+    {
+      "age": "adult",
+      "sex": "female",
+      "season": "any",
+      "marks": {
+        "bill": {
+          "colour": null,
+          "shape": "Heavy."
+        },
+        "eye": {
+          "iris": null,
+          "ring": null
+        },
+        "legs": {
+          "colour": null
+        },
+        "head": {
+          "crown": null,
+          "face": null,
+          "throat": null,
+          "pattern": null
+        },
+        "upperparts": {
+          "back": null,
+          "rump": null,
+          "pattern": "Paler above than the male."
+        },
+        "underparts": {
+          "breast": "yellow",
+          "belly": "yellow",
+          "pattern": "Entirely yellow below."
+        },
+        "wings": {
+          "above": null,
+          "below": null,
+          "pattern": null
+        },
+        "tail": {
+          "colour": null,
+          "shape": null
+        }
+      }
+    },
+    {
+      "age": "immature",
+      "sex": "any",
+      "season": "any",
+      "marks": {
+        "bill": {
+          "colour": null,
+          "shape": null
+        },
+        "eye": {
+          "iris": null,
+          "ring": null
+        },
+        "legs": {
+          "colour": null
+        },
+        "head": {
+          "crown": null,
+          "face": null,
+          "throat": null,
+          "pattern": "Duller than the adult."
+        },
+        "upperparts": {
+          "back": null,
+          "rump": null,
+          "pattern": null
+        },
+        "underparts": {
+          "breast": null,
+          "belly": null,
+          "pattern": null
+        },
+        "wings": {
+          "above": null,
+          "below": null,
+          "pattern": null
+        },
+        "tail": {
+          "colour": null,
+          "shape": null
+        }
+      }
+    }
+  ],
+  "viewNotes": [
+    {
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "male",
+      "season": "any",
+      "note": "Heavy bill, dark green above and on the breast."
+    },
+    {
+      "view": "perched-front",
+      "age": "adult",
+      "sex": "male",
+      "season": "any",
+      "note": "Dark green breast and a heavy bill."
+    },
+    {
+      "view": "perched-back",
+      "age": "adult",
+      "sex": "male",
+      "season": "any",
+      "note": "Dark green upper parts. Northern birds are paler and more yellow."
+    },
+    {
+      "view": "flight-above",
+      "age": "adult",
+      "sex": "male",
+      "season": "any",
+      "note": "Northern birds lack white edges on the wing coverts. A flight pattern was not described."
+    },
+    {
+      "view": "flight-below",
+      "age": "adult",
+      "sex": "male",
+      "season": "any",
+      "note": "The male breast is dark green. The female is entirely yellow below."
+    }
+  ],
+  "calls": [
+    {
+      "sex": "any",
+      "type": "song",
+      "description": "Slower, huskier and less tuneful than other canaries. Grade A song from Wild Fig Country Estate. The filename uses the older name Bully Canary.",
+      "recordings": [
+        {
+          "key": "xeno-canto/XC650874",
+          "source": "https://xeno-canto.org/650874",
+          "fileUrl": "https://xeno-canto.org/sounds/uploaded/WQZFZWNHJB/XC650874-Bully%20Canary.mp3",
+          "author": "Paul Bourdin",
+          "license": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ]
+    }
+  ],
+  "images": [
+    {
+      "key": "crithagra-sulphurata/side.jpg",
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "source": "https://www.inaturalist.org/observations/197704850",
+      "fileUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/348278414/large.jpg",
+      "author": "Duncan McKenzie",
+      "license": "CC BY-NC 4.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+      "aiGenerated": false,
+      "hosted": false,
+      "alt": "Brimstone Canary in Kruger",
+      "caption": "Brimstone Canary in the Ehlanzeni district."
+    }
+  ],
+  "research": {
+    "confidence": "medium",
+    "needsReview": false,
+    "note": "Status is resident and all twelve months are listed. Newman calls it a common resident. The Kemp name Bully Canary and the code NB were left unchanged. Population figures were left unchanged."
+  }
 }

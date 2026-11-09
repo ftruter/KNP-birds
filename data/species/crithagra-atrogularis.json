@@ -7,8 +7,45 @@
     "af": "Bergkanarie"
   },
   "family": "fringillidae",
-  "summary": "The details for this species have not been published yet.",
-  "sampleData": true,
+  "status": "resident",
+  "monthsPresent": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+  ],
+  "size": {
+    "lengthCm": {
+      "min": 11,
+      "max": 12
+    },
+    "note": "Newman's Birds gives 11–12 cm."
+  },
+  "habitat": "Small flocks on grass and weed seeds in woodland, fallow farmland, waste ground and roadside verges.",
+  "summary": "A common resident. A small greyish canary with a yellow rump and a white tail-tip. The blackish throat is diagnostic when present, and it may be absent or only vestigial. The song is a strong, sustained ramble from a treetop. The yellow rump shows in flight. The Kemp code NB was left unchanged. No openly licensed Kruger photograph was found.",
+  "sampleData": false,
+  "similar": [
+    {
+      "slug": "crithagra-citrinipectus",
+      "note": "Lemon-breasted Canary has a yellow breast and a yellow rump. Black-throated Canary is greyish, with the yellow mainly on the rump."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Black-throated Canary",
+      "url": "https://newmansbirds.com/birds/black-throated-canary/",
+      "publisher": "Newman's Birds",
+      "year": 2026
+    }
+  ],
   "population": {
     "estimate": {
       "low": 32,
@@ -35,8 +72,111 @@
     },
     "tierApplied": "D"
   },
-  "variants": [],
-  "viewNotes": [],
-  "calls": [],
-  "images": []
+  "variants": [
+    {
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "marks": {
+        "bill": {
+          "colour": null,
+          "shape": null
+        },
+        "eye": {
+          "iris": null,
+          "ring": null
+        },
+        "legs": {
+          "colour": null
+        },
+        "head": {
+          "crown": null,
+          "face": null,
+          "throat": "black",
+          "pattern": "Blackish throat when present. It may be absent or vestigial."
+        },
+        "upperparts": {
+          "back": "grey",
+          "rump": "yellow",
+          "pattern": null
+        },
+        "underparts": {
+          "breast": null,
+          "belly": null,
+          "pattern": null
+        },
+        "wings": {
+          "above": null,
+          "below": null,
+          "pattern": null
+        },
+        "tail": {
+          "colour": null,
+          "shape": "White tip."
+        }
+      }
+    }
+  ],
+  "viewNotes": [
+    {
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Small and greyish, with a yellow rump. The black throat may be missing."
+    },
+    {
+      "view": "perched-front",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "The throat is blackish only when the mark is present."
+    },
+    {
+      "view": "perched-back",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Greyish upper parts and a yellow rump."
+    },
+    {
+      "view": "flight-above",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "The bright yellow rump shows in flight, with a white tail-tip."
+    },
+    {
+      "view": "flight-below",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "The underparts were not given a colour apart from the throat."
+    }
+  ],
+  "calls": [
+    {
+      "sex": "any",
+      "type": "song",
+      "description": "A strong and sustained rambling song from a treetop. Grade A song from Klerksdorp. The filename is 1 BT Canary.mp3.",
+      "recordings": [
+        {
+          "key": "xeno-canto/XC472484",
+          "source": "https://xeno-canto.org/472484",
+          "fileUrl": "https://xeno-canto.org/sounds/uploaded/HMBDEWEZVS/XC472484-1%20BT%20Canary.mp3",
+          "author": "Tony Archer",
+          "license": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ]
+    }
+  ],
+  "images": [],
+  "research": {
+    "confidence": "medium",
+    "needsReview": true,
+    "note": "Status is resident and all twelve months are listed. Newman calls it a common resident. The Kemp code NB was left unchanged. No openly licensed research-grade photograph was found in the Kruger box. Population figures were left unchanged."
+  }
 }

@@ -8127,13 +8127,31 @@
       "scientificName": "Crithagra atrogularis",
       "commonName": "Black-throated Canary",
       "images": [],
-      "recordings": [],
+      "recordings": [
+        {
+          "key": "xeno-canto/XC472484",
+          "author": "Tony Archer",
+          "licence": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "sourceUrl": "https://xeno-canto.org/472484",
+          "aiGenerated": false,
+          "hosted": false,
+          "quality": "A",
+          "callType": "song"
+        }
+      ],
       "sources": [
         {
           "title": "Kemp A.C., Herholdt J.J., Whyte I. & Harrison J. (2001). Birds of the two largest national parks in South Africa: a method to generate estimates of population size for all species and assess their conservation ecology. S. Afr. J. Sci. 97: 393–403.",
           "url": "https://journals.co.za/doi/pdf/10.10520/EJC97367",
           "publisher": "South African Journal of Science",
           "year": 2001
+        },
+        {
+          "title": "Black-throated Canary",
+          "url": "https://newmansbirds.com/birds/black-throated-canary/",
+          "publisher": "Newman's Birds",
+          "year": 2026
         }
       ]
     },
@@ -8141,7 +8159,17 @@
       "slug": "crithagra-citrinipectus",
       "scientificName": "Crithagra citrinipectus",
       "commonName": "Lemon-breasted Canary",
-      "images": [],
+      "images": [
+        {
+          "key": "crithagra-citrinipectus/side.jpg",
+          "author": "traveler57",
+          "licence": "CC BY-NC 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+          "sourceUrl": "https://www.inaturalist.org/observations/205209827",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ],
       "recordings": [],
       "sources": [
         {
@@ -8149,6 +8177,12 @@
           "url": "https://journals.co.za/doi/pdf/10.10520/EJC97367",
           "publisher": "South African Journal of Science",
           "year": 2001
+        },
+        {
+          "title": "Lemon-breasted Canary",
+          "url": "https://newmansbirds.com/birds/lemon-breasted-canary/",
+          "publisher": "Newman's Birds",
+          "year": 2026
         }
       ]
     },
@@ -8156,14 +8190,79 @@
       "slug": "crithagra-gularis",
       "scientificName": "Crithagra gularis",
       "commonName": "Streaky-headed Seedeater",
-      "images": [],
-      "recordings": [],
+      "images": [
+        {
+          "key": "crithagra-gularis/side.jpg",
+          "author": "Heinrich Human",
+          "licence": "CC BY-NC 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+          "sourceUrl": "https://www.inaturalist.org/observations/157611402",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ],
+      "recordings": [
+        {
+          "key": "xeno-canto/XC252812",
+          "author": "Lynette Rudman",
+          "licence": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "sourceUrl": "https://xeno-canto.org/252812",
+          "aiGenerated": false,
+          "hosted": false,
+          "quality": "A",
+          "callType": "song"
+        }
+      ],
       "sources": [
         {
           "title": "Kemp A.C., Herholdt J.J., Whyte I. & Harrison J. (2001). Birds of the two largest national parks in South Africa: a method to generate estimates of population size for all species and assess their conservation ecology. S. Afr. J. Sci. 97: 393–403.",
           "url": "https://journals.co.za/doi/pdf/10.10520/EJC97367",
           "publisher": "South African Journal of Science",
           "year": 2001
+        },
+        {
+          "title": "Streaky-headed Seedeater",
+          "url": "https://newmansbirds.com/birds/streaky-headed-seedeater/",
+          "publisher": "Newman's Birds",
+          "year": 2026
+        }
+      ]
+    },
+    {
+      "slug": "crithagra-scotops",
+      "scientificName": "Crithagra scotops",
+      "commonName": "Forest Canary",
+      "images": [
+        {
+          "key": "crithagra-scotops/side.jpg",
+          "author": "Vaughan Jessnitz",
+          "licence": "CC BY-NC 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+          "sourceUrl": "https://www.inaturalist.org/observations/413726932",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ],
+      "recordings": [
+        {
+          "key": "xeno-canto/XC500264",
+          "author": "Tristan Spurway",
+          "licence": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "sourceUrl": "https://xeno-canto.org/500264",
+          "aiGenerated": false,
+          "hosted": false,
+          "quality": "A",
+          "callType": "song"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Forest Canary",
+          "url": "https://newmansbirds.com/birds/forest-canary/",
+          "publisher": "Newman's Birds",
+          "year": 2026
         }
       ]
     },
@@ -8171,14 +8270,42 @@
       "slug": "crithagra-sulphurata",
       "scientificName": "Crithagra sulphurata",
       "commonName": "Brimstone Canary",
-      "images": [],
-      "recordings": [],
+      "images": [
+        {
+          "key": "crithagra-sulphurata/side.jpg",
+          "author": "Duncan McKenzie",
+          "licence": "CC BY-NC 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+          "sourceUrl": "https://www.inaturalist.org/observations/197704850",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ],
+      "recordings": [
+        {
+          "key": "xeno-canto/XC650874",
+          "author": "Paul Bourdin",
+          "licence": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "sourceUrl": "https://xeno-canto.org/650874",
+          "aiGenerated": false,
+          "hosted": false,
+          "quality": "A",
+          "callType": "song"
+        }
+      ],
       "sources": [
         {
           "title": "Kemp A.C., Herholdt J.J., Whyte I. & Harrison J. (2001). Birds of the two largest national parks in South Africa: a method to generate estimates of population size for all species and assess their conservation ecology. S. Afr. J. Sci. 97: 393–403.",
           "url": "https://journals.co.za/doi/pdf/10.10520/EJC97367",
           "publisher": "South African Journal of Science",
           "year": 2001
+        },
+        {
+          "title": "Brimstone Canary",
+          "url": "https://newmansbirds.com/birds/brimstone-canary/",
+          "publisher": "Newman's Birds",
+          "year": 2026
         }
       ]
     },
@@ -15665,13 +15792,31 @@
       "scientificName": "Serinus canicollis",
       "commonName": "Cape Canary",
       "images": [],
-      "recordings": [],
+      "recordings": [
+        {
+          "key": "xeno-canto/XC1046125",
+          "author": "African Bioacoustics Community",
+          "licence": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "sourceUrl": "https://xeno-canto.org/1046125",
+          "aiGenerated": false,
+          "hosted": false,
+          "quality": "A",
+          "callType": "song"
+        }
+      ],
       "sources": [
         {
           "title": "Kemp A.C., Herholdt J.J., Whyte I. & Harrison J. (2001). Birds of the two largest national parks in South Africa: a method to generate estimates of population size for all species and assess their conservation ecology. S. Afr. J. Sci. 97: 393–403.",
           "url": "https://journals.co.za/doi/pdf/10.10520/EJC97367",
           "publisher": "South African Journal of Science",
           "year": 2001
+        },
+        {
+          "title": "Cape Canary",
+          "url": "https://newmansbirds.com/birds/cape-canary/",
+          "publisher": "Newman's Birds",
+          "year": 2026
         }
       ]
     },
