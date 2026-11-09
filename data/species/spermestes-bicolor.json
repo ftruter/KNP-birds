@@ -7,8 +7,45 @@
     "af": "Rooirugfret"
   },
   "family": "estrildidae",
-  "summary": "The details for this species have not been published yet.",
-  "sampleData": true,
+  "status": "resident",
+  "size": {
+    "lengthCm": {
+      "min": 9.5,
+      "max": 10
+    },
+    "note": "Newman's Birds gives 9.5–10 cm."
+  },
+  "monthsPresent": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+  ],
+  "habitat": "Small flocks in open bushveld and coastal dune forest, feeding on grass seeds.",
+  "summary": "A fairly common resident. Red-brown upper parts, black more extensive over the sides of the head and breast than Bronze Mannikin, a uniformly blue-grey bill and broader barring on the flanks. The underparts are white. The immature is duller. It gives a clear whistling note in flight. Newman notes that the red-backed form has been lumped with the black-and-white form despite a colour difference. The short colour line says the bill is white. The Kemp code RB was left unchanged.",
+  "sampleData": false,
+  "similar": [
+    {
+      "slug": "spermestes-cucullata",
+      "note": "Bronze Mannikin is earth-brown above, with black only on the head and breast, a dark upper mandible and fine flank barring. Red-backed Mannikin is red-brown above, with more black and broader flank bars."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Red-backed Mannikin",
+      "url": "https://newmansbirds.com/birds/red-backed-mannikin/",
+      "publisher": "Newman's Birds",
+      "year": 2026
+    }
+  ],
   "population": {
     "estimate": {
       "low": 512,
@@ -35,8 +72,171 @@
     },
     "tierApplied": "D"
   },
-  "variants": [],
-  "viewNotes": [],
-  "calls": [],
-  "images": []
+  "variants": [
+    {
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "marks": {
+        "bill": {
+          "colour": "grey",
+          "shape": "Uniformly blue-grey."
+        },
+        "eye": {
+          "iris": null,
+          "ring": null
+        },
+        "legs": {
+          "colour": null
+        },
+        "head": {
+          "crown": "black",
+          "face": "black",
+          "throat": "black",
+          "pattern": "Black extends over the sides of the head."
+        },
+        "upperparts": {
+          "back": "rufous",
+          "rump": null,
+          "pattern": "Red-brown upper parts."
+        },
+        "underparts": {
+          "breast": "black",
+          "belly": "white",
+          "pattern": "Black extends onto the sides of the breast. Broader barring on the flanks."
+        },
+        "wings": {
+          "above": null,
+          "below": null,
+          "pattern": null
+        },
+        "tail": {
+          "colour": null,
+          "shape": null
+        }
+      }
+    },
+    {
+      "age": "immature",
+      "sex": "any",
+      "season": "any",
+      "marks": {
+        "bill": {
+          "colour": null,
+          "shape": null
+        },
+        "eye": {
+          "iris": null,
+          "ring": null
+        },
+        "legs": {
+          "colour": null
+        },
+        "head": {
+          "crown": null,
+          "face": null,
+          "throat": null,
+          "pattern": "Duller than the adult. No separate colours were named."
+        },
+        "upperparts": {
+          "back": null,
+          "rump": null,
+          "pattern": null
+        },
+        "underparts": {
+          "breast": null,
+          "belly": null,
+          "pattern": null
+        },
+        "wings": {
+          "above": null,
+          "below": null,
+          "pattern": null
+        },
+        "tail": {
+          "colour": null,
+          "shape": null
+        }
+      }
+    }
+  ],
+  "viewNotes": [
+    {
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Red-brown above, black on the head and sides of the breast, and white below with broad flank bars."
+    },
+    {
+      "view": "perched-front",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Black face and breast, and a blue-grey bill."
+    },
+    {
+      "view": "perched-back",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Red-brown upper parts."
+    },
+    {
+      "view": "flight-above",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "A clear whistling note is given in flight. A wing pattern was not described."
+    },
+    {
+      "view": "flight-below",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "White underparts, with black on the sides of the breast and broader flank barring."
+    }
+  ],
+  "calls": [
+    {
+      "sex": "any",
+      "type": "call",
+      "description": "A clear whistling note in flight. Grade A call from Obala, Cameroon, labelled Black-and-white Mannikin. The filename says the file was edited. No southern African grade A recording was in the set. Newman treats the red-backed and black-and-white forms as one species.",
+      "recordings": [
+        {
+          "key": "xeno-canto/XC206436",
+          "source": "https://xeno-canto.org/206436",
+          "fileUrl": "https://xeno-canto.org/sounds/uploaded/RGSEIIJGHA/XC206436-Black-and-whiteMannikin_Obala_141213_0113_edited.mp3",
+          "author": "Bram Piot",
+          "license": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ]
+    }
+  ],
+  "images": [
+    {
+      "key": "spermestes-bicolor/side.jpg",
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "source": "https://www.inaturalist.org/observations/197447916",
+      "fileUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/347764077/large.jpg",
+      "author": "Duncan McKenzie",
+      "license": "CC BY-NC 4.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+      "aiGenerated": false,
+      "hosted": false,
+      "alt": "Red-backed Mannikins feeding in a flowering tree",
+      "caption": "Red-backed Mannikins in the Ehlanzeni district, brown-backed, with black heads and spotted flanks."
+    }
+  ],
+  "research": {
+    "confidence": "medium",
+    "needsReview": true,
+    "note": "The description says the bill is uniformly blue-grey. The short colour line says white. The bill was stored as grey. The recording is the lumped black-and-white form from Cameroon. Status is resident and all twelve months are listed. Population figures were left unchanged."
+  }
 }

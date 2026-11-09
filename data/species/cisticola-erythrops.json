@@ -7,8 +7,18 @@
     "af": "Rooiwangtinktinkie"
   },
   "family": "cisticolidae",
-  "summary": "The details for this species have not been published yet.",
-  "sampleData": true,
+  "habitat": "Seasonally wet or flooded lowland grassland and swamps. Wikipedia says it is rare in southern Africa and does not describe the plumage.",
+  "summary": "Wikipedia says it is widely present across sub-Saharan Africa and rare in southern Africa, in wet grassland and swamps. It does not describe the plumage or a Kruger status, so the marks, status and months were left unset. Newman has no page.",
+  "sampleData": false,
+  "similar": [],
+  "sources": [
+    {
+      "title": "Red-faced cisticola",
+      "url": "https://en.wikipedia.org/wiki/Red-faced_cisticola",
+      "publisher": "Wikipedia",
+      "year": 2026
+    }
+  ],
   "population": {
     "estimate": {
       "low": 4096,
@@ -36,7 +46,83 @@
     "tierApplied": "D"
   },
   "variants": [],
-  "viewNotes": [],
-  "calls": [],
-  "images": []
+  "viewNotes": [
+    {
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Plumage was not described. It uses wet grassland and swamps."
+    },
+    {
+      "view": "perched-front",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "The face colour was not described, despite the English name."
+    },
+    {
+      "view": "perched-back",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "The back was not described."
+    },
+    {
+      "view": "flight-above",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "The upperwing was not described."
+    },
+    {
+      "view": "flight-below",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "The underparts were not described."
+    }
+  ],
+  "calls": [
+    {
+      "sex": "any",
+      "type": "call",
+      "description": "Wikipedia does not describe the call. The file is grade A from Kruger, near Skukuza. The filename says RFCisticola.",
+      "recordings": [
+        {
+          "key": "xeno-canto/XC1137526",
+          "source": "https://xeno-canto.org/1137526",
+          "fileUrl": "https://xeno-canto.org/sounds/uploaded/YSGTQVRQZI/XC1137526-20260509_KNP_AKaramitsos_XA60_A024C140_260509MY_SLE_-3dB_RFCisticola.mp3",
+          "author": "African Bioacoustics Community",
+          "license": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ]
+    }
+  ],
+  "images": [
+    {
+      "key": "cisticola-erythrops/side.jpg",
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "source": "https://www.inaturalist.org/observations/108124661",
+      "fileUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/181981683/large.jpeg",
+      "author": "Peter Lupton",
+      "license": "CC BY-NC 4.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+      "aiGenerated": false,
+      "hosted": false,
+      "alt": "Red-faced Cisticola perched in Kruger",
+      "caption": "Red-faced Cisticola perched in Kruger"
+    }
+  ],
+  "research": {
+    "confidence": "low",
+    "needsReview": true,
+    "note": "Newman has no page. Status and months were left unset. No Kemp estimate is published."
+  }
 }

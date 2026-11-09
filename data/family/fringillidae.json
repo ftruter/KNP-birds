@@ -6,8 +6,8 @@
     "en": "Finches and canaries",
     "af": "Kanaries"
   },
-  "summary": "Field notes for this family are still to be written.",
-  "sampleData": true,
+  "summary": "Small songbirds with strong conical bills, usually notched tails and an undulating flight. Kruger has six. Black-throated Canary is the grey bird with a yellow rump. Lemon-breasted Canary is the tiny yellow-breasted one. Streaky-headed Seedeater has the white eyebrow. Forest Canary is streaked yellow. Brimstone Canary is heavy-billed. Cape Canary has the grey nape.",
+  "sampleData": false,
   "species": [
     {
       "slug": "crithagra-atrogularis",

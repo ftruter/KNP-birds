@@ -7,8 +7,45 @@
     "af": "Rooikopvink"
   },
   "family": "estrildidae",
-  "summary": "The details for this species have not been published yet.",
-  "sampleData": true,
+  "status": "resident",
+  "size": {
+    "lengthCm": {
+      "min": 13,
+      "max": 13
+    },
+    "note": "Newman's Birds gives 13 cm."
+  },
+  "monthsPresent": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+  ],
+  "habitat": "Small flocks in dry thornveld or grassland, often with other species, at waterholes and in rural suburbia.",
+  "summary": "A common near-endemic resident, larger than a Cut-throat Finch. The male has an entirely red head. The female is paler and plainer above, lightly barred below, with a dark horn bill. Both are grey-brown above and speckled below, with a heavy bill. The call is chuck-chuck. The Kemp code NB was left unchanged.",
+  "sampleData": false,
+  "similar": [
+    {
+      "slug": "amadina-fasciata",
+      "note": "Cut-throat Finch is smaller. The male has a red throat-band rather than an entirely red head, and both sexes have a chestnut belly."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Red-headed Finch",
+      "url": "https://newmansbirds.com/birds/red-headed-finch/",
+      "publisher": "Newman's Birds",
+      "year": 2026
+    }
+  ],
   "population": {
     "estimate": {
       "low": 128,
@@ -35,8 +72,171 @@
     },
     "tierApplied": "D"
   },
-  "variants": [],
-  "viewNotes": [],
-  "calls": [],
-  "images": []
+  "variants": [
+    {
+      "age": "adult",
+      "sex": "male",
+      "season": "any",
+      "marks": {
+        "bill": {
+          "colour": null,
+          "shape": "Heavy."
+        },
+        "eye": {
+          "iris": null,
+          "ring": null
+        },
+        "legs": {
+          "colour": null
+        },
+        "head": {
+          "crown": "red",
+          "face": "red",
+          "throat": "red",
+          "pattern": "Entirely red head."
+        },
+        "upperparts": {
+          "back": "grey",
+          "rump": null,
+          "pattern": null
+        },
+        "underparts": {
+          "breast": null,
+          "belly": null,
+          "pattern": "Speckled below."
+        },
+        "wings": {
+          "above": null,
+          "below": null,
+          "pattern": null
+        },
+        "tail": {
+          "colour": null,
+          "shape": null
+        }
+      }
+    },
+    {
+      "age": "adult",
+      "sex": "female",
+      "season": "any",
+      "marks": {
+        "bill": {
+          "colour": "horn",
+          "shape": "Heavy. Dark horn."
+        },
+        "eye": {
+          "iris": null,
+          "ring": null
+        },
+        "legs": {
+          "colour": null
+        },
+        "head": {
+          "crown": null,
+          "face": null,
+          "throat": null,
+          "pattern": "Paler than the male."
+        },
+        "upperparts": {
+          "back": "grey",
+          "rump": null,
+          "pattern": "Plainer on the upper parts."
+        },
+        "underparts": {
+          "breast": null,
+          "belly": null,
+          "pattern": "Lightly barred below."
+        },
+        "wings": {
+          "above": null,
+          "below": null,
+          "pattern": null
+        },
+        "tail": {
+          "colour": null,
+          "shape": null
+        }
+      }
+    }
+  ],
+  "viewNotes": [
+    {
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "male",
+      "season": "any",
+      "note": "Entirely red head, grey-brown upper parts and speckled underparts."
+    },
+    {
+      "view": "perched-front",
+      "age": "adult",
+      "sex": "male",
+      "season": "any",
+      "note": "Red face and throat."
+    },
+    {
+      "view": "perched-back",
+      "age": "adult",
+      "sex": "male",
+      "season": "any",
+      "note": "Grey-brown upper parts."
+    },
+    {
+      "view": "flight-above",
+      "age": "adult",
+      "sex": "male",
+      "season": "any",
+      "note": "A separate flight pattern was not described."
+    },
+    {
+      "view": "flight-below",
+      "age": "adult",
+      "sex": "male",
+      "season": "any",
+      "note": "Speckled underparts."
+    }
+  ],
+  "calls": [
+    {
+      "sex": "any",
+      "type": "call",
+      "description": "A distinctive double note, chuck-chuck. Newman does not separate the sexes. Grade A call from Cradock. The filename is Red-headed Finches exc.mp3.",
+      "recordings": [
+        {
+          "key": "xeno-canto/XC337993",
+          "source": "https://xeno-canto.org/337993",
+          "fileUrl": "https://xeno-canto.org/sounds/uploaded/SGLTZLDXYI/XC337993-Red-headed%20Finches%20exc.mp3",
+          "author": "Lynette Rudman",
+          "license": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ]
+    }
+  ],
+  "images": [
+    {
+      "key": "amadina-erythrocephala/side.jpg",
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "source": "https://www.inaturalist.org/observations/10160334",
+      "fileUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/14022010/large.jpeg",
+      "author": "copper",
+      "license": "CC BY-NC 4.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+      "aiGenerated": false,
+      "hosted": false,
+      "alt": "Red-headed Finch at Sunset Dam",
+      "caption": "Red-headed Finch at Sunset Dam in Kruger."
+    }
+  ],
+  "research": {
+    "confidence": "medium",
+    "needsReview": false,
+    "note": "Status is resident and all twelve months are listed. Newman calls it a common near-endemic resident. The Kemp code NB was left unchanged. Population figures were left unchanged."
+  }
 }

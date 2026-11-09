@@ -7,8 +7,45 @@
     "af": "Kaapse Kanarie"
   },
   "family": "fringillidae",
-  "summary": "The details for this species have not been published yet.",
-  "sampleData": true,
+  "status": "resident",
+  "monthsPresent": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+  ],
+  "size": {
+    "lengthCm": {
+      "min": 13,
+      "max": 14
+    },
+    "note": "Newman's Birds gives 13–14 cm."
+  },
+  "habitat": "Singly or in flocks, from coastal scrub to montane grassland, protea slopes, plantations and farmland. It feeds mostly on the ground.",
+  "summary": "A common endemic resident. Grey nape, ear coverts and sides of the neck. The rest is yellow, and the wings are greenish with yellow-edged feathers. The female is duller than the male, and the immature is streaked below. The song is a series of loud rolling warbles and trills. The Kemp code NB was left unchanged. No openly licensed Kruger photograph was found.",
+  "sampleData": false,
+  "similar": [
+    {
+      "slug": "crithagra-sulphurata",
+      "note": "Brimstone Canary is heavy-billed, and the male is dark green on the breast. Cape Canary has the grey nape and yellow body."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Cape Canary",
+      "url": "https://newmansbirds.com/birds/cape-canary/",
+      "publisher": "Newman's Birds",
+      "year": 2026
+    }
+  ],
   "population": {
     "estimate": {
       "low": 16,
@@ -35,8 +72,197 @@
     },
     "tierApplied": "D"
   },
-  "variants": [],
-  "viewNotes": [],
-  "calls": [],
-  "images": []
+  "variants": [
+    {
+      "age": "adult",
+      "sex": "male",
+      "season": "any",
+      "marks": {
+        "bill": {
+          "colour": null,
+          "shape": null
+        },
+        "eye": {
+          "iris": null,
+          "ring": null
+        },
+        "legs": {
+          "colour": null
+        },
+        "head": {
+          "crown": null,
+          "face": null,
+          "throat": null,
+          "pattern": "Grey nape, ear coverts and sides of the neck."
+        },
+        "upperparts": {
+          "back": "grey",
+          "rump": null,
+          "pattern": "Grey mantle. The rest is yellow."
+        },
+        "underparts": {
+          "breast": "yellow",
+          "belly": "yellow",
+          "pattern": null
+        },
+        "wings": {
+          "above": "green",
+          "below": null,
+          "pattern": "Greenish, with feathers edged yellow."
+        },
+        "tail": {
+          "colour": null,
+          "shape": null
+        }
+      }
+    },
+    {
+      "age": "adult",
+      "sex": "female",
+      "season": "any",
+      "marks": {
+        "bill": {
+          "colour": null,
+          "shape": null
+        },
+        "eye": {
+          "iris": null,
+          "ring": null
+        },
+        "legs": {
+          "colour": null
+        },
+        "head": {
+          "crown": null,
+          "face": null,
+          "throat": null,
+          "pattern": "Duller than the male. Grey nape, ear coverts and sides of the neck."
+        },
+        "upperparts": {
+          "back": null,
+          "rump": null,
+          "pattern": null
+        },
+        "underparts": {
+          "breast": "yellow",
+          "belly": "yellow",
+          "pattern": "Duller than the male."
+        },
+        "wings": {
+          "above": null,
+          "below": null,
+          "pattern": null
+        },
+        "tail": {
+          "colour": null,
+          "shape": null
+        }
+      }
+    },
+    {
+      "age": "immature",
+      "sex": "any",
+      "season": "any",
+      "marks": {
+        "bill": {
+          "colour": null,
+          "shape": null
+        },
+        "eye": {
+          "iris": null,
+          "ring": null
+        },
+        "legs": {
+          "colour": null
+        },
+        "head": {
+          "crown": null,
+          "face": null,
+          "throat": null,
+          "pattern": null
+        },
+        "upperparts": {
+          "back": null,
+          "rump": null,
+          "pattern": null
+        },
+        "underparts": {
+          "breast": null,
+          "belly": null,
+          "pattern": "Streaked below."
+        },
+        "wings": {
+          "above": null,
+          "below": null,
+          "pattern": null
+        },
+        "tail": {
+          "colour": null,
+          "shape": null
+        }
+      }
+    }
+  ],
+  "viewNotes": [
+    {
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "male",
+      "season": "any",
+      "note": "Grey nape and yellow body, with greenish wings edged yellow."
+    },
+    {
+      "view": "perched-front",
+      "age": "adult",
+      "sex": "male",
+      "season": "any",
+      "note": "Yellow underparts and grey sides of the neck."
+    },
+    {
+      "view": "perched-back",
+      "age": "adult",
+      "sex": "male",
+      "season": "any",
+      "note": "Grey nape and mantle."
+    },
+    {
+      "view": "flight-above",
+      "age": "adult",
+      "sex": "male",
+      "season": "any",
+      "note": "Greenish wings with yellow edges. The flight is the family’s undulating canary flight."
+    },
+    {
+      "view": "flight-below",
+      "age": "adult",
+      "sex": "male",
+      "season": "any",
+      "note": "Yellow below."
+    }
+  ],
+  "calls": [
+    {
+      "sex": "any",
+      "type": "song",
+      "description": "A series of loud, rolling warbles and trills. Grade A song from near Cape Town. The filename is generic.",
+      "recordings": [
+        {
+          "key": "xeno-canto/XC1046125",
+          "source": "https://xeno-canto.org/1046125",
+          "fileUrl": "https://xeno-canto.org/sounds/uploaded/YSGTQVRQZI/XC1046125-20251005_KBG_AKaramitsos_A054C034_251005CB_CXA60_SLE_-3dBNORM.mp3",
+          "author": "African Bioacoustics Community",
+          "license": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ]
+    }
+  ],
+  "images": [],
+  "research": {
+    "confidence": "medium",
+    "needsReview": true,
+    "note": "Status is resident and all twelve months are listed. Newman calls it a common endemic resident. The Kemp code NB was left unchanged. No openly licensed research-grade photograph was found in the Kruger box. Population figures were left unchanged."
+  }
 }
