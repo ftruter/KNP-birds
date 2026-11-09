@@ -7,8 +7,30 @@
     "af": "Bronsvlerkdrawwertjie"
   },
   "family": "glareolidae",
-  "summary": "The details for this species have not been published yet.",
-  "sampleData": true,
+  "size": {
+    "lengthCm": {
+      "min": 25,
+      "max": 25
+    },
+    "note": "Newman's Birds gives 25 cm."
+  },
+  "habitat": "Well-wooded country, especially mopane. It roosts by day under bushes and feeds at night in the open and on roads.",
+  "summary": "An uncommon visitor and resident. Larger than most coursers, with red legs, a red eye-ring, a dark mask, and white eyebrows, throat and underparts. The upper parts and upper breast are light brown. The outer wing has a narrow iridescent purple trailing edge, hard to see. At night it calls ji-ku-it or a plaintive gro-raag. The immature’s head markings are less clear. Newman calls it both a visitor and a resident, so status and months were left unset. The Kemp code VB was left unchanged.",
+  "sampleData": false,
+  "similar": [
+    {
+      "slug": "rhinoptilus-cinctus",
+      "note": "Three-banded Courser has a chestnut V on the throat and two breast bands, with yellow legs. Bronze-winged Courser has red legs, a dark mask and white underparts."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Bronze-winged Courser",
+      "url": "https://newmansbirds.com/birds/bronze-winged-courser/",
+      "publisher": "Newman's Birds",
+      "year": 2026
+    }
+  ],
   "population": {
     "estimate": {
       "low": 2048,
@@ -35,8 +57,171 @@
     },
     "tierApplied": "D"
   },
-  "variants": [],
-  "viewNotes": [],
-  "calls": [],
-  "images": []
+  "variants": [
+    {
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "marks": {
+        "bill": {
+          "colour": null,
+          "shape": null
+        },
+        "eye": {
+          "iris": null,
+          "ring": "red"
+        },
+        "legs": {
+          "colour": "red"
+        },
+        "head": {
+          "crown": null,
+          "face": "black",
+          "throat": "white",
+          "pattern": "Dark mask. White eyebrows and throat."
+        },
+        "upperparts": {
+          "back": "brown",
+          "rump": null,
+          "pattern": "Light brown above."
+        },
+        "underparts": {
+          "breast": "brown",
+          "belly": "white",
+          "pattern": "Light brown upper breast. Rest of the underparts white."
+        },
+        "wings": {
+          "above": null,
+          "below": null,
+          "pattern": "Narrow iridescent purple trailing edge to the outer wing."
+        },
+        "tail": {
+          "colour": null,
+          "shape": null
+        }
+      }
+    },
+    {
+      "age": "immature",
+      "sex": "any",
+      "season": "any",
+      "marks": {
+        "bill": {
+          "colour": null,
+          "shape": null
+        },
+        "eye": {
+          "iris": null,
+          "ring": null
+        },
+        "legs": {
+          "colour": null
+        },
+        "head": {
+          "crown": null,
+          "face": null,
+          "throat": null,
+          "pattern": "Head markings less clearly defined than the adult."
+        },
+        "upperparts": {
+          "back": null,
+          "rump": null,
+          "pattern": null
+        },
+        "underparts": {
+          "breast": null,
+          "belly": null,
+          "pattern": null
+        },
+        "wings": {
+          "above": null,
+          "below": null,
+          "pattern": null
+        },
+        "tail": {
+          "colour": null,
+          "shape": null
+        }
+      }
+    }
+  ],
+  "viewNotes": [
+    {
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Light brown above, a dark mask, white throat and underparts, and red legs."
+    },
+    {
+      "view": "perched-front",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "White throat, a red eye-ring and a dark mask."
+    },
+    {
+      "view": "perched-back",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Light brown upper parts."
+    },
+    {
+      "view": "flight-above",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "A narrow purple trailing edge on the outer wing is hard to see."
+    },
+    {
+      "view": "flight-below",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "White underparts below a light brown upper breast."
+    }
+  ],
+  "calls": [
+    {
+      "sex": "any",
+      "type": "call",
+      "description": "At night, a shrill ji-ku-it or a plaintive gro-raag. Newman says coursers are not particularly vocal. Grade A call from Pafuri, Kruger. The filename names Bronze-winged Courser.",
+      "recordings": [
+        {
+          "key": "xeno-canto/XC696623",
+          "source": "https://xeno-canto.org/696623",
+          "fileUrl": "https://xeno-canto.org/sounds/uploaded/DNKBTPCMSQ/XC696623-Bronze-winged%20Courser%20Pafuri%20211128.185245.mp3",
+          "author": "Derek Solomon",
+          "license": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ]
+    }
+  ],
+  "images": [
+    {
+      "key": "rhinoptilus-chalcopterus/side.jpg",
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "source": "https://www.inaturalist.org/observations/177541993",
+      "fileUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/308795983/large.jpeg",
+      "author": "Daniel Correia",
+      "license": "CC BY-NC 4.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+      "aiGenerated": false,
+      "hosted": false,
+      "alt": "Bronze-winged Courser on a road at night",
+      "caption": "Bronze-winged Courser on a road at night in the Mopani district, with a red eye-ring and red legs."
+    }
+  ],
+  "research": {
+    "confidence": "medium",
+    "needsReview": true,
+    "note": "Newman calls it an uncommon visitor and a resident, so status and months were left unset. The Kemp code VB was left unchanged. Population figures were left unchanged."
+  }
 }

@@ -7,8 +7,31 @@
     "af": "Rooivlerksprinkaanvoël"
   },
   "family": "glareolidae",
-  "summary": "The details for this species have not been published yet.",
-  "sampleData": true,
+  "status": "summer-migrant",
+  "size": {
+    "lengthCm": {
+      "min": 25,
+      "max": 25
+    },
+    "note": "Newman's Birds gives 25 cm."
+  },
+  "habitat": "Flocks on floodplains, estuaries, lakesides and farmlands.",
+  "summary": "A locally common summer resident. Dark brown above, with a buff throat edged black, a buff breast, and a white belly and rump. The underwing coverts are rufous and the secondaries are white-tipped. At rest the tail projects beyond the wingtips, and the base of the bill is redder, and less black, than Black-winged Pratincole. Newman does not describe the voice. Months were left unset. The Kemp name is Redwinged Pratincole and the code VB was left unchanged.",
+  "sampleData": false,
+  "similar": [
+    {
+      "slug": "glareola-nordmanni",
+      "note": "Black-winged Pratincole has entirely blackish underwings and less red on the gape. Collared Pratincole has rufous underwing coverts and white-tipped secondaries."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Collared Pratincole",
+      "url": "https://newmansbirds.com/birds/collared-pratincole/",
+      "publisher": "Newman's Birds",
+      "year": 2026
+    }
+  ],
   "population": {
     "estimate": {
       "low": 8,
@@ -35,8 +58,128 @@
     },
     "tierApplied": "D"
   },
-  "variants": [],
-  "viewNotes": [],
-  "calls": [],
-  "images": []
+  "variants": [
+    {
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "marks": {
+        "bill": {
+          "colour": "red",
+          "shape": "Base redder, and less black, than Black-winged Pratincole."
+        },
+        "eye": {
+          "iris": null,
+          "ring": null
+        },
+        "legs": {
+          "colour": null
+        },
+        "head": {
+          "crown": null,
+          "face": null,
+          "throat": "buff",
+          "pattern": "Buff throat edged black."
+        },
+        "upperparts": {
+          "back": "dark-brown",
+          "rump": "white",
+          "pattern": null
+        },
+        "underparts": {
+          "breast": "buff",
+          "belly": "white",
+          "pattern": null
+        },
+        "wings": {
+          "above": null,
+          "below": "rufous",
+          "pattern": "Rufous underwing coverts and white-tipped secondaries."
+        },
+        "tail": {
+          "colour": null,
+          "shape": "Projects beyond the wingtips at rest."
+        }
+      }
+    }
+  ],
+  "viewNotes": [
+    {
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Dark brown above, buff throat edged black, and a redder bill base."
+    },
+    {
+      "view": "perched-front",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Buff throat with a black edge, and a buff breast."
+    },
+    {
+      "view": "perched-back",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Dark brown upper parts and a white rump. The tail projects beyond the wingtips."
+    },
+    {
+      "view": "flight-above",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Rufous underwing coverts and white-tipped secondaries. Flocks wheel in columns."
+    },
+    {
+      "view": "flight-below",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Rufous underwings, a buff breast and a white belly."
+    }
+  ],
+  "calls": [
+    {
+      "sex": "any",
+      "type": "call",
+      "description": "Newman’s species page does not describe the voice. Grade A call and flight call from Arles, France. The filename is French, glareole a collier.",
+      "recordings": [
+        {
+          "key": "xeno-canto/XC379434",
+          "source": "https://xeno-canto.org/379434",
+          "fileUrl": "https://xeno-canto.org/sounds/uploaded/SDPCHKOHRH/XC379434-glareole%20a%20collie%20cri%20court%202.mp3",
+          "author": "Stanislas Wroza",
+          "license": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ]
+    }
+  ],
+  "images": [
+    {
+      "key": "glareola-pratincola/side.jpg",
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "source": "https://www.inaturalist.org/observations/183858411",
+      "fileUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/320827732/large.jpeg",
+      "author": "jderasmus",
+      "license": "CC BY-NC 4.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+      "aiGenerated": false,
+      "hosted": false,
+      "alt": "Collared Pratincole on dry ground near Komatipoort",
+      "caption": "Collared Pratincole near Komatipoort, with a buff throat edged black and red at the base of the bill."
+    }
+  ],
+  "research": {
+    "confidence": "medium",
+    "needsReview": false,
+    "note": "Newman calls it a locally common summer resident and does not name the months, so monthsPresent was left unset. The Kemp code VB was left unchanged. Population figures were left unchanged."
+  }
 }

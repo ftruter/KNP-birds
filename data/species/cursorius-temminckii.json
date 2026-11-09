@@ -7,8 +7,45 @@
     "af": "Trekdrawwertjie"
   },
   "family": "glareolidae",
-  "summary": "The details for this species have not been published yet.",
-  "sampleData": true,
+  "status": "resident",
+  "size": {
+    "lengthCm": {
+      "min": 23,
+      "max": 23
+    },
+    "note": "Newman's Birds gives 23 cm."
+  },
+  "monthsPresent": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+  ],
+  "habitat": "Pairs and small groups on freshly burned or well-grazed grassland and airfields.",
+  "summary": "A fairly common resident, and nomadic. A small courser with a rufous cap, a rufous lower breast, a white belly and white legs. The immature is speckled buff on the upper parts and crown. It may call a sharp err-err-err in flight. It stands erect, runs, and sometimes bobs its head and tail. The Kemp code VB was left unchanged.",
+  "sampleData": false,
+  "similar": [
+    {
+      "slug": "rhinoptilus-chalcopterus",
+      "note": "Bronze-winged Courser is larger, nocturnal, and has red legs and a dark mask. Temminck’s Courser is the small rufous-capped bird of short grassland, with white legs."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Temminck’s Courser",
+      "url": "https://newmansbirds.com/birds/temmincks-courser/",
+      "publisher": "Newman's Birds",
+      "year": 2026
+    }
+  ],
   "population": {
     "estimate": {
       "low": 512,
@@ -35,8 +72,171 @@
     },
     "tierApplied": "D"
   },
-  "variants": [],
-  "viewNotes": [],
-  "calls": [],
-  "images": []
+  "variants": [
+    {
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "marks": {
+        "bill": {
+          "colour": null,
+          "shape": null
+        },
+        "eye": {
+          "iris": null,
+          "ring": null
+        },
+        "legs": {
+          "colour": "white"
+        },
+        "head": {
+          "crown": "rufous",
+          "face": null,
+          "throat": null,
+          "pattern": null
+        },
+        "upperparts": {
+          "back": null,
+          "rump": null,
+          "pattern": null
+        },
+        "underparts": {
+          "breast": "rufous",
+          "belly": "white",
+          "pattern": "Rufous lower breast and a white underbelly."
+        },
+        "wings": {
+          "above": null,
+          "below": null,
+          "pattern": null
+        },
+        "tail": {
+          "colour": null,
+          "shape": null
+        }
+      }
+    },
+    {
+      "age": "immature",
+      "sex": "any",
+      "season": "any",
+      "marks": {
+        "bill": {
+          "colour": null,
+          "shape": null
+        },
+        "eye": {
+          "iris": null,
+          "ring": null
+        },
+        "legs": {
+          "colour": null
+        },
+        "head": {
+          "crown": "buff",
+          "face": null,
+          "throat": null,
+          "pattern": "Speckled buff on the crown."
+        },
+        "upperparts": {
+          "back": null,
+          "rump": null,
+          "pattern": "Speckled buff on the upper parts."
+        },
+        "underparts": {
+          "breast": null,
+          "belly": null,
+          "pattern": null
+        },
+        "wings": {
+          "above": null,
+          "below": null,
+          "pattern": null
+        },
+        "tail": {
+          "colour": null,
+          "shape": null
+        }
+      }
+    }
+  ],
+  "viewNotes": [
+    {
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Rufous cap, rufous lower breast, white belly and white legs."
+    },
+    {
+      "view": "perched-front",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "White belly and rufous lower breast."
+    },
+    {
+      "view": "perched-back",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Rufous cap. The back colour was not named."
+    },
+    {
+      "view": "flight-above",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "It may call err-err-err in flight. A wing pattern was not described."
+    },
+    {
+      "view": "flight-below",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "White underbelly."
+    }
+  ],
+  "calls": [
+    {
+      "sex": "any",
+      "type": "call",
+      "description": "A sharp err-err-err in flight. Grade A call from the Liben Plain, Ethiopia. The filename names Temminck’s Courser.",
+      "recordings": [
+        {
+          "key": "xeno-canto/XC210305",
+          "source": "https://xeno-canto.org/210305",
+          "fileUrl": "https://xeno-canto.org/sounds/uploaded/CDTGHVBGZP/XC210305-Temminck%27s%20Courser2015-1-4-1.mp3",
+          "author": "Andrew Spencer",
+          "license": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ]
+    }
+  ],
+  "images": [
+    {
+      "key": "cursorius-temminckii/side.jpg",
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "source": "https://www.inaturalist.org/observations/130007261",
+      "fileUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/221022851/large.jpeg",
+      "author": "leuli",
+      "license": "CC BY-NC 4.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+      "aiGenerated": false,
+      "hosted": false,
+      "alt": "Temminck’s Courser on a mound in Kruger grass",
+      "caption": "Temminck’s Courser standing on a mound in Kruger grass, with a rufous cap and a rufous lower breast."
+    }
+  ],
+  "research": {
+    "confidence": "medium",
+    "needsReview": false,
+    "note": "Status is resident and all twelve months are listed. Newman also calls it nomadic. The Kemp code VB was left unchanged. Population figures were left unchanged."
+  }
 }

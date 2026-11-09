@@ -7,8 +7,30 @@
     "af": "Driebanddrawwertjie"
   },
   "family": "glareolidae",
-  "summary": "The details for this species have not been published yet.",
-  "sampleData": true,
+  "size": {
+    "lengthCm": {
+      "min": 28,
+      "max": 28
+    },
+    "note": "Newman's Birds gives 28 cm."
+  },
+  "habitat": "Singly or in pairs in well-grassed woodland and thornveld of the drier regions. When approached it freezes, usually with its back to the observer.",
+  "summary": "An uncommon visitor and resident. The white throat has a chestnut V. A dark brown band crosses the upper breast to the shoulders, and a chestnut band crosses the lower breast. The bill base, eye-ring and legs are yellow. The immature’s lower band is poorly defined. It is mainly nocturnal and calls chick-a-chuck-a-chuck-a-chuck, mostly at night. Newman calls it both a visitor and a resident, so status and months were left unset. The Kemp code VB was left unchanged.",
+  "sampleData": false,
+  "similar": [
+    {
+      "slug": "rhinoptilus-chalcopterus",
+      "note": "Bronze-winged Courser has red legs and a dark mask, without the two breast bands. Three-banded Courser has yellow legs and the chestnut and dark brown bands."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Three-banded Courser",
+      "url": "https://newmansbirds.com/birds/three-banded-courser/",
+      "publisher": "Newman's Birds",
+      "year": 2026
+    }
+  ],
   "population": {
     "estimate": {
       "low": 8,
@@ -35,8 +57,171 @@
     },
     "tierApplied": "D"
   },
-  "variants": [],
-  "viewNotes": [],
-  "calls": [],
-  "images": []
+  "variants": [
+    {
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "marks": {
+        "bill": {
+          "colour": "yellow",
+          "shape": "Yellow at the base."
+        },
+        "eye": {
+          "iris": null,
+          "ring": "yellow"
+        },
+        "legs": {
+          "colour": "yellow"
+        },
+        "head": {
+          "crown": null,
+          "face": null,
+          "throat": "white",
+          "pattern": "Chestnut V-shaped collar on the white throat. Bold head markings."
+        },
+        "upperparts": {
+          "back": null,
+          "rump": null,
+          "pattern": null
+        },
+        "underparts": {
+          "breast": "dark-brown",
+          "belly": "chestnut",
+          "pattern": "Dark brown upper breast-band to the shoulders, and a chestnut lower breast-band. The bands span the breast and do not encircle the neck."
+        },
+        "wings": {
+          "above": null,
+          "below": null,
+          "pattern": null
+        },
+        "tail": {
+          "colour": null,
+          "shape": null
+        }
+      }
+    },
+    {
+      "age": "immature",
+      "sex": "any",
+      "season": "any",
+      "marks": {
+        "bill": {
+          "colour": null,
+          "shape": null
+        },
+        "eye": {
+          "iris": null,
+          "ring": null
+        },
+        "legs": {
+          "colour": null
+        },
+        "head": {
+          "crown": null,
+          "face": null,
+          "throat": null,
+          "pattern": null
+        },
+        "upperparts": {
+          "back": null,
+          "rump": null,
+          "pattern": null
+        },
+        "underparts": {
+          "breast": null,
+          "belly": null,
+          "pattern": "The lower band is poorly defined."
+        },
+        "wings": {
+          "above": null,
+          "below": null,
+          "pattern": null
+        },
+        "tail": {
+          "colour": null,
+          "shape": null
+        }
+      }
+    }
+  ],
+  "viewNotes": [
+    {
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "White throat with a chestnut V, then a dark brown band and a chestnut band."
+    },
+    {
+      "view": "perched-front",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Yellow eye-ring and a yellow base to the bill."
+    },
+    {
+      "view": "perched-back",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "The back colour was not named. It often freezes with its back to the observer."
+    },
+    {
+      "view": "flight-above",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "A separate flight pattern was not described. It is mainly nocturnal."
+    },
+    {
+      "view": "flight-below",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Dark brown upper breast-band and chestnut lower band."
+    }
+  ],
+  "calls": [
+    {
+      "sex": "any",
+      "type": "call",
+      "description": "Mostly at night, chick-a-chuck-a-chuck-a-chuck. Grade A call from Awash National Park, Ethiopia. The filename uses the older name Heuglin’s Courser.",
+      "recordings": [
+        {
+          "key": "xeno-canto/XC210304",
+          "source": "https://xeno-canto.org/210304",
+          "fileUrl": "https://xeno-canto.org/sounds/uploaded/CDTGHVBGZP/XC210304-Heuglin%27s%20Courser2014-12-23-1.mp3",
+          "author": "Andrew Spencer",
+          "license": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ]
+    }
+  ],
+  "images": [
+    {
+      "key": "rhinoptilus-cinctus/side.jpg",
+      "view": "perched-front",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "source": "https://www.inaturalist.org/observations/401529931",
+      "fileUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/736962259/large.jpg",
+      "author": "Phillip Nieuwoudt",
+      "license": "CC BY-NC 4.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+      "aiGenerated": false,
+      "hosted": false,
+      "alt": "Three-banded Courser crouched in dry grass",
+      "caption": "Three-banded Courser crouched in dry grass in the Mopani district, with a striped head and a breast band."
+    }
+  ],
+  "research": {
+    "confidence": "medium",
+    "needsReview": true,
+    "note": "Newman calls it an uncommon visitor and a resident, so status and months were left unset. The Kemp code VB was left unchanged. Population figures were left unchanged."
+  }
 }

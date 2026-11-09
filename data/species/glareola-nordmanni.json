@@ -7,8 +7,31 @@
     "af": "Swartvlerksprinkaanvoël"
   },
   "family": "glareolidae",
-  "summary": "The details for this species have not been published yet.",
-  "sampleData": true,
+  "status": "summer-migrant",
+  "size": {
+    "lengthCm": {
+      "min": 25,
+      "max": 25
+    },
+    "note": "Newman's Birds gives 25 cm."
+  },
+  "habitat": "Flocks on floodlands, estuaries, lakesides and farmlands.",
+  "summary": "A locally common summer visitor, seen mostly in non-breeding plumage, when it lacks the black collar. Dark brown above, with a buff throat edged black, a buff breast, a white belly and rump, and entirely blackish underwings. It has less red on the gape than Collared Pratincole, and slightly more yellow-buff on the lower breast. Newman does not give a call. The stub has no Kemp estimate and none was added.",
+  "sampleData": false,
+  "similar": [
+    {
+      "slug": "glareola-pratincola",
+      "note": "Collared Pratincole has rufous underwing coverts and white-tipped secondaries. Black-winged Pratincole has entirely blackish underwings."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Black-winged Pratincole",
+      "url": "https://newmansbirds.com/birds/black-winged-pratincole/",
+      "publisher": "Newman's Birds",
+      "year": 2026
+    }
+  ],
   "population": {
     "estimate": {
       "low": null,
@@ -21,8 +44,128 @@
     "notes": "No sourced Kruger estimate is currently available; taxonomy or later records require separate research.",
     "sources": []
   },
-  "variants": [],
-  "viewNotes": [],
-  "calls": [],
-  "images": []
+  "variants": [
+    {
+      "age": "adult",
+      "sex": "any",
+      "season": "non-breeding",
+      "marks": {
+        "bill": {
+          "colour": null,
+          "shape": null
+        },
+        "eye": {
+          "iris": null,
+          "ring": null
+        },
+        "legs": {
+          "colour": null
+        },
+        "head": {
+          "crown": null,
+          "face": null,
+          "throat": "buff",
+          "pattern": "Buff throat edged black. Non-breeding plumage lacks the black collar."
+        },
+        "upperparts": {
+          "back": "dark-brown",
+          "rump": "white",
+          "pattern": null
+        },
+        "underparts": {
+          "breast": "buff",
+          "belly": "white",
+          "pattern": "Slightly more yellow-buff on the lower breast than Collared Pratincole."
+        },
+        "wings": {
+          "above": null,
+          "below": "black",
+          "pattern": "Entirely blackish underwings."
+        },
+        "tail": {
+          "colour": null,
+          "shape": null
+        }
+      }
+    }
+  ],
+  "viewNotes": [
+    {
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "any",
+      "season": "non-breeding",
+      "note": "Dark brown above, buff throat edged black, and a white belly. The black collar is absent."
+    },
+    {
+      "view": "perched-front",
+      "age": "adult",
+      "sex": "any",
+      "season": "non-breeding",
+      "note": "Buff throat and breast, white belly."
+    },
+    {
+      "view": "perched-back",
+      "age": "adult",
+      "sex": "any",
+      "season": "non-breeding",
+      "note": "Dark brown upper parts and a white rump."
+    },
+    {
+      "view": "flight-above",
+      "age": "adult",
+      "sex": "any",
+      "season": "non-breeding",
+      "note": "The underwings are entirely blackish."
+    },
+    {
+      "view": "flight-below",
+      "age": "adult",
+      "sex": "any",
+      "season": "non-breeding",
+      "note": "Black underwings, a buff breast and a white belly."
+    }
+  ],
+  "calls": [
+    {
+      "sex": "any",
+      "type": "call",
+      "description": "Newman’s species page does not describe the voice. Grade A call and flight call from Mkhombo Dam, Mpumalanga. The filename names Black-winged Pratincole.",
+      "recordings": [
+        {
+          "key": "xeno-canto/XC301539",
+          "source": "https://xeno-canto.org/301539",
+          "fileUrl": "https://xeno-canto.org/sounds/uploaded/UDDNOHEKEN/XC301539-Pratincole%2C%20Black-winged%20%281%29%3B%20Mkhombo%20Dam%2C%20Mpumulanga%2022-01-2016%201200.mp3",
+          "author": "Daniel Danckwerts",
+          "license": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ]
+    }
+  ],
+  "images": [
+    {
+      "key": "glareola-nordmanni/side.jpg",
+      "view": "flight-below",
+      "age": "adult",
+      "sex": "any",
+      "season": "non-breeding",
+      "source": "https://www.inaturalist.org/observations/338427009",
+      "fileUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/615454465/large.jpg",
+      "author": "Duncan McKenzie",
+      "license": "CC BY-NC 4.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+      "aiGenerated": false,
+      "hosted": false,
+      "alt": "Black-winged Pratincole in flight, black underwings",
+      "caption": "Black-winged Pratincole over the Mopani district. The underwings are black and the belly is white."
+    }
+  ],
+  "research": {
+    "confidence": "medium",
+    "needsReview": true,
+    "note": "Newman calls it a summer visitor and does not name the months, so monthsPresent was left unset. Breeding plumage is mentioned only as the plumage with the black collar, so only non-breeding marks were stored. The stub has no Kemp block and no estimate, and both were left that way."
+  }
 }
