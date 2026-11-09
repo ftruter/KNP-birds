@@ -1,9 +1,9 @@
 {
   "source": "xeno-canto explore catalogue, API v3 recording fields",
   "counts": {
-    "slots": 232,
+    "slots": 235,
     "swapped": 17,
-    "added": 132,
+    "added": 135,
     "kept": 57,
     "none": 26,
     "cleaned": 0
@@ -3627,6 +3627,48 @@
       "quality": "A",
       "country": "South Africa",
       "locality": "Kruger Park, Ehlanzeni District Municipality, Mpumalanga",
+      "cleaned": false,
+      "license": "CC BY-NC-SA 4.0"
+    },
+    {
+      "slug": "emberiza-flaviventris",
+      "scientificName": "Emberiza flaviventris",
+      "index": 0,
+      "type": "song",
+      "action": "added",
+      "from": [],
+      "to": "391998",
+      "quality": "A",
+      "country": "South Africa",
+      "locality": "Hluhluwe-iMfolozi Park",
+      "cleaned": false,
+      "license": "CC BY-NC-SA 4.0"
+    },
+    {
+      "slug": "emberiza-impetuani",
+      "scientificName": "Emberiza impetuani",
+      "index": 0,
+      "type": "song",
+      "action": "added",
+      "from": [],
+      "to": "312689",
+      "quality": "A",
+      "country": "South Africa",
+      "locality": "Cradock (near Mount Zebra National Park), Stormberg District, Eastern Cape",
+      "cleaned": false,
+      "license": "CC BY-NC-SA 4.0"
+    },
+    {
+      "slug": "emberiza-tahapisi",
+      "scientificName": "Emberiza tahapisi",
+      "index": 0,
+      "type": "song",
+      "action": "added",
+      "from": [],
+      "to": "364488",
+      "quality": "A",
+      "country": "South Africa",
+      "locality": "Bushwillow Estate, Vaalkop Dam Nature Reserve, near Beestekraal, North West",
       "cleaned": false,
       "license": "CC BY-NC-SA 4.0"
     }

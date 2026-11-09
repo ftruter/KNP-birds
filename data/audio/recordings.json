@@ -2390,6 +2390,36 @@
           }
         }
       ]
+    },
+    "emberiza-flaviventris": {
+      "calls": [
+        {
+          "index": 0,
+          "quality": {
+            "xeno-canto/XC391998": "A"
+          }
+        }
+      ]
+    },
+    "emberiza-impetuani": {
+      "calls": [
+        {
+          "index": 0,
+          "quality": {
+            "xeno-canto/XC312689": "A"
+          }
+        }
+      ]
+    },
+    "emberiza-tahapisi": {
+      "calls": [
+        {
+          "index": 0,
+          "quality": {
+            "xeno-canto/XC364488": "A"
+          }
+        }
+      ]
     }
   }
 }

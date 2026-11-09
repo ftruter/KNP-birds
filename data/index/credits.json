@@ -8817,14 +8817,42 @@
       "slug": "emberiza-flaviventris",
       "scientificName": "Emberiza flaviventris",
       "commonName": "Golden-breasted Bunting",
-      "images": [],
-      "recordings": [],
+      "images": [
+        {
+          "key": "emberiza-flaviventris/side.jpg",
+          "author": "rastor",
+          "licence": "CC BY-NC 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+          "sourceUrl": "https://www.inaturalist.org/observations/365310628",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ],
+      "recordings": [
+        {
+          "key": "xeno-canto/XC391998",
+          "author": "Tom Wulf",
+          "licence": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "sourceUrl": "https://xeno-canto.org/391998",
+          "aiGenerated": false,
+          "hosted": false,
+          "quality": "A",
+          "callType": "song"
+        }
+      ],
       "sources": [
         {
           "title": "Kemp A.C., Herholdt J.J., Whyte I. & Harrison J. (2001). Birds of the two largest national parks in South Africa: a method to generate estimates of population size for all species and assess their conservation ecology. S. Afr. J. Sci. 97: 393–403.",
           "url": "https://journals.co.za/doi/pdf/10.10520/EJC97367",
           "publisher": "South African Journal of Science",
           "year": 2001
+        },
+        {
+          "title": "Golden-breasted Bunting",
+          "url": "https://newmansbirds.com/birds/golden-breasted-bunting/",
+          "publisher": "Newman's Birds",
+          "year": 2026
         }
       ]
     },
@@ -8832,14 +8860,42 @@
       "slug": "emberiza-impetuani",
       "scientificName": "Emberiza impetuani",
       "commonName": "Lark-like Bunting",
-      "images": [],
-      "recordings": [],
+      "images": [
+        {
+          "key": "emberiza-impetuani/side.jpg",
+          "author": "Duncan McKenzie",
+          "licence": "CC BY-NC 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+          "sourceUrl": "https://www.inaturalist.org/observations/197329330",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ],
+      "recordings": [
+        {
+          "key": "xeno-canto/XC312689",
+          "author": "Lynette Rudman",
+          "licence": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "sourceUrl": "https://xeno-canto.org/312689",
+          "aiGenerated": false,
+          "hosted": false,
+          "quality": "A",
+          "callType": "song"
+        }
+      ],
       "sources": [
         {
           "title": "Kemp A.C., Herholdt J.J., Whyte I. & Harrison J. (2001). Birds of the two largest national parks in South Africa: a method to generate estimates of population size for all species and assess their conservation ecology. S. Afr. J. Sci. 97: 393–403.",
           "url": "https://journals.co.za/doi/pdf/10.10520/EJC97367",
           "publisher": "South African Journal of Science",
           "year": 2001
+        },
+        {
+          "title": "Lark-like Bunting",
+          "url": "https://newmansbirds.com/birds/lark-like-bunting/",
+          "publisher": "Newman's Birds",
+          "year": 2026
         }
       ]
     },
@@ -8847,14 +8903,42 @@
       "slug": "emberiza-tahapisi",
       "scientificName": "Emberiza tahapisi",
       "commonName": "Cinnamon-breasted Bunting",
-      "images": [],
-      "recordings": [],
+      "images": [
+        {
+          "key": "emberiza-tahapisi/side.jpg",
+          "author": "Will Richardson",
+          "licence": "CC BY-NC 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+          "sourceUrl": "https://www.inaturalist.org/observations/338502776",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ],
+      "recordings": [
+        {
+          "key": "xeno-canto/XC364488",
+          "author": "Faansie Peacock",
+          "licence": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "sourceUrl": "https://xeno-canto.org/364488",
+          "aiGenerated": false,
+          "hosted": false,
+          "quality": "A",
+          "callType": "song"
+        }
+      ],
       "sources": [
         {
           "title": "Kemp A.C., Herholdt J.J., Whyte I. & Harrison J. (2001). Birds of the two largest national parks in South Africa: a method to generate estimates of population size for all species and assess their conservation ecology. S. Afr. J. Sci. 97: 393–403.",
           "url": "https://journals.co.za/doi/pdf/10.10520/EJC97367",
           "publisher": "South African Journal of Science",
           "year": 2001
+        },
+        {
+          "title": "Cinnamon-breasted Bunting",
+          "url": "https://newmansbirds.com/birds/cinnamon-breasted-bunting/",
+          "publisher": "Newman's Birds",
+          "year": 2026
         }
       ]
     },
