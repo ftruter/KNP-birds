@@ -7,8 +7,29 @@
     "af": "Roetvalk"
   },
   "family": "falconidae",
-  "summary": "The details for this species have not been published yet.",
-  "sampleData": true,
+  "size": {
+    "lengthCm": {
+      "min": 32,
+      "max": 37
+    },
+    "note": "Wikipedia gives 32–37 cm, with a wingspan of 78–90 cm."
+  },
+  "summary": "A long-distance migrant that winters in East Africa, including eastern South Africa, and Madagascar. Adults are blue-grey and lack the black underwing coverts of Eleonora’s Falcon. The shape is a large Eurasian Hobby or a small Eleonora’s Falcon, with long pointed wings, a long tail and a slim body. The young bird has a dark trailing edge to the wings and tail. Wikipedia does not describe the voice in the text used here. Status and months were left unset. The Kemp code NB was left unchanged.",
+  "sampleData": false,
+  "similar": [
+    {
+      "slug": "falco-subbuteo",
+      "note": "A young Sooty Falcon is described as like a large juvenile Eurasian Hobby, distinguished by the dark trailing edge of the wings and tail."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Sooty falcon",
+      "url": "https://en.wikipedia.org/wiki/Sooty_falcon",
+      "publisher": "Wikipedia",
+      "year": 2026
+    }
+  ],
   "population": {
     "estimate": {
       "low": 2,
@@ -35,8 +56,171 @@
     },
     "tierApplied": "D"
   },
-  "variants": [],
-  "viewNotes": [],
-  "calls": [],
-  "images": []
+  "variants": [
+    {
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "marks": {
+        "bill": {
+          "colour": null,
+          "shape": null
+        },
+        "eye": {
+          "iris": null,
+          "ring": null
+        },
+        "legs": {
+          "colour": null
+        },
+        "head": {
+          "crown": null,
+          "face": null,
+          "throat": null,
+          "pattern": null
+        },
+        "upperparts": {
+          "back": "grey",
+          "rump": null,
+          "pattern": "Blue-grey."
+        },
+        "underparts": {
+          "breast": "grey",
+          "belly": "grey",
+          "pattern": "Blue-grey."
+        },
+        "wings": {
+          "above": null,
+          "below": null,
+          "pattern": "Lacks the black underwing coverts of Eleonora’s Falcon."
+        },
+        "tail": {
+          "colour": null,
+          "shape": "Long."
+        }
+      }
+    },
+    {
+      "age": "juvenile",
+      "sex": "any",
+      "season": "any",
+      "marks": {
+        "bill": {
+          "colour": null,
+          "shape": null
+        },
+        "eye": {
+          "iris": null,
+          "ring": null
+        },
+        "legs": {
+          "colour": null
+        },
+        "head": {
+          "crown": null,
+          "face": null,
+          "throat": null,
+          "pattern": null
+        },
+        "upperparts": {
+          "back": null,
+          "rump": null,
+          "pattern": null
+        },
+        "underparts": {
+          "breast": null,
+          "belly": null,
+          "pattern": null
+        },
+        "wings": {
+          "above": null,
+          "below": null,
+          "pattern": "Dark trailing edge to the wings. Otherwise like a large juvenile Eurasian Hobby."
+        },
+        "tail": {
+          "colour": null,
+          "shape": "Dark trailing edge."
+        }
+      }
+    }
+  ],
+  "viewNotes": [
+    {
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "A slim blue-grey falcon with long pointed wings and a long tail."
+    },
+    {
+      "view": "perched-front",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Blue-grey underparts."
+    },
+    {
+      "view": "perched-back",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Blue-grey upper parts."
+    },
+    {
+      "view": "flight-above",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Long pointed wings. The adult lacks black underwing coverts."
+    },
+    {
+      "view": "flight-below",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Blue-grey below. The young bird shows a dark trailing edge."
+    }
+  ],
+  "calls": [
+    {
+      "sex": "any",
+      "type": "call",
+      "description": "The Wikipedia text used here does not describe the voice. Grade A call from Duba, Saudi Arabia. The filename names Sooty Falcon.",
+      "recordings": [
+        {
+          "key": "xeno-canto/XC739067",
+          "source": "https://xeno-canto.org/739067",
+          "fileUrl": "https://xeno-canto.org/sounds/uploaded/AYKHDFBYIH/XC739067-Sooty%20Falcon%20call%20very%20good%202020%2010%2027%20Silah%20Main%20Island%2C%20at%20sea%20Duba_2439.mp3",
+          "author": "David Darrell-Lambert",
+          "license": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ]
+    }
+  ],
+  "images": [
+    {
+      "key": "falco-concolor/side.jpg",
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "source": "https://www.inaturalist.org/observations/197604664",
+      "fileUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/348082035/large.jpeg",
+      "author": "Duncan McKenzie",
+      "license": "CC BY-NC 4.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+      "aiGenerated": false,
+      "hosted": false,
+      "alt": "Sooty Falcon in a bare Kruger tree",
+      "caption": "Sooty Falcon perched in a bare tree in Kruger. The bird is distant and grey."
+    }
+  ],
+  "research": {
+    "confidence": "medium",
+    "needsReview": true,
+    "note": "No Newman page was found. Wikipedia says it winters in eastern South Africa and does not name months, so status and monthsPresent were left unset. Population figures were left unchanged."
+  }
 }

@@ -6,8 +6,8 @@
     "en": "Falcons and kestrels",
     "af": "Valke"
   },
-  "summary": "Field notes for this family are still to be written.",
-  "sampleData": true,
+  "summary": "Small raptors with pointed wings and, usually, sideburns. Females are larger than males. Kruger has nine. Lanner Falcon and Rock Kestrel are the residents Newman names as such. Amur Falcon, Lesser Kestrel, Eurasian Hobby and Red-footed Falcon are summer visitors. Peregrine Falcon is both a resident and a summer visitor. Sooty Falcon winters in the east, and Dickinson’s Kestrel is the grey kestrel of palm savanna.",
+  "sampleData": false,
   "species": [
     {
       "slug": "falco-amurensis",

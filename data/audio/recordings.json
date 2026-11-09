@@ -2600,6 +2600,152 @@
           }
         }
       ]
+    },
+    "falco-amurensis": {
+      "calls": [
+        {
+          "index": 0,
+          "quality": {
+            "xeno-canto/XC266729": "A"
+          }
+        }
+      ]
+    },
+    "falco-biarmicus": {
+      "calls": [
+        {
+          "index": 0,
+          "quality": {
+            "xeno-canto/XC577955": "A"
+          }
+        }
+      ]
+    },
+    "falco-concolor": {
+      "calls": [
+        {
+          "index": 0,
+          "quality": {
+            "xeno-canto/XC739067": "A"
+          }
+        }
+      ]
+    },
+    "falco-dickinsoni": {
+      "calls": [
+        {
+          "index": 0,
+          "quality": {}
+        }
+      ]
+    },
+    "falco-naumanni": {
+      "calls": [
+        {
+          "index": 0,
+          "quality": {
+            "xeno-canto/XC149085": "A"
+          }
+        }
+      ]
+    },
+    "falco-peregrinus": {
+      "calls": [
+        {
+          "index": 0,
+          "quality": {
+            "xeno-canto/XC48465": "A"
+          }
+        }
+      ]
+    },
+    "falco-rupicolus": {
+      "calls": [
+        {
+          "index": 0,
+          "quality": {
+            "xeno-canto/XC1073735": "A"
+          }
+        }
+      ]
+    },
+    "falco-subbuteo": {
+      "calls": [
+        {
+          "index": 0,
+          "quality": {
+            "xeno-canto/XC42346": "A"
+          }
+        }
+      ]
+    },
+    "falco-vespertinus": {
+      "calls": [
+        {
+          "index": 0,
+          "quality": {
+            "xeno-canto/XC154405": "A"
+          }
+        }
+      ]
+    },
+    "crithagra-atrogularis": {
+      "calls": [
+        {
+          "index": 0,
+          "quality": {
+            "xeno-canto/XC472484": "A"
+          }
+        }
+      ]
+    },
+    "crithagra-citrinipectus": {
+      "calls": [
+        {
+          "index": 0,
+          "quality": {}
+        }
+      ]
+    },
+    "crithagra-gularis": {
+      "calls": [
+        {
+          "index": 0,
+          "quality": {
+            "xeno-canto/XC252812": "A"
+          }
+        }
+      ]
+    },
+    "crithagra-scotops": {
+      "calls": [
+        {
+          "index": 0,
+          "quality": {
+            "xeno-canto/XC500264": "A"
+          }
+        }
+      ]
+    },
+    "crithagra-sulphurata": {
+      "calls": [
+        {
+          "index": 0,
+          "quality": {
+            "xeno-canto/XC650874": "A"
+          }
+        }
+      ]
+    },
+    "serinus-canicollis": {
+      "calls": [
+        {
+          "index": 0,
+          "quality": {
+            "xeno-canto/XC1046125": "A"
+          }
+        }
+      ]
     }
   }
 }

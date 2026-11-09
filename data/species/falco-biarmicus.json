@@ -7,8 +7,45 @@
     "af": "Edelvalk"
   },
   "family": "falconidae",
-  "summary": "The details for this species have not been published yet.",
-  "sampleData": true,
+  "status": "resident",
+  "size": {
+    "lengthCm": {
+      "min": 40,
+      "max": 45
+    },
+    "note": "Newman's Birds gives 40–45 cm and 400–800 g."
+  },
+  "monthsPresent": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+  ],
+  "habitat": "Most habitats, often near cliffs in lightly wooded country, and also buildings and Eucalyptus plantations.",
+  "summary": "A fairly common resident, the largest falcon in the region. Grey above, with a russet crown and pale-buff underparts. The orbital rings, cere and legs are yellow. The immature has a paler crown and heavily streaked underparts. In flight it looks broader-winged than a Peregrine, with a more leisurely action. Newman does not describe the voice. The Kemp code RB was left unchanged.",
+  "sampleData": false,
+  "similar": [
+    {
+      "slug": "falco-peregrinus",
+      "note": "Peregrine Falcon has a black crown and broader sideburns, and looks sharper-winged. Lanner Falcon has a russet crown and pale-buff underparts at all ages."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Lanner Falcon",
+      "url": "https://newmansbirds.com/birds/lanner-falcon/",
+      "publisher": "Newman's Birds",
+      "year": 2026
+    }
+  ],
   "population": {
     "estimate": {
       "low": 8,
@@ -35,8 +72,171 @@
     },
     "tierApplied": "D"
   },
-  "variants": [],
-  "viewNotes": [],
-  "calls": [],
-  "images": []
+  "variants": [
+    {
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "marks": {
+        "bill": {
+          "colour": null,
+          "shape": null
+        },
+        "eye": {
+          "iris": null,
+          "ring": "yellow"
+        },
+        "legs": {
+          "colour": "yellow"
+        },
+        "head": {
+          "crown": "rufous",
+          "face": null,
+          "throat": null,
+          "pattern": "Russet crown."
+        },
+        "upperparts": {
+          "back": "grey",
+          "rump": null,
+          "pattern": null
+        },
+        "underparts": {
+          "breast": "buff",
+          "belly": "buff",
+          "pattern": "Pale buff, also described as buffy-white."
+        },
+        "wings": {
+          "above": null,
+          "below": null,
+          "pattern": null
+        },
+        "tail": {
+          "colour": null,
+          "shape": null
+        }
+      }
+    },
+    {
+      "age": "immature",
+      "sex": "any",
+      "season": "any",
+      "marks": {
+        "bill": {
+          "colour": null,
+          "shape": null
+        },
+        "eye": {
+          "iris": null,
+          "ring": null
+        },
+        "legs": {
+          "colour": null
+        },
+        "head": {
+          "crown": "buff",
+          "face": null,
+          "throat": null,
+          "pattern": "Paler crown than the adult."
+        },
+        "upperparts": {
+          "back": null,
+          "rump": null,
+          "pattern": null
+        },
+        "underparts": {
+          "breast": null,
+          "belly": null,
+          "pattern": "Heavily streaked underparts."
+        },
+        "wings": {
+          "above": null,
+          "below": null,
+          "pattern": null
+        },
+        "tail": {
+          "colour": null,
+          "shape": null
+        }
+      }
+    }
+  ],
+  "viewNotes": [
+    {
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Grey above, russet crown and pale-buff underparts."
+    },
+    {
+      "view": "perched-front",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Pale-buff underparts and a yellow orbital ring."
+    },
+    {
+      "view": "perched-back",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Grey upper parts and a russet crown."
+    },
+    {
+      "view": "flight-above",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Broader-winged than a Peregrine, with deeper wingbeats, a spread tail and circling glides."
+    },
+    {
+      "view": "flight-below",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Pale-buff underparts. The underside of the wing was not given a separate colour."
+    }
+  ],
+  "calls": [
+    {
+      "sex": "any",
+      "type": "call",
+      "description": "Newman’s species page does not describe the voice. Grade A call from Beaucens, France. The filename is FALBIA.",
+      "recordings": [
+        {
+          "key": "xeno-canto/XC577955",
+          "source": "https://xeno-canto.org/577955",
+          "fileUrl": "https://xeno-canto.org/sounds/uploaded/JCPKCBKKAQ/XC577955-FALBIA_100401_Beaucens_GO2.mp3",
+          "author": "Olivier SWIFT",
+          "license": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ]
+    }
+  ],
+  "images": [
+    {
+      "key": "falco-biarmicus/side.jpg",
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "source": "https://www.inaturalist.org/observations/336695698",
+      "fileUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/611905796/large.jpg",
+      "author": "marajua",
+      "license": "CC BY-NC 4.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+      "aiGenerated": false,
+      "hosted": false,
+      "alt": "Lanner Falcon in Kruger",
+      "caption": "Lanner Falcon in the Ehlanzeni district."
+    }
+  ],
+  "research": {
+    "confidence": "medium",
+    "needsReview": false,
+    "note": "Status is resident and all twelve months are listed. Population figures were left unchanged."
+  }
 }
