@@ -7,8 +7,49 @@
     "af": "Witborskraai"
   },
   "family": "corvidae",
-  "summary": "The details for this species have not been published yet.",
-  "sampleData": true,
+  "status": "resident",
+  "monthsPresent": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+  ],
+  "size": {
+    "lengthCm": {
+      "min": 46,
+      "max": 52
+    },
+    "note": "Newman's Birds gives 46–52 cm."
+  },
+  "habitat": "Loose flocks and large roosts around settlements, refuse dumps, school fields, highways and farmland, where it takes scraps.",
+  "summary": "A common, widespread resident. Black, with a white breast and collar. The call is a loud kwaak. The Newman family text says the sexes are alike and immatures are similar to adults. The Kemp code VB was left unchanged.",
+  "sampleData": false,
+  "similar": [
+    {
+      "slug": "corvus-capensis",
+      "note": "Cape Crow is entirely glossy black. Pied Crow has the white breast and collar."
+    },
+    {
+      "slug": "corvus-albicollis",
+      "note": "White-necked Raven has a white nape only, and a much heavier bill. Pied Crow has a white breast and collar."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Pied Crow",
+      "url": "https://newmansbirds.com/birds/pied-crow/",
+      "publisher": "Newman's Birds",
+      "year": 2026
+    }
+  ],
   "population": {
     "estimate": {
       "low": 8,
@@ -35,8 +76,128 @@
     },
     "tierApplied": "D"
   },
-  "variants": [],
-  "viewNotes": [],
-  "calls": [],
-  "images": []
+  "variants": [
+    {
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "marks": {
+        "bill": {
+          "colour": "black",
+          "shape": null
+        },
+        "eye": {
+          "iris": null,
+          "ring": null
+        },
+        "legs": {
+          "colour": null
+        },
+        "head": {
+          "crown": "black",
+          "face": "black",
+          "throat": "white",
+          "pattern": "White collar."
+        },
+        "upperparts": {
+          "back": "black",
+          "rump": null,
+          "pattern": null
+        },
+        "underparts": {
+          "breast": "white",
+          "belly": "black",
+          "pattern": "White breast and collar."
+        },
+        "wings": {
+          "above": "black",
+          "below": null,
+          "pattern": null
+        },
+        "tail": {
+          "colour": null,
+          "shape": null
+        }
+      }
+    }
+  ],
+  "viewNotes": [
+    {
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Black crow with a white breast and collar, often near people."
+    },
+    {
+      "view": "perched-front",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "White collar and white breast."
+    },
+    {
+      "view": "perched-back",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Black back. The collar shows at the neck."
+    },
+    {
+      "view": "flight-above",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "The upperwing was not named."
+    },
+    {
+      "view": "flight-below",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "White breast, otherwise black below."
+    }
+  ],
+  "calls": [
+    {
+      "sex": "any",
+      "type": "call",
+      "description": "A loud kwaak. The texts do not separate the sexes. Grade A from near Cape Town. The filename says crow and shows a 250 Hz high-pass applied by the recordist.",
+      "recordings": [
+        {
+          "key": "xeno-canto/XC1060335",
+          "source": "https://xeno-canto.org/1060335",
+          "fileUrl": "https://xeno-canto.org/sounds/uploaded/YSGTQVRQZI/XC1060335-20251125_DV_AKaramitsos_XA60_A008C018_251125CE_SLE_250HzHP_-3dBNORM_crow.mp3",
+          "author": "African Bioacoustics Community",
+          "license": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ]
+    }
+  ],
+  "images": [
+    {
+      "key": "corvus-albus/side.jpg",
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "source": "https://www.inaturalist.org/observations/398217492",
+      "fileUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/730471232/large.jpg",
+      "author": "Africa Gomez",
+      "license": "CC BY-NC 4.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+      "aiGenerated": false,
+      "hosted": false,
+      "alt": "Pied Crow perched on a Kruger structure, black with a white collar",
+      "caption": "Pied Crow perched on a Kruger structure, black with a white collar"
+    }
+  ],
+  "research": {
+    "confidence": "medium",
+    "needsReview": false,
+    "note": "Status is resident and all twelve months are listed. Newman calls it a common resident. Population figures were left unchanged."
+  }
 }

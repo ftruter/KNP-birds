@@ -7308,14 +7308,42 @@
       "slug": "corvus-albicollis",
       "scientificName": "Corvus albicollis",
       "commonName": "White-necked Raven",
-      "images": [],
-      "recordings": [],
+      "images": [
+        {
+          "key": "corvus-albicollis/side.jpg",
+          "author": "Hannah Comstock",
+          "licence": "CC BY-NC 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+          "sourceUrl": "https://www.inaturalist.org/observations/194556352",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ],
+      "recordings": [
+        {
+          "key": "xeno-canto/XC252930",
+          "author": "Lynette Rudman",
+          "licence": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "sourceUrl": "https://xeno-canto.org/252930",
+          "aiGenerated": false,
+          "hosted": false,
+          "quality": "A",
+          "callType": "call"
+        }
+      ],
       "sources": [
         {
           "title": "Kemp A.C., Herholdt J.J., Whyte I. & Harrison J. (2001). Birds of the two largest national parks in South Africa: a method to generate estimates of population size for all species and assess their conservation ecology. S. Afr. J. Sci. 97: 393–403.",
           "url": "https://journals.co.za/doi/pdf/10.10520/EJC97367",
           "publisher": "South African Journal of Science",
           "year": 2001
+        },
+        {
+          "title": "White-necked Raven",
+          "url": "https://newmansbirds.com/birds/white-necked-raven/",
+          "publisher": "Newman's Birds",
+          "year": 2026
         }
       ]
     },
@@ -7323,14 +7351,42 @@
       "slug": "corvus-albus",
       "scientificName": "Corvus albus",
       "commonName": "Pied Crow",
-      "images": [],
-      "recordings": [],
+      "images": [
+        {
+          "key": "corvus-albus/side.jpg",
+          "author": "Africa Gomez",
+          "licence": "CC BY-NC 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+          "sourceUrl": "https://www.inaturalist.org/observations/398217492",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ],
+      "recordings": [
+        {
+          "key": "xeno-canto/XC1060335",
+          "author": "African Bioacoustics Community",
+          "licence": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "sourceUrl": "https://xeno-canto.org/1060335",
+          "aiGenerated": false,
+          "hosted": false,
+          "quality": "A",
+          "callType": "call"
+        }
+      ],
       "sources": [
         {
           "title": "Kemp A.C., Herholdt J.J., Whyte I. & Harrison J. (2001). Birds of the two largest national parks in South Africa: a method to generate estimates of population size for all species and assess their conservation ecology. S. Afr. J. Sci. 97: 393–403.",
           "url": "https://journals.co.za/doi/pdf/10.10520/EJC97367",
           "publisher": "South African Journal of Science",
           "year": 2001
+        },
+        {
+          "title": "Pied Crow",
+          "url": "https://newmansbirds.com/birds/pied-crow/",
+          "publisher": "Newman's Birds",
+          "year": 2026
         }
       ]
     },
@@ -7339,13 +7395,31 @@
       "scientificName": "Corvus capensis",
       "commonName": "Cape Crow",
       "images": [],
-      "recordings": [],
+      "recordings": [
+        {
+          "key": "xeno-canto/XC247932",
+          "author": "Lynette Rudman",
+          "licence": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "sourceUrl": "https://xeno-canto.org/247932",
+          "aiGenerated": false,
+          "hosted": false,
+          "quality": "A",
+          "callType": "call"
+        }
+      ],
       "sources": [
         {
           "title": "Kemp A.C., Herholdt J.J., Whyte I. & Harrison J. (2001). Birds of the two largest national parks in South Africa: a method to generate estimates of population size for all species and assess their conservation ecology. S. Afr. J. Sci. 97: 393–403.",
           "url": "https://journals.co.za/doi/pdf/10.10520/EJC97367",
           "publisher": "South African Journal of Science",
           "year": 2001
+        },
+        {
+          "title": "Cape Crow",
+          "url": "https://newmansbirds.com/birds/cape-crow/",
+          "publisher": "Newman's Birds",
+          "year": 2026
         }
       ]
     },

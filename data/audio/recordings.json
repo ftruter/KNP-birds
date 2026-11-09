@@ -1202,6 +1202,36 @@
         }
       ]
     },
+    "corvus-albicollis": {
+      "calls": [
+        {
+          "index": 0,
+          "quality": {
+            "xeno-canto/XC252930": "A"
+          }
+        }
+      ]
+    },
+    "corvus-albus": {
+      "calls": [
+        {
+          "index": 0,
+          "quality": {
+            "xeno-canto/XC1060335": "A"
+          }
+        }
+      ]
+    },
+    "corvus-capensis": {
+      "calls": [
+        {
+          "index": 0,
+          "quality": {
+            "xeno-canto/XC247932": "A"
+          }
+        }
+      ]
+    },
     "corypha-africana": {
       "calls": [
         {

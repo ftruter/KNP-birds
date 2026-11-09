@@ -1,9 +1,9 @@
 {
   "source": "xeno-canto explore catalogue, API v3 recording fields",
   "counts": {
-    "slots": 213,
+    "slots": 216,
     "swapped": 17,
-    "added": 113,
+    "added": 116,
     "kept": 57,
     "none": 26,
     "cleaned": 0
@@ -3361,6 +3361,48 @@
       "quality": "A",
       "country": "South Africa",
       "locality": "Port Alfred, Western District, Eastern Cape",
+      "cleaned": false,
+      "license": "CC BY-NC-SA 4.0"
+    },
+    {
+      "slug": "corvus-albicollis",
+      "scientificName": "Corvus albicollis",
+      "index": 0,
+      "type": "call",
+      "action": "added",
+      "from": [],
+      "to": "252930",
+      "quality": "A",
+      "country": "South Africa",
+      "locality": "Aberdeen Plain, Western District, Eastern Cape",
+      "cleaned": false,
+      "license": "CC BY-NC-SA 4.0"
+    },
+    {
+      "slug": "corvus-albus",
+      "scientificName": "Corvus albus",
+      "index": 0,
+      "type": "call",
+      "action": "added",
+      "from": [],
+      "to": "1060335",
+      "quality": "A",
+      "country": "South Africa",
+      "locality": "Botterblom Nature Reserve (near Cape Town), City of Cape Town Metropolitan Municipality",
+      "cleaned": false,
+      "license": "CC BY-NC-SA 4.0"
+    },
+    {
+      "slug": "corvus-capensis",
+      "scientificName": "Corvus capensis",
+      "index": 0,
+      "type": "call",
+      "action": "added",
+      "from": [],
+      "to": "247932",
+      "quality": "A",
+      "country": "South Africa",
+      "locality": "Somerset East, Western District, Eastern Cape",
       "cleaned": false,
       "license": "CC BY-NC-SA 4.0"
     }
