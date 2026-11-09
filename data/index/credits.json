@@ -1812,7 +1812,17 @@
       "slug": "aplopelia-larvata",
       "scientificName": "Aplopelia larvata",
       "commonName": "Lemon Dove",
-      "images": [],
+      "images": [
+        {
+          "key": "aplopelia-larvata/side.jpg",
+          "author": "Yolande Oelsen",
+          "licence": "CC BY-NC 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+          "sourceUrl": "https://www.inaturalist.org/observations/334940684",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ],
       "recordings": [],
       "sources": [
         {
@@ -1820,6 +1830,12 @@
           "url": "https://journals.co.za/doi/pdf/10.10520/EJC97367",
           "publisher": "South African Journal of Science",
           "year": 2001
+        },
+        {
+          "title": "Lemon Dove",
+          "url": "https://newmansbirds.com/birds/lemon-dove/",
+          "publisher": "Newman's Birds",
+          "year": 2026
         }
       ]
     },
@@ -6762,13 +6778,31 @@
       "scientificName": "Columba arquatrix",
       "commonName": "African Olive Pigeon",
       "images": [],
-      "recordings": [],
+      "recordings": [
+        {
+          "key": "xeno-canto/XC386792",
+          "author": "Lynette Rudman",
+          "licence": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "sourceUrl": "https://xeno-canto.org/386792",
+          "aiGenerated": false,
+          "hosted": false,
+          "quality": "B",
+          "callType": "call"
+        }
+      ],
       "sources": [
         {
           "title": "Kemp A.C., Herholdt J.J., Whyte I. & Harrison J. (2001). Birds of the two largest national parks in South Africa: a method to generate estimates of population size for all species and assess their conservation ecology. S. Afr. J. Sci. 97: 393–403.",
           "url": "https://journals.co.za/doi/pdf/10.10520/EJC97367",
           "publisher": "South African Journal of Science",
           "year": 2001
+        },
+        {
+          "title": "African Olive Pigeon",
+          "url": "https://newmansbirds.com/birds/african-olive-pigeon/",
+          "publisher": "Newman's Birds",
+          "year": 2026
         }
       ]
     },
@@ -6776,14 +6810,42 @@
       "slug": "columba-guinea",
       "scientificName": "Columba guinea",
       "commonName": "Speckled Pigeon",
-      "images": [],
-      "recordings": [],
+      "images": [
+        {
+          "key": "columba-guinea/side.jpg",
+          "author": "Simon M Bell",
+          "licence": "CC BY-NC 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+          "sourceUrl": "https://www.inaturalist.org/observations/318044966",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ],
+      "recordings": [
+        {
+          "key": "xeno-canto/XC529796",
+          "author": "Tony Archer",
+          "licence": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "sourceUrl": "https://xeno-canto.org/529796",
+          "aiGenerated": false,
+          "hosted": false,
+          "quality": "A",
+          "callType": "call"
+        }
+      ],
       "sources": [
         {
           "title": "Kemp A.C., Herholdt J.J., Whyte I. & Harrison J. (2001). Birds of the two largest national parks in South Africa: a method to generate estimates of population size for all species and assess their conservation ecology. S. Afr. J. Sci. 97: 393–403.",
           "url": "https://journals.co.za/doi/pdf/10.10520/EJC97367",
           "publisher": "South African Journal of Science",
           "year": 2001
+        },
+        {
+          "title": "Speckled Pigeon",
+          "url": "https://newmansbirds.com/birds/speckled-pigeon/",
+          "publisher": "Newman's Birds",
+          "year": 2026
         }
       ]
     },
@@ -6791,14 +6853,42 @@
       "slug": "columba-livia",
       "scientificName": "Columba livia",
       "commonName": "Rock Dove",
-      "images": [],
-      "recordings": [],
+      "images": [
+        {
+          "key": "columba-livia/side.jpg",
+          "author": "pat_ngobeni",
+          "licence": "CC BY-NC 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+          "sourceUrl": "https://www.inaturalist.org/observations/87138075",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ],
+      "recordings": [
+        {
+          "key": "xeno-canto/XC541143",
+          "author": "Marie-Lan Taÿ Pamart",
+          "licence": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "sourceUrl": "https://xeno-canto.org/541143",
+          "aiGenerated": false,
+          "hosted": false,
+          "quality": "A",
+          "callType": "call"
+        }
+      ],
       "sources": [
         {
           "title": "Kemp A.C., Herholdt J.J., Whyte I. & Harrison J. (2001). Birds of the two largest national parks in South Africa: a method to generate estimates of population size for all species and assess their conservation ecology. S. Afr. J. Sci. 97: 393–403.",
           "url": "https://journals.co.za/doi/pdf/10.10520/EJC97367",
           "publisher": "South African Journal of Science",
           "year": 2001
+        },
+        {
+          "title": "Rock Dove (Feral Pigeon)",
+          "url": "https://newmansbirds.com/birds/rock-dove-feral-pigeon/",
+          "publisher": "Newman's Birds",
+          "year": 2026
         }
       ]
     },
@@ -12635,14 +12725,42 @@
       "slug": "oena-capensis",
       "scientificName": "Oena capensis",
       "commonName": "Namaqua Dove",
-      "images": [],
-      "recordings": [],
+      "images": [
+        {
+          "key": "oena-capensis/side.jpg",
+          "author": "Paul Hoekman",
+          "licence": "CC BY 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by/4.0/",
+          "sourceUrl": "https://www.inaturalist.org/observations/290059338",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ],
+      "recordings": [
+        {
+          "key": "xeno-canto/XC496248",
+          "author": "Tony Archer",
+          "licence": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "sourceUrl": "https://xeno-canto.org/496248",
+          "aiGenerated": false,
+          "hosted": false,
+          "quality": "A",
+          "callType": "call"
+        }
+      ],
       "sources": [
         {
           "title": "Kemp A.C., Herholdt J.J., Whyte I. & Harrison J. (2001). Birds of the two largest national parks in South Africa: a method to generate estimates of population size for all species and assess their conservation ecology. S. Afr. J. Sci. 97: 393–403.",
           "url": "https://journals.co.za/doi/pdf/10.10520/EJC97367",
           "publisher": "South African Journal of Science",
           "year": 2001
+        },
+        {
+          "title": "Namaqua Dove",
+          "url": "https://newmansbirds.com/birds/namaqua-dove/",
+          "publisher": "Newman's Birds",
+          "year": 2026
         }
       ]
     },
@@ -14425,14 +14543,42 @@
       "slug": "spilopelia-senegalensis",
       "scientificName": "Spilopelia senegalensis",
       "commonName": "Laughing Dove",
-      "images": [],
-      "recordings": [],
+      "images": [
+        {
+          "key": "spilopelia-senegalensis/side.jpg",
+          "author": "olwensands",
+          "licence": "CC BY-NC 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+          "sourceUrl": "https://www.inaturalist.org/observations/248996456",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ],
+      "recordings": [
+        {
+          "key": "xeno-canto/XC1077428",
+          "author": "Niall Perrins",
+          "licence": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "sourceUrl": "https://xeno-canto.org/1077428",
+          "aiGenerated": false,
+          "hosted": false,
+          "quality": "A",
+          "callType": "call"
+        }
+      ],
       "sources": [
         {
           "title": "Kemp A.C., Herholdt J.J., Whyte I. & Harrison J. (2001). Birds of the two largest national parks in South Africa: a method to generate estimates of population size for all species and assess their conservation ecology. S. Afr. J. Sci. 97: 393–403.",
           "url": "https://journals.co.za/doi/pdf/10.10520/EJC97367",
           "publisher": "South African Journal of Science",
           "year": 2001
+        },
+        {
+          "title": "Laughing Dove",
+          "url": "https://newmansbirds.com/birds/laughing-dove/",
+          "publisher": "Newman's Birds",
+          "year": 2026
         }
       ]
     },
@@ -14559,14 +14705,42 @@
       "slug": "streptopelia-capicola",
       "scientificName": "Streptopelia capicola",
       "commonName": "Cape Turtle (Ring-necked) Dove",
-      "images": [],
-      "recordings": [],
+      "images": [
+        {
+          "key": "streptopelia-capicola/side.jpg",
+          "author": "jandutoit",
+          "licence": "CC BY-NC 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+          "sourceUrl": "https://www.inaturalist.org/observations/217648562",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ],
+      "recordings": [
+        {
+          "key": "xeno-canto/XC1149018",
+          "author": "African Bioacoustics Community",
+          "licence": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "sourceUrl": "https://xeno-canto.org/1149018",
+          "aiGenerated": false,
+          "hosted": false,
+          "quality": "A",
+          "callType": "call"
+        }
+      ],
       "sources": [
         {
           "title": "Kemp A.C., Herholdt J.J., Whyte I. & Harrison J. (2001). Birds of the two largest national parks in South Africa: a method to generate estimates of population size for all species and assess their conservation ecology. S. Afr. J. Sci. 97: 393–403.",
           "url": "https://journals.co.za/doi/pdf/10.10520/EJC97367",
           "publisher": "South African Journal of Science",
           "year": 2001
+        },
+        {
+          "title": "Ring-necked Dove",
+          "url": "https://newmansbirds.com/birds/ring-necked-dove/",
+          "publisher": "Newman's Birds",
+          "year": 2026
         }
       ]
     },
@@ -14574,14 +14748,42 @@
       "slug": "streptopelia-decipiens",
       "scientificName": "Streptopelia decipiens",
       "commonName": "African Mourning (Mourning Collared) Dove",
-      "images": [],
-      "recordings": [],
+      "images": [
+        {
+          "key": "streptopelia-decipiens/side.jpg",
+          "author": "Audrey Whitlock",
+          "licence": "CC BY-NC 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+          "sourceUrl": "https://www.inaturalist.org/observations/260025109",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ],
+      "recordings": [
+        {
+          "key": "xeno-canto/XC472382",
+          "author": "Oscar Campbell",
+          "licence": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "sourceUrl": "https://xeno-canto.org/472382",
+          "aiGenerated": false,
+          "hosted": false,
+          "quality": "A",
+          "callType": "call"
+        }
+      ],
       "sources": [
         {
           "title": "Kemp A.C., Herholdt J.J., Whyte I. & Harrison J. (2001). Birds of the two largest national parks in South Africa: a method to generate estimates of population size for all species and assess their conservation ecology. S. Afr. J. Sci. 97: 393–403.",
           "url": "https://journals.co.za/doi/pdf/10.10520/EJC97367",
           "publisher": "South African Journal of Science",
           "year": 2001
+        },
+        {
+          "title": "Mourning Collared Dove",
+          "url": "https://newmansbirds.com/birds/mourning-collared-dove/",
+          "publisher": "Newman's Birds",
+          "year": 2026
         }
       ]
     },
@@ -14589,14 +14791,42 @@
       "slug": "streptopelia-semitorquata",
       "scientificName": "Streptopelia semitorquata",
       "commonName": "Red-eyed Dove",
-      "images": [],
-      "recordings": [],
+      "images": [
+        {
+          "key": "streptopelia-semitorquata/side.jpg",
+          "author": "Wyatt Downey",
+          "licence": "CC BY-NC 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+          "sourceUrl": "https://www.inaturalist.org/observations/237759949",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ],
+      "recordings": [
+        {
+          "key": "xeno-canto/XC529795",
+          "author": "Tony Archer",
+          "licence": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "sourceUrl": "https://xeno-canto.org/529795",
+          "aiGenerated": false,
+          "hosted": false,
+          "quality": "A",
+          "callType": "call"
+        }
+      ],
       "sources": [
         {
           "title": "Kemp A.C., Herholdt J.J., Whyte I. & Harrison J. (2001). Birds of the two largest national parks in South Africa: a method to generate estimates of population size for all species and assess their conservation ecology. S. Afr. J. Sci. 97: 393–403.",
           "url": "https://journals.co.za/doi/pdf/10.10520/EJC97367",
           "publisher": "South African Journal of Science",
           "year": 2001
+        },
+        {
+          "title": "Red-eyed Dove",
+          "url": "https://newmansbirds.com/birds/red-eyed-dove/",
+          "publisher": "Newman's Birds",
+          "year": 2026
         }
       ]
     },
@@ -15509,14 +15739,42 @@
       "slug": "treron-calvus",
       "scientificName": "Treron calvus",
       "commonName": "African Green Pigeon",
-      "images": [],
-      "recordings": [],
+      "images": [
+        {
+          "key": "treron-calvus/side.jpg",
+          "author": "Tony Doty",
+          "licence": "CC BY-NC 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+          "sourceUrl": "https://www.inaturalist.org/observations/268101579",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ],
+      "recordings": [
+        {
+          "key": "xeno-canto/XC394356",
+          "author": "Gary Allport",
+          "licence": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "sourceUrl": "https://xeno-canto.org/394356",
+          "aiGenerated": false,
+          "hosted": false,
+          "quality": "B",
+          "callType": "call"
+        }
+      ],
       "sources": [
         {
           "title": "Kemp A.C., Herholdt J.J., Whyte I. & Harrison J. (2001). Birds of the two largest national parks in South Africa: a method to generate estimates of population size for all species and assess their conservation ecology. S. Afr. J. Sci. 97: 393–403.",
           "url": "https://journals.co.za/doi/pdf/10.10520/EJC97367",
           "publisher": "South African Journal of Science",
           "year": 2001
+        },
+        {
+          "title": "African Green Pigeon",
+          "url": "https://newmansbirds.com/birds/african-green-pigeon/",
+          "publisher": "Newman's Birds",
+          "year": 2026
         }
       ]
     },
@@ -15763,13 +16021,31 @@
       "scientificName": "Turtur afer",
       "commonName": "Blue-spotted Wood Dove",
       "images": [],
-      "recordings": [],
+      "recordings": [
+        {
+          "key": "xeno-canto/XC1009898",
+          "author": "Jonathan Onongo",
+          "licence": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "sourceUrl": "https://xeno-canto.org/1009898",
+          "aiGenerated": false,
+          "hosted": false,
+          "quality": "A",
+          "callType": "call"
+        }
+      ],
       "sources": [
         {
           "title": "Kemp A.C., Herholdt J.J., Whyte I. & Harrison J. (2001). Birds of the two largest national parks in South Africa: a method to generate estimates of population size for all species and assess their conservation ecology. S. Afr. J. Sci. 97: 393–403.",
           "url": "https://journals.co.za/doi/pdf/10.10520/EJC97367",
           "publisher": "South African Journal of Science",
           "year": 2001
+        },
+        {
+          "title": "Blue-spotted wood dove",
+          "url": "https://en.wikipedia.org/wiki/Blue-spotted_wood_dove",
+          "publisher": "Wikipedia",
+          "year": 2026
         }
       ]
     },
@@ -15777,14 +16053,42 @@
       "slug": "turtur-chalcospilos",
       "scientificName": "Turtur chalcospilos",
       "commonName": "Emerald-spotted Wood Dove",
-      "images": [],
-      "recordings": [],
+      "images": [
+        {
+          "key": "turtur-chalcospilos/side.jpg",
+          "author": "rastor",
+          "licence": "CC BY-NC 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+          "sourceUrl": "https://www.inaturalist.org/observations/365308875",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ],
+      "recordings": [
+        {
+          "key": "xeno-canto/XC396568",
+          "author": "James Bradley",
+          "licence": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "sourceUrl": "https://xeno-canto.org/396568",
+          "aiGenerated": false,
+          "hosted": false,
+          "quality": "A",
+          "callType": "call"
+        }
+      ],
       "sources": [
         {
           "title": "Kemp A.C., Herholdt J.J., Whyte I. & Harrison J. (2001). Birds of the two largest national parks in South Africa: a method to generate estimates of population size for all species and assess their conservation ecology. S. Afr. J. Sci. 97: 393–403.",
           "url": "https://journals.co.za/doi/pdf/10.10520/EJC97367",
           "publisher": "South African Journal of Science",
           "year": 2001
+        },
+        {
+          "title": "Emerald-spotted Wood Dove",
+          "url": "https://newmansbirds.com/birds/emerald-spotted-wood-dove/",
+          "publisher": "Newman's Birds",
+          "year": 2026
         }
       ]
     },
@@ -15792,14 +16096,42 @@
       "slug": "turtur-tympanistria",
       "scientificName": "Turtur tympanistria",
       "commonName": "Tambourine Dove",
-      "images": [],
-      "recordings": [],
+      "images": [
+        {
+          "key": "turtur-tympanistria/side.jpg",
+          "author": "Pieter Kotze",
+          "licence": "CC BY-NC 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+          "sourceUrl": "https://www.inaturalist.org/observations/265551639",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ],
+      "recordings": [
+        {
+          "key": "xeno-canto/XC492722",
+          "author": "Lynette Rudman",
+          "licence": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "sourceUrl": "https://xeno-canto.org/492722",
+          "aiGenerated": false,
+          "hosted": false,
+          "quality": "A",
+          "callType": "call"
+        }
+      ],
       "sources": [
         {
           "title": "Kemp A.C., Herholdt J.J., Whyte I. & Harrison J. (2001). Birds of the two largest national parks in South Africa: a method to generate estimates of population size for all species and assess their conservation ecology. S. Afr. J. Sci. 97: 393–403.",
           "url": "https://journals.co.za/doi/pdf/10.10520/EJC97367",
           "publisher": "South African Journal of Science",
           "year": 2001
+        },
+        {
+          "title": "Tambourine Dove",
+          "url": "https://newmansbirds.com/birds/tambourine-dove/",
+          "publisher": "Newman's Birds",
+          "year": 2026
         }
       ]
     },

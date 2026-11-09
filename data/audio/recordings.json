@@ -285,6 +285,14 @@
         }
       ]
     },
+    "aplopelia-larvata": {
+      "calls": [
+        {
+          "index": 0,
+          "quality": {}
+        }
+      ]
+    },
     "apus-affinis": {
       "calls": [
         {
@@ -1056,6 +1064,36 @@
         }
       ]
     },
+    "columba-arquatrix": {
+      "calls": [
+        {
+          "index": 0,
+          "quality": {
+            "xeno-canto/XC386792": "B"
+          }
+        }
+      ]
+    },
+    "columba-guinea": {
+      "calls": [
+        {
+          "index": 0,
+          "quality": {
+            "xeno-canto/XC529796": "A"
+          }
+        }
+      ]
+    },
+    "columba-livia": {
+      "calls": [
+        {
+          "index": 0,
+          "quality": {
+            "xeno-canto/XC541143": "A"
+          }
+        }
+      ]
+    },
     "coracias-caudatus": {
       "calls": [
         {
@@ -1798,6 +1836,16 @@
         }
       ]
     },
+    "oena-capensis": {
+      "calls": [
+        {
+          "index": 0,
+          "quality": {
+            "xeno-canto/XC496248": "A"
+          }
+        }
+      ]
+    },
     "pernis-apivorus": {
       "calls": [
         {
@@ -1906,6 +1954,16 @@
         }
       ]
     },
+    "spilopelia-senegalensis": {
+      "calls": [
+        {
+          "index": 0,
+          "quality": {
+            "xeno-canto/XC1077428": "A"
+          }
+        }
+      ]
+    },
     "stephanoaetus-coronatus": {
       "calls": [
         {
@@ -1914,6 +1972,36 @@
             "xeno-canto/XC1048064": "A",
             "xeno-canto/XC1048065": "A",
             "xeno-canto/XC1006960": "B"
+          }
+        }
+      ]
+    },
+    "streptopelia-capicola": {
+      "calls": [
+        {
+          "index": 0,
+          "quality": {
+            "xeno-canto/XC1149018": "A"
+          }
+        }
+      ]
+    },
+    "streptopelia-decipiens": {
+      "calls": [
+        {
+          "index": 0,
+          "quality": {
+            "xeno-canto/XC472382": "A"
+          }
+        }
+      ]
+    },
+    "streptopelia-semitorquata": {
+      "calls": [
+        {
+          "index": 0,
+          "quality": {
+            "xeno-canto/XC529795": "A"
           }
         }
       ]
@@ -2009,6 +2097,46 @@
           "index": 0,
           "quality": {
             "xeno-canto/XC802491": "A"
+          }
+        }
+      ]
+    },
+    "treron-calvus": {
+      "calls": [
+        {
+          "index": 0,
+          "quality": {
+            "xeno-canto/XC394356": "B"
+          }
+        }
+      ]
+    },
+    "turtur-afer": {
+      "calls": [
+        {
+          "index": 0,
+          "quality": {
+            "xeno-canto/XC1009898": "A"
+          }
+        }
+      ]
+    },
+    "turtur-chalcospilos": {
+      "calls": [
+        {
+          "index": 0,
+          "quality": {
+            "xeno-canto/XC396568": "A"
+          }
+        }
+      ]
+    },
+    "turtur-tympanistria": {
+      "calls": [
+        {
+          "index": 0,
+          "quality": {
+            "xeno-canto/XC492722": "A"
           }
         }
       ]
