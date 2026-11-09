@@ -7,8 +7,18 @@
     "af": "Woestynklopkloppie"
   },
   "family": "cisticolidae",
-  "summary": "The details for this species have not been published yet.",
-  "sampleData": true,
+  "habitat": "It forages in grassy vegetation. Wikipedia does not describe the plumage or a Kruger status.",
+  "summary": "Wikipedia says it is an insectivore that forages in grass across much of sub-Saharan Africa. It does not describe the plumage or say whether Kruger birds are resident, so the marks, status and months were left unset. Newman has no page.",
+  "sampleData": false,
+  "similar": [],
+  "sources": [
+    {
+      "title": "Desert cisticola",
+      "url": "https://en.wikipedia.org/wiki/Desert_cisticola",
+      "publisher": "Wikipedia",
+      "year": 2026
+    }
+  ],
   "population": {
     "estimate": {
       "low": 16384,
@@ -36,7 +46,83 @@
     "tierApplied": "D"
   },
   "variants": [],
-  "viewNotes": [],
-  "calls": [],
-  "images": []
+  "viewNotes": [
+    {
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Plumage was not described in the text used. It forages in grass."
+    },
+    {
+      "view": "perched-front",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "The face was not described."
+    },
+    {
+      "view": "perched-back",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "The back was not described."
+    },
+    {
+      "view": "flight-above",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "The upperwing was not described."
+    },
+    {
+      "view": "flight-below",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "The underparts were not described."
+    }
+  ],
+  "calls": [
+    {
+      "sex": "any",
+      "type": "call",
+      "description": "Wikipedia does not describe the call. The file is grade A from near Klerksdorp. The filename says Desert C chatting. A higher-ranked file was not used because its catalogue type includes imitation.",
+      "recordings": [
+        {
+          "key": "xeno-canto/XC616563",
+          "source": "https://xeno-canto.org/616563",
+          "fileUrl": "https://xeno-canto.org/sounds/uploaded/HMBDEWEZVS/XC616563-15%20VG%20Desert%20C%20chatting.mp3",
+          "author": "Tony Archer",
+          "license": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ]
+    }
+  ],
+  "images": [
+    {
+      "key": "cisticola-aridulus/side.jpg",
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "source": "https://www.inaturalist.org/observations/204020313",
+      "fileUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/360548878/large.jpeg",
+      "author": "Christiaan Viljoen",
+      "license": "CC BY 4.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by/4.0/",
+      "aiGenerated": false,
+      "hosted": false,
+      "alt": "Desert Cisticola perched in Kruger grass",
+      "caption": "Desert Cisticola perched in Kruger grass"
+    }
+  ],
+  "research": {
+    "confidence": "low",
+    "needsReview": true,
+    "note": "Newman has no page. Status and months were left unset. The Kemp code RB was left unchanged."
+  }
 }

@@ -1678,14 +1678,42 @@
       "slug": "apalis-flavida",
       "scientificName": "Apalis flavida",
       "commonName": "Yellow-breasted Apalis",
-      "images": [],
-      "recordings": [],
+      "images": [
+        {
+          "key": "apalis-flavida/side.jpg",
+          "author": "Peter Lupton",
+          "licence": "CC BY-NC 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+          "sourceUrl": "https://www.inaturalist.org/observations/82174706",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ],
+      "recordings": [
+        {
+          "key": "xeno-canto/XC655037",
+          "author": "Tim Cockcroft",
+          "licence": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "sourceUrl": "https://xeno-canto.org/655037",
+          "aiGenerated": false,
+          "hosted": false,
+          "quality": "A",
+          "callType": "call"
+        }
+      ],
       "sources": [
         {
           "title": "Kemp A.C., Herholdt J.J., Whyte I. & Harrison J. (2001). Birds of the two largest national parks in South Africa: a method to generate estimates of population size for all species and assess their conservation ecology. S. Afr. J. Sci. 97: 393–403.",
           "url": "https://journals.co.za/doi/pdf/10.10520/EJC97367",
           "publisher": "South African Journal of Science",
           "year": 2001
+        },
+        {
+          "title": "Yellow-breasted Apalis",
+          "url": "https://newmansbirds.com/birds/yellow-breasted-apalis/",
+          "publisher": "Newman's Birds",
+          "year": 2026
         }
       ]
     },
@@ -1694,13 +1722,31 @@
       "scientificName": "Apalis ruddi",
       "commonName": "Rudd’s Apalis",
       "images": [],
-      "recordings": [],
+      "recordings": [
+        {
+          "key": "xeno-canto/XC972485",
+          "author": "Niall Perrins",
+          "licence": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "sourceUrl": "https://xeno-canto.org/972485",
+          "aiGenerated": false,
+          "hosted": false,
+          "quality": "A",
+          "callType": "call"
+        }
+      ],
       "sources": [
         {
           "title": "Kemp A.C., Herholdt J.J., Whyte I. & Harrison J. (2001). Birds of the two largest national parks in South Africa: a method to generate estimates of population size for all species and assess their conservation ecology. S. Afr. J. Sci. 97: 393–403.",
           "url": "https://journals.co.za/doi/pdf/10.10520/EJC97367",
           "publisher": "South African Journal of Science",
           "year": 2001
+        },
+        {
+          "title": "Rudd's Apalis",
+          "url": "https://newmansbirds.com/birds/rudds-apalis/",
+          "publisher": "Newman's Birds",
+          "year": 2026
         }
       ]
     },
@@ -1708,14 +1754,42 @@
       "slug": "apalis-thoracica",
       "scientificName": "Apalis thoracica",
       "commonName": "Bar-throated Apalis",
-      "images": [],
-      "recordings": [],
+      "images": [
+        {
+          "key": "apalis-thoracica/side.jpg",
+          "author": "Heinrich Human",
+          "licence": "CC BY-NC 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+          "sourceUrl": "https://www.inaturalist.org/observations/157610859",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ],
+      "recordings": [
+        {
+          "key": "xeno-canto/XC1009172",
+          "author": "Richard White",
+          "licence": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "sourceUrl": "https://xeno-canto.org/1009172",
+          "aiGenerated": false,
+          "hosted": false,
+          "quality": "A",
+          "callType": "call"
+        }
+      ],
       "sources": [
         {
           "title": "Kemp A.C., Herholdt J.J., Whyte I. & Harrison J. (2001). Birds of the two largest national parks in South Africa: a method to generate estimates of population size for all species and assess their conservation ecology. S. Afr. J. Sci. 97: 393–403.",
           "url": "https://journals.co.za/doi/pdf/10.10520/EJC97367",
           "publisher": "South African Journal of Science",
           "year": 2001
+        },
+        {
+          "title": "Bar-throated Apalis",
+          "url": "https://newmansbirds.com/birds/bar-throated-apalis/",
+          "publisher": "Newman's Birds",
+          "year": 2026
         }
       ]
     },
@@ -3930,17 +4004,72 @@
       ]
     },
     {
+      "slug": "calamonastes-fasciolatus",
+      "scientificName": "Calamonastes fasciolatus",
+      "commonName": "Barred Wren-Warbler",
+      "images": [],
+      "recordings": [
+        {
+          "key": "xeno-canto/XC520425",
+          "author": "Tony Archer",
+          "licence": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "sourceUrl": "https://xeno-canto.org/520425",
+          "aiGenerated": false,
+          "hosted": false,
+          "quality": "A",
+          "callType": "call"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Barred Wren-Warbler",
+          "url": "https://newmansbirds.com/birds/barred-wren-warbler/",
+          "publisher": "Newman's Birds",
+          "year": 2026
+        }
+      ]
+    },
+    {
       "slug": "calamonastes-stierlingi",
       "scientificName": "Calamonastes stierlingi",
       "commonName": "Stierling’s Wren-Warbler",
-      "images": [],
-      "recordings": [],
+      "images": [
+        {
+          "key": "calamonastes-stierlingi/side.jpg",
+          "author": "Christiaan Viljoen",
+          "licence": "CC BY 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by/4.0/",
+          "sourceUrl": "https://www.inaturalist.org/observations/204147400",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ],
+      "recordings": [
+        {
+          "key": "xeno-canto/XC1023576",
+          "author": "Richard White",
+          "licence": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "sourceUrl": "https://xeno-canto.org/1023576",
+          "aiGenerated": false,
+          "hosted": false,
+          "quality": "A",
+          "callType": "call"
+        }
+      ],
       "sources": [
         {
           "title": "Kemp A.C., Herholdt J.J., Whyte I. & Harrison J. (2001). Birds of the two largest national parks in South Africa: a method to generate estimates of population size for all species and assess their conservation ecology. S. Afr. J. Sci. 97: 393–403.",
           "url": "https://journals.co.za/doi/pdf/10.10520/EJC97367",
           "publisher": "South African Journal of Science",
           "year": 2001
+        },
+        {
+          "title": "Stierling's Wren-Warbler",
+          "url": "https://newmansbirds.com/birds/stierlings-wren-warbler/",
+          "publisher": "Newman's Birds",
+          "year": 2026
         }
       ]
     },
@@ -4239,14 +4368,48 @@
       "slug": "camaroptera-brachyura",
       "scientificName": "Camaroptera brachyura",
       "commonName": "Bleating Camaroptera",
-      "images": [],
-      "recordings": [],
+      "images": [
+        {
+          "key": "camaroptera-brachyura/side.jpg",
+          "author": "Christiaan Viljoen",
+          "licence": "CC BY 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by/4.0/",
+          "sourceUrl": "https://www.inaturalist.org/observations/197987546",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ],
+      "recordings": [
+        {
+          "key": "xeno-canto/XC1080046",
+          "author": "JJSUN",
+          "licence": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "sourceUrl": "https://xeno-canto.org/1080046",
+          "aiGenerated": false,
+          "hosted": false,
+          "quality": "A",
+          "callType": "call"
+        }
+      ],
       "sources": [
         {
           "title": "Kemp A.C., Herholdt J.J., Whyte I. & Harrison J. (2001). Birds of the two largest national parks in South Africa: a method to generate estimates of population size for all species and assess their conservation ecology. S. Afr. J. Sci. 97: 393–403.",
           "url": "https://journals.co.za/doi/pdf/10.10520/EJC97367",
           "publisher": "South African Journal of Science",
           "year": 2001
+        },
+        {
+          "title": "Green-backed Camaroptera",
+          "url": "https://newmansbirds.com/birds/green-backed-camaroptera/",
+          "publisher": "Newman's Birds",
+          "year": 2026
+        },
+        {
+          "title": "Grey-backed Camaroptera",
+          "url": "https://newmansbirds.com/birds/grey-backed-camaroptera/",
+          "publisher": "Newman's Birds",
+          "year": 2026
         }
       ]
     },
@@ -6006,14 +6169,42 @@
       "slug": "cisticola-aberrans",
       "scientificName": "Cisticola aberrans",
       "commonName": "Rock-loving (Lazy) Cisticola",
-      "images": [],
-      "recordings": [],
+      "images": [
+        {
+          "key": "cisticola-aberrans/side.jpg",
+          "author": "Peter Lupton",
+          "licence": "CC BY-NC 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+          "sourceUrl": "https://www.inaturalist.org/observations/139414084",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ],
+      "recordings": [
+        {
+          "key": "xeno-canto/XC199448",
+          "author": "Niall Perrins",
+          "licence": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "sourceUrl": "https://xeno-canto.org/199448",
+          "aiGenerated": false,
+          "hosted": false,
+          "quality": "A",
+          "callType": "call"
+        }
+      ],
       "sources": [
         {
           "title": "Kemp A.C., Herholdt J.J., Whyte I. & Harrison J. (2001). Birds of the two largest national parks in South Africa: a method to generate estimates of population size for all species and assess their conservation ecology. S. Afr. J. Sci. 97: 393–403.",
           "url": "https://journals.co.za/doi/pdf/10.10520/EJC97367",
           "publisher": "South African Journal of Science",
           "year": 2001
+        },
+        {
+          "title": "Rock-loving cisticola",
+          "url": "https://en.wikipedia.org/wiki/Rock-loving_cisticola",
+          "publisher": "Wikipedia",
+          "year": 2026
         }
       ]
     },
@@ -6021,14 +6212,42 @@
       "slug": "cisticola-aridulus",
       "scientificName": "Cisticola aridulus",
       "commonName": "Desert Cisticola",
-      "images": [],
-      "recordings": [],
+      "images": [
+        {
+          "key": "cisticola-aridulus/side.jpg",
+          "author": "Christiaan Viljoen",
+          "licence": "CC BY 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by/4.0/",
+          "sourceUrl": "https://www.inaturalist.org/observations/204020313",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ],
+      "recordings": [
+        {
+          "key": "xeno-canto/XC616563",
+          "author": "Tony Archer",
+          "licence": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "sourceUrl": "https://xeno-canto.org/616563",
+          "aiGenerated": false,
+          "hosted": false,
+          "quality": "A",
+          "callType": "call"
+        }
+      ],
       "sources": [
         {
           "title": "Kemp A.C., Herholdt J.J., Whyte I. & Harrison J. (2001). Birds of the two largest national parks in South Africa: a method to generate estimates of population size for all species and assess their conservation ecology. S. Afr. J. Sci. 97: 393–403.",
           "url": "https://journals.co.za/doi/pdf/10.10520/EJC97367",
           "publisher": "South African Journal of Science",
           "year": 2001
+        },
+        {
+          "title": "Desert cisticola",
+          "url": "https://en.wikipedia.org/wiki/Desert_cisticola",
+          "publisher": "Wikipedia",
+          "year": 2026
         }
       ]
     },
@@ -6036,14 +6255,42 @@
       "slug": "cisticola-chiniana",
       "scientificName": "Cisticola chiniana",
       "commonName": "Rattling Cisticola",
-      "images": [],
-      "recordings": [],
+      "images": [
+        {
+          "key": "cisticola-chiniana/side.jpg",
+          "author": "Richard Gill",
+          "licence": "CC BY-NC 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+          "sourceUrl": "https://www.inaturalist.org/observations/178678656",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ],
+      "recordings": [
+        {
+          "key": "xeno-canto/XC1001648",
+          "author": "African Bioacoustics Community",
+          "licence": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "sourceUrl": "https://xeno-canto.org/1001648",
+          "aiGenerated": false,
+          "hosted": false,
+          "quality": "A",
+          "callType": "call"
+        }
+      ],
       "sources": [
         {
           "title": "Kemp A.C., Herholdt J.J., Whyte I. & Harrison J. (2001). Birds of the two largest national parks in South Africa: a method to generate estimates of population size for all species and assess their conservation ecology. S. Afr. J. Sci. 97: 393–403.",
           "url": "https://journals.co.za/doi/pdf/10.10520/EJC97367",
           "publisher": "South African Journal of Science",
           "year": 2001
+        },
+        {
+          "title": "Rattling Cisticola",
+          "url": "https://newmansbirds.com/birds/rattling-cisticola/",
+          "publisher": "Newman's Birds",
+          "year": 2026
         }
       ]
     },
@@ -6051,14 +6298,42 @@
       "slug": "cisticola-erythrops",
       "scientificName": "Cisticola erythrops",
       "commonName": "Red-faced Cisticola",
-      "images": [],
-      "recordings": [],
+      "images": [
+        {
+          "key": "cisticola-erythrops/side.jpg",
+          "author": "Peter Lupton",
+          "licence": "CC BY-NC 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+          "sourceUrl": "https://www.inaturalist.org/observations/108124661",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ],
+      "recordings": [
+        {
+          "key": "xeno-canto/XC1137526",
+          "author": "African Bioacoustics Community",
+          "licence": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "sourceUrl": "https://xeno-canto.org/1137526",
+          "aiGenerated": false,
+          "hosted": false,
+          "quality": "A",
+          "callType": "call"
+        }
+      ],
       "sources": [
         {
           "title": "Kemp A.C., Herholdt J.J., Whyte I. & Harrison J. (2001). Birds of the two largest national parks in South Africa: a method to generate estimates of population size for all species and assess their conservation ecology. S. Afr. J. Sci. 97: 393–403.",
           "url": "https://journals.co.za/doi/pdf/10.10520/EJC97367",
           "publisher": "South African Journal of Science",
           "year": 2001
+        },
+        {
+          "title": "Red-faced cisticola",
+          "url": "https://en.wikipedia.org/wiki/Red-faced_cisticola",
+          "publisher": "Wikipedia",
+          "year": 2026
         }
       ]
     },
@@ -6066,14 +6341,79 @@
       "slug": "cisticola-fulvicapilla",
       "scientificName": "Cisticola fulvicapilla",
       "commonName": "Neddicky",
-      "images": [],
-      "recordings": [],
+      "images": [
+        {
+          "key": "cisticola-fulvicapilla/side.jpg",
+          "author": "jandutoit",
+          "licence": "CC BY-NC 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+          "sourceUrl": "https://www.inaturalist.org/observations/217019919",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ],
+      "recordings": [
+        {
+          "key": "xeno-canto/XC514720",
+          "author": "Tony Archer",
+          "licence": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "sourceUrl": "https://xeno-canto.org/514720",
+          "aiGenerated": false,
+          "hosted": false,
+          "quality": "A",
+          "callType": "call"
+        }
+      ],
       "sources": [
         {
           "title": "Kemp A.C., Herholdt J.J., Whyte I. & Harrison J. (2001). Birds of the two largest national parks in South Africa: a method to generate estimates of population size for all species and assess their conservation ecology. S. Afr. J. Sci. 97: 393–403.",
           "url": "https://journals.co.za/doi/pdf/10.10520/EJC97367",
           "publisher": "South African Journal of Science",
           "year": 2001
+        },
+        {
+          "title": "Neddicky",
+          "url": "https://newmansbirds.com/birds/neddicky/",
+          "publisher": "Newman's Birds",
+          "year": 2026
+        }
+      ]
+    },
+    {
+      "slug": "cisticola-galactotes",
+      "scientificName": "Cisticola galactotes",
+      "commonName": "Rufous-winged Cisticola",
+      "images": [
+        {
+          "key": "cisticola-galactotes/side.jpg",
+          "author": "Francois Ubbink",
+          "licence": "CC BY-NC 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+          "sourceUrl": "https://www.inaturalist.org/observations/394883580",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ],
+      "recordings": [
+        {
+          "key": "xeno-canto/XC408045",
+          "author": "Lynette Rudman",
+          "licence": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "sourceUrl": "https://xeno-canto.org/408045",
+          "aiGenerated": false,
+          "hosted": false,
+          "quality": "B",
+          "callType": "call"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Rufous-winged cisticola",
+          "url": "https://en.wikipedia.org/wiki/Rufous-winged_cisticola",
+          "publisher": "Wikipedia",
+          "year": 2026
         }
       ]
     },
@@ -6081,14 +6421,42 @@
       "slug": "cisticola-juncidis",
       "scientificName": "Cisticola juncidis",
       "commonName": "Zitting Cisticola",
-      "images": [],
-      "recordings": [],
+      "images": [
+        {
+          "key": "cisticola-juncidis/side.jpg",
+          "author": "copper",
+          "licence": "CC BY-NC 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+          "sourceUrl": "https://www.inaturalist.org/observations/14677881",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ],
+      "recordings": [
+        {
+          "key": "xeno-canto/XC692442",
+          "author": "Dawie de Swardt",
+          "licence": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "sourceUrl": "https://xeno-canto.org/692442",
+          "aiGenerated": false,
+          "hosted": false,
+          "quality": "A",
+          "callType": "call"
+        }
+      ],
       "sources": [
         {
           "title": "Kemp A.C., Herholdt J.J., Whyte I. & Harrison J. (2001). Birds of the two largest national parks in South Africa: a method to generate estimates of population size for all species and assess their conservation ecology. S. Afr. J. Sci. 97: 393–403.",
           "url": "https://journals.co.za/doi/pdf/10.10520/EJC97367",
           "publisher": "South African Journal of Science",
           "year": 2001
+        },
+        {
+          "title": "Zitting cisticola",
+          "url": "https://en.wikipedia.org/wiki/Zitting_cisticola",
+          "publisher": "Wikipedia",
+          "year": 2026
         }
       ]
     },
@@ -6096,14 +6464,42 @@
       "slug": "cisticola-natalensis",
       "scientificName": "Cisticola natalensis",
       "commonName": "Croaking Cisticola",
-      "images": [],
-      "recordings": [],
+      "images": [
+        {
+          "key": "cisticola-natalensis/side.jpg",
+          "author": "Carmelo López Abad",
+          "licence": "CC BY-NC 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+          "sourceUrl": "https://www.inaturalist.org/observations/27756695",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ],
+      "recordings": [
+        {
+          "key": "xeno-canto/XC1101235",
+          "author": "Magnus Wadstein",
+          "licence": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "sourceUrl": "https://xeno-canto.org/1101235",
+          "aiGenerated": false,
+          "hosted": false,
+          "quality": "A",
+          "callType": "call"
+        }
+      ],
       "sources": [
         {
           "title": "Kemp A.C., Herholdt J.J., Whyte I. & Harrison J. (2001). Birds of the two largest national parks in South Africa: a method to generate estimates of population size for all species and assess their conservation ecology. S. Afr. J. Sci. 97: 393–403.",
           "url": "https://journals.co.za/doi/pdf/10.10520/EJC97367",
           "publisher": "South African Journal of Science",
           "year": 2001
+        },
+        {
+          "title": "Croaking cisticola",
+          "url": "https://en.wikipedia.org/wiki/Croaking_cisticola",
+          "publisher": "Wikipedia",
+          "year": 2026
         }
       ]
     },
@@ -6111,14 +6507,42 @@
       "slug": "cisticola-tinniens",
       "scientificName": "Cisticola tinniens",
       "commonName": "Levaillant’s Cisticola",
-      "images": [],
-      "recordings": [],
+      "images": [
+        {
+          "key": "cisticola-tinniens/side.jpg",
+          "author": "Саакян К.С.",
+          "licence": "CC BY-NC 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+          "sourceUrl": "https://www.inaturalist.org/observations/322200912",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ],
+      "recordings": [
+        {
+          "key": "xeno-canto/XC737784",
+          "author": "Dawie de Swardt",
+          "licence": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "sourceUrl": "https://xeno-canto.org/737784",
+          "aiGenerated": false,
+          "hosted": false,
+          "quality": "A",
+          "callType": "call"
+        }
+      ],
       "sources": [
         {
           "title": "Kemp A.C., Herholdt J.J., Whyte I. & Harrison J. (2001). Birds of the two largest national parks in South Africa: a method to generate estimates of population size for all species and assess their conservation ecology. S. Afr. J. Sci. 97: 393–403.",
           "url": "https://journals.co.za/doi/pdf/10.10520/EJC97367",
           "publisher": "South African Journal of Science",
           "year": 2001
+        },
+        {
+          "title": "Levaillant's Cisticola",
+          "url": "https://newmansbirds.com/birds/levaillants-cisticola/",
+          "publisher": "Newman's Birds",
+          "year": 2026
         }
       ]
     },
@@ -7845,14 +8269,42 @@
       "slug": "eremomela-icteropygialis",
       "scientificName": "Eremomela icteropygialis",
       "commonName": "Yellow-bellied Eremomela",
-      "images": [],
-      "recordings": [],
+      "images": [
+        {
+          "key": "eremomela-icteropygialis/side.jpg",
+          "author": "Corey Callaghan",
+          "licence": "CC BY-NC 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+          "sourceUrl": "https://www.inaturalist.org/observations/257224845",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ],
+      "recordings": [
+        {
+          "key": "xeno-canto/XC904173",
+          "author": "Dawie de Swardt",
+          "licence": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "sourceUrl": "https://xeno-canto.org/904173",
+          "aiGenerated": false,
+          "hosted": false,
+          "quality": "A",
+          "callType": "call"
+        }
+      ],
       "sources": [
         {
           "title": "Kemp A.C., Herholdt J.J., Whyte I. & Harrison J. (2001). Birds of the two largest national parks in South Africa: a method to generate estimates of population size for all species and assess their conservation ecology. S. Afr. J. Sci. 97: 393–403.",
           "url": "https://journals.co.za/doi/pdf/10.10520/EJC97367",
           "publisher": "South African Journal of Science",
           "year": 2001
+        },
+        {
+          "title": "Yellow-bellied Eremomela",
+          "url": "https://newmansbirds.com/birds/yellow-bellied-eremomela/",
+          "publisher": "Newman's Birds",
+          "year": 2026
         }
       ]
     },
@@ -7860,14 +8312,42 @@
       "slug": "eremomela-scotops",
       "scientificName": "Eremomela scotops",
       "commonName": "Green-capped Eremomela",
-      "images": [],
-      "recordings": [],
+      "images": [
+        {
+          "key": "eremomela-scotops/side.jpg",
+          "author": "David Kidwell",
+          "licence": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "sourceUrl": "https://www.inaturalist.org/observations/228866393",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ],
+      "recordings": [
+        {
+          "key": "xeno-canto/XC793332",
+          "author": "Ehren Eksteen",
+          "licence": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "sourceUrl": "https://xeno-canto.org/793332",
+          "aiGenerated": false,
+          "hosted": false,
+          "quality": "B",
+          "callType": "call"
+        }
+      ],
       "sources": [
         {
           "title": "Kemp A.C., Herholdt J.J., Whyte I. & Harrison J. (2001). Birds of the two largest national parks in South Africa: a method to generate estimates of population size for all species and assess their conservation ecology. S. Afr. J. Sci. 97: 393–403.",
           "url": "https://journals.co.za/doi/pdf/10.10520/EJC97367",
           "publisher": "South African Journal of Science",
           "year": 2001
+        },
+        {
+          "title": "Green-capped eremomela",
+          "url": "https://en.wikipedia.org/wiki/Green-capped_eremomela",
+          "publisher": "Wikipedia",
+          "year": 2026
         }
       ]
     },
@@ -7875,14 +8355,42 @@
       "slug": "eremomela-usticollis",
       "scientificName": "Eremomela usticollis",
       "commonName": "Burnt-necked Eremomela",
-      "images": [],
-      "recordings": [],
+      "images": [
+        {
+          "key": "eremomela-usticollis/side.jpg",
+          "author": "Corné Rautenbach",
+          "licence": "CC BY-NC 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+          "sourceUrl": "https://www.inaturalist.org/observations/171753254",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ],
+      "recordings": [
+        {
+          "key": "xeno-canto/XC177777",
+          "author": "Gabriel A. Jamie",
+          "licence": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "sourceUrl": "https://xeno-canto.org/177777",
+          "aiGenerated": false,
+          "hosted": false,
+          "quality": "A",
+          "callType": "call"
+        }
+      ],
       "sources": [
         {
           "title": "Kemp A.C., Herholdt J.J., Whyte I. & Harrison J. (2001). Birds of the two largest national parks in South Africa: a method to generate estimates of population size for all species and assess their conservation ecology. S. Afr. J. Sci. 97: 393–403.",
           "url": "https://journals.co.za/doi/pdf/10.10520/EJC97367",
           "publisher": "South African Journal of Science",
           "year": 2001
+        },
+        {
+          "title": "Burnt-necked Eremomela",
+          "url": "https://newmansbirds.com/birds/burnt-necked-eremomela/",
+          "publisher": "Newman's Birds",
+          "year": 2026
         }
       ]
     },
@@ -13168,14 +13676,69 @@
       "slug": "prinia-flavicans",
       "scientificName": "Prinia flavicans",
       "commonName": "Black-chested Prinia",
-      "images": [],
-      "recordings": [],
+      "images": [
+        {
+          "key": "prinia-flavicans/side.jpg",
+          "author": "Duncan McKenzie",
+          "licence": "CC BY-NC 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+          "sourceUrl": "https://www.inaturalist.org/observations/196736412",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ],
+      "recordings": [
+        {
+          "key": "xeno-canto/XC513752",
+          "author": "Tony Archer",
+          "licence": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "sourceUrl": "https://xeno-canto.org/513752",
+          "aiGenerated": false,
+          "hosted": false,
+          "quality": "A",
+          "callType": "call"
+        }
+      ],
       "sources": [
         {
           "title": "Kemp A.C., Herholdt J.J., Whyte I. & Harrison J. (2001). Birds of the two largest national parks in South Africa: a method to generate estimates of population size for all species and assess their conservation ecology. S. Afr. J. Sci. 97: 393–403.",
           "url": "https://journals.co.za/doi/pdf/10.10520/EJC97367",
           "publisher": "South African Journal of Science",
           "year": 2001
+        },
+        {
+          "title": "Black-chested Prinia",
+          "url": "https://newmansbirds.com/birds/black-chested-prinia/",
+          "publisher": "Newman's Birds",
+          "year": 2026
+        }
+      ]
+    },
+    {
+      "slug": "prinia-hypoxantha",
+      "scientificName": "Prinia hypoxantha",
+      "commonName": "Drakensberg Prinia",
+      "images": [],
+      "recordings": [
+        {
+          "key": "xeno-canto/XC935289",
+          "author": "Daan van der Hoeven",
+          "licence": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "sourceUrl": "https://xeno-canto.org/935289",
+          "aiGenerated": false,
+          "hosted": false,
+          "quality": "A",
+          "callType": "call"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Drakensberg Prinia",
+          "url": "https://newmansbirds.com/birds/drakensberg-prinia/",
+          "publisher": "Newman's Birds",
+          "year": 2026
         }
       ]
     },
@@ -13183,14 +13746,42 @@
       "slug": "prinia-subflava",
       "scientificName": "Prinia subflava",
       "commonName": "Tawny-flanked Prinia",
-      "images": [],
-      "recordings": [],
+      "images": [
+        {
+          "key": "prinia-subflava/side.jpg",
+          "author": "Thomas ARMAND",
+          "licence": "CC BY-NC 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+          "sourceUrl": "https://www.inaturalist.org/observations/149816479",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ],
+      "recordings": [
+        {
+          "key": "xeno-canto/XC1001874",
+          "author": "African Bioacoustics Community",
+          "licence": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "sourceUrl": "https://xeno-canto.org/1001874",
+          "aiGenerated": false,
+          "hosted": false,
+          "quality": "A",
+          "callType": "call"
+        }
+      ],
       "sources": [
         {
           "title": "Kemp A.C., Herholdt J.J., Whyte I. & Harrison J. (2001). Birds of the two largest national parks in South Africa: a method to generate estimates of population size for all species and assess their conservation ecology. S. Afr. J. Sci. 97: 393–403.",
           "url": "https://journals.co.za/doi/pdf/10.10520/EJC97367",
           "publisher": "South African Journal of Science",
           "year": 2001
+        },
+        {
+          "title": "Tawny-flanked Prinia",
+          "url": "https://newmansbirds.com/birds/tawny-flanked-prinia/",
+          "publisher": "Newman's Birds",
+          "year": 2026
         }
       ]
     },

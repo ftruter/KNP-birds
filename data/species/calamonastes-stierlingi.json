@@ -7,8 +7,45 @@
     "af": "Stierlingsanger"
   },
   "family": "cisticolidae",
-  "summary": "The details for this species have not been published yet.",
-  "sampleData": true,
+  "status": "resident",
+  "monthsPresent": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+  ],
+  "size": {
+    "lengthCm": {
+      "min": 11.5,
+      "max": 13
+    },
+    "note": "Newman's Birds gives 11.5–13 cm."
+  },
+  "habitat": "Thickets in mixed bushveld and broad-leaved woodland. It may go up into the canopy if disturbed, and often creeps with the tail raised.",
+  "summary": "A common resident. Whiter and more boldly barred below than the Barred Wren-Warbler, with a shorter tail and a blacker bill. The call is a far-carrying birribit-birribit or bullybeef-bullybeef.",
+  "sampleData": false,
+  "similar": [
+    {
+      "slug": "calamonastes-fasciolatus",
+      "note": "Barred Wren-Warbler is less white and less clearly barred, and its breast is duller outside the breeding season."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Stierling's Wren-Warbler",
+      "url": "https://newmansbirds.com/birds/stierlings-wren-warbler/",
+      "publisher": "Newman's Birds",
+      "year": 2026
+    }
+  ],
   "population": {
     "estimate": {
       "low": 8192,
@@ -35,8 +72,128 @@
     },
     "tierApplied": "D"
   },
-  "variants": [],
-  "viewNotes": [],
-  "calls": [],
-  "images": []
+  "variants": [
+    {
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "marks": {
+        "bill": {
+          "colour": "black",
+          "shape": "blacker than the Barred Wren-Warbler"
+        },
+        "eye": {
+          "iris": null,
+          "ring": null
+        },
+        "legs": {
+          "colour": null
+        },
+        "head": {
+          "crown": null,
+          "face": null,
+          "throat": null,
+          "pattern": null
+        },
+        "upperparts": {
+          "back": "brown",
+          "rump": null,
+          "pattern": null
+        },
+        "underparts": {
+          "breast": "white",
+          "belly": "white",
+          "pattern": "White below and well barred blackish."
+        },
+        "wings": {
+          "above": null,
+          "below": null,
+          "pattern": null
+        },
+        "tail": {
+          "colour": null,
+          "shape": "shorter than the Barred Wren-Warbler"
+        }
+      }
+    }
+  ],
+  "viewNotes": [
+    {
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Secretive, boldly barred below, often with the tail raised."
+    },
+    {
+      "view": "perched-front",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "The face was not named. The bill is black."
+    },
+    {
+      "view": "perched-back",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Brown above."
+    },
+    {
+      "view": "flight-above",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "The upperwing was not named."
+    },
+    {
+      "view": "flight-below",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "White underparts with bold blackish bars."
+    }
+  ],
+  "calls": [
+    {
+      "sex": "any",
+      "type": "call",
+      "description": "A far-carrying birribit-birribit-birribit-birribit, or bullybeef-bullybeef-bullybeef. The texts do not separate the sexes. Grade A from Hoedspruit.",
+      "recordings": [
+        {
+          "key": "xeno-canto/XC1023576",
+          "source": "https://xeno-canto.org/1023576",
+          "fileUrl": "https://xeno-canto.org/sounds/uploaded/IQGZKQAMKT/XC1023576-Wren-warbler_Stierlings_NdlovumziHoedspruit_20250723.mp3",
+          "author": "Richard White",
+          "license": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ]
+    }
+  ],
+  "images": [
+    {
+      "key": "calamonastes-stierlingi/side.jpg",
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "source": "https://www.inaturalist.org/observations/204147400",
+      "fileUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/360794928/large.jpeg",
+      "author": "Christiaan Viljoen",
+      "license": "CC BY 4.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by/4.0/",
+      "aiGenerated": false,
+      "hosted": false,
+      "alt": "Stierling’s Wren-Warbler perched in Kruger woodland",
+      "caption": "Stierling’s Wren-Warbler perched in Kruger woodland"
+    }
+  ],
+  "research": {
+    "confidence": "medium",
+    "needsReview": false,
+    "note": "Status is resident and all twelve months are listed from Newman’s resident wording. Population figures were left unchanged."
+  }
 }

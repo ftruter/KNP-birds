@@ -7,8 +7,45 @@
     "af": "Bruinsylangstertjie"
   },
   "family": "cisticolidae",
-  "summary": "The details for this species have not been published yet.",
-  "sampleData": true,
+  "status": "resident",
+  "monthsPresent": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+  ],
+  "size": {
+    "lengthCm": {
+      "min": 10,
+      "max": 15
+    },
+    "note": "Newman's Birds gives 10–15 cm."
+  },
+  "habitat": "Parties of four to six in riverine vegetation and suburban gardens, in moister places than Black-chested Prinia.",
+  "summary": "A common resident. White underparts, tawny flanks and vent, a tawny rump, red-brown wing edges and a dark eye-stripe. When disturbed it gives a weeping sbeeeee-sbeeeee. The usual call is a loud przzt-ptzzt-przzt or trit-trit-trit, sharper than other prinias.",
+  "sampleData": false,
+  "similar": [
+    {
+      "slug": "prinia-flavicans",
+      "note": "Black-chested Prinia uses drier thornveld and, in summer, has a black breast-band. Tawny-flanked Prinia is white below with tawny flanks."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Tawny-flanked Prinia",
+      "url": "https://newmansbirds.com/birds/tawny-flanked-prinia/",
+      "publisher": "Newman's Birds",
+      "year": 2026
+    }
+  ],
   "population": {
     "estimate": {
       "low": 65536,
@@ -35,8 +72,128 @@
     },
     "tierApplied": "D"
   },
-  "variants": [],
-  "viewNotes": [],
-  "calls": [],
-  "images": []
+  "variants": [
+    {
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "marks": {
+        "bill": {
+          "colour": null,
+          "shape": null
+        },
+        "eye": {
+          "iris": null,
+          "ring": null
+        },
+        "legs": {
+          "colour": null
+        },
+        "head": {
+          "crown": null,
+          "face": null,
+          "throat": null,
+          "pattern": "Dark eye-stripe."
+        },
+        "upperparts": {
+          "back": "brown",
+          "rump": "tawny",
+          "pattern": null
+        },
+        "underparts": {
+          "breast": "white",
+          "belly": "white",
+          "pattern": "White below, with tawny flanks and vent."
+        },
+        "wings": {
+          "above": null,
+          "below": null,
+          "pattern": "Red-brown wing edges."
+        },
+        "tail": {
+          "colour": null,
+          "shape": null
+        }
+      }
+    }
+  ],
+  "viewNotes": [
+    {
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "White below with tawny flanks, in riverine cover."
+    },
+    {
+      "view": "perched-front",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Dark eye-stripe."
+    },
+    {
+      "view": "perched-back",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Tawny rump."
+    },
+    {
+      "view": "flight-above",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Red-brown wing edges."
+    },
+    {
+      "view": "flight-below",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "White underparts."
+    }
+  ],
+  "calls": [
+    {
+      "sex": "any",
+      "type": "call",
+      "description": "A weeping sbeeeee-sbeeeee when disturbed, and a loud przzt-ptzzt-przzt or trit-trit-trit. Sharper than the other prinias. The texts do not separate the sexes. Grade A from Kruger, near Skukuza. The filename shows a 1 kHz high-pass applied by the recordist.",
+      "recordings": [
+        {
+          "key": "xeno-canto/XC1001874",
+          "source": "https://xeno-canto.org/1001874",
+          "fileUrl": "https://xeno-canto.org/sounds/uploaded/YSGTQVRQZI/XC1001874-20240219_KNP_NSerpa_XA60_MVI_0002_SLE_1kHzHP_-3dBNORM.mp3",
+          "author": "African Bioacoustics Community",
+          "license": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ]
+    }
+  ],
+  "images": [
+    {
+      "key": "prinia-subflava/side.jpg",
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "source": "https://www.inaturalist.org/observations/149816479",
+      "fileUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/258217534/large.jpeg",
+      "author": "Thomas ARMAND",
+      "license": "CC BY-NC 4.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+      "aiGenerated": false,
+      "hosted": false,
+      "alt": "Tawny-flanked Prinia perched in Kruger",
+      "caption": "Tawny-flanked Prinia perched in Kruger"
+    }
+  ],
+  "research": {
+    "confidence": "medium",
+    "needsReview": false,
+    "note": "Status is resident and all twelve months are listed from Newman’s resident wording. Population figures were left unchanged."
+  }
 }

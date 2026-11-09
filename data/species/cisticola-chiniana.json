@@ -7,8 +7,40 @@
     "af": "Bosveldtinktinkie"
   },
   "family": "cisticolidae",
-  "summary": "The details for this species have not been published yet.",
-  "sampleData": true,
+  "status": "resident",
+  "monthsPresent": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+  ],
+  "size": {
+    "lengthCm": {
+      "min": 14,
+      "max": 16
+    },
+    "note": "Newman's Birds gives 14–16 cm."
+  },
+  "habitat": "The common bushveld cisticola, also in thornveld and coastal bush. It sings from the top of a bush and forages low in tangled grass and bush.",
+  "summary": "A very common resident. Newman says it is robust and has few distinguishing plumage marks, with only slight seasonal differences, and that it is best told by habitat, behaviour and song. The male’s song is chi chi chi ch-r-r-r-r-r, ending in a rattle. The alarm is cheer, cheer, cheer.",
+  "sampleData": false,
+  "similar": [],
+  "sources": [
+    {
+      "title": "Rattling Cisticola",
+      "url": "https://newmansbirds.com/birds/rattling-cisticola/",
+      "publisher": "Newman's Birds",
+      "year": 2026
+    }
+  ],
   "population": {
     "estimate": {
       "low": 131072,
@@ -36,7 +68,83 @@
     "tierApplied": "D"
   },
   "variants": [],
-  "viewNotes": [],
-  "calls": [],
-  "images": []
+  "viewNotes": [
+    {
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Sings from the top of a bush. Few plumage marks were named."
+    },
+    {
+      "view": "perched-front",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "The face was not named."
+    },
+    {
+      "view": "perched-back",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "The back was not named."
+    },
+    {
+      "view": "flight-above",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "The upperwing was not named."
+    },
+    {
+      "view": "flight-below",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "The underparts were not named."
+    }
+  ],
+  "calls": [
+    {
+      "sex": "any",
+      "type": "call",
+      "description": "The male’s song is chi chi chi ch-r-r-r-r-r, the last syllable a rattle. The alarm is cheer, cheer, cheer. Grade A from Kruger. A higher-ranked Kruger file was not used because its filename says Cisticola-cf. This file’s name shows a 500 Hz high-pass applied by the recordist.",
+      "recordings": [
+        {
+          "key": "xeno-canto/XC1001648",
+          "source": "https://xeno-canto.org/1001648",
+          "fileUrl": "https://xeno-canto.org/sounds/uploaded/YSGTQVRQZI/XC1001648-20240222_KNP_AKaramitsos_AX40_A023C041_240222Z9_KNP02_SLE_500HzHP_-3dBNORM.mp3",
+          "author": "African Bioacoustics Community",
+          "license": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ]
+    }
+  ],
+  "images": [
+    {
+      "key": "cisticola-chiniana/side.jpg",
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "source": "https://www.inaturalist.org/observations/178678656",
+      "fileUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/310955863/large.jpeg",
+      "author": "Richard Gill",
+      "license": "CC BY-NC 4.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+      "aiGenerated": false,
+      "hosted": false,
+      "alt": "Rattling Cisticola perched in Kruger bush",
+      "caption": "Rattling Cisticola perched in Kruger bush"
+    }
+  ],
+  "research": {
+    "confidence": "medium",
+    "needsReview": false,
+    "note": "Status is resident and all twelve months are listed from Newman’s resident wording. Population figures were left unchanged."
+  }
 }

@@ -255,6 +255,36 @@
         }
       ]
     },
+    "apalis-flavida": {
+      "calls": [
+        {
+          "index": 0,
+          "quality": {
+            "xeno-canto/XC655037": "A"
+          }
+        }
+      ]
+    },
+    "apalis-ruddi": {
+      "calls": [
+        {
+          "index": 0,
+          "quality": {
+            "xeno-canto/XC972485": "A"
+          }
+        }
+      ]
+    },
+    "apalis-thoracica": {
+      "calls": [
+        {
+          "index": 0,
+          "quality": {
+            "xeno-canto/XC1009172": "A"
+          }
+        }
+      ]
+    },
     "apus-affinis": {
       "calls": [
         {
@@ -619,6 +649,26 @@
         }
       ]
     },
+    "calamonastes-fasciolatus": {
+      "calls": [
+        {
+          "index": 0,
+          "quality": {
+            "xeno-canto/XC520425": "A"
+          }
+        }
+      ]
+    },
+    "calamonastes-stierlingi": {
+      "calls": [
+        {
+          "index": 0,
+          "quality": {
+            "xeno-canto/XC1023576": "A"
+          }
+        }
+      ]
+    },
     "calandrella-cinerea": {
       "calls": [
         {
@@ -661,6 +711,16 @@
           "index": 0,
           "quality": {
             "xeno-canto/XC421209": "A"
+          }
+        }
+      ]
+    },
+    "camaroptera-brachyura": {
+      "calls": [
+        {
+          "index": 0,
+          "quality": {
+            "xeno-canto/XC1080046": "A"
           }
         }
       ]
@@ -885,6 +945,96 @@
         }
       ]
     },
+    "cisticola-aberrans": {
+      "calls": [
+        {
+          "index": 0,
+          "quality": {
+            "xeno-canto/XC199448": "A"
+          }
+        }
+      ]
+    },
+    "cisticola-aridulus": {
+      "calls": [
+        {
+          "index": 0,
+          "quality": {
+            "xeno-canto/XC616563": "A"
+          }
+        }
+      ]
+    },
+    "cisticola-chiniana": {
+      "calls": [
+        {
+          "index": 0,
+          "quality": {
+            "xeno-canto/XC1001648": "A"
+          }
+        }
+      ]
+    },
+    "cisticola-erythrops": {
+      "calls": [
+        {
+          "index": 0,
+          "quality": {
+            "xeno-canto/XC1137526": "A"
+          }
+        }
+      ]
+    },
+    "cisticola-fulvicapilla": {
+      "calls": [
+        {
+          "index": 0,
+          "quality": {
+            "xeno-canto/XC514720": "A"
+          }
+        }
+      ]
+    },
+    "cisticola-galactotes": {
+      "calls": [
+        {
+          "index": 0,
+          "quality": {
+            "xeno-canto/XC408045": "B"
+          }
+        }
+      ]
+    },
+    "cisticola-juncidis": {
+      "calls": [
+        {
+          "index": 0,
+          "quality": {
+            "xeno-canto/XC692442": "A"
+          }
+        }
+      ]
+    },
+    "cisticola-natalensis": {
+      "calls": [
+        {
+          "index": 0,
+          "quality": {
+            "xeno-canto/XC1101235": "A"
+          }
+        }
+      ]
+    },
+    "cisticola-tinniens": {
+      "calls": [
+        {
+          "index": 0,
+          "quality": {
+            "xeno-canto/XC737784": "A"
+          }
+        }
+      ]
+    },
     "clanga-pomarina": {
       "calls": [
         {
@@ -1091,6 +1241,36 @@
         {
           "index": 0,
           "quality": {}
+        }
+      ]
+    },
+    "eremomela-icteropygialis": {
+      "calls": [
+        {
+          "index": 0,
+          "quality": {
+            "xeno-canto/XC904173": "A"
+          }
+        }
+      ]
+    },
+    "eremomela-scotops": {
+      "calls": [
+        {
+          "index": 0,
+          "quality": {
+            "xeno-canto/XC793332": "B"
+          }
+        }
+      ]
+    },
+    "eremomela-usticollis": {
+      "calls": [
+        {
+          "index": 0,
+          "quality": {
+            "xeno-canto/XC177777": "A"
+          }
         }
       ]
     },
@@ -1662,6 +1842,36 @@
             "xeno-canto/XC1039698": "A",
             "xeno-canto/XC580274": "D",
             "xeno-canto/XC958205": "A"
+          }
+        }
+      ]
+    },
+    "prinia-flavicans": {
+      "calls": [
+        {
+          "index": 0,
+          "quality": {
+            "xeno-canto/XC513752": "A"
+          }
+        }
+      ]
+    },
+    "prinia-hypoxantha": {
+      "calls": [
+        {
+          "index": 0,
+          "quality": {
+            "xeno-canto/XC935289": "A"
+          }
+        }
+      ]
+    },
+    "prinia-subflava": {
+      "calls": [
+        {
+          "index": 0,
+          "quality": {
+            "xeno-canto/XC1001874": "A"
           }
         }
       ]
