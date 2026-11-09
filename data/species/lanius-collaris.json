@@ -7,8 +7,40 @@
     "af": "Fiskaallaksman"
   },
   "family": "laniidae",
-  "summary": "The details for this species have not been published yet.",
-  "sampleData": true,
+  "size": {
+    "lengthCm": {
+      "min": 23,
+      "max": 23
+    },
+    "note": "Newman's Birds gives 23 cm."
+  },
+  "habitat": "Singly or in pairs in lightly wooded country and suburbia. It perches on a branch, post or wire and flies to the ground for insects and other small prey.",
+  "summary": "A very common resident in Newman's account: heavy-bodied, heavy-billed and long-tailed, completely pied, with a white wing-bar that reaches the shoulder. The female has rufous flanks, often hard to see. The immature is ash-brown above and greyish brown below, finely barred. The call is a harsh gercha, gercha or skiza, skiza, and there is also a rambling song. The western race has a variable white eyebrow; that race is not treated as the Kruger bird. The Kemp code NB was left unchanged.",
+  "sampleData": false,
+  "similar": [
+    {
+      "slug": "sigelus-silens",
+      "note": "Fiscal Flycatcher has a thinner bill, and its wing-bar does not reach the shoulder."
+    },
+    {
+      "slug": "lanius-collurio",
+      "note": "A female Red-backed Shrike has more rufous upperparts than an immature Southern Fiscal and lacks white wing-bars."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Southern Fiscal",
+      "url": "https://newmansbirds.com/birds/southern-fiscal/",
+      "publisher": "Newman's Birds",
+      "year": 2026
+    },
+    {
+      "title": "Kemp A.C., Herholdt J.J., Whyte I. & Harrison J. (2001). Birds of the two largest national parks in South Africa: a method to generate estimates of population size for all species and assess their conservation ecology. S. Afr. J. Sci. 97: 393–403.",
+      "url": "https://journals.co.za/doi/pdf/10.10520/EJC97367",
+      "publisher": "South African Journal of Science",
+      "year": 2001
+    }
+  ],
   "population": {
     "estimate": {
       "low": 2,
@@ -35,8 +67,297 @@
     },
     "tierApplied": "D"
   },
-  "variants": [],
-  "viewNotes": [],
-  "calls": [],
-  "images": []
+  "variants": [
+    {
+      "age": "adult",
+      "sex": "male",
+      "season": "any",
+      "marks": {
+        "bill": {
+          "colour": null,
+          "shape": "Stout, heavy hooked bill. Bill colour was not named."
+        },
+        "eye": {
+          "iris": null,
+          "ring": null
+        },
+        "legs": {
+          "colour": null
+        },
+        "head": {
+          "crown": null,
+          "face": null,
+          "throat": null,
+          "pattern": "Completely pied. Separate black and white head colours were not itemised."
+        },
+        "upperparts": {
+          "back": null,
+          "rump": null,
+          "pattern": "Completely pied. Separate back and rump colours were not itemised."
+        },
+        "underparts": {
+          "breast": null,
+          "belly": null,
+          "pattern": "Completely pied. The female, not the male, is the bird Newman gives rufous flanks."
+        },
+        "wings": {
+          "above": null,
+          "below": null,
+          "pattern": "White wing-bar extending to the shoulder."
+        },
+        "tail": {
+          "colour": null,
+          "shape": "Long-tailed. A tail colour was not named beyond completely pied."
+        }
+      }
+    },
+    {
+      "age": "adult",
+      "sex": "female",
+      "season": "any",
+      "marks": {
+        "bill": {
+          "colour": null,
+          "shape": "Stout, heavy hooked bill. Bill colour was not named."
+        },
+        "eye": {
+          "iris": null,
+          "ring": null
+        },
+        "legs": {
+          "colour": null
+        },
+        "head": {
+          "crown": null,
+          "face": null,
+          "throat": null,
+          "pattern": "Completely pied, as the male. Separate black and white head colours were not itemised."
+        },
+        "upperparts": {
+          "back": null,
+          "rump": null,
+          "pattern": "Completely pied."
+        },
+        "underparts": {
+          "breast": null,
+          "belly": null,
+          "pattern": "Rufous flanks, often difficult to see. The rest of the underparts were not given a separate colour."
+        },
+        "wings": {
+          "above": null,
+          "below": null,
+          "pattern": "White wing-bar extending to the shoulder."
+        },
+        "tail": {
+          "colour": null,
+          "shape": "Long-tailed. A tail colour was not named beyond completely pied."
+        }
+      }
+    },
+    {
+      "age": "immature",
+      "sex": "any",
+      "season": "any",
+      "marks": {
+        "bill": {
+          "colour": null,
+          "shape": null
+        },
+        "eye": {
+          "iris": null,
+          "ring": null
+        },
+        "legs": {
+          "colour": null
+        },
+        "head": {
+          "crown": null,
+          "face": null,
+          "throat": null
+        },
+        "upperparts": {
+          "back": "brown",
+          "rump": null,
+          "pattern": "Ash-brown above."
+        },
+        "underparts": {
+          "breast": "brown",
+          "belly": "brown",
+          "pattern": "Greyish brown below, with fine barring."
+        },
+        "wings": {
+          "above": null,
+          "below": null
+        },
+        "tail": {
+          "colour": null,
+          "shape": null
+        }
+      }
+    }
+  ],
+  "viewNotes": [
+    {
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "male",
+      "season": "any",
+      "note": "Heavy-bodied, heavy-billed and long-tailed, completely pied, with a white wing-bar that reaches the shoulder."
+    },
+    {
+      "view": "perched-front",
+      "age": "adult",
+      "sex": "male",
+      "season": "any",
+      "note": "Pied head and breast. Newman does not itemise which parts are black and which are white."
+    },
+    {
+      "view": "perched-back",
+      "age": "adult",
+      "sex": "male",
+      "season": "any",
+      "note": "Pied back and a long tail. A separate tail colour was not named."
+    },
+    {
+      "view": "flight-above",
+      "age": "adult",
+      "sex": "male",
+      "season": "any",
+      "note": "The white wing-bar reaches the shoulder. That is the mark Newman uses against Fiscal Flycatcher."
+    },
+    {
+      "view": "flight-below",
+      "age": "adult",
+      "sex": "male",
+      "season": "any",
+      "note": "Pied underparts. Rufous flanks are the female mark, and Newman says they are often hard to see."
+    },
+    {
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "female",
+      "season": "any",
+      "note": "Pied like the male, with rufous flanks that are often difficult to see."
+    },
+    {
+      "view": "perched-front",
+      "age": "adult",
+      "sex": "female",
+      "season": "any",
+      "note": "Pied front. The rufous flanks may not show from in front."
+    },
+    {
+      "view": "perched-back",
+      "age": "adult",
+      "sex": "female",
+      "season": "any",
+      "note": "Pied back and a long tail."
+    },
+    {
+      "view": "flight-above",
+      "age": "adult",
+      "sex": "female",
+      "season": "any",
+      "note": "White wing-bar extending to the shoulder."
+    },
+    {
+      "view": "flight-below",
+      "age": "adult",
+      "sex": "female",
+      "season": "any",
+      "note": "Rufous flanks on otherwise pied underparts."
+    },
+    {
+      "view": "perched-side",
+      "age": "immature",
+      "sex": "any",
+      "season": "any",
+      "note": "Ash-brown above and greyish brown below, with fine barring."
+    },
+    {
+      "view": "perched-front",
+      "age": "immature",
+      "sex": "any",
+      "season": "any",
+      "note": "Greyish brown underparts with fine barring."
+    },
+    {
+      "view": "perched-back",
+      "age": "immature",
+      "sex": "any",
+      "season": "any",
+      "note": "Ash-brown upperparts."
+    },
+    {
+      "view": "flight-above",
+      "age": "immature",
+      "sex": "any",
+      "season": "any",
+      "note": "A flight pattern was not described for the immature."
+    },
+    {
+      "view": "flight-below",
+      "age": "immature",
+      "sex": "any",
+      "season": "any",
+      "note": "Finely barred greyish brown underparts."
+    }
+  ],
+  "calls": [
+    {
+      "sex": "any",
+      "type": "call",
+      "description": "A harsh gercha, gercha or skiza, skiza. There is also a rambling song with sweet notes and the gercha sound. Grade A call from near Barkly East in the Eastern Cape. The filename is XC309835-Common fiscal exc.mp3, so the file is marked as an excerpt.",
+      "recordings": [
+        {
+          "key": "xeno-canto/XC309835",
+          "source": "https://xeno-canto.org/309835",
+          "fileUrl": "https://xeno-canto.org/sounds/uploaded/SGLTZLDXYI/XC309835-Common%20fiscal%20exc.mp3",
+          "author": "Lynette Rudman",
+          "license": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ]
+    }
+  ],
+  "images": [
+    {
+      "key": "lanius-collaris/side.jpg",
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "source": "https://www.inaturalist.org/observations/365106333",
+      "fileUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/666567064/large.jpg",
+      "author": "Steve Atherton",
+      "license": "CC BY-NC 4.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+      "aiGenerated": false,
+      "hosted": false,
+      "alt": "Southern Fiscal perched, black above and white below",
+      "caption": "Southern Fiscal on the Tshokwane–Lower Sabie road, black above and white below. The rufous flanks of a female are often hard to see, so the sex is not stated."
+    }
+  ],
+  "research": {
+    "confidence": "medium",
+    "needsReview": false,
+    "note": "Newman calls it a very common resident, so status is resident and all twelve months are listed. The Kemp code NB was left unchanged, as were the population figures. The western race L. c. subcoronatus has a variable white eyebrow and is not stored as the Kruger plumage. Pied is not split into separate black and white tokens where Newman does not itemise the parts."
+  },
+  "status": "resident",
+  "monthsPresent": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+  ]
 }

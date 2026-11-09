@@ -7,8 +7,40 @@
     "af": "Rooiruglaksman"
   },
   "family": "laniidae",
-  "summary": "The details for this species have not been published yet.",
-  "sampleData": true,
+  "size": {
+    "lengthCm": {
+      "min": 18,
+      "max": 18
+    },
+    "note": "Newman's Birds gives 18 cm."
+  },
+  "habitat": "Solitary in a variety of wooded habitats, preferring mixed bushveld and thornveld. It perches on a low branch and still-hunts. Newman says it is most common in the central Kalahari.",
+  "summary": "A common summer visitor. The male has a grey head, nape and rump, a black mask, a rufous mantle and back, and white underparts. The female is only partly described: more rufous above than an immature Southern Fiscal, and without white wing-bars. Mostly silent. An alarm is a harsh chak, chak, and there is a soft scratchy song. It arrives late October to November and departs early April. The Kemp code NB was left unchanged.",
+  "sampleData": false,
+  "similar": [
+    {
+      "slug": "lanius-collaris",
+      "note": "An immature Southern Fiscal is less rufous above and has white wing-bars. A female Red-backed Shrike lacks those bars."
+    },
+    {
+      "slug": "lanius-minor",
+      "note": "Lesser Grey Shrike is larger, lacks the rufous mantle, has less white at the tail base and has a white wing-bar that shows in flight."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Red-backed Shrike",
+      "url": "https://newmansbirds.com/birds/red-backed-shrike/",
+      "publisher": "Newman's Birds",
+      "year": 2026
+    },
+    {
+      "title": "Kemp A.C., Herholdt J.J., Whyte I. & Harrison J. (2001). Birds of the two largest national parks in South Africa: a method to generate estimates of population size for all species and assess their conservation ecology. S. Afr. J. Sci. 97: 393–403.",
+      "url": "https://journals.co.za/doi/pdf/10.10520/EJC97367",
+      "publisher": "South African Journal of Science",
+      "year": 2001
+    }
+  ],
   "population": {
     "estimate": {
       "low": 32768,
@@ -35,8 +67,213 @@
     },
     "tierApplied": "D"
   },
-  "variants": [],
-  "viewNotes": [],
-  "calls": [],
-  "images": []
+  "variants": [
+    {
+      "age": "adult",
+      "sex": "male",
+      "season": "non-breeding",
+      "marks": {
+        "bill": {
+          "colour": null,
+          "shape": null
+        },
+        "eye": {
+          "iris": null,
+          "ring": null
+        },
+        "legs": {
+          "colour": null
+        },
+        "head": {
+          "crown": "grey",
+          "face": "black",
+          "throat": "white",
+          "pattern": "Grey head and nape, with a black mask."
+        },
+        "upperparts": {
+          "back": "rufous",
+          "rump": "grey",
+          "pattern": "Rufous mantle and back. Grey rump. Rarely a male has white wing-bars; Newman says the mantle is then still rufous and unbarred, with a clearer grey cap than Souza’s Shrike."
+        },
+        "underparts": {
+          "breast": "white",
+          "belly": "white",
+          "pattern": "White underparts."
+        },
+        "wings": {
+          "above": null,
+          "below": null
+        },
+        "tail": {
+          "colour": null,
+          "shape": null
+        }
+      }
+    },
+    {
+      "age": "adult",
+      "sex": "female",
+      "season": "non-breeding",
+      "marks": {
+        "bill": {
+          "colour": null,
+          "shape": null
+        },
+        "eye": {
+          "iris": null,
+          "ring": null
+        },
+        "legs": {
+          "colour": null
+        },
+        "head": {
+          "crown": null,
+          "face": null,
+          "throat": null
+        },
+        "upperparts": {
+          "back": "rufous",
+          "rump": null,
+          "pattern": "More rufous upperparts than an immature Southern Fiscal, and no white wing-bars. Newman says the sexes differ as illustrated and does not describe the rest of the female."
+        },
+        "underparts": {
+          "breast": null,
+          "belly": null
+        },
+        "wings": {
+          "above": null,
+          "below": null,
+          "pattern": "No white wing-bars."
+        },
+        "tail": {
+          "colour": null,
+          "shape": null
+        }
+      }
+    }
+  ],
+  "viewNotes": [
+    {
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "male",
+      "season": "non-breeding",
+      "note": "Grey head, black mask, rufous mantle and white underparts."
+    },
+    {
+      "view": "perched-front",
+      "age": "adult",
+      "sex": "male",
+      "season": "non-breeding",
+      "note": "Grey crown, black mask and white throat."
+    },
+    {
+      "view": "perched-back",
+      "age": "adult",
+      "sex": "male",
+      "season": "non-breeding",
+      "note": "Rufous mantle and back, with a grey nape and rump."
+    },
+    {
+      "view": "flight-above",
+      "age": "adult",
+      "sex": "male",
+      "season": "non-breeding",
+      "note": "A flight pattern was not described. Rare males show white wing-bars."
+    },
+    {
+      "view": "flight-below",
+      "age": "adult",
+      "sex": "male",
+      "season": "non-breeding",
+      "note": "White underparts."
+    },
+    {
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "female",
+      "season": "non-breeding",
+      "note": "More rufous above than an immature Southern Fiscal, and no white wing-bars. The rest is only illustrated."
+    },
+    {
+      "view": "perched-front",
+      "age": "adult",
+      "sex": "female",
+      "season": "non-breeding",
+      "note": "The female face and throat were not described in the text."
+    },
+    {
+      "view": "perched-back",
+      "age": "adult",
+      "sex": "female",
+      "season": "non-breeding",
+      "note": "Rufous upperparts, without white wing-bars."
+    },
+    {
+      "view": "flight-above",
+      "age": "adult",
+      "sex": "female",
+      "season": "non-breeding",
+      "note": "No white wing-bars. Other flight marks were not described."
+    },
+    {
+      "view": "flight-below",
+      "age": "adult",
+      "sex": "female",
+      "season": "non-breeding",
+      "note": "The female underparts were not described in the text."
+    }
+  ],
+  "calls": [
+    {
+      "sex": "any",
+      "type": "call",
+      "description": "Mostly silent. An alarm is a harsh chak, chak, and there is a soft scratchy song that can be mistaken for a warbler. Grade A call from Dyängsmossen, Tibro, Sweden. The filename is Tornskatafamiljegrupp.mp3. It is a breeding-ground recording, not a Kruger one.",
+      "recordings": [
+        {
+          "key": "xeno-canto/XC27109",
+          "source": "https://xeno-canto.org/27109",
+          "fileUrl": "https://xeno-canto.org/sounds/uploaded/BPSDQEOJWG/Tornskatafamiljegrupp.mp3",
+          "author": "Patrik Åberg",
+          "license": "CC BY-NC-SA 3.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/3.0/",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ]
+    }
+  ],
+  "images": [
+    {
+      "key": "lanius-collurio/side.jpg",
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "male",
+      "season": "non-breeding",
+      "source": "https://www.inaturalist.org/observations/270750937",
+      "fileUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/486956099/large.jpg",
+      "author": "Rosario Douglas",
+      "license": "CC BY 4.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by/4.0/",
+      "aiGenerated": false,
+      "hosted": false,
+      "alt": "Male Red-backed Shrike perched, grey head, black mask and rufous back",
+      "caption": "Male Red-backed Shrike in the Ehlanzeni district, grey head, black mask, rufous back and pale underparts."
+    }
+  ],
+  "research": {
+    "confidence": "medium",
+    "needsReview": true,
+    "note": "Newman calls it a common summer visitor that arrives late October to November and departs early April, so the months stored are October through April and the status is summer-migrant. The female is only partly described, which is why this needs review. Population figures and the Kemp code NB were left unchanged. Souza’s Shrike is mentioned by Newman and is not in this list."
+  },
+  "status": "summer-migrant",
+  "monthsPresent": [
+    1,
+    2,
+    3,
+    4,
+    10,
+    11,
+    12
+  ]
 }

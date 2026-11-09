@@ -1,9 +1,9 @@
 {
   "source": "xeno-canto explore catalogue, API v3 recording fields",
   "counts": {
-    "slots": 294,
+    "slots": 299,
     "swapped": 17,
-    "added": 192,
+    "added": 197,
     "kept": 57,
     "none": 28,
     "cleaned": 0
@@ -4505,6 +4505,76 @@
       "quality": "C",
       "country": "Zambia",
       "locality": "Kasanka National Park",
+      "cleaned": false,
+      "license": "CC BY-NC-SA 4.0"
+    },
+    {
+      "slug": "eurocephalus-anguitimens",
+      "scientificName": "Eurocephalus anguitimens",
+      "index": 0,
+      "type": "call",
+      "action": "added",
+      "from": [],
+      "to": "338378",
+      "quality": "A",
+      "country": "Namibia",
+      "locality": "Okaukuejo Rest Camp,Etosha National Park",
+      "cleaned": false,
+      "license": "CC BY-NC-SA 4.0"
+    },
+    {
+      "slug": "lanius-collaris",
+      "scientificName": "Lanius collaris",
+      "index": 0,
+      "type": "call",
+      "action": "added",
+      "from": [],
+      "to": "309835",
+      "quality": "A",
+      "country": "South Africa",
+      "locality": "Barkly East (near Rhodes), Drakensberg District, Eastern Cape",
+      "cleaned": false,
+      "license": "CC BY-NC-SA 4.0"
+    },
+    {
+      "slug": "lanius-collurio",
+      "scientificName": "Lanius collurio",
+      "index": 0,
+      "type": "call",
+      "action": "added",
+      "from": [],
+      "to": "27109",
+      "quality": "A",
+      "country": "Sweden",
+      "locality": "Dyängsmossen, Tibro, Västergötland",
+      "cleaned": false,
+      "license": "CC BY-NC-SA 3.0"
+    },
+    {
+      "slug": "lanius-minor",
+      "scientificName": "Lanius minor",
+      "index": 0,
+      "type": "call",
+      "action": "added",
+      "from": [],
+      "to": "145242",
+      "quality": "A",
+      "country": "Kazakhstan",
+      "locality": "Akchi, Alakol lake",
+      "cleaned": false,
+      "license": "CC BY-NC-SA 3.0"
+    },
+    {
+      "slug": "urolestes-melanoleucus",
+      "scientificName": "Urolestes melanoleucus",
+      "index": 0,
+      "type": "call",
+      "action": "added",
+      "from": [],
+      "to": "830442",
+      "quality": "A",
+      "country": "South Africa",
+      "locality": "Bela-Bela Local Municipality (near Renostervlei), Waterberg District Municipality, Limpopo",
       "cleaned": false,
       "license": "CC BY-NC-SA 4.0"
     }

@@ -9809,14 +9809,42 @@
       "slug": "eurocephalus-anguitimens",
       "scientificName": "Eurocephalus anguitimens",
       "commonName": "Southern White-crowned Shrike",
-      "images": [],
-      "recordings": [],
+      "images": [
+        {
+          "key": "eurocephalus-anguitimens/side.jpg",
+          "author": "Philippe PERRUISSEAU-CARRIER",
+          "licence": "CC BY-NC 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+          "sourceUrl": "https://www.inaturalist.org/observations/329466269",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ],
+      "recordings": [
+        {
+          "key": "xeno-canto/XC338378",
+          "author": "Luca Fabbriccini",
+          "licence": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "sourceUrl": "https://xeno-canto.org/338378",
+          "aiGenerated": false,
+          "hosted": false,
+          "quality": "A",
+          "callType": "call"
+        }
+      ],
       "sources": [
         {
           "title": "Kemp A.C., Herholdt J.J., Whyte I. & Harrison J. (2001). Birds of the two largest national parks in South Africa: a method to generate estimates of population size for all species and assess their conservation ecology. S. Afr. J. Sci. 97: 393–403.",
           "url": "https://journals.co.za/doi/pdf/10.10520/EJC97367",
           "publisher": "South African Journal of Science",
           "year": 2001
+        },
+        {
+          "title": "Southern White-crowned Shrike",
+          "url": "https://newmansbirds.com/birds/southern-white-crowned-shrike/",
+          "publisher": "Newman's Birds",
+          "year": 2026
         }
       ]
     },
@@ -12846,14 +12874,42 @@
       "slug": "lanius-collaris",
       "scientificName": "Lanius collaris",
       "commonName": "Southern Fiscal",
-      "images": [],
-      "recordings": [],
+      "images": [
+        {
+          "key": "lanius-collaris/side.jpg",
+          "author": "Steve Atherton",
+          "licence": "CC BY-NC 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+          "sourceUrl": "https://www.inaturalist.org/observations/365106333",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ],
+      "recordings": [
+        {
+          "key": "xeno-canto/XC309835",
+          "author": "Lynette Rudman",
+          "licence": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "sourceUrl": "https://xeno-canto.org/309835",
+          "aiGenerated": false,
+          "hosted": false,
+          "quality": "A",
+          "callType": "call"
+        }
+      ],
       "sources": [
         {
           "title": "Kemp A.C., Herholdt J.J., Whyte I. & Harrison J. (2001). Birds of the two largest national parks in South Africa: a method to generate estimates of population size for all species and assess their conservation ecology. S. Afr. J. Sci. 97: 393–403.",
           "url": "https://journals.co.za/doi/pdf/10.10520/EJC97367",
           "publisher": "South African Journal of Science",
           "year": 2001
+        },
+        {
+          "title": "Southern Fiscal",
+          "url": "https://newmansbirds.com/birds/southern-fiscal/",
+          "publisher": "Newman's Birds",
+          "year": 2026
         }
       ]
     },
@@ -12861,14 +12917,42 @@
       "slug": "lanius-collurio",
       "scientificName": "Lanius collurio",
       "commonName": "Red-backed Shrike",
-      "images": [],
-      "recordings": [],
+      "images": [
+        {
+          "key": "lanius-collurio/side.jpg",
+          "author": "Rosario Douglas",
+          "licence": "CC BY 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by/4.0/",
+          "sourceUrl": "https://www.inaturalist.org/observations/270750937",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ],
+      "recordings": [
+        {
+          "key": "xeno-canto/XC27109",
+          "author": "Patrik Åberg",
+          "licence": "CC BY-NC-SA 3.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/3.0/",
+          "sourceUrl": "https://xeno-canto.org/27109",
+          "aiGenerated": false,
+          "hosted": false,
+          "quality": "A",
+          "callType": "call"
+        }
+      ],
       "sources": [
         {
           "title": "Kemp A.C., Herholdt J.J., Whyte I. & Harrison J. (2001). Birds of the two largest national parks in South Africa: a method to generate estimates of population size for all species and assess their conservation ecology. S. Afr. J. Sci. 97: 393–403.",
           "url": "https://journals.co.za/doi/pdf/10.10520/EJC97367",
           "publisher": "South African Journal of Science",
           "year": 2001
+        },
+        {
+          "title": "Red-backed Shrike",
+          "url": "https://newmansbirds.com/birds/red-backed-shrike/",
+          "publisher": "Newman's Birds",
+          "year": 2026
         }
       ]
     },
@@ -12876,14 +12960,42 @@
       "slug": "lanius-minor",
       "scientificName": "Lanius minor",
       "commonName": "Lesser Grey Shrike",
-      "images": [],
-      "recordings": [],
+      "images": [
+        {
+          "key": "lanius-minor/side.jpg",
+          "author": "leuli",
+          "licence": "CC BY-NC 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+          "sourceUrl": "https://www.inaturalist.org/observations/131228648",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ],
+      "recordings": [
+        {
+          "key": "xeno-canto/XC145242",
+          "author": "Thijs Fijen",
+          "licence": "CC BY-NC-SA 3.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/3.0/",
+          "sourceUrl": "https://xeno-canto.org/145242",
+          "aiGenerated": false,
+          "hosted": false,
+          "quality": "A",
+          "callType": "call"
+        }
+      ],
       "sources": [
         {
           "title": "Kemp A.C., Herholdt J.J., Whyte I. & Harrison J. (2001). Birds of the two largest national parks in South Africa: a method to generate estimates of population size for all species and assess their conservation ecology. S. Afr. J. Sci. 97: 393–403.",
           "url": "https://journals.co.za/doi/pdf/10.10520/EJC97367",
           "publisher": "South African Journal of Science",
           "year": 2001
+        },
+        {
+          "title": "Lesser Grey Shrike",
+          "url": "https://newmansbirds.com/birds/lesser-grey-shrike/",
+          "publisher": "Newman's Birds",
+          "year": 2026
         }
       ]
     },
@@ -18505,14 +18617,42 @@
       "slug": "urolestes-melanoleucus",
       "scientificName": "Urolestes melanoleucus",
       "commonName": "Magpie Shrike",
-      "images": [],
-      "recordings": [],
+      "images": [
+        {
+          "key": "urolestes-melanoleucus/side.jpg",
+          "author": "maritzasouthafrica",
+          "licence": "CC BY-NC 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+          "sourceUrl": "https://www.inaturalist.org/observations/18308166",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ],
+      "recordings": [
+        {
+          "key": "xeno-canto/XC830442",
+          "author": "Michael John O Mahony",
+          "licence": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "sourceUrl": "https://xeno-canto.org/830442",
+          "aiGenerated": false,
+          "hosted": false,
+          "quality": "A",
+          "callType": "call"
+        }
+      ],
       "sources": [
         {
           "title": "Kemp A.C., Herholdt J.J., Whyte I. & Harrison J. (2001). Birds of the two largest national parks in South Africa: a method to generate estimates of population size for all species and assess their conservation ecology. S. Afr. J. Sci. 97: 393–403.",
           "url": "https://journals.co.za/doi/pdf/10.10520/EJC97367",
           "publisher": "South African Journal of Science",
           "year": 2001
+        },
+        {
+          "title": "Magpie Shrike",
+          "url": "https://newmansbirds.com/birds/magpie-shrike/",
+          "publisher": "Newman's Birds",
+          "year": 2026
         }
       ]
     },

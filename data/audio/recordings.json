@@ -3006,6 +3006,56 @@
           }
         }
       ]
+    },
+    "eurocephalus-anguitimens": {
+      "calls": [
+        {
+          "index": 0,
+          "quality": {
+            "xeno-canto/XC338378": "A"
+          }
+        }
+      ]
+    },
+    "lanius-collaris": {
+      "calls": [
+        {
+          "index": 0,
+          "quality": {
+            "xeno-canto/XC309835": "A"
+          }
+        }
+      ]
+    },
+    "lanius-collurio": {
+      "calls": [
+        {
+          "index": 0,
+          "quality": {
+            "xeno-canto/XC27109": "A"
+          }
+        }
+      ]
+    },
+    "lanius-minor": {
+      "calls": [
+        {
+          "index": 0,
+          "quality": {
+            "xeno-canto/XC145242": "A"
+          }
+        }
+      ]
+    },
+    "urolestes-melanoleucus": {
+      "calls": [
+        {
+          "index": 0,
+          "quality": {
+            "xeno-canto/XC830442": "A"
+          }
+        }
+      ]
     }
   }
 }

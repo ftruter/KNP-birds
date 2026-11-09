@@ -6,8 +6,8 @@
     "en": "Shrikes",
     "af": "Laksmanne"
   },
-  "summary": "Field notes for this family are still to be written.",
-  "sampleData": true,
+  "summary": "Shrikes that still-hunt from a perch. Kruger has five. Southern White-crowned Shrike is the bulky bird with a white crown and a black mask. Southern Fiscal is the heavy pied bird whose white wing-bar reaches the shoulder. Red-backed Shrike and Lesser Grey Shrike are summer visitors. Magpie Shrike is the long-tailed pied bird of small groups.",
+  "sampleData": false,
   "species": [
     {
       "slug": "eurocephalus-anguitimens",
