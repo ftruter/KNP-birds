@@ -2166,6 +2166,26 @@
         }
       ]
     },
+    "poicephalus-cryptoxanthus": {
+      "calls": [
+        {
+          "index": 0,
+          "quality": {
+            "xeno-canto/XC368173": "A"
+          }
+        }
+      ]
+    },
+    "poicephalus-meyeri": {
+      "calls": [
+        {
+          "index": 0,
+          "quality": {
+            "xeno-canto/XC1078757": "A"
+          }
+        }
+      ]
+    },
     "polemaetus-bellicosus": {
       "calls": [
         {

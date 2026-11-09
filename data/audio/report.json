@@ -1,10 +1,10 @@
 {
   "source": "xeno-canto explore catalogue, API v3 recording fields",
   "counts": {
-    "slots": 409,
+    "slots": 411,
     "swapped": 17,
     "added": 278,
-    "kept": 86,
+    "kept": 88,
     "none": 28,
     "cleaned": 0
   },
@@ -1496,6 +1496,38 @@
       "quality": "A",
       "country": "Malawi",
       "locality": "Liwonde National Park",
+      "cleaned": false,
+      "license": "CC BY-NC-SA 4.0"
+    },
+    {
+      "slug": "poicephalus-cryptoxanthus",
+      "scientificName": "Poicephalus cryptoxanthus",
+      "index": 0,
+      "type": "call",
+      "action": "kept",
+      "from": [
+        "368173"
+      ],
+      "to": "368173",
+      "quality": "A",
+      "country": "South Africa",
+      "locality": "Satara Camp, Kruger National Park, Ehlanzeni, Mpumalanga",
+      "cleaned": false,
+      "license": "CC BY-NC-SA 4.0"
+    },
+    {
+      "slug": "poicephalus-meyeri",
+      "scientificName": "Poicephalus meyeri",
+      "index": 0,
+      "type": "call",
+      "action": "kept",
+      "from": [
+        "1078757"
+      ],
+      "to": "1078757",
+      "quality": "A",
+      "country": "South Africa",
+      "locality": "Madibeng (near Fafung), Bojanala Platinum District Municipality, North West",
       "cleaned": false,
       "license": "CC BY-NC-SA 4.0"
     },
