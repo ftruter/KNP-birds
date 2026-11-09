@@ -3396,6 +3396,26 @@
           }
         }
       ]
+    },
+    "crinifer-concolor": {
+      "calls": [
+        {
+          "index": 0,
+          "quality": {
+            "xeno-canto/XC208606": "A"
+          }
+        }
+      ]
+    },
+    "tauraco-corythaix": {
+      "calls": [
+        {
+          "index": 0,
+          "quality": {
+            "xeno-canto/XC1161576": "A"
+          }
+        }
+      ]
     }
   }
 }
