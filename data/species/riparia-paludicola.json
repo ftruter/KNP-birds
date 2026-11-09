@@ -7,8 +7,49 @@
     "af": "Afrikaanse Oewerswael"
   },
   "family": "hirundinidae",
-  "summary": "The details for this species have not been published yet.",
-  "sampleData": true,
+  "status": "resident",
+  "size": {
+    "lengthCm": {
+      "min": 13,
+      "max": 13
+    },
+    "note": "Newman's Birds gives 13 cm."
+  },
+  "monthsPresent": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+  ],
+  "habitat": "Flocks over rivers with sandy banks, where it breeds, and over estuaries and other wetlands. It roosts in reed beds when not breeding.",
+  "summary": "A locally common resident. A small martin, almost entirely brown except for a white belly. Some birds are brown below as well. Those are told from Rock Martin by the lack of tail windows and a more slender shape. The call is a soft twitter. The Kemp code VB was left unchanged.",
+  "sampleData": false,
+  "similar": [
+    {
+      "slug": "riparia-riparia",
+      "note": "Sand Martin has a narrow brown breast-band on white underparts. Brown-throated Martin is brown on the throat and breast, with a white belly, or brown all over."
+    },
+    {
+      "slug": "ptyonoprogne-fuligula",
+      "note": "Rock Martin has white windows in the fanned tail and is stockier. The all-brown Brown-throated Martin lacks those windows."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Brown-throated Martin",
+      "url": "https://newmansbirds.com/birds/brown-throated-martin/",
+      "publisher": "Newman's Birds",
+      "year": 2026
+    }
+  ],
   "population": {
     "estimate": {
       "low": 512,
@@ -35,8 +76,171 @@
     },
     "tierApplied": "D"
   },
-  "variants": [],
-  "viewNotes": [],
-  "calls": [],
-  "images": []
+  "variants": [
+    {
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "marks": {
+        "bill": {
+          "colour": null,
+          "shape": null
+        },
+        "eye": {
+          "iris": null,
+          "ring": null
+        },
+        "legs": {
+          "colour": null
+        },
+        "head": {
+          "crown": null,
+          "face": null,
+          "throat": null,
+          "pattern": null
+        },
+        "upperparts": {
+          "back": "dark-brown",
+          "rump": null,
+          "pattern": null
+        },
+        "underparts": {
+          "breast": "dark-brown",
+          "belly": "white",
+          "pattern": "The usual bird is dark brown except for a white belly."
+        },
+        "wings": {
+          "above": null,
+          "below": null,
+          "pattern": null
+        },
+        "tail": {
+          "colour": null,
+          "shape": null
+        }
+      }
+    },
+    {
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "marks": {
+        "bill": {
+          "colour": null,
+          "shape": null
+        },
+        "eye": {
+          "iris": null,
+          "ring": null
+        },
+        "legs": {
+          "colour": null
+        },
+        "head": {
+          "crown": null,
+          "face": null,
+          "throat": null,
+          "pattern": null
+        },
+        "upperparts": {
+          "back": "dark-brown",
+          "rump": null,
+          "pattern": null
+        },
+        "underparts": {
+          "breast": "dark-brown",
+          "belly": "dark-brown",
+          "pattern": "Some birds are entirely brown below. No white windows in the tail."
+        },
+        "wings": {
+          "above": null,
+          "below": null,
+          "pattern": null
+        },
+        "tail": {
+          "colour": null,
+          "shape": "No white windows. More slender than Rock Martin."
+        }
+      }
+    }
+  ],
+  "viewNotes": [
+    {
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Small and brown, with a white belly. A few birds are brown below as well."
+    },
+    {
+      "view": "perched-front",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Brown throat and breast, usually with a white belly."
+    },
+    {
+      "view": "perched-back",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Dark brown upper parts."
+    },
+    {
+      "view": "flight-above",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "More slender than a Rock Martin, and without white windows in the tail."
+    },
+    {
+      "view": "flight-below",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "White belly on the usual bird. The all-brown birds are brown below."
+    }
+  ],
+  "calls": [
+    {
+      "sex": "any",
+      "type": "call",
+      "description": "A soft twitter. Grade A flight call from Bemanevika, Madagascar. The filename names Brown-throated Martin. A South African file was not used because its filename says Check if BT Martin.",
+      "recordings": [
+        {
+          "key": "xeno-canto/XC536712",
+          "source": "https://xeno-canto.org/536712",
+          "fileUrl": "https://xeno-canto.org/sounds/uploaded/IIJAXHKSCC/XC536712-Brown-throated%20Martin%20%28flight%20call%29%2020190815%2CBemanevika%2CMADAGASCAR.mp3",
+          "author": "Dries Van de Loock",
+          "license": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ]
+    }
+  ],
+  "images": [
+    {
+      "key": "riparia-paludicola/side.jpg",
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "source": "https://www.inaturalist.org/observations/135373067",
+      "fileUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/230879382/large.jpeg",
+      "author": "agujaceratops",
+      "license": "CC BY 4.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by/4.0/",
+      "aiGenerated": false,
+      "hosted": false,
+      "alt": "Brown-throated Martin in Vhembe",
+      "caption": "Brown-throated Martin in Vhembe, Limpopo."
+    }
+  ],
+  "research": {
+    "confidence": "medium",
+    "needsReview": false,
+    "note": "Status is resident and all twelve months are listed. Newman calls it a locally common resident. The Kemp code VB was left unchanged. Population figures were left unchanged."
+  }
 }

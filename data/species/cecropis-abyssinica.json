@@ -7,8 +7,31 @@
     "af": "Kleinstreepswael"
   },
   "family": "hirundinidae",
-  "summary": "The details for this species have not been published yet.",
-  "sampleData": true,
+  "status": "summer-migrant",
+  "size": {
+    "lengthCm": {
+      "min": 16,
+      "max": 16
+    },
+    "note": "Newman's Birds gives 16 cm."
+  },
+  "habitat": "Pairs and small flocks near rivers, bridges, road culverts and buildings. It perches in trees or on wires.",
+  "summary": "A common summer resident, with some present all year. The orange cap covers the ear coverts, the rump is rich orange, and the white underparts are heavily streaked black, looking very dark in the field. The flight call is a descending eh-eh-eh-eh. It flies more actively, and glides less, than Greater Striped Swallow. Months were left unset. The Kemp code VB was left unchanged.",
+  "sampleData": false,
+  "similar": [
+    {
+      "slug": "cecropis-cucullata",
+      "note": "Greater Striped Swallow is only lightly streaked below, so it looks almost white in flight, and the orange cap does not cover the ear coverts."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Lesser Striped Swallow",
+      "url": "https://newmansbirds.com/birds/lesser-striped-swallow/",
+      "publisher": "Newman's Birds",
+      "year": 2026
+    }
+  ],
   "population": {
     "estimate": {
       "low": 2048,
@@ -35,8 +58,128 @@
     },
     "tierApplied": "D"
   },
-  "variants": [],
-  "viewNotes": [],
-  "calls": [],
-  "images": []
+  "variants": [
+    {
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "marks": {
+        "bill": {
+          "colour": null,
+          "shape": null
+        },
+        "eye": {
+          "iris": null,
+          "ring": null
+        },
+        "legs": {
+          "colour": null
+        },
+        "head": {
+          "crown": "orange",
+          "face": "orange",
+          "throat": null,
+          "pattern": "Orange cap extending over the ear coverts."
+        },
+        "upperparts": {
+          "back": null,
+          "rump": "orange",
+          "pattern": null
+        },
+        "underparts": {
+          "breast": "white",
+          "belly": "white",
+          "pattern": "Well streaked black, appearing very dark in the field."
+        },
+        "wings": {
+          "above": null,
+          "below": null,
+          "pattern": null
+        },
+        "tail": {
+          "colour": null,
+          "shape": null
+        }
+      }
+    }
+  ],
+  "viewNotes": [
+    {
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Orange cap over the ear coverts, orange rump, and heavily streaked white underparts."
+    },
+    {
+      "view": "perched-front",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "The streaked underparts look dark."
+    },
+    {
+      "view": "perched-back",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Orange cap and rump."
+    },
+    {
+      "view": "flight-above",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "It flies actively, with less gliding than Greater Striped Swallow."
+    },
+    {
+      "view": "flight-below",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Heavily streaked underparts."
+    }
+  ],
+  "calls": [
+    {
+      "sex": "any",
+      "type": "call",
+      "description": "A descending series of four notes, eh-eh-eh-eh, in flight. Grade A call from Lake Mburo, Uganda. The filename names Cecropis abyssinica. No grade A recording from South Africa was on the catalogue page.",
+      "recordings": [
+        {
+          "key": "xeno-canto/XC227618",
+          "source": "https://xeno-canto.org/227618",
+          "fileUrl": "https://xeno-canto.org/sounds/uploaded/WOPIRNCCSX/XC227618-Cecropis%20abyssinica%20%28Mburo-2015-02-23-07h46%29%20LS114130.mp3",
+          "author": "Martin St-Michel",
+          "license": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ]
+    }
+  ],
+  "images": [
+    {
+      "key": "cecropis-abyssinica/side.jpg",
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "source": "https://www.inaturalist.org/observations/16892599",
+      "fileUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/25516758/large.jpeg",
+      "author": "copper",
+      "license": "CC BY-NC 4.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+      "aiGenerated": false,
+      "hosted": false,
+      "alt": "Lesser Striped Swallow on the Gomondwane road",
+      "caption": "Lesser Striped Swallow on the Gomondwane road in Kruger."
+    }
+  ],
+  "research": {
+    "confidence": "medium",
+    "needsReview": true,
+    "note": "Newman says common summer resident, some present all year, and does not name months. Status is summer-migrant and months were left unset. The Kemp code VB was left unchanged. Population figures were left unchanged."
+  }
 }

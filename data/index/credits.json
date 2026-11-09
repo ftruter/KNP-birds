@@ -5023,14 +5023,42 @@
       "slug": "cecropis-abyssinica",
       "scientificName": "Cecropis abyssinica",
       "commonName": "Lesser Striped Swallow",
-      "images": [],
-      "recordings": [],
+      "images": [
+        {
+          "key": "cecropis-abyssinica/side.jpg",
+          "author": "copper",
+          "licence": "CC BY-NC 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+          "sourceUrl": "https://www.inaturalist.org/observations/16892599",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ],
+      "recordings": [
+        {
+          "key": "xeno-canto/XC227618",
+          "author": "Martin St-Michel",
+          "licence": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "sourceUrl": "https://xeno-canto.org/227618",
+          "aiGenerated": false,
+          "hosted": false,
+          "quality": "A",
+          "callType": "call"
+        }
+      ],
       "sources": [
         {
           "title": "Kemp A.C., Herholdt J.J., Whyte I. & Harrison J. (2001). Birds of the two largest national parks in South Africa: a method to generate estimates of population size for all species and assess their conservation ecology. S. Afr. J. Sci. 97: 393–403.",
           "url": "https://journals.co.za/doi/pdf/10.10520/EJC97367",
           "publisher": "South African Journal of Science",
           "year": 2001
+        },
+        {
+          "title": "Lesser Striped Swallow",
+          "url": "https://newmansbirds.com/birds/lesser-striped-swallow/",
+          "publisher": "Newman's Birds",
+          "year": 2026
         }
       ]
     },
@@ -5038,14 +5066,42 @@
       "slug": "cecropis-cucullata",
       "scientificName": "Cecropis cucullata",
       "commonName": "Greater Striped Swallow",
-      "images": [],
-      "recordings": [],
+      "images": [
+        {
+          "key": "cecropis-cucullata/side.jpg",
+          "author": "Calvin Harris",
+          "licence": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "sourceUrl": "https://www.inaturalist.org/observations/44099512",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ],
+      "recordings": [
+        {
+          "key": "xeno-canto/XC292890",
+          "author": "Faansie Peacock",
+          "licence": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "sourceUrl": "https://xeno-canto.org/292890",
+          "aiGenerated": false,
+          "hosted": false,
+          "quality": "A",
+          "callType": "call"
+        }
+      ],
       "sources": [
         {
           "title": "Kemp A.C., Herholdt J.J., Whyte I. & Harrison J. (2001). Birds of the two largest national parks in South Africa: a method to generate estimates of population size for all species and assess their conservation ecology. S. Afr. J. Sci. 97: 393–403.",
           "url": "https://journals.co.za/doi/pdf/10.10520/EJC97367",
           "publisher": "South African Journal of Science",
           "year": 2001
+        },
+        {
+          "title": "Greater Striped Swallow",
+          "url": "https://newmansbirds.com/birds/greater-striped-swallow/",
+          "publisher": "Newman's Birds",
+          "year": 2026
         }
       ]
     },
@@ -5053,14 +5109,42 @@
       "slug": "cecropis-semirufa",
       "scientificName": "Cecropis semirufa",
       "commonName": "Red-breasted Swallow",
-      "images": [],
-      "recordings": [],
+      "images": [
+        {
+          "key": "cecropis-semirufa/side.jpg",
+          "author": "copper",
+          "licence": "CC BY-NC 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+          "sourceUrl": "https://www.inaturalist.org/observations/10254960",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ],
+      "recordings": [
+        {
+          "key": "xeno-canto/XC927171",
+          "author": "Paul Lenrumé",
+          "licence": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "sourceUrl": "https://xeno-canto.org/927171",
+          "aiGenerated": false,
+          "hosted": false,
+          "quality": "A",
+          "callType": "song"
+        }
+      ],
       "sources": [
         {
           "title": "Kemp A.C., Herholdt J.J., Whyte I. & Harrison J. (2001). Birds of the two largest national parks in South Africa: a method to generate estimates of population size for all species and assess their conservation ecology. S. Afr. J. Sci. 97: 393–403.",
           "url": "https://journals.co.za/doi/pdf/10.10520/EJC97367",
           "publisher": "South African Journal of Science",
           "year": 2001
+        },
+        {
+          "title": "Red-breasted Swallow",
+          "url": "https://newmansbirds.com/birds/red-breasted-swallow/",
+          "publisher": "Newman's Birds",
+          "year": 2026
         }
       ]
     },
@@ -5068,14 +5152,42 @@
       "slug": "cecropis-senegalensis",
       "scientificName": "Cecropis senegalensis",
       "commonName": "Mosque Swallow",
-      "images": [],
-      "recordings": [],
+      "images": [
+        {
+          "key": "cecropis-senegalensis/side.jpg",
+          "author": "Thomas ARMAND",
+          "licence": "CC BY-NC 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+          "sourceUrl": "https://www.inaturalist.org/observations/149816459",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ],
+      "recordings": [
+        {
+          "key": "xeno-canto/XC423237",
+          "author": "Toby Esplin",
+          "licence": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "sourceUrl": "https://xeno-canto.org/423237",
+          "aiGenerated": false,
+          "hosted": false,
+          "quality": "B",
+          "callType": "call"
+        }
+      ],
       "sources": [
         {
           "title": "Kemp A.C., Herholdt J.J., Whyte I. & Harrison J. (2001). Birds of the two largest national parks in South Africa: a method to generate estimates of population size for all species and assess their conservation ecology. S. Afr. J. Sci. 97: 393–403.",
           "url": "https://journals.co.za/doi/pdf/10.10520/EJC97367",
           "publisher": "South African Journal of Science",
           "year": 2001
+        },
+        {
+          "title": "Mosque Swallow",
+          "url": "https://newmansbirds.com/birds/mosque-swallow/",
+          "publisher": "Newman's Birds",
+          "year": 2026
         }
       ]
     },
@@ -8589,14 +8701,42 @@
       "slug": "delichon-urbicum",
       "scientificName": "Delichon urbicum",
       "commonName": "Western House Martin",
-      "images": [],
-      "recordings": [],
+      "images": [
+        {
+          "key": "delichon-urbicum/side.jpg",
+          "author": "Heinrich Human",
+          "licence": "CC BY-NC 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+          "sourceUrl": "https://www.inaturalist.org/observations/250422048",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ],
+      "recordings": [
+        {
+          "key": "xeno-canto/XC27278",
+          "author": "Patrik Åberg",
+          "licence": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "sourceUrl": "https://xeno-canto.org/27278",
+          "aiGenerated": false,
+          "hosted": false,
+          "quality": "A",
+          "callType": "call"
+        }
+      ],
       "sources": [
         {
           "title": "Kemp A.C., Herholdt J.J., Whyte I. & Harrison J. (2001). Birds of the two largest national parks in South Africa: a method to generate estimates of population size for all species and assess their conservation ecology. S. Afr. J. Sci. 97: 393–403.",
           "url": "https://journals.co.za/doi/pdf/10.10520/EJC97367",
           "publisher": "South African Journal of Science",
           "year": 2001
+        },
+        {
+          "title": "Common House Martin",
+          "url": "https://newmansbirds.com/birds/common-house-martin/",
+          "publisher": "Newman's Birds",
+          "year": 2026
         }
       ]
     },
@@ -11647,14 +11787,42 @@
       "slug": "hirundo-albigularis",
       "scientificName": "Hirundo albigularis",
       "commonName": "White-throated Swallow",
-      "images": [],
-      "recordings": [],
+      "images": [
+        {
+          "key": "hirundo-albigularis/side.jpg",
+          "author": "Yolande Oelsen",
+          "licence": "CC BY-NC 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+          "sourceUrl": "https://www.inaturalist.org/observations/335052893",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ],
+      "recordings": [
+        {
+          "key": "xeno-canto/XC523596",
+          "author": "Lynette Rudman",
+          "licence": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "sourceUrl": "https://xeno-canto.org/523596",
+          "aiGenerated": false,
+          "hosted": false,
+          "quality": "A",
+          "callType": "song"
+        }
+      ],
       "sources": [
         {
           "title": "Kemp A.C., Herholdt J.J., Whyte I. & Harrison J. (2001). Birds of the two largest national parks in South Africa: a method to generate estimates of population size for all species and assess their conservation ecology. S. Afr. J. Sci. 97: 393–403.",
           "url": "https://journals.co.za/doi/pdf/10.10520/EJC97367",
           "publisher": "South African Journal of Science",
           "year": 2001
+        },
+        {
+          "title": "White-throated Swallow",
+          "url": "https://newmansbirds.com/birds/white-throated-swallow/",
+          "publisher": "Newman's Birds",
+          "year": 2026
         }
       ]
     },
@@ -11662,14 +11830,42 @@
       "slug": "hirundo-dimidiata",
       "scientificName": "Hirundo dimidiata",
       "commonName": "Pearl-breasted Swallow",
-      "images": [],
-      "recordings": [],
+      "images": [
+        {
+          "key": "hirundo-dimidiata/side.jpg",
+          "author": "Liam Huber",
+          "licence": "CC BY-NC 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+          "sourceUrl": "https://www.inaturalist.org/observations/326512908",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ],
+      "recordings": [
+        {
+          "key": "xeno-canto/XC622640",
+          "author": "Tim Cockcroft",
+          "licence": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "sourceUrl": "https://xeno-canto.org/622640",
+          "aiGenerated": false,
+          "hosted": false,
+          "quality": "B",
+          "callType": "call"
+        }
+      ],
       "sources": [
         {
           "title": "Kemp A.C., Herholdt J.J., Whyte I. & Harrison J. (2001). Birds of the two largest national parks in South Africa: a method to generate estimates of population size for all species and assess their conservation ecology. S. Afr. J. Sci. 97: 393–403.",
           "url": "https://journals.co.za/doi/pdf/10.10520/EJC97367",
           "publisher": "South African Journal of Science",
           "year": 2001
+        },
+        {
+          "title": "Pearl-breasted Swallow",
+          "url": "https://newmansbirds.com/birds/pearl-breasted-swallow/",
+          "publisher": "Newman's Birds",
+          "year": 2026
         }
       ]
     },
@@ -11677,14 +11873,42 @@
       "slug": "hirundo-rustica",
       "scientificName": "Hirundo rustica",
       "commonName": "Barn Swallow",
-      "images": [],
-      "recordings": [],
+      "images": [
+        {
+          "key": "hirundo-rustica/side.jpg",
+          "author": "jandutoit",
+          "licence": "CC BY-NC 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+          "sourceUrl": "https://www.inaturalist.org/observations/272625883",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ],
+      "recordings": [
+        {
+          "key": "xeno-canto/XC46803",
+          "author": "Bernabe Lopez-Lanus",
+          "licence": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "sourceUrl": "https://xeno-canto.org/46803",
+          "aiGenerated": false,
+          "hosted": false,
+          "quality": "A",
+          "callType": "call"
+        }
+      ],
       "sources": [
         {
           "title": "Kemp A.C., Herholdt J.J., Whyte I. & Harrison J. (2001). Birds of the two largest national parks in South Africa: a method to generate estimates of population size for all species and assess their conservation ecology. S. Afr. J. Sci. 97: 393–403.",
           "url": "https://journals.co.za/doi/pdf/10.10520/EJC97367",
           "publisher": "South African Journal of Science",
           "year": 2001
+        },
+        {
+          "title": "Barn Swallow",
+          "url": "https://newmansbirds.com/birds/barn-swallow/",
+          "publisher": "Newman's Birds",
+          "year": 2026
         }
       ]
     },
@@ -11692,14 +11916,42 @@
       "slug": "hirundo-smithii",
       "scientificName": "Hirundo smithii",
       "commonName": "Wire-tailed Swallow",
-      "images": [],
-      "recordings": [],
+      "images": [
+        {
+          "key": "hirundo-smithii/side.jpg",
+          "author": "sowadart",
+          "licence": "CC BY-NC 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+          "sourceUrl": "https://www.inaturalist.org/observations/199687528",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ],
+      "recordings": [
+        {
+          "key": "xeno-canto/XC295234",
+          "author": "Ross Gallardy",
+          "licence": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "sourceUrl": "https://xeno-canto.org/295234",
+          "aiGenerated": false,
+          "hosted": false,
+          "quality": "A",
+          "callType": "call"
+        }
+      ],
       "sources": [
         {
           "title": "Kemp A.C., Herholdt J.J., Whyte I. & Harrison J. (2001). Birds of the two largest national parks in South Africa: a method to generate estimates of population size for all species and assess their conservation ecology. S. Afr. J. Sci. 97: 393–403.",
           "url": "https://journals.co.za/doi/pdf/10.10520/EJC97367",
           "publisher": "South African Journal of Science",
           "year": 2001
+        },
+        {
+          "title": "Wire-tailed Swallow",
+          "url": "https://newmansbirds.com/birds/wire-tailed-swallow/",
+          "publisher": "Newman's Birds",
+          "year": 2026
         }
       ]
     },
@@ -13838,14 +14090,42 @@
       "slug": "neophedina-cincta",
       "scientificName": "Neophedina cincta",
       "commonName": "Banded Martin",
-      "images": [],
-      "recordings": [],
+      "images": [
+        {
+          "key": "neophedina-cincta/side.jpg",
+          "author": "Duncan McKenzie",
+          "licence": "CC BY-NC 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+          "sourceUrl": "https://www.inaturalist.org/observations/199484833",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ],
+      "recordings": [
+        {
+          "key": "xeno-canto/XC459468",
+          "author": "Raphaël Nussbaumer",
+          "licence": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "sourceUrl": "https://xeno-canto.org/459468",
+          "aiGenerated": false,
+          "hosted": false,
+          "quality": "A",
+          "callType": "song"
+        }
+      ],
       "sources": [
         {
           "title": "Kemp A.C., Herholdt J.J., Whyte I. & Harrison J. (2001). Birds of the two largest national parks in South Africa: a method to generate estimates of population size for all species and assess their conservation ecology. S. Afr. J. Sci. 97: 393–403.",
           "url": "https://journals.co.za/doi/pdf/10.10520/EJC97367",
           "publisher": "South African Journal of Science",
           "year": 2001
+        },
+        {
+          "title": "Banded Martin",
+          "url": "https://newmansbirds.com/birds/banded-martin/",
+          "publisher": "Newman's Birds",
+          "year": 2026
         }
       ]
     },
@@ -15408,14 +15688,42 @@
       "slug": "pseudhirundo-griseopyga",
       "scientificName": "Pseudhirundo griseopyga",
       "commonName": "Grey-rumped Swallow",
-      "images": [],
-      "recordings": [],
+      "images": [
+        {
+          "key": "pseudhirundo-griseopyga/side.jpg",
+          "author": "Lynne Correia",
+          "licence": "CC BY-NC 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+          "sourceUrl": "https://www.inaturalist.org/observations/343189607",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ],
+      "recordings": [
+        {
+          "key": "xeno-canto/XC745610",
+          "author": "Dries Van de Loock",
+          "licence": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "sourceUrl": "https://xeno-canto.org/745610",
+          "aiGenerated": false,
+          "hosted": false,
+          "quality": "A",
+          "callType": "call"
+        }
+      ],
       "sources": [
         {
           "title": "Kemp A.C., Herholdt J.J., Whyte I. & Harrison J. (2001). Birds of the two largest national parks in South Africa: a method to generate estimates of population size for all species and assess their conservation ecology. S. Afr. J. Sci. 97: 393–403.",
           "url": "https://journals.co.za/doi/pdf/10.10520/EJC97367",
           "publisher": "South African Journal of Science",
           "year": 2001
+        },
+        {
+          "title": "Grey-rumped Swallow",
+          "url": "https://newmansbirds.com/birds/grey-rumped-swallow/",
+          "publisher": "Newman's Birds",
+          "year": 2026
         }
       ]
     },
@@ -15498,14 +15806,42 @@
       "slug": "ptyonoprogne-fuligula",
       "scientificName": "Ptyonoprogne fuligula",
       "commonName": "Large Rock Martin",
-      "images": [],
-      "recordings": [],
+      "images": [
+        {
+          "key": "ptyonoprogne-fuligula/side.jpg",
+          "author": "Luca Boscain",
+          "licence": "CC BY-NC 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+          "sourceUrl": "https://www.inaturalist.org/observations/182644292",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ],
+      "recordings": [
+        {
+          "key": "xeno-canto/XC1149917",
+          "author": "African Bioacoustics Community",
+          "licence": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "sourceUrl": "https://xeno-canto.org/1149917",
+          "aiGenerated": false,
+          "hosted": false,
+          "quality": "A",
+          "callType": "call"
+        }
+      ],
       "sources": [
         {
           "title": "Kemp A.C., Herholdt J.J., Whyte I. & Harrison J. (2001). Birds of the two largest national parks in South Africa: a method to generate estimates of population size for all species and assess their conservation ecology. S. Afr. J. Sci. 97: 393–403.",
           "url": "https://journals.co.za/doi/pdf/10.10520/EJC97367",
           "publisher": "South African Journal of Science",
           "year": 2001
+        },
+        {
+          "title": "Rock Martin",
+          "url": "https://newmansbirds.com/birds/rock-martin/",
+          "publisher": "Newman's Birds",
+          "year": 2026
         }
       ]
     },
@@ -15754,14 +16090,42 @@
       "slug": "riparia-paludicola",
       "scientificName": "Riparia paludicola",
       "commonName": "Brown-throated Martin",
-      "images": [],
-      "recordings": [],
+      "images": [
+        {
+          "key": "riparia-paludicola/side.jpg",
+          "author": "agujaceratops",
+          "licence": "CC BY 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by/4.0/",
+          "sourceUrl": "https://www.inaturalist.org/observations/135373067",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ],
+      "recordings": [
+        {
+          "key": "xeno-canto/XC536712",
+          "author": "Dries Van de Loock",
+          "licence": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "sourceUrl": "https://xeno-canto.org/536712",
+          "aiGenerated": false,
+          "hosted": false,
+          "quality": "A",
+          "callType": "call"
+        }
+      ],
       "sources": [
         {
           "title": "Kemp A.C., Herholdt J.J., Whyte I. & Harrison J. (2001). Birds of the two largest national parks in South Africa: a method to generate estimates of population size for all species and assess their conservation ecology. S. Afr. J. Sci. 97: 393–403.",
           "url": "https://journals.co.za/doi/pdf/10.10520/EJC97367",
           "publisher": "South African Journal of Science",
           "year": 2001
+        },
+        {
+          "title": "Brown-throated Martin",
+          "url": "https://newmansbirds.com/birds/brown-throated-martin/",
+          "publisher": "Newman's Birds",
+          "year": 2026
         }
       ]
     },
@@ -15769,14 +16133,42 @@
       "slug": "riparia-riparia",
       "scientificName": "Riparia riparia",
       "commonName": "Sand Martin",
-      "images": [],
-      "recordings": [],
+      "images": [
+        {
+          "key": "riparia-riparia/side.jpg",
+          "author": "stproc",
+          "licence": "CC BY-NC 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+          "sourceUrl": "https://www.inaturalist.org/observations/246595837",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ],
+      "recordings": [
+        {
+          "key": "xeno-canto/XC27277",
+          "author": "Patrik Åberg",
+          "licence": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "sourceUrl": "https://xeno-canto.org/27277",
+          "aiGenerated": false,
+          "hosted": false,
+          "quality": "A",
+          "callType": "call"
+        }
+      ],
       "sources": [
         {
           "title": "Kemp A.C., Herholdt J.J., Whyte I. & Harrison J. (2001). Birds of the two largest national parks in South Africa: a method to generate estimates of population size for all species and assess their conservation ecology. S. Afr. J. Sci. 97: 393–403.",
           "url": "https://journals.co.za/doi/pdf/10.10520/EJC97367",
           "publisher": "South African Journal of Science",
           "year": 2001
+        },
+        {
+          "title": "Sand Martin",
+          "url": "https://newmansbirds.com/birds/sand-martin/",
+          "publisher": "Newman's Birds",
+          "year": 2026
         }
       ]
     },

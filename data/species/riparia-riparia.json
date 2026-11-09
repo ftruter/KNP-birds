@@ -7,8 +7,35 @@
     "af": "Europese Oewerswael"
   },
   "family": "hirundinidae",
-  "summary": "The details for this species have not been published yet.",
-  "sampleData": true,
+  "status": "summer-migrant",
+  "size": {
+    "lengthCm": {
+      "min": 12,
+      "max": 12
+    },
+    "note": "Newman's Birds gives 12 cm."
+  },
+  "habitat": "Flocks usually near large inland waters, river estuaries and other eastern coastal places. Small numbers can occur anywhere with other swallows.",
+  "summary": "An uncommon to locally common summer visitor. A small martin, dark brown above and white below, with a narrow brown breast-band and a shallow fork in the tail. It differs from Banded Martin in the smaller size, all-dark underwings and lack of a white eyebrow. Newman does not describe the voice. Months were left unset. The Kemp code NB was left unchanged.",
+  "sampleData": false,
+  "similar": [
+    {
+      "slug": "neophedina-cincta",
+      "note": "Banded Martin is larger, with a broad breast-band, a white eyebrow, white underwing coverts and a square tail."
+    },
+    {
+      "slug": "riparia-paludicola",
+      "note": "Brown-throated Martin is brown on the throat, not white with a narrow breast-band. They often occur in the same flocks."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Sand Martin",
+      "url": "https://newmansbirds.com/birds/sand-martin/",
+      "publisher": "Newman's Birds",
+      "year": 2026
+    }
+  ],
   "population": {
     "estimate": {
       "low": 64,
@@ -35,8 +62,128 @@
     },
     "tierApplied": "D"
   },
-  "variants": [],
-  "viewNotes": [],
-  "calls": [],
-  "images": []
+  "variants": [
+    {
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "marks": {
+        "bill": {
+          "colour": null,
+          "shape": null
+        },
+        "eye": {
+          "iris": null,
+          "ring": null
+        },
+        "legs": {
+          "colour": null
+        },
+        "head": {
+          "crown": null,
+          "face": null,
+          "throat": null,
+          "pattern": null
+        },
+        "upperparts": {
+          "back": "dark-brown",
+          "rump": null,
+          "pattern": null
+        },
+        "underparts": {
+          "breast": "white",
+          "belly": "white",
+          "pattern": "White below, with a narrow brown chest-band."
+        },
+        "wings": {
+          "above": null,
+          "below": "dark-brown",
+          "pattern": "All-dark underwings. No white eyebrow."
+        },
+        "tail": {
+          "colour": null,
+          "shape": "Shallow fork."
+        }
+      }
+    }
+  ],
+  "viewNotes": [
+    {
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Small, dark brown above and white below, with a narrow brown breast-band."
+    },
+    {
+      "view": "perched-front",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Narrow brown breast-band and no white eyebrow."
+    },
+    {
+      "view": "perched-back",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Dark brown upper parts."
+    },
+    {
+      "view": "flight-above",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "All-dark underwings and a shallowly forked tail."
+    },
+    {
+      "view": "flight-below",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "White underparts crossed by a narrow brown band. The underwings are dark."
+    }
+  ],
+  "calls": [
+    {
+      "sex": "any",
+      "type": "call",
+      "description": "Newman’s species page does not describe the voice. Grade A call from Västergötland. The filename is Backsvala, the Swedish name.",
+      "recordings": [
+        {
+          "key": "xeno-canto/XC27277",
+          "source": "https://xeno-canto.org/27277",
+          "fileUrl": "https://xeno-canto.org/sounds/uploaded/BPSDQEOJWG/Backsvala.mp3",
+          "author": "Patrik Åberg",
+          "license": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ]
+    }
+  ],
+  "images": [
+    {
+      "key": "riparia-riparia/side.jpg",
+      "view": "flight-side",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "source": "https://www.inaturalist.org/observations/246595837",
+      "fileUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/440263155/large.jpg",
+      "author": "stproc",
+      "license": "CC BY-NC 4.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+      "aiGenerated": false,
+      "hosted": false,
+      "alt": "Sand Martin flying over water in Kruger",
+      "caption": "Sand Martin over water in Kruger. A small brown martin, pale below. The breast-band is not clear in this frame."
+    }
+  ],
+  "research": {
+    "confidence": "medium",
+    "needsReview": false,
+    "note": "Newman calls it a summer visitor and does not name the months or the voice, so monthsPresent was left unset. Several Kruger observations labelled as this species showed plants or an insect, and those photographs were not used. Population figures were left unchanged."
+  }
 }

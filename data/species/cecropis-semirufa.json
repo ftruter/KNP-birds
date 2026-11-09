@@ -7,8 +7,31 @@
     "af": "Rooiborsswael"
   },
   "family": "hirundinidae",
-  "summary": "The details for this species have not been published yet.",
-  "sampleData": true,
+  "status": "summer-migrant",
+  "size": {
+    "lengthCm": {
+      "min": 24,
+      "max": 24
+    },
+    "note": "Newman's Birds gives 24 cm."
+  },
+  "habitat": "Pairs in summer near nest sites: road culverts, low causeways not over water, and aardvark holes in open savanna and grassland.",
+  "summary": "A common summer resident. Large, with a blue cap extending below the eyes onto the ear coverts, and entirely orange-chestnut underparts. In flight the underwing coverts are buff, not white, and the tail-shafts are longer than a Mosque Swallow’s. The immature is duller above and paler on the cheeks, chin and throat, with shorter outer tail feathers. Adults give a soft warble and a strident trill. The flight is low and slow, with leisurely gliding. Months were left unset. The Kemp code VB was left unchanged.",
+  "sampleData": false,
+  "similar": [
+    {
+      "slug": "cecropis-senegalensis",
+      "note": "Mosque Swallow has a white throat and upper breast, white underwing coverts and shorter tail-shafts. Red-breasted Swallow’s dark cap reaches below the eyes."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Red-breasted Swallow",
+      "url": "https://newmansbirds.com/birds/red-breasted-swallow/",
+      "publisher": "Newman's Birds",
+      "year": 2026
+    }
+  ],
   "population": {
     "estimate": {
       "low": 1024,
@@ -35,8 +58,171 @@
     },
     "tierApplied": "D"
   },
-  "variants": [],
-  "viewNotes": [],
-  "calls": [],
-  "images": []
+  "variants": [
+    {
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "marks": {
+        "bill": {
+          "colour": null,
+          "shape": null
+        },
+        "eye": {
+          "iris": null,
+          "ring": null
+        },
+        "legs": {
+          "colour": null
+        },
+        "head": {
+          "crown": "blue",
+          "face": "blue",
+          "throat": null,
+          "pattern": "Blue cap extending below the eyes and onto the ear coverts."
+        },
+        "upperparts": {
+          "back": "blue",
+          "rump": null,
+          "pattern": "Metallic blue."
+        },
+        "underparts": {
+          "breast": "orange",
+          "belly": "orange",
+          "pattern": "Entirely orange-chestnut."
+        },
+        "wings": {
+          "above": null,
+          "below": "buff",
+          "pattern": "Buff underwing coverts."
+        },
+        "tail": {
+          "colour": null,
+          "shape": "Longer tail-shafts than Mosque Swallow."
+        }
+      }
+    },
+    {
+      "age": "immature",
+      "sex": "any",
+      "season": "any",
+      "marks": {
+        "bill": {
+          "colour": null,
+          "shape": null
+        },
+        "eye": {
+          "iris": null,
+          "ring": null
+        },
+        "legs": {
+          "colour": null
+        },
+        "head": {
+          "crown": null,
+          "face": null,
+          "throat": null,
+          "pattern": "Duller above, and much paler on the cheeks, chin and throat."
+        },
+        "upperparts": {
+          "back": null,
+          "rump": null,
+          "pattern": null
+        },
+        "underparts": {
+          "breast": null,
+          "belly": null,
+          "pattern": null
+        },
+        "wings": {
+          "above": null,
+          "below": null,
+          "pattern": null
+        },
+        "tail": {
+          "colour": null,
+          "shape": "Outer tail feathers shorter than the adult."
+        }
+      }
+    }
+  ],
+  "viewNotes": [
+    {
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Blue cap below the eyes and entirely orange-chestnut underparts."
+    },
+    {
+      "view": "perched-front",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "The dark cap reaches the ear coverts. The underparts are orange-chestnut."
+    },
+    {
+      "view": "perched-back",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Metallic-blue upper parts."
+    },
+    {
+      "view": "flight-above",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Buff underwing coverts and long tail-shafts. The flight is low and slow, with gliding."
+    },
+    {
+      "view": "flight-below",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Orange-chestnut underparts and buff underwing coverts."
+    }
+  ],
+  "calls": [
+    {
+      "sex": "any",
+      "type": "song",
+      "description": "A soft warbling and a strident trill. Grade A song from Libreville, Gabon. The filename is French, Hirondelle-à-ventre-roux. No other grade A recording was in the set.",
+      "recordings": [
+        {
+          "key": "xeno-canto/XC927171",
+          "source": "https://xeno-canto.org/927171",
+          "fileUrl": "https://xeno-canto.org/sounds/uploaded/HHXEHTNZKV/XC927171-Hirondelle-%C3%A0-ventre-roux-chant.mp3",
+          "author": "Paul Lenrumé",
+          "license": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ]
+    }
+  ],
+  "images": [
+    {
+      "key": "cecropis-semirufa/side.jpg",
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "source": "https://www.inaturalist.org/observations/10254960",
+      "fileUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/14187118/large.jpeg",
+      "author": "copper",
+      "license": "CC BY-NC 4.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+      "aiGenerated": false,
+      "hosted": false,
+      "alt": "Red-breasted Swallow on the S100",
+      "caption": "Red-breasted Swallow on the S100 in Kruger."
+    }
+  ],
+  "research": {
+    "confidence": "medium",
+    "needsReview": false,
+    "note": "Newman calls it a common summer resident and does not name the months, so monthsPresent was left unset. Population figures were left unchanged."
+  }
 }

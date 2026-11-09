@@ -6,8 +6,8 @@
     "en": "Swallows and martins",
     "af": "Swaels"
   },
-  "summary": "Field notes for this family are still to be written.",
-  "sampleData": true,
+  "summary": "Small, long-winged birds that feed in the air. Martins are the browner, shorter-tailed members of the family. Kruger has fourteen. The striped swallows are told by how heavy the breast streaks are. Barn Swallow is the abundant summer bird with the chestnut throat. House Martin is the blue bird with the white rump. The brown martins are separated by breast-band, eyebrow and tail shape.",
+  "sampleData": false,
   "species": [
     {
       "slug": "cecropis-abyssinica",

@@ -2806,6 +2806,146 @@
           }
         }
       ]
+    },
+    "cecropis-abyssinica": {
+      "calls": [
+        {
+          "index": 0,
+          "quality": {
+            "xeno-canto/XC227618": "A"
+          }
+        }
+      ]
+    },
+    "cecropis-cucullata": {
+      "calls": [
+        {
+          "index": 0,
+          "quality": {
+            "xeno-canto/XC292890": "A"
+          }
+        }
+      ]
+    },
+    "cecropis-semirufa": {
+      "calls": [
+        {
+          "index": 0,
+          "quality": {
+            "xeno-canto/XC927171": "A"
+          }
+        }
+      ]
+    },
+    "cecropis-senegalensis": {
+      "calls": [
+        {
+          "index": 0,
+          "quality": {
+            "xeno-canto/XC423237": "B"
+          }
+        }
+      ]
+    },
+    "delichon-urbicum": {
+      "calls": [
+        {
+          "index": 0,
+          "quality": {
+            "xeno-canto/XC27278": "A"
+          }
+        }
+      ]
+    },
+    "hirundo-albigularis": {
+      "calls": [
+        {
+          "index": 0,
+          "quality": {
+            "xeno-canto/XC523596": "A"
+          }
+        }
+      ]
+    },
+    "hirundo-dimidiata": {
+      "calls": [
+        {
+          "index": 0,
+          "quality": {
+            "xeno-canto/XC622640": "B"
+          }
+        }
+      ]
+    },
+    "hirundo-rustica": {
+      "calls": [
+        {
+          "index": 0,
+          "quality": {
+            "xeno-canto/XC46803": "A"
+          }
+        }
+      ]
+    },
+    "hirundo-smithii": {
+      "calls": [
+        {
+          "index": 0,
+          "quality": {
+            "xeno-canto/XC295234": "A"
+          }
+        }
+      ]
+    },
+    "neophedina-cincta": {
+      "calls": [
+        {
+          "index": 0,
+          "quality": {
+            "xeno-canto/XC459468": "A"
+          }
+        }
+      ]
+    },
+    "pseudhirundo-griseopyga": {
+      "calls": [
+        {
+          "index": 0,
+          "quality": {
+            "xeno-canto/XC745610": "A"
+          }
+        }
+      ]
+    },
+    "ptyonoprogne-fuligula": {
+      "calls": [
+        {
+          "index": 0,
+          "quality": {
+            "xeno-canto/XC1149917": "A"
+          }
+        }
+      ]
+    },
+    "riparia-paludicola": {
+      "calls": [
+        {
+          "index": 0,
+          "quality": {
+            "xeno-canto/XC536712": "A"
+          }
+        }
+      ]
+    },
+    "riparia-riparia": {
+      "calls": [
+        {
+          "index": 0,
+          "quality": {
+            "xeno-canto/XC27277": "A"
+          }
+        }
+      ]
     }
   }
 }

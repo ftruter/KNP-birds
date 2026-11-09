@@ -7,8 +7,31 @@
     "af": "Witkeelswael"
   },
   "family": "hirundinidae",
-  "summary": "The details for this species have not been published yet.",
-  "sampleData": true,
+  "status": "summer-migrant",
+  "size": {
+    "lengthCm": {
+      "min": 17,
+      "max": 17
+    },
+    "note": "Newman's Birds gives 17 cm."
+  },
+  "habitat": "Pairs near nests under rock overhangs, bridges, culverts and outbuildings, near or over water.",
+  "summary": "A common summer resident, and present all year at low altitudes. Orange forehead, metallic blue above, clear white underparts with a black breast-band, and a forked tail. The juvenile lacks the chestnut forehead. It gives a soft twitter and a warbling song, and flies fast. Months were left unset. The Kemp code VB was left unchanged.",
+  "sampleData": false,
+  "similar": [
+    {
+      "slug": "hirundo-rustica",
+      "note": "Barn Swallow has a chestnut chin and throat. White-throated Swallow is clean white below, with a black breast-band."
+    }
+  ],
+  "sources": [
+    {
+      "title": "White-throated Swallow",
+      "url": "https://newmansbirds.com/birds/white-throated-swallow/",
+      "publisher": "Newman's Birds",
+      "year": 2026
+    }
+  ],
   "population": {
     "estimate": {
       "low": 64,
@@ -35,8 +58,171 @@
     },
     "tierApplied": "D"
   },
-  "variants": [],
-  "viewNotes": [],
-  "calls": [],
-  "images": []
+  "variants": [
+    {
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "marks": {
+        "bill": {
+          "colour": null,
+          "shape": null
+        },
+        "eye": {
+          "iris": null,
+          "ring": null
+        },
+        "legs": {
+          "colour": null
+        },
+        "head": {
+          "crown": "blue",
+          "face": null,
+          "throat": null,
+          "pattern": "Orange forehead. Metallic blue above."
+        },
+        "upperparts": {
+          "back": "blue",
+          "rump": null,
+          "pattern": null
+        },
+        "underparts": {
+          "breast": "white",
+          "belly": "white",
+          "pattern": "Clear white underparts with a black breast-band."
+        },
+        "wings": {
+          "above": null,
+          "below": null,
+          "pattern": null
+        },
+        "tail": {
+          "colour": null,
+          "shape": "Forked."
+        }
+      }
+    },
+    {
+      "age": "juvenile",
+      "sex": "any",
+      "season": "any",
+      "marks": {
+        "bill": {
+          "colour": null,
+          "shape": null
+        },
+        "eye": {
+          "iris": null,
+          "ring": null
+        },
+        "legs": {
+          "colour": null
+        },
+        "head": {
+          "crown": null,
+          "face": null,
+          "throat": null,
+          "pattern": "Lacks the chestnut forehead-patch."
+        },
+        "upperparts": {
+          "back": null,
+          "rump": null,
+          "pattern": null
+        },
+        "underparts": {
+          "breast": null,
+          "belly": null,
+          "pattern": null
+        },
+        "wings": {
+          "above": null,
+          "below": null,
+          "pattern": null
+        },
+        "tail": {
+          "colour": null,
+          "shape": null
+        }
+      }
+    }
+  ],
+  "viewNotes": [
+    {
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Orange forehead, blue upper parts, white underparts and a black breast-band."
+    },
+    {
+      "view": "perched-front",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "White throat and a black breast-band."
+    },
+    {
+      "view": "perched-back",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Metallic-blue upper parts and an orange forehead."
+    },
+    {
+      "view": "flight-above",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "A particularly fast, acrobatic flight. The tail is forked."
+    },
+    {
+      "view": "flight-below",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "White underparts crossed by a black breast-band."
+    }
+  ],
+  "calls": [
+    {
+      "sex": "any",
+      "type": "song",
+      "description": "A soft twittering, and a warbling song. Grade A from Makhanda. The catalogue type is call and song, and the filename says the file is an excerpt.",
+      "recordings": [
+        {
+          "key": "xeno-canto/XC523596",
+          "source": "https://xeno-canto.org/523596",
+          "fileUrl": "https://xeno-canto.org/sounds/uploaded/SGLTZLDXYI/XC523596-white-throated%20swallows%20exc%20bbest.mp3",
+          "author": "Lynette Rudman",
+          "license": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ]
+    }
+  ],
+  "images": [
+    {
+      "key": "hirundo-albigularis/side.jpg",
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "source": "https://www.inaturalist.org/observations/335052893",
+      "fileUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/608597085/large.jpg",
+      "author": "Yolande Oelsen",
+      "license": "CC BY-NC 4.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+      "aiGenerated": false,
+      "hosted": false,
+      "alt": "White-throated Swallow in Kruger",
+      "caption": "White-throated Swallow in Kruger National Park."
+    }
+  ],
+  "research": {
+    "confidence": "medium",
+    "needsReview": true,
+    "note": "Newman says common summer resident, and all year at low altitudes, without naming months. Status is summer-migrant and months were left unset. Population figures were left unchanged."
+  }
 }
