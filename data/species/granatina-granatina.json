@@ -7,8 +7,45 @@
     "af": "Koningblousysie"
   },
   "family": "estrildidae",
-  "summary": "The details for this species have not been published yet.",
-  "sampleData": true,
+  "status": "resident",
+  "size": {
+    "lengthCm": {
+      "min": 15,
+      "max": 15
+    },
+    "note": "Newman's Birds gives 15 cm."
+  },
+  "monthsPresent": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+  ],
+  "habitat": "Pairs in dry thornveld, especially sandveld, often with Blue Waxbill. They feed on the ground and fly into thickets when disturbed.",
+  "summary": "A common near-endemic resident. Both sexes have violet ear coverts and red bills, and Newman says they are unmistakable when seen clearly. The tail is long and often looks broad in flight. The immature is duller than the female. The repeated call is tiu-woowee, and there is a buzzy flight call. The page does not spell out the rest of the sex difference. The Kemp code RB was left unchanged.",
+  "sampleData": false,
+  "similar": [
+    {
+      "slug": "uraeginthus-angolensis",
+      "note": "Blue Waxbill has powder-blue underparts and brown upper parts. Violet-eared Waxbill has violet ear coverts, a red bill and a long tail."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Violet-eared Waxbill",
+      "url": "https://newmansbirds.com/birds/violet-eared-waxbill/",
+      "publisher": "Newman's Birds",
+      "year": 2026
+    }
+  ],
   "population": {
     "estimate": {
       "low": 4096,
@@ -35,8 +72,171 @@
     },
     "tierApplied": "D"
   },
-  "variants": [],
-  "viewNotes": [],
-  "calls": [],
-  "images": []
+  "variants": [
+    {
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "marks": {
+        "bill": {
+          "colour": "red",
+          "shape": null
+        },
+        "eye": {
+          "iris": null,
+          "ring": null
+        },
+        "legs": {
+          "colour": null
+        },
+        "head": {
+          "crown": null,
+          "face": "purple",
+          "throat": null,
+          "pattern": "Violet ear coverts."
+        },
+        "upperparts": {
+          "back": null,
+          "rump": null,
+          "pattern": null
+        },
+        "underparts": {
+          "breast": null,
+          "belly": null,
+          "pattern": null
+        },
+        "wings": {
+          "above": null,
+          "below": null,
+          "pattern": null
+        },
+        "tail": {
+          "colour": null,
+          "shape": "Long, and often broad-looking in flight."
+        }
+      }
+    },
+    {
+      "age": "immature",
+      "sex": "any",
+      "season": "any",
+      "marks": {
+        "bill": {
+          "colour": null,
+          "shape": null
+        },
+        "eye": {
+          "iris": null,
+          "ring": null
+        },
+        "legs": {
+          "colour": null
+        },
+        "head": {
+          "crown": null,
+          "face": null,
+          "throat": null,
+          "pattern": "Duller than the female. No colours were named."
+        },
+        "upperparts": {
+          "back": null,
+          "rump": null,
+          "pattern": null
+        },
+        "underparts": {
+          "breast": null,
+          "belly": null,
+          "pattern": null
+        },
+        "wings": {
+          "above": null,
+          "below": null,
+          "pattern": null
+        },
+        "tail": {
+          "colour": null,
+          "shape": null
+        }
+      }
+    }
+  ],
+  "viewNotes": [
+    {
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Violet ear coverts and a red bill. Newman says both sexes are unmistakable when seen clearly."
+    },
+    {
+      "view": "perched-front",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Violet ear coverts and a red bill."
+    },
+    {
+      "view": "perched-back",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "The upper parts were not described."
+    },
+    {
+      "view": "flight-above",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "The tail is long and often looks broad in flight. There is also a buzzy flight call."
+    },
+    {
+      "view": "flight-below",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "The underparts were not described."
+    }
+  ],
+  "calls": [
+    {
+      "sex": "any",
+      "type": "call",
+      "description": "A repeated tiu-woowee, plus a buzzy flight call. The only grade A file is typed as song. Grade A from the North West. The filename is 6 VE Waxb.mp3.",
+      "recordings": [
+        {
+          "key": "xeno-canto/XC662464",
+          "source": "https://xeno-canto.org/662464",
+          "fileUrl": "https://xeno-canto.org/sounds/uploaded/HMBDEWEZVS/XC662464-6%20VE%20Waxb.mp3",
+          "author": "Tony Archer",
+          "license": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ]
+    }
+  ],
+  "images": [
+    {
+      "key": "granatina-granatina/side.jpg",
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "source": "https://www.inaturalist.org/observations/299476635",
+      "fileUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/539528362/large.jpg",
+      "author": "João Cordeiro Pereira",
+      "license": "CC BY-NC 4.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+      "aiGenerated": false,
+      "hosted": false,
+      "alt": "Violet-eared Waxbill on the ground",
+      "caption": "Violet-eared Waxbill on the ground in the Mopani district, with violet ear coverts and a red bill."
+    }
+  ],
+  "research": {
+    "confidence": "medium",
+    "needsReview": true,
+    "note": "Newman says both sexes are unmistakable and that the immature is duller than the female, but does not describe the plumage difference. Only the violet ear coverts, red bill and long tail were stored. Population figures were left unchanged."
+  }
 }

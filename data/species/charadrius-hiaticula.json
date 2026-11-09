@@ -7,8 +7,31 @@
     "af": "Ringnekstrandkiewiet"
   },
   "family": "charadriidae",
-  "summary": "The details for this species have not been published yet.",
-  "sampleData": true,
+  "status": "palearctic-migrant",
+  "size": {
+    "lengthCm": {
+      "min": 18,
+      "max": 18
+    },
+    "note": "Newman's Birds gives 18 cm."
+  },
+  "habitat": "Singly or in small parties, often with Three-banded Plover, on shorelines of coastal lagoons, estuaries and inland waters.",
+  "summary": "An uncommon summer visitor. A dumpy, short-billed plover. The orange-yellow legs and the single bold black breast-band around the neck are diagnostic. The male has a black mask. In flight it shows a white wing-bar, unlike the Three-banded Plover. The call is coo-eep or too-li.",
+  "sampleData": false,
+  "similar": [
+    {
+      "slug": "thinornis-tricollaris",
+      "note": "Three-banded Plover has two black breast-bands, a red bill and a red eye-ring, and no white wing-bar. Ringed Plover has one black band, orange-yellow legs and a white wing-bar."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Common Ringed Plover",
+      "url": "https://newmansbirds.com/birds/common-ringed-plover/",
+      "publisher": "Newman's Birds",
+      "year": 2026
+    }
+  ],
   "population": {
     "estimate": {
       "low": 16,
@@ -35,8 +58,134 @@
     },
     "tierApplied": "D"
   },
-  "variants": [],
-  "viewNotes": [],
-  "calls": [],
-  "images": []
+  "variants": [
+    {
+      "age": "adult",
+      "sex": "male",
+      "season": "any",
+      "marks": {
+        "bill": {
+          "colour": [
+            "orange",
+            "yellow"
+          ],
+          "shape": "short"
+        },
+        "eye": {
+          "iris": null,
+          "ring": null
+        },
+        "legs": {
+          "colour": [
+            "orange",
+            "yellow"
+          ]
+        },
+        "head": {
+          "crown": "brown",
+          "face": "black",
+          "throat": null,
+          "pattern": "Black mask. Single bold black breast-band around the neck."
+        },
+        "upperparts": {
+          "back": "brown",
+          "rump": null,
+          "pattern": null
+        },
+        "underparts": {
+          "breast": "black",
+          "belly": "white",
+          "pattern": null
+        },
+        "wings": {
+          "above": "white",
+          "below": null,
+          "pattern": "Distinct white wing-bar."
+        },
+        "tail": {
+          "colour": null,
+          "shape": null
+        }
+      }
+    }
+  ],
+  "viewNotes": [
+    {
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Dumpy plover with one black breast-band and orange-yellow legs, on a shoreline."
+    },
+    {
+      "view": "perched-front",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Black mask and the single breast-band."
+    },
+    {
+      "view": "perched-back",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "The band continues around the neck."
+    },
+    {
+      "view": "flight-above",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "White wing-bar, unlike a Three-banded Plover."
+    },
+    {
+      "view": "flight-below",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "White belly and the black band."
+    }
+  ],
+  "calls": [
+    {
+      "sex": "any",
+      "type": "call",
+      "description": "coo-eep or too-li. The texts do not separate the sexes. Grade A from Degernäs, Sweden. The filename uses the Swedish name Större strandpipare. A South African file was grade C.",
+      "recordings": [
+        {
+          "key": "xeno-canto/XC1033971",
+          "source": "https://xeno-canto.org/1033971",
+          "fileUrl": "https://xeno-canto.org/sounds/uploaded/MMEJYLOPDO/XC1033971-St%C3%B6rre-strandpipare_07.mp3",
+          "author": "Lars Edenius",
+          "license": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ]
+    }
+  ],
+  "images": [
+    {
+      "key": "charadrius-hiaticula/side.jpg",
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "source": "https://www.inaturalist.org/observations/196405606",
+      "fileUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/345779465/large.jpg",
+      "author": "Duncan McKenzie",
+      "license": "CC BY-NC 4.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+      "aiGenerated": false,
+      "hosted": false,
+      "alt": "Common Ringed Plover standing side-on at a Kruger shoreline, with one dark breast-band and orange legs",
+      "caption": "Common Ringed Plover standing side-on at a Kruger shoreline, with one dark breast-band and orange legs"
+    }
+  ],
+  "research": {
+    "confidence": "medium",
+    "needsReview": true,
+    "note": "Status is a Palearctic migrant. Newman calls it an uncommon summer visitor and does not name the months, so monthsPresent was left unset. The female is not separated. The call is grade A from Sweden. The Kemp code NB was left unchanged."
+  }
 }

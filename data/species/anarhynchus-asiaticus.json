@@ -7,8 +7,31 @@
     "af": "Asiatiese Strandkiewiet"
   },
   "family": "charadriidae",
-  "summary": "The details for this species have not been published yet.",
-  "sampleData": true,
+  "status": "palearctic-migrant",
+  "size": {
+    "lengthCm": {
+      "min": 21,
+      "max": 23
+    },
+    "note": "Newman's Birds gives 21–23 cm."
+  },
+  "habitat": "Flocks on plains with short grass and burned ground. It habitually runs rather than flies.",
+  "summary": "A fairly common summer visitor. It is a large, long-legged, thin-billed plover with a white eyebrow. In breeding plumage the breast-band is chestnut; the non-breeding band is dusky. The breeding female may have an incomplete rufous band, and the dark lower edge is always absent. The immature is like the non-breeding adult, though the band may be only a patch on each side. Breeding males are often seen in February and March. The call is a shrill ku-wit.",
+  "sampleData": false,
+  "similar": [
+    {
+      "slug": "anarhynchus-pecuarius",
+      "note": "Kittlitz’s Plover is smaller, with a black mask and a buff breast, and it is a resident. Caspian Plover is the long-legged summer visitor with a chestnut or dusky breast-band."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Caspian Plover",
+      "url": "https://newmansbirds.com/birds/caspian-plover/",
+      "publisher": "Newman's Birds",
+      "year": 2026
+    }
+  ],
   "population": {
     "estimate": {
       "low": 2,
@@ -35,8 +58,257 @@
     },
     "tierApplied": "D"
   },
-  "variants": [],
-  "viewNotes": [],
-  "calls": [],
-  "images": []
+  "variants": [
+    {
+      "age": "adult",
+      "sex": "male",
+      "season": "breeding",
+      "marks": {
+        "bill": {
+          "colour": null,
+          "shape": "thin"
+        },
+        "eye": {
+          "iris": null,
+          "ring": null
+        },
+        "legs": {
+          "colour": null
+        },
+        "head": {
+          "crown": "brown",
+          "face": "white",
+          "throat": null,
+          "pattern": "Conspicuous white eyebrow."
+        },
+        "upperparts": {
+          "back": "brown",
+          "rump": null,
+          "pattern": "Light brown above."
+        },
+        "underparts": {
+          "breast": "chestnut",
+          "belly": "white",
+          "pattern": "Broad chestnut breast-band."
+        },
+        "wings": {
+          "above": null,
+          "below": null,
+          "pattern": null
+        },
+        "tail": {
+          "colour": null,
+          "shape": null
+        }
+      }
+    },
+    {
+      "age": "adult",
+      "sex": "female",
+      "season": "breeding",
+      "marks": {
+        "bill": {
+          "colour": null,
+          "shape": "thin"
+        },
+        "eye": {
+          "iris": null,
+          "ring": null
+        },
+        "legs": {
+          "colour": null
+        },
+        "head": {
+          "crown": "brown",
+          "face": "white",
+          "throat": null,
+          "pattern": "White eyebrow. The rufous breast-band may be incomplete, and the dark lower edge is always absent."
+        },
+        "upperparts": {
+          "back": "brown",
+          "rump": null,
+          "pattern": null
+        },
+        "underparts": {
+          "breast": "rufous",
+          "belly": "white",
+          "pattern": null
+        },
+        "wings": {
+          "above": null,
+          "below": null,
+          "pattern": null
+        },
+        "tail": {
+          "colour": null,
+          "shape": null
+        }
+      }
+    },
+    {
+      "age": "adult",
+      "sex": "any",
+      "season": "non-breeding",
+      "marks": {
+        "bill": {
+          "colour": null,
+          "shape": "thin"
+        },
+        "eye": {
+          "iris": null,
+          "ring": null
+        },
+        "legs": {
+          "colour": null
+        },
+        "head": {
+          "crown": "brown",
+          "face": "white",
+          "throat": null,
+          "pattern": "White eyebrow. Dusky breast-band."
+        },
+        "upperparts": {
+          "back": "brown",
+          "rump": null,
+          "pattern": null
+        },
+        "underparts": {
+          "breast": "grey",
+          "belly": "white",
+          "pattern": "Dusky breast-band."
+        },
+        "wings": {
+          "above": null,
+          "below": null,
+          "pattern": null
+        },
+        "tail": {
+          "colour": null,
+          "shape": null
+        }
+      }
+    },
+    {
+      "age": "juvenile",
+      "sex": "any",
+      "season": "any",
+      "marks": {
+        "bill": {
+          "colour": null,
+          "shape": null
+        },
+        "eye": {
+          "iris": null,
+          "ring": null
+        },
+        "legs": {
+          "colour": null
+        },
+        "head": {
+          "crown": "brown",
+          "face": "white",
+          "throat": null,
+          "pattern": null
+        },
+        "upperparts": {
+          "back": "brown",
+          "rump": null,
+          "pattern": null
+        },
+        "underparts": {
+          "breast": "grey",
+          "belly": "white",
+          "pattern": "Like the non-breeding adult. The breast-band may be only a patch on either side."
+        },
+        "wings": {
+          "above": null,
+          "below": null,
+          "pattern": null
+        },
+        "tail": {
+          "colour": null,
+          "shape": null
+        }
+      }
+    }
+  ],
+  "viewNotes": [
+    {
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Long-legged plover with a white eyebrow on short grass. The breast-band is chestnut in breeding plumage and dusky outside it."
+    },
+    {
+      "view": "perched-front",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "The white eyebrow and the breast-band."
+    },
+    {
+      "view": "perched-back",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Light brown upperparts."
+    },
+    {
+      "view": "flight-above",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "It runs rather than flies. A separate upperwing pattern was not named."
+    },
+    {
+      "view": "flight-below",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "White underparts with the breast-band."
+    }
+  ],
+  "calls": [
+    {
+      "sex": "any",
+      "type": "call",
+      "description": "A shrill ku-wit, loudest at night and softer and more piping by day. The texts do not separate the sexes. Grade B from Kajiado, Kenya. No playable grade A was listed.",
+      "recordings": [
+        {
+          "key": "xeno-canto/XC399779",
+          "source": "https://xeno-canto.org/399779",
+          "fileUrl": "https://xeno-canto.org/sounds/uploaded/KFLTRGJWKQ/XC399779-Caspian%20Plover_KajiadoCounty_S.Dolrenry_Jan%202018.mp3",
+          "author": "Stephanie Dolrenry",
+          "license": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ]
+    }
+  ],
+  "images": [
+    {
+      "key": "anarhynchus-asiaticus/front.jpg",
+      "view": "perched-front",
+      "age": "adult",
+      "sex": "male",
+      "season": "breeding",
+      "source": "https://www.inaturalist.org/observations/149846841",
+      "fileUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/258276315/large.jpeg",
+      "author": "Thomas ARMAND",
+      "license": "CC BY-NC 4.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+      "aiGenerated": false,
+      "hosted": false,
+      "alt": "Caspian Plover standing front-on in Kruger, with a chestnut breast-band",
+      "caption": "Caspian Plover standing front-on in Kruger, with a chestnut breast-band"
+    }
+  ],
+  "research": {
+    "confidence": "medium",
+    "needsReview": true,
+    "note": "Status is a Palearctic migrant. Newman calls it a fairly common summer visitor and does not name the arrival months, so monthsPresent was left unset. Breeding males are often seen in February and March. The Kemp code NB was left unchanged. The call is grade B from Kenya."
+  }
 }

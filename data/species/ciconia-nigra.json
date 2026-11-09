@@ -7,8 +7,45 @@
     "af": "Grootswartooievaar"
   },
   "family": "ciconiidae",
-  "summary": "The details for this species have not been published yet.",
-  "sampleData": true,
+  "status": "resident",
+  "monthsPresent": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+  ],
+  "size": {
+    "lengthCm": {
+      "min": 122,
+      "max": 122
+    },
+    "note": "Newman's Birds gives 122 cm."
+  },
+  "habitat": "Singly or in pairs. It uses cliffs and gorges when breeding, and otherwise forages at rivers, dams and estuaries. Groups sometimes roost in trees.",
+  "summary": "An uncommon resident. All black except the white belly, with a red bill and long red legs. In flight the rump is black, unlike Abdim’s Stork. The immature has a yellowish-green bill and legs and duller black plumage.",
+  "sampleData": false,
+  "similar": [
+    {
+      "slug": "ciconia-abdimii",
+      "note": "Abdim’s Stork is smaller, with a white rump. Black Stork has a red bill, longer red legs and a black rump."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Black Stork",
+      "url": "https://newmansbirds.com/birds/black-stork/",
+      "publisher": "Newman's Birds",
+      "year": 2026
+    }
+  ],
   "population": {
     "estimate": {
       "low": 8,
@@ -35,8 +72,171 @@
     },
     "tierApplied": "D"
   },
-  "variants": [],
-  "viewNotes": [],
-  "calls": [],
-  "images": []
+  "variants": [
+    {
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "marks": {
+        "bill": {
+          "colour": "red",
+          "shape": null
+        },
+        "eye": {
+          "iris": null,
+          "ring": null
+        },
+        "legs": {
+          "colour": "red"
+        },
+        "head": {
+          "crown": "black",
+          "face": "black",
+          "throat": null,
+          "pattern": null
+        },
+        "upperparts": {
+          "back": "black",
+          "rump": "black",
+          "pattern": null
+        },
+        "underparts": {
+          "breast": "black",
+          "belly": "white",
+          "pattern": null
+        },
+        "wings": {
+          "above": "black",
+          "below": null,
+          "pattern": null
+        },
+        "tail": {
+          "colour": null,
+          "shape": null
+        }
+      }
+    },
+    {
+      "age": "juvenile",
+      "sex": "any",
+      "season": "any",
+      "marks": {
+        "bill": {
+          "colour": "yellow-green",
+          "shape": null
+        },
+        "eye": {
+          "iris": null,
+          "ring": null
+        },
+        "legs": {
+          "colour": "yellow-green"
+        },
+        "head": {
+          "crown": "black",
+          "face": null,
+          "throat": null,
+          "pattern": null
+        },
+        "upperparts": {
+          "back": "black",
+          "rump": null,
+          "pattern": "Duller black plumage."
+        },
+        "underparts": {
+          "breast": "black",
+          "belly": "white",
+          "pattern": null
+        },
+        "wings": {
+          "above": null,
+          "below": null,
+          "pattern": null
+        },
+        "tail": {
+          "colour": null,
+          "shape": null
+        }
+      }
+    }
+  ],
+  "viewNotes": [
+    {
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Black stork with a white belly and a red bill, at a river or dam."
+    },
+    {
+      "view": "perched-front",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Red bill and black head."
+    },
+    {
+      "view": "perched-back",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Black back and black rump."
+    },
+    {
+      "view": "flight-above",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Black rump, unlike Abdim’s Stork."
+    },
+    {
+      "view": "flight-below",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "White belly."
+    }
+  ],
+  "calls": [
+    {
+      "sex": "any",
+      "type": "call",
+      "description": "Newman does not describe the call. The file is grade A from Bocchigliero, Italy. The filename is Black-Stork_call.",
+      "recordings": [
+        {
+          "key": "xeno-canto/XC980027",
+          "source": "https://xeno-canto.org/980027",
+          "fileUrl": "https://xeno-canto.org/sounds/uploaded/ITHRUQEQCF/XC980027-Black-Stork_call_13032025__1040.mp3",
+          "author": "Francesco Sottile",
+          "license": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ]
+    }
+  ],
+  "images": [
+    {
+      "key": "ciconia-nigra/side.jpg",
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "source": "https://www.inaturalist.org/observations/105660024",
+      "fileUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/177331788/large.jpeg",
+      "author": "jandutoit",
+      "license": "CC BY-NC 4.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+      "aiGenerated": false,
+      "hosted": false,
+      "alt": "Black Stork standing side-on in a Kruger river, black with a red bill and a white belly",
+      "caption": "Black Stork standing side-on in a Kruger river, black with a red bill and a white belly"
+    }
+  ],
+  "research": {
+    "confidence": "medium",
+    "needsReview": false,
+    "note": "Status is resident and all twelve months are listed. Newman calls it an uncommon resident. The call text is a gap."
+  }
 }

@@ -7,8 +7,40 @@
     "af": "Geelborskleinjantjie"
   },
   "family": "cisticolidae",
-  "summary": "The details for this species have not been published yet.",
-  "sampleData": true,
+  "status": "resident",
+  "monthsPresent": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+  ],
+  "size": {
+    "lengthCm": {
+      "min": 10,
+      "max": 12
+    },
+    "note": "Newman's Birds gives 10–12 cm."
+  },
+  "habitat": "Pairs in bushveld, riverine bush and forest fringes.",
+  "summary": "A common resident. Grey head, reddish-orange eye, yellow breast and green upperparts. The amount of grey on the head varies, and a small black breast-bar may be absent. The call is a buzzy skee-skee-skee-chizZICK-chizZICK, answered by krik-krik-krik.",
+  "sampleData": false,
+  "similar": [],
+  "sources": [
+    {
+      "title": "Yellow-breasted Apalis",
+      "url": "https://newmansbirds.com/birds/yellow-breasted-apalis/",
+      "publisher": "Newman's Birds",
+      "year": 2026
+    }
+  ],
   "population": {
     "estimate": {
       "low": 16384,
@@ -35,8 +67,128 @@
     },
     "tierApplied": "D"
   },
-  "variants": [],
-  "viewNotes": [],
-  "calls": [],
-  "images": []
+  "variants": [
+    {
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "marks": {
+        "bill": {
+          "colour": null,
+          "shape": null
+        },
+        "eye": {
+          "iris": "orange",
+          "ring": null
+        },
+        "legs": {
+          "colour": null
+        },
+        "head": {
+          "crown": "grey",
+          "face": "grey",
+          "throat": null,
+          "pattern": "Grey head and a reddish-orange eye. A small black breast-bar is often absent."
+        },
+        "upperparts": {
+          "back": "green",
+          "rump": null,
+          "pattern": null
+        },
+        "underparts": {
+          "breast": "yellow",
+          "belly": "yellow",
+          "pattern": null
+        },
+        "wings": {
+          "above": "green",
+          "below": null,
+          "pattern": null
+        },
+        "tail": {
+          "colour": null,
+          "shape": null
+        }
+      }
+    }
+  ],
+  "viewNotes": [
+    {
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Grey head, yellow breast and green back in bushveld."
+    },
+    {
+      "view": "perched-front",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Reddish-orange eye and grey face."
+    },
+    {
+      "view": "perched-back",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Green upperparts."
+    },
+    {
+      "view": "flight-above",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "The upperwing was not named separately from the green upperparts."
+    },
+    {
+      "view": "flight-below",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Yellow breast."
+    }
+  ],
+  "calls": [
+    {
+      "sex": "any",
+      "type": "call",
+      "description": "A buzzy skee-skee-skee-chizZICK-chizZICK, answered by krik-krik-krik. The texts do not separate the sexes beyond the duet. Grade A from Sibuya, Eastern Cape. A higher-ranked Kruger file was not used because its filename says Unid.",
+      "recordings": [
+        {
+          "key": "xeno-canto/XC655037",
+          "source": "https://xeno-canto.org/655037",
+          "fileUrl": "https://xeno-canto.org/sounds/uploaded/GQMCPIVNXX/XC655037-Yellow-breasted%20Apalis.mp3",
+          "author": "Tim Cockcroft",
+          "license": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ]
+    }
+  ],
+  "images": [
+    {
+      "key": "apalis-flavida/side.jpg",
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "source": "https://www.inaturalist.org/observations/82174706",
+      "fileUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/134848104/large.jpeg",
+      "author": "Peter Lupton",
+      "license": "CC BY-NC 4.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+      "aiGenerated": false,
+      "hosted": false,
+      "alt": "Yellow-breasted Apalis perched in Kruger bush",
+      "caption": "Yellow-breasted Apalis perched in Kruger bush"
+    }
+  ],
+  "research": {
+    "confidence": "medium",
+    "needsReview": false,
+    "note": "Status is resident and all twelve months are listed from Newman’s resident wording. Population figures were left unchanged."
+  }
 }

@@ -7,8 +7,45 @@
     "af": "Wolnekooievaar"
   },
   "family": "ciconiidae",
-  "summary": "The details for this species have not been published yet.",
-  "sampleData": true,
+  "status": "resident",
+  "monthsPresent": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+  ],
+  "size": {
+    "lengthCm": {
+      "min": 86,
+      "max": 86
+    },
+    "note": "Newman's Birds gives 86 cm."
+  },
+  "habitat": "Usually solitary at floodplains, pans and rivers in well-wooded country. Large influxes occur in summer in northern Botswana and the Zambezi Valley.",
+  "summary": "A sparse resident and a common summer visitor. The neck and head are woolly white, the face is black, and the body is chocolate-brown and looks black. The bill and legs are dark red. The undertail coverts project beyond the tail. The immature is duller, with a horn-coloured bill. Newman’s page uses the name Ciconia episcopus.",
+  "sampleData": false,
+  "similar": [
+    {
+      "slug": "ciconia-nigra",
+      "note": "Black Stork has a red bill and a white belly, and no woolly white neck."
+    }
+  ],
+  "sources": [
+    {
+      "title": "African Woolly-necked Stork",
+      "url": "https://newmansbirds.com/birds/african-woolly-necked-stork/",
+      "publisher": "Newman's Birds",
+      "year": 2026
+    }
+  ],
   "population": {
     "estimate": {
       "low": 8,
@@ -35,8 +72,160 @@
     },
     "tierApplied": "D"
   },
-  "variants": [],
-  "viewNotes": [],
-  "calls": [],
-  "images": []
+  "variants": [
+    {
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "marks": {
+        "bill": {
+          "colour": "red",
+          "shape": null
+        },
+        "eye": {
+          "iris": null,
+          "ring": null
+        },
+        "legs": {
+          "colour": "red"
+        },
+        "head": {
+          "crown": "white",
+          "face": "black",
+          "throat": null,
+          "pattern": "Woolly white neck and head, with a black face."
+        },
+        "upperparts": {
+          "back": "dark-brown",
+          "rump": null,
+          "pattern": "Chocolate-brown body that looks black."
+        },
+        "underparts": {
+          "breast": "dark-brown",
+          "belly": "dark-brown",
+          "pattern": null
+        },
+        "wings": {
+          "above": null,
+          "below": null,
+          "pattern": null
+        },
+        "tail": {
+          "colour": null,
+          "shape": null
+        }
+      }
+    },
+    {
+      "age": "juvenile",
+      "sex": "any",
+      "season": "any",
+      "marks": {
+        "bill": {
+          "colour": "horn",
+          "shape": "horn-coloured"
+        },
+        "eye": {
+          "iris": null,
+          "ring": null
+        },
+        "legs": {
+          "colour": null
+        },
+        "head": {
+          "crown": "white",
+          "face": "black",
+          "throat": null,
+          "pattern": "Similar to the adult but duller."
+        },
+        "upperparts": {
+          "back": "dark-brown",
+          "rump": null,
+          "pattern": null
+        },
+        "underparts": {
+          "breast": "dark-brown",
+          "belly": "dark-brown",
+          "pattern": null
+        },
+        "wings": {
+          "above": null,
+          "below": null,
+          "pattern": null
+        },
+        "tail": {
+          "colour": null,
+          "shape": null
+        }
+      }
+    }
+  ],
+  "viewNotes": [
+    {
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Woolly white neck and a dark brown body, at a wooded river or pan."
+    },
+    {
+      "view": "perched-front",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "White head, black face and dark red bill."
+    },
+    {
+      "view": "perched-back",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Dark body. The undertail coverts project beyond the tail."
+    },
+    {
+      "view": "flight-above",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "The upperwing pattern was not named."
+    },
+    {
+      "view": "flight-below",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "The underwing was not named."
+    }
+  ],
+  "calls": [
+    {
+      "sex": "any",
+      "type": "call",
+      "description": "No call was described, and no usable recording was found.",
+      "recordings": []
+    }
+  ],
+  "images": [
+    {
+      "key": "ciconia-microscelis/side.jpg",
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "source": "https://www.inaturalist.org/observations/295603226",
+      "fileUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/532173159/large.jpg",
+      "author": "Sascha Schumann",
+      "license": "CC BY-NC 4.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+      "aiGenerated": false,
+      "hosted": false,
+      "alt": "African Woolly-necked Stork standing side-on in Kruger, with a white neck and a dark body",
+      "caption": "African Woolly-necked Stork standing side-on in Kruger, with a white neck and a dark body"
+    }
+  ],
+  "research": {
+    "confidence": "medium",
+    "needsReview": true,
+    "note": "Status is resident and all twelve months are listed. Newman also calls it a common summer visitor. No recording was stored under Ciconia microscelis, and the Asian woolly-necked recordings were not used for this split. The call text is a gap. The Kemp code VB was left unchanged."
+  }
 }

@@ -6,8 +6,8 @@
     "en": "Buntings",
     "af": "Streepkoppies"
   },
-  "summary": "Field notes for this family are still to be written.",
-  "sampleData": true,
+  "summary": "Sparrow-sized terrestrial songbirds with weaker, narrower bills than canaries. Kruger has three. Golden-breasted Bunting has an orange breast and a striped head. Lark-like Bunting is plain and pale. Cinnamon-breasted Bunting is cinnamon-brown with a black-and-white head and keeps to rocky ground.",
+  "sampleData": false,
   "species": [
     {
       "slug": "emberiza-flaviventris",

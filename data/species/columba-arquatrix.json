@@ -7,8 +7,40 @@
     "af": "Geelbekbosduif"
   },
   "family": "columbidae",
-  "summary": "The details for this species have not been published yet.",
-  "sampleData": true,
+  "status": "resident",
+  "monthsPresent": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+  ],
+  "size": {
+    "lengthCm": {
+      "min": 36,
+      "max": 40
+    },
+    "note": "Newman's Birds gives 36–40 cm."
+  },
+  "habitat": "Small flocks at fruiting trees, including suburban gardens. In montane areas it roosts in evergreen forest or plantations and flies out to feed.",
+  "summary": "A fairly common resident. A large dark pigeon with a pale head. The yellow bill, eye-ring and feet are conspicuous, even in flight. The call is a deep bubbling crrooo, crooca, crooca, coooo. The stored Kemp code is NB and was left unchanged. No openly licensed Kruger photograph was found.",
+  "sampleData": false,
+  "similar": [],
+  "sources": [
+    {
+      "title": "African Olive Pigeon",
+      "url": "https://newmansbirds.com/birds/african-olive-pigeon/",
+      "publisher": "Newman's Birds",
+      "year": 2026
+    }
+  ],
   "population": {
     "estimate": {
       "low": 2,
@@ -35,8 +67,111 @@
     },
     "tierApplied": "D"
   },
-  "variants": [],
-  "viewNotes": [],
-  "calls": [],
-  "images": []
+  "variants": [
+    {
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "marks": {
+        "bill": {
+          "colour": "yellow",
+          "shape": null
+        },
+        "eye": {
+          "iris": null,
+          "ring": "yellow"
+        },
+        "legs": {
+          "colour": "yellow"
+        },
+        "head": {
+          "crown": "white",
+          "face": null,
+          "throat": null,
+          "pattern": "Pale head. Yellow bill and eye-ring."
+        },
+        "upperparts": {
+          "back": "black",
+          "rump": null,
+          "pattern": "Appears as a large, dark pigeon."
+        },
+        "underparts": {
+          "breast": "black",
+          "belly": "black",
+          "pattern": null
+        },
+        "wings": {
+          "above": null,
+          "below": null,
+          "pattern": null
+        },
+        "tail": {
+          "colour": null,
+          "shape": null
+        }
+      }
+    }
+  ],
+  "viewNotes": [
+    {
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Large dark pigeon with a pale head and yellow bill, at a fruiting tree."
+    },
+    {
+      "view": "perched-front",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Yellow bill and eye-ring, pale head."
+    },
+    {
+      "view": "perched-back",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Dark back."
+    },
+    {
+      "view": "flight-above",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Yellow bill, eye-ring and feet show even in flight."
+    },
+    {
+      "view": "flight-below",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Dark underparts."
+    }
+  ],
+  "calls": [
+    {
+      "sex": "any",
+      "type": "call",
+      "description": "A deep bubbling crrooo, crooca, crooca, coooo. The texts do not separate the sexes. Grade B from Graaff-Reinet. The filename says the file was edited. No playable grade A was listed.",
+      "recordings": [
+        {
+          "key": "xeno-canto/XC386792",
+          "source": "https://xeno-canto.org/386792",
+          "fileUrl": "https://xeno-canto.org/sounds/uploaded/SGLTZLDXYI/XC386792-African%20Olive%20Pigeon%20Eenzaamheid%20-%20edited%20two%20calls.mp3",
+          "author": "Lynette Rudman",
+          "license": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ]
+    }
+  ],
+  "images": [],
+  "research": {
+    "confidence": "medium",
+    "needsReview": true,
+    "note": "Population figures were left unchanged."
+  }
 }

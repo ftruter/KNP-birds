@@ -6,8 +6,8 @@
     "en": "Oxpeckers",
     "af": "Renostervoëls"
   },
-  "summary": "Field notes for this family are still to be written.",
-  "sampleData": true,
+  "summary": "Oxpeckers cling to large mammals and comb the coat for ticks. Kruger has two species. Yellow-billed Oxpecker, Buphagus africanus, has a yellow bill with a red tip and a pale rump. Red-billed Oxpecker, Buphagus erythroryncha, has a red bill, a yellow eye-wattle and no pale rump.",
+  "sampleData": false,
   "species": [
     {
       "slug": "buphagus-africanus",

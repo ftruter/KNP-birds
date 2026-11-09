@@ -7,8 +7,49 @@
     "af": "Groenvlekduifie"
   },
   "family": "columbidae",
-  "summary": "The details for this species have not been published yet.",
-  "sampleData": true,
+  "status": "resident",
+  "monthsPresent": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+  ],
+  "size": {
+    "lengthCm": {
+      "min": 20,
+      "max": 20
+    },
+    "note": "Newman's Birds gives 20 cm."
+  },
+  "habitat": "Woodland, bushveld, riparian forest and coastal bush. When flushed it rises abruptly and flies off fast.",
+  "summary": "A very common resident. Green wing-spots, seen in good light, an all-dark reddish bill and greyer upperparts than the Blue-spotted Wood Dove. The short line says the flight feathers are rufous. The call is a soft descending du, du, du-du, du-du-dudu-du-du-du, tailing off.",
+  "sampleData": false,
+  "similar": [
+    {
+      "slug": "turtur-afer",
+      "note": "Blue-spotted Wood Dove is the comparison in Newman. Emerald-spotted has the all-dark reddish bill and greyer upperparts."
+    },
+    {
+      "slug": "turtur-tympanistria",
+      "note": "Tambourine Dove has white underparts. Its call is similar but speeds up and ends abruptly, instead of tailing off."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Emerald-spotted Wood Dove",
+      "url": "https://newmansbirds.com/birds/emerald-spotted-wood-dove/",
+      "publisher": "Newman's Birds",
+      "year": 2026
+    }
+  ],
   "population": {
     "estimate": {
       "low": 32768,
@@ -35,8 +76,128 @@
     },
     "tierApplied": "D"
   },
-  "variants": [],
-  "viewNotes": [],
-  "calls": [],
-  "images": []
+  "variants": [
+    {
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "marks": {
+        "bill": {
+          "colour": "red",
+          "shape": "all-dark and reddish"
+        },
+        "eye": {
+          "iris": null,
+          "ring": null
+        },
+        "legs": {
+          "colour": null
+        },
+        "head": {
+          "crown": null,
+          "face": null,
+          "throat": null,
+          "pattern": null
+        },
+        "upperparts": {
+          "back": "grey",
+          "rump": null,
+          "pattern": "Greyer upperparts than the Blue-spotted Wood Dove."
+        },
+        "underparts": {
+          "breast": null,
+          "belly": null,
+          "pattern": null
+        },
+        "wings": {
+          "above": "green",
+          "below": null,
+          "pattern": "Green wing-spots. Rufous flight feathers."
+        },
+        "tail": {
+          "colour": null,
+          "shape": null
+        }
+      }
+    }
+  ],
+  "viewNotes": [
+    {
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Small grey-brown wood dove. The green wing-spots show in good light."
+    },
+    {
+      "view": "perched-front",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "All-dark reddish bill."
+    },
+    {
+      "view": "perched-back",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Greyer upperparts."
+    },
+    {
+      "view": "flight-above",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Rufous flight feathers. Newman says the wood-dove flight pattern is not by itself diagnostic."
+    },
+    {
+      "view": "flight-below",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "The underparts were not named."
+    }
+  ],
+  "calls": [
+    {
+      "sex": "any",
+      "type": "call",
+      "description": "A soft, descending du, du… du-du… du-du-dudu-du-du-du, tailing off. The texts do not separate the sexes. Grade A from the Tambach Escarpment, Kenya. The catalogue type is song. The filename is Emerald-spotted Wood Dove_song.",
+      "recordings": [
+        {
+          "key": "xeno-canto/XC396568",
+          "source": "https://xeno-canto.org/396568",
+          "fileUrl": "https://xeno-canto.org/sounds/uploaded/ITRQTFVLNT/XC396568-Emerald-spotted%20Wood%20Dove_song_Tambach_9Dec2017_1630_J.Bradley.mp3",
+          "author": "James Bradley",
+          "license": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ]
+    }
+  ],
+  "images": [
+    {
+      "key": "turtur-chalcospilos/side.jpg",
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "source": "https://www.inaturalist.org/observations/365308875",
+      "fileUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/666958408/large.jpg",
+      "author": "rastor",
+      "license": "CC BY-NC 4.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+      "aiGenerated": false,
+      "hosted": false,
+      "alt": "Emerald-spotted Wood Dove perched in Kruger",
+      "caption": "Emerald-spotted Wood Dove perched in Kruger"
+    }
+  ],
+  "research": {
+    "confidence": "medium",
+    "needsReview": false,
+    "note": "Population figures were left unchanged."
+  }
 }

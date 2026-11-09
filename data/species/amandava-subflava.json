@@ -7,8 +7,45 @@
     "af": "Rooiassie"
   },
   "family": "estrildidae",
-  "summary": "The details for this species have not been published yet.",
-  "sampleData": true,
+  "status": "resident",
+  "size": {
+    "lengthCm": {
+      "min": 8.5,
+      "max": 9
+    },
+    "note": "Newman's Birds gives 8.5–9 cm."
+  },
+  "monthsPresent": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+  ],
+  "habitat": "Pairs and small flocks in waterside grass and reeds, vleis and other marshy ground, and cultivated fields.",
+  "summary": "A common resident. Both sexes have barring on a yellowish background, an orange undertail, a red rump and a red bill and face mask. The male’s orange breast is variable and sometimes absent, and he also has a red breast-patch and red vent. The upper parts are grey-brown. The immature is like the female but has a black bill. The call is a quiet metallic tinkling, often in flight. The Kemp code RB was left unchanged.",
+  "sampleData": false,
+  "similar": [
+    {
+      "slug": "estrilda-astrild",
+      "note": "Common Waxbill has a red bill and red mask, with a red central belly and brown barring below. Orange-breasted Waxbill is yellow below, with an orange undertail and a red rump."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Orange-breasted Waxbill",
+      "url": "https://newmansbirds.com/birds/orange-breasted-waxbill/",
+      "publisher": "Newman's Birds",
+      "year": 2026
+    }
+  ],
   "population": {
     "estimate": {
       "low": 1024,
@@ -35,8 +72,214 @@
     },
     "tierApplied": "D"
   },
-  "variants": [],
-  "viewNotes": [],
-  "calls": [],
-  "images": []
+  "variants": [
+    {
+      "age": "adult",
+      "sex": "male",
+      "season": "any",
+      "marks": {
+        "bill": {
+          "colour": "red",
+          "shape": null
+        },
+        "eye": {
+          "iris": null,
+          "ring": null
+        },
+        "legs": {
+          "colour": null
+        },
+        "head": {
+          "crown": null,
+          "face": "red",
+          "throat": null,
+          "pattern": "Red face mask."
+        },
+        "upperparts": {
+          "back": "grey",
+          "rump": "red",
+          "pattern": null
+        },
+        "underparts": {
+          "breast": "orange",
+          "belly": null,
+          "pattern": "Yellow below with barred flanks. Orange breast variable, sometimes absent. Red breast-patch and red vent. Orange undertail."
+        },
+        "wings": {
+          "above": null,
+          "below": null,
+          "pattern": null
+        },
+        "tail": {
+          "colour": null,
+          "shape": null
+        }
+      }
+    },
+    {
+      "age": "adult",
+      "sex": "female",
+      "season": "any",
+      "marks": {
+        "bill": {
+          "colour": "red",
+          "shape": null
+        },
+        "eye": {
+          "iris": null,
+          "ring": null
+        },
+        "legs": {
+          "colour": null
+        },
+        "head": {
+          "crown": null,
+          "face": "red",
+          "throat": null,
+          "pattern": "Red face mask."
+        },
+        "upperparts": {
+          "back": "grey",
+          "rump": "red",
+          "pattern": null
+        },
+        "underparts": {
+          "breast": null,
+          "belly": null,
+          "pattern": "Barring on a yellowish background, and an orange undertail."
+        },
+        "wings": {
+          "above": null,
+          "below": null,
+          "pattern": null
+        },
+        "tail": {
+          "colour": null,
+          "shape": null
+        }
+      }
+    },
+    {
+      "age": "immature",
+      "sex": "any",
+      "season": "any",
+      "marks": {
+        "bill": {
+          "colour": "black",
+          "shape": null
+        },
+        "eye": {
+          "iris": null,
+          "ring": null
+        },
+        "legs": {
+          "colour": null
+        },
+        "head": {
+          "crown": null,
+          "face": null,
+          "throat": null,
+          "pattern": "Like the female, with a black bill."
+        },
+        "upperparts": {
+          "back": null,
+          "rump": null,
+          "pattern": null
+        },
+        "underparts": {
+          "breast": null,
+          "belly": null,
+          "pattern": null
+        },
+        "wings": {
+          "above": null,
+          "below": null,
+          "pattern": null
+        },
+        "tail": {
+          "colour": null,
+          "shape": null
+        }
+      }
+    }
+  ],
+  "viewNotes": [
+    {
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "male",
+      "season": "any",
+      "note": "Yellow below, grey-brown above, with a red mask, red rump and an orange breast that may be absent."
+    },
+    {
+      "view": "perched-front",
+      "age": "adult",
+      "sex": "male",
+      "season": "any",
+      "note": "Red face mask and a red breast-patch. The vent is red."
+    },
+    {
+      "view": "perched-back",
+      "age": "adult",
+      "sex": "male",
+      "season": "any",
+      "note": "Grey-brown upper parts and a red rump."
+    },
+    {
+      "view": "flight-above",
+      "age": "adult",
+      "sex": "male",
+      "season": "any",
+      "note": "The tinkling call is often given in flight. Flocks fly low and then drop."
+    },
+    {
+      "view": "flight-below",
+      "age": "adult",
+      "sex": "male",
+      "season": "any",
+      "note": "Yellow underparts, barred flanks and an orange undertail."
+    }
+  ],
+  "calls": [
+    {
+      "sex": "any",
+      "type": "call",
+      "description": "A quiet, metallic tinkling, often in flight. Grade A call from Lac Mbeubeusse, Senegal. The filename says the file was edited. It was not cleaned again. No grade A recording from South Africa was in the set.",
+      "recordings": [
+        {
+          "key": "xeno-canto/XC528267",
+          "source": "https://xeno-canto.org/528267",
+          "fileUrl": "https://xeno-canto.org/sounds/uploaded/RGSEIIJGHA/XC528267-OrangebreastedWaxbill_Mbeubeusse_200216_0638_edited.mp3",
+          "author": "Bram Piot",
+          "license": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ]
+    }
+  ],
+  "images": [
+    {
+      "key": "amandava-subflava/side.jpg",
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "source": "https://www.inaturalist.org/observations/338499828",
+      "fileUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/615601147/large.jpg",
+      "author": "Will Richardson",
+      "license": "CC BY-NC 4.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+      "aiGenerated": false,
+      "hosted": false,
+      "alt": "Orange-breasted Waxbill in Kruger grass",
+      "caption": "Orange-breasted Waxbill in the Ehlanzeni district."
+    }
+  ],
+  "research": {
+    "confidence": "medium",
+    "needsReview": false,
+    "note": "Status is resident and all twelve months are listed. Population figures were left unchanged."
+  }
 }
