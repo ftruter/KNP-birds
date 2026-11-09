@@ -6,8 +6,8 @@
     "en": "Wood-hoopoes",
     "af": "Kakelaars"
   },
-  "summary": "Field notes for this family are still to be written.",
-  "sampleData": true,
+  "summary": "Wood-hoopoes. Green Wood-hoopoe is the larger party bird with a red bill, red feet and a long tail. Common Scimitarbill is smaller, with a very curved black bill.",
+  "sampleData": false,
   "species": [
     {
       "slug": "phoeniculus-purpureus",
