@@ -7,8 +7,30 @@
     "af": "Gewone Mossie"
   },
   "family": "passeridae",
-  "summary": "The details for this species have not been published yet.",
-  "sampleData": true,
+  "size": {
+    "lengthCm": {
+      "min": 15,
+      "max": 15
+    },
+    "note": "Newman's Birds gives 15 cm."
+  },
+  "habitat": "Usually near human habitation. When not breeding, flocks occur on farmlands and in cattle kraals.",
+  "summary": "A very common, near-endemic resident. The male has a black-and-white head and breast pattern, with the crown, face and upper breast black. The female has a grey crown, face and upper breast, richer coloration than a female House Sparrow, and a black bill. The mantle is grey, and the back, rump and wings are chestnut with a small white wing-bar. The immature resembles the female. The call is chirrup or chissik. No Kemp block was present, and none was added.",
+  "sampleData": false,
+  "similar": [
+    {
+      "slug": "passer-domesticus",
+      "note": "The female House Sparrow is paler, with a pink bill. The female Cape Sparrow has a greyer head and a black bill."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Cape Sparrow",
+      "url": "https://newmansbirds.com/birds/cape-sparrow/",
+      "publisher": "Newman's Birds",
+      "year": 2026
+    }
+  ],
   "population": {
     "estimate": {
       "low": null,
@@ -21,8 +43,295 @@
     "notes": "No sourced Kruger estimate is currently available; taxonomy or later records require separate research.",
     "sources": []
   },
-  "variants": [],
-  "viewNotes": [],
-  "calls": [],
-  "images": []
+  "variants": [
+    {
+      "age": "adult",
+      "sex": "male",
+      "season": "any",
+      "marks": {
+        "bill": {
+          "colour": null,
+          "shape": null
+        },
+        "eye": {
+          "iris": null,
+          "ring": null
+        },
+        "legs": {
+          "colour": null
+        },
+        "head": {
+          "crown": "black",
+          "face": "black",
+          "throat": null,
+          "pattern": "Black-and-white head pattern. Newman does not say where the white sits."
+        },
+        "upperparts": {
+          "back": "chestnut",
+          "rump": "chestnut",
+          "pattern": "Mantle grey."
+        },
+        "underparts": {
+          "breast": "black",
+          "belly": null,
+          "pattern": "Black upper breast, within a black-and-white breast pattern."
+        },
+        "wings": {
+          "above": "chestnut",
+          "below": null,
+          "pattern": "Small white wing-bar."
+        },
+        "tail": {
+          "colour": null,
+          "shape": null
+        }
+      }
+    },
+    {
+      "age": "adult",
+      "sex": "female",
+      "season": "any",
+      "marks": {
+        "bill": {
+          "colour": "black",
+          "shape": null
+        },
+        "eye": {
+          "iris": null,
+          "ring": null
+        },
+        "legs": {
+          "colour": null
+        },
+        "head": {
+          "crown": "grey",
+          "face": "grey",
+          "throat": null,
+          "pattern": "Greyer head than a female House Sparrow, and richer coloration."
+        },
+        "upperparts": {
+          "back": "chestnut",
+          "rump": "chestnut",
+          "pattern": "Mantle grey."
+        },
+        "underparts": {
+          "breast": "grey",
+          "belly": null
+        },
+        "wings": {
+          "above": "chestnut",
+          "below": null,
+          "pattern": "Small white wing-bar."
+        },
+        "tail": {
+          "colour": null,
+          "shape": null
+        }
+      }
+    },
+    {
+      "age": "immature",
+      "sex": "any",
+      "season": "any",
+      "marks": {
+        "bill": {
+          "colour": null,
+          "shape": null
+        },
+        "eye": {
+          "iris": null,
+          "ring": null
+        },
+        "legs": {
+          "colour": null
+        },
+        "head": {
+          "crown": null,
+          "face": null,
+          "throat": null,
+          "pattern": "Resembles the female. Newman does not describe it further."
+        },
+        "upperparts": {
+          "back": null,
+          "rump": null
+        },
+        "underparts": {
+          "breast": null,
+          "belly": null
+        },
+        "wings": {
+          "above": null,
+          "below": null
+        },
+        "tail": {
+          "colour": null,
+          "shape": null
+        }
+      }
+    }
+  ],
+  "viewNotes": [
+    {
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "male",
+      "season": "any",
+      "note": "Black-and-white head, black upper breast, grey mantle and chestnut back."
+    },
+    {
+      "view": "perched-front",
+      "age": "adult",
+      "sex": "male",
+      "season": "any",
+      "note": "Black crown and face, with white in the head pattern."
+    },
+    {
+      "view": "perched-back",
+      "age": "adult",
+      "sex": "male",
+      "season": "any",
+      "note": "Grey mantle, chestnut back and rump, and a white wing-bar."
+    },
+    {
+      "view": "flight-above",
+      "age": "adult",
+      "sex": "male",
+      "season": "any",
+      "note": "Chestnut wings with a small white wing-bar."
+    },
+    {
+      "view": "flight-below",
+      "age": "adult",
+      "sex": "male",
+      "season": "any",
+      "note": "Black upper breast. The belly colour was not named."
+    },
+    {
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "female",
+      "season": "any",
+      "note": "Grey head, black bill, grey upper breast and chestnut back."
+    },
+    {
+      "view": "perched-front",
+      "age": "adult",
+      "sex": "female",
+      "season": "any",
+      "note": "Grey face and a black bill."
+    },
+    {
+      "view": "perched-back",
+      "age": "adult",
+      "sex": "female",
+      "season": "any",
+      "note": "Grey mantle and chestnut back, rump and wings."
+    },
+    {
+      "view": "flight-above",
+      "age": "adult",
+      "sex": "female",
+      "season": "any",
+      "note": "Chestnut wings with a small white wing-bar."
+    },
+    {
+      "view": "flight-below",
+      "age": "adult",
+      "sex": "female",
+      "season": "any",
+      "note": "Grey upper breast."
+    },
+    {
+      "view": "perched-side",
+      "age": "immature",
+      "sex": "any",
+      "season": "any",
+      "note": "Resembles the female."
+    },
+    {
+      "view": "perched-front",
+      "age": "immature",
+      "sex": "any",
+      "season": "any",
+      "note": "The immature face was not described separately."
+    },
+    {
+      "view": "perched-back",
+      "age": "immature",
+      "sex": "any",
+      "season": "any",
+      "note": "The immature back was not described separately."
+    },
+    {
+      "view": "flight-above",
+      "age": "immature",
+      "sex": "any",
+      "season": "any",
+      "note": "An immature flight pattern was not described separately."
+    },
+    {
+      "view": "flight-below",
+      "age": "immature",
+      "sex": "any",
+      "season": "any",
+      "note": "The immature underparts were not described separately."
+    }
+  ],
+  "calls": [
+    {
+      "sex": "any",
+      "type": "call",
+      "description": "chirrup or chissik. Grade A call from Benfontijn game reserve, Free State. The filename is XC126129-CapeSparrowMale22Jan2013BenfontijnFreeStateSouthAfrika.mp3, so the file name says Male.",
+      "recordings": [
+        {
+          "key": "xeno-canto/XC126129",
+          "source": "https://xeno-canto.org/126129",
+          "fileUrl": "https://xeno-canto.org/sounds/uploaded/HZKCNRIPRH/XC126129-CapeSparrowMale22Jan2013BenfontijnFreeStateSouthAfrika.mp3",
+          "author": "Sander Bot",
+          "license": "CC BY-NC-SA 3.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/3.0/",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ]
+    }
+  ],
+  "images": [
+    {
+      "key": "passer-melanurus/side.jpg",
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "mixed",
+      "season": "any",
+      "source": "https://www.inaturalist.org/observations/37605488",
+      "fileUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/59645206/large.jpeg",
+      "author": "copper",
+      "license": "CC BY-NC 4.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+      "aiGenerated": false,
+      "hosted": false,
+      "alt": "Male and female Cape Sparrows, black-and-white male head and grey female head",
+      "caption": "Cape Sparrows at Satara. The male has a black-and-white head and a black upper breast. The female has a grey head and a chestnut back."
+    }
+  ],
+  "research": {
+    "confidence": "medium",
+    "needsReview": true,
+    "note": "Newman calls it a very common near-endemic resident, so status is resident and all twelve months are listed. The white in the male head pattern is not located, and the immature only resembles the female, which is why this needs review. No population estimate or Kemp block was present, and none was added."
+  },
+  "status": "resident",
+  "monthsPresent": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+  ]
 }

@@ -7,8 +7,36 @@
     "af": "Huismossie"
   },
   "family": "passeridae",
-  "summary": "The details for this species have not been published yet.",
-  "sampleData": true,
+  "size": {
+    "lengthCm": {
+      "min": 14,
+      "max": 14
+    },
+    "note": "Newman's Birds gives 14 cm."
+  },
+  "habitat": "Pairs and small parties around human habitation, including towns, small settlements and isolated permanent camps. It breeds under the eaves of houses.",
+  "summary": "A very common resident, and an introduced species. The male has a grey crown, a dark brown nape grading into a chestnut back and wings, a small white wing-bar, and black from the lores to a variable bib. The female and immature are paler, with a pink bill and pink legs. The call is chissip or chee-ip. The Kemp code RB was left unchanged.",
+  "sampleData": false,
+  "similar": [
+    {
+      "slug": "passer-melanurus",
+      "note": "The female Cape Sparrow is richer in colour, with a greyer head and a black bill. The female House Sparrow is paler, with a pink bill."
+    }
+  ],
+  "sources": [
+    {
+      "title": "House Sparrow",
+      "url": "https://newmansbirds.com/birds/house-sparrow/",
+      "publisher": "Newman's Birds",
+      "year": 2026
+    },
+    {
+      "title": "Kemp A.C., Herholdt J.J., Whyte I. & Harrison J. (2001). Birds of the two largest national parks in South Africa: a method to generate estimates of population size for all species and assess their conservation ecology. S. Afr. J. Sci. 97: 393–403.",
+      "url": "https://journals.co.za/doi/pdf/10.10520/EJC97367",
+      "publisher": "South African Journal of Science",
+      "year": 2001
+    }
+  ],
   "population": {
     "estimate": {
       "low": 4096,
@@ -35,8 +63,291 @@
     },
     "tierApplied": "D"
   },
-  "variants": [],
-  "viewNotes": [],
-  "calls": [],
-  "images": []
+  "variants": [
+    {
+      "age": "adult",
+      "sex": "male",
+      "season": "any",
+      "marks": {
+        "bill": {
+          "colour": null,
+          "shape": null
+        },
+        "eye": {
+          "iris": null,
+          "ring": null
+        },
+        "legs": {
+          "colour": null
+        },
+        "head": {
+          "crown": "grey",
+          "face": null,
+          "throat": "black",
+          "pattern": "Nape dark brown, grading into the chestnut back. Black from the lores to a variable bib."
+        },
+        "upperparts": {
+          "back": "chestnut",
+          "rump": null
+        },
+        "underparts": {
+          "breast": null,
+          "belly": null
+        },
+        "wings": {
+          "above": "chestnut",
+          "below": null,
+          "pattern": "Small white wing-bar."
+        },
+        "tail": {
+          "colour": null,
+          "shape": null
+        }
+      }
+    },
+    {
+      "age": "adult",
+      "sex": "female",
+      "season": "any",
+      "marks": {
+        "bill": {
+          "colour": "pink",
+          "shape": null
+        },
+        "eye": {
+          "iris": null,
+          "ring": null
+        },
+        "legs": {
+          "colour": "pink"
+        },
+        "head": {
+          "crown": null,
+          "face": null,
+          "throat": null
+        },
+        "upperparts": {
+          "back": null,
+          "rump": null,
+          "pattern": "Paler than the male. A separate female plumage was not described."
+        },
+        "underparts": {
+          "breast": null,
+          "belly": null
+        },
+        "wings": {
+          "above": null,
+          "below": null
+        },
+        "tail": {
+          "colour": null,
+          "shape": null
+        }
+      }
+    },
+    {
+      "age": "immature",
+      "sex": "any",
+      "season": "any",
+      "marks": {
+        "bill": {
+          "colour": "pink",
+          "shape": null
+        },
+        "eye": {
+          "iris": null,
+          "ring": null
+        },
+        "legs": {
+          "colour": "pink"
+        },
+        "head": {
+          "crown": null,
+          "face": null,
+          "throat": null
+        },
+        "upperparts": {
+          "back": null,
+          "rump": null,
+          "pattern": "Paler than the male, like the female. Newman does not describe it further."
+        },
+        "underparts": {
+          "breast": null,
+          "belly": null
+        },
+        "wings": {
+          "above": null,
+          "below": null
+        },
+        "tail": {
+          "colour": null,
+          "shape": null
+        }
+      }
+    }
+  ],
+  "viewNotes": [
+    {
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "male",
+      "season": "any",
+      "note": "Grey crown, black bib, chestnut back and a white wing-bar."
+    },
+    {
+      "view": "perched-front",
+      "age": "adult",
+      "sex": "male",
+      "season": "any",
+      "note": "Grey crown and a black bib."
+    },
+    {
+      "view": "perched-back",
+      "age": "adult",
+      "sex": "male",
+      "season": "any",
+      "note": "Dark brown nape grading into a chestnut back, with a white wing-bar."
+    },
+    {
+      "view": "flight-above",
+      "age": "adult",
+      "sex": "male",
+      "season": "any",
+      "note": "White wing-bar on chestnut wings."
+    },
+    {
+      "view": "flight-below",
+      "age": "adult",
+      "sex": "male",
+      "season": "any",
+      "note": "Black bib. The rest of the underparts were not given a colour."
+    },
+    {
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "female",
+      "season": "any",
+      "note": "Paler than the male, with a pink bill and pink legs."
+    },
+    {
+      "view": "perched-front",
+      "age": "adult",
+      "sex": "female",
+      "season": "any",
+      "note": "The female face was not described."
+    },
+    {
+      "view": "perched-back",
+      "age": "adult",
+      "sex": "female",
+      "season": "any",
+      "note": "Paler upperparts. A separate pattern was not described."
+    },
+    {
+      "view": "flight-above",
+      "age": "adult",
+      "sex": "female",
+      "season": "any",
+      "note": "A female flight pattern was not described."
+    },
+    {
+      "view": "flight-below",
+      "age": "adult",
+      "sex": "female",
+      "season": "any",
+      "note": "The female underparts were not given a colour beyond paler."
+    },
+    {
+      "view": "perched-side",
+      "age": "immature",
+      "sex": "any",
+      "season": "any",
+      "note": "Paler than the male, with a pink bill and pink legs."
+    },
+    {
+      "view": "perched-front",
+      "age": "immature",
+      "sex": "any",
+      "season": "any",
+      "note": "The immature face was not described."
+    },
+    {
+      "view": "perched-back",
+      "age": "immature",
+      "sex": "any",
+      "season": "any",
+      "note": "The immature back was not described separately."
+    },
+    {
+      "view": "flight-above",
+      "age": "immature",
+      "sex": "any",
+      "season": "any",
+      "note": "An immature flight pattern was not described."
+    },
+    {
+      "view": "flight-below",
+      "age": "immature",
+      "sex": "any",
+      "season": "any",
+      "note": "The immature underparts were not described separately."
+    }
+  ],
+  "calls": [
+    {
+      "sex": "any",
+      "type": "call",
+      "description": "chissip or chee-ip. Grade A call from Klerksdorp, North West. The filename is XC444806-Proper House Sparrow.mp3.",
+      "recordings": [
+        {
+          "key": "xeno-canto/XC444806",
+          "source": "https://xeno-canto.org/444806",
+          "fileUrl": "https://xeno-canto.org/sounds/uploaded/HMBDEWEZVS/XC444806-Proper%20House%20Sparrow.mp3",
+          "author": "Tony Archer",
+          "license": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ]
+    }
+  ],
+  "images": [
+    {
+      "key": "passer-domesticus/side.jpg",
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "female",
+      "season": "any",
+      "source": "https://www.inaturalist.org/observations/227816907",
+      "fileUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/404191747/large.jpeg",
+      "author": "Sascha Schumann",
+      "license": "CC BY-NC 4.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+      "aiGenerated": false,
+      "hosted": false,
+      "alt": "House Sparrow, paler than the male, with a pink bill",
+      "caption": "House Sparrow in Kruger, the paler plumage with a pink bill and pink legs."
+    }
+  ],
+  "research": {
+    "confidence": "medium",
+    "needsReview": true,
+    "note": "Newman calls it a very common resident and an introduced species, so status is resident and all twelve months are listed. The female and immature are only described as paler, with a pink bill and pink legs, which is why this needs review. Great Sparrow is the comparison Newman names and is not in this list. Population figures and the Kemp code RB were left unchanged."
+  },
+  "status": "resident",
+  "monthsPresent": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+  ]
 }

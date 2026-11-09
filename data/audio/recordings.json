@@ -3626,6 +3626,46 @@
           }
         }
       ]
+    },
+    "gymnoris-superciliaris": {
+      "calls": [
+        {
+          "index": 0,
+          "quality": {
+            "xeno-canto/XC421072": "A"
+          }
+        }
+      ]
+    },
+    "passer-diffusus": {
+      "calls": [
+        {
+          "index": 0,
+          "quality": {
+            "xeno-canto/XC526375": "A"
+          }
+        }
+      ]
+    },
+    "passer-domesticus": {
+      "calls": [
+        {
+          "index": 0,
+          "quality": {
+            "xeno-canto/XC444806": "A"
+          }
+        }
+      ]
+    },
+    "passer-melanurus": {
+      "calls": [
+        {
+          "index": 0,
+          "quality": {
+            "xeno-canto/XC126129": "A"
+          }
+        }
+      ]
     }
   }
 }
