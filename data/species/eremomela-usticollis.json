@@ -7,8 +7,38 @@
     "af": "Bruinkeelbossanger"
   },
   "family": "cisticolidae",
-  "summary": "The details for this species have not been published yet.",
-  "sampleData": true,
+  "status": "resident",
+  "monthsPresent": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+  ],
+  "habitat": "Groups of two to five in acacia woodland, feeding in the canopy.",
+  "summary": "A common resident. A brown throat-bar, when present, is distinctive. Otherwise it is told by pale yellow-buff underparts and a pale eye with a brown surround. Newman’s size field was unusable, so no length was stored. The call is a rapid teeup-ti-ti-ti-ti followed by a short trill.",
+  "sampleData": false,
+  "similar": [
+    {
+      "slug": "eremomela-icteropygialis",
+      "note": "Yellow-bellied Eremomela has a grey breast, a yellow belly and black soft parts. Burnt-necked Eremomela has pale yellow-buff underparts and a pale eye."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Burnt-necked Eremomela",
+      "url": "https://newmansbirds.com/birds/burnt-necked-eremomela/",
+      "publisher": "Newman's Birds",
+      "year": 2026
+    }
+  ],
   "population": {
     "estimate": {
       "low": 8192,
@@ -35,8 +65,128 @@
     },
     "tierApplied": "D"
   },
-  "variants": [],
-  "viewNotes": [],
-  "calls": [],
-  "images": []
+  "variants": [
+    {
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "marks": {
+        "bill": {
+          "colour": null,
+          "shape": null
+        },
+        "eye": {
+          "iris": "white",
+          "ring": "brown"
+        },
+        "legs": {
+          "colour": null
+        },
+        "head": {
+          "crown": null,
+          "face": null,
+          "throat": "brown",
+          "pattern": "Pale eye with a brown surround. A brown throat-bar is not always present."
+        },
+        "upperparts": {
+          "back": null,
+          "rump": null,
+          "pattern": null
+        },
+        "underparts": {
+          "breast": "buff",
+          "belly": "buff",
+          "pattern": "Pale yellow-buff underparts."
+        },
+        "wings": {
+          "above": null,
+          "below": null,
+          "pattern": null
+        },
+        "tail": {
+          "colour": null,
+          "shape": null
+        }
+      }
+    }
+  ],
+  "viewNotes": [
+    {
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Small canopy bird in acacia, with a pale eye."
+    },
+    {
+      "view": "perched-front",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Pale eye and brown eye-ring. The brown throat-bar may be absent."
+    },
+    {
+      "view": "perched-back",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "The back colour was not named."
+    },
+    {
+      "view": "flight-above",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "The upperwing was not named."
+    },
+    {
+      "view": "flight-below",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Pale yellow-buff underparts."
+    }
+  ],
+  "calls": [
+    {
+      "sex": "any",
+      "type": "call",
+      "description": "A rapid, high-pitched teeup-ti-ti-ti-ti-ti-ti-ti, followed by a short trill. The texts do not separate the sexes. Grade A from Kruger. The filename is 1020_cut and the catalogue type is song.",
+      "recordings": [
+        {
+          "key": "xeno-canto/XC177777",
+          "source": "https://xeno-canto.org/177777",
+          "fileUrl": "https://xeno-canto.org/sounds/uploaded/ICUDBWGEGD/XC177777-1020_cut.mp3",
+          "author": "Gabriel A. Jamie",
+          "license": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ]
+    }
+  ],
+  "images": [
+    {
+      "key": "eremomela-usticollis/side.jpg",
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "source": "https://www.inaturalist.org/observations/171753254",
+      "fileUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/298071710/large.jpeg",
+      "author": "Corné Rautenbach",
+      "license": "CC BY-NC 4.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+      "aiGenerated": false,
+      "hosted": false,
+      "alt": "Burnt-necked Eremomela perched in Kruger acacia",
+      "caption": "Burnt-necked Eremomela perched in Kruger acacia"
+    }
+  ],
+  "research": {
+    "confidence": "medium",
+    "needsReview": false,
+    "note": "Status is resident and all twelve months are listed from Newman’s resident wording. Population figures were left unchanged."
+  }
 }

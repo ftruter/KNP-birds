@@ -7,8 +7,45 @@
     "af": "Witborsduifie"
   },
   "family": "columbidae",
-  "summary": "The details for this species have not been published yet.",
-  "sampleData": true,
+  "status": "resident",
+  "monthsPresent": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+  ],
+  "size": {
+    "lengthCm": {
+      "min": 23,
+      "max": 23
+    },
+    "note": "Newman's Birds gives 23 cm."
+  },
+  "habitat": "Singly or in pairs in coastal bush and in montane and riverine forest. It perches low or feeds on the ground, and flies off fast when disturbed.",
+  "summary": "A fairly common resident. The white underparts are unique and conspicuous, and the forehead is white. The call is coo, coo, cu-cu-du-du-du-du, very like the Emerald-spotted Wood Dove, but it speeds up and ends abruptly.",
+  "sampleData": false,
+  "similar": [
+    {
+      "slug": "turtur-chalcospilos",
+      "note": "Emerald-spotted Wood Dove’s call tails off. Tambourine Dove’s call speeds up and stops, and its underparts are white."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Tambourine Dove",
+      "url": "https://newmansbirds.com/birds/tambourine-dove/",
+      "publisher": "Newman's Birds",
+      "year": 2026
+    }
+  ],
   "population": {
     "estimate": {
       "low": 2048,
@@ -35,8 +72,128 @@
     },
     "tierApplied": "D"
   },
-  "variants": [],
-  "viewNotes": [],
-  "calls": [],
-  "images": []
+  "variants": [
+    {
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "marks": {
+        "bill": {
+          "colour": null,
+          "shape": null
+        },
+        "eye": {
+          "iris": null,
+          "ring": null
+        },
+        "legs": {
+          "colour": null
+        },
+        "head": {
+          "crown": "white",
+          "face": "white",
+          "throat": null,
+          "pattern": "White forehead."
+        },
+        "upperparts": {
+          "back": null,
+          "rump": null,
+          "pattern": null
+        },
+        "underparts": {
+          "breast": "white",
+          "belly": "white",
+          "pattern": "White underparts, unique among these doves."
+        },
+        "wings": {
+          "above": null,
+          "below": null,
+          "pattern": null
+        },
+        "tail": {
+          "colour": null,
+          "shape": null
+        }
+      }
+    }
+  ],
+  "viewNotes": [
+    {
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "White-breasted dove, low in riverine forest."
+    },
+    {
+      "view": "perched-front",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "White forehead."
+    },
+    {
+      "view": "perched-back",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "The back colour was not named."
+    },
+    {
+      "view": "flight-above",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "It makes off at speed. The upperwing was not named."
+    },
+    {
+      "view": "flight-below",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "White underparts."
+    }
+  ],
+  "calls": [
+    {
+      "sex": "any",
+      "type": "call",
+      "description": "coo, coo, cu-cu-du-du-du-du. Like the Emerald-spotted Wood Dove, but it speeds up and ends abruptly instead of tailing off. The texts do not separate the sexes. Grade A from Port Alfred. The filename is tambourine dove.",
+      "recordings": [
+        {
+          "key": "xeno-canto/XC492722",
+          "source": "https://xeno-canto.org/492722",
+          "fileUrl": "https://xeno-canto.org/sounds/uploaded/SGLTZLDXYI/XC492722-tambourine%20dove%20exc1.mp3",
+          "author": "Lynette Rudman",
+          "license": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ]
+    }
+  ],
+  "images": [
+    {
+      "key": "turtur-tympanistria/side.jpg",
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "source": "https://www.inaturalist.org/observations/265551639",
+      "fileUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/477004146/large.jpeg",
+      "author": "Pieter Kotze",
+      "license": "CC BY-NC 4.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+      "aiGenerated": false,
+      "hosted": false,
+      "alt": "Tambourine Dove perched in Kruger forest",
+      "caption": "Tambourine Dove perched in Kruger forest"
+    }
+  ],
+  "research": {
+    "confidence": "medium",
+    "needsReview": false,
+    "note": "Population figures were left unchanged."
+  }
 }

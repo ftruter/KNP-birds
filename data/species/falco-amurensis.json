@@ -7,8 +7,31 @@
     "af": "Oostelike Rooipootvalk"
   },
   "family": "falconidae",
-  "summary": "The details for this species have not been published yet.",
-  "sampleData": true,
+  "status": "summer-migrant",
+  "size": {
+    "lengthCm": {
+      "min": 28,
+      "max": 30
+    },
+    "note": "Newman's Birds gives 28–30 cm."
+  },
+  "habitat": "Flocks, often large, in grassland and farmland. They perch on power lines and mix with Lesser Kestrels and Red-footed Falcons.",
+  "summary": "A common summer visitor from northern and eastern Asia. It arrives in late spring and leaves by April or May. Both sexes are grey above, and the soft parts are red or orange. The male is pale grey below with a rufous vent and white underwing coverts. The female is white and well spotted, including the underwing coverts. The immature is greyer and less rufous than an immature Red-footed Falcon. Newman does not describe the voice. Months were left unset. The Kemp name is Eastern Redfooted Kestrel and the code NB was left unchanged.",
+  "sampleData": false,
+  "similar": [
+    {
+      "slug": "falco-vespertinus",
+      "note": "Male Red-footed Falcon has dark underwing coverts. Male Amur Falcon has white underwing coverts, sometimes visible as a thin wedge on the folded wing."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Amur Falcon",
+      "url": "https://newmansbirds.com/birds/amur-falcon/",
+      "publisher": "Newman's Birds",
+      "year": 2026
+    }
+  ],
   "population": {
     "estimate": {
       "low": 2048,
@@ -35,8 +58,220 @@
     },
     "tierApplied": "D"
   },
-  "variants": [],
-  "viewNotes": [],
-  "calls": [],
-  "images": []
+  "variants": [
+    {
+      "age": "adult",
+      "sex": "male",
+      "season": "any",
+      "marks": {
+        "bill": {
+          "colour": null,
+          "shape": null
+        },
+        "eye": {
+          "iris": null,
+          "ring": null
+        },
+        "legs": {
+          "colour": [
+            "red",
+            "orange"
+          ]
+        },
+        "head": {
+          "crown": null,
+          "face": null,
+          "throat": null,
+          "pattern": "Soft parts red or orange."
+        },
+        "upperparts": {
+          "back": "grey",
+          "rump": null,
+          "pattern": null
+        },
+        "underparts": {
+          "breast": "grey",
+          "belly": "grey",
+          "pattern": "Pale grey below. Rufous vent."
+        },
+        "wings": {
+          "above": null,
+          "below": "white",
+          "pattern": "White underwing coverts."
+        },
+        "tail": {
+          "colour": null,
+          "shape": null
+        }
+      }
+    },
+    {
+      "age": "adult",
+      "sex": "female",
+      "season": "any",
+      "marks": {
+        "bill": {
+          "colour": null,
+          "shape": null
+        },
+        "eye": {
+          "iris": null,
+          "ring": null
+        },
+        "legs": {
+          "colour": [
+            "red",
+            "orange"
+          ]
+        },
+        "head": {
+          "crown": null,
+          "face": null,
+          "throat": null,
+          "pattern": null
+        },
+        "upperparts": {
+          "back": "grey",
+          "rump": null,
+          "pattern": null
+        },
+        "underparts": {
+          "breast": "white",
+          "belly": "white",
+          "pattern": "White and well spotted, including the underwing coverts."
+        },
+        "wings": {
+          "above": null,
+          "below": "white",
+          "pattern": "Underwing coverts well spotted."
+        },
+        "tail": {
+          "colour": null,
+          "shape": null
+        }
+      }
+    },
+    {
+      "age": "immature",
+      "sex": "any",
+      "season": "any",
+      "marks": {
+        "bill": {
+          "colour": null,
+          "shape": null
+        },
+        "eye": {
+          "iris": null,
+          "ring": null
+        },
+        "legs": {
+          "colour": null
+        },
+        "head": {
+          "crown": null,
+          "face": null,
+          "throat": null,
+          "pattern": null
+        },
+        "upperparts": {
+          "back": null,
+          "rump": null,
+          "pattern": "Greyer, and less rufous, than an immature Red-footed Falcon."
+        },
+        "underparts": {
+          "breast": null,
+          "belly": null,
+          "pattern": null
+        },
+        "wings": {
+          "above": null,
+          "below": null,
+          "pattern": null
+        },
+        "tail": {
+          "colour": null,
+          "shape": null
+        }
+      }
+    }
+  ],
+  "viewNotes": [
+    {
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "male",
+      "season": "any",
+      "note": "Grey above and pale grey below, with a rufous vent."
+    },
+    {
+      "view": "perched-front",
+      "age": "adult",
+      "sex": "male",
+      "season": "any",
+      "note": "Pale grey underparts and red or orange soft parts."
+    },
+    {
+      "view": "perched-back",
+      "age": "adult",
+      "sex": "male",
+      "season": "any",
+      "note": "Grey upper parts."
+    },
+    {
+      "view": "flight-above",
+      "age": "adult",
+      "sex": "male",
+      "season": "any",
+      "note": "White underwing coverts. The white can show as a thin wedge on the folded wing."
+    },
+    {
+      "view": "flight-below",
+      "age": "adult",
+      "sex": "male",
+      "season": "any",
+      "note": "Pale grey below, white underwing coverts and a rufous vent."
+    }
+  ],
+  "calls": [
+    {
+      "sex": "any",
+      "type": "call",
+      "description": "Newman’s species page does not describe the voice. Grade A call from Primorskiy Kray. The filename names Falco amurensis.",
+      "recordings": [
+        {
+          "key": "xeno-canto/XC266729",
+          "source": "https://xeno-canto.org/266729",
+          "fileUrl": "https://xeno-canto.org/sounds/uploaded/LELYWQKUZX/XC266729-Falco%20amurensis%20150505_024%2CAAA%2C%D0%A1%D0%B8%D0%B1%D0%B8%D1%80%D1%86%D0%B5%D0%B2%D0%BE%20%D1%83%D1%82%D1%80%D0%BE%206.05%2C%20%D1%81%D0%BF%D0%B0%D1%80%D0%B8%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5.MP3",
+          "author": "Albert Lastukhin",
+          "license": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ]
+    }
+  ],
+  "images": [
+    {
+      "key": "falco-amurensis/side.jpg",
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "female",
+      "season": "any",
+      "source": "https://www.inaturalist.org/observations/126180677",
+      "fileUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/214067904/large.jpeg",
+      "author": "sitszasadam",
+      "license": "CC BY-NC 4.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+      "aiGenerated": false,
+      "hosted": false,
+      "alt": "Female Amur Falcon on a Kruger bush",
+      "caption": "Amur Falcon on the H7 in Kruger. The spotted underparts match the female."
+    }
+  ],
+  "research": {
+    "confidence": "medium",
+    "needsReview": false,
+    "note": "Newman says it arrives in late spring and leaves by April or May, without a full month list, so monthsPresent was left unset. Status is summer-migrant. Population figures were left unchanged."
+  }
 }

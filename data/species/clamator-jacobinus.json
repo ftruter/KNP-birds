@@ -7,8 +7,35 @@
     "af": "Bontnuwejaarsvoël"
   },
   "family": "cuculidae",
-  "summary": "The details for this species have not been published yet.",
-  "sampleData": true,
+  "status": "summer-migrant",
+  "size": {
+    "lengthCm": {
+      "min": 33,
+      "max": 34
+    },
+    "note": "Newman's Birds gives 33–34 cm."
+  },
+  "habitat": "Pairs in woodland, riparian forest, valley bush and bushveld.",
+  "summary": "A common summer resident with two colour morphs. One has black upper parts, white underparts and a crest. The other is black except for a white wing-bar. The call is a shrill kleeuw, pewp-pewp. It parasitises bulbuls and other small birds. Months were left unset. The Kemp code VB was left unchanged.",
+  "sampleData": false,
+  "similar": [
+    {
+      "slug": "cuculus-clamosus",
+      "note": "Black Cuckoo is entirely black and can show faint barring below. The black Jacobin morph has a white wing-bar."
+    },
+    {
+      "slug": "clamator-levaillantii",
+      "note": "Levaillant’s Cuckoo is larger than the white Jacobin morph and is heavily streaked on the throat and breast."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Jacobin Cuckoo",
+      "url": "https://newmansbirds.com/birds/jacobin-cuckoo/",
+      "publisher": "Newman's Birds",
+      "year": 2026
+    }
+  ],
   "population": {
     "estimate": {
       "low": 8192,
@@ -35,8 +62,171 @@
     },
     "tierApplied": "D"
   },
-  "variants": [],
-  "viewNotes": [],
-  "calls": [],
-  "images": []
+  "variants": [
+    {
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "marks": {
+        "bill": {
+          "colour": null,
+          "shape": null
+        },
+        "eye": {
+          "iris": null,
+          "ring": null
+        },
+        "legs": {
+          "colour": null
+        },
+        "head": {
+          "crown": "black",
+          "face": null,
+          "throat": null,
+          "pattern": "Crested head. Pied morph."
+        },
+        "upperparts": {
+          "back": "black",
+          "rump": null,
+          "pattern": null
+        },
+        "underparts": {
+          "breast": "white",
+          "belly": "white",
+          "pattern": "Clear white underparts."
+        },
+        "wings": {
+          "above": "black",
+          "below": null,
+          "pattern": null
+        },
+        "tail": {
+          "colour": null,
+          "shape": null
+        }
+      }
+    },
+    {
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "marks": {
+        "bill": {
+          "colour": null,
+          "shape": null
+        },
+        "eye": {
+          "iris": null,
+          "ring": null
+        },
+        "legs": {
+          "colour": null
+        },
+        "head": {
+          "crown": "black",
+          "face": "black",
+          "throat": "black",
+          "pattern": "Black morph, with a crest."
+        },
+        "upperparts": {
+          "back": "black",
+          "rump": null,
+          "pattern": null
+        },
+        "underparts": {
+          "breast": "black",
+          "belly": "black",
+          "pattern": null
+        },
+        "wings": {
+          "above": "black",
+          "below": null,
+          "pattern": "White wing-bar. This separates it from Black Cuckoo."
+        },
+        "tail": {
+          "colour": "black",
+          "shape": null
+        }
+      }
+    }
+  ],
+  "viewNotes": [
+    {
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Pied morph: black above, white below, with a crest. The black morph is black except for a white wing-bar."
+    },
+    {
+      "view": "perched-front",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Pied morph: white underparts and a crest. Black morph: black throat and breast, with the white mark in the wing."
+    },
+    {
+      "view": "perched-back",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Black upper parts and a crest. The black morph shows the white wing-bar from behind."
+    },
+    {
+      "view": "flight-above",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "The white wing-bar is the flight mark given for the black morph. The pied upperwing was not described beyond black."
+    },
+    {
+      "view": "flight-below",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Pied morph white below. Black morph black below."
+    }
+  ],
+  "calls": [
+    {
+      "sex": "any",
+      "type": "call",
+      "description": "A shrill, flute-like kleeuw, pewp-pewp, kleeuw, pewp-pewp. Newman does not separate the sexes. Grade A call from Kruger, near Sabie Park. The filename is jacob-cuckoo-call.",
+      "recordings": [
+        {
+          "key": "xeno-canto/XC1188518",
+          "source": "https://xeno-canto.org/1188518",
+          "fileUrl": "https://xeno-canto.org/sounds/uploaded/QXGZDUUJUO/XC1188518-260129-074644_Tr1-jacob-cuckoo-call-Nkorho-Bush-Lodge.mp3",
+          "author": "JJSUN",
+          "license": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ]
+    }
+  ],
+  "images": [
+    {
+      "key": "clamator-jacobinus/side.jpg",
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "source": "https://www.inaturalist.org/observations/346108487",
+      "fileUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/630851443/large.jpg",
+      "author": "leuli",
+      "license": "CC BY-NC 4.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+      "aiGenerated": false,
+      "hosted": false,
+      "alt": "Black-morph Jacobin Cuckoo on a bare branch",
+      "caption": "Jacobin Cuckoo, the black morph, perched on a bare branch with a crest and a white mark in the wing."
+    }
+  ],
+  "research": {
+    "confidence": "medium",
+    "needsReview": false,
+    "note": "Newman calls it a common summer resident and does not name the months, so monthsPresent was left unset. Both colour morphs are stored. Population figures were left unchanged."
+  }
 }

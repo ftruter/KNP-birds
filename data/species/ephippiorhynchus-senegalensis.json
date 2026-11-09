@@ -7,8 +7,40 @@
     "af": "Saalbekooievaar"
   },
   "family": "ciconiidae",
-  "summary": "The details for this species have not been published yet.",
-  "sampleData": true,
+  "status": "resident",
+  "monthsPresent": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+  ],
+  "size": {
+    "lengthCm": {
+      "min": 145,
+      "max": 145
+    },
+    "note": "Newman's Birds gives 145 cm."
+  },
+  "habitat": "Singly or in pairs in the shallows of large rivers, lakes, dams, floodplains and marshes.",
+  "summary": "An uncommon resident. A large stork with a massive red-and-black bill and a yellow saddle. The male has small yellow wattles and a dark iris. The female lacks the wattles and has a yellow iris. The immature has grey instead of black markings, white areas mottled with black, and a dull blackish bill.",
+  "sampleData": false,
+  "similar": [],
+  "sources": [
+    {
+      "title": "Saddle-billed Stork",
+      "url": "https://newmansbirds.com/birds/saddle-billed-stork/",
+      "publisher": "Newman's Birds",
+      "year": 2026
+    }
+  ],
   "population": {
     "estimate": {
       "low": 25,
@@ -50,8 +82,211 @@
     },
     "tierApplied": "A"
   },
-  "variants": [],
-  "viewNotes": [],
-  "calls": [],
-  "images": []
+  "variants": [
+    {
+      "age": "adult",
+      "sex": "male",
+      "season": "any",
+      "marks": {
+        "bill": {
+          "colour": [
+            "red",
+            "black",
+            "yellow"
+          ],
+          "shape": "massive, with a yellow saddle"
+        },
+        "eye": {
+          "iris": "black",
+          "ring": null
+        },
+        "legs": {
+          "colour": null
+        },
+        "head": {
+          "crown": "black",
+          "face": "black",
+          "throat": null,
+          "pattern": "Small yellow wattles and a dark iris."
+        },
+        "upperparts": {
+          "back": "black",
+          "rump": null,
+          "pattern": "Black markings and white areas."
+        },
+        "underparts": {
+          "breast": "black",
+          "belly": "white",
+          "pattern": null
+        },
+        "wings": {
+          "above": null,
+          "below": null,
+          "pattern": null
+        },
+        "tail": {
+          "colour": null,
+          "shape": null
+        }
+      }
+    },
+    {
+      "age": "adult",
+      "sex": "female",
+      "season": "any",
+      "marks": {
+        "bill": {
+          "colour": [
+            "red",
+            "black",
+            "yellow"
+          ],
+          "shape": "massive, with a yellow saddle"
+        },
+        "eye": {
+          "iris": "yellow",
+          "ring": null
+        },
+        "legs": {
+          "colour": null
+        },
+        "head": {
+          "crown": "black",
+          "face": "black",
+          "throat": null,
+          "pattern": "No wattles. Yellow iris."
+        },
+        "upperparts": {
+          "back": "black",
+          "rump": null,
+          "pattern": null
+        },
+        "underparts": {
+          "breast": "black",
+          "belly": "white",
+          "pattern": null
+        },
+        "wings": {
+          "above": null,
+          "below": null,
+          "pattern": null
+        },
+        "tail": {
+          "colour": null,
+          "shape": null
+        }
+      }
+    },
+    {
+      "age": "juvenile",
+      "sex": "any",
+      "season": "any",
+      "marks": {
+        "bill": {
+          "colour": "black",
+          "shape": "dull and blackish"
+        },
+        "eye": {
+          "iris": null,
+          "ring": null
+        },
+        "legs": {
+          "colour": null
+        },
+        "head": {
+          "crown": "grey",
+          "face": null,
+          "throat": null,
+          "pattern": null
+        },
+        "upperparts": {
+          "back": "grey",
+          "rump": null,
+          "pattern": "Grey instead of black. White areas mottled with black."
+        },
+        "underparts": {
+          "breast": "grey",
+          "belly": "white",
+          "pattern": null
+        },
+        "wings": {
+          "above": null,
+          "below": null,
+          "pattern": null
+        },
+        "tail": {
+          "colour": null,
+          "shape": null
+        }
+      }
+    }
+  ],
+  "viewNotes": [
+    {
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Huge red-and-black bill with a yellow saddle, in the shallows."
+    },
+    {
+      "view": "perched-front",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "The bill and saddle. The male has yellow wattles and a dark eye; the female has a yellow eye and no wattles."
+    },
+    {
+      "view": "perched-back",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Black markings and white areas."
+    },
+    {
+      "view": "flight-above",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Unlikely to be confused in flight. A separate wing pattern was not named."
+    },
+    {
+      "view": "flight-below",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "White underparts and black markings."
+    }
+  ],
+  "calls": [
+    {
+      "sex": "any",
+      "type": "call",
+      "description": "No call was described, and no usable recording was found.",
+      "recordings": []
+    }
+  ],
+  "images": [
+    {
+      "key": "ephippiorhynchus-senegalensis/side.jpg",
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "source": "https://www.inaturalist.org/observations/10002585",
+      "fileUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/13753257/large.jpg",
+      "author": "Wynand Uys",
+      "license": "CC BY 4.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by/4.0/",
+      "aiGenerated": false,
+      "hosted": false,
+      "alt": "Saddle-billed Stork standing side-on in a Kruger marsh, with a red-and-black bill and a yellow saddle",
+      "caption": "Saddle-billed Stork standing side-on in a Kruger marsh, with a red-and-black bill and a yellow saddle"
+    }
+  ],
+  "research": {
+    "confidence": "medium",
+    "needsReview": true,
+    "note": "Status is resident and all twelve months are listed. Newman calls it an uncommon resident. No playable recording was found. The population figures were left unchanged."
+  }
 }
