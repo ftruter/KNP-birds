@@ -2688,6 +2688,64 @@
           }
         }
       ]
+    },
+    "crithagra-atrogularis": {
+      "calls": [
+        {
+          "index": 0,
+          "quality": {
+            "xeno-canto/XC472484": "A"
+          }
+        }
+      ]
+    },
+    "crithagra-citrinipectus": {
+      "calls": [
+        {
+          "index": 0,
+          "quality": {}
+        }
+      ]
+    },
+    "crithagra-gularis": {
+      "calls": [
+        {
+          "index": 0,
+          "quality": {
+            "xeno-canto/XC252812": "A"
+          }
+        }
+      ]
+    },
+    "crithagra-scotops": {
+      "calls": [
+        {
+          "index": 0,
+          "quality": {
+            "xeno-canto/XC500264": "A"
+          }
+        }
+      ]
+    },
+    "crithagra-sulphurata": {
+      "calls": [
+        {
+          "index": 0,
+          "quality": {
+            "xeno-canto/XC650874": "A"
+          }
+        }
+      ]
+    },
+    "serinus-canicollis": {
+      "calls": [
+        {
+          "index": 0,
+          "quality": {
+            "xeno-canto/XC1046125": "A"
+          }
+        }
+      ]
     }
   }
 }

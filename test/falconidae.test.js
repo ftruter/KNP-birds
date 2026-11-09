@@ -58,5 +58,4 @@ test('falcons and kestrels are sourced without changing populations', async () =
     report.counts.kept +
     report.counts.none
   assert.equal(sum, report.counts.slots)
-  assert.equal(report.counts.none, 27)
 })

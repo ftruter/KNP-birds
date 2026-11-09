@@ -1,11 +1,11 @@
 {
   "source": "xeno-canto explore catalogue, API v3 recording fields",
   "counts": {
-    "slots": 262,
+    "slots": 268,
     "swapped": 17,
-    "added": 161,
+    "added": 166,
     "kept": 57,
-    "none": 27,
+    "none": 28,
     "cleaned": 0
   },
   "noUsableRecording": [
@@ -143,6 +143,11 @@
       "slug": "falco-dickinsoni",
       "scientificName": "Falco dickinsoni",
       "type": "call"
+    },
+    {
+      "slug": "crithagra-citrinipectus",
+      "scientificName": "Crithagra citrinipectus",
+      "type": "song"
     }
   ],
   "speciesWithoutAnyRecording": [
@@ -4052,6 +4057,90 @@
       "quality": "A",
       "country": "Kazakhstan",
       "locality": "east of Akbykti, Aqmola province",
+      "cleaned": false,
+      "license": "CC BY-NC-SA 4.0"
+    },
+    {
+      "slug": "crithagra-atrogularis",
+      "scientificName": "Crithagra atrogularis",
+      "index": 0,
+      "type": "song",
+      "action": "added",
+      "from": [],
+      "to": "472484",
+      "quality": "A",
+      "country": "South Africa",
+      "locality": "Klerksdorp, Southern DC, North West",
+      "cleaned": false,
+      "license": "CC BY-NC-SA 4.0"
+    },
+    {
+      "slug": "crithagra-citrinipectus",
+      "scientificName": "Crithagra citrinipectus",
+      "index": 0,
+      "type": "song",
+      "action": "none",
+      "from": [],
+      "to": "",
+      "quality": "",
+      "country": "",
+      "locality": "",
+      "cleaned": false,
+      "license": ""
+    },
+    {
+      "slug": "crithagra-gularis",
+      "scientificName": "Crithagra gularis",
+      "index": 0,
+      "type": "song",
+      "action": "added",
+      "from": [],
+      "to": "252812",
+      "quality": "A",
+      "country": "South Africa",
+      "locality": "Grahamstown, Western District, Eastern Cape",
+      "cleaned": false,
+      "license": "CC BY-NC-SA 4.0"
+    },
+    {
+      "slug": "crithagra-scotops",
+      "scientificName": "Crithagra scotops",
+      "index": 0,
+      "type": "song",
+      "action": "added",
+      "from": [],
+      "to": "500264",
+      "quality": "A",
+      "country": "South Africa",
+      "locality": "Haenertsburg, Mopani, Limpopo",
+      "cleaned": false,
+      "license": "CC BY-NC-SA 4.0"
+    },
+    {
+      "slug": "crithagra-sulphurata",
+      "scientificName": "Crithagra sulphurata",
+      "index": 0,
+      "type": "song",
+      "action": "added",
+      "from": [],
+      "to": "650874",
+      "quality": "A",
+      "country": "South Africa",
+      "locality": "Wild Fig Farm, Wild Fig Country Estate",
+      "cleaned": false,
+      "license": "CC BY-NC-SA 4.0"
+    },
+    {
+      "slug": "serinus-canicollis",
+      "scientificName": "Serinus canicollis",
+      "index": 0,
+      "type": "song",
+      "action": "added",
+      "from": [],
+      "to": "1046125",
+      "quality": "A",
+      "country": "South Africa",
+      "locality": "City of Cape Town (near Cape Town), City of Cape Town Metropolitan Municipality, Western Cape",
       "cleaned": false,
       "license": "CC BY-NC-SA 4.0"
     }
