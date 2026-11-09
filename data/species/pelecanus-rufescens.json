@@ -7,8 +7,42 @@
     "af": "Kleinpelikaan"
   },
   "family": "pelecanidae",
-  "summary": "The details for this species have not been published yet.",
-  "sampleData": true,
+  "size": {
+    "lengthCm": {
+      "min": 135,
+      "max": 135
+    },
+    "note": "Newman's Birds gives 135 cm on the Pink-backed Pelican page."
+  },
+  "habitat": "The colour key says inland waters.",
+  "summary": "The colour key says the non-breeding bird has grey wings and is paler when breeding. The description paragraph on this page is the Great White Pelican account, also printed on the Great White Pelican page, so it was not used. Status and months are unset. The voice is not in the colour key. The Kemp paper name Pinkbacked Pelican and the code NB were left unchanged.",
+  "sampleData": false,
+  "similar": [
+    {
+      "slug": "pelecanus-onocrotalus",
+      "note": "Great White Pelican is the larger all-white bird. The Pink-backed colour key gives grey wings when not breeding."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Pink-backed Pelican",
+      "url": "https://newmansbirds.com/birds/pink-backed-pelican/",
+      "publisher": "Newman's Birds",
+      "year": 2026
+    },
+    {
+      "title": "Great White Pelican",
+      "url": "https://newmansbirds.com/birds/great-white-pelican/",
+      "publisher": "Newman's Birds",
+      "year": 2026
+    },
+    {
+      "title": "Kemp A.C., Herholdt J.J., Whyte I. & Harrison J. (2001). Birds of the two largest national parks in South Africa: a method to generate estimates of population size for all species and assess their conservation ecology. S. Afr. J. Sci. 97: 393–403.",
+      "url": "https://journals.co.za/doi/pdf/10.10520/EJC97367",
+      "publisher": "South African Journal of Science",
+      "year": 2001
+    }
+  ],
   "population": {
     "estimate": {
       "low": 4,
@@ -35,8 +69,200 @@
     },
     "tierApplied": "D"
   },
-  "variants": [],
-  "viewNotes": [],
-  "calls": [],
-  "images": []
+  "variants": [
+    {
+      "age": "adult",
+      "sex": "any",
+      "season": "non-breeding",
+      "marks": {
+        "bill": {
+          "colour": null,
+          "shape": null
+        },
+        "eye": {
+          "iris": null,
+          "ring": null
+        },
+        "legs": {
+          "colour": null
+        },
+        "head": {
+          "crown": null,
+          "face": null,
+          "throat": null
+        },
+        "upperparts": {
+          "back": null,
+          "rump": null
+        },
+        "underparts": {
+          "breast": null,
+          "belly": null
+        },
+        "wings": {
+          "above": "grey",
+          "below": null,
+          "pattern": "Grey wings."
+        },
+        "tail": {
+          "colour": null,
+          "shape": null
+        }
+      }
+    },
+    {
+      "age": "adult",
+      "sex": "any",
+      "season": "breeding",
+      "marks": {
+        "bill": {
+          "colour": null,
+          "shape": null
+        },
+        "eye": {
+          "iris": null,
+          "ring": null
+        },
+        "legs": {
+          "colour": null
+        },
+        "head": {
+          "crown": null,
+          "face": null,
+          "throat": null
+        },
+        "upperparts": {
+          "back": null,
+          "rump": null,
+          "pattern": "Paler than the non-breeding bird. No separate breeding colours were named in the colour key."
+        },
+        "underparts": {
+          "breast": null,
+          "belly": null
+        },
+        "wings": {
+          "above": null,
+          "below": null
+        },
+        "tail": {
+          "colour": null,
+          "shape": null
+        }
+      }
+    }
+  ],
+  "viewNotes": [
+    {
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "any",
+      "season": "non-breeding",
+      "note": "Grey wings. The rest of the non-breeding plumage was not named in the colour key."
+    },
+    {
+      "view": "perched-front",
+      "age": "adult",
+      "sex": "any",
+      "season": "non-breeding",
+      "note": "The face was not named in the colour key."
+    },
+    {
+      "view": "perched-back",
+      "age": "adult",
+      "sex": "any",
+      "season": "non-breeding",
+      "note": "Grey wings."
+    },
+    {
+      "view": "flight-above",
+      "age": "adult",
+      "sex": "any",
+      "season": "non-breeding",
+      "note": "Grey wings."
+    },
+    {
+      "view": "flight-below",
+      "age": "adult",
+      "sex": "any",
+      "season": "non-breeding",
+      "note": "The underwing was not named in the colour key."
+    },
+    {
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "any",
+      "season": "breeding",
+      "note": "Paler than the non-breeding bird."
+    },
+    {
+      "view": "perched-front",
+      "age": "adult",
+      "sex": "any",
+      "season": "breeding",
+      "note": "The breeding face was not described in the colour key."
+    },
+    {
+      "view": "perched-back",
+      "age": "adult",
+      "sex": "any",
+      "season": "breeding",
+      "note": "Paler upperparts. No colour was named."
+    },
+    {
+      "view": "flight-above",
+      "age": "adult",
+      "sex": "any",
+      "season": "breeding",
+      "note": "A breeding flight pattern was not named beyond paler."
+    },
+    {
+      "view": "flight-below",
+      "age": "adult",
+      "sex": "any",
+      "season": "breeding",
+      "note": "The breeding underparts were not named in the colour key."
+    }
+  ],
+  "calls": [
+    {
+      "sex": "any",
+      "type": "call",
+      "description": "The colour key does not describe the voice. The description paragraph is the Great White Pelican account and was not used. Grade B call from near Kassel, Ziguinchor, Senegal. No grade A recording was in the catalogue. The filename is XC862719-Pelican-gris-231215-0700-1CB-Senegal-Kasel-MixPre32-225.mp3.",
+      "recordings": [
+        {
+          "key": "xeno-canto/XC862719",
+          "source": "https://xeno-canto.org/862719",
+          "fileUrl": "https://xeno-canto.org/sounds/uploaded/EDRTTPSCEN/XC862719-Pelican-gris-231215-0700-1CB-Senegal-Kasel-MixPre32-225.mp3",
+          "author": "Alain Malengreau",
+          "license": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ]
+    }
+  ],
+  "images": [
+    {
+      "key": "pelecanus-rufescens/side.jpg",
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "any",
+      "season": "non-breeding",
+      "source": "https://www.inaturalist.org/observations/181208020",
+      "fileUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/315766735/large.jpeg",
+      "author": "Lynne Correia",
+      "license": "CC BY-NC 4.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+      "aiGenerated": false,
+      "hosted": false,
+      "alt": "Pink-backed Pelican with grey wings",
+      "caption": "Pink-backed Pelican at Sunset Dam, grey wings."
+    }
+  ],
+  "research": {
+    "confidence": "medium",
+    "needsReview": true,
+    "note": "The colour key matches Pink-backed Pelican. The description paragraph matches Great White Pelican and was not used, so status and monthsPresent are unset and the plumage is only the key. That is why this needs review. Population figures, the Kemp paper name Pinkbacked Pelican and the code NB were left unchanged."
+  }
 }

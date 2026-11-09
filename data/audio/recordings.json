@@ -3666,6 +3666,26 @@
           }
         }
       ]
+    },
+    "pelecanus-onocrotalus": {
+      "calls": [
+        {
+          "index": 0,
+          "quality": {
+            "xeno-canto/XC343693": "A"
+          }
+        }
+      ]
+    },
+    "pelecanus-rufescens": {
+      "calls": [
+        {
+          "index": 0,
+          "quality": {
+            "xeno-canto/XC862719": "B"
+          }
+        }
+      ]
     }
   }
 }

@@ -6,8 +6,8 @@
     "en": "Pelicans",
     "af": "Pelikane"
   },
-  "summary": "Field notes for this family are still to be written.",
-  "sampleData": true,
+  "summary": "Pelicans. Great White Pelican is the large white bird with black flight feathers. Pink-backed Pelican has grey wings when not breeding, and the Newman description paragraph on its page is the Great White account.",
+  "sampleData": false,
   "species": [
     {
       "slug": "pelecanus-onocrotalus",
