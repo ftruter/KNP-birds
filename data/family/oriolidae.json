@@ -6,8 +6,8 @@
     "en": "Orioles",
     "af": "Wielewale"
   },
-  "summary": "Field notes for this family are still to be written.",
-  "sampleData": true,
+  "summary": "Orioles. Black-headed Oriole is the common resident, black-headed and yellow-bodied. African Golden Oriole and Eurasian Golden Oriole are yellow summer birds. The African male has a black line through the eye. The Eurasian male has black wings and only black lores.",
+  "sampleData": false,
   "species": [
     {
       "slug": "oriolus-auratus",

@@ -7,8 +7,40 @@
     "af": "Afrikaanse Wielewaal"
   },
   "family": "oriolidae",
-  "summary": "The details for this species have not been published yet.",
-  "sampleData": true,
+  "size": {
+    "lengthCm": {
+      "min": 24,
+      "max": 24
+    },
+    "note": "Newman's Birds gives 24 cm, marked M."
+  },
+  "habitat": "Any well-developed woodland or riverine forest.",
+  "summary": "An uncommon summer resident. The male is the yellowest oriole, yellow except for a black line through the eye to the ear coverts, black primaries and black central tail feathers, with a pink bill. That eye-line is also present in the immature, whose other plumage was not described. The female is less bright, greener above and paler below. The calls are liquid whistles, wee-er-er-wul or fee-yoo-fee-yoo-fee-yoo, longer than a Black-headed Oriole’s. Newman names no months. The Kemp code NB was left unchanged.",
+  "sampleData": false,
+  "similar": [
+    {
+      "slug": "oriolus-oriolus",
+      "note": "Male Eurasian Golden Oriole has black wings and only black lores, a less extensive mask than the African Golden Oriole’s eye-line."
+    },
+    {
+      "slug": "oriolus-larvatus",
+      "note": "Black-headed Oriole has a black head and throat. African Golden Oriole has a yellow head with a black line through the eye."
+    }
+  ],
+  "sources": [
+    {
+      "title": "African Golden Oriole",
+      "url": "https://newmansbirds.com/birds/african-golden-oriole/",
+      "publisher": "Newman's Birds",
+      "year": 2026
+    },
+    {
+      "title": "Kemp A.C., Herholdt J.J., Whyte I. & Harrison J. (2001). Birds of the two largest national parks in South Africa: a method to generate estimates of population size for all species and assess their conservation ecology. S. Afr. J. Sci. 97: 393–403.",
+      "url": "https://journals.co.za/doi/pdf/10.10520/EJC97367",
+      "publisher": "South African Journal of Science",
+      "year": 2001
+    }
+  ],
   "population": {
     "estimate": {
       "low": 128,
@@ -35,8 +67,279 @@
     },
     "tierApplied": "D"
   },
-  "variants": [],
-  "viewNotes": [],
-  "calls": [],
-  "images": []
+  "variants": [
+    {
+      "age": "adult",
+      "sex": "male",
+      "season": "any",
+      "marks": {
+        "bill": {
+          "colour": "pink",
+          "shape": null
+        },
+        "eye": {
+          "iris": null,
+          "ring": null
+        },
+        "legs": {
+          "colour": null
+        },
+        "head": {
+          "crown": "yellow",
+          "face": null,
+          "throat": null,
+          "pattern": "A distinct black line through the eye to the ear coverts."
+        },
+        "upperparts": {
+          "back": "yellow",
+          "rump": null,
+          "pattern": "Entirely yellow except for the black mask, primaries and central tail feathers."
+        },
+        "underparts": {
+          "breast": "yellow",
+          "belly": "yellow"
+        },
+        "wings": {
+          "above": null,
+          "below": null,
+          "pattern": "Black primaries."
+        },
+        "tail": {
+          "colour": null,
+          "shape": "Central tail feathers black."
+        }
+      }
+    },
+    {
+      "age": "adult",
+      "sex": "female",
+      "season": "any",
+      "marks": {
+        "bill": {
+          "colour": "pink",
+          "shape": null
+        },
+        "eye": {
+          "iris": null,
+          "ring": null
+        },
+        "legs": {
+          "colour": null
+        },
+        "head": {
+          "crown": null,
+          "face": null,
+          "throat": null
+        },
+        "upperparts": {
+          "back": null,
+          "rump": null,
+          "pattern": "Less bright than the male, and greener on the upper parts."
+        },
+        "underparts": {
+          "breast": null,
+          "belly": null,
+          "pattern": "Paler than the male."
+        },
+        "wings": {
+          "above": null,
+          "below": null
+        },
+        "tail": {
+          "colour": null,
+          "shape": null
+        }
+      }
+    },
+    {
+      "age": "immature",
+      "sex": "any",
+      "season": "any",
+      "marks": {
+        "bill": {
+          "colour": null,
+          "shape": null
+        },
+        "eye": {
+          "iris": null,
+          "ring": null
+        },
+        "legs": {
+          "colour": null
+        },
+        "head": {
+          "crown": null,
+          "face": null,
+          "throat": null,
+          "pattern": "The black line through the eye to the ear coverts is also present. The rest of the immature plumage was not described."
+        },
+        "upperparts": {
+          "back": null,
+          "rump": null
+        },
+        "underparts": {
+          "breast": null,
+          "belly": null
+        },
+        "wings": {
+          "above": null,
+          "below": null
+        },
+        "tail": {
+          "colour": null,
+          "shape": null
+        }
+      }
+    }
+  ],
+  "viewNotes": [
+    {
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "male",
+      "season": "any",
+      "note": "Yellow, with a pink bill and a black line from the eye to the ear coverts."
+    },
+    {
+      "view": "perched-front",
+      "age": "adult",
+      "sex": "male",
+      "season": "any",
+      "note": "The black eye-line and a yellow throat."
+    },
+    {
+      "view": "perched-back",
+      "age": "adult",
+      "sex": "male",
+      "season": "any",
+      "note": "Yellow back, black primaries and black central tail feathers."
+    },
+    {
+      "view": "flight-above",
+      "age": "adult",
+      "sex": "male",
+      "season": "any",
+      "note": "Black primaries and black central tail feathers."
+    },
+    {
+      "view": "flight-below",
+      "age": "adult",
+      "sex": "male",
+      "season": "any",
+      "note": "Yellow underparts."
+    },
+    {
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "female",
+      "season": "any",
+      "note": "Less bright than the male, greener above and paler below, with a pink bill."
+    },
+    {
+      "view": "perched-front",
+      "age": "adult",
+      "sex": "female",
+      "season": "any",
+      "note": "Paler underparts. The female face was not given a separate pattern."
+    },
+    {
+      "view": "perched-back",
+      "age": "adult",
+      "sex": "female",
+      "season": "any",
+      "note": "Greener upper parts."
+    },
+    {
+      "view": "flight-above",
+      "age": "adult",
+      "sex": "female",
+      "season": "any",
+      "note": "A female flight pattern was not described."
+    },
+    {
+      "view": "flight-below",
+      "age": "adult",
+      "sex": "female",
+      "season": "any",
+      "note": "Paler underparts."
+    },
+    {
+      "view": "perched-side",
+      "age": "immature",
+      "sex": "any",
+      "season": "any",
+      "note": "A black line through the eye to the ear coverts. The rest was not described."
+    },
+    {
+      "view": "perched-front",
+      "age": "immature",
+      "sex": "any",
+      "season": "any",
+      "note": "The black eye-line."
+    },
+    {
+      "view": "perched-back",
+      "age": "immature",
+      "sex": "any",
+      "season": "any",
+      "note": "The immature back was not described."
+    },
+    {
+      "view": "flight-above",
+      "age": "immature",
+      "sex": "any",
+      "season": "any",
+      "note": "An immature flight pattern was not described."
+    },
+    {
+      "view": "flight-below",
+      "age": "immature",
+      "sex": "any",
+      "season": "any",
+      "note": "The immature underparts were not described."
+    }
+  ],
+  "calls": [
+    {
+      "sex": "any",
+      "type": "call",
+      "description": "Liquid whistles, wee-er-er-wul or fee-yoo-fee-yoo-fee-yoo, longer than the calls of Black-headed Oriole. Grade A call from Mutinondo Wilderness, Northern Province, Zambia. The filename is XC660762-African Golden Oriole (call) 20201206,Mutinondo,Muchinga,ZAMBIA.mp3.",
+      "recordings": [
+        {
+          "key": "xeno-canto/XC660762",
+          "source": "https://xeno-canto.org/660762",
+          "fileUrl": "https://xeno-canto.org/sounds/uploaded/IIJAXHKSCC/XC660762-African%20Golden%20Oriole%20%28call%29%2020201206%2CMutinondo%2CMuchinga%2CZAMBIA.mp3",
+          "author": "Dries Van de Loock",
+          "license": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ]
+    }
+  ],
+  "images": [
+    {
+      "key": "oriolus-auratus/side.jpg",
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "male",
+      "season": "any",
+      "source": "https://www.inaturalist.org/observations/141818797",
+      "fileUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/243038779/large.jpeg",
+      "author": "joysglobal",
+      "license": "CC BY-NC 4.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+      "aiGenerated": false,
+      "hosted": false,
+      "alt": "African Golden Oriole, yellow with a black eye-line and a pink bill",
+      "caption": "Male African Golden Oriole at Timbavati, yellow with a black line through the eye and a pink bill."
+    }
+  ],
+  "research": {
+    "confidence": "medium",
+    "needsReview": true,
+    "note": "Newman calls it an uncommon summer resident and names no months, so status is summer-migrant and monthsPresent is unset. The immature is only the eye-line, and the female is only less bright, greener above and paler below, which is why this needs review. Population figures and the Kemp code NB were left unchanged."
+  },
+  "status": "summer-migrant"
 }
