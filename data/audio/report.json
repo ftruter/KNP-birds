@@ -1,9 +1,9 @@
 {
   "source": "xeno-canto explore catalogue, API v3 recording fields",
   "counts": {
-    "slots": 355,
+    "slots": 356,
     "swapped": 17,
-    "added": 253,
+    "added": 254,
     "kept": 57,
     "none": 28,
     "cleaned": 0
@@ -5361,6 +5361,20 @@
       "locality": "Orlando Wetlands, Christmas, Orange County, Florida",
       "cleaned": false,
       "license": "CC BY-NC-SA 3.0"
+    },
+    {
+      "slug": "melaniparus-niger",
+      "scientificName": "Melaniparus niger",
+      "index": 0,
+      "type": "call",
+      "action": "added",
+      "from": [],
+      "to": "368162",
+      "quality": "A",
+      "country": "South Africa",
+      "locality": "Bushbuckridge (near Sabie Park), Ehlanzeni, Mpumalanga",
+      "cleaned": false,
+      "license": "CC BY-NC-SA 4.0"
     }
   ]
 }
