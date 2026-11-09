@@ -3806,6 +3806,26 @@
           }
         }
       ]
+    },
+    "phoeniculus-purpureus": {
+      "calls": [
+        {
+          "index": 0,
+          "quality": {
+            "xeno-canto/XC301399": "A"
+          }
+        }
+      ]
+    },
+    "rhinopomastus-cyanomelas": {
+      "calls": [
+        {
+          "index": 0,
+          "quality": {
+            "xeno-canto/XC467724": "B"
+          }
+        }
+      ]
     }
   }
 }

@@ -1,9 +1,9 @@
 {
   "source": "xeno-canto explore catalogue, API v3 recording fields",
   "counts": {
-    "slots": 374,
+    "slots": 376,
     "swapped": 17,
-    "added": 272,
+    "added": 274,
     "kept": 57,
     "none": 28,
     "cleaned": 0
@@ -5627,6 +5627,34 @@
       "locality": "Wadi Darbat, Dhofar",
       "cleaned": false,
       "license": "CC BY-NC-SA 3.0"
+    },
+    {
+      "slug": "phoeniculus-purpureus",
+      "scientificName": "Phoeniculus purpureus",
+      "index": 0,
+      "type": "call",
+      "action": "added",
+      "from": [],
+      "to": "301399",
+      "quality": "A",
+      "country": "South Africa",
+      "locality": "Warmbad, Bosveld, Limpopo",
+      "cleaned": false,
+      "license": "CC BY-NC-SA 4.0"
+    },
+    {
+      "slug": "rhinopomastus-cyanomelas",
+      "scientificName": "Rhinopomastus cyanomelas",
+      "index": 0,
+      "type": "call",
+      "action": "added",
+      "from": [],
+      "to": "467724",
+      "quality": "B",
+      "country": "South Africa",
+      "locality": "Kareeboombult, Hoopstad, Free State",
+      "cleaned": false,
+      "license": "CC BY-NC-SA 4.0"
     }
   ]
 }

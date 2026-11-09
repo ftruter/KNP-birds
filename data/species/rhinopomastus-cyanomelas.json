@@ -7,8 +7,36 @@
     "af": "Swartbekkakelaar"
   },
   "family": "phoeniculidae",
-  "summary": "The details for this species have not been published yet.",
-  "sampleData": true,
+  "size": {
+    "lengthCm": {
+      "min": 24,
+      "max": 28
+    },
+    "note": "Newman's Birds gives 24–28 cm."
+  },
+  "habitat": "Solitary or in pairs in dry, well-developed broad-leaved woodland and thornveld. It feeds in large trees, clambering on the outer branches.",
+  "summary": "A fairly common woodland resident. Smaller than Green Wood-hoopoe, with a more decurved black bill and a shorter tail. The female and immature have brownish throats and breasts. During summer it calls pwep-pwep-pwep-pwep at half-second intervals. Newman does not describe the body colour. The Kemp paper name Scimitarbilled Woodhoopoe and the code RB were left unchanged.",
+  "sampleData": false,
+  "similar": [
+    {
+      "slug": "phoeniculus-purpureus",
+      "note": "Green Wood-hoopoe is larger, with a red bill and red feet, not a black bill."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Common Scimitarbill",
+      "url": "https://newmansbirds.com/birds/common-scimitarbill/",
+      "publisher": "Newman's Birds",
+      "year": 2026
+    },
+    {
+      "title": "Kemp A.C., Herholdt J.J., Whyte I. & Harrison J. (2001). Birds of the two largest national parks in South Africa: a method to generate estimates of population size for all species and assess their conservation ecology. S. Afr. J. Sci. 97: 393–403.",
+      "url": "https://journals.co.za/doi/pdf/10.10520/EJC97367",
+      "publisher": "South African Journal of Science",
+      "year": 2001
+    }
+  ],
   "population": {
     "estimate": {
       "low": 8192,
@@ -35,8 +63,291 @@
     },
     "tierApplied": "D"
   },
-  "variants": [],
-  "viewNotes": [],
-  "calls": [],
-  "images": []
+  "variants": [
+    {
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "marks": {
+        "bill": {
+          "colour": "black",
+          "shape": "Very curved, more decurved than a Green Wood-hoopoe’s bill."
+        },
+        "eye": {
+          "iris": null,
+          "ring": null
+        },
+        "legs": {
+          "colour": null
+        },
+        "head": {
+          "crown": null,
+          "face": null,
+          "throat": null
+        },
+        "upperparts": {
+          "back": null,
+          "rump": null
+        },
+        "underparts": {
+          "breast": null,
+          "belly": null
+        },
+        "wings": {
+          "above": null,
+          "below": null
+        },
+        "tail": {
+          "colour": null,
+          "shape": "Shorter than a Green Wood-hoopoe’s tail."
+        }
+      }
+    },
+    {
+      "age": "adult",
+      "sex": "female",
+      "season": "any",
+      "marks": {
+        "bill": {
+          "colour": "black",
+          "shape": "Very curved."
+        },
+        "eye": {
+          "iris": null,
+          "ring": null
+        },
+        "legs": {
+          "colour": null
+        },
+        "head": {
+          "crown": null,
+          "face": null,
+          "throat": null,
+          "pattern": "Brownish throat."
+        },
+        "upperparts": {
+          "back": null,
+          "rump": null
+        },
+        "underparts": {
+          "breast": null,
+          "belly": null,
+          "pattern": "Brownish breast."
+        },
+        "wings": {
+          "above": null,
+          "below": null
+        },
+        "tail": {
+          "colour": null,
+          "shape": null
+        }
+      }
+    },
+    {
+      "age": "immature",
+      "sex": "any",
+      "season": "any",
+      "marks": {
+        "bill": {
+          "colour": null,
+          "shape": null
+        },
+        "eye": {
+          "iris": null,
+          "ring": null
+        },
+        "legs": {
+          "colour": null
+        },
+        "head": {
+          "crown": null,
+          "face": null,
+          "throat": null,
+          "pattern": "Brownish throat."
+        },
+        "upperparts": {
+          "back": null,
+          "rump": null
+        },
+        "underparts": {
+          "breast": null,
+          "belly": null,
+          "pattern": "Brownish breast."
+        },
+        "wings": {
+          "above": null,
+          "below": null
+        },
+        "tail": {
+          "colour": null,
+          "shape": null
+        }
+      }
+    }
+  ],
+  "viewNotes": [
+    {
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Very curved black bill and a shorter tail than a Green Wood-hoopoe. The body colour was not named."
+    },
+    {
+      "view": "perched-front",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Very curved black bill."
+    },
+    {
+      "view": "perched-back",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "The back colour was not named."
+    },
+    {
+      "view": "flight-above",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "A flight pattern was not described."
+    },
+    {
+      "view": "flight-below",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "The underparts were not named for the adult generally."
+    },
+    {
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "female",
+      "season": "any",
+      "note": "Brownish throat and breast, with a very curved black bill."
+    },
+    {
+      "view": "perched-front",
+      "age": "adult",
+      "sex": "female",
+      "season": "any",
+      "note": "Brownish throat."
+    },
+    {
+      "view": "perched-back",
+      "age": "adult",
+      "sex": "female",
+      "season": "any",
+      "note": "The female back was not described."
+    },
+    {
+      "view": "flight-above",
+      "age": "adult",
+      "sex": "female",
+      "season": "any",
+      "note": "A female flight pattern was not described."
+    },
+    {
+      "view": "flight-below",
+      "age": "adult",
+      "sex": "female",
+      "season": "any",
+      "note": "Brownish breast."
+    },
+    {
+      "view": "perched-side",
+      "age": "immature",
+      "sex": "any",
+      "season": "any",
+      "note": "Brownish throat and breast. The bill was not given a separate colour."
+    },
+    {
+      "view": "perched-front",
+      "age": "immature",
+      "sex": "any",
+      "season": "any",
+      "note": "Brownish throat."
+    },
+    {
+      "view": "perched-back",
+      "age": "immature",
+      "sex": "any",
+      "season": "any",
+      "note": "The immature back was not described."
+    },
+    {
+      "view": "flight-above",
+      "age": "immature",
+      "sex": "any",
+      "season": "any",
+      "note": "An immature flight pattern was not described."
+    },
+    {
+      "view": "flight-below",
+      "age": "immature",
+      "sex": "any",
+      "season": "any",
+      "note": "Brownish breast."
+    }
+  ],
+  "calls": [
+    {
+      "sex": "any",
+      "type": "call",
+      "description": "During summer, pwep-pwep-pwep-pwep at half-second intervals. Every openly licensed grade A file is ND or has other species in the background. Grade B call from Kareeboombult, Hoopstad, Free State. The filename is XC467724-Scimitarbill_KareebbultHoopstad_20190410.MP3.",
+      "recordings": [
+        {
+          "key": "xeno-canto/XC467724",
+          "source": "https://xeno-canto.org/467724",
+          "fileUrl": "https://xeno-canto.org/sounds/uploaded/JDCTKFMBKV/XC467724-Scimitarbill_KareebbultHoopstad_20190410.MP3",
+          "author": "Dawie de Swardt",
+          "license": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ]
+    }
+  ],
+  "images": [
+    {
+      "key": "rhinopomastus-cyanomelas/side.jpg",
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "source": "https://www.inaturalist.org/observations/95766206",
+      "fileUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/159019334/large.jpeg",
+      "author": "Justin Ponder",
+      "license": "CC BY 4.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by/4.0/",
+      "aiGenerated": false,
+      "hosted": false,
+      "alt": "Common Scimitarbill with a very curved black bill",
+      "caption": "Common Scimitarbill in the Mopani district, very curved black bill."
+    }
+  ],
+  "research": {
+    "confidence": "medium",
+    "needsReview": true,
+    "note": "Newman calls it a fairly common woodland resident, so status is resident and all twelve months are listed. The body colour is not described, and the female and immature are only brownish on the throat and breast, which is why this needs review. Violet Wood Hoopoe is a comparison Newman names and is not in this list. Population figures, the Kemp paper name Scimitarbilled Woodhoopoe and the code RB were left unchanged."
+  },
+  "status": "resident",
+  "monthsPresent": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+  ]
 }
