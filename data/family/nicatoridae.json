@@ -5,8 +5,8 @@
   "commonNames": {
     "en": "Nicators"
   },
-  "summary": "Field notes for this family are still to be written.",
-  "sampleData": true,
+  "summary": "Nicators. Kruger has one, the Eastern Nicator: a secretive, greenish bird of dense thickets, with yellow spots on the wing, a yellow-tipped tail and a yellow belly. The song is a rising series of trills and warbles.",
+  "sampleData": false,
   "species": [
     {
       "slug": "nicator-gularis",
