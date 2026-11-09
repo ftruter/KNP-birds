@@ -3231,14 +3231,42 @@
       "slug": "ardeotis-kori",
       "scientificName": "Ardeotis kori",
       "commonName": "Kori Bustard",
-      "images": [],
-      "recordings": [],
+      "images": [
+        {
+          "key": "ardeotis-kori/side.jpg",
+          "author": "Dave Brown",
+          "licence": "CC0 1.0",
+          "licenceUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+          "sourceUrl": "https://www.inaturalist.org/observations/71426215",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ],
+      "recordings": [
+        {
+          "key": "xeno-canto/XC209987",
+          "author": "Andrew Spencer",
+          "licence": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "sourceUrl": "https://xeno-canto.org/209987",
+          "aiGenerated": false,
+          "hosted": false,
+          "quality": "A",
+          "callType": "call"
+        }
+      ],
       "sources": [
         {
           "title": "Kemp A.C., Herholdt J.J., Whyte I. & Harrison J. (2001). Birds of the two largest national parks in South Africa: a method to generate estimates of population size for all species and assess their conservation ecology. S. Afr. J. Sci. 97: 393–403.",
           "url": "https://journals.co.za/doi/pdf/10.10520/EJC97367",
           "publisher": "South African Journal of Science",
           "year": 2001
+        },
+        {
+          "title": "Kori Bustard",
+          "url": "https://newmansbirds.com/birds/kori-bustard/",
+          "publisher": "Newman's Birds",
+          "year": 2026
         }
       ]
     },
@@ -13875,14 +13903,42 @@
       "slug": "lissotis-melanogaster",
       "scientificName": "Lissotis melanogaster",
       "commonName": "Black-bellied Bustard",
-      "images": [],
-      "recordings": [],
+      "images": [
+        {
+          "key": "lissotis-melanogaster/side.jpg",
+          "author": "Niall Perrins",
+          "licence": "CC BY-NC 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+          "sourceUrl": "https://www.inaturalist.org/observations/161763692",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ],
+      "recordings": [
+        {
+          "key": "xeno-canto/XC1052028",
+          "author": "Bernard BOUSQUET",
+          "licence": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "sourceUrl": "https://xeno-canto.org/1052028",
+          "aiGenerated": false,
+          "hosted": false,
+          "quality": "A",
+          "callType": "call"
+        }
+      ],
       "sources": [
         {
           "title": "Kemp A.C., Herholdt J.J., Whyte I. & Harrison J. (2001). Birds of the two largest national parks in South Africa: a method to generate estimates of population size for all species and assess their conservation ecology. S. Afr. J. Sci. 97: 393–403.",
           "url": "https://journals.co.za/doi/pdf/10.10520/EJC97367",
           "publisher": "South African Journal of Science",
           "year": 2001
+        },
+        {
+          "title": "Black-bellied Bustard",
+          "url": "https://newmansbirds.com/birds/black-bellied-bustard/",
+          "publisher": "Newman's Birds",
+          "year": 2026
         }
       ]
     },
@@ -14086,14 +14142,48 @@
       "slug": "lophotis-ruficrista",
       "scientificName": "Lophotis ruficrista",
       "commonName": "Red-crested Korhaan",
-      "images": [],
-      "recordings": [],
+      "images": [
+        {
+          "key": "lophotis-ruficrista/side.jpg",
+          "author": "Mark Bolnik",
+          "licence": "CC BY 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by/4.0/",
+          "sourceUrl": "https://www.inaturalist.org/observations/99600075",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ],
+      "recordings": [
+        {
+          "key": "xeno-canto/XC209351",
+          "author": "Niall Perrins",
+          "licence": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "sourceUrl": "https://xeno-canto.org/209351",
+          "aiGenerated": false,
+          "hosted": false,
+          "quality": "A",
+          "callType": "call"
+        }
+      ],
       "sources": [
         {
           "title": "Kemp A.C., Herholdt J.J., Whyte I. & Harrison J. (2001). Birds of the two largest national parks in South Africa: a method to generate estimates of population size for all species and assess their conservation ecology. S. Afr. J. Sci. 97: 393–403.",
           "url": "https://journals.co.za/doi/pdf/10.10520/EJC97367",
           "publisher": "South African Journal of Science",
           "year": 2001
+        },
+        {
+          "title": "Red-crested Korhaan",
+          "url": "https://newmansbirds.com/birds/red-crested-korhaan/",
+          "publisher": "Newman's Birds",
+          "year": 2026
+        },
+        {
+          "title": "Temminck’s Courser",
+          "url": "https://newmansbirds.com/birds/temmincks-courser/",
+          "publisher": "Newman's Birds",
+          "year": 2026
         }
       ]
     },

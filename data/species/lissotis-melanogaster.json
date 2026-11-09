@@ -7,8 +7,30 @@
     "af": "Langbeenkorhaan"
   },
   "family": "otididae",
-  "summary": "The details for this species have not been published yet.",
-  "sampleData": true,
+  "size": {
+    "lengthCm": {
+      "min": 58,
+      "max": 65
+    },
+    "note": "Newman's Birds gives 58–65 cm."
+  },
+  "habitat": "Singly or in pairs in rank, moist grassland.",
+  "summary": "A common resident, with proportionately longer legs than any other korhaan. Tawny above and on the neck, with black markings, and pale yellow legs. The male has a black-and-white head marking and entirely black underparts, the black extending in a line up the front of the neck to the chin. In flight his upper wings are white, and the underwings are black except for a white patch at the base of the primaries. The female is white below. While posturing, the male gives a dull waak or phwoe, then a throaty grunt, a pause, and a sharp whip-like ooor-whip. The Kemp paper name Blackbellied Korhaan and the code RB were left unchanged.",
+  "sampleData": false,
+  "sources": [
+    {
+      "title": "Black-bellied Bustard",
+      "url": "https://newmansbirds.com/birds/black-bellied-bustard/",
+      "publisher": "Newman's Birds",
+      "year": 2026
+    },
+    {
+      "title": "Kemp A.C., Herholdt J.J., Whyte I. & Harrison J. (2001). Birds of the two largest national parks in South Africa: a method to generate estimates of population size for all species and assess their conservation ecology. S. Afr. J. Sci. 97: 393–403.",
+      "url": "https://journals.co.za/doi/pdf/10.10520/EJC97367",
+      "publisher": "South African Journal of Science",
+      "year": 2001
+    }
+  ],
   "population": {
     "estimate": {
       "low": 4096,
@@ -35,8 +57,218 @@
     },
     "tierApplied": "D"
   },
-  "variants": [],
-  "viewNotes": [],
-  "calls": [],
-  "images": []
+  "variants": [
+    {
+      "age": "adult",
+      "sex": "male",
+      "season": "any",
+      "marks": {
+        "bill": {
+          "colour": null,
+          "shape": null
+        },
+        "eye": {
+          "iris": null,
+          "ring": null
+        },
+        "legs": {
+          "colour": "yellow"
+        },
+        "head": {
+          "crown": null,
+          "face": null,
+          "throat": null,
+          "pattern": "Black-and-white head marking. Neck tawny, with a black line up the front of the neck to the chin."
+        },
+        "upperparts": {
+          "back": "tawny",
+          "rump": null,
+          "pattern": "Tawny above, with black markings."
+        },
+        "underparts": {
+          "breast": "black",
+          "belly": "black"
+        },
+        "wings": {
+          "above": "white",
+          "below": "black",
+          "pattern": "Underwings black except for a white patch at the base of the primaries."
+        },
+        "tail": {
+          "colour": null,
+          "shape": null
+        }
+      }
+    },
+    {
+      "age": "adult",
+      "sex": "female",
+      "season": "any",
+      "marks": {
+        "bill": {
+          "colour": null,
+          "shape": null
+        },
+        "eye": {
+          "iris": null,
+          "ring": null
+        },
+        "legs": {
+          "colour": "yellow"
+        },
+        "head": {
+          "crown": null,
+          "face": null,
+          "throat": null,
+          "pattern": "Neck tawny. The female head marking was not described."
+        },
+        "upperparts": {
+          "back": "tawny",
+          "rump": null,
+          "pattern": "Tawny above, with black markings."
+        },
+        "underparts": {
+          "breast": "white",
+          "belly": "white"
+        },
+        "wings": {
+          "above": null,
+          "below": null
+        },
+        "tail": {
+          "colour": null,
+          "shape": null
+        }
+      }
+    }
+  ],
+  "viewNotes": [
+    {
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "male",
+      "season": "any",
+      "note": "Tawny neck, a black line up the front of the neck, black underparts and a black-and-white head marking."
+    },
+    {
+      "view": "perched-front",
+      "age": "adult",
+      "sex": "male",
+      "season": "any",
+      "note": "Black-and-white head marking and the black line to the chin."
+    },
+    {
+      "view": "perched-back",
+      "age": "adult",
+      "sex": "male",
+      "season": "any",
+      "note": "Tawny upper parts with black markings."
+    },
+    {
+      "view": "flight-above",
+      "age": "adult",
+      "sex": "male",
+      "season": "any",
+      "note": "White upper wings."
+    },
+    {
+      "view": "flight-below",
+      "age": "adult",
+      "sex": "male",
+      "season": "any",
+      "note": "Black underwings with a white patch at the base of the primaries."
+    },
+    {
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "female",
+      "season": "any",
+      "note": "Tawny above and white below, with pale yellow legs."
+    },
+    {
+      "view": "perched-front",
+      "age": "adult",
+      "sex": "female",
+      "season": "any",
+      "note": "The female face was not described."
+    },
+    {
+      "view": "perched-back",
+      "age": "adult",
+      "sex": "female",
+      "season": "any",
+      "note": "Tawny upper parts with black markings."
+    },
+    {
+      "view": "flight-above",
+      "age": "adult",
+      "sex": "female",
+      "season": "any",
+      "note": "A female flight pattern was not described."
+    },
+    {
+      "view": "flight-below",
+      "age": "adult",
+      "sex": "female",
+      "season": "any",
+      "note": "White underparts."
+    }
+  ],
+  "calls": [
+    {
+      "sex": "male",
+      "type": "call",
+      "description": "While posturing, a dull waak or phwoe with the neck stretched up, then a throaty grunt as the head is lowered, a five-second pause, and a sharp whip-like ooor-whip. Grade A call from Murchison Falls, Uganda. Kruger grade A files are songs, so they rank below a plain call. The filename is XC1052028-007-Outarde-à-ventre-noir-0154.1.mp3.",
+      "recordings": [
+        {
+          "key": "xeno-canto/XC1052028",
+          "source": "https://xeno-canto.org/1052028",
+          "fileUrl": "https://xeno-canto.org/sounds/uploaded/THHNKSHUMO/XC1052028-007-Outarde-%C3%A0-ventre-noir-0154.1.mp3",
+          "author": "Bernard BOUSQUET",
+          "license": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ]
+    }
+  ],
+  "images": [
+    {
+      "key": "lissotis-melanogaster/side.jpg",
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "male",
+      "season": "any",
+      "source": "https://www.inaturalist.org/observations/161763692",
+      "fileUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/279636719/large.jpg",
+      "author": "Niall Perrins",
+      "license": "CC BY-NC 4.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+      "aiGenerated": false,
+      "hosted": false,
+      "alt": "Male Black-bellied Bustard, black belly and a black line up the neck",
+      "caption": "Male Black-bellied Bustard in the Mopani district, black underparts and a black line up the front of the neck."
+    }
+  ],
+  "research": {
+    "confidence": "medium",
+    "needsReview": true,
+    "note": "Newman calls it a common resident, so status is resident and all twelve months are listed. The female head and wings are not described, which is why this needs review. Pale yellow legs are stored as yellow. White-bellied Bustard is the comparison Newman names and is not in this list. Population figures, the Kemp paper name Blackbellied Korhaan and the code RB were left unchanged."
+  },
+  "status": "resident",
+  "monthsPresent": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+  ]
 }
