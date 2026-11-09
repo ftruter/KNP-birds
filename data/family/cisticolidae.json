@@ -6,8 +6,8 @@
     "en": "Cisticolas and allies",
     "af": "Klopklopies"
   },
-  "summary": "Field notes for this family are still to be written.",
-  "sampleData": true,
+  "summary": "Cisticolidae are small warblers of bush, grass and waterside cover. Kruger has 21. The apalises, wren-warblers, camaroptera, eremomelas and prinias are mostly residents of thicket and riverine bush. The cisticolas include the very common Rattling Cisticola of bushveld and several grass and wetland species. Newman has no page for the rock-loving, desert, red-faced, rufous-winged, zitting and croaking cisticolas, or for the Green-capped Eremomela, so those accounts use Wikipedia and leave undescribed marks empty.",
+  "sampleData": false,
   "species": [
     {
       "slug": "apalis-flavida",

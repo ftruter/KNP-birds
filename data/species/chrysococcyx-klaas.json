@@ -7,8 +7,35 @@
     "af": "Meitjie"
   },
   "family": "cuculidae",
-  "summary": "The details for this species have not been published yet.",
-  "sampleData": true,
+  "status": "summer-migrant",
+  "size": {
+    "lengthCm": {
+      "min": 17,
+      "max": 17
+    },
+    "note": "Newman's Birds gives 17 cm."
+  },
+  "habitat": "Usually singly in a variety of wooded habitats, including well-wooded suburbia.",
+  "summary": "A common summer resident, with some present all year. The male is bright green above and white below, with a white mark behind the eye only, no white in the wing, a dark eye, a green bill and white outer tail feathers. The female is duller, green above and white below with heavy brown banding, and has a yellow eye. The call is a mournful hueet-jie, five or six times. Months were left unset. The Kemp code RB was left unchanged.",
+  "sampleData": false,
+  "similar": [
+    {
+      "slug": "chrysococcyx-caprius",
+      "note": "Diederik Cuckoo has white marks before and behind the eye, a white crown stripe and white marks on the wings, plus a red eye and a black bill."
+    },
+    {
+      "slug": "chrysococcyx-cupreus",
+      "note": "Female African Emerald Cuckoo lacks the white mark behind the eye and is more bronze above, with heavier barring below."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Klaas’s Cuckoo",
+      "url": "https://newmansbirds.com/birds/klaass-cuckoo/",
+      "publisher": "Newman's Birds",
+      "year": 2026
+    }
+  ],
   "population": {
     "estimate": {
       "low": 8192,
@@ -35,8 +62,171 @@
     },
     "tierApplied": "D"
   },
-  "variants": [],
-  "viewNotes": [],
-  "calls": [],
-  "images": []
+  "variants": [
+    {
+      "age": "adult",
+      "sex": "male",
+      "season": "any",
+      "marks": {
+        "bill": {
+          "colour": "green",
+          "shape": null
+        },
+        "eye": {
+          "iris": "black",
+          "ring": null
+        },
+        "legs": {
+          "colour": null
+        },
+        "head": {
+          "crown": "green",
+          "face": null,
+          "throat": null,
+          "pattern": "A white mark behind the eye only."
+        },
+        "upperparts": {
+          "back": "green",
+          "rump": null,
+          "pattern": null
+        },
+        "underparts": {
+          "breast": "white",
+          "belly": "white",
+          "pattern": null
+        },
+        "wings": {
+          "above": "green",
+          "below": null,
+          "pattern": "No white wing markings."
+        },
+        "tail": {
+          "colour": "green",
+          "shape": "White outer tail feathers."
+        }
+      }
+    },
+    {
+      "age": "adult",
+      "sex": "female",
+      "season": "any",
+      "marks": {
+        "bill": {
+          "colour": null,
+          "shape": null
+        },
+        "eye": {
+          "iris": "yellow",
+          "ring": null
+        },
+        "legs": {
+          "colour": null
+        },
+        "head": {
+          "crown": null,
+          "face": null,
+          "throat": null,
+          "pattern": "White mark behind the eye."
+        },
+        "upperparts": {
+          "back": "green",
+          "rump": null,
+          "pattern": "Duller than the male."
+        },
+        "underparts": {
+          "breast": "white",
+          "belly": "white",
+          "pattern": "Heavily banded brown. Finer and darker below than female African Emerald Cuckoo."
+        },
+        "wings": {
+          "above": null,
+          "below": null,
+          "pattern": null
+        },
+        "tail": {
+          "colour": null,
+          "shape": null
+        }
+      }
+    }
+  ],
+  "viewNotes": [
+    {
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "male",
+      "season": "any",
+      "note": "Green above and white below, with a white mark behind the eye and no white in the wing."
+    },
+    {
+      "view": "perched-front",
+      "age": "adult",
+      "sex": "male",
+      "season": "any",
+      "note": "White underparts and a dark eye. The bill is green."
+    },
+    {
+      "view": "perched-back",
+      "age": "adult",
+      "sex": "male",
+      "season": "any",
+      "note": "Entirely bright green above, from the bill to the tail."
+    },
+    {
+      "view": "flight-above",
+      "age": "adult",
+      "sex": "male",
+      "season": "any",
+      "note": "No white wing markings. The upperwing is green."
+    },
+    {
+      "view": "flight-below",
+      "age": "adult",
+      "sex": "male",
+      "season": "any",
+      "note": "White below, with white outer tail feathers."
+    }
+  ],
+  "calls": [
+    {
+      "sex": "any",
+      "type": "call",
+      "description": "A mournful hueet-jie, repeated five or six times. Newman does not separate the sexes. Grade A song from Kruger National Park. The filename is KlaassCuckooKruger2007-01-08.mp3.",
+      "recordings": [
+        {
+          "key": "xeno-canto/XC28650",
+          "source": "https://xeno-canto.org/28650",
+          "fileUrl": "https://xeno-canto.org/sounds/uploaded/BPSDQEOJWG/KlaassCuckooKruger2007-01-08.mp3",
+          "author": "Patrik Åberg",
+          "license": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ]
+    }
+  ],
+  "images": [
+    {
+      "key": "chrysococcyx-klaas/side.jpg",
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "male",
+      "season": "any",
+      "source": "https://www.inaturalist.org/observations/197305360",
+      "fileUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/347475138/large.jpg",
+      "author": "Duncan McKenzie",
+      "license": "CC BY-NC 4.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+      "aiGenerated": false,
+      "hosted": false,
+      "alt": "Male Klaas’s Cuckoo on a twig, green above and white below",
+      "caption": "Klaas’s Cuckoo perched on a twig, green above and white below, with a white mark behind the eye and white outer tail feathers."
+    }
+  ],
+  "research": {
+    "confidence": "medium",
+    "needsReview": true,
+    "note": "Newman says common summer resident, some present all year, and does not name months. Status is summer-migrant and months were left unset, so the year-round birds are not shown as present in winter. The Kemp code RB was left unchanged. Population figures were left unchanged."
+  }
 }

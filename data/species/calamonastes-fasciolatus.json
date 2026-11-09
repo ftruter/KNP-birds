@@ -7,8 +7,45 @@
     "af": "Gebande Sanger"
   },
   "family": "cisticolidae",
-  "summary": "The details for this species have not been published yet.",
-  "sampleData": true,
+  "status": "resident",
+  "monthsPresent": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+  ],
+  "size": {
+    "lengthCm": {
+      "min": 13,
+      "max": 15
+    },
+    "note": "Newman's Birds gives 13–15 cm."
+  },
+  "habitat": "Pairs in thornveld and broad-leaved woodland. It creeps in thickets and raises its tail when alarmed.",
+  "summary": "A common, near-endemic resident. It is less white and less clearly barred below than Stierling’s Wren-Warbler, and the breast is duller in non-breeding plumage. The short identification line says it is well barred brown and has a dark breast in summer. The call is a mournful brreeet-brreeet, in bursts of three to five. No openly licensed Kruger photograph was found. No Kemp estimate is published, and that gap was left as it is.",
+  "sampleData": false,
+  "similar": [
+    {
+      "slug": "calamonastes-stierlingi",
+      "note": "Stierling’s Wren-Warbler is whiter and more boldly barred below, with a shorter tail and a blacker bill."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Barred Wren-Warbler",
+      "url": "https://newmansbirds.com/birds/barred-wren-warbler/",
+      "publisher": "Newman's Birds",
+      "year": 2026
+    }
+  ],
   "population": {
     "estimate": {
       "low": null,
@@ -21,8 +58,154 @@
     "notes": "No sourced Kruger estimate is currently available; taxonomy or later records require separate research.",
     "sources": []
   },
-  "variants": [],
-  "viewNotes": [],
-  "calls": [],
-  "images": []
+  "variants": [
+    {
+      "age": "adult",
+      "sex": "any",
+      "season": "breeding",
+      "marks": {
+        "bill": {
+          "colour": null,
+          "shape": null
+        },
+        "eye": {
+          "iris": null,
+          "ring": null
+        },
+        "legs": {
+          "colour": null
+        },
+        "head": {
+          "crown": null,
+          "face": null,
+          "throat": null,
+          "pattern": null
+        },
+        "upperparts": {
+          "back": "brown",
+          "rump": null,
+          "pattern": "Well barred brown."
+        },
+        "underparts": {
+          "breast": "dark-brown",
+          "belly": null,
+          "pattern": "Dark breast in summer. Less white and less clearly barred than Stierling’s Wren-Warbler."
+        },
+        "wings": {
+          "above": null,
+          "below": null,
+          "pattern": null
+        },
+        "tail": {
+          "colour": null,
+          "shape": null
+        }
+      }
+    },
+    {
+      "age": "adult",
+      "sex": "any",
+      "season": "non-breeding",
+      "marks": {
+        "bill": {
+          "colour": null,
+          "shape": null
+        },
+        "eye": {
+          "iris": null,
+          "ring": null
+        },
+        "legs": {
+          "colour": null
+        },
+        "head": {
+          "crown": null,
+          "face": null,
+          "throat": null,
+          "pattern": null
+        },
+        "upperparts": {
+          "back": "brown",
+          "rump": null,
+          "pattern": null
+        },
+        "underparts": {
+          "breast": "brown",
+          "belly": null,
+          "pattern": "Duller about the breast than in breeding plumage."
+        },
+        "wings": {
+          "above": null,
+          "below": null,
+          "pattern": null
+        },
+        "tail": {
+          "colour": null,
+          "shape": null
+        }
+      }
+    }
+  ],
+  "viewNotes": [
+    {
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Secretive barred warbler in thicket, tail raised when alarmed."
+    },
+    {
+      "view": "perched-front",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "The face pattern was not named."
+    },
+    {
+      "view": "perched-back",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Brown, barred upperparts."
+    },
+    {
+      "view": "flight-above",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "It flits between thickets. The upperwing was not named."
+    },
+    {
+      "view": "flight-below",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "The breast is dark in summer and duller outside it."
+    }
+  ],
+  "calls": [
+    {
+      "sex": "any",
+      "type": "call",
+      "description": "A mournful brreeet-brreeet-brreeet-brreeet, in bursts of three to five. The texts do not separate the sexes. Grade A from Matlosana, North West. The filename is Wren W.",
+      "recordings": [
+        {
+          "key": "xeno-canto/XC520425",
+          "source": "https://xeno-canto.org/520425",
+          "fileUrl": "https://xeno-canto.org/sounds/uploaded/HMBDEWEZVS/XC520425-8%20Wren%20W.mp3",
+          "author": "Tony Archer",
+          "license": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ]
+    }
+  ],
+  "images": [],
+  "research": {
+    "confidence": "medium",
+    "needsReview": true,
+    "note": "Status is resident and all twelve months are listed from Newman’s resident wording. Population figures were left unchanged."
+  }
 }

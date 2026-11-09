@@ -7,8 +7,23 @@
     "af": "Swartrugtinktinkie"
   },
   "family": "cisticolidae",
-  "summary": "The details for this species have not been published yet.",
-  "sampleData": true,
+  "habitat": "Wikipedia says it is found on the east coast of southern Africa and does not describe the plumage or status.",
+  "summary": "Newman has no page. Wikipedia only places it on the east coast of southern Africa and does not describe the plumage, so the marks, status and months were left unset. No Kemp estimate is published.",
+  "sampleData": false,
+  "similar": [
+    {
+      "slug": "cisticola-tinniens",
+      "note": "Newman says Levaillant’s Cisticola is superficially similar, with a black back and a rufous crown, but the two have very little range overlap."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Rufous-winged cisticola",
+      "url": "https://en.wikipedia.org/wiki/Rufous-winged_cisticola",
+      "publisher": "Wikipedia",
+      "year": 2026
+    }
+  ],
   "population": {
     "estimate": {
       "low": null,
@@ -22,7 +37,83 @@
     "sources": []
   },
   "variants": [],
-  "viewNotes": [],
-  "calls": [],
-  "images": []
+  "viewNotes": [
+    {
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Plumage was not described in the text used."
+    },
+    {
+      "view": "perched-front",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "The face was not described."
+    },
+    {
+      "view": "perched-back",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "The back was not described."
+    },
+    {
+      "view": "flight-above",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "The rufous wing was not described in the retrieved text."
+    },
+    {
+      "view": "flight-below",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "The underparts were not described."
+    }
+  ],
+  "calls": [
+    {
+      "sex": "any",
+      "type": "call",
+      "description": "Wikipedia does not describe the call. The file is grade B from Bizana, Eastern Cape. The filename is Rufous-winged Cisticola. No playable grade A was listed.",
+      "recordings": [
+        {
+          "key": "xeno-canto/XC408045",
+          "source": "https://xeno-canto.org/408045",
+          "fileUrl": "https://xeno-canto.org/sounds/uploaded/SGLTZLDXYI/XC408045-Rufous-winged%20Cisticola.mp3",
+          "author": "Lynette Rudman",
+          "license": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ]
+    }
+  ],
+  "images": [
+    {
+      "key": "cisticola-galactotes/side.jpg",
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "source": "https://www.inaturalist.org/observations/394883580",
+      "fileUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/723988792/large.jpg",
+      "author": "Francois Ubbink",
+      "license": "CC BY-NC 4.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+      "aiGenerated": false,
+      "hosted": false,
+      "alt": "Rufous-winged Cisticola perched in Kruger",
+      "caption": "Rufous-winged Cisticola perched in Kruger"
+    }
+  ],
+  "research": {
+    "confidence": "low",
+    "needsReview": true,
+    "note": "Newman has no page. Status and months were left unset. There is no Kemp estimate."
+  }
 }

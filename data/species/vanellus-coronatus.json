@@ -7,8 +7,45 @@
     "af": "Kroonkiewiet"
   },
   "family": "charadriidae",
-  "summary": "The details for this species have not been published yet.",
-  "sampleData": true,
+  "status": "resident",
+  "monthsPresent": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+  ],
+  "size": {
+    "lengthCm": {
+      "min": 30,
+      "max": 30
+    },
+    "note": "Newman's Birds gives 30 cm."
+  },
+  "habitat": "Pairs and groups on dry, open ground with short or burned grass, including airfields and sports fields, and also lightly wooded country.",
+  "summary": "A very common resident. A white circle surrounds a black cap. The bill is red with a black tip and the legs are red. The eyes are usually pale yellow, sometimes dark brown. The upperparts, neck and breast are light brown and the belly is white. On the ground it calls kie-weeet. In flight it repeats kree-kree-kreeip-kreeip, by day or night.",
+  "sampleData": false,
+  "similar": [
+    {
+      "slug": "vanellus-lugubris",
+      "note": "Senegal Lapwing is smaller and greyer, with a small white forehead and dark legs. Crowned Lapwing has the black cap in a white circle and red legs."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Crowned Lapwing",
+      "url": "https://newmansbirds.com/birds/crowned-lapwing/",
+      "publisher": "Newman's Birds",
+      "year": 2026
+    }
+  ],
   "population": {
     "estimate": {
       "low": 8192,
@@ -35,8 +72,131 @@
     },
     "tierApplied": "D"
   },
-  "variants": [],
-  "viewNotes": [],
-  "calls": [],
-  "images": []
+  "variants": [
+    {
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "marks": {
+        "bill": {
+          "colour": [
+            "red",
+            "black"
+          ],
+          "shape": "red with a black tip"
+        },
+        "eye": {
+          "iris": "yellow",
+          "ring": null
+        },
+        "legs": {
+          "colour": "red"
+        },
+        "head": {
+          "crown": "black",
+          "face": "white",
+          "throat": null,
+          "pattern": "White circle surrounding a black cap. Eyes usually pale yellow, sometimes dark brown."
+        },
+        "upperparts": {
+          "back": "brown",
+          "rump": null,
+          "pattern": "Upperparts, neck and breast light brown."
+        },
+        "underparts": {
+          "breast": "brown",
+          "belly": "white",
+          "pattern": null
+        },
+        "wings": {
+          "above": null,
+          "below": null,
+          "pattern": null
+        },
+        "tail": {
+          "colour": null,
+          "shape": null
+        }
+      }
+    }
+  ],
+  "viewNotes": [
+    {
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Black cap in a white circle, red legs, on dry short grass."
+    },
+    {
+      "view": "perched-front",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "The white circle and black cap, and the red bill."
+    },
+    {
+      "view": "perched-back",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Light brown upperparts."
+    },
+    {
+      "view": "flight-above",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Often flies in small groups. A separate upperwing pattern was not named."
+    },
+    {
+      "view": "flight-below",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "White belly and light brown breast."
+    }
+  ],
+  "calls": [
+    {
+      "sex": "any",
+      "type": "call",
+      "description": "kie-weeet on the ground, or a repeated kree-kree-kreeip-kreeip in flight, by day or night. The texts do not separate the sexes. Grade A from Kruger. The filename says Lapwing and shows a 900 Hz high-pass applied by the recordist.",
+      "recordings": [
+        {
+          "key": "xeno-canto/XC1148046",
+          "source": "https://xeno-canto.org/1148046",
+          "fileUrl": "https://xeno-canto.org/sounds/uploaded/YSGTQVRQZI/XC1148046-20260512_KNP_AKaramitsos_XA60_A025C123_26051229_SLE_900HP_-3dB_Lapwing.mp3",
+          "author": "African Bioacoustics Community",
+          "license": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ]
+    }
+  ],
+  "images": [
+    {
+      "key": "vanellus-coronatus/front.jpg",
+      "view": "perched-front",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "source": "https://www.inaturalist.org/observations/290059337",
+      "fileUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/521763349/large.jpg",
+      "author": "Paul Hoekman",
+      "license": "CC BY 4.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by/4.0/",
+      "aiGenerated": false,
+      "hosted": false,
+      "alt": "Crowned Lapwing facing the camera in Kruger, with a black cap inside a white circle",
+      "caption": "Crowned Lapwing facing the camera in Kruger, with a black cap inside a white circle"
+    }
+  ],
+  "research": {
+    "confidence": "medium",
+    "needsReview": false,
+    "note": "Status is resident and all twelve months are listed. Newman calls it a very common resident. The eye is stored as yellow, and the note records that it is sometimes dark brown. The call is grade A from Kruger."
+  }
 }

@@ -6,8 +6,8 @@
     "en": "Storks",
     "af": "Ooievaars"
   },
-  "summary": "Field notes for this family are still to be written.",
-  "sampleData": true,
+  "summary": "Storks are large, long-legged birds that fly with the neck stretched out, except the Marabou Stork, which tucks its neck. Kruger has eight. White Stork and Abdim’s Stork are the black-and-white and mostly black flocking birds. African Openbill, Woolly-necked, Black, Saddle-billed, Marabou and Yellow-billed Storks use rivers, pans and marshes.",
+  "sampleData": false,
   "species": [
     {
       "slug": "anastomus-lamelligerus",

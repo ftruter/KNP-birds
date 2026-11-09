@@ -7,8 +7,45 @@
     "af": "Bontkiewiet"
   },
   "family": "charadriidae",
-  "summary": "The details for this species have not been published yet.",
-  "sampleData": true,
+  "status": "resident",
+  "monthsPresent": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+  ],
+  "size": {
+    "lengthCm": {
+      "min": 30,
+      "max": 30
+    },
+    "note": "Newman's Birds gives 30 cm."
+  },
+  "habitat": "Pairs and scattered birds on the shores of inland waters, marshy ground, flooded fields and other moist places.",
+  "summary": "A very common resident. Pied, with grey wings and mantle, and a black bill and legs. The immature has the adult pattern in speckled brown. The call is a metallic klink, klink, klink, repeated loudly when the bird is disturbed.",
+  "sampleData": false,
+  "similar": [
+    {
+      "slug": "vanellus-coronatus",
+      "note": "Crowned Lapwing has a black cap in a white circle, a red bill and red legs, and uses dry short grass. Blacksmith Lapwing is pied with grey wings and stays near water."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Blacksmith Lapwing",
+      "url": "https://newmansbirds.com/birds/blacksmith-lapwing/",
+      "publisher": "Newman's Birds",
+      "year": 2026
+    }
+  ],
   "population": {
     "estimate": {
       "low": 1024,
@@ -35,8 +72,171 @@
     },
     "tierApplied": "D"
   },
-  "variants": [],
-  "viewNotes": [],
-  "calls": [],
-  "images": []
+  "variants": [
+    {
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "marks": {
+        "bill": {
+          "colour": "black",
+          "shape": null
+        },
+        "eye": {
+          "iris": null,
+          "ring": null
+        },
+        "legs": {
+          "colour": "black"
+        },
+        "head": {
+          "crown": "black",
+          "face": "white",
+          "throat": null,
+          "pattern": null
+        },
+        "upperparts": {
+          "back": "grey",
+          "rump": null,
+          "pattern": "Grey wings and mantle."
+        },
+        "underparts": {
+          "breast": "black",
+          "belly": "white",
+          "pattern": null
+        },
+        "wings": {
+          "above": "grey",
+          "below": null,
+          "pattern": "Grey wings. The body is pied."
+        },
+        "tail": {
+          "colour": null,
+          "shape": null
+        }
+      }
+    },
+    {
+      "age": "juvenile",
+      "sex": "any",
+      "season": "any",
+      "marks": {
+        "bill": {
+          "colour": "black",
+          "shape": null
+        },
+        "eye": {
+          "iris": null,
+          "ring": null
+        },
+        "legs": {
+          "colour": null
+        },
+        "head": {
+          "crown": "brown",
+          "face": "brown",
+          "throat": null,
+          "pattern": null
+        },
+        "upperparts": {
+          "back": "brown",
+          "rump": null,
+          "pattern": "The adult pattern in speckled brown."
+        },
+        "underparts": {
+          "breast": "brown",
+          "belly": "white",
+          "pattern": null
+        },
+        "wings": {
+          "above": "brown",
+          "below": null,
+          "pattern": null
+        },
+        "tail": {
+          "colour": null,
+          "shape": null
+        }
+      }
+    }
+  ],
+  "viewNotes": [
+    {
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Pied lapwing with grey wings, at the edge of inland water."
+    },
+    {
+      "view": "perched-front",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Black and white head."
+    },
+    {
+      "view": "perched-back",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Grey mantle."
+    },
+    {
+      "view": "flight-above",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Grey wings."
+    },
+    {
+      "view": "flight-below",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Pied underparts. The underwing colour was not named separately."
+    }
+  ],
+  "calls": [
+    {
+      "sex": "any",
+      "type": "call",
+      "description": "A metallic klink, klink, klink, repeated loudly and continuously when disturbed. The texts do not separate the sexes. Grade A from Kruger, near Skukuza.",
+      "recordings": [
+        {
+          "key": "xeno-canto/XC1015093",
+          "source": "https://xeno-canto.org/1015093",
+          "fileUrl": "https://xeno-canto.org/sounds/uploaded/QBGUQTOUWX/XC1015093-20250710_KNP_Mcassidy_250710_blacksmith_lapwing.mp3",
+          "author": "Mike Cassidy",
+          "license": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ]
+    }
+  ],
+  "images": [
+    {
+      "key": "vanellus-armatus/side.jpg",
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "source": "https://www.inaturalist.org/observations/154679664",
+      "fileUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/267296358/large.jpg",
+      "author": "liezelg",
+      "license": "CC BY-NC 4.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+      "aiGenerated": false,
+      "hosted": false,
+      "alt": "Blacksmith Lapwing standing side-on on a Kruger sandbank, pied with dark wings",
+      "caption": "Blacksmith Lapwing standing side-on on a Kruger sandbank, pied with dark wings"
+    }
+  ],
+  "research": {
+    "confidence": "medium",
+    "needsReview": false,
+    "note": "Status is resident and all twelve months are listed. Newman calls it a very common resident. The call is grade A from Kruger."
+  }
 }
