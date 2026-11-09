@@ -2230,6 +2230,146 @@
           }
         }
       ]
+    },
+    "centropus-burchellii": {
+      "calls": [
+        {
+          "index": 0,
+          "quality": {
+            "xeno-canto/XC247756": "A"
+          }
+        }
+      ]
+    },
+    "centropus-grillii": {
+      "calls": [
+        {
+          "index": 0,
+          "quality": {
+            "xeno-canto/XC547993": "A"
+          }
+        }
+      ]
+    },
+    "centropus-senegalensis": {
+      "calls": [
+        {
+          "index": 0,
+          "quality": {
+            "xeno-canto/XC341752": "A"
+          }
+        }
+      ]
+    },
+    "chrysococcyx-caprius": {
+      "calls": [
+        {
+          "index": 0,
+          "quality": {
+            "xeno-canto/XC685548": "A"
+          }
+        }
+      ]
+    },
+    "chrysococcyx-cupreus": {
+      "calls": [
+        {
+          "index": 0,
+          "quality": {
+            "xeno-canto/XC780410": "A"
+          }
+        }
+      ]
+    },
+    "chrysococcyx-klaas": {
+      "calls": [
+        {
+          "index": 0,
+          "quality": {
+            "xeno-canto/XC28650": "A"
+          }
+        }
+      ]
+    },
+    "clamator-glandarius": {
+      "calls": [
+        {
+          "index": 0,
+          "quality": {
+            "xeno-canto/XC290141": "A"
+          }
+        }
+      ]
+    },
+    "clamator-jacobinus": {
+      "calls": [
+        {
+          "index": 0,
+          "quality": {
+            "xeno-canto/XC1188518": "A"
+          }
+        }
+      ]
+    },
+    "clamator-levaillantii": {
+      "calls": [
+        {
+          "index": 0,
+          "quality": {
+            "xeno-canto/XC1010298": "A"
+          }
+        }
+      ]
+    },
+    "cuculus-canorus": {
+      "calls": [
+        {
+          "index": 0,
+          "quality": {
+            "xeno-canto/XC27037": "A"
+          }
+        }
+      ]
+    },
+    "cuculus-clamosus": {
+      "calls": [
+        {
+          "index": 0,
+          "quality": {
+            "xeno-canto/XC650879": "A"
+          }
+        }
+      ]
+    },
+    "cuculus-gularis": {
+      "calls": [
+        {
+          "index": 0,
+          "quality": {
+            "xeno-canto/XC682084": "A"
+          }
+        }
+      ]
+    },
+    "cuculus-solitarius": {
+      "calls": [
+        {
+          "index": 0,
+          "quality": {
+            "xeno-canto/XC202901": "A"
+          }
+        }
+      ]
+    },
+    "pachycoccyx-audeberti": {
+      "calls": [
+        {
+          "index": 0,
+          "quality": {
+            "xeno-canto/XC513828": "A"
+          }
+        }
+      ]
     }
   }
 }

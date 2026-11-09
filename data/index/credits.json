@@ -4981,14 +4981,42 @@
       "slug": "centropus-burchellii",
       "scientificName": "Centropus burchellii",
       "commonName": "Burchell’s Coucal",
-      "images": [],
-      "recordings": [],
+      "images": [
+        {
+          "key": "centropus-burchellii/side.jpg",
+          "author": "Christian Kropf",
+          "licence": "CC BY-NC 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+          "sourceUrl": "https://www.inaturalist.org/observations/68893563",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ],
+      "recordings": [
+        {
+          "key": "xeno-canto/XC247756",
+          "author": "Lynette Rudman",
+          "licence": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "sourceUrl": "https://xeno-canto.org/247756",
+          "aiGenerated": false,
+          "hosted": false,
+          "quality": "A",
+          "callType": "call"
+        }
+      ],
       "sources": [
         {
           "title": "Kemp A.C., Herholdt J.J., Whyte I. & Harrison J. (2001). Birds of the two largest national parks in South Africa: a method to generate estimates of population size for all species and assess their conservation ecology. S. Afr. J. Sci. 97: 393–403.",
           "url": "https://journals.co.za/doi/pdf/10.10520/EJC97367",
           "publisher": "South African Journal of Science",
           "year": 2001
+        },
+        {
+          "title": "Burchell’s Coucal",
+          "url": "https://newmansbirds.com/birds/burchells-coucal/",
+          "publisher": "Newman's Birds",
+          "year": 2026
         }
       ]
     },
@@ -4996,14 +5024,79 @@
       "slug": "centropus-grillii",
       "scientificName": "Centropus grillii",
       "commonName": "Black Coucal",
-      "images": [],
-      "recordings": [],
+      "images": [
+        {
+          "key": "centropus-grillii/side.jpg",
+          "author": "Corné Rautenbach",
+          "licence": "CC BY-NC 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+          "sourceUrl": "https://www.inaturalist.org/observations/148985639",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ],
+      "recordings": [
+        {
+          "key": "xeno-canto/XC547993",
+          "author": "Dries Van de Loock",
+          "licence": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "sourceUrl": "https://xeno-canto.org/547993",
+          "aiGenerated": false,
+          "hosted": false,
+          "quality": "A",
+          "callType": "song"
+        }
+      ],
       "sources": [
         {
           "title": "Kemp A.C., Herholdt J.J., Whyte I. & Harrison J. (2001). Birds of the two largest national parks in South Africa: a method to generate estimates of population size for all species and assess their conservation ecology. S. Afr. J. Sci. 97: 393–403.",
           "url": "https://journals.co.za/doi/pdf/10.10520/EJC97367",
           "publisher": "South African Journal of Science",
           "year": 2001
+        },
+        {
+          "title": "Black coucal",
+          "url": "https://en.wikipedia.org/wiki/Black_coucal",
+          "publisher": "Wikipedia",
+          "year": 2026
+        }
+      ]
+    },
+    {
+      "slug": "centropus-senegalensis",
+      "scientificName": "Centropus senegalensis",
+      "commonName": "Senegal Coucal",
+      "images": [
+        {
+          "key": "centropus-senegalensis/side.jpg",
+          "author": "Calvin Harris",
+          "licence": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "sourceUrl": "https://www.inaturalist.org/observations/44099619",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ],
+      "recordings": [
+        {
+          "key": "xeno-canto/XC341752",
+          "author": "Tero Linjama",
+          "licence": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "sourceUrl": "https://xeno-canto.org/341752",
+          "aiGenerated": false,
+          "hosted": false,
+          "quality": "A",
+          "callType": "call"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Senegal Coucal",
+          "url": "https://newmansbirds.com/birds/senegal-coucal/",
+          "publisher": "Newman's Birds",
+          "year": 2026
         }
       ]
     },
@@ -5374,14 +5467,42 @@
       "slug": "chrysococcyx-caprius",
       "scientificName": "Chrysococcyx caprius",
       "commonName": "Diederik Cuckoo",
-      "images": [],
-      "recordings": [],
+      "images": [
+        {
+          "key": "chrysococcyx-caprius/side.jpg",
+          "author": "Greg Lasley",
+          "licence": "CC BY-NC 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+          "sourceUrl": "https://www.inaturalist.org/observations/167560",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ],
+      "recordings": [
+        {
+          "key": "xeno-canto/XC685548",
+          "author": "Lynette Rudman",
+          "licence": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "sourceUrl": "https://xeno-canto.org/685548",
+          "aiGenerated": false,
+          "hosted": false,
+          "quality": "A",
+          "callType": "call"
+        }
+      ],
       "sources": [
         {
           "title": "Kemp A.C., Herholdt J.J., Whyte I. & Harrison J. (2001). Birds of the two largest national parks in South Africa: a method to generate estimates of population size for all species and assess their conservation ecology. S. Afr. J. Sci. 97: 393–403.",
           "url": "https://journals.co.za/doi/pdf/10.10520/EJC97367",
           "publisher": "South African Journal of Science",
           "year": 2001
+        },
+        {
+          "title": "Diederik Cuckoo",
+          "url": "https://newmansbirds.com/birds/diederik-cuckoo/",
+          "publisher": "Newman's Birds",
+          "year": 2026
         }
       ]
     },
@@ -5389,14 +5510,42 @@
       "slug": "chrysococcyx-cupreus",
       "scientificName": "Chrysococcyx cupreus",
       "commonName": "African Emerald Cuckoo",
-      "images": [],
-      "recordings": [],
+      "images": [
+        {
+          "key": "chrysococcyx-cupreus/side.jpg",
+          "author": "Heinrich Human",
+          "licence": "CC BY-NC 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+          "sourceUrl": "https://www.inaturalist.org/observations/329023866",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ],
+      "recordings": [
+        {
+          "key": "xeno-canto/XC780410",
+          "author": "Rick Nuttall",
+          "licence": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "sourceUrl": "https://xeno-canto.org/780410",
+          "aiGenerated": false,
+          "hosted": false,
+          "quality": "A",
+          "callType": "call"
+        }
+      ],
       "sources": [
         {
           "title": "Kemp A.C., Herholdt J.J., Whyte I. & Harrison J. (2001). Birds of the two largest national parks in South Africa: a method to generate estimates of population size for all species and assess their conservation ecology. S. Afr. J. Sci. 97: 393–403.",
           "url": "https://journals.co.za/doi/pdf/10.10520/EJC97367",
           "publisher": "South African Journal of Science",
           "year": 2001
+        },
+        {
+          "title": "African Emerald Cuckoo",
+          "url": "https://newmansbirds.com/birds/african-emerald-cuckoo/",
+          "publisher": "Newman's Birds",
+          "year": 2026
         }
       ]
     },
@@ -5404,14 +5553,42 @@
       "slug": "chrysococcyx-klaas",
       "scientificName": "Chrysococcyx klaas",
       "commonName": "Klaas’s Cuckoo",
-      "images": [],
-      "recordings": [],
+      "images": [
+        {
+          "key": "chrysococcyx-klaas/side.jpg",
+          "author": "Duncan McKenzie",
+          "licence": "CC BY-NC 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+          "sourceUrl": "https://www.inaturalist.org/observations/197305360",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ],
+      "recordings": [
+        {
+          "key": "xeno-canto/XC28650",
+          "author": "Patrik Åberg",
+          "licence": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "sourceUrl": "https://xeno-canto.org/28650",
+          "aiGenerated": false,
+          "hosted": false,
+          "quality": "A",
+          "callType": "call"
+        }
+      ],
       "sources": [
         {
           "title": "Kemp A.C., Herholdt J.J., Whyte I. & Harrison J. (2001). Birds of the two largest national parks in South Africa: a method to generate estimates of population size for all species and assess their conservation ecology. S. Afr. J. Sci. 97: 393–403.",
           "url": "https://journals.co.za/doi/pdf/10.10520/EJC97367",
           "publisher": "South African Journal of Science",
           "year": 2001
+        },
+        {
+          "title": "Klaas’s Cuckoo",
+          "url": "https://newmansbirds.com/birds/klaass-cuckoo/",
+          "publisher": "Newman's Birds",
+          "year": 2026
         }
       ]
     },
@@ -6566,14 +6743,42 @@
       "slug": "clamator-glandarius",
       "scientificName": "Clamator glandarius",
       "commonName": "Great Spotted Cuckoo",
-      "images": [],
-      "recordings": [],
+      "images": [
+        {
+          "key": "clamator-glandarius/side.jpg",
+          "author": "Duncan McKenzie",
+          "licence": "CC BY-NC 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+          "sourceUrl": "https://www.inaturalist.org/observations/197305193",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ],
+      "recordings": [
+        {
+          "key": "xeno-canto/XC290141",
+          "author": "Faansie Peacock",
+          "licence": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "sourceUrl": "https://xeno-canto.org/290141",
+          "aiGenerated": false,
+          "hosted": false,
+          "quality": "A",
+          "callType": "call"
+        }
+      ],
       "sources": [
         {
           "title": "Kemp A.C., Herholdt J.J., Whyte I. & Harrison J. (2001). Birds of the two largest national parks in South Africa: a method to generate estimates of population size for all species and assess their conservation ecology. S. Afr. J. Sci. 97: 393–403.",
           "url": "https://journals.co.za/doi/pdf/10.10520/EJC97367",
           "publisher": "South African Journal of Science",
           "year": 2001
+        },
+        {
+          "title": "Great Spotted Cuckoo",
+          "url": "https://newmansbirds.com/birds/great-spotted-cuckoo/",
+          "publisher": "Newman's Birds",
+          "year": 2026
         }
       ]
     },
@@ -6581,14 +6786,42 @@
       "slug": "clamator-jacobinus",
       "scientificName": "Clamator jacobinus",
       "commonName": "Jacobin Cuckoo",
-      "images": [],
-      "recordings": [],
+      "images": [
+        {
+          "key": "clamator-jacobinus/side.jpg",
+          "author": "leuli",
+          "licence": "CC BY-NC 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+          "sourceUrl": "https://www.inaturalist.org/observations/346108487",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ],
+      "recordings": [
+        {
+          "key": "xeno-canto/XC1188518",
+          "author": "JJSUN",
+          "licence": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "sourceUrl": "https://xeno-canto.org/1188518",
+          "aiGenerated": false,
+          "hosted": false,
+          "quality": "A",
+          "callType": "call"
+        }
+      ],
       "sources": [
         {
           "title": "Kemp A.C., Herholdt J.J., Whyte I. & Harrison J. (2001). Birds of the two largest national parks in South Africa: a method to generate estimates of population size for all species and assess their conservation ecology. S. Afr. J. Sci. 97: 393–403.",
           "url": "https://journals.co.za/doi/pdf/10.10520/EJC97367",
           "publisher": "South African Journal of Science",
           "year": 2001
+        },
+        {
+          "title": "Jacobin Cuckoo",
+          "url": "https://newmansbirds.com/birds/jacobin-cuckoo/",
+          "publisher": "Newman's Birds",
+          "year": 2026
         }
       ]
     },
@@ -6596,14 +6829,42 @@
       "slug": "clamator-levaillantii",
       "scientificName": "Clamator levaillantii",
       "commonName": "Levaillant’s Cuckoo",
-      "images": [],
-      "recordings": [],
+      "images": [
+        {
+          "key": "clamator-levaillantii/side.jpg",
+          "author": "maritzasouthafrica",
+          "licence": "CC BY-NC 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+          "sourceUrl": "https://www.inaturalist.org/observations/9667946",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ],
+      "recordings": [
+        {
+          "key": "xeno-canto/XC1010298",
+          "author": "Marc Languy",
+          "licence": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "sourceUrl": "https://xeno-canto.org/1010298",
+          "aiGenerated": false,
+          "hosted": false,
+          "quality": "A",
+          "callType": "call"
+        }
+      ],
       "sources": [
         {
           "title": "Kemp A.C., Herholdt J.J., Whyte I. & Harrison J. (2001). Birds of the two largest national parks in South Africa: a method to generate estimates of population size for all species and assess their conservation ecology. S. Afr. J. Sci. 97: 393–403.",
           "url": "https://journals.co.za/doi/pdf/10.10520/EJC97367",
           "publisher": "South African Journal of Science",
           "year": 2001
+        },
+        {
+          "title": "Levaillant’s Cuckoo",
+          "url": "https://newmansbirds.com/birds/levaillants-cuckoo/",
+          "publisher": "Newman's Birds",
+          "year": 2026
         }
       ]
     },
@@ -7805,14 +8066,42 @@
       "slug": "cuculus-canorus",
       "scientificName": "Cuculus canorus",
       "commonName": "Common Cuckoo",
-      "images": [],
-      "recordings": [],
+      "images": [
+        {
+          "key": "cuculus-canorus/side.jpg",
+          "author": "Pieter Kotze",
+          "licence": "CC BY-NC 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+          "sourceUrl": "https://www.inaturalist.org/observations/256754871",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ],
+      "recordings": [
+        {
+          "key": "xeno-canto/XC27037",
+          "author": "Patrik Åberg",
+          "licence": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "sourceUrl": "https://xeno-canto.org/27037",
+          "aiGenerated": false,
+          "hosted": false,
+          "quality": "A",
+          "callType": "song"
+        }
+      ],
       "sources": [
         {
           "title": "Kemp A.C., Herholdt J.J., Whyte I. & Harrison J. (2001). Birds of the two largest national parks in South Africa: a method to generate estimates of population size for all species and assess their conservation ecology. S. Afr. J. Sci. 97: 393–403.",
           "url": "https://journals.co.za/doi/pdf/10.10520/EJC97367",
           "publisher": "South African Journal of Science",
           "year": 2001
+        },
+        {
+          "title": "Common cuckoo",
+          "url": "https://en.wikipedia.org/wiki/Common_cuckoo",
+          "publisher": "Wikipedia",
+          "year": 2026
         }
       ]
     },
@@ -7820,14 +8109,42 @@
       "slug": "cuculus-clamosus",
       "scientificName": "Cuculus clamosus",
       "commonName": "Black Cuckoo",
-      "images": [],
-      "recordings": [],
+      "images": [
+        {
+          "key": "cuculus-clamosus/side.jpg",
+          "author": "maritzasouthafrica",
+          "licence": "CC BY-NC 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+          "sourceUrl": "https://www.inaturalist.org/observations/258384816",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ],
+      "recordings": [
+        {
+          "key": "xeno-canto/XC650879",
+          "author": "Paul Bourdin",
+          "licence": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "sourceUrl": "https://xeno-canto.org/650879",
+          "aiGenerated": false,
+          "hosted": false,
+          "quality": "A",
+          "callType": "song"
+        }
+      ],
       "sources": [
         {
           "title": "Kemp A.C., Herholdt J.J., Whyte I. & Harrison J. (2001). Birds of the two largest national parks in South Africa: a method to generate estimates of population size for all species and assess their conservation ecology. S. Afr. J. Sci. 97: 393–403.",
           "url": "https://journals.co.za/doi/pdf/10.10520/EJC97367",
           "publisher": "South African Journal of Science",
           "year": 2001
+        },
+        {
+          "title": "Black Cuckoo",
+          "url": "https://newmansbirds.com/birds/black-cuckoo/",
+          "publisher": "Newman's Birds",
+          "year": 2026
         }
       ]
     },
@@ -7835,14 +8152,42 @@
       "slug": "cuculus-gularis",
       "scientificName": "Cuculus gularis",
       "commonName": "African Cuckoo",
-      "images": [],
-      "recordings": [],
+      "images": [
+        {
+          "key": "cuculus-gularis/side.jpg",
+          "author": "Bernard DUPONT",
+          "licence": "CC BY 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by/4.0/",
+          "sourceUrl": "https://www.inaturalist.org/observations/251005494",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ],
+      "recordings": [
+        {
+          "key": "xeno-canto/XC682084",
+          "author": "Dries Van de Loock",
+          "licence": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "sourceUrl": "https://xeno-canto.org/682084",
+          "aiGenerated": false,
+          "hosted": false,
+          "quality": "A",
+          "callType": "song"
+        }
+      ],
       "sources": [
         {
           "title": "Kemp A.C., Herholdt J.J., Whyte I. & Harrison J. (2001). Birds of the two largest national parks in South Africa: a method to generate estimates of population size for all species and assess their conservation ecology. S. Afr. J. Sci. 97: 393–403.",
           "url": "https://journals.co.za/doi/pdf/10.10520/EJC97367",
           "publisher": "South African Journal of Science",
           "year": 2001
+        },
+        {
+          "title": "African cuckoo",
+          "url": "https://en.wikipedia.org/wiki/African_cuckoo",
+          "publisher": "Wikipedia",
+          "year": 2026
         }
       ]
     },
@@ -7850,14 +8195,42 @@
       "slug": "cuculus-solitarius",
       "scientificName": "Cuculus solitarius",
       "commonName": "Red-chested Cuckoo",
-      "images": [],
-      "recordings": [],
+      "images": [
+        {
+          "key": "cuculus-solitarius/side.jpg",
+          "author": "Katherine",
+          "licence": "CC BY-NC 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+          "sourceUrl": "https://www.inaturalist.org/observations/249602854",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ],
+      "recordings": [
+        {
+          "key": "xeno-canto/XC202901",
+          "author": "Niall Perrins",
+          "licence": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "sourceUrl": "https://xeno-canto.org/202901",
+          "aiGenerated": false,
+          "hosted": false,
+          "quality": "A",
+          "callType": "call"
+        }
+      ],
       "sources": [
         {
           "title": "Kemp A.C., Herholdt J.J., Whyte I. & Harrison J. (2001). Birds of the two largest national parks in South Africa: a method to generate estimates of population size for all species and assess their conservation ecology. S. Afr. J. Sci. 97: 393–403.",
           "url": "https://journals.co.za/doi/pdf/10.10520/EJC97367",
           "publisher": "South African Journal of Science",
           "year": 2001
+        },
+        {
+          "title": "Red-chested Cuckoo",
+          "url": "https://newmansbirds.com/birds/red-chested-cuckoo/",
+          "publisher": "Newman's Birds",
+          "year": 2026
         }
       ]
     },
@@ -12977,14 +13350,42 @@
       "slug": "pachycoccyx-audeberti",
       "scientificName": "Pachycoccyx audeberti",
       "commonName": "Thick-billed Cuckoo",
-      "images": [],
-      "recordings": [],
+      "images": [
+        {
+          "key": "pachycoccyx-audeberti/side.jpg",
+          "author": "Audrey Whitlock",
+          "licence": "CC BY-NC 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+          "sourceUrl": "https://www.inaturalist.org/observations/263332892",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ],
+      "recordings": [
+        {
+          "key": "xeno-canto/XC513828",
+          "author": "Murray Christian",
+          "licence": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "sourceUrl": "https://xeno-canto.org/513828",
+          "aiGenerated": false,
+          "hosted": false,
+          "quality": "A",
+          "callType": "song"
+        }
+      ],
       "sources": [
         {
           "title": "Kemp A.C., Herholdt J.J., Whyte I. & Harrison J. (2001). Birds of the two largest national parks in South Africa: a method to generate estimates of population size for all species and assess their conservation ecology. S. Afr. J. Sci. 97: 393–403.",
           "url": "https://journals.co.za/doi/pdf/10.10520/EJC97367",
           "publisher": "South African Journal of Science",
           "year": 2001
+        },
+        {
+          "title": "Thick-billed cuckoo",
+          "url": "https://en.wikipedia.org/wiki/Thick-billed_cuckoo",
+          "publisher": "Wikipedia",
+          "year": 2026
         }
       ]
     },
