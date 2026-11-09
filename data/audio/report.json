@@ -1,9 +1,9 @@
 {
   "source": "xeno-canto explore catalogue, API v3 recording fields",
   "counts": {
-    "slots": 149,
+    "slots": 152,
     "swapped": 17,
-    "added": 53,
+    "added": 56,
     "kept": 57,
     "none": 22,
     "cleaned": 0
@@ -2445,6 +2445,48 @@
       "quality": "A",
       "country": "South Africa",
       "locality": "Kruger Park (near Skukuza), Ehlanzeni District Municipality, Mpumalanga",
+      "cleaned": false,
+      "license": "CC BY-NC-SA 4.0"
+    },
+    {
+      "slug": "campephaga-flava",
+      "scientificName": "Campephaga flava",
+      "index": 0,
+      "type": "call",
+      "action": "added",
+      "from": [],
+      "to": "350289",
+      "quality": "A",
+      "country": "South Africa",
+      "locality": "Shaw Park, Bathurst District, Eastern Cape",
+      "cleaned": false,
+      "license": "CC BY-NC-SA 4.0"
+    },
+    {
+      "slug": "ceblepyris-caesius",
+      "scientificName": "Ceblepyris caesius",
+      "index": 0,
+      "type": "call",
+      "action": "added",
+      "from": [],
+      "to": "443640",
+      "quality": "A",
+      "country": "Kenya",
+      "locality": "Saimo Hills",
+      "cleaned": false,
+      "license": "CC BY-NC-SA 4.0"
+    },
+    {
+      "slug": "ceblepyris-pectoralis",
+      "scientificName": "Ceblepyris pectoralis",
+      "index": 0,
+      "type": "call",
+      "action": "added",
+      "from": [],
+      "to": "660763",
+      "quality": "A",
+      "country": "Zambia",
+      "locality": "Mutinondo Wilderness area, Northern Province",
       "cleaned": false,
       "license": "CC BY-NC-SA 4.0"
     }

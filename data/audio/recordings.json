@@ -615,6 +615,36 @@
         }
       ]
     },
+    "campephaga-flava": {
+      "calls": [
+        {
+          "index": 0,
+          "quality": {
+            "xeno-canto/XC350289": "A"
+          }
+        }
+      ]
+    },
+    "ceblepyris-caesius": {
+      "calls": [
+        {
+          "index": 0,
+          "quality": {
+            "xeno-canto/XC443640": "A"
+          }
+        }
+      ]
+    },
+    "ceblepyris-pectoralis": {
+      "calls": [
+        {
+          "index": 0,
+          "quality": {
+            "xeno-canto/XC660763": "A"
+          }
+        }
+      ]
+    },
     "ceryle-rudis": {
       "calls": [
         {

@@ -6,8 +6,8 @@
     "en": "Cuckooshrikes",
     "af": "Katakoeroes"
   },
-  "summary": "Field notes for this family are still to be written.",
-  "sampleData": true,
+  "summary": "Cuckooshrikes are slender woodland and forest birds, neither cuckoos nor shrikes. Kruger has three. Black Cuckooshrike, Campephaga flava, is a summer bird whose male is black and whose female is barred. Grey Cuckooshrike, Ceblepyris caesius, is grey and keeps to forest canopy. White-breasted Cuckooshrike, Ceblepyris pectoralis, is a scarce woodland canopy bird.",
+  "sampleData": false,
   "species": [
     {
       "slug": "campephaga-flava",

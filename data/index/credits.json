@@ -4124,14 +4124,51 @@
       "slug": "campephaga-flava",
       "scientificName": "Campephaga flava",
       "commonName": "Black Cuckooshrike",
-      "images": [],
-      "recordings": [],
+      "images": [
+        {
+          "key": "campephaga-flava/side.jpg",
+          "author": "jderasmus",
+          "licence": "CC BY-NC 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+          "sourceUrl": "https://www.inaturalist.org/observations/182182853",
+          "aiGenerated": false,
+          "hosted": false
+        },
+        {
+          "key": "campephaga-flava/front.jpg",
+          "author": "Gigi Laidler",
+          "licence": "CC BY-NC 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+          "sourceUrl": "https://www.inaturalist.org/observations/329572080",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ],
+      "recordings": [
+        {
+          "key": "xeno-canto/XC350289",
+          "author": "Tim Cockcroft",
+          "licence": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "sourceUrl": "https://xeno-canto.org/350289",
+          "aiGenerated": false,
+          "hosted": false,
+          "quality": "A",
+          "callType": "call"
+        }
+      ],
       "sources": [
         {
           "title": "Kemp A.C., Herholdt J.J., Whyte I. & Harrison J. (2001). Birds of the two largest national parks in South Africa: a method to generate estimates of population size for all species and assess their conservation ecology. S. Afr. J. Sci. 97: 393–403.",
           "url": "https://journals.co.za/doi/pdf/10.10520/EJC97367",
           "publisher": "South African Journal of Science",
           "year": 2001
+        },
+        {
+          "title": "Black Cuckooshrike",
+          "url": "https://newmansbirds.com/birds/black-cuckooshrike/",
+          "publisher": "Newman's Birds",
+          "year": 2026
         }
       ]
     },
@@ -4290,13 +4327,31 @@
       "scientificName": "Ceblepyris caesius",
       "commonName": "Grey Cuckooshrike",
       "images": [],
-      "recordings": [],
+      "recordings": [
+        {
+          "key": "xeno-canto/XC443640",
+          "author": "James Bradley",
+          "licence": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "sourceUrl": "https://xeno-canto.org/443640",
+          "aiGenerated": false,
+          "hosted": false,
+          "quality": "A",
+          "callType": "call"
+        }
+      ],
       "sources": [
         {
           "title": "Kemp A.C., Herholdt J.J., Whyte I. & Harrison J. (2001). Birds of the two largest national parks in South Africa: a method to generate estimates of population size for all species and assess their conservation ecology. S. Afr. J. Sci. 97: 393–403.",
           "url": "https://journals.co.za/doi/pdf/10.10520/EJC97367",
           "publisher": "South African Journal of Science",
           "year": 2001
+        },
+        {
+          "title": "Grey Cuckooshrike",
+          "url": "https://newmansbirds.com/birds/grey-cuckooshrike/",
+          "publisher": "Newman's Birds",
+          "year": 2026
         }
       ]
     },
@@ -4304,14 +4359,48 @@
       "slug": "ceblepyris-pectoralis",
       "scientificName": "Ceblepyris pectoralis",
       "commonName": "White-breasted Cuckooshrike",
-      "images": [],
-      "recordings": [],
+      "images": [
+        {
+          "key": "ceblepyris-pectoralis/side.jpg",
+          "author": "Niall Perrins",
+          "licence": "CC BY-NC 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+          "sourceUrl": "https://www.inaturalist.org/observations/161765666",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ],
+      "recordings": [
+        {
+          "key": "xeno-canto/XC660763",
+          "author": "Dries Van de Loock",
+          "licence": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "sourceUrl": "https://xeno-canto.org/660763",
+          "aiGenerated": false,
+          "hosted": false,
+          "quality": "A",
+          "callType": "call"
+        }
+      ],
       "sources": [
         {
           "title": "Kemp A.C., Herholdt J.J., Whyte I. & Harrison J. (2001). Birds of the two largest national parks in South Africa: a method to generate estimates of population size for all species and assess their conservation ecology. S. Afr. J. Sci. 97: 393–403.",
           "url": "https://journals.co.za/doi/pdf/10.10520/EJC97367",
           "publisher": "South African Journal of Science",
           "year": 2001
+        },
+        {
+          "title": "Whitebreasted Cuckooshrike",
+          "url": "http://sabap2.adu.org.za/docs/sabap1/539.pdf",
+          "publisher": "The Atlas of Southern African Birds",
+          "year": 1997
+        },
+        {
+          "title": "White-breasted cuckooshrike",
+          "url": "https://en.wikipedia.org/wiki/White-breasted_cuckooshrike",
+          "publisher": "Wikipedia",
+          "year": 2026
         }
       ]
     },
