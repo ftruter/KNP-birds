@@ -6,8 +6,8 @@
     "en": "Wagtails and pipits",
     "af": "Kwikkies"
   },
-  "summary": "Field notes for this family are still to be written.",
-  "sampleData": true,
+  "summary": "Wagtails, pipits and a longclaw of grassland, rivers and bushveld. Cape Wagtail is the grey bird with a white throat. African Pied Wagtail is black and white. Mountain Wagtail is the very long-tailed pale one. Yellow-throated Longclaw has a yellow throat and a black gorget. African Pipit is the common grassland pipit with a boldly marked breast. Five other pipits have no Newman page.",
+  "sampleData": false,
   "species": [
     {
       "slug": "anthus-caffer",

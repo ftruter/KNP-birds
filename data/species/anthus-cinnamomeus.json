@@ -7,8 +7,23 @@
     "af": "Gewone Koester"
   },
   "family": "motacillidae",
-  "summary": "The details for this species have not been published yet.",
-  "sampleData": true,
+  "habitat": "Singly or in pairs in virtually any open grassland, including urban areas.",
+  "summary": "A common resident, the most widespread pipit in Newman’s account. Light brown, with bold facial markings, a boldly marked breast, white outer tail feathers and a yellow base to the bill. The disturbance call is chissik, with a dipping flight. The male’s display is chree-chree-chree-chree during each dip. The Kemp paper name Grassveld Pipit and the code RB were left unchanged.",
+  "sampleData": false,
+  "sources": [
+    {
+      "title": "African Pipit",
+      "url": "https://newmansbirds.com/birds/african-pipit/",
+      "publisher": "Newman's Birds",
+      "year": 2026
+    },
+    {
+      "title": "Kemp A.C., Herholdt J.J., Whyte I. & Harrison J. (2001). Birds of the two largest national parks in South Africa: a method to generate estimates of population size for all species and assess their conservation ecology. S. Afr. J. Sci. 97: 393–403.",
+      "url": "https://journals.co.za/doi/pdf/10.10520/EJC97367",
+      "publisher": "South African Journal of Science",
+      "year": 2001
+    }
+  ],
   "population": {
     "estimate": {
       "low": 16384,
@@ -35,8 +50,155 @@
     },
     "tierApplied": "D"
   },
-  "variants": [],
-  "viewNotes": [],
-  "calls": [],
-  "images": []
+  "variants": [
+    {
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "marks": {
+        "bill": {
+          "colour": null,
+          "shape": "Yellow base to the bill. The rest of the bill colour was not named."
+        },
+        "eye": {
+          "iris": null,
+          "ring": null
+        },
+        "legs": {
+          "colour": null
+        },
+        "head": {
+          "crown": null,
+          "face": null,
+          "throat": null,
+          "pattern": "Bold facial markings. Separate crown, face and throat colours were not named."
+        },
+        "upperparts": {
+          "back": "brown",
+          "rump": null,
+          "pattern": "Light brown body."
+        },
+        "underparts": {
+          "breast": null,
+          "belly": null,
+          "pattern": "Boldly marked breast. A breast colour was not named."
+        },
+        "wings": {
+          "above": null,
+          "below": null
+        },
+        "tail": {
+          "colour": "white",
+          "shape": "White outer tail feathers, not buff."
+        }
+      }
+    }
+  ],
+  "viewNotes": [
+    {
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Light brown, with bold facial markings, a boldly marked breast and white outer tail feathers."
+    },
+    {
+      "view": "perched-front",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Bold facial markings and a boldly marked breast."
+    },
+    {
+      "view": "perched-back",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Light brown upperparts."
+    },
+    {
+      "view": "flight-above",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Takes off with a dipping flight and a chissik call. The male displays with an undulating flight."
+    },
+    {
+      "view": "flight-below",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Boldly marked breast. The outer tail feathers are white."
+    }
+  ],
+  "calls": [
+    {
+      "sex": "any",
+      "type": "call",
+      "description": "A diagnostic chissik when disturbed. The male also gives chree-chree-chree-chree during each dip of the display flight. Grade A call and flight call from Wildealskloof, Bloemfontein. The filename is XC938658-OSF1561_92_PipitAfrican_WildealskloofBFN_0241006.mp3.",
+      "recordings": [
+        {
+          "key": "xeno-canto/XC938658",
+          "source": "https://xeno-canto.org/938658",
+          "fileUrl": "https://xeno-canto.org/sounds/uploaded/JDCTKFMBKV/XC938658-OSF1561_92_PipitAfrican_WildealskloofBFN_0241006.mp3",
+          "author": "Dawie de Swardt",
+          "license": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ]
+    }
+  ],
+  "images": [
+    {
+      "key": "anthus-cinnamomeus/side.jpg",
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "source": "https://www.inaturalist.org/observations/9986345",
+      "fileUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/13725557/large.jpeg",
+      "author": "copper",
+      "license": "CC BY-NC 4.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+      "aiGenerated": false,
+      "hosted": false,
+      "alt": "African Pipit standing, streaked breast and a pale outer tail",
+      "caption": "African Pipit near Babalala in Kruger, light brown with a streaked breast and a pale outer tail feather."
+    }
+  ],
+  "research": {
+    "confidence": "medium",
+    "needsReview": false,
+    "note": "Newman calls it a common resident, so status is resident and all twelve months are listed. Population figures, the paper name Grassveld Pipit and the Kemp code RB were left unchanged."
+  },
+  "size": {
+    "lengthCm": {
+      "min": 16,
+      "max": 16
+    },
+    "note": "Newman's Birds gives 16 cm."
+  },
+  "similar": [
+    {
+      "slug": "anthus-leucophrys",
+      "note": "Plain-backed Pipit is faintly streaked grey-brown above, with a strong white eyebrow and only light breast streaking. African Pipit has a boldly marked breast and white outer tail feathers."
+    }
+  ],
+  "status": "resident",
+  "monthsPresent": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+  ]
 }

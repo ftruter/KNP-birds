@@ -7,8 +7,29 @@
     "af": "Donkerkoester"
   },
   "family": "motacillidae",
-  "summary": "The details for this species have not been published yet.",
-  "sampleData": true,
+  "habitat": "Open habitats, especially short grassland and cultivation. The nest is a cup on the ground.",
+  "summary": "No Newman page. Wikipedia calls it a resident breeder: faintly streaked grey-brown above, pale below with light breast streaking, a strong white eyebrow, dark moustachial stripes, long legs and tail, and a long dark bill. Sexes are similar. Juveniles have warmer brown upperparts. SABAP1 adds a whiter eyebrow than Buffy Pipit, a longer hind claw, and a yellowish base to the bill. The call is ssissik. The song, cited from Maclean, is somewhat sparrow-like and given from the ground or a low perch, not in a display flight. The Kemp code RB was left unchanged.",
+  "sampleData": false,
+  "sources": [
+    {
+      "title": "Plain-backed pipit",
+      "url": "https://en.wikipedia.org/wiki/Plain-backed_pipit",
+      "publisher": "Wikipedia",
+      "year": 2026
+    },
+    {
+      "title": "Plainbacked Pipit. In Harrison, J.A. et al. (eds). The Atlas of Southern African Birds. Vol. 2.",
+      "url": "http://sabap2.adu.org.za/docs/sabap1/718.pdf",
+      "publisher": "The Atlas of Southern African Birds",
+      "year": 1997
+    },
+    {
+      "title": "Kemp A.C., Herholdt J.J., Whyte I. & Harrison J. (2001). Birds of the two largest national parks in South Africa: a method to generate estimates of population size for all species and assess their conservation ecology. S. Afr. J. Sci. 97: 393–403.",
+      "url": "https://journals.co.za/doi/pdf/10.10520/EJC97367",
+      "publisher": "South African Journal of Science",
+      "year": 2001
+    }
+  ],
   "population": {
     "estimate": {
       "low": 256,
@@ -35,8 +56,230 @@
     },
     "tierApplied": "D"
   },
-  "variants": [],
-  "viewNotes": [],
-  "calls": [],
-  "images": []
+  "variants": [
+    {
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "marks": {
+        "bill": {
+          "colour": null,
+          "shape": "Long dark bill. SABAP1 says the base is yellowish."
+        },
+        "eye": {
+          "iris": null,
+          "ring": null
+        },
+        "legs": {
+          "colour": null
+        },
+        "head": {
+          "crown": null,
+          "face": null,
+          "throat": null,
+          "pattern": "Strong white eyebrow and dark moustachial stripes."
+        },
+        "upperparts": {
+          "back": "grey",
+          "rump": null,
+          "pattern": "Faintly streaked grey-brown above. Grey-brown is not a single token."
+        },
+        "underparts": {
+          "breast": null,
+          "belly": null,
+          "pattern": "Pale below, with light breast streaking."
+        },
+        "wings": {
+          "above": null,
+          "below": null
+        },
+        "tail": {
+          "colour": null,
+          "shape": "Long tail. A tail colour was not named."
+        }
+      }
+    },
+    {
+      "age": "juvenile",
+      "sex": "any",
+      "season": "any",
+      "marks": {
+        "bill": {
+          "colour": null,
+          "shape": null
+        },
+        "eye": {
+          "iris": null,
+          "ring": null
+        },
+        "legs": {
+          "colour": null
+        },
+        "head": {
+          "crown": null,
+          "face": null,
+          "throat": null
+        },
+        "upperparts": {
+          "back": "brown",
+          "rump": null,
+          "pattern": "Warmer brown upperparts than the adult."
+        },
+        "underparts": {
+          "breast": null,
+          "belly": null
+        },
+        "wings": {
+          "above": null,
+          "below": null
+        },
+        "tail": {
+          "colour": null,
+          "shape": null
+        }
+      }
+    }
+  ],
+  "viewNotes": [
+    {
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Faintly streaked grey-brown above, a strong white eyebrow, and light breast streaking."
+    },
+    {
+      "view": "perched-front",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "White eyebrow, dark moustachial stripes and a lightly streaked breast."
+    },
+    {
+      "view": "perched-back",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Faintly streaked grey-brown upperparts. SABAP1 says the back is darker than a Buffy Pipit’s."
+    },
+    {
+      "view": "flight-above",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "A flight pattern was not described."
+    },
+    {
+      "view": "flight-below",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Pale underparts with light breast streaking."
+    },
+    {
+      "view": "perched-side",
+      "age": "juvenile",
+      "sex": "any",
+      "season": "any",
+      "note": "Warmer brown upperparts than the adult. Other juvenile marks were not described."
+    },
+    {
+      "view": "perched-front",
+      "age": "juvenile",
+      "sex": "any",
+      "season": "any",
+      "note": "The juvenile face was not described."
+    },
+    {
+      "view": "perched-back",
+      "age": "juvenile",
+      "sex": "any",
+      "season": "any",
+      "note": "Warmer brown upperparts."
+    },
+    {
+      "view": "flight-above",
+      "age": "juvenile",
+      "sex": "any",
+      "season": "any",
+      "note": "A juvenile flight pattern was not described."
+    },
+    {
+      "view": "flight-below",
+      "age": "juvenile",
+      "sex": "any",
+      "season": "any",
+      "note": "The juvenile underparts were not described."
+    }
+  ],
+  "calls": [
+    {
+      "sex": "any",
+      "type": "call",
+      "description": "Wikipedia gives the call as ssissik. SABAP1 cites a somewhat sparrow-like song from the ground or a low perch, not in display flight. Grade B call from Port Alfred, Eastern Cape. The filename is XC338352-Plain-backed Pipit Diaz dam.mp3. No openly licensed grade A recording was found.",
+      "recordings": [
+        {
+          "key": "xeno-canto/XC338352",
+          "source": "https://xeno-canto.org/338352",
+          "fileUrl": "https://xeno-canto.org/sounds/uploaded/SGLTZLDXYI/XC338352-Plain-backed%20Pipit%20Diaz%20dam.mp3",
+          "author": "Lynette Rudman",
+          "license": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ]
+    }
+  ],
+  "images": [
+    {
+      "key": "anthus-leucophrys/side.jpg",
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "source": "https://www.inaturalist.org/observations/95661670",
+      "fileUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/158825602/large.jpg",
+      "author": "Niall Perrins",
+      "license": "CC BY-NC 4.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+      "aiGenerated": false,
+      "hosted": false,
+      "alt": "Plain-backed Pipit perched on a stump, pale eyebrow and a lightly streaked breast",
+      "caption": "Plain-backed Pipit in the Kruger box, upright on a stump, with a pale eyebrow and light streaks on the breast."
+    }
+  ],
+  "research": {
+    "confidence": "medium",
+    "needsReview": false,
+    "note": "No Newman page. Wikipedia calls it a resident breeder, so status is resident and all twelve months are listed. Population figures and the Kemp code RB were left unchanged."
+  },
+  "size": {
+    "lengthCm": {
+      "min": 17,
+      "max": 17
+    },
+    "note": "Wikipedia gives 17 cm."
+  },
+  "similar": [
+    {
+      "slug": "anthus-vaalensis",
+      "note": "Buffy Pipit is paler and buffier above, with a less sharply defined eyebrow, fainter breast streaking and a shorter hind claw."
+    }
+  ],
+  "status": "resident",
+  "monthsPresent": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+  ]
 }

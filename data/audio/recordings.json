@@ -3286,6 +3286,116 @@
           }
         }
       ]
+    },
+    "anthus-caffer": {
+      "calls": [
+        {
+          "index": 0,
+          "quality": {
+            "xeno-canto/XC199337": "B"
+          }
+        }
+      ]
+    },
+    "anthus-cinnamomeus": {
+      "calls": [
+        {
+          "index": 0,
+          "quality": {
+            "xeno-canto/XC938658": "A"
+          }
+        }
+      ]
+    },
+    "anthus-leucophrys": {
+      "calls": [
+        {
+          "index": 0,
+          "quality": {
+            "xeno-canto/XC338352": "B"
+          }
+        }
+      ]
+    },
+    "anthus-lineiventris": {
+      "calls": [
+        {
+          "index": 0,
+          "quality": {
+            "xeno-canto/XC429533": "A"
+          }
+        }
+      ]
+    },
+    "anthus-nicholsoni": {
+      "calls": [
+        {
+          "index": 0,
+          "quality": {
+            "xeno-canto/XC425855": "A"
+          }
+        }
+      ]
+    },
+    "anthus-vaalensis": {
+      "calls": [
+        {
+          "index": 0,
+          "quality": {
+            "xeno-canto/XC444076": "C"
+          }
+        }
+      ]
+    },
+    "macronyx-croceus": {
+      "calls": [
+        {
+          "index": 0,
+          "quality": {
+            "xeno-canto/XC1011803": "A"
+          }
+        }
+      ]
+    },
+    "motacilla-aguimp": {
+      "calls": [
+        {
+          "index": 0,
+          "quality": {
+            "xeno-canto/XC620809": "A"
+          }
+        }
+      ]
+    },
+    "motacilla-capensis": {
+      "calls": [
+        {
+          "index": 0,
+          "quality": {
+            "xeno-canto/XC1079741": "A"
+          }
+        }
+      ]
+    },
+    "motacilla-clara": {
+      "calls": [
+        {
+          "index": 0,
+          "quality": {
+            "xeno-canto/XC490751": "A"
+          }
+        }
+      ]
+    },
+    "motacilla-flava": {
+      "calls": [
+        {
+          "index": 0,
+          "quality": {
+            "xeno-canto/XC140811": "A"
+          }
+        }
+      ]
     }
   }
 }

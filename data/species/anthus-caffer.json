@@ -7,8 +7,29 @@
     "af": "Bosveldkoester"
   },
   "family": "motacillidae",
-  "summary": "The details for this species have not been published yet.",
-  "sampleData": true,
+  "habitat": "On the ground in bushveld savanna, from near sea level to about 2000 m on the eastern plateau. SABAP1 says it is mostly single and becomes moderately gregarious in the non-breeding season.",
+  "summary": "No Newman page. Wikipedia gives dry forest and dry savanna and no plumage. SABAP1 says it has few salient features, is larger and longer-tailed than the Short-tailed Pipit, and has a characteristic call that is not described. No length, plumage or status is stored. The Kemp code RB was left unchanged.",
+  "sampleData": false,
+  "sources": [
+    {
+      "title": "Bushveld pipit",
+      "url": "https://en.wikipedia.org/wiki/Bushveld_pipit",
+      "publisher": "Wikipedia",
+      "year": 2026
+    },
+    {
+      "title": "Bushveld Pipit. In Harrison, J.A. et al. (eds). The Atlas of Southern African Birds. Vol. 2.",
+      "url": "http://sabap2.adu.org.za/docs/sabap1/723.pdf",
+      "publisher": "The Atlas of Southern African Birds",
+      "year": 1997
+    },
+    {
+      "title": "Kemp A.C., Herholdt J.J., Whyte I. & Harrison J. (2001). Birds of the two largest national parks in South Africa: a method to generate estimates of population size for all species and assess their conservation ecology. S. Afr. J. Sci. 97: 393–403.",
+      "url": "https://journals.co.za/doi/pdf/10.10520/EJC97367",
+      "publisher": "South African Journal of Science",
+      "year": 2001
+    }
+  ],
   "population": {
     "estimate": {
       "low": 32768,
@@ -37,6 +58,46 @@
   },
   "variants": [],
   "viewNotes": [],
-  "calls": [],
-  "images": []
+  "calls": [
+    {
+      "sex": "any",
+      "type": "call",
+      "description": "Neither Wikipedia nor SABAP1 describes the call. Grade B call from Mabusa, Mpumalanga. The filename is XC199337-2014-10-19 08_37 bush pipit.mp3. It was the only openly licensed recording above grade C.",
+      "recordings": [
+        {
+          "key": "xeno-canto/XC199337",
+          "source": "https://xeno-canto.org/199337",
+          "fileUrl": "https://xeno-canto.org/sounds/uploaded/LWQXRZHFCU/XC199337-2014-10-19%2008_37%20bush%20pipit.mp3",
+          "author": "Niall Perrins",
+          "license": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ]
+    }
+  ],
+  "images": [
+    {
+      "key": "anthus-caffer/side.jpg",
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "source": "https://www.inaturalist.org/observations/200261107",
+      "fileUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/353291512/large.jpg",
+      "author": "Duncan McKenzie",
+      "license": "CC BY-NC 4.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+      "aiGenerated": false,
+      "hosted": false,
+      "alt": "Bushveld Pipit perched on a branch",
+      "caption": "Bushveld Pipit in the Ehlanzeni district. The sources used do not describe the plumage, so the photograph is not used to add marks."
+    }
+  ],
+  "research": {
+    "confidence": "low",
+    "needsReview": true,
+    "note": "No Newman page. Wikipedia and SABAP1 do not describe plumage, length or residency, so those fields are empty. Population figures and the Kemp code RB were left unchanged."
+  }
 }
