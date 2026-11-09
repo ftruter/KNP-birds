@@ -123,6 +123,46 @@
         }
       ]
     },
+    "anarhynchus-asiaticus": {
+      "calls": [
+        {
+          "index": 0,
+          "quality": {
+            "xeno-canto/XC399779": "B"
+          }
+        }
+      ]
+    },
+    "anarhynchus-marginatus": {
+      "calls": [
+        {
+          "index": 0,
+          "quality": {
+            "xeno-canto/XC624791": "A"
+          }
+        }
+      ]
+    },
+    "anarhynchus-pallidus": {
+      "calls": [
+        {
+          "index": 0,
+          "quality": {
+            "xeno-canto/XC28681": "B"
+          }
+        }
+      ]
+    },
+    "anarhynchus-pecuarius": {
+      "calls": [
+        {
+          "index": 0,
+          "quality": {
+            "xeno-canto/XC676775": "A"
+          }
+        }
+      ]
+    },
     "anas-capensis": {
       "calls": [
         {
@@ -713,6 +753,16 @@
             "xeno-canto/XC1148067": "A",
             "xeno-canto/XC638453": "A",
             "xeno-canto/XC834484": "A"
+          }
+        }
+      ]
+    },
+    "charadrius-hiaticula": {
+      "calls": [
+        {
+          "index": 0,
+          "quality": {
+            "xeno-canto/XC1033971": "A"
           }
         }
       ]
@@ -1639,6 +1689,16 @@
         }
       ]
     },
+    "thinornis-tricollaris": {
+      "calls": [
+        {
+          "index": 0,
+          "quality": {
+            "xeno-canto/XC378030": "A"
+          }
+        }
+      ]
+    },
     "tockus-leucomelas": {
       "calls": [
         {
@@ -1655,6 +1715,56 @@
           "index": 0,
           "quality": {
             "xeno-canto/XC802491": "A"
+          }
+        }
+      ]
+    },
+    "vanellus-albiceps": {
+      "calls": [
+        {
+          "index": 0,
+          "quality": {
+            "xeno-canto/XC444186": "A"
+          }
+        }
+      ]
+    },
+    "vanellus-armatus": {
+      "calls": [
+        {
+          "index": 0,
+          "quality": {
+            "xeno-canto/XC1015093": "A"
+          }
+        }
+      ]
+    },
+    "vanellus-coronatus": {
+      "calls": [
+        {
+          "index": 0,
+          "quality": {
+            "xeno-canto/XC1148046": "A"
+          }
+        }
+      ]
+    },
+    "vanellus-lugubris": {
+      "calls": [
+        {
+          "index": 0,
+          "quality": {
+            "xeno-canto/XC1052419": "A"
+          }
+        }
+      ]
+    },
+    "vanellus-senegallus": {
+      "calls": [
+        {
+          "index": 0,
+          "quality": {
+            "xeno-canto/XC585227": "A"
           }
         }
       ]

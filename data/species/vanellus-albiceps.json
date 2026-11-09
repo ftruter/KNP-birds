@@ -7,8 +7,45 @@
     "af": "Witkopkiewiet"
   },
   "family": "charadriidae",
-  "summary": "The details for this species have not been published yet.",
-  "sampleData": true,
+  "status": "resident",
+  "monthsPresent": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+  ],
+  "size": {
+    "lengthCm": {
+      "min": 30,
+      "max": 30
+    },
+    "note": "Newman's Birds gives 30 cm."
+  },
+  "habitat": "Pairs and groups on the shores and sandbanks of large perennial rivers.",
+  "summary": "An uncommon, localised resident. The sides of the head and the neck are grey, the crown and underparts white, and the wings black and white. The bill, wattles and legs are yellow, and the wattles are longer than the bill. A broad white band, dark-edged in the male, runs from the bill over the crown. In flight the underwings look mainly white. The call is a sharp, rapid peep, peep-peep, peep when the bird is flushed.",
+  "sampleData": false,
+  "similar": [
+    {
+      "slug": "vanellus-senegallus",
+      "note": "African Wattled Lapwing has shorter wattles, white only on the forecrown, a streaked neck and a brown breast. White-crowned Lapwing is white below, with longer wattles and a white crown-band."
+    }
+  ],
+  "sources": [
+    {
+      "title": "White-crowned Lapwing",
+      "url": "https://newmansbirds.com/birds/white-crowned-lapwing/",
+      "publisher": "Newman's Birds",
+      "year": 2026
+    }
+  ],
   "population": {
     "estimate": {
       "low": 128,
@@ -35,8 +72,177 @@
     },
     "tierApplied": "D"
   },
-  "variants": [],
-  "viewNotes": [],
-  "calls": [],
-  "images": []
+  "variants": [
+    {
+      "age": "adult",
+      "sex": "male",
+      "season": "any",
+      "marks": {
+        "bill": {
+          "colour": "yellow",
+          "shape": null
+        },
+        "eye": {
+          "iris": null,
+          "ring": null
+        },
+        "legs": {
+          "colour": "yellow"
+        },
+        "head": {
+          "crown": "white",
+          "face": "grey",
+          "throat": "white",
+          "pattern": "Broad white band from the bill over the crown, dark-edged in the male. Wattles longer than the bill."
+        },
+        "upperparts": {
+          "back": "black",
+          "rump": null,
+          "pattern": null
+        },
+        "underparts": {
+          "breast": "white",
+          "belly": "white",
+          "pattern": null
+        },
+        "wings": {
+          "above": [
+            "black",
+            "white"
+          ],
+          "below": "white",
+          "pattern": "Black wing bordered with white above. Underwings mainly white."
+        },
+        "tail": {
+          "colour": null,
+          "shape": null
+        }
+      }
+    },
+    {
+      "age": "adult",
+      "sex": "female",
+      "season": "any",
+      "marks": {
+        "bill": {
+          "colour": "yellow",
+          "shape": null
+        },
+        "eye": {
+          "iris": null,
+          "ring": null
+        },
+        "legs": {
+          "colour": "yellow"
+        },
+        "head": {
+          "crown": "white",
+          "face": "grey",
+          "throat": "white",
+          "pattern": "Broad white crown-band. The dark edge is described for the male."
+        },
+        "upperparts": {
+          "back": "black",
+          "rump": null,
+          "pattern": null
+        },
+        "underparts": {
+          "breast": "white",
+          "belly": "white",
+          "pattern": null
+        },
+        "wings": {
+          "above": [
+            "black",
+            "white"
+          ],
+          "below": "white",
+          "pattern": null
+        },
+        "tail": {
+          "colour": null,
+          "shape": null
+        }
+      }
+    }
+  ],
+  "viewNotes": [
+    {
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "White crown-band, long yellow wattles and white underparts, on a river sandbank."
+    },
+    {
+      "view": "perched-front",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Long yellow wattles and the white band from the bill."
+    },
+    {
+      "view": "perched-back",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Black wing bordered with white."
+    },
+    {
+      "view": "flight-above",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Black and white above."
+    },
+    {
+      "view": "flight-below",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Underwings mainly white, and white underparts."
+    }
+  ],
+  "calls": [
+    {
+      "sex": "any",
+      "type": "call",
+      "description": "A sharp peep, peep-peep, peep, uttered rapidly if the bird is flushed. The texts do not separate the sexes. Grade A from Mpala Safari Lodge, South Africa.",
+      "recordings": [
+        {
+          "key": "xeno-canto/XC444186",
+          "source": "https://xeno-canto.org/444186",
+          "fileUrl": "https://xeno-canto.org/sounds/uploaded/FSCGENVPXK/XC444186-White-crowned%20Lapwing%20Mpala%20Lodge%20South%20Africa%2011102018%206.55pm.mp3",
+          "author": "Paul Driver",
+          "license": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ]
+    }
+  ],
+  "images": [
+    {
+      "key": "vanellus-albiceps/side.jpg",
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "source": "https://www.inaturalist.org/observations/18625889",
+      "fileUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/28507879/large.jpg",
+      "author": "clicque",
+      "license": "CC BY-NC 4.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+      "aiGenerated": false,
+      "hosted": false,
+      "alt": "White-crowned Lapwing standing side-on in Kruger, with a white crown and yellow wattles",
+      "caption": "White-crowned Lapwing standing side-on in Kruger, with a white crown and yellow wattles"
+    }
+  ],
+  "research": {
+    "confidence": "medium",
+    "needsReview": false,
+    "note": "Status is resident and all twelve months are listed. Newman calls it an uncommon, localised resident. The call is grade A from South Africa."
+  }
 }

@@ -1033,14 +1033,42 @@
       "slug": "anarhynchus-asiaticus",
       "scientificName": "Anarhynchus asiaticus",
       "commonName": "Caspian Plover",
-      "images": [],
-      "recordings": [],
+      "images": [
+        {
+          "key": "anarhynchus-asiaticus/front.jpg",
+          "author": "Thomas ARMAND",
+          "licence": "CC BY-NC 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+          "sourceUrl": "https://www.inaturalist.org/observations/149846841",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ],
+      "recordings": [
+        {
+          "key": "xeno-canto/XC399779",
+          "author": "Stephanie Dolrenry",
+          "licence": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "sourceUrl": "https://xeno-canto.org/399779",
+          "aiGenerated": false,
+          "hosted": false,
+          "quality": "B",
+          "callType": "call"
+        }
+      ],
       "sources": [
         {
           "title": "Kemp A.C., Herholdt J.J., Whyte I. & Harrison J. (2001). Birds of the two largest national parks in South Africa: a method to generate estimates of population size for all species and assess their conservation ecology. S. Afr. J. Sci. 97: 393–403.",
           "url": "https://journals.co.za/doi/pdf/10.10520/EJC97367",
           "publisher": "South African Journal of Science",
           "year": 2001
+        },
+        {
+          "title": "Caspian Plover",
+          "url": "https://newmansbirds.com/birds/caspian-plover/",
+          "publisher": "Newman's Birds",
+          "year": 2026
         }
       ]
     },
@@ -1048,14 +1076,42 @@
       "slug": "anarhynchus-marginatus",
       "scientificName": "Anarhynchus marginatus",
       "commonName": "White-fronted Plover",
-      "images": [],
-      "recordings": [],
+      "images": [
+        {
+          "key": "anarhynchus-marginatus/side.jpg",
+          "author": "Tivan Kotze",
+          "licence": "CC BY-NC 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+          "sourceUrl": "https://www.inaturalist.org/observations/297301960",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ],
+      "recordings": [
+        {
+          "key": "xeno-canto/XC624791",
+          "author": "Ken Behrens",
+          "licence": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "sourceUrl": "https://xeno-canto.org/624791",
+          "aiGenerated": false,
+          "hosted": false,
+          "quality": "A",
+          "callType": "call"
+        }
+      ],
       "sources": [
         {
           "title": "Kemp A.C., Herholdt J.J., Whyte I. & Harrison J. (2001). Birds of the two largest national parks in South Africa: a method to generate estimates of population size for all species and assess their conservation ecology. S. Afr. J. Sci. 97: 393–403.",
           "url": "https://journals.co.za/doi/pdf/10.10520/EJC97367",
           "publisher": "South African Journal of Science",
           "year": 2001
+        },
+        {
+          "title": "White-fronted Plover",
+          "url": "https://newmansbirds.com/birds/white-fronted-plover/",
+          "publisher": "Newman's Birds",
+          "year": 2026
         }
       ]
     },
@@ -1064,13 +1120,31 @@
       "scientificName": "Anarhynchus pallidus",
       "commonName": "Chestnut-banded Plover",
       "images": [],
-      "recordings": [],
+      "recordings": [
+        {
+          "key": "xeno-canto/XC28681",
+          "author": "Patrik Åberg",
+          "licence": "CC BY-NC-SA 3.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/3.0/",
+          "sourceUrl": "https://xeno-canto.org/28681",
+          "aiGenerated": false,
+          "hosted": false,
+          "quality": "B",
+          "callType": "call"
+        }
+      ],
       "sources": [
         {
           "title": "Kemp A.C., Herholdt J.J., Whyte I. & Harrison J. (2001). Birds of the two largest national parks in South Africa: a method to generate estimates of population size for all species and assess their conservation ecology. S. Afr. J. Sci. 97: 393–403.",
           "url": "https://journals.co.za/doi/pdf/10.10520/EJC97367",
           "publisher": "South African Journal of Science",
           "year": 2001
+        },
+        {
+          "title": "Chestnut-banded Plover",
+          "url": "https://newmansbirds.com/birds/chestnut-banded-plover/",
+          "publisher": "Newman's Birds",
+          "year": 2026
         }
       ]
     },
@@ -1078,14 +1152,42 @@
       "slug": "anarhynchus-pecuarius",
       "scientificName": "Anarhynchus pecuarius",
       "commonName": "Kittlitz’s Plover",
-      "images": [],
-      "recordings": [],
+      "images": [
+        {
+          "key": "anarhynchus-pecuarius/front.jpg",
+          "author": "Christiaan Viljoen",
+          "licence": "CC BY 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by/4.0/",
+          "sourceUrl": "https://www.inaturalist.org/observations/202775999",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ],
+      "recordings": [
+        {
+          "key": "xeno-canto/XC676775",
+          "author": "Tony Archer",
+          "licence": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "sourceUrl": "https://xeno-canto.org/676775",
+          "aiGenerated": false,
+          "hosted": false,
+          "quality": "A",
+          "callType": "call"
+        }
+      ],
       "sources": [
         {
           "title": "Kemp A.C., Herholdt J.J., Whyte I. & Harrison J. (2001). Birds of the two largest national parks in South Africa: a method to generate estimates of population size for all species and assess their conservation ecology. S. Afr. J. Sci. 97: 393–403.",
           "url": "https://journals.co.za/doi/pdf/10.10520/EJC97367",
           "publisher": "South African Journal of Science",
           "year": 2001
+        },
+        {
+          "title": "Kittlitz's Plover",
+          "url": "https://newmansbirds.com/birds/kittlitzs-plover/",
+          "publisher": "Newman's Birds",
+          "year": 2026
         }
       ]
     },
@@ -4902,14 +5004,42 @@
       "slug": "charadrius-hiaticula",
       "scientificName": "Charadrius hiaticula",
       "commonName": "Common Ringed Plover",
-      "images": [],
-      "recordings": [],
+      "images": [
+        {
+          "key": "charadrius-hiaticula/side.jpg",
+          "author": "Duncan McKenzie",
+          "licence": "CC BY-NC 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+          "sourceUrl": "https://www.inaturalist.org/observations/196405606",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ],
+      "recordings": [
+        {
+          "key": "xeno-canto/XC1033971",
+          "author": "Lars Edenius",
+          "licence": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "sourceUrl": "https://xeno-canto.org/1033971",
+          "aiGenerated": false,
+          "hosted": false,
+          "quality": "A",
+          "callType": "call"
+        }
+      ],
       "sources": [
         {
           "title": "Kemp A.C., Herholdt J.J., Whyte I. & Harrison J. (2001). Birds of the two largest national parks in South Africa: a method to generate estimates of population size for all species and assess their conservation ecology. S. Afr. J. Sci. 97: 393–403.",
           "url": "https://journals.co.za/doi/pdf/10.10520/EJC97367",
           "publisher": "South African Journal of Science",
           "year": 2001
+        },
+        {
+          "title": "Common Ringed Plover",
+          "url": "https://newmansbirds.com/birds/common-ringed-plover/",
+          "publisher": "Newman's Birds",
+          "year": 2026
         }
       ]
     },
@@ -14331,14 +14461,42 @@
       "slug": "thinornis-tricollaris",
       "scientificName": "Thinornis tricollaris",
       "commonName": "Three-banded Plover",
-      "images": [],
-      "recordings": [],
+      "images": [
+        {
+          "key": "thinornis-tricollaris/side.jpg",
+          "author": "Gigi Laidler",
+          "licence": "CC BY-NC 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+          "sourceUrl": "https://www.inaturalist.org/observations/330757562",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ],
+      "recordings": [
+        {
+          "key": "xeno-canto/XC378030",
+          "author": "Tim Cockcroft",
+          "licence": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "sourceUrl": "https://xeno-canto.org/378030",
+          "aiGenerated": false,
+          "hosted": false,
+          "quality": "A",
+          "callType": "call"
+        }
+      ],
       "sources": [
         {
           "title": "Kemp A.C., Herholdt J.J., Whyte I. & Harrison J. (2001). Birds of the two largest national parks in South Africa: a method to generate estimates of population size for all species and assess their conservation ecology. S. Afr. J. Sci. 97: 393–403.",
           "url": "https://journals.co.za/doi/pdf/10.10520/EJC97367",
           "publisher": "South African Journal of Science",
           "year": 2001
+        },
+        {
+          "title": "Three-banded Plover",
+          "url": "https://newmansbirds.com/birds/three-banded-plover/",
+          "publisher": "Newman's Birds",
+          "year": 2026
         }
       ]
     },
@@ -14947,14 +15105,42 @@
       "slug": "vanellus-albiceps",
       "scientificName": "Vanellus albiceps",
       "commonName": "White-crowned Lapwing",
-      "images": [],
-      "recordings": [],
+      "images": [
+        {
+          "key": "vanellus-albiceps/side.jpg",
+          "author": "clicque",
+          "licence": "CC BY-NC 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+          "sourceUrl": "https://www.inaturalist.org/observations/18625889",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ],
+      "recordings": [
+        {
+          "key": "xeno-canto/XC444186",
+          "author": "Paul Driver",
+          "licence": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "sourceUrl": "https://xeno-canto.org/444186",
+          "aiGenerated": false,
+          "hosted": false,
+          "quality": "A",
+          "callType": "call"
+        }
+      ],
       "sources": [
         {
           "title": "Kemp A.C., Herholdt J.J., Whyte I. & Harrison J. (2001). Birds of the two largest national parks in South Africa: a method to generate estimates of population size for all species and assess their conservation ecology. S. Afr. J. Sci. 97: 393–403.",
           "url": "https://journals.co.za/doi/pdf/10.10520/EJC97367",
           "publisher": "South African Journal of Science",
           "year": 2001
+        },
+        {
+          "title": "White-crowned Lapwing",
+          "url": "https://newmansbirds.com/birds/white-crowned-lapwing/",
+          "publisher": "Newman's Birds",
+          "year": 2026
         }
       ]
     },
@@ -14962,14 +15148,42 @@
       "slug": "vanellus-armatus",
       "scientificName": "Vanellus armatus",
       "commonName": "Blacksmith Lapwing",
-      "images": [],
-      "recordings": [],
+      "images": [
+        {
+          "key": "vanellus-armatus/side.jpg",
+          "author": "liezelg",
+          "licence": "CC BY-NC 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+          "sourceUrl": "https://www.inaturalist.org/observations/154679664",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ],
+      "recordings": [
+        {
+          "key": "xeno-canto/XC1015093",
+          "author": "Mike Cassidy",
+          "licence": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "sourceUrl": "https://xeno-canto.org/1015093",
+          "aiGenerated": false,
+          "hosted": false,
+          "quality": "A",
+          "callType": "call"
+        }
+      ],
       "sources": [
         {
           "title": "Kemp A.C., Herholdt J.J., Whyte I. & Harrison J. (2001). Birds of the two largest national parks in South Africa: a method to generate estimates of population size for all species and assess their conservation ecology. S. Afr. J. Sci. 97: 393–403.",
           "url": "https://journals.co.za/doi/pdf/10.10520/EJC97367",
           "publisher": "South African Journal of Science",
           "year": 2001
+        },
+        {
+          "title": "Blacksmith Lapwing",
+          "url": "https://newmansbirds.com/birds/blacksmith-lapwing/",
+          "publisher": "Newman's Birds",
+          "year": 2026
         }
       ]
     },
@@ -14977,14 +15191,42 @@
       "slug": "vanellus-coronatus",
       "scientificName": "Vanellus coronatus",
       "commonName": "Crowned Lapwing",
-      "images": [],
-      "recordings": [],
+      "images": [
+        {
+          "key": "vanellus-coronatus/front.jpg",
+          "author": "Paul Hoekman",
+          "licence": "CC BY 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by/4.0/",
+          "sourceUrl": "https://www.inaturalist.org/observations/290059337",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ],
+      "recordings": [
+        {
+          "key": "xeno-canto/XC1148046",
+          "author": "African Bioacoustics Community",
+          "licence": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "sourceUrl": "https://xeno-canto.org/1148046",
+          "aiGenerated": false,
+          "hosted": false,
+          "quality": "A",
+          "callType": "call"
+        }
+      ],
       "sources": [
         {
           "title": "Kemp A.C., Herholdt J.J., Whyte I. & Harrison J. (2001). Birds of the two largest national parks in South Africa: a method to generate estimates of population size for all species and assess their conservation ecology. S. Afr. J. Sci. 97: 393–403.",
           "url": "https://journals.co.za/doi/pdf/10.10520/EJC97367",
           "publisher": "South African Journal of Science",
           "year": 2001
+        },
+        {
+          "title": "Crowned Lapwing",
+          "url": "https://newmansbirds.com/birds/crowned-lapwing/",
+          "publisher": "Newman's Birds",
+          "year": 2026
         }
       ]
     },
@@ -14992,14 +15234,42 @@
       "slug": "vanellus-lugubris",
       "scientificName": "Vanellus lugubris",
       "commonName": "Senegal Lapwing",
-      "images": [],
-      "recordings": [],
+      "images": [
+        {
+          "key": "vanellus-lugubris/side.jpg",
+          "author": "inspirationalnature",
+          "licence": "CC BY-NC 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+          "sourceUrl": "https://www.inaturalist.org/observations/331556333",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ],
+      "recordings": [
+        {
+          "key": "xeno-canto/XC1052419",
+          "author": "Bernard BOUSQUET",
+          "licence": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "sourceUrl": "https://xeno-canto.org/1052419",
+          "aiGenerated": false,
+          "hosted": false,
+          "quality": "A",
+          "callType": "call"
+        }
+      ],
       "sources": [
         {
           "title": "Kemp A.C., Herholdt J.J., Whyte I. & Harrison J. (2001). Birds of the two largest national parks in South Africa: a method to generate estimates of population size for all species and assess their conservation ecology. S. Afr. J. Sci. 97: 393–403.",
           "url": "https://journals.co.za/doi/pdf/10.10520/EJC97367",
           "publisher": "South African Journal of Science",
           "year": 2001
+        },
+        {
+          "title": "Senegal Lapwing",
+          "url": "https://newmansbirds.com/birds/senegal-lapwing/",
+          "publisher": "Newman's Birds",
+          "year": 2026
         }
       ]
     },
@@ -15007,14 +15277,42 @@
       "slug": "vanellus-senegallus",
       "scientificName": "Vanellus senegallus",
       "commonName": "African Wattled Lapwing",
-      "images": [],
-      "recordings": [],
+      "images": [
+        {
+          "key": "vanellus-senegallus/side.jpg",
+          "author": "Bud Lensing",
+          "licence": "CC0 1.0",
+          "licenceUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+          "sourceUrl": "https://www.inaturalist.org/observations/242556114",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ],
+      "recordings": [
+        {
+          "key": "xeno-canto/XC585227",
+          "author": "Dries Van de Loock",
+          "licence": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "sourceUrl": "https://xeno-canto.org/585227",
+          "aiGenerated": false,
+          "hosted": false,
+          "quality": "A",
+          "callType": "call"
+        }
+      ],
       "sources": [
         {
           "title": "Kemp A.C., Herholdt J.J., Whyte I. & Harrison J. (2001). Birds of the two largest national parks in South Africa: a method to generate estimates of population size for all species and assess their conservation ecology. S. Afr. J. Sci. 97: 393–403.",
           "url": "https://journals.co.za/doi/pdf/10.10520/EJC97367",
           "publisher": "South African Journal of Science",
           "year": 2001
+        },
+        {
+          "title": "African Wattled Lapwing",
+          "url": "https://newmansbirds.com/birds/african-wattled-lapwing/",
+          "publisher": "Newman's Birds",
+          "year": 2026
         }
       ]
     },

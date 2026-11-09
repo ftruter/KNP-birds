@@ -7,8 +7,45 @@
     "af": "Kleinswartvlerkkiewiet"
   },
   "family": "charadriidae",
-  "summary": "The details for this species have not been published yet.",
-  "sampleData": true,
+  "status": "resident",
+  "monthsPresent": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+  ],
+  "size": {
+    "lengthCm": {
+      "min": 23,
+      "max": 23
+    },
+    "note": "Newman's Birds gives 23 cm."
+  },
+  "habitat": "Small parties in dry grassland and open woodland.",
+  "summary": "An uncommon resident. The upperparts are dark olive-brown, the head to the breast is grey, and there is a small white forehead. The eyes are yellow. The legs are dark brown or blackish. The white forehead sits forward of the eye, and the dark lower breast-band is usually narrow. In flight the underwings are black and white. The call is a piping thi-wit.",
+  "sampleData": false,
+  "similar": [
+    {
+      "slug": "vanellus-coronatus",
+      "note": "Crowned Lapwing has a full white circle around a black cap and red legs. Senegal Lapwing has only a small white forehead and dark legs."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Senegal Lapwing",
+      "url": "https://newmansbirds.com/birds/senegal-lapwing/",
+      "publisher": "Newman's Birds",
+      "year": 2026
+    }
+  ],
   "population": {
     "estimate": {
       "low": 1024,
@@ -35,8 +72,134 @@
     },
     "tierApplied": "D"
   },
-  "variants": [],
-  "viewNotes": [],
-  "calls": [],
-  "images": []
+  "variants": [
+    {
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "marks": {
+        "bill": {
+          "colour": null,
+          "shape": null
+        },
+        "eye": {
+          "iris": "yellow",
+          "ring": null
+        },
+        "legs": {
+          "colour": [
+            "dark-brown",
+            "black"
+          ]
+        },
+        "head": {
+          "crown": "grey",
+          "face": "white",
+          "throat": null,
+          "pattern": "Small white forehead forward of the eye. Head to breast grey."
+        },
+        "upperparts": {
+          "back": "olive",
+          "rump": null,
+          "pattern": "Dark olive-brown upperparts."
+        },
+        "underparts": {
+          "breast": "grey",
+          "belly": "white",
+          "pattern": "Dark lower breast-band usually narrow."
+        },
+        "wings": {
+          "above": null,
+          "below": [
+            "black",
+            "white"
+          ],
+          "pattern": "Black-and-white underwings."
+        },
+        "tail": {
+          "colour": null,
+          "shape": null
+        }
+      }
+    }
+  ],
+  "viewNotes": [
+    {
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Grey head and breast, small white forehead and dark legs, in dry grassland."
+    },
+    {
+      "view": "perched-front",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "White forehead forward of the eye, and the yellow eye."
+    },
+    {
+      "view": "perched-back",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Dark olive-brown upperparts."
+    },
+    {
+      "view": "flight-above",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "The upperwing pattern is described as diagnostic, but the colours were not named in the text."
+    },
+    {
+      "view": "flight-below",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Black-and-white underwings, and a usually narrow dark breast-band."
+    }
+  ],
+  "calls": [
+    {
+      "sex": "any",
+      "type": "call",
+      "description": "A piping thi-wit. The texts do not separate the sexes. Grade A from near Kateta, Uganda. The filename is Vanneau-terne, the French name. No playable grade A from South Africa outranked it.",
+      "recordings": [
+        {
+          "key": "xeno-canto/XC1052419",
+          "source": "https://xeno-canto.org/1052419",
+          "fileUrl": "https://xeno-canto.org/sounds/uploaded/THHNKSHUMO/XC1052419-022-Vanneau-terne-260123_0264.mp3",
+          "author": "Bernard BOUSQUET",
+          "license": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ]
+    }
+  ],
+  "images": [
+    {
+      "key": "vanellus-lugubris/side.jpg",
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "source": "https://www.inaturalist.org/observations/331556333",
+      "fileUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/601500971/large.jpg",
+      "author": "inspirationalnature",
+      "license": "CC BY-NC 4.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+      "aiGenerated": false,
+      "hosted": false,
+      "alt": "Senegal Lapwing standing side-on on Kruger sand, grey-headed with a small white forehead",
+      "caption": "Senegal Lapwing standing side-on on Kruger sand, grey-headed with a small white forehead"
+    }
+  ],
+  "research": {
+    "confidence": "medium",
+    "needsReview": false,
+    "note": "Status is resident and all twelve months are listed. Newman calls it an uncommon resident. Black-winged Lapwing is the comparison in Newman and is not on the Kruger list, so it is not linked. The call is grade A from Uganda. The stored Kemp name remains Lesser Blackwinged Plover."
+  }
 }
