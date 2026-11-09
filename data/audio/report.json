@@ -1,9 +1,9 @@
 {
   "source": "xeno-canto explore catalogue, API v3 recording fields",
   "counts": {
-    "slots": 273,
+    "slots": 274,
     "swapped": 17,
-    "added": 171,
+    "added": 172,
     "kept": 57,
     "none": 28,
     "cleaned": 0
@@ -4211,6 +4211,20 @@
       "quality": "A",
       "country": "Ethiopia",
       "locality": "Awash National Park",
+      "cleaned": false,
+      "license": "CC BY-NC-SA 4.0"
+    },
+    {
+      "slug": "podica-senegalensis",
+      "scientificName": "Podica senegalensis",
+      "index": 0,
+      "type": "call",
+      "action": "added",
+      "from": [],
+      "to": "642694",
+      "quality": "B",
+      "country": "South Africa",
+      "locality": "Waters Meeting Nature Reserve, Bathurst, Eastern Cape",
       "cleaned": false,
       "license": "CC BY-NC-SA 4.0"
     }
