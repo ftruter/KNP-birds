@@ -7,8 +7,34 @@
     "af": "Afrikaanse Koekoek"
   },
   "family": "cuculidae",
-  "summary": "The details for this species have not been published yet.",
-  "sampleData": true,
+  "status": "intra-african-migrant",
+  "size": {
+    "lengthCm": {
+      "min": 32,
+      "max": 32
+    },
+    "note": "Wikipedia gives 32 cm."
+  },
+  "summary": "An intra-African migrant that arrives to breed in the rainy season. The sexes are alike in plumage: dark grey head, upper parts and wings, pale grey throat and breast, and a white belly barred dark grey. The tail is dark grey, fully barred, with a white tip, and the upper tail coverts are grey. The male eye is yellow and the female eye is light brown. The bill is yellow, tipped black or horn, and the legs are yellowish. The male calls coo-coo, with the second note higher and louder. The female gives a bubbling kwik-kwik-kwik. Months were left unset. The Kemp code VB was left unchanged.",
+  "sampleData": false,
+  "similar": [
+    {
+      "slug": "cuculus-canorus",
+      "note": "Common Cuckoo has incompletely barred outer tail feathers. African Cuckoo has complete tail barring. Both have grey upper tail coverts."
+    },
+    {
+      "slug": "cuculus-solitarius",
+      "note": "Red-chested Cuckoo has a broad russet upper breast. African Cuckoo has a pale grey throat and breast."
+    }
+  ],
+  "sources": [
+    {
+      "title": "African cuckoo",
+      "url": "https://en.wikipedia.org/wiki/African_cuckoo",
+      "publisher": "Wikipedia",
+      "year": 2026
+    }
+  ],
   "population": {
     "estimate": {
       "low": 512,
@@ -35,8 +61,257 @@
     },
     "tierApplied": "D"
   },
-  "variants": [],
-  "viewNotes": [],
-  "calls": [],
-  "images": []
+  "variants": [
+    {
+      "age": "adult",
+      "sex": "male",
+      "season": "any",
+      "marks": {
+        "bill": {
+          "colour": "yellow",
+          "shape": "Tipped black or horn."
+        },
+        "eye": {
+          "iris": "yellow",
+          "ring": null
+        },
+        "legs": {
+          "colour": "yellow"
+        },
+        "head": {
+          "crown": "grey",
+          "face": "grey",
+          "throat": "grey",
+          "pattern": "Throat and breast pale grey. Head dark grey."
+        },
+        "upperparts": {
+          "back": "grey",
+          "rump": null,
+          "pattern": "Dark grey upper parts. Upper tail coverts grey."
+        },
+        "underparts": {
+          "breast": "grey",
+          "belly": "white",
+          "pattern": "Belly white, barred dark grey."
+        },
+        "wings": {
+          "above": "grey",
+          "below": null,
+          "pattern": null
+        },
+        "tail": {
+          "colour": "grey",
+          "shape": "Fully barred, with a white tip."
+        }
+      }
+    },
+    {
+      "age": "adult",
+      "sex": "female",
+      "season": "any",
+      "marks": {
+        "bill": {
+          "colour": "yellow",
+          "shape": "Tipped black or horn."
+        },
+        "eye": {
+          "iris": "brown",
+          "ring": null
+        },
+        "legs": {
+          "colour": "yellow"
+        },
+        "head": {
+          "crown": "grey",
+          "face": "grey",
+          "throat": "grey",
+          "pattern": "Light brown eye. Throat and breast pale grey."
+        },
+        "upperparts": {
+          "back": "grey",
+          "rump": null,
+          "pattern": "Dark grey upper parts. Upper tail coverts grey."
+        },
+        "underparts": {
+          "breast": "grey",
+          "belly": "white",
+          "pattern": "Belly white, barred dark grey."
+        },
+        "wings": {
+          "above": "grey",
+          "below": null,
+          "pattern": null
+        },
+        "tail": {
+          "colour": "grey",
+          "shape": "Fully barred, with a white tip."
+        }
+      }
+    },
+    {
+      "age": "juvenile",
+      "sex": "any",
+      "season": "any",
+      "marks": {
+        "bill": {
+          "colour": null,
+          "shape": null
+        },
+        "eye": {
+          "iris": null,
+          "ring": null
+        },
+        "legs": {
+          "colour": null
+        },
+        "head": {
+          "crown": null,
+          "face": null,
+          "throat": null,
+          "pattern": null
+        },
+        "upperparts": {
+          "back": "grey",
+          "rump": null,
+          "pattern": "Grey morph. Greyer than the adult, with white barring."
+        },
+        "underparts": {
+          "breast": "white",
+          "belly": "white",
+          "pattern": "Creamy-white with dense dark barring."
+        },
+        "wings": {
+          "above": null,
+          "below": null,
+          "pattern": null
+        },
+        "tail": {
+          "colour": null,
+          "shape": null
+        }
+      }
+    },
+    {
+      "age": "juvenile",
+      "sex": "any",
+      "season": "any",
+      "marks": {
+        "bill": {
+          "colour": null,
+          "shape": null
+        },
+        "eye": {
+          "iris": null,
+          "ring": null
+        },
+        "legs": {
+          "colour": null
+        },
+        "head": {
+          "crown": null,
+          "face": null,
+          "throat": null,
+          "pattern": null
+        },
+        "upperparts": {
+          "back": "brown",
+          "rump": null,
+          "pattern": "Hepatic morph. Brown rather than grey."
+        },
+        "underparts": {
+          "breast": null,
+          "belly": null,
+          "pattern": "The white of the grey morph is replaced by buff or a tawny hue."
+        },
+        "wings": {
+          "above": null,
+          "below": null,
+          "pattern": null
+        },
+        "tail": {
+          "colour": null,
+          "shape": null
+        }
+      }
+    }
+  ],
+  "viewNotes": [
+    {
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "male",
+      "season": "any",
+      "note": "Dark grey above, pale grey on the throat and breast, and a barred white belly. The eye is yellow."
+    },
+    {
+      "view": "perched-front",
+      "age": "adult",
+      "sex": "male",
+      "season": "any",
+      "note": "Pale grey breast and a barred white belly. The bill is yellow with a dark tip."
+    },
+    {
+      "view": "perched-back",
+      "age": "adult",
+      "sex": "male",
+      "season": "any",
+      "note": "Dark grey upper parts and grey upper tail coverts. The tail is fully barred and white-tipped."
+    },
+    {
+      "view": "flight-above",
+      "age": "adult",
+      "sex": "male",
+      "season": "any",
+      "note": "The flight is dashing and looks like a bird of prey. Barred underwings were not named in the text."
+    },
+    {
+      "view": "flight-below",
+      "age": "adult",
+      "sex": "male",
+      "season": "any",
+      "note": "Barred white belly and pale grey breast."
+    }
+  ],
+  "calls": [
+    {
+      "sex": "male",
+      "type": "song",
+      "description": "A coo-coo, the second note higher and louder than the first. The female utters a bubbling kwik-kwik-kwik, which was not given a separate file. Grade A song from Mutinondo, Zambia. The filename names African Cuckoo and the song.",
+      "recordings": [
+        {
+          "key": "xeno-canto/XC682084",
+          "source": "https://xeno-canto.org/682084",
+          "fileUrl": "https://xeno-canto.org/sounds/uploaded/IIJAXHKSCC/XC682084-African%20Cuckoo%20%28song%29%2020210921%2CMutinondoWilderness%2CMuchinga%2CZAMBIA.mp3",
+          "author": "Dries Van de Loock",
+          "license": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ]
+    }
+  ],
+  "images": [
+    {
+      "key": "cuculus-gularis/side.jpg",
+      "view": "perched-front",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "source": "https://www.inaturalist.org/observations/251005494",
+      "fileUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/449036373/large.jpg",
+      "author": "Bernard DUPONT",
+      "license": "CC BY 4.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by/4.0/",
+      "aiGenerated": false,
+      "hosted": false,
+      "alt": "Two African Cuckoos on a dead branch, one with wings raised",
+      "caption": "Two African Cuckoos on the H1-2 west of Tshokwane. One holds its wings up, showing barred underwings and a barred belly."
+    }
+  ],
+  "research": {
+    "confidence": "medium",
+    "needsReview": true,
+    "note": "No Newman page was found. Wikipedia says it migrates within Africa and breeds in the rainy season, without naming months, so monthsPresent was left unset. The Kemp code VB was left unchanged. Population figures were left unchanged."
+  }
 }

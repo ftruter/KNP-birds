@@ -7,8 +7,31 @@
     "af": "Diederikkie"
   },
   "family": "cuculidae",
-  "summary": "The details for this species have not been published yet.",
-  "sampleData": true,
+  "status": "summer-migrant",
+  "size": {
+    "lengthCm": {
+      "min": 18.5,
+      "max": 18.5
+    },
+    "note": "Newman's Birds gives 18.5 cm."
+  },
+  "habitat": "Usually singly in a variety of wooded habitats, including reed beds and suburbia.",
+  "summary": "A common summer resident. The male is bright green above and white below, with white marks before and behind the eye, a white crown stripe, white marks on the wings, a black bill and a red eye. The female is more coppery above. The immature has a coral-red bill, blue eyes and spotted underparts. The male calls dee-dee-dee-deederik. The female calls deea-deea-DEEA. It parasitises weavers, bishops and sparrows. Months were left unset. The Kemp code VB was left unchanged.",
+  "sampleData": false,
+  "similar": [
+    {
+      "slug": "chrysococcyx-klaas",
+      "note": "Male Klaas’s Cuckoo has a white mark behind the eye only, no white wing marks, a dark eye, a green bill and white outer tail feathers."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Diederik Cuckoo",
+      "url": "https://newmansbirds.com/birds/diederik-cuckoo/",
+      "publisher": "Newman's Birds",
+      "year": 2026
+    }
+  ],
   "population": {
     "estimate": {
       "low": 16384,
@@ -35,8 +58,257 @@
     },
     "tierApplied": "D"
   },
-  "variants": [],
-  "viewNotes": [],
-  "calls": [],
-  "images": []
+  "variants": [
+    {
+      "age": "adult",
+      "sex": "male",
+      "season": "any",
+      "marks": {
+        "bill": {
+          "colour": "black",
+          "shape": null
+        },
+        "eye": {
+          "iris": "red",
+          "ring": null
+        },
+        "legs": {
+          "colour": null
+        },
+        "head": {
+          "crown": "green",
+          "face": null,
+          "throat": null,
+          "pattern": "White central stripe over the crown. White marks before and behind the eyes."
+        },
+        "upperparts": {
+          "back": "green",
+          "rump": null,
+          "pattern": null
+        },
+        "underparts": {
+          "breast": "white",
+          "belly": "white",
+          "pattern": null
+        },
+        "wings": {
+          "above": "green",
+          "below": null,
+          "pattern": "Multiple white marks on the wings."
+        },
+        "tail": {
+          "colour": null,
+          "shape": null
+        }
+      }
+    },
+    {
+      "age": "adult",
+      "sex": "female",
+      "season": "any",
+      "marks": {
+        "bill": {
+          "colour": "black",
+          "shape": null
+        },
+        "eye": {
+          "iris": "red",
+          "ring": null
+        },
+        "legs": {
+          "colour": null
+        },
+        "head": {
+          "crown": "green",
+          "face": null,
+          "throat": null,
+          "pattern": "White central stripe over the crown. White marks before and behind the eyes."
+        },
+        "upperparts": {
+          "back": "green",
+          "rump": null,
+          "pattern": "More coppery on the upper parts."
+        },
+        "underparts": {
+          "breast": "white",
+          "belly": "white",
+          "pattern": null
+        },
+        "wings": {
+          "above": "green",
+          "below": null,
+          "pattern": "Multiple white marks on the wings."
+        },
+        "tail": {
+          "colour": null,
+          "shape": null
+        }
+      }
+    },
+    {
+      "age": "immature",
+      "sex": "any",
+      "season": "any",
+      "marks": {
+        "bill": {
+          "colour": "red",
+          "shape": "Coral-red."
+        },
+        "eye": {
+          "iris": "blue",
+          "ring": null
+        },
+        "legs": {
+          "colour": null
+        },
+        "head": {
+          "crown": null,
+          "face": null,
+          "throat": null,
+          "pattern": null
+        },
+        "upperparts": {
+          "back": null,
+          "rump": null,
+          "pattern": null
+        },
+        "underparts": {
+          "breast": null,
+          "belly": null,
+          "pattern": "Spotted underparts."
+        },
+        "wings": {
+          "above": null,
+          "below": null,
+          "pattern": null
+        },
+        "tail": {
+          "colour": null,
+          "shape": null
+        }
+      }
+    },
+    {
+      "age": "immature",
+      "sex": "female",
+      "season": "any",
+      "marks": {
+        "bill": {
+          "colour": "red",
+          "shape": "Coral-red."
+        },
+        "eye": {
+          "iris": "blue",
+          "ring": null
+        },
+        "legs": {
+          "colour": null
+        },
+        "head": {
+          "crown": null,
+          "face": null,
+          "throat": null,
+          "pattern": null
+        },
+        "upperparts": {
+          "back": null,
+          "rump": null,
+          "pattern": "Mostly coppery above."
+        },
+        "underparts": {
+          "breast": null,
+          "belly": null,
+          "pattern": "Spotted underparts."
+        },
+        "wings": {
+          "above": null,
+          "below": null,
+          "pattern": null
+        },
+        "tail": {
+          "colour": null,
+          "shape": null
+        }
+      }
+    }
+  ],
+  "viewNotes": [
+    {
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "male",
+      "season": "any",
+      "note": "Bright green above and white below, with white before and behind the eye and white marks in the wing."
+    },
+    {
+      "view": "perched-front",
+      "age": "adult",
+      "sex": "male",
+      "season": "any",
+      "note": "White underparts, a red eye and a white stripe over the crown."
+    },
+    {
+      "view": "perched-back",
+      "age": "adult",
+      "sex": "male",
+      "season": "any",
+      "note": "Green back and white marks on the wings."
+    },
+    {
+      "view": "flight-above",
+      "age": "adult",
+      "sex": "male",
+      "season": "any",
+      "note": "The male also calls in flight. The upperwing is green with white marks."
+    },
+    {
+      "view": "flight-below",
+      "age": "adult",
+      "sex": "male",
+      "season": "any",
+      "note": "White below. The underside of the wing was not named."
+    }
+  ],
+  "calls": [
+    {
+      "sex": "male",
+      "type": "call",
+      "description": "A plaintive dee-dee-dee-deederik, from a treetop or in flight. The female calls deea-deea-DEEA. Grade A from Grahamstown. The catalogue types it as song and the filename says Diederik Cuckoo exc.mp3. The female phrase was not given a separate file.",
+      "recordings": [
+        {
+          "key": "xeno-canto/XC685548",
+          "source": "https://xeno-canto.org/685548",
+          "fileUrl": "https://xeno-canto.org/sounds/uploaded/SGLTZLDXYI/XC685548-Diederik%20Cuckoo%20exc.mp3",
+          "author": "Lynette Rudman",
+          "license": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ]
+    }
+  ],
+  "images": [
+    {
+      "key": "chrysococcyx-caprius/side.jpg",
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "male",
+      "season": "any",
+      "source": "https://www.inaturalist.org/observations/167560",
+      "fileUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/224066/large.jpg",
+      "author": "Greg Lasley",
+      "license": "CC BY-NC 4.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+      "aiGenerated": false,
+      "hosted": false,
+      "alt": "Male Diederik Cuckoo perched at Satara",
+      "caption": "Male Diederik Cuckoo at Satara, green above and white below, with a red eye and white marks on the head and wing. The observer labelled it a male."
+    }
+  ],
+  "research": {
+    "confidence": "medium",
+    "needsReview": false,
+    "note": "Newman calls it a common summer resident and does not name the months, so monthsPresent was left unset. Population figures were left unchanged."
+  }
 }

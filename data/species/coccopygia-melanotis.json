@@ -7,8 +7,45 @@
     "af": "Suidelike Swie"
   },
   "family": "estrildidae",
-  "summary": "The details for this species have not been published yet.",
-  "sampleData": true,
+  "status": "resident",
+  "size": {
+    "lengthCm": {
+      "min": 9,
+      "max": 10
+    },
+    "note": "Newman's Birds gives 9–10 cm."
+  },
+  "monthsPresent": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+  ],
+  "habitat": "Flocks in tall grass near forest fringes and thick bush, and in montane regions usually near wooded streams.",
+  "summary": "A common endemic resident. Both sexes have a yellow belly and vent, a whitish breast, dark green upper parts and a crimson rump and upper tail coverts. The male has a black face. The usual call is a soft swee-swee. Newman says its range does not overlap Yellow-bellied Waxbill. The Kemp code NB was left unchanged. No openly licensed Kruger photograph was found.",
+  "sampleData": false,
+  "similar": [
+    {
+      "slug": "estrilda-astrild",
+      "note": "Common Waxbill has a red mask and red bill. Swee Waxbill has a yellow belly, a dark green back and a red rump, and the male has a black face."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Swee Waxbill",
+      "url": "https://newmansbirds.com/birds/swee-waxbill/",
+      "publisher": "Newman's Birds",
+      "year": 2026
+    }
+  ],
   "population": {
     "estimate": {
       "low": 32,
@@ -35,8 +72,154 @@
     },
     "tierApplied": "D"
   },
-  "variants": [],
-  "viewNotes": [],
-  "calls": [],
-  "images": []
+  "variants": [
+    {
+      "age": "adult",
+      "sex": "male",
+      "season": "any",
+      "marks": {
+        "bill": {
+          "colour": null,
+          "shape": null
+        },
+        "eye": {
+          "iris": null,
+          "ring": null
+        },
+        "legs": {
+          "colour": null
+        },
+        "head": {
+          "crown": null,
+          "face": "black",
+          "throat": null,
+          "pattern": "Black face."
+        },
+        "upperparts": {
+          "back": "green",
+          "rump": "red",
+          "pattern": "Dark green above. Crimson rump and upper tail coverts."
+        },
+        "underparts": {
+          "breast": "white",
+          "belly": "yellow",
+          "pattern": "Breast whitish. Yellow belly and vent."
+        },
+        "wings": {
+          "above": null,
+          "below": null,
+          "pattern": null
+        },
+        "tail": {
+          "colour": null,
+          "shape": null
+        }
+      }
+    },
+    {
+      "age": "adult",
+      "sex": "female",
+      "season": "any",
+      "marks": {
+        "bill": {
+          "colour": null,
+          "shape": null
+        },
+        "eye": {
+          "iris": null,
+          "ring": null
+        },
+        "legs": {
+          "colour": null
+        },
+        "head": {
+          "crown": null,
+          "face": null,
+          "throat": null,
+          "pattern": null
+        },
+        "upperparts": {
+          "back": "green",
+          "rump": "red",
+          "pattern": "Dark green above. Crimson rump and upper tail coverts."
+        },
+        "underparts": {
+          "breast": "white",
+          "belly": "yellow",
+          "pattern": "Breast whitish. Yellow belly and vent."
+        },
+        "wings": {
+          "above": null,
+          "below": null,
+          "pattern": null
+        },
+        "tail": {
+          "colour": null,
+          "shape": null
+        }
+      }
+    }
+  ],
+  "viewNotes": [
+    {
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "male",
+      "season": "any",
+      "note": "Dark green above, yellow belly, red rump and a black face."
+    },
+    {
+      "view": "perched-front",
+      "age": "adult",
+      "sex": "male",
+      "season": "any",
+      "note": "Black face, whitish breast and yellow belly."
+    },
+    {
+      "view": "perched-back",
+      "age": "adult",
+      "sex": "male",
+      "season": "any",
+      "note": "Dark green upper parts and a crimson rump."
+    },
+    {
+      "view": "flight-above",
+      "age": "adult",
+      "sex": "male",
+      "season": "any",
+      "note": "Flushed flocks fly off calling. A wing pattern was not described."
+    },
+    {
+      "view": "flight-below",
+      "age": "adult",
+      "sex": "male",
+      "season": "any",
+      "note": "Yellow belly and vent."
+    }
+  ],
+  "calls": [
+    {
+      "sex": "any",
+      "type": "call",
+      "description": "A soft swee-swee. No grade A recording was in the catalogue set. Grade B call from the Drakensberg above Monk’s Cowl. The filename says the file was edited. It was not cleaned again.",
+      "recordings": [
+        {
+          "key": "xeno-canto/XC292907",
+          "source": "https://xeno-canto.org/292907",
+          "fileUrl": "https://xeno-canto.org/sounds/uploaded/TWAAJJHMEH/XC292907-Waxbill%20Swee_Sphinx_151123_56_A_edit.mp3",
+          "author": "Faansie Peacock",
+          "license": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ]
+    }
+  ],
+  "images": [],
+  "research": {
+    "confidence": "medium",
+    "needsReview": true,
+    "note": "Status is resident and all twelve months are listed. Newman calls it a common endemic resident. The Kemp code NB was left unchanged. No openly licensed research-grade photograph was found in the Kruger box. Population figures were left unchanged."
+  }
 }
