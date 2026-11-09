@@ -6,8 +6,8 @@
     "en": "Jacanas",
     "af": "Langtoon"
   },
-  "summary": "Field notes for this family are still to be written.",
-  "sampleData": true,
+  "summary": "Long-toed waterbirds that walk on floating vegetation. Kruger has two. African Jacana is the large chestnut bird with a blue bill. Lesser Jacana is the small one, with a cinnamon crown, a dark eyestripe and a white breast.",
+  "sampleData": false,
   "species": [
     {
       "slug": "actophilornis-africanus",

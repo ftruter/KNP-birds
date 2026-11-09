@@ -7,8 +7,30 @@
     "af": "Dwerglangtoon"
   },
   "family": "jacanidae",
-  "summary": "The details for this species have not been published yet.",
-  "sampleData": true,
+  "size": {
+    "lengthCm": {
+      "min": 15,
+      "max": 16
+    },
+    "note": "Wikipedia gives 15–16 cm and a weight of 41 g. Females average slightly larger than males."
+  },
+  "habitat": "Wetlands, walking on lily pads and aquatic grasses.",
+  "summary": "The smallest jacana. White breast, golden forehead, cinnamon crown and a dark eyestripe. The mantle and wings are darker, and the wings have a white trailing edge in flight. The sexes are nearly identical. Males have darker backs. Wikipedia does not say whether it is resident. The most common call is a low woot from both sexes. The distress chatter is hwi hwi hwi. The Kemp code NB was left unchanged.",
+  "sampleData": false,
+  "similar": [
+    {
+      "slug": "actophilornis-africanus",
+      "note": "An immature African Jacana has a black crown and an eyestripe and can look like an adult Lesser Jacana. Lesser Jacana is the small bird, with a cinnamon crown and a white breast. In flight it shows a white trailing edge."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Lesser jacana",
+      "url": "https://en.wikipedia.org/wiki/Lesser_jacana",
+      "publisher": "Wikipedia",
+      "year": 2026
+    }
+  ],
   "population": {
     "estimate": {
       "low": 8,
@@ -35,8 +57,171 @@
     },
     "tierApplied": "D"
   },
-  "variants": [],
-  "viewNotes": [],
-  "calls": [],
-  "images": []
+  "variants": [
+    {
+      "age": "adult",
+      "sex": "male",
+      "season": "any",
+      "marks": {
+        "bill": {
+          "colour": null,
+          "shape": null
+        },
+        "eye": {
+          "iris": null,
+          "ring": null
+        },
+        "legs": {
+          "colour": null
+        },
+        "head": {
+          "crown": "cinnamon",
+          "face": null,
+          "throat": null,
+          "pattern": "Golden forehead, cinnamon crown and a dark eyestripe."
+        },
+        "upperparts": {
+          "back": "dark-brown",
+          "rump": null,
+          "pattern": "Darker back than the female. Darker mantle."
+        },
+        "underparts": {
+          "breast": "white",
+          "belly": null,
+          "pattern": null
+        },
+        "wings": {
+          "above": null,
+          "below": null,
+          "pattern": "Darker wings, with a white trailing edge in flight."
+        },
+        "tail": {
+          "colour": null,
+          "shape": null
+        }
+      }
+    },
+    {
+      "age": "adult",
+      "sex": "female",
+      "season": "any",
+      "marks": {
+        "bill": {
+          "colour": null,
+          "shape": null
+        },
+        "eye": {
+          "iris": null,
+          "ring": null
+        },
+        "legs": {
+          "colour": null
+        },
+        "head": {
+          "crown": "cinnamon",
+          "face": null,
+          "throat": null,
+          "pattern": "Golden forehead, cinnamon crown and a dark eyestripe."
+        },
+        "upperparts": {
+          "back": null,
+          "rump": null,
+          "pattern": "Mantle darker than the underparts."
+        },
+        "underparts": {
+          "breast": "white",
+          "belly": null,
+          "pattern": null
+        },
+        "wings": {
+          "above": null,
+          "below": null,
+          "pattern": "White trailing edge in flight."
+        },
+        "tail": {
+          "colour": null,
+          "shape": null
+        }
+      }
+    }
+  ],
+  "viewNotes": [
+    {
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Small, with a cinnamon crown, a dark eyestripe and a white breast, walking on floating plants."
+    },
+    {
+      "view": "perched-front",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Golden forehead, dark eyestripe and white breast."
+    },
+    {
+      "view": "perched-back",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Cinnamon crown and a darker mantle."
+    },
+    {
+      "view": "flight-above",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Long legs trail behind the body. The wings have a white trailing edge."
+    },
+    {
+      "view": "flight-below",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "White breast. The legs trail in flight."
+    }
+  ],
+  "calls": [
+    {
+      "sex": "any",
+      "type": "call",
+      "description": "The most common call is a melodic, low woot from both sexes. A distress chatter is hwi hwi hwi. No grade A or B recording was in the set. Grade C call from Kasanka, Zambia, when the bird was flushed. The filename names Lesser Jacana. It was not cleaned.",
+      "recordings": [
+        {
+          "key": "xeno-canto/XC585195",
+          "source": "https://xeno-canto.org/585195",
+          "fileUrl": "https://xeno-canto.org/sounds/uploaded/IIJAXHKSCC/XC585195-Lesser%20Jacana%20%28flushed%29%2020200621%2CKasankaNP%2CZAMBIA.mp3",
+          "author": "Dries Van de Loock",
+          "license": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ]
+    }
+  ],
+  "images": [
+    {
+      "key": "microparra-capensis/side.jpg",
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "source": "https://www.inaturalist.org/observations/86262193",
+      "fileUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/142077997/large.jpg",
+      "author": "Roelof van der Breggen",
+      "license": "CC BY-NC 4.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+      "aiGenerated": false,
+      "hosted": false,
+      "alt": "Lesser Jacana walking on lily pads at Skukuza",
+      "caption": "Lesser Jacana at Skukuza, cinnamon crown and white underparts, with long toes spread on a lily pad."
+    }
+  ],
+  "research": {
+    "confidence": "medium",
+    "needsReview": true,
+    "note": "No Newman page was found. Wikipedia does not state residency, so status and months were left unset. The Kemp code NB was left unchanged. Population figures were left unchanged."
+  }
 }

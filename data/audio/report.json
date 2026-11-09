@@ -1,9 +1,9 @@
 {
   "source": "xeno-canto explore catalogue, API v3 recording fields",
   "counts": {
-    "slots": 292,
+    "slots": 294,
     "swapped": 17,
-    "added": 190,
+    "added": 192,
     "kept": 57,
     "none": 28,
     "cleaned": 0
@@ -4477,6 +4477,34 @@
       "quality": "B",
       "country": "South Africa",
       "locality": "Kirstenbosch Botanical Garden, Cape Town, Western Cape",
+      "cleaned": false,
+      "license": "CC BY-NC-SA 4.0"
+    },
+    {
+      "slug": "actophilornis-africanus",
+      "scientificName": "Actophilornis africanus",
+      "index": 0,
+      "type": "call",
+      "action": "added",
+      "from": [],
+      "to": "651037",
+      "quality": "A",
+      "country": "South Africa",
+      "locality": "City of Matlosana (near Klerksdorp), Southern DC, North West",
+      "cleaned": false,
+      "license": "CC BY-NC-SA 4.0"
+    },
+    {
+      "slug": "microparra-capensis",
+      "scientificName": "Microparra capensis",
+      "index": 0,
+      "type": "call",
+      "action": "added",
+      "from": [],
+      "to": "585195",
+      "quality": "C",
+      "country": "Zambia",
+      "locality": "Kasanka National Park",
       "cleaned": false,
       "license": "CC BY-NC-SA 4.0"
     }
