@@ -1046,6 +1046,16 @@
         }
       ]
     },
+    "colius-striatus": {
+      "calls": [
+        {
+          "index": 0,
+          "quality": {
+            "xeno-canto/XC1077960": "A"
+          }
+        }
+      ]
+    },
     "coracias-caudatus": {
       "calls": [
         {
@@ -1999,6 +2009,16 @@
           "index": 0,
           "quality": {
             "xeno-canto/XC802491": "A"
+          }
+        }
+      ]
+    },
+    "urocolius-indicus": {
+      "calls": [
+        {
+          "index": 0,
+          "quality": {
+            "xeno-canto/XC350135": "A"
           }
         }
       ]

@@ -6718,14 +6718,42 @@
       "slug": "colius-striatus",
       "scientificName": "Colius striatus",
       "commonName": "Speckled Mousebird",
-      "images": [],
-      "recordings": [],
+      "images": [
+        {
+          "key": "colius-striatus/side.jpg",
+          "author": "cotinga",
+          "licence": "CC BY-NC 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+          "sourceUrl": "https://www.inaturalist.org/observations/111431379",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ],
+      "recordings": [
+        {
+          "key": "xeno-canto/XC1077960",
+          "author": "JJSUN",
+          "licence": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "sourceUrl": "https://xeno-canto.org/1077960",
+          "aiGenerated": false,
+          "hosted": false,
+          "quality": "A",
+          "callType": "call"
+        }
+      ],
       "sources": [
         {
           "title": "Kemp A.C., Herholdt J.J., Whyte I. & Harrison J. (2001). Birds of the two largest national parks in South Africa: a method to generate estimates of population size for all species and assess their conservation ecology. S. Afr. J. Sci. 97: 393–403.",
           "url": "https://journals.co.za/doi/pdf/10.10520/EJC97367",
           "publisher": "South African Journal of Science",
           "year": 2001
+        },
+        {
+          "title": "Speckled Mousebird",
+          "url": "https://newmansbirds.com/birds/speckled-mousebird/",
+          "publisher": "Newman's Birds",
+          "year": 2026
         }
       ]
     },
@@ -15854,14 +15882,42 @@
       "slug": "urocolius-indicus",
       "scientificName": "Urocolius indicus",
       "commonName": "Red-faced Mousebird",
-      "images": [],
-      "recordings": [],
+      "images": [
+        {
+          "key": "urocolius-indicus/side.jpg",
+          "author": "moxcalvitiumtorgos",
+          "licence": "CC BY-NC 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+          "sourceUrl": "https://www.inaturalist.org/observations/181416240",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ],
+      "recordings": [
+        {
+          "key": "xeno-canto/XC350135",
+          "author": "Lynette Rudman",
+          "licence": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "sourceUrl": "https://xeno-canto.org/350135",
+          "aiGenerated": false,
+          "hosted": false,
+          "quality": "A",
+          "callType": "call"
+        }
+      ],
       "sources": [
         {
           "title": "Kemp A.C., Herholdt J.J., Whyte I. & Harrison J. (2001). Birds of the two largest national parks in South Africa: a method to generate estimates of population size for all species and assess their conservation ecology. S. Afr. J. Sci. 97: 393–403.",
           "url": "https://journals.co.za/doi/pdf/10.10520/EJC97367",
           "publisher": "South African Journal of Science",
           "year": 2001
+        },
+        {
+          "title": "Red-faced Mousebird",
+          "url": "https://newmansbirds.com/birds/red-faced-mousebird/",
+          "publisher": "Newman's Birds",
+          "year": 2026
         }
       ]
     },

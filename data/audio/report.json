@@ -1,9 +1,9 @@
 {
   "source": "xeno-canto explore catalogue, API v3 recording fields",
   "counts": {
-    "slots": 198,
+    "slots": 200,
     "swapped": 17,
-    "added": 99,
+    "added": 101,
     "kept": 57,
     "none": 25,
     "cleaned": 0
@@ -3146,6 +3146,34 @@
       "quality": "A",
       "country": "South Africa",
       "locality": "Kruger Park (near Skukuza), Ehlanzeni District Municipality, Mpumalanga",
+      "cleaned": false,
+      "license": "CC BY-NC-SA 4.0"
+    },
+    {
+      "slug": "colius-striatus",
+      "scientificName": "Colius striatus",
+      "index": 0,
+      "type": "call",
+      "action": "added",
+      "from": [],
+      "to": "1077960",
+      "quality": "A",
+      "country": "South Africa",
+      "locality": "deHoop Nature Reserve, Western Cape",
+      "cleaned": false,
+      "license": "CC BY-NC-SA 4.0"
+    },
+    {
+      "slug": "urocolius-indicus",
+      "scientificName": "Urocolius indicus",
+      "index": 0,
+      "type": "call",
+      "action": "added",
+      "from": [],
+      "to": "350135",
+      "quality": "A",
+      "country": "South Africa",
+      "locality": "Grahamstown, Western District, Eastern Cape",
       "cleaned": false,
       "license": "CC BY-NC-SA 4.0"
     }
