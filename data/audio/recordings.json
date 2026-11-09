@@ -2986,6 +2986,26 @@
           }
         }
       ]
+    },
+    "actophilornis-africanus": {
+      "calls": [
+        {
+          "index": 0,
+          "quality": {
+            "xeno-canto/XC651037": "A"
+          }
+        }
+      ]
+    },
+    "microparra-capensis": {
+      "calls": [
+        {
+          "index": 0,
+          "quality": {
+            "xeno-canto/XC585195": "C"
+          }
+        }
+      ]
     }
   }
 }

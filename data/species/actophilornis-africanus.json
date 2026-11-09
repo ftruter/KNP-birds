@@ -7,8 +7,30 @@
     "af": "Grootlangtoon"
   },
   "family": "jacanidae",
-  "summary": "The details for this species have not been published yet.",
-  "sampleData": true,
+  "size": {
+    "lengthCm": {
+      "min": 40,
+      "max": 40
+    },
+    "note": "Newman's Birds gives 40 cm."
+  },
+  "habitat": "Individuals or scattered groups walk on floating vegetation on lily-covered pans, dams and river backwaters.",
+  "summary": "A common resident. Chestnut body, exceptionally long toes, and a blue frontal shield and bill. The head and neck are black above and white below. The immature has a black crown and a black stripe through the eye. The call is kyowrrr, given standing or flying. The Kemp code VB was left unchanged.",
+  "sampleData": false,
+  "similar": [
+    {
+      "slug": "microparra-capensis",
+      "note": "Lesser Jacana is much smaller, with a cinnamon crown, a dark eyestripe and a white breast. An immature African Jacana also has a black crown and an eyestripe, so size is the separation Newman points to."
+    }
+  ],
+  "sources": [
+    {
+      "title": "African Jacana",
+      "url": "https://newmansbirds.com/birds/african-jacana/",
+      "publisher": "Newman's Birds",
+      "year": 2026
+    }
+  ],
   "population": {
     "estimate": {
       "low": 1024,
@@ -35,8 +57,186 @@
     },
     "tierApplied": "D"
   },
-  "variants": [],
-  "viewNotes": [],
-  "calls": [],
-  "images": []
+  "variants": [
+    {
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "marks": {
+        "bill": {
+          "colour": "blue",
+          "shape": "Blue frontal shield and bill."
+        },
+        "eye": {
+          "iris": null,
+          "ring": null
+        },
+        "legs": {
+          "colour": null
+        },
+        "head": {
+          "crown": "black",
+          "face": null,
+          "throat": "white",
+          "pattern": "Head and neck black above and white below."
+        },
+        "upperparts": {
+          "back": "chestnut",
+          "rump": null,
+          "pattern": "Rufous-bodied, described as chestnut."
+        },
+        "underparts": {
+          "breast": "chestnut",
+          "belly": "chestnut",
+          "pattern": null
+        },
+        "wings": {
+          "above": null,
+          "below": null,
+          "pattern": null
+        },
+        "tail": {
+          "colour": null,
+          "shape": null
+        }
+      }
+    },
+    {
+      "age": "immature",
+      "sex": "any",
+      "season": "any",
+      "marks": {
+        "bill": {
+          "colour": null,
+          "shape": null
+        },
+        "eye": {
+          "iris": null,
+          "ring": null
+        },
+        "legs": {
+          "colour": null
+        },
+        "head": {
+          "crown": "black",
+          "face": null,
+          "throat": null,
+          "pattern": "Black stripe through the eye and a black crown."
+        },
+        "upperparts": {
+          "back": null,
+          "rump": null,
+          "pattern": null
+        },
+        "underparts": {
+          "breast": null,
+          "belly": null,
+          "pattern": null
+        },
+        "wings": {
+          "above": null,
+          "below": null,
+          "pattern": null
+        },
+        "tail": {
+          "colour": null,
+          "shape": null
+        }
+      }
+    }
+  ],
+  "viewNotes": [
+    {
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Chestnut body, black crown, white neck and a blue bill, with very long toes."
+    },
+    {
+      "view": "perched-front",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "White throat and neck, black crown and a blue frontal shield."
+    },
+    {
+      "view": "perched-back",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Chestnut back and a black crown."
+    },
+    {
+      "view": "flight-above",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "It chases in low flight while calling. A wing colour was not named."
+    },
+    {
+      "view": "flight-below",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Chestnut underparts. The neck is white."
+    }
+  ],
+  "calls": [
+    {
+      "sex": "any",
+      "type": "call",
+      "description": "kyowrrr, while standing or flying. Grade A call from near Klerksdorp. The filename is Very good Jacana.mp3.",
+      "recordings": [
+        {
+          "key": "xeno-canto/XC651037",
+          "source": "https://xeno-canto.org/651037",
+          "fileUrl": "https://xeno-canto.org/sounds/uploaded/HMBDEWEZVS/XC651037-6%20Very%20good%20Jacana.mp3",
+          "author": "Tony Archer",
+          "license": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ]
+    }
+  ],
+  "images": [
+    {
+      "key": "actophilornis-africanus/side.jpg",
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "source": "https://www.inaturalist.org/observations/150560860",
+      "fileUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/259642047/large.jpg",
+      "author": "Pavel Shukov",
+      "license": "CC BY-NC 4.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+      "aiGenerated": false,
+      "hosted": false,
+      "alt": "African Jacana in reeds, chestnut body and blue bill",
+      "caption": "African Jacana in the Ehlanzeni district, chestnut below, with a blue bill and a white neck."
+    }
+  ],
+  "research": {
+    "confidence": "medium",
+    "needsReview": false,
+    "note": "Status is resident and all twelve months are listed. Newman calls it a common resident. The Kemp code VB was left unchanged. Population figures were left unchanged."
+  },
+  "status": "resident",
+  "monthsPresent": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+  ]
 }
