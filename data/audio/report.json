@@ -1,9 +1,9 @@
 {
   "source": "xeno-canto explore catalogue, API v3 recording fields",
   "counts": {
-    "slots": 145,
+    "slots": 147,
     "swapped": 17,
-    "added": 49,
+    "added": 51,
     "kept": 57,
     "none": 22,
     "cleaned": 0
@@ -2389,6 +2389,34 @@
       "quality": "A",
       "country": "South Africa",
       "locality": "Kruger Park (near Skukuza), Ehlanzeni District Municipality, Mpumalanga",
+      "cleaned": false,
+      "license": "CC BY-NC-SA 4.0"
+    },
+    {
+      "slug": "buphagus-africanus",
+      "scientificName": "Buphagus africanus",
+      "index": 0,
+      "type": "call",
+      "action": "added",
+      "from": [],
+      "to": "756251",
+      "quality": "B",
+      "country": "South Africa",
+      "locality": "Sabie Game Reserve (near Sabie Park), Ehlanzeni District Municipality",
+      "cleaned": false,
+      "license": "CC BY-NC-SA 4.0"
+    },
+    {
+      "slug": "buphagus-erythroryncha",
+      "scientificName": "Buphagus erythroryncha",
+      "index": 0,
+      "type": "call",
+      "action": "added",
+      "from": [],
+      "to": "237786",
+      "quality": "A",
+      "country": "South Africa",
+      "locality": "Kruger NP",
       "cleaned": false,
       "license": "CC BY-NC-SA 4.0"
     }

@@ -466,6 +466,26 @@
         }
       ]
     },
+    "buphagus-africanus": {
+      "calls": [
+        {
+          "index": 0,
+          "quality": {
+            "xeno-canto/XC756251": "B"
+          }
+        }
+      ]
+    },
+    "buphagus-erythroryncha": {
+      "calls": [
+        {
+          "index": 0,
+          "quality": {
+            "xeno-canto/XC237786": "A"
+          }
+        }
+      ]
+    },
     "buteo-buteo": {
       "calls": [
         {
