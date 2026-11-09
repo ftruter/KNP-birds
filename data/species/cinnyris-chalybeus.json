@@ -7,8 +7,17 @@
     "af": "Klein-rooibandsuikerbekkie"
   },
   "family": "nectariniidae",
-  "summary": "The details for this species have not been published yet.",
-  "sampleData": true,
+  "habitat": "The colour key says lowland woodland. The description on the page is a red-breasted sunbird and was not used for habitat.",
+  "summary": "The page names Cinnyris chalybeus and gives 12 cm. Its colour key says dull grey-brown, which is not used, and its description is the red-breasted sunbird used for Scarlet-chested Sunbird. No matching plumage or call is stored. It is endemic. No Kemp estimate is stored.",
+  "sampleData": false,
+  "sources": [
+    {
+      "title": "Southern Double-collared Sunbird",
+      "url": "https://newmansbirds.com/birds/southern-double-collared-sunbird/",
+      "publisher": "Newman's Birds",
+      "year": 2026
+    }
+  ],
   "population": {
     "estimate": {
       "low": null,
@@ -23,6 +32,53 @@
   },
   "variants": [],
   "viewNotes": [],
-  "calls": [],
-  "images": []
+  "calls": [
+    {
+      "sex": "any",
+      "type": "call",
+      "description": "No matching Newman sentence describes the call. Grade A call from Kurisa Moya, Tzaneen, Limpopo. The filename is XC452668-Southern DC Sunbird K Moya 190115-062707.mp3.",
+      "recordings": [
+        {
+          "key": "xeno-canto/XC452668",
+          "source": "https://xeno-canto.org/452668",
+          "fileUrl": "https://xeno-canto.org/sounds/uploaded/DNKBTPCMSQ/XC452668-Southern%20DC%20Sunbird%20K%20Moya%20190115-062707.mp3",
+          "author": "Derek Solomon",
+          "license": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ]
+    }
+  ],
+  "images": [
+    {
+      "key": "cinnyris-chalybeus/side.jpg",
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "male",
+      "season": "any",
+      "source": "https://www.inaturalist.org/observations/82171931",
+      "fileUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/134843472/large.jpeg",
+      "author": "Peter Lupton",
+      "license": "CC BY-NC 4.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+      "aiGenerated": false,
+      "hosted": false,
+      "alt": "Sunbird on a flowering tree, green head and a red breast band",
+      "caption": "Southern Double-collared Sunbird in the Ehlanzeni district, green on the head with a red breast band and a pale belly. Newman’s matching text does not describe this plumage."
+    }
+  ],
+  "research": {
+    "confidence": "low",
+    "needsReview": true,
+    "note": "The scientific name and the 12 cm size are kept. The colour key and the description on the page do not agree with each other, so neither is stored as plumage. Status is unset. No Kemp block was present."
+  },
+  "size": {
+    "lengthCm": {
+      "min": 12,
+      "max": 12
+    },
+    "note": "Newman's Birds gives 12 cm."
+  }
 }

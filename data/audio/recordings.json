@@ -3416,6 +3416,106 @@
           }
         }
       ]
+    },
+    "chalcomitra-amethystina": {
+      "calls": [
+        {
+          "index": 0,
+          "quality": {
+            "xeno-canto/XC438652": "A"
+          }
+        }
+      ]
+    },
+    "chalcomitra-senegalensis": {
+      "calls": [
+        {
+          "index": 0,
+          "quality": {
+            "xeno-canto/XC1149407": "A"
+          }
+        }
+      ]
+    },
+    "cinnyris-afer": {
+      "calls": [
+        {
+          "index": 0,
+          "quality": {
+            "xeno-canto/XC249315": "A"
+          }
+        }
+      ]
+    },
+    "cinnyris-bifasciatus": {
+      "calls": [
+        {
+          "index": 0,
+          "quality": {
+            "xeno-canto/XC345213": "A"
+          }
+        }
+      ]
+    },
+    "cinnyris-chalybeus": {
+      "calls": [
+        {
+          "index": 0,
+          "quality": {
+            "xeno-canto/XC452668": "A"
+          }
+        }
+      ]
+    },
+    "cinnyris-mariquensis": {
+      "calls": [
+        {
+          "index": 0,
+          "quality": {
+            "xeno-canto/XC803757": "A"
+          }
+        }
+      ]
+    },
+    "cinnyris-talatala": {
+      "calls": [
+        {
+          "index": 0,
+          "quality": {
+            "xeno-canto/XC549784": "A"
+          }
+        }
+      ]
+    },
+    "cyanomitra-olivacea": {
+      "calls": [
+        {
+          "index": 0,
+          "quality": {
+            "xeno-canto/XC1009162": "A"
+          }
+        }
+      ]
+    },
+    "hedydipna-collaris": {
+      "calls": [
+        {
+          "index": 0,
+          "quality": {
+            "xeno-canto/XC378029": "A"
+          }
+        }
+      ]
+    },
+    "nectarinia-famosa": {
+      "calls": [
+        {
+          "index": 0,
+          "quality": {
+            "xeno-canto/XC342018": "A"
+          }
+        }
+      ]
     }
   }
 }

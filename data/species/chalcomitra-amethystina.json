@@ -7,8 +7,29 @@
     "af": "Swartsuikerbekkie"
   },
   "family": "nectariniidae",
-  "summary": "The details for this species have not been published yet.",
-  "sampleData": true,
+  "habitat": "Singly or in pairs in woodland, forest and riverine forest fringes, less often in bushveld, and frequently in suburbia.",
+  "summary": "A common resident. At a distance the male looks all black. At close range it has an iridescent green cap and violet throat, shoulder and rump patches. The colour key says an iridescent purple throat and shoulder-patches. The female is large, with creamy underparts, a dusky throat and a pale-yellow moustachial streak. The call is tschiek or zit, and a stuttering chichichichi. That description is printed on the Olive Sunbird page; the Amethyst page’s own description is a green sunbird and was not used. The Kemp paper name Black Sunbird and the code RB were left unchanged.",
+  "sampleData": false,
+  "sources": [
+    {
+      "title": "Amethyst Sunbird",
+      "url": "https://newmansbirds.com/birds/amethyst-sunbird/",
+      "publisher": "Newman's Birds",
+      "year": 2026
+    },
+    {
+      "title": "Olive Sunbird",
+      "url": "https://newmansbirds.com/birds/olive-sunbird/",
+      "publisher": "Newman's Birds",
+      "year": 2026
+    },
+    {
+      "title": "Kemp A.C., Herholdt J.J., Whyte I. & Harrison J. (2001). Birds of the two largest national parks in South Africa: a method to generate estimates of population size for all species and assess their conservation ecology. S. Afr. J. Sci. 97: 393–403.",
+      "url": "https://journals.co.za/doi/pdf/10.10520/EJC97367",
+      "publisher": "South African Journal of Science",
+      "year": 2001
+    }
+  ],
   "population": {
     "estimate": {
       "low": 512,
@@ -35,8 +56,231 @@
     },
     "tierApplied": "D"
   },
-  "variants": [],
-  "viewNotes": [],
-  "calls": [],
-  "images": []
+  "variants": [
+    {
+      "age": "adult",
+      "sex": "male",
+      "season": "any",
+      "marks": {
+        "bill": {
+          "colour": null,
+          "shape": null
+        },
+        "eye": {
+          "iris": null,
+          "ring": null
+        },
+        "legs": {
+          "colour": null
+        },
+        "head": {
+          "crown": "green",
+          "face": null,
+          "throat": null,
+          "pattern": "Iridescent green cap and a violet throat. The colour key says the throat is iridescent purple. Violet and purple are not stored as one token."
+        },
+        "upperparts": {
+          "back": null,
+          "rump": null,
+          "pattern": "Appears all black. Violet shoulder and rump patches."
+        },
+        "underparts": {
+          "breast": null,
+          "belly": null
+        },
+        "wings": {
+          "above": null,
+          "below": null,
+          "pattern": "The black appearance includes the body. A separate wing colour was not named."
+        },
+        "tail": {
+          "colour": null,
+          "shape": null
+        }
+      }
+    },
+    {
+      "age": "adult",
+      "sex": "female",
+      "season": "any",
+      "marks": {
+        "bill": {
+          "colour": null,
+          "shape": "Large sunbird. A separate bill colour was not named."
+        },
+        "eye": {
+          "iris": null,
+          "ring": null
+        },
+        "legs": {
+          "colour": null
+        },
+        "head": {
+          "crown": null,
+          "face": null,
+          "throat": null,
+          "pattern": "Dusky throat with a pale-yellow moustachial streak."
+        },
+        "upperparts": {
+          "back": null,
+          "rump": null
+        },
+        "underparts": {
+          "breast": null,
+          "belly": null,
+          "pattern": "Creamy underparts. Cream is a colour token but the text says creamy, so the colour is left blank."
+        },
+        "wings": {
+          "above": null,
+          "below": null
+        },
+        "tail": {
+          "colour": null,
+          "shape": null
+        }
+      }
+    }
+  ],
+  "viewNotes": [
+    {
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "male",
+      "season": "any",
+      "note": "Looks all black until the green cap and violet throat, shoulder and rump show."
+    },
+    {
+      "view": "perched-front",
+      "age": "adult",
+      "sex": "male",
+      "season": "any",
+      "note": "Violet or purple throat and a green cap."
+    },
+    {
+      "view": "perched-back",
+      "age": "adult",
+      "sex": "male",
+      "season": "any",
+      "note": "Black-looking back with a violet rump patch."
+    },
+    {
+      "view": "flight-above",
+      "age": "adult",
+      "sex": "male",
+      "season": "any",
+      "note": "A flight pattern was not described. The call is often given in flight."
+    },
+    {
+      "view": "flight-below",
+      "age": "adult",
+      "sex": "male",
+      "season": "any",
+      "note": "Black-looking underparts and a violet throat."
+    },
+    {
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "female",
+      "season": "any",
+      "note": "Large, with creamy underparts, a dusky throat and a pale-yellow moustachial streak."
+    },
+    {
+      "view": "perched-front",
+      "age": "adult",
+      "sex": "female",
+      "season": "any",
+      "note": "Dusky throat and pale-yellow moustache."
+    },
+    {
+      "view": "perched-back",
+      "age": "adult",
+      "sex": "female",
+      "season": "any",
+      "note": "The female upperparts were not described."
+    },
+    {
+      "view": "flight-above",
+      "age": "adult",
+      "sex": "female",
+      "season": "any",
+      "note": "A female flight pattern was not described."
+    },
+    {
+      "view": "flight-below",
+      "age": "adult",
+      "sex": "female",
+      "season": "any",
+      "note": "Creamy underparts."
+    }
+  ],
+  "calls": [
+    {
+      "sex": "any",
+      "type": "call",
+      "description": "tschiek or zit, often in flight, and a stuttering chichichichi. The male also gives a subdued warbling song while concealed. This text is on the Olive Sunbird page. Grade A call from Grahamstown. The filename is XC438652-Amethyst sunbird male singing belmont.mp3, so the file is a song even though the catalogue type is call.",
+      "recordings": [
+        {
+          "key": "xeno-canto/XC438652",
+          "source": "https://xeno-canto.org/438652",
+          "fileUrl": "https://xeno-canto.org/sounds/uploaded/SGLTZLDXYI/XC438652-Amethyst%20sunbird%20male%20singing%20belmont.mp3",
+          "author": "Lynette Rudman",
+          "license": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ]
+    }
+  ],
+  "images": [
+    {
+      "key": "chalcomitra-amethystina/side.jpg",
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "female",
+      "season": "any",
+      "source": "https://www.inaturalist.org/observations/400122390",
+      "fileUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/734191472/large.jpg",
+      "author": "Africa Gomez",
+      "license": "CC BY-NC 4.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+      "aiGenerated": false,
+      "hosted": false,
+      "alt": "Amethyst Sunbird perched, long bill and streaked underparts",
+      "caption": "Amethyst Sunbird in the Ehlanzeni district, a streaked bird with a long bill and a dark throat. The purple throat of the male is not what this photograph shows."
+    }
+  ],
+  "research": {
+    "confidence": "medium",
+    "needsReview": true,
+    "note": "The Amethyst colour key and the 15 cm size are on the Amethyst page. The plumage and voice used here are printed on the Olive Sunbird page and match this colour key, which is why the record needs review. Population figures and the Kemp code RB were left unchanged."
+  },
+  "size": {
+    "lengthCm": {
+      "min": 15,
+      "max": 15
+    },
+    "note": "Newman's Birds gives 15 cm on the Amethyst Sunbird page."
+  },
+  "similar": [
+    {
+      "slug": "chalcomitra-senegalensis",
+      "note": "Scarlet-chested Sunbird has a large red breast. Newman says it replaces Amethyst Sunbird in northerly, low-lying places, with a wide overlap."
+    }
+  ],
+  "status": "resident",
+  "monthsPresent": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+  ]
 }

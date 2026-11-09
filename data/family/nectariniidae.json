@@ -6,8 +6,8 @@
     "en": "Sunbirds",
     "af": "Suikerbekkies"
   },
-  "summary": "Field notes for this family are still to be written.",
-  "sampleData": true,
+  "summary": "Sunbirds of woodland, forest and bushveld. Scarlet-chested Sunbird has a large red breast. Marico Sunbird has a maroon band and a black belly. White-bellied Sunbird is blue-green above and white below. Collared Sunbird is green and yellow. Amethyst Sunbird looks black until the purple throat shows. Several Newman description paragraphs are printed on the wrong species page, and those mismatches are recorded on each account.",
+  "sampleData": false,
   "species": [
     {
       "slug": "chalcomitra-amethystina",

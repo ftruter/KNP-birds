@@ -5704,14 +5704,48 @@
       "slug": "chalcomitra-amethystina",
       "scientificName": "Chalcomitra amethystina",
       "commonName": "Amethyst Sunbird",
-      "images": [],
-      "recordings": [],
+      "images": [
+        {
+          "key": "chalcomitra-amethystina/side.jpg",
+          "author": "Africa Gomez",
+          "licence": "CC BY-NC 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+          "sourceUrl": "https://www.inaturalist.org/observations/400122390",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ],
+      "recordings": [
+        {
+          "key": "xeno-canto/XC438652",
+          "author": "Lynette Rudman",
+          "licence": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "sourceUrl": "https://xeno-canto.org/438652",
+          "aiGenerated": false,
+          "hosted": false,
+          "quality": "A",
+          "callType": "call"
+        }
+      ],
       "sources": [
         {
           "title": "Kemp A.C., Herholdt J.J., Whyte I. & Harrison J. (2001). Birds of the two largest national parks in South Africa: a method to generate estimates of population size for all species and assess their conservation ecology. S. Afr. J. Sci. 97: 393–403.",
           "url": "https://journals.co.za/doi/pdf/10.10520/EJC97367",
           "publisher": "South African Journal of Science",
           "year": 2001
+        },
+        {
+          "title": "Amethyst Sunbird",
+          "url": "https://newmansbirds.com/birds/amethyst-sunbird/",
+          "publisher": "Newman's Birds",
+          "year": 2026
+        },
+        {
+          "title": "Olive Sunbird",
+          "url": "https://newmansbirds.com/birds/olive-sunbird/",
+          "publisher": "Newman's Birds",
+          "year": 2026
         }
       ]
     },
@@ -5719,14 +5753,48 @@
       "slug": "chalcomitra-senegalensis",
       "scientificName": "Chalcomitra senegalensis",
       "commonName": "Scarlet-chested Sunbird",
-      "images": [],
-      "recordings": [],
+      "images": [
+        {
+          "key": "chalcomitra-senegalensis/side.jpg",
+          "author": "Duncan McKenzie",
+          "licence": "CC BY-NC 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+          "sourceUrl": "https://www.inaturalist.org/observations/203074758",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ],
+      "recordings": [
+        {
+          "key": "xeno-canto/XC1149407",
+          "author": "African Bioacoustics Community",
+          "licence": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "sourceUrl": "https://xeno-canto.org/1149407",
+          "aiGenerated": false,
+          "hosted": false,
+          "quality": "A",
+          "callType": "call"
+        }
+      ],
       "sources": [
         {
           "title": "Kemp A.C., Herholdt J.J., Whyte I. & Harrison J. (2001). Birds of the two largest national parks in South Africa: a method to generate estimates of population size for all species and assess their conservation ecology. S. Afr. J. Sci. 97: 393–403.",
           "url": "https://journals.co.za/doi/pdf/10.10520/EJC97367",
           "publisher": "South African Journal of Science",
           "year": 2001
+        },
+        {
+          "title": "Scarlet-chested Sunbird",
+          "url": "https://newmansbirds.com/birds/scarlet-chested-sunbird/",
+          "publisher": "Newman's Birds",
+          "year": 2026
+        },
+        {
+          "title": "Southern Double-collared Sunbird",
+          "url": "https://newmansbirds.com/birds/southern-double-collared-sunbird/",
+          "publisher": "Newman's Birds",
+          "year": 2026
         }
       ]
     },
@@ -6359,17 +6427,125 @@
       ]
     },
     {
+      "slug": "cinnyris-afer",
+      "scientificName": "Cinnyris afer",
+      "commonName": "Greater Double-collared Sunbird",
+      "images": [
+        {
+          "key": "cinnyris-afer/side.jpg",
+          "author": "Jean-Paul Boerekamps",
+          "licence": "CC0 1.0",
+          "licenceUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+          "sourceUrl": "https://www.inaturalist.org/observations/66865997",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ],
+      "recordings": [
+        {
+          "key": "xeno-canto/XC249315",
+          "author": "Lynette Rudman",
+          "licence": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "sourceUrl": "https://xeno-canto.org/249315",
+          "aiGenerated": false,
+          "hosted": false,
+          "quality": "A",
+          "callType": "call"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Greater Double-collared Sunbird",
+          "url": "https://newmansbirds.com/birds/greater-double-collared-sunbird/",
+          "publisher": "Newman's Birds",
+          "year": 2026
+        }
+      ]
+    },
+    {
       "slug": "cinnyris-bifasciatus",
       "scientificName": "Cinnyris bifasciatus",
       "commonName": "Purple-banded Sunbird",
-      "images": [],
-      "recordings": [],
+      "images": [
+        {
+          "key": "cinnyris-bifasciatus/side.jpg",
+          "author": "Duncan McKenzie",
+          "licence": "CC BY-NC 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+          "sourceUrl": "https://www.inaturalist.org/observations/203074679",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ],
+      "recordings": [
+        {
+          "key": "xeno-canto/XC345213",
+          "author": "James Bradley",
+          "licence": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "sourceUrl": "https://xeno-canto.org/345213",
+          "aiGenerated": false,
+          "hosted": false,
+          "quality": "A",
+          "callType": "call"
+        }
+      ],
       "sources": [
         {
           "title": "Kemp A.C., Herholdt J.J., Whyte I. & Harrison J. (2001). Birds of the two largest national parks in South Africa: a method to generate estimates of population size for all species and assess their conservation ecology. S. Afr. J. Sci. 97: 393–403.",
           "url": "https://journals.co.za/doi/pdf/10.10520/EJC97367",
           "publisher": "South African Journal of Science",
           "year": 2001
+        },
+        {
+          "title": "Purplebanded Sunbird. In Harrison, J.A. et al. (eds). The Atlas of Southern African Birds. Vol. 2.",
+          "url": "http://sabap2.adu.org.za/docs/sabap1/780.pdf",
+          "publisher": "The Atlas of Southern African Birds",
+          "year": 1997
+        },
+        {
+          "title": "Purple-banded sunbird",
+          "url": "https://en.wikipedia.org/wiki/Purple-banded_sunbird",
+          "publisher": "Wikipedia",
+          "year": 2026
+        }
+      ]
+    },
+    {
+      "slug": "cinnyris-chalybeus",
+      "scientificName": "Cinnyris chalybeus",
+      "commonName": "Southern Double-collared Sunbird",
+      "images": [
+        {
+          "key": "cinnyris-chalybeus/side.jpg",
+          "author": "Peter Lupton",
+          "licence": "CC BY-NC 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+          "sourceUrl": "https://www.inaturalist.org/observations/82171931",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ],
+      "recordings": [
+        {
+          "key": "xeno-canto/XC452668",
+          "author": "Derek Solomon",
+          "licence": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "sourceUrl": "https://xeno-canto.org/452668",
+          "aiGenerated": false,
+          "hosted": false,
+          "quality": "A",
+          "callType": "call"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Southern Double-collared Sunbird",
+          "url": "https://newmansbirds.com/birds/southern-double-collared-sunbird/",
+          "publisher": "Newman's Birds",
+          "year": 2026
         }
       ]
     },
@@ -6377,14 +6553,48 @@
       "slug": "cinnyris-mariquensis",
       "scientificName": "Cinnyris mariquensis",
       "commonName": "Marico Sunbird",
-      "images": [],
-      "recordings": [],
+      "images": [
+        {
+          "key": "cinnyris-mariquensis/side.jpg",
+          "author": "Daniel Correia",
+          "licence": "CC BY-NC 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+          "sourceUrl": "https://www.inaturalist.org/observations/177539202",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ],
+      "recordings": [
+        {
+          "key": "xeno-canto/XC803757",
+          "author": "Maarten Sluijter",
+          "licence": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "sourceUrl": "https://xeno-canto.org/803757",
+          "aiGenerated": false,
+          "hosted": false,
+          "quality": "A",
+          "callType": "call"
+        }
+      ],
       "sources": [
         {
           "title": "Kemp A.C., Herholdt J.J., Whyte I. & Harrison J. (2001). Birds of the two largest national parks in South Africa: a method to generate estimates of population size for all species and assess their conservation ecology. S. Afr. J. Sci. 97: 393–403.",
           "url": "https://journals.co.za/doi/pdf/10.10520/EJC97367",
           "publisher": "South African Journal of Science",
           "year": 2001
+        },
+        {
+          "title": "Marico Sunbird",
+          "url": "https://newmansbirds.com/birds/marico-sunbird/",
+          "publisher": "Newman's Birds",
+          "year": 2026
+        },
+        {
+          "title": "Scarlet-chested Sunbird",
+          "url": "https://newmansbirds.com/birds/scarlet-chested-sunbird/",
+          "publisher": "Newman's Birds",
+          "year": 2026
         }
       ]
     },
@@ -6392,14 +6602,48 @@
       "slug": "cinnyris-talatala",
       "scientificName": "Cinnyris talatala",
       "commonName": "White-bellied Sunbird",
-      "images": [],
-      "recordings": [],
+      "images": [
+        {
+          "key": "cinnyris-talatala/side.jpg",
+          "author": "Wynand Uys",
+          "licence": "CC BY 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by/4.0/",
+          "sourceUrl": "https://www.inaturalist.org/observations/128293546",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ],
+      "recordings": [
+        {
+          "key": "xeno-canto/XC549784",
+          "author": "Derek Solomon",
+          "licence": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "sourceUrl": "https://xeno-canto.org/549784",
+          "aiGenerated": false,
+          "hosted": false,
+          "quality": "A",
+          "callType": "call"
+        }
+      ],
       "sources": [
         {
           "title": "Kemp A.C., Herholdt J.J., Whyte I. & Harrison J. (2001). Birds of the two largest national parks in South Africa: a method to generate estimates of population size for all species and assess their conservation ecology. S. Afr. J. Sci. 97: 393–403.",
           "url": "https://journals.co.za/doi/pdf/10.10520/EJC97367",
           "publisher": "South African Journal of Science",
           "year": 2001
+        },
+        {
+          "title": "White-bellied Sunbird",
+          "url": "https://newmansbirds.com/birds/white-bellied-sunbird/",
+          "publisher": "Newman's Birds",
+          "year": 2026
+        },
+        {
+          "title": "Malachite Sunbird",
+          "url": "https://newmansbirds.com/birds/malachite-sunbird/",
+          "publisher": "Newman's Birds",
+          "year": 2026
         }
       ]
     },
@@ -9033,6 +9277,49 @@
         {
           "title": "Temminck’s Courser",
           "url": "https://newmansbirds.com/birds/temmincks-courser/",
+          "publisher": "Newman's Birds",
+          "year": 2026
+        }
+      ]
+    },
+    {
+      "slug": "cyanomitra-olivacea",
+      "scientificName": "Cyanomitra olivacea",
+      "commonName": "Olive Sunbird",
+      "images": [
+        {
+          "key": "cyanomitra-olivacea/side.jpg",
+          "author": "Brian du Preez",
+          "licence": "CC BY-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+          "sourceUrl": "https://www.inaturalist.org/observations/10894702",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ],
+      "recordings": [
+        {
+          "key": "xeno-canto/XC1009162",
+          "author": "Richard White",
+          "licence": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "sourceUrl": "https://xeno-canto.org/1009162",
+          "aiGenerated": false,
+          "hosted": false,
+          "quality": "A",
+          "callType": "call"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Olive Sunbird",
+          "url": "https://newmansbirds.com/birds/olive-sunbird/",
+          "publisher": "Newman's Birds",
+          "year": 2026
+        },
+        {
+          "title": "Collared Sunbird",
+          "url": "https://newmansbirds.com/birds/collared-sunbird/",
           "publisher": "Newman's Birds",
           "year": 2026
         }
@@ -11863,14 +12150,42 @@
       "slug": "hedydipna-collaris",
       "scientificName": "Hedydipna collaris",
       "commonName": "Collared Sunbird",
-      "images": [],
-      "recordings": [],
+      "images": [
+        {
+          "key": "hedydipna-collaris/side.jpg",
+          "author": "Mike King",
+          "licence": "CC BY-NC 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+          "sourceUrl": "https://www.inaturalist.org/observations/103040347",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ],
+      "recordings": [
+        {
+          "key": "xeno-canto/XC378029",
+          "author": "Tim Cockcroft",
+          "licence": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "sourceUrl": "https://xeno-canto.org/378029",
+          "aiGenerated": false,
+          "hosted": false,
+          "quality": "A",
+          "callType": "call"
+        }
+      ],
       "sources": [
         {
           "title": "Kemp A.C., Herholdt J.J., Whyte I. & Harrison J. (2001). Birds of the two largest national parks in South Africa: a method to generate estimates of population size for all species and assess their conservation ecology. S. Afr. J. Sci. 97: 393–403.",
           "url": "https://journals.co.za/doi/pdf/10.10520/EJC97367",
           "publisher": "South African Journal of Science",
           "year": 2001
+        },
+        {
+          "title": "Collared Sunbird",
+          "url": "https://newmansbirds.com/birds/collared-sunbird/",
+          "publisher": "Newman's Birds",
+          "year": 2026
         }
       ]
     },
@@ -15157,6 +15472,49 @@
           "url": "https://en.wikipedia.org/wiki/Hooded_vulture",
           "publisher": "Wikimedia Foundation",
           "year": null
+        }
+      ]
+    },
+    {
+      "slug": "nectarinia-famosa",
+      "scientificName": "Nectarinia famosa",
+      "commonName": "Malachite Sunbird",
+      "images": [
+        {
+          "key": "nectarinia-famosa/side.jpg",
+          "author": "Vaughan Jessnitz",
+          "licence": "CC BY-NC 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+          "sourceUrl": "https://www.inaturalist.org/observations/413733052",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ],
+      "recordings": [
+        {
+          "key": "xeno-canto/XC342018",
+          "author": "Tim Cockcroft",
+          "licence": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "sourceUrl": "https://xeno-canto.org/342018",
+          "aiGenerated": false,
+          "hosted": false,
+          "quality": "A",
+          "callType": "call"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Malachite Sunbird",
+          "url": "https://newmansbirds.com/birds/malachite-sunbird/",
+          "publisher": "Newman's Birds",
+          "year": 2026
+        },
+        {
+          "title": "Amethyst Sunbird",
+          "url": "https://newmansbirds.com/birds/amethyst-sunbird/",
+          "publisher": "Newman's Birds",
+          "year": 2026
         }
       ]
     },

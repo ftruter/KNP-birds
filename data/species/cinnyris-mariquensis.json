@@ -7,8 +7,29 @@
     "af": "Maricosuikerbekkie"
   },
   "family": "nectariniidae",
-  "summary": "The details for this species have not been published yet.",
-  "sampleData": true,
+  "habitat": "Usually in pairs in Acacia thornveld.",
+  "summary": "A common resident. Glossy green above, extending around the neck, a purple and ruby-red breast-band, and a black belly. The matching description says the breast-band is claret-red or maroon, not bright red, and that the bill is longer and more decurved than a Purple-banded Sunbird’s. The female has a long bill, a dusky throat and an orange-yellow breast. The immature starts yellow below with a black bib. The call is a brisk chip-chip or a husky schitz-schitz, and the song is a rapid warble. That description is printed on the Scarlet-chested page. The Kemp code RB was left unchanged.",
+  "sampleData": false,
+  "sources": [
+    {
+      "title": "Marico Sunbird",
+      "url": "https://newmansbirds.com/birds/marico-sunbird/",
+      "publisher": "Newman's Birds",
+      "year": 2026
+    },
+    {
+      "title": "Scarlet-chested Sunbird",
+      "url": "https://newmansbirds.com/birds/scarlet-chested-sunbird/",
+      "publisher": "Newman's Birds",
+      "year": 2026
+    },
+    {
+      "title": "Kemp A.C., Herholdt J.J., Whyte I. & Harrison J. (2001). Birds of the two largest national parks in South Africa: a method to generate estimates of population size for all species and assess their conservation ecology. S. Afr. J. Sci. 97: 393–403.",
+      "url": "https://journals.co.za/doi/pdf/10.10520/EJC97367",
+      "publisher": "South African Journal of Science",
+      "year": 2001
+    }
+  ],
   "population": {
     "estimate": {
       "low": 16384,
@@ -35,8 +56,311 @@
     },
     "tierApplied": "D"
   },
-  "variants": [],
-  "viewNotes": [],
-  "calls": [],
-  "images": []
+  "variants": [
+    {
+      "age": "adult",
+      "sex": "male",
+      "season": "any",
+      "marks": {
+        "bill": {
+          "colour": null,
+          "shape": "Longer and more decurved than a Purple-banded Sunbird’s bill."
+        },
+        "eye": {
+          "iris": null,
+          "ring": null
+        },
+        "legs": {
+          "colour": null
+        },
+        "head": {
+          "crown": null,
+          "face": null,
+          "throat": null,
+          "pattern": "Glossy green above, extending around the neck."
+        },
+        "upperparts": {
+          "back": "green",
+          "rump": null,
+          "pattern": "Glossy green above."
+        },
+        "underparts": {
+          "breast": null,
+          "belly": "black",
+          "pattern": "Purple and ruby-red breast-band. The matching description says claret-red or maroon, not bright red. Belly black."
+        },
+        "wings": {
+          "above": null,
+          "below": null
+        },
+        "tail": {
+          "colour": null,
+          "shape": null
+        }
+      }
+    },
+    {
+      "age": "adult",
+      "sex": "female",
+      "season": "any",
+      "marks": {
+        "bill": {
+          "colour": null,
+          "shape": "Long bill."
+        },
+        "eye": {
+          "iris": null,
+          "ring": null
+        },
+        "legs": {
+          "colour": null
+        },
+        "head": {
+          "crown": null,
+          "face": null,
+          "throat": null,
+          "pattern": "Dusky throat."
+        },
+        "upperparts": {
+          "back": null,
+          "rump": null
+        },
+        "underparts": {
+          "breast": null,
+          "belly": null,
+          "pattern": "Orange-yellow breast. Orange and yellow are both named, so no single breast token is stored."
+        },
+        "wings": {
+          "above": null,
+          "below": null
+        },
+        "tail": {
+          "colour": null,
+          "shape": null
+        }
+      }
+    },
+    {
+      "age": "immature",
+      "sex": "any",
+      "season": "any",
+      "marks": {
+        "bill": {
+          "colour": null,
+          "shape": null
+        },
+        "eye": {
+          "iris": null,
+          "ring": null
+        },
+        "legs": {
+          "colour": null
+        },
+        "head": {
+          "crown": null,
+          "face": null,
+          "throat": null,
+          "pattern": "Starts with yellow underparts and a black bib."
+        },
+        "upperparts": {
+          "back": null,
+          "rump": null
+        },
+        "underparts": {
+          "breast": null,
+          "belly": null,
+          "pattern": "Yellow underparts and a black bib. As the yellow fades it can resemble a female Amethyst Sunbird."
+        },
+        "wings": {
+          "above": null,
+          "below": null
+        },
+        "tail": {
+          "colour": null,
+          "shape": null
+        }
+      }
+    }
+  ],
+  "viewNotes": [
+    {
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "male",
+      "season": "any",
+      "note": "Glossy green above, a purple and ruby-red breast-band, and a black belly."
+    },
+    {
+      "view": "perched-front",
+      "age": "adult",
+      "sex": "male",
+      "season": "any",
+      "note": "Green neck and a maroon or ruby breast-band."
+    },
+    {
+      "view": "perched-back",
+      "age": "adult",
+      "sex": "male",
+      "season": "any",
+      "note": "Glossy green upperparts."
+    },
+    {
+      "view": "flight-above",
+      "age": "adult",
+      "sex": "male",
+      "season": "any",
+      "note": "A flight pattern was not described."
+    },
+    {
+      "view": "flight-below",
+      "age": "adult",
+      "sex": "male",
+      "season": "any",
+      "note": "Black belly below the breast-band."
+    },
+    {
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "female",
+      "season": "any",
+      "note": "Long bill, dusky throat and an orange-yellow breast."
+    },
+    {
+      "view": "perched-front",
+      "age": "adult",
+      "sex": "female",
+      "season": "any",
+      "note": "Dusky throat and orange-yellow breast."
+    },
+    {
+      "view": "perched-back",
+      "age": "adult",
+      "sex": "female",
+      "season": "any",
+      "note": "The female upperparts were not described."
+    },
+    {
+      "view": "flight-above",
+      "age": "adult",
+      "sex": "female",
+      "season": "any",
+      "note": "A female flight pattern was not described."
+    },
+    {
+      "view": "flight-below",
+      "age": "adult",
+      "sex": "female",
+      "season": "any",
+      "note": "Orange-yellow breast."
+    },
+    {
+      "view": "perched-side",
+      "age": "immature",
+      "sex": "any",
+      "season": "any",
+      "note": "Yellow underparts and a black bib."
+    },
+    {
+      "view": "perched-front",
+      "age": "immature",
+      "sex": "any",
+      "season": "any",
+      "note": "Black bib on yellow underparts."
+    },
+    {
+      "view": "perched-back",
+      "age": "immature",
+      "sex": "any",
+      "season": "any",
+      "note": "The immature upperparts were not described."
+    },
+    {
+      "view": "flight-above",
+      "age": "immature",
+      "sex": "any",
+      "season": "any",
+      "note": "An immature flight pattern was not described."
+    },
+    {
+      "view": "flight-below",
+      "age": "immature",
+      "sex": "any",
+      "season": "any",
+      "note": "Yellow underparts. The yellow fades with age."
+    }
+  ],
+  "calls": [
+    {
+      "sex": "any",
+      "type": "call",
+      "description": "A brisk chip-chip or a husky schitz-schitz, often as a stuttering series. The song is a rapid warble. This text is on the Scarlet-chested page. Grade A call from Kruger Park, Ehlanzeni. The filename is XC803757-Marico-sunbird.mp3.",
+      "recordings": [
+        {
+          "key": "xeno-canto/XC803757",
+          "source": "https://xeno-canto.org/803757",
+          "fileUrl": "https://xeno-canto.org/sounds/uploaded/UWFNNKHNAE/XC803757-Marico-sunbird.mp3",
+          "author": "Maarten Sluijter",
+          "license": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ]
+    }
+  ],
+  "images": [
+    {
+      "key": "cinnyris-mariquensis/side.jpg",
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "male",
+      "season": "any",
+      "source": "https://www.inaturalist.org/observations/177539202",
+      "fileUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/308793120/large.jpeg",
+      "author": "Daniel Correia",
+      "license": "CC BY-NC 4.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+      "aiGenerated": false,
+      "hosted": false,
+      "alt": "Male Marico Sunbird feeding, green above with a purple-red breast band and black belly",
+      "caption": "Male Marico Sunbird in the Mopani district, glossy green with a purple and red breast-band and a black belly."
+    }
+  ],
+  "research": {
+    "confidence": "medium",
+    "needsReview": true,
+    "note": "The colour key and the 13–14 cm size are on the Marico page. The sexed plumage and the voice are printed on the Scarlet-chested page and match the maroon band and black belly, which is why this needs review. Population figures and the Kemp code RB were left unchanged."
+  },
+  "size": {
+    "lengthCm": {
+      "min": 13,
+      "max": 14
+    },
+    "note": "Newman's Birds gives 13–14 cm on the Marico Sunbird page."
+  },
+  "similar": [
+    {
+      "slug": "cinnyris-bifasciatus",
+      "note": "SABAP1 says Purple-banded Sunbird is similar, with ranges that do not overlap widely. Newman says the Marico male is larger, with a longer, more decurved bill."
+    },
+    {
+      "slug": "chalcomitra-senegalensis",
+      "note": "Scarlet-chested Sunbird has a large red breast. Marico Sunbird has a narrower claret or maroon band and a black belly."
+    }
+  ],
+  "status": "resident",
+  "monthsPresent": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+  ]
 }
