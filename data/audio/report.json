@@ -1,10 +1,10 @@
 {
   "source": "xeno-canto explore catalogue, API v3 recording fields",
   "counts": {
-    "slots": 387,
+    "slots": 390,
     "swapped": 17,
     "added": 278,
-    "kept": 64,
+    "kept": 67,
     "none": 28,
     "cleaned": 0
   },
@@ -331,6 +331,38 @@
       "quality": "A",
       "country": "Ghana",
       "locality": "Abrafo forest",
+      "cleaned": false,
+      "license": "CC BY-NC-SA 4.0"
+    },
+    {
+      "slug": "batis-capensis",
+      "scientificName": "Batis capensis",
+      "index": 0,
+      "type": "call",
+      "action": "kept",
+      "from": [
+        "1004507"
+      ],
+      "to": "1004507",
+      "quality": "A",
+      "country": "South Africa",
+      "locality": "Everton Conservancy, Hillcrest, KwaZulu-Natal",
+      "cleaned": false,
+      "license": "CC BY-NC-SA 4.0"
+    },
+    {
+      "slug": "batis-molitor",
+      "scientificName": "Batis molitor",
+      "index": 0,
+      "type": "call",
+      "action": "kept",
+      "from": [
+        "1149023"
+      ],
+      "to": "1149023",
+      "quality": "A",
+      "country": "South Africa",
+      "locality": "Kruger Park (near Skukuza), Ehlanzeni District Municipality, Mpumalanga",
       "cleaned": false,
       "license": "CC BY-NC-SA 4.0"
     },
@@ -1194,6 +1226,22 @@
       "locality": "Gmina Krynki (near Krynki), Sokółka County, Podlaskie Voivodeship",
       "cleaned": false,
       "license": "CC BY-NC-SA 3.0"
+    },
+    {
+      "slug": "platysteira-peltata",
+      "scientificName": "Platysteira peltata",
+      "index": 0,
+      "type": "song",
+      "action": "kept",
+      "from": [
+        "1185110"
+      ],
+      "to": "1185110",
+      "quality": "A",
+      "country": "Zambia",
+      "locality": "Mutinondo, Lavushimanda, Muchinga Province",
+      "cleaned": false,
+      "license": "CC BY-NC-SA 4.0"
     },
     {
       "slug": "polemaetus-bellicosus",

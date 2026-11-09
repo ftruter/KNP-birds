@@ -7,8 +7,42 @@
     "af": "Kaapse Bosbontrokkie"
   },
   "family": "platysteiridae",
-  "summary": "The details for this species have not been published yet.",
-  "sampleData": true,
+  "size": {
+    "lengthCm": {
+      "min": 12,
+      "max": 13
+    },
+    "note": "Newman's Birds gives 12–13 cm."
+  },
+  "habitat": "Pairs and small parties in forest, forested kloofs, fynbos, succulent scrub and well-wooded gardens. In the north it is confined to montane forest.",
+  "summary": "A common near-endemic resident, and the most heavily marked batis. The male has a very broad black breast-band and rufous flanks. The female has a rich rufous breast-band, throat and flanks. Both have rufous wing coverts. The eyes are yellow when not breeding. The breeding eye colour was not described. The alarm is a grinding prrritt, prrritt, prrritt. Other calls are a monotonous keep, keep, keep, a grating WEE-warrawarra, and a soft foo-foo-foo-foo. The Kemp code VB was left unchanged.",
+  "sampleData": false,
+  "similar": [
+    {
+      "slug": "batis-molitor",
+      "note": "Chinspot Batis is the dry-country bird. Its male lacks rufous, and the female’s rufous is a chin-spot and breast-band with white flanks, not rufous flanks and wing coverts."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Cape Batis",
+      "url": "https://newmansbirds.com/birds/cape-batis/",
+      "publisher": "Newman's Birds",
+      "year": 2026
+    },
+    {
+      "title": "Avibase bird checklist — Kruger National Park",
+      "url": "https://avibase.bsc-eoc.org/checklist.jsp?region=ZA000003",
+      "publisher": "Avibase",
+      "year": null
+    },
+    {
+      "title": "Kemp A.C., Herholdt J.J., Whyte I. & Harrison J. (2001). Birds of the two largest national parks in South Africa: a method to generate estimates of population size for all species and assess their conservation ecology. S. Afr. J. Sci. 97: 393–403.",
+      "url": "https://journals.co.za/doi/pdf/10.10520/EJC97367",
+      "publisher": "South African Journal of Science",
+      "year": 2001
+    }
+  ],
   "population": {
     "estimate": {
       "low": 64,
@@ -35,8 +69,398 @@
     },
     "tierApplied": "D"
   },
-  "variants": [],
-  "viewNotes": [],
-  "calls": [],
-  "images": []
+  "variants": [
+    {
+      "age": "adult",
+      "sex": "male",
+      "season": "non-breeding",
+      "marks": {
+        "bill": {
+          "colour": null,
+          "shape": null
+        },
+        "eye": {
+          "iris": "yellow",
+          "ring": null
+        },
+        "legs": {
+          "colour": null
+        },
+        "head": {
+          "crown": "grey",
+          "face": "black",
+          "throat": null,
+          "pattern": "Grey cap and black mask."
+        },
+        "upperparts": {
+          "back": "grey",
+          "rump": null
+        },
+        "underparts": {
+          "breast": "black",
+          "belly": null,
+          "pattern": "Very broad black breast-band and rufous flanks."
+        },
+        "wings": {
+          "above": "rufous",
+          "below": null,
+          "pattern": "Rufous on the wing coverts."
+        },
+        "tail": {
+          "colour": null,
+          "shape": null
+        }
+      }
+    },
+    {
+      "age": "adult",
+      "sex": "male",
+      "season": "breeding",
+      "marks": {
+        "bill": {
+          "colour": null,
+          "shape": null
+        },
+        "eye": {
+          "iris": null,
+          "ring": null
+        },
+        "legs": {
+          "colour": null
+        },
+        "head": {
+          "crown": "grey",
+          "face": "black",
+          "throat": null,
+          "pattern": "Grey cap and black mask. Newman says the eyes are yellow when not breeding, and does not give the breeding eye colour."
+        },
+        "upperparts": {
+          "back": "grey",
+          "rump": null
+        },
+        "underparts": {
+          "breast": "black",
+          "belly": null,
+          "pattern": "Very broad black breast-band and rufous flanks."
+        },
+        "wings": {
+          "above": "rufous",
+          "below": null,
+          "pattern": "Rufous on the wing coverts."
+        },
+        "tail": {
+          "colour": null,
+          "shape": null
+        }
+      }
+    },
+    {
+      "age": "adult",
+      "sex": "female",
+      "season": "non-breeding",
+      "marks": {
+        "bill": {
+          "colour": null,
+          "shape": null
+        },
+        "eye": {
+          "iris": "yellow",
+          "ring": null
+        },
+        "legs": {
+          "colour": null
+        },
+        "head": {
+          "crown": "grey",
+          "face": "black",
+          "throat": "rufous",
+          "pattern": "Grey cap and black mask."
+        },
+        "upperparts": {
+          "back": "grey",
+          "rump": null
+        },
+        "underparts": {
+          "breast": "rufous",
+          "belly": null,
+          "pattern": "Rich rufous breast-band, throat and flanks."
+        },
+        "wings": {
+          "above": "rufous",
+          "below": null,
+          "pattern": "Rufous on the wing coverts."
+        },
+        "tail": {
+          "colour": null,
+          "shape": null
+        }
+      }
+    },
+    {
+      "age": "adult",
+      "sex": "female",
+      "season": "breeding",
+      "marks": {
+        "bill": {
+          "colour": null,
+          "shape": null
+        },
+        "eye": {
+          "iris": null,
+          "ring": null
+        },
+        "legs": {
+          "colour": null
+        },
+        "head": {
+          "crown": "grey",
+          "face": "black",
+          "throat": "rufous",
+          "pattern": "Grey cap and black mask. Newman says the eyes are yellow when not breeding, and does not give the breeding eye colour."
+        },
+        "upperparts": {
+          "back": "grey",
+          "rump": null
+        },
+        "underparts": {
+          "breast": "rufous",
+          "belly": null,
+          "pattern": "Rich rufous breast-band, throat and flanks."
+        },
+        "wings": {
+          "above": "rufous",
+          "below": null,
+          "pattern": "Rufous on the wing coverts."
+        },
+        "tail": {
+          "colour": null,
+          "shape": null
+        }
+      }
+    },
+    {
+      "age": "immature",
+      "sex": "any",
+      "season": "any",
+      "marks": {
+        "bill": {
+          "colour": null,
+          "shape": null
+        },
+        "eye": {
+          "iris": null,
+          "ring": null
+        },
+        "legs": {
+          "colour": null
+        },
+        "head": {
+          "crown": null,
+          "face": null,
+          "throat": null,
+          "pattern": "Newman’s family notes say the immature is a dull version of the adult."
+        },
+        "upperparts": {
+          "back": null,
+          "rump": null
+        },
+        "underparts": {
+          "breast": null,
+          "belly": null
+        },
+        "wings": {
+          "above": null,
+          "below": null
+        },
+        "tail": {
+          "colour": null,
+          "shape": null
+        }
+      }
+    }
+  ],
+  "viewNotes": [
+    {
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "male",
+      "season": "non-breeding",
+      "note": "Very broad black breast-band, rufous flanks and rufous wing coverts. The eye is yellow when not breeding."
+    },
+    {
+      "view": "perched-front",
+      "age": "adult",
+      "sex": "male",
+      "season": "non-breeding",
+      "note": "Very broad black breast-band and a yellow eye in non-breeding plumage."
+    },
+    {
+      "view": "perched-back",
+      "age": "adult",
+      "sex": "male",
+      "season": "non-breeding",
+      "note": "Rufous wing coverts. The back colour was not named beyond the family note of grey upperparts."
+    },
+    {
+      "view": "flight-above",
+      "age": "adult",
+      "sex": "male",
+      "season": "non-breeding",
+      "note": "A flight pattern was not described. Newman’s family notes say an alarmed bird flies with whirring wings."
+    },
+    {
+      "view": "flight-below",
+      "age": "adult",
+      "sex": "male",
+      "season": "non-breeding",
+      "note": "The underwing was not described. The breast-band is black and the flanks are rufous."
+    },
+    {
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "female",
+      "season": "non-breeding",
+      "note": "Rich rufous throat, breast-band and flanks, with rufous wing coverts. The eye is yellow when not breeding."
+    },
+    {
+      "view": "perched-front",
+      "age": "adult",
+      "sex": "female",
+      "season": "non-breeding",
+      "note": "Rich rufous throat and breast-band."
+    },
+    {
+      "view": "perched-back",
+      "age": "adult",
+      "sex": "female",
+      "season": "non-breeding",
+      "note": "Rufous wing coverts."
+    },
+    {
+      "view": "flight-above",
+      "age": "adult",
+      "sex": "female",
+      "season": "non-breeding",
+      "note": "A female flight pattern was not described beyond the family note of whirring wings when alarmed."
+    },
+    {
+      "view": "flight-below",
+      "age": "adult",
+      "sex": "female",
+      "season": "non-breeding",
+      "note": "The female underwing was not described. The throat, breast-band and flanks are rufous."
+    },
+    {
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "any",
+      "season": "breeding",
+      "note": "The breeding eye colour was not described. Newman says the eyes are yellow when not breeding."
+    }
+  ],
+  "calls": [
+    {
+      "sex": "any",
+      "type": "call",
+      "description": "A grinding prrritt, prrritt, prrritt alarm. Other calls are a monotonous keep, keep, keep, a grating WEE-warrawarra, and a soft foo-foo-foo-foo. Grade A call from Everton Conservancy, Hillcrest, KwaZulu-Natal. The filename is XC1004507-Batis_Cape_EvertonConservancy_20250606.mp3.",
+      "recordings": [
+        {
+          "key": "xeno-canto/XC1004507",
+          "source": "https://xeno-canto.org/1004507",
+          "fileUrl": "https://xeno-canto.org/sounds/uploaded/IQGZKQAMKT/XC1004507-Batis_Cape_EvertonConservancy_20250606.mp3",
+          "author": "Richard White",
+          "license": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ]
+    }
+  ],
+  "images": [
+    {
+      "key": "batis-capensis/front-female.jpg",
+      "view": "perched-front",
+      "age": "adult",
+      "sex": "female",
+      "season": "any",
+      "source": "https://www.inaturalist.org/observations/236765044",
+      "fileUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/421257277/large.jpg",
+      "author": "lance_robinson",
+      "license": "CC BY-NC 4.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+      "aiGenerated": false,
+      "hosted": false,
+      "alt": "Female Cape Batis in Kruger, rufous throat and breast-band",
+      "caption": "Female Cape Batis in Kruger, Ehlanzeni, with a rufous throat and breast-band. This is the only Kruger photograph found under an allowed licence."
+    },
+    {
+      "key": "batis-capensis/side-male.jpg",
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "male",
+      "season": "any",
+      "source": "https://www.inaturalist.org/observations/115605854",
+      "fileUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/195107363/large.jpg",
+      "author": "Corli du Toit Smith",
+      "license": "CC BY 4.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by/4.0/",
+      "aiGenerated": false,
+      "hosted": false,
+      "alt": "Male Cape Batis at Betty’s Bay, not Kruger, broad black breast-band, rufous flank and rufous wing",
+      "caption": "Male Cape Batis at Betty’s Bay, not Kruger, with a broad black breast-band, a rufous flank and a rufous wing."
+    },
+    {
+      "key": "batis-capensis/front-male.jpg",
+      "view": "perched-front",
+      "age": "adult",
+      "sex": "male",
+      "season": "any",
+      "source": "https://www.inaturalist.org/observations/270223868",
+      "fileUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/485939956/large.jpeg",
+      "author": "Christiaan Viljoen",
+      "license": "CC BY 4.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by/4.0/",
+      "aiGenerated": false,
+      "hosted": false,
+      "alt": "Male Cape Batis on the Garden Route, not Kruger, broad black breast-band and rufous flanks",
+      "caption": "Male Cape Batis on the Garden Route, not Kruger, with a very broad black breast-band and rufous flanks."
+    },
+    {
+      "key": "batis-capensis/back.jpg",
+      "view": "perched-back",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "source": "https://www.inaturalist.org/observations/77515740",
+      "fileUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/126735857/large.jpeg",
+      "author": "Shaun Swanepoel",
+      "license": "CC BY 4.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by/4.0/",
+      "aiGenerated": false,
+      "hosted": false,
+      "alt": "Cape Batis in the Eden district, not Kruger, seen from behind with rufous on the wing",
+      "caption": "Cape Batis in the Eden district, Western Cape, not Kruger, seen from behind, with rufous on the wing."
+    }
+  ],
+  "research": {
+    "confidence": "medium",
+    "needsReview": true,
+    "note": "Newman calls it a common near-endemic resident, and Avibase does not mark the Kruger occurrence rare or accidental, so status is resident and all twelve months are listed. The Kemp code is VB, a visiting breeder, and that code was left unchanged, which is why this needs review. The eyes are yellow only when not breeding. The breeding eye colour was not described. The immature is only the family note that it is a dull version of the adult. Bill and leg colours were not given. Only one allowed Kruger photograph was found, a female front in Ehlanzeni under CC BY-NC 4.0. The male side is from Betty’s Bay, the male front from the Garden Route, and the back from the Eden district. No flight photograph and no grade A Kruger recording were found. The grade A call is from Hillcrest, KwaZulu-Natal. Population figures and the Kemp code VB were left unchanged."
+  },
+  "status": "resident",
+  "monthsPresent": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+  ]
 }

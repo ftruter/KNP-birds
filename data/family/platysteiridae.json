@@ -6,8 +6,8 @@
     "en": "Wattle-eyes and batises",
     "af": "Bosbontrokkies"
   },
-  "summary": "Field notes for this family are still to be written.",
-  "sampleData": true,
+  "summary": "Wattle-eyes and batises. Chinspot Batis is the common dry-woodland bird, grey-capped and yellow-eyed, the male without rufous and the female with a rufous chin-spot. Cape Batis is the heavily marked forest bird, with rufous wing coverts and yellow eyes when not breeding. Black-throated Wattle-eye has a red eye-wattle. The female’s breast is all black and the male has only a narrow black band. Newman’s size line for the wattle-eye is unreadable, so no length is stored.",
+  "sampleData": false,
   "species": [
     {
       "slug": "batis-capensis",

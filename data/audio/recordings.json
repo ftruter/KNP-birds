@@ -524,6 +524,26 @@
         }
       ]
     },
+    "batis-capensis": {
+      "calls": [
+        {
+          "index": 0,
+          "quality": {
+            "xeno-canto/XC1004507": "A"
+          }
+        }
+      ]
+    },
+    "batis-molitor": {
+      "calls": [
+        {
+          "index": 0,
+          "quality": {
+            "xeno-canto/XC1149023": "A"
+          }
+        }
+      ]
+    },
     "botaurus-minutus": {
       "calls": [
         {
@@ -1959,6 +1979,16 @@
               "quality": "A"
             }
           ]
+        }
+      ]
+    },
+    "platysteira-peltata": {
+      "calls": [
+        {
+          "index": 0,
+          "quality": {
+            "xeno-canto/XC1185110": "A"
+          }
         }
       ]
     },

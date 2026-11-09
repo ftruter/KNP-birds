@@ -7,8 +7,42 @@
     "af": "Witliesbosbontrokkie"
   },
   "family": "platysteiridae",
-  "summary": "The details for this species have not been published yet.",
-  "sampleData": true,
+  "size": {
+    "lengthCm": {
+      "min": 12,
+      "max": 13
+    },
+    "note": "Newman's Birds gives 12–13 cm."
+  },
+  "habitat": "Pairs in mixed bushveld and woodland, always in drier country than Cape Batis. It feeds in the mid- and lower strata and often joins bird parties.",
+  "summary": "A very common resident. A small pied bird with a grey cap and yellow eyes. The male lacks any rufous. The female has a clearly defined rich rufous chin-spot and breast-band, and white flanks. The most characteristic call is a descending choi-choi-choi, like three blind mice. It also calls chi-chirr or chee-chir-chir, and it is one of the first birds heard at dawn. Bill, leg and wing colours were not described. The Kemp paper name Chinspot Batis and the code RB were left unchanged.",
+  "sampleData": false,
+  "similar": [
+    {
+      "slug": "batis-capensis",
+      "note": "Cape Batis lives in moister forest. Its male has rufous flanks and both sexes have rufous wing coverts. Chinspot Batis is the dry-country bird, and its male lacks rufous."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Chinspot Batis",
+      "url": "https://newmansbirds.com/birds/chinspot-batis/",
+      "publisher": "Newman's Birds",
+      "year": 2026
+    },
+    {
+      "title": "Avibase bird checklist — Kruger National Park",
+      "url": "https://avibase.bsc-eoc.org/checklist.jsp?region=ZA000003",
+      "publisher": "Avibase",
+      "year": null
+    },
+    {
+      "title": "Kemp A.C., Herholdt J.J., Whyte I. & Harrison J. (2001). Birds of the two largest national parks in South Africa: a method to generate estimates of population size for all species and assess their conservation ecology. S. Afr. J. Sci. 97: 393–403.",
+      "url": "https://journals.co.za/doi/pdf/10.10520/EJC97367",
+      "publisher": "South African Journal of Science",
+      "year": 2001
+    }
+  ],
   "population": {
     "estimate": {
       "low": 131072,
@@ -35,8 +69,296 @@
     },
     "tierApplied": "D"
   },
-  "variants": [],
-  "viewNotes": [],
-  "calls": [],
-  "images": []
+  "variants": [
+    {
+      "age": "adult",
+      "sex": "male",
+      "season": "any",
+      "marks": {
+        "bill": {
+          "colour": null,
+          "shape": null
+        },
+        "eye": {
+          "iris": "yellow",
+          "ring": null
+        },
+        "legs": {
+          "colour": null
+        },
+        "head": {
+          "crown": "grey",
+          "face": "black",
+          "throat": null,
+          "pattern": "Grey cap and black mask, from the identification line and the family notes on the Newman page."
+        },
+        "upperparts": {
+          "back": "grey",
+          "rump": null
+        },
+        "underparts": {
+          "breast": null,
+          "belly": null,
+          "pattern": "Newman says the male lacks any rufous. The family notes describe black or rufous breast-bands."
+        },
+        "wings": {
+          "above": null,
+          "below": null
+        },
+        "tail": {
+          "colour": null,
+          "shape": null
+        }
+      }
+    },
+    {
+      "age": "adult",
+      "sex": "female",
+      "season": "any",
+      "marks": {
+        "bill": {
+          "colour": null,
+          "shape": null
+        },
+        "eye": {
+          "iris": "yellow",
+          "ring": null
+        },
+        "legs": {
+          "colour": null
+        },
+        "head": {
+          "crown": "grey",
+          "face": "black",
+          "throat": "rufous",
+          "pattern": "Grey cap, black mask, and a rich rufous chin-spot."
+        },
+        "upperparts": {
+          "back": "grey",
+          "rump": null
+        },
+        "underparts": {
+          "breast": "rufous",
+          "belly": "white",
+          "pattern": "Clearly defined rich rufous chin-spot and breast-band, with white flanks."
+        },
+        "wings": {
+          "above": null,
+          "below": null
+        },
+        "tail": {
+          "colour": null,
+          "shape": null
+        }
+      }
+    },
+    {
+      "age": "immature",
+      "sex": "any",
+      "season": "any",
+      "marks": {
+        "bill": {
+          "colour": null,
+          "shape": null
+        },
+        "eye": {
+          "iris": null,
+          "ring": null
+        },
+        "legs": {
+          "colour": null
+        },
+        "head": {
+          "crown": null,
+          "face": null,
+          "throat": null,
+          "pattern": "Newman’s family notes say the immature is a dull version of the adult."
+        },
+        "upperparts": {
+          "back": null,
+          "rump": null
+        },
+        "underparts": {
+          "breast": null,
+          "belly": null
+        },
+        "wings": {
+          "above": null,
+          "below": null
+        },
+        "tail": {
+          "colour": null,
+          "shape": null
+        }
+      }
+    }
+  ],
+  "viewNotes": [
+    {
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "male",
+      "season": "any",
+      "note": "Grey cap, black mask and yellow eye. Newman says the male lacks any rufous."
+    },
+    {
+      "view": "perched-front",
+      "age": "adult",
+      "sex": "male",
+      "season": "any",
+      "note": "Yellow eye and no rufous on the underparts. A black or rufous breast-band is the family note, not a colour Newman gives for this male."
+    },
+    {
+      "view": "perched-back",
+      "age": "adult",
+      "sex": "male",
+      "season": "any",
+      "note": "Grey upperparts. The male back was not given a separate pattern."
+    },
+    {
+      "view": "flight-above",
+      "age": "adult",
+      "sex": "male",
+      "season": "any",
+      "note": "A flight pattern was not described. Newman’s family notes say an alarmed bird flies with whirring wings."
+    },
+    {
+      "view": "flight-below",
+      "age": "adult",
+      "sex": "male",
+      "season": "any",
+      "note": "The underwing was not described. The male lacks rufous."
+    },
+    {
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "female",
+      "season": "any",
+      "note": "Rich rufous chin-spot and breast-band, white flanks, grey cap and yellow eye."
+    },
+    {
+      "view": "perched-front",
+      "age": "adult",
+      "sex": "female",
+      "season": "any",
+      "note": "Rich rufous chin-spot and breast-band on white underparts."
+    },
+    {
+      "view": "perched-back",
+      "age": "adult",
+      "sex": "female",
+      "season": "any",
+      "note": "Grey upperparts. The female back was not given a separate pattern."
+    },
+    {
+      "view": "flight-above",
+      "age": "adult",
+      "sex": "female",
+      "season": "any",
+      "note": "A female flight pattern was not described beyond the family note of whirring wings when alarmed."
+    },
+    {
+      "view": "flight-below",
+      "age": "adult",
+      "sex": "female",
+      "season": "any",
+      "note": "The female underwing was not described. The breast-band is rufous and the flanks are white."
+    },
+    {
+      "view": "perched-side",
+      "age": "immature",
+      "sex": "any",
+      "season": "any",
+      "note": "Newman’s family notes say the immature is a dull version of the adult. No separate colours were given."
+    }
+  ],
+  "calls": [
+    {
+      "sex": "any",
+      "type": "call",
+      "description": "The most characteristic call is a descending choi-choi-choi, like three blind mice. It also calls chi-chirr or chee-chir-chir, and it is one of the first species heard at dawn. Grade A call from Kruger near Skukuza. The catalogue filename includes a 250 Hz high-pass and the label Unid2. The filename is XC1149023-20260517_KNP_AKaramitsos_XA60_A026C196_260517XA_SLE_250HP_-3dB_Unid2.mp3.",
+      "recordings": [
+        {
+          "key": "xeno-canto/XC1149023",
+          "source": "https://xeno-canto.org/1149023",
+          "fileUrl": "https://xeno-canto.org/sounds/uploaded/YSGTQVRQZI/XC1149023-20260517_KNP_AKaramitsos_XA60_A026C196_260517XA_SLE_250HP_-3dB_Unid2.mp3",
+          "author": "African Bioacoustics Community",
+          "license": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ]
+    }
+  ],
+  "images": [
+    {
+      "key": "batis-molitor/front-female.jpg",
+      "view": "perched-front",
+      "age": "adult",
+      "sex": "female",
+      "season": "any",
+      "source": "http://www.inaturalist.org/observations/13176",
+      "fileUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/25897/large.jpg",
+      "author": "Scott Loarie",
+      "license": "CC0 1.0",
+      "licenceUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "aiGenerated": false,
+      "hosted": false,
+      "alt": "Female Chinspot Batis at Skukuza, rufous chin-spot and breast-band, white underparts and a yellow eye",
+      "caption": "Female Chinspot Batis at Skukuza, with a rufous chin-spot and breast-band, white underparts and a yellow eye."
+    },
+    {
+      "key": "batis-molitor/front-male.jpg",
+      "view": "perched-front",
+      "age": "adult",
+      "sex": "male",
+      "season": "any",
+      "source": "https://www.inaturalist.org/observations/242597617",
+      "fileUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/432494381/large.jpeg",
+      "author": "Bud Lensing",
+      "license": "CC0 1.0",
+      "licenceUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "aiGenerated": false,
+      "hosted": false,
+      "alt": "Male Chinspot Batis in Kruger, grey cap, black mask and yellow eye, with no rufous",
+      "caption": "Male Chinspot Batis in Kruger, Ehlanzeni. Grey cap, black mask and yellow eye. Newman says the male lacks rufous."
+    },
+    {
+      "key": "batis-molitor/back-male.jpg",
+      "view": "perched-back",
+      "age": "adult",
+      "sex": "male",
+      "season": "any",
+      "source": "https://www.inaturalist.org/observations/206954392",
+      "fileUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/365986634/large.jpeg",
+      "author": "Karen Eichholz",
+      "license": "CC BY 4.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by/4.0/",
+      "aiGenerated": false,
+      "hosted": false,
+      "alt": "Male Chinspot Batis in Kruger, seen from behind, black and white upperparts",
+      "caption": "Male Chinspot Batis in Kruger, Ehlanzeni, seen from behind."
+    }
+  ],
+  "research": {
+    "confidence": "medium",
+    "needsReview": true,
+    "note": "Newman calls it a very common resident, and Avibase does not mark the Kruger occurrence rare or accidental, so status is resident and all twelve months are listed. The male breast colour is not named. Newman only says he lacks rufous, and the family notes describe black or rufous breast-bands, which is why this needs review. The immature is only the family note that it is a dull version of the adult. Bill, legs and wings were not given colours. No flight photograph was found. The grade A call is from Kruger near Skukuza. Its filename includes Unid2 and a 250 Hz high-pass, and this site has not filtered it further. Population figures, the Kemp paper name Chinspot Batis and the code RB were left unchanged."
+  },
+  "status": "resident",
+  "monthsPresent": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+  ]
 }
