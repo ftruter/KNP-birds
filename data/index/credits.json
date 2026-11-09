@@ -18413,14 +18413,42 @@
       "slug": "turdoides-jardineii",
       "scientificName": "Turdoides jardineii",
       "commonName": "Arrow-marked Babbler",
-      "images": [],
-      "recordings": [],
+      "images": [
+        {
+          "key": "turdoides-jardineii/side.jpg",
+          "author": "Fred Derks",
+          "licence": "CC BY 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by/4.0/",
+          "sourceUrl": "https://www.inaturalist.org/observations/326236710",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ],
+      "recordings": [
+        {
+          "key": "xeno-canto/XC368185",
+          "author": "Oscar Campbell",
+          "licence": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "sourceUrl": "https://xeno-canto.org/368185",
+          "aiGenerated": false,
+          "hosted": false,
+          "quality": "A",
+          "callType": "call"
+        }
+      ],
       "sources": [
         {
           "title": "Kemp A.C., Herholdt J.J., Whyte I. & Harrison J. (2001). Birds of the two largest national parks in South Africa: a method to generate estimates of population size for all species and assess their conservation ecology. S. Afr. J. Sci. 97: 393–403.",
           "url": "https://journals.co.za/doi/pdf/10.10520/EJC97367",
           "publisher": "South African Journal of Science",
           "year": 2001
+        },
+        {
+          "title": "Arrow-marked Babbler",
+          "url": "https://newmansbirds.com/birds/arrow-marked-babbler/",
+          "publisher": "Newman's Birds",
+          "year": 2026
         }
       ]
     },
