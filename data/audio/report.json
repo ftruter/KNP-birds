@@ -1,9 +1,9 @@
 {
   "source": "xeno-canto explore catalogue, API v3 recording fields",
   "counts": {
-    "slots": 345,
+    "slots": 346,
     "swapped": 17,
-    "added": 243,
+    "added": 244,
     "kept": 57,
     "none": 28,
     "cleaned": 0
@@ -5219,6 +5219,20 @@
       "quality": "A",
       "country": "South Africa",
       "locality": "Port Alfred, Eastern Cape",
+      "cleaned": false,
+      "license": "CC BY-NC-SA 4.0"
+    },
+    {
+      "slug": "nicator-gularis",
+      "scientificName": "Nicator gularis",
+      "index": 0,
+      "type": "call",
+      "action": "added",
+      "from": [],
+      "to": "652445",
+      "quality": "A",
+      "country": "Mozambique",
+      "locality": "San Sebastian, Vilanculos, Inhambane",
       "cleaned": false,
       "license": "CC BY-NC-SA 4.0"
     }

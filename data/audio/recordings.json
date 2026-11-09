@@ -3516,6 +3516,16 @@
           }
         }
       ]
+    },
+    "nicator-gularis": {
+      "calls": [
+        {
+          "index": 0,
+          "quality": {
+            "xeno-canto/XC652445": "A"
+          }
+        }
+      ]
     }
   }
 }
