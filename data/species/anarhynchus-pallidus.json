@@ -7,8 +7,49 @@
     "af": "Rooibandstrandkiewiet"
   },
   "family": "charadriidae",
-  "summary": "The details for this species have not been published yet.",
-  "sampleData": true,
+  "status": "resident",
+  "monthsPresent": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+  ],
+  "size": {
+    "lengthCm": {
+      "min": 15,
+      "max": 15
+    },
+    "note": "Newman's Birds gives 15 cm."
+  },
+  "habitat": "Singly, in pairs or in scattered flocks on saltpans, coastal lagoons and sandflats. Less often inland at pans, dams and banks of large rivers. Inland records are widespread but irregular.",
+  "summary": "A common resident. Light brown above, with a white forehead, face and underparts and a narrow chestnut or buff throat-band. The male’s chestnut breast-band is diagnostic; the female’s is fainter, and she lacks the black crown and lores. The take-off call is a soft chuck. No openly licensed Kruger photograph was found.",
+  "sampleData": false,
+  "similar": [
+    {
+      "slug": "anarhynchus-marginatus",
+      "note": "White-fronted Plover is sandy-brown with a white forehead and no chestnut band."
+    },
+    {
+      "slug": "thinornis-tricollaris",
+      "note": "Three-banded Plover has two black breast-bands and a red eye-ring and bill. Chestnut-banded Plover has one narrow chestnut band."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Chestnut-banded Plover",
+      "url": "https://newmansbirds.com/birds/chestnut-banded-plover/",
+      "publisher": "Newman's Birds",
+      "year": 2026
+    }
+  ],
   "population": {
     "estimate": {
       "low": 2,
@@ -35,8 +76,157 @@
     },
     "tierApplied": "D"
   },
-  "variants": [],
-  "viewNotes": [],
-  "calls": [],
-  "images": []
+  "variants": [
+    {
+      "age": "adult",
+      "sex": "male",
+      "season": "any",
+      "marks": {
+        "bill": {
+          "colour": null,
+          "shape": null
+        },
+        "eye": {
+          "iris": null,
+          "ring": null
+        },
+        "legs": {
+          "colour": null
+        },
+        "head": {
+          "crown": "black",
+          "face": "white",
+          "throat": null,
+          "pattern": "Black crown and lores. White forehead and face."
+        },
+        "upperparts": {
+          "back": "brown",
+          "rump": null,
+          "pattern": null
+        },
+        "underparts": {
+          "breast": "chestnut",
+          "belly": "white",
+          "pattern": "Narrow chestnut breast-band."
+        },
+        "wings": {
+          "above": null,
+          "below": null,
+          "pattern": null
+        },
+        "tail": {
+          "colour": null,
+          "shape": null
+        }
+      }
+    },
+    {
+      "age": "adult",
+      "sex": "female",
+      "season": "any",
+      "marks": {
+        "bill": {
+          "colour": null,
+          "shape": null
+        },
+        "eye": {
+          "iris": null,
+          "ring": null
+        },
+        "legs": {
+          "colour": null
+        },
+        "head": {
+          "crown": "brown",
+          "face": "white",
+          "throat": null,
+          "pattern": "Lacks the black crown and lores. The breast-band is fainter."
+        },
+        "upperparts": {
+          "back": "brown",
+          "rump": null,
+          "pattern": null
+        },
+        "underparts": {
+          "breast": [
+            "chestnut",
+            "buff"
+          ],
+          "belly": "white",
+          "pattern": "Fainter chestnut or buff band."
+        },
+        "wings": {
+          "above": null,
+          "below": null,
+          "pattern": null
+        },
+        "tail": {
+          "colour": null,
+          "shape": null
+        }
+      }
+    }
+  ],
+  "viewNotes": [
+    {
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Small plover with a narrow chestnut band and white underparts."
+    },
+    {
+      "view": "perched-front",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "White face. The male has black lores and a chestnut band; the female’s band is fainter."
+    },
+    {
+      "view": "perched-back",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Light brown upperparts."
+    },
+    {
+      "view": "flight-above",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "The upperwing in flight was not named."
+    },
+    {
+      "view": "flight-below",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "White underparts and the narrow band."
+    }
+  ],
+  "calls": [
+    {
+      "sex": "any",
+      "type": "call",
+      "description": "A soft chuck on take-off. The texts do not separate the sexes. Grade B from De Mond, South Africa. The licence is CC BY-NC-SA 3.0. No playable grade A was listed.",
+      "recordings": [
+        {
+          "key": "xeno-canto/XC28681",
+          "source": "https://xeno-canto.org/28681",
+          "fileUrl": "https://xeno-canto.org/sounds/uploaded/BPSDQEOJWG/Chestnut-bandedPloverDeMond2006-12-28.mp3",
+          "author": "Patrik Åberg",
+          "license": "CC BY-NC-SA 3.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/3.0/",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ]
+    }
+  ],
+  "images": [],
+  "research": {
+    "confidence": "low",
+    "needsReview": true,
+    "note": "Status is resident and all twelve months are listed. Newman calls it a common resident and says inland records are irregular, which is not stored as an absence. No openly licensed photograph was found in the Kruger box. The call is grade B. The Kemp code NB was left unchanged."
+  }
 }

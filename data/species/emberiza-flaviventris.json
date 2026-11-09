@@ -7,8 +7,49 @@
     "af": "Rooirugstreepkoppie"
   },
   "family": "emberizidae",
-  "summary": "The details for this species have not been published yet.",
-  "sampleData": true,
+  "status": "resident",
+  "monthsPresent": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+  ],
+  "size": {
+    "lengthCm": {
+      "min": 16,
+      "max": 16
+    },
+    "note": "Newman's Birds gives 16 cm."
+  },
+  "habitat": "Pairs in mixed bushveld, thornveld, broad-leaved woodland and exotic plantations.",
+  "summary": "A common resident. Yellow below, with an orange breast and a white belly and vent. The head is black with white streaks, including a white stripe below the eye, and the mantle is brown with a white shoulder-patch. The female has yellowish head-streaks, and the immature has brown ones. The call is pret-ty-boyeee, sometimes answered sitee. The song is a repeated chipchipchipchipchip-teee, teeu-teeu-teeu-teeu. The Kemp code RB was left unchanged.",
+  "sampleData": false,
+  "similar": [
+    {
+      "slug": "emberiza-tahapisi",
+      "note": "Cinnamon-breasted Bunting is cinnamon-brown on the body, with a black-and-white streaked head. Golden-breasted Bunting has an orange breast and a white belly."
+    },
+    {
+      "slug": "emberiza-impetuani",
+      "note": "Lark-like Bunting is a plain pale cinnamon-brown bird. Golden-breasted Bunting has the orange breast and the striped head."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Golden-breasted Bunting",
+      "url": "https://newmansbirds.com/birds/golden-breasted-bunting/",
+      "publisher": "Newman's Birds",
+      "year": 2026
+    }
+  ],
   "population": {
     "estimate": {
       "low": 32768,
@@ -35,8 +76,214 @@
     },
     "tierApplied": "D"
   },
-  "variants": [],
-  "viewNotes": [],
-  "calls": [],
-  "images": []
+  "variants": [
+    {
+      "age": "adult",
+      "sex": "male",
+      "season": "any",
+      "marks": {
+        "bill": {
+          "colour": null,
+          "shape": null
+        },
+        "eye": {
+          "iris": null,
+          "ring": null
+        },
+        "legs": {
+          "colour": null
+        },
+        "head": {
+          "crown": "black",
+          "face": null,
+          "throat": null,
+          "pattern": "Black head with white streaks, including a white stripe below the eye."
+        },
+        "upperparts": {
+          "back": "brown",
+          "rump": null,
+          "pattern": "Browner mantle than Cabanis’s Bunting."
+        },
+        "underparts": {
+          "breast": "orange",
+          "belly": "white",
+          "pattern": "Yellow below, with an orange breast. Belly and vent white."
+        },
+        "wings": {
+          "above": null,
+          "below": null,
+          "pattern": "White shoulder-patch."
+        },
+        "tail": {
+          "colour": null,
+          "shape": null
+        }
+      }
+    },
+    {
+      "age": "adult",
+      "sex": "female",
+      "season": "any",
+      "marks": {
+        "bill": {
+          "colour": null,
+          "shape": null
+        },
+        "eye": {
+          "iris": null,
+          "ring": null
+        },
+        "legs": {
+          "colour": null
+        },
+        "head": {
+          "crown": null,
+          "face": null,
+          "throat": null,
+          "pattern": "Yellowish head-streaks."
+        },
+        "upperparts": {
+          "back": "brown",
+          "rump": null,
+          "pattern": null
+        },
+        "underparts": {
+          "breast": "orange",
+          "belly": "white",
+          "pattern": "The orange breast and white belly are described for the species."
+        },
+        "wings": {
+          "above": null,
+          "below": null,
+          "pattern": "White shoulder-patch."
+        },
+        "tail": {
+          "colour": null,
+          "shape": null
+        }
+      }
+    },
+    {
+      "age": "immature",
+      "sex": "any",
+      "season": "any",
+      "marks": {
+        "bill": {
+          "colour": null,
+          "shape": null
+        },
+        "eye": {
+          "iris": null,
+          "ring": null
+        },
+        "legs": {
+          "colour": null
+        },
+        "head": {
+          "crown": null,
+          "face": null,
+          "throat": null,
+          "pattern": "Brown head-streaks."
+        },
+        "upperparts": {
+          "back": null,
+          "rump": null,
+          "pattern": null
+        },
+        "underparts": {
+          "breast": null,
+          "belly": null,
+          "pattern": null
+        },
+        "wings": {
+          "above": null,
+          "below": null,
+          "pattern": null
+        },
+        "tail": {
+          "colour": null,
+          "shape": null
+        }
+      }
+    }
+  ],
+  "viewNotes": [
+    {
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "male",
+      "season": "any",
+      "note": "Orange breast, white belly, brown mantle and a black head with white streaks."
+    },
+    {
+      "view": "perched-front",
+      "age": "adult",
+      "sex": "male",
+      "season": "any",
+      "note": "Orange breast and white belly. A white stripe sits below the eye."
+    },
+    {
+      "view": "perched-back",
+      "age": "adult",
+      "sex": "male",
+      "season": "any",
+      "note": "Brown mantle and a white shoulder-patch."
+    },
+    {
+      "view": "flight-above",
+      "age": "adult",
+      "sex": "male",
+      "season": "any",
+      "note": "The upperwing was not described beyond the white shoulder-patch."
+    },
+    {
+      "view": "flight-below",
+      "age": "adult",
+      "sex": "male",
+      "season": "any",
+      "note": "Yellow below, with the white belly and vent."
+    }
+  ],
+  "calls": [
+    {
+      "sex": "any",
+      "type": "song",
+      "description": "The song is chipchipchipchipchip-teee, teeu-teeu-teeu-teeu, frequently repeated. The call is pret-ty-boyeee, sometimes answered sitee by the mate. Grade A song from Hluhluwe-iMfolozi. The filename names Golden-breasted Bunting. It is not a Kruger recording.",
+      "recordings": [
+        {
+          "key": "xeno-canto/XC391998",
+          "source": "https://xeno-canto.org/391998",
+          "fileUrl": "https://xeno-canto.org/sounds/uploaded/XVXHTBZRRW/XC391998-Golden-breasted%20Bunting%20S%2020170308%201426%20ZA%20Hluhluwe-iMfolozi-Park%20TW%20LS_5.mp3",
+          "author": "Tom Wulf",
+          "license": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ]
+    }
+  ],
+  "images": [
+    {
+      "key": "emberiza-flaviventris/side.jpg",
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "male",
+      "season": "any",
+      "source": "https://www.inaturalist.org/observations/365310628",
+      "fileUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/666962084/large.jpg",
+      "author": "rastor",
+      "license": "CC BY-NC 4.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+      "aiGenerated": false,
+      "hosted": false,
+      "alt": "Golden-breasted Bunting in Kruger bush",
+      "caption": "Golden-breasted Bunting in Kruger bush, with an orange breast and white streaks on a black head."
+    }
+  ],
+  "research": {
+    "confidence": "medium",
+    "needsReview": false,
+    "note": "Status is resident and all twelve months are listed. Newman calls it a common resident. Population figures were left unchanged."
+  }
 }

@@ -7,8 +7,45 @@
     "af": "Gekroonde Neushoringvoël"
   },
   "family": "bucerotidae",
-  "summary": "The details for this species have not been published yet.",
-  "sampleData": true,
+  "status": "resident",
+  "monthsPresent": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+  ],
+  "size": {
+    "lengthCm": {
+      "min": 50,
+      "max": 57
+    },
+    "note": "Newman's Birds gives 50–57 cm."
+  },
+  "habitat": "Riverine forest fringes, the canopy and fringes of lowland and coastal forest, and well-wooded valleys. It feeds in trees and roosts on high, slender branches.",
+  "summary": "A fairly common forest hornbill with a casque on a red bill that has a yellow base, blackish upperparts and white underparts. The immature has a more orange bill and buff-tipped feathers on the upperparts. The call is a series of melancholy piping whistles.",
+  "sampleData": false,
+  "similar": [
+    {
+      "slug": "tockus-rufirostris",
+      "note": "Southern Red-billed Hornbill also has a red bill, but its upperparts are black-and-white chequered. Crowned Hornbill has plain dark grey-brown upperparts and a yellow base to the bill."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Crowned Hornbill",
+      "url": "https://newmansbirds.com/birds/crowned-hornbill/",
+      "publisher": "Newman's Birds",
+      "year": 2026
+    }
+  ],
   "population": {
     "estimate": {
       "low": 128,
@@ -35,8 +72,174 @@
     },
     "tierApplied": "D"
   },
-  "variants": [],
-  "viewNotes": [],
-  "calls": [],
-  "images": []
+  "variants": [
+    {
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "marks": {
+        "bill": {
+          "colour": [
+            "red",
+            "yellow"
+          ],
+          "shape": "red with a yellow base and a casque"
+        },
+        "eye": {
+          "iris": null,
+          "ring": null
+        },
+        "legs": {
+          "colour": null
+        },
+        "head": {
+          "crown": "black",
+          "face": "dark-brown",
+          "throat": "white",
+          "pattern": "Blackish above and white below."
+        },
+        "upperparts": {
+          "back": "dark-brown",
+          "rump": null,
+          "pattern": null
+        },
+        "underparts": {
+          "breast": "white",
+          "belly": "white",
+          "pattern": null
+        },
+        "wings": {
+          "above": "dark-brown",
+          "below": "white",
+          "pattern": null
+        },
+        "tail": {
+          "colour": null,
+          "shape": null
+        }
+      }
+    },
+    {
+      "age": "juvenile",
+      "sex": "any",
+      "season": "any",
+      "marks": {
+        "bill": {
+          "colour": "orange",
+          "shape": "more orange than the adult bill"
+        },
+        "eye": {
+          "iris": null,
+          "ring": null
+        },
+        "legs": {
+          "colour": null
+        },
+        "head": {
+          "crown": "dark-brown",
+          "face": "dark-brown",
+          "throat": "white",
+          "pattern": null
+        },
+        "upperparts": {
+          "back": "buff",
+          "rump": null,
+          "pattern": "Buff-tipped feathers on the upperparts."
+        },
+        "underparts": {
+          "breast": "white",
+          "belly": "white",
+          "pattern": null
+        },
+        "wings": {
+          "above": "dark-brown",
+          "below": "white",
+          "pattern": null
+        },
+        "tail": {
+          "colour": null,
+          "shape": null
+        }
+      }
+    }
+  ],
+  "viewNotes": [
+    {
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Red bill with a yellow base, dark upperparts and white underparts, on a high branch."
+    },
+    {
+      "view": "perched-front",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "The red-and-yellow bill and casque are the front mark."
+    },
+    {
+      "view": "perched-back",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Plain dark grey-brown upperparts, not a chequered back."
+    },
+    {
+      "view": "flight-above",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Dark above. A separate flight pattern was not named."
+    },
+    {
+      "view": "flight-below",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "White underparts. The underwing colour was not named."
+    }
+  ],
+  "calls": [
+    {
+      "sex": "any",
+      "type": "call",
+      "description": "A series of melancholy, piping whistles. The texts do not separate the sexes. Grade A from Uasin Gishu, Kenya. No playable grade A from South Africa outranked it.",
+      "recordings": [
+        {
+          "key": "xeno-canto/XC444684",
+          "source": "https://xeno-canto.org/444684",
+          "fileUrl": "https://xeno-canto.org/sounds/uploaded/ITRQTFVLNT/XC444684-Crowned%20Hornbill_call_Burnt%20Forest_10Nov2018_0940_J.Bradley.mp3",
+          "author": "James Bradley",
+          "license": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ]
+    }
+  ],
+  "images": [
+    {
+      "key": "lophoceros-alboterminatus/side.jpg",
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "source": "https://www.inaturalist.org/observations/181520432",
+      "fileUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/316326483/large.jpg",
+      "author": "Maryse",
+      "license": "CC BY-NC 4.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+      "aiGenerated": false,
+      "hosted": false,
+      "alt": "Crowned Hornbill perched side-on in Kruger woodland, with a red bill and dark upperparts",
+      "caption": "Crowned Hornbill perched side-on in Kruger woodland, with a red bill and dark upperparts"
+    }
+  ],
+  "research": {
+    "confidence": "medium",
+    "needsReview": false,
+    "note": "Status is resident and all twelve months are listed. Newman calls it a fairly common resident. Chick down and a flight photograph are gaps. The call is grade A from Kenya."
+  }
 }

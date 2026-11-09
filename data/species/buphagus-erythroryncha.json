@@ -7,8 +7,45 @@
     "af": "Rooibekrenostervoël"
   },
   "family": "buphagidae",
-  "summary": "The details for this species have not been published yet.",
-  "sampleData": true,
+  "status": "resident",
+  "monthsPresent": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+  ],
+  "size": {
+    "lengthCm": {
+      "min": 20,
+      "max": 22
+    },
+    "note": "Newman's Birds gives 20–22 cm."
+  },
+  "habitat": "Usually with giraffe or antelope in game reserves, and with domestic cattle in remote rural areas. Flocks roost in the evening in dead trees standing in water.",
+  "summary": "A common oxpecker with an entirely red bill and a large yellow eye-wattle. The head and upperparts are dark brown and the underparts are yellow-buff. Unlike the Yellow-billed Oxpecker it has no pale rump. The immature has a blackish bill, a yellow gape and duller plumage. The calls are a hissing churr and tzik, tzik, and it is noisiest when flying high.",
+  "sampleData": false,
+  "similar": [
+    {
+      "slug": "buphagus-africanus",
+      "note": "Yellow-billed Oxpecker has a heavy yellow bill with a red tip, a pale rump and a longer tail. Red-billed Oxpecker has a red bill, a yellow eye-wattle and no pale rump."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Red-billed Oxpecker",
+      "url": "https://newmansbirds.com/birds/red-billed-oxpecker/",
+      "publisher": "Newman's Birds",
+      "year": 2026
+    }
+  ],
   "population": {
     "estimate": {
       "low": 16384,
@@ -35,8 +72,171 @@
     },
     "tierApplied": "D"
   },
-  "variants": [],
-  "viewNotes": [],
-  "calls": [],
-  "images": []
+  "variants": [
+    {
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "marks": {
+        "bill": {
+          "colour": "red",
+          "shape": "entirely red"
+        },
+        "eye": {
+          "iris": "red",
+          "ring": "yellow"
+        },
+        "legs": {
+          "colour": null
+        },
+        "head": {
+          "crown": "dark-brown",
+          "face": "dark-brown",
+          "throat": "dark-brown",
+          "pattern": "Entire head dark brown, with a large yellow eye-wattle."
+        },
+        "upperparts": {
+          "back": "dark-brown",
+          "rump": "dark-brown",
+          "pattern": "No pale rump."
+        },
+        "underparts": {
+          "breast": "buff",
+          "belly": "buff",
+          "pattern": "Yellow-buff underparts."
+        },
+        "wings": {
+          "above": "dark-brown",
+          "below": null,
+          "pattern": null
+        },
+        "tail": {
+          "colour": null,
+          "shape": null
+        }
+      }
+    },
+    {
+      "age": "juvenile",
+      "sex": "any",
+      "season": "any",
+      "marks": {
+        "bill": {
+          "colour": "black",
+          "shape": "blackish, with a yellow gape"
+        },
+        "eye": {
+          "iris": null,
+          "ring": null
+        },
+        "legs": {
+          "colour": null
+        },
+        "head": {
+          "crown": "dark-brown",
+          "face": "dark-brown",
+          "throat": "dark-brown",
+          "pattern": "Duller than the adult, with a yellow gape."
+        },
+        "upperparts": {
+          "back": "dark-brown",
+          "rump": "dark-brown",
+          "pattern": null
+        },
+        "underparts": {
+          "breast": "buff",
+          "belly": "buff",
+          "pattern": null
+        },
+        "wings": {
+          "above": null,
+          "below": null,
+          "pattern": null
+        },
+        "tail": {
+          "colour": null,
+          "shape": null
+        }
+      }
+    }
+  ],
+  "viewNotes": [
+    {
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Red bill and yellow eye-wattle on a dark brown bird, usually on giraffe or antelope."
+    },
+    {
+      "view": "perched-front",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "The red bill and the yellow eye-wattle are the front marks."
+    },
+    {
+      "view": "perched-back",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Dark rump, not the pale rump of a Yellow-billed Oxpecker."
+    },
+    {
+      "view": "flight-above",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Dark brown above. It is noisy when flying high, but the upperwing pattern was not named."
+    },
+    {
+      "view": "flight-below",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Yellow-buff underparts. The underwing was not named."
+    }
+  ],
+  "calls": [
+    {
+      "sex": "any",
+      "type": "call",
+      "description": "A hissing churr and a tzik, tzik. Most noisy when flying high overhead. The texts do not separate the sexes. Grade A from Kruger National Park. The filename is 1011_cut.",
+      "recordings": [
+        {
+          "key": "xeno-canto/XC237786",
+          "source": "https://xeno-canto.org/237786",
+          "fileUrl": "https://xeno-canto.org/sounds/uploaded/ICUDBWGEGD/XC237786-1011_cut.mp3",
+          "author": "Gabriel A. Jamie",
+          "license": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ]
+    }
+  ],
+  "images": [
+    {
+      "key": "buphagus-erythroryncha/front.jpg",
+      "view": "perched-front",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "source": "https://www.inaturalist.org/observations/182675466",
+      "fileUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/318548771/large.jpg",
+      "author": "Luca Boscain",
+      "license": "CC BY-NC 4.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+      "aiGenerated": false,
+      "hosted": false,
+      "alt": "Two Red-billed Oxpeckers on the face of an antelope in Kruger, with red bills and yellow eye-wattles",
+      "caption": "Two Red-billed Oxpeckers on the face of an antelope in Kruger, with red bills and yellow eye-wattles"
+    }
+  ],
+  "research": {
+    "confidence": "medium",
+    "needsReview": false,
+    "note": "Status is resident and all twelve months are listed. Newman calls it a common resident. The shared header on the Newman page also says the rump is yellow-buff, but the species text says it does not have a pale rump, and that is what is stored. Chick down beyond the blackish bill, yellow gape and duller plumage is not described. There is no flight photograph. The call is grade A from Kruger."
+  }
 }

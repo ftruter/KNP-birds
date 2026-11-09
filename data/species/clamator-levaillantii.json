@@ -7,8 +7,31 @@
     "af": "Gestreepte Nuwejaarsvoël"
   },
   "family": "cuculidae",
-  "summary": "The details for this species have not been published yet.",
-  "sampleData": true,
+  "status": "summer-migrant",
+  "size": {
+    "lengthCm": {
+      "min": 38,
+      "max": 40
+    },
+    "note": "Newman's Birds gives 38–40 cm."
+  },
+  "habitat": "Pairs in woodland, riparian woodland and bushveld.",
+  "summary": "A fairly common summer resident. Pied, with a crest and a heavily streaked throat and breast, and larger than the white morph of Jacobin Cuckoo. The sexes are alike. The call is a flute-like peeeoo, six to eight times, then a rapid wherwher about twenty times. It parasitises babblers. Months were left unset. The Kemp code VB was left unchanged.",
+  "sampleData": false,
+  "similar": [
+    {
+      "slug": "clamator-jacobinus",
+      "note": "The white morph of Jacobin Cuckoo has clear white underparts. Levaillant’s Cuckoo is larger and heavily streaked on the throat and breast."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Levaillant’s Cuckoo",
+      "url": "https://newmansbirds.com/birds/levaillants-cuckoo/",
+      "publisher": "Newman's Birds",
+      "year": 2026
+    }
+  ],
   "population": {
     "estimate": {
       "low": 8192,
@@ -35,8 +58,128 @@
     },
     "tierApplied": "D"
   },
-  "variants": [],
-  "viewNotes": [],
-  "calls": [],
-  "images": []
+  "variants": [
+    {
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "marks": {
+        "bill": {
+          "colour": null,
+          "shape": null
+        },
+        "eye": {
+          "iris": null,
+          "ring": null
+        },
+        "legs": {
+          "colour": null
+        },
+        "head": {
+          "crown": "black",
+          "face": null,
+          "throat": "white",
+          "pattern": "Crested head. Throat and breast heavily streaked."
+        },
+        "upperparts": {
+          "back": "black",
+          "rump": null,
+          "pattern": null
+        },
+        "underparts": {
+          "breast": "white",
+          "belly": "white",
+          "pattern": "Heavily streaked throat and breast."
+        },
+        "wings": {
+          "above": "black",
+          "below": null,
+          "pattern": null
+        },
+        "tail": {
+          "colour": null,
+          "shape": null
+        }
+      }
+    }
+  ],
+  "viewNotes": [
+    {
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Crested and pied, with a heavily streaked throat and breast."
+    },
+    {
+      "view": "perched-front",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Streaked throat and breast, and a crest."
+    },
+    {
+      "view": "perched-back",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Black upper parts and a crest. The streaking is on the throat and breast."
+    },
+    {
+      "view": "flight-above",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "A separate flight pattern was not described."
+    },
+    {
+      "view": "flight-below",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Streaked throat and breast. The belly was included in the pied underparts."
+    }
+  ],
+  "calls": [
+    {
+      "sex": "any",
+      "type": "call",
+      "description": "A flute-like peeeoo peeeoo, six to eight times, then a rapid wherwher about twenty times. Grade A from Ouagadougou. The catalogue types it as song and the filename says lev-cuckoo. No grade A recording from southern Africa was in the set.",
+      "recordings": [
+        {
+          "key": "xeno-canto/XC1010298",
+          "source": "https://xeno-canto.org/1010298",
+          "fileUrl": "https://xeno-canto.org/sounds/uploaded/CPQVBBQHWL/XC1010298-20250629_095356_1-lev-cuckoo.mp3",
+          "author": "Marc Languy",
+          "license": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ]
+    }
+  ],
+  "images": [
+    {
+      "key": "clamator-levaillantii/side.jpg",
+      "view": "perched-back",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "source": "https://www.inaturalist.org/observations/9667946",
+      "fileUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/13211800/large.jpg",
+      "author": "maritzasouthafrica",
+      "license": "CC BY-NC 4.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+      "aiGenerated": false,
+      "hosted": false,
+      "alt": "Levaillant’s Cuckoo perched in a Kruger thorn tree",
+      "caption": "Levaillant’s Cuckoo perched in a thorn tree at Gomondwane, crest raised and throat streaked."
+    }
+  ],
+  "research": {
+    "confidence": "medium",
+    "needsReview": false,
+    "note": "Newman calls it a fairly common summer resident and does not name the months, so monthsPresent was left unset. Newman says the sexes are alike, so one adult variant is stored. Population figures were left unchanged."
+  }
 }

@@ -6,8 +6,8 @@
     "en": "Cuckoos",
     "af": "Koekoeke"
   },
-  "summary": "Field notes for this family are still to be written.",
-  "sampleData": true,
+  "summary": "Coucals and parasitic cuckoos. Newman’s family text says cuckoos lay in other birds’ nests and most are absent from southern Africa from March to September, while coucals are larger, mainly sedentary, and raise their own young. Kruger has three coucals and eleven cuckoos, from the glossy Chrysococcyx species to the crested Clamator cuckoos and the grey Cuculus cuckoos.",
+  "sampleData": false,
   "species": [
     {
       "slug": "centropus-burchellii",

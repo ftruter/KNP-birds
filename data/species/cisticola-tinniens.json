@@ -7,8 +7,45 @@
     "af": "Vleitinktinkie"
   },
   "family": "cisticolidae",
-  "summary": "The details for this species have not been published yet.",
-  "sampleData": true,
+  "status": "resident",
+  "monthsPresent": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+  ],
+  "size": {
+    "lengthCm": {
+      "min": 12,
+      "max": 13
+    },
+    "note": "Newman's Birds gives 12–13 cm."
+  },
+  "habitat": "Sedges and the edges of reed beds at ponds and streams. It seldom enters the reed beds, and is very rarely in tall dry grassland away from water.",
+  "summary": "A common resident. It has a black back and a rufous crown, is pale below, and the face, flanks and breast are washed rufous. It sings chi-chi-chirrrueee, the first two notes almost inaudible, and has a plaintive dzwee, dzwee, dzwee alarm.",
+  "sampleData": false,
+  "similar": [
+    {
+      "slug": "cisticola-galactotes",
+      "note": "Newman says it is superficially similar to Rufous-winged Cisticola, but the two have very little range overlap."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Levaillant's Cisticola",
+      "url": "https://newmansbirds.com/birds/levaillants-cisticola/",
+      "publisher": "Newman's Birds",
+      "year": 2026
+    }
+  ],
   "population": {
     "estimate": {
       "low": 128,
@@ -35,8 +72,128 @@
     },
     "tierApplied": "D"
   },
-  "variants": [],
-  "viewNotes": [],
-  "calls": [],
-  "images": []
+  "variants": [
+    {
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "marks": {
+        "bill": {
+          "colour": null,
+          "shape": null
+        },
+        "eye": {
+          "iris": null,
+          "ring": null
+        },
+        "legs": {
+          "colour": null
+        },
+        "head": {
+          "crown": "rufous",
+          "face": "rufous",
+          "throat": null,
+          "pattern": null
+        },
+        "upperparts": {
+          "back": "black",
+          "rump": null,
+          "pattern": null
+        },
+        "underparts": {
+          "breast": "rufous",
+          "belly": "white",
+          "pattern": "Pale below, with the face, flanks and breast washed rufous."
+        },
+        "wings": {
+          "above": null,
+          "below": null,
+          "pattern": null
+        },
+        "tail": {
+          "colour": null,
+          "shape": null
+        }
+      }
+    }
+  ],
+  "viewNotes": [
+    {
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Rufous crown and black back, perched at the edge of sedges."
+    },
+    {
+      "view": "perched-front",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Rufous wash on the face."
+    },
+    {
+      "view": "perched-back",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Black back."
+    },
+    {
+      "view": "flight-above",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "The upperwing was not named."
+    },
+    {
+      "view": "flight-below",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Pale underparts with a rufous wash on the breast and flanks."
+    }
+  ],
+  "calls": [
+    {
+      "sex": "any",
+      "type": "call",
+      "description": "chi-chi-chirrrueee, the first two notes almost inaudible and the final phrase loud. The alarm is dzwee, dzwee, dzwee. The texts do not separate the sexes. Grade A from Bloemfontein. The filename is CisticolaLevalliants.",
+      "recordings": [
+        {
+          "key": "xeno-canto/XC737784",
+          "source": "https://xeno-canto.org/737784",
+          "fileUrl": "https://xeno-canto.org/sounds/uploaded/JDCTKFMBKV/XC737784-CisticolaLevalliants_SevendamsBFN_20220716.MP3",
+          "author": "Dawie de Swardt",
+          "license": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ]
+    }
+  ],
+  "images": [
+    {
+      "key": "cisticola-tinniens/side.jpg",
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "source": "https://www.inaturalist.org/observations/322200912",
+      "fileUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/582826543/large.jpg",
+      "author": "Саакян К.С.",
+      "license": "CC BY-NC 4.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+      "aiGenerated": false,
+      "hosted": false,
+      "alt": "Levaillant’s Cisticola perched in Kruger",
+      "caption": "Levaillant’s Cisticola perched in Kruger"
+    }
+  ],
+  "research": {
+    "confidence": "medium",
+    "needsReview": false,
+    "note": "Status is resident and all twelve months are listed from Newman’s resident wording. Population figures were left unchanged."
+  }
 }

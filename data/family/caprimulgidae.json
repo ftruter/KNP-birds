@@ -6,8 +6,8 @@
     "en": "Nightjars",
     "af": "Naguile"
   },
-  "summary": "Field notes for this family are still to be written.",
-  "sampleData": true,
+  "summary": "Nightjars are nocturnal birds that roost by day and hunt at dusk. Kruger has six. European Nightjar is the Palearctic migrant. Fiery-necked, Freckled and Square-tailed Nightjars are treated as residents. Rufous-cheeked and Pennant-winged Nightjars are intra-African migrants. Newman has no nightjar pages, so these accounts use Wikipedia and SABAP1.",
+  "sampleData": false,
   "species": [
     {
       "slug": "caprimulgus-europaeus",

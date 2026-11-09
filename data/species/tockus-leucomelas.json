@@ -7,8 +7,49 @@
     "af": "Geelbekneushoringvoël"
   },
   "family": "bucerotidae",
-  "summary": "The details for this species have not been published yet.",
-  "sampleData": true,
+  "status": "resident",
+  "monthsPresent": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+  ],
+  "size": {
+    "lengthCm": {
+      "min": 48,
+      "max": 60
+    },
+    "note": "Newman's Birds gives 48–60 cm."
+  },
+  "habitat": "Dry bushveld and savanna woodland, where it is conspicuous. Two birds often call together with a wing-opening, head-bowing display.",
+  "summary": "A common, near-endemic pied hornbill. The large yellow bill separates it from the other Kruger hornbills. The immature has a reddish base to the bill. The call works up to a crescendo and fades, wurk, wurk, wurk, wukwukak. The sexes are not separated in this account.",
+  "sampleData": false,
+  "similar": [
+    {
+      "slug": "tockus-rufirostris",
+      "note": "Southern Red-billed Hornbill has a red bill and prefers drier ground, including mopane. Its call is similar but faster. Yellow-billed Hornbill has the large yellow bill."
+    },
+    {
+      "slug": "lophoceros-nasutus",
+      "note": "African Grey Hornbill is darker grey, with a small dark or cream-and-red bill and a white eyebrow, not a large yellow bill."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Southern Yellow-billed Hornbill",
+      "url": "https://newmansbirds.com/birds/southern-yellow-billed-hornbill/",
+      "publisher": "Newman's Birds",
+      "year": 2026
+    }
+  ],
   "population": {
     "estimate": {
       "low": 32768,
@@ -35,8 +76,174 @@
     },
     "tierApplied": "D"
   },
-  "variants": [],
-  "viewNotes": [],
-  "calls": [],
-  "images": []
+  "variants": [
+    {
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "marks": {
+        "bill": {
+          "colour": "yellow",
+          "shape": "large and yellow"
+        },
+        "eye": {
+          "iris": null,
+          "ring": null
+        },
+        "legs": {
+          "colour": null
+        },
+        "head": {
+          "crown": "black",
+          "face": "white",
+          "throat": "white",
+          "pattern": "Pied. The texts do not name each head colour beyond the pied pattern and the yellow bill."
+        },
+        "upperparts": {
+          "back": "black",
+          "rump": null,
+          "pattern": null
+        },
+        "underparts": {
+          "breast": "white",
+          "belly": "white",
+          "pattern": null
+        },
+        "wings": {
+          "above": "black",
+          "below": "white",
+          "pattern": "Pied wings. A separate flight pattern was not named."
+        },
+        "tail": {
+          "colour": null,
+          "shape": null
+        }
+      }
+    },
+    {
+      "age": "juvenile",
+      "sex": "any",
+      "season": "any",
+      "marks": {
+        "bill": {
+          "colour": [
+            "yellow",
+            "red"
+          ],
+          "shape": "yellow with a reddish base"
+        },
+        "eye": {
+          "iris": null,
+          "ring": null
+        },
+        "legs": {
+          "colour": null
+        },
+        "head": {
+          "crown": "black",
+          "face": "white",
+          "throat": "white",
+          "pattern": null
+        },
+        "upperparts": {
+          "back": "black",
+          "rump": null,
+          "pattern": null
+        },
+        "underparts": {
+          "breast": "white",
+          "belly": "white",
+          "pattern": null
+        },
+        "wings": {
+          "above": "black",
+          "below": "white",
+          "pattern": null
+        },
+        "tail": {
+          "colour": null,
+          "shape": null
+        }
+      }
+    }
+  ],
+  "viewNotes": [
+    {
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Large yellow bill on a pied bird in dry bushveld."
+    },
+    {
+      "view": "perched-front",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "The yellow bill is the front mark."
+    },
+    {
+      "view": "perched-back",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Pied back. Part colours of the back were not named beyond pied."
+    },
+    {
+      "view": "flight-above",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Pied above. The upperwing pattern in flight was not named."
+    },
+    {
+      "view": "flight-below",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "White underparts are implied by the pied pattern. The underwing was not named separately."
+    }
+  ],
+  "calls": [
+    {
+      "sex": "any",
+      "type": "call",
+      "description": "wurk, wurk, wurk, wurk, wurk, wurk, wukwukak, wukwukak, working up to a crescendo and then fading. Often two birds call together. The texts do not separate the sexes. Grade A from Hammanskraal, Limpopo.",
+      "recordings": [
+        {
+          "key": "xeno-canto/XC610219",
+          "source": "https://xeno-canto.org/610219",
+          "fileUrl": "https://xeno-canto.org/sounds/uploaded/JDCTKFMBKV/XC610219-14HornbillYellowbilled_Near%20Zaagkuilsdrift%20Lodge_20201220.MP3",
+          "author": "Dawie de Swardt",
+          "license": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ]
+    }
+  ],
+  "images": [
+    {
+      "key": "tockus-leucomelas/front.jpg",
+      "view": "perched-front",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "source": "https://www.inaturalist.org/observations/32573964",
+      "fileUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/51102445/large.jpeg",
+      "author": "Karen Eichholz",
+      "license": "CC BY 4.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by/4.0/",
+      "aiGenerated": false,
+      "hosted": false,
+      "alt": "Adult Southern Yellow-billed Hornbill perched front-on in Kruger, with a large yellow bill and a smaller bird in front",
+      "caption": "Adult Southern Yellow-billed Hornbill perched front-on in Kruger, with a large yellow bill and a smaller bird in front"
+    }
+  ],
+  "research": {
+    "confidence": "medium",
+    "needsReview": false,
+    "note": "Status is resident and all twelve months are listed. Newman calls it a common near-endemic resident. The photograph also shows a smaller bird, whose plumage was not copied into the marks because Newman only says the immature bill has a reddish base. Chick down beyond that, and a flight photograph, are gaps. The call is grade A from Limpopo."
+  }
 }

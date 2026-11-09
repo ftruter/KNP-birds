@@ -6,8 +6,8 @@
     "en": "Crows and ravens",
     "af": "Kraaie"
   },
-  "summary": "Field notes for this family are still to be written.",
-  "sampleData": true,
+  "summary": "Crows and ravens are large, mostly black passerines. Kruger has three. White-necked Raven, Corvus albicollis, is black with a white nape and a heavy bill. Pied Crow, Corvus albus, has a white breast and collar. Cape Crow, Corvus capensis, is entirely glossy black.",
+  "sampleData": false,
   "species": [
     {
       "slug": "corvus-albicollis",

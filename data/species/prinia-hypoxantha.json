@@ -7,8 +7,45 @@
     "af": "Drakensberglangstertjie"
   },
   "family": "cisticolidae",
-  "summary": "The details for this species have not been published yet.",
-  "sampleData": true,
+  "status": "resident",
+  "monthsPresent": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+  ],
+  "size": {
+    "lengthCm": {
+      "min": 14,
+      "max": 14
+    },
+    "note": "Newman's Birds gives 14 cm."
+  },
+  "habitat": "Small family groups in rank growth in vleis, matted river scrub and forest-edge thickets, from the Drakensberg escarpment north to the Soutpansberg. It shares this habitat with Tawny-flanked Prinia.",
+  "summary": "A fairly common endemic resident. The underparts are rich saffron-yellow and the upper breast is only lightly spotted. Newman says the call is the same as the Karoo Prinia’s, and that species is not on the Kruger list. No openly licensed Kruger photograph was found. No Kemp estimate is published.",
+  "sampleData": false,
+  "similar": [
+    {
+      "slug": "prinia-subflava",
+      "note": "Tawny-flanked Prinia shares the habitat but has white underparts and tawny flanks, not saffron-yellow underparts."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Drakensberg Prinia",
+      "url": "https://newmansbirds.com/birds/drakensberg-prinia/",
+      "publisher": "Newman's Birds",
+      "year": 2026
+    }
+  ],
   "population": {
     "estimate": {
       "low": null,
@@ -21,8 +58,111 @@
     "notes": "No sourced Kruger estimate is currently available; taxonomy or later records require separate research.",
     "sources": []
   },
-  "variants": [],
-  "viewNotes": [],
-  "calls": [],
-  "images": []
+  "variants": [
+    {
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "marks": {
+        "bill": {
+          "colour": null,
+          "shape": null
+        },
+        "eye": {
+          "iris": null,
+          "ring": null
+        },
+        "legs": {
+          "colour": null
+        },
+        "head": {
+          "crown": null,
+          "face": null,
+          "throat": null,
+          "pattern": null
+        },
+        "upperparts": {
+          "back": null,
+          "rump": null,
+          "pattern": null
+        },
+        "underparts": {
+          "breast": "yellow",
+          "belly": "yellow",
+          "pattern": "Rich saffron-yellow underparts. The upper breast is only lightly spotted."
+        },
+        "wings": {
+          "above": null,
+          "below": null,
+          "pattern": null
+        },
+        "tail": {
+          "colour": null,
+          "shape": null
+        }
+      }
+    }
+  ],
+  "viewNotes": [
+    {
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Saffron-yellow below, in rank cover along the escarpment."
+    },
+    {
+      "view": "perched-front",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "The face was not named."
+    },
+    {
+      "view": "perched-back",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "The back was not named beyond the comparison with Karoo Prinia."
+    },
+    {
+      "view": "flight-above",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "The upperwing was not named."
+    },
+    {
+      "view": "flight-below",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Saffron-yellow underparts, the upper breast lightly spotted."
+    }
+  ],
+  "calls": [
+    {
+      "sex": "any",
+      "type": "call",
+      "description": "Newman says the call is identical to the Karoo Prinia’s and does not write the notes out. The file is grade A from near Cathkin Park, KwaZulu-Natal. The filename is Drakensberg-prinia-calls.",
+      "recordings": [
+        {
+          "key": "xeno-canto/XC935289",
+          "source": "https://xeno-canto.org/935289",
+          "fileUrl": "https://xeno-canto.org/sounds/uploaded/UKDFMOJDDN/XC935289-Drakensberg-prinia-calls-.mp3",
+          "author": "Daan van der Hoeven",
+          "license": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ]
+    }
+  ],
+  "images": [],
+  "research": {
+    "confidence": "medium",
+    "needsReview": true,
+    "note": "Status is resident and all twelve months are listed from Newman’s resident wording. Population figures were left unchanged."
+  }
 }
