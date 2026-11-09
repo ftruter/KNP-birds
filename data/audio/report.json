@@ -1,11 +1,11 @@
 {
   "source": "xeno-canto explore catalogue, API v3 recording fields",
   "counts": {
-    "slots": 113,
+    "slots": 124,
     "swapped": 17,
-    "added": 20,
+    "added": 29,
     "kept": 57,
-    "none": 19,
+    "none": 21,
     "cleaned": 0
   },
   "noUsableRecording": [
@@ -102,6 +102,16 @@
     {
       "slug": "plectropterus-gambensis",
       "scientificName": "Plectropterus gambensis",
+      "type": "call"
+    },
+    {
+      "slug": "apus-apus",
+      "scientificName": "Apus apus",
+      "type": "call"
+    },
+    {
+      "slug": "apus-apus",
+      "scientificName": "Apus apus",
       "type": "call"
     }
   ],
@@ -1924,6 +1934,160 @@
       "locality": "Port Alfred, Western District, Eastern Cape",
       "cleaned": false,
       "license": "CC BY-NC-SA 4.0"
+    },
+    {
+      "slug": "apus-affinis",
+      "scientificName": "Apus affinis",
+      "index": 0,
+      "type": "call",
+      "action": "added",
+      "from": [],
+      "to": "494123",
+      "quality": "A",
+      "country": "South Africa",
+      "locality": "Klerksdorp (near Orkney), Southern DC, North West",
+      "cleaned": false,
+      "license": "CC BY-NC-SA 4.0"
+    },
+    {
+      "slug": "apus-apus",
+      "scientificName": "Apus apus",
+      "index": 0,
+      "type": "call",
+      "action": "none",
+      "from": [],
+      "to": "",
+      "quality": "",
+      "country": "",
+      "locality": "",
+      "cleaned": false,
+      "license": ""
+    },
+    {
+      "slug": "apus-apus",
+      "scientificName": "Apus apus",
+      "index": 1,
+      "type": "call",
+      "action": "none",
+      "from": [],
+      "to": "",
+      "quality": "",
+      "country": "",
+      "locality": "",
+      "cleaned": false,
+      "license": ""
+    },
+    {
+      "slug": "apus-apus",
+      "scientificName": "Apus apus",
+      "index": 2,
+      "type": "call",
+      "action": "added",
+      "from": [],
+      "to": "27236",
+      "quality": "A",
+      "country": "Sweden",
+      "locality": "Källedalen, Fröstorp, Tibro, Västergötland",
+      "cleaned": false,
+      "license": "CC BY-NC-SA 3.0"
+    },
+    {
+      "slug": "apus-barbatus",
+      "scientificName": "Apus barbatus",
+      "index": 0,
+      "type": "call",
+      "action": "added",
+      "from": [],
+      "to": "368196",
+      "quality": "B",
+      "country": "South Africa",
+      "locality": "God's Window, Grasskop",
+      "cleaned": false,
+      "license": "CC BY-NC-SA 4.0"
+    },
+    {
+      "slug": "apus-caffer",
+      "scientificName": "Apus caffer",
+      "index": 0,
+      "type": "call",
+      "action": "added",
+      "from": [],
+      "to": "466641",
+      "quality": "B",
+      "country": "South Africa",
+      "locality": "Klerksdorp, Southern DC, North West",
+      "cleaned": false,
+      "license": "CC BY-NC-SA 4.0"
+    },
+    {
+      "slug": "apus-horus",
+      "scientificName": "Apus horus",
+      "index": 0,
+      "type": "call",
+      "action": "added",
+      "from": [],
+      "to": "410343",
+      "quality": "B",
+      "country": "Senegal",
+      "locality": "Gamadji Sare, Podor",
+      "cleaned": false,
+      "license": "CC BY-NC-SA 4.0"
+    },
+    {
+      "slug": "cypsiurus-parvus",
+      "scientificName": "Cypsiurus parvus",
+      "index": 0,
+      "type": "call",
+      "action": "added",
+      "from": [],
+      "to": "710191",
+      "quality": "A",
+      "country": "South Africa",
+      "locality": "City of Matlosana (near Klerksdorp), Southern DC, North West",
+      "cleaned": false,
+      "license": "CC BY-NC-SA 4.0"
+    },
+    {
+      "slug": "neafrapus-boehmi",
+      "scientificName": "Neafrapus boehmi",
+      "index": 0,
+      "type": "call",
+      "action": "added",
+      "from": [],
+      "to": "688818",
+      "quality": "D",
+      "country": "Mozambique",
+      "locality": "Camacho, Marromeu, Sofala",
+      "cleaned": false,
+      "license": "CC BY-NC-SA 4.0"
+    },
+    {
+      "slug": "tachymarptis-melba",
+      "scientificName": "Tachymarptis melba",
+      "index": 0,
+      "type": "call",
+      "action": "added",
+      "from": [],
+      "to": "187988",
+      "quality": "A",
+      "country": "Switzerland",
+      "locality": "Berne, Bern District, Canton of Bern",
+      "cleaned": false,
+      "license": "CC BY-NC-SA 4.0"
+    },
+    {
+      "slug": "telacanthura-ussheri",
+      "scientificName": "Telacanthura ussheri",
+      "index": 0,
+      "type": "call",
+      "action": "added",
+      "from": [],
+      "to": "124661",
+      "quality": "B",
+      "country": "Tanzania",
+      "locality": "Ukami Forest, Udzungwa Mts, Iringa Region",
+      "cleaned": false,
+      "license": "CC BY-NC-SA 3.0"
     }
   ]
 }

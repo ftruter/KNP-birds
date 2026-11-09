@@ -7,8 +7,71 @@
     "af": "Kleinwindswael"
   },
   "family": "apodidae",
-  "summary": "The details for this species have not been published yet.",
-  "sampleData": true,
+  "status": "resident",
+  "monthsPresent": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+  ],
+  "size": {
+    "lengthCm": {
+      "min": 14,
+      "max": 14
+    },
+    "note": "Newman's Birds gives 14 cm. Wikipedia gives a wingspan of 33 cm, which is not a body length."
+  },
+  "habitat": "Forages over open country, including grassland, Karoo and water, and nests in colonies under overhangs on cliffs and, more often now, on bridges, towers, silos and buildings.",
+  "summary": "A small black swift with a white throat and a large white rump that extends onto the flanks. The tail is short and square, with round tips. The flight is fluttering, and Newman says the wings are often held steeply upwards with the tail fanned. The wings are less pointed than those of the other Apus swifts. The call is a high twittering or chittering scream. Sexes and the immature are not given separate plumage in the species accounts used here.",
+  "sampleData": false,
+  "similar": [
+    {
+      "slug": "telacanthura-ussheri",
+      "note": "Mottled Spinetail shares a large white rump that extends over the sides. Newman says Little Swift differs by its clear white throat."
+    },
+    {
+      "slug": "apus-horus",
+      "note": "Horus Swift has a white rump and a white chin, but the tail is forked and the rump patch is less extensive. Little Swift has a square tail."
+    },
+    {
+      "slug": "apus-caffer",
+      "note": "White-rumped Swift is slimmer and darker, with a deeply forked tail and a narrow white rump that does not wrap onto the sides."
+    }
+  ],
+  "sources": [
+    {
+      "title": "The Atlas of Southern African Birds, Vol. 1 (Little Swift)",
+      "url": "https://sabap2.birdmap.africa/docs/sabap1/417.pdf",
+      "publisher": "BirdLife South Africa",
+      "year": 1997
+    },
+    {
+      "title": "Little Swift",
+      "url": "https://newmansbirds.com/birds/little-swift/",
+      "publisher": "Newman's Birds",
+      "year": 2026
+    },
+    {
+      "title": "Little swift",
+      "url": "https://en.wikipedia.org/wiki/Little_swift",
+      "publisher": "Wikipedia",
+      "year": 2026
+    },
+    {
+      "title": "Apus affinis (Little swift)",
+      "url": "https://www.biodiversityexplorer.info/birds/apodidae/apus_affinis.htm",
+      "publisher": "Biodiversity Explorer",
+      "year": null
+    }
+  ],
   "population": {
     "estimate": {
       "low": 2048,
@@ -35,8 +98,144 @@
     },
     "tierApplied": "D"
   },
-  "variants": [],
-  "viewNotes": [],
-  "calls": [],
-  "images": []
+  "variants": [
+    {
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "marks": {
+        "bill": {
+          "colour": null,
+          "shape": null
+        },
+        "eye": {
+          "iris": null,
+          "ring": null
+        },
+        "legs": {
+          "colour": null
+        },
+        "head": {
+          "crown": "black",
+          "face": "black",
+          "throat": "white",
+          "pattern": null
+        },
+        "upperparts": {
+          "back": "black",
+          "rump": "white",
+          "pattern": "The white rump extends onto the flanks."
+        },
+        "underparts": {
+          "breast": "black",
+          "belly": "black",
+          "pattern": null
+        },
+        "wings": {
+          "above": "black",
+          "below": "black",
+          "pattern": "Newman: the wings are less pointed than in other swifts and are often angled steeply upwards."
+        },
+        "tail": {
+          "colour": "black",
+          "shape": "short and square, with round tips; often fanned"
+        }
+      }
+    }
+  ],
+  "viewNotes": [
+    {
+      "view": "flight-below",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Black from below, with a white throat. The white rump can show at the sides of the body."
+    },
+    {
+      "view": "flight-above",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Black above, with a broad white rump. The flight is fluttering rather than a long glide."
+    },
+    {
+      "view": "flight-side",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Square tail and a white rump that wraps onto the flanks. The wings may be held steeply upwards."
+    },
+    {
+      "view": "perched-front",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "The white throat is the front mark when the bird clings at a nest. Swifts cling to a vertical surface. They do not settle on the ground, and a normal perched view is not described."
+    },
+    {
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "At the nest the white rump band is visible from the side. The bird clings; it does not stand on the ground."
+    }
+  ],
+  "calls": [
+    {
+      "sex": "any",
+      "type": "call",
+      "description": "A high twittering or chittering scream from the flock in flight. The texts do not separate the sexes. Grade A, North West, not labelled by sex.",
+      "recordings": [
+        {
+          "key": "xeno-canto/XC494123",
+          "source": "https://xeno-canto.org/494123",
+          "fileUrl": "https://xeno-canto.org/sounds/uploaded/HMBDEWEZVS/XC494123-Little%20Swifts.mp3",
+          "author": "Tony Archer",
+          "license": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ]
+    }
+  ],
+  "images": [
+    {
+      "key": "apus-affinis/sabie-side.jpg",
+      "view": "flight-side",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "source": "https://www.inaturalist.org/observations/11126805",
+      "fileUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/15734072/large.jpg",
+      "author": "Ernest Porter",
+      "license": "CC BY-NC 4.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+      "aiGenerated": false,
+      "hosted": false,
+      "alt": "Little Swift in flight from the side between Skukuza and Lower Sabie, Kruger, showing the white rump",
+      "caption": "Little Swift in flight from the side between Skukuza and Lower Sabie, Kruger, showing the white rump"
+    },
+    {
+      "key": "apus-affinis/nest-side.jpg",
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "source": "https://www.inaturalist.org/observations/185977805",
+      "fileUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/324901041/large.jpg",
+      "author": "Cole Wolf",
+      "license": "CC BY 4.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by/4.0/",
+      "aiGenerated": false,
+      "hosted": false,
+      "alt": "Little Swift clinging in a nest under thatch in Ehlanzeni, Kruger, with the white rump showing",
+      "caption": "Little Swift clinging in a nest under thatch in Ehlanzeni, Kruger, with the white rump showing"
+    }
+  ],
+  "research": {
+    "confidence": "medium",
+    "needsReview": false,
+    "note": "Status is resident and all twelve months are listed. SABAP1 found only partial migration, and some of the winter drop may be birds feeding high and out of sight. Newman calls it a very common resident. Chick down, leg colour and a sexed call are not described. The grade A call is from North West."
+  }
 }

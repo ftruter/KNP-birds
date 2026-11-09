@@ -7,8 +7,60 @@
     "af": "Gevlekte Stekelstert"
   },
   "family": "apodidae",
-  "summary": "The details for this species have not been published yet.",
-  "sampleData": true,
+  "status": "resident",
+  "monthsPresent": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+  ],
+  "habitat": "Hot, low-lying mopane valleys where baobabs are common. Nests are placed in hollow baobabs. It forages over dense woodland, including riverine forest. In South Africa it is local in north-eastern Limpopo.",
+  "summary": "A scarce spinetail of the northern mopane valleys. SABAP1 says it is not difficult to identify and that there is no evidence of seasonal movement. Newman separates it from Little Swift, which shares the large white rump that extends over the sides, by Little Swift’s clear white throat. Other part colours, the call and the size were not in the species texts used here. It probably breeds in summer, but few data are published.",
+  "sampleData": false,
+  "similar": [
+    {
+      "slug": "apus-affinis",
+      "note": "Little Swift has a clear white throat and a square tail. Newman says that white throat is the difference from Mottled Spinetail, which shares the broad white rump."
+    },
+    {
+      "slug": "neafrapus-boehmi",
+      "note": "Böhm’s Spinetail uses the same baobab country. These texts do not give a plumage comparison."
+    }
+  ],
+  "sources": [
+    {
+      "title": "The Atlas of Southern African Birds, Vol. 1 (Mottled Spinetail)",
+      "url": "https://sabap2.birdmap.africa/docs/sabap1/422.pdf",
+      "publisher": "BirdLife South Africa",
+      "year": 1997
+    },
+    {
+      "title": "Little Swift, including the Mottled Spinetail comparison",
+      "url": "https://newmansbirds.com/birds/little-swift/",
+      "publisher": "Newman's Birds",
+      "year": 2026
+    },
+    {
+      "title": "Mottled spinetail",
+      "url": "https://en.wikipedia.org/wiki/Mottled_spinetail",
+      "publisher": "Wikipedia",
+      "year": 2026
+    },
+    {
+      "title": "Telacanthura ussheri (Mottled spinetail)",
+      "url": "https://www.biodiversityexplorer.info/birds/apodidae/telacanthura_ussheri.htm",
+      "publisher": "Biodiversity Explorer",
+      "year": null
+    }
+  ],
   "population": {
     "estimate": {
       "low": 32,
@@ -35,8 +87,128 @@
     },
     "tierApplied": "D"
   },
-  "variants": [],
-  "viewNotes": [],
-  "calls": [],
-  "images": []
+  "variants": [
+    {
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "marks": {
+        "bill": {
+          "colour": null,
+          "shape": null
+        },
+        "eye": {
+          "iris": null,
+          "ring": null
+        },
+        "legs": {
+          "colour": null
+        },
+        "head": {
+          "crown": null,
+          "face": null,
+          "throat": null,
+          "pattern": "Newman says Little Swift differs from this species by its clear white throat, so a clear white throat was not stored here."
+        },
+        "upperparts": {
+          "back": null,
+          "rump": "white",
+          "pattern": "Newman, on the Little Swift page, says the large white rump extends over the sides and is shared with Mottled Spinetail."
+        },
+        "underparts": {
+          "breast": null,
+          "belly": null,
+          "pattern": null
+        },
+        "wings": {
+          "above": null,
+          "below": null,
+          "pattern": null
+        },
+        "tail": {
+          "colour": null,
+          "shape": null
+        }
+      }
+    }
+  ],
+  "viewNotes": [
+    {
+      "view": "flight-below",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "The underwing colour is not described. The white rump can show at the sides."
+    },
+    {
+      "view": "flight-above",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "A large white rump that extends over the sides. The rest of the upperwing is not described."
+    },
+    {
+      "view": "flight-side",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Broad white rump. A clear white throat, as on Little Swift, is the mark Newman says this bird lacks."
+    },
+    {
+      "view": "perched-front",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Swifts cling to a vertical surface. They do not settle on the ground, and a normal perched view is not described. Throat colour is not positively described."
+    },
+    {
+      "view": "perched-back",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "The white rump would be the rear mark on a baobab. A clinging view was not described in detail."
+    }
+  ],
+  "calls": [
+    {
+      "sex": "any",
+      "type": "call",
+      "description": "The texts used here do not describe the call. Grade B from the Udzungwa Mountains, Tanzania. Two of the six catalogue files were playable, and this was the higher grade. It is not labelled by sex.",
+      "recordings": [
+        {
+          "key": "xeno-canto/XC124661",
+          "source": "https://xeno-canto.org/124661",
+          "fileUrl": "https://xeno-canto.org/sounds/uploaded/SGNUEQHVBW/XC124661-Telacanthura-ussheri_call_very_short_Ends-26-January-2003_specific-voices_sideB.mp3",
+          "author": "Louis A. Hansen",
+          "license": "CC BY-NC-SA 3.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/3.0/",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ]
+    }
+  ],
+  "images": [
+    {
+      "key": "telacanthura-ussheri/mopani-below.jpg",
+      "view": "flight-below",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "source": "https://www.inaturalist.org/observations/188041959",
+      "fileUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/328990347/large.jpg",
+      "author": "Richard Johnstone",
+      "license": "CC BY-NC 4.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+      "aiGenerated": false,
+      "hosted": false,
+      "alt": "Mottled Spinetail in flight from below in Mopani, Kruger, with a white rump and pale trailing edges",
+      "caption": "Mottled Spinetail in flight from below in Mopani, Kruger, with a white rump and pale trailing edges"
+    }
+  ],
+  "research": {
+    "confidence": "low",
+    "needsReview": true,
+    "note": "Status is resident and all twelve months are listed. SABAP1 found no evidence of seasonal movement and says breeding is probably in summer, which was not used to drop winter. Size, most plumage colours, chick down and a described call are gaps. The photograph shows pale throat and wing edges that were not copied into the colour marks, because Newman only says the bird lacks Little Swift’s clear white throat."
+  }
 }

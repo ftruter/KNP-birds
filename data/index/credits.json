@@ -1623,14 +1623,69 @@
       "slug": "apus-affinis",
       "scientificName": "Apus affinis",
       "commonName": "Little Swift",
-      "images": [],
-      "recordings": [],
+      "images": [
+        {
+          "key": "apus-affinis/sabie-side.jpg",
+          "author": "Ernest Porter",
+          "licence": "CC BY-NC 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+          "sourceUrl": "https://www.inaturalist.org/observations/11126805",
+          "aiGenerated": false,
+          "hosted": false
+        },
+        {
+          "key": "apus-affinis/nest-side.jpg",
+          "author": "Cole Wolf",
+          "licence": "CC BY 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by/4.0/",
+          "sourceUrl": "https://www.inaturalist.org/observations/185977805",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ],
+      "recordings": [
+        {
+          "key": "xeno-canto/XC494123",
+          "author": "Tony Archer",
+          "licence": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "sourceUrl": "https://xeno-canto.org/494123",
+          "aiGenerated": false,
+          "hosted": false,
+          "quality": "A",
+          "callType": "call"
+        }
+      ],
       "sources": [
         {
           "title": "Kemp A.C., Herholdt J.J., Whyte I. & Harrison J. (2001). Birds of the two largest national parks in South Africa: a method to generate estimates of population size for all species and assess their conservation ecology. S. Afr. J. Sci. 97: 393–403.",
           "url": "https://journals.co.za/doi/pdf/10.10520/EJC97367",
           "publisher": "South African Journal of Science",
           "year": 2001
+        },
+        {
+          "title": "The Atlas of Southern African Birds, Vol. 1 (Little Swift)",
+          "url": "https://sabap2.birdmap.africa/docs/sabap1/417.pdf",
+          "publisher": "BirdLife South Africa",
+          "year": 1997
+        },
+        {
+          "title": "Little Swift",
+          "url": "https://newmansbirds.com/birds/little-swift/",
+          "publisher": "Newman's Birds",
+          "year": 2026
+        },
+        {
+          "title": "Little swift",
+          "url": "https://en.wikipedia.org/wiki/Little_swift",
+          "publisher": "Wikipedia",
+          "year": 2026
+        },
+        {
+          "title": "Apus affinis (Little swift)",
+          "url": "https://www.biodiversityexplorer.info/birds/apodidae/apus_affinis.htm",
+          "publisher": "Biodiversity Explorer",
+          "year": null
         }
       ]
     },
@@ -1638,14 +1693,54 @@
       "slug": "apus-apus",
       "scientificName": "Apus apus",
       "commonName": "Common Swift",
-      "images": [],
-      "recordings": [],
+      "images": [
+        {
+          "key": "apus-apus/kruger-below.jpg",
+          "author": "Ehren",
+          "licence": "CC BY-NC 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+          "sourceUrl": "https://www.inaturalist.org/observations/259180837",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ],
+      "recordings": [
+        {
+          "key": "xeno-canto/XC27236",
+          "author": "Patrik Åberg",
+          "licence": "CC BY-NC-SA 3.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/3.0/",
+          "sourceUrl": "https://xeno-canto.org/27236",
+          "aiGenerated": false,
+          "hosted": false,
+          "quality": "A",
+          "callType": "call"
+        }
+      ],
       "sources": [
         {
           "title": "Kemp A.C., Herholdt J.J., Whyte I. & Harrison J. (2001). Birds of the two largest national parks in South Africa: a method to generate estimates of population size for all species and assess their conservation ecology. S. Afr. J. Sci. 97: 393–403.",
           "url": "https://journals.co.za/doi/pdf/10.10520/EJC97367",
           "publisher": "South African Journal of Science",
           "year": 2001
+        },
+        {
+          "title": "The Atlas of Southern African Birds, Vol. 1 (European Swift)",
+          "url": "https://sabap2.birdmap.africa/docs/sabap1/411.pdf",
+          "publisher": "BirdLife South Africa",
+          "year": 1997
+        },
+        {
+          "title": "Common swift",
+          "url": "https://en.wikipedia.org/wiki/Common_swift",
+          "publisher": "Wikipedia",
+          "year": 2026
+        },
+        {
+          "title": "Apus apus (Common swift)",
+          "url": "https://www.biodiversityexplorer.info/birds/apodidae/apus_apus.htm",
+          "publisher": "Biodiversity Explorer",
+          "year": null
         }
       ]
     },
@@ -1653,14 +1748,54 @@
       "slug": "apus-barbatus",
       "scientificName": "Apus barbatus",
       "commonName": "African Black Swift",
-      "images": [],
-      "recordings": [],
+      "images": [
+        {
+          "key": "apus-barbatus/mopani-below.jpg",
+          "author": "Duncan McKenzie",
+          "licence": "CC BY-NC 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+          "sourceUrl": "https://www.inaturalist.org/observations/196267123",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ],
+      "recordings": [
+        {
+          "key": "xeno-canto/XC368196",
+          "author": "Oscar Campbell",
+          "licence": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "sourceUrl": "https://xeno-canto.org/368196",
+          "aiGenerated": false,
+          "hosted": false,
+          "quality": "B",
+          "callType": "call"
+        }
+      ],
       "sources": [
         {
           "title": "Kemp A.C., Herholdt J.J., Whyte I. & Harrison J. (2001). Birds of the two largest national parks in South Africa: a method to generate estimates of population size for all species and assess their conservation ecology. S. Afr. J. Sci. 97: 393–403.",
           "url": "https://journals.co.za/doi/pdf/10.10520/EJC97367",
           "publisher": "South African Journal of Science",
           "year": 2001
+        },
+        {
+          "title": "The Atlas of Southern African Birds, Vol. 1 (Black Swift)",
+          "url": "https://sabap2.birdmap.africa/docs/sabap1/412.pdf",
+          "publisher": "BirdLife South Africa",
+          "year": 1997
+        },
+        {
+          "title": "African black swift",
+          "url": "https://en.wikipedia.org/wiki/African_black_swift",
+          "publisher": "Wikipedia",
+          "year": 2026
+        },
+        {
+          "title": "Apus barbatus (African black swift)",
+          "url": "https://www.biodiversityexplorer.info/birds/apodidae/apus_barbatus.htm",
+          "publisher": "Biodiversity Explorer",
+          "year": null
         }
       ]
     },
@@ -1668,14 +1803,60 @@
       "slug": "apus-caffer",
       "scientificName": "Apus caffer",
       "commonName": "White-rumped Swift",
-      "images": [],
-      "recordings": [],
+      "images": [
+        {
+          "key": "apus-caffer/malelane-below.jpg",
+          "author": "Dmitrii",
+          "licence": "CC BY-NC 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+          "sourceUrl": "https://www.inaturalist.org/observations/183525653",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ],
+      "recordings": [
+        {
+          "key": "xeno-canto/XC466641",
+          "author": "Tony Archer",
+          "licence": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "sourceUrl": "https://xeno-canto.org/466641",
+          "aiGenerated": false,
+          "hosted": false,
+          "quality": "B",
+          "callType": "call"
+        }
+      ],
       "sources": [
         {
           "title": "Kemp A.C., Herholdt J.J., Whyte I. & Harrison J. (2001). Birds of the two largest national parks in South Africa: a method to generate estimates of population size for all species and assess their conservation ecology. S. Afr. J. Sci. 97: 393–403.",
           "url": "https://journals.co.za/doi/pdf/10.10520/EJC97367",
           "publisher": "South African Journal of Science",
           "year": 2001
+        },
+        {
+          "title": "The Atlas of Southern African Birds, Vol. 1 (White-rumped Swift)",
+          "url": "https://sabap2.birdmap.africa/docs/sabap1/415.pdf",
+          "publisher": "BirdLife South Africa",
+          "year": 1997
+        },
+        {
+          "title": "White-rumped Swift",
+          "url": "https://newmansbirds.com/birds/white-rumped-swift/",
+          "publisher": "Newman's Birds",
+          "year": 2026
+        },
+        {
+          "title": "White-rumped swift",
+          "url": "https://en.wikipedia.org/wiki/White-rumped_swift",
+          "publisher": "Wikipedia",
+          "year": 2026
+        },
+        {
+          "title": "Apus caffer (White-rumped swift)",
+          "url": "https://www.biodiversityexplorer.info/birds/apodidae/apus_caffer.htm",
+          "publisher": "Biodiversity Explorer",
+          "year": null
         }
       ]
     },
@@ -1683,14 +1864,54 @@
       "slug": "apus-horus",
       "scientificName": "Apus horus",
       "commonName": "Horus Swift",
-      "images": [],
-      "recordings": [],
+      "images": [
+        {
+          "key": "apus-horus/mopani-below.jpg",
+          "author": "lance_robinson",
+          "licence": "CC BY-NC 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+          "sourceUrl": "https://www.inaturalist.org/observations/181323459",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ],
+      "recordings": [
+        {
+          "key": "xeno-canto/XC410343",
+          "author": "Bram Piot",
+          "licence": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "sourceUrl": "https://xeno-canto.org/410343",
+          "aiGenerated": false,
+          "hosted": false,
+          "quality": "B",
+          "callType": "call"
+        }
+      ],
       "sources": [
         {
           "title": "Kemp A.C., Herholdt J.J., Whyte I. & Harrison J. (2001). Birds of the two largest national parks in South Africa: a method to generate estimates of population size for all species and assess their conservation ecology. S. Afr. J. Sci. 97: 393–403.",
           "url": "https://journals.co.za/doi/pdf/10.10520/EJC97367",
           "publisher": "South African Journal of Science",
           "year": 2001
+        },
+        {
+          "title": "The Atlas of Southern African Birds, Vol. 1 (Horus Swift)",
+          "url": "https://sabap2.birdmap.africa/docs/sabap1/416.pdf",
+          "publisher": "BirdLife South Africa",
+          "year": 1997
+        },
+        {
+          "title": "Horus swift",
+          "url": "https://en.wikipedia.org/wiki/Horus_swift",
+          "publisher": "Wikipedia",
+          "year": 2026
+        },
+        {
+          "title": "Apus horus (Horus swift)",
+          "url": "https://www.biodiversityexplorer.info/birds/apodidae/apus_horus.htm",
+          "publisher": "Biodiversity Explorer",
+          "year": null
         }
       ]
     },
@@ -5997,14 +6218,60 @@
       "slug": "cypsiurus-parvus",
       "scientificName": "Cypsiurus parvus",
       "commonName": "African Palm Swift",
-      "images": [],
-      "recordings": [],
+      "images": [
+        {
+          "key": "cypsiurus-parvus/mopani-palm.jpg",
+          "author": "Duncan McKenzie",
+          "licence": "CC BY-NC 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+          "sourceUrl": "https://www.inaturalist.org/observations/196267221",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ],
+      "recordings": [
+        {
+          "key": "xeno-canto/XC710191",
+          "author": "Tony Archer",
+          "licence": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "sourceUrl": "https://xeno-canto.org/710191",
+          "aiGenerated": false,
+          "hosted": false,
+          "quality": "A",
+          "callType": "call"
+        }
+      ],
       "sources": [
         {
           "title": "Kemp A.C., Herholdt J.J., Whyte I. & Harrison J. (2001). Birds of the two largest national parks in South Africa: a method to generate estimates of population size for all species and assess their conservation ecology. S. Afr. J. Sci. 97: 393–403.",
           "url": "https://journals.co.za/doi/pdf/10.10520/EJC97367",
           "publisher": "South African Journal of Science",
           "year": 2001
+        },
+        {
+          "title": "The Atlas of Southern African Birds, Vol. 1 (Palm Swift)",
+          "url": "https://sabap2.birdmap.africa/docs/sabap1/421.pdf",
+          "publisher": "BirdLife South Africa",
+          "year": 1997
+        },
+        {
+          "title": "African Palm Swift",
+          "url": "https://newmansbirds.com/birds/african-palm-swift/",
+          "publisher": "Newman's Birds",
+          "year": 2026
+        },
+        {
+          "title": "African palm swift",
+          "url": "https://en.wikipedia.org/wiki/African_palm_swift",
+          "publisher": "Wikipedia",
+          "year": 2026
+        },
+        {
+          "title": "Cypsiurus parvus (African palm swift)",
+          "url": "https://www.biodiversityexplorer.info/birds/apodidae/cypsiurus_parvus.htm",
+          "publisher": "Biodiversity Explorer",
+          "year": null
         }
       ]
     },
@@ -10216,14 +10483,54 @@
       "slug": "neafrapus-boehmi",
       "scientificName": "Neafrapus boehmi",
       "commonName": "Böhm’s Spinetail",
-      "images": [],
-      "recordings": [],
+      "images": [
+        {
+          "key": "neafrapus-boehmi/mopani-below.jpg",
+          "author": "Daniel Correia",
+          "licence": "CC BY-NC 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+          "sourceUrl": "https://www.inaturalist.org/observations/393794162",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ],
+      "recordings": [
+        {
+          "key": "xeno-canto/XC688818",
+          "author": "Ken Behrens",
+          "licence": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "sourceUrl": "https://xeno-canto.org/688818",
+          "aiGenerated": false,
+          "hosted": false,
+          "quality": "D",
+          "callType": "call"
+        }
+      ],
       "sources": [
         {
           "title": "Kemp A.C., Herholdt J.J., Whyte I. & Harrison J. (2001). Birds of the two largest national parks in South Africa: a method to generate estimates of population size for all species and assess their conservation ecology. S. Afr. J. Sci. 97: 393–403.",
           "url": "https://journals.co.za/doi/pdf/10.10520/EJC97367",
           "publisher": "South African Journal of Science",
           "year": 2001
+        },
+        {
+          "title": "The Atlas of Southern African Birds, Vol. 1 (Böhm’s Spinetail)",
+          "url": "https://sabap2.birdmap.africa/docs/sabap1/423.pdf",
+          "publisher": "BirdLife South Africa",
+          "year": 1997
+        },
+        {
+          "title": "Böhm's spinetail",
+          "url": "https://en.wikipedia.org/wiki/B%C3%B6hm%27s_spinetail",
+          "publisher": "Wikipedia",
+          "year": 2026
+        },
+        {
+          "title": "Neafrapus boehmi (Böhm’s spinetail)",
+          "url": "https://www.biodiversityexplorer.info/birds/apodidae/neafrapus_boehmi.htm",
+          "publisher": "Biodiversity Explorer",
+          "year": null
         }
       ]
     },
@@ -12489,14 +12796,60 @@
       "slug": "tachymarptis-melba",
       "scientificName": "Tachymarptis melba",
       "commonName": "Alpine Swift",
-      "images": [],
-      "recordings": [],
+      "images": [
+        {
+          "key": "tachymarptis-melba/hoedspruit-below.jpg",
+          "author": "Charlie Spalding",
+          "licence": "CC BY-NC 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+          "sourceUrl": "https://www.inaturalist.org/observations/402014797",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ],
+      "recordings": [
+        {
+          "key": "xeno-canto/XC187988",
+          "author": "Jerome Fischer",
+          "licence": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "sourceUrl": "https://xeno-canto.org/187988",
+          "aiGenerated": false,
+          "hosted": false,
+          "quality": "A",
+          "callType": "call"
+        }
+      ],
       "sources": [
         {
           "title": "Kemp A.C., Herholdt J.J., Whyte I. & Harrison J. (2001). Birds of the two largest national parks in South Africa: a method to generate estimates of population size for all species and assess their conservation ecology. S. Afr. J. Sci. 97: 393–403.",
           "url": "https://journals.co.za/doi/pdf/10.10520/EJC97367",
           "publisher": "South African Journal of Science",
           "year": 2001
+        },
+        {
+          "title": "The Atlas of Southern African Birds, Vol. 1 (Alpine Swift)",
+          "url": "https://sabap2.birdmap.africa/docs/sabap1/418.pdf",
+          "publisher": "BirdLife South Africa",
+          "year": 1997
+        },
+        {
+          "title": "Alpine Swift",
+          "url": "https://newmansbirds.com/birds/alpine-swift/",
+          "publisher": "Newman's Birds",
+          "year": 2026
+        },
+        {
+          "title": "Alpine swift",
+          "url": "https://en.wikipedia.org/wiki/Alpine_swift",
+          "publisher": "Wikipedia",
+          "year": 2026
+        },
+        {
+          "title": "Tachymarptis melba (Alpine swift)",
+          "url": "https://www.biodiversityexplorer.info/birds/apodidae/tachymarptis_melba.htm",
+          "publisher": "Biodiversity Explorer",
+          "year": null
         }
       ]
     },
@@ -12751,14 +13104,60 @@
       "slug": "telacanthura-ussheri",
       "scientificName": "Telacanthura ussheri",
       "commonName": "Mottled Spinetail",
-      "images": [],
-      "recordings": [],
+      "images": [
+        {
+          "key": "telacanthura-ussheri/mopani-below.jpg",
+          "author": "Richard Johnstone",
+          "licence": "CC BY-NC 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+          "sourceUrl": "https://www.inaturalist.org/observations/188041959",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ],
+      "recordings": [
+        {
+          "key": "xeno-canto/XC124661",
+          "author": "Louis A. Hansen",
+          "licence": "CC BY-NC-SA 3.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/3.0/",
+          "sourceUrl": "https://xeno-canto.org/124661",
+          "aiGenerated": false,
+          "hosted": false,
+          "quality": "B",
+          "callType": "call"
+        }
+      ],
       "sources": [
         {
           "title": "Kemp A.C., Herholdt J.J., Whyte I. & Harrison J. (2001). Birds of the two largest national parks in South Africa: a method to generate estimates of population size for all species and assess their conservation ecology. S. Afr. J. Sci. 97: 393–403.",
           "url": "https://journals.co.za/doi/pdf/10.10520/EJC97367",
           "publisher": "South African Journal of Science",
           "year": 2001
+        },
+        {
+          "title": "The Atlas of Southern African Birds, Vol. 1 (Mottled Spinetail)",
+          "url": "https://sabap2.birdmap.africa/docs/sabap1/422.pdf",
+          "publisher": "BirdLife South Africa",
+          "year": 1997
+        },
+        {
+          "title": "Little Swift, including the Mottled Spinetail comparison",
+          "url": "https://newmansbirds.com/birds/little-swift/",
+          "publisher": "Newman's Birds",
+          "year": 2026
+        },
+        {
+          "title": "Mottled spinetail",
+          "url": "https://en.wikipedia.org/wiki/Mottled_spinetail",
+          "publisher": "Wikipedia",
+          "year": 2026
+        },
+        {
+          "title": "Telacanthura ussheri (Mottled spinetail)",
+          "url": "https://www.biodiversityexplorer.info/birds/apodidae/telacanthura_ussheri.htm",
+          "publisher": "Biodiversity Explorer",
+          "year": null
         }
       ]
     },

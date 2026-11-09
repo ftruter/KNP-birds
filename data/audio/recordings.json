@@ -205,6 +205,64 @@
         }
       ]
     },
+    "apus-affinis": {
+      "calls": [
+        {
+          "index": 0,
+          "quality": {
+            "xeno-canto/XC494123": "A"
+          }
+        }
+      ]
+    },
+    "apus-apus": {
+      "calls": [
+        {
+          "index": 0,
+          "quality": {}
+        },
+        {
+          "index": 1,
+          "quality": {}
+        },
+        {
+          "index": 2,
+          "quality": {
+            "xeno-canto/XC27236": "A"
+          }
+        }
+      ]
+    },
+    "apus-barbatus": {
+      "calls": [
+        {
+          "index": 0,
+          "quality": {
+            "xeno-canto/XC368196": "B"
+          }
+        }
+      ]
+    },
+    "apus-caffer": {
+      "calls": [
+        {
+          "index": 0,
+          "quality": {
+            "xeno-canto/XC466641": "B"
+          }
+        }
+      ]
+    },
+    "apus-horus": {
+      "calls": [
+        {
+          "index": 0,
+          "quality": {
+            "xeno-canto/XC410343": "B"
+          }
+        }
+      ]
+    },
     "aquila-nipalensis": {
       "calls": [
         {
@@ -618,6 +676,16 @@
           "index": 0,
           "quality": {
             "xeno-canto/XC369825": "A"
+          }
+        }
+      ]
+    },
+    "cypsiurus-parvus": {
+      "calls": [
+        {
+          "index": 0,
+          "quality": {
+            "xeno-canto/XC710191": "A"
           }
         }
       ]
@@ -1062,6 +1130,16 @@
         }
       ]
     },
+    "neafrapus-boehmi": {
+      "calls": [
+        {
+          "index": 0,
+          "quality": {
+            "xeno-canto/XC688818": "D"
+          }
+        }
+      ]
+    },
     "necrosyrtes-monachus": {
       "calls": [
         {
@@ -1198,6 +1276,16 @@
         }
       ]
     },
+    "tachymarptis-melba": {
+      "calls": [
+        {
+          "index": 0,
+          "quality": {
+            "xeno-canto/XC187988": "A"
+          }
+        }
+      ]
+    },
     "tachyspiza-badia": {
       "calls": [
         {
@@ -1218,6 +1306,16 @@
             "xeno-canto/XC933196": "B",
             "xeno-canto/XC960879": "B",
             "xeno-canto/XC697064": "C"
+          }
+        }
+      ]
+    },
+    "telacanthura-ussheri": {
+      "calls": [
+        {
+          "index": 0,
+          "quality": {
+            "xeno-canto/XC124661": "B"
           }
         }
       ]
