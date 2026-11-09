@@ -7,8 +7,45 @@
     "af": "Grootringduif"
   },
   "family": "columbidae",
-  "summary": "The details for this species have not been published yet.",
-  "sampleData": true,
+  "status": "resident",
+  "monthsPresent": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+  ],
+  "size": {
+    "lengthCm": {
+      "min": 33,
+      "max": 36
+    },
+    "note": "Newman's Birds gives 33–36 cm."
+  },
+  "habitat": "Riverine forest, well-developed woodland, mixed bushveld, exotic plantations and suburbia.",
+  "summary": "A common resident, the largest of the ring-necked doves. Grey only on top of the head, a red eye with a purple-pink eye-ring, a deeper pink breast and a broad hindcollar. The call is coo-coo, coo-koo-cuk-coo, the accent on the fourth syllable, likened to “I am, a RED-eyed dove”.",
+  "sampleData": false,
+  "similar": [
+    {
+      "slug": "streptopelia-decipiens",
+      "note": "African Mourning Dove has a totally grey head and a yellow eye with a red eye-ring. Red-eyed Dove has grey only on the crown and a red eye."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Red-eyed Dove",
+      "url": "https://newmansbirds.com/birds/red-eyed-dove/",
+      "publisher": "Newman's Birds",
+      "year": 2026
+    }
+  ],
   "population": {
     "estimate": {
       "low": 8192,
@@ -35,8 +72,128 @@
     },
     "tierApplied": "D"
   },
-  "variants": [],
-  "viewNotes": [],
-  "calls": [],
-  "images": []
+  "variants": [
+    {
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "marks": {
+        "bill": {
+          "colour": null,
+          "shape": null
+        },
+        "eye": {
+          "iris": "red",
+          "ring": "pink"
+        },
+        "legs": {
+          "colour": null
+        },
+        "head": {
+          "crown": "grey",
+          "face": null,
+          "throat": null,
+          "pattern": "Grey on top of the head only. Red eye with a purple-pink eye-ring. Broad hindcollar."
+        },
+        "upperparts": {
+          "back": null,
+          "rump": null,
+          "pattern": null
+        },
+        "underparts": {
+          "breast": "pink",
+          "belly": null,
+          "pattern": "Deeper pink breast than the Mourning Collared Dove."
+        },
+        "wings": {
+          "above": null,
+          "below": null,
+          "pattern": null
+        },
+        "tail": {
+          "colour": null,
+          "shape": null
+        }
+      }
+    }
+  ],
+  "viewNotes": [
+    {
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Large collared dove with a red eye and a pink breast."
+    },
+    {
+      "view": "perched-front",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Red eye, pink eye-ring, and grey only on the crown."
+    },
+    {
+      "view": "perched-back",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "The back colour was not named. The hindcollar is broad."
+    },
+    {
+      "view": "flight-above",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "The upperwing was not named."
+    },
+    {
+      "view": "flight-below",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Deeper pink breast."
+    }
+  ],
+  "calls": [
+    {
+      "sex": "any",
+      "type": "call",
+      "description": "coo-coo, coo-koo-cuk-coo, the accent on the fourth syllable. The texts do not separate the sexes. Grade A from near Klerksdorp. The filename is good re dove.",
+      "recordings": [
+        {
+          "key": "xeno-canto/XC529795",
+          "source": "https://xeno-canto.org/529795",
+          "fileUrl": "https://xeno-canto.org/sounds/uploaded/HMBDEWEZVS/XC529795-3%20good%20re%20dove.mp3",
+          "author": "Tony Archer",
+          "license": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ]
+    }
+  ],
+  "images": [
+    {
+      "key": "streptopelia-semitorquata/side.jpg",
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "source": "https://www.inaturalist.org/observations/237759949",
+      "fileUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/423151828/large.jpg",
+      "author": "Wyatt Downey",
+      "license": "CC BY-NC 4.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+      "aiGenerated": false,
+      "hosted": false,
+      "alt": "Red-eyed Dove perched in Kruger",
+      "caption": "Red-eyed Dove perched in Kruger"
+    }
+  ],
+  "research": {
+    "confidence": "medium",
+    "needsReview": false,
+    "note": "Population figures were left unchanged."
+  }
 }

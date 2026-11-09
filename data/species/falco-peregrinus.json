@@ -7,8 +7,34 @@
     "af": "Swerfvalk"
   },
   "family": "falconidae",
-  "summary": "The details for this species have not been published yet.",
-  "sampleData": true,
+  "size": {
+    "lengthCm": {
+      "min": 34,
+      "max": 40
+    },
+    "note": "Newman's Birds gives 34–40 cm and 500 g–1.2 kg."
+  },
+  "habitat": "Anywhere, but usually seen perched near cliffs or skyscrapers when breeding.",
+  "summary": "An uncommon resident and summer visitor. Resident birds are dark grey above with closely barred underparts. Visiting birds are whiter and lightly spotted. The immature is lightly streaked. The crown is black, and the sideburns are broader than a Lanner’s. In flight it looks sharper-winged than a Lanner, though less so than a Eurasian Hobby. Newman does not describe the voice. Because the page names both residents and summer visitors, status and months were left unset. The Kemp code RB was left unchanged.",
+  "sampleData": false,
+  "similar": [
+    {
+      "slug": "falco-biarmicus",
+      "note": "Lanner Falcon has a russet crown and looks broader-winged, with a more leisurely flight. Peregrine Falcon has a black crown."
+    },
+    {
+      "slug": "falco-subbuteo",
+      "note": "Eurasian Hobby looks sharper-winged than a Peregrine and has rufous thighs."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Peregrine Falcon",
+      "url": "https://newmansbirds.com/birds/peregrine-falcon/",
+      "publisher": "Newman's Birds",
+      "year": 2026
+    }
+  ],
   "population": {
     "estimate": {
       "low": 4,
@@ -35,8 +61,214 @@
     },
     "tierApplied": "D"
   },
-  "variants": [],
-  "viewNotes": [],
-  "calls": [],
-  "images": []
+  "variants": [
+    {
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "marks": {
+        "bill": {
+          "colour": null,
+          "shape": null
+        },
+        "eye": {
+          "iris": null,
+          "ring": null
+        },
+        "legs": {
+          "colour": null
+        },
+        "head": {
+          "crown": "black",
+          "face": null,
+          "throat": null,
+          "pattern": "Broader sideburns than a Lanner. Resident birds."
+        },
+        "upperparts": {
+          "back": "grey",
+          "rump": null,
+          "pattern": "Dark grey above."
+        },
+        "underparts": {
+          "breast": null,
+          "belly": null,
+          "pattern": "Closely barred underparts."
+        },
+        "wings": {
+          "above": null,
+          "below": null,
+          "pattern": null
+        },
+        "tail": {
+          "colour": null,
+          "shape": null
+        }
+      }
+    },
+    {
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "marks": {
+        "bill": {
+          "colour": null,
+          "shape": null
+        },
+        "eye": {
+          "iris": null,
+          "ring": null
+        },
+        "legs": {
+          "colour": null
+        },
+        "head": {
+          "crown": "black",
+          "face": null,
+          "throat": null,
+          "pattern": null
+        },
+        "upperparts": {
+          "back": null,
+          "rump": null,
+          "pattern": null
+        },
+        "underparts": {
+          "breast": null,
+          "belly": null,
+          "pattern": "Visiting birds are whiter and lightly spotted."
+        },
+        "wings": {
+          "above": null,
+          "below": null,
+          "pattern": null
+        },
+        "tail": {
+          "colour": null,
+          "shape": null
+        }
+      }
+    },
+    {
+      "age": "immature",
+      "sex": "any",
+      "season": "any",
+      "marks": {
+        "bill": {
+          "colour": null,
+          "shape": null
+        },
+        "eye": {
+          "iris": null,
+          "ring": null
+        },
+        "legs": {
+          "colour": null
+        },
+        "head": {
+          "crown": null,
+          "face": null,
+          "throat": null,
+          "pattern": null
+        },
+        "upperparts": {
+          "back": null,
+          "rump": null,
+          "pattern": null
+        },
+        "underparts": {
+          "breast": null,
+          "belly": null,
+          "pattern": "Lightly streaked."
+        },
+        "wings": {
+          "above": null,
+          "below": null,
+          "pattern": null
+        },
+        "tail": {
+          "colour": null,
+          "shape": null
+        }
+      }
+    }
+  ],
+  "viewNotes": [
+    {
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Dark grey above and closely barred below in resident birds. Visiting birds are whiter and lightly spotted."
+    },
+    {
+      "view": "perched-front",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Black crown and broad sideburns."
+    },
+    {
+      "view": "perched-back",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Dark grey upper parts."
+    },
+    {
+      "view": "flight-above",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Sharper-winged than a Lanner, with rapid shallow wingbeats and a brief glide."
+    },
+    {
+      "view": "flight-below",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Closely barred below in residents. Visiting birds are lightly spotted."
+    }
+  ],
+  "calls": [
+    {
+      "sex": "any",
+      "type": "call",
+      "description": "Newman’s species page does not describe the voice. Grade A call from Neuquén, Argentina. The filename names Falco peregrinus.",
+      "recordings": [
+        {
+          "key": "xeno-canto/XC48465",
+          "source": "https://xeno-canto.org/48465",
+          "fileUrl": "https://xeno-canto.org/sounds/uploaded/BYLLSJRVDZ/Falco%20peregrinus_Lago%20Alumine%20%28El%20Puente%29_Villa%20Pehuenia_Neuquen_Argentina_20ENE2005_Bernabe%20Lopez-Lanus.mp3",
+          "author": "Bernabe Lopez-Lanus",
+          "license": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ]
+    }
+  ],
+  "images": [
+    {
+      "key": "falco-peregrinus/side.jpg",
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "source": "https://www.inaturalist.org/observations/204020279",
+      "fileUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/360548152/large.jpeg",
+      "author": "Christiaan Viljoen",
+      "license": "CC BY 4.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by/4.0/",
+      "aiGenerated": false,
+      "hosted": false,
+      "alt": "Peregrine Falcon in the Mopani district",
+      "caption": "Peregrine Falcon in the Mopani district."
+    }
+  ],
+  "research": {
+    "confidence": "medium",
+    "needsReview": true,
+    "note": "Newman calls it both an uncommon resident and a summer visitor, with different plumages. Status and months were left unset so neither group is forced into one season. Population figures were left unchanged."
+  }
 }

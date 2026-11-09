@@ -7,8 +7,45 @@
     "af": "Rooibekvuurvinkie"
   },
   "family": "estrildidae",
-  "summary": "The details for this species have not been published yet.",
-  "sampleData": true,
+  "status": "resident",
+  "size": {
+    "lengthCm": {
+      "min": 10,
+      "max": 10
+    },
+    "note": "Newman's Birds gives 10 cm."
+  },
+  "monthsPresent": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+  ],
+  "habitat": "Pairs or small parties in mixed bushveld, especially near watercourses, and in the north in suburbia.",
+  "summary": "A common resident. Both sexes have a red rump and a reddish bill. The male has a red head, neck, breast and upper tail coverts, with the rest grey-brown, and a yellowish eye-ring. The female has red lores and a red upper tail, and is otherwise grey-brown. The call is a nasal fweet, fweet. The Kemp code RB was left unchanged.",
+  "sampleData": false,
+  "similar": [
+    {
+      "slug": "lagonosticta-rhodopareia",
+      "note": "Jameson’s Firefinch has a blackish bill. Red-billed Firefinch has a reddish bill, and the female is mostly grey-brown."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Red-billed Firefinch",
+      "url": "https://newmansbirds.com/birds/red-billed-firefinch/",
+      "publisher": "Newman's Birds",
+      "year": 2026
+    }
+  ],
   "population": {
     "estimate": {
       "low": 65536,
@@ -35,8 +72,171 @@
     },
     "tierApplied": "D"
   },
-  "variants": [],
-  "viewNotes": [],
-  "calls": [],
-  "images": []
+  "variants": [
+    {
+      "age": "adult",
+      "sex": "male",
+      "season": "any",
+      "marks": {
+        "bill": {
+          "colour": "red",
+          "shape": "Reddish."
+        },
+        "eye": {
+          "iris": null,
+          "ring": "yellow"
+        },
+        "legs": {
+          "colour": null
+        },
+        "head": {
+          "crown": "red",
+          "face": "red",
+          "throat": "red",
+          "pattern": null
+        },
+        "upperparts": {
+          "back": "grey",
+          "rump": "red",
+          "pattern": "Upper tail coverts red. Rest of the body grey-brown."
+        },
+        "underparts": {
+          "breast": "red",
+          "belly": null,
+          "pattern": "More extensive red on the head and underparts than the female."
+        },
+        "wings": {
+          "above": null,
+          "below": null,
+          "pattern": null
+        },
+        "tail": {
+          "colour": null,
+          "shape": null
+        }
+      }
+    },
+    {
+      "age": "adult",
+      "sex": "female",
+      "season": "any",
+      "marks": {
+        "bill": {
+          "colour": "red",
+          "shape": "Reddish."
+        },
+        "eye": {
+          "iris": null,
+          "ring": null
+        },
+        "legs": {
+          "colour": null
+        },
+        "head": {
+          "crown": null,
+          "face": "red",
+          "throat": null,
+          "pattern": "Red lores. The rest of the head is grey-brown."
+        },
+        "upperparts": {
+          "back": "grey",
+          "rump": "red",
+          "pattern": null
+        },
+        "underparts": {
+          "breast": "grey",
+          "belly": "grey",
+          "pattern": null
+        },
+        "wings": {
+          "above": null,
+          "below": null,
+          "pattern": null
+        },
+        "tail": {
+          "colour": "red",
+          "shape": "Upper tail red."
+        }
+      }
+    }
+  ],
+  "viewNotes": [
+    {
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "male",
+      "season": "any",
+      "note": "Red head, neck and breast, grey-brown elsewhere, with a red rump and a reddish bill."
+    },
+    {
+      "view": "perched-front",
+      "age": "adult",
+      "sex": "male",
+      "season": "any",
+      "note": "Red face and breast, and a yellowish eye-ring."
+    },
+    {
+      "view": "perched-back",
+      "age": "adult",
+      "sex": "male",
+      "season": "any",
+      "note": "Grey-brown upper parts and a red rump."
+    },
+    {
+      "view": "flight-above",
+      "age": "adult",
+      "sex": "male",
+      "season": "any",
+      "note": "A separate flight pattern was not described."
+    },
+    {
+      "view": "flight-below",
+      "age": "adult",
+      "sex": "male",
+      "season": "any",
+      "note": "Red breast. The belly was included in the grey-brown remainder."
+    }
+  ],
+  "calls": [
+    {
+      "sex": "any",
+      "type": "call",
+      "description": "A nasal fweet, fweet. Grade A call from the North West. The filename says Young RB FFinches.",
+      "recordings": [
+        {
+          "key": "xeno-canto/XC632302",
+          "source": "https://xeno-canto.org/632302",
+          "fileUrl": "https://xeno-canto.org/sounds/uploaded/HMBDEWEZVS/XC632302-7%20Young%20RB%20FFinches.mp3",
+          "author": "Tony Archer",
+          "license": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ]
+    }
+  ],
+  "images": [
+    {
+      "key": "lagonosticta-senegala/side.jpg",
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "source": "https://www.inaturalist.org/observations/312246468",
+      "fileUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/563714253/large.jpg",
+      "author": "Phillip Nieuwoudt",
+      "license": "CC BY-NC 4.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+      "aiGenerated": false,
+      "hosted": false,
+      "alt": "Red-billed Firefinch in Kruger",
+      "caption": "Red-billed Firefinch in the Ehlanzeni district."
+    }
+  ],
+  "research": {
+    "confidence": "medium",
+    "needsReview": true,
+    "note": "Status is resident and all twelve months are listed. The grade A call filename says young birds. Population figures were left unchanged."
+  }
 }
