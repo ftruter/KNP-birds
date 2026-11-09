@@ -6,8 +6,8 @@
     "en": "Ospreys",
     "af": "Visvalk"
   },
-  "summary": "Field notes for this family are still to be written.",
-  "sampleData": true,
+  "summary": "Ospreys. The Osprey is an uncommon Palearctic visitor to large waters, dark above and white below, with a facial mask, white legs and long wings.",
+  "sampleData": false,
   "species": [
     {
       "slug": "pandion-haliaetus",
