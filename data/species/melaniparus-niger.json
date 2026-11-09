@@ -7,8 +7,30 @@
     "af": "Gewone Swartmees"
   },
   "family": "paridae",
-  "summary": "The details for this species have not been published yet.",
-  "sampleData": true,
+  "size": {
+    "lengthCm": {
+      "min": 16,
+      "max": 16
+    },
+    "note": "Newman's Birds gives 16 cm."
+  },
+  "habitat": "Pairs or groups in a wide variety of wooded habitats.",
+  "summary": "A common resident. A small black bird with much white in the wings. The male has a heavier bill than Carp’s Tit and more white on the vent and undertail. Northern races may show more or less white on the folded wing than the illustration. The female is as illustrated or darker on the underparts, and the immature is similar. The calls are harsh and rasping: a rapid twiddy-zeet-zeet-zeet, or zeu-zeu-zeu-twit. Newman’s page uses the name Parus niger. This file keeps Melaniparus niger. The Kemp code RB was left unchanged.",
+  "sampleData": false,
+  "sources": [
+    {
+      "title": "Southern Black Tit",
+      "url": "https://newmansbirds.com/birds/southern-black-tit/",
+      "publisher": "Newman's Birds",
+      "year": 2026
+    },
+    {
+      "title": "Kemp A.C., Herholdt J.J., Whyte I. & Harrison J. (2001). Birds of the two largest national parks in South Africa: a method to generate estimates of population size for all species and assess their conservation ecology. S. Afr. J. Sci. 97: 393–403.",
+      "url": "https://journals.co.za/doi/pdf/10.10520/EJC97367",
+      "publisher": "South African Journal of Science",
+      "year": 2001
+    }
+  ],
   "population": {
     "estimate": {
       "low": 8192,
@@ -35,8 +57,292 @@
     },
     "tierApplied": "D"
   },
-  "variants": [],
-  "viewNotes": [],
-  "calls": [],
-  "images": []
+  "variants": [
+    {
+      "age": "adult",
+      "sex": "male",
+      "season": "any",
+      "marks": {
+        "bill": {
+          "colour": null,
+          "shape": "Heavier bill than Carp’s Tit. Bill colour was not named."
+        },
+        "eye": {
+          "iris": null,
+          "ring": null
+        },
+        "legs": {
+          "colour": null
+        },
+        "head": {
+          "crown": "black",
+          "face": "black",
+          "throat": "black"
+        },
+        "upperparts": {
+          "back": "black",
+          "rump": null
+        },
+        "underparts": {
+          "breast": null,
+          "belly": null,
+          "pattern": "More white on the vent and undertail than Carp’s Tit."
+        },
+        "wings": {
+          "above": null,
+          "below": null,
+          "pattern": "Much white in the wings. Northern races may show more or less white on the folded wing than illustrated."
+        },
+        "tail": {
+          "colour": null,
+          "shape": null
+        }
+      }
+    },
+    {
+      "age": "adult",
+      "sex": "female",
+      "season": "any",
+      "marks": {
+        "bill": {
+          "colour": null,
+          "shape": null
+        },
+        "eye": {
+          "iris": null,
+          "ring": null
+        },
+        "legs": {
+          "colour": null
+        },
+        "head": {
+          "crown": "black",
+          "face": "black",
+          "throat": "black"
+        },
+        "upperparts": {
+          "back": "black",
+          "rump": null
+        },
+        "underparts": {
+          "breast": null,
+          "belly": null,
+          "pattern": "As illustrated, or darker on the underparts. The illustration is not described in words."
+        },
+        "wings": {
+          "above": null,
+          "below": null,
+          "pattern": "Much white in the wings."
+        },
+        "tail": {
+          "colour": null,
+          "shape": null
+        }
+      }
+    },
+    {
+      "age": "immature",
+      "sex": "any",
+      "season": "any",
+      "marks": {
+        "bill": {
+          "colour": null,
+          "shape": null
+        },
+        "eye": {
+          "iris": null,
+          "ring": null
+        },
+        "legs": {
+          "colour": null
+        },
+        "head": {
+          "crown": null,
+          "face": null,
+          "throat": null,
+          "pattern": "Similar to the adult. Newman does not describe the immature further."
+        },
+        "upperparts": {
+          "back": null,
+          "rump": null
+        },
+        "underparts": {
+          "breast": null,
+          "belly": null
+        },
+        "wings": {
+          "above": null,
+          "below": null
+        },
+        "tail": {
+          "colour": null,
+          "shape": null
+        }
+      }
+    }
+  ],
+  "viewNotes": [
+    {
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "male",
+      "season": "any",
+      "note": "Small and black, with much white in the wing and more white on the vent and undertail."
+    },
+    {
+      "view": "perched-front",
+      "age": "adult",
+      "sex": "male",
+      "season": "any",
+      "note": "Black head."
+    },
+    {
+      "view": "perched-back",
+      "age": "adult",
+      "sex": "male",
+      "season": "any",
+      "note": "Black back and white in the wing."
+    },
+    {
+      "view": "flight-above",
+      "age": "adult",
+      "sex": "male",
+      "season": "any",
+      "note": "Much white in the wing."
+    },
+    {
+      "view": "flight-below",
+      "age": "adult",
+      "sex": "male",
+      "season": "any",
+      "note": "More white on the vent and undertail."
+    },
+    {
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "female",
+      "season": "any",
+      "note": "Black, with white in the wing. The underparts are as illustrated or darker."
+    },
+    {
+      "view": "perched-front",
+      "age": "adult",
+      "sex": "female",
+      "season": "any",
+      "note": "Black head."
+    },
+    {
+      "view": "perched-back",
+      "age": "adult",
+      "sex": "female",
+      "season": "any",
+      "note": "Black back and white in the wing."
+    },
+    {
+      "view": "flight-above",
+      "age": "adult",
+      "sex": "female",
+      "season": "any",
+      "note": "Much white in the wing."
+    },
+    {
+      "view": "flight-below",
+      "age": "adult",
+      "sex": "female",
+      "season": "any",
+      "note": "Underparts as illustrated or darker."
+    },
+    {
+      "view": "perched-side",
+      "age": "immature",
+      "sex": "any",
+      "season": "any",
+      "note": "Similar to the adult. The immature was not described further."
+    },
+    {
+      "view": "perched-front",
+      "age": "immature",
+      "sex": "any",
+      "season": "any",
+      "note": "The immature face was not described separately."
+    },
+    {
+      "view": "perched-back",
+      "age": "immature",
+      "sex": "any",
+      "season": "any",
+      "note": "The immature back was not described separately."
+    },
+    {
+      "view": "flight-above",
+      "age": "immature",
+      "sex": "any",
+      "season": "any",
+      "note": "An immature flight pattern was not described separately."
+    },
+    {
+      "view": "flight-below",
+      "age": "immature",
+      "sex": "any",
+      "season": "any",
+      "note": "The immature underparts were not described separately."
+    }
+  ],
+  "calls": [
+    {
+      "sex": "any",
+      "type": "call",
+      "description": "Harsh and rasping: a rapid twiddy-zeet-zeet-zeet, or zeu-zeu-zeu-twit. Grade A call from Sabie Park, near Bushbuckridge, Ehlanzeni. The filename is XC368162-170331_SouthernBlackTit_SabiePark_OC.mp3.",
+      "recordings": [
+        {
+          "key": "xeno-canto/XC368162",
+          "source": "https://xeno-canto.org/368162",
+          "fileUrl": "https://xeno-canto.org/sounds/uploaded/RFRTVEHIZX/XC368162-170331_SouthernBlackTit_SabiePark_OC.mp3",
+          "author": "Oscar Campbell",
+          "license": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ]
+    }
+  ],
+  "images": [
+    {
+      "key": "melaniparus-niger/side.jpg",
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "male",
+      "season": "any",
+      "source": "https://www.inaturalist.org/observations/261667967",
+      "fileUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/470142788/large.jpg",
+      "author": "brewmaster",
+      "license": "CC BY-NC 4.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+      "aiGenerated": false,
+      "hosted": false,
+      "alt": "Southern Black Tit, black with white in the wing and on the undertail",
+      "caption": "Southern Black Tit at Skukuza, black with much white in the wing and white on the undertail."
+    }
+  ],
+  "research": {
+    "confidence": "medium",
+    "needsReview": true,
+    "note": "Newman calls it a common resident, so status is resident and all twelve months are listed. The female is only “as illustrated or darker”, the immature is only “similar”, and northern races vary in wing white, which is why this needs review. Carp’s Tit is the comparison and is not in this list. Population figures and the Kemp code RB were left unchanged."
+  },
+  "status": "resident",
+  "monthsPresent": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+  ]
 }
