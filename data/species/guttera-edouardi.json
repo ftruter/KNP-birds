@@ -7,8 +7,36 @@
     "af": "Kuifkoptarentaal"
   },
   "family": "numididae",
-  "summary": "The details for this species have not been published yet.",
-  "sampleData": true,
+  "size": {
+    "lengthCm": {
+      "min": 50,
+      "max": 50
+    },
+    "note": "Newman's Birds gives 50 cm."
+  },
+  "habitat": "Flocks in lowland and riverine forest, lowveld broad-leaved woodland and thickets, and in coastal bush and dune forest.",
+  "summary": "A locally common resident. Blacker than Helmeted Guineafowl, with black head-plumes, an unmarked black neck, a pale bill, pale outer secondaries and red eyes. The immature is barred chestnut, buff and black on the upper parts. The alarm is a rattle, and the breeding call is tick-tack, ticktack-tirr-tirr-tirr. Newman’s page uses the name Guttera pucherani. The stored name Guttera edouardi was left unchanged. The Kemp paper name Crested Guineafowl and the code RB were left unchanged.",
+  "sampleData": false,
+  "similar": [
+    {
+      "slug": "numida-meleagris",
+      "note": "Helmeted Guineafowl has a blue neck, a red cap and a horny casque. Southern Crested Guineafowl is blacker, with black head-plumes and an unmarked black neck."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Southern Crested Guineafowl",
+      "url": "https://newmansbirds.com/birds/southern-crested-guineafowl/",
+      "publisher": "Newman's Birds",
+      "year": 2026
+    },
+    {
+      "title": "Kemp A.C., Herholdt J.J., Whyte I. & Harrison J. (2001). Birds of the two largest national parks in South Africa: a method to generate estimates of population size for all species and assess their conservation ecology. S. Afr. J. Sci. 97: 393–403.",
+      "url": "https://journals.co.za/doi/pdf/10.10520/EJC97367",
+      "publisher": "South African Journal of Science",
+      "year": 2001
+    }
+  ],
   "population": {
     "estimate": {
       "low": 512,
@@ -35,8 +63,217 @@
     },
     "tierApplied": "D"
   },
-  "variants": [],
-  "viewNotes": [],
-  "calls": [],
-  "images": []
+  "variants": [
+    {
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "marks": {
+        "bill": {
+          "colour": null,
+          "shape": "Pale bill. A bill colour was not named."
+        },
+        "eye": {
+          "iris": "red",
+          "ring": null
+        },
+        "legs": {
+          "colour": null
+        },
+        "head": {
+          "crown": "black",
+          "face": null,
+          "throat": null,
+          "pattern": "Black head-plumes and an unmarked black neck."
+        },
+        "upperparts": {
+          "back": null,
+          "rump": null,
+          "pattern": "Blacker than Helmeted Guineafowl. A separate back colour was not named beyond blacker."
+        },
+        "underparts": {
+          "breast": null,
+          "belly": null
+        },
+        "wings": {
+          "above": null,
+          "below": null,
+          "pattern": "Pale outer secondaries."
+        },
+        "tail": {
+          "colour": null,
+          "shape": null
+        }
+      }
+    },
+    {
+      "age": "immature",
+      "sex": "any",
+      "season": "any",
+      "marks": {
+        "bill": {
+          "colour": null,
+          "shape": null
+        },
+        "eye": {
+          "iris": null,
+          "ring": null
+        },
+        "legs": {
+          "colour": null
+        },
+        "head": {
+          "crown": null,
+          "face": null,
+          "throat": null
+        },
+        "upperparts": {
+          "back": null,
+          "rump": null,
+          "pattern": "Barred chestnut, buff and black on the upper parts."
+        },
+        "underparts": {
+          "breast": null,
+          "belly": null
+        },
+        "wings": {
+          "above": null,
+          "below": null
+        },
+        "tail": {
+          "colour": null,
+          "shape": null
+        }
+      }
+    }
+  ],
+  "viewNotes": [
+    {
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Black head-plumes, an unmarked black neck, a pale bill and a red eye. Blacker than a Helmeted Guineafowl."
+    },
+    {
+      "view": "perched-front",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Black plumes and a red eye."
+    },
+    {
+      "view": "perched-back",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Blacker upperparts. The outer secondaries are pale."
+    },
+    {
+      "view": "flight-above",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Pale outer secondaries. No other flight mark was described."
+    },
+    {
+      "view": "flight-below",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "The underparts were not given a separate colour beyond blacker than Helmeted Guineafowl."
+    },
+    {
+      "view": "perched-side",
+      "age": "immature",
+      "sex": "any",
+      "season": "any",
+      "note": "Upper parts barred chestnut, buff and black."
+    },
+    {
+      "view": "perched-front",
+      "age": "immature",
+      "sex": "any",
+      "season": "any",
+      "note": "The immature face was not described."
+    },
+    {
+      "view": "perched-back",
+      "age": "immature",
+      "sex": "any",
+      "season": "any",
+      "note": "Barred chestnut, buff and black upper parts."
+    },
+    {
+      "view": "flight-above",
+      "age": "immature",
+      "sex": "any",
+      "season": "any",
+      "note": "An immature flight pattern was not described."
+    },
+    {
+      "view": "flight-below",
+      "age": "immature",
+      "sex": "any",
+      "season": "any",
+      "note": "The immature underparts were not described."
+    }
+  ],
+  "calls": [
+    {
+      "sex": "any",
+      "type": "call",
+      "description": "A rattling alarm. When breeding, tick-tack, ticktack-tirr-tirr-tirr. Grade A alarm call from St Lucia, catalogued as Guttera pucherani, the name on Newman’s page. The filename is XC237779-1062_cut.mp3, so the file is marked as a cut.",
+      "recordings": [
+        {
+          "key": "xeno-canto/XC237779",
+          "source": "https://xeno-canto.org/237779",
+          "fileUrl": "https://xeno-canto.org/sounds/uploaded/ICUDBWGEGD/XC237779-1062_cut.mp3",
+          "author": "Gabriel A. Jamie",
+          "license": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ]
+    }
+  ],
+  "images": [
+    {
+      "key": "guttera-edouardi/side.jpg",
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "source": "https://www.inaturalist.org/observations/42997220",
+      "fileUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/68266323/large.jpeg",
+      "author": "Justin Ponder",
+      "license": "CC BY 4.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by/4.0/",
+      "aiGenerated": false,
+      "hosted": false,
+      "alt": "Southern Crested Guineafowl, black curly head-plumes, red eye and pale bill",
+      "caption": "Southern Crested Guineafowl in the Mopani district, black head-plumes, a red eye and a pale bill."
+    }
+  ],
+  "research": {
+    "confidence": "medium",
+    "needsReview": false,
+    "note": "Newman calls it a locally common resident, so status is resident and all twelve months are listed. The page’s scientific name is Guttera pucherani. This file keeps Guttera edouardi. Population figures and the Kemp code RB were left unchanged."
+  },
+  "status": "resident",
+  "monthsPresent": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+  ]
 }

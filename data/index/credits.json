@@ -11232,14 +11232,42 @@
       "slug": "guttera-edouardi",
       "scientificName": "Guttera edouardi",
       "commonName": "Southern Crested Guineafowl",
-      "images": [],
-      "recordings": [],
+      "images": [
+        {
+          "key": "guttera-edouardi/side.jpg",
+          "author": "Justin Ponder",
+          "licence": "CC BY 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by/4.0/",
+          "sourceUrl": "https://www.inaturalist.org/observations/42997220",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ],
+      "recordings": [
+        {
+          "key": "xeno-canto/XC237779",
+          "author": "Gabriel A. Jamie",
+          "licence": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "sourceUrl": "https://xeno-canto.org/237779",
+          "aiGenerated": false,
+          "hosted": false,
+          "quality": "A",
+          "callType": "call"
+        }
+      ],
       "sources": [
         {
           "title": "Kemp A.C., Herholdt J.J., Whyte I. & Harrison J. (2001). Birds of the two largest national parks in South Africa: a method to generate estimates of population size for all species and assess their conservation ecology. S. Afr. J. Sci. 97: 393–403.",
           "url": "https://journals.co.za/doi/pdf/10.10520/EJC97367",
           "publisher": "South African Journal of Science",
           "year": 2001
+        },
+        {
+          "title": "Southern Crested Guineafowl",
+          "url": "https://newmansbirds.com/birds/southern-crested-guineafowl/",
+          "publisher": "Newman's Birds",
+          "year": 2026
         }
       ]
     },
@@ -15773,14 +15801,42 @@
       "slug": "numida-meleagris",
       "scientificName": "Numida meleagris",
       "commonName": "Helmeted Guineafowl",
-      "images": [],
-      "recordings": [],
+      "images": [
+        {
+          "key": "numida-meleagris/side.jpg",
+          "author": "hermanmoller",
+          "licence": "CC BY-NC 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+          "sourceUrl": "https://www.inaturalist.org/observations/330709761",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ],
+      "recordings": [
+        {
+          "key": "xeno-canto/XC126240",
+          "author": "Sander Bot",
+          "licence": "CC BY-NC-SA 3.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/3.0/",
+          "sourceUrl": "https://xeno-canto.org/126240",
+          "aiGenerated": false,
+          "hosted": false,
+          "quality": "A",
+          "callType": "call"
+        }
+      ],
       "sources": [
         {
           "title": "Kemp A.C., Herholdt J.J., Whyte I. & Harrison J. (2001). Birds of the two largest national parks in South Africa: a method to generate estimates of population size for all species and assess their conservation ecology. S. Afr. J. Sci. 97: 393–403.",
           "url": "https://journals.co.za/doi/pdf/10.10520/EJC97367",
           "publisher": "South African Journal of Science",
           "year": 2001
+        },
+        {
+          "title": "Helmeted Guineafowl",
+          "url": "https://newmansbirds.com/birds/helmeted-guineafowl/",
+          "publisher": "Newman's Birds",
+          "year": 2026
         }
       ]
     },

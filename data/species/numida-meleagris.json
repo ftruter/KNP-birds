@@ -7,8 +7,36 @@
     "af": "Gewone Tarentaal"
   },
   "family": "numididae",
-  "summary": "The details for this species have not been published yet.",
-  "sampleData": true,
+  "size": {
+    "lengthCm": {
+      "min": 53,
+      "max": 58
+    },
+    "note": "Newman's Birds gives 53–58 cm."
+  },
+  "habitat": "When not breeding, flocks can be very large, in grassland, bushveld and farmlands. They go to water in the evenings.",
+  "summary": "A very common resident. It looks black at a distance. The adult has a blue neck, a red cap and a horny casque. The chick is buffy-brown with darker stripes. The juvenile is mostly brown, darker above, and keeps head-stripes until the casque starts to grow. The immature resembles the adult but has a feathered neck, a dark brown helmet and a rudimentary casque. The usual call is ker-bek-ker-bek-ker-bek, krrrrrr. The female also gives a continual piping t-phueet. The Kemp code RB was left unchanged.",
+  "sampleData": false,
+  "similar": [
+    {
+      "slug": "guttera-edouardi",
+      "note": "Southern Crested Guineafowl is blacker, with black head-plumes and an unmarked black neck, not a blue neck and a casque."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Helmeted Guineafowl",
+      "url": "https://newmansbirds.com/birds/helmeted-guineafowl/",
+      "publisher": "Newman's Birds",
+      "year": 2026
+    },
+    {
+      "title": "Kemp A.C., Herholdt J.J., Whyte I. & Harrison J. (2001). Birds of the two largest national parks in South Africa: a method to generate estimates of population size for all species and assess their conservation ecology. S. Afr. J. Sci. 97: 393–403.",
+      "url": "https://journals.co.za/doi/pdf/10.10520/EJC97367",
+      "publisher": "South African Journal of Science",
+      "year": 2001
+    }
+  ],
   "population": {
     "estimate": {
       "low": 32768,
@@ -35,8 +63,367 @@
     },
     "tierApplied": "D"
   },
-  "variants": [],
-  "viewNotes": [],
-  "calls": [],
-  "images": []
+  "variants": [
+    {
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "marks": {
+        "bill": {
+          "colour": null,
+          "shape": null
+        },
+        "eye": {
+          "iris": null,
+          "ring": null
+        },
+        "legs": {
+          "colour": null
+        },
+        "head": {
+          "crown": "red",
+          "face": null,
+          "throat": null,
+          "pattern": "Red cap and a horny casque. Blue neck. Looks black at a distance."
+        },
+        "upperparts": {
+          "back": null,
+          "rump": null,
+          "pattern": "Looks black at a distance. A closer body colour was not named."
+        },
+        "underparts": {
+          "breast": null,
+          "belly": null
+        },
+        "wings": {
+          "above": null,
+          "below": null
+        },
+        "tail": {
+          "colour": null,
+          "shape": null
+        }
+      }
+    },
+    {
+      "age": "chick",
+      "sex": "any",
+      "season": "any",
+      "marks": {
+        "bill": {
+          "colour": null,
+          "shape": null
+        },
+        "eye": {
+          "iris": null,
+          "ring": null
+        },
+        "legs": {
+          "colour": null
+        },
+        "head": {
+          "crown": null,
+          "face": null,
+          "throat": null
+        },
+        "upperparts": {
+          "back": null,
+          "rump": null,
+          "pattern": "Buffy-brown, striped darker."
+        },
+        "underparts": {
+          "breast": null,
+          "belly": null
+        },
+        "wings": {
+          "above": null,
+          "below": null
+        },
+        "tail": {
+          "colour": null,
+          "shape": null
+        }
+      }
+    },
+    {
+      "age": "juvenile",
+      "sex": "any",
+      "season": "any",
+      "marks": {
+        "bill": {
+          "colour": null,
+          "shape": null
+        },
+        "eye": {
+          "iris": null,
+          "ring": null
+        },
+        "legs": {
+          "colour": null
+        },
+        "head": {
+          "crown": null,
+          "face": null,
+          "throat": null,
+          "pattern": "Head-stripes remain until the casque starts growing."
+        },
+        "upperparts": {
+          "back": "brown",
+          "rump": null,
+          "pattern": "Predominantly brown, darker on the upper parts."
+        },
+        "underparts": {
+          "breast": null,
+          "belly": null
+        },
+        "wings": {
+          "above": null,
+          "below": null
+        },
+        "tail": {
+          "colour": null,
+          "shape": null
+        }
+      }
+    },
+    {
+      "age": "immature",
+      "sex": "any",
+      "season": "any",
+      "marks": {
+        "bill": {
+          "colour": null,
+          "shape": null
+        },
+        "eye": {
+          "iris": null,
+          "ring": null
+        },
+        "legs": {
+          "colour": null
+        },
+        "head": {
+          "crown": "dark-brown",
+          "face": null,
+          "throat": null,
+          "pattern": "Resembles the adult, but the neck is feathered, the helmet is dark brown and the casque is rudimentary."
+        },
+        "upperparts": {
+          "back": null,
+          "rump": null
+        },
+        "underparts": {
+          "breast": null,
+          "belly": null
+        },
+        "wings": {
+          "above": null,
+          "below": null
+        },
+        "tail": {
+          "colour": null,
+          "shape": null
+        }
+      }
+    }
+  ],
+  "viewNotes": [
+    {
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Blue neck, red cap and a horny casque. The body looks black at a distance."
+    },
+    {
+      "view": "perched-front",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Red cap, blue neck and the casque."
+    },
+    {
+      "view": "perched-back",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "The back looks black at a distance."
+    },
+    {
+      "view": "flight-above",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "A flight pattern was not described."
+    },
+    {
+      "view": "flight-below",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "The underparts look black at a distance."
+    },
+    {
+      "view": "perched-side",
+      "age": "chick",
+      "sex": "any",
+      "season": "any",
+      "note": "Buffy-brown and striped darker."
+    },
+    {
+      "view": "perched-front",
+      "age": "chick",
+      "sex": "any",
+      "season": "any",
+      "note": "Darker stripes. The chick face was not described separately."
+    },
+    {
+      "view": "perched-back",
+      "age": "chick",
+      "sex": "any",
+      "season": "any",
+      "note": "Buffy-brown upper parts with darker stripes."
+    },
+    {
+      "view": "flight-above",
+      "age": "chick",
+      "sex": "any",
+      "season": "any",
+      "note": "A chick flight pattern was not described."
+    },
+    {
+      "view": "flight-below",
+      "age": "chick",
+      "sex": "any",
+      "season": "any",
+      "note": "The chick underparts were not described separately from buffy-brown."
+    },
+    {
+      "view": "perched-side",
+      "age": "juvenile",
+      "sex": "any",
+      "season": "any",
+      "note": "Mostly brown, darker above, with head-stripes still showing."
+    },
+    {
+      "view": "perched-front",
+      "age": "juvenile",
+      "sex": "any",
+      "season": "any",
+      "note": "Head-stripes."
+    },
+    {
+      "view": "perched-back",
+      "age": "juvenile",
+      "sex": "any",
+      "season": "any",
+      "note": "Darker brown upper parts."
+    },
+    {
+      "view": "flight-above",
+      "age": "juvenile",
+      "sex": "any",
+      "season": "any",
+      "note": "A juvenile flight pattern was not described."
+    },
+    {
+      "view": "flight-below",
+      "age": "juvenile",
+      "sex": "any",
+      "season": "any",
+      "note": "The juvenile underparts were not given a separate colour beyond predominantly brown."
+    },
+    {
+      "view": "perched-side",
+      "age": "immature",
+      "sex": "any",
+      "season": "any",
+      "note": "Like the adult, with a feathered neck, a dark brown helmet and a rudimentary casque."
+    },
+    {
+      "view": "perched-front",
+      "age": "immature",
+      "sex": "any",
+      "season": "any",
+      "note": "Feathered neck and a dark brown helmet."
+    },
+    {
+      "view": "perched-back",
+      "age": "immature",
+      "sex": "any",
+      "season": "any",
+      "note": "The immature back was not given a separate colour."
+    },
+    {
+      "view": "flight-above",
+      "age": "immature",
+      "sex": "any",
+      "season": "any",
+      "note": "An immature flight pattern was not described."
+    },
+    {
+      "view": "flight-below",
+      "age": "immature",
+      "sex": "any",
+      "season": "any",
+      "note": "The immature underparts were not described separately from the adult resemblance."
+    }
+  ],
+  "calls": [
+    {
+      "sex": "any",
+      "type": "call",
+      "description": "A much-repeated ker-bek-ker-bek-ker-bek, krrrrrr. The female also gives a continual piping t-phueet-t-phueet-t-phueet. Grade A call from Benfontijn game reserve, Free State. The filename is XC126240-HelmetedGuinneefowl04Jan2013BenfontijnFreeStateSouthAfrika.mp3.",
+      "recordings": [
+        {
+          "key": "xeno-canto/XC126240",
+          "source": "https://xeno-canto.org/126240",
+          "fileUrl": "https://xeno-canto.org/sounds/uploaded/HZKCNRIPRH/XC126240-HelmetedGuinneefowl04Jan2013BenfontijnFreeStateSouthAfrika.mp3",
+          "author": "Sander Bot",
+          "license": "CC BY-NC-SA 3.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/3.0/",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ]
+    }
+  ],
+  "images": [
+    {
+      "key": "numida-meleagris/side.jpg",
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "source": "https://www.inaturalist.org/observations/330709761",
+      "fileUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/599751927/large.jpg",
+      "author": "hermanmoller",
+      "license": "CC BY-NC 4.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+      "aiGenerated": false,
+      "hosted": false,
+      "alt": "Helmeted Guineafowl head, blue neck, red cap and a casque",
+      "caption": "Helmeted Guineafowl in the Ehlanzeni district, blue neck, red cap and a horny casque."
+    }
+  ],
+  "research": {
+    "confidence": "medium",
+    "needsReview": false,
+    "note": "Newman calls it a very common resident, so status is resident and all twelve months are listed. Population figures and the Kemp code RB were left unchanged."
+  },
+  "status": "resident",
+  "monthsPresent": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+  ]
 }

@@ -6,8 +6,8 @@
     "en": "Guineafowl",
     "af": "Tarentaal"
   },
-  "summary": "Field notes for this family are still to be written.",
-  "sampleData": true,
+  "summary": "Guineafowl. Helmeted Guineafowl is the common flock bird with a blue neck, a red cap and a casque. Southern Crested Guineafowl is blacker, with curly black head-plumes, a red eye and an unmarked black neck.",
+  "sampleData": false,
   "species": [
     {
       "slug": "guttera-edouardi",
