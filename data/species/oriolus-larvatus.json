@@ -7,8 +7,40 @@
     "af": "Swartkopwielewaal"
   },
   "family": "oriolidae",
-  "summary": "The details for this species have not been published yet.",
-  "sampleData": true,
+  "size": {
+    "lengthCm": {
+      "min": 25,
+      "max": 25
+    },
+    "note": "Newman's Birds gives 25 cm, marked M."
+  },
+  "habitat": "Singly or in pairs in moist, well-developed woodland or mixed bushveld, riverine forest and exotic trees.",
+  "summary": "A common resident. Black head and throat, a pink bill, and yellow elsewhere except black primaries and a green upper tail. Sexes are alike. Newman says the immature is as illustrated and does not describe it. The usual call is a loud liquid pheeoo, and the alarm is a churr. The Kemp paper name Blackheaded Oriole and the code RB were left unchanged.",
+  "sampleData": false,
+  "similar": [
+    {
+      "slug": "oriolus-auratus",
+      "note": "African Golden Oriole is yellow-headed with a black eye-line, not a black head and throat."
+    },
+    {
+      "slug": "oriolus-oriolus",
+      "note": "Eurasian Golden Oriole has a yellow head with black lores, not a black head and throat."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Black-headed Oriole",
+      "url": "https://newmansbirds.com/birds/black-headed-oriole/",
+      "publisher": "Newman's Birds",
+      "year": 2026
+    },
+    {
+      "title": "Kemp A.C., Herholdt J.J., Whyte I. & Harrison J. (2001). Birds of the two largest national parks in South Africa: a method to generate estimates of population size for all species and assess their conservation ecology. S. Afr. J. Sci. 97: 393–403.",
+      "url": "https://journals.co.za/doi/pdf/10.10520/EJC97367",
+      "publisher": "South African Journal of Science",
+      "year": 2001
+    }
+  ],
   "population": {
     "estimate": {
       "low": 16384,
@@ -35,8 +67,141 @@
     },
     "tierApplied": "D"
   },
-  "variants": [],
-  "viewNotes": [],
-  "calls": [],
-  "images": []
+  "variants": [
+    {
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "marks": {
+        "bill": {
+          "colour": "pink",
+          "shape": null
+        },
+        "eye": {
+          "iris": null,
+          "ring": null
+        },
+        "legs": {
+          "colour": null
+        },
+        "head": {
+          "crown": "black",
+          "face": "black",
+          "throat": "black"
+        },
+        "upperparts": {
+          "back": "yellow",
+          "rump": null,
+          "pattern": "Yellow except for the black primaries and the green upper tail."
+        },
+        "underparts": {
+          "breast": "yellow",
+          "belly": "yellow"
+        },
+        "wings": {
+          "above": null,
+          "below": null,
+          "pattern": "Black primaries."
+        },
+        "tail": {
+          "colour": "green",
+          "shape": "Green upper tail."
+        }
+      }
+    }
+  ],
+  "viewNotes": [
+    {
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Black head and throat, a pink bill and a yellow body."
+    },
+    {
+      "view": "perched-front",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Black face and throat, pink bill."
+    },
+    {
+      "view": "perched-back",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Yellow back, black primaries and a green upper tail."
+    },
+    {
+      "view": "flight-above",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Black primaries and a green upper tail."
+    },
+    {
+      "view": "flight-below",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Yellow underparts."
+    }
+  ],
+  "calls": [
+    {
+      "sex": "any",
+      "type": "call",
+      "description": "A loud liquid pheeoo, and a churr alarm. Grade A call from near Skukuza. The filename is XC1149414-20260519_KNP_AKaramitsos_iPh12_102058_SLE_250HP_-3dB_comb_oriole.mp3, so the file name includes -3dB and comb.",
+      "recordings": [
+        {
+          "key": "xeno-canto/XC1149414",
+          "source": "https://xeno-canto.org/1149414",
+          "fileUrl": "https://xeno-canto.org/sounds/uploaded/YSGTQVRQZI/XC1149414-20260519_KNP_AKaramitsos_iPh12_102058_SLE_250HP_-3dB_comb_oriole.mp3",
+          "author": "African Bioacoustics Community",
+          "license": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ]
+    }
+  ],
+  "images": [
+    {
+      "key": "oriolus-larvatus/side.jpg",
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "source": "https://www.inaturalist.org/observations/8036701",
+      "fileUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/10642826/large.jpeg",
+      "author": "David Renoult",
+      "license": "CC BY-NC 4.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+      "aiGenerated": false,
+      "hosted": false,
+      "alt": "Black-headed Oriole, black head and throat, pink bill and yellow body",
+      "caption": "Black-headed Oriole in the Ehlanzeni district, black head and throat, a pink bill and a yellow body."
+    }
+  ],
+  "research": {
+    "confidence": "medium",
+    "needsReview": true,
+    "note": "Newman calls it a common resident, so status is resident and all twelve months are listed. The immature is only “as illustrated”, which is why this needs review. Population figures, the Kemp paper name Blackheaded Oriole and the code RB were left unchanged."
+  },
+  "status": "resident",
+  "monthsPresent": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+  ]
 }

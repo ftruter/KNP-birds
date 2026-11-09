@@ -1,9 +1,9 @@
 {
   "source": "xeno-canto explore catalogue, API v3 recording fields",
   "counts": {
-    "slots": 348,
+    "slots": 351,
     "swapped": 17,
-    "added": 246,
+    "added": 249,
     "kept": 57,
     "none": 28,
     "cleaned": 0
@@ -5263,6 +5263,48 @@
       "locality": "Benfontijn Gamereserve, Lejweleputswa, Free State",
       "cleaned": false,
       "license": "CC BY-NC-SA 3.0"
+    },
+    {
+      "slug": "oriolus-auratus",
+      "scientificName": "Oriolus auratus",
+      "index": 0,
+      "type": "call",
+      "action": "added",
+      "from": [],
+      "to": "660762",
+      "quality": "A",
+      "country": "Zambia",
+      "locality": "Mutinondo Wilderness area, Northern Province",
+      "cleaned": false,
+      "license": "CC BY-NC-SA 4.0"
+    },
+    {
+      "slug": "oriolus-larvatus",
+      "scientificName": "Oriolus larvatus",
+      "index": 0,
+      "type": "call",
+      "action": "added",
+      "from": [],
+      "to": "1149414",
+      "quality": "A",
+      "country": "South Africa",
+      "locality": "Kruger Park (near Skukuza), Ehlanzeni District Municipality, Mpumalanga",
+      "cleaned": false,
+      "license": "CC BY-NC-SA 4.0"
+    },
+    {
+      "slug": "oriolus-oriolus",
+      "scientificName": "Oriolus oriolus",
+      "index": 0,
+      "type": "call",
+      "action": "added",
+      "from": [],
+      "to": "244231",
+      "quality": "A",
+      "country": "Spain",
+      "locality": "Parc eòlic de Rubió",
+      "cleaned": false,
+      "license": "CC BY-NC-SA 4.0"
     }
   ]
 }

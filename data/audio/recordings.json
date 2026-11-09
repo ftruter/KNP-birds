@@ -3546,6 +3546,36 @@
           }
         }
       ]
+    },
+    "oriolus-auratus": {
+      "calls": [
+        {
+          "index": 0,
+          "quality": {
+            "xeno-canto/XC660762": "A"
+          }
+        }
+      ]
+    },
+    "oriolus-larvatus": {
+      "calls": [
+        {
+          "index": 0,
+          "quality": {
+            "xeno-canto/XC1149414": "A"
+          }
+        }
+      ]
+    },
+    "oriolus-oriolus": {
+      "calls": [
+        {
+          "index": 0,
+          "quality": {
+            "xeno-canto/XC244231": "A"
+          }
+        }
+      ]
     }
   }
 }
