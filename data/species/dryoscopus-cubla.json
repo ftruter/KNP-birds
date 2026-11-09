@@ -7,8 +7,30 @@
     "af": "Sneeubal"
   },
   "family": "malaconotidae",
-  "summary": "The details for this species have not been published yet.",
-  "sampleData": true,
+  "size": {
+    "lengthCm": {
+      "min": 18,
+      "max": 18
+    },
+    "note": "Newman's Birds gives 18 cm."
+  },
+  "habitat": "Pairs, often in bird parties, in the canopy of large trees in woodland, riverine bush and evergreen forest fringes.",
+  "summary": "A common resident. A small pied bird. The eyes are crimson, orange or yellow. The female has a white forehead and eyebrow, and both sexes have wing-barring. An excited male puffs out the white back feathers and may fly like that while calling chick-weeu. The wings make a purring sound in a heavy flight. The Kemp code RB was left unchanged.",
+  "sampleData": false,
+  "sources": [
+    {
+      "title": "Black-backed Puffback",
+      "url": "https://newmansbirds.com/birds/black-backed-puffback/",
+      "publisher": "Newman's Birds",
+      "year": 2026
+    },
+    {
+      "title": "Kemp A.C., Herholdt J.J., Whyte I. & Harrison J. (2001). Birds of the two largest national parks in South Africa: a method to generate estimates of population size for all species and assess their conservation ecology. S. Afr. J. Sci. 97: 393–403.",
+      "url": "https://journals.co.za/doi/pdf/10.10520/EJC97367",
+      "publisher": "South African Journal of Science",
+      "year": 2001
+    }
+  ],
   "population": {
     "estimate": {
       "low": 65536,
@@ -35,8 +57,220 @@
     },
     "tierApplied": "D"
   },
-  "variants": [],
-  "viewNotes": [],
-  "calls": [],
-  "images": []
+  "variants": [
+    {
+      "age": "adult",
+      "sex": "male",
+      "season": "any",
+      "marks": {
+        "bill": {
+          "colour": null,
+          "shape": null
+        },
+        "eye": {
+          "iris": null,
+          "ring": null
+        },
+        "legs": {
+          "colour": null
+        },
+        "head": {
+          "crown": null,
+          "face": null,
+          "throat": null,
+          "pattern": "Pied. The white forehead and eyebrow are the female marks."
+        },
+        "upperparts": {
+          "back": null,
+          "rump": null,
+          "pattern": "Pied. When excited, the male erects the back feathers into a white puff."
+        },
+        "underparts": {
+          "breast": null,
+          "belly": null,
+          "pattern": "Pied. Separate black and white areas were not itemised."
+        },
+        "wings": {
+          "above": null,
+          "below": null,
+          "pattern": "Distinctive wing-barring in both sexes."
+        },
+        "tail": {
+          "colour": null,
+          "shape": null
+        }
+      }
+    },
+    {
+      "age": "adult",
+      "sex": "female",
+      "season": "any",
+      "marks": {
+        "bill": {
+          "colour": null,
+          "shape": null
+        },
+        "eye": {
+          "iris": null,
+          "ring": null
+        },
+        "legs": {
+          "colour": null
+        },
+        "head": {
+          "crown": null,
+          "face": null,
+          "throat": null,
+          "pattern": "White forehead and eyebrow. Otherwise pied."
+        },
+        "upperparts": {
+          "back": null,
+          "rump": null,
+          "pattern": "Pied."
+        },
+        "underparts": {
+          "breast": null,
+          "belly": null
+        },
+        "wings": {
+          "above": null,
+          "below": null,
+          "pattern": "Distinctive wing-barring."
+        },
+        "tail": {
+          "colour": null,
+          "shape": null
+        }
+      }
+    }
+  ],
+  "viewNotes": [
+    {
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "male",
+      "season": "any",
+      "note": "Small pied bird. The eyes may be crimson, orange or yellow, so no single iris colour is stored."
+    },
+    {
+      "view": "perched-front",
+      "age": "adult",
+      "sex": "male",
+      "season": "any",
+      "note": "Pied front. Newman does not itemise the black and white parts of the male head."
+    },
+    {
+      "view": "perched-back",
+      "age": "adult",
+      "sex": "male",
+      "season": "any",
+      "note": "Pied back. When excited the male puffs the white back feathers."
+    },
+    {
+      "view": "flight-above",
+      "age": "adult",
+      "sex": "male",
+      "season": "any",
+      "note": "Heavy flight, the wings making a purring sound, with wing-barring. The male may fly with the back puffed."
+    },
+    {
+      "view": "flight-below",
+      "age": "adult",
+      "sex": "male",
+      "season": "any",
+      "note": "Pied underparts. A separate underwing colour was not named."
+    },
+    {
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "female",
+      "season": "any",
+      "note": "Pied, with a white forehead and eyebrow, and wing-barring."
+    },
+    {
+      "view": "perched-front",
+      "age": "adult",
+      "sex": "female",
+      "season": "any",
+      "note": "White forehead and eyebrow."
+    },
+    {
+      "view": "perched-back",
+      "age": "adult",
+      "sex": "female",
+      "season": "any",
+      "note": "Pied back and barred wings. The white puff is described for the male."
+    },
+    {
+      "view": "flight-above",
+      "age": "adult",
+      "sex": "female",
+      "season": "any",
+      "note": "Wing-barring in flight."
+    },
+    {
+      "view": "flight-below",
+      "age": "adult",
+      "sex": "female",
+      "season": "any",
+      "note": "Pied underparts."
+    }
+  ],
+  "calls": [
+    {
+      "sex": "male",
+      "type": "call",
+      "description": "A sharp chick-weeu, chick-weeu, given while flying with the back puffed, and less often while feeding. Grade A call from near Sabie Park, Bushbuckridge. The filename is XC368159-170328_Black-backedPuffback_SabiePark_OC.mp3.",
+      "recordings": [
+        {
+          "key": "xeno-canto/XC368159",
+          "source": "https://xeno-canto.org/368159",
+          "fileUrl": "https://xeno-canto.org/sounds/uploaded/RFRTVEHIZX/XC368159-170328_Black-backedPuffback_SabiePark_OC.mp3",
+          "author": "Oscar Campbell",
+          "license": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ]
+    }
+  ],
+  "images": [
+    {
+      "key": "dryoscopus-cubla/side.jpg",
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "female",
+      "season": "any",
+      "source": "https://www.inaturalist.org/observations/181109329",
+      "fileUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/315589834/large.jpeg",
+      "author": "Daniel Correia",
+      "license": "CC BY-NC 4.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+      "aiGenerated": false,
+      "hosted": false,
+      "alt": "Female Black-backed Puffback in foliage, white eyebrow and red eye",
+      "caption": "Black-backed Puffback in the Mopani district, a pied bird with a white eyebrow and a red eye. Newman gives the white forehead and eyebrow to the female."
+    }
+  ],
+  "research": {
+    "confidence": "medium",
+    "needsReview": false,
+    "note": "Newman calls it a common resident, so status is resident and all twelve months are listed. The eye is crimson, orange or yellow, so the iris token is left blank. Pied areas are not split into black and white tokens. Population figures and the Kemp code RB were left unchanged."
+  },
+  "status": "resident",
+  "monthsPresent": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+  ]
 }

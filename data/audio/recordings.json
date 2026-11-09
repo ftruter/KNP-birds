@@ -3106,6 +3106,126 @@
           }
         }
       ]
+    },
+    "chlorophoneus-nigrifrons": {
+      "calls": [
+        {
+          "index": 0,
+          "quality": {
+            "xeno-canto/XC703355": "A"
+          }
+        }
+      ]
+    },
+    "chlorophoneus-olivaceus": {
+      "calls": [
+        {
+          "index": 0,
+          "quality": {
+            "xeno-canto/XC252390": "A"
+          }
+        }
+      ]
+    },
+    "chlorophoneus-sulfureopectus": {
+      "calls": [
+        {
+          "index": 0,
+          "quality": {
+            "xeno-canto/XC323343": "A"
+          }
+        }
+      ]
+    },
+    "dryoscopus-cubla": {
+      "calls": [
+        {
+          "index": 0,
+          "quality": {
+            "xeno-canto/XC368159": "A"
+          }
+        }
+      ]
+    },
+    "laniarius-atrococcineus": {
+      "calls": [
+        {
+          "index": 0,
+          "quality": {
+            "xeno-canto/XC204670": "A"
+          }
+        }
+      ]
+    },
+    "laniarius-ferrugineus": {
+      "calls": [
+        {
+          "index": 0,
+          "quality": {
+            "xeno-canto/XC331290": "A"
+          }
+        }
+      ]
+    },
+    "laniarius-major": {
+      "calls": [
+        {
+          "index": 0,
+          "quality": {
+            "xeno-canto/XC259660": "A"
+          }
+        }
+      ]
+    },
+    "malaconotus-blanchoti": {
+      "calls": [
+        {
+          "index": 0,
+          "quality": {
+            "xeno-canto/XC382958": "A"
+          }
+        }
+      ]
+    },
+    "nilaus-afer": {
+      "calls": [
+        {
+          "index": 0,
+          "quality": {
+            "xeno-canto/XC441144": "A"
+          }
+        }
+      ]
+    },
+    "tchagra-australis": {
+      "calls": [
+        {
+          "index": 0,
+          "quality": {
+            "xeno-canto/XC446215": "A"
+          }
+        }
+      ]
+    },
+    "tchagra-senegalus": {
+      "calls": [
+        {
+          "index": 0,
+          "quality": {
+            "xeno-canto/XC268619": "A"
+          }
+        }
+      ]
+    },
+    "telophorus-viridis": {
+      "calls": [
+        {
+          "index": 0,
+          "quality": {
+            "xeno-canto/XC148574": "A"
+          }
+        }
+      ]
     }
   }
 }

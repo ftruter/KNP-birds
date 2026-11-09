@@ -6,8 +6,8 @@
     "en": "Bushshrikes",
     "af": "Boslaksmanne"
   },
-  "summary": "Field notes for this family are still to be written.",
-  "sampleData": true,
+  "summary": "Bushshrikes, boubous, tchagras, the puffback and the brubru. Twelve occur in Kruger. Orange-breasted Bush-Shrike is the yellow bird with an orange breast. Grey-headed Bush-Shrike is the large one with a heavy bill and a grey hood. Black-backed Puffback is the small pied bird that puffs its back. The two tchagras are separated by a black crown or a brown crown edged in black.",
+  "sampleData": false,
   "species": [
     {
       "slug": "chlorophoneus-nigrifrons",

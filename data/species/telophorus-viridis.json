@@ -7,8 +7,30 @@
     "af": "Konkoit"
   },
   "family": "malaconotidae",
-  "summary": "The details for this species have not been published yet.",
-  "sampleData": true,
+  "size": {
+    "lengthCm": {
+      "min": 20,
+      "max": 20
+    },
+    "note": "Newman's Birds gives 20 cm."
+  },
+  "habitat": "Secretive pairs in dense coastal and valley bush, lowland forest fringes, riverine forest and mixed bushveld, in the lower stratum, searching for insects.",
+  "summary": "A fairly common resident. The male has a scarlet throat and a black gorget. The female is similar but the black gorget is much reduced. The colour line also gives a yellow belly. Newman does not describe the upperparts, and the immature is only shown. The call is a liquid, ventriloquial kong-kong-koit. Newman’s page uses Chlorophoneus viridis. The stored name Telophorus viridis was left unchanged. The Kemp code RB was left unchanged.",
+  "sampleData": false,
+  "sources": [
+    {
+      "title": "Gorgeous Bush-Shrike",
+      "url": "https://newmansbirds.com/birds/gorgeous-bushshrike/",
+      "publisher": "Newman's Birds",
+      "year": 2026
+    },
+    {
+      "title": "Kemp A.C., Herholdt J.J., Whyte I. & Harrison J. (2001). Birds of the two largest national parks in South Africa: a method to generate estimates of population size for all species and assess their conservation ecology. S. Afr. J. Sci. 97: 393–403.",
+      "url": "https://journals.co.za/doi/pdf/10.10520/EJC97367",
+      "publisher": "South African Journal of Science",
+      "year": 2001
+    }
+  ],
   "population": {
     "estimate": {
       "low": 2048,
@@ -35,8 +57,217 @@
     },
     "tierApplied": "D"
   },
-  "variants": [],
-  "viewNotes": [],
-  "calls": [],
-  "images": []
+  "variants": [
+    {
+      "age": "adult",
+      "sex": "male",
+      "season": "any",
+      "marks": {
+        "bill": {
+          "colour": null,
+          "shape": null
+        },
+        "eye": {
+          "iris": null,
+          "ring": null
+        },
+        "legs": {
+          "colour": null
+        },
+        "head": {
+          "crown": null,
+          "face": null,
+          "throat": null,
+          "pattern": "Scarlet throat. Scarlet is not a colour token. The colour line says red chin and throat."
+        },
+        "upperparts": {
+          "back": null,
+          "rump": null
+        },
+        "underparts": {
+          "breast": "black",
+          "belly": "yellow",
+          "pattern": "Bold black breast-band, the gorget, and a yellow belly."
+        },
+        "wings": {
+          "above": null,
+          "below": null
+        },
+        "tail": {
+          "colour": null,
+          "shape": null
+        }
+      }
+    },
+    {
+      "age": "adult",
+      "sex": "female",
+      "season": "any",
+      "marks": {
+        "bill": {
+          "colour": null,
+          "shape": null
+        },
+        "eye": {
+          "iris": null,
+          "ring": null
+        },
+        "legs": {
+          "colour": null
+        },
+        "head": {
+          "crown": null,
+          "face": null,
+          "throat": null,
+          "pattern": "Similar to the male, including the scarlet throat, but the black gorget is much reduced."
+        },
+        "upperparts": {
+          "back": null,
+          "rump": null
+        },
+        "underparts": {
+          "breast": null,
+          "belly": null,
+          "pattern": "Black gorget much reduced. The yellow belly is given in the colour line for the species."
+        },
+        "wings": {
+          "above": null,
+          "below": null
+        },
+        "tail": {
+          "colour": null,
+          "shape": null
+        }
+      }
+    }
+  ],
+  "viewNotes": [
+    {
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "male",
+      "season": "any",
+      "note": "Scarlet throat, bold black breast-band and yellow belly. Newman does not describe the upperparts."
+    },
+    {
+      "view": "perched-front",
+      "age": "adult",
+      "sex": "male",
+      "season": "any",
+      "note": "Scarlet chin and throat, then the black gorget."
+    },
+    {
+      "view": "perched-back",
+      "age": "adult",
+      "sex": "male",
+      "season": "any",
+      "note": "The upperpart colour was not described."
+    },
+    {
+      "view": "flight-above",
+      "age": "adult",
+      "sex": "male",
+      "season": "any",
+      "note": "A flight pattern was not described."
+    },
+    {
+      "view": "flight-below",
+      "age": "adult",
+      "sex": "male",
+      "season": "any",
+      "note": "Black breast-band and yellow belly."
+    },
+    {
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "female",
+      "season": "any",
+      "note": "Like the male, with the black gorget much reduced."
+    },
+    {
+      "view": "perched-front",
+      "age": "adult",
+      "sex": "female",
+      "season": "any",
+      "note": "Scarlet throat and a much reduced black breast-band."
+    },
+    {
+      "view": "perched-back",
+      "age": "adult",
+      "sex": "female",
+      "season": "any",
+      "note": "The female upperparts were not described."
+    },
+    {
+      "view": "flight-above",
+      "age": "adult",
+      "sex": "female",
+      "season": "any",
+      "note": "A female flight pattern was not described."
+    },
+    {
+      "view": "flight-below",
+      "age": "adult",
+      "sex": "female",
+      "season": "any",
+      "note": "Reduced black gorget. The yellow belly is in the species colour line."
+    }
+  ],
+  "calls": [
+    {
+      "sex": "any",
+      "type": "call",
+      "description": "A liquid, ventriloquial, rapidly delivered kong-kong-koit. Grade A recording from near Nelspruit. The catalogue type is call and song. The filename is XC148574-VN_20130922_00030.mp3 and does not name the bird.",
+      "recordings": [
+        {
+          "key": "xeno-canto/XC148574",
+          "source": "https://xeno-canto.org/148574",
+          "fileUrl": "https://xeno-canto.org/sounds/uploaded/RROSTWUTXO/XC148574-VN_20130922_00030.mp3",
+          "author": "Michael Cronje",
+          "license": "CC BY-NC-SA 3.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/3.0/",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ]
+    }
+  ],
+  "images": [
+    {
+      "key": "telophorus-viridis/side.jpg",
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "male",
+      "season": "any",
+      "source": "https://www.inaturalist.org/observations/325806759",
+      "fileUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/589957860/large.jpg",
+      "author": "Mike Ambrose",
+      "license": "CC BY-NC 4.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+      "aiGenerated": false,
+      "hosted": false,
+      "alt": "Male Gorgeous Bush-Shrike perched, scarlet throat, black breast-band and yellow belly",
+      "caption": "Gorgeous Bush-Shrike in the Mopani district, scarlet throat, black breast-band and yellow belly. Newman gives the full black gorget to the male."
+    }
+  ],
+  "research": {
+    "confidence": "medium",
+    "needsReview": true,
+    "note": "Newman calls it a fairly common resident, so status is resident and all twelve months are listed. Upperpart colour is not described, and the immature is only illustrated, which is why this needs review. The Newman page uses Chlorophoneus viridis. This file keeps Telophorus viridis. Population figures and the Kemp code RB were left unchanged."
+  },
+  "status": "resident",
+  "monthsPresent": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+  ]
 }

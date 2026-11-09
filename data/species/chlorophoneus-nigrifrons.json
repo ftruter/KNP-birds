@@ -7,8 +7,36 @@
     "af": "Swartoogboslaksman"
   },
   "family": "malaconotidae",
-  "summary": "The details for this species have not been published yet.",
-  "sampleData": true,
+  "size": {
+    "lengthCm": {
+      "min": 19,
+      "max": 19
+    },
+    "note": "Newman's Birds gives 19 cm."
+  },
+  "habitat": "Pairs, mainly in montane forest in the eastern regions, feeding in the upper and mid strata. They join bird parties in winter.",
+  "summary": "An uncommon, localised resident. The male has a black forehead and facial mask, with no eyebrow, reaching the base of the bill, and an extensive orange wash from throat to belly. The vent is yellow and the upperparts are olive-green, with a grey cap. The female is less orange below and has a grey head and mantle. The call is a repetitive oo-poo. No openly licensed research-grade photo was found in the Kruger box. The Kemp code NB was left unchanged.",
+  "sampleData": false,
+  "similar": [
+    {
+      "slug": "chlorophoneus-olivaceus",
+      "note": "Olive Bush-Shrike has a black mask that does not reach the base of the bill. A female Black-fronted Bush-shrike has a grey head and mantle."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Black-fronted Bush-shrike",
+      "url": "https://newmansbirds.com/birds/black-fronted-bushshrike/",
+      "publisher": "Newman's Birds",
+      "year": 2026
+    },
+    {
+      "title": "Kemp A.C., Herholdt J.J., Whyte I. & Harrison J. (2001). Birds of the two largest national parks in South Africa: a method to generate estimates of population size for all species and assess their conservation ecology. S. Afr. J. Sci. 97: 393–403.",
+      "url": "https://journals.co.za/doi/pdf/10.10520/EJC97367",
+      "publisher": "South African Journal of Science",
+      "year": 2001
+    }
+  ],
   "population": {
     "estimate": {
       "low": 1,
@@ -35,8 +63,202 @@
     },
     "tierApplied": "D"
   },
-  "variants": [],
-  "viewNotes": [],
-  "calls": [],
-  "images": []
+  "variants": [
+    {
+      "age": "adult",
+      "sex": "male",
+      "season": "any",
+      "marks": {
+        "bill": {
+          "colour": null,
+          "shape": null
+        },
+        "eye": {
+          "iris": null,
+          "ring": null
+        },
+        "legs": {
+          "colour": null
+        },
+        "head": {
+          "crown": "grey",
+          "face": "black",
+          "throat": "orange",
+          "pattern": "Black forehead and facial mask, with no eyebrow, extending to the base of the bill. Grey cap."
+        },
+        "upperparts": {
+          "back": "olive",
+          "rump": null,
+          "pattern": "Olive-green above."
+        },
+        "underparts": {
+          "breast": "orange",
+          "belly": "orange",
+          "pattern": "Extensive orange wash from throat to belly. Vent yellow."
+        },
+        "wings": {
+          "above": null,
+          "below": null
+        },
+        "tail": {
+          "colour": null,
+          "shape": null
+        }
+      }
+    },
+    {
+      "age": "adult",
+      "sex": "female",
+      "season": "any",
+      "marks": {
+        "bill": {
+          "colour": null,
+          "shape": null
+        },
+        "eye": {
+          "iris": null,
+          "ring": null
+        },
+        "legs": {
+          "colour": null
+        },
+        "head": {
+          "crown": "grey",
+          "face": null,
+          "throat": null,
+          "pattern": "Grey head. Less orange below than the male. Distinguished from a female Olive Bush-Shrike by the grey head and mantle."
+        },
+        "upperparts": {
+          "back": "grey",
+          "rump": null,
+          "pattern": "Grey mantle. Underparts less orange than the male’s."
+        },
+        "underparts": {
+          "breast": null,
+          "belly": null,
+          "pattern": "Less orange than the male. A separate colour was not named."
+        },
+        "wings": {
+          "above": null,
+          "below": null
+        },
+        "tail": {
+          "colour": null,
+          "shape": null
+        }
+      }
+    }
+  ],
+  "viewNotes": [
+    {
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "male",
+      "season": "any",
+      "note": "Grey cap, black mask to the bill, olive-green upperparts and an orange throat-to-belly wash."
+    },
+    {
+      "view": "perched-front",
+      "age": "adult",
+      "sex": "male",
+      "season": "any",
+      "note": "Black forehead and mask, with no eyebrow, and an orange throat."
+    },
+    {
+      "view": "perched-back",
+      "age": "adult",
+      "sex": "male",
+      "season": "any",
+      "note": "Olive-green upperparts and a grey cap."
+    },
+    {
+      "view": "flight-above",
+      "age": "adult",
+      "sex": "male",
+      "season": "any",
+      "note": "A flight pattern was not described."
+    },
+    {
+      "view": "flight-below",
+      "age": "adult",
+      "sex": "male",
+      "season": "any",
+      "note": "Orange from throat to belly, with a yellow vent."
+    },
+    {
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "female",
+      "season": "any",
+      "note": "Grey head and mantle, with less orange below than the male."
+    },
+    {
+      "view": "perched-front",
+      "age": "adult",
+      "sex": "female",
+      "season": "any",
+      "note": "Grey head. The orange is less extensive than the male’s."
+    },
+    {
+      "view": "perched-back",
+      "age": "adult",
+      "sex": "female",
+      "season": "any",
+      "note": "Grey mantle."
+    },
+    {
+      "view": "flight-above",
+      "age": "adult",
+      "sex": "female",
+      "season": "any",
+      "note": "A female flight pattern was not described."
+    },
+    {
+      "view": "flight-below",
+      "age": "adult",
+      "sex": "female",
+      "season": "any",
+      "note": "Underparts less orange than the male. Newman does not name a replacement colour."
+    }
+  ],
+  "calls": [
+    {
+      "sex": "any",
+      "type": "call",
+      "description": "A repetitive oo-poo, like doh-me on the tonic sol-fa scale. Grade A call from Chama forest, Meru, Tanzania. The filename is XC703355-bushx bou,chama1112.mp3 and does not name the species. It was the only openly licensed grade A recording.",
+      "recordings": [
+        {
+          "key": "xeno-canto/XC703355",
+          "source": "https://xeno-canto.org/703355",
+          "fileUrl": "https://xeno-canto.org/sounds/uploaded/FAMEEAPTYE/XC703355-bushx%20bou%2Cchama1112.mp3",
+          "author": "isaac kilusu",
+          "license": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ]
+    }
+  ],
+  "images": [],
+  "research": {
+    "confidence": "medium",
+    "needsReview": false,
+    "note": "Newman calls it an uncommon, localised resident, so status is resident and all twelve months are listed. The Kemp code NB was left unchanged. No openly licensed research-grade photograph was found inside the Kruger box."
+  },
+  "status": "resident",
+  "monthsPresent": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+  ]
 }

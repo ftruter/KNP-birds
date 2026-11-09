@@ -7,8 +7,36 @@
     "af": "Rooiborslaksman"
   },
   "family": "malaconotidae",
-  "summary": "The details for this species have not been published yet.",
-  "sampleData": true,
+  "size": {
+    "lengthCm": {
+      "min": 22,
+      "max": 23
+    },
+    "note": "Newman's Birds gives 22–23 cm."
+  },
+  "habitat": "Pairs, mostly in thornveld, in the lower stratum. Newman says it is most common in arid western regions.",
+  "summary": "A common near-endemic resident. Black above with a white wing-stripe, and entirely scarlet below. A rare form has bright yellow underparts. Very young birds are ash-grey below, finely barred black. The birds duet a sharp qui-quip-chiri. The Kemp code VB was left unchanged.",
+  "sampleData": false,
+  "similar": [
+    {
+      "slug": "laniarius-ferrugineus",
+      "note": "Southern Boubou is black above with a white wing-bar, but the underparts grade from a white throat to a cinnamon belly, not scarlet."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Crimson-breasted Shrike",
+      "url": "https://newmansbirds.com/birds/crimson-breasted-shrike/",
+      "publisher": "Newman's Birds",
+      "year": 2026
+    },
+    {
+      "title": "Kemp A.C., Herholdt J.J., Whyte I. & Harrison J. (2001). Birds of the two largest national parks in South Africa: a method to generate estimates of population size for all species and assess their conservation ecology. S. Afr. J. Sci. 97: 393–403.",
+      "url": "https://journals.co.za/doi/pdf/10.10520/EJC97367",
+      "publisher": "South African Journal of Science",
+      "year": 2001
+    }
+  ],
   "population": {
     "estimate": {
       "low": 16,
@@ -35,8 +63,218 @@
     },
     "tierApplied": "D"
   },
-  "variants": [],
-  "viewNotes": [],
-  "calls": [],
-  "images": []
+  "variants": [
+    {
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "marks": {
+        "bill": {
+          "colour": null,
+          "shape": null
+        },
+        "eye": {
+          "iris": null,
+          "ring": null
+        },
+        "legs": {
+          "colour": null
+        },
+        "head": {
+          "crown": null,
+          "face": null,
+          "throat": null,
+          "pattern": "Black above. The head was not itemised separately."
+        },
+        "upperparts": {
+          "back": null,
+          "rump": null,
+          "pattern": "Black above, with a white wing-stripe."
+        },
+        "underparts": {
+          "breast": null,
+          "belly": null,
+          "pattern": "Entirely scarlet underparts. The colour line says crimson. A rare form has bright yellow underparts. Scarlet, crimson and that yellow form are not stored as a single token."
+        },
+        "wings": {
+          "above": null,
+          "below": null,
+          "pattern": "White wing-stripe."
+        },
+        "tail": {
+          "colour": null,
+          "shape": null
+        }
+      }
+    },
+    {
+      "age": "juvenile",
+      "sex": "any",
+      "season": "any",
+      "marks": {
+        "bill": {
+          "colour": null,
+          "shape": null
+        },
+        "eye": {
+          "iris": null,
+          "ring": null
+        },
+        "legs": {
+          "colour": null
+        },
+        "head": {
+          "crown": null,
+          "face": null,
+          "throat": null
+        },
+        "upperparts": {
+          "back": null,
+          "rump": null
+        },
+        "underparts": {
+          "breast": "ash-grey",
+          "belly": "ash-grey",
+          "pattern": "Very young birds are ash-grey below, finely barred black."
+        },
+        "wings": {
+          "above": null,
+          "below": null
+        },
+        "tail": {
+          "colour": null,
+          "shape": null
+        }
+      }
+    }
+  ],
+  "viewNotes": [
+    {
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Black above, white wing-stripe, and entirely scarlet underparts."
+    },
+    {
+      "view": "perched-front",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Scarlet underparts. Newman also says crimson in the colour line."
+    },
+    {
+      "view": "perched-back",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Black upperparts and a white wing-stripe."
+    },
+    {
+      "view": "flight-above",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "White wing-stripe. No other flight mark was described."
+    },
+    {
+      "view": "flight-below",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Entirely scarlet below. A rare bird is bright yellow below instead."
+    },
+    {
+      "view": "perched-side",
+      "age": "juvenile",
+      "sex": "any",
+      "season": "any",
+      "note": "Ash-grey below, finely barred black. The upperparts of the very young bird were not described."
+    },
+    {
+      "view": "perched-front",
+      "age": "juvenile",
+      "sex": "any",
+      "season": "any",
+      "note": "Finely barred ash-grey underparts."
+    },
+    {
+      "view": "perched-back",
+      "age": "juvenile",
+      "sex": "any",
+      "season": "any",
+      "note": "The young bird’s upperparts were not described."
+    },
+    {
+      "view": "flight-above",
+      "age": "juvenile",
+      "sex": "any",
+      "season": "any",
+      "note": "A young flight pattern was not described."
+    },
+    {
+      "view": "flight-below",
+      "age": "juvenile",
+      "sex": "any",
+      "season": "any",
+      "note": "Ash-grey underparts with fine black barring."
+    }
+  ],
+  "calls": [
+    {
+      "sex": "any",
+      "type": "call",
+      "description": "A duet, often almost simultaneous: a sharp qui-quip-chiri. Grade A call from near Thabazimbi, Limpopo. The filename is XC204670-2014-11-28_16.51_01-cb-shrike.mp3.",
+      "recordings": [
+        {
+          "key": "xeno-canto/XC204670",
+          "source": "https://xeno-canto.org/204670",
+          "fileUrl": "https://xeno-canto.org/sounds/uploaded/LWQXRZHFCU/XC204670-2014-11-28_16.51_01-cb-shrike.mp3",
+          "author": "Niall Perrins",
+          "license": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ]
+    }
+  ],
+  "images": [
+    {
+      "key": "laniarius-atrococcineus/side.jpg",
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "source": "https://www.inaturalist.org/observations/237142020",
+      "fileUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/421992932/large.jpeg",
+      "author": "rosshawkins",
+      "license": "CC0 1.0",
+      "licenceUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "aiGenerated": false,
+      "hosted": false,
+      "alt": "Crimson-breasted Shrike on a low branch, black above and scarlet below",
+      "caption": "Crimson-breasted Shrike in Kruger National Park near Musina, small in the frame, black above and scarlet below with a white wing-stripe."
+    }
+  ],
+  "research": {
+    "confidence": "medium",
+    "needsReview": false,
+    "note": "Newman calls it a common near-endemic resident, so status is resident and all twelve months are listed. The Kemp code VB was left unchanged. Scarlet and crimson are not colour tokens, so the underpart colour is left blank and described in the pattern. The rare yellow form is noted and not given its own variant."
+  },
+  "status": "resident",
+  "monthsPresent": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+  ]
 }

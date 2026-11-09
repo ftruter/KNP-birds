@@ -7,8 +7,30 @@
     "af": "Bontroklaksman"
   },
   "family": "malaconotidae",
-  "summary": "The details for this species have not been published yet.",
-  "sampleData": true,
+  "size": {
+    "lengthCm": {
+      "min": 15,
+      "max": 15
+    },
+    "note": "Newman's Birds gives 15 cm."
+  },
+  "habitat": "An active, restless bird of open woodland. Pairs work through the mid stratum and call continuously.",
+  "summary": "A fairly common resident. A small pied bird with rich rufous flanks in both sexes and a black and white wing-bar. The female is dark brown above and has a brown cap. The immature is similar but has a streaked breast. The male gives a drawn-out whistle, trrioooo, and the female answers with a softer wheezy wheee. The Kemp code RB was left unchanged.",
+  "sampleData": false,
+  "sources": [
+    {
+      "title": "Brubru",
+      "url": "https://newmansbirds.com/birds/brubru/",
+      "publisher": "Newman's Birds",
+      "year": 2026
+    },
+    {
+      "title": "Kemp A.C., Herholdt J.J., Whyte I. & Harrison J. (2001). Birds of the two largest national parks in South Africa: a method to generate estimates of population size for all species and assess their conservation ecology. S. Afr. J. Sci. 97: 393–403.",
+      "url": "https://journals.co.za/doi/pdf/10.10520/EJC97367",
+      "publisher": "South African Journal of Science",
+      "year": 2001
+    }
+  ],
   "population": {
     "estimate": {
       "low": 32768,
@@ -35,8 +57,296 @@
     },
     "tierApplied": "D"
   },
-  "variants": [],
-  "viewNotes": [],
-  "calls": [],
-  "images": []
+  "variants": [
+    {
+      "age": "adult",
+      "sex": "male",
+      "season": "any",
+      "marks": {
+        "bill": {
+          "colour": null,
+          "shape": null
+        },
+        "eye": {
+          "iris": null,
+          "ring": null
+        },
+        "legs": {
+          "colour": null
+        },
+        "head": {
+          "crown": null,
+          "face": null,
+          "throat": null,
+          "pattern": "Pied. The brown cap is the female mark. A male cap colour was not named separately."
+        },
+        "upperparts": {
+          "back": null,
+          "rump": null,
+          "pattern": "Pied, with a black and white wing-bar."
+        },
+        "underparts": {
+          "breast": null,
+          "belly": null,
+          "pattern": "White underparts with rich rufous flanks."
+        },
+        "wings": {
+          "above": null,
+          "below": null,
+          "pattern": "Black and white wing-bar."
+        },
+        "tail": {
+          "colour": null,
+          "shape": null
+        }
+      }
+    },
+    {
+      "age": "adult",
+      "sex": "female",
+      "season": "any",
+      "marks": {
+        "bill": {
+          "colour": null,
+          "shape": null
+        },
+        "eye": {
+          "iris": null,
+          "ring": null
+        },
+        "legs": {
+          "colour": null
+        },
+        "head": {
+          "crown": "brown",
+          "face": null,
+          "throat": null,
+          "pattern": "Brown cap. Dark brown above."
+        },
+        "upperparts": {
+          "back": "dark-brown",
+          "rump": null,
+          "pattern": "Dark brown above."
+        },
+        "underparts": {
+          "breast": null,
+          "belly": null,
+          "pattern": "White underparts with rich rufous flanks, as in the male."
+        },
+        "wings": {
+          "above": null,
+          "below": null,
+          "pattern": "Black and white wing-bar."
+        },
+        "tail": {
+          "colour": null,
+          "shape": null
+        }
+      }
+    },
+    {
+      "age": "immature",
+      "sex": "any",
+      "season": "any",
+      "marks": {
+        "bill": {
+          "colour": null,
+          "shape": null
+        },
+        "eye": {
+          "iris": null,
+          "ring": null
+        },
+        "legs": {
+          "colour": null
+        },
+        "head": {
+          "crown": null,
+          "face": null,
+          "throat": null
+        },
+        "upperparts": {
+          "back": null,
+          "rump": null
+        },
+        "underparts": {
+          "breast": null,
+          "belly": null,
+          "pattern": "Similar to the adult, with a streaked breast."
+        },
+        "wings": {
+          "above": null,
+          "below": null
+        },
+        "tail": {
+          "colour": null,
+          "shape": null
+        }
+      }
+    }
+  ],
+  "viewNotes": [
+    {
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "male",
+      "season": "any",
+      "note": "Small pied bird with a black and white wing-bar and rich rufous flanks."
+    },
+    {
+      "view": "perched-front",
+      "age": "adult",
+      "sex": "male",
+      "season": "any",
+      "note": "White underparts and rufous flanks. The male cap was not given its own colour."
+    },
+    {
+      "view": "perched-back",
+      "age": "adult",
+      "sex": "male",
+      "season": "any",
+      "note": "Pied upperparts and a black and white wing-bar."
+    },
+    {
+      "view": "flight-above",
+      "age": "adult",
+      "sex": "male",
+      "season": "any",
+      "note": "Black and white wing-bar. No other flight mark was described."
+    },
+    {
+      "view": "flight-below",
+      "age": "adult",
+      "sex": "male",
+      "season": "any",
+      "note": "White underparts with rich rufous flanks."
+    },
+    {
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "female",
+      "season": "any",
+      "note": "Dark brown above, with a brown cap, white underparts and rufous flanks."
+    },
+    {
+      "view": "perched-front",
+      "age": "adult",
+      "sex": "female",
+      "season": "any",
+      "note": "Brown cap and white underparts."
+    },
+    {
+      "view": "perched-back",
+      "age": "adult",
+      "sex": "female",
+      "season": "any",
+      "note": "Dark brown upperparts."
+    },
+    {
+      "view": "flight-above",
+      "age": "adult",
+      "sex": "female",
+      "season": "any",
+      "note": "Black and white wing-bar."
+    },
+    {
+      "view": "flight-below",
+      "age": "adult",
+      "sex": "female",
+      "season": "any",
+      "note": "Rich rufous flanks on white underparts."
+    },
+    {
+      "view": "perched-side",
+      "age": "immature",
+      "sex": "any",
+      "season": "any",
+      "note": "Like the adult, with a streaked breast. Newman does not say which adult sex it matches."
+    },
+    {
+      "view": "perched-front",
+      "age": "immature",
+      "sex": "any",
+      "season": "any",
+      "note": "Streaked breast."
+    },
+    {
+      "view": "perched-back",
+      "age": "immature",
+      "sex": "any",
+      "season": "any",
+      "note": "The immature back was not given a separate colour."
+    },
+    {
+      "view": "flight-above",
+      "age": "immature",
+      "sex": "any",
+      "season": "any",
+      "note": "An immature flight pattern was not described."
+    },
+    {
+      "view": "flight-below",
+      "age": "immature",
+      "sex": "any",
+      "season": "any",
+      "note": "Streaked breast. The rufous flanks are part of the adult pattern it is said to resemble."
+    }
+  ],
+  "calls": [
+    {
+      "sex": "male",
+      "type": "call",
+      "description": "The male gives a drawn-out, far-carrying whistle, trrioooo, like a telephone. The female replies with a softer, wheezy wheee. Grade A call from Faan Meintjes Nature Reserve near Klerksdorp. The filename is XC441144-Brubru FM 3.1.2018.mp3.",
+      "recordings": [
+        {
+          "key": "xeno-canto/XC441144",
+          "source": "https://xeno-canto.org/441144",
+          "fileUrl": "https://xeno-canto.org/sounds/uploaded/HMBDEWEZVS/XC441144-Brubru%20FM%203.1.2018.mp3",
+          "author": "Tony Archer",
+          "license": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ]
+    }
+  ],
+  "images": [
+    {
+      "key": "nilaus-afer/side.jpg",
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "female",
+      "season": "any",
+      "source": "https://www.inaturalist.org/observations/182182306",
+      "fileUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/317600086/large.jpeg",
+      "author": "jderasmus",
+      "license": "CC BY-NC 4.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+      "aiGenerated": false,
+      "hosted": false,
+      "alt": "Brubru perched, brown cap, white underparts, rufous flank and white wing-bar",
+      "caption": "Brubru at Mpondo Dam in Kruger, brown-capped and dark above, with a white wing-bar and a rufous flank. Newman gives the brown cap and dark brown upperparts to the female."
+    }
+  ],
+  "research": {
+    "confidence": "medium",
+    "needsReview": false,
+    "note": "Newman calls it a fairly common resident, so status is resident and all twelve months are listed. White underparts are described in the pattern rather than split into breast and belly tokens. Population figures and the Kemp code RB were left unchanged."
+  },
+  "status": "resident",
+  "monthsPresent": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+  ]
 }
