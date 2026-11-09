@@ -1746,6 +1746,16 @@
         }
       ]
     },
+    "himantopus-himantopus": {
+      "calls": [
+        {
+          "index": 0,
+          "quality": {
+            "xeno-canto/XC277591": "A"
+          }
+        }
+      ]
+    },
     "hippolais-icterina": {
       "calls": [
         {
@@ -2396,6 +2406,16 @@
           "index": 0,
           "quality": {
             "xeno-canto/XC321255": "B"
+          }
+        }
+      ]
+    },
+    "recurvirostra-avosetta": {
+      "calls": [
+        {
+          "index": 0,
+          "quality": {
+            "xeno-canto/XC376940": "A"
           }
         }
       ]

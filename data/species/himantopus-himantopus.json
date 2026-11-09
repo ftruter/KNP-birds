@@ -7,8 +7,42 @@
     "af": "Rooipootelsie"
   },
   "family": "recurvirostridae",
-  "summary": "The details for this species have not been published yet.",
-  "sampleData": true,
+  "size": {
+    "lengthCm": {
+      "min": 38,
+      "max": 38
+    },
+    "note": "Newman's Birds gives 38 cm."
+  },
+  "habitat": "Individuals, pairs or flocks at inland pans, dams and vleis, especially sewage ponds, and at coastal lagoons and estuaries. It wades in the shallows with the legs well immersed.",
+  "summary": "A common resident. A pied waterbird with a long straight bill and very long red legs, conspicuous at rest and in flight. The adult may have a dusky crown. The immature is even duskier about the head. The call, often given in flight, is a loud kik-kik-kik-kik-kik or kyik. The Kemp name Blackwinged Stilt and the code VB were left unchanged.",
+  "sampleData": false,
+  "similar": [
+    {
+      "slug": "recurvirostra-avosetta",
+      "note": "Pied Avocet has a thin upturned black bill. Black-winged Stilt has a long straight bill and very long red legs."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Black-winged Stilt",
+      "url": "https://newmansbirds.com/birds/black-winged-stilt/",
+      "publisher": "Newman's Birds",
+      "year": 2026
+    },
+    {
+      "title": "Avibase bird checklist — Kruger National Park",
+      "url": "https://avibase.bsc-eoc.org/checklist.jsp?region=ZA000003",
+      "publisher": "Avibase",
+      "year": null
+    },
+    {
+      "title": "Kemp A.C., Herholdt J.J., Whyte I. & Harrison J. (2001). Birds of the two largest national parks in South Africa: a method to generate estimates of population size for all species and assess their conservation ecology. S. Afr. J. Sci. 97: 393–403.",
+      "url": "https://journals.co.za/doi/pdf/10.10520/EJC97367",
+      "publisher": "South African Journal of Science",
+      "year": 2001
+    }
+  ],
   "population": {
     "estimate": {
       "low": 16,
@@ -35,8 +69,193 @@
     },
     "tierApplied": "D"
   },
-  "variants": [],
-  "viewNotes": [],
-  "calls": [],
-  "images": []
+  "variants": [
+    {
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "marks": {
+        "bill": {
+          "colour": null,
+          "shape": "Long and straight."
+        },
+        "eye": {
+          "iris": null,
+          "ring": null
+        },
+        "legs": {
+          "colour": "red"
+        },
+        "head": {
+          "crown": null,
+          "face": null,
+          "throat": null,
+          "pattern": "Pied. The adult may have a dusky crown. Newman does not name the dusky colour."
+        },
+        "upperparts": {
+          "back": "black",
+          "rump": null,
+          "pattern": "Black-and-white plumage."
+        },
+        "underparts": {
+          "breast": "white",
+          "belly": "white",
+          "pattern": "White underparts."
+        },
+        "wings": {
+          "above": "black",
+          "below": null,
+          "pattern": "Black-and-white, conspicuous in flight."
+        },
+        "tail": {
+          "colour": null,
+          "shape": null
+        }
+      }
+    },
+    {
+      "age": "immature",
+      "sex": "any",
+      "season": "any",
+      "marks": {
+        "bill": {
+          "colour": null,
+          "shape": null
+        },
+        "eye": {
+          "iris": null,
+          "ring": null
+        },
+        "legs": {
+          "colour": null
+        },
+        "head": {
+          "crown": null,
+          "face": null,
+          "throat": null,
+          "pattern": "Even duskier about the head than the adult. Newman does not name the duskier colour."
+        },
+        "upperparts": {
+          "back": null,
+          "rump": null,
+          "pattern": null
+        },
+        "underparts": {
+          "breast": null,
+          "belly": null,
+          "pattern": null
+        },
+        "wings": {
+          "above": null,
+          "below": null,
+          "pattern": null
+        },
+        "tail": {
+          "colour": null,
+          "shape": null
+        }
+      }
+    }
+  ],
+  "viewNotes": [
+    {
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Black-and-white, with a long straight bill and very long red legs."
+    },
+    {
+      "view": "perched-front",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "White underparts and a long straight bill. The crown may be dusky."
+    },
+    {
+      "view": "perched-back",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Black upper parts and wings."
+    },
+    {
+      "view": "flight-above",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Black-and-white plumage is conspicuous in flight."
+    },
+    {
+      "view": "flight-below",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "The underwing colour was not named separately. The black-and-white plumage is conspicuous in flight."
+    },
+    {
+      "view": "perched-side",
+      "age": "immature",
+      "sex": "any",
+      "season": "any",
+      "note": "Duskier about the head than the adult."
+    }
+  ],
+  "calls": [
+    {
+      "sex": "any",
+      "type": "call",
+      "description": "A loud kik-kik-kik-kik-kik or kyik, often given in flight. Grade A flight call from Port Elizabeth, Eastern Cape. The filename is XC277591-black-winged stilts.mp3.",
+      "recordings": [
+        {
+          "key": "xeno-canto/XC277591",
+          "source": "https://xeno-canto.org/277591",
+          "fileUrl": "https://xeno-canto.org/sounds/uploaded/SGLTZLDXYI/XC277591-black-winged%20stilts.mp3",
+          "author": "Lynette Rudman",
+          "license": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ]
+    }
+  ],
+  "images": [
+    {
+      "key": "himantopus-himantopus/side.jpg",
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "source": "https://www.inaturalist.org/observations/17207329",
+      "fileUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/26082930/large.jpeg",
+      "author": "copper",
+      "license": "CC BY-NC 4.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+      "aiGenerated": false,
+      "hosted": false,
+      "alt": "Black-winged Stilt at Grootvlei, Kruger, black and white, sitting so the legs are hidden",
+      "caption": "Black-winged Stilt at Grootvlei dam, Kruger, black and white, with a long bill. It is sitting, so the red legs are not visible."
+    }
+  ],
+  "research": {
+    "confidence": "medium",
+    "needsReview": true,
+    "note": "Newman calls it a common resident, and Avibase does not mark it rare, so all twelve months are listed. Dusky is not stored as a colour. The grade A flight call is from Port Elizabeth. The Kruger photograph does not show the legs. The Kemp code VB was left unchanged."
+  },
+  "status": "resident",
+  "monthsPresent": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+  ]
 }

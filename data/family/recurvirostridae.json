@@ -6,8 +6,8 @@
     "en": "Stilts and avocets",
     "af": "Elsies"
   },
-  "summary": "Field notes for this family are still to be written.",
-  "sampleData": true,
+  "summary": "Stilts and avocets. Black-winged Stilt is the pied wader with a straight bill and very long red legs. Pied Avocet is the pied wader with a thin upturned bill. Newman’s identification line says the avocet’s legs are white, and the description does not repeat that.",
+  "sampleData": false,
   "species": [
     {
       "slug": "himantopus-himantopus",
