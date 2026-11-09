@@ -4221,14 +4221,48 @@
       "slug": "caprimulgus-europaeus",
       "scientificName": "Caprimulgus europaeus",
       "commonName": "European Nightjar",
-      "images": [],
-      "recordings": [],
+      "images": [
+        {
+          "key": "caprimulgus-europaeus/side.jpg",
+          "author": "Niall Perrins",
+          "licence": "CC BY-NC 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+          "sourceUrl": "https://www.inaturalist.org/observations/95846812",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ],
+      "recordings": [
+        {
+          "key": "xeno-canto/XC1019309",
+          "author": "David Boyle",
+          "licence": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "sourceUrl": "https://xeno-canto.org/1019309",
+          "aiGenerated": false,
+          "hosted": false,
+          "quality": "A",
+          "callType": "call"
+        }
+      ],
       "sources": [
         {
           "title": "Kemp A.C., Herholdt J.J., Whyte I. & Harrison J. (2001). Birds of the two largest national parks in South Africa: a method to generate estimates of population size for all species and assess their conservation ecology. S. Afr. J. Sci. 97: 393–403.",
           "url": "https://journals.co.za/doi/pdf/10.10520/EJC97367",
           "publisher": "South African Journal of Science",
           "year": 2001
+        },
+        {
+          "title": "European nightjar",
+          "url": "https://en.wikipedia.org/wiki/European_nightjar",
+          "publisher": "Wikipedia",
+          "year": 2026
+        },
+        {
+          "title": "European Nightjar",
+          "url": "http://sabap2.adu.org.za/docs/sabap1/404.pdf",
+          "publisher": "The Atlas of Southern African Birds",
+          "year": 1997
         }
       ]
     },
@@ -4236,14 +4270,48 @@
       "slug": "caprimulgus-fossii",
       "scientificName": "Caprimulgus fossii",
       "commonName": "Square-tailed Nightjar",
-      "images": [],
-      "recordings": [],
+      "images": [
+        {
+          "key": "caprimulgus-fossii/wing.jpg",
+          "author": "Alex Rebelo",
+          "licence": "CC BY-NC 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+          "sourceUrl": "https://www.inaturalist.org/observations/147111870",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ],
+      "recordings": [
+        {
+          "key": "xeno-canto/XC513152",
+          "author": "Derek Solomon",
+          "licence": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "sourceUrl": "https://xeno-canto.org/513152",
+          "aiGenerated": false,
+          "hosted": false,
+          "quality": "A",
+          "callType": "call"
+        }
+      ],
       "sources": [
         {
           "title": "Kemp A.C., Herholdt J.J., Whyte I. & Harrison J. (2001). Birds of the two largest national parks in South Africa: a method to generate estimates of population size for all species and assess their conservation ecology. S. Afr. J. Sci. 97: 393–403.",
           "url": "https://journals.co.za/doi/pdf/10.10520/EJC97367",
           "publisher": "South African Journal of Science",
           "year": 2001
+        },
+        {
+          "title": "Square-tailed nightjar",
+          "url": "https://en.wikipedia.org/wiki/Square-tailed_nightjar",
+          "publisher": "Wikipedia",
+          "year": 2026
+        },
+        {
+          "title": "Mozambique Nightjar",
+          "url": "http://sabap2.adu.org.za/docs/sabap1/409.pdf",
+          "publisher": "The Atlas of Southern African Birds",
+          "year": 1997
         }
       ]
     },
@@ -4251,14 +4319,48 @@
       "slug": "caprimulgus-pectoralis",
       "scientificName": "Caprimulgus pectoralis",
       "commonName": "Fiery-necked Nightjar",
-      "images": [],
-      "recordings": [],
+      "images": [
+        {
+          "key": "caprimulgus-pectoralis/side.jpg",
+          "author": "Tony Rebelo",
+          "licence": "CC BY-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+          "sourceUrl": "https://www.inaturalist.org/observations/84565080",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ],
+      "recordings": [
+        {
+          "key": "xeno-canto/XC662460",
+          "author": "Tony Archer",
+          "licence": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "sourceUrl": "https://xeno-canto.org/662460",
+          "aiGenerated": false,
+          "hosted": false,
+          "quality": "A",
+          "callType": "call"
+        }
+      ],
       "sources": [
         {
           "title": "Kemp A.C., Herholdt J.J., Whyte I. & Harrison J. (2001). Birds of the two largest national parks in South Africa: a method to generate estimates of population size for all species and assess their conservation ecology. S. Afr. J. Sci. 97: 393–403.",
           "url": "https://journals.co.za/doi/pdf/10.10520/EJC97367",
           "publisher": "South African Journal of Science",
           "year": 2001
+        },
+        {
+          "title": "Fiery-necked nightjar",
+          "url": "https://en.wikipedia.org/wiki/Fiery-necked_nightjar",
+          "publisher": "Wikipedia",
+          "year": 2026
+        },
+        {
+          "title": "Fierynecked Nightjar",
+          "url": "http://sabap2.adu.org.za/docs/sabap1/405.pdf",
+          "publisher": "The Atlas of Southern African Birds",
+          "year": 1997
         }
       ]
     },
@@ -4266,14 +4368,48 @@
       "slug": "caprimulgus-rufigena",
       "scientificName": "Caprimulgus rufigena",
       "commonName": "Rufous-cheeked Nightjar",
-      "images": [],
-      "recordings": [],
+      "images": [
+        {
+          "key": "caprimulgus-rufigena/side.jpg",
+          "author": "Ernest Porter",
+          "licence": "CC BY-NC 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+          "sourceUrl": "https://www.inaturalist.org/observations/10955586",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ],
+      "recordings": [
+        {
+          "key": "xeno-canto/XC625641",
+          "author": "Tony Archer",
+          "licence": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "sourceUrl": "https://xeno-canto.org/625641",
+          "aiGenerated": false,
+          "hosted": false,
+          "quality": "A",
+          "callType": "call"
+        }
+      ],
       "sources": [
         {
           "title": "Kemp A.C., Herholdt J.J., Whyte I. & Harrison J. (2001). Birds of the two largest national parks in South Africa: a method to generate estimates of population size for all species and assess their conservation ecology. S. Afr. J. Sci. 97: 393–403.",
           "url": "https://journals.co.za/doi/pdf/10.10520/EJC97367",
           "publisher": "South African Journal of Science",
           "year": 2001
+        },
+        {
+          "title": "Rufous-cheeked nightjar",
+          "url": "https://en.wikipedia.org/wiki/Rufous-cheeked_nightjar",
+          "publisher": "Wikipedia",
+          "year": 2026
+        },
+        {
+          "title": "Rufouscheeked Nightjar",
+          "url": "http://sabap2.adu.org.za/docs/sabap1/406.pdf",
+          "publisher": "The Atlas of Southern African Birds",
+          "year": 1997
         }
       ]
     },
@@ -4281,14 +4417,48 @@
       "slug": "caprimulgus-tristigma",
       "scientificName": "Caprimulgus tristigma",
       "commonName": "Freckled Nightjar",
-      "images": [],
-      "recordings": [],
+      "images": [
+        {
+          "key": "caprimulgus-tristigma/side.jpg",
+          "author": "Duncan McKenzie",
+          "licence": "CC BY-NC 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+          "sourceUrl": "https://www.inaturalist.org/observations/196403546",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ],
+      "recordings": [
+        {
+          "key": "xeno-canto/XC793333",
+          "author": "Ehren Eksteen",
+          "licence": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "sourceUrl": "https://xeno-canto.org/793333",
+          "aiGenerated": false,
+          "hosted": false,
+          "quality": "A",
+          "callType": "call"
+        }
+      ],
       "sources": [
         {
           "title": "Kemp A.C., Herholdt J.J., Whyte I. & Harrison J. (2001). Birds of the two largest national parks in South Africa: a method to generate estimates of population size for all species and assess their conservation ecology. S. Afr. J. Sci. 97: 393–403.",
           "url": "https://journals.co.za/doi/pdf/10.10520/EJC97367",
           "publisher": "South African Journal of Science",
           "year": 2001
+        },
+        {
+          "title": "Freckled nightjar",
+          "url": "https://en.wikipedia.org/wiki/Freckled_nightjar",
+          "publisher": "Wikipedia",
+          "year": 2026
+        },
+        {
+          "title": "Freckled Nightjar",
+          "url": "http://sabap2.adu.org.za/docs/sabap1/408.pdf",
+          "publisher": "The Atlas of Southern African Birds",
+          "year": 1997
         }
       ]
     },
@@ -4296,14 +4466,48 @@
       "slug": "caprimulgus-vexillarius",
       "scientificName": "Caprimulgus vexillarius",
       "commonName": "Pennant-winged Nightjar",
-      "images": [],
-      "recordings": [],
+      "images": [
+        {
+          "key": "caprimulgus-vexillarius/flight.jpg",
+          "author": "Justin Ponder",
+          "licence": "CC BY 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by/4.0/",
+          "sourceUrl": "https://www.inaturalist.org/observations/39745493",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ],
+      "recordings": [
+        {
+          "key": "xeno-canto/XC682094",
+          "author": "Dries Van de Loock",
+          "licence": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "sourceUrl": "https://xeno-canto.org/682094",
+          "aiGenerated": false,
+          "hosted": false,
+          "quality": "A",
+          "callType": "call"
+        }
+      ],
       "sources": [
         {
           "title": "Kemp A.C., Herholdt J.J., Whyte I. & Harrison J. (2001). Birds of the two largest national parks in South Africa: a method to generate estimates of population size for all species and assess their conservation ecology. S. Afr. J. Sci. 97: 393–403.",
           "url": "https://journals.co.za/doi/pdf/10.10520/EJC97367",
           "publisher": "South African Journal of Science",
           "year": 2001
+        },
+        {
+          "title": "Pennant-winged nightjar",
+          "url": "https://en.wikipedia.org/wiki/Pennant-winged_nightjar",
+          "publisher": "Wikipedia",
+          "year": 2026
+        },
+        {
+          "title": "Pennantwinged Nightjar",
+          "url": "http://sabap2.adu.org.za/docs/sabap1/410.pdf",
+          "publisher": "The Atlas of Southern African Birds",
+          "year": 1997
         }
       ]
     },

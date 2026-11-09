@@ -7,8 +7,38 @@
     "af": "Wimpelvlerknaguil"
   },
   "family": "caprimulgidae",
-  "summary": "The details for this species have not been published yet.",
-  "sampleData": true,
+  "status": "intra-african-migrant",
+  "monthsPresent": [
+    9,
+    10,
+    11,
+    12,
+    1,
+    2
+  ],
+  "habitat": "Broad-leaved woodland, including miombo and mopane, with light leaf litter. SABAP1 says that in the Transvaal lowveld it uses sandveld and mixed woodland and is absent from mopane. It is a breeding migrant, mostly September to February.",
+  "summary": "A breeding migrant. The male has a broad white band across otherwise black primaries. In the breeding season he grows a long second primary, the pennant, which can reach twice the body length and is dropped or broken off soon after breeding. The female plumage was not described in the texts used. SABAP1 says most birds occur from September to February.",
+  "sampleData": false,
+  "similar": [
+    {
+      "slug": "caprimulgus-pectoralis",
+      "note": "Fiery-necked Nightjar shares broad-leaved woodland but has no breeding pennant. The male Pennant-winged Nightjar shows a white band across black primaries and, in the breeding season, the long pennant."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Pennant-winged nightjar",
+      "url": "https://en.wikipedia.org/wiki/Pennant-winged_nightjar",
+      "publisher": "Wikipedia",
+      "year": 2026
+    },
+    {
+      "title": "Pennantwinged Nightjar",
+      "url": "http://sabap2.adu.org.za/docs/sabap1/410.pdf",
+      "publisher": "The Atlas of Southern African Birds",
+      "year": 1997
+    }
+  ],
   "population": {
     "estimate": {
       "low": 16,
@@ -35,8 +65,171 @@
     },
     "tierApplied": "D"
   },
-  "variants": [],
-  "viewNotes": [],
-  "calls": [],
-  "images": []
+  "variants": [
+    {
+      "age": "adult",
+      "sex": "male",
+      "season": "breeding",
+      "marks": {
+        "bill": {
+          "colour": null,
+          "shape": null
+        },
+        "eye": {
+          "iris": null,
+          "ring": null
+        },
+        "legs": {
+          "colour": null
+        },
+        "head": {
+          "crown": null,
+          "face": null,
+          "throat": null,
+          "pattern": null
+        },
+        "upperparts": {
+          "back": null,
+          "rump": null,
+          "pattern": null
+        },
+        "underparts": {
+          "breast": null,
+          "belly": null,
+          "pattern": null
+        },
+        "wings": {
+          "above": "black",
+          "below": "black",
+          "pattern": "Broad white band over otherwise black primaries, plus a long second-primary pennant, up to twice the body length."
+        },
+        "tail": {
+          "colour": null,
+          "shape": null
+        }
+      }
+    },
+    {
+      "age": "adult",
+      "sex": "male",
+      "season": "non-breeding",
+      "marks": {
+        "bill": {
+          "colour": null,
+          "shape": null
+        },
+        "eye": {
+          "iris": null,
+          "ring": null
+        },
+        "legs": {
+          "colour": null
+        },
+        "head": {
+          "crown": null,
+          "face": null,
+          "throat": null,
+          "pattern": null
+        },
+        "upperparts": {
+          "back": null,
+          "rump": null,
+          "pattern": null
+        },
+        "underparts": {
+          "breast": null,
+          "belly": null,
+          "pattern": null
+        },
+        "wings": {
+          "above": "black",
+          "below": "black",
+          "pattern": "Broad white band over otherwise black primaries. The pennant is dropped or broken off after breeding."
+        },
+        "tail": {
+          "colour": null,
+          "shape": null
+        }
+      }
+    }
+  ],
+  "viewNotes": [
+    {
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "The folded wing hides much of the pattern. The breeding male may show the long pennant."
+    },
+    {
+      "view": "perched-front",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "The face pattern was not described."
+    },
+    {
+      "view": "perched-back",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "The back pattern was not described."
+    },
+    {
+      "view": "flight-above",
+      "age": "adult",
+      "sex": "male",
+      "season": "any",
+      "note": "Male: white band on black primaries. Breeding male: the long pennant as well."
+    },
+    {
+      "view": "flight-below",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "The underwing was not described separately from the white band on the black primaries."
+    }
+  ],
+  "calls": [
+    {
+      "sex": "male",
+      "type": "call",
+      "description": "No call was described in the Wikipedia or SABAP1 texts consulted. The file is a grade A call from Mutinondo, Zambia, and the filename says it is a male flight call.",
+      "recordings": [
+        {
+          "key": "xeno-canto/XC682094",
+          "source": "https://xeno-canto.org/682094",
+          "fileUrl": "https://xeno-canto.org/sounds/uploaded/IIJAXHKSCC/XC682094-pennant-winged%20nightjar%20%28male%2Ccall%2Cflight%29%2020211013%2CMutinondo%2CZAMBIA__PB2.mp3",
+          "author": "Dries Van de Loock",
+          "license": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ]
+    }
+  ],
+  "images": [
+    {
+      "key": "caprimulgus-vexillarius/flight.jpg",
+      "view": "flight-below",
+      "age": "adult",
+      "sex": "male",
+      "season": "breeding",
+      "source": "https://www.inaturalist.org/observations/39745493",
+      "fileUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/63088858/large.jpeg",
+      "author": "Justin Ponder",
+      "license": "CC BY 4.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by/4.0/",
+      "aiGenerated": false,
+      "hosted": false,
+      "alt": "Breeding male Pennant-winged Nightjar in flight over Kruger, with long wing pennants and a white wing band",
+      "caption": "Breeding male Pennant-winged Nightjar in flight over Kruger, with long wing pennants and a white wing band"
+    }
+  ],
+  "research": {
+    "confidence": "medium",
+    "needsReview": true,
+    "note": "Newman has no page. Months are September to February. SABAP1 says a few birds may overwinter, but that needs confirmation, so winter months were not added. The female plumage was not described. The pennant is stored as the breeding-male difference. The call text is a gap. The Kemp code VB was left unchanged."
+  }
 }

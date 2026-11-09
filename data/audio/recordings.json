@@ -625,6 +625,66 @@
         }
       ]
     },
+    "caprimulgus-europaeus": {
+      "calls": [
+        {
+          "index": 0,
+          "quality": {
+            "xeno-canto/XC1019309": "A"
+          }
+        }
+      ]
+    },
+    "caprimulgus-fossii": {
+      "calls": [
+        {
+          "index": 0,
+          "quality": {
+            "xeno-canto/XC513152": "A"
+          }
+        }
+      ]
+    },
+    "caprimulgus-pectoralis": {
+      "calls": [
+        {
+          "index": 0,
+          "quality": {
+            "xeno-canto/XC662460": "A"
+          }
+        }
+      ]
+    },
+    "caprimulgus-rufigena": {
+      "calls": [
+        {
+          "index": 0,
+          "quality": {
+            "xeno-canto/XC625641": "A"
+          }
+        }
+      ]
+    },
+    "caprimulgus-tristigma": {
+      "calls": [
+        {
+          "index": 0,
+          "quality": {
+            "xeno-canto/XC793333": "A"
+          }
+        }
+      ]
+    },
+    "caprimulgus-vexillarius": {
+      "calls": [
+        {
+          "index": 0,
+          "quality": {
+            "xeno-canto/XC682094": "A"
+          }
+        }
+      ]
+    },
     "ceblepyris-caesius": {
       "calls": [
         {
