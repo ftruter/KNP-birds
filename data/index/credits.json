@@ -11303,14 +11303,48 @@
       "slug": "gymnoris-superciliaris",
       "scientificName": "Gymnoris superciliaris",
       "commonName": "Yellow-throated Petronia",
-      "images": [],
-      "recordings": [],
+      "images": [
+        {
+          "key": "gymnoris-superciliaris/side.jpg",
+          "author": "Mike King",
+          "licence": "CC BY-NC 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+          "sourceUrl": "https://www.inaturalist.org/observations/103000871",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ],
+      "recordings": [
+        {
+          "key": "xeno-canto/XC421072",
+          "author": "Tony Archer",
+          "licence": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "sourceUrl": "https://xeno-canto.org/421072",
+          "aiGenerated": false,
+          "hosted": false,
+          "quality": "A",
+          "callType": "call"
+        }
+      ],
       "sources": [
         {
           "title": "Kemp A.C., Herholdt J.J., Whyte I. & Harrison J. (2001). Birds of the two largest national parks in South Africa: a method to generate estimates of population size for all species and assess their conservation ecology. S. Afr. J. Sci. 97: 393–403.",
           "url": "https://journals.co.za/doi/pdf/10.10520/EJC97367",
           "publisher": "South African Journal of Science",
           "year": 2001
+        },
+        {
+          "title": "Yellow-throated bush sparrow",
+          "url": "https://en.wikipedia.org/wiki/Yellow-throated_bush_sparrow",
+          "publisher": "Wikipedia",
+          "year": 2026
+        },
+        {
+          "title": "Yellowthroated Sparrow. In Harrison, J.A. et al. (eds). The Atlas of Southern African Birds. Vol. 2.",
+          "url": "http://sabap2.adu.org.za/docs/sabap1/805.pdf",
+          "publisher": "The Atlas of Southern African Birds",
+          "year": 1997
         }
       ]
     },
@@ -16402,14 +16436,42 @@
       "slug": "passer-diffusus",
       "scientificName": "Passer diffusus",
       "commonName": "Southern Grey-headed Sparrow",
-      "images": [],
-      "recordings": [],
+      "images": [
+        {
+          "key": "passer-diffusus/side.jpg",
+          "author": "Ken Harris EntSocVic",
+          "licence": "CC BY-NC 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+          "sourceUrl": "https://www.inaturalist.org/observations/77863492",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ],
+      "recordings": [
+        {
+          "key": "xeno-canto/XC526375",
+          "author": "Derek Solomon",
+          "licence": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "sourceUrl": "https://xeno-canto.org/526375",
+          "aiGenerated": false,
+          "hosted": false,
+          "quality": "A",
+          "callType": "call"
+        }
+      ],
       "sources": [
         {
           "title": "Kemp A.C., Herholdt J.J., Whyte I. & Harrison J. (2001). Birds of the two largest national parks in South Africa: a method to generate estimates of population size for all species and assess their conservation ecology. S. Afr. J. Sci. 97: 393–403.",
           "url": "https://journals.co.za/doi/pdf/10.10520/EJC97367",
           "publisher": "South African Journal of Science",
           "year": 2001
+        },
+        {
+          "title": "Southern Grey-headed Sparrow",
+          "url": "https://newmansbirds.com/birds/southern-grey-headed-sparrow/",
+          "publisher": "Newman's Birds",
+          "year": 2026
         }
       ]
     },
@@ -16417,14 +16479,79 @@
       "slug": "passer-domesticus",
       "scientificName": "Passer domesticus",
       "commonName": "House Sparrow",
-      "images": [],
-      "recordings": [],
+      "images": [
+        {
+          "key": "passer-domesticus/side.jpg",
+          "author": "Sascha Schumann",
+          "licence": "CC BY-NC 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+          "sourceUrl": "https://www.inaturalist.org/observations/227816907",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ],
+      "recordings": [
+        {
+          "key": "xeno-canto/XC444806",
+          "author": "Tony Archer",
+          "licence": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "sourceUrl": "https://xeno-canto.org/444806",
+          "aiGenerated": false,
+          "hosted": false,
+          "quality": "A",
+          "callType": "call"
+        }
+      ],
       "sources": [
         {
           "title": "Kemp A.C., Herholdt J.J., Whyte I. & Harrison J. (2001). Birds of the two largest national parks in South Africa: a method to generate estimates of population size for all species and assess their conservation ecology. S. Afr. J. Sci. 97: 393–403.",
           "url": "https://journals.co.za/doi/pdf/10.10520/EJC97367",
           "publisher": "South African Journal of Science",
           "year": 2001
+        },
+        {
+          "title": "House Sparrow",
+          "url": "https://newmansbirds.com/birds/house-sparrow/",
+          "publisher": "Newman's Birds",
+          "year": 2026
+        }
+      ]
+    },
+    {
+      "slug": "passer-melanurus",
+      "scientificName": "Passer melanurus",
+      "commonName": "Cape Sparrow",
+      "images": [
+        {
+          "key": "passer-melanurus/side.jpg",
+          "author": "copper",
+          "licence": "CC BY-NC 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+          "sourceUrl": "https://www.inaturalist.org/observations/37605488",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ],
+      "recordings": [
+        {
+          "key": "xeno-canto/XC126129",
+          "author": "Sander Bot",
+          "licence": "CC BY-NC-SA 3.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/3.0/",
+          "sourceUrl": "https://xeno-canto.org/126129",
+          "aiGenerated": false,
+          "hosted": false,
+          "quality": "A",
+          "callType": "call"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Cape Sparrow",
+          "url": "https://newmansbirds.com/birds/cape-sparrow/",
+          "publisher": "Newman's Birds",
+          "year": 2026
         }
       ]
     },

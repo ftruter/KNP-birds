@@ -6,8 +6,8 @@
     "en": "Old World sparrows",
     "af": "Mossies"
   },
-  "summary": "Field notes for this family are still to be written.",
-  "sampleData": true,
+  "summary": "Old World sparrows. Southern Grey-headed Sparrow is the common grey-headed bird of woodland and towns. House Sparrow is the introduced bird of settlements. Cape Sparrow has a black-and-white male head. Yellow-throated Petronia has no Newman plumage account.",
+  "sampleData": false,
   "species": [
     {
       "slug": "gymnoris-superciliaris",

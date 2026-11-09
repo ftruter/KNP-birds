@@ -1,9 +1,9 @@
 {
   "source": "xeno-canto explore catalogue, API v3 recording fields",
   "counts": {
-    "slots": 356,
+    "slots": 360,
     "swapped": 17,
-    "added": 254,
+    "added": 258,
     "kept": 57,
     "none": 28,
     "cleaned": 0
@@ -5375,6 +5375,62 @@
       "locality": "Bushbuckridge (near Sabie Park), Ehlanzeni, Mpumalanga",
       "cleaned": false,
       "license": "CC BY-NC-SA 4.0"
+    },
+    {
+      "slug": "gymnoris-superciliaris",
+      "scientificName": "Gymnoris superciliaris",
+      "index": 0,
+      "type": "call",
+      "action": "added",
+      "from": [],
+      "to": "421072",
+      "quality": "A",
+      "country": "South Africa",
+      "locality": "Klerksdorp, Southern DC, North West",
+      "cleaned": false,
+      "license": "CC BY-NC-SA 4.0"
+    },
+    {
+      "slug": "passer-diffusus",
+      "scientificName": "Passer diffusus",
+      "index": 0,
+      "type": "call",
+      "action": "added",
+      "from": [],
+      "to": "526375",
+      "quality": "A",
+      "country": "South Africa",
+      "locality": "Hoedspruit",
+      "cleaned": false,
+      "license": "CC BY-NC-SA 4.0"
+    },
+    {
+      "slug": "passer-domesticus",
+      "scientificName": "Passer domesticus",
+      "index": 0,
+      "type": "call",
+      "action": "added",
+      "from": [],
+      "to": "444806",
+      "quality": "A",
+      "country": "South Africa",
+      "locality": "Klerksdorp, Southern DC, North West",
+      "cleaned": false,
+      "license": "CC BY-NC-SA 4.0"
+    },
+    {
+      "slug": "passer-melanurus",
+      "scientificName": "Passer melanurus",
+      "index": 0,
+      "type": "call",
+      "action": "added",
+      "from": [],
+      "to": "126129",
+      "quality": "A",
+      "country": "South Africa",
+      "locality": "Benfontijn Gamereserve, Lejweleputswa, Free State",
+      "cleaned": false,
+      "license": "CC BY-NC-SA 3.0"
     }
   ]
 }
