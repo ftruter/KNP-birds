@@ -7,8 +7,63 @@
     "af": "Palmwindswael"
   },
   "family": "apodidae",
-  "summary": "The details for this species have not been published yet.",
-  "sampleData": true,
+  "status": "resident",
+  "monthsPresent": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+  ],
+  "size": {
+    "lengthCm": {
+      "min": 16,
+      "max": 17
+    },
+    "note": "Wikipedia gives 16 cm. Newman's Birds gives 17 cm."
+  },
+  "habitat": "Governed by fan palms, including planted Washingtonia, and also bridges and the eaves of buildings. It forages in flocks around the palms where it roosts and nests, and joins other swifts when feeding.",
+  "summary": "The most slender swift, pale brown or grey-brown, with long swept-back wings and a long, deeply forked tail that is usually held closed. Wikipedia says the sexes are similar and that young birds differ mainly in their shorter tails. The call is a loud shrill scream. It is a resident of the warmer parts of the range, with breeding through the year and a spring and summer peak.",
+  "sampleData": false,
+  "similar": [
+    {
+      "slug": "apus-affinis",
+      "note": "Little Swift is black, with a white rump and a square tail. African Palm Swift is plain pale brown and much more slender, with a long tail."
+    }
+  ],
+  "sources": [
+    {
+      "title": "The Atlas of Southern African Birds, Vol. 1 (Palm Swift)",
+      "url": "https://sabap2.birdmap.africa/docs/sabap1/421.pdf",
+      "publisher": "BirdLife South Africa",
+      "year": 1997
+    },
+    {
+      "title": "African Palm Swift",
+      "url": "https://newmansbirds.com/birds/african-palm-swift/",
+      "publisher": "Newman's Birds",
+      "year": 2026
+    },
+    {
+      "title": "African palm swift",
+      "url": "https://en.wikipedia.org/wiki/African_palm_swift",
+      "publisher": "Wikipedia",
+      "year": 2026
+    },
+    {
+      "title": "Cypsiurus parvus (African palm swift)",
+      "url": "https://www.biodiversityexplorer.info/birds/apodidae/cypsiurus_parvus.htm",
+      "publisher": "Biodiversity Explorer",
+      "year": null
+    }
+  ],
   "population": {
     "estimate": {
       "low": 1024,
@@ -35,8 +90,171 @@
     },
     "tierApplied": "D"
   },
-  "variants": [],
-  "viewNotes": [],
-  "calls": [],
-  "images": []
+  "variants": [
+    {
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "marks": {
+        "bill": {
+          "colour": null,
+          "shape": null
+        },
+        "eye": {
+          "iris": null,
+          "ring": null
+        },
+        "legs": {
+          "colour": null
+        },
+        "head": {
+          "crown": "brown",
+          "face": "brown",
+          "throat": "brown",
+          "pattern": "Entirely grey-brown in Newman, mainly pale brown in Wikipedia. No white rump."
+        },
+        "upperparts": {
+          "back": "brown",
+          "rump": null,
+          "pattern": null
+        },
+        "underparts": {
+          "breast": "brown",
+          "belly": "brown",
+          "pattern": null
+        },
+        "wings": {
+          "above": "brown",
+          "below": "brown",
+          "pattern": "Long swept-back wings. The slim build is the field mark."
+        },
+        "tail": {
+          "colour": "brown",
+          "shape": "long and deeply forked, usually held closed"
+        }
+      }
+    },
+    {
+      "age": "juvenile",
+      "sex": "any",
+      "season": "any",
+      "marks": {
+        "bill": {
+          "colour": null,
+          "shape": null
+        },
+        "eye": {
+          "iris": null,
+          "ring": null
+        },
+        "legs": {
+          "colour": null
+        },
+        "head": {
+          "crown": "brown",
+          "face": "brown",
+          "throat": "brown",
+          "pattern": null
+        },
+        "upperparts": {
+          "back": "brown",
+          "rump": null,
+          "pattern": null
+        },
+        "underparts": {
+          "breast": "brown",
+          "belly": "brown",
+          "pattern": null
+        },
+        "wings": {
+          "above": "brown",
+          "below": "brown",
+          "pattern": null
+        },
+        "tail": {
+          "colour": "brown",
+          "shape": "shorter than the adult tail"
+        }
+      }
+    }
+  ],
+  "viewNotes": [
+    {
+      "view": "flight-below",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Plain pale brown from below, with no white rump. The tail is usually held closed, so the deep fork is hidden."
+    },
+    {
+      "view": "flight-above",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Plain grey-brown above. The long narrow wings and long tail are the shape."
+    },
+    {
+      "view": "flight-side",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "The slimmest swift, with a very long tail."
+    },
+    {
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Clings to a palm frond beside the feather nest. The tail hangs down and looks closed."
+    },
+    {
+      "view": "perched-front",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Swifts cling to a vertical surface. They do not settle on the ground, and a normal perched view is not described. No white throat is described."
+    }
+  ],
+  "calls": [
+    {
+      "sex": "any",
+      "type": "call",
+      "description": "A loud shrill scream. Wikipedia says the sexes are similar and does not separate the call. Grade A, North West. The filename says P Swift.",
+      "recordings": [
+        {
+          "key": "xeno-canto/XC710191",
+          "source": "https://xeno-canto.org/710191",
+          "fileUrl": "https://xeno-canto.org/sounds/uploaded/HMBDEWEZVS/XC710191-4%20P%20Swift.mp3",
+          "author": "Tony Archer",
+          "license": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ]
+    }
+  ],
+  "images": [
+    {
+      "key": "cypsiurus-parvus/mopani-palm.jpg",
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "source": "https://www.inaturalist.org/observations/196267221",
+      "fileUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/345496892/large.jpg",
+      "author": "Duncan McKenzie",
+      "license": "CC BY-NC 4.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+      "aiGenerated": false,
+      "hosted": false,
+      "alt": "African Palm Swift clinging to a palm frond in Mopani, Kruger, beside a feather nest",
+      "caption": "African Palm Swift clinging to a palm frond in Mopani, Kruger, beside a feather nest"
+    }
+  ],
+  "research": {
+    "confidence": "medium",
+    "needsReview": false,
+    "note": "Status is resident and all twelve months are listed. SABAP1 says breeding runs through the year in the warmer parts, with spring and summer peaks, and that migration is not the pattern of most populations. A flight photograph and chick down were not used. The young bird is stored only as shorter-tailed. The call is grade A from North West."
+  }
 }

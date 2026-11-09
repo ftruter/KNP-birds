@@ -7,8 +7,45 @@
     "af": "Rooibeksysie"
   },
   "family": "estrildidae",
-  "summary": "The details for this species have not been published yet.",
-  "sampleData": true,
+  "status": "resident",
+  "size": {
+    "lengthCm": {
+      "min": 13,
+      "max": 13
+    },
+    "note": "Newman's Birds gives 13 cm."
+  },
+  "monthsPresent": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+  ],
+  "habitat": "Small or large flocks on grassy riverbanks, in reed beds and vleis, and in rank vegetation beside cultivated land.",
+  "summary": "A common resident. Red bill, red facial skin and a red central belly, with brown barring below. The immature has a blackish bill. The call is chik-chik-ZEEE, descending on the third syllable. It is the main host of the Pin-tailed Whydah. The sexes are not separated in the text. The Kemp code RB was left unchanged.",
+  "sampleData": false,
+  "similar": [
+    {
+      "slug": "amandava-subflava",
+      "note": "Orange-breasted Waxbill is yellow below, with an orange undertail and a red rump. Common Waxbill has a red central belly and brown barring."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Common Waxbill",
+      "url": "https://newmansbirds.com/birds/common-waxbill/",
+      "publisher": "Newman's Birds",
+      "year": 2026
+    }
+  ],
   "population": {
     "estimate": {
       "low": 4096,
@@ -35,8 +72,171 @@
     },
     "tierApplied": "D"
   },
-  "variants": [],
-  "viewNotes": [],
-  "calls": [],
-  "images": []
+  "variants": [
+    {
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "marks": {
+        "bill": {
+          "colour": "red",
+          "shape": null
+        },
+        "eye": {
+          "iris": null,
+          "ring": null
+        },
+        "legs": {
+          "colour": null
+        },
+        "head": {
+          "crown": null,
+          "face": "red",
+          "throat": null,
+          "pattern": "Red facial skin."
+        },
+        "upperparts": {
+          "back": null,
+          "rump": null,
+          "pattern": null
+        },
+        "underparts": {
+          "breast": null,
+          "belly": "red",
+          "pattern": "Red central belly. Brown-barred below."
+        },
+        "wings": {
+          "above": null,
+          "below": null,
+          "pattern": null
+        },
+        "tail": {
+          "colour": null,
+          "shape": null
+        }
+      }
+    },
+    {
+      "age": "immature",
+      "sex": "any",
+      "season": "any",
+      "marks": {
+        "bill": {
+          "colour": "black",
+          "shape": "Blackish."
+        },
+        "eye": {
+          "iris": null,
+          "ring": null
+        },
+        "legs": {
+          "colour": null
+        },
+        "head": {
+          "crown": null,
+          "face": null,
+          "throat": null,
+          "pattern": null
+        },
+        "upperparts": {
+          "back": null,
+          "rump": null,
+          "pattern": null
+        },
+        "underparts": {
+          "breast": null,
+          "belly": null,
+          "pattern": null
+        },
+        "wings": {
+          "above": null,
+          "below": null,
+          "pattern": null
+        },
+        "tail": {
+          "colour": null,
+          "shape": null
+        }
+      }
+    }
+  ],
+  "viewNotes": [
+    {
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Red bill and red mask, with a red central belly and brown barring below."
+    },
+    {
+      "view": "perched-front",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Red face and red central belly."
+    },
+    {
+      "view": "perched-back",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "The upper parts were not given a separate colour."
+    },
+    {
+      "view": "flight-above",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Flocks fly off in a straggling line. A wing pattern was not described."
+    },
+    {
+      "view": "flight-below",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Brown barring below and a red central belly."
+    }
+  ],
+  "calls": [
+    {
+      "sex": "any",
+      "type": "call",
+      "description": "chik-chik-ZEEE, chik-chik-ZEEE, descending on the third syllable. Grade A call from near Cape Town. The filename is generic and shows a 250 Hz high-pass. It was not cleaned again.",
+      "recordings": [
+        {
+          "key": "xeno-canto/XC1087071",
+          "source": "https://xeno-canto.org/1087071",
+          "fileUrl": "https://xeno-canto.org/sounds/uploaded/YSGTQVRQZI/XC1087071-20260305_BV_AKaramitsos_XA60_A017C156_2603058X_SLE_250HP_-3dB.mp3",
+          "author": "African Bioacoustics Community",
+          "license": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ]
+    }
+  ],
+  "images": [
+    {
+      "key": "estrilda-astrild/side.jpg",
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "source": "https://www.inaturalist.org/observations/328097941",
+      "fileUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/594450390/large.jpg",
+      "author": "Liam Huber",
+      "license": "CC BY-NC 4.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+      "aiGenerated": false,
+      "hosted": false,
+      "alt": "Common Waxbill in Kruger",
+      "caption": "Common Waxbill in the Ehlanzeni district."
+    }
+  ],
+  "research": {
+    "confidence": "medium",
+    "needsReview": false,
+    "note": "Status is resident and all twelve months are listed. Newman does not separate the sexes. Population figures were left unchanged."
+  }
 }

@@ -7,8 +7,63 @@
     "af": "Witpenswindswael"
   },
   "family": "apodidae",
-  "summary": "The details for this species have not been published yet.",
-  "sampleData": true,
+  "status": "resident",
+  "monthsPresent": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+  ],
+  "size": {
+    "lengthCm": {
+      "min": 20,
+      "max": 23
+    },
+    "note": "Wikipedia gives 20–22 cm and also about 20–23 cm. Newman’s size field was blank. The southern race africanus is described as smaller than the nominate."
+  },
+  "habitat": "Forages from just above the ground to great height over any vegetation. Breeds in dry cracks in overhanging cliffs and, recently, on tall buildings and grain silos. Kruger birds are ranging foragers rather than cliff nesters.",
+  "summary": "Much the largest swift in the region, with a white throat and a white belly separated by a dark breast band. The upperparts are olive-brown, and the southern race africanus is blacker with a smaller throat patch. The tail fork is shallow and the flight is slower and more powerful than that of the smaller swifts, with an audible swish of the wings. Juveniles are similar, with pale-edged feathers. The call is a drawn-out twittering.",
+  "sampleData": false,
+  "similar": [
+    {
+      "slug": "apus-apus",
+      "note": "Common Swift is about half the bulk and lacks the white belly. Alpine Swift shows a dark breast band between a white throat and a white belly."
+    }
+  ],
+  "sources": [
+    {
+      "title": "The Atlas of Southern African Birds, Vol. 1 (Alpine Swift)",
+      "url": "https://sabap2.birdmap.africa/docs/sabap1/418.pdf",
+      "publisher": "BirdLife South Africa",
+      "year": 1997
+    },
+    {
+      "title": "Alpine Swift",
+      "url": "https://newmansbirds.com/birds/alpine-swift/",
+      "publisher": "Newman's Birds",
+      "year": 2026
+    },
+    {
+      "title": "Alpine swift",
+      "url": "https://en.wikipedia.org/wiki/Alpine_swift",
+      "publisher": "Wikipedia",
+      "year": 2026
+    },
+    {
+      "title": "Tachymarptis melba (Alpine swift)",
+      "url": "https://www.biodiversityexplorer.info/birds/apodidae/tachymarptis_melba.htm",
+      "publisher": "Biodiversity Explorer",
+      "year": null
+    }
+  ],
   "population": {
     "estimate": {
       "low": 256,
@@ -35,8 +90,171 @@
     },
     "tierApplied": "D"
   },
-  "variants": [],
-  "viewNotes": [],
-  "calls": [],
-  "images": []
+  "variants": [
+    {
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "marks": {
+        "bill": {
+          "colour": null,
+          "shape": null
+        },
+        "eye": {
+          "iris": null,
+          "ring": null
+        },
+        "legs": {
+          "colour": null
+        },
+        "head": {
+          "crown": "olive",
+          "face": "olive",
+          "throat": "white",
+          "pattern": "White throat, often hard to see, smaller in the southern race africanus."
+        },
+        "upperparts": {
+          "back": "olive",
+          "rump": null,
+          "pattern": "Olive-brown upperparts. The race africanus is blacker."
+        },
+        "underparts": {
+          "breast": "dark-brown",
+          "belly": "white",
+          "pattern": "A dark breast band separates the white throat from the oval white belly."
+        },
+        "wings": {
+          "above": "olive",
+          "below": "white",
+          "pattern": "Broad wings. Wing tips look blacker. From below the white belly is the mark, not a white underwing."
+        },
+        "tail": {
+          "colour": "dark-brown",
+          "shape": "shallow fork"
+        }
+      }
+    },
+    {
+      "age": "juvenile",
+      "sex": "any",
+      "season": "any",
+      "marks": {
+        "bill": {
+          "colour": null,
+          "shape": null
+        },
+        "eye": {
+          "iris": null,
+          "ring": null
+        },
+        "legs": {
+          "colour": null
+        },
+        "head": {
+          "crown": "olive",
+          "face": "olive",
+          "throat": "white",
+          "pattern": null
+        },
+        "upperparts": {
+          "back": "olive",
+          "rump": null,
+          "pattern": "Feathers are pale-edged."
+        },
+        "underparts": {
+          "breast": "dark-brown",
+          "belly": "white",
+          "pattern": null
+        },
+        "wings": {
+          "above": "olive",
+          "below": "white",
+          "pattern": null
+        },
+        "tail": {
+          "colour": "dark-brown",
+          "shape": "shallow fork"
+        }
+      }
+    }
+  ],
+  "viewNotes": [
+    {
+      "view": "flight-below",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "White belly and a dark breast band. The white throat is often hard to see. The wings make an audible swish."
+    },
+    {
+      "view": "flight-above",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Olive-brown to blacker upperparts, with no white rump. The flight is powerful and slower than the small swifts."
+    },
+    {
+      "view": "flight-side",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Large, with broad wings and a shallow fork. The white belly shows along the underside."
+    },
+    {
+      "view": "perched-front",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Swifts cling to a vertical surface. They do not settle on the ground, and a normal perched view is not described. The white throat would show at a cliff crack."
+    },
+    {
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Cliff and building nesters cling in a vertical crack. That view is not the usual one over Kruger."
+    }
+  ],
+  "calls": [
+    {
+      "sex": "any",
+      "type": "call",
+      "description": "A drawn-out twittering. Newman also notes an audible swish of the wings, which is not a voice. The texts do not separate the sexes. Grade A from Switzerland. No playable South African recording under Tachymarptis or Apus melba outranked it.",
+      "recordings": [
+        {
+          "key": "xeno-canto/XC187988",
+          "source": "https://xeno-canto.org/187988",
+          "fileUrl": "https://xeno-canto.org/sounds/uploaded/JPBSNBUUEF/XC187988-Alpine%20Swift.mp3",
+          "author": "Jerome Fischer",
+          "license": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ]
+    }
+  ],
+  "images": [
+    {
+      "key": "tachymarptis-melba/hoedspruit-below.jpg",
+      "view": "flight-below",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "source": "https://www.inaturalist.org/observations/402014797",
+      "fileUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/737946670/large.jpg",
+      "author": "Charlie Spalding",
+      "license": "CC BY-NC 4.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+      "aiGenerated": false,
+      "hosted": false,
+      "alt": "Alpine Swift in flight from below near Hoedspruit, with a white belly and a dark breast band",
+      "caption": "Alpine Swift in flight from below near Hoedspruit, with a white belly and a dark breast band"
+    }
+  ],
+  "research": {
+    "confidence": "medium",
+    "needsReview": false,
+    "note": "Status is resident and all twelve months are listed. SABAP1 says Transvaal reporting is more resident than the partial migration of the Cape and KwaZulu-Natal, and Wikipedia maps the species as present all year in southern Africa as well as receiving non-breeding birds from Europe. A single Kruger absence was not supported. The juvenile is stored only as pale-edged. The call is grade A from Switzerland. Chick down is not described."
+  }
 }

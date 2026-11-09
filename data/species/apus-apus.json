@@ -7,8 +7,51 @@
     "af": "Europese Windswael"
   },
   "family": "apodidae",
-  "summary": "The details for this species have not been published yet.",
-  "sampleData": true,
+  "status": "palearctic-migrant",
+  "monthsPresent": [
+    10,
+    11,
+    12,
+    1,
+    2,
+    3
+  ],
+  "size": {
+    "lengthCm": {
+      "min": 16,
+      "max": 17
+    },
+    "note": "Wikipedia gives 16–17 cm and a wingspan of 38–40 cm."
+  },
+  "habitat": "Forages over open, often semi-arid country, including the Kalahari and Okavango when termites emerge, and also over Kruger. Non-breeding birds roost on the wing.",
+  "summary": "A medium, entirely blackish-brown swift with a short forked tail and very long swept-back wings. A small white or pale grey chin patch is not visible at a distance. It arrives from the north in October in the northern zones and leaves mainly in February and March. The scream has two pitches; Wikipedia says the higher pitch is the female’s. Some birds may remain in the austral winter, but that is not the main pattern.",
+  "sampleData": false,
+  "similar": [
+    {
+      "slug": "apus-barbatus",
+      "note": "African Black Swift is very similar. Under good light the black back contrasts with paler secondary feathers, and the flight is steadier, with short glides. The chin patch of both species is hard to see."
+    }
+  ],
+  "sources": [
+    {
+      "title": "The Atlas of Southern African Birds, Vol. 1 (European Swift)",
+      "url": "https://sabap2.birdmap.africa/docs/sabap1/411.pdf",
+      "publisher": "BirdLife South Africa",
+      "year": 1997
+    },
+    {
+      "title": "Common swift",
+      "url": "https://en.wikipedia.org/wiki/Common_swift",
+      "publisher": "Wikipedia",
+      "year": 2026
+    },
+    {
+      "title": "Apus apus (Common swift)",
+      "url": "https://www.biodiversityexplorer.info/birds/apodidae/apus_apus.htm",
+      "publisher": "Biodiversity Explorer",
+      "year": null
+    }
+  ],
   "population": {
     "estimate": {
       "low": 128,
@@ -35,8 +78,143 @@
     },
     "tierApplied": "D"
   },
-  "variants": [],
-  "viewNotes": [],
-  "calls": [],
-  "images": []
+  "variants": [
+    {
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "marks": {
+        "bill": {
+          "colour": null,
+          "shape": null
+        },
+        "eye": {
+          "iris": null,
+          "ring": null
+        },
+        "legs": {
+          "colour": null
+        },
+        "head": {
+          "crown": "dark-brown",
+          "face": "dark-brown",
+          "throat": [
+            "white",
+            "grey"
+          ],
+          "pattern": "A small white or pale grey chin patch is not visible from a distance."
+        },
+        "upperparts": {
+          "back": "dark-brown",
+          "rump": null,
+          "pattern": null
+        },
+        "underparts": {
+          "breast": "dark-brown",
+          "belly": "dark-brown",
+          "pattern": null
+        },
+        "wings": {
+          "above": "dark-brown",
+          "below": "dark-brown",
+          "pattern": "Very long swept-back wings, crescent-shaped."
+        },
+        "tail": {
+          "colour": "dark-brown",
+          "shape": "short and forked"
+        }
+      }
+    }
+  ],
+  "viewNotes": [
+    {
+      "view": "flight-below",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Blackish brown from below. The pale chin is not visible at a distance."
+    },
+    {
+      "view": "flight-above",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Blackish brown above, with long swept-back wings and a short fork."
+    },
+    {
+      "view": "flight-side",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Crescent-shaped wings and a short forked tail. No white rump."
+    },
+    {
+      "view": "perched-front",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Swifts cling to a vertical surface. They do not settle on the ground, and a normal perched view is not described. The pale chin would be the front mark at a nest, which these birds do not use in southern Africa."
+    },
+    {
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Non-breeding birds roost on the wing, so a perched side view is not the usual Kruger view."
+    }
+  ],
+  "calls": [
+    {
+      "sex": "male",
+      "type": "call",
+      "description": "Wikipedia says the scream has two pitches and that the higher pitch is the female’s, so the lower pitch is the male’s. The catalogue cut is not labelled by sex.",
+      "recordings": []
+    },
+    {
+      "sex": "female",
+      "type": "call",
+      "description": "The higher of the two scream pitches.",
+      "recordings": []
+    },
+    {
+      "sex": "any",
+      "type": "call",
+      "description": "A loud two-pitch scream, often from a screaming party. This grade A cut is from Sweden, the breeding range, and the filename uses the Swedish name tornseglare. No playable South African call was in the catalogue. It is not labelled by sex.",
+      "recordings": [
+        {
+          "key": "xeno-canto/XC27236",
+          "source": "https://xeno-canto.org/27236",
+          "fileUrl": "https://xeno-canto.org/sounds/uploaded/BPSDQEOJWG/Tornseglaresommarflock.mp3",
+          "author": "Patrik Åberg",
+          "license": "CC BY-NC-SA 3.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/3.0/",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ]
+    }
+  ],
+  "images": [
+    {
+      "key": "apus-apus/kruger-below.jpg",
+      "view": "flight-below",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "source": "https://www.inaturalist.org/observations/259180837",
+      "fileUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/465195996/large.jpg",
+      "author": "Ehren",
+      "license": "CC BY-NC 4.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+      "aiGenerated": false,
+      "hosted": false,
+      "alt": "Common Swift in flight from below in Kruger, dark all over, with the chin patch not resolved",
+      "caption": "Common Swift in flight from below in Kruger, dark all over, with the chin patch not resolved"
+    }
+  ],
+  "research": {
+    "confidence": "medium",
+    "needsReview": false,
+    "note": "Status is a Palearctic migrant. SABAP1 gives arrival in October in the northern zones and departure mainly in February and March, so those months are listed. A few may stay in winter. Newman has no species page for this swift. Chick down and a Kruger recording were not found. The grade A call is from Sweden."
+  }
 }

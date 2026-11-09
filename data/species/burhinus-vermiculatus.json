@@ -7,8 +7,45 @@
     "af": "Waterdikkop"
   },
   "family": "burhinidae",
-  "summary": "The details for this species have not been published yet.",
-  "sampleData": true,
+  "status": "resident",
+  "monthsPresent": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+  ],
+  "size": {
+    "lengthCm": {
+      "min": 40,
+      "max": 40
+    },
+    "note": "Newman's Birds gives 40 cm."
+  },
+  "habitat": "Singly or in small groups on the banks of large rivers or lakes where there is fringing vegetation. It rests by day in reeds or under overhanging bushes and becomes active at dusk.",
+  "summary": "A common resident thick-knee of river and lake banks. It is buff with dark streaks, a dark moustachial stripe, and a grey wing-bar edged black. That wing-bar, and the waterside habitat, separate it from the Spotted Thick-knee. The call is a piping, melancholy whee-wheeoo-wheeoo at dusk and at night. The sexes and the immature are not separated in this account.",
+  "sampleData": false,
+  "similar": [
+    {
+      "slug": "burhinus-capensis",
+      "note": "Spotted Thick-knee is heavily spotted above, has no wing-bar, and uses dry open ground rather than river banks."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Water Thick-knee",
+      "url": "https://newmansbirds.com/birds/water-thick-knee/",
+      "publisher": "Newman's Birds",
+      "year": 2026
+    }
+  ],
   "population": {
     "estimate": {
       "low": 1024,
@@ -35,8 +72,128 @@
     },
     "tierApplied": "D"
   },
-  "variants": [],
-  "viewNotes": [],
-  "calls": [],
-  "images": []
+  "variants": [
+    {
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "marks": {
+        "bill": {
+          "colour": null,
+          "shape": null
+        },
+        "eye": {
+          "iris": null,
+          "ring": null
+        },
+        "legs": {
+          "colour": null
+        },
+        "head": {
+          "crown": "buff",
+          "face": "buff",
+          "throat": null,
+          "pattern": "Dark moustachial stripe. Buffy with dark streaks."
+        },
+        "upperparts": {
+          "back": "buff",
+          "rump": null,
+          "pattern": "Buffy with dark streaks."
+        },
+        "underparts": {
+          "breast": "buff",
+          "belly": null,
+          "pattern": "Buffy with dark streaks."
+        },
+        "wings": {
+          "above": "grey",
+          "below": null,
+          "pattern": "Distinctive grey wing-bar edged black."
+        },
+        "tail": {
+          "colour": null,
+          "shape": null
+        }
+      }
+    }
+  ],
+  "viewNotes": [
+    {
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Buffy, dark-streaked thick-knee on a river or lake bank, with a dark moustachial stripe."
+    },
+    {
+      "view": "perched-front",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "The dark moustachial stripe is the front mark. The eye and bill colours were not named."
+    },
+    {
+      "view": "perched-back",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "The grey wing-bar edged black shows along the folded wing."
+    },
+    {
+      "view": "flight-above",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Grey wing-bar edged black."
+    },
+    {
+      "view": "flight-below",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "The underwing was not named."
+    }
+  ],
+  "calls": [
+    {
+      "sex": "any",
+      "type": "call",
+      "description": "A piping, melancholy whee-wheeoo-wheeoo at night and at dusk. The texts do not separate the sexes. Grade A from Kruger, near Skukuza. The filename shows the recordist already applied a 1000 Hz high-pass.",
+      "recordings": [
+        {
+          "key": "xeno-canto/XC1014581",
+          "source": "https://xeno-canto.org/1014581",
+          "fileUrl": "https://xeno-canto.org/sounds/uploaded/ZXMUWLWYYQ/XC1014581-20250708_KNP_MHynes_20250708_174200_SLE_1000HzHP_-3dBNORM.mp3",
+          "author": "Morgyn Hynes",
+          "license": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ]
+    }
+  ],
+  "images": [
+    {
+      "key": "burhinus-vermiculatus/side.jpg",
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "source": "https://www.inaturalist.org/observations/10134373",
+      "fileUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/13978104/large.jpeg",
+      "author": "copper",
+      "license": "CC BY-NC 4.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+      "aiGenerated": false,
+      "hosted": false,
+      "alt": "Water Thick-knee standing side-on on a Kruger riverbank, buff and streaked, with a pale wing bar",
+      "caption": "Water Thick-knee standing side-on on a Kruger riverbank, buff and streaked, with a pale wing bar"
+    }
+  ],
+  "research": {
+    "confidence": "medium",
+    "needsReview": false,
+    "note": "Status is resident and all twelve months are listed. Newman calls it a common resident. The eye, bill and leg colours are not named in this account, so they were left blank. Chick down, a sex difference and a flight photograph are gaps. The call is grade A from Kruger."
+  }
 }

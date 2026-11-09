@@ -6,8 +6,8 @@
     "en": "Swifts",
     "af": "Windswaels"
   },
-  "summary": "Field notes for this family are still to be written.",
-  "sampleData": true,
+  "summary": "Swifts feed on insects in flight and cling to vertical surfaces rather than perching. Kruger has nine species. The Alpine Swift is Tachymarptis melba, formerly placed in Apus. Böhm’s Spinetail is Neafrapus boehmi and the Mottled Spinetail is Telacanthura ussheri.",
+  "sampleData": false,
   "species": [
     {
       "slug": "apus-affinis",

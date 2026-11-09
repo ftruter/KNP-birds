@@ -7,8 +7,45 @@
     "af": "Geelbekrenostervoël"
   },
   "family": "buphagidae",
-  "summary": "The details for this species have not been published yet.",
-  "sampleData": true,
+  "status": "resident",
+  "monthsPresent": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+  ],
+  "size": {
+    "lengthCm": {
+      "min": 22,
+      "max": 22
+    },
+    "note": "Newman's Birds gives 22 cm."
+  },
+  "habitat": "Flocks stay with buffalo, rhinoceros, domestic cattle and donkeys, clinging on while they search the coat.",
+  "summary": "A fairly common, localised oxpecker. The head and upperparts are dark brown, the underparts and rump are yellow-buff, and the heavy bill is yellow with a red tip. The eye is yellow. The tail is longer than the Red-billed Oxpecker’s, and the rump and upper tail coverts are pale. The immature has a dusky brown bill and is duller. The call is a hissing kuss, kuss, higher than the Red-billed Oxpecker.",
+  "sampleData": false,
+  "similar": [
+    {
+      "slug": "buphagus-erythroryncha",
+      "note": "Red-billed Oxpecker has an entirely red bill, a large yellow eye-wattle and no pale rump. Yellow-billed Oxpecker has the heavy yellow bill with a red tip, a pale rump and a longer tail."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Yellow-billed Oxpecker",
+      "url": "https://newmansbirds.com/birds/yellow-billed-oxpecker/",
+      "publisher": "Newman's Birds",
+      "year": 2026
+    }
+  ],
   "population": {
     "estimate": {
       "low": 256,
@@ -35,8 +72,174 @@
     },
     "tierApplied": "D"
   },
-  "variants": [],
-  "viewNotes": [],
-  "calls": [],
-  "images": []
+  "variants": [
+    {
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "marks": {
+        "bill": {
+          "colour": [
+            "yellow",
+            "red"
+          ],
+          "shape": "heavy, yellow with a red tip"
+        },
+        "eye": {
+          "iris": "yellow",
+          "ring": null
+        },
+        "legs": {
+          "colour": null
+        },
+        "head": {
+          "crown": "dark-brown",
+          "face": "dark-brown",
+          "throat": "dark-brown",
+          "pattern": "Entire head dark brown."
+        },
+        "upperparts": {
+          "back": "dark-brown",
+          "rump": "buff",
+          "pattern": "Pale rump and upper tail coverts."
+        },
+        "underparts": {
+          "breast": "buff",
+          "belly": "buff",
+          "pattern": "Yellow-buff underparts."
+        },
+        "wings": {
+          "above": "dark-brown",
+          "below": null,
+          "pattern": null
+        },
+        "tail": {
+          "colour": null,
+          "shape": "longer than the Red-billed Oxpecker"
+        }
+      }
+    },
+    {
+      "age": "juvenile",
+      "sex": "any",
+      "season": "any",
+      "marks": {
+        "bill": {
+          "colour": "dark-brown",
+          "shape": "dusky brown"
+        },
+        "eye": {
+          "iris": null,
+          "ring": null
+        },
+        "legs": {
+          "colour": null
+        },
+        "head": {
+          "crown": "dark-brown",
+          "face": "dark-brown",
+          "throat": "dark-brown",
+          "pattern": "Generally duller than the adult."
+        },
+        "upperparts": {
+          "back": "dark-brown",
+          "rump": "buff",
+          "pattern": null
+        },
+        "underparts": {
+          "breast": "buff",
+          "belly": "buff",
+          "pattern": null
+        },
+        "wings": {
+          "above": null,
+          "below": null,
+          "pattern": null
+        },
+        "tail": {
+          "colour": null,
+          "shape": null
+        }
+      }
+    }
+  ],
+  "viewNotes": [
+    {
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Heavy yellow bill with a red tip, dark brown head and a pale rump, usually on a large mammal."
+    },
+    {
+      "view": "perched-front",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "The yellow-and-red bill and yellow eye are the front marks."
+    },
+    {
+      "view": "perched-back",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Pale rump and upper tail coverts, and a longer tail."
+    },
+    {
+      "view": "flight-above",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Dark brown above, with the pale rump. A separate flight pattern was not named."
+    },
+    {
+      "view": "flight-below",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Yellow-buff underparts. The underwing was not named."
+    }
+  ],
+  "calls": [
+    {
+      "sex": "any",
+      "type": "call",
+      "description": "A hissing kuss, kuss, higher-pitched than the Red-billed Oxpecker. The texts do not separate the sexes. Grade B from Sabie Game Reserve. No playable grade A was listed.",
+      "recordings": [
+        {
+          "key": "xeno-canto/XC756251",
+          "source": "https://xeno-canto.org/756251",
+          "fileUrl": "https://xeno-canto.org/sounds/uploaded/METGCVHSKD/XC756251-Lone-Adult.mp3",
+          "author": "Guy Hausler",
+          "license": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ]
+    }
+  ],
+  "images": [
+    {
+      "key": "buphagus-africanus/side.jpg",
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "source": "https://www.inaturalist.org/observations/253416626",
+      "fileUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/453742261/large.jpeg",
+      "author": "Pavel Shukov",
+      "license": "CC BY-NC 4.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+      "aiGenerated": false,
+      "hosted": false,
+      "alt": "Yellow-billed Oxpecker perched side-on on a giraffe in Kruger, with a yellow bill",
+      "caption": "Yellow-billed Oxpecker perched side-on on a giraffe in Kruger, with a yellow bill"
+    }
+  ],
+  "research": {
+    "confidence": "medium",
+    "needsReview": false,
+    "note": "Status is resident and all twelve months are listed. Newman calls it a fairly common, localised resident. Chick down beyond the duller plumage and dusky bill is not described, and there is no flight photograph. The call is grade B."
+  }
 }

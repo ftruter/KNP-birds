@@ -7,8 +7,44 @@
     "af": "Witborskatakoeroe"
   },
   "family": "campephagidae",
-  "summary": "The details for this species have not been published yet.",
-  "sampleData": true,
+  "status": "resident",
+  "monthsPresent": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+  ],
+  "habitat": "Mature miombo, and also Baikiaea and tall mopane woodland. Breeding birds use extensive, well-developed woodland. In winter, non-breeding birds may use smaller stands, including riparian acacia. It feeds in the canopy and is usually alone or in pairs.",
+  "summary": "An uncommon woodland cuckooshrike. Newman has no page for it. The SABAP1 text describes habitat and movements, not plumage: it is a canopy feeder of tall broad-leaved woodland, overlooked because it is inconspicuous, and in the old Transvaal it is treated as resident with local movements and is most often recorded in winter. Wikipedia adds dry forest and dry savanna, and an insect diet. No plumage description was found in those sources, so the marks were left empty.",
+  "sampleData": false,
+  "similar": [
+    {
+      "slug": "ceblepyris-caesius",
+      "note": "Grey Cuckooshrike is the forest bird and is grey all over. SABAP1 says the two are ecologically separated. This species uses tall woodland."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Whitebreasted Cuckooshrike",
+      "url": "http://sabap2.adu.org.za/docs/sabap1/539.pdf",
+      "publisher": "The Atlas of Southern African Birds",
+      "year": 1997
+    },
+    {
+      "title": "White-breasted cuckooshrike",
+      "url": "https://en.wikipedia.org/wiki/White-breasted_cuckooshrike",
+      "publisher": "Wikipedia",
+      "year": 2026
+    }
+  ],
   "population": {
     "estimate": {
       "low": 16,
@@ -36,7 +72,83 @@
     "tierApplied": "D"
   },
   "variants": [],
-  "viewNotes": [],
-  "calls": [],
-  "images": []
+  "viewNotes": [
+    {
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Plumage was not described in the Newman, SABAP1 or Wikipedia texts consulted. It feeds in the canopy."
+    },
+    {
+      "view": "perched-front",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "The face and bill pattern were not described in those texts."
+    },
+    {
+      "view": "perched-back",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "The back pattern was not described in those texts."
+    },
+    {
+      "view": "flight-above",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "The upperwing in flight was not described in those texts."
+    },
+    {
+      "view": "flight-below",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "The underwing was not described in those texts."
+    }
+  ],
+  "calls": [
+    {
+      "sex": "any",
+      "type": "call",
+      "description": "No call was described in the Newman, SABAP1 or Wikipedia texts consulted. The file is a grade A call from Mutinondo, Zambia. A higher-ranked grade A flight call was not used because its filename says the bird was not seen and the identification was uncertain.",
+      "recordings": [
+        {
+          "key": "xeno-canto/XC660763",
+          "source": "https://xeno-canto.org/660763",
+          "fileUrl": "https://xeno-canto.org/sounds/uploaded/IIJAXHKSCC/XC660763-White-breasted%20Cuckooshrike%20%28call%29%2020201206%2CMutinondo%2CMuchinga%2CZAMBIA.mp3",
+          "author": "Dries Van de Loock",
+          "license": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ]
+    }
+  ],
+  "images": [
+    {
+      "key": "ceblepyris-pectoralis/side.jpg",
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "source": "https://www.inaturalist.org/observations/161765666",
+      "fileUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/279640542/large.jpg",
+      "author": "Niall Perrins",
+      "license": "CC BY-NC 4.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+      "aiGenerated": false,
+      "hosted": false,
+      "alt": "White-breasted Cuckooshrike perched side-on in Kruger woodland",
+      "caption": "White-breasted Cuckooshrike perched side-on in Kruger woodland"
+    }
+  ],
+  "research": {
+    "confidence": "low",
+    "needsReview": true,
+    "note": "Newman has no species page. Habitat and the resident status come from SABAP1, which says Transvaal birds are resident with local winter movements and are most often recorded in winter. All twelve months are listed because that text does not treat it as absent in summer. Plumage and the call were not described in the sources consulted, so no colour marks were stored. The photograph is from Kruger and the caption does not turn its colours into field marks. The call file is grade A from Zambia. The Kemp code VB was left unchanged."
+  }
 }

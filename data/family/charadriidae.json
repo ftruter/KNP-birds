@@ -6,8 +6,8 @@
     "en": "Plovers and lapwings",
     "af": "Strandkiewiete"
   },
-  "summary": "Field notes for this family are still to be written.",
-  "sampleData": true,
+  "summary": "Plovers and lapwings are long-legged birds of shores, sandbanks and short grass. Kruger has eleven. The small plovers include the resident White-fronted, Chestnut-banded, Kittlitz’s and Three-banded Plovers, and the summer visitors Caspian Plover and Common Ringed Plover. The lapwings are the White-crowned, Blacksmith, Crowned, Senegal and African Wattled Lapwings.",
+  "sampleData": false,
   "species": [
     {
       "slug": "anarhynchus-asiaticus",

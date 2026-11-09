@@ -6,8 +6,8 @@
     "en": "Hornbills",
     "af": "Neushoringvoëls"
   },
-  "summary": "Field notes for this family are still to be written.",
-  "sampleData": true,
+  "summary": "Hornbills are pied or grey birds with large bills and casques. Kruger has five species. The two large forest birds are the Trumpeter Hornbill, Bycanistes bucinator, and the Crowned Hornbill, Lophoceros alboterminatus. The bushveld birds are the African Grey Hornbill and the southern yellow-billed and red-billed hornbills.",
+  "sampleData": false,
   "species": [
     {
       "slug": "bycanistes-bucinator",

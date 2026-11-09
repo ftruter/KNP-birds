@@ -7,8 +7,49 @@
     "af": "Kleinwitreier"
   },
   "family": "ardeidae",
-  "summary": "The details for this species have not been published yet.",
-  "sampleData": true,
+  "status": "resident",
+  "monthsPresent": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+  ],
+  "size": {
+    "lengthCm": {
+      "min": 64,
+      "max": 64
+    },
+    "note": "Newman's Birds gives 64 cm."
+  },
+  "habitat": "Quiet inland waters, estuaries and coastal pools, always near water. Solitary. It stands in the shallows, walks slowly, or darts and dances after prey.",
+  "summary": "A white egret, larger and more slender than a Cattle Egret, with a longer black bill and black legs, and yellow feet. Adults normally have head plumes. Breast plumes and back plumes are present only briefly when breeding. The immature lacks plumes.",
+  "sampleData": false,
+  "similar": [
+    {
+      "slug": "ardea-ibis",
+      "note": "Cattle Egret is smaller, with a short yellow bill and yellow legs, and it follows grazers. Little Egret has a long black bill and yellow feet, and it hunts in the shallows."
+    },
+    {
+      "slug": "ardea-alba",
+      "note": "Great Egret is much larger, with an orange-yellow bill and black legs and feet. Little Egret has yellow feet only."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Little Egret",
+      "url": "https://newmansbirds.com/birds/little-egret/",
+      "publisher": "Newman's Birds",
+      "year": 2026
+    }
+  ],
   "population": {
     "estimate": {
       "low": 32,
@@ -35,8 +76,171 @@
     },
     "tierApplied": "D"
   },
-  "variants": [],
-  "viewNotes": [],
-  "calls": [],
-  "images": []
+  "variants": [
+    {
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "marks": {
+        "bill": {
+          "colour": "black",
+          "shape": "long and black"
+        },
+        "eye": {
+          "iris": null,
+          "ring": null
+        },
+        "legs": {
+          "colour": "black"
+        },
+        "head": {
+          "crown": "white",
+          "face": "white",
+          "throat": "white",
+          "pattern": "Yellow feet. Head plumes are normal. Breast and back plumes are brief and only when breeding."
+        },
+        "upperparts": {
+          "back": "white",
+          "rump": null,
+          "pattern": null
+        },
+        "underparts": {
+          "breast": "white",
+          "belly": "white",
+          "pattern": null
+        },
+        "wings": {
+          "above": "white",
+          "below": "white",
+          "pattern": null
+        },
+        "tail": {
+          "colour": null,
+          "shape": null
+        }
+      }
+    },
+    {
+      "age": "juvenile",
+      "sex": "any",
+      "season": "any",
+      "marks": {
+        "bill": {
+          "colour": "black",
+          "shape": null
+        },
+        "eye": {
+          "iris": null,
+          "ring": null
+        },
+        "legs": {
+          "colour": "black"
+        },
+        "head": {
+          "crown": "white",
+          "face": "white",
+          "throat": "white",
+          "pattern": "Lacks plumes."
+        },
+        "upperparts": {
+          "back": "white",
+          "rump": null,
+          "pattern": null
+        },
+        "underparts": {
+          "breast": "white",
+          "belly": "white",
+          "pattern": null
+        },
+        "wings": {
+          "above": "white",
+          "below": "white",
+          "pattern": null
+        },
+        "tail": {
+          "colour": null,
+          "shape": null
+        }
+      }
+    }
+  ],
+  "viewNotes": [
+    {
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Black bill, black legs and yellow feet, in the shallows."
+    },
+    {
+      "view": "perched-front",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "White head and a long black bill. Adults show head plumes."
+    },
+    {
+      "view": "perched-back",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "White back. Breeding back plumes are brief."
+    },
+    {
+      "view": "flight-above",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "White above. Yellow feet trail behind."
+    },
+    {
+      "view": "flight-below",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "White from below."
+    }
+  ],
+  "calls": [
+    {
+      "sex": "any",
+      "type": "call",
+      "description": "Newman does not describe the voice. The texts do not separate the sexes. The catalogue cut is not labelled by sex. Grade A from Vaalkop, South Africa.",
+      "recordings": [
+        {
+          "key": "xeno-canto/XC307189",
+          "source": "https://xeno-canto.org/307189",
+          "fileUrl": "https://xeno-canto.org/sounds/uploaded/TWAAJJHMEH/XC307189-Egret%20Little_Vaalkop_151231_29_A.mp3",
+          "author": "Faansie Peacock",
+          "license": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ]
+    }
+  ],
+  "images": [
+    {
+      "key": "egretta-garzetta/below.jpg",
+      "view": "flight-below",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "source": "https://www.inaturalist.org/observations/330709711",
+      "fileUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/599751539/large.jpg",
+      "author": "hermanmoller",
+      "license": "CC BY-NC 4.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+      "aiGenerated": false,
+      "hosted": false,
+      "alt": "Little Egret in flight from below in Kruger, white, with a black bill and yellow feet",
+      "caption": "Little Egret in flight from below in Kruger, white, with a black bill and yellow feet"
+    }
+  ],
+  "research": {
+    "confidence": "medium",
+    "needsReview": false,
+    "note": "Status is resident and all twelve months are listed. Newman calls it a fairly common resident. Breeding plumes last only briefly, so they were not stored as a summer plumage. Chick down is not described. The call is grade A from Vaalkop."
+  }
 }

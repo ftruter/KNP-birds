@@ -7,8 +7,45 @@
     "af": "Bloureier"
   },
   "family": "ardeidae",
-  "summary": "The details for this species have not been published yet.",
-  "sampleData": true,
+  "status": "resident",
+  "monthsPresent": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+  ],
+  "size": {
+    "lengthCm": {
+      "min": 100,
+      "max": 100
+    },
+    "note": "Newman's Birds gives 100 cm."
+  },
+  "habitat": "Shallows of quiet dams, pans, rivers, lagoons and estuaries, and sometimes coastal rock pools. Solitary, standing still or creeping forward in a crouch.",
+  "summary": "A large grey heron with a white crown and a broad black band from the forehead to the nape. The rest of the head and neck are white. The bill and legs are yellow, and reddish when breeding. In flight the underwings are entirely grey. The immature is much paler than the adult and than a young Black-headed Heron, and has a yellow bill and yellow legs.",
+  "sampleData": false,
+  "similar": [
+    {
+      "slug": "ardea-melanocephala",
+      "note": "Black-headed Heron has a black cap and hindneck, a slate-grey bill and legs, and black-and-grey underwings. Grey Heron has a white crown, a black band only along the side of the crown, and grey underwings."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Grey Heron",
+      "url": "https://newmansbirds.com/birds/grey-heron/",
+      "publisher": "Newman's Birds",
+      "year": 2026
+    }
+  ],
   "population": {
     "estimate": {
       "low": 128,
@@ -35,8 +72,171 @@
     },
     "tierApplied": "D"
   },
-  "variants": [],
-  "viewNotes": [],
-  "calls": [],
-  "images": []
+  "variants": [
+    {
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "marks": {
+        "bill": {
+          "colour": "yellow",
+          "shape": "yellow, reddish when breeding"
+        },
+        "eye": {
+          "iris": null,
+          "ring": null
+        },
+        "legs": {
+          "colour": "yellow"
+        },
+        "head": {
+          "crown": "white",
+          "face": "white",
+          "throat": "white",
+          "pattern": "A broad black band runs from the forehead to the nape. The rest of the head and neck is white."
+        },
+        "upperparts": {
+          "back": "grey",
+          "rump": null,
+          "pattern": null
+        },
+        "underparts": {
+          "breast": "white",
+          "belly": "grey",
+          "pattern": null
+        },
+        "wings": {
+          "above": "grey",
+          "below": "grey",
+          "pattern": "The underwings are entirely grey in flight."
+        },
+        "tail": {
+          "colour": null,
+          "shape": null
+        }
+      }
+    },
+    {
+      "age": "juvenile",
+      "sex": "any",
+      "season": "any",
+      "marks": {
+        "bill": {
+          "colour": "yellow",
+          "shape": null
+        },
+        "eye": {
+          "iris": null,
+          "ring": null
+        },
+        "legs": {
+          "colour": "yellow"
+        },
+        "head": {
+          "crown": "grey",
+          "face": "grey",
+          "throat": "white",
+          "pattern": "Much paler than the adult."
+        },
+        "upperparts": {
+          "back": "grey",
+          "rump": null,
+          "pattern": null
+        },
+        "underparts": {
+          "breast": "white",
+          "belly": "grey",
+          "pattern": null
+        },
+        "wings": {
+          "above": "grey",
+          "below": "grey",
+          "pattern": null
+        },
+        "tail": {
+          "colour": null,
+          "shape": null
+        }
+      }
+    }
+  ],
+  "viewNotes": [
+    {
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "White head and neck, a black crown band, and a yellow bill and legs."
+    },
+    {
+      "view": "perched-front",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "The black band crosses the forehead and continues to the nape."
+    },
+    {
+      "view": "perched-back",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Grey back and wings."
+    },
+    {
+      "view": "flight-above",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Grey above."
+    },
+    {
+      "view": "flight-below",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Entirely grey underwings."
+    }
+  ],
+  "calls": [
+    {
+      "sex": "any",
+      "type": "call",
+      "description": "Newman does not describe the voice. The texts do not separate the sexes. The catalogue cut is not labelled by sex. Grade A from Russia. No playable grade A file from South Africa was in the catalogue.",
+      "recordings": [
+        {
+          "key": "xeno-canto/XC497244",
+          "source": "https://xeno-canto.org/497244",
+          "fileUrl": "https://xeno-canto.org/sounds/uploaded/LELYWQKUZX/XC497244-Ardea%20cinerea%20190906_002%2CAAAA1%2B.MP3",
+          "author": "Albert Lastukhin",
+          "license": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ]
+    }
+  ],
+  "images": [
+    {
+      "key": "ardea-cinerea/side.jpg",
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "source": "https://www.inaturalist.org/observations/254379252",
+      "fileUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/455622657/large.jpeg",
+      "author": "Pavel Shukov",
+      "license": "CC BY-NC 4.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+      "aiGenerated": false,
+      "hosted": false,
+      "alt": "Grey Heron standing side-on on a hippo in Kruger, with a yellow bill and a black crown stripe",
+      "caption": "Grey Heron standing side-on on a hippo in Kruger, with a yellow bill and a black crown stripe"
+    }
+  ],
+  "research": {
+    "confidence": "medium",
+    "needsReview": false,
+    "note": "Status is resident and all twelve months are listed. Newman calls it a common resident. The reddish breeding bill and legs were not stored as a summer plumage. Chick down is not described. The call is grade A from Russia."
+  }
 }

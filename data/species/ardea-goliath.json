@@ -7,8 +7,45 @@
     "af": "Reusereier"
   },
   "family": "ardeidae",
-  "summary": "The details for this species have not been published yet.",
-  "sampleData": true,
+  "status": "resident",
+  "monthsPresent": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+  ],
+  "size": {
+    "lengthCm": {
+      "min": 140,
+      "max": 140
+    },
+    "note": "Newman's Birds gives 140 cm."
+  },
+  "habitat": "Rivers, lakes, pans and estuaries, singly or in pairs, hunting in deeper water than most herons.",
+  "summary": "The largest heron, robust, with slate-grey upperparts and rich rufous underparts. The heavy bill and long legs are slate-grey. Immatures are similar, with paler rufous. The wingbeats are very slow.",
+  "sampleData": false,
+  "similar": [
+    {
+      "slug": "ardea-purpurea",
+      "note": "Purple Heron is much smaller and more slender, with a thin bill and a striped, snake-like neck."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Goliath Heron",
+      "url": "https://newmansbirds.com/birds/goliath-heron/",
+      "publisher": "Newman's Birds",
+      "year": 2026
+    }
+  ],
   "population": {
     "estimate": {
       "low": 128,
@@ -35,8 +72,171 @@
     },
     "tierApplied": "D"
   },
-  "variants": [],
-  "viewNotes": [],
-  "calls": [],
-  "images": []
+  "variants": [
+    {
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "marks": {
+        "bill": {
+          "colour": "slate-grey",
+          "shape": "heavy and slate-grey"
+        },
+        "eye": {
+          "iris": null,
+          "ring": null
+        },
+        "legs": {
+          "colour": "slate-grey"
+        },
+        "head": {
+          "crown": "rufous",
+          "face": "rufous",
+          "throat": "rufous",
+          "pattern": null
+        },
+        "upperparts": {
+          "back": "slate-grey",
+          "rump": null,
+          "pattern": null
+        },
+        "underparts": {
+          "breast": "rufous",
+          "belly": "rufous",
+          "pattern": null
+        },
+        "wings": {
+          "above": "slate-grey",
+          "below": "rufous",
+          "pattern": null
+        },
+        "tail": {
+          "colour": null,
+          "shape": null
+        }
+      }
+    },
+    {
+      "age": "juvenile",
+      "sex": "any",
+      "season": "any",
+      "marks": {
+        "bill": {
+          "colour": "slate-grey",
+          "shape": null
+        },
+        "eye": {
+          "iris": null,
+          "ring": null
+        },
+        "legs": {
+          "colour": "slate-grey"
+        },
+        "head": {
+          "crown": "rufous",
+          "face": "rufous",
+          "throat": "rufous",
+          "pattern": "Rufous areas are paler than on the adult."
+        },
+        "upperparts": {
+          "back": "slate-grey",
+          "rump": null,
+          "pattern": null
+        },
+        "underparts": {
+          "breast": "rufous",
+          "belly": "rufous",
+          "pattern": null
+        },
+        "wings": {
+          "above": "slate-grey",
+          "below": "rufous",
+          "pattern": null
+        },
+        "tail": {
+          "colour": null,
+          "shape": null
+        }
+      }
+    }
+  ],
+  "viewNotes": [
+    {
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Huge, with a heavy slate-grey bill, slate-grey legs and a rufous neck."
+    },
+    {
+      "view": "perched-front",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "The rufous head and heavy bill fill the front view."
+    },
+    {
+      "view": "perched-back",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Slate-grey upperparts."
+    },
+    {
+      "view": "flight-above",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Slate-grey above, with very slow wingbeats."
+    },
+    {
+      "view": "flight-below",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Rufous underparts show from below. A separate underwing colour is not given."
+    }
+  ],
+  "calls": [
+    {
+      "sex": "any",
+      "type": "call",
+      "description": "Newman does not describe the voice. The texts do not separate the sexes. The catalogue cut is not labelled by sex. Grade A from Lutembe Bay, Uganda.",
+      "recordings": [
+        {
+          "key": "xeno-canto/XC1083152",
+          "source": "https://xeno-canto.org/1083152",
+          "fileUrl": "https://xeno-canto.org/sounds/uploaded/YIKAQIVHQJ/XC1083152-8088.-Goliath-Heron---Lutembe-Bay---21-FEB-2026---0850---1.mp3",
+          "author": "Jonathan Onongo",
+          "license": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ]
+    }
+  ],
+  "images": [
+    {
+      "key": "ardea-goliath/side.jpg",
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "source": "https://www.inaturalist.org/observations/52165071",
+      "fileUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/82907004/large.jpeg",
+      "author": "Elaine Bester",
+      "license": "CC BY-NC 4.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+      "aiGenerated": false,
+      "hosted": false,
+      "alt": "Goliath Heron resting side-on on the ground in Kruger, with a rufous neck and grey upperparts",
+      "caption": "Goliath Heron resting side-on on the ground in Kruger, with a rufous neck and grey upperparts"
+    }
+  ],
+  "research": {
+    "confidence": "medium",
+    "needsReview": false,
+    "note": "Status is resident and all twelve months are listed. Newman calls it an uncommon resident. Chick down is not described. The call is grade A from Uganda."
+  }
 }

@@ -7,8 +7,38 @@
     "af": "Bandkeelkleinjantjie"
   },
   "family": "cisticolidae",
-  "summary": "The details for this species have not been published yet.",
-  "sampleData": true,
+  "status": "resident",
+  "monthsPresent": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+  ],
+  "habitat": "Pairs, often in bird parties. The yellowest morph is the one in northern South Africa.",
+  "summary": "A common resident, highly variable. The yellowest morph is the northern South African one. Males have a black throat-band; in the female it is usually narrower and sometimes absent. It has a pale yellow eye and white outer tail feathers. The call is a loud pilly-pilly-pilly, and pairs duet, the female faster than the male.",
+  "sampleData": false,
+  "similar": [
+    {
+      "slug": "apalis-ruddi",
+      "note": "Rudd’s Apalis has a dark eye and a yellow-green undertail. Bar-throated Apalis has a pale yellow eye and white outer tail feathers."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Bar-throated Apalis",
+      "url": "https://newmansbirds.com/birds/bar-throated-apalis/",
+      "publisher": "Newman's Birds",
+      "year": 2026
+    }
+  ],
   "population": {
     "estimate": {
       "low": 128,
@@ -35,8 +65,171 @@
     },
     "tierApplied": "D"
   },
-  "variants": [],
-  "viewNotes": [],
-  "calls": [],
-  "images": []
+  "variants": [
+    {
+      "age": "adult",
+      "sex": "male",
+      "season": "any",
+      "marks": {
+        "bill": {
+          "colour": null,
+          "shape": null
+        },
+        "eye": {
+          "iris": "yellow",
+          "ring": null
+        },
+        "legs": {
+          "colour": null
+        },
+        "head": {
+          "crown": "grey",
+          "face": "white",
+          "throat": "black",
+          "pattern": "Black throat-band. Pale yellow eye. Northern birds are the yellowest morph."
+        },
+        "upperparts": {
+          "back": "grey",
+          "rump": null,
+          "pattern": null
+        },
+        "underparts": {
+          "breast": "yellow",
+          "belly": "yellow",
+          "pattern": null
+        },
+        "wings": {
+          "above": null,
+          "below": null,
+          "pattern": null
+        },
+        "tail": {
+          "colour": "white",
+          "shape": "white outer tail feathers"
+        }
+      }
+    },
+    {
+      "age": "adult",
+      "sex": "female",
+      "season": "any",
+      "marks": {
+        "bill": {
+          "colour": null,
+          "shape": null
+        },
+        "eye": {
+          "iris": "yellow",
+          "ring": null
+        },
+        "legs": {
+          "colour": null
+        },
+        "head": {
+          "crown": null,
+          "face": null,
+          "throat": "black",
+          "pattern": "The black throat-band is usually narrower, and sometimes absent."
+        },
+        "upperparts": {
+          "back": null,
+          "rump": null,
+          "pattern": null
+        },
+        "underparts": {
+          "breast": null,
+          "belly": null,
+          "pattern": null
+        },
+        "wings": {
+          "above": null,
+          "below": null,
+          "pattern": null
+        },
+        "tail": {
+          "colour": "white",
+          "shape": null
+        }
+      }
+    }
+  ],
+  "viewNotes": [
+    {
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Variable apalis with a pale eye and a black throat-band that is narrower or absent in the female."
+    },
+    {
+      "view": "perched-front",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Pale yellow eye and the throat-band."
+    },
+    {
+      "view": "perched-back",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Upperparts vary. The northern morph is the yellowest."
+    },
+    {
+      "view": "flight-above",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "White outer tail feathers. The upperwing was not named."
+    },
+    {
+      "view": "flight-below",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "The underparts vary with the morph."
+    }
+  ],
+  "calls": [
+    {
+      "sex": "any",
+      "type": "call",
+      "description": "A loud pilly-pilly-pilly. Pairs duet, and the female’s call is much faster than the male’s. Grade A from Hillcrest, KwaZulu-Natal.",
+      "recordings": [
+        {
+          "key": "xeno-canto/XC1009172",
+          "source": "https://xeno-canto.org/1009172",
+          "fileUrl": "https://xeno-canto.org/sounds/uploaded/IQGZKQAMKT/XC1009172-Apalis_Bar-throated_SpringsideNR_20250618_NR10_UpGain.mp3",
+          "author": "Richard White",
+          "license": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ]
+    }
+  ],
+  "images": [
+    {
+      "key": "apalis-thoracica/side.jpg",
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "source": "https://www.inaturalist.org/observations/157610859",
+      "fileUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/272487045/large.jpg",
+      "author": "Heinrich Human",
+      "license": "CC BY-NC 4.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+      "aiGenerated": false,
+      "hosted": false,
+      "alt": "Bar-throated Apalis perched in Kruger woodland",
+      "caption": "Bar-throated Apalis perched in Kruger woodland"
+    }
+  ],
+  "research": {
+    "confidence": "medium",
+    "needsReview": false,
+    "note": "Status is resident and all twelve months are listed from Newman’s resident wording. Population figures were left unchanged."
+  }
 }

@@ -89,6 +89,26 @@ test('every data file matches the schema, slugs, and colour vocabulary', async (
         'alaudidae',
         'anatidae',
         'anhingidae',
+        'apodidae',
+        'ardeidae',
+        'bucerotidae',
+        'bucorvidae',
+        'buphagidae',
+        'burhinidae',
+        'campephagidae',
+        'caprimulgidae',
+        'charadriidae',
+        'ciconiidae',
+        'cisticolidae',
+        'coliidae',
+        'columbidae',
+        'corvidae',
+        'cuculidae',
+        'dicruridae',
+        'emberizidae',
+        'estrildidae',
+        'falconidae',
+        'fringillidae',
       ])
       const sourced =
         (data.kind === 'family' && sourcedFamily.has(data.slug)) ||
@@ -113,8 +133,8 @@ test('every data file matches the schema, slugs, and colour vocabulary', async (
   assert.equal(fishEagle.calls.length, 1)
   assert.equal(fishEagle.variants.length, 2)
   const hornbill = await readJson('data/species/bucorvus-leadbeateri.json')
-  assert.equal(hornbill.images.length, 0)
-  assert.equal(hornbill.sampleData, true)
+  assert.equal(hornbill.images.length, 1)
+  assert.equal(hornbill.sampleData, false)
   assert.equal(hornbill.population.unit, 'groups')
   assert.equal(hornbill.population.estimate.low, 180)
   assert.equal(hornbill.population.estimate.high, 180)

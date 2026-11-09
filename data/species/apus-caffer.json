@@ -7,8 +7,65 @@
     "af": "Witkruiswindswael"
   },
   "family": "apodidae",
-  "summary": "The details for this species have not been published yet.",
-  "sampleData": true,
+  "status": "intra-african-migrant",
+  "monthsPresent": [
+    8,
+    9,
+    10,
+    11,
+    12,
+    1,
+    2,
+    3,
+    4,
+    5
+  ],
+  "size": {
+    "lengthCm": {
+      "min": 14,
+      "max": 15.5
+    },
+    "note": "Wikipedia gives 14–15.5 cm. Newman's Birds gives 15 cm."
+  },
+  "habitat": "Aerial over any country, regular in the more humid south and east. Nests are usually taken from swallows, especially retort-shaped mud nests on buildings and bridges, so it is common in towns.",
+  "summary": "A slim, dark swift with a deeply forked tail, a pale throat and a narrow white rump that does not extend over the sides. Newman calls it a summer resident and says it is slimmer and more deeply forked than Horus Swift. It arrives about August to September and leaves about April to May, with some birds overwintering. It is quieter than Little Swift. A twittering trill is sometimes given.",
+  "sampleData": false,
+  "similar": [
+    {
+      "slug": "apus-horus",
+      "note": "Horus Swift is bulkier, with a shallower fork and a broader white rump. White-rumped Swift has a thin white crescent and a deeper fork."
+    },
+    {
+      "slug": "apus-affinis",
+      "note": "Little Swift has a square tail and a white rump that wraps onto the flanks, plus a clear white throat."
+    }
+  ],
+  "sources": [
+    {
+      "title": "The Atlas of Southern African Birds, Vol. 1 (White-rumped Swift)",
+      "url": "https://sabap2.birdmap.africa/docs/sabap1/415.pdf",
+      "publisher": "BirdLife South Africa",
+      "year": 1997
+    },
+    {
+      "title": "White-rumped Swift",
+      "url": "https://newmansbirds.com/birds/white-rumped-swift/",
+      "publisher": "Newman's Birds",
+      "year": 2026
+    },
+    {
+      "title": "White-rumped swift",
+      "url": "https://en.wikipedia.org/wiki/White-rumped_swift",
+      "publisher": "Wikipedia",
+      "year": 2026
+    },
+    {
+      "title": "Apus caffer (White-rumped swift)",
+      "url": "https://www.biodiversityexplorer.info/birds/apodidae/apus_caffer.htm",
+      "publisher": "Biodiversity Explorer",
+      "year": null
+    }
+  ],
   "population": {
     "estimate": {
       "low": 1024,
@@ -35,8 +92,128 @@
     },
     "tierApplied": "D"
   },
-  "variants": [],
-  "viewNotes": [],
-  "calls": [],
-  "images": []
+  "variants": [
+    {
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "marks": {
+        "bill": {
+          "colour": null,
+          "shape": null
+        },
+        "eye": {
+          "iris": null,
+          "ring": null
+        },
+        "legs": {
+          "colour": null
+        },
+        "head": {
+          "crown": "black",
+          "face": "black",
+          "throat": "white",
+          "pattern": "A pale throat patch. Newman calls the rump a thin white half-moon."
+        },
+        "upperparts": {
+          "back": "black",
+          "rump": "white",
+          "pattern": "The white rump is narrow and does not extend over the sides."
+        },
+        "underparts": {
+          "breast": "black",
+          "belly": "black",
+          "pattern": null
+        },
+        "wings": {
+          "above": "black",
+          "below": "black",
+          "pattern": null
+        },
+        "tail": {
+          "colour": "black",
+          "shape": "deeply forked"
+        }
+      }
+    }
+  ],
+  "viewNotes": [
+    {
+      "view": "flight-below",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Dark from below, with a pale throat. The narrow white rump may just show at the rear."
+    },
+    {
+      "view": "flight-above",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "A thin white crescent on the rump, not a broad wrap-around patch. The tail is deeply forked."
+    },
+    {
+      "view": "flight-side",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Slim, with a deep fork and a narrow white rump."
+    },
+    {
+      "view": "perched-front",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Swifts cling to a vertical surface. They do not settle on the ground, and a normal perched view is not described. The pale throat is the front mark."
+    },
+    {
+      "view": "perched-back",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "The narrow white rump is the rear mark when the bird clings at a stolen swallow nest."
+    }
+  ],
+  "calls": [
+    {
+      "sex": "any",
+      "type": "call",
+      "description": "Quieter than Little Swift. A twittering trill is sometimes given. The texts do not separate the sexes. Grade B, North West. No playable grade A was ranked above it.",
+      "recordings": [
+        {
+          "key": "xeno-canto/XC466641",
+          "source": "https://xeno-canto.org/466641",
+          "fileUrl": "https://xeno-canto.org/sounds/uploaded/HMBDEWEZVS/XC466641-8%20WR%20Swift.mp3",
+          "author": "Tony Archer",
+          "license": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ]
+    }
+  ],
+  "images": [
+    {
+      "key": "apus-caffer/malelane-below.jpg",
+      "view": "flight-below",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "source": "https://www.inaturalist.org/observations/183525653",
+      "fileUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/320196385/large.jpg",
+      "author": "Dmitrii",
+      "license": "CC BY-NC 4.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+      "aiGenerated": false,
+      "hosted": false,
+      "alt": "White-rumped Swift in flight from below near Malelane, Kruger, with a narrow white rump and a forked tail",
+      "caption": "White-rumped Swift in flight from below near Malelane, Kruger, with a narrow white rump and a forked tail"
+    }
+  ],
+  "research": {
+    "confidence": "medium",
+    "needsReview": false,
+    "note": "Status is an intra-African migrant. SABAP1 describes arrival in August–September and departure in April–May, with some overwintering records, so August to May are listed and winter is not treated as a complete absence. Chick down and a sexed call are not described. The recording is grade B."
+  }
 }

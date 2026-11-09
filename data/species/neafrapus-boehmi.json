@@ -7,8 +7,50 @@
     "af": "Witpensstekelstert"
   },
   "family": "apodidae",
-  "summary": "The details for this species have not been published yet.",
-  "sampleData": true,
+  "status": "resident",
+  "monthsPresent": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+  ],
+  "habitat": "Hot, low-lying valleys with riparian forest and baobabs in mopane veld. It flies low over the canopy and nests in baobab cavities or in deep pits, wells and mine shafts.",
+  "summary": "A local spinetail of the northern lowveld. SABAP1 says it is not difficult to identify and that seasonal movements have not been documented. The Biodiversity Explorer summary of Roberts VII says it flies low over the tree canopy and lays from August to May, peaking from October to March. Plumage colours were not described in the texts used here. Wikipedia adds the name bat-like spinetail and the baobab nesting habit, and little else.",
+  "sampleData": false,
+  "similar": [
+    {
+      "slug": "telacanthura-ussheri",
+      "note": "Mottled Spinetail uses the same baobab and mopane valleys. These texts do not give a plumage comparison between the two spinetails."
+    }
+  ],
+  "sources": [
+    {
+      "title": "The Atlas of Southern African Birds, Vol. 1 (Böhm’s Spinetail)",
+      "url": "https://sabap2.birdmap.africa/docs/sabap1/423.pdf",
+      "publisher": "BirdLife South Africa",
+      "year": 1997
+    },
+    {
+      "title": "Böhm's spinetail",
+      "url": "https://en.wikipedia.org/wiki/B%C3%B6hm%27s_spinetail",
+      "publisher": "Wikipedia",
+      "year": 2026
+    },
+    {
+      "title": "Neafrapus boehmi (Böhm’s spinetail)",
+      "url": "https://www.biodiversityexplorer.info/birds/apodidae/neafrapus_boehmi.htm",
+      "publisher": "Biodiversity Explorer",
+      "year": null
+    }
+  ],
   "population": {
     "estimate": {
       "low": 32,
@@ -35,8 +77,128 @@
     },
     "tierApplied": "D"
   },
-  "variants": [],
-  "viewNotes": [],
-  "calls": [],
-  "images": []
+  "variants": [
+    {
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "marks": {
+        "bill": {
+          "colour": null,
+          "shape": null
+        },
+        "eye": {
+          "iris": null,
+          "ring": null
+        },
+        "legs": {
+          "colour": null
+        },
+        "head": {
+          "crown": null,
+          "face": null,
+          "throat": null,
+          "pattern": "Plumage colours were not named in the texts used here."
+        },
+        "upperparts": {
+          "back": null,
+          "rump": null,
+          "pattern": "SABAP1 says the species is identifiable. The characters used for that identification were not repeated in the atlas text."
+        },
+        "underparts": {
+          "breast": null,
+          "belly": null,
+          "pattern": null
+        },
+        "wings": {
+          "above": null,
+          "below": null,
+          "pattern": "The Biodiversity Explorer summary says it flies low over the canopy."
+        },
+        "tail": {
+          "colour": null,
+          "shape": null
+        }
+      }
+    }
+  ],
+  "viewNotes": [
+    {
+      "view": "flight-below",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "The underwing colour is not described. The bird flies low over the canopy."
+    },
+    {
+      "view": "flight-above",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "The upperwing colour is not described."
+    },
+    {
+      "view": "flight-side",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "A low, fast flight over baobab and mopane country. The body colours are not given in these texts."
+    },
+    {
+      "view": "perched-front",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Swifts cling to a vertical surface. They do not settle on the ground, and a normal perched view is not described. Nest sites are baobab cavities and the walls of deep pits."
+    },
+    {
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "No clinging plumage is described."
+    }
+  ],
+  "calls": [
+    {
+      "sex": "any",
+      "type": "call",
+      "description": "The texts used here do not describe the call. The only playable catalogue cut is grade D, from Sofala in Mozambique, and the filename says it was edited. It was not edited again here. The other catalogue file is not a playable licence.",
+      "recordings": [
+        {
+          "key": "xeno-canto/XC688818",
+          "source": "https://xeno-canto.org/688818",
+          "fileUrl": "https://xeno-canto.org/sounds/uploaded/GABAHHYWYR/XC688818-VOC_211024-3124%20Bohm%27s%20Spinetail%20ED%20UP.mp3",
+          "author": "Ken Behrens",
+          "license": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ]
+    }
+  ],
+  "images": [
+    {
+      "key": "neafrapus-boehmi/mopani-below.jpg",
+      "view": "flight-below",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "source": "https://www.inaturalist.org/observations/393794162",
+      "fileUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/721823247/large.jpg",
+      "author": "Daniel Correia",
+      "license": "CC BY-NC 4.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+      "aiGenerated": false,
+      "hosted": false,
+      "alt": "Böhm’s Spinetail in flight from below in Mopani, Kruger, small in the frame with a pale belly",
+      "caption": "Böhm’s Spinetail in flight from below in Mopani, Kruger, small in the frame with a pale belly"
+    }
+  ],
+  "research": {
+    "confidence": "low",
+    "needsReview": true,
+    "note": "Status is resident and all twelve months are listed because SABAP1 says seasonal movements have not been documented. A Zimbabwe model shows lower reporting in the middle of the wet season, which was not turned into a Kruger absence. Plumage, size, chick down and an unedited call are gaps. The photograph shows a pale belly, which was not copied into the colour marks because the texts do not name it."
+  }
 }

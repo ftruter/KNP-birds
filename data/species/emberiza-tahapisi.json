@@ -7,8 +7,49 @@
     "af": "Klipstreepkoppie"
   },
   "family": "emberizidae",
-  "summary": "The details for this species have not been published yet.",
-  "sampleData": true,
+  "status": "resident",
+  "monthsPresent": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+  ],
+  "size": {
+    "lengthCm": {
+      "min": 13,
+      "max": 14
+    },
+    "note": "Newman's Birds gives 13–14 cm."
+  },
+  "habitat": "In pairs, occasionally flocks, on rocky or stony ground with or without bushes, often on soil-eroded ground or in broad-leaved woodland and mixed bushveld.",
+  "summary": "A common resident. The body is cinnamon-brown and the head is streaked black and white, blackest in the male. The immature resembles the female. The short song is tee-trrr, chirri-chee, or swiddle-swiddle-saaa, repeated often. The Kemp name is Rock Bunting and the code VB was left unchanged.",
+  "sampleData": false,
+  "similar": [
+    {
+      "slug": "emberiza-flaviventris",
+      "note": "Golden-breasted Bunting has an orange breast and a white belly. Cinnamon-breasted Bunting is cinnamon-brown on the body."
+    },
+    {
+      "slug": "emberiza-impetuani",
+      "note": "Lark-like Bunting is plain and pale. Cinnamon-breasted Bunting has the black-and-white streaked head."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Cinnamon-breasted Bunting",
+      "url": "https://newmansbirds.com/birds/cinnamon-breasted-bunting/",
+      "publisher": "Newman's Birds",
+      "year": 2026
+    }
+  ],
   "population": {
     "estimate": {
       "low": 8192,
@@ -35,8 +76,171 @@
     },
     "tierApplied": "D"
   },
-  "variants": [],
-  "viewNotes": [],
-  "calls": [],
-  "images": []
+  "variants": [
+    {
+      "age": "adult",
+      "sex": "male",
+      "season": "any",
+      "marks": {
+        "bill": {
+          "colour": null,
+          "shape": null
+        },
+        "eye": {
+          "iris": null,
+          "ring": null
+        },
+        "legs": {
+          "colour": null
+        },
+        "head": {
+          "crown": "black",
+          "face": null,
+          "throat": null,
+          "pattern": "Black-and-white streaked head, blackest in the male."
+        },
+        "upperparts": {
+          "back": "cinnamon",
+          "rump": null,
+          "pattern": "The rest of the body is cinnamon-brown."
+        },
+        "underparts": {
+          "breast": "cinnamon",
+          "belly": "cinnamon",
+          "pattern": null
+        },
+        "wings": {
+          "above": null,
+          "below": null,
+          "pattern": null
+        },
+        "tail": {
+          "colour": null,
+          "shape": null
+        }
+      }
+    },
+    {
+      "age": "adult",
+      "sex": "female",
+      "season": "any",
+      "marks": {
+        "bill": {
+          "colour": null,
+          "shape": null
+        },
+        "eye": {
+          "iris": null,
+          "ring": null
+        },
+        "legs": {
+          "colour": null
+        },
+        "head": {
+          "crown": null,
+          "face": null,
+          "throat": null,
+          "pattern": "Black-and-white streaked head, less black than the male."
+        },
+        "upperparts": {
+          "back": "cinnamon",
+          "rump": null,
+          "pattern": "The rest of the body is cinnamon-brown."
+        },
+        "underparts": {
+          "breast": "cinnamon",
+          "belly": "cinnamon",
+          "pattern": null
+        },
+        "wings": {
+          "above": null,
+          "below": null,
+          "pattern": null
+        },
+        "tail": {
+          "colour": null,
+          "shape": null
+        }
+      }
+    }
+  ],
+  "viewNotes": [
+    {
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "male",
+      "season": "any",
+      "note": "Cinnamon-brown body and a black-and-white streaked head. The male’s head is the blackest."
+    },
+    {
+      "view": "perched-front",
+      "age": "adult",
+      "sex": "male",
+      "season": "any",
+      "note": "Streaked black-and-white head and cinnamon underparts."
+    },
+    {
+      "view": "perched-back",
+      "age": "adult",
+      "sex": "male",
+      "season": "any",
+      "note": "Cinnamon-brown upper parts and the streaked head."
+    },
+    {
+      "view": "flight-above",
+      "age": "adult",
+      "sex": "male",
+      "season": "any",
+      "note": "A separate flight pattern was not described."
+    },
+    {
+      "view": "flight-below",
+      "age": "adult",
+      "sex": "male",
+      "season": "any",
+      "note": "Cinnamon-brown below."
+    }
+  ],
+  "calls": [
+    {
+      "sex": "any",
+      "type": "song",
+      "description": "A short tee-trrr, chirri-chee, or swiddle-swiddle-saaa, repeated at frequent intervals. Newman does not separate the sexes. Grade A song from Vaalkop Dam. The filename says the file was edited. It was not cleaned again.",
+      "recordings": [
+        {
+          "key": "xeno-canto/XC364488",
+          "source": "https://xeno-canto.org/364488",
+          "fileUrl": "https://xeno-canto.org/sounds/uploaded/TWAAJJHMEH/XC364488-Bunting%20Cinnamonbreasted_VK_161224_08_A_edit.mp3",
+          "author": "Faansie Peacock",
+          "license": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ]
+    }
+  ],
+  "images": [
+    {
+      "key": "emberiza-tahapisi/side.jpg",
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "male",
+      "season": "any",
+      "source": "https://www.inaturalist.org/observations/338502776",
+      "fileUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/615606332/large.jpg",
+      "author": "Will Richardson",
+      "license": "CC BY-NC 4.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+      "aiGenerated": false,
+      "hosted": false,
+      "alt": "Cinnamon-breasted Bunting on stony ground",
+      "caption": "Cinnamon-breasted Bunting on stony ground, cinnamon-brown below with a black-and-white streaked head."
+    }
+  ],
+  "research": {
+    "confidence": "medium",
+    "needsReview": true,
+    "note": "Newman calls it a common resident. Status is resident and all twelve months are listed. The immature is said only to resemble the female, so no separate immature variant was stored. The Kemp name Rock Bunting and the code VB were left unchanged. Population figures were left unchanged."
+  }
 }

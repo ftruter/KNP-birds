@@ -7,8 +7,51 @@
     "af": "Ralreier"
   },
   "family": "ardeidae",
-  "summary": "The details for this species have not been published yet.",
-  "sampleData": true,
+  "status": "resident",
+  "monthsPresent": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+  ],
+  "size": {
+    "lengthCm": {
+      "min": 43,
+      "max": 47
+    },
+    "note": "Newman's Birds gives 43 cm. Wikipedia gives 44–47 cm."
+  },
+  "habitat": "Lakes, lagoons, marshes, sewage ponds and streams, solitary.",
+  "summary": "A small buff heron. Outside breeding the upperparts are paler and less contrasting, the bill is yellowish with a blackish culmen, and the legs are normally pale yellow. The legs are pinkish red for a few days when breeding. In flight it looks like a white egret unless the biscuit-coloured or pale orange upperparts show. Young birds are darker above and have broader neck streaks.",
+  "sampleData": false,
+  "similar": [
+    {
+      "slug": "ardea-ibis",
+      "note": "Cattle Egret is larger, walks with grazers, and is white except for summer buff plumes. Squacco Heron looks white only in flight; at rest the upperparts are buff or pale orange."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Squacco Heron",
+      "url": "https://newmansbirds.com/birds/squacco-heron/",
+      "publisher": "Newman's Birds",
+      "year": 2026
+    },
+    {
+      "title": "Squacco heron",
+      "url": "https://en.wikipedia.org/wiki/Squacco_heron",
+      "publisher": "Wikipedia",
+      "year": 2026
+    }
+  ],
   "population": {
     "estimate": {
       "low": 32,
@@ -35,8 +78,134 @@
     },
     "tierApplied": "D"
   },
-  "variants": [],
-  "viewNotes": [],
-  "calls": [],
-  "images": []
+  "variants": [
+    {
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "marks": {
+        "bill": {
+          "colour": "yellow",
+          "shape": "yellowish with a blackish culmen outside breeding"
+        },
+        "eye": {
+          "iris": null,
+          "ring": null
+        },
+        "legs": {
+          "colour": "yellow"
+        },
+        "head": {
+          "crown": "buff",
+          "face": "buff",
+          "throat": "buff",
+          "pattern": "Non-breeding upperparts are paler and less contrasting. Legs are pinkish red for only a few days when breeding."
+        },
+        "upperparts": {
+          "back": [
+            "buff",
+            "orange"
+          ],
+          "rump": null,
+          "pattern": null
+        },
+        "underparts": {
+          "breast": "buff",
+          "belly": "white",
+          "pattern": null
+        },
+        "wings": {
+          "above": [
+            "buff",
+            "orange"
+          ],
+          "below": "white",
+          "pattern": "In flight the bird looks white unless the biscuit or pale orange upperparts are visible."
+        },
+        "tail": {
+          "colour": null,
+          "shape": null
+        }
+      }
+    }
+  ],
+  "viewNotes": [
+    {
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Buff or pale orange at rest, with a yellowish bill and pale yellow legs."
+    },
+    {
+      "view": "perched-front",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Streaked crown and a pale face. Young birds have broader neck streaks."
+    },
+    {
+      "view": "perched-back",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Biscuit or pale orange upperparts. The white of the wings is mostly a flight mark."
+    },
+    {
+      "view": "flight-above",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Looks white from above unless the pale orange back shows."
+    },
+    {
+      "view": "flight-below",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Looks like a white egret from below."
+    }
+  ],
+  "calls": [
+    {
+      "sex": "any",
+      "type": "call",
+      "description": "Newman does not describe the voice. The texts do not separate the sexes. The catalogue cut is not labelled by sex. Grade A, recorded in Kruger.",
+      "recordings": [
+        {
+          "key": "xeno-canto/XC1045966",
+          "source": "https://xeno-canto.org/1045966",
+          "fileUrl": "https://xeno-canto.org/sounds/uploaded/YSGTQVRQZI/XC1045966-20231006_KNP_CNadin_A014_A014C014_2310062E_KNP02_SLE_-3dBNORM_squacco.mp3",
+          "author": "African Bioacoustics Community",
+          "license": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ]
+    }
+  ],
+  "images": [
+    {
+      "key": "ardeola-ralloides/side.jpg",
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "source": "https://www.inaturalist.org/observations/49344415",
+      "fileUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/78330073/large.jpeg",
+      "author": "Elaine Bester",
+      "license": "CC BY-NC 4.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+      "aiGenerated": false,
+      "hosted": false,
+      "alt": "Squacco Heron perched side-on in a Kruger tree, buff above and white below",
+      "caption": "Squacco Heron perched side-on in a Kruger tree, buff above and white below"
+    }
+  ],
+  "research": {
+    "confidence": "medium",
+    "needsReview": false,
+    "note": "Status is resident and all twelve months are listed. Newman calls it a common to very common resident. Wikipedia describes the European population as a migrant that winters in Africa, so Kruger may also receive those birds. The few days of pink breeding legs were not stored as a summer plumage. Chick down is not described. The call is grade A from Kruger."
+  }
 }

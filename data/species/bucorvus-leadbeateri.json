@@ -9,11 +9,14 @@
   "family": "bucorvidae",
   "status": "resident",
   "size": {
-    "lengthCm": { "min": 90, "max": 100 },
-    "note": "A very large ground bird. Figures are approximate."
+    "lengthCm": {
+      "min": 90,
+      "max": 90
+    },
+    "note": "Newman's Birds gives 90 cm."
   },
-  "summary": "A very large, mostly black hornbill that walks the savanna in groups. Adults have bare red skin on the face and throat. White patches show in the wings in flight.",
-  "sampleData": true,
+  "summary": "A turkey-sized black ground hornbill with bare red skin on the face and throat. The female has a blue central patch on the throat pouch. In flight the wings show white feathers. The immature has yellow facial skin and a yellow throat pouch. The call is a deep boom, oomph, oomph-oomph, mostly at dawn. Groups walk the bushveld and woodland.",
+  "sampleData": false,
   "population": {
     "estimate": {
       "low": 180,
@@ -61,14 +64,44 @@
       "sex": "male",
       "season": "any",
       "marks": {
-        "bill": { "colour": "black", "shape": null },
-        "eye": { "iris": null, "ring": null },
-        "legs": { "colour": "black" },
-        "head": { "crown": "black", "face": "red", "throat": "red" },
-        "upperparts": { "back": "black", "rump": "black" },
-        "underparts": { "breast": "black", "belly": "black" },
-        "wings": { "above": ["black", "white"], "below": ["black", "white"] },
-        "tail": { "colour": "black", "shape": null }
+        "bill": {
+          "colour": "black",
+          "shape": null
+        },
+        "eye": {
+          "iris": null,
+          "ring": null
+        },
+        "legs": {
+          "colour": "black"
+        },
+        "head": {
+          "crown": "black",
+          "face": "red",
+          "throat": "red"
+        },
+        "upperparts": {
+          "back": "black",
+          "rump": "black"
+        },
+        "underparts": {
+          "breast": "black",
+          "belly": "black"
+        },
+        "wings": {
+          "above": [
+            "black",
+            "white"
+          ],
+          "below": [
+            "black",
+            "white"
+          ]
+        },
+        "tail": {
+          "colour": "black",
+          "shape": null
+        }
       }
     },
     {
@@ -76,14 +109,47 @@
       "sex": "female",
       "season": "any",
       "marks": {
-        "bill": { "colour": "black", "shape": null },
-        "eye": { "iris": null, "ring": null },
-        "legs": { "colour": "black" },
-        "head": { "crown": "black", "face": "red", "throat": ["red", "blue"] },
-        "upperparts": { "back": "black", "rump": "black" },
-        "underparts": { "breast": "black", "belly": "black" },
-        "wings": { "above": ["black", "white"], "below": ["black", "white"] },
-        "tail": { "colour": "black", "shape": null }
+        "bill": {
+          "colour": "black",
+          "shape": null
+        },
+        "eye": {
+          "iris": null,
+          "ring": null
+        },
+        "legs": {
+          "colour": "black"
+        },
+        "head": {
+          "crown": "black",
+          "face": "red",
+          "throat": [
+            "red",
+            "blue"
+          ]
+        },
+        "upperparts": {
+          "back": "black",
+          "rump": "black"
+        },
+        "underparts": {
+          "breast": "black",
+          "belly": "black"
+        },
+        "wings": {
+          "above": [
+            "black",
+            "white"
+          ],
+          "below": [
+            "black",
+            "white"
+          ]
+        },
+        "tail": {
+          "colour": "black",
+          "shape": null
+        }
       }
     },
     {
@@ -91,31 +157,127 @@
       "sex": "any",
       "season": "any",
       "marks": {
-        "bill": { "colour": null, "shape": null },
-        "eye": { "iris": null, "ring": null },
-        "legs": { "colour": null },
-        "head": { "crown": null, "face": "buff", "throat": null },
-        "upperparts": { "back": "dark-brown", "rump": null },
-        "underparts": { "breast": "dark-brown", "belly": "dark-brown" },
-        "wings": { "above": null, "below": null },
-        "tail": { "colour": null, "shape": null }
+        "bill": {
+          "colour": null,
+          "shape": null
+        },
+        "eye": {
+          "iris": null,
+          "ring": null
+        },
+        "legs": {
+          "colour": null
+        },
+        "head": {
+          "crown": null,
+          "face": "yellow",
+          "throat": "yellow",
+          "pattern": "Newman: yellow facial skin and throat pouch."
+        },
+        "upperparts": {
+          "back": "dark-brown",
+          "rump": null
+        },
+        "underparts": {
+          "breast": "dark-brown",
+          "belly": "dark-brown"
+        },
+        "wings": {
+          "above": null,
+          "below": null
+        },
+        "tail": {
+          "colour": null,
+          "shape": null
+        }
       }
     }
   ],
   "viewNotes": [
-    { "view": "flight-above", "note": "Black wings with a white patch in the primaries." },
-    { "view": "flight-below", "note": "Black wings with a white patch in the primaries." },
-    { "view": "perched-front", "note": "Red face and throat, a heavy dark bill, and a black body." },
-    { "view": "perched-back", "note": "Black back and tail. The red face is hidden." },
-    { "view": "perched-side", "note": "A tall black profile, a long tail, and the red face." }
+    {
+      "view": "flight-above",
+      "note": "Black wings with a white patch in the primaries."
+    },
+    {
+      "view": "flight-below",
+      "note": "Black wings with a white patch in the primaries."
+    },
+    {
+      "view": "perched-front",
+      "note": "Red face and throat, a heavy dark bill, and a black body."
+    },
+    {
+      "view": "perched-back",
+      "note": "Black back and tail. The red face is hidden."
+    },
+    {
+      "view": "perched-side",
+      "note": "A tall black profile, a long tail, and the red face."
+    }
   ],
   "calls": [
     {
       "sex": "any",
       "type": "call",
-      "description": "Deep booming notes, often before dawn.",
-      "recordings": []
+      "description": "A deep boom, oomph, oomph-oomph, mostly at dawn and frequently repeated. The texts do not separate the sexes. Grade A from Kruger, near Skukuza. The filename says Hornbill.",
+      "recordings": [
+        {
+          "key": "xeno-canto/XC1149598",
+          "source": "https://xeno-canto.org/1149598",
+          "fileUrl": "https://xeno-canto.org/sounds/uploaded/YSGTQVRQZI/XC1149598-20260520_KNP_AKaramitsos_XA60_A028C013_2605207D_SLE_-3dB_Hornbill.mp3",
+          "author": "African Bioacoustics Community",
+          "license": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ]
     }
   ],
-  "images": []
+  "images": [
+    {
+      "key": "bucorvus-leadbeateri/side.jpg",
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "mixed",
+      "season": "any",
+      "source": "https://www.inaturalist.org/observations/9953257",
+      "fileUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/13665470/large.jpeg",
+      "author": "copper",
+      "license": "CC BY-NC 4.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+      "aiGenerated": false,
+      "hosted": false,
+      "alt": "Two Southern Ground-Hornbills at a tree in Kruger, black, with bare red faces",
+      "caption": "Two Southern Ground-Hornbills at a tree in Kruger, black, with bare red faces"
+    }
+  ],
+  "monthsPresent": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+  ],
+  "habitat": "Bushveld, woodland and montane grassland, in groups of about four to ten. It walks slowly on the ground and flies low only when disturbed or going to roost in a tree.",
+  "sources": [
+    {
+      "title": "Southern Ground-Hornbill",
+      "url": "https://newmansbirds.com/birds/southern-ground-hornbill/",
+      "publisher": "Newman's Birds",
+      "year": 2026
+    }
+  ],
+  "research": {
+    "confidence": "medium",
+    "needsReview": false,
+    "note": "Status is resident and all twelve months are listed. Newman calls it a fairly common resident. The female’s blue throat patch is the only sex difference stored. The immature face is yellow in Newman; an earlier buff value was corrected to that. Chick down beyond the yellow pouch is not described. The call is grade A from Kruger, near Skukuza. The filename says Hornbill rather than the full species name. The population figures were left unchanged."
+  }
 }

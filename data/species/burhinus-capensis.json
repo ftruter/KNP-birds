@@ -7,8 +7,45 @@
     "af": "Gewone Dikkop"
   },
   "family": "burhinidae",
-  "summary": "The details for this species have not been published yet.",
-  "sampleData": true,
+  "status": "resident",
+  "monthsPresent": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+  ],
+  "size": {
+    "lengthCm": {
+      "min": 44,
+      "max": 44
+    },
+    "note": "Newman's Birds gives 44 cm."
+  },
+  "habitat": "Dry, rocky ground with short grass, open fields and open areas within woodland, and little-developed urban areas. It rests by day under bushes or among rocks.",
+  "summary": "A common resident thick-knee of dry open ground. The upperparts are buff and heavily streaked and spotted dark brown. The underparts are white, with a blackish-streaked chest. The eye is yellow, the bill is yellow with a black tip, and the legs are long and yellow. It has no wing-bar. The night call is a shrill, eerie chwee-chwee that trails off. The sexes and the immature are not separated in this account.",
+  "sampleData": false,
+  "similar": [
+    {
+      "slug": "burhinus-vermiculatus",
+      "note": "Water Thick-knee has a grey wing-bar edged black and keeps to river and lake banks. Spotted Thick-knee is heavily spotted above and has no wing-bar."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Spotted Thick-knee",
+      "url": "https://newmansbirds.com/birds/spotted-thick-knee/",
+      "publisher": "Newman's Birds",
+      "year": 2026
+    }
+  ],
   "population": {
     "estimate": {
       "low": 4096,
@@ -35,8 +72,131 @@
     },
     "tierApplied": "D"
   },
-  "variants": [],
-  "viewNotes": [],
-  "calls": [],
-  "images": []
+  "variants": [
+    {
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "marks": {
+        "bill": {
+          "colour": [
+            "yellow",
+            "black"
+          ],
+          "shape": "yellow with a black tip"
+        },
+        "eye": {
+          "iris": "yellow",
+          "ring": null
+        },
+        "legs": {
+          "colour": "yellow"
+        },
+        "head": {
+          "crown": "buff",
+          "face": "buff",
+          "throat": "white",
+          "pattern": "Buffy above, with dark brown streaking."
+        },
+        "upperparts": {
+          "back": "buff",
+          "rump": null,
+          "pattern": "Heavily streaked and spotted dark brown."
+        },
+        "underparts": {
+          "breast": "white",
+          "belly": "white",
+          "pattern": "White below, the chest streaked blackish."
+        },
+        "wings": {
+          "above": "buff",
+          "below": null,
+          "pattern": "No wing-bar."
+        },
+        "tail": {
+          "colour": null,
+          "shape": null
+        }
+      }
+    }
+  ],
+  "viewNotes": [
+    {
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Heavily spotted buff upperparts, yellow legs and a yellow bill with a black tip, on dry open ground."
+    },
+    {
+      "view": "perched-front",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Yellow eye and the black-tipped yellow bill."
+    },
+    {
+      "view": "perched-back",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Spotted upperparts and no wing-bar."
+    },
+    {
+      "view": "flight-above",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "No wing-bar. A separate upperwing flight pattern was not named."
+    },
+    {
+      "view": "flight-below",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "White underparts. The underwing was not named."
+    }
+  ],
+  "calls": [
+    {
+      "sex": "any",
+      "type": "call",
+      "description": "A shrill, eerie chwee-chwee, chwee-chwee, chwee, chwee, chwee, tiu-tiu-tiu, trailing off, mostly on moonlit nights. The texts do not separate the sexes. Grade A from a Bloemfontein garden. The filename is a date stamp. No playable grade A from Kruger outranked it.",
+      "recordings": [
+        {
+          "key": "xeno-canto/XC503000",
+          "source": "https://xeno-canto.org/503000",
+          "fileUrl": "https://xeno-canto.org/sounds/uploaded/JDCTKFMBKV/XC503000-191017_0422.MP3",
+          "author": "Dawie de Swardt",
+          "license": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ]
+    }
+  ],
+  "images": [
+    {
+      "key": "burhinus-capensis/side.jpg",
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "source": "https://www.inaturalist.org/observations/75299459",
+      "fileUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/123170952/large.jpeg",
+      "author": "Benoît Segerer",
+      "license": "CC BY-NC 4.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+      "aiGenerated": false,
+      "hosted": false,
+      "alt": "Spotted Thick-knee standing side-on at night in Kruger, with spotted upperparts and yellow legs",
+      "caption": "Spotted Thick-knee standing side-on at night in Kruger, with spotted upperparts and yellow legs"
+    }
+  ],
+  "research": {
+    "confidence": "medium",
+    "needsReview": false,
+    "note": "Status is resident and all twelve months are listed. Newman calls it a common resident. Chick down, a sex difference and a flight photograph are gaps. The call is grade A from the Free State."
+  }
 }

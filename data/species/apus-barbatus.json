@@ -7,8 +7,53 @@
     "af": "Swartwindswael"
   },
   "family": "apodidae",
-  "summary": "The details for this species have not been published yet.",
-  "sampleData": true,
+  "status": "intra-african-migrant",
+  "monthsPresent": [
+    9,
+    10,
+    11,
+    12,
+    1,
+    2,
+    3,
+    4
+  ],
+  "size": {
+    "lengthCm": {
+      "min": 16,
+      "max": 18
+    },
+    "note": "Wikipedia gives 16–18 cm."
+  },
+  "habitat": "Breeds on damp mountains, usually in dry cracks under cliff overhangs, and forages over open lowland country, often in large mixed swift flocks. Kruger is foraging country rather than the cliff breeding habitat.",
+  "summary": "A bulky blackish-brown swift with a short forked tail and long swept-back wings. A small white or pale grey chin patch is not visible at a distance. Compared with Common Swift, the black back contrasts with paler secondary feathers, and the flight is steadier, with short glides. The South African race migrates north after breeding. The call is a strident hissing scream. The sexes are not separated in these accounts.",
+  "sampleData": false,
+  "similar": [
+    {
+      "slug": "apus-apus",
+      "note": "Common Swift lacks the contrast between a black back and paler secondaries, and its flight is less steady. Both have a pale chin that is hard to see and no white rump."
+    }
+  ],
+  "sources": [
+    {
+      "title": "The Atlas of Southern African Birds, Vol. 1 (Black Swift)",
+      "url": "https://sabap2.birdmap.africa/docs/sabap1/412.pdf",
+      "publisher": "BirdLife South Africa",
+      "year": 1997
+    },
+    {
+      "title": "African black swift",
+      "url": "https://en.wikipedia.org/wiki/African_black_swift",
+      "publisher": "Wikipedia",
+      "year": 2026
+    },
+    {
+      "title": "Apus barbatus (African black swift)",
+      "url": "https://www.biodiversityexplorer.info/birds/apodidae/apus_barbatus.htm",
+      "publisher": "Biodiversity Explorer",
+      "year": null
+    }
+  ],
   "population": {
     "estimate": {
       "low": 64,
@@ -35,8 +80,131 @@
     },
     "tierApplied": "D"
   },
-  "variants": [],
-  "viewNotes": [],
-  "calls": [],
-  "images": []
+  "variants": [
+    {
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "marks": {
+        "bill": {
+          "colour": null,
+          "shape": null
+        },
+        "eye": {
+          "iris": null,
+          "ring": null
+        },
+        "legs": {
+          "colour": null
+        },
+        "head": {
+          "crown": "black",
+          "face": "dark-brown",
+          "throat": [
+            "white",
+            "grey"
+          ],
+          "pattern": "A small white or pale grey chin patch is not visible from a distance."
+        },
+        "upperparts": {
+          "back": "black",
+          "rump": null,
+          "pattern": "The black back contrasts with paler secondary feathers."
+        },
+        "underparts": {
+          "breast": "dark-brown",
+          "belly": "dark-brown",
+          "pattern": null
+        },
+        "wings": {
+          "above": "black",
+          "below": null,
+          "pattern": "Paler secondary feathers against the black back. Long swept-back wings."
+        },
+        "tail": {
+          "colour": "dark-brown",
+          "shape": "short and forked"
+        }
+      }
+    }
+  ],
+  "viewNotes": [
+    {
+      "view": "flight-below",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Dark from below. The pale chin is not a distance mark. The inner wing can look paler than the body."
+    },
+    {
+      "view": "flight-above",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Black back contrasting with paler secondaries. Steady flight with short glides."
+    },
+    {
+      "view": "flight-side",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Bulky, with a short fork and long crescent wings. No white rump."
+    },
+    {
+      "view": "perched-front",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Swifts cling to a vertical surface. They do not settle on the ground, and a normal perched view is not described."
+    },
+    {
+      "view": "perched-back",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "The black back and paler secondaries are the rear contrast when the wing is open. A clinging view is rarely the one seen in Kruger."
+    }
+  ],
+  "calls": [
+    {
+      "sex": "any",
+      "type": "call",
+      "description": "A strident double-rasped hissing scream, zzzzzzzZZZTT. The texts do not separate the sexes. Grade B from God’s Window, Mpumalanga. The grade A files, if any, were not ahead of this playable cut.",
+      "recordings": [
+        {
+          "key": "xeno-canto/XC368196",
+          "source": "https://xeno-canto.org/368196",
+          "fileUrl": "https://xeno-canto.org/sounds/uploaded/RFRTVEHIZX/XC368196-170406_AfricanBlackSwifts_flockcalls_God%27sWindow_OC.mp3",
+          "author": "Oscar Campbell",
+          "license": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ]
+    }
+  ],
+  "images": [
+    {
+      "key": "apus-barbatus/mopani-below.jpg",
+      "view": "flight-below",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "source": "https://www.inaturalist.org/observations/196267123",
+      "fileUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/345496853/large.jpg",
+      "author": "Duncan McKenzie",
+      "license": "CC BY-NC 4.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+      "aiGenerated": false,
+      "hosted": false,
+      "alt": "African Black Swift in flight from below in Mopani, Kruger, with a pale inner wing",
+      "caption": "African Black Swift in flight from below in Mopani, Kruger, with a pale inner wing"
+    }
+  ],
+  "research": {
+    "confidence": "medium",
+    "needsReview": false,
+    "note": "Status is an intra-African migrant. Wikipedia says the South African race winters further north. SABAP1 gives egglaying from September to February and a late-April passage bird in northern Mozambique, so September to April are listed. How far birds travel from cliff colonies into Kruger is not stated. Chick down and a sexed call are not described. The recording is grade B."
+  }
 }
