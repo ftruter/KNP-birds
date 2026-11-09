@@ -7,8 +7,45 @@
     "af": "Kransvalk"
   },
   "family": "falconidae",
-  "summary": "The details for this species have not been published yet.",
-  "sampleData": true,
+  "status": "resident",
+  "size": {
+    "lengthCm": {
+      "min": 30,
+      "max": 33
+    },
+    "note": "Newman's Birds gives 30–33 cm."
+  },
+  "monthsPresent": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+  ],
+  "habitat": "Singly or in pairs in hilly country and grassland. It perches on roadside posts, hovers 5–20 m up, and roosts on cliffs or in trees.",
+  "summary": "A common resident. Grey head, rufous upperwings and underparts, and a grey upper tail. The male’s tail has a single bar. The female’s tail is well barred, and she may lack the grey head. Some females look like the immature, with the head the same colour as the rest of the plumage and heavy dark-brown streaking. Newman does not describe the voice. The Kemp code VB was left unchanged.",
+  "sampleData": false,
+  "similar": [
+    {
+      "slug": "falco-naumanni",
+      "note": "Lesser Kestrel shows more contrast between paler underparts and darker upper parts, and the female has a brown tail. Rock Kestrel is more robust and usually occurs singly or in pairs."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Rock Kestrel",
+      "url": "https://newmansbirds.com/birds/rock-kestrel/",
+      "publisher": "Newman's Birds",
+      "year": 2026
+    }
+  ],
   "population": {
     "estimate": {
       "low": 4,
@@ -35,8 +72,171 @@
     },
     "tierApplied": "D"
   },
-  "variants": [],
-  "viewNotes": [],
-  "calls": [],
-  "images": []
+  "variants": [
+    {
+      "age": "adult",
+      "sex": "male",
+      "season": "any",
+      "marks": {
+        "bill": {
+          "colour": null,
+          "shape": null
+        },
+        "eye": {
+          "iris": null,
+          "ring": null
+        },
+        "legs": {
+          "colour": null
+        },
+        "head": {
+          "crown": "grey",
+          "face": null,
+          "throat": null,
+          "pattern": null
+        },
+        "upperparts": {
+          "back": "rufous",
+          "rump": null,
+          "pattern": null
+        },
+        "underparts": {
+          "breast": "rufous",
+          "belly": "rufous",
+          "pattern": null
+        },
+        "wings": {
+          "above": "rufous",
+          "below": null,
+          "pattern": null
+        },
+        "tail": {
+          "colour": "grey",
+          "shape": "A single bar."
+        }
+      }
+    },
+    {
+      "age": "adult",
+      "sex": "female",
+      "season": "any",
+      "marks": {
+        "bill": {
+          "colour": null,
+          "shape": null
+        },
+        "eye": {
+          "iris": null,
+          "ring": null
+        },
+        "legs": {
+          "colour": null
+        },
+        "head": {
+          "crown": null,
+          "face": null,
+          "throat": null,
+          "pattern": "May have a grey head, or a head the same colour as the rest of the plumage."
+        },
+        "upperparts": {
+          "back": null,
+          "rump": null,
+          "pattern": null
+        },
+        "underparts": {
+          "breast": "rufous",
+          "belly": "rufous",
+          "pattern": "Some are heavily streaked dark brown, like the immature."
+        },
+        "wings": {
+          "above": "rufous",
+          "below": null,
+          "pattern": null
+        },
+        "tail": {
+          "colour": "grey",
+          "shape": "Well barred."
+        }
+      }
+    }
+  ],
+  "viewNotes": [
+    {
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "male",
+      "season": "any",
+      "note": "Grey head, rufous wings and underparts, and a grey tail with one bar."
+    },
+    {
+      "view": "perched-front",
+      "age": "adult",
+      "sex": "male",
+      "season": "any",
+      "note": "Rufous underparts and a grey head."
+    },
+    {
+      "view": "perched-back",
+      "age": "adult",
+      "sex": "male",
+      "season": "any",
+      "note": "Rufous upper parts and a grey upper tail."
+    },
+    {
+      "view": "flight-above",
+      "age": "adult",
+      "sex": "male",
+      "season": "any",
+      "note": "It hovers 5–20 m above the ground, often turning into the wind."
+    },
+    {
+      "view": "flight-below",
+      "age": "adult",
+      "sex": "male",
+      "season": "any",
+      "note": "Rufous underparts."
+    }
+  ],
+  "calls": [
+    {
+      "sex": "any",
+      "type": "call",
+      "description": "Newman’s species page does not describe the voice. Grade A call from near Cape Town. The filename is generic and shows a 1000 Hz high-pass. It was not cleaned again.",
+      "recordings": [
+        {
+          "key": "xeno-canto/XC1073735",
+          "source": "https://xeno-canto.org/1073735",
+          "fileUrl": "https://xeno-canto.org/sounds/uploaded/YSGTQVRQZI/XC1073735-20251129_MUIZ_TGridley_Iphone_133007_SLE_1000HP_-3dB.mp3",
+          "author": "African Bioacoustics Community",
+          "license": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ]
+    }
+  ],
+  "images": [
+    {
+      "key": "falco-rupicolus/side.jpg",
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "source": "https://www.inaturalist.org/observations/342271156",
+      "fileUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/623240533/large.jpg",
+      "author": "Pieter la Grange",
+      "license": "CC BY-NC 4.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+      "aiGenerated": false,
+      "hosted": false,
+      "alt": "Rock Kestrel in the Mopani district",
+      "caption": "Rock Kestrel in the Mopani district."
+    }
+  ],
+  "research": {
+    "confidence": "medium",
+    "needsReview": false,
+    "note": "Status is resident and all twelve months are listed. Newman calls it a common resident. The Kemp code VB was left unchanged. Population figures were left unchanged."
+  }
 }
