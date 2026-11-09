@@ -3706,6 +3706,86 @@
           }
         }
       ]
+    },
+    "campocolinus-coqui": {
+      "calls": [
+        {
+          "index": 0,
+          "quality": {
+            "xeno-canto/XC520229": "A"
+          }
+        }
+      ]
+    },
+    "coturnix-coturnix": {
+      "calls": [
+        {
+          "index": 0,
+          "quality": {
+            "xeno-canto/XC137862": "A"
+          }
+        }
+      ]
+    },
+    "coturnix-delegorguei": {
+      "calls": [
+        {
+          "index": 0,
+          "quality": {
+            "xeno-canto/XC746385": "A"
+          }
+        }
+      ]
+    },
+    "ortygornis-sephaena": {
+      "calls": [
+        {
+          "index": 0,
+          "quality": {
+            "xeno-canto/XC210091": "A"
+          }
+        }
+      ]
+    },
+    "pternistis-afer": {
+      "calls": [
+        {
+          "index": 0,
+          "quality": {
+            "xeno-canto/XC501361": "A"
+          }
+        }
+      ]
+    },
+    "pternistis-natalensis": {
+      "calls": [
+        {
+          "index": 0,
+          "quality": {
+            "xeno-canto/XC208083": "A"
+          }
+        }
+      ]
+    },
+    "pternistis-swainsonii": {
+      "calls": [
+        {
+          "index": 0,
+          "quality": {
+            "xeno-canto/XC126346": "A"
+          }
+        }
+      ]
+    },
+    "scleroptila-shelleyi": {
+      "calls": [
+        {
+          "index": 0,
+          "quality": {
+            "xeno-canto/XC415830": "A"
+          }
+        }
+      ]
     }
   }
 }

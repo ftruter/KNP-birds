@@ -7,8 +7,30 @@
     "af": "Natalse Fisant"
   },
   "family": "phasianidae",
-  "summary": "The details for this species have not been published yet.",
-  "sampleData": true,
+  "size": {
+    "lengthCm": {
+      "min": 30,
+      "max": 38
+    },
+    "note": "Newman's Birds gives 30–38 cm."
+  },
+  "habitat": "Parties of six to ten favour granite koppies, riverine forest, wooded valleys and thornveld, generally in rocky situations and seldom far from water.",
+  "summary": "A common, near-endemic resident. Dark brown above with black streaking. The colour key says speckled black and white below. The description says entirely black-and-white-barred underparts, bolder than Red-billed Spurfowl, with red legs and a red bill with a yellow base. The call is a harsh kwali, KWALI, kwali, and a raucous cackle when alarmed. The Kemp paper name Natal Francolin and the code RB were left unchanged.",
+  "sampleData": false,
+  "sources": [
+    {
+      "title": "Natal Spurfowl",
+      "url": "https://newmansbirds.com/birds/natal-spurfowl/",
+      "publisher": "Newman's Birds",
+      "year": 2026
+    },
+    {
+      "title": "Kemp A.C., Herholdt J.J., Whyte I. & Harrison J. (2001). Birds of the two largest national parks in South Africa: a method to generate estimates of population size for all species and assess their conservation ecology. S. Afr. J. Sci. 97: 393–403.",
+      "url": "https://journals.co.za/doi/pdf/10.10520/EJC97367",
+      "publisher": "South African Journal of Science",
+      "year": 2001
+    }
+  ],
   "population": {
     "estimate": {
       "low": 8192,
@@ -35,8 +57,144 @@
     },
     "tierApplied": "D"
   },
-  "variants": [],
-  "viewNotes": [],
-  "calls": [],
-  "images": []
+  "variants": [
+    {
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "marks": {
+        "bill": {
+          "colour": [
+            "red",
+            "yellow"
+          ],
+          "shape": "Red bill with a yellow base."
+        },
+        "eye": {
+          "iris": null,
+          "ring": null
+        },
+        "legs": {
+          "colour": "red"
+        },
+        "head": {
+          "crown": null,
+          "face": null,
+          "throat": null
+        },
+        "upperparts": {
+          "back": "dark-brown",
+          "rump": null,
+          "pattern": "Black streaking."
+        },
+        "underparts": {
+          "breast": null,
+          "belly": null,
+          "pattern": "The colour key says speckled black and white. The description says entirely black-and-white-barred."
+        },
+        "wings": {
+          "above": null,
+          "below": null
+        },
+        "tail": {
+          "colour": null,
+          "shape": null
+        }
+      }
+    }
+  ],
+  "viewNotes": [
+    {
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Dark brown above, black-and-white underparts, red legs and a red-and-yellow bill."
+    },
+    {
+      "view": "perched-front",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Red bill with a yellow base."
+    },
+    {
+      "view": "perched-back",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Dark brown upperparts with black streaking."
+    },
+    {
+      "view": "flight-above",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "A flight pattern was not described."
+    },
+    {
+      "view": "flight-below",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Black-and-white underparts, described both as speckled and as barred."
+    }
+  ],
+  "calls": [
+    {
+      "sex": "any",
+      "type": "call",
+      "description": "A harsh kwali, KWALI, kwali. When alarmed, a raucous cackling. Grade A call catalogued at Mmabolela Reserve, Limpopo. The filename is XC208083-27-28 November 2014 Umzumbi.mp3, so the file name says Umzumbi.",
+      "recordings": [
+        {
+          "key": "xeno-canto/XC208083",
+          "source": "https://xeno-canto.org/208083",
+          "fileUrl": "https://xeno-canto.org/sounds/uploaded/XKXDFWNSPA/XC208083-27-28%20November%202014%20Umzumbi.mp3",
+          "author": "Jeremy Hegge",
+          "license": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ]
+    }
+  ],
+  "images": [
+    {
+      "key": "pternistis-natalensis/side.jpg",
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "source": "https://www.inaturalist.org/observations/322220589",
+      "fileUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/582864882/large.jpg",
+      "author": "Yolande Oelsen",
+      "license": "CC BY-NC 4.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+      "aiGenerated": false,
+      "hosted": false,
+      "alt": "Natal Spurfowl, barred black-and-white underparts and red legs",
+      "caption": "Natal Spurfowl at Bushbuckridge, dark brown above, black-and-white underparts, red legs and a red bill with a yellow base."
+    }
+  ],
+  "research": {
+    "confidence": "medium",
+    "needsReview": true,
+    "note": "Newman calls it a common near-endemic resident, so status is resident and all twelve months are listed. The underparts are speckled in the colour key and barred in the description, which is why this needs review. Red-billed Spurfowl is the comparison Newman names and is not in this list. Population figures, the Kemp paper name Natal Francolin and the code RB were left unchanged."
+  },
+  "status": "resident",
+  "monthsPresent": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+  ]
 }

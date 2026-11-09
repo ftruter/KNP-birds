@@ -7,8 +7,36 @@
     "af": "Swempie"
   },
   "family": "phasianidae",
-  "summary": "The details for this species have not been published yet.",
-  "sampleData": true,
+  "size": {
+    "lengthCm": {
+      "min": 28,
+      "max": 28
+    },
+    "note": "Newman's Birds gives 28 cm."
+  },
+  "habitat": "Pairs or small family groups in well-grassed bushveld and woodland. It walks slowly and stooped, and crouches when alarmed.",
+  "summary": "A common resident. A small francolin. The male has a tawny head and neck and barred underparts. The female has a white throat bordered black and a black eyebrow extending to the upper neck. The body is light brown with fine black barring on the chest. The call is a piping ko-kwee, ko-kwee, or be-quick, be-quick. Males also give a high crowing kek, KEKekekekekekekekekek, the second note loudest. Newman’s page uses Peliperdix coqui. This file keeps Campocolinus coqui. The Kemp code RB was left unchanged.",
+  "sampleData": false,
+  "similar": [
+    {
+      "slug": "scleroptila-shelleyi",
+      "note": "Shelley’s Francolin also has a white throat, but with a black surround, a white stripe through the eye, and deep red blotches on the upper breast."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Coqui Francolin",
+      "url": "https://newmansbirds.com/birds/coqui-francolin/",
+      "publisher": "Newman's Birds",
+      "year": 2026
+    },
+    {
+      "title": "Kemp A.C., Herholdt J.J., Whyte I. & Harrison J. (2001). Birds of the two largest national parks in South Africa: a method to generate estimates of population size for all species and assess their conservation ecology. S. Afr. J. Sci. 97: 393–403.",
+      "url": "https://journals.co.za/doi/pdf/10.10520/EJC97367",
+      "publisher": "South African Journal of Science",
+      "year": 2001
+    }
+  ],
   "population": {
     "estimate": {
       "low": 4096,
@@ -35,8 +63,217 @@
     },
     "tierApplied": "D"
   },
-  "variants": [],
-  "viewNotes": [],
-  "calls": [],
-  "images": []
+  "variants": [
+    {
+      "age": "adult",
+      "sex": "male",
+      "season": "any",
+      "marks": {
+        "bill": {
+          "colour": null,
+          "shape": null
+        },
+        "eye": {
+          "iris": null,
+          "ring": null
+        },
+        "legs": {
+          "colour": null
+        },
+        "head": {
+          "crown": "tawny",
+          "face": null,
+          "throat": null,
+          "pattern": "Tawny head and neck."
+        },
+        "upperparts": {
+          "back": null,
+          "rump": null,
+          "pattern": "Light brown body."
+        },
+        "underparts": {
+          "breast": null,
+          "belly": null,
+          "pattern": "Barred underparts. Fine black barring on the chest."
+        },
+        "wings": {
+          "above": null,
+          "below": null
+        },
+        "tail": {
+          "colour": null,
+          "shape": null
+        }
+      }
+    },
+    {
+      "age": "adult",
+      "sex": "female",
+      "season": "any",
+      "marks": {
+        "bill": {
+          "colour": null,
+          "shape": null
+        },
+        "eye": {
+          "iris": null,
+          "ring": null
+        },
+        "legs": {
+          "colour": null
+        },
+        "head": {
+          "crown": null,
+          "face": null,
+          "throat": "white",
+          "pattern": "White throat bordered black, and a black eyebrow extending to the upper neck."
+        },
+        "upperparts": {
+          "back": null,
+          "rump": null
+        },
+        "underparts": {
+          "breast": null,
+          "belly": null
+        },
+        "wings": {
+          "above": null,
+          "below": null
+        },
+        "tail": {
+          "colour": null,
+          "shape": null
+        }
+      }
+    }
+  ],
+  "viewNotes": [
+    {
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "male",
+      "season": "any",
+      "note": "Tawny head and neck, with barred underparts."
+    },
+    {
+      "view": "perched-front",
+      "age": "adult",
+      "sex": "male",
+      "season": "any",
+      "note": "Tawny head."
+    },
+    {
+      "view": "perched-back",
+      "age": "adult",
+      "sex": "male",
+      "season": "any",
+      "note": "Light brown upperparts."
+    },
+    {
+      "view": "flight-above",
+      "age": "adult",
+      "sex": "male",
+      "season": "any",
+      "note": "A flight pattern was not described."
+    },
+    {
+      "view": "flight-below",
+      "age": "adult",
+      "sex": "male",
+      "season": "any",
+      "note": "Barred underparts with fine black barring on the chest."
+    },
+    {
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "female",
+      "season": "any",
+      "note": "White throat bordered black and a black eyebrow."
+    },
+    {
+      "view": "perched-front",
+      "age": "adult",
+      "sex": "female",
+      "season": "any",
+      "note": "Black eyebrow and a white throat with a black border."
+    },
+    {
+      "view": "perched-back",
+      "age": "adult",
+      "sex": "female",
+      "season": "any",
+      "note": "The female back was not described separately."
+    },
+    {
+      "view": "flight-above",
+      "age": "adult",
+      "sex": "female",
+      "season": "any",
+      "note": "A female flight pattern was not described."
+    },
+    {
+      "view": "flight-below",
+      "age": "adult",
+      "sex": "female",
+      "season": "any",
+      "note": "The female underparts were not described separately from the species.’ chest barring."
+    }
+  ],
+  "calls": [
+    {
+      "sex": "any",
+      "type": "call",
+      "description": "A piping ko-kwee, ko-kwee, or be-quick, be-quick, repeated continually. Males also give a loud high-pitched kek, KEKekekekekekekekekek, the second note loudest. Grade A call from Lake Nakuru, Kenya. The Limpopo grade A file is a song, so it ranks below a plain call. The filename is XC520229-2019-11-04 10_50plainbelliedcoqui.mp3.",
+      "recordings": [
+        {
+          "key": "xeno-canto/XC520229",
+          "source": "https://xeno-canto.org/520229",
+          "fileUrl": "https://xeno-canto.org/sounds/uploaded/LWQXRZHFCU/XC520229-2019-11-04%2010_50plainbelliedcoqui.mp3",
+          "author": "Niall Perrins",
+          "license": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ]
+    }
+  ],
+  "images": [
+    {
+      "key": "campocolinus-coqui/side.jpg",
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "female",
+      "season": "any",
+      "source": "https://www.inaturalist.org/observations/37397700",
+      "fileUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/59279740/large.jpeg",
+      "author": "Nick Helme",
+      "license": "CC BY-NC 4.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+      "aiGenerated": false,
+      "hosted": false,
+      "alt": "Female Coqui Francolin, white throat bordered black and a dark eyebrow",
+      "caption": "Female Coqui Francolin in Kruger, white throat bordered black and a black eyebrow."
+    }
+  ],
+  "research": {
+    "confidence": "medium",
+    "needsReview": true,
+    "note": "Newman calls it a common resident, so status is resident and all twelve months are listed. The female is only the throat and eyebrow, which is why this needs review. Orange River Francolin is a comparison Newman names and is not in this list. Population figures and the Kemp code RB were left unchanged."
+  },
+  "status": "resident",
+  "monthsPresent": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+  ]
 }

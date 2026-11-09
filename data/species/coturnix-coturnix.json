@@ -7,8 +7,36 @@
     "af": "Afrikaanse Kwartel"
   },
   "family": "phasianidae",
-  "summary": "The details for this species have not been published yet.",
-  "sampleData": true,
+  "size": {
+    "lengthCm": {
+      "min": 18,
+      "max": 18
+    },
+    "note": "Newman's Birds gives 18 cm."
+  },
+  "habitat": "Pairs in bushveld, grassland, pastures and cultivated fields. It usually flushes with reluctance.",
+  "summary": "Newman calls it a common resident and visitor. Pale underparts in both sexes. Above rufous, mottled and streaked black and white, with white head markings, a dark throat, pale rufous underparts and white-streaked flanks. In flight it is difficult to tell from Harlequin Quail. When breeding it calls whit-WHIttit, whit-WHIttit, rendered wet-my-lips, by day or night. If flushed it calls pree-pree-pree. Status and months are unset. No Kruger photograph. The Kemp code VB was left unchanged.",
+  "sampleData": false,
+  "similar": [
+    {
+      "slug": "coturnix-delegorguei",
+      "note": "The Harlequin Quail account printed on the Crested Francolin page says the male is darker, with black markings on a white throat and chestnut underparts."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Common Quail",
+      "url": "https://newmansbirds.com/birds/common-quail/",
+      "publisher": "Newman's Birds",
+      "year": 2026
+    },
+    {
+      "title": "Kemp A.C., Herholdt J.J., Whyte I. & Harrison J. (2001). Birds of the two largest national parks in South Africa: a method to generate estimates of population size for all species and assess their conservation ecology. S. Afr. J. Sci. 97: 393–403.",
+      "url": "https://journals.co.za/doi/pdf/10.10520/EJC97367",
+      "publisher": "South African Journal of Science",
+      "year": 2001
+    }
+  ],
   "population": {
     "estimate": {
       "low": 8192,
@@ -35,8 +63,110 @@
     },
     "tierApplied": "D"
   },
-  "variants": [],
-  "viewNotes": [],
-  "calls": [],
-  "images": []
+  "variants": [
+    {
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "marks": {
+        "bill": {
+          "colour": null,
+          "shape": null
+        },
+        "eye": {
+          "iris": null,
+          "ring": null
+        },
+        "legs": {
+          "colour": null
+        },
+        "head": {
+          "crown": null,
+          "face": null,
+          "throat": null,
+          "pattern": "White markings on the head. Throat dark."
+        },
+        "upperparts": {
+          "back": "rufous",
+          "rump": null,
+          "pattern": "Mottled and streaked black and white."
+        },
+        "underparts": {
+          "breast": null,
+          "belly": null,
+          "pattern": "Pale rufous below. Flanks streaked white. Pale underparts in both sexes."
+        },
+        "wings": {
+          "above": null,
+          "below": null
+        },
+        "tail": {
+          "colour": null,
+          "shape": null
+        }
+      }
+    }
+  ],
+  "viewNotes": [
+    {
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Rufous above, mottled and streaked black and white, with pale underparts."
+    },
+    {
+      "view": "perched-front",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "White head markings and a dark throat."
+    },
+    {
+      "view": "perched-back",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Rufous upperparts mottled black and white."
+    },
+    {
+      "view": "flight-above",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "In flight difficult to tell from Harlequin Quail. No separate flight pattern was described."
+    },
+    {
+      "view": "flight-below",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Pale rufous underparts, flanks streaked white."
+    }
+  ],
+  "calls": [
+    {
+      "sex": "any",
+      "type": "call",
+      "description": "When breeding, a penetrating whit-WHIttit, whit-WHIttit, rendered wet-my-lips, by day or night. If flushed, pree-pree-pree. Grade A call from Furnes, Hedmark, Norway. The only South African grade A has a Cloud Cisticola in the background. The filename is XC137862-Vaktel XC -Høsbjør - 09.06.2013 kl. 13.00 1.mp3.",
+      "recordings": [
+        {
+          "key": "xeno-canto/XC137862",
+          "source": "https://xeno-canto.org/137862",
+          "fileUrl": "https://xeno-canto.org/sounds/uploaded/RFGQDPLDEC/XC137862-Vaktel%20%20XC%20-H%C3%B8sbj%C3%B8r%20-%2009.06.2013%20kl.%2013.00%20%201.mp3",
+          "author": "Elias A. Ryberg",
+          "license": "CC BY-NC-SA 3.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/3.0/",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ]
+    }
+  ],
+  "images": [],
+  "research": {
+    "confidence": "medium",
+    "needsReview": true,
+    "note": "Newman says common resident and visitor, so status and monthsPresent are unset. No openly licensed research-grade photo was found in the Kruger box. Population figures and the Kemp code VB were left unchanged."
+  }
 }
