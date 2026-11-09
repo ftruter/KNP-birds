@@ -7,8 +7,49 @@
     "af": "Jamesonvuurvinkie"
   },
   "family": "estrildidae",
-  "summary": "The details for this species have not been published yet.",
-  "sampleData": true,
+  "status": "resident",
+  "size": {
+    "lengthCm": {
+      "min": 11,
+      "max": 11
+    },
+    "note": "Newman's Birds gives 11 cm."
+  },
+  "monthsPresent": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+  ],
+  "habitat": "Thickets and rank grass in thornveld, and riparian and secondary growth around cultivated land. Drier places than African Firefinch.",
+  "summary": "A common resident, the reddest firefinch. The bill is blackish in both sexes. The male has the crown, nape and mantle washed pink, rose-pink underparts, and upper parts less dark than African Firefinch. The female is more orange-pink below. The immature male is more uniformly brown above, rose-pink below, with a brownish wash on the side of the breast. Calls include a tinkling trrr-trrr alarm, tewee-tewee, fweeee and zik-zik. The Kemp code RB was left unchanged.",
+  "sampleData": false,
+  "similar": [
+    {
+      "slug": "lagonosticta-rubricata",
+      "note": "African Firefinch has a grey crown and nape and, in the male, a blackish belly. Jameson’s Firefinch is pinker, with less dark upper parts."
+    },
+    {
+      "slug": "lagonosticta-senegala",
+      "note": "Red-billed Firefinch has a reddish bill. Jameson’s Firefinch has a blackish bill."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Jameson’s Firefinch",
+      "url": "https://newmansbirds.com/birds/jamesons-firefinch/",
+      "publisher": "Newman's Birds",
+      "year": 2026
+    }
+  ],
   "population": {
     "estimate": {
       "low": 65536,
@@ -35,8 +76,214 @@
     },
     "tierApplied": "D"
   },
-  "variants": [],
-  "viewNotes": [],
-  "calls": [],
-  "images": []
+  "variants": [
+    {
+      "age": "adult",
+      "sex": "male",
+      "season": "any",
+      "marks": {
+        "bill": {
+          "colour": "black",
+          "shape": "Blackish."
+        },
+        "eye": {
+          "iris": null,
+          "ring": null
+        },
+        "legs": {
+          "colour": null
+        },
+        "head": {
+          "crown": "pink",
+          "face": null,
+          "throat": null,
+          "pattern": "Crown and nape washed pink. Head pinkish-red."
+        },
+        "upperparts": {
+          "back": "brown",
+          "rump": "pink",
+          "pattern": "Mantle washed pink. Upper parts brown washed pinkish-red, less dark than African Firefinch."
+        },
+        "underparts": {
+          "breast": "pink",
+          "belly": "pink",
+          "pattern": "Rose-pink underparts."
+        },
+        "wings": {
+          "above": null,
+          "below": null,
+          "pattern": null
+        },
+        "tail": {
+          "colour": null,
+          "shape": null
+        }
+      }
+    },
+    {
+      "age": "adult",
+      "sex": "female",
+      "season": "any",
+      "marks": {
+        "bill": {
+          "colour": "black",
+          "shape": "Blackish."
+        },
+        "eye": {
+          "iris": null,
+          "ring": null
+        },
+        "legs": {
+          "colour": null
+        },
+        "head": {
+          "crown": null,
+          "face": null,
+          "throat": null,
+          "pattern": null
+        },
+        "upperparts": {
+          "back": null,
+          "rump": null,
+          "pattern": null
+        },
+        "underparts": {
+          "breast": "pink",
+          "belly": "pink",
+          "pattern": "More orange-pink on the underparts than the male."
+        },
+        "wings": {
+          "above": null,
+          "below": null,
+          "pattern": null
+        },
+        "tail": {
+          "colour": null,
+          "shape": null
+        }
+      }
+    },
+    {
+      "age": "immature",
+      "sex": "male",
+      "season": "any",
+      "marks": {
+        "bill": {
+          "colour": null,
+          "shape": null
+        },
+        "eye": {
+          "iris": null,
+          "ring": null
+        },
+        "legs": {
+          "colour": null
+        },
+        "head": {
+          "crown": null,
+          "face": null,
+          "throat": null,
+          "pattern": null
+        },
+        "upperparts": {
+          "back": "brown",
+          "rump": null,
+          "pattern": "More uniformly brown above."
+        },
+        "underparts": {
+          "breast": "pink",
+          "belly": "pink",
+          "pattern": "Rose-pink below, with a brownish wash on the side of the breast."
+        },
+        "wings": {
+          "above": null,
+          "below": null,
+          "pattern": null
+        },
+        "tail": {
+          "colour": null,
+          "shape": null
+        }
+      }
+    }
+  ],
+  "viewNotes": [
+    {
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "male",
+      "season": "any",
+      "note": "Pinkish-red head and underparts, with brown upper parts washed pink."
+    },
+    {
+      "view": "perched-front",
+      "age": "adult",
+      "sex": "male",
+      "season": "any",
+      "note": "Rose-pink underparts and a blackish bill."
+    },
+    {
+      "view": "perched-back",
+      "age": "adult",
+      "sex": "male",
+      "season": "any",
+      "note": "Brown upper parts washed pinkish-red, including the mantle."
+    },
+    {
+      "view": "flight-above",
+      "age": "adult",
+      "sex": "male",
+      "season": "any",
+      "note": "A separate flight pattern was not described."
+    },
+    {
+      "view": "flight-below",
+      "age": "adult",
+      "sex": "male",
+      "season": "any",
+      "note": "Rose-pink underparts."
+    }
+  ],
+  "calls": [
+    {
+      "sex": "any",
+      "type": "call",
+      "description": "A tinkling trrr-trrr alarm, plus tewee-tewee, fweeee or zik, zik. Grade A call from Nanzhila Plains, Kafue. The filename names Jameson’s Firefinch and the call. A Limpopo file is a song, so this call was kept.",
+      "recordings": [
+        {
+          "key": "xeno-canto/XC585252",
+          "source": "https://xeno-canto.org/585252",
+          "fileUrl": "https://xeno-canto.org/sounds/uploaded/IIJAXHKSCC/XC585252-Jameson%27s%20Firefinch%20%28call%29%2020200711%2CNanzhilaPlains%2CKafueNP%2CZAMBIA.mp3",
+          "author": "Dries Van de Loock",
+          "license": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ]
+    }
+  ],
+  "images": [
+    {
+      "key": "lagonosticta-rhodopareia/side.jpg",
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "source": "https://www.inaturalist.org/observations/254534840",
+      "fileUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/455937050/large.jpeg",
+      "author": "Corné Rautenbach",
+      "license": "CC BY-NC 4.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+      "aiGenerated": false,
+      "hosted": false,
+      "alt": "Jameson’s Firefinch at Letaba",
+      "caption": "Jameson’s Firefinch at Letaba Rest Camp."
+    }
+  ],
+  "research": {
+    "confidence": "medium",
+    "needsReview": false,
+    "note": "Status is resident and all twelve months are listed. Population figures were left unchanged."
+  }
 }

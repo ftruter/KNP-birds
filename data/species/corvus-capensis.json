@@ -7,8 +7,49 @@
     "af": "Swartkraai"
   },
   "family": "corvidae",
-  "summary": "The details for this species have not been published yet.",
-  "sampleData": true,
+  "status": "resident",
+  "monthsPresent": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+  ],
+  "size": {
+    "lengthCm": {
+      "min": 48,
+      "max": 53
+    },
+    "note": "Newman's Birds gives 48–53 cm."
+  },
+  "habitat": "Singles, pairs or flocks in farmland and open country. It perches and nests on pylons and tolerates drier country than the Pied Crow. No openly licensed Kruger photograph was found.",
+  "summary": "A common, widespread resident, generally less common than the Pied Crow. Entirely glossy black. The call is a high-pitched kraaa. The Newman family text says the sexes are alike and immatures are similar to adults. The Kemp name remains Black Crow and the code NB was left unchanged.",
+  "sampleData": false,
+  "similar": [
+    {
+      "slug": "corvus-albus",
+      "note": "Pied Crow has a white breast and collar. Cape Crow is entirely glossy black."
+    },
+    {
+      "slug": "corvus-albicollis",
+      "note": "White-necked Raven has a white nape and a heavy white-tipped bill. Cape Crow is entirely black."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Cape Crow",
+      "url": "https://newmansbirds.com/birds/cape-crow/",
+      "publisher": "Newman's Birds",
+      "year": 2026
+    }
+  ],
   "population": {
     "estimate": {
       "low": 1,
@@ -35,8 +76,111 @@
     },
     "tierApplied": "D"
   },
-  "variants": [],
-  "viewNotes": [],
-  "calls": [],
-  "images": []
+  "variants": [
+    {
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "marks": {
+        "bill": {
+          "colour": "black",
+          "shape": null
+        },
+        "eye": {
+          "iris": null,
+          "ring": null
+        },
+        "legs": {
+          "colour": null
+        },
+        "head": {
+          "crown": "black",
+          "face": "black",
+          "throat": null,
+          "pattern": null
+        },
+        "upperparts": {
+          "back": "black",
+          "rump": null,
+          "pattern": null
+        },
+        "underparts": {
+          "breast": "black",
+          "belly": "black",
+          "pattern": "Entirely glossy black."
+        },
+        "wings": {
+          "above": "black",
+          "below": null,
+          "pattern": null
+        },
+        "tail": {
+          "colour": null,
+          "shape": null
+        }
+      }
+    }
+  ],
+  "viewNotes": [
+    {
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Entirely glossy black crow, often on a pylon in open country."
+    },
+    {
+      "view": "perched-front",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Entirely black, including the bill."
+    },
+    {
+      "view": "perched-back",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Glossy black back."
+    },
+    {
+      "view": "flight-above",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "The upperwing was not named."
+    },
+    {
+      "view": "flight-below",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Entirely black below."
+    }
+  ],
+  "calls": [
+    {
+      "sex": "any",
+      "type": "call",
+      "description": "A high-pitched kraaa. The texts do not separate the sexes. Grade A from Somerset East, Eastern Cape. The filename is Cape Crow.",
+      "recordings": [
+        {
+          "key": "xeno-canto/XC247932",
+          "source": "https://xeno-canto.org/247932",
+          "fileUrl": "https://xeno-canto.org/sounds/uploaded/SGLTZLDXYI/XC247932-Cape%20Crow_1.mp3",
+          "author": "Lynette Rudman",
+          "license": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ]
+    }
+  ],
+  "images": [],
+  "research": {
+    "confidence": "medium",
+    "needsReview": true,
+    "note": "Status is resident and all twelve months are listed. Newman calls it a common resident. Population figures were left unchanged."
+  }
 }

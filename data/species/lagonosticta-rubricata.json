@@ -7,8 +7,45 @@
     "af": "Kaapse Vuurvinkie"
   },
   "family": "estrildidae",
-  "summary": "The details for this species have not been published yet.",
-  "sampleData": true,
+  "status": "resident",
+  "size": {
+    "lengthCm": {
+      "min": 11,
+      "max": 11
+    },
+    "note": "Newman's Birds gives 11 cm."
+  },
+  "monthsPresent": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+  ],
+  "habitat": "Pairs and small parties in dense bushveld, forest fringes and thorn and grass tangles. Moister and shadier than Jameson’s Firefinch.",
+  "summary": "A common resident. The bill looks black in the field. The colour line gives a red face, throat, breast, flanks and rump, and grey-brown upper parts including the crown. The male is identified by the grey crown and nape and a blackish belly. In Zimbabwe the crown and nape are washed pink, and the wings and mantle are browner than Jameson’s Firefinch. The female is not described. The call is a trilling bell-like phrase of chit-chit-chit ending wink-wink-wink, plus a stuttering alarm. The Kemp name is Bluebilled Firefinch and the code RB was left unchanged.",
+  "sampleData": false,
+  "similar": [
+    {
+      "slug": "lagonosticta-rhodopareia",
+      "note": "Jameson’s Firefinch is the redder bird, with pink-washed upper parts. African Firefinch has a grey crown and, in the male, a blackish belly."
+    }
+  ],
+  "sources": [
+    {
+      "title": "African Firefinch",
+      "url": "https://newmansbirds.com/birds/african-firefinch/",
+      "publisher": "Newman's Birds",
+      "year": 2026
+    }
+  ],
   "population": {
     "estimate": {
       "low": 32768,
@@ -35,8 +72,128 @@
     },
     "tierApplied": "D"
   },
-  "variants": [],
-  "viewNotes": [],
-  "calls": [],
-  "images": []
+  "variants": [
+    {
+      "age": "adult",
+      "sex": "male",
+      "season": "any",
+      "marks": {
+        "bill": {
+          "colour": "black",
+          "shape": "Blue-black. It looks black in the field."
+        },
+        "eye": {
+          "iris": null,
+          "ring": null
+        },
+        "legs": {
+          "colour": null
+        },
+        "head": {
+          "crown": "grey",
+          "face": "red",
+          "throat": "red",
+          "pattern": "Grey crown and nape. In Zimbabwe the crown and nape are washed pink."
+        },
+        "upperparts": {
+          "back": "grey",
+          "rump": "red",
+          "pattern": "Grey-brown above. Wings and mantle browner than Jameson’s Firefinch."
+        },
+        "underparts": {
+          "breast": "red",
+          "belly": "black",
+          "pattern": "Blackish belly. Red breast and flanks."
+        },
+        "wings": {
+          "above": null,
+          "below": null,
+          "pattern": null
+        },
+        "tail": {
+          "colour": null,
+          "shape": null
+        }
+      }
+    }
+  ],
+  "viewNotes": [
+    {
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "male",
+      "season": "any",
+      "note": "Red face and breast, grey crown, grey-brown upper parts and a blackish belly."
+    },
+    {
+      "view": "perched-front",
+      "age": "adult",
+      "sex": "male",
+      "season": "any",
+      "note": "Red throat and breast, then a blackish belly. The bill looks black."
+    },
+    {
+      "view": "perched-back",
+      "age": "adult",
+      "sex": "male",
+      "season": "any",
+      "note": "Grey-brown crown, nape and upper parts, with a red rump."
+    },
+    {
+      "view": "flight-above",
+      "age": "adult",
+      "sex": "male",
+      "season": "any",
+      "note": "A separate flight pattern was not described."
+    },
+    {
+      "view": "flight-below",
+      "age": "adult",
+      "sex": "male",
+      "season": "any",
+      "note": "Red breast and flanks and a blackish belly."
+    }
+  ],
+  "calls": [
+    {
+      "sex": "any",
+      "type": "call",
+      "description": "A trilling, bell-like call of chit-chit-chit sounds ending wink-wink-wink, plus a stuttering alarm. Grade A call from the Pretoriuskop area of Kruger. The filename names African Firefinch.",
+      "recordings": [
+        {
+          "key": "xeno-canto/XC952474",
+          "source": "https://xeno-canto.org/952474",
+          "fileUrl": "https://xeno-canto.org/sounds/uploaded/EGCCECBTGC/XC952474-African-Firefinch-2024-05-24-13.05-ZOOM0226_MN.mp3",
+          "author": "Jenny Sharland",
+          "license": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ]
+    }
+  ],
+  "images": [
+    {
+      "key": "lagonosticta-rubricata/side.jpg",
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "source": "https://www.inaturalist.org/observations/118267147",
+      "fileUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/199796097/large.jpg",
+      "author": "Jay Pruett",
+      "license": "CC BY 4.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by/4.0/",
+      "aiGenerated": false,
+      "hosted": false,
+      "alt": "African Firefinch in Kruger",
+      "caption": "African Firefinch in Kruger National Park."
+    }
+  ],
+  "research": {
+    "confidence": "medium",
+    "needsReview": true,
+    "note": "The female is not described on the Newman page, so only the male identification was stored. Status is resident and all twelve months are listed. Population figures were left unchanged."
+  }
 }
