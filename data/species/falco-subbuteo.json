@@ -7,8 +7,31 @@
     "af": "Europese Boomvalk"
   },
   "family": "falconidae",
-  "summary": "The details for this species have not been published yet.",
-  "sampleData": true,
+  "status": "summer-migrant",
+  "size": {
+    "lengthCm": {
+      "min": 30,
+      "max": 35
+    },
+    "note": "Newman's Birds gives 30–35 cm and 120–350 g."
+  },
+  "habitat": "Singly or in small flocks in light woodland and suburbia. It hunts mostly at dusk.",
+  "summary": "An uncommon summer visitor. Dark above, heavily streaked below, with rufous thighs and undertail coverts. In flight it recalls a large swift, with long pointed wings. Newman does not describe the voice. Months were left unset. The Kemp name is European Hobby and the code NB was left unchanged.",
+  "sampleData": false,
+  "similar": [
+    {
+      "slug": "falco-amurensis",
+      "note": "Newman points to the underwings when comparing the Hobby in flight with Amur Falcon. The Hobby has rufous thighs and undertail coverts and a heavily streaked body."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Eurasian Hobby",
+      "url": "https://newmansbirds.com/birds/eurasian-hobby/",
+      "publisher": "Newman's Birds",
+      "year": 2026
+    }
+  ],
   "population": {
     "estimate": {
       "low": 64,
@@ -35,8 +58,128 @@
     },
     "tierApplied": "D"
   },
-  "variants": [],
-  "viewNotes": [],
-  "calls": [],
-  "images": []
+  "variants": [
+    {
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "marks": {
+        "bill": {
+          "colour": null,
+          "shape": null
+        },
+        "eye": {
+          "iris": null,
+          "ring": null
+        },
+        "legs": {
+          "colour": null
+        },
+        "head": {
+          "crown": null,
+          "face": null,
+          "throat": null,
+          "pattern": null
+        },
+        "upperparts": {
+          "back": "black",
+          "rump": null,
+          "pattern": "Dark above."
+        },
+        "underparts": {
+          "breast": null,
+          "belly": null,
+          "pattern": "Heavily streaked, with rufous thighs and undertail coverts."
+        },
+        "wings": {
+          "above": null,
+          "below": null,
+          "pattern": "Long and pointed. The underwing is part of the comparison with Amur Falcon."
+        },
+        "tail": {
+          "colour": null,
+          "shape": null
+        }
+      }
+    }
+  ],
+  "viewNotes": [
+    {
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Dark above and heavily streaked below, with rufous thighs."
+    },
+    {
+      "view": "perched-front",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Streaked underparts and rufous thighs."
+    },
+    {
+      "view": "perched-back",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Dark upper parts."
+    },
+    {
+      "view": "flight-above",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Long pointed wings, recalling a large swift. It flies rapidly, sometimes gliding."
+    },
+    {
+      "view": "flight-below",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Heavily streaked underparts and rufous undertail coverts."
+    }
+  ],
+  "calls": [
+    {
+      "sex": "any",
+      "type": "call",
+      "description": "Newman’s species page does not describe the voice. Grade A begging call from Västergötland. The filename is the Swedish name Lärkfalk and indicates a juvenile.",
+      "recordings": [
+        {
+          "key": "xeno-canto/XC42346",
+          "source": "https://xeno-canto.org/42346",
+          "fileUrl": "https://xeno-canto.org/sounds/uploaded/BPSDQEOJWG/LarkfalktigglateflyggajuvSpeleby2009-08-23.mp3",
+          "author": "Patrik Åberg",
+          "license": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ]
+    }
+  ],
+  "images": [
+    {
+      "key": "falco-subbuteo/side.jpg",
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "source": "https://www.inaturalist.org/observations/257263856",
+      "fileUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/461464189/large.jpeg",
+      "author": "Tracey Herbst",
+      "license": "CC BY-NC 4.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+      "aiGenerated": false,
+      "hosted": false,
+      "alt": "Eurasian Hobby in Kruger",
+      "caption": "Eurasian Hobby in Kruger National Park."
+    }
+  ],
+  "research": {
+    "confidence": "medium",
+    "needsReview": false,
+    "note": "Newman calls it an uncommon summer visitor and does not name the months, so monthsPresent was left unset. The wings mark has no colour field for shape, so the long pointed wings are in the wing pattern. Population figures were left unchanged."
+  }
 }

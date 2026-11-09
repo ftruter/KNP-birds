@@ -7,8 +7,45 @@
     "af": "Swartwangsysie"
   },
   "family": "estrildidae",
-  "summary": "The details for this species have not been published yet.",
-  "sampleData": true,
+  "status": "resident",
+  "size": {
+    "lengthCm": {
+      "min": 12,
+      "max": 13
+    },
+    "note": "Newman's Birds gives 12–13 cm."
+  },
+  "monthsPresent": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+  ],
+  "habitat": "Pairs, and flocks when not breeding, in dry and semi-arid thornveld and thick riverine scrub.",
+  "summary": "A fairly common resident. Black mask and bill, barred wings, and deep wine-red rump and underparts. The female is slightly duller and less red. The immature is like the female. The call is an ascending whistle, fwooee. It is probably nomadic for much of the year. The Kemp code NB was left unchanged. No openly licensed Kruger photograph was found.",
+  "sampleData": false,
+  "similar": [
+    {
+      "slug": "granatina-granatina",
+      "note": "Violet-eared Waxbill has violet ear coverts and a red bill. Black-faced Waxbill has a black mask and bill, with wine-red underparts."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Black-faced Waxbill",
+      "url": "https://newmansbirds.com/birds/black-faced-waxbill/",
+      "publisher": "Newman's Birds",
+      "year": 2026
+    }
+  ],
   "population": {
     "estimate": {
       "low": 16,
@@ -35,8 +72,154 @@
     },
     "tierApplied": "D"
   },
-  "variants": [],
-  "viewNotes": [],
-  "calls": [],
-  "images": []
+  "variants": [
+    {
+      "age": "adult",
+      "sex": "male",
+      "season": "any",
+      "marks": {
+        "bill": {
+          "colour": "black",
+          "shape": null
+        },
+        "eye": {
+          "iris": null,
+          "ring": null
+        },
+        "legs": {
+          "colour": null
+        },
+        "head": {
+          "crown": null,
+          "face": "black",
+          "throat": null,
+          "pattern": "Black mask."
+        },
+        "upperparts": {
+          "back": null,
+          "rump": "red",
+          "pattern": "Rump deep wine-red."
+        },
+        "underparts": {
+          "breast": "red",
+          "belly": "red",
+          "pattern": "Deep wine-red underparts."
+        },
+        "wings": {
+          "above": null,
+          "below": null,
+          "pattern": "Barred wings."
+        },
+        "tail": {
+          "colour": null,
+          "shape": null
+        }
+      }
+    },
+    {
+      "age": "adult",
+      "sex": "female",
+      "season": "any",
+      "marks": {
+        "bill": {
+          "colour": "black",
+          "shape": null
+        },
+        "eye": {
+          "iris": null,
+          "ring": null
+        },
+        "legs": {
+          "colour": null
+        },
+        "head": {
+          "crown": null,
+          "face": "black",
+          "throat": null,
+          "pattern": "Black mask. Slightly duller, and less red, than the male."
+        },
+        "upperparts": {
+          "back": null,
+          "rump": null,
+          "pattern": null
+        },
+        "underparts": {
+          "breast": null,
+          "belly": null,
+          "pattern": "Less red than the male."
+        },
+        "wings": {
+          "above": null,
+          "below": null,
+          "pattern": "Barred wings."
+        },
+        "tail": {
+          "colour": null,
+          "shape": null
+        }
+      }
+    }
+  ],
+  "viewNotes": [
+    {
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "male",
+      "season": "any",
+      "note": "Black mask and bill, barred wings, and deep wine-red underparts."
+    },
+    {
+      "view": "perched-front",
+      "age": "adult",
+      "sex": "male",
+      "season": "any",
+      "note": "Black mask and wine-red underparts."
+    },
+    {
+      "view": "perched-back",
+      "age": "adult",
+      "sex": "male",
+      "season": "any",
+      "note": "Wine-red rump and barred wings."
+    },
+    {
+      "view": "flight-above",
+      "age": "adult",
+      "sex": "male",
+      "season": "any",
+      "note": "It flies into trees if disturbed. A flight pattern was not described."
+    },
+    {
+      "view": "flight-below",
+      "age": "adult",
+      "sex": "male",
+      "season": "any",
+      "note": "Deep wine-red underparts."
+    }
+  ],
+  "calls": [
+    {
+      "sex": "any",
+      "type": "call",
+      "description": "An ascending whistle, fwooee. Grade A call from Bloemfontein. The filename says the file was edited. It was not cleaned again.",
+      "recordings": [
+        {
+          "key": "xeno-canto/XC382988",
+          "source": "https://xeno-canto.org/382988",
+          "fileUrl": "https://xeno-canto.org/sounds/uploaded/TWAAJJHMEH/XC382988-Waxbill%20Blackfaced_Bloem_170715_10_B_edit.mp3",
+          "author": "Faansie Peacock",
+          "license": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ]
+    }
+  ],
+  "images": [],
+  "research": {
+    "confidence": "medium",
+    "needsReview": true,
+    "note": "Newman calls it a fairly common resident and also says it is probably nomadic for much of the year. Status is resident and all twelve months are listed. The Kemp code NB was left unchanged. No openly licensed research-grade photograph was found in the Kruger box. Population figures were left unchanged."
+  }
 }
