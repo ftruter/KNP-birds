@@ -7,8 +7,51 @@
     "af": "Gewone Nagreier"
   },
   "family": "ardeidae",
-  "summary": "The details for this species have not been published yet.",
-  "sampleData": true,
+  "status": "resident",
+  "monthsPresent": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+  ],
+  "size": {
+    "lengthCm": {
+      "min": 56,
+      "max": 56
+    },
+    "note": "Newman's Birds gives 56 cm."
+  },
+  "habitat": "Newman’s night-heron page text retrieved for this species repeated the Black Heron account, so habitat here follows Wikipedia’s general night-heron hunting posture and Newman’s size and Afrikaans name only where they are specific. Birds hunt with the neck extended and rest hunched.",
+  "summary": "A stocky night heron with a black crown and back, white or grey body, pale grey wings, white underparts and red eyes. The bill, legs and neck are shorter than those of the day herons. One to eight long white plumes grow from the nape and are raised in greeting and courtship. The sexes look alike, and the male is slightly larger. For a short time at the start of nesting the legs turn salmon-pink and the bare skin around the eyes turns blue.",
+  "sampleData": false,
+  "similar": [
+    {
+      "slug": "calherodius-leuconotus",
+      "note": "White-backed Night Heron has a black cap and back against white-and-grey wings. Black-crowned Night Heron is stockier, with pale grey wings and a white or grey body."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Black-crowned Night Heron",
+      "url": "https://newmansbirds.com/birds/black-crowned-night-heron/",
+      "publisher": "Newman's Birds",
+      "year": 2026
+    },
+    {
+      "title": "Black-crowned night heron",
+      "url": "https://en.wikipedia.org/wiki/Black-crowned_night_heron",
+      "publisher": "Wikipedia",
+      "year": 2026
+    }
+  ],
   "population": {
     "estimate": {
       "low": 64,
@@ -35,8 +78,128 @@
     },
     "tierApplied": "D"
   },
-  "variants": [],
-  "viewNotes": [],
-  "calls": [],
-  "images": []
+  "variants": [
+    {
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "marks": {
+        "bill": {
+          "colour": "black",
+          "shape": "shorter than a day heron’s"
+        },
+        "eye": {
+          "iris": "red",
+          "ring": null
+        },
+        "legs": {
+          "colour": "yellow"
+        },
+        "head": {
+          "crown": "black",
+          "face": "white",
+          "throat": "white",
+          "pattern": "Legs are short and yellow, and turn salmon-pink for a short courtship period. Bare skin around the eye turns blue then. White nape plumes are raised in display."
+        },
+        "upperparts": {
+          "back": "black",
+          "rump": null,
+          "pattern": null
+        },
+        "underparts": {
+          "breast": "white",
+          "belly": "white",
+          "pattern": null
+        },
+        "wings": {
+          "above": "grey",
+          "below": "white",
+          "pattern": "Pale grey wings."
+        },
+        "tail": {
+          "colour": null,
+          "shape": null
+        }
+      }
+    }
+  ],
+  "viewNotes": [
+    {
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Stocky and hunched at rest, with a black crown, red eye and grey wings. The neck extends when hunting."
+    },
+    {
+      "view": "perched-front",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Black crown, white face and a red eye."
+    },
+    {
+      "view": "perched-back",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Black back and pale grey wings. White plumes may show at the nape."
+    },
+    {
+      "view": "flight-above",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Pale grey wings and a black back."
+    },
+    {
+      "view": "flight-below",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "White underparts. A separate underwing colour was not named."
+    }
+  ],
+  "calls": [
+    {
+      "sex": "any",
+      "type": "call",
+      "description": "The retrieved Newman page did not contain a night-heron call. The texts do not separate the sexes. The catalogue cut is not labelled by sex. Grade A from South Africa.",
+      "recordings": [
+        {
+          "key": "xeno-canto/XC505928",
+          "source": "https://xeno-canto.org/505928",
+          "fileUrl": "https://xeno-canto.org/sounds/uploaded/SGLTZLDXYI/XC505928-Black-crowned%20night%20heron.mp3",
+          "author": "Lynette Rudman",
+          "license": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ]
+    }
+  ],
+  "images": [
+    {
+      "key": "nycticorax-nycticorax/side.jpg",
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "source": "https://www.inaturalist.org/observations/169938255",
+      "fileUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/294445488/large.jpeg",
+      "author": "Lynne Correia",
+      "license": "CC BY-NC 4.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+      "aiGenerated": false,
+      "hosted": false,
+      "alt": "Black-crowned Night Heron standing side-on in Kruger grass, with a black crown, red eye and grey wings",
+      "caption": "Black-crowned Night Heron standing side-on in Kruger grass, with a black crown, red eye and grey wings"
+    }
+  ],
+  "research": {
+    "confidence": "medium",
+    "needsReview": true,
+    "note": "Status is resident and all twelve months are listed from Newman’s “uncommon to locally common resident”, which is on the page even though the identification paragraph retrieved there was the Black Heron text and was not used. Plumage is from Wikipedia. The short courtship change of leg and face colour was not stored as a summer plumage. Chick down is not described. The call is grade A from South Africa."
+  }
 }

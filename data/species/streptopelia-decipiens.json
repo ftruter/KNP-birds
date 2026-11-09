@@ -7,8 +7,49 @@
     "af": "Rooioogtortelduif"
   },
   "family": "columbidae",
-  "summary": "The details for this species have not been published yet.",
-  "sampleData": true,
+  "status": "resident",
+  "monthsPresent": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+  ],
+  "size": {
+    "lengthCm": {
+      "min": 30,
+      "max": 30
+    },
+    "note": "Newman's Birds gives 30 cm."
+  },
+  "habitat": "Mixed woodland next to large rivers, and also tropical woodland and mopane. Common where it occurs, but highly local.",
+  "summary": "A common resident. The only collared dove with a totally grey head and a yellow eye with a red eye-ring. The short line calls it a dove with a black hindcollar. The call is a soft kur-kurr, once or twice, and a soft descending kur-r-r-r-r-r-r.",
+  "sampleData": false,
+  "similar": [
+    {
+      "slug": "streptopelia-semitorquata",
+      "note": "Red-eyed Dove has grey only on the top of the head, a red eye with a pink eye-ring, and a deeper pink breast."
+    },
+    {
+      "slug": "streptopelia-capicola",
+      "note": "Cape Turtle Dove has a uniform head and no eye-ring. African Mourning Dove has a yellow eye and a red eye-ring."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Mourning Collared Dove",
+      "url": "https://newmansbirds.com/birds/mourning-collared-dove/",
+      "publisher": "Newman's Birds",
+      "year": 2026
+    }
+  ],
   "population": {
     "estimate": {
       "low": 1024,
@@ -35,8 +76,128 @@
     },
     "tierApplied": "D"
   },
-  "variants": [],
-  "viewNotes": [],
-  "calls": [],
-  "images": []
+  "variants": [
+    {
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "marks": {
+        "bill": {
+          "colour": null,
+          "shape": null
+        },
+        "eye": {
+          "iris": "yellow",
+          "ring": "red"
+        },
+        "legs": {
+          "colour": null
+        },
+        "head": {
+          "crown": "grey",
+          "face": "grey",
+          "throat": null,
+          "pattern": "Totally grey head. Yellow eye with a red eye-ring. Black hindcollar."
+        },
+        "upperparts": {
+          "back": null,
+          "rump": null,
+          "pattern": null
+        },
+        "underparts": {
+          "breast": "grey",
+          "belly": "grey",
+          "pattern": null
+        },
+        "wings": {
+          "above": null,
+          "below": null,
+          "pattern": null
+        },
+        "tail": {
+          "colour": null,
+          "shape": null
+        }
+      }
+    }
+  ],
+  "viewNotes": [
+    {
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Grey-headed collared dove with a yellow eye and a red eye-ring, near a large river."
+    },
+    {
+      "view": "perched-front",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Yellow eye, red eye-ring and a totally grey head."
+    },
+    {
+      "view": "perched-back",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "The back colour was not named. The hindcollar is black."
+    },
+    {
+      "view": "flight-above",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "The upperwing was not named."
+    },
+    {
+      "view": "flight-below",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "The underparts were not named beyond the grey head."
+    }
+  ],
+  "calls": [
+    {
+      "sex": "any",
+      "type": "call",
+      "description": "A soft kur-kurr, repeated once or twice, and a soft descending kur-r-r-r-r-r-r. The texts do not separate the sexes. Grade A from Lake Ziway, Ethiopia. The filename is MourningDove_call.",
+      "recordings": [
+        {
+          "key": "xeno-canto/XC472382",
+          "source": "https://xeno-canto.org/472382",
+          "fileUrl": "https://xeno-canto.org/sounds/uploaded/RFRTVEHIZX/XC472382-20190401_MourningDove_call_LakeZiway_OC.mp3",
+          "author": "Oscar Campbell",
+          "license": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ]
+    }
+  ],
+  "images": [
+    {
+      "key": "streptopelia-decipiens/side.jpg",
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "source": "https://www.inaturalist.org/observations/260025109",
+      "fileUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/466881786/large.jpeg",
+      "author": "Audrey Whitlock",
+      "license": "CC BY-NC 4.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+      "aiGenerated": false,
+      "hosted": false,
+      "alt": "African Mourning Dove perched in Kruger",
+      "caption": "African Mourning Dove perched in Kruger"
+    }
+  ],
+  "research": {
+    "confidence": "medium",
+    "needsReview": false,
+    "note": "Population figures were left unchanged."
+  }
 }

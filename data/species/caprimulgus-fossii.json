@@ -7,8 +7,44 @@
     "af": "Laeveldnaguil"
   },
   "family": "caprimulgidae",
-  "summary": "The details for this species have not been published yet.",
-  "sampleData": true,
+  "status": "resident",
+  "monthsPresent": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+  ],
+  "habitat": "In the Transvaal it uses woodland and savanna. Elsewhere it uses riverine woodland, mopane and acacia scrub on sand, the edges of pans and rivers, and open sandy ground. At night it often sits on roads. SABAP1 says lowveld populations appear to be resident.",
+  "summary": "The Square-tailed Nightjar, called Mozambique Nightjar in SABAP1. Wikipedia says the name points to a tail that is not completely square, and that this separates it from the Slender-tailed Nightjar, which is not on the Kruger list. No plumage colours were described in the texts used. Lowveld birds are treated as resident.",
+  "sampleData": false,
+  "similar": [
+    {
+      "slug": "caprimulgus-pectoralis",
+      "note": "Fiery-necked Nightjar prefers denser woodland and leaf litter. Square-tailed Nightjar prefers more open sandy ground and is often on roads at night."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Square-tailed nightjar",
+      "url": "https://en.wikipedia.org/wiki/Square-tailed_nightjar",
+      "publisher": "Wikipedia",
+      "year": 2026
+    },
+    {
+      "title": "Mozambique Nightjar",
+      "url": "http://sabap2.adu.org.za/docs/sabap1/409.pdf",
+      "publisher": "The Atlas of Southern African Birds",
+      "year": 1997
+    }
+  ],
   "population": {
     "estimate": {
       "low": 32768,
@@ -36,7 +72,83 @@
     "tierApplied": "D"
   },
   "variants": [],
-  "viewNotes": [],
-  "calls": [],
-  "images": []
+  "viewNotes": [
+    {
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Plumage colours were not described. It often sits on open sandy ground or roads at night."
+    },
+    {
+      "view": "perched-front",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "The face pattern was not described."
+    },
+    {
+      "view": "perched-back",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "The back pattern was not described. The tail is the named mark, and Wikipedia says it is not completely square."
+    },
+    {
+      "view": "flight-above",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "The upperwing in flight was not described."
+    },
+    {
+      "view": "flight-below",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "The underwing was not described."
+    }
+  ],
+  "calls": [
+    {
+      "sex": "any",
+      "type": "call",
+      "description": "No call was described in the Wikipedia or SABAP1 texts consulted. The file is grade A, catalogued as song, from Chiredzi, Zimbabwe. The filename misspells the name as Sqyare-tailed Nightjars.",
+      "recordings": [
+        {
+          "key": "xeno-canto/XC513152",
+          "source": "https://xeno-canto.org/513152",
+          "fileUrl": "https://xeno-canto.org/sounds/uploaded/DNKBTPCMSQ/XC513152-Sqyare-tailed%20Nightjars%20SWI%2091202-043258.mp3",
+          "author": "Derek Solomon",
+          "license": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ]
+    }
+  ],
+  "images": [
+    {
+      "key": "caprimulgus-fossii/wing.jpg",
+      "view": "flight-above",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "source": "https://www.inaturalist.org/observations/147111870",
+      "fileUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/253078434/large.jpg",
+      "author": "Alex Rebelo",
+      "license": "CC BY-NC 4.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+      "aiGenerated": false,
+      "hosted": false,
+      "alt": "Square-tailed Nightjar held in Kruger with one wing opened, showing the upperwing",
+      "caption": "Square-tailed Nightjar held in Kruger with one wing opened, showing the upperwing"
+    }
+  ],
+  "research": {
+    "confidence": "low",
+    "needsReview": true,
+    "note": "Newman has no page. Status is resident for all twelve months because SABAP1 says lowveld populations appear resident. Birds at higher or drier sites may move, and that was not applied to Kruger. Plumage colours were not described, so no marks were stored. The photograph is of a bird in the hand. The call text is a gap. The Kemp name remains Mozambique Nightjar and the code VB was left unchanged."
+  }
 }

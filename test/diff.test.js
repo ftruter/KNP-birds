@@ -71,7 +71,7 @@ test('southern ground hornbill sex diff is the throat only', async () => {
   )
   const face = age.rows.find((row) => row.mark === 'Face')
   assert.deepEqual(face.cells.Adult.names, ['red'])
-  assert.deepEqual(face.cells.Juvenile.names, ['buff'])
+  assert.deepEqual(face.cells.Juvenile.names, ['yellow'])
   assert.equal(flight.status, 'no-visible-difference')
   assert.match(flight.sharedNote, /white patch/)
   assert.equal(perched.status, 'differs')

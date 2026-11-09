@@ -7,8 +7,31 @@
     "af": "Swartkoekoek"
   },
   "family": "cuculidae",
-  "summary": "The details for this species have not been published yet.",
-  "sampleData": true,
+  "status": "summer-migrant",
+  "size": {
+    "lengthCm": {
+      "min": 30,
+      "max": 30
+    },
+    "note": "Newman's Birds gives 30 cm."
+  },
+  "habitat": "Singly in any well-wooded region, including suburbia. It perches in one place for long periods while calling.",
+  "summary": "A common summer resident. Entirely black, and it may show faint barring below, especially the female. The immature is more blackish brown. The male repeats whoo whoo whee, rising on the last note. The female has a wind-up yow-yow call that rises and dies away. It parasitises boubou shrikes. Months were left unset. The Kemp code VB was left unchanged.",
+  "sampleData": false,
+  "similar": [
+    {
+      "slug": "clamator-jacobinus",
+      "note": "The black morph of Jacobin Cuckoo has a white wing-bar. Black Cuckoo is entirely black, or black with faint barring below."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Black Cuckoo",
+      "url": "https://newmansbirds.com/birds/black-cuckoo/",
+      "publisher": "Newman's Birds",
+      "year": 2026
+    }
+  ],
   "population": {
     "estimate": {
       "low": 2048,
@@ -35,8 +58,214 @@
     },
     "tierApplied": "D"
   },
-  "variants": [],
-  "viewNotes": [],
-  "calls": [],
-  "images": []
+  "variants": [
+    {
+      "age": "adult",
+      "sex": "male",
+      "season": "any",
+      "marks": {
+        "bill": {
+          "colour": null,
+          "shape": null
+        },
+        "eye": {
+          "iris": null,
+          "ring": null
+        },
+        "legs": {
+          "colour": null
+        },
+        "head": {
+          "crown": "black",
+          "face": "black",
+          "throat": "black",
+          "pattern": null
+        },
+        "upperparts": {
+          "back": "black",
+          "rump": null,
+          "pattern": null
+        },
+        "underparts": {
+          "breast": "black",
+          "belly": "black",
+          "pattern": "May show faint barring below."
+        },
+        "wings": {
+          "above": "black",
+          "below": null,
+          "pattern": null
+        },
+        "tail": {
+          "colour": "black",
+          "shape": null
+        }
+      }
+    },
+    {
+      "age": "adult",
+      "sex": "female",
+      "season": "any",
+      "marks": {
+        "bill": {
+          "colour": null,
+          "shape": null
+        },
+        "eye": {
+          "iris": null,
+          "ring": null
+        },
+        "legs": {
+          "colour": null
+        },
+        "head": {
+          "crown": "black",
+          "face": "black",
+          "throat": "black",
+          "pattern": null
+        },
+        "upperparts": {
+          "back": "black",
+          "rump": null,
+          "pattern": null
+        },
+        "underparts": {
+          "breast": "black",
+          "belly": "black",
+          "pattern": "Faint barring below is especially likely on the female."
+        },
+        "wings": {
+          "above": "black",
+          "below": null,
+          "pattern": null
+        },
+        "tail": {
+          "colour": "black",
+          "shape": null
+        }
+      }
+    },
+    {
+      "age": "immature",
+      "sex": "any",
+      "season": "any",
+      "marks": {
+        "bill": {
+          "colour": null,
+          "shape": null
+        },
+        "eye": {
+          "iris": null,
+          "ring": null
+        },
+        "legs": {
+          "colour": null
+        },
+        "head": {
+          "crown": "dark-brown",
+          "face": null,
+          "throat": null,
+          "pattern": null
+        },
+        "upperparts": {
+          "back": "dark-brown",
+          "rump": null,
+          "pattern": "More blackish brown than the adult."
+        },
+        "underparts": {
+          "breast": "dark-brown",
+          "belly": "dark-brown",
+          "pattern": null
+        },
+        "wings": {
+          "above": null,
+          "below": null,
+          "pattern": null
+        },
+        "tail": {
+          "colour": null,
+          "shape": null
+        }
+      }
+    }
+  ],
+  "viewNotes": [
+    {
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "male",
+      "season": "any",
+      "note": "Entirely black. Faint barring below is possible, especially on the female."
+    },
+    {
+      "view": "perched-front",
+      "age": "adult",
+      "sex": "male",
+      "season": "any",
+      "note": "Black face and underparts."
+    },
+    {
+      "view": "perched-back",
+      "age": "adult",
+      "sex": "male",
+      "season": "any",
+      "note": "Black back and tail. It often calls from the same perch for a long time."
+    },
+    {
+      "view": "flight-above",
+      "age": "adult",
+      "sex": "male",
+      "season": "any",
+      "note": "A separate flight pattern was not described."
+    },
+    {
+      "view": "flight-below",
+      "age": "adult",
+      "sex": "male",
+      "season": "any",
+      "note": "Black below, sometimes with faint barring."
+    }
+  ],
+  "calls": [
+    {
+      "sex": "male",
+      "type": "song",
+      "description": "A repeated whoo whoo whee, rising on the last syllable. The female has an excitable yow-yow-yow wind-up call, which was not given a separate file. Grade A song from Wild Fig Country Estate. The filename is Black Cuckoo.mp3.",
+      "recordings": [
+        {
+          "key": "xeno-canto/XC650879",
+          "source": "https://xeno-canto.org/650879",
+          "fileUrl": "https://xeno-canto.org/sounds/uploaded/WQZFZWNHJB/XC650879-Black%20Cuckoo.mp3",
+          "author": "Paul Bourdin",
+          "license": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ]
+    }
+  ],
+  "images": [
+    {
+      "key": "cuculus-clamosus/side.jpg",
+      "view": "perched-back",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "source": "https://www.inaturalist.org/observations/258384816",
+      "fileUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/463573707/large.jpg",
+      "author": "maritzasouthafrica",
+      "license": "CC BY-NC 4.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+      "aiGenerated": false,
+      "hosted": false,
+      "alt": "Black Cuckoo perched in shade at Pafuri",
+      "caption": "Black Cuckoo perched in shade at the Pafuri picnic site. The bird reads as entirely black."
+    }
+  ],
+  "research": {
+    "confidence": "medium",
+    "needsReview": false,
+    "note": "Newman calls it a common summer resident and does not name the months, so monthsPresent was left unset. Population figures were left unchanged."
+  }
 }

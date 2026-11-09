@@ -7,8 +7,45 @@
     "af": "Kaneelduifie"
   },
   "family": "columbidae",
-  "summary": "The details for this species have not been published yet.",
-  "sampleData": true,
+  "status": "resident",
+  "monthsPresent": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+  ],
+  "size": {
+    "lengthCm": {
+      "min": 25,
+      "max": 30
+    },
+    "note": "Newman's Birds gives 25–30 cm."
+  },
+  "habitat": "Pairs in the forest interior. It is shy, and is often noticed only when it flushes from a path.",
+  "summary": "A fairly common resident. Cinnamon body, darker bronze upperparts, and an emerald sheen on the upper back and wings. The red eye looks large on a whitish face. The call is a soft, mournful hoo-oo, rising on the second syllable. No usable recording was found.",
+  "sampleData": false,
+  "similar": [
+    {
+      "slug": "turtur-tympanistria",
+      "note": "Tambourine Dove also keeps to forest, but its underparts are white. Lemon Dove is cinnamon, with a whitish face and a red eye."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Lemon Dove",
+      "url": "https://newmansbirds.com/birds/lemon-dove/",
+      "publisher": "Newman's Birds",
+      "year": 2026
+    }
+  ],
   "population": {
     "estimate": {
       "low": 16,
@@ -35,8 +72,117 @@
     },
     "tierApplied": "D"
   },
-  "variants": [],
-  "viewNotes": [],
-  "calls": [],
-  "images": []
+  "variants": [
+    {
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "marks": {
+        "bill": {
+          "colour": null,
+          "shape": null
+        },
+        "eye": {
+          "iris": "red",
+          "ring": null
+        },
+        "legs": {
+          "colour": null
+        },
+        "head": {
+          "crown": null,
+          "face": "white",
+          "throat": null,
+          "pattern": "Whitish face and a large-looking red eye."
+        },
+        "upperparts": {
+          "back": "bronze",
+          "rump": null,
+          "pattern": "Darker bronze upperparts, with an iridescent emerald sheen on the upper back and wings."
+        },
+        "underparts": {
+          "breast": "cinnamon",
+          "belly": "cinnamon",
+          "pattern": null
+        },
+        "wings": {
+          "above": "green",
+          "below": null,
+          "pattern": "Emerald sheen on the wings. The short line also says the wings are greenish."
+        },
+        "tail": {
+          "colour": null,
+          "shape": null
+        }
+      }
+    }
+  ],
+  "viewNotes": [
+    {
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Cinnamon dove with a whitish face on the forest floor. Hard to see until it flushes."
+    },
+    {
+      "view": "perched-front",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Whitish face and red eye."
+    },
+    {
+      "view": "perched-back",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Bronze upperparts with an emerald sheen."
+    },
+    {
+      "view": "flight-above",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "It dodges through the trees. The upperwing carries the emerald sheen."
+    },
+    {
+      "view": "flight-below",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Cinnamon underparts."
+    }
+  ],
+  "calls": [
+    {
+      "sex": "any",
+      "type": "call",
+      "description": "No usable recording was found.",
+      "recordings": []
+    }
+  ],
+  "images": [
+    {
+      "key": "aplopelia-larvata/side.jpg",
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "source": "https://www.inaturalist.org/observations/334940684",
+      "fileUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/608365546/large.jpg",
+      "author": "Yolande Oelsen",
+      "license": "CC BY-NC 4.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+      "aiGenerated": false,
+      "hosted": false,
+      "alt": "Lemon Dove in Kruger forest",
+      "caption": "Lemon Dove in Kruger forest"
+    }
+  ],
+  "research": {
+    "confidence": "medium",
+    "needsReview": true,
+    "note": "Population figures were left unchanged."
+  }
 }

@@ -7,8 +7,45 @@
     "af": "Kransduif"
   },
   "family": "columbidae",
-  "summary": "The details for this species have not been published yet.",
-  "sampleData": true,
+  "status": "resident",
+  "monthsPresent": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+  ],
+  "size": {
+    "lengthCm": {
+      "min": 33,
+      "max": 33
+    },
+    "note": "Newman's Birds gives 33 cm."
+  },
+  "habitat": "Flocks on cliffs, mine shafts, road bridges, caves and buildings, flying out to water or grain fields.",
+  "summary": "A very common resident. Deep red, white-spotted upperparts, a grey head and underparts, and a red facial mask. The call is a loud cook, cook, cook, rising and then falling, and also an enquiring VUkutu-whooo.",
+  "sampleData": false,
+  "similar": [
+    {
+      "slug": "columba-livia",
+      "note": "Rock Dove is the town pigeon and is highly variable in colour. Speckled Pigeon has red, white-spotted upperparts and a red face mask."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Speckled Pigeon",
+      "url": "https://newmansbirds.com/birds/speckled-pigeon/",
+      "publisher": "Newman's Birds",
+      "year": 2026
+    }
+  ],
   "population": {
     "estimate": {
       "low": 8,
@@ -35,8 +72,131 @@
     },
     "tierApplied": "D"
   },
-  "variants": [],
-  "viewNotes": [],
-  "calls": [],
-  "images": []
+  "variants": [
+    {
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "marks": {
+        "bill": {
+          "colour": null,
+          "shape": null
+        },
+        "eye": {
+          "iris": null,
+          "ring": null
+        },
+        "legs": {
+          "colour": null
+        },
+        "head": {
+          "crown": "grey",
+          "face": "red",
+          "throat": null,
+          "pattern": "Red facial mask. Grey head."
+        },
+        "upperparts": {
+          "back": "red",
+          "rump": null,
+          "pattern": "Deep red upperparts with white spots."
+        },
+        "underparts": {
+          "breast": "grey",
+          "belly": "grey",
+          "pattern": null
+        },
+        "wings": {
+          "above": [
+            "red",
+            "white"
+          ],
+          "below": null,
+          "pattern": null
+        },
+        "tail": {
+          "colour": null,
+          "shape": null
+        }
+      }
+    }
+  ],
+  "viewNotes": [
+    {
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Red-and-white spotted upperparts and a red face, often on a building or cliff."
+    },
+    {
+      "view": "perched-front",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Red facial mask and grey head."
+    },
+    {
+      "view": "perched-back",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Deep red back with white spots."
+    },
+    {
+      "view": "flight-above",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "White spots on the wings. The short line says the wings have white spots."
+    },
+    {
+      "view": "flight-below",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Grey underparts."
+    }
+  ],
+  "calls": [
+    {
+      "sex": "any",
+      "type": "call",
+      "description": "A loud, prolonged cook, cook, cook, rising to a crescendo and then falling, and an enquiring VUkutu-whooo. The texts do not separate the sexes. Grade A from near Klerksdorp. The filename is Growl S Pigeon. A higher-ranked file was not used because its filename includes a talking myna.",
+      "recordings": [
+        {
+          "key": "xeno-canto/XC529796",
+          "source": "https://xeno-canto.org/529796",
+          "fileUrl": "https://xeno-canto.org/sounds/uploaded/HMBDEWEZVS/XC529796-4%20Growl%20S%20Pigeon.mp3",
+          "author": "Tony Archer",
+          "license": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ]
+    }
+  ],
+  "images": [
+    {
+      "key": "columba-guinea/side.jpg",
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "source": "https://www.inaturalist.org/observations/318044966",
+      "fileUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/574766083/large.jpg",
+      "author": "Simon M Bell",
+      "license": "CC BY-NC 4.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+      "aiGenerated": false,
+      "hosted": false,
+      "alt": "Speckled Pigeon perched in Kruger",
+      "caption": "Speckled Pigeon perched in Kruger"
+    }
+  ],
+  "research": {
+    "confidence": "medium",
+    "needsReview": false,
+    "note": "Population figures were left unchanged."
+  }
 }

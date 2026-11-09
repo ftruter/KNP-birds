@@ -7,8 +7,39 @@
     "af": "Dwergrietreier"
   },
   "family": "ardeidae",
-  "summary": "The details for this species have not been published yet.",
-  "sampleData": true,
+  "status": "intra-african-migrant",
+  "monthsPresent": [
+    10,
+    11,
+    12,
+    1,
+    2,
+    3
+  ],
+  "size": {
+    "lengthCm": {
+      "min": 25,
+      "max": 25
+    },
+    "note": "Newman's Birds gives 25 cm."
+  },
+  "habitat": "Well-wooded rivers and bushes or thickets standing in floodwater. Usually solitary, and largely crepuscular or nocturnal. It may sky-point, and it perches in a tree when flushed.",
+  "summary": "A tiny bittern with slate-grey upperparts, heavily streaked underparts, and orange-yellow legs and feet that often hang down in flight. The immature is rufous below, with rufous-tipped feathers above. The flight is direct and pigeon-like. Newman calls it an uncommon summer resident and visitor, and nomadic.",
+  "sampleData": false,
+  "similar": [
+    {
+      "slug": "botaurus-minutus",
+      "note": "Little Bittern has black-and-buff wings. A young one is paler below and has olive legs, not the orange-yellow legs and slate-grey back of a Dwarf Bittern."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Dwarf Bittern",
+      "url": "https://newmansbirds.com/birds/dwarf-bittern/",
+      "publisher": "Newman's Birds",
+      "year": 2026
+    }
+  ],
   "population": {
     "estimate": {
       "low": 32,
@@ -35,8 +66,177 @@
     },
     "tierApplied": "D"
   },
-  "variants": [],
-  "viewNotes": [],
-  "calls": [],
-  "images": []
+  "variants": [
+    {
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "marks": {
+        "bill": {
+          "colour": null,
+          "shape": null
+        },
+        "eye": {
+          "iris": null,
+          "ring": null
+        },
+        "legs": {
+          "colour": [
+            "orange",
+            "yellow"
+          ]
+        },
+        "head": {
+          "crown": "slate-grey",
+          "face": "slate-grey",
+          "throat": "buff",
+          "pattern": null
+        },
+        "upperparts": {
+          "back": "slate-grey",
+          "rump": null,
+          "pattern": null
+        },
+        "underparts": {
+          "breast": "buff",
+          "belly": "buff",
+          "pattern": "Heavily streaked underparts."
+        },
+        "wings": {
+          "above": "slate-grey",
+          "below": null,
+          "pattern": "Orange-yellow legs and feet often hang down in flight."
+        },
+        "tail": {
+          "colour": null,
+          "shape": null
+        }
+      }
+    },
+    {
+      "age": "juvenile",
+      "sex": "any",
+      "season": "any",
+      "marks": {
+        "bill": {
+          "colour": null,
+          "shape": null
+        },
+        "eye": {
+          "iris": null,
+          "ring": null
+        },
+        "legs": {
+          "colour": [
+            "orange",
+            "yellow"
+          ]
+        },
+        "head": {
+          "crown": "rufous",
+          "face": "rufous",
+          "throat": "rufous",
+          "pattern": null
+        },
+        "upperparts": {
+          "back": "rufous",
+          "rump": null,
+          "pattern": "Rufous-tipped feathers above."
+        },
+        "underparts": {
+          "breast": "rufous",
+          "belly": "rufous",
+          "pattern": null
+        },
+        "wings": {
+          "above": "rufous",
+          "below": null,
+          "pattern": null
+        },
+        "tail": {
+          "colour": null,
+          "shape": null
+        }
+      }
+    }
+  ],
+  "viewNotes": [
+    {
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Slate-grey above, streaked below, with orange-yellow legs."
+    },
+    {
+      "view": "perched-front",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Grey face and a streaked throat."
+    },
+    {
+      "view": "perched-back",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Slate-grey back."
+    },
+    {
+      "view": "flight-above",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Direct, pigeon-like flight. The upperwing colour is not named separately from the slate-grey upperparts."
+    },
+    {
+      "view": "flight-below",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Legs often hang down. The underwing colour was not named."
+    }
+  ],
+  "calls": [
+    {
+      "sex": "any",
+      "type": "call",
+      "description": "Newman does not describe the voice. The texts do not separate the sexes. The catalogue cut is not labelled by sex. Grade A from South Africa, under the older genus Ixobrychus. The filename is a date, not the species name.",
+      "recordings": [
+        {
+          "key": "xeno-canto/XC792321",
+          "source": "https://xeno-canto.org/792321",
+          "fileUrl": "https://xeno-canto.org/sounds/uploaded/PEMGIBGFTN/XC792321-2023-04-10.mp3",
+          "author": "Nick Schaller",
+          "license": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ]
+    }
+  ],
+  "images": [
+    {
+      "key": "botaurus-sturmii/side.jpg",
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "source": "https://www.inaturalist.org/observations/99608945",
+      "fileUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/166083638/large.jpg",
+      "author": "Niall Perrins",
+      "license": "CC BY-NC 4.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+      "aiGenerated": false,
+      "hosted": false,
+      "alt": "Dwarf Bittern standing side-on at the water’s edge in Kruger, slate-grey above and streaked below",
+      "caption": "Dwarf Bittern standing side-on at the water’s edge in Kruger, slate-grey above and streaked below"
+    }
+  ],
+  "research": {
+    "confidence": "medium",
+    "needsReview": false,
+    "note": "Status is an intra-African migrant. Newman calls it a summer resident and visitor, so the southern summer months, October to March, are listed. It is also nomadic. Chick down is not described. The call is grade A from South Africa."
+  }
 }

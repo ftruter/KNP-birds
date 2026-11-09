@@ -7,8 +7,45 @@
     "af": "Gewone Melba"
   },
   "family": "estrildidae",
-  "summary": "The details for this species have not been published yet.",
-  "sampleData": true,
+  "status": "resident",
+  "size": {
+    "lengthCm": {
+      "min": 12,
+      "max": 13
+    },
+    "note": "Newman's Birds gives 12–13 cm."
+  },
+  "monthsPresent": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+  ],
+  "habitat": "Pairs in thorny thickets, often near water, feeding on open ground with other waxbills and firefinches.",
+  "summary": "A common resident. Yellow-green mantle and wings, a red rump and upper tail, and black-and-white barred underparts. The male has a red forehead and throat. The bill is longer than Orange-winged Pytilia and predominantly red, and the wings are all green. The usual call is a low wick, with a plaintive whistle and a short song. The Kemp name is Melba Finch and the code RB was left unchanged.",
+  "sampleData": false,
+  "similar": [
+    {
+      "slug": "pytilia-afra",
+      "note": "Orange-winged Pytilia has green-and-buff barring and orange-edged wings. Green-winged Pytilia has black-and-white barring and green wings."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Green-winged Pytilia",
+      "url": "https://newmansbirds.com/birds/green-winged-pytilia/",
+      "publisher": "Newman's Birds",
+      "year": 2026
+    }
+  ],
   "population": {
     "estimate": {
       "low": 32768,
@@ -35,8 +72,171 @@
     },
     "tierApplied": "D"
   },
-  "variants": [],
-  "viewNotes": [],
-  "calls": [],
-  "images": []
+  "variants": [
+    {
+      "age": "adult",
+      "sex": "male",
+      "season": "any",
+      "marks": {
+        "bill": {
+          "colour": "red",
+          "shape": "Longer than Orange-winged Pytilia, and predominantly red."
+        },
+        "eye": {
+          "iris": null,
+          "ring": null
+        },
+        "legs": {
+          "colour": null
+        },
+        "head": {
+          "crown": "red",
+          "face": null,
+          "throat": "red",
+          "pattern": "Red forehead and throat."
+        },
+        "upperparts": {
+          "back": "yellow-green",
+          "rump": "red",
+          "pattern": null
+        },
+        "underparts": {
+          "breast": null,
+          "belly": null,
+          "pattern": "Black-and-white barred underparts."
+        },
+        "wings": {
+          "above": "green",
+          "below": null,
+          "pattern": "Yellow-green on the colour line, and all green compared with Orange-winged Pytilia."
+        },
+        "tail": {
+          "colour": "red",
+          "shape": "Upper tail red."
+        }
+      }
+    },
+    {
+      "age": "adult",
+      "sex": "female",
+      "season": "any",
+      "marks": {
+        "bill": {
+          "colour": "red",
+          "shape": "Predominantly red."
+        },
+        "eye": {
+          "iris": null,
+          "ring": null
+        },
+        "legs": {
+          "colour": null
+        },
+        "head": {
+          "crown": null,
+          "face": null,
+          "throat": null,
+          "pattern": null
+        },
+        "upperparts": {
+          "back": "yellow-green",
+          "rump": "red",
+          "pattern": null
+        },
+        "underparts": {
+          "breast": null,
+          "belly": null,
+          "pattern": "Black-and-white barred underparts."
+        },
+        "wings": {
+          "above": "green",
+          "below": null,
+          "pattern": null
+        },
+        "tail": {
+          "colour": "red",
+          "shape": null
+        }
+      }
+    }
+  ],
+  "viewNotes": [
+    {
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "male",
+      "season": "any",
+      "note": "Red forehead and throat, yellow-green upper parts, a red rump and barred underparts."
+    },
+    {
+      "view": "perched-front",
+      "age": "adult",
+      "sex": "male",
+      "season": "any",
+      "note": "Red forehead and throat, and a red bill."
+    },
+    {
+      "view": "perched-back",
+      "age": "adult",
+      "sex": "male",
+      "season": "any",
+      "note": "Yellow-green mantle and a red rump and upper tail."
+    },
+    {
+      "view": "flight-above",
+      "age": "adult",
+      "sex": "male",
+      "season": "any",
+      "note": "The wings are green. A separate flight pattern was not described."
+    },
+    {
+      "view": "flight-below",
+      "age": "adult",
+      "sex": "male",
+      "season": "any",
+      "note": "Black-and-white barred underparts."
+    }
+  ],
+  "calls": [
+    {
+      "sex": "any",
+      "type": "call",
+      "description": "A single low wick. It also has a plaintive whistle and a short song, which were not given separate files. Grade A call from the North West. The filename is 9 GW Pytilia.mp3.",
+      "recordings": [
+        {
+          "key": "xeno-canto/XC512189",
+          "source": "https://xeno-canto.org/512189",
+          "fileUrl": "https://xeno-canto.org/sounds/uploaded/HMBDEWEZVS/XC512189-9%20GW%20Pytilia.mp3",
+          "author": "Tony Archer",
+          "license": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ]
+    }
+  ],
+  "images": [
+    {
+      "key": "pytilia-melba/side.jpg",
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "source": "https://www.inaturalist.org/observations/9618387",
+      "fileUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/13127989/large.jpeg",
+      "author": "copper",
+      "license": "CC BY-NC 4.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+      "aiGenerated": false,
+      "hosted": false,
+      "alt": "Green-winged Pytilia in Kruger",
+      "caption": "Green-winged Pytilia in the Ehlanzeni district."
+    }
+  ],
+  "research": {
+    "confidence": "medium",
+    "needsReview": false,
+    "note": "Status is resident and all twelve months are listed. The red forehead and throat are stored only on the male, as the colour line limits them to him. Population figures were left unchanged."
+  }
 }

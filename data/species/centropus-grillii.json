@@ -7,8 +7,30 @@
     "af": "Swartvleiloerie"
   },
   "family": "cuculidae",
-  "summary": "The details for this species have not been published yet.",
-  "sampleData": true,
+  "size": {
+    "lengthCm": {
+      "min": 30,
+      "max": 34
+    },
+    "note": "Wikipedia gives the male as 30 cm and the female as 34 cm, and says they otherwise look alike."
+  },
+  "habitat": "Marshes, savannah, grassland, bracken, undergrowth and clearings in woodland, occasionally reeds and papyrus. Usually below 1,500 m.",
+  "summary": "In breeding plumage the head, body and tail are black, with some buff barring on the rump and rufous wings. Outside the breeding season the upper parts are dark brown with rufous barring. Juveniles are rufous with dark and light barring and streaking. Wikipedia says it is resident in some places and migrant in others, so no single status was stored. The page used does not describe the voice. The Kemp code VB was left unchanged.",
+  "sampleData": false,
+  "similar": [
+    {
+      "slug": "centropus-burchellii",
+      "note": "Burchell’s Coucal has white underparts. A breeding Black Coucal is black on the head, body and tail, with rufous wings."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Black coucal",
+      "url": "https://en.wikipedia.org/wiki/Black_coucal",
+      "publisher": "Wikipedia",
+      "year": 2026
+    }
+  ],
   "population": {
     "estimate": {
       "low": 4,
@@ -35,8 +57,221 @@
     },
     "tierApplied": "D"
   },
-  "variants": [],
-  "viewNotes": [],
-  "calls": [],
-  "images": []
+  "variants": [
+    {
+      "age": "adult",
+      "sex": "any",
+      "season": "breeding",
+      "marks": {
+        "bill": {
+          "colour": "black",
+          "shape": null
+        },
+        "eye": {
+          "iris": "brown",
+          "ring": null
+        },
+        "legs": {
+          "colour": "black"
+        },
+        "head": {
+          "crown": "black",
+          "face": "black",
+          "throat": "black",
+          "pattern": null
+        },
+        "upperparts": {
+          "back": "black",
+          "rump": "buff",
+          "pattern": "Some buff barring on the rump."
+        },
+        "underparts": {
+          "breast": "black",
+          "belly": "black",
+          "pattern": null
+        },
+        "wings": {
+          "above": "rufous",
+          "below": null,
+          "pattern": null
+        },
+        "tail": {
+          "colour": "black",
+          "shape": null
+        }
+      }
+    },
+    {
+      "age": "adult",
+      "sex": "any",
+      "season": "non-breeding",
+      "marks": {
+        "bill": {
+          "colour": "black",
+          "shape": null
+        },
+        "eye": {
+          "iris": "brown",
+          "ring": null
+        },
+        "legs": {
+          "colour": "black"
+        },
+        "head": {
+          "crown": null,
+          "face": null,
+          "throat": null,
+          "pattern": null
+        },
+        "upperparts": {
+          "back": "dark-brown",
+          "rump": null,
+          "pattern": "Upper parts dark brown with rufous barring."
+        },
+        "underparts": {
+          "breast": null,
+          "belly": null,
+          "pattern": null
+        },
+        "wings": {
+          "above": null,
+          "below": null,
+          "pattern": "The non-breeding wing was not named separately from the rufous-barred upper parts."
+        },
+        "tail": {
+          "colour": null,
+          "shape": null
+        }
+      }
+    },
+    {
+      "age": "juvenile",
+      "sex": "any",
+      "season": "any",
+      "marks": {
+        "bill": {
+          "colour": null,
+          "shape": null
+        },
+        "eye": {
+          "iris": null,
+          "ring": null
+        },
+        "legs": {
+          "colour": null
+        },
+        "head": {
+          "crown": null,
+          "face": null,
+          "throat": null,
+          "pattern": "Rufous, with dark and light barring and streaking."
+        },
+        "upperparts": {
+          "back": "rufous",
+          "rump": null,
+          "pattern": "Dark and light barring and streaking."
+        },
+        "underparts": {
+          "breast": null,
+          "belly": null,
+          "pattern": "Dark and light barring and streaking."
+        },
+        "wings": {
+          "above": null,
+          "below": null,
+          "pattern": null
+        },
+        "tail": {
+          "colour": null,
+          "shape": null
+        }
+      }
+    }
+  ],
+  "viewNotes": [
+    {
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "any",
+      "season": "breeding",
+      "note": "Black head and body, rufous wings, and some buff barring on the rump."
+    },
+    {
+      "view": "perched-front",
+      "age": "adult",
+      "sex": "any",
+      "season": "breeding",
+      "note": "Black throat and underparts. The wings are rufous."
+    },
+    {
+      "view": "perched-back",
+      "age": "adult",
+      "sex": "any",
+      "season": "breeding",
+      "note": "Black tail and back, with buff barring on the rump."
+    },
+    {
+      "view": "flight-above",
+      "age": "adult",
+      "sex": "any",
+      "season": "breeding",
+      "note": "Rufous wings and a black body."
+    },
+    {
+      "view": "flight-below",
+      "age": "adult",
+      "sex": "any",
+      "season": "breeding",
+      "note": "Black underparts. The underside of the wing was not named."
+    },
+    {
+      "view": "perched-back",
+      "age": "adult",
+      "sex": "any",
+      "season": "non-breeding",
+      "note": "Upper parts dark brown with rufous barring."
+    }
+  ],
+  "calls": [
+    {
+      "sex": "any",
+      "type": "song",
+      "description": "The Wikipedia page used here does not describe the voice. Grade A song from Kamfinsa, Zambia. The filename names Black Coucal and the song. No grade A recording from South Africa or Kruger was in the catalogue set.",
+      "recordings": [
+        {
+          "key": "xeno-canto/XC547993",
+          "source": "https://xeno-canto.org/547993",
+          "fileUrl": "https://xeno-canto.org/sounds/uploaded/IIJAXHKSCC/XC547993-Black%20Coucal%20%28song%29%2020200218%2CKamfinsaFarm%2CKitwe%2CZAMBIA.mp3",
+          "author": "Dries Van de Loock",
+          "license": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ]
+    }
+  ],
+  "images": [
+    {
+      "key": "centropus-grillii/side.jpg",
+      "view": "flight-side",
+      "age": "adult",
+      "sex": "any",
+      "season": "breeding",
+      "source": "https://www.inaturalist.org/observations/148985639",
+      "fileUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/256658436/large.jpeg",
+      "author": "Corné Rautenbach",
+      "license": "CC BY-NC 4.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+      "aiGenerated": false,
+      "hosted": false,
+      "alt": "Black Coucal in flight over Kruger grass, black body and rufous wing",
+      "caption": "Black Coucal in breeding plumage, flying over grass. The photograph is blurred. The black body and rufous wing are the marks that show."
+    }
+  ],
+  "research": {
+    "confidence": "medium",
+    "needsReview": true,
+    "note": "No Newman page was found. Wikipedia says the bird is resident in some locations and migrant in others, so status and months were left unset. Breeding and non-breeding plumages are both stored. Population figures were left unchanged. The Kruger photograph is a blurred flight view."
+  }
 }

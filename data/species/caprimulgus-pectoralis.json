@@ -7,8 +7,55 @@
     "af": "Afrikaanse Naguil"
   },
   "family": "caprimulgidae",
-  "summary": "The details for this species have not been published yet.",
-  "sampleData": true,
+  "status": "resident",
+  "monthsPresent": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+  ],
+  "size": {
+    "lengthCm": {
+      "min": 23,
+      "max": 25
+    },
+    "note": "Wikipedia gives 23–25 cm."
+  },
+  "habitat": "It roosts on the ground where there is dense leaf litter. It uses dense broad-leaved woodland, savanna, coastal bush and plantations, and avoids forest. SABAP1 says the lowland race is resident. Calling peaks are not treated as absences.",
+  "summary": "A small woodland nightjar, 23–25 cm. Wikipedia describes a light-coloured crown with a darker spot in the centre, and little else of the plumage. The song is a series of mellow notes that many people render as “Good Lord, deliver us”, often after a wind-up call, and it is heard mainly at dusk and dawn. SABAP1 treats the lowland birds as resident.",
+  "sampleData": false,
+  "similar": [
+    {
+      "slug": "caprimulgus-rufigena",
+      "note": "Rufous-cheeked Nightjar prefers drier, more open bush and is largely a summer migrant. Fiery-necked Nightjar uses moister woodland and is the lowland resident."
+    },
+    {
+      "slug": "caprimulgus-fossii",
+      "note": "Square-tailed Nightjar uses more open sandy ground, river edges and roads. The two meet when foraging at night."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Fiery-necked nightjar",
+      "url": "https://en.wikipedia.org/wiki/Fiery-necked_nightjar",
+      "publisher": "Wikipedia",
+      "year": 2026
+    },
+    {
+      "title": "Fierynecked Nightjar",
+      "url": "http://sabap2.adu.org.za/docs/sabap1/405.pdf",
+      "publisher": "The Atlas of Southern African Birds",
+      "year": 1997
+    }
+  ],
   "population": {
     "estimate": {
       "low": 32768,
@@ -35,8 +82,128 @@
     },
     "tierApplied": "D"
   },
-  "variants": [],
-  "viewNotes": [],
-  "calls": [],
-  "images": []
+  "variants": [
+    {
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "marks": {
+        "bill": {
+          "colour": null,
+          "shape": null
+        },
+        "eye": {
+          "iris": null,
+          "ring": null
+        },
+        "legs": {
+          "colour": null
+        },
+        "head": {
+          "crown": null,
+          "face": null,
+          "throat": null,
+          "pattern": "Light-coloured crown with a darker spot at the centre. Other plumage colours were not described in the texts used."
+        },
+        "upperparts": {
+          "back": null,
+          "rump": null,
+          "pattern": null
+        },
+        "underparts": {
+          "breast": null,
+          "belly": null,
+          "pattern": null
+        },
+        "wings": {
+          "above": null,
+          "below": null,
+          "pattern": null
+        },
+        "tail": {
+          "colour": null,
+          "shape": null
+        }
+      }
+    }
+  ],
+  "viewNotes": [
+    {
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Light crown with a darker centre, roosting on leaf litter. The rest of the side pattern was not described."
+    },
+    {
+      "view": "perched-front",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "The face pattern was not described beyond the crown spot."
+    },
+    {
+      "view": "perched-back",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "The back pattern was not described."
+    },
+    {
+      "view": "flight-above",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "The upperwing in flight was not described."
+    },
+    {
+      "view": "flight-below",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "The underwing was not described."
+    }
+  ],
+  "calls": [
+    {
+      "sex": "any",
+      "type": "call",
+      "description": "A series of mellow notes that many people say sounds like “Good Lord, deliver us deliver us deliver us”, often after a wind-up call. Heard mainly at dusk and dawn. The texts do not separate the sexes. Grade A from near Buffelsvallei, North West. The filename says the wind-up.",
+      "recordings": [
+        {
+          "key": "xeno-canto/XC662460",
+          "source": "https://xeno-canto.org/662460",
+          "fileUrl": "https://xeno-canto.org/sounds/uploaded/HMBDEWEZVS/XC662460-1%20FN%20N%20Jar%20windup.mp3",
+          "author": "Tony Archer",
+          "license": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ]
+    }
+  ],
+  "images": [
+    {
+      "key": "caprimulgus-pectoralis/side.jpg",
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "source": "https://www.inaturalist.org/observations/84565080",
+      "fileUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/138991854/large.jpeg",
+      "author": "Tony Rebelo",
+      "license": "CC BY-SA 4.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "aiGenerated": false,
+      "hosted": false,
+      "alt": "Fiery-necked Nightjar resting side-on on a Kruger road",
+      "caption": "Fiery-necked Nightjar resting side-on on a Kruger road"
+    }
+  ],
+  "research": {
+    "confidence": "medium",
+    "needsReview": true,
+    "note": "Newman has no page. Status is resident for all twelve months because SABAP1 says the lowland race is resident and Kruger is lowveld. Inland birds may be partial migrants, which is noted and not used as an absence. Most plumage colours were not in the Wikipedia description, so they were not stored. The call is grade A from North West. The Kemp code VB was left unchanged."
+  }
 }

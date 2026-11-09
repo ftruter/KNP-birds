@@ -7,8 +7,49 @@
     "af": "Geelbekwitreier"
   },
   "family": "ardeidae",
-  "summary": "The details for this species have not been published yet.",
-  "sampleData": true,
+  "status": "resident",
+  "monthsPresent": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+  ],
+  "size": {
+    "lengthCm": {
+      "min": 68,
+      "max": 68
+    },
+    "note": "Newman's Birds gives 68 cm."
+  },
+  "habitat": "Quiet, well-vegetated pans and floodlands, usually solitary.",
+  "summary": "A white egret larger and heavier than Cattle Egret and Little Egret, and smaller than Great Egret. The bill and upper legs are yellow, becoming orange-red when breeding, and the lower legs and feet are blackish green. The gape stops below the eye. The neck has the kink of the larger herons, and the long lower-neck feathers hang clear of the body. Plumes are usually absent or reduced outside breeding.",
+  "sampleData": false,
+  "similar": [
+    {
+      "slug": "ardea-alba",
+      "note": "Great Egret is much larger, with entirely black legs and a gape that extends behind the eye."
+    },
+    {
+      "slug": "egretta-garzetta",
+      "note": "Little Egret has a black bill and black legs with yellow feet. Yellow-billed Egret has a yellow bill and yellow upper legs."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Yellow-billed (Intermediate) Egret",
+      "url": "https://newmansbirds.com/birds/yellow-billed-intermediate-egret/",
+      "publisher": "Newman's Birds",
+      "year": 2026
+    }
+  ],
   "population": {
     "estimate": {
       "low": null,
@@ -21,8 +62,120 @@
     "notes": "No sourced Kruger estimate is currently available; taxonomy or later records require separate research.",
     "sources": []
   },
-  "variants": [],
-  "viewNotes": [],
-  "calls": [],
-  "images": []
+  "variants": [
+    {
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "marks": {
+        "bill": {
+          "colour": "yellow",
+          "shape": "yellow, orange-red when breeding; the gape stops below the eye"
+        },
+        "eye": {
+          "iris": null,
+          "ring": null
+        },
+        "legs": {
+          "colour": [
+            "yellow",
+            "black"
+          ]
+        },
+        "head": {
+          "crown": "white",
+          "face": "white",
+          "throat": "white",
+          "pattern": "Upper legs yellow, lower legs and feet blackish green."
+        },
+        "upperparts": {
+          "back": "white",
+          "rump": null,
+          "pattern": null
+        },
+        "underparts": {
+          "breast": "white",
+          "belly": "white",
+          "pattern": null
+        },
+        "wings": {
+          "above": "white",
+          "below": "white",
+          "pattern": null
+        },
+        "tail": {
+          "colour": null,
+          "shape": null
+        }
+      }
+    }
+  ],
+  "viewNotes": [
+    {
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Yellow bill and yellow upper legs, with darker lower legs. The neck is kinked."
+    },
+    {
+      "view": "perched-front",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "The short gape finishes below the eye, not behind it."
+    },
+    {
+      "view": "perched-back",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "White back. Plumes are usually absent or reduced outside breeding."
+    },
+    {
+      "view": "flight-above",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "White above. Smaller and heavier than a Great Egret."
+    },
+    {
+      "view": "flight-below",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "White from below."
+    }
+  ],
+  "calls": [
+    {
+      "sex": "any",
+      "type": "call",
+      "description": "Newman does not describe the voice. No recording was found under Ardea brachyrhyncha. An Ardea intermedia file from China was not used, because that name now refers to a different egret.",
+      "recordings": []
+    }
+  ],
+  "images": [
+    {
+      "key": "ardea-brachyrhyncha/side.jpg",
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "source": "https://www.inaturalist.org/observations/407163110",
+      "fileUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/748172189/large.jpg",
+      "author": "Patrick Jackson",
+      "license": "CC BY 4.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by/4.0/",
+      "aiGenerated": false,
+      "hosted": false,
+      "alt": "Yellow-billed Egret standing side-on on a sandy Kruger shore, with a yellow bill",
+      "caption": "Yellow-billed Egret standing side-on on a sandy Kruger shore, with a yellow bill"
+    }
+  ],
+  "research": {
+    "confidence": "low",
+    "needsReview": true,
+    "note": "No Kemp estimate is published for this species, and that empty estimate was left as it is. Newman calls it an uncommon resident, so all twelve months are listed. Chick down and a call are gaps. The breeding orange-red bill and legs were not stored as a summer plumage."
+  }
 }
