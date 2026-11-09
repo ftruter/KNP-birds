@@ -134,6 +134,7 @@ test('every data file matches the schema, slugs, and colour vocabulary', async (
         'phasianidae',
         'phoenicopteridae',
         'phoeniculidae',
+        'phylloscopidae',
       ])
       const sourced =
         (data.kind === 'family' && sourcedFamily.has(data.slug)) ||

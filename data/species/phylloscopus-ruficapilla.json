@@ -7,8 +7,56 @@
     "af": "Geelkeelsanger"
   },
   "family": "phylloscopidae",
-  "summary": "The details for this species have not been published yet.",
-  "sampleData": true,
+  "size": {
+    "lengthCm": {
+      "min": 11,
+      "max": 11
+    },
+    "note": "Newman's Birds gives 11 cm."
+  },
+  "habitat": "Evergreen forest and forested kloofs, foraging in the canopy and mid-stratum. SABAP1 describes the mid-stratum and canopy of mature evergreen temperate forest, including fairly small patches.",
+  "summary": "A resident of evergreen forest, scarce in Kruger. Olive-green above, with a chestnut cap and eye-stripe, a yellow eyebrow and yellow breast, and a white belly. In southern birds the yellow extends onto the flanks and belly; in northern birds it is mainly on the throat. Sexes are alike. The immature has a greenish wash on the breast. The call is a plaintive tieuu, repeated for long periods, and the song is a high whistle, tirritee or sip sip sip pilly. Bill, eye, leg, wing and tail colours, and a flight pattern, were not described in the texts used here. No Kruger photograph was found. The population estimate was left unchanged.",
+  "sampleData": false,
+  "similar": [
+    {
+      "slug": "phylloscopus-trochilus",
+      "note": "Willow Warbler has no chestnut cap or eye-stripe. It has a pale eyebrow and a notched tail, and it uses bush and woodland rather than evergreen forest."
+    },
+    {
+      "slug": "zosterops-anderssoni",
+      "note": "Newman separates Yellow-throated Woodland Warbler from white-eyes by the chestnut cap and eye-stripe and by the forest habitat."
+    },
+    {
+      "slug": "iduna-natalensis",
+      "note": "African Yellow Warbler is a bird of rank cover. Yellow-throated Woodland Warbler has a chestnut cap and eye-stripe and forages in evergreen forest."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Yellow-throated Woodland-Warbler",
+      "url": "https://newmansbirds.com/birds/yellow-throated-woodland-warbler/",
+      "publisher": "Newman's Birds",
+      "year": 2026
+    },
+    {
+      "title": "The Atlas of Southern African Birds, Vol. 2 (Yellowthroated Warbler)",
+      "url": "https://sabap2.birdmap.africa/docs/sabap1/644.pdf",
+      "publisher": "BirdLife South Africa",
+      "year": 1997
+    },
+    {
+      "title": "Phylloscopus ruficapilla (Yellow-throated woodland-warbler)",
+      "url": "https://www.biodiversityexplorer.info/birds/sylviidae/phylloscopus_ruficapilla.htm",
+      "publisher": "Iziko Museums of South Africa",
+      "year": null
+    },
+    {
+      "title": "Avibase bird checklist — Kruger National Park",
+      "url": "https://avibase.bsc-eoc.org/checklist.jsp?region=ZA000003",
+      "publisher": "Avibase",
+      "year": null
+    }
+  ],
   "population": {
     "estimate": {
       "low": null,
@@ -21,8 +69,264 @@
     "notes": "No sourced Kruger estimate is currently available; taxonomy or later records require separate research.",
     "sources": []
   },
-  "variants": [],
-  "viewNotes": [],
-  "calls": [],
-  "images": []
+  "variants": [
+    {
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "marks": {
+        "bill": {
+          "colour": null,
+          "shape": null
+        },
+        "eye": {
+          "iris": null,
+          "ring": null
+        },
+        "legs": {
+          "colour": null
+        },
+        "head": {
+          "crown": "chestnut",
+          "face": [
+            "chestnut",
+            "yellow"
+          ],
+          "throat": "yellow",
+          "pattern": "Chestnut cap and eye-stripe. Yellow eyebrows. The English name and the northern-bird note both treat the throat as yellow."
+        },
+        "upperparts": {
+          "back": [
+            "olive",
+            "green"
+          ],
+          "rump": null,
+          "pattern": "Olive-green above. The rump was not given a separate colour."
+        },
+        "underparts": {
+          "breast": "yellow",
+          "belly": [
+            "white",
+            "yellow"
+          ],
+          "pattern": "Breast yellow and belly white. In southern birds the yellow extends onto the flanks and belly; in northern birds the yellow is confined mainly to the throat."
+        },
+        "wings": {
+          "above": null,
+          "below": null
+        },
+        "tail": {
+          "colour": null,
+          "shape": null
+        }
+      }
+    },
+    {
+      "age": "immature",
+      "sex": "any",
+      "season": "any",
+      "marks": {
+        "bill": {
+          "colour": null,
+          "shape": null
+        },
+        "eye": {
+          "iris": null,
+          "ring": null
+        },
+        "legs": {
+          "colour": null
+        },
+        "head": {
+          "crown": null,
+          "face": null,
+          "throat": null
+        },
+        "upperparts": {
+          "back": null,
+          "rump": null
+        },
+        "underparts": {
+          "breast": [
+            "green",
+            "yellow"
+          ],
+          "belly": null,
+          "pattern": "Greenish wash to the breast."
+        },
+        "wings": {
+          "above": null,
+          "below": null
+        },
+        "tail": {
+          "colour": null,
+          "shape": null
+        }
+      }
+    }
+  ],
+  "viewNotes": [
+    {
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Chestnut cap and eye-stripe, yellow eyebrow and breast, white belly, olive-green upperparts. Bill, eye and leg colours were not described."
+    },
+    {
+      "view": "perched-front",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Yellow eyebrow and yellow breast. The throat is yellow in the English name, and in northern birds the yellow is mainly on the throat."
+    },
+    {
+      "view": "perched-back",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Olive-green upperparts. The rump was not given a separate colour."
+    },
+    {
+      "view": "flight-above",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "A flight pattern was not described."
+    },
+    {
+      "view": "flight-below",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "The underwing was not described."
+    },
+    {
+      "view": "perched-side",
+      "age": "immature",
+      "sex": "any",
+      "season": "any",
+      "note": "Greenish wash to the breast. The rest of the immature was not described."
+    },
+    {
+      "view": "perched-front",
+      "age": "immature",
+      "sex": "any",
+      "season": "any",
+      "note": "Greenish wash to the breast."
+    },
+    {
+      "view": "perched-back",
+      "age": "immature",
+      "sex": "any",
+      "season": "any",
+      "note": "The immature back was not described."
+    },
+    {
+      "view": "flight-above",
+      "age": "immature",
+      "sex": "any",
+      "season": "any",
+      "note": "An immature flight pattern was not described."
+    },
+    {
+      "view": "flight-below",
+      "age": "immature",
+      "sex": "any",
+      "season": "any",
+      "note": "The immature underwing was not described."
+    }
+  ],
+  "calls": [
+    {
+      "sex": "any",
+      "type": "song",
+      "description": "A high-pitched whistled song, tirritee tirritee tirritee, or sip sip sip sip pilly pilly pilly. The texts used here do not separate the sexes. Grade A song from Port Alfred, Eastern Cape. The filename is XC424827-Yellow-throated Woodland Warbler exc wm.mp3.",
+      "recordings": [
+        {
+          "key": "xeno-canto/XC424827",
+          "source": "https://xeno-canto.org/424827",
+          "fileUrl": "https://xeno-canto.org/sounds/uploaded/SGLTZLDXYI/XC424827-Yellow-throated%20Woodland%20Warbler%20exc%20wm.mp3",
+          "author": "Lynette Rudman",
+          "license": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ]
+    },
+    {
+      "sex": "any",
+      "type": "call",
+      "description": "A plaintive tieuu, repeated for long periods. The texts used here do not separate the sexes. Grade A call from near Nature's Valley, Western Cape. The xeno-canto catalogue marks other species in the background. The filename is XC1145307-260312-094400-Yellow-throated-Woodland-Warbler-A.mp3.",
+      "recordings": [
+        {
+          "key": "xeno-canto/XC1145307",
+          "source": "https://xeno-canto.org/1145307",
+          "fileUrl": "https://xeno-canto.org/sounds/uploaded/WSTMKZEHKY/XC1145307-260312-094400-Yellow-throated-Woodland-Warbler-A.mp3",
+          "author": "Walter Wallner",
+          "license": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ]
+    }
+  ],
+  "images": [
+    {
+      "key": "phylloscopus-ruficapilla/garden-route-side.jpg",
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "source": "https://www.inaturalist.org/observations/270125488",
+      "fileUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/485759722/large.jpeg",
+      "author": "Christiaan Viljoen",
+      "license": "CC BY 4.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by/4.0/",
+      "aiGenerated": false,
+      "hosted": false,
+      "alt": "Yellow-throated Woodland Warbler perched side-on at the Garden Route, chestnut crown, yellow eyebrow and breast, white belly",
+      "caption": "Yellow-throated Woodland Warbler at the Garden Route, Western Cape. Chestnut crown, yellow eyebrow and breast, white belly. No Kruger photograph was found."
+    },
+    {
+      "key": "phylloscopus-ruficapilla/garden-route-front.jpg",
+      "view": "perched-front",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "source": "https://www.inaturalist.org/observations/270125488",
+      "fileUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/485761492/large.jpeg",
+      "author": "Christiaan Viljoen",
+      "license": "CC BY 4.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by/4.0/",
+      "aiGenerated": false,
+      "hosted": false,
+      "alt": "Yellow-throated Woodland Warbler facing the camera at the Garden Route, yellow throat and breast and a chestnut crown",
+      "caption": "Yellow-throated Woodland Warbler facing the camera at the Garden Route, Western Cape, with a yellow throat and breast and a chestnut crown."
+    },
+    {
+      "key": "phylloscopus-ruficapilla/ehlanzeni-back.jpg",
+      "view": "perched-back",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "source": "https://www.inaturalist.org/observations/227128519",
+      "fileUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/402888983/large.jpg",
+      "author": "Heinrich Human",
+      "license": "CC BY-NC 4.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+      "aiGenerated": false,
+      "hosted": false,
+      "alt": "Yellow-throated Woodland Warbler from behind in Ehlanzeni, rufous crown visible and the mantle mostly hidden",
+      "caption": "Yellow-throated Woodland Warbler from behind in Ehlanzeni, Mpumalanga, outside the park. The rufous crown is visible and the mantle is mostly hidden."
+    }
+  ],
+  "research": {
+    "confidence": "medium",
+    "needsReview": true,
+    "note": "Newman calls it a common resident of evergreen forest, and SABAP1 knows of no altitudinal migration in the eastern Transvaal, so status is resident. monthsPresent is unset. Avibase lists the Kruger occurrence as rare/accidental, and no month-by-month park list was published. The season table therefore follows the resident default, which is why this needs review. Sexes are alike. The immature is only the greenish wash on the breast. Bill, eye, legs, wings and tail were not given colours, and no flight pattern was described. No flight photograph and no Kruger photograph were found. The Garden Route pictures are the openly licensed South African frames that show the chestnut cap. Population figures were left unchanged."
+  },
+  "status": "resident"
 }

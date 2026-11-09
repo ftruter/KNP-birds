@@ -5,8 +5,8 @@
   "commonNames": {
     "en": "Leaf warblers"
   },
-  "summary": "Field notes for this family are still to be written.",
-  "sampleData": true,
+  "summary": "Leaf warblers. Willow Warbler is the common Palearctic migrant of bush and woodland, olive above with a pale eyebrow and a notched tail. Yellow-throated Woodland Warbler is the chestnut-capped resident of evergreen forest, and it is scarce in Kruger. Older southern African lists placed these birds in Sylviidae. This site follows IOC and BirdLife South Africa and keeps them in Phylloscopidae. An Afrikaans name for the family was not verified.",
+  "sampleData": false,
   "species": [
     {
       "slug": "phylloscopus-ruficapilla",
