@@ -1,10 +1,10 @@
 {
   "source": "xeno-canto explore catalogue, API v3 recording fields",
   "counts": {
-    "slots": 417,
+    "slots": 427,
     "swapped": 17,
     "added": 278,
-    "kept": 94,
+    "kept": 104,
     "none": 28,
     "cleaned": 0
   },
@@ -193,6 +193,22 @@
       "quality": "A",
       "country": "South Africa",
       "locality": "City of Matlosana (near Klerksdorp), Southern DC, North West",
+      "cleaned": false,
+      "license": "CC BY-NC-SA 4.0"
+    },
+    {
+      "slug": "aenigmatolimnas-marginalis",
+      "scientificName": "Aenigmatolimnas marginalis",
+      "index": 0,
+      "type": "call",
+      "action": "kept",
+      "from": [
+        "355772"
+      ],
+      "to": "355772",
+      "quality": "A",
+      "country": "South Africa",
+      "locality": "Temba, Bojanala, North West",
       "cleaned": false,
       "license": "CC BY-NC-SA 4.0"
     },
@@ -797,6 +813,38 @@
       "license": "CC BY-NC-SA 4.0"
     },
     {
+      "slug": "crecopsis-egregia",
+      "scientificName": "Crecopsis egregia",
+      "index": 0,
+      "type": "call",
+      "action": "kept",
+      "from": [
+        "899593"
+      ],
+      "to": "899593",
+      "quality": "B",
+      "country": "Tanzania",
+      "locality": "Seronera, Serengeti, Mara Region",
+      "cleaned": false,
+      "license": "CC BY-NC-SA 4.0"
+    },
+    {
+      "slug": "crex-crex",
+      "scientificName": "Crex crex",
+      "index": 0,
+      "type": "call",
+      "action": "kept",
+      "from": [
+        "1149182"
+      ],
+      "to": "1149182",
+      "quality": "A",
+      "country": "Finland",
+      "locality": "Orivesi",
+      "cleaned": false,
+      "license": "CC BY-NC-SA 4.0"
+    },
+    {
       "slug": "dendropicos-fuscescens",
       "scientificName": "Dendropicos fuscescens",
       "index": 0,
@@ -939,6 +987,38 @@
       "quality": "A",
       "country": "Zambia",
       "locality": "Kasanka National Park",
+      "cleaned": false,
+      "license": "CC BY-NC-SA 4.0"
+    },
+    {
+      "slug": "fulica-cristata",
+      "scientificName": "Fulica cristata",
+      "index": 0,
+      "type": "call",
+      "action": "kept",
+      "from": [
+        "649289"
+      ],
+      "to": "649289",
+      "quality": "A",
+      "country": "South Africa",
+      "locality": "near Grahamstown, Eastern Cape",
+      "cleaned": false,
+      "license": "CC BY-NC-SA 4.0"
+    },
+    {
+      "slug": "gallinula-chloropus",
+      "scientificName": "Gallinula chloropus",
+      "index": 0,
+      "type": "call",
+      "action": "kept",
+      "from": [
+        "1166417"
+      ],
+      "to": "1166417",
+      "quality": "A",
+      "country": "South Africa",
+      "locality": "Cape Town, Western Cape",
       "cleaned": false,
       "license": "CC BY-NC-SA 4.0"
     },
@@ -1354,6 +1434,22 @@
       "license": "CC BY-NC-ND 4.0"
     },
     {
+      "slug": "paragallinula-angulata",
+      "scientificName": "Paragallinula angulata",
+      "index": 0,
+      "type": "call",
+      "action": "kept",
+      "from": [
+        "407075"
+      ],
+      "to": "407075",
+      "quality": "A",
+      "country": "Mozambique",
+      "locality": "Marracuene, Maputo",
+      "cleaned": false,
+      "license": "CC BY-NC-SA 4.0"
+    },
+    {
       "slug": "pernis-apivorus",
       "scientificName": "Pernis apivorus",
       "index": 0,
@@ -1632,6 +1728,38 @@
       "license": "CC BY-NC-SA 4.0"
     },
     {
+      "slug": "porphyrio-alleni",
+      "scientificName": "Porphyrio alleni",
+      "index": 0,
+      "type": "call",
+      "action": "kept",
+      "from": [
+        "162127"
+      ],
+      "to": "162127",
+      "quality": "B",
+      "country": "Madagascar",
+      "locality": "Ankarafantsika National Park, Mahajanga",
+      "cleaned": false,
+      "license": "CC BY-NC-SA 3.0"
+    },
+    {
+      "slug": "porphyrio-porphyrio",
+      "scientificName": "Porphyrio porphyrio",
+      "index": 0,
+      "type": "call",
+      "action": "kept",
+      "from": [
+        "1183526"
+      ],
+      "to": "1183526",
+      "quality": "A",
+      "country": "South Africa",
+      "locality": "Strandfontein Sewage Works, Cape Town",
+      "cleaned": false,
+      "license": "CC BY-NC-SA 4.0"
+    },
+    {
       "slug": "pterocles-bicinctus",
       "scientificName": "Pterocles bicinctus",
       "index": 0,
@@ -1676,6 +1804,22 @@
       "quality": "A",
       "country": "South Africa",
       "locality": "Satara Camp, Kruger",
+      "cleaned": false,
+      "license": "CC BY-NC-SA 4.0"
+    },
+    {
+      "slug": "rallus-caerulescens",
+      "scientificName": "Rallus caerulescens",
+      "index": 0,
+      "type": "call",
+      "action": "kept",
+      "from": [
+        "321255"
+      ],
+      "to": "321255",
+      "quality": "B",
+      "country": "South Africa",
+      "locality": "Port Alfred, Eastern Cape",
       "cleaned": false,
       "license": "CC BY-NC-SA 4.0"
     },
@@ -6301,6 +6445,22 @@
       "quality": "B",
       "country": "South Africa",
       "locality": "Kareeboombult, Hoopstad, Free State",
+      "cleaned": false,
+      "license": "CC BY-NC-SA 4.0"
+    },
+    {
+      "slug": "zapornia-flavirostra",
+      "scientificName": "Zapornia flavirostra",
+      "index": 0,
+      "type": "call",
+      "action": "kept",
+      "from": [
+        "200591"
+      ],
+      "to": "200591",
+      "quality": "A",
+      "country": "South Africa",
+      "locality": "Grahamstown, Eastern Cape",
       "cleaned": false,
       "license": "CC BY-NC-SA 4.0"
     }

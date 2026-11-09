@@ -63,6 +63,16 @@
         }
       ]
     },
+    "aenigmatolimnas-marginalis": {
+      "calls": [
+        {
+          "index": 0,
+          "quality": {
+            "xeno-canto/XC355772": "A"
+          }
+        }
+      ]
+    },
     "aerospiza-tachiro": {
       "calls": [
         {
@@ -1348,6 +1358,26 @@
         }
       ]
     },
+    "crecopsis-egregia": {
+      "calls": [
+        {
+          "index": 0,
+          "quality": {
+            "xeno-canto/XC899593": "B"
+          }
+        }
+      ]
+    },
+    "crex-crex": {
+      "calls": [
+        {
+          "index": 0,
+          "quality": {
+            "xeno-canto/XC1149182": "A"
+          }
+        }
+      ]
+    },
     "cypsiurus-parvus": {
       "calls": [
         {
@@ -1550,6 +1580,26 @@
           "index": 0,
           "quality": {
             "xeno-canto/XC745582": "A"
+          }
+        }
+      ]
+    },
+    "fulica-cristata": {
+      "calls": [
+        {
+          "index": 0,
+          "quality": {
+            "xeno-canto/XC649289": "A"
+          }
+        }
+      ]
+    },
+    "gallinula-chloropus": {
+      "calls": [
+        {
+          "index": 0,
+          "quality": {
+            "xeno-canto/XC1166417": "A"
           }
         }
       ]
@@ -2052,6 +2102,16 @@
         }
       ]
     },
+    "paragallinula-angulata": {
+      "calls": [
+        {
+          "index": 0,
+          "quality": {
+            "xeno-canto/XC407075": "A"
+          }
+        }
+      ]
+    },
     "pernis-apivorus": {
       "calls": [
         {
@@ -2250,6 +2310,26 @@
         }
       ]
     },
+    "porphyrio-alleni": {
+      "calls": [
+        {
+          "index": 0,
+          "quality": {
+            "xeno-canto/XC162127": "B"
+          }
+        }
+      ]
+    },
+    "porphyrio-porphyrio": {
+      "calls": [
+        {
+          "index": 0,
+          "quality": {
+            "xeno-canto/XC1183526": "A"
+          }
+        }
+      ]
+    },
     "prinia-flavicans": {
       "calls": [
         {
@@ -2306,6 +2386,16 @@
           "index": 0,
           "quality": {
             "xeno-canto/XC368172": "A"
+          }
+        }
+      ]
+    },
+    "rallus-caerulescens": {
+      "calls": [
+        {
+          "index": 0,
+          "quality": {
+            "xeno-canto/XC321255": "B"
           }
         }
       ]
@@ -4221,6 +4311,16 @@
           "index": 0,
           "quality": {
             "xeno-canto/XC467724": "B"
+          }
+        }
+      ]
+    },
+    "zapornia-flavirostra": {
+      "calls": [
+        {
+          "index": 0,
+          "quality": {
+            "xeno-canto/XC200591": "A"
           }
         }
       ]

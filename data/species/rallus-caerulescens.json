@@ -7,8 +7,42 @@
     "af": "Grootriethaan"
   },
   "family": "rallidae",
-  "summary": "The details for this species have not been published yet.",
-  "sampleData": true,
+  "size": {
+    "lengthCm": {
+      "min": 36,
+      "max": 36
+    },
+    "note": "Newman's Birds gives 36 cm."
+  },
+  "habitat": "A shy bird of reed beds and thick swamp vegetation. It only occasionally comes out at the edges of pools, and it flicks its tail as it moves.",
+  "summary": "A fairly common resident. A long red bill and red legs. The identification line says the side of the head and the underparts are grey and the upper parts are rufous. The description says the upper parts are brown and the underparts are barred. The immature is sooty-brown, with the white of the throat extending to the central breast and the flanks barred rufous. The call is a shrill trilling rattle, creeea-crak-crak-crak. The Kemp name African Rail and the code VB were left unchanged.",
+  "sampleData": false,
+  "similar": [
+    {
+      "slug": "crecopsis-egregia",
+      "note": "African Crake is shorter-billed, with a pinkish bill and a red eye. African Rail has a long red bill and red legs."
+    }
+  ],
+  "sources": [
+    {
+      "title": "African Rail",
+      "url": "https://newmansbirds.com/birds/african-rail/",
+      "publisher": "Newman's Birds",
+      "year": 2026
+    },
+    {
+      "title": "Avibase bird checklist — Kruger National Park",
+      "url": "https://avibase.bsc-eoc.org/checklist.jsp?region=ZA000003",
+      "publisher": "Avibase",
+      "year": null
+    },
+    {
+      "title": "Kemp A.C., Herholdt J.J., Whyte I. & Harrison J. (2001). Birds of the two largest national parks in South Africa: a method to generate estimates of population size for all species and assess their conservation ecology. S. Afr. J. Sci. 97: 393–403.",
+      "url": "https://journals.co.za/doi/pdf/10.10520/EJC97367",
+      "publisher": "South African Journal of Science",
+      "year": 2001
+    }
+  ],
   "population": {
     "estimate": {
       "low": 64,
@@ -35,8 +69,193 @@
     },
     "tierApplied": "D"
   },
-  "variants": [],
-  "viewNotes": [],
-  "calls": [],
-  "images": []
+  "variants": [
+    {
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "marks": {
+        "bill": {
+          "colour": "red",
+          "shape": "Long."
+        },
+        "eye": {
+          "iris": null,
+          "ring": null
+        },
+        "legs": {
+          "colour": "red"
+        },
+        "head": {
+          "crown": null,
+          "face": "grey",
+          "throat": null,
+          "pattern": "Lateral head grey on the identification line."
+        },
+        "upperparts": {
+          "back": null,
+          "rump": null,
+          "pattern": "The identification line says rufous upper parts. The description says brown upper parts."
+        },
+        "underparts": {
+          "breast": "grey",
+          "belly": null,
+          "pattern": "The identification line says grey underparts. The description says barred underparts."
+        },
+        "wings": {
+          "above": null,
+          "below": null,
+          "pattern": null
+        },
+        "tail": {
+          "colour": null,
+          "shape": null
+        }
+      }
+    },
+    {
+      "age": "immature",
+      "sex": "any",
+      "season": "any",
+      "marks": {
+        "bill": {
+          "colour": null,
+          "shape": null
+        },
+        "eye": {
+          "iris": null,
+          "ring": null
+        },
+        "legs": {
+          "colour": null
+        },
+        "head": {
+          "crown": null,
+          "face": null,
+          "throat": "white",
+          "pattern": "Sooty-brown."
+        },
+        "upperparts": {
+          "back": "brown",
+          "rump": null,
+          "pattern": null
+        },
+        "underparts": {
+          "breast": "white",
+          "belly": null,
+          "pattern": "Sooty-brown. The white of the throat extends to the central breast. The flanks are barred rufous."
+        },
+        "wings": {
+          "above": null,
+          "below": null,
+          "pattern": null
+        },
+        "tail": {
+          "colour": null,
+          "shape": null
+        }
+      }
+    }
+  ],
+  "viewNotes": [
+    {
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Long red bill and red legs. The upper parts are rufous on the identification line and brown in the description. The underparts are grey or barred."
+    },
+    {
+      "view": "perched-front",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Grey side of the head on the identification line, and a long red bill."
+    },
+    {
+      "view": "perched-back",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "The upper-part colour conflicts between rufous and brown."
+    },
+    {
+      "view": "flight-above",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "A flight pattern was not described."
+    },
+    {
+      "view": "flight-below",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "The underwing was not described."
+    },
+    {
+      "view": "perched-side",
+      "age": "immature",
+      "sex": "any",
+      "season": "any",
+      "note": "Sooty-brown, with white from the throat to the central breast and rufous-barred flanks."
+    }
+  ],
+  "calls": [
+    {
+      "sex": "any",
+      "type": "call",
+      "description": "A shrill, trilling rattle, creeea-crak-crak-crak. The grade A recording is an ND duet. Grade B call from Port Alfred, Eastern Cape. The filename is XC321255-african rail exc.mp3.",
+      "recordings": [
+        {
+          "key": "xeno-canto/XC321255",
+          "source": "https://xeno-canto.org/321255",
+          "fileUrl": "https://xeno-canto.org/sounds/uploaded/SGLTZLDXYI/XC321255-african%20rail%20exc.mp3",
+          "author": "Lynette Rudman",
+          "license": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ]
+    }
+  ],
+  "images": [
+    {
+      "key": "rallus-caerulescens/side.jpg",
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "source": "https://www.inaturalist.org/observations/212873007",
+      "fileUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/376172372/large.jpg",
+      "author": "Kirby Morejohn",
+      "license": "CC BY-NC 4.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+      "aiGenerated": false,
+      "hosted": false,
+      "alt": "African Rail in Kruger, long red bill, red legs, grey underparts and a brown back",
+      "caption": "African Rail in Kruger, Ehlanzeni, with a long red bill, red legs, grey underparts and a brown back."
+    }
+  ],
+  "research": {
+    "confidence": "medium",
+    "needsReview": true,
+    "note": "Newman calls it a fairly common resident, and Avibase does not mark it rare, so all twelve months are listed. The upper parts are rufous on the identification line and brown in the description, and the underparts are grey or barred, so those colours are not reduced to one choice. The grade A recording is ND, so the playable file is grade B from Port Alfred. The Kemp code VB was left unchanged."
+  },
+  "status": "resident",
+  "monthsPresent": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+  ]
 }

@@ -7,8 +7,42 @@
     "af": "Kleinkoningriethaan"
   },
   "family": "rallidae",
-  "summary": "The details for this species have not been published yet.",
-  "sampleData": true,
+  "size": {
+    "lengthCm": {
+      "min": 33,
+      "max": 33
+    },
+    "note": "Newman's Birds gives 33 cm."
+  },
+  "habitat": "Singly or in pairs on secluded ponds with dense fringing vegetation. It climbs tangled reeds, walks on water lilies or swims.",
+  "summary": "An uncommon and irregular late-summer resident. A small, large-footed waterbird with green upper parts, a dark blue body, neck and head, and a red bill and red legs. The frontal shield varies from dull apple-green to blueish, and is not all red like African Swamphen. The identification line also says the shield is blue. The immature is not described in the text. The call is a series of clicks, dik-dik-dik-dik, or a rolling purrrrr-pur-pur-pur in courtship. Newman does not name the months, so they are unset. The Kemp name Lesser Gallinule and the code NB were left unchanged.",
+  "sampleData": false,
+  "similar": [
+    {
+      "slug": "porphyrio-porphyrio",
+      "note": "African Swamphen is larger, with an entirely red frontal shield and bill and pink legs. Allen’s Gallinule has a shield that varies from dull apple-green to blueish."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Allen’s Gallinule",
+      "url": "https://newmansbirds.com/birds/allens-gallinule/",
+      "publisher": "Newman's Birds",
+      "year": 2026
+    },
+    {
+      "title": "Avibase bird checklist — Kruger National Park",
+      "url": "https://avibase.bsc-eoc.org/checklist.jsp?region=ZA000003",
+      "publisher": "Avibase",
+      "year": null
+    },
+    {
+      "title": "Kemp A.C., Herholdt J.J., Whyte I. & Harrison J. (2001). Birds of the two largest national parks in South Africa: a method to generate estimates of population size for all species and assess their conservation ecology. S. Afr. J. Sci. 97: 393–403.",
+      "url": "https://journals.co.za/doi/pdf/10.10520/EJC97367",
+      "publisher": "South African Journal of Science",
+      "year": 2001
+    }
+  ],
   "population": {
     "estimate": {
       "low": 8,
@@ -35,8 +69,129 @@
     },
     "tierApplied": "D"
   },
-  "variants": [],
-  "viewNotes": [],
-  "calls": [],
-  "images": []
+  "variants": [
+    {
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "marks": {
+        "bill": {
+          "colour": "red",
+          "shape": null
+        },
+        "eye": {
+          "iris": null,
+          "ring": null
+        },
+        "legs": {
+          "colour": "red"
+        },
+        "head": {
+          "crown": "blue",
+          "face": null,
+          "throat": null,
+          "pattern": "Dark blue head and neck. The frontal shield varies from dull apple-green to blueish. The identification line says the shield is blue."
+        },
+        "upperparts": {
+          "back": "green",
+          "rump": null,
+          "pattern": "Green upper parts."
+        },
+        "underparts": {
+          "breast": "blue",
+          "belly": "blue",
+          "pattern": "Dark blue body."
+        },
+        "wings": {
+          "above": null,
+          "below": null,
+          "pattern": null
+        },
+        "tail": {
+          "colour": null,
+          "shape": null
+        }
+      }
+    }
+  ],
+  "viewNotes": [
+    {
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Green upper parts, dark blue body, red bill and red legs. The shield is not all red."
+    },
+    {
+      "view": "perched-front",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Dark blue head and a red bill. The shield colour varies."
+    },
+    {
+      "view": "perched-back",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Green upper parts."
+    },
+    {
+      "view": "flight-above",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "A flight pattern was not described."
+    },
+    {
+      "view": "flight-below",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "The underwing was not described."
+    }
+  ],
+  "calls": [
+    {
+      "sex": "any",
+      "type": "call",
+      "description": "Rapid clicks, dik-dik-dik-dik, or a melodious rolling purrrrr-pur-pur-pur in courtship. The grade A recordings are ND. Grade B call from Ankarafantsika National Park, Madagascar. The licence is CC BY-NC-SA 3.0. The filename is XC162127-Allen's GallinuleAK12013.mp3.",
+      "recordings": [
+        {
+          "key": "xeno-canto/XC162127",
+          "source": "https://xeno-canto.org/162127",
+          "fileUrl": "https://xeno-canto.org/sounds/uploaded/PWDLINYMKL/XC162127-Allen%27s%20GallinuleAK12013.mp3",
+          "author": "Mike Nelson",
+          "license": "CC BY-NC-SA 3.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/3.0/",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ]
+    }
+  ],
+  "images": [
+    {
+      "key": "porphyrio-alleni/side.jpg",
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "source": "https://www.inaturalist.org/observations/217115084",
+      "fileUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/384049491/large.jpg",
+      "author": "Heinrich Human",
+      "license": "CC BY-NC 4.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+      "aiGenerated": false,
+      "hosted": false,
+      "alt": "Allen’s Gallinule at Lake Panic, Kruger, red bill and legs, blue body and green back",
+      "caption": "Allen’s Gallinule at Lake Panic, Kruger, with a red bill and legs, a dark blue body, a green back and a pale frontal shield."
+    }
+  ],
+  "research": {
+    "confidence": "medium",
+    "needsReview": true,
+    "note": "Newman calls it an uncommon and irregular late-summer resident and does not name the months, so status is summer-migrant and monthsPresent is unset. The shield colour varies, so it is not stored as one colour. The immature is only said to be as illustrated. The grade A recordings are ND, so the playable file is grade B from Madagascar. The Kemp name Lesser Gallinule and the code NB were left unchanged."
+  },
+  "status": "summer-migrant"
 }
