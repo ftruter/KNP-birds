@@ -1,9 +1,9 @@
 {
   "source": "xeno-canto explore catalogue, API v3 recording fields",
   "counts": {
-    "slots": 112,
+    "slots": 113,
     "swapped": 17,
-    "added": 19,
+    "added": 20,
     "kept": 57,
     "none": 19,
     "cleaned": 0
@@ -1908,6 +1908,20 @@
       "quality": "A",
       "country": "South Africa",
       "locality": "Strandfontein Sewage Works, Cape Town, Western Cape",
+      "cleaned": false,
+      "license": "CC BY-NC-SA 4.0"
+    },
+    {
+      "slug": "anhinga-rufa",
+      "scientificName": "Anhinga rufa",
+      "index": 0,
+      "type": "call",
+      "action": "added",
+      "from": [],
+      "to": "326628",
+      "quality": "B",
+      "country": "South Africa",
+      "locality": "Port Alfred, Western District, Eastern Cape",
       "cleaned": false,
       "license": "CC BY-NC-SA 4.0"
     }
