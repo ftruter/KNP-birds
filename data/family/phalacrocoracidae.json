@@ -6,8 +6,8 @@
     "en": "Cormorants",
     "af": "Duikers"
   },
-  "summary": "Field notes for this family are still to be written.",
-  "sampleData": true,
+  "summary": "Cormorants. Reed Cormorant is the smaller black bird with speckled wings. Great (White-breasted) Cormorant has a white throat and breast and dark brown wings. Newman’s page for the larger bird uses Phalacrocorax lucidus.",
+  "sampleData": false,
   "species": [
     {
       "slug": "microcarbo-africanus",

@@ -3686,6 +3686,26 @@
           }
         }
       ]
+    },
+    "microcarbo-africanus": {
+      "calls": [
+        {
+          "index": 0,
+          "quality": {
+            "xeno-canto/XC860402": "A"
+          }
+        }
+      ]
+    },
+    "phalacrocorax-carbo": {
+      "calls": [
+        {
+          "index": 0,
+          "quality": {
+            "xeno-canto/XC323326": "A"
+          }
+        }
+      ]
     }
   }
 }

@@ -7,8 +7,36 @@
     "af": "Witborsduiker"
   },
   "family": "phalacrocoracidae",
-  "summary": "The details for this species have not been published yet.",
-  "sampleData": true,
+  "size": {
+    "lengthCm": {
+      "min": 90,
+      "max": 90
+    },
+    "note": "Newman's Birds gives 90 cm on the White-breasted Cormorant page."
+  },
+  "habitat": "Singly or in groups on coastal rocks, islands and estuaries, and on large inland waters.",
+  "summary": "A common or localised resident. Large, with a white throat and breast. The upperwings and tail are dark brown and the wing feathers are edged black. The adult has green eyes, a pale grey bill with a darker culmen and yellow facial skin. The immature has entirely white underparts, much whiter than an immature Reed Cormorant. Newman’s page uses Phalacrocorax lucidus and the name White-breasted Cormorant. This file keeps Phalacrocorax carbo and Great (White-breasted) Cormorant. The Kemp paper name Whitebreasted Cormorant and the code RB were left unchanged.",
+  "sampleData": false,
+  "similar": [
+    {
+      "slug": "microcarbo-africanus",
+      "note": "Reed Cormorant is considerably smaller. Its immature is off-white below, never as white as an immature White-breasted Cormorant."
+    }
+  ],
+  "sources": [
+    {
+      "title": "White-breasted Cormorant",
+      "url": "https://newmansbirds.com/birds/white-breasted-cormorant/",
+      "publisher": "Newman's Birds",
+      "year": 2026
+    },
+    {
+      "title": "Kemp A.C., Herholdt J.J., Whyte I. & Harrison J. (2001). Birds of the two largest national parks in South Africa: a method to generate estimates of population size for all species and assess their conservation ecology. S. Afr. J. Sci. 97: 393–403.",
+      "url": "https://journals.co.za/doi/pdf/10.10520/EJC97367",
+      "publisher": "South African Journal of Science",
+      "year": 2001
+    }
+  ],
   "population": {
     "estimate": {
       "low": 32,
@@ -35,8 +63,216 @@
     },
     "tierApplied": "D"
   },
-  "variants": [],
-  "viewNotes": [],
-  "calls": [],
-  "images": []
+  "variants": [
+    {
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "marks": {
+        "bill": {
+          "colour": "grey",
+          "shape": "Pale grey, with a darker culmen."
+        },
+        "eye": {
+          "iris": "green",
+          "ring": null
+        },
+        "legs": {
+          "colour": null
+        },
+        "head": {
+          "crown": null,
+          "face": null,
+          "throat": "white",
+          "pattern": "Yellow facial skin."
+        },
+        "upperparts": {
+          "back": null,
+          "rump": null
+        },
+        "underparts": {
+          "breast": "white",
+          "belly": null
+        },
+        "wings": {
+          "above": "dark-brown",
+          "below": null,
+          "pattern": "Wing feathers edged black."
+        },
+        "tail": {
+          "colour": "dark-brown",
+          "shape": null
+        }
+      }
+    },
+    {
+      "age": "immature",
+      "sex": "any",
+      "season": "any",
+      "marks": {
+        "bill": {
+          "colour": null,
+          "shape": null
+        },
+        "eye": {
+          "iris": null,
+          "ring": null
+        },
+        "legs": {
+          "colour": null
+        },
+        "head": {
+          "crown": null,
+          "face": null,
+          "throat": null
+        },
+        "upperparts": {
+          "back": null,
+          "rump": null
+        },
+        "underparts": {
+          "breast": "white",
+          "belly": "white",
+          "pattern": "Entirely white underparts, much whiter than an immature Reed Cormorant."
+        },
+        "wings": {
+          "above": null,
+          "below": null
+        },
+        "tail": {
+          "colour": null,
+          "shape": null
+        }
+      }
+    }
+  ],
+  "viewNotes": [
+    {
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "White throat and breast, pale grey bill and yellow facial skin."
+    },
+    {
+      "view": "perched-front",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Green eye, yellow facial skin and a white throat."
+    },
+    {
+      "view": "perched-back",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Dark brown upperwings, the feathers edged black, and a dark brown tail."
+    },
+    {
+      "view": "flight-above",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Dark brown upperwings edged black."
+    },
+    {
+      "view": "flight-below",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "White breast. The underwing was not described."
+    },
+    {
+      "view": "perched-side",
+      "age": "immature",
+      "sex": "any",
+      "season": "any",
+      "note": "Entirely white underparts."
+    },
+    {
+      "view": "perched-front",
+      "age": "immature",
+      "sex": "any",
+      "season": "any",
+      "note": "The immature face was not described."
+    },
+    {
+      "view": "perched-back",
+      "age": "immature",
+      "sex": "any",
+      "season": "any",
+      "note": "The immature back was not described."
+    },
+    {
+      "view": "flight-above",
+      "age": "immature",
+      "sex": "any",
+      "season": "any",
+      "note": "An immature flight pattern was not described."
+    },
+    {
+      "view": "flight-below",
+      "age": "immature",
+      "sex": "any",
+      "season": "any",
+      "note": "Entirely white underparts."
+    }
+  ],
+  "calls": [
+    {
+      "sex": "any",
+      "type": "call",
+      "description": "Newman does not describe the voice. Grade A begging call and call from Mjejane Private Game Reserve, Hectorspruit. Catalogued as Phalacrocorax lucidus, the name on Newman’s page. The filename is XC323326-Cormorant WB_Mjejane_160618_11_A.mp3.",
+      "recordings": [
+        {
+          "key": "xeno-canto/XC323326",
+          "source": "https://xeno-canto.org/323326",
+          "fileUrl": "https://xeno-canto.org/sounds/uploaded/TWAAJJHMEH/XC323326-Cormorant%20WB_Mjejane_160618_11_A.mp3",
+          "author": "Faansie Peacock",
+          "license": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ]
+    }
+  ],
+  "images": [
+    {
+      "key": "phalacrocorax-carbo/side.jpg",
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "source": "https://www.inaturalist.org/observations/406344737",
+      "fileUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/746530913/large.jpg",
+      "author": "Patrick Jackson",
+      "license": "CC BY 4.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by/4.0/",
+      "aiGenerated": false,
+      "hosted": false,
+      "alt": "White-breasted Cormorant with a white throat and breast and dark wings",
+      "caption": "Great (White-breasted) Cormorant in the Ehlanzeni district, white throat and breast, yellow facial skin and dark brown wings."
+    }
+  ],
+  "research": {
+    "confidence": "medium",
+    "needsReview": true,
+    "note": "Newman calls it a common or localised resident, so status is resident and all twelve months are listed. The immature upperparts are not described, which is why this needs review. The stored scientific name Phalacrocorax carbo was left unchanged. Population figures, the Kemp paper name Whitebreasted Cormorant and the code RB were left unchanged."
+  },
+  "status": "resident",
+  "monthsPresent": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+  ]
 }
