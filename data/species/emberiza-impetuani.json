@@ -7,8 +7,49 @@
     "af": "Vaalstreepkoppie"
   },
   "family": "emberizidae",
-  "summary": "The details for this species have not been published yet.",
-  "sampleData": true,
+  "status": "resident",
+  "monthsPresent": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+  ],
+  "size": {
+    "lengthCm": {
+      "min": 14,
+      "max": 14
+    },
+    "note": "Newman's Birds gives 14 cm."
+  },
+  "habitat": "Usually in small flocks in grassland, Karoo and semi-arid woodland, often in rocky regions with sparse bushes, and in exotic plantations.",
+  "summary": "A common near-endemic resident. A small, pale, cinnamon-washed bunting with few strong marks: light brown above with buffy feather edges, a pale eyebrow, and pale cinnamon-brown below. The sexes are alike, and the immature is closely similar. The take-off call is a nasal chut. The song is a rapid trrrooo-cheeoo-cheepp-trree, repeated with variations. It is nomadic and can erupt in very cold weather. The Kemp code VB was left unchanged.",
+  "sampleData": false,
+  "similar": [
+    {
+      "slug": "emberiza-tahapisi",
+      "note": "Cinnamon-breasted Bunting has a bold black-and-white streaked head. Lark-like Bunting is plain and pale."
+    },
+    {
+      "slug": "emberiza-flaviventris",
+      "note": "Golden-breasted Bunting has an orange breast and a striped black head. Lark-like Bunting lacks those marks."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Lark-like Bunting",
+      "url": "https://newmansbirds.com/birds/lark-like-bunting/",
+      "publisher": "Newman's Birds",
+      "year": 2026
+    }
+  ],
   "population": {
     "estimate": {
       "low": 32,
@@ -35,8 +76,128 @@
     },
     "tierApplied": "D"
   },
-  "variants": [],
-  "viewNotes": [],
-  "calls": [],
-  "images": []
+  "variants": [
+    {
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "marks": {
+        "bill": {
+          "colour": null,
+          "shape": null
+        },
+        "eye": {
+          "iris": null,
+          "ring": null
+        },
+        "legs": {
+          "colour": null
+        },
+        "head": {
+          "crown": null,
+          "face": null,
+          "throat": null,
+          "pattern": "Pale eyebrow."
+        },
+        "upperparts": {
+          "back": "brown",
+          "rump": null,
+          "pattern": "Light brown above, with buffy feather edges."
+        },
+        "underparts": {
+          "breast": "cinnamon",
+          "belly": "cinnamon",
+          "pattern": "Pale cinnamon-brown below."
+        },
+        "wings": {
+          "above": null,
+          "below": null,
+          "pattern": null
+        },
+        "tail": {
+          "colour": null,
+          "shape": null
+        }
+      }
+    }
+  ],
+  "viewNotes": [
+    {
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "A small pale bird, light brown above and pale cinnamon-brown below, with a pale eyebrow."
+    },
+    {
+      "view": "perched-front",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Pale cinnamon-brown underparts and a pale eyebrow. Strong head stripes were not described."
+    },
+    {
+      "view": "perched-back",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Light brown upper parts with buffy feather edges."
+    },
+    {
+      "view": "flight-above",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "The call is given at take-off. A flight pattern was not described."
+    },
+    {
+      "view": "flight-below",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Pale cinnamon-brown below."
+    }
+  ],
+  "calls": [
+    {
+      "sex": "any",
+      "type": "song",
+      "description": "A rapidly delivered trrrooo-cheeoo-cheepp-trree, repeated with variations. The take-off call is a nasal chut. Grade A song from near Mount Zebra National Park. The filename is Lark-like bunting.mp3.",
+      "recordings": [
+        {
+          "key": "xeno-canto/XC312689",
+          "source": "https://xeno-canto.org/312689",
+          "fileUrl": "https://xeno-canto.org/sounds/uploaded/SGLTZLDXYI/XC312689-Lark-like%20bunting.mp3",
+          "author": "Lynette Rudman",
+          "license": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ]
+    }
+  ],
+  "images": [
+    {
+      "key": "emberiza-impetuani/side.jpg",
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "source": "https://www.inaturalist.org/observations/197329330",
+      "fileUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/347522697/large.jpeg",
+      "author": "Duncan McKenzie",
+      "license": "CC BY-NC 4.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+      "aiGenerated": false,
+      "hosted": false,
+      "alt": "Two Lark-like Buntings on a dead tree",
+      "caption": "Two Lark-like Buntings on a dead tree. They are plain and pale, without a bold head pattern."
+    }
+  ],
+  "research": {
+    "confidence": "medium",
+    "needsReview": true,
+    "note": "Newman calls it a common near-endemic resident, and also nomadic, with cold-weather eruptions. Status is resident and all twelve months are listed. The Kemp code VB was left unchanged. The immature is described only as closely similar, so no separate variant was stored. Population figures were left unchanged."
+  }
 }
