@@ -7,8 +7,36 @@
     "af": "Bruinkeelwewer"
   },
   "family": "ploceidae",
-  "summary": "The details for this species have not been published yet.",
-  "sampleData": true,
+  "size": {
+    "lengthCm": {
+      "min": 15,
+      "max": 15
+    },
+    "note": "Newman's Birds gives 15 cm."
+  },
+  "habitat": "Pairs and small flocks in large reed beds over water when breeding, and in adjacent riverine forest and thickets when not breeding. Seldom far from water or swamps.",
+  "summary": "An uncommon to locally common resident. A small, short-tailed weaver, all-yellow. The male has a brown throat-patch and brown lores, not a diffuse wash, and a black bill. The female is greener above, with a white belly and a pale horn bill. Both have brown eyes. There is no Kemp estimate.",
+  "sampleData": false,
+  "similar": [
+    {
+      "slug": "ploceus-subaureus",
+      "note": "Eastern Golden Weaver is pale yellow with a red eye. Southern Brown-throated Weaver has a brown throat-patch and brown eyes."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Southern Brown-throated Weaver",
+      "url": "https://newmansbirds.com/birds/southern-brown-throated-weaver/",
+      "publisher": "Newman's Birds",
+      "year": 2026
+    },
+    {
+      "title": "Avibase bird checklist — Kruger National Park",
+      "url": "https://avibase.bsc-eoc.org/checklist.jsp?region=ZA000003",
+      "publisher": "Avibase",
+      "year": null
+    }
+  ],
   "population": {
     "estimate": {
       "low": null,
@@ -21,8 +49,216 @@
     "notes": "No sourced Kruger estimate is currently available; taxonomy or later records require separate research.",
     "sources": []
   },
-  "variants": [],
-  "viewNotes": [],
-  "calls": [],
-  "images": []
+  "variants": [
+    {
+      "age": "adult",
+      "sex": "male",
+      "season": "any",
+      "marks": {
+        "bill": {
+          "colour": "black",
+          "shape": null
+        },
+        "eye": {
+          "iris": "brown",
+          "ring": null
+        },
+        "legs": {
+          "colour": null
+        },
+        "head": {
+          "crown": "yellow",
+          "face": "brown",
+          "throat": "brown",
+          "pattern": "Brown throat-patch and brown lores, not a diffuse wash."
+        },
+        "upperparts": {
+          "back": "yellow",
+          "rump": null
+        },
+        "underparts": {
+          "breast": "yellow",
+          "belly": "yellow"
+        },
+        "wings": {
+          "above": null,
+          "below": null
+        },
+        "tail": {
+          "colour": null,
+          "shape": null
+        }
+      }
+    },
+    {
+      "age": "adult",
+      "sex": "female",
+      "season": "any",
+      "marks": {
+        "bill": {
+          "colour": "horn",
+          "shape": null
+        },
+        "eye": {
+          "iris": "brown",
+          "ring": null
+        },
+        "legs": {
+          "colour": null
+        },
+        "head": {
+          "crown": null,
+          "face": null,
+          "throat": null
+        },
+        "upperparts": {
+          "back": "olive",
+          "rump": null,
+          "pattern": "Greener above."
+        },
+        "underparts": {
+          "breast": null,
+          "belly": "white",
+          "pattern": "White belly and a pale horn bill."
+        },
+        "wings": {
+          "above": null,
+          "below": null
+        },
+        "tail": {
+          "colour": null,
+          "shape": null
+        }
+      }
+    }
+  ],
+  "viewNotes": [
+    {
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "male",
+      "season": "any",
+      "note": "All-yellow, with a brown throat-patch, brown lores, a black bill and brown eyes."
+    },
+    {
+      "view": "perched-front",
+      "age": "adult",
+      "sex": "male",
+      "season": "any",
+      "note": "Brown throat-patch and brown lores."
+    },
+    {
+      "view": "perched-back",
+      "age": "adult",
+      "sex": "male",
+      "season": "any",
+      "note": "Yellow above."
+    },
+    {
+      "view": "flight-above",
+      "age": "adult",
+      "sex": "male",
+      "season": "any",
+      "note": "A flight pattern was not described."
+    },
+    {
+      "view": "flight-below",
+      "age": "adult",
+      "sex": "male",
+      "season": "any",
+      "note": "The underwing was not described."
+    },
+    {
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "female",
+      "season": "any",
+      "note": "Greener above, white belly and a pale horn bill."
+    },
+    {
+      "view": "perched-front",
+      "age": "adult",
+      "sex": "female",
+      "season": "any",
+      "note": "White belly and a pale horn bill."
+    },
+    {
+      "view": "perched-back",
+      "age": "adult",
+      "sex": "female",
+      "season": "any",
+      "note": "Greener above."
+    },
+    {
+      "view": "flight-above",
+      "age": "adult",
+      "sex": "female",
+      "season": "any",
+      "note": "A flight pattern was not described."
+    },
+    {
+      "view": "flight-below",
+      "age": "adult",
+      "sex": "female",
+      "season": "any",
+      "note": "The underwing was not described."
+    }
+  ],
+  "calls": [
+    {
+      "sex": "any",
+      "type": "song",
+      "description": "Newman does not print a call phrase. Grade A song from Liwonde National Park, Malawi. The filename is XC933092-240225_1322-bthr-weaver-song.mp3.",
+      "recordings": [
+        {
+          "key": "xeno-canto/XC933092",
+          "source": "https://xeno-canto.org/933092",
+          "fileUrl": "https://xeno-canto.org/sounds/uploaded/CQARALZBNN/XC933092-240225_1322-bthr-weaver-song.mp3",
+          "author": "Magnus Wadstein",
+          "license": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ]
+    }
+  ],
+  "images": [
+    {
+      "key": "ploceus-xanthopterus/side-male.jpg",
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "male",
+      "season": "any",
+      "source": "https://www.inaturalist.org/observations/205473903",
+      "fileUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/363323451/large.jpeg",
+      "author": "Duncan McKenzie",
+      "license": "CC BY-NC 4.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+      "aiGenerated": false,
+      "hosted": false,
+      "alt": "Male Southern Brown-throated Weaver in Kruger, yellow, with a brown throat-patch and a black bill",
+      "caption": "Male Southern Brown-throated Weaver in Kruger, Ehlanzeni, yellow, with a brown throat-patch and a black bill."
+    }
+  ],
+  "research": {
+    "confidence": "medium",
+    "needsReview": true,
+    "note": "Newman calls it an uncommon to locally common resident, and Avibase does not mark it rare, so all twelve months are listed. There is no Kemp estimate. Newman does not print a call phrase. No female photograph and no flight photograph were found. The grade A song is from Malawi."
+  },
+  "status": "resident",
+  "monthsPresent": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+  ]
 }

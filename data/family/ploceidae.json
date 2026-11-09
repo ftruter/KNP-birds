@@ -6,8 +6,8 @@
     "en": "Weavers and widowbirds",
     "af": "Wewers"
   },
-  "summary": "Field notes for this family are still to be written.",
-  "sampleData": true,
+  "summary": "Weavers, bishops, widowbirds and queleas. Breeding males are the well-marked birds: yellow masked weavers, red or yellow bishops, and black widowbirds with coloured shoulders or a red collar. Thick-billed Weaver has a heavy bill, Red-billed Buffalo Weaver a red bill, and Red-billed Quelea gathers in huge nomadic flocks. Newman has no species page for Holub’s Golden Weaver, and the printed size for Scaly-feathered Weaver is unreadable. Cape Weaver, White-browed Sparrow-Weaver and Eastern Golden Weaver are rare or accidental on the Avibase Kruger list, so their months are unset.",
+  "sampleData": false,
   "species": [
     {
       "slug": "amblyospiza-albifrons",

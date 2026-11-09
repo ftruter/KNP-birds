@@ -7,8 +7,42 @@
     "af": "Witvlerkflap"
   },
   "family": "ploceidae",
-  "summary": "The details for this species have not been published yet.",
-  "sampleData": true,
+  "size": {
+    "lengthCm": {
+      "min": 19,
+      "max": 19
+    },
+    "note": "Newman's Birds gives 19 cm."
+  },
+  "habitat": "Marshes or damp vleis in otherwise dry thornveld and mixed bushveld, and rank vegetation bordering cultivations.",
+  "summary": "A common resident. The breeding male is black, with a yellow-and-white shoulder, a pale grey bill that the description also calls blueish, and a broad tail that is often fanned. He twitters while displaying. The female and non-breeding male were not described. The Kemp paper name Whitewinged Widow and the code RB were left unchanged.",
+  "sampleData": false,
+  "similar": [
+    {
+      "slug": "euplectes-axillaris",
+      "note": "Fan-tailed Widowbird has a red shoulder, retained all year, and a short tail. White-winged Widowbird has a yellow-and-white shoulder and a broad tail."
+    }
+  ],
+  "sources": [
+    {
+      "title": "White-winged Widowbird",
+      "url": "https://newmansbirds.com/birds/white-winged-widowbird/",
+      "publisher": "Newman's Birds",
+      "year": 2026
+    },
+    {
+      "title": "Avibase bird checklist — Kruger National Park",
+      "url": "https://avibase.bsc-eoc.org/checklist.jsp?region=ZA000003",
+      "publisher": "Avibase",
+      "year": null
+    },
+    {
+      "title": "Kemp A.C., Herholdt J.J., Whyte I. & Harrison J. (2001). Birds of the two largest national parks in South Africa: a method to generate estimates of population size for all species and assess their conservation ecology. S. Afr. J. Sci. 97: 393–403.",
+      "url": "https://journals.co.za/doi/pdf/10.10520/EJC97367",
+      "publisher": "South African Journal of Science",
+      "year": 2001
+    }
+  ],
   "population": {
     "estimate": {
       "low": 8192,
@@ -35,8 +69,143 @@
     },
     "tierApplied": "D"
   },
-  "variants": [],
-  "viewNotes": [],
-  "calls": [],
-  "images": []
+  "variants": [
+    {
+      "age": "adult",
+      "sex": "male",
+      "season": "breeding",
+      "marks": {
+        "bill": {
+          "colour": "grey",
+          "shape": "Pale grey on the identification line. The description says blueish."
+        },
+        "eye": {
+          "iris": null,
+          "ring": null
+        },
+        "legs": {
+          "colour": null
+        },
+        "head": {
+          "crown": null,
+          "face": null,
+          "throat": null
+        },
+        "upperparts": {
+          "back": "black",
+          "rump": null
+        },
+        "underparts": {
+          "breast": "black",
+          "belly": "black"
+        },
+        "wings": {
+          "above": [
+            "yellow",
+            "white"
+          ],
+          "below": null,
+          "pattern": "Yellow-and-white shoulder."
+        },
+        "tail": {
+          "colour": null,
+          "shape": "Broad, and frequently fanned."
+        }
+      }
+    }
+  ],
+  "viewNotes": [
+    {
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "male",
+      "season": "breeding",
+      "note": "Breeding male: black, with a yellow-and-white shoulder, a pale bill and a broad tail."
+    },
+    {
+      "view": "perched-front",
+      "age": "adult",
+      "sex": "male",
+      "season": "breeding",
+      "note": "Black, with a pale bill. The yellow-and-white shoulder may be hidden from the front."
+    },
+    {
+      "view": "perched-back",
+      "age": "adult",
+      "sex": "male",
+      "season": "breeding",
+      "note": "Yellow-and-white shoulder on a black back."
+    },
+    {
+      "view": "flight-above",
+      "age": "adult",
+      "sex": "male",
+      "season": "breeding",
+      "note": "A flight pattern was not described."
+    },
+    {
+      "view": "flight-below",
+      "age": "adult",
+      "sex": "male",
+      "season": "breeding",
+      "note": "The underwing was not described."
+    }
+  ],
+  "calls": [
+    {
+      "sex": "male",
+      "type": "song",
+      "description": "A twittering sound when displaying. Grade A song from Vaalkop Dam, North West, with other species in the background. The filename is XC364551-Widowbird Whitewinged_VK_161224_23_A_edit.mp3.",
+      "recordings": [
+        {
+          "key": "xeno-canto/XC364551",
+          "source": "https://xeno-canto.org/364551",
+          "fileUrl": "https://xeno-canto.org/sounds/uploaded/TWAAJJHMEH/XC364551-Widowbird%20Whitewinged_VK_161224_23_A_edit.mp3",
+          "author": "Faansie Peacock",
+          "license": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ]
+    }
+  ],
+  "images": [
+    {
+      "key": "euplectes-albonotatus/side-male.jpg",
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "male",
+      "season": "breeding",
+      "source": "https://www.inaturalist.org/observations/68398142",
+      "fileUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/110741162/large.jpeg",
+      "author": "Wynand Uys",
+      "license": "CC BY 4.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by/4.0/",
+      "aiGenerated": false,
+      "hosted": false,
+      "alt": "Breeding male White-winged Widowbird on the Old Main Road, Kruger, black with a yellow-and-white shoulder and a pale bill",
+      "caption": "Breeding male White-winged Widowbird on the Old Main Road, Kruger, black, with a yellow-and-white shoulder and a pale bill."
+    }
+  ],
+  "research": {
+    "confidence": "medium",
+    "needsReview": true,
+    "note": "Newman calls it a common resident, and Avibase does not mark it rare, so all twelve months are listed. The female and non-breeding male were not described, which is why this needs review. The bill is pale grey on the identification line and blueish in the description. No flight photograph was found. A streaked Kruger frame was not used because that plumage was not described. Population figures and the Kemp name Whitewinged Widow were left unchanged."
+  },
+  "status": "resident",
+  "monthsPresent": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+  ]
 }

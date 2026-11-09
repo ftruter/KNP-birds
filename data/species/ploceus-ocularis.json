@@ -7,8 +7,42 @@
     "af": "Brilwewer"
   },
   "family": "ploceidae",
-  "summary": "The details for this species have not been published yet.",
-  "sampleData": true,
+  "size": {
+    "lengthCm": {
+      "min": 15,
+      "max": 16
+    },
+    "note": "Newman's Birds gives 15–16 cm."
+  },
+  "habitat": "Pairs in riverine forest, the fringes of lowland and coastal forest, thornveld around pans and vleis, and around farmsteads and suburbia. It is not a social weaver.",
+  "summary": "A common resident. All-yellow, with darker wings, an orange wash on the head, a black bill and a black eye-stripe to the ear coverts. The eyes are pale. The male has a black bib. The immature has a horn-coloured bill. The call is a descending tee-tee-tee-tee-tee-tee-tee. It is not a social weaver. The Kemp paper name Spectacled Weaver and the code RB were left unchanged.",
+  "sampleData": false,
+  "similar": [
+    {
+      "slug": "ploceus-velatus",
+      "note": "Southern Masked Weaver has a full black mask and red eyes. Spectacled Weaver has a black eye-stripe to the ear coverts, pale eyes, and a black bib only on the male."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Spectacled Weaver",
+      "url": "https://newmansbirds.com/birds/spectacled-weaver/",
+      "publisher": "Newman's Birds",
+      "year": 2026
+    },
+    {
+      "title": "Avibase bird checklist — Kruger National Park",
+      "url": "https://avibase.bsc-eoc.org/checklist.jsp?region=ZA000003",
+      "publisher": "Avibase",
+      "year": null
+    },
+    {
+      "title": "Kemp A.C., Herholdt J.J., Whyte I. & Harrison J. (2001). Birds of the two largest national parks in South Africa: a method to generate estimates of population size for all species and assess their conservation ecology. S. Afr. J. Sci. 97: 393–403.",
+      "url": "https://journals.co.za/doi/pdf/10.10520/EJC97367",
+      "publisher": "South African Journal of Science",
+      "year": 2001
+    }
+  ],
   "population": {
     "estimate": {
       "low": 2048,
@@ -35,8 +69,273 @@
     },
     "tierApplied": "D"
   },
-  "variants": [],
-  "viewNotes": [],
-  "calls": [],
-  "images": []
+  "variants": [
+    {
+      "age": "adult",
+      "sex": "male",
+      "season": "any",
+      "marks": {
+        "bill": {
+          "colour": "black",
+          "shape": null
+        },
+        "eye": {
+          "iris": null,
+          "ring": null
+        },
+        "legs": {
+          "colour": null
+        },
+        "head": {
+          "crown": "orange",
+          "face": "yellow",
+          "throat": "black",
+          "pattern": "Orange wash on the head, pale eyes, and a black eye-stripe to the ear coverts. Black bib."
+        },
+        "upperparts": {
+          "back": "yellow",
+          "rump": null
+        },
+        "underparts": {
+          "breast": "yellow",
+          "belly": "yellow"
+        },
+        "wings": {
+          "above": null,
+          "below": null,
+          "pattern": "Wings darker. Newman does not name the darker colour."
+        },
+        "tail": {
+          "colour": null,
+          "shape": null
+        }
+      }
+    },
+    {
+      "age": "adult",
+      "sex": "female",
+      "season": "any",
+      "marks": {
+        "bill": {
+          "colour": "black",
+          "shape": null
+        },
+        "eye": {
+          "iris": null,
+          "ring": null
+        },
+        "legs": {
+          "colour": null
+        },
+        "head": {
+          "crown": "orange",
+          "face": "yellow",
+          "throat": null,
+          "pattern": "Orange wash on the head, pale eyes, and a black eye-stripe to the ear coverts. No black bib."
+        },
+        "upperparts": {
+          "back": "yellow",
+          "rump": null
+        },
+        "underparts": {
+          "breast": "yellow",
+          "belly": "yellow"
+        },
+        "wings": {
+          "above": null,
+          "below": null,
+          "pattern": "Wings darker. Newman does not name the darker colour."
+        },
+        "tail": {
+          "colour": null,
+          "shape": null
+        }
+      }
+    },
+    {
+      "age": "immature",
+      "sex": "any",
+      "season": "any",
+      "marks": {
+        "bill": {
+          "colour": "horn",
+          "shape": null
+        },
+        "eye": {
+          "iris": null,
+          "ring": null
+        },
+        "legs": {
+          "colour": null
+        },
+        "head": {
+          "crown": null,
+          "face": null,
+          "throat": null,
+          "pattern": "The immature resembles the adult, with a horn-coloured bill."
+        },
+        "upperparts": {
+          "back": null,
+          "rump": null
+        },
+        "underparts": {
+          "breast": null,
+          "belly": null
+        },
+        "wings": {
+          "above": null,
+          "below": null
+        },
+        "tail": {
+          "colour": null,
+          "shape": null
+        }
+      }
+    }
+  ],
+  "viewNotes": [
+    {
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "male",
+      "season": "any",
+      "note": "Yellow, orange wash on the head, black eye-stripe, pale eye, black bill and a black bib."
+    },
+    {
+      "view": "perched-front",
+      "age": "adult",
+      "sex": "male",
+      "season": "any",
+      "note": "Black bib, pale eye and an orange wash on the head."
+    },
+    {
+      "view": "perched-back",
+      "age": "adult",
+      "sex": "male",
+      "season": "any",
+      "note": "Yellow, with darker wings."
+    },
+    {
+      "view": "flight-above",
+      "age": "adult",
+      "sex": "male",
+      "season": "any",
+      "note": "A flight pattern was not described."
+    },
+    {
+      "view": "flight-below",
+      "age": "adult",
+      "sex": "male",
+      "season": "any",
+      "note": "The underwing was not described."
+    },
+    {
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "female",
+      "season": "any",
+      "note": "Yellow, orange wash on the head, black eye-stripe and a pale eye, without a black bib."
+    },
+    {
+      "view": "perched-front",
+      "age": "adult",
+      "sex": "female",
+      "season": "any",
+      "note": "Black eye-stripe and a pale eye. No bib."
+    },
+    {
+      "view": "perched-back",
+      "age": "adult",
+      "sex": "female",
+      "season": "any",
+      "note": "Yellow, with darker wings."
+    },
+    {
+      "view": "flight-above",
+      "age": "adult",
+      "sex": "female",
+      "season": "any",
+      "note": "A flight pattern was not described."
+    },
+    {
+      "view": "flight-below",
+      "age": "adult",
+      "sex": "female",
+      "season": "any",
+      "note": "The underwing was not described."
+    }
+  ],
+  "calls": [
+    {
+      "sex": "any",
+      "type": "call",
+      "description": "A descending tee-tee-tee-tee-tee-tee-tee. Grade A call from Kruger near Skukuza. The filename is XC1149077-20260518_KNP_AKaramitsos_XA60_A027C004_260518AS_SLE_-3dB_Weaver.mp3.",
+      "recordings": [
+        {
+          "key": "xeno-canto/XC1149077",
+          "source": "https://xeno-canto.org/1149077",
+          "fileUrl": "https://xeno-canto.org/sounds/uploaded/YSGTQVRQZI/XC1149077-20260518_KNP_AKaramitsos_XA60_A027C004_260518AS_SLE_-3dB_Weaver.mp3",
+          "author": "African Bioacoustics Community",
+          "license": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ]
+    }
+  ],
+  "images": [
+    {
+      "key": "ploceus-ocularis/front-male.jpg",
+      "view": "perched-front",
+      "age": "adult",
+      "sex": "male",
+      "season": "any",
+      "source": "https://www.inaturalist.org/observations/204906782",
+      "fileUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/362230455/large.jpeg",
+      "author": "Karen Eichholz",
+      "license": "CC BY 4.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by/4.0/",
+      "aiGenerated": false,
+      "hosted": false,
+      "alt": "Male Spectacled Weaver in Kruger, yellow, with a black bib, a black eye-stripe and a pale eye",
+      "caption": "Male Spectacled Weaver in Kruger, Ehlanzeni, yellow, with a black bib, a black eye-stripe and a pale eye."
+    },
+    {
+      "key": "ploceus-ocularis/side-female.jpg",
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "female",
+      "season": "any",
+      "source": "https://www.inaturalist.org/observations/93246886",
+      "fileUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/154520164/large.jpeg",
+      "author": "Justin Ponder",
+      "license": "CC BY 4.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by/4.0/",
+      "aiGenerated": false,
+      "hosted": false,
+      "alt": "Spectacled Weaver at Skukuza, Kruger, orange-yellow head, black eye-stripe and a pale eye, without a black bib",
+      "caption": "Spectacled Weaver at Skukuza, Kruger, with an orange wash on the head, a black eye-stripe and a pale eye. No black bib is visible."
+    }
+  ],
+  "research": {
+    "confidence": "medium",
+    "needsReview": true,
+    "note": "Newman calls it a common resident, and Avibase does not mark it rare, so all twelve months are listed. No flight photograph was found. The grade A call is from Kruger near Skukuza. Population figures and the Kemp name Spectacled Weaver were left unchanged."
+  },
+  "status": "resident",
+  "monthsPresent": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+  ]
 }

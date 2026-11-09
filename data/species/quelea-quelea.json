@@ -7,8 +7,42 @@
     "af": "Rooibekkwelea"
   },
   "family": "ploceidae",
-  "summary": "The details for this species have not been published yet.",
-  "sampleData": true,
+  "size": {
+    "lengthCm": {
+      "min": 13,
+      "max": 13
+    },
+    "note": "Newman's Birds gives 13 cm."
+  },
+  "habitat": "Flocks, nomadic when not breeding, mainly in dry thornveld and mixed bushveld. Breeding colonies may cover many hectares of bush. Flying flocks resemble columns of smoke.",
+  "summary": "A common resident. The bill is red or pinkish. The breeding male has a blackish face. Newman says the breeding male is variable as illustrated, so no further mask colours are stored. The breeding female has a yellow bill. Non-breeding birds all have red bills. Flocks twitter. The Kemp paper name Redbilled Quelea and the code VB were left unchanged.",
+  "sampleData": false,
+  "similar": [
+    {
+      "slug": "euplectes-orix",
+      "note": "Southern Red Bishop is larger and, in breeding plumage, red and black. Red-billed Quelea is a small sparrow-like bird with a red or pinkish bill."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Red-billed Quelea",
+      "url": "https://newmansbirds.com/birds/red-billed-quelea/",
+      "publisher": "Newman's Birds",
+      "year": 2026
+    },
+    {
+      "title": "Avibase bird checklist — Kruger National Park",
+      "url": "https://avibase.bsc-eoc.org/checklist.jsp?region=ZA000003",
+      "publisher": "Avibase",
+      "year": null
+    },
+    {
+      "title": "Kemp A.C., Herholdt J.J., Whyte I. & Harrison J. (2001). Birds of the two largest national parks in South Africa: a method to generate estimates of population size for all species and assess their conservation ecology. S. Afr. J. Sci. 97: 393–403.",
+      "url": "https://journals.co.za/doi/pdf/10.10520/EJC97367",
+      "publisher": "South African Journal of Science",
+      "year": 2001
+    }
+  ],
   "population": {
     "estimate": {
       "low": 16777216,
@@ -35,8 +69,270 @@
     },
     "tierApplied": "D"
   },
-  "variants": [],
-  "viewNotes": [],
-  "calls": [],
-  "images": []
+  "variants": [
+    {
+      "age": "adult",
+      "sex": "male",
+      "season": "breeding",
+      "marks": {
+        "bill": {
+          "colour": "red",
+          "shape": "Red or pinkish."
+        },
+        "eye": {
+          "iris": null,
+          "ring": null
+        },
+        "legs": {
+          "colour": null
+        },
+        "head": {
+          "crown": null,
+          "face": "black",
+          "throat": null,
+          "pattern": "Blackish face. Newman says the breeding male is variable as illustrated, so no further mask colours are stored."
+        },
+        "upperparts": {
+          "back": null,
+          "rump": null
+        },
+        "underparts": {
+          "breast": null,
+          "belly": null
+        },
+        "wings": {
+          "above": null,
+          "below": null
+        },
+        "tail": {
+          "colour": null,
+          "shape": null
+        }
+      }
+    },
+    {
+      "age": "adult",
+      "sex": "female",
+      "season": "breeding",
+      "marks": {
+        "bill": {
+          "colour": "yellow",
+          "shape": null
+        },
+        "eye": {
+          "iris": null,
+          "ring": null
+        },
+        "legs": {
+          "colour": null
+        },
+        "head": {
+          "crown": null,
+          "face": null,
+          "throat": null,
+          "pattern": "Breeding female: yellow bill."
+        },
+        "upperparts": {
+          "back": null,
+          "rump": null
+        },
+        "underparts": {
+          "breast": null,
+          "belly": null
+        },
+        "wings": {
+          "above": null,
+          "below": null
+        },
+        "tail": {
+          "colour": null,
+          "shape": null
+        }
+      }
+    },
+    {
+      "age": "adult",
+      "sex": "any",
+      "season": "non-breeding",
+      "marks": {
+        "bill": {
+          "colour": "red",
+          "shape": "Red. Non-breeding birds all have red bills."
+        },
+        "eye": {
+          "iris": null,
+          "ring": null
+        },
+        "legs": {
+          "colour": null
+        },
+        "head": {
+          "crown": null,
+          "face": null,
+          "throat": null
+        },
+        "upperparts": {
+          "back": null,
+          "rump": null
+        },
+        "underparts": {
+          "breast": null,
+          "belly": null
+        },
+        "wings": {
+          "above": null,
+          "below": null
+        },
+        "tail": {
+          "colour": null,
+          "shape": null
+        }
+      }
+    }
+  ],
+  "viewNotes": [
+    {
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "male",
+      "season": "breeding",
+      "note": "Breeding male: red or pinkish bill and a blackish face. The rest of the mask is variable and was not stored."
+    },
+    {
+      "view": "perched-front",
+      "age": "adult",
+      "sex": "male",
+      "season": "breeding",
+      "note": "Blackish face and a red or pinkish bill."
+    },
+    {
+      "view": "perched-back",
+      "age": "adult",
+      "sex": "male",
+      "season": "breeding",
+      "note": "The breeding male’s back was not described in the text."
+    },
+    {
+      "view": "flight-above",
+      "age": "adult",
+      "sex": "male",
+      "season": "breeding",
+      "note": "A flight pattern was not described."
+    },
+    {
+      "view": "flight-below",
+      "age": "adult",
+      "sex": "male",
+      "season": "breeding",
+      "note": "The underwing was not described."
+    },
+    {
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "any",
+      "season": "non-breeding",
+      "note": "Non-breeding birds have red bills."
+    },
+    {
+      "view": "perched-front",
+      "age": "adult",
+      "sex": "any",
+      "season": "non-breeding",
+      "note": "Red bill."
+    },
+    {
+      "view": "perched-back",
+      "age": "adult",
+      "sex": "any",
+      "season": "non-breeding",
+      "note": "The non-breeding back was not described."
+    },
+    {
+      "view": "flight-above",
+      "age": "adult",
+      "sex": "any",
+      "season": "non-breeding",
+      "note": "A flight pattern was not described."
+    },
+    {
+      "view": "flight-below",
+      "age": "adult",
+      "sex": "any",
+      "season": "non-breeding",
+      "note": "The underwing was not described."
+    }
+  ],
+  "calls": [
+    {
+      "sex": "any",
+      "type": "call",
+      "description": "Twittering from flocks. Grade A flock calls from Satara Camp, Kruger. The filename is XC368172-170401_Red-billedQuelea_flockcalls_Satara_OC.mp3.",
+      "recordings": [
+        {
+          "key": "xeno-canto/XC368172",
+          "source": "https://xeno-canto.org/368172",
+          "fileUrl": "https://xeno-canto.org/sounds/uploaded/RFRTVEHIZX/XC368172-170401_Red-billedQuelea_flockcalls_Satara_OC.mp3",
+          "author": "Oscar Campbell",
+          "license": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ]
+    }
+  ],
+  "images": [
+    {
+      "key": "quelea-quelea/side.jpg",
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "any",
+      "season": "non-breeding",
+      "source": "https://www.inaturalist.org/observations/32580430",
+      "fileUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/51113168/large.jpeg",
+      "author": "Karen Eichholz",
+      "license": "CC BY 4.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by/4.0/",
+      "aiGenerated": false,
+      "hosted": false,
+      "alt": "Red-billed Quelea in Kruger, streaked, with a red bill",
+      "caption": "Red-billed Quelea in Kruger, Ehlanzeni, streaked, with a red bill."
+    },
+    {
+      "key": "quelea-quelea/flight.jpg",
+      "view": "flight-side",
+      "age": "adult",
+      "sex": "any",
+      "season": "non-breeding",
+      "source": "https://www.inaturalist.org/observations/394059879",
+      "fileUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/722369717/large.jpg",
+      "author": "Lukas Zangl",
+      "license": "CC BY 4.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by/4.0/",
+      "aiGenerated": false,
+      "hosted": false,
+      "alt": "A flock of Red-billed Queleas at Nkomazi, Kruger, red bills, some birds in flight",
+      "caption": "A flock of Red-billed Queleas at Nkomazi, Kruger, with red bills. Some birds are in flight."
+    }
+  ],
+  "research": {
+    "confidence": "medium",
+    "needsReview": true,
+    "note": "Newman calls it a common resident, and Avibase does not mark it rare, so all twelve months are listed. It is nomadic when not breeding. The breeding male is described as variable as illustrated, so only the blackish face and the red or pinkish bill are stored. The Kemp code VB and the large population figures were left unchanged. The grade A flock calls are from Satara Camp."
+  },
+  "status": "resident",
+  "monthsPresent": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+  ]
 }

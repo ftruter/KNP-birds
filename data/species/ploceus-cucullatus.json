@@ -7,8 +7,42 @@
     "af": "Bontrugwewer"
   },
   "family": "ploceidae",
-  "summary": "The details for this species have not been published yet.",
-  "sampleData": true,
+  "size": {
+    "lengthCm": {
+      "min": 17,
+      "max": 17
+    },
+    "note": "Newman's Birds gives 17 cm."
+  },
+  "habitat": "Woodland, thornveld and riverine forest, often in large colonies. Nomadic when not breeding.",
+  "summary": "A common resident. The breeding male has a spotted back, red eyes and a black bill. The northern race has an entirely black head. The southern race has a yellow crown, with black only on the face and throat. Newman does not say which race occurs in Kruger. The identification line says the female has red eyes and a pinkish bill. The description says the female has brown eyes, a yellow breast and white underparts, and that the non-breeding male is like the female but keeps the red eyes. The eye colour is left unset. The call is a husky swizzling. The Kemp paper name Spottedbacked Weaver and the code RB were left unchanged.",
+  "sampleData": false,
+  "similar": [
+    {
+      "slug": "ploceus-velatus",
+      "note": "Southern Masked Weaver has a plain back and a pointed black bib. Village Weaver has a spotted back."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Village Weaver",
+      "url": "https://newmansbirds.com/birds/village-weaver/",
+      "publisher": "Newman's Birds",
+      "year": 2026
+    },
+    {
+      "title": "Avibase bird checklist — Kruger National Park",
+      "url": "https://avibase.bsc-eoc.org/checklist.jsp?region=ZA000003",
+      "publisher": "Avibase",
+      "year": null
+    },
+    {
+      "title": "Kemp A.C., Herholdt J.J., Whyte I. & Harrison J. (2001). Birds of the two largest national parks in South Africa: a method to generate estimates of population size for all species and assess their conservation ecology. S. Afr. J. Sci. 97: 393–403.",
+      "url": "https://journals.co.za/doi/pdf/10.10520/EJC97367",
+      "publisher": "South African Journal of Science",
+      "year": 2001
+    }
+  ],
   "population": {
     "estimate": {
       "low": 32768,
@@ -35,8 +69,258 @@
     },
     "tierApplied": "D"
   },
-  "variants": [],
-  "viewNotes": [],
-  "calls": [],
-  "images": []
+  "variants": [
+    {
+      "age": "adult",
+      "sex": "male",
+      "season": "breeding",
+      "marks": {
+        "bill": {
+          "colour": "black",
+          "shape": null
+        },
+        "eye": {
+          "iris": "red",
+          "ring": null
+        },
+        "legs": {
+          "colour": null
+        },
+        "head": {
+          "crown": null,
+          "face": null,
+          "throat": null,
+          "pattern": "Newman does not assign a race to Kruger. The northern race has an entirely black head. The southern race has a yellow crown, with black only on the face and throat."
+        },
+        "upperparts": {
+          "back": "yellow",
+          "rump": null,
+          "pattern": "Spotted back. The identification line says the mantle is yellow-speckled and the wings are dark."
+        },
+        "underparts": {
+          "breast": "yellow",
+          "belly": "yellow"
+        },
+        "wings": {
+          "above": null,
+          "below": null,
+          "pattern": "Dark wings. Newman does not name the dark colour."
+        },
+        "tail": {
+          "colour": null,
+          "shape": null
+        }
+      }
+    },
+    {
+      "age": "adult",
+      "sex": "female",
+      "season": "any",
+      "marks": {
+        "bill": {
+          "colour": "pink",
+          "shape": null
+        },
+        "eye": {
+          "iris": null,
+          "ring": null
+        },
+        "legs": {
+          "colour": null
+        },
+        "head": {
+          "crown": "yellow",
+          "face": null,
+          "throat": "yellow",
+          "pattern": "The identification line says the eyes are red and the bill is pinkish. The description says the eyes are brown. The iris is left unset."
+        },
+        "upperparts": {
+          "back": null,
+          "rump": null
+        },
+        "underparts": {
+          "breast": "yellow",
+          "belly": "white",
+          "pattern": "Yellow throat and breast, whitish belly. No speckled mantle and no mask."
+        },
+        "wings": {
+          "above": null,
+          "below": null
+        },
+        "tail": {
+          "colour": null,
+          "shape": null
+        }
+      }
+    },
+    {
+      "age": "adult",
+      "sex": "male",
+      "season": "non-breeding",
+      "marks": {
+        "bill": {
+          "colour": null,
+          "shape": null
+        },
+        "eye": {
+          "iris": "red",
+          "ring": null
+        },
+        "legs": {
+          "colour": null
+        },
+        "head": {
+          "crown": null,
+          "face": null,
+          "throat": null,
+          "pattern": "Non-breeding male resembles the female but retains the red eyes."
+        },
+        "upperparts": {
+          "back": null,
+          "rump": null
+        },
+        "underparts": {
+          "breast": null,
+          "belly": null
+        },
+        "wings": {
+          "above": null,
+          "below": null
+        },
+        "tail": {
+          "colour": null,
+          "shape": null
+        }
+      }
+    }
+  ],
+  "viewNotes": [
+    {
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "male",
+      "season": "breeding",
+      "note": "Breeding male: spotted back, black bill and red eyes. The head is either all black or yellow-crowned with a black face, and Newman does not say which is the Kruger race."
+    },
+    {
+      "view": "perched-front",
+      "age": "adult",
+      "sex": "male",
+      "season": "breeding",
+      "note": "Red eyes and a black bill. The mask covers the face and throat in the southern race, and the whole head in the northern race."
+    },
+    {
+      "view": "perched-back",
+      "age": "adult",
+      "sex": "male",
+      "season": "breeding",
+      "note": "Spotted back."
+    },
+    {
+      "view": "flight-above",
+      "age": "adult",
+      "sex": "male",
+      "season": "breeding",
+      "note": "A flight pattern was not described."
+    },
+    {
+      "view": "flight-below",
+      "age": "adult",
+      "sex": "male",
+      "season": "breeding",
+      "note": "The underwing was not described."
+    },
+    {
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "female",
+      "season": "any",
+      "note": "Yellow breast and white underparts. The eye colour conflicts between the identification line and the description."
+    },
+    {
+      "view": "perched-front",
+      "age": "adult",
+      "sex": "female",
+      "season": "any",
+      "note": "Yellow breast and white underparts."
+    },
+    {
+      "view": "perched-back",
+      "age": "adult",
+      "sex": "female",
+      "season": "any",
+      "note": "The female back was not given a separate colour."
+    },
+    {
+      "view": "flight-above",
+      "age": "adult",
+      "sex": "female",
+      "season": "any",
+      "note": "A flight pattern was not described."
+    },
+    {
+      "view": "flight-below",
+      "age": "adult",
+      "sex": "female",
+      "season": "any",
+      "note": "The underwing was not described."
+    }
+  ],
+  "calls": [
+    {
+      "sex": "any",
+      "type": "call",
+      "description": "A husky swizzling. Grade A call from Skukuza, Kruger. The filename is XC1080073-Village-weaver--Kruger-Skukuza-260125-173715_Tr1-.mp3.",
+      "recordings": [
+        {
+          "key": "xeno-canto/XC1080073",
+          "source": "https://xeno-canto.org/1080073",
+          "fileUrl": "https://xeno-canto.org/sounds/uploaded/QXGZDUUJUO/XC1080073-Village-weaver--Kruger-Skukuza-260125-173715_Tr1-.mp3",
+          "author": "JJSUN",
+          "license": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ]
+    }
+  ],
+  "images": [
+    {
+      "key": "ploceus-cucullatus/side-male.jpg",
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "male",
+      "season": "breeding",
+      "source": "https://www.inaturalist.org/observations/32577202",
+      "fileUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/51107611/large.jpeg",
+      "author": "Karen Eichholz",
+      "license": "CC BY 4.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by/4.0/",
+      "aiGenerated": false,
+      "hosted": false,
+      "alt": "Breeding male Village Weaver in Kruger, yellow crown, black face and a spotted back",
+      "caption": "Breeding male Village Weaver in Kruger, Ehlanzeni, with a yellow crown, a black face and a spotted back. This matches the southern race. Newman does not say that this is the only race in the park."
+    }
+  ],
+  "research": {
+    "confidence": "medium",
+    "needsReview": true,
+    "note": "Newman calls it a common resident, and Avibase does not mark it rare, so all twelve months are listed. It is nomadic when not breeding. The female eye colour conflicts: red on the identification line, brown in the description, so the iris is unset. Newman does not assign the northern or southern race to Kruger. A watermarked frame was not used. No female photograph and no flight photograph were found. Population figures and the Kemp name Spottedbacked Weaver were left unchanged."
+  },
+  "status": "resident",
+  "monthsPresent": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+  ]
 }
