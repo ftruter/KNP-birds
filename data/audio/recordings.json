@@ -3786,6 +3786,26 @@
           }
         }
       ]
+    },
+    "phoeniconaias-minor": {
+      "calls": [
+        {
+          "index": 0,
+          "quality": {
+            "xeno-canto/XC267539": "A"
+          }
+        }
+      ]
+    },
+    "phoenicopterus-roseus": {
+      "calls": [
+        {
+          "index": 0,
+          "quality": {
+            "xeno-canto/XC135154": "A"
+          }
+        }
+      ]
     }
   }
 }

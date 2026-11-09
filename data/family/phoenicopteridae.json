@@ -6,8 +6,8 @@
     "en": "Flamingos",
     "af": "Flaminke"
   },
-  "summary": "Field notes for this family are still to be written.",
-  "sampleData": true,
+  "summary": "Flamingos. Lesser Flamingo is the smaller, pinker bird with a dark bill. Greater Flamingo is taller and whiter, with a pink bill tipped black.",
+  "sampleData": false,
   "species": [
     {
       "slug": "phoeniconaias-minor",

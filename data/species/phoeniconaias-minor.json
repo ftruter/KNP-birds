@@ -7,8 +7,36 @@
     "af": "Kleinflamink"
   },
   "family": "phoenicopteridae",
-  "summary": "The details for this species have not been published yet.",
-  "sampleData": true,
+  "size": {
+    "lengthCm": {
+      "min": 102,
+      "max": 102
+    },
+    "note": "Newman's Birds gives 102 cm."
+  },
+  "habitat": "Shallow brackish water and saltpans, feeding mainly on algae at the water surface.",
+  "summary": "Newman calls it a locally abundant nomadic resident and a visitor from other parts of Africa. A pink bird with red wing feathers, bill and legs, though birds can be quite white. The description says the bill is evenly dark maroon and looks black at a distance, and that it is pinker and more evenly coloured than Greater Flamingo. In flight the wing coverts look mottled with dark red. The immature is dull grey-brown. Newman does not describe the voice. Newman’s page uses Phoenicopterus minor. This file keeps Phoeniconaias minor. Status and months are unset. The Kemp code NB was left unchanged.",
+  "sampleData": false,
+  "similar": [
+    {
+      "slug": "phoenicopterus-roseus",
+      "note": "Greater Flamingo is taller and whiter, with a pink bill tipped black, not a dark maroon bill."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Lesser Flamingo",
+      "url": "https://newmansbirds.com/birds/lesser-flamingo/",
+      "publisher": "Newman's Birds",
+      "year": 2026
+    },
+    {
+      "title": "Kemp A.C., Herholdt J.J., Whyte I. & Harrison J. (2001). Birds of the two largest national parks in South Africa: a method to generate estimates of population size for all species and assess their conservation ecology. S. Afr. J. Sci. 97: 393–403.",
+      "url": "https://journals.co.za/doi/pdf/10.10520/EJC97367",
+      "publisher": "South African Journal of Science",
+      "year": 2001
+    }
+  ],
   "population": {
     "estimate": {
       "low": 8,
@@ -35,8 +63,201 @@
     },
     "tierApplied": "D"
   },
-  "variants": [],
-  "viewNotes": [],
-  "calls": [],
-  "images": []
+  "variants": [
+    {
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "marks": {
+        "bill": {
+          "colour": null,
+          "shape": "Evenly dark maroon, looking black at a distance. The colour key says the bill is red."
+        },
+        "eye": {
+          "iris": null,
+          "ring": null
+        },
+        "legs": {
+          "colour": "red"
+        },
+        "head": {
+          "crown": null,
+          "face": null,
+          "throat": null
+        },
+        "upperparts": {
+          "back": null,
+          "rump": null,
+          "pattern": "Pink, though birds can be quite white. Pinker and more evenly coloured than Greater Flamingo."
+        },
+        "underparts": {
+          "breast": null,
+          "belly": null
+        },
+        "wings": {
+          "above": null,
+          "below": null,
+          "pattern": "Red wing feathers. In flight the coverts look mottled with dark red."
+        },
+        "tail": {
+          "colour": null,
+          "shape": null
+        }
+      }
+    },
+    {
+      "age": "immature",
+      "sex": "any",
+      "season": "any",
+      "marks": {
+        "bill": {
+          "colour": null,
+          "shape": null
+        },
+        "eye": {
+          "iris": null,
+          "ring": null
+        },
+        "legs": {
+          "colour": null
+        },
+        "head": {
+          "crown": null,
+          "face": null,
+          "throat": null
+        },
+        "upperparts": {
+          "back": null,
+          "rump": null,
+          "pattern": "Dull grey-brown."
+        },
+        "underparts": {
+          "breast": null,
+          "belly": null
+        },
+        "wings": {
+          "above": null,
+          "below": null
+        },
+        "tail": {
+          "colour": null,
+          "shape": null
+        }
+      }
+    }
+  ],
+  "viewNotes": [
+    {
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Pink, with red legs and a dark bill that looks black at a distance."
+    },
+    {
+      "view": "perched-front",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Dark maroon bill."
+    },
+    {
+      "view": "perched-back",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Pink upperparts, sometimes quite white."
+    },
+    {
+      "view": "flight-above",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Red wing feathers, the coverts mottled with dark red."
+    },
+    {
+      "view": "flight-below",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "The underwing was not given a separate colour."
+    },
+    {
+      "view": "perched-side",
+      "age": "immature",
+      "sex": "any",
+      "season": "any",
+      "note": "Dull grey-brown."
+    },
+    {
+      "view": "perched-front",
+      "age": "immature",
+      "sex": "any",
+      "season": "any",
+      "note": "The immature face was not described."
+    },
+    {
+      "view": "perched-back",
+      "age": "immature",
+      "sex": "any",
+      "season": "any",
+      "note": "Dull grey-brown."
+    },
+    {
+      "view": "flight-above",
+      "age": "immature",
+      "sex": "any",
+      "season": "any",
+      "note": "An immature flight pattern was not described."
+    },
+    {
+      "view": "flight-below",
+      "age": "immature",
+      "sex": "any",
+      "season": "any",
+      "note": "The immature underparts were not described separately from dull grey-brown."
+    }
+  ],
+  "calls": [
+    {
+      "sex": "any",
+      "type": "call",
+      "description": "Newman does not describe the voice. Grade A call from Bilen Lodge, Ethiopia. The filename is XC267539-Lesser Flamingo2014-12-22-2.mp3.",
+      "recordings": [
+        {
+          "key": "xeno-canto/XC267539",
+          "source": "https://xeno-canto.org/267539",
+          "fileUrl": "https://xeno-canto.org/sounds/uploaded/CDTGHVBGZP/XC267539-Lesser%20Flamingo2014-12-22-2.mp3",
+          "author": "Andrew Spencer",
+          "license": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ]
+    }
+  ],
+  "images": [
+    {
+      "key": "phoeniconaias-minor/flight-above.jpg",
+      "view": "flight-above",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "source": "https://www.inaturalist.org/observations/289508850",
+      "fileUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/520724726/large.jpg",
+      "author": "Paul Hoekman",
+      "license": "CC BY 4.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by/4.0/",
+      "aiGenerated": false,
+      "hosted": false,
+      "alt": "Lesser Flamingos in flight, pink with dark flight feathers",
+      "caption": "Lesser Flamingos in the Mopani district, pink, with dark flight feathers."
+    }
+  ],
+  "research": {
+    "confidence": "medium",
+    "needsReview": true,
+    "note": "Newman says locally abundant nomadic resident and visitor, so status and monthsPresent are unset. The colour key says a red bill and the description says dark maroon, looking black, which is why this needs review. Population figures and the Kemp code NB were left unchanged."
+  }
 }
