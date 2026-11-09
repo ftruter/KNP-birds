@@ -1616,14 +1616,48 @@
       "slug": "andropadus-importunus",
       "scientificName": "Andropadus importunus",
       "commonName": "Sombre Greenbul",
-      "images": [],
-      "recordings": [],
+      "images": [
+        {
+          "key": "andropadus-importunus/side.jpg",
+          "author": "bedazlesa",
+          "licence": "CC BY-NC 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+          "sourceUrl": "https://www.inaturalist.org/observations/104017477",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ],
+      "recordings": [
+        {
+          "key": "xeno-canto/XC1001879",
+          "author": "African Bioacoustics Community",
+          "licence": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "sourceUrl": "https://xeno-canto.org/1001879",
+          "aiGenerated": false,
+          "hosted": false,
+          "quality": "A",
+          "callType": "call"
+        }
+      ],
       "sources": [
         {
           "title": "Kemp A.C., Herholdt J.J., Whyte I. & Harrison J. (2001). Birds of the two largest national parks in South Africa: a method to generate estimates of population size for all species and assess their conservation ecology. S. Afr. J. Sci. 97: 393–403.",
           "url": "https://journals.co.za/doi/pdf/10.10520/EJC97367",
           "publisher": "South African Journal of Science",
           "year": 2001
+        },
+        {
+          "title": "Sombre Greenbul",
+          "url": "https://newmansbirds.com/birds/sombre-greenbul/",
+          "publisher": "Newman's Birds",
+          "year": 2026
+        },
+        {
+          "title": "Avibase bird checklist — Kruger National Park",
+          "url": "https://avibase.bsc-eoc.org/checklist.jsp?region=ZA000003",
+          "publisher": "Avibase",
+          "year": null
         }
       ]
     },
@@ -6263,14 +6297,57 @@
       "slug": "chlorocichla-flaviventris",
       "scientificName": "Chlorocichla flaviventris",
       "commonName": "Yellow-bellied Greenbul",
-      "images": [],
-      "recordings": [],
+      "images": [
+        {
+          "key": "chlorocichla-flaviventris/side.jpg",
+          "author": "Russ Hoverman",
+          "licence": "CC BY-NC 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+          "sourceUrl": "https://www.inaturalist.org/observations/33685423",
+          "aiGenerated": false,
+          "hosted": false
+        },
+        {
+          "key": "chlorocichla-flaviventris/front.jpg",
+          "author": "Corné Rautenbach",
+          "licence": "CC BY-NC 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+          "sourceUrl": "https://www.inaturalist.org/observations/225124964",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ],
+      "recordings": [
+        {
+          "key": "xeno-canto/XC1072510",
+          "author": "James Bradley",
+          "licence": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "sourceUrl": "https://xeno-canto.org/1072510",
+          "aiGenerated": false,
+          "hosted": false,
+          "quality": "A",
+          "callType": "call"
+        }
+      ],
       "sources": [
         {
           "title": "Kemp A.C., Herholdt J.J., Whyte I. & Harrison J. (2001). Birds of the two largest national parks in South Africa: a method to generate estimates of population size for all species and assess their conservation ecology. S. Afr. J. Sci. 97: 393–403.",
           "url": "https://journals.co.za/doi/pdf/10.10520/EJC97367",
           "publisher": "South African Journal of Science",
           "year": 2001
+        },
+        {
+          "title": "Yellow-bellied Greenbul",
+          "url": "https://newmansbirds.com/birds/yellow-bellied-greenbul/",
+          "publisher": "Newman's Birds",
+          "year": 2026
+        },
+        {
+          "title": "Avibase bird checklist — Kruger National Park",
+          "url": "https://avibase.bsc-eoc.org/checklist.jsp?region=ZA000003",
+          "publisher": "Avibase",
+          "year": null
         }
       ]
     },
@@ -17733,17 +17810,112 @@
       ]
     },
     {
+      "slug": "phyllastrephus-flavostriatus",
+      "scientificName": "Phyllastrephus flavostriatus",
+      "commonName": "Yellow-streaked Greenbul",
+      "images": [
+        {
+          "key": "phyllastrephus-flavostriatus/side.jpg",
+          "author": "Frank Hartmann",
+          "licence": "CC BY-NC 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+          "sourceUrl": "https://www.inaturalist.org/observations/190811726",
+          "aiGenerated": false,
+          "hosted": false
+        },
+        {
+          "key": "phyllastrephus-flavostriatus/front.jpg",
+          "author": "Minkie Prinsloo",
+          "licence": "CC BY-NC 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+          "sourceUrl": "https://www.inaturalist.org/observations/325534237",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ],
+      "recordings": [
+        {
+          "key": "xeno-canto/XC1082530",
+          "author": "Bram Piot",
+          "licence": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "sourceUrl": "https://xeno-canto.org/1082530",
+          "aiGenerated": false,
+          "hosted": false,
+          "quality": "A",
+          "callType": "alarm"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Yellow-streaked greenbul",
+          "url": "https://en.wikipedia.org/wiki/Yellow-streaked_greenbul",
+          "publisher": "Wikipedia",
+          "year": null
+        },
+        {
+          "title": "Avibase bird checklist — Kruger National Park",
+          "url": "https://avibase.bsc-eoc.org/checklist.jsp?region=ZA000003",
+          "publisher": "Avibase",
+          "year": null
+        }
+      ]
+    },
+    {
       "slug": "phyllastrephus-terrestris",
       "scientificName": "Phyllastrephus terrestris",
       "commonName": "Terrestrial Brownbul",
-      "images": [],
-      "recordings": [],
+      "images": [
+        {
+          "key": "phyllastrephus-terrestris/side.jpg",
+          "author": "copper",
+          "licence": "CC BY-NC 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+          "sourceUrl": "https://www.inaturalist.org/observations/18649602",
+          "aiGenerated": false,
+          "hosted": false
+        },
+        {
+          "key": "phyllastrephus-terrestris/front.jpg",
+          "author": "Audrey Whitlock",
+          "licence": "CC BY-NC 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+          "sourceUrl": "https://www.inaturalist.org/observations/262289337",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ],
+      "recordings": [
+        {
+          "key": "xeno-canto/XC252816",
+          "author": "Lynette Rudman",
+          "licence": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "sourceUrl": "https://xeno-canto.org/252816",
+          "aiGenerated": false,
+          "hosted": false,
+          "quality": "A",
+          "callType": "call"
+        }
+      ],
       "sources": [
         {
           "title": "Kemp A.C., Herholdt J.J., Whyte I. & Harrison J. (2001). Birds of the two largest national parks in South Africa: a method to generate estimates of population size for all species and assess their conservation ecology. S. Afr. J. Sci. 97: 393–403.",
           "url": "https://journals.co.za/doi/pdf/10.10520/EJC97367",
           "publisher": "South African Journal of Science",
           "year": 2001
+        },
+        {
+          "title": "Terrestrial Brownbul",
+          "url": "https://newmansbirds.com/birds/terrestrial-brownbul/",
+          "publisher": "Newman's Birds",
+          "year": 2026
+        },
+        {
+          "title": "Avibase bird checklist — Kruger National Park",
+          "url": "https://avibase.bsc-eoc.org/checklist.jsp?region=ZA000003",
+          "publisher": "Avibase",
+          "year": null
         }
       ]
     },
@@ -19536,14 +19708,48 @@
       "slug": "pycnonotus-barbatus",
       "scientificName": "Pycnonotus barbatus",
       "commonName": "Common (Dark-capped) Bulbul",
-      "images": [],
-      "recordings": [],
+      "images": [
+        {
+          "key": "pycnonotus-barbatus/front.jpg",
+          "author": "Tom Heijnen",
+          "licence": "CC BY 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by/4.0/",
+          "sourceUrl": "https://www.inaturalist.org/observations/231275198",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ],
+      "recordings": [
+        {
+          "key": "xeno-canto/XC1016670",
+          "author": "African Bioacoustics Community",
+          "licence": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "sourceUrl": "https://xeno-canto.org/1016670",
+          "aiGenerated": false,
+          "hosted": false,
+          "quality": "A",
+          "callType": "call"
+        }
+      ],
       "sources": [
         {
           "title": "Kemp A.C., Herholdt J.J., Whyte I. & Harrison J. (2001). Birds of the two largest national parks in South Africa: a method to generate estimates of population size for all species and assess their conservation ecology. S. Afr. J. Sci. 97: 393–403.",
           "url": "https://journals.co.za/doi/pdf/10.10520/EJC97367",
           "publisher": "South African Journal of Science",
           "year": 2001
+        },
+        {
+          "title": "Common (Dark-capped) Bulbul",
+          "url": "https://newmansbirds.com/birds/dark-capped-bulbul/",
+          "publisher": "Newman's Birds",
+          "year": 2026
+        },
+        {
+          "title": "Avibase bird checklist — Kruger National Park",
+          "url": "https://avibase.bsc-eoc.org/checklist.jsp?region=ZA000003",
+          "publisher": "Avibase",
+          "year": null
         }
       ]
     },

@@ -255,6 +255,16 @@
         }
       ]
     },
+    "andropadus-importunus": {
+      "calls": [
+        {
+          "index": 0,
+          "quality": {
+            "xeno-canto/XC1001879": "A"
+          }
+        }
+      ]
+    },
     "anhinga-rufa": {
       "calls": [
         {
@@ -901,6 +911,16 @@
           "index": 0,
           "quality": {
             "xeno-canto/XC1033971": "A"
+          }
+        }
+      ]
+    },
+    "chlorocichla-flaviventris": {
+      "calls": [
+        {
+          "index": 0,
+          "quality": {
+            "xeno-canto/XC1072510": "A"
           }
         }
       ]
@@ -2052,6 +2072,26 @@
         }
       ]
     },
+    "phyllastrephus-flavostriatus": {
+      "calls": [
+        {
+          "index": 0,
+          "quality": {
+            "xeno-canto/XC1082530": "A"
+          }
+        }
+      ]
+    },
+    "phyllastrephus-terrestris": {
+      "calls": [
+        {
+          "index": 0,
+          "quality": {
+            "xeno-canto/XC252816": "A"
+          }
+        }
+      ]
+    },
     "platysteira-peltata": {
       "calls": [
         {
@@ -2246,6 +2286,16 @@
           "index": 0,
           "quality": {
             "xeno-canto/XC793340": "A"
+          }
+        }
+      ]
+    },
+    "pycnonotus-barbatus": {
+      "calls": [
+        {
+          "index": 0,
+          "quality": {
+            "xeno-canto/XC1016670": "A"
           }
         }
       ]
