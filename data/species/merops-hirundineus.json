@@ -7,8 +7,30 @@
     "af": "Swaelstertbyvreter"
   },
   "family": "meropidae",
-  "summary": "The details for this species have not been published yet.",
-  "sampleData": true,
+  "size": {
+    "lengthCm": {
+      "min": 20,
+      "max": 22
+    },
+    "note": "Newman's Birds gives 20–22 cm."
+  },
+  "habitat": "Flocks in a variety of woodland, especially on Kalahari sands. It hawks from a perch, often near pans and dry riverbeds. Nomadic when not breeding.",
+  "summary": "A common resident, nomadic when not breeding. Green above and on the upper breast, a yellow throat with a blue band, and a blue belly and forked tail. The immature lacks the yellow and blue throat and is pale apple-green below; the colour key says the immature is apple-green above and below. The call is a soft kwit kwit. The Kemp code NB was left unchanged.",
+  "sampleData": false,
+  "sources": [
+    {
+      "title": "Swallow-tailed Bee-eater",
+      "url": "https://newmansbirds.com/birds/swallow-tailed-bee-eater/",
+      "publisher": "Newman's Birds",
+      "year": 2026
+    },
+    {
+      "title": "Kemp A.C., Herholdt J.J., Whyte I. & Harrison J. (2001). Birds of the two largest national parks in South Africa: a method to generate estimates of population size for all species and assess their conservation ecology. S. Afr. J. Sci. 97: 393–403.",
+      "url": "https://journals.co.za/doi/pdf/10.10520/EJC97367",
+      "publisher": "South African Journal of Science",
+      "year": 2001
+    }
+  ],
   "population": {
     "estimate": {
       "low": 2,
@@ -35,8 +57,224 @@
     },
     "tierApplied": "D"
   },
-  "variants": [],
-  "viewNotes": [],
-  "calls": [],
-  "images": []
+  "variants": [
+    {
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "marks": {
+        "bill": {
+          "colour": null,
+          "shape": null
+        },
+        "eye": {
+          "iris": null,
+          "ring": null
+        },
+        "legs": {
+          "colour": null
+        },
+        "head": {
+          "crown": null,
+          "face": null,
+          "throat": "yellow",
+          "pattern": "Yellow throat with a blue band."
+        },
+        "upperparts": {
+          "back": "green",
+          "rump": null
+        },
+        "underparts": {
+          "breast": "green",
+          "belly": "blue",
+          "pattern": "Green upper breast, then a blue belly. The blue band is the collar."
+        },
+        "wings": {
+          "above": null,
+          "below": null
+        },
+        "tail": {
+          "colour": "blue",
+          "shape": "Forked blue tail."
+        }
+      }
+    },
+    {
+      "age": "immature",
+      "sex": "any",
+      "season": "any",
+      "marks": {
+        "bill": {
+          "colour": null,
+          "shape": null
+        },
+        "eye": {
+          "iris": null,
+          "ring": null
+        },
+        "legs": {
+          "colour": null
+        },
+        "head": {
+          "crown": null,
+          "face": null,
+          "throat": null,
+          "pattern": "Lacks the yellow and blue throat."
+        },
+        "upperparts": {
+          "back": null,
+          "rump": null,
+          "pattern": "Apple-green above."
+        },
+        "underparts": {
+          "breast": null,
+          "belly": null,
+          "pattern": "Pale apple-green underparts. Apple-green is not a colour token."
+        },
+        "wings": {
+          "above": null,
+          "below": null
+        },
+        "tail": {
+          "colour": null,
+          "shape": null
+        }
+      }
+    }
+  ],
+  "viewNotes": [
+    {
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Green above, yellow throat with a blue band, blue belly and a forked blue tail."
+    },
+    {
+      "view": "perched-front",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Yellow throat and the blue collar."
+    },
+    {
+      "view": "perched-back",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Green upperparts."
+    },
+    {
+      "view": "flight-above",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Green above and a forked blue tail. No other flight mark was described."
+    },
+    {
+      "view": "flight-below",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Blue belly below the green upper breast."
+    },
+    {
+      "view": "perched-side",
+      "age": "immature",
+      "sex": "any",
+      "season": "any",
+      "note": "Apple-green above and below, without the yellow and blue throat."
+    },
+    {
+      "view": "perched-front",
+      "age": "immature",
+      "sex": "any",
+      "season": "any",
+      "note": "No yellow and blue throat."
+    },
+    {
+      "view": "perched-back",
+      "age": "immature",
+      "sex": "any",
+      "season": "any",
+      "note": "Apple-green upperparts."
+    },
+    {
+      "view": "flight-above",
+      "age": "immature",
+      "sex": "any",
+      "season": "any",
+      "note": "An immature flight pattern was not described."
+    },
+    {
+      "view": "flight-below",
+      "age": "immature",
+      "sex": "any",
+      "season": "any",
+      "note": "Pale apple-green underparts."
+    }
+  ],
+  "calls": [
+    {
+      "sex": "any",
+      "type": "call",
+      "description": "A soft kwit kwit. Grade A call from Kafountine, Casamance, Senegal. The filename is XC475304-SwallowtailedBeeeater_Kafountine_190517_0197_edited.mp3 and includes the word edited.",
+      "recordings": [
+        {
+          "key": "xeno-canto/XC475304",
+          "source": "https://xeno-canto.org/475304",
+          "fileUrl": "https://xeno-canto.org/sounds/uploaded/RGSEIIJGHA/XC475304-SwallowtailedBeeeater_Kafountine_190517_0197_edited.mp3",
+          "author": "Bram Piot",
+          "license": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ]
+    }
+  ],
+  "images": [
+    {
+      "key": "merops-hirundineus/side.jpg",
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "source": "https://www.inaturalist.org/observations/168665933",
+      "fileUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/292336416/large.jpg",
+      "author": "Friso",
+      "license": "CC BY-NC 4.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+      "aiGenerated": false,
+      "hosted": false,
+      "alt": "Two Swallow-tailed Bee-eaters perched, yellow throats, blue collars and long blue tails",
+      "caption": "Swallow-tailed Bee-eaters in the Ehlanzeni district, green above, yellow throats with a blue band, and long blue tails."
+    }
+  ],
+  "research": {
+    "confidence": "medium",
+    "needsReview": false,
+    "note": "Newman calls it a common resident and also says it is nomadic when not breeding. Status is resident and all twelve months are listed. The Kemp code NB was left unchanged. Population figures were left unchanged."
+  },
+  "similar": [
+    {
+      "slug": "merops-pusillus",
+      "note": "Little Bee-eater has a square tail, orange-buff to rufous underparts and a black breast-band. Swallow-tailed Bee-eater has a bright blue collar, bluish underparts and a forked blue tail."
+    }
+  ],
+  "status": "resident",
+  "monthsPresent": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+  ]
 }

@@ -3226,6 +3226,66 @@
           }
         }
       ]
+    },
+    "merops-apiaster": {
+      "calls": [
+        {
+          "index": 0,
+          "quality": {
+            "xeno-canto/XC181360": "A"
+          }
+        }
+      ]
+    },
+    "merops-bullockoides": {
+      "calls": [
+        {
+          "index": 0,
+          "quality": {
+            "xeno-canto/XC1149412": "A"
+          }
+        }
+      ]
+    },
+    "merops-hirundineus": {
+      "calls": [
+        {
+          "index": 0,
+          "quality": {
+            "xeno-canto/XC475304": "A"
+          }
+        }
+      ]
+    },
+    "merops-nubicoides": {
+      "calls": [
+        {
+          "index": 0,
+          "quality": {
+            "xeno-canto/XC1188475": "A"
+          }
+        }
+      ]
+    },
+    "merops-persicus": {
+      "calls": [
+        {
+          "index": 0,
+          "quality": {
+            "xeno-canto/XC133400": "A"
+          }
+        }
+      ]
+    },
+    "merops-pusillus": {
+      "calls": [
+        {
+          "index": 0,
+          "quality": {
+            "xeno-canto/XC651027": "A"
+          }
+        }
+      ]
     }
   }
 }

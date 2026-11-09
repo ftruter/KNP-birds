@@ -6,8 +6,8 @@
     "en": "Bee-eaters",
     "af": "Byvreters"
   },
-  "summary": "Field notes for this family are still to be written.",
-  "sampleData": true,
+  "summary": "Bee-eaters that hawk from a perch or in a flock. Little Bee-eater is the small one with a black breast-band. Swallow-tailed Bee-eater has a blue collar and a forked tail. White-fronted Bee-eater has a red throat and a white forehead. Southern Carmine Bee-eater is the large carmine bird. European Bee-eater is turquoise below with a yellow throat. Blue-cheeked Bee-eater is green with blue cheeks; Newman’s description paragraph does not match that bird.",
+  "sampleData": false,
   "species": [
     {
       "slug": "merops-apiaster",
