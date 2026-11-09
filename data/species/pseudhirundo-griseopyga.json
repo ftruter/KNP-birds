@@ -7,8 +7,45 @@
     "af": "Gryskruisswael"
   },
   "family": "hirundinidae",
-  "summary": "The details for this species have not been published yet.",
-  "sampleData": true,
+  "status": "resident",
+  "size": {
+    "lengthCm": {
+      "min": 14,
+      "max": 14
+    },
+    "note": "Newman's Birds gives 14 cm."
+  },
+  "monthsPresent": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+  ],
+  "habitat": "Flocks in grassland within woodland, vleis, coastal plains and grassy riverbanks. It nests in ground burrows.",
+  "summary": "A locally common resident, often more common in winter. Grey-brown cap and pale grey rump. The rump can look almost white. The rest of the upper parts are metallic blue, and the tail is deeply forked. In flight the call is a grating chaa. The Kemp code VB was left unchanged.",
+  "sampleData": false,
+  "similar": [
+    {
+      "slug": "delichon-urbicum",
+      "note": "If the rump looks white, House Martin is told by the blue cap and the only slightly forked tail. Grey-rumped Swallow is more slender and more deeply forked, with a grey-brown cap."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Grey-rumped Swallow",
+      "url": "https://newmansbirds.com/birds/grey-rumped-swallow/",
+      "publisher": "Newman's Birds",
+      "year": 2026
+    }
+  ],
   "population": {
     "estimate": {
       "low": 128,
@@ -35,8 +72,128 @@
     },
     "tierApplied": "D"
   },
-  "variants": [],
-  "viewNotes": [],
-  "calls": [],
-  "images": []
+  "variants": [
+    {
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "marks": {
+        "bill": {
+          "colour": null,
+          "shape": null
+        },
+        "eye": {
+          "iris": null,
+          "ring": null
+        },
+        "legs": {
+          "colour": null
+        },
+        "head": {
+          "crown": "grey",
+          "face": null,
+          "throat": null,
+          "pattern": "Grey-brown cap, not easily seen in flight."
+        },
+        "upperparts": {
+          "back": "blue",
+          "rump": "grey",
+          "pattern": "Metallic blue except the greyish cap and pale grey rump. The rump may look almost white."
+        },
+        "underparts": {
+          "breast": null,
+          "belly": null,
+          "pattern": null
+        },
+        "wings": {
+          "above": null,
+          "below": null,
+          "pattern": null
+        },
+        "tail": {
+          "colour": null,
+          "shape": "Deeply forked."
+        }
+      }
+    }
+  ],
+  "viewNotes": [
+    {
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Blue above, with a grey-brown cap and a pale grey rump, and a deep fork."
+    },
+    {
+      "view": "perched-front",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "The cap is grey-brown. The underparts were not given a colour."
+    },
+    {
+      "view": "perched-back",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Pale grey rump, which can look almost white, and a grey-brown cap."
+    },
+    {
+      "view": "flight-above",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "More slender than a House Martin, with a deeper fork. The cap is hard to see."
+    },
+    {
+      "view": "flight-below",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "The underside was not described. The tail is deeply forked."
+    }
+  ],
+  "calls": [
+    {
+      "sex": "any",
+      "type": "call",
+      "description": "A grating chaa in flight. Grade A flight call from the Kafue floodplain, Zambia. The filename names Grey-rumped swallow.",
+      "recordings": [
+        {
+          "key": "xeno-canto/XC745610",
+          "source": "https://xeno-canto.org/745610",
+          "fileUrl": "https://xeno-canto.org/sounds/uploaded/IIJAXHKSCC/XC745610-Grey-rumped%20swallow%20%28flight%20call%29%2020220705%2CKafueFloodplain%2CChimfunshi%2CZAMBIA.mp3",
+          "author": "Dries Van de Loock",
+          "license": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ]
+    }
+  ],
+  "images": [
+    {
+      "key": "pseudhirundo-griseopyga/side.jpg",
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "source": "https://www.inaturalist.org/observations/343189607",
+      "fileUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/625080806/large.jpg",
+      "author": "Lynne Correia",
+      "license": "CC BY-NC 4.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+      "aiGenerated": false,
+      "hosted": false,
+      "alt": "Grey-rumped Swallow in the Ehlanzeni district",
+      "caption": "Grey-rumped Swallow in the Ehlanzeni district."
+    }
+  ],
+  "research": {
+    "confidence": "medium",
+    "needsReview": false,
+    "note": "Status is resident and all twelve months are listed. Newman says it is often more common in the winter months. The Kemp code VB was left unchanged. Population figures were left unchanged."
+  }
 }

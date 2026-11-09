@@ -7,8 +7,31 @@
     "af": "Gebande Oewerswael"
   },
   "family": "hirundinidae",
-  "summary": "The details for this species have not been published yet.",
-  "sampleData": true,
+  "status": "summer-migrant",
+  "size": {
+    "lengthCm": {
+      "min": 17,
+      "max": 17
+    },
+    "note": "Newman's Birds gives 17 cm."
+  },
+  "habitat": "Small flocks or pairs over grassland. It breeds in river banks and termite mounds, and rests often on a branch or fence.",
+  "summary": "An uncommon to locally common summer resident. It occurs all year on the northern Botswana and KwaZulu-Natal coastal plains. A large, heavy martin, dark brown above and white below, with a wide brown breast-band, a small white eyebrow, white underwing coverts and a square tail. It twitters while perched or flying. The flight is slow. Months were left unset. The Kemp code NB was left unchanged.",
+  "sampleData": false,
+  "similar": [
+    {
+      "slug": "riparia-riparia",
+      "note": "Sand Martin is smaller, with a narrow breast-band, all-dark underwings and no white eyebrow. Banded Martin has the broad band, white eyebrow and square tail."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Banded Martin",
+      "url": "https://newmansbirds.com/birds/banded-martin/",
+      "publisher": "Newman's Birds",
+      "year": 2026
+    }
+  ],
   "population": {
     "estimate": {
       "low": 1,
@@ -35,8 +58,128 @@
     },
     "tierApplied": "D"
   },
-  "variants": [],
-  "viewNotes": [],
-  "calls": [],
-  "images": []
+  "variants": [
+    {
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "marks": {
+        "bill": {
+          "colour": null,
+          "shape": null
+        },
+        "eye": {
+          "iris": null,
+          "ring": null
+        },
+        "legs": {
+          "colour": null
+        },
+        "head": {
+          "crown": null,
+          "face": null,
+          "throat": null,
+          "pattern": "Small white eyebrow."
+        },
+        "upperparts": {
+          "back": "dark-brown",
+          "rump": null,
+          "pattern": null
+        },
+        "underparts": {
+          "breast": "brown",
+          "belly": "white",
+          "pattern": "Wide brown chest-band. White below that."
+        },
+        "wings": {
+          "above": null,
+          "below": "white",
+          "pattern": "White underwing coverts."
+        },
+        "tail": {
+          "colour": null,
+          "shape": "Square."
+        }
+      }
+    }
+  ],
+  "viewNotes": [
+    {
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Large and heavy, dark brown above, white below, with a broad brown breast-band and a small white eyebrow."
+    },
+    {
+      "view": "perched-front",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Broad brown breast-band and white underparts."
+    },
+    {
+      "view": "perched-back",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Dark brown upper parts."
+    },
+    {
+      "view": "flight-above",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "White underwing coverts and a square tail. The flight is slow, and it lands often."
+    },
+    {
+      "view": "flight-below",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "White below the broad breast-band, with white underwing coverts."
+    }
+  ],
+  "calls": [
+    {
+      "sex": "any",
+      "type": "song",
+      "description": "A melodious twitter while perched or flying. Grade A song from the Memel area, Free State. The filename names Banded martin.",
+      "recordings": [
+        {
+          "key": "xeno-canto/XC459468",
+          "source": "https://xeno-canto.org/459468",
+          "fileUrl": "https://xeno-canto.org/sounds/uploaded/KHGERYPVPK/XC459468-20181221_050946_Banded_martin.mp3",
+          "author": "Raphaël Nussbaumer",
+          "license": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ]
+    }
+  ],
+  "images": [
+    {
+      "key": "neophedina-cincta/side.jpg",
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "source": "https://www.inaturalist.org/observations/199484833",
+      "fileUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/351803982/large.jpeg",
+      "author": "Duncan McKenzie",
+      "license": "CC BY-NC 4.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+      "aiGenerated": false,
+      "hosted": false,
+      "alt": "Banded Martin in the Mopani district",
+      "caption": "Banded Martin in the Mopani district."
+    }
+  ],
+  "research": {
+    "confidence": "medium",
+    "needsReview": true,
+    "note": "Newman says summer resident, and all year in northern Botswana and on the KwaZulu-Natal coastal plains. Months were left unset. The Kemp code NB was left unchanged. Population figures were left unchanged."
+  }
 }

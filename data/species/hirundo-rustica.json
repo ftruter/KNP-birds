@@ -7,8 +7,35 @@
     "af": "Europese Swael"
   },
   "family": "hirundinidae",
-  "summary": "The details for this species have not been published yet.",
-  "sampleData": true,
+  "status": "summer-migrant",
+  "size": {
+    "lengthCm": {
+      "min": 18,
+      "max": 18
+    },
+    "note": "Newman's Birds gives 18 cm."
+  },
+  "habitat": "Outnumbers other swallows in summer and mixes with them and with swifts over most habitats. Flocks perch on roadside wires and roost in reed beds.",
+  "summary": "An abundant summer visitor. Metallic blue above, with a chestnut forehead, chin and throat that looks all-dark at a distance, and white underparts. The tail is forked. Moulting birds in November to January often lack the chestnut chin and the long tail-shafts. Immatures, common from October to December, can have very pale throats. Flocks twitter when settled. The characteristic call is a soft wheet. Males add a short warble and a wheezy phrase. Months were left unset. The Kemp name is European Swallow and the code NB was left unchanged.",
+  "sampleData": false,
+  "similar": [
+    {
+      "slug": "hirundo-albigularis",
+      "note": "White-throated Swallow is clean white below, with a black breast-band, not a chestnut throat."
+    },
+    {
+      "slug": "delichon-urbicum",
+      "note": "House Martin has a white rump and a squarer tail. Barn Swallow has the chestnut throat."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Barn Swallow",
+      "url": "https://newmansbirds.com/birds/barn-swallow/",
+      "publisher": "Newman's Birds",
+      "year": 2026
+    }
+  ],
   "population": {
     "estimate": {
       "low": 65536,
@@ -35,8 +62,171 @@
     },
     "tierApplied": "D"
   },
-  "variants": [],
-  "viewNotes": [],
-  "calls": [],
-  "images": []
+  "variants": [
+    {
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "marks": {
+        "bill": {
+          "colour": null,
+          "shape": null
+        },
+        "eye": {
+          "iris": null,
+          "ring": null
+        },
+        "legs": {
+          "colour": null
+        },
+        "head": {
+          "crown": "blue",
+          "face": null,
+          "throat": "rufous",
+          "pattern": "Chestnut forehead, chin and throat. The colour line also calls the throat black. It looks all-dark at a distance."
+        },
+        "upperparts": {
+          "back": "blue",
+          "rump": null,
+          "pattern": "Metallic blue."
+        },
+        "underparts": {
+          "breast": "white",
+          "belly": "white",
+          "pattern": null
+        },
+        "wings": {
+          "above": null,
+          "below": null,
+          "pattern": null
+        },
+        "tail": {
+          "colour": null,
+          "shape": "Forked, with long tail-shafts except on many moulting birds."
+        }
+      }
+    },
+    {
+      "age": "immature",
+      "sex": "any",
+      "season": "any",
+      "marks": {
+        "bill": {
+          "colour": null,
+          "shape": null
+        },
+        "eye": {
+          "iris": null,
+          "ring": null
+        },
+        "legs": {
+          "colour": null
+        },
+        "head": {
+          "crown": null,
+          "face": null,
+          "throat": "white",
+          "pattern": "Can show a very pale throat. Common from October to December."
+        },
+        "upperparts": {
+          "back": null,
+          "rump": null,
+          "pattern": null
+        },
+        "underparts": {
+          "breast": null,
+          "belly": null,
+          "pattern": null
+        },
+        "wings": {
+          "above": null,
+          "below": null,
+          "pattern": null
+        },
+        "tail": {
+          "colour": null,
+          "shape": null
+        }
+      }
+    }
+  ],
+  "viewNotes": [
+    {
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Blue above, chestnut throat and white underparts, with a forked tail."
+    },
+    {
+      "view": "perched-front",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Chestnut chin and throat, looking dark at a distance, then white underparts."
+    },
+    {
+      "view": "perched-back",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Metallic-blue upper parts."
+    },
+    {
+      "view": "flight-above",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Long tail-shafts, often missing on moulting birds from November to January."
+    },
+    {
+      "view": "flight-below",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "White below a chestnut throat."
+    }
+  ],
+  "calls": [
+    {
+      "sex": "any",
+      "type": "call",
+      "description": "Flocks give a soft twitter when settled. The characteristic call is a soft wheet. Males add a short warble and a wheezy phrase, not given a separate file. Grade A call from Mar Chiquita, Argentina. The filename names Barn Swallow.",
+      "recordings": [
+        {
+          "key": "xeno-canto/XC46803",
+          "source": "https://xeno-canto.org/46803",
+          "fileUrl": "https://xeno-canto.org/sounds/uploaded/BYLLSJRVDZ/Hirundo%20rustica_Barn%20Swallow_Albufera%20Mar%20Chiquita%20%28puente%20en%20la%20ruta%29_Mar%20Chiquita_Buenos%20Aires_Argentina%20a_Bernabe%20Lopez-Lanus.mp3",
+          "author": "Bernabe Lopez-Lanus",
+          "license": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ]
+    }
+  ],
+  "images": [
+    {
+      "key": "hirundo-rustica/side.jpg",
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "source": "https://www.inaturalist.org/observations/272625883",
+      "fileUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/490483242/large.jpeg",
+      "author": "jandutoit",
+      "license": "CC BY-NC 4.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+      "aiGenerated": false,
+      "hosted": false,
+      "alt": "A flock of Barn Swallows perched in a Kruger tree",
+      "caption": "Barn Swallows perched in a tree in the Mopani district, many with long tail streamers."
+    }
+  ],
+  "research": {
+    "confidence": "medium",
+    "needsReview": false,
+    "note": "Newman calls it an abundant summer visitor. November to January and October to December are given for moult and immature plumage, not as the full months present, so monthsPresent was left unset. Population figures were left unchanged."
+  }
 }

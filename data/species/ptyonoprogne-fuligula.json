@@ -7,8 +7,45 @@
     "af": "Grootkransswael"
   },
   "family": "hirundinidae",
-  "summary": "The details for this species have not been published yet.",
-  "sampleData": true,
+  "status": "resident",
+  "size": {
+    "lengthCm": {
+      "min": 15,
+      "max": 15
+    },
+    "note": "Newman's Birds gives 15 cm."
+  },
+  "monthsPresent": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+  ],
+  "habitat": "Pairs and small flocks at rocky cliffs, bridges, dam walls and tall buildings, often with other swallows and swifts.",
+  "summary": "A common resident. A stocky, dark brown martin, paler below, with broad wings and white windows in the fanned, square tail. It gives a melodious twitter. The flight is slow, with gliding, twisting and turning. It is common around city buildings. The Kemp name is Rock Martin and the code RB was left unchanged.",
+  "sampleData": false,
+  "similar": [
+    {
+      "slug": "riparia-paludicola",
+      "note": "An all-brown Brown-throated Martin lacks the white windows in the tail and is more slender. Rock Martin is stockier, with those tail windows."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Rock Martin",
+      "url": "https://newmansbirds.com/birds/rock-martin/",
+      "publisher": "Newman's Birds",
+      "year": 2026
+    }
+  ],
   "population": {
     "estimate": {
       "low": 128,
@@ -35,8 +72,128 @@
     },
     "tierApplied": "D"
   },
-  "variants": [],
-  "viewNotes": [],
-  "calls": [],
-  "images": []
+  "variants": [
+    {
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "marks": {
+        "bill": {
+          "colour": null,
+          "shape": null
+        },
+        "eye": {
+          "iris": null,
+          "ring": null
+        },
+        "legs": {
+          "colour": null
+        },
+        "head": {
+          "crown": null,
+          "face": null,
+          "throat": null,
+          "pattern": null
+        },
+        "upperparts": {
+          "back": "dark-brown",
+          "rump": null,
+          "pattern": null
+        },
+        "underparts": {
+          "breast": null,
+          "belly": null,
+          "pattern": "Paler below than above."
+        },
+        "wings": {
+          "above": null,
+          "below": null,
+          "pattern": "Broad wings."
+        },
+        "tail": {
+          "colour": null,
+          "shape": "Square, with white windows when fanned."
+        }
+      }
+    }
+  ],
+  "viewNotes": [
+    {
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Stocky and dark brown, paler below."
+    },
+    {
+      "view": "perched-front",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Paler underparts. The exact underpart colour was not named."
+    },
+    {
+      "view": "perched-back",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Dark brown upper parts."
+    },
+    {
+      "view": "flight-above",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Broad wings, and white windows in the fanned tail. The flight is slow, with glides and turns."
+    },
+    {
+      "view": "flight-below",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Paler below. The white tail windows show when the tail is fanned."
+    }
+  ],
+  "calls": [
+    {
+      "sex": "any",
+      "type": "call",
+      "description": "A melodious twitter. Grade A call from near Montagu, Western Cape. The filename is generic and shows a 250 Hz high-pass. It was not cleaned again.",
+      "recordings": [
+        {
+          "key": "xeno-canto/XC1149917",
+          "source": "https://xeno-canto.org/1149917",
+          "fileUrl": "https://xeno-canto.org/sounds/uploaded/YSGTQVRQZI/XC1149917-20260531_OPNR_AKaramitsos_XA60_A029C082_2605312D_SLE_250HP_-3dB.mp3",
+          "author": "African Bioacoustics Community",
+          "license": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ]
+    }
+  ],
+  "images": [
+    {
+      "key": "ptyonoprogne-fuligula/side.jpg",
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "source": "https://www.inaturalist.org/observations/182644292",
+      "fileUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/318490637/large.jpg",
+      "author": "Luca Boscain",
+      "license": "CC BY-NC 4.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+      "aiGenerated": false,
+      "hosted": false,
+      "alt": "Large Rock Martin in the Mopani district",
+      "caption": "Large Rock Martin in the Mopani district."
+    }
+  ],
+  "research": {
+    "confidence": "medium",
+    "needsReview": false,
+    "note": "Status is resident and all twelve months are listed. Newman calls it a common resident. Population figures were left unchanged."
+  }
 }

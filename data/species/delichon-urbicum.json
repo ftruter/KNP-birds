@@ -7,8 +7,35 @@
     "af": "Huisswael"
   },
   "family": "hirundinidae",
-  "summary": "The details for this species have not been published yet.",
-  "sampleData": true,
+  "status": "summer-migrant",
+  "size": {
+    "lengthCm": {
+      "min": 14,
+      "max": 14
+    },
+    "note": "Newman's Birds gives 14 cm."
+  },
+  "habitat": "Flocks anywhere, often with Barn Swallows. Flocks usually forage high, and single birds join mixed swallow flocks lower down.",
+  "summary": "A common summer visitor. The only martin with blue upper parts, a white rump and white underparts. The tail has a shallow fork. The immature has an off-white rump, a blue cap rather than a grey-brown one, and only a slight fork. The call is a single dry chirrup. Months were left unset. The Kemp name is House Martin and the code NB was left unchanged.",
+  "sampleData": false,
+  "similar": [
+    {
+      "slug": "pseudhirundo-griseopyga",
+      "note": "Grey-rumped Swallow has a grey-brown cap and a more deeply forked tail. An immature House Martin has a blue cap and only a slight fork."
+    },
+    {
+      "slug": "hirundo-rustica",
+      "note": "In the air, House Martin is smaller and more compact, with a squarer tail and a white rump. Barn Swallow has a chestnut throat."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Common House Martin",
+      "url": "https://newmansbirds.com/birds/common-house-martin/",
+      "publisher": "Newman's Birds",
+      "year": 2026
+    }
+  ],
   "population": {
     "estimate": {
       "low": 256,
@@ -35,8 +62,171 @@
     },
     "tierApplied": "D"
   },
-  "variants": [],
-  "viewNotes": [],
-  "calls": [],
-  "images": []
+  "variants": [
+    {
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "marks": {
+        "bill": {
+          "colour": null,
+          "shape": null
+        },
+        "eye": {
+          "iris": null,
+          "ring": null
+        },
+        "legs": {
+          "colour": null
+        },
+        "head": {
+          "crown": "blue",
+          "face": null,
+          "throat": null,
+          "pattern": null
+        },
+        "upperparts": {
+          "back": "blue",
+          "rump": "white",
+          "pattern": "Metallic blue, with a white rump."
+        },
+        "underparts": {
+          "breast": "white",
+          "belly": "white",
+          "pattern": null
+        },
+        "wings": {
+          "above": null,
+          "below": null,
+          "pattern": null
+        },
+        "tail": {
+          "colour": null,
+          "shape": "Shallow fork."
+        }
+      }
+    },
+    {
+      "age": "immature",
+      "sex": "any",
+      "season": "any",
+      "marks": {
+        "bill": {
+          "colour": null,
+          "shape": null
+        },
+        "eye": {
+          "iris": null,
+          "ring": null
+        },
+        "legs": {
+          "colour": null
+        },
+        "head": {
+          "crown": "blue",
+          "face": null,
+          "throat": null,
+          "pattern": null
+        },
+        "upperparts": {
+          "back": null,
+          "rump": "white",
+          "pattern": "Off-white rump. Blue cap, not grey-brown."
+        },
+        "underparts": {
+          "breast": null,
+          "belly": null,
+          "pattern": null
+        },
+        "wings": {
+          "above": null,
+          "below": null,
+          "pattern": null
+        },
+        "tail": {
+          "colour": null,
+          "shape": "Only slightly forked."
+        }
+      }
+    }
+  ],
+  "viewNotes": [
+    {
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Blue above, white rump and white underparts, with a shallow fork."
+    },
+    {
+      "view": "perched-front",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "White underparts."
+    },
+    {
+      "view": "perched-back",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Metallic-blue upper parts and a white rump."
+    },
+    {
+      "view": "flight-above",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Smaller and more compact than a Barn Swallow, with a squarer tail and a white rump."
+    },
+    {
+      "view": "flight-below",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "White underparts and a white rump."
+    }
+  ],
+  "calls": [
+    {
+      "sex": "any",
+      "type": "call",
+      "description": "A single dry chirrup. Grade A call from Västergötland. The filename is Hussvala, the Swedish name.",
+      "recordings": [
+        {
+          "key": "xeno-canto/XC27278",
+          "source": "https://xeno-canto.org/27278",
+          "fileUrl": "https://xeno-canto.org/sounds/uploaded/BPSDQEOJWG/Hussvalabobygge.mp3",
+          "author": "Patrik Åberg",
+          "license": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ]
+    }
+  ],
+  "images": [
+    {
+      "key": "delichon-urbicum/side.jpg",
+      "view": "flight-below",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "source": "https://www.inaturalist.org/observations/250422048",
+      "fileUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/447867617/large.jpg",
+      "author": "Heinrich Human",
+      "license": "CC BY-NC 4.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+      "aiGenerated": false,
+      "hosted": false,
+      "alt": "House Martin in flight, white rump and white underparts",
+      "caption": "Western House Martin over Kruger, white below with a white rump and a shallow fork."
+    }
+  ],
+  "research": {
+    "confidence": "medium",
+    "needsReview": false,
+    "note": "Newman calls it a common summer visitor and does not name the months, so monthsPresent was left unset. Population figures were left unchanged."
+  }
 }

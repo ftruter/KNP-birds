@@ -7,8 +7,45 @@
     "af": "Moskeeswael"
   },
   "family": "hirundinidae",
-  "summary": "The details for this species have not been published yet.",
-  "sampleData": true,
+  "status": "resident",
+  "size": {
+    "lengthCm": {
+      "min": 23,
+      "max": 23
+    },
+    "note": "Newman's Birds gives 23 cm."
+  },
+  "monthsPresent": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+  ],
+  "habitat": "Pairs and small flocks over large-tree woodland, mostly near water. The mud nest is in a cavity of a large tree, often near baobabs.",
+  "summary": "A fairly common, localised resident. Metallic blue above, with a white throat and upper breast and deep orange on the rest of the underbody. In flight the underwing coverts are white and the tail-shafts are shorter than a Red-breasted Swallow’s. The call is a nasal harrrp, occasionally a guttural chuckle. It flutters, then glides, often high, and skims dams. The Kemp code VB was left unchanged.",
+  "sampleData": false,
+  "similar": [
+    {
+      "slug": "cecropis-semirufa",
+      "note": "Red-breasted Swallow is orange-chestnut below, including the throat, with buff underwing coverts and a cap that reaches below the eyes."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Mosque Swallow",
+      "url": "https://newmansbirds.com/birds/mosque-swallow/",
+      "publisher": "Newman's Birds",
+      "year": 2026
+    }
+  ],
   "population": {
     "estimate": {
       "low": 256,
@@ -35,8 +72,128 @@
     },
     "tierApplied": "D"
   },
-  "variants": [],
-  "viewNotes": [],
-  "calls": [],
-  "images": []
+  "variants": [
+    {
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "marks": {
+        "bill": {
+          "colour": null,
+          "shape": null
+        },
+        "eye": {
+          "iris": null,
+          "ring": null
+        },
+        "legs": {
+          "colour": null
+        },
+        "head": {
+          "crown": null,
+          "face": null,
+          "throat": "white",
+          "pattern": null
+        },
+        "upperparts": {
+          "back": "blue",
+          "rump": null,
+          "pattern": "Metallic blue."
+        },
+        "underparts": {
+          "breast": "white",
+          "belly": "orange",
+          "pattern": "White throat and upper breast. The rest of the underbody is deep orange."
+        },
+        "wings": {
+          "above": null,
+          "below": "white",
+          "pattern": "White underwing coverts."
+        },
+        "tail": {
+          "colour": null,
+          "shape": "Shorter tail-shafts than Red-breasted Swallow."
+        }
+      }
+    }
+  ],
+  "viewNotes": [
+    {
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Metallic blue above, white throat and upper breast, and deep orange below that."
+    },
+    {
+      "view": "perched-front",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "White throat and upper breast."
+    },
+    {
+      "view": "perched-back",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Metallic-blue upper parts."
+    },
+    {
+      "view": "flight-above",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "White underwing coverts. Fluttering bursts are followed by a glide."
+    },
+    {
+      "view": "flight-below",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "White upper breast, then deep orange, with white underwing coverts."
+    }
+  ],
+  "calls": [
+    {
+      "sex": "any",
+      "type": "call",
+      "description": "A nasal, tin-trumpet-like harrrp, occasionally a guttural chuckle. No grade A recording was in the set. Grade B call from Awelani Lodge, Limpopo. The filename names Mosque Swallows. A Pafuri file is the same grade.",
+      "recordings": [
+        {
+          "key": "xeno-canto/XC423237",
+          "source": "https://xeno-canto.org/423237",
+          "fileUrl": "https://xeno-canto.org/sounds/uploaded/UZRIEUDUHM/XC423237-Mosque_Swallows_AwelaniLodge_Limpopo_20180807.mp3",
+          "author": "Toby Esplin",
+          "license": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ]
+    }
+  ],
+  "images": [
+    {
+      "key": "cecropis-senegalensis/side.jpg",
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "source": "https://www.inaturalist.org/observations/149816459",
+      "fileUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/258215976/large.jpeg",
+      "author": "Thomas ARMAND",
+      "license": "CC BY-NC 4.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+      "aiGenerated": false,
+      "hosted": false,
+      "alt": "Mosque Swallow in the Mopani district",
+      "caption": "Mosque Swallow in the Mopani district."
+    }
+  ],
+  "research": {
+    "confidence": "medium",
+    "needsReview": false,
+    "note": "Status is resident and all twelve months are listed. Newman calls it a fairly common, localised resident. The Kemp code VB was left unchanged. Population figures were left unchanged."
+  }
 }
