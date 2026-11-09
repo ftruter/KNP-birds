@@ -7,8 +7,40 @@
     "af": "Papegaaiduif"
   },
   "family": "columbidae",
-  "summary": "The details for this species have not been published yet.",
-  "sampleData": true,
+  "status": "resident",
+  "monthsPresent": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+  ],
+  "size": {
+    "lengthCm": {
+      "min": 30,
+      "max": 30
+    },
+    "note": "Newman's Birds gives 30 cm."
+  },
+  "habitat": "Flocks in well-wooded country, riverine forest and wooded hillsides where wild figs are fruiting. It sits still in the foliage and the flock bursts out if approached.",
+  "summary": "A common resident. Bright green, with yellow on the wings and yellow leg feathers, a red base to the bill and red legs. The call is an explosive, high, melodious bubbling that descends in pitch.",
+  "sampleData": false,
+  "similar": [],
+  "sources": [
+    {
+      "title": "African Green Pigeon",
+      "url": "https://newmansbirds.com/birds/african-green-pigeon/",
+      "publisher": "Newman's Birds",
+      "year": 2026
+    }
+  ],
   "population": {
     "estimate": {
       "low": 16384,
@@ -35,8 +67,128 @@
     },
     "tierApplied": "D"
   },
-  "variants": [],
-  "viewNotes": [],
-  "calls": [],
-  "images": []
+  "variants": [
+    {
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "marks": {
+        "bill": {
+          "colour": "red",
+          "shape": "red at the base"
+        },
+        "eye": {
+          "iris": null,
+          "ring": null
+        },
+        "legs": {
+          "colour": "red"
+        },
+        "head": {
+          "crown": "green",
+          "face": null,
+          "throat": null,
+          "pattern": "Yellow feathers on the legs."
+        },
+        "upperparts": {
+          "back": "green",
+          "rump": null,
+          "pattern": null
+        },
+        "underparts": {
+          "breast": "green",
+          "belly": "green",
+          "pattern": null
+        },
+        "wings": {
+          "above": "yellow",
+          "below": null,
+          "pattern": "Yellow on the wings."
+        },
+        "tail": {
+          "colour": null,
+          "shape": null
+        }
+      }
+    }
+  ],
+  "viewNotes": [
+    {
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Bright green pigeon sitting still in a fig tree."
+    },
+    {
+      "view": "perched-front",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Red base to the bill. The face colour was not named separately from the green body."
+    },
+    {
+      "view": "perched-back",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Green back."
+    },
+    {
+      "view": "flight-above",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Yellow on the wings. The flock flies off rapidly."
+    },
+    {
+      "view": "flight-below",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Green underparts. The legs are red and the leg feathers are yellow."
+    }
+  ],
+  "calls": [
+    {
+      "sex": "any",
+      "type": "call",
+      "description": "An explosive, high-pitched, melodious bubbling, descending in pitch. The texts do not separate the sexes. Grade B from Maruleng, Limpopo. The filename is Green pigeon. No playable grade A was listed.",
+      "recordings": [
+        {
+          "key": "xeno-canto/XC394356",
+          "source": "https://xeno-canto.org/394356",
+          "fileUrl": "https://xeno-canto.org/sounds/uploaded/XMZZQLHWHS/XC394356-24%20Nov%202017%20Green%20pigeon.mp3",
+          "author": "Gary Allport",
+          "license": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ]
+    }
+  ],
+  "images": [
+    {
+      "key": "treron-calvus/side.jpg",
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "source": "https://www.inaturalist.org/observations/268101579",
+      "fileUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/481855530/large.jpg",
+      "author": "Tony Doty",
+      "license": "CC BY-NC 4.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+      "aiGenerated": false,
+      "hosted": false,
+      "alt": "African Green Pigeon perched in Kruger",
+      "caption": "African Green Pigeon perched in Kruger"
+    }
+  ],
+  "research": {
+    "confidence": "medium",
+    "needsReview": false,
+    "note": "Population figures were left unchanged."
+  }
 }

@@ -7,8 +7,23 @@
     "af": "Dikbekfret"
   },
   "family": "estrildidae",
-  "summary": "The details for this species have not been published yet.",
-  "sampleData": true,
+  "habitat": "Subtropical and tropical lowland moist shrubland, forest and dry grassland.",
+  "summary": "Wikipedia calls it a sparsely distributed estrildid of lowland moist shrubland, forest and dry grassland. The page used does not describe the plumage or the voice, and does not say whether it is resident. The stub has no Kemp estimate and none was added.",
+  "sampleData": false,
+  "similar": [
+    {
+      "slug": "spermestes-cucullata",
+      "note": "Bronze Mannikin is described by Newman. Magpie Mannikin has no plumage description on the Wikipedia page used here."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Magpie mannikin",
+      "url": "https://en.wikipedia.org/wiki/Magpie_mannikin",
+      "publisher": "Wikipedia",
+      "year": 2026
+    }
+  ],
   "population": {
     "estimate": {
       "low": null,
@@ -22,7 +37,83 @@
     "sources": []
   },
   "variants": [],
-  "viewNotes": [],
-  "calls": [],
-  "images": []
+  "viewNotes": [
+    {
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Plumage was not described on the page used."
+    },
+    {
+      "view": "perched-front",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "The face and bill colours were not described."
+    },
+    {
+      "view": "perched-back",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "The upper parts were not described."
+    },
+    {
+      "view": "flight-above",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "A flight pattern was not described."
+    },
+    {
+      "view": "flight-below",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "The underparts were not described."
+    }
+  ],
+  "calls": [
+    {
+      "sex": "any",
+      "type": "call",
+      "description": "The Wikipedia page used here does not describe the voice. Grade A call from Masindi, Uganda. The filename is generic, 2MM05037. No southern African recording was in the grade A set.",
+      "recordings": [
+        {
+          "key": "xeno-canto/XC1063801",
+          "source": "https://xeno-canto.org/1063801",
+          "fileUrl": "https://xeno-canto.org/sounds/uploaded/YIKAQIVHQJ/XC1063801-2MM05037_20251021_171602.mp3",
+          "author": "Jonathan Onongo",
+          "license": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ]
+    }
+  ],
+  "images": [
+    {
+      "key": "spermestes-fringilloides/side.jpg",
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "source": "https://www.inaturalist.org/observations/93247863",
+      "fileUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/154522287/large.jpeg",
+      "author": "Justin Ponder",
+      "license": "CC BY 4.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by/4.0/",
+      "aiGenerated": false,
+      "hosted": false,
+      "alt": "Magpie Mannikin perched at Hazyview",
+      "caption": "Magpie Mannikin perched at Hazyview. The page used for the text does not describe the plumage, so the colours in the frame are not stored as field marks."
+    }
+  ],
+  "research": {
+    "confidence": "low",
+    "needsReview": true,
+    "note": "No Newman page was found. Wikipedia gives habitat and range, not plumage, voice or residency, so status, months and variants were left empty. The stub has no Kemp block and no estimate, and both were left that way."
+  }
 }

@@ -7,8 +7,45 @@
     "af": "Withalskraai"
   },
   "family": "corvidae",
-  "summary": "The details for this species have not been published yet.",
-  "sampleData": true,
+  "status": "resident",
+  "monthsPresent": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+  ],
+  "size": {
+    "lengthCm": {
+      "min": 50,
+      "max": 54
+    },
+    "note": "Newman's Birds gives 50–54 cm."
+  },
+  "habitat": "Usually montane and hilly country, wandering far for food. It forages alone and gathers where there is carrion.",
+  "summary": "A common, localised resident. Black, with a white nape only, and a very heavy white-tipped bill. In flight it looks broad-winged, with a short tail. The call is a falsetto kraak, sometimes with deeper notes. The Newman family text says the sexes are alike and immatures are similar to adults. The Kemp code NB was left unchanged.",
+  "sampleData": false,
+  "similar": [
+    {
+      "slug": "corvus-capensis",
+      "note": "Cape Crow is entirely glossy black and has a slighter bill. White-necked Raven has the white nape and the heavy white-tipped bill."
+    }
+  ],
+  "sources": [
+    {
+      "title": "White-necked Raven",
+      "url": "https://newmansbirds.com/birds/white-necked-raven/",
+      "publisher": "Newman's Birds",
+      "year": 2026
+    }
+  ],
   "population": {
     "estimate": {
       "low": 2,
@@ -35,8 +72,128 @@
     },
     "tierApplied": "D"
   },
-  "variants": [],
-  "viewNotes": [],
-  "calls": [],
-  "images": []
+  "variants": [
+    {
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "marks": {
+        "bill": {
+          "colour": "black",
+          "shape": "very heavy and white-tipped"
+        },
+        "eye": {
+          "iris": null,
+          "ring": null
+        },
+        "legs": {
+          "colour": null
+        },
+        "head": {
+          "crown": "black",
+          "face": "black",
+          "throat": null,
+          "pattern": "White nape only. Otherwise black."
+        },
+        "upperparts": {
+          "back": "black",
+          "rump": null,
+          "pattern": null
+        },
+        "underparts": {
+          "breast": "black",
+          "belly": "black",
+          "pattern": null
+        },
+        "wings": {
+          "above": "black",
+          "below": null,
+          "pattern": "Broad-winged in flight."
+        },
+        "tail": {
+          "colour": "black",
+          "shape": "short"
+        }
+      }
+    }
+  ],
+  "viewNotes": [
+    {
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Black raven with a white nape and a heavy bill."
+    },
+    {
+      "view": "perched-front",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "The heavy white-tipped bill. The white nape is behind the head."
+    },
+    {
+      "view": "perched-back",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "White nape on a black back."
+    },
+    {
+      "view": "flight-above",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Broad wings and a short tail."
+    },
+    {
+      "view": "flight-below",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Black below."
+    }
+  ],
+  "calls": [
+    {
+      "sex": "any",
+      "type": "call",
+      "description": "A falsetto kraak, although deeper notes are sometimes uttered. The texts do not separate the sexes. Grade A from the Aberdeen Plain, Eastern Cape. The filename is White-necked ravens calling.",
+      "recordings": [
+        {
+          "key": "xeno-canto/XC252930",
+          "source": "https://xeno-canto.org/252930",
+          "fileUrl": "https://xeno-canto.org/sounds/uploaded/SGLTZLDXYI/XC252930-White-necked%20ravens%20calling%201.mp3",
+          "author": "Lynette Rudman",
+          "license": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ]
+    }
+  ],
+  "images": [
+    {
+      "key": "corvus-albicollis/side.jpg",
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "source": "https://www.inaturalist.org/observations/194556352",
+      "fileUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/342022047/large.jpg",
+      "author": "Hannah Comstock",
+      "license": "CC BY-NC 4.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+      "aiGenerated": false,
+      "hosted": false,
+      "alt": "White-necked Raven perched on a dead tree in Kruger",
+      "caption": "White-necked Raven perched on a dead tree in Kruger"
+    }
+  ],
+  "research": {
+    "confidence": "medium",
+    "needsReview": false,
+    "note": "Status is resident and all twelve months are listed. Newman calls it a common resident. Population figures were left unchanged."
+  }
 }

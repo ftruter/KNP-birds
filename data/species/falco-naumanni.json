@@ -7,8 +7,31 @@
     "af": "Kleinrooivalk"
   },
   "family": "falconidae",
-  "summary": "The details for this species have not been published yet.",
-  "sampleData": true,
+  "status": "summer-migrant",
+  "size": {
+    "lengthCm": {
+      "min": 28,
+      "max": 30
+    },
+    "note": "Newman's Birds gives 28–30 cm and 100–200 g."
+  },
+  "habitat": "Flocks, often hundreds, in grassland and Karoo, perched on posts, pylons, wires or bushes. Roosts in tall trees, usually Eucalyptus.",
+  "summary": "An uncommon to locally common summer visitor. Both sexes have rufous upperwings. The male has a grey head, grey secondary coverts, a grey back and a grey upper tail, plain underwings and a plain mantle. The female is more slender than a Rock Kestrel, paler below than above, with a brown tail barred black. Newman does not describe the voice. Months were left unset. The Kemp code NB was left unchanged.",
+  "sampleData": false,
+  "similar": [
+    {
+      "slug": "falco-rupicolus",
+      "note": "Rock Kestrel lacks the contrast between upper parts and underparts, is more robust, and has a grey tail. Female Lesser Kestrel has a brown tail barred black."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Lesser Kestrel",
+      "url": "https://newmansbirds.com/birds/lesser-kestrel/",
+      "publisher": "Newman's Birds",
+      "year": 2026
+    }
+  ],
   "population": {
     "estimate": {
       "low": 512,
@@ -35,8 +58,171 @@
     },
     "tierApplied": "D"
   },
-  "variants": [],
-  "viewNotes": [],
-  "calls": [],
-  "images": []
+  "variants": [
+    {
+      "age": "adult",
+      "sex": "male",
+      "season": "any",
+      "marks": {
+        "bill": {
+          "colour": null,
+          "shape": null
+        },
+        "eye": {
+          "iris": null,
+          "ring": null
+        },
+        "legs": {
+          "colour": null
+        },
+        "head": {
+          "crown": "grey",
+          "face": null,
+          "throat": null,
+          "pattern": null
+        },
+        "upperparts": {
+          "back": "grey",
+          "rump": null,
+          "pattern": "Plain mantle, not spotted. Grey secondary coverts."
+        },
+        "underparts": {
+          "breast": null,
+          "belly": null,
+          "pattern": null
+        },
+        "wings": {
+          "above": "rufous",
+          "below": null,
+          "pattern": "Rufous upperwings, with grey upper wing coverts. Plain underwings."
+        },
+        "tail": {
+          "colour": "grey",
+          "shape": "Grey upper tail."
+        }
+      }
+    },
+    {
+      "age": "adult",
+      "sex": "female",
+      "season": "any",
+      "marks": {
+        "bill": {
+          "colour": null,
+          "shape": null
+        },
+        "eye": {
+          "iris": null,
+          "ring": null
+        },
+        "legs": {
+          "colour": null
+        },
+        "head": {
+          "crown": null,
+          "face": null,
+          "throat": null,
+          "pattern": null
+        },
+        "upperparts": {
+          "back": null,
+          "rump": null,
+          "pattern": "Darker than the paler underparts."
+        },
+        "underparts": {
+          "breast": null,
+          "belly": null,
+          "pattern": "Paler than the upper parts."
+        },
+        "wings": {
+          "above": "rufous",
+          "below": null,
+          "pattern": null
+        },
+        "tail": {
+          "colour": "brown",
+          "shape": "Barred black."
+        }
+      }
+    }
+  ],
+  "viewNotes": [
+    {
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "male",
+      "season": "any",
+      "note": "Rufous upperwings, a grey head and a plain mantle."
+    },
+    {
+      "view": "perched-front",
+      "age": "adult",
+      "sex": "male",
+      "season": "any",
+      "note": "Grey head. The underparts were not given a separate colour beyond the plain underwings."
+    },
+    {
+      "view": "perched-back",
+      "age": "adult",
+      "sex": "male",
+      "season": "any",
+      "note": "Grey back and grey upper tail."
+    },
+    {
+      "view": "flight-above",
+      "age": "adult",
+      "sex": "male",
+      "season": "any",
+      "note": "Plain underwings and grey upper wing coverts. Flocks wheel in leisurely flight."
+    },
+    {
+      "view": "flight-below",
+      "age": "adult",
+      "sex": "male",
+      "season": "any",
+      "note": "Plain underwings."
+    }
+  ],
+  "calls": [
+    {
+      "sex": "any",
+      "type": "call",
+      "description": "Newman’s species page does not describe the voice. Grade A call from Ávila, Spain. The filename is Rodfalk, the Swedish name.",
+      "recordings": [
+        {
+          "key": "xeno-canto/XC149085",
+          "source": "https://xeno-canto.org/149085",
+          "fileUrl": "https://xeno-canto.org/sounds/uploaded/BPSDQEOJWG/XC149085-Rodfalk-%282013-03-28%2015.37%29-LS113091.mp3",
+          "author": "Patrik Åberg",
+          "license": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ]
+    }
+  ],
+  "images": [
+    {
+      "key": "falco-naumanni/side.jpg",
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "source": "https://www.inaturalist.org/observations/263471642",
+      "fileUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/473327188/large.jpg",
+      "author": "lance_robinson",
+      "license": "CC BY-NC 4.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+      "aiGenerated": false,
+      "hosted": false,
+      "alt": "Lesser Kestrel in Kruger",
+      "caption": "Lesser Kestrel in the Ehlanzeni district."
+    }
+  ],
+  "research": {
+    "confidence": "medium",
+    "needsReview": false,
+    "note": "Newman calls it a summer visitor and does not name the months, so monthsPresent was left unset. Population figures were left unchanged."
+  }
 }

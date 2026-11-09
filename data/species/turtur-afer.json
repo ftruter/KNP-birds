@@ -7,8 +7,23 @@
     "af": "Blouvlekduifie"
   },
   "family": "columbidae",
-  "summary": "The details for this species have not been published yet.",
-  "sampleData": true,
+  "habitat": "Wikipedia says it is abundant south of the Sahel, partial in East Africa, and absent in southern Africa. That last clause conflicts with its place on the Kruger list, so no status was taken from it. The plumage was not described.",
+  "summary": "Newman has no page. Wikipedia names the bird and its range and does not describe the plumage, so the marks were left empty. The sentence that it is absent in southern Africa was not used to set status, because the species is on the Kruger list. The Kemp code RB was left unchanged.",
+  "sampleData": false,
+  "similar": [
+    {
+      "slug": "turtur-chalcospilos",
+      "note": "Newman separates Emerald-spotted Wood Dove by its all-dark reddish bill, greyer upperparts and green wing-spots, seen in good light."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Blue-spotted wood dove",
+      "url": "https://en.wikipedia.org/wiki/Blue-spotted_wood_dove",
+      "publisher": "Wikipedia",
+      "year": 2026
+    }
+  ],
   "population": {
     "estimate": {
       "low": 4,
@@ -36,7 +51,66 @@
     "tierApplied": "D"
   },
   "variants": [],
-  "viewNotes": [],
-  "calls": [],
-  "images": []
+  "viewNotes": [
+    {
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Plumage was not described in the texts used."
+    },
+    {
+      "view": "perched-front",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "The face was not described."
+    },
+    {
+      "view": "perched-back",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "The back was not described."
+    },
+    {
+      "view": "flight-above",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "The upperwing was not described. Newman says the wood-dove flight pattern is not by itself diagnostic."
+    },
+    {
+      "view": "flight-below",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "The underparts were not described."
+    }
+  ],
+  "calls": [
+    {
+      "sex": "any",
+      "type": "call",
+      "description": "Wikipedia does not describe the call. The file is grade A from Katama, Uganda. The filename is Turtur_afer_Blue-spotted_Wood-Dove.",
+      "recordings": [
+        {
+          "key": "xeno-canto/XC1009898",
+          "source": "https://xeno-canto.org/1009898",
+          "fileUrl": "https://xeno-canto.org/sounds/uploaded/YIKAQIVHQJ/XC1009898-2MM05037_20250125_121302_66pc_Turtur_afer_Blue-spotted_Wood-Dove.mp3",
+          "author": "Jonathan Onongo",
+          "license": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ]
+    }
+  ],
+  "images": [],
+  "research": {
+    "confidence": "low",
+    "needsReview": true,
+    "note": "Population figures were left unchanged."
+  }
 }

@@ -7,8 +7,45 @@
     "af": "Geelborskanarie"
   },
   "family": "fringillidae",
-  "summary": "The details for this species have not been published yet.",
-  "sampleData": true,
+  "status": "resident",
+  "monthsPresent": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+  ],
+  "size": {
+    "lengthCm": {
+      "min": 10,
+      "max": 10
+    },
+    "note": "Newman's Birds gives 10 cm."
+  },
+  "habitat": "Flocks in dry woodland, cultivated lands and coastal grassland, often with Yellow-fronted Canaries at seeding grasses.",
+  "summary": "A fairly common, localised near-endemic resident. Very small, dull greenish above, with a yellow breast and yellow rump. The colour line says the belly is white. The description says the male has buffy flanks and belly, and the female has buffy underparts and a yellow rump. The song is pretty and sparrow-like. It is somewhat nomadic when not breeding. No openly licensed recording was found. The Kemp code VB was left unchanged.",
+  "sampleData": false,
+  "similar": [
+    {
+      "slug": "crithagra-atrogularis",
+      "note": "Black-throated Canary is greyish with a yellow rump and a blackish throat when that mark is present. Lemon-breasted Canary has a yellow breast."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Lemon-breasted Canary",
+      "url": "https://newmansbirds.com/birds/lemon-breasted-canary/",
+      "publisher": "Newman's Birds",
+      "year": 2026
+    }
+  ],
   "population": {
     "estimate": {
       "low": 4,
@@ -35,8 +72,160 @@
     },
     "tierApplied": "D"
   },
-  "variants": [],
-  "viewNotes": [],
-  "calls": [],
-  "images": []
+  "variants": [
+    {
+      "age": "adult",
+      "sex": "male",
+      "season": "any",
+      "marks": {
+        "bill": {
+          "colour": null,
+          "shape": null
+        },
+        "eye": {
+          "iris": null,
+          "ring": null
+        },
+        "legs": {
+          "colour": null
+        },
+        "head": {
+          "crown": null,
+          "face": null,
+          "throat": null,
+          "pattern": null
+        },
+        "upperparts": {
+          "back": "green",
+          "rump": "yellow",
+          "pattern": "Dull greenish above."
+        },
+        "underparts": {
+          "breast": "yellow",
+          "belly": "buff",
+          "pattern": "The description says buffy flanks and belly. The colour line says the belly is white."
+        },
+        "wings": {
+          "above": null,
+          "below": null,
+          "pattern": null
+        },
+        "tail": {
+          "colour": null,
+          "shape": null
+        }
+      }
+    },
+    {
+      "age": "adult",
+      "sex": "female",
+      "season": "any",
+      "marks": {
+        "bill": {
+          "colour": null,
+          "shape": null
+        },
+        "eye": {
+          "iris": null,
+          "ring": null
+        },
+        "legs": {
+          "colour": null
+        },
+        "head": {
+          "crown": null,
+          "face": null,
+          "throat": null,
+          "pattern": null
+        },
+        "upperparts": {
+          "back": null,
+          "rump": "yellow",
+          "pattern": null
+        },
+        "underparts": {
+          "breast": null,
+          "belly": null,
+          "pattern": "Buffy underparts."
+        },
+        "wings": {
+          "above": null,
+          "below": null,
+          "pattern": null
+        },
+        "tail": {
+          "colour": null,
+          "shape": null
+        }
+      }
+    }
+  ],
+  "viewNotes": [
+    {
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "male",
+      "season": "any",
+      "note": "Yellow breast and yellow rump, dull greenish above."
+    },
+    {
+      "view": "perched-front",
+      "age": "adult",
+      "sex": "male",
+      "season": "any",
+      "note": "Yellow breast. The belly is described both as white and as buffy."
+    },
+    {
+      "view": "perched-back",
+      "age": "adult",
+      "sex": "male",
+      "season": "any",
+      "note": "Dull greenish upper parts and a yellow rump."
+    },
+    {
+      "view": "flight-above",
+      "age": "adult",
+      "sex": "male",
+      "season": "any",
+      "note": "The yellow rump is the flight mark named for the female as well."
+    },
+    {
+      "view": "flight-below",
+      "age": "adult",
+      "sex": "male",
+      "season": "any",
+      "note": "Yellow breast. The belly colour is given in two ways."
+    }
+  ],
+  "calls": [
+    {
+      "sex": "any",
+      "type": "song",
+      "description": "A pretty song of sparrow-like quality. No openly licensed recording was found.",
+      "recordings": []
+    }
+  ],
+  "images": [
+    {
+      "key": "crithagra-citrinipectus/side.jpg",
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "source": "https://www.inaturalist.org/observations/205209827",
+      "fileUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/362814374/large.jpg",
+      "author": "traveler57",
+      "license": "CC BY-NC 4.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+      "aiGenerated": false,
+      "hosted": false,
+      "alt": "Lemon-breasted Canary on a thin branch",
+      "caption": "Lemon-breasted Canary in Vhembe, yellow on the breast and pale below. The bird is small in the frame."
+    }
+  ],
+  "research": {
+    "confidence": "medium",
+    "needsReview": true,
+    "note": "The colour line and the description disagree on the belly. Both wordings are stored. Status is resident and all twelve months are listed. Newman also says it is somewhat nomadic when not breeding. The Kemp code VB was left unchanged. Population figures were left unchanged."
+  }
 }

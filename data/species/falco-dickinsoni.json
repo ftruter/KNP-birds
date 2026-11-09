@@ -7,8 +7,30 @@
     "af": "Dickinsongrysvalk"
   },
   "family": "falconidae",
-  "summary": "The details for this species have not been published yet.",
-  "sampleData": true,
+  "size": {
+    "lengthCm": {
+      "min": 27,
+      "max": 30
+    },
+    "note": "Wikipedia gives 27–30 cm and a weight of 167–246 g. The female is slightly larger and heavier."
+  },
+  "habitat": "Savanna and open woodland, particularly swampy areas near water, miombo, palms and baobabs.",
+  "summary": "A fairly small, stocky kestrel with a large square head. Mostly dark grey, with a pale head and rump. The tail is grey with narrow black bars and a broad subterminal band, and the underside of the flight feathers is barred. The cere, the bare skin around the eye and the feet are yellow. The bill is dark grey and the eye is brown. Juveniles are grey-brown, with barred flanks and without the pale head and rump, and have a greenish cere and eye-ring. It is usually silent, with a high-pitched alarm and contact call. No openly licensed recording was found. Wikipedia does not state residency. The Kemp code RB was left unchanged.",
+  "sampleData": false,
+  "similar": [
+    {
+      "slug": "falco-rupicolus",
+      "note": "Rock Kestrel is rufous on the wings and underparts, with a grey head. Dickinson’s Kestrel is mostly dark grey with a pale head and rump."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Dickinson's kestrel",
+      "url": "https://en.wikipedia.org/wiki/Dickinson%27s_kestrel",
+      "publisher": "Wikipedia",
+      "year": 2026
+    }
+  ],
   "population": {
     "estimate": {
       "low": 32,
@@ -35,8 +57,160 @@
     },
     "tierApplied": "D"
   },
-  "variants": [],
-  "viewNotes": [],
-  "calls": [],
-  "images": []
+  "variants": [
+    {
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "marks": {
+        "bill": {
+          "colour": "grey",
+          "shape": "Dark grey."
+        },
+        "eye": {
+          "iris": "brown",
+          "ring": "yellow"
+        },
+        "legs": {
+          "colour": "yellow"
+        },
+        "head": {
+          "crown": null,
+          "face": null,
+          "throat": null,
+          "pattern": "Pale head. Large and square. Bare yellow skin around the eye."
+        },
+        "upperparts": {
+          "back": "grey",
+          "rump": null,
+          "pattern": "Mostly dark grey, with a pale rump."
+        },
+        "underparts": {
+          "breast": null,
+          "belly": null,
+          "pattern": null
+        },
+        "wings": {
+          "above": null,
+          "below": null,
+          "pattern": "Underside of the flight feathers barred."
+        },
+        "tail": {
+          "colour": "grey",
+          "shape": "Narrow black bars and a broad subterminal band."
+        }
+      }
+    },
+    {
+      "age": "juvenile",
+      "sex": "any",
+      "season": "any",
+      "marks": {
+        "bill": {
+          "colour": null,
+          "shape": null
+        },
+        "eye": {
+          "iris": null,
+          "ring": "green"
+        },
+        "legs": {
+          "colour": null
+        },
+        "head": {
+          "crown": null,
+          "face": null,
+          "throat": null,
+          "pattern": "No pale head. Greenish cere and eye-ring."
+        },
+        "upperparts": {
+          "back": "grey",
+          "rump": null,
+          "pattern": "Grey-brown, without the pale rump."
+        },
+        "underparts": {
+          "breast": null,
+          "belly": null,
+          "pattern": "Barred flanks."
+        },
+        "wings": {
+          "above": null,
+          "below": null,
+          "pattern": null
+        },
+        "tail": {
+          "colour": null,
+          "shape": null
+        }
+      }
+    }
+  ],
+  "viewNotes": [
+    {
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Dark grey, with a pale head and rump, yellow feet and a yellow eye-ring."
+    },
+    {
+      "view": "perched-front",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Pale head, yellow around the eye and a dark grey bill."
+    },
+    {
+      "view": "perched-back",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Dark grey back and a pale rump. The tail has a broad subterminal band."
+    },
+    {
+      "view": "flight-above",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "The underside of the flight feathers is barred."
+    },
+    {
+      "view": "flight-below",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Mostly dark grey below, with barred flight feathers."
+    }
+  ],
+  "calls": [
+    {
+      "sex": "any",
+      "type": "call",
+      "description": "Wikipedia says it is usually silent and has a high-pitched alarm and contact call. No openly licensed recording was found.",
+      "recordings": []
+    }
+  ],
+  "images": [
+    {
+      "key": "falco-dickinsoni/side.jpg",
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "source": "https://www.inaturalist.org/observations/256048837",
+      "fileUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/458982257/large.jpg",
+      "author": "Deon van der Hoven",
+      "license": "CC BY-NC 4.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+      "aiGenerated": false,
+      "hosted": false,
+      "alt": "Dickinson’s Kestrel at Punda Maria",
+      "caption": "Dickinson’s Kestrel at Punda Maria, pale-headed and grey, with yellow feet."
+    }
+  ],
+  "research": {
+    "confidence": "medium",
+    "needsReview": true,
+    "note": "No Newman page was found. Wikipedia does not state residency, so status and months were left unset. The Kemp code RB was left unchanged. Population figures were left unchanged."
+  }
 }

@@ -7,8 +7,45 @@
     "af": "Gewone Blousysie"
   },
   "family": "estrildidae",
-  "summary": "The details for this species have not been published yet.",
-  "sampleData": true,
+  "status": "resident",
+  "size": {
+    "lengthCm": {
+      "min": 12,
+      "max": 14
+    },
+    "note": "Newman's Birds gives 12–14 cm."
+  },
+  "monthsPresent": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+  ],
+  "habitat": "Pairs and small parties in dry thornveld, dry watercourses, bare ground under bushes and kraals. Never far from water.",
+  "summary": "A very common resident. Brown above, with powder-blue underparts of variable extent. The immature is paler than the female and has a black bill. It calls a high-pitched weet-weet on the ground and in flight, and also has a complicated song. It is nomadic and moves into suburbia in dry winters. The Kemp code RB was left unchanged.",
+  "sampleData": false,
+  "similar": [
+    {
+      "slug": "granatina-granatina",
+      "note": "Violet-eared Waxbill has violet ear coverts and a red bill. Blue Waxbill has powder-blue underparts and brown upper parts."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Blue Waxbill",
+      "url": "https://newmansbirds.com/birds/blue-waxbill/",
+      "publisher": "Newman's Birds",
+      "year": 2026
+    }
+  ],
   "population": {
     "estimate": {
       "low": 131072,
@@ -35,8 +72,171 @@
     },
     "tierApplied": "D"
   },
-  "variants": [],
-  "viewNotes": [],
-  "calls": [],
-  "images": []
+  "variants": [
+    {
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "marks": {
+        "bill": {
+          "colour": null,
+          "shape": null
+        },
+        "eye": {
+          "iris": null,
+          "ring": null
+        },
+        "legs": {
+          "colour": null
+        },
+        "head": {
+          "crown": null,
+          "face": null,
+          "throat": null,
+          "pattern": null
+        },
+        "upperparts": {
+          "back": "brown",
+          "rump": null,
+          "pattern": null
+        },
+        "underparts": {
+          "breast": "blue",
+          "belly": "blue",
+          "pattern": "Powder-blue, extent variable."
+        },
+        "wings": {
+          "above": null,
+          "below": null,
+          "pattern": null
+        },
+        "tail": {
+          "colour": null,
+          "shape": null
+        }
+      }
+    },
+    {
+      "age": "immature",
+      "sex": "any",
+      "season": "any",
+      "marks": {
+        "bill": {
+          "colour": "black",
+          "shape": null
+        },
+        "eye": {
+          "iris": null,
+          "ring": null
+        },
+        "legs": {
+          "colour": null
+        },
+        "head": {
+          "crown": null,
+          "face": null,
+          "throat": null,
+          "pattern": null
+        },
+        "upperparts": {
+          "back": null,
+          "rump": null,
+          "pattern": null
+        },
+        "underparts": {
+          "breast": null,
+          "belly": null,
+          "pattern": "Paler than the female."
+        },
+        "wings": {
+          "above": null,
+          "below": null,
+          "pattern": null
+        },
+        "tail": {
+          "colour": null,
+          "shape": null
+        }
+      }
+    }
+  ],
+  "viewNotes": [
+    {
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Brown above and powder-blue below."
+    },
+    {
+      "view": "perched-front",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Powder-blue underparts. The extent varies."
+    },
+    {
+      "view": "perched-back",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Brown upper parts."
+    },
+    {
+      "view": "flight-above",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "It calls in flight. A wing pattern was not described."
+    },
+    {
+      "view": "flight-below",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Powder-blue underparts."
+    }
+  ],
+  "calls": [
+    {
+      "sex": "any",
+      "type": "call",
+      "description": "A high-pitched weet-weet, on the ground and in flight. It also has a complicated song, which was not given a separate file. Grade A call from the Mopani area of Kruger. The filename is BlueWaxbill.",
+      "recordings": [
+        {
+          "key": "xeno-canto/XC368187",
+          "source": "https://xeno-canto.org/368187",
+          "fileUrl": "https://xeno-canto.org/sounds/uploaded/RFRTVEHIZX/XC368187-170403_BlueWaxbill_Mopani_OC.mp3",
+          "author": "Oscar Campbell",
+          "license": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ]
+    }
+  ],
+  "images": [
+    {
+      "key": "uraeginthus-angolensis/side.jpg",
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "source": "https://www.inaturalist.org/observations/290931301",
+      "fileUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/523392414/large.jpg",
+      "author": "tjeerd",
+      "license": "CC BY-NC 4.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+      "aiGenerated": false,
+      "hosted": false,
+      "alt": "Blue Waxbill at Nyawutsi Hide",
+      "caption": "Blue Waxbill at Nyawutsi Hide."
+    }
+  ],
+  "research": {
+    "confidence": "medium",
+    "needsReview": true,
+    "note": "Newman says the immature is paler than the female but does not describe the female separately, so one adult variant was stored. Status is resident and all twelve months are listed. The nomadic dry-winter movement is in the summary. Population figures were left unchanged."
+  }
 }

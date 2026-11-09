@@ -7,8 +7,45 @@
     "af": "Tuinduif"
   },
   "family": "columbidae",
-  "summary": "The details for this species have not been published yet.",
-  "sampleData": true,
+  "status": "resident",
+  "monthsPresent": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+  ],
+  "size": {
+    "lengthCm": {
+      "min": 33,
+      "max": 33
+    },
+    "note": "Newman's Birds gives 33 cm."
+  },
+  "habitat": "Mainly larger towns, where it is tame. Flocks also use cliffs, mine shafts and farmland. It depends on human habitation.",
+  "summary": "A common to abundant introduced resident. Highly variable in colour. It is a domestic breed descended from the Rock Dove of North Africa and Europe. Newman mentions pure white, white with a dark head, and dark grey with a white head, and many other combinations. The short line refers to green neck feathers. The call is coo-roo-coo. The Kemp code NB was left unchanged.",
+  "sampleData": false,
+  "similar": [
+    {
+      "slug": "columba-guinea",
+      "note": "Speckled Pigeon has red, white-spotted upperparts and a red face mask, and is not the variable town pigeon."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Rock Dove (Feral Pigeon)",
+      "url": "https://newmansbirds.com/birds/rock-dove-feral-pigeon/",
+      "publisher": "Newman's Birds",
+      "year": 2026
+    }
+  ],
   "population": {
     "estimate": {
       "low": 8,
@@ -36,7 +73,83 @@
     "tierApplied": "D"
   },
   "variants": [],
-  "viewNotes": [],
-  "calls": [],
-  "images": []
+  "viewNotes": [
+    {
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "A familiar town pigeon. Colour is too variable for one plumage to be stored."
+    },
+    {
+      "view": "perched-front",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "The face colour was not fixed."
+    },
+    {
+      "view": "perched-back",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "The back colour was not fixed. The short line mentions green neck feathers."
+    },
+    {
+      "view": "flight-above",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "The upperwing was not fixed."
+    },
+    {
+      "view": "flight-below",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "The underparts were not fixed."
+    }
+  ],
+  "calls": [
+    {
+      "sex": "any",
+      "type": "call",
+      "description": "coo-roo-coo. The texts do not separate the sexes. Grade A from Paris. The filename is COLLIV. No playable South African file was listed.",
+      "recordings": [
+        {
+          "key": "xeno-canto/XC541143",
+          "source": "https://xeno-canto.org/541143",
+          "fileUrl": "https://xeno-canto.org/sounds/uploaded/CGRIFXISGE/XC541143-COLLIV-Lagarde-20200403-1021.mp3",
+          "author": "Marie-Lan Taÿ Pamart",
+          "license": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ]
+    }
+  ],
+  "images": [
+    {
+      "key": "columba-livia/side.jpg",
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "source": "https://www.inaturalist.org/observations/87138075",
+      "fileUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/143616137/large.jpeg",
+      "author": "pat_ngobeni",
+      "license": "CC BY-NC 4.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+      "aiGenerated": false,
+      "hosted": false,
+      "alt": "Rock Dove in Kruger",
+      "caption": "Rock Dove in Kruger"
+    }
+  ],
+  "research": {
+    "confidence": "medium",
+    "needsReview": false,
+    "note": "Population figures were left unchanged."
+  }
 }

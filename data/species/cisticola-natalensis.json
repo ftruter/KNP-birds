@@ -7,8 +7,33 @@
     "af": "Groottinktinkie"
   },
   "family": "cisticolidae",
-  "summary": "The details for this species have not been published yet.",
-  "sampleData": true,
+  "status": "resident",
+  "monthsPresent": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+  ],
+  "habitat": "Wikipedia says it is a resident breeder and an insectivore, and does not describe the plumage.",
+  "summary": "Wikipedia says it is a resident breeder in Africa south of the Sahara and an insectivore. The retrieved text does not describe the plumage, so the marks were left unset. Newman has no page. The Kemp code VB was left unchanged.",
+  "sampleData": false,
+  "similar": [],
+  "sources": [
+    {
+      "title": "Croaking cisticola",
+      "url": "https://en.wikipedia.org/wiki/Croaking_cisticola",
+      "publisher": "Wikipedia",
+      "year": 2026
+    }
+  ],
   "population": {
     "estimate": {
       "low": 1024,
@@ -36,7 +61,83 @@
     "tierApplied": "D"
   },
   "variants": [],
-  "viewNotes": [],
-  "calls": [],
-  "images": []
+  "viewNotes": [
+    {
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Plumage was not described in the text used."
+    },
+    {
+      "view": "perched-front",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "The face was not described."
+    },
+    {
+      "view": "perched-back",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "The back was not described."
+    },
+    {
+      "view": "flight-above",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "The upperwing was not described."
+    },
+    {
+      "view": "flight-below",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "The underparts were not described."
+    }
+  ],
+  "calls": [
+    {
+      "sex": "any",
+      "type": "call",
+      "description": "Wikipedia does not describe the call. The file is grade A from Kamilonga, Zambia, and includes song and call. The filename is Croaking-Cist.",
+      "recordings": [
+        {
+          "key": "xeno-canto/XC1101235",
+          "source": "https://xeno-canto.org/1101235",
+          "fileUrl": "https://xeno-canto.org/sounds/uploaded/CQARALZBNN/XC1101235-Croaking-Cist-song-and-call-260224_2091.mp3",
+          "author": "Magnus Wadstein",
+          "license": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ]
+    }
+  ],
+  "images": [
+    {
+      "key": "cisticola-natalensis/side.jpg",
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "source": "https://www.inaturalist.org/observations/27756695",
+      "fileUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/43220719/large.jpeg",
+      "author": "Carmelo López Abad",
+      "license": "CC BY-NC 4.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+      "aiGenerated": false,
+      "hosted": false,
+      "alt": "Croaking Cisticola perched in Kruger",
+      "caption": "Croaking Cisticola perched in Kruger"
+    }
+  ],
+  "research": {
+    "confidence": "low",
+    "needsReview": false,
+    "note": "Status is resident and all twelve months are listed from Newman’s resident wording. Population figures were left unchanged."
+  }
 }

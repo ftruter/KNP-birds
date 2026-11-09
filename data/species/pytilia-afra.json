@@ -7,8 +7,45 @@
     "af": "Oranjevlerkmelba"
   },
   "family": "estrildidae",
-  "summary": "The details for this species have not been published yet.",
-  "sampleData": true,
+  "status": "resident",
+  "size": {
+    "lengthCm": {
+      "min": 11,
+      "max": 11
+    },
+    "note": "Newman's Birds gives 11 cm."
+  },
+  "monthsPresent": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+  ],
+  "habitat": "Behaviour and habitat are described as very similar to Green-winged Pytilia: pairs in thorny thickets, often near water.",
+  "summary": "A locally common resident. Red forehead, throat, rump and upper tail, an olive-green back and orange-edged wing feathers that show as an orange patch on the folded wing. The underparts are barred green and buff. The bill is shorter than Green-winged Pytilia and mostly brown on the upper mandible. The male’s red mask extends over the lores. The call is a flat seee and a two-note piping whistle. The stub has no Kemp estimate and none was added.",
+  "sampleData": false,
+  "similar": [
+    {
+      "slug": "pytilia-melba",
+      "note": "Green-winged Pytilia has black-and-white barred underparts and all-green wings. Orange-winged Pytilia has green-and-buff barring and an orange patch on the folded wing."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Orange-winged Pytilia",
+      "url": "https://newmansbirds.com/birds/orange-winged-pytilia/",
+      "publisher": "Newman's Birds",
+      "year": 2026
+    }
+  ],
   "population": {
     "estimate": {
       "low": null,
@@ -21,8 +58,128 @@
     "notes": "No sourced Kruger estimate is currently available; taxonomy or later records require separate research.",
     "sources": []
   },
-  "variants": [],
-  "viewNotes": [],
-  "calls": [],
-  "images": []
+  "variants": [
+    {
+      "age": "adult",
+      "sex": "male",
+      "season": "any",
+      "marks": {
+        "bill": {
+          "colour": "brown",
+          "shape": "Shorter than Green-winged Pytilia. Mostly brown on the upper mandible."
+        },
+        "eye": {
+          "iris": null,
+          "ring": null
+        },
+        "legs": {
+          "colour": null
+        },
+        "head": {
+          "crown": "red",
+          "face": null,
+          "throat": "red",
+          "pattern": "Red forehead and throat. The red mask extends over the lores."
+        },
+        "upperparts": {
+          "back": "olive",
+          "rump": "red",
+          "pattern": null
+        },
+        "underparts": {
+          "breast": null,
+          "belly": null,
+          "pattern": "Barred green and buff."
+        },
+        "wings": {
+          "above": "orange",
+          "below": null,
+          "pattern": "Orange-edged wing feathers, showing as an orange patch on the folded wing."
+        },
+        "tail": {
+          "colour": "red",
+          "shape": "Upper tail red."
+        }
+      }
+    }
+  ],
+  "viewNotes": [
+    {
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "male",
+      "season": "any",
+      "note": "Red face and throat, olive-green back, an orange wing patch and a red rump."
+    },
+    {
+      "view": "perched-front",
+      "age": "adult",
+      "sex": "male",
+      "season": "any",
+      "note": "Red forehead and throat. The male’s red mask extends over the lores."
+    },
+    {
+      "view": "perched-back",
+      "age": "adult",
+      "sex": "male",
+      "season": "any",
+      "note": "Olive-green back and red rump and upper tail."
+    },
+    {
+      "view": "flight-above",
+      "age": "adult",
+      "sex": "male",
+      "season": "any",
+      "note": "The orange edges show as a patch on the folded wing. A flight pattern was not described."
+    },
+    {
+      "view": "flight-below",
+      "age": "adult",
+      "sex": "male",
+      "season": "any",
+      "note": "Underparts barred green and buff."
+    }
+  ],
+  "calls": [
+    {
+      "sex": "any",
+      "type": "call",
+      "description": "A single flat seee, and a two-note piping whistle. Grade A call from Manyoni, Tanzania. The filename uses the old name Golden-winged pytilia and says the file was edited. It was not cleaned again.",
+      "recordings": [
+        {
+          "key": "xeno-canto/XC200765",
+          "source": "https://xeno-canto.org/200765",
+          "fileUrl": "https://xeno-canto.org/sounds/uploaded/OYJCYINHVL/XC200765-LS_30307%20Golden-winged%20pytilia%20Mwamagembe%20edit.mp3",
+          "author": "Thibaut Chansac",
+          "license": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ]
+    }
+  ],
+  "images": [
+    {
+      "key": "pytilia-afra/side.jpg",
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "male",
+      "season": "any",
+      "source": "https://www.inaturalist.org/observations/197447816",
+      "fileUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/347763891/large.jpg",
+      "author": "Duncan McKenzie",
+      "license": "CC BY-NC 4.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+      "aiGenerated": false,
+      "hosted": false,
+      "alt": "Orange-winged Pytilia with a red face and orange wing patch",
+      "caption": "Orange-winged Pytilia in the Mopani district, red on the face with an orange patch on the folded wing."
+    }
+  ],
+  "research": {
+    "confidence": "medium",
+    "needsReview": true,
+    "note": "The colour line also calls the bill red, while the description says the upper mandible is mostly brown. The bill was stored from the description. The female is not given a separate plumage. The stub has no Kemp block and no estimate, and both were left that way. Status is resident and all twelve months are listed."
+  }
 }

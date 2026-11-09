@@ -6,8 +6,8 @@
     "en": "Drongos",
     "af": "Byvanger"
   },
-  "summary": "Field notes for this family are still to be written.",
-  "sampleData": true,
+  "summary": "Black insectivorous birds with prominent rictal bristles. They hawk from a perch and mob larger birds. Kruger has two. Fork-tailed Drongo has a deep fork in almost any non-forest habitat with trees. Common Square-tailed Drongo has only a shallow fork and keeps to forest, riverine bush and dense woodland.",
+  "sampleData": false,
   "species": [
     {
       "slug": "dicrurus-adsimilis",

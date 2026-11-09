@@ -7,8 +7,24 @@
     "af": "Dikbekkoekoek"
   },
   "family": "cuculidae",
-  "summary": "The details for this species have not been published yet.",
-  "sampleData": true,
+  "status": "intra-african-migrant",
+  "habitat": "Humid to subhumid woodlands and gallery forests.",
+  "summary": "Wikipedia distinguishes this cuckoo from other brood parasites by its very thick, hawk-like bill. The page used does not describe the plumage or the voice. In its southernmost range it is partially migratory and spends the southern dry season in East Africa. It parasitises helmetshrikes. Months were left unset. The Kemp code VB was left unchanged.",
+  "sampleData": false,
+  "similar": [
+    {
+      "slug": "cuculus-gularis",
+      "note": "Wikipedia separates Thick-billed Cuckoo from other brood-parasitic cuckoos by the very thick, hawk-like bill, not by a plumage description."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Thick-billed cuckoo",
+      "url": "https://en.wikipedia.org/wiki/Thick-billed_cuckoo",
+      "publisher": "Wikipedia",
+      "year": 2026
+    }
+  ],
   "population": {
     "estimate": {
       "low": 16,
@@ -35,8 +51,128 @@
     },
     "tierApplied": "D"
   },
-  "variants": [],
-  "viewNotes": [],
-  "calls": [],
-  "images": []
+  "variants": [
+    {
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "marks": {
+        "bill": {
+          "colour": null,
+          "shape": "Very thick, and shaped rather like a hawk’s bill."
+        },
+        "eye": {
+          "iris": null,
+          "ring": null
+        },
+        "legs": {
+          "colour": null
+        },
+        "head": {
+          "crown": null,
+          "face": null,
+          "throat": null,
+          "pattern": null
+        },
+        "upperparts": {
+          "back": null,
+          "rump": null,
+          "pattern": null
+        },
+        "underparts": {
+          "breast": null,
+          "belly": null,
+          "pattern": null
+        },
+        "wings": {
+          "above": null,
+          "below": null,
+          "pattern": null
+        },
+        "tail": {
+          "colour": null,
+          "shape": null
+        }
+      }
+    }
+  ],
+  "viewNotes": [
+    {
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "The only mark given is the very thick, hawk-like bill. Plumage was not described."
+    },
+    {
+      "view": "perched-front",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "The bill is very thick. Face and underpart colours were not described."
+    },
+    {
+      "view": "perched-back",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Upperpart colours were not described."
+    },
+    {
+      "view": "flight-above",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "A flight pattern was not described. The bill is compared with a hawk’s."
+    },
+    {
+      "view": "flight-below",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Underpart colours were not described."
+    }
+  ],
+  "calls": [
+    {
+      "sex": "any",
+      "type": "song",
+      "description": "The Wikipedia page used here does not describe the voice. Grade A song from Dzalamyama, Malawi. The filename names Thick-billed Cuckoo. A Kruger alarm call is only grade B and has a generic filename, so it was not used.",
+      "recordings": [
+        {
+          "key": "xeno-canto/XC513828",
+          "source": "https://xeno-canto.org/513828",
+          "fileUrl": "https://xeno-canto.org/sounds/uploaded/ISPFAAOURA/XC513828-MVI_1127%20Thick-billed%20Cuckoo.mp3",
+          "author": "Murray Christian",
+          "license": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ]
+    }
+  ],
+  "images": [
+    {
+      "key": "pachycoccyx-audeberti/side.jpg",
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "source": "https://www.inaturalist.org/observations/263332892",
+      "fileUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/473048203/large.jpeg",
+      "author": "Audrey Whitlock",
+      "license": "CC BY-NC 4.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+      "aiGenerated": false,
+      "hosted": false,
+      "alt": "Thick-billed Cuckoo in a leafy crown at Pretoriuskop",
+      "caption": "Thick-billed Cuckoo in a leafy crown at Pretoriuskop. The page used for the text does not describe the plumage, so the caption does not treat the colours in the frame as field marks."
+    }
+  ],
+  "research": {
+    "confidence": "low",
+    "needsReview": true,
+    "note": "No Newman page was found. Wikipedia describes the bill and the partial migration, not the plumage or the voice. Status is intra-african-migrant because the southern birds spend the dry season in East Africa, and months were left unset. Population figures were left unchanged."
+  }
 }

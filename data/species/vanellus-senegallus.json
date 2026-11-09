@@ -7,8 +7,45 @@
     "af": "Lelkiewiet"
   },
   "family": "charadriidae",
-  "summary": "The details for this species have not been published yet.",
-  "sampleData": true,
+  "status": "resident",
+  "monthsPresent": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+  ],
+  "size": {
+    "lengthCm": {
+      "min": 35,
+      "max": 35
+    },
+    "note": "Newman's Birds gives 35 cm."
+  },
+  "habitat": "Pairs and small groups on grassy watersides, riverbanks, dam walls and the fringes of sewage ponds and vleis.",
+  "summary": "A common resident. The bill, wattles and legs are bright yellow. The wattles are shorter than those of the White-crowned Lapwing, and the white is only a patch on the forecrown. The neck is streaked, the folded wing has no white bar, the breast is brown and the belly is white. The upperparts are pale grey-brown. The call is a shrill kwep-kwep-kwep-kwep, speeding up when the bird is agitated.",
+  "sampleData": false,
+  "similar": [
+    {
+      "slug": "vanellus-albiceps",
+      "note": "White-crowned Lapwing has longer wattles, a white crown-band, entirely white underparts and a black wing edged white."
+    }
+  ],
+  "sources": [
+    {
+      "title": "African Wattled Lapwing",
+      "url": "https://newmansbirds.com/birds/african-wattled-lapwing/",
+      "publisher": "Newman's Birds",
+      "year": 2026
+    }
+  ],
   "population": {
     "estimate": {
       "low": 64,
@@ -35,8 +72,131 @@
     },
     "tierApplied": "D"
   },
-  "variants": [],
-  "viewNotes": [],
-  "calls": [],
-  "images": []
+  "variants": [
+    {
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "marks": {
+        "bill": {
+          "colour": "yellow",
+          "shape": null
+        },
+        "eye": {
+          "iris": null,
+          "ring": null
+        },
+        "legs": {
+          "colour": "yellow"
+        },
+        "head": {
+          "crown": "white",
+          "face": "yellow",
+          "throat": "brown",
+          "pattern": "White patch only on the forecrown. Yellow wattles shorter than those of the White-crowned Lapwing. Neck streaked black."
+        },
+        "upperparts": {
+          "back": [
+            "grey",
+            "brown"
+          ],
+          "rump": null,
+          "pattern": "Pale grey-brown upperparts. No white bar on the folded wing."
+        },
+        "underparts": {
+          "breast": "brown",
+          "belly": "white",
+          "pattern": null
+        },
+        "wings": {
+          "above": null,
+          "below": null,
+          "pattern": null
+        },
+        "tail": {
+          "colour": null,
+          "shape": null
+        }
+      }
+    }
+  ],
+  "viewNotes": [
+    {
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Yellow bill, wattles and legs, a small white forecrown and a brown breast, on a grassy waterside."
+    },
+    {
+      "view": "perched-front",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Yellow wattles and the white forecrown patch."
+    },
+    {
+      "view": "perched-back",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Pale grey-brown back, with no white bar on the folded wing."
+    },
+    {
+      "view": "flight-above",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "No white bar was named on the wing."
+    },
+    {
+      "view": "flight-below",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Brown breast and white belly."
+    }
+  ],
+  "calls": [
+    {
+      "sex": "any",
+      "type": "call",
+      "description": "A shrill kwep-kwep-kwep-kwep, speeding up with increased agitation. The texts do not separate the sexes. Grade A from Kalwelwa, Zambia.",
+      "recordings": [
+        {
+          "key": "xeno-canto/XC585227",
+          "source": "https://xeno-canto.org/585227",
+          "fileUrl": "https://xeno-canto.org/sounds/uploaded/IIJAXHKSCC/XC585227-African%20Wattled%20Plover%20%28call%29%2020200701%2CKalwelwa%2CMwinilunga%2CNorthwestern%2CZAMBIA.mp3",
+          "author": "Dries Van de Loock",
+          "license": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ]
+    }
+  ],
+  "images": [
+    {
+      "key": "vanellus-senegallus/side.jpg",
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "source": "https://www.inaturalist.org/observations/242556114",
+      "fileUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/432415022/large.jpeg",
+      "author": "Bud Lensing",
+      "license": "CC0 1.0",
+      "licenceUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "aiGenerated": false,
+      "hosted": false,
+      "alt": "African Wattled Lapwing standing side-on on dry Kruger grass, with yellow legs and a small pale forecrown",
+      "caption": "African Wattled Lapwing standing side-on on dry Kruger grass, with yellow legs and a small pale forecrown"
+    }
+  ],
+  "research": {
+    "confidence": "medium",
+    "needsReview": false,
+    "note": "Status is resident and all twelve months are listed. Newman calls it a common resident. The call is grade A from Zambia. The photograph is CC0. The Kemp code VB was left unchanged."
+  }
 }

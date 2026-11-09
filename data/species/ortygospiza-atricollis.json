@@ -7,8 +7,29 @@
     "af": "Gewone Kwartelvinkie"
   },
   "family": "estrildidae",
-  "summary": "The details for this species have not been published yet.",
-  "sampleData": true,
+  "size": {
+    "lengthCm": {
+      "min": 10,
+      "max": 10
+    },
+    "note": "Wikipedia gives 10 cm."
+  },
+  "summary": "A small, compact finch. Dark grey underparts, barred breast and flanks, and an orange-buff central belly. The feathers around the eye and on the chin are white. A breeding male has a red bill. Females and non-breeding males have a brown upper mandible and a red lower mandible. The female is paler and less distinctly barred. The flight call is a tinny chink-chink. Wikipedia does not say whether it is resident. The Kemp name is Quail Finch and the code RB was left unchanged.",
+  "sampleData": false,
+  "similar": [
+    {
+      "slug": "estrilda-astrild",
+      "note": "Common Waxbill has a red mask and a red bill all year in the adult. Quailfinch is barred on the breast and flanks, with white around the eye and chin."
+    }
+  ],
+  "sources": [
+    {
+      "title": "African quailfinch",
+      "url": "https://en.wikipedia.org/wiki/African_quailfinch",
+      "publisher": "Wikipedia",
+      "year": 2026
+    }
+  ],
   "population": {
     "estimate": {
       "low": 8192,
@@ -35,8 +56,220 @@
     },
     "tierApplied": "D"
   },
-  "variants": [],
-  "viewNotes": [],
-  "calls": [],
-  "images": []
+  "variants": [
+    {
+      "age": "adult",
+      "sex": "male",
+      "season": "breeding",
+      "marks": {
+        "bill": {
+          "colour": "red",
+          "shape": null
+        },
+        "eye": {
+          "iris": null,
+          "ring": null
+        },
+        "legs": {
+          "colour": null
+        },
+        "head": {
+          "crown": null,
+          "face": null,
+          "throat": null,
+          "pattern": "White feathers around the eye and on the chin."
+        },
+        "upperparts": {
+          "back": null,
+          "rump": null,
+          "pattern": null
+        },
+        "underparts": {
+          "breast": "grey",
+          "belly": "orange",
+          "pattern": "Dark grey underparts. Barred breast and flanks. Orange-buff central belly."
+        },
+        "wings": {
+          "above": null,
+          "below": null,
+          "pattern": null
+        },
+        "tail": {
+          "colour": null,
+          "shape": null
+        }
+      }
+    },
+    {
+      "age": "adult",
+      "sex": "male",
+      "season": "non-breeding",
+      "marks": {
+        "bill": {
+          "colour": [
+            "brown",
+            "red"
+          ],
+          "shape": "Brown upper mandible and red lower mandible."
+        },
+        "eye": {
+          "iris": null,
+          "ring": null
+        },
+        "legs": {
+          "colour": null
+        },
+        "head": {
+          "crown": null,
+          "face": null,
+          "throat": null,
+          "pattern": "White feathers around the eye and on the chin."
+        },
+        "upperparts": {
+          "back": null,
+          "rump": null,
+          "pattern": null
+        },
+        "underparts": {
+          "breast": "grey",
+          "belly": "orange",
+          "pattern": "Barred breast and flanks. Orange-buff central belly."
+        },
+        "wings": {
+          "above": null,
+          "below": null,
+          "pattern": null
+        },
+        "tail": {
+          "colour": null,
+          "shape": null
+        }
+      }
+    },
+    {
+      "age": "adult",
+      "sex": "female",
+      "season": "any",
+      "marks": {
+        "bill": {
+          "colour": [
+            "brown",
+            "red"
+          ],
+          "shape": "Brown upper mandible and red lower mandible."
+        },
+        "eye": {
+          "iris": null,
+          "ring": null
+        },
+        "legs": {
+          "colour": null
+        },
+        "head": {
+          "crown": null,
+          "face": null,
+          "throat": null,
+          "pattern": "White feathers around the eye and on the chin."
+        },
+        "upperparts": {
+          "back": null,
+          "rump": null,
+          "pattern": null
+        },
+        "underparts": {
+          "breast": null,
+          "belly": null,
+          "pattern": "Paler than the male, with less distinctive barring."
+        },
+        "wings": {
+          "above": null,
+          "below": null,
+          "pattern": null
+        },
+        "tail": {
+          "colour": null,
+          "shape": null
+        }
+      }
+    }
+  ],
+  "viewNotes": [
+    {
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "male",
+      "season": "breeding",
+      "note": "Barred breast and flanks, an orange-buff belly, white around the eye and chin, and a red bill."
+    },
+    {
+      "view": "perched-front",
+      "age": "adult",
+      "sex": "male",
+      "season": "breeding",
+      "note": "White chin and white feathers around the eye. The bill is red in breeding plumage."
+    },
+    {
+      "view": "perched-back",
+      "age": "adult",
+      "sex": "male",
+      "season": "breeding",
+      "note": "The upper parts were not described."
+    },
+    {
+      "view": "flight-above",
+      "age": "adult",
+      "sex": "male",
+      "season": "breeding",
+      "note": "The call is given in flight, a tinny chink-chink."
+    },
+    {
+      "view": "flight-below",
+      "age": "adult",
+      "sex": "male",
+      "season": "breeding",
+      "note": "Dark grey underparts, barred flanks and an orange-buff central belly."
+    }
+  ],
+  "calls": [
+    {
+      "sex": "any",
+      "type": "call",
+      "description": "A tinny chink-chink in flight. Grade A call and flight call from the Free State. The filename is QuailfinchAfrican.",
+      "recordings": [
+        {
+          "key": "xeno-canto/XC811127",
+          "source": "https://xeno-canto.org/811127",
+          "fileUrl": "https://xeno-canto.org/sounds/uploaded/JDCTKFMBKV/XC811127-QuailfinchAfrican_GoedehoopJFpad_20230624_-29.3668_25.8735.mp3",
+          "author": "Dawie de Swardt",
+          "license": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ]
+    }
+  ],
+  "images": [
+    {
+      "key": "ortygospiza-atricollis/side.jpg",
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "male",
+      "season": "breeding",
+      "source": "https://www.inaturalist.org/observations/250019271",
+      "fileUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/447041348/large.jpeg",
+      "author": "Pieter Kotze",
+      "license": "CC BY-NC 4.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+      "aiGenerated": false,
+      "hosted": false,
+      "alt": "Quailfinch on dry ground near Satara",
+      "caption": "Quailfinch on dry ground near Satara, with a red bill, white around the eye and barred flanks."
+    }
+  ],
+  "research": {
+    "confidence": "medium",
+    "needsReview": true,
+    "note": "No Newman page was found. Wikipedia does not state residency or a habitat sentence beyond eastern and southern Africa, so status and months were left unset. The Kemp code RB was left unchanged. Population figures were left unchanged."
+  }
 }
