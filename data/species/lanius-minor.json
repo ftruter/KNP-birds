@@ -7,8 +7,36 @@
     "af": "Gryslaksman"
   },
   "family": "laniidae",
-  "summary": "The details for this species have not been published yet.",
-  "sampleData": true,
+  "size": {
+    "lengthCm": {
+      "min": 20,
+      "max": 22
+    },
+    "note": "Newman's Birds gives 20–22 cm."
+  },
+  "habitat": "Solitary in thornveld and mixed bushveld, in more open habitat than Red-backed Shrike. It still-hunts from a branch, pole or telephone wire.",
+  "summary": "A fairly common summer visitor. Grey and black above, white below, with a full black mask and a white wing-bar that is conspicuous in flight. Sexes are alike. First-year birds lack the full black mask. It has less white at the tail base than a Red-backed Shrike and no rufous mantle. Newman says it is normally silent. It arrives late October to November and departs early April. The Kemp code NB was left unchanged.",
+  "sampleData": false,
+  "similar": [
+    {
+      "slug": "lanius-collurio",
+      "note": "A male Red-backed Shrike has a rufous mantle. Lesser Grey Shrike is larger, has less white at the tail base and shows a white wing-bar in flight."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Lesser Grey Shrike",
+      "url": "https://newmansbirds.com/birds/lesser-grey-shrike/",
+      "publisher": "Newman's Birds",
+      "year": 2026
+    },
+    {
+      "title": "Kemp A.C., Herholdt J.J., Whyte I. & Harrison J. (2001). Birds of the two largest national parks in South Africa: a method to generate estimates of population size for all species and assess their conservation ecology. S. Afr. J. Sci. 97: 393–403.",
+      "url": "https://journals.co.za/doi/pdf/10.10520/EJC97367",
+      "publisher": "South African Journal of Science",
+      "year": 2001
+    }
+  ],
   "population": {
     "estimate": {
       "low": 2048,
@@ -35,8 +63,213 @@
     },
     "tierApplied": "D"
   },
-  "variants": [],
-  "viewNotes": [],
-  "calls": [],
-  "images": []
+  "variants": [
+    {
+      "age": "adult",
+      "sex": "any",
+      "season": "non-breeding",
+      "marks": {
+        "bill": {
+          "colour": null,
+          "shape": "Stout hooked bill. Bill colour was not named."
+        },
+        "eye": {
+          "iris": null,
+          "ring": null
+        },
+        "legs": {
+          "colour": null
+        },
+        "head": {
+          "crown": "grey",
+          "face": "black",
+          "throat": null,
+          "pattern": "Full black mask. Grey and black above."
+        },
+        "upperparts": {
+          "back": "grey",
+          "rump": null,
+          "pattern": "Grey and black above. No rufous mantle."
+        },
+        "underparts": {
+          "breast": "white",
+          "belly": "white",
+          "pattern": "White below."
+        },
+        "wings": {
+          "above": null,
+          "below": null,
+          "pattern": "White wing-bar, conspicuous in flight."
+        },
+        "tail": {
+          "colour": null,
+          "shape": "Less white at the tail base than a Red-backed Shrike."
+        }
+      }
+    },
+    {
+      "age": "immature",
+      "sex": "any",
+      "season": "non-breeding",
+      "marks": {
+        "bill": {
+          "colour": null,
+          "shape": null
+        },
+        "eye": {
+          "iris": null,
+          "ring": null
+        },
+        "legs": {
+          "colour": null
+        },
+        "head": {
+          "crown": null,
+          "face": null,
+          "throat": null,
+          "pattern": "The full black mask is absent in first-year birds."
+        },
+        "upperparts": {
+          "back": null,
+          "rump": null
+        },
+        "underparts": {
+          "breast": null,
+          "belly": null
+        },
+        "wings": {
+          "above": null,
+          "below": null
+        },
+        "tail": {
+          "colour": null,
+          "shape": null
+        }
+      }
+    }
+  ],
+  "viewNotes": [
+    {
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "any",
+      "season": "non-breeding",
+      "note": "Grey and black above, white below, with a full black mask and a stout hooked bill."
+    },
+    {
+      "view": "perched-front",
+      "age": "adult",
+      "sex": "any",
+      "season": "non-breeding",
+      "note": "Full black mask and white underparts."
+    },
+    {
+      "view": "perched-back",
+      "age": "adult",
+      "sex": "any",
+      "season": "non-breeding",
+      "note": "Grey and black upperparts, without a rufous mantle."
+    },
+    {
+      "view": "flight-above",
+      "age": "adult",
+      "sex": "any",
+      "season": "non-breeding",
+      "note": "White wing-bar, conspicuous in flight."
+    },
+    {
+      "view": "flight-below",
+      "age": "adult",
+      "sex": "any",
+      "season": "non-breeding",
+      "note": "White underparts. Less white at the tail base than a Red-backed Shrike."
+    },
+    {
+      "view": "perched-side",
+      "age": "immature",
+      "sex": "any",
+      "season": "non-breeding",
+      "note": "First-year bird without the full black mask. Newman does not describe the rest of this plumage."
+    },
+    {
+      "view": "perched-front",
+      "age": "immature",
+      "sex": "any",
+      "season": "non-breeding",
+      "note": "The full black mask is absent. Face and throat colours were not named."
+    },
+    {
+      "view": "perched-back",
+      "age": "immature",
+      "sex": "any",
+      "season": "non-breeding",
+      "note": "Upperpart colours of the first-year bird were not named."
+    },
+    {
+      "view": "flight-above",
+      "age": "immature",
+      "sex": "any",
+      "season": "non-breeding",
+      "note": "A first-year flight pattern was not described."
+    },
+    {
+      "view": "flight-below",
+      "age": "immature",
+      "sex": "any",
+      "season": "non-breeding",
+      "note": "Underpart colours of the first-year bird were not named."
+    }
+  ],
+  "calls": [
+    {
+      "sex": "any",
+      "type": "call",
+      "description": "Newman says it is normally silent. Grade A call from Akchi at Alakol lake, Kazakhstan. The filename is XC145242-Kleine Klapekster_20130708_07_roep.mp3. Kleine Klapekster is the Dutch name, and roep marks it as a call. It is a breeding-ground recording.",
+      "recordings": [
+        {
+          "key": "xeno-canto/XC145242",
+          "source": "https://xeno-canto.org/145242",
+          "fileUrl": "https://xeno-canto.org/sounds/uploaded/YEEQSGIKMT/XC145242-Kleine%20Klapekster_20130708_07_roep.mp3",
+          "author": "Thijs Fijen",
+          "license": "CC BY-NC-SA 3.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/3.0/",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ]
+    }
+  ],
+  "images": [
+    {
+      "key": "lanius-minor/side.jpg",
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "any",
+      "season": "non-breeding",
+      "source": "https://www.inaturalist.org/observations/131228648",
+      "fileUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/223287824/large.jpeg",
+      "author": "leuli",
+      "license": "CC BY-NC 4.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+      "aiGenerated": false,
+      "hosted": false,
+      "alt": "Lesser Grey Shrike perched, grey above, black mask and white below",
+      "caption": "Lesser Grey Shrike in Mopani, grey above with a black mask and white underparts. The bird is distant."
+    }
+  ],
+  "research": {
+    "confidence": "medium",
+    "needsReview": false,
+    "note": "Newman calls it a fairly common summer visitor that arrives late October to November and departs early April, so the months stored are October through April and the status is summer-migrant. First-year plumage is only the missing mask. Newman says the species is normally silent; the attached file is still the highest-ranked openly licensed call. Population figures and the Kemp code NB were left unchanged."
+  },
+  "status": "summer-migrant",
+  "monthsPresent": [
+    1,
+    2,
+    3,
+    4,
+    10,
+    11,
+    12
+  ]
 }

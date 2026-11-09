@@ -7,8 +7,36 @@
     "af": "Kremetartlaksman"
   },
   "family": "laniidae",
-  "summary": "The details for this species have not been published yet.",
-  "sampleData": true,
+  "size": {
+    "lengthCm": {
+      "min": 23,
+      "max": 25
+    },
+    "note": "Newman's Birds gives 23–25 cm."
+  },
+  "habitat": "Singly or in small scattered groups in mixed bushveld, thornveld and broad-leaved woodland. It perches on a branch or a roadside telephone wire and still-hunts.",
+  "summary": "A common near-endemic resident. Large and bulky, with a white crown and a black mask. The mantle is light brown, the wings are dark, the throat and breast are white, and the belly to the vent is light brown. Sexes are alike. The flight is fluttering and almost hawk-like. The call is a curious kwep, kwep. The colour line's punctuation leaves the tail colour ambiguous, so it is left blank. The Kemp code RB was left unchanged.",
+  "sampleData": false,
+  "similar": [
+    {
+      "slug": "urolestes-melanoleucus",
+      "note": "Magpie Shrike is a long-tailed pied bird with a white wing-stripe, not a bulky bird with a white crown and a black mask."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Southern White-crowned Shrike",
+      "url": "https://newmansbirds.com/birds/southern-white-crowned-shrike/",
+      "publisher": "Newman's Birds",
+      "year": 2026
+    },
+    {
+      "title": "Kemp A.C., Herholdt J.J., Whyte I. & Harrison J. (2001). Birds of the two largest national parks in South Africa: a method to generate estimates of population size for all species and assess their conservation ecology. S. Afr. J. Sci. 97: 393–403.",
+      "url": "https://journals.co.za/doi/pdf/10.10520/EJC97367",
+      "publisher": "South African Journal of Science",
+      "year": 2001
+    }
+  ],
   "population": {
     "estimate": {
       "low": 4096,
@@ -35,8 +63,143 @@
     },
     "tierApplied": "D"
   },
-  "variants": [],
-  "viewNotes": [],
-  "calls": [],
-  "images": []
+  "variants": [
+    {
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "marks": {
+        "bill": {
+          "colour": null,
+          "shape": "Bulky shrike. Bill colour was not named."
+        },
+        "eye": {
+          "iris": null,
+          "ring": null
+        },
+        "legs": {
+          "colour": null
+        },
+        "head": {
+          "crown": "white",
+          "face": "black",
+          "throat": "white",
+          "pattern": "White crown and a black mask. Throat and breast white."
+        },
+        "upperparts": {
+          "back": "brown",
+          "rump": null,
+          "pattern": "Light brown mantle. A rump colour was not named."
+        },
+        "underparts": {
+          "breast": "white",
+          "belly": "brown",
+          "pattern": "Throat and breast white. Belly to vent light brown."
+        },
+        "wings": {
+          "above": null,
+          "below": null,
+          "pattern": "Dark wings. A named wing colour was not given."
+        },
+        "tail": {
+          "colour": null,
+          "shape": "The colour line's punctuation could be read as a white tail or as grouping the tail with the dark mask. The tail colour is left blank."
+        }
+      }
+    }
+  ],
+  "viewNotes": [
+    {
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Bulky bird with a white crown, a black mask and a light brown mantle."
+    },
+    {
+      "view": "perched-front",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "White crown, black mask, and a white throat and breast."
+    },
+    {
+      "view": "perched-back",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Light brown mantle and dark wings. The tail colour was not settled from the text."
+    },
+    {
+      "view": "flight-above",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Fluttering, almost hawk-like flight. A wing colour seen from above was not named beyond dark wings."
+    },
+    {
+      "view": "flight-below",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "White throat and breast, light brown belly to the vent."
+    }
+  ],
+  "calls": [
+    {
+      "sex": "any",
+      "type": "call",
+      "description": "A curious kwep, kwep. Grade A call from Okaukuejo in Etosha, Namibia. The filename is XC338378-Southern white-crowned shrike.mp3. It is not a Kruger recording.",
+      "recordings": [
+        {
+          "key": "xeno-canto/XC338378",
+          "source": "https://xeno-canto.org/338378",
+          "fileUrl": "https://xeno-canto.org/sounds/uploaded/IMBONSYZGY/XC338378-Southern%20white-crowned%20shrike.mp3",
+          "author": "Luca Fabbriccini",
+          "license": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ]
+    }
+  ],
+  "images": [
+    {
+      "key": "eurocephalus-anguitimens/side.jpg",
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "source": "https://www.inaturalist.org/observations/329466269",
+      "fileUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/597223413/large.jpg",
+      "author": "Philippe PERRUISSEAU-CARRIER",
+      "license": "CC BY-NC 4.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+      "aiGenerated": false,
+      "hosted": false,
+      "alt": "Southern White-crowned Shrike perched, white crown and black mask",
+      "caption": "Southern White-crowned Shrike in Kruger Park, white crown, black mask and a brown mantle."
+    }
+  ],
+  "research": {
+    "confidence": "medium",
+    "needsReview": false,
+    "note": "Status is resident and all twelve months are listed. Newman calls it a common near-endemic resident. The tail colour is left blank because the colour line is ambiguous and the description does not name it. Population figures and the Kemp code RB were left unchanged."
+  },
+  "status": "resident",
+  "monthsPresent": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+  ]
 }
