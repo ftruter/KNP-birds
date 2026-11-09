@@ -7,8 +7,31 @@
     "af": "Westelike Rooipootvalk"
   },
   "family": "falconidae",
-  "summary": "The details for this species have not been published yet.",
-  "sampleData": true,
+  "status": "summer-migrant",
+  "size": {
+    "lengthCm": {
+      "min": 29,
+      "max": 30
+    },
+    "note": "Newman's Birds gives 29–30 cm and 120–200 g."
+  },
+  "habitat": "Flocks in the same grassland and farmland as Amur Falcon. The distribution is generally more westerly.",
+  "summary": "An uncommon summer visitor. The female has a rufous head and underparts, including plain rufous underwing coverts, and grey upperwings. The cere and legs are red. The male is very like a male Amur Falcon, but the underwing coverts are dark rather than white. The immature is more rufous than an immature Amur Falcon, and the juvenile is streaked. Newman does not describe the voice. Months were left unset. The Kemp name is Western Redfooted Kestrel and the code NB was left unchanged.",
+  "sampleData": false,
+  "similar": [
+    {
+      "slug": "falco-amurensis",
+      "note": "Male Amur Falcon has white underwing coverts. Male Red-footed Falcon has dark underwing coverts. The immature Red-footed Falcon is more rufous."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Red-footed Falcon",
+      "url": "https://newmansbirds.com/birds/red-footed-falcon/",
+      "publisher": "Newman's Birds",
+      "year": 2026
+    }
+  ],
   "population": {
     "estimate": {
       "low": 4,
@@ -35,8 +58,214 @@
     },
     "tierApplied": "D"
   },
-  "variants": [],
-  "viewNotes": [],
-  "calls": [],
-  "images": []
+  "variants": [
+    {
+      "age": "adult",
+      "sex": "male",
+      "season": "any",
+      "marks": {
+        "bill": {
+          "colour": null,
+          "shape": null
+        },
+        "eye": {
+          "iris": null,
+          "ring": null
+        },
+        "legs": {
+          "colour": "red"
+        },
+        "head": {
+          "crown": null,
+          "face": null,
+          "throat": null,
+          "pattern": null
+        },
+        "upperparts": {
+          "back": null,
+          "rump": null,
+          "pattern": null
+        },
+        "underparts": {
+          "breast": null,
+          "belly": null,
+          "pattern": null
+        },
+        "wings": {
+          "above": null,
+          "below": "black",
+          "pattern": "Dark underwing coverts, the main difference from male Amur Falcon."
+        },
+        "tail": {
+          "colour": null,
+          "shape": null
+        }
+      }
+    },
+    {
+      "age": "adult",
+      "sex": "female",
+      "season": "any",
+      "marks": {
+        "bill": {
+          "colour": null,
+          "shape": null
+        },
+        "eye": {
+          "iris": null,
+          "ring": null
+        },
+        "legs": {
+          "colour": "red"
+        },
+        "head": {
+          "crown": "rufous",
+          "face": "rufous",
+          "throat": "rufous",
+          "pattern": null
+        },
+        "upperparts": {
+          "back": null,
+          "rump": null,
+          "pattern": "Upperwings grey."
+        },
+        "underparts": {
+          "breast": "rufous",
+          "belly": "rufous",
+          "pattern": "Plain rufous underparts and underwing coverts."
+        },
+        "wings": {
+          "above": "grey",
+          "below": "rufous",
+          "pattern": null
+        },
+        "tail": {
+          "colour": null,
+          "shape": null
+        }
+      }
+    },
+    {
+      "age": "juvenile",
+      "sex": "any",
+      "season": "any",
+      "marks": {
+        "bill": {
+          "colour": null,
+          "shape": null
+        },
+        "eye": {
+          "iris": null,
+          "ring": null
+        },
+        "legs": {
+          "colour": null
+        },
+        "head": {
+          "crown": null,
+          "face": null,
+          "throat": null,
+          "pattern": null
+        },
+        "upperparts": {
+          "back": null,
+          "rump": null,
+          "pattern": null
+        },
+        "underparts": {
+          "breast": null,
+          "belly": null,
+          "pattern": "Streaked. More rufous than an immature Amur Falcon."
+        },
+        "wings": {
+          "above": null,
+          "below": null,
+          "pattern": null
+        },
+        "tail": {
+          "colour": null,
+          "shape": null
+        }
+      }
+    }
+  ],
+  "viewNotes": [
+    {
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "female",
+      "season": "any",
+      "note": "Rufous head and underparts, with grey upperwings."
+    },
+    {
+      "view": "perched-front",
+      "age": "adult",
+      "sex": "female",
+      "season": "any",
+      "note": "Rufous head and underparts. The cere and legs are red."
+    },
+    {
+      "view": "perched-back",
+      "age": "adult",
+      "sex": "female",
+      "season": "any",
+      "note": "Grey upperwings."
+    },
+    {
+      "view": "flight-above",
+      "age": "adult",
+      "sex": "female",
+      "season": "any",
+      "note": "Plain rufous underwing coverts."
+    },
+    {
+      "view": "flight-below",
+      "age": "adult",
+      "sex": "female",
+      "season": "any",
+      "note": "Plain rufous underparts. The juvenile is streaked."
+    }
+  ],
+  "calls": [
+    {
+      "sex": "any",
+      "type": "call",
+      "description": "Newman’s species page does not describe the voice. Grade A call from a colony in Aqmola, Kazakhstan. The filename names Falco vespertinus.",
+      "recordings": [
+        {
+          "key": "xeno-canto/XC154405",
+          "source": "https://xeno-canto.org/154405",
+          "fileUrl": "https://xeno-canto.org/sounds/uploaded/JFWYCBDTFP/XC154405-Falco%20vespertinus%20calls%20in%20colony%20east%20of%20Akbykti%20Aqmola%20province%20Kazakhstan%203%20May%202013%20%28Arend%20Wassink%29.mp3",
+          "author": "Arend Wassink",
+          "license": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ]
+    }
+  ],
+  "images": [
+    {
+      "key": "falco-vespertinus/side.jpg",
+      "view": "flight-below",
+      "age": "juvenile",
+      "sex": "any",
+      "season": "any",
+      "source": "https://www.inaturalist.org/observations/357633518",
+      "fileUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/652308908/large.jpg",
+      "author": "jefferson_silva",
+      "license": "CC BY-NC 4.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+      "aiGenerated": false,
+      "hosted": false,
+      "alt": "Red-footed Falcon in flight over Kruger",
+      "caption": "Red-footed Falcon in flight over Kruger. The streaked underparts match the juvenile."
+    }
+  ],
+  "research": {
+    "confidence": "medium",
+    "needsReview": false,
+    "note": "Newman calls it an uncommon summer visitor and does not name the months, so monthsPresent was left unset. The male plumage is stored only for the dark underwing coverts, which is the difference Newman gives. Population figures were left unchanged."
+  }
 }
