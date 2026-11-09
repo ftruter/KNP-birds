@@ -1,11 +1,11 @@
 {
   "source": "xeno-canto explore catalogue, API v3 recording fields",
   "counts": {
-    "slots": 169,
+    "slots": 177,
     "swapped": 17,
-    "added": 73,
+    "added": 78,
     "kept": 57,
-    "none": 22,
+    "none": 25,
     "cleaned": 0
   },
   "noUsableRecording": [
@@ -117,6 +117,21 @@
     {
       "slug": "ardea-brachyrhyncha",
       "scientificName": "Ardea brachyrhyncha",
+      "type": "call"
+    },
+    {
+      "slug": "ciconia-abdimii",
+      "scientificName": "Ciconia abdimii",
+      "type": "call"
+    },
+    {
+      "slug": "ciconia-microscelis",
+      "scientificName": "Ciconia microscelis",
+      "type": "call"
+    },
+    {
+      "slug": "ephippiorhynchus-senegalensis",
+      "scientificName": "Ephippiorhynchus senegalensis",
       "type": "call"
     }
   ],
@@ -2725,6 +2740,118 @@
       "quality": "A",
       "country": "Zambia",
       "locality": "Kalwelwa area, Mwinilunga, North-Western province",
+      "cleaned": false,
+      "license": "CC BY-NC-SA 4.0"
+    },
+    {
+      "slug": "anastomus-lamelligerus",
+      "scientificName": "Anastomus lamelligerus",
+      "index": 0,
+      "type": "call",
+      "action": "added",
+      "from": [],
+      "to": "1189079",
+      "quality": "C",
+      "country": "Chad",
+      "locality": "Nome, Barh Azoum, Salamat",
+      "cleaned": false,
+      "license": "CC BY-NC-SA 4.0"
+    },
+    {
+      "slug": "ciconia-abdimii",
+      "scientificName": "Ciconia abdimii",
+      "index": 0,
+      "type": "call",
+      "action": "none",
+      "from": [],
+      "to": "",
+      "quality": "",
+      "country": "",
+      "locality": "",
+      "cleaned": false,
+      "license": ""
+    },
+    {
+      "slug": "ciconia-ciconia",
+      "scientificName": "Ciconia ciconia",
+      "index": 0,
+      "type": "call",
+      "action": "added",
+      "from": [],
+      "to": "922887",
+      "quality": "A",
+      "country": "France",
+      "locality": "Vains, Manche, Normandie",
+      "cleaned": false,
+      "license": "CC0 1.0"
+    },
+    {
+      "slug": "ciconia-microscelis",
+      "scientificName": "Ciconia microscelis",
+      "index": 0,
+      "type": "call",
+      "action": "none",
+      "from": [],
+      "to": "",
+      "quality": "",
+      "country": "",
+      "locality": "",
+      "cleaned": false,
+      "license": ""
+    },
+    {
+      "slug": "ciconia-nigra",
+      "scientificName": "Ciconia nigra",
+      "index": 0,
+      "type": "call",
+      "action": "added",
+      "from": [],
+      "to": "980027",
+      "quality": "A",
+      "country": "Italy",
+      "locality": "Bocchigliero, Province of Cosenza, Calabria",
+      "cleaned": false,
+      "license": "CC BY-NC-SA 4.0"
+    },
+    {
+      "slug": "ephippiorhynchus-senegalensis",
+      "scientificName": "Ephippiorhynchus senegalensis",
+      "index": 0,
+      "type": "call",
+      "action": "none",
+      "from": [],
+      "to": "",
+      "quality": "",
+      "country": "",
+      "locality": "",
+      "cleaned": false,
+      "license": ""
+    },
+    {
+      "slug": "leptoptilos-crumenifer",
+      "scientificName": "Leptoptilos crumenifer",
+      "index": 0,
+      "type": "call",
+      "action": "added",
+      "from": [],
+      "to": "1093586",
+      "quality": "A",
+      "country": "Uganda",
+      "locality": "Nwoya (near Pakwach East), Pakwach, Mkoa wa Kaskazini",
+      "cleaned": false,
+      "license": "CC BY-NC-SA 4.0"
+    },
+    {
+      "slug": "mycteria-ibis",
+      "scientificName": "Mycteria ibis",
+      "index": 0,
+      "type": "call",
+      "action": "added",
+      "from": [],
+      "to": "337857",
+      "quality": "B",
+      "country": "Senegal",
+      "locality": "Ziguinchor, Casamance",
       "cleaned": false,
       "license": "CC BY-NC-SA 4.0"
     }

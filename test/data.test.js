@@ -98,6 +98,7 @@ test('every data file matches the schema, slugs, and colour vocabulary', async (
         'campephagidae',
         'caprimulgidae',
         'charadriidae',
+        'ciconiidae',
       ])
       const sourced =
         (data.kind === 'family' && sourcedFamily.has(data.slug)) ||

@@ -235,6 +235,16 @@
         }
       ]
     },
+    "anastomus-lamelligerus": {
+      "calls": [
+        {
+          "index": 0,
+          "quality": {
+            "xeno-canto/XC1189079": "C"
+          }
+        }
+      ]
+    },
     "anhinga-rufa": {
       "calls": [
         {
@@ -767,6 +777,42 @@
         }
       ]
     },
+    "ciconia-abdimii": {
+      "calls": [
+        {
+          "index": 0,
+          "quality": {}
+        }
+      ]
+    },
+    "ciconia-ciconia": {
+      "calls": [
+        {
+          "index": 0,
+          "quality": {
+            "xeno-canto/XC922887": "A"
+          }
+        }
+      ]
+    },
+    "ciconia-microscelis": {
+      "calls": [
+        {
+          "index": 0,
+          "quality": {}
+        }
+      ]
+    },
+    "ciconia-nigra": {
+      "calls": [
+        {
+          "index": 0,
+          "quality": {
+            "xeno-canto/XC980027": "A"
+          }
+        }
+      ]
+    },
     "circaetus-cinereus": {
       "calls": [
         {
@@ -1037,6 +1083,14 @@
             "xeno-canto/XC1059222": "A",
             "xeno-canto/XC1081037": "B"
           }
+        }
+      ]
+    },
+    "ephippiorhynchus-senegalensis": {
+      "calls": [
+        {
+          "index": 0,
+          "quality": {}
         }
       ]
     },
@@ -1342,6 +1396,16 @@
         }
       ]
     },
+    "leptoptilos-crumenifer": {
+      "calls": [
+        {
+          "index": 0,
+          "quality": {
+            "xeno-canto/XC1093586": "A"
+          }
+        }
+      ]
+    },
     "lophaetus-occipitalis": {
       "calls": [
         {
@@ -1464,6 +1528,16 @@
           "index": 0,
           "quality": {
             "xeno-canto/XC203723": "A"
+          }
+        }
+      ]
+    },
+    "mycteria-ibis": {
+      "calls": [
+        {
+          "index": 0,
+          "quality": {
+            "xeno-canto/XC337857": "B"
           }
         }
       ]

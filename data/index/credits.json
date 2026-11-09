@@ -1427,14 +1427,42 @@
       "slug": "anastomus-lamelligerus",
       "scientificName": "Anastomus lamelligerus",
       "commonName": "African Openbill",
-      "images": [],
-      "recordings": [],
+      "images": [
+        {
+          "key": "anastomus-lamelligerus/side.jpg",
+          "author": "Alan Manson",
+          "licence": "CC BY 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by/4.0/",
+          "sourceUrl": "https://www.inaturalist.org/observations/249371446",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ],
+      "recordings": [
+        {
+          "key": "xeno-canto/XC1189079",
+          "author": "Julien Birard",
+          "licence": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "sourceUrl": "https://xeno-canto.org/1189079",
+          "aiGenerated": false,
+          "hosted": false,
+          "quality": "C",
+          "callType": "call"
+        }
+      ],
       "sources": [
         {
           "title": "Kemp A.C., Herholdt J.J., Whyte I. & Harrison J. (2001). Birds of the two largest national parks in South Africa: a method to generate estimates of population size for all species and assess their conservation ecology. S. Afr. J. Sci. 97: 393–403.",
           "url": "https://journals.co.za/doi/pdf/10.10520/EJC97367",
           "publisher": "South African Journal of Science",
           "year": 2001
+        },
+        {
+          "title": "African Openbill",
+          "url": "https://newmansbirds.com/birds/african-openbill/",
+          "publisher": "Newman's Birds",
+          "year": 2026
         }
       ]
     },
@@ -5227,7 +5255,17 @@
       "slug": "ciconia-abdimii",
       "scientificName": "Ciconia abdimii",
       "commonName": "Abdim’s Stork",
-      "images": [],
+      "images": [
+        {
+          "key": "ciconia-abdimii/side.jpg",
+          "author": "Gerhard Diedericks",
+          "licence": "CC BY-NC 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+          "sourceUrl": "https://www.inaturalist.org/observations/10805633",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ],
       "recordings": [],
       "sources": [
         {
@@ -5235,6 +5273,12 @@
           "url": "https://journals.co.za/doi/pdf/10.10520/EJC97367",
           "publisher": "South African Journal of Science",
           "year": 2001
+        },
+        {
+          "title": "Abdim’s Stork",
+          "url": "https://newmansbirds.com/birds/abdims-stork-2/",
+          "publisher": "Newman's Birds",
+          "year": 2026
         }
       ]
     },
@@ -5242,14 +5286,42 @@
       "slug": "ciconia-ciconia",
       "scientificName": "Ciconia ciconia",
       "commonName": "White Stork",
-      "images": [],
-      "recordings": [],
+      "images": [
+        {
+          "key": "ciconia-ciconia/side.jpg",
+          "author": "redshift3",
+          "licence": "CC BY-NC 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+          "sourceUrl": "https://www.inaturalist.org/observations/215763791",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ],
+      "recordings": [
+        {
+          "key": "xeno-canto/XC922887",
+          "author": "Sonothèque ADVL",
+          "licence": "CC0 1.0",
+          "licenceUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+          "sourceUrl": "https://xeno-canto.org/922887",
+          "aiGenerated": false,
+          "hosted": false,
+          "quality": "A",
+          "callType": "call"
+        }
+      ],
       "sources": [
         {
           "title": "Kemp A.C., Herholdt J.J., Whyte I. & Harrison J. (2001). Birds of the two largest national parks in South Africa: a method to generate estimates of population size for all species and assess their conservation ecology. S. Afr. J. Sci. 97: 393–403.",
           "url": "https://journals.co.za/doi/pdf/10.10520/EJC97367",
           "publisher": "South African Journal of Science",
           "year": 2001
+        },
+        {
+          "title": "White Stork",
+          "url": "https://newmansbirds.com/birds/white-stork/",
+          "publisher": "Newman's Birds",
+          "year": 2026
         }
       ]
     },
@@ -5257,7 +5329,17 @@
       "slug": "ciconia-microscelis",
       "scientificName": "Ciconia microscelis",
       "commonName": "African Woolly-necked Stork",
-      "images": [],
+      "images": [
+        {
+          "key": "ciconia-microscelis/side.jpg",
+          "author": "Sascha Schumann",
+          "licence": "CC BY-NC 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+          "sourceUrl": "https://www.inaturalist.org/observations/295603226",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ],
       "recordings": [],
       "sources": [
         {
@@ -5265,6 +5347,12 @@
           "url": "https://journals.co.za/doi/pdf/10.10520/EJC97367",
           "publisher": "South African Journal of Science",
           "year": 2001
+        },
+        {
+          "title": "African Woolly-necked Stork",
+          "url": "https://newmansbirds.com/birds/african-woolly-necked-stork/",
+          "publisher": "Newman's Birds",
+          "year": 2026
         }
       ]
     },
@@ -5272,14 +5360,42 @@
       "slug": "ciconia-nigra",
       "scientificName": "Ciconia nigra",
       "commonName": "Black Stork",
-      "images": [],
-      "recordings": [],
+      "images": [
+        {
+          "key": "ciconia-nigra/side.jpg",
+          "author": "jandutoit",
+          "licence": "CC BY-NC 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+          "sourceUrl": "https://www.inaturalist.org/observations/105660024",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ],
+      "recordings": [
+        {
+          "key": "xeno-canto/XC980027",
+          "author": "Francesco Sottile",
+          "licence": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "sourceUrl": "https://xeno-canto.org/980027",
+          "aiGenerated": false,
+          "hosted": false,
+          "quality": "A",
+          "callType": "call"
+        }
+      ],
       "sources": [
         {
           "title": "Kemp A.C., Herholdt J.J., Whyte I. & Harrison J. (2001). Birds of the two largest national parks in South Africa: a method to generate estimates of population size for all species and assess their conservation ecology. S. Afr. J. Sci. 97: 393–403.",
           "url": "https://journals.co.za/doi/pdf/10.10520/EJC97367",
           "publisher": "South African Journal of Science",
           "year": 2001
+        },
+        {
+          "title": "Black Stork",
+          "url": "https://newmansbirds.com/birds/black-stork/",
+          "publisher": "Newman's Birds",
+          "year": 2026
         }
       ]
     },
@@ -7692,7 +7808,17 @@
       "slug": "ephippiorhynchus-senegalensis",
       "scientificName": "Ephippiorhynchus senegalensis",
       "commonName": "Saddle-billed Stork",
-      "images": [],
+      "images": [
+        {
+          "key": "ephippiorhynchus-senegalensis/side.jpg",
+          "author": "Wynand Uys",
+          "licence": "CC BY 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by/4.0/",
+          "sourceUrl": "https://www.inaturalist.org/observations/10002585",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ],
       "recordings": [],
       "sources": [
         {
@@ -7706,6 +7832,12 @@
           "url": "https://journals.co.za/doi/pdf/10.10520/EJC97367",
           "publisher": "South African Journal of Science",
           "year": 2001
+        },
+        {
+          "title": "Saddle-billed Stork",
+          "url": "https://newmansbirds.com/birds/saddle-billed-stork/",
+          "publisher": "Newman's Birds",
+          "year": 2026
         }
       ]
     },
@@ -10425,14 +10557,42 @@
       "slug": "leptoptilos-crumenifer",
       "scientificName": "Leptoptilos crumenifer",
       "commonName": "Marabou Stork",
-      "images": [],
-      "recordings": [],
+      "images": [
+        {
+          "key": "leptoptilos-crumenifer/flight.jpg",
+          "author": "copper",
+          "licence": "CC BY-NC 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+          "sourceUrl": "https://www.inaturalist.org/observations/72660635",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ],
+      "recordings": [
+        {
+          "key": "xeno-canto/XC1093586",
+          "author": "Alain Malengreau",
+          "licence": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "sourceUrl": "https://xeno-canto.org/1093586",
+          "aiGenerated": false,
+          "hosted": false,
+          "quality": "A",
+          "callType": "call"
+        }
+      ],
       "sources": [
         {
           "title": "Kemp A.C., Herholdt J.J., Whyte I. & Harrison J. (2001). Birds of the two largest national parks in South Africa: a method to generate estimates of population size for all species and assess their conservation ecology. S. Afr. J. Sci. 97: 393–403.",
           "url": "https://journals.co.za/doi/pdf/10.10520/EJC97367",
           "publisher": "South African Journal of Science",
           "year": 2001
+        },
+        {
+          "title": "Marabou Stork",
+          "url": "https://newmansbirds.com/birds/marabou-stork/",
+          "publisher": "Newman's Birds",
+          "year": 2026
         }
       ]
     },
@@ -11495,14 +11655,42 @@
       "slug": "mycteria-ibis",
       "scientificName": "Mycteria ibis",
       "commonName": "Yellow-billed Stork",
-      "images": [],
-      "recordings": [],
+      "images": [
+        {
+          "key": "mycteria-ibis/side.jpg",
+          "author": "cotinga",
+          "licence": "CC BY-NC 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+          "sourceUrl": "https://www.inaturalist.org/observations/111431421",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ],
+      "recordings": [
+        {
+          "key": "xeno-canto/XC337857",
+          "author": "Bram Piot",
+          "licence": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "sourceUrl": "https://xeno-canto.org/337857",
+          "aiGenerated": false,
+          "hosted": false,
+          "quality": "B",
+          "callType": "call"
+        }
+      ],
       "sources": [
         {
           "title": "Kemp A.C., Herholdt J.J., Whyte I. & Harrison J. (2001). Birds of the two largest national parks in South Africa: a method to generate estimates of population size for all species and assess their conservation ecology. S. Afr. J. Sci. 97: 393–403.",
           "url": "https://journals.co.za/doi/pdf/10.10520/EJC97367",
           "publisher": "South African Journal of Science",
           "year": 2001
+        },
+        {
+          "title": "Yellow-billed Stork",
+          "url": "https://newmansbirds.com/birds/yellow-billed-stork/",
+          "publisher": "Newman's Birds",
+          "year": 2026
         }
       ]
     },

@@ -7,8 +7,40 @@
     "af": "Oopbekooievaar"
   },
   "family": "ciconiidae",
-  "summary": "The details for this species have not been published yet.",
-  "sampleData": true,
+  "status": "resident",
+  "monthsPresent": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+  ],
+  "size": {
+    "lengthCm": {
+      "min": 94,
+      "max": 94
+    },
+    "note": "Newman's Birds gives 94 cm."
+  },
+  "habitat": "Singly or in flocks at large rivers, floodlands and pans in wooded regions. It rests at the water or in trees and is nomadic.",
+  "summary": "A small stork that looks all black, with a tawny bill. At close range the adult shows a gap between the mandibles. The immature lacks that gap. It is an uncommon to locally common resident and visitor, feeding on freshwater mussels and snails.",
+  "sampleData": false,
+  "similar": [],
+  "sources": [
+    {
+      "title": "African Openbill",
+      "url": "https://newmansbirds.com/birds/african-openbill/",
+      "publisher": "Newman's Birds",
+      "year": 2026
+    }
+  ],
   "population": {
     "estimate": {
       "low": 32,
@@ -35,8 +67,171 @@
     },
     "tierApplied": "D"
   },
-  "variants": [],
-  "viewNotes": [],
-  "calls": [],
-  "images": []
+  "variants": [
+    {
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "marks": {
+        "bill": {
+          "colour": "tawny",
+          "shape": "gap between the mandibles"
+        },
+        "eye": {
+          "iris": null,
+          "ring": null
+        },
+        "legs": {
+          "colour": null
+        },
+        "head": {
+          "crown": "black",
+          "face": "black",
+          "throat": null,
+          "pattern": null
+        },
+        "upperparts": {
+          "back": "black",
+          "rump": null,
+          "pattern": null
+        },
+        "underparts": {
+          "breast": "black",
+          "belly": "black",
+          "pattern": null
+        },
+        "wings": {
+          "above": "black",
+          "below": null,
+          "pattern": null
+        },
+        "tail": {
+          "colour": null,
+          "shape": null
+        }
+      }
+    },
+    {
+      "age": "juvenile",
+      "sex": "any",
+      "season": "any",
+      "marks": {
+        "bill": {
+          "colour": "tawny",
+          "shape": "no gap between the mandibles"
+        },
+        "eye": {
+          "iris": null,
+          "ring": null
+        },
+        "legs": {
+          "colour": null
+        },
+        "head": {
+          "crown": "black",
+          "face": null,
+          "throat": null,
+          "pattern": null
+        },
+        "upperparts": {
+          "back": "black",
+          "rump": null,
+          "pattern": null
+        },
+        "underparts": {
+          "breast": "black",
+          "belly": "black",
+          "pattern": null
+        },
+        "wings": {
+          "above": null,
+          "below": null,
+          "pattern": null
+        },
+        "tail": {
+          "colour": null,
+          "shape": null
+        }
+      }
+    }
+  ],
+  "viewNotes": [
+    {
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "All-black stork with a tawny bill, at a river or pan. The adult bill has a visible gap."
+    },
+    {
+      "view": "perched-front",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "The tawny bill and the gap."
+    },
+    {
+      "view": "perched-back",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "All-black back."
+    },
+    {
+      "view": "flight-above",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Flocks on the move soar high. A separate upperwing pattern was not named."
+    },
+    {
+      "view": "flight-below",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "All-black below."
+    }
+  ],
+  "calls": [
+    {
+      "sex": "any",
+      "type": "call",
+      "description": "Newman does not describe the call. The file is grade C from Nome, Chad. The filename is ANALAM.",
+      "recordings": [
+        {
+          "key": "xeno-canto/XC1189079",
+          "source": "https://xeno-canto.org/1189079",
+          "fileUrl": "https://xeno-canto.org/sounds/uploaded/KGENRQCZVH/XC1189079-ANALAM_Nome_06022026_17h25.mp3",
+          "author": "Julien Birard",
+          "license": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ]
+    }
+  ],
+  "images": [
+    {
+      "key": "anastomus-lamelligerus/side.jpg",
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "source": "https://www.inaturalist.org/observations/249371446",
+      "fileUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/445756107/large.jpg",
+      "author": "Alan Manson",
+      "license": "CC BY 4.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by/4.0/",
+      "aiGenerated": false,
+      "hosted": false,
+      "alt": "African Openbill standing side-on on a Kruger rock, dark, with a pale bill",
+      "caption": "African Openbill standing side-on on a Kruger rock, dark, with a pale bill"
+    }
+  ],
+  "research": {
+    "confidence": "medium",
+    "needsReview": false,
+    "note": "Status is resident and all twelve months are listed. Newman also calls it a visitor and nomadic, which is not stored as an absence. The call text is a gap. The Kemp code VB was left unchanged."
+  }
 }
