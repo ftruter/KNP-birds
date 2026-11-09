@@ -7,8 +7,29 @@
     "af": "Vaalkoester"
   },
   "family": "motacillidae",
-  "summary": "The details for this species have not been published yet.",
-  "sampleData": true,
+  "habitat": "Semi-arid plains with grass and bare ground, and open grassy plains grazed short, with anthills and low scrub. Also fallow pastures, burnt fields and the edges of saltpans. Usually single or in pairs, with limited winter flocks.",
+  "summary": "No Newman page. Compared with Plain-backed Pipit it is paler and buffier above, with a warm reddish-buff rump, a less sharply defined pale eyebrow, fainter breast markings, and buffy belly and flanks. The juvenile has mottles. Wikipedia says the lower mandible has a pinkish base. SABAP1 says the base of the lower mandible is yellow. That conflict is left unresolved. No length is given. The Kemp code RB was left unchanged.",
+  "sampleData": false,
+  "sources": [
+    {
+      "title": "Buffy pipit",
+      "url": "https://en.wikipedia.org/wiki/Buffy_pipit",
+      "publisher": "Wikipedia",
+      "year": 2026
+    },
+    {
+      "title": "Buffy Pipit. In Harrison, J.A. et al. (eds). The Atlas of Southern African Birds. Vol. 2.",
+      "url": "http://sabap2.adu.org.za/docs/sabap1/719.pdf",
+      "publisher": "The Atlas of Southern African Birds",
+      "year": 1997
+    },
+    {
+      "title": "Kemp A.C., Herholdt J.J., Whyte I. & Harrison J. (2001). Birds of the two largest national parks in South Africa: a method to generate estimates of population size for all species and assess their conservation ecology. S. Afr. J. Sci. 97: 393–403.",
+      "url": "https://journals.co.za/doi/pdf/10.10520/EJC97367",
+      "publisher": "South African Journal of Science",
+      "year": 2001
+    }
+  ],
   "population": {
     "estimate": {
       "low": 1024,
@@ -35,8 +56,208 @@
     },
     "tierApplied": "D"
   },
-  "variants": [],
-  "viewNotes": [],
-  "calls": [],
-  "images": []
+  "variants": [
+    {
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "marks": {
+        "bill": {
+          "colour": null,
+          "shape": "The lower-mandible base is pinkish in Wikipedia and yellow in SABAP1, so no bill colour is stored."
+        },
+        "eye": {
+          "iris": null,
+          "ring": null
+        },
+        "legs": {
+          "colour": null
+        },
+        "head": {
+          "crown": null,
+          "face": null,
+          "throat": null,
+          "pattern": "Pale eyebrow, less sharply defined than in Plain-backed Pipit."
+        },
+        "upperparts": {
+          "back": null,
+          "rump": null,
+          "pattern": "Paler and buffier above than Plain-backed Pipit. Rump warm reddish buff."
+        },
+        "underparts": {
+          "breast": null,
+          "belly": "buff",
+          "pattern": "Faint breast markings. Belly and flanks buffy. Ventral streaking is further reduced than in Plain-backed Pipit."
+        },
+        "wings": {
+          "above": null,
+          "below": null
+        },
+        "tail": {
+          "colour": null,
+          "shape": null
+        }
+      }
+    },
+    {
+      "age": "juvenile",
+      "sex": "any",
+      "season": "any",
+      "marks": {
+        "bill": {
+          "colour": null,
+          "shape": null
+        },
+        "eye": {
+          "iris": null,
+          "ring": null
+        },
+        "legs": {
+          "colour": null
+        },
+        "head": {
+          "crown": null,
+          "face": null,
+          "throat": null
+        },
+        "upperparts": {
+          "back": null,
+          "rump": null,
+          "pattern": "Wikipedia says the juvenile has mottles and does not describe the colours."
+        },
+        "underparts": {
+          "breast": null,
+          "belly": null
+        },
+        "wings": {
+          "above": null,
+          "below": null
+        },
+        "tail": {
+          "colour": null,
+          "shape": null
+        }
+      }
+    }
+  ],
+  "viewNotes": [
+    {
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Paler and buffier above than a Plain-backed Pipit, with a pale eyebrow and a buff belly."
+    },
+    {
+      "view": "perched-front",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Faint breast markings and a pale, less sharply defined eyebrow."
+    },
+    {
+      "view": "perched-back",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Buffier upperparts and a warm reddish-buff rump."
+    },
+    {
+      "view": "flight-above",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "A flight pattern was not described."
+    },
+    {
+      "view": "flight-below",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Buffy belly and flanks, with faint breast markings."
+    },
+    {
+      "view": "perched-side",
+      "age": "juvenile",
+      "sex": "any",
+      "season": "any",
+      "note": "Mottled. Wikipedia does not name the colours."
+    },
+    {
+      "view": "perched-front",
+      "age": "juvenile",
+      "sex": "any",
+      "season": "any",
+      "note": "The juvenile face was not described."
+    },
+    {
+      "view": "perched-back",
+      "age": "juvenile",
+      "sex": "any",
+      "season": "any",
+      "note": "Mottled upperparts, colours not named."
+    },
+    {
+      "view": "flight-above",
+      "age": "juvenile",
+      "sex": "any",
+      "season": "any",
+      "note": "A juvenile flight pattern was not described."
+    },
+    {
+      "view": "flight-below",
+      "age": "juvenile",
+      "sex": "any",
+      "season": "any",
+      "note": "The juvenile underparts were not described."
+    }
+  ],
+  "calls": [
+    {
+      "sex": "any",
+      "type": "call",
+      "description": "The sources used do not describe the call. The only openly licensed grade B recording has a filename that includes a grebe, so it was not used. Grade C call from open veld near Polokwane, Limpopo. The filename is XC444076-01BuffyPipit_Polokwane_20181117.MP3.",
+      "recordings": [
+        {
+          "key": "xeno-canto/XC444076",
+          "source": "https://xeno-canto.org/444076",
+          "fileUrl": "https://xeno-canto.org/sounds/uploaded/JDCTKFMBKV/XC444076-01BuffyPipit_Polokwane_20181117.MP3",
+          "author": "Dawie de Swardt",
+          "license": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ]
+    }
+  ],
+  "images": [
+    {
+      "key": "anthus-vaalensis/side.jpg",
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "source": "https://www.inaturalist.org/observations/72660624",
+      "fileUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/118496100/large.jpeg",
+      "author": "copper",
+      "license": "CC BY-NC 4.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+      "aiGenerated": false,
+      "hosted": false,
+      "alt": "Buffy Pipit standing on a road, plain brown upperparts and buff underparts",
+      "caption": "Buffy Pipit on the Olifants–Satara road, plain brown above and buff below."
+    }
+  ],
+  "research": {
+    "confidence": "low",
+    "needsReview": true,
+    "note": "No Newman page. SABAP1 describes breeding races and winter flocks and does not use the word resident, so status and months are unset. The bill-base colour conflicts between Wikipedia and SABAP1. Wikipedia’s length sentence is blank. Population figures and the Kemp code RB were left unchanged."
+  },
+  "similar": [
+    {
+      "slug": "anthus-leucophrys",
+      "note": "Plain-backed Pipit is darker above, with a sharper white eyebrow, a longer hind claw and a yellowish bill base."
+    }
+  ]
 }

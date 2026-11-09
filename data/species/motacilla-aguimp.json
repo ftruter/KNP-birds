@@ -7,8 +7,23 @@
     "af": "Bontkwikkie"
   },
   "family": "motacillidae",
-  "summary": "The details for this species have not been published yet.",
-  "sampleData": true,
+  "habitat": "Singly, in pairs or in family groups at lakes, dams, large rivers, sewage works, lagoons and estuaries. It enters suburbia only in the north of its distribution.",
+  "summary": "A common resident. Strikingly black and white, with a tail about the length of a Cape Wagtail’s. In the female and juvenile the male’s black areas are dark brown or grey. The call is a loud tu-weee and twee-twee-twee. The Kemp code RB was left unchanged.",
+  "sampleData": false,
+  "sources": [
+    {
+      "title": "African Pied Wagtail",
+      "url": "https://newmansbirds.com/birds/african-pied-wagtail/",
+      "publisher": "Newman's Birds",
+      "year": 2026
+    },
+    {
+      "title": "Kemp A.C., Herholdt J.J., Whyte I. & Harrison J. (2001). Birds of the two largest national parks in South Africa: a method to generate estimates of population size for all species and assess their conservation ecology. S. Afr. J. Sci. 97: 393–403.",
+      "url": "https://journals.co.za/doi/pdf/10.10520/EJC97367",
+      "publisher": "South African Journal of Science",
+      "year": 2001
+    }
+  ],
   "population": {
     "estimate": {
       "low": 2048,
@@ -35,8 +50,305 @@
     },
     "tierApplied": "D"
   },
-  "variants": [],
-  "viewNotes": [],
-  "calls": [],
-  "images": []
+  "variants": [
+    {
+      "age": "adult",
+      "sex": "male",
+      "season": "any",
+      "marks": {
+        "bill": {
+          "colour": null,
+          "shape": null
+        },
+        "eye": {
+          "iris": null,
+          "ring": null
+        },
+        "legs": {
+          "colour": null
+        },
+        "head": {
+          "crown": null,
+          "face": null,
+          "throat": null,
+          "pattern": "Striking black-and-white plumage. The black and white parts of the head were not itemised."
+        },
+        "upperparts": {
+          "back": null,
+          "rump": null,
+          "pattern": "Black and white. The black areas are the male’s."
+        },
+        "underparts": {
+          "breast": null,
+          "belly": null,
+          "pattern": "Black and white."
+        },
+        "wings": {
+          "above": null,
+          "below": null
+        },
+        "tail": {
+          "colour": null,
+          "shape": "Tail length as in Cape Wagtail."
+        }
+      }
+    },
+    {
+      "age": "adult",
+      "sex": "female",
+      "season": "any",
+      "marks": {
+        "bill": {
+          "colour": null,
+          "shape": null
+        },
+        "eye": {
+          "iris": null,
+          "ring": null
+        },
+        "legs": {
+          "colour": null
+        },
+        "head": {
+          "crown": null,
+          "face": null,
+          "throat": null
+        },
+        "upperparts": {
+          "back": null,
+          "rump": null,
+          "pattern": "The male’s black areas are replaced by dark brown or grey."
+        },
+        "underparts": {
+          "breast": null,
+          "belly": null
+        },
+        "wings": {
+          "above": null,
+          "below": null
+        },
+        "tail": {
+          "colour": null,
+          "shape": null
+        }
+      }
+    },
+    {
+      "age": "juvenile",
+      "sex": "any",
+      "season": "any",
+      "marks": {
+        "bill": {
+          "colour": null,
+          "shape": null
+        },
+        "eye": {
+          "iris": null,
+          "ring": null
+        },
+        "legs": {
+          "colour": null
+        },
+        "head": {
+          "crown": null,
+          "face": null,
+          "throat": null
+        },
+        "upperparts": {
+          "back": null,
+          "rump": null,
+          "pattern": "The male’s black areas are replaced by dark brown or grey."
+        },
+        "underparts": {
+          "breast": null,
+          "belly": null
+        },
+        "wings": {
+          "above": null,
+          "below": null
+        },
+        "tail": {
+          "colour": null,
+          "shape": null
+        }
+      }
+    }
+  ],
+  "viewNotes": [
+    {
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "male",
+      "season": "any",
+      "note": "Striking black-and-white plumage, with a tail about as long as a Cape Wagtail’s."
+    },
+    {
+      "view": "perched-front",
+      "age": "adult",
+      "sex": "male",
+      "season": "any",
+      "note": "Black and white head and breast. Newman does not itemise the pattern."
+    },
+    {
+      "view": "perched-back",
+      "age": "adult",
+      "sex": "male",
+      "season": "any",
+      "note": "Black and white upperparts."
+    },
+    {
+      "view": "flight-above",
+      "age": "adult",
+      "sex": "male",
+      "season": "any",
+      "note": "A flight pattern was not described."
+    },
+    {
+      "view": "flight-below",
+      "age": "adult",
+      "sex": "male",
+      "season": "any",
+      "note": "Black and white underparts."
+    },
+    {
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "female",
+      "season": "any",
+      "note": "Like the male, with the black areas dark brown or grey."
+    },
+    {
+      "view": "perched-front",
+      "age": "adult",
+      "sex": "female",
+      "season": "any",
+      "note": "Dark brown or grey where the male is black."
+    },
+    {
+      "view": "perched-back",
+      "age": "adult",
+      "sex": "female",
+      "season": "any",
+      "note": "Dark brown or grey upperparts."
+    },
+    {
+      "view": "flight-above",
+      "age": "adult",
+      "sex": "female",
+      "season": "any",
+      "note": "A female flight pattern was not described."
+    },
+    {
+      "view": "flight-below",
+      "age": "adult",
+      "sex": "female",
+      "season": "any",
+      "note": "The female underparts were not given a separate description."
+    },
+    {
+      "view": "perched-side",
+      "age": "juvenile",
+      "sex": "any",
+      "season": "any",
+      "note": "Black areas of the male replaced by dark brown or grey."
+    },
+    {
+      "view": "perched-front",
+      "age": "juvenile",
+      "sex": "any",
+      "season": "any",
+      "note": "Dark brown or grey on the head where the male is black."
+    },
+    {
+      "view": "perched-back",
+      "age": "juvenile",
+      "sex": "any",
+      "season": "any",
+      "note": "Dark brown or grey upperparts."
+    },
+    {
+      "view": "flight-above",
+      "age": "juvenile",
+      "sex": "any",
+      "season": "any",
+      "note": "A juvenile flight pattern was not described."
+    },
+    {
+      "view": "flight-below",
+      "age": "juvenile",
+      "sex": "any",
+      "season": "any",
+      "note": "The juvenile underparts were not described separately."
+    }
+  ],
+  "calls": [
+    {
+      "sex": "any",
+      "type": "call",
+      "description": "A loud tu-weee and twee-twee-twee. Grade A call from near Richards Bay, KwaZulu-Natal. The filename is XC620809-5 Good P Wagtail.mp3. A Kruger recording of this species on xeno-canto is under a no-derivatives licence and was not used.",
+      "recordings": [
+        {
+          "key": "xeno-canto/XC620809",
+          "source": "https://xeno-canto.org/620809",
+          "fileUrl": "https://xeno-canto.org/sounds/uploaded/HMBDEWEZVS/XC620809-5%20Good%20P%20Wagtail.mp3",
+          "author": "Tony Archer",
+          "license": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ]
+    }
+  ],
+  "images": [
+    {
+      "key": "motacilla-aguimp/side.jpg",
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "male",
+      "season": "any",
+      "source": "https://www.inaturalist.org/observations/194019152",
+      "fileUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/340933062/large.jpg",
+      "author": "Luca Boscain",
+      "license": "CC BY-NC 4.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+      "aiGenerated": false,
+      "hosted": false,
+      "alt": "African Pied Wagtail perched on driftwood, black and white",
+      "caption": "African Pied Wagtail in the Ehlanzeni district, black and white. Newman gives the black areas to the male."
+    }
+  ],
+  "research": {
+    "confidence": "medium",
+    "needsReview": false,
+    "note": "Newman calls it a common resident, so status is resident and all twelve months are listed. Black and white are not split into separate tokens where Newman only says black-and-white. Population figures and the Kemp code RB were left unchanged."
+  },
+  "size": {
+    "lengthCm": {
+      "min": 20,
+      "max": 20
+    },
+    "note": "Newman's Birds gives 20 cm."
+  },
+  "similar": [
+    {
+      "slug": "motacilla-capensis",
+      "note": "Cape Wagtail is greyish, with a white throat and a black breast-band, not a black-and-white bird. Newman says the tail lengths are similar."
+    }
+  ],
+  "status": "resident",
+  "monthsPresent": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+  ]
 }

@@ -7,8 +7,29 @@
     "af": "Gestreepte Koester"
   },
   "family": "motacillidae",
-  "summary": "The details for this species have not been published yet.",
-  "sampleData": true,
+  "habitat": "Rocky areas in dry to mesic savanna. SABAP1 says it is partially arboreal and occurs singly or in pairs.",
+  "summary": "No Newman page. Wikipedia describes a large pipit with yellow-green edges to the wing coverts and olive-brown underparts streaked dark brown. The song is loud, penetrating and thrush-like, from a rock or perch. SABAP1 says the wing and tail feathers are edged lemon-yellow, and that territorial males sing a loud, almost canary-like song in the breeding season. Neither source states residency, so status and months are unset. The Kemp code RB was left unchanged.",
+  "sampleData": false,
+  "sources": [
+    {
+      "title": "Striped pipit",
+      "url": "https://en.wikipedia.org/wiki/Striped_pipit",
+      "publisher": "Wikipedia",
+      "year": 2026
+    },
+    {
+      "title": "Striped Pipit. In Harrison, J.A. et al. (eds). The Atlas of Southern African Birds. Vol. 2.",
+      "url": "http://sabap2.adu.org.za/docs/sabap1/720.pdf",
+      "publisher": "The Atlas of Southern African Birds",
+      "year": 1997
+    },
+    {
+      "title": "Kemp A.C., Herholdt J.J., Whyte I. & Harrison J. (2001). Birds of the two largest national parks in South Africa: a method to generate estimates of population size for all species and assess their conservation ecology. S. Afr. J. Sci. 97: 393–403.",
+      "url": "https://journals.co.za/doi/pdf/10.10520/EJC97367",
+      "publisher": "South African Journal of Science",
+      "year": 2001
+    }
+  ],
   "population": {
     "estimate": {
       "low": 512,
@@ -35,8 +56,133 @@
     },
     "tierApplied": "D"
   },
-  "variants": [],
-  "viewNotes": [],
-  "calls": [],
-  "images": []
+  "variants": [
+    {
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "marks": {
+        "bill": {
+          "colour": null,
+          "shape": null
+        },
+        "eye": {
+          "iris": null,
+          "ring": null
+        },
+        "legs": {
+          "colour": null
+        },
+        "head": {
+          "crown": null,
+          "face": null,
+          "throat": null
+        },
+        "upperparts": {
+          "back": null,
+          "rump": null
+        },
+        "underparts": {
+          "breast": null,
+          "belly": null,
+          "pattern": "Olive-brown with dark brown streaking. Olive-brown is not a colour token."
+        },
+        "wings": {
+          "above": null,
+          "below": null,
+          "pattern": "Wikipedia: yellow-green edges to the wing coverts. SABAP1: wing and tail feathers edged lemon-yellow."
+        },
+        "tail": {
+          "colour": null,
+          "shape": "SABAP1 says the tail feathers are edged lemon-yellow."
+        }
+      }
+    }
+  ],
+  "viewNotes": [
+    {
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Streaked olive-brown underparts. The upperpart colour was not described apart from the wing edges."
+    },
+    {
+      "view": "perched-front",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Dark brown streaking on the underparts."
+    },
+    {
+      "view": "perched-back",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Wing coverts edged yellow-green, or lemon-yellow in the SABAP1 wording."
+    },
+    {
+      "view": "flight-above",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "A flight pattern was not described. The yellow edges may show on the open wing."
+    },
+    {
+      "view": "flight-below",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Olive-brown underparts with dark brown streaks."
+    }
+  ],
+  "calls": [
+    {
+      "sex": "male",
+      "type": "song",
+      "description": "Wikipedia: a loud, penetrating, thrush-like song from a rock or perch. SABAP1: territorial males give a loud, almost canary-like song in the breeding season. Grade A song from Gosho Park, Marondera, Zimbabwe. The filename is XC429533-Pipit Striped 180530-111810.mp3.",
+      "recordings": [
+        {
+          "key": "xeno-canto/XC429533",
+          "source": "https://xeno-canto.org/429533",
+          "fileUrl": "https://xeno-canto.org/sounds/uploaded/DNKBTPCMSQ/XC429533-Pipit%20Striped%20180530-111810.mp3",
+          "author": "Derek Solomon",
+          "license": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ]
+    }
+  ],
+  "images": [
+    {
+      "key": "anthus-lineiventris/side.jpg",
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "source": "https://www.inaturalist.org/observations/392323395",
+      "fileUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/718969496/large.jpg",
+      "author": "Ronald Olivier",
+      "license": "CC BY 4.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by/4.0/",
+      "aiGenerated": false,
+      "hosted": false,
+      "alt": "Striped Pipit on the ground, heavily streaked underparts",
+      "caption": "Striped Pipit in Mbombela, on the ground in shade, with heavy streaking on the underparts."
+    }
+  ],
+  "research": {
+    "confidence": "medium",
+    "needsReview": true,
+    "note": "No Newman page. Residency is not stated, so status and monthsPresent are unset. That is why this needs review. Population figures and the Kemp code RB were left unchanged."
+  },
+  "size": {
+    "lengthCm": {
+      "min": 17,
+      "max": 18
+    },
+    "note": "Wikipedia gives 17–18 cm."
+  }
 }

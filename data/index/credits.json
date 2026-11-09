@@ -1700,14 +1700,48 @@
       "slug": "anthus-caffer",
       "scientificName": "Anthus caffer",
       "commonName": "Bushveld Pipit",
-      "images": [],
-      "recordings": [],
+      "images": [
+        {
+          "key": "anthus-caffer/side.jpg",
+          "author": "Duncan McKenzie",
+          "licence": "CC BY-NC 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+          "sourceUrl": "https://www.inaturalist.org/observations/200261107",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ],
+      "recordings": [
+        {
+          "key": "xeno-canto/XC199337",
+          "author": "Niall Perrins",
+          "licence": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "sourceUrl": "https://xeno-canto.org/199337",
+          "aiGenerated": false,
+          "hosted": false,
+          "quality": "B",
+          "callType": "call"
+        }
+      ],
       "sources": [
         {
           "title": "Kemp A.C., Herholdt J.J., Whyte I. & Harrison J. (2001). Birds of the two largest national parks in South Africa: a method to generate estimates of population size for all species and assess their conservation ecology. S. Afr. J. Sci. 97: 393–403.",
           "url": "https://journals.co.za/doi/pdf/10.10520/EJC97367",
           "publisher": "South African Journal of Science",
           "year": 2001
+        },
+        {
+          "title": "Bushveld pipit",
+          "url": "https://en.wikipedia.org/wiki/Bushveld_pipit",
+          "publisher": "Wikipedia",
+          "year": 2026
+        },
+        {
+          "title": "Bushveld Pipit. In Harrison, J.A. et al. (eds). The Atlas of Southern African Birds. Vol. 2.",
+          "url": "http://sabap2.adu.org.za/docs/sabap1/723.pdf",
+          "publisher": "The Atlas of Southern African Birds",
+          "year": 1997
         }
       ]
     },
@@ -1715,14 +1749,42 @@
       "slug": "anthus-cinnamomeus",
       "scientificName": "Anthus cinnamomeus",
       "commonName": "African Pipit",
-      "images": [],
-      "recordings": [],
+      "images": [
+        {
+          "key": "anthus-cinnamomeus/side.jpg",
+          "author": "copper",
+          "licence": "CC BY-NC 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+          "sourceUrl": "https://www.inaturalist.org/observations/9986345",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ],
+      "recordings": [
+        {
+          "key": "xeno-canto/XC938658",
+          "author": "Dawie de Swardt",
+          "licence": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "sourceUrl": "https://xeno-canto.org/938658",
+          "aiGenerated": false,
+          "hosted": false,
+          "quality": "A",
+          "callType": "call"
+        }
+      ],
       "sources": [
         {
           "title": "Kemp A.C., Herholdt J.J., Whyte I. & Harrison J. (2001). Birds of the two largest national parks in South Africa: a method to generate estimates of population size for all species and assess their conservation ecology. S. Afr. J. Sci. 97: 393–403.",
           "url": "https://journals.co.za/doi/pdf/10.10520/EJC97367",
           "publisher": "South African Journal of Science",
           "year": 2001
+        },
+        {
+          "title": "African Pipit",
+          "url": "https://newmansbirds.com/birds/african-pipit/",
+          "publisher": "Newman's Birds",
+          "year": 2026
         }
       ]
     },
@@ -1730,14 +1792,48 @@
       "slug": "anthus-leucophrys",
       "scientificName": "Anthus leucophrys",
       "commonName": "Plain-backed Pipit",
-      "images": [],
-      "recordings": [],
+      "images": [
+        {
+          "key": "anthus-leucophrys/side.jpg",
+          "author": "Niall Perrins",
+          "licence": "CC BY-NC 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+          "sourceUrl": "https://www.inaturalist.org/observations/95661670",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ],
+      "recordings": [
+        {
+          "key": "xeno-canto/XC338352",
+          "author": "Lynette Rudman",
+          "licence": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "sourceUrl": "https://xeno-canto.org/338352",
+          "aiGenerated": false,
+          "hosted": false,
+          "quality": "B",
+          "callType": "call"
+        }
+      ],
       "sources": [
         {
           "title": "Kemp A.C., Herholdt J.J., Whyte I. & Harrison J. (2001). Birds of the two largest national parks in South Africa: a method to generate estimates of population size for all species and assess their conservation ecology. S. Afr. J. Sci. 97: 393–403.",
           "url": "https://journals.co.za/doi/pdf/10.10520/EJC97367",
           "publisher": "South African Journal of Science",
           "year": 2001
+        },
+        {
+          "title": "Plain-backed pipit",
+          "url": "https://en.wikipedia.org/wiki/Plain-backed_pipit",
+          "publisher": "Wikipedia",
+          "year": 2026
+        },
+        {
+          "title": "Plainbacked Pipit. In Harrison, J.A. et al. (eds). The Atlas of Southern African Birds. Vol. 2.",
+          "url": "http://sabap2.adu.org.za/docs/sabap1/718.pdf",
+          "publisher": "The Atlas of Southern African Birds",
+          "year": 1997
         }
       ]
     },
@@ -1745,14 +1841,48 @@
       "slug": "anthus-lineiventris",
       "scientificName": "Anthus lineiventris",
       "commonName": "Striped Pipit",
-      "images": [],
-      "recordings": [],
+      "images": [
+        {
+          "key": "anthus-lineiventris/side.jpg",
+          "author": "Ronald Olivier",
+          "licence": "CC BY 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by/4.0/",
+          "sourceUrl": "https://www.inaturalist.org/observations/392323395",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ],
+      "recordings": [
+        {
+          "key": "xeno-canto/XC429533",
+          "author": "Derek Solomon",
+          "licence": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "sourceUrl": "https://xeno-canto.org/429533",
+          "aiGenerated": false,
+          "hosted": false,
+          "quality": "A",
+          "callType": "song"
+        }
+      ],
       "sources": [
         {
           "title": "Kemp A.C., Herholdt J.J., Whyte I. & Harrison J. (2001). Birds of the two largest national parks in South Africa: a method to generate estimates of population size for all species and assess their conservation ecology. S. Afr. J. Sci. 97: 393–403.",
           "url": "https://journals.co.za/doi/pdf/10.10520/EJC97367",
           "publisher": "South African Journal of Science",
           "year": 2001
+        },
+        {
+          "title": "Striped pipit",
+          "url": "https://en.wikipedia.org/wiki/Striped_pipit",
+          "publisher": "Wikipedia",
+          "year": 2026
+        },
+        {
+          "title": "Striped Pipit. In Harrison, J.A. et al. (eds). The Atlas of Southern African Birds. Vol. 2.",
+          "url": "http://sabap2.adu.org.za/docs/sabap1/720.pdf",
+          "publisher": "The Atlas of Southern African Birds",
+          "year": 1997
         }
       ]
     },
@@ -1761,13 +1891,37 @@
       "scientificName": "Anthus nicholsoni",
       "commonName": "Nicholson’s Pipit",
       "images": [],
-      "recordings": [],
+      "recordings": [
+        {
+          "key": "xeno-canto/XC425855",
+          "author": "Stanislav Novotny",
+          "licence": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "sourceUrl": "https://xeno-canto.org/425855",
+          "aiGenerated": false,
+          "hosted": false,
+          "quality": "A",
+          "callType": "call"
+        }
+      ],
       "sources": [
         {
           "title": "Kemp A.C., Herholdt J.J., Whyte I. & Harrison J. (2001). Birds of the two largest national parks in South Africa: a method to generate estimates of population size for all species and assess their conservation ecology. S. Afr. J. Sci. 97: 393–403.",
           "url": "https://journals.co.za/doi/pdf/10.10520/EJC97367",
           "publisher": "South African Journal of Science",
           "year": 2001
+        },
+        {
+          "title": "Nicholson's pipit",
+          "url": "https://en.wikipedia.org/wiki/Nicholson%27s_pipit",
+          "publisher": "Wikipedia",
+          "year": 2026
+        },
+        {
+          "title": "Longbilled Pipit. In Harrison, J.A. et al. (eds). The Atlas of Southern African Birds. Vol. 2.",
+          "url": "http://sabap2.adu.org.za/docs/sabap1/717.pdf",
+          "publisher": "The Atlas of Southern African Birds",
+          "year": 1997
         }
       ]
     },
@@ -1775,14 +1929,48 @@
       "slug": "anthus-vaalensis",
       "scientificName": "Anthus vaalensis",
       "commonName": "Buffy Pipit",
-      "images": [],
-      "recordings": [],
+      "images": [
+        {
+          "key": "anthus-vaalensis/side.jpg",
+          "author": "copper",
+          "licence": "CC BY-NC 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+          "sourceUrl": "https://www.inaturalist.org/observations/72660624",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ],
+      "recordings": [
+        {
+          "key": "xeno-canto/XC444076",
+          "author": "Dawie de Swardt",
+          "licence": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "sourceUrl": "https://xeno-canto.org/444076",
+          "aiGenerated": false,
+          "hosted": false,
+          "quality": "C",
+          "callType": "call"
+        }
+      ],
       "sources": [
         {
           "title": "Kemp A.C., Herholdt J.J., Whyte I. & Harrison J. (2001). Birds of the two largest national parks in South Africa: a method to generate estimates of population size for all species and assess their conservation ecology. S. Afr. J. Sci. 97: 393–403.",
           "url": "https://journals.co.za/doi/pdf/10.10520/EJC97367",
           "publisher": "South African Journal of Science",
           "year": 2001
+        },
+        {
+          "title": "Buffy pipit",
+          "url": "https://en.wikipedia.org/wiki/Buffy_pipit",
+          "publisher": "Wikipedia",
+          "year": 2026
+        },
+        {
+          "title": "Buffy Pipit. In Harrison, J.A. et al. (eds). The Atlas of Southern African Birds. Vol. 2.",
+          "url": "http://sabap2.adu.org.za/docs/sabap1/719.pdf",
+          "publisher": "The Atlas of Southern African Birds",
+          "year": 1997
         }
       ]
     },
@@ -13617,14 +13805,42 @@
       "slug": "macronyx-croceus",
       "scientificName": "Macronyx croceus",
       "commonName": "Yellow-throated Longclaw",
-      "images": [],
-      "recordings": [],
+      "images": [
+        {
+          "key": "macronyx-croceus/side.jpg",
+          "author": "copper",
+          "licence": "CC BY-NC 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+          "sourceUrl": "https://www.inaturalist.org/observations/57800303",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ],
+      "recordings": [
+        {
+          "key": "xeno-canto/XC1011803",
+          "author": "Matthew L. Brady",
+          "licence": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "sourceUrl": "https://xeno-canto.org/1011803",
+          "aiGenerated": false,
+          "hosted": false,
+          "quality": "A",
+          "callType": "call"
+        }
+      ],
       "sources": [
         {
           "title": "Kemp A.C., Herholdt J.J., Whyte I. & Harrison J. (2001). Birds of the two largest national parks in South Africa: a method to generate estimates of population size for all species and assess their conservation ecology. S. Afr. J. Sci. 97: 393–403.",
           "url": "https://journals.co.za/doi/pdf/10.10520/EJC97367",
           "publisher": "South African Journal of Science",
           "year": 2001
+        },
+        {
+          "title": "Yellow-throated Longclaw",
+          "url": "https://newmansbirds.com/birds/yellow-throated-longclaw/",
+          "publisher": "Newman's Birds",
+          "year": 2026
         }
       ]
     },
@@ -14520,14 +14736,42 @@
       "slug": "motacilla-aguimp",
       "scientificName": "Motacilla aguimp",
       "commonName": "African Pied Wagtail",
-      "images": [],
-      "recordings": [],
+      "images": [
+        {
+          "key": "motacilla-aguimp/side.jpg",
+          "author": "Luca Boscain",
+          "licence": "CC BY-NC 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+          "sourceUrl": "https://www.inaturalist.org/observations/194019152",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ],
+      "recordings": [
+        {
+          "key": "xeno-canto/XC620809",
+          "author": "Tony Archer",
+          "licence": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "sourceUrl": "https://xeno-canto.org/620809",
+          "aiGenerated": false,
+          "hosted": false,
+          "quality": "A",
+          "callType": "call"
+        }
+      ],
       "sources": [
         {
           "title": "Kemp A.C., Herholdt J.J., Whyte I. & Harrison J. (2001). Birds of the two largest national parks in South Africa: a method to generate estimates of population size for all species and assess their conservation ecology. S. Afr. J. Sci. 97: 393–403.",
           "url": "https://journals.co.za/doi/pdf/10.10520/EJC97367",
           "publisher": "South African Journal of Science",
           "year": 2001
+        },
+        {
+          "title": "African Pied Wagtail",
+          "url": "https://newmansbirds.com/birds/african-pied-wagtail/",
+          "publisher": "Newman's Birds",
+          "year": 2026
         }
       ]
     },
@@ -14535,14 +14779,42 @@
       "slug": "motacilla-capensis",
       "scientificName": "Motacilla capensis",
       "commonName": "Cape Wagtail",
-      "images": [],
-      "recordings": [],
+      "images": [
+        {
+          "key": "motacilla-capensis/side.jpg",
+          "author": "Nigel Forshaw",
+          "licence": "CC BY-NC 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+          "sourceUrl": "https://www.inaturalist.org/observations/91156060",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ],
+      "recordings": [
+        {
+          "key": "xeno-canto/XC1079741",
+          "author": "African Bioacoustics Community",
+          "licence": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "sourceUrl": "https://xeno-canto.org/1079741",
+          "aiGenerated": false,
+          "hosted": false,
+          "quality": "A",
+          "callType": "call"
+        }
+      ],
       "sources": [
         {
           "title": "Kemp A.C., Herholdt J.J., Whyte I. & Harrison J. (2001). Birds of the two largest national parks in South Africa: a method to generate estimates of population size for all species and assess their conservation ecology. S. Afr. J. Sci. 97: 393–403.",
           "url": "https://journals.co.za/doi/pdf/10.10520/EJC97367",
           "publisher": "South African Journal of Science",
           "year": 2001
+        },
+        {
+          "title": "Cape Wagtail",
+          "url": "https://newmansbirds.com/birds/cape-wagtail/",
+          "publisher": "Newman's Birds",
+          "year": 2026
         }
       ]
     },
@@ -14550,14 +14822,42 @@
       "slug": "motacilla-clara",
       "scientificName": "Motacilla clara",
       "commonName": "Mountain Wagtail",
-      "images": [],
-      "recordings": [],
+      "images": [
+        {
+          "key": "motacilla-clara/side.jpg",
+          "author": "Pieter Kotze",
+          "licence": "CC BY-NC 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+          "sourceUrl": "https://www.inaturalist.org/observations/336948789",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ],
+      "recordings": [
+        {
+          "key": "xeno-canto/XC490751",
+          "author": "Tim Cockcroft",
+          "licence": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "sourceUrl": "https://xeno-canto.org/490751",
+          "aiGenerated": false,
+          "hosted": false,
+          "quality": "A",
+          "callType": "call"
+        }
+      ],
       "sources": [
         {
           "title": "Kemp A.C., Herholdt J.J., Whyte I. & Harrison J. (2001). Birds of the two largest national parks in South Africa: a method to generate estimates of population size for all species and assess their conservation ecology. S. Afr. J. Sci. 97: 393–403.",
           "url": "https://journals.co.za/doi/pdf/10.10520/EJC97367",
           "publisher": "South African Journal of Science",
           "year": 2001
+        },
+        {
+          "title": "Mountain Wagtail",
+          "url": "https://newmansbirds.com/birds/mountain-wagtail/",
+          "publisher": "Newman's Birds",
+          "year": 2026
         }
       ]
     },
@@ -14565,14 +14865,42 @@
       "slug": "motacilla-flava",
       "scientificName": "Motacilla flava",
       "commonName": "Western Yellow Wagtail",
-      "images": [],
-      "recordings": [],
+      "images": [
+        {
+          "key": "motacilla-flava/side.jpg",
+          "author": "Francois Ubbink",
+          "licence": "CC BY-NC 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+          "sourceUrl": "https://www.inaturalist.org/observations/233645200",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ],
+      "recordings": [
+        {
+          "key": "xeno-canto/XC140811",
+          "author": "Elias A. Ryberg",
+          "licence": "CC BY-NC-SA 3.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/3.0/",
+          "sourceUrl": "https://xeno-canto.org/140811",
+          "aiGenerated": false,
+          "hosted": false,
+          "quality": "A",
+          "callType": "call"
+        }
+      ],
       "sources": [
         {
           "title": "Kemp A.C., Herholdt J.J., Whyte I. & Harrison J. (2001). Birds of the two largest national parks in South Africa: a method to generate estimates of population size for all species and assess their conservation ecology. S. Afr. J. Sci. 97: 393–403.",
           "url": "https://journals.co.za/doi/pdf/10.10520/EJC97367",
           "publisher": "South African Journal of Science",
           "year": 2001
+        },
+        {
+          "title": "Western Yellow Wagtail",
+          "url": "https://newmansbirds.com/birds/western-yellow-wagtail/",
+          "publisher": "Newman's Birds",
+          "year": 2026
         }
       ]
     },

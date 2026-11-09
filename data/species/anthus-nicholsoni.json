@@ -7,8 +7,29 @@
     "af": "Nicholsonkoester"
   },
   "family": "motacillidae",
-  "summary": "The details for this species have not been published yet.",
-  "sampleData": true,
+  "habitat": "Wikipedia says it is a non-migratory bird of southern Africa, formerly included in the Long-billed Pipit. The SABAP1 Long-billed Pipit account, written when the two were not separated, places that bird on rocky slopes, singly or in pairs.",
+  "summary": "No Newman page, and neither Wikipedia nor the SABAP1 Long-billed Pipit text gives a plumage description that can be separated for this species. Wikipedia says it is non-migratory, so status is resident. No length and no Kruger-box photograph. The Kemp paper name Longbilled Pipit and the code RB were left unchanged.",
+  "sampleData": false,
+  "sources": [
+    {
+      "title": "Nicholson's pipit",
+      "url": "https://en.wikipedia.org/wiki/Nicholson%27s_pipit",
+      "publisher": "Wikipedia",
+      "year": 2026
+    },
+    {
+      "title": "Longbilled Pipit. In Harrison, J.A. et al. (eds). The Atlas of Southern African Birds. Vol. 2.",
+      "url": "http://sabap2.adu.org.za/docs/sabap1/717.pdf",
+      "publisher": "The Atlas of Southern African Birds",
+      "year": 1997
+    },
+    {
+      "title": "Kemp A.C., Herholdt J.J., Whyte I. & Harrison J. (2001). Birds of the two largest national parks in South Africa: a method to generate estimates of population size for all species and assess their conservation ecology. S. Afr. J. Sci. 97: 393–403.",
+      "url": "https://journals.co.za/doi/pdf/10.10520/EJC97367",
+      "publisher": "South African Journal of Science",
+      "year": 2001
+    }
+  ],
   "population": {
     "estimate": {
       "low": 512,
@@ -37,6 +58,44 @@
   },
   "variants": [],
   "viewNotes": [],
-  "calls": [],
-  "images": []
+  "calls": [
+    {
+      "sex": "any",
+      "type": "call",
+      "description": "The sources used do not describe the call. Grade A call from Boskloof, Cape Town, catalogued as Anthus nicholsoni. The filename is XC425855-Pipit Long-billed Boskloof170718.mp3.",
+      "recordings": [
+        {
+          "key": "xeno-canto/XC425855",
+          "source": "https://xeno-canto.org/425855",
+          "fileUrl": "https://xeno-canto.org/sounds/uploaded/UKNJRQCOGA/XC425855-Pipit%20Long-billed%20Boskloof170718.mp3",
+          "author": "Stanislav Novotny",
+          "license": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ]
+    }
+  ],
+  "images": [],
+  "research": {
+    "confidence": "low",
+    "needsReview": true,
+    "note": "No Newman page. Wikipedia says non-migratory and gives no plumage. The SABAP1 text is the former combined Long-billed Pipit account and does not describe plumage. No openly licensed research-grade photo was found in the Kruger box. Population figures and the Kemp code RB were left unchanged."
+  },
+  "status": "resident",
+  "monthsPresent": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+  ]
 }
