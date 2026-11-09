@@ -255,6 +255,44 @@
         }
       ]
     },
+    "apalis-flavida": {
+      "calls": [
+        {
+          "index": 0,
+          "quality": {
+            "xeno-canto/XC655037": "A"
+          }
+        }
+      ]
+    },
+    "apalis-ruddi": {
+      "calls": [
+        {
+          "index": 0,
+          "quality": {
+            "xeno-canto/XC972485": "A"
+          }
+        }
+      ]
+    },
+    "apalis-thoracica": {
+      "calls": [
+        {
+          "index": 0,
+          "quality": {
+            "xeno-canto/XC1009172": "A"
+          }
+        }
+      ]
+    },
+    "aplopelia-larvata": {
+      "calls": [
+        {
+          "index": 0,
+          "quality": {}
+        }
+      ]
+    },
     "apus-affinis": {
       "calls": [
         {
@@ -619,6 +657,26 @@
         }
       ]
     },
+    "calamonastes-fasciolatus": {
+      "calls": [
+        {
+          "index": 0,
+          "quality": {
+            "xeno-canto/XC520425": "A"
+          }
+        }
+      ]
+    },
+    "calamonastes-stierlingi": {
+      "calls": [
+        {
+          "index": 0,
+          "quality": {
+            "xeno-canto/XC1023576": "A"
+          }
+        }
+      ]
+    },
     "calandrella-cinerea": {
       "calls": [
         {
@@ -661,6 +719,16 @@
           "index": 0,
           "quality": {
             "xeno-canto/XC421209": "A"
+          }
+        }
+      ]
+    },
+    "camaroptera-brachyura": {
+      "calls": [
+        {
+          "index": 0,
+          "quality": {
+            "xeno-canto/XC1080046": "A"
           }
         }
       ]
@@ -885,6 +953,96 @@
         }
       ]
     },
+    "cisticola-aberrans": {
+      "calls": [
+        {
+          "index": 0,
+          "quality": {
+            "xeno-canto/XC199448": "A"
+          }
+        }
+      ]
+    },
+    "cisticola-aridulus": {
+      "calls": [
+        {
+          "index": 0,
+          "quality": {
+            "xeno-canto/XC616563": "A"
+          }
+        }
+      ]
+    },
+    "cisticola-chiniana": {
+      "calls": [
+        {
+          "index": 0,
+          "quality": {
+            "xeno-canto/XC1001648": "A"
+          }
+        }
+      ]
+    },
+    "cisticola-erythrops": {
+      "calls": [
+        {
+          "index": 0,
+          "quality": {
+            "xeno-canto/XC1137526": "A"
+          }
+        }
+      ]
+    },
+    "cisticola-fulvicapilla": {
+      "calls": [
+        {
+          "index": 0,
+          "quality": {
+            "xeno-canto/XC514720": "A"
+          }
+        }
+      ]
+    },
+    "cisticola-galactotes": {
+      "calls": [
+        {
+          "index": 0,
+          "quality": {
+            "xeno-canto/XC408045": "B"
+          }
+        }
+      ]
+    },
+    "cisticola-juncidis": {
+      "calls": [
+        {
+          "index": 0,
+          "quality": {
+            "xeno-canto/XC692442": "A"
+          }
+        }
+      ]
+    },
+    "cisticola-natalensis": {
+      "calls": [
+        {
+          "index": 0,
+          "quality": {
+            "xeno-canto/XC1101235": "A"
+          }
+        }
+      ]
+    },
+    "cisticola-tinniens": {
+      "calls": [
+        {
+          "index": 0,
+          "quality": {
+            "xeno-canto/XC737784": "A"
+          }
+        }
+      ]
+    },
     "clanga-pomarina": {
       "calls": [
         {
@@ -892,6 +1050,46 @@
           "quality": {
             "xeno-canto/XC1028980": "A",
             "xeno-canto/XC825782": "A"
+          }
+        }
+      ]
+    },
+    "colius-striatus": {
+      "calls": [
+        {
+          "index": 0,
+          "quality": {
+            "xeno-canto/XC1077960": "A"
+          }
+        }
+      ]
+    },
+    "columba-arquatrix": {
+      "calls": [
+        {
+          "index": 0,
+          "quality": {
+            "xeno-canto/XC386792": "B"
+          }
+        }
+      ]
+    },
+    "columba-guinea": {
+      "calls": [
+        {
+          "index": 0,
+          "quality": {
+            "xeno-canto/XC529796": "A"
+          }
+        }
+      ]
+    },
+    "columba-livia": {
+      "calls": [
+        {
+          "index": 0,
+          "quality": {
+            "xeno-canto/XC541143": "A"
           }
         }
       ]
@@ -1004,6 +1202,36 @@
         }
       ]
     },
+    "corvus-albicollis": {
+      "calls": [
+        {
+          "index": 0,
+          "quality": {
+            "xeno-canto/XC252930": "A"
+          }
+        }
+      ]
+    },
+    "corvus-albus": {
+      "calls": [
+        {
+          "index": 0,
+          "quality": {
+            "xeno-canto/XC1060335": "A"
+          }
+        }
+      ]
+    },
+    "corvus-capensis": {
+      "calls": [
+        {
+          "index": 0,
+          "quality": {
+            "xeno-canto/XC247932": "A"
+          }
+        }
+      ]
+    },
     "corypha-africana": {
       "calls": [
         {
@@ -1091,6 +1319,36 @@
         {
           "index": 0,
           "quality": {}
+        }
+      ]
+    },
+    "eremomela-icteropygialis": {
+      "calls": [
+        {
+          "index": 0,
+          "quality": {
+            "xeno-canto/XC904173": "A"
+          }
+        }
+      ]
+    },
+    "eremomela-scotops": {
+      "calls": [
+        {
+          "index": 0,
+          "quality": {
+            "xeno-canto/XC793332": "B"
+          }
+        }
+      ]
+    },
+    "eremomela-usticollis": {
+      "calls": [
+        {
+          "index": 0,
+          "quality": {
+            "xeno-canto/XC177777": "A"
+          }
         }
       ]
     },
@@ -1608,6 +1866,16 @@
         }
       ]
     },
+    "oena-capensis": {
+      "calls": [
+        {
+          "index": 0,
+          "quality": {
+            "xeno-canto/XC496248": "A"
+          }
+        }
+      ]
+    },
     "pernis-apivorus": {
       "calls": [
         {
@@ -1666,6 +1934,36 @@
         }
       ]
     },
+    "prinia-flavicans": {
+      "calls": [
+        {
+          "index": 0,
+          "quality": {
+            "xeno-canto/XC513752": "A"
+          }
+        }
+      ]
+    },
+    "prinia-hypoxantha": {
+      "calls": [
+        {
+          "index": 0,
+          "quality": {
+            "xeno-canto/XC935289": "A"
+          }
+        }
+      ]
+    },
+    "prinia-subflava": {
+      "calls": [
+        {
+          "index": 0,
+          "quality": {
+            "xeno-canto/XC1001874": "A"
+          }
+        }
+      ]
+    },
     "sarkidiornis-melanotos": {
       "calls": [
         {
@@ -1686,6 +1984,16 @@
         }
       ]
     },
+    "spilopelia-senegalensis": {
+      "calls": [
+        {
+          "index": 0,
+          "quality": {
+            "xeno-canto/XC1077428": "A"
+          }
+        }
+      ]
+    },
     "stephanoaetus-coronatus": {
       "calls": [
         {
@@ -1694,6 +2002,36 @@
             "xeno-canto/XC1048064": "A",
             "xeno-canto/XC1048065": "A",
             "xeno-canto/XC1006960": "B"
+          }
+        }
+      ]
+    },
+    "streptopelia-capicola": {
+      "calls": [
+        {
+          "index": 0,
+          "quality": {
+            "xeno-canto/XC1149018": "A"
+          }
+        }
+      ]
+    },
+    "streptopelia-decipiens": {
+      "calls": [
+        {
+          "index": 0,
+          "quality": {
+            "xeno-canto/XC472382": "A"
+          }
+        }
+      ]
+    },
+    "streptopelia-semitorquata": {
+      "calls": [
+        {
+          "index": 0,
+          "quality": {
+            "xeno-canto/XC529795": "A"
           }
         }
       ]
@@ -1793,6 +2131,56 @@
         }
       ]
     },
+    "treron-calvus": {
+      "calls": [
+        {
+          "index": 0,
+          "quality": {
+            "xeno-canto/XC394356": "B"
+          }
+        }
+      ]
+    },
+    "turtur-afer": {
+      "calls": [
+        {
+          "index": 0,
+          "quality": {
+            "xeno-canto/XC1009898": "A"
+          }
+        }
+      ]
+    },
+    "turtur-chalcospilos": {
+      "calls": [
+        {
+          "index": 0,
+          "quality": {
+            "xeno-canto/XC396568": "A"
+          }
+        }
+      ]
+    },
+    "turtur-tympanistria": {
+      "calls": [
+        {
+          "index": 0,
+          "quality": {
+            "xeno-canto/XC492722": "A"
+          }
+        }
+      ]
+    },
+    "urocolius-indicus": {
+      "calls": [
+        {
+          "index": 0,
+          "quality": {
+            "xeno-canto/XC350135": "A"
+          }
+        }
+      ]
+    },
     "vanellus-albiceps": {
       "calls": [
         {
@@ -1839,6 +2227,522 @@
           "index": 0,
           "quality": {
             "xeno-canto/XC585227": "A"
+          }
+        }
+      ]
+    },
+    "centropus-burchellii": {
+      "calls": [
+        {
+          "index": 0,
+          "quality": {
+            "xeno-canto/XC247756": "A"
+          }
+        }
+      ]
+    },
+    "centropus-grillii": {
+      "calls": [
+        {
+          "index": 0,
+          "quality": {
+            "xeno-canto/XC547993": "A"
+          }
+        }
+      ]
+    },
+    "centropus-senegalensis": {
+      "calls": [
+        {
+          "index": 0,
+          "quality": {
+            "xeno-canto/XC341752": "A"
+          }
+        }
+      ]
+    },
+    "chrysococcyx-caprius": {
+      "calls": [
+        {
+          "index": 0,
+          "quality": {
+            "xeno-canto/XC685548": "A"
+          }
+        }
+      ]
+    },
+    "chrysococcyx-cupreus": {
+      "calls": [
+        {
+          "index": 0,
+          "quality": {
+            "xeno-canto/XC780410": "A"
+          }
+        }
+      ]
+    },
+    "chrysococcyx-klaas": {
+      "calls": [
+        {
+          "index": 0,
+          "quality": {
+            "xeno-canto/XC28650": "A"
+          }
+        }
+      ]
+    },
+    "clamator-glandarius": {
+      "calls": [
+        {
+          "index": 0,
+          "quality": {
+            "xeno-canto/XC290141": "A"
+          }
+        }
+      ]
+    },
+    "clamator-jacobinus": {
+      "calls": [
+        {
+          "index": 0,
+          "quality": {
+            "xeno-canto/XC1188518": "A"
+          }
+        }
+      ]
+    },
+    "clamator-levaillantii": {
+      "calls": [
+        {
+          "index": 0,
+          "quality": {
+            "xeno-canto/XC1010298": "A"
+          }
+        }
+      ]
+    },
+    "cuculus-canorus": {
+      "calls": [
+        {
+          "index": 0,
+          "quality": {
+            "xeno-canto/XC27037": "A"
+          }
+        }
+      ]
+    },
+    "cuculus-clamosus": {
+      "calls": [
+        {
+          "index": 0,
+          "quality": {
+            "xeno-canto/XC650879": "A"
+          }
+        }
+      ]
+    },
+    "cuculus-gularis": {
+      "calls": [
+        {
+          "index": 0,
+          "quality": {
+            "xeno-canto/XC682084": "A"
+          }
+        }
+      ]
+    },
+    "cuculus-solitarius": {
+      "calls": [
+        {
+          "index": 0,
+          "quality": {
+            "xeno-canto/XC202901": "A"
+          }
+        }
+      ]
+    },
+    "pachycoccyx-audeberti": {
+      "calls": [
+        {
+          "index": 0,
+          "quality": {
+            "xeno-canto/XC513828": "A"
+          }
+        }
+      ]
+    },
+    "dicrurus-adsimilis": {
+      "calls": [
+        {
+          "index": 0,
+          "quality": {
+            "xeno-canto/XC298129": "A"
+          }
+        }
+      ]
+    },
+    "dicrurus-ludwigii": {
+      "calls": [
+        {
+          "index": 0,
+          "quality": {
+            "xeno-canto/XC1030331": "A"
+          }
+        }
+      ]
+    },
+    "emberiza-flaviventris": {
+      "calls": [
+        {
+          "index": 0,
+          "quality": {
+            "xeno-canto/XC391998": "A"
+          }
+        }
+      ]
+    },
+    "emberiza-impetuani": {
+      "calls": [
+        {
+          "index": 0,
+          "quality": {
+            "xeno-canto/XC312689": "A"
+          }
+        }
+      ]
+    },
+    "emberiza-tahapisi": {
+      "calls": [
+        {
+          "index": 0,
+          "quality": {
+            "xeno-canto/XC364488": "A"
+          }
+        }
+      ]
+    },
+    "amadina-erythrocephala": {
+      "calls": [
+        {
+          "index": 0,
+          "quality": {
+            "xeno-canto/XC337993": "A"
+          }
+        }
+      ]
+    },
+    "amadina-fasciata": {
+      "calls": [
+        {
+          "index": 0,
+          "quality": {
+            "xeno-canto/XC368188": "B"
+          }
+        }
+      ]
+    },
+    "amandava-subflava": {
+      "calls": [
+        {
+          "index": 0,
+          "quality": {
+            "xeno-canto/XC528267": "A"
+          }
+        }
+      ]
+    },
+    "brunhilda-erythronotos": {
+      "calls": [
+        {
+          "index": 0,
+          "quality": {
+            "xeno-canto/XC382988": "A"
+          }
+        }
+      ]
+    },
+    "coccopygia-melanotis": {
+      "calls": [
+        {
+          "index": 0,
+          "quality": {
+            "xeno-canto/XC292907": "B"
+          }
+        }
+      ]
+    },
+    "estrilda-astrild": {
+      "calls": [
+        {
+          "index": 0,
+          "quality": {
+            "xeno-canto/XC1087071": "A"
+          }
+        }
+      ]
+    },
+    "granatina-granatina": {
+      "calls": [
+        {
+          "index": 0,
+          "quality": {
+            "xeno-canto/XC662464": "A"
+          }
+        }
+      ]
+    },
+    "hypargos-margaritatus": {
+      "calls": [
+        {
+          "index": 0,
+          "quality": {
+            "xeno-canto/XC815006": "A"
+          }
+        }
+      ]
+    },
+    "lagonosticta-rhodopareia": {
+      "calls": [
+        {
+          "index": 0,
+          "quality": {
+            "xeno-canto/XC585252": "A"
+          }
+        }
+      ]
+    },
+    "lagonosticta-rubricata": {
+      "calls": [
+        {
+          "index": 0,
+          "quality": {
+            "xeno-canto/XC952474": "A"
+          }
+        }
+      ]
+    },
+    "lagonosticta-senegala": {
+      "calls": [
+        {
+          "index": 0,
+          "quality": {
+            "xeno-canto/XC632302": "A"
+          }
+        }
+      ]
+    },
+    "ortygospiza-atricollis": {
+      "calls": [
+        {
+          "index": 0,
+          "quality": {
+            "xeno-canto/XC811127": "A"
+          }
+        }
+      ]
+    },
+    "pytilia-afra": {
+      "calls": [
+        {
+          "index": 0,
+          "quality": {
+            "xeno-canto/XC200765": "A"
+          }
+        }
+      ]
+    },
+    "pytilia-melba": {
+      "calls": [
+        {
+          "index": 0,
+          "quality": {
+            "xeno-canto/XC512189": "A"
+          }
+        }
+      ]
+    },
+    "spermestes-bicolor": {
+      "calls": [
+        {
+          "index": 0,
+          "quality": {
+            "xeno-canto/XC206436": "A"
+          }
+        }
+      ]
+    },
+    "spermestes-cucullata": {
+      "calls": [
+        {
+          "index": 0,
+          "quality": {
+            "xeno-canto/XC1079624": "A"
+          }
+        }
+      ]
+    },
+    "spermestes-fringilloides": {
+      "calls": [
+        {
+          "index": 0,
+          "quality": {
+            "xeno-canto/XC1063801": "A"
+          }
+        }
+      ]
+    },
+    "uraeginthus-angolensis": {
+      "calls": [
+        {
+          "index": 0,
+          "quality": {
+            "xeno-canto/XC368187": "A"
+          }
+        }
+      ]
+    },
+    "falco-amurensis": {
+      "calls": [
+        {
+          "index": 0,
+          "quality": {
+            "xeno-canto/XC266729": "A"
+          }
+        }
+      ]
+    },
+    "falco-biarmicus": {
+      "calls": [
+        {
+          "index": 0,
+          "quality": {
+            "xeno-canto/XC577955": "A"
+          }
+        }
+      ]
+    },
+    "falco-concolor": {
+      "calls": [
+        {
+          "index": 0,
+          "quality": {
+            "xeno-canto/XC739067": "A"
+          }
+        }
+      ]
+    },
+    "falco-dickinsoni": {
+      "calls": [
+        {
+          "index": 0,
+          "quality": {}
+        }
+      ]
+    },
+    "falco-naumanni": {
+      "calls": [
+        {
+          "index": 0,
+          "quality": {
+            "xeno-canto/XC149085": "A"
+          }
+        }
+      ]
+    },
+    "falco-peregrinus": {
+      "calls": [
+        {
+          "index": 0,
+          "quality": {
+            "xeno-canto/XC48465": "A"
+          }
+        }
+      ]
+    },
+    "falco-rupicolus": {
+      "calls": [
+        {
+          "index": 0,
+          "quality": {
+            "xeno-canto/XC1073735": "A"
+          }
+        }
+      ]
+    },
+    "falco-subbuteo": {
+      "calls": [
+        {
+          "index": 0,
+          "quality": {
+            "xeno-canto/XC42346": "A"
+          }
+        }
+      ]
+    },
+    "falco-vespertinus": {
+      "calls": [
+        {
+          "index": 0,
+          "quality": {
+            "xeno-canto/XC154405": "A"
+          }
+        }
+      ]
+    },
+    "crithagra-atrogularis": {
+      "calls": [
+        {
+          "index": 0,
+          "quality": {
+            "xeno-canto/XC472484": "A"
+          }
+        }
+      ]
+    },
+    "crithagra-citrinipectus": {
+      "calls": [
+        {
+          "index": 0,
+          "quality": {}
+        }
+      ]
+    },
+    "crithagra-gularis": {
+      "calls": [
+        {
+          "index": 0,
+          "quality": {
+            "xeno-canto/XC252812": "A"
+          }
+        }
+      ]
+    },
+    "crithagra-scotops": {
+      "calls": [
+        {
+          "index": 0,
+          "quality": {
+            "xeno-canto/XC500264": "A"
+          }
+        }
+      ]
+    },
+    "crithagra-sulphurata": {
+      "calls": [
+        {
+          "index": 0,
+          "quality": {
+            "xeno-canto/XC650874": "A"
+          }
+        }
+      ]
+    },
+    "serinus-canicollis": {
+      "calls": [
+        {
+          "index": 0,
+          "quality": {
+            "xeno-canto/XC1046125": "A"
           }
         }
       ]

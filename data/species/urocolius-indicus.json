@@ -7,8 +7,45 @@
     "af": "Rooiwangmuisvoël"
   },
   "family": "coliidae",
-  "summary": "The details for this species have not been published yet.",
-  "sampleData": true,
+  "status": "resident",
+  "monthsPresent": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+  ],
+  "size": {
+    "lengthCm": {
+      "min": 32,
+      "max": 34
+    },
+    "note": "Newman's Birds gives 32–34 cm."
+  },
+  "habitat": "Flocks fly in compact groups in thornveld, riverine forest and suburbia, favouring the moister regions.",
+  "summary": "A common resident, identified by the red mask. The rump and underparts are grey-white, the eye is blue, the bill is black and the legs are red. The call is a descending tree-ree-ree, often repeated, in flight and at rest.",
+  "sampleData": false,
+  "similar": [
+    {
+      "slug": "colius-striatus",
+      "note": "Speckled Mousebird is dull brown, with a black mask and a black-and-white bill, not a red mask."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Red-faced Mousebird",
+      "url": "https://newmansbirds.com/birds/red-faced-mousebird/",
+      "publisher": "Newman's Birds",
+      "year": 2026
+    }
+  ],
   "population": {
     "estimate": {
       "low": 8192,
@@ -35,8 +72,128 @@
     },
     "tierApplied": "D"
   },
-  "variants": [],
-  "viewNotes": [],
-  "calls": [],
-  "images": []
+  "variants": [
+    {
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "marks": {
+        "bill": {
+          "colour": "black",
+          "shape": null
+        },
+        "eye": {
+          "iris": "blue",
+          "ring": null
+        },
+        "legs": {
+          "colour": "red"
+        },
+        "head": {
+          "crown": null,
+          "face": "red",
+          "throat": null,
+          "pattern": "Red mask."
+        },
+        "upperparts": {
+          "back": null,
+          "rump": "grey",
+          "pattern": null
+        },
+        "underparts": {
+          "breast": "grey",
+          "belly": "white",
+          "pattern": "Rump and underparts grey-white."
+        },
+        "wings": {
+          "above": null,
+          "below": null,
+          "pattern": null
+        },
+        "tail": {
+          "colour": null,
+          "shape": null
+        }
+      }
+    }
+  ],
+  "viewNotes": [
+    {
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Red mask and a long tail, in a compact flock."
+    },
+    {
+      "view": "perched-front",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Red mask, blue eye and black bill."
+    },
+    {
+      "view": "perched-back",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Grey-white rump."
+    },
+    {
+      "view": "flight-above",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Flocks fly in compact groups. The upperwing was not named."
+    },
+    {
+      "view": "flight-below",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Grey-white underparts."
+    }
+  ],
+  "calls": [
+    {
+      "sex": "any",
+      "type": "call",
+      "description": "A descending tree-ree-ree, frequently repeated, in flight and at rest. The texts do not separate the sexes. Grade A from Grahamstown, Eastern Cape. The filename is Red-faced Mousebirds.",
+      "recordings": [
+        {
+          "key": "xeno-canto/XC350135",
+          "source": "https://xeno-canto.org/350135",
+          "fileUrl": "https://xeno-canto.org/sounds/uploaded/SGLTZLDXYI/XC350135-Red-faced%20Mousebirds%20exc.mp3",
+          "author": "Lynette Rudman",
+          "license": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ]
+    }
+  ],
+  "images": [
+    {
+      "key": "urocolius-indicus/side.jpg",
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "source": "https://www.inaturalist.org/observations/181416240",
+      "fileUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/316125583/large.jpeg",
+      "author": "moxcalvitiumtorgos",
+      "license": "CC BY-NC 4.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+      "aiGenerated": false,
+      "hosted": false,
+      "alt": "Red-faced Mousebird perched in a Kruger bush, with a red face and a long tail",
+      "caption": "Red-faced Mousebird perched in a Kruger bush, with a red face and a long tail"
+    }
+  ],
+  "research": {
+    "confidence": "medium",
+    "needsReview": false,
+    "note": "Status is resident and all twelve months are listed. Newman calls it a common resident. The family text on the page says immatures are duller, and that was not stored as a separate plumage because it is not specific to this species. Population figures were left unchanged."
+  }
 }

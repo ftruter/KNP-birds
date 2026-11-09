@@ -7,8 +7,18 @@
     "af": "Donkerwangbossanger"
   },
   "family": "cisticolidae",
-  "summary": "The details for this species have not been published yet.",
-  "sampleData": true,
+  "habitat": "Dry forest and dry savanna. Wikipedia does not describe the plumage or a Kruger status.",
+  "summary": "Wikipedia places it in dry forest and dry savanna from Angola and South Africa north to Kenya, and does not describe the plumage. The marks, status and months were left unset. Newman has no page.",
+  "sampleData": false,
+  "similar": [],
+  "sources": [
+    {
+      "title": "Green-capped eremomela",
+      "url": "https://en.wikipedia.org/wiki/Green-capped_eremomela",
+      "publisher": "Wikipedia",
+      "year": 2026
+    }
+  ],
   "population": {
     "estimate": {
       "low": 2048,
@@ -36,7 +46,83 @@
     "tierApplied": "D"
   },
   "variants": [],
-  "viewNotes": [],
-  "calls": [],
-  "images": []
+  "viewNotes": [
+    {
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Plumage was not described. It uses dry forest and dry savanna."
+    },
+    {
+      "view": "perched-front",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "The face was not described."
+    },
+    {
+      "view": "perched-back",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "The back was not described."
+    },
+    {
+      "view": "flight-above",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "The upperwing was not described."
+    },
+    {
+      "view": "flight-below",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "The underparts were not described."
+    }
+  ],
+  "calls": [
+    {
+      "sex": "any",
+      "type": "call",
+      "description": "Wikipedia does not describe the call. The file is grade B from near Malelane. The filename is donkerwangbossanger, the Afrikaans name. No playable grade A was listed.",
+      "recordings": [
+        {
+          "key": "xeno-canto/XC793332",
+          "source": "https://xeno-canto.org/793332",
+          "fileUrl": "https://xeno-canto.org/sounds/uploaded/TSMVYZCIWC/XC793332-01-December-2022-donkerwangbossanger1.mp3",
+          "author": "Ehren Eksteen",
+          "license": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ]
+    }
+  ],
+  "images": [
+    {
+      "key": "eremomela-scotops/side.jpg",
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "source": "https://www.inaturalist.org/observations/228866393",
+      "fileUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/406147380/large.jpg",
+      "author": "David Kidwell",
+      "license": "CC BY-NC-SA 4.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+      "aiGenerated": false,
+      "hosted": false,
+      "alt": "Green-capped Eremomela perched in Kruger",
+      "caption": "Green-capped Eremomela perched in Kruger"
+    }
+  ],
+  "research": {
+    "confidence": "low",
+    "needsReview": true,
+    "note": "Newman has no page. Status and months were left unset."
+  }
 }

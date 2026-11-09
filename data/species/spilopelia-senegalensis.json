@@ -7,8 +7,45 @@
     "af": "Rooiborsduifie"
   },
   "family": "columbidae",
-  "summary": "The details for this species have not been published yet.",
-  "sampleData": true,
+  "status": "resident",
+  "monthsPresent": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+  ],
+  "size": {
+    "lengthCm": {
+      "min": 25,
+      "max": 25
+    },
+    "note": "Newman's Birds gives 25 cm."
+  },
+  "habitat": "Widespread in many habitats, often with the Ring-necked Dove, and common in suburbia. It is unaccountably absent from some regions.",
+  "summary": "A very common, sometimes abundant resident. No black collar. Pinkish head, cinnamon breast with black spots, and a rusty back. The wings are grey and the legs dark pink. In flight the outer tail feathers are white, like the Ring-necked Dove, but the mantle is rusty or cinnamon. The call is a soft coo-coo-cuk-coo-coo.",
+  "sampleData": false,
+  "similar": [
+    {
+      "slug": "streptopelia-capicola",
+      "note": "Cape Turtle Dove has a black collar and a greyish mantle. Laughing Dove has no collar, a spotted cinnamon breast and a rusty back."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Laughing Dove",
+      "url": "https://newmansbirds.com/birds/laughing-dove/",
+      "publisher": "Newman's Birds",
+      "year": 2026
+    }
+  ],
   "population": {
     "estimate": {
       "low": 65536,
@@ -35,8 +72,128 @@
     },
     "tierApplied": "D"
   },
-  "variants": [],
-  "viewNotes": [],
-  "calls": [],
-  "images": []
+  "variants": [
+    {
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "marks": {
+        "bill": {
+          "colour": null,
+          "shape": null
+        },
+        "eye": {
+          "iris": null,
+          "ring": null
+        },
+        "legs": {
+          "colour": "pink"
+        },
+        "head": {
+          "crown": "pink",
+          "face": "pink",
+          "throat": null,
+          "pattern": "Pinkish head. No black collar."
+        },
+        "upperparts": {
+          "back": "cinnamon",
+          "rump": null,
+          "pattern": "Rusty or cinnamon mantle."
+        },
+        "underparts": {
+          "breast": "cinnamon",
+          "belly": null,
+          "pattern": "Cinnamon breast with black spots."
+        },
+        "wings": {
+          "above": "grey",
+          "below": null,
+          "pattern": "Grey wings."
+        },
+        "tail": {
+          "colour": "white",
+          "shape": "white outer tail feathers"
+        }
+      }
+    }
+  ],
+  "viewNotes": [
+    {
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Pink-headed dove with a spotted cinnamon breast and no black collar."
+    },
+    {
+      "view": "perched-front",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Pinkish head. No collar."
+    },
+    {
+      "view": "perched-back",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Rusty back."
+    },
+    {
+      "view": "flight-above",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "White outer tail feathers. The mantle is cinnamon, not grey."
+    },
+    {
+      "view": "flight-below",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Cinnamon breast with black spots."
+    }
+  ],
+  "calls": [
+    {
+      "sex": "any",
+      "type": "call",
+      "description": "A soft coo-coo-cuk-coo-coo, like someone laughing quietly. The texts do not separate the sexes. Grade A from Kruger.",
+      "recordings": [
+        {
+          "key": "xeno-canto/XC1077428",
+          "source": "https://xeno-canto.org/1077428",
+          "fileUrl": "https://xeno-canto.org/sounds/uploaded/LWQXRZHFCU/XC1077428-2026-01-31-01_50-laughing-dove.mp3",
+          "author": "Niall Perrins",
+          "license": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ]
+    }
+  ],
+  "images": [
+    {
+      "key": "spilopelia-senegalensis/side.jpg",
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "source": "https://www.inaturalist.org/observations/248996456",
+      "fileUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/445015753/large.jpeg",
+      "author": "olwensands",
+      "license": "CC BY-NC 4.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+      "aiGenerated": false,
+      "hosted": false,
+      "alt": "Laughing Dove perched in Kruger",
+      "caption": "Laughing Dove perched in Kruger"
+    }
+  ],
+  "research": {
+    "confidence": "medium",
+    "needsReview": false,
+    "note": "Population figures were left unchanged."
+  }
 }

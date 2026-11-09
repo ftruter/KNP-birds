@@ -7,8 +7,45 @@
     "af": "Mikstertbyvanger"
   },
   "family": "dicruridae",
-  "summary": "The details for this species have not been published yet.",
-  "sampleData": true,
+  "status": "resident",
+  "monthsPresent": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+  ],
+  "size": {
+    "lengthCm": {
+      "min": 25,
+      "max": 25
+    },
+    "note": "Newman's Birds gives 25 cm."
+  },
+  "habitat": "Singly or in pairs in almost any non-forest habitat with trees.",
+  "summary": "A common resident. A black drongo with a deep ruby-red eye, a powerful bill and a strongly forked tail, the outer feathers splayed. The sexes are alike. It gives unmusical twanging notes mixed with imitations, especially of owls and other birds of prey. The Kemp code RB was left unchanged.",
+  "sampleData": false,
+  "similar": [
+    {
+      "slug": "dicrurus-ludwigii",
+      "note": "Common Square-tailed Drongo also has splayed outer tail feathers, but only a shallow fork. Fork-tailed Drongo has the deep fork."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Fork-tailed Drongo",
+      "url": "https://newmansbirds.com/birds/fork-tailed-drongo/",
+      "publisher": "Newman's Birds",
+      "year": 2026
+    }
+  ],
   "population": {
     "estimate": {
       "low": 65536,
@@ -35,8 +72,128 @@
     },
     "tierApplied": "D"
   },
-  "variants": [],
-  "viewNotes": [],
-  "calls": [],
-  "images": []
+  "variants": [
+    {
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "marks": {
+        "bill": {
+          "colour": null,
+          "shape": "Powerful."
+        },
+        "eye": {
+          "iris": "red",
+          "ring": null
+        },
+        "legs": {
+          "colour": null
+        },
+        "head": {
+          "crown": "black",
+          "face": "black",
+          "throat": "black",
+          "pattern": null
+        },
+        "upperparts": {
+          "back": "black",
+          "rump": null,
+          "pattern": null
+        },
+        "underparts": {
+          "breast": "black",
+          "belly": "black",
+          "pattern": null
+        },
+        "wings": {
+          "above": "black",
+          "below": null,
+          "pattern": null
+        },
+        "tail": {
+          "colour": "black",
+          "shape": "Deeply forked, the outer feathers splayed outwards."
+        }
+      }
+    }
+  ],
+  "viewNotes": [
+    {
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Black, with a deep ruby-red eye and a strongly forked tail, the outer feathers splayed."
+    },
+    {
+      "view": "perched-front",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Black underparts and a ruby-red eye. The bill is powerful."
+    },
+    {
+      "view": "perched-back",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "The deep fork shows from behind, with the outer feathers splayed."
+    },
+    {
+      "view": "flight-above",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Black above. A separate flight pattern was not described. It hawks from a perch."
+    },
+    {
+      "view": "flight-below",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Black below. The underside of the wing was not named."
+    }
+  ],
+  "calls": [
+    {
+      "sex": "any",
+      "type": "call",
+      "description": "A variety of unmusical twanging notes, mixed with imitations of other birds, especially owls and birds of prey. Newman does not separate the sexes. Grade A call from Grahamstown. The filename is Fork-tailed drongo.mp3.",
+      "recordings": [
+        {
+          "key": "xeno-canto/XC298129",
+          "source": "https://xeno-canto.org/298129",
+          "fileUrl": "https://xeno-canto.org/sounds/uploaded/SGLTZLDXYI/XC298129-Fork-tailed%20drongo.mp3",
+          "author": "Lynette Rudman",
+          "license": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ]
+    }
+  ],
+  "images": [
+    {
+      "key": "dicrurus-adsimilis/side.jpg",
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "source": "https://www.inaturalist.org/observations/392853470",
+      "fileUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/720004835/large.jpg",
+      "author": "Lukas Zangl",
+      "license": "CC BY 4.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by/4.0/",
+      "aiGenerated": false,
+      "hosted": false,
+      "alt": "Fork-tailed Drongo perched in Kruger, black with a deep fork",
+      "caption": "Fork-tailed Drongo perched in Kruger, black, with the outer tail feathers splayed into a deep fork."
+    }
+  ],
+  "research": {
+    "confidence": "medium",
+    "needsReview": false,
+    "note": "Status is resident and all twelve months are listed. Newman says the immature is as illustrated and gives no written plumage, so no immature variant was stored. Population figures were left unchanged."
+  }
 }
