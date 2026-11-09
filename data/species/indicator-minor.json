@@ -7,8 +7,45 @@
     "af": "Kleinheuningwyser"
   },
   "family": "indicatoridae",
-  "summary": "The details for this species have not been published yet.",
-  "sampleData": true,
+  "status": "resident",
+  "monthsPresent": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+  ],
+  "size": {
+    "lengthCm": {
+      "min": 15,
+      "max": 15
+    },
+    "note": "Newman's Birds gives 15 cm."
+  },
+  "habitat": "Singly in various wooded habitats, including suburbia.",
+  "summary": "A common resident. Thick, stumpy bill with a pale patch at the base, yellow edges to the wing feathers, white outer tail feathers, a dusky breast and a white belly. The head is dull grey-brown, not greenish, with a dark grey malar stripe, and the underparts are not streaked. It calls tzeeu, then sheek repeated 30 to 40 times from a regular site. The Kemp code RB was left unchanged.",
+  "sampleData": false,
+  "similar": [
+    {
+      "slug": "indicator-indicator",
+      "note": "Greater Honeyguide has a pale ear patch. The male’s bill is pink. Lesser Honeyguide has the pale patch at the base of a thick bill."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Lesser Honeyguide",
+      "url": "https://newmansbirds.com/birds/lesser-honeyguide/",
+      "publisher": "Newman's Birds",
+      "year": 2026
+    }
+  ],
   "population": {
     "estimate": {
       "low": 4096,
@@ -35,8 +72,128 @@
     },
     "tierApplied": "D"
   },
-  "variants": [],
-  "viewNotes": [],
-  "calls": [],
-  "images": []
+  "variants": [
+    {
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "marks": {
+        "bill": {
+          "colour": null,
+          "shape": "Thick and stumpy, with a pale patch at the base."
+        },
+        "eye": {
+          "iris": null,
+          "ring": null
+        },
+        "legs": {
+          "colour": null
+        },
+        "head": {
+          "crown": "grey",
+          "face": null,
+          "throat": null,
+          "pattern": "Dull grey-brown, not greenish. Dark grey malar stripe."
+        },
+        "upperparts": {
+          "back": null,
+          "rump": null,
+          "pattern": null
+        },
+        "underparts": {
+          "breast": "grey",
+          "belly": "white",
+          "pattern": "Dusky breast and white belly. No streaking."
+        },
+        "wings": {
+          "above": null,
+          "below": null,
+          "pattern": "Wing feathers edged paler, with yellow edges."
+        },
+        "tail": {
+          "colour": null,
+          "shape": "White outer tail feathers."
+        }
+      }
+    }
+  ],
+  "viewNotes": [
+    {
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Thick bill with a pale base, grey-brown head and white outer tail."
+    },
+    {
+      "view": "perched-front",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Pale patch at the base of the bill and a dark grey malar stripe."
+    },
+    {
+      "view": "perched-back",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "The upper parts are dark on the colour line. The head is dull grey-brown."
+    },
+    {
+      "view": "flight-above",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Yellow edges show on the wing feathers."
+    },
+    {
+      "view": "flight-below",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Dusky breast and white belly, unstreaked."
+    }
+  ],
+  "calls": [
+    {
+      "sex": "any",
+      "type": "call",
+      "description": "From a regular call-site, tzeeu, then sheek, sheek, sheek, repeated 30 to 40 times. Grade A call from near Richards Bay. The filename is a place name, Indaba Hotel R Bay, and does not name the bird.",
+      "recordings": [
+        {
+          "key": "xeno-canto/XC442035",
+          "source": "https://xeno-canto.org/442035",
+          "fileUrl": "https://xeno-canto.org/sounds/uploaded/HMBDEWEZVS/XC442035-Indaba%20Hotel%20R%20Bay%2010.11.2018.mp3",
+          "author": "Tony Archer",
+          "license": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ]
+    }
+  ],
+  "images": [
+    {
+      "key": "indicator-minor/side.jpg",
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "source": "https://www.inaturalist.org/observations/262141602",
+      "fileUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/471020327/large.jpeg",
+      "author": "Richard Johnstone",
+      "license": "CC BY-NC 4.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+      "aiGenerated": false,
+      "hosted": false,
+      "alt": "Lesser Honeyguide with white outer tail feathers",
+      "caption": "Lesser Honeyguide in the Ehlanzeni district, grey-headed, with pale edges on the wing and white outer tail feathers."
+    }
+  ],
+  "research": {
+    "confidence": "medium",
+    "needsReview": false,
+    "note": "Status is resident and all twelve months are listed. Population figures were left unchanged."
+  }
 }
