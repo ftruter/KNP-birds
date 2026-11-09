@@ -7,8 +7,30 @@
     "af": "Rooikeelbyvreter"
   },
   "family": "meropidae",
-  "summary": "The details for this species have not been published yet.",
-  "sampleData": true,
+  "size": {
+    "lengthCm": {
+      "min": 22,
+      "max": 24
+    },
+    "note": "Newman's Birds gives 22–24 cm."
+  },
+  "habitat": "Flocks near rivers with mud banks, where it nests.",
+  "summary": "A common resident. White forehead and upper throat, red lower throat, cinnamon nape and breast, green back, wings and upper tail, and a blue belly to a dark blue vent. The call is a querulous quirk and other similar sounds. The Kemp code RB was left unchanged.",
+  "sampleData": false,
+  "sources": [
+    {
+      "title": "White-fronted Bee-eater",
+      "url": "https://newmansbirds.com/birds/white-fronted-bee-eater/",
+      "publisher": "Newman's Birds",
+      "year": 2026
+    },
+    {
+      "title": "Kemp A.C., Herholdt J.J., Whyte I. & Harrison J. (2001). Birds of the two largest national parks in South Africa: a method to generate estimates of population size for all species and assess their conservation ecology. S. Afr. J. Sci. 97: 393–403.",
+      "url": "https://journals.co.za/doi/pdf/10.10520/EJC97367",
+      "publisher": "South African Journal of Science",
+      "year": 2001
+    }
+  ],
   "population": {
     "estimate": {
       "low": 4096,
@@ -35,8 +57,142 @@
     },
     "tierApplied": "D"
   },
-  "variants": [],
-  "viewNotes": [],
-  "calls": [],
-  "images": []
+  "variants": [
+    {
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "marks": {
+        "bill": {
+          "colour": null,
+          "shape": null
+        },
+        "eye": {
+          "iris": null,
+          "ring": null
+        },
+        "legs": {
+          "colour": null
+        },
+        "head": {
+          "crown": null,
+          "face": null,
+          "throat": null,
+          "pattern": "White forehead and chin, white upper throat, red lower throat, cinnamon nape."
+        },
+        "upperparts": {
+          "back": "green",
+          "rump": null,
+          "pattern": "Back, wings and upper tail green."
+        },
+        "underparts": {
+          "breast": "cinnamon",
+          "belly": "blue",
+          "pattern": "Cinnamon breast. Belly to vent blue. The description says the vent is dark blue."
+        },
+        "wings": {
+          "above": "green",
+          "below": null
+        },
+        "tail": {
+          "colour": "green",
+          "shape": "Green upper tail."
+        }
+      }
+    }
+  ],
+  "viewNotes": [
+    {
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "White forehead, red lower throat, cinnamon breast, green back and a blue belly."
+    },
+    {
+      "view": "perched-front",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "White upper throat and red lower throat."
+    },
+    {
+      "view": "perched-back",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Green back, wings and upper tail."
+    },
+    {
+      "view": "flight-above",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Green wings. No other flight mark was described."
+    },
+    {
+      "view": "flight-below",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Blue belly to a dark blue vent."
+    }
+  ],
+  "calls": [
+    {
+      "sex": "any",
+      "type": "call",
+      "description": "A querulous quirk and other similar sounds. Grade A call from near Skukuza, Kruger Park. The filename is XC1149412-20260519_KNP_AKaramitsos_XA60_A027C058_26051986_SLE_1000HP_-3dB_Bee-eater.mp3. It says Bee-eater and includes -3dB, and it does not name White-fronted.",
+      "recordings": [
+        {
+          "key": "xeno-canto/XC1149412",
+          "source": "https://xeno-canto.org/1149412",
+          "fileUrl": "https://xeno-canto.org/sounds/uploaded/YSGTQVRQZI/XC1149412-20260519_KNP_AKaramitsos_XA60_A027C058_26051986_SLE_1000HP_-3dB_Bee-eater.mp3",
+          "author": "African Bioacoustics Community",
+          "license": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ]
+    }
+  ],
+  "images": [
+    {
+      "key": "merops-bullockoides/side.jpg",
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "source": "https://www.inaturalist.org/observations/259914502",
+      "fileUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/466662779/large.jpg",
+      "author": "brewmaster",
+      "license": "CC BY-NC 4.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+      "aiGenerated": false,
+      "hosted": false,
+      "alt": "White-fronted Bee-eater perched, white forehead, red throat, cinnamon breast and blue belly",
+      "caption": "White-fronted Bee-eater in the Ehlanzeni district, white forehead, red throat, cinnamon breast, green back and a blue belly."
+    }
+  ],
+  "research": {
+    "confidence": "medium",
+    "needsReview": false,
+    "note": "Newman calls it a common resident, so status is resident and all twelve months are listed. Population figures and the Kemp code RB were left unchanged."
+  },
+  "status": "resident",
+  "monthsPresent": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+  ]
 }

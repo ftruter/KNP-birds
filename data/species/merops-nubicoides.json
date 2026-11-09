@@ -7,8 +7,30 @@
     "af": "Rooiborsbyvreter"
   },
   "family": "meropidae",
-  "summary": "The details for this species have not been published yet.",
-  "sampleData": true,
+  "size": {
+    "lengthCm": {
+      "min": 33,
+      "max": 38
+    },
+    "note": "Newman's Birds gives 33–38 cm."
+  },
+  "habitat": "Flocks near large rivers and marshes, and in woodland and mixed bushveld, hawking from trees and from the ground.",
+  "summary": "Newman calls it a common summer resident and visitor. The largest bee-eater in the region, with carmine-red body and wings, a blue crown and a pink throat, and a curved black bill. It differs from Northern Carmine Bee-eater by the blue crown and the pink, not blue, throat. The immature has brown upperparts and pale cinnamon underparts with traces of pink. The call is a deep terk, terk. Status and months are left unset because Newman gives both summer resident and visitor. The Kemp code NB was left unchanged.",
+  "sampleData": false,
+  "sources": [
+    {
+      "title": "Southern Carmine Bee-eater",
+      "url": "https://newmansbirds.com/birds/southern-carmine-bee-eater/",
+      "publisher": "Newman's Birds",
+      "year": 2026
+    },
+    {
+      "title": "Kemp A.C., Herholdt J.J., Whyte I. & Harrison J. (2001). Birds of the two largest national parks in South Africa: a method to generate estimates of population size for all species and assess their conservation ecology. S. Afr. J. Sci. 97: 393–403.",
+      "url": "https://journals.co.za/doi/pdf/10.10520/EJC97367",
+      "publisher": "South African Journal of Science",
+      "year": 2001
+    }
+  ],
   "population": {
     "estimate": {
       "low": 2048,
@@ -35,8 +57,210 @@
     },
     "tierApplied": "D"
   },
-  "variants": [],
-  "viewNotes": [],
-  "calls": [],
-  "images": []
+  "variants": [
+    {
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "marks": {
+        "bill": {
+          "colour": "black",
+          "shape": "Curved bill."
+        },
+        "eye": {
+          "iris": null,
+          "ring": null
+        },
+        "legs": {
+          "colour": null
+        },
+        "head": {
+          "crown": "blue",
+          "face": null,
+          "throat": null,
+          "pattern": "Blue crown. Pink throat, not blue. Pink and carmine are not used as a single body-colour token."
+        },
+        "upperparts": {
+          "back": null,
+          "rump": null,
+          "pattern": "Carmine-red body and wings. Carmine is not a colour token."
+        },
+        "underparts": {
+          "breast": null,
+          "belly": null,
+          "pattern": "Carmine-red body. Throat pink, not blue."
+        },
+        "wings": {
+          "above": null,
+          "below": null,
+          "pattern": "Carmine-red wings."
+        },
+        "tail": {
+          "colour": null,
+          "shape": null
+        }
+      }
+    },
+    {
+      "age": "immature",
+      "sex": "any",
+      "season": "any",
+      "marks": {
+        "bill": {
+          "colour": null,
+          "shape": null
+        },
+        "eye": {
+          "iris": null,
+          "ring": null
+        },
+        "legs": {
+          "colour": null
+        },
+        "head": {
+          "crown": null,
+          "face": null,
+          "throat": null
+        },
+        "upperparts": {
+          "back": "brown",
+          "rump": null,
+          "pattern": "Brown upperparts."
+        },
+        "underparts": {
+          "breast": null,
+          "belly": null,
+          "pattern": "Pale cinnamon underparts with traces of pink."
+        },
+        "wings": {
+          "above": null,
+          "below": null
+        },
+        "tail": {
+          "colour": null,
+          "shape": null
+        }
+      }
+    }
+  ],
+  "viewNotes": [
+    {
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Carmine-red body and wings, blue crown, pink throat and a curved black bill."
+    },
+    {
+      "view": "perched-front",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Blue crown and pink throat."
+    },
+    {
+      "view": "perched-back",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Carmine-red upperparts. A separate back colour was not named beyond carmine-red."
+    },
+    {
+      "view": "flight-above",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Carmine-red wings."
+    },
+    {
+      "view": "flight-below",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Carmine-red underparts and a pink throat."
+    },
+    {
+      "view": "perched-side",
+      "age": "immature",
+      "sex": "any",
+      "season": "any",
+      "note": "Brown upperparts and pale cinnamon underparts with traces of pink."
+    },
+    {
+      "view": "perched-front",
+      "age": "immature",
+      "sex": "any",
+      "season": "any",
+      "note": "The immature face was not described."
+    },
+    {
+      "view": "perched-back",
+      "age": "immature",
+      "sex": "any",
+      "season": "any",
+      "note": "Brown upperparts."
+    },
+    {
+      "view": "flight-above",
+      "age": "immature",
+      "sex": "any",
+      "season": "any",
+      "note": "An immature flight pattern was not described."
+    },
+    {
+      "view": "flight-below",
+      "age": "immature",
+      "sex": "any",
+      "season": "any",
+      "note": "Pale cinnamon underparts with traces of pink."
+    }
+  ],
+  "calls": [
+    {
+      "sex": "any",
+      "type": "call",
+      "description": "A deep terk, terk. Grade A call from Skukuza Rest Camp. The filename is XC1188475-260126-101336_Tr1-Carmine-bee-eater-Kruger-Skukuza.mp3.",
+      "recordings": [
+        {
+          "key": "xeno-canto/XC1188475",
+          "source": "https://xeno-canto.org/1188475",
+          "fileUrl": "https://xeno-canto.org/sounds/uploaded/QXGZDUUJUO/XC1188475-260126-101336_Tr1-Carmine-bee-eater-Kruger-Skukuza.mp3",
+          "author": "JJSUN",
+          "license": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ]
+    }
+  ],
+  "images": [
+    {
+      "key": "merops-nubicoides/side.jpg",
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "source": "https://www.inaturalist.org/observations/9394146",
+      "fileUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/12765348/large.jpg",
+      "author": "maritzasouthafrica",
+      "license": "CC BY-NC 4.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+      "aiGenerated": false,
+      "hosted": false,
+      "alt": "Southern Carmine Bee-eater perched, pink body, blue crown and black bill",
+      "caption": "Southern Carmine Bee-eater at Shingwedzi, carmine-pink body, blue-green crown and a curved black bill."
+    }
+  ],
+  "research": {
+    "confidence": "medium",
+    "needsReview": true,
+    "note": "Newman says common summer resident and visitor, so status and monthsPresent are left unset. Northern Carmine Bee-eater is the comparison and is not in this list. Carmine is not a colour token. Population figures and the Kemp code NB were left unchanged."
+  },
+  "similar": [
+    {
+      "slug": "merops-persicus",
+      "note": "Blue-cheeked Bee-eater is green above, with pale blue cheeks and a rufous throat. It is not carmine."
+    }
+  ]
 }
