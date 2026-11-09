@@ -7,8 +7,45 @@
     "af": "Skerpbekheuningvoël"
   },
   "family": "indicatoridae",
-  "summary": "The details for this species have not been published yet.",
-  "sampleData": true,
+  "status": "resident",
+  "monthsPresent": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+  ],
+  "size": {
+    "lengthCm": {
+      "min": 13,
+      "max": 13
+    },
+    "note": "Newman's Birds gives 13 cm."
+  },
+  "habitat": "Singly in open bushveld, plantations and suburbia. It hawks insects from a high perch.",
+  "summary": "An uncommon resident. A small, nondescript bird, dark brown above, white below with a dusky breast and a white throat, and a black bill. The outer tail feathers are white with brown tips, and there are white patches on the sides of the rump. In display it gives a high insect-like tseet. The call note is a thin trill lasting about four seconds. The Kemp name is Sharpbilled Honeyguide and the code RB was left unchanged.",
+  "sampleData": false,
+  "similar": [
+    {
+      "slug": "indicator-minor",
+      "note": "Lesser Honeyguide is larger, with a thick bill and a pale patch at its base. Brown-backed Honeybird is the small brown bird with a black bill and white outer tail."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Brown-backed Honeybird",
+      "url": "https://newmansbirds.com/birds/brown-backed-honeybird/",
+      "publisher": "Newman's Birds",
+      "year": 2026
+    }
+  ],
   "population": {
     "estimate": {
       "low": 512,
@@ -35,8 +72,128 @@
     },
     "tierApplied": "D"
   },
-  "variants": [],
-  "viewNotes": [],
-  "calls": [],
-  "images": []
+  "variants": [
+    {
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "marks": {
+        "bill": {
+          "colour": "black",
+          "shape": null
+        },
+        "eye": {
+          "iris": null,
+          "ring": null
+        },
+        "legs": {
+          "colour": null
+        },
+        "head": {
+          "crown": null,
+          "face": null,
+          "throat": "white",
+          "pattern": null
+        },
+        "upperparts": {
+          "back": "dark-brown",
+          "rump": "white",
+          "pattern": "White patches on the sides of the rump."
+        },
+        "underparts": {
+          "breast": "grey",
+          "belly": "white",
+          "pattern": "White below, with a dusky breast."
+        },
+        "wings": {
+          "above": null,
+          "below": null,
+          "pattern": null
+        },
+        "tail": {
+          "colour": "white",
+          "shape": "White outer feathers with brown tips."
+        }
+      }
+    }
+  ],
+  "viewNotes": [
+    {
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Small, dark brown above and white below, with a black bill."
+    },
+    {
+      "view": "perched-front",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "White throat and dusky breast."
+    },
+    {
+      "view": "perched-back",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Dark brown upper parts. White rump patches show when it hawks."
+    },
+    {
+      "view": "flight-above",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "High-speed chases in display. Brown-tipped white outer tail feathers."
+    },
+    {
+      "view": "flight-below",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "White underparts with a dusky breast."
+    }
+  ],
+  "calls": [
+    {
+      "sex": "any",
+      "type": "call",
+      "description": "A high-pitched, insect-like tseet during display chases, and a thin trill tirrrrrrrr lasting about four seconds. No grade A recording was in the set. Grade B from Kirstenbosch. The catalogue types it as song and the filename says the file was edited. It was not cleaned again.",
+      "recordings": [
+        {
+          "key": "xeno-canto/XC342524",
+          "source": "https://xeno-canto.org/342524",
+          "fileUrl": "https://xeno-canto.org/sounds/uploaded/RGSEIIJGHA/XC342524-BrownbackedHoneybird_Kirstenbosch_161112_1872_edited.mp3",
+          "author": "Bram Piot",
+          "license": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ]
+    }
+  ],
+  "images": [
+    {
+      "key": "prodotiscus-regulus/side.jpg",
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "source": "https://www.inaturalist.org/observations/199651567",
+      "fileUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/352124726/large.jpg",
+      "author": "Duncan McKenzie",
+      "license": "CC BY-NC 4.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+      "aiGenerated": false,
+      "hosted": false,
+      "alt": "Brown-backed Honeybird at Mbombela",
+      "caption": "Brown-backed Honeybird at Sonheuwel, Mbombela."
+    }
+  ],
+  "research": {
+    "confidence": "medium",
+    "needsReview": false,
+    "note": "Status is resident and all twelve months are listed. Population figures were left unchanged."
+  }
 }

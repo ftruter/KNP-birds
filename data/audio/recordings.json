@@ -2946,6 +2946,46 @@
           }
         }
       ]
+    },
+    "indicator-indicator": {
+      "calls": [
+        {
+          "index": 0,
+          "quality": {
+            "xeno-canto/XC429103": "A"
+          }
+        }
+      ]
+    },
+    "indicator-minor": {
+      "calls": [
+        {
+          "index": 0,
+          "quality": {
+            "xeno-canto/XC442035": "A"
+          }
+        }
+      ]
+    },
+    "indicator-variegatus": {
+      "calls": [
+        {
+          "index": 0,
+          "quality": {
+            "xeno-canto/XC532751": "A"
+          }
+        }
+      ]
+    },
+    "prodotiscus-regulus": {
+      "calls": [
+        {
+          "index": 0,
+          "quality": {
+            "xeno-canto/XC342524": "B"
+          }
+        }
+      ]
     }
   }
 }

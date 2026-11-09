@@ -12205,14 +12205,42 @@
       "slug": "indicator-indicator",
       "scientificName": "Indicator indicator",
       "commonName": "Greater Honeyguide",
-      "images": [],
-      "recordings": [],
+      "images": [
+        {
+          "key": "indicator-indicator/side.jpg",
+          "author": "brewmaster",
+          "licence": "CC BY-NC 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+          "sourceUrl": "https://www.inaturalist.org/observations/261874590",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ],
+      "recordings": [
+        {
+          "key": "xeno-canto/XC429103",
+          "author": "Tim Cockcroft",
+          "licence": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "sourceUrl": "https://xeno-canto.org/429103",
+          "aiGenerated": false,
+          "hosted": false,
+          "quality": "A",
+          "callType": "call"
+        }
+      ],
       "sources": [
         {
           "title": "Kemp A.C., Herholdt J.J., Whyte I. & Harrison J. (2001). Birds of the two largest national parks in South Africa: a method to generate estimates of population size for all species and assess their conservation ecology. S. Afr. J. Sci. 97: 393–403.",
           "url": "https://journals.co.za/doi/pdf/10.10520/EJC97367",
           "publisher": "South African Journal of Science",
           "year": 2001
+        },
+        {
+          "title": "Greater Honeyguide",
+          "url": "https://newmansbirds.com/birds/greater-honeyguide/",
+          "publisher": "Newman's Birds",
+          "year": 2026
         }
       ]
     },
@@ -12220,14 +12248,42 @@
       "slug": "indicator-minor",
       "scientificName": "Indicator minor",
       "commonName": "Lesser Honeyguide",
-      "images": [],
-      "recordings": [],
+      "images": [
+        {
+          "key": "indicator-minor/side.jpg",
+          "author": "Richard Johnstone",
+          "licence": "CC BY-NC 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+          "sourceUrl": "https://www.inaturalist.org/observations/262141602",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ],
+      "recordings": [
+        {
+          "key": "xeno-canto/XC442035",
+          "author": "Tony Archer",
+          "licence": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "sourceUrl": "https://xeno-canto.org/442035",
+          "aiGenerated": false,
+          "hosted": false,
+          "quality": "A",
+          "callType": "call"
+        }
+      ],
       "sources": [
         {
           "title": "Kemp A.C., Herholdt J.J., Whyte I. & Harrison J. (2001). Birds of the two largest national parks in South Africa: a method to generate estimates of population size for all species and assess their conservation ecology. S. Afr. J. Sci. 97: 393–403.",
           "url": "https://journals.co.za/doi/pdf/10.10520/EJC97367",
           "publisher": "South African Journal of Science",
           "year": 2001
+        },
+        {
+          "title": "Lesser Honeyguide",
+          "url": "https://newmansbirds.com/birds/lesser-honeyguide/",
+          "publisher": "Newman's Birds",
+          "year": 2026
         }
       ]
     },
@@ -12235,14 +12291,42 @@
       "slug": "indicator-variegatus",
       "scientificName": "Indicator variegatus",
       "commonName": "Scaly-throated Honeyguide",
-      "images": [],
-      "recordings": [],
+      "images": [
+        {
+          "key": "indicator-variegatus/side.jpg",
+          "author": "manatok",
+          "licence": "CC BY-NC 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+          "sourceUrl": "https://www.inaturalist.org/observations/90925748",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ],
+      "recordings": [
+        {
+          "key": "xeno-canto/XC532751",
+          "author": "Barry Edmonston",
+          "licence": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "sourceUrl": "https://xeno-canto.org/532751",
+          "aiGenerated": false,
+          "hosted": false,
+          "quality": "A",
+          "callType": "call"
+        }
+      ],
       "sources": [
         {
           "title": "Kemp A.C., Herholdt J.J., Whyte I. & Harrison J. (2001). Birds of the two largest national parks in South Africa: a method to generate estimates of population size for all species and assess their conservation ecology. S. Afr. J. Sci. 97: 393–403.",
           "url": "https://journals.co.za/doi/pdf/10.10520/EJC97367",
           "publisher": "South African Journal of Science",
           "year": 2001
+        },
+        {
+          "title": "Scaly-throated Honeyguide",
+          "url": "https://newmansbirds.com/birds/scaly-throated-honeyguide/",
+          "publisher": "Newman's Birds",
+          "year": 2026
         }
       ]
     },
@@ -15673,14 +15757,42 @@
       "slug": "prodotiscus-regulus",
       "scientificName": "Prodotiscus regulus",
       "commonName": "Brown-backed Honeybird",
-      "images": [],
-      "recordings": [],
+      "images": [
+        {
+          "key": "prodotiscus-regulus/side.jpg",
+          "author": "Duncan McKenzie",
+          "licence": "CC BY-NC 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+          "sourceUrl": "https://www.inaturalist.org/observations/199651567",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ],
+      "recordings": [
+        {
+          "key": "xeno-canto/XC342524",
+          "author": "Bram Piot",
+          "licence": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "sourceUrl": "https://xeno-canto.org/342524",
+          "aiGenerated": false,
+          "hosted": false,
+          "quality": "B",
+          "callType": "call"
+        }
+      ],
       "sources": [
         {
           "title": "Kemp A.C., Herholdt J.J., Whyte I. & Harrison J. (2001). Birds of the two largest national parks in South Africa: a method to generate estimates of population size for all species and assess their conservation ecology. S. Afr. J. Sci. 97: 393–403.",
           "url": "https://journals.co.za/doi/pdf/10.10520/EJC97367",
           "publisher": "South African Journal of Science",
           "year": 2001
+        },
+        {
+          "title": "Brown-backed Honeybird",
+          "url": "https://newmansbirds.com/birds/brown-backed-honeybird/",
+          "publisher": "Newman's Birds",
+          "year": 2026
         }
       ]
     },

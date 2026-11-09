@@ -7,8 +7,45 @@
     "af": "Gevlekte Heuningwyser"
   },
   "family": "indicatoridae",
-  "summary": "The details for this species have not been published yet.",
-  "sampleData": true,
+  "status": "resident",
+  "monthsPresent": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+  ],
+  "size": {
+    "lengthCm": {
+      "min": 19,
+      "max": 19
+    },
+    "note": "Newman's Birds gives 19 cm."
+  },
+  "habitat": "Usually solitary at forest fringes, in riverine forest and valley bush.",
+  "summary": "A fairly common resident. Streaky head, scaly throat and breast usually washed yellow, grey back, yellow bars on the wings and paler underparts. The call is a high foyt-foyt-foyt, or a purring trrrrrrrr from a call-site, rising at the end. It sometimes guides to bees’ nests and otherwise hawks insects. The Kemp code RB was left unchanged.",
+  "sampleData": false,
+  "similar": [
+    {
+      "slug": "indicator-minor",
+      "note": "Lesser Honeyguide is unstreaked below and has a pale patch at the bill base. Scaly-throated Honeyguide has the streaked head and scaly breast."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Scaly-throated Honeyguide",
+      "url": "https://newmansbirds.com/birds/scaly-throated-honeyguide/",
+      "publisher": "Newman's Birds",
+      "year": 2026
+    }
+  ],
   "population": {
     "estimate": {
       "low": 16,
@@ -35,8 +72,128 @@
     },
     "tierApplied": "D"
   },
-  "variants": [],
-  "viewNotes": [],
-  "calls": [],
-  "images": []
+  "variants": [
+    {
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "marks": {
+        "bill": {
+          "colour": null,
+          "shape": null
+        },
+        "eye": {
+          "iris": null,
+          "ring": null
+        },
+        "legs": {
+          "colour": null
+        },
+        "head": {
+          "crown": null,
+          "face": null,
+          "throat": null,
+          "pattern": "Streaky head. Scaly throat, usually with a yellow wash."
+        },
+        "upperparts": {
+          "back": "grey",
+          "rump": null,
+          "pattern": null
+        },
+        "underparts": {
+          "breast": null,
+          "belly": null,
+          "pattern": "Scaly breast, usually washed yellow. Paler underparts."
+        },
+        "wings": {
+          "above": null,
+          "below": null,
+          "pattern": "Yellow bars on the wings."
+        },
+        "tail": {
+          "colour": null,
+          "shape": null
+        }
+      }
+    }
+  ],
+  "viewNotes": [
+    {
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Streaked head and a scaly, yellowish throat and breast."
+    },
+    {
+      "view": "perched-front",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Scaly throat and breast."
+    },
+    {
+      "view": "perched-back",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Grey back."
+    },
+    {
+      "view": "flight-above",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Yellow bars on the wings. It hawks insects like a flycatcher."
+    },
+    {
+      "view": "flight-below",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Paler underparts with a scaly breast."
+    }
+  ],
+  "calls": [
+    {
+      "sex": "any",
+      "type": "call",
+      "description": "A high-pitched foyt-foyt-foyt, or a purring trrrrrrrr from a call-site, rising at the end. Grade A call from East Shewa, Ethiopia. The filename names Scaly-throated Honeyguide.",
+      "recordings": [
+        {
+          "key": "xeno-canto/XC532751",
+          "source": "https://xeno-canto.org/532751",
+          "fileUrl": "https://xeno-canto.org/sounds/uploaded/FHQVLXJQKW/XC532751-Scaly-throated%20Honeyguide.mp3",
+          "author": "Barry Edmonston",
+          "license": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ]
+    }
+  ],
+  "images": [
+    {
+      "key": "indicator-variegatus/side.jpg",
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "source": "https://www.inaturalist.org/observations/90925748",
+      "fileUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/150323086/large.jpg",
+      "author": "manatok",
+      "license": "CC BY-NC 4.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+      "aiGenerated": false,
+      "hosted": false,
+      "alt": "Scaly-throated Honeyguide in Mopani",
+      "caption": "Scaly-throated Honeyguide in Mopani."
+    }
+  ],
+  "research": {
+    "confidence": "medium",
+    "needsReview": false,
+    "note": "Status is resident and all twelve months are listed. Population figures were left unchanged."
+  }
 }

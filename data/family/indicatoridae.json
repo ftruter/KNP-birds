@@ -6,8 +6,8 @@
     "en": "Honeyguides",
     "af": "Heuningwysers"
   },
-  "summary": "Field notes for this family are still to be written.",
-  "sampleData": true,
+  "summary": "Small woodland birds that lay in other birds’ nests. Kruger has four. Greater Honeyguide is the one that guides people to bees’ nests; the male has a pink bill. Lesser Honeyguide has a thick bill with a pale base. Scaly-throated Honeyguide has a streaked head and a scaly breast. Brown-backed Honeybird is the small brown one with a black bill.",
+  "sampleData": false,
   "species": [
     {
       "slug": "indicator-indicator",

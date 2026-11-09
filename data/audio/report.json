@@ -1,9 +1,9 @@
 {
   "source": "xeno-canto explore catalogue, API v3 recording fields",
   "counts": {
-    "slots": 288,
+    "slots": 292,
     "swapped": 17,
-    "added": 186,
+    "added": 190,
     "kept": 57,
     "none": 28,
     "cleaned": 0
@@ -4421,6 +4421,62 @@
       "quality": "A",
       "country": "Sweden",
       "locality": "Hästekulla grustag, Tibro, Västergötland",
+      "cleaned": false,
+      "license": "CC BY-NC-SA 4.0"
+    },
+    {
+      "slug": "indicator-indicator",
+      "scientificName": "Indicator indicator",
+      "index": 0,
+      "type": "call",
+      "action": "added",
+      "from": [],
+      "to": "429103",
+      "quality": "A",
+      "country": "South Africa",
+      "locality": "Shaw Park, Bathurst District, Eastern Cape",
+      "cleaned": false,
+      "license": "CC BY-NC-SA 4.0"
+    },
+    {
+      "slug": "indicator-minor",
+      "scientificName": "Indicator minor",
+      "index": 0,
+      "type": "call",
+      "action": "added",
+      "from": [],
+      "to": "442035",
+      "quality": "A",
+      "country": "South Africa",
+      "locality": "uMhlathuze Municipality (near Richards Bay), (South) Uthungulu DC, KwaZulu-Natal",
+      "cleaned": false,
+      "license": "CC BY-NC-SA 4.0"
+    },
+    {
+      "slug": "indicator-variegatus",
+      "scientificName": "Indicator variegatus",
+      "index": 0,
+      "type": "call",
+      "action": "added",
+      "from": [],
+      "to": "532751",
+      "quality": "A",
+      "country": "Ethiopia",
+      "locality": "East Shewa, Oromia",
+      "cleaned": false,
+      "license": "CC BY-NC-SA 4.0"
+    },
+    {
+      "slug": "prodotiscus-regulus",
+      "scientificName": "Prodotiscus regulus",
+      "index": 0,
+      "type": "call",
+      "action": "added",
+      "from": [],
+      "to": "342524",
+      "quality": "B",
+      "country": "South Africa",
+      "locality": "Kirstenbosch Botanical Garden, Cape Town, Western Cape",
       "cleaned": false,
       "license": "CC BY-NC-SA 4.0"
     }
