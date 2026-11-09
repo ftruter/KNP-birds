@@ -3606,6 +3606,16 @@
           }
         }
       ]
+    },
+    "pandion-haliaetus": {
+      "calls": [
+        {
+          "index": 0,
+          "quality": {
+            "xeno-canto/XC143656": "A"
+          }
+        }
+      ]
     }
   }
 }

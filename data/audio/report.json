@@ -1,9 +1,9 @@
 {
   "source": "xeno-canto explore catalogue, API v3 recording fields",
   "counts": {
-    "slots": 354,
+    "slots": 355,
     "swapped": 17,
-    "added": 252,
+    "added": 253,
     "kept": 57,
     "none": 28,
     "cleaned": 0
@@ -5347,6 +5347,20 @@
       "locality": "Kruger National Park (near Kruger Park), Ehlanzeni, Mpumalanga",
       "cleaned": false,
       "license": "CC BY-NC-SA 4.0"
+    },
+    {
+      "slug": "pandion-haliaetus",
+      "scientificName": "Pandion haliaetus",
+      "index": 0,
+      "type": "call",
+      "action": "added",
+      "from": [],
+      "to": "143656",
+      "quality": "A",
+      "country": "United States",
+      "locality": "Orlando Wetlands, Christmas, Orange County, Florida",
+      "cleaned": false,
+      "license": "CC BY-NC-SA 3.0"
     }
   ]
 }
