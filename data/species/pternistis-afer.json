@@ -7,8 +7,36 @@
     "af": "Rooikeelfisant"
   },
   "family": "phasianidae",
-  "summary": "The details for this species have not been published yet.",
-  "sampleData": true,
+  "size": {
+    "lengthCm": {
+      "min": 32,
+      "max": 44
+    },
+    "note": "Newman's Birds gives 32–44 cm."
+  },
+  "habitat": "Small groups in valley bush, forest fringes, coastal bush and fallow agricultural land. If pursued it takes refuge in trees.",
+  "summary": "A common resident. At least six plumage forms occur. In all of them the bill, facial mask, throat and legs are red. The colour key for the eastern races, which include northeastern South Africa, says dark brown above streaked black, and black below streaked white. The other morphs are only located, not described. The call is a harsh choorr, choorr, choorr, chwirr, fading at the end, or choor-choor when flushed. No Kruger photograph. The Kemp paper name Rednecked Francolin and the code NB were left unchanged.",
+  "sampleData": false,
+  "similar": [
+    {
+      "slug": "pternistis-swainsonii",
+      "note": "Swainson’s Spurfowl is the dark brown red-necked francolin. Its colour key gives dark grey legs, not red legs."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Red-necked Spurfowl",
+      "url": "https://newmansbirds.com/birds/red-necked-spurfowl/",
+      "publisher": "Newman's Birds",
+      "year": 2026
+    },
+    {
+      "title": "Kemp A.C., Herholdt J.J., Whyte I. & Harrison J. (2001). Birds of the two largest national parks in South Africa: a method to generate estimates of population size for all species and assess their conservation ecology. S. Afr. J. Sci. 97: 393–403.",
+      "url": "https://journals.co.za/doi/pdf/10.10520/EJC97367",
+      "publisher": "South African Journal of Science",
+      "year": 2001
+    }
+  ],
   "population": {
     "estimate": {
       "low": 1,
@@ -35,8 +63,125 @@
     },
     "tierApplied": "D"
   },
-  "variants": [],
-  "viewNotes": [],
-  "calls": [],
-  "images": []
+  "variants": [
+    {
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "marks": {
+        "bill": {
+          "colour": "red",
+          "shape": null
+        },
+        "eye": {
+          "iris": null,
+          "ring": null
+        },
+        "legs": {
+          "colour": "red"
+        },
+        "head": {
+          "crown": null,
+          "face": null,
+          "throat": "red",
+          "pattern": "Red facial mask and red throat, in every plumage form. Eastern races are dark brown above, streaked black."
+        },
+        "upperparts": {
+          "back": "dark-brown",
+          "rump": null,
+          "pattern": "Eastern races: streaked black."
+        },
+        "underparts": {
+          "breast": null,
+          "belly": null,
+          "pattern": "Eastern races: black below, streaked white."
+        },
+        "wings": {
+          "above": null,
+          "below": null
+        },
+        "tail": {
+          "colour": null,
+          "shape": null
+        }
+      }
+    }
+  ],
+  "viewNotes": [
+    {
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Red bill, red facial mask and red throat. Eastern birds are dark brown above and black below, streaked white."
+    },
+    {
+      "view": "perched-front",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Red facial mask and red throat."
+    },
+    {
+      "view": "perched-back",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Dark brown upperparts streaked black."
+    },
+    {
+      "view": "flight-above",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "A flight pattern was not described."
+    },
+    {
+      "view": "flight-below",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Black underparts streaked white."
+    }
+  ],
+  "calls": [
+    {
+      "sex": "any",
+      "type": "call",
+      "description": "A harsh crowing choorr, choorr, choorr, chwirr, fading at the end, or choor-choor when flushed. Grade A call from Kap River Nature Reserve, Eastern Cape. The filename is XC501361-Red-necked Spurfowl..mp3.",
+      "recordings": [
+        {
+          "key": "xeno-canto/XC501361",
+          "source": "https://xeno-canto.org/501361",
+          "fileUrl": "https://xeno-canto.org/sounds/uploaded/GQMCPIVNXX/XC501361-Red-necked%20Spurfowl..mp3",
+          "author": "Tim Cockcroft",
+          "license": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ]
+    }
+  ],
+  "images": [],
+  "research": {
+    "confidence": "medium",
+    "needsReview": true,
+    "note": "Newman calls it a common resident, so status is resident and all twelve months are listed. Morphs other than the eastern race are not described, which is why this needs review. No openly licensed research-grade photo was found in the Kruger box. Population figures, the Kemp paper name Rednecked Francolin and the code NB were left unchanged."
+  },
+  "status": "resident",
+  "monthsPresent": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+  ]
 }

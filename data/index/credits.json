@@ -4861,14 +4861,42 @@
       "slug": "campocolinus-coqui",
       "scientificName": "Campocolinus coqui",
       "commonName": "Coqui Francolin",
-      "images": [],
-      "recordings": [],
+      "images": [
+        {
+          "key": "campocolinus-coqui/side.jpg",
+          "author": "Nick Helme",
+          "licence": "CC BY-NC 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+          "sourceUrl": "https://www.inaturalist.org/observations/37397700",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ],
+      "recordings": [
+        {
+          "key": "xeno-canto/XC520229",
+          "author": "Niall Perrins",
+          "licence": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "sourceUrl": "https://xeno-canto.org/520229",
+          "aiGenerated": false,
+          "hosted": false,
+          "quality": "A",
+          "callType": "call"
+        }
+      ],
       "sources": [
         {
           "title": "Kemp A.C., Herholdt J.J., Whyte I. & Harrison J. (2001). Birds of the two largest national parks in South Africa: a method to generate estimates of population size for all species and assess their conservation ecology. S. Afr. J. Sci. 97: 393–403.",
           "url": "https://journals.co.za/doi/pdf/10.10520/EJC97367",
           "publisher": "South African Journal of Science",
           "year": 2001
+        },
+        {
+          "title": "Coqui Francolin",
+          "url": "https://newmansbirds.com/birds/coqui-francolin/",
+          "publisher": "Newman's Birds",
+          "year": 2026
         }
       ]
     },
@@ -8795,13 +8823,31 @@
       "scientificName": "Coturnix coturnix",
       "commonName": "Common Quail",
       "images": [],
-      "recordings": [],
+      "recordings": [
+        {
+          "key": "xeno-canto/XC137862",
+          "author": "Elias A. Ryberg",
+          "licence": "CC BY-NC-SA 3.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/3.0/",
+          "sourceUrl": "https://xeno-canto.org/137862",
+          "aiGenerated": false,
+          "hosted": false,
+          "quality": "A",
+          "callType": "call"
+        }
+      ],
       "sources": [
         {
           "title": "Kemp A.C., Herholdt J.J., Whyte I. & Harrison J. (2001). Birds of the two largest national parks in South Africa: a method to generate estimates of population size for all species and assess their conservation ecology. S. Afr. J. Sci. 97: 393–403.",
           "url": "https://journals.co.za/doi/pdf/10.10520/EJC97367",
           "publisher": "South African Journal of Science",
           "year": 2001
+        },
+        {
+          "title": "Common Quail",
+          "url": "https://newmansbirds.com/birds/common-quail/",
+          "publisher": "Newman's Birds",
+          "year": 2026
         }
       ]
     },
@@ -8809,14 +8855,42 @@
       "slug": "coturnix-delegorguei",
       "scientificName": "Coturnix delegorguei",
       "commonName": "Harlequin Quail",
-      "images": [],
-      "recordings": [],
+      "images": [
+        {
+          "key": "coturnix-delegorguei/side.jpg",
+          "author": "Niall Perrins",
+          "licence": "CC BY-NC 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+          "sourceUrl": "https://www.inaturalist.org/observations/99608979",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ],
+      "recordings": [
+        {
+          "key": "xeno-canto/XC746385",
+          "author": "David Darrell-Lambert",
+          "licence": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "sourceUrl": "https://xeno-canto.org/746385",
+          "aiGenerated": false,
+          "hosted": false,
+          "quality": "A",
+          "callType": "call"
+        }
+      ],
       "sources": [
         {
           "title": "Kemp A.C., Herholdt J.J., Whyte I. & Harrison J. (2001). Birds of the two largest national parks in South Africa: a method to generate estimates of population size for all species and assess their conservation ecology. S. Afr. J. Sci. 97: 393–403.",
           "url": "https://journals.co.za/doi/pdf/10.10520/EJC97367",
           "publisher": "South African Journal of Science",
           "year": 2001
+        },
+        {
+          "title": "Crested Francolin",
+          "url": "https://newmansbirds.com/birds/crested-francolin/",
+          "publisher": "Newman's Birds",
+          "year": 2026
         }
       ]
     },
@@ -16290,14 +16364,42 @@
       "slug": "ortygornis-sephaena",
       "scientificName": "Ortygornis sephaena",
       "commonName": "Crested Francolin",
-      "images": [],
-      "recordings": [],
+      "images": [
+        {
+          "key": "ortygornis-sephaena/side.jpg",
+          "author": "Paul Hoekman",
+          "licence": "CC BY 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by/4.0/",
+          "sourceUrl": "https://www.inaturalist.org/observations/186008401",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ],
+      "recordings": [
+        {
+          "key": "xeno-canto/XC210091",
+          "author": "Jeremy Hegge",
+          "licence": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "sourceUrl": "https://xeno-canto.org/210091",
+          "aiGenerated": false,
+          "hosted": false,
+          "quality": "A",
+          "callType": "call"
+        }
+      ],
       "sources": [
         {
           "title": "Kemp A.C., Herholdt J.J., Whyte I. & Harrison J. (2001). Birds of the two largest national parks in South Africa: a method to generate estimates of population size for all species and assess their conservation ecology. S. Afr. J. Sci. 97: 393–403.",
           "url": "https://journals.co.za/doi/pdf/10.10520/EJC97367",
           "publisher": "South African Journal of Science",
           "year": 2001
+        },
+        {
+          "title": "Crested Francolin",
+          "url": "https://newmansbirds.com/birds/crested-francolin/",
+          "publisher": "Newman's Birds",
+          "year": 2026
         }
       ]
     },
@@ -17779,13 +17881,31 @@
       "scientificName": "Pternistis afer",
       "commonName": "Red-necked Spurfowl",
       "images": [],
-      "recordings": [],
+      "recordings": [
+        {
+          "key": "xeno-canto/XC501361",
+          "author": "Tim Cockcroft",
+          "licence": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "sourceUrl": "https://xeno-canto.org/501361",
+          "aiGenerated": false,
+          "hosted": false,
+          "quality": "A",
+          "callType": "call"
+        }
+      ],
       "sources": [
         {
           "title": "Kemp A.C., Herholdt J.J., Whyte I. & Harrison J. (2001). Birds of the two largest national parks in South Africa: a method to generate estimates of population size for all species and assess their conservation ecology. S. Afr. J. Sci. 97: 393–403.",
           "url": "https://journals.co.za/doi/pdf/10.10520/EJC97367",
           "publisher": "South African Journal of Science",
           "year": 2001
+        },
+        {
+          "title": "Red-necked Spurfowl",
+          "url": "https://newmansbirds.com/birds/red-necked-spurfowl/",
+          "publisher": "Newman's Birds",
+          "year": 2026
         }
       ]
     },
@@ -17793,14 +17913,42 @@
       "slug": "pternistis-natalensis",
       "scientificName": "Pternistis natalensis",
       "commonName": "Natal Spurfowl",
-      "images": [],
-      "recordings": [],
+      "images": [
+        {
+          "key": "pternistis-natalensis/side.jpg",
+          "author": "Yolande Oelsen",
+          "licence": "CC BY-NC 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+          "sourceUrl": "https://www.inaturalist.org/observations/322220589",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ],
+      "recordings": [
+        {
+          "key": "xeno-canto/XC208083",
+          "author": "Jeremy Hegge",
+          "licence": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "sourceUrl": "https://xeno-canto.org/208083",
+          "aiGenerated": false,
+          "hosted": false,
+          "quality": "A",
+          "callType": "call"
+        }
+      ],
       "sources": [
         {
           "title": "Kemp A.C., Herholdt J.J., Whyte I. & Harrison J. (2001). Birds of the two largest national parks in South Africa: a method to generate estimates of population size for all species and assess their conservation ecology. S. Afr. J. Sci. 97: 393–403.",
           "url": "https://journals.co.za/doi/pdf/10.10520/EJC97367",
           "publisher": "South African Journal of Science",
           "year": 2001
+        },
+        {
+          "title": "Natal Spurfowl",
+          "url": "https://newmansbirds.com/birds/natal-spurfowl/",
+          "publisher": "Newman's Birds",
+          "year": 2026
         }
       ]
     },
@@ -17808,14 +17956,42 @@
       "slug": "pternistis-swainsonii",
       "scientificName": "Pternistis swainsonii",
       "commonName": "Swainson’s Spurfowl",
-      "images": [],
-      "recordings": [],
+      "images": [
+        {
+          "key": "pternistis-swainsonii/side.jpg",
+          "author": "Dave Brown",
+          "licence": "CC0 1.0",
+          "licenceUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+          "sourceUrl": "https://www.inaturalist.org/observations/71053828",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ],
+      "recordings": [
+        {
+          "key": "xeno-canto/XC126346",
+          "author": "Sander Bot",
+          "licence": "CC BY-NC-SA 3.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/3.0/",
+          "sourceUrl": "https://xeno-canto.org/126346",
+          "aiGenerated": false,
+          "hosted": false,
+          "quality": "A",
+          "callType": "call"
+        }
+      ],
       "sources": [
         {
           "title": "Kemp A.C., Herholdt J.J., Whyte I. & Harrison J. (2001). Birds of the two largest national parks in South Africa: a method to generate estimates of population size for all species and assess their conservation ecology. S. Afr. J. Sci. 97: 393–403.",
           "url": "https://journals.co.za/doi/pdf/10.10520/EJC97367",
           "publisher": "South African Journal of Science",
           "year": 2001
+        },
+        {
+          "title": "Swainson’s Spurfowl",
+          "url": "https://newmansbirds.com/birds/swainsons-spurfowl/",
+          "publisher": "Newman's Birds",
+          "year": 2026
         }
       ]
     },
@@ -18399,14 +18575,42 @@
       "slug": "scleroptila-shelleyi",
       "scientificName": "Scleroptila shelleyi",
       "commonName": "Shelley’s Francolin",
-      "images": [],
-      "recordings": [],
+      "images": [
+        {
+          "key": "scleroptila-shelleyi/side.jpg",
+          "author": "cwlonie6626",
+          "licence": "CC BY-NC 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+          "sourceUrl": "https://www.inaturalist.org/observations/373511050",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ],
+      "recordings": [
+        {
+          "key": "xeno-canto/XC415830",
+          "author": "Jordan Ralph",
+          "licence": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "sourceUrl": "https://xeno-canto.org/415830",
+          "aiGenerated": false,
+          "hosted": false,
+          "quality": "A",
+          "callType": "call"
+        }
+      ],
       "sources": [
         {
           "title": "Kemp A.C., Herholdt J.J., Whyte I. & Harrison J. (2001). Birds of the two largest national parks in South Africa: a method to generate estimates of population size for all species and assess their conservation ecology. S. Afr. J. Sci. 97: 393–403.",
           "url": "https://journals.co.za/doi/pdf/10.10520/EJC97367",
           "publisher": "South African Journal of Science",
           "year": 2001
+        },
+        {
+          "title": "Shelley’s Francolin",
+          "url": "https://newmansbirds.com/birds/shelleys-francolin/",
+          "publisher": "Newman's Birds",
+          "year": 2026
         }
       ]
     },

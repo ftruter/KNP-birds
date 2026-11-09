@@ -7,8 +7,30 @@
     "af": "Laeveldpatrys"
   },
   "family": "phasianidae",
-  "summary": "The details for this species have not been published yet.",
-  "sampleData": true,
+  "size": {
+    "lengthCm": {
+      "min": 33,
+      "max": 33
+    },
+    "note": "Newman's Birds gives 33 cm."
+  },
+  "habitat": "Grassy woodland and grassland, especially near rocky koppies. In eastern Zimbabwe it uses montane grassland.",
+  "summary": "An uncommon to locally common resident. Legs dull yellow. Above dark grey-brown, blotched black and streaked white. White throat with a black surround, a white stripe through the eye and ear coverts, white underparts, the breast blotched deep red to red-brown and extending to the upper flanks, the belly barred black, and bold black blotches on the lower flanks. The call is a shrill musical crowing like I’ll drink yer beer, three or four times. The Kemp code RB was left unchanged.",
+  "sampleData": false,
+  "sources": [
+    {
+      "title": "Shelley’s Francolin",
+      "url": "https://newmansbirds.com/birds/shelleys-francolin/",
+      "publisher": "Newman's Birds",
+      "year": 2026
+    },
+    {
+      "title": "Kemp A.C., Herholdt J.J., Whyte I. & Harrison J. (2001). Birds of the two largest national parks in South Africa: a method to generate estimates of population size for all species and assess their conservation ecology. S. Afr. J. Sci. 97: 393–403.",
+      "url": "https://journals.co.za/doi/pdf/10.10520/EJC97367",
+      "publisher": "South African Journal of Science",
+      "year": 2001
+    }
+  ],
   "population": {
     "estimate": {
       "low": 2048,
@@ -35,8 +57,142 @@
     },
     "tierApplied": "D"
   },
-  "variants": [],
-  "viewNotes": [],
-  "calls": [],
-  "images": []
+  "variants": [
+    {
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "marks": {
+        "bill": {
+          "colour": null,
+          "shape": null
+        },
+        "eye": {
+          "iris": null,
+          "ring": null
+        },
+        "legs": {
+          "colour": "yellow"
+        },
+        "head": {
+          "crown": null,
+          "face": null,
+          "throat": "white",
+          "pattern": "White throat with a black surround. White stripe through the eye and the ear coverts."
+        },
+        "upperparts": {
+          "back": null,
+          "rump": null,
+          "pattern": "Dark grey-brown, blotched black and streaked white."
+        },
+        "underparts": {
+          "breast": null,
+          "belly": "white",
+          "pattern": "Breast blotched deep red to red-brown, extending to the upper flanks. Belly barred black. Bold black blotches on the lower flanks."
+        },
+        "wings": {
+          "above": null,
+          "below": null
+        },
+        "tail": {
+          "colour": null,
+          "shape": null
+        }
+      }
+    }
+  ],
+  "viewNotes": [
+    {
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "White throat with a black surround, a white eye-stripe and a blotched breast."
+    },
+    {
+      "view": "perched-front",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "White throat, black surround and a white stripe through the eye."
+    },
+    {
+      "view": "perched-back",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Dark grey-brown upperparts, blotched black and streaked white."
+    },
+    {
+      "view": "flight-above",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "A flight pattern was not described."
+    },
+    {
+      "view": "flight-below",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "White underparts, breast blotched red-brown, belly barred black."
+    }
+  ],
+  "calls": [
+    {
+      "sex": "any",
+      "type": "call",
+      "description": "A shrill musical crowing sounding like I’ll drink yer beer, repeated three or four times. Grade A call from KwaMhlanga, Mpumalanga. The filename is XC415830-Shelley's Francolin 2.mp3.",
+      "recordings": [
+        {
+          "key": "xeno-canto/XC415830",
+          "source": "https://xeno-canto.org/415830",
+          "fileUrl": "https://xeno-canto.org/sounds/uploaded/UPBYYIQLUL/XC415830-Shelley%27s%20Francolin%202.mp3",
+          "author": "Jordan Ralph",
+          "license": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ]
+    }
+  ],
+  "images": [
+    {
+      "key": "scleroptila-shelleyi/side.jpg",
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "source": "https://www.inaturalist.org/observations/373511050",
+      "fileUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/682617757/large.jpg",
+      "author": "cwlonie6626",
+      "license": "CC BY-NC 4.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+      "aiGenerated": false,
+      "hosted": false,
+      "alt": "Shelley’s Francolin, white throat with a black surround",
+      "caption": "Shelley’s Francolin in the Ehlanzeni district, white throat with a black surround and a white stripe through the eye."
+    }
+  ],
+  "research": {
+    "confidence": "medium",
+    "needsReview": false,
+    "note": "Newman calls it an uncommon to locally common resident, so status is resident and all twelve months are listed. Dull yellow legs are stored as yellow. Grey-winged Francolin is the comparison Newman names and is not in this list. Population figures and the Kemp code RB were left unchanged."
+  },
+  "status": "resident",
+  "monthsPresent": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+  ]
 }

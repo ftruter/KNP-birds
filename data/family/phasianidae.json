@@ -6,8 +6,8 @@
     "en": "Francolins, spurfowl and quails",
     "af": "Patryse"
   },
-  "summary": "Field notes for this family are still to be written.",
-  "sampleData": true,
+  "summary": "Francolins, spurfowl and quails. Coqui Francolin is the small tawny-headed bird. Crested Francolin has black-and-white facial marks and red legs. Natal, Red-necked and Swainson’s spurfowl are the larger bare-throated birds. Shelley’s Francolin has a white throat in a black surround. Common Quail and Harlequin Quail are the small grassland quails.",
+  "sampleData": false,
   "species": [
     {
       "slug": "campocolinus-coqui",

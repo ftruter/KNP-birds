@@ -7,8 +7,36 @@
     "af": "Bosveldfisant"
   },
   "family": "phasianidae",
-  "summary": "The details for this species have not been published yet.",
-  "sampleData": true,
+  "size": {
+    "lengthCm": {
+      "min": 34,
+      "max": 39
+    },
+    "note": "Newman's Birds gives 34–39 cm."
+  },
+  "habitat": "Singly or in small coveys in bushveld, woodland and fallow agricultural land, usually not far from water. The male calls from a low branch or an anthill.",
+  "summary": "A common resident. Entirely dark brown, with red facial skin and a red neck. The colour key says dark grey legs. The description says it is the only red-necked francolin with black legs and a black bill, which disagrees with those dark grey legs, so the bill colour is not stored. The call is a harsh krrraaak-krrraaak-krrraaak, fading at the end. The Kemp code RB was left unchanged.",
+  "sampleData": false,
+  "similar": [
+    {
+      "slug": "pternistis-afer",
+      "note": "Red-necked Spurfowl has a red bill, a red throat and red legs. Swainson’s Spurfowl is uniformly dark brown."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Swainson’s Spurfowl",
+      "url": "https://newmansbirds.com/birds/swainsons-spurfowl/",
+      "publisher": "Newman's Birds",
+      "year": 2026
+    },
+    {
+      "title": "Kemp A.C., Herholdt J.J., Whyte I. & Harrison J. (2001). Birds of the two largest national parks in South Africa: a method to generate estimates of population size for all species and assess their conservation ecology. S. Afr. J. Sci. 97: 393–403.",
+      "url": "https://journals.co.za/doi/pdf/10.10520/EJC97367",
+      "publisher": "South African Journal of Science",
+      "year": 2001
+    }
+  ],
   "population": {
     "estimate": {
       "low": 8192,
@@ -35,8 +63,141 @@
     },
     "tierApplied": "D"
   },
-  "variants": [],
-  "viewNotes": [],
-  "calls": [],
-  "images": []
+  "variants": [
+    {
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "marks": {
+        "bill": {
+          "colour": null,
+          "shape": null
+        },
+        "eye": {
+          "iris": null,
+          "ring": null
+        },
+        "legs": {
+          "colour": null
+        },
+        "head": {
+          "crown": null,
+          "face": null,
+          "throat": null,
+          "pattern": "Red facial skin and a red neck."
+        },
+        "upperparts": {
+          "back": "dark-brown",
+          "rump": null,
+          "pattern": "Entirely dark brown."
+        },
+        "underparts": {
+          "breast": "dark-brown",
+          "belly": "dark-brown"
+        },
+        "wings": {
+          "above": null,
+          "below": null
+        },
+        "tail": {
+          "colour": null,
+          "shape": null
+        }
+      }
+    }
+  ],
+  "viewNotes": [
+    {
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Dark brown, with red facial skin and a red neck."
+    },
+    {
+      "view": "perched-front",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Red facial skin and red neck."
+    },
+    {
+      "view": "perched-back",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Uniform dark brown upperparts."
+    },
+    {
+      "view": "flight-above",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "A flight pattern was not described."
+    },
+    {
+      "view": "flight-below",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Uniform dark brown underparts."
+    }
+  ],
+  "calls": [
+    {
+      "sex": "any",
+      "type": "call",
+      "description": "A harsh crowing krrraaak-krrraaak-krrraaak, fading at the end. Grade A call from Benfontijn, Free State. The filename is XC126346-SwainssonsSpurfowl06Feb2013BenfontijnFreeStateSouthAfrika.mp3.",
+      "recordings": [
+        {
+          "key": "xeno-canto/XC126346",
+          "source": "https://xeno-canto.org/126346",
+          "fileUrl": "https://xeno-canto.org/sounds/uploaded/HZKCNRIPRH/XC126346-SwainssonsSpurfowl06Feb2013BenfontijnFreeStateSouthAfrika.mp3",
+          "author": "Sander Bot",
+          "license": "CC BY-NC-SA 3.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/3.0/",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ]
+    }
+  ],
+  "images": [
+    {
+      "key": "pternistis-swainsonii/side.jpg",
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "source": "https://www.inaturalist.org/observations/71053828",
+      "fileUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/115620611/large.jpg",
+      "author": "Dave Brown",
+      "license": "CC0 1.0",
+      "licenceUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "aiGenerated": false,
+      "hosted": false,
+      "alt": "Swainson’s Spurfowl, dark brown with red facial skin and a red neck",
+      "caption": "Swainson’s Spurfowl in Kruger, dark brown with red facial skin and a red neck."
+    }
+  ],
+  "research": {
+    "confidence": "medium",
+    "needsReview": true,
+    "note": "Newman calls it a common resident, so status is resident and all twelve months are listed. The colour key says dark grey legs and the description says black legs and a black bill, so the leg and bill colours are not stored as tokens. That is why this needs review. Population figures and the Kemp code RB were left unchanged."
+  },
+  "status": "resident",
+  "monthsPresent": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+  ]
 }
