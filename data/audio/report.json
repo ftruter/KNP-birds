@@ -1,9 +1,9 @@
 {
   "source": "xeno-canto explore catalogue, API v3 recording fields",
   "counts": {
-    "slots": 372,
+    "slots": 374,
     "swapped": 17,
-    "added": 270,
+    "added": 272,
     "kept": 57,
     "none": 28,
     "cleaned": 0
@@ -5599,6 +5599,34 @@
       "locality": "KwaMhlanga, Nkangala, Mpumalanga",
       "cleaned": false,
       "license": "CC BY-NC-SA 4.0"
+    },
+    {
+      "slug": "phoeniconaias-minor",
+      "scientificName": "Phoeniconaias minor",
+      "index": 0,
+      "type": "call",
+      "action": "added",
+      "from": [],
+      "to": "267539",
+      "quality": "A",
+      "country": "Ethiopia",
+      "locality": "Bilen Lodge",
+      "cleaned": false,
+      "license": "CC BY-NC-SA 4.0"
+    },
+    {
+      "slug": "phoenicopterus-roseus",
+      "scientificName": "Phoenicopterus roseus",
+      "index": 0,
+      "type": "call",
+      "action": "added",
+      "from": [],
+      "to": "135154",
+      "quality": "A",
+      "country": "Oman",
+      "locality": "Wadi Darbat, Dhofar",
+      "cleaned": false,
+      "license": "CC BY-NC-SA 3.0"
     }
   ]
 }

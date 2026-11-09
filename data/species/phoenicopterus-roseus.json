@@ -7,8 +7,36 @@
     "af": "Grootflamink"
   },
   "family": "phoenicopteridae",
-  "summary": "The details for this species have not been published yet.",
-  "sampleData": true,
+  "size": {
+    "lengthCm": {
+      "min": 140,
+      "max": 140
+    },
+    "note": "Newman's Birds gives 140 cm."
+  },
+  "habitat": "Shallow lakes, deep brackish water, saltpans and coastal lagoons. It filters bottom sediment stirred up by its feet, often with the head submerged.",
+  "summary": "Newman calls it a locally abundant nomadic resident and a visitor from other parts of Africa. White, with a pink bill tipped black, long pink legs, and red and black wings. It is taller and whiter than Lesser Flamingo. In flight the wing coverts are a uniform scarlet. The immature is grey and black, with a blue-grey bill. Newman does not describe the voice. Status and months are unset. The Kemp code NB was left unchanged.",
+  "sampleData": false,
+  "similar": [
+    {
+      "slug": "phoeniconaias-minor",
+      "note": "Lesser Flamingo is smaller and pinker, with a dark maroon bill that looks black, not a pink bill tipped black."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Greater Flamingo",
+      "url": "https://newmansbirds.com/birds/greater-flamingo/",
+      "publisher": "Newman's Birds",
+      "year": 2026
+    },
+    {
+      "title": "Kemp A.C., Herholdt J.J., Whyte I. & Harrison J. (2001). Birds of the two largest national parks in South Africa: a method to generate estimates of population size for all species and assess their conservation ecology. S. Afr. J. Sci. 97: 393–403.",
+      "url": "https://journals.co.za/doi/pdf/10.10520/EJC97367",
+      "publisher": "South African Journal of Science",
+      "year": 2001
+    }
+  ],
   "population": {
     "estimate": {
       "low": 4,
@@ -35,8 +63,204 @@
     },
     "tierApplied": "D"
   },
-  "variants": [],
-  "viewNotes": [],
-  "calls": [],
-  "images": []
+  "variants": [
+    {
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "marks": {
+        "bill": {
+          "colour": [
+            "pink",
+            "black"
+          ],
+          "shape": "Pink bill with a black tip."
+        },
+        "eye": {
+          "iris": null,
+          "ring": null
+        },
+        "legs": {
+          "colour": "pink"
+        },
+        "head": {
+          "crown": null,
+          "face": null,
+          "throat": null
+        },
+        "upperparts": {
+          "back": "white",
+          "rump": null,
+          "pattern": "Whiter than Lesser Flamingo."
+        },
+        "underparts": {
+          "breast": "white",
+          "belly": "white"
+        },
+        "wings": {
+          "above": null,
+          "below": null,
+          "pattern": "Red and black wings. In flight the coverts are a uniform scarlet."
+        },
+        "tail": {
+          "colour": null,
+          "shape": null
+        }
+      }
+    },
+    {
+      "age": "immature",
+      "sex": "any",
+      "season": "any",
+      "marks": {
+        "bill": {
+          "colour": null,
+          "shape": "Blue-grey bill."
+        },
+        "eye": {
+          "iris": null,
+          "ring": null
+        },
+        "legs": {
+          "colour": null
+        },
+        "head": {
+          "crown": null,
+          "face": null,
+          "throat": null
+        },
+        "upperparts": {
+          "back": null,
+          "rump": null,
+          "pattern": "Grey and black."
+        },
+        "underparts": {
+          "breast": null,
+          "belly": null
+        },
+        "wings": {
+          "above": null,
+          "below": null
+        },
+        "tail": {
+          "colour": null,
+          "shape": null
+        }
+      }
+    }
+  ],
+  "viewNotes": [
+    {
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "White, with a pink bill tipped black and long pink legs."
+    },
+    {
+      "view": "perched-front",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Pink bill with a black tip."
+    },
+    {
+      "view": "perched-back",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "White upperparts."
+    },
+    {
+      "view": "flight-above",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Red and black wings, the coverts a uniform scarlet."
+    },
+    {
+      "view": "flight-below",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "White underparts. The underwing was not given a separate colour."
+    },
+    {
+      "view": "perched-side",
+      "age": "immature",
+      "sex": "any",
+      "season": "any",
+      "note": "Grey and black, with a blue-grey bill."
+    },
+    {
+      "view": "perched-front",
+      "age": "immature",
+      "sex": "any",
+      "season": "any",
+      "note": "Blue-grey bill."
+    },
+    {
+      "view": "perched-back",
+      "age": "immature",
+      "sex": "any",
+      "season": "any",
+      "note": "Grey and black upperparts."
+    },
+    {
+      "view": "flight-above",
+      "age": "immature",
+      "sex": "any",
+      "season": "any",
+      "note": "An immature flight pattern was not described."
+    },
+    {
+      "view": "flight-below",
+      "age": "immature",
+      "sex": "any",
+      "season": "any",
+      "note": "The immature underparts were not described separately from grey and black."
+    }
+  ],
+  "calls": [
+    {
+      "sex": "any",
+      "type": "call",
+      "description": "Newman does not describe the voice. Grade A call from Wadi Darbat, Dhofar, Oman. The filename is XC135154-Rosaflamingo_Rufe_Oman_130208_LS_30691.mp3.",
+      "recordings": [
+        {
+          "key": "xeno-canto/XC135154",
+          "source": "https://xeno-canto.org/135154",
+          "fileUrl": "https://xeno-canto.org/sounds/uploaded/TFEVTCGLWH/XC135154-Rosaflamingo_Rufe_Oman_130208_LS_30691.mp3",
+          "author": "R. Martin",
+          "license": "CC BY-NC-SA 3.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/3.0/",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ]
+    }
+  ],
+  "images": [
+    {
+      "key": "phoenicopterus-roseus/side.jpg",
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "source": "https://www.inaturalist.org/observations/322200318",
+      "fileUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/582825501/large.jpg",
+      "author": "Саакян К.С.",
+      "license": "CC BY-NC 4.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+      "aiGenerated": false,
+      "hosted": false,
+      "alt": "Greater Flamingo, white with a pink bill tipped black",
+      "caption": "Greater Flamingo in Kruger, white, with a pink bill tipped black and long pink legs."
+    }
+  ],
+  "research": {
+    "confidence": "medium",
+    "needsReview": true,
+    "note": "Newman says locally abundant nomadic resident and visitor, so status and monthsPresent are unset. Scarlet and blue-grey are not colour tokens. Population figures and the Kemp code NB were left unchanged."
+  }
 }
