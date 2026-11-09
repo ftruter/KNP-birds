@@ -3166,7 +3166,17 @@
       "slug": "bucorvus-leadbeateri",
       "scientificName": "Bucorvus leadbeateri",
       "commonName": "Southern Ground-Hornbill",
-      "images": [],
+      "images": [
+        {
+          "key": "bucorvus-leadbeateri/side.jpg",
+          "author": "copper",
+          "licence": "CC BY-NC 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+          "sourceUrl": "https://www.inaturalist.org/observations/9953257",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ],
       "recordings": [
         {
           "key": "xeno-canto/XC1149598",
@@ -3192,6 +3202,12 @@
           "url": "https://journals.co.za/doi/pdf/10.10520/EJC97367",
           "publisher": "South African Journal of Science",
           "year": 2001
+        },
+        {
+          "title": "Southern Ground-Hornbill",
+          "url": "https://newmansbirds.com/birds/southern-ground-hornbill/",
+          "publisher": "Newman's Birds",
+          "year": 2026
         }
       ]
     },

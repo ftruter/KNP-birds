@@ -6,8 +6,8 @@
     "en": "Ground-hornbills",
     "af": "Bromvoëls"
   },
-  "summary": "Ground-hornbills are very large, mostly terrestrial hornbills. In Kruger the family is represented by the Southern Ground Hornbill.",
-  "sampleData": true,
+  "summary": "Ground-hornbills are huge terrestrial hornbills. Kruger has one species, the Southern Ground-Hornbill, Bucorvus leadbeateri. It walks in groups and shows white in the wings when it flies.",
+  "sampleData": false,
   "species": [
     {
       "slug": "bucorvus-leadbeateri",
