@@ -7,8 +7,45 @@
     "af": "Gewone Fret"
   },
   "family": "estrildidae",
-  "summary": "The details for this species have not been published yet.",
-  "sampleData": true,
+  "status": "resident",
+  "size": {
+    "lengthCm": {
+      "min": 9,
+      "max": 9
+    },
+    "note": "Newman's Birds gives 9 cm."
+  },
+  "monthsPresent": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+  ],
+  "habitat": "Mixed grass and bushveld, forest fringes, coastal scrub and old cultivated lands. Flocks clamber on grass stems.",
+  "summary": "A very common resident. Earth-brown upper parts grade to blackish on the head, face, throat and upper breast. Those blackish areas are washed bottle-green or bronze, and some bottle-green feathers sit on the mantle. The underparts are white, the flanks are finely barred, and the upper mandible is dark. The immature has an all-dark bill and upper parts less rufous than an immature Red-backed Mannikin. The call is a wheezy chik, chik, chikka. The Kemp code RB was left unchanged.",
+  "sampleData": false,
+  "similar": [
+    {
+      "slug": "spermestes-bicolor",
+      "note": "Red-backed Mannikin is red-brown above, with more extensive black and broader flank bars, and a blue-grey bill."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Bronze Mannikin",
+      "url": "https://newmansbirds.com/birds/bronze-mannikin/",
+      "publisher": "Newman's Birds",
+      "year": 2026
+    }
+  ],
   "population": {
     "estimate": {
       "low": 4096,
@@ -35,8 +72,171 @@
     },
     "tierApplied": "D"
   },
-  "variants": [],
-  "viewNotes": [],
-  "calls": [],
-  "images": []
+  "variants": [
+    {
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "marks": {
+        "bill": {
+          "colour": null,
+          "shape": "Dark upper mandible."
+        },
+        "eye": {
+          "iris": null,
+          "ring": null
+        },
+        "legs": {
+          "colour": null
+        },
+        "head": {
+          "crown": "black",
+          "face": "black",
+          "throat": "black",
+          "pattern": "Blackish, washed bottle-green or bronze."
+        },
+        "upperparts": {
+          "back": "brown",
+          "rump": null,
+          "pattern": "Earth-brown, grading to blackish on the head. Some bottle-green feathers on the mantle."
+        },
+        "underparts": {
+          "breast": "black",
+          "belly": "white",
+          "pattern": "Upper breast blackish. Flanks finely barred."
+        },
+        "wings": {
+          "above": null,
+          "below": null,
+          "pattern": null
+        },
+        "tail": {
+          "colour": null,
+          "shape": null
+        }
+      }
+    },
+    {
+      "age": "immature",
+      "sex": "any",
+      "season": "any",
+      "marks": {
+        "bill": {
+          "colour": "black",
+          "shape": "All-dark."
+        },
+        "eye": {
+          "iris": null,
+          "ring": null
+        },
+        "legs": {
+          "colour": null
+        },
+        "head": {
+          "crown": null,
+          "face": null,
+          "throat": null,
+          "pattern": null
+        },
+        "upperparts": {
+          "back": null,
+          "rump": null,
+          "pattern": "Less rufous than the immature Red-backed Mannikin."
+        },
+        "underparts": {
+          "breast": null,
+          "belly": null,
+          "pattern": null
+        },
+        "wings": {
+          "above": null,
+          "below": null,
+          "pattern": null
+        },
+        "tail": {
+          "colour": null,
+          "shape": null
+        }
+      }
+    }
+  ],
+  "viewNotes": [
+    {
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Blackish head and breast with a bronze or bottle-green wash, earth-brown above and white below."
+    },
+    {
+      "view": "perched-front",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Blackish face, throat and upper breast. The upper mandible is dark."
+    },
+    {
+      "view": "perched-back",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Earth-brown upper parts, with some bottle-green feathers on the mantle."
+    },
+    {
+      "view": "flight-above",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "When flushed, the flock flies into a bush. A wing pattern was not described."
+    },
+    {
+      "view": "flight-below",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "White underparts and finely barred flanks."
+    }
+  ],
+  "calls": [
+    {
+      "sex": "any",
+      "type": "call",
+      "description": "A wheezy chik, chik, chikka. Grade A call from Kirstenbosch. The filename is generic and shows a 250 Hz high-pass. It was not cleaned again.",
+      "recordings": [
+        {
+          "key": "xeno-canto/XC1079624",
+          "source": "https://xeno-canto.org/1079624",
+          "fileUrl": "https://xeno-canto.org/sounds/uploaded/YSGTQVRQZI/XC1079624-20260211_KBG_AKaramitsos_XA60_A015C112_26021179_SLE_250HP_-3dB.mp3",
+          "author": "African Bioacoustics Community",
+          "license": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ]
+    }
+  ],
+  "images": [
+    {
+      "key": "spermestes-cucullata/side.jpg",
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "source": "https://www.inaturalist.org/observations/151186240",
+      "fileUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/260820651/large.jpeg",
+      "author": "emskakoon",
+      "license": "CC BY-NC 4.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+      "aiGenerated": false,
+      "hosted": false,
+      "alt": "Bronze Mannikin in the Mopani district",
+      "caption": "Bronze Mannikin in the Mopani district."
+    }
+  ],
+  "research": {
+    "confidence": "medium",
+    "needsReview": false,
+    "note": "Status is resident and all twelve months are listed. Newman says the immature is as illustrated and adds the bill and upper-part comparison, which are the marks stored. Population figures were left unchanged."
+  }
 }
