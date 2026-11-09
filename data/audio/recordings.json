@@ -2240,6 +2240,16 @@
         }
       ]
     },
+    "pterocles-bicinctus": {
+      "calls": [
+        {
+          "index": 0,
+          "quality": {
+            "xeno-canto/XC793340": "A"
+          }
+        }
+      ]
+    },
     "quelea-quelea": {
       "calls": [
         {
