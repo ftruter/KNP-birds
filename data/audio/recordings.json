@@ -2420,6 +2420,186 @@
           }
         }
       ]
+    },
+    "amadina-erythrocephala": {
+      "calls": [
+        {
+          "index": 0,
+          "quality": {
+            "xeno-canto/XC337993": "A"
+          }
+        }
+      ]
+    },
+    "amadina-fasciata": {
+      "calls": [
+        {
+          "index": 0,
+          "quality": {
+            "xeno-canto/XC368188": "B"
+          }
+        }
+      ]
+    },
+    "amandava-subflava": {
+      "calls": [
+        {
+          "index": 0,
+          "quality": {
+            "xeno-canto/XC528267": "A"
+          }
+        }
+      ]
+    },
+    "brunhilda-erythronotos": {
+      "calls": [
+        {
+          "index": 0,
+          "quality": {
+            "xeno-canto/XC382988": "A"
+          }
+        }
+      ]
+    },
+    "coccopygia-melanotis": {
+      "calls": [
+        {
+          "index": 0,
+          "quality": {
+            "xeno-canto/XC292907": "B"
+          }
+        }
+      ]
+    },
+    "estrilda-astrild": {
+      "calls": [
+        {
+          "index": 0,
+          "quality": {
+            "xeno-canto/XC1087071": "A"
+          }
+        }
+      ]
+    },
+    "granatina-granatina": {
+      "calls": [
+        {
+          "index": 0,
+          "quality": {
+            "xeno-canto/XC662464": "A"
+          }
+        }
+      ]
+    },
+    "hypargos-margaritatus": {
+      "calls": [
+        {
+          "index": 0,
+          "quality": {
+            "xeno-canto/XC815006": "A"
+          }
+        }
+      ]
+    },
+    "lagonosticta-rhodopareia": {
+      "calls": [
+        {
+          "index": 0,
+          "quality": {
+            "xeno-canto/XC585252": "A"
+          }
+        }
+      ]
+    },
+    "lagonosticta-rubricata": {
+      "calls": [
+        {
+          "index": 0,
+          "quality": {
+            "xeno-canto/XC952474": "A"
+          }
+        }
+      ]
+    },
+    "lagonosticta-senegala": {
+      "calls": [
+        {
+          "index": 0,
+          "quality": {
+            "xeno-canto/XC632302": "A"
+          }
+        }
+      ]
+    },
+    "ortygospiza-atricollis": {
+      "calls": [
+        {
+          "index": 0,
+          "quality": {
+            "xeno-canto/XC811127": "A"
+          }
+        }
+      ]
+    },
+    "pytilia-afra": {
+      "calls": [
+        {
+          "index": 0,
+          "quality": {
+            "xeno-canto/XC200765": "A"
+          }
+        }
+      ]
+    },
+    "pytilia-melba": {
+      "calls": [
+        {
+          "index": 0,
+          "quality": {
+            "xeno-canto/XC512189": "A"
+          }
+        }
+      ]
+    },
+    "spermestes-bicolor": {
+      "calls": [
+        {
+          "index": 0,
+          "quality": {
+            "xeno-canto/XC206436": "A"
+          }
+        }
+      ]
+    },
+    "spermestes-cucullata": {
+      "calls": [
+        {
+          "index": 0,
+          "quality": {
+            "xeno-canto/XC1079624": "A"
+          }
+        }
+      ]
+    },
+    "spermestes-fringilloides": {
+      "calls": [
+        {
+          "index": 0,
+          "quality": {
+            "xeno-canto/XC1063801": "A"
+          }
+        }
+      ]
+    },
+    "uraeginthus-angolensis": {
+      "calls": [
+        {
+          "index": 0,
+          "quality": {
+            "xeno-canto/XC368187": "A"
+          }
+        }
+      ]
     }
   }
 }
