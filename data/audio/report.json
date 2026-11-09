@@ -1,10 +1,10 @@
 {
   "source": "xeno-canto explore catalogue, API v3 recording fields",
   "counts": {
-    "slots": 380,
+    "slots": 387,
     "swapped": 17,
     "added": 278,
-    "kept": 57,
+    "kept": 64,
     "none": 28,
     "cleaned": 0
   },
@@ -401,6 +401,38 @@
       "license": "CC BY-NC-SA 4.0"
     },
     {
+      "slug": "campethera-abingoni",
+      "scientificName": "Campethera abingoni",
+      "index": 0,
+      "type": "call",
+      "action": "kept",
+      "from": [
+        "545718"
+      ],
+      "to": "545718",
+      "quality": "A",
+      "country": "South Africa",
+      "locality": "Hoedspruit",
+      "cleaned": false,
+      "license": "CC BY-NC-SA 4.0"
+    },
+    {
+      "slug": "campethera-bennettii",
+      "scientificName": "Campethera bennettii",
+      "index": 0,
+      "type": "call",
+      "action": "kept",
+      "from": [
+        "682056"
+      ],
+      "to": "682056",
+      "quality": "A",
+      "country": "Zambia",
+      "locality": "Samala Camp, Manu Gate North Luangwa NP, Northern Province",
+      "cleaned": false,
+      "license": "CC BY-NC-SA 4.0"
+    },
+    {
       "slug": "ceryle-rudis",
       "scientificName": "Ceryle rudis",
       "index": 0,
@@ -415,6 +447,38 @@
       "quality": "A",
       "country": "South Africa",
       "locality": "Kruger Park (near Skukuza), Ehlanzeni District Municipality, Mpumalanga",
+      "cleaned": false,
+      "license": "CC BY-NC-SA 4.0"
+    },
+    {
+      "slug": "chloropicus-namaquus",
+      "scientificName": "Chloropicus namaquus",
+      "index": 0,
+      "type": "call",
+      "action": "kept",
+      "from": [
+        "503724"
+      ],
+      "to": "503724",
+      "quality": "A",
+      "country": "South Africa",
+      "locality": "Hoedspruit",
+      "cleaned": false,
+      "license": "CC BY-NC-SA 4.0"
+    },
+    {
+      "slug": "chloropicus-namaquus",
+      "scientificName": "Chloropicus namaquus",
+      "index": 1,
+      "type": "other",
+      "action": "kept",
+      "from": [
+        "323354"
+      ],
+      "to": "323354",
+      "quality": "A",
+      "country": "South Africa",
+      "locality": "Mjejane Private Game Reserve, Hectorspruit, Mpumalanga",
       "cleaned": false,
       "license": "CC BY-NC-SA 4.0"
     },
@@ -633,6 +697,38 @@
       "quality": "A",
       "country": "South Africa",
       "locality": "Port Alfred, Eastern Cape",
+      "cleaned": false,
+      "license": "CC BY-NC-SA 4.0"
+    },
+    {
+      "slug": "dendropicos-fuscescens",
+      "scientificName": "Dendropicos fuscescens",
+      "index": 0,
+      "type": "call",
+      "action": "kept",
+      "from": [
+        "998772"
+      ],
+      "to": "998772",
+      "quality": "A",
+      "country": "South Africa",
+      "locality": "Kruger Park (near Skukuza), Ehlanzeni District Municipality, Mpumalanga",
+      "cleaned": false,
+      "license": "CC BY-NC-SA 4.0"
+    },
+    {
+      "slug": "dendropicos-griseocephalus",
+      "scientificName": "Dendropicos griseocephalus",
+      "index": 0,
+      "type": "call",
+      "action": "kept",
+      "from": [
+        "650855"
+      ],
+      "to": "650855",
+      "quality": "A",
+      "country": "South Africa",
+      "locality": "Wild Fig Farm, Wild Fig Country Estate",
       "cleaned": false,
       "license": "CC BY-NC-SA 4.0"
     },
@@ -922,6 +1018,22 @@
       "quality": "A",
       "country": "Ethiopia",
       "locality": "Gambela, trail from the Metu road to the Baro River",
+      "cleaned": false,
+      "license": "CC BY-NC-SA 4.0"
+    },
+    {
+      "slug": "jynx-ruficollis",
+      "scientificName": "Jynx ruficollis",
+      "index": 0,
+      "type": "call",
+      "action": "kept",
+      "from": [
+        "342721"
+      ],
+      "to": "342721",
+      "quality": "A",
+      "country": "South Africa",
+      "locality": "Port Alfred, Eastern Cape",
       "cleaned": false,
       "license": "CC BY-NC-SA 4.0"
     },

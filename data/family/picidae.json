@@ -6,8 +6,8 @@
     "en": "Woodpeckers",
     "af": "Spegte"
   },
-  "summary": "Field notes for this family are still to be written.",
-  "sampleData": true,
+  "summary": "Woodpeckers, and the Red-throated Wryneck. Cardinal Woodpecker is the small streaked bird with a brown forehead. Golden-tailed Woodpecker is larger and streaked below, the male with a red crown and malar streak and the female with a red nape. Bennett’s Woodpecker is spotted below and often feeds on the ground. Bearded Woodpecker is the large barred bird with a black ear-patch. Newman still lists it as Dendropicos namaquus. This site follows IOC and BirdLife South Africa and keeps it in Chloropicus. Olive Woodpecker is the grey-headed forest bird with an unmarked olive mantle and a red rump. Red-throated Wryneck has a rust-brown throat and speckled upperparts, and it perches more like a passerine.",
+  "sampleData": false,
   "species": [
     {
       "slug": "campethera-abingoni",

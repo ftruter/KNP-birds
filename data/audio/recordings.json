@@ -743,6 +743,26 @@
         }
       ]
     },
+    "campethera-abingoni": {
+      "calls": [
+        {
+          "index": 0,
+          "quality": {
+            "xeno-canto/XC545718": "A"
+          }
+        }
+      ]
+    },
+    "campethera-bennettii": {
+      "calls": [
+        {
+          "index": 0,
+          "quality": {
+            "xeno-canto/XC682056": "A"
+          }
+        }
+      ]
+    },
     "caprimulgus-europaeus": {
       "calls": [
         {
@@ -841,6 +861,22 @@
           "index": 0,
           "quality": {
             "xeno-canto/XC1033971": "A"
+          }
+        }
+      ]
+    },
+    "chloropicus-namaquus": {
+      "calls": [
+        {
+          "index": 0,
+          "quality": {
+            "xeno-canto/XC503724": "A"
+          }
+        },
+        {
+          "index": 1,
+          "quality": {
+            "xeno-canto/XC323354": "A"
           }
         }
       ]
@@ -1282,6 +1318,26 @@
         }
       ]
     },
+    "dendropicos-fuscescens": {
+      "calls": [
+        {
+          "index": 0,
+          "quality": {
+            "xeno-canto/XC998772": "A"
+          }
+        }
+      ]
+    },
+    "dendropicos-griseocephalus": {
+      "calls": [
+        {
+          "index": 0,
+          "quality": {
+            "xeno-canto/XC650855": "A"
+          }
+        }
+      ]
+    },
     "egretta-ardesiaca": {
       "calls": [
         {
@@ -1639,6 +1695,16 @@
               "quality": "A"
             }
           ]
+        }
+      ]
+    },
+    "jynx-ruficollis": {
+      "calls": [
+        {
+          "index": 0,
+          "quality": {
+            "xeno-canto/XC342721": "A"
+          }
         }
       ]
     },

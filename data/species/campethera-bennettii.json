@@ -7,8 +7,42 @@
     "af": "Bennettspeg"
   },
   "family": "picidae",
-  "summary": "The details for this species have not been published yet.",
-  "sampleData": true,
+  "size": {
+    "lengthCm": {
+      "min": 22,
+      "max": 24
+    },
+    "note": "Newman's Birds gives 22–24 cm."
+  },
+  "habitat": "Usually in pairs or groups in broad-leaved woodland and thornveld, feeding mainly on the ground.",
+  "summary": "A fairly common resident. A medium-sized woodpecker with spotted underparts, except in Namibia, where it is unspotted. The male has an entirely red crown and a red malar streak. The female has brown patches on the face and throat, and Newman’s identification line gives her a red nape. The call is an excitable high-pitched chattering, sometimes by two or three birds together and often with wing-flapping. Bill colour, eye, legs, wings and the tail colour were not described. The Kemp paper name Bennett’s Woodpecker and the code RB were left unchanged.",
+  "sampleData": false,
+  "similar": [
+    {
+      "slug": "campethera-abingoni",
+      "note": "Golden-tailed Woodpecker is streaked below rather than spotted. Its female has a spotted black-and-white crown, not brown patches on the face and throat."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Bennett’s Woodpecker",
+      "url": "https://newmansbirds.com/birds/bennetts-woodpecker/",
+      "publisher": "Newman's Birds",
+      "year": 2026
+    },
+    {
+      "title": "Avibase bird checklist — Kruger National Park",
+      "url": "https://avibase.bsc-eoc.org/checklist.jsp?region=ZA000003",
+      "publisher": "Avibase",
+      "year": null
+    },
+    {
+      "title": "Kemp A.C., Herholdt J.J., Whyte I. & Harrison J. (2001). Birds of the two largest national parks in South Africa: a method to generate estimates of population size for all species and assess their conservation ecology. S. Afr. J. Sci. 97: 393–403.",
+      "url": "https://journals.co.za/doi/pdf/10.10520/EJC97367",
+      "publisher": "South African Journal of Science",
+      "year": 2001
+    }
+  ],
   "population": {
     "estimate": {
       "low": 8192,
@@ -35,8 +69,233 @@
     },
     "tierApplied": "D"
   },
-  "variants": [],
-  "viewNotes": [],
-  "calls": [],
-  "images": []
+  "variants": [
+    {
+      "age": "adult",
+      "sex": "male",
+      "season": "any",
+      "marks": {
+        "bill": {
+          "colour": null,
+          "shape": "Straight and pointed, from the family notes on the Newman page."
+        },
+        "eye": {
+          "iris": null,
+          "ring": null
+        },
+        "legs": {
+          "colour": null
+        },
+        "head": {
+          "crown": "red",
+          "face": null,
+          "throat": null,
+          "pattern": "Entirely red crown and a red malar streak."
+        },
+        "upperparts": {
+          "back": null,
+          "rump": null
+        },
+        "underparts": {
+          "breast": null,
+          "belly": null,
+          "pattern": "Spotted. Newman says it is unspotted in Namibia."
+        },
+        "wings": {
+          "above": null,
+          "below": null
+        },
+        "tail": {
+          "colour": null,
+          "shape": "Stiff. Newman’s family notes say it is used as a prop while feeding."
+        }
+      }
+    },
+    {
+      "age": "adult",
+      "sex": "female",
+      "season": "any",
+      "marks": {
+        "bill": {
+          "colour": null,
+          "shape": "Straight and pointed, from the family notes on the Newman page."
+        },
+        "eye": {
+          "iris": null,
+          "ring": null
+        },
+        "legs": {
+          "colour": null
+        },
+        "head": {
+          "crown": null,
+          "face": "brown",
+          "throat": "brown",
+          "pattern": "Brown facial and throat patches. Newman’s identification line gives a red nape."
+        },
+        "upperparts": {
+          "back": null,
+          "rump": null
+        },
+        "underparts": {
+          "breast": null,
+          "belly": null,
+          "pattern": "Lightly spotted. Newman says it is unspotted in Namibia."
+        },
+        "wings": {
+          "above": null,
+          "below": null
+        },
+        "tail": {
+          "colour": null,
+          "shape": "Stiff. Newman’s family notes say it is used as a prop while feeding."
+        }
+      }
+    }
+  ],
+  "viewNotes": [
+    {
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "male",
+      "season": "any",
+      "note": "Entirely red crown and a red malar streak, with spotted underparts."
+    },
+    {
+      "view": "perched-front",
+      "age": "adult",
+      "sex": "male",
+      "season": "any",
+      "note": "Red crown, red malar streak and spotted breast."
+    },
+    {
+      "view": "perched-back",
+      "age": "adult",
+      "sex": "male",
+      "season": "any",
+      "note": "Red crown. The back colour was not described. The tail is stiff, and its colour was not given."
+    },
+    {
+      "view": "flight-above",
+      "age": "adult",
+      "sex": "male",
+      "season": "any",
+      "note": "A flight pattern was not described, and the wing colour was not given."
+    },
+    {
+      "view": "flight-below",
+      "age": "adult",
+      "sex": "male",
+      "season": "any",
+      "note": "The underwing was not described. The underparts are spotted."
+    },
+    {
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "female",
+      "season": "any",
+      "note": "Brown patches on the face and throat. Newman’s identification line gives a red nape."
+    },
+    {
+      "view": "perched-front",
+      "age": "adult",
+      "sex": "female",
+      "season": "any",
+      "note": "Brown throat and lightly spotted underparts."
+    },
+    {
+      "view": "perched-back",
+      "age": "adult",
+      "sex": "female",
+      "season": "any",
+      "note": "The female back was not described. The identification line gives a red nape."
+    },
+    {
+      "view": "flight-above",
+      "age": "adult",
+      "sex": "female",
+      "season": "any",
+      "note": "A female flight pattern was not described."
+    },
+    {
+      "view": "flight-below",
+      "age": "adult",
+      "sex": "female",
+      "season": "any",
+      "note": "The female underwing was not described. The underparts are lightly spotted."
+    }
+  ],
+  "calls": [
+    {
+      "sex": "any",
+      "type": "call",
+      "description": "An excitable, high-pitched chattering, sometimes by two or three birds together, often accompanied by wing-flapping: whirrwhirrwhirrwhir-it-whir-it-whir-itwrrrrrrrrr. Grade A duet from Samala Camp, North Luangwa National Park, Zambia. The filename is XC682056-Bennetts woodpecker (duet,call) 20210716,SamalaCamp,NorthLuangwaNP,ZAMBIA_PB.mp3.",
+      "recordings": [
+        {
+          "key": "xeno-canto/XC682056",
+          "source": "https://xeno-canto.org/682056",
+          "fileUrl": "https://xeno-canto.org/sounds/uploaded/IIJAXHKSCC/XC682056-Bennetts%20woodpecker%20%28duet%2Ccall%29%2020210716%2CSamalaCamp%2CNorthLuangwaNP%2CZAMBIA_PB.mp3",
+          "author": "Dries Van de Loock",
+          "license": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ]
+    }
+  ],
+  "images": [
+    {
+      "key": "campethera-bennettii/side-male.jpg",
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "male",
+      "season": "any",
+      "source": "https://www.inaturalist.org/observations/159687605",
+      "fileUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/275905429/large.jpeg",
+      "author": "Tim Kirsten",
+      "license": "CC0 1.0",
+      "licenceUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "aiGenerated": false,
+      "hosted": false,
+      "alt": "Male Bennett’s Woodpecker at Malalane Gate, Kruger, red crown and red malar streak",
+      "caption": "Male Bennett’s Woodpecker at Malalane Gate, Kruger, with a red crown and a red malar streak."
+    },
+    {
+      "key": "campethera-bennettii/front-male.jpg",
+      "view": "perched-front",
+      "age": "adult",
+      "sex": "male",
+      "season": "any",
+      "source": "https://www.inaturalist.org/observations/330196757",
+      "fileUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/598706590/large.jpg",
+      "author": "Andrew Deacon",
+      "license": "CC0 1.0",
+      "licenceUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "aiGenerated": false,
+      "hosted": false,
+      "alt": "Male Bennett’s Woodpecker at Malelane Camp, Kruger, red crown, red malar streak and spotted breast",
+      "caption": "Male Bennett’s Woodpecker at a hole in Malelane Camp, Kruger, with a red crown, a red malar streak and a spotted breast."
+    }
+  ],
+  "research": {
+    "confidence": "medium",
+    "needsReview": true,
+    "note": "Newman calls it a fairly common resident, and Avibase does not mark the Kruger occurrence rare or accidental, so status is resident and all twelve months are listed. The female red nape is on Newman’s identification line. The description itself names the brown face and throat. The immature was not described. Bill colour, eye, legs, wings and tail colour were not given. No female photograph and no flight photograph were found. The Kruger frames are two males, a side at Malalane Gate and a front at Malelane Camp, both CC0. The grade A recording is a duet from North Luangwa. A grade A drumming from Nylsvley was not used, because Newman does not describe drumming for this species. Population figures, the Kemp paper name Bennett’s Woodpecker and the code RB were left unchanged."
+  },
+  "status": "resident",
+  "monthsPresent": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+  ]
 }
