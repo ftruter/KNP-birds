@@ -2430,6 +2430,16 @@
         }
       ]
     },
+    "rostratula-benghalensis": {
+      "calls": [
+        {
+          "index": 0,
+          "quality": {
+            "xeno-canto/XC616415": "B"
+          }
+        }
+      ]
+    },
     "sarkidiornis-melanotos": {
       "calls": [
         {

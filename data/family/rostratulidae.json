@@ -6,8 +6,8 @@
     "en": "Painted-snipes",
     "af": "Goudsnip"
   },
-  "summary": "Field notes for this family are still to be written.",
-  "sampleData": true,
+  "summary": "Painted-snipes. Greater Painted-snipe has a rufous breast, white patches around the eyes, and a white band that curves from the breast over the wings onto an olive-green back. The male plumage is not separately described.",
+  "sampleData": false,
   "species": [
     {
       "slug": "rostratula-benghalensis",
