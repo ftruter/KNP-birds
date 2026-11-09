@@ -7,8 +7,36 @@
     "af": "Witpelikaan"
   },
   "family": "pelecanidae",
-  "summary": "The details for this species have not been published yet.",
-  "sampleData": true,
+  "size": {
+    "lengthCm": {
+      "min": 180,
+      "max": 180
+    },
+    "note": "Newman's Birds gives 180 cm."
+  },
+  "habitat": "Flocks on coastal islands, including artificial guano islands, and on estuaries, bays, lagoons and occasionally large dams.",
+  "summary": "A common, localised resident. The non-breeding adult is all white, larger than Pink-backed Pelican, with a pale yellow and pink bill, a yellow bill-pouch and yellow legs. In flight the white underwings contrast with black flight feathers. The breeding adult has a pink flush, a yellow patch on the upper breast, a pink-and-grey upper mandible, a yellow pouch and pink legs. The colour key says pink legs and a yellowish bill. The immature has a dusky head and neck, dark brown wings and tail, and yellowish underparts. Newman does not describe the voice. The Kemp paper name White Pelican and the code NB were left unchanged.",
+  "sampleData": false,
+  "similar": [
+    {
+      "slug": "pelecanus-rufescens",
+      "note": "Pink-backed Pelican is smaller. Its colour key gives grey wings in non-breeding plumage, not an all-white body."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Great White Pelican",
+      "url": "https://newmansbirds.com/birds/great-white-pelican/",
+      "publisher": "Newman's Birds",
+      "year": 2026
+    },
+    {
+      "title": "Kemp A.C., Herholdt J.J., Whyte I. & Harrison J. (2001). Birds of the two largest national parks in South Africa: a method to generate estimates of population size for all species and assess their conservation ecology. S. Afr. J. Sci. 97: 393–403.",
+      "url": "https://journals.co.za/doi/pdf/10.10520/EJC97367",
+      "publisher": "South African Journal of Science",
+      "year": 2001
+    }
+  ],
   "population": {
     "estimate": {
       "low": 1,
@@ -35,8 +63,298 @@
     },
     "tierApplied": "D"
   },
-  "variants": [],
-  "viewNotes": [],
-  "calls": [],
-  "images": []
+  "variants": [
+    {
+      "age": "adult",
+      "sex": "any",
+      "season": "non-breeding",
+      "marks": {
+        "bill": {
+          "colour": [
+            "yellow",
+            "pink"
+          ],
+          "shape": "Pale yellow and pink bill. The bill-pouch is yellow."
+        },
+        "eye": {
+          "iris": null,
+          "ring": null
+        },
+        "legs": {
+          "colour": "yellow"
+        },
+        "head": {
+          "crown": "white",
+          "face": "white",
+          "throat": "white"
+        },
+        "upperparts": {
+          "back": "white",
+          "rump": null
+        },
+        "underparts": {
+          "breast": "white",
+          "belly": "white"
+        },
+        "wings": {
+          "above": null,
+          "below": "white",
+          "pattern": "Black flight feathers contrast with the white underwings."
+        },
+        "tail": {
+          "colour": null,
+          "shape": null
+        }
+      }
+    },
+    {
+      "age": "adult",
+      "sex": "any",
+      "season": "breeding",
+      "marks": {
+        "bill": {
+          "colour": [
+            "pink",
+            "grey"
+          ],
+          "shape": "Upper mandible pink and grey. Pouch yellow."
+        },
+        "eye": {
+          "iris": null,
+          "ring": null
+        },
+        "legs": {
+          "colour": "pink"
+        },
+        "head": {
+          "crown": null,
+          "face": null,
+          "throat": null
+        },
+        "upperparts": {
+          "back": null,
+          "rump": null,
+          "pattern": "Pink flush to the white body."
+        },
+        "underparts": {
+          "breast": null,
+          "belly": null,
+          "pattern": "Yellow patch on the upper breast."
+        },
+        "wings": {
+          "above": null,
+          "below": null
+        },
+        "tail": {
+          "colour": null,
+          "shape": null
+        }
+      }
+    },
+    {
+      "age": "immature",
+      "sex": "any",
+      "season": "any",
+      "marks": {
+        "bill": {
+          "colour": null,
+          "shape": null
+        },
+        "eye": {
+          "iris": null,
+          "ring": null
+        },
+        "legs": {
+          "colour": null
+        },
+        "head": {
+          "crown": null,
+          "face": null,
+          "throat": null,
+          "pattern": "Head and neck dusky, darkest when young."
+        },
+        "upperparts": {
+          "back": null,
+          "rump": null
+        },
+        "underparts": {
+          "breast": null,
+          "belly": null,
+          "pattern": "Yellowish underparts."
+        },
+        "wings": {
+          "above": "dark-brown",
+          "below": null
+        },
+        "tail": {
+          "colour": "dark-brown",
+          "shape": null
+        }
+      }
+    }
+  ],
+  "viewNotes": [
+    {
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "any",
+      "season": "non-breeding",
+      "note": "All white, with a pale yellow and pink bill and yellow legs."
+    },
+    {
+      "view": "perched-front",
+      "age": "adult",
+      "sex": "any",
+      "season": "non-breeding",
+      "note": "White head and a yellow pouch."
+    },
+    {
+      "view": "perched-back",
+      "age": "adult",
+      "sex": "any",
+      "season": "non-breeding",
+      "note": "White back."
+    },
+    {
+      "view": "flight-above",
+      "age": "adult",
+      "sex": "any",
+      "season": "non-breeding",
+      "note": "Black flight feathers."
+    },
+    {
+      "view": "flight-below",
+      "age": "adult",
+      "sex": "any",
+      "season": "non-breeding",
+      "note": "White underwings contrasting with black flight feathers."
+    },
+    {
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "any",
+      "season": "breeding",
+      "note": "Pink flush, yellow upper-breast patch, pink legs and a pink-and-grey upper mandible."
+    },
+    {
+      "view": "perched-front",
+      "age": "adult",
+      "sex": "any",
+      "season": "breeding",
+      "note": "Yellow patch on the upper breast."
+    },
+    {
+      "view": "perched-back",
+      "age": "adult",
+      "sex": "any",
+      "season": "breeding",
+      "note": "Pink flush on the body."
+    },
+    {
+      "view": "flight-above",
+      "age": "adult",
+      "sex": "any",
+      "season": "breeding",
+      "note": "The breeding flight pattern was not given separately from the black flight feathers."
+    },
+    {
+      "view": "flight-below",
+      "age": "adult",
+      "sex": "any",
+      "season": "breeding",
+      "note": "White underwings were described for the species. The breeding underwing was not given separately."
+    },
+    {
+      "view": "perched-side",
+      "age": "immature",
+      "sex": "any",
+      "season": "any",
+      "note": "Dusky head and neck, dark brown wings and yellowish underparts."
+    },
+    {
+      "view": "perched-front",
+      "age": "immature",
+      "sex": "any",
+      "season": "any",
+      "note": "Dusky head, darkest when young."
+    },
+    {
+      "view": "perched-back",
+      "age": "immature",
+      "sex": "any",
+      "season": "any",
+      "note": "Dark brown wings."
+    },
+    {
+      "view": "flight-above",
+      "age": "immature",
+      "sex": "any",
+      "season": "any",
+      "note": "Dark brown wings."
+    },
+    {
+      "view": "flight-below",
+      "age": "immature",
+      "sex": "any",
+      "season": "any",
+      "note": "Yellowish underparts. A separate underwing pattern was not described."
+    }
+  ],
+  "calls": [
+    {
+      "sex": "any",
+      "type": "call",
+      "description": "Newman does not describe the voice. Grade A flight call from Djoudj, Senegal. It is the only openly licensed grade A. The filename is XC343693-GreatWhitePelican_Djoudj_161117_1896_edited.mp3, so the file name says edited.",
+      "recordings": [
+        {
+          "key": "xeno-canto/XC343693",
+          "source": "https://xeno-canto.org/343693",
+          "fileUrl": "https://xeno-canto.org/sounds/uploaded/RGSEIIJGHA/XC343693-GreatWhitePelican_Djoudj_161117_1896_edited.mp3",
+          "author": "Bram Piot",
+          "license": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ]
+    }
+  ],
+  "images": [
+    {
+      "key": "pelecanus-onocrotalus/side.jpg",
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "any",
+      "season": "non-breeding",
+      "source": "https://www.inaturalist.org/observations/186910514",
+      "fileUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/326728395/large.jpeg",
+      "author": "Richard Johnstone",
+      "license": "CC BY-NC 4.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+      "aiGenerated": false,
+      "hosted": false,
+      "alt": "Great White Pelicans, white bodies and black flight feathers",
+      "caption": "Great White Pelicans in the Mopani district, white, with black flight feathers."
+    }
+  ],
+  "research": {
+    "confidence": "medium",
+    "needsReview": true,
+    "note": "Newman calls it a common localised resident, so status is resident and all twelve months are listed. The colour key says pink legs, while the non-breeding sentence says yellow legs. That conflict, and the immature duskiness being only “various degrees”, is why this needs review. Population figures, the Kemp paper name White Pelican and the code NB were left unchanged."
+  },
+  "status": "resident",
+  "monthsPresent": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+  ]
 }

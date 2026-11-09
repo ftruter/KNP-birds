@@ -1,9 +1,9 @@
 {
   "source": "xeno-canto explore catalogue, API v3 recording fields",
   "counts": {
-    "slots": 360,
+    "slots": 362,
     "swapped": 17,
-    "added": 258,
+    "added": 260,
     "kept": 57,
     "none": 28,
     "cleaned": 0
@@ -5431,6 +5431,34 @@
       "locality": "Benfontijn Gamereserve, Lejweleputswa, Free State",
       "cleaned": false,
       "license": "CC BY-NC-SA 3.0"
+    },
+    {
+      "slug": "pelecanus-onocrotalus",
+      "scientificName": "Pelecanus onocrotalus",
+      "index": 0,
+      "type": "call",
+      "action": "added",
+      "from": [],
+      "to": "343693",
+      "quality": "A",
+      "country": "Senegal",
+      "locality": "Djoudj NP (Gainthe et Khar), Saint-Louis",
+      "cleaned": false,
+      "license": "CC BY-NC-SA 4.0"
+    },
+    {
+      "slug": "pelecanus-rufescens",
+      "scientificName": "Pelecanus rufescens",
+      "index": 0,
+      "type": "call",
+      "action": "added",
+      "from": [],
+      "to": "862719",
+      "quality": "B",
+      "country": "Senegal",
+      "locality": "Kataba1 (near Kassel), Bignona, Région de Ziguinchor",
+      "cleaned": false,
+      "license": "CC BY-NC-SA 4.0"
     }
   ]
 }

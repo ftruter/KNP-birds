@@ -16559,14 +16559,42 @@
       "slug": "pelecanus-onocrotalus",
       "scientificName": "Pelecanus onocrotalus",
       "commonName": "Great White Pelican",
-      "images": [],
-      "recordings": [],
+      "images": [
+        {
+          "key": "pelecanus-onocrotalus/side.jpg",
+          "author": "Richard Johnstone",
+          "licence": "CC BY-NC 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+          "sourceUrl": "https://www.inaturalist.org/observations/186910514",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ],
+      "recordings": [
+        {
+          "key": "xeno-canto/XC343693",
+          "author": "Bram Piot",
+          "licence": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "sourceUrl": "https://xeno-canto.org/343693",
+          "aiGenerated": false,
+          "hosted": false,
+          "quality": "A",
+          "callType": "call"
+        }
+      ],
       "sources": [
         {
           "title": "Kemp A.C., Herholdt J.J., Whyte I. & Harrison J. (2001). Birds of the two largest national parks in South Africa: a method to generate estimates of population size for all species and assess their conservation ecology. S. Afr. J. Sci. 97: 393–403.",
           "url": "https://journals.co.za/doi/pdf/10.10520/EJC97367",
           "publisher": "South African Journal of Science",
           "year": 2001
+        },
+        {
+          "title": "Great White Pelican",
+          "url": "https://newmansbirds.com/birds/great-white-pelican/",
+          "publisher": "Newman's Birds",
+          "year": 2026
         }
       ]
     },
@@ -16574,14 +16602,48 @@
       "slug": "pelecanus-rufescens",
       "scientificName": "Pelecanus rufescens",
       "commonName": "Pink-backed Pelican",
-      "images": [],
-      "recordings": [],
+      "images": [
+        {
+          "key": "pelecanus-rufescens/side.jpg",
+          "author": "Lynne Correia",
+          "licence": "CC BY-NC 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+          "sourceUrl": "https://www.inaturalist.org/observations/181208020",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ],
+      "recordings": [
+        {
+          "key": "xeno-canto/XC862719",
+          "author": "Alain Malengreau",
+          "licence": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "sourceUrl": "https://xeno-canto.org/862719",
+          "aiGenerated": false,
+          "hosted": false,
+          "quality": "B",
+          "callType": "call"
+        }
+      ],
       "sources": [
         {
           "title": "Kemp A.C., Herholdt J.J., Whyte I. & Harrison J. (2001). Birds of the two largest national parks in South Africa: a method to generate estimates of population size for all species and assess their conservation ecology. S. Afr. J. Sci. 97: 393–403.",
           "url": "https://journals.co.za/doi/pdf/10.10520/EJC97367",
           "publisher": "South African Journal of Science",
           "year": 2001
+        },
+        {
+          "title": "Pink-backed Pelican",
+          "url": "https://newmansbirds.com/birds/pink-backed-pelican/",
+          "publisher": "Newman's Birds",
+          "year": 2026
+        },
+        {
+          "title": "Great White Pelican",
+          "url": "https://newmansbirds.com/birds/great-white-pelican/",
+          "publisher": "Newman's Birds",
+          "year": 2026
         }
       ]
     },
