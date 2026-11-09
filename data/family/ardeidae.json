@@ -6,8 +6,8 @@
     "en": "Herons, egrets and bitterns",
     "af": "Reiers"
   },
-  "summary": "Field notes for this family are still to be written.",
-  "sampleData": true,
+  "summary": "Herons, egrets and bitterns hunt in shallow water or, for Black-headed Heron and Cattle Egret, in grassland. Kruger has fifteen species. The Green-backed Heron is Butorides atricapilla, the night herons are Nycticorax nycticorax and Calherodius leuconotus, and the bitterns are in Botaurus.",
+  "sampleData": false,
   "species": [
     {
       "slug": "ardea-alba",

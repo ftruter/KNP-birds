@@ -2367,14 +2367,73 @@
       "slug": "ardea-alba",
       "scientificName": "Ardea alba",
       "commonName": "Great Egret",
-      "images": [],
-      "recordings": [],
+      "images": [
+        {
+          "key": "ardea-alba/side.jpg",
+          "author": "sitszasadam",
+          "licence": "CC BY-NC 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+          "sourceUrl": "https://www.inaturalist.org/observations/49557685",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ],
+      "recordings": [
+        {
+          "key": "xeno-canto/XC586205",
+          "author": "Tanguy Loïs",
+          "licence": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "sourceUrl": "https://xeno-canto.org/586205",
+          "aiGenerated": false,
+          "hosted": false,
+          "quality": "A",
+          "callType": "call"
+        }
+      ],
       "sources": [
         {
           "title": "Kemp A.C., Herholdt J.J., Whyte I. & Harrison J. (2001). Birds of the two largest national parks in South Africa: a method to generate estimates of population size for all species and assess their conservation ecology. S. Afr. J. Sci. 97: 393–403.",
           "url": "https://journals.co.za/doi/pdf/10.10520/EJC97367",
           "publisher": "South African Journal of Science",
           "year": 2001
+        },
+        {
+          "title": "Great Egret",
+          "url": "https://newmansbirds.com/birds/great-egret/",
+          "publisher": "Newman's Birds",
+          "year": 2026
+        },
+        {
+          "title": "Great egret",
+          "url": "https://en.wikipedia.org/wiki/Great_egret",
+          "publisher": "Wikipedia",
+          "year": 2026
+        }
+      ]
+    },
+    {
+      "slug": "ardea-brachyrhyncha",
+      "scientificName": "Ardea brachyrhyncha",
+      "commonName": "Yellow-billed Egret",
+      "images": [
+        {
+          "key": "ardea-brachyrhyncha/side.jpg",
+          "author": "Patrick Jackson",
+          "licence": "CC BY 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by/4.0/",
+          "sourceUrl": "https://www.inaturalist.org/observations/407163110",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ],
+      "recordings": [],
+      "sources": [
+        {
+          "title": "Yellow-billed (Intermediate) Egret",
+          "url": "https://newmansbirds.com/birds/yellow-billed-intermediate-egret/",
+          "publisher": "Newman's Birds",
+          "year": 2026
         }
       ]
     },
@@ -2382,14 +2441,42 @@
       "slug": "ardea-cinerea",
       "scientificName": "Ardea cinerea",
       "commonName": "Grey Heron",
-      "images": [],
-      "recordings": [],
+      "images": [
+        {
+          "key": "ardea-cinerea/side.jpg",
+          "author": "Pavel Shukov",
+          "licence": "CC BY-NC 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+          "sourceUrl": "https://www.inaturalist.org/observations/254379252",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ],
+      "recordings": [
+        {
+          "key": "xeno-canto/XC497244",
+          "author": "Albert Lastukhin",
+          "licence": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "sourceUrl": "https://xeno-canto.org/497244",
+          "aiGenerated": false,
+          "hosted": false,
+          "quality": "A",
+          "callType": "call"
+        }
+      ],
       "sources": [
         {
           "title": "Kemp A.C., Herholdt J.J., Whyte I. & Harrison J. (2001). Birds of the two largest national parks in South Africa: a method to generate estimates of population size for all species and assess their conservation ecology. S. Afr. J. Sci. 97: 393–403.",
           "url": "https://journals.co.za/doi/pdf/10.10520/EJC97367",
           "publisher": "South African Journal of Science",
           "year": 2001
+        },
+        {
+          "title": "Grey Heron",
+          "url": "https://newmansbirds.com/birds/grey-heron/",
+          "publisher": "Newman's Birds",
+          "year": 2026
         }
       ]
     },
@@ -2397,14 +2484,42 @@
       "slug": "ardea-goliath",
       "scientificName": "Ardea goliath",
       "commonName": "Goliath Heron",
-      "images": [],
-      "recordings": [],
+      "images": [
+        {
+          "key": "ardea-goliath/side.jpg",
+          "author": "Elaine Bester",
+          "licence": "CC BY-NC 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+          "sourceUrl": "https://www.inaturalist.org/observations/52165071",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ],
+      "recordings": [
+        {
+          "key": "xeno-canto/XC1083152",
+          "author": "Jonathan Onongo",
+          "licence": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "sourceUrl": "https://xeno-canto.org/1083152",
+          "aiGenerated": false,
+          "hosted": false,
+          "quality": "A",
+          "callType": "call"
+        }
+      ],
       "sources": [
         {
           "title": "Kemp A.C., Herholdt J.J., Whyte I. & Harrison J. (2001). Birds of the two largest national parks in South Africa: a method to generate estimates of population size for all species and assess their conservation ecology. S. Afr. J. Sci. 97: 393–403.",
           "url": "https://journals.co.za/doi/pdf/10.10520/EJC97367",
           "publisher": "South African Journal of Science",
           "year": 2001
+        },
+        {
+          "title": "Goliath Heron",
+          "url": "https://newmansbirds.com/birds/goliath-heron/",
+          "publisher": "Newman's Birds",
+          "year": 2026
         }
       ]
     },
@@ -2412,14 +2527,42 @@
       "slug": "ardea-ibis",
       "scientificName": "Ardea ibis",
       "commonName": "Western Cattle Egret",
-      "images": [],
-      "recordings": [],
+      "images": [
+        {
+          "key": "ardea-ibis/side.jpg",
+          "author": "Tim Kirsten",
+          "licence": "CC0 1.0",
+          "licenceUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+          "sourceUrl": "https://www.inaturalist.org/observations/174872312",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ],
+      "recordings": [
+        {
+          "key": "xeno-canto/XC369827",
+          "author": "Tim Cockcroft",
+          "licence": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "sourceUrl": "https://xeno-canto.org/369827",
+          "aiGenerated": false,
+          "hosted": false,
+          "quality": "A",
+          "callType": "call"
+        }
+      ],
       "sources": [
         {
           "title": "Kemp A.C., Herholdt J.J., Whyte I. & Harrison J. (2001). Birds of the two largest national parks in South Africa: a method to generate estimates of population size for all species and assess their conservation ecology. S. Afr. J. Sci. 97: 393–403.",
           "url": "https://journals.co.za/doi/pdf/10.10520/EJC97367",
           "publisher": "South African Journal of Science",
           "year": 2001
+        },
+        {
+          "title": "Western Cattle Egret",
+          "url": "https://newmansbirds.com/birds/western-cattle-egret/",
+          "publisher": "Newman's Birds",
+          "year": 2026
         }
       ]
     },
@@ -2427,14 +2570,42 @@
       "slug": "ardea-melanocephala",
       "scientificName": "Ardea melanocephala",
       "commonName": "Black-headed Heron",
-      "images": [],
-      "recordings": [],
+      "images": [
+        {
+          "key": "ardea-melanocephala/side.jpg",
+          "author": "maritzasouthafrica",
+          "licence": "CC BY-NC 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+          "sourceUrl": "https://www.inaturalist.org/observations/258373025",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ],
+      "recordings": [
+        {
+          "key": "xeno-canto/XC741404",
+          "author": "Lynette Rudman",
+          "licence": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "sourceUrl": "https://xeno-canto.org/741404",
+          "aiGenerated": false,
+          "hosted": false,
+          "quality": "A",
+          "callType": "call"
+        }
+      ],
       "sources": [
         {
           "title": "Kemp A.C., Herholdt J.J., Whyte I. & Harrison J. (2001). Birds of the two largest national parks in South Africa: a method to generate estimates of population size for all species and assess their conservation ecology. S. Afr. J. Sci. 97: 393–403.",
           "url": "https://journals.co.za/doi/pdf/10.10520/EJC97367",
           "publisher": "South African Journal of Science",
           "year": 2001
+        },
+        {
+          "title": "Black-headed Heron",
+          "url": "https://newmansbirds.com/birds/black-headed-heron/",
+          "publisher": "Newman's Birds",
+          "year": 2026
         }
       ]
     },
@@ -2442,14 +2613,48 @@
       "slug": "ardea-purpurea",
       "scientificName": "Ardea purpurea",
       "commonName": "Purple Heron",
-      "images": [],
-      "recordings": [],
+      "images": [
+        {
+          "key": "ardea-purpurea/side.jpg",
+          "author": "Heinrich Human",
+          "licence": "CC BY-NC 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+          "sourceUrl": "https://www.inaturalist.org/observations/250422040",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ],
+      "recordings": [
+        {
+          "key": "xeno-canto/XC1173600",
+          "author": "African Bioacoustics Community",
+          "licence": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "sourceUrl": "https://xeno-canto.org/1173600",
+          "aiGenerated": false,
+          "hosted": false,
+          "quality": "A",
+          "callType": "call"
+        }
+      ],
       "sources": [
         {
           "title": "Kemp A.C., Herholdt J.J., Whyte I. & Harrison J. (2001). Birds of the two largest national parks in South Africa: a method to generate estimates of population size for all species and assess their conservation ecology. S. Afr. J. Sci. 97: 393–403.",
           "url": "https://journals.co.za/doi/pdf/10.10520/EJC97367",
           "publisher": "South African Journal of Science",
           "year": 2001
+        },
+        {
+          "title": "Purple Heron",
+          "url": "https://newmansbirds.com/birds/purple-heron/",
+          "publisher": "Newman's Birds",
+          "year": 2026
+        },
+        {
+          "title": "Purple heron",
+          "url": "https://en.wikipedia.org/wiki/Purple_heron",
+          "publisher": "Wikipedia",
+          "year": 2026
         }
       ]
     },
@@ -2457,14 +2662,48 @@
       "slug": "ardeola-ralloides",
       "scientificName": "Ardeola ralloides",
       "commonName": "Squacco Heron",
-      "images": [],
-      "recordings": [],
+      "images": [
+        {
+          "key": "ardeola-ralloides/side.jpg",
+          "author": "Elaine Bester",
+          "licence": "CC BY-NC 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+          "sourceUrl": "https://www.inaturalist.org/observations/49344415",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ],
+      "recordings": [
+        {
+          "key": "xeno-canto/XC1045966",
+          "author": "African Bioacoustics Community",
+          "licence": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "sourceUrl": "https://xeno-canto.org/1045966",
+          "aiGenerated": false,
+          "hosted": false,
+          "quality": "A",
+          "callType": "call"
+        }
+      ],
       "sources": [
         {
           "title": "Kemp A.C., Herholdt J.J., Whyte I. & Harrison J. (2001). Birds of the two largest national parks in South Africa: a method to generate estimates of population size for all species and assess their conservation ecology. S. Afr. J. Sci. 97: 393–403.",
           "url": "https://journals.co.za/doi/pdf/10.10520/EJC97367",
           "publisher": "South African Journal of Science",
           "year": 2001
+        },
+        {
+          "title": "Squacco Heron",
+          "url": "https://newmansbirds.com/birds/squacco-heron/",
+          "publisher": "Newman's Birds",
+          "year": 2026
+        },
+        {
+          "title": "Squacco heron",
+          "url": "https://en.wikipedia.org/wiki/Squacco_heron",
+          "publisher": "Wikipedia",
+          "year": 2026
         }
       ]
     },
@@ -2766,14 +3005,42 @@
       "slug": "botaurus-minutus",
       "scientificName": "Botaurus minutus",
       "commonName": "Little Bittern",
-      "images": [],
-      "recordings": [],
+      "images": [
+        {
+          "key": "botaurus-minutus/reeds.jpg",
+          "author": "Heinrich Human",
+          "licence": "CC BY-NC 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+          "sourceUrl": "https://www.inaturalist.org/observations/217114800",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ],
+      "recordings": [
+        {
+          "key": "xeno-canto/XC1037026",
+          "author": "Testaert Dominique",
+          "licence": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "sourceUrl": "https://xeno-canto.org/1037026",
+          "aiGenerated": false,
+          "hosted": false,
+          "quality": "A",
+          "callType": "call"
+        }
+      ],
       "sources": [
         {
           "title": "Kemp A.C., Herholdt J.J., Whyte I. & Harrison J. (2001). Birds of the two largest national parks in South Africa: a method to generate estimates of population size for all species and assess their conservation ecology. S. Afr. J. Sci. 97: 393–403.",
           "url": "https://journals.co.za/doi/pdf/10.10520/EJC97367",
           "publisher": "South African Journal of Science",
           "year": 2001
+        },
+        {
+          "title": "Little Bittern",
+          "url": "https://newmansbirds.com/birds/little-bittern/",
+          "publisher": "Newman's Birds",
+          "year": 2026
         }
       ]
     },
@@ -2781,14 +3048,42 @@
       "slug": "botaurus-sturmii",
       "scientificName": "Botaurus sturmii",
       "commonName": "Dwarf Bittern",
-      "images": [],
-      "recordings": [],
+      "images": [
+        {
+          "key": "botaurus-sturmii/side.jpg",
+          "author": "Niall Perrins",
+          "licence": "CC BY-NC 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+          "sourceUrl": "https://www.inaturalist.org/observations/99608945",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ],
+      "recordings": [
+        {
+          "key": "xeno-canto/XC792321",
+          "author": "Nick Schaller",
+          "licence": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "sourceUrl": "https://xeno-canto.org/792321",
+          "aiGenerated": false,
+          "hosted": false,
+          "quality": "A",
+          "callType": "call"
+        }
+      ],
       "sources": [
         {
           "title": "Kemp A.C., Herholdt J.J., Whyte I. & Harrison J. (2001). Birds of the two largest national parks in South Africa: a method to generate estimates of population size for all species and assess their conservation ecology. S. Afr. J. Sci. 97: 393–403.",
           "url": "https://journals.co.za/doi/pdf/10.10520/EJC97367",
           "publisher": "South African Journal of Science",
           "year": 2001
+        },
+        {
+          "title": "Dwarf Bittern",
+          "url": "https://newmansbirds.com/birds/dwarf-bittern/",
+          "publisher": "Newman's Birds",
+          "year": 2026
         }
       ]
     },
@@ -3294,14 +3589,42 @@
       "slug": "butorides-atricapilla",
       "scientificName": "Butorides atricapilla",
       "commonName": "Little Heron",
-      "images": [],
-      "recordings": [],
+      "images": [
+        {
+          "key": "butorides-atricapilla/front.jpg",
+          "author": "copper",
+          "licence": "CC BY-NC 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+          "sourceUrl": "https://www.inaturalist.org/observations/10215194",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ],
+      "recordings": [
+        {
+          "key": "xeno-canto/XC322170",
+          "author": "Tim Cockcroft",
+          "licence": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "sourceUrl": "https://xeno-canto.org/322170",
+          "aiGenerated": false,
+          "hosted": false,
+          "quality": "A",
+          "callType": "call"
+        }
+      ],
       "sources": [
         {
           "title": "Kemp A.C., Herholdt J.J., Whyte I. & Harrison J. (2001). Birds of the two largest national parks in South Africa: a method to generate estimates of population size for all species and assess their conservation ecology. S. Afr. J. Sci. 97: 393–403.",
           "url": "https://journals.co.za/doi/pdf/10.10520/EJC97367",
           "publisher": "South African Journal of Science",
           "year": 2001
+        },
+        {
+          "title": "Green-backed (Striated) Heron",
+          "url": "https://newmansbirds.com/birds/green-backed-striated-heron/",
+          "publisher": "Newman's Birds",
+          "year": 2026
         }
       ]
     },
@@ -3542,14 +3865,42 @@
       "slug": "calherodius-leuconotus",
       "scientificName": "Calherodius leuconotus",
       "commonName": "White-backed Night Heron",
-      "images": [],
-      "recordings": [],
+      "images": [
+        {
+          "key": "calherodius-leuconotus/side.jpg",
+          "author": "Bernard DUPONT",
+          "licence": "CC BY 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by/4.0/",
+          "sourceUrl": "https://www.inaturalist.org/observations/57386300",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ],
+      "recordings": [
+        {
+          "key": "xeno-canto/XC421209",
+          "author": "Bram Piot",
+          "licence": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "sourceUrl": "https://xeno-canto.org/421209",
+          "aiGenerated": false,
+          "hosted": false,
+          "quality": "A",
+          "callType": "call"
+        }
+      ],
       "sources": [
         {
           "title": "Kemp A.C., Herholdt J.J., Whyte I. & Harrison J. (2001). Birds of the two largest national parks in South Africa: a method to generate estimates of population size for all species and assess their conservation ecology. S. Afr. J. Sci. 97: 393–403.",
           "url": "https://journals.co.za/doi/pdf/10.10520/EJC97367",
           "publisher": "South African Journal of Science",
           "year": 2001
+        },
+        {
+          "title": "White-backed Night Heron",
+          "url": "https://newmansbirds.com/birds/white-backed-night-heron/",
+          "publisher": "Newman's Birds",
+          "year": 2026
         }
       ]
     },
@@ -6488,14 +6839,42 @@
       "slug": "egretta-ardesiaca",
       "scientificName": "Egretta ardesiaca",
       "commonName": "Black Heron",
-      "images": [],
-      "recordings": [],
+      "images": [
+        {
+          "key": "egretta-ardesiaca/side.jpg",
+          "author": "Corey Callaghan",
+          "licence": "CC BY-NC 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+          "sourceUrl": "https://www.inaturalist.org/observations/257039269",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ],
+      "recordings": [
+        {
+          "key": "xeno-canto/XC973475",
+          "author": "Julien Birard",
+          "licence": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "sourceUrl": "https://xeno-canto.org/973475",
+          "aiGenerated": false,
+          "hosted": false,
+          "quality": "A",
+          "callType": "call"
+        }
+      ],
       "sources": [
         {
           "title": "Kemp A.C., Herholdt J.J., Whyte I. & Harrison J. (2001). Birds of the two largest national parks in South Africa: a method to generate estimates of population size for all species and assess their conservation ecology. S. Afr. J. Sci. 97: 393–403.",
           "url": "https://journals.co.za/doi/pdf/10.10520/EJC97367",
           "publisher": "South African Journal of Science",
           "year": 2001
+        },
+        {
+          "title": "Black Heron",
+          "url": "https://newmansbirds.com/birds/black-heron/",
+          "publisher": "Newman's Birds",
+          "year": 2026
         }
       ]
     },
@@ -6503,14 +6882,42 @@
       "slug": "egretta-garzetta",
       "scientificName": "Egretta garzetta",
       "commonName": "Little Egret",
-      "images": [],
-      "recordings": [],
+      "images": [
+        {
+          "key": "egretta-garzetta/below.jpg",
+          "author": "hermanmoller",
+          "licence": "CC BY-NC 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+          "sourceUrl": "https://www.inaturalist.org/observations/330709711",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ],
+      "recordings": [
+        {
+          "key": "xeno-canto/XC307189",
+          "author": "Faansie Peacock",
+          "licence": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "sourceUrl": "https://xeno-canto.org/307189",
+          "aiGenerated": false,
+          "hosted": false,
+          "quality": "A",
+          "callType": "call"
+        }
+      ],
       "sources": [
         {
           "title": "Kemp A.C., Herholdt J.J., Whyte I. & Harrison J. (2001). Birds of the two largest national parks in South Africa: a method to generate estimates of population size for all species and assess their conservation ecology. S. Afr. J. Sci. 97: 393–403.",
           "url": "https://journals.co.za/doi/pdf/10.10520/EJC97367",
           "publisher": "South African Journal of Science",
           "year": 2001
+        },
+        {
+          "title": "Little Egret",
+          "url": "https://newmansbirds.com/birds/little-egret/",
+          "publisher": "Newman's Birds",
+          "year": 2026
         }
       ]
     },
@@ -10820,14 +11227,48 @@
       "slug": "nycticorax-nycticorax",
       "scientificName": "Nycticorax nycticorax",
       "commonName": "Black-crowned Night Heron",
-      "images": [],
-      "recordings": [],
+      "images": [
+        {
+          "key": "nycticorax-nycticorax/side.jpg",
+          "author": "Lynne Correia",
+          "licence": "CC BY-NC 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+          "sourceUrl": "https://www.inaturalist.org/observations/169938255",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ],
+      "recordings": [
+        {
+          "key": "xeno-canto/XC505928",
+          "author": "Lynette Rudman",
+          "licence": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "sourceUrl": "https://xeno-canto.org/505928",
+          "aiGenerated": false,
+          "hosted": false,
+          "quality": "A",
+          "callType": "call"
+        }
+      ],
       "sources": [
         {
           "title": "Kemp A.C., Herholdt J.J., Whyte I. & Harrison J. (2001). Birds of the two largest national parks in South Africa: a method to generate estimates of population size for all species and assess their conservation ecology. S. Afr. J. Sci. 97: 393–403.",
           "url": "https://journals.co.za/doi/pdf/10.10520/EJC97367",
           "publisher": "South African Journal of Science",
           "year": 2001
+        },
+        {
+          "title": "Black-crowned Night Heron",
+          "url": "https://newmansbirds.com/birds/black-crowned-night-heron/",
+          "publisher": "Newman's Birds",
+          "year": 2026
+        },
+        {
+          "title": "Black-crowned night heron",
+          "url": "https://en.wikipedia.org/wiki/Black-crowned_night_heron",
+          "publisher": "Wikipedia",
+          "year": 2026
         }
       ]
     },

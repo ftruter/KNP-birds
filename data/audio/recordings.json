@@ -326,6 +326,84 @@
         }
       ]
     },
+    "ardea-alba": {
+      "calls": [
+        {
+          "index": 0,
+          "quality": {
+            "xeno-canto/XC586205": "A"
+          }
+        }
+      ]
+    },
+    "ardea-brachyrhyncha": {
+      "calls": [
+        {
+          "index": 0,
+          "quality": {}
+        }
+      ]
+    },
+    "ardea-cinerea": {
+      "calls": [
+        {
+          "index": 0,
+          "quality": {
+            "xeno-canto/XC497244": "A"
+          }
+        }
+      ]
+    },
+    "ardea-goliath": {
+      "calls": [
+        {
+          "index": 0,
+          "quality": {
+            "xeno-canto/XC1083152": "A"
+          }
+        }
+      ]
+    },
+    "ardea-ibis": {
+      "calls": [
+        {
+          "index": 0,
+          "quality": {
+            "xeno-canto/XC369827": "A"
+          }
+        }
+      ]
+    },
+    "ardea-melanocephala": {
+      "calls": [
+        {
+          "index": 0,
+          "quality": {
+            "xeno-canto/XC741404": "A"
+          }
+        }
+      ]
+    },
+    "ardea-purpurea": {
+      "calls": [
+        {
+          "index": 0,
+          "quality": {
+            "xeno-canto/XC1173600": "A"
+          }
+        }
+      ]
+    },
+    "ardeola-ralloides": {
+      "calls": [
+        {
+          "index": 0,
+          "quality": {
+            "xeno-canto/XC1045966": "A"
+          }
+        }
+      ]
+    },
     "astur-melanoleucus": {
       "calls": [
         {
@@ -355,6 +433,26 @@
               "quality": "A"
             }
           ]
+        }
+      ]
+    },
+    "botaurus-minutus": {
+      "calls": [
+        {
+          "index": 0,
+          "quality": {
+            "xeno-canto/XC1037026": "A"
+          }
+        }
+      ]
+    },
+    "botaurus-sturmii": {
+      "calls": [
+        {
+          "index": 0,
+          "quality": {
+            "xeno-canto/XC792321": "A"
+          }
         }
       ]
     },
@@ -421,6 +519,16 @@
         }
       ]
     },
+    "butorides-atricapilla": {
+      "calls": [
+        {
+          "index": 0,
+          "quality": {
+            "xeno-canto/XC322170": "A"
+          }
+        }
+      ]
+    },
     "calandrella-cinerea": {
       "calls": [
         {
@@ -453,6 +561,16 @@
           "index": 0,
           "quality": {
             "xeno-canto/XC872621": "A"
+          }
+        }
+      ]
+    },
+    "calherodius-leuconotus": {
+      "calls": [
+        {
+          "index": 0,
+          "quality": {
+            "xeno-canto/XC421209": "A"
           }
         }
       ]
@@ -706,6 +824,26 @@
           "index": 0,
           "quality": {
             "xeno-canto/XC225375": "A"
+          }
+        }
+      ]
+    },
+    "egretta-ardesiaca": {
+      "calls": [
+        {
+          "index": 0,
+          "quality": {
+            "xeno-canto/XC973475": "A"
+          }
+        }
+      ]
+    },
+    "egretta-garzetta": {
+      "calls": [
+        {
+          "index": 0,
+          "quality": {
+            "xeno-canto/XC307189": "A"
           }
         }
       ]
@@ -1182,6 +1320,16 @@
           "index": 2,
           "quality": {
             "xeno-canto/XC267474": "A"
+          }
+        }
+      ]
+    },
+    "nycticorax-nycticorax": {
+      "calls": [
+        {
+          "index": 0,
+          "quality": {
+            "xeno-canto/XC505928": "A"
           }
         }
       ]

@@ -90,6 +90,7 @@ test('every data file matches the schema, slugs, and colour vocabulary', async (
         'anatidae',
         'anhingidae',
         'apodidae',
+        'ardeidae',
       ])
       const sourced =
         (data.kind === 'family' && sourcedFamily.has(data.slug)) ||

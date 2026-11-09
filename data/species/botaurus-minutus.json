@@ -7,8 +7,49 @@
     "af": "Kleinrietreier"
   },
   "family": "ardeidae",
-  "summary": "The details for this species have not been published yet.",
-  "sampleData": true,
+  "status": "resident",
+  "monthsPresent": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+  ],
+  "size": {
+    "lengthCm": {
+      "min": 26,
+      "max": 26
+    },
+    "note": "Newman's Birds gives 26 cm."
+  },
+  "habitat": "Reedbeds and sedges, solitary or scattered. It is diurnal, hard to flush, and sky-points to avoid detection.",
+  "summary": "A tiny bittern. The male has bold black-edged wings. The female has a buffy neck and a black cap. The immature is paler and less rufous below than a young Dwarf Bittern, with olive rather than orange-yellow legs, and has tawny folded wings rather than the dark wings of a young Green-backed Heron. In flight the black and buff wings are the mark. Newman calls it an uncommon resident and visitor, and nomadic.",
+  "sampleData": false,
+  "similar": [
+    {
+      "slug": "botaurus-sturmii",
+      "note": "Dwarf Bittern is slate-grey above with heavily streaked underparts and orange-yellow legs. A young Little Bittern is paler and less rufous below, with olive legs."
+    },
+    {
+      "slug": "butorides-atricapilla",
+      "note": "A young Green-backed Heron has dark folded wings. A young Little Bittern has tawny folded wings."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Little Bittern",
+      "url": "https://newmansbirds.com/birds/little-bittern/",
+      "publisher": "Newman's Birds",
+      "year": 2026
+    }
+  ],
   "population": {
     "estimate": {
       "low": 4,
@@ -35,8 +76,220 @@
     },
     "tierApplied": "D"
   },
-  "variants": [],
-  "viewNotes": [],
-  "calls": [],
-  "images": []
+  "variants": [
+    {
+      "age": "adult",
+      "sex": "male",
+      "season": "any",
+      "marks": {
+        "bill": {
+          "colour": null,
+          "shape": null
+        },
+        "eye": {
+          "iris": null,
+          "ring": null
+        },
+        "legs": {
+          "colour": null
+        },
+        "head": {
+          "crown": "black",
+          "face": "buff",
+          "throat": "buff",
+          "pattern": null
+        },
+        "upperparts": {
+          "back": "black",
+          "rump": null,
+          "pattern": null
+        },
+        "underparts": {
+          "breast": "buff",
+          "belly": "buff",
+          "pattern": null
+        },
+        "wings": {
+          "above": [
+            "black",
+            "buff"
+          ],
+          "below": "buff",
+          "pattern": "Bold black edges to the wings. In flight the wings are black and buff."
+        },
+        "tail": {
+          "colour": null,
+          "shape": null
+        }
+      }
+    },
+    {
+      "age": "adult",
+      "sex": "female",
+      "season": "any",
+      "marks": {
+        "bill": {
+          "colour": null,
+          "shape": null
+        },
+        "eye": {
+          "iris": null,
+          "ring": null
+        },
+        "legs": {
+          "colour": null
+        },
+        "head": {
+          "crown": "black",
+          "face": "buff",
+          "throat": "buff",
+          "pattern": "Buffy neck and a black cap."
+        },
+        "upperparts": {
+          "back": "buff",
+          "rump": null,
+          "pattern": null
+        },
+        "underparts": {
+          "breast": "buff",
+          "belly": "buff",
+          "pattern": null
+        },
+        "wings": {
+          "above": [
+            "black",
+            "buff"
+          ],
+          "below": "buff",
+          "pattern": "Black and buff in flight."
+        },
+        "tail": {
+          "colour": null,
+          "shape": null
+        }
+      }
+    },
+    {
+      "age": "juvenile",
+      "sex": "any",
+      "season": "any",
+      "marks": {
+        "bill": {
+          "colour": null,
+          "shape": null
+        },
+        "eye": {
+          "iris": null,
+          "ring": null
+        },
+        "legs": {
+          "colour": "olive"
+        },
+        "head": {
+          "crown": "buff",
+          "face": "buff",
+          "throat": "buff",
+          "pattern": "Paler and less rufous below than a young Dwarf Bittern."
+        },
+        "upperparts": {
+          "back": "tawny",
+          "rump": null,
+          "pattern": null
+        },
+        "underparts": {
+          "breast": "buff",
+          "belly": "buff",
+          "pattern": null
+        },
+        "wings": {
+          "above": "tawny",
+          "below": null,
+          "pattern": "Tawny folded wings, not the dark wings of a young Green-backed Heron."
+        },
+        "tail": {
+          "colour": null,
+          "shape": null
+        }
+      }
+    }
+  ],
+  "viewNotes": [
+    {
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "The male shows black-edged wings. The female has a buff neck and a black cap."
+    },
+    {
+      "view": "perched-front",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Black cap and buff neck on the female."
+    },
+    {
+      "view": "perched-back",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Tawny or black-and-buff wings when the bird is in the reeds."
+    },
+    {
+      "view": "flight-above",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Bold black and buff wings from above."
+    },
+    {
+      "view": "flight-below",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "The underwing pattern is the same black and buff contrast. A separate underwing colour was not named."
+    }
+  ],
+  "calls": [
+    {
+      "sex": "any",
+      "type": "call",
+      "description": "Newman does not describe the voice. The texts do not separate the sexes. The catalogue cut is not labelled by sex. Grade A from France, under the older genus Ixobrychus. No Botaurus minutus recording was in the catalogue.",
+      "recordings": [
+        {
+          "key": "xeno-canto/XC1037026",
+          "source": "https://xeno-canto.org/1037026",
+          "fileUrl": "https://xeno-canto.org/sounds/uploaded/POVBKDIADQ/XC1037026-250904_22h33-blongios.mp3",
+          "author": "Testaert Dominique",
+          "license": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ]
+    }
+  ],
+  "images": [
+    {
+      "key": "botaurus-minutus/reeds.jpg",
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "female",
+      "season": "any",
+      "source": "https://www.inaturalist.org/observations/217114800",
+      "fileUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/384049024/large.jpg",
+      "author": "Heinrich Human",
+      "license": "CC BY-NC 4.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+      "aiGenerated": false,
+      "hosted": false,
+      "alt": "Little Bittern clinging side-on to reeds in Kruger, with a black cap and a buff neck",
+      "caption": "Little Bittern clinging side-on to reeds in Kruger, with a black cap and a buff neck"
+    }
+  ],
+  "research": {
+    "confidence": "medium",
+    "needsReview": false,
+    "note": "Status is resident and all twelve months are listed. Newman calls it both an uncommon resident and a visitor, and nomadic, without a month of absence. Chick down is not described. The call is grade A from France. The photograph matches the female description and is tagged female."
+  }
 }

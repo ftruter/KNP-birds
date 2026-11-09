@@ -1,11 +1,11 @@
 {
   "source": "xeno-canto explore catalogue, API v3 recording fields",
   "counts": {
-    "slots": 124,
+    "slots": 139,
     "swapped": 17,
-    "added": 29,
+    "added": 43,
     "kept": 57,
-    "none": 21,
+    "none": 22,
     "cleaned": 0
   },
   "noUsableRecording": [
@@ -113,6 +113,11 @@
       "slug": "apus-apus",
       "scientificName": "Apus apus",
       "type": "call"
+    },
+    {
+      "slug": "ardea-brachyrhyncha",
+      "scientificName": "Ardea brachyrhyncha",
+      "type": "call"
     }
   ],
   "speciesWithoutAnyRecording": [
@@ -127,6 +132,10 @@
     {
       "slug": "netta-erythrophthalma",
       "scientificName": "Netta erythrophthalma"
+    },
+    {
+      "slug": "ardea-brachyrhyncha",
+      "scientificName": "Ardea brachyrhyncha"
     }
   ],
   "cleaned": [],
@@ -2088,6 +2097,216 @@
       "locality": "Ukami Forest, Udzungwa Mts, Iringa Region",
       "cleaned": false,
       "license": "CC BY-NC-SA 3.0"
+    },
+    {
+      "slug": "ardea-alba",
+      "scientificName": "Ardea alba",
+      "index": 0,
+      "type": "call",
+      "action": "added",
+      "from": [],
+      "to": "586205",
+      "quality": "A",
+      "country": "France",
+      "locality": "France",
+      "cleaned": false,
+      "license": "CC BY-NC-SA 4.0"
+    },
+    {
+      "slug": "ardea-brachyrhyncha",
+      "scientificName": "Ardea brachyrhyncha",
+      "index": 0,
+      "type": "call",
+      "action": "none",
+      "from": [],
+      "to": "",
+      "quality": "",
+      "country": "",
+      "locality": "",
+      "cleaned": false,
+      "license": ""
+    },
+    {
+      "slug": "ardea-cinerea",
+      "scientificName": "Ardea cinerea",
+      "index": 0,
+      "type": "call",
+      "action": "added",
+      "from": [],
+      "to": "497244",
+      "quality": "A",
+      "country": "Russian Federation",
+      "locality": "Russian Federation",
+      "cleaned": false,
+      "license": "CC BY-NC-SA 4.0"
+    },
+    {
+      "slug": "ardea-goliath",
+      "scientificName": "Ardea goliath",
+      "index": 0,
+      "type": "call",
+      "action": "added",
+      "from": [],
+      "to": "1083152",
+      "quality": "A",
+      "country": "Uganda",
+      "locality": "Lutembe Bay",
+      "cleaned": false,
+      "license": "CC BY-NC-SA 4.0"
+    },
+    {
+      "slug": "ardea-ibis",
+      "scientificName": "Ardea ibis",
+      "index": 0,
+      "type": "call",
+      "action": "added",
+      "from": [],
+      "to": "369827",
+      "quality": "A",
+      "country": "South Africa",
+      "locality": "South Africa",
+      "cleaned": false,
+      "license": "CC BY-NC-SA 4.0"
+    },
+    {
+      "slug": "ardea-melanocephala",
+      "scientificName": "Ardea melanocephala",
+      "index": 0,
+      "type": "call",
+      "action": "added",
+      "from": [],
+      "to": "741404",
+      "quality": "A",
+      "country": "South Africa",
+      "locality": "South Africa",
+      "cleaned": false,
+      "license": "CC BY-NC-SA 4.0"
+    },
+    {
+      "slug": "ardea-purpurea",
+      "scientificName": "Ardea purpurea",
+      "index": 0,
+      "type": "call",
+      "action": "added",
+      "from": [],
+      "to": "1173600",
+      "quality": "A",
+      "country": "South Africa",
+      "locality": "South Africa",
+      "cleaned": false,
+      "license": "CC BY-NC-SA 4.0"
+    },
+    {
+      "slug": "ardeola-ralloides",
+      "scientificName": "Ardeola ralloides",
+      "index": 0,
+      "type": "call",
+      "action": "added",
+      "from": [],
+      "to": "1045966",
+      "quality": "A",
+      "country": "South Africa",
+      "locality": "Kruger National Park",
+      "cleaned": false,
+      "license": "CC BY-NC-SA 4.0"
+    },
+    {
+      "slug": "botaurus-minutus",
+      "scientificName": "Botaurus minutus",
+      "index": 0,
+      "type": "call",
+      "action": "added",
+      "from": [],
+      "to": "1037026",
+      "quality": "A",
+      "country": "France",
+      "locality": "France",
+      "cleaned": false,
+      "license": "CC BY-NC-SA 4.0"
+    },
+    {
+      "slug": "botaurus-sturmii",
+      "scientificName": "Botaurus sturmii",
+      "index": 0,
+      "type": "call",
+      "action": "added",
+      "from": [],
+      "to": "792321",
+      "quality": "A",
+      "country": "South Africa",
+      "locality": "South Africa",
+      "cleaned": false,
+      "license": "CC BY-NC-SA 4.0"
+    },
+    {
+      "slug": "butorides-atricapilla",
+      "scientificName": "Butorides atricapilla",
+      "index": 0,
+      "type": "call",
+      "action": "added",
+      "from": [],
+      "to": "322170",
+      "quality": "A",
+      "country": "South Africa",
+      "locality": "South Africa",
+      "cleaned": false,
+      "license": "CC BY-NC-SA 4.0"
+    },
+    {
+      "slug": "calherodius-leuconotus",
+      "scientificName": "Calherodius leuconotus",
+      "index": 0,
+      "type": "call",
+      "action": "added",
+      "from": [],
+      "to": "421209",
+      "quality": "A",
+      "country": "Senegal",
+      "locality": "Wassadou",
+      "cleaned": false,
+      "license": "CC BY-NC-SA 4.0"
+    },
+    {
+      "slug": "egretta-ardesiaca",
+      "scientificName": "Egretta ardesiaca",
+      "index": 0,
+      "type": "call",
+      "action": "added",
+      "from": [],
+      "to": "973475",
+      "quality": "A",
+      "country": "Chad",
+      "locality": "Doubounoro",
+      "cleaned": false,
+      "license": "CC BY-NC-SA 4.0"
+    },
+    {
+      "slug": "egretta-garzetta",
+      "scientificName": "Egretta garzetta",
+      "index": 0,
+      "type": "call",
+      "action": "added",
+      "from": [],
+      "to": "307189",
+      "quality": "A",
+      "country": "South Africa",
+      "locality": "Vaalkop",
+      "cleaned": false,
+      "license": "CC BY-NC-SA 4.0"
+    },
+    {
+      "slug": "nycticorax-nycticorax",
+      "scientificName": "Nycticorax nycticorax",
+      "index": 0,
+      "type": "call",
+      "action": "added",
+      "from": [],
+      "to": "505928",
+      "quality": "A",
+      "country": "South Africa",
+      "locality": "South Africa",
+      "cleaned": false,
+      "license": "CC BY-NC-SA 4.0"
     }
   ]
 }

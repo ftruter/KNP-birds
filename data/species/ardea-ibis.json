@@ -7,8 +7,45 @@
     "af": "Veereier"
   },
   "family": "ardeidae",
-  "summary": "The details for this species have not been published yet.",
-  "sampleData": true,
+  "status": "resident",
+  "monthsPresent": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+  ],
+  "size": {
+    "lengthCm": {
+      "min": 54,
+      "max": 54
+    },
+    "note": "Newman's Birds gives 54 cm."
+  },
+  "habitat": "Grassland with cattle or wild grazers, especially buffalo. It seldom feeds in the water. Roosts and breeds in reeds or in trees over water, and flies to the roost morning and evening.",
+  "summary": "A small, short-billed white egret of grazing herds. From October to March, breeding adults grow buff plumes on the head, back and breast. The bill is short and yellow, coral when breeding, and the legs match the bill. The feet are dusky. The immature is smaller than a Little Egret, with a shorter, thicker neck and black feet. Resident numbers rise in summer when birds arrive from central Africa.",
+  "sampleData": false,
+  "similar": [
+    {
+      "slug": "egretta-garzetta",
+      "note": "Little Egret is larger and more slender, with a long black bill, black legs and yellow feet, and it feeds in the shallows. Cattle Egret has a short yellow bill and walks with grazers."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Western Cattle Egret",
+      "url": "https://newmansbirds.com/birds/western-cattle-egret/",
+      "publisher": "Newman's Birds",
+      "year": 2026
+    }
+  ],
   "population": {
     "estimate": {
       "low": 128,
@@ -35,8 +72,174 @@
     },
     "tierApplied": "D"
   },
-  "variants": [],
-  "viewNotes": [],
-  "calls": [],
-  "images": []
+  "variants": [
+    {
+      "age": "adult",
+      "sex": "any",
+      "season": "breeding",
+      "marks": {
+        "bill": {
+          "colour": [
+            "yellow",
+            "orange"
+          ],
+          "shape": "short; yellow, coral when breeding"
+        },
+        "eye": {
+          "iris": null,
+          "ring": null
+        },
+        "legs": {
+          "colour": "yellow"
+        },
+        "head": {
+          "crown": "buff",
+          "face": "white",
+          "throat": "buff",
+          "pattern": "Buff plumes on the head, back and breast from October to March."
+        },
+        "upperparts": {
+          "back": "buff",
+          "rump": null,
+          "pattern": null
+        },
+        "underparts": {
+          "breast": "buff",
+          "belly": "white",
+          "pattern": null
+        },
+        "wings": {
+          "above": "white",
+          "below": "white",
+          "pattern": null
+        },
+        "tail": {
+          "colour": null,
+          "shape": null
+        }
+      }
+    },
+    {
+      "age": "adult",
+      "sex": "any",
+      "season": "non-breeding",
+      "marks": {
+        "bill": {
+          "colour": "yellow",
+          "shape": "short and yellow"
+        },
+        "eye": {
+          "iris": null,
+          "ring": null
+        },
+        "legs": {
+          "colour": "yellow"
+        },
+        "head": {
+          "crown": "white",
+          "face": "white",
+          "throat": "white",
+          "pattern": "Buff plumes are absent from April to September."
+        },
+        "upperparts": {
+          "back": "white",
+          "rump": null,
+          "pattern": null
+        },
+        "underparts": {
+          "breast": "white",
+          "belly": "white",
+          "pattern": null
+        },
+        "wings": {
+          "above": "white",
+          "below": "white",
+          "pattern": null
+        },
+        "tail": {
+          "colour": null,
+          "shape": null
+        }
+      }
+    }
+  ],
+  "viewNotes": [
+    {
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Short yellow bill and yellow legs. Buff plumes only from October to March."
+    },
+    {
+      "view": "perched-front",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "The short bill and, in summer, buff on the crown."
+    },
+    {
+      "view": "perched-back",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "White back, with buff plumes in summer."
+    },
+    {
+      "view": "flight-above",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "White wings. Birds commute to roosts morning and evening."
+    },
+    {
+      "view": "flight-below",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "White from below."
+    }
+  ],
+  "calls": [
+    {
+      "sex": "any",
+      "type": "call",
+      "description": "Newman does not describe the voice. The texts do not separate the sexes. The catalogue cut is not labelled by sex. Grade A from South Africa.",
+      "recordings": [
+        {
+          "key": "xeno-canto/XC369827",
+          "source": "https://xeno-canto.org/369827",
+          "fileUrl": "https://xeno-canto.org/sounds/uploaded/GQMCPIVNXX/XC369827-Western%20Cattle%20Egret.mp3",
+          "author": "Tim Cockcroft",
+          "license": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ]
+    }
+  ],
+  "images": [
+    {
+      "key": "ardea-ibis/side.jpg",
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "source": "https://www.inaturalist.org/observations/174872312",
+      "fileUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/303845311/large.jpeg",
+      "author": "Tim Kirsten",
+      "license": "CC0 1.0",
+      "licenceUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "aiGenerated": false,
+      "hosted": false,
+      "alt": "Western Cattle Egret standing side-on on a hippo in Kruger, white, with a yellow bill and no buff plumes",
+      "caption": "Western Cattle Egret standing side-on on a hippo in Kruger, white, with a yellow bill and no buff plumes"
+    }
+  ],
+  "research": {
+    "confidence": "medium",
+    "needsReview": false,
+    "note": "Status is resident and all twelve months are listed. Newman says residents are joined in summer by birds from central Africa, and that buff plumes are present only from October to March, which is the southern summer, so those plumes are the breeding variant. Chick down is not described. The photograph is CC0. The call is grade A from South Africa."
+  }
 }

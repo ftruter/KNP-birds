@@ -7,8 +7,51 @@
     "af": "Rooireier"
   },
   "family": "ardeidae",
-  "summary": "The details for this species have not been published yet.",
-  "sampleData": true,
+  "status": "resident",
+  "monthsPresent": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+  ],
+  "size": {
+    "lengthCm": {
+      "min": 89,
+      "max": 89
+    },
+    "note": "Newman's Birds gives 89 cm."
+  },
+  "habitat": "Reeds and other emergent vegetation at quiet dams, pans and marsh pools, and sometimes garden fish ponds. Solitary and secretive.",
+  "summary": "Much smaller and more slender than a Goliath Heron, with a thin bill and a striped, snake-like neck. The immature is entirely rufous, with darker feathers on the upperparts and rufous patches on the upperwings in flight. Newman calls it nomadic. Wikipedia says African populations are mostly sedentary, with occasional dispersal.",
+  "sampleData": false,
+  "similar": [
+    {
+      "slug": "ardea-goliath",
+      "note": "Goliath Heron is larger and more robust, with a heavy slate-grey bill and rich rufous underparts rather than a thin striped neck."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Purple Heron",
+      "url": "https://newmansbirds.com/birds/purple-heron/",
+      "publisher": "Newman's Birds",
+      "year": 2026
+    },
+    {
+      "title": "Purple heron",
+      "url": "https://en.wikipedia.org/wiki/Purple_heron",
+      "publisher": "Wikipedia",
+      "year": 2026
+    }
+  ],
   "population": {
     "estimate": {
       "low": 64,
@@ -35,8 +78,171 @@
     },
     "tierApplied": "D"
   },
-  "variants": [],
-  "viewNotes": [],
-  "calls": [],
-  "images": []
+  "variants": [
+    {
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "marks": {
+        "bill": {
+          "colour": null,
+          "shape": "thin"
+        },
+        "eye": {
+          "iris": null,
+          "ring": null
+        },
+        "legs": {
+          "colour": null
+        },
+        "head": {
+          "crown": null,
+          "face": null,
+          "throat": null,
+          "pattern": "The neck is striped and snake-like. Newman does not name the adult body colours beyond the comparison with Goliath Heron."
+        },
+        "upperparts": {
+          "back": null,
+          "rump": null,
+          "pattern": null
+        },
+        "underparts": {
+          "breast": null,
+          "belly": null,
+          "pattern": null
+        },
+        "wings": {
+          "above": null,
+          "below": null,
+          "pattern": null
+        },
+        "tail": {
+          "colour": null,
+          "shape": null
+        }
+      }
+    },
+    {
+      "age": "juvenile",
+      "sex": "any",
+      "season": "any",
+      "marks": {
+        "bill": {
+          "colour": null,
+          "shape": null
+        },
+        "eye": {
+          "iris": null,
+          "ring": null
+        },
+        "legs": {
+          "colour": null
+        },
+        "head": {
+          "crown": "rufous",
+          "face": "rufous",
+          "throat": "rufous",
+          "pattern": "Entirely rufous, similar in size to the adult."
+        },
+        "upperparts": {
+          "back": "rufous",
+          "rump": null,
+          "pattern": "Darker feathers on the upperparts, and rufous patches on the upperwings in flight."
+        },
+        "underparts": {
+          "breast": "rufous",
+          "belly": "rufous",
+          "pattern": null
+        },
+        "wings": {
+          "above": "rufous",
+          "below": "rufous",
+          "pattern": null
+        },
+        "tail": {
+          "colour": null,
+          "shape": null
+        }
+      }
+    }
+  ],
+  "viewNotes": [
+    {
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "A thin bill and a striped, snake-like neck. Much slimmer than a Goliath Heron."
+    },
+    {
+      "view": "perched-front",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "The striped neck is the front pattern. Adult colours of the face were not named."
+    },
+    {
+      "view": "perched-back",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Darker upperpart feathers on the immature. The adult back colour was not named."
+    },
+    {
+      "view": "flight-above",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "The immature shows rufous patches on the upperwings. The adult upperwing was not named."
+    },
+    {
+      "view": "flight-below",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "The underwing colour was not named."
+    }
+  ],
+  "calls": [
+    {
+      "sex": "any",
+      "type": "call",
+      "description": "Newman does not describe the voice. The texts do not separate the sexes. The catalogue cut is not labelled by sex. Grade A from South Africa. The filename does not repeat the species name; the catalogue row is Ardea purpurea.",
+      "recordings": [
+        {
+          "key": "xeno-canto/XC1173600",
+          "source": "https://xeno-canto.org/1173600",
+          "fileUrl": "https://xeno-canto.org/sounds/uploaded/YSGTQVRQZI/XC1173600-20260320_STRNDF_AKaramitsos_XA60_A020C054_260320DQ_SLE_250HP_-3dB.mp3",
+          "author": "African Bioacoustics Community",
+          "license": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ]
+    }
+  ],
+  "images": [
+    {
+      "key": "ardea-purpurea/side.jpg",
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "source": "https://www.inaturalist.org/observations/250422040",
+      "fileUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/447867602/large.jpg",
+      "author": "Heinrich Human",
+      "license": "CC BY-NC 4.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+      "aiGenerated": false,
+      "hosted": false,
+      "alt": "Purple Heron perched side-on on a dead branch in Kruger, with a striped neck and a thin bill",
+      "caption": "Purple Heron perched side-on on a dead branch in Kruger, with a striped neck and a thin bill"
+    }
+  ],
+  "research": {
+    "confidence": "low",
+    "needsReview": false,
+    "note": "Status is resident and all twelve months are listed. Newman calls it a fairly common resident and also nomadic. Wikipedia says African birds are primarily sedentary. Adult part colours beyond the striped neck were not in the Newman text, so they were left empty rather than copied from the photograph. Chick down is not described. The call is grade A from South Africa."
+  }
 }

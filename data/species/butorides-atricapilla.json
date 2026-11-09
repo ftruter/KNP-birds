@@ -7,8 +7,45 @@
     "af": "Groenrugreier"
   },
   "family": "ardeidae",
-  "summary": "The details for this species have not been published yet.",
-  "sampleData": true,
+  "status": "resident",
+  "monthsPresent": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+  ],
+  "size": {
+    "lengthCm": {
+      "min": 41,
+      "max": 41
+    },
+    "note": "Newman's Birds gives 41 cm."
+  },
+  "habitat": "Well-wooded rivers, large dams, pans, estuaries and mangrove lagoons. Usually single, hunting by day from a low branch, a dead tree or the shoreline, and less secretive than the bitterns.",
+  "summary": "A small heron with grey-green upperparts, creamy feather edges, grey sides of the neck and flanks, and a black cap. The yellow feet are prominent on take-off. The immature is dark above with whitish spots on the folded wings. When flushed it gives a sharp kew.",
+  "sampleData": false,
+  "similar": [
+    {
+      "slug": "botaurus-minutus",
+      "note": "A young Little Bittern has tawny folded wings. A young Green-backed Heron has dark upperparts with whitish spots on the folded wings."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Green-backed (Striated) Heron",
+      "url": "https://newmansbirds.com/birds/green-backed-striated-heron/",
+      "publisher": "Newman's Birds",
+      "year": 2026
+    }
+  ],
   "population": {
     "estimate": {
       "low": 1024,
@@ -35,8 +72,177 @@
     },
     "tierApplied": "D"
   },
-  "variants": [],
-  "viewNotes": [],
-  "calls": [],
-  "images": []
+  "variants": [
+    {
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "marks": {
+        "bill": {
+          "colour": null,
+          "shape": null
+        },
+        "eye": {
+          "iris": null,
+          "ring": null
+        },
+        "legs": {
+          "colour": "yellow"
+        },
+        "head": {
+          "crown": "black",
+          "face": "grey",
+          "throat": "cream",
+          "pattern": null
+        },
+        "upperparts": {
+          "back": [
+            "grey",
+            "green"
+          ],
+          "rump": null,
+          "pattern": "Creamy feather edges. Sides of the neck and flanks are grey."
+        },
+        "underparts": {
+          "breast": "grey",
+          "belly": "grey",
+          "pattern": null
+        },
+        "wings": {
+          "above": [
+            "grey",
+            "green"
+          ],
+          "below": null,
+          "pattern": "Yellow feet are prominent on take-off."
+        },
+        "tail": {
+          "colour": null,
+          "shape": null
+        }
+      }
+    },
+    {
+      "age": "juvenile",
+      "sex": "any",
+      "season": "any",
+      "marks": {
+        "bill": {
+          "colour": null,
+          "shape": null
+        },
+        "eye": {
+          "iris": null,
+          "ring": null
+        },
+        "legs": {
+          "colour": null
+        },
+        "head": {
+          "crown": "dark-brown",
+          "face": "dark-brown",
+          "throat": "white",
+          "pattern": null
+        },
+        "upperparts": {
+          "back": "dark-brown",
+          "rump": null,
+          "pattern": "Whitish spots on the folded wings."
+        },
+        "underparts": {
+          "breast": "buff",
+          "belly": "buff",
+          "pattern": null
+        },
+        "wings": {
+          "above": "dark-brown",
+          "below": null,
+          "pattern": null
+        },
+        "tail": {
+          "colour": null,
+          "shape": null
+        }
+      }
+    }
+  ],
+  "viewNotes": [
+    {
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Grey-green back, black cap and creamy feather edges, often on a low branch."
+    },
+    {
+      "view": "perched-front",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Black cap and grey sides of the neck."
+    },
+    {
+      "view": "perched-back",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Dark or grey-green upperparts. The immature shows whitish spots on the folded wing."
+    },
+    {
+      "view": "flight-above",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Grey-green above. Yellow feet show as it leaves the perch."
+    },
+    {
+      "view": "flight-below",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "The underwing colour was not named."
+    }
+  ],
+  "calls": [
+    {
+      "sex": "any",
+      "type": "call",
+      "description": "A sharp, startling kew when flushed. The texts do not separate the sexes. Grade A from South Africa, filed under the older name Butorides striata and labelled Green-backed Heron.",
+      "recordings": [
+        {
+          "key": "xeno-canto/XC322170",
+          "source": "https://xeno-canto.org/322170",
+          "fileUrl": "https://xeno-canto.org/sounds/uploaded/GQMCPIVNXX/XC322170-Green-backed%20Heron.mp3",
+          "author": "Tim Cockcroft",
+          "license": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ]
+    }
+  ],
+  "images": [
+    {
+      "key": "butorides-atricapilla/front.jpg",
+      "view": "perched-front",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "source": "https://www.inaturalist.org/observations/10215194",
+      "fileUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/14114063/large.jpeg",
+      "author": "copper",
+      "license": "CC BY-NC 4.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+      "aiGenerated": false,
+      "hosted": false,
+      "alt": "Green-backed Heron standing front-on on a rock in Kruger, with a black cap and yellow feet",
+      "caption": "Green-backed Heron standing front-on on a rock in Kruger, with a black cap and yellow feet"
+    }
+  ],
+  "research": {
+    "confidence": "medium",
+    "needsReview": false,
+    "note": "Status is resident and all twelve months are listed. Newman calls it a common resident. Chick down is not described. The call is grade A from South Africa."
+  }
 }
