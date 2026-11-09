@@ -7,8 +7,24 @@
     "af": "Knysnaloerie"
   },
   "family": "musophagidae",
-  "summary": "The details for this species have not been published yet.",
-  "sampleData": true,
+  "size": {
+    "lengthCm": {
+      "min": 47,
+      "max": 47
+    },
+    "note": "Newman's Birds gives 47 cm."
+  },
+  "habitat": "Pairs or family groups in montane mist-belt forest and in lowland and coastal evergreen forest.",
+  "summary": "A common, localised endemic resident. At rest it has a matt-green body and a crested head with white markings. The upper tail and folded wings are iridescent greenish blue. The eye-rings and bill are red, and the wings are red in flight. Sexes are alike. Immatures are duller, with no further detail. The call is a slow kerk-kerk-kerk-kawk-kawk-kawk-kawk, with a high kek-kek-kek-kek alarm in flight, and a hoarse hurr hurr when people are near. No openly licensed research-grade photo was found in the Kruger box. No Kemp estimate is stored.",
+  "sampleData": false,
+  "sources": [
+    {
+      "title": "Knysna Turaco",
+      "url": "https://newmansbirds.com/birds/knysna-turaco/",
+      "publisher": "Newman's Birds",
+      "year": 2026
+    }
+  ],
   "population": {
     "estimate": {
       "low": null,
@@ -21,8 +37,200 @@
     "notes": "No sourced Kruger estimate is currently available; taxonomy or later records require separate research.",
     "sources": []
   },
-  "variants": [],
-  "viewNotes": [],
-  "calls": [],
-  "images": []
+  "variants": [
+    {
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "marks": {
+        "bill": {
+          "colour": "red",
+          "shape": null
+        },
+        "eye": {
+          "iris": null,
+          "ring": "red"
+        },
+        "legs": {
+          "colour": null
+        },
+        "head": {
+          "crown": null,
+          "face": null,
+          "throat": null,
+          "pattern": "Crested head with white markings. The body is matt green."
+        },
+        "upperparts": {
+          "back": "green",
+          "rump": null,
+          "pattern": "Matt-green body. Upper tail and folded wings iridescent greenish blue."
+        },
+        "underparts": {
+          "breast": null,
+          "belly": null
+        },
+        "wings": {
+          "above": null,
+          "below": null,
+          "pattern": "Folded wings iridescent greenish blue. Wings red in flight."
+        },
+        "tail": {
+          "colour": null,
+          "shape": "Upper tail iridescent greenish blue. Greenish blue is not a single token."
+        }
+      }
+    },
+    {
+      "age": "immature",
+      "sex": "any",
+      "season": "any",
+      "marks": {
+        "bill": {
+          "colour": null,
+          "shape": null
+        },
+        "eye": {
+          "iris": null,
+          "ring": null
+        },
+        "legs": {
+          "colour": null
+        },
+        "head": {
+          "crown": null,
+          "face": null,
+          "throat": null
+        },
+        "upperparts": {
+          "back": null,
+          "rump": null,
+          "pattern": "Duller than the adult. Newman does not name the immature colours."
+        },
+        "underparts": {
+          "breast": null,
+          "belly": null
+        },
+        "wings": {
+          "above": null,
+          "below": null
+        },
+        "tail": {
+          "colour": null,
+          "shape": null
+        }
+      }
+    }
+  ],
+  "viewNotes": [
+    {
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Matt-green body, crested head with white markings, red bill and red eye-ring."
+    },
+    {
+      "view": "perched-front",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "White markings on the crest, red bill and red eye-ring."
+    },
+    {
+      "view": "perched-back",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Matt-green back, with iridescent greenish-blue folded wings and upper tail."
+    },
+    {
+      "view": "flight-above",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Wings red in flight. The folded wing is iridescent greenish blue."
+    },
+    {
+      "view": "flight-below",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Green underparts. A separate underpart colour was not named beyond the green body."
+    },
+    {
+      "view": "perched-side",
+      "age": "immature",
+      "sex": "any",
+      "season": "any",
+      "note": "Duller than the adult. No immature colours were named."
+    },
+    {
+      "view": "perched-front",
+      "age": "immature",
+      "sex": "any",
+      "season": "any",
+      "note": "The immature face was not described."
+    },
+    {
+      "view": "perched-back",
+      "age": "immature",
+      "sex": "any",
+      "season": "any",
+      "note": "Duller upperparts."
+    },
+    {
+      "view": "flight-above",
+      "age": "immature",
+      "sex": "any",
+      "season": "any",
+      "note": "An immature flight pattern was not described. The adult wings are red in flight."
+    },
+    {
+      "view": "flight-below",
+      "age": "immature",
+      "sex": "any",
+      "season": "any",
+      "note": "The immature underparts were not described."
+    }
+  ],
+  "calls": [
+    {
+      "sex": "any",
+      "type": "call",
+      "description": "A slow kerk-kerk-kerk-kawk-kawk-kawk-kawk. The alarm in flight is a high kek-kek-kek-kek. Near people it gives a hoarse hurr, hurr. Grade A call from near Kurland, Garden Route, Western Cape. The filename is XC1161576-260310-090406-Knysna-Turaco-A.mp3.",
+      "recordings": [
+        {
+          "key": "xeno-canto/XC1161576",
+          "source": "https://xeno-canto.org/1161576",
+          "fileUrl": "https://xeno-canto.org/sounds/uploaded/WSTMKZEHKY/XC1161576-260310-090406-Knysna-Turaco-A.mp3",
+          "author": "Walter Wallner",
+          "license": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ]
+    }
+  ],
+  "images": [],
+  "research": {
+    "confidence": "medium",
+    "needsReview": false,
+    "note": "Newman calls it a common, localised endemic resident, so status is resident and all twelve months are listed. Livingstone’s Turaco and Schalow’s Turaco are comparisons Newman names and are not in this list. No Kemp block was present, and the empty population estimate was left unchanged. No openly licensed research-grade photograph was found in the Kruger box."
+  },
+  "status": "resident",
+  "monthsPresent": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+  ]
 }

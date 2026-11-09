@@ -7,8 +7,30 @@
     "af": "Kwêvoël"
   },
   "family": "musophagidae",
-  "summary": "The details for this species have not been published yet.",
-  "sampleData": true,
+  "size": {
+    "lengthCm": {
+      "min": 47,
+      "max": 50
+    },
+    "note": "Newman's Birds gives 47–50 cm."
+  },
+  "habitat": "Pairs and small parties in mixed bushveld, woodland and well-wooded suburbia, usually in the upper stratum. The flight is heavy and mostly below the tree tops.",
+  "summary": "A common resident. All grey, with a pronounced head-crest. Sexes are alike. The soft parts are black. The call is kweh-h-h or go-way-y-y. The immature calls how, how, and its plumage was not described. Newman’s page uses Corythaixoides concolor. The stored name Crinifer concolor was left unchanged. The Kemp paper name Grey Lourie and the code RB were left unchanged.",
+  "sampleData": false,
+  "sources": [
+    {
+      "title": "Grey Go-away-bird",
+      "url": "https://newmansbirds.com/birds/grey-go-away-bird/",
+      "publisher": "Newman's Birds",
+      "year": 2026
+    },
+    {
+      "title": "Kemp A.C., Herholdt J.J., Whyte I. & Harrison J. (2001). Birds of the two largest national parks in South Africa: a method to generate estimates of population size for all species and assess their conservation ecology. S. Afr. J. Sci. 97: 393–403.",
+      "url": "https://journals.co.za/doi/pdf/10.10520/EJC97367",
+      "publisher": "South African Journal of Science",
+      "year": 2001
+    }
+  ],
   "population": {
     "estimate": {
       "low": 32768,
@@ -35,8 +57,142 @@
     },
     "tierApplied": "D"
   },
-  "variants": [],
-  "viewNotes": [],
-  "calls": [],
-  "images": []
+  "variants": [
+    {
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "marks": {
+        "bill": {
+          "colour": "black",
+          "shape": "Black soft parts."
+        },
+        "eye": {
+          "iris": null,
+          "ring": null
+        },
+        "legs": {
+          "colour": "black"
+        },
+        "head": {
+          "crown": null,
+          "face": null,
+          "throat": null,
+          "pattern": "All grey, with a pronounced head-crest."
+        },
+        "upperparts": {
+          "back": "grey",
+          "rump": null,
+          "pattern": "All grey."
+        },
+        "underparts": {
+          "breast": "grey",
+          "belly": "grey",
+          "pattern": "All grey."
+        },
+        "wings": {
+          "above": null,
+          "below": null
+        },
+        "tail": {
+          "colour": null,
+          "shape": null
+        }
+      }
+    }
+  ],
+  "viewNotes": [
+    {
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "All grey, with a pronounced crest and black bill and legs."
+    },
+    {
+      "view": "perched-front",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Grey crest and face. A separate face colour was not named beyond all grey."
+    },
+    {
+      "view": "perched-back",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Grey upperparts and crest."
+    },
+    {
+      "view": "flight-above",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Heavy wing movements, mostly below the tree tops. A separate wing colour was not named."
+    },
+    {
+      "view": "flight-below",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Grey underparts."
+    }
+  ],
+  "calls": [
+    {
+      "sex": "any",
+      "type": "call",
+      "description": "kweh-h-h or go-way-y-y. The immature calls how, how. Grade A call from Mmabolela Reserve, Botswana. The filename is XC208606-Grey Lourie 3 the bridge.mp3.",
+      "recordings": [
+        {
+          "key": "xeno-canto/XC208606",
+          "source": "https://xeno-canto.org/208606",
+          "fileUrl": "https://xeno-canto.org/sounds/uploaded/XKXDFWNSPA/XC208606-Grey%20Lourie%203%20the%20bridge.mp3",
+          "author": "Jeremy Hegge",
+          "license": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ]
+    }
+  ],
+  "images": [
+    {
+      "key": "crinifer-concolor/side.jpg",
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "source": "https://www.inaturalist.org/observations/188983048",
+      "fileUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/330928162/large.jpeg",
+      "author": "jandutoit",
+      "license": "CC BY-NC 4.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+      "aiGenerated": false,
+      "hosted": false,
+      "alt": "Grey Go-away-bird in a fruiting tree, all grey with a crest",
+      "caption": "Grey Go-away-bird in the Mopani district, grey, with a crest, in a fruiting tree."
+    }
+  ],
+  "research": {
+    "confidence": "medium",
+    "needsReview": false,
+    "note": "Newman calls it a common resident, so status is resident and all twelve months are listed. The immature plumage was not described. Population figures and the Kemp code RB were left unchanged."
+  },
+  "status": "resident",
+  "monthsPresent": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+  ]
 }

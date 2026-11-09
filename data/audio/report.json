@@ -1,9 +1,9 @@
 {
   "source": "xeno-canto explore catalogue, API v3 recording fields",
   "counts": {
-    "slots": 333,
+    "slots": 335,
     "swapped": 17,
-    "added": 231,
+    "added": 233,
     "kept": 57,
     "none": 28,
     "cleaned": 0
@@ -5053,6 +5053,34 @@
       "locality": "Tynset, Hedmark",
       "cleaned": false,
       "license": "CC BY-NC-SA 3.0"
+    },
+    {
+      "slug": "crinifer-concolor",
+      "scientificName": "Crinifer concolor",
+      "index": 0,
+      "type": "call",
+      "action": "added",
+      "from": [],
+      "to": "208606",
+      "quality": "A",
+      "country": "Botswana",
+      "locality": "Mmabolela Reserve, Limpopo",
+      "cleaned": false,
+      "license": "CC BY-NC-SA 4.0"
+    },
+    {
+      "slug": "tauraco-corythaix",
+      "scientificName": "Tauraco corythaix",
+      "index": 0,
+      "type": "call",
+      "action": "added",
+      "from": [],
+      "to": "1161576",
+      "quality": "A",
+      "country": "South Africa",
+      "locality": "Bitou Local Municipality (near Kurland), Garden Route District Municipality, Western Cape",
+      "cleaned": false,
+      "license": "CC BY-NC-SA 4.0"
     }
   ]
 }
