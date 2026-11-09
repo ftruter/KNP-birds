@@ -7,8 +7,40 @@
     "af": "Namakwaduifie"
   },
   "family": "columbidae",
-  "summary": "The details for this species have not been published yet.",
-  "sampleData": true,
+  "status": "resident",
+  "monthsPresent": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+  ],
+  "size": {
+    "lengthCm": {
+      "min": 27,
+      "max": 27
+    },
+    "note": "Newman's Birds gives 27 cm."
+  },
+  "habitat": "Grassland, fallow fields, thornveld and eroded ground, particularly in dry regions. It perches on low bushes and fences and flies low and fast. Newman also calls it nomadic, and an irregular visitor to the southern and southeastern coast.",
+  "summary": "A common resident, identified at all ages by the long tail. The male also has a black patch from the forehead to the breast and a red bill with a yellow tip. In flight the brown flight feathers and the long tail are distinctive. The call is a seldom-heard explosive twoo-hoo. The Kemp code VB was left unchanged.",
+  "sampleData": false,
+  "similar": [],
+  "sources": [
+    {
+      "title": "Namaqua Dove",
+      "url": "https://newmansbirds.com/birds/namaqua-dove/",
+      "publisher": "Newman's Birds",
+      "year": 2026
+    }
+  ],
   "population": {
     "estimate": {
       "low": 4096,
@@ -35,8 +67,174 @@
     },
     "tierApplied": "D"
   },
-  "variants": [],
-  "viewNotes": [],
-  "calls": [],
-  "images": []
+  "variants": [
+    {
+      "age": "adult",
+      "sex": "male",
+      "season": "any",
+      "marks": {
+        "bill": {
+          "colour": [
+            "red",
+            "yellow"
+          ],
+          "shape": "red with a yellow tip"
+        },
+        "eye": {
+          "iris": null,
+          "ring": null
+        },
+        "legs": {
+          "colour": null
+        },
+        "head": {
+          "crown": null,
+          "face": "black",
+          "throat": null,
+          "pattern": "Black patch from the forehead to the breast. Long tail at all ages."
+        },
+        "upperparts": {
+          "back": null,
+          "rump": null,
+          "pattern": null
+        },
+        "underparts": {
+          "breast": "black",
+          "belly": null,
+          "pattern": null
+        },
+        "wings": {
+          "above": "brown",
+          "below": null,
+          "pattern": "Brown flight feathers."
+        },
+        "tail": {
+          "colour": null,
+          "shape": "long"
+        }
+      }
+    },
+    {
+      "age": "adult",
+      "sex": "female",
+      "season": "any",
+      "marks": {
+        "bill": {
+          "colour": null,
+          "shape": null
+        },
+        "eye": {
+          "iris": null,
+          "ring": null
+        },
+        "legs": {
+          "colour": null
+        },
+        "head": {
+          "crown": null,
+          "face": null,
+          "throat": null,
+          "pattern": "The black forehead-to-breast patch is described for the male. The long tail is present at all ages."
+        },
+        "upperparts": {
+          "back": null,
+          "rump": null,
+          "pattern": null
+        },
+        "underparts": {
+          "breast": null,
+          "belly": null,
+          "pattern": null
+        },
+        "wings": {
+          "above": "brown",
+          "below": null,
+          "pattern": "Brown flight feathers."
+        },
+        "tail": {
+          "colour": null,
+          "shape": "long"
+        }
+      }
+    }
+  ],
+  "viewNotes": [
+    {
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Small long-tailed dove, often on a low perch. The male has a black face and breast."
+    },
+    {
+      "view": "perched-front",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "The male’s black patch runs from the forehead to the breast."
+    },
+    {
+      "view": "perched-back",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "The back colour was not named beyond the brown flight feathers."
+    },
+    {
+      "view": "flight-above",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Brown flight feathers and a long tail."
+    },
+    {
+      "view": "flight-below",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "The underwing was not named."
+    }
+  ],
+  "calls": [
+    {
+      "sex": "any",
+      "type": "call",
+      "description": "A seldom-heard, explosive twoo-hoo. The texts do not separate the sexes. Grade A from Klerksdorp. The filename is Nam Dove.",
+      "recordings": [
+        {
+          "key": "xeno-canto/XC496248",
+          "source": "https://xeno-canto.org/496248",
+          "fileUrl": "https://xeno-canto.org/sounds/uploaded/HMBDEWEZVS/XC496248-10%20Nam%20Dove.mp3",
+          "author": "Tony Archer",
+          "license": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ]
+    }
+  ],
+  "images": [
+    {
+      "key": "oena-capensis/side.jpg",
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "source": "https://www.inaturalist.org/observations/290059338",
+      "fileUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/521763407/large.jpg",
+      "author": "Paul Hoekman",
+      "license": "CC BY 4.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by/4.0/",
+      "aiGenerated": false,
+      "hosted": false,
+      "alt": "Namaqua Dove perched in Kruger, with a long tail",
+      "caption": "Namaqua Dove perched in Kruger, with a long tail"
+    }
+  ],
+  "research": {
+    "confidence": "medium",
+    "needsReview": false,
+    "note": "Population figures were left unchanged."
+  }
 }

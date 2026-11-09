@@ -7,8 +7,45 @@
     "af": "Ruddkleinjantjie"
   },
   "family": "cisticolidae",
-  "summary": "The details for this species have not been published yet.",
-  "sampleData": true,
+  "status": "resident",
+  "monthsPresent": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+  ],
+  "size": {
+    "lengthCm": {
+      "min": 10.5,
+      "max": 12
+    },
+    "note": "Newman's Birds gives 10.5–12 cm."
+  },
+  "habitat": "Pairs in coastal bush and dune forest, especially dense thickets with creepers. It is not secretive.",
+  "summary": "A locally common, near-endemic resident. Dark eye, yellow-green upperparts, a buff wash on the underparts especially the throat, and a yellow-and-green undertail rather than a white one. The pair calls together, one a fast tritritritrit and the other punk-punk-punk. No openly licensed Kruger photograph was found.",
+  "sampleData": false,
+  "similar": [
+    {
+      "slug": "apalis-thoracica",
+      "note": "Bar-throated Apalis has a pale yellow eye, white outer tail feathers and darker upperparts. Rudd’s Apalis has a dark eye and a yellow-green undertail."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Rudd's Apalis",
+      "url": "https://newmansbirds.com/birds/rudds-apalis/",
+      "publisher": "Newman's Birds",
+      "year": 2026
+    }
+  ],
   "population": {
     "estimate": {
       "low": 2048,
@@ -35,8 +72,111 @@
     },
     "tierApplied": "D"
   },
-  "variants": [],
-  "viewNotes": [],
-  "calls": [],
-  "images": []
+  "variants": [
+    {
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "marks": {
+        "bill": {
+          "colour": null,
+          "shape": null
+        },
+        "eye": {
+          "iris": "black",
+          "ring": null
+        },
+        "legs": {
+          "colour": null
+        },
+        "head": {
+          "crown": "yellow-green",
+          "face": null,
+          "throat": "buff",
+          "pattern": null
+        },
+        "upperparts": {
+          "back": "yellow-green",
+          "rump": null,
+          "pattern": "More yellow-green above than Bar-throated Apalis."
+        },
+        "underparts": {
+          "breast": "buff",
+          "belly": "buff",
+          "pattern": "Buff wash, especially on the throat."
+        },
+        "wings": {
+          "above": null,
+          "below": null,
+          "pattern": null
+        },
+        "tail": {
+          "colour": "yellow-green",
+          "shape": "undertail yellow and green, not white"
+        }
+      }
+    }
+  ],
+  "viewNotes": [
+    {
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Yellow-green apalis with a dark eye in dense thicket."
+    },
+    {
+      "view": "perched-front",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Dark eye. The throat has a buff wash."
+    },
+    {
+      "view": "perched-back",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Yellow-green upperparts."
+    },
+    {
+      "view": "flight-above",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "The upperwing was not named."
+    },
+    {
+      "view": "flight-below",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Buff-washed underparts and a yellow-green undertail."
+    }
+  ],
+  "calls": [
+    {
+      "sex": "any",
+      "type": "call",
+      "description": "One bird gives a fast, loud tritritritritritritrit while the other calls punk-punk-punk at the same time. Grade A from near St Lucia, KwaZulu-Natal.",
+      "recordings": [
+        {
+          "key": "xeno-canto/XC972485",
+          "source": "https://xeno-canto.org/972485",
+          "fileUrl": "https://xeno-canto.org/sounds/uploaded/LWQXRZHFCU/XC972485-2025-02-02-11_21-Rudds-Apalis.mp3",
+          "author": "Niall Perrins",
+          "license": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ]
+    }
+  ],
+  "images": [],
+  "research": {
+    "confidence": "medium",
+    "needsReview": true,
+    "note": "Status is resident and all twelve months are listed from Newman’s resident wording. Population figures were left unchanged."
+  }
 }

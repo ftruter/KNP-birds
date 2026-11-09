@@ -7,8 +7,45 @@
     "af": "Driebandstrandkiewiet"
   },
   "family": "charadriidae",
-  "summary": "The details for this species have not been published yet.",
-  "sampleData": true,
+  "status": "resident",
+  "monthsPresent": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+  ],
+  "size": {
+    "lengthCm": {
+      "min": 18,
+      "max": 18
+    },
+    "note": "Newman's Birds gives 18 cm."
+  },
+  "habitat": "Singly, in pairs or in small parties on the shores and shallows of almost any inland water.",
+  "summary": "A common resident. White underparts, two black breast-bands with a white neck-band between them, dark brown upperparts, a red bill and a red eye-ring. The immature has the upper band brown and incomplete, the lower band flecked white, and a uniformly brown head. The call is wickwick or tiuu-it, tiuu-it.",
+  "sampleData": false,
+  "similar": [
+    {
+      "slug": "charadrius-hiaticula",
+      "note": "Common Ringed Plover has one black breast-band, orange-yellow legs and a white wing-bar. Three-banded Plover has two black bands and a red bill and eye-ring."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Three-banded Plover",
+      "url": "https://newmansbirds.com/birds/three-banded-plover/",
+      "publisher": "Newman's Birds",
+      "year": 2026
+    }
+  ],
   "population": {
     "estimate": {
       "low": 512,
@@ -35,8 +72,171 @@
     },
     "tierApplied": "D"
   },
-  "variants": [],
-  "viewNotes": [],
-  "calls": [],
-  "images": []
+  "variants": [
+    {
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "marks": {
+        "bill": {
+          "colour": "red",
+          "shape": null
+        },
+        "eye": {
+          "iris": null,
+          "ring": "red"
+        },
+        "legs": {
+          "colour": null
+        },
+        "head": {
+          "crown": "dark-brown",
+          "face": "white",
+          "throat": null,
+          "pattern": "White band encircling the neck between two black breast-bands."
+        },
+        "upperparts": {
+          "back": "dark-brown",
+          "rump": null,
+          "pattern": null
+        },
+        "underparts": {
+          "breast": "black",
+          "belly": "white",
+          "pattern": "Two black breast-bands."
+        },
+        "wings": {
+          "above": null,
+          "below": null,
+          "pattern": null
+        },
+        "tail": {
+          "colour": null,
+          "shape": null
+        }
+      }
+    },
+    {
+      "age": "juvenile",
+      "sex": "any",
+      "season": "any",
+      "marks": {
+        "bill": {
+          "colour": "red",
+          "shape": null
+        },
+        "eye": {
+          "iris": null,
+          "ring": null
+        },
+        "legs": {
+          "colour": null
+        },
+        "head": {
+          "crown": "brown",
+          "face": "brown",
+          "throat": null,
+          "pattern": "Head uniformly brown. Upper breast-band brown and incomplete. Lower band flecked white."
+        },
+        "upperparts": {
+          "back": "dark-brown",
+          "rump": null,
+          "pattern": null
+        },
+        "underparts": {
+          "breast": "brown",
+          "belly": "white",
+          "pattern": null
+        },
+        "wings": {
+          "above": null,
+          "below": null,
+          "pattern": null
+        },
+        "tail": {
+          "colour": null,
+          "shape": null
+        }
+      }
+    }
+  ],
+  "viewNotes": [
+    {
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Two black breast-bands and a red eye-ring, at the edge of inland water."
+    },
+    {
+      "view": "perched-front",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Red eye-ring, red bill and the two bands."
+    },
+    {
+      "view": "perched-back",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Dark brown upperparts and the white neck-band."
+    },
+    {
+      "view": "flight-above",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "No white wing-bar was named. Ringed Plover has one."
+    },
+    {
+      "view": "flight-below",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "White underparts and the two black bands."
+    }
+  ],
+  "calls": [
+    {
+      "sex": "any",
+      "type": "call",
+      "description": "wickwick or tiuu-it, tiuu-it. The texts do not separate the sexes. Grade A from Southwell, near Port Alfred, Eastern Cape.",
+      "recordings": [
+        {
+          "key": "xeno-canto/XC378030",
+          "source": "https://xeno-canto.org/378030",
+          "fileUrl": "https://xeno-canto.org/sounds/uploaded/GQMCPIVNXX/XC378030-Three-banded%20Plover.mp3",
+          "author": "Tim Cockcroft",
+          "license": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ]
+    }
+  ],
+  "images": [
+    {
+      "key": "thinornis-tricollaris/side.jpg",
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "source": "https://www.inaturalist.org/observations/330757562",
+      "fileUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/599853058/large.jpg",
+      "author": "Gigi Laidler",
+      "license": "CC BY-NC 4.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+      "aiGenerated": false,
+      "hosted": false,
+      "alt": "Three-banded Plover standing side-on at a Kruger shore, with two black breast-bands and a red bill",
+      "caption": "Three-banded Plover standing side-on at a Kruger shore, with two black breast-bands and a red bill"
+    }
+  ],
+  "research": {
+    "confidence": "medium",
+    "needsReview": false,
+    "note": "Status is resident and all twelve months are listed. Newman calls it a common resident. The call is grade A from the Eastern Cape."
+  }
 }

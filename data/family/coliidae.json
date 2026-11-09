@@ -6,8 +6,8 @@
     "en": "Mousebirds",
     "af": "Muisvoëls"
   },
-  "summary": "Field notes for this family are still to be written.",
-  "sampleData": true,
+  "summary": "Mousebirds are crested, long-tailed fruit-eaters that clamber through bushes in small parties. Kruger has two. Speckled Mousebird, Colius striatus, is dull brown with a black mask and a two-coloured bill. Red-faced Mousebird, Urocolius indicus, has a red mask, red legs and a blue eye.",
+  "sampleData": false,
   "species": [
     {
       "slug": "colius-striatus",

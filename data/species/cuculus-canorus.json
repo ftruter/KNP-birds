@@ -7,8 +7,30 @@
     "af": "Europese Koekoek"
   },
   "family": "cuculidae",
-  "summary": "The details for this species have not been published yet.",
-  "sampleData": true,
+  "status": "palearctic-migrant",
+  "size": {
+    "lengthCm": {
+      "min": 32,
+      "max": 34
+    },
+    "note": "Wikipedia gives 32–34 cm from bill to tail."
+  },
+  "summary": "A summer migrant to Europe and Asia that winters in Africa. The male is slate-grey, with the grey throat reaching well down the breast and a sharp line above the barred underparts. The iris, orbital ring, base of the bill and feet are yellow. Grey females have a buff background to the barring. Rufous-morph females have reddish-brown upper parts with dark bars. In flight it looks like a sparrowhawk. The male song is goo-ko. The female has a loud bubbling call. No Newman page was found. Months were left unset. The Kemp code NB was left unchanged.",
+  "sampleData": false,
+  "similar": [
+    {
+      "slug": "cuculus-gularis",
+      "note": "African Cuckoo has complete tail barring. Common Cuckoo has the outer tail feathers incompletely barred. Their upper tail coverts are both grey."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Common cuckoo",
+      "url": "https://en.wikipedia.org/wiki/Common_cuckoo",
+      "publisher": "Wikipedia",
+      "year": 2026
+    }
+  ],
   "population": {
     "estimate": {
       "low": 1024,
@@ -35,8 +57,257 @@
     },
     "tierApplied": "D"
   },
-  "variants": [],
-  "viewNotes": [],
-  "calls": [],
-  "images": []
+  "variants": [
+    {
+      "age": "adult",
+      "sex": "male",
+      "season": "any",
+      "marks": {
+        "bill": {
+          "colour": "yellow",
+          "shape": "Yellow at the base."
+        },
+        "eye": {
+          "iris": "yellow",
+          "ring": "yellow"
+        },
+        "legs": {
+          "colour": "yellow"
+        },
+        "head": {
+          "crown": "slate-grey",
+          "face": null,
+          "throat": "grey",
+          "pattern": "The grey throat extends well down the breast."
+        },
+        "upperparts": {
+          "back": "slate-grey",
+          "rump": null,
+          "pattern": null
+        },
+        "underparts": {
+          "breast": "grey",
+          "belly": null,
+          "pattern": "Sharp demarcation from the grey breast to the barred underparts."
+        },
+        "wings": {
+          "above": null,
+          "below": null,
+          "pattern": null
+        },
+        "tail": {
+          "colour": null,
+          "shape": "Outer tail feathers incompletely barred."
+        }
+      }
+    },
+    {
+      "age": "adult",
+      "sex": "female",
+      "season": "any",
+      "marks": {
+        "bill": {
+          "colour": null,
+          "shape": null
+        },
+        "eye": {
+          "iris": null,
+          "ring": null
+        },
+        "legs": {
+          "colour": null
+        },
+        "head": {
+          "crown": null,
+          "face": null,
+          "throat": null,
+          "pattern": "Grey morph. Pinkish-buff or buff on the neck sides and in the barring."
+        },
+        "upperparts": {
+          "back": null,
+          "rump": null,
+          "pattern": null
+        },
+        "underparts": {
+          "breast": null,
+          "belly": null,
+          "pattern": "Buff background to the barring."
+        },
+        "wings": {
+          "above": null,
+          "below": null,
+          "pattern": "Sometimes small rufous spots on the median and greater coverts and the outer webs of the secondaries."
+        },
+        "tail": {
+          "colour": null,
+          "shape": null
+        }
+      }
+    },
+    {
+      "age": "adult",
+      "sex": "female",
+      "season": "any",
+      "marks": {
+        "bill": {
+          "colour": null,
+          "shape": null
+        },
+        "eye": {
+          "iris": null,
+          "ring": null
+        },
+        "legs": {
+          "colour": null
+        },
+        "head": {
+          "crown": null,
+          "face": null,
+          "throat": null,
+          "pattern": null
+        },
+        "upperparts": {
+          "back": "rufous",
+          "rump": null,
+          "pattern": "Rufous morph. Reddish-brown upper parts with dark grey or black bars. The black bars are narrower than the rufous bars."
+        },
+        "underparts": {
+          "breast": null,
+          "belly": null,
+          "pattern": null
+        },
+        "wings": {
+          "above": "rufous",
+          "below": null,
+          "pattern": "Dark bars, narrower than the rufous bars."
+        },
+        "tail": {
+          "colour": null,
+          "shape": null
+        }
+      }
+    },
+    {
+      "age": "juvenile",
+      "sex": "any",
+      "season": "any",
+      "marks": {
+        "bill": {
+          "colour": null,
+          "shape": null
+        },
+        "eye": {
+          "iris": null,
+          "ring": null
+        },
+        "legs": {
+          "colour": null
+        },
+        "head": {
+          "crown": null,
+          "face": null,
+          "throat": null,
+          "pattern": null
+        },
+        "upperparts": {
+          "back": null,
+          "rump": null,
+          "pattern": "Variable in the first autumn. Some are strongly barred chestnut-brown above, and others are plain grey."
+        },
+        "underparts": {
+          "breast": null,
+          "belly": null,
+          "pattern": null
+        },
+        "wings": {
+          "above": null,
+          "below": null,
+          "pattern": "Whitish edges to the upper wing-coverts and primaries. Secondaries and greater coverts have chestnut bars or spots."
+        },
+        "tail": {
+          "colour": null,
+          "shape": null
+        }
+      }
+    }
+  ],
+  "viewNotes": [
+    {
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "male",
+      "season": "any",
+      "note": "Slate-grey, with the grey breast ending sharply at the barred underparts."
+    },
+    {
+      "view": "perched-front",
+      "age": "adult",
+      "sex": "male",
+      "season": "any",
+      "note": "Grey throat and breast, then barred underparts. The eye-ring and the base of the bill are yellow."
+    },
+    {
+      "view": "perched-back",
+      "age": "adult",
+      "sex": "male",
+      "season": "any",
+      "note": "Slate-grey upper parts."
+    },
+    {
+      "view": "flight-above",
+      "age": "adult",
+      "sex": "male",
+      "season": "any",
+      "note": "In flight it looks like a sparrowhawk, and the wingbeats are regular."
+    },
+    {
+      "view": "flight-below",
+      "age": "adult",
+      "sex": "male",
+      "season": "any",
+      "note": "Barred underparts below a grey breast."
+    }
+  ],
+  "calls": [
+    {
+      "sex": "male",
+      "type": "song",
+      "description": "The male song is goo-ko, usually from an open perch. The female has a loud bubbling call, which was not given a separate file. Grade A song from Västergötland. The filename is GokAmperna.mp3. Gok is the Swedish name on the file.",
+      "recordings": [
+        {
+          "key": "xeno-canto/XC27037",
+          "source": "https://xeno-canto.org/27037",
+          "fileUrl": "https://xeno-canto.org/sounds/uploaded/BPSDQEOJWG/GokAmperna.mp3",
+          "author": "Patrik Åberg",
+          "license": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ]
+    }
+  ],
+  "images": [
+    {
+      "key": "cuculus-canorus/side.jpg",
+      "view": "perched-front",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "source": "https://www.inaturalist.org/observations/256754871",
+      "fileUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/460421003/large.jpeg",
+      "author": "Pieter Kotze",
+      "license": "CC BY-NC 4.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+      "aiGenerated": false,
+      "hosted": false,
+      "alt": "Grey Common Cuckoo perched in the Malelane section",
+      "caption": "Common Cuckoo in the Malelane section, grey above and barred below, with a yellow eye-ring and yellow feet. The sex was not labelled."
+    }
+  ],
+  "research": {
+    "confidence": "medium",
+    "needsReview": true,
+    "note": "No Newman page was found. Wikipedia does not name the months in southern Africa, so monthsPresent was left unset. Grey and rufous female morphs are both stored. Population figures were left unchanged."
+  }
 }

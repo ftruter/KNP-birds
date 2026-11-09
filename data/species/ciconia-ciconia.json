@@ -7,8 +7,49 @@
     "af": "Witooievaar"
   },
   "family": "ciconiidae",
-  "summary": "The details for this species have not been published yet.",
-  "sampleData": true,
+  "status": "resident",
+  "monthsPresent": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+  ],
+  "size": {
+    "lengthCm": {
+      "min": 117,
+      "max": 117
+    },
+    "note": "Newman's Birds gives 117 cm."
+  },
+  "habitat": "In summer, large flocks feed in grassland, farmland and bushveld, often with Abdim’s Stork. It tends to avoid large permanent floodplains and marshes. Birds are also seen singly or in small groups.",
+  "summary": "A common summer visitor and resident. A large black-and-white stork with a red bill and red legs. In flight the tail is white, unlike the Yellow-billed Stork. Flocks often soar on hot days and may stay only a few days where food is abundant.",
+  "sampleData": false,
+  "similar": [
+    {
+      "slug": "mycteria-ibis",
+      "note": "Yellow-billed Stork has a yellow bill and a red face. In flight the White Stork is told by its white tail."
+    },
+    {
+      "slug": "ciconia-abdimii",
+      "note": "Abdim’s Stork is smaller and mostly black, with a white belly and rump."
+    }
+  ],
+  "sources": [
+    {
+      "title": "White Stork",
+      "url": "https://newmansbirds.com/birds/white-stork/",
+      "publisher": "Newman's Birds",
+      "year": 2026
+    }
+  ],
   "population": {
     "estimate": {
       "low": 2048,
@@ -35,8 +76,131 @@
     },
     "tierApplied": "D"
   },
-  "variants": [],
-  "viewNotes": [],
-  "calls": [],
-  "images": []
+  "variants": [
+    {
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "marks": {
+        "bill": {
+          "colour": "red",
+          "shape": null
+        },
+        "eye": {
+          "iris": null,
+          "ring": null
+        },
+        "legs": {
+          "colour": "red"
+        },
+        "head": {
+          "crown": "white",
+          "face": "white",
+          "throat": null,
+          "pattern": null
+        },
+        "upperparts": {
+          "back": "black",
+          "rump": null,
+          "pattern": null
+        },
+        "underparts": {
+          "breast": "white",
+          "belly": "white",
+          "pattern": null
+        },
+        "wings": {
+          "above": [
+            "black",
+            "white"
+          ],
+          "below": null,
+          "pattern": "Black and white. The tail is white."
+        },
+        "tail": {
+          "colour": "white",
+          "shape": null
+        }
+      }
+    }
+  ],
+  "viewNotes": [
+    {
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Large black-and-white stork with a red bill and red legs, often in a flock."
+    },
+    {
+      "view": "perched-front",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Red bill and white head."
+    },
+    {
+      "view": "perched-back",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Black and white back."
+    },
+    {
+      "view": "flight-above",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "White tail, which separates it from a Yellow-billed Stork."
+    },
+    {
+      "view": "flight-below",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "White underparts."
+    }
+  ],
+  "calls": [
+    {
+      "sex": "any",
+      "type": "call",
+      "description": "Newman does not describe the call. The file is a grade A juvenile call from Vains, France, and the filename is Cigogneblanche_juv. The licence is CC0.",
+      "recordings": [
+        {
+          "key": "xeno-canto/XC922887",
+          "source": "https://xeno-canto.org/922887",
+          "fileUrl": "https://xeno-canto.org/sounds/uploaded/BJAXFFKOML/XC922887-Cigogneblanche_juv_240724_09H15_cri.mp3",
+          "author": "Sonothèque ADVL",
+          "license": "CC0 1.0",
+          "licenceUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ]
+    }
+  ],
+  "images": [
+    {
+      "key": "ciconia-ciconia/side.jpg",
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "source": "https://www.inaturalist.org/observations/215763791",
+      "fileUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/381505988/large.jpeg",
+      "author": "redshift3",
+      "license": "CC BY-NC 4.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+      "aiGenerated": false,
+      "hosted": false,
+      "alt": "A flock of White Storks standing on a Kruger road, white with black wings and red bills",
+      "caption": "A flock of White Storks standing on a Kruger road, white with black wings and red bills"
+    }
+  ],
+  "research": {
+    "confidence": "medium",
+    "needsReview": false,
+    "note": "Status is resident and all twelve months are listed because Newman calls it a summer visitor and a resident. The summer flocks are described in the habitat. The call text is a gap. The Kemp code NB was left unchanged."
+  }
 }

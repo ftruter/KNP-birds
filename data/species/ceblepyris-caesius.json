@@ -7,8 +7,45 @@
     "af": "Bloukatakoeroe"
   },
   "family": "campephagidae",
-  "summary": "The details for this species have not been published yet.",
-  "sampleData": true,
+  "status": "resident",
+  "monthsPresent": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+  ],
+  "size": {
+    "lengthCm": {
+      "min": 27,
+      "max": 27
+    },
+    "note": "Newman's Birds gives 27 cm."
+  },
+  "habitat": "Singly or in pairs in the canopy of eastern evergreen forest, riparian forest and forested valleys.",
+  "summary": "An uncommon, localised forest cuckooshrike, dark grey all over, with black flight feathers, tail and soft parts. The female lacks the male’s black lores. The immature has white-tipped feathers and looks freckled. In flight the tail is broad and square-ended. The usual call is a quiet, high-pitched peeeeeooooo, and it also chitters and trills while feeding. Newman calls it a resident. The stored Kemp code is NB and was left unchanged.",
+  "sampleData": false,
+  "similar": [
+    {
+      "slug": "ceblepyris-pectoralis",
+      "note": "SABAP1 says White-breasted Cuckooshrike is a woodland bird and is ecologically separated from this forest species. Grey Cuckooshrike is grey all over, including the underparts."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Grey Cuckooshrike",
+      "url": "https://newmansbirds.com/birds/grey-cuckooshrike/",
+      "publisher": "Newman's Birds",
+      "year": 2026
+    }
+  ],
   "population": {
     "estimate": {
       "low": 2,
@@ -35,8 +72,197 @@
     },
     "tierApplied": "D"
   },
-  "variants": [],
-  "viewNotes": [],
-  "calls": [],
-  "images": []
+  "variants": [
+    {
+      "age": "adult",
+      "sex": "male",
+      "season": "any",
+      "marks": {
+        "bill": {
+          "colour": "black",
+          "shape": null
+        },
+        "eye": {
+          "iris": null,
+          "ring": null
+        },
+        "legs": {
+          "colour": "black"
+        },
+        "head": {
+          "crown": "grey",
+          "face": "black",
+          "throat": "grey",
+          "pattern": "Black lores. Dark grey all over. Soft parts black."
+        },
+        "upperparts": {
+          "back": "grey",
+          "rump": null,
+          "pattern": null
+        },
+        "underparts": {
+          "breast": "grey",
+          "belly": "grey",
+          "pattern": null
+        },
+        "wings": {
+          "above": "black",
+          "below": null,
+          "pattern": "Flight feathers black."
+        },
+        "tail": {
+          "colour": "black",
+          "shape": "broad and square-ended"
+        }
+      }
+    },
+    {
+      "age": "adult",
+      "sex": "female",
+      "season": "any",
+      "marks": {
+        "bill": {
+          "colour": "black",
+          "shape": null
+        },
+        "eye": {
+          "iris": null,
+          "ring": null
+        },
+        "legs": {
+          "colour": "black"
+        },
+        "head": {
+          "crown": "grey",
+          "face": "grey",
+          "throat": "grey",
+          "pattern": "Lacks the black lores."
+        },
+        "upperparts": {
+          "back": "grey",
+          "rump": null,
+          "pattern": null
+        },
+        "underparts": {
+          "breast": "grey",
+          "belly": "grey",
+          "pattern": null
+        },
+        "wings": {
+          "above": "black",
+          "below": null,
+          "pattern": null
+        },
+        "tail": {
+          "colour": "black",
+          "shape": "broad and square-ended"
+        }
+      }
+    },
+    {
+      "age": "juvenile",
+      "sex": "any",
+      "season": "any",
+      "marks": {
+        "bill": {
+          "colour": "black",
+          "shape": null
+        },
+        "eye": {
+          "iris": null,
+          "ring": null
+        },
+        "legs": {
+          "colour": null
+        },
+        "head": {
+          "crown": "grey",
+          "face": "white",
+          "throat": "grey",
+          "pattern": "White-tipped feathers, giving a freckled appearance."
+        },
+        "upperparts": {
+          "back": "grey",
+          "rump": null,
+          "pattern": "Freckled with white tips."
+        },
+        "underparts": {
+          "breast": "grey",
+          "belly": "grey",
+          "pattern": null
+        },
+        "wings": {
+          "above": "black",
+          "below": null,
+          "pattern": null
+        },
+        "tail": {
+          "colour": "black",
+          "shape": null
+        }
+      }
+    }
+  ],
+  "viewNotes": [
+    {
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Dark grey all over in the canopy. The male has black lores and the female does not."
+    },
+    {
+      "view": "perched-front",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "The black lores separate the male. Soft parts are black."
+    },
+    {
+      "view": "perched-back",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Grey back, black flight feathers and a black tail."
+    },
+    {
+      "view": "flight-above",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Broad, square-ended tail, with black flight feathers."
+    },
+    {
+      "view": "flight-below",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "The underwing colour was not named separately from the black flight feathers."
+    }
+  ],
+  "calls": [
+    {
+      "sex": "any",
+      "type": "call",
+      "description": "A quiet, high-pitched peeeeeooooo, usually while perched, plus chittering and trilling while feeding. The texts do not separate the sexes. The file used is grade A and is catalogued as song, from Saimo Hills, Kenya. South African calls were grade B and did not outrank it.",
+      "recordings": [
+        {
+          "key": "xeno-canto/XC443640",
+          "source": "https://xeno-canto.org/443640",
+          "fileUrl": "https://xeno-canto.org/sounds/uploaded/ITRQTFVLNT/XC443640-Grey%20Cuckooshrike_song_SaimoHills_5Nov2018_1010_J.Bradley.mp3",
+          "author": "James Bradley",
+          "license": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ]
+    }
+  ],
+  "images": [],
+  "research": {
+    "confidence": "medium",
+    "needsReview": true,
+    "note": "Status is resident and all twelve months are listed, from Newman’s “uncommon, localised resident”. The Kemp code on the population is NB and was not changed. No openly licensed photograph was found inside the Kruger box. Chick down is the freckled immature. The recording is grade A from Kenya and is catalogued as song."
+  }
 }

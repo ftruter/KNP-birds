@@ -7,8 +7,40 @@
     "af": "Maraboe"
   },
   "family": "ciconiidae",
-  "summary": "The details for this species have not been published yet.",
-  "sampleData": true,
+  "status": "resident",
+  "monthsPresent": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+  ],
+  "size": {
+    "lengthCm": {
+      "min": 152,
+      "max": 152
+    },
+    "note": "Newman's Birds gives 152 cm."
+  },
+  "habitat": "Groups at carcasses, refuse, wildlife camps and river sandbanks. It also soars and spends much time standing or perched.",
+  "summary": "A huge, bare-headed, bare-necked stork with a distensible fleshy pouch on the lower foreneck. Unlike other storks it flies with the neck tucked in. The immature has a woolly covering on the head. It is an uncommon to locally common visitor and resident.",
+  "sampleData": false,
+  "similar": [],
+  "sources": [
+    {
+      "title": "Marabou Stork",
+      "url": "https://newmansbirds.com/birds/marabou-stork/",
+      "publisher": "Newman's Birds",
+      "year": 2026
+    }
+  ],
   "population": {
     "estimate": {
       "low": 2,
@@ -35,8 +67,171 @@
     },
     "tierApplied": "D"
   },
-  "variants": [],
-  "viewNotes": [],
-  "calls": [],
-  "images": []
+  "variants": [
+    {
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "marks": {
+        "bill": {
+          "colour": null,
+          "shape": null
+        },
+        "eye": {
+          "iris": null,
+          "ring": null
+        },
+        "legs": {
+          "colour": null
+        },
+        "head": {
+          "crown": null,
+          "face": null,
+          "throat": null,
+          "pattern": "Bare head and bare neck, with a fleshy pouch on the lower foreneck."
+        },
+        "upperparts": {
+          "back": null,
+          "rump": null,
+          "pattern": null
+        },
+        "underparts": {
+          "breast": null,
+          "belly": null,
+          "pattern": null
+        },
+        "wings": {
+          "above": null,
+          "below": null,
+          "pattern": null
+        },
+        "tail": {
+          "colour": null,
+          "shape": null
+        }
+      }
+    },
+    {
+      "age": "juvenile",
+      "sex": "any",
+      "season": "any",
+      "marks": {
+        "bill": {
+          "colour": null,
+          "shape": null
+        },
+        "eye": {
+          "iris": null,
+          "ring": null
+        },
+        "legs": {
+          "colour": null
+        },
+        "head": {
+          "crown": null,
+          "face": null,
+          "throat": null,
+          "pattern": "Woolly covering on the head."
+        },
+        "upperparts": {
+          "back": null,
+          "rump": null,
+          "pattern": null
+        },
+        "underparts": {
+          "breast": null,
+          "belly": null,
+          "pattern": null
+        },
+        "wings": {
+          "above": null,
+          "below": null,
+          "pattern": null
+        },
+        "tail": {
+          "colour": null,
+          "shape": null
+        }
+      }
+    }
+  ],
+  "viewNotes": [
+    {
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Huge bare-headed stork, often standing inactive or at a carcass."
+    },
+    {
+      "view": "perched-front",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Bare head and the neck pouch."
+    },
+    {
+      "view": "perched-back",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "The back colour was not named."
+    },
+    {
+      "view": "flight-above",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "It flies with the neck tucked in, unlike other storks."
+    },
+    {
+      "view": "flight-below",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "The underwing was not named."
+    }
+  ],
+  "calls": [
+    {
+      "sex": "any",
+      "type": "call",
+      "description": "Newman does not describe the call. The file is grade A from near Pakwach, Uganda, and includes bill-clapping. The filename is Marabout.",
+      "recordings": [
+        {
+          "key": "xeno-canto/XC1093586",
+          "source": "https://xeno-canto.org/1093586",
+          "fileUrl": "https://xeno-canto.org/sounds/uploaded/EDRTTPSCEN/XC1093586-Marabout-260213-1100-1CA-Murchinson-falls-Ouganda_012.mp3",
+          "author": "Alain Malengreau",
+          "license": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ]
+    }
+  ],
+  "images": [
+    {
+      "key": "leptoptilos-crumenifer/flight.jpg",
+      "view": "flight-below",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "source": "https://www.inaturalist.org/observations/72660635",
+      "fileUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/118496496/large.jpeg",
+      "author": "copper",
+      "license": "CC BY-NC 4.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+      "aiGenerated": false,
+      "hosted": false,
+      "alt": "Two Marabou Storks in flight over Kruger, with bare heads and huge bills",
+      "caption": "Two Marabou Storks in flight over Kruger, with bare heads and huge bills"
+    }
+  ],
+  "research": {
+    "confidence": "medium",
+    "needsReview": false,
+    "note": "Status is resident and all twelve months are listed. Newman also calls it a visitor. Body colours were not named, so they were not stored. The call text is a gap. The Kemp code VB was left unchanged."
+  }
 }

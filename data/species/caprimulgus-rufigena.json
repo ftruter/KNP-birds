@@ -7,8 +7,48 @@
     "af": "Rooiwangnaguil"
   },
   "family": "caprimulgidae",
-  "summary": "The details for this species have not been published yet.",
-  "sampleData": true,
+  "status": "intra-african-migrant",
+  "monthsPresent": [
+    8,
+    9,
+    10,
+    11,
+    12,
+    1,
+    2,
+    3,
+    4
+  ],
+  "size": {
+    "lengthCm": {
+      "min": 23,
+      "max": 24
+    },
+    "note": "Wikipedia gives 23–24 cm."
+  },
+  "habitat": "A dry inland bird of open arid bushveld. It avoids forest, dense bush and high mountains, and prefers well-drained stony or gravelly ground with sparse leaf litter, usually near trees or bushes.",
+  "summary": "A breeding summer migrant, 23–24 cm. Wikipedia says the plumage is similar to the Fiery-necked Nightjar and gives the size, but it does not list the colours, so none were stored. SABAP1 shows a clear peak from late August to early April and says it is largely absent in winter, May to August.",
+  "sampleData": false,
+  "similar": [
+    {
+      "slug": "caprimulgus-pectoralis",
+      "note": "Fiery-necked Nightjar uses moister, more wooded ground and is resident in the lowveld. Rufous-cheeked Nightjar prefers open arid bush and is largely gone in winter."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Rufous-cheeked nightjar",
+      "url": "https://en.wikipedia.org/wiki/Rufous-cheeked_nightjar",
+      "publisher": "Wikipedia",
+      "year": 2026
+    },
+    {
+      "title": "Rufouscheeked Nightjar",
+      "url": "http://sabap2.adu.org.za/docs/sabap1/406.pdf",
+      "publisher": "The Atlas of Southern African Birds",
+      "year": 1997
+    }
+  ],
   "population": {
     "estimate": {
       "low": 512,
@@ -36,7 +76,83 @@
     "tierApplied": "D"
   },
   "variants": [],
-  "viewNotes": [],
-  "calls": [],
-  "images": []
+  "viewNotes": [
+    {
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Plumage colours were not listed in the texts used. It rests on dry, stony ground near bushes."
+    },
+    {
+      "view": "perched-front",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "The face pattern was not described."
+    },
+    {
+      "view": "perched-back",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "The back pattern was not described."
+    },
+    {
+      "view": "flight-above",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "The upperwing in flight was not described."
+    },
+    {
+      "view": "flight-below",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "The underwing was not described."
+    }
+  ],
+  "calls": [
+    {
+      "sex": "any",
+      "type": "call",
+      "description": "No call was described in the Wikipedia or SABAP1 texts consulted. The file is a grade A call from near Klerksdorp, North West. The filename is RC Nightjar.",
+      "recordings": [
+        {
+          "key": "xeno-canto/XC625641",
+          "source": "https://xeno-canto.org/625641",
+          "fileUrl": "https://xeno-canto.org/sounds/uploaded/HMBDEWEZVS/XC625641-2%20RC%20Nightjar.mp3",
+          "author": "Tony Archer",
+          "license": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ]
+    }
+  ],
+  "images": [
+    {
+      "key": "caprimulgus-rufigena/side.jpg",
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "source": "https://www.inaturalist.org/observations/10955586",
+      "fileUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/15413190/large.jpg",
+      "author": "Ernest Porter",
+      "license": "CC BY-NC 4.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+      "aiGenerated": false,
+      "hosted": false,
+      "alt": "Rufous-cheeked Nightjar resting side-on on a Kruger road at night",
+      "caption": "Rufous-cheeked Nightjar resting side-on on a Kruger road at night"
+    }
+  ],
+  "research": {
+    "confidence": "low",
+    "needsReview": true,
+    "note": "Newman has no page. Months are August to April. SABAP1 says late August to early April, and largely absent May to August. Plumage colours were not copied from the Fiery-necked Nightjar, because the text only says the two are similar. The call description is a gap. The Kemp code VB was left unchanged."
+  }
 }

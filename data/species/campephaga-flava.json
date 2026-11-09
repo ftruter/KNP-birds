@@ -7,8 +7,39 @@
     "af": "Swartkatakoeroe"
   },
   "family": "campephagidae",
-  "summary": "The details for this species have not been published yet.",
-  "sampleData": true,
+  "status": "summer-migrant",
+  "size": {
+    "lengthCm": {
+      "min": 22,
+      "max": 22
+    },
+    "note": "Newman's Birds gives 22 cm."
+  },
+  "habitat": "Pairs are sparse in thornveld, mixed bushveld, broad-leaved woodland and coastal bush, usually in the mid-stratum. They often join bird parties and are unobtrusive unless calling.",
+  "summary": "An uncommon summer bird of woodland. Only the male is black. He has a rounded tail and a prominent orange-yellow gape. About half of South African males show a yellow shoulder; most males in Zimbabwe and Botswana lack it. The short identification line describes the other plumage as dull olive-brown above, with yellow edges on the wing feathers and tail, and underparts banded black on white. Newman says the female is strikingly different and cuckoo-like. The immature is like the female, and young males gain black. The call, not often heard, is a soft high trill.",
+  "sampleData": false,
+  "similar": [
+    {
+      "slug": "dicrurus-adsimilis",
+      "note": "Newman compares the black male with Fork-tailed Drongo. The cuckooshrike has a rounded tail and an orange-yellow gape."
+    },
+    {
+      "slug": "dicrurus-ludwigii",
+      "note": "Newman also compares the black male with Common Square-tailed Drongo. The cuckooshrike’s tail is rounded and the gape is orange-yellow."
+    },
+    {
+      "slug": "melaenornis-pammelaina",
+      "note": "Newman compares the black male with Southern Black Flycatcher. The cuckooshrike’s rounded tail and orange-yellow gape are the marks given here."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Black Cuckooshrike",
+      "url": "https://newmansbirds.com/birds/black-cuckooshrike/",
+      "publisher": "Newman's Birds",
+      "year": 2026
+    }
+  ],
   "population": {
     "estimate": {
       "low": 4096,
@@ -35,8 +66,248 @@
     },
     "tierApplied": "D"
   },
-  "variants": [],
-  "viewNotes": [],
-  "calls": [],
-  "images": []
+  "variants": [
+    {
+      "age": "adult",
+      "sex": "male",
+      "season": "any",
+      "marks": {
+        "bill": {
+          "colour": null,
+          "shape": null
+        },
+        "eye": {
+          "iris": null,
+          "ring": null
+        },
+        "legs": {
+          "colour": null
+        },
+        "head": {
+          "crown": "black",
+          "face": "black",
+          "throat": "black",
+          "pattern": "Only the male is black. Prominent orange-yellow gape. Rounded tail."
+        },
+        "upperparts": {
+          "back": "black",
+          "rump": null,
+          "pattern": null
+        },
+        "underparts": {
+          "breast": "black",
+          "belly": "black",
+          "pattern": null
+        },
+        "wings": {
+          "above": "black",
+          "below": null,
+          "pattern": "About half of South African males show a yellow shoulder. Most males in Zimbabwe and Botswana lack it."
+        },
+        "tail": {
+          "colour": "black",
+          "shape": "rounded"
+        }
+      }
+    },
+    {
+      "age": "adult",
+      "sex": "female",
+      "season": "any",
+      "marks": {
+        "bill": {
+          "colour": null,
+          "shape": null
+        },
+        "eye": {
+          "iris": null,
+          "ring": null
+        },
+        "legs": {
+          "colour": null
+        },
+        "head": {
+          "crown": [
+            "olive",
+            "brown"
+          ],
+          "face": [
+            "olive",
+            "brown"
+          ],
+          "throat": "white",
+          "pattern": null
+        },
+        "upperparts": {
+          "back": [
+            "olive",
+            "brown"
+          ],
+          "rump": null,
+          "pattern": "Dull olive-brown above."
+        },
+        "underparts": {
+          "breast": "white",
+          "belly": "white",
+          "pattern": "Banded black on white."
+        },
+        "wings": {
+          "above": "yellow",
+          "below": null,
+          "pattern": "Yellow wing-feathers."
+        },
+        "tail": {
+          "colour": "yellow",
+          "shape": "yellow edges"
+        }
+      }
+    },
+    {
+      "age": "juvenile",
+      "sex": "any",
+      "season": "any",
+      "marks": {
+        "bill": {
+          "colour": null,
+          "shape": null
+        },
+        "eye": {
+          "iris": null,
+          "ring": null
+        },
+        "legs": {
+          "colour": null
+        },
+        "head": {
+          "crown": [
+            "olive",
+            "brown"
+          ],
+          "face": [
+            "olive",
+            "brown"
+          ],
+          "throat": "white",
+          "pattern": null
+        },
+        "upperparts": {
+          "back": [
+            "olive",
+            "brown"
+          ],
+          "rump": null,
+          "pattern": null
+        },
+        "underparts": {
+          "breast": "white",
+          "belly": "white",
+          "pattern": "Like the female. Young males gain increasing areas of black."
+        },
+        "wings": {
+          "above": "yellow",
+          "below": null,
+          "pattern": null
+        },
+        "tail": {
+          "colour": "yellow",
+          "shape": null
+        }
+      }
+    }
+  ],
+  "viewNotes": [
+    {
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Male black, or the olive-brown barred plumage of the female, in the mid-stratum."
+    },
+    {
+      "view": "perched-front",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "The male’s orange-yellow gape is the front mark. The female is banded black on white below."
+    },
+    {
+      "view": "perched-back",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Male black. About half of South African males show a yellow shoulder."
+    },
+    {
+      "view": "flight-above",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Rounded tail. A separate upperwing flight pattern was not named."
+    },
+    {
+      "view": "flight-below",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "The underwing was not named."
+    }
+  ],
+  "calls": [
+    {
+      "sex": "any",
+      "type": "call",
+      "description": "A soft, high-pitched trill, trrrrrrrr, not often heard. The texts do not separate the sexes. Grade A from Shaw Park, Bathurst, Eastern Cape. A higher-ranked grade A file was not used because its filename says Paradise and cricket.",
+      "recordings": [
+        {
+          "key": "xeno-canto/XC350289",
+          "source": "https://xeno-canto.org/350289",
+          "fileUrl": "https://xeno-canto.org/sounds/uploaded/GQMCPIVNXX/XC350289-Black%20Cuckooshrike%20xc.mp3",
+          "author": "Tim Cockcroft",
+          "license": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ]
+    }
+  ],
+  "images": [
+    {
+      "key": "campephaga-flava/side.jpg",
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "male",
+      "season": "any",
+      "source": "https://www.inaturalist.org/observations/182182853",
+      "fileUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/317601658/large.jpeg",
+      "author": "jderasmus",
+      "license": "CC BY-NC 4.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+      "aiGenerated": false,
+      "hosted": false,
+      "alt": "Male Black Cuckooshrike perched side-on in Kruger woodland, black, with a yellow shoulder",
+      "caption": "Male Black Cuckooshrike perched side-on in Kruger woodland, black, with a yellow shoulder"
+    },
+    {
+      "key": "campephaga-flava/front.jpg",
+      "view": "perched-front",
+      "age": "adult",
+      "sex": "female",
+      "season": "any",
+      "source": "https://www.inaturalist.org/observations/329572080",
+      "fileUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/597435443/large.jpg",
+      "author": "Gigi Laidler",
+      "license": "CC BY-NC 4.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+      "aiGenerated": false,
+      "hosted": false,
+      "alt": "Female Black Cuckooshrike perched in a Kruger tree, olive-brown above and barred below",
+      "caption": "Female Black Cuckooshrike perched in a Kruger tree, olive-brown above and barred below"
+    }
+  ],
+  "research": {
+    "confidence": "medium",
+    "needsReview": true,
+    "note": "Status is summer-migrant. Newman calls it an uncommon summer resident and does not name the months, so monthsPresent was left unset. The site then counts a summer migrant in summer only. The female colours come from the short identification line, because the description says only that she is cuckoo-like and strikingly different. Chick down beyond that, and a flight photograph, are gaps. The call is grade A from the Eastern Cape."
+  }
 }
