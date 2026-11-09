@@ -7,8 +7,30 @@
     "af": "Gryskopmeeu"
   },
   "family": "laridae",
-  "summary": "The details for this species have not been published yet.",
-  "sampleData": true,
+  "size": {
+    "lengthCm": {
+      "min": 42,
+      "max": 42
+    },
+    "note": "Newman's Birds gives 42 cm."
+  },
+  "habitat": "Inland waters, where it breeds, and coasts.",
+  "summary": "A common to abundant resident in Newman's account. The breeding adult has an all-grey hood, pale yellow eyes and a bright red bill and legs. The non-breeding adult has a grey smudge on the ear coverts only. The immature has the front half of the head pale grey, a darker ear-patch extending over the crown, a dark eye, and a dark-tipped bill with an orange-pink base, or rarely a wholly dark bill. The back and upperwings are grey. Newman does not describe a call. The Kemp code VB was left unchanged.",
+  "sampleData": false,
+  "sources": [
+    {
+      "title": "Grey-headed Gull",
+      "url": "https://newmansbirds.com/birds/grey-headed-gull/",
+      "publisher": "Newman's Birds",
+      "year": 2026
+    },
+    {
+      "title": "Kemp A.C., Herholdt J.J., Whyte I. & Harrison J. (2001). Birds of the two largest national parks in South Africa: a method to generate estimates of population size for all species and assess their conservation ecology. S. Afr. J. Sci. 97: 393–403.",
+      "url": "https://journals.co.za/doi/pdf/10.10520/EJC97367",
+      "publisher": "South African Journal of Science",
+      "year": 2001
+    }
+  ],
   "population": {
     "estimate": {
       "low": 4,
@@ -35,8 +57,292 @@
     },
     "tierApplied": "D"
   },
-  "variants": [],
-  "viewNotes": [],
-  "calls": [],
-  "images": []
+  "variants": [
+    {
+      "age": "adult",
+      "sex": "any",
+      "season": "breeding",
+      "marks": {
+        "bill": {
+          "colour": "red",
+          "shape": "Bright red bill."
+        },
+        "eye": {
+          "iris": "yellow",
+          "ring": null
+        },
+        "legs": {
+          "colour": "red"
+        },
+        "head": {
+          "crown": "grey",
+          "face": "grey",
+          "throat": null,
+          "pattern": "All-grey hood. Pale yellow eyes."
+        },
+        "upperparts": {
+          "back": "grey",
+          "rump": null,
+          "pattern": "Grey back."
+        },
+        "underparts": {
+          "breast": null,
+          "belly": null
+        },
+        "wings": {
+          "above": "grey",
+          "below": null,
+          "pattern": "Grey upperwings."
+        },
+        "tail": {
+          "colour": null,
+          "shape": null
+        }
+      }
+    },
+    {
+      "age": "adult",
+      "sex": "any",
+      "season": "non-breeding",
+      "marks": {
+        "bill": {
+          "colour": null,
+          "shape": null
+        },
+        "eye": {
+          "iris": null,
+          "ring": null
+        },
+        "legs": {
+          "colour": null
+        },
+        "head": {
+          "crown": null,
+          "face": "grey",
+          "throat": null,
+          "pattern": "Grey smudge on the ear coverts only, not a full hood."
+        },
+        "upperparts": {
+          "back": "grey",
+          "rump": null
+        },
+        "underparts": {
+          "breast": null,
+          "belly": null
+        },
+        "wings": {
+          "above": "grey",
+          "below": null
+        },
+        "tail": {
+          "colour": null,
+          "shape": null
+        }
+      }
+    },
+    {
+      "age": "immature",
+      "sex": "any",
+      "season": "any",
+      "marks": {
+        "bill": {
+          "colour": null,
+          "shape": "Usually a dark-tipped bill with an orange-pink base. A wholly dark bill is a very rare variation. Those colours are not stored as a single token."
+        },
+        "eye": {
+          "iris": null,
+          "ring": null
+        },
+        "legs": {
+          "colour": null
+        },
+        "head": {
+          "crown": "grey",
+          "face": "grey",
+          "throat": null,
+          "pattern": "Front half of the head pale grey, with a darker ear-patch that extends over the crown. Dark eye."
+        },
+        "upperparts": {
+          "back": null,
+          "rump": null
+        },
+        "underparts": {
+          "breast": null,
+          "belly": null
+        },
+        "wings": {
+          "above": null,
+          "below": null
+        },
+        "tail": {
+          "colour": null,
+          "shape": null
+        }
+      }
+    }
+  ],
+  "viewNotes": [
+    {
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "any",
+      "season": "breeding",
+      "note": "All-grey hood, pale yellow eye, bright red bill and grey back."
+    },
+    {
+      "view": "perched-front",
+      "age": "adult",
+      "sex": "any",
+      "season": "breeding",
+      "note": "Grey hood and a red bill."
+    },
+    {
+      "view": "perched-back",
+      "age": "adult",
+      "sex": "any",
+      "season": "breeding",
+      "note": "Grey back and upperwings."
+    },
+    {
+      "view": "flight-above",
+      "age": "adult",
+      "sex": "any",
+      "season": "breeding",
+      "note": "Grey upperwings. A breeding flight pattern was not described beyond the grey upperwings."
+    },
+    {
+      "view": "flight-below",
+      "age": "adult",
+      "sex": "any",
+      "season": "breeding",
+      "note": "Underpart colours were not named. The legs are bright red."
+    },
+    {
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "any",
+      "season": "non-breeding",
+      "note": "Grey smudge on the ear coverts only. Grey back and upperwings."
+    },
+    {
+      "view": "perched-front",
+      "age": "adult",
+      "sex": "any",
+      "season": "non-breeding",
+      "note": "The hood is reduced to a grey ear smudge."
+    },
+    {
+      "view": "perched-back",
+      "age": "adult",
+      "sex": "any",
+      "season": "non-breeding",
+      "note": "Grey back. The head is not a full grey hood."
+    },
+    {
+      "view": "flight-above",
+      "age": "adult",
+      "sex": "any",
+      "season": "non-breeding",
+      "note": "Grey upperwings."
+    },
+    {
+      "view": "flight-below",
+      "age": "adult",
+      "sex": "any",
+      "season": "non-breeding",
+      "note": "Underpart colours were not named."
+    },
+    {
+      "view": "perched-side",
+      "age": "immature",
+      "sex": "any",
+      "season": "any",
+      "note": "Pale grey front of the head, a darker ear-patch over the crown, and a dark eye."
+    },
+    {
+      "view": "perched-front",
+      "age": "immature",
+      "sex": "any",
+      "season": "any",
+      "note": "Darker ear-patch extending over the crown. The bill is usually dark-tipped with an orange-pink base."
+    },
+    {
+      "view": "perched-back",
+      "age": "immature",
+      "sex": "any",
+      "season": "any",
+      "note": "The immature back was not given a separate description."
+    },
+    {
+      "view": "flight-above",
+      "age": "immature",
+      "sex": "any",
+      "season": "any",
+      "note": "An immature flight pattern was not described."
+    },
+    {
+      "view": "flight-below",
+      "age": "immature",
+      "sex": "any",
+      "season": "any",
+      "note": "Immature underparts were not described."
+    }
+  ],
+  "calls": [
+    {
+      "sex": "any",
+      "type": "call",
+      "description": "Newman does not describe a call. Grade A call from Port Elizabeth, Eastern Cape. The filename is XC277587-grey-headed gulls exc.mp3, so the file is marked as an excerpt.",
+      "recordings": [
+        {
+          "key": "xeno-canto/XC277587",
+          "source": "https://xeno-canto.org/277587",
+          "fileUrl": "https://xeno-canto.org/sounds/uploaded/SGLTZLDXYI/XC277587-grey-headed%20gulls%20exc.mp3",
+          "author": "Lynette Rudman",
+          "license": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ]
+    }
+  ],
+  "images": [
+    {
+      "key": "chroicocephalus-cirrocephalus/side.jpg",
+      "view": "flight-side",
+      "age": "adult",
+      "sex": "any",
+      "season": "non-breeding",
+      "source": "https://www.inaturalist.org/observations/233040697",
+      "fileUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/414106667/large.jpg",
+      "author": "Duncan McKenzie",
+      "license": "CC BY-NC 4.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+      "aiGenerated": false,
+      "hosted": false,
+      "alt": "Grey-headed Gull in flight, grey upperwings and a pale head with an ear smudge",
+      "caption": "Grey-headed Gull in the Mopani district, grey above with a white tail and a pale head that shows a grey ear smudge rather than a full hood."
+    }
+  ],
+  "research": {
+    "confidence": "medium",
+    "needsReview": false,
+    "note": "Newman calls it a common to abundant resident, so status is resident and all twelve months are listed. The Kemp code VB was left unchanged, as were the population figures. Hartlaub’s Gull is the comparison Newman names and is not in this list. Newman does not describe the call. The immature eye is described as dark, which is not stored as an iris colour."
+  },
+  "status": "resident",
+  "monthsPresent": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+  ]
 }

@@ -7,8 +7,24 @@
     "af": "Waterploeër"
   },
   "family": "laridae",
-  "summary": "The details for this species have not been published yet.",
-  "sampleData": true,
+  "size": {
+    "lengthCm": {
+      "min": 38,
+      "max": 38
+    },
+    "note": "Newman's Birds gives 38 cm."
+  },
+  "habitat": "Small flocks on large permanent rivers, lakes and lagoons. It rests on sandbanks and feeds by skimming with the bill immersed.",
+  "summary": "A fairly common, localised resident. A black and white tern-like bird. The bill is large and red, with the lower mandible extending 2–3 cm beyond the upper, and the legs are short and red. The body is white and the upperwings are dark. The immature has a streaked forehead, buff-edged feathers on the upper parts, and a blackish bill with a red base. The call is a harsh, lapwing-like krreh or kweh, repeated. No Kemp estimate is stored for this species, and that was left unchanged.",
+  "sampleData": false,
+  "sources": [
+    {
+      "title": "African Skimmer",
+      "url": "https://newmansbirds.com/birds/african-skimmer/",
+      "publisher": "Newman's Birds",
+      "year": 2026
+    }
+  ],
   "population": {
     "estimate": {
       "low": null,
@@ -21,8 +37,219 @@
     "notes": "No sourced Kruger estimate is currently available; taxonomy or later records require separate research.",
     "sources": []
   },
-  "variants": [],
-  "viewNotes": [],
-  "calls": [],
-  "images": []
+  "variants": [
+    {
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "marks": {
+        "bill": {
+          "colour": "red",
+          "shape": "Large bill. The lower mandible extends 2–3 cm beyond the upper and is immersed while skimming."
+        },
+        "eye": {
+          "iris": null,
+          "ring": null
+        },
+        "legs": {
+          "colour": "red"
+        },
+        "head": {
+          "crown": null,
+          "face": null,
+          "throat": null,
+          "pattern": "Black and white. Newman does not itemise the head."
+        },
+        "upperparts": {
+          "back": null,
+          "rump": null,
+          "pattern": "Black and white tern-like bird. A separate back colour was not named."
+        },
+        "underparts": {
+          "breast": "white",
+          "belly": "white",
+          "pattern": "Body white."
+        },
+        "wings": {
+          "above": null,
+          "below": null,
+          "pattern": "Dark upperwings. A named wing colour was not given."
+        },
+        "tail": {
+          "colour": null,
+          "shape": null
+        }
+      }
+    },
+    {
+      "age": "immature",
+      "sex": "any",
+      "season": "any",
+      "marks": {
+        "bill": {
+          "colour": null,
+          "shape": "Blackish bill with a red base."
+        },
+        "eye": {
+          "iris": null,
+          "ring": null
+        },
+        "legs": {
+          "colour": null
+        },
+        "head": {
+          "crown": null,
+          "face": null,
+          "throat": null,
+          "pattern": "Streaked forehead."
+        },
+        "upperparts": {
+          "back": null,
+          "rump": null,
+          "pattern": "Buff-edged feathers on the upper parts."
+        },
+        "underparts": {
+          "breast": null,
+          "belly": null
+        },
+        "wings": {
+          "above": null,
+          "below": null
+        },
+        "tail": {
+          "colour": null,
+          "shape": null
+        }
+      }
+    }
+  ],
+  "viewNotes": [
+    {
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Black and white, with a large red bill and short red legs. The lower mandible is longer than the upper."
+    },
+    {
+      "view": "perched-front",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "White body. The head pattern was not itemised beyond black and white."
+    },
+    {
+      "view": "perched-back",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Dark upperwings and a white body."
+    },
+    {
+      "view": "flight-above",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Dark upperwings. It flies low and skims with the lower mandible in the water."
+    },
+    {
+      "view": "flight-below",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "White underparts and short red legs."
+    },
+    {
+      "view": "perched-side",
+      "age": "immature",
+      "sex": "any",
+      "season": "any",
+      "note": "Streaked forehead, buff-edged upper parts, and a blackish bill with a red base."
+    },
+    {
+      "view": "perched-front",
+      "age": "immature",
+      "sex": "any",
+      "season": "any",
+      "note": "Streaked forehead."
+    },
+    {
+      "view": "perched-back",
+      "age": "immature",
+      "sex": "any",
+      "season": "any",
+      "note": "Buff-edged feathers on the upper parts."
+    },
+    {
+      "view": "flight-above",
+      "age": "immature",
+      "sex": "any",
+      "season": "any",
+      "note": "An immature flight pattern was not described."
+    },
+    {
+      "view": "flight-below",
+      "age": "immature",
+      "sex": "any",
+      "season": "any",
+      "note": "Immature underparts were not described."
+    }
+  ],
+  "calls": [
+    {
+      "sex": "any",
+      "type": "call",
+      "description": "A harsh, lapwing-like krreh or kweh, repeated. Grade A flight call from the Kazinga Channel in Queen Elizabeth National Park, Uganda. The filename is XC608119-AFRICAN SKIMMERS 2 Kazinga Channel May 20 PG1635.mp3. The catalogue type also says voices.",
+      "recordings": [
+        {
+          "key": "xeno-canto/XC608119",
+          "source": "https://xeno-canto.org/608119",
+          "fileUrl": "https://xeno-canto.org/sounds/uploaded/GNEWSLMDAM/XC608119-AFRICAN%20SKIMMERS%202%20Kazinga%20Channel%20May%2020%20PG1635.mp3",
+          "author": "Phil Gregory",
+          "license": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ]
+    }
+  ],
+  "images": [
+    {
+      "key": "rynchops-flavirostris/side.jpg",
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "source": "https://www.inaturalist.org/observations/50119563",
+      "fileUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/79583113/large.jpeg",
+      "author": "copper",
+      "license": "CC BY-NC 4.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+      "aiGenerated": false,
+      "hosted": false,
+      "alt": "African Skimmers standing, black above, white below, with long red bills",
+      "caption": "African Skimmers in South Africa inside the Kruger search box, black above and white below, with red bills whose lower mandibles are longer than the upper."
+    }
+  ],
+  "research": {
+    "confidence": "medium",
+    "needsReview": false,
+    "note": "Newman calls it a fairly common, localised resident, so status is resident and all twelve months are listed. Black Skimmer is the comparison Newman names and is not in this list. No Kemp block was present, and the empty population estimate was left unchanged."
+  },
+  "status": "resident",
+  "monthsPresent": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+  ]
 }

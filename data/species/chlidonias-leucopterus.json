@@ -7,8 +7,30 @@
     "af": "Witvlerksterretjie"
   },
   "family": "laridae",
-  "summary": "The details for this species have not been published yet.",
-  "sampleData": true,
+  "size": {
+    "lengthCm": {
+      "min": 23,
+      "max": 23
+    },
+    "note": "Newman's Birds gives 23 cm."
+  },
+  "habitat": "Over fresh water, sometimes in large numbers.",
+  "summary": "A common summer visitor. Breeding plumage is wholly black on the body and underwing coverts, with pale grey to white wings. Non-breeding birds have a paler head, a whitish-grey rump, a tail paler than the back, a black ear-spot and a blackish nape, and they lack dark smudges on the sides of the breast. Newman gives no months and does not describe a call. The Kemp code NB was left unchanged.",
+  "sampleData": false,
+  "sources": [
+    {
+      "title": "White-winged Tern",
+      "url": "https://newmansbirds.com/birds/white-winged-tern/",
+      "publisher": "Newman's Birds",
+      "year": 2026
+    },
+    {
+      "title": "Kemp A.C., Herholdt J.J., Whyte I. & Harrison J. (2001). Birds of the two largest national parks in South Africa: a method to generate estimates of population size for all species and assess their conservation ecology. S. Afr. J. Sci. 97: 393–403.",
+      "url": "https://journals.co.za/doi/pdf/10.10520/EJC97367",
+      "publisher": "South African Journal of Science",
+      "year": 2001
+    }
+  ],
   "population": {
     "estimate": {
       "low": 16,
@@ -35,8 +57,213 @@
     },
     "tierApplied": "D"
   },
-  "variants": [],
-  "viewNotes": [],
-  "calls": [],
-  "images": []
+  "variants": [
+    {
+      "age": "adult",
+      "sex": "any",
+      "season": "breeding",
+      "marks": {
+        "bill": {
+          "colour": null,
+          "shape": null
+        },
+        "eye": {
+          "iris": null,
+          "ring": null
+        },
+        "legs": {
+          "colour": null
+        },
+        "head": {
+          "crown": "black",
+          "face": "black",
+          "throat": "black",
+          "pattern": "Wholly black body."
+        },
+        "upperparts": {
+          "back": "black",
+          "rump": null,
+          "pattern": "Wholly black body."
+        },
+        "underparts": {
+          "breast": "black",
+          "belly": "black",
+          "pattern": "Wholly black body."
+        },
+        "wings": {
+          "above": null,
+          "below": "black",
+          "pattern": "Underwing coverts wholly black. Wings pale grey to white."
+        },
+        "tail": {
+          "colour": null,
+          "shape": null
+        }
+      }
+    },
+    {
+      "age": "adult",
+      "sex": "any",
+      "season": "non-breeding",
+      "marks": {
+        "bill": {
+          "colour": null,
+          "shape": "Weaker bill than Whiskered Tern. Bill colour was not named."
+        },
+        "eye": {
+          "iris": null,
+          "ring": null
+        },
+        "legs": {
+          "colour": null
+        },
+        "head": {
+          "crown": null,
+          "face": "black",
+          "throat": null,
+          "pattern": "Paler head than Black Tern, with a black spot behind the eye and a blackish nape."
+        },
+        "upperparts": {
+          "back": null,
+          "rump": "grey",
+          "pattern": "Whitish-grey rump, paler than Whiskered Tern. The tail is paler than the back."
+        },
+        "underparts": {
+          "breast": null,
+          "belly": null,
+          "pattern": "No dark smudges on the sides of the breast."
+        },
+        "wings": {
+          "above": null,
+          "below": null,
+          "pattern": "More contrasting upper wings than Whiskered Tern."
+        },
+        "tail": {
+          "colour": "white",
+          "shape": "White upper tail, paler than the back."
+        }
+      }
+    }
+  ],
+  "viewNotes": [
+    {
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "any",
+      "season": "breeding",
+      "note": "Wholly black body, with pale grey to white wings."
+    },
+    {
+      "view": "perched-front",
+      "age": "adult",
+      "sex": "any",
+      "season": "breeding",
+      "note": "Black head and underparts."
+    },
+    {
+      "view": "perched-back",
+      "age": "adult",
+      "sex": "any",
+      "season": "breeding",
+      "note": "Black body and pale grey to white wings."
+    },
+    {
+      "view": "flight-above",
+      "age": "adult",
+      "sex": "any",
+      "season": "breeding",
+      "note": "Pale grey to white wings above a black body."
+    },
+    {
+      "view": "flight-below",
+      "age": "adult",
+      "sex": "any",
+      "season": "breeding",
+      "note": "Wholly black underwing coverts and body."
+    },
+    {
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "any",
+      "season": "non-breeding",
+      "note": "Black ear-spot, blackish nape and a paler head. The bill is weaker than a Whiskered Tern’s."
+    },
+    {
+      "view": "perched-front",
+      "age": "adult",
+      "sex": "any",
+      "season": "non-breeding",
+      "note": "Black spot behind the eye. No dark smudges on the sides of the breast."
+    },
+    {
+      "view": "perched-back",
+      "age": "adult",
+      "sex": "any",
+      "season": "non-breeding",
+      "note": "Whitish-grey rump and a white upper tail, paler than the back."
+    },
+    {
+      "view": "flight-above",
+      "age": "adult",
+      "sex": "any",
+      "season": "non-breeding",
+      "note": "Buoyant flight with more contrasting upper wings than Whiskered Tern."
+    },
+    {
+      "view": "flight-below",
+      "age": "adult",
+      "sex": "any",
+      "season": "non-breeding",
+      "note": "No dark breast smudges. Underwing colour in this plumage was not named."
+    }
+  ],
+  "calls": [
+    {
+      "sex": "any",
+      "type": "call",
+      "description": "Newman does not describe a call. Grade A call from Vaalkop Dam Nature Reserve, North West. The filename is XC307306-Tern Whitewinged_Vaalkop_151224_23_A.mp3.",
+      "recordings": [
+        {
+          "key": "xeno-canto/XC307306",
+          "source": "https://xeno-canto.org/307306",
+          "fileUrl": "https://xeno-canto.org/sounds/uploaded/TWAAJJHMEH/XC307306-Tern%20Whitewinged_Vaalkop_151224_23_A.mp3",
+          "author": "Faansie Peacock",
+          "license": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ]
+    }
+  ],
+  "images": [
+    {
+      "key": "chlidonias-leucopterus/side.jpg",
+      "view": "flight-side",
+      "age": "adult",
+      "sex": "any",
+      "season": "non-breeding",
+      "source": "https://www.inaturalist.org/observations/329189581",
+      "fileUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/596653444/large.jpg",
+      "author": "Tivan Kotze",
+      "license": "CC BY-NC 4.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+      "aiGenerated": false,
+      "hosted": false,
+      "alt": "Distant White-winged Tern in flight over a pan, pale body and dark ear-spot",
+      "caption": "White-winged Tern at Mopani Rest Camp, a distant bird over the water with a pale body and a dark ear-spot."
+    }
+  ],
+  "research": {
+    "confidence": "medium",
+    "needsReview": false,
+    "note": "Newman calls it a common summer visitor and does not name the months, so status is summer-migrant and monthsPresent is left unset. Black Tern is a comparison species in Newman and is not in this list. Newman does not describe the call. Population figures and the Kemp code NB were left unchanged."
+  },
+  "status": "summer-migrant",
+  "similar": [
+    {
+      "slug": "chlidonias-hybrida",
+      "note": "Whiskered Tern has a thicker, heavier bill, a pale grey rump rather than a paler one, and a less buoyant flight. Its non-breeding tail is pale grey."
+    }
+  ]
 }

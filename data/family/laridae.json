@@ -6,8 +6,8 @@
     "en": "Gulls, terns and skimmers",
     "af": "Meeue"
   },
-  "summary": "Field notes for this family are still to be written.",
-  "sampleData": true,
+  "summary": "Gulls, terns and a skimmer of inland water. Whiskered Tern is the resident marsh tern with a short grey tail. White-winged Tern is the summer visitor that is black-bodied in breeding plumage. Grey-headed Gull has a grey hood when breeding and a grey ear smudge when it is not. African Skimmer skims with a longer lower mandible.",
+  "sampleData": false,
   "species": [
     {
       "slug": "chlidonias-hybrida",
