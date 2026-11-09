@@ -6,8 +6,8 @@
     "en": "Coursers and pratincoles",
     "af": "Drawwertjies"
   },
-  "summary": "Field notes for this family are still to be written.",
-  "sampleData": true,
+  "summary": "Pratincoles are short-legged, migratory and nomadic, and look like terns in their erratic flight. They feed mostly in the air. Coursers run on the ground. Kruger has five. Temminck’s Courser is the small rufous-capped grassland bird. Collared and Black-winged Pratincoles are told apart by the underwing. Bronze-winged and Three-banded Coursers are the nocturnal woodland birds.",
+  "sampleData": false,
   "species": [
     {
       "slug": "cursorius-temminckii",

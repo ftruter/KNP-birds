@@ -8485,14 +8485,42 @@
       "slug": "cursorius-temminckii",
       "scientificName": "Cursorius temminckii",
       "commonName": "Temminck’s Courser",
-      "images": [],
-      "recordings": [],
+      "images": [
+        {
+          "key": "cursorius-temminckii/side.jpg",
+          "author": "leuli",
+          "licence": "CC BY-NC 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+          "sourceUrl": "https://www.inaturalist.org/observations/130007261",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ],
+      "recordings": [
+        {
+          "key": "xeno-canto/XC210305",
+          "author": "Andrew Spencer",
+          "licence": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "sourceUrl": "https://xeno-canto.org/210305",
+          "aiGenerated": false,
+          "hosted": false,
+          "quality": "A",
+          "callType": "call"
+        }
+      ],
       "sources": [
         {
           "title": "Kemp A.C., Herholdt J.J., Whyte I. & Harrison J. (2001). Birds of the two largest national parks in South Africa: a method to generate estimates of population size for all species and assess their conservation ecology. S. Afr. J. Sci. 97: 393–403.",
           "url": "https://journals.co.za/doi/pdf/10.10520/EJC97367",
           "publisher": "South African Journal of Science",
           "year": 2001
+        },
+        {
+          "title": "Temminck’s Courser",
+          "url": "https://newmansbirds.com/birds/temmincks-courser/",
+          "publisher": "Newman's Birds",
+          "year": 2026
         }
       ]
     },
@@ -10163,17 +10191,82 @@
       ]
     },
     {
+      "slug": "glareola-nordmanni",
+      "scientificName": "Glareola nordmanni",
+      "commonName": "Black-winged Pratincole",
+      "images": [
+        {
+          "key": "glareola-nordmanni/side.jpg",
+          "author": "Duncan McKenzie",
+          "licence": "CC BY-NC 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+          "sourceUrl": "https://www.inaturalist.org/observations/338427009",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ],
+      "recordings": [
+        {
+          "key": "xeno-canto/XC301539",
+          "author": "Daniel Danckwerts",
+          "licence": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "sourceUrl": "https://xeno-canto.org/301539",
+          "aiGenerated": false,
+          "hosted": false,
+          "quality": "A",
+          "callType": "call"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Black-winged Pratincole",
+          "url": "https://newmansbirds.com/birds/black-winged-pratincole/",
+          "publisher": "Newman's Birds",
+          "year": 2026
+        }
+      ]
+    },
+    {
       "slug": "glareola-pratincola",
       "scientificName": "Glareola pratincola",
       "commonName": "Collared Pratincole",
-      "images": [],
-      "recordings": [],
+      "images": [
+        {
+          "key": "glareola-pratincola/side.jpg",
+          "author": "jderasmus",
+          "licence": "CC BY-NC 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+          "sourceUrl": "https://www.inaturalist.org/observations/183858411",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ],
+      "recordings": [
+        {
+          "key": "xeno-canto/XC379434",
+          "author": "Stanislas Wroza",
+          "licence": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "sourceUrl": "https://xeno-canto.org/379434",
+          "aiGenerated": false,
+          "hosted": false,
+          "quality": "A",
+          "callType": "call"
+        }
+      ],
       "sources": [
         {
           "title": "Kemp A.C., Herholdt J.J., Whyte I. & Harrison J. (2001). Birds of the two largest national parks in South Africa: a method to generate estimates of population size for all species and assess their conservation ecology. S. Afr. J. Sci. 97: 393–403.",
           "url": "https://journals.co.za/doi/pdf/10.10520/EJC97367",
           "publisher": "South African Journal of Science",
           "year": 2001
+        },
+        {
+          "title": "Collared Pratincole",
+          "url": "https://newmansbirds.com/birds/collared-pratincole/",
+          "publisher": "Newman's Birds",
+          "year": 2026
         }
       ]
     },
@@ -15547,14 +15640,42 @@
       "slug": "rhinoptilus-chalcopterus",
       "scientificName": "Rhinoptilus chalcopterus",
       "commonName": "Bronze-winged Courser",
-      "images": [],
-      "recordings": [],
+      "images": [
+        {
+          "key": "rhinoptilus-chalcopterus/side.jpg",
+          "author": "Daniel Correia",
+          "licence": "CC BY-NC 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+          "sourceUrl": "https://www.inaturalist.org/observations/177541993",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ],
+      "recordings": [
+        {
+          "key": "xeno-canto/XC696623",
+          "author": "Derek Solomon",
+          "licence": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "sourceUrl": "https://xeno-canto.org/696623",
+          "aiGenerated": false,
+          "hosted": false,
+          "quality": "A",
+          "callType": "call"
+        }
+      ],
       "sources": [
         {
           "title": "Kemp A.C., Herholdt J.J., Whyte I. & Harrison J. (2001). Birds of the two largest national parks in South Africa: a method to generate estimates of population size for all species and assess their conservation ecology. S. Afr. J. Sci. 97: 393–403.",
           "url": "https://journals.co.za/doi/pdf/10.10520/EJC97367",
           "publisher": "South African Journal of Science",
           "year": 2001
+        },
+        {
+          "title": "Bronze-winged Courser",
+          "url": "https://newmansbirds.com/birds/bronze-winged-courser/",
+          "publisher": "Newman's Birds",
+          "year": 2026
         }
       ]
     },
@@ -15562,14 +15683,42 @@
       "slug": "rhinoptilus-cinctus",
       "scientificName": "Rhinoptilus cinctus",
       "commonName": "Three-banded Courser",
-      "images": [],
-      "recordings": [],
+      "images": [
+        {
+          "key": "rhinoptilus-cinctus/side.jpg",
+          "author": "Phillip Nieuwoudt",
+          "licence": "CC BY-NC 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+          "sourceUrl": "https://www.inaturalist.org/observations/401529931",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ],
+      "recordings": [
+        {
+          "key": "xeno-canto/XC210304",
+          "author": "Andrew Spencer",
+          "licence": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "sourceUrl": "https://xeno-canto.org/210304",
+          "aiGenerated": false,
+          "hosted": false,
+          "quality": "A",
+          "callType": "call"
+        }
+      ],
       "sources": [
         {
           "title": "Kemp A.C., Herholdt J.J., Whyte I. & Harrison J. (2001). Birds of the two largest national parks in South Africa: a method to generate estimates of population size for all species and assess their conservation ecology. S. Afr. J. Sci. 97: 393–403.",
           "url": "https://journals.co.za/doi/pdf/10.10520/EJC97367",
           "publisher": "South African Journal of Science",
           "year": 2001
+        },
+        {
+          "title": "Three-banded Courser",
+          "url": "https://newmansbirds.com/birds/three-banded-courser/",
+          "publisher": "Newman's Birds",
+          "year": 2026
         }
       ]
     },

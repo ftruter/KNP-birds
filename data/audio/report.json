@@ -1,9 +1,9 @@
 {
   "source": "xeno-canto explore catalogue, API v3 recording fields",
   "counts": {
-    "slots": 268,
+    "slots": 273,
     "swapped": 17,
-    "added": 166,
+    "added": 171,
     "kept": 57,
     "none": 28,
     "cleaned": 0
@@ -4141,6 +4141,76 @@
       "quality": "A",
       "country": "South Africa",
       "locality": "City of Cape Town (near Cape Town), City of Cape Town Metropolitan Municipality, Western Cape",
+      "cleaned": false,
+      "license": "CC BY-NC-SA 4.0"
+    },
+    {
+      "slug": "cursorius-temminckii",
+      "scientificName": "Cursorius temminckii",
+      "index": 0,
+      "type": "call",
+      "action": "added",
+      "from": [],
+      "to": "210305",
+      "quality": "A",
+      "country": "Ethiopia",
+      "locality": "Liben Plain",
+      "cleaned": false,
+      "license": "CC BY-NC-SA 4.0"
+    },
+    {
+      "slug": "glareola-nordmanni",
+      "scientificName": "Glareola nordmanni",
+      "index": 0,
+      "type": "call",
+      "action": "added",
+      "from": [],
+      "to": "301539",
+      "quality": "A",
+      "country": "South Africa",
+      "locality": "Mdutjana (near Libangeni), Nkangala, Mpumalanga",
+      "cleaned": false,
+      "license": "CC BY-NC-SA 4.0"
+    },
+    {
+      "slug": "glareola-pratincola",
+      "scientificName": "Glareola pratincola",
+      "index": 0,
+      "type": "call",
+      "action": "added",
+      "from": [],
+      "to": "379434",
+      "quality": "A",
+      "country": "France",
+      "locality": "Arles, Bouches-du-Rhône, Provence-Alpes-Côte d'Azur",
+      "cleaned": false,
+      "license": "CC BY-NC-SA 4.0"
+    },
+    {
+      "slug": "rhinoptilus-chalcopterus",
+      "scientificName": "Rhinoptilus chalcopterus",
+      "index": 0,
+      "type": "call",
+      "action": "added",
+      "from": [],
+      "to": "696623",
+      "quality": "A",
+      "country": "South Africa",
+      "locality": "Kruger Park (near Kruger National Park), Mopani, Limpopo",
+      "cleaned": false,
+      "license": "CC BY-NC-SA 4.0"
+    },
+    {
+      "slug": "rhinoptilus-cinctus",
+      "scientificName": "Rhinoptilus cinctus",
+      "index": 0,
+      "type": "call",
+      "action": "added",
+      "from": [],
+      "to": "210304",
+      "quality": "A",
+      "country": "Ethiopia",
+      "locality": "Awash National Park",
       "cleaned": false,
       "license": "CC BY-NC-SA 4.0"
     }

@@ -2746,6 +2746,56 @@
           }
         }
       ]
+    },
+    "cursorius-temminckii": {
+      "calls": [
+        {
+          "index": 0,
+          "quality": {
+            "xeno-canto/XC210305": "A"
+          }
+        }
+      ]
+    },
+    "glareola-nordmanni": {
+      "calls": [
+        {
+          "index": 0,
+          "quality": {
+            "xeno-canto/XC301539": "A"
+          }
+        }
+      ]
+    },
+    "glareola-pratincola": {
+      "calls": [
+        {
+          "index": 0,
+          "quality": {
+            "xeno-canto/XC379434": "A"
+          }
+        }
+      ]
+    },
+    "rhinoptilus-chalcopterus": {
+      "calls": [
+        {
+          "index": 0,
+          "quality": {
+            "xeno-canto/XC696623": "A"
+          }
+        }
+      ]
+    },
+    "rhinoptilus-cinctus": {
+      "calls": [
+        {
+          "index": 0,
+          "quality": {
+            "xeno-canto/XC210304": "A"
+          }
+        }
+      ]
     }
   }
 }
