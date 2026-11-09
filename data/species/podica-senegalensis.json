@@ -7,8 +7,45 @@
     "af": "Watertrapper"
   },
   "family": "heliornithidae",
-  "summary": "The details for this species have not been published yet.",
-  "sampleData": true,
+  "status": "resident",
+  "monthsPresent": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+  ],
+  "size": {
+    "lengthCm": {
+      "min": 63,
+      "max": 63
+    },
+    "note": "Newman's Birds gives 63 cm."
+  },
+  "habitat": "Singly or in pairs on quiet, tree-fringed rivers, swimming under overhanging branches. It roosts at night on a low branch over the water.",
+  "summary": "An uncommon resident. The upper parts are dark brown, grey in the male. The bill and legs are bright orange-red, which separates it from ducks and cormorants. It has no characteristic call, though it sometimes gives a harsh croak. It swims with much of the body submerged and the head and neck stretched forward. It seldom flies. The Kemp code RB was left unchanged.",
+  "sampleData": false,
+  "similar": [
+    {
+      "slug": "microcarbo-africanus",
+      "note": "Newman separates the finfoot from cormorants by the bright orange-red bill and legs. It swims with the body mostly submerged."
+    }
+  ],
+  "sources": [
+    {
+      "title": "African Finfoot",
+      "url": "https://newmansbirds.com/birds/african-finfoot/",
+      "publisher": "Newman's Birds",
+      "year": 2026
+    }
+  ],
   "population": {
     "estimate": {
       "low": 128,
@@ -35,8 +72,171 @@
     },
     "tierApplied": "D"
   },
-  "variants": [],
-  "viewNotes": [],
-  "calls": [],
-  "images": []
+  "variants": [
+    {
+      "age": "adult",
+      "sex": "male",
+      "season": "any",
+      "marks": {
+        "bill": {
+          "colour": "red",
+          "shape": "Bright orange-red."
+        },
+        "eye": {
+          "iris": null,
+          "ring": null
+        },
+        "legs": {
+          "colour": "red"
+        },
+        "head": {
+          "crown": null,
+          "face": null,
+          "throat": null,
+          "pattern": null
+        },
+        "upperparts": {
+          "back": "grey",
+          "rump": null,
+          "pattern": "Grey above."
+        },
+        "underparts": {
+          "breast": null,
+          "belly": null,
+          "pattern": null
+        },
+        "wings": {
+          "above": null,
+          "below": null,
+          "pattern": null
+        },
+        "tail": {
+          "colour": null,
+          "shape": null
+        }
+      }
+    },
+    {
+      "age": "adult",
+      "sex": "female",
+      "season": "any",
+      "marks": {
+        "bill": {
+          "colour": "red",
+          "shape": "Bright orange-red."
+        },
+        "eye": {
+          "iris": null,
+          "ring": null
+        },
+        "legs": {
+          "colour": "red"
+        },
+        "head": {
+          "crown": null,
+          "face": null,
+          "throat": null,
+          "pattern": null
+        },
+        "upperparts": {
+          "back": "dark-brown",
+          "rump": null,
+          "pattern": "Dark brown above."
+        },
+        "underparts": {
+          "breast": null,
+          "belly": null,
+          "pattern": null
+        },
+        "wings": {
+          "above": null,
+          "below": null,
+          "pattern": null
+        },
+        "tail": {
+          "colour": null,
+          "shape": null
+        }
+      }
+    }
+  ],
+  "viewNotes": [
+    {
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "male",
+      "season": "any",
+      "note": "Grey above, with a bright orange-red bill. It swims low, body mostly submerged."
+    },
+    {
+      "view": "perched-front",
+      "age": "adult",
+      "sex": "male",
+      "season": "any",
+      "note": "The neck is stretched forward with each foot-stroke. The bill and legs are orange-red."
+    },
+    {
+      "view": "perched-back",
+      "age": "adult",
+      "sex": "male",
+      "season": "any",
+      "note": "Grey upper parts. The female is dark brown above."
+    },
+    {
+      "view": "flight-above",
+      "age": "adult",
+      "sex": "male",
+      "season": "any",
+      "note": "It seldom flies. When disturbed it flies low across the water and paddles, making a splash."
+    },
+    {
+      "view": "flight-below",
+      "age": "adult",
+      "sex": "male",
+      "season": "any",
+      "note": "The underparts were not described. Most of the body is submerged while swimming."
+    }
+  ],
+  "calls": [
+    {
+      "sex": "any",
+      "type": "call",
+      "description": "Newman says it has no characteristic call, but sometimes utters a harsh croak. No grade A recording was in the set. Grade B call from Bathurst. The filename is African Finfoot.mp3.",
+      "recordings": [
+        {
+          "key": "xeno-canto/XC642694",
+          "source": "https://xeno-canto.org/642694",
+          "fileUrl": "https://xeno-canto.org/sounds/uploaded/GQMCPIVNXX/XC642694-African%20Finfoot.mp3",
+          "author": "Tim Cockcroft",
+          "license": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ]
+    }
+  ],
+  "images": [
+    {
+      "key": "podica-senegalensis/side.jpg",
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "source": "https://www.inaturalist.org/observations/15312746",
+      "fileUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/22927014/large.jpg",
+      "author": "Andrew Deacon",
+      "license": "CC0 1.0",
+      "licenceUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "aiGenerated": false,
+      "hosted": false,
+      "alt": "African Finfoot swimming low at Malelane",
+      "caption": "African Finfoot at Jakkalsbessie, Malelane, swimming with most of the body submerged."
+    }
+  ],
+  "research": {
+    "confidence": "medium",
+    "needsReview": false,
+    "note": "Status is resident and all twelve months are listed. Newman calls it an uncommon resident. Population figures were left unchanged."
+  }
 }
