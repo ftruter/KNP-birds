@@ -7,8 +7,23 @@
     "af": "Jangroentjie"
   },
   "family": "nectariniidae",
-  "summary": "The details for this species have not been published yet.",
-  "sampleData": true,
+  "habitat": "Groups on fynbos-covered hillsides, including coastal suburbia, and on Karoo hills and montane foothills. The colour key says fynbos and eastern mountain foothills. The male calls from a high perch and is aggressive to other males.",
+  "summary": "A common resident. A large, all-green sunbird with a long tail. The breeding male is entirely iridescent green except for blue-black wings and tail. The non-breeding male is yellow below, variably speckled with green. The female is told by large size and a long bill. The call is chew-chew-chew, chi-chi-chi-chiew, chit-chit-chit, with a rapid warbling song. Newman gives no length. That description is printed on the Amethyst page. No Kemp estimate is stored.",
+  "sampleData": false,
+  "sources": [
+    {
+      "title": "Malachite Sunbird",
+      "url": "https://newmansbirds.com/birds/malachite-sunbird/",
+      "publisher": "Newman's Birds",
+      "year": 2026
+    },
+    {
+      "title": "Amethyst Sunbird",
+      "url": "https://newmansbirds.com/birds/amethyst-sunbird/",
+      "publisher": "Newman's Birds",
+      "year": 2026
+    }
+  ],
   "population": {
     "estimate": {
       "low": null,
@@ -21,8 +36,292 @@
     "notes": "No sourced Kruger estimate is currently available; taxonomy or later records require separate research.",
     "sources": []
   },
-  "variants": [],
-  "viewNotes": [],
-  "calls": [],
-  "images": []
+  "variants": [
+    {
+      "age": "adult",
+      "sex": "male",
+      "season": "breeding",
+      "marks": {
+        "bill": {
+          "colour": null,
+          "shape": null
+        },
+        "eye": {
+          "iris": null,
+          "ring": null
+        },
+        "legs": {
+          "colour": null
+        },
+        "head": {
+          "crown": null,
+          "face": null,
+          "throat": null,
+          "pattern": "Entirely iridescent green."
+        },
+        "upperparts": {
+          "back": "green",
+          "rump": null,
+          "pattern": "Entirely iridescent green. Long tail."
+        },
+        "underparts": {
+          "breast": "green",
+          "belly": "green",
+          "pattern": "Entirely iridescent green."
+        },
+        "wings": {
+          "above": null,
+          "below": null,
+          "pattern": "Blue-black wings."
+        },
+        "tail": {
+          "colour": "black",
+          "shape": "Long tail. Blue-black."
+        }
+      }
+    },
+    {
+      "age": "adult",
+      "sex": "male",
+      "season": "non-breeding",
+      "marks": {
+        "bill": {
+          "colour": null,
+          "shape": null
+        },
+        "eye": {
+          "iris": null,
+          "ring": null
+        },
+        "legs": {
+          "colour": null
+        },
+        "head": {
+          "crown": null,
+          "face": null,
+          "throat": null
+        },
+        "upperparts": {
+          "back": null,
+          "rump": null
+        },
+        "underparts": {
+          "breast": null,
+          "belly": "yellow",
+          "pattern": "Yellow below, variably speckled with green feathers."
+        },
+        "wings": {
+          "above": null,
+          "below": null
+        },
+        "tail": {
+          "colour": null,
+          "shape": null
+        }
+      }
+    },
+    {
+      "age": "adult",
+      "sex": "female",
+      "season": "any",
+      "marks": {
+        "bill": {
+          "colour": null,
+          "shape": "Large, with a long bill."
+        },
+        "eye": {
+          "iris": null,
+          "ring": null
+        },
+        "legs": {
+          "colour": null
+        },
+        "head": {
+          "crown": null,
+          "face": null,
+          "throat": null
+        },
+        "upperparts": {
+          "back": null,
+          "rump": null
+        },
+        "underparts": {
+          "breast": null,
+          "belly": null
+        },
+        "wings": {
+          "above": null,
+          "below": null
+        },
+        "tail": {
+          "colour": null,
+          "shape": null
+        }
+      }
+    }
+  ],
+  "viewNotes": [
+    {
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "male",
+      "season": "breeding",
+      "note": "Large, entirely iridescent green, with blue-black wings and a long blue-black tail."
+    },
+    {
+      "view": "perched-front",
+      "age": "adult",
+      "sex": "male",
+      "season": "breeding",
+      "note": "Green head and underparts."
+    },
+    {
+      "view": "perched-back",
+      "age": "adult",
+      "sex": "male",
+      "season": "breeding",
+      "note": "Green upperparts and a long tail."
+    },
+    {
+      "view": "flight-above",
+      "age": "adult",
+      "sex": "male",
+      "season": "breeding",
+      "note": "Blue-black wings."
+    },
+    {
+      "view": "flight-below",
+      "age": "adult",
+      "sex": "male",
+      "season": "breeding",
+      "note": "Green underparts."
+    },
+    {
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "male",
+      "season": "non-breeding",
+      "note": "Yellow below, speckled with green."
+    },
+    {
+      "view": "perched-front",
+      "age": "adult",
+      "sex": "male",
+      "season": "non-breeding",
+      "note": "Yellow underparts. The face was not described separately."
+    },
+    {
+      "view": "perched-back",
+      "age": "adult",
+      "sex": "male",
+      "season": "non-breeding",
+      "note": "Green speckling. A full upperpart colour was not given for this plumage."
+    },
+    {
+      "view": "flight-above",
+      "age": "adult",
+      "sex": "male",
+      "season": "non-breeding",
+      "note": "A non-breeding flight pattern was not described."
+    },
+    {
+      "view": "flight-below",
+      "age": "adult",
+      "sex": "male",
+      "season": "non-breeding",
+      "note": "Yellow underparts, variably speckled green."
+    },
+    {
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "female",
+      "season": "any",
+      "note": "Large, with a long bill. Other female colours were not named."
+    },
+    {
+      "view": "perched-front",
+      "age": "adult",
+      "sex": "female",
+      "season": "any",
+      "note": "The female face was not described."
+    },
+    {
+      "view": "perched-back",
+      "age": "adult",
+      "sex": "female",
+      "season": "any",
+      "note": "The female upperparts were not described."
+    },
+    {
+      "view": "flight-above",
+      "age": "adult",
+      "sex": "female",
+      "season": "any",
+      "note": "A female flight pattern was not described."
+    },
+    {
+      "view": "flight-below",
+      "age": "adult",
+      "sex": "female",
+      "season": "any",
+      "note": "The female underparts were not described."
+    }
+  ],
+  "calls": [
+    {
+      "sex": "any",
+      "type": "call",
+      "description": "chew-chew-chew, chi-chi-chi-chiew, chit-chit-chit, with variations in speed and sequence, and a rapid warbling song. This text is on the Amethyst page. Grade A call from Port Alfred. The filename is XC342018-Malachite Sunbird.xc.mp3.",
+      "recordings": [
+        {
+          "key": "xeno-canto/XC342018",
+          "source": "https://xeno-canto.org/342018",
+          "fileUrl": "https://xeno-canto.org/sounds/uploaded/GQMCPIVNXX/XC342018-Malachite%20Sunbird.xc.mp3",
+          "author": "Tim Cockcroft",
+          "license": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ]
+    }
+  ],
+  "images": [
+    {
+      "key": "nectarinia-famosa/side.jpg",
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "male",
+      "season": "non-breeding",
+      "source": "https://www.inaturalist.org/observations/413733052",
+      "fileUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/761529562/large.jpg",
+      "author": "Vaughan Jessnitz",
+      "license": "CC BY-NC 4.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+      "aiGenerated": false,
+      "hosted": false,
+      "alt": "Malachite Sunbird in a tree, yellow below and brownish above",
+      "caption": "Malachite Sunbird in Kruger Park, distant, yellow below. Newman says the non-breeding male is yellow below and speckled with green."
+    }
+  ],
+  "research": {
+    "confidence": "medium",
+    "needsReview": true,
+    "note": "The colour key is on the Malachite page and gives no length. The plumage and voice are printed on the Amethyst page and match the all-green sunbird, which is why this needs review. No Kemp block was present, and the empty population estimate was left unchanged."
+  },
+  "status": "resident",
+  "monthsPresent": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+  ]
 }

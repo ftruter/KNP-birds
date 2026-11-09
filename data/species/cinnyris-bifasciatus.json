@@ -7,8 +7,29 @@
     "af": "Purperbandsuikerbekkie"
   },
   "family": "nectariniidae",
-  "summary": "The details for this species have not been published yet.",
-  "sampleData": true,
+  "habitat": "Coastal bush and the edges of lowland evergreen forest. Further inland it is a bird of evergreen riparian growth, and it visits well-vegetated gardens.",
+  "summary": "No Newman page. SABAP1 says it is similar to Marico Sunbird and that the two do not overlap widely. The male has an eclipse plumage, mainly December to May. Reporting drops from late summer to early winter, and Zimbabwe birds leave the plateau from December and return in May. No plumage colours, length or call are given. The Kemp code VB was left unchanged.",
+  "sampleData": false,
+  "sources": [
+    {
+      "title": "Purplebanded Sunbird. In Harrison, J.A. et al. (eds). The Atlas of Southern African Birds. Vol. 2.",
+      "url": "http://sabap2.adu.org.za/docs/sabap1/780.pdf",
+      "publisher": "The Atlas of Southern African Birds",
+      "year": 1997
+    },
+    {
+      "title": "Purple-banded sunbird",
+      "url": "https://en.wikipedia.org/wiki/Purple-banded_sunbird",
+      "publisher": "Wikipedia",
+      "year": 2026
+    },
+    {
+      "title": "Kemp A.C., Herholdt J.J., Whyte I. & Harrison J. (2001). Birds of the two largest national parks in South Africa: a method to generate estimates of population size for all species and assess their conservation ecology. S. Afr. J. Sci. 97: 393–403.",
+      "url": "https://journals.co.za/doi/pdf/10.10520/EJC97367",
+      "publisher": "South African Journal of Science",
+      "year": 2001
+    }
+  ],
   "population": {
     "estimate": {
       "low": 8,
@@ -37,6 +58,52 @@
   },
   "variants": [],
   "viewNotes": [],
-  "calls": [],
-  "images": []
+  "calls": [
+    {
+      "sex": "any",
+      "type": "call",
+      "description": "SABAP1 does not describe the call. Grade A call from the Oloololo Escarpment, Maasai Mara, Kenya. The filename is XC345213-Purple-banded Sunbird_call2_Oloololo_1Nov2016_0820_J.Bradley.mp3.",
+      "recordings": [
+        {
+          "key": "xeno-canto/XC345213",
+          "source": "https://xeno-canto.org/345213",
+          "fileUrl": "https://xeno-canto.org/sounds/uploaded/ITRQTFVLNT/XC345213-Purple-banded%20Sunbird_call2_Oloololo_1Nov2016_0820_J.Bradley.mp3",
+          "author": "James Bradley",
+          "license": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ]
+    }
+  ],
+  "images": [
+    {
+      "key": "cinnyris-bifasciatus/side.jpg",
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "male",
+      "season": "any",
+      "source": "https://www.inaturalist.org/observations/203074679",
+      "fileUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/358746644/large.jpg",
+      "author": "Duncan McKenzie",
+      "license": "CC BY-NC 4.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+      "aiGenerated": false,
+      "hosted": false,
+      "alt": "Purple-banded Sunbird perched, green head, purple breast and black belly",
+      "caption": "Purple-banded Sunbird in the Ehlanzeni district, green on the head, with a purple breast and a black belly. SABAP1 does not describe these colours."
+    }
+  ],
+  "research": {
+    "confidence": "low",
+    "needsReview": true,
+    "note": "No Newman page. SABAP1 describes seasonal movement and an eclipse plumage but not the months in Kruger, so status and monthsPresent are unset. Population figures and the Kemp code VB were left unchanged."
+  },
+  "similar": [
+    {
+      "slug": "cinnyris-mariquensis",
+      "note": "SABAP1 says Purple-banded Sunbird is similar to Marico Sunbird, and that the two do not overlap widely in the region."
+    }
+  ]
 }
