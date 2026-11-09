@@ -3096,6 +3096,16 @@
           }
         }
       ]
+    },
+    "turdoides-jardineii": {
+      "calls": [
+        {
+          "index": 0,
+          "quality": {
+            "xeno-canto/XC368185": "A"
+          }
+        }
+      ]
     }
   }
 }

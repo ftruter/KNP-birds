@@ -7,8 +7,36 @@
     "af": "Pylvlekkatlagter"
   },
   "family": "leiothrichidae",
-  "summary": "The details for this species have not been published yet.",
-  "sampleData": true,
+  "size": {
+    "lengthCm": {
+      "min": 23,
+      "max": 25
+    },
+    "note": "Newman's Birds gives 23–25 cm."
+  },
+  "habitat": "Parties of six to ten in thickets in woodland, mixed bushveld and wooded hillsides, usually in the lower stratum. Newman also notes suburbia in Zimbabwe.",
+  "summary": "A common resident. Dark brown above, with a grey-brown breast, a tawny belly, and whitish arrow-like streaks above and below. The eyes are orange with red eye-rings, and the bill and legs are black. The immature lacks the arrow marks and is usually seen with adults. The call is an excitable whirring, scurr-scurr-scurr, taken up by the whole party until it resembles hysterical giggling. The Kemp code RB was left unchanged.",
+  "sampleData": false,
+  "similar": [
+    {
+      "slug": "phoeniculus-purpureus",
+      "note": "Green Wood Hoopoe has a more musical chatter. The babbler's scurr-scurr-scurr is more mechanical."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Arrow-marked Babbler",
+      "url": "https://newmansbirds.com/birds/arrow-marked-babbler/",
+      "publisher": "Newman's Birds",
+      "year": 2026
+    },
+    {
+      "title": "Kemp A.C., Herholdt J.J., Whyte I. & Harrison J. (2001). Birds of the two largest national parks in South Africa: a method to generate estimates of population size for all species and assess their conservation ecology. S. Afr. J. Sci. 97: 393–403.",
+      "url": "https://journals.co.za/doi/pdf/10.10520/EJC97367",
+      "publisher": "South African Journal of Science",
+      "year": 2001
+    }
+  ],
   "population": {
     "estimate": {
       "low": 32768,
@@ -35,8 +63,217 @@
     },
     "tierApplied": "D"
   },
-  "variants": [],
-  "viewNotes": [],
-  "calls": [],
-  "images": []
+  "variants": [
+    {
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "marks": {
+        "bill": {
+          "colour": "black",
+          "shape": null
+        },
+        "eye": {
+          "iris": "orange",
+          "ring": "red"
+        },
+        "legs": {
+          "colour": "black"
+        },
+        "head": {
+          "crown": null,
+          "face": null,
+          "throat": null,
+          "pattern": "Whitish arrow-like streaks. Separate crown, face and throat colours were not named."
+        },
+        "upperparts": {
+          "back": "dark-brown",
+          "rump": null,
+          "pattern": "Dark brown above, with whitish arrow-like streaks."
+        },
+        "underparts": {
+          "breast": null,
+          "belly": "tawny",
+          "pattern": "Grey-brown breast and a tawny belly, with whitish arrow-like streaks. Grey-brown is not a single colour token, so the breast colour is left blank."
+        },
+        "wings": {
+          "above": null,
+          "below": null
+        },
+        "tail": {
+          "colour": null,
+          "shape": null
+        }
+      }
+    },
+    {
+      "age": "immature",
+      "sex": "any",
+      "season": "any",
+      "marks": {
+        "bill": {
+          "colour": null,
+          "shape": null
+        },
+        "eye": {
+          "iris": null,
+          "ring": null
+        },
+        "legs": {
+          "colour": null
+        },
+        "head": {
+          "crown": null,
+          "face": null,
+          "throat": null,
+          "pattern": "Lacks the arrow marks. Usually seen with adults. Other immature colours were not described."
+        },
+        "upperparts": {
+          "back": null,
+          "rump": null
+        },
+        "underparts": {
+          "breast": null,
+          "belly": null
+        },
+        "wings": {
+          "above": null,
+          "below": null
+        },
+        "tail": {
+          "colour": null,
+          "shape": null
+        }
+      }
+    }
+  ],
+  "viewNotes": [
+    {
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Dark brown above, grey-brown breast, tawny belly, and whitish arrow-like streaks. Orange eye with a red eye-ring, black bill and black legs."
+    },
+    {
+      "view": "perched-front",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Arrow-like streaks on the breast. The breast is described as grey-brown."
+    },
+    {
+      "view": "perched-back",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Dark brown upperparts with whitish arrow-like streaks."
+    },
+    {
+      "view": "flight-above",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "A flight pattern was not described."
+    },
+    {
+      "view": "flight-below",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Tawny belly and a grey-brown breast, with arrow-like streaks."
+    },
+    {
+      "view": "perched-side",
+      "age": "immature",
+      "sex": "any",
+      "season": "any",
+      "note": "No arrow marks. Newman says it is usually seen with adults and does not describe the rest of the immature."
+    },
+    {
+      "view": "perched-front",
+      "age": "immature",
+      "sex": "any",
+      "season": "any",
+      "note": "The immature face was not described beyond the lack of arrow marks."
+    },
+    {
+      "view": "perched-back",
+      "age": "immature",
+      "sex": "any",
+      "season": "any",
+      "note": "The immature back was not described beyond the lack of arrow marks."
+    },
+    {
+      "view": "flight-above",
+      "age": "immature",
+      "sex": "any",
+      "season": "any",
+      "note": "An immature flight pattern was not described."
+    },
+    {
+      "view": "flight-below",
+      "age": "immature",
+      "sex": "any",
+      "season": "any",
+      "note": "The immature underparts were not described beyond the lack of arrow marks."
+    }
+  ],
+  "calls": [
+    {
+      "sex": "any",
+      "type": "call",
+      "description": "An excitable whirring, started by one bird and taken up by the party until it resembles hysterical giggling. The basic sound is scurr-scurr-scurr, more mechanical than a Green Wood Hoopoe. Grade A call from Tzendse Camp in the Kruger Park, Mopani, Limpopo. The filename is XC368185-170403_Arrow-markedBabbler_TzendseCamp_OC.mp3.",
+      "recordings": [
+        {
+          "key": "xeno-canto/XC368185",
+          "source": "https://xeno-canto.org/368185",
+          "fileUrl": "https://xeno-canto.org/sounds/uploaded/RFRTVEHIZX/XC368185-170403_Arrow-markedBabbler_TzendseCamp_OC.mp3",
+          "author": "Oscar Campbell",
+          "license": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ]
+    }
+  ],
+  "images": [
+    {
+      "key": "turdoides-jardineii/side.jpg",
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "source": "https://www.inaturalist.org/observations/326236710",
+      "fileUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/590802636/large.jpg",
+      "author": "Fred Derks",
+      "license": "CC BY 4.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by/4.0/",
+      "aiGenerated": false,
+      "hosted": false,
+      "alt": "Arrow-marked Babbler partly behind a wall, streaked breast and orange eye",
+      "caption": "Arrow-marked Babbler in the Ehlanzeni district, with whitish arrow-like streaks, an orange eye and a dark bill. Part of the bird is hidden by a wall."
+    }
+  ],
+  "research": {
+    "confidence": "medium",
+    "needsReview": false,
+    "note": "Status is resident and all twelve months are listed. Newman calls it a common resident. Hartlaub’s Babbler is the plumage comparison Newman names and is not in this list. The breast is described as grey-brown, which is not a colour token, so that colour is left blank. Population figures and the Kemp code RB were left unchanged."
+  },
+  "status": "resident",
+  "monthsPresent": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+  ]
 }
