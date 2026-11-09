@@ -460,19 +460,9 @@
       "calls": [
         {
           "index": 0,
-          "recordings": [
-            {
-              "key": "xeno-canto/XC1149598",
-              "source": "https://xeno-canto.org/1149598",
-              "author": "African Bioacoustics Community",
-              "license": "CC BY-NC-SA 4.0",
-              "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
-              "aiGenerated": false,
-              "fileUrl": "https://xeno-canto.org/sounds/uploaded/YSGTQVRQZI/XC1149598-20260520_KNP_AKaramitsos_XA60_A028C013_2605207D_SLE_-3dB_Hornbill.mp3",
-              "hosted": false,
-              "quality": "A"
-            }
-          ]
+          "quality": {
+            "xeno-canto/XC1149598": "A"
+          }
         }
       ]
     },

@@ -315,7 +315,8 @@ test('markdown and json-facing copy keep the population label', async () => {
   assert.match(markdown, /Kemp et al\. 2001/)
   assert.match(markdown, /No visible difference/)
   assert.match(markdown, /red \(#B4232C\)/)
-  assert.match(markdown, /Sample content, to be verified/)
+  assert.match(markdown, /oomph/)
+  assert.doesNotMatch(markdown, /Sample content, to be verified/)
 })
 
 test('a species stub states that details are unpublished and skips empty sections', async () => {
