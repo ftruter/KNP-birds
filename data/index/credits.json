@@ -3301,14 +3301,42 @@
       "slug": "burhinus-capensis",
       "scientificName": "Burhinus capensis",
       "commonName": "Spotted Thick-knee",
-      "images": [],
-      "recordings": [],
+      "images": [
+        {
+          "key": "burhinus-capensis/side.jpg",
+          "author": "Benoît Segerer",
+          "licence": "CC BY-NC 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+          "sourceUrl": "https://www.inaturalist.org/observations/75299459",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ],
+      "recordings": [
+        {
+          "key": "xeno-canto/XC503000",
+          "author": "Dawie de Swardt",
+          "licence": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "sourceUrl": "https://xeno-canto.org/503000",
+          "aiGenerated": false,
+          "hosted": false,
+          "quality": "A",
+          "callType": "call"
+        }
+      ],
       "sources": [
         {
           "title": "Kemp A.C., Herholdt J.J., Whyte I. & Harrison J. (2001). Birds of the two largest national parks in South Africa: a method to generate estimates of population size for all species and assess their conservation ecology. S. Afr. J. Sci. 97: 393–403.",
           "url": "https://journals.co.za/doi/pdf/10.10520/EJC97367",
           "publisher": "South African Journal of Science",
           "year": 2001
+        },
+        {
+          "title": "Spotted Thick-knee",
+          "url": "https://newmansbirds.com/birds/spotted-thick-knee/",
+          "publisher": "Newman's Birds",
+          "year": 2026
         }
       ]
     },
@@ -3316,14 +3344,42 @@
       "slug": "burhinus-vermiculatus",
       "scientificName": "Burhinus vermiculatus",
       "commonName": "Water Thick-knee",
-      "images": [],
-      "recordings": [],
+      "images": [
+        {
+          "key": "burhinus-vermiculatus/side.jpg",
+          "author": "copper",
+          "licence": "CC BY-NC 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+          "sourceUrl": "https://www.inaturalist.org/observations/10134373",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ],
+      "recordings": [
+        {
+          "key": "xeno-canto/XC1014581",
+          "author": "Morgyn Hynes",
+          "licence": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "sourceUrl": "https://xeno-canto.org/1014581",
+          "aiGenerated": false,
+          "hosted": false,
+          "quality": "A",
+          "callType": "call"
+        }
+      ],
       "sources": [
         {
           "title": "Kemp A.C., Herholdt J.J., Whyte I. & Harrison J. (2001). Birds of the two largest national parks in South Africa: a method to generate estimates of population size for all species and assess their conservation ecology. S. Afr. J. Sci. 97: 393–403.",
           "url": "https://journals.co.za/doi/pdf/10.10520/EJC97367",
           "publisher": "South African Journal of Science",
           "year": 2001
+        },
+        {
+          "title": "Water Thick-knee",
+          "url": "https://newmansbirds.com/birds/water-thick-knee/",
+          "publisher": "Newman's Birds",
+          "year": 2026
         }
       ]
     },

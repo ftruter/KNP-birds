@@ -486,6 +486,26 @@
         }
       ]
     },
+    "burhinus-capensis": {
+      "calls": [
+        {
+          "index": 0,
+          "quality": {
+            "xeno-canto/XC503000": "A"
+          }
+        }
+      ]
+    },
+    "burhinus-vermiculatus": {
+      "calls": [
+        {
+          "index": 0,
+          "quality": {
+            "xeno-canto/XC1014581": "A"
+          }
+        }
+      ]
+    },
     "buteo-buteo": {
       "calls": [
         {

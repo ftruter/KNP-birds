@@ -1,9 +1,9 @@
 {
   "source": "xeno-canto explore catalogue, API v3 recording fields",
   "counts": {
-    "slots": 147,
+    "slots": 149,
     "swapped": 17,
-    "added": 51,
+    "added": 53,
     "kept": 57,
     "none": 22,
     "cleaned": 0
@@ -2417,6 +2417,34 @@
       "quality": "A",
       "country": "South Africa",
       "locality": "Kruger NP",
+      "cleaned": false,
+      "license": "CC BY-NC-SA 4.0"
+    },
+    {
+      "slug": "burhinus-capensis",
+      "scientificName": "Burhinus capensis",
+      "index": 0,
+      "type": "call",
+      "action": "added",
+      "from": [],
+      "to": "503000",
+      "quality": "A",
+      "country": "South Africa",
+      "locality": "Fleurdal suburb garden, Bloemfontein, Free State",
+      "cleaned": false,
+      "license": "CC BY-NC-SA 4.0"
+    },
+    {
+      "slug": "burhinus-vermiculatus",
+      "scientificName": "Burhinus vermiculatus",
+      "index": 0,
+      "type": "call",
+      "action": "added",
+      "from": [],
+      "to": "1014581",
+      "quality": "A",
+      "country": "South Africa",
+      "locality": "Kruger Park (near Skukuza), Ehlanzeni District Municipality, Mpumalanga",
       "cleaned": false,
       "license": "CC BY-NC-SA 4.0"
     }
