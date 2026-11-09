@@ -5691,13 +5691,31 @@
       "scientificName": "Chlorophoneus nigrifrons",
       "commonName": "Black-fronted Bush-shrike",
       "images": [],
-      "recordings": [],
+      "recordings": [
+        {
+          "key": "xeno-canto/XC703355",
+          "author": "isaac kilusu",
+          "licence": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "sourceUrl": "https://xeno-canto.org/703355",
+          "aiGenerated": false,
+          "hosted": false,
+          "quality": "A",
+          "callType": "call"
+        }
+      ],
       "sources": [
         {
           "title": "Kemp A.C., Herholdt J.J., Whyte I. & Harrison J. (2001). Birds of the two largest national parks in South Africa: a method to generate estimates of population size for all species and assess their conservation ecology. S. Afr. J. Sci. 97: 393–403.",
           "url": "https://journals.co.za/doi/pdf/10.10520/EJC97367",
           "publisher": "South African Journal of Science",
           "year": 2001
+        },
+        {
+          "title": "Black-fronted Bush-shrike",
+          "url": "https://newmansbirds.com/birds/black-fronted-bushshrike/",
+          "publisher": "Newman's Birds",
+          "year": 2026
         }
       ]
     },
@@ -5705,14 +5723,42 @@
       "slug": "chlorophoneus-olivaceus",
       "scientificName": "Chlorophoneus olivaceus",
       "commonName": "Olive Bush-Shrike",
-      "images": [],
-      "recordings": [],
+      "images": [
+        {
+          "key": "chlorophoneus-olivaceus/side.jpg",
+          "author": "brewmaster",
+          "licence": "CC BY-NC 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+          "sourceUrl": "https://www.inaturalist.org/observations/258896365",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ],
+      "recordings": [
+        {
+          "key": "xeno-canto/XC252390",
+          "author": "Lynette Rudman",
+          "licence": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "sourceUrl": "https://xeno-canto.org/252390",
+          "aiGenerated": false,
+          "hosted": false,
+          "quality": "A",
+          "callType": "call"
+        }
+      ],
       "sources": [
         {
           "title": "Kemp A.C., Herholdt J.J., Whyte I. & Harrison J. (2001). Birds of the two largest national parks in South Africa: a method to generate estimates of population size for all species and assess their conservation ecology. S. Afr. J. Sci. 97: 393–403.",
           "url": "https://journals.co.za/doi/pdf/10.10520/EJC97367",
           "publisher": "South African Journal of Science",
           "year": 2001
+        },
+        {
+          "title": "Olive Bush-Shrike",
+          "url": "https://newmansbirds.com/birds/olive-bushshrike/",
+          "publisher": "Newman's Birds",
+          "year": 2026
         }
       ]
     },
@@ -5720,14 +5766,42 @@
       "slug": "chlorophoneus-sulfureopectus",
       "scientificName": "Chlorophoneus sulfureopectus",
       "commonName": "Orange-breasted Bush-Shrike",
-      "images": [],
-      "recordings": [],
+      "images": [
+        {
+          "key": "chlorophoneus-sulfureopectus/side.jpg",
+          "author": "Andrew Campbell",
+          "licence": "CC BY 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by/4.0/",
+          "sourceUrl": "https://www.inaturalist.org/observations/115487708",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ],
+      "recordings": [
+        {
+          "key": "xeno-canto/XC323343",
+          "author": "Faansie Peacock",
+          "licence": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "sourceUrl": "https://xeno-canto.org/323343",
+          "aiGenerated": false,
+          "hosted": false,
+          "quality": "A",
+          "callType": "call"
+        }
+      ],
       "sources": [
         {
           "title": "Kemp A.C., Herholdt J.J., Whyte I. & Harrison J. (2001). Birds of the two largest national parks in South Africa: a method to generate estimates of population size for all species and assess their conservation ecology. S. Afr. J. Sci. 97: 393–403.",
           "url": "https://journals.co.za/doi/pdf/10.10520/EJC97367",
           "publisher": "South African Journal of Science",
           "year": 2001
+        },
+        {
+          "title": "Orange-breasted Bush-Shrike",
+          "url": "https://newmansbirds.com/birds/orange-breasted-bushshrike/",
+          "publisher": "Newman's Birds",
+          "year": 2026
         }
       ]
     },
@@ -9100,14 +9174,42 @@
       "slug": "dryoscopus-cubla",
       "scientificName": "Dryoscopus cubla",
       "commonName": "Black-backed Puffback",
-      "images": [],
-      "recordings": [],
+      "images": [
+        {
+          "key": "dryoscopus-cubla/side.jpg",
+          "author": "Daniel Correia",
+          "licence": "CC BY-NC 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+          "sourceUrl": "https://www.inaturalist.org/observations/181109329",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ],
+      "recordings": [
+        {
+          "key": "xeno-canto/XC368159",
+          "author": "Oscar Campbell",
+          "licence": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "sourceUrl": "https://xeno-canto.org/368159",
+          "aiGenerated": false,
+          "hosted": false,
+          "quality": "A",
+          "callType": "call"
+        }
+      ],
       "sources": [
         {
           "title": "Kemp A.C., Herholdt J.J., Whyte I. & Harrison J. (2001). Birds of the two largest national parks in South Africa: a method to generate estimates of population size for all species and assess their conservation ecology. S. Afr. J. Sci. 97: 393–403.",
           "url": "https://journals.co.za/doi/pdf/10.10520/EJC97367",
           "publisher": "South African Journal of Science",
           "year": 2001
+        },
+        {
+          "title": "Black-backed Puffback",
+          "url": "https://newmansbirds.com/birds/black-backed-puffback/",
+          "publisher": "Newman's Birds",
+          "year": 2026
         }
       ]
     },
@@ -12913,14 +13015,42 @@
       "slug": "laniarius-atrococcineus",
       "scientificName": "Laniarius atrococcineus",
       "commonName": "Crimson-breasted Shrike",
-      "images": [],
-      "recordings": [],
+      "images": [
+        {
+          "key": "laniarius-atrococcineus/side.jpg",
+          "author": "rosshawkins",
+          "licence": "CC0 1.0",
+          "licenceUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+          "sourceUrl": "https://www.inaturalist.org/observations/237142020",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ],
+      "recordings": [
+        {
+          "key": "xeno-canto/XC204670",
+          "author": "Niall Perrins",
+          "licence": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "sourceUrl": "https://xeno-canto.org/204670",
+          "aiGenerated": false,
+          "hosted": false,
+          "quality": "A",
+          "callType": "call"
+        }
+      ],
       "sources": [
         {
           "title": "Kemp A.C., Herholdt J.J., Whyte I. & Harrison J. (2001). Birds of the two largest national parks in South Africa: a method to generate estimates of population size for all species and assess their conservation ecology. S. Afr. J. Sci. 97: 393–403.",
           "url": "https://journals.co.za/doi/pdf/10.10520/EJC97367",
           "publisher": "South African Journal of Science",
           "year": 2001
+        },
+        {
+          "title": "Crimson-breasted Shrike",
+          "url": "https://newmansbirds.com/birds/crimson-breasted-shrike/",
+          "publisher": "Newman's Birds",
+          "year": 2026
         }
       ]
     },
@@ -12928,14 +13058,42 @@
       "slug": "laniarius-ferrugineus",
       "scientificName": "Laniarius ferrugineus",
       "commonName": "Southern Boubou",
-      "images": [],
-      "recordings": [],
+      "images": [
+        {
+          "key": "laniarius-ferrugineus/side.jpg",
+          "author": "Benoît Segerer",
+          "licence": "CC BY-NC 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+          "sourceUrl": "https://www.inaturalist.org/observations/74925093",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ],
+      "recordings": [
+        {
+          "key": "xeno-canto/XC331290",
+          "author": "Andre Marais",
+          "licence": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "sourceUrl": "https://xeno-canto.org/331290",
+          "aiGenerated": false,
+          "hosted": false,
+          "quality": "A",
+          "callType": "call"
+        }
+      ],
       "sources": [
         {
           "title": "Kemp A.C., Herholdt J.J., Whyte I. & Harrison J. (2001). Birds of the two largest national parks in South Africa: a method to generate estimates of population size for all species and assess their conservation ecology. S. Afr. J. Sci. 97: 393–403.",
           "url": "https://journals.co.za/doi/pdf/10.10520/EJC97367",
           "publisher": "South African Journal of Science",
           "year": 2001
+        },
+        {
+          "title": "Southern Boubou",
+          "url": "https://newmansbirds.com/birds/southern-boubou/",
+          "publisher": "Newman's Birds",
+          "year": 2026
         }
       ]
     },
@@ -12943,14 +13101,42 @@
       "slug": "laniarius-major",
       "scientificName": "Laniarius major",
       "commonName": "Tropical Boubou",
-      "images": [],
-      "recordings": [],
+      "images": [
+        {
+          "key": "laniarius-major/side.jpg",
+          "author": "Justin Ponder",
+          "licence": "CC BY 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by/4.0/",
+          "sourceUrl": "https://www.inaturalist.org/observations/104766552",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ],
+      "recordings": [
+        {
+          "key": "xeno-canto/XC259660",
+          "author": "SawaSawa",
+          "licence": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "sourceUrl": "https://xeno-canto.org/259660",
+          "aiGenerated": false,
+          "hosted": false,
+          "quality": "A",
+          "callType": "call"
+        }
+      ],
       "sources": [
         {
           "title": "Kemp A.C., Herholdt J.J., Whyte I. & Harrison J. (2001). Birds of the two largest national parks in South Africa: a method to generate estimates of population size for all species and assess their conservation ecology. S. Afr. J. Sci. 97: 393–403.",
           "url": "https://journals.co.za/doi/pdf/10.10520/EJC97367",
           "publisher": "South African Journal of Science",
           "year": 2001
+        },
+        {
+          "title": "Tropical Boubou",
+          "url": "https://newmansbirds.com/birds/tropical-boubou/",
+          "publisher": "Newman's Birds",
+          "year": 2026
         }
       ]
     },
@@ -13446,14 +13632,42 @@
       "slug": "malaconotus-blanchoti",
       "scientificName": "Malaconotus blanchoti",
       "commonName": "Grey-headed Bush-Shrike",
-      "images": [],
-      "recordings": [],
+      "images": [
+        {
+          "key": "malaconotus-blanchoti/side.jpg",
+          "author": "Andrew Deacon",
+          "licence": "CC0 1.0",
+          "licenceUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+          "sourceUrl": "https://www.inaturalist.org/observations/168442553",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ],
+      "recordings": [
+        {
+          "key": "xeno-canto/XC382958",
+          "author": "Faansie Peacock",
+          "licence": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "sourceUrl": "https://xeno-canto.org/382958",
+          "aiGenerated": false,
+          "hosted": false,
+          "quality": "A",
+          "callType": "call"
+        }
+      ],
       "sources": [
         {
           "title": "Kemp A.C., Herholdt J.J., Whyte I. & Harrison J. (2001). Birds of the two largest national parks in South Africa: a method to generate estimates of population size for all species and assess their conservation ecology. S. Afr. J. Sci. 97: 393–403.",
           "url": "https://journals.co.za/doi/pdf/10.10520/EJC97367",
           "publisher": "South African Journal of Science",
           "year": 2001
+        },
+        {
+          "title": "Grey-headed Bush-Shrike",
+          "url": "https://newmansbirds.com/birds/grey-headed-bushshrike/",
+          "publisher": "Newman's Birds",
+          "year": 2026
         }
       ]
     },
@@ -14591,14 +14805,42 @@
       "slug": "nilaus-afer",
       "scientificName": "Nilaus afer",
       "commonName": "Brubru",
-      "images": [],
-      "recordings": [],
+      "images": [
+        {
+          "key": "nilaus-afer/side.jpg",
+          "author": "jderasmus",
+          "licence": "CC BY-NC 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+          "sourceUrl": "https://www.inaturalist.org/observations/182182306",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ],
+      "recordings": [
+        {
+          "key": "xeno-canto/XC441144",
+          "author": "Tony Archer",
+          "licence": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "sourceUrl": "https://xeno-canto.org/441144",
+          "aiGenerated": false,
+          "hosted": false,
+          "quality": "A",
+          "callType": "call"
+        }
+      ],
       "sources": [
         {
           "title": "Kemp A.C., Herholdt J.J., Whyte I. & Harrison J. (2001). Birds of the two largest national parks in South Africa: a method to generate estimates of population size for all species and assess their conservation ecology. S. Afr. J. Sci. 97: 393–403.",
           "url": "https://journals.co.za/doi/pdf/10.10520/EJC97367",
           "publisher": "South African Journal of Science",
           "year": 2001
+        },
+        {
+          "title": "Brubru",
+          "url": "https://newmansbirds.com/birds/brubru/",
+          "publisher": "Newman's Birds",
+          "year": 2026
         }
       ]
     },
@@ -17640,14 +17882,42 @@
       "slug": "tchagra-australis",
       "scientificName": "Tchagra australis",
       "commonName": "Brown-crowned Tchagra",
-      "images": [],
-      "recordings": [],
+      "images": [
+        {
+          "key": "tchagra-australis/side.jpg",
+          "author": "Niall Perrins",
+          "licence": "CC BY-NC 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+          "sourceUrl": "https://www.inaturalist.org/observations/95661704",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ],
+      "recordings": [
+        {
+          "key": "xeno-canto/XC446215",
+          "author": "Toby Esplin",
+          "licence": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "sourceUrl": "https://xeno-canto.org/446215",
+          "aiGenerated": false,
+          "hosted": false,
+          "quality": "A",
+          "callType": "call"
+        }
+      ],
       "sources": [
         {
           "title": "Kemp A.C., Herholdt J.J., Whyte I. & Harrison J. (2001). Birds of the two largest national parks in South Africa: a method to generate estimates of population size for all species and assess their conservation ecology. S. Afr. J. Sci. 97: 393–403.",
           "url": "https://journals.co.za/doi/pdf/10.10520/EJC97367",
           "publisher": "South African Journal of Science",
           "year": 2001
+        },
+        {
+          "title": "Brown-crowned Tchagra",
+          "url": "https://newmansbirds.com/birds/brown-crowned-tchagra/",
+          "publisher": "Newman's Birds",
+          "year": 2026
         }
       ]
     },
@@ -17655,14 +17925,42 @@
       "slug": "tchagra-senegalus",
       "scientificName": "Tchagra senegalus",
       "commonName": "Black-crowned Tchagra",
-      "images": [],
-      "recordings": [],
+      "images": [
+        {
+          "key": "tchagra-senegalus/side.jpg",
+          "author": "maritzasouthafrica",
+          "licence": "CC BY-NC 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+          "sourceUrl": "https://www.inaturalist.org/observations/108367283",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ],
+      "recordings": [
+        {
+          "key": "xeno-canto/XC268619",
+          "author": "Andrew Spencer",
+          "licence": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "sourceUrl": "https://xeno-canto.org/268619",
+          "aiGenerated": false,
+          "hosted": false,
+          "quality": "A",
+          "callType": "call"
+        }
+      ],
       "sources": [
         {
           "title": "Kemp A.C., Herholdt J.J., Whyte I. & Harrison J. (2001). Birds of the two largest national parks in South Africa: a method to generate estimates of population size for all species and assess their conservation ecology. S. Afr. J. Sci. 97: 393–403.",
           "url": "https://journals.co.za/doi/pdf/10.10520/EJC97367",
           "publisher": "South African Journal of Science",
           "year": 2001
+        },
+        {
+          "title": "Black-crowned Tchagra",
+          "url": "https://newmansbirds.com/birds/black-crowned-tchagra/",
+          "publisher": "Newman's Birds",
+          "year": 2026
         }
       ]
     },
@@ -17731,14 +18029,42 @@
       "slug": "telophorus-viridis",
       "scientificName": "Telophorus viridis",
       "commonName": "Gorgeous Bush-Shrike",
-      "images": [],
-      "recordings": [],
+      "images": [
+        {
+          "key": "telophorus-viridis/side.jpg",
+          "author": "Mike Ambrose",
+          "licence": "CC BY-NC 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+          "sourceUrl": "https://www.inaturalist.org/observations/325806759",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ],
+      "recordings": [
+        {
+          "key": "xeno-canto/XC148574",
+          "author": "Michael Cronje",
+          "licence": "CC BY-NC-SA 3.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/3.0/",
+          "sourceUrl": "https://xeno-canto.org/148574",
+          "aiGenerated": false,
+          "hosted": false,
+          "quality": "A",
+          "callType": "call"
+        }
+      ],
       "sources": [
         {
           "title": "Kemp A.C., Herholdt J.J., Whyte I. & Harrison J. (2001). Birds of the two largest national parks in South Africa: a method to generate estimates of population size for all species and assess their conservation ecology. S. Afr. J. Sci. 97: 393–403.",
           "url": "https://journals.co.za/doi/pdf/10.10520/EJC97367",
           "publisher": "South African Journal of Science",
           "year": 2001
+        },
+        {
+          "title": "Gorgeous Bush-Shrike",
+          "url": "https://newmansbirds.com/birds/gorgeous-bushshrike/",
+          "publisher": "Newman's Birds",
+          "year": 2026
         }
       ]
     },

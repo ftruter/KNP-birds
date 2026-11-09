@@ -7,8 +7,36 @@
     "af": "Tropiese Waterfiskaal"
   },
   "family": "malaconotidae",
-  "summary": "The details for this species have not been published yet.",
-  "sampleData": true,
+  "size": {
+    "lengthCm": {
+      "min": 21,
+      "max": 21
+    },
+    "note": "Newman's Birds gives 21 cm."
+  },
+  "habitat": "Pairs in dense vegetation in broad-leaved woodland, dense lowveld bushveld and riverine thickets. Newman says it replaces Southern Boubou in northern areas.",
+  "summary": "A fairly common resident. Black above with a white wing-bar. The whole underparts are lightly washed pinkish, with less cinnamon on the flanks and vent than other boubous. The duet is normally three liquid bell-like notes answered by hueee. Some calls cannot be told from Southern Boubou. Newman’s page uses the name Laniarius aethiopicus. The stored name Laniarius major was left unchanged. The Kemp code RB was left unchanged.",
+  "sampleData": false,
+  "similar": [
+    {
+      "slug": "laniarius-ferrugineus",
+      "note": "Southern Boubou has a white throat grading to a richer cinnamon belly. Some duet calls cannot be separated."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Tropical Boubou",
+      "url": "https://newmansbirds.com/birds/tropical-boubou/",
+      "publisher": "Newman's Birds",
+      "year": 2026
+    },
+    {
+      "title": "Kemp A.C., Herholdt J.J., Whyte I. & Harrison J. (2001). Birds of the two largest national parks in South Africa: a method to generate estimates of population size for all species and assess their conservation ecology. S. Afr. J. Sci. 97: 393–403.",
+      "url": "https://journals.co.za/doi/pdf/10.10520/EJC97367",
+      "publisher": "South African Journal of Science",
+      "year": 2001
+    }
+  ],
   "population": {
     "estimate": {
       "low": 4096,
@@ -35,8 +63,143 @@
     },
     "tierApplied": "D"
   },
-  "variants": [],
-  "viewNotes": [],
-  "calls": [],
-  "images": []
+  "variants": [
+    {
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "marks": {
+        "bill": {
+          "colour": null,
+          "shape": null
+        },
+        "eye": {
+          "iris": null,
+          "ring": null
+        },
+        "legs": {
+          "colour": null
+        },
+        "head": {
+          "crown": null,
+          "face": null,
+          "throat": null,
+          "pattern": "Black above. The underparts, including the throat, are lightly washed pinkish."
+        },
+        "upperparts": {
+          "back": null,
+          "rump": null,
+          "pattern": "Black above, with a white wing-bar."
+        },
+        "underparts": {
+          "breast": null,
+          "belly": null,
+          "pattern": "Entire underparts lightly washed pinkish, with less cinnamon on the flanks and vent than other boubous."
+        },
+        "wings": {
+          "above": null,
+          "below": null,
+          "pattern": "White wing-bar."
+        },
+        "tail": {
+          "colour": null,
+          "shape": null
+        }
+      }
+    }
+  ],
+  "viewNotes": [
+    {
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Black above, white wing-bar, and underparts lightly washed pinkish."
+    },
+    {
+      "view": "perched-front",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Pinkish wash on the underparts, including the throat."
+    },
+    {
+      "view": "perched-back",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Black upperparts and a white wing-bar."
+    },
+    {
+      "view": "flight-above",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "White wing-bar. No other flight mark was described."
+    },
+    {
+      "view": "flight-below",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Less cinnamon on the flanks and vent than Southern Boubou."
+    }
+  ],
+  "calls": [
+    {
+      "sex": "any",
+      "type": "call",
+      "description": "A duet that can sound like one bird: normally three liquid bell-like notes answered by hueee. Some calls cannot be told from Southern Boubou. Grade A call from Sigiria Forest, Nairobi, Kenya, under the name Laniarius major. The filename is XC259660-TropicalBoubou 120715.mp3.",
+      "recordings": [
+        {
+          "key": "xeno-canto/XC259660",
+          "source": "https://xeno-canto.org/259660",
+          "fileUrl": "https://xeno-canto.org/sounds/uploaded/LFMDRDHWTW/XC259660-TropicalBoubou%20120715.mp3",
+          "author": "SawaSawa",
+          "license": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ]
+    }
+  ],
+  "images": [
+    {
+      "key": "laniarius-major/side.jpg",
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "source": "https://www.inaturalist.org/observations/104766552",
+      "fileUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/175621705/large.jpeg",
+      "author": "Justin Ponder",
+      "license": "CC BY 4.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by/4.0/",
+      "aiGenerated": false,
+      "hosted": false,
+      "alt": "Tropical Boubou in a leafy tree, black above and pale below with a white wing-bar",
+      "caption": "Tropical Boubou in the Mopani district, partly hidden in leaves, black above with a white wing-bar and pale underparts."
+    }
+  ],
+  "research": {
+    "confidence": "medium",
+    "needsReview": false,
+    "note": "Newman calls it a fairly common resident, so status is resident and all twelve months are listed. The Newman page titles the bird Tropical Boubou and uses Laniarius aethiopicus. This file keeps Laniarius major. Swamp Boubou is a comparison Newman names and is not in this list. Population figures and the Kemp code RB were left unchanged."
+  },
+  "status": "resident",
+  "monthsPresent": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+  ]
 }

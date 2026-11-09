@@ -7,8 +7,33 @@
     "af": "Olyfboslaksman"
   },
   "family": "malaconotidae",
-  "summary": "The details for this species have not been published yet.",
-  "sampleData": true,
+  "habitat": "Pairs in coastal and montane forest thickets, montane scrub, dense bush and plantations. Secretive. In bush it feeds low; in forest it feeds in the mid and lower strata, on insects and fruit.",
+  "summary": "A common near-endemic resident. Two morphs. One has a cinnamon breast, variable in strength, and the male has a white eyebrow. The other has olive-green upperparts and yellow underparts in both sexes. In both, the black mask does not reach the base of the bill. Newman gives no length, and the immature is only said to be as illustrated. Calls include phwee-phwee-phwee-phwee-phwee-phwee, tew-tew-tew-tew-tew, tee-toy-toy-toy-toy, a descending CHE-che-che-che-che-che, and a warbling trill. The Kemp code RB was left unchanged.",
+  "sampleData": false,
+  "similar": [
+    {
+      "slug": "chlorophoneus-sulfureopectus",
+      "note": "Orange-breasted Bush-Shrike has yellow forehead and eyebrow, and the orange is limited to the breast."
+    },
+    {
+      "slug": "chlorophoneus-nigrifrons",
+      "note": "Black-fronted Bush-shrike has a black mask that reaches the base of the bill. Olive Bush-Shrike’s mask stops short of the bill."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Olive Bush-Shrike",
+      "url": "https://newmansbirds.com/birds/olive-bushshrike/",
+      "publisher": "Newman's Birds",
+      "year": 2026
+    },
+    {
+      "title": "Kemp A.C., Herholdt J.J., Whyte I. & Harrison J. (2001). Birds of the two largest national parks in South Africa: a method to generate estimates of population size for all species and assess their conservation ecology. S. Afr. J. Sci. 97: 393–403.",
+      "url": "https://journals.co.za/doi/pdf/10.10520/EJC97367",
+      "publisher": "South African Journal of Science",
+      "year": 2001
+    }
+  ],
   "population": {
     "estimate": {
       "low": 64,
@@ -35,8 +60,219 @@
     },
     "tierApplied": "D"
   },
-  "variants": [],
-  "viewNotes": [],
-  "calls": [],
-  "images": []
+  "variants": [
+    {
+      "age": "adult",
+      "sex": "male",
+      "season": "any",
+      "marks": {
+        "bill": {
+          "colour": null,
+          "shape": null
+        },
+        "eye": {
+          "iris": null,
+          "ring": null
+        },
+        "legs": {
+          "colour": null
+        },
+        "head": {
+          "crown": "grey",
+          "face": null,
+          "throat": null,
+          "pattern": "Cinnamon-breasted morph. Grey cap and a white eyebrow. The black mask does not reach the base of the bill."
+        },
+        "upperparts": {
+          "back": "olive",
+          "rump": null,
+          "pattern": "Olive-green upperparts."
+        },
+        "underparts": {
+          "breast": "cinnamon",
+          "belly": null,
+          "pattern": "Cinnamon breast, intensity variable. The colour line calls the patch cinnamon yellow."
+        },
+        "wings": {
+          "above": null,
+          "below": null
+        },
+        "tail": {
+          "colour": null,
+          "shape": null
+        }
+      }
+    },
+    {
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "marks": {
+        "bill": {
+          "colour": null,
+          "shape": null
+        },
+        "eye": {
+          "iris": null,
+          "ring": null
+        },
+        "legs": {
+          "colour": null
+        },
+        "head": {
+          "crown": null,
+          "face": null,
+          "throat": null,
+          "pattern": "Yellow-underpart morph, both sexes. The black mask does not reach the base of the bill."
+        },
+        "upperparts": {
+          "back": "olive",
+          "rump": null,
+          "pattern": "Entirely olive-green upperparts."
+        },
+        "underparts": {
+          "breast": "yellow",
+          "belly": "yellow",
+          "pattern": "Yellow underparts."
+        },
+        "wings": {
+          "above": null,
+          "below": null
+        },
+        "tail": {
+          "colour": null,
+          "shape": null
+        }
+      }
+    }
+  ],
+  "viewNotes": [
+    {
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "male",
+      "season": "any",
+      "note": "Cinnamon-breasted morph: grey cap, white eyebrow, olive-green upperparts and a cinnamon breast. The black mask stops short of the bill."
+    },
+    {
+      "view": "perched-front",
+      "age": "adult",
+      "sex": "male",
+      "season": "any",
+      "note": "White eyebrow and cinnamon breast. Mask not reaching the bill."
+    },
+    {
+      "view": "perched-back",
+      "age": "adult",
+      "sex": "male",
+      "season": "any",
+      "note": "Olive-green upperparts and a grey cap."
+    },
+    {
+      "view": "flight-above",
+      "age": "adult",
+      "sex": "male",
+      "season": "any",
+      "note": "A flight pattern was not described."
+    },
+    {
+      "view": "flight-below",
+      "age": "adult",
+      "sex": "male",
+      "season": "any",
+      "note": "Cinnamon breast. Newman does not say how far the cinnamon extends."
+    },
+    {
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Yellow-underpart morph: olive-green above and yellow below, in both sexes. The mask does not reach the bill."
+    },
+    {
+      "view": "perched-front",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Yellow underparts. The face pattern is the mask that stops short of the bill."
+    },
+    {
+      "view": "perched-back",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Entirely olive-green upperparts."
+    },
+    {
+      "view": "flight-above",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "A flight pattern was not described for this morph."
+    },
+    {
+      "view": "flight-below",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Yellow underparts."
+    }
+  ],
+  "calls": [
+    {
+      "sex": "any",
+      "type": "call",
+      "description": "About six notes of varying pitch, sometimes after a higher note: phwee-phwee-phwee-phwee-phwee-phwee, or tew-tew-tew-tew-tew, or tee-toy-toy-toy-toy. Also a descending CHE-che-che-che-che-che and a warbling trill. Grade A call from near Alicedale, Eastern Cape. The filename is XC252390-olive bush-shrike.mp3.",
+      "recordings": [
+        {
+          "key": "xeno-canto/XC252390",
+          "source": "https://xeno-canto.org/252390",
+          "fileUrl": "https://xeno-canto.org/sounds/uploaded/SGLTZLDXYI/XC252390-olive%20bush-shrike.mp3",
+          "author": "Lynette Rudman",
+          "license": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ]
+    }
+  ],
+  "images": [
+    {
+      "key": "chlorophoneus-olivaceus/side.jpg",
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "source": "https://www.inaturalist.org/observations/258896365",
+      "fileUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/464604137/large.jpg",
+      "author": "brewmaster",
+      "license": "CC BY-NC 4.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+      "aiGenerated": false,
+      "hosted": false,
+      "alt": "Olive Bush-Shrike perched, grey head, olive upperparts and yellow underparts",
+      "caption": "Olive Bush-Shrike in the Ehlanzeni district, grey-headed with olive upperparts and yellow underparts, the yellow-underpart morph."
+    }
+  ],
+  "research": {
+    "confidence": "medium",
+    "needsReview": true,
+    "note": "Newman calls it a common near-endemic resident, so status is resident and all twelve months are listed. Newman’s size field is blank, so no length is stored, and the immature is only “as illustrated”. Those gaps are why this needs review. Population figures and the Kemp code RB were left unchanged."
+  },
+  "status": "resident",
+  "monthsPresent": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+  ]
 }

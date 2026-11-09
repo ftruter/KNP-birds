@@ -7,8 +7,36 @@
     "af": "Swartkroontjagra"
   },
   "family": "malaconotidae",
-  "summary": "The details for this species have not been published yet.",
-  "sampleData": true,
+  "size": {
+    "lengthCm": {
+      "min": 21,
+      "max": 23
+    },
+    "note": "Newman's Birds gives 21–23 cm."
+  },
+  "habitat": "Singly or in pairs in thornveld, woodland, coastal bush and plantations, in the lower stratum.",
+  "summary": "A common resident. Told by the black crown, with a beige mantle and rufous wings. The immature has a blackish-brown crown and a horn-coloured bill. The alarm is krok-krok-krokrakror. The song is a loud, ponderous, flat whistled series, cheer-tcharee, trichi cheer-tcharoo, cheeroo, cheeroo. Pairs also duet with grating, churring and whistling calls. The Kemp code RB was left unchanged.",
+  "sampleData": false,
+  "similar": [
+    {
+      "slug": "tchagra-australis",
+      "note": "Brown-crowned Tchagra is smaller, with a grey-brown crown separated from the eyebrow by a black line, and it is more buff-brown."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Black-crowned Tchagra",
+      "url": "https://newmansbirds.com/birds/black-crowned-tchagra/",
+      "publisher": "Newman's Birds",
+      "year": 2026
+    },
+    {
+      "title": "Kemp A.C., Herholdt J.J., Whyte I. & Harrison J. (2001). Birds of the two largest national parks in South Africa: a method to generate estimates of population size for all species and assess their conservation ecology. S. Afr. J. Sci. 97: 393–403.",
+      "url": "https://journals.co.za/doi/pdf/10.10520/EJC97367",
+      "publisher": "South African Journal of Science",
+      "year": 2001
+    }
+  ],
   "population": {
     "estimate": {
       "low": 32768,
@@ -35,8 +63,217 @@
     },
     "tierApplied": "D"
   },
-  "variants": [],
-  "viewNotes": [],
-  "calls": [],
-  "images": []
+  "variants": [
+    {
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "marks": {
+        "bill": {
+          "colour": null,
+          "shape": null
+        },
+        "eye": {
+          "iris": null,
+          "ring": null
+        },
+        "legs": {
+          "colour": null
+        },
+        "head": {
+          "crown": "black",
+          "face": null,
+          "throat": null,
+          "pattern": "Black crown. This is the mark Newman uses against the other tchagras."
+        },
+        "upperparts": {
+          "back": null,
+          "rump": null,
+          "pattern": "Beige mantle. Beige is not a colour token."
+        },
+        "underparts": {
+          "breast": null,
+          "belly": null
+        },
+        "wings": {
+          "above": "rufous",
+          "below": null,
+          "pattern": "Rufous wings."
+        },
+        "tail": {
+          "colour": null,
+          "shape": null
+        }
+      }
+    },
+    {
+      "age": "immature",
+      "sex": "any",
+      "season": "any",
+      "marks": {
+        "bill": {
+          "colour": "horn",
+          "shape": "Horn-coloured bill."
+        },
+        "eye": {
+          "iris": null,
+          "ring": null
+        },
+        "legs": {
+          "colour": null
+        },
+        "head": {
+          "crown": null,
+          "face": null,
+          "throat": null,
+          "pattern": "Blackish-brown crown. That mixed colour is not stored as a token."
+        },
+        "upperparts": {
+          "back": null,
+          "rump": null
+        },
+        "underparts": {
+          "breast": null,
+          "belly": null
+        },
+        "wings": {
+          "above": null,
+          "below": null
+        },
+        "tail": {
+          "colour": null,
+          "shape": null
+        }
+      }
+    }
+  ],
+  "viewNotes": [
+    {
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Black crown, beige mantle and rufous wings."
+    },
+    {
+      "view": "perched-front",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Black crown. The face and throat were not given separate colours."
+    },
+    {
+      "view": "perched-back",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Beige mantle."
+    },
+    {
+      "view": "flight-above",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Rufous wings. Newman says Brown-crowned Tchagra’s flight is very similar and does not describe this flight further."
+    },
+    {
+      "view": "flight-below",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "The adult underparts were not described."
+    },
+    {
+      "view": "perched-side",
+      "age": "immature",
+      "sex": "any",
+      "season": "any",
+      "note": "Blackish-brown crown and a horn-coloured bill."
+    },
+    {
+      "view": "perched-front",
+      "age": "immature",
+      "sex": "any",
+      "season": "any",
+      "note": "Blackish-brown crown."
+    },
+    {
+      "view": "perched-back",
+      "age": "immature",
+      "sex": "any",
+      "season": "any",
+      "note": "The immature back was not described."
+    },
+    {
+      "view": "flight-above",
+      "age": "immature",
+      "sex": "any",
+      "season": "any",
+      "note": "An immature flight pattern was not described."
+    },
+    {
+      "view": "flight-below",
+      "age": "immature",
+      "sex": "any",
+      "season": "any",
+      "note": "The immature underparts were not described."
+    }
+  ],
+  "calls": [
+    {
+      "sex": "any",
+      "type": "call",
+      "description": "Alarm krok-krok-krokrakror. Also a loud, ponderous, flat whistled series: cheer-tcharee, trichi cheer-tcharoo, cheeroo, cheeroo. Pairs duet with grating, churring and whistling calls. Grade A call from Gambela, on the Dembidolo road, Ethiopia. The filename is XC268619-Black-crowned Tchagra2014-12-15-1.mp3.",
+      "recordings": [
+        {
+          "key": "xeno-canto/XC268619",
+          "source": "https://xeno-canto.org/268619",
+          "fileUrl": "https://xeno-canto.org/sounds/uploaded/CDTGHVBGZP/XC268619-Black-crowned%20Tchagra2014-12-15-1.mp3",
+          "author": "Andrew Spencer",
+          "license": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ]
+    }
+  ],
+  "images": [
+    {
+      "key": "tchagra-senegalus/side.jpg",
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "source": "https://www.inaturalist.org/observations/108367283",
+      "fileUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/182439697/large.jpg",
+      "author": "maritzasouthafrica",
+      "license": "CC BY-NC 4.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+      "aiGenerated": false,
+      "hosted": false,
+      "alt": "Black-crowned Tchagra perched, black crown, pale eyebrow and rufous wing",
+      "caption": "Black-crowned Tchagra in Kruger National Park, black crown, pale eyebrow, beige mantle and a rufous wing."
+    }
+  ],
+  "research": {
+    "confidence": "medium",
+    "needsReview": false,
+    "note": "Newman calls it a common resident, so status is resident and all twelve months are listed. Southern Tchagra is a comparison Newman names and is not in this list. Beige is not a colour token. Population figures and the Kemp code RB were left unchanged."
+  },
+  "status": "resident",
+  "monthsPresent": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+  ]
 }

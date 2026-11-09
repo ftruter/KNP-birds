@@ -7,8 +7,36 @@
     "af": "Rooivlerktjagra"
   },
   "family": "malaconotidae",
-  "summary": "The details for this species have not been published yet.",
-  "sampleData": true,
+  "size": {
+    "lengthCm": {
+      "min": 19,
+      "max": 19
+    },
+    "note": "Newman's Birds gives 19 cm."
+  },
+  "habitat": "A thornveld bird, usually alone, spending much time in thickets or on the ground under bushes. If disturbed it hops onto a low branch and then into cover.",
+  "summary": "A common resident. Smaller and less rufous than the other tchagras, more buff-brown. A grey-brown crown and mantle, the crown separated from a whitish eyebrow by a black line, chestnut wings, and pale buff below. The immature is duller. The alarm is a guttural churr. In summer the male flies steeply up and planes down with quivering wings, calling tui-tui-tui-tui-tui in a descending cadence. The Kemp paper name Threestreaked Tchagra and the code RB were left unchanged.",
+  "sampleData": false,
+  "similar": [
+    {
+      "slug": "tchagra-senegalus",
+      "note": "Black-crowned Tchagra has a black crown. Brown-crowned Tchagra has a grey-brown crown edged by a black line, and it is smaller and more buff-brown."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Brown-crowned Tchagra",
+      "url": "https://newmansbirds.com/birds/brown-crowned-tchagra/",
+      "publisher": "Newman's Birds",
+      "year": 2026
+    },
+    {
+      "title": "Kemp A.C., Herholdt J.J., Whyte I. & Harrison J. (2001). Birds of the two largest national parks in South Africa: a method to generate estimates of population size for all species and assess their conservation ecology. S. Afr. J. Sci. 97: 393–403.",
+      "url": "https://journals.co.za/doi/pdf/10.10520/EJC97367",
+      "publisher": "South African Journal of Science",
+      "year": 2001
+    }
+  ],
   "population": {
     "estimate": {
       "low": 32768,
@@ -35,8 +63,218 @@
     },
     "tierApplied": "D"
   },
-  "variants": [],
-  "viewNotes": [],
-  "calls": [],
-  "images": []
+  "variants": [
+    {
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "marks": {
+        "bill": {
+          "colour": null,
+          "shape": null
+        },
+        "eye": {
+          "iris": null,
+          "ring": null
+        },
+        "legs": {
+          "colour": null
+        },
+        "head": {
+          "crown": null,
+          "face": null,
+          "throat": null,
+          "pattern": "Grey-brown central crown, separated from a whitish eyebrow by a conspicuous black line. Grey-brown is not a colour token."
+        },
+        "upperparts": {
+          "back": null,
+          "rump": null,
+          "pattern": "Grey-brown mantle. Less rufous and more buff-brown than Black-crowned Tchagra."
+        },
+        "underparts": {
+          "breast": null,
+          "belly": null,
+          "pattern": "Pale buff below."
+        },
+        "wings": {
+          "above": "chestnut",
+          "below": null,
+          "pattern": "Chestnut wings. The flight pattern is very similar to Black-crowned Tchagra’s, which Newman does not describe further."
+        },
+        "tail": {
+          "colour": null,
+          "shape": null
+        }
+      }
+    },
+    {
+      "age": "immature",
+      "sex": "any",
+      "season": "any",
+      "marks": {
+        "bill": {
+          "colour": null,
+          "shape": null
+        },
+        "eye": {
+          "iris": null,
+          "ring": null
+        },
+        "legs": {
+          "colour": null
+        },
+        "head": {
+          "crown": null,
+          "face": null,
+          "throat": null,
+          "pattern": "Like the adult but duller. No separate immature colours were named."
+        },
+        "upperparts": {
+          "back": null,
+          "rump": null
+        },
+        "underparts": {
+          "breast": null,
+          "belly": null
+        },
+        "wings": {
+          "above": null,
+          "below": null
+        },
+        "tail": {
+          "colour": null,
+          "shape": null
+        }
+      }
+    }
+  ],
+  "viewNotes": [
+    {
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Grey-brown crown and mantle, a black line above a whitish eyebrow, chestnut wings and pale buff underparts."
+    },
+    {
+      "view": "perched-front",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Whitish eyebrow under a black line, and pale buff underparts."
+    },
+    {
+      "view": "perched-back",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Grey-brown mantle and chestnut wings."
+    },
+    {
+      "view": "flight-above",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Chestnut wings. Newman says the flight pattern is very like Black-crowned Tchagra’s and does not describe it further. The male’s summer display is a steep climb and a planing descent with quivering wings."
+    },
+    {
+      "view": "flight-below",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Pale buff below."
+    },
+    {
+      "view": "perched-side",
+      "age": "immature",
+      "sex": "any",
+      "season": "any",
+      "note": "Like the adult, but duller."
+    },
+    {
+      "view": "perched-front",
+      "age": "immature",
+      "sex": "any",
+      "season": "any",
+      "note": "Duller than the adult. The face was not given a separate colour."
+    },
+    {
+      "view": "perched-back",
+      "age": "immature",
+      "sex": "any",
+      "season": "any",
+      "note": "Duller upperparts. No separate colour was named."
+    },
+    {
+      "view": "flight-above",
+      "age": "immature",
+      "sex": "any",
+      "season": "any",
+      "note": "An immature flight pattern was not described."
+    },
+    {
+      "view": "flight-below",
+      "age": "immature",
+      "sex": "any",
+      "season": "any",
+      "note": "Duller underparts. No separate colour was named."
+    }
+  ],
+  "calls": [
+    {
+      "sex": "male",
+      "type": "call",
+      "description": "The alarm is a guttural churr. In summer the displaying male calls tui-tui-tui-tui-tui in a descending cadence while planing down. Grade A call from the Mopani region of Kruger National Park. The filename is XC446215-Brown-crownedTchagra_MopaniRegion_KrugerNationalPark_SouthAfrica_20171005_06h14.mp3.",
+      "recordings": [
+        {
+          "key": "xeno-canto/XC446215",
+          "source": "https://xeno-canto.org/446215",
+          "fileUrl": "https://xeno-canto.org/sounds/uploaded/UZRIEUDUHM/XC446215-Brown-crownedTchagra_MopaniRegion_KrugerNationalPark_SouthAfrica_20171005_06h14.mp3",
+          "author": "Toby Esplin",
+          "license": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ]
+    }
+  ],
+  "images": [
+    {
+      "key": "tchagra-australis/side.jpg",
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "source": "https://www.inaturalist.org/observations/95661704",
+      "fileUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/158825757/large.jpg",
+      "author": "Niall Perrins",
+      "license": "CC BY-NC 4.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+      "aiGenerated": false,
+      "hosted": false,
+      "alt": "Brown-crowned Tchagra perched, brown crown with a black border and a chestnut wing",
+      "caption": "Brown-crowned Tchagra in the Kruger box, grey-brown crown edged black, pale eyebrow and a chestnut wing."
+    }
+  ],
+  "research": {
+    "confidence": "medium",
+    "needsReview": false,
+    "note": "Newman calls it a common resident, so status is resident and all twelve months are listed. Southern Tchagra is a comparison Newman names and is not in this list. Grey-brown and pale buff are described in the pattern. Population figures, the paper name Threestreaked Tchagra and the Kemp code RB were left unchanged."
+  },
+  "status": "resident",
+  "monthsPresent": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+  ]
 }

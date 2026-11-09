@@ -7,8 +7,36 @@
     "af": "Oranjeborsboslaksman"
   },
   "family": "malaconotidae",
-  "summary": "The details for this species have not been published yet.",
-  "sampleData": true,
+  "size": {
+    "lengthCm": {
+      "min": 18,
+      "max": 19
+    },
+    "note": "Newman's Birds gives 18–19 cm."
+  },
+  "habitat": "Pairs in mixed bushveld, thornveld, valley bush, and riverine and coastal thickets, usually in the mid stratum. Not secretive, but often hard to locate.",
+  "summary": "A common resident. Grey cap and mantle, olive-green wings and upper tail. The male has a yellow forehead, eyebrow and underparts, with orange only on the breast. That orange is much reduced in the female. The immature is only shown, not described. The call is a repeated poo-poo-poo-pooooo or pipit-eeez. The Kemp code RB was left unchanged.",
+  "sampleData": false,
+  "similar": [
+    {
+      "slug": "chlorophoneus-olivaceus",
+      "note": "Olive Bush-Shrike’s black mask does not reach the bill. Its cinnamon morph is not limited to an orange breast patch, and its other morph is yellow below without that orange breast."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Orange-breasted Bush-Shrike",
+      "url": "https://newmansbirds.com/birds/orange-breasted-bushshrike/",
+      "publisher": "Newman's Birds",
+      "year": 2026
+    },
+    {
+      "title": "Kemp A.C., Herholdt J.J., Whyte I. & Harrison J. (2001). Birds of the two largest national parks in South Africa: a method to generate estimates of population size for all species and assess their conservation ecology. S. Afr. J. Sci. 97: 393–403.",
+      "url": "https://journals.co.za/doi/pdf/10.10520/EJC97367",
+      "publisher": "South African Journal of Science",
+      "year": 2001
+    }
+  ],
   "population": {
     "estimate": {
       "low": 16384,
@@ -35,8 +63,221 @@
     },
     "tierApplied": "D"
   },
-  "variants": [],
-  "viewNotes": [],
-  "calls": [],
-  "images": []
+  "variants": [
+    {
+      "age": "adult",
+      "sex": "male",
+      "season": "any",
+      "marks": {
+        "bill": {
+          "colour": null,
+          "shape": null
+        },
+        "eye": {
+          "iris": null,
+          "ring": null
+        },
+        "legs": {
+          "colour": null
+        },
+        "head": {
+          "crown": "grey",
+          "face": null,
+          "throat": "yellow",
+          "pattern": "Grey cap. Yellow forehead and eyebrow."
+        },
+        "upperparts": {
+          "back": "grey",
+          "rump": null,
+          "pattern": "Grey mantle. Olive-green wings and upper tail."
+        },
+        "underparts": {
+          "breast": "orange",
+          "belly": "yellow",
+          "pattern": "Yellow underparts, with only the breast orange."
+        },
+        "wings": {
+          "above": "olive",
+          "below": null,
+          "pattern": "Olive-green wings."
+        },
+        "tail": {
+          "colour": "olive",
+          "shape": "Olive-green upper tail."
+        }
+      }
+    },
+    {
+      "age": "adult",
+      "sex": "female",
+      "season": "any",
+      "marks": {
+        "bill": {
+          "colour": null,
+          "shape": null
+        },
+        "eye": {
+          "iris": null,
+          "ring": null
+        },
+        "legs": {
+          "colour": null
+        },
+        "head": {
+          "crown": "grey",
+          "face": null,
+          "throat": null,
+          "pattern": "Grey cap. The orange breast is much reduced. Newman does not say whether the yellow forehead and eyebrow are also reduced."
+        },
+        "upperparts": {
+          "back": "grey",
+          "rump": null,
+          "pattern": "Grey mantle."
+        },
+        "underparts": {
+          "breast": null,
+          "belly": null,
+          "pattern": "Orange breast much reduced compared with the male."
+        },
+        "wings": {
+          "above": "olive",
+          "below": null,
+          "pattern": "Olive-green wings."
+        },
+        "tail": {
+          "colour": null,
+          "shape": null
+        }
+      }
+    }
+  ],
+  "viewNotes": [
+    {
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "male",
+      "season": "any",
+      "note": "Grey cap and mantle, yellow forehead and eyebrow, orange breast and yellow underparts."
+    },
+    {
+      "view": "perched-front",
+      "age": "adult",
+      "sex": "male",
+      "season": "any",
+      "note": "Yellow forehead and eyebrow, yellow throat and an orange breast."
+    },
+    {
+      "view": "perched-back",
+      "age": "adult",
+      "sex": "male",
+      "season": "any",
+      "note": "Grey mantle, olive-green wings and an olive-green upper tail."
+    },
+    {
+      "view": "flight-above",
+      "age": "adult",
+      "sex": "male",
+      "season": "any",
+      "note": "Olive-green wings. No other flight mark was described."
+    },
+    {
+      "view": "flight-below",
+      "age": "adult",
+      "sex": "male",
+      "season": "any",
+      "note": "Yellow underparts with only the breast orange."
+    },
+    {
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "female",
+      "season": "any",
+      "note": "Like the male, but the orange breast is much reduced."
+    },
+    {
+      "view": "perched-front",
+      "age": "adult",
+      "sex": "female",
+      "season": "any",
+      "note": "The reduced orange breast is the sex mark Newman gives."
+    },
+    {
+      "view": "perched-back",
+      "age": "adult",
+      "sex": "female",
+      "season": "any",
+      "note": "Grey mantle and olive-green wings."
+    },
+    {
+      "view": "flight-above",
+      "age": "adult",
+      "sex": "female",
+      "season": "any",
+      "note": "Olive-green wings."
+    },
+    {
+      "view": "flight-below",
+      "age": "adult",
+      "sex": "female",
+      "season": "any",
+      "note": "Orange breast much reduced. The rest of the female underparts were not given a separate colour."
+    }
+  ],
+  "calls": [
+    {
+      "sex": "any",
+      "type": "call",
+      "description": "A musical, much-repeated poo-poo-poo-pooooo or pipit-eeez, pipit-eeez. Grade A call from Mjejane Private Game Reserve, near Hectorspruit, Mpumalanga. The filename is XC323343-Shrike Orangebreasted Bush_Mjejane_160618_15_A.mp3.",
+      "recordings": [
+        {
+          "key": "xeno-canto/XC323343",
+          "source": "https://xeno-canto.org/323343",
+          "fileUrl": "https://xeno-canto.org/sounds/uploaded/TWAAJJHMEH/XC323343-Shrike%20Orangebreasted%20Bush_Mjejane_160618_15_A.mp3",
+          "author": "Faansie Peacock",
+          "license": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ]
+    }
+  ],
+  "images": [
+    {
+      "key": "chlorophoneus-sulfureopectus/side.jpg",
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "source": "https://www.inaturalist.org/observations/115487708",
+      "fileUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/194906921/large.jpeg",
+      "author": "Andrew Campbell",
+      "license": "CC BY 4.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by/4.0/",
+      "aiGenerated": false,
+      "hosted": false,
+      "alt": "Orange-breasted Bush-Shrike perched in a thicket, grey head and yellow underparts",
+      "caption": "Orange-breasted Bush-Shrike in the Ehlanzeni district, distant in a thicket, with a grey head, an orange breast and yellow underparts."
+    }
+  ],
+  "research": {
+    "confidence": "medium",
+    "needsReview": false,
+    "note": "Newman calls it a common resident, so status is resident and all twelve months are listed. The immature is only illustrated, so no immature variant is stored. Population figures and the Kemp code RB were left unchanged."
+  },
+  "status": "resident",
+  "monthsPresent": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+  ]
 }

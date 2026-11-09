@@ -7,8 +7,40 @@
     "af": "Suidelike Waterfiskaal"
   },
   "family": "malaconotidae",
-  "summary": "The details for this species have not been published yet.",
-  "sampleData": true,
+  "size": {
+    "lengthCm": {
+      "min": 23,
+      "max": 23
+    },
+    "note": "Newman's Birds gives 23 cm."
+  },
+  "habitat": "Fairly secretive pairs in dense bush, usually in the lower stratum.",
+  "summary": "A common endemic resident. Black above with a white wing-bar. The white throat grades to a cinnamon belly and vent; the cinnamon is always richer towards the belly and vent, and sometimes washes the throat. Southeastern females are dark brown above, not black. The pair duets: ko-ko answered by kweet, boo-boo answered by whee-oo, or phooweeol answered by hueee or churrr, with many variations. The Kemp code RB was left unchanged.",
+  "sampleData": false,
+  "similar": [
+    {
+      "slug": "laniarius-major",
+      "note": "Tropical Boubou has the whole underparts lightly washed pinkish, with less cinnamon on the flanks and vent. Some calls cannot be told apart."
+    },
+    {
+      "slug": "laniarius-atrococcineus",
+      "note": "Crimson-breasted Shrike is scarlet below, not white grading to cinnamon."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Southern Boubou",
+      "url": "https://newmansbirds.com/birds/southern-boubou/",
+      "publisher": "Newman's Birds",
+      "year": 2026
+    },
+    {
+      "title": "Kemp A.C., Herholdt J.J., Whyte I. & Harrison J. (2001). Birds of the two largest national parks in South Africa: a method to generate estimates of population size for all species and assess their conservation ecology. S. Afr. J. Sci. 97: 393–403.",
+      "url": "https://journals.co.za/doi/pdf/10.10520/EJC97367",
+      "publisher": "South African Journal of Science",
+      "year": 2001
+    }
+  ],
   "population": {
     "estimate": {
       "low": 32768,
@@ -35,8 +67,220 @@
     },
     "tierApplied": "D"
   },
-  "variants": [],
-  "viewNotes": [],
-  "calls": [],
-  "images": []
+  "variants": [
+    {
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "marks": {
+        "bill": {
+          "colour": null,
+          "shape": null
+        },
+        "eye": {
+          "iris": null,
+          "ring": null
+        },
+        "legs": {
+          "colour": null
+        },
+        "head": {
+          "crown": null,
+          "face": null,
+          "throat": "white",
+          "pattern": "Black above. White throat, which may carry a pale cinnamon wash."
+        },
+        "upperparts": {
+          "back": null,
+          "rump": null,
+          "pattern": "Black above. The white wing-bar looks narrow or wide depending on how the feathers sit."
+        },
+        "underparts": {
+          "breast": null,
+          "belly": "cinnamon",
+          "pattern": "White throat grades to a cinnamon belly and vent, always richer towards the belly and vent."
+        },
+        "wings": {
+          "above": null,
+          "below": null,
+          "pattern": "White wing-bar, narrow or wide depending on feather arrangement."
+        },
+        "tail": {
+          "colour": null,
+          "shape": null
+        }
+      }
+    },
+    {
+      "age": "adult",
+      "sex": "female",
+      "season": "any",
+      "marks": {
+        "bill": {
+          "colour": null,
+          "shape": null
+        },
+        "eye": {
+          "iris": null,
+          "ring": null
+        },
+        "legs": {
+          "colour": null
+        },
+        "head": {
+          "crown": null,
+          "face": null,
+          "throat": null
+        },
+        "upperparts": {
+          "back": "dark-brown",
+          "rump": null,
+          "pattern": "Southeastern females are dark brown above, not black."
+        },
+        "underparts": {
+          "breast": null,
+          "belly": "cinnamon",
+          "pattern": "The cinnamon underparts are described for the species. This variant records only the dark brown upperparts of southeastern females."
+        },
+        "wings": {
+          "above": null,
+          "below": null,
+          "pattern": "White wing-bar."
+        },
+        "tail": {
+          "colour": null,
+          "shape": null
+        }
+      }
+    }
+  ],
+  "viewNotes": [
+    {
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Black above, white wing-bar, white throat grading to a cinnamon belly."
+    },
+    {
+      "view": "perched-front",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "White throat, sometimes with a pale cinnamon wash."
+    },
+    {
+      "view": "perched-back",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Black upperparts. The wing-bar may look narrow or wide."
+    },
+    {
+      "view": "flight-above",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "White wing-bar in flight. No other flight mark was described."
+    },
+    {
+      "view": "flight-below",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Cinnamon belly and vent, richer than the throat."
+    },
+    {
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "female",
+      "season": "any",
+      "note": "Southeastern females are dark brown above rather than black, still with a white wing-bar."
+    },
+    {
+      "view": "perched-front",
+      "age": "adult",
+      "sex": "female",
+      "season": "any",
+      "note": "The female face was not given a separate description."
+    },
+    {
+      "view": "perched-back",
+      "age": "adult",
+      "sex": "female",
+      "season": "any",
+      "note": "Dark brown upperparts."
+    },
+    {
+      "view": "flight-above",
+      "age": "adult",
+      "sex": "female",
+      "season": "any",
+      "note": "White wing-bar."
+    },
+    {
+      "view": "flight-below",
+      "age": "adult",
+      "sex": "female",
+      "season": "any",
+      "note": "Cinnamon towards the belly and vent, as in the species account."
+    }
+  ],
+  "calls": [
+    {
+      "sex": "any",
+      "type": "call",
+      "description": "A duet. ko-ko answered by kweet, or boo-boo answered by whee-oo, or a liquid phooweeol answered by hueee or churrr. Many variations. Grade A recording of two birds calling near Plettenberg Bay, Western Cape. The filename is XC331290-KLCP1.mp3 and does not name the bird.",
+      "recordings": [
+        {
+          "key": "xeno-canto/XC331290",
+          "source": "https://xeno-canto.org/331290",
+          "fileUrl": "https://xeno-canto.org/sounds/uploaded/EYSMZJZJYY/XC331290-KLCP1.mp3",
+          "author": "Andre Marais",
+          "license": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ]
+    }
+  ],
+  "images": [
+    {
+      "key": "laniarius-ferrugineus/side.jpg",
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "source": "https://www.inaturalist.org/observations/74925093",
+      "fileUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/122516022/large.jpeg",
+      "author": "Benoît Segerer",
+      "license": "CC BY-NC 4.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+      "aiGenerated": false,
+      "hosted": false,
+      "alt": "Southern Boubou perched, black above, white wing-bar and cinnamon belly",
+      "caption": "Southern Boubou in the Ehlanzeni district, black above with a white wing-bar and a pale throat grading to a cinnamon belly."
+    }
+  ],
+  "research": {
+    "confidence": "medium",
+    "needsReview": false,
+    "note": "Newman calls it a common endemic resident, so status is resident and all twelve months are listed. The dark brown female is the southeastern form Newman names. Population figures and the Kemp code RB were left unchanged."
+  },
+  "status": "resident",
+  "monthsPresent": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+  ]
 }
