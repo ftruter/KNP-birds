@@ -1,9 +1,9 @@
 {
   "source": "xeno-canto explore catalogue, API v3 recording fields",
   "counts": {
-    "slots": 362,
+    "slots": 364,
     "swapped": 17,
-    "added": 260,
+    "added": 262,
     "kept": 57,
     "none": 28,
     "cleaned": 0
@@ -5457,6 +5457,34 @@
       "quality": "B",
       "country": "Senegal",
       "locality": "Kataba1 (near Kassel), Bignona, Région de Ziguinchor",
+      "cleaned": false,
+      "license": "CC BY-NC-SA 4.0"
+    },
+    {
+      "slug": "microcarbo-africanus",
+      "scientificName": "Microcarbo africanus",
+      "index": 0,
+      "type": "call",
+      "action": "added",
+      "from": [],
+      "to": "860402",
+      "quality": "A",
+      "country": "Nigeria",
+      "locality": "Jabi Lake, Abuja, Federal Capital Territory",
+      "cleaned": false,
+      "license": "CC BY-NC-SA 4.0"
+    },
+    {
+      "slug": "phalacrocorax-carbo",
+      "scientificName": "Phalacrocorax carbo",
+      "index": 0,
+      "type": "call",
+      "action": "added",
+      "from": [],
+      "to": "323326",
+      "quality": "A",
+      "country": "South Africa",
+      "locality": "Mjejane Private Game Reserve, Hectorspruit, Mpumalanga",
       "cleaned": false,
       "license": "CC BY-NC-SA 4.0"
     }
