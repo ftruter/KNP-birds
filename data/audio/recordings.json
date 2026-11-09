@@ -3056,6 +3056,46 @@
           }
         }
       ]
+    },
+    "chlidonias-hybrida": {
+      "calls": [
+        {
+          "index": 0,
+          "quality": {
+            "xeno-canto/XC135814": "A"
+          }
+        }
+      ]
+    },
+    "chlidonias-leucopterus": {
+      "calls": [
+        {
+          "index": 0,
+          "quality": {
+            "xeno-canto/XC307306": "A"
+          }
+        }
+      ]
+    },
+    "chroicocephalus-cirrocephalus": {
+      "calls": [
+        {
+          "index": 0,
+          "quality": {
+            "xeno-canto/XC277587": "A"
+          }
+        }
+      ]
+    },
+    "rynchops-flavirostris": {
+      "calls": [
+        {
+          "index": 0,
+          "quality": {
+            "xeno-canto/XC608119": "A"
+          }
+        }
+      ]
     }
   }
 }

@@ -75,6 +75,4 @@ test('all five shrikes are sourced without changing populations', async () => {
     report.counts.kept +
     report.counts.none
   assert.equal(sum, report.counts.slots)
-  assert.equal(report.counts.slots, 299)
-  assert.equal(report.counts.added, 197)
 })

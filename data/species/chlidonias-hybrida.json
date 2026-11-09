@@ -7,8 +7,30 @@
     "af": "Witbaardsterretjie"
   },
   "family": "laridae",
-  "summary": "The details for this species have not been published yet.",
-  "sampleData": true,
+  "size": {
+    "lengthCm": {
+      "min": 23,
+      "max": 23
+    },
+    "note": "Newman's Birds gives 23 cm."
+  },
+  "habitat": "Freshwater pans and lakes, where it occurs and occasionally breeds.",
+  "summary": "An uncommon resident. In breeding plumage Newman distinguishes it by a short tail with a shallow fork and a white vent, and by a short grey tail rather than a white one. In non-breeding plumage the black on the head is less extensive than on other marsh terns, the upper wings are described as planer, the rump is pale grey rather than white, and the bill is thicker and heavier. The non-breeding bird has a pale grey upper tail and a black line from behind the eye to a black nape. The call is a dry kerk. The flight is less buoyant than that of other marsh terns. The Kemp code NB was left unchanged.",
+  "sampleData": false,
+  "sources": [
+    {
+      "title": "Whiskered Tern",
+      "url": "https://newmansbirds.com/birds/whiskered-tern/",
+      "publisher": "Newman's Birds",
+      "year": 2026
+    },
+    {
+      "title": "Kemp A.C., Herholdt J.J., Whyte I. & Harrison J. (2001). Birds of the two largest national parks in South Africa: a method to generate estimates of population size for all species and assess their conservation ecology. S. Afr. J. Sci. 97: 393–403.",
+      "url": "https://journals.co.za/doi/pdf/10.10520/EJC97367",
+      "publisher": "South African Journal of Science",
+      "year": 2001
+    }
+  ],
   "population": {
     "estimate": {
       "low": 2,
@@ -35,8 +57,222 @@
     },
     "tierApplied": "D"
   },
-  "variants": [],
-  "viewNotes": [],
-  "calls": [],
-  "images": []
+  "variants": [
+    {
+      "age": "adult",
+      "sex": "any",
+      "season": "breeding",
+      "marks": {
+        "bill": {
+          "colour": null,
+          "shape": null
+        },
+        "eye": {
+          "iris": null,
+          "ring": null
+        },
+        "legs": {
+          "colour": null
+        },
+        "head": {
+          "crown": null,
+          "face": null,
+          "throat": null
+        },
+        "upperparts": {
+          "back": null,
+          "rump": null
+        },
+        "underparts": {
+          "breast": null,
+          "belly": null,
+          "pattern": "White vent. The rest of the breeding underparts were not described."
+        },
+        "wings": {
+          "above": null,
+          "below": null
+        },
+        "tail": {
+          "colour": "grey",
+          "shape": "Short tail with a shallow fork. Newman contrasts the short grey tail with the white tail of Antarctic Tern."
+        }
+      }
+    },
+    {
+      "age": "adult",
+      "sex": "any",
+      "season": "non-breeding",
+      "marks": {
+        "bill": {
+          "colour": null,
+          "shape": "Thicker, heavier bill than other marsh terns. Bill colour was not named."
+        },
+        "eye": {
+          "iris": null,
+          "ring": null
+        },
+        "legs": {
+          "colour": null
+        },
+        "head": {
+          "crown": null,
+          "face": "black",
+          "throat": null,
+          "pattern": "Black line behind the eye to a black nape. Less extensive black on the head than other marsh terns."
+        },
+        "upperparts": {
+          "back": null,
+          "rump": "grey",
+          "pattern": "Pale grey rump, not white. Newman writes planer upper wings."
+        },
+        "underparts": {
+          "breast": null,
+          "belly": null
+        },
+        "wings": {
+          "above": null,
+          "below": null
+        },
+        "tail": {
+          "colour": "grey",
+          "shape": "Pale grey upper tail."
+        }
+      }
+    }
+  ],
+  "viewNotes": [
+    {
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "any",
+      "season": "breeding",
+      "note": "Breeding plumage is only partly described: a short tail with a shallow fork and a white vent."
+    },
+    {
+      "view": "perched-front",
+      "age": "adult",
+      "sex": "any",
+      "season": "breeding",
+      "note": "The breeding face and throat were not described."
+    },
+    {
+      "view": "perched-back",
+      "age": "adult",
+      "sex": "any",
+      "season": "breeding",
+      "note": "Short grey tail. Newman uses that against the white tail of Antarctic Tern."
+    },
+    {
+      "view": "flight-above",
+      "age": "adult",
+      "sex": "any",
+      "season": "breeding",
+      "note": "A breeding flight pattern was not described beyond the short grey tail."
+    },
+    {
+      "view": "flight-below",
+      "age": "adult",
+      "sex": "any",
+      "season": "breeding",
+      "note": "White vent. Other underpart colours were not named."
+    },
+    {
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "any",
+      "season": "non-breeding",
+      "note": "Pale grey upper tail and a black line from behind the eye to a black nape. The bill is thicker and heavier than on other marsh terns."
+    },
+    {
+      "view": "perched-front",
+      "age": "adult",
+      "sex": "any",
+      "season": "non-breeding",
+      "note": "Less extensive black on the head than other marsh terns."
+    },
+    {
+      "view": "perched-back",
+      "age": "adult",
+      "sex": "any",
+      "season": "non-breeding",
+      "note": "Pale grey rump, not white, and a pale grey upper tail."
+    },
+    {
+      "view": "flight-above",
+      "age": "adult",
+      "sex": "any",
+      "season": "non-breeding",
+      "note": "Newman writes planer upper wings, and a less buoyant flight than other marsh terns."
+    },
+    {
+      "view": "flight-below",
+      "age": "adult",
+      "sex": "any",
+      "season": "non-breeding",
+      "note": "Underpart colours in non-breeding plumage were not named."
+    }
+  ],
+  "calls": [
+    {
+      "sex": "any",
+      "type": "call",
+      "description": "A characteristic dry kerk. Grade A call from Mumbai, India. The filename is XC135814-DSCN9952.mp3 and does not name the bird.",
+      "recordings": [
+        {
+          "key": "xeno-canto/XC135814",
+          "source": "https://xeno-canto.org/135814",
+          "fileUrl": "https://xeno-canto.org/sounds/uploaded/WHMHZHCMPX/XC135814-DSCN9952.mp3",
+          "author": "Sushant more",
+          "license": "CC BY-NC-SA 3.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/3.0/",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ]
+    }
+  ],
+  "images": [
+    {
+      "key": "chlidonias-hybrida/side.jpg",
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "any",
+      "season": "breeding",
+      "source": "https://www.inaturalist.org/observations/346513305",
+      "fileUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/631655983/large.jpg",
+      "author": "leuli",
+      "license": "CC BY-NC 4.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+      "aiGenerated": false,
+      "hosted": false,
+      "alt": "Whiskered Tern standing in shallow water, dark cap and pale cheek",
+      "caption": "Whiskered Tern in the Ehlanzeni district, standing in shallow water with a dark cap, a pale cheek and a red bill. Newman’s breeding description names the short grey tail and white vent, not these head colours."
+    }
+  ],
+  "research": {
+    "confidence": "medium",
+    "needsReview": true,
+    "note": "Newman calls it an uncommon resident, so status is resident and all twelve months are listed. Breeding plumage is only the short grey tail, shallow fork and white vent, which is why this needs review. White-cheeked Tern and Antarctic Tern are comparison species in Newman and are not in this list. Population figures and the Kemp code NB were left unchanged."
+  },
+  "status": "resident",
+  "similar": [
+    {
+      "slug": "chlidonias-leucopterus",
+      "note": "White-winged Tern has a black ear-spot, a paler rump, a weaker bill and a more buoyant flight. Its non-breeding tail is white rather than pale grey."
+    }
+  ],
+  "monthsPresent": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+  ]
 }

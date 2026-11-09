@@ -1,9 +1,9 @@
 {
   "source": "xeno-canto explore catalogue, API v3 recording fields",
   "counts": {
-    "slots": 299,
+    "slots": 303,
     "swapped": 17,
-    "added": 197,
+    "added": 201,
     "kept": 57,
     "none": 28,
     "cleaned": 0
@@ -4575,6 +4575,62 @@
       "quality": "A",
       "country": "South Africa",
       "locality": "Bela-Bela Local Municipality (near Renostervlei), Waterberg District Municipality, Limpopo",
+      "cleaned": false,
+      "license": "CC BY-NC-SA 4.0"
+    },
+    {
+      "slug": "chlidonias-hybrida",
+      "scientificName": "Chlidonias hybrida",
+      "index": 0,
+      "type": "call",
+      "action": "added",
+      "from": [],
+      "to": "135814",
+      "quality": "A",
+      "country": "India",
+      "locality": "Mumbai, Mumbai Suburban, Maharashtra",
+      "cleaned": false,
+      "license": "CC BY-NC-SA 3.0"
+    },
+    {
+      "slug": "chlidonias-leucopterus",
+      "scientificName": "Chlidonias leucopterus",
+      "index": 0,
+      "type": "call",
+      "action": "added",
+      "from": [],
+      "to": "307306",
+      "quality": "A",
+      "country": "South Africa",
+      "locality": "Bushwillow Estate, Vaalkop Dam Nature Reserve, near Beestekraal, North West",
+      "cleaned": false,
+      "license": "CC BY-NC-SA 4.0"
+    },
+    {
+      "slug": "chroicocephalus-cirrocephalus",
+      "scientificName": "Chroicocephalus cirrocephalus",
+      "index": 0,
+      "type": "call",
+      "action": "added",
+      "from": [],
+      "to": "277587",
+      "quality": "A",
+      "country": "South Africa",
+      "locality": "Port Elizabeth, Port Elizabeth, Eastern Cape",
+      "cleaned": false,
+      "license": "CC BY-NC-SA 4.0"
+    },
+    {
+      "slug": "rynchops-flavirostris",
+      "scientificName": "Rynchops flavirostris",
+      "index": 0,
+      "type": "call",
+      "action": "added",
+      "from": [],
+      "to": "608119",
+      "quality": "A",
+      "country": "Uganda",
+      "locality": "Kazinga Channel near Mweya, Queen Elizabeth II National Park, Western Region",
       "cleaned": false,
       "license": "CC BY-NC-SA 4.0"
     }
