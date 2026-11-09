@@ -8,7 +8,7 @@
   },
   "family": "ploceidae",
   "habitat": "Dry thornveld, often near settlements. The sexes are alike.",
-  "summary": "A common resident. The bill is pink, the forehead is finely scaled, and the black wing feathers are edged white. It looks bearded. The sexes are alike. The immature is duller, with a horn-coloured bill. Disturbed birds chatter. Newman prints #VALUE! for the size, so the size is omitted. The Kemp paper name Scalyfeathered Finch and the code VB were left unchanged.",
+  "summary": "A common resident. The bill is pink, the forehead is finely scaled, and the black wing feathers are edged white. It looks bearded. The sexes are alike. The immature is duller, with a horn-coloured bill. Disturbed birds chatter. Newman’s size line is unreadable, so the size is omitted. The Kemp paper name Scalyfeathered Finch and the code VB were left unchanged.",
   "sampleData": false,
   "similar": [
     {
@@ -225,7 +225,7 @@
   "research": {
     "confidence": "medium",
     "needsReview": true,
-    "note": "Newman calls it a common resident, and Avibase does not mark it rare, so all twelve months are listed. The printed size is #VALUE!, so the size is omitted. No flight photograph was found. The grade A call is from Namibia. Population figures and the Kemp name Scalyfeathered Finch were left unchanged."
+    "note": "Newman calls it a common resident, and Avibase does not mark it rare, so all twelve months are listed. The size line is unreadable, so the size is omitted. No flight photograph was found. The grade A call is from Namibia. Population figures and the Kemp name Scalyfeathered Finch were left unchanged."
   },
   "status": "resident",
   "monthsPresent": [
