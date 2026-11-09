@@ -1,9 +1,9 @@
 {
   "source": "xeno-canto explore catalogue, API v3 recording fields",
   "counts": {
-    "slots": 230,
+    "slots": 232,
     "swapped": 17,
-    "added": 130,
+    "added": 132,
     "kept": 57,
     "none": 26,
     "cleaned": 0
@@ -3599,6 +3599,34 @@
       "quality": "A",
       "country": "Malawi",
       "locality": "Dzalamyama - s of lodge nr dambo, Central Region",
+      "cleaned": false,
+      "license": "CC BY-NC-SA 4.0"
+    },
+    {
+      "slug": "dicrurus-adsimilis",
+      "scientificName": "Dicrurus adsimilis",
+      "index": 0,
+      "type": "call",
+      "action": "added",
+      "from": [],
+      "to": "298129",
+      "quality": "A",
+      "country": "South Africa",
+      "locality": "Grahamstown, Western District, Eastern Cape",
+      "cleaned": false,
+      "license": "CC BY-NC-SA 4.0"
+    },
+    {
+      "slug": "dicrurus-ludwigii",
+      "scientificName": "Dicrurus ludwigii",
+      "index": 0,
+      "type": "call",
+      "action": "added",
+      "from": [],
+      "to": "1030331",
+      "quality": "A",
+      "country": "South Africa",
+      "locality": "Kruger Park, Ehlanzeni District Municipality, Mpumalanga",
       "cleaned": false,
       "license": "CC BY-NC-SA 4.0"
     }

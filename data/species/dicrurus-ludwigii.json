@@ -7,8 +7,45 @@
     "af": "Kleinbyvanger"
   },
   "family": "dicruridae",
-  "summary": "The details for this species have not been published yet.",
-  "sampleData": true,
+  "status": "resident",
+  "monthsPresent": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+  ],
+  "size": {
+    "lengthCm": {
+      "min": 19,
+      "max": 19
+    },
+    "note": "Newman's Birds gives 19 cm."
+  },
+  "habitat": "Singly or in pairs in eastern evergreen forest, riparian forest and dense woodland, in the mid-stratum, hawking from a perch.",
+  "summary": "A common, localised resident. Black, with ruby-red eyes and splayed outer tail feathers, but only a shallow fork. The call is a loud cherit cherit or cherit-wit-wit, with other strident sounds and imitations. The stub has no Kemp estimate and none was added.",
+  "sampleData": false,
+  "similar": [
+    {
+      "slug": "dicrurus-adsimilis",
+      "note": "Fork-tailed Drongo has a deep fork. This bird has the same splayed outer feathers but only a shallow indentation."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Common Square-tailed Drongo",
+      "url": "https://newmansbirds.com/birds/common-square-tailed-drongo/",
+      "publisher": "Newman's Birds",
+      "year": 2026
+    }
+  ],
   "population": {
     "estimate": {
       "low": null,
@@ -21,8 +58,128 @@
     "notes": "No sourced Kruger estimate is currently available; taxonomy or later records require separate research.",
     "sources": []
   },
-  "variants": [],
-  "viewNotes": [],
-  "calls": [],
-  "images": []
+  "variants": [
+    {
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "marks": {
+        "bill": {
+          "colour": null,
+          "shape": null
+        },
+        "eye": {
+          "iris": "red",
+          "ring": null
+        },
+        "legs": {
+          "colour": null
+        },
+        "head": {
+          "crown": "black",
+          "face": "black",
+          "throat": "black",
+          "pattern": null
+        },
+        "upperparts": {
+          "back": "black",
+          "rump": null,
+          "pattern": null
+        },
+        "underparts": {
+          "breast": "black",
+          "belly": "black",
+          "pattern": null
+        },
+        "wings": {
+          "above": "black",
+          "below": null,
+          "pattern": null
+        },
+        "tail": {
+          "colour": "black",
+          "shape": "Splayed outer feathers with only a shallow fork."
+        }
+      }
+    }
+  ],
+  "viewNotes": [
+    {
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Black, with a ruby-red eye and only a shallow fork in the tail."
+    },
+    {
+      "view": "perched-front",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Black underparts and a ruby-red eye."
+    },
+    {
+      "view": "perched-back",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "The tail has splayed outer feathers and only a shallow indentation."
+    },
+    {
+      "view": "flight-above",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "It hawks from a perch. A separate flight pattern was not described."
+    },
+    {
+      "view": "flight-below",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Black below. The underside of the wing was not named."
+    }
+  ],
+  "calls": [
+    {
+      "sex": "any",
+      "type": "call",
+      "description": "A loud cherit! cherit! or cherit-wit-wit, plus other strident sounds and imitations. Newman does not separate the sexes. Grade A call from Satara, Kruger. The filename is kleinbyvanger-satara.mp3, the Afrikaans name.",
+      "recordings": [
+        {
+          "key": "xeno-canto/XC1030331",
+          "source": "https://xeno-canto.org/1030331",
+          "fileUrl": "https://xeno-canto.org/sounds/uploaded/TSMVYZCIWC/XC1030331-kleinbyvanger-satara.mp3",
+          "author": "Ehren Eksteen",
+          "license": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ]
+    }
+  ],
+  "images": [
+    {
+      "key": "dicrurus-ludwigii/side.jpg",
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "source": "https://www.inaturalist.org/observations/279439189",
+      "fileUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/501799051/large.jpg",
+      "author": "Marc Cronje",
+      "license": "CC BY-NC 4.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+      "aiGenerated": false,
+      "hosted": false,
+      "alt": "Common Square-tailed Drongo perched in Kruger woodland",
+      "caption": "Common Square-tailed Drongo perched in Kruger woodland. The tail shows only a slight fork."
+    }
+  ],
+  "research": {
+    "confidence": "medium",
+    "needsReview": false,
+    "note": "Status is resident and all twelve months are listed. Newman calls it a common, localised resident. The stub has no Kemp block and no estimate, and both were left that way."
+  }
 }

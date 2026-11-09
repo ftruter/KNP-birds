@@ -8493,14 +8493,79 @@
       "slug": "dicrurus-adsimilis",
       "scientificName": "Dicrurus adsimilis",
       "commonName": "Fork-tailed Drongo",
-      "images": [],
-      "recordings": [],
+      "images": [
+        {
+          "key": "dicrurus-adsimilis/side.jpg",
+          "author": "Lukas Zangl",
+          "licence": "CC BY 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by/4.0/",
+          "sourceUrl": "https://www.inaturalist.org/observations/392853470",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ],
+      "recordings": [
+        {
+          "key": "xeno-canto/XC298129",
+          "author": "Lynette Rudman",
+          "licence": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "sourceUrl": "https://xeno-canto.org/298129",
+          "aiGenerated": false,
+          "hosted": false,
+          "quality": "A",
+          "callType": "call"
+        }
+      ],
       "sources": [
         {
           "title": "Kemp A.C., Herholdt J.J., Whyte I. & Harrison J. (2001). Birds of the two largest national parks in South Africa: a method to generate estimates of population size for all species and assess their conservation ecology. S. Afr. J. Sci. 97: 393–403.",
           "url": "https://journals.co.za/doi/pdf/10.10520/EJC97367",
           "publisher": "South African Journal of Science",
           "year": 2001
+        },
+        {
+          "title": "Fork-tailed Drongo",
+          "url": "https://newmansbirds.com/birds/fork-tailed-drongo/",
+          "publisher": "Newman's Birds",
+          "year": 2026
+        }
+      ]
+    },
+    {
+      "slug": "dicrurus-ludwigii",
+      "scientificName": "Dicrurus ludwigii",
+      "commonName": "Common Square-tailed Drongo",
+      "images": [
+        {
+          "key": "dicrurus-ludwigii/side.jpg",
+          "author": "Marc Cronje",
+          "licence": "CC BY-NC 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+          "sourceUrl": "https://www.inaturalist.org/observations/279439189",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ],
+      "recordings": [
+        {
+          "key": "xeno-canto/XC1030331",
+          "author": "Ehren Eksteen",
+          "licence": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "sourceUrl": "https://xeno-canto.org/1030331",
+          "aiGenerated": false,
+          "hosted": false,
+          "quality": "A",
+          "callType": "call"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Common Square-tailed Drongo",
+          "url": "https://newmansbirds.com/birds/common-square-tailed-drongo/",
+          "publisher": "Newman's Birds",
+          "year": 2026
         }
       ]
     },

@@ -2370,6 +2370,26 @@
           }
         }
       ]
+    },
+    "dicrurus-adsimilis": {
+      "calls": [
+        {
+          "index": 0,
+          "quality": {
+            "xeno-canto/XC298129": "A"
+          }
+        }
+      ]
+    },
+    "dicrurus-ludwigii": {
+      "calls": [
+        {
+          "index": 0,
+          "quality": {
+            "xeno-canto/XC1030331": "A"
+          }
+        }
+      ]
     }
   }
 }
