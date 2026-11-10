@@ -70,6 +70,7 @@ test('the chats and flycatchers are sourced without inventing missing population
   }
   const nightingale = await readJson('data/species/luscinia-luscinia.json')
   assert.equal(nightingale.status, 'palearctic-migrant')
-  assert.equal(nightingale.size, undefined)
+  assert.equal(nightingale.size.lengthCm.min, 16)
+  assert.equal(nightingale.size.lengthCm.max, 16)
   assert.equal(kruger, 22)
 })
