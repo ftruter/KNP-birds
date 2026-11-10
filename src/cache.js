@@ -1,4 +1,5 @@
 import { resolveLocale } from './numbers.js'
+import { SEARCH_PATH, searchQuery } from './route.js'
 
 export const PAGE_CACHE =
   'public, max-age=300, s-maxage=3600, stale-while-revalidate=86400'
@@ -61,6 +62,11 @@ const formatsNumbers = (pathname) =>
   pathname !== '/app.js' &&
   pathname !== '/mcp/server-card'
 
+const isSearchPath = (path) =>
+  path === SEARCH_PATH ||
+  path === `${SEARCH_PATH}.md` ||
+  path === `${SEARCH_PATH}.json`
+
 export const cacheRequest = (url, version, acceptLanguage) => {
   const source = new URL(url)
   const sort = source.searchParams.get('sort')
@@ -69,9 +75,13 @@ export const cacheRequest = (url, version, acceptLanguage) => {
     source.pathname.length > 1 && source.pathname.endsWith('/')
       ? source.pathname.slice(0, -1)
       : source.pathname
+  const query = isSearchPath(path)
+    ? searchQuery(source.searchParams.get('q'))
+    : ''
   source.search = ''
   source.hash = ''
   if (version) source.searchParams.set('v', version)
+  if (query) source.searchParams.set('q', query)
   if (formatsNumbers(path)) {
     source.searchParams.set('lang', resolveLocale(acceptLanguage))
     const columns = path.endsWith('.md') ? null : listColumns(path)

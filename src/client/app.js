@@ -179,5 +179,36 @@ const bindZoom = () => {
   })
 }
 
+const typingIn = (target) =>
+  Boolean(
+    target &&
+    (target.isContentEditable ||
+      target.tagName === 'INPUT' ||
+      target.tagName === 'TEXTAREA' ||
+      target.tagName === 'SELECT'),
+  )
+
+const bindSearch = () => {
+  const input = document.querySelector('.site-search input[name="q"]')
+  if (!input) return
+  document.documentElement.classList.add('js')
+  document.addEventListener('keydown', (event) => {
+    if (event.key !== '/' || event.defaultPrevented) return
+    if (event.metaKey || event.ctrlKey || event.altKey) return
+    if (typingIn(event.target)) return
+    event.preventDefault()
+    input.focus()
+    input.select()
+  })
+  input.addEventListener('keydown', (event) => {
+    if (event.key !== 'Escape') return
+    event.preventDefault()
+    event.stopPropagation()
+    if (input.value) input.value = ''
+    else input.blur()
+  })
+}
+
 bindTables()
 bindZoom()
+bindSearch()
