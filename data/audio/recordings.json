@@ -654,6 +654,26 @@
         }
       ]
     },
+    "bradypterus-baboecala": {
+      "calls": [
+        {
+          "index": 0,
+          "quality": {
+            "xeno-canto/XC397750": "A"
+          }
+        }
+      ]
+    },
+    "bradypterus-barratti": {
+      "calls": [
+        {
+          "index": 0,
+          "quality": {
+            "xeno-canto/XC368199": "A"
+          }
+        }
+      ]
+    },
     "bubalornis-niger": {
       "calls": [
         {
@@ -999,6 +1019,16 @@
           "index": 0,
           "quality": {
             "xeno-canto/XC682094": "A"
+          }
+        }
+      ]
+    },
+    "catriscus-brevirostris": {
+      "calls": [
+        {
+          "index": 0,
+          "quality": {
+            "xeno-canto/XC930050": "A"
           }
         }
       ]
@@ -2136,6 +2166,16 @@
           "index": 0,
           "quality": {
             "xeno-canto/XC1093586": "A"
+          }
+        }
+      ]
+    },
+    "locustella-fluviatilis": {
+      "calls": [
+        {
+          "index": 0,
+          "quality": {
+            "xeno-canto/XC575434": "A"
           }
         }
       ]

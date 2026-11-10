@@ -1,10 +1,10 @@
 {
   "source": "xeno-canto explore catalogue, API v3 recording fields",
   "counts": {
-    "slots": 489,
+    "slots": 493,
     "swapped": 17,
     "added": 278,
-    "kept": 166,
+    "kept": 170,
     "none": 28,
     "cleaned": 0
   },
@@ -511,6 +511,38 @@
       "license": "CC BY-NC-SA 4.0"
     },
     {
+      "slug": "bradypterus-baboecala",
+      "scientificName": "Bradypterus baboecala",
+      "index": 0,
+      "type": "call",
+      "action": "kept",
+      "from": [
+        "397750"
+      ],
+      "to": "397750",
+      "quality": "A",
+      "country": "South Africa",
+      "locality": "Grahamstown",
+      "cleaned": false,
+      "license": "CC BY-NC-SA 4.0"
+    },
+    {
+      "slug": "bradypterus-barratti",
+      "scientificName": "Bradypterus barratti",
+      "index": 0,
+      "type": "call",
+      "action": "kept",
+      "from": [
+        "368199"
+      ],
+      "to": "368199",
+      "quality": "A",
+      "country": "South Africa",
+      "locality": "God's Window",
+      "cleaned": false,
+      "license": "CC BY-NC-SA 4.0"
+    },
+    {
       "slug": "bubalornis-niger",
       "scientificName": "Bubalornis niger",
       "index": 0,
@@ -717,6 +749,22 @@
       "quality": "A",
       "country": "Zambia",
       "locality": "Samala Camp, Manu Gate North Luangwa NP, Northern Province",
+      "cleaned": false,
+      "license": "CC BY-NC-SA 4.0"
+    },
+    {
+      "slug": "catriscus-brevirostris",
+      "scientificName": "Catriscus brevirostris",
+      "index": 0,
+      "type": "call",
+      "action": "kept",
+      "from": [
+        "930050"
+      ],
+      "to": "930050",
+      "quality": "A",
+      "country": "Gabon",
+      "locality": "Nyonié",
       "cleaned": false,
       "license": "CC BY-NC-SA 4.0"
     },
@@ -1708,6 +1756,22 @@
       "quality": "A",
       "country": "Namibia",
       "locality": "Halali, Oshikoto",
+      "cleaned": false,
+      "license": "CC BY-NC-SA 4.0"
+    },
+    {
+      "slug": "locustella-fluviatilis",
+      "scientificName": "Locustella fluviatilis",
+      "index": 0,
+      "type": "call",
+      "action": "kept",
+      "from": [
+        "575434"
+      ],
+      "to": "575434",
+      "quality": "A",
+      "country": "Estonia",
+      "locality": "Tartu",
       "cleaned": false,
       "license": "CC BY-NC-SA 4.0"
     },
