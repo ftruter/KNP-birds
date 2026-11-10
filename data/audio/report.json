@@ -1,10 +1,10 @@
 {
   "source": "xeno-canto explore catalogue, API v3 recording fields",
   "counts": {
-    "slots": 500,
+    "slots": 502,
     "swapped": 17,
     "added": 278,
-    "kept": 177,
+    "kept": 179,
     "none": 28,
     "cleaned": 0
   },
@@ -2759,6 +2759,22 @@
       "license": "CC BY-NC-SA 4.0"
     },
     {
+      "slug": "terpsiphone-viridis",
+      "scientificName": "Terpsiphone viridis",
+      "index": 0,
+      "type": "call",
+      "action": "kept",
+      "from": [
+        "1080072"
+      ],
+      "to": "1080072",
+      "quality": "A",
+      "country": "South Africa",
+      "locality": "Skukuza",
+      "cleaned": false,
+      "license": "CC BY-NC-SA 4.0"
+    },
+    {
       "slug": "threskiornis-aethiopicus",
       "scientificName": "Threskiornis aethiopicus",
       "index": 0,
@@ -4367,6 +4383,22 @@
       "locality": "Zhanteke lake, Aqmola province",
       "cleaned": false,
       "license": "CC BY-NC-SA 3.0"
+    },
+    {
+      "slug": "trochocercus-cyanomelas",
+      "scientificName": "Trochocercus cyanomelas",
+      "index": 0,
+      "type": "call",
+      "action": "kept",
+      "from": [
+        "416342"
+      ],
+      "to": "416342",
+      "quality": "A",
+      "country": "South Africa",
+      "locality": "Port Alfred",
+      "cleaned": false,
+      "license": "CC BY-NC-SA 4.0"
     },
     {
       "slug": "turdus-libonyana",
