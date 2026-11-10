@@ -7,8 +7,36 @@
     "af": "Volstruis"
   },
   "family": "struthionidae",
-  "summary": "The details for this species have not been published yet.",
-  "sampleData": true,
+  "size": {
+    "lengthCm": {
+      "min": 200,
+      "max": 200
+    },
+    "note": "Newman's Birds gives 2 m."
+  },
+  "habitat": "Pairs or groups, sometimes with many young, in woodland and wooded grassland in the east and in thornveld or grassland in the more arid west. Wild birds occur in isolated pockets, especially in large reserves.",
+  "summary": "A common resident. An enormous flightless bird. The immature is like a small, scruffy female and is usually with adults. The adult male's tail varies from whitish to grey or cinnamon-brown; the identification line says buff, grey or white. The male utters a lion-like roar. The Kemp name Ostrich and the code RB were left unchanged.",
+  "sampleData": false,
+  "sources": [
+    {
+      "title": "Common Ostrich",
+      "url": "https://newmansbirds.com/birds/common-ostrich/",
+      "publisher": "Newman's Birds",
+      "year": 2026
+    },
+    {
+      "title": "Avibase bird checklist — Kruger National Park",
+      "url": "https://avibase.bsc-eoc.org/checklist.jsp?region=ZA000003",
+      "publisher": "Avibase",
+      "year": null
+    },
+    {
+      "title": "Kemp A.C., Herholdt J.J., Whyte I. & Harrison J. (2001). Birds of the two largest national parks in South Africa: a method to generate estimates of population size for all species and assess their conservation ecology. S. Afr. J. Sci. 97: 393–403.",
+      "url": "https://journals.co.za/doi/pdf/10.10520/EJC97367",
+      "publisher": "South African Journal of Science",
+      "year": 2001
+    }
+  ],
   "population": {
     "estimate": {
       "low": 128,
@@ -35,8 +63,219 @@
     },
     "tierApplied": "D"
   },
-  "variants": [],
-  "viewNotes": [],
-  "calls": [],
-  "images": []
+  "variants": [
+    {
+      "age": "adult",
+      "sex": "male",
+      "season": "any",
+      "marks": {
+        "bill": {
+          "colour": null,
+          "shape": null
+        },
+        "eye": {
+          "iris": null,
+          "ring": null
+        },
+        "legs": {
+          "colour": null
+        },
+        "head": {
+          "crown": null,
+          "face": null,
+          "throat": null
+        },
+        "upperparts": {
+          "back": null,
+          "rump": null
+        },
+        "underparts": {
+          "breast": null,
+          "belly": null
+        },
+        "wings": {
+          "above": null,
+          "below": null
+        },
+        "tail": {
+          "colour": null,
+          "shape": "Adult male tail colour varies by region: whitish, grey or cinnamon-brown. The identification line says buff, grey or white."
+        }
+      }
+    },
+    {
+      "age": "adult",
+      "sex": "female",
+      "season": "any",
+      "marks": {
+        "bill": {
+          "colour": null,
+          "shape": null
+        },
+        "eye": {
+          "iris": null,
+          "ring": null
+        },
+        "legs": {
+          "colour": null
+        },
+        "head": {
+          "crown": null,
+          "face": null,
+          "throat": null,
+          "pattern": "The immature is like a small, scruffy female. The female plumage is not otherwise described."
+        },
+        "upperparts": {
+          "back": null,
+          "rump": null
+        },
+        "underparts": {
+          "breast": null,
+          "belly": null
+        },
+        "wings": {
+          "above": null,
+          "below": null
+        },
+        "tail": {
+          "colour": null,
+          "shape": null
+        }
+      }
+    },
+    {
+      "age": "immature",
+      "sex": "any",
+      "season": "any",
+      "marks": {
+        "bill": {
+          "colour": null,
+          "shape": null
+        },
+        "eye": {
+          "iris": null,
+          "ring": null
+        },
+        "legs": {
+          "colour": null
+        },
+        "head": {
+          "crown": null,
+          "face": null,
+          "throat": null,
+          "pattern": "The immature is like a small, scruffy female. The female plumage is not otherwise described."
+        },
+        "upperparts": {
+          "back": null,
+          "rump": null
+        },
+        "underparts": {
+          "breast": null,
+          "belly": null
+        },
+        "wings": {
+          "above": null,
+          "below": null
+        },
+        "tail": {
+          "colour": null,
+          "shape": null
+        }
+      }
+    }
+  ],
+  "viewNotes": [
+    {
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "male",
+      "season": "any",
+      "note": "Enormous and flightless. The tail may be whitish, grey or cinnamon-brown."
+    },
+    {
+      "view": "perched-back",
+      "age": "adult",
+      "sex": "male",
+      "season": "any",
+      "note": "The identification line gives the tail as buff, grey or white."
+    },
+    {
+      "view": "perched-side",
+      "age": "immature",
+      "sex": "any",
+      "season": "any",
+      "note": "Like a small, scruffy female, usually with adults."
+    },
+    {
+      "view": "flight-above",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Flightless. No flight plumage is described."
+    },
+    {
+      "view": "flight-below",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Flightless. No flight plumage is described."
+    }
+  ],
+  "calls": [
+    {
+      "sex": "male",
+      "type": "call",
+      "description": "The male utters a lion-like roar. The grade A recordings from South Africa are ND. The highest-ranked playable file is a grade A gurgle from Texas. A playable grade B call from Limpopo was not selected because the Texas file is a higher grade. The filename is XC845920-Vibrato1_(200701_0762).mp3.",
+      "recordings": [
+        {
+          "key": "xeno-canto/XC845920",
+          "source": "https://xeno-canto.org/845920",
+          "fileUrl": "https://xeno-canto.org/sounds/uploaded/WEWZUDAFQF/XC845920-Vibrato1_(200701_0762).mp3",
+          "author": "Michael Chiappone",
+          "license": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ]
+    }
+  ],
+  "images": [
+    {
+      "key": "struthio-camelus/side.jpg",
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "mixed",
+      "season": "any",
+      "source": "https://www.inaturalist.org/observations/264424760",
+      "fileUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/474854647/large.jpg",
+      "author": "sowadart",
+      "license": "CC BY-NC 4.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+      "aiGenerated": false,
+      "hosted": false,
+      "alt": "Common Ostriches in Kruger",
+      "caption": "Common Ostriches in Kruger, Ehlanzeni."
+    }
+  ],
+  "research": {
+    "confidence": "medium",
+    "needsReview": true,
+    "note": "Newman calls it a common resident, and Avibase does not mark it rare, so all twelve months are listed. The size is given as 2 m and stored as 200 cm. The male tail is not one colour, and the female plumage is not described beyond the immature comparison. The South African grade A recordings are ND. The selected file is from Texas. A grade B call from Limpopo exists. The iNaturalist account has no display name, so the login sowadart is credited. The Kemp name Ostrich and the code RB were left unchanged."
+  },
+  "status": "resident",
+  "monthsPresent": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+  ]
 }

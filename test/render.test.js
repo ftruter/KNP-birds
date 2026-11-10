@@ -320,18 +320,18 @@ test('markdown and json-facing copy keep the population label', async () => {
 })
 
 test('a species stub states that details are unpublished and skips empty sections', async () => {
-  const doc = await readJson('data/species/struthio-camelus.json')
+  const doc = await readJson('data/species/luscinia-luscinia.json')
   const html = renderSpeciesHtml({
     origin: 'https://birds.truter.world',
     doc,
     colourMap: new Map(),
     imagesAvailable: {},
   })
-  assert.match(html, /<h1>Common Ostrich<\/h1>/)
-  assert.match(html, /class="latin">Struthio camelus</)
-  assert.match(html, /class="afrikaans">Volstruis</)
+  assert.match(html, /<h1>Thrush Nightingale<\/h1>/)
+  assert.match(html, /class="latin">Luscinia luscinia</)
+  assert.match(html, /class="afrikaans">Lysternagtegaal</)
   assert.match(html, new RegExp(UNPUBLISHED_SPECIES))
-  assert.match(html, /href="\/family\/struthionidae"/)
+  assert.match(html, /href="\/family\/muscicapidae"/)
   assert.match(html, /128–512 mature individuals/)
   assert.match(html, /Kemp et al\. 2001/)
   assert.doesNotMatch(html, /No numeric estimate yet/)
@@ -366,10 +366,10 @@ test('a species stub states that details are unpublished and skips empty section
     previous = level
   }
   const markdown = renderSpeciesMarkdown({ doc, colourMap: new Map() })
-  assert.match(markdown, /^# Common Ostrich/)
-  assert.match(markdown, /Volstruis/)
+  assert.match(markdown, /^# Thrush Nightingale/)
+  assert.match(markdown, /Lysternagtegaal/)
   assert.match(markdown, new RegExp(UNPUBLISHED_SPECIES))
-  assert.match(markdown, /\[Struthionidae\]\(\/family\/struthionidae\)/)
+  assert.match(markdown, /\[Muscicapidae\]\(\/family\/muscicapidae\)/)
   assert.doesNotMatch(markdown, /## Photographs/)
   assert.doesNotMatch(markdown, /## Telling it apart/)
   assert.match(markdown, /## Population/)
@@ -387,7 +387,7 @@ test('a species stub states that details are unpublished and skips empty section
     doc: unnamed,
     colourMap: new Map(),
   })
-  assert.doesNotMatch(bareMd, /Volstruis/)
+  assert.doesNotMatch(bareMd, /Lysternagtegaal/)
   assert.doesNotMatch(bareMd, /null/)
 })
 

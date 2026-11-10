@@ -6,8 +6,8 @@
     "en": "Ostriches",
     "af": "Volstruis"
   },
-  "summary": "Field notes for this family are still to be written.",
-  "sampleData": true,
+  "summary": "Common Ostrich. An enormous flightless bird of woodland and grassland. The male tail colour varies, and the immature looks like a small, scruffy female.",
+  "sampleData": false,
   "species": [
     {
       "slug": "struthio-camelus",

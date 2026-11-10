@@ -1,10 +1,10 @@
 {
   "source": "xeno-canto explore catalogue, API v3 recording fields",
   "counts": {
-    "slots": 454,
+    "slots": 455,
     "swapped": 17,
     "added": 278,
-    "kept": 131,
+    "kept": 132,
     "none": 28,
     "cleaned": 0
   },
@@ -2222,6 +2222,22 @@
       "quality": "A",
       "country": "Zambia",
       "locality": "Nyachisala Forest, Mwinilunga",
+      "cleaned": false,
+      "license": "CC BY-NC-SA 4.0"
+    },
+    {
+      "slug": "struthio-camelus",
+      "scientificName": "Struthio camelus",
+      "index": 0,
+      "type": "call",
+      "action": "kept",
+      "from": [
+        "845920"
+      ],
+      "to": "845920",
+      "quality": "A",
+      "country": "United States",
+      "locality": "Valley Mills, Texas",
       "cleaned": false,
       "license": "CC BY-NC-SA 4.0"
     },

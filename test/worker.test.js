@@ -126,12 +126,12 @@ test('home json lists families and leaves the species index at /species', async 
 test('a species stub renders in html, markdown, and json', async () => {
   const { records } = await loadStore()
   const site = await app(records)
-  const html = await site.fetch('/species/struthio-camelus')
+  const html = await site.fetch('/species/luscinia-luscinia')
   assert.equal(html.status, 200)
   assert.equal(html.headers.get('content-type'), 'text/html; charset=utf-8')
   const htmlBody = await html.text()
-  assert.match(htmlBody, /Common Ostrich/)
-  assert.match(htmlBody, /Volstruis/)
+  assert.match(htmlBody, /Thrush Nightingale/)
+  assert.match(htmlBody, /Lysternagtegaal/)
   assert.match(
     htmlBody,
     /The details for this species have not been published yet/,
@@ -142,7 +142,7 @@ test('a species stub renders in html, markdown, and json', async () => {
     /<script type="module" defer src="\/app\.js\?v=[0-9a-f]+"><\/script>/,
   )
   assert.doesNotMatch(htmlBody, /<script(?! type="module")/i)
-  const markdown = await site.fetch('/species/struthio-camelus.md')
+  const markdown = await site.fetch('/species/luscinia-luscinia.md')
   assert.equal(
     markdown.headers.get('content-type'),
     'text/markdown; charset=utf-8',
@@ -151,16 +151,18 @@ test('a species stub renders in html, markdown, and json', async () => {
     await markdown.text(),
     /The details for this species have not been published yet/,
   )
-  const json = await (await site.fetch('/species/struthio-camelus.json')).json()
-  assert.equal(json.scientificName, 'Struthio camelus')
-  assert.equal(json.family, 'struthionidae')
+  const json = await (
+    await site.fetch('/species/luscinia-luscinia.json')
+  ).json()
+  assert.equal(json.scientificName, 'Luscinia luscinia')
+  assert.equal(json.family, 'muscicapidae')
   assert.deepEqual(json.variants, [])
   assert.deepEqual(json.calls, [])
   assert.deepEqual(json.images, [])
   assert.equal(json.population.estimate.low, 128)
   assert.equal(json.population.estimate.high, 512)
   assert.equal(json.population.unit, 'matureIndividuals')
-  assert.equal(json.commonNames.af, 'Volstruis')
+  assert.equal(json.commonNames.af, 'Lysternagtegaal')
 })
 
 test('a new family stub and the full families index render in every format', async () => {

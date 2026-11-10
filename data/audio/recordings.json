@@ -2712,6 +2712,16 @@
         }
       ]
     },
+    "struthio-camelus": {
+      "calls": [
+        {
+          "index": 0,
+          "quality": {
+            "xeno-canto/XC845920": "A"
+          }
+        }
+      ]
+    },
     "tachybaptus-ruficollis": {
       "calls": [
         {
