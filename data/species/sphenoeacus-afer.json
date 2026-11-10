@@ -1,14 +1,138 @@
 {
+  "size": {
+    "lengthCm": {
+      "min": 19,
+      "max": 23
+    },
+    "note": "Newman's Birds gives 19–23."
+  },
+  "habitat": "Long grass and bracken on hillsides, and open streams away from hills. It usually skulks, and sometimes perches on a tall stem.",
+  "summary": "A common endemic resident. It has a rusty cap, heavily marked upperparts, streaked underparts except in the eastern race, black malar streaks, and a long rufous tail with straggly feathers. The song is a burst, 'chirp-chirp-chirp does it tickle yoooou', and it also mews. There is no Kemp estimate.",
+  "variants": [
+    {
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "marks": {
+        "bill": {
+          "colour": null,
+          "shape": null
+        },
+        "eye": {
+          "iris": null,
+          "ring": null
+        },
+        "legs": {
+          "colour": null
+        },
+        "head": {
+          "crown": null,
+          "face": null,
+          "throat": null,
+          "pattern": "Rusty cap and black malar streaks."
+        },
+        "upperparts": {
+          "back": null,
+          "rump": null,
+          "pattern": "Heavily marked upperparts and a generally rusty colour."
+        },
+        "underparts": {
+          "breast": null,
+          "belly": null,
+          "pattern": "Streaked underparts, except the eastern race."
+        },
+        "wings": {
+          "above": null,
+          "below": null
+        },
+        "tail": {
+          "colour": "rufous",
+          "shape": "Long, with tapering straggly feathers."
+        }
+      }
+    }
+  ],
+  "viewNotes": [
+    {
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Rusty cap, black malar streaks and a long straggly rufous tail."
+    },
+    {
+      "view": "perched-front",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Streaked underparts, except the eastern race."
+    },
+    {
+      "view": "flight-above",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Flight plumage is not described apart from the long tail."
+    },
+    {
+      "view": "flight-below",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "The underside in flight is not described."
+    }
+  ],
+  "calls": [
+    {
+      "sex": "any",
+      "type": "song",
+      "description": "A burst of song, 'chirp-chirp-chirp does it tickle yoooou', and a cat-like mew. The grade A song is from Cape Point. The filename is CapeGrassbirdCapePoint2006-12-27.mp3.",
+      "recordings": [
+        {
+          "key": "xeno-canto/XC28640",
+          "source": "https://xeno-canto.org/28640",
+          "fileUrl": "https://xeno-canto.org/sounds/uploaded/BPSDQEOJWG/CapeGrassbirdCapePoint2006-12-27.mp3",
+          "author": "Patrik Åberg",
+          "license": "CC BY-NC-SA 3.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/3.0/",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ]
+    }
+  ],
+  "images": [
+    {
+      "key": "sphenoeacus-afer/side.jpg",
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "source": "https://www.inaturalist.org/observations/99908965",
+      "fileUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/166655856/large.jpeg",
+      "author": "Gigi Laidler",
+      "license": "CC BY-NC 4.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+      "aiGenerated": false,
+      "hosted": false,
+      "alt": "Cape Grassbird at Cape Point",
+      "caption": "Cape Grassbird at Cape Point."
+    }
+  ],
+  "research": {
+    "confidence": "medium",
+    "needsReview": true,
+    "note": "Newman calls it a common endemic resident, and Avibase does not mark it rare, so all twelve months are listed. Rusty is not a colour name, so the cap colour is left unset. There is no Kemp estimate. No Kruger photograph was found. The grade A song is from Cape Point and is CC BY-NC-SA 3.0."
+  },
   "kind": "species",
   "slug": "sphenoeacus-afer",
+  "family": "macrosphenidae",
+  "sampleData": false,
   "scientificName": "Sphenoeacus afer",
   "commonNames": {
     "en": "Cape Grassbird",
     "af": "Grasvoël"
   },
-  "family": "macrosphenidae",
-  "summary": "The details for this species have not been published yet.",
-  "sampleData": true,
   "population": {
     "estimate": {
       "low": null,
@@ -21,8 +145,33 @@
     "notes": "No sourced Kruger estimate is currently available; taxonomy or later records require separate research.",
     "sources": []
   },
-  "variants": [],
-  "viewNotes": [],
-  "calls": [],
-  "images": []
+  "status": "resident",
+  "monthsPresent": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+  ],
+  "sources": [
+    {
+      "title": "Cape Grassbird",
+      "url": "https://newmansbirds.com/birds/cape-grassbird/",
+      "publisher": "Newman's Birds",
+      "year": 2026
+    },
+    {
+      "title": "Avibase bird checklist — Kruger National Park",
+      "url": "https://avibase.bsc-eoc.org/checklist.jsp?region=ZA000003",
+      "publisher": "Avibase",
+      "year": null
+    }
+  ]
 }
