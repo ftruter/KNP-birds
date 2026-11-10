@@ -272,19 +272,8 @@
     {
       "sex": "female",
       "type": "song",
-      "description": "Females may give a simple song without imitation; the texts used here do not describe that song beyond saying it lacks mimicry. This grade B cut from Sweden has two singers. The recordist interprets the second singer, heard after the parabola turns at 0:55, as the female, and the first as the male. It was contributed to the female bird song project.",
-      "recordings": [
-        {
-          "key": "xeno-canto/XC481968",
-          "source": "https://xeno-canto.org/481968",
-          "fileUrl": "https://xeno-canto.org/sounds/uploaded/ICWIXOBEUN/XC481968-Two%20marsh_denoised.mp3",
-          "author": "Helge Malmgren",
-          "license": "CC BY-NC-SA 4.0",
-          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
-          "aiGenerated": false,
-          "hosted": false
-        }
-      ]
+      "description": "Females may give a simple song without imitation; the texts used here do not describe that song beyond saying it lacks mimicry. No uncontested female song is in the catalogue. XC481968 is labelled female, but a xeno-canto forum thread (topic 28677) argues its two singers are more likely two males, and XC652731 is labelled female and male.",
+      "recordings": []
     }
   ],
   "images": [
@@ -324,6 +313,6 @@
   "research": {
     "confidence": "medium",
     "needsReview": false,
-    "note": "Status is palearctic-migrant. Months are November–April from Raijmakers and SABAP1, which says arrival is mostly in December and departure is in April. SABAP1 also says it sings on the non-breeding grounds. No total length was published in the texts used here; Raijmakers gives wing 60–76 mm. No grade-A recording is labelled as a female. The female song is grade B from Sweden, and the female is the recordist’s interpretation of the second singer. The male song used is grade A from the Eastern Cape. A sharp Kruger photograph was not used because the only candidate was too blurred to show the marks. Chick down is not described."
+    "note": "Status is palearctic-migrant. Months are November–April from Raijmakers and SABAP1, which says arrival is mostly in December and departure is in April. SABAP1 also says it sings on the non-breeding grounds. No total length was published in the texts used here; Raijmakers gives wing 60–76 mm. No grade-A recording is labelled as a female. The female song slot stays empty: XC481968 (B, Sweden) is labelled female, but xeno-canto forum topic 28677 argues the two singers are more likely two males, and the recording opens with the singer the recordist takes to be the male; XC652731 (B, Poland) is labelled female and male. The male song used is grade A from the Eastern Cape. A sharp Kruger photograph was not used because the only candidate was too blurred to show the marks. Chick down is not described."
   }
 }
