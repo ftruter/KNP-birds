@@ -7,8 +7,42 @@
     "af": "Rooivink"
   },
   "family": "ploceidae",
-  "summary": "The details for this species have not been published yet.",
-  "sampleData": true,
+  "size": {
+    "lengthCm": {
+      "min": 14,
+      "max": 14
+    },
+    "note": "Newman's Birds gives 14 cm."
+  },
+  "habitat": "Reed beds, rank grassland, cultivations and vleis, including urban reed beds. In winter it forms nomadic flocks.",
+  "summary": "A common resident. The breeding male is red above, on the upper breast and the vent, with the front and the rest of the underparts black and the wings brown. The crown is black, not red. The female and non-breeding male are warm brown with a streaked breast. The summer call is a wheezy, spluttering zik-zik-zik and zayzayzayzayzay. The Kemp paper name Red Bishop and the code VB were left unchanged.",
+  "sampleData": false,
+  "similar": [
+    {
+      "slug": "euplectes-afer",
+      "note": "Yellow-crowned Bishop has a yellow crown and black underparts, not a red back and black crown."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Southern Red Bishop",
+      "url": "https://newmansbirds.com/birds/southern-red-bishop/",
+      "publisher": "Newman's Birds",
+      "year": 2026
+    },
+    {
+      "title": "Avibase bird checklist — Kruger National Park",
+      "url": "https://avibase.bsc-eoc.org/checklist.jsp?region=ZA000003",
+      "publisher": "Avibase",
+      "year": null
+    },
+    {
+      "title": "Kemp A.C., Herholdt J.J., Whyte I. & Harrison J. (2001). Birds of the two largest national parks in South Africa: a method to generate estimates of population size for all species and assess their conservation ecology. S. Afr. J. Sci. 97: 393–403.",
+      "url": "https://journals.co.za/doi/pdf/10.10520/EJC97367",
+      "publisher": "South African Journal of Science",
+      "year": 2001
+    }
+  ],
   "population": {
     "estimate": {
       "low": 2048,
@@ -35,8 +69,275 @@
     },
     "tierApplied": "D"
   },
-  "variants": [],
-  "viewNotes": [],
-  "calls": [],
-  "images": []
+  "variants": [
+    {
+      "age": "adult",
+      "sex": "male",
+      "season": "breeding",
+      "marks": {
+        "bill": {
+          "colour": null,
+          "shape": null
+        },
+        "eye": {
+          "iris": null,
+          "ring": null
+        },
+        "legs": {
+          "colour": null
+        },
+        "head": {
+          "crown": "black",
+          "face": "black",
+          "throat": null,
+          "pattern": "Black crown, not a red crown. Red above and on the upper breast. Front black."
+        },
+        "upperparts": {
+          "back": "red",
+          "rump": null
+        },
+        "underparts": {
+          "breast": "red",
+          "belly": "black",
+          "pattern": "Upper breast and vent red. The rest of the underparts black."
+        },
+        "wings": {
+          "above": "brown",
+          "below": null,
+          "pattern": "Wings brown."
+        },
+        "tail": {
+          "colour": null,
+          "shape": null
+        }
+      }
+    },
+    {
+      "age": "adult",
+      "sex": "male",
+      "season": "non-breeding",
+      "marks": {
+        "bill": {
+          "colour": null,
+          "shape": null
+        },
+        "eye": {
+          "iris": null,
+          "ring": null
+        },
+        "legs": {
+          "colour": null
+        },
+        "head": {
+          "crown": null,
+          "face": null,
+          "throat": null
+        },
+        "upperparts": {
+          "back": "brown",
+          "rump": null,
+          "pattern": "Warm brown."
+        },
+        "underparts": {
+          "breast": "brown",
+          "belly": null,
+          "pattern": "Warm brown, with a streaked breast."
+        },
+        "wings": {
+          "above": null,
+          "below": null
+        },
+        "tail": {
+          "colour": null,
+          "shape": null
+        }
+      }
+    },
+    {
+      "age": "adult",
+      "sex": "female",
+      "season": "any",
+      "marks": {
+        "bill": {
+          "colour": null,
+          "shape": null
+        },
+        "eye": {
+          "iris": null,
+          "ring": null
+        },
+        "legs": {
+          "colour": null
+        },
+        "head": {
+          "crown": null,
+          "face": null,
+          "throat": null
+        },
+        "upperparts": {
+          "back": "brown",
+          "rump": null,
+          "pattern": "Warm brown."
+        },
+        "underparts": {
+          "breast": "brown",
+          "belly": null,
+          "pattern": "Warm brown, with a streaked breast."
+        },
+        "wings": {
+          "above": null,
+          "below": null
+        },
+        "tail": {
+          "colour": null,
+          "shape": null
+        }
+      }
+    }
+  ],
+  "viewNotes": [
+    {
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "male",
+      "season": "breeding",
+      "note": "Breeding male: red above and on the upper breast, black in front and below, brown wings, black crown."
+    },
+    {
+      "view": "perched-front",
+      "age": "adult",
+      "sex": "male",
+      "season": "breeding",
+      "note": "Black front and red upper breast."
+    },
+    {
+      "view": "perched-back",
+      "age": "adult",
+      "sex": "male",
+      "season": "breeding",
+      "note": "Red above and brown wings."
+    },
+    {
+      "view": "flight-above",
+      "age": "adult",
+      "sex": "male",
+      "season": "breeding",
+      "note": "A flight pattern was not described."
+    },
+    {
+      "view": "flight-below",
+      "age": "adult",
+      "sex": "male",
+      "season": "breeding",
+      "note": "The underwing was not described."
+    },
+    {
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "any",
+      "season": "non-breeding",
+      "note": "Female and non-breeding male: warm brown with a streaked breast."
+    },
+    {
+      "view": "perched-front",
+      "age": "adult",
+      "sex": "any",
+      "season": "non-breeding",
+      "note": "Streaked breast."
+    },
+    {
+      "view": "perched-back",
+      "age": "adult",
+      "sex": "any",
+      "season": "non-breeding",
+      "note": "Warm brown above."
+    },
+    {
+      "view": "flight-above",
+      "age": "adult",
+      "sex": "any",
+      "season": "non-breeding",
+      "note": "A flight pattern was not described."
+    },
+    {
+      "view": "flight-below",
+      "age": "adult",
+      "sex": "any",
+      "season": "non-breeding",
+      "note": "The underwing was not described."
+    }
+  ],
+  "calls": [
+    {
+      "sex": "male",
+      "type": "call",
+      "description": "In summer, a wheezy, spluttering zik-zik-zik and zayzayzayzayzay. Grade A call from near Buffelsvallei, North West. The filename is XC671581-8 SR Bishop and flying away.mp3.",
+      "recordings": [
+        {
+          "key": "xeno-canto/XC671581",
+          "source": "https://xeno-canto.org/671581",
+          "fileUrl": "https://xeno-canto.org/sounds/uploaded/HMBDEWEZVS/XC671581-8%20SR%20Bishop%20and%20flying%20away.mp3",
+          "author": "Tony Archer",
+          "license": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ]
+    }
+  ],
+  "images": [
+    {
+      "key": "euplectes-orix/side-male.jpg",
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "male",
+      "season": "breeding",
+      "source": "https://www.inaturalist.org/observations/270757890",
+      "fileUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/486970464/large.jpg",
+      "author": "Rosario Douglas",
+      "license": "CC BY 4.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by/4.0/",
+      "aiGenerated": false,
+      "hosted": false,
+      "alt": "Breeding male Southern Red Bishop in Kruger, red above and black below",
+      "caption": "Breeding male Southern Red Bishop in Kruger, Ehlanzeni, red above and black below."
+    },
+    {
+      "key": "euplectes-orix/side-nonbreeding.jpg",
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "any",
+      "season": "non-breeding",
+      "source": "https://www.inaturalist.org/observations/309674085",
+      "fileUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/558842592/large.jpg",
+      "author": "Лариса Артемьева",
+      "license": "CC0 1.0",
+      "licenceUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "aiGenerated": false,
+      "hosted": false,
+      "alt": "Southern Red Bishop at Mopani, Kruger, warm brown and streaked",
+      "caption": "Southern Red Bishop at Mopani, Kruger, warm brown with a streaked breast, the female and non-breeding plumage."
+    }
+  ],
+  "research": {
+    "confidence": "medium",
+    "needsReview": true,
+    "note": "Newman calls it a common resident, and Avibase does not mark it rare, so all twelve months are listed. It is nomadic in winter. The Kemp code VB was left unchanged. The breeding male’s black crown is the distinction from Black-winged Bishop, which is not in this list. No flight photograph was found. Population figures and the Kemp name Red Bishop were left unchanged."
+  },
+  "status": "resident",
+  "monthsPresent": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+  ]
 }

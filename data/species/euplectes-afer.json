@@ -7,8 +7,42 @@
     "af": "Goudgeelvink"
   },
   "family": "ploceidae",
-  "summary": "The details for this species have not been published yet.",
-  "sampleData": true,
+  "size": {
+    "lengthCm": {
+      "min": 12,
+      "max": 12
+    },
+    "note": "Newman's Birds gives 12 cm."
+  },
+  "habitat": "Vleis, dams, grassland and cultivations when breeding. Otherwise it wanders widely in flocks, often with other weavers.",
+  "summary": "A common resident. The breeding male has a yellow crown, nape and back, black underparts, a black bill and pink legs. He displays with puffed plumage and whirring wings, making buzzing sounds. The female and non-breeding male are small and compact, with a dark mantle and a whitish belly. The Kemp paper name Golden Bishop and the code VB were left unchanged.",
+  "sampleData": false,
+  "similar": [
+    {
+      "slug": "euplectes-orix",
+      "note": "Southern Red Bishop is red and black in breeding plumage. Yellow-crowned Bishop has a yellow crown and black underparts."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Yellow-crowned Bishop",
+      "url": "https://newmansbirds.com/birds/yellow-crowned-bishop/",
+      "publisher": "Newman's Birds",
+      "year": 2026
+    },
+    {
+      "title": "Avibase bird checklist — Kruger National Park",
+      "url": "https://avibase.bsc-eoc.org/checklist.jsp?region=ZA000003",
+      "publisher": "Avibase",
+      "year": null
+    },
+    {
+      "title": "Kemp A.C., Herholdt J.J., Whyte I. & Harrison J. (2001). Birds of the two largest national parks in South Africa: a method to generate estimates of population size for all species and assess their conservation ecology. S. Afr. J. Sci. 97: 393–403.",
+      "url": "https://journals.co.za/doi/pdf/10.10520/EJC97367",
+      "publisher": "South African Journal of Science",
+      "year": 2001
+    }
+  ],
   "population": {
     "estimate": {
       "low": 128,
@@ -35,8 +69,257 @@
     },
     "tierApplied": "D"
   },
-  "variants": [],
-  "viewNotes": [],
-  "calls": [],
-  "images": []
+  "variants": [
+    {
+      "age": "adult",
+      "sex": "male",
+      "season": "breeding",
+      "marks": {
+        "bill": {
+          "colour": "black",
+          "shape": null
+        },
+        "eye": {
+          "iris": null,
+          "ring": null
+        },
+        "legs": {
+          "colour": "pink"
+        },
+        "head": {
+          "crown": "yellow",
+          "face": null,
+          "throat": null,
+          "pattern": "Yellow crown and nape."
+        },
+        "upperparts": {
+          "back": "yellow",
+          "rump": null
+        },
+        "underparts": {
+          "breast": "black",
+          "belly": "black"
+        },
+        "wings": {
+          "above": null,
+          "below": null
+        },
+        "tail": {
+          "colour": null,
+          "shape": null
+        }
+      }
+    },
+    {
+      "age": "adult",
+      "sex": "male",
+      "season": "non-breeding",
+      "marks": {
+        "bill": {
+          "colour": null,
+          "shape": null
+        },
+        "eye": {
+          "iris": null,
+          "ring": null
+        },
+        "legs": {
+          "colour": null
+        },
+        "head": {
+          "crown": null,
+          "face": null,
+          "throat": null
+        },
+        "upperparts": {
+          "back": "black",
+          "rump": null,
+          "pattern": "Dark mantle."
+        },
+        "underparts": {
+          "breast": null,
+          "belly": "white",
+          "pattern": "Whitish belly. Newman says the female and non-breeding male are small and compact."
+        },
+        "wings": {
+          "above": null,
+          "below": null
+        },
+        "tail": {
+          "colour": null,
+          "shape": null
+        }
+      }
+    },
+    {
+      "age": "adult",
+      "sex": "female",
+      "season": "any",
+      "marks": {
+        "bill": {
+          "colour": null,
+          "shape": null
+        },
+        "eye": {
+          "iris": null,
+          "ring": null
+        },
+        "legs": {
+          "colour": null
+        },
+        "head": {
+          "crown": null,
+          "face": null,
+          "throat": null
+        },
+        "upperparts": {
+          "back": "black",
+          "rump": null,
+          "pattern": "Dark mantle."
+        },
+        "underparts": {
+          "breast": null,
+          "belly": "white",
+          "pattern": "Whitish belly. Newman says the female and non-breeding male are small and compact."
+        },
+        "wings": {
+          "above": null,
+          "below": null
+        },
+        "tail": {
+          "colour": null,
+          "shape": null
+        }
+      }
+    }
+  ],
+  "viewNotes": [
+    {
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "male",
+      "season": "breeding",
+      "note": "Breeding male: yellow crown, nape and back, black underparts, black bill and pink legs."
+    },
+    {
+      "view": "perched-front",
+      "age": "adult",
+      "sex": "male",
+      "season": "breeding",
+      "note": "Black underparts and a yellow crown."
+    },
+    {
+      "view": "perched-back",
+      "age": "adult",
+      "sex": "male",
+      "season": "breeding",
+      "note": "Yellow nape and back."
+    },
+    {
+      "view": "flight-above",
+      "age": "adult",
+      "sex": "male",
+      "season": "breeding",
+      "note": "A flight pattern was not described."
+    },
+    {
+      "view": "flight-below",
+      "age": "adult",
+      "sex": "male",
+      "season": "breeding",
+      "note": "The underwing was not described."
+    },
+    {
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "any",
+      "season": "non-breeding",
+      "note": "Female and non-breeding male: small and compact, dark mantle and whitish belly."
+    },
+    {
+      "view": "perched-front",
+      "age": "adult",
+      "sex": "any",
+      "season": "non-breeding",
+      "note": "Whitish belly. The rest of the non-breeding face was not described."
+    },
+    {
+      "view": "perched-back",
+      "age": "adult",
+      "sex": "any",
+      "season": "non-breeding",
+      "note": "Dark mantle."
+    },
+    {
+      "view": "flight-above",
+      "age": "adult",
+      "sex": "any",
+      "season": "non-breeding",
+      "note": "A flight pattern was not described."
+    },
+    {
+      "view": "flight-below",
+      "age": "adult",
+      "sex": "any",
+      "season": "non-breeding",
+      "note": "The underwing was not described."
+    }
+  ],
+  "calls": [
+    {
+      "sex": "male",
+      "type": "call",
+      "description": "The breeding male makes various buzzing sounds while displaying with puffed plumage and rapidly whirring wings. Grade A call from Arrozal Nossa Senhora do Rosário, Faro, Portugal. No southern African grade A recording outranked it. The filename is XC829310-230908-171338Arcebispo.mp3.",
+      "recordings": [
+        {
+          "key": "xeno-canto/XC829310",
+          "source": "https://xeno-canto.org/829310",
+          "fileUrl": "https://xeno-canto.org/sounds/uploaded/JYPQCEFKAM/XC829310-230908-171338Arcebispo.mp3",
+          "author": "Nelson Conceição",
+          "license": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ]
+    }
+  ],
+  "images": [
+    {
+      "key": "euplectes-afer/side-male.jpg",
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "male",
+      "season": "breeding",
+      "source": "https://www.inaturalist.org/observations/156382788",
+      "fileUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/270413356/large.jpeg",
+      "author": "Justin Ponder",
+      "license": "CC BY 4.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by/4.0/",
+      "aiGenerated": false,
+      "hosted": false,
+      "alt": "Breeding male Yellow-crowned Bishop in Kruger, yellow crown and black body, distant in grass",
+      "caption": "Breeding male Yellow-crowned Bishop in Kruger, Ehlanzeni, distant in the grass, with a yellow crown and a black body."
+    }
+  ],
+  "research": {
+    "confidence": "medium",
+    "needsReview": true,
+    "note": "Newman calls it a common resident, and Avibase does not mark it rare, so all twelve months are listed. It is nomadic outside the breeding season. The Kemp code VB was left unchanged. The only Kruger photograph is a distant breeding male. No non-breeding photograph and no flight photograph were found. The grade A call is from Portugal. Population figures and the Kemp name Golden Bishop were left unchanged."
+  },
+  "status": "resident",
+  "monthsPresent": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+  ]
 }

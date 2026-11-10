@@ -7,8 +7,42 @@
     "af": "Geelwewer"
   },
   "family": "ploceidae",
-  "summary": "The details for this species have not been published yet.",
-  "sampleData": true,
+  "size": {
+    "lengthCm": {
+      "min": 16,
+      "max": 16
+    },
+    "note": "Newman's Birds gives 16 cm."
+  },
+  "habitat": "Eastern coastal and littoral bush, and inland along rivers. It nests in reeds and trees.",
+  "summary": "A common resident. Both sexes are all-yellow, and the bill is dark. It is the palest yellow weaver, slightly greener above when not breeding, with a stubby bill and a red eye. The immature resembles the female, and the female was otherwise not described. The call is a harsh zik and a soft swizzling. Avibase marks it rare or accidental in Kruger, so the months are unset. The Kemp paper name Yellow Weaver and the code VB were left unchanged.",
+  "sampleData": false,
+  "similar": [
+    {
+      "slug": "ploceus-xanthops",
+      "note": "Holub’s Golden Weaver has an orange wash from the chin to the upper breast. Eastern Golden Weaver is the palest yellow, with a red eye and a stubby dark bill."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Eastern Golden (Yellow) Weaver",
+      "url": "https://newmansbirds.com/birds/eastern-golden-weaver/",
+      "publisher": "Newman's Birds",
+      "year": 2026
+    },
+    {
+      "title": "Avibase bird checklist — Kruger National Park",
+      "url": "https://avibase.bsc-eoc.org/checklist.jsp?region=ZA000003",
+      "publisher": "Avibase",
+      "year": null
+    },
+    {
+      "title": "Kemp A.C., Herholdt J.J., Whyte I. & Harrison J. (2001). Birds of the two largest national parks in South Africa: a method to generate estimates of population size for all species and assess their conservation ecology. S. Afr. J. Sci. 97: 393–403.",
+      "url": "https://journals.co.za/doi/pdf/10.10520/EJC97367",
+      "publisher": "South African Journal of Science",
+      "year": 2001
+    }
+  ],
   "population": {
     "estimate": {
       "low": 64,
@@ -35,8 +69,166 @@
     },
     "tierApplied": "D"
   },
-  "variants": [],
-  "viewNotes": [],
-  "calls": [],
-  "images": []
+  "variants": [
+    {
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "marks": {
+        "bill": {
+          "colour": "black",
+          "shape": "Stubby and dark."
+        },
+        "eye": {
+          "iris": "red",
+          "ring": null
+        },
+        "legs": {
+          "colour": null
+        },
+        "head": {
+          "crown": "yellow",
+          "face": null,
+          "throat": null
+        },
+        "upperparts": {
+          "back": "yellow",
+          "rump": null,
+          "pattern": "Slightly greener above when not breeding. The palest yellow weaver."
+        },
+        "underparts": {
+          "breast": "yellow",
+          "belly": "yellow"
+        },
+        "wings": {
+          "above": null,
+          "below": null
+        },
+        "tail": {
+          "colour": null,
+          "shape": null
+        }
+      }
+    },
+    {
+      "age": "immature",
+      "sex": "any",
+      "season": "any",
+      "marks": {
+        "bill": {
+          "colour": null,
+          "shape": null
+        },
+        "eye": {
+          "iris": null,
+          "ring": null
+        },
+        "legs": {
+          "colour": null
+        },
+        "head": {
+          "crown": null,
+          "face": null,
+          "throat": null,
+          "pattern": "The immature resembles the female. The female was otherwise not described."
+        },
+        "upperparts": {
+          "back": null,
+          "rump": null
+        },
+        "underparts": {
+          "breast": null,
+          "belly": null
+        },
+        "wings": {
+          "above": null,
+          "below": null
+        },
+        "tail": {
+          "colour": null,
+          "shape": null
+        }
+      }
+    }
+  ],
+  "viewNotes": [
+    {
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "All-yellow, slightly greener above, with a stubby dark bill and a red eye."
+    },
+    {
+      "view": "perched-front",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Pale yellow face and a red eye."
+    },
+    {
+      "view": "perched-back",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Slightly greener above."
+    },
+    {
+      "view": "flight-above",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "A flight pattern was not described."
+    },
+    {
+      "view": "flight-below",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "The underwing was not described."
+    }
+  ],
+  "calls": [
+    {
+      "sex": "any",
+      "type": "call",
+      "description": "A harsh zik and a soft swizzling. Grade A call and song from near Port Alfred, with other species in the background. The filename is XC438157-Eastern Golden Weaver.mp3.",
+      "recordings": [
+        {
+          "key": "xeno-canto/XC438157",
+          "source": "https://xeno-canto.org/438157",
+          "fileUrl": "https://xeno-canto.org/sounds/uploaded/GQMCPIVNXX/XC438157-Eastern%20Golden%20Weaver.mp3",
+          "author": "Tim Cockcroft",
+          "license": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ]
+    }
+  ],
+  "images": [
+    {
+      "key": "ploceus-subaureus/side.jpg",
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "source": "https://www.inaturalist.org/observations/11044871",
+      "fileUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/15586005/large.jpg",
+      "author": "Andrew Deacon",
+      "license": "CC0 1.0",
+      "licenceUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "aiGenerated": false,
+      "hosted": false,
+      "alt": "Eastern Golden Weaver on the S25, Kruger, all-yellow and distant",
+      "caption": "Eastern Golden Weaver on the S25 at the Crocodile River, Kruger, all-yellow and distant. The red eye is not clear at this range."
+    }
+  ],
+  "research": {
+    "confidence": "medium",
+    "needsReview": true,
+    "note": "Newman calls it a common resident. Avibase lists it as African Golden-Weaver and marks it rare or accidental in Kruger, so the months are unset. The female was not described apart from the shared yellow plumage. The Kruger photograph is distant and does not show the red eye. No flight photograph was found. The grade A recording is from the Eastern Cape. Population figures and the Kemp name Yellow Weaver were left unchanged."
+  },
+  "status": "resident"
 }

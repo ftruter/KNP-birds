@@ -1,10 +1,10 @@
 {
   "source": "xeno-canto explore catalogue, API v3 recording fields",
   "counts": {
-    "slots": 390,
+    "slots": 408,
     "swapped": 17,
     "added": 278,
-    "kept": 67,
+    "kept": 85,
     "none": 28,
     "cleaned": 0
   },
@@ -232,6 +232,22 @@
       "license": "CC BY-NC-SA 4.0"
     },
     {
+      "slug": "amblyospiza-albifrons",
+      "scientificName": "Amblyospiza albifrons",
+      "index": 0,
+      "type": "song",
+      "action": "kept",
+      "from": [
+        "523322"
+      ],
+      "to": "523322",
+      "quality": "A",
+      "country": "Kenya",
+      "locality": "Diani Beach",
+      "cleaned": false,
+      "license": "CC BY-NC-SA 4.0"
+    },
+    {
       "slug": "aquila-nipalensis",
       "scientificName": "Aquila nipalensis",
       "index": 0,
@@ -363,6 +379,22 @@
       "quality": "A",
       "country": "South Africa",
       "locality": "Kruger Park (near Skukuza), Ehlanzeni District Municipality, Mpumalanga",
+      "cleaned": false,
+      "license": "CC BY-NC-SA 4.0"
+    },
+    {
+      "slug": "bubalornis-niger",
+      "scientificName": "Bubalornis niger",
+      "index": 0,
+      "type": "call",
+      "action": "kept",
+      "from": [
+        "1188498"
+      ],
+      "to": "1188498",
+      "quality": "A",
+      "country": "South Africa",
+      "locality": "Kruger near Sabie Park",
       "cleaned": false,
       "license": "CC BY-NC-SA 4.0"
     },
@@ -779,6 +811,86 @@
       "quality": "A",
       "country": "South Africa",
       "locality": "City of Cape Town (near Cape Town), City of Cape Town Metropolitan Municipality, Western Cape",
+      "cleaned": false,
+      "license": "CC BY-NC-SA 4.0"
+    },
+    {
+      "slug": "euplectes-afer",
+      "scientificName": "Euplectes afer",
+      "index": 0,
+      "type": "call",
+      "action": "kept",
+      "from": [
+        "829310"
+      ],
+      "to": "829310",
+      "quality": "A",
+      "country": "Portugal",
+      "locality": "Faro",
+      "cleaned": false,
+      "license": "CC BY-NC-SA 4.0"
+    },
+    {
+      "slug": "euplectes-albonotatus",
+      "scientificName": "Euplectes albonotatus",
+      "index": 0,
+      "type": "song",
+      "action": "kept",
+      "from": [
+        "364551"
+      ],
+      "to": "364551",
+      "quality": "A",
+      "country": "South Africa",
+      "locality": "Vaalkop Dam, North West",
+      "cleaned": false,
+      "license": "CC BY-NC-SA 4.0"
+    },
+    {
+      "slug": "euplectes-ardens",
+      "scientificName": "Euplectes ardens",
+      "index": 0,
+      "type": "call",
+      "action": "kept",
+      "from": [
+        "364550"
+      ],
+      "to": "364550",
+      "quality": "A",
+      "country": "South Africa",
+      "locality": "Rietvlei Nature Reserve",
+      "cleaned": false,
+      "license": "CC BY-NC-SA 4.0"
+    },
+    {
+      "slug": "euplectes-axillaris",
+      "scientificName": "Euplectes axillaris",
+      "index": 0,
+      "type": "call",
+      "action": "kept",
+      "from": [
+        "441846"
+      ],
+      "to": "441846",
+      "quality": "B",
+      "country": "South Africa",
+      "locality": "near Bizana, Eastern Cape",
+      "cleaned": false,
+      "license": "CC BY-NC-SA 4.0"
+    },
+    {
+      "slug": "euplectes-orix",
+      "scientificName": "Euplectes orix",
+      "index": 0,
+      "type": "call",
+      "action": "kept",
+      "from": [
+        "671581"
+      ],
+      "to": "671581",
+      "quality": "A",
+      "country": "South Africa",
+      "locality": "near Buffelsvallei, North West",
       "cleaned": false,
       "license": "CC BY-NC-SA 4.0"
     },
@@ -1244,6 +1356,150 @@
       "license": "CC BY-NC-SA 4.0"
     },
     {
+      "slug": "plocepasser-mahali",
+      "scientificName": "Plocepasser mahali",
+      "index": 0,
+      "type": "call",
+      "action": "kept",
+      "from": [
+        "459505"
+      ],
+      "to": "459505",
+      "quality": "A",
+      "country": "South Africa",
+      "locality": "Heidelberg, Gauteng",
+      "cleaned": false,
+      "license": "CC BY-NC-SA 4.0"
+    },
+    {
+      "slug": "ploceus-capensis",
+      "scientificName": "Ploceus capensis",
+      "index": 0,
+      "type": "call",
+      "action": "kept",
+      "from": [
+        "1087110"
+      ],
+      "to": "1087110",
+      "quality": "A",
+      "country": "South Africa",
+      "locality": "Cape Town",
+      "cleaned": false,
+      "license": "CC BY-NC-SA 4.0"
+    },
+    {
+      "slug": "ploceus-cucullatus",
+      "scientificName": "Ploceus cucullatus",
+      "index": 0,
+      "type": "call",
+      "action": "kept",
+      "from": [
+        "1080073"
+      ],
+      "to": "1080073",
+      "quality": "A",
+      "country": "South Africa",
+      "locality": "Skukuza, Kruger",
+      "cleaned": false,
+      "license": "CC BY-NC-SA 4.0"
+    },
+    {
+      "slug": "ploceus-intermedius",
+      "scientificName": "Ploceus intermedius",
+      "index": 0,
+      "type": "call",
+      "action": "kept",
+      "from": [
+        "153490"
+      ],
+      "to": "153490",
+      "quality": "A",
+      "country": "Namibia",
+      "locality": "Anib Lodge, Kalahari",
+      "cleaned": false,
+      "license": "CC BY-NC-SA 3.0"
+    },
+    {
+      "slug": "ploceus-ocularis",
+      "scientificName": "Ploceus ocularis",
+      "index": 0,
+      "type": "call",
+      "action": "kept",
+      "from": [
+        "1149077"
+      ],
+      "to": "1149077",
+      "quality": "A",
+      "country": "South Africa",
+      "locality": "Kruger near Skukuza",
+      "cleaned": false,
+      "license": "CC BY-NC-SA 4.0"
+    },
+    {
+      "slug": "ploceus-subaureus",
+      "scientificName": "Ploceus subaureus",
+      "index": 0,
+      "type": "call",
+      "action": "kept",
+      "from": [
+        "438157"
+      ],
+      "to": "438157",
+      "quality": "A",
+      "country": "South Africa",
+      "locality": "near Port Alfred",
+      "cleaned": false,
+      "license": "CC BY-NC-SA 4.0"
+    },
+    {
+      "slug": "ploceus-velatus",
+      "scientificName": "Ploceus velatus",
+      "index": 0,
+      "type": "call",
+      "action": "kept",
+      "from": [
+        "1056542"
+      ],
+      "to": "1056542",
+      "quality": "A",
+      "country": "South Africa",
+      "locality": "Cape Town",
+      "cleaned": false,
+      "license": "CC BY-NC-SA 4.0"
+    },
+    {
+      "slug": "ploceus-xanthops",
+      "scientificName": "Ploceus xanthops",
+      "index": 0,
+      "type": "call",
+      "action": "kept",
+      "from": [
+        "368216"
+      ],
+      "to": "368216",
+      "quality": "B",
+      "country": "South Africa",
+      "locality": "near White River, Mbombela, Mpumalanga",
+      "cleaned": false,
+      "license": "CC BY-NC-SA 4.0"
+    },
+    {
+      "slug": "ploceus-xanthopterus",
+      "scientificName": "Ploceus xanthopterus",
+      "index": 0,
+      "type": "song",
+      "action": "kept",
+      "from": [
+        "933092"
+      ],
+      "to": "933092",
+      "quality": "A",
+      "country": "Malawi",
+      "locality": "Liwonde National Park",
+      "cleaned": false,
+      "license": "CC BY-NC-SA 4.0"
+    },
+    {
       "slug": "polemaetus-bellicosus",
       "scientificName": "Polemaetus bellicosus",
       "index": 0,
@@ -1276,6 +1532,38 @@
       "quality": "A",
       "country": "South Africa",
       "locality": "City of Cape Town (near Cape Town), City of Cape Town Metropolitan Municipality, Western Cape",
+      "cleaned": false,
+      "license": "CC BY-NC-SA 4.0"
+    },
+    {
+      "slug": "quelea-quelea",
+      "scientificName": "Quelea quelea",
+      "index": 0,
+      "type": "call",
+      "action": "kept",
+      "from": [
+        "368172"
+      ],
+      "to": "368172",
+      "quality": "A",
+      "country": "South Africa",
+      "locality": "Satara Camp, Kruger",
+      "cleaned": false,
+      "license": "CC BY-NC-SA 4.0"
+    },
+    {
+      "slug": "sporopipes-squamifrons",
+      "scientificName": "Sporopipes squamifrons",
+      "index": 0,
+      "type": "call",
+      "action": "kept",
+      "from": [
+        "1037291"
+      ],
+      "to": "1037291",
+      "quality": "A",
+      "country": "Namibia",
+      "locality": "Hardap",
       "cleaned": false,
       "license": "CC BY-NC-SA 4.0"
     },

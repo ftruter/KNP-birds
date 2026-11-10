@@ -113,6 +113,16 @@
         }
       ]
     },
+    "amblyospiza-albifrons": {
+      "calls": [
+        {
+          "index": 0,
+          "quality": {
+            "xeno-canto/XC523322": "A"
+          }
+        }
+      ]
+    },
     "amirafra-rufocinnamomea": {
       "calls": [
         {
@@ -560,6 +570,16 @@
           "index": 0,
           "quality": {
             "xeno-canto/XC792321": "A"
+          }
+        }
+      ]
+    },
+    "bubalornis-niger": {
+      "calls": [
+        {
+          "index": 0,
+          "quality": {
+            "xeno-canto/XC1188498": "A"
           }
         }
       ]
@@ -1454,6 +1474,56 @@
         }
       ]
     },
+    "euplectes-afer": {
+      "calls": [
+        {
+          "index": 0,
+          "quality": {
+            "xeno-canto/XC829310": "A"
+          }
+        }
+      ]
+    },
+    "euplectes-albonotatus": {
+      "calls": [
+        {
+          "index": 0,
+          "quality": {
+            "xeno-canto/XC364551": "A"
+          }
+        }
+      ]
+    },
+    "euplectes-ardens": {
+      "calls": [
+        {
+          "index": 0,
+          "quality": {
+            "xeno-canto/XC364550": "A"
+          }
+        }
+      ]
+    },
+    "euplectes-axillaris": {
+      "calls": [
+        {
+          "index": 0,
+          "quality": {
+            "xeno-canto/XC441846": "B"
+          }
+        }
+      ]
+    },
+    "euplectes-orix": {
+      "calls": [
+        {
+          "index": 0,
+          "quality": {
+            "xeno-canto/XC671581": "A"
+          }
+        }
+      ]
+    },
     "eurystomus-glaucurus": {
       "calls": [
         {
@@ -2006,6 +2076,96 @@
         }
       ]
     },
+    "plocepasser-mahali": {
+      "calls": [
+        {
+          "index": 0,
+          "quality": {
+            "xeno-canto/XC459505": "A"
+          }
+        }
+      ]
+    },
+    "ploceus-capensis": {
+      "calls": [
+        {
+          "index": 0,
+          "quality": {
+            "xeno-canto/XC1087110": "A"
+          }
+        }
+      ]
+    },
+    "ploceus-cucullatus": {
+      "calls": [
+        {
+          "index": 0,
+          "quality": {
+            "xeno-canto/XC1080073": "A"
+          }
+        }
+      ]
+    },
+    "ploceus-intermedius": {
+      "calls": [
+        {
+          "index": 0,
+          "quality": {
+            "xeno-canto/XC153490": "A"
+          }
+        }
+      ]
+    },
+    "ploceus-ocularis": {
+      "calls": [
+        {
+          "index": 0,
+          "quality": {
+            "xeno-canto/XC1149077": "A"
+          }
+        }
+      ]
+    },
+    "ploceus-subaureus": {
+      "calls": [
+        {
+          "index": 0,
+          "quality": {
+            "xeno-canto/XC438157": "A"
+          }
+        }
+      ]
+    },
+    "ploceus-velatus": {
+      "calls": [
+        {
+          "index": 0,
+          "quality": {
+            "xeno-canto/XC1056542": "A"
+          }
+        }
+      ]
+    },
+    "ploceus-xanthops": {
+      "calls": [
+        {
+          "index": 0,
+          "quality": {
+            "xeno-canto/XC368216": "B"
+          }
+        }
+      ]
+    },
+    "ploceus-xanthopterus": {
+      "calls": [
+        {
+          "index": 0,
+          "quality": {
+            "xeno-canto/XC933092": "A"
+          }
+        }
+      ]
+    },
     "polemaetus-bellicosus": {
       "calls": [
         {
@@ -2060,6 +2220,16 @@
         }
       ]
     },
+    "quelea-quelea": {
+      "calls": [
+        {
+          "index": 0,
+          "quality": {
+            "xeno-canto/XC368172": "A"
+          }
+        }
+      ]
+    },
     "sarkidiornis-melanotos": {
       "calls": [
         {
@@ -2086,6 +2256,16 @@
           "index": 0,
           "quality": {
             "xeno-canto/XC1077428": "A"
+          }
+        }
+      ]
+    },
+    "sporopipes-squamifrons": {
+      "calls": [
+        {
+          "index": 0,
+          "quality": {
+            "xeno-canto/XC1037291": "A"
           }
         }
       ]

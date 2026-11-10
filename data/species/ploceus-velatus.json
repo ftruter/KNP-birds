@@ -7,8 +7,42 @@
     "af": "Swartkeelgeelvink"
   },
   "family": "ploceidae",
-  "summary": "The details for this species have not been published yet.",
-  "sampleData": true,
+  "size": {
+    "lengthCm": {
+      "min": 15,
+      "max": 15
+    },
+    "note": "Newman's Birds gives 15 cm."
+  },
+  "habitat": "Small parties and flocks in thornveld, riverine bush, and exotic trees around homesteads and farms. Colonies are in trees away from water, including suburbia, or in waterside bushes and reeds. Nomadic when not breeding, often on farmland.",
+  "summary": "A very common resident. The breeding male is yellow, with a black mask from the forehead to the throat, a pointed bib, a black bill and red eyes. The crown is more yellow than in Lesser Masked Weaver, and the back is plain. The female is greener above and whitish below, with a yellow wash on the breast. The non-breeding male resembles the female. The breeding female is slightly more yellow below and has redder eyes. The immature is duller, with greyer underparts. The call is a prolonged swizzling when breeding, plus a sharp zik. The Kemp paper name Masked Weaver and the code RB were left unchanged.",
+  "sampleData": false,
+  "similar": [
+    {
+      "slug": "ploceus-intermedius",
+      "note": "Lesser Masked Weaver is smaller, with a rounded bib, a mask over the crown, pale yellow eyes and blue-grey legs. Southern Masked Weaver has red eyes and a pointed bib."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Southern Masked Weaver",
+      "url": "https://newmansbirds.com/birds/southern-masked-weaver/",
+      "publisher": "Newman's Birds",
+      "year": 2026
+    },
+    {
+      "title": "Avibase bird checklist — Kruger National Park",
+      "url": "https://avibase.bsc-eoc.org/checklist.jsp?region=ZA000003",
+      "publisher": "Avibase",
+      "year": null
+    },
+    {
+      "title": "Kemp A.C., Herholdt J.J., Whyte I. & Harrison J. (2001). Birds of the two largest national parks in South Africa: a method to generate estimates of population size for all species and assess their conservation ecology. S. Afr. J. Sci. 97: 393–403.",
+      "url": "https://journals.co.za/doi/pdf/10.10520/EJC97367",
+      "publisher": "South African Journal of Science",
+      "year": 2001
+    }
+  ],
   "population": {
     "estimate": {
       "low": 65536,
@@ -35,8 +69,313 @@
     },
     "tierApplied": "D"
   },
-  "variants": [],
-  "viewNotes": [],
-  "calls": [],
-  "images": []
+  "variants": [
+    {
+      "age": "adult",
+      "sex": "male",
+      "season": "breeding",
+      "marks": {
+        "bill": {
+          "colour": "black",
+          "shape": null
+        },
+        "eye": {
+          "iris": "red",
+          "ring": null
+        },
+        "legs": {
+          "colour": null
+        },
+        "head": {
+          "crown": "yellow",
+          "face": "black",
+          "throat": "black",
+          "pattern": "Black mask from the forehead to the throat, with a pointed bib and a black forehead. The crown is more yellow than in Lesser Masked Weaver."
+        },
+        "upperparts": {
+          "back": "yellow",
+          "rump": null,
+          "pattern": "Plain back."
+        },
+        "underparts": {
+          "breast": "yellow",
+          "belly": "yellow"
+        },
+        "wings": {
+          "above": null,
+          "below": null
+        },
+        "tail": {
+          "colour": null,
+          "shape": null
+        }
+      }
+    },
+    {
+      "age": "adult",
+      "sex": "female",
+      "season": "any",
+      "marks": {
+        "bill": {
+          "colour": null,
+          "shape": null
+        },
+        "eye": {
+          "iris": null,
+          "ring": null
+        },
+        "legs": {
+          "colour": null
+        },
+        "head": {
+          "crown": null,
+          "face": null,
+          "throat": null
+        },
+        "upperparts": {
+          "back": "olive",
+          "rump": null,
+          "pattern": "Greener above."
+        },
+        "underparts": {
+          "breast": "yellow",
+          "belly": "white",
+          "pattern": "Whitish below, with a yellow wash on the breast. The breeding female is slightly more yellow below and has redder eyes."
+        },
+        "wings": {
+          "above": null,
+          "below": null
+        },
+        "tail": {
+          "colour": null,
+          "shape": null
+        }
+      }
+    },
+    {
+      "age": "adult",
+      "sex": "male",
+      "season": "non-breeding",
+      "marks": {
+        "bill": {
+          "colour": null,
+          "shape": null
+        },
+        "eye": {
+          "iris": null,
+          "ring": null
+        },
+        "legs": {
+          "colour": null
+        },
+        "head": {
+          "crown": null,
+          "face": null,
+          "throat": null,
+          "pattern": "The non-breeding male resembles the female."
+        },
+        "upperparts": {
+          "back": "olive",
+          "rump": null
+        },
+        "underparts": {
+          "breast": "yellow",
+          "belly": "white"
+        },
+        "wings": {
+          "above": null,
+          "below": null
+        },
+        "tail": {
+          "colour": null,
+          "shape": null
+        }
+      }
+    },
+    {
+      "age": "immature",
+      "sex": "any",
+      "season": "any",
+      "marks": {
+        "bill": {
+          "colour": null,
+          "shape": null
+        },
+        "eye": {
+          "iris": null,
+          "ring": null
+        },
+        "legs": {
+          "colour": null
+        },
+        "head": {
+          "crown": null,
+          "face": null,
+          "throat": null,
+          "pattern": "The immature is duller, with greyer underparts."
+        },
+        "upperparts": {
+          "back": null,
+          "rump": null
+        },
+        "underparts": {
+          "breast": null,
+          "belly": "grey"
+        },
+        "wings": {
+          "above": null,
+          "below": null
+        },
+        "tail": {
+          "colour": null,
+          "shape": null
+        }
+      }
+    }
+  ],
+  "viewNotes": [
+    {
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "male",
+      "season": "breeding",
+      "note": "Breeding male: yellow, black mask from the forehead to the throat, pointed bib, black bill, red eye and a plain back."
+    },
+    {
+      "view": "perched-front",
+      "age": "adult",
+      "sex": "male",
+      "season": "breeding",
+      "note": "Pointed black bib and a red eye."
+    },
+    {
+      "view": "perched-back",
+      "age": "adult",
+      "sex": "male",
+      "season": "breeding",
+      "note": "Plain yellow back, more yellow on the crown than Lesser Masked Weaver."
+    },
+    {
+      "view": "flight-above",
+      "age": "adult",
+      "sex": "male",
+      "season": "breeding",
+      "note": "A flight pattern was not described."
+    },
+    {
+      "view": "flight-below",
+      "age": "adult",
+      "sex": "male",
+      "season": "breeding",
+      "note": "The underwing was not described."
+    },
+    {
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "female",
+      "season": "any",
+      "note": "Greener above and whitish below, with a yellow wash on the breast."
+    },
+    {
+      "view": "perched-front",
+      "age": "adult",
+      "sex": "female",
+      "season": "any",
+      "note": "Yellow wash on the breast and whitish underparts."
+    },
+    {
+      "view": "perched-back",
+      "age": "adult",
+      "sex": "female",
+      "season": "any",
+      "note": "Greener above."
+    },
+    {
+      "view": "flight-above",
+      "age": "adult",
+      "sex": "female",
+      "season": "any",
+      "note": "A flight pattern was not described."
+    },
+    {
+      "view": "flight-below",
+      "age": "adult",
+      "sex": "female",
+      "season": "any",
+      "note": "The underwing was not described."
+    }
+  ],
+  "calls": [
+    {
+      "sex": "any",
+      "type": "call",
+      "description": "Prolonged swizzling when breeding, plus a sharp zik. Grade A call from Cape Town. The filename is XC1056542-20251110_DV_AKaramitsos_XA60_A005C121_2511105R_SLE_-3dBNORM.mp3.",
+      "recordings": [
+        {
+          "key": "xeno-canto/XC1056542",
+          "source": "https://xeno-canto.org/1056542",
+          "fileUrl": "https://xeno-canto.org/sounds/uploaded/YSGTQVRQZI/XC1056542-20251110_DV_AKaramitsos_XA60_A005C121_2511105R_SLE_-3dBNORM.mp3",
+          "author": "African Bioacoustics Community",
+          "license": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ]
+    }
+  ],
+  "images": [
+    {
+      "key": "ploceus-velatus/side-male.jpg",
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "male",
+      "season": "breeding",
+      "source": "https://www.inaturalist.org/observations/67563642",
+      "fileUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/109190384/large.jpeg",
+      "author": "Wynand Uys",
+      "license": "CC BY 4.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by/4.0/",
+      "aiGenerated": false,
+      "hosted": false,
+      "alt": "Breeding male Southern Masked Weaver in Kruger, yellow crown, black mask and a red eye, at a nest",
+      "caption": "Breeding male Southern Masked Weaver in Kruger, Ehlanzeni, with a yellow crown, a black mask, a red eye and a plain back, at a nest."
+    },
+    {
+      "key": "ploceus-velatus/side-female.jpg",
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "female",
+      "season": "any",
+      "source": "https://www.inaturalist.org/observations/392624163",
+      "fileUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/719561107/large.jpg",
+      "author": "Lukas Zangl",
+      "license": "CC BY 4.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by/4.0/",
+      "aiGenerated": false,
+      "hosted": false,
+      "alt": "Southern Masked Weaver in Kruger, greener above and whitish below, with a yellow wash on the breast",
+      "caption": "Southern Masked Weaver in Kruger, Ehlanzeni, greener above and whitish below, with a yellow wash on the breast."
+    }
+  ],
+  "research": {
+    "confidence": "medium",
+    "needsReview": true,
+    "note": "Newman calls it a very common resident, and Avibase does not mark it rare, so all twelve months are listed. It is nomadic when not breeding. No flight photograph was found. The grade A call is from Cape Town. Population figures and the Kemp name Masked Weaver were left unchanged."
+  },
+  "status": "resident",
+  "monthsPresent": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+  ]
 }

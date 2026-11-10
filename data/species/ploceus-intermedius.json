@@ -7,8 +7,42 @@
     "af": "Kleingeelvink"
   },
   "family": "ploceidae",
-  "summary": "The details for this species have not been published yet.",
-  "sampleData": true,
+  "size": {
+    "lengthCm": {
+      "min": 14,
+      "max": 14
+    },
+    "note": "Newman's Birds gives 14 cm."
+  },
+  "habitat": "Thornveld, mixed bushveld and riverine forest. When breeding it is attracted to thorn trees or reeds, often in large colonies, sometimes with Southern Masked Weaver or Village Weaver.",
+  "summary": "A fairly common, localised resident. Both sexes are yellow, greener above, with pale yellow eyes. The breeding male has a black mask from the central crown to the throat, a rounded bib and a black bill. He is smaller than Southern Masked Weaver and Village Weaver. The female is more yellow at all times. The legs are blue-grey, not pinkish brown. The immature is like the female, with a whitish belly. The call is the swizzling typical of weavers, especially when nesting. The non-breeding male was not given a separate plumage. The Kemp paper name Lesser Masked Weaver and the code RB were left unchanged.",
+  "sampleData": false,
+  "similar": [
+    {
+      "slug": "ploceus-velatus",
+      "note": "Southern Masked Weaver is larger, with a pointed bib, a black forehead and pinkish-brown legs. Lesser Masked Weaver has a rounded bib, a mask over the top of the head and blue-grey legs."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Lesser Masked Weaver",
+      "url": "https://newmansbirds.com/birds/lesser-masked-weaver/",
+      "publisher": "Newman's Birds",
+      "year": 2026
+    },
+    {
+      "title": "Avibase bird checklist — Kruger National Park",
+      "url": "https://avibase.bsc-eoc.org/checklist.jsp?region=ZA000003",
+      "publisher": "Avibase",
+      "year": null
+    },
+    {
+      "title": "Kemp A.C., Herholdt J.J., Whyte I. & Harrison J. (2001). Birds of the two largest national parks in South Africa: a method to generate estimates of population size for all species and assess their conservation ecology. S. Afr. J. Sci. 97: 393–403.",
+      "url": "https://journals.co.za/doi/pdf/10.10520/EJC97367",
+      "publisher": "South African Journal of Science",
+      "year": 2001
+    }
+  ],
   "population": {
     "estimate": {
       "low": 65536,
@@ -35,8 +69,256 @@
     },
     "tierApplied": "D"
   },
-  "variants": [],
-  "viewNotes": [],
-  "calls": [],
-  "images": []
+  "variants": [
+    {
+      "age": "adult",
+      "sex": "male",
+      "season": "breeding",
+      "marks": {
+        "bill": {
+          "colour": "black",
+          "shape": null
+        },
+        "eye": {
+          "iris": "yellow",
+          "ring": null
+        },
+        "legs": {
+          "colour": "grey"
+        },
+        "head": {
+          "crown": "black",
+          "face": "black",
+          "throat": "black",
+          "pattern": "Black mask from the central crown to the throat, with a rounded bib. Legs blue-grey, not pinkish brown."
+        },
+        "upperparts": {
+          "back": "yellow",
+          "rump": null,
+          "pattern": "Greener above."
+        },
+        "underparts": {
+          "breast": "yellow",
+          "belly": "yellow"
+        },
+        "wings": {
+          "above": null,
+          "below": null
+        },
+        "tail": {
+          "colour": null,
+          "shape": null
+        }
+      }
+    },
+    {
+      "age": "adult",
+      "sex": "female",
+      "season": "any",
+      "marks": {
+        "bill": {
+          "colour": null,
+          "shape": null
+        },
+        "eye": {
+          "iris": "yellow",
+          "ring": null
+        },
+        "legs": {
+          "colour": "grey"
+        },
+        "head": {
+          "crown": null,
+          "face": null,
+          "throat": null
+        },
+        "upperparts": {
+          "back": "yellow",
+          "rump": null,
+          "pattern": "Greener above. More yellow than the male at all times."
+        },
+        "underparts": {
+          "breast": "yellow",
+          "belly": "yellow"
+        },
+        "wings": {
+          "above": null,
+          "below": null
+        },
+        "tail": {
+          "colour": null,
+          "shape": null
+        }
+      }
+    },
+    {
+      "age": "immature",
+      "sex": "any",
+      "season": "any",
+      "marks": {
+        "bill": {
+          "colour": null,
+          "shape": null
+        },
+        "eye": {
+          "iris": "yellow",
+          "ring": null
+        },
+        "legs": {
+          "colour": null
+        },
+        "head": {
+          "crown": null,
+          "face": null,
+          "throat": null,
+          "pattern": "The immature resembles the female, with a whitish belly."
+        },
+        "upperparts": {
+          "back": null,
+          "rump": null
+        },
+        "underparts": {
+          "breast": null,
+          "belly": "white"
+        },
+        "wings": {
+          "above": null,
+          "below": null
+        },
+        "tail": {
+          "colour": null,
+          "shape": null
+        }
+      }
+    }
+  ],
+  "viewNotes": [
+    {
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "male",
+      "season": "breeding",
+      "note": "Breeding male: pale yellow eye, black mask from the crown to the throat, rounded bib, yellow body and blue-grey legs."
+    },
+    {
+      "view": "perched-front",
+      "age": "adult",
+      "sex": "male",
+      "season": "breeding",
+      "note": "Rounded black bib and a pale yellow eye."
+    },
+    {
+      "view": "perched-back",
+      "age": "adult",
+      "sex": "male",
+      "season": "breeding",
+      "note": "Greener yellow above."
+    },
+    {
+      "view": "flight-above",
+      "age": "adult",
+      "sex": "male",
+      "season": "breeding",
+      "note": "A flight pattern was not described."
+    },
+    {
+      "view": "flight-below",
+      "age": "adult",
+      "sex": "male",
+      "season": "breeding",
+      "note": "The underwing was not described."
+    },
+    {
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "female",
+      "season": "any",
+      "note": "Yellow, greener above, pale yellow eye, and no black mask."
+    },
+    {
+      "view": "perched-front",
+      "age": "adult",
+      "sex": "female",
+      "season": "any",
+      "note": "Pale yellow eye and a yellow breast."
+    },
+    {
+      "view": "perched-back",
+      "age": "adult",
+      "sex": "female",
+      "season": "any",
+      "note": "Greener above."
+    },
+    {
+      "view": "flight-above",
+      "age": "adult",
+      "sex": "female",
+      "season": "any",
+      "note": "A flight pattern was not described."
+    },
+    {
+      "view": "flight-below",
+      "age": "adult",
+      "sex": "female",
+      "season": "any",
+      "note": "The underwing was not described."
+    }
+  ],
+  "calls": [
+    {
+      "sex": "any",
+      "type": "call",
+      "description": "Swizzling sounds typical of most weavers, especially when nesting. Grade A call from Anib Lodge, Kalahari, Namibia, with other species in the background. The licence is CC BY-NC-SA 3.0. The filename is XC153490-1027_072820_LesserMaskedWeaver_edt.mp3.",
+      "recordings": [
+        {
+          "key": "xeno-canto/XC153490",
+          "source": "https://xeno-canto.org/153490",
+          "fileUrl": "https://xeno-canto.org/sounds/uploaded/PTYTXQRLSZ/XC153490-1027_072820_LesserMaskedWeaver_edt.mp3",
+          "author": "Rolf A. de By",
+          "license": "CC BY-NC-SA 3.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/3.0/",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ]
+    }
+  ],
+  "images": [
+    {
+      "key": "ploceus-intermedius/side-female.jpg",
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "female",
+      "season": "any",
+      "source": "https://www.inaturalist.org/observations/186025899",
+      "fileUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/324933423/large.jpg",
+      "author": "Cole Wolf",
+      "license": "CC BY 4.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by/4.0/",
+      "aiGenerated": false,
+      "hosted": false,
+      "alt": "Lesser Masked Weaver in Kruger, yellow, with a pale eye and no black mask, at a nest",
+      "caption": "Lesser Masked Weaver in Kruger, yellow and greener above, with a pale eye and no black mask, at a nest."
+    }
+  ],
+  "research": {
+    "confidence": "medium",
+    "needsReview": true,
+    "note": "Newman calls it a fairly common, localised resident, and Avibase does not mark it rare, so all twelve months are listed. The non-breeding male was not given a separate plumage. The Kruger photograph shows the yellow, pale-eyed bird without a mask. No breeding-male photograph and no flight photograph were found. The grade A call is from Namibia and its licence is CC BY-NC-SA 3.0. Population figures and the Kemp name Lesser Masked Weaver were left unchanged."
+  },
+  "status": "resident",
+  "monthsPresent": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+  ]
 }

@@ -7,8 +7,36 @@
     "af": "Kaapse Wewer"
   },
   "family": "ploceidae",
-  "summary": "The details for this species have not been published yet.",
-  "sampleData": true,
+  "size": {
+    "lengthCm": {
+      "min": 16,
+      "max": 18
+    },
+    "note": "Newman's Birds gives 16–18 cm."
+  },
+  "habitat": "Singly, in pairs or in flocks almost anywhere there are trees, especially near water and in suburbia, where exotic trees are used for nesting.",
+  "summary": "A common endemic resident. The bill is long and pointed. The breeding male is yellow all over, darker above, with an orange wash on the head and throat, pale eyes, and a black eye-line that does not extend behind the eye. The female is paler, with a yellow wash on the head and breast, a white belly and dark eyes. The non-breeding male is like the female but yellower below, and he keeps the pale eye. The call is a swizzling a-zwit. Avibase marks it rare or accidental in Kruger, and there is no Kemp estimate. The months are unset.",
+  "sampleData": false,
+  "similar": [
+    {
+      "slug": "ploceus-velatus",
+      "note": "Southern Masked Weaver has a black mask from the forehead to the throat. Cape Weaver has no mask, and the breeding male’s black eye-line stops at the eye."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Cape Weaver",
+      "url": "https://newmansbirds.com/birds/cape-weaver/",
+      "publisher": "Newman's Birds",
+      "year": 2026
+    },
+    {
+      "title": "Avibase bird checklist — Kruger National Park",
+      "url": "https://avibase.bsc-eoc.org/checklist.jsp?region=ZA000003",
+      "publisher": "Avibase",
+      "year": null
+    }
+  ],
   "population": {
     "estimate": {
       "low": null,
@@ -21,8 +49,243 @@
     "notes": "No sourced Kruger estimate is currently available; taxonomy or later records require separate research.",
     "sources": []
   },
-  "variants": [],
-  "viewNotes": [],
-  "calls": [],
-  "images": []
+  "variants": [
+    {
+      "age": "adult",
+      "sex": "male",
+      "season": "breeding",
+      "marks": {
+        "bill": {
+          "colour": null,
+          "shape": "Long and pointed."
+        },
+        "eye": {
+          "iris": null,
+          "ring": null
+        },
+        "legs": {
+          "colour": null
+        },
+        "head": {
+          "crown": "yellow",
+          "face": "orange",
+          "throat": "orange",
+          "pattern": "Orange wash on the head and throat. Pale eyes. Black eye-line that does not extend behind the eye."
+        },
+        "upperparts": {
+          "back": "yellow",
+          "rump": null,
+          "pattern": "Darker above than below."
+        },
+        "underparts": {
+          "breast": "yellow",
+          "belly": "yellow"
+        },
+        "wings": {
+          "above": null,
+          "below": null
+        },
+        "tail": {
+          "colour": null,
+          "shape": null
+        }
+      }
+    },
+    {
+      "age": "adult",
+      "sex": "female",
+      "season": "any",
+      "marks": {
+        "bill": {
+          "colour": null,
+          "shape": "Long and pointed."
+        },
+        "eye": {
+          "iris": null,
+          "ring": null
+        },
+        "legs": {
+          "colour": null
+        },
+        "head": {
+          "crown": "yellow",
+          "face": null,
+          "throat": null,
+          "pattern": "Paler than the male, with a yellow wash on the head. Eyes dark. Newman does not name the dark colour."
+        },
+        "upperparts": {
+          "back": null,
+          "rump": null
+        },
+        "underparts": {
+          "breast": "yellow",
+          "belly": "white",
+          "pattern": "Yellow wash on the breast and a white belly."
+        },
+        "wings": {
+          "above": null,
+          "below": null
+        },
+        "tail": {
+          "colour": null,
+          "shape": null
+        }
+      }
+    },
+    {
+      "age": "adult",
+      "sex": "male",
+      "season": "non-breeding",
+      "marks": {
+        "bill": {
+          "colour": null,
+          "shape": "Long and pointed."
+        },
+        "eye": {
+          "iris": null,
+          "ring": null
+        },
+        "legs": {
+          "colour": null
+        },
+        "head": {
+          "crown": null,
+          "face": null,
+          "throat": null,
+          "pattern": "Like the female, but yellower below, and the pale eye is retained."
+        },
+        "upperparts": {
+          "back": null,
+          "rump": null
+        },
+        "underparts": {
+          "breast": "yellow",
+          "belly": "yellow"
+        },
+        "wings": {
+          "above": null,
+          "below": null
+        },
+        "tail": {
+          "colour": null,
+          "shape": null
+        }
+      }
+    }
+  ],
+  "viewNotes": [
+    {
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "male",
+      "season": "breeding",
+      "note": "Breeding male: yellow, darker above, orange wash on the head and throat, pale eye, and a black eye-line that stops at the eye."
+    },
+    {
+      "view": "perched-front",
+      "age": "adult",
+      "sex": "male",
+      "season": "breeding",
+      "note": "Orange wash on the throat and a pale eye."
+    },
+    {
+      "view": "perched-back",
+      "age": "adult",
+      "sex": "male",
+      "season": "breeding",
+      "note": "Darker yellow above."
+    },
+    {
+      "view": "flight-above",
+      "age": "adult",
+      "sex": "male",
+      "season": "breeding",
+      "note": "A flight pattern was not described."
+    },
+    {
+      "view": "flight-below",
+      "age": "adult",
+      "sex": "male",
+      "season": "breeding",
+      "note": "The underwing was not described."
+    },
+    {
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "female",
+      "season": "any",
+      "note": "Paler, with a yellow wash on the head and breast, a white belly and a dark eye."
+    },
+    {
+      "view": "perched-front",
+      "age": "adult",
+      "sex": "female",
+      "season": "any",
+      "note": "Yellow wash on the breast and a white belly."
+    },
+    {
+      "view": "perched-back",
+      "age": "adult",
+      "sex": "female",
+      "season": "any",
+      "note": "The female back was only described as paler."
+    },
+    {
+      "view": "flight-above",
+      "age": "adult",
+      "sex": "female",
+      "season": "any",
+      "note": "A flight pattern was not described."
+    },
+    {
+      "view": "flight-below",
+      "age": "adult",
+      "sex": "female",
+      "season": "any",
+      "note": "The underwing was not described."
+    }
+  ],
+  "calls": [
+    {
+      "sex": "male",
+      "type": "call",
+      "description": "A swizzling a-zwit. Grade A call from Cape Town. The filename says the file was high-pass filtered at 250 Hz. The filename is XC1087110-20260301_DV_AKaramitsos_XA60_A016C219_260301V2_SLE_250HP_-3dB.mp3.",
+      "recordings": [
+        {
+          "key": "xeno-canto/XC1087110",
+          "source": "https://xeno-canto.org/1087110",
+          "fileUrl": "https://xeno-canto.org/sounds/uploaded/YSGTQVRQZI/XC1087110-20260301_DV_AKaramitsos_XA60_A016C219_260301V2_SLE_250HP_-3dB.mp3",
+          "author": "African Bioacoustics Community",
+          "license": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ]
+    }
+  ],
+  "images": [
+    {
+      "key": "ploceus-capensis/side.jpg",
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "source": "https://www.inaturalist.org/observations/91973928",
+      "fileUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/152204448/large.jpg",
+      "author": "William K",
+      "license": "CC BY-NC 4.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+      "aiGenerated": false,
+      "hosted": false,
+      "alt": "Cape Weaver at Pretoriuskop, Kruger, olive-yellow, with a pale pointed bill",
+      "caption": "Cape Weaver at Pretoriuskop, Kruger, olive-yellow, with a pale pointed bill. The pale eye of a breeding male is not clear in this frame."
+    }
+  ],
+  "research": {
+    "confidence": "medium",
+    "needsReview": true,
+    "note": "Newman calls it a common resident. Avibase marks it rare or accidental in Kruger, so the months are unset. There is no Kemp estimate. The only Kruger photograph does not show the pale eye well enough to sex the bird. No flight photograph was found. The grade A call is from Cape Town and the filename records a 250 Hz high-pass filter."
+  },
+  "status": "resident"
 }
