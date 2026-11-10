@@ -7,8 +7,23 @@
     "af": "Witkeelsanger"
   },
   "family": "sylviidae",
-  "summary": "The details for this species have not been published yet.",
-  "sampleData": true,
+  "habitat": "Wikipedia says it breeds in Europe and temperate western Asia and winters in tropical Africa, Arabia and Pakistan. Newman has no species page, so no Kruger habitat is stored from that account.",
+  "summary": "Newman has no species page. Wikipedia describes a migratory warbler, brown above and buff below, with chestnut fringes to the secondaries. The male has a grey head and a white throat. The female lacks the grey head and has a duller throat. The song is fast and scratchy, and the call is wed-wed or woid-woid. The size is not given. Months are unset. No Kemp estimate is stored.",
+  "sampleData": false,
+  "sources": [
+    {
+      "title": "Common whitethroat",
+      "url": "https://en.wikipedia.org/wiki/Common_whitethroat",
+      "publisher": "Wikipedia",
+      "year": null
+    },
+    {
+      "title": "Avibase bird checklist — Kruger National Park",
+      "url": "https://avibase.bsc-eoc.org/checklist.jsp?region=ZA000003",
+      "publisher": "Avibase",
+      "year": null
+    }
+  ],
   "population": {
     "estimate": {
       "low": null,
@@ -21,8 +36,168 @@
     "notes": "No sourced Kruger estimate is currently available; taxonomy or later records require separate research.",
     "sources": []
   },
-  "variants": [],
-  "viewNotes": [],
-  "calls": [],
-  "images": []
+  "variants": [
+    {
+      "age": "adult",
+      "sex": "male",
+      "season": "any",
+      "marks": {
+        "bill": {
+          "colour": null,
+          "shape": null
+        },
+        "eye": {
+          "iris": null,
+          "ring": null
+        },
+        "legs": {
+          "colour": null
+        },
+        "head": {
+          "crown": "grey",
+          "face": null,
+          "throat": "white",
+          "pattern": "Grey head and white throat."
+        },
+        "upperparts": {
+          "back": "brown",
+          "rump": null
+        },
+        "underparts": {
+          "breast": "buff",
+          "belly": "buff"
+        },
+        "wings": {
+          "above": null,
+          "below": null,
+          "pattern": "Chestnut fringes to the secondaries."
+        },
+        "tail": {
+          "colour": null,
+          "shape": null
+        }
+      }
+    },
+    {
+      "age": "adult",
+      "sex": "female",
+      "season": "any",
+      "marks": {
+        "bill": {
+          "colour": null,
+          "shape": null
+        },
+        "eye": {
+          "iris": null,
+          "ring": null
+        },
+        "legs": {
+          "colour": null
+        },
+        "head": {
+          "crown": null,
+          "face": null,
+          "throat": null,
+          "pattern": "Lacks the male's grey head. The throat is duller."
+        },
+        "upperparts": {
+          "back": "brown",
+          "rump": null
+        },
+        "underparts": {
+          "breast": "buff",
+          "belly": "buff"
+        },
+        "wings": {
+          "above": null,
+          "below": null,
+          "pattern": "Chestnut fringes to the secondaries."
+        },
+        "tail": {
+          "colour": null,
+          "shape": null
+        }
+      }
+    }
+  ],
+  "viewNotes": [
+    {
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "male",
+      "season": "any",
+      "note": "Brown above, buff below, grey head and white throat."
+    },
+    {
+      "view": "perched-front",
+      "age": "adult",
+      "sex": "male",
+      "season": "any",
+      "note": "White throat."
+    },
+    {
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "female",
+      "season": "any",
+      "note": "No grey head, and a duller throat."
+    },
+    {
+      "view": "flight-above",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Chestnut fringes to the secondaries."
+    },
+    {
+      "view": "flight-below",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "The underside in flight is not described."
+    }
+  ],
+  "calls": [
+    {
+      "sex": "any",
+      "type": "call",
+      "description": "The song is fast and scratchy. The call is hoarse and slightly nasal, 'wed-wed' or 'woid-woid'. The warning is a long rough 'tschehr'. No recording from South Africa was found. The selected file is a grade A call from France. The filename is XC931937-Fauvette-grisette-cris-+++.mp3.",
+      "recordings": [
+        {
+          "key": "xeno-canto/XC931937",
+          "source": "https://xeno-canto.org/931937",
+          "fileUrl": "https://xeno-canto.org/sounds/uploaded/SDPCHKOHRH/XC931937-Fauvette-grisette-cris-+++.mp3",
+          "author": "Stanislas Wroza",
+          "license": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ]
+    }
+  ],
+  "images": [
+    {
+      "key": "curruca-communis/side.jpg",
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "male",
+      "season": "any",
+      "source": "https://www.inaturalist.org/observations/359960479",
+      "fileUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/656795978/large.jpg",
+      "author": "Анатолий Стрила",
+      "license": "CC BY-NC 4.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+      "aiGenerated": false,
+      "hosted": false,
+      "alt": "Common Whitethroat in Russia, grey on the head with a white throat",
+      "caption": "Male Common Whitethroat at Znamensk, Russia, grey on the head with a white throat. No Kruger photograph was found."
+    }
+  ],
+  "research": {
+    "confidence": "low",
+    "needsReview": true,
+    "note": "Newman has no species page, so the description is from Wikipedia and the size is omitted. Avibase lists it as Greater Whitethroat and does not mark the Kruger occurrence rare or accidental. The months are not named, so status is palearctic-migrant and monthsPresent is unset. No Kruger photograph or recording was found. No Kemp estimate is stored."
+  },
+  "status": "palearctic-migrant"
 }

@@ -1,10 +1,10 @@
 {
   "source": "xeno-canto explore catalogue, API v3 recording fields",
   "counts": {
-    "slots": 464,
+    "slots": 466,
     "swapped": 17,
     "added": 278,
-    "kept": 141,
+    "kept": 143,
     "none": 28,
     "cleaned": 0
   },
@@ -1017,6 +1017,22 @@
       "quality": "A",
       "country": "Finland",
       "locality": "Orivesi",
+      "cleaned": false,
+      "license": "CC BY-NC-SA 4.0"
+    },
+    {
+      "slug": "curruca-communis",
+      "scientificName": "Curruca communis",
+      "index": 0,
+      "type": "call",
+      "action": "kept",
+      "from": [
+        "931937"
+      ],
+      "to": "931937",
+      "quality": "A",
+      "country": "France",
+      "locality": "near Cléden-Cap-Sizun, Brittany",
       "cleaned": false,
       "license": "CC BY-NC-SA 4.0"
     },
@@ -2382,6 +2398,22 @@
       "quality": "A",
       "country": "United States",
       "locality": "Valley Mills, Texas",
+      "cleaned": false,
+      "license": "CC BY-NC-SA 4.0"
+    },
+    {
+      "slug": "sylvia-borin",
+      "scientificName": "Sylvia borin",
+      "index": 0,
+      "type": "song",
+      "action": "kept",
+      "from": [
+        "904341"
+      ],
+      "to": "904341",
+      "quality": "A",
+      "country": "France",
+      "locality": "near Noron-l'Abbaye, Normandy",
       "cleaned": false,
       "license": "CC BY-NC-SA 4.0"
     },

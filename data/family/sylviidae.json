@@ -6,8 +6,8 @@
     "en": "Sylviid warblers",
     "af": "Sangers"
   },
-  "summary": "Field notes for this family are still to be written.",
-  "sampleData": true,
+  "summary": "Two plain warblers. Garden Warbler is a summer visitor with no named colours. Common Whitethroat has no Newman page; the male has a grey head and a white throat.",
+  "sampleData": false,
   "species": [
     {
       "slug": "curruca-communis",
