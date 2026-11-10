@@ -1,14 +1,151 @@
 {
+  "size": {
+    "lengthCm": {
+      "min": 24,
+      "max": 24
+    },
+    "note": "Newman's Birds gives 24 cm."
+  },
+  "habitat": "Singly or in pairs in high and low-altitude evergreen forest and riverine woodland. More secretive than Karoo Thrush.",
+  "summary": "A common resident. Dark olive-brown above, with a throat speckled black on white and orange underparts. The highveld race has a brown breast. The vent is white or dusky, the eye-ring is brown, and the bill and legs are orange-yellow. From the ground it calls a thin wheet. No Kemp estimate is stored.",
+  "similar": [
+    {
+      "slug": "turdus-smithi",
+      "note": "Karoo Thrush is duller, with little or no throat spotting, a greyish vent and an orange eye-ring. Only its underbelly is orange."
+    }
+  ],
+  "variants": [
+    {
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "marks": {
+        "bill": {
+          "colour": null,
+          "shape": "Orange-yellow, with a dark wedge on the culmen."
+        },
+        "eye": {
+          "iris": null,
+          "ring": "brown"
+        },
+        "legs": {
+          "colour": null
+        },
+        "head": {
+          "crown": null,
+          "face": null,
+          "throat": null,
+          "pattern": "Throat speckled black on white. Dark olive-brown above."
+        },
+        "upperparts": {
+          "back": null,
+          "rump": null,
+          "pattern": "Dark olive-brown above."
+        },
+        "underparts": {
+          "breast": null,
+          "belly": "orange",
+          "pattern": "Underparts orange. The highveld race has a brown breast. The vent is white or dusky."
+        },
+        "wings": {
+          "above": null,
+          "below": null
+        },
+        "tail": {
+          "colour": null,
+          "shape": null
+        }
+      }
+    }
+  ],
+  "viewNotes": [
+    {
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Dark above and orange below, with an orange-yellow bill."
+    },
+    {
+      "view": "perched-front",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Throat speckled black on white. The eye-ring is brown."
+    },
+    {
+      "view": "perched-back",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Dark olive-brown above."
+    },
+    {
+      "view": "flight-above",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Flight plumage is not described."
+    },
+    {
+      "view": "flight-below",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Orange underparts. The vent is white or dusky."
+    }
+  ],
+  "calls": [
+    {
+      "sex": "any",
+      "type": "call",
+      "description": "From the ground, a thin 'wheet'. From a tree in summer it has a variety of loud pleasant songs. The grade A call is from near Louis Trichardt. The filename is XC502734-2 O Thrush.mp3.",
+      "recordings": [
+        {
+          "key": "xeno-canto/XC502734",
+          "source": "https://xeno-canto.org/502734",
+          "fileUrl": "https://xeno-canto.org/sounds/uploaded/HMBDEWEZVS/XC502734-2%20O%20Thrush.mp3",
+          "author": "Tony Archer",
+          "license": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ]
+    }
+  ],
+  "images": [
+    {
+      "key": "turdus-olivaceus/side.jpg",
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "source": "https://www.inaturalist.org/observations/124391986",
+      "fileUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/210837223/large.jpg",
+      "author": "Régis Camponovo",
+      "license": "CC BY-NC 4.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+      "aiGenerated": false,
+      "hosted": false,
+      "alt": "Olive Thrush in Kruger, dark above with orange underparts",
+      "caption": "Olive Thrush in Kruger, dark above, with orange-toned underparts and an orange-yellow bill."
+    }
+  ],
+  "research": {
+    "confidence": "medium",
+    "needsReview": true,
+    "note": "Newman calls it a common resident, and Avibase does not mark it rare, so all twelve months are listed. Olive-brown and orange-yellow are not stored as single colours. The highveld breast is brown, so the breast colour is not stored as one token. The grade A call is from Limpopo. No Kemp estimate is stored."
+  },
   "kind": "species",
   "slug": "turdus-olivaceus",
+  "family": "turdidae",
+  "sampleData": false,
   "scientificName": "Turdus olivaceus",
   "commonNames": {
     "en": "Olive Thrush",
     "af": "Olyflyster"
   },
-  "family": "turdidae",
-  "summary": "The details for this species have not been published yet.",
-  "sampleData": true,
   "population": {
     "estimate": {
       "low": null,
@@ -21,8 +158,33 @@
     "notes": "No sourced Kruger estimate is currently available; taxonomy or later records require separate research.",
     "sources": []
   },
-  "variants": [],
-  "viewNotes": [],
-  "calls": [],
-  "images": []
+  "status": "resident",
+  "monthsPresent": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+  ],
+  "sources": [
+    {
+      "title": "Olive Thrush",
+      "url": "https://newmansbirds.com/birds/olive-thrush/",
+      "publisher": "Newman's Birds",
+      "year": 2026
+    },
+    {
+      "title": "Avibase bird checklist — Kruger National Park",
+      "url": "https://avibase.bsc-eoc.org/checklist.jsp?region=ZA000003",
+      "publisher": "Avibase",
+      "year": null
+    }
+  ]
 }
