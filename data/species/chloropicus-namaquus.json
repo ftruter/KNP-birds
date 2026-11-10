@@ -7,8 +7,46 @@
     "af": "Baardspeg"
   },
   "family": "picidae",
-  "summary": "The details for this species have not been published yet.",
-  "sampleData": true,
+  "size": {
+    "lengthCm": {
+      "min": 23,
+      "max": 25
+    },
+    "note": "Newman's Birds gives 23–25 cm."
+  },
+  "habitat": "Solitary in any tall woodland and riverine forest, especially where there are plenty of tall, dead trees.",
+  "summary": "A common resident. A large, long-billed woodpecker with barred underparts and a bold black malar streak and ear-patch. Only the top of the male’s crown is red, and the forehead is black. The female has a black crown. The call is a loud wickwickwick-wick-wick, and the male drums a far-carrying trrrrrr-tap-tap-tap-tap-tap on a hollow branch. Newman lists it as Dendropicos namaquus. The scientific name here stays Chloropicus namaquus. The Kemp paper name Bearded Woodpecker and the code RB were left unchanged.",
+  "sampleData": false,
+  "similar": [
+    {
+      "slug": "campethera-abingoni",
+      "note": "Golden-tailed Woodpecker is streaked below and lacks the black ear-patch. Bearded Woodpecker is larger, with barred underparts."
+    },
+    {
+      "slug": "dendropicos-fuscescens",
+      "note": "Cardinal Woodpecker is much smaller, with a brown forehead and a streaked breast, not barred underparts and a black ear-patch."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Bearded Woodpecker",
+      "url": "https://newmansbirds.com/birds/bearded-woodpecker/",
+      "publisher": "Newman's Birds",
+      "year": 2026
+    },
+    {
+      "title": "Avibase bird checklist — Kruger National Park",
+      "url": "https://avibase.bsc-eoc.org/checklist.jsp?region=ZA000003",
+      "publisher": "Avibase",
+      "year": null
+    },
+    {
+      "title": "Kemp A.C., Herholdt J.J., Whyte I. & Harrison J. (2001). Birds of the two largest national parks in South Africa: a method to generate estimates of population size for all species and assess their conservation ecology. S. Afr. J. Sci. 97: 393–403.",
+      "url": "https://journals.co.za/doi/pdf/10.10520/EJC97367",
+      "publisher": "South African Journal of Science",
+      "year": 2001
+    }
+  ],
   "population": {
     "estimate": {
       "low": 2048,
@@ -35,8 +73,282 @@
     },
     "tierApplied": "D"
   },
-  "variants": [],
-  "viewNotes": [],
-  "calls": [],
-  "images": []
+  "variants": [
+    {
+      "age": "adult",
+      "sex": "male",
+      "season": "any",
+      "marks": {
+        "bill": {
+          "colour": null,
+          "shape": "Long, straight and pointed. Newman calls it long-billed, and the family notes say the bill is straight and pointed."
+        },
+        "eye": {
+          "iris": null,
+          "ring": null
+        },
+        "legs": {
+          "colour": null
+        },
+        "head": {
+          "crown": "red",
+          "face": "black",
+          "throat": null,
+          "pattern": "Black forehead. Only the top of the crown is red. Bold black malar streak and ear-patch."
+        },
+        "upperparts": {
+          "back": null,
+          "rump": null
+        },
+        "underparts": {
+          "breast": null,
+          "belly": null,
+          "pattern": "Barred."
+        },
+        "wings": {
+          "above": null,
+          "below": null
+        },
+        "tail": {
+          "colour": null,
+          "shape": "Stiff. Newman’s family notes say it is used as a prop while feeding."
+        }
+      }
+    },
+    {
+      "age": "adult",
+      "sex": "female",
+      "season": "any",
+      "marks": {
+        "bill": {
+          "colour": null,
+          "shape": "Long, straight and pointed. Newman calls it long-billed, and the family notes say the bill is straight and pointed."
+        },
+        "eye": {
+          "iris": null,
+          "ring": null
+        },
+        "legs": {
+          "colour": null
+        },
+        "head": {
+          "crown": "black",
+          "face": "black",
+          "throat": null,
+          "pattern": "Black crown, with a bold black malar streak and ear-patch."
+        },
+        "upperparts": {
+          "back": null,
+          "rump": null
+        },
+        "underparts": {
+          "breast": null,
+          "belly": null,
+          "pattern": "Barred."
+        },
+        "wings": {
+          "above": null,
+          "below": null
+        },
+        "tail": {
+          "colour": null,
+          "shape": "Stiff. Newman’s family notes say it is used as a prop while feeding."
+        }
+      }
+    }
+  ],
+  "viewNotes": [
+    {
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "male",
+      "season": "any",
+      "note": "Long bill, red top to the crown, black forehead, and a black malar streak and ear-patch. The underparts are barred."
+    },
+    {
+      "view": "perched-front",
+      "age": "adult",
+      "sex": "male",
+      "season": "any",
+      "note": "Black malar streak and ear-patch, with barred underparts."
+    },
+    {
+      "view": "perched-back",
+      "age": "adult",
+      "sex": "male",
+      "season": "any",
+      "note": "Red top to the crown. The back colour was not described."
+    },
+    {
+      "view": "flight-above",
+      "age": "adult",
+      "sex": "male",
+      "season": "any",
+      "note": "A flight pattern was not described, and the wing colour was not given."
+    },
+    {
+      "view": "flight-below",
+      "age": "adult",
+      "sex": "male",
+      "season": "any",
+      "note": "The underwing was not described. The underparts are barred."
+    },
+    {
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "female",
+      "season": "any",
+      "note": "Black crown, long bill, and a black malar streak and ear-patch. The underparts are barred."
+    },
+    {
+      "view": "perched-front",
+      "age": "adult",
+      "sex": "female",
+      "season": "any",
+      "note": "Black crown, black malar streak and ear-patch."
+    },
+    {
+      "view": "perched-back",
+      "age": "adult",
+      "sex": "female",
+      "season": "any",
+      "note": "Black crown. The female back was not described."
+    },
+    {
+      "view": "flight-above",
+      "age": "adult",
+      "sex": "female",
+      "season": "any",
+      "note": "A female flight pattern was not described."
+    },
+    {
+      "view": "flight-below",
+      "age": "adult",
+      "sex": "female",
+      "season": "any",
+      "note": "The female underwing was not described. The underparts are barred."
+    }
+  ],
+  "calls": [
+    {
+      "sex": "any",
+      "type": "call",
+      "description": "A loud wickwickwick-wick-wick. Grade A call from Hoedspruit. The filename is XC503724-Bearded Woodpecker 191021-064127.mp3.",
+      "recordings": [
+        {
+          "key": "xeno-canto/XC503724",
+          "source": "https://xeno-canto.org/503724",
+          "fileUrl": "https://xeno-canto.org/sounds/uploaded/DNKBTPCMSQ/XC503724-Bearded%20Woodpecker%20191021-064127.mp3",
+          "author": "Derek Solomon",
+          "license": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ]
+    },
+    {
+      "sex": "male",
+      "type": "other",
+      "description": "The male drums with its bill on a hollow branch, a loud far-carrying trrrrrr-tap-tap-tap-tap-tap. Grade A drumming from Mjejane Private Game Reserve, Hectorspruit, Mpumalanga. The filename is XC323354-Woodpecker Bearded drum_Mjejane_160620_08_B.mp3.",
+      "recordings": [
+        {
+          "key": "xeno-canto/XC323354",
+          "source": "https://xeno-canto.org/323354",
+          "fileUrl": "https://xeno-canto.org/sounds/uploaded/TWAAJJHMEH/XC323354-Woodpecker%20Bearded%20drum_Mjejane_160620_08_B.mp3",
+          "author": "Faansie Peacock",
+          "license": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ]
+    }
+  ],
+  "images": [
+    {
+      "key": "chloropicus-namaquus/side-male.jpg",
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "male",
+      "season": "any",
+      "source": "https://www.inaturalist.org/observations/242600998",
+      "fileUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/432502604/large.jpeg",
+      "author": "Bud Lensing",
+      "license": "CC0 1.0",
+      "licenceUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "aiGenerated": false,
+      "hosted": false,
+      "alt": "Male Bearded Woodpecker in Kruger, red crown, black forehead and black ear-patch",
+      "caption": "Male Bearded Woodpecker in Kruger, Ehlanzeni, with a red crown, a black forehead and a black ear-patch."
+    },
+    {
+      "key": "chloropicus-namaquus/side-female.jpg",
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "female",
+      "season": "any",
+      "source": "https://www.inaturalist.org/observations/267160026",
+      "fileUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/480078549/large.jpg",
+      "author": "Лариса Артемьева",
+      "license": "CC0 1.0",
+      "licenceUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "aiGenerated": false,
+      "hosted": false,
+      "alt": "Female Bearded Woodpecker in Kruger, black crown, black malar streak and barred underparts",
+      "caption": "Female Bearded Woodpecker in Kruger, Ehlanzeni, with a black crown, a black malar streak and barred underparts."
+    },
+    {
+      "key": "chloropicus-namaquus/front-female.jpg",
+      "view": "perched-front",
+      "age": "adult",
+      "sex": "female",
+      "season": "any",
+      "source": "https://www.inaturalist.org/observations/43444120",
+      "fileUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/68925143/large.jpg",
+      "author": "Tommy Andriollo",
+      "license": "CC BY 4.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by/4.0/",
+      "aiGenerated": false,
+      "hosted": false,
+      "alt": "Female Bearded Woodpecker in Kruger, seen from the front through branches, black crown and striped face",
+      "caption": "Female Bearded Woodpecker in Kruger, Ehlanzeni, seen from the front. Branches cross the bird. The crown is black and the face is striped."
+    },
+    {
+      "key": "chloropicus-namaquus/back-male.jpg",
+      "view": "perched-back",
+      "age": "adult",
+      "sex": "male",
+      "season": "any",
+      "source": "https://www.inaturalist.org/observations/249349258",
+      "fileUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/445715179/large.jpg",
+      "author": "Alan Manson",
+      "license": "CC BY 4.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by/4.0/",
+      "aiGenerated": false,
+      "hosted": false,
+      "alt": "Male Bearded Woodpecker in Kruger, seen from behind, red crown",
+      "caption": "Male Bearded Woodpecker in Kruger, seen from behind, with a red crown."
+    }
+  ],
+  "research": {
+    "confidence": "medium",
+    "needsReview": true,
+    "note": "Newman calls it a common resident, and Avibase does not mark the Kruger occurrence rare or accidental, so status is resident and all twelve months are listed. Newman’s scientific name is Dendropicos namaquus. This file keeps Chloropicus namaquus. The immature was not described. Bill colour, eye, legs, wings and tail colour were not given. The front photograph is partly behind branches. No flight photograph was found. Drumming is stored as a male sound because Newman attributes it to the male. Population figures, the Kemp paper name Bearded Woodpecker and the code RB were left unchanged."
+  },
+  "status": "resident",
+  "monthsPresent": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+  ]
 }

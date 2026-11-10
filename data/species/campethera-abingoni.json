@@ -7,8 +7,46 @@
     "af": "Goudstertspeg"
   },
   "family": "picidae",
-  "summary": "The details for this species have not been published yet.",
-  "sampleData": true,
+  "size": {
+    "lengthCm": {
+      "min": 20,
+      "max": 23
+    },
+    "note": "Newman's Birds gives 20–23 cm."
+  },
+  "habitat": "Pairs occur in broad-leaved woodland, thornveld and bush fringing dry riverbeds.",
+  "summary": "A common resident, larger than Cardinal Woodpecker, with black streaks below. The male has a red malar streak and the whole crown is red with black spots. The female has a black crown with white spots and only the nape red. The call is a single nasal waaa. Bill colour, eye, legs, wings and the tail colour were not described. The Kemp paper name Goldentailed Woodpecker and the code RB were left unchanged.",
+  "sampleData": false,
+  "similar": [
+    {
+      "slug": "dendropicos-fuscescens",
+      "note": "Cardinal Woodpecker is smaller, with a brown forehead. The male’s crown is crimson rather than red with black spots, and the female’s crown is black without a red nape."
+    },
+    {
+      "slug": "campethera-bennettii",
+      "note": "Bennett’s Woodpecker is spotted below rather than streaked, and the female has brown patches on the face and throat."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Golden-tailed Woodpecker",
+      "url": "https://newmansbirds.com/birds/golden-tailed-woodpecker/",
+      "publisher": "Newman's Birds",
+      "year": 2026
+    },
+    {
+      "title": "Avibase bird checklist — Kruger National Park",
+      "url": "https://avibase.bsc-eoc.org/checklist.jsp?region=ZA000003",
+      "publisher": "Avibase",
+      "year": null
+    },
+    {
+      "title": "Kemp A.C., Herholdt J.J., Whyte I. & Harrison J. (2001). Birds of the two largest national parks in South Africa: a method to generate estimates of population size for all species and assess their conservation ecology. S. Afr. J. Sci. 97: 393–403.",
+      "url": "https://journals.co.za/doi/pdf/10.10520/EJC97367",
+      "publisher": "South African Journal of Science",
+      "year": 2001
+    }
+  ],
   "population": {
     "estimate": {
       "low": 8192,
@@ -35,8 +73,255 @@
     },
     "tierApplied": "D"
   },
-  "variants": [],
-  "viewNotes": [],
-  "calls": [],
-  "images": []
+  "variants": [
+    {
+      "age": "adult",
+      "sex": "male",
+      "season": "any",
+      "marks": {
+        "bill": {
+          "colour": null,
+          "shape": "Straight and pointed, from the family notes on the Newman page."
+        },
+        "eye": {
+          "iris": null,
+          "ring": null
+        },
+        "legs": {
+          "colour": null
+        },
+        "head": {
+          "crown": [
+            "red",
+            "black"
+          ],
+          "face": null,
+          "throat": null,
+          "pattern": "Whole crown red with black spots, and a red malar streak."
+        },
+        "upperparts": {
+          "back": null,
+          "rump": null
+        },
+        "underparts": {
+          "breast": null,
+          "belly": null,
+          "pattern": "Streaked black."
+        },
+        "wings": {
+          "above": null,
+          "below": null
+        },
+        "tail": {
+          "colour": null,
+          "shape": "Stiff. Newman’s family notes say it is used as a prop while feeding."
+        }
+      }
+    },
+    {
+      "age": "adult",
+      "sex": "female",
+      "season": "any",
+      "marks": {
+        "bill": {
+          "colour": null,
+          "shape": "Straight and pointed, from the family notes on the Newman page."
+        },
+        "eye": {
+          "iris": null,
+          "ring": null
+        },
+        "legs": {
+          "colour": null
+        },
+        "head": {
+          "crown": [
+            "black",
+            "white"
+          ],
+          "face": null,
+          "throat": null,
+          "pattern": "Black crown with white spots. Only the nape is red."
+        },
+        "upperparts": {
+          "back": null,
+          "rump": null
+        },
+        "underparts": {
+          "breast": null,
+          "belly": null,
+          "pattern": "Streaked black."
+        },
+        "wings": {
+          "above": null,
+          "below": null
+        },
+        "tail": {
+          "colour": null,
+          "shape": "Stiff. Newman’s family notes say it is used as a prop while feeding."
+        }
+      }
+    }
+  ],
+  "viewNotes": [
+    {
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "male",
+      "season": "any",
+      "note": "Red crown with black spots, a red malar streak and black streaks below. The bill is straight and pointed."
+    },
+    {
+      "view": "perched-front",
+      "age": "adult",
+      "sex": "male",
+      "season": "any",
+      "note": "Red malar streak and black streaks on the breast."
+    },
+    {
+      "view": "perched-back",
+      "age": "adult",
+      "sex": "male",
+      "season": "any",
+      "note": "Red crown with black spots. The back colour was not described. The tail is stiff, and its colour was not given."
+    },
+    {
+      "view": "flight-above",
+      "age": "adult",
+      "sex": "male",
+      "season": "any",
+      "note": "A flight pattern was not described, and the wing colour was not given."
+    },
+    {
+      "view": "flight-below",
+      "age": "adult",
+      "sex": "male",
+      "season": "any",
+      "note": "The underwing was not described. The underparts are streaked black."
+    },
+    {
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "female",
+      "season": "any",
+      "note": "Black crown with white spots, a red nape and black streaks below."
+    },
+    {
+      "view": "perched-front",
+      "age": "adult",
+      "sex": "female",
+      "season": "any",
+      "note": "Black streaks on the breast. The female face was not given a separate colour beyond the spotted crown and red nape."
+    },
+    {
+      "view": "perched-back",
+      "age": "adult",
+      "sex": "female",
+      "season": "any",
+      "note": "Black crown with white spots and a red nape. The back colour was not described."
+    },
+    {
+      "view": "flight-above",
+      "age": "adult",
+      "sex": "female",
+      "season": "any",
+      "note": "A female flight pattern was not described."
+    },
+    {
+      "view": "flight-below",
+      "age": "adult",
+      "sex": "female",
+      "season": "any",
+      "note": "The female underwing was not described. The underparts are streaked black."
+    }
+  ],
+  "calls": [
+    {
+      "sex": "any",
+      "type": "call",
+      "description": "A distinctive single nasal waaa. Grade A call from Hoedspruit, with other species in the background. The filename is XC545718-Golden-tailed Woodpecker RV 200414-061553.mp3.",
+      "recordings": [
+        {
+          "key": "xeno-canto/XC545718",
+          "source": "https://xeno-canto.org/545718",
+          "fileUrl": "https://xeno-canto.org/sounds/uploaded/DNKBTPCMSQ/XC545718-Golden-tailed%20Woodpecker%20RV%20200414-061553.mp3",
+          "author": "Derek Solomon",
+          "license": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ]
+    }
+  ],
+  "images": [
+    {
+      "key": "campethera-abingoni/side-female.jpg",
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "female",
+      "season": "any",
+      "source": "https://www.inaturalist.org/observations/307231584",
+      "fileUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/554133458/large.jpg",
+      "author": "Лариса Артемьева",
+      "license": "CC0 1.0",
+      "licenceUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "aiGenerated": false,
+      "hosted": false,
+      "alt": "Female Golden-tailed Woodpecker at Mopani, Kruger, black crown with white spots and a red nape",
+      "caption": "Female Golden-tailed Woodpecker at Mopani, Kruger. The crown is black with white spots and only the nape is red."
+    },
+    {
+      "key": "campethera-abingoni/front-male.jpg",
+      "view": "perched-front",
+      "age": "adult",
+      "sex": "male",
+      "season": "any",
+      "source": "https://www.inaturalist.org/observations/10856320",
+      "fileUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/15230174/large.jpg",
+      "author": "Brian du Preez",
+      "license": "CC BY-SA 4.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "aiGenerated": false,
+      "hosted": false,
+      "alt": "Male Golden-tailed Woodpecker in the Pretoriuskop region, Kruger, red malar streak and streaked breast",
+      "caption": "Male Golden-tailed Woodpecker in the Pretoriuskop region, Kruger, with a red malar streak and a streaked breast."
+    },
+    {
+      "key": "campethera-abingoni/back-female.jpg",
+      "view": "perched-back",
+      "age": "adult",
+      "sex": "female",
+      "season": "any",
+      "source": "https://www.inaturalist.org/observations/250939508",
+      "fileUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/448900666/large.jpg",
+      "author": "Alan Manson",
+      "license": "CC BY 4.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by/4.0/",
+      "aiGenerated": false,
+      "hosted": false,
+      "alt": "Female Golden-tailed Woodpecker in Kruger, seen from behind, red nape and spotted crown",
+      "caption": "Female Golden-tailed Woodpecker in Kruger, seen from behind, with a spotted crown and a red nape."
+    }
+  ],
+  "research": {
+    "confidence": "medium",
+    "needsReview": true,
+    "note": "Newman calls it a common resident, and Avibase does not mark the Kruger occurrence rare or accidental, so status is resident and all twelve months are listed. No month-by-month park calendar was published. Sexes differ on the crown and malar streak. The immature was not described. Bill colour, eye, legs, wings and tail colour were not given. The straight bill and stiff tail are the family notes on the Newman page. No flight photograph was found. The Kruger frames are a female side from Mopani, a male front from the Pretoriuskop region, and a female back. Population figures, the Kemp paper name Goldentailed Woodpecker and the code RB were left unchanged."
+  },
+  "status": "resident",
+  "monthsPresent": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+  ]
 }

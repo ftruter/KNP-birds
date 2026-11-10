@@ -7,8 +7,42 @@
     "af": "Draaihals"
   },
   "family": "picidae",
-  "summary": "The details for this species have not been published yet.",
-  "sampleData": true,
+  "size": {
+    "lengthCm": {
+      "min": 18,
+      "max": 18
+    },
+    "note": "Newman's Birds gives 18 cm."
+  },
+  "habitat": "Singly or in pairs in various types of woodland and in suburbia, often in wattle trees. It creeps along branches, perches like a passerine, or hops on the ground with its tail raised.",
+  "summary": "A common, localised resident. It is identified by a rust-brown patch on the throat and upper breast, and by brown-speckled upperparts with a blackish broken line from the crown to the mantle. The underparts below that patch are creamy-white. The call is a high-pitched kek-kek-kek-kek. Sexes were not separated. It uses a natural hole or an old barbet or woodpecker hole, and it lacks the stiff tail of a woodpecker. The Kemp paper name Redthroated Wryneck and the code RB were left unchanged.",
+  "sampleData": false,
+  "similar": [
+    {
+      "slug": "dendropicos-fuscescens",
+      "note": "Cardinal Woodpecker has a straight pointed bill, a stiff tail and a streaked breast, and it braces on trunks. The wryneck has a rust-brown throat, speckled upperparts and perches more like a passerine."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Red-throated Wryneck",
+      "url": "https://newmansbirds.com/birds/red-throated-wryneck/",
+      "publisher": "Newman's Birds",
+      "year": 2026
+    },
+    {
+      "title": "Avibase bird checklist — Kruger National Park",
+      "url": "https://avibase.bsc-eoc.org/checklist.jsp?region=ZA000003",
+      "publisher": "Avibase",
+      "year": null
+    },
+    {
+      "title": "Kemp A.C., Herholdt J.J., Whyte I. & Harrison J. (2001). Birds of the two largest national parks in South Africa: a method to generate estimates of population size for all species and assess their conservation ecology. S. Afr. J. Sci. 97: 393–403.",
+      "url": "https://journals.co.za/doi/pdf/10.10520/EJC97367",
+      "publisher": "South African Journal of Science",
+      "year": 2001
+    }
+  ],
   "population": {
     "estimate": {
       "low": 2,
@@ -35,8 +69,177 @@
     },
     "tierApplied": "D"
   },
-  "variants": [],
-  "viewNotes": [],
-  "calls": [],
-  "images": []
+  "variants": [
+    {
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "marks": {
+        "bill": {
+          "colour": null,
+          "shape": null
+        },
+        "eye": {
+          "iris": null,
+          "ring": null
+        },
+        "legs": {
+          "colour": null
+        },
+        "head": {
+          "crown": null,
+          "face": null,
+          "throat": "rufous",
+          "pattern": "Blackish broken line from the crown to the mantle. Newman says rust-brown on the throat and upper breast. The colour list has no rust, so those parts are stored as rufous."
+        },
+        "upperparts": {
+          "back": "brown",
+          "rump": null,
+          "pattern": "Brown-speckled."
+        },
+        "underparts": {
+          "breast": "rufous",
+          "belly": [
+            "cream",
+            "white"
+          ],
+          "pattern": "Rust-brown throat and upper breast on creamy-white."
+        },
+        "wings": {
+          "above": null,
+          "below": null
+        },
+        "tail": {
+          "colour": null,
+          "shape": "Raised when the bird hops on the ground. Newman says it lacks the strong supporting tail of a woodpecker."
+        }
+      }
+    }
+  ],
+  "viewNotes": [
+    {
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Brown-speckled upperparts, a rust-brown throat and upper breast, and creamy-white underparts. It perches like a passerine."
+    },
+    {
+      "view": "perched-front",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Rust-brown throat and upper breast on creamy-white."
+    },
+    {
+      "view": "perched-back",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Brown-speckled upperparts with a blackish broken line from the crown to the mantle."
+    },
+    {
+      "view": "flight-above",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "A flight pattern was not described, and the wing colour was not given."
+    },
+    {
+      "view": "flight-below",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "The underwing was not described. The throat and upper breast are rust-brown on creamy-white."
+    }
+  ],
+  "calls": [
+    {
+      "sex": "any",
+      "type": "call",
+      "description": "A high-pitched kek-kek-kek-kek, frequently uttered. Grade A call from Port Alfred, Eastern Cape. The filename is XC342721-Red-throated Wryneck2.xc.mp3.",
+      "recordings": [
+        {
+          "key": "xeno-canto/XC342721",
+          "source": "https://xeno-canto.org/342721",
+          "fileUrl": "https://xeno-canto.org/sounds/uploaded/GQMCPIVNXX/XC342721-Red-throated%20Wryneck2.xc.mp3",
+          "author": "Tim Cockcroft",
+          "license": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ]
+    }
+  ],
+  "images": [
+    {
+      "key": "jynx-ruficollis/side.jpg",
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "source": "https://www.inaturalist.org/observations/88653487",
+      "fileUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/146299592/large.jpeg",
+      "author": "Christiaan Viljoen",
+      "license": "CC BY 4.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by/4.0/",
+      "aiGenerated": false,
+      "hosted": false,
+      "alt": "Red-throated Wryneck at Addo, speckled upperparts and a rust-brown throat",
+      "caption": "Red-throated Wryneck at Addo Elephant National Park, not Kruger, with speckled upperparts and a rust-brown throat."
+    },
+    {
+      "key": "jynx-ruficollis/front.jpg",
+      "view": "perched-front",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "source": "https://www.inaturalist.org/observations/88653487",
+      "fileUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/146299634/large.jpeg",
+      "author": "Christiaan Viljoen",
+      "license": "CC BY 4.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by/4.0/",
+      "aiGenerated": false,
+      "hosted": false,
+      "alt": "Red-throated Wryneck at Addo, seen from the front, rust-brown throat and upper breast",
+      "caption": "Red-throated Wryneck at Addo Elephant National Park, not Kruger, seen from the front, with a rust-brown throat and upper breast on creamy-white."
+    },
+    {
+      "key": "jynx-ruficollis/back.jpg",
+      "view": "perched-back",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "source": "https://www.inaturalist.org/observations/67346163",
+      "fileUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/108787941/large.jpg",
+      "author": "Dave Brown",
+      "license": "CC0 1.0",
+      "licenceUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "aiGenerated": false,
+      "hosted": false,
+      "alt": "Red-throated Wryneck at Sapkamma, Uitenhage, speckled back at a hole, with a second bird showing the rust-brown throat",
+      "caption": "Red-throated Wryneck at Sapkamma in the Uitenhage district, not Kruger. One bird shows the speckled back at a hole. A second bird shows the rust-brown throat."
+    }
+  ],
+  "research": {
+    "confidence": "medium",
+    "needsReview": true,
+    "note": "Newman calls it a common, localised resident, and Avibase does not mark the Kruger occurrence rare or accidental, so status is resident and all twelve months are listed. Sexes were not separated, so one adult description is shared and the sex table follows that. The immature was not described. Bill colour, eye, legs and wings were not given. Newman says rust-brown. That colour is not in the vocabulary, so the throat and breast are stored as rufous. No Kruger photograph was found under an allowed licence. The side and front are from Addo, and the back is a CC0 frame from the Uitenhage district that also includes a second bird. No flight photograph was found. The grade A call is from Port Alfred. Population figures, the Kemp paper name Redthroated Wryneck and the code RB were left unchanged."
+  },
+  "status": "resident",
+  "monthsPresent": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+  ]
 }

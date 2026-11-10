@@ -7,8 +7,42 @@
     "af": "Kardinaalspeg"
   },
   "family": "picidae",
-  "summary": "The details for this species have not been published yet.",
-  "sampleData": true,
+  "size": {
+    "lengthCm": {
+      "min": 14,
+      "max": 16
+    },
+    "note": "Newman's Birds gives 14–16 cm."
+  },
+  "habitat": "Pairs occur in any broad-leaved woodland, thornveld or riverine bush, often with other birds of the same species and frequently in quite small trees.",
+  "summary": "A common resident, identified by its small size, streaked breast, black malar streak and brown forehead. The male has a crimson crown and the female a black crown. The call is a high-pitched chittering ke-ke-ke-ke-ke-ke-kek. It taps quietly. Bill colour, eye, legs, wings and the tail colour were not described. The Kemp paper name Cardinal Woodpecker and the code RB were left unchanged.",
+  "sampleData": false,
+  "similar": [
+    {
+      "slug": "campethera-abingoni",
+      "note": "Golden-tailed Woodpecker is larger. The male’s whole crown is red with black spots and he has a red malar streak. Cardinal Woodpecker has a brown forehead."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Cardinal Woodpecker",
+      "url": "https://newmansbirds.com/birds/cardinal-woodpecker/",
+      "publisher": "Newman's Birds",
+      "year": 2026
+    },
+    {
+      "title": "Avibase bird checklist — Kruger National Park",
+      "url": "https://avibase.bsc-eoc.org/checklist.jsp?region=ZA000003",
+      "publisher": "Avibase",
+      "year": null
+    },
+    {
+      "title": "Kemp A.C., Herholdt J.J., Whyte I. & Harrison J. (2001). Birds of the two largest national parks in South Africa: a method to generate estimates of population size for all species and assess their conservation ecology. S. Afr. J. Sci. 97: 393–403.",
+      "url": "https://journals.co.za/doi/pdf/10.10520/EJC97367",
+      "publisher": "South African Journal of Science",
+      "year": 2001
+    }
+  ],
   "population": {
     "estimate": {
       "low": 16384,
@@ -35,8 +69,265 @@
     },
     "tierApplied": "D"
   },
-  "variants": [],
-  "viewNotes": [],
-  "calls": [],
-  "images": []
+  "variants": [
+    {
+      "age": "adult",
+      "sex": "male",
+      "season": "any",
+      "marks": {
+        "bill": {
+          "colour": null,
+          "shape": "Straight and pointed, from the family notes on the Newman page."
+        },
+        "eye": {
+          "iris": null,
+          "ring": null
+        },
+        "legs": {
+          "colour": null
+        },
+        "head": {
+          "crown": "red",
+          "face": null,
+          "throat": null,
+          "pattern": "Crimson crown, brown forehead and a black malar streak. Newman says crimson. The colour list has no crimson, so the crown is stored as red."
+        },
+        "upperparts": {
+          "back": null,
+          "rump": null
+        },
+        "underparts": {
+          "breast": null,
+          "belly": null,
+          "pattern": "Streaked black."
+        },
+        "wings": {
+          "above": null,
+          "below": null
+        },
+        "tail": {
+          "colour": null,
+          "shape": "Stiff. Newman’s family notes say it is used as a prop while feeding."
+        }
+      }
+    },
+    {
+      "age": "adult",
+      "sex": "female",
+      "season": "any",
+      "marks": {
+        "bill": {
+          "colour": null,
+          "shape": "Straight and pointed, from the family notes on the Newman page."
+        },
+        "eye": {
+          "iris": null,
+          "ring": null
+        },
+        "legs": {
+          "colour": null
+        },
+        "head": {
+          "crown": "black",
+          "face": null,
+          "throat": null,
+          "pattern": "Black crown, brown forehead and a black malar streak."
+        },
+        "upperparts": {
+          "back": null,
+          "rump": null
+        },
+        "underparts": {
+          "breast": null,
+          "belly": null,
+          "pattern": "Streaked black."
+        },
+        "wings": {
+          "above": null,
+          "below": null
+        },
+        "tail": {
+          "colour": null,
+          "shape": "Stiff. Newman’s family notes say it is used as a prop while feeding."
+        }
+      }
+    }
+  ],
+  "viewNotes": [
+    {
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "male",
+      "season": "any",
+      "note": "Small, with a crimson crown, a brown forehead, a black malar streak and a streaked breast."
+    },
+    {
+      "view": "perched-front",
+      "age": "adult",
+      "sex": "male",
+      "season": "any",
+      "note": "Crimson crown, brown forehead and a streaked breast."
+    },
+    {
+      "view": "perched-back",
+      "age": "adult",
+      "sex": "male",
+      "season": "any",
+      "note": "Crimson crown. The back colour was not described."
+    },
+    {
+      "view": "flight-above",
+      "age": "adult",
+      "sex": "male",
+      "season": "any",
+      "note": "A flight pattern was not described, and the wing colour was not given."
+    },
+    {
+      "view": "flight-below",
+      "age": "adult",
+      "sex": "male",
+      "season": "any",
+      "note": "The underwing was not described. The breast is streaked."
+    },
+    {
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "female",
+      "season": "any",
+      "note": "Black crown, brown forehead, black malar streak and a streaked breast."
+    },
+    {
+      "view": "perched-front",
+      "age": "adult",
+      "sex": "female",
+      "season": "any",
+      "note": "Black crown and a streaked breast."
+    },
+    {
+      "view": "perched-back",
+      "age": "adult",
+      "sex": "female",
+      "season": "any",
+      "note": "Black crown. The female back was not described."
+    },
+    {
+      "view": "flight-above",
+      "age": "adult",
+      "sex": "female",
+      "season": "any",
+      "note": "A female flight pattern was not described."
+    },
+    {
+      "view": "flight-below",
+      "age": "adult",
+      "sex": "female",
+      "season": "any",
+      "note": "The female underwing was not described. The breast is streaked."
+    }
+  ],
+  "calls": [
+    {
+      "sex": "any",
+      "type": "call",
+      "description": "A high-pitched chittering ke-ke-ke-ke-ke-ke-kek. Grade A call from Kruger near Skukuza. The catalogue filename includes a 600 Hz high-pass, and this site has not filtered it further. The filename is XC998772-20240716_KNP_RProbert_CanonXA40_A029C211_240716E1_KNP02_SLE_600HzHP_-3dBNORM.mp3.",
+      "recordings": [
+        {
+          "key": "xeno-canto/XC998772",
+          "source": "https://xeno-canto.org/998772",
+          "fileUrl": "https://xeno-canto.org/sounds/uploaded/YSGTQVRQZI/XC998772-20240716_KNP_RProbert_CanonXA40_A029C211_240716E1_KNP02_SLE_600HzHP_-3dBNORM.mp3",
+          "author": "African Bioacoustics Community",
+          "license": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ]
+    }
+  ],
+  "images": [
+    {
+      "key": "dendropicos-fuscescens/side-male.jpg",
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "male",
+      "season": "any",
+      "source": "https://www.inaturalist.org/observations/104536510",
+      "fileUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/175182168/large.jpeg",
+      "author": "Justin Ponder",
+      "license": "CC BY 4.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by/4.0/",
+      "aiGenerated": false,
+      "hosted": false,
+      "alt": "Male Cardinal Woodpecker at Skukuza, crimson crown, brown forehead and streaked breast",
+      "caption": "Male Cardinal Woodpecker at Skukuza, with a crimson crown, a brown forehead and a streaked breast."
+    },
+    {
+      "key": "dendropicos-fuscescens/front-male.jpg",
+      "view": "perched-front",
+      "age": "adult",
+      "sex": "male",
+      "season": "any",
+      "source": "https://www.inaturalist.org/observations/185977797",
+      "fileUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/324900960/large.jpg",
+      "author": "Cole Wolf",
+      "license": "CC BY 4.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by/4.0/",
+      "aiGenerated": false,
+      "hosted": false,
+      "alt": "Male Cardinal Woodpecker in Kruger, crimson crown, brown forehead and streaked breast",
+      "caption": "Male Cardinal Woodpecker in Kruger, Ehlanzeni, seen from the front, with a crimson crown, a brown forehead and a streaked breast."
+    },
+    {
+      "key": "dendropicos-fuscescens/side-female.jpg",
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "female",
+      "season": "any",
+      "source": "https://www.inaturalist.org/observations/135013542",
+      "fileUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/230222678/large.jpeg",
+      "author": "agujaceratops",
+      "license": "CC BY 4.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by/4.0/",
+      "aiGenerated": false,
+      "hosted": false,
+      "alt": "Female Cardinal Woodpecker in the Vhembe section of Kruger, black crown and streaked underparts",
+      "caption": "Female Cardinal Woodpecker in the Vhembe section of Kruger. Branches cross the bird. The crown is black and the underparts are streaked."
+    },
+    {
+      "key": "dendropicos-fuscescens/back-male.jpg",
+      "view": "perched-back",
+      "age": "adult",
+      "sex": "male",
+      "season": "any",
+      "source": "https://www.inaturalist.org/observations/197987549",
+      "fileUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/348850701/large.jpeg",
+      "author": "Christiaan Viljoen",
+      "license": "CC BY 4.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by/4.0/",
+      "aiGenerated": false,
+      "hosted": false,
+      "alt": "Male Cardinal Woodpecker in the Mopani district, Kruger, seen from behind, crimson crown",
+      "caption": "Male Cardinal Woodpecker in the Mopani district, Kruger, seen from behind, with a crimson crown."
+    }
+  ],
+  "research": {
+    "confidence": "medium",
+    "needsReview": true,
+    "note": "Newman calls it a common resident, and Avibase does not mark the Kruger occurrence rare or accidental, so status is resident and all twelve months are listed. Newman says the male crown is crimson. That colour is not in the vocabulary, so the crown is stored as red and the word crimson stays in the pattern. The immature was not described. Bill colour, eye, legs, wings and tail colour were not given. The female side photograph is crossed by branches. No flight photograph was found. The grade A call is from Kruger near Skukuza. Its catalogue filename already includes a 600 Hz high-pass, so no further filter is claimed. Population figures, the Kemp paper name Cardinal Woodpecker and the code RB were left unchanged."
+  },
+  "status": "resident",
+  "monthsPresent": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+  ]
 }
