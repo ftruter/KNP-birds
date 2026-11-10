@@ -6,8 +6,8 @@
     "en": "Thrushes",
     "af": "Lysters"
   },
-  "summary": "Field notes for this family are still to be written.",
-  "sampleData": true,
+  "summary": "Four thrushes. Kurrichane and Groundscraper are the woodland birds. Olive Thrush is more orange below than the duller Karoo Thrush. Olive Thrush and Karoo Thrush have no Kemp estimates.",
+  "sampleData": false,
   "species": [
     {
       "slug": "turdus-libonyana",

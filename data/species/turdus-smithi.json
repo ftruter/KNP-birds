@@ -1,14 +1,151 @@
 {
+  "size": {
+    "lengthCm": {
+      "min": 24,
+      "max": 24
+    },
+    "note": "Newman's Birds gives 24 cm."
+  },
+  "habitat": "Common in the Karoo and very common on the highveld, in parks and gardens. Males display with drooping wings and the tail splayed and dragging on the ground.",
+  "summary": "A common endemic resident. Much duller than Olive Thrush. It is dark grey-brown, with only the underbelly orange. Throat spotting is absent or vestigial, the vent is greyish and occasionally white, and the bill and legs are orange-yellow. The eye-ring is orange, not brown. Newman does not describe the voice. No Kemp estimate is stored.",
+  "similar": [
+    {
+      "slug": "turdus-olivaceus",
+      "note": "Olive Thrush is more orange below, with a speckled throat, a dark wedge on the culmen, a brown eye-ring and a white vent."
+    }
+  ],
+  "variants": [
+    {
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "marks": {
+        "bill": {
+          "colour": null,
+          "shape": "Orange-yellow."
+        },
+        "eye": {
+          "iris": null,
+          "ring": "orange"
+        },
+        "legs": {
+          "colour": null
+        },
+        "head": {
+          "crown": null,
+          "face": null,
+          "throat": null,
+          "pattern": "Throat spotting absent or vestigial. Dark grey-brown."
+        },
+        "upperparts": {
+          "back": null,
+          "rump": null,
+          "pattern": "Dark grey-brown."
+        },
+        "underparts": {
+          "breast": null,
+          "belly": "orange",
+          "pattern": "Drab grey-brown, with only the underbelly orange. The vent is greyish, occasionally white."
+        },
+        "wings": {
+          "above": null,
+          "below": null
+        },
+        "tail": {
+          "colour": null,
+          "shape": null
+        }
+      }
+    }
+  ],
+  "viewNotes": [
+    {
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Dark grey-brown, with an orange underbelly and an orange-yellow bill."
+    },
+    {
+      "view": "perched-front",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Little or no throat spotting. The eye-ring is orange."
+    },
+    {
+      "view": "display-back",
+      "age": "adult",
+      "sex": "male",
+      "season": "any",
+      "note": "Drooping wings and a splayed tail dragged on the ground."
+    },
+    {
+      "view": "flight-above",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Flight plumage is not described."
+    },
+    {
+      "view": "flight-below",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Only the underbelly is orange. The vent is greyish or occasionally white."
+    }
+  ],
+  "calls": [
+    {
+      "sex": "any",
+      "type": "call",
+      "description": "Newman does not describe the voice. The grade A call is from Klerksdorp. The filename also names a sparrow, so another bird may be present. The filename is XC503252-2 Karoo Thrush and sparrow.mp3.",
+      "recordings": [
+        {
+          "key": "xeno-canto/XC503252",
+          "source": "https://xeno-canto.org/503252",
+          "fileUrl": "https://xeno-canto.org/sounds/uploaded/HMBDEWEZVS/XC503252-2%20Karoo%20Thrush%20and%20sparrow.mp3",
+          "author": "Tony Archer",
+          "license": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ]
+    }
+  ],
+  "images": [
+    {
+      "key": "turdus-smithi/side.jpg",
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "source": "https://www.inaturalist.org/observations/383227949",
+      "fileUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/701392615/large.jpg",
+      "author": "Otherwhere",
+      "license": "CC BY-NC 4.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+      "aiGenerated": false,
+      "hosted": false,
+      "alt": "Karoo Thrush at Centurion, grey-brown with an orange-yellow bill",
+      "caption": "Karoo Thrush at Centurion, Gauteng, grey-brown, with an orange-yellow bill. No Kruger photograph was found."
+    }
+  ],
+  "research": {
+    "confidence": "medium",
+    "needsReview": true,
+    "note": "Newman calls it a common endemic resident, and Avibase does not mark it rare, so all twelve months are listed. Grey-brown and orange-yellow are not stored as single colours. The voice is not described. The grade A call is from North West and its filename names a sparrow. No Kruger photograph was found. No Kemp estimate is stored."
+  },
   "kind": "species",
   "slug": "turdus-smithi",
+  "family": "turdidae",
+  "sampleData": false,
   "scientificName": "Turdus smithi",
   "commonNames": {
     "en": "Karoo Thrush",
     "af": "Geelbeklyster"
   },
-  "family": "turdidae",
-  "summary": "The details for this species have not been published yet.",
-  "sampleData": true,
   "population": {
     "estimate": {
       "low": null,
@@ -21,8 +158,33 @@
     "notes": "No sourced Kruger estimate is currently available; taxonomy or later records require separate research.",
     "sources": []
   },
-  "variants": [],
-  "viewNotes": [],
-  "calls": [],
-  "images": []
+  "status": "resident",
+  "monthsPresent": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+  ],
+  "sources": [
+    {
+      "title": "Karoo Thrush",
+      "url": "https://newmansbirds.com/birds/karoo-thrush/",
+      "publisher": "Newman's Birds",
+      "year": 2026
+    },
+    {
+      "title": "Avibase bird checklist — Kruger National Park",
+      "url": "https://avibase.bsc-eoc.org/checklist.jsp?region=ZA000003",
+      "publisher": "Avibase",
+      "year": null
+    }
+  ]
 }

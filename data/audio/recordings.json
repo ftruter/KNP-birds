@@ -3047,6 +3047,46 @@
         }
       ]
     },
+    "turdus-libonyana": {
+      "calls": [
+        {
+          "index": 0,
+          "quality": {
+            "xeno-canto/XC237783": "A"
+          }
+        }
+      ]
+    },
+    "turdus-litsitsirupa": {
+      "calls": [
+        {
+          "index": 0,
+          "quality": {
+            "xeno-canto/XC1188517": "A"
+          }
+        }
+      ]
+    },
+    "turdus-olivaceus": {
+      "calls": [
+        {
+          "index": 0,
+          "quality": {
+            "xeno-canto/XC502734": "A"
+          }
+        }
+      ]
+    },
+    "turdus-smithi": {
+      "calls": [
+        {
+          "index": 0,
+          "quality": {
+            "xeno-canto/XC503252": "A"
+          }
+        }
+      ]
+    },
     "turtur-afer": {
       "calls": [
         {

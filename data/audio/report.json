@@ -1,10 +1,10 @@
 {
   "source": "xeno-canto explore catalogue, API v3 recording fields",
   "counts": {
-    "slots": 472,
+    "slots": 476,
     "swapped": 17,
     "added": 278,
-    "kept": 149,
+    "kept": 153,
     "none": 28,
     "cleaned": 0
   },
@@ -4143,6 +4143,70 @@
       "locality": "Zhanteke lake, Aqmola province",
       "cleaned": false,
       "license": "CC BY-NC-SA 3.0"
+    },
+    {
+      "slug": "turdus-libonyana",
+      "scientificName": "Turdus libonyana",
+      "index": 0,
+      "type": "call",
+      "action": "kept",
+      "from": [
+        "237783"
+      ],
+      "to": "237783",
+      "quality": "A",
+      "country": "South Africa",
+      "locality": "Kruger NP",
+      "cleaned": false,
+      "license": "CC BY-NC-SA 4.0"
+    },
+    {
+      "slug": "turdus-litsitsirupa",
+      "scientificName": "Turdus litsitsirupa",
+      "index": 0,
+      "type": "song",
+      "action": "kept",
+      "from": [
+        "1188517"
+      ],
+      "to": "1188517",
+      "quality": "A",
+      "country": "South Africa",
+      "locality": "Kruger Park, near Sabie Park",
+      "cleaned": false,
+      "license": "CC BY-NC-SA 4.0"
+    },
+    {
+      "slug": "turdus-olivaceus",
+      "scientificName": "Turdus olivaceus",
+      "index": 0,
+      "type": "call",
+      "action": "kept",
+      "from": [
+        "502734"
+      ],
+      "to": "502734",
+      "quality": "A",
+      "country": "South Africa",
+      "locality": "near Louis Trichardt, Limpopo",
+      "cleaned": false,
+      "license": "CC BY-NC-SA 4.0"
+    },
+    {
+      "slug": "turdus-smithi",
+      "scientificName": "Turdus smithi",
+      "index": 0,
+      "type": "call",
+      "action": "kept",
+      "from": [
+        "503252"
+      ],
+      "to": "503252",
+      "quality": "A",
+      "country": "South Africa",
+      "locality": "Klerksdorp, North West",
+      "cleaned": false,
+      "license": "CC BY-NC-SA 4.0"
     },
     {
       "slug": "vanellus-albiceps",
