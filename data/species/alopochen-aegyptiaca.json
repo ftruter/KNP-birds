@@ -177,25 +177,47 @@
     {
       "sex": "male",
       "type": "call",
-      "description": "A husky wheeze. Newman says both sexes extend the head and neck when calling. Wikipedia also describes a hoarse, subdued quack and a breathy sequence.",
-      "recordings": []
+      "description": "A husky wheeze. Newman says both sexes extend the head and neck when calling. Wikipedia also describes a hoarse, subdued quack and a breathy sequence. The catalogue cut is labelled male. Grade A, South Africa. Free State, not Kruger. Other species can be heard in the background.",
+      "recordings": [
+        {
+          "key": "xeno-canto/XC909530",
+          "source": "https://xeno-canto.org/909530",
+          "fileUrl": "https://xeno-canto.org/sounds/uploaded/JDCTKFMBKV/XC909530-GooseEgyptian_SypreshoekdamJpad_20240601_Zoom.mp3",
+          "author": "Dawie de Swardt",
+          "license": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ]
     },
     {
       "sex": "female",
       "type": "call",
-      "description": "A harsh, nasal, high-pitched hur-hur-hur-hur.",
-      "recordings": []
+      "description": "A harsh, nasal, high-pitched hur-hur-hur-hur. The catalogue cut is labelled female. Grade A, South Africa. Cape Town, not Kruger. The recordist lists adults and juveniles.",
+      "recordings": [
+        {
+          "key": "xeno-canto/XC1183527",
+          "source": "https://xeno-canto.org/1183527",
+          "fileUrl": "https://xeno-canto.org/sounds/uploaded/YSGTQVRQZI/XC1183527-20260901_MAJF_AKaramitsos_XA60_A031C146_260901YY_SLE_-3dB_split_goose.mp3",
+          "author": "African Bioacoustics Community",
+          "license": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ]
     },
     {
       "sex": "any",
       "type": "call",
-      "description": "Newman separates the male wheeze from the female hur-hur-hur-hur. The catalogue cut is not labelled male or female. Grade A, South Africa. Free State, not Kruger. A grade A file from Kruger was not used because its filename says african goose.",
+      "description": "Newman separates the male wheeze from the female hur-hur-hur-hur. The recordist says a male and a female are calling together; the cut is not labelled by sex. Grade A, from Kruger. Another grade A file from Kruger was not used because its filename says african goose.",
       "recordings": [
         {
-          "key": "xeno-canto/XC816922",
-          "source": "https://xeno-canto.org/816922",
-          "fileUrl": "https://xeno-canto.org/sounds/uploaded/JDCTKFMBKV/XC816922-GooseEgyptian_SevendamsBFN_20230716.mp3",
-          "author": "Dawie de Swardt",
+          "key": "xeno-canto/XC489216",
+          "source": "https://xeno-canto.org/489216",
+          "fileUrl": "https://xeno-canto.org/sounds/uploaded/DNKBTPCMSQ/XC489216-Ehyptian%20Geese190709-170132.mp3",
+          "author": "Derek Solomon",
           "license": "CC BY-NC-SA 4.0",
           "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
           "aiGenerated": false,
@@ -241,6 +263,6 @@
   "research": {
     "confidence": "medium",
     "needsReview": false,
-    "note": "Status is resident. SABAP1 calls it an abundant widespread resident, nomadic mainly in drier regions, with a winter influx to the Cape rather than a Kruger absence, so all twelve months are listed. The green speculum visible in photographs was not named by these texts, so it was not stored. Chick down is not described. The call is grade A from the Free State and is not sexed."
+    "note": "Status is resident. SABAP1 calls it an abundant widespread resident, nomadic mainly in drier regions, with a winter influx to the Cape rather than a Kruger absence, so all twelve months are listed. The green speculum visible in photographs was not named by these texts, so it was not stored. Chick down is not described. The shared call is grade A from Kruger, a male and a female calling together. The male call is grade A from the Free State and the female call is grade A from Cape Town; both are labelled by sex in the catalogue. The only South African female-only cuts are the Cape Town file, whose recordist lists adults and juveniles, and the Kruger file whose filename says african goose, so no adult-only female cut was available."
   }
 }

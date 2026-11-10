@@ -1034,11 +1034,33 @@
       ],
       "recordings": [
         {
-          "key": "xeno-canto/XC816922",
+          "key": "xeno-canto/XC909530",
           "author": "Dawie de Swardt",
           "licence": "CC BY-NC-SA 4.0",
           "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
-          "sourceUrl": "https://xeno-canto.org/816922",
+          "sourceUrl": "https://xeno-canto.org/909530",
+          "aiGenerated": false,
+          "hosted": false,
+          "quality": "A",
+          "callType": "call"
+        },
+        {
+          "key": "xeno-canto/XC1183527",
+          "author": "African Bioacoustics Community",
+          "licence": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "sourceUrl": "https://xeno-canto.org/1183527",
+          "aiGenerated": false,
+          "hosted": false,
+          "quality": "A",
+          "callType": "call"
+        },
+        {
+          "key": "xeno-canto/XC489216",
+          "author": "Derek Solomon",
+          "licence": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "sourceUrl": "https://xeno-canto.org/489216",
           "aiGenerated": false,
           "hosted": false,
           "quality": "A",
@@ -1631,6 +1653,17 @@
       ],
       "recordings": [
         {
+          "key": "xeno-canto/XC1163841",
+          "author": "Walter Wallner",
+          "licence": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "sourceUrl": "https://xeno-canto.org/1163841",
+          "aiGenerated": false,
+          "hosted": false,
+          "quality": "B",
+          "callType": "call"
+        },
+        {
           "key": "xeno-canto/XC464064",
           "author": "Tim Cockcroft",
           "licence": "CC BY-NC-SA 4.0",
@@ -1685,6 +1718,28 @@
         }
       ],
       "recordings": [
+        {
+          "key": "xeno-canto/XC1053126",
+          "author": "Bernard BOUSQUET",
+          "licence": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "sourceUrl": "https://xeno-canto.org/1053126",
+          "aiGenerated": false,
+          "hosted": false,
+          "quality": "A",
+          "callType": "call"
+        },
+        {
+          "key": "xeno-canto/XC1141380",
+          "author": "Walter Wallner",
+          "licence": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "sourceUrl": "https://xeno-canto.org/1141380",
+          "aiGenerated": false,
+          "hosted": false,
+          "quality": "B",
+          "callType": "call"
+        },
         {
           "key": "xeno-canto/XC1051974",
           "author": "African Bioacoustics Community",

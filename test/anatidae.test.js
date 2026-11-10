@@ -135,5 +135,5 @@ test('all thirteen ducks are sourced without changing populations', async () => 
   const calls = diffSpecies(goose).find((part) => part.id === 'calls')
   assert.equal(calls.status, 'differs')
   assert.equal(images, 22)
-  assert.equal(recordings, 12)
+  assert.equal(recordings, 17)
 })
