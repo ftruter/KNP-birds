@@ -52,7 +52,9 @@ test('all twelve bushshrikes are sourced without changing populations', async ()
   const blackfront = await readJson(
     'data/species/chlorophoneus-nigrifrons.json',
   )
-  assert.equal(blackfront.images.length, 0)
+  assert.equal(blackfront.images.length, 1)
+  assert.equal(blackfront.images[0].license, 'CC BY 4.0')
+  assert.match(blackfront.images[0].caption, /not Kruger/)
   const olive = await readJson('data/species/chlorophoneus-olivaceus.json')
   assert.equal(olive.size, undefined)
   assert.equal(olive.research.needsReview, true)
