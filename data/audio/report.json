@@ -1,10 +1,10 @@
 {
   "source": "xeno-canto explore catalogue, API v3 recording fields",
   "counts": {
-    "slots": 445,
+    "slots": 454,
     "swapped": 17,
     "added": 278,
-    "kept": 122,
+    "kept": 131,
     "none": 28,
     "cleaned": 0
   },
@@ -459,6 +459,38 @@
       "quality": "A",
       "country": "South Africa",
       "locality": "Kruger near Sabie Park",
+      "cleaned": false,
+      "license": "CC BY-NC-SA 4.0"
+    },
+    {
+      "slug": "bubo-africanus",
+      "scientificName": "Bubo africanus",
+      "index": 0,
+      "type": "call",
+      "action": "kept",
+      "from": [
+        "252807"
+      ],
+      "to": "252807",
+      "quality": "A",
+      "country": "South Africa",
+      "locality": "Grahamstown, Eastern Cape",
+      "cleaned": false,
+      "license": "CC BY-NC-SA 4.0"
+    },
+    {
+      "slug": "bubo-capensis",
+      "scientificName": "Bubo capensis",
+      "index": 0,
+      "type": "call",
+      "action": "kept",
+      "from": [
+        "808452"
+      ],
+      "to": "808452",
+      "quality": "B",
+      "country": "South Africa",
+      "locality": "Makhanda, Eastern Cape",
       "cleaned": false,
       "license": "CC BY-NC-SA 4.0"
     },
@@ -1135,6 +1167,38 @@
       "license": "CC BY-NC-SA 4.0"
     },
     {
+      "slug": "glaucidium-capense",
+      "scientificName": "Glaucidium capense",
+      "index": 0,
+      "type": "call",
+      "action": "kept",
+      "from": [
+        "358211"
+      ],
+      "to": "358211",
+      "quality": "A",
+      "country": "South Africa",
+      "locality": "Hoedspruit, Limpopo",
+      "cleaned": false,
+      "license": "CC BY-NC-SA 4.0"
+    },
+    {
+      "slug": "glaucidium-perlatum",
+      "scientificName": "Glaucidium perlatum",
+      "index": 0,
+      "type": "call",
+      "action": "kept",
+      "from": [
+        "194518"
+      ],
+      "to": "194518",
+      "quality": "A",
+      "country": "South Africa",
+      "locality": "Thabazimbi, Limpopo",
+      "cleaned": false,
+      "license": "CC BY-NC-SA 4.0"
+    },
+    {
       "slug": "gypohierax-angolensis",
       "scientificName": "Gypohierax angolensis",
       "index": 0,
@@ -1440,6 +1504,22 @@
       "license": "CC BY-NC-SA 4.0"
     },
     {
+      "slug": "ketupa-lactea",
+      "scientificName": "Ketupa lactea",
+      "index": 0,
+      "type": "call",
+      "action": "kept",
+      "from": [
+        "1007496"
+      ],
+      "to": "1007496",
+      "quality": "A",
+      "country": "South Africa",
+      "locality": "Kruger Park, near Sabie Park",
+      "cleaned": false,
+      "license": "CC BY-NC-SA 4.0"
+    },
+    {
       "slug": "lophaetus-occipitalis",
       "scientificName": "Lophaetus occipitalis",
       "index": 0,
@@ -1560,6 +1640,22 @@
       "locality": "Gambela, Dembidolo Road",
       "cleaned": false,
       "license": "CC BY-NC-ND 4.0"
+    },
+    {
+      "slug": "otus-senegalensis",
+      "scientificName": "Otus senegalensis",
+      "index": 0,
+      "type": "call",
+      "action": "kept",
+      "from": [
+        "361285"
+      ],
+      "to": "361285",
+      "quality": "A",
+      "country": "South Africa",
+      "locality": "Kruger Park, Ehlanzeni",
+      "cleaned": false,
+      "license": "CC BY-NC-SA 4.0"
     },
     {
       "slug": "paragallinula-angulata",
@@ -1904,6 +2000,22 @@
       "license": "CC BY-NC-SA 4.0"
     },
     {
+      "slug": "ptilopsis-granti",
+      "scientificName": "Ptilopsis granti",
+      "index": 0,
+      "type": "call",
+      "action": "kept",
+      "from": [
+        "1059179"
+      ],
+      "to": "1059179",
+      "quality": "A",
+      "country": "Namibia",
+      "locality": "Halali, Oshikoto",
+      "cleaned": false,
+      "license": "CC BY-NC-SA 4.0"
+    },
+    {
       "slug": "pycnonotus-barbatus",
       "scientificName": "Pycnonotus barbatus",
       "index": 0,
@@ -2048,6 +2160,22 @@
       "license": "CC BY-NC-SA 4.0"
     },
     {
+      "slug": "scotopelia-peli",
+      "scientificName": "Scotopelia peli",
+      "index": 0,
+      "type": "call",
+      "action": "kept",
+      "from": [
+        "1190285"
+      ],
+      "to": "1190285",
+      "quality": "A",
+      "country": "Gabon",
+      "locality": "Ndola Lodge, Tassi",
+      "cleaned": false,
+      "license": "CC BY-NC-SA 4.0"
+    },
+    {
       "slug": "sporopipes-squamifrons",
       "scientificName": "Sporopipes squamifrons",
       "index": 0,
@@ -2078,6 +2206,22 @@
       "quality": "A",
       "country": "South Africa",
       "locality": "2nd Gate (near Westville), eThekwini Metropolitan Municipality, KwaZulu-Natal",
+      "cleaned": false,
+      "license": "CC BY-NC-SA 4.0"
+    },
+    {
+      "slug": "strix-woodfordii",
+      "scientificName": "Strix woodfordii",
+      "index": 0,
+      "type": "call",
+      "action": "kept",
+      "from": [
+        "581119"
+      ],
+      "to": "581119",
+      "quality": "A",
+      "country": "Zambia",
+      "locality": "Nyachisala Forest, Mwinilunga",
       "cleaned": false,
       "license": "CC BY-NC-SA 4.0"
     },

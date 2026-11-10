@@ -624,6 +624,26 @@
         }
       ]
     },
+    "bubo-africanus": {
+      "calls": [
+        {
+          "index": 0,
+          "quality": {
+            "xeno-canto/XC252807": "A"
+          }
+        }
+      ]
+    },
+    "bubo-capensis": {
+      "calls": [
+        {
+          "index": 0,
+          "quality": {
+            "xeno-canto/XC808452": "B"
+          }
+        }
+      ]
+    },
     "bucorvus-leadbeateri": {
       "calls": [
         {
@@ -1674,6 +1694,26 @@
         }
       ]
     },
+    "glaucidium-capense": {
+      "calls": [
+        {
+          "index": 0,
+          "quality": {
+            "xeno-canto/XC358211": "A"
+          }
+        }
+      ]
+    },
+    "glaucidium-perlatum": {
+      "calls": [
+        {
+          "index": 0,
+          "quality": {
+            "xeno-canto/XC194518": "A"
+          }
+        }
+      ]
+    },
     "gypohierax-angolensis": {
       "calls": [
         {
@@ -1960,6 +2000,16 @@
         }
       ]
     },
+    "ketupa-lactea": {
+      "calls": [
+        {
+          "index": 0,
+          "quality": {
+            "xeno-canto/XC1007496": "A"
+          }
+        }
+      ]
+    },
     "leptoptilos-crumenifer": {
       "calls": [
         {
@@ -2178,6 +2228,16 @@
           "index": 0,
           "quality": {
             "xeno-canto/XC496248": "A"
+          }
+        }
+      ]
+    },
+    "otus-senegalensis": {
+      "calls": [
+        {
+          "index": 0,
+          "quality": {
+            "xeno-canto/XC361285": "A"
           }
         }
       ]
@@ -2450,6 +2510,16 @@
         }
       ]
     },
+    "ptilopsis-granti": {
+      "calls": [
+        {
+          "index": 0,
+          "quality": {
+            "xeno-canto/XC1059179": "A"
+          }
+        }
+      ]
+    },
     "pycnonotus-barbatus": {
       "calls": [
         {
@@ -2550,6 +2620,16 @@
         }
       ]
     },
+    "scotopelia-peli": {
+      "calls": [
+        {
+          "index": 0,
+          "quality": {
+            "xeno-canto/XC1190285": "A"
+          }
+        }
+      ]
+    },
     "spatula-hottentota": {
       "calls": [
         {
@@ -2618,6 +2698,16 @@
           "index": 0,
           "quality": {
             "xeno-canto/XC529795": "A"
+          }
+        }
+      ]
+    },
+    "strix-woodfordii": {
+      "calls": [
+        {
+          "index": 0,
+          "quality": {
+            "xeno-canto/XC581119": "A"
           }
         }
       ]
