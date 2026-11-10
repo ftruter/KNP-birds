@@ -233,8 +233,19 @@
     {
       "sex": "female",
       "type": "call",
-      "description": "A persistent loud quacking in flight.",
-      "recordings": []
+      "description": "A persistent loud quacking in flight. The catalogue cut is labelled female. Grade B, South Africa. Western Cape, near Great Brak River. Other species can be heard in the background.",
+      "recordings": [
+        {
+          "key": "xeno-canto/XC1163841",
+          "source": "https://xeno-canto.org/1163841",
+          "fileUrl": "https://xeno-canto.org/sounds/uploaded/WSTMKZEHKY/XC1163841-260222-084605-ABDuck-B.mp3",
+          "author": "Walter Wallner",
+          "license": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ]
     },
     {
       "sex": "any",
@@ -291,6 +302,6 @@
   "research": {
     "confidence": "medium",
     "needsReview": false,
-    "note": "Status is resident. SABAP1 says it is sedentary, which the models confirm, so all twelve months are listed. Chick down and the underwing are not described. The recording is grade B from the Eastern Cape because the grade A files are not playable."
+    "note": "Status is resident. SABAP1 says it is sedentary, which the models confirm, so all twelve months are listed. Chick down and the underwing are not described. The recording is grade B from the Eastern Cape because the grade A files are not playable. The female call is grade B from the Western Cape. No playable cut is labelled male only."
   }
 }
