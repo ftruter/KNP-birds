@@ -2635,6 +2635,17 @@
       ],
       "recordings": [
         {
+          "key": "xeno-canto/XC269740",
+          "author": "Albert Lastukhin",
+          "licence": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "sourceUrl": "https://xeno-canto.org/269740",
+          "aiGenerated": false,
+          "hosted": false,
+          "quality": "B",
+          "callType": "call"
+        },
+        {
           "key": "xeno-canto/XC27236",
           "author": "Patrik Åberg",
           "licence": "CC BY-NC-SA 3.0",

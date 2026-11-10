@@ -411,7 +411,9 @@
         },
         {
           "index": 1,
-          "quality": {}
+          "quality": {
+            "xeno-canto/XC269740": "B"
+          }
         },
         {
           "index": 2,

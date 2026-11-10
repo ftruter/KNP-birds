@@ -103,5 +103,5 @@ test('all nine swifts are sourced without changing populations', async () => {
   const bohm = await readJson('data/species/neafrapus-boehmi.json')
   assert.equal(bohm.research.needsReview, true)
   assert.equal(images, 10)
-  assert.equal(recordings, 9)
+  assert.equal(recordings, 10)
 })
