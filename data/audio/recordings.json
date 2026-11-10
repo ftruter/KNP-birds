@@ -305,6 +305,16 @@
         }
       ]
     },
+    "anomalospiza-imberbis": {
+      "calls": [
+        {
+          "index": 0,
+          "quality": {
+            "xeno-canto/XC1080375": "B"
+          }
+        }
+      ]
+    },
     "anthoscopus-caroli": {
       "calls": [
         {
@@ -4851,6 +4861,66 @@
           "index": 0,
           "quality": {
             "xeno-canto/XC467724": "B"
+          }
+        }
+      ]
+    },
+    "vidua-chalybeata": {
+      "calls": [
+        {
+          "index": 0,
+          "quality": {
+            "xeno-canto/XC522557": "A"
+          }
+        }
+      ]
+    },
+    "vidua-funerea": {
+      "calls": [
+        {
+          "index": 0,
+          "quality": {
+            "xeno-canto/XC641307": "A"
+          }
+        }
+      ]
+    },
+    "vidua-macroura": {
+      "calls": [
+        {
+          "index": 0,
+          "quality": {
+            "xeno-canto/XC353667": "A"
+          }
+        }
+      ]
+    },
+    "vidua-paradisaea": {
+      "calls": [
+        {
+          "index": 0,
+          "quality": {
+            "xeno-canto/XC209990": "A"
+          }
+        }
+      ]
+    },
+    "vidua-purpurascens": {
+      "calls": [
+        {
+          "index": 0,
+          "quality": {
+            "xeno-canto/XC631063": "A"
+          }
+        }
+      ]
+    },
+    "vidua-regia": {
+      "calls": [
+        {
+          "index": 0,
+          "quality": {
+            "xeno-canto/XC622267": "A"
           }
         }
       ]

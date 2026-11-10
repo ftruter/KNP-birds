@@ -1,14 +1,185 @@
 {
+  "size": {
+    "lengthCm": {
+      "min": 11,
+      "max": 11
+    },
+    "note": "Newman's Birds gives 11 cm."
+  },
+  "habitat": "Mixed bushveld near watercourses, and suburbia, in the same places as its host, the Red-billed Firefinch.",
+  "summary": "A common resident. The breeding male has a red bill and red legs. The female has a pink bill and red legs. Newman does not describe the body colour, and says the breeding birds of the three indigobirds look almost identical apart from bill and leg colour. It parasitises the Red-billed Firefinch and mimics that species. The Kemp name Steelblue Widowfinch and the code RB were left unchanged.",
+  "similar": [
+    {
+      "slug": "vidua-funerea",
+      "note": "Dusky Indigobird has a whitish bill and reddish legs."
+    },
+    {
+      "slug": "vidua-purpurascens",
+      "note": "Purple Indigobird has a whitish or pale pink bill and legs."
+    }
+  ],
+  "variants": [
+    {
+      "age": "adult",
+      "sex": "male",
+      "season": "breeding",
+      "marks": {
+        "bill": {
+          "colour": "red",
+          "shape": null
+        },
+        "eye": {
+          "iris": null,
+          "ring": null
+        },
+        "legs": {
+          "colour": "red"
+        },
+        "head": {
+          "crown": null,
+          "face": null,
+          "throat": null,
+          "pattern": "In Botswana and western Zimbabwe the male’s bill is white, and the ranges do not overlap."
+        },
+        "upperparts": {
+          "back": null,
+          "rump": null
+        },
+        "underparts": {
+          "breast": null,
+          "belly": null
+        },
+        "wings": {
+          "above": null,
+          "below": null
+        },
+        "tail": {
+          "colour": null,
+          "shape": null
+        }
+      }
+    },
+    {
+      "age": "adult",
+      "sex": "female",
+      "season": "any",
+      "marks": {
+        "bill": {
+          "colour": "pink",
+          "shape": null
+        },
+        "eye": {
+          "iris": null,
+          "ring": null
+        },
+        "legs": {
+          "colour": "red"
+        },
+        "head": {
+          "crown": null,
+          "face": null,
+          "throat": null
+        },
+        "upperparts": {
+          "back": null,
+          "rump": null
+        },
+        "underparts": {
+          "breast": null,
+          "belly": null
+        },
+        "wings": {
+          "above": null,
+          "below": null
+        },
+        "tail": {
+          "colour": null,
+          "shape": null
+        }
+      }
+    }
+  ],
+  "viewNotes": [
+    {
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "male",
+      "season": "breeding",
+      "note": "Red bill and red legs. The body colour is not described."
+    },
+    {
+      "view": "perched-front",
+      "age": "adult",
+      "sex": "female",
+      "season": "any",
+      "note": "Pink bill and red legs."
+    },
+    {
+      "view": "flight-above",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Flight plumage is not described."
+    },
+    {
+      "view": "flight-below",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "The underside in flight is not described."
+    }
+  ],
+  "calls": [
+    {
+      "sex": "any",
+      "type": "call",
+      "description": "It mimics the Red-billed Firefinch. The grade A call is from near Klerksdorp. The filename is XC522557-1 Villag.mp3.",
+      "recordings": [
+        {
+          "key": "xeno-canto/XC522557",
+          "source": "https://xeno-canto.org/522557",
+          "fileUrl": "https://xeno-canto.org/sounds/uploaded/HMBDEWEZVS/XC522557-1%20Villag.mp3",
+          "author": "Tony Archer",
+          "license": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ]
+    }
+  ],
+  "images": [
+    {
+      "key": "vidua-chalybeata/side.jpg",
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "source": "https://www.inaturalist.org/observations/189096510",
+      "fileUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/331157451/large.jpeg",
+      "author": "jandutoit",
+      "license": "CC BY-NC 4.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+      "aiGenerated": false,
+      "hosted": false,
+      "alt": "Village Indigobird in Kruger, Mopani",
+      "caption": "Village Indigobird in Kruger, Mopani. The bird is distant."
+    }
+  ],
+  "research": {
+    "confidence": "medium",
+    "needsReview": true,
+    "note": "Newman calls it a common resident, and Avibase does not mark it rare, so all twelve months are listed. The body colour is not described, so none is stored. The grade A call is from the North West. The Kruger photograph is distant. The Kemp name Steelblue Widowfinch and the code RB were left unchanged."
+  },
   "kind": "species",
   "slug": "vidua-chalybeata",
+  "family": "viduidae",
+  "sampleData": false,
   "scientificName": "Vidua chalybeata",
   "commonNames": {
     "en": "Village Indigobird",
     "af": "Staalblouvinkie"
   },
-  "family": "viduidae",
-  "summary": "The details for this species have not been published yet.",
-  "sampleData": true,
   "population": {
     "estimate": {
       "low": 2048,
@@ -35,8 +206,39 @@
     },
     "tierApplied": "D"
   },
-  "variants": [],
-  "viewNotes": [],
-  "calls": [],
-  "images": []
+  "status": "resident",
+  "monthsPresent": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+  ],
+  "sources": [
+    {
+      "title": "Village Indigobird",
+      "url": "https://newmansbirds.com/birds/village-indigobird/",
+      "publisher": "Newman's Birds",
+      "year": 2026
+    },
+    {
+      "title": "Avibase bird checklist — Kruger National Park",
+      "url": "https://avibase.bsc-eoc.org/checklist.jsp?region=ZA000003",
+      "publisher": "Avibase",
+      "year": null
+    },
+    {
+      "title": "Kemp A.C., Herholdt J.J., Whyte I. & Harrison J. (2001). Birds of the two largest national parks in South Africa: a method to generate estimates of population size for all species and assess their conservation ecology. S. Afr. J. Sci. 97: 393–403.",
+      "url": "https://journals.co.za/doi/pdf/10.10520/EJC97367",
+      "publisher": "South African Journal of Science",
+      "year": 2001
+    }
+  ]
 }

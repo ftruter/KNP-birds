@@ -1,14 +1,222 @@
 {
+  "size": {
+    "lengthCm": {
+      "min": 11,
+      "max": 34
+    },
+    "note": "Newman's Birds gives 11–12 cm, and 34 cm for the breeding bird."
+  },
+  "habitat": "Usually one male with several females, in a wide variety of habitats including suburbia. It parasitises the Common Waxbill.",
+  "summary": "A common resident. The breeding male is a small pied bird with a red bill and a very long tail. The red bill is kept in non-breeding plumage. The female has a pinkish-brown bill and bolder head stripes than the female Shaft-tailed Whydah. The courting male hovers and calls 'peetzy-peetzy-peetzy'. In normal flight it calls 'tseet-tseet-tseet'. The Kemp name Pintailed Whydah and the code RB were left unchanged.",
+  "similar": [
+    {
+      "slug": "vidua-regia",
+      "note": "Shaft-tailed Whydah has buff underparts and thin tail shafts with broadened ends. Its female has less distinctive head markings."
+    }
+  ],
+  "variants": [
+    {
+      "age": "adult",
+      "sex": "male",
+      "season": "breeding",
+      "marks": {
+        "bill": {
+          "colour": "red",
+          "shape": null
+        },
+        "eye": {
+          "iris": null,
+          "ring": null
+        },
+        "legs": {
+          "colour": null
+        },
+        "head": {
+          "crown": null,
+          "face": null,
+          "throat": null,
+          "pattern": "Small and pied."
+        },
+        "upperparts": {
+          "back": null,
+          "rump": null
+        },
+        "underparts": {
+          "breast": null,
+          "belly": null
+        },
+        "wings": {
+          "above": null,
+          "below": null
+        },
+        "tail": {
+          "colour": null,
+          "shape": "Very long."
+        }
+      }
+    },
+    {
+      "age": "adult",
+      "sex": "male",
+      "season": "non-breeding",
+      "marks": {
+        "bill": {
+          "colour": "red",
+          "shape": null
+        },
+        "eye": {
+          "iris": null,
+          "ring": null
+        },
+        "legs": {
+          "colour": null
+        },
+        "head": {
+          "crown": null,
+          "face": null,
+          "throat": null,
+          "pattern": "The red bill is kept in non-breeding plumage."
+        },
+        "upperparts": {
+          "back": null,
+          "rump": null
+        },
+        "underparts": {
+          "breast": null,
+          "belly": null
+        },
+        "wings": {
+          "above": null,
+          "below": null
+        },
+        "tail": {
+          "colour": null,
+          "shape": null
+        }
+      }
+    },
+    {
+      "age": "adult",
+      "sex": "female",
+      "season": "any",
+      "marks": {
+        "bill": {
+          "colour": null,
+          "shape": null
+        },
+        "eye": {
+          "iris": null,
+          "ring": null
+        },
+        "legs": {
+          "colour": null
+        },
+        "head": {
+          "crown": null,
+          "face": null,
+          "throat": null,
+          "pattern": "Pinkish-brown. Bolder head stripes than the female Shaft-tailed Whydah."
+        },
+        "upperparts": {
+          "back": null,
+          "rump": null
+        },
+        "underparts": {
+          "breast": null,
+          "belly": null
+        },
+        "wings": {
+          "above": null,
+          "below": null
+        },
+        "tail": {
+          "colour": null,
+          "shape": null
+        }
+      }
+    }
+  ],
+  "viewNotes": [
+    {
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "male",
+      "season": "breeding",
+      "note": "Small and pied, with a red bill and a very long tail."
+    },
+    {
+      "view": "flight-above",
+      "age": "adult",
+      "sex": "male",
+      "season": "breeding",
+      "note": "The courting male hovers, describing a circle in the vertical plane."
+    },
+    {
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "female",
+      "season": "any",
+      "note": "Pinkish-brown bill and bold head stripes."
+    },
+    {
+      "view": "flight-below",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "The underside in flight is not described."
+    }
+  ],
+  "calls": [
+    {
+      "sex": "male",
+      "type": "call",
+      "description": "A continuous wispy 'peetzy-peetzy-peetzy' while hovering, and 'tseet-tseet-tseet' in normal flight. The grade A call is from Shaw Park in the Eastern Cape. The filename is XC353667-Pin-tailed Whydah xc.mp3.",
+      "recordings": [
+        {
+          "key": "xeno-canto/XC353667",
+          "source": "https://xeno-canto.org/353667",
+          "fileUrl": "https://xeno-canto.org/sounds/uploaded/GQMCPIVNXX/XC353667-Pin-tailed%20Whydah%20xc.mp3",
+          "author": "Tim Cockcroft",
+          "license": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ]
+    }
+  ],
+  "images": [
+    {
+      "key": "vidua-macroura/side.jpg",
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "source": "https://www.inaturalist.org/observations/329054362",
+      "fileUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/596395383/large.jpg",
+      "author": "xihuhuri",
+      "license": "CC BY-NC 4.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+      "aiGenerated": false,
+      "hosted": false,
+      "alt": "Pin-tailed Whydah in Kruger, a small pied bird with a very long tail",
+      "caption": "Breeding male Pin-tailed Whydah in Kruger, Bushbuckridge, a small pied bird with a very long tail."
+    }
+  ],
+  "research": {
+    "confidence": "medium",
+    "needsReview": true,
+    "note": "Newman calls it a common resident, and Avibase does not mark it rare, so all twelve months are listed. The stored length covers 11–12 cm and the 34 cm breeding length. The grade A call is from the Eastern Cape. The Kemp name Pintailed Whydah and the code RB were left unchanged."
+  },
   "kind": "species",
   "slug": "vidua-macroura",
+  "family": "viduidae",
+  "sampleData": false,
   "scientificName": "Vidua macroura",
   "commonNames": {
     "en": "Pin-tailed Whydah",
     "af": "Koningrooibekkie"
   },
-  "family": "viduidae",
-  "summary": "The details for this species have not been published yet.",
-  "sampleData": true,
   "population": {
     "estimate": {
       "low": 16384,
@@ -35,8 +243,39 @@
     },
     "tierApplied": "D"
   },
-  "variants": [],
-  "viewNotes": [],
-  "calls": [],
-  "images": []
+  "status": "resident",
+  "monthsPresent": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+  ],
+  "sources": [
+    {
+      "title": "Pin-tailed Whydah",
+      "url": "https://newmansbirds.com/birds/pin-tailed-whydah/",
+      "publisher": "Newman's Birds",
+      "year": 2026
+    },
+    {
+      "title": "Avibase bird checklist — Kruger National Park",
+      "url": "https://avibase.bsc-eoc.org/checklist.jsp?region=ZA000003",
+      "publisher": "Avibase",
+      "year": null
+    },
+    {
+      "title": "Kemp A.C., Herholdt J.J., Whyte I. & Harrison J. (2001). Birds of the two largest national parks in South Africa: a method to generate estimates of population size for all species and assess their conservation ecology. S. Afr. J. Sci. 97: 393–403.",
+      "url": "https://journals.co.za/doi/pdf/10.10520/EJC97367",
+      "publisher": "South African Journal of Science",
+      "year": 2001
+    }
+  ]
 }

@@ -6,8 +6,8 @@
     "en": "Indigobirds and whydahs",
     "af": "Rooibekkies"
   },
-  "summary": "Field notes for this family are still to be written.",
-  "sampleData": true,
+  "summary": "A cuckoo-finch, three indigobirds told apart by bill and leg colour, and three whydahs. The breeding male whydahs have long tails.",
+  "sampleData": false,
   "species": [
     {
       "slug": "anomalospiza-imberbis",

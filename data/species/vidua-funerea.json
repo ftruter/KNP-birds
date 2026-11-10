@@ -1,14 +1,146 @@
 {
+  "size": {
+    "lengthCm": {
+      "min": 11,
+      "max": 11
+    },
+    "note": "Newman's Birds gives 11 cm."
+  },
+  "habitat": "Mostly moist savanna, around villages, near cultivation and at forest fringes. Uncommon, like its host, in drier bushveld.",
+  "summary": "A common resident. It has a whitish bill and reddish legs. The male has a grating song mixed with notes of the African Firefinch, which the female parasitises, and may bob while calling a harsh 'cha, cha'. Newman does not describe the body colour. The Kemp name Black Widowfinch and the code RB were left unchanged.",
+  "similar": [
+    {
+      "slug": "vidua-chalybeata",
+      "note": "Village Indigobird has a red bill and red legs."
+    },
+    {
+      "slug": "vidua-purpurascens",
+      "note": "Purple Indigobird has a whitish or pale pink bill and legs, and is more common in dry bushveld."
+    }
+  ],
+  "variants": [
+    {
+      "age": "adult",
+      "sex": "any",
+      "season": "breeding",
+      "marks": {
+        "bill": {
+          "colour": null,
+          "shape": null
+        },
+        "eye": {
+          "iris": null,
+          "ring": null
+        },
+        "legs": {
+          "colour": null
+        },
+        "head": {
+          "crown": null,
+          "face": null,
+          "throat": null,
+          "pattern": "Whitish. Legs: Reddish."
+        },
+        "upperparts": {
+          "back": null,
+          "rump": null
+        },
+        "underparts": {
+          "breast": null,
+          "belly": null
+        },
+        "wings": {
+          "above": null,
+          "below": null
+        },
+        "tail": {
+          "colour": null,
+          "shape": null
+        }
+      }
+    }
+  ],
+  "viewNotes": [
+    {
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "any",
+      "season": "breeding",
+      "note": "Whitish bill and reddish legs. The body colour is not described."
+    },
+    {
+      "view": "perched-front",
+      "age": "adult",
+      "sex": "male",
+      "season": "breeding",
+      "note": "The male may bob in front of the female."
+    },
+    {
+      "view": "flight-above",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Flight plumage is not described."
+    },
+    {
+      "view": "flight-below",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "The underside in flight is not described."
+    }
+  ],
+  "calls": [
+    {
+      "sex": "male",
+      "type": "song",
+      "description": "A grating song mixed with notes of the African Firefinch. The male also calls a harsh 'cha, cha'. The grade A song is from near Fort Brown in the Eastern Cape. The filename is XC641307-Dusky Indigobird DHeights 27 Feb 2021.mp3.",
+      "recordings": [
+        {
+          "key": "xeno-canto/XC641307",
+          "source": "https://xeno-canto.org/641307",
+          "fileUrl": "https://xeno-canto.org/sounds/uploaded/SGLTZLDXYI/XC641307-Dusky%20Indigobird%20DHeights%2027%20Feb%202021.mp3",
+          "author": "Lynette Rudman",
+          "license": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ]
+    }
+  ],
+  "images": [
+    {
+      "key": "vidua-funerea/side.jpg",
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "source": "https://www.inaturalist.org/observations/10487102",
+      "fileUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/14582756/large.jpeg",
+      "author": "Gawie Malan",
+      "license": "CC BY-NC 4.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+      "aiGenerated": false,
+      "hosted": false,
+      "alt": "Dusky Indigobird in Kruger, Ehlanzeni, with a whitish bill",
+      "caption": "Dusky Indigobird in Kruger, Ehlanzeni, with a whitish bill."
+    }
+  ],
+  "research": {
+    "confidence": "medium",
+    "needsReview": true,
+    "note": "Newman calls it a common resident, and Avibase does not mark it rare, so all twelve months are listed. The body colour is not described, so none is stored. The grade A recording is a song from the Eastern Cape. The Kemp name Black Widowfinch and the code RB were left unchanged."
+  },
   "kind": "species",
   "slug": "vidua-funerea",
+  "family": "viduidae",
+  "sampleData": false,
   "scientificName": "Vidua funerea",
   "commonNames": {
     "en": "Dusky Indigobird",
     "af": "Gewone Blouvinkie"
   },
-  "family": "viduidae",
-  "summary": "The details for this species have not been published yet.",
-  "sampleData": true,
   "population": {
     "estimate": {
       "low": 1024,
@@ -35,8 +167,39 @@
     },
     "tierApplied": "D"
   },
-  "variants": [],
-  "viewNotes": [],
-  "calls": [],
-  "images": []
+  "status": "resident",
+  "monthsPresent": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+  ],
+  "sources": [
+    {
+      "title": "Dusky Indigobird",
+      "url": "https://newmansbirds.com/birds/dusky-indigobird/",
+      "publisher": "Newman's Birds",
+      "year": 2026
+    },
+    {
+      "title": "Avibase bird checklist — Kruger National Park",
+      "url": "https://avibase.bsc-eoc.org/checklist.jsp?region=ZA000003",
+      "publisher": "Avibase",
+      "year": null
+    },
+    {
+      "title": "Kemp A.C., Herholdt J.J., Whyte I. & Harrison J. (2001). Birds of the two largest national parks in South Africa: a method to generate estimates of population size for all species and assess their conservation ecology. S. Afr. J. Sci. 97: 393–403.",
+      "url": "https://journals.co.za/doi/pdf/10.10520/EJC97367",
+      "publisher": "South African Journal of Science",
+      "year": 2001
+    }
+  ]
 }

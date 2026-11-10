@@ -1,14 +1,186 @@
 {
+  "size": {
+    "lengthCm": {
+      "min": 11,
+      "max": 11
+    },
+    "note": "Newman's Birds gives 11 cm."
+  },
+  "habitat": "Thickets and rank grass in thornveld, plus riparian and old cultivated lands, like its host, Jameson's Firefinch.",
+  "summary": "A fairly common resident. The male has a whitish or pale pink bill and legs. The female has a whitish bill and pink legs. Newman does not describe the body colour. It parasitises Jameson's Firefinch and mimics that species' bell-like note. It is much more common in dry bushveld than the Dusky Indigobird. The Kemp name Purple Widowfinch and the code RB were left unchanged.",
+  "similar": [
+    {
+      "slug": "vidua-funerea",
+      "note": "Dusky Indigobird has reddish legs and is less common in dry bushveld."
+    },
+    {
+      "slug": "vidua-chalybeata",
+      "note": "Village Indigobird has a red bill and red legs."
+    }
+  ],
+  "variants": [
+    {
+      "age": "adult",
+      "sex": "male",
+      "season": "breeding",
+      "marks": {
+        "bill": {
+          "colour": null,
+          "shape": null
+        },
+        "eye": {
+          "iris": null,
+          "ring": null
+        },
+        "legs": {
+          "colour": null
+        },
+        "head": {
+          "crown": null,
+          "face": null,
+          "throat": null,
+          "pattern": "Whitish or pale pink. Legs: Whitish or pale pink."
+        },
+        "upperparts": {
+          "back": null,
+          "rump": null
+        },
+        "underparts": {
+          "breast": null,
+          "belly": null
+        },
+        "wings": {
+          "above": null,
+          "below": null
+        },
+        "tail": {
+          "colour": null,
+          "shape": null
+        }
+      }
+    },
+    {
+      "age": "adult",
+      "sex": "female",
+      "season": "any",
+      "marks": {
+        "bill": {
+          "colour": null,
+          "shape": null
+        },
+        "eye": {
+          "iris": null,
+          "ring": null
+        },
+        "legs": {
+          "colour": "pink"
+        },
+        "head": {
+          "crown": null,
+          "face": null,
+          "throat": null,
+          "pattern": "Whitish."
+        },
+        "upperparts": {
+          "back": null,
+          "rump": null
+        },
+        "underparts": {
+          "breast": null,
+          "belly": null
+        },
+        "wings": {
+          "above": null,
+          "below": null
+        },
+        "tail": {
+          "colour": null,
+          "shape": null
+        }
+      }
+    }
+  ],
+  "viewNotes": [
+    {
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "male",
+      "season": "breeding",
+      "note": "Whitish or pale pink bill and legs. The body colour is not described."
+    },
+    {
+      "view": "perched-front",
+      "age": "adult",
+      "sex": "female",
+      "season": "any",
+      "note": "Whitish bill and pink legs."
+    },
+    {
+      "view": "flight-above",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Flight plumage is not described."
+    },
+    {
+      "view": "flight-below",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "The underside in flight is not described."
+    }
+  ],
+  "calls": [
+    {
+      "sex": "any",
+      "type": "call",
+      "description": "It mimics the bell-like call-note of Jameson's Firefinch. The grade A call is from near Klerksdorp. The filename is XC631063-3 Purplt Indigobird.mp3.",
+      "recordings": [
+        {
+          "key": "xeno-canto/XC631063",
+          "source": "https://xeno-canto.org/631063",
+          "fileUrl": "https://xeno-canto.org/sounds/uploaded/HMBDEWEZVS/XC631063-3%20Purplt%20Indigobird.mp3",
+          "author": "Tony Archer",
+          "license": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ]
+    }
+  ],
+  "images": [
+    {
+      "key": "vidua-purpurascens/side.jpg",
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "source": "https://www.inaturalist.org/observations/387754693",
+      "fileUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/710056916/large.jpg",
+      "author": "Kurt Hennige",
+      "license": "CC BY-NC 4.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+      "aiGenerated": false,
+      "hosted": false,
+      "alt": "Purple Indigobird in Kruger, Mopani, with a pale bill",
+      "caption": "Purple Indigobird in Kruger, Mopani, with a pale bill."
+    }
+  ],
+  "research": {
+    "confidence": "medium",
+    "needsReview": true,
+    "note": "Newman calls it a fairly common resident, and Avibase does not mark it rare, so all twelve months are listed. The body colour is not described, so none is stored. The grade A call is from the North West. The Kemp name Purple Widowfinch and the code RB were left unchanged."
+  },
   "kind": "species",
   "slug": "vidua-purpurascens",
+  "family": "viduidae",
+  "sampleData": false,
   "scientificName": "Vidua purpurascens",
   "commonNames": {
     "en": "Purple Indigobird",
     "af": "Witpootblouvinkie"
   },
-  "family": "viduidae",
-  "summary": "The details for this species have not been published yet.",
-  "sampleData": true,
   "population": {
     "estimate": {
       "low": 1024,
@@ -35,8 +207,39 @@
     },
     "tierApplied": "D"
   },
-  "variants": [],
-  "viewNotes": [],
-  "calls": [],
-  "images": []
+  "status": "resident",
+  "monthsPresent": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+  ],
+  "sources": [
+    {
+      "title": "Purple Indigobird",
+      "url": "https://newmansbirds.com/birds/purple-indigobird/",
+      "publisher": "Newman's Birds",
+      "year": 2026
+    },
+    {
+      "title": "Avibase bird checklist — Kruger National Park",
+      "url": "https://avibase.bsc-eoc.org/checklist.jsp?region=ZA000003",
+      "publisher": "Avibase",
+      "year": null
+    },
+    {
+      "title": "Kemp A.C., Herholdt J.J., Whyte I. & Harrison J. (2001). Birds of the two largest national parks in South Africa: a method to generate estimates of population size for all species and assess their conservation ecology. S. Afr. J. Sci. 97: 393–403.",
+      "url": "https://journals.co.za/doi/pdf/10.10520/EJC97367",
+      "publisher": "South African Journal of Science",
+      "year": 2001
+    }
+  ]
 }
