@@ -3,9 +3,9 @@
   "counts": {
     "slots": 526,
     "swapped": 17,
-    "added": 278,
+    "added": 279,
     "kept": 203,
-    "none": 28,
+    "none": 27,
     "cleaned": 1
   },
   "noUsableRecording": [
@@ -102,11 +102,6 @@
     {
       "slug": "plectropterus-gambensis",
       "scientificName": "Plectropterus gambensis",
-      "type": "call"
-    },
-    {
-      "slug": "apus-apus",
-      "scientificName": "Apus apus",
       "type": "call"
     },
     {
@@ -3992,14 +3987,14 @@
       "scientificName": "Apus apus",
       "index": 1,
       "type": "call",
-      "action": "none",
+      "action": "added",
       "from": [],
-      "to": "",
-      "quality": "",
-      "country": "",
-      "locality": "",
+      "to": "269740",
+      "quality": "B",
+      "country": "Russian Federation",
+      "locality": "Kozlovskiy rayon, Chuvashia",
       "cleaned": false,
-      "license": ""
+      "license": "CC BY-NC-SA 4.0"
     },
     {
       "slug": "apus-apus",
