@@ -9208,7 +9208,17 @@
       "slug": "columba-arquatrix",
       "scientificName": "Columba arquatrix",
       "commonName": "African Olive Pigeon",
-      "images": [],
+      "images": [
+        {
+          "key": "columba-arquatrix/side.jpg",
+          "author": "Christiaan Viljoen",
+          "licence": "CC BY 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by/4.0/",
+          "sourceUrl": "https://www.inaturalist.org/observations/397732141",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ],
       "recordings": [
         {
           "key": "xeno-canto/XC386792",
@@ -25803,7 +25813,17 @@
       "slug": "turtur-afer",
       "scientificName": "Turtur afer",
       "commonName": "Blue-spotted Wood Dove",
-      "images": [],
+      "images": [
+        {
+          "key": "turtur-afer/side.jpg",
+          "author": "maritzasouthafrica",
+          "licence": "CC BY-NC 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+          "sourceUrl": "https://www.inaturalist.org/observations/325692678",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ],
       "recordings": [
         {
           "key": "xeno-canto/XC1009898",

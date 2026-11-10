@@ -107,10 +107,27 @@
       ]
     }
   ],
-  "images": [],
+  "images": [
+    {
+      "key": "turtur-afer/side.jpg",
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "source": "https://www.inaturalist.org/observations/325692678",
+      "fileUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/589731718/large.jpg",
+      "author": "maritzasouthafrica",
+      "license": "CC BY-NC 4.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+      "aiGenerated": false,
+      "hosted": false,
+      "alt": "Blue-spotted Wood Dove in Mopani, not Kruger, with blue wing spots and a pinkish-buff breast.",
+      "caption": "Blue-spotted Wood Dove in Mopani, not Kruger, with blue wing spots and a pinkish-buff breast."
+    }
+  ],
   "research": {
     "confidence": "low",
     "needsReview": true,
-    "note": "Population figures were left unchanged."
+    "note": "No Kruger photograph was found under an allowed licence. A side photograph from Mopani is stored. Population figures were left unchanged."
   }
 }
