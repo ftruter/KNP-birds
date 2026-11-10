@@ -171,6 +171,70 @@ test('selection prefers grade, then call type, then Kruger, and keeps grade A', 
   assert.equal(empty.action, 'none')
 })
 
+test('a playable slot is never swapped for ND, and the ND file is listed for permission', () => {
+  const nd = { lic: 'https://creativecommons.org/licenses/by-nc-nd/4.0/' }
+  const playableB = {
+    type: 'call',
+    recordings: [
+      { key: 'xeno-canto/XC9', license: 'CC BY-NC-SA 4.0', hosted: false },
+    ],
+  }
+  const byId = new Map([['9', item('9', 'B')]])
+  const held = decideSlot(playableB, byId, [item('1', 'A', nd)])
+  assert.equal(held.action, 'kept')
+  assert.equal(held.recordings[0].key, 'xeno-canto/XC9')
+  assert.equal(held.permission.key, 'xeno-canto/XC1')
+  const upgraded = decideSlot(playableB, byId, [
+    item('1', 'A', nd),
+    item('2', 'A'),
+  ])
+  assert.equal(upgraded.action, 'swapped')
+  assert.equal(upgraded.recordings[0].key, 'xeno-canto/XC2')
+  assert.equal(upgraded.permission, undefined)
+  const empty = decideSlot({ type: 'call', recordings: [] }, new Map(), [
+    item('1', 'A', nd),
+    item('3', 'C'),
+  ])
+  assert.equal(empty.action, 'added')
+  assert.equal(empty.recordings[0].key, 'xeno-canto/XC3')
+  assert.equal(empty.permission.key, 'xeno-canto/XC1')
+  const ndB = {
+    type: 'call',
+    recordings: [
+      { key: 'xeno-canto/XC8', license: 'CC BY-NC-ND 4.0', hosted: false },
+    ],
+  }
+  const fromNd = decideSlot(ndB, new Map([['8', item('8', 'B', nd)]]), [
+    item('1', 'A', nd),
+  ])
+  assert.equal(fromNd.action, 'swapped')
+  assert.equal(fromNd.recordings[0].key, 'xeno-canto/XC1')
+})
+
+test('male and female slots are left to the species file', () => {
+  const empty = decideSlot(
+    { type: 'call', sex: 'male', recordings: [] },
+    new Map(),
+    [item('1', 'A')],
+  )
+  assert.equal(empty.action, 'none')
+  assert.equal(empty.recordings.length, 0)
+  const held = decideSlot(
+    {
+      type: 'call',
+      sex: 'female',
+      recordings: [
+        { key: 'xeno-canto/XC9', license: 'CC BY-NC-SA 4.0', hosted: false },
+      ],
+    },
+    new Map([['9', item('9', 'B')]]),
+    [item('1', 'A')],
+  )
+  assert.equal(held.action, 'kept')
+  assert.equal(held.recordings[0].key, 'xeno-canto/XC9')
+  assert.equal(held.recordings[0].quality, 'B')
+})
+
 test('cleaning is limited to grade C or worse and never ND', () => {
   const recording = (quality, license) => ({
     key: 'xeno-canto/XC1',

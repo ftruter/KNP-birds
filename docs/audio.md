@@ -16,11 +16,15 @@ Without a key, the script reads the public explore catalogue and normalises each
 
 ## How a slot is chosen
 
-Quality comes first: A, then B, then C, then D, then E. Unrated recordings are skipped. Among one grade, a licence that can be played on the site ranks ahead of an ND licence, which is only linked. Then a recording whose type matches the slot (song, call, alarm, contact, duet, other) ranks ahead of a mismatched type. After that, Kruger-region and Mpumalanga or Limpopo recordings rank ahead of the rest of South Africa, then the rest of southern Africa, then anywhere else.
+A recording the site can play comes first. ND licences can only be linked, so the page shows no player for them, and a playable file ranks ahead of any ND file whatever its grade. Within each of those two groups, quality decides: A, then B, then C, then D, then E. Unrated recordings are skipped. Then a recording whose type matches the slot (song, call, alarm, contact, duet, other) ranks ahead of a mismatched type. After that, Kruger-region and Mpumalanga or Limpopo recordings rank ahead of the rest of South Africa, then the rest of southern Africa, then anywhere else.
 
-Accepted licences are CC BY, BY-SA, BY-NC, BY-NC-SA, BY-ND, BY-NC-ND, and CC0, each with its version taken from the licence URL. Anything else is not selected. A slot whose current recording is already grade A is not replaced. A lower grade is replaced only when a strictly higher grade exists. The grade is stored on the recording as `quality`.
+Accepted licences are CC BY, BY-SA, BY-NC, BY-NC-SA, BY-ND, BY-NC-ND, and CC0, each with its version taken from the licence URL. Anything else is not selected. A slot whose current recording is already grade A is not replaced. A lower grade is replaced only when a strictly higher grade exists, and a slot that can already be played is never swapped for an ND file. An empty slot, or one holding only an ND file, takes the best candidate by the order above. A slot for a male or female call is never filled or swapped: catalogue cuts are rarely labelled by sex, so those recordings are chosen by hand in the species file and the run only records their grade. The grade is stored on the recording as `quality`.
 
 ND licences may be linked. They are never edited.
+
+## Permission requests
+
+When an ND recording is graded above the file a slot keeps or takes, the run lists it under `permissionRequests` in `data/audio/report.json`, with the recordist, the xeno-canto page, the grade, and the file it would replace. Those are the recordists to write to, politely, asking whether the guide may play or host that file. Until a recordist agrees, the slot keeps its playable file.
 
 ## Cleaning
 

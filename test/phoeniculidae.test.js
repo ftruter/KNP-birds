@@ -1,6 +1,6 @@
 import assert from 'node:assert/strict'
 import { test } from 'node:test'
-import { readJson } from './helpers.js'
+import { playedRecordings, readJson } from './helpers.js'
 
 test('both wood-hoopoes are sourced without changing populations', async () => {
   const family = await readJson('data/family/phoeniculidae.json')
@@ -31,11 +31,11 @@ test('both wood-hoopoes are sourced without changing populations', async () => {
   assert.equal(scim.population.kemp.status, 'RB')
   assert.equal(scim.population.estimate.low, 8192)
   assert.equal(scim.images[0].license, 'CC BY 4.0')
-  assert.equal(
-    overlay.species['rhinopomastus-cyanomelas'].calls[0].quality[
-      'xeno-canto/XC467724'
-    ],
-    'B',
+  assert.deepEqual(
+    playedRecordings(overlay, 'rhinopomastus-cyanomelas', 0, scim.calls[0]).map(
+      (item) => [item.key, item.quality],
+    ),
+    [['xeno-canto/XC1077437', 'A']],
   )
   const sum =
     report.counts.swapped +

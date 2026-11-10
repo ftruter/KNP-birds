@@ -2,7 +2,7 @@ import assert from 'node:assert/strict'
 import { test } from 'node:test'
 import { diffSpecies } from '../src/diff.js'
 import { collectColourTokens } from '../src/marks.js'
-import { readJson } from './helpers.js'
+import { playedRecordings, readJson } from './helpers.js'
 
 const POPULATION = {
   'anastomus-lamelligerus': [32, 128, 'Openbilled Stork', 'VB'],
@@ -40,7 +40,12 @@ test('all eight storks are sourced without changing populations', async () => {
   const abdim = await readJson('data/species/ciconia-abdimii.json')
   assert.equal(abdim.status, undefined)
   assert.equal(abdim.calls[0].recordings.length, 0)
-  assert.deepEqual(overlay.species['ciconia-abdimii'].calls[0].quality, {})
+  assert.deepEqual(
+    playedRecordings(overlay, 'ciconia-abdimii', 0, abdim.calls[0]).map(
+      (item) => [item.key, item.quality],
+    ),
+    [['xeno-canto/XC980343-cleaned.mp3', 'D']],
+  )
   const saddle = await readJson(
     'data/species/ephippiorhynchus-senegalensis.json',
   )

@@ -92,3 +92,19 @@ export const requestContext = () => {
 
 export const readJson = async (relative) =>
   JSON.parse(await readFile(path.join(root, relative), 'utf8'))
+
+/**
+ * Recordings a call slot plays once the audio overlay is merged, each with
+ * its grade. A swapped, added, or cleaned slot carries its own recordings;
+ * otherwise the species file's recordings keep their keys and take a grade.
+ */
+export const playedRecordings = (overlay, slug, index, call) => {
+  const slot = overlay.species[slug]?.calls.find(
+    (entry) => entry.index === index,
+  )
+  if (slot?.recordings) return slot.recordings
+  return (call?.recordings || []).map((recording) => ({
+    ...recording,
+    quality: slot?.quality?.[recording.key],
+  }))
+}

@@ -1,6 +1,6 @@
 import assert from 'node:assert/strict'
 import { test } from 'node:test'
-import { readJson } from './helpers.js'
+import { playedRecordings, readJson } from './helpers.js'
 
 test('both jacanas are sourced without changing populations', async () => {
   const family = await readJson('data/family/jacanidae.json')
@@ -24,11 +24,11 @@ test('both jacanas are sourced without changing populations', async () => {
   assert.equal(lesser.population.estimate.high, 32)
   assert.equal(lesser.population.kemp.paperName, 'Lesser Jacana')
   assert.equal(lesser.population.kemp.status, 'NB')
-  assert.equal(
-    overlay.species['microparra-capensis'].calls[0].quality[
-      'xeno-canto/XC585195'
-    ],
-    'C',
+  assert.deepEqual(
+    playedRecordings(overlay, 'microparra-capensis', 0, lesser.calls[0]).map(
+      (item) => [item.key, item.quality],
+    ),
+    [['xeno-canto/XC585195-cleaned.mp3', 'C']],
   )
   assert.equal(
     overlay.species['actophilornis-africanus'].calls[0].quality[
