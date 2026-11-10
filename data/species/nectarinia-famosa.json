@@ -22,6 +22,12 @@
       "url": "https://newmansbirds.com/birds/amethyst-sunbird/",
       "publisher": "Newman's Birds",
       "year": 2026
+    },
+    {
+      "title": "Malachite sunbird",
+      "url": "https://en.wikipedia.org/wiki/Malachite_sunbird",
+      "publisher": "Wikipedia",
+      "year": 2026
     }
   ],
   "population": {
@@ -307,7 +313,7 @@
   "research": {
     "confidence": "medium",
     "needsReview": true,
-    "note": "The colour key is on the Malachite page and gives no length. The plumage and voice are printed on the Amethyst page and match the all-green sunbird, which is why this needs review. No Kemp block was present, and the empty population estimate was left unchanged."
+    "note": "Newman’s Malachite page size field is blank (#VALUE!), so length is from Wikipedia (female 15 cm; breeding male with long central tail feathers 25 cm). The plumage and voice are printed on the Amethyst page and match the all-green sunbird, which is why this needs review. No Kemp block was present, and the empty population estimate was left unchanged."
   },
   "status": "resident",
   "monthsPresent": [
@@ -323,5 +329,12 @@
     10,
     11,
     12
-  ]
+  ],
+  "size": {
+    "lengthCm": {
+      "min": 15,
+      "max": 25
+    },
+    "note": "Wikipedia gives 15 cm for the female and 25 cm for the breeding male with long central tail feathers."
+  }
 }
