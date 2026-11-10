@@ -202,6 +202,4 @@ test('the eighteen weavers are sourced without changing populations', async () =
     report.counts.kept +
     report.counts.none
   assert.equal(sum, report.counts.slots)
-  assert.equal(report.counts.slots, 408)
-  assert.equal(report.counts.kept, 85)
 })

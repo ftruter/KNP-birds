@@ -2312,6 +2312,16 @@
         }
       ]
     },
+    "tachybaptus-ruficollis": {
+      "calls": [
+        {
+          "index": 0,
+          "quality": {
+            "xeno-canto/XC640580": "A"
+          }
+        }
+      ]
+    },
     "tachymarptis-melba": {
       "calls": [
         {
