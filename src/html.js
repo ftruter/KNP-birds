@@ -509,7 +509,10 @@ const familyPopulationHtml = (population, residency, format) => {
 ${range}
 <p>${escapeHtml(model.coverage)}</p>
 ${model.complete ? '' : '<p>This total is incomplete.</p>'}
-<p id="${RESIDENCY_ANCHOR}">${escapeHtml(FAMILY_TOTAL_SEASONS)} <a href="/families">Families by season</a>.${gap ? ` ${escapeHtml(gap)}` : ''}</p>
+<div id="${RESIDENCY_ANCHOR}">
+<p>${escapeHtml(FAMILY_TOTAL_SEASONS)} <a href="/families">Families by season</a>.</p>
+${gap ? `<p>${escapeHtml(gap)}</p>` : ''}
+</div>
 </section>`
 }
 

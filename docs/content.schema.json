@@ -461,7 +461,7 @@
     "family": {
       "type": "object",
       "additionalProperties": false,
-      "required": ["kind", "slug", "scientificName", "commonNames", "summary", "sampleData", "species", "iconicSpecies", "population"],
+      "required": ["kind", "slug", "scientificName", "commonNames", "summary", "sampleData", "species", "iconicSpecies", "population", "residency"],
       "properties": {
         "kind": { "const": "family" },
         "slug": { "$ref": "#/$defs/slug" },

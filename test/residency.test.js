@@ -132,10 +132,12 @@ test('the family page labels its total as all seasons and explains seasonal Unkn
   assert.match(html, /Approximate total, all seasons/)
   assert.match(html, /12–48 mature individuals/)
   assert.match(html, /Includes 2 of 2 species/)
-  assert.match(html, /<p id="residency">This total covers all seasons\./)
+  assert.match(html, /<div id="residency">\n<p>This total covers all seasons\./)
   assert.match(html, /<a href="\/families">Families by season<\/a>/)
   assert.match(html, /No species in this family has a published residency/)
   assert.match(html, /show Unknown/)
+  assert.match(html, /need not add up to this total/)
+  assert.doesNotMatch(html, /splits it/)
 
   const markdown = renderFamilyMarkdown(doc, [], 'https://birds.truter.world')
   assert.match(markdown, /\*\*Approximate total, all seasons\.\*\*/)
@@ -157,7 +159,7 @@ test('the family page labels its total as all seasons and explains seasonal Unkn
     doc: partial,
   })
   assert.match(partialHtml, /1 of 2 species have no published residency/)
-  assert.match(partialHtml, /are partial/)
+  assert.match(partialHtml, /are partial or Unknown/)
 
   const known = deriveFamilyDocument(
     {
@@ -172,7 +174,10 @@ test('the family page labels its total as all seasons and explains seasonal Unkn
     origin: 'https://birds.truter.world',
     doc: known,
   })
-  assert.match(knownHtml, /<p id="residency">This total covers all seasons\./)
+  assert.match(
+    knownHtml,
+    /<div id="residency">\n<p>This total covers all seasons\./,
+  )
   assert.doesNotMatch(knownHtml, /published residency/)
 })
 

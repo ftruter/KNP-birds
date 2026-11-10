@@ -10,7 +10,7 @@ export const HOME_POPULATION_INTRO =
 export const FAMILY_TOTAL_LABEL = 'Approximate total, all seasons'
 
 export const FAMILY_TOTAL_SEASONS =
-  'This total covers all seasons. The families list splits it into summer and winter, using each species’ residency.'
+  'This total covers all seasons. The families list shows summer and winter separately. Each season adds only the species present then, using each species’ residency, so the seasons need not add up to this total.'
 
 /** Explains seasonal Unknown or partial figures. Empty when nothing is missing. */
 export const residencyGapText = (residency, format) => {
@@ -23,7 +23,7 @@ export const residencyGapText = (residency, format) => {
     : 0
   const fmt = (value) => formatInteger(value, format)
   const lead = known
-    ? `${fmt(unknown)} of ${fmt(unknown + known)} species have no published residency (status or months present) yet, so the summer and winter figures for this family are partial.`
+    ? `${fmt(unknown)} of ${fmt(unknown + known)} species have no published residency (status or months present) yet, so some summer and winter figures for this family are partial or Unknown.`
     : 'No species in this family has a published residency (status or months present) yet, so the summer and winter figures for this family show Unknown.'
   return `${lead} The all-season total above does not need residency, so it still has a figure.`
 }

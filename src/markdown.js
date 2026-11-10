@@ -257,7 +257,7 @@ ${model.coverage}
 
 ${model.complete ? '' : 'This total is incomplete.'}
 
-${FAMILY_TOTAL_SEASONS} [Families by season](/families).${gap ? ` ${gap}` : ''}`
+${FAMILY_TOTAL_SEASONS} [Families by season](/families).${gap ? `\n\n${gap}` : ''}`
 }
 
 const comparisonMarkdown = (section, colourMap) => {
