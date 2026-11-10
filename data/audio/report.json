@@ -1,10 +1,10 @@
 {
   "source": "xeno-canto explore catalogue, API v3 recording fields",
   "counts": {
-    "slots": 498,
+    "slots": 500,
     "swapped": 17,
     "added": 278,
-    "kept": 175,
+    "kept": 177,
     "none": 28,
     "cleaned": 0
   },
@@ -2576,6 +2576,22 @@
       "license": "CC BY-NC-SA 4.0"
     },
     {
+      "slug": "sphenoeacus-afer",
+      "scientificName": "Sphenoeacus afer",
+      "index": 0,
+      "type": "song",
+      "action": "kept",
+      "from": [
+        "28640"
+      ],
+      "to": "28640",
+      "quality": "A",
+      "country": "South Africa",
+      "locality": "Cape Point",
+      "cleaned": false,
+      "license": "CC BY-NC-SA 3.0"
+    },
+    {
       "slug": "sporopipes-squamifrons",
       "scientificName": "Sporopipes squamifrons",
       "index": 0,
@@ -2654,6 +2670,22 @@
       "quality": "A",
       "country": "France",
       "locality": "near Noron-l'Abbaye, Normandy",
+      "cleaned": false,
+      "license": "CC BY-NC-SA 4.0"
+    },
+    {
+      "slug": "sylvietta-rufescens",
+      "scientificName": "Sylvietta rufescens",
+      "index": 0,
+      "type": "song",
+      "action": "kept",
+      "from": [
+        "368190"
+      ],
+      "to": "368190",
+      "quality": "A",
+      "country": "South Africa",
+      "locality": "Hoedspruit",
       "cleaned": false,
       "license": "CC BY-NC-SA 4.0"
     },

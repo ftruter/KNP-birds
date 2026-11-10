@@ -1,14 +1,137 @@
 {
+  "size": {
+    "lengthCm": {
+      "min": 10,
+      "max": 12
+    },
+    "note": "Newman's Birds gives 10–12 cm."
+  },
+  "habitat": "Usually in pairs in bushveld and woodland, often in bird parties. It feeds among branches and trunks.",
+  "summary": "A common resident. It looks tailless, is grey above, and is a variable burnt orange below. It has a distinct eyebrow and a dusky eye-stripe. The song is a loud 'tree-cheer', and the call is a short dry trill. The Kemp name Longbilled Crombec and the code RB were left unchanged.",
+  "variants": [
+    {
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "marks": {
+        "bill": {
+          "colour": null,
+          "shape": "More prominent than the Red-faced Crombec."
+        },
+        "eye": {
+          "iris": null,
+          "ring": null
+        },
+        "legs": {
+          "colour": null
+        },
+        "head": {
+          "crown": null,
+          "face": null,
+          "throat": null,
+          "pattern": "A distinct eyebrow, a dusky eye-stripe, and paler feathering about the face and ear coverts."
+        },
+        "upperparts": {
+          "back": "grey",
+          "rump": null
+        },
+        "underparts": {
+          "breast": null,
+          "belly": null,
+          "pattern": "Variable burnt orange below."
+        },
+        "wings": {
+          "above": null,
+          "below": null
+        },
+        "tail": {
+          "colour": null,
+          "shape": "So short that the bird looks tailless."
+        }
+      }
+    }
+  ],
+  "viewNotes": [
+    {
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Grey above, with an eyebrow, a dusky eye-stripe and an almost absent tail."
+    },
+    {
+      "view": "perched-front",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Variable burnt orange below."
+    },
+    {
+      "view": "flight-above",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Flight plumage is not described."
+    },
+    {
+      "view": "flight-below",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "The underside in flight is not described."
+    }
+  ],
+  "calls": [
+    {
+      "sex": "any",
+      "type": "song",
+      "description": "A loud urgent 'tree-cheer, tree-cheer, tree-cheer'. The call is a short dry trill. The grade A song is from Hoedspruit. The filename is XC368190-170405_Long-billedCrombec_Blydepoort_OC.mp3.",
+      "recordings": [
+        {
+          "key": "xeno-canto/XC368190",
+          "source": "https://xeno-canto.org/368190",
+          "fileUrl": "https://xeno-canto.org/sounds/uploaded/RFRTVEHIZX/XC368190-170405_Long-billedCrombec_Blydepoort_OC.mp3",
+          "author": "Oscar Campbell",
+          "license": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ]
+    }
+  ],
+  "images": [
+    {
+      "key": "sylvietta-rufescens/side.jpg",
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "source": "https://www.inaturalist.org/observations/10827980",
+      "fileUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/15172407/large.jpg",
+      "author": "Brian du Preez",
+      "license": "CC BY-SA 4.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "aiGenerated": false,
+      "hosted": false,
+      "alt": "Long-billed Crombec at Skukuza in Kruger",
+      "caption": "Long-billed Crombec at Skukuza in Kruger."
+    }
+  ],
+  "research": {
+    "confidence": "medium",
+    "needsReview": true,
+    "note": "Newman calls it a common resident, and Avibase does not mark it rare, so all twelve months are listed. Burnt orange is not a colour name, so no underpart colour is stored. The grade A song is from Hoedspruit, and the filename says Blydepoort. The Kemp name Longbilled Crombec and the code RB were left unchanged."
+  },
   "kind": "species",
   "slug": "sylvietta-rufescens",
+  "family": "macrosphenidae",
+  "sampleData": false,
   "scientificName": "Sylvietta rufescens",
   "commonNames": {
     "en": "Long-billed Crombec",
     "af": "Bosveldstompstert"
   },
-  "family": "macrosphenidae",
-  "summary": "The details for this species have not been published yet.",
-  "sampleData": true,
   "population": {
     "estimate": {
       "low": 131072,
@@ -35,8 +158,39 @@
     },
     "tierApplied": "D"
   },
-  "variants": [],
-  "viewNotes": [],
-  "calls": [],
-  "images": []
+  "status": "resident",
+  "monthsPresent": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+  ],
+  "sources": [
+    {
+      "title": "Long-billed Crombec",
+      "url": "https://newmansbirds.com/birds/long-billed-crombec/",
+      "publisher": "Newman's Birds",
+      "year": 2026
+    },
+    {
+      "title": "Avibase bird checklist — Kruger National Park",
+      "url": "https://avibase.bsc-eoc.org/checklist.jsp?region=ZA000003",
+      "publisher": "Avibase",
+      "year": null
+    },
+    {
+      "title": "Kemp A.C., Herholdt J.J., Whyte I. & Harrison J. (2001). Birds of the two largest national parks in South Africa: a method to generate estimates of population size for all species and assess their conservation ecology. S. Afr. J. Sci. 97: 393–403.",
+      "url": "https://journals.co.za/doi/pdf/10.10520/EJC97367",
+      "publisher": "South African Journal of Science",
+      "year": 2001
+    }
+  ]
 }

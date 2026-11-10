@@ -5,8 +5,8 @@
   "commonNames": {
     "en": "African warblers"
   },
-  "summary": "Field notes for this family are still to be written.",
-  "sampleData": true,
+  "summary": "Cape Grassbird of long grass, and Long-billed Crombec, a tiny almost tailless bird of bushveld.",
+  "sampleData": false,
   "species": [
     {
       "slug": "sphenoeacus-afer",

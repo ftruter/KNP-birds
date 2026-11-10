@@ -2890,6 +2890,16 @@
         }
       ]
     },
+    "sphenoeacus-afer": {
+      "calls": [
+        {
+          "index": 0,
+          "quality": {
+            "xeno-canto/XC28640": "A"
+          }
+        }
+      ]
+    },
     "spilopelia-senegalensis": {
       "calls": [
         {
@@ -2978,6 +2988,16 @@
           "index": 0,
           "quality": {
             "xeno-canto/XC904341": "A"
+          }
+        }
+      ]
+    },
+    "sylvietta-rufescens": {
+      "calls": [
+        {
+          "index": 0,
+          "quality": {
+            "xeno-canto/XC368190": "A"
           }
         }
       ]
