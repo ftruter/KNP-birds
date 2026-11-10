@@ -6,8 +6,8 @@
     "en": "Helmetshrikes",
     "af": "Helmlaksmanne"
   },
-  "summary": "Field notes for this family are still to be written.",
-  "sampleData": true,
+  "summary": "Two helmetshrikes of woodland parties. White-crested is pied with a grey crown. Retz’s is black, with red bare parts and a white vent and tail tips.",
+  "sampleData": false,
   "species": [
     {
       "slug": "prionops-plumatus",

@@ -1,14 +1,190 @@
 {
+  "size": {
+    "lengthCm": {
+      "min": 22,
+      "max": 22
+    },
+    "note": "Newman's Birds gives 22 cm."
+  },
+  "habitat": "Parties in broad-leaved and mixed woodland, in the middle and lower layers. Nomadic, and it sometimes appears in suburbia during droughts.",
+  "summary": "A common resident. Pied, with a grey crown, a yellow eye and eye-wattle, and yellow legs. The identification line says the eye-wattles and legs are orange-yellow. The immature has a browner crown. Newman does not describe the voice. The Kemp name White Helmetshrike and the code RB were left unchanged.",
+  "similar": [
+    {
+      "slug": "prionops-retzii",
+      "note": "Retz’s Helmet-Shrike is black, with a red bill, eye-wattle and legs, and a white vent and tail tips."
+    }
+  ],
+  "variants": [
+    {
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "marks": {
+        "bill": {
+          "colour": null,
+          "shape": null
+        },
+        "eye": {
+          "iris": "yellow",
+          "ring": null
+        },
+        "legs": {
+          "colour": null
+        },
+        "head": {
+          "crown": "grey",
+          "face": null,
+          "throat": null,
+          "pattern": "Pied, with a grey crown. The identification line says orange-yellow eye-wattles and legs. The description says a yellow eye-wattle and yellow legs."
+        },
+        "upperparts": {
+          "back": null,
+          "rump": null
+        },
+        "underparts": {
+          "breast": null,
+          "belly": null
+        },
+        "wings": {
+          "above": null,
+          "below": null,
+          "pattern": "Striking black-and-white wing markings. Flight looks slow, like a butterfly."
+        },
+        "tail": {
+          "colour": null,
+          "shape": null
+        }
+      }
+    },
+    {
+      "age": "immature",
+      "sex": "any",
+      "season": "any",
+      "marks": {
+        "bill": {
+          "colour": null,
+          "shape": null
+        },
+        "eye": {
+          "iris": null,
+          "ring": null
+        },
+        "legs": {
+          "colour": null
+        },
+        "head": {
+          "crown": null,
+          "face": null,
+          "throat": null,
+          "pattern": "Immature has a browner crown."
+        },
+        "upperparts": {
+          "back": null,
+          "rump": null
+        },
+        "underparts": {
+          "breast": null,
+          "belly": null
+        },
+        "wings": {
+          "above": null,
+          "below": null
+        },
+        "tail": {
+          "colour": null,
+          "shape": null
+        }
+      }
+    }
+  ],
+  "viewNotes": [
+    {
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Pied, with a grey crown and a yellow eye."
+    },
+    {
+      "view": "perched-front",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Yellow eye and eye-wattle. The identification line says orange-yellow."
+    },
+    {
+      "view": "flight-above",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Slow, butterfly-like flight, with black-and-white wing markings."
+    },
+    {
+      "view": "flight-below",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "The underside in flight is not described."
+    },
+    {
+      "view": "perched-back",
+      "age": "immature",
+      "sex": "any",
+      "season": "any",
+      "note": "Browner crown than the adult."
+    }
+  ],
+  "calls": [
+    {
+      "sex": "any",
+      "type": "call",
+      "description": "Newman does not describe the voice. The grade A file is a begging call from Popa Falls in Namibia. The filename is XC447081-White-crestedHelmetshrike_PopaFalls_Namibia_20180916_15h43.mp3.",
+      "recordings": [
+        {
+          "key": "xeno-canto/XC447081",
+          "source": "https://xeno-canto.org/447081",
+          "fileUrl": "https://xeno-canto.org/sounds/uploaded/UZRIEUDUHM/XC447081-White-crestedHelmetshrike_PopaFalls_Namibia_20180916_15h43.mp3",
+          "author": "Toby Esplin",
+          "license": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ]
+    }
+  ],
+  "images": [
+    {
+      "key": "prionops-plumatus/side.jpg",
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "source": "https://www.inaturalist.org/observations/27919556",
+      "fileUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/43487591/large.jpeg",
+      "author": "Carmelo López Abad",
+      "license": "CC BY-NC 4.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+      "aiGenerated": false,
+      "hosted": false,
+      "alt": "White-crested Helmetshrike at Tamboti in Kruger, pied, with a grey crown",
+      "caption": "White-crested Helmetshrike at Tamboti in Kruger, pied, with a grey crown and a yellow eye."
+    }
+  ],
+  "research": {
+    "confidence": "medium",
+    "needsReview": true,
+    "note": "Newman calls it a common resident, and Avibase does not mark it rare, so all twelve months are listed. It is also described as nomadic. The legs are orange-yellow on the identification line and yellow in the description, so no leg colour is stored. The voice is not described. The grade A recording is a begging call from Namibia. The Kemp name White Helmetshrike and the code RB were left unchanged."
+  },
   "kind": "species",
   "slug": "prionops-plumatus",
+  "family": "vangidae",
+  "sampleData": false,
   "scientificName": "Prionops plumatus",
   "commonNames": {
     "en": "White-crested Helmet-Shrike",
     "af": "Withelmlaksman"
   },
-  "family": "vangidae",
-  "summary": "The details for this species have not been published yet.",
-  "sampleData": true,
   "population": {
     "estimate": {
       "low": 8192,
@@ -35,8 +211,39 @@
     },
     "tierApplied": "D"
   },
-  "variants": [],
-  "viewNotes": [],
-  "calls": [],
-  "images": []
+  "status": "resident",
+  "monthsPresent": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+  ],
+  "sources": [
+    {
+      "title": "White-crested Helmet-Shrike",
+      "url": "https://newmansbirds.com/birds/white-crested-helmet-shrike/",
+      "publisher": "Newman's Birds",
+      "year": 2026
+    },
+    {
+      "title": "Avibase bird checklist — Kruger National Park",
+      "url": "https://avibase.bsc-eoc.org/checklist.jsp?region=ZA000003",
+      "publisher": "Avibase",
+      "year": null
+    },
+    {
+      "title": "Kemp A.C., Herholdt J.J., Whyte I. & Harrison J. (2001). Birds of the two largest national parks in South Africa: a method to generate estimates of population size for all species and assess their conservation ecology. S. Afr. J. Sci. 97: 393–403.",
+      "url": "https://journals.co.za/doi/pdf/10.10520/EJC97367",
+      "publisher": "South African Journal of Science",
+      "year": 2001
+    }
+  ]
 }

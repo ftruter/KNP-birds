@@ -1,10 +1,10 @@
 {
   "source": "xeno-canto explore catalogue, API v3 recording fields",
   "counts": {
-    "slots": 479,
+    "slots": 481,
     "swapped": 17,
     "added": 278,
-    "kept": 156,
+    "kept": 158,
     "none": 28,
     "cleaned": 0
   },
@@ -2220,6 +2220,38 @@
       "quality": "A",
       "country": "South Africa",
       "locality": "Strandfontein Sewage Works, Cape Town",
+      "cleaned": false,
+      "license": "CC BY-NC-SA 4.0"
+    },
+    {
+      "slug": "prionops-plumatus",
+      "scientificName": "Prionops plumatus",
+      "index": 0,
+      "type": "call",
+      "action": "kept",
+      "from": [
+        "447081"
+      ],
+      "to": "447081",
+      "quality": "A",
+      "country": "Namibia",
+      "locality": "Popa Falls",
+      "cleaned": false,
+      "license": "CC BY-NC-SA 4.0"
+    },
+    {
+      "slug": "prionops-retzii",
+      "scientificName": "Prionops retzii",
+      "index": 0,
+      "type": "call",
+      "action": "kept",
+      "from": [
+        "237788"
+      ],
+      "to": "237788",
+      "quality": "A",
+      "country": "South Africa",
+      "locality": "Kruger NP",
       "cleaned": false,
       "license": "CC BY-NC-SA 4.0"
     },
