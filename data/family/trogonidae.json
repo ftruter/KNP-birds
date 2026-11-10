@@ -6,8 +6,8 @@
     "en": "Trogons",
     "af": "Bosloerie"
   },
-  "summary": "Field notes for this family are still to be written.",
-  "sampleData": true,
+  "summary": "Narina Trogon. A forest bird with scarlet underparts and iridescent green upperparts. The female lacks the male’s green breast.",
+  "sampleData": false,
   "species": [
     {
       "slug": "apaloderma-narina",

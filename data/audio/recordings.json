@@ -345,6 +345,16 @@
         }
       ]
     },
+    "apaloderma-narina": {
+      "calls": [
+        {
+          "index": 0,
+          "quality": {
+            "xeno-canto/XC607366": "A"
+          }
+        }
+      ]
+    },
     "aplopelia-larvata": {
       "calls": [
         {
