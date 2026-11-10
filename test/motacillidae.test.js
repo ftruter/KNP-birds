@@ -68,4 +68,13 @@ test('wagtails, pipits and the longclaw are sourced without changing populations
     report.counts.kept +
     report.counts.none
   assert.equal(sum, report.counts.slots)
+
+  const buffy = await readJson('data/species/anthus-vaalensis.json')
+  assert.equal(buffy.size.lengthCm.min, 16)
+  assert.equal(buffy.size.lengthCm.max, 18)
+  const bushveld = await readJson('data/species/anthus-caffer.json')
+  assert.equal(bushveld.size, undefined)
+  const nicholson = await readJson('data/species/anthus-nicholsoni.json')
+  assert.equal(nicholson.size, undefined)
+
 })
