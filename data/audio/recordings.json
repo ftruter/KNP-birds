@@ -285,6 +285,16 @@
         }
       ]
     },
+    "anthoscopus-caroli": {
+      "calls": [
+        {
+          "index": 0,
+          "quality": {
+            "xeno-canto/XC552058": "B"
+          }
+        }
+      ]
+    },
     "apalis-flavida": {
       "calls": [
         {

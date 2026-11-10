@@ -7,8 +7,30 @@
     "af": "Gryskapokvoël"
   },
   "family": "remizidae",
-  "summary": "The details for this species have not been published yet.",
-  "sampleData": true,
+  "size": {
+    "lengthCm": {
+      "min": 8,
+      "max": 9
+    },
+    "note": "Newman's Birds gives 8–9 cm."
+  },
+  "habitat": "Small groups in moist broad-leaved woodland, feeding mainly in the treetops.",
+  "summary": "A common resident, and one of the smallest birds in the region. Dark grey-green above, with a buff patch from the forehead to the ear coverts, a pale grey throat and breast, and a buff belly and vent. The immature is similar. Western and some northern races are olive-green or yellow-green above and more yellowish on the belly. Newman does not assign a race to Kruger. The call is chikchikZEE, repeated. There is no Kemp estimate.",
+  "sampleData": false,
+  "sources": [
+    {
+      "title": "Grey Penduline Tit",
+      "url": "https://newmansbirds.com/birds/grey-penduline-tit/",
+      "publisher": "Newman's Birds",
+      "year": 2026
+    },
+    {
+      "title": "Avibase bird checklist — Kruger National Park",
+      "url": "https://avibase.bsc-eoc.org/checklist.jsp?region=ZA000003",
+      "publisher": "Avibase",
+      "year": null
+    }
+  ],
   "population": {
     "estimate": {
       "low": null,
@@ -21,8 +43,142 @@
     "notes": "No sourced Kruger estimate is currently available; taxonomy or later records require separate research.",
     "sources": []
   },
-  "variants": [],
-  "viewNotes": [],
-  "calls": [],
-  "images": []
+  "variants": [
+    {
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "marks": {
+        "bill": {
+          "colour": null,
+          "shape": null
+        },
+        "eye": {
+          "iris": null,
+          "ring": null
+        },
+        "legs": {
+          "colour": null
+        },
+        "head": {
+          "crown": null,
+          "face": "buff",
+          "throat": "grey",
+          "pattern": "Buff patch from the forehead to the ear coverts. The forehead is buffy. Throat and breast are pale grey."
+        },
+        "upperparts": {
+          "back": null,
+          "rump": null,
+          "pattern": "Dark grey-green upper parts. Western and some northern races are olive-green or yellow-green above. Newman does not assign a race to Kruger."
+        },
+        "underparts": {
+          "breast": "grey",
+          "belly": "buff",
+          "pattern": "Light grey breast. Buff-coloured belly and vent. Some northern races are more yellowish on the belly."
+        },
+        "wings": {
+          "above": null,
+          "below": null
+        },
+        "tail": {
+          "colour": null,
+          "shape": null
+        }
+      }
+    }
+  ],
+  "viewNotes": [
+    {
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Buff forehead and ear coverts, pale grey breast and a buff belly. The upper parts are dark grey-green."
+    },
+    {
+      "view": "perched-front",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Pale grey throat and breast, and a buff belly."
+    },
+    {
+      "view": "perched-back",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Dark grey-green upper parts. Newman does not say whether the Kruger birds are the yellower northern race."
+    },
+    {
+      "view": "flight-above",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "A flight pattern was not described."
+    },
+    {
+      "view": "flight-below",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "The underwing was not described."
+    }
+  ],
+  "calls": [
+    {
+      "sex": "any",
+      "type": "call",
+      "description": "chikchikZEE, chikchikZEE, chikchikZEE. The only grade A recording is ND. Grade B call from Kasanka National Park, Zambia. The filename is XC552058-African Penduline-tit (call) 20200410,KasankaNP,ZAMBIA.mp3.",
+      "recordings": [
+        {
+          "key": "xeno-canto/XC552058",
+          "source": "https://xeno-canto.org/552058",
+          "fileUrl": "https://xeno-canto.org/sounds/uploaded/IIJAXHKSCC/XC552058-African%20Penduline-tit%20%28call%29%2020200410%2CKasankaNP%2CZAMBIA.mp3",
+          "author": "Dries Van de Loock",
+          "license": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ]
+    }
+  ],
+  "images": [
+    {
+      "key": "anthoscopus-caroli/side.jpg",
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "source": "https://www.inaturalist.org/observations/225883277",
+      "fileUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/400535983/large.jpeg",
+      "author": "jderasmus",
+      "license": "CC BY-NC 4.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+      "aiGenerated": false,
+      "hosted": false,
+      "alt": "Grey Penduline-tit in Kruger, small, with a buff belly",
+      "caption": "Grey Penduline-tit in Kruger, small, with a buff belly and grey upper parts."
+    }
+  ],
+  "research": {
+    "confidence": "medium",
+    "needsReview": true,
+    "note": "Newman calls it a common resident, and Avibase lists it as African Penduline-Tit and does not mark it rare, so all twelve months are listed. There is no Kemp estimate, so the family total stays incomplete. The upper parts are described as dark grey-green, so no single back colour is stored. The grade A recording is ND, so the playable file is grade B from Zambia. No flight photograph was found."
+  },
+  "status": "resident",
+  "monthsPresent": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+  ]
 }

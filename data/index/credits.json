@@ -1789,6 +1789,49 @@
       ]
     },
     {
+      "slug": "anthoscopus-caroli",
+      "scientificName": "Anthoscopus caroli",
+      "commonName": "Grey Penduline-tit",
+      "images": [
+        {
+          "key": "anthoscopus-caroli/side.jpg",
+          "author": "jderasmus",
+          "licence": "CC BY-NC 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+          "sourceUrl": "https://www.inaturalist.org/observations/225883277",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ],
+      "recordings": [
+        {
+          "key": "xeno-canto/XC552058",
+          "author": "Dries Van de Loock",
+          "licence": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "sourceUrl": "https://xeno-canto.org/552058",
+          "aiGenerated": false,
+          "hosted": false,
+          "quality": "B",
+          "callType": "call"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Grey Penduline Tit",
+          "url": "https://newmansbirds.com/birds/grey-penduline-tit/",
+          "publisher": "Newman's Birds",
+          "year": 2026
+        },
+        {
+          "title": "Avibase bird checklist — Kruger National Park",
+          "url": "https://avibase.bsc-eoc.org/checklist.jsp?region=ZA000003",
+          "publisher": "Avibase",
+          "year": null
+        }
+      ]
+    },
+    {
       "slug": "anthus-caffer",
       "scientificName": "Anthus caffer",
       "commonName": "Bushveld Pipit",
