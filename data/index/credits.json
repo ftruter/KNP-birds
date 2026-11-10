@@ -2301,7 +2301,17 @@
       "slug": "apalis-ruddi",
       "scientificName": "Apalis ruddi",
       "commonName": "Rudd’s Apalis",
-      "images": [],
+      "images": [
+        {
+          "key": "apalis-ruddi/side.jpg",
+          "author": "Bruno - Yolande Zanette",
+          "licence": "CC BY 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by/4.0/",
+          "sourceUrl": "https://www.inaturalist.org/observations/412370272",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ],
       "recordings": [
         {
           "key": "xeno-canto/XC972485",
@@ -5052,7 +5062,17 @@
       "slug": "calamonastes-fasciolatus",
       "scientificName": "Calamonastes fasciolatus",
       "commonName": "Barred Wren-Warbler",
-      "images": [],
+      "images": [
+        {
+          "key": "calamonastes-fasciolatus/side.jpg",
+          "author": "scaup",
+          "licence": "CC BY 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by/4.0/",
+          "sourceUrl": "https://www.inaturalist.org/observations/152186429",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ],
       "recordings": [
         {
           "key": "xeno-canto/XC520425",
@@ -21534,7 +21554,17 @@
       "slug": "prinia-hypoxantha",
       "scientificName": "Prinia hypoxantha",
       "commonName": "Drakensberg Prinia",
-      "images": [],
+      "images": [
+        {
+          "key": "prinia-hypoxantha/side.jpg",
+          "author": "Justin Ponder",
+          "licence": "CC BY 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by/4.0/",
+          "sourceUrl": "https://www.inaturalist.org/observations/269420490",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ],
       "recordings": [
         {
           "key": "xeno-canto/XC935289",
