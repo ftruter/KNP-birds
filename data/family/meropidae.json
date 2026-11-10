@@ -69,5 +69,14 @@
     "speciesCounted": 6,
     "speciesTotal": 6,
     "complete": true
+  },
+  "residency": {
+    "speciesKnown": 3,
+    "speciesUnknown": 3,
+    "unknownSpecies": [
+      "merops-apiaster",
+      "merops-nubicoides",
+      "merops-persicus"
+    ]
   }
 }

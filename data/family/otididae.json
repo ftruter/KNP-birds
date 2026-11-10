@@ -45,5 +45,12 @@
     "speciesCounted": 3,
     "speciesTotal": 3,
     "complete": true
+  },
+  "residency": {
+    "speciesKnown": 2,
+    "speciesUnknown": 1,
+    "unknownSpecies": [
+      "lophotis-ruficrista"
+    ]
   }
 }

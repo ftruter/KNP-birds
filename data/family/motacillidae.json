@@ -109,5 +109,14 @@
     "speciesCounted": 11,
     "speciesTotal": 11,
     "complete": true
+  },
+  "residency": {
+    "speciesKnown": 8,
+    "speciesUnknown": 3,
+    "unknownSpecies": [
+      "anthus-caffer",
+      "anthus-lineiventris",
+      "anthus-vaalensis"
+    ]
   }
 }

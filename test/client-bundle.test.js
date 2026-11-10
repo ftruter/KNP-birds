@@ -182,6 +182,71 @@ const exercise = async (browser) => {
   }
 }
 
+const exerciseSearch = async (browser) => {
+  const page = await browser.newPage({ viewport: { width: 1280, height: 800 } })
+  const errors = await prepare(page)
+  const violations = []
+  page.on('console', (message) => {
+    if (/Content Security Policy/i.test(message.text()))
+      violations.push(message.text())
+  })
+  try {
+    await page.goto(origin + '/species', { waitUntil: 'load' })
+    const input = page.locator('#site-search-q')
+    await page.waitForFunction(() =>
+      document.documentElement.classList.contains('js'),
+    )
+    assert.equal(await page.locator('.site-search-hint').isVisible(), true)
+    await page.locator('body').press('/')
+    assert.equal(
+      await page.evaluate(() => document.activeElement?.id),
+      'site-search-q',
+    )
+    assert.equal(await input.inputValue(), '')
+    await page.keyboard.type('a/b')
+    assert.equal(await input.inputValue(), 'a/b')
+    assert.equal(await page.locator('.site-search-hint').isVisible(), false)
+    await page.keyboard.press('Escape')
+    assert.equal(await input.inputValue(), '')
+    assert.equal(
+      await page.evaluate(() => document.activeElement?.id),
+      'site-search-q',
+    )
+    await page.keyboard.press('Escape')
+    assert.notEqual(
+      await page.evaluate(() => document.activeElement?.id),
+      'site-search-q',
+    )
+    await page.evaluate(() => {
+      const other = document.createElement('textarea')
+      other.id = 'other-field'
+      document.body.append(other)
+      other.focus()
+    })
+    await page.keyboard.type('x/y')
+    assert.equal(await page.locator('#other-field').inputValue(), 'x/y')
+    assert.equal(
+      await page.evaluate(() => document.activeElement?.id),
+      'other-field',
+    )
+    await input.fill('roller')
+    await Promise.all([
+      page.waitForURL(/\/search\?q=roller$/),
+      input.press('Enter'),
+    ])
+    await page.locator('#search-count').waitFor()
+    assert.match(
+      await page.locator('#search-count').textContent(),
+      /results? for “roller”/,
+    )
+    assert.equal(await input.inputValue(), 'roller')
+    assert.deepEqual(violations, [])
+    assert.deepEqual(errors, [])
+  } finally {
+    await page.close()
+  }
+}
+
 before(
   async () => {
     outdir = await mkdtemp(path.join(tmpdir(), 'knp-bundle-'))
@@ -298,6 +363,21 @@ test(
       await exercise(browser)
     } finally {
       await browser.close()
+    }
+  },
+)
+
+test(
+  'the slash key focuses header search and the form submits',
+  { timeout: 120000 },
+  async () => {
+    for (const launch of [launchChromium, () => webkit.launch()]) {
+      const browser = await launch()
+      try {
+        await exerciseSearch(browser)
+      } finally {
+        await browser.close()
+      }
     }
   },
 )

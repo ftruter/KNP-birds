@@ -85,5 +85,14 @@
     "speciesCounted": 8,
     "speciesTotal": 8,
     "complete": true
+  },
+  "residency": {
+    "speciesKnown": 5,
+    "speciesUnknown": 3,
+    "unknownSpecies": [
+      "coturnix-coturnix",
+      "coturnix-delegorguei",
+      "ortygornis-sephaena"
+    ]
   }
 }

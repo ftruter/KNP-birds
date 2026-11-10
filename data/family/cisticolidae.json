@@ -189,5 +189,17 @@
     "speciesCounted": 18,
     "speciesTotal": 21,
     "complete": false
+  },
+  "residency": {
+    "speciesKnown": 15,
+    "speciesUnknown": 6,
+    "unknownSpecies": [
+      "cisticola-aberrans",
+      "cisticola-aridulus",
+      "cisticola-erythrops",
+      "cisticola-galactotes",
+      "cisticola-juncidis",
+      "eremomela-scotops"
+    ]
   }
 }

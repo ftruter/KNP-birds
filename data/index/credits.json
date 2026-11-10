@@ -13925,14 +13925,14 @@
       ],
       "recordings": [
         {
-          "key": "xeno-canto/XC369789",
+          "key": "xeno-canto/XC369789-cleaned.mp3",
           "author": "W.J. Rossouw",
           "licence": "CC BY-NC-SA 4.0",
           "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
           "sourceUrl": "https://xeno-canto.org/369789",
           "aiGenerated": false,
-          "hosted": false,
           "quality": "C",
+          "modified": "Wind noise reduced (high-pass filter and noise reduction)",
           "callType": "call"
         }
       ],

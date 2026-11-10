@@ -1,9 +1,27 @@
 const SLUG = /^[a-z0-9]+(?:-[a-z0-9]+)*$/
 
-export const alternates = (pathname) =>
+export const SEARCH_PATH = '/search'
+export const SEARCH_MAX = 200
+
+/** Trims, collapses whitespace and caps a search query from the URL. */
+export const searchQuery = (raw) =>
+  String(raw ?? '')
+    .replace(/\s+/g, ' ')
+    .trim()
+    .slice(0, SEARCH_MAX)
+    .trim()
+
+export const searchSuffix = (query) =>
+  query ? `?${new URLSearchParams({ q: query })}` : ''
+
+export const alternates = (pathname, suffix = '') =>
   pathname === '/'
     ? { html: '/', md: '/.md', json: '/.json' }
-    : { html: pathname, md: `${pathname}.md`, json: `${pathname}.json` }
+    : {
+        html: `${pathname}${suffix}`,
+        md: `${pathname}.md${suffix}`,
+        json: `${pathname}.json${suffix}`,
+      }
 
 export const parseUrl = (url) => {
   const rawPath = url.pathname
@@ -66,6 +84,11 @@ export const parseUrl = (url) => {
 
   if (path === '/') return route('home', format, '/')
   if (path === '/sitemap') return route('sitemap-page', format, path)
+  if (path === SEARCH_PATH)
+    return {
+      ...route('search', format, path),
+      query: searchQuery(url.searchParams.get('q')),
+    }
   if (path === '/species')
     return { ...route('species-index', format, path), kvKey: 'index/species' }
   if (path === '/families')

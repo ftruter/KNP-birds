@@ -85,5 +85,12 @@
     "speciesCounted": 7,
     "speciesTotal": 8,
     "complete": false
+  },
+  "residency": {
+    "speciesKnown": 7,
+    "speciesUnknown": 1,
+    "unknownSpecies": [
+      "ciconia-abdimii"
+    ]
   }
 }

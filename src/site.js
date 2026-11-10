@@ -10,6 +10,7 @@ import {
   renderCreditsHtml,
   renderHomeHtml,
   renderNotFoundHtml,
+  renderSearchHtml,
   renderSitemapHtml,
   renderSpeciesHtml,
   renderSpeciesIndexHtml,
@@ -21,6 +22,7 @@ import {
   renderCreditsMarkdown,
   renderHomeMarkdown,
   renderNotFoundMarkdown,
+  renderSearchMarkdown,
   renderSitemapMarkdown,
   renderSpeciesIndexMarkdown,
   renderSpeciesMarkdown,
@@ -36,6 +38,8 @@ import { HOME_POPULATION_INTRO, indexRows } from './guide.js'
 import { numberFormatFor } from './numbers.js'
 import { CARD_MEDIA_TYPE } from './mcp.js'
 import { applyRecordingOverlay } from './recordings.js'
+import { searchSuffix } from './route.js'
+import { loadSearchRecords, searchRecords } from './search.js'
 import { colourMapFromKv, readDocument } from './store.js'
 import { buildSitemap, sitemapEntries, sitemapXml } from './sitemap.js'
 import { llmsTxt, robotsTxt } from './static.js'
@@ -83,6 +87,8 @@ export const renderRoute = async (request, env, route) => {
       return renderObject(env, route.objectKey)
     case 'home':
       return renderHome(env, route.format, view)
+    case 'search':
+      return renderSearch(env, route, view)
     case 'species-index':
     case 'families-index':
     case 'species':
@@ -134,6 +140,55 @@ const renderHome = async (env, format, view) => {
     '/',
     'home',
   )
+}
+
+export const SEARCH_LIMIT = 50
+
+const renderSearch = async (env, route, view) => {
+  const { origin } = view
+  const query = route.query || ''
+  const found = query
+    ? searchRecords(
+        await loadSearchRecords(env.BIRDS_KV, env?.DATA_VERSION),
+        query,
+        SEARCH_LIMIT,
+        origin,
+      )
+    : null
+  const page = {
+    body: '',
+    contentType: '',
+    cache: PAGE_CACHE,
+    path: route.pathname,
+    origin,
+    cacheTag: 'search',
+    search: searchSuffix(query),
+  }
+  if (route.format === 'json') {
+    return pageResponse({
+      ...page,
+      body: jsonBody({
+        kind: 'search',
+        query,
+        limit: SEARCH_LIMIT,
+        total: found?.total ?? 0,
+        results: found?.results ?? [],
+      }),
+      contentType: 'application/json; charset=utf-8',
+    })
+  }
+  if (route.format === 'md') {
+    return pageResponse({
+      ...page,
+      body: renderSearchMarkdown({ origin, query, found }),
+      contentType: 'text/markdown; charset=utf-8',
+    })
+  }
+  return pageResponse({
+    ...page,
+    body: renderSearchHtml({ origin, query, found }),
+    contentType: 'text/html; charset=utf-8',
+  })
 }
 
 const renderDocument = async (env, route, view) => {
