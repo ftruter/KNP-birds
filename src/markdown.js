@@ -3,7 +3,9 @@ import { recordingNotes } from './recordings.js'
 import { inlineText, safeHttpUrl } from './escape.js'
 import {
   APPROXIMATE_LABEL,
-  APPROXIMATE_TOTAL,
+  FAMILY_TOTAL_LABEL,
+  FAMILY_TOTAL_SEASONS,
+  residencyGapText,
   CALL_TYPE,
   SAMPLE_NOTICE,
   afrikaansName,
@@ -37,7 +39,7 @@ import {
 } from './catalog.js'
 import { agentNote } from './head.js'
 import { familyTableMarkdown, speciesTableMarkdown } from './lists.js'
-import { alternates } from './route.js'
+import { alternates, searchSuffix } from './route.js'
 import { sitemapEntries } from './sitemap.js'
 
 export const renderHomeMarkdown = ({
@@ -135,7 +137,7 @@ export const renderFamilyMarkdown = (
 
 ${af ? `${af}\n\n` : ''}${doc.summary || ''}
 
-${familyPopulationMarkdown(doc.population, format)}
+${familyPopulationMarkdown(doc.population, doc.residency, format)}
 
 ${iconicMarkdown(plates)}
 
@@ -226,6 +228,56 @@ export const renderNotFoundMarkdown = (path, origin) =>
 - [Species](/species)`,
   })
 
+const SNIPPET_LABEL = {
+  habitat: 'Habitat',
+  identification: 'Identification',
+  populationNotes: 'Population notes',
+}
+
+const mdQuery = (query) => inlineText(query).replace(/[\\`*_[\]<>#|]/g, '\\$&')
+
+export const renderSearchMarkdown = ({ origin, query, found }) => {
+  const shown = mdQuery(query)
+  let body
+  if (!query) {
+    body =
+      'Add `?q=` to search by English, Afrikaans or Latin name, for example [/search.md?q=roller](/search.md?q=roller).'
+  } else if (found.total === 0) {
+    body = `## 0 results for “${shown}”\n\nNo bird matched “${shown}”.`
+  } else {
+    const items = found.results.map((result) => {
+      const path = new URL(result.pages.html).pathname
+      const names = [
+        `*${inlineText(result.scientificName)}*`,
+        result.afrikaansName ? inlineText(result.afrikaansName) : '',
+      ]
+        .filter(Boolean)
+        .join(' · ')
+      const snippets = result.snippets
+        .filter((item) => SNIPPET_LABEL[item.field])
+        .map(
+          (item) =>
+            `\n  - ${SNIPPET_LABEL[item.field]}: ${inlineText(item.text)}`,
+        )
+        .join('')
+      return `- ${result.kind === 'family' ? 'Family' : 'Species'}: [${inlineText(result.englishName || result.scientificName)}](${path}.md) — ${names}${snippets}`
+    })
+    const more =
+      found.total > found.results.length
+        ? `\n\nShowing the first ${found.results.length}.`
+        : ''
+    body = `## ${found.total} ${found.total === 1 ? 'result' : 'results'} for “${shown}”${more}\n\n${items.join('\n')}`
+  }
+  return pageMd({
+    origin,
+    path: '/search',
+    title: 'Search',
+    sample: false,
+    body,
+    suffix: searchSuffix(query),
+  })
+}
+
 const iconicMarkdown = (plates) =>
   !plates?.length
     ? ''
@@ -242,17 +294,20 @@ ${plates
   })
   .join('\n\n')}`
 
-const familyPopulationMarkdown = (population, format) => {
+const familyPopulationMarkdown = (population, residency, format) => {
   const model = familyTotalModel(population, format)
+  const gap = residencyGapText(residency, format)
   return `## Population
 
-**${APPROXIMATE_TOTAL}.** ${FAMILY_TOTAL_INTRO}
+**${FAMILY_TOTAL_LABEL}.** ${FAMILY_TOTAL_INTRO}
 
 ${model.range || 'No numeric total yet.'}
 
 ${model.coverage}
 
-${model.complete ? '' : 'This total is incomplete.'}`
+${model.complete ? '' : 'This total is incomplete.'}
+
+${FAMILY_TOTAL_SEASONS} [Families by season](/families).${gap ? `\n\n${gap}` : ''}`
 }
 
 const comparisonMarkdown = (section, colourMap) => {
@@ -565,8 +620,8 @@ ${mdSite(doc?.site)}`,
   })
 }
 
-const pageMd = ({ path, title, sample, body, origin }) => {
-  const alts = alternates(path)
+const pageMd = ({ path, title, sample, body, origin, suffix = '' }) => {
+  const alts = alternates(path, suffix)
   const banner = sample ? `> ${SAMPLE_NOTICE}\n\n` : ''
   return `# ${inlineText(title)}\n\n${agentNote(origin)}\n\n${banner}${body.trim()}\n\n---\n\nAlso available as [HTML](${alts.html}) and [JSON](${alts.json}).\n`
 }

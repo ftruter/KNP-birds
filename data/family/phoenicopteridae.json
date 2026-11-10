@@ -36,5 +36,13 @@
     "speciesCounted": 2,
     "speciesTotal": 2,
     "complete": true
+  },
+  "residency": {
+    "speciesKnown": 0,
+    "speciesUnknown": 2,
+    "unknownSpecies": [
+      "phoeniconaias-minor",
+      "phoenicopterus-roseus"
+    ]
   }
 }

@@ -49,6 +49,7 @@ Responses other than image and audio bytes, and other than \`POST /mcp\`, also s
 - ${origin}/.well-known/ai-catalog.json (predecessor catalog; same entries)
 - ${origin}/mcp/server-card (MCP server card, \`application/mcp-server-card+json\`)
 - ${origin}/mcp (public read-only MCP search; POST, one tool named \`search\`)
+- ${origin}/search?q=<words> (the same ranking as the MCP tool, as a page; also ${origin}/search.md?q=<words> and ${origin}/search.json?q=<words>)
 - ${origin}/style.css
 - ${origin}/images/<r2-key> streams a photograph from object storage
 - ${origin}/audio/<r2-key> streams a call recording from the same bucket

@@ -101,5 +101,10 @@
     "speciesCounted": 10,
     "speciesTotal": 10,
     "complete": true
+  },
+  "residency": {
+    "speciesKnown": 10,
+    "speciesUnknown": 0,
+    "unknownSpecies": []
   }
 }
