@@ -2,7 +2,7 @@ import assert from 'node:assert/strict'
 import { test } from 'node:test'
 import { diffSpecies } from '../src/diff.js'
 import { collectColourTokens } from '../src/marks.js'
-import { readJson } from './helpers.js'
+import { playedRecordings, readJson } from './helpers.js'
 
 const SLUGS = [
   'acrocephalus-arundinaceus',
@@ -93,16 +93,10 @@ test('all eight reed warblers are sourced without changing populations', async (
         assert.equal(item.hosted, false, item.key)
         assert.equal(DEEDS.has(item.licenceUrl), true, item.key)
         assert.doesNotMatch(item.license, /ND/i, item.key)
-        const grade = overlay.species[slug].calls.find(
-          (slot) => slot.index === index,
-        )
-        assert.equal(
-          grade.quality[item.key] === 'A' || grade.quality[item.key] === 'B',
-          true,
-          item.key,
-        )
         recordings += 1
       }
+      for (const played of playedRecordings(overlay, slug, index, call))
+        assert.match(played.quality, /^[AB]$/, played.key)
     })
     const blob = JSON.stringify({
       summary: bird.summary,

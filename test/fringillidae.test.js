@@ -1,6 +1,6 @@
 import assert from 'node:assert/strict'
 import { test } from 'node:test'
-import { readJson } from './helpers.js'
+import { playedRecordings, readJson } from './helpers.js'
 
 test('canaries and the seedeater are sourced without changing populations', async () => {
   const family = await readJson('data/family/fringillidae.json')
@@ -44,8 +44,10 @@ test('canaries and the seedeater are sourced without changing populations', asyn
   const lemon = await readJson('data/species/crithagra-citrinipectus.json')
   assert.equal(lemon.calls[0].recordings.length, 0)
   assert.deepEqual(
-    overlay.species['crithagra-citrinipectus'].calls[0].quality,
-    {},
+    playedRecordings(overlay, 'crithagra-citrinipectus', 0, lemon.calls[0]).map(
+      (item) => [item.key, item.quality],
+    ),
+    [['xeno-canto/XC395991', 'B']],
   )
   const sum =
     report.counts.swapped +

@@ -245,8 +245,11 @@ const main = async () => {
   const { species } = await readCatalog()
   const catalogue = new Map()
   const cache = new Map()
+  const candidatePool = new Map()
   const remembered = async (query) => {
     if (!cache.has(query)) cache.set(query, await search(query))
+    for (const item of cache.get(query))
+      candidatePool.set(String(item.id), item)
     return cache.get(query)
   }
   const slots = []
@@ -278,7 +281,7 @@ const main = async () => {
         const item = catalogue.get(catalogueId(recording))
         return Math.max(rank, QUALITY_RANK[item?.q] || 0)
       }, 0)
-      let candidates = []
+      const candidates = []
       if (best < QUALITY_RANK.A) {
         for (const grade of grades) {
           if (QUALITY_RANK[grade] <= best) continue
@@ -286,8 +289,7 @@ const main = async () => {
           const usable = found.filter((item) => recordingFromCatalogue(item))
           if (!usable.length) continue
           const fresh = usable.filter((item) => !used.has(String(item.id)))
-          candidates = fresh.length ? fresh : usable
-          break
+          candidates.push(...(fresh.length ? fresh : usable))
         }
       }
       const decision = decideSlot(call, catalogue, candidates)
@@ -309,6 +311,7 @@ const main = async () => {
         to: chosenId,
         country: item?.cnt || '',
         locality: item?.loc || '',
+        permission: decision.permission || null,
       })
       if (decision.action === 'none')
         noUsable.push({
@@ -409,6 +412,37 @@ const main = async () => {
         slug: speciesEntry.slug,
         scientificName: speciesEntry.scientificName,
       })),
+    permissionRequests: slots.flatMap((speciesEntry) =>
+      speciesEntry.slots
+        .filter((slot) => slot.permission)
+        .map((slot) => {
+          const current = slot.recordings[0]
+          const wanted = slot.permission
+          const item = candidatePool.get(catalogueId(wanted))
+          return {
+            slug: speciesEntry.slug,
+            scientificName: speciesEntry.scientificName,
+            index: slot.index,
+            type: slot.type,
+            current: current
+              ? {
+                  key: current.key,
+                  quality: current.quality || '',
+                  license: current.license || '',
+                }
+              : null,
+            wanted: {
+              key: wanted.key,
+              source: wanted.source,
+              author: wanted.author,
+              quality: wanted.quality,
+              license: wanted.license,
+              country: item?.cnt || '',
+              locality: item?.loc || '',
+            },
+          }
+        }),
+    ),
     cleaned,
     cleanErrors,
     slots: slots.flatMap((speciesEntry) =>

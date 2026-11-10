@@ -1,6 +1,6 @@
 import assert from 'node:assert/strict'
 import { test } from 'node:test'
-import { readJson } from './helpers.js'
+import { playedRecordings, readJson } from './helpers.js'
 
 test('wagtails, pipits and the longclaw are sourced without changing populations', async () => {
   const family = await readJson('data/family/motacillidae.json')
@@ -34,9 +34,10 @@ test('wagtails, pipits and the longclaw are sourced without changing populations
     assert.equal(bird.population.kemp.paperName, paper, slug)
     assert.equal(bird.population.kemp.status, status, slug)
     assert.equal(bird.calls.length, 1, slug)
-    assert.equal(
-      overlay.species[slug].calls[0].quality[bird.calls[0].recordings[0].key],
-      overlay.species[slug].calls[0].quality[bird.calls[0].recordings[0].key],
+    assert.match(
+      playedRecordings(overlay, slug, 0, bird.calls[0])[0].quality,
+      /^[A-E]$/,
+      slug,
     )
   }
   const bush = await readJson('data/species/anthus-caffer.json')
@@ -58,11 +59,11 @@ test('wagtails, pipits and the longclaw are sourced without changing populations
   assert.equal(african.status, 'resident')
   assert.equal(african.monthsPresent.length, 12)
   const buffy = await readJson('data/species/anthus-vaalensis.json')
-  assert.equal(
-    overlay.species['anthus-vaalensis'].calls[0].quality[
-      buffy.calls[0].recordings[0].key
-    ],
-    'C',
+  assert.deepEqual(
+    playedRecordings(overlay, 'anthus-vaalensis', 0, buffy.calls[0]).map(
+      (item) => [item.key, item.quality],
+    ),
+    [['xeno-canto/XC581613', 'B']],
   )
   const sum =
     report.counts.swapped +

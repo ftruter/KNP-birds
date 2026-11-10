@@ -2,7 +2,7 @@ import assert from 'node:assert/strict'
 import { test } from 'node:test'
 import { diffSpecies } from '../src/diff.js'
 import { collectColourTokens } from '../src/marks.js'
-import { readJson } from './helpers.js'
+import { playedRecordings, readJson } from './helpers.js'
 
 const SLUGS = [
   'apus-affinis',
@@ -74,12 +74,10 @@ test('all nine swifts are sourced without changing populations', async () => {
     bird.calls.forEach((call, index) => {
       for (const item of call.recordings) {
         assert.equal(item.quality, undefined, item.key)
-        const grade = overlay.species[slug].calls.find(
-          (slot) => slot.index === index,
-        ).quality[item.key]
-        assert.match(grade, /^[ABD]$/, item.key)
         recordings += 1
       }
+      for (const played of playedRecordings(overlay, slug, index, call))
+        assert.match(played.quality, /^[ABD]$/, played.key)
     })
     const blob = JSON.stringify({
       summary: bird.summary,

@@ -427,6 +427,17 @@
           "hosted": false,
           "quality": "A",
           "callType": "song"
+        },
+        {
+          "key": "xeno-canto/XC633451",
+          "author": "Lynette Rudman",
+          "licence": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "sourceUrl": "https://xeno-canto.org/633451",
+          "aiGenerated": false,
+          "hosted": false,
+          "quality": "A",
+          "callType": "song"
         }
       ],
       "sources": [
@@ -1034,6 +1045,28 @@
       ],
       "recordings": [
         {
+          "key": "xeno-canto/XC208157",
+          "author": "Jeremy Hegge",
+          "licence": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "sourceUrl": "https://xeno-canto.org/208157",
+          "aiGenerated": false,
+          "hosted": false,
+          "quality": "A",
+          "callType": "call"
+        },
+        {
+          "key": "xeno-canto/XC489216",
+          "author": "Derek Solomon",
+          "licence": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "sourceUrl": "https://xeno-canto.org/489216",
+          "aiGenerated": false,
+          "hosted": false,
+          "quality": "A",
+          "callType": "call"
+        },
+        {
           "key": "xeno-canto/XC816922",
           "author": "Dawie de Swardt",
           "licence": "CC BY-NC-SA 4.0",
@@ -1509,14 +1542,36 @@
       ],
       "recordings": [
         {
-          "key": "xeno-canto/XC268591",
-          "author": "Lynette Rudman",
+          "key": "xeno-canto/XC1173615",
+          "author": "African Bioacoustics Community",
           "licence": "CC BY-NC-SA 4.0",
           "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
-          "sourceUrl": "https://xeno-canto.org/268591",
+          "sourceUrl": "https://xeno-canto.org/1173615",
           "aiGenerated": false,
           "hosted": false,
-          "quality": "B",
+          "quality": "A",
+          "callType": "call"
+        },
+        {
+          "key": "xeno-canto/XC1173615",
+          "author": "African Bioacoustics Community",
+          "licence": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "sourceUrl": "https://xeno-canto.org/1173615",
+          "aiGenerated": false,
+          "hosted": false,
+          "quality": "A",
+          "callType": "call"
+        },
+        {
+          "key": "xeno-canto/XC1173615",
+          "author": "African Bioacoustics Community",
+          "licence": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "sourceUrl": "https://xeno-canto.org/1173615",
+          "aiGenerated": false,
+          "hosted": false,
+          "quality": "A",
           "callType": "call"
         }
       ],
@@ -1566,6 +1621,28 @@
         }
       ],
       "recordings": [
+        {
+          "key": "xeno-canto/XC649290",
+          "author": "Lynette Rudman",
+          "licence": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "sourceUrl": "https://xeno-canto.org/649290",
+          "aiGenerated": false,
+          "hosted": false,
+          "quality": "B",
+          "callType": "call"
+        },
+        {
+          "key": "xeno-canto/XC315261",
+          "author": "Lynette Rudman",
+          "licence": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "sourceUrl": "https://xeno-canto.org/315261",
+          "aiGenerated": false,
+          "hosted": false,
+          "quality": "B",
+          "callType": "call"
+        },
         {
           "key": "xeno-canto/XC649290",
           "author": "Lynette Rudman",
@@ -1631,6 +1708,28 @@
       ],
       "recordings": [
         {
+          "key": "xeno-canto/XC192184",
+          "author": "Alan Collett",
+          "licence": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "sourceUrl": "https://xeno-canto.org/192184",
+          "aiGenerated": false,
+          "hosted": false,
+          "quality": "B",
+          "callType": "call"
+        },
+        {
+          "key": "xeno-canto/XC464064",
+          "author": "Tim Cockcroft",
+          "licence": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "sourceUrl": "https://xeno-canto.org/464064",
+          "aiGenerated": false,
+          "hosted": false,
+          "quality": "B",
+          "callType": "call"
+        },
+        {
           "key": "xeno-canto/XC464064",
           "author": "Tim Cockcroft",
           "licence": "CC BY-NC-SA 4.0",
@@ -1685,6 +1784,28 @@
         }
       ],
       "recordings": [
+        {
+          "key": "xeno-canto/XC1051974",
+          "author": "African Bioacoustics Community",
+          "licence": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "sourceUrl": "https://xeno-canto.org/1051974",
+          "aiGenerated": false,
+          "hosted": false,
+          "quality": "A",
+          "callType": "call"
+        },
+        {
+          "key": "xeno-canto/XC1051976",
+          "author": "African Bioacoustics Community",
+          "licence": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "sourceUrl": "https://xeno-canto.org/1051976",
+          "aiGenerated": false,
+          "hosted": false,
+          "quality": "A",
+          "callType": "call"
+        },
         {
           "key": "xeno-canto/XC1051974",
           "author": "African Bioacoustics Community",
@@ -2252,14 +2373,14 @@
       ],
       "recordings": [
         {
-          "key": "xeno-canto/XC444076",
-          "author": "Dawie de Swardt",
+          "key": "xeno-canto/XC581613",
+          "author": "Tony Archer",
           "licence": "CC BY-NC-SA 4.0",
           "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
-          "sourceUrl": "https://xeno-canto.org/444076",
+          "sourceUrl": "https://xeno-canto.org/581613",
           "aiGenerated": false,
           "hosted": false,
-          "quality": "C",
+          "quality": "B",
           "callType": "call"
         }
       ],
@@ -2579,6 +2700,28 @@
         }
       ],
       "recordings": [
+        {
+          "key": "xeno-canto/XC27236",
+          "author": "Patrik Åberg",
+          "licence": "CC BY-NC-SA 3.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/3.0/",
+          "sourceUrl": "https://xeno-canto.org/27236",
+          "aiGenerated": false,
+          "hosted": false,
+          "quality": "A",
+          "callType": "call"
+        },
+        {
+          "key": "xeno-canto/XC27276",
+          "author": "Patrik Åberg",
+          "licence": "CC BY-NC-SA 3.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/3.0/",
+          "sourceUrl": "https://xeno-canto.org/27276",
+          "aiGenerated": false,
+          "hosted": false,
+          "quality": "A",
+          "callType": "call"
+        },
         {
           "key": "xeno-canto/XC27236",
           "author": "Patrik Åberg",
@@ -3175,14 +3318,36 @@
       ],
       "recordings": [
         {
-          "key": "xeno-canto/XC392307",
-          "author": "Peter Boesman",
-          "licence": "CC BY-NC-ND 4.0",
-          "licenceUrl": "https://creativecommons.org/licenses/by-nc-nd/4.0/",
-          "sourceUrl": "https://xeno-canto.org/392307",
+          "key": "xeno-canto/XC519736-cleaned.mp3",
+          "author": "Alan Collett",
+          "licence": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "sourceUrl": "https://xeno-canto.org/519736",
+          "aiGenerated": false,
+          "quality": "C",
+          "modified": "Wind noise reduced (high-pass filter and noise reduction)",
+          "callType": "call"
+        },
+        {
+          "key": "xeno-canto/XC428788-cleaned.mp3",
+          "author": "Alan Collett",
+          "licence": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "sourceUrl": "https://xeno-canto.org/428788",
+          "aiGenerated": false,
+          "quality": "C",
+          "modified": "Wind noise reduced (high-pass filter and noise reduction)",
+          "callType": "call"
+        },
+        {
+          "key": "xeno-canto/XC192183",
+          "author": "Alan Collett",
+          "licence": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "sourceUrl": "https://xeno-canto.org/192183",
           "aiGenerated": false,
           "hosted": false,
-          "quality": "B",
+          "quality": "C",
           "callType": "call"
         }
       ],
@@ -7554,7 +7719,19 @@
           "hosted": false
         }
       ],
-      "recordings": [],
+      "recordings": [
+        {
+          "key": "xeno-canto/XC980343-cleaned.mp3",
+          "author": "Sven Normant",
+          "licence": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "sourceUrl": "https://xeno-canto.org/980343",
+          "aiGenerated": false,
+          "quality": "D",
+          "modified": "Wind noise reduced (high-pass filter and noise reduction)",
+          "callType": "call"
+        }
+      ],
       "sources": [
         {
           "title": "Kemp A.C., Herholdt J.J., Whyte I. & Harrison J. (2001). Birds of the two largest national parks in South Africa: a method to generate estimates of population size for all species and assess their conservation ecology. S. Afr. J. Sci. 97: 393–403.",
@@ -9689,14 +9866,14 @@
       ],
       "recordings": [
         {
-          "key": "xeno-canto/XC854401",
-          "author": "Dries Van de Loock",
-          "licence": "CC BY-NC-ND 4.0",
-          "licenceUrl": "https://creativecommons.org/licenses/by-nc-nd/4.0/",
-          "sourceUrl": "https://xeno-canto.org/854401",
+          "key": "xeno-canto/XC349879",
+          "author": "Lynette Rudman",
+          "licence": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "sourceUrl": "https://xeno-canto.org/349879",
           "aiGenerated": false,
           "hosted": false,
-          "quality": "A",
+          "quality": "B",
           "callType": "call"
         }
       ],
@@ -10547,7 +10724,19 @@
           "hosted": false
         }
       ],
-      "recordings": [],
+      "recordings": [
+        {
+          "key": "xeno-canto/XC395991",
+          "author": "Samuel Jones",
+          "licence": "CC BY-NC-ND 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-nd/4.0/",
+          "sourceUrl": "https://xeno-canto.org/395991",
+          "aiGenerated": false,
+          "hosted": false,
+          "quality": "B",
+          "callType": "song"
+        }
+      ],
       "sources": [
         {
           "title": "Kemp A.C., Herholdt J.J., Whyte I. & Harrison J. (2001). Birds of the two largest national parks in South Africa: a method to generate estimates of population size for all species and assess their conservation ecology. S. Afr. J. Sci. 97: 393–403.",
@@ -12205,6 +12394,17 @@
           "hosted": false,
           "quality": "B",
           "callType": "call"
+        },
+        {
+          "key": "xeno-canto/XC288401",
+          "author": "Alan Collett",
+          "licence": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "sourceUrl": "https://xeno-canto.org/288401",
+          "aiGenerated": false,
+          "hosted": false,
+          "quality": "B",
+          "callType": "song"
         }
       ],
       "sources": [
@@ -12806,7 +13006,19 @@
           "hosted": false
         }
       ],
-      "recordings": [],
+      "recordings": [
+        {
+          "key": "xeno-canto/XC94807",
+          "author": "Martin St-Michel",
+          "licence": "CC BY-NC-ND 2.5",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-nd/2.5/",
+          "sourceUrl": "https://xeno-canto.org/94807",
+          "aiGenerated": false,
+          "hosted": false,
+          "quality": "B",
+          "callType": "call"
+        }
+      ],
       "sources": [
         {
           "title": "Kemp A.C., Herholdt J.J., Whyte I. & Harrison J. (2001). Birds of the two largest national parks in South Africa: a method to generate estimates of population size for all species and assess their conservation ecology. S. Afr. J. Sci. 97: 393–403.",
@@ -13914,14 +14126,14 @@
       ],
       "recordings": [
         {
-          "key": "xeno-canto/XC369789",
+          "key": "xeno-canto/XC369789-cleaned.mp3",
           "author": "W.J. Rossouw",
           "licence": "CC BY-NC-SA 4.0",
           "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
           "sourceUrl": "https://xeno-canto.org/369789",
           "aiGenerated": false,
-          "hosted": false,
           "quality": "C",
+          "modified": "Wind noise reduced (high-pass filter and noise reduction)",
           "callType": "call"
         }
       ],
@@ -15344,14 +15556,14 @@
           "callType": "song"
         },
         {
-          "key": "xeno-canto/XC390679",
-          "author": "Dawie de Swardt",
+          "key": "xeno-canto/XC292912",
+          "author": "Faansie Peacock",
           "licence": "CC BY-NC-SA 4.0",
           "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
-          "sourceUrl": "https://xeno-canto.org/390679",
+          "sourceUrl": "https://xeno-canto.org/292912",
           "aiGenerated": false,
           "hosted": false,
-          "quality": "B",
+          "quality": "A",
           "callType": "alarm"
         }
       ],
@@ -16916,14 +17128,36 @@
       ],
       "recordings": [
         {
-          "key": "xeno-canto/XC758044",
-          "author": "Nature sounds by Simply Birding",
-          "licence": "CC BY-NC-ND 4.0",
-          "licenceUrl": "https://creativecommons.org/licenses/by-nc-nd/4.0/",
-          "sourceUrl": "https://xeno-canto.org/758044",
+          "key": "xeno-canto/XC730910",
+          "author": "GABRIEL LEITE",
+          "licence": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "sourceUrl": "https://xeno-canto.org/730910",
           "aiGenerated": false,
           "hosted": false,
-          "quality": "A",
+          "quality": "C",
+          "callType": "call"
+        },
+        {
+          "key": "xeno-canto/XC422135",
+          "author": "Hans Groot",
+          "licence": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "sourceUrl": "https://xeno-canto.org/422135",
+          "aiGenerated": false,
+          "hosted": false,
+          "quality": "D",
+          "callType": "call"
+        },
+        {
+          "key": "xeno-canto/XC244201",
+          "author": "Mike Nelson",
+          "licence": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "sourceUrl": "https://xeno-canto.org/244201",
+          "aiGenerated": false,
+          "hosted": false,
+          "quality": "B",
           "callType": "call"
         }
       ],
@@ -17334,14 +17568,36 @@
       ],
       "recordings": [
         {
-          "key": "xeno-canto/XC280442",
-          "author": "Peter Boesman",
-          "licence": "CC BY-NC-ND 4.0",
-          "licenceUrl": "https://creativecommons.org/licenses/by-nc-nd/4.0/",
-          "sourceUrl": "https://xeno-canto.org/280442",
+          "key": "xeno-canto/XC589156",
+          "author": "Sun Madakan",
+          "licence": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "sourceUrl": "https://xeno-canto.org/589156",
           "aiGenerated": false,
           "hosted": false,
-          "quality": "A",
+          "quality": "B",
+          "callType": "call"
+        },
+        {
+          "key": "xeno-canto/XC597079",
+          "author": "Sun Madakan",
+          "licence": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "sourceUrl": "https://xeno-canto.org/597079",
+          "aiGenerated": false,
+          "hosted": false,
+          "quality": "C",
+          "callType": "call"
+        },
+        {
+          "key": "xeno-canto/XC597075",
+          "author": "Sun Madakan",
+          "licence": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "sourceUrl": "https://xeno-canto.org/597075",
+          "aiGenerated": false,
+          "hosted": false,
+          "quality": "C",
           "callType": "call"
         }
       ],
@@ -17812,14 +18068,14 @@
       ],
       "recordings": [
         {
-          "key": "xeno-canto/XC585195",
+          "key": "xeno-canto/XC585195-cleaned.mp3",
           "author": "Dries Van de Loock",
           "licence": "CC BY-NC-SA 4.0",
           "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
           "sourceUrl": "https://xeno-canto.org/585195",
           "aiGenerated": false,
-          "hosted": false,
           "quality": "C",
+          "modified": "Wind noise reduced (high-pass filter and noise reduction)",
           "callType": "call"
         }
       ],
@@ -18348,14 +18604,14 @@
       ],
       "recordings": [
         {
-          "key": "xeno-canto/XC688818",
+          "key": "xeno-canto/XC688818-cleaned.mp3",
           "author": "Ken Behrens",
           "licence": "CC BY-NC-SA 4.0",
           "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
           "sourceUrl": "https://xeno-canto.org/688818",
           "aiGenerated": false,
-          "hosted": false,
           "quality": "D",
+          "modified": "Wind noise reduced (high-pass filter and noise reduction)",
           "callType": "call"
         }
       ],
@@ -18593,7 +18849,19 @@
           "hosted": false
         }
       ],
-      "recordings": [],
+      "recordings": [
+        {
+          "key": "xeno-canto/XC649360",
+          "author": "Nature sounds by Simply Birding",
+          "licence": "CC BY-NC-ND 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-nd/4.0/",
+          "sourceUrl": "https://xeno-canto.org/649360",
+          "aiGenerated": false,
+          "hosted": false,
+          "quality": "A",
+          "callType": "call"
+        }
+      ],
       "sources": [
         {
           "title": "Kemp A.C., Herholdt J.J., Whyte I. & Harrison J. (2001). Birds of the two largest national parks in South Africa: a method to generate estimates of population size for all species and assess their conservation ecology. S. Afr. J. Sci. 97: 393–403.",
@@ -18646,6 +18914,28 @@
         }
       ],
       "recordings": [
+        {
+          "key": "xeno-canto/XC267474",
+          "author": "Andrew Spencer",
+          "licence": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "sourceUrl": "https://xeno-canto.org/267474",
+          "aiGenerated": false,
+          "hosted": false,
+          "quality": "A",
+          "callType": "call"
+        },
+        {
+          "key": "xeno-canto/XC585199",
+          "author": "Dries Van de Loock",
+          "licence": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "sourceUrl": "https://xeno-canto.org/585199",
+          "aiGenerated": false,
+          "hosted": false,
+          "quality": "B",
+          "callType": "call"
+        },
         {
           "key": "xeno-canto/XC267474",
           "author": "Andrew Spencer",
@@ -20275,7 +20565,19 @@
           "hosted": false
         }
       ],
-      "recordings": [],
+      "recordings": [
+        {
+          "key": "xeno-canto/XC509077",
+          "author": "Peter Boesman",
+          "licence": "CC BY-NC-ND 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-nd/4.0/",
+          "sourceUrl": "https://xeno-canto.org/509077",
+          "aiGenerated": false,
+          "hosted": false,
+          "quality": "A",
+          "callType": "call"
+        }
+      ],
       "sources": [
         {
           "title": "Kemp A.C., Herholdt J.J., Whyte I. & Harrison J. (2001). Birds of the two largest national parks in South Africa: a method to generate estimates of population size for all species and assess their conservation ecology. S. Afr. J. Sci. 97: 393–403.",
@@ -20450,6 +20752,17 @@
         }
       ],
       "recordings": [
+        {
+          "key": "xeno-canto/XC126343",
+          "author": "Sander Bot",
+          "licence": "CC BY-NC-SA 3.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/3.0/",
+          "sourceUrl": "https://xeno-canto.org/126343",
+          "aiGenerated": false,
+          "hosted": false,
+          "quality": "A",
+          "callType": "call"
+        },
         {
           "key": "xeno-canto/XC126343",
           "author": "Sander Bot",
@@ -22533,14 +22846,14 @@
       ],
       "recordings": [
         {
-          "key": "xeno-canto/XC467724",
-          "author": "Dawie de Swardt",
+          "key": "xeno-canto/XC1077437",
+          "author": "Niall Perrins",
           "licence": "CC BY-NC-SA 4.0",
           "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
-          "sourceUrl": "https://xeno-canto.org/467724",
+          "sourceUrl": "https://xeno-canto.org/1077437",
           "aiGenerated": false,
           "hosted": false,
-          "quality": "B",
+          "quality": "A",
           "callType": "call"
         }
       ],

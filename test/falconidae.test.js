@@ -1,6 +1,6 @@
 import assert from 'node:assert/strict'
 import { test } from 'node:test'
-import { readJson } from './helpers.js'
+import { playedRecordings, readJson } from './helpers.js'
 
 test('falcons and kestrels are sourced without changing populations', async () => {
   const family = await readJson('data/family/falconidae.json')
@@ -49,7 +49,12 @@ test('falcons and kestrels are sourced without changing populations', async () =
   }
   const dick = await readJson('data/species/falco-dickinsoni.json')
   assert.equal(dick.calls[0].recordings.length, 0)
-  assert.deepEqual(overlay.species['falco-dickinsoni'].calls[0].quality, {})
+  assert.deepEqual(
+    playedRecordings(overlay, 'falco-dickinsoni', 0, dick.calls[0]).map(
+      (item) => [item.key, item.quality],
+    ),
+    [['xeno-canto/XC94807', 'B']],
+  )
   const lanner = await readJson('data/species/falco-biarmicus.json')
   assert.equal(lanner.monthsPresent.length, 12)
   const sum =

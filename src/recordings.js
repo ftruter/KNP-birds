@@ -148,11 +148,15 @@ const playableRank = (item) => {
   return licence && !licenceForbidsDerivatives(licence.license) ? 1 : 0
 }
 
+/**
+ * A file the site can play ranks ahead of an ND file, which is only linked.
+ * Grade decides within each of those two groups.
+ */
 export const compareCatalogue = (a, b, slotType) => {
-  const quality = (QUALITY_RANK[b?.q] || 0) - (QUALITY_RANK[a?.q] || 0)
-  if (quality) return quality
   const playable = playableRank(b) - playableRank(a)
   if (playable) return playable
+  const quality = (QUALITY_RANK[b?.q] || 0) - (QUALITY_RANK[a?.q] || 0)
+  if (quality) return quality
   const type = typeScore(slotType, b?.type) - typeScore(slotType, a?.type)
   if (type) return type
   const region = regionScore(b) - regionScore(a)
@@ -197,10 +201,16 @@ const withQuality = (recording, byId) => {
     : recording
 }
 
+const canPlay = (recording) =>
+  Boolean(recording?.license) && !licenceForbidsDerivatives(recording.license)
+
 /**
  * Keep a slot whose best recording is already grade A.
  * Replace it only when the catalogue has a strictly higher grade.
- * An empty slot takes the best accepted recording.
+ * A slot that can already be played is never swapped for an ND file.
+ * An empty slot takes the best accepted recording, playable first.
+ * `permission` is the best ND recording graded above the one kept or chosen:
+ * the file worth asking its recordist to let the site play.
  */
 export const decideSlot = (call, byId, candidates) => {
   const existing = Array.isArray(call?.recordings) ? call.recordings : []
@@ -210,16 +220,34 @@ export const decideSlot = (call, byId, candidates) => {
     0,
   )
   if (best >= QUALITY_RANK.A) return { action: 'kept', recordings: annotated }
-  const pick = bestCatalogueRecording(candidates, call?.type)
+  const list = Array.isArray(candidates) ? candidates : []
+  const higher = list.filter((item) => (QUALITY_RANK[item?.q] || 0) > best)
+  const playableNow = annotated.some(canPlay)
+  const eligible = playableNow
+    ? higher.filter((item) => playableRank(item))
+    : higher
+  const pick = bestCatalogueRecording(eligible, call?.type)
   const pickRank = QUALITY_RANK[pick?.quality] || 0
-  if (pick && pickRank > best)
+  const swap = Boolean(pick) && pickRank > best
+  const chosenRank = swap ? pickRank : best
+  const permission = bestCatalogueRecording(
+    list.filter(
+      (item) =>
+        !playableRank(item) && (QUALITY_RANK[item?.q] || 0) > chosenRank,
+    ),
+    call?.type,
+  )
+  const extra = permission ? { permission } : {}
+  if (swap)
     return {
       action: existing.length ? 'swapped' : 'added',
       recordings: [pick],
+      ...extra,
     }
   return {
     action: existing.length ? 'kept' : 'none',
     recordings: annotated,
+    ...extra,
   }
 }
 
