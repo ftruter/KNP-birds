@@ -1488,6 +1488,16 @@
         }
       ]
     },
+    "curruca-communis": {
+      "calls": [
+        {
+          "index": 0,
+          "quality": {
+            "xeno-canto/XC931937": "A"
+          }
+        }
+      ]
+    },
     "cypsiurus-parvus": {
       "calls": [
         {
@@ -2808,6 +2818,16 @@
           "index": 0,
           "quality": {
             "xeno-canto/XC845920": "A"
+          }
+        }
+      ]
+    },
+    "sylvia-borin": {
+      "calls": [
+        {
+          "index": 0,
+          "quality": {
+            "xeno-canto/XC904341": "A"
           }
         }
       ]

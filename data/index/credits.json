@@ -10269,6 +10269,49 @@
       ]
     },
     {
+      "slug": "curruca-communis",
+      "scientificName": "Curruca communis",
+      "commonName": "Common Whitethroat",
+      "images": [
+        {
+          "key": "curruca-communis/side.jpg",
+          "author": "Анатолий Стрила",
+          "licence": "CC BY-NC 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+          "sourceUrl": "https://www.inaturalist.org/observations/359960479",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ],
+      "recordings": [
+        {
+          "key": "xeno-canto/XC931937",
+          "author": "Stanislas Wroza",
+          "licence": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "sourceUrl": "https://xeno-canto.org/931937",
+          "aiGenerated": false,
+          "hosted": false,
+          "quality": "A",
+          "callType": "call"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Common whitethroat",
+          "url": "https://en.wikipedia.org/wiki/Common_whitethroat",
+          "publisher": "Wikipedia",
+          "year": null
+        },
+        {
+          "title": "Avibase bird checklist — Kruger National Park",
+          "url": "https://avibase.bsc-eoc.org/checklist.jsp?region=ZA000003",
+          "publisher": "Avibase",
+          "year": null
+        }
+      ]
+    },
+    {
       "slug": "cursorius-temminckii",
       "scientificName": "Cursorius temminckii",
       "commonName": "Temminck’s Courser",
@@ -22423,14 +22466,48 @@
       "slug": "sylvia-borin",
       "scientificName": "Sylvia borin",
       "commonName": "Garden Warbler",
-      "images": [],
-      "recordings": [],
+      "images": [
+        {
+          "key": "sylvia-borin/side.jpg",
+          "author": "Maryse",
+          "licence": "CC BY-NC 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+          "sourceUrl": "https://www.inaturalist.org/observations/130591743",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ],
+      "recordings": [
+        {
+          "key": "xeno-canto/XC904341",
+          "author": "Martin Billard",
+          "licence": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "sourceUrl": "https://xeno-canto.org/904341",
+          "aiGenerated": false,
+          "hosted": false,
+          "quality": "A",
+          "callType": "song"
+        }
+      ],
       "sources": [
         {
           "title": "Kemp A.C., Herholdt J.J., Whyte I. & Harrison J. (2001). Birds of the two largest national parks in South Africa: a method to generate estimates of population size for all species and assess their conservation ecology. S. Afr. J. Sci. 97: 393–403.",
           "url": "https://journals.co.za/doi/pdf/10.10520/EJC97367",
           "publisher": "South African Journal of Science",
           "year": 2001
+        },
+        {
+          "title": "Garden Warbler",
+          "url": "https://newmansbirds.com/birds/garden-warbler/",
+          "publisher": "Newman's Birds",
+          "year": 2026
+        },
+        {
+          "title": "Avibase bird checklist — Kruger National Park",
+          "url": "https://avibase.bsc-eoc.org/checklist.jsp?region=ZA000003",
+          "publisher": "Avibase",
+          "year": null
         }
       ]
     },
