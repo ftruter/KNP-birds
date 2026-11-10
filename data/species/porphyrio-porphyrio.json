@@ -7,8 +7,42 @@
     "af": "Grootkoningriethaan"
   },
   "family": "rallidae",
-  "summary": "The details for this species have not been published yet.",
-  "sampleData": true,
+  "size": {
+    "lengthCm": {
+      "min": 46,
+      "max": 46
+    },
+    "note": "Newman's Birds gives 46 cm."
+  },
+  "habitat": "Singly or in pairs in marshes and the vegetation around inland waters, especially sewage ponds. It walks on mudflats and reed-bed fringes and can swim.",
+  "summary": "A common resident on Newman’s African Swamphen page. Large and bulky, purple-blue and dark green. The bill and frontal shield are entirely red and the legs are pink. It is larger than Allen’s Gallinule. The immature is duller and brownish, with red-brown legs. The call is a deep explosive bubbling, varied with shrieks and groans. Newman’s page uses Porphyrio madagascariensis. This list keeps Porphyrio porphyrio and the English name Purple Swamphen. The Kemp name Purple Gallinule and the code NB were left unchanged.",
+  "sampleData": false,
+  "similar": [
+    {
+      "slug": "porphyrio-alleni",
+      "note": "Allen’s Gallinule is smaller, with a shield that is not entirely red. African Swamphen has a red shield and bill and pink legs."
+    }
+  ],
+  "sources": [
+    {
+      "title": "African Swamphen",
+      "url": "https://newmansbirds.com/birds/african-swamphen/",
+      "publisher": "Newman's Birds",
+      "year": 2026
+    },
+    {
+      "title": "Avibase bird checklist — Kruger National Park",
+      "url": "https://avibase.bsc-eoc.org/checklist.jsp?region=ZA000003",
+      "publisher": "Avibase",
+      "year": null
+    },
+    {
+      "title": "Kemp A.C., Herholdt J.J., Whyte I. & Harrison J. (2001). Birds of the two largest national parks in South Africa: a method to generate estimates of population size for all species and assess their conservation ecology. S. Afr. J. Sci. 97: 393–403.",
+      "url": "https://journals.co.za/doi/pdf/10.10520/EJC97367",
+      "publisher": "South African Journal of Science",
+      "year": 2001
+    }
+  ],
   "population": {
     "estimate": {
       "low": 8,
@@ -35,8 +69,193 @@
     },
     "tierApplied": "D"
   },
-  "variants": [],
-  "viewNotes": [],
-  "calls": [],
-  "images": []
+  "variants": [
+    {
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "marks": {
+        "bill": {
+          "colour": "red",
+          "shape": null
+        },
+        "eye": {
+          "iris": null,
+          "ring": null
+        },
+        "legs": {
+          "colour": "pink"
+        },
+        "head": {
+          "crown": "blue",
+          "face": null,
+          "throat": null,
+          "pattern": "Head blue. Bill and frontal shield entirely red."
+        },
+        "upperparts": {
+          "back": "green",
+          "rump": null,
+          "pattern": "Back, tail and wings green. The description says dark green."
+        },
+        "underparts": {
+          "breast": "blue",
+          "belly": "blue",
+          "pattern": "Predominantly purple-blue."
+        },
+        "wings": {
+          "above": null,
+          "below": null,
+          "pattern": "Wings green."
+        },
+        "tail": {
+          "colour": "green",
+          "shape": null
+        }
+      }
+    },
+    {
+      "age": "immature",
+      "sex": "any",
+      "season": "any",
+      "marks": {
+        "bill": {
+          "colour": null,
+          "shape": null
+        },
+        "eye": {
+          "iris": null,
+          "ring": null
+        },
+        "legs": {
+          "colour": "brown"
+        },
+        "head": {
+          "crown": null,
+          "face": null,
+          "throat": null,
+          "pattern": "Duller and brownish, with red-brown legs."
+        },
+        "upperparts": {
+          "back": "brown",
+          "rump": null,
+          "pattern": null
+        },
+        "underparts": {
+          "breast": null,
+          "belly": null,
+          "pattern": null
+        },
+        "wings": {
+          "above": null,
+          "below": null,
+          "pattern": null
+        },
+        "tail": {
+          "colour": null,
+          "shape": null
+        }
+      }
+    }
+  ],
+  "viewNotes": [
+    {
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Purple-blue underparts, green back and wings, red bill and shield, and pink legs."
+    },
+    {
+      "view": "perched-front",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Blue head and an entirely red bill and shield."
+    },
+    {
+      "view": "perched-back",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Green back, wings and tail."
+    },
+    {
+      "view": "flight-above",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "A flight pattern was not described."
+    },
+    {
+      "view": "flight-below",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "The underwing was not described."
+    },
+    {
+      "view": "perched-side",
+      "age": "immature",
+      "sex": "any",
+      "season": "any",
+      "note": "Duller and brownish, with red-brown legs."
+    }
+  ],
+  "calls": [
+    {
+      "sex": "any",
+      "type": "call",
+      "description": "A deep, explosive bubbling call, varied with shrieks and groans. Grade A call from Strandfontein Sewage Works, Cape Town, with another species in the background. The filename records a 1500 Hz high-pass and an 800 Hz low-pass. The filename is XC1183526-20260920_STRNDF_CPolicarpo_AKaramitsos_MicroMicParab_083230_SLE_1500HP_800LP_-3db_ASwamphen.mp3.",
+      "recordings": [
+        {
+          "key": "xeno-canto/XC1183526",
+          "source": "https://xeno-canto.org/1183526",
+          "fileUrl": "https://xeno-canto.org/sounds/uploaded/YSGTQVRQZI/XC1183526-20260920_STRNDF_CPolicarpo_AKaramitsos_MicroMicParab_083230_SLE_1500HP_800LP_-3db_ASwamphen.mp3",
+          "author": "African Bioacoustics Community",
+          "license": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ]
+    }
+  ],
+  "images": [
+    {
+      "key": "porphyrio-porphyrio/side.jpg",
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "source": "https://www.inaturalist.org/observations/202040962",
+      "fileUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/356756082/large.jpg",
+      "author": "Duncan McKenzie",
+      "license": "CC BY-NC 4.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+      "aiGenerated": false,
+      "hosted": false,
+      "alt": "African Swamphen in the Mopani District, Kruger, distant in reeds, with a red bill",
+      "caption": "African Swamphen in the Mopani District, Kruger, distant in reeds, with a red bill and blue underparts."
+    }
+  ],
+  "research": {
+    "confidence": "medium",
+    "needsReview": true,
+    "note": "Newman calls African Swamphen a common resident, and Avibase lists Porphyrio madagascariensis without marking it rare, so all twelve months are listed. This list keeps the name Porphyrio porphyrio. The grade A call is from Cape Town and the filename records a narrow filter. The Kruger photograph is distant. The Kemp name Purple Gallinule and the code NB were left unchanged."
+  },
+  "status": "resident",
+  "monthsPresent": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+  ]
 }
