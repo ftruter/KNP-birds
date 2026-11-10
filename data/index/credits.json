@@ -692,7 +692,17 @@
       "slug": "aenigmatolimnas-marginalis",
       "scientificName": "Aenigmatolimnas marginalis",
       "commonName": "Striped Crake",
-      "images": [],
+      "images": [
+        {
+          "key": "aenigmatolimnas-marginalis/side.jpg",
+          "author": "Stefan Wolmarans",
+          "licence": "CC BY 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by/4.0/",
+          "sourceUrl": "https://www.inaturalist.org/observations/257235536",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ],
       "recordings": [
         {
           "key": "xeno-canto/XC355772",
