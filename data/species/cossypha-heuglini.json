@@ -1,14 +1,131 @@
 {
+  "size": {
+    "lengthCm": {
+      "min": 19,
+      "max": 20
+    },
+    "note": "Newman's Birds gives 19–20 cm."
+  },
+  "habitat": "Dense thickets in riverine forest, at the base of densely wooded hills, and in termite mounds.",
+  "summary": "A common localised resident. Deep orange underparts, with a black cap and mask set off by a bold white eyebrow. The immature is spotted. The song is a series of melodious phrases that build to a crescendo, mostly at dawn and dusk. The Kemp name Heuglin’s Robin and the code RB were left unchanged.",
+  "status": "resident",
+  "monthsPresent": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+  ],
+  "variants": [
+    {
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "marks": {
+        "bill": {
+          "colour": null,
+          "shape": null
+        },
+        "eye": {
+          "iris": null,
+          "ring": null
+        },
+        "legs": {
+          "colour": null
+        },
+        "head": {
+          "crown": "black",
+          "face": null,
+          "throat": null,
+          "pattern": "Black cap and mask, with a bold white eyebrow."
+        },
+        "upperparts": {
+          "back": null,
+          "rump": null
+        },
+        "underparts": {
+          "breast": "orange",
+          "belly": "orange",
+          "pattern": "Entirely deep orange."
+        },
+        "wings": {
+          "above": null,
+          "below": null
+        },
+        "tail": {
+          "colour": null,
+          "shape": null
+        }
+      }
+    }
+  ],
+  "viewNotes": [
+    {
+      "view": "perched-front",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Black cap and mask, a white eyebrow, and deep orange underparts."
+    }
+  ],
+  "calls": [
+    {
+      "sex": "any",
+      "type": "song",
+      "description": "Melodious phrases repeated up to about 16 times, starting quietly and building. The grade A song is from near Hazyview. The filename is XC365336-Robin Chat Heuglins_Hazyview_150813_B_edit.mp3.",
+      "recordings": [
+        {
+          "key": "xeno-canto/XC365336",
+          "source": "https://xeno-canto.org/365336",
+          "fileUrl": "https://xeno-canto.org/sounds/uploaded/TWAAJJHMEH/XC365336-Robin%20Chat%20Heuglins_Hazyview_150813_B_edit.mp3",
+          "author": "Faansie Peacock",
+          "license": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ]
+    }
+  ],
+  "images": [
+    {
+      "key": "cossypha-heuglini/side.jpg",
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "source": "https://www.inaturalist.org/observations/333996046",
+      "fileUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/606428577/large.jpg",
+      "author": "Gigi Laidler",
+      "license": "CC BY-NC 4.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+      "aiGenerated": false,
+      "hosted": false,
+      "alt": "White-browed Robin-Chat in Kruger",
+      "caption": "White-browed Robin-Chat in Kruger."
+    }
+  ],
+  "research": {
+    "confidence": "medium",
+    "needsReview": true,
+    "note": "Newman calls it a common localised resident, and Avibase does not mark it rare, so all twelve months are listed. The grade A song is from near Hazyview. The Kemp name Heuglin’s Robin and the code RB were left unchanged."
+  },
   "kind": "species",
   "slug": "cossypha-heuglini",
+  "family": "muscicapidae",
+  "sampleData": false,
   "scientificName": "Cossypha heuglini",
   "commonNames": {
     "en": "White-browed Robin-chat",
     "af": "Heuglinjanfrederik"
   },
-  "family": "muscicapidae",
-  "summary": "The details for this species have not been published yet.",
-  "sampleData": true,
   "population": {
     "estimate": {
       "low": 4096,
@@ -35,8 +152,24 @@
     },
     "tierApplied": "D"
   },
-  "variants": [],
-  "viewNotes": [],
-  "calls": [],
-  "images": []
+  "sources": [
+    {
+      "title": "White-browed Robin-Chat",
+      "url": "https://newmansbirds.com/birds/white-browed-robin-chat/",
+      "publisher": "Newman's Birds",
+      "year": 2026
+    },
+    {
+      "title": "Avibase bird checklist — Kruger National Park",
+      "url": "https://avibase.bsc-eoc.org/checklist.jsp?region=ZA000003",
+      "publisher": "Avibase",
+      "year": null
+    },
+    {
+      "title": "Kemp A.C., Herholdt J.J., Whyte I. & Harrison J. (2001). Birds of the two largest national parks in South Africa: a method to generate estimates of population size for all species and assess their conservation ecology. S. Afr. J. Sci. 97: 393–403.",
+      "url": "https://journals.co.za/doi/pdf/10.10520/EJC97367",
+      "publisher": "South African Journal of Science",
+      "year": 2001
+    }
+  ]
 }

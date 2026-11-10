@@ -1,14 +1,137 @@
 {
+  "size": {
+    "lengthCm": {
+      "min": 14,
+      "max": 14
+    },
+    "note": "Newman's Birds gives 14 cm."
+  },
+  "habitat": "Usually in pairs in open grassland near marshes, vleis, dams, streams and roadsides, perched on low shrubs or fences.",
+  "summary": "A common resident. At rest the male is striking, but the account does not name his colours. The female shows white wing patches in flight. Both sexes have a white rump. The call is a grating tsak, tsak, and there is a short shrill song. Seasonal in some regions. The Kemp name Stonechat and the code NB were left unchanged.",
+  "status": "resident",
+  "monthsPresent": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+  ],
+  "variants": [
+    {
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "marks": {
+        "bill": {
+          "colour": null,
+          "shape": null
+        },
+        "eye": {
+          "iris": null,
+          "ring": null
+        },
+        "legs": {
+          "colour": null
+        },
+        "head": {
+          "crown": null,
+          "face": null,
+          "throat": null
+        },
+        "upperparts": {
+          "back": null,
+          "rump": "white"
+        },
+        "underparts": {
+          "breast": null,
+          "belly": null
+        },
+        "wings": {
+          "above": null,
+          "below": null,
+          "pattern": "The female shows white wing patches in flight."
+        },
+        "tail": {
+          "colour": null,
+          "shape": null
+        }
+      }
+    }
+  ],
+  "viewNotes": [
+    {
+      "view": "perched-back",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "White rump in both sexes."
+    },
+    {
+      "view": "flight-above",
+      "age": "adult",
+      "sex": "female",
+      "season": "any",
+      "note": "White wing patches."
+    }
+  ],
+  "calls": [
+    {
+      "sex": "any",
+      "type": "call",
+      "description": "A grating tsak, tsak, usually after a short sharp whistle. Also a short shrill warbling song. The grade A call is from Reddersburg. The filename is XC828513-StonechatAfrican_VaalkraalReddersburg_20230909.mp3.",
+      "recordings": [
+        {
+          "key": "xeno-canto/XC828513",
+          "source": "https://xeno-canto.org/828513",
+          "fileUrl": "https://xeno-canto.org/sounds/uploaded/JDCTKFMBKV/XC828513-StonechatAfrican_VaalkraalReddersburg_20230909_-29.5152_26.2774.mp3",
+          "author": "Dawie de Swardt",
+          "license": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ]
+    }
+  ],
+  "images": [
+    {
+      "key": "saxicola-torquatus/side.jpg",
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "source": "https://www.inaturalist.org/observations/161803187",
+      "fileUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/279699914/large.jpg",
+      "author": "Hendrik McCarthy",
+      "license": "CC BY-NC 4.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+      "aiGenerated": false,
+      "hosted": false,
+      "alt": "African Stonechat in Kruger, Mopani",
+      "caption": "African Stonechat in Kruger, Mopani."
+    }
+  ],
+  "research": {
+    "confidence": "medium",
+    "needsReview": true,
+    "note": "Newman calls it a common resident, and Avibase does not mark it rare, so all twelve months are listed. The male colours are not named. It is seasonal in some regions, without named months. The grade A call is from the Free State. The Kemp name Stonechat and the code NB were left unchanged."
+  },
   "kind": "species",
   "slug": "saxicola-torquatus",
+  "family": "muscicapidae",
+  "sampleData": false,
   "scientificName": "Saxicola torquatus",
   "commonNames": {
     "en": "African Stonechat",
     "af": "Gewone Bontrokkie"
   },
-  "family": "muscicapidae",
-  "summary": "The details for this species have not been published yet.",
-  "sampleData": true,
   "population": {
     "estimate": {
       "low": 256,
@@ -35,8 +158,24 @@
     },
     "tierApplied": "D"
   },
-  "variants": [],
-  "viewNotes": [],
-  "calls": [],
-  "images": []
+  "sources": [
+    {
+      "title": "African Stonechat",
+      "url": "https://newmansbirds.com/birds/african-stonechat/",
+      "publisher": "Newman's Birds",
+      "year": 2026
+    },
+    {
+      "title": "Avibase bird checklist — Kruger National Park",
+      "url": "https://avibase.bsc-eoc.org/checklist.jsp?region=ZA000003",
+      "publisher": "Avibase",
+      "year": null
+    },
+    {
+      "title": "Kemp A.C., Herholdt J.J., Whyte I. & Harrison J. (2001). Birds of the two largest national parks in South Africa: a method to generate estimates of population size for all species and assess their conservation ecology. S. Afr. J. Sci. 97: 393–403.",
+      "url": "https://journals.co.za/doi/pdf/10.10520/EJC97367",
+      "publisher": "South African Journal of Science",
+      "year": 2001
+    }
+  ]
 }

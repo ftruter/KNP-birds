@@ -1,14 +1,178 @@
 {
+  "size": {
+    "lengthCm": {
+      "min": 20,
+      "max": 20
+    },
+    "note": "Newman's Birds gives 20 cm."
+  },
+  "habitat": "Usually in pairs in bush country, grassy Karoo, fynbos and suburbia. It perches on a branch or post and flies to the ground.",
+  "summary": "A common endemic resident. The male is black, and the female is duller grey-brown. Both have prominent white windows in the tail and a white wing-bar that stops halfway along the folded wing. The song is a weak swee-swee-ur. The Kemp name Fiscal Flycatcher and the code NB were left unchanged.",
+  "status": "resident",
+  "monthsPresent": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+  ],
+  "variants": [
+    {
+      "age": "adult",
+      "sex": "male",
+      "season": "any",
+      "marks": {
+        "bill": {
+          "colour": null,
+          "shape": null
+        },
+        "eye": {
+          "iris": null,
+          "ring": null
+        },
+        "legs": {
+          "colour": null
+        },
+        "head": {
+          "crown": null,
+          "face": null,
+          "throat": null
+        },
+        "upperparts": {
+          "back": "black",
+          "rump": null
+        },
+        "underparts": {
+          "breast": null,
+          "belly": null
+        },
+        "wings": {
+          "above": null,
+          "below": null,
+          "pattern": "White wing-bar extending halfway along the folded wing, not to the shoulder."
+        },
+        "tail": {
+          "colour": null,
+          "shape": "Prominent white windows."
+        }
+      }
+    },
+    {
+      "age": "adult",
+      "sex": "female",
+      "season": "any",
+      "marks": {
+        "bill": {
+          "colour": null,
+          "shape": null
+        },
+        "eye": {
+          "iris": null,
+          "ring": null
+        },
+        "legs": {
+          "colour": null
+        },
+        "head": {
+          "crown": null,
+          "face": null,
+          "throat": null
+        },
+        "upperparts": {
+          "back": null,
+          "rump": null,
+          "pattern": "Duller grey-brown, not black."
+        },
+        "underparts": {
+          "breast": null,
+          "belly": null
+        },
+        "wings": {
+          "above": null,
+          "below": null,
+          "pattern": "White wing-bar extending halfway along the folded wing."
+        },
+        "tail": {
+          "colour": null,
+          "shape": "Prominent white windows."
+        }
+      }
+    }
+  ],
+  "viewNotes": [
+    {
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "male",
+      "season": "any",
+      "note": "Black, with a white wing-bar and white windows in the tail."
+    },
+    {
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "female",
+      "season": "any",
+      "note": "Duller grey-brown than the male."
+    }
+  ],
+  "calls": [
+    {
+      "sex": "any",
+      "type": "song",
+      "description": "A sibilant weak song, swee-swee-ur, often in a long sequence. The grade A song is from Cradock. The filename is XC287453-fiscal flycatcher2.mp3.",
+      "recordings": [
+        {
+          "key": "xeno-canto/XC287453",
+          "source": "https://xeno-canto.org/287453",
+          "fileUrl": "https://xeno-canto.org/sounds/uploaded/SGLTZLDXYI/XC287453-fiscal%20flycatcher2.mp3",
+          "author": "Lynette Rudman",
+          "license": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ]
+    }
+  ],
+  "images": [
+    {
+      "key": "sigelus-silens/side.jpg",
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "source": "https://www.inaturalist.org/observations/234291410",
+      "fileUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/416487095/large.jpeg",
+      "author": "jandutoit",
+      "license": "CC BY-NC 4.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+      "aiGenerated": false,
+      "hosted": false,
+      "alt": "Fiscal Flycatcher in Kruger, Ehlanzeni",
+      "caption": "Fiscal Flycatcher in Kruger, Ehlanzeni."
+    }
+  ],
+  "research": {
+    "confidence": "medium",
+    "needsReview": true,
+    "note": "Newman calls it a common endemic resident, and Avibase does not mark it rare, so all twelve months are listed. Grey-brown is not a colour name, so the female upperpart colour is left unset. The grade A song is from the Eastern Cape. The Kemp name Fiscal Flycatcher and the code NB were left unchanged."
+  },
   "kind": "species",
   "slug": "sigelus-silens",
+  "family": "muscicapidae",
+  "sampleData": false,
   "scientificName": "Sigelus silens",
   "commonNames": {
     "en": "Fiscal Flycatcher",
     "af": "Fiskaalvlieëvanger"
   },
-  "family": "muscicapidae",
-  "summary": "The details for this species have not been published yet.",
-  "sampleData": true,
   "population": {
     "estimate": {
       "low": 4,
@@ -35,8 +199,24 @@
     },
     "tierApplied": "D"
   },
-  "variants": [],
-  "viewNotes": [],
-  "calls": [],
-  "images": []
+  "sources": [
+    {
+      "title": "Fiscal Flycatcher",
+      "url": "https://newmansbirds.com/birds/fiscal-flycatcher/",
+      "publisher": "Newman's Birds",
+      "year": 2026
+    },
+    {
+      "title": "Avibase bird checklist — Kruger National Park",
+      "url": "https://avibase.bsc-eoc.org/checklist.jsp?region=ZA000003",
+      "publisher": "Avibase",
+      "year": null
+    },
+    {
+      "title": "Kemp A.C., Herholdt J.J., Whyte I. & Harrison J. (2001). Birds of the two largest national parks in South Africa: a method to generate estimates of population size for all species and assess their conservation ecology. S. Afr. J. Sci. 97: 393–403.",
+      "url": "https://journals.co.za/doi/pdf/10.10520/EJC97367",
+      "publisher": "South African Journal of Science",
+      "year": 2001
+    }
+  ]
 }

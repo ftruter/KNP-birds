@@ -1,14 +1,125 @@
 {
+  "size": {
+    "lengthCm": {
+      "min": 18,
+      "max": 18
+    },
+    "note": "Newman's Birds gives 18 cm."
+  },
+  "habitat": "Forest fringes, riverine bush, bush and rock on heath-covered hillsides, and gardens. A winter visitor to eastern coastal districts.",
+  "summary": "A common resident. White eyebrows, an orange upper breast, and greyish underparts. In flight it shows orange tail feathers and an orange back. The song often includes Jan-Frederik, and the alarm is a growling wur-da-wur. Avibase marks it rare, so the months are left unset. The Kemp name Cape Robin and the code NB were left unchanged.",
+  "status": "resident",
+  "variants": [
+    {
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "marks": {
+        "bill": {
+          "colour": null,
+          "shape": null
+        },
+        "eye": {
+          "iris": null,
+          "ring": null
+        },
+        "legs": {
+          "colour": null
+        },
+        "head": {
+          "crown": null,
+          "face": null,
+          "throat": null,
+          "pattern": "White eyebrows."
+        },
+        "upperparts": {
+          "back": null,
+          "rump": null,
+          "pattern": "Orange back in flight."
+        },
+        "underparts": {
+          "breast": "orange",
+          "belly": null,
+          "pattern": "Greyish underparts below the orange upper breast."
+        },
+        "wings": {
+          "above": null,
+          "below": null
+        },
+        "tail": {
+          "colour": "orange",
+          "shape": null
+        }
+      }
+    }
+  ],
+  "viewNotes": [
+    {
+      "view": "perched-front",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "White eyebrows and an orange upper breast."
+    },
+    {
+      "view": "flight-above",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Orange tail feathers and an orange back."
+    }
+  ],
+  "calls": [
+    {
+      "sex": "any",
+      "type": "song",
+      "description": "A continuing song, often with the phrase 'Jan-Frederik'. The alarm is a low growling 'wur-da-wur'. The grade A song is from Cape Town. The filename does not name the species.",
+      "recordings": [
+        {
+          "key": "xeno-canto/XC1049112",
+          "source": "https://xeno-canto.org/1049112",
+          "fileUrl": "https://xeno-canto.org/sounds/uploaded/YSGTQVRQZI/XC1049112-20251015_KBG_AKaramitsos_A003C199_2510150C_CXA60_SLE_250HzHP_-3dBNORM.mp3",
+          "author": "African Bioacoustics Community",
+          "license": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ]
+    }
+  ],
+  "images": [
+    {
+      "key": "dessonornis-caffer/side.jpg",
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "source": "https://www.inaturalist.org/observations/33685451",
+      "fileUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/52929547/large.jpeg",
+      "author": "Russ Hoverman",
+      "license": "CC BY-NC 4.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+      "aiGenerated": false,
+      "hosted": false,
+      "alt": "Cape Robin-Chat in Kruger, Ehlanzeni",
+      "caption": "Cape Robin-Chat in Kruger, Ehlanzeni."
+    }
+  ],
+  "research": {
+    "confidence": "medium",
+    "needsReview": true,
+    "note": "Newman calls it a common resident and a winter visitor to eastern coastal districts. Avibase marks Cape Robin-Chat rare, so the months are left unset. Greyish is not a colour name. The grade A song is from Cape Town and the filename does not name the species. The Kemp name Cape Robin and the code NB were left unchanged."
+  },
   "kind": "species",
   "slug": "dessonornis-caffer",
+  "family": "muscicapidae",
+  "sampleData": false,
   "scientificName": "Dessonornis caffer",
   "commonNames": {
     "en": "Cape Robin-chat",
     "af": "Gewone Janfrederik"
   },
-  "family": "muscicapidae",
-  "summary": "The details for this species have not been published yet.",
-  "sampleData": true,
   "population": {
     "estimate": {
       "low": 32,
@@ -35,8 +146,24 @@
     },
     "tierApplied": "D"
   },
-  "variants": [],
-  "viewNotes": [],
-  "calls": [],
-  "images": []
+  "sources": [
+    {
+      "title": "Cape Robin-Chat",
+      "url": "https://newmansbirds.com/birds/cape-robin-chat/",
+      "publisher": "Newman's Birds",
+      "year": 2026
+    },
+    {
+      "title": "Avibase bird checklist — Kruger National Park",
+      "url": "https://avibase.bsc-eoc.org/checklist.jsp?region=ZA000003",
+      "publisher": "Avibase",
+      "year": null
+    },
+    {
+      "title": "Kemp A.C., Herholdt J.J., Whyte I. & Harrison J. (2001). Birds of the two largest national parks in South Africa: a method to generate estimates of population size for all species and assess their conservation ecology. S. Afr. J. Sci. 97: 393–403.",
+      "url": "https://journals.co.za/doi/pdf/10.10520/EJC97367",
+      "publisher": "South African Journal of Science",
+      "year": 2001
+    }
+  ]
 }

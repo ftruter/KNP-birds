@@ -1,14 +1,122 @@
 {
+  "habitat": "Subtropical dry or moist forest in Eswatini, Mozambique and South Africa.",
+  "summary": "Newman's Birds has no page, and the Wikipedia account does not describe the plumage, voice or length. It lives in dry or moist forest. Avibase does not mark it rare, so all twelve months are listed. The Kemp name Brown Robin and the code NB were left unchanged.",
+  "status": "resident",
+  "monthsPresent": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+  ],
+  "variants": [
+    {
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "marks": {
+        "bill": {
+          "colour": null,
+          "shape": null
+        },
+        "eye": {
+          "iris": null,
+          "ring": null
+        },
+        "legs": {
+          "colour": null
+        },
+        "head": {
+          "crown": null,
+          "face": null,
+          "throat": null
+        },
+        "upperparts": {
+          "back": null,
+          "rump": null
+        },
+        "underparts": {
+          "breast": null,
+          "belly": null
+        },
+        "wings": {
+          "above": null,
+          "below": null
+        },
+        "tail": {
+          "colour": null,
+          "shape": null
+        }
+      }
+    }
+  ],
+  "viewNotes": [
+    {
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "The plumage is not described in the sources used."
+    }
+  ],
+  "calls": [
+    {
+      "sex": "any",
+      "type": "alarm",
+      "description": "The sources used do not describe the voice. The grade A file is an alarm call from Port Alfred. The filename is XC323553-Brown Scrub Robin alarm xc (2).mp3.",
+      "recordings": [
+        {
+          "key": "xeno-canto/XC323553",
+          "source": "https://xeno-canto.org/323553",
+          "fileUrl": "https://xeno-canto.org/sounds/uploaded/GQMCPIVNXX/XC323553-Brown%20Scrub%20Robin%20alarm%20xc%20%282%29.mp3",
+          "author": "Tim Cockcroft",
+          "license": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ]
+    }
+  ],
+  "images": [
+    {
+      "key": "tychaedon-signata/side.jpg",
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "source": "https://www.inaturalist.org/observations/11226648",
+      "fileUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/15930078/large.jpg",
+      "author": "Peter Vos",
+      "license": "CC BY-NC 4.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+      "aiGenerated": false,
+      "hosted": false,
+      "alt": "Brown Scrub Robin at Umdoni Forest, Pennington",
+      "caption": "Brown Scrub Robin at Umdoni Forest, Pennington."
+    }
+  ],
+  "research": {
+    "confidence": "low",
+    "needsReview": true,
+    "note": "Newman's Birds has no page. Wikipedia gives the habitat and does not describe plumage, voice or length, so those are left unset and no colours are taken from the photograph. Avibase does not mark it rare, so all twelve months are listed as a resident. No Kruger photograph was found. The grade A file is an alarm call from the Eastern Cape. The Kemp name Brown Robin and the code NB were left unchanged."
+  },
   "kind": "species",
   "slug": "tychaedon-signata",
+  "family": "muscicapidae",
+  "sampleData": false,
   "scientificName": "Tychaedon signata",
   "commonNames": {
     "en": "Brown Scrub Robin",
     "af": "Bruinwipstert"
   },
-  "family": "muscicapidae",
-  "summary": "The details for this species have not been published yet.",
-  "sampleData": true,
   "population": {
     "estimate": {
       "low": 1,
@@ -35,8 +143,24 @@
     },
     "tierApplied": "D"
   },
-  "variants": [],
-  "viewNotes": [],
-  "calls": [],
-  "images": []
+  "sources": [
+    {
+      "title": "Brown scrub robin",
+      "url": "https://en.wikipedia.org/wiki/Brown_scrub_robin",
+      "publisher": "Wikipedia",
+      "year": null
+    },
+    {
+      "title": "Avibase bird checklist — Kruger National Park",
+      "url": "https://avibase.bsc-eoc.org/checklist.jsp?region=ZA000003",
+      "publisher": "Avibase",
+      "year": null
+    },
+    {
+      "title": "Kemp A.C., Herholdt J.J., Whyte I. & Harrison J. (2001). Birds of the two largest national parks in South Africa: a method to generate estimates of population size for all species and assess their conservation ecology. S. Afr. J. Sci. 97: 393–403.",
+      "url": "https://journals.co.za/doi/pdf/10.10520/EJC97367",
+      "publisher": "South African Journal of Science",
+      "year": 2001
+    }
+  ]
 }

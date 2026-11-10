@@ -1,14 +1,177 @@
 {
+  "size": {
+    "lengthCm": {
+      "min": 18,
+      "max": 18
+    },
+    "note": "Newman's Birds gives 18 cm."
+  },
+  "habitat": "Pairs or small parties in broad-leaved woodland or mixed bushveld, not thornveld. It watches the ground from a low branch.",
+  "summary": "An uncommon resident. A dull, featureless flycatcher, the underparts scarcely paler than the upperparts. The immature has buff-edged upperparts and is streaked below. It is mostly silent. The Kemp name Pallid Flycatcher and the code RB were left unchanged.",
+  "status": "resident",
+  "monthsPresent": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+  ],
+  "variants": [
+    {
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "marks": {
+        "bill": {
+          "colour": null,
+          "shape": null
+        },
+        "eye": {
+          "iris": null,
+          "ring": null
+        },
+        "legs": {
+          "colour": null
+        },
+        "head": {
+          "crown": null,
+          "face": null,
+          "throat": null
+        },
+        "upperparts": {
+          "back": null,
+          "rump": null
+        },
+        "underparts": {
+          "breast": null,
+          "belly": null
+        },
+        "wings": {
+          "above": null,
+          "below": null
+        },
+        "tail": {
+          "colour": null,
+          "shape": null
+        }
+      }
+    },
+    {
+      "age": "immature",
+      "sex": "any",
+      "season": "any",
+      "marks": {
+        "bill": {
+          "colour": null,
+          "shape": null
+        },
+        "eye": {
+          "iris": null,
+          "ring": null
+        },
+        "legs": {
+          "colour": null
+        },
+        "head": {
+          "crown": null,
+          "face": null,
+          "throat": null
+        },
+        "upperparts": {
+          "back": null,
+          "rump": null,
+          "pattern": "Buff-edged feathers."
+        },
+        "underparts": {
+          "breast": null,
+          "belly": null,
+          "pattern": "Streaked below."
+        },
+        "wings": {
+          "above": null,
+          "below": null
+        },
+        "tail": {
+          "colour": null,
+          "shape": null
+        }
+      }
+    }
+  ],
+  "viewNotes": [
+    {
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Dull, with the underparts scarcely paler than the upperparts."
+    },
+    {
+      "view": "flight-below",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "The underside in flight is not described."
+    }
+  ],
+  "calls": [
+    {
+      "sex": "any",
+      "type": "call",
+      "description": "Mostly silent. No South African grade A recording was found. The grade A call is from Mutinondo in Zambia. The filename is XC660760-Pale Flycatcher (call) 20201206,Mutinondo,Muchinga,ZAMBIA.mp3.",
+      "recordings": [
+        {
+          "key": "xeno-canto/XC660760",
+          "source": "https://xeno-canto.org/660760",
+          "fileUrl": "https://xeno-canto.org/sounds/uploaded/IIJAXHKSCC/XC660760-Pale%20Flycatcher%20%28call%29%2020201206%2CMutinondo%2CMuchinga%2CZAMBIA.mp3",
+          "author": "Dries Van de Loock",
+          "license": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ]
+    }
+  ],
+  "images": [
+    {
+      "key": "agricola-pallidus/side.jpg",
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "source": "https://www.inaturalist.org/observations/17537346",
+      "fileUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/26696256/large.jpg",
+      "author": "Bastiaan Notebaert",
+      "license": "CC BY-NC 4.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+      "aiGenerated": false,
+      "hosted": false,
+      "alt": "Pale Flycatcher in Kruger, Ehlanzeni",
+      "caption": "Pale Flycatcher in Kruger, Ehlanzeni."
+    }
+  ],
+  "research": {
+    "confidence": "medium",
+    "needsReview": true,
+    "note": "Newman calls it an uncommon resident and does not name a plumage colour, so none is stored. Avibase does not mark it rare, so all twelve months are listed. The grade A call is from Zambia. The Kemp name Pallid Flycatcher and the code RB were left unchanged."
+  },
   "kind": "species",
   "slug": "agricola-pallidus",
+  "family": "muscicapidae",
+  "sampleData": false,
   "scientificName": "Agricola pallidus",
   "commonNames": {
     "en": "Pale Flycatcher",
     "af": "Muiskleurvlieëvanger"
   },
-  "family": "muscicapidae",
-  "summary": "The details for this species have not been published yet.",
-  "sampleData": true,
   "population": {
     "estimate": {
       "low": 8192,
@@ -35,8 +198,24 @@
     },
     "tierApplied": "D"
   },
-  "variants": [],
-  "viewNotes": [],
-  "calls": [],
-  "images": []
+  "sources": [
+    {
+      "title": "Pale Flycatcher",
+      "url": "https://newmansbirds.com/birds/pale-flycatcher/",
+      "publisher": "Newman's Birds",
+      "year": 2026
+    },
+    {
+      "title": "Avibase bird checklist — Kruger National Park",
+      "url": "https://avibase.bsc-eoc.org/checklist.jsp?region=ZA000003",
+      "publisher": "Avibase",
+      "year": null
+    },
+    {
+      "title": "Kemp A.C., Herholdt J.J., Whyte I. & Harrison J. (2001). Birds of the two largest national parks in South Africa: a method to generate estimates of population size for all species and assess their conservation ecology. S. Afr. J. Sci. 97: 393–403.",
+      "url": "https://journals.co.za/doi/pdf/10.10520/EJC97367",
+      "publisher": "South African Journal of Science",
+      "year": 2001
+    }
+  ]
 }

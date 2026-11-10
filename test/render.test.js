@@ -320,7 +320,16 @@ test('markdown and json-facing copy keep the population label', async () => {
 })
 
 test('a species stub states that details are unpublished and skips empty sections', async () => {
-  const doc = await readJson('data/species/luscinia-luscinia.json')
+  const live = await readJson('data/species/luscinia-luscinia.json')
+  const doc = {
+    ...live,
+    sampleData: true,
+    summary: UNPUBLISHED_SPECIES,
+    variants: [],
+    viewNotes: [],
+    calls: [],
+    images: [],
+  }
   const html = renderSpeciesHtml({
     origin: 'https://birds.truter.world',
     doc,
