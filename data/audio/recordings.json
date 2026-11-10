@@ -2212,6 +2212,16 @@
         }
       ]
     },
+    "lybius-torquatus": {
+      "calls": [
+        {
+          "index": 0,
+          "quality": {
+            "xeno-canto/XC1137920": "A"
+          }
+        }
+      ]
+    },
     "macheiramphus-alcinus": {
       "calls": [
         {
@@ -2602,6 +2612,26 @@
           "index": 0,
           "quality": {
             "xeno-canto/XC933092": "A"
+          }
+        }
+      ]
+    },
+    "pogoniulus-bilineatus": {
+      "calls": [
+        {
+          "index": 0,
+          "quality": {
+            "xeno-canto/XC265020": "A"
+          }
+        }
+      ]
+    },
+    "pogoniulus-chrysoconus": {
+      "calls": [
+        {
+          "index": 0,
+          "quality": {
+            "xeno-canto/XC1103079": "A"
           }
         }
       ]
@@ -3067,12 +3097,32 @@
         }
       ]
     },
+    "trachyphonus-vaillantii": {
+      "calls": [
+        {
+          "index": 0,
+          "quality": {
+            "xeno-canto/XC208497": "A"
+          }
+        }
+      ]
+    },
     "treron-calvus": {
       "calls": [
         {
           "index": 0,
           "quality": {
             "xeno-canto/XC394356": "B"
+          }
+        }
+      ]
+    },
+    "tricholaema-leucomelas": {
+      "calls": [
+        {
+          "index": 0,
+          "quality": {
+            "xeno-canto/XC756685": "A"
           }
         }
       ]

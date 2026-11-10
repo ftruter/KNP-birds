@@ -16301,14 +16301,48 @@
       "slug": "lybius-torquatus",
       "scientificName": "Lybius torquatus",
       "commonName": "Black-collared Barbet",
-      "images": [],
-      "recordings": [],
+      "images": [
+        {
+          "key": "lybius-torquatus/side.jpg",
+          "author": "bjoern1982",
+          "licence": "CC BY-NC 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+          "sourceUrl": "https://www.inaturalist.org/observations/182087767",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ],
+      "recordings": [
+        {
+          "key": "xeno-canto/XC1137920",
+          "author": "African Bioacoustics Community",
+          "licence": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "sourceUrl": "https://xeno-canto.org/1137920",
+          "aiGenerated": false,
+          "hosted": false,
+          "quality": "A",
+          "callType": "duet"
+        }
+      ],
       "sources": [
         {
           "title": "Kemp A.C., Herholdt J.J., Whyte I. & Harrison J. (2001). Birds of the two largest national parks in South Africa: a method to generate estimates of population size for all species and assess their conservation ecology. S. Afr. J. Sci. 97: 393–403.",
           "url": "https://journals.co.za/doi/pdf/10.10520/EJC97367",
           "publisher": "South African Journal of Science",
           "year": 2001
+        },
+        {
+          "title": "Black-collared Barbet",
+          "url": "https://newmansbirds.com/birds/black-collared-barbet/",
+          "publisher": "Newman's Birds",
+          "year": 2026
+        },
+        {
+          "title": "Avibase bird checklist — Kruger National Park",
+          "url": "https://avibase.bsc-eoc.org/checklist.jsp?region=ZA000003",
+          "publisher": "Avibase",
+          "year": null
         }
       ]
     },
@@ -20216,14 +20250,48 @@
       "slug": "pogoniulus-bilineatus",
       "scientificName": "Pogoniulus bilineatus",
       "commonName": "Yellow-rumped Tinkerbird",
-      "images": [],
-      "recordings": [],
+      "images": [
+        {
+          "key": "pogoniulus-bilineatus/side.jpg",
+          "author": "maegdt",
+          "licence": "CC BY-NC 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+          "sourceUrl": "https://www.inaturalist.org/observations/396624334",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ],
+      "recordings": [
+        {
+          "key": "xeno-canto/XC265020",
+          "author": "Martin St-Michel",
+          "licence": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "sourceUrl": "https://xeno-canto.org/265020",
+          "aiGenerated": false,
+          "hosted": false,
+          "quality": "A",
+          "callType": "call"
+        }
+      ],
       "sources": [
         {
           "title": "Kemp A.C., Herholdt J.J., Whyte I. & Harrison J. (2001). Birds of the two largest national parks in South Africa: a method to generate estimates of population size for all species and assess their conservation ecology. S. Afr. J. Sci. 97: 393–403.",
           "url": "https://journals.co.za/doi/pdf/10.10520/EJC97367",
           "publisher": "South African Journal of Science",
           "year": 2001
+        },
+        {
+          "title": "Yellow-rumped Tinkerbird",
+          "url": "https://newmansbirds.com/birds/yellow-rumped-tinkerbird/",
+          "publisher": "Newman's Birds",
+          "year": 2026
+        },
+        {
+          "title": "Avibase bird checklist — Kruger National Park",
+          "url": "https://avibase.bsc-eoc.org/checklist.jsp?region=ZA000003",
+          "publisher": "Avibase",
+          "year": null
         }
       ]
     },
@@ -20231,14 +20299,48 @@
       "slug": "pogoniulus-chrysoconus",
       "scientificName": "Pogoniulus chrysoconus",
       "commonName": "Yellow-fronted Tinkerbird",
-      "images": [],
-      "recordings": [],
+      "images": [
+        {
+          "key": "pogoniulus-chrysoconus/side.jpg",
+          "author": "Jacob Dirsuwei",
+          "licence": "CC BY-NC 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+          "sourceUrl": "https://www.inaturalist.org/observations/192795028",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ],
+      "recordings": [
+        {
+          "key": "xeno-canto/XC1103079",
+          "author": "Marna Buys",
+          "licence": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "sourceUrl": "https://xeno-canto.org/1103079",
+          "aiGenerated": false,
+          "hosted": false,
+          "quality": "A",
+          "callType": "call"
+        }
+      ],
       "sources": [
         {
           "title": "Kemp A.C., Herholdt J.J., Whyte I. & Harrison J. (2001). Birds of the two largest national parks in South Africa: a method to generate estimates of population size for all species and assess their conservation ecology. S. Afr. J. Sci. 97: 393–403.",
           "url": "https://journals.co.za/doi/pdf/10.10520/EJC97367",
           "publisher": "South African Journal of Science",
           "year": 2001
+        },
+        {
+          "title": "Yellow-fronted Tinkerbird",
+          "url": "https://newmansbirds.com/birds/yellow-fronted-tinkerbird/",
+          "publisher": "Newman's Birds",
+          "year": 2026
+        },
+        {
+          "title": "Avibase bird checklist — Kruger National Park",
+          "url": "https://avibase.bsc-eoc.org/checklist.jsp?region=ZA000003",
+          "publisher": "Avibase",
+          "year": null
         }
       ]
     },
@@ -23974,14 +24076,48 @@
       "slug": "trachyphonus-vaillantii",
       "scientificName": "Trachyphonus vaillantii",
       "commonName": "Crested Barbet",
-      "images": [],
-      "recordings": [],
+      "images": [
+        {
+          "key": "trachyphonus-vaillantii/side.jpg",
+          "author": "tjeerd",
+          "licence": "CC BY-NC 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+          "sourceUrl": "https://www.inaturalist.org/observations/291528588",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ],
+      "recordings": [
+        {
+          "key": "xeno-canto/XC208497",
+          "author": "Jeremy Hegge",
+          "licence": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "sourceUrl": "https://xeno-canto.org/208497",
+          "aiGenerated": false,
+          "hosted": false,
+          "quality": "A",
+          "callType": "call"
+        }
+      ],
       "sources": [
         {
           "title": "Kemp A.C., Herholdt J.J., Whyte I. & Harrison J. (2001). Birds of the two largest national parks in South Africa: a method to generate estimates of population size for all species and assess their conservation ecology. S. Afr. J. Sci. 97: 393–403.",
           "url": "https://journals.co.za/doi/pdf/10.10520/EJC97367",
           "publisher": "South African Journal of Science",
           "year": 2001
+        },
+        {
+          "title": "Crested Barbet",
+          "url": "https://newmansbirds.com/birds/crested-barbet/",
+          "publisher": "Newman's Birds",
+          "year": 2026
+        },
+        {
+          "title": "Avibase bird checklist — Kruger National Park",
+          "url": "https://avibase.bsc-eoc.org/checklist.jsp?region=ZA000003",
+          "publisher": "Avibase",
+          "year": null
         }
       ]
     },
@@ -24032,14 +24168,48 @@
       "slug": "tricholaema-leucomelas",
       "scientificName": "Tricholaema leucomelas",
       "commonName": "Acacia Pied Barbet",
-      "images": [],
-      "recordings": [],
+      "images": [
+        {
+          "key": "tricholaema-leucomelas/side.jpg",
+          "author": "Jacob Dirsuwei",
+          "licence": "CC BY-NC 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+          "sourceUrl": "https://www.inaturalist.org/observations/93020010",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ],
+      "recordings": [
+        {
+          "key": "xeno-canto/XC756685",
+          "author": "Derek Solomon",
+          "licence": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "sourceUrl": "https://xeno-canto.org/756685",
+          "aiGenerated": false,
+          "hosted": false,
+          "quality": "A",
+          "callType": "call"
+        }
+      ],
       "sources": [
         {
           "title": "Kemp A.C., Herholdt J.J., Whyte I. & Harrison J. (2001). Birds of the two largest national parks in South Africa: a method to generate estimates of population size for all species and assess their conservation ecology. S. Afr. J. Sci. 97: 393–403.",
           "url": "https://journals.co.za/doi/pdf/10.10520/EJC97367",
           "publisher": "South African Journal of Science",
           "year": 2001
+        },
+        {
+          "title": "Acacia Pied Barbet",
+          "url": "https://newmansbirds.com/birds/acacia-pied-barbet/",
+          "publisher": "Newman's Birds",
+          "year": 2026
+        },
+        {
+          "title": "Avibase bird checklist — Kruger National Park",
+          "url": "https://avibase.bsc-eoc.org/checklist.jsp?region=ZA000003",
+          "publisher": "Avibase",
+          "year": null
         }
       ]
     },
