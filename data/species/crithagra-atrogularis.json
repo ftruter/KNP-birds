@@ -173,10 +173,27 @@
       ]
     }
   ],
-  "images": [],
+  "images": [
+    {
+      "key": "crithagra-atrogularis/side.jpg",
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "source": "https://www.inaturalist.org/observations/178520721",
+      "fileUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/310656628/large.jpeg",
+      "author": "Shaun Swanepoel",
+      "license": "CC BY 4.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by/4.0/",
+      "aiGenerated": false,
+      "hosted": false,
+      "alt": "Black-throated Canary in Namakwa, not Kruger, showing the bright yellow rump and streaked brown plumage.",
+      "caption": "Black-throated Canary in Namakwa, not Kruger, showing the bright yellow rump and streaked brown plumage."
+    }
+  ],
   "research": {
     "confidence": "medium",
     "needsReview": true,
-    "note": "Status is resident and all twelve months are listed. Newman calls it a common resident. The Kemp code NB was left unchanged. No openly licensed research-grade photograph was found in the Kruger box. Population figures were left unchanged."
+    "note": "Status is resident and all twelve months are listed. Newman calls it a common resident. The Kemp code NB was left unchanged. No Kruger photograph was found under an allowed licence. A side photograph from Namakwa is stored. Population figures were left unchanged."
   }
 }
