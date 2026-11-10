@@ -57,3 +57,9 @@ Those packages are bare imports. `no_bundle` uploads only project files, so the 
 The card's `supportedProtocolVersions` is the `SUPPORTED_PROTOCOL_VERSIONS` list exported by the installed server package. That list does not include `2026-07-28`, so the card does not claim it.
 
 `search` is deterministic text matching. It is not a model call. Names rank above habitat, identification text and population notes. Matching is case-insensitive and ignores diacritics. The default limit is 10 and the hard maximum is 25. Results name the scientific, English and Afrikaans names, a population estimate only when a number is stored, the HTML, Markdown and JSON URLs, and short snippets from the fields that matched. Missing facts are left null or omitted. Failures return a short tool error and do not echo the query or a stack trace.
+
+## Search page for people
+
+`GET /search?q=…` renders the same `searchRecords` ranking as an HTML page, with `.md` and `.json` alternates (`/search.md?q=…`, `/search.json?q=…`). It shows up to 50 results. The header on every HTML page holds a plain `<form role="search" method="get" action="/search">`, so search works with JavaScript off; the page CSP allows `form-action 'self'` for it. `src/client/app.js` only adds the `/` shortcut (ignored while typing in a field) and `Esc` to clear, then blur, the box.
+
+The query is trimmed, its whitespace collapsed, and it is capped at 200 characters. Results use the normal page cache. The Cache API key keeps that normalised `q` and drops every other parameter, next to `DATA_VERSION` and the Worker version, so a data deploy never serves old results. Search pages carry `<meta name="robots" content="noindex">` and are not in the sitemap.
