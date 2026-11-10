@@ -22,6 +22,13 @@
     11,
     12
   ],
+  "size": {
+    "lengthCm": {
+      "min": 44,
+      "max": 44
+    },
+    "note": "Newman's Birds gives 44 cm."
+  },
   "habitat": "Singly or in pairs in reeds, dense riparian and bushveld thickets, tall rank grass and well-wooded suburbia.",
   "summary": "A common near-endemic resident. Black cap and tail, rufous wings and white underparts, with finely barred upper tail coverts. The fledgling has a whitish eyebrow, whitish streaks on the head, dark barring above and a blue-grey eye. Newman’s species page does not describe the voice. The Kemp code RB was left unchanged.",
   "sampleData": false,
@@ -230,6 +237,6 @@
   "research": {
     "confidence": "medium",
     "needsReview": false,
-    "note": "Status is resident and all twelve months are listed. Newman calls it a common near-endemic resident. The adult eye is stored as red because the fledgling is contrasted with a crimson eye. Population figures were left unchanged."
+    "note": "Status is resident and all twelve months are listed. Newman calls it a common near-endemic resident. Length is from Newman’s Birds. The adult eye is stored as red because the fledgling is contrasted with a crimson eye. Population figures were left unchanged."
   }
 }

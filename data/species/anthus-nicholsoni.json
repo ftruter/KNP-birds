@@ -77,11 +77,28 @@
       ]
     }
   ],
-  "images": [],
+  "images": [
+    {
+      "key": "anthus-nicholsoni/side.jpg",
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "source": "https://www.inaturalist.org/observations/88776237",
+      "fileUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/146521319/large.jpeg",
+      "author": "Andrew Deacon",
+      "license": "CC0 1.0",
+      "licenceUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "aiGenerated": false,
+      "hosted": false,
+      "alt": "Nicholson’s Pipit at De Berg in Ehlanzeni, not Kruger, perched on a lichen-covered rock.",
+      "caption": "Nicholson’s Pipit at De Berg in Ehlanzeni, not Kruger, perched on a lichen-covered rock."
+    }
+  ],
   "research": {
     "confidence": "low",
     "needsReview": true,
-    "note": "No Newman page. Wikipedia says non-migratory and gives no plumage or total length. The SABAP1 text is the former combined Long-billed Pipit account and does not describe plumage. No openly licensed research-grade photo was found in the Kruger box. Population figures and the Kemp code RB were left unchanged."
+    "note": "No Newman page. Wikipedia says non-migratory and gives no plumage or total length. The SABAP1 text is the former combined Long-billed Pipit account and does not describe plumage. No Kruger photograph was found under an allowed licence. A side photograph from De Berg in Ehlanzeni is stored. Population figures and the Kemp code RB were left unchanged."
   },
   "status": "resident",
   "monthsPresent": [

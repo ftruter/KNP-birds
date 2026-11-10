@@ -161,7 +161,7 @@ test('the eighteen weavers are sourced without changing populations', async () =
 
   const golden = await readJson('data/species/ploceus-xanthops.json')
   const scaly = await readJson('data/species/sporopipes-squamifrons.json')
-  assert.equal(golden.size, undefined)
+  assert.deepEqual(golden.size.lengthCm, { min: 18, max: 18 })
   assert.equal(scaly.size, undefined)
   assert.equal(golden.habitat, undefined)
   assert.equal(golden.research.confidence, 'low')

@@ -259,10 +259,27 @@
       ]
     }
   ],
-  "images": [],
+  "images": [
+    {
+      "key": "ceblepyris-caesius/side.jpg",
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "source": "https://www.inaturalist.org/observations/316812090",
+      "fileUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/572408288/large.jpg",
+      "author": "Innes Buchner",
+      "license": "CC0 1.0",
+      "licenceUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "aiGenerated": false,
+      "hosted": false,
+      "alt": "Grey Cuckooshrike at Hankey, not Kruger, perched among needle foliage, with uniform grey plumage.",
+      "caption": "Grey Cuckooshrike at Hankey, not Kruger, perched among needle foliage, with uniform grey plumage."
+    }
+  ],
   "research": {
     "confidence": "medium",
     "needsReview": true,
-    "note": "Status is resident and all twelve months are listed, from Newman’s “uncommon, localised resident”. The Kemp code on the population is NB and was not changed. No openly licensed photograph was found inside the Kruger box. Chick down is the freckled immature. The recording is grade A from Kenya and is catalogued as song."
+    "note": "Status is resident and all twelve months are listed, from Newman’s “uncommon, localised resident”. The Kemp code on the population is NB and was not changed. No Kruger photograph was found under an allowed licence. A side photograph from Hankey is stored. Chick down is the freckled immature. The recording is grade A from Kenya and is catalogued as song."
   }
 }

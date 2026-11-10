@@ -248,11 +248,28 @@
       ]
     }
   ],
-  "images": [],
+  "images": [
+    {
+      "key": "aenigmatolimnas-marginalis/side.jpg",
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "source": "https://www.inaturalist.org/observations/257235536",
+      "fileUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/461406900/large.jpeg",
+      "author": "Stefan Wolmarans",
+      "license": "CC BY 4.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by/4.0/",
+      "aiGenerated": false,
+      "hosted": false,
+      "alt": "Striped Crake at Nkomazi, not Kruger, standing at a muddy pool edge under dry reeds, with buff underparts and a pale bill.",
+      "caption": "Striped Crake at Nkomazi, not Kruger, standing at a muddy pool edge under dry reeds, with buff underparts and a pale bill."
+    }
+  ],
   "research": {
     "confidence": "medium",
     "needsReview": true,
-    "note": "Newman calls it an uncommon summer visitor. Avibase marks the Kruger occurrence rare or accidental, and the months are not named, so status is summer-migrant and monthsPresent is unset. The female underparts are blue-grey and the male is rich buff, while the identification line says buffy-brown. No photograph that shows the plumage was found. The grade A call is from North West. Population figures and the Kemp code NB were left unchanged."
+    "note": "Newman calls it an uncommon summer visitor. Avibase marks the Kruger occurrence rare or accidental, and the months are not named, so status is summer-migrant and monthsPresent is unset. The female underparts are blue-grey and the male is rich buff, while the identification line says buffy-brown. No Kruger photograph was found under an allowed licence. A side photograph from Nkomazi is stored. The grade A call is from North West. Population figures and the Kemp code NB were left unchanged."
   },
   "status": "summer-migrant"
 }

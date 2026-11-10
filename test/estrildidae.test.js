@@ -31,8 +31,12 @@ test('waxbills and allies are sourced without changing populations', async () =>
   }
   const swee = await readJson('data/species/coccopygia-melanotis.json')
   const black = await readJson('data/species/brunhilda-erythronotos.json')
-  assert.equal(swee.images.length, 0)
-  assert.equal(black.images.length, 0)
+  assert.equal(swee.images.length, 1)
+  assert.equal(swee.images[0].license, 'CC BY 4.0')
+  assert.match(swee.images[0].caption, /not Kruger/)
+  assert.equal(black.images.length, 1)
+  assert.equal(black.images[0].license, 'CC BY 4.0')
+  assert.match(black.images[0].caption, /not Kruger/)
   assert.equal(
     overlay.species['coccopygia-melanotis'].calls[0].quality[
       swee.calls[0].recordings[0].key

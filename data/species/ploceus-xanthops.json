@@ -7,7 +7,14 @@
     "af": "Goudwewer"
   },
   "family": "ploceidae",
-  "summary": "A resident. Newman has no species page for this weaver. The description is from Wikipedia. The male has a fully yellow head, a greenish-yellow body and orange from the chin to the upper breast. The female is duller, with yellow only on the forehead. Both have dull brown upper wings, yellow lower wings, light yellow eyes, black bills and pink legs. The young bird is dull olive, yellow on the tail, chin and throat, with dark brown eyes and a pale brown bill. Avibase does not mark Holub’s Golden-Weaver rare in Kruger. The Kemp paper name Golden Weaver and the code VB were left unchanged.",
+  "size": {
+    "lengthCm": {
+      "min": 18,
+      "max": 18
+    },
+    "note": "Newman's Birds gives 18 cm on its Holub’s (African) Golden Weaver page."
+  },
+  "summary": "A resident. The description is from Wikipedia. Newman gives 18 cm. The male has a fully yellow head, a greenish-yellow body and orange from the chin to the upper breast. The female is duller, with yellow only on the forehead. Both have dull brown upper wings, yellow lower wings, light yellow eyes, black bills and pink legs. The young bird is dull olive, yellow on the tail, chin and throat, with dark brown eyes and a pale brown bill. Avibase does not mark Holub’s Golden-Weaver rare in Kruger. The Kemp paper name Golden Weaver and the code VB were left unchanged.",
   "sampleData": false,
   "similar": [
     {
@@ -33,6 +40,12 @@
       "url": "https://journals.co.za/doi/pdf/10.10520/EJC97367",
       "publisher": "South African Journal of Science",
       "year": 2001
+    },
+    {
+      "title": "Holub’s (African) Golden Weaver",
+      "url": "https://newmansbirds.com/birds/holubs-african-golden-weaver/",
+      "publisher": "Newman's Birds",
+      "year": 2026
     }
   ],
   "population": {
@@ -297,7 +310,7 @@
   "research": {
     "confidence": "low",
     "needsReview": true,
-    "note": "Newman has no species page, so the description and the young-bird plumage are from the cited Wikipedia article, the size is omitted, and no habitat is stored. This is why the record needs review. Avibase does not mark Holub’s Golden-Weaver rare, so all twelve months are listed. The grade A recordings are ND, so the playable file is grade B from near White River. Population figures and the Kemp name Golden Weaver were left unchanged."
+    "note": "The description and the young-bird plumage are from the cited Wikipedia article, and no habitat is stored. The length is from Newman’s Holub’s (African) Golden Weaver page, which the first pass missed. This is why the record needs review. Avibase does not mark Holub’s Golden-Weaver rare, so all twelve months are listed. The grade A recordings are ND, so the playable file is grade B from near White River. Population figures and the Kemp name Golden Weaver were left unchanged."
   },
   "status": "resident",
   "monthsPresent": [
