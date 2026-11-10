@@ -49,7 +49,7 @@ test('all eleven plovers and lapwings are sourced without changing populations',
   const [, season] = diffSpecies(caspian)
   assert.equal(season.status, 'differs')
   const chestnut = await readJson('data/species/anarhynchus-pallidus.json')
-  assert.equal({'chestnut'}.images.length, 1)
+  assert.equal(chestnut.images.length, 1)
   assert.equal(chestnut.images[0].license, 'CC0 1.0')
   assert.match(chestnut.images[0].caption, /not Kruger/)
   const [, , sex] = diffSpecies(chestnut)
