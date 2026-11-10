@@ -133,5 +133,12 @@
     "speciesCounted": 13,
     "speciesTotal": 14,
     "complete": false
+  },
+  "residency": {
+    "speciesKnown": 13,
+    "speciesUnknown": 1,
+    "unknownSpecies": [
+      "centropus-grillii"
+    ]
   }
 }

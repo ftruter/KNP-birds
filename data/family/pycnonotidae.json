@@ -61,5 +61,12 @@
     "speciesCounted": 4,
     "speciesTotal": 5,
     "complete": false
+  },
+  "residency": {
+    "speciesKnown": 4,
+    "speciesUnknown": 1,
+    "unknownSpecies": [
+      "phyllastrephus-flavostriatus"
+    ]
   }
 }

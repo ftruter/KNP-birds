@@ -3,9 +3,9 @@
   "counts": {
     "slots": 526,
     "swapped": 17,
-    "added": 279,
+    "added": 285,
     "kept": 203,
-    "none": 27,
+    "none": 21,
     "cleaned": 1
   },
   "noUsableRecording": [
@@ -35,16 +35,6 @@
       "type": "call"
     },
     {
-      "slug": "alopochen-aegyptiaca",
-      "scientificName": "Alopochen aegyptiaca",
-      "type": "call"
-    },
-    {
-      "slug": "alopochen-aegyptiaca",
-      "scientificName": "Alopochen aegyptiaca",
-      "type": "call"
-    },
-    {
       "slug": "anas-capensis",
       "scientificName": "Anas capensis",
       "type": "call"
@@ -67,21 +57,6 @@
     {
       "slug": "anas-sparsa",
       "scientificName": "Anas sparsa",
-      "type": "call"
-    },
-    {
-      "slug": "anas-sparsa",
-      "scientificName": "Anas sparsa",
-      "type": "call"
-    },
-    {
-      "slug": "anas-undulata",
-      "scientificName": "Anas undulata",
-      "type": "call"
-    },
-    {
-      "slug": "anas-undulata",
-      "scientificName": "Anas undulata",
       "type": "call"
     },
     {
@@ -102,11 +77,6 @@
     {
       "slug": "plectropterus-gambensis",
       "scientificName": "Plectropterus gambensis",
-      "type": "call"
-    },
-    {
-      "slug": "apus-apus",
-      "scientificName": "Apus apus",
       "type": "call"
     },
     {
@@ -3581,28 +3551,28 @@
       "scientificName": "Alopochen aegyptiaca",
       "index": 0,
       "type": "call",
-      "action": "none",
+      "action": "added",
       "from": [],
-      "to": "",
-      "quality": "",
-      "country": "",
-      "locality": "",
+      "to": "909530",
+      "quality": "A",
+      "country": "South Africa",
+      "locality": "Sypreshoek dam area, Poskraal. Bloemfontein",
       "cleaned": false,
-      "license": ""
+      "license": "CC BY-NC-SA 4.0"
     },
     {
       "slug": "alopochen-aegyptiaca",
       "scientificName": "Alopochen aegyptiaca",
       "index": 1,
       "type": "call",
-      "action": "none",
+      "action": "added",
       "from": [],
-      "to": "",
-      "quality": "",
-      "country": "",
-      "locality": "",
+      "to": "1183527",
+      "quality": "A",
+      "country": "South Africa",
+      "locality": "City of Cape Town (near Cape Town), City of Cape Town Metropolitan Municipality, Western Cape",
       "cleaned": false,
-      "license": ""
+      "license": "CC BY-NC-SA 4.0"
     },
     {
       "slug": "alopochen-aegyptiaca",
@@ -3611,10 +3581,10 @@
       "type": "call",
       "action": "added",
       "from": [],
-      "to": "816922",
+      "to": "489216",
       "quality": "A",
       "country": "South Africa",
-      "locality": "Seven Dams Conservancy, Bloemfontein, Free State",
+      "locality": "Kruger Park, Ehlanzeni, Mpumalanga",
       "cleaned": false,
       "license": "CC BY-NC-SA 4.0"
     },
@@ -3721,14 +3691,14 @@
       "scientificName": "Anas sparsa",
       "index": 1,
       "type": "call",
-      "action": "none",
+      "action": "added",
       "from": [],
-      "to": "",
-      "quality": "",
-      "country": "",
-      "locality": "",
+      "to": "1163841",
+      "quality": "B",
+      "country": "South Africa",
+      "locality": "Mossel Bay Local Municipality (near Great Brak River), Garden Route District Municipality, Western Cape",
       "cleaned": false,
-      "license": ""
+      "license": "CC BY-NC-SA 4.0"
     },
     {
       "slug": "anas-sparsa",
@@ -3749,28 +3719,28 @@
       "scientificName": "Anas undulata",
       "index": 0,
       "type": "call",
-      "action": "none",
+      "action": "added",
       "from": [],
-      "to": "",
-      "quality": "",
-      "country": "",
-      "locality": "",
+      "to": "1053126",
+      "quality": "A",
+      "country": "Uganda",
+      "locality": "Busiro (near Ziba), Wilaya ya Wakiso, Mkoa wa Kati",
       "cleaned": false,
-      "license": ""
+      "license": "CC BY-NC-SA 4.0"
     },
     {
       "slug": "anas-undulata",
       "scientificName": "Anas undulata",
       "index": 1,
       "type": "call",
-      "action": "none",
+      "action": "added",
       "from": [],
-      "to": "",
-      "quality": "",
-      "country": "",
-      "locality": "",
+      "to": "1141380",
+      "quality": "B",
+      "country": "South Africa",
+      "locality": "Swellendam Local Municipality (near Suurbraak), Overberg District Municipality, Western Cape",
       "cleaned": false,
-      "license": ""
+      "license": "CC BY-NC-SA 4.0"
     },
     {
       "slug": "anas-undulata",
@@ -3987,14 +3957,14 @@
       "scientificName": "Apus apus",
       "index": 1,
       "type": "call",
-      "action": "none",
+      "action": "added",
       "from": [],
-      "to": "",
-      "quality": "",
-      "country": "",
-      "locality": "",
+      "to": "269740",
+      "quality": "B",
+      "country": "Russian Federation",
+      "locality": "Kozlovskiy rayon, Chuvashia",
       "cleaned": false,
-      "license": ""
+      "license": "CC BY-NC-SA 4.0"
     },
     {
       "slug": "apus-apus",

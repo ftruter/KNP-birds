@@ -139,16 +139,20 @@
       "calls": [
         {
           "index": 0,
-          "quality": {}
+          "quality": {
+            "xeno-canto/XC909530": "A"
+          }
         },
         {
           "index": 1,
-          "quality": {}
+          "quality": {
+            "xeno-canto/XC1183527": "A"
+          }
         },
         {
           "index": 2,
           "quality": {
-            "xeno-canto/XC816922": "A"
+            "xeno-canto/XC489216": "A"
           }
         }
       ]
@@ -257,7 +261,9 @@
         },
         {
           "index": 1,
-          "quality": {}
+          "quality": {
+            "xeno-canto/XC1163841": "B"
+          }
         },
         {
           "index": 2,
@@ -271,11 +277,15 @@
       "calls": [
         {
           "index": 0,
-          "quality": {}
+          "quality": {
+            "xeno-canto/XC1053126": "A"
+          }
         },
         {
           "index": 1,
-          "quality": {}
+          "quality": {
+            "xeno-canto/XC1141380": "B"
+          }
         },
         {
           "index": 2,
@@ -403,7 +413,9 @@
         },
         {
           "index": 1,
-          "quality": {}
+          "quality": {
+            "xeno-canto/XC269740": "B"
+          }
         },
         {
           "index": 2,
