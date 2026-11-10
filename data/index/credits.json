@@ -3863,14 +3863,48 @@
       "slug": "bostrychia-hagedash",
       "scientificName": "Bostrychia hagedash",
       "commonName": "Hadeda (Hadada) Ibis",
-      "images": [],
-      "recordings": [],
+      "images": [
+        {
+          "key": "bostrychia-hagedash/side.jpg",
+          "author": "brewmaster",
+          "licence": "CC BY-NC 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+          "sourceUrl": "https://www.inaturalist.org/observations/261874557",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ],
+      "recordings": [
+        {
+          "key": "xeno-canto/XC1146089",
+          "author": "African Bioacoustics Community",
+          "licence": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "sourceUrl": "https://xeno-canto.org/1146089",
+          "aiGenerated": false,
+          "hosted": false,
+          "quality": "A",
+          "callType": "call"
+        }
+      ],
       "sources": [
         {
           "title": "Kemp A.C., Herholdt J.J., Whyte I. & Harrison J. (2001). Birds of the two largest national parks in South Africa: a method to generate estimates of population size for all species and assess their conservation ecology. S. Afr. J. Sci. 97: 393–403.",
           "url": "https://journals.co.za/doi/pdf/10.10520/EJC97367",
           "publisher": "South African Journal of Science",
           "year": 2001
+        },
+        {
+          "title": "Hadada Ibis",
+          "url": "https://newmansbirds.com/birds/hadada-ibis/",
+          "publisher": "Newman's Birds",
+          "year": 2026
+        },
+        {
+          "title": "Avibase bird checklist — Kruger National Park",
+          "url": "https://avibase.bsc-eoc.org/checklist.jsp?region=ZA000003",
+          "publisher": "Avibase",
+          "year": null
         }
       ]
     },
@@ -12551,6 +12585,49 @@
       ]
     },
     {
+      "slug": "geronticus-calvus",
+      "scientificName": "Geronticus calvus",
+      "commonName": "Southern Bald Ibis",
+      "images": [
+        {
+          "key": "geronticus-calvus/side.jpg",
+          "author": "egorbirder",
+          "licence": "CC BY 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by/4.0/",
+          "sourceUrl": "https://www.inaturalist.org/observations/346829247",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ],
+      "recordings": [
+        {
+          "key": "xeno-canto/XC902587",
+          "author": "Guilherme Melo",
+          "licence": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "sourceUrl": "https://xeno-canto.org/902587",
+          "aiGenerated": false,
+          "hosted": false,
+          "quality": "B",
+          "callType": "call"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Southern Bald Ibis",
+          "url": "https://newmansbirds.com/birds/southern-bald-ibis/",
+          "publisher": "Newman's Birds",
+          "year": 2026
+        },
+        {
+          "title": "Avibase bird checklist — Kruger National Park",
+          "url": "https://avibase.bsc-eoc.org/checklist.jsp?region=ZA000003",
+          "publisher": "Avibase",
+          "year": null
+        }
+      ]
+    },
+    {
       "slug": "glareola-nordmanni",
       "scientificName": "Glareola nordmanni",
       "commonName": "Black-winged Pratincole",
@@ -19207,14 +19284,48 @@
       "slug": "platalea-alba",
       "scientificName": "Platalea alba",
       "commonName": "African Spoonbill",
-      "images": [],
-      "recordings": [],
+      "images": [
+        {
+          "key": "platalea-alba/side.jpg",
+          "author": "copper",
+          "licence": "CC BY-NC 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+          "sourceUrl": "https://www.inaturalist.org/observations/9771181",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ],
+      "recordings": [
+        {
+          "key": "xeno-canto/XC385073",
+          "author": "Tim Cockcroft",
+          "licence": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "sourceUrl": "https://xeno-canto.org/385073",
+          "aiGenerated": false,
+          "hosted": false,
+          "quality": "A",
+          "callType": "call"
+        }
+      ],
       "sources": [
         {
           "title": "Kemp A.C., Herholdt J.J., Whyte I. & Harrison J. (2001). Birds of the two largest national parks in South Africa: a method to generate estimates of population size for all species and assess their conservation ecology. S. Afr. J. Sci. 97: 393–403.",
           "url": "https://journals.co.za/doi/pdf/10.10520/EJC97367",
           "publisher": "South African Journal of Science",
           "year": 2001
+        },
+        {
+          "title": "African Spoonbill",
+          "url": "https://newmansbirds.com/birds/african-spoonbill/",
+          "publisher": "Newman's Birds",
+          "year": 2026
+        },
+        {
+          "title": "Avibase bird checklist — Kruger National Park",
+          "url": "https://avibase.bsc-eoc.org/checklist.jsp?region=ZA000003",
+          "publisher": "Avibase",
+          "year": null
         }
       ]
     },
@@ -19353,14 +19464,48 @@
       "slug": "plegadis-falcinellus",
       "scientificName": "Plegadis falcinellus",
       "commonName": "Glossy Ibis",
-      "images": [],
-      "recordings": [],
+      "images": [
+        {
+          "key": "plegadis-falcinellus/side.jpg",
+          "author": "Tony Doty",
+          "licence": "CC BY-NC 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+          "sourceUrl": "https://www.inaturalist.org/observations/268101415",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ],
+      "recordings": [
+        {
+          "key": "xeno-canto/XC108823",
+          "author": "Andrew Spencer",
+          "licence": "CC BY-NC-SA 3.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/3.0/",
+          "sourceUrl": "https://xeno-canto.org/108823",
+          "aiGenerated": false,
+          "hosted": false,
+          "quality": "A",
+          "callType": "call"
+        }
+      ],
       "sources": [
         {
           "title": "Kemp A.C., Herholdt J.J., Whyte I. & Harrison J. (2001). Birds of the two largest national parks in South Africa: a method to generate estimates of population size for all species and assess their conservation ecology. S. Afr. J. Sci. 97: 393–403.",
           "url": "https://journals.co.za/doi/pdf/10.10520/EJC97367",
           "publisher": "South African Journal of Science",
           "year": 2001
+        },
+        {
+          "title": "Glossy Ibis",
+          "url": "https://newmansbirds.com/birds/glossy-ibis/",
+          "publisher": "Newman's Birds",
+          "year": 2026
+        },
+        {
+          "title": "Avibase bird checklist — Kruger National Park",
+          "url": "https://avibase.bsc-eoc.org/checklist.jsp?region=ZA000003",
+          "publisher": "Avibase",
+          "year": null
         }
       ]
     },
@@ -23331,14 +23476,48 @@
       "slug": "threskiornis-aethiopicus",
       "scientificName": "Threskiornis aethiopicus",
       "commonName": "African Sacred Ibis",
-      "images": [],
-      "recordings": [],
+      "images": [
+        {
+          "key": "threskiornis-aethiopicus/side.jpg",
+          "author": "agujaceratops",
+          "licence": "CC BY 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by/4.0/",
+          "sourceUrl": "https://www.inaturalist.org/observations/135029705",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ],
+      "recordings": [
+        {
+          "key": "xeno-canto/XC309388",
+          "author": "Lynette Rudman",
+          "licence": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "sourceUrl": "https://xeno-canto.org/309388",
+          "aiGenerated": false,
+          "hosted": false,
+          "quality": "A",
+          "callType": "call"
+        }
+      ],
       "sources": [
         {
           "title": "Kemp A.C., Herholdt J.J., Whyte I. & Harrison J. (2001). Birds of the two largest national parks in South Africa: a method to generate estimates of population size for all species and assess their conservation ecology. S. Afr. J. Sci. 97: 393–403.",
           "url": "https://journals.co.za/doi/pdf/10.10520/EJC97367",
           "publisher": "South African Journal of Science",
           "year": 2001
+        },
+        {
+          "title": "African Sacred Ibis",
+          "url": "https://newmansbirds.com/birds/african-sacred-ibis/",
+          "publisher": "Newman's Birds",
+          "year": 2026
+        },
+        {
+          "title": "Avibase bird checklist — Kruger National Park",
+          "url": "https://avibase.bsc-eoc.org/checklist.jsp?region=ZA000003",
+          "publisher": "Avibase",
+          "year": null
         }
       ]
     },

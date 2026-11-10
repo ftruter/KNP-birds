@@ -1,10 +1,10 @@
 {
   "source": "xeno-canto explore catalogue, API v3 recording fields",
   "counts": {
-    "slots": 466,
+    "slots": 471,
     "swapped": 17,
     "added": 278,
-    "kept": 143,
+    "kept": 148,
     "none": 28,
     "cleaned": 0
   },
@@ -459,6 +459,22 @@
       "quality": "A",
       "country": "South Africa",
       "locality": "Kruger Park (near Skukuza), Ehlanzeni District Municipality, Mpumalanga",
+      "cleaned": false,
+      "license": "CC BY-NC-SA 4.0"
+    },
+    {
+      "slug": "bostrychia-hagedash",
+      "scientificName": "Bostrychia hagedash",
+      "index": 0,
+      "type": "call",
+      "action": "kept",
+      "from": [
+        "1146089"
+      ],
+      "to": "1146089",
+      "quality": "A",
+      "country": "South Africa",
+      "locality": "Kruger Park, near Skukuza",
       "cleaned": false,
       "license": "CC BY-NC-SA 4.0"
     },
@@ -1231,6 +1247,22 @@
       "license": "CC BY-NC-SA 4.0"
     },
     {
+      "slug": "geronticus-calvus",
+      "scientificName": "Geronticus calvus",
+      "index": 0,
+      "type": "call",
+      "action": "kept",
+      "from": [
+        "902587"
+      ],
+      "to": "902587",
+      "quality": "B",
+      "country": "South Africa",
+      "locality": "near Phuthaditjhaba, Free State",
+      "cleaned": false,
+      "license": "CC BY-NC-SA 4.0"
+    },
+    {
       "slug": "glaucidium-capense",
       "scientificName": "Glaucidium capense",
       "index": 0,
@@ -1884,6 +1916,22 @@
       "license": "CC BY-NC-SA 4.0"
     },
     {
+      "slug": "platalea-alba",
+      "scientificName": "Platalea alba",
+      "index": 0,
+      "type": "call",
+      "action": "kept",
+      "from": [
+        "385073"
+      ],
+      "to": "385073",
+      "quality": "A",
+      "country": "South Africa",
+      "locality": "Port Alfred, Eastern Cape",
+      "cleaned": false,
+      "license": "CC BY-NC-SA 4.0"
+    },
+    {
       "slug": "platysteira-peltata",
       "scientificName": "Platysteira peltata",
       "index": 0,
@@ -1898,6 +1946,22 @@
       "locality": "Mutinondo, Lavushimanda, Muchinga Province",
       "cleaned": false,
       "license": "CC BY-NC-SA 4.0"
+    },
+    {
+      "slug": "plegadis-falcinellus",
+      "scientificName": "Plegadis falcinellus",
+      "index": 0,
+      "type": "call",
+      "action": "kept",
+      "from": [
+        "108823"
+      ],
+      "to": "108823",
+      "quality": "A",
+      "country": "United States",
+      "locality": "Emeralda Marsh, Florida",
+      "cleaned": false,
+      "license": "CC BY-NC-SA 3.0"
     },
     {
       "slug": "plocepasser-mahali",
@@ -2483,6 +2547,22 @@
       "quality": "A",
       "country": "Germany",
       "locality": "Tierpark Berlin (near Berlin), Berlin",
+      "cleaned": false,
+      "license": "CC BY-NC-SA 4.0"
+    },
+    {
+      "slug": "threskiornis-aethiopicus",
+      "scientificName": "Threskiornis aethiopicus",
+      "index": 0,
+      "type": "call",
+      "action": "kept",
+      "from": [
+        "309388"
+      ],
+      "to": "309388",
+      "quality": "A",
+      "country": "South Africa",
+      "locality": "Grahamstown, Eastern Cape",
       "cleaned": false,
       "license": "CC BY-NC-SA 4.0"
     },

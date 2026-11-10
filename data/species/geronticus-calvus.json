@@ -1,14 +1,184 @@
 {
+  "size": {
+    "lengthCm": {
+      "min": 79,
+      "max": 79
+    },
+    "note": "Newman's Birds gives 79 cm."
+  },
+  "habitat": "Small flocks in montane grassland in the eastern high-rainfall region, breeding and roosting on cliffs. It feeds in dry or burned grassveld and agricultural lands.",
+  "summary": "An uncommon to locally common endemic resident. The bald head and bill are bright red. The identification line says the legs are red, and the description says pink. The iridescent plumage appears black at a distance. The immature is duller, with greyish feathers on the head and neck. It sometimes gives a high-pitched keeauw-klaup-klaup. No Kemp estimate is stored.",
+  "variants": [
+    {
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "marks": {
+        "bill": {
+          "colour": "red",
+          "shape": "Decurved."
+        },
+        "eye": {
+          "iris": null,
+          "ring": null
+        },
+        "legs": {
+          "colour": null
+        },
+        "head": {
+          "crown": null,
+          "face": "red",
+          "throat": null,
+          "pattern": "Bright red bald head. The identification line says a red cap."
+        },
+        "upperparts": {
+          "back": null,
+          "rump": null,
+          "pattern": "Iridescent blue-black plumage that appears black at a distance."
+        },
+        "underparts": {
+          "breast": null,
+          "belly": null
+        },
+        "wings": {
+          "above": null,
+          "below": null
+        },
+        "tail": {
+          "colour": null,
+          "shape": null
+        }
+      }
+    },
+    {
+      "age": "immature",
+      "sex": "any",
+      "season": "any",
+      "marks": {
+        "bill": {
+          "colour": null,
+          "shape": null
+        },
+        "eye": {
+          "iris": null,
+          "ring": null
+        },
+        "legs": {
+          "colour": null
+        },
+        "head": {
+          "crown": null,
+          "face": null,
+          "throat": null,
+          "pattern": "Immature duller, with the head and neck covered in greyish feathers."
+        },
+        "upperparts": {
+          "back": null,
+          "rump": null
+        },
+        "underparts": {
+          "breast": null,
+          "belly": null
+        },
+        "wings": {
+          "above": null,
+          "below": null
+        },
+        "tail": {
+          "colour": null,
+          "shape": null
+        }
+      }
+    }
+  ],
+  "viewNotes": [
+    {
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Dark iridescent plumage and a bright red bald head and bill."
+    },
+    {
+      "view": "perched-front",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Red bald head. The legs are red on the identification line and pink in the description."
+    },
+    {
+      "view": "perched-back",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Appears black at a distance."
+    },
+    {
+      "view": "flight-above",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Flight plumage is not described separately."
+    },
+    {
+      "view": "flight-below",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "The underside in flight is not described."
+    }
+  ],
+  "calls": [
+    {
+      "sex": "any",
+      "type": "call",
+      "description": "Sometimes a high-pitched 'keeauw-klaup-klaup'. No grade A recording was found. The selected file is a grade B flight call from the Free State. The filename is XC902587-MixPre-026_Southern_bald_ibis_01.mp3.",
+      "recordings": [
+        {
+          "key": "xeno-canto/XC902587",
+          "source": "https://xeno-canto.org/902587",
+          "fileUrl": "https://xeno-canto.org/sounds/uploaded/VWCBCAIJUC/XC902587-MixPre-026_Southern_bald_ibis_01.mp3",
+          "author": "Guilherme Melo",
+          "license": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ]
+    }
+  ],
+  "images": [
+    {
+      "key": "geronticus-calvus/side.jpg",
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "source": "https://www.inaturalist.org/observations/346829247",
+      "fileUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/632277168/large.jpg",
+      "author": "egorbirder",
+      "license": "CC BY 4.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by/4.0/",
+      "aiGenerated": false,
+      "hosted": false,
+      "alt": "Southern Bald Ibis in Kruger, Mopani, dark, with a bare red head. The photograph is distant.",
+      "caption": "Southern Bald Ibis in Kruger, Mopani, dark, with a bare red head. The photograph is distant."
+    }
+  ],
+  "research": {
+    "confidence": "medium",
+    "needsReview": true,
+    "note": "Newman calls it an uncommon to locally common endemic resident, and Avibase does not mark the Kruger occurrence rare or accidental, so all twelve months are listed. Blue-black is not stored as one colour. The legs are red and pink, so no leg colour is stored. No grade A recording was found. No Kemp estimate is stored."
+  },
   "kind": "species",
   "slug": "geronticus-calvus",
+  "family": "threskiornithidae",
+  "sampleData": false,
   "scientificName": "Geronticus calvus",
   "commonNames": {
     "en": "Southern Bald Ibis",
     "af": "Kalkoenibis"
   },
-  "family": "threskiornithidae",
-  "summary": "The details for this species have not been published yet.",
-  "sampleData": true,
   "population": {
     "estimate": {
       "low": null,
@@ -21,8 +191,33 @@
     "notes": "No sourced Kruger estimate is currently available; taxonomy or later records require separate research.",
     "sources": []
   },
-  "variants": [],
-  "viewNotes": [],
-  "calls": [],
-  "images": []
+  "status": "resident",
+  "monthsPresent": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+  ],
+  "sources": [
+    {
+      "title": "Southern Bald Ibis",
+      "url": "https://newmansbirds.com/birds/southern-bald-ibis/",
+      "publisher": "Newman's Birds",
+      "year": 2026
+    },
+    {
+      "title": "Avibase bird checklist — Kruger National Park",
+      "url": "https://avibase.bsc-eoc.org/checklist.jsp?region=ZA000003",
+      "publisher": "Avibase",
+      "year": null
+    }
+  ]
 }
