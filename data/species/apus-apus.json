@@ -167,7 +167,7 @@
     {
       "sex": "male",
       "type": "call",
-      "description": "Wikipedia says the scream has two pitches and that the higher pitch is the female’s, so the lower pitch is the male’s. The only grade A cut labelled male is a pair inspecting a nest hole, so it was not used.",
+      "description": "Wikipedia says the scream has two pitches and that the higher pitch is the female’s, so the lower pitch is the male’s. The only grade A cut labelled male, XC561502, is typed song, and the recordist describes a pair inspecting a nest hole, so it was not used.",
       "recordings": []
     },
     {
@@ -226,6 +226,6 @@
   "research": {
     "confidence": "medium",
     "needsReview": false,
-    "note": "Status is a Palearctic migrant. SABAP1 gives arrival in October in the northern zones and departure mainly in February and March, so those months are listed. A few may stay in winter. Newman has no species page for this swift. Chick down and a Kruger recording were not found. The grade A call is from Sweden. The female call is grade B from Russia. The only grade A cut labelled male is a pair at a nest hole, so the male slot is still empty."
+    "note": "Status is a Palearctic migrant. SABAP1 gives arrival in October in the northern zones and departure mainly in February and March, so those months are listed. A few may stay in winter. Newman has no species page for this swift. Chick down and a Kruger recording were not found. The grade A call is from Sweden. The female call is grade B from Russia. The only grade A cut labelled male, XC561502, is typed song and its remarks describe a pair at a nest hole, so the male slot is still empty."
   }
 }
