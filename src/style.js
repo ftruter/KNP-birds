@@ -285,6 +285,35 @@ p { text-wrap: pretty; }
   text-align: center;
 }
 
+/* Off screen until keyboard focus reaches it, then shown at the end of the pill. */
+.site-search-submit {
+  position: absolute;
+  inset-inline-end: 0.3rem;
+  inline-size: 1px;
+  block-size: 1px;
+  padding: 0;
+  overflow: hidden;
+  clip-path: inset(50%);
+  border: 0;
+  white-space: nowrap;
+}
+
+.site-search-submit:focus-visible {
+  inline-size: auto;
+  block-size: auto;
+  clip-path: none;
+  padding-block: 0.2rem;
+  padding-inline: 0.6rem;
+  border: 1px solid var(--search-line);
+  border-radius: 0.35rem;
+  background: var(--header-fg);
+  color: var(--nav-pill);
+  font-family: var(--sans);
+  font-weight: 700;
+  outline: 3px solid ${light.bg};
+  outline-offset: 2px;
+}
+
 @media (min-width: 48rem) {
   .js .site-search input:placeholder-shown:not(:focus)::placeholder { color: transparent; }
   .js .site-search input:placeholder-shown:not(:focus) ~ .site-search-hint { display: block; }

@@ -202,8 +202,9 @@ const bindSearch = () => {
   })
   input.addEventListener('keydown', (event) => {
     if (event.key !== 'Escape') return
+    // An open photo zoom is the topmost UI: leave this Esc to its handler.
+    if (document.querySelector('.plate.is-zoomed')) return
     event.preventDefault()
-    event.stopPropagation()
     if (input.value) input.value = ''
     else input.blur()
   })

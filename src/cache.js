@@ -82,7 +82,7 @@ export const cacheRequest = (url, version, acceptLanguage) => {
   source.hash = ''
   if (version) source.searchParams.set('v', version)
   if (query) source.searchParams.set('q', query)
-  if (formatsNumbers(path)) {
+  if (formatsNumbers(path) && !isSearchPath(path)) {
     source.searchParams.set('lang', resolveLocale(acceptLanguage))
     const columns = path.endsWith('.md') ? null : listColumns(path)
     if (

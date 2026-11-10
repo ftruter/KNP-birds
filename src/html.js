@@ -917,6 +917,7 @@ const searchFormHtml = (
 ${SEARCH_ICON}
 <input id="site-search-q" type="search" name="q" value="${escapeHtml(query)}" placeholder="Search birds" maxlength="${SEARCH_MAX}" autocomplete="off" spellcheck="false" enterkeyhint="search">
 <span class="site-search-hint" aria-hidden="true">Type <kbd>/</kbd> to search</span>
+<button class="site-search-submit" type="submit">Search</button>
 </form>`
 
 const SNIPPET_LABEL = {

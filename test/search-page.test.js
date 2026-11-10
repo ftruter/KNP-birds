@@ -2,6 +2,7 @@ import assert from 'node:assert/strict'
 import { test } from 'node:test'
 import { cacheRequest, PAGE_CACHE } from '../src/cache.js'
 import { parseUrl, searchQuery } from '../src/route.js'
+import { searchRecords } from '../src/search.js'
 import { handleRequest } from '../src/worker.js'
 import { loadStore, mockBucket, mockKv, requestContext } from './helpers.js'
 
@@ -218,4 +219,43 @@ test('every html page has the header search form before the site nav', async () 
     )
     assert.match(html, /<svg class="site-search-icon" aria-hidden="true"/, path)
   }
+})
+
+test('search cache keys carry no locale, list pages still do', () => {
+  for (const path of ['/search?q=roller', '/search.md?q=roller']) {
+    const key = cacheRequest(`${ORIGIN}${path}`, 'v1', 'af-ZA')
+    assert.doesNotMatch(key.url, /lang=/, path)
+  }
+  assert.match(cacheRequest(`${ORIGIN}/species`, 'v1', 'af-ZA').url, /lang=/)
+})
+
+test('a snippet cut short at either end is marked with an ellipsis', () => {
+  const words = (n, w) => Array.from({ length: n }, () => w).join(' ')
+  const record = {
+    kind: 'species',
+    scientificName: 'Testus testus',
+    slug: 'testus-testus',
+    en: 'Test Bird',
+    af: null,
+    population: null,
+    habitat: `${words(30, 'grass')} marsh ${words(40, 'reed')}`,
+    identification: 'Short marsh note.',
+    populationNotes: null,
+  }
+  const [hit] = searchRecords([record], 'marsh', 5, ORIGIN).results
+  const habitat = hit.snippets.find((item) => item.field === 'habitat').text
+  assert.match(habitat, /^…/)
+  assert.match(habitat, /…$/)
+  assert.match(habitat, /marsh/)
+  const note = hit.snippets.find((item) => item.field === 'identification')
+  assert.equal(note.text, 'Short marsh note.')
+})
+
+test('the header form has a submit button for people who do not press Enter', async () => {
+  const fetch = await site()
+  const html = await (await fetch('/')).text()
+  assert.match(
+    html,
+    /<button class="site-search-submit" type="submit">Search<\/button>\n<\/form>/,
+  )
 })
