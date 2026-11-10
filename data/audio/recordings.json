@@ -604,6 +604,16 @@
         }
       ]
     },
+    "bostrychia-hagedash": {
+      "calls": [
+        {
+          "index": 0,
+          "quality": {
+            "xeno-canto/XC1146089": "A"
+          }
+        }
+      ]
+    },
     "botaurus-minutus": {
       "calls": [
         {
@@ -1734,6 +1744,16 @@
         }
       ]
     },
+    "geronticus-calvus": {
+      "calls": [
+        {
+          "index": 0,
+          "quality": {
+            "xeno-canto/XC902587": "B"
+          }
+        }
+      ]
+    },
     "glaucidium-capense": {
       "calls": [
         {
@@ -2392,6 +2412,16 @@
         }
       ]
     },
+    "platalea-alba": {
+      "calls": [
+        {
+          "index": 0,
+          "quality": {
+            "xeno-canto/XC385073": "A"
+          }
+        }
+      ]
+    },
     "platysteira-peltata": {
       "calls": [
         {
@@ -2412,6 +2442,16 @@
           "index": 1,
           "quality": {
             "xeno-canto/XC126343": "A"
+          }
+        }
+      ]
+    },
+    "plegadis-falcinellus": {
+      "calls": [
+        {
+          "index": 0,
+          "quality": {
+            "xeno-canto/XC108823": "A"
           }
         }
       ]
@@ -2913,6 +2953,16 @@
           "index": 0,
           "quality": {
             "xeno-canto/XC378030": "A"
+          }
+        }
+      ]
+    },
+    "threskiornis-aethiopicus": {
+      "calls": [
+        {
+          "index": 0,
+          "quality": {
+            "xeno-canto/XC309388": "A"
           }
         }
       ]

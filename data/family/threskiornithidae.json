@@ -6,8 +6,8 @@
     "en": "Ibises and spoonbills",
     "af": "Ibisse"
   },
-  "summary": "Field notes for this family are still to be written.",
-  "sampleData": true,
+  "summary": "Hadeda, Sacred Ibis, Glossy Ibis, Southern Bald Ibis and African Spoonbill. Wetland and grassland birds with decurved or spoon-shaped bills. Southern Bald Ibis has no Kemp estimate.",
+  "sampleData": false,
   "species": [
     {
       "slug": "bostrychia-hagedash",

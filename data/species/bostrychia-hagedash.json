@@ -1,14 +1,185 @@
 {
+  "size": {
+    "lengthCm": {
+      "min": 76,
+      "max": 76
+    },
+    "note": "Newman's Birds gives 76 cm."
+  },
+  "habitat": "Pairs or small groups on damp ground, near water, in vleis, plantations, agricultural lands, playing fields and suburban gardens. It roosts in tall trees.",
+  "summary": "A common resident. A heavy brown ibis with a decurved bill and a red culmen, a white cheek stripe and an iridescent pink shoulder. The identification line calls the body greenish-black. The immature is dull and fluffy-headed. The call is a raucous Ha! ha-a-a. The Kemp name Hadedah Ibis and the code RB were left unchanged.",
+  "variants": [
+    {
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "marks": {
+        "bill": {
+          "colour": null,
+          "shape": "Decurved, fairly short, with a red culmen."
+        },
+        "eye": {
+          "iris": null,
+          "ring": null
+        },
+        "legs": {
+          "colour": null
+        },
+        "head": {
+          "crown": null,
+          "face": null,
+          "throat": null,
+          "pattern": "Head and neck dull grey-brown, with a white cheek stripe."
+        },
+        "upperparts": {
+          "back": null,
+          "rump": null,
+          "pattern": "The identification line says the rest is greenish-black with an iridescent shoulder. The description says a heavy brown body and an iridescent pink shoulder."
+        },
+        "underparts": {
+          "breast": null,
+          "belly": null
+        },
+        "wings": {
+          "above": null,
+          "below": null,
+          "pattern": "Iridescent pink shoulder. Broad wings in flight."
+        },
+        "tail": {
+          "colour": null,
+          "shape": null
+        }
+      }
+    },
+    {
+      "age": "immature",
+      "sex": "any",
+      "season": "any",
+      "marks": {
+        "bill": {
+          "colour": null,
+          "shape": null
+        },
+        "eye": {
+          "iris": null,
+          "ring": null
+        },
+        "legs": {
+          "colour": null
+        },
+        "head": {
+          "crown": null,
+          "face": null,
+          "throat": null,
+          "pattern": "Immature dull and fluffy-headed."
+        },
+        "upperparts": {
+          "back": null,
+          "rump": null
+        },
+        "underparts": {
+          "breast": null,
+          "belly": null
+        },
+        "wings": {
+          "above": null,
+          "below": null
+        },
+        "tail": {
+          "colour": null,
+          "shape": null
+        }
+      }
+    }
+  ],
+  "viewNotes": [
+    {
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Brown body, decurved bill and a white cheek stripe."
+    },
+    {
+      "view": "perched-front",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "White cheek stripe. The culmen is red."
+    },
+    {
+      "view": "perched-back",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Iridescent pink shoulder. The identification line also says greenish-black."
+    },
+    {
+      "view": "flight-above",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Broad wings and an iridescent shoulder."
+    },
+    {
+      "view": "flight-below",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "The underside in flight is not described."
+    }
+  ],
+  "calls": [
+    {
+      "sex": "any",
+      "type": "call",
+      "description": "A raucous 'Ha! ha-a-a… ha-ha-a-a…', often from several birds together, when perched or in flight. The grade A flight call is from Kruger, near Skukuza. The filename is XC1146089-20260511_KNP_AKaramitsos_XA60_A025C090_260511NP_SLE_-3dB_HI.mp3.",
+      "recordings": [
+        {
+          "key": "xeno-canto/XC1146089",
+          "source": "https://xeno-canto.org/1146089",
+          "fileUrl": "https://xeno-canto.org/sounds/uploaded/YSGTQVRQZI/XC1146089-20260511_KNP_AKaramitsos_XA60_A025C090_260511NP_SLE_-3dB_HI.mp3",
+          "author": "African Bioacoustics Community",
+          "license": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ]
+    }
+  ],
+  "images": [
+    {
+      "key": "bostrychia-hagedash/side.jpg",
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "source": "https://www.inaturalist.org/observations/261874557",
+      "fileUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/470550564/large.jpg",
+      "author": "brewmaster",
+      "license": "CC BY-NC 4.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+      "aiGenerated": false,
+      "hosted": false,
+      "alt": "Hadeda Ibis in Kruger, Ehlanzeni, brown, with a decurved bill and a white cheek stripe.",
+      "caption": "Hadeda Ibis in Kruger, Ehlanzeni, brown, with a decurved bill and a white cheek stripe."
+    }
+  ],
+  "research": {
+    "confidence": "medium",
+    "needsReview": true,
+    "note": "Newman calls it a common resident, and Avibase does not mark it rare, so all twelve months are listed. The body is brown in the description and greenish-black on the identification line, so no single body colour is stored. Grey-brown is not a vocabulary colour. The grade A flight call is from Kruger. The iNaturalist account has no display name, so the login brewmaster is credited. The Kemp name Hadedah Ibis and the code RB were left unchanged."
+  },
   "kind": "species",
   "slug": "bostrychia-hagedash",
+  "family": "threskiornithidae",
+  "sampleData": false,
   "scientificName": "Bostrychia hagedash",
   "commonNames": {
     "en": "Hadeda (Hadada) Ibis",
     "af": "Hadeda"
   },
-  "family": "threskiornithidae",
-  "summary": "The details for this species have not been published yet.",
-  "sampleData": true,
   "population": {
     "estimate": {
       "low": 1024,
@@ -35,8 +206,39 @@
     },
     "tierApplied": "D"
   },
-  "variants": [],
-  "viewNotes": [],
-  "calls": [],
-  "images": []
+  "status": "resident",
+  "monthsPresent": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+  ],
+  "sources": [
+    {
+      "title": "Hadada Ibis",
+      "url": "https://newmansbirds.com/birds/hadada-ibis/",
+      "publisher": "Newman's Birds",
+      "year": 2026
+    },
+    {
+      "title": "Avibase bird checklist — Kruger National Park",
+      "url": "https://avibase.bsc-eoc.org/checklist.jsp?region=ZA000003",
+      "publisher": "Avibase",
+      "year": null
+    },
+    {
+      "title": "Kemp A.C., Herholdt J.J., Whyte I. & Harrison J. (2001). Birds of the two largest national parks in South Africa: a method to generate estimates of population size for all species and assess their conservation ecology. S. Afr. J. Sci. 97: 393–403.",
+      "url": "https://journals.co.za/doi/pdf/10.10520/EJC97367",
+      "publisher": "South African Journal of Science",
+      "year": 2001
+    }
+  ]
 }
