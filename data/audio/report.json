@@ -1,10 +1,10 @@
 {
   "source": "xeno-canto explore catalogue, API v3 recording fields",
   "counts": {
-    "slots": 493,
+    "slots": 498,
     "swapped": 17,
     "added": 278,
-    "kept": 170,
+    "kept": 175,
     "none": 28,
     "cleaned": 0
   },
@@ -1794,6 +1794,22 @@
       "license": "CC BY-NC-SA 4.0"
     },
     {
+      "slug": "lybius-torquatus",
+      "scientificName": "Lybius torquatus",
+      "index": 0,
+      "type": "duet",
+      "action": "kept",
+      "from": [
+        "1137920"
+      ],
+      "to": "1137920",
+      "quality": "A",
+      "country": "South Africa",
+      "locality": "Kruger Park",
+      "cleaned": false,
+      "license": "CC BY-NC-SA 4.0"
+    },
+    {
       "slug": "macheiramphus-alcinus",
       "scientificName": "Macheiramphus alcinus",
       "index": 0,
@@ -2200,6 +2216,38 @@
       "quality": "A",
       "country": "Malawi",
       "locality": "Liwonde National Park",
+      "cleaned": false,
+      "license": "CC BY-NC-SA 4.0"
+    },
+    {
+      "slug": "pogoniulus-bilineatus",
+      "scientificName": "Pogoniulus bilineatus",
+      "index": 0,
+      "type": "call",
+      "action": "kept",
+      "from": [
+        "265020"
+      ],
+      "to": "265020",
+      "quality": "A",
+      "country": "Uganda",
+      "locality": "Bunyangabu",
+      "cleaned": false,
+      "license": "CC BY-NC-SA 4.0"
+    },
+    {
+      "slug": "pogoniulus-chrysoconus",
+      "scientificName": "Pogoniulus chrysoconus",
+      "index": 0,
+      "type": "call",
+      "action": "kept",
+      "from": [
+        "1103079"
+      ],
+      "to": "1103079",
+      "quality": "A",
+      "country": "South Africa",
+      "locality": "Roodeplaat",
       "cleaned": false,
       "license": "CC BY-NC-SA 4.0"
     },
@@ -2707,6 +2755,38 @@
       "locality": "",
       "cleaned": false,
       "license": ""
+    },
+    {
+      "slug": "trachyphonus-vaillantii",
+      "scientificName": "Trachyphonus vaillantii",
+      "index": 0,
+      "type": "call",
+      "action": "kept",
+      "from": [
+        "208497"
+      ],
+      "to": "208497",
+      "quality": "A",
+      "country": "South Africa",
+      "locality": "Mmabolela",
+      "cleaned": false,
+      "license": "CC BY-NC-SA 4.0"
+    },
+    {
+      "slug": "tricholaema-leucomelas",
+      "scientificName": "Tricholaema leucomelas",
+      "index": 0,
+      "type": "call",
+      "action": "kept",
+      "from": [
+        "756685"
+      ],
+      "to": "756685",
+      "quality": "A",
+      "country": "South Africa",
+      "locality": "near Mica",
+      "cleaned": false,
+      "license": "CC BY-NC-SA 4.0"
     },
     {
       "slug": "trigonoceps-occipitalis",

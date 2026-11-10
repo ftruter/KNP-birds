@@ -6,8 +6,8 @@
     "en": "African barbets",
     "af": "Houtkappers"
   },
-  "summary": "Field notes for this family are still to be written.",
-  "sampleData": true,
+  "summary": "Five barbets and tinkerbirds of woodland and forest. Black-collared and Crested Barbets are the large, brightly marked birds. The tinkerbirds are small canopy birds with repetitive calls.",
+  "sampleData": false,
   "species": [
     {
       "slug": "lybius-torquatus",
