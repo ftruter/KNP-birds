@@ -427,6 +427,17 @@
           "hosted": false,
           "quality": "A",
           "callType": "song"
+        },
+        {
+          "key": "xeno-canto/XC481968",
+          "author": "Helge Malmgren",
+          "licence": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "sourceUrl": "https://xeno-canto.org/481968",
+          "aiGenerated": false,
+          "hosted": false,
+          "quality": "B",
+          "callType": "song"
         }
       ],
       "sources": [

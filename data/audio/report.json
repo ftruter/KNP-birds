@@ -3,9 +3,9 @@
   "counts": {
     "slots": 526,
     "swapped": 17,
-    "added": 278,
+    "added": 279,
     "kept": 203,
-    "none": 28,
+    "none": 27,
     "cleaned": 0
   },
   "noUsableRecording": [
@@ -18,11 +18,6 @@
       "slug": "trigonoceps-occipitalis",
       "scientificName": "Trigonoceps occipitalis",
       "type": "call"
-    },
-    {
-      "slug": "acrocephalus-palustris",
-      "scientificName": "Acrocephalus palustris",
-      "type": "song"
     },
     {
       "slug": "eremopterix-verticalis",
@@ -3255,14 +3250,14 @@
       "scientificName": "Acrocephalus palustris",
       "index": 1,
       "type": "song",
-      "action": "none",
+      "action": "added",
       "from": [],
-      "to": "",
-      "quality": "",
-      "country": "",
-      "locality": "",
+      "to": "481968",
+      "quality": "B",
+      "country": "Sweden",
+      "locality": "Ale Municipality, Västra Götalands län",
       "cleaned": false,
-      "license": ""
+      "license": "CC BY-NC-SA 4.0"
     },
     {
       "slug": "acrocephalus-schoenobaenus",
