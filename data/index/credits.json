@@ -16767,7 +16767,17 @@
       "slug": "macheiramphus-alcinus",
       "scientificName": "Macheiramphus alcinus",
       "commonName": "Bat Hawk",
-      "images": [],
+      "images": [
+        {
+          "key": "macheiramphus-alcinus/flight-below.jpg",
+          "author": "Niall Perrins",
+          "licence": "CC BY-NC 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+          "sourceUrl": "https://www.inaturalist.org/observations/334597511",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ],
       "recordings": [
         {
           "key": "xeno-canto/XC758044",
