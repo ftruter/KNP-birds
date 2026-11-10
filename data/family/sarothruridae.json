@@ -6,8 +6,8 @@
     "en": "Flufftails",
     "af": "Vleikuikens"
   },
-  "summary": "Field notes for this family are still to be written.",
-  "sampleData": true,
+  "summary": "Two secretive flufftails. Buff-spotted Flufftail has rounded buff spots and lives in forest and long grass. Red-chested Flufftail is streaked, with a mostly black tail, and keeps to marshes.",
+  "sampleData": false,
   "species": [
     {
       "slug": "sarothrura-elegans",

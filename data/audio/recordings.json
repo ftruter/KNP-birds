@@ -2460,6 +2460,26 @@
         }
       ]
     },
+    "sarothrura-elegans": {
+      "calls": [
+        {
+          "index": 0,
+          "quality": {
+            "xeno-canto/XC952488": "A"
+          }
+        }
+      ]
+    },
+    "sarothrura-rufa": {
+      "calls": [
+        {
+          "index": 0,
+          "quality": {
+            "xeno-canto/XC645330": "A"
+          }
+        }
+      ]
+    },
     "spatula-hottentota": {
       "calls": [
         {
