@@ -7,6 +7,13 @@
     "af": "Vaalkoester"
   },
   "family": "motacillidae",
+  "size": {
+    "lengthCm": {
+      "min": 16,
+      "max": 18
+    },
+    "note": "Wikipedia gives 16–18 cm."
+  },
   "habitat": "Semi-arid plains with grass and bare ground, and open grassy plains grazed short, with anthills and low scrub. Also fallow pastures, burnt fields and the edges of saltpans. Usually single or in pairs, with limited winter flocks.",
   "summary": "No Newman page. Compared with Plain-backed Pipit it is paler and buffier above, with a warm reddish-buff rump, a less sharply defined pale eyebrow, fainter breast markings, and buffy belly and flanks. The juvenile has mottles. Wikipedia says the lower mandible has a pinkish base. SABAP1 says the base of the lower mandible is yellow. That conflict is left unresolved. No length is given. The Kemp code RB was left unchanged.",
   "sampleData": false,
@@ -252,7 +259,7 @@
   "research": {
     "confidence": "low",
     "needsReview": true,
-    "note": "No Newman page. SABAP1 describes breeding races and winter flocks and does not use the word resident, so status and months are unset. The bill-base colour conflicts between Wikipedia and SABAP1. Wikipedia’s length sentence is blank. Population figures and the Kemp code RB were left unchanged."
+    "note": "No Newman page. SABAP1 describes breeding races and winter flocks and does not use the word resident, so status and months are unset. Length is from Wikipedia (16–18 cm). The bill-base colour conflicts between Wikipedia and SABAP1. Population figures and the Kemp code RB were left unchanged."
   },
   "similar": [
     {
