@@ -2650,6 +2650,26 @@
         }
       ]
     },
+    "prionops-plumatus": {
+      "calls": [
+        {
+          "index": 0,
+          "quality": {
+            "xeno-canto/XC447081": "A"
+          }
+        }
+      ]
+    },
+    "prionops-retzii": {
+      "calls": [
+        {
+          "index": 0,
+          "quality": {
+            "xeno-canto/XC237788": "A"
+          }
+        }
+      ]
+    },
     "pterocles-bicinctus": {
       "calls": [
         {
