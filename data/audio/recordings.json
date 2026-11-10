@@ -2540,6 +2540,16 @@
         }
       ]
     },
+    "scopus-umbretta": {
+      "calls": [
+        {
+          "index": 0,
+          "quality": {
+            "xeno-canto/XC983782": "A"
+          }
+        }
+      ]
+    },
     "spatula-hottentota": {
       "calls": [
         {

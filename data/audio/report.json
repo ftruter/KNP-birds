@@ -1,10 +1,10 @@
 {
   "source": "xeno-canto explore catalogue, API v3 recording fields",
   "counts": {
-    "slots": 444,
+    "slots": 445,
     "swapped": 17,
     "added": 278,
-    "kept": 121,
+    "kept": 122,
     "none": 28,
     "cleaned": 0
   },
@@ -2028,6 +2028,22 @@
       "quality": "A",
       "country": "South Africa",
       "locality": "near Klerksdorp, North West",
+      "cleaned": false,
+      "license": "CC BY-NC-SA 4.0"
+    },
+    {
+      "slug": "scopus-umbretta",
+      "scientificName": "Scopus umbretta",
+      "index": 0,
+      "type": "call",
+      "action": "kept",
+      "from": [
+        "983782"
+      ],
+      "to": "983782",
+      "quality": "A",
+      "country": "South Africa",
+      "locality": "Kruger Park, near Skukuza",
       "cleaned": false,
       "license": "CC BY-NC-SA 4.0"
     },
