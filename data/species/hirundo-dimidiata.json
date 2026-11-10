@@ -29,6 +29,12 @@
       "url": "https://newmansbirds.com/birds/pearl-breasted-swallow/",
       "publisher": "Newman's Birds",
       "year": 2026
+    },
+    {
+      "title": "The Atlas of Southern African Birds, Vol. 2 (Pearlbreasted Swallow)",
+      "url": "https://sabap2.birdmap.africa/docs/sabap1/523.pdf",
+      "publisher": "BirdLife South Africa",
+      "year": 1997
     }
   ],
   "population": {
@@ -179,6 +185,6 @@
   "research": {
     "confidence": "medium",
     "needsReview": true,
-    "note": "Newman calls it a resident and a winter visitor, and also says it is present only in summer in many regions, especially the south. Status and months were left unset. The Kemp code VB was left unchanged. Population figures were left unchanged."
+    "note": "Newman calls it a resident and a winter visitor, and also says it is present only in summer in many regions, especially the south. Status and months were left unset. The Kemp code VB was left unchanged. Population figures were left unchanged. SABAP1 says it occurs all year in the Transvaal but is commoner in winter, from a presumed influx, so status stays omitted."
   }
 }

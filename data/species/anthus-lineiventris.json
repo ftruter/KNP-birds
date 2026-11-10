@@ -176,7 +176,7 @@
   "research": {
     "confidence": "medium",
     "needsReview": true,
-    "note": "No Newman page. Residency is not stated, so status and monthsPresent are unset. That is why this needs review. Population figures and the Kemp code RB were left unchanged."
+    "note": "No Newman page. Residency is not stated, so status and monthsPresent are unset. That is why this needs review. Population figures and the Kemp code RB were left unchanged. Status is still omitted: SABAP1 describes a seasonal influx of presumed migrants in the Lebombo Mountains and dry-season movement of plateau birds, but no seasonal pattern in Swaziland."
   },
   "size": {
     "lengthCm": {

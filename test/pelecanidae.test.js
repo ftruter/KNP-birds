@@ -25,7 +25,7 @@ test('both pelicans are sourced without changing populations', async () => {
   assert.equal(white.research.needsReview, true)
 
   const pink = await readJson('data/species/pelecanus-rufescens.json')
-  assert.equal(pink.status, undefined)
+  assert.equal(pink.status, 'resident')
   assert.equal(pink.monthsPresent, undefined)
   assert.equal(pink.size.lengthCm.min, 135)
   assert.equal(pink.population.estimate.low, 4)

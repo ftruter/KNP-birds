@@ -35,6 +35,12 @@
       "url": "https://journals.co.za/doi/pdf/10.10520/EJC97367",
       "publisher": "South African Journal of Science",
       "year": 2001
+    },
+    {
+      "title": "The Atlas of Southern African Birds, Vol. 1 (Lesser Flamingo)",
+      "url": "https://sabap2.birdmap.africa/docs/sabap1/097.pdf",
+      "publisher": "BirdLife South Africa",
+      "year": 1997
     }
   ],
   "population": {
@@ -258,6 +264,6 @@
   "research": {
     "confidence": "medium",
     "needsReview": true,
-    "note": "Newman says locally abundant nomadic resident and visitor, so status and monthsPresent are unset. The colour key says a red bill and the description says dark maroon, looking black, which is why this needs review. Population figures and the Kemp code NB were left unchanged."
+    "note": "Newman says locally abundant nomadic resident and visitor, so status and monthsPresent are unset. The colour key says a red bill and the description says dark maroon, looking black, which is why this needs review. Population figures and the Kemp code NB were left unchanged. SABAP1 describes long movements as breeding pans dry out, so status stays omitted."
   }
 }

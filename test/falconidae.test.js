@@ -20,7 +20,7 @@ test('falcons and kestrels are sourced without changing populations', async () =
       'summer-migrant',
     ],
     'falco-biarmicus': [8, 32, 'Lanner Falcon', 'RB', 'resident'],
-    'falco-concolor': [2, 8, 'Sooty Falcon', 'NB', undefined],
+    'falco-concolor': [2, 8, 'Sooty Falcon', 'NB', 'palearctic-migrant'],
     'falco-dickinsoni': [32, 128, 'Dickinson’s Kestrel', 'RB', undefined],
     'falco-naumanni': [512, 2048, 'Lesser Kestrel', 'NB', 'summer-migrant'],
     'falco-peregrinus': [4, 16, 'Peregrine Falcon', 'RB', undefined],

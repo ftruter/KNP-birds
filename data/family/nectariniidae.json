@@ -103,13 +103,11 @@
     "complete": false
   },
   "residency": {
-    "speciesKnown": 6,
-    "speciesUnknown": 4,
+    "speciesKnown": 8,
+    "speciesUnknown": 2,
     "unknownSpecies": [
-      "cinnyris-afer",
       "cinnyris-bifasciatus",
-      "cinnyris-chalybeus",
-      "hedydipna-collaris"
+      "cinnyris-chalybeus"
     ]
   }
 }

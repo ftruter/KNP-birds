@@ -71,12 +71,10 @@
     "complete": true
   },
   "residency": {
-    "speciesKnown": 3,
-    "speciesUnknown": 3,
+    "speciesKnown": 5,
+    "speciesUnknown": 1,
     "unknownSpecies": [
-      "merops-apiaster",
-      "merops-nubicoides",
-      "merops-persicus"
+      "merops-apiaster"
     ]
   }
 }

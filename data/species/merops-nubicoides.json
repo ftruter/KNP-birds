@@ -7,6 +7,7 @@
     "af": "Rooiborsbyvreter"
   },
   "family": "meropidae",
+  "status": "intra-african-migrant",
   "size": {
     "lengthCm": {
       "min": 33,
@@ -29,6 +30,12 @@
       "url": "https://journals.co.za/doi/pdf/10.10520/EJC97367",
       "publisher": "South African Journal of Science",
       "year": 2001
+    },
+    {
+      "title": "The Atlas of Southern African Birds, Vol. 1 (Carmine Beeeater)",
+      "url": "https://sabap2.birdmap.africa/docs/sabap1/441.pdf",
+      "publisher": "BirdLife South Africa",
+      "year": 1997
     }
   ],
   "population": {
@@ -255,7 +262,7 @@
   "research": {
     "confidence": "medium",
     "needsReview": true,
-    "note": "Newman says common summer resident and visitor, so status and monthsPresent are left unset. Northern Carmine Bee-eater is the comparison and is not in this list. Carmine is not a colour token. Population figures and the Kemp code NB were left unchanged."
+    "note": "Newman says common summer resident and visitor. Northern Carmine Bee-eater is the comparison and is not in this list. Carmine is not a colour token. Population figures and the Kemp code NB were left unchanged. Status is intra-african-migrant: SABAP1 describes a three-stage migration, with post-breeding dispersal into the Transvaal and departure to equatorial Africa in March."
   },
   "similar": [
     {

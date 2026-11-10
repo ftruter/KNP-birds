@@ -191,15 +191,11 @@
     "complete": false
   },
   "residency": {
-    "speciesKnown": 15,
-    "speciesUnknown": 6,
+    "speciesKnown": 19,
+    "speciesUnknown": 2,
     "unknownSpecies": [
-      "cisticola-aberrans",
       "cisticola-aridulus",
-      "cisticola-erythrops",
-      "cisticola-galactotes",
-      "cisticola-juncidis",
-      "eremomela-scotops"
+      "cisticola-juncidis"
     ]
   }
 }

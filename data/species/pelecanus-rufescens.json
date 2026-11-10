@@ -7,6 +7,7 @@
     "af": "Kleinpelikaan"
   },
   "family": "pelecanidae",
+  "status": "resident",
   "size": {
     "lengthCm": {
       "min": 135,
@@ -41,6 +42,12 @@
       "url": "https://journals.co.za/doi/pdf/10.10520/EJC97367",
       "publisher": "South African Journal of Science",
       "year": 2001
+    },
+    {
+      "title": "The Atlas of Southern African Birds, Vol. 1 (Pinkbacked Pelican)",
+      "url": "https://sabap2.birdmap.africa/docs/sabap1/050.pdf",
+      "publisher": "BirdLife South Africa",
+      "year": 1997
     }
   ],
   "population": {
@@ -263,6 +270,6 @@
   "research": {
     "confidence": "medium",
     "needsReview": true,
-    "note": "The colour key matches Pink-backed Pelican. The description paragraph matches Great White Pelican and was not used, so status and monthsPresent are unset and the plumage is only the key. That is why this needs review. Population figures, the Kemp paper name Pinkbacked Pelican and the code NB were left unchanged."
+    "note": "The colour key matches Pink-backed Pelican. The description paragraph matches Great White Pelican and was not used, so the plumage is only the key. That is why this needs review. Population figures, the Kemp paper name Pinkbacked Pelican and the code NB were left unchanged. Status is resident: SABAP1 says it is generally resident within an area of wetlands but makes local movements."
   }
 }

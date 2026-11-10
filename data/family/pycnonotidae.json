@@ -63,10 +63,8 @@
     "complete": false
   },
   "residency": {
-    "speciesKnown": 4,
-    "speciesUnknown": 1,
-    "unknownSpecies": [
-      "phyllastrephus-flavostriatus"
-    ]
+    "speciesKnown": 5,
+    "speciesUnknown": 0,
+    "unknownSpecies": []
   }
 }

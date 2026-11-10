@@ -167,11 +167,10 @@
     "complete": false
   },
   "residency": {
-    "speciesKnown": 16,
-    "speciesUnknown": 2,
+    "speciesKnown": 17,
+    "speciesUnknown": 1,
     "unknownSpecies": [
-      "ortygospiza-atricollis",
-      "spermestes-fringilloides"
+      "ortygospiza-atricollis"
     ]
   }
 }

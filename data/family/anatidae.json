@@ -127,11 +127,9 @@
     "complete": false
   },
   "residency": {
-    "speciesKnown": 9,
-    "speciesUnknown": 4,
+    "speciesKnown": 11,
+    "speciesUnknown": 2,
     "unknownSpecies": [
-      "anas-capensis",
-      "anas-undulata",
       "dendrocygna-bicolor",
       "netta-erythrophthalma"
     ]

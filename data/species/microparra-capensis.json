@@ -29,6 +29,12 @@
       "url": "https://en.wikipedia.org/wiki/Lesser_jacana",
       "publisher": "Wikipedia",
       "year": 2026
+    },
+    {
+      "title": "The Atlas of Southern African Birds, Vol. 1 (Lesser Jacana)",
+      "url": "https://sabap2.birdmap.africa/docs/sabap1/241.pdf",
+      "publisher": "BirdLife South Africa",
+      "year": 1997
     }
   ],
   "population": {
@@ -222,6 +228,6 @@
   "research": {
     "confidence": "medium",
     "needsReview": true,
-    "note": "No Newman page was found. Wikipedia does not state residency, so status and months were left unset. The Kemp code NB was left unchanged. Population figures were left unchanged."
+    "note": "No Newman page was found. Wikipedia does not state residency, so status and months were left unset. The Kemp code NB was left unchanged. Population figures were left unchanged. Status is still omitted: SABAP1 finds no seasonality but says it moves in response to its ephemeral habitat."
   }
 }

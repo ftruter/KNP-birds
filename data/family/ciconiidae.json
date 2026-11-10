@@ -87,10 +87,8 @@
     "complete": false
   },
   "residency": {
-    "speciesKnown": 7,
-    "speciesUnknown": 1,
-    "unknownSpecies": [
-      "ciconia-abdimii"
-    ]
+    "speciesKnown": 8,
+    "speciesUnknown": 0,
+    "unknownSpecies": []
   }
 }

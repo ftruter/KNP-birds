@@ -48,7 +48,7 @@ test('all ten sunbirds are sourced without changing populations', async () => {
   const purple = await readJson('data/species/cinnyris-bifasciatus.json')
   assert.equal(purple.status, undefined)
   const collared = await readJson('data/species/hedydipna-collaris.json')
-  assert.equal(collared.status, undefined)
+  assert.equal(collared.status, 'resident')
   const malachite = await readJson('data/species/nectarinia-famosa.json')
   assert.equal(malachite.size.lengthCm.min, 15)
   assert.equal(malachite.size.lengthCm.max, 25)

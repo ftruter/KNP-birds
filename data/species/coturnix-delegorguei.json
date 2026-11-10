@@ -7,6 +7,7 @@
     "af": "Bontkwartel"
   },
   "family": "phasianidae",
+  "status": "intra-african-migrant",
   "habitat": "Pairs and small coveys in rank grass, especially in damp regions within grassland and bushveld.",
   "summary": "There is no Harlequin Quail page. The description on the Crested Francolin page is this quail: the male is darker than Common Quail, with bold black markings on a white throat and chestnut underparts. The female has a dark necklace across the throat to the ear coverts. The call is a loud metallic wit, wit-wit, wit, wit-wit-it. Newman says uncommon to fairly common summer resident, a few all year, and nomadic, sometimes irrupting and then disappearing. No length is given in that paragraph. Status and months are unset. The colour key on that page is Crested Francolin and was not used here. The Kemp code VB was left unchanged.",
   "sampleData": false,
@@ -28,6 +29,12 @@
       "url": "https://journals.co.za/doi/pdf/10.10520/EJC97367",
       "publisher": "South African Journal of Science",
       "year": 2001
+    },
+    {
+      "title": "The Atlas of Southern African Birds, Vol. 1 (Harlequin Quail)",
+      "url": "https://sabap2.birdmap.africa/docs/sabap1/201.pdf",
+      "publisher": "BirdLife South Africa",
+      "year": 1997
     }
   ],
   "population": {
@@ -250,6 +257,6 @@
   "research": {
     "confidence": "medium",
     "needsReview": true,
-    "note": "The matching paragraph is printed on the Crested Francolin page. It says summer resident, a few all year, and nomadic, so status and monthsPresent are unset. No length is given. The Kemp code VB was left unchanged."
+    "note": "The matching paragraph is printed on the Crested Francolin page. It says summer resident, a few all year, and nomadic. No length is given. The Kemp code VB was left unchanged. Status is intra-african-migrant: SABAP1 calls it an intra-African migrant that is mainly a sporadic summer-breeding visitor, with some overwintering."
   }
 }

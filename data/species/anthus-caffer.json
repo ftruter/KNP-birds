@@ -7,6 +7,7 @@
     "af": "Bosveldkoester"
   },
   "family": "motacillidae",
+  "status": "resident",
   "habitat": "On the ground in bushveld savanna, from near sea level to about 2000 m on the eastern plateau. SABAP1 says it is mostly single and becomes moderately gregarious in the non-breeding season.",
   "summary": "No Newman page. Wikipedia gives dry forest and dry savanna and no plumage. SABAP1 says it has few salient features, is larger and longer-tailed than the Short-tailed Pipit, and has a characteristic call that is not described. No length, plumage or status is stored. The Kemp code RB was left unchanged.",
   "sampleData": false,
@@ -98,6 +99,6 @@
   "research": {
     "confidence": "low",
     "needsReview": true,
-    "note": "No Newman page. Wikipedia and SABAP1 do not describe plumage, length or residency, so those fields are empty. Population figures and the Kemp code RB were left unchanged."
+    "note": "No Newman page. Wikipedia and SABAP1 do not describe plumage or length, so those fields are empty. Population figures and the Kemp code RB were left unchanged. Status is resident: SABAP1 says the southeastern lowland race traylori seems essentially sedentary and birds were present all year in all parts of the range."
   }
 }

@@ -38,10 +38,8 @@
     "complete": true
   },
   "residency": {
-    "speciesKnown": 1,
-    "speciesUnknown": 1,
-    "unknownSpecies": [
-      "pelecanus-rufescens"
-    ]
+    "speciesKnown": 2,
+    "speciesUnknown": 0,
+    "unknownSpecies": []
   }
 }

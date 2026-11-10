@@ -34,7 +34,7 @@ test('the three bustards are sourced without changing populations', async () => 
   assert.equal(black.variants.length, 2)
 
   const red = await readJson('data/species/lophotis-ruficrista.json')
-  assert.equal(red.status, undefined)
+  assert.equal(red.status, 'resident')
   assert.equal(red.monthsPresent, undefined)
   assert.equal(red.scientificName, 'Lophotis ruficrista')
   assert.equal(red.population.estimate.low, 8192)

@@ -104,7 +104,7 @@ test('the five bulbuls are sourced without changing populations', async () => {
   const streaked = await readJson(
     'data/species/phyllastrephus-flavostriatus.json',
   )
-  assert.equal(streaked.status, undefined)
+  assert.equal(streaked.status, 'resident')
   assert.equal(streaked.monthsPresent, undefined)
   assert.equal(streaked.size, undefined)
   assert.equal(streaked.habitat, undefined)

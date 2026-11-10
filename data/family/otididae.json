@@ -47,10 +47,8 @@
     "complete": true
   },
   "residency": {
-    "speciesKnown": 2,
-    "speciesUnknown": 1,
-    "unknownSpecies": [
-      "lophotis-ruficrista"
-    ]
+    "speciesKnown": 3,
+    "speciesUnknown": 0,
+    "unknownSpecies": []
   }
 }

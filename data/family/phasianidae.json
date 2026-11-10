@@ -87,12 +87,10 @@
     "complete": true
   },
   "residency": {
-    "speciesKnown": 5,
-    "speciesUnknown": 3,
+    "speciesKnown": 7,
+    "speciesUnknown": 1,
     "unknownSpecies": [
-      "coturnix-coturnix",
-      "coturnix-delegorguei",
-      "ortygornis-sephaena"
+      "coturnix-coturnix"
     ]
   }
 }

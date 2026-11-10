@@ -7,6 +7,7 @@
     "af": "Luitinktinkie"
   },
   "family": "cisticolidae",
+  "status": "resident",
   "size": {
     "lengthCm": {
       "min": 13,
@@ -24,6 +25,12 @@
       "url": "https://en.wikipedia.org/wiki/Rock-loving_cisticola",
       "publisher": "Wikipedia",
       "year": 2026
+    },
+    {
+      "title": "The Atlas of Southern African Birds, Vol. 2 (Lazy Cisticola)",
+      "url": "https://sabap2.birdmap.africa/docs/sabap1/679.pdf",
+      "publisher": "BirdLife South Africa",
+      "year": 1997
     }
   ],
   "population": {
@@ -174,6 +181,6 @@
   "research": {
     "confidence": "low",
     "needsReview": true,
-    "note": "Newman has no page. Length is from Wikipedia (13–14 cm). Status and months were left unset because the retrieved text does not give them. The Kemp code RB was left unchanged."
+    "note": "Newman has no page. Length is from Wikipedia (13–14 cm). The Kemp code RB was left unchanged. Status is resident: SABAP1 says it is resident and not known to make local movements in southern Africa."
   }
 }

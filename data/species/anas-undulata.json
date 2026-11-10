@@ -7,6 +7,7 @@
     "af": "Geelbekeend"
   },
   "family": "anatidae",
+  "status": "resident",
   "size": {
     "lengthCm": {
       "min": 51,
@@ -284,6 +285,6 @@
   "research": {
     "confidence": "medium",
     "needsReview": false,
-    "note": "Months in Kruger are not listed. SABAP1 says it is rare in southern Mozambique and Zimbabwe and has no regular migration where it is common. Newman calls it a very common resident of open water. Those accounts do not give a Kruger calendar. Chick down is not described. The flight call is grade A from the Western Cape and is not sexed. The male flight call is grade A from Uganda and the female call is grade B from the Western Cape; both are labelled by sex in the catalogue."
+    "note": "Months in Kruger are not listed. SABAP1 says it is rare in southern Mozambique and Zimbabwe and has no regular migration where it is common. Newman calls it a very common resident of open water. Those accounts do not give a Kruger calendar. Chick down is not described. The flight call is grade A from the Western Cape and is not sexed. The male flight call is grade A from Uganda and the female call is grade B from the Western Cape; both are labelled by sex in the catalogue. Status is resident: Newman calls it a very common resident, and SABAP1 says it is dispersive and nomadic but has no regular migrations."
   }
 }

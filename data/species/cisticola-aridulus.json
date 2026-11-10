@@ -17,6 +17,12 @@
       "url": "https://en.wikipedia.org/wiki/Desert_cisticola",
       "publisher": "Wikipedia",
       "year": 2026
+    },
+    {
+      "title": "The Atlas of Southern African Birds, Vol. 2 (Desert Cisticola)",
+      "url": "https://sabap2.birdmap.africa/docs/sabap1/665.pdf",
+      "publisher": "BirdLife South Africa",
+      "year": 1997
     }
   ],
   "population": {
@@ -123,6 +129,6 @@
   "research": {
     "confidence": "low",
     "needsReview": true,
-    "note": "Newman has no page. Wikipedia and SABAP1 texts used here give no total length, so size is omitted. Status and months were left unset. The Kemp code RB was left unchanged."
+    "note": "Newman has no page. Wikipedia and SABAP1 texts used here give no total length, so size is omitted. Status and months were left unset. The Kemp code RB was left unchanged. Status is still omitted: SABAP1 says local movements must be frequent and it is unclear whether there is a regular seasonal movement."
   }
 }

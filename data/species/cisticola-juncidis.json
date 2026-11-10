@@ -24,6 +24,12 @@
       "url": "https://en.wikipedia.org/wiki/Zitting_cisticola",
       "publisher": "Wikipedia",
       "year": 2026
+    },
+    {
+      "title": "The Atlas of Southern African Birds, Vol. 2 (Fantailed Cisticola)",
+      "url": "https://sabap2.birdmap.africa/docs/sabap1/664.pdf",
+      "publisher": "BirdLife South Africa",
+      "year": 1997
     }
   ],
   "population": {
@@ -217,6 +223,6 @@
   "research": {
     "confidence": "low",
     "needsReview": true,
-    "note": "Newman has no page. Length is from Wikipedia (10–12 cm). Status and months were left unset because the retrieved text does not give them. The Kemp name remains Fantailed Cisticola."
+    "note": "Newman has no page. Length is from Wikipedia (10–12 cm). Status and months were left unset because the retrieved text does not give them. The Kemp name remains Fantailed Cisticola. Status is still omitted: SABAP1 describes frequent local movements and a winter departure from the KwaZulu-Natal Drakensberg, and does not call it resident."
   }
 }

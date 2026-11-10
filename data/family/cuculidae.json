@@ -135,10 +135,8 @@
     "complete": false
   },
   "residency": {
-    "speciesKnown": 13,
-    "speciesUnknown": 1,
-    "unknownSpecies": [
-      "centropus-grillii"
-    ]
+    "speciesKnown": 14,
+    "speciesUnknown": 0,
+    "unknownSpecies": []
   }
 }

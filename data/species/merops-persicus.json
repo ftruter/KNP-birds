@@ -7,6 +7,7 @@
     "af": "Blouwangbyvreter"
   },
   "family": "meropidae",
+  "status": "palearctic-migrant",
   "size": {
     "lengthCm": {
       "min": 27,
@@ -29,6 +30,12 @@
       "url": "https://journals.co.za/doi/pdf/10.10520/EJC97367",
       "publisher": "South African Journal of Science",
       "year": 2001
+    },
+    {
+      "title": "The Atlas of Southern African Birds, Vol. 1 (Bluecheeked Beeeater)",
+      "url": "https://sabap2.birdmap.africa/docs/sabap1/440.pdf",
+      "publisher": "BirdLife South Africa",
+      "year": 1997
     }
   ],
   "population": {
@@ -178,7 +185,7 @@
   "research": {
     "confidence": "low",
     "needsReview": true,
-    "note": "The Newman description paragraph does not match the Merops persicus colour key, so status, months and that paragraph’s plumage and call are not used. Only the colour key and the size are applied. Population figures and the Kemp code NB were left unchanged."
+    "note": "The Newman description paragraph does not match the Merops persicus colour key, so that paragraph’s plumage and call are not used. Only the colour key and the size are applied. Population figures and the Kemp code NB were left unchanged. Status is palearctic-migrant: SABAP1 calls it a Palearctic migrant with no confirmed austral winter records."
   },
   "similar": [
     {

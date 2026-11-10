@@ -95,10 +95,9 @@
     "complete": true
   },
   "residency": {
-    "speciesKnown": 6,
-    "speciesUnknown": 3,
+    "speciesKnown": 7,
+    "speciesUnknown": 2,
     "unknownSpecies": [
-      "falco-concolor",
       "falco-dickinsoni",
       "falco-peregrinus"
     ]

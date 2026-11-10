@@ -7,6 +7,7 @@
     "af": "Bospatrys"
   },
   "family": "phasianidae",
+  "status": "resident",
   "size": {
     "lengthCm": {
       "min": 32,
@@ -29,6 +30,12 @@
       "url": "https://journals.co.za/doi/pdf/10.10520/EJC97367",
       "publisher": "South African Journal of Science",
       "year": 2001
+    },
+    {
+      "title": "The Atlas of Southern African Birds, Vol. 1 (Crested Francolin)",
+      "url": "https://sabap2.birdmap.africa/docs/sabap1/189.pdf",
+      "publisher": "BirdLife South Africa",
+      "year": 1997
     }
   ],
   "population": {
@@ -178,6 +185,6 @@
   "research": {
     "confidence": "medium",
     "needsReview": true,
-    "note": "The colour key matches Crested Francolin. The description paragraph matches Harlequin Quail and was not used, so status, monthsPresent and a transcribed voice are unset. That is why this needs review. Population figures and the Kemp code RB were left unchanged."
+    "note": "The colour key matches Crested Francolin. The description paragraph matches Harlequin Quail and was not used, so a transcribed voice is unset. That is why this needs review. Population figures and the Kemp code RB were left unchanged. Status is resident from SABAP1, which has no reports of seasonal movements and puts reporting-rate changes down to conspicuousness."
   }
 }

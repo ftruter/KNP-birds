@@ -29,6 +29,12 @@
       "url": "https://newmansbirds.com/birds/bronze-winged-courser/",
       "publisher": "Newman's Birds",
       "year": 2026
+    },
+    {
+      "title": "The Atlas of Southern African Birds, Vol. 1 (Bronzewinged Courser)",
+      "url": "https://sabap2.birdmap.africa/docs/sabap1/303.pdf",
+      "publisher": "BirdLife South Africa",
+      "year": 1997
     }
   ],
   "population": {
@@ -222,6 +228,6 @@
   "research": {
     "confidence": "medium",
     "needsReview": true,
-    "note": "Newman calls it an uncommon visitor and a resident, so status and months were left unset. The Kemp code VB was left unchanged. Population figures were left unchanged."
+    "note": "Newman calls it an uncommon visitor and a resident, so status and months were left unset. The Kemp code VB was left unchanged. Population figures were left unchanged. SABAP1 describes a resident population joined by nonbreeding migrants from November to May, so status stays omitted."
   }
 }

@@ -270,6 +270,6 @@
   "research": {
     "confidence": "medium",
     "needsReview": true,
-    "note": "Status is omitted. This is a rare visitor in Kruger, and the site has no vagrant status. The vocabulary is resident, intra-african-migrant, palearctic-migrant, and the older summer-migrant. No seasonal plumage change; immature brown. Gaps: Only 31 GBIF records in Kruger box — rare visitor. Images from Ndumo (KZN), not Kruger. Photos left out: A repeated file was omitted. Diet includes oil-palm fruits as well as carrion/crabs (BE/Wikipedia). monthsPresent set from Newman/SABAP seasonality cross-checked with GBIF Kruger month facets (not abundance)."
+    "note": "Status is omitted. This is a rare visitor in Kruger, and the site has no vagrant status. The vocabulary is resident, intra-african-migrant, palearctic-migrant, and the older summer-migrant. No seasonal plumage change; immature brown. Gaps: Only 31 GBIF records in Kruger box — rare visitor. Images from Ndumo (KZN), not Kruger. Photos left out: A repeated file was omitted. Diet includes oil-palm fruits as well as carrion/crabs (BE/Wikipedia). monthsPresent set from Newman/SABAP seasonality cross-checked with GBIF Kruger month facets (not abundance). SABAP1 says breeding birds in northern KwaZulu-Natal are resident and vagrants wander widely, so status stays omitted for Kruger."
   }
 }

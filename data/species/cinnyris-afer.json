@@ -7,6 +7,7 @@
     "af": "Groot-rooibandsuikerbekkie"
   },
   "family": "nectariniidae",
+  "status": "resident",
   "habitat": "The usable text does not describe the habitat.",
   "summary": "The colour key says it is similar to Southern Double-collared Sunbird, but the bill is longer than the head. It is endemic. The description on the same page is a short-billed olive sunbird and was not used. No matching call, status or further plumage was found. No Kemp estimate is stored.",
   "sampleData": false,
@@ -16,6 +17,12 @@
       "url": "https://newmansbirds.com/birds/greater-double-collared-sunbird/",
       "publisher": "Newman's Birds",
       "year": 2026
+    },
+    {
+      "title": "The Atlas of Southern African Birds, Vol. 2 (Greater Doublecollared Sunbird)",
+      "url": "https://sabap2.birdmap.africa/docs/sabap1/785.pdf",
+      "publisher": "BirdLife South Africa",
+      "year": 1997
     }
   ],
   "population": {
@@ -148,7 +155,7 @@
   "research": {
     "confidence": "low",
     "needsReview": true,
-    "note": "Only the colour key is used. The description on the Greater Double-collared page does not match a long-billed bird, so status and that voice are not stored. No Kemp block was present."
+    "note": "Only the colour key is used. The description on the Greater Double-collared page does not match a long-billed bird. No Kemp block was present. Status is resident from SABAP1, which says it is not considered migratory; it suggests only local altitudinal movement, which is unconfirmed."
   },
   "size": {
     "lengthCm": {

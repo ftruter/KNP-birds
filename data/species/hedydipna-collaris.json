@@ -7,6 +7,7 @@
     "af": "Kortbeksuikerbekkie"
   },
   "family": "nectariniidae",
+  "status": "resident",
   "habitat": "The colour key says riverine forests. The description on the page is an olive sunbird and was not used.",
   "summary": "The colour key says glossy-green upperparts, head and upper breast, with the rest of the underparts yellow. The female has entirely yellow underparts. The description on the same page is the olive sunbird and was not used, so no call or status is stored. The Kemp code RB was left unchanged.",
   "sampleData": false,
@@ -22,6 +23,12 @@
       "url": "https://journals.co.za/doi/pdf/10.10520/EJC97367",
       "publisher": "South African Journal of Science",
       "year": 2001
+    },
+    {
+      "title": "The Atlas of Southern African Birds, Vol. 2 (Collared Sunbird)",
+      "url": "https://sabap2.birdmap.africa/docs/sabap1/793.pdf",
+      "publisher": "BirdLife South Africa",
+      "year": 1997
     }
   ],
   "population": {
@@ -246,7 +253,7 @@
   "research": {
     "confidence": "medium",
     "needsReview": true,
-    "note": "Plumage and size come from the Collared colour key. The description paragraph is the olive sunbird, so status and that voice are not stored. Population figures and the Kemp code RB were left unchanged."
+    "note": "Plumage and size come from the Collared colour key. The description paragraph is the olive sunbird. Population figures and the Kemp code RB were left unchanged. Status is resident from SABAP1, which says it is considered sedentary and is unlikely to have any regular migration."
   },
   "size": {
     "lengthCm": {

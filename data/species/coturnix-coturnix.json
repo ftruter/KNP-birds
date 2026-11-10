@@ -35,6 +35,12 @@
       "url": "https://journals.co.za/doi/pdf/10.10520/EJC97367",
       "publisher": "South African Journal of Science",
       "year": 2001
+    },
+    {
+      "title": "The Atlas of Southern African Birds, Vol. 1 (Common Quail)",
+      "url": "https://sabap2.birdmap.africa/docs/sabap1/200.pdf",
+      "publisher": "BirdLife South Africa",
+      "year": 1997
     }
   ],
   "population": {
@@ -184,6 +190,6 @@
   "research": {
     "confidence": "medium",
     "needsReview": true,
-    "note": "Newman says common resident and visitor, so status and monthsPresent are unset. No Kruger photograph was found under an allowed licence. A side photograph from Richmond is stored. Population figures and the Kemp code VB were left unchanged."
+    "note": "Newman says common resident and visitor, so status and monthsPresent are unset. No Kruger photograph was found under an allowed licence. A side photograph from Richmond is stored. Population figures and the Kemp code VB were left unchanged. SABAP1 says the South African population has been claimed to be migratory, while a substantial part stays through the winter, so status stays omitted."
   }
 }

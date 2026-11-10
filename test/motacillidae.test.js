@@ -41,7 +41,7 @@ test('wagtails, pipits and the longclaw are sourced without changing populations
     )
   }
   const bush = await readJson('data/species/anthus-caffer.json')
-  assert.equal(bush.status, undefined)
+  assert.equal(bush.status, 'resident')
   assert.equal(bush.variants.length, 0)
   assert.equal(bush.research.needsReview, true)
   const nicholson = await readJson('data/species/anthus-nicholsoni.json')
