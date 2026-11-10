@@ -4934,6 +4934,16 @@
           }
         }
       ]
+    },
+    "zosterops-anderssoni": {
+      "calls": [
+        {
+          "index": 0,
+          "quality": {
+            "xeno-canto/XC660759": "A"
+          }
+        }
+      ]
     }
   }
 }

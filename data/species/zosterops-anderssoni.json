@@ -7,8 +7,36 @@
     "af": "Geelglasogie"
   },
   "family": "zosteropidae",
-  "summary": "The details for this species have not been published yet.",
-  "sampleData": true,
+  "size": {
+    "lengthCm": {
+      "min": 10.5,
+      "max": 10.5
+    },
+    "note": "Newman's Birds gives 10.5 cm."
+  },
+  "habitat": "Riverine forest, broad-leaved woodland, forests, exotic plantations and suburbia. Behaviour is like the Cape White-eye.",
+  "summary": "A common resident. Yellow-green above, with a yellow forecrown and entirely clear yellow underparts. The white eye-ring is unbroken by black lores. The call is like the Cape White-eye. The page uses Zosterops senegalensis. This list keeps Zosterops anderssoni. Avibase marks it rare, so the months are left unset. The Kemp name Yellow White-eye and the code RB were left unchanged.",
+  "sampleData": false,
+  "sources": [
+    {
+      "title": "Southern Yellow White-Eye",
+      "url": "https://newmansbirds.com/birds/southern-yellow-white-eye/",
+      "publisher": "Newman's Birds",
+      "year": 2026
+    },
+    {
+      "title": "Avibase bird checklist — Kruger National Park",
+      "url": "https://avibase.bsc-eoc.org/checklist.jsp?region=ZA000003",
+      "publisher": "Avibase",
+      "year": null
+    },
+    {
+      "title": "Kemp A.C., Herholdt J.J., Whyte I. & Harrison J. (2001). Birds of the two largest national parks in South Africa: a method to generate estimates of population size for all species and assess their conservation ecology. S. Afr. J. Sci. 97: 393–403.",
+      "url": "https://journals.co.za/doi/pdf/10.10520/EJC97367",
+      "publisher": "South African Journal of Science",
+      "year": 2001
+    }
+  ],
   "population": {
     "estimate": {
       "low": 2048,
@@ -35,8 +63,128 @@
     },
     "tierApplied": "D"
   },
-  "variants": [],
-  "viewNotes": [],
-  "calls": [],
-  "images": []
+  "variants": [
+    {
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "marks": {
+        "bill": {
+          "colour": null,
+          "shape": null
+        },
+        "eye": {
+          "iris": null,
+          "ring": "white"
+        },
+        "legs": {
+          "colour": null
+        },
+        "head": {
+          "crown": "yellow",
+          "face": null,
+          "throat": null,
+          "pattern": "Yellow forecrown. The white eye-ring is completely unbroken by black lores."
+        },
+        "upperparts": {
+          "back": "yellow-green",
+          "rump": null,
+          "pattern": "Uniform yellow-green above."
+        },
+        "underparts": {
+          "breast": "yellow",
+          "belly": "yellow",
+          "pattern": "Entirely clear yellow below."
+        },
+        "wings": {
+          "above": null,
+          "below": null
+        },
+        "tail": {
+          "colour": null,
+          "shape": null
+        }
+      }
+    }
+  ],
+  "viewNotes": [
+    {
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Yellow-green above and clear yellow below, with an unbroken white eye-ring."
+    },
+    {
+      "view": "perched-front",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Yellow forecrown and clear yellow underparts."
+    },
+    {
+      "view": "perched-back",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Uniform yellow-green upperparts."
+    },
+    {
+      "view": "flight-above",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Flight plumage is not described."
+    },
+    {
+      "view": "flight-below",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "The underside in flight is not described."
+    }
+  ],
+  "calls": [
+    {
+      "sex": "any",
+      "type": "call",
+      "description": "Calls like the Cape White-eye. No South African grade A recording was found under Zosterops anderssoni or Zosterops senegalensis. The grade A call is from Mutinondo in Zambia. The filename is XC660759-Southern White-eye (call) 20201206,Mutinondo,Muchinga,ZAMBIA.mp3.",
+      "recordings": [
+        {
+          "key": "xeno-canto/XC660759",
+          "source": "https://xeno-canto.org/660759",
+          "fileUrl": "https://xeno-canto.org/sounds/uploaded/IIJAXHKSCC/XC660759-Southern%20White-eye%20%28call%29%2020201206%2CMutinondo%2CMuchinga%2CZAMBIA.mp3",
+          "author": "Dries Van de Loock",
+          "license": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ]
+    }
+  ],
+  "images": [
+    {
+      "key": "zosterops-anderssoni/side.jpg",
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "source": "https://www.inaturalist.org/observations/263405566",
+      "fileUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/473195661/large.jpg",
+      "author": "lance_robinson",
+      "license": "CC BY-NC 4.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+      "aiGenerated": false,
+      "hosted": false,
+      "alt": "Southern Yellow White-eye in Kruger, yellow below with a white eye-ring",
+      "caption": "Southern Yellow White-eye in Kruger, Mopani, yellow below, with a white eye-ring."
+    }
+  ],
+  "research": {
+    "confidence": "medium",
+    "needsReview": true,
+    "note": "Newman calls it a common resident. Avibase marks Southern Yellow White-eye rare, so the months are left unset. The page uses Zosterops senegalensis. No South African grade A recording was found, so the Zambian grade A call is used. The Kemp name Yellow White-eye and the code RB were left unchanged."
+  },
+  "status": "resident"
 }

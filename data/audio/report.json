@@ -1,10 +1,10 @@
 {
   "source": "xeno-canto explore catalogue, API v3 recording fields",
   "counts": {
-    "slots": 488,
+    "slots": 489,
     "swapped": 17,
     "added": 278,
-    "kept": 165,
+    "kept": 166,
     "none": 28,
     "cleaned": 0
   },
@@ -7437,6 +7437,22 @@
       "quality": "A",
       "country": "South Africa",
       "locality": "Grahamstown, Eastern Cape",
+      "cleaned": false,
+      "license": "CC BY-NC-SA 4.0"
+    },
+    {
+      "slug": "zosterops-anderssoni",
+      "scientificName": "Zosterops anderssoni",
+      "index": 0,
+      "type": "call",
+      "action": "kept",
+      "from": [
+        "660759"
+      ],
+      "to": "660759",
+      "quality": "A",
+      "country": "Zambia",
+      "locality": "Mutinondo Wilderness",
       "cleaned": false,
       "license": "CC BY-NC-SA 4.0"
     }
