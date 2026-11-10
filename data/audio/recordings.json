@@ -3067,6 +3067,16 @@
         }
       ]
     },
+    "terpsiphone-viridis": {
+      "calls": [
+        {
+          "index": 0,
+          "quality": {
+            "xeno-canto/XC1080072": "A"
+          }
+        }
+      ]
+    },
     "thalassornis-leuconotus": {
       "calls": [
         {
@@ -3183,6 +3193,16 @@
           "index": 0,
           "quality": {
             "xeno-canto/XC154257": "A"
+          }
+        }
+      ]
+    },
+    "trochocercus-cyanomelas": {
+      "calls": [
+        {
+          "index": 0,
+          "quality": {
+            "xeno-canto/XC416342": "A"
           }
         }
       ]

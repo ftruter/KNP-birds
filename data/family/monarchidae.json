@@ -5,8 +5,8 @@
   "commonNames": {
     "en": "Monarchs"
   },
-  "summary": "Field notes for this family are still to be written.",
-  "sampleData": true,
+  "summary": "African Paradise Flycatcher, with a blue bill and a long tail in the male, and Blue-mantled Crested Flycatcher, dark above with a white wing-bar.",
+  "sampleData": false,
   "species": [
     {
       "slug": "terpsiphone-viridis",
