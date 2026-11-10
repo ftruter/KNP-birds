@@ -7,8 +7,42 @@
     "af": "Swartoogtiptol"
   },
   "family": "pycnonotidae",
-  "summary": "The details for this species have not been published yet.",
-  "sampleData": true,
+  "size": {
+    "lengthCm": {
+      "min": 20,
+      "max": 22
+    },
+    "note": "Newman's Birds gives 20–22 cm."
+  },
+  "habitat": "Most moist eastern and northern regions with bush and trees, especially riverine forest, but not evergreen forest. It is abundant in suburban gardens.",
+  "summary": "A very common resident. Dark, crested head, dark eye and yellow vent. The eyes, bill and legs are black. The upper parts are dark brown and the underparts are dusky white. Cheerful calls include a phrase like Wake-up, Gregory and a repeated chit, chit, chit. Newman’s page uses the scientific name Pycnonotus tricolor for this bird. This list keeps Pycnonotus barbatus. The Kemp paper name Blackeyed Bulbul and the code RB were left unchanged.",
+  "sampleData": false,
+  "similar": [
+    {
+      "slug": "phyllastrephus-terrestris",
+      "note": "Terrestrial Brownbul is a drab brown thicket bird with a white throat and reddish eyes. Common Bulbul has a dark crest, a black bill and a yellow vent."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Common (Dark-capped) Bulbul",
+      "url": "https://newmansbirds.com/birds/dark-capped-bulbul/",
+      "publisher": "Newman's Birds",
+      "year": 2026
+    },
+    {
+      "title": "Avibase bird checklist — Kruger National Park",
+      "url": "https://avibase.bsc-eoc.org/checklist.jsp?region=ZA000003",
+      "publisher": "Avibase",
+      "year": null
+    },
+    {
+      "title": "Kemp A.C., Herholdt J.J., Whyte I. & Harrison J. (2001). Birds of the two largest national parks in South Africa: a method to generate estimates of population size for all species and assess their conservation ecology. S. Afr. J. Sci. 97: 393–403.",
+      "url": "https://journals.co.za/doi/pdf/10.10520/EJC97367",
+      "publisher": "South African Journal of Science",
+      "year": 2001
+    }
+  ],
   "population": {
     "estimate": {
       "low": 131072,
@@ -35,8 +69,143 @@
     },
     "tierApplied": "D"
   },
-  "variants": [],
-  "viewNotes": [],
-  "calls": [],
-  "images": []
+  "variants": [
+    {
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "marks": {
+        "bill": {
+          "colour": "black",
+          "shape": null
+        },
+        "eye": {
+          "iris": "black",
+          "ring": null
+        },
+        "legs": {
+          "colour": "black"
+        },
+        "head": {
+          "crown": "black",
+          "face": null,
+          "throat": null,
+          "pattern": "Tufted, crested head. Dark eye."
+        },
+        "upperparts": {
+          "back": "dark-brown",
+          "rump": null,
+          "pattern": "Upper parts dark brown."
+        },
+        "underparts": {
+          "breast": "white",
+          "belly": null,
+          "pattern": "Underparts dusky white. Vent yellow."
+        },
+        "wings": {
+          "above": null,
+          "below": null,
+          "pattern": null
+        },
+        "tail": {
+          "colour": null,
+          "shape": null
+        }
+      }
+    }
+  ],
+  "viewNotes": [
+    {
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Dark crested head, black bill, dark brown upper parts, dusky white underparts and a yellow vent."
+    },
+    {
+      "view": "perched-front",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Dark crested head and black bill. The eye is dark."
+    },
+    {
+      "view": "perched-back",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Dark brown upper parts. The yellow vent may show below the tail."
+    },
+    {
+      "view": "flight-above",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "A flight pattern was not described."
+    },
+    {
+      "view": "flight-below",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "The underwing was not described. The vent is yellow."
+    }
+  ],
+  "calls": [
+    {
+      "sex": "any",
+      "type": "call",
+      "description": "A short phrase sounding like Wake-up, Gregory, and a much-repeated chit, chit, chit. Grade A call from Kruger near Skukuza. The filename records a 6 kHz low-pass and a 500 Hz high-pass. The filename is XC1016670-20250707_KNP_CNadin_E03_SLE_6kHzLP_500HzHP_Split1_-3dBNORM.mp3.",
+      "recordings": [
+        {
+          "key": "xeno-canto/XC1016670",
+          "source": "https://xeno-canto.org/1016670",
+          "fileUrl": "https://xeno-canto.org/sounds/uploaded/YSGTQVRQZI/XC1016670-20250707_KNP_CNadin_E03_SLE_6kHzLP_500HzHP_Split1_-3dBNORM.mp3",
+          "author": "African Bioacoustics Community",
+          "license": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ]
+    }
+  ],
+  "images": [
+    {
+      "key": "pycnonotus-barbatus/front.jpg",
+      "view": "perched-front",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "source": "https://www.inaturalist.org/observations/231275198",
+      "fileUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/410724753/large.jpeg",
+      "author": "Tom Heijnen",
+      "license": "CC BY 4.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by/4.0/",
+      "aiGenerated": false,
+      "hosted": false,
+      "alt": "Common Bulbul in the Mopani District, Kruger, dark crest, black bill and yellow vent",
+      "caption": "Common Bulbul in the Mopani District, Kruger, with a dark crest, a black bill and a yellow vent."
+    }
+  ],
+  "research": {
+    "confidence": "medium",
+    "needsReview": true,
+    "note": "Newman calls it a very common resident, and Avibase does not mark it rare, so all twelve months are listed. Newman’s page names the bird Pycnonotus tricolor. This list keeps Pycnonotus barbatus, which is why the record needs review. The grade A call is from Kruger near Skukuza. Its filename records a 6 kHz low-pass and a 500 Hz high-pass, and this site has not filtered it further. No flight photograph was found. Population figures and the Kemp name Blackeyed Bulbul were left unchanged."
+  },
+  "status": "resident",
+  "monthsPresent": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+  ]
 }

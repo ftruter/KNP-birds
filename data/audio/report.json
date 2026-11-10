@@ -1,10 +1,10 @@
 {
   "source": "xeno-canto explore catalogue, API v3 recording fields",
   "counts": {
-    "slots": 412,
+    "slots": 417,
     "swapped": 17,
     "added": 278,
-    "kept": 89,
+    "kept": 94,
     "none": 28,
     "cleaned": 0
   },
@@ -244,6 +244,22 @@
       "quality": "A",
       "country": "Kenya",
       "locality": "Diani Beach",
+      "cleaned": false,
+      "license": "CC BY-NC-SA 4.0"
+    },
+    {
+      "slug": "andropadus-importunus",
+      "scientificName": "Andropadus importunus",
+      "index": 0,
+      "type": "call",
+      "action": "kept",
+      "from": [
+        "1001879"
+      ],
+      "to": "1001879",
+      "quality": "A",
+      "country": "South Africa",
+      "locality": "Kruger Park (near Skukuza), Ehlanzeni, Mpumalanga",
       "cleaned": false,
       "license": "CC BY-NC-SA 4.0"
     },
@@ -511,6 +527,22 @@
       "quality": "A",
       "country": "South Africa",
       "locality": "Kruger Park (near Skukuza), Ehlanzeni District Municipality, Mpumalanga",
+      "cleaned": false,
+      "license": "CC BY-NC-SA 4.0"
+    },
+    {
+      "slug": "chlorocichla-flaviventris",
+      "scientificName": "Chlorocichla flaviventris",
+      "index": 0,
+      "type": "call",
+      "action": "kept",
+      "from": [
+        "1072510"
+      ],
+      "to": "1072510",
+      "quality": "A",
+      "country": "Kenya",
+      "locality": "Lower Imenti Forest, Meru County",
       "cleaned": false,
       "license": "CC BY-NC-SA 4.0"
     },
@@ -1340,6 +1372,38 @@
       "license": "CC BY-NC-SA 3.0"
     },
     {
+      "slug": "phyllastrephus-flavostriatus",
+      "scientificName": "Phyllastrephus flavostriatus",
+      "index": 0,
+      "type": "alarm",
+      "action": "kept",
+      "from": [
+        "1082530"
+      ],
+      "to": "1082530",
+      "quality": "A",
+      "country": "Burundi",
+      "locality": "Kibira National Park",
+      "cleaned": false,
+      "license": "CC BY-NC-SA 4.0"
+    },
+    {
+      "slug": "phyllastrephus-terrestris",
+      "scientificName": "Phyllastrephus terrestris",
+      "index": 0,
+      "type": "call",
+      "action": "kept",
+      "from": [
+        "252816"
+      ],
+      "to": "252816",
+      "quality": "A",
+      "country": "South Africa",
+      "locality": "Grahamstown, Eastern Cape",
+      "cleaned": false,
+      "license": "CC BY-NC-SA 4.0"
+    },
+    {
       "slug": "platysteira-peltata",
       "scientificName": "Platysteira peltata",
       "index": 0,
@@ -1580,6 +1644,22 @@
       "quality": "A",
       "country": "South Africa",
       "locality": "Lephalale Local Municipality (near Ga-Seleka), Waterberg District Municipality, Limpopo",
+      "cleaned": false,
+      "license": "CC BY-NC-SA 4.0"
+    },
+    {
+      "slug": "pycnonotus-barbatus",
+      "scientificName": "Pycnonotus barbatus",
+      "index": 0,
+      "type": "call",
+      "action": "kept",
+      "from": [
+        "1016670"
+      ],
+      "to": "1016670",
+      "quality": "A",
+      "country": "South Africa",
+      "locality": "Kruger Park (near Skukuza), Ehlanzeni, Mpumalanga",
       "cleaned": false,
       "license": "CC BY-NC-SA 4.0"
     },

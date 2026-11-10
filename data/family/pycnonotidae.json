@@ -6,8 +6,8 @@
     "en": "Bulbuls",
     "af": "Tiptolle"
   },
-  "summary": "Field notes for this family are still to be written.",
-  "sampleData": true,
+  "summary": "Bulbuls and greenbuls. Common Bulbul is the crested garden bird with a yellow vent. Sombre Greenbul is the olive thicket bird with a creamy-white eye. Yellow-bellied Greenbul is yellow below, including the underwings. Terrestrial Brownbul is the drab brown bird with a white throat. Newman has no page for Yellow-streaked Greenbul, so its plumage is not stored.",
+  "sampleData": false,
   "species": [
     {
       "slug": "andropadus-importunus",
