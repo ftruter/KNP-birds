@@ -119,7 +119,8 @@ test('the ten rails are sourced without changing populations', async () => {
   assert.equal(striped.calls[0].recordings[0].key, 'xeno-canto/XC355772')
 
   const corn = await readJson('data/species/crex-crex.json')
-  assert.equal(corn.size, undefined)
+  assert.equal(corn.size.lengthCm.min, 27)
+  assert.equal(corn.size.lengthCm.max, 30)
   assert.equal(corn.status, 'palearctic-migrant')
   assert.equal(corn.calls[0].recordings[0].key, 'xeno-canto/XC1149182')
 
