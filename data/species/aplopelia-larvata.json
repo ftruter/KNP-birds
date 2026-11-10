@@ -30,7 +30,7 @@
     "note": "Newman's Birds gives 25–30 cm."
   },
   "habitat": "Pairs in the forest interior. It is shy, and is often noticed only when it flushes from a path.",
-  "summary": "A fairly common resident. Cinnamon body, darker bronze upperparts, and an emerald sheen on the upper back and wings. The red eye looks large on a whitish face. The call is a soft, mournful hoo-oo, rising on the second syllable. No usable recording was found.",
+  "summary": "A fairly common resident. Cinnamon body, darker bronze upperparts, and an emerald sheen on the upper back and wings. The red eye looks large on a whitish face. The call is a soft, mournful hoo-oo, rising on the second syllable.",
   "sampleData": false,
   "similar": [
     {
@@ -158,7 +158,7 @@
     {
       "sex": "any",
       "type": "call",
-      "description": "Xeno-canto files this species as Columba larvata. The catalogue cut is a call, grade A, from South Africa. Port Alfred, Eastern Cape, not Kruger.",
+      "description": "A soft, mournful hoo-oo, rising on the second syllable. Xeno-canto files this species as Columba larvata. Grade A from Port Alfred, Eastern Cape, not Kruger.",
       "recordings": [
         {
           "key": "xeno-canto/XC497030",
