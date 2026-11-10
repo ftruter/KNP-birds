@@ -50,22 +50,6 @@
           "quality": {
             "xeno-canto/XC633451": "A"
           }
-        },
-        {
-          "index": 1,
-          "recordings": [
-            {
-              "key": "xeno-canto/XC633451",
-              "source": "https://xeno-canto.org/633451",
-              "author": "Lynette Rudman",
-              "license": "CC BY-NC-SA 4.0",
-              "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
-              "aiGenerated": false,
-              "fileUrl": "https://xeno-canto.org/sounds/uploaded/SGLTZLDXYI/XC633451-Marsh%20Warbler%20Kap%20River%20exc%20March%2021.mp3",
-              "hosted": false,
-              "quality": "A"
-            }
-          ]
         }
       ]
     },
@@ -163,38 +147,6 @@
     },
     "alopochen-aegyptiaca": {
       "calls": [
-        {
-          "index": 0,
-          "recordings": [
-            {
-              "key": "xeno-canto/XC208157",
-              "source": "https://xeno-canto.org/208157",
-              "author": "Jeremy Hegge",
-              "license": "CC BY-NC-SA 4.0",
-              "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
-              "aiGenerated": false,
-              "fileUrl": "https://xeno-canto.org/sounds/uploaded/XKXDFWNSPA/XC208157-Egyptian%20Goose.mp3",
-              "hosted": false,
-              "quality": "A"
-            }
-          ]
-        },
-        {
-          "index": 1,
-          "recordings": [
-            {
-              "key": "xeno-canto/XC489216",
-              "source": "https://xeno-canto.org/489216",
-              "author": "Derek Solomon",
-              "license": "CC BY-NC-SA 4.0",
-              "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
-              "aiGenerated": false,
-              "fileUrl": "https://xeno-canto.org/sounds/uploaded/DNKBTPCMSQ/XC489216-Ehyptian%20Geese190709-170132.mp3",
-              "hosted": false,
-              "quality": "A"
-            }
-          ]
-        },
         {
           "index": 2,
           "quality": {
@@ -296,38 +248,6 @@
     "anas-capensis": {
       "calls": [
         {
-          "index": 0,
-          "recordings": [
-            {
-              "key": "xeno-canto/XC1173615",
-              "source": "https://xeno-canto.org/1173615",
-              "author": "African Bioacoustics Community",
-              "license": "CC BY-NC-SA 4.0",
-              "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
-              "aiGenerated": false,
-              "fileUrl": "https://xeno-canto.org/sounds/uploaded/YSGTQVRQZI/XC1173615-20260320_STRNDF_AKaramitsos_XA60_A020C071_260320AB_SLE_250HP_-3dB_Cteal-cf.mp3",
-              "hosted": false,
-              "quality": "A"
-            }
-          ]
-        },
-        {
-          "index": 1,
-          "recordings": [
-            {
-              "key": "xeno-canto/XC1173615",
-              "source": "https://xeno-canto.org/1173615",
-              "author": "African Bioacoustics Community",
-              "license": "CC BY-NC-SA 4.0",
-              "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
-              "aiGenerated": false,
-              "fileUrl": "https://xeno-canto.org/sounds/uploaded/YSGTQVRQZI/XC1173615-20260320_STRNDF_AKaramitsos_XA60_A020C071_260320AB_SLE_250HP_-3dB_Cteal-cf.mp3",
-              "hosted": false,
-              "quality": "A"
-            }
-          ]
-        },
-        {
           "index": 2,
           "recordings": [
             {
@@ -348,38 +268,6 @@
     "anas-erythrorhyncha": {
       "calls": [
         {
-          "index": 0,
-          "recordings": [
-            {
-              "key": "xeno-canto/XC649290",
-              "source": "https://xeno-canto.org/649290",
-              "author": "Lynette Rudman",
-              "license": "CC BY-NC-SA 4.0",
-              "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
-              "aiGenerated": false,
-              "fileUrl": "https://xeno-canto.org/sounds/uploaded/SGLTZLDXYI/XC649290-Red-billed%20Teal%20swimming.mp3",
-              "hosted": false,
-              "quality": "B"
-            }
-          ]
-        },
-        {
-          "index": 1,
-          "recordings": [
-            {
-              "key": "xeno-canto/XC315261",
-              "source": "https://xeno-canto.org/315261",
-              "author": "Lynette Rudman",
-              "license": "CC BY-NC-SA 4.0",
-              "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
-              "aiGenerated": false,
-              "fileUrl": "https://xeno-canto.org/sounds/uploaded/SGLTZLDXYI/XC315261-Red-billed%20teal1.mp3",
-              "hosted": false,
-              "quality": "B"
-            }
-          ]
-        },
-        {
           "index": 2,
           "quality": {
             "xeno-canto/XC649290": "B"
@@ -390,38 +278,6 @@
     "anas-sparsa": {
       "calls": [
         {
-          "index": 0,
-          "recordings": [
-            {
-              "key": "xeno-canto/XC192184",
-              "source": "https://xeno-canto.org/192184",
-              "author": "Alan Collett",
-              "license": "CC BY-NC-SA 4.0",
-              "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
-              "aiGenerated": false,
-              "fileUrl": "https://xeno-canto.org/sounds/uploaded/SJRAXPTEKH/XC192184-713_8240.mp3",
-              "hosted": false,
-              "quality": "B"
-            }
-          ]
-        },
-        {
-          "index": 1,
-          "recordings": [
-            {
-              "key": "xeno-canto/XC464064",
-              "source": "https://xeno-canto.org/464064",
-              "author": "Tim Cockcroft",
-              "license": "CC BY-NC-SA 4.0",
-              "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
-              "aiGenerated": false,
-              "fileUrl": "https://xeno-canto.org/sounds/uploaded/GQMCPIVNXX/XC464064-African%20Black%20Duck.mp3",
-              "hosted": false,
-              "quality": "B"
-            }
-          ]
-        },
-        {
           "index": 2,
           "quality": {
             "xeno-canto/XC464064": "B"
@@ -431,38 +287,6 @@
     },
     "anas-undulata": {
       "calls": [
-        {
-          "index": 0,
-          "recordings": [
-            {
-              "key": "xeno-canto/XC1051974",
-              "source": "https://xeno-canto.org/1051974",
-              "author": "African Bioacoustics Community",
-              "license": "CC BY-NC-SA 4.0",
-              "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
-              "aiGenerated": false,
-              "fileUrl": "https://xeno-canto.org/sounds/uploaded/YSGTQVRQZI/XC1051974-20251002_DV_AKaramitsos_MVI_0064_SLE_250HzHP_-3dBNORM.mp3",
-              "hosted": false,
-              "quality": "A"
-            }
-          ]
-        },
-        {
-          "index": 1,
-          "recordings": [
-            {
-              "key": "xeno-canto/XC1051976",
-              "source": "https://xeno-canto.org/1051976",
-              "author": "African Bioacoustics Community",
-              "license": "CC BY-NC-SA 4.0",
-              "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
-              "aiGenerated": false,
-              "fileUrl": "https://xeno-canto.org/sounds/uploaded/YSGTQVRQZI/XC1051976-20251002_DV_AKaramitsos_MVI_0085_SLE_250HzHP_-3dBNORM_duckling.mp3",
-              "hosted": false,
-              "quality": "A"
-            }
-          ]
-        },
         {
           "index": 2,
           "quality": {
@@ -644,36 +468,10 @@
     "apus-apus": {
       "calls": [
         {
-          "index": 0,
-          "recordings": [
-            {
-              "key": "xeno-canto/XC27236",
-              "source": "https://xeno-canto.org/27236",
-              "author": "Patrik Åberg",
-              "license": "CC BY-NC-SA 3.0",
-              "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/3.0/",
-              "aiGenerated": false,
-              "fileUrl": "https://xeno-canto.org/sounds/uploaded/BPSDQEOJWG/Tornseglaresommarflock.mp3",
-              "hosted": false,
-              "quality": "A"
-            }
-          ]
-        },
-        {
           "index": 1,
-          "recordings": [
-            {
-              "key": "xeno-canto/XC27276",
-              "source": "https://xeno-canto.org/27276",
-              "author": "Patrik Åberg",
-              "license": "CC BY-NC-SA 3.0",
-              "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/3.0/",
-              "aiGenerated": false,
-              "fileUrl": "https://xeno-canto.org/sounds/uploaded/BPSDQEOJWG/Tornseglareungarmatade.mp3",
-              "hosted": false,
-              "quality": "A"
-            }
-          ]
+          "quality": {
+            "xeno-canto/XC269740": "B"
+          }
         },
         {
           "index": 2,
@@ -2596,22 +2394,6 @@
           "quality": {
             "xeno-canto/XC288401": "B"
           }
-        },
-        {
-          "index": 1,
-          "recordings": [
-            {
-              "key": "xeno-canto/XC288401",
-              "source": "https://xeno-canto.org/288401",
-              "author": "Alan Collett",
-              "license": "CC BY-NC-SA 4.0",
-              "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
-              "aiGenerated": false,
-              "fileUrl": "https://xeno-canto.org/sounds/uploaded/SJRAXPTEKH/XC288401-713_0175.mp3",
-              "hosted": false,
-              "quality": "B"
-            }
-          ]
         }
       ]
     },
@@ -3927,38 +3709,6 @@
     "nettapus-auritus": {
       "calls": [
         {
-          "index": 0,
-          "recordings": [
-            {
-              "key": "xeno-canto/XC267474",
-              "source": "https://xeno-canto.org/267474",
-              "author": "Andrew Spencer",
-              "license": "CC BY-NC-SA 4.0",
-              "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
-              "aiGenerated": false,
-              "fileUrl": "https://xeno-canto.org/sounds/uploaded/CDTGHVBGZP/XC267474-African%20Pygmy-Goose2015-1-9-4.mp3",
-              "hosted": false,
-              "quality": "A"
-            }
-          ]
-        },
-        {
-          "index": 1,
-          "recordings": [
-            {
-              "key": "xeno-canto/XC585199",
-              "source": "https://xeno-canto.org/585199",
-              "author": "Dries Van de Loock",
-              "license": "CC BY-NC-SA 4.0",
-              "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
-              "aiGenerated": false,
-              "fileUrl": "https://xeno-canto.org/sounds/uploaded/IIJAXHKSCC/XC585199-African%20Pygmy%20Goose%20%28flight%20call%29%2020200621%2CKasankaNP%2CZAMBIA.mp3",
-              "hosted": false,
-              "quality": "B"
-            }
-          ]
-        },
-        {
           "index": 2,
           "quality": {
             "xeno-canto/XC267474": "A"
@@ -4350,22 +4100,6 @@
     },
     "plectropterus-gambensis": {
       "calls": [
-        {
-          "index": 0,
-          "recordings": [
-            {
-              "key": "xeno-canto/XC126343",
-              "source": "https://xeno-canto.org/126343",
-              "author": "Sander Bot",
-              "license": "CC BY-NC-SA 3.0",
-              "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/3.0/",
-              "aiGenerated": false,
-              "fileUrl": "https://xeno-canto.org/sounds/uploaded/HZKCNRIPRH/XC126343-SpurWingedGoose21Jan2013BenfontijnFreeStateSouthAfrika.mp3",
-              "hosted": false,
-              "quality": "A"
-            }
-          ]
-        },
         {
           "index": 1,
           "quality": {

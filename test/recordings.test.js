@@ -211,6 +211,30 @@ test('a playable slot is never swapped for ND, and the ND file is listed for per
   assert.equal(fromNd.recordings[0].key, 'xeno-canto/XC1')
 })
 
+test('male and female slots are left to the species file', () => {
+  const empty = decideSlot(
+    { type: 'call', sex: 'male', recordings: [] },
+    new Map(),
+    [item('1', 'A')],
+  )
+  assert.equal(empty.action, 'none')
+  assert.equal(empty.recordings.length, 0)
+  const held = decideSlot(
+    {
+      type: 'call',
+      sex: 'female',
+      recordings: [
+        { key: 'xeno-canto/XC9', license: 'CC BY-NC-SA 4.0', hosted: false },
+      ],
+    },
+    new Map([['9', item('9', 'B')]]),
+    [item('1', 'A')],
+  )
+  assert.equal(held.action, 'kept')
+  assert.equal(held.recordings[0].key, 'xeno-canto/XC9')
+  assert.equal(held.recordings[0].quality, 'B')
+})
+
 test('cleaning is limited to grade C or worse and never ND', () => {
   const recording = (quality, license) => ({
     key: 'xeno-canto/XC1',

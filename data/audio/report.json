@@ -3,15 +3,75 @@
   "counts": {
     "slots": 525,
     "swapped": 18,
-    "added": 28,
-    "kept": 473,
-    "none": 6,
+    "added": 11,
+    "kept": 474,
+    "none": 22,
     "cleaned": 6
   },
   "noUsableRecording": [
     {
+      "slug": "acrocephalus-palustris",
+      "scientificName": "Acrocephalus palustris",
+      "type": "song"
+    },
+    {
+      "slug": "alopochen-aegyptiaca",
+      "scientificName": "Alopochen aegyptiaca",
+      "type": "call"
+    },
+    {
+      "slug": "alopochen-aegyptiaca",
+      "scientificName": "Alopochen aegyptiaca",
+      "type": "call"
+    },
+    {
+      "slug": "anas-capensis",
+      "scientificName": "Anas capensis",
+      "type": "call"
+    },
+    {
+      "slug": "anas-capensis",
+      "scientificName": "Anas capensis",
+      "type": "call"
+    },
+    {
+      "slug": "anas-erythrorhyncha",
+      "scientificName": "Anas erythrorhyncha",
+      "type": "call"
+    },
+    {
+      "slug": "anas-erythrorhyncha",
+      "scientificName": "Anas erythrorhyncha",
+      "type": "call"
+    },
+    {
+      "slug": "anas-sparsa",
+      "scientificName": "Anas sparsa",
+      "type": "call"
+    },
+    {
+      "slug": "anas-sparsa",
+      "scientificName": "Anas sparsa",
+      "type": "call"
+    },
+    {
+      "slug": "anas-undulata",
+      "scientificName": "Anas undulata",
+      "type": "call"
+    },
+    {
+      "slug": "anas-undulata",
+      "scientificName": "Anas undulata",
+      "type": "call"
+    },
+    {
       "slug": "aplopelia-larvata",
       "scientificName": "Aplopelia larvata",
+      "type": "call"
+    },
+    {
+      "slug": "apus-apus",
+      "scientificName": "Apus apus",
       "type": "call"
     },
     {
@@ -27,6 +87,26 @@
     {
       "slug": "ephippiorhynchus-senegalensis",
       "scientificName": "Ephippiorhynchus senegalensis",
+      "type": "call"
+    },
+    {
+      "slug": "eremopterix-verticalis",
+      "scientificName": "Eremopterix verticalis",
+      "type": "song"
+    },
+    {
+      "slug": "nettapus-auritus",
+      "scientificName": "Nettapus auritus",
+      "type": "call"
+    },
+    {
+      "slug": "nettapus-auritus",
+      "scientificName": "Nettapus auritus",
+      "type": "call"
+    },
+    {
+      "slug": "plectropterus-gambensis",
+      "scientificName": "Plectropterus gambensis",
       "type": "call"
     },
     {
@@ -90,46 +170,6 @@
     {
       "slug": "anas-erythrorhyncha",
       "scientificName": "Anas erythrorhyncha",
-      "index": 0,
-      "type": "call",
-      "current": {
-        "key": "xeno-canto/XC649290",
-        "quality": "B",
-        "license": "CC BY-NC-SA 4.0"
-      },
-      "wanted": {
-        "key": "xeno-canto/XC509856",
-        "source": "https://xeno-canto.org/509856",
-        "author": "Peter Boesman",
-        "quality": "A",
-        "license": "CC BY-NC-ND 4.0",
-        "country": "Tanzania",
-        "locality": "Eluanata dam, Monduli"
-      }
-    },
-    {
-      "slug": "anas-erythrorhyncha",
-      "scientificName": "Anas erythrorhyncha",
-      "index": 1,
-      "type": "call",
-      "current": {
-        "key": "xeno-canto/XC315261",
-        "quality": "B",
-        "license": "CC BY-NC-SA 4.0"
-      },
-      "wanted": {
-        "key": "xeno-canto/XC509856",
-        "source": "https://xeno-canto.org/509856",
-        "author": "Peter Boesman",
-        "quality": "A",
-        "license": "CC BY-NC-ND 4.0",
-        "country": "Tanzania",
-        "locality": "Eluanata dam, Monduli"
-      }
-    },
-    {
-      "slug": "anas-erythrorhyncha",
-      "scientificName": "Anas erythrorhyncha",
       "index": 2,
       "type": "call",
       "current": {
@@ -145,46 +185,6 @@
         "license": "CC BY-NC-ND 4.0",
         "country": "Tanzania",
         "locality": "Eluanata dam, Monduli"
-      }
-    },
-    {
-      "slug": "anas-sparsa",
-      "scientificName": "Anas sparsa",
-      "index": 0,
-      "type": "call",
-      "current": {
-        "key": "xeno-canto/XC192184",
-        "quality": "B",
-        "license": "CC BY-NC-SA 4.0"
-      },
-      "wanted": {
-        "key": "xeno-canto/XC615647",
-        "source": "https://xeno-canto.org/615647",
-        "author": "Nature sounds by Simply Birding",
-        "quality": "A",
-        "license": "CC BY-NC-ND 4.0",
-        "country": "South Africa",
-        "locality": "Greater Plettenberg Bay (near Keurboomstrand), South Cape DC, Western Cape"
-      }
-    },
-    {
-      "slug": "anas-sparsa",
-      "scientificName": "Anas sparsa",
-      "index": 1,
-      "type": "call",
-      "current": {
-        "key": "xeno-canto/XC464064",
-        "quality": "B",
-        "license": "CC BY-NC-SA 4.0"
-      },
-      "wanted": {
-        "key": "xeno-canto/XC615647",
-        "source": "https://xeno-canto.org/615647",
-        "author": "Nature sounds by Simply Birding",
-        "quality": "A",
-        "license": "CC BY-NC-ND 4.0",
-        "country": "South Africa",
-        "locality": "Greater Plettenberg Bay (near Keurboomstrand), South Cape DC, Western Cape"
       }
     },
     {
@@ -245,26 +245,6 @@
         "license": "CC BY-NC-ND 2.5",
         "country": "South Africa",
         "locality": "Rietvlei Nature Reserve"
-      }
-    },
-    {
-      "slug": "anomalospiza-imberbis",
-      "scientificName": "Anomalospiza imberbis",
-      "index": 0,
-      "type": "call",
-      "current": {
-        "key": "xeno-canto/XC1080375",
-        "quality": "B",
-        "license": "CC BY-NC-SA 4.0"
-      },
-      "wanted": {
-        "key": "xeno-canto/XC338911",
-        "source": "https://xeno-canto.org/338911",
-        "author": "Peter Boesman",
-        "quality": "A",
-        "license": "CC BY-NC-ND 4.0",
-        "country": "Zambia",
-        "locality": "North of Kawambwa, Luapula province"
       }
     },
     {
@@ -548,46 +528,6 @@
       }
     },
     {
-      "slug": "eremopterix-verticalis",
-      "scientificName": "Eremopterix verticalis",
-      "index": 1,
-      "type": "song",
-      "current": {
-        "key": "xeno-canto/XC288401",
-        "quality": "B",
-        "license": "CC BY-NC-SA 4.0"
-      },
-      "wanted": {
-        "key": "xeno-canto/XC515497",
-        "source": "https://xeno-canto.org/515497",
-        "author": "Frank Lambert",
-        "quality": "A",
-        "license": "CC BY-NC-ND 4.0",
-        "country": "South Africa",
-        "locality": "Koa Dunes (near Aggeneys), Namakwa, Northern Cape"
-      }
-    },
-    {
-      "slug": "euplectes-axillaris",
-      "scientificName": "Euplectes axillaris",
-      "index": 0,
-      "type": "call",
-      "current": {
-        "key": "xeno-canto/XC441846",
-        "quality": "B",
-        "license": "CC BY-NC-SA 4.0"
-      },
-      "wanted": {
-        "key": "xeno-canto/XC62397",
-        "source": "https://xeno-canto.org/62397",
-        "author": "Charles Hesse",
-        "quality": "A",
-        "license": "CC BY-NC-ND 2.5",
-        "country": "South Africa",
-        "locality": "Umlalazi Nature Reserve"
-      }
-    },
-    {
       "slug": "hirundo-dimidiata",
       "scientificName": "Hirundo dimidiata",
       "index": 0,
@@ -705,26 +645,6 @@
         "license": "CC BY-NC-ND 4.0",
         "country": "South Africa",
         "locality": "Nyala Drive-Pafuri, Limpopo"
-      }
-    },
-    {
-      "slug": "nettapus-auritus",
-      "scientificName": "Nettapus auritus",
-      "index": 1,
-      "type": "call",
-      "current": {
-        "key": "xeno-canto/XC585199",
-        "quality": "B",
-        "license": "CC BY-NC-SA 4.0"
-      },
-      "wanted": {
-        "key": "xeno-canto/XC292462",
-        "source": "https://xeno-canto.org/292462",
-        "author": "Andrew Spencer",
-        "quality": "A",
-        "license": "CC BY-NC-ND 4.0",
-        "country": "Ethiopia",
-        "locality": "Lake Awassa"
       }
     },
     {
@@ -1014,14 +934,14 @@
       "scientificName": "Acrocephalus palustris",
       "index": 1,
       "type": "song",
-      "action": "added",
+      "action": "none",
       "from": [],
-      "to": "633451",
-      "quality": "A",
-      "country": "South Africa",
-      "locality": "Ndlambe Local Municipality (near Seafield), Western District, Eastern Cape",
+      "to": "",
+      "quality": "",
+      "country": "",
+      "locality": "",
       "cleaned": false,
-      "license": "CC BY-NC-SA 4.0"
+      "license": ""
     },
     {
       "slug": "acrocephalus-schoenobaenus",
@@ -1159,28 +1079,28 @@
       "scientificName": "Alopochen aegyptiaca",
       "index": 0,
       "type": "call",
-      "action": "added",
+      "action": "none",
       "from": [],
-      "to": "208157",
-      "quality": "A",
-      "country": "South Africa",
-      "locality": "Mmabolela Reserve, Limpopo",
+      "to": "",
+      "quality": "",
+      "country": "",
+      "locality": "",
       "cleaned": false,
-      "license": "CC BY-NC-SA 4.0"
+      "license": ""
     },
     {
       "slug": "alopochen-aegyptiaca",
       "scientificName": "Alopochen aegyptiaca",
       "index": 1,
       "type": "call",
-      "action": "added",
+      "action": "none",
       "from": [],
-      "to": "489216",
-      "quality": "A",
-      "country": "South Africa",
-      "locality": "Kruger Park, Ehlanzeni, Mpumalanga",
+      "to": "",
+      "quality": "",
+      "country": "",
+      "locality": "",
       "cleaned": false,
-      "license": "CC BY-NC-SA 4.0"
+      "license": ""
     },
     {
       "slug": "alopochen-aegyptiaca",
@@ -1347,28 +1267,28 @@
       "scientificName": "Anas capensis",
       "index": 0,
       "type": "call",
-      "action": "added",
+      "action": "none",
       "from": [],
-      "to": "1173615",
-      "quality": "A",
-      "country": "South Africa",
-      "locality": "City of Cape Town (near Cape Town), City of Cape Town Metropolitan Municipality, Western Cape",
+      "to": "",
+      "quality": "",
+      "country": "",
+      "locality": "",
       "cleaned": false,
-      "license": "CC BY-NC-SA 4.0"
+      "license": ""
     },
     {
       "slug": "anas-capensis",
       "scientificName": "Anas capensis",
       "index": 1,
       "type": "call",
-      "action": "added",
+      "action": "none",
       "from": [],
-      "to": "1173615",
-      "quality": "A",
-      "country": "South Africa",
-      "locality": "City of Cape Town (near Cape Town), City of Cape Town Metropolitan Municipality, Western Cape",
+      "to": "",
+      "quality": "",
+      "country": "",
+      "locality": "",
       "cleaned": false,
-      "license": "CC BY-NC-SA 4.0"
+      "license": ""
     },
     {
       "slug": "anas-capensis",
@@ -1391,28 +1311,28 @@
       "scientificName": "Anas erythrorhyncha",
       "index": 0,
       "type": "call",
-      "action": "added",
+      "action": "none",
       "from": [],
-      "to": "649290",
-      "quality": "B",
-      "country": "South Africa",
-      "locality": "Grahamstown, Western District, Eastern Cape",
+      "to": "",
+      "quality": "",
+      "country": "",
+      "locality": "",
       "cleaned": false,
-      "license": "CC BY-NC-SA 4.0"
+      "license": ""
     },
     {
       "slug": "anas-erythrorhyncha",
       "scientificName": "Anas erythrorhyncha",
       "index": 1,
       "type": "call",
-      "action": "added",
+      "action": "none",
       "from": [],
-      "to": "315261",
-      "quality": "B",
-      "country": "South Africa",
-      "locality": "Grahamstown, Western District, Eastern Cape",
+      "to": "",
+      "quality": "",
+      "country": "",
+      "locality": "",
       "cleaned": false,
-      "license": "CC BY-NC-SA 4.0"
+      "license": ""
     },
     {
       "slug": "anas-erythrorhyncha",
@@ -1435,28 +1355,28 @@
       "scientificName": "Anas sparsa",
       "index": 0,
       "type": "call",
-      "action": "added",
+      "action": "none",
       "from": [],
-      "to": "192184",
-      "quality": "B",
-      "country": "South Africa",
-      "locality": "Graaff-Reinet, Western District, Eastern Cape",
+      "to": "",
+      "quality": "",
+      "country": "",
+      "locality": "",
       "cleaned": false,
-      "license": "CC BY-NC-SA 4.0"
+      "license": ""
     },
     {
       "slug": "anas-sparsa",
       "scientificName": "Anas sparsa",
       "index": 1,
       "type": "call",
-      "action": "added",
+      "action": "none",
       "from": [],
-      "to": "464064",
-      "quality": "B",
-      "country": "South Africa",
-      "locality": "Bathurst",
+      "to": "",
+      "quality": "",
+      "country": "",
+      "locality": "",
       "cleaned": false,
-      "license": "CC BY-NC-SA 4.0"
+      "license": ""
     },
     {
       "slug": "anas-sparsa",
@@ -1479,28 +1399,28 @@
       "scientificName": "Anas undulata",
       "index": 0,
       "type": "call",
-      "action": "added",
+      "action": "none",
       "from": [],
-      "to": "1051974",
-      "quality": "A",
-      "country": "South Africa",
-      "locality": "Botterblom Nature Reserve (near Cape Town), City of Cape Town Metropolitan Municipality, Western Cape",
+      "to": "",
+      "quality": "",
+      "country": "",
+      "locality": "",
       "cleaned": false,
-      "license": "CC BY-NC-SA 4.0"
+      "license": ""
     },
     {
       "slug": "anas-undulata",
       "scientificName": "Anas undulata",
       "index": 1,
       "type": "call",
-      "action": "added",
+      "action": "none",
       "from": [],
-      "to": "1051976",
-      "quality": "A",
-      "country": "South Africa",
-      "locality": "Botterblom Nature Reserve (near Cape Town), City of Cape Town Metropolitan Municipality, Western Cape",
+      "to": "",
+      "quality": "",
+      "country": "",
+      "locality": "",
       "cleaned": false,
-      "license": "CC BY-NC-SA 4.0"
+      "license": ""
     },
     {
       "slug": "anas-undulata",
@@ -1793,28 +1713,30 @@
       "scientificName": "Apus apus",
       "index": 0,
       "type": "call",
-      "action": "added",
+      "action": "none",
       "from": [],
-      "to": "27236",
-      "quality": "A",
-      "country": "Sweden",
-      "locality": "Källedalen, Fröstorp, Tibro, Västergötland",
+      "to": "",
+      "quality": "",
+      "country": "",
+      "locality": "",
       "cleaned": false,
-      "license": "CC BY-NC-SA 3.0"
+      "license": ""
     },
     {
       "slug": "apus-apus",
       "scientificName": "Apus apus",
       "index": 1,
       "type": "call",
-      "action": "added",
-      "from": [],
-      "to": "27276",
-      "quality": "A",
-      "country": "Sweden",
-      "locality": "Källedalen, Fröstorp, Tibro, Västergötland",
+      "action": "kept",
+      "from": [
+        "269740"
+      ],
+      "to": "269740",
+      "quality": "B",
+      "country": "Russian Federation",
+      "locality": "Kozlovskiy rayon, Chuvashia",
       "cleaned": false,
-      "license": "CC BY-NC-SA 3.0"
+      "license": "CC BY-NC-SA 4.0"
     },
     {
       "slug": "apus-apus",
@@ -4716,14 +4638,14 @@
       "scientificName": "Eremopterix verticalis",
       "index": 1,
       "type": "song",
-      "action": "added",
+      "action": "none",
       "from": [],
-      "to": "288401",
-      "quality": "B",
-      "country": "South Africa",
-      "locality": "Aberdeen Plain (near Rietbron), Western District, Eastern Cape",
+      "to": "",
+      "quality": "",
+      "country": "",
+      "locality": "",
       "cleaned": false,
-      "license": "CC BY-NC-SA 4.0"
+      "license": ""
     },
     {
       "slug": "estrilda-astrild",
@@ -6625,28 +6547,28 @@
       "scientificName": "Nettapus auritus",
       "index": 0,
       "type": "call",
-      "action": "added",
+      "action": "none",
       "from": [],
-      "to": "267474",
-      "quality": "A",
-      "country": "Ethiopia",
-      "locality": "Lake Awassa",
+      "to": "",
+      "quality": "",
+      "country": "",
+      "locality": "",
       "cleaned": false,
-      "license": "CC BY-NC-SA 4.0"
+      "license": ""
     },
     {
       "slug": "nettapus-auritus",
       "scientificName": "Nettapus auritus",
       "index": 1,
       "type": "call",
-      "action": "added",
+      "action": "none",
       "from": [],
-      "to": "585199",
-      "quality": "B",
-      "country": "Zambia",
-      "locality": "Kasanka National Park",
+      "to": "",
+      "quality": "",
+      "country": "",
+      "locality": "",
       "cleaned": false,
-      "license": "CC BY-NC-SA 4.0"
+      "license": ""
     },
     {
       "slug": "nettapus-auritus",
@@ -7261,14 +7183,14 @@
       "scientificName": "Plectropterus gambensis",
       "index": 0,
       "type": "call",
-      "action": "added",
+      "action": "none",
       "from": [],
-      "to": "126343",
-      "quality": "A",
-      "country": "South Africa",
-      "locality": "Benfontijn Gamereserve, Lejweleputswa, Free State",
+      "to": "",
+      "quality": "",
+      "country": "",
+      "locality": "",
       "cleaned": false,
-      "license": "CC BY-NC-SA 3.0"
+      "license": ""
     },
     {
       "slug": "plectropterus-gambensis",

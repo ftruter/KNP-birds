@@ -427,17 +427,6 @@
           "hosted": false,
           "quality": "A",
           "callType": "song"
-        },
-        {
-          "key": "xeno-canto/XC633451",
-          "author": "Lynette Rudman",
-          "licence": "CC BY-NC-SA 4.0",
-          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
-          "sourceUrl": "https://xeno-canto.org/633451",
-          "aiGenerated": false,
-          "hosted": false,
-          "quality": "A",
-          "callType": "song"
         }
       ],
       "sources": [
@@ -1045,28 +1034,6 @@
       ],
       "recordings": [
         {
-          "key": "xeno-canto/XC208157",
-          "author": "Jeremy Hegge",
-          "licence": "CC BY-NC-SA 4.0",
-          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
-          "sourceUrl": "https://xeno-canto.org/208157",
-          "aiGenerated": false,
-          "hosted": false,
-          "quality": "A",
-          "callType": "call"
-        },
-        {
-          "key": "xeno-canto/XC489216",
-          "author": "Derek Solomon",
-          "licence": "CC BY-NC-SA 4.0",
-          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
-          "sourceUrl": "https://xeno-canto.org/489216",
-          "aiGenerated": false,
-          "hosted": false,
-          "quality": "A",
-          "callType": "call"
-        },
-        {
           "key": "xeno-canto/XC816922",
           "author": "Dawie de Swardt",
           "licence": "CC BY-NC-SA 4.0",
@@ -1551,28 +1518,6 @@
           "hosted": false,
           "quality": "A",
           "callType": "call"
-        },
-        {
-          "key": "xeno-canto/XC1173615",
-          "author": "African Bioacoustics Community",
-          "licence": "CC BY-NC-SA 4.0",
-          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
-          "sourceUrl": "https://xeno-canto.org/1173615",
-          "aiGenerated": false,
-          "hosted": false,
-          "quality": "A",
-          "callType": "call"
-        },
-        {
-          "key": "xeno-canto/XC1173615",
-          "author": "African Bioacoustics Community",
-          "licence": "CC BY-NC-SA 4.0",
-          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
-          "sourceUrl": "https://xeno-canto.org/1173615",
-          "aiGenerated": false,
-          "hosted": false,
-          "quality": "A",
-          "callType": "call"
         }
       ],
       "sources": [
@@ -1621,28 +1566,6 @@
         }
       ],
       "recordings": [
-        {
-          "key": "xeno-canto/XC649290",
-          "author": "Lynette Rudman",
-          "licence": "CC BY-NC-SA 4.0",
-          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
-          "sourceUrl": "https://xeno-canto.org/649290",
-          "aiGenerated": false,
-          "hosted": false,
-          "quality": "B",
-          "callType": "call"
-        },
-        {
-          "key": "xeno-canto/XC315261",
-          "author": "Lynette Rudman",
-          "licence": "CC BY-NC-SA 4.0",
-          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
-          "sourceUrl": "https://xeno-canto.org/315261",
-          "aiGenerated": false,
-          "hosted": false,
-          "quality": "B",
-          "callType": "call"
-        },
         {
           "key": "xeno-canto/XC649290",
           "author": "Lynette Rudman",
@@ -1708,28 +1631,6 @@
       ],
       "recordings": [
         {
-          "key": "xeno-canto/XC192184",
-          "author": "Alan Collett",
-          "licence": "CC BY-NC-SA 4.0",
-          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
-          "sourceUrl": "https://xeno-canto.org/192184",
-          "aiGenerated": false,
-          "hosted": false,
-          "quality": "B",
-          "callType": "call"
-        },
-        {
-          "key": "xeno-canto/XC464064",
-          "author": "Tim Cockcroft",
-          "licence": "CC BY-NC-SA 4.0",
-          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
-          "sourceUrl": "https://xeno-canto.org/464064",
-          "aiGenerated": false,
-          "hosted": false,
-          "quality": "B",
-          "callType": "call"
-        },
-        {
           "key": "xeno-canto/XC464064",
           "author": "Tim Cockcroft",
           "licence": "CC BY-NC-SA 4.0",
@@ -1784,28 +1685,6 @@
         }
       ],
       "recordings": [
-        {
-          "key": "xeno-canto/XC1051974",
-          "author": "African Bioacoustics Community",
-          "licence": "CC BY-NC-SA 4.0",
-          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
-          "sourceUrl": "https://xeno-canto.org/1051974",
-          "aiGenerated": false,
-          "hosted": false,
-          "quality": "A",
-          "callType": "call"
-        },
-        {
-          "key": "xeno-canto/XC1051976",
-          "author": "African Bioacoustics Community",
-          "licence": "CC BY-NC-SA 4.0",
-          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
-          "sourceUrl": "https://xeno-canto.org/1051976",
-          "aiGenerated": false,
-          "hosted": false,
-          "quality": "A",
-          "callType": "call"
-        },
         {
           "key": "xeno-canto/XC1051974",
           "author": "African Bioacoustics Community",
@@ -2701,25 +2580,14 @@
       ],
       "recordings": [
         {
-          "key": "xeno-canto/XC27236",
-          "author": "Patrik Åberg",
-          "licence": "CC BY-NC-SA 3.0",
-          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/3.0/",
-          "sourceUrl": "https://xeno-canto.org/27236",
+          "key": "xeno-canto/XC269740",
+          "author": "Albert Lastukhin",
+          "licence": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "sourceUrl": "https://xeno-canto.org/269740",
           "aiGenerated": false,
           "hosted": false,
-          "quality": "A",
-          "callType": "call"
-        },
-        {
-          "key": "xeno-canto/XC27276",
-          "author": "Patrik Åberg",
-          "licence": "CC BY-NC-SA 3.0",
-          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/3.0/",
-          "sourceUrl": "https://xeno-canto.org/27276",
-          "aiGenerated": false,
-          "hosted": false,
-          "quality": "A",
+          "quality": "B",
           "callType": "call"
         },
         {
@@ -12394,17 +12262,6 @@
           "hosted": false,
           "quality": "B",
           "callType": "call"
-        },
-        {
-          "key": "xeno-canto/XC288401",
-          "author": "Alan Collett",
-          "licence": "CC BY-NC-SA 4.0",
-          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
-          "sourceUrl": "https://xeno-canto.org/288401",
-          "aiGenerated": false,
-          "hosted": false,
-          "quality": "B",
-          "callType": "song"
         }
       ],
       "sources": [
@@ -18924,28 +18781,6 @@
           "hosted": false,
           "quality": "A",
           "callType": "call"
-        },
-        {
-          "key": "xeno-canto/XC585199",
-          "author": "Dries Van de Loock",
-          "licence": "CC BY-NC-SA 4.0",
-          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
-          "sourceUrl": "https://xeno-canto.org/585199",
-          "aiGenerated": false,
-          "hosted": false,
-          "quality": "B",
-          "callType": "call"
-        },
-        {
-          "key": "xeno-canto/XC267474",
-          "author": "Andrew Spencer",
-          "licence": "CC BY-NC-SA 4.0",
-          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
-          "sourceUrl": "https://xeno-canto.org/267474",
-          "aiGenerated": false,
-          "hosted": false,
-          "quality": "A",
-          "callType": "call"
         }
       ],
       "sources": [
@@ -20752,17 +20587,6 @@
         }
       ],
       "recordings": [
-        {
-          "key": "xeno-canto/XC126343",
-          "author": "Sander Bot",
-          "licence": "CC BY-NC-SA 3.0",
-          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/3.0/",
-          "sourceUrl": "https://xeno-canto.org/126343",
-          "aiGenerated": false,
-          "hosted": false,
-          "quality": "A",
-          "callType": "call"
-        },
         {
           "key": "xeno-canto/XC126343",
           "author": "Sander Bot",

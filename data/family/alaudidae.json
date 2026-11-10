@@ -93,5 +93,12 @@
     "speciesCounted": 8,
     "speciesTotal": 9,
     "complete": false
+  },
+  "residency": {
+    "speciesKnown": 8,
+    "speciesUnknown": 1,
+    "unknownSpecies": [
+      "eremopterix-verticalis"
+    ]
   }
 }

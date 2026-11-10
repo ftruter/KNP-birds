@@ -201,6 +201,9 @@ const withQuality = (recording, byId) => {
     : recording
 }
 
+/** Catalogue cuts are rarely labelled by sex, so these slots are curated by hand. */
+const SEXED_SLOT = new Set(['male', 'female'])
+
 const canPlay = (recording) =>
   Boolean(recording?.license) && !licenceForbidsDerivatives(recording.license)
 
@@ -209,6 +212,7 @@ const canPlay = (recording) =>
  * Replace it only when the catalogue has a strictly higher grade.
  * A slot that can already be played is never swapped for an ND file.
  * An empty slot takes the best accepted recording, playable first.
+ * A male or female slot is never filled or swapped by the selector.
  * `permission` is the best ND recording graded above the one kept or chosen:
  * the file worth asking its recordist to let the site play.
  */
@@ -220,6 +224,11 @@ export const decideSlot = (call, byId, candidates) => {
     0,
   )
   if (best >= QUALITY_RANK.A) return { action: 'kept', recordings: annotated }
+  if (SEXED_SLOT.has(call?.sex))
+    return {
+      action: existing.length ? 'kept' : 'none',
+      recordings: annotated,
+    }
   const list = Array.isArray(candidates) ? candidates : []
   const higher = list.filter((item) => (QUALITY_RANK[item?.q] || 0) > best)
   const playableNow = annotated.some(canPlay)

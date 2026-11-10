@@ -202,7 +202,7 @@ test('a family page shows the derived approximate total', async () => {
   const markdown = renderFamilyMarkdown(doc, [
     { doc: roller, imagesAvailable: {} },
   ])
-  assert.match(markdown, /\*\*Approximate total\.\*\*/)
+  assert.match(markdown, /\*\*Approximate total, all seasons\.\*\*/)
   assert.match(markdown, /18,960–75,840 mature individuals/)
   assert.match(markdown, /Includes 5 of 5 species/)
   assert.doesNotMatch(markdown, /This total is incomplete/)

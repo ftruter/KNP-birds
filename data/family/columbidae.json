@@ -125,5 +125,12 @@
     "speciesCounted": 13,
     "speciesTotal": 13,
     "complete": true
+  },
+  "residency": {
+    "speciesKnown": 12,
+    "speciesUnknown": 1,
+    "unknownSpecies": [
+      "turtur-afer"
+    ]
   }
 }
