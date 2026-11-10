@@ -1,10 +1,10 @@
 {
   "source": "xeno-canto explore catalogue, API v3 recording fields",
   "counts": {
-    "slots": 427,
+    "slots": 429,
     "swapped": 17,
     "added": 278,
-    "kept": 104,
+    "kept": 106,
     "none": 28,
     "cleaned": 0
   },
@@ -1212,6 +1212,22 @@
       "license": "CC BY-NC-SA 4.0"
     },
     {
+      "slug": "himantopus-himantopus",
+      "scientificName": "Himantopus himantopus",
+      "index": 0,
+      "type": "call",
+      "action": "kept",
+      "from": [
+        "277591"
+      ],
+      "to": "277591",
+      "quality": "A",
+      "country": "South Africa",
+      "locality": "Port Elizabeth, Eastern Cape",
+      "cleaned": false,
+      "license": "CC BY-NC-SA 4.0"
+    },
+    {
       "slug": "icthyophaga-vocifer",
       "scientificName": "Icthyophaga vocifer",
       "index": 0,
@@ -1820,6 +1836,22 @@
       "quality": "B",
       "country": "South Africa",
       "locality": "Port Alfred, Eastern Cape",
+      "cleaned": false,
+      "license": "CC BY-NC-SA 4.0"
+    },
+    {
+      "slug": "recurvirostra-avosetta",
+      "scientificName": "Recurvirostra avosetta",
+      "index": 0,
+      "type": "call",
+      "action": "kept",
+      "from": [
+        "376940"
+      ],
+      "to": "376940",
+      "quality": "A",
+      "country": "France",
+      "locality": "Hyères, Var",
       "cleaned": false,
       "license": "CC BY-NC-SA 4.0"
     },
