@@ -22965,7 +22965,17 @@
       "slug": "sarothrura-rufa",
       "scientificName": "Sarothrura rufa",
       "commonName": "Red-chested Flufftail",
-      "images": [],
+      "images": [
+        {
+          "key": "sarothrura-rufa/side-male.jpg",
+          "author": "Christiaan Viljoen",
+          "licence": "CC BY 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by/4.0/",
+          "sourceUrl": "https://www.inaturalist.org/observations/330409363",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ],
       "recordings": [
         {
           "key": "xeno-canto/XC645330",

@@ -29,7 +29,9 @@ test('both flufftails are sourced without changing populations', async () => {
   assert.equal(red.population.kemp.status, 'VB')
   assert.equal(red.population.estimate.high, 64)
   assert.equal(red.variants[0].marks.tail.colour, 'black')
-  assert.equal(red.images.length, 0)
+  assert.equal(red.images.length, 1)
+  assert.equal(red.images[0].license, 'CC BY 4.0')
+  assert.match(red.images[0].caption, /not Kruger/)
   assert.equal(red.calls[0].recordings[0].key, 'xeno-canto/XC645330')
   assert.equal(
     overlay.species['sarothrura-elegans'].calls[0].quality[
