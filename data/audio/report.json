@@ -1,10 +1,10 @@
 {
   "source": "xeno-canto explore catalogue, API v3 recording fields",
   "counts": {
-    "slots": 481,
+    "slots": 488,
     "swapped": 17,
     "added": 278,
-    "kept": 158,
+    "kept": 165,
     "none": 28,
     "cleaned": 0
   },
@@ -308,6 +308,22 @@
       "quality": "A",
       "country": "South Africa",
       "locality": "Kruger Park (near Skukuza), Ehlanzeni, Mpumalanga",
+      "cleaned": false,
+      "license": "CC BY-NC-SA 4.0"
+    },
+    {
+      "slug": "anomalospiza-imberbis",
+      "scientificName": "Anomalospiza imberbis",
+      "index": 0,
+      "type": "call",
+      "action": "kept",
+      "from": [
+        "1080375"
+      ],
+      "to": "1080375",
+      "quality": "B",
+      "country": "South Africa",
+      "locality": "near Wakkerstroom",
       "cleaned": false,
       "license": "CC BY-NC-SA 4.0"
     },
@@ -7309,6 +7325,102 @@
       "quality": "B",
       "country": "South Africa",
       "locality": "Kareeboombult, Hoopstad, Free State",
+      "cleaned": false,
+      "license": "CC BY-NC-SA 4.0"
+    },
+    {
+      "slug": "vidua-chalybeata",
+      "scientificName": "Vidua chalybeata",
+      "index": 0,
+      "type": "call",
+      "action": "kept",
+      "from": [
+        "522557"
+      ],
+      "to": "522557",
+      "quality": "A",
+      "country": "South Africa",
+      "locality": "near Klerksdorp",
+      "cleaned": false,
+      "license": "CC BY-NC-SA 4.0"
+    },
+    {
+      "slug": "vidua-funerea",
+      "scientificName": "Vidua funerea",
+      "index": 0,
+      "type": "song",
+      "action": "kept",
+      "from": [
+        "641307"
+      ],
+      "to": "641307",
+      "quality": "A",
+      "country": "South Africa",
+      "locality": "near Fort Brown",
+      "cleaned": false,
+      "license": "CC BY-NC-SA 4.0"
+    },
+    {
+      "slug": "vidua-macroura",
+      "scientificName": "Vidua macroura",
+      "index": 0,
+      "type": "call",
+      "action": "kept",
+      "from": [
+        "353667"
+      ],
+      "to": "353667",
+      "quality": "A",
+      "country": "South Africa",
+      "locality": "Shaw Park, Eastern Cape",
+      "cleaned": false,
+      "license": "CC BY-NC-SA 4.0"
+    },
+    {
+      "slug": "vidua-paradisaea",
+      "scientificName": "Vidua paradisaea",
+      "index": 0,
+      "type": "song",
+      "action": "kept",
+      "from": [
+        "209990"
+      ],
+      "to": "209990",
+      "quality": "A",
+      "country": "Ethiopia",
+      "locality": "Awash National Park",
+      "cleaned": false,
+      "license": "CC BY-NC-SA 4.0"
+    },
+    {
+      "slug": "vidua-purpurascens",
+      "scientificName": "Vidua purpurascens",
+      "index": 0,
+      "type": "call",
+      "action": "kept",
+      "from": [
+        "631063"
+      ],
+      "to": "631063",
+      "quality": "A",
+      "country": "South Africa",
+      "locality": "near Klerksdorp",
+      "cleaned": false,
+      "license": "CC BY-NC-SA 4.0"
+    },
+    {
+      "slug": "vidua-regia",
+      "scientificName": "Vidua regia",
+      "index": 0,
+      "type": "call",
+      "action": "kept",
+      "from": [
+        "622267"
+      ],
+      "to": "622267",
+      "quality": "A",
+      "country": "South Africa",
+      "locality": "near Klerksdorp",
       "cleaned": false,
       "license": "CC BY-NC-SA 4.0"
     },

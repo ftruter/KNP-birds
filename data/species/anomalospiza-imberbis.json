@@ -1,14 +1,185 @@
 {
+  "size": {
+    "lengthCm": {
+      "min": 12,
+      "max": 13
+    },
+    "note": "Newman's Birds gives 12–13 cm."
+  },
+  "habitat": "Usually in small flocks in well-vegetated vleis, grassland, or grassland with scattered bushes. It parasitises cisticolas and prinias.",
+  "summary": "A fairly common resident, and migratory in its southern range. A small yellow bird with a short stout black bill, black legs, and dark wings edged yellow. The juvenile and immature have a two-coloured bill and look more orange-brown. The male calls 'tsileu' and gives a weaver-like swizzle in display. Avibase lists it as Parasitic Weaver and marks it rare, so the months are left unset. The Kemp name Cuckoo Finch and the code VB were left unchanged.",
+  "variants": [
+    {
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "marks": {
+        "bill": {
+          "colour": "black",
+          "shape": null
+        },
+        "eye": {
+          "iris": null,
+          "ring": null
+        },
+        "legs": {
+          "colour": "black"
+        },
+        "head": {
+          "crown": null,
+          "face": null,
+          "throat": null,
+          "pattern": "Small and yellow."
+        },
+        "upperparts": {
+          "back": null,
+          "rump": null
+        },
+        "underparts": {
+          "breast": "yellow",
+          "belly": "yellow"
+        },
+        "wings": {
+          "above": null,
+          "below": null,
+          "pattern": "Dark, with yellow-edged feathers."
+        },
+        "tail": {
+          "colour": null,
+          "shape": null
+        }
+      }
+    },
+    {
+      "age": "juvenile",
+      "sex": "any",
+      "season": "any",
+      "marks": {
+        "bill": {
+          "colour": null,
+          "shape": null
+        },
+        "eye": {
+          "iris": null,
+          "ring": null
+        },
+        "legs": {
+          "colour": null
+        },
+        "head": {
+          "crown": null,
+          "face": null,
+          "throat": null,
+          "pattern": "Two-coloured."
+        },
+        "upperparts": {
+          "back": null,
+          "rump": null,
+          "pattern": "More orange-brown than the adult."
+        },
+        "underparts": {
+          "breast": null,
+          "belly": null
+        },
+        "wings": {
+          "above": null,
+          "below": null
+        },
+        "tail": {
+          "colour": null,
+          "shape": null
+        }
+      }
+    }
+  ],
+  "viewNotes": [
+    {
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Small and yellow, with a stout black bill and dark wings edged yellow."
+    },
+    {
+      "view": "perched-front",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Yellow underparts and black legs."
+    },
+    {
+      "view": "perched-side",
+      "age": "juvenile",
+      "sex": "any",
+      "season": "any",
+      "note": "Two-coloured bill and a more orange-brown appearance."
+    },
+    {
+      "view": "flight-above",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Flight plumage is not described apart from the dark yellow-edged wings."
+    },
+    {
+      "view": "flight-below",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "The underside in flight is not described."
+    }
+  ],
+  "calls": [
+    {
+      "sex": "male",
+      "type": "call",
+      "description": "'tsileu, tsileu, tsileu', or a weaver-like swizzle in display. The playable file is grade B, from near Wakkerstroom. The grade A file is CC BY-NC-ND and was not used. The filename is XC1080375-2026-02-14-13_00-cuckoo-finch.mp3.",
+      "recordings": [
+        {
+          "key": "xeno-canto/XC1080375",
+          "source": "https://xeno-canto.org/1080375",
+          "fileUrl": "https://xeno-canto.org/sounds/uploaded/LWQXRZHFCU/XC1080375-2026-02-14-13_00-cuckoo-finch.mp3",
+          "author": "Niall Perrins",
+          "license": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ]
+    }
+  ],
+  "images": [
+    {
+      "key": "anomalospiza-imberbis/side.jpg",
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "source": "https://www.inaturalist.org/observations/335248550",
+      "fileUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/608930692/large.jpg",
+      "author": "moxcalvitiumtorgos",
+      "license": "CC BY-NC 4.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+      "aiGenerated": false,
+      "hosted": false,
+      "alt": "Cuckoo Finch at Pretoriuskop in Kruger, small and yellow with a dark bill",
+      "caption": "Cuckoo Finch at Pretoriuskop in Kruger, small and yellow, with a dark bill."
+    }
+  ],
+  "research": {
+    "confidence": "medium",
+    "needsReview": true,
+    "note": "Newman calls it a fairly common resident and says it is migratory in its southern range, without naming months. Avibase lists Parasitic Weaver and marks it rare, so the months are left unset. The only grade A recording found is CC BY-NC-ND, so the playable grade B call from near Wakkerstroom is used. The Kemp name Cuckoo Finch and the code VB were left unchanged."
+  },
   "kind": "species",
   "slug": "anomalospiza-imberbis",
+  "family": "viduidae",
+  "sampleData": false,
   "scientificName": "Anomalospiza imberbis",
   "commonNames": {
     "en": "Cuckoo Finch",
     "af": "Koekoekvink"
   },
-  "family": "viduidae",
-  "summary": "The details for this species have not been published yet.",
-  "sampleData": true,
   "population": {
     "estimate": {
       "low": 256,
@@ -35,8 +206,25 @@
     },
     "tierApplied": "D"
   },
-  "variants": [],
-  "viewNotes": [],
-  "calls": [],
-  "images": []
+  "status": "resident",
+  "sources": [
+    {
+      "title": "Cuckoo-finch (Weaver)",
+      "url": "https://newmansbirds.com/birds/cuckoo-finch/",
+      "publisher": "Newman's Birds",
+      "year": 2026
+    },
+    {
+      "title": "Avibase bird checklist — Kruger National Park",
+      "url": "https://avibase.bsc-eoc.org/checklist.jsp?region=ZA000003",
+      "publisher": "Avibase",
+      "year": null
+    },
+    {
+      "title": "Kemp A.C., Herholdt J.J., Whyte I. & Harrison J. (2001). Birds of the two largest national parks in South Africa: a method to generate estimates of population size for all species and assess their conservation ecology. S. Afr. J. Sci. 97: 393–403.",
+      "url": "https://journals.co.za/doi/pdf/10.10520/EJC97367",
+      "publisher": "South African Journal of Science",
+      "year": 2001
+    }
+  ]
 }
