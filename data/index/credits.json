@@ -24373,7 +24373,17 @@
       "slug": "tauraco-corythaix",
       "scientificName": "Tauraco corythaix",
       "commonName": "Knysna Turaco",
-      "images": [],
+      "images": [
+        {
+          "key": "tauraco-corythaix/side.jpg",
+          "author": "Shaun Swanepoel",
+          "licence": "CC BY 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by/4.0/",
+          "sourceUrl": "https://www.inaturalist.org/observations/243697130",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ],
       "recordings": [
         {
           "key": "xeno-canto/XC1161576",

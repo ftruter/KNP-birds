@@ -212,11 +212,28 @@
       ]
     }
   ],
-  "images": [],
+  "images": [
+    {
+      "key": "tauraco-corythaix/side.jpg",
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "source": "https://www.inaturalist.org/observations/243697130",
+      "fileUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/434570451/large.jpeg",
+      "author": "Shaun Swanepoel",
+      "license": "CC BY 4.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by/4.0/",
+      "aiGenerated": false,
+      "hosted": false,
+      "alt": "Knysna Turaco on the Garden Route, not Kruger, green with a white-tipped crest and a red bill among berries.",
+      "caption": "Knysna Turaco on the Garden Route, not Kruger, green with a white-tipped crest and a red bill among berries."
+    }
+  ],
   "research": {
     "confidence": "medium",
     "needsReview": false,
-    "note": "Newman calls it a common, localised endemic resident, so status is resident and all twelve months are listed. Livingstone’s Turaco and Schalow’s Turaco are comparisons Newman names and are not in this list. No Kemp block was present, and the empty population estimate was left unchanged. No openly licensed research-grade photograph was found in the Kruger box."
+    "note": "Newman calls it a common, localised endemic resident, so status is resident and all twelve months are listed. Livingstone’s Turaco and Schalow’s Turaco are comparisons Newman names and are not in this list. No Kemp block was present, and the empty population estimate was left unchanged. No Kruger photograph was found under an allowed licence. A side photograph from the Garden Route is stored."
   },
   "status": "resident",
   "monthsPresent": [
