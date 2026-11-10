@@ -1,10 +1,10 @@
 {
   "source": "xeno-canto explore catalogue, API v3 recording fields",
   "counts": {
-    "slots": 432,
+    "slots": 434,
     "swapped": 17,
     "added": 278,
-    "kept": 109,
+    "kept": 111,
     "none": 28,
     "cleaned": 0
   },
@@ -1900,6 +1900,38 @@
       "quality": "B",
       "country": "South Africa",
       "locality": "Leewrand, Bloemfontein, Free State",
+      "cleaned": false,
+      "license": "CC BY-NC-SA 4.0"
+    },
+    {
+      "slug": "sarothrura-elegans",
+      "scientificName": "Sarothrura elegans",
+      "index": 0,
+      "type": "call",
+      "action": "kept",
+      "from": [
+        "952488"
+      ],
+      "to": "952488",
+      "quality": "A",
+      "country": "South Africa",
+      "locality": "Prince's Grant Golf Estate, KwaZulu-Natal",
+      "cleaned": false,
+      "license": "CC BY-NC-SA 4.0"
+    },
+    {
+      "slug": "sarothrura-rufa",
+      "scientificName": "Sarothrura rufa",
+      "index": 0,
+      "type": "call",
+      "action": "kept",
+      "from": [
+        "645330"
+      ],
+      "to": "645330",
+      "quality": "A",
+      "country": "South Africa",
+      "locality": "near Klerksdorp, North West",
       "cleaned": false,
       "license": "CC BY-NC-SA 4.0"
     },
