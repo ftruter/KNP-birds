@@ -5,3 +5,6 @@ dist/
 *.log
 data/audio/.cache/
 data/audio/files/
+.DS_Store
+data/.DS_Store
+.claude
