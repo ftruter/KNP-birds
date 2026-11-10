@@ -6,8 +6,8 @@
     "en": "African and New World parrots",
     "af": "Papegaai"
   },
-  "summary": "Field notes for this family are still to be written.",
-  "sampleData": true,
+  "summary": "Parrots. Brown-headed Parrot is the green bird with a brown head and yellow eyes, apple-green on the back in flight. Meyer’s Parrot has a yellow forehead bar and yellow shoulders. Newman’s lines disagree on whether its back is pale blue, grey-brown or blue-green, so no single back colour is stored.",
+  "sampleData": false,
   "species": [
     {
       "slug": "poicephalus-cryptoxanthus",

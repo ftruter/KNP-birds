@@ -7,8 +7,42 @@
     "af": "Bosveldpapegaai"
   },
   "family": "psittacidae",
-  "summary": "The details for this species have not been published yet.",
-  "sampleData": true,
+  "size": {
+    "lengthCm": {
+      "min": 23,
+      "max": 23
+    },
+    "note": "Newman's Birds gives 23 cm."
+  },
+  "habitat": "Pairs and small flocks in broad-leaved and riverine woodland. It hybridises with Brown-headed Parrot where their ranges overlap.",
+  "summary": "A common resident. It differs from Brown-headed Parrot in grey-brown upper parts, head and breast. The identification line says the back and rump are pale blue, the head, mantle and wings are brown, and the underparts are green. It has a yellow bar on the forehead, yellow shoulders and some yellow on the underwing coverts. In flight the back is blue-green. The immature has no yellow on the forehead and very little on the shoulders. Newman does not print a call phrase. The Kemp paper name Meyer’s Parrot and the code NB were left unchanged.",
+  "sampleData": false,
+  "similar": [
+    {
+      "slug": "poicephalus-cryptoxanthus",
+      "note": "Brown-headed Parrot has a pale green body, a brown head and yellow eyes, without the yellow forehead bar and yellow shoulders."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Meyer's Parrot",
+      "url": "https://newmansbirds.com/birds/meyers-parrot/",
+      "publisher": "Newman's Birds",
+      "year": 2026
+    },
+    {
+      "title": "Avibase bird checklist — Kruger National Park",
+      "url": "https://avibase.bsc-eoc.org/checklist.jsp?region=ZA000003",
+      "publisher": "Avibase",
+      "year": null
+    },
+    {
+      "title": "Kemp A.C., Herholdt J.J., Whyte I. & Harrison J. (2001). Birds of the two largest national parks in South Africa: a method to generate estimates of population size for all species and assess their conservation ecology. S. Afr. J. Sci. 97: 393–403.",
+      "url": "https://journals.co.za/doi/pdf/10.10520/EJC97367",
+      "publisher": "South African Journal of Science",
+      "year": 2001
+    }
+  ],
   "population": {
     "estimate": {
       "low": 2,
@@ -35,8 +69,209 @@
     },
     "tierApplied": "D"
   },
-  "variants": [],
-  "viewNotes": [],
-  "calls": [],
-  "images": []
+  "variants": [
+    {
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "marks": {
+        "bill": {
+          "colour": null,
+          "shape": null
+        },
+        "eye": {
+          "iris": null,
+          "ring": null
+        },
+        "legs": {
+          "colour": null
+        },
+        "head": {
+          "crown": "brown",
+          "face": "brown",
+          "throat": null,
+          "pattern": "Identification line: brown head. Description: grey-brown head, with a yellow bar on the forehead."
+        },
+        "upperparts": {
+          "back": null,
+          "rump": null,
+          "pattern": "Identification line: back and rump pale blue, mantle brown. Description: entirely grey-brown upper parts. In flight the back is blue-green."
+        },
+        "underparts": {
+          "breast": null,
+          "belly": "green",
+          "pattern": "Identification line: below green. Description: grey-brown breast."
+        },
+        "wings": {
+          "above": "brown",
+          "below": null,
+          "pattern": "Yellow shoulders. Some yellow on the underwing coverts. The identification line says the wings are brown."
+        },
+        "tail": {
+          "colour": null,
+          "shape": null
+        }
+      }
+    },
+    {
+      "age": "immature",
+      "sex": "any",
+      "season": "any",
+      "marks": {
+        "bill": {
+          "colour": null,
+          "shape": null
+        },
+        "eye": {
+          "iris": null,
+          "ring": null
+        },
+        "legs": {
+          "colour": null
+        },
+        "head": {
+          "crown": null,
+          "face": null,
+          "throat": null,
+          "pattern": "No yellow on the forehead."
+        },
+        "upperparts": {
+          "back": null,
+          "rump": null,
+          "pattern": null
+        },
+        "underparts": {
+          "breast": null,
+          "belly": null,
+          "pattern": null
+        },
+        "wings": {
+          "above": null,
+          "below": null,
+          "pattern": "Very little yellow on the shoulders."
+        },
+        "tail": {
+          "colour": null,
+          "shape": null
+        }
+      }
+    }
+  ],
+  "viewNotes": [
+    {
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Grey-brown head and upper parts, green below, yellow forehead bar and yellow shoulders. The back colour conflicts between pale blue, grey-brown and blue-green."
+    },
+    {
+      "view": "perched-front",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Yellow bar on the forehead. The breast is grey-brown in the description and the underparts are green on the identification line."
+    },
+    {
+      "view": "perched-back",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "The identification line says the back and rump are pale blue. The description says the upper parts are grey-brown."
+    },
+    {
+      "view": "flight-above",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Blue-green back in flight."
+    },
+    {
+      "view": "flight-below",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Some yellow on the underwing coverts. The rest of the underwing was not described."
+    },
+    {
+      "view": "perched-side",
+      "age": "immature",
+      "sex": "any",
+      "season": "any",
+      "note": "No yellow on the forehead, and very little yellow on the shoulders."
+    }
+  ],
+  "calls": [
+    {
+      "sex": "any",
+      "type": "call",
+      "description": "Newman does not print a call phrase. Grade A call from near Fafung, Madibeng, North West, with another species in the background. No Kruger recording outranked it. The filename is XC1078757-2026-02-06-120052-meyers-parrot.mp3.",
+      "recordings": [
+        {
+          "key": "xeno-canto/XC1078757",
+          "source": "https://xeno-canto.org/1078757",
+          "fileUrl": "https://xeno-canto.org/sounds/uploaded/LWQXRZHFCU/XC1078757-2026-02-06-120052-meyers-parrot.mp3",
+          "author": "Niall Perrins",
+          "license": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ]
+    }
+  ],
+  "images": [
+    {
+      "key": "poicephalus-meyeri/side.jpg",
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "source": "https://www.inaturalist.org/observations/206227635",
+      "fileUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/364733745/large.jpg",
+      "author": "Duncan McKenzie",
+      "license": "CC BY-NC 4.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+      "aiGenerated": false,
+      "hosted": false,
+      "alt": "Meyer’s Parrot in South Africa, not Kruger, brown head, yellow shoulder and green underparts",
+      "caption": "Meyer’s Parrot in South Africa, not Kruger, with a yellow shoulder and green underparts."
+    },
+    {
+      "key": "poicephalus-meyeri/front.jpg",
+      "view": "perched-front",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "source": "https://www.inaturalist.org/observations/359781506",
+      "fileUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/656464580/large.jpg",
+      "author": "dabchick123",
+      "license": "CC BY-NC 4.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+      "aiGenerated": false,
+      "hosted": false,
+      "alt": "Meyer’s Parrot at Waterberg, not Kruger, yellow bar on the forehead and a yellow shoulder",
+      "caption": "Meyer’s Parrot at Waterberg, not Kruger, with a yellow bar on the forehead and a yellow shoulder."
+    }
+  ],
+  "research": {
+    "confidence": "medium",
+    "needsReview": true,
+    "note": "Newman calls it a common resident, and Avibase does not mark it rare, so all twelve months are listed. The Kemp code NB was left unchanged. The back is pale blue on the identification line, grey-brown in the description, and blue-green in flight, so no single back colour is stored. Newman does not print a call phrase. No openly licensed Kruger photograph was found. The photographs are from elsewhere in South Africa. The grade A call is from North West and has another species in the background. Newman says this species and Brown-headed Parrot hybridise where their ranges overlap. Population figures and the Kemp paper name Meyer’s Parrot were left unchanged."
+  },
+  "status": "resident",
+  "monthsPresent": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+  ]
 }
