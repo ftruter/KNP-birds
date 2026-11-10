@@ -2190,7 +2190,17 @@
       "slug": "anthus-nicholsoni",
       "scientificName": "Anthus nicholsoni",
       "commonName": "Nicholson’s Pipit",
-      "images": [],
+      "images": [
+        {
+          "key": "anthus-nicholsoni/side.jpg",
+          "author": "Andrew Deacon",
+          "licence": "CC0 1.0",
+          "licenceUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+          "sourceUrl": "https://www.inaturalist.org/observations/88776237",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ],
       "recordings": [
         {
           "key": "xeno-canto/XC425855",
