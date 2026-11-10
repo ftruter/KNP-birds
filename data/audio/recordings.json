@@ -1969,9 +1969,20 @@
       "calls": [
         {
           "index": 0,
-          "quality": {
-            "xeno-canto/XC369789": "C"
-          }
+          "recordings": [
+            {
+              "key": "xeno-canto/XC369789-cleaned.mp3",
+              "source": "https://xeno-canto.org/369789",
+              "fileUrl": "https://xeno-canto.org/sounds/uploaded/RLSEYIEVCI/XC369789-cape%20vulture.mp3",
+              "author": "W.J. Rossouw",
+              "license": "CC BY-NC-SA 4.0",
+              "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+              "aiGenerated": false,
+              "hosted": true,
+              "quality": "C",
+              "modified": "Wind noise reduced (high-pass filter and noise reduction)"
+            }
+          ]
         }
       ]
     },
