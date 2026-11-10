@@ -7036,7 +7036,17 @@
       "slug": "chlorophoneus-nigrifrons",
       "scientificName": "Chlorophoneus nigrifrons",
       "commonName": "Black-fronted Bush-shrike",
-      "images": [],
+      "images": [
+        {
+          "key": "chlorophoneus-nigrifrons/side.jpg",
+          "author": "dhfischer",
+          "licence": "CC BY 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by/4.0/",
+          "sourceUrl": "https://www.inaturalist.org/observations/58575304",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ],
       "recordings": [
         {
           "key": "xeno-canto/XC703355",
