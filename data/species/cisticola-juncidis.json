@@ -7,6 +7,13 @@
     "af": "Landeryklopkloppie"
   },
   "family": "cisticolidae",
+  "size": {
+    "lengthCm": {
+      "min": 10,
+      "max": 12
+    },
+    "note": "Wikipedia gives 10–12 cm."
+  },
   "habitat": "In the non-breeding season it skulks in grass and can be hard to see. Wikipedia does not give a Kruger status.",
   "summary": "Wikipedia says it is brown above, heavily streaked with black, whitish below, with a broad white-tipped tail that is flicked often. Males have less crown streaking and more back marking than females, but the sexes are not greatly different. The length was not given in the retrieved text. Newman has no page.",
   "sampleData": false,
@@ -210,6 +217,6 @@
   "research": {
     "confidence": "low",
     "needsReview": true,
-    "note": "Newman has no page. Status and months were left unset because the retrieved text does not give them. The Kemp name remains Fantailed Cisticola."
+    "note": "Newman has no page. Length is from Wikipedia (10–12 cm). Status and months were left unset because the retrieved text does not give them. The Kemp name remains Fantailed Cisticola."
   }
 }

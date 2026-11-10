@@ -22,6 +22,13 @@
     11,
     12
   ],
+  "size": {
+    "lengthCm": {
+      "min": 12,
+      "max": 13
+    },
+    "note": "Newman's Birds gives 12–13 cm."
+  },
   "habitat": "Pairs, often in bird parties. The yellowest morph is the one in northern South Africa.",
   "summary": "A common resident, highly variable. The yellowest morph is the northern South African one. Males have a black throat-band; in the female it is usually narrower and sometimes absent. It has a pale yellow eye and white outer tail feathers. The call is a loud pilly-pilly-pilly, and pairs duet, the female faster than the male.",
   "sampleData": false,
@@ -230,6 +237,6 @@
   "research": {
     "confidence": "medium",
     "needsReview": false,
-    "note": "Status is resident and all twelve months are listed from Newman’s resident wording. Population figures were left unchanged."
+    "note": "Status is resident and all twelve months are listed from Newman’s resident wording. Length is from Newman’s Birds. Population figures were left unchanged."
   }
 }
