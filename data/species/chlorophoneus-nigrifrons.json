@@ -240,11 +240,28 @@
       ]
     }
   ],
-  "images": [],
+  "images": [
+    {
+      "key": "chlorophoneus-nigrifrons/side.jpg",
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "source": "https://www.inaturalist.org/observations/58575304",
+      "fileUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/163390496/large.jpg",
+      "author": "dhfischer",
+      "license": "CC BY 4.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by/4.0/",
+      "aiGenerated": false,
+      "hosted": false,
+      "alt": "Black-fronted Bush-shrike in Mopani, not Kruger, with a dark forehead, olive upperparts and yellow underparts.",
+      "caption": "Black-fronted Bush-shrike in Mopani, not Kruger, with a dark forehead, olive upperparts and yellow underparts."
+    }
+  ],
   "research": {
     "confidence": "medium",
     "needsReview": false,
-    "note": "Newman calls it an uncommon, localised resident, so status is resident and all twelve months are listed. The Kemp code NB was left unchanged. No openly licensed research-grade photograph was found inside the Kruger box."
+    "note": "Newman calls it an uncommon, localised resident, so status is resident and all twelve months are listed. The Kemp code NB was left unchanged. No Kruger photograph was found under an allowed licence. A side photograph from Mopani is stored."
   },
   "status": "resident",
   "monthsPresent": [

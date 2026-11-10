@@ -692,7 +692,17 @@
       "slug": "aenigmatolimnas-marginalis",
       "scientificName": "Aenigmatolimnas marginalis",
       "commonName": "Striped Crake",
-      "images": [],
+      "images": [
+        {
+          "key": "aenigmatolimnas-marginalis/side.jpg",
+          "author": "Stefan Wolmarans",
+          "licence": "CC BY 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by/4.0/",
+          "sourceUrl": "https://www.inaturalist.org/observations/257235536",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ],
       "recordings": [
         {
           "key": "xeno-canto/XC355772",
@@ -1400,7 +1410,17 @@
       "slug": "anarhynchus-pallidus",
       "scientificName": "Anarhynchus pallidus",
       "commonName": "Chestnut-banded Plover",
-      "images": [],
+      "images": [
+        {
+          "key": "anarhynchus-pallidus/side.jpg",
+          "author": "Dave Brown",
+          "licence": "CC0 1.0",
+          "licenceUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+          "sourceUrl": "https://www.inaturalist.org/observations/65324548",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ],
       "recordings": [
         {
           "key": "xeno-canto/XC28681",
@@ -2170,7 +2190,17 @@
       "slug": "anthus-nicholsoni",
       "scientificName": "Anthus nicholsoni",
       "commonName": "Nicholson’s Pipit",
-      "images": [],
+      "images": [
+        {
+          "key": "anthus-nicholsoni/side.jpg",
+          "author": "Andrew Deacon",
+          "licence": "CC0 1.0",
+          "licenceUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+          "sourceUrl": "https://www.inaturalist.org/observations/88776237",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ],
       "recordings": [
         {
           "key": "xeno-canto/XC425855",
@@ -2301,7 +2331,17 @@
       "slug": "apalis-ruddi",
       "scientificName": "Apalis ruddi",
       "commonName": "Rudd’s Apalis",
-      "images": [],
+      "images": [
+        {
+          "key": "apalis-ruddi/side.jpg",
+          "author": "Bruno - Yolande Zanette",
+          "licence": "CC BY 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by/4.0/",
+          "sourceUrl": "https://www.inaturalist.org/observations/412370272",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ],
       "recordings": [
         {
           "key": "xeno-canto/XC972485",
@@ -4241,7 +4281,17 @@
       "slug": "brunhilda-erythronotos",
       "scientificName": "Brunhilda erythronotos",
       "commonName": "Black-faced Waxbill",
-      "images": [],
+      "images": [
+        {
+          "key": "brunhilda-erythronotos/side.jpg",
+          "author": "Albertus Horn",
+          "licence": "CC BY 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by/4.0/",
+          "sourceUrl": "https://www.inaturalist.org/observations/236343323",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ],
       "recordings": [
         {
           "key": "xeno-canto/XC382988",
@@ -5052,7 +5102,17 @@
       "slug": "calamonastes-fasciolatus",
       "scientificName": "Calamonastes fasciolatus",
       "commonName": "Barred Wren-Warbler",
-      "images": [],
+      "images": [
+        {
+          "key": "calamonastes-fasciolatus/side.jpg",
+          "author": "scaup",
+          "licence": "CC BY 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by/4.0/",
+          "sourceUrl": "https://www.inaturalist.org/observations/152186429",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ],
       "recordings": [
         {
           "key": "xeno-canto/XC520425",
@@ -6170,7 +6230,17 @@
       "slug": "ceblepyris-caesius",
       "scientificName": "Ceblepyris caesius",
       "commonName": "Grey Cuckooshrike",
-      "images": [],
+      "images": [
+        {
+          "key": "ceblepyris-caesius/side.jpg",
+          "author": "Innes Buchner",
+          "licence": "CC0 1.0",
+          "licenceUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+          "sourceUrl": "https://www.inaturalist.org/observations/316812090",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ],
       "recordings": [
         {
           "key": "xeno-canto/XC443640",
@@ -7036,7 +7106,17 @@
       "slug": "chlorophoneus-nigrifrons",
       "scientificName": "Chlorophoneus nigrifrons",
       "commonName": "Black-fronted Bush-shrike",
-      "images": [],
+      "images": [
+        {
+          "key": "chlorophoneus-nigrifrons/side.jpg",
+          "author": "dhfischer",
+          "licence": "CC BY 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by/4.0/",
+          "sourceUrl": "https://www.inaturalist.org/observations/58575304",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ],
       "recordings": [
         {
           "key": "xeno-canto/XC703355",
@@ -9042,7 +9122,17 @@
       "slug": "coccopygia-melanotis",
       "scientificName": "Coccopygia melanotis",
       "commonName": "Swee Waxbill",
-      "images": [],
+      "images": [
+        {
+          "key": "coccopygia-melanotis/side-male.jpg",
+          "author": "Mark Clarke",
+          "licence": "CC BY 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by/4.0/",
+          "sourceUrl": "https://www.inaturalist.org/observations/392337195",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ],
       "recordings": [
         {
           "key": "xeno-canto/XC292907",
@@ -9118,7 +9208,17 @@
       "slug": "columba-arquatrix",
       "scientificName": "Columba arquatrix",
       "commonName": "African Olive Pigeon",
-      "images": [],
+      "images": [
+        {
+          "key": "columba-arquatrix/side.jpg",
+          "author": "Christiaan Viljoen",
+          "licence": "CC BY 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by/4.0/",
+          "sourceUrl": "https://www.inaturalist.org/observations/397732141",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ],
       "recordings": [
         {
           "key": "xeno-canto/XC386792",
@@ -9735,7 +9835,17 @@
       "slug": "corvus-capensis",
       "scientificName": "Corvus capensis",
       "commonName": "Cape Crow",
-      "images": [],
+      "images": [
+        {
+          "key": "corvus-capensis/side.jpg",
+          "author": "bdhimes",
+          "licence": "CC0 1.0",
+          "licenceUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+          "sourceUrl": "https://www.inaturalist.org/observations/290416943",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ],
       "recordings": [
         {
           "key": "xeno-canto/XC247932",
@@ -10107,7 +10217,17 @@
       "slug": "coturnix-coturnix",
       "scientificName": "Coturnix coturnix",
       "commonName": "Common Quail",
-      "images": [],
+      "images": [
+        {
+          "key": "coturnix-coturnix/side.jpg",
+          "author": "Dylan Leonard",
+          "licence": "CC BY-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+          "sourceUrl": "https://www.inaturalist.org/observations/329856594",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ],
       "recordings": [
         {
           "key": "xeno-canto/XC137862",
@@ -10373,7 +10493,17 @@
       "slug": "crithagra-atrogularis",
       "scientificName": "Crithagra atrogularis",
       "commonName": "Black-throated Canary",
-      "images": [],
+      "images": [
+        {
+          "key": "crithagra-atrogularis/side.jpg",
+          "author": "Shaun Swanepoel",
+          "licence": "CC BY 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by/4.0/",
+          "sourceUrl": "https://www.inaturalist.org/observations/178520721",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ],
       "recordings": [
         {
           "key": "xeno-canto/XC472484",
@@ -10509,6 +10639,12 @@
           "title": "Forest Canary",
           "url": "https://newmansbirds.com/birds/forest-canary/",
           "publisher": "Newman's Birds",
+          "year": 2026
+        },
+        {
+          "title": "Forest canary",
+          "url": "https://en.wikipedia.org/wiki/Forest_canary",
+          "publisher": "Wikipedia",
           "year": 2026
         }
       ]
@@ -16767,7 +16903,17 @@
       "slug": "macheiramphus-alcinus",
       "scientificName": "Macheiramphus alcinus",
       "commonName": "Bat Hawk",
-      "images": [],
+      "images": [
+        {
+          "key": "macheiramphus-alcinus/flight-below.jpg",
+          "author": "Niall Perrins",
+          "licence": "CC BY-NC 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+          "sourceUrl": "https://www.inaturalist.org/observations/334597511",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ],
       "recordings": [
         {
           "key": "xeno-canto/XC758044",
@@ -18379,6 +18525,12 @@
           "title": "Amethyst Sunbird",
           "url": "https://newmansbirds.com/birds/amethyst-sunbird/",
           "publisher": "Newman's Birds",
+          "year": 2026
+        },
+        {
+          "title": "Malachite sunbird",
+          "url": "https://en.wikipedia.org/wiki/Malachite_sunbird",
+          "publisher": "Wikipedia",
           "year": 2026
         }
       ]
@@ -20787,6 +20939,12 @@
           "url": "https://avibase.bsc-eoc.org/checklist.jsp?region=ZA000003",
           "publisher": "Avibase",
           "year": null
+        },
+        {
+          "title": "Holub’s (African) Golden Weaver",
+          "url": "https://newmansbirds.com/birds/holubs-african-golden-weaver/",
+          "publisher": "Newman's Birds",
+          "year": 2026
         }
       ]
     },
@@ -21534,7 +21692,17 @@
       "slug": "prinia-hypoxantha",
       "scientificName": "Prinia hypoxantha",
       "commonName": "Drakensberg Prinia",
-      "images": [],
+      "images": [
+        {
+          "key": "prinia-hypoxantha/side.jpg",
+          "author": "Justin Ponder",
+          "licence": "CC BY 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by/4.0/",
+          "sourceUrl": "https://www.inaturalist.org/observations/269420490",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ],
       "recordings": [
         {
           "key": "xeno-canto/XC935289",
@@ -21788,7 +21956,17 @@
       "slug": "pternistis-afer",
       "scientificName": "Pternistis afer",
       "commonName": "Red-necked Spurfowl",
-      "images": [],
+      "images": [
+        {
+          "key": "pternistis-afer/front.jpg",
+          "author": "Henry de Lange",
+          "licence": "CC BY 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by/4.0/",
+          "sourceUrl": "https://www.inaturalist.org/observations/259638031",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ],
       "recordings": [
         {
           "key": "xeno-canto/XC501361",
@@ -22805,7 +22983,17 @@
       "slug": "sarothrura-rufa",
       "scientificName": "Sarothrura rufa",
       "commonName": "Red-chested Flufftail",
-      "images": [],
+      "images": [
+        {
+          "key": "sarothrura-rufa/side-male.jpg",
+          "author": "Christiaan Viljoen",
+          "licence": "CC BY 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by/4.0/",
+          "sourceUrl": "https://www.inaturalist.org/observations/330409363",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ],
       "recordings": [
         {
           "key": "xeno-canto/XC645330",
@@ -23034,7 +23222,17 @@
       "slug": "serinus-canicollis",
       "scientificName": "Serinus canicollis",
       "commonName": "Cape Canary",
-      "images": [],
+      "images": [
+        {
+          "key": "serinus-canicollis/front-male.jpg",
+          "author": "Dave Brown",
+          "licence": "CC0 1.0",
+          "licenceUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+          "sourceUrl": "https://www.inaturalist.org/observations/62800511",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ],
       "recordings": [
         {
           "key": "xeno-canto/XC1046125",
@@ -24203,7 +24401,17 @@
       "slug": "tauraco-corythaix",
       "scientificName": "Tauraco corythaix",
       "commonName": "Knysna Turaco",
-      "images": [],
+      "images": [
+        {
+          "key": "tauraco-corythaix/side.jpg",
+          "author": "Shaun Swanepoel",
+          "licence": "CC BY 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by/4.0/",
+          "sourceUrl": "https://www.inaturalist.org/observations/243697130",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ],
       "recordings": [
         {
           "key": "xeno-canto/XC1161576",
@@ -25703,7 +25911,17 @@
       "slug": "turtur-afer",
       "scientificName": "Turtur afer",
       "commonName": "Blue-spotted Wood Dove",
-      "images": [],
+      "images": [
+        {
+          "key": "turtur-afer/side.jpg",
+          "author": "maritzasouthafrica",
+          "licence": "CC BY-NC 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+          "sourceUrl": "https://www.inaturalist.org/observations/325692678",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ],
       "recordings": [
         {
           "key": "xeno-canto/XC1009898",

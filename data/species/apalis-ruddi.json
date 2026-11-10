@@ -173,10 +173,27 @@
       ]
     }
   ],
-  "images": [],
+  "images": [
+    {
+      "key": "apalis-ruddi/side.jpg",
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "source": "https://www.inaturalist.org/observations/412370272",
+      "fileUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/758772033/large.jpg",
+      "author": "Bruno - Yolande Zanette",
+      "license": "CC BY 4.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by/4.0/",
+      "aiGenerated": false,
+      "hosted": false,
+      "alt": "Rudd’s Apalis in uMkhanyakude, not Kruger, with a grey head, olive upperparts and a white throat.",
+      "caption": "Rudd’s Apalis in uMkhanyakude, not Kruger, with a grey head, olive upperparts and a white throat."
+    }
+  ],
   "research": {
     "confidence": "medium",
     "needsReview": true,
-    "note": "Status is resident and all twelve months are listed from Newman’s resident wording. Population figures were left unchanged."
+    "note": "Status is resident and all twelve months are listed from Newman’s resident wording. No Kruger photograph was found under an allowed licence. A side photograph from uMkhanyakude is stored. Population figures were left unchanged."
   }
 }

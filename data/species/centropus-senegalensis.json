@@ -22,6 +22,13 @@
     11,
     12
   ],
+  "size": {
+    "lengthCm": {
+      "min": 41,
+      "max": 41
+    },
+    "note": "Newman's Birds gives 41 cm."
+  },
   "habitat": "Singly or in pairs in dense riparian vegetation, reed beds and thickets away from water.",
   "summary": "A common resident. Rufous wings, a black cap and tail, and white underparts, with unbarred upper tail coverts. The tail is shorter than that of a Coppery-tailed Coucal and has green iridescence, and the bill is less heavy. The immature is duller, with black barring above and finely buff-barred upper tail coverts. Newman’s page does not describe the voice. The stub has no Kemp estimate and none was added.",
   "sampleData": false,
@@ -216,6 +223,6 @@
   "research": {
     "confidence": "medium",
     "needsReview": false,
-    "note": "Status is resident and all twelve months are listed. Newman calls it a common resident. The stub has no Kemp block and no estimate, and both were left that way. Newman says the range does not overlap Burchell’s Coucal, but both species are on the Kruger list."
+    "note": "Status is resident and all twelve months are listed. Newman calls it a common resident. Length is from Newman’s Birds. The stub has no Kemp block and no estimate, and both were left that way. Newman says the range does not overlap Burchell’s Coucal, but both species are on the Kruger list."
   }
 }

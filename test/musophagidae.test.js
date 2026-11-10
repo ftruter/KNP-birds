@@ -33,7 +33,9 @@ test('the go-away-bird and Knysna Turaco are sourced without changing population
   assert.equal(knysna.population.estimate.low, null)
   assert.equal(knysna.population.estimate.high, null)
   assert.equal(knysna.population.kemp, undefined)
-  assert.equal(knysna.images.length, 0)
+  assert.equal(knysna.images.length, 1)
+  assert.equal(knysna.images[0].license, 'CC BY 4.0')
+  assert.match(knysna.images[0].caption, /not Kruger/)
   assert.equal(knysna.calls[0].recordings[0].key, 'xeno-canto/XC1161576')
   assert.equal(
     overlay.species[knysna.slug].calls[0].quality['xeno-canto/XC1161576'],
