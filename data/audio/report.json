@@ -1,10 +1,10 @@
 {
   "source": "xeno-canto explore catalogue, API v3 recording fields",
   "counts": {
-    "slots": 430,
+    "slots": 431,
     "swapped": 17,
     "added": 278,
-    "kept": 107,
+    "kept": 108,
     "none": 28,
     "cleaned": 0
   },
@@ -1868,6 +1868,22 @@
       "quality": "A",
       "country": "France",
       "locality": "Hyères, Var",
+      "cleaned": false,
+      "license": "CC BY-NC-SA 4.0"
+    },
+    {
+      "slug": "rostratula-benghalensis",
+      "scientificName": "Rostratula benghalensis",
+      "index": 0,
+      "type": "call",
+      "action": "kept",
+      "from": [
+        "616415"
+      ],
+      "to": "616415",
+      "quality": "B",
+      "country": "Thailand",
+      "locality": "Lam Pho, Nonthaburi",
       "cleaned": false,
       "license": "CC BY-NC-SA 4.0"
     },

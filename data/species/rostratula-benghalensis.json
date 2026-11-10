@@ -7,8 +7,36 @@
     "af": "Goudsnip"
   },
   "family": "rostratulidae",
-  "summary": "The details for this species have not been published yet.",
-  "sampleData": true,
+  "size": {
+    "lengthCm": {
+      "min": 28,
+      "max": 32
+    },
+    "note": "Newman's Birds gives 28–32 cm."
+  },
+  "habitat": "Pairs and groups on muddy shorelines of dams, pans and swamp pools, usually where reeds or other waterside vegetation offer cover. When walking it bobs its hindquarters. It is much shyer than the true snipes.",
+  "summary": "An uncommon nomadic resident. Rufous from above the eyes to the nape and breast, an olive-green back, and white on the central crown, the eye-stripe and the shoulders. The legs are yellow. White patches surround the eyes, and a curving white band runs from the breast over the wings onto the back. The immature resembles the male, and the male plumage is not otherwise described. The female calls a soft hollow wu-koo and boo-hu-hu. The Kemp name Painted Snipe and the code VB were left unchanged.",
+  "sampleData": false,
+  "sources": [
+    {
+      "title": "Greater Painted-Snipe",
+      "url": "https://newmansbirds.com/birds/greater-painted-snipe/",
+      "publisher": "Newman's Birds",
+      "year": 2026
+    },
+    {
+      "title": "Avibase bird checklist — Kruger National Park",
+      "url": "https://avibase.bsc-eoc.org/checklist.jsp?region=ZA000003",
+      "publisher": "Avibase",
+      "year": null
+    },
+    {
+      "title": "Kemp A.C., Herholdt J.J., Whyte I. & Harrison J. (2001). Birds of the two largest national parks in South Africa: a method to generate estimates of population size for all species and assess their conservation ecology. S. Afr. J. Sci. 97: 393–403.",
+      "url": "https://journals.co.za/doi/pdf/10.10520/EJC97367",
+      "publisher": "South African Journal of Science",
+      "year": 2001
+    }
+  ],
   "population": {
     "estimate": {
       "low": 64,
@@ -35,8 +63,143 @@
     },
     "tierApplied": "D"
   },
-  "variants": [],
-  "viewNotes": [],
-  "calls": [],
-  "images": []
+  "variants": [
+    {
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "marks": {
+        "bill": {
+          "colour": null,
+          "shape": null
+        },
+        "eye": {
+          "iris": null,
+          "ring": "white"
+        },
+        "legs": {
+          "colour": "yellow"
+        },
+        "head": {
+          "crown": "white",
+          "face": "rufous",
+          "throat": "rufous",
+          "pattern": "Rufous from above the eyes to the nape. White on the central crown and as an eye-stripe. White patches surround the eyes."
+        },
+        "upperparts": {
+          "back": "green",
+          "rump": null,
+          "pattern": "Olive-green back. A curving white band reaches from the breast over the wings onto the back."
+        },
+        "underparts": {
+          "breast": "rufous",
+          "belly": null,
+          "pattern": "Rufous breast. A white band leaves the breast and curves over the wings."
+        },
+        "wings": {
+          "above": null,
+          "below": null,
+          "pattern": "White on the shoulders, continuing from the breast band."
+        },
+        "tail": {
+          "colour": null,
+          "shape": null
+        }
+      }
+    }
+  ],
+  "viewNotes": [
+    {
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Rufous breast and face, white patches around the eyes, and a white band from the breast over the wings. The back is olive-green and the legs are yellow."
+    },
+    {
+      "view": "perched-front",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "White patches around the eyes and a rufous breast."
+    },
+    {
+      "view": "perched-back",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Olive-green back, with the white band reaching onto it. White on the central crown."
+    },
+    {
+      "view": "flight-above",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "A flight pattern was not described. The white shoulder band continues onto the back."
+    },
+    {
+      "view": "flight-below",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "The underwing was not described."
+    }
+  ],
+  "calls": [
+    {
+      "sex": "female",
+      "type": "call",
+      "description": "The female utters a soft, hollow-sounding wu-koo and boo-hu-hu. No grade A recording was found. Grade B call from Lam Pho, Nonthaburi, Thailand. The filename is XC616415-Greater Painted Snipe 2.mp3.",
+      "recordings": [
+        {
+          "key": "xeno-canto/XC616415",
+          "source": "https://xeno-canto.org/616415",
+          "fileUrl": "https://xeno-canto.org/sounds/uploaded/LVZUBCXBZC/XC616415-Greater%20Painted%20Snipe%202.mp3",
+          "author": "Thaibirdspot",
+          "license": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ]
+    }
+  ],
+  "images": [
+    {
+      "key": "rostratula-benghalensis/front.jpg",
+      "view": "perched-front",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "source": "https://www.inaturalist.org/observations/330973723",
+      "fileUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/600303549/large.jpg",
+      "author": "Alan Manson",
+      "license": "CC BY 4.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by/4.0/",
+      "aiGenerated": false,
+      "hosted": false,
+      "alt": "Greater Painted-snipe in Kruger, white patches around the eye, a rufous breast and a white band",
+      "caption": "Greater Painted-snipe in Kruger, with white patches around the eye, a rufous breast and a white band."
+    }
+  ],
+  "research": {
+    "confidence": "medium",
+    "needsReview": true,
+    "note": "Newman calls it an uncommon nomadic resident, and Avibase does not mark it rare, so all twelve months are listed. The immature is said to resemble the male, and the male plumage is not otherwise described, so the sexes are not separated in the marks. No grade A recording was found. The playable file is grade B from Thailand. The Kemp name Painted Snipe and the code VB were left unchanged."
+  },
+  "status": "resident",
+  "monthsPresent": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+  ]
 }
