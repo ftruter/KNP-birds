@@ -4241,7 +4241,17 @@
       "slug": "brunhilda-erythronotos",
       "scientificName": "Brunhilda erythronotos",
       "commonName": "Black-faced Waxbill",
-      "images": [],
+      "images": [
+        {
+          "key": "brunhilda-erythronotos/side.jpg",
+          "author": "Albertus Horn",
+          "licence": "CC BY 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by/4.0/",
+          "sourceUrl": "https://www.inaturalist.org/observations/236343323",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ],
       "recordings": [
         {
           "key": "xeno-canto/XC382988",
@@ -9042,7 +9052,17 @@
       "slug": "coccopygia-melanotis",
       "scientificName": "Coccopygia melanotis",
       "commonName": "Swee Waxbill",
-      "images": [],
+      "images": [
+        {
+          "key": "coccopygia-melanotis/side-male.jpg",
+          "author": "Mark Clarke",
+          "licence": "CC BY 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by/4.0/",
+          "sourceUrl": "https://www.inaturalist.org/observations/392337195",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ],
       "recordings": [
         {
           "key": "xeno-canto/XC292907",
