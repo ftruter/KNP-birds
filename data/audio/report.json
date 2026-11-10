@@ -1,9 +1,9 @@
 {
   "source": "xeno-canto explore catalogue, API v3 recording fields",
   "counts": {
-    "slots": 376,
+    "slots": 380,
     "swapped": 17,
-    "added": 274,
+    "added": 278,
     "kept": 57,
     "none": 28,
     "cleaned": 0
@@ -5641,6 +5641,62 @@
       "locality": "Warmbad, Bosveld, Limpopo",
       "cleaned": false,
       "license": "CC BY-NC-SA 4.0"
+    },
+    {
+      "slug": "phylloscopus-ruficapilla",
+      "scientificName": "Phylloscopus ruficapilla",
+      "index": 0,
+      "type": "song",
+      "action": "added",
+      "from": [],
+      "to": "424827",
+      "quality": "A",
+      "country": "South Africa",
+      "locality": "Port Alfred, Western District, Eastern Cape",
+      "cleaned": false,
+      "license": "CC BY-NC-SA 4.0"
+    },
+    {
+      "slug": "phylloscopus-ruficapilla",
+      "scientificName": "Phylloscopus ruficapilla",
+      "index": 1,
+      "type": "call",
+      "action": "added",
+      "from": [],
+      "to": "1145307",
+      "quality": "A",
+      "country": "South Africa",
+      "locality": "Bitou Local Municipality (near Nature's Valley), Garden Route District Municipality, Western Cape",
+      "cleaned": false,
+      "license": "CC BY-NC-SA 4.0"
+    },
+    {
+      "slug": "phylloscopus-trochilus",
+      "scientificName": "Phylloscopus trochilus",
+      "index": 0,
+      "type": "song",
+      "action": "added",
+      "from": [],
+      "to": "364547",
+      "quality": "A",
+      "country": "South Africa",
+      "locality": "Vaalkop Dam, Bird Sanctuary section, North West",
+      "cleaned": false,
+      "license": "CC BY-NC-SA 4.0"
+    },
+    {
+      "slug": "phylloscopus-trochilus",
+      "scientificName": "Phylloscopus trochilus",
+      "index": 1,
+      "type": "call",
+      "action": "added",
+      "from": [],
+      "to": "26760",
+      "quality": "A",
+      "country": "Sweden",
+      "locality": "Tivedens National Park, Västergötland",
+      "cleaned": false,
+      "license": "CC BY-NC-SA 3.0"
     },
     {
       "slug": "rhinopomastus-cyanomelas",

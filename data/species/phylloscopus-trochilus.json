@@ -7,8 +7,64 @@
     "af": "Hofsanger"
   },
   "family": "phylloscopidae",
-  "summary": "The details for this species have not been published yet.",
-  "sampleData": true,
+  "size": {
+    "lengthCm": {
+      "min": 11,
+      "max": 12.5
+    },
+    "note": "Newman's Birds gives 12 cm. Wikipedia, citing HBW, gives 11–12.5 cm."
+  },
+  "habitat": "Almost any bush habitat, including suburbia, and in the region also Acacia and mixed woodland, riverine trees and gardens. It works the canopy and mid-stratum and sometimes hawks or hovers at the edge.",
+  "summary": "A common Palearctic migrant, present in South Africa from September until early May. Olive to grey-brown above, with a pale yellow or whitish eyebrow, a thin bill and a tail that is square or slightly notched. The underparts are white to pale yellow, and some birds are browner above and whiter below. Sexes are alike. First-year birds are more yellowish and buff on the throat, breast and flanks. The feeding call is a quiet foo-wee, and the song is a descending jumble, mostly in the morning on arrival and before departure. The leg colour runs from pale or pinkish-brown to blackish-brown, so no single colour is stored. The Kemp code NB was left unchanged.",
+  "sampleData": false,
+  "similar": [
+    {
+      "slug": "phylloscopus-ruficapilla",
+      "note": "Yellow-throated Woodland Warbler has a chestnut cap and eye-stripe and keeps to evergreen forest. Willow Warbler has a pale eyebrow, no chestnut cap and a notched tail."
+    },
+    {
+      "slug": "hippolais-icterina",
+      "note": "Icterine Warbler is larger, with a broader bill, an orange or yellow lower mandible, a pale yellow wing panel and a square tail tip. Willow Warbler is smaller, with a thin bill, and no wing-bar is described."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Willow Warbler",
+      "url": "https://newmansbirds.com/birds/willow-warbler/",
+      "publisher": "Newman's Birds",
+      "year": 2026
+    },
+    {
+      "title": "Identifying warblers in the hand",
+      "url": "http://safring.adu.org.za/downloads/raijmakerswarbleridver2.pdf",
+      "publisher": "SAFRING",
+      "year": null
+    },
+    {
+      "title": "The Atlas of Southern African Birds, Vol. 2 (Willow Warbler)",
+      "url": "https://sabap2.birdmap.africa/docs/sabap1/643.pdf",
+      "publisher": "BirdLife South Africa",
+      "year": 1997
+    },
+    {
+      "title": "Phylloscopus trochilus (Willow warbler)",
+      "url": "https://www.biodiversityexplorer.info/birds/sylviidae/phylloscopus_trochilus.htm",
+      "publisher": "Iziko Museums of South Africa",
+      "year": null
+    },
+    {
+      "title": "Willow warbler",
+      "url": "https://en.wikipedia.org/wiki/Willow_warbler",
+      "publisher": "Wikipedia",
+      "year": 2026
+    },
+    {
+      "title": "Kemp A.C., Herholdt J.J., Whyte I. & Harrison J. (2001). Birds of the two largest national parks in South Africa: a method to generate estimates of population size for all species and assess their conservation ecology. S. Afr. J. Sci. 97: 393–403.",
+      "url": "https://journals.co.za/doi/pdf/10.10520/EJC97367",
+      "publisher": "South African Journal of Science",
+      "year": 2001
+    }
+  ],
   "population": {
     "estimate": {
       "low": 16384,
@@ -35,8 +91,295 @@
     },
     "tierApplied": "D"
   },
-  "variants": [],
-  "viewNotes": [],
-  "calls": [],
-  "images": []
+  "variants": [
+    {
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "marks": {
+        "bill": {
+          "colour": [
+            "horn",
+            "brown",
+            "yellow"
+          ],
+          "shape": "Thin and weak. Horn-brown with a paler cutting edge. The lower mandible is brown with a yellowish base."
+        },
+        "eye": {
+          "iris": "brown",
+          "ring": null
+        },
+        "legs": {
+          "colour": null
+        },
+        "head": {
+          "crown": [
+            "olive",
+            "brown"
+          ],
+          "face": [
+            "yellow",
+            "white",
+            "brown"
+          ],
+          "throat": [
+            "white",
+            "yellow"
+          ],
+          "pattern": "Olive-brown head, usually with a distinct pale yellow or whitish eyebrow and an indistinct brown line through the eye."
+        },
+        "upperparts": {
+          "back": [
+            "olive",
+            "grey",
+            "brown"
+          ],
+          "rump": null,
+          "pattern": "Olive to grey-brown with a yellowish-green wash. Newman also describes a paler morph and birds with brown upperparts."
+        },
+        "underparts": {
+          "breast": [
+            "white",
+            "yellow"
+          ],
+          "belly": [
+            "white",
+            "yellow"
+          ],
+          "pattern": "Throat and breast white or off-white, with a varying yellow wash or yellow streaks. Flanks buff, sometimes with a yellow wash. Newman also describes white underparts."
+        },
+        "wings": {
+          "above": [
+            "brown",
+            "olive",
+            "yellow"
+          ],
+          "below": "yellow",
+          "pattern": "Long and pointed. Brown above with yellowish-olive fringes. No wing-bar is described. The bend of the wing, axillaries and underwing-coverts are usually a brighter yellow."
+        },
+        "tail": {
+          "colour": [
+            "brown",
+            "olive"
+          ],
+          "shape": "Quite long and square-tipped, sometimes slightly notched. Newman treats the notch as a field mark."
+        }
+      }
+    },
+    {
+      "age": "immature",
+      "sex": "any",
+      "season": "any",
+      "marks": {
+        "bill": {
+          "colour": null,
+          "shape": null
+        },
+        "eye": {
+          "iris": null,
+          "ring": null
+        },
+        "legs": {
+          "colour": null
+        },
+        "head": {
+          "crown": null,
+          "face": null,
+          "throat": [
+            "yellow",
+            "buff"
+          ]
+        },
+        "upperparts": {
+          "back": null,
+          "rump": null
+        },
+        "underparts": {
+          "breast": [
+            "yellow",
+            "buff"
+          ],
+          "belly": [
+            "yellow",
+            "buff"
+          ],
+          "pattern": "First-year birds usually have more yellowish and buff on the throat, breast and flanks than adults."
+        },
+        "wings": {
+          "above": null,
+          "below": null
+        },
+        "tail": {
+          "colour": null,
+          "shape": null
+        }
+      }
+    }
+  ],
+  "viewNotes": [
+    {
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Thin bill, pale yellow or whitish eyebrow, olive to grey-brown upperparts and white to yellow underparts. Legs are pale or pinkish-brown to blackish-brown, so no single colour is stored."
+    },
+    {
+      "view": "perched-front",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Pale eyebrow, and a throat and breast that are white or washed or streaked yellow."
+    },
+    {
+      "view": "perched-back",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Olive to grey-brown upperparts. The rump was not given a separate colour."
+    },
+    {
+      "view": "flight-above",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Long pointed wings, brown with yellowish-olive fringes, and a dark brown tail edged olive-green. No wing-bar is described."
+    },
+    {
+      "view": "flight-below",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "The bend of the wing, axillaries and underwing-coverts are usually a brighter yellow. A spread underwing photograph was not used."
+    },
+    {
+      "view": "flight-side",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "It sometimes darts out to hawk a flying insect or hovers momentarily at the canopy edge. The side-on flight view shows the long tail and pale underparts."
+    },
+    {
+      "view": "perched-side",
+      "age": "immature",
+      "sex": "any",
+      "season": "any",
+      "note": "More yellowish and buff on the throat, breast and flanks than an adult. The rest was not described separately."
+    },
+    {
+      "view": "perched-front",
+      "age": "immature",
+      "sex": "any",
+      "season": "any",
+      "note": "Yellower, buffier throat and breast than an adult."
+    },
+    {
+      "view": "perched-back",
+      "age": "immature",
+      "sex": "any",
+      "season": "any",
+      "note": "The first-year back was not described separately."
+    },
+    {
+      "view": "flight-above",
+      "age": "immature",
+      "sex": "any",
+      "season": "any",
+      "note": "A first-year upperwing was not described separately."
+    },
+    {
+      "view": "flight-below",
+      "age": "immature",
+      "sex": "any",
+      "season": "any",
+      "note": "A first-year underwing was not described separately."
+    }
+  ],
+  "calls": [
+    {
+      "sex": "any",
+      "type": "song",
+      "description": "A descending jumble of notes, tee-tee-tee-tee-tu-tu-tu-twee-twee-sweet-sweet-sweet-sweet, usually in the mornings, especially on arrival and before departure. The texts used here do not separate the sexes. Grade A song from Vaalkop Dam, North West. The filename is XC364547-Warbler Willow_VK_161224_13_B_edit.mp3.",
+      "recordings": [
+        {
+          "key": "xeno-canto/XC364547",
+          "source": "https://xeno-canto.org/364547",
+          "fileUrl": "https://xeno-canto.org/sounds/uploaded/TWAAJJHMEH/XC364547-Warbler%20Willow_VK_161224_13_B_edit.mp3",
+          "author": "Faansie Peacock",
+          "license": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ]
+    },
+    {
+      "sex": "any",
+      "type": "call",
+      "description": "While feeding, a querulous quiet foo-wee. Wikipedia gives the contact call as a disyllabic hoo-eet. The texts used here do not separate the sexes. Grade A call from Tiveden National Park, Sweden. No playable southern African grade A call outranked it. The filename is Lovsangarelocklate.mp3.",
+      "recordings": [
+        {
+          "key": "xeno-canto/XC26760",
+          "source": "https://xeno-canto.org/26760",
+          "fileUrl": "https://xeno-canto.org/sounds/uploaded/BPSDQEOJWG/Lovsangarelocklate.mp3",
+          "author": "Patrik Åberg",
+          "license": "CC BY-NC-SA 3.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/3.0/",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ]
+    }
+  ],
+  "images": [
+    {
+      "key": "phylloscopus-trochilus/kruger-flight.jpg",
+      "view": "flight-side",
+      "age": "adult",
+      "sex": "any",
+      "season": "non-breeding",
+      "source": "https://www.inaturalist.org/observations/250570641",
+      "fileUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/448163955/large.jpg",
+      "author": "Alan Manson",
+      "license": "CC BY 4.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by/4.0/",
+      "aiGenerated": false,
+      "hosted": false,
+      "alt": "Willow Warbler in side-on flight in Kruger National Park, pale below and olive-brown above",
+      "caption": "Willow Warbler in side-on flight in Kruger National Park, 11 October 2024, pale below and olive-brown above. The frame is distant, so the eyebrow and leg colour are not clear."
+    },
+    {
+      "key": "phylloscopus-trochilus/kruger-side.jpg",
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "any",
+      "season": "non-breeding",
+      "source": "https://www.inaturalist.org/observations/345695882",
+      "fileUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/630042312/large.jpg",
+      "author": "bjoern1982",
+      "license": "CC BY-NC 4.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+      "aiGenerated": false,
+      "hosted": false,
+      "alt": "Willow Warbler perched side-on in Kruger National Park, olive above, pale below, with a pale eyebrow",
+      "caption": "Willow Warbler perched in Kruger National Park, 21 February 2026, olive above and pale below, with a pale eyebrow."
+    }
+  ],
+  "research": {
+    "confidence": "medium",
+    "needsReview": true,
+    "note": "Status is palearctic-migrant. Months are September to May. Raijmakers says the species is present in South Africa from September until the beginning of May. SABAP1 puts the first birds in the north from mid-September, mid-arrival in mid-October in the north and December in the south, and mid-departure in early April. Kruger pentads were not separated from that window, which is why this needs review. Sexes are alike. Raijmakers describes first-year birds in the region as more yellowish and buff below, stored as immature. Wikipedia says juveniles are yellower below than adults, but that natal plumage is not given part by part for southern Africa, so no juvenile variant is stored. Fresh, worn, paler and brown-and-white birds, and the complete moult from December to March, fall inside the non-breeding stay, so they are not stored as winter and summer plumages. Leg colour runs from pale or pinkish-brown to blackish-brown. The grade A song is from Vaalkop Dam, North West. Its file name includes the recordist's own edit; this site did not filter it. A grade A call from South Luangwa, Zambia, is CC BY-NC-ND, so the playable grade A call is from Tiveden, Sweden. No perched-front, perched-back, flight-above or flight-below photograph was used. A CC0 Mopani frame was not used because it shows a strong yellow wing panel, which these sources do not give the Willow Warbler. Population figures and the Kemp code NB were left unchanged."
+  },
+  "status": "palearctic-migrant",
+  "monthsPresent": [
+    9,
+    10,
+    11,
+    12,
+    1,
+    2,
+    3,
+    4,
+    5
+  ]
 }

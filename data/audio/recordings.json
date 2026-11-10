@@ -3817,6 +3817,38 @@
         }
       ]
     },
+    "phylloscopus-ruficapilla": {
+      "calls": [
+        {
+          "index": 0,
+          "quality": {
+            "xeno-canto/XC424827": "A"
+          }
+        },
+        {
+          "index": 1,
+          "quality": {
+            "xeno-canto/XC1145307": "A"
+          }
+        }
+      ]
+    },
+    "phylloscopus-trochilus": {
+      "calls": [
+        {
+          "index": 0,
+          "quality": {
+            "xeno-canto/XC364547": "A"
+          }
+        },
+        {
+          "index": 1,
+          "quality": {
+            "xeno-canto/XC26760": "A"
+          }
+        }
+      ]
+    },
     "rhinopomastus-cyanomelas": {
       "calls": [
         {
