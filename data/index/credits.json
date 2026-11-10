@@ -1400,7 +1400,17 @@
       "slug": "anarhynchus-pallidus",
       "scientificName": "Anarhynchus pallidus",
       "commonName": "Chestnut-banded Plover",
-      "images": [],
+      "images": [
+        {
+          "key": "anarhynchus-pallidus/side.jpg",
+          "author": "Dave Brown",
+          "licence": "CC0 1.0",
+          "licenceUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+          "sourceUrl": "https://www.inaturalist.org/observations/65324548",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ],
       "recordings": [
         {
           "key": "xeno-canto/XC28681",
