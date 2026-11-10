@@ -3,9 +3,9 @@
   "counts": {
     "slots": 526,
     "swapped": 17,
-    "added": 284,
+    "added": 285,
     "kept": 203,
-    "none": 22,
+    "none": 21,
     "cleaned": 1
   },
   "noUsableRecording": [
@@ -102,11 +102,6 @@
     {
       "slug": "ephippiorhynchus-senegalensis",
       "scientificName": "Ephippiorhynchus senegalensis",
-      "type": "call"
-    },
-    {
-      "slug": "aplopelia-larvata",
-      "scientificName": "Aplopelia larvata",
       "type": "call"
     },
     {
@@ -5376,14 +5371,14 @@
       "scientificName": "Aplopelia larvata",
       "index": 0,
       "type": "call",
-      "action": "none",
+      "action": "added",
       "from": [],
-      "to": "",
-      "quality": "",
-      "country": "",
-      "locality": "",
+      "to": "497030",
+      "quality": "A",
+      "country": "South Africa",
+      "locality": "Port Alfred, Western District, Eastern Cape",
       "cleaned": false,
-      "license": ""
+      "license": "CC BY-NC-SA 4.0"
     },
     {
       "slug": "columba-arquatrix",

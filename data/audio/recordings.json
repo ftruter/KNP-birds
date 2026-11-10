@@ -389,7 +389,9 @@
       "calls": [
         {
           "index": 0,
-          "quality": {}
+          "quality": {
+            "xeno-canto/XC497030": "A"
+          }
         }
       ]
     },

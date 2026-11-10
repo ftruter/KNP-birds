@@ -38,7 +38,7 @@ test('all thirteen doves and pigeons are sourced without changing populations', 
   const [, , sex] = diffSpecies(namaqua)
   assert.equal(sex.status, 'differs')
   const lemon = await readJson('data/species/aplopelia-larvata.json')
-  assert.equal(lemon.calls[0].recordings.length, 0)
+  assert.equal(lemon.calls[0].recordings.length, 1)
   const blue = await readJson('data/species/turtur-afer.json')
   assert.equal(blue.variants.length, 0)
   assert.equal(blue.images.length, 1)
