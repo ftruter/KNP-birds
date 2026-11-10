@@ -20,7 +20,9 @@ test('the eight francolins and quails are sourced without changing populations',
 
   const common = await readJson('data/species/coturnix-coturnix.json')
   assert.equal(common.status, undefined)
-  assert.equal(common.images.length, 0)
+  assert.equal(common.images.length, 1)
+  assert.equal(common.images[0].license, 'CC BY-SA 4.0')
+  assert.match(common.images[0].caption, /not Kruger/)
   assert.equal(common.population.kemp.status, 'VB')
   assert.equal(common.population.estimate.high, 32768)
 
@@ -39,7 +41,9 @@ test('the eight francolins and quails are sourced without changing populations',
 
   const red = await readJson('data/species/pternistis-afer.json')
   assert.equal(red.status, 'resident')
-  assert.equal(red.images.length, 0)
+  assert.equal(red.images.length, 1)
+  assert.equal(red.images[0].license, 'CC BY 4.0')
+  assert.match(red.images[0].caption, /not Kruger/)
   assert.equal(red.population.kemp.paperName, 'Rednecked Francolin')
   assert.equal(red.population.kemp.status, 'NB')
   assert.equal(red.population.estimate.low, 1)
