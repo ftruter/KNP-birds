@@ -1,14 +1,165 @@
 {
-  "kind": "species",
-  "slug": "actitis-hypoleucos",
-  "scientificName": "Actitis hypoleucos",
-  "commonNames": {
-    "en": "Common Sandpiper",
-    "af": "Gewone Ruiter"
+  "size": {
+    "lengthCm": {
+      "min": 20,
+      "max": 20
+    },
+    "note": "Newman's Birds gives 20 cm."
   },
-  "family": "scolopacidae",
-  "summary": "The details for this species have not been published yet.",
-  "sampleData": true,
+  "habitat": "Singly on the shores of rivers, lakes, dams, estuaries and rocky coasts. It bobs its hindquarters and flies low with stiff, downward-bowed wings.",
+  "summary": "A common summer visitor, with a few present all year. The upperparts and breast-band are dark brown, and the white underparts extend around the folded wing. The upper tail is white barred brown. Flushed birds give a shrill twee-wee-wee. Newman does not name the months. The Kemp name Common Sandpiper and the code NB were left unchanged.",
+  "sources": [
+    {
+      "title": "Common Sandpiper",
+      "url": "https://newmansbirds.com/birds/common-sandpiper/",
+      "publisher": "Newman's Birds",
+      "year": 2026
+    },
+    {
+      "title": "Avibase bird checklist — Kruger National Park",
+      "url": "https://avibase.bsc-eoc.org/checklist.jsp?region=ZA000003",
+      "publisher": "Avibase",
+      "year": null
+    },
+    {
+      "title": "Kemp A.C., Herholdt J.J., Whyte I. & Harrison J. (2001). Birds of the two largest national parks in South Africa: a method to generate estimates of population size for all species and assess their conservation ecology. S. Afr. J. Sci. 97: 393–403.",
+      "url": "https://journals.co.za/doi/pdf/10.10520/EJC97367",
+      "publisher": "South African Journal of Science",
+      "year": 2001
+    }
+  ],
+  "variants": [
+    {
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "marks": {
+        "bill": {
+          "colour": null,
+          "shape": "Medium-short and robust. The colour is not given."
+        },
+        "eye": {
+          "iris": null,
+          "ring": null
+        },
+        "legs": {
+          "colour": null
+        },
+        "head": {
+          "crown": null,
+          "face": null,
+          "throat": null,
+          "pattern": "The identification line does not separate the head from the dark brown upperparts."
+        },
+        "upperparts": {
+          "back": "dark-brown",
+          "rump": null,
+          "pattern": "Upperparts dark brown. In flight there is no white rump, a faint wing-bar, and white outer tail feathers."
+        },
+        "underparts": {
+          "breast": "dark-brown",
+          "belly": "white",
+          "pattern": "Dark brown breast-band. White below extends around the folded wing."
+        },
+        "wings": {
+          "above": null,
+          "below": null,
+          "pattern": "A faint wing-bar in flight. White shows above the folded wing."
+        },
+        "tail": {
+          "colour": "white",
+          "shape": "White upper tail barred brown, with white outer feathers in flight."
+        }
+      }
+    }
+  ],
+  "viewNotes": [
+    {
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Dark brown above, with white extending around the folded wing and a dark brown breast-band."
+    },
+    {
+      "view": "perched-front",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Dark brown breast-band and white below."
+    },
+    {
+      "view": "perched-back",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Dark brown upperparts. The upper tail is white barred brown."
+    },
+    {
+      "view": "flight-above",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "No white rump, a faint wing-bar, and white outer tail feathers. The wings beat with a flicking action below the horizontal."
+    },
+    {
+      "view": "flight-below",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "The underwing colour is not given."
+    },
+    {
+      "view": "flight-side",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Flies low with stiff, downward-bowed wings."
+    }
+  ],
+  "calls": [
+    {
+      "sex": "any",
+      "type": "call",
+      "description": "When flushed it utters a shrill 'twee-wee-wee'. No grade A recording from South Africa was found. The selected file is a grade A flight call from Poland. The filename is XC187104-Actitis_hypoleucos_Poland_Jarek_Matusiak_20140713_28.mp3.",
+      "recordings": [
+        {
+          "key": "xeno-canto/XC187104",
+          "source": "https://xeno-canto.org/187104",
+          "fileUrl": "https://xeno-canto.org/sounds/uploaded/ZNCDXTUOFL/XC187104-Actitis_hypoleucos_Poland_Jarek_Matusiak_20140713_28.mp3",
+          "author": "Jarek Matusiak",
+          "license": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ]
+    }
+  ],
+  "images": [
+    {
+      "key": "actitis-hypoleucos/side.jpg",
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "source": "https://www.inaturalist.org/observations/333031924",
+      "fileUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/604530485/large.jpg",
+      "author": "Mark Brown",
+      "license": "CC BY-NC 4.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+      "aiGenerated": false,
+      "hosted": false,
+      "alt": "Common Sandpiper in Kruger, dark brown above with white around the folded wing",
+      "caption": "Common Sandpiper in Kruger, on the Sabie River Road, dark brown above with white extending around the folded wing."
+    }
+  ],
+  "research": {
+    "confidence": "medium",
+    "needsReview": true,
+    "note": "Newman calls it a common summer visitor, with a few present all year, and does not name the months, so status is summer-migrant and monthsPresent is unset. Avibase does not mark it rare. No grade A recording from South Africa was found; a grade B recording from South Africa exists. The leg colour is not given. The Kemp code NB was left unchanged."
+  },
+  "status": "summer-migrant",
   "population": {
     "estimate": {
       "low": 1024,
@@ -35,8 +186,13 @@
     },
     "tierApplied": "D"
   },
-  "variants": [],
-  "viewNotes": [],
-  "calls": [],
-  "images": []
+  "commonNames": {
+    "en": "Common Sandpiper",
+    "af": "Gewone Ruiter"
+  },
+  "scientificName": "Actitis hypoleucos",
+  "kind": "species",
+  "slug": "actitis-hypoleucos",
+  "family": "scolopacidae",
+  "sampleData": false
 }

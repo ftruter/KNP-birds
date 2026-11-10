@@ -1,14 +1,206 @@
 {
-  "kind": "species",
-  "slug": "calidris-ferruginea",
-  "scientificName": "Calidris ferruginea",
-  "commonNames": {
-    "en": "Curlew Sandpiper",
-    "af": "Krombekstrandloper"
+  "size": {
+    "lengthCm": {
+      "min": 18,
+      "max": 23
+    },
+    "note": "Wikipedia gives 18–23 cm. Newman has no species page."
   },
-  "family": "scolopacidae",
-  "summary": "The details for this species have not been published yet.",
-  "sampleData": true,
+  "habitat": "Wikipedia says the non-breeding birds use sheltered mudflats, salt pans and wetland edges, and inland water margins that are muddy or sandy. Newman has no species page, so no Kruger habitat is taken from that account.",
+  "summary": "Newman has no species page. Wikipedia describes a small wader with a black bill and dark grey to black feet. Non-breeding upperparts are greyish, becoming browner with wear, and the underparts are white with pale grey streaks. There is a white eyebrow, a white rump and a white wing stripe. Breeding birds have the front tinted deep rusty, more intensely in males. Months are unset. The Kemp name Curlew Sandpiper and the code NB were left unchanged.",
+  "sources": [
+    {
+      "title": "Curlew sandpiper",
+      "url": "https://en.wikipedia.org/wiki/Curlew_sandpiper",
+      "publisher": "Wikipedia",
+      "year": null
+    },
+    {
+      "title": "Avibase bird checklist — Kruger National Park",
+      "url": "https://avibase.bsc-eoc.org/checklist.jsp?region=ZA000003",
+      "publisher": "Avibase",
+      "year": null
+    },
+    {
+      "title": "Kemp A.C., Herholdt J.J., Whyte I. & Harrison J. (2001). Birds of the two largest national parks in South Africa: a method to generate estimates of population size for all species and assess their conservation ecology. S. Afr. J. Sci. 97: 393–403.",
+      "url": "https://journals.co.za/doi/pdf/10.10520/EJC97367",
+      "publisher": "South African Journal of Science",
+      "year": 2001
+    }
+  ],
+  "variants": [
+    {
+      "age": "adult",
+      "sex": "any",
+      "season": "non-breeding",
+      "marks": {
+        "bill": {
+          "colour": "black",
+          "shape": "The length is given. The article does not describe the shape."
+        },
+        "eye": {
+          "iris": null,
+          "ring": null
+        },
+        "legs": {
+          "colour": null
+        },
+        "head": {
+          "crown": null,
+          "face": null,
+          "throat": null,
+          "pattern": "A white eyebrow, with grey-brown feathers between the bill and the eye and around the ear."
+        },
+        "upperparts": {
+          "back": "grey",
+          "rump": "white",
+          "pattern": "Non-breeding upperparts are greyish and become browner with wear. Feather centres are darker, especially on the crown. A white stripe crosses the wing."
+        },
+        "underparts": {
+          "breast": "white",
+          "belly": "white",
+          "pattern": "White underparts with some pale grey streaks."
+        },
+        "wings": {
+          "above": null,
+          "below": null,
+          "pattern": "A white stripe crosses the wing. The largest wing feathers are dusky with white streaks along the shaft and a white tip."
+        },
+        "tail": {
+          "colour": "grey",
+          "shape": "White underside and broad pale grey tail feathers."
+        }
+      }
+    },
+    {
+      "age": "adult",
+      "sex": "any",
+      "season": "breeding",
+      "marks": {
+        "bill": {
+          "colour": "black",
+          "shape": "The length is given. The article does not describe the shape."
+        },
+        "eye": {
+          "iris": null,
+          "ring": null
+        },
+        "legs": {
+          "colour": null
+        },
+        "head": {
+          "crown": null,
+          "face": null,
+          "throat": null
+        },
+        "upperparts": {
+          "back": null,
+          "rump": "white",
+          "pattern": "The rump stays white. The rusty tint is more intense in males."
+        },
+        "underparts": {
+          "breast": null,
+          "belly": null,
+          "pattern": "The entire front is tinted a deep rusty colour, more intensely in males."
+        },
+        "wings": {
+          "above": null,
+          "below": null
+        },
+        "tail": {
+          "colour": null,
+          "shape": null
+        }
+      }
+    }
+  ],
+  "viewNotes": [
+    {
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "any",
+      "season": "non-breeding",
+      "note": "Greyish upperparts, white underparts and a white eyebrow. The bill is black."
+    },
+    {
+      "view": "perched-front",
+      "age": "adult",
+      "sex": "any",
+      "season": "non-breeding",
+      "note": "White underparts with some pale grey streaks."
+    },
+    {
+      "view": "perched-back",
+      "age": "adult",
+      "sex": "any",
+      "season": "non-breeding",
+      "note": "White rump. The upperparts look mottled where the feather centres are darker."
+    },
+    {
+      "view": "flight-above",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "A white rump and a white stripe across the wing."
+    },
+    {
+      "view": "flight-below",
+      "age": "adult",
+      "sex": "any",
+      "season": "non-breeding",
+      "note": "White underparts. The tail underside is white."
+    },
+    {
+      "view": "perched-front",
+      "age": "adult",
+      "sex": "any",
+      "season": "breeding",
+      "note": "The front is tinted deep rusty, more intensely in males."
+    }
+  ],
+  "calls": [
+    {
+      "sex": "any",
+      "type": "call",
+      "description": "The Wikipedia description does not give the voice. No grade A recording from South Africa was found. The selected file is a grade A flight call from Kazakhstan. The filename is XC184321-Calidris ferruginea 0516_055125,AA.MP3.",
+      "recordings": [
+        {
+          "key": "xeno-canto/XC184321",
+          "source": "https://xeno-canto.org/184321",
+          "fileUrl": "https://xeno-canto.org/sounds/uploaded/LELYWQKUZX/XC184321-Calidris%20ferruginea%200516_055125%2CAA.MP3",
+          "author": "Albert Lastukhin",
+          "license": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ]
+    }
+  ],
+  "images": [
+    {
+      "key": "calidris-ferruginea/side.jpg",
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "any",
+      "season": "non-breeding",
+      "source": "https://www.inaturalist.org/observations/327485573",
+      "fileUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/593307562/large.jpg",
+      "author": "Liam Huber",
+      "license": "CC BY-NC 4.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+      "aiGenerated": false,
+      "hosted": false,
+      "alt": "Curlew Sandpiper in Kruger, white below",
+      "caption": "Curlew Sandpiper in Kruger, Mopani, white below. The photograph is distant."
+    }
+  ],
+  "research": {
+    "confidence": "low",
+    "needsReview": true,
+    "note": "Newman has no species page, so the description and size are from Wikipedia. Avibase does not mark the Kruger occurrence rare or accidental, and the months are not named, so status is palearctic-migrant and monthsPresent is unset. The feet are dark grey to black, so no single leg colour is stored. The voice is not described. No grade A recording from South Africa was found. The Kemp code NB was left unchanged."
+  },
+  "status": "palearctic-migrant",
   "population": {
     "estimate": {
       "low": 1,
@@ -35,8 +227,13 @@
     },
     "tierApplied": "D"
   },
-  "variants": [],
-  "viewNotes": [],
-  "calls": [],
-  "images": []
+  "commonNames": {
+    "en": "Curlew Sandpiper",
+    "af": "Krombekstrandloper"
+  },
+  "scientificName": "Calidris ferruginea",
+  "kind": "species",
+  "slug": "calidris-ferruginea",
+  "family": "scolopacidae",
+  "sampleData": false
 }

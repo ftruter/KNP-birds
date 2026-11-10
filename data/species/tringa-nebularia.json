@@ -1,14 +1,163 @@
 {
-  "kind": "species",
-  "slug": "tringa-nebularia",
-  "scientificName": "Tringa nebularia",
-  "commonNames": {
-    "en": "Common Greenshank",
-    "af": "Groenpootruiter"
+  "size": {
+    "lengthCm": {
+      "min": 32,
+      "max": 32
+    },
+    "note": "Newman's Birds gives 32 cm."
   },
-  "family": "scolopacidae",
-  "summary": "The details for this species have not been published yet.",
-  "sampleData": true,
+  "habitat": "Usually singly on coastal or inland waters. It is shy. When flushed it towers up and flies some distance.",
+  "summary": "A common summer visitor, with a few present all year. A large, long-legged wader with clear white underparts, a slightly upturned black bill, and green-grey legs that the identification line calls greenish. The back and rump are extensively white in flight. On take-off it calls a loud triple tew-tew-tew. Newman does not name the months. The Kemp name Greenshank and the code NB were left unchanged.",
+  "similar": [
+    {
+      "slug": "tringa-stagnatilis",
+      "note": "Marsh Sandpiper is smaller, with a straight slender bill and yellowish legs. Greenshank has a more robust, slightly upturned bill and green-grey legs."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Common Greenshank",
+      "url": "https://newmansbirds.com/birds/common-greenshank/",
+      "publisher": "Newman's Birds",
+      "year": 2026
+    },
+    {
+      "title": "Avibase bird checklist — Kruger National Park",
+      "url": "https://avibase.bsc-eoc.org/checklist.jsp?region=ZA000003",
+      "publisher": "Avibase",
+      "year": null
+    },
+    {
+      "title": "Kemp A.C., Herholdt J.J., Whyte I. & Harrison J. (2001). Birds of the two largest national parks in South Africa: a method to generate estimates of population size for all species and assess their conservation ecology. S. Afr. J. Sci. 97: 393–403.",
+      "url": "https://journals.co.za/doi/pdf/10.10520/EJC97367",
+      "publisher": "South African Journal of Science",
+      "year": 2001
+    }
+  ],
+  "variants": [
+    {
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "marks": {
+        "bill": {
+          "colour": "black",
+          "shape": "Slightly upturned and more robust than Marsh Sandpiper."
+        },
+        "eye": {
+          "iris": null,
+          "ring": null
+        },
+        "legs": {
+          "colour": null
+        },
+        "head": {
+          "crown": null,
+          "face": null,
+          "throat": null,
+          "pattern": "Legs are greenish on the identification line and green-grey in the description, so no single leg colour is stored."
+        },
+        "upperparts": {
+          "back": null,
+          "rump": null,
+          "pattern": "Sandy-brown above, with white feather edges. The back is white in the identification line, and the flight description says an extensive white back and rump."
+        },
+        "underparts": {
+          "breast": "white",
+          "belly": "white"
+        },
+        "wings": {
+          "above": null,
+          "below": null,
+          "pattern": "The feet protrude slightly in flight."
+        },
+        "tail": {
+          "colour": null,
+          "shape": "Extensive white rump in flight."
+        }
+      }
+    }
+  ],
+  "viewNotes": [
+    {
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Sandy-brown above with white feather edges, white below, and a slightly upturned black bill."
+    },
+    {
+      "view": "perched-front",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Clear white underparts. The legs are greenish, also described as green-grey."
+    },
+    {
+      "view": "perched-back",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "The identification line includes a white back."
+    },
+    {
+      "view": "flight-above",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Extensive white back and rump. The feet protrude slightly."
+    },
+    {
+      "view": "flight-below",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "White underparts. The underwing colour is not given."
+    }
+  ],
+  "calls": [
+    {
+      "sex": "any",
+      "type": "call",
+      "description": "On take-off it calls a loud triple 'tew-tew-tew'. No grade A recording from South Africa was found. The selected file is a grade A call from Sweden. The filename is Gluttsnappalocklate.mp3.",
+      "recordings": [
+        {
+          "key": "xeno-canto/XC27066",
+          "source": "https://xeno-canto.org/27066",
+          "fileUrl": "https://xeno-canto.org/sounds/uploaded/BPSDQEOJWG/Gluttsnappalocklate.mp3",
+          "author": "Patrik Åberg",
+          "license": "CC BY-NC-SA 3.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/3.0/",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ]
+    }
+  ],
+  "images": [
+    {
+      "key": "tringa-nebularia/side.jpg",
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "source": "https://www.inaturalist.org/observations/254719721",
+      "fileUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/456312746/large.jpg",
+      "author": "Sergey Shestakov",
+      "license": "CC BY-NC 4.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+      "aiGenerated": false,
+      "hosted": false,
+      "alt": "Common Greenshank in Kruger, white below with a long bill",
+      "caption": "Common Greenshank in Kruger, Mopani, white below with a long bill. The photograph is distant."
+    }
+  ],
+  "research": {
+    "confidence": "medium",
+    "needsReview": true,
+    "note": "Newman calls it a common summer visitor, with a few present all year, and does not name the months, so status is summer-migrant and monthsPresent is unset. The legs are greenish and green-grey, so no single colour is stored. Sandy-brown is not a vocabulary colour. No grade A recording from South Africa was found; a grade B recording from South Africa exists. The Kemp name Greenshank and the code NB were left unchanged."
+  },
+  "status": "summer-migrant",
   "population": {
     "estimate": {
       "low": 256,
@@ -35,8 +184,13 @@
     },
     "tierApplied": "D"
   },
-  "variants": [],
-  "viewNotes": [],
-  "calls": [],
-  "images": []
+  "commonNames": {
+    "en": "Common Greenshank",
+    "af": "Groenpootruiter"
+  },
+  "scientificName": "Tringa nebularia",
+  "kind": "species",
+  "slug": "tringa-nebularia",
+  "family": "scolopacidae",
+  "sampleData": false
 }

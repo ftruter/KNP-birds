@@ -1,10 +1,10 @@
 {
   "source": "xeno-canto explore catalogue, API v3 recording fields",
   "counts": {
-    "slots": 434,
+    "slots": 444,
     "swapped": 17,
     "added": 278,
-    "kept": 111,
+    "kept": 121,
     "none": 28,
     "cleaned": 0
   },
@@ -193,6 +193,22 @@
       "quality": "A",
       "country": "South Africa",
       "locality": "City of Matlosana (near Klerksdorp), Southern DC, North West",
+      "cleaned": false,
+      "license": "CC BY-NC-SA 4.0"
+    },
+    {
+      "slug": "actitis-hypoleucos",
+      "scientificName": "Actitis hypoleucos",
+      "index": 0,
+      "type": "call",
+      "action": "kept",
+      "from": [
+        "187104"
+      ],
+      "to": "187104",
+      "quality": "A",
+      "country": "Poland",
+      "locality": "Nadrybie Lake",
       "cleaned": false,
       "license": "CC BY-NC-SA 4.0"
     },
@@ -509,6 +525,70 @@
       "quality": "B",
       "country": "South Africa",
       "locality": "Port Elizabeth, Port Elizabeth, Eastern Cape",
+      "cleaned": false,
+      "license": "CC BY-NC-SA 4.0"
+    },
+    {
+      "slug": "calidris-ferruginea",
+      "scientificName": "Calidris ferruginea",
+      "index": 0,
+      "type": "call",
+      "action": "kept",
+      "from": [
+        "184321"
+      ],
+      "to": "184321",
+      "quality": "A",
+      "country": "Kazakhstan",
+      "locality": "Kazaly District, Kyzylorda Province",
+      "cleaned": false,
+      "license": "CC BY-NC-SA 4.0"
+    },
+    {
+      "slug": "calidris-melanotos",
+      "scientificName": "Calidris melanotos",
+      "index": 0,
+      "type": "call",
+      "action": "kept",
+      "from": [
+        "109917"
+      ],
+      "to": "109917",
+      "quality": "A",
+      "country": "United States",
+      "locality": "Oyhut Game Range, Washington",
+      "cleaned": false,
+      "license": "CC BY-NC-SA 3.0"
+    },
+    {
+      "slug": "calidris-minuta",
+      "scientificName": "Calidris minuta",
+      "index": 0,
+      "type": "call",
+      "action": "kept",
+      "from": [
+        "185089"
+      ],
+      "to": "185089",
+      "quality": "A",
+      "country": "Uzbekistan",
+      "locality": "Karaulbazar District, Bukhara Province",
+      "cleaned": false,
+      "license": "CC BY-NC-SA 4.0"
+    },
+    {
+      "slug": "calidris-pugnax",
+      "scientificName": "Calidris pugnax",
+      "index": 0,
+      "type": "call",
+      "action": "kept",
+      "from": [
+        "233522"
+      ],
+      "to": "233522",
+      "quality": "A",
+      "country": "Poland",
+      "locality": "Gmina Zduny, Łódź",
       "cleaned": false,
       "license": "CC BY-NC-SA 4.0"
     },
@@ -1019,6 +1099,22 @@
       "quality": "A",
       "country": "South Africa",
       "locality": "near Grahamstown, Eastern Cape",
+      "cleaned": false,
+      "license": "CC BY-NC-SA 4.0"
+    },
+    {
+      "slug": "gallinago-nigripennis",
+      "scientificName": "Gallinago nigripennis",
+      "index": 0,
+      "type": "call",
+      "action": "kept",
+      "from": [
+        "495341"
+      ],
+      "to": "495341",
+      "quality": "A",
+      "country": "South Africa",
+      "locality": "Klerksdorp, North West",
       "cleaned": false,
       "license": "CC BY-NC-SA 4.0"
     },
@@ -3535,6 +3631,70 @@
       "locality": "Southwell, near Port Alfred, Eastern Cape",
       "cleaned": false,
       "license": "CC BY-NC-SA 4.0"
+    },
+    {
+      "slug": "tringa-glareola",
+      "scientificName": "Tringa glareola",
+      "index": 0,
+      "type": "call",
+      "action": "kept",
+      "from": [
+        "745588"
+      ],
+      "to": "745588",
+      "quality": "A",
+      "country": "Zambia",
+      "locality": "Kalwelwa plains, Northwestern Province",
+      "cleaned": false,
+      "license": "CC BY-NC-SA 4.0"
+    },
+    {
+      "slug": "tringa-nebularia",
+      "scientificName": "Tringa nebularia",
+      "index": 0,
+      "type": "call",
+      "action": "kept",
+      "from": [
+        "27066"
+      ],
+      "to": "27066",
+      "quality": "A",
+      "country": "Sweden",
+      "locality": "Hornborgarsjön, Västergötland",
+      "cleaned": false,
+      "license": "CC BY-NC-SA 3.0"
+    },
+    {
+      "slug": "tringa-ochropus",
+      "scientificName": "Tringa ochropus",
+      "index": 0,
+      "type": "call",
+      "action": "kept",
+      "from": [
+        "129379"
+      ],
+      "to": "129379",
+      "quality": "A",
+      "country": "Poland",
+      "locality": "Łomianki, Masovian Voivodeship",
+      "cleaned": false,
+      "license": "CC BY-NC-SA 3.0"
+    },
+    {
+      "slug": "tringa-stagnatilis",
+      "scientificName": "Tringa stagnatilis",
+      "index": 0,
+      "type": "call",
+      "action": "kept",
+      "from": [
+        "154257"
+      ],
+      "to": "154257",
+      "quality": "A",
+      "country": "Kazakhstan",
+      "locality": "Zhanteke lake, Aqmola province",
+      "cleaned": false,
+      "license": "CC BY-NC-SA 3.0"
     },
     {
       "slug": "vanellus-albiceps",
