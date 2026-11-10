@@ -6,8 +6,8 @@
     "en": "Hoopoes",
     "af": "Hoephoep"
   },
-  "summary": "Field notes for this family are still to be written.",
-  "sampleData": true,
+  "summary": "Common Hoopoe. A rufous bird with a crest and black-and-white wings, probing the ground in open woodland and gardens.",
+  "sampleData": false,
   "species": [
     {
       "slug": "upupa-epops",

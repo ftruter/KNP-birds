@@ -1,10 +1,10 @@
 {
   "source": "xeno-canto explore catalogue, API v3 recording fields",
   "counts": {
-    "slots": 478,
+    "slots": 479,
     "swapped": 17,
     "added": 278,
-    "kept": 155,
+    "kept": 156,
     "none": 28,
     "cleaned": 0
   },
@@ -4237,6 +4237,22 @@
       "quality": "A",
       "country": "South Africa",
       "locality": "Breede River, Western Cape",
+      "cleaned": false,
+      "license": "CC BY-NC-SA 4.0"
+    },
+    {
+      "slug": "upupa-epops",
+      "scientificName": "Upupa epops",
+      "index": 0,
+      "type": "call",
+      "action": "kept",
+      "from": [
+        "337010"
+      ],
+      "to": "337010",
+      "quality": "A",
+      "country": "South Africa",
+      "locality": "Kruger Park, Ehlanzeni",
       "cleaned": false,
       "license": "CC BY-NC-SA 4.0"
     },
