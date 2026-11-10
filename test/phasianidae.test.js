@@ -27,14 +27,14 @@ test('the eight francolins and quails are sourced without changing populations',
   assert.equal(common.population.estimate.high, 32768)
 
   const harl = await readJson('data/species/coturnix-delegorguei.json')
-  assert.equal(harl.status, undefined)
+  assert.equal(harl.status, 'intra-african-migrant')
   assert.equal(harl.size, undefined)
   assert.equal(harl.population.kemp.paperName, 'Harlequin Quail')
   assert.equal(harl.population.kemp.status, 'VB')
   assert.equal(harl.population.estimate.low, 131072)
 
   const crest = await readJson('data/species/ortygornis-sephaena.json')
-  assert.equal(crest.status, undefined)
+  assert.equal(crest.status, 'resident')
   assert.equal(crest.scientificName, 'Ortygornis sephaena')
   assert.equal(crest.population.kemp.status, 'RB')
   assert.equal(crest.images[0].license, 'CC BY 4.0')

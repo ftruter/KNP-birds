@@ -210,6 +210,6 @@
   "research": {
     "confidence": "low",
     "needsReview": true,
-    "note": "Status is omitted. This is a rare visitor in Kruger, and the site has no vagrant status. The vocabulary is resident, intra-african-migrant, palearctic-migrant, and the older summer-migrant. No seasonal plumage change described. Gaps: Only 22 GBIF records in Kruger box — treat as rare visitor/vagrant. Flight photos not curated. Confusion with Steppe Buzzard undermines many historical records (SABAP1). Photos left out: A repeated file was omitted. Endemic. Split from Buteo oreophilus (Mountain Buzzard). Images from Hangklip Forest, Mpumalanga (not Kruger). monthsPresent set from Newman/SABAP seasonality cross-checked with GBIF Kruger month facets (not abundance)."
+    "note": "Status is omitted. This is a rare visitor in Kruger, and the site has no vagrant status. The vocabulary is resident, intra-african-migrant, palearctic-migrant, and the older summer-migrant. No seasonal plumage change described. Gaps: Only 22 GBIF records in Kruger box — treat as rare visitor/vagrant. Flight photos not curated. Confusion with Steppe Buzzard undermines many historical records (SABAP1). Photos left out: A repeated file was omitted. Endemic. Split from Buteo oreophilus (Mountain Buzzard). Images from Hangklip Forest, Mpumalanga (not Kruger). monthsPresent set from Newman/SABAP seasonality cross-checked with GBIF Kruger month facets (not abundance). SABAP1 says it was thought sedentary but may be largely a nonbreeding migrant to the Transvaal, so status stays omitted."
   }
 }

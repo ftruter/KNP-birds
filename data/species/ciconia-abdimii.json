@@ -7,6 +7,7 @@
     "af": "Kleinswartooievaar"
   },
   "family": "ciconiidae",
+  "status": "intra-african-migrant",
   "size": {
     "lengthCm": {
       "min": 76,
@@ -29,6 +30,12 @@
       "url": "https://newmansbirds.com/birds/abdims-stork-2/",
       "publisher": "Newman's Birds",
       "year": 2026
+    },
+    {
+      "title": "The Atlas of Southern African Birds, Vol. 1 (Abdim’s Stork)",
+      "url": "https://sabap2.birdmap.africa/docs/sabap1/085.pdf",
+      "publisher": "BirdLife South Africa",
+      "year": 1997
     }
   ],
   "population": {
@@ -168,6 +175,6 @@
   "research": {
     "confidence": "medium",
     "needsReview": true,
-    "note": "Status and months were left unset. Newman does not say resident or visitor, only that it occurs in savanna and woodland. The only playable recording found was grade D wingbeats, so no call was stored. The Kemp code NB was left unchanged."
+    "note": "The only playable recording found was grade D wingbeats, so no call was stored. The Kemp code NB was left unchanged. Status is intra-african-migrant: SABAP1 calls it a nonbreeding, trans-equatorial, intra-African migrant that arrives from October."
   }
 }

@@ -7,6 +7,7 @@
     "af": "Swartrugtinktinkie"
   },
   "family": "cisticolidae",
+  "status": "resident",
   "habitat": "Wikipedia says it is found on the east coast of southern Africa and does not describe the plumage or status.",
   "summary": "Newman has no page. Wikipedia only places it on the east coast of southern Africa and does not describe the plumage, so the marks, status and months were left unset. No Kemp estimate is published.",
   "sampleData": false,
@@ -22,6 +23,12 @@
       "url": "https://en.wikipedia.org/wiki/Rufous-winged_cisticola",
       "publisher": "Wikipedia",
       "year": 2026
+    },
+    {
+      "title": "The Atlas of Southern African Birds, Vol. 2 (Blackbacked Cisticola)",
+      "url": "https://sabap2.birdmap.africa/docs/sabap1/675.pdf",
+      "publisher": "BirdLife South Africa",
+      "year": 1997
     }
   ],
   "population": {
@@ -114,6 +121,6 @@
   "research": {
     "confidence": "low",
     "needsReview": true,
-    "note": "Newman has no page. Wikipedia gives no total length, so size is omitted. Status and months were left unset. There is no Kemp estimate."
+    "note": "Newman has no page. Wikipedia gives no total length, so size is omitted. There is no Kemp estimate. Status is resident: SABAP1 (as Blackbacked Cisticola) says it is resident and territorial throughout the year."
   }
 }

@@ -124,7 +124,7 @@ test('all thirteen ducks are sourced without changing populations', async () => 
   assert.equal(cape.population.unit, null)
   assert.equal(cape.population.kemp, undefined)
   assert.equal(cape.monthsPresent, undefined)
-  assert.equal(cape.status, undefined)
+  assert.equal(cape.status, 'resident')
   const knob = await readJson('data/species/sarkidiornis-melanotos.json')
   assert.deepEqual(knob.monthsPresent, [1, 2, 3, 4, 5, 6, 7, 12])
   const pochard = await readJson('data/species/netta-erythrophthalma.json')

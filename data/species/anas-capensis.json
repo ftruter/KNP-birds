@@ -7,6 +7,7 @@
     "af": "Teeleend"
   },
   "family": "anatidae",
+  "status": "resident",
   "size": {
     "lengthCm": {
       "min": 46,
@@ -199,6 +200,6 @@
   "research": {
     "confidence": "medium",
     "needsReview": false,
-    "note": "Months in Kruger are not listed. SABAP1 places it mainly in drier pans and calls it an uncommon visitor to Swaziland and a rare vagrant to southern Mozambique, while the models show no clear migration. Newman treats it as a resident of brackish water. Chick down and the underwing are not described. The call is grade B from the Eastern Cape. The only higher grade in the catalogue had an uncertain cf filename."
+    "note": "Months in Kruger are not listed. SABAP1 places it mainly in drier pans and calls it an uncommon visitor to Swaziland and a rare vagrant to southern Mozambique, while the models show no clear migration. Chick down and the underwing are not described. The call is grade B from the Eastern Cape. The only higher grade in the catalogue had an uncertain cf filename. Status is resident: Newman calls it a common resident, and the SABAP1 models show no clear migration."
   }
 }

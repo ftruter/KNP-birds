@@ -98,7 +98,7 @@
   "research": {
     "confidence": "low",
     "needsReview": true,
-    "note": "No Newman page. SABAP1 describes seasonal movement and an eclipse plumage but not the months in Kruger, so status and monthsPresent are unset. Wikipedia gives no total length, so size is omitted. Population figures and the Kemp code VB were left unchanged."
+    "note": "No Newman page. SABAP1 describes seasonal movement and an eclipse plumage but not the months in Kruger, so status and monthsPresent are unset. Wikipedia gives no total length, so size is omitted. Population figures and the Kemp code VB were left unchanged. Status is still omitted: SABAP1 says Zimbabwe plateau birds leave from December to May and there is a summer influx in Mozambique, without a Kruger pattern."
   },
   "similar": [
     {

@@ -29,6 +29,12 @@
       "url": "https://en.wikipedia.org/wiki/Dickinson%27s_kestrel",
       "publisher": "Wikipedia",
       "year": 2026
+    },
+    {
+      "title": "The Atlas of Southern African Birds, Vol. 1 (Dickinson’s Kestrel)",
+      "url": "https://sabap2.birdmap.africa/docs/sabap1/185.pdf",
+      "publisher": "BirdLife South Africa",
+      "year": 1997
     }
   ],
   "population": {
@@ -211,6 +217,6 @@
   "research": {
     "confidence": "medium",
     "needsReview": true,
-    "note": "No Newman page was found. Wikipedia does not state residency, so status and months were left unset. The Kemp code RB was left unchanged. Population figures were left unchanged."
+    "note": "No Newman page was found. Wikipedia does not state residency, so status and months were left unset. The Kemp code RB was left unchanged. Population figures were left unchanged. Status is still omitted: SABAP1 describes regular seasonal movements, irruptions and a winter influx, but does not call it resident or migrant."
   }
 }

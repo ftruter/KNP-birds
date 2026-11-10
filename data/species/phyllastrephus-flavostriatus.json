@@ -7,6 +7,7 @@
     "af": "Geelstreepboskruiper"
   },
   "family": "pycnonotidae",
+  "status": "resident",
   "summary": "Newman has no species page for this greenbul, and the Wikipedia article does not describe the plumage, so no colours, size, habitat or status are stored. Avibase marks it rare or accidental in Kruger, so the months are unset. There is no Kemp estimate. The grade A calls from South Africa are ND, so the playable recording is a grade A alarm call from Kibira, Burundi.",
   "sampleData": false,
   "similar": [
@@ -27,6 +28,12 @@
       "url": "https://avibase.bsc-eoc.org/checklist.jsp?region=ZA000003",
       "publisher": "Avibase",
       "year": null
+    },
+    {
+      "title": "The Atlas of Southern African Birds, Vol. 2 (Yellowstreaked Bulbul)",
+      "url": "https://sabap2.birdmap.africa/docs/sabap1/570.pdf",
+      "publisher": "BirdLife South Africa",
+      "year": 1997
     }
   ],
   "population": {
@@ -107,6 +114,6 @@
   "research": {
     "confidence": "low",
     "needsReview": true,
-    "note": "Newman has no species page. The cited Wikipedia article names the bird and its broad forest habitat, and it does not describe the plumage, so no colours or size are stored and the status is left unset. Avibase marks the Kruger occurrence rare or accidental, so the months are unset. There is no Kemp estimate. No Kruger photograph was found. The grade A South African calls are ND, so the playable file is a grade A alarm call from Burundi."
+    "note": "Newman has no species page. The cited Wikipedia article names the bird and its broad forest habitat, and it does not describe the plumage, so no colours or size are stored. Avibase marks the Kruger occurrence rare or accidental, so the months are unset. There is no Kemp estimate. No Kruger photograph was found. The grade A South African calls are ND, so the playable file is a grade A alarm call from Burundi. Status is resident from SABAP1, which finds no evidence of seasonal movement in the atlas region."
   }
 }

@@ -38,7 +38,7 @@ test('all eight storks are sourced without changing populations', async () => {
     assert.equal(bird.images.length, 1, slug)
   }
   const abdim = await readJson('data/species/ciconia-abdimii.json')
-  assert.equal(abdim.status, undefined)
+  assert.equal(abdim.status, 'intra-african-migrant')
   assert.equal(abdim.calls[0].recordings.length, 0)
   assert.deepEqual(overlay.species['ciconia-abdimii'].calls[0].quality, {})
   const saddle = await readJson(

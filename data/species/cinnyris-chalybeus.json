@@ -16,6 +16,12 @@
       "url": "https://newmansbirds.com/birds/southern-double-collared-sunbird/",
       "publisher": "Newman's Birds",
       "year": 2026
+    },
+    {
+      "title": "The Atlas of Southern African Birds, Vol. 2 (Lesser Doublecollared Sunbird)",
+      "url": "https://sabap2.birdmap.africa/docs/sabap1/783.pdf",
+      "publisher": "BirdLife South Africa",
+      "year": 1997
     }
   ],
   "population": {
@@ -72,7 +78,7 @@
   "research": {
     "confidence": "low",
     "needsReview": true,
-    "note": "The scientific name and the 12 cm size are kept. The colour key and the description on the page do not agree with each other, so neither is stored as plumage. Status is unset. No Kemp block was present."
+    "note": "The scientific name and the 12 cm size are kept. The colour key and the description on the page do not agree with each other, so neither is stored as plumage. Status is unset. No Kemp block was present. SABAP1 describes partial seasonal movements that track flowering plants and does not call it resident, so status stays omitted."
   },
   "size": {
     "lengthCm": {

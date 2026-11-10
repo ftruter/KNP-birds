@@ -7,6 +7,7 @@
     "af": "Roetvalk"
   },
   "family": "falconidae",
+  "status": "palearctic-migrant",
   "size": {
     "lengthCm": {
       "min": 32,
@@ -28,6 +29,12 @@
       "url": "https://en.wikipedia.org/wiki/Sooty_falcon",
       "publisher": "Wikipedia",
       "year": 2026
+    },
+    {
+      "title": "The Atlas of Southern African Birds, Vol. 1 (Sooty Falcon)",
+      "url": "https://sabap2.birdmap.africa/docs/sabap1/175.pdf",
+      "publisher": "BirdLife South Africa",
+      "year": 1997
     }
   ],
   "population": {
@@ -221,6 +228,6 @@
   "research": {
     "confidence": "medium",
     "needsReview": true,
-    "note": "No Newman page was found. Wikipedia says it winters in eastern South Africa and does not name months, so status and monthsPresent were left unset. Population figures were left unchanged."
+    "note": "No Newman page was found. Wikipedia says it winters in eastern South Africa. Population figures were left unchanged. Status is palearctic-migrant: SABAP1 says it migrates from breeding grounds in the eastern Sahara and Arabian Peninsula to Madagascar and southern Africa."
   }
 }

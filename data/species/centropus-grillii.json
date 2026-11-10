@@ -7,6 +7,7 @@
     "af": "Swartvleiloerie"
   },
   "family": "cuculidae",
+  "status": "intra-african-migrant",
   "size": {
     "lengthCm": {
       "min": 30,
@@ -29,6 +30,12 @@
       "url": "https://en.wikipedia.org/wiki/Black_coucal",
       "publisher": "Wikipedia",
       "year": 2026
+    },
+    {
+      "title": "The Atlas of Southern African Birds, Vol. 1 (Black Coucal)",
+      "url": "https://sabap2.birdmap.africa/docs/sabap1/388.pdf",
+      "publisher": "BirdLife South Africa",
+      "year": 1997
     }
   ],
   "population": {
@@ -272,6 +279,6 @@
   "research": {
     "confidence": "medium",
     "needsReview": true,
-    "note": "No Newman page was found. Wikipedia says the bird is resident in some locations and migrant in others, so status and months were left unset. Breeding and non-breeding plumages are both stored. Population figures were left unchanged. The Kruger photograph is a blurred flight view."
+    "note": "No Newman page was found. Breeding and non-breeding plumages are both stored. Population figures were left unchanged. The Kruger photograph is a blurred flight view. Status is intra-african-migrant: SABAP1 says most populations within the region are markedly migratory wet-season breeding visitors, and a summer visitor in Zimbabwe that rarely overwinters."
   }
 }

@@ -7,6 +7,7 @@
     "af": "Dikbekfret"
   },
   "family": "estrildidae",
+  "status": "resident",
   "habitat": "Subtropical and tropical lowland moist shrubland, forest and dry grassland.",
   "summary": "Wikipedia calls it a sparsely distributed estrildid of lowland moist shrubland, forest and dry grassland. The page used does not describe the plumage or the voice, and does not say whether it is resident. The stub has no Kemp estimate and none was added.",
   "sampleData": false,
@@ -22,6 +23,12 @@
       "url": "https://en.wikipedia.org/wiki/Magpie_mannikin",
       "publisher": "Wikipedia",
       "year": 2026
+    },
+    {
+      "title": "The Atlas of Southern African Birds, Vol. 2 (Pied Mannikin)",
+      "url": "https://sabap2.birdmap.africa/docs/sabap1/859.pdf",
+      "publisher": "BirdLife South Africa",
+      "year": 1997
     }
   ],
   "population": {
@@ -114,6 +121,6 @@
   "research": {
     "confidence": "low",
     "needsReview": true,
-    "note": "No Newman page was found. Wikipedia gives habitat and range, not plumage, voice, residency, or total length, so status, months, variants, and size were left empty. The stub has no Kemp block and no estimate, and both were left that way."
+    "note": "No Newman page was found. Wikipedia gives habitat and range, not plumage, voice, or total length, so months, variants, and size were left empty. The stub has no Kemp block and no estimate, and both were left that way. Status is resident: SABAP1 calls it an uncommon to rare localised resident that is nomadic in response to food supply."
   }
 }

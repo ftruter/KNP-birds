@@ -33,6 +33,12 @@
       "url": "https://newmansbirds.com/birds/peregrine-falcon/",
       "publisher": "Newman's Birds",
       "year": 2026
+    },
+    {
+      "title": "The Atlas of Southern African Birds, Vol. 1 (Peregrine Falcon)",
+      "url": "https://sabap2.birdmap.africa/docs/sabap1/171.pdf",
+      "publisher": "BirdLife South Africa",
+      "year": 1997
     }
   ],
   "population": {
@@ -269,6 +275,6 @@
   "research": {
     "confidence": "medium",
     "needsReview": true,
-    "note": "Newman calls it both an uncommon resident and a summer visitor, with different plumages. Status and months were left unset so neither group is forced into one season. Population figures were left unchanged."
+    "note": "Newman calls it both an uncommon resident and a summer visitor, with different plumages. Status and months were left unset so neither group is forced into one season. Population figures were left unchanged. SABAP1 also describes resident pairs and possible migrant influxes, so status stays omitted."
   }
 }

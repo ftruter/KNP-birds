@@ -7,6 +7,7 @@
     "af": "Donkerwangbossanger"
   },
   "family": "cisticolidae",
+  "status": "resident",
   "habitat": "Dry forest and dry savanna. Wikipedia does not describe the plumage or a Kruger status.",
   "summary": "Wikipedia places it in dry forest and dry savanna from Angola and South Africa north to Kenya, and does not describe the plumage. The marks, status and months were left unset. Newman has no page.",
   "sampleData": false,
@@ -17,6 +18,12 @@
       "url": "https://en.wikipedia.org/wiki/Green-capped_eremomela",
       "publisher": "Wikipedia",
       "year": 2026
+    },
+    {
+      "title": "The Atlas of Southern African Birds, Vol. 2 (Greencapped Eremomela)",
+      "url": "https://sabap2.birdmap.africa/docs/sabap1/655.pdf",
+      "publisher": "BirdLife South Africa",
+      "year": 1997
     }
   ],
   "population": {
@@ -123,6 +130,6 @@
   "research": {
     "confidence": "low",
     "needsReview": true,
-    "note": "Newman has no page. Wikipedia gives no total length, so size is omitted. Status and months were left unset."
+    "note": "Newman has no page. Wikipedia gives no total length, so size is omitted. Status is resident: SABAP1 says it is resident, with no sign of movements."
   }
 }

@@ -7,6 +7,7 @@
     "af": "Rooiwangtinktinkie"
   },
   "family": "cisticolidae",
+  "status": "resident",
   "habitat": "Seasonally wet or flooded lowland grassland and swamps. Wikipedia says it is rare in southern Africa and does not describe the plumage.",
   "summary": "Wikipedia says it is widely present across sub-Saharan Africa and rare in southern Africa, in wet grassland and swamps. It does not describe the plumage or a Kruger status, so the marks, status and months were left unset. Newman has no page.",
   "sampleData": false,
@@ -17,6 +18,12 @@
       "url": "https://en.wikipedia.org/wiki/Red-faced_cisticola",
       "publisher": "Wikipedia",
       "year": 2026
+    },
+    {
+      "title": "The Atlas of Southern African Birds, Vol. 2 (Redfaced Cisticola)",
+      "url": "https://sabap2.birdmap.africa/docs/sabap1/674.pdf",
+      "publisher": "BirdLife South Africa",
+      "year": 1997
     }
   ],
   "population": {
@@ -123,6 +130,6 @@
   "research": {
     "confidence": "low",
     "needsReview": true,
-    "note": "Newman has no page. Wikipedia gives no total length, so size is omitted. Status and months were left unset. No Kemp estimate is published."
+    "note": "Newman has no page. Wikipedia gives no total length, so size is omitted. No Kemp estimate is published. Status is resident: SABAP1 says it is resident."
   }
 }

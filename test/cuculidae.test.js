@@ -19,7 +19,7 @@ test('cuckoos and coucals are sourced without changing populations', async () =>
       'RB',
       'resident',
     ],
-    'centropus-grillii': [4, 16, 'Black Coucal', 'VB', undefined],
+    'centropus-grillii': [4, 16, 'Black Coucal', 'VB', 'intra-african-migrant'],
     'chrysococcyx-caprius': [
       16384,
       65536,

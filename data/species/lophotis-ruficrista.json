@@ -7,6 +7,7 @@
     "af": "Boskorhaan"
   },
   "family": "otididae",
+  "status": "resident",
   "size": {
     "lengthCm": {
       "min": 53,
@@ -35,6 +36,12 @@
       "url": "https://journals.co.za/doi/pdf/10.10520/EJC97367",
       "publisher": "South African Journal of Science",
       "year": 2001
+    },
+    {
+      "title": "The Atlas of Southern African Birds, Vol. 1 (Redcrested Korhaan)",
+      "url": "https://sabap2.birdmap.africa/docs/sabap1/237.pdf",
+      "publisher": "BirdLife South Africa",
+      "year": 1997
     }
   ],
   "population": {
@@ -183,6 +190,6 @@
   "research": {
     "confidence": "medium",
     "needsReview": true,
-    "note": "The colour key matches Red-crested Korhaan. The description paragraph matches Temminck’s Courser and was not used, so status and monthsPresent are unset and the plumage is only the key. That is why this needs review. Population figures, the Kemp paper name Redcrested Korhaan and the code RB were left unchanged."
+    "note": "The colour key matches Red-crested Korhaan. The description paragraph matches Temminck’s Courser and was not used, so the plumage is only the key. That is why this needs review. Population figures, the Kemp paper name Redcrested Korhaan and the code RB were left unchanged. Status is resident: SABAP1 says it is thought to be entirely sedentary."
   }
 }
