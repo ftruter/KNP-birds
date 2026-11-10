@@ -6,8 +6,8 @@
     "en": "Secretarybird",
     "af": "Sekretarisvoël"
   },
-  "summary": "Field notes for this family are still to be written.",
-  "sampleData": true,
+  "summary": "Secretarybird. A large grey-and-black bird of grassland and bushveld, with an orange face, pink legs, black flight feathers and loose black feathers behind the head. The immature face is yellow.",
+  "sampleData": false,
   "species": [
     {
       "slug": "sagittarius-serpentarius",

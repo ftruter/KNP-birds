@@ -1,10 +1,10 @@
 {
   "source": "xeno-canto explore catalogue, API v3 recording fields",
   "counts": {
-    "slots": 431,
+    "slots": 432,
     "swapped": 17,
     "added": 278,
-    "kept": 108,
+    "kept": 109,
     "none": 28,
     "cleaned": 0
   },
@@ -1884,6 +1884,22 @@
       "quality": "B",
       "country": "Thailand",
       "locality": "Lam Pho, Nonthaburi",
+      "cleaned": false,
+      "license": "CC BY-NC-SA 4.0"
+    },
+    {
+      "slug": "sagittarius-serpentarius",
+      "scientificName": "Sagittarius serpentarius",
+      "index": 0,
+      "type": "call",
+      "action": "kept",
+      "from": [
+        "505982"
+      ],
+      "to": "505982",
+      "quality": "B",
+      "country": "South Africa",
+      "locality": "Leewrand, Bloemfontein, Free State",
       "cleaned": false,
       "license": "CC BY-NC-SA 4.0"
     },
