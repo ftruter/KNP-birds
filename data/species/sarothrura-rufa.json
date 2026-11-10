@@ -186,11 +186,28 @@
       ]
     }
   ],
-  "images": [],
+  "images": [
+    {
+      "key": "sarothrura-rufa/side-male.jpg",
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "male",
+      "season": "any",
+      "source": "https://www.inaturalist.org/observations/330409363",
+      "fileUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/599138704/large.jpg",
+      "author": "Christiaan Viljoen",
+      "license": "CC BY 4.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by/4.0/",
+      "aiGenerated": false,
+      "hosted": false,
+      "alt": "Male Red-chested Flufftail on the Garden Route, not Kruger, with a rufous head and breast and a black, white-streaked body.",
+      "caption": "Male Red-chested Flufftail on the Garden Route, not Kruger, with a rufous head and breast and a black, white-streaked body."
+    }
+  ],
   "research": {
     "confidence": "medium",
     "needsReview": true,
-    "note": "Newman calls it a fairly common resident, and Avibase does not mark it rare, so all twelve months are listed. No Kruger photograph was found. Photographs from outside Kruger did not clearly show the streaked upperparts, so none is stored. The grade A call is from North West and includes wind noise. The Kemp name Redchested Flufftail and the code VB were left unchanged."
+    "note": "Newman calls it a fairly common resident, and Avibase does not mark it rare, so all twelve months are listed. No Kruger photograph was found under an allowed licence. A male side photograph from the Garden Route is stored. The grade A call is from North West and includes wind noise. The Kemp name Redchested Flufftail and the code VB were left unchanged."
   },
   "status": "resident",
   "monthsPresent": [

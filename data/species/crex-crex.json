@@ -227,7 +227,14 @@
   "research": {
     "confidence": "low",
     "needsReview": true,
-    "note": "Newman has no species page, so the plumage and the call are from the cited Wikipedia article and the size is omitted. Wikipedia says it migrates to Africa for the northern winter, so status is palearctic-migrant. Kruger months are not given, so monthsPresent is unset. Avibase does not mark it rare. The grade A call is from Finland. Population figures and the Kemp name Corncrake were left unchanged."
+    "note": "Newman has no species page, so the plumage and the call are from the cited Wikipedia article. Length is from Wikipedia (27–30 cm). Wikipedia says it migrates to Africa for the northern winter, so status is palearctic-migrant. Kruger months are not given, so monthsPresent is unset. Avibase does not mark it rare. The grade A call is from Finland. Population figures and the Kemp name Corncrake were left unchanged."
   },
-  "status": "palearctic-migrant"
+  "status": "palearctic-migrant",
+  "size": {
+    "lengthCm": {
+      "min": 27,
+      "max": 30
+    },
+    "note": "Wikipedia gives 27–30 cm."
+  }
 }

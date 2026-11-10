@@ -49,4 +49,11 @@ test('all six nightjars are sourced without changing populations', async () => {
   const freckled = await readJson('data/species/caprimulgus-tristigma.json')
   const [, , sex] = diffSpecies(freckled)
   assert.equal(sex.status, 'differs')
+
+  const european = await readJson('data/species/caprimulgus-europaeus.json')
+  assert.equal(european.size.lengthCm.min, 24.5)
+  assert.equal(european.size.lengthCm.max, 28)
+  const square = await readJson('data/species/caprimulgus-fossii.json')
+  assert.equal(square.size, undefined)
+
 })

@@ -259,10 +259,27 @@
       ]
     }
   ],
-  "images": [],
+  "images": [
+    {
+      "key": "serinus-canicollis/front-male.jpg",
+      "view": "perched-front",
+      "age": "adult",
+      "sex": "male",
+      "season": "any",
+      "source": "https://www.inaturalist.org/observations/62800511",
+      "fileUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/101251930/large.jpg",
+      "author": "Dave Brown",
+      "license": "CC0 1.0",
+      "licenceUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "aiGenerated": false,
+      "hosted": false,
+      "alt": "Male Cape Canary at Port Elizabeth, not Kruger, yellow-green with a grey nape patch.",
+      "caption": "Male Cape Canary at Port Elizabeth, not Kruger, yellow-green with a grey nape patch."
+    }
+  ],
   "research": {
     "confidence": "medium",
     "needsReview": true,
-    "note": "Status is resident and all twelve months are listed. Newman calls it a common endemic resident. The Kemp code NB was left unchanged. No openly licensed research-grade photograph was found in the Kruger box. Population figures were left unchanged."
+    "note": "Status is resident and all twelve months are listed. Newman calls it a common endemic resident. The Kemp code NB was left unchanged. No Kruger photograph was found under an allowed licence. A male front photograph from Port Elizabeth is stored. Population figures were left unchanged."
   }
 }

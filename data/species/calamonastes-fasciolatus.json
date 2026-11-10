@@ -202,10 +202,27 @@
       ]
     }
   ],
-  "images": [],
+  "images": [
+    {
+      "key": "calamonastes-fasciolatus/side.jpg",
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "source": "https://www.inaturalist.org/observations/152186429",
+      "fileUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/262677067/large.jpeg",
+      "author": "scaup",
+      "license": "CC BY 4.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by/4.0/",
+      "aiGenerated": false,
+      "hosted": false,
+      "alt": "Barred Wren-Warbler in Vhembe, not Kruger, with dark barring across the underparts in a thorny thicket.",
+      "caption": "Barred Wren-Warbler in Vhembe, not Kruger, with dark barring across the underparts in a thorny thicket."
+    }
+  ],
   "research": {
     "confidence": "medium",
     "needsReview": true,
-    "note": "Status is resident and all twelve months are listed from Newman’s resident wording. Population figures were left unchanged."
+    "note": "Status is resident and all twelve months are listed from Newman’s resident wording. No Kruger photograph was found under an allowed licence. A side photograph from Vhembe is stored. Population figures were left unchanged."
   }
 }

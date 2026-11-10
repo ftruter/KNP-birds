@@ -223,10 +223,27 @@
       ]
     }
   ],
-  "images": [],
+  "images": [
+    {
+      "key": "anarhynchus-pallidus/side.jpg",
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "source": "https://www.inaturalist.org/observations/65324548",
+      "fileUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/105121420/large.jpg",
+      "author": "Dave Brown",
+      "license": "CC0 1.0",
+      "licenceUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "aiGenerated": false,
+      "hosted": false,
+      "alt": "Chestnut-banded Plover at Bo-Karoo, not Kruger, with a narrow chestnut breast-band on white underparts.",
+      "caption": "Chestnut-banded Plover at Bo-Karoo, not Kruger, with a narrow chestnut breast-band on white underparts."
+    }
+  ],
   "research": {
     "confidence": "low",
     "needsReview": true,
-    "note": "Status is resident and all twelve months are listed. Newman calls it a common resident and says inland records are irregular, which is not stored as an absence. No openly licensed photograph was found in the Kruger box. The call is grade B. The Kemp code NB was left unchanged."
+    "note": "Status is resident and all twelve months are listed. Newman calls it a common resident and says inland records are irregular, which is not stored as an absence. No Kruger photograph was found under an allowed licence. A side photograph from Bo-Karoo is stored. The call is grade B. The Kemp code NB was left unchanged."
   }
 }

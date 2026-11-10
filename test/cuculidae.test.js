@@ -118,4 +118,10 @@ test('cuckoos and coucals are sourced without changing populations', async () =>
     report.counts.kept +
     report.counts.none
   assert.equal(sum, report.counts.slots)
+
+  assert.equal(burchell.size.lengthCm.min, 44)
+  assert.equal(burchell.size.lengthCm.max, 44)
+  assert.equal(senegal.size.lengthCm.min, 41)
+  assert.equal(senegal.size.lengthCm.max, 41)
+  assert.equal(thick.size, undefined)
 })

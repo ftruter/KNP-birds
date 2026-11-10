@@ -2,6 +2,13 @@
   "habitat": "Breeds in European and Palearctic forest and winters in Africa. It nests near the ground in dense undergrowth.",
   "summary": "Newman's Birds has no page. Wikipedia describes a migrant, plain greyish-brown above and white and greyish-brown below, without the rufous tail patches of the Common Nightingale. The song is similar but more solemn. It breeds in Europe and winters in Africa. Avibase marks it rare, so the months are left unset. The Kemp name Thrush Nightingale and the code NB were left unchanged.",
   "status": "palearctic-migrant",
+  "size": {
+    "lengthCm": {
+      "min": 16,
+      "max": 16
+    },
+    "note": "Wikipedia gives about 16 cm."
+  },
   "variants": [
     {
       "age": "adult",
@@ -94,7 +101,7 @@
   "research": {
     "confidence": "low",
     "needsReview": true,
-    "note": "Newman's Birds has no page, so the description comes from Wikipedia and no length is given. Greyish-brown is not a colour name. Avibase marks it rare, so the months are left unset. The status is palearctic-migrant because it breeds in Europe and winters in Africa. The grade A song is from Sweden. The Kemp name Thrush Nightingale and the code NB were left unchanged."
+    "note": "Newman's Birds has no page, so the description comes from Wikipedia. Length is from Wikipedia (about 16 cm). Greyish-brown is not a colour name. Avibase marks it rare, so the months are left unset. The status is palearctic-migrant because it breeds in Europe and winters in Africa. The grade A song is from Sweden. The Kemp name Thrush Nightingale and the code NB were left unchanged."
   },
   "kind": "species",
   "slug": "luscinia-luscinia",

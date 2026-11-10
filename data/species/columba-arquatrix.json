@@ -168,10 +168,27 @@
       ]
     }
   ],
-  "images": [],
+  "images": [
+    {
+      "key": "columba-arquatrix/side.jpg",
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "source": "https://www.inaturalist.org/observations/397732141",
+      "fileUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/729516872/large.jpg",
+      "author": "Christiaan Viljoen",
+      "license": "CC BY 4.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by/4.0/",
+      "aiGenerated": false,
+      "hosted": false,
+      "alt": "African Olive Pigeon at Sir Lowry’s Pass, not Kruger, with a yellow eye-ring, a yellow bill and white-spotted dark plumage.",
+      "caption": "African Olive Pigeon at Sir Lowry’s Pass, not Kruger, with a yellow eye-ring, a yellow bill and white-spotted dark plumage."
+    }
+  ],
   "research": {
     "confidence": "medium",
     "needsReview": true,
-    "note": "Population figures were left unchanged."
+    "note": "No Kruger photograph was found under an allowed licence. A side photograph from Sir Lowry’s Pass is stored. Population figures were left unchanged."
   }
 }

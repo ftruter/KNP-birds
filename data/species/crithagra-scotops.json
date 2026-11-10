@@ -22,6 +22,13 @@
     11,
     12
   ],
+  "size": {
+    "lengthCm": {
+      "min": 11,
+      "max": 13
+    },
+    "note": "Wikipedia gives 11–13 cm."
+  },
   "habitat": "Pairs and small parties in tree canopies in forest at all altitudes, and in adjacent forested kloofs and plantation fringes.",
   "summary": "A common endemic resident. Heavily streaked yellow, boldest in northern birds, with a small dark mask. The immature resembles the adult. The usual call is a thin tweetoo, twee-ee, and it also has a brisk sibilant warbling song. Newman’s size field is blank, so no length was stored. The stub has no Kemp estimate and none was added.",
   "sampleData": false,
@@ -40,6 +47,12 @@
       "title": "Forest Canary",
       "url": "https://newmansbirds.com/birds/forest-canary/",
       "publisher": "Newman's Birds",
+      "year": 2026
+    },
+    {
+      "title": "Forest canary",
+      "url": "https://en.wikipedia.org/wiki/Forest_canary",
+      "publisher": "Wikipedia",
       "year": 2026
     }
   ],
@@ -177,6 +190,6 @@
   "research": {
     "confidence": "medium",
     "needsReview": true,
-    "note": "Newman’s size is printed as a blank value, so no length was stored. The immature is said only to resemble the adult. Status is resident and all twelve months are listed. The stub has no Kemp block and no estimate, and both were left that way."
+    "note": "Newman’s size is printed as #VALUE!, so length is from Wikipedia (11–13 cm). The immature is said only to resemble the adult. Status is resident and all twelve months are listed. The stub has no Kemp block and no estimate, and both were left that way."
   }
 }
