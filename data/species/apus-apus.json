@@ -167,14 +167,25 @@
     {
       "sex": "male",
       "type": "call",
-      "description": "Wikipedia says the scream has two pitches and that the higher pitch is the female’s, so the lower pitch is the male’s. The catalogue cut is not labelled by sex.",
+      "description": "Wikipedia says the scream has two pitches and that the higher pitch is the female’s, so the lower pitch is the male’s. The only grade A cut labelled male is a pair inspecting a nest hole, so it was not used.",
       "recordings": []
     },
     {
       "sex": "female",
       "type": "call",
-      "description": "The higher of the two scream pitches.",
-      "recordings": []
+      "description": "The higher of the two scream pitches. The catalogue cut is labelled as an adult female calling from the nest. Grade B, Russia, the breeding range.",
+      "recordings": [
+        {
+          "key": "xeno-canto/XC269740",
+          "source": "https://xeno-canto.org/269740",
+          "fileUrl": "https://xeno-canto.org/sounds/uploaded/LELYWQKUZX/XC269740-Apus%20150717_010%2CAAAA.MP3",
+          "author": "Albert Lastukhin",
+          "license": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ]
     },
     {
       "sex": "any",
@@ -215,6 +226,6 @@
   "research": {
     "confidence": "medium",
     "needsReview": false,
-    "note": "Status is a Palearctic migrant. SABAP1 gives arrival in October in the northern zones and departure mainly in February and March, so those months are listed. A few may stay in winter. Newman has no species page for this swift. Chick down and a Kruger recording were not found. The grade A call is from Sweden."
+    "note": "Status is a Palearctic migrant. SABAP1 gives arrival in October in the northern zones and departure mainly in February and March, so those months are listed. A few may stay in winter. Newman has no species page for this swift. Chick down and a Kruger recording were not found. The grade A call is from Sweden. The female call is grade B from Russia. The only grade A cut labelled male is a pair at a nest hole, so the male slot is still empty."
   }
 }
