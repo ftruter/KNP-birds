@@ -12,7 +12,7 @@ const SECURITY = {
 }
 
 const PAGE_CSP =
-  "default-src 'none'; style-src 'self'; img-src 'self' https:; media-src 'self' https:; base-uri 'none'; form-action 'none'; frame-ancestors 'none'; script-src 'self'"
+  "default-src 'none'; style-src 'self'; img-src 'self' https:; media-src 'self' https:; base-uri 'none'; form-action 'self'; frame-ancestors 'none'; script-src 'self'"
 const OBJECT_CSP =
   "default-src 'none'; style-src 'none'; script-src 'none'; sandbox"
 
@@ -25,6 +25,7 @@ export const pageResponse = ({
   origin,
   cacheTag,
   vary,
+  search = '',
 }) => {
   const headers = new Headers(SECURITY)
   headers.set('content-type', contentType)
@@ -32,7 +33,7 @@ export const pageResponse = ({
   headers.set('cache-control', cache)
   headers.set('access-control-allow-origin', '*')
   if (cacheTag) headers.set('cache-tag', cacheTag)
-  const alts = path && origin ? alternates(path) : null
+  const alts = path && origin ? alternates(path, search) : null
   const pageLinks = alts
     ? [
         `<${origin}${alts.html}>; rel="canonical"`,
