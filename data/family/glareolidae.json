@@ -61,5 +61,13 @@
     "speciesCounted": 4,
     "speciesTotal": 5,
     "complete": false
+  },
+  "residency": {
+    "speciesKnown": 3,
+    "speciesUnknown": 2,
+    "unknownSpecies": [
+      "rhinoptilus-chalcopterus",
+      "rhinoptilus-cinctus"
+    ]
   }
 }

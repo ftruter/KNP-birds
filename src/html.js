@@ -3,7 +3,9 @@ import { recordingNotes } from './recordings.js'
 import { escapeHtml, inlineText, safeHttpUrl } from './escape.js'
 import {
   APPROXIMATE_LABEL,
-  APPROXIMATE_TOTAL,
+  FAMILY_TOTAL_LABEL,
+  FAMILY_TOTAL_SEASONS,
+  residencyGapText,
   CALL_TYPE,
   SAMPLE_NOTICE,
   afrikaansName,
@@ -30,6 +32,7 @@ import {
   viewLabel,
 } from './guide.js'
 import { ARD_LINK } from './head.js'
+import { RESIDENCY_ANCHOR } from './seasons.js'
 import {
   rowsForFamilies,
   rowsForFamily,
@@ -199,7 +202,7 @@ ${afrikaansName(doc) ? `<p class="afrikaans">${escapeHtml(afrikaansName(doc))}</
 <div class="split-copy">
 ${paragraphs(doc.summary)}
 </div>
-${familyPopulationHtml(doc.population, format)}
+${familyPopulationHtml(doc.population, doc.residency, format)}
 </div>
 ${iconicHtml(plates)}
 <h2>${FAMILY_SPECIES_HEADING}</h2>
@@ -493,18 +496,20 @@ ${figures(plate.doc, Array.isArray(plate.doc.images) ? plate.doc.images : [], pl
   .join('\n')}
 </div>`
 
-const familyPopulationHtml = (population, format) => {
+const familyPopulationHtml = (population, residency, format) => {
   const model = familyTotalModel(population, format)
+  const gap = residencyGapText(residency, format)
   const range = model.range
     ? `<p class="estimate-range">${escapeHtml(model.range)}</p>`
     : '<p class="estimate-range">No numeric total yet.</p>'
   return `<section class="population" aria-labelledby="family-population-title">
 <h2 id="family-population-title">Population</h2>
-<p class="estimate-label">${escapeHtml(APPROXIMATE_TOTAL)}</p>
+<p class="estimate-label">${escapeHtml(FAMILY_TOTAL_LABEL)}</p>
 <p>${escapeHtml(FAMILY_TOTAL_INTRO)}</p>
 ${range}
 <p>${escapeHtml(model.coverage)}</p>
 ${model.complete ? '' : '<p>This total is incomplete.</p>'}
+<p id="${RESIDENCY_ANCHOR}">${escapeHtml(FAMILY_TOTAL_SEASONS)} <a href="/families">Families by season</a>.${gap ? ` ${escapeHtml(gap)}` : ''}</p>
 </section>`
 }
 

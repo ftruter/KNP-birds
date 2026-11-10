@@ -36,5 +36,12 @@
     "speciesCounted": 2,
     "speciesTotal": 2,
     "complete": true
+  },
+  "residency": {
+    "speciesKnown": 1,
+    "speciesUnknown": 1,
+    "unknownSpecies": [
+      "microparra-capensis"
+    ]
   }
 }

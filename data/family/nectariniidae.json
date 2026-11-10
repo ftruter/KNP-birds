@@ -101,5 +101,15 @@
     "speciesCounted": 6,
     "speciesTotal": 10,
     "complete": false
+  },
+  "residency": {
+    "speciesKnown": 6,
+    "speciesUnknown": 4,
+    "unknownSpecies": [
+      "cinnyris-afer",
+      "cinnyris-bifasciatus",
+      "cinnyris-chalybeus",
+      "hedydipna-collaris"
+    ]
   }
 }

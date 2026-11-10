@@ -7,6 +7,27 @@ export const APPROXIMATE_TOTAL = 'Approximate total'
 export const HOME_POPULATION_INTRO =
   'Population figures are an approximate estimate. Many are Kemp et al. 2001 order-of-magnitude thresholds, stored as half to double the threshold in mature individuals. Family totals add only those mature-individual figures.'
 
+export const FAMILY_TOTAL_LABEL = 'Approximate total, all seasons'
+
+export const FAMILY_TOTAL_SEASONS =
+  'This total covers all seasons. The families list splits it into summer and winter, using each species’ residency.'
+
+/** Explains seasonal Unknown or partial figures. Empty when nothing is missing. */
+export const residencyGapText = (residency, format) => {
+  const unknown = Number.isInteger(residency?.speciesUnknown)
+    ? residency.speciesUnknown
+    : 0
+  if (!unknown) return ''
+  const known = Number.isInteger(residency.speciesKnown)
+    ? residency.speciesKnown
+    : 0
+  const fmt = (value) => formatInteger(value, format)
+  const lead = known
+    ? `${fmt(unknown)} of ${fmt(unknown + known)} species have no published residency (status or months present) yet, so the summer and winter figures for this family are partial.`
+    : 'No species in this family has a published residency (status or months present) yet, so the summer and winter figures for this family show Unknown.'
+  return `${lead} The all-season total above does not need residency, so it still has a figure.`
+}
+
 export const FAMILY_TOTAL_INTRO =
   'This adds mature-individual estimates only. Groups, breeding pairs, territories, and species without that unit are left out.'
 
@@ -231,7 +252,7 @@ export const familyTotalLine = (population, format) => {
   const model = familyTotalModel(population, format)
   const figure = model.range || 'no numeric total yet'
   const incomplete = model.complete ? '' : ' This total is incomplete.'
-  return `${APPROXIMATE_TOTAL}: ${figure}. ${model.coverage}${incomplete}`
+  return `${FAMILY_TOTAL_LABEL}: ${figure}. ${model.coverage}${incomplete}`
 }
 
 export const baselineLine = (baseline, format) => {

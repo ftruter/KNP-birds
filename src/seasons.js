@@ -6,7 +6,10 @@ export const SUMMER_MONTHS = [10, 11, 12, 1, 2, 3]
 export const WINTER_MONTHS = [4, 5, 6, 7, 8, 9]
 
 export const SEASON_NOTE =
-  'Summer is October to March and winter is April to September (southern hemisphere). A species is listed in a season when monthsPresent meets that season. If months are missing, a resident is in both seasons and a migrant is in summer only. Anything still unknown is not guessed.'
+  'Summer is October to March and winter is April to September (southern hemisphere). A species is listed in a season when monthsPresent meets that season. If months are missing, a resident is in both seasons and a migrant is in summer only. Anything still unknown is not guessed. Unknown means residency (status or monthsPresent) is not published yet for that species, and partial means the same for some species in a family. The approximate total on a family page covers all seasons, so it can have a figure where a season shows Unknown.'
+
+/** Anchor on a family page for the note that explains seasonal gaps. */
+export const RESIDENCY_ANCHOR = 'residency'
 
 const SUMMER_STATUS = new Set([
   'resident',
@@ -32,6 +35,26 @@ export const seasonPresence = (doc) => {
   if (status === 'resident') return { summer: true, winter: true }
   if (SUMMER_STATUS.has(status)) return { summer: true, winter: false }
   return { summer: null, winter: null }
+}
+
+const hasPresence = (presence) =>
+  presence.summer != null || presence.winter != null
+
+/**
+ * How many species have a known season presence. The family page and the
+ * family JSON use this to explain Unknown and partial seasonal figures.
+ */
+export const residencyCoverage = (speciesDocs) => {
+  const docs = Array.isArray(speciesDocs) ? speciesDocs : []
+  const unknownSpecies = docs
+    .filter((doc) => !hasPresence(seasonPresence(doc)))
+    .map((doc) => doc.slug)
+    .sort()
+  return {
+    speciesKnown: docs.length - unknownSpecies.length,
+    speciesUnknown: unknownSpecies.length,
+    unknownSpecies,
+  }
 }
 
 export const estimateOf = (population) => {

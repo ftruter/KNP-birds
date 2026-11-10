@@ -14,7 +14,10 @@
  * species is counted in another unit. iconicSpecies is empty when no species
  * in the family has a mature-individual estimate. Family totals add only
  * matureIndividuals. Groups, breeding pairs, and territories are left out,
- * and the total is partial when any species is left out.
+ * and the total is partial when any species is left out. The family total
+ * covers all seasons. residency counts the species whose summer and winter
+ * presence is known, and lists the slugs that have neither status nor
+ * monthsPresent, so seasonal Unknowns can be explained.
  * Keys:
  *   data/species/<slug>.json → species/<slug>
  *   data/family/<slug>.json  → family/<slug>
@@ -32,6 +35,7 @@ import { readdir, readFile, writeFile } from 'node:fs/promises'
 import path from 'node:path'
 import { fileURLToPath } from 'node:url'
 import { applyRecordingOverlay, recordingOverlay } from '../src/recordings.js'
+import { residencyCoverage } from '../src/seasons.js'
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..')
 
@@ -155,6 +159,7 @@ export const deriveFamilyDocument = (family, speciesDocs) => {
     species,
     iconicSpecies: iconicSpecies(speciesDocs),
     population: familyPopulation(speciesDocs),
+    residency: residencyCoverage(speciesDocs),
   }
 }
 
