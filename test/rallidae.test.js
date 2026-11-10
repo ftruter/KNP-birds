@@ -115,7 +115,9 @@ test('the ten rails are sourced without changing populations', async () => {
 
   const striped = await readJson('data/species/aenigmatolimnas-marginalis.json')
   assert.equal(striped.status, 'summer-migrant')
-  assert.equal(striped.images.length, 0)
+  assert.equal(striped.images.length, 1)
+  assert.equal(striped.images[0].license, 'CC BY 4.0')
+  assert.match(striped.images[0].caption, /not Kruger/)
   assert.equal(striped.calls[0].recordings[0].key, 'xeno-canto/XC355772')
 
   const corn = await readJson('data/species/crex-crex.json')
