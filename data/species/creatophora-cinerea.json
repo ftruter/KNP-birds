@@ -1,14 +1,185 @@
 {
+  "size": {
+    "lengthCm": {
+      "min": 21,
+      "max": 21
+    },
+    "note": "Newman's Birds gives 21 cm."
+  },
+  "habitat": "Highly gregarious in dry grassland or open bushveld, often with cattle. Flocks feed on the ground. Breeding colonies build hundreds of nests in thorn bushes. Nomadic when not breeding.",
+  "summary": "A common resident. A pale starling. Non-breeding males and females are whitish, and the white rump shows in flight. The breeding male's head may have yellow-and-black skin and wattles, and the tail is black. The call is a rasping squeak. The Kemp name Wattled Starling and the code VB were left unchanged.",
+  "variants": [
+    {
+      "age": "adult",
+      "sex": "any",
+      "season": "non-breeding",
+      "marks": {
+        "bill": {
+          "colour": null,
+          "shape": null
+        },
+        "eye": {
+          "iris": null,
+          "ring": null
+        },
+        "legs": {
+          "colour": null
+        },
+        "head": {
+          "crown": null,
+          "face": null,
+          "throat": null,
+          "pattern": "Male and female are whitish when not breeding."
+        },
+        "upperparts": {
+          "back": null,
+          "rump": "white",
+          "pattern": "Whitish. The white rump shows in flight."
+        },
+        "underparts": {
+          "breast": null,
+          "belly": null,
+          "pattern": "Whitish."
+        },
+        "wings": {
+          "above": null,
+          "below": null
+        },
+        "tail": {
+          "colour": null,
+          "shape": null
+        }
+      }
+    },
+    {
+      "age": "adult",
+      "sex": "male",
+      "season": "breeding",
+      "marks": {
+        "bill": {
+          "colour": null,
+          "shape": null
+        },
+        "eye": {
+          "iris": null,
+          "ring": null
+        },
+        "legs": {
+          "colour": null
+        },
+        "head": {
+          "crown": null,
+          "face": null,
+          "throat": null,
+          "pattern": "Breeding male head ornamented with black and yellow skin, plus wattles, or with only the wattles."
+        },
+        "upperparts": {
+          "back": null,
+          "rump": "white"
+        },
+        "underparts": {
+          "breast": null,
+          "belly": null
+        },
+        "wings": {
+          "above": null,
+          "below": null
+        },
+        "tail": {
+          "colour": "black",
+          "shape": null
+        }
+      }
+    }
+  ],
+  "viewNotes": [
+    {
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "any",
+      "season": "non-breeding",
+      "note": "Whitish, and drab compared with the breeding male."
+    },
+    {
+      "view": "flight-above",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "White rump."
+    },
+    {
+      "view": "perched-front",
+      "age": "adult",
+      "sex": "male",
+      "season": "breeding",
+      "note": "Head ornamented with black and yellow skin and wattles."
+    },
+    {
+      "view": "perched-back",
+      "age": "adult",
+      "sex": "male",
+      "season": "breeding",
+      "note": "Black tail."
+    },
+    {
+      "view": "flight-below",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "The underside in flight is not described."
+    }
+  ],
+  "calls": [
+    {
+      "sex": "any",
+      "type": "call",
+      "description": "A rasping, squeaky sound. The grade A call is from Kruger. The filename is XC489190-Wattled Starlings KNP 190415-075512.mp3.",
+      "recordings": [
+        {
+          "key": "xeno-canto/XC489190",
+          "source": "https://xeno-canto.org/489190",
+          "fileUrl": "https://xeno-canto.org/sounds/uploaded/DNKBTPCMSQ/XC489190-Wattled%20Starlings%20KNP%20190415-075512.mp3",
+          "author": "Derek Solomon",
+          "license": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ]
+    }
+  ],
+  "images": [
+    {
+      "key": "creatophora-cinerea/side.jpg",
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "male",
+      "season": "breeding",
+      "source": "https://www.inaturalist.org/observations/106451706",
+      "fileUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/178821326/large.jpg",
+      "author": "Andre Harmse",
+      "license": "CC BY-NC 4.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+      "aiGenerated": false,
+      "hosted": false,
+      "alt": "Breeding male Wattled Starling in Kruger, on the Letaba to Mopani road, with a yellow-and-black head.",
+      "caption": "Breeding male Wattled Starling in Kruger, on the Letaba to Mopani road, with a yellow-and-black head."
+    }
+  ],
+  "research": {
+    "confidence": "medium",
+    "needsReview": true,
+    "note": "Newman calls it a common resident, and Avibase does not mark it rare, so all twelve months are listed. Whitish is not stored as a vocabulary colour. The grade A call is from Kruger. The Kemp code VB was left unchanged."
+  },
   "kind": "species",
   "slug": "creatophora-cinerea",
+  "family": "sturnidae",
+  "sampleData": false,
   "scientificName": "Creatophora cinerea",
   "commonNames": {
     "en": "Wattled Starling",
     "af": "Lelspreeu"
   },
-  "family": "sturnidae",
-  "summary": "The details for this species have not been published yet.",
-  "sampleData": true,
   "population": {
     "estimate": {
       "low": 65536,
@@ -35,8 +206,39 @@
     },
     "tierApplied": "D"
   },
-  "variants": [],
-  "viewNotes": [],
-  "calls": [],
-  "images": []
+  "status": "resident",
+  "monthsPresent": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+  ],
+  "sources": [
+    {
+      "title": "Wattled Starling",
+      "url": "https://newmansbirds.com/birds/wattled-starling/",
+      "publisher": "Newman's Birds",
+      "year": 2026
+    },
+    {
+      "title": "Avibase bird checklist — Kruger National Park",
+      "url": "https://avibase.bsc-eoc.org/checklist.jsp?region=ZA000003",
+      "publisher": "Avibase",
+      "year": null
+    },
+    {
+      "title": "Kemp A.C., Herholdt J.J., Whyte I. & Harrison J. (2001). Birds of the two largest national parks in South Africa: a method to generate estimates of population size for all species and assess their conservation ecology. S. Afr. J. Sci. 97: 393–403.",
+      "url": "https://journals.co.za/doi/pdf/10.10520/EJC97367",
+      "publisher": "South African Journal of Science",
+      "year": 2001
+    }
+  ]
 }

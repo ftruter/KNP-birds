@@ -6,8 +6,8 @@
     "en": "Starlings",
     "af": "Spreeus"
   },
-  "summary": "Field notes for this family are still to be written.",
-  "sampleData": true,
+  "summary": "Nine starlings, including the introduced Common Myna. Most are glossy woodland birds. Violet-backed Starling is a summer resident, and Black-bellied Starling has no readable size.",
+  "sampleData": false,
   "species": [
     {
       "slug": "acridotheres-tristis",

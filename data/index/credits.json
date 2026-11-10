@@ -204,6 +204,49 @@
       ]
     },
     {
+      "slug": "acridotheres-tristis",
+      "scientificName": "Acridotheres tristis",
+      "commonName": "Common Myna",
+      "images": [
+        {
+          "key": "acridotheres-tristis/side.jpg",
+          "author": "Justin Ponder",
+          "licence": "CC BY 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by/4.0/",
+          "sourceUrl": "https://www.inaturalist.org/observations/104766532",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ],
+      "recordings": [
+        {
+          "key": "xeno-canto/XC533469",
+          "author": "Tony Archer",
+          "licence": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "sourceUrl": "https://xeno-canto.org/533469",
+          "aiGenerated": false,
+          "hosted": false,
+          "quality": "A",
+          "callType": "call"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Common Myna",
+          "url": "https://newmansbirds.com/birds/common-myna/",
+          "publisher": "Newman's Birds",
+          "year": 2026
+        },
+        {
+          "title": "Avibase bird checklist — Kruger National Park",
+          "url": "https://avibase.bsc-eoc.org/checklist.jsp?region=ZA000003",
+          "publisher": "Avibase",
+          "year": null
+        }
+      ]
+    },
+    {
       "slug": "acrocephalus-arundinaceus",
       "scientificName": "Acrocephalus arundinaceus",
       "commonName": "Great Reed Warbler",
@@ -7219,14 +7262,48 @@
       "slug": "cinnyricinclus-leucogaster",
       "scientificName": "Cinnyricinclus leucogaster",
       "commonName": "Violet-backed Starling",
-      "images": [],
-      "recordings": [],
+      "images": [
+        {
+          "key": "cinnyricinclus-leucogaster/side.jpg",
+          "author": "tjeerd",
+          "licence": "CC BY-NC 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+          "sourceUrl": "https://www.inaturalist.org/observations/19860890",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ],
+      "recordings": [
+        {
+          "key": "xeno-canto/XC476620",
+          "author": "Bram Piot",
+          "licence": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "sourceUrl": "https://xeno-canto.org/476620",
+          "aiGenerated": false,
+          "hosted": false,
+          "quality": "A",
+          "callType": "call"
+        }
+      ],
       "sources": [
         {
           "title": "Kemp A.C., Herholdt J.J., Whyte I. & Harrison J. (2001). Birds of the two largest national parks in South Africa: a method to generate estimates of population size for all species and assess their conservation ecology. S. Afr. J. Sci. 97: 393–403.",
           "url": "https://journals.co.za/doi/pdf/10.10520/EJC97367",
           "publisher": "South African Journal of Science",
           "year": 2001
+        },
+        {
+          "title": "Violet-backed Starling",
+          "url": "https://newmansbirds.com/birds/violet-backed-starling/",
+          "publisher": "Newman's Birds",
+          "year": 2026
+        },
+        {
+          "title": "Avibase bird checklist — Kruger National Park",
+          "url": "https://avibase.bsc-eoc.org/checklist.jsp?region=ZA000003",
+          "publisher": "Avibase",
+          "year": null
         }
       ]
     },
@@ -9646,14 +9723,48 @@
       "slug": "creatophora-cinerea",
       "scientificName": "Creatophora cinerea",
       "commonName": "Wattled Starling",
-      "images": [],
-      "recordings": [],
+      "images": [
+        {
+          "key": "creatophora-cinerea/side.jpg",
+          "author": "Andre Harmse",
+          "licence": "CC BY-NC 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+          "sourceUrl": "https://www.inaturalist.org/observations/106451706",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ],
+      "recordings": [
+        {
+          "key": "xeno-canto/XC489190",
+          "author": "Derek Solomon",
+          "licence": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "sourceUrl": "https://xeno-canto.org/489190",
+          "aiGenerated": false,
+          "hosted": false,
+          "quality": "A",
+          "callType": "call"
+        }
+      ],
       "sources": [
         {
           "title": "Kemp A.C., Herholdt J.J., Whyte I. & Harrison J. (2001). Birds of the two largest national parks in South Africa: a method to generate estimates of population size for all species and assess their conservation ecology. S. Afr. J. Sci. 97: 393–403.",
           "url": "https://journals.co.za/doi/pdf/10.10520/EJC97367",
           "publisher": "South African Journal of Science",
           "year": 2001
+        },
+        {
+          "title": "Wattled Starling",
+          "url": "https://newmansbirds.com/birds/wattled-starling/",
+          "publisher": "Newman's Birds",
+          "year": 2026
+        },
+        {
+          "title": "Avibase bird checklist — Kruger National Park",
+          "url": "https://avibase.bsc-eoc.org/checklist.jsp?region=ZA000003",
+          "publisher": "Avibase",
+          "year": null
         }
       ]
     },
@@ -15057,14 +15168,48 @@
       "slug": "lamprotornis-australis",
       "scientificName": "Lamprotornis australis",
       "commonName": "Burchell’s Starling",
-      "images": [],
-      "recordings": [],
+      "images": [
+        {
+          "key": "lamprotornis-australis/side.jpg",
+          "author": "Damien Wallace",
+          "licence": "CC0 1.0",
+          "licenceUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+          "sourceUrl": "https://www.inaturalist.org/observations/302401684",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ],
+      "recordings": [
+        {
+          "key": "xeno-canto/XC299096",
+          "author": "Lynette Rudman",
+          "licence": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "sourceUrl": "https://xeno-canto.org/299096",
+          "aiGenerated": false,
+          "hosted": false,
+          "quality": "A",
+          "callType": "call"
+        }
+      ],
       "sources": [
         {
           "title": "Kemp A.C., Herholdt J.J., Whyte I. & Harrison J. (2001). Birds of the two largest national parks in South Africa: a method to generate estimates of population size for all species and assess their conservation ecology. S. Afr. J. Sci. 97: 393–403.",
           "url": "https://journals.co.za/doi/pdf/10.10520/EJC97367",
           "publisher": "South African Journal of Science",
           "year": 2001
+        },
+        {
+          "title": "Burchell's Starling",
+          "url": "https://newmansbirds.com/birds/burchells-starling/",
+          "publisher": "Newman's Birds",
+          "year": 2026
+        },
+        {
+          "title": "Avibase bird checklist — Kruger National Park",
+          "url": "https://avibase.bsc-eoc.org/checklist.jsp?region=ZA000003",
+          "publisher": "Avibase",
+          "year": null
         }
       ]
     },
@@ -15072,14 +15217,48 @@
       "slug": "lamprotornis-chalybaeus",
       "scientificName": "Lamprotornis chalybaeus",
       "commonName": "Greater Blue-eared Starling",
-      "images": [],
-      "recordings": [],
+      "images": [
+        {
+          "key": "lamprotornis-chalybaeus/side.jpg",
+          "author": "Alan Horstmann",
+          "licence": "CC BY-NC 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+          "sourceUrl": "https://www.inaturalist.org/observations/34975968",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ],
+      "recordings": [
+        {
+          "key": "xeno-canto/XC584694",
+          "author": "Dries Van de Loock",
+          "licence": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "sourceUrl": "https://xeno-canto.org/584694",
+          "aiGenerated": false,
+          "hosted": false,
+          "quality": "A",
+          "callType": "call"
+        }
+      ],
       "sources": [
         {
           "title": "Kemp A.C., Herholdt J.J., Whyte I. & Harrison J. (2001). Birds of the two largest national parks in South Africa: a method to generate estimates of population size for all species and assess their conservation ecology. S. Afr. J. Sci. 97: 393–403.",
           "url": "https://journals.co.za/doi/pdf/10.10520/EJC97367",
           "publisher": "South African Journal of Science",
           "year": 2001
+        },
+        {
+          "title": "Greater Blue-eared Starling",
+          "url": "https://newmansbirds.com/birds/greater-blue-eared-starling/",
+          "publisher": "Newman's Birds",
+          "year": 2026
+        },
+        {
+          "title": "Avibase bird checklist — Kruger National Park",
+          "url": "https://avibase.bsc-eoc.org/checklist.jsp?region=ZA000003",
+          "publisher": "Avibase",
+          "year": null
         }
       ]
     },
@@ -15087,14 +15266,48 @@
       "slug": "lamprotornis-mevesii",
       "scientificName": "Lamprotornis mevesii",
       "commonName": "Meves’s Starling",
-      "images": [],
-      "recordings": [],
+      "images": [
+        {
+          "key": "lamprotornis-mevesii/side.jpg",
+          "author": "Heather and Andrew Hodgson",
+          "licence": "CC BY-NC 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+          "sourceUrl": "https://www.inaturalist.org/observations/217117368",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ],
+      "recordings": [
+        {
+          "key": "xeno-canto/XC213639",
+          "author": "Tom Wulf",
+          "licence": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "sourceUrl": "https://xeno-canto.org/213639",
+          "aiGenerated": false,
+          "hosted": false,
+          "quality": "A",
+          "callType": "call"
+        }
+      ],
       "sources": [
         {
           "title": "Kemp A.C., Herholdt J.J., Whyte I. & Harrison J. (2001). Birds of the two largest national parks in South Africa: a method to generate estimates of population size for all species and assess their conservation ecology. S. Afr. J. Sci. 97: 393–403.",
           "url": "https://journals.co.za/doi/pdf/10.10520/EJC97367",
           "publisher": "South African Journal of Science",
           "year": 2001
+        },
+        {
+          "title": "Meves's Starling",
+          "url": "https://newmansbirds.com/birds/mevess-starling/",
+          "publisher": "Newman's Birds",
+          "year": 2026
+        },
+        {
+          "title": "Avibase bird checklist — Kruger National Park",
+          "url": "https://avibase.bsc-eoc.org/checklist.jsp?region=ZA000003",
+          "publisher": "Avibase",
+          "year": null
         }
       ]
     },
@@ -15102,14 +15315,48 @@
       "slug": "lamprotornis-nitens",
       "scientificName": "Lamprotornis nitens",
       "commonName": "Cape (Glossy) Starling",
-      "images": [],
-      "recordings": [],
+      "images": [
+        {
+          "key": "lamprotornis-nitens/side.jpg",
+          "author": "cwlonie6626",
+          "licence": "CC BY-NC 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+          "sourceUrl": "https://www.inaturalist.org/observations/319879785",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ],
+      "recordings": [
+        {
+          "key": "xeno-canto/XC1037326",
+          "author": "Filippo Ceccolini",
+          "licence": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "sourceUrl": "https://xeno-canto.org/1037326",
+          "aiGenerated": false,
+          "hosted": false,
+          "quality": "A",
+          "callType": "song"
+        }
+      ],
       "sources": [
         {
           "title": "Kemp A.C., Herholdt J.J., Whyte I. & Harrison J. (2001). Birds of the two largest national parks in South Africa: a method to generate estimates of population size for all species and assess their conservation ecology. S. Afr. J. Sci. 97: 393–403.",
           "url": "https://journals.co.za/doi/pdf/10.10520/EJC97367",
           "publisher": "South African Journal of Science",
           "year": 2001
+        },
+        {
+          "title": "Cape Starling",
+          "url": "https://newmansbirds.com/birds/cape-starling/",
+          "publisher": "Newman's Birds",
+          "year": 2026
+        },
+        {
+          "title": "Avibase bird checklist — Kruger National Park",
+          "url": "https://avibase.bsc-eoc.org/checklist.jsp?region=ZA000003",
+          "publisher": "Avibase",
+          "year": null
         }
       ]
     },
@@ -17447,14 +17694,48 @@
       "slug": "notopholia-corusca",
       "scientificName": "Notopholia corusca",
       "commonName": "Black-bellied Starling",
-      "images": [],
-      "recordings": [],
+      "images": [
+        {
+          "key": "notopholia-corusca/side.jpg",
+          "author": "Marie Delport",
+          "licence": "CC BY-NC 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+          "sourceUrl": "https://www.inaturalist.org/observations/80218915",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ],
+      "recordings": [
+        {
+          "key": "xeno-canto/XC285744",
+          "author": "Lynette Rudman",
+          "licence": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "sourceUrl": "https://xeno-canto.org/285744",
+          "aiGenerated": false,
+          "hosted": false,
+          "quality": "A",
+          "callType": "call"
+        }
+      ],
       "sources": [
         {
           "title": "Kemp A.C., Herholdt J.J., Whyte I. & Harrison J. (2001). Birds of the two largest national parks in South Africa: a method to generate estimates of population size for all species and assess their conservation ecology. S. Afr. J. Sci. 97: 393–403.",
           "url": "https://journals.co.za/doi/pdf/10.10520/EJC97367",
           "publisher": "South African Journal of Science",
           "year": 2001
+        },
+        {
+          "title": "Black-bellied Starling",
+          "url": "https://newmansbirds.com/birds/black-bellied-starling/",
+          "publisher": "Newman's Birds",
+          "year": 2026
+        },
+        {
+          "title": "Avibase bird checklist — Kruger National Park",
+          "url": "https://avibase.bsc-eoc.org/checklist.jsp?region=ZA000003",
+          "publisher": "Avibase",
+          "year": null
         }
       ]
     },
@@ -17627,14 +17908,48 @@
       "slug": "onychognathus-morio",
       "scientificName": "Onychognathus morio",
       "commonName": "Red-winged Starling",
-      "images": [],
-      "recordings": [],
+      "images": [
+        {
+          "key": "onychognathus-morio/side.jpg",
+          "author": "tjeerd",
+          "licence": "CC BY-NC 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+          "sourceUrl": "https://www.inaturalist.org/observations/19861035",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ],
+      "recordings": [
+        {
+          "key": "xeno-canto/XC252685",
+          "author": "Lynette Rudman",
+          "licence": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "sourceUrl": "https://xeno-canto.org/252685",
+          "aiGenerated": false,
+          "hosted": false,
+          "quality": "A",
+          "callType": "call"
+        }
+      ],
       "sources": [
         {
           "title": "Kemp A.C., Herholdt J.J., Whyte I. & Harrison J. (2001). Birds of the two largest national parks in South Africa: a method to generate estimates of population size for all species and assess their conservation ecology. S. Afr. J. Sci. 97: 393–403.",
           "url": "https://journals.co.za/doi/pdf/10.10520/EJC97367",
           "publisher": "South African Journal of Science",
           "year": 2001
+        },
+        {
+          "title": "Red-winged Starling",
+          "url": "https://newmansbirds.com/birds/red-winged-starling/",
+          "publisher": "Newman's Birds",
+          "year": 2026
+        },
+        {
+          "title": "Avibase bird checklist — Kruger National Park",
+          "url": "https://avibase.bsc-eoc.org/checklist.jsp?region=ZA000003",
+          "publisher": "Avibase",
+          "year": null
         }
       ]
     },

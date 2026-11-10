@@ -1,14 +1,223 @@
 {
+  "size": {
+    "lengthCm": {
+      "min": 18,
+      "max": 19
+    },
+    "note": "Newman's Birds gives 18–19 cm."
+  },
+  "habitat": "Arboreal in broad-leaved woodland. Pairs when breeding, otherwise nomadic flocks of mostly one sex. Resident in the extreme northwest.",
+  "summary": "A fairly common summer resident. The male's iridescent upperparts appear purple or coppery, and the underparts are white. The female has a yellow gape and yellow eyes, and lacks black ear-covert markings. The immature is like the female with darker eyes. The call is a short series of pleasant slurred notes. Newman does not name the months. The Kemp name Plumcoloured Starling and the code VB were left unchanged.",
+  "variants": [
+    {
+      "age": "adult",
+      "sex": "male",
+      "season": "any",
+      "marks": {
+        "bill": {
+          "colour": null,
+          "shape": null
+        },
+        "eye": {
+          "iris": null,
+          "ring": null
+        },
+        "legs": {
+          "colour": null
+        },
+        "head": {
+          "crown": null,
+          "face": null,
+          "throat": null
+        },
+        "upperparts": {
+          "back": null,
+          "rump": null,
+          "pattern": "Iridescent upperparts appear purple or coppery."
+        },
+        "underparts": {
+          "breast": "white",
+          "belly": "white"
+        },
+        "wings": {
+          "above": null,
+          "below": null
+        },
+        "tail": {
+          "colour": null,
+          "shape": null
+        }
+      }
+    },
+    {
+      "age": "adult",
+      "sex": "female",
+      "season": "any",
+      "marks": {
+        "bill": {
+          "colour": null,
+          "shape": "Shorter than a thrush, with a yellow gape."
+        },
+        "eye": {
+          "iris": "yellow",
+          "ring": null
+        },
+        "legs": {
+          "colour": null
+        },
+        "head": {
+          "crown": null,
+          "face": null,
+          "throat": null,
+          "pattern": "No black markings on the ear coverts. The body colours are not given."
+        },
+        "upperparts": {
+          "back": null,
+          "rump": null
+        },
+        "underparts": {
+          "breast": null,
+          "belly": null
+        },
+        "wings": {
+          "above": null,
+          "below": null
+        },
+        "tail": {
+          "colour": null,
+          "shape": null
+        }
+      }
+    },
+    {
+      "age": "immature",
+      "sex": "any",
+      "season": "any",
+      "marks": {
+        "bill": {
+          "colour": null,
+          "shape": null
+        },
+        "eye": {
+          "iris": null,
+          "ring": null
+        },
+        "legs": {
+          "colour": null
+        },
+        "head": {
+          "crown": null,
+          "face": null,
+          "throat": null,
+          "pattern": "Like the female, with darker eyes."
+        },
+        "upperparts": {
+          "back": null,
+          "rump": null
+        },
+        "underparts": {
+          "breast": null,
+          "belly": null
+        },
+        "wings": {
+          "above": null,
+          "below": null
+        },
+        "tail": {
+          "colour": null,
+          "shape": null
+        }
+      }
+    }
+  ],
+  "viewNotes": [
+    {
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "male",
+      "season": "any",
+      "note": "Iridescent upperparts, purple or coppery, and white below."
+    },
+    {
+      "view": "perched-front",
+      "age": "adult",
+      "sex": "male",
+      "season": "any",
+      "note": "White underparts."
+    },
+    {
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "female",
+      "season": "any",
+      "note": "Yellow eyes and a yellow gape. The body colours are not given."
+    },
+    {
+      "view": "flight-above",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Flight plumage is not described."
+    },
+    {
+      "view": "flight-below",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "The underside in flight is not described."
+    }
+  ],
+  "calls": [
+    {
+      "sex": "any",
+      "type": "call",
+      "description": "A short series of pleasant, slurred notes. No grade A recording from South Africa was found. The selected file is a grade A call from Senegal. The filename is XC476620-VioletbackedStarling_Kafountine_190519_0231_edited.mp3.",
+      "recordings": [
+        {
+          "key": "xeno-canto/XC476620",
+          "source": "https://xeno-canto.org/476620",
+          "fileUrl": "https://xeno-canto.org/sounds/uploaded/RGSEIIJGHA/XC476620-VioletbackedStarling_Kafountine_190519_0231_edited.mp3",
+          "author": "Bram Piot",
+          "license": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ]
+    }
+  ],
+  "images": [
+    {
+      "key": "cinnyricinclus-leucogaster/side.jpg",
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "male",
+      "season": "any",
+      "source": "https://www.inaturalist.org/observations/19860890",
+      "fileUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/30623168/large.jpg",
+      "author": "tjeerd",
+      "license": "CC BY-NC 4.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+      "aiGenerated": false,
+      "hosted": false,
+      "alt": "Male Violet-backed Starling in Kruger, Mopani, with iridescent upperparts and white underparts.",
+      "caption": "Male Violet-backed Starling in Kruger, Mopani, with iridescent upperparts and white underparts."
+    }
+  ],
+  "research": {
+    "confidence": "medium",
+    "needsReview": true,
+    "note": "Newman calls it a fairly common summer resident and also says it is resident in the extreme northwest. The months are not named, so status is summer-migrant and monthsPresent is unset. Purple or coppery is not stored as one upperpart colour. The female body colours are not given. The grade A call is from Senegal. The iNaturalist account has no display name, so the login tjeerd is credited. The Kemp name Plumcoloured Starling and the code VB were left unchanged."
+  },
   "kind": "species",
   "slug": "cinnyricinclus-leucogaster",
+  "family": "sturnidae",
+  "sampleData": false,
   "scientificName": "Cinnyricinclus leucogaster",
   "commonNames": {
     "en": "Violet-backed Starling",
     "af": "Witborsspreeu"
   },
-  "family": "sturnidae",
-  "summary": "The details for this species have not been published yet.",
-  "sampleData": true,
   "population": {
     "estimate": {
       "low": 16384,
@@ -35,8 +244,25 @@
     },
     "tierApplied": "D"
   },
-  "variants": [],
-  "viewNotes": [],
-  "calls": [],
-  "images": []
+  "status": "summer-migrant",
+  "sources": [
+    {
+      "title": "Violet-backed Starling",
+      "url": "https://newmansbirds.com/birds/violet-backed-starling/",
+      "publisher": "Newman's Birds",
+      "year": 2026
+    },
+    {
+      "title": "Avibase bird checklist — Kruger National Park",
+      "url": "https://avibase.bsc-eoc.org/checklist.jsp?region=ZA000003",
+      "publisher": "Avibase",
+      "year": null
+    },
+    {
+      "title": "Kemp A.C., Herholdt J.J., Whyte I. & Harrison J. (2001). Birds of the two largest national parks in South Africa: a method to generate estimates of population size for all species and assess their conservation ecology. S. Afr. J. Sci. 97: 393–403.",
+      "url": "https://journals.co.za/doi/pdf/10.10520/EJC97367",
+      "publisher": "South African Journal of Science",
+      "year": 2001
+    }
+  ]
 }
