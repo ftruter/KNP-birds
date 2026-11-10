@@ -1,14 +1,178 @@
 {
-  "kind": "species",
-  "slug": "gallinago-nigripennis",
-  "scientificName": "Gallinago nigripennis",
-  "commonNames": {
-    "en": "African Snipe",
-    "af": "Afrikaanse Snip"
+  "size": {
+    "lengthCm": {
+      "min": 32,
+      "max": 32
+    },
+    "note": "Newman's Birds gives 32 cm."
   },
-  "family": "scolopacidae",
-  "summary": "The details for this species have not been published yet.",
-  "sampleData": true,
+  "habitat": "Singly or in pairs in marshy localities. When flushed it zigzags low before resettling. In display the male zooms down with the tail fanned.",
+  "summary": "A common resident. The bill is very long, straight and black. The head, breast and upperparts are buff, heavily streaked and spotted dark brown, the lower breast to the belly is white, and the flanks are barred dark brown. A flushed bird gives a sucking chuck. The Kemp name Ethiopian Snipe and the code NB were left unchanged.",
+  "sources": [
+    {
+      "title": "African Snipe",
+      "url": "https://newmansbirds.com/birds/african-snipe/",
+      "publisher": "Newman's Birds",
+      "year": 2026
+    },
+    {
+      "title": "Avibase bird checklist — Kruger National Park",
+      "url": "https://avibase.bsc-eoc.org/checklist.jsp?region=ZA000003",
+      "publisher": "Avibase",
+      "year": null
+    },
+    {
+      "title": "Kemp A.C., Herholdt J.J., Whyte I. & Harrison J. (2001). Birds of the two largest national parks in South Africa: a method to generate estimates of population size for all species and assess their conservation ecology. S. Afr. J. Sci. 97: 393–403.",
+      "url": "https://journals.co.za/doi/pdf/10.10520/EJC97367",
+      "publisher": "South African Journal of Science",
+      "year": 2001
+    }
+  ],
+  "variants": [
+    {
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "marks": {
+        "bill": {
+          "colour": "black",
+          "shape": "Very long and straight."
+        },
+        "eye": {
+          "iris": null,
+          "ring": null
+        },
+        "legs": {
+          "colour": null
+        },
+        "head": {
+          "crown": "buff",
+          "face": null,
+          "throat": null,
+          "pattern": "Head buff, heavily streaked and spotted dark brown."
+        },
+        "upperparts": {
+          "back": "buff",
+          "rump": null,
+          "pattern": "Upperparts buff, heavily streaked and spotted dark brown."
+        },
+        "underparts": {
+          "breast": "buff",
+          "belly": "white",
+          "pattern": "Lower breast to belly white. Flanks barred dark brown."
+        },
+        "wings": {
+          "above": null,
+          "below": null
+        },
+        "tail": {
+          "colour": null,
+          "shape": null
+        }
+      }
+    }
+  ],
+  "viewNotes": [
+    {
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Very long black bill, buff upperparts streaked dark brown, and white from the lower breast to the belly."
+    },
+    {
+      "view": "perched-front",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Buff breast and white belly. The flanks are barred dark brown."
+    },
+    {
+      "view": "perched-back",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Buff upperparts heavily streaked and spotted dark brown."
+    },
+    {
+      "view": "flight-above",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "When flushed it zigzags at low level. The upperwing colour is not given separately."
+    },
+    {
+      "view": "flight-below",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "The underside in flight is not described."
+    },
+    {
+      "view": "display-back",
+      "age": "adult",
+      "sex": "male",
+      "season": "any",
+      "note": "The male fans the tail in a steep dive. The tail colour is not given."
+    }
+  ],
+  "calls": [
+    {
+      "sex": "any",
+      "type": "call",
+      "description": "When flushed it takes off with a sucking 'chuck'. In display the male's fanned tail makes a soft whinnying drum. The grade A call is from Klerksdorp. The filename mentions a moorhen, so another bird may be present. No Kruger recording was found. The filename is XC495341-2 Female snipe moorhen.mp3.",
+      "recordings": [
+        {
+          "key": "xeno-canto/XC495341",
+          "source": "https://xeno-canto.org/495341",
+          "fileUrl": "https://xeno-canto.org/sounds/uploaded/HMBDEWEZVS/XC495341-2%20Female%20snipe%20moorhen.mp3",
+          "author": "Tony Archer",
+          "license": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ]
+    }
+  ],
+  "images": [
+    {
+      "key": "gallinago-nigripennis/side.jpg",
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "source": "https://www.inaturalist.org/observations/312484151",
+      "fileUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/564190378/large.jpg",
+      "author": "Roy F Morris II",
+      "license": "CC BY-NC 4.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+      "aiGenerated": false,
+      "hosted": false,
+      "alt": "African Snipe in Kruger, a long-billed bird in a marsh",
+      "caption": "African Snipe in Kruger, Ehlanzeni, a long-billed bird in a marsh. The photograph is distant."
+    }
+  ],
+  "research": {
+    "confidence": "medium",
+    "needsReview": true,
+    "note": "Newman calls it a common resident, and Avibase does not mark it rare, so all twelve months are listed. It is compared with Great Snipe, which is not in this list. The selected call's filename mentions a moorhen. No Kruger recording was found. The Kemp name Ethiopian Snipe and the code NB were left unchanged."
+  },
+  "status": "resident",
+  "monthsPresent": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+  ],
   "population": {
     "estimate": {
       "low": 16,
@@ -35,8 +199,13 @@
     },
     "tierApplied": "D"
   },
-  "variants": [],
-  "viewNotes": [],
-  "calls": [],
-  "images": []
+  "commonNames": {
+    "en": "African Snipe",
+    "af": "Afrikaanse Snip"
+  },
+  "scientificName": "Gallinago nigripennis",
+  "kind": "species",
+  "slug": "gallinago-nigripennis",
+  "family": "scolopacidae",
+  "sampleData": false
 }

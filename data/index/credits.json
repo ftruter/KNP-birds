@@ -557,14 +557,48 @@
       "slug": "actitis-hypoleucos",
       "scientificName": "Actitis hypoleucos",
       "commonName": "Common Sandpiper",
-      "images": [],
-      "recordings": [],
+      "images": [
+        {
+          "key": "actitis-hypoleucos/side.jpg",
+          "author": "Mark Brown",
+          "licence": "CC BY-NC 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+          "sourceUrl": "https://www.inaturalist.org/observations/333031924",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ],
+      "recordings": [
+        {
+          "key": "xeno-canto/XC187104",
+          "author": "Jarek Matusiak",
+          "licence": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "sourceUrl": "https://xeno-canto.org/187104",
+          "aiGenerated": false,
+          "hosted": false,
+          "quality": "A",
+          "callType": "call"
+        }
+      ],
       "sources": [
         {
           "title": "Kemp A.C., Herholdt J.J., Whyte I. & Harrison J. (2001). Birds of the two largest national parks in South Africa: a method to generate estimates of population size for all species and assess their conservation ecology. S. Afr. J. Sci. 97: 393–403.",
           "url": "https://journals.co.za/doi/pdf/10.10520/EJC97367",
           "publisher": "South African Journal of Science",
           "year": 2001
+        },
+        {
+          "title": "Common Sandpiper",
+          "url": "https://newmansbirds.com/birds/common-sandpiper/",
+          "publisher": "Newman's Birds",
+          "year": 2026
+        },
+        {
+          "title": "Avibase bird checklist — Kruger National Park",
+          "url": "https://avibase.bsc-eoc.org/checklist.jsp?region=ZA000003",
+          "publisher": "Avibase",
+          "year": null
         }
       ]
     },
@@ -4967,14 +5001,91 @@
       "slug": "calidris-ferruginea",
       "scientificName": "Calidris ferruginea",
       "commonName": "Curlew Sandpiper",
-      "images": [],
-      "recordings": [],
+      "images": [
+        {
+          "key": "calidris-ferruginea/side.jpg",
+          "author": "Liam Huber",
+          "licence": "CC BY-NC 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+          "sourceUrl": "https://www.inaturalist.org/observations/327485573",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ],
+      "recordings": [
+        {
+          "key": "xeno-canto/XC184321",
+          "author": "Albert Lastukhin",
+          "licence": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "sourceUrl": "https://xeno-canto.org/184321",
+          "aiGenerated": false,
+          "hosted": false,
+          "quality": "A",
+          "callType": "call"
+        }
+      ],
       "sources": [
         {
           "title": "Kemp A.C., Herholdt J.J., Whyte I. & Harrison J. (2001). Birds of the two largest national parks in South Africa: a method to generate estimates of population size for all species and assess their conservation ecology. S. Afr. J. Sci. 97: 393–403.",
           "url": "https://journals.co.za/doi/pdf/10.10520/EJC97367",
           "publisher": "South African Journal of Science",
           "year": 2001
+        },
+        {
+          "title": "Curlew sandpiper",
+          "url": "https://en.wikipedia.org/wiki/Curlew_sandpiper",
+          "publisher": "Wikipedia",
+          "year": null
+        },
+        {
+          "title": "Avibase bird checklist — Kruger National Park",
+          "url": "https://avibase.bsc-eoc.org/checklist.jsp?region=ZA000003",
+          "publisher": "Avibase",
+          "year": null
+        }
+      ]
+    },
+    {
+      "slug": "calidris-melanotos",
+      "scientificName": "Calidris melanotos",
+      "commonName": "Pectoral Sandpiper",
+      "images": [
+        {
+          "key": "calidris-melanotos/side.jpg",
+          "author": "Dario Taraborelli",
+          "licence": "CC0 1.0",
+          "licenceUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+          "sourceUrl": "https://www.inaturalist.org/observations/141039526",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ],
+      "recordings": [
+        {
+          "key": "xeno-canto/XC109917",
+          "author": "Andrew Spencer",
+          "licence": "CC BY-NC-SA 3.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/3.0/",
+          "sourceUrl": "https://xeno-canto.org/109917",
+          "aiGenerated": false,
+          "hosted": false,
+          "quality": "A",
+          "callType": "call"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Pectoral sandpiper",
+          "url": "https://en.wikipedia.org/wiki/Pectoral_sandpiper",
+          "publisher": "Wikipedia",
+          "year": null
+        },
+        {
+          "title": "Avibase bird checklist — Kruger National Park",
+          "url": "https://avibase.bsc-eoc.org/checklist.jsp?region=ZA000003",
+          "publisher": "Avibase",
+          "year": null
         }
       ]
     },
@@ -4982,14 +5093,48 @@
       "slug": "calidris-minuta",
       "scientificName": "Calidris minuta",
       "commonName": "Little Stint",
-      "images": [],
-      "recordings": [],
+      "images": [
+        {
+          "key": "calidris-minuta/side.jpg",
+          "author": "stproc",
+          "licence": "CC BY-NC 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+          "sourceUrl": "https://www.inaturalist.org/observations/110075937",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ],
+      "recordings": [
+        {
+          "key": "xeno-canto/XC185089",
+          "author": "Albert Lastukhin",
+          "licence": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "sourceUrl": "https://xeno-canto.org/185089",
+          "aiGenerated": false,
+          "hosted": false,
+          "quality": "A",
+          "callType": "call"
+        }
+      ],
       "sources": [
         {
           "title": "Kemp A.C., Herholdt J.J., Whyte I. & Harrison J. (2001). Birds of the two largest national parks in South Africa: a method to generate estimates of population size for all species and assess their conservation ecology. S. Afr. J. Sci. 97: 393–403.",
           "url": "https://journals.co.za/doi/pdf/10.10520/EJC97367",
           "publisher": "South African Journal of Science",
           "year": 2001
+        },
+        {
+          "title": "Little Stint",
+          "url": "https://newmansbirds.com/birds/little-stint/",
+          "publisher": "Newman's Birds",
+          "year": 2026
+        },
+        {
+          "title": "Avibase bird checklist — Kruger National Park",
+          "url": "https://avibase.bsc-eoc.org/checklist.jsp?region=ZA000003",
+          "publisher": "Avibase",
+          "year": null
         }
       ]
     },
@@ -4997,14 +5142,48 @@
       "slug": "calidris-pugnax",
       "scientificName": "Calidris pugnax",
       "commonName": "Ruff",
-      "images": [],
-      "recordings": [],
+      "images": [
+        {
+          "key": "calidris-pugnax/side.jpg",
+          "author": "jandutoit",
+          "licence": "CC BY-NC 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+          "sourceUrl": "https://www.inaturalist.org/observations/276469273",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ],
+      "recordings": [
+        {
+          "key": "xeno-canto/XC233522",
+          "author": "Jarek Matusiak",
+          "licence": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "sourceUrl": "https://xeno-canto.org/233522",
+          "aiGenerated": false,
+          "hosted": false,
+          "quality": "A",
+          "callType": "call"
+        }
+      ],
       "sources": [
         {
           "title": "Kemp A.C., Herholdt J.J., Whyte I. & Harrison J. (2001). Birds of the two largest national parks in South Africa: a method to generate estimates of population size for all species and assess their conservation ecology. S. Afr. J. Sci. 97: 393–403.",
           "url": "https://journals.co.za/doi/pdf/10.10520/EJC97367",
           "publisher": "South African Journal of Science",
           "year": 2001
+        },
+        {
+          "title": "Ruff",
+          "url": "https://newmansbirds.com/birds/ruff/",
+          "publisher": "Newman's Birds",
+          "year": 2026
+        },
+        {
+          "title": "Avibase bird checklist — Kruger National Park",
+          "url": "https://avibase.bsc-eoc.org/checklist.jsp?region=ZA000003",
+          "publisher": "Avibase",
+          "year": null
         }
       ]
     },
@@ -12046,14 +12225,48 @@
       "slug": "gallinago-nigripennis",
       "scientificName": "Gallinago nigripennis",
       "commonName": "African Snipe",
-      "images": [],
-      "recordings": [],
+      "images": [
+        {
+          "key": "gallinago-nigripennis/side.jpg",
+          "author": "Roy F Morris II",
+          "licence": "CC BY-NC 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+          "sourceUrl": "https://www.inaturalist.org/observations/312484151",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ],
+      "recordings": [
+        {
+          "key": "xeno-canto/XC495341",
+          "author": "Tony Archer",
+          "licence": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "sourceUrl": "https://xeno-canto.org/495341",
+          "aiGenerated": false,
+          "hosted": false,
+          "quality": "A",
+          "callType": "call"
+        }
+      ],
       "sources": [
         {
           "title": "Kemp A.C., Herholdt J.J., Whyte I. & Harrison J. (2001). Birds of the two largest national parks in South Africa: a method to generate estimates of population size for all species and assess their conservation ecology. S. Afr. J. Sci. 97: 393–403.",
           "url": "https://journals.co.za/doi/pdf/10.10520/EJC97367",
           "publisher": "South African Journal of Science",
           "year": 2001
+        },
+        {
+          "title": "African Snipe",
+          "url": "https://newmansbirds.com/birds/african-snipe/",
+          "publisher": "Newman's Birds",
+          "year": 2026
+        },
+        {
+          "title": "Avibase bird checklist — Kruger National Park",
+          "url": "https://avibase.bsc-eoc.org/checklist.jsp?region=ZA000003",
+          "publisher": "Avibase",
+          "year": null
         }
       ]
     },
@@ -22687,14 +22900,48 @@
       "slug": "tringa-glareola",
       "scientificName": "Tringa glareola",
       "commonName": "Wood Sandpiper",
-      "images": [],
-      "recordings": [],
+      "images": [
+        {
+          "key": "tringa-glareola/side.jpg",
+          "author": "candacemain",
+          "licence": "CC BY-NC 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+          "sourceUrl": "https://www.inaturalist.org/observations/330131619",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ],
+      "recordings": [
+        {
+          "key": "xeno-canto/XC745588",
+          "author": "Dries Van de Loock",
+          "licence": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "sourceUrl": "https://xeno-canto.org/745588",
+          "aiGenerated": false,
+          "hosted": false,
+          "quality": "A",
+          "callType": "call"
+        }
+      ],
       "sources": [
         {
           "title": "Kemp A.C., Herholdt J.J., Whyte I. & Harrison J. (2001). Birds of the two largest national parks in South Africa: a method to generate estimates of population size for all species and assess their conservation ecology. S. Afr. J. Sci. 97: 393–403.",
           "url": "https://journals.co.za/doi/pdf/10.10520/EJC97367",
           "publisher": "South African Journal of Science",
           "year": 2001
+        },
+        {
+          "title": "Wood Sandpiper",
+          "url": "https://newmansbirds.com/birds/wood-sandpiper/",
+          "publisher": "Newman's Birds",
+          "year": 2026
+        },
+        {
+          "title": "Avibase bird checklist — Kruger National Park",
+          "url": "https://avibase.bsc-eoc.org/checklist.jsp?region=ZA000003",
+          "publisher": "Avibase",
+          "year": null
         }
       ]
     },
@@ -22702,14 +22949,48 @@
       "slug": "tringa-nebularia",
       "scientificName": "Tringa nebularia",
       "commonName": "Common Greenshank",
-      "images": [],
-      "recordings": [],
+      "images": [
+        {
+          "key": "tringa-nebularia/side.jpg",
+          "author": "Sergey Shestakov",
+          "licence": "CC BY-NC 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+          "sourceUrl": "https://www.inaturalist.org/observations/254719721",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ],
+      "recordings": [
+        {
+          "key": "xeno-canto/XC27066",
+          "author": "Patrik Åberg",
+          "licence": "CC BY-NC-SA 3.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/3.0/",
+          "sourceUrl": "https://xeno-canto.org/27066",
+          "aiGenerated": false,
+          "hosted": false,
+          "quality": "A",
+          "callType": "call"
+        }
+      ],
       "sources": [
         {
           "title": "Kemp A.C., Herholdt J.J., Whyte I. & Harrison J. (2001). Birds of the two largest national parks in South Africa: a method to generate estimates of population size for all species and assess their conservation ecology. S. Afr. J. Sci. 97: 393–403.",
           "url": "https://journals.co.za/doi/pdf/10.10520/EJC97367",
           "publisher": "South African Journal of Science",
           "year": 2001
+        },
+        {
+          "title": "Common Greenshank",
+          "url": "https://newmansbirds.com/birds/common-greenshank/",
+          "publisher": "Newman's Birds",
+          "year": 2026
+        },
+        {
+          "title": "Avibase bird checklist — Kruger National Park",
+          "url": "https://avibase.bsc-eoc.org/checklist.jsp?region=ZA000003",
+          "publisher": "Avibase",
+          "year": null
         }
       ]
     },
@@ -22717,14 +22998,48 @@
       "slug": "tringa-ochropus",
       "scientificName": "Tringa ochropus",
       "commonName": "Green Sandpiper",
-      "images": [],
-      "recordings": [],
+      "images": [
+        {
+          "key": "tringa-ochropus/side.jpg",
+          "author": "Corné Rautenbach",
+          "licence": "CC BY-NC 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+          "sourceUrl": "https://www.inaturalist.org/observations/295790354",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ],
+      "recordings": [
+        {
+          "key": "xeno-canto/XC129379",
+          "author": "Jarek Matusiak",
+          "licence": "CC BY-NC-SA 3.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/3.0/",
+          "sourceUrl": "https://xeno-canto.org/129379",
+          "aiGenerated": false,
+          "hosted": false,
+          "quality": "A",
+          "callType": "call"
+        }
+      ],
       "sources": [
         {
           "title": "Kemp A.C., Herholdt J.J., Whyte I. & Harrison J. (2001). Birds of the two largest national parks in South Africa: a method to generate estimates of population size for all species and assess their conservation ecology. S. Afr. J. Sci. 97: 393–403.",
           "url": "https://journals.co.za/doi/pdf/10.10520/EJC97367",
           "publisher": "South African Journal of Science",
           "year": 2001
+        },
+        {
+          "title": "Green sandpiper",
+          "url": "https://en.wikipedia.org/wiki/Green_sandpiper",
+          "publisher": "Wikipedia",
+          "year": null
+        },
+        {
+          "title": "Avibase bird checklist — Kruger National Park",
+          "url": "https://avibase.bsc-eoc.org/checklist.jsp?region=ZA000003",
+          "publisher": "Avibase",
+          "year": null
         }
       ]
     },
@@ -22732,14 +23047,48 @@
       "slug": "tringa-stagnatilis",
       "scientificName": "Tringa stagnatilis",
       "commonName": "Marsh Sandpiper",
-      "images": [],
-      "recordings": [],
+      "images": [
+        {
+          "key": "tringa-stagnatilis/side.jpg",
+          "author": "maritzasouthafrica",
+          "licence": "CC BY-NC 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+          "sourceUrl": "https://www.inaturalist.org/observations/9679303",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ],
+      "recordings": [
+        {
+          "key": "xeno-canto/XC154257",
+          "author": "Arend Wassink",
+          "licence": "CC BY-NC-SA 3.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/3.0/",
+          "sourceUrl": "https://xeno-canto.org/154257",
+          "aiGenerated": false,
+          "hosted": false,
+          "quality": "A",
+          "callType": "call"
+        }
+      ],
       "sources": [
         {
           "title": "Kemp A.C., Herholdt J.J., Whyte I. & Harrison J. (2001). Birds of the two largest national parks in South Africa: a method to generate estimates of population size for all species and assess their conservation ecology. S. Afr. J. Sci. 97: 393–403.",
           "url": "https://journals.co.za/doi/pdf/10.10520/EJC97367",
           "publisher": "South African Journal of Science",
           "year": 2001
+        },
+        {
+          "title": "Marsh Sandpiper",
+          "url": "https://newmansbirds.com/birds/marsh-sandpiper/",
+          "publisher": "Newman's Birds",
+          "year": 2026
+        },
+        {
+          "title": "Avibase bird checklist — Kruger National Park",
+          "url": "https://avibase.bsc-eoc.org/checklist.jsp?region=ZA000003",
+          "publisher": "Avibase",
+          "year": null
         }
       ]
     },

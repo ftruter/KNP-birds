@@ -63,6 +63,16 @@
         }
       ]
     },
+    "actitis-hypoleucos": {
+      "calls": [
+        {
+          "index": 0,
+          "quality": {
+            "xeno-canto/XC187104": "A"
+          }
+        }
+      ]
+    },
     "aenigmatolimnas-marginalis": {
       "calls": [
         {
@@ -789,6 +799,46 @@
           "index": 0,
           "quality": {
             "xeno-canto/XC421209": "A"
+          }
+        }
+      ]
+    },
+    "calidris-ferruginea": {
+      "calls": [
+        {
+          "index": 0,
+          "quality": {
+            "xeno-canto/XC184321": "A"
+          }
+        }
+      ]
+    },
+    "calidris-melanotos": {
+      "calls": [
+        {
+          "index": 0,
+          "quality": {
+            "xeno-canto/XC109917": "A"
+          }
+        }
+      ]
+    },
+    "calidris-minuta": {
+      "calls": [
+        {
+          "index": 0,
+          "quality": {
+            "xeno-canto/XC185089": "A"
+          }
+        }
+      ]
+    },
+    "calidris-pugnax": {
+      "calls": [
+        {
+          "index": 0,
+          "quality": {
+            "xeno-canto/XC233522": "A"
           }
         }
       ]
@@ -1600,6 +1650,16 @@
           "index": 0,
           "quality": {
             "xeno-canto/XC649289": "A"
+          }
+        }
+      ]
+    },
+    "gallinago-nigripennis": {
+      "calls": [
+        {
+          "index": 0,
+          "quality": {
+            "xeno-canto/XC495341": "A"
           }
         }
       ]
@@ -2663,6 +2723,46 @@
           "index": 0,
           "quality": {
             "xeno-canto/XC394356": "B"
+          }
+        }
+      ]
+    },
+    "tringa-glareola": {
+      "calls": [
+        {
+          "index": 0,
+          "quality": {
+            "xeno-canto/XC745588": "A"
+          }
+        }
+      ]
+    },
+    "tringa-nebularia": {
+      "calls": [
+        {
+          "index": 0,
+          "quality": {
+            "xeno-canto/XC27066": "A"
+          }
+        }
+      ]
+    },
+    "tringa-ochropus": {
+      "calls": [
+        {
+          "index": 0,
+          "quality": {
+            "xeno-canto/XC129379": "A"
+          }
+        }
+      ]
+    },
+    "tringa-stagnatilis": {
+      "calls": [
+        {
+          "index": 0,
+          "quality": {
+            "xeno-canto/XC154257": "A"
           }
         }
       ]

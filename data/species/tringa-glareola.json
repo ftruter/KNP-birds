@@ -1,14 +1,164 @@
 {
-  "kind": "species",
-  "slug": "tringa-glareola",
-  "scientificName": "Tringa glareola",
-  "commonNames": {
-    "en": "Wood Sandpiper",
-    "af": "Bosruiter"
+  "size": {
+    "lengthCm": {
+      "min": 20,
+      "max": 20
+    },
+    "note": "Newman's Birds gives 20 cm."
   },
-  "family": "scolopacidae",
-  "summary": "The details for this species have not been published yet.",
-  "sampleData": true,
+  "habitat": "Singly or in small groups on most shallow inland waters, flooded grassland and coastal estuaries. When flushed it towers up.",
+  "summary": "A common summer visitor, with some present all year. The upperparts are dark brown with white speckling, the eyebrow is white, the breast is buffy, the belly is white and the legs are yellow-green. The description also calls the legs dull yellow. Flushed birds give a flat chiff-iff-iff. Newman does not name the months. The Kemp name Wood Sandpiper and the code NB were left unchanged.",
+  "similar": [
+    {
+      "slug": "tringa-ochropus",
+      "note": "Green Sandpiper is separated by bill length. Wood Sandpiper has pale grey underwing coverts, and its feet protrude well beyond the tail."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Wood Sandpiper",
+      "url": "https://newmansbirds.com/birds/wood-sandpiper/",
+      "publisher": "Newman's Birds",
+      "year": 2026
+    },
+    {
+      "title": "Avibase bird checklist — Kruger National Park",
+      "url": "https://avibase.bsc-eoc.org/checklist.jsp?region=ZA000003",
+      "publisher": "Avibase",
+      "year": null
+    },
+    {
+      "title": "Kemp A.C., Herholdt J.J., Whyte I. & Harrison J. (2001). Birds of the two largest national parks in South Africa: a method to generate estimates of population size for all species and assess their conservation ecology. S. Afr. J. Sci. 97: 393–403.",
+      "url": "https://journals.co.za/doi/pdf/10.10520/EJC97367",
+      "publisher": "South African Journal of Science",
+      "year": 2001
+    }
+  ],
+  "variants": [
+    {
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "marks": {
+        "bill": {
+          "colour": null,
+          "shape": "Short and straight. The colour is not given."
+        },
+        "eye": {
+          "iris": null,
+          "ring": null
+        },
+        "legs": {
+          "colour": "yellow-green"
+        },
+        "head": {
+          "crown": null,
+          "face": null,
+          "throat": null,
+          "pattern": "A broad white eyebrow extends behind the eye. Newman calls the legs dull yellow; the identification line says yellow-green."
+        },
+        "upperparts": {
+          "back": "dark-brown",
+          "rump": null,
+          "pattern": "Dark brown with white speckling. Newman also says well-spotted upper parts."
+        },
+        "underparts": {
+          "breast": "buff",
+          "belly": "white",
+          "pattern": "The identification line says a buffy breast. The description says dull yellow legs, while the identification line says yellow-green."
+        },
+        "wings": {
+          "above": null,
+          "below": "grey",
+          "pattern": "In flight the underwing coverts are pale grey and the feet protrude well beyond the tail."
+        },
+        "tail": {
+          "colour": null,
+          "shape": null
+        }
+      }
+    }
+  ],
+  "viewNotes": [
+    {
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Dark brown upperparts speckled white, a white eyebrow, a buffy breast and yellow-green legs."
+    },
+    {
+      "view": "perched-front",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Buffy breast and white belly. The eyebrow is broad and white."
+    },
+    {
+      "view": "perched-back",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Well-spotted dark brown upperparts."
+    },
+    {
+      "view": "flight-above",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "The feet protrude well beyond the tail. The upperwing is not given a separate colour."
+    },
+    {
+      "view": "flight-below",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Pale grey underwing coverts."
+    }
+  ],
+  "calls": [
+    {
+      "sex": "any",
+      "type": "call",
+      "description": "When flushed it calls a flat triple 'chiff-iff-iff'. The alarm is a high-pitched 'tchi-tchi-tchi-tchi-tchi'. No grade A recording from South Africa was found. The selected file is a grade A flight call from Zambia. The filename is XC745588-wood sandpiper (flight call,flushed) 20211211,KalwelwaPlain,Mwinilunga,ZAMBIA[1211_172406].mp3.",
+      "recordings": [
+        {
+          "key": "xeno-canto/XC745588",
+          "source": "https://xeno-canto.org/745588",
+          "fileUrl": "https://xeno-canto.org/sounds/uploaded/IIJAXHKSCC/XC745588-wood%20sandpiper%20%28flight%20call%2Cflushed%29%2020211211%2CKalwelwaPlain%2CMwinilunga%2CZAMBIA%5B1211_172406%5D.mp3",
+          "author": "Dries Van de Loock",
+          "license": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ]
+    }
+  ],
+  "images": [
+    {
+      "key": "tringa-glareola/side.jpg",
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "source": "https://www.inaturalist.org/observations/330131619",
+      "fileUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/598528183/large.jpg",
+      "author": "candacemain",
+      "license": "CC BY-NC 4.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+      "aiGenerated": false,
+      "hosted": false,
+      "alt": "Wood Sandpiper in Kruger, speckled above with a pale eyebrow and yellowish legs",
+      "caption": "Wood Sandpiper in Kruger, Mopani, speckled above, with a pale eyebrow, white belly and yellowish legs."
+    }
+  ],
+  "research": {
+    "confidence": "medium",
+    "needsReview": true,
+    "note": "Newman calls it a common summer visitor, with some present all year, and does not name the months, so status is summer-migrant and monthsPresent is unset. The legs are yellow-green on the identification line and dull yellow in the description. No grade A recording from South Africa was found; a grade B recording from South Africa exists. The iNaturalist account has no display name, so the login candacemain is credited. The Kemp code NB was left unchanged."
+  },
+  "status": "summer-migrant",
   "population": {
     "estimate": {
       "low": 512,
@@ -35,8 +185,13 @@
     },
     "tierApplied": "D"
   },
-  "variants": [],
-  "viewNotes": [],
-  "calls": [],
-  "images": []
+  "commonNames": {
+    "en": "Wood Sandpiper",
+    "af": "Bosruiter"
+  },
+  "scientificName": "Tringa glareola",
+  "kind": "species",
+  "slug": "tringa-glareola",
+  "family": "scolopacidae",
+  "sampleData": false
 }

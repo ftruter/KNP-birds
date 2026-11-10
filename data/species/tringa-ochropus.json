@@ -1,14 +1,157 @@
 {
-  "kind": "species",
-  "slug": "tringa-ochropus",
-  "scientificName": "Tringa ochropus",
-  "commonNames": {
-    "en": "Green Sandpiper",
-    "af": "Witgatruiter"
+  "habitat": "Wikipedia says it winters in tropical Africa and feeds along the edges of ponds. Newman has no species page, so no Kruger habitat is taken from that account.",
+  "summary": "Newman has no species page. Wikipedia describes a dark greenish-brown back and wings, a greyish head and breast, and otherwise white underparts. The back is spotted white, most strongly in the breeding adult. The legs and short bill are dark green. In flight the wings are dark above and below and the rump is white. The flight call is a three-note whistle. The size is not given. Months are unset. The Kemp name Green Sandpiper and the code NB were left unchanged.",
+  "similar": [
+    {
+      "slug": "tringa-glareola",
+      "note": "Wood Sandpiper has pale grey underwing coverts and feet that protrude well beyond the tail. Green Sandpiper has dark wings above and below and a brilliant white rump."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Green sandpiper",
+      "url": "https://en.wikipedia.org/wiki/Green_sandpiper",
+      "publisher": "Wikipedia",
+      "year": null
+    },
+    {
+      "title": "Avibase bird checklist — Kruger National Park",
+      "url": "https://avibase.bsc-eoc.org/checklist.jsp?region=ZA000003",
+      "publisher": "Avibase",
+      "year": null
+    },
+    {
+      "title": "Kemp A.C., Herholdt J.J., Whyte I. & Harrison J. (2001). Birds of the two largest national parks in South Africa: a method to generate estimates of population size for all species and assess their conservation ecology. S. Afr. J. Sci. 97: 393–403.",
+      "url": "https://journals.co.za/doi/pdf/10.10520/EJC97367",
+      "publisher": "South African Journal of Science",
+      "year": 2001
+    }
+  ],
+  "variants": [
+    {
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "marks": {
+        "bill": {
+          "colour": "green",
+          "shape": "Short. The article says dark green."
+        },
+        "eye": {
+          "iris": null,
+          "ring": null
+        },
+        "legs": {
+          "colour": "green"
+        },
+        "head": {
+          "crown": "grey",
+          "face": "grey",
+          "throat": null,
+          "pattern": "Greyish head. The bill and legs are dark green."
+        },
+        "upperparts": {
+          "back": null,
+          "rump": "white",
+          "pattern": "Dark greenish-brown back, spotted white to a varying extent, most in the breeding adult."
+        },
+        "underparts": {
+          "breast": "grey",
+          "belly": "white",
+          "pattern": "Greyish breast and otherwise white underparts."
+        },
+        "wings": {
+          "above": null,
+          "below": null,
+          "pattern": "Wings dark above and below."
+        },
+        "tail": {
+          "colour": null,
+          "shape": null
+        }
+      }
+    }
+  ],
+  "viewNotes": [
+    {
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Dark greenish-brown above, greyish on the head and breast, and white below. The bill and legs are dark green."
+    },
+    {
+      "view": "perched-front",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Greyish breast and white underparts."
+    },
+    {
+      "view": "perched-back",
+      "age": "adult",
+      "sex": "any",
+      "season": "breeding",
+      "note": "The white spotting on the back is strongest in the breeding adult."
+    },
+    {
+      "view": "flight-above",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Dark wings and a brilliant white rump."
+    },
+    {
+      "view": "flight-below",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "The wings are dark below."
+    }
+  ],
+  "calls": [
+    {
+      "sex": "any",
+      "type": "call",
+      "description": "In flight it has a three-note whistle. No grade A recording from South Africa was found. The selected file is a grade A flight call from Poland. The filename is XC129379-Tringa_ochropus_Poland_Jarek_Matusiak_20130411-011.mp3.",
+      "recordings": [
+        {
+          "key": "xeno-canto/XC129379",
+          "source": "https://xeno-canto.org/129379",
+          "fileUrl": "https://xeno-canto.org/sounds/uploaded/ZNCDXTUOFL/XC129379-Tringa_ochropus_Poland_Jarek_Matusiak_20130411-011.mp3",
+          "author": "Jarek Matusiak",
+          "license": "CC BY-NC-SA 3.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/3.0/",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ]
+    }
+  ],
+  "images": [
+    {
+      "key": "tringa-ochropus/side.jpg",
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "source": "https://www.inaturalist.org/observations/295790354",
+      "fileUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/532526479/large.jpg",
+      "author": "Corné Rautenbach",
+      "license": "CC BY-NC 4.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+      "aiGenerated": false,
+      "hosted": false,
+      "alt": "Green Sandpiper in Kruger, dark above and white below",
+      "caption": "Green Sandpiper in Kruger, Mopani, dark above and white below."
+    }
+  ],
+  "research": {
+    "confidence": "low",
+    "needsReview": true,
+    "note": "Newman has no species page, so the description is from Wikipedia and the size is omitted. Avibase does not mark the Kruger occurrence rare or accidental, and the months are not named, so status is palearctic-migrant and monthsPresent is unset. Dark greenish-brown is not stored as one back colour. Dark green bill and legs are stored as green. No grade A recording from South Africa was found. The Kemp code NB was left unchanged."
   },
-  "family": "scolopacidae",
-  "summary": "The details for this species have not been published yet.",
-  "sampleData": true,
+  "status": "palearctic-migrant",
   "population": {
     "estimate": {
       "low": 1,
@@ -35,8 +178,13 @@
     },
     "tierApplied": "D"
   },
-  "variants": [],
-  "viewNotes": [],
-  "calls": [],
-  "images": []
+  "commonNames": {
+    "en": "Green Sandpiper",
+    "af": "Witgatruiter"
+  },
+  "scientificName": "Tringa ochropus",
+  "kind": "species",
+  "slug": "tringa-ochropus",
+  "family": "scolopacidae",
+  "sampleData": false
 }
