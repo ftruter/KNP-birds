@@ -1,10 +1,10 @@
 {
   "source": "xeno-canto explore catalogue, API v3 recording fields",
   "counts": {
-    "slots": 476,
+    "slots": 477,
     "swapped": 17,
     "added": 278,
-    "kept": 153,
+    "kept": 154,
     "none": 28,
     "cleaned": 0
   },
@@ -4205,6 +4205,22 @@
       "quality": "A",
       "country": "South Africa",
       "locality": "Klerksdorp, North West",
+      "cleaned": false,
+      "license": "CC BY-NC-SA 4.0"
+    },
+    {
+      "slug": "turnix-sylvaticus",
+      "scientificName": "Turnix sylvaticus",
+      "index": 0,
+      "type": "call",
+      "action": "kept",
+      "from": [
+        "405435"
+      ],
+      "to": "405435",
+      "quality": "B",
+      "country": "South Africa",
+      "locality": "Bedford, Eastern Cape",
       "cleaned": false,
       "license": "CC BY-NC-SA 4.0"
     },
