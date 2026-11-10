@@ -1,14 +1,191 @@
 {
+  "size": {
+    "lengthCm": {
+      "min": 21,
+      "max": 23
+    },
+    "note": "Newman's Birds gives 21–23 cm."
+  },
+  "habitat": "Pairs when breeding, otherwise large flocks in woodland and bushveld. In Kruger it lives with people at rest camps during winter.",
+  "summary": "A common resident. The head and breast are glossy blue, the wings glossy green and the eyes yellow. The identification line says the flanks and belly are purple, while the description says royal-blue. A blackish ear-patch and rows of black wing spots separate it from Cape Starling. The immature is duller, with sooty underparts and a grey eye. The call is sque-eear. The Kemp name Greater Blue-eared Starling and the code RB were left unchanged.",
+  "similar": [
+    {
+      "slug": "lamprotornis-nitens",
+      "note": "Cape Starling lacks the dark ear-patch and has uniformly blue-green underparts and yellow eyes."
+    }
+  ],
+  "variants": [
+    {
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "marks": {
+        "bill": {
+          "colour": null,
+          "shape": null
+        },
+        "eye": {
+          "iris": "yellow",
+          "ring": null
+        },
+        "legs": {
+          "colour": null
+        },
+        "head": {
+          "crown": "blue",
+          "face": null,
+          "throat": null,
+          "pattern": "Head glossy blue, with a blackish ear-patch."
+        },
+        "upperparts": {
+          "back": null,
+          "rump": null
+        },
+        "underparts": {
+          "breast": "blue",
+          "belly": null,
+          "pattern": "The identification line says the flanks and belly are purple. The description says the belly and flanks are royal-blue, and blue rather than magenta."
+        },
+        "wings": {
+          "above": "green",
+          "below": null,
+          "pattern": "Glossy green wings, with two variable rows of black spots on the coverts."
+        },
+        "tail": {
+          "colour": null,
+          "shape": null
+        }
+      }
+    },
+    {
+      "age": "immature",
+      "sex": "any",
+      "season": "any",
+      "marks": {
+        "bill": {
+          "colour": null,
+          "shape": null
+        },
+        "eye": {
+          "iris": "grey",
+          "ring": null
+        },
+        "legs": {
+          "colour": null
+        },
+        "head": {
+          "crown": null,
+          "face": null,
+          "throat": null
+        },
+        "upperparts": {
+          "back": null,
+          "rump": null
+        },
+        "underparts": {
+          "breast": null,
+          "belly": null,
+          "pattern": "Immature duller, with sooty underparts."
+        },
+        "wings": {
+          "above": null,
+          "below": null
+        },
+        "tail": {
+          "colour": null,
+          "shape": null
+        }
+      }
+    }
+  ],
+  "viewNotes": [
+    {
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Glossy blue head and breast, green wings and a blackish ear-patch."
+    },
+    {
+      "view": "perched-front",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Yellow eyes. The belly is purple on the identification line and royal-blue in the description."
+    },
+    {
+      "view": "perched-back",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Rows of black spots on the wing coverts."
+    },
+    {
+      "view": "flight-above",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Glossy green wings."
+    },
+    {
+      "view": "flight-below",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "The underwing colour is not given."
+    }
+  ],
+  "calls": [
+    {
+      "sex": "any",
+      "type": "call",
+      "description": "'sque-eear, sque-eear-eeear'. No grade A recording from South Africa was found. The selected file is a grade A call from Zambia. The filename is XC584694-Greater Blue-eared starling (call) 20200722,BangweuluWetlands,ZAMBIA_2.mp3.",
+      "recordings": [
+        {
+          "key": "xeno-canto/XC584694",
+          "source": "https://xeno-canto.org/584694",
+          "fileUrl": "https://xeno-canto.org/sounds/uploaded/IIJAXHKSCC/XC584694-Greater%20Blue-eared%20starling%20%28call%29%2020200722%2CBangweuluWetlands%2CZAMBIA_2.mp3",
+          "author": "Dries Van de Loock",
+          "license": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ]
+    }
+  ],
+  "images": [
+    {
+      "key": "lamprotornis-chalybaeus/side.jpg",
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "source": "https://www.inaturalist.org/observations/34975968",
+      "fileUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/55115116/large.jpeg",
+      "author": "Alan Horstmann",
+      "license": "CC BY-NC 4.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+      "aiGenerated": false,
+      "hosted": false,
+      "alt": "Greater Blue-eared Starling at Skukuza in Kruger, with yellow eyes.",
+      "caption": "Greater Blue-eared Starling at Skukuza in Kruger, with yellow eyes."
+    }
+  ],
+  "research": {
+    "confidence": "medium",
+    "needsReview": true,
+    "note": "Newman calls it a common resident, and Avibase does not mark it rare, so all twelve months are listed. The belly is purple on the identification line and royal-blue in the description, so no belly colour is stored. Sooty is not a vocabulary colour. The grade A call is from Zambia. The Kemp code RB was left unchanged."
+  },
   "kind": "species",
   "slug": "lamprotornis-chalybaeus",
+  "family": "sturnidae",
+  "sampleData": false,
   "scientificName": "Lamprotornis chalybaeus",
   "commonNames": {
     "en": "Greater Blue-eared Starling",
     "af": "Groot-blouoorglansspreeu"
   },
-  "family": "sturnidae",
-  "summary": "The details for this species have not been published yet.",
-  "sampleData": true,
   "population": {
     "estimate": {
       "low": 16384,
@@ -35,8 +212,39 @@
     },
     "tierApplied": "D"
   },
-  "variants": [],
-  "viewNotes": [],
-  "calls": [],
-  "images": []
+  "status": "resident",
+  "monthsPresent": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+  ],
+  "sources": [
+    {
+      "title": "Greater Blue-eared Starling",
+      "url": "https://newmansbirds.com/birds/greater-blue-eared-starling/",
+      "publisher": "Newman's Birds",
+      "year": 2026
+    },
+    {
+      "title": "Avibase bird checklist — Kruger National Park",
+      "url": "https://avibase.bsc-eoc.org/checklist.jsp?region=ZA000003",
+      "publisher": "Avibase",
+      "year": null
+    },
+    {
+      "title": "Kemp A.C., Herholdt J.J., Whyte I. & Harrison J. (2001). Birds of the two largest national parks in South Africa: a method to generate estimates of population size for all species and assess their conservation ecology. S. Afr. J. Sci. 97: 393–403.",
+      "url": "https://journals.co.za/doi/pdf/10.10520/EJC97367",
+      "publisher": "South African Journal of Science",
+      "year": 2001
+    }
+  ]
 }

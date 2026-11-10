@@ -1,10 +1,10 @@
 {
   "source": "xeno-canto explore catalogue, API v3 recording fields",
   "counts": {
-    "slots": 455,
+    "slots": 464,
     "swapped": 17,
     "added": 278,
-    "kept": 132,
+    "kept": 141,
     "none": 28,
     "cleaned": 0
   },
@@ -193,6 +193,22 @@
       "quality": "A",
       "country": "South Africa",
       "locality": "City of Matlosana (near Klerksdorp), Southern DC, North West",
+      "cleaned": false,
+      "license": "CC BY-NC-SA 4.0"
+    },
+    {
+      "slug": "acridotheres-tristis",
+      "scientificName": "Acridotheres tristis",
+      "index": 0,
+      "type": "call",
+      "action": "kept",
+      "from": [
+        "533469"
+      ],
+      "to": "533469",
+      "quality": "A",
+      "country": "South Africa",
+      "locality": "near Orkney, North West",
       "cleaned": false,
       "license": "CC BY-NC-SA 4.0"
     },
@@ -723,6 +739,22 @@
       "license": "CC BY-NC-SA 4.0"
     },
     {
+      "slug": "cinnyricinclus-leucogaster",
+      "scientificName": "Cinnyricinclus leucogaster",
+      "index": 0,
+      "type": "call",
+      "action": "kept",
+      "from": [
+        "476620"
+      ],
+      "to": "476620",
+      "quality": "A",
+      "country": "Senegal",
+      "locality": "Kafountine, Casamance",
+      "cleaned": false,
+      "license": "CC BY-NC-SA 4.0"
+    },
+    {
       "slug": "circaetus-cinereus",
       "scientificName": "Circaetus cinereus",
       "index": 0,
@@ -937,6 +969,22 @@
       "quality": "A",
       "country": "South Africa",
       "locality": "Port Alfred, Eastern Cape",
+      "cleaned": false,
+      "license": "CC BY-NC-SA 4.0"
+    },
+    {
+      "slug": "creatophora-cinerea",
+      "scientificName": "Creatophora cinerea",
+      "index": 0,
+      "type": "call",
+      "action": "kept",
+      "from": [
+        "489190"
+      ],
+      "to": "489190",
+      "quality": "A",
+      "country": "South Africa",
+      "locality": "Kruger Park, Ehlanzeni",
       "cleaned": false,
       "license": "CC BY-NC-SA 4.0"
     },
@@ -1520,6 +1568,70 @@
       "license": "CC BY-NC-SA 4.0"
     },
     {
+      "slug": "lamprotornis-australis",
+      "scientificName": "Lamprotornis australis",
+      "index": 0,
+      "type": "call",
+      "action": "kept",
+      "from": [
+        "299096"
+      ],
+      "to": "299096",
+      "quality": "A",
+      "country": "South Africa",
+      "locality": "Warmbad, Limpopo",
+      "cleaned": false,
+      "license": "CC BY-NC-SA 4.0"
+    },
+    {
+      "slug": "lamprotornis-chalybaeus",
+      "scientificName": "Lamprotornis chalybaeus",
+      "index": 0,
+      "type": "call",
+      "action": "kept",
+      "from": [
+        "584694"
+      ],
+      "to": "584694",
+      "quality": "A",
+      "country": "Zambia",
+      "locality": "Chikuni, Bangweulu",
+      "cleaned": false,
+      "license": "CC BY-NC-SA 4.0"
+    },
+    {
+      "slug": "lamprotornis-mevesii",
+      "scientificName": "Lamprotornis mevesii",
+      "index": 0,
+      "type": "call",
+      "action": "kept",
+      "from": [
+        "213639"
+      ],
+      "to": "213639",
+      "quality": "A",
+      "country": "Botswana",
+      "locality": "near Maun",
+      "cleaned": false,
+      "license": "CC BY-NC-SA 4.0"
+    },
+    {
+      "slug": "lamprotornis-nitens",
+      "scientificName": "Lamprotornis nitens",
+      "index": 0,
+      "type": "song",
+      "action": "kept",
+      "from": [
+        "1037326"
+      ],
+      "to": "1037326",
+      "quality": "A",
+      "country": "Namibia",
+      "locality": "Halali, Oshikoto",
+      "cleaned": false,
+      "license": "CC BY-NC-SA 4.0"
+    },
+    {
       "slug": "lophaetus-occipitalis",
       "scientificName": "Lophaetus occipitalis",
       "index": 0,
@@ -1640,6 +1752,38 @@
       "locality": "Gambela, Dembidolo Road",
       "cleaned": false,
       "license": "CC BY-NC-ND 4.0"
+    },
+    {
+      "slug": "notopholia-corusca",
+      "scientificName": "Notopholia corusca",
+      "index": 0,
+      "type": "call",
+      "action": "kept",
+      "from": [
+        "285744"
+      ],
+      "to": "285744",
+      "quality": "A",
+      "country": "South Africa",
+      "locality": "Grahamstown, Eastern Cape",
+      "cleaned": false,
+      "license": "CC BY-NC-SA 4.0"
+    },
+    {
+      "slug": "onychognathus-morio",
+      "scientificName": "Onychognathus morio",
+      "index": 0,
+      "type": "call",
+      "action": "kept",
+      "from": [
+        "252685"
+      ],
+      "to": "252685",
+      "quality": "A",
+      "country": "South Africa",
+      "locality": "Grahamstown, Eastern Cape",
+      "cleaned": false,
+      "license": "CC BY-NC-SA 4.0"
     },
     {
       "slug": "otus-senegalensis",

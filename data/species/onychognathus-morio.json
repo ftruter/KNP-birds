@@ -1,14 +1,186 @@
 {
+  "size": {
+    "lengthCm": {
+      "min": 27,
+      "max": 28
+    },
+    "note": "Newman's Birds gives 27–28 cm."
+  },
+  "habitat": "Pairs and flocks at cliffs, caves or buildings, where they roost and breed, dispersing daily for fruit and berries.",
+  "summary": "A common resident. The female has a grey head and mantle. Both sexes show brick-red flight feathers, which the description calls red-brown. The eye is dark. The most frequent call is a drawn-out spreeooo. The male's body colour is not stated. The Kemp name Redwinged Starling and the code RB were left unchanged.",
+  "variants": [
+    {
+      "age": "adult",
+      "sex": "female",
+      "season": "any",
+      "marks": {
+        "bill": {
+          "colour": null,
+          "shape": null
+        },
+        "eye": {
+          "iris": null,
+          "ring": null
+        },
+        "legs": {
+          "colour": null
+        },
+        "head": {
+          "crown": "grey",
+          "face": null,
+          "throat": null,
+          "pattern": "Female has a grey head and mantle. The eye is dark."
+        },
+        "upperparts": {
+          "back": null,
+          "rump": null,
+          "pattern": "Female mantle grey."
+        },
+        "underparts": {
+          "breast": null,
+          "belly": null
+        },
+        "wings": {
+          "above": null,
+          "below": null,
+          "pattern": "Both sexes show brick-red wings in flight. The description says entirely red-brown flight feathers."
+        },
+        "tail": {
+          "colour": null,
+          "shape": null
+        }
+      }
+    },
+    {
+      "age": "adult",
+      "sex": "male",
+      "season": "any",
+      "marks": {
+        "bill": {
+          "colour": null,
+          "shape": null
+        },
+        "eye": {
+          "iris": null,
+          "ring": null
+        },
+        "legs": {
+          "colour": null
+        },
+        "head": {
+          "crown": null,
+          "face": null,
+          "throat": null,
+          "pattern": "The eye is dark. The male body colour is not stated, only that the sexes differ."
+        },
+        "upperparts": {
+          "back": null,
+          "rump": null
+        },
+        "underparts": {
+          "breast": null,
+          "belly": null
+        },
+        "wings": {
+          "above": null,
+          "below": null,
+          "pattern": "Brick-red on the identification line and red-brown in the description."
+        },
+        "tail": {
+          "colour": null,
+          "shape": null
+        }
+      }
+    }
+  ],
+  "viewNotes": [
+    {
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "female",
+      "season": "any",
+      "note": "Grey head and mantle."
+    },
+    {
+      "view": "flight-above",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Brick-red flight feathers, also described as red-brown."
+    },
+    {
+      "view": "perched-front",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "The eye is dark."
+    },
+    {
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "male",
+      "season": "any",
+      "note": "The sexes differ. The male body colour is not stated."
+    },
+    {
+      "view": "flight-below",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "The underwing colour is not given."
+    }
+  ],
+  "calls": [
+    {
+      "sex": "any",
+      "type": "call",
+      "description": "Pleasant loud whistles, most frequently a drawn-out 'spreeooo'. The grade A call is from Grahamstown. The filename is XC252685-Red-winged starlings exc.mp3.",
+      "recordings": [
+        {
+          "key": "xeno-canto/XC252685",
+          "source": "https://xeno-canto.org/252685",
+          "fileUrl": "https://xeno-canto.org/sounds/uploaded/SGLTZLDXYI/XC252685-Red-winged%20starlings%20exc.mp3",
+          "author": "Lynette Rudman",
+          "license": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ]
+    }
+  ],
+  "images": [
+    {
+      "key": "onychognathus-morio/side.jpg",
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "female",
+      "season": "any",
+      "source": "https://www.inaturalist.org/observations/19861035",
+      "fileUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/30623398/large.jpg",
+      "author": "tjeerd",
+      "license": "CC BY-NC 4.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+      "aiGenerated": false,
+      "hosted": false,
+      "alt": "Female Red-winged Starling in Kruger, Mopani, grey on the head, with red-brown flight feathers.",
+      "caption": "Female Red-winged Starling in Kruger, Mopani, grey on the head, with red-brown flight feathers."
+    }
+  ],
+  "research": {
+    "confidence": "medium",
+    "needsReview": true,
+    "note": "Newman calls it a common resident, and Avibase does not mark it rare, so all twelve months are listed. The flight feathers are brick-red and red-brown, so no single wing colour is stored. The male body colour is not stated. The eye is only described as dark. The grade A call is from the Eastern Cape. The iNaturalist account has no display name, so the login tjeerd is credited. The Kemp name Redwinged Starling and the code RB were left unchanged."
+  },
   "kind": "species",
   "slug": "onychognathus-morio",
+  "family": "sturnidae",
+  "sampleData": false,
   "scientificName": "Onychognathus morio",
   "commonNames": {
     "en": "Red-winged Starling",
     "af": "Rooivlerkspreeu"
   },
-  "family": "sturnidae",
-  "summary": "The details for this species have not been published yet.",
-  "sampleData": true,
   "population": {
     "estimate": {
       "low": 2048,
@@ -35,8 +207,39 @@
     },
     "tierApplied": "D"
   },
-  "variants": [],
-  "viewNotes": [],
-  "calls": [],
-  "images": []
+  "status": "resident",
+  "monthsPresent": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+  ],
+  "sources": [
+    {
+      "title": "Red-winged Starling",
+      "url": "https://newmansbirds.com/birds/red-winged-starling/",
+      "publisher": "Newman's Birds",
+      "year": 2026
+    },
+    {
+      "title": "Avibase bird checklist — Kruger National Park",
+      "url": "https://avibase.bsc-eoc.org/checklist.jsp?region=ZA000003",
+      "publisher": "Avibase",
+      "year": null
+    },
+    {
+      "title": "Kemp A.C., Herholdt J.J., Whyte I. & Harrison J. (2001). Birds of the two largest national parks in South Africa: a method to generate estimates of population size for all species and assess their conservation ecology. S. Afr. J. Sci. 97: 393–403.",
+      "url": "https://journals.co.za/doi/pdf/10.10520/EJC97367",
+      "publisher": "South African Journal of Science",
+      "year": 2001
+    }
+  ]
 }

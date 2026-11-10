@@ -13,6 +13,16 @@
         }
       ]
     },
+    "acridotheres-tristis": {
+      "calls": [
+        {
+          "index": 0,
+          "quality": {
+            "xeno-canto/XC533469": "A"
+          }
+        }
+      ]
+    },
     "acrocephalus-arundinaceus": {
       "calls": [
         {
@@ -1067,6 +1077,16 @@
         }
       ]
     },
+    "cinnyricinclus-leucogaster": {
+      "calls": [
+        {
+          "index": 0,
+          "quality": {
+            "xeno-canto/XC476620": "A"
+          }
+        }
+      ]
+    },
     "circaetus-cinereus": {
       "calls": [
         {
@@ -1434,6 +1454,16 @@
           "index": 0,
           "quality": {
             "xeno-canto/XC369825": "A"
+          }
+        }
+      ]
+    },
+    "creatophora-cinerea": {
+      "calls": [
+        {
+          "index": 0,
+          "quality": {
+            "xeno-canto/XC489190": "A"
           }
         }
       ]
@@ -2010,6 +2040,46 @@
         }
       ]
     },
+    "lamprotornis-australis": {
+      "calls": [
+        {
+          "index": 0,
+          "quality": {
+            "xeno-canto/XC299096": "A"
+          }
+        }
+      ]
+    },
+    "lamprotornis-chalybaeus": {
+      "calls": [
+        {
+          "index": 0,
+          "quality": {
+            "xeno-canto/XC584694": "A"
+          }
+        }
+      ]
+    },
+    "lamprotornis-mevesii": {
+      "calls": [
+        {
+          "index": 0,
+          "quality": {
+            "xeno-canto/XC213639": "A"
+          }
+        }
+      ]
+    },
+    "lamprotornis-nitens": {
+      "calls": [
+        {
+          "index": 0,
+          "quality": {
+            "xeno-canto/XC1037326": "A"
+          }
+        }
+      ]
+    },
     "leptoptilos-crumenifer": {
       "calls": [
         {
@@ -2212,6 +2282,16 @@
         }
       ]
     },
+    "notopholia-corusca": {
+      "calls": [
+        {
+          "index": 0,
+          "quality": {
+            "xeno-canto/XC285744": "A"
+          }
+        }
+      ]
+    },
     "nycticorax-nycticorax": {
       "calls": [
         {
@@ -2228,6 +2308,16 @@
           "index": 0,
           "quality": {
             "xeno-canto/XC496248": "A"
+          }
+        }
+      ]
+    },
+    "onychognathus-morio": {
+      "calls": [
+        {
+          "index": 0,
+          "quality": {
+            "xeno-canto/XC252685": "A"
           }
         }
       ]
