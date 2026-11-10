@@ -10217,7 +10217,17 @@
       "slug": "coturnix-coturnix",
       "scientificName": "Coturnix coturnix",
       "commonName": "Common Quail",
-      "images": [],
+      "images": [
+        {
+          "key": "coturnix-coturnix/side.jpg",
+          "author": "Dylan Leonard",
+          "licence": "CC BY-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+          "sourceUrl": "https://www.inaturalist.org/observations/329856594",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ],
       "recordings": [
         {
           "key": "xeno-canto/XC137862",
@@ -21908,7 +21918,17 @@
       "slug": "pternistis-afer",
       "scientificName": "Pternistis afer",
       "commonName": "Red-necked Spurfowl",
-      "images": [],
+      "images": [
+        {
+          "key": "pternistis-afer/front.jpg",
+          "author": "Henry de Lange",
+          "licence": "CC BY 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by/4.0/",
+          "sourceUrl": "https://www.inaturalist.org/observations/259638031",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ],
       "recordings": [
         {
           "key": "xeno-canto/XC501361",

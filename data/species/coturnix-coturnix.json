@@ -163,10 +163,27 @@
       ]
     }
   ],
-  "images": [],
+  "images": [
+    {
+      "key": "coturnix-coturnix/side.jpg",
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "source": "https://www.inaturalist.org/observations/329856594",
+      "fileUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/598009995/large.jpg",
+      "author": "Dylan Leonard",
+      "license": "CC BY-SA 4.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "aiGenerated": false,
+      "hosted": false,
+      "alt": "Common Quail at Richmond, not Kruger, crouched on bare ground with streaked brown plumage.",
+      "caption": "Common Quail at Richmond, not Kruger, crouched on bare ground with streaked brown plumage."
+    }
+  ],
   "research": {
     "confidence": "medium",
     "needsReview": true,
-    "note": "Newman says common resident and visitor, so status and monthsPresent are unset. No openly licensed research-grade photo was found in the Kruger box. Population figures and the Kemp code VB were left unchanged."
+    "note": "Newman says common resident and visitor, so status and monthsPresent are unset. No Kruger photograph was found under an allowed licence. A side photograph from Richmond is stored. Population figures and the Kemp code VB were left unchanged."
   }
 }
