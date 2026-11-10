@@ -6,8 +6,8 @@
     "en": "Owls",
     "af": "Uile"
   },
-  "summary": "Field notes for this family are still to be written.",
-  "sampleData": true,
+  "summary": "Nine owls, from the tiny scops and owlets to Verreaux's Eagle-Owl and Pel's Fishing Owl. All are treated as residents. Cape Eagle-Owl has no Kemp estimate.",
+  "sampleData": false,
   "species": [
     {
       "slug": "bubo-africanus",

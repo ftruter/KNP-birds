@@ -1,14 +1,151 @@
 {
+  "size": {
+    "lengthCm": {
+      "min": 15,
+      "max": 18
+    },
+    "note": "Newman's Birds gives 15–18 cm."
+  },
+  "habitat": "Any woodland, including mopane, mixed bushveld and riverine forest. It is often seen by day and is frequently mobbed by small birds.",
+  "summary": "A common resident. A very small earless owl. The upperparts are brown with small white spots, and the underparts are white, streaked brown, with pearl-like spots. Two black marks on the nape look like eyes. The call is a long ascending series of tee notes, then a descending series. The Kemp name Pearlspotted Owl and the code RB were left unchanged.",
+  "similar": [
+    {
+      "slug": "glaucidium-capense",
+      "note": "African Barred Owlet is larger and dumpier, with fine barring above and a row of bold white wing spots."
+    }
+  ],
+  "variants": [
+    {
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "marks": {
+        "bill": {
+          "colour": null,
+          "shape": null
+        },
+        "eye": {
+          "iris": null,
+          "ring": null
+        },
+        "legs": {
+          "colour": null
+        },
+        "head": {
+          "crown": null,
+          "face": null,
+          "throat": null,
+          "pattern": "Earless. Two black marks on the nape look like eyes."
+        },
+        "upperparts": {
+          "back": null,
+          "rump": null,
+          "pattern": "Dark brown-grey above, well spotted white. The description says brown with small white spots."
+        },
+        "underparts": {
+          "breast": null,
+          "belly": null,
+          "pattern": "White below, streaked brown, with pearl-like spots."
+        },
+        "wings": {
+          "above": null,
+          "below": null
+        },
+        "tail": {
+          "colour": null,
+          "shape": null
+        }
+      }
+    }
+  ],
+  "viewNotes": [
+    {
+      "view": "perched-front",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "White underparts streaked brown, with pearl-like spots."
+    },
+    {
+      "view": "perched-back",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Two black marks on the nape, and white spots on the brown upperparts."
+    },
+    {
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Very small and earless, spotted white above."
+    },
+    {
+      "view": "flight-above",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Flight plumage is not described."
+    },
+    {
+      "view": "flight-below",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "The underside in flight is not described."
+    }
+  ],
+  "calls": [
+    {
+      "sex": "any",
+      "type": "call",
+      "description": "A long ascending 'tee-tee-tee…', then, after a pause, a descending 'teeew, teeew, tew, tew…'. It is often heard by day. The grade A call is from Thabazimbi. The filename is XC194518-2014-09-06 10_23 ps owlet x 2.mp3.",
+      "recordings": [
+        {
+          "key": "xeno-canto/XC194518",
+          "source": "https://xeno-canto.org/194518",
+          "fileUrl": "https://xeno-canto.org/sounds/uploaded/LWQXRZHFCU/XC194518-2014-09-06%2010_23%20ps%20owlet%20x%202.mp3",
+          "author": "Niall Perrins",
+          "license": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ]
+    }
+  ],
+  "images": [
+    {
+      "key": "glaucidium-perlatum/side.jpg",
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "source": "https://www.inaturalist.org/observations/214131612",
+      "fileUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/378456919/large.jpg",
+      "author": "Justyn Stahl",
+      "license": "CC BY-NC 4.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+      "aiGenerated": false,
+      "hosted": false,
+      "alt": "Pearl-spotted Owlet in Kruger, spotted white above and streaked below",
+      "caption": "Pearl-spotted Owlet in Kruger, on the Orpen to Satara road, spotted white above and streaked below."
+    }
+  ],
+  "research": {
+    "confidence": "medium",
+    "needsReview": true,
+    "note": "Newman calls it a common resident, and Avibase does not mark it rare, so all twelve months are listed. Dark brown-grey is not stored as one back colour. The grade A call is from Limpopo, not from inside Kruger. The Kemp name Pearlspotted Owl and the code RB were left unchanged."
+  },
   "kind": "species",
   "slug": "glaucidium-perlatum",
+  "family": "strigidae",
+  "sampleData": false,
   "scientificName": "Glaucidium perlatum",
   "commonNames": {
     "en": "Pearl-spotted Owlet",
     "af": "Witkoluil"
   },
-  "family": "strigidae",
-  "summary": "The details for this species have not been published yet.",
-  "sampleData": true,
   "population": {
     "estimate": {
       "low": 8192,
@@ -35,8 +172,39 @@
     },
     "tierApplied": "D"
   },
-  "variants": [],
-  "viewNotes": [],
-  "calls": [],
-  "images": []
+  "status": "resident",
+  "monthsPresent": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+  ],
+  "sources": [
+    {
+      "title": "Pearl-spotted Owlet",
+      "url": "https://newmansbirds.com/birds/pearl-spotted-owlet/",
+      "publisher": "Newman's Birds",
+      "year": 2026
+    },
+    {
+      "title": "Avibase bird checklist — Kruger National Park",
+      "url": "https://avibase.bsc-eoc.org/checklist.jsp?region=ZA000003",
+      "publisher": "Avibase",
+      "year": null
+    },
+    {
+      "title": "Kemp A.C., Herholdt J.J., Whyte I. & Harrison J. (2001). Birds of the two largest national parks in South Africa: a method to generate estimates of population size for all species and assess their conservation ecology. S. Afr. J. Sci. 97: 393–403.",
+      "url": "https://journals.co.za/doi/pdf/10.10520/EJC97367",
+      "publisher": "South African Journal of Science",
+      "year": 2001
+    }
+  ]
 }
