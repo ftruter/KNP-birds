@@ -1,14 +1,152 @@
 {
+  "size": {
+    "lengthCm": {
+      "min": 17,
+      "max": 17
+    },
+    "note": "Newman's Birds gives 17 cm."
+  },
+  "habitat": "Singly or in pairs in dense vegetation over water, mostly in the lower layer. Secretive.",
+  "summary": "A common resident. Dark brown above, with a broad rounded tail, a clear eye-stripe, and faint markings on the upper breast. The call is a loud accelerating 'cruk, cruk, cruk', like a stick drawn across a railing, followed by wing-snapping. The Kemp name African Sedge Warbler and the code RB were left unchanged.",
+  "status": "resident",
+  "monthsPresent": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+  ],
+  "variants": [
+    {
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "marks": {
+        "bill": {
+          "colour": null,
+          "shape": null
+        },
+        "eye": {
+          "iris": null,
+          "ring": null
+        },
+        "legs": {
+          "colour": null
+        },
+        "head": {
+          "crown": null,
+          "face": null,
+          "throat": null,
+          "pattern": "A noticeable eye-stripe."
+        },
+        "upperparts": {
+          "back": "dark-brown",
+          "rump": null
+        },
+        "underparts": {
+          "breast": null,
+          "belly": null,
+          "pattern": "Faint markings on the upper breast."
+        },
+        "wings": {
+          "above": null,
+          "below": null
+        },
+        "tail": {
+          "colour": null,
+          "shape": "Broad and rounded."
+        }
+      }
+    }
+  ],
+  "viewNotes": [
+    {
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Dark brown above, with an eye-stripe and a broad rounded tail."
+    },
+    {
+      "view": "perched-front",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Faint markings on the upper breast."
+    },
+    {
+      "view": "flight-above",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Flight plumage is not described. The call is followed by wing-snapping."
+    },
+    {
+      "view": "flight-below",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "The underside in flight is not described."
+    }
+  ],
+  "calls": [
+    {
+      "sex": "any",
+      "type": "call",
+      "description": "A loud accelerating 'cruk, cruk, cruk, cruk-cruk-cruk', like a stick drawn across a railing, followed by wing-snapping. The grade A call is from Grahamstown. The filename is XC397750-Little Rush Warbler30 dec belmont.mp3.",
+      "recordings": [
+        {
+          "key": "xeno-canto/XC397750",
+          "source": "https://xeno-canto.org/397750",
+          "fileUrl": "https://xeno-canto.org/sounds/uploaded/SGLTZLDXYI/XC397750-Little%20Rush%20Warbler30%20dec%20belmont.mp3",
+          "author": "Lynette Rudman",
+          "license": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ]
+    }
+  ],
+  "images": [
+    {
+      "key": "bradypterus-baboecala/side.jpg",
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "source": "https://www.inaturalist.org/observations/182805113",
+      "fileUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/318800632/large.jpeg",
+      "author": "Gigi Laidler",
+      "license": "CC BY-NC 4.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+      "aiGenerated": false,
+      "hosted": false,
+      "alt": "Little Rush Warbler at Strandfontein, dark above with a rounded tail",
+      "caption": "Little Rush Warbler at Strandfontein, dark above, with a rounded tail."
+    }
+  ],
+  "research": {
+    "confidence": "medium",
+    "needsReview": true,
+    "note": "Newman calls it a common resident, and Avibase does not mark it rare, so all twelve months are listed. No Kruger photograph was found. The grade A call is from the Eastern Cape. The Kemp name African Sedge Warbler and the code RB were left unchanged."
+  },
   "kind": "species",
   "slug": "bradypterus-baboecala",
+  "family": "locustellidae",
+  "sampleData": false,
   "scientificName": "Bradypterus baboecala",
   "commonNames": {
     "en": "Little Rush Warbler",
     "af": "Kaapse Vleisanger"
   },
-  "family": "locustellidae",
-  "summary": "The details for this species have not been published yet.",
-  "sampleData": true,
   "population": {
     "estimate": {
       "low": 1024,
@@ -35,8 +173,24 @@
     },
     "tierApplied": "D"
   },
-  "variants": [],
-  "viewNotes": [],
-  "calls": [],
-  "images": []
+  "sources": [
+    {
+      "title": "Little Rush Warbler",
+      "url": "https://newmansbirds.com/birds/little-rush-warbler/",
+      "publisher": "Newman's Birds",
+      "year": 2026
+    },
+    {
+      "title": "Avibase bird checklist — Kruger National Park",
+      "url": "https://avibase.bsc-eoc.org/checklist.jsp?region=ZA000003",
+      "publisher": "Avibase",
+      "year": null
+    },
+    {
+      "title": "Kemp A.C., Herholdt J.J., Whyte I. & Harrison J. (2001). Birds of the two largest national parks in South Africa: a method to generate estimates of population size for all species and assess their conservation ecology. S. Afr. J. Sci. 97: 393–403.",
+      "url": "https://journals.co.za/doi/pdf/10.10520/EJC97367",
+      "publisher": "South African Journal of Science",
+      "year": 2001
+    }
+  ]
 }

@@ -1,14 +1,131 @@
 {
+  "habitat": "Winters in inland southern Africa. It skulks in dense vegetation close to water.",
+  "summary": "Newman's Birds has no page. Wikipedia describes a warbler with an unstreaked grey-brown back, whitish-grey underparts, a streaked breast, and a darker undertail with white tips. Young birds are yellower below. The song is a monotonous mechanical reel. It breeds in eastern and central Europe and winters in southern Africa. Avibase marks it rare, so the months are left unset. The Kemp name River Warbler and the code NB were left unchanged.",
+  "status": "palearctic-migrant",
+  "variants": [
+    {
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "marks": {
+        "bill": {
+          "colour": null,
+          "shape": null
+        },
+        "eye": {
+          "iris": null,
+          "ring": null
+        },
+        "legs": {
+          "colour": null
+        },
+        "head": {
+          "crown": null,
+          "face": null,
+          "throat": null
+        },
+        "upperparts": {
+          "back": null,
+          "rump": null,
+          "pattern": "Unstreaked grey-brown back."
+        },
+        "underparts": {
+          "breast": null,
+          "belly": null,
+          "pattern": "Whitish-grey underparts, with a streaked breast. The undertail is darker and has white feather tips. Young birds are yellower below."
+        },
+        "wings": {
+          "above": null,
+          "below": null
+        },
+        "tail": {
+          "colour": null,
+          "shape": null
+        }
+      }
+    }
+  ],
+  "viewNotes": [
+    {
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Unstreaked grey-brown back and whitish-grey underparts."
+    },
+    {
+      "view": "perched-back",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Darker undertail with white feather tips."
+    },
+    {
+      "view": "perched-front",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Streaked breast."
+    },
+    {
+      "view": "flight-below",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "The underside in flight is not described."
+    }
+  ],
+  "calls": [
+    {
+      "sex": "any",
+      "type": "call",
+      "description": "Wikipedia describes a monotonous mechanical insect-like song. The stored file is a grade A call, including a flight call, from Estonia. No South African grade A recording was found. The filename is XC575434-Locustelle fluviatile vol +.mp3.",
+      "recordings": [
+        {
+          "key": "xeno-canto/XC575434",
+          "source": "https://xeno-canto.org/575434",
+          "fileUrl": "https://xeno-canto.org/sounds/uploaded/SDPCHKOHRH/XC575434-Locustelle%20fluviatile%20vol%20%2B.mp3",
+          "author": "Stanislas Wroza",
+          "license": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ]
+    }
+  ],
+  "images": [
+    {
+      "key": "locustella-fluviatilis/side.jpg",
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "source": "https://www.inaturalist.org/observations/179977253",
+      "fileUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/313414627/large.jpg",
+      "author": "Helen Badenhorst",
+      "license": "CC BY-NC 4.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+      "aiGenerated": false,
+      "hosted": false,
+      "alt": "River Warbler in the Waterberg",
+      "caption": "River Warbler in the Waterberg."
+    }
+  ],
+  "research": {
+    "confidence": "low",
+    "needsReview": true,
+    "note": "Newman's Birds has no page, so the description comes from Wikipedia and no length is given. Grey-brown and whitish-grey are not single colour names, so no back or underpart colour is stored. Avibase marks it rare, so the months are left unset. The status is palearctic-migrant because it breeds in Europe and winters in southern Africa. No Kruger photograph was found. The grade A call is from Estonia. The Kemp name River Warbler and the code NB were left unchanged."
+  },
   "kind": "species",
   "slug": "locustella-fluviatilis",
+  "family": "locustellidae",
+  "sampleData": false,
   "scientificName": "Locustella fluviatilis",
   "commonNames": {
     "en": "River Warbler",
     "af": "Sprinkaansanger"
   },
-  "family": "locustellidae",
-  "summary": "The details for this species have not been published yet.",
-  "sampleData": true,
   "population": {
     "estimate": {
       "low": 32,
@@ -35,8 +152,24 @@
     },
     "tierApplied": "D"
   },
-  "variants": [],
-  "viewNotes": [],
-  "calls": [],
-  "images": []
+  "sources": [
+    {
+      "title": "River warbler",
+      "url": "https://en.wikipedia.org/wiki/River_warbler",
+      "publisher": "Wikipedia",
+      "year": null
+    },
+    {
+      "title": "Avibase bird checklist — Kruger National Park",
+      "url": "https://avibase.bsc-eoc.org/checklist.jsp?region=ZA000003",
+      "publisher": "Avibase",
+      "year": null
+    },
+    {
+      "title": "Kemp A.C., Herholdt J.J., Whyte I. & Harrison J. (2001). Birds of the two largest national parks in South Africa: a method to generate estimates of population size for all species and assess their conservation ecology. S. Afr. J. Sci. 97: 393–403.",
+      "url": "https://journals.co.za/doi/pdf/10.10520/EJC97367",
+      "publisher": "South African Journal of Science",
+      "year": 2001
+    }
+  ]
 }

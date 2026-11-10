@@ -5,8 +5,8 @@
   "commonNames": {
     "en": "Grassbirds and allies"
   },
-  "summary": "Field notes for this family are still to be written.",
-  "sampleData": true,
+  "summary": "Four skulking warblers of dense cover. Little Rush Warbler is the common bird of vegetation over water. Barratt’s Warbler, Fan-tailed Grassbird and River Warbler have no Newman account.",
+  "sampleData": false,
   "species": [
     {
       "slug": "bradypterus-baboecala",

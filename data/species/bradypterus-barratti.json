@@ -1,14 +1,153 @@
 {
+  "size": {
+    "lengthCm": {
+      "min": 15,
+      "max": 15
+    },
+    "note": "Wikipedia gives 15 cm. Newman's Birds has no page for this species."
+  },
+  "habitat": "Moist montane forest in eastern South Africa, Lesotho, eastern Zimbabwe, and adjacent western Mozambique.",
+  "summary": "Newman's Birds has no page for Barratt’s Warbler. Wikipedia describes a 15 cm bird with chocolate-brown underparts, a rufous wash from crown to tail, a greyish-buff supercilium, a buffy-white throat streaked dark brown, and a white breast and belly streaked grey. The bill is black and the legs are dark brown. Males and females are alike. There is no Kemp estimate. Avibase does not mark it rare, so all twelve months are listed.",
+  "status": "resident",
+  "monthsPresent": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+  ],
+  "variants": [
+    {
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "marks": {
+        "bill": {
+          "colour": "black",
+          "shape": null
+        },
+        "eye": {
+          "iris": "brown",
+          "ring": null
+        },
+        "legs": {
+          "colour": "dark-brown"
+        },
+        "head": {
+          "crown": null,
+          "face": null,
+          "throat": null,
+          "pattern": "Dark brown lores and cheeks. The supercilium is greyish buff. The throat is buffy white and streaked dark brown. Crown to tail is washed rufous."
+        },
+        "upperparts": {
+          "back": null,
+          "rump": null,
+          "pattern": "Washed rufous from crown to tail. The upperwing coverts are rufous-brown."
+        },
+        "underparts": {
+          "breast": null,
+          "belly": null,
+          "pattern": "Wikipedia describes the underparts as chocolate-brown, with the centre of the breast and belly white and streaked grey."
+        },
+        "wings": {
+          "above": null,
+          "below": null
+        },
+        "tail": {
+          "colour": null,
+          "shape": null
+        }
+      }
+    }
+  ],
+  "viewNotes": [
+    {
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Rufous wash from crown to tail, and a greyish-buff supercilium."
+    },
+    {
+      "view": "perched-front",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Buffy-white throat streaked dark brown. White breast and belly streaked grey."
+    },
+    {
+      "view": "flight-above",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Flight plumage is not described separately."
+    },
+    {
+      "view": "flight-below",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "The underside in flight is not described."
+    }
+  ],
+  "calls": [
+    {
+      "sex": "any",
+      "type": "call",
+      "description": "Wikipedia's identification section does not describe the voice. The grade A call is from God's Window. The filename is XC368199-170406a_Barratt'sWarbler_call_God'sWindow_OC.mp3.",
+      "recordings": [
+        {
+          "key": "xeno-canto/XC368199",
+          "source": "https://xeno-canto.org/368199",
+          "fileUrl": "https://xeno-canto.org/sounds/uploaded/RFRTVEHIZX/XC368199-170406a_Barratt%27sWarbler_call_God%27sWindow_OC.mp3",
+          "author": "Oscar Campbell",
+          "license": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ]
+    }
+  ],
+  "images": [
+    {
+      "key": "bradypterus-barratti/side.jpg",
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "source": "https://www.inaturalist.org/observations/113091163",
+      "fileUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/191075565/large.jpg",
+      "author": "Alan Manson",
+      "license": "CC BY 4.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by/4.0/",
+      "aiGenerated": false,
+      "hosted": false,
+      "alt": "Barratt’s Warbler at the Sani border post",
+      "caption": "Barratt’s Warbler at the Sani border post."
+    }
+  ],
+  "research": {
+    "confidence": "low",
+    "needsReview": true,
+    "note": "Newman's Birds has no page, so the description and 15 cm length come from Wikipedia and are paraphrased. Chocolate-brown is not in the colour list, so no underpart colour is stored. The voice is not described in the identification section. No Kruger photograph was found. There is no Kemp estimate. Avibase does not mark it rare, so all twelve months are listed as a resident of the region."
+  },
   "kind": "species",
   "slug": "bradypterus-barratti",
+  "family": "locustellidae",
+  "sampleData": false,
   "scientificName": "Bradypterus barratti",
   "commonNames": {
     "en": "Barratt’s Warbler",
     "af": "Ruigtesanger"
   },
-  "family": "locustellidae",
-  "summary": "The details for this species have not been published yet.",
-  "sampleData": true,
   "population": {
     "estimate": {
       "low": null,
@@ -21,8 +160,18 @@
     "notes": "No sourced Kruger estimate is currently available; taxonomy or later records require separate research.",
     "sources": []
   },
-  "variants": [],
-  "viewNotes": [],
-  "calls": [],
-  "images": []
+  "sources": [
+    {
+      "title": "Barratt's warbler",
+      "url": "https://en.wikipedia.org/wiki/Barratt%27s_warbler",
+      "publisher": "Wikipedia",
+      "year": null
+    },
+    {
+      "title": "Avibase bird checklist — Kruger National Park",
+      "url": "https://avibase.bsc-eoc.org/checklist.jsp?region=ZA000003",
+      "publisher": "Avibase",
+      "year": null
+    }
+  ]
 }

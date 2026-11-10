@@ -117,6 +117,7 @@ test('every data file matches the schema, slugs, and colour vocabulary', async (
         'laniidae',
         'laridae',
         'leiothrichidae',
+        'locustellidae',
         'malaconotidae',
         'meropidae',
         'motacillidae',
