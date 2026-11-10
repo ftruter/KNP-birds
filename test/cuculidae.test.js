@@ -118,4 +118,14 @@ test('cuckoos and coucals are sourced without changing populations', async () =>
     report.counts.kept +
     report.counts.none
   assert.equal(sum, report.counts.slots)
+
+  const burchells = await readJson('data/species/centropus-burchellii.json')
+  assert.equal(burchells.size.lengthCm.min, 44)
+  assert.equal(burchells.size.lengthCm.max, 44)
+  const senegal = await readJson('data/species/centropus-senegalensis.json')
+  assert.equal(senegal.size.lengthCm.min, 41)
+  assert.equal(senegal.size.lengthCm.max, 41)
+  const thick = await readJson('data/species/pachycoccyx-audeberti.json')
+  assert.equal(thick.size, undefined)
+
 })
