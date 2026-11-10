@@ -189,5 +189,13 @@
     "speciesCounted": 18,
     "speciesTotal": 21,
     "complete": false
+  },
+  "residency": {
+    "speciesKnown": 19,
+    "speciesUnknown": 2,
+    "unknownSpecies": [
+      "cisticola-aridulus",
+      "cisticola-juncidis"
+    ]
   }
 }

@@ -125,5 +125,13 @@
     "speciesCounted": 12,
     "speciesTotal": 13,
     "complete": false
+  },
+  "residency": {
+    "speciesKnown": 11,
+    "speciesUnknown": 2,
+    "unknownSpecies": [
+      "dendrocygna-bicolor",
+      "netta-erythrophthalma"
+    ]
   }
 }

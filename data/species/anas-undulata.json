@@ -215,14 +215,36 @@
     {
       "sex": "male",
       "type": "call",
-      "description": "Wikipedia says the male has a teal-like whistle. Newman says there is no distinctive call apart from the female take-off quacks.",
-      "recordings": []
+      "description": "Wikipedia says the male has a teal-like whistle. Newman says there is no distinctive call apart from the female take-off quacks. The catalogue cut is labelled male. Grade A, a flight call from Uganda, not southern Africa. The catalogue gives its life stage as uncertain. No South African cut is labelled male only.",
+      "recordings": [
+        {
+          "key": "xeno-canto/XC1053126",
+          "source": "https://xeno-canto.org/1053126",
+          "fileUrl": "https://xeno-canto.org/sounds/uploaded/THHNKSHUMO/XC1053126-053-Canard-%C3%A0-bec-jaune260127_0478.mp3",
+          "author": "Bernard BOUSQUET",
+          "license": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ]
     },
     {
       "sex": "female",
       "type": "call",
-      "description": "Loud, evenly spaced quacks on take-off.",
-      "recordings": []
+      "description": "Loud, evenly spaced quacks on take-off. The catalogue cut is labelled female. Grade B, South Africa. Western Cape.",
+      "recordings": [
+        {
+          "key": "xeno-canto/XC1141380",
+          "source": "https://xeno-canto.org/1141380",
+          "fileUrl": "https://xeno-canto.org/sounds/uploaded/WSTMKZEHKY/XC1141380-260219-073450-Yellow-billed-Duck-B.mp3",
+          "author": "Walter Wallner",
+          "license": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ]
     },
     {
       "sex": "any",
@@ -263,6 +285,6 @@
   "research": {
     "confidence": "medium",
     "needsReview": false,
-    "note": "Months in Kruger are not listed. SABAP1 says it is rare in southern Mozambique and Zimbabwe and has no regular migration where it is common. Newman calls it a very common resident of open water. Those accounts do not give a Kruger calendar. Chick down is not described. The flight call is grade A from the Western Cape and is not sexed. Status is resident: Newman calls it a very common resident, and SABAP1 says it is dispersive and nomadic but has no regular migrations."
+    "note": "Months in Kruger are not listed. SABAP1 says it is rare in southern Mozambique and Zimbabwe and has no regular migration where it is common. Newman calls it a very common resident of open water. Those accounts do not give a Kruger calendar. Chick down is not described. The flight call is grade A from the Western Cape and is not sexed. The male flight call is grade A from Uganda and the female call is grade B from the Western Cape; both are labelled by sex in the catalogue. Status is resident: Newman calls it a very common resident, and SABAP1 says it is dispersive and nomadic but has no regular migrations."
   }
 }

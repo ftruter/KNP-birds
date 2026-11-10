@@ -85,5 +85,12 @@
     "speciesCounted": 8,
     "speciesTotal": 8,
     "complete": true
+  },
+  "residency": {
+    "speciesKnown": 7,
+    "speciesUnknown": 1,
+    "unknownSpecies": [
+      "coturnix-coturnix"
+    ]
   }
 }

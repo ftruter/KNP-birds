@@ -69,5 +69,12 @@
     "speciesCounted": 6,
     "speciesTotal": 6,
     "complete": true
+  },
+  "residency": {
+    "speciesKnown": 5,
+    "speciesUnknown": 1,
+    "unknownSpecies": [
+      "merops-apiaster"
+    ]
   }
 }

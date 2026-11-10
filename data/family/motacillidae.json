@@ -109,5 +109,13 @@
     "speciesCounted": 11,
     "speciesTotal": 11,
     "complete": true
+  },
+  "residency": {
+    "speciesKnown": 9,
+    "speciesUnknown": 2,
+    "unknownSpecies": [
+      "anthus-lineiventris",
+      "anthus-vaalensis"
+    ]
   }
 }

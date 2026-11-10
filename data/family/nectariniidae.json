@@ -101,5 +101,13 @@
     "speciesCounted": 6,
     "speciesTotal": 10,
     "complete": false
+  },
+  "residency": {
+    "speciesKnown": 8,
+    "speciesUnknown": 2,
+    "unknownSpecies": [
+      "cinnyris-bifasciatus",
+      "cinnyris-chalybeus"
+    ]
   }
 }

@@ -93,5 +93,13 @@
     "speciesCounted": 9,
     "speciesTotal": 9,
     "complete": true
+  },
+  "residency": {
+    "speciesKnown": 7,
+    "speciesUnknown": 2,
+    "unknownSpecies": [
+      "falco-dickinsoni",
+      "falco-peregrinus"
+    ]
   }
 }
