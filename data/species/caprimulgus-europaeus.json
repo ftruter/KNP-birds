@@ -18,6 +18,13 @@
     3,
     4
   ],
+  "size": {
+    "lengthCm": {
+      "min": 24.5,
+      "max": 28
+    },
+    "note": "Wikipedia gives 24.5–28 cm."
+  },
   "habitat": "It roosts by day on a horizontal branch, up to about 20 m up, and also rests on the ground. Trees are an important part of the habitat. It is usually silent in the non-breeding range. Most records are of birds flushed by day or seen on roads at night.",
   "summary": "The only Palearctic nightjar on the Kruger list. The adult has greyish-brown upperparts with dark streaking, a pale buff hindneck collar and a white moustachial line. The closed wing is grey with buff spotting. The underparts are greyish-brown, with brown barring and buff spots. The bill is blackish, the iris dark brown and the legs brown. The male song is a sustained churring trill. SABAP1 says the first sightings are in September, arrival is mainly from late November, and most have left by late April.",
   "sampleData": false,
@@ -198,6 +205,6 @@
   "research": {
     "confidence": "medium",
     "needsReview": false,
-    "note": "Status is a Palearctic migrant. Months are September to April, from SABAP1: first sightings in September, arrival mainly from late November, most gone by late April. Newman has no nightjar pages. The female song was not described. Chick down is not described beyond a young bird in a threat display. The call is grade A from England."
+    "note": "Status is a Palearctic migrant. Months are September to April, from SABAP1: first sightings in September, arrival mainly from late November, most gone by late April. Newman has no nightjar pages. Length is from Wikipedia (24.5–28 cm). The female song was not described. Chick down is not described beyond a young bird in a threat display. The call is grade A from England."
   }
 }
