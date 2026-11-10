@@ -22,6 +22,13 @@
     11,
     12
   ],
+  "size": {
+    "lengthCm": {
+      "min": 14,
+      "max": 14
+    },
+    "note": "Wikipedia gives about 14 cm."
+  },
   "habitat": "Wikipedia says it is a resident breeder and an insectivore, and does not describe the plumage.",
   "summary": "Wikipedia says it is a resident breeder in Africa south of the Sahara and an insectivore. The retrieved text does not describe the plumage, so the marks were left unset. Newman has no page. The Kemp code VB was left unchanged.",
   "sampleData": false,
@@ -138,6 +145,6 @@
   "research": {
     "confidence": "low",
     "needsReview": false,
-    "note": "Status is resident and all twelve months are listed from Newman’s resident wording. Population figures were left unchanged."
+    "note": "Status is resident and all twelve months are listed. Length is from Wikipedia (about 14 cm). Population figures were left unchanged."
   }
 }

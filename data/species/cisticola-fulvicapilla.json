@@ -22,6 +22,13 @@
     11,
     12
   ],
+  "size": {
+    "lengthCm": {
+      "min": 10,
+      "max": 11
+    },
+    "note": "Newman's Birds gives 10–11 cm."
+  },
   "habitat": "In the rainy season it sings for long periods from an exposed high perch.",
   "summary": "A common resident. The sexes are alike and the immature is dull. It has a rufous cap and a plain back. Southern and eastern races are blue-grey below and whistle fee-fee-fee-fee. Northern races are browner below and sing a scratchier chirri-chirri-chirri. The alarm is a rapid ticki-ticki-ticki.",
   "sampleData": false,
@@ -182,6 +189,6 @@
   "research": {
     "confidence": "medium",
     "needsReview": false,
-    "note": "Status is resident and all twelve months are listed from Newman’s resident wording. Population figures were left unchanged."
+    "note": "Status is resident and all twelve months are listed from Newman’s resident wording. Length is from Newman’s Birds. Population figures were left unchanged."
   }
 }

@@ -187,6 +187,6 @@
   "research": {
     "confidence": "medium",
     "needsReview": false,
-    "note": "Status is resident and all twelve months are listed from Newman’s resident wording. Population figures were left unchanged."
+    "note": "Newman’s size field is blank (#VALUE!), and Wikipedia gives no total length, so size is omitted. Status is resident and all twelve months are listed from Newman’s resident wording. Population figures were left unchanged."
   }
 }

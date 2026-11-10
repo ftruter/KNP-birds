@@ -7,6 +7,13 @@
     "af": "Luitinktinkie"
   },
   "family": "cisticolidae",
+  "size": {
+    "lengthCm": {
+      "min": 13,
+      "max": 14
+    },
+    "note": "Wikipedia gives 13–14 cm."
+  },
   "habitat": "Wikipedia describes the bird and does not give a Kruger habitat or status.",
   "summary": "Wikipedia calls it a medium-sized cisticola with a plain brown back, a long slender tail, a grey-brown face, a whitish supercilium, a rufous crown and whitish underparts. It does not give a length or a Kruger status, so those were left unset. Newman has no page.",
   "sampleData": false,
@@ -167,6 +174,6 @@
   "research": {
     "confidence": "low",
     "needsReview": true,
-    "note": "Newman has no page. Status and months were left unset because the retrieved text does not give them. The Kemp code RB was left unchanged."
+    "note": "Newman has no page. Length is from Wikipedia (13–14 cm). Status and months were left unset because the retrieved text does not give them. The Kemp code RB was left unchanged."
   }
 }
