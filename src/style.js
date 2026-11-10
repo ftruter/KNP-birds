@@ -213,9 +213,152 @@ p { text-wrap: pretty; }
   box-shadow: inset 0 0 0 2px var(--header-fg);
 }
 
+/* Header search: a dark pill with a grey border, like a code-host search box. Contrast on the header green: border 3.6:1, text and hint above 9:1. */
+.site-search {
+  --search-fill: #102A14;
+  --search-line: #A8B5A8;
+  --search-text: #F3EFE0;
+  --search-muted: #CDD5C8;
+  position: relative;
+  display: flex;
+  align-items: center;
+  flex: 1 1 16rem;
+  max-inline-size: 26rem;
+}
+
+.site-search-icon {
+  position: absolute;
+  inset-inline-start: 0.75rem;
+  color: var(--search-muted);
+  pointer-events: none;
+}
+
+.site-search input {
+  inline-size: 100%;
+  min-block-size: 2.5rem;
+  padding-block: 0.4rem;
+  padding-inline: 2.25rem 0.75rem;
+  border: 1px solid var(--search-line);
+  border-radius: 0.5rem;
+  background: var(--search-fill);
+  color: var(--search-text);
+  font-family: var(--sans);
+  font-size: 1rem;
+  line-height: 1.3;
+  appearance: none;
+}
+
+.site-search input::placeholder { color: var(--search-muted); opacity: 1; }
+
+.site-search input:hover { border-color: var(--search-text); }
+
+.site-search input:focus-visible {
+  border-color: var(--header-fg);
+  outline: 3px solid ${light.bg};
+  outline-offset: 2px;
+}
+
+.site-search input::-webkit-search-decoration { appearance: none; }
+.site-search input::-webkit-search-cancel-button { filter: invert(1) grayscale(1); }
+
+.site-search-hint {
+  display: none;
+  position: absolute;
+  inset-inline-start: 2.25rem;
+  color: var(--search-muted);
+  font-family: var(--sans);
+  font-size: 1rem;
+  pointer-events: none;
+  white-space: nowrap;
+}
+
+.site-search-hint kbd {
+  display: inline-block;
+  min-inline-size: 1.1rem;
+  margin-inline: 0.15rem;
+  padding-inline: 0.3rem;
+  border: 1px solid var(--search-muted);
+  border-radius: 0.25rem;
+  font-family: var(--mono);
+  font-size: 0.8rem;
+  line-height: 1.25rem;
+  text-align: center;
+}
+
+/* Off screen until keyboard focus reaches it, then shown at the end of the pill. */
+.site-search-submit {
+  position: absolute;
+  inset-inline-end: 0.3rem;
+  inline-size: 1px;
+  block-size: 1px;
+  padding: 0;
+  overflow: hidden;
+  clip-path: inset(50%);
+  border: 0;
+  white-space: nowrap;
+}
+
+.site-search-submit:focus-visible {
+  inline-size: auto;
+  block-size: auto;
+  clip-path: none;
+  padding-block: 0.2rem;
+  padding-inline: 0.6rem;
+  border: 1px solid var(--search-line);
+  border-radius: 0.35rem;
+  background: var(--header-fg);
+  color: var(--nav-pill);
+  font-family: var(--sans);
+  font-weight: 700;
+  outline: 3px solid ${light.bg};
+  outline-offset: 2px;
+}
+
+@media (min-width: 48rem) {
+  .js .site-search input:placeholder-shown:not(:focus)::placeholder { color: transparent; }
+  .js .site-search input:placeholder-shown:not(:focus) ~ .site-search-hint { display: block; }
+}
+
 @container wrap (max-width: 46rem) {
   .mast nav { flex-basis: 100%; }
+  .site-search { flex-basis: 100%; max-inline-size: none; }
 }
+
+.search-results {
+  list-style: none;
+  margin: 1rem 0 0;
+  padding: 0;
+  display: grid;
+  gap: 0.85rem;
+  max-inline-size: 75ch;
+}
+
+.search-result {
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-sm);
+  padding: 0.85rem 1.1rem 1rem;
+}
+
+.search-result .kicker { margin: 0; }
+.search-result h3 { margin: 0.1rem 0 0; font-family: var(--sans); }
+.search-names { margin: 0.2rem 0 0; }
+.search-names .latin, .search-names .afrikaans { margin: 0; font-size: inherit; }
+
+.search-snippets {
+  margin: 0.55rem 0 0;
+  font-size: 0.95rem;
+}
+
+.search-snippets dt {
+  font-family: var(--sans);
+  font-weight: 700;
+  color: var(--muted);
+  font-size: 0.85rem;
+}
+
+.search-snippets dd { margin: 0 0 0.35rem; }
 
 main {
   padding-block: 0.35rem 2.75rem;
@@ -826,6 +969,8 @@ audio {
 
 @media (forced-colors: active) {
   .site-header { border-block-end-color: CanvasText; }
+  .site-search input, .site-search-hint kbd { border-color: CanvasText; }
+  .search-result { border-color: CanvasText; box-shadow: none; }
   .mark, .sample, .plate, .table-wrap, .population, .hero, .compare-list li, .species-card, .facts, .sitemap > li {
     border-color: CanvasText;
     box-shadow: none;

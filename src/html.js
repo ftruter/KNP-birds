@@ -38,7 +38,7 @@ import {
 import { agentUrls } from './head.js'
 import { clientSrc } from './client.js'
 import { familyTableHtml, speciesTableHtml } from './lists.js'
-import { alternates } from './route.js'
+import { alternates, SEARCH_MAX, searchSuffix } from './route.js'
 import { sitemapEntries } from './sitemap.js'
 
 const NAV = [
@@ -847,8 +847,10 @@ const layout = ({
   nav,
   crumbs: crumbHtml,
   main,
+  searchQuery = '',
+  noindex = false,
 }) => {
-  const alts = alternates(path)
+  const alts = alternates(path, searchSuffix(searchQuery))
   return `<!DOCTYPE html>
 <html lang="en">
 <head>
@@ -857,7 +859,7 @@ const layout = ({
 <meta name="color-scheme" content="light dark">
 <title>${escapeHtml(title)}</title>
 <meta name="description" content="${escapeHtml(description)}">
-<link rel="canonical" href="${escapeHtml(origin + alts.html)}">
+${noindex ? '<meta name="robots" content="noindex">\n' : ''}<link rel="canonical" href="${escapeHtml(origin + alts.html)}">
 <link rel="alternate" type="text/markdown" href="${escapeHtml(alts.md)}" title="Markdown">
 <link rel="alternate" type="application/json" href="${escapeHtml(alts.json)}" title="JSON">
 ${ARD_LINK}
@@ -872,6 +874,7 @@ ${ARD_LINK}
 <p class="site-name"><a href="/">KNP Birds</a></p>
 <p class="site-tag">Kruger National Park</p>
 </div>
+${searchFormHtml(searchQuery)}
 <nav aria-label="Site">
 <ul class="nav-list">
 ${NAV.map(([key, href, label]) => `<li><a href="${href}"${nav === key ? ' aria-current="page"' : ''}>${label}</a></li>`).join('\n')}
@@ -902,6 +905,79 @@ ${agentHtml(origin)}
 </body>
 </html>
 `
+}
+
+const SEARCH_ICON =
+  '<svg class="site-search-icon" aria-hidden="true" focusable="false" viewBox="0 0 16 16" width="16" height="16"><path fill="currentColor" d="M10.68 11.74a6 6 0 1 1 1.06-1.06l3.04 3.04a.75.75 0 1 1-1.06 1.06ZM11.5 7a4.5 4.5 0 1 0-9 0 4.5 4.5 0 0 0 9 0Z"/></svg>'
+
+const searchFormHtml = (
+  query,
+) => `<form class="site-search" role="search" method="get" action="/search">
+<label class="visually-hidden" for="site-search-q">Search birds by English, Afrikaans or Latin name</label>
+${SEARCH_ICON}
+<input id="site-search-q" type="search" name="q" value="${escapeHtml(query)}" placeholder="Search birds" maxlength="${SEARCH_MAX}" autocomplete="off" spellcheck="false" enterkeyhint="search">
+<span class="site-search-hint" aria-hidden="true">Type <kbd>/</kbd> to search</span>
+<button class="site-search-submit" type="submit">Search</button>
+</form>`
+
+const SNIPPET_LABEL = {
+  habitat: 'Habitat',
+  identification: 'Identification',
+  populationNotes: 'Population notes',
+}
+
+const resultHtml = (result) => {
+  const path = new URL(result.pages.html).pathname
+  const snippets = result.snippets.filter((item) => SNIPPET_LABEL[item.field])
+  return `<li class="search-result">
+<p class="kicker">${result.kind === 'family' ? 'Family' : 'Species'}</p>
+<h3><a href="${escapeHtml(path)}">${escapeHtml(result.englishName || result.scientificName)}</a></h3>
+<p class="search-names"><span class="latin">${escapeHtml(result.scientificName)}</span>${result.afrikaansName ? ` · <span class="afrikaans">${escapeHtml(result.afrikaansName)}</span>` : ''}</p>
+${
+  snippets.length
+    ? `<dl class="search-snippets">${snippets
+        .map(
+          (item) =>
+            `<dt>${SNIPPET_LABEL[item.field]}</dt><dd>${escapeHtml(item.text)}</dd>`,
+        )
+        .join('')}</dl>`
+    : ''
+}
+</li>`
+}
+
+export const renderSearchHtml = ({ origin, query, found }) => {
+  const quoted = `“${query}”`
+  const count = found
+    ? `${found.total} ${found.total === 1 ? 'result' : 'results'} for ${quoted}`
+    : ''
+  const more =
+    found && found.total > found.results.length
+      ? `<p>Showing the first ${found.results.length}. Add another word to narrow the search.</p>`
+      : ''
+  const body = !query
+    ? '<p>Type an English, Afrikaans or Latin bird name, a family, or a word from a habitat or field-mark note into the search box.</p>'
+    : found.total === 0
+      ? `<h2 id="search-count">${escapeHtml(count)}</h2>
+<p class="search-empty">No bird matched ${escapeHtml(quoted)}. Check the spelling, try fewer words, or browse the <a href="/species">species</a> and <a href="/families">families</a>.</p>`
+      : `<h2 id="search-count">${escapeHtml(count)}</h2>
+${more}
+<ol class="search-results" aria-labelledby="search-count">
+${found.results.map(resultHtml).join('\n')}
+</ol>`
+  return layout({
+    title: query ? `Search: ${query} · KNP Birds` : 'Search · KNP Birds',
+    description: 'Search the birds of Kruger National Park by name.',
+    origin,
+    path: '/search',
+    nav: '',
+    crumbs: crumbs([{ href: '/search', label: 'Search', current: true }]),
+    main: `
+<h1>Search</h1>
+${body}`,
+    searchQuery: query,
+    noindex: true,
+  })
 }
 
 const agentHtml = (origin) => {

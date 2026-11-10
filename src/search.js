@@ -265,7 +265,9 @@ const snippetAround = (text, needle) => {
   const from = Math.max(0, startChar - 40)
   const to = Math.min(chars.length, startChar + needle.length + 80)
   const slice = chars.slice(from, to).join('').trim()
-  return bounded(`${from > 0 ? '…' : ''}${slice}`)
+  return bounded(
+    `${from > 0 ? '…' : ''}${slice}${to < chars.length ? '…' : ''}`,
+  )
 }
 
 const fieldsOf = (record) => [
