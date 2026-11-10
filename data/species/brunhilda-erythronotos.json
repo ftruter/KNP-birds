@@ -216,10 +216,27 @@
       ]
     }
   ],
-  "images": [],
+  "images": [
+    {
+      "key": "brunhilda-erythronotos/side.jpg",
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "source": "https://www.inaturalist.org/observations/236343323",
+      "fileUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/420455716/large.jpeg",
+      "author": "Albertus Horn",
+      "license": "CC BY 4.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by/4.0/",
+      "aiGenerated": false,
+      "hosted": false,
+      "alt": "Black-faced Waxbill at Kgatelopele, not Kruger, with a black face mask and pinkish-red underparts.",
+      "caption": "Black-faced Waxbill at Kgatelopele, not Kruger, with a black face mask and pinkish-red underparts."
+    }
+  ],
   "research": {
     "confidence": "medium",
     "needsReview": true,
-    "note": "Newman calls it a fairly common resident and also says it is probably nomadic for much of the year. Status is resident and all twelve months are listed. The Kemp code NB was left unchanged. No openly licensed research-grade photograph was found in the Kruger box. Population figures were left unchanged."
+    "note": "Newman calls it a fairly common resident and also says it is probably nomadic for much of the year. Status is resident and all twelve months are listed. The Kemp code NB was left unchanged. No Kruger photograph was found under an allowed licence. A side photograph from Kgatelopele is stored. Population figures were left unchanged."
   }
 }
