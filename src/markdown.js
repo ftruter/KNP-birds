@@ -3,7 +3,9 @@ import { recordingNotes } from './recordings.js'
 import { inlineText, safeHttpUrl } from './escape.js'
 import {
   APPROXIMATE_LABEL,
-  APPROXIMATE_TOTAL,
+  FAMILY_TOTAL_LABEL,
+  FAMILY_TOTAL_SEASONS,
+  residencyGapText,
   CALL_TYPE,
   SAMPLE_NOTICE,
   afrikaansName,
@@ -135,7 +137,7 @@ export const renderFamilyMarkdown = (
 
 ${af ? `${af}\n\n` : ''}${doc.summary || ''}
 
-${familyPopulationMarkdown(doc.population, format)}
+${familyPopulationMarkdown(doc.population, doc.residency, format)}
 
 ${iconicMarkdown(plates)}
 
@@ -292,17 +294,20 @@ ${plates
   })
   .join('\n\n')}`
 
-const familyPopulationMarkdown = (population, format) => {
+const familyPopulationMarkdown = (population, residency, format) => {
   const model = familyTotalModel(population, format)
+  const gap = residencyGapText(residency, format)
   return `## Population
 
-**${APPROXIMATE_TOTAL}.** ${FAMILY_TOTAL_INTRO}
+**${FAMILY_TOTAL_LABEL}.** ${FAMILY_TOTAL_INTRO}
 
 ${model.range || 'No numeric total yet.'}
 
 ${model.coverage}
 
-${model.complete ? '' : 'This total is incomplete.'}`
+${model.complete ? '' : 'This total is incomplete.'}
+
+${FAMILY_TOTAL_SEASONS} [Families by season](/families).${gap ? `\n\n${gap}` : ''}`
 }
 
 const comparisonMarkdown = (section, colourMap) => {

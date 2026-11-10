@@ -444,10 +444,24 @@
         "complete": { "type": "boolean" }
       }
     },
+    "familyResidency": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["speciesKnown", "speciesUnknown", "unknownSpecies"],
+      "properties": {
+        "speciesKnown": { "type": "integer", "minimum": 0 },
+        "speciesUnknown": { "type": "integer", "minimum": 0 },
+        "unknownSpecies": {
+          "type": "array",
+          "uniqueItems": true,
+          "items": { "$ref": "#/$defs/slug" }
+        }
+      }
+    },
     "family": {
       "type": "object",
       "additionalProperties": false,
-      "required": ["kind", "slug", "scientificName", "commonNames", "summary", "sampleData", "species", "iconicSpecies", "population"],
+      "required": ["kind", "slug", "scientificName", "commonNames", "summary", "sampleData", "species", "iconicSpecies", "population", "residency"],
       "properties": {
         "kind": { "const": "family" },
         "slug": { "$ref": "#/$defs/slug" },
@@ -465,7 +479,8 @@
           "uniqueItems": true,
           "items": { "$ref": "#/$defs/slug" }
         },
-        "population": { "$ref": "#/$defs/familyPopulation" }
+        "population": { "$ref": "#/$defs/familyPopulation" },
+        "residency": { "$ref": "#/$defs/familyResidency" }
       }
     },
     "indexEntry": {

@@ -155,7 +155,7 @@ The page says "The details for this species have not been published yet." It doe
 
 ## Family
 
-`kind` is `"family"`. `slug` is the scientific family name in lowercase (`coraciidae`). The family's own `commonNames`, `summary`, and `sampleData` are written by hand. Two fields are derived by `scripts/seed.mjs` from the species files and are not edited by hand:
+`kind` is `"family"`. `slug` is the scientific family name in lowercase (`coraciidae`). The family's own `commonNames`, `summary`, and `sampleData` are written by hand. Four fields are derived by `scripts/seed.mjs` from the species files and are not edited by hand:
 
 `species` is every species whose `family` slug matches, sorted by scientific name. Each item is `{ slug, scientificName, names: { en, af } }`. `names.af` is omitted when the species has no Afrikaans name. A family page can list them without reading every species document. The array may be empty when no species document uses that family. `iconicSpecies` is then empty too. The page says that no species from the family are listed, and it omits the Afrikaans line when `commonNames.af` is absent. It does not invent a name.
 
@@ -170,7 +170,19 @@ The page says "The details for this species have not been published yet." It doe
 | `speciesTotal` | How many species are embedded. |
 | `complete` | `true` only when every species was counted. Otherwise `false`, including when a species uses another unit. |
 
-Other units are not converted and are not mixed into the sum. The page labels the total **Approximate total** and says how many species are included. When `complete` is false it says the total is incomplete. A family with no species uses null bounds, with `speciesTotal` 0.
+Other units are not converted and are not mixed into the sum. The page labels the total **Approximate total, all seasons** and says how many species are included. When `complete` is false it says the total is incomplete. A family with no species uses null bounds, with `speciesTotal` 0.
+
+The total covers all seasons. It does not use `status` or `monthsPresent`. The summer and winter columns on `/families` do, through `seasonPresence()` in `src/seasons.js`: a species is in a season when `monthsPresent` meets it; without months, `resident` is in both seasons and `intra-african-migrant`, `palearctic-migrant` and `summer-migrant` are in summer only. With neither field the species is unknown in both seasons, and nothing is guessed. So a family can have an all-season figure while a season shows **Unknown** or **(partial)** because some species are unknown. Each season adds only the species present in it, so summer and winter need not add up to the all-season total.
+
+`residency` explains that gap:
+
+| Field | Meaning |
+| --- | --- |
+| `speciesKnown` | How many embedded species have a known presence in at least one season. |
+| `speciesUnknown` | How many have neither `status` nor `monthsPresent`. |
+| `unknownSpecies` | Their slugs, sorted. |
+
+`residency` is always written by the seed script and is required by the JSON Schema. When `speciesUnknown` is above 0 the family page says why the seasonal figures are Unknown or partial, under the `#residency` anchor. On `/families` (HTML and Markdown) each Unknown or partial seasonal cell links there. The fix is to publish residency on the species, never to change `population`.
 
 `node scripts/seed.mjs --write` rewrites these fields, and the indexes below, from the species files. The families index stores an unknown total as `0`, not `null`. A species index entry is the mature-individual midpoint, or `null` when that unit is absent.
 

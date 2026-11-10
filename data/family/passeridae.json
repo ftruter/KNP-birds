@@ -53,5 +53,12 @@
     "speciesCounted": 3,
     "speciesTotal": 4,
     "complete": false
+  },
+  "residency": {
+    "speciesKnown": 3,
+    "speciesUnknown": 1,
+    "unknownSpecies": [
+      "gymnoris-superciliaris"
+    ]
   }
 }

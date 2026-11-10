@@ -1,6 +1,7 @@
 import { escapeHtml } from './escape.js'
 import { compareSortKeys } from './sort.js'
 import {
+  RESIDENCY_ANCHOR,
   SEASON_NOTE,
   formatEstimate,
   formatSeasonCount,
@@ -133,14 +134,27 @@ const seasonPopulation = (row, season) => {
   return formatEstimate(row.estimate, row.format)
 }
 
+/** True when a seasonal family figure has a residency gap to explain. */
+const hasResidencyGap = (total) => Boolean(total?.unknown)
+
+const gapHref = (row) => `/family/${row.slug}#${RESIDENCY_ANCHOR}`
+
+const familySeasonHtml = (row, total, text) =>
+  hasResidencyGap(total)
+    ? `<a href="${escapeHtml(gapHref(row))}">${escapeHtml(text)}</a>`
+    : escapeHtml(text)
+
+const familySeasonMd = (row, total, text) =>
+  hasResidencyGap(total) ? `[${text}](${gapHref(row)})` : text
+
 const familyCells = (row, format) => ({
   en: `<th scope="row"${sortAttr(textOf(row.en))}><a href="/family/${escapeHtml(row.slug)}">${escapeHtml(row.en)}</a></th>`,
   af: `<td${sortAttr(textOf(row.af))}>${escapeHtml(row.af || '—')}</td>`,
   latin: `<td${sortAttr(textOf(row.scientificName))}><em>${escapeHtml(row.scientificName)}</em></td>`,
-  summer: `<td class="num"${sortAttr(familySortValue(row, 'summer'))}>${escapeHtml(formatSeasonTotal(row.summer, format))}</td>`,
-  winter: `<td class="num"${sortAttr(familySortValue(row, 'winter'))}>${escapeHtml(formatSeasonTotal(row.winter, format))}</td>`,
-  summerCount: `<td class="num"${sortAttr(familySortValue(row, 'summerCount'))}>${escapeHtml(formatSeasonCount(row.summer, format))}</td>`,
-  winterCount: `<td class="num"${sortAttr(familySortValue(row, 'winterCount'))}>${escapeHtml(formatSeasonCount(row.winter, format))}</td>`,
+  summer: `<td class="num"${sortAttr(familySortValue(row, 'summer'))}>${familySeasonHtml(row, row.summer, formatSeasonTotal(row.summer, format))}</td>`,
+  winter: `<td class="num"${sortAttr(familySortValue(row, 'winter'))}>${familySeasonHtml(row, row.winter, formatSeasonTotal(row.winter, format))}</td>`,
+  summerCount: `<td class="num"${sortAttr(familySortValue(row, 'summerCount'))}>${familySeasonHtml(row, row.summer, formatSeasonCount(row.summer, format))}</td>`,
+  winterCount: `<td class="num"${sortAttr(familySortValue(row, 'winterCount'))}>${familySeasonHtml(row, row.winter, formatSeasonCount(row.winter, format))}</td>`,
 })
 
 const tableHtml = ({ caption, columns, rows, cells, path, active, empty }) => {
@@ -239,10 +253,10 @@ const mdFamilyRow = (row, format) => {
     `[${row.en}](/family/${row.slug})`,
     row.af || '—',
     `*${row.scientificName}*`,
-    formatSeasonTotal(row.summer, format),
-    formatSeasonTotal(row.winter, format),
-    formatSeasonCount(row.summer, format),
-    formatSeasonCount(row.winter, format),
+    familySeasonMd(row, row.summer, formatSeasonTotal(row.summer, format)),
+    familySeasonMd(row, row.winter, formatSeasonTotal(row.winter, format)),
+    familySeasonMd(row, row.summer, formatSeasonCount(row.summer, format)),
+    familySeasonMd(row, row.winter, formatSeasonCount(row.winter, format)),
   ]
   return `| ${cells.map(mdCell).join(' | ')} |`
 }
