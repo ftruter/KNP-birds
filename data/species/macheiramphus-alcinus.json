@@ -191,10 +191,27 @@
       ]
     }
   ],
-  "images": [],
+  "images": [
+    {
+      "key": "macheiramphus-alcinus/flight-below.jpg",
+      "view": "flight-below",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "source": "https://www.inaturalist.org/observations/334597511",
+      "fileUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/607664679/large.jpg",
+      "author": "Niall Perrins",
+      "license": "CC BY-NC 4.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+      "aiGenerated": false,
+      "hosted": false,
+      "alt": "Bat Hawk in flight over the Mopani district, Kruger, dark with a white throat patch, seen from below.",
+      "caption": "Bat Hawk in flight over the Mopani district, Kruger, dark with a white throat patch, seen from below."
+    }
+  ],
   "research": {
     "confidence": "medium",
     "needsReview": true,
-    "note": "No seasonal plumage change is described in the sources consulted, except presence/absence of migrants. Gaps: No juvenile/immature image in selected set. No Kruger-labelled image in the selected set. Photos left out: The file is a Bat Hawk light aircraft, not the bird. No photograph of the bird is published. Colour phrases outside the vocabulary were stored as the nearest swatch: dark to dark-brown; pale yellow to yellow."
+    "note": "No seasonal plumage change is described in the sources consulted, except presence/absence of migrants. Gaps: No juvenile or immature photograph. A flight photograph from the Mopani district under an allowed licence is stored. Colour phrases outside the vocabulary were stored as the nearest swatch: dark to dark-brown; pale yellow to yellow."
   }
 }
