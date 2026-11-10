@@ -1,14 +1,130 @@
 {
+  "size": {
+    "lengthCm": {
+      "min": 12,
+      "max": 13
+    },
+    "note": "Newman's Birds gives 12-13 cm."
+  },
+  "habitat": "Singly or in pairs at forest fringes, in riverine forest and in broad-leaved woodland in moister regions.",
+  "summary": "A common localised resident. More dumpy than Spotted Flycatcher, with duskier underparts and faint smudges rather than streaks. The immature is like the adult. The calls are a thin zeeet and a tsi-ri-rt. The Kemp name Dusky Flycatcher and the code RB were left unchanged.",
+  "status": "resident",
+  "monthsPresent": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+  ],
+  "variants": [
+    {
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "marks": {
+        "bill": {
+          "colour": null,
+          "shape": null
+        },
+        "eye": {
+          "iris": null,
+          "ring": null
+        },
+        "legs": {
+          "colour": null
+        },
+        "head": {
+          "crown": null,
+          "face": null,
+          "throat": null
+        },
+        "upperparts": {
+          "back": null,
+          "rump": null
+        },
+        "underparts": {
+          "breast": null,
+          "belly": null,
+          "pattern": "Duskier than Spotted Flycatcher, with faint smudges rather than streaks."
+        },
+        "wings": {
+          "above": null,
+          "below": null
+        },
+        "tail": {
+          "colour": null,
+          "shape": null
+        }
+      }
+    }
+  ],
+  "viewNotes": [
+    {
+      "view": "perched-front",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Dumpy, with duskier underparts and faint smudges."
+    }
+  ],
+  "calls": [
+    {
+      "sex": "any",
+      "type": "call",
+      "description": "A thin sibilant zeeet and a characteristic tsi-ri-rt. The grade A call is from near Great Brak River. The filename is XC1163086-260222-081842-ADFlycatcher-A.mp3.",
+      "recordings": [
+        {
+          "key": "xeno-canto/XC1163086",
+          "source": "https://xeno-canto.org/1163086",
+          "fileUrl": "https://xeno-canto.org/sounds/uploaded/WSTMKZEHKY/XC1163086-260222-081842-ADFlycatcher-A.mp3",
+          "author": "Walter Wallner",
+          "license": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ]
+    }
+  ],
+  "images": [
+    {
+      "key": "muscicapa-adusta/side.jpg",
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "source": "https://www.inaturalist.org/observations/130677848",
+      "fileUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/222268269/large.jpg",
+      "author": "Maryse",
+      "license": "CC BY-NC 4.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+      "aiGenerated": false,
+      "hosted": false,
+      "alt": "African Dusky Flycatcher at Skukuza in Kruger",
+      "caption": "African Dusky Flycatcher at Skukuza in Kruger."
+    }
+  ],
+  "research": {
+    "confidence": "medium",
+    "needsReview": true,
+    "note": "Newman calls it a common localised resident, and Avibase does not mark it rare, so all twelve months are listed. Duskier is not a colour name. The grade A call is from the Western Cape. The Kemp name Dusky Flycatcher and the code RB were left unchanged."
+  },
   "kind": "species",
   "slug": "muscicapa-adusta",
+  "family": "muscicapidae",
+  "sampleData": false,
   "scientificName": "Muscicapa adusta",
   "commonNames": {
     "en": "African Dusky Flycatcher",
     "af": "Donkervlieëvanger"
   },
-  "family": "muscicapidae",
-  "summary": "The details for this species have not been published yet.",
-  "sampleData": true,
   "population": {
     "estimate": {
       "low": 512,
@@ -35,8 +151,24 @@
     },
     "tierApplied": "D"
   },
-  "variants": [],
-  "viewNotes": [],
-  "calls": [],
-  "images": []
+  "sources": [
+    {
+      "title": "African Dusky Flycatcher",
+      "url": "https://newmansbirds.com/birds/african-dusky-flycatcher/",
+      "publisher": "Newman's Birds",
+      "year": 2026
+    },
+    {
+      "title": "Avibase bird checklist — Kruger National Park",
+      "url": "https://avibase.bsc-eoc.org/checklist.jsp?region=ZA000003",
+      "publisher": "Avibase",
+      "year": null
+    },
+    {
+      "title": "Kemp A.C., Herholdt J.J., Whyte I. & Harrison J. (2001). Birds of the two largest national parks in South Africa: a method to generate estimates of population size for all species and assess their conservation ecology. S. Afr. J. Sci. 97: 393–403.",
+      "url": "https://journals.co.za/doi/pdf/10.10520/EJC97367",
+      "publisher": "South African Journal of Science",
+      "year": 2001
+    }
+  ]
 }

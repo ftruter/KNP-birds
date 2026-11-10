@@ -1,10 +1,10 @@
 {
   "source": "xeno-canto explore catalogue, API v3 recording fields",
   "counts": {
-    "slots": 502,
+    "slots": 526,
     "swapped": 17,
     "added": 278,
-    "kept": 179,
+    "kept": 203,
     "none": 28,
     "cleaned": 0
   },
@@ -263,6 +263,22 @@
       "license": "CC BY-NC-SA 4.0"
     },
     {
+      "slug": "agricola-pallidus",
+      "scientificName": "Agricola pallidus",
+      "index": 0,
+      "type": "call",
+      "action": "kept",
+      "from": [
+        "660760"
+      ],
+      "to": "660760",
+      "quality": "A",
+      "country": "Zambia",
+      "locality": "Mutinondo",
+      "cleaned": false,
+      "license": "CC BY-NC-SA 4.0"
+    },
+    {
       "slug": "alcedo-semitorquata",
       "scientificName": "Alcedo semitorquata",
       "index": 0,
@@ -507,6 +523,22 @@
       "quality": "A",
       "country": "South Africa",
       "locality": "Kruger Park, near Skukuza",
+      "cleaned": false,
+      "license": "CC BY-NC-SA 4.0"
+    },
+    {
+      "slug": "bradornis-mariquensis",
+      "scientificName": "Bradornis mariquensis",
+      "index": 0,
+      "type": "call",
+      "action": "kept",
+      "from": [
+        "1059224"
+      ],
+      "to": "1059224",
+      "quality": "A",
+      "country": "Namibia",
+      "locality": "Big Cats farmstay",
       "cleaned": false,
       "license": "CC BY-NC-SA 4.0"
     },
@@ -769,6 +801,22 @@
       "license": "CC BY-NC-SA 4.0"
     },
     {
+      "slug": "cercotrichas-leucophrys",
+      "scientificName": "Cercotrichas leucophrys",
+      "index": 0,
+      "type": "song",
+      "action": "kept",
+      "from": [
+        "872615"
+      ],
+      "to": "872615",
+      "quality": "A",
+      "country": "South Africa",
+      "locality": "Kruger",
+      "cleaned": false,
+      "license": "CC BY-NC-SA 4.0"
+    },
+    {
       "slug": "ceryle-rudis",
       "scientificName": "Ceryle rudis",
       "index": 0,
@@ -831,6 +879,22 @@
       "quality": "A",
       "country": "South Africa",
       "locality": "Mjejane Private Game Reserve, Hectorspruit, Mpumalanga",
+      "cleaned": false,
+      "license": "CC BY-NC-SA 4.0"
+    },
+    {
+      "slug": "cichladusa-arquata",
+      "scientificName": "Cichladusa arquata",
+      "index": 0,
+      "type": "song",
+      "action": "kept",
+      "from": [
+        "791944"
+      ],
+      "to": "791944",
+      "quality": "A",
+      "country": "Kenya",
+      "locality": "Mida Creek",
       "cleaned": false,
       "license": "CC BY-NC-SA 4.0"
     },
@@ -1069,6 +1133,54 @@
       "license": "CC BY-NC-SA 4.0"
     },
     {
+      "slug": "cossypha-dichroa",
+      "scientificName": "Cossypha dichroa",
+      "index": 0,
+      "type": "song",
+      "action": "kept",
+      "from": [
+        "273367"
+      ],
+      "to": "273367",
+      "quality": "A",
+      "country": "South Africa",
+      "locality": "near Komga",
+      "cleaned": false,
+      "license": "CC BY-NC-SA 4.0"
+    },
+    {
+      "slug": "cossypha-heuglini",
+      "scientificName": "Cossypha heuglini",
+      "index": 0,
+      "type": "song",
+      "action": "kept",
+      "from": [
+        "365336"
+      ],
+      "to": "365336",
+      "quality": "A",
+      "country": "South Africa",
+      "locality": "near Hazyview",
+      "cleaned": false,
+      "license": "CC BY-NC-SA 4.0"
+    },
+    {
+      "slug": "cossypha-natalensis",
+      "scientificName": "Cossypha natalensis",
+      "index": 0,
+      "type": "call",
+      "action": "kept",
+      "from": [
+        "349556"
+      ],
+      "to": "349556",
+      "quality": "A",
+      "country": "South Africa",
+      "locality": "St Lucia",
+      "cleaned": false,
+      "license": "CC BY-NC-SA 4.0"
+    },
+    {
       "slug": "creatophora-cinerea",
       "scientificName": "Creatophora cinerea",
       "index": 0,
@@ -1161,6 +1273,38 @@
       "quality": "A",
       "country": "South Africa",
       "locality": "Wild Fig Farm, Wild Fig Country Estate",
+      "cleaned": false,
+      "license": "CC BY-NC-SA 4.0"
+    },
+    {
+      "slug": "dessonornis-caffer",
+      "scientificName": "Dessonornis caffer",
+      "index": 0,
+      "type": "song",
+      "action": "kept",
+      "from": [
+        "1049112"
+      ],
+      "to": "1049112",
+      "quality": "A",
+      "country": "South Africa",
+      "locality": "Cape Town",
+      "cleaned": false,
+      "license": "CC BY-NC-SA 4.0"
+    },
+    {
+      "slug": "dessonornis-humeralis",
+      "scientificName": "Dessonornis humeralis",
+      "index": 0,
+      "type": "call",
+      "action": "kept",
+      "from": [
+        "1001867"
+      ],
+      "to": "1001867",
+      "quality": "A",
+      "country": "South Africa",
+      "locality": "Kruger near Skukuza",
       "cleaned": false,
       "license": "CC BY-NC-SA 4.0"
     },
@@ -1275,6 +1419,38 @@
       "quality": "A",
       "country": "Zambia",
       "locality": "Kasanka National Park",
+      "cleaned": false,
+      "license": "CC BY-NC-SA 4.0"
+    },
+    {
+      "slug": "fraseria-caerulescens",
+      "scientificName": "Fraseria caerulescens",
+      "index": 0,
+      "type": "call",
+      "action": "kept",
+      "from": [
+        "1145642"
+      ],
+      "to": "1145642",
+      "quality": "A",
+      "country": "South Africa",
+      "locality": "Kruger near Skukuza",
+      "cleaned": false,
+      "license": "CC BY-NC-SA 4.0"
+    },
+    {
+      "slug": "fraseria-plumbea",
+      "scientificName": "Fraseria plumbea",
+      "index": 0,
+      "type": "call",
+      "action": "kept",
+      "from": [
+        "1023579"
+      ],
+      "to": "1023579",
+      "quality": "A",
+      "country": "South Africa",
+      "locality": "Hoedspruit",
       "cleaned": false,
       "license": "CC BY-NC-SA 4.0"
     },
@@ -1794,6 +1970,22 @@
       "license": "CC BY-NC-SA 4.0"
     },
     {
+      "slug": "luscinia-luscinia",
+      "scientificName": "Luscinia luscinia",
+      "index": 0,
+      "type": "song",
+      "action": "kept",
+      "from": [
+        "1138542"
+      ],
+      "to": "1138542",
+      "quality": "A",
+      "country": "Sweden",
+      "locality": "Pilkrogsviken",
+      "cleaned": false,
+      "license": "CC BY-NC-SA 4.0"
+    },
+    {
       "slug": "lybius-torquatus",
       "scientificName": "Lybius torquatus",
       "index": 0,
@@ -1842,6 +2034,22 @@
       "quality": "A",
       "country": "South Africa",
       "locality": "Kruger Park (near Skukuza), Ehlanzeni District Municipality, Mpumalanga",
+      "cleaned": false,
+      "license": "CC BY-NC-SA 4.0"
+    },
+    {
+      "slug": "melaenornis-pammelaina",
+      "scientificName": "Melaenornis pammelaina",
+      "index": 0,
+      "type": "call",
+      "action": "kept",
+      "from": [
+        "307193"
+      ],
+      "to": "307193",
+      "quality": "A",
+      "country": "South Africa",
+      "locality": "Vaalkop Dam",
       "cleaned": false,
       "license": "CC BY-NC-SA 4.0"
     },
@@ -1900,6 +2108,54 @@
       "license": "CC BY-NC-SA 3.0"
     },
     {
+      "slug": "monticola-rupestris",
+      "scientificName": "Monticola rupestris",
+      "index": 0,
+      "type": "song",
+      "action": "kept",
+      "from": [
+        "247950"
+      ],
+      "to": "247950",
+      "quality": "A",
+      "country": "South Africa",
+      "locality": "Grahamstown",
+      "cleaned": false,
+      "license": "CC BY-NC-SA 4.0"
+    },
+    {
+      "slug": "muscicapa-adusta",
+      "scientificName": "Muscicapa adusta",
+      "index": 0,
+      "type": "call",
+      "action": "kept",
+      "from": [
+        "1163086"
+      ],
+      "to": "1163086",
+      "quality": "A",
+      "country": "South Africa",
+      "locality": "near Great Brak River",
+      "cleaned": false,
+      "license": "CC BY-NC-SA 4.0"
+    },
+    {
+      "slug": "myrmecocichla-arnotti",
+      "scientificName": "Myrmecocichla arnotti",
+      "index": 0,
+      "type": "call",
+      "action": "kept",
+      "from": [
+        "625567"
+      ],
+      "to": "625567",
+      "quality": "A",
+      "country": "South Africa",
+      "locality": "Kruger",
+      "cleaned": false,
+      "license": "CC BY-NC-SA 4.0"
+    },
+    {
       "slug": "necrosyrtes-monachus",
       "scientificName": "Necrosyrtes monachus",
       "index": 0,
@@ -1926,6 +2182,38 @@
       "quality": "A",
       "country": "South Africa",
       "locality": "Grahamstown, Eastern Cape",
+      "cleaned": false,
+      "license": "CC BY-NC-SA 4.0"
+    },
+    {
+      "slug": "oenanthe-familiaris",
+      "scientificName": "Oenanthe familiaris",
+      "index": 0,
+      "type": "call",
+      "action": "kept",
+      "from": [
+        "1009198"
+      ],
+      "to": "1009198",
+      "quality": "A",
+      "country": "South Africa",
+      "locality": "Hillcrest",
+      "cleaned": false,
+      "license": "CC BY-NC-SA 4.0"
+    },
+    {
+      "slug": "oenanthe-pileata",
+      "scientificName": "Oenanthe pileata",
+      "index": 0,
+      "type": "song",
+      "action": "kept",
+      "from": [
+        "596088"
+      ],
+      "to": "596088",
+      "quality": "A",
+      "country": "South Africa",
+      "locality": "Karoo Gariep",
       "cleaned": false,
       "license": "CC BY-NC-SA 4.0"
     },
@@ -2252,6 +2540,22 @@
       "license": "CC BY-NC-SA 4.0"
     },
     {
+      "slug": "pogonocichla-stellata",
+      "scientificName": "Pogonocichla stellata",
+      "index": 0,
+      "type": "call",
+      "action": "kept",
+      "from": [
+        "527275"
+      ],
+      "to": "527275",
+      "quality": "A",
+      "country": "Kenya",
+      "locality": "Mount Kenya",
+      "cleaned": false,
+      "license": "CC BY-NC-SA 4.0"
+    },
+    {
       "slug": "poicephalus-cryptoxanthus",
       "scientificName": "Poicephalus cryptoxanthus",
       "index": 0,
@@ -2544,6 +2848,22 @@
       "license": "CC BY-NC-SA 4.0"
     },
     {
+      "slug": "saxicola-torquatus",
+      "scientificName": "Saxicola torquatus",
+      "index": 0,
+      "type": "call",
+      "action": "kept",
+      "from": [
+        "828513"
+      ],
+      "to": "828513",
+      "quality": "A",
+      "country": "South Africa",
+      "locality": "Reddersburg",
+      "cleaned": false,
+      "license": "CC BY-NC-SA 4.0"
+    },
+    {
       "slug": "scopus-umbretta",
       "scientificName": "Scopus umbretta",
       "index": 0,
@@ -2572,6 +2892,22 @@
       "quality": "A",
       "country": "Gabon",
       "locality": "Ndola Lodge, Tassi",
+      "cleaned": false,
+      "license": "CC BY-NC-SA 4.0"
+    },
+    {
+      "slug": "sigelus-silens",
+      "scientificName": "Sigelus silens",
+      "index": 0,
+      "type": "song",
+      "action": "kept",
+      "from": [
+        "287453"
+      ],
+      "to": "287453",
+      "quality": "A",
+      "country": "South Africa",
+      "locality": "Cradock",
       "cleaned": false,
       "license": "CC BY-NC-SA 4.0"
     },
@@ -2771,6 +3107,22 @@
       "quality": "A",
       "country": "South Africa",
       "locality": "Skukuza",
+      "cleaned": false,
+      "license": "CC BY-NC-SA 4.0"
+    },
+    {
+      "slug": "thamnolaea-cinnamomeiventris",
+      "scientificName": "Thamnolaea cinnamomeiventris",
+      "index": 0,
+      "type": "song",
+      "action": "kept",
+      "from": [
+        "368166"
+      ],
+      "to": "368166",
+      "quality": "A",
+      "country": "South Africa",
+      "locality": "Kruger, Mlondozi",
       "cleaned": false,
       "license": "CC BY-NC-SA 4.0"
     },
@@ -4477,6 +4829,38 @@
       "quality": "B",
       "country": "South Africa",
       "locality": "Bedford, Eastern Cape",
+      "cleaned": false,
+      "license": "CC BY-NC-SA 4.0"
+    },
+    {
+      "slug": "tychaedon-quadrivirgata",
+      "scientificName": "Tychaedon quadrivirgata",
+      "index": 0,
+      "type": "song",
+      "action": "kept",
+      "from": [
+        "1142770"
+      ],
+      "to": "1142770",
+      "quality": "A",
+      "country": "South Africa",
+      "locality": "Kruger near Skukuza",
+      "cleaned": false,
+      "license": "CC BY-NC-SA 4.0"
+    },
+    {
+      "slug": "tychaedon-signata",
+      "scientificName": "Tychaedon signata",
+      "index": 0,
+      "type": "alarm",
+      "action": "kept",
+      "from": [
+        "323553"
+      ],
+      "to": "323553",
+      "quality": "A",
+      "country": "South Africa",
+      "locality": "Port Alfred",
       "cleaned": false,
       "license": "CC BY-NC-SA 4.0"
     },

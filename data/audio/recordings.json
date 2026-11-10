@@ -105,6 +105,16 @@
         }
       ]
     },
+    "agricola-pallidus": {
+      "calls": [
+        {
+          "index": 0,
+          "quality": {
+            "xeno-canto/XC660760": "A"
+          }
+        }
+      ]
+    },
     "alcedo-semitorquata": {
       "calls": [
         {
@@ -654,6 +664,16 @@
         }
       ]
     },
+    "bradornis-mariquensis": {
+      "calls": [
+        {
+          "index": 0,
+          "quality": {
+            "xeno-canto/XC1059224": "A"
+          }
+        }
+      ]
+    },
     "bradypterus-baboecala": {
       "calls": [
         {
@@ -1053,6 +1073,16 @@
         }
       ]
     },
+    "cercotrichas-leucophrys": {
+      "calls": [
+        {
+          "index": 0,
+          "quality": {
+            "xeno-canto/XC872615": "A"
+          }
+        }
+      ]
+    },
     "ceryle-rudis": {
       "calls": [
         {
@@ -1097,6 +1127,16 @@
           "index": 1,
           "quality": {
             "xeno-canto/XC323354": "A"
+          }
+        }
+      ]
+    },
+    "cichladusa-arquata": {
+      "calls": [
+        {
+          "index": 0,
+          "quality": {
+            "xeno-canto/XC791944": "A"
           }
         }
       ]
@@ -1518,6 +1558,36 @@
         }
       ]
     },
+    "cossypha-dichroa": {
+      "calls": [
+        {
+          "index": 0,
+          "quality": {
+            "xeno-canto/XC273367": "A"
+          }
+        }
+      ]
+    },
+    "cossypha-heuglini": {
+      "calls": [
+        {
+          "index": 0,
+          "quality": {
+            "xeno-canto/XC365336": "A"
+          }
+        }
+      ]
+    },
+    "cossypha-natalensis": {
+      "calls": [
+        {
+          "index": 0,
+          "quality": {
+            "xeno-canto/XC349556": "A"
+          }
+        }
+      ]
+    },
     "creatophora-cinerea": {
       "calls": [
         {
@@ -1604,6 +1674,26 @@
           "index": 0,
           "quality": {
             "xeno-canto/XC650855": "A"
+          }
+        }
+      ]
+    },
+    "dessonornis-caffer": {
+      "calls": [
+        {
+          "index": 0,
+          "quality": {
+            "xeno-canto/XC1049112": "A"
+          }
+        }
+      ]
+    },
+    "dessonornis-humeralis": {
+      "calls": [
+        {
+          "index": 0,
+          "quality": {
+            "xeno-canto/XC1001867": "A"
           }
         }
       ]
@@ -1760,6 +1850,26 @@
           "index": 0,
           "quality": {
             "xeno-canto/XC745582": "A"
+          }
+        }
+      ]
+    },
+    "fraseria-caerulescens": {
+      "calls": [
+        {
+          "index": 0,
+          "quality": {
+            "xeno-canto/XC1145642": "A"
+          }
+        }
+      ]
+    },
+    "fraseria-plumbea": {
+      "calls": [
+        {
+          "index": 0,
+          "quality": {
+            "xeno-canto/XC1023579": "A"
           }
         }
       ]
@@ -2212,6 +2322,16 @@
         }
       ]
     },
+    "luscinia-luscinia": {
+      "calls": [
+        {
+          "index": 0,
+          "quality": {
+            "xeno-canto/XC1138542": "A"
+          }
+        }
+      ]
+    },
     "lybius-torquatus": {
       "calls": [
         {
@@ -2250,6 +2370,16 @@
             "xeno-canto/XC1152464": "A",
             "xeno-canto/XC694496": "A",
             "xeno-canto/XC811972": "A"
+          }
+        }
+      ]
+    },
+    "melaenornis-pammelaina": {
+      "calls": [
+        {
+          "index": 0,
+          "quality": {
+            "xeno-canto/XC307193": "A"
           }
         }
       ]
@@ -2316,12 +2446,42 @@
         }
       ]
     },
+    "monticola-rupestris": {
+      "calls": [
+        {
+          "index": 0,
+          "quality": {
+            "xeno-canto/XC247950": "A"
+          }
+        }
+      ]
+    },
+    "muscicapa-adusta": {
+      "calls": [
+        {
+          "index": 0,
+          "quality": {
+            "xeno-canto/XC1163086": "A"
+          }
+        }
+      ]
+    },
     "mycteria-ibis": {
       "calls": [
         {
           "index": 0,
           "quality": {
             "xeno-canto/XC337857": "B"
+          }
+        }
+      ]
+    },
+    "myrmecocichla-arnotti": {
+      "calls": [
+        {
+          "index": 0,
+          "quality": {
+            "xeno-canto/XC625567": "A"
           }
         }
       ]
@@ -2408,6 +2568,26 @@
           "index": 0,
           "quality": {
             "xeno-canto/XC496248": "A"
+          }
+        }
+      ]
+    },
+    "oenanthe-familiaris": {
+      "calls": [
+        {
+          "index": 0,
+          "quality": {
+            "xeno-canto/XC1009198": "A"
+          }
+        }
+      ]
+    },
+    "oenanthe-pileata": {
+      "calls": [
+        {
+          "index": 0,
+          "quality": {
+            "xeno-canto/XC596088": "A"
           }
         }
       ]
@@ -2636,6 +2816,16 @@
         }
       ]
     },
+    "pogonocichla-stellata": {
+      "calls": [
+        {
+          "index": 0,
+          "quality": {
+            "xeno-canto/XC527275": "A"
+          }
+        }
+      ]
+    },
     "poicephalus-cryptoxanthus": {
       "calls": [
         {
@@ -2860,6 +3050,16 @@
         }
       ]
     },
+    "saxicola-torquatus": {
+      "calls": [
+        {
+          "index": 0,
+          "quality": {
+            "xeno-canto/XC828513": "A"
+          }
+        }
+      ]
+    },
     "scopus-umbretta": {
       "calls": [
         {
@@ -2876,6 +3076,16 @@
           "index": 0,
           "quality": {
             "xeno-canto/XC1190285": "A"
+          }
+        }
+      ]
+    },
+    "sigelus-silens": {
+      "calls": [
+        {
+          "index": 0,
+          "quality": {
+            "xeno-canto/XC287453": "A"
           }
         }
       ]
@@ -3087,6 +3297,16 @@
         }
       ]
     },
+    "thamnolaea-cinnamomeiventris": {
+      "calls": [
+        {
+          "index": 0,
+          "quality": {
+            "xeno-canto/XC368166": "A"
+          }
+        }
+      ]
+    },
     "thinornis-tricollaris": {
       "calls": [
         {
@@ -3283,6 +3503,26 @@
           "index": 0,
           "quality": {
             "xeno-canto/XC492722": "A"
+          }
+        }
+      ]
+    },
+    "tychaedon-quadrivirgata": {
+      "calls": [
+        {
+          "index": 0,
+          "quality": {
+            "xeno-canto/XC1142770": "A"
+          }
+        }
+      ]
+    },
+    "tychaedon-signata": {
+      "calls": [
+        {
+          "index": 0,
+          "quality": {
+            "xeno-canto/XC323553": "A"
           }
         }
       ]

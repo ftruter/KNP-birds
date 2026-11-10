@@ -6,8 +6,8 @@
     "en": "Chats and Old World flycatchers",
     "af": "Vlieëvangers"
   },
-  "summary": "Field notes for this family are still to be written.",
-  "sampleData": true,
+  "summary": "Chats, robin-chats, scrub robins and flycatchers. The robin-chats are the orange songsters of thickets. Several flycatchers are plain, and their colours are left unset where Newman does not name them.",
+  "sampleData": false,
   "species": [
     {
       "slug": "agricola-pallidus",

@@ -123,7 +123,7 @@ test('home json lists families and leaves the species index at /species', async 
   assert.doesNotMatch(markdown, /## Species/)
 })
 
-test('a species stub renders in html, markdown, and json', async () => {
+test('the Thrush Nightingale renders as a published species in html, markdown, and json', async () => {
   const { records } = await loadStore()
   const site = await app(records)
   const html = await site.fetch('/species/luscinia-luscinia')
@@ -132,11 +132,11 @@ test('a species stub renders in html, markdown, and json', async () => {
   const htmlBody = await html.text()
   assert.match(htmlBody, /Thrush Nightingale/)
   assert.match(htmlBody, /Lysternagtegaal/)
-  assert.match(
+  assert.doesNotMatch(
     htmlBody,
     /The details for this species have not been published yet/,
   )
-  assert.doesNotMatch(htmlBody, /Telling it apart/)
+  assert.match(htmlBody, /Telling it apart/)
   assert.match(
     htmlBody,
     /<script type="module" defer src="\/app\.js\?v=[0-9a-f]+"><\/script>/,
@@ -147,7 +147,7 @@ test('a species stub renders in html, markdown, and json', async () => {
     markdown.headers.get('content-type'),
     'text/markdown; charset=utf-8',
   )
-  assert.match(
+  assert.doesNotMatch(
     await markdown.text(),
     /The details for this species have not been published yet/,
   )
@@ -156,9 +156,10 @@ test('a species stub renders in html, markdown, and json', async () => {
   ).json()
   assert.equal(json.scientificName, 'Luscinia luscinia')
   assert.equal(json.family, 'muscicapidae')
-  assert.deepEqual(json.variants, [])
-  assert.deepEqual(json.calls, [])
-  assert.deepEqual(json.images, [])
+  assert.equal(json.sampleData, false)
+  assert.ok(json.variants.length > 0)
+  assert.ok(json.calls.length > 0)
+  assert.ok(json.images.length > 0)
   assert.equal(json.population.estimate.low, 128)
   assert.equal(json.population.estimate.high, 512)
   assert.equal(json.population.unit, 'matureIndividuals')
