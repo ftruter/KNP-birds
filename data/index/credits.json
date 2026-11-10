@@ -6170,7 +6170,17 @@
       "slug": "ceblepyris-caesius",
       "scientificName": "Ceblepyris caesius",
       "commonName": "Grey Cuckooshrike",
-      "images": [],
+      "images": [
+        {
+          "key": "ceblepyris-caesius/side.jpg",
+          "author": "Innes Buchner",
+          "licence": "CC0 1.0",
+          "licenceUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+          "sourceUrl": "https://www.inaturalist.org/observations/316812090",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ],
       "recordings": [
         {
           "key": "xeno-canto/XC443640",
