@@ -177,10 +177,27 @@
       ]
     }
   ],
-  "images": [],
+  "images": [
+    {
+      "key": "corvus-capensis/side.jpg",
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "source": "https://www.inaturalist.org/observations/290416943",
+      "fileUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/522435483/large.jpg",
+      "author": "bdhimes",
+      "license": "CC0 1.0",
+      "licenceUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "aiGenerated": false,
+      "hosted": false,
+      "alt": "Cape Crow at Addo Elephant National Park, not Kruger, all black, standing in dry grass.",
+      "caption": "Cape Crow at Addo Elephant National Park, not Kruger, all black, standing in dry grass."
+    }
+  ],
   "research": {
     "confidence": "medium",
     "needsReview": true,
-    "note": "Status is resident and all twelve months are listed. Newman calls it a common resident. Population figures were left unchanged."
+    "note": "Status is resident and all twelve months are listed. Newman calls it a common resident. No Kruger photograph was found under an allowed licence. A side photograph from Addo Elephant National Park is stored. Population figures were left unchanged."
   }
 }

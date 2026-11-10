@@ -29,5 +29,7 @@ test('all three crows are sourced without changing populations', async () => {
     )
   }
   const cape = await readJson('data/species/corvus-capensis.json')
-  assert.equal(cape.images.length, 0)
+  assert.equal(cape.images.length, 1)
+  assert.equal(cape.images[0].license, 'CC0 1.0')
+  assert.match(cape.images[0].caption, /not Kruger/)
 })
