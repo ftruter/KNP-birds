@@ -9835,7 +9835,17 @@
       "slug": "corvus-capensis",
       "scientificName": "Corvus capensis",
       "commonName": "Cape Crow",
-      "images": [],
+      "images": [
+        {
+          "key": "corvus-capensis/side.jpg",
+          "author": "bdhimes",
+          "licence": "CC0 1.0",
+          "licenceUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+          "sourceUrl": "https://www.inaturalist.org/observations/290416943",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ],
       "recordings": [
         {
           "key": "xeno-canto/XC247932",
