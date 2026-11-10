@@ -158,8 +158,19 @@
     {
       "sex": "any",
       "type": "call",
-      "description": "No usable recording was found.",
-      "recordings": []
+      "description": "Xeno-canto files this species as Columba larvata. The catalogue cut is a call, grade A, from South Africa. Port Alfred, Eastern Cape, not Kruger.",
+      "recordings": [
+        {
+          "key": "xeno-canto/XC497030",
+          "source": "https://xeno-canto.org/497030",
+          "fileUrl": "https://xeno-canto.org/sounds/uploaded/SGLTZLDXYI/XC497030-Lemon%20Dove%20brilliant%20clear.mp3",
+          "author": "Lynette Rudman",
+          "license": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ]
     }
   ],
   "images": [
@@ -183,6 +194,6 @@
   "research": {
     "confidence": "medium",
     "needsReview": true,
-    "note": "Population figures were left unchanged."
+    "note": "Population figures were left unchanged. The call is grade A from the Eastern Cape, listed on xeno-canto under Columba larvata."
   }
 }
