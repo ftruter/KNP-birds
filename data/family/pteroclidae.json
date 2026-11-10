@@ -6,8 +6,8 @@
     "en": "Sandgrouse",
     "af": "Sandpatryse"
   },
-  "summary": "Field notes for this family are still to be written.",
-  "sampleData": true,
+  "summary": "Sandgrouse. Double-banded Sandgrouse is the only species in this list. The male has a white and black breast-band, black-and-white bars on the forehead, and white spots on the back. The female is almost completely speckled. Both have fine black barring on the belly.",
+  "sampleData": false,
   "species": [
     {
       "slug": "pterocles-bicinctus",
