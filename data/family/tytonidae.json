@@ -6,8 +6,8 @@
     "en": "Barn owls",
     "af": "Tyto-uile"
   },
-  "summary": "Field notes for this family are still to be written.",
-  "sampleData": true,
+  "summary": "Western Barn Owl. A pale owl with a whitish heart-shaped face and spotted underparts, often roosting in buildings or large trees.",
+  "sampleData": false,
   "species": [
     {
       "slug": "tyto-alba",

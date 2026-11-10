@@ -1,10 +1,10 @@
 {
   "source": "xeno-canto explore catalogue, API v3 recording fields",
   "counts": {
-    "slots": 477,
+    "slots": 478,
     "swapped": 17,
     "added": 278,
-    "kept": 154,
+    "kept": 155,
     "none": 28,
     "cleaned": 0
   },
@@ -4221,6 +4221,22 @@
       "quality": "B",
       "country": "South Africa",
       "locality": "Bedford, Eastern Cape",
+      "cleaned": false,
+      "license": "CC BY-NC-SA 4.0"
+    },
+    {
+      "slug": "tyto-alba",
+      "scientificName": "Tyto alba",
+      "index": 0,
+      "type": "call",
+      "action": "kept",
+      "from": [
+        "353109"
+      ],
+      "to": "353109",
+      "quality": "A",
+      "country": "South Africa",
+      "locality": "Breede River, Western Cape",
       "cleaned": false,
       "license": "CC BY-NC-SA 4.0"
     },

@@ -3127,6 +3127,16 @@
         }
       ]
     },
+    "tyto-alba": {
+      "calls": [
+        {
+          "index": 0,
+          "quality": {
+            "xeno-canto/XC353109": "A"
+          }
+        }
+      ]
+    },
     "urocolius-indicus": {
       "calls": [
         {

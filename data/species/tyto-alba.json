@@ -7,8 +7,36 @@
     "af": "Nonnetjie-uil"
   },
   "family": "tytonidae",
-  "summary": "The details for this species have not been published yet.",
-  "sampleData": true,
+  "size": {
+    "lengthCm": {
+      "min": 30,
+      "max": 33
+    },
+    "note": "Newman's Birds gives 30–33 cm."
+  },
+  "habitat": "Singly or in pairs in a variety of habitats, including suburbia. It roosts and breeds in large trees, caves, buildings and Hamerkop nests.",
+  "summary": "A common resident. A pale, slim owl with a whitish heart-shaped facial disc and whitish spotted underparts. The upperparts are grey and tawny and spotted, paler than African Grass Owl. The call is an eerie wavering screech. The Kemp name Barn Owl and the code VB were left unchanged.",
+  "sampleData": false,
+  "sources": [
+    {
+      "title": "Western Barn Owl",
+      "url": "https://newmansbirds.com/birds/western-barn-owl/",
+      "publisher": "Newman's Birds",
+      "year": 2026
+    },
+    {
+      "title": "Avibase bird checklist — Kruger National Park",
+      "url": "https://avibase.bsc-eoc.org/checklist.jsp?region=ZA000003",
+      "publisher": "Avibase",
+      "year": null
+    },
+    {
+      "title": "Kemp A.C., Herholdt J.J., Whyte I. & Harrison J. (2001). Birds of the two largest national parks in South Africa: a method to generate estimates of population size for all species and assess their conservation ecology. S. Afr. J. Sci. 97: 393–403.",
+      "url": "https://journals.co.za/doi/pdf/10.10520/EJC97367",
+      "publisher": "South African Journal of Science",
+      "year": 2001
+    }
+  ],
   "population": {
     "estimate": {
       "low": 2048,
@@ -35,8 +63,142 @@
     },
     "tierApplied": "D"
   },
-  "variants": [],
-  "viewNotes": [],
-  "calls": [],
-  "images": []
+  "variants": [
+    {
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "marks": {
+        "bill": {
+          "colour": null,
+          "shape": null
+        },
+        "eye": {
+          "iris": null,
+          "ring": null
+        },
+        "legs": {
+          "colour": null
+        },
+        "head": {
+          "crown": null,
+          "face": "white",
+          "throat": "white",
+          "pattern": "Whitish heart-shaped facial disc."
+        },
+        "upperparts": {
+          "back": null,
+          "rump": null,
+          "pattern": "Grey and tawny, spotted. Paler than African Grass Owl."
+        },
+        "underparts": {
+          "breast": "white",
+          "belly": "white",
+          "pattern": "Whitish and spotted."
+        },
+        "wings": {
+          "above": null,
+          "below": null
+        },
+        "tail": {
+          "colour": null,
+          "shape": null
+        }
+      }
+    }
+  ],
+  "viewNotes": [
+    {
+      "view": "perched-front",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Whitish heart-shaped facial disc and spotted whitish underparts."
+    },
+    {
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Pale and slim, with spotted underparts."
+    },
+    {
+      "view": "perched-back",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Grey and tawny upperparts with spots."
+    },
+    {
+      "view": "flight-above",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Flight plumage is not described separately."
+    },
+    {
+      "view": "flight-below",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "Whitish underparts. The underwing colour is not given."
+    }
+  ],
+  "calls": [
+    {
+      "sex": "any",
+      "type": "call",
+      "description": "An eerie, wavering screech. The grade A call is from the Breede River valley in the Western Cape. The filename is XC353109-MVI_1560 barn owl pair.mp3.",
+      "recordings": [
+        {
+          "key": "xeno-canto/XC353109",
+          "source": "https://xeno-canto.org/353109",
+          "fileUrl": "https://xeno-canto.org/sounds/uploaded/YNRAJPRZMT/XC353109-MVI_1560%20barn%20owl%20pair.mp3",
+          "author": "Marion Maclean",
+          "license": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ]
+    }
+  ],
+  "images": [
+    {
+      "key": "tyto-alba/front.jpg",
+      "view": "perched-front",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "source": "https://www.inaturalist.org/observations/15040621",
+      "fileUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/22450068/large.jpg",
+      "author": "Peter Thompson",
+      "license": "CC BY-NC 4.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+      "aiGenerated": false,
+      "hosted": false,
+      "alt": "Western Barn Owl at Lower Sabie in Kruger, with a pale heart-shaped face",
+      "caption": "Western Barn Owl at Lower Sabie in Kruger, with a pale heart-shaped face and spotted underparts."
+    }
+  ],
+  "research": {
+    "confidence": "medium",
+    "needsReview": true,
+    "note": "Newman calls it a common resident, and Avibase does not mark it rare, so all twelve months are listed. Grey and tawny are both named for the upperparts, so no single back colour is stored. The grade A call is from the Western Cape. The Kemp name Barn Owl and the code VB were left unchanged."
+  },
+  "status": "resident",
+  "monthsPresent": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+  ]
 }
