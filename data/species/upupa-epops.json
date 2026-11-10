@@ -7,8 +7,36 @@
     "af": "Hoephoep"
   },
   "family": "upupidae",
-  "summary": "The details for this species have not been published yet.",
-  "sampleData": true,
+  "size": {
+    "lengthCm": {
+      "min": 27,
+      "max": 27
+    },
+    "note": "Newman's Birds gives 27 cm."
+  },
+  "habitat": "Singly or in pairs in open woodland, bushveld, parks and gardens. It walks and probes the ground, and breeds in existing holes in trees, buildings, cliffs or the ground.",
+  "summary": "A common resident. The crest, head and body are rufous, and the wings are black and white. The crest is usually held down. The female and immature are paler than the male, and the female’s secondaries are barred black. The flight is undulating and butterfly-like. The call is hoop-hoop. The page uses Upupa africana. This list keeps Upupa epops. The Kemp name Hoopoe and the code RB were left unchanged.",
+  "sampleData": false,
+  "sources": [
+    {
+      "title": "African Hoopoe",
+      "url": "https://newmansbirds.com/birds/african-hoopoe/",
+      "publisher": "Newman's Birds",
+      "year": 2026
+    },
+    {
+      "title": "Avibase bird checklist — Kruger National Park",
+      "url": "https://avibase.bsc-eoc.org/checklist.jsp?region=ZA000003",
+      "publisher": "Avibase",
+      "year": null
+    },
+    {
+      "title": "Kemp A.C., Herholdt J.J., Whyte I. & Harrison J. (2001). Birds of the two largest national parks in South Africa: a method to generate estimates of population size for all species and assess their conservation ecology. S. Afr. J. Sci. 97: 393–403.",
+      "url": "https://journals.co.za/doi/pdf/10.10520/EJC97367",
+      "publisher": "South African Journal of Science",
+      "year": 2001
+    }
+  ],
   "population": {
     "estimate": {
       "low": 4096,
@@ -35,8 +63,183 @@
     },
     "tierApplied": "D"
   },
-  "variants": [],
-  "viewNotes": [],
-  "calls": [],
-  "images": []
+  "variants": [
+    {
+      "age": "adult",
+      "sex": "male",
+      "season": "any",
+      "marks": {
+        "bill": {
+          "colour": null,
+          "shape": null
+        },
+        "eye": {
+          "iris": null,
+          "ring": null
+        },
+        "legs": {
+          "colour": null
+        },
+        "head": {
+          "crown": "rufous",
+          "face": "rufous",
+          "throat": null,
+          "pattern": "Rufous crest, normally held down and raised when the bird settles or is alarmed."
+        },
+        "upperparts": {
+          "back": "rufous",
+          "rump": null
+        },
+        "underparts": {
+          "breast": "rufous",
+          "belly": "rufous"
+        },
+        "wings": {
+          "above": null,
+          "below": null,
+          "pattern": "Black and white. The male shows white flashes on the inner wings, formed by white secondaries."
+        },
+        "tail": {
+          "colour": null,
+          "shape": null
+        }
+      }
+    },
+    {
+      "age": "adult",
+      "sex": "female",
+      "season": "any",
+      "marks": {
+        "bill": {
+          "colour": null,
+          "shape": null
+        },
+        "eye": {
+          "iris": null,
+          "ring": null
+        },
+        "legs": {
+          "colour": null
+        },
+        "head": {
+          "crown": null,
+          "face": null,
+          "throat": null,
+          "pattern": "Paler than the male. The crest is rufous."
+        },
+        "upperparts": {
+          "back": null,
+          "rump": null,
+          "pattern": "Paler than the male."
+        },
+        "underparts": {
+          "breast": null,
+          "belly": null
+        },
+        "wings": {
+          "above": null,
+          "below": null,
+          "pattern": "Black and white. The female’s secondaries are barred with black."
+        },
+        "tail": {
+          "colour": null,
+          "shape": null
+        }
+      }
+    }
+  ],
+  "viewNotes": [
+    {
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "male",
+      "season": "any",
+      "note": "Rufous body and crest, with black-and-white wings."
+    },
+    {
+      "view": "perched-front",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "The crest is raised when the bird settles or is alarmed."
+    },
+    {
+      "view": "flight-above",
+      "age": "adult",
+      "sex": "male",
+      "season": "any",
+      "note": "Undulating flight. White flashes on the inner wings."
+    },
+    {
+      "view": "flight-above",
+      "age": "adult",
+      "sex": "female",
+      "season": "any",
+      "note": "Secondaries barred with black."
+    },
+    {
+      "view": "flight-below",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "note": "The underside in flight is not described separately."
+    }
+  ],
+  "calls": [
+    {
+      "sex": "any",
+      "type": "call",
+      "description": "'hoop-hoop, hoop-hoop-hoop', frequently repeated. The alarm is a harsh 'kwarrr', and fledglings call 'sweet, sweet'. The grade A call is from Kruger. The filename is XC337010-African-Hoopoe-KrugerNP-CR.mp3.",
+      "recordings": [
+        {
+          "key": "xeno-canto/XC337010",
+          "source": "https://xeno-canto.org/337010",
+          "fileUrl": "https://xeno-canto.org/sounds/uploaded/IERLEVXEIF/XC337010-African-Hoopoe-KrugerNP-CR.mp3",
+          "author": "Craig Robertson",
+          "license": "CC BY-NC-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "aiGenerated": false,
+          "hosted": false
+        }
+      ]
+    }
+  ],
+  "images": [
+    {
+      "key": "upupa-epops/side.jpg",
+      "view": "perched-side",
+      "age": "adult",
+      "sex": "any",
+      "season": "any",
+      "source": "https://www.inaturalist.org/observations/333734594",
+      "fileUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/605904761/large.jpg",
+      "author": "Gigi Laidler",
+      "license": "CC BY-NC 4.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+      "aiGenerated": false,
+      "hosted": false,
+      "alt": "Common Hoopoe in Kruger, with a raised rufous crest and black-and-white wings",
+      "caption": "Common Hoopoe in Kruger, with a raised rufous crest and black-and-white wings."
+    }
+  ],
+  "research": {
+    "confidence": "medium",
+    "needsReview": true,
+    "note": "Newman calls it a common resident, and Avibase does not mark it rare, so all twelve months are listed. Seasonal fluctuations occur in some regions, but the months are not named. The page uses Upupa africana. The grade A call is from Kruger. The Kemp name Hoopoe and the code RB were left unchanged."
+  },
+  "status": "resident",
+  "monthsPresent": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+  ]
 }
