@@ -74,7 +74,7 @@ More index keys will be added as needed.
 
 Workers Builds on `main` should use:
 
-- Build command: `npm ci`
+- Build command: none. Workers Builds sees `pnpm-lock.yaml` and runs `pnpm install --frozen-lockfile` itself, with pnpm 9. `pnpm-workspace.yaml` lists the root as its one package because pnpm 9 rejects a workspace file without a `packages` list.
 - Deploy command: `npm run deploy`
 
 `npm run deploy` fails the build if either step fails:
