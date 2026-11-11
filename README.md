@@ -135,6 +135,20 @@ ${plates.map(renderPlate).join('\n\n')}`
 
 `npm run format` runs Prettier (`semi: false`, `singleQuote: true`). `npm run lint` runs ESLint with `arrow-body-style`, `prefer-arrow-callback`, `func-style` set to expression (arrow functions allowed), `no-else-return`, `prefer-const`, and `quotes` aligned with Prettier.
 
+## AI Models
+
+**Download it**
+
+```bash
+pnpm run models:download
+```
+
+***Publish it***
+
+```bash
+pnpm run models:publish
+```
+
 ## Contributing
 
 This is a public open source project. Pull requests are welcome, but only the project owner ([@ftruter](https://github.com/ftruter)) can approve and merge them.

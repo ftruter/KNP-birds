@@ -9,6 +9,7 @@
     "lint": "eslint . && prettier --check \"**/*.{js,mjs}\"",
     "format": "prettier --write \"**/*.{js,mjs}\"",
     "seed": "node scripts/seed.mjs",
+    "models:download": "node scripts/prepare-audio-recognizer.mjs",
     "kv:dry-run": "node scripts/publish-kv.mjs --dry-run",
     "kv:publish": "node scripts/publish-kv.mjs",
     "models:dry-run": "node scripts/publish-models.mjs --dry-run",

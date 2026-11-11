@@ -34,7 +34,7 @@ const runtimeDir = path.join(root, 'node_modules/@litertjs/core')
 export const BUCKET = 'knp-birds-images'
 export const DEFAULT_MODEL = path.join(
   root,
-  'spike/identify-sound/models/BirdNET_v2.4_tflite_fp16',
+  'data', 'models',
   MODEL_ASSETS.model.file,
 )
 
