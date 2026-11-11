@@ -28,9 +28,18 @@ import {
   renderSpeciesMarkdown,
   renderVocabMarkdown,
 } from './markdown.js'
-import { objectExists, objectHttpResponse } from './objects.js'
+import {
+  modelHttpResponse,
+  objectExists,
+  objectHttpResponse,
+} from './objects.js'
 import { jsonBody, pageResponse, redirectResponse } from './respond.js'
-import { clientJs } from './client.js'
+import { clientJs, identifyScripts } from './client.js'
+import {
+  identifySoundJson,
+  renderIdentifySoundHtml,
+  renderIdentifySoundMarkdown,
+} from './identify-page.js'
 import { css } from './style.js'
 import { discoveryDocuments } from './ard.js'
 import { loadListCatalog, rowsForSpeciesIndex } from './catalog.js'
@@ -74,6 +83,18 @@ export const renderRoute = async (request, env, route) => {
         ASSET_CACHE,
         'script',
       )
+    case 'identify-script':
+      return pageResponse({
+        body: identifyScripts[route.pathname],
+        contentType: 'text/javascript; charset=utf-8',
+        cache: ASSET_CACHE,
+        cacheTag: 'script',
+        identify: route.pathname === '/identify-worker.js',
+      })
+    case 'model':
+      return renderObject(env, route.objectKey, modelHttpResponse)
+    case 'identify-sound':
+      return renderIdentifySound(env, route, origin)
     case 'sitemap':
       return renderSitemap(env, origin)
     case 'sitemap-page':
@@ -426,8 +447,37 @@ const renderSitemapPage = async (env, route, view) => {
     : htmlPage(body, origin, '/sitemap', 'sitemap-page')
 }
 
-const renderObject = async (env, key) => {
-  const response = await objectHttpResponse(env.IMAGES, key)
+const renderIdentifySound = async (env, route, origin) => {
+  const doc = await readDocument(env.BIRDS_KV, route.kvKey)
+  if (!doc) return notFound(origin, route)
+  const page = {
+    cache: PAGE_CACHE,
+    path: route.pathname,
+    origin,
+    cacheTag: 'index,identify-sound',
+  }
+  if (route.format === 'json')
+    return pageResponse({
+      ...page,
+      body: jsonBody(identifySoundJson(doc.data)),
+      contentType: 'application/json; charset=utf-8',
+    })
+  if (route.format === 'md')
+    return pageResponse({
+      ...page,
+      body: renderIdentifySoundMarkdown({ origin, doc: doc.data }),
+      contentType: 'text/markdown; charset=utf-8',
+    })
+  return pageResponse({
+    ...page,
+    body: renderIdentifySoundHtml({ origin, doc: doc.data }),
+    contentType: 'text/html; charset=utf-8',
+    identify: true,
+  })
+}
+
+const renderObject = async (env, key, respond = objectHttpResponse) => {
+  const response = await respond(env.IMAGES, key)
   if (response) return response
   return textResponse(
     'Not found\n',

@@ -9,11 +9,11 @@ compatibility_flags = ["nodejs_compat"]
 # uploads only project files, so the Worker is bundled and those imports resolve.
 no_bundle = false
 
-# The browser script is imported as text so esbuild does not rewrite it.
-# keepNames would otherwise inject an __name helper into the served file.
+# The browser scripts are imported as text so esbuild does not rewrite them.
+# keepNames would otherwise inject an __name helper into the served files.
 [[rules]]
 type = "Text"
-globs = ["**/client/app.js"]
+globs = ["**/client/*.js"]
 fallthrough = false
 
 [[rules]]

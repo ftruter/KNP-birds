@@ -20,8 +20,8 @@ Nothing under `src/` was changed.
 ## 1. Coverage
 
 The model's 6,522 labels follow eBird/Clements names; ours follow IOC as adopted by BLSA 2026.
-`spike/identify-sound/map-labels.mjs` matches on scientific name, then on the hand-checked table in
-`synonyms.json`. It maps nothing else.
+`scripts/map-birdnet-labels.mjs` matches on scientific name, then on the hand-checked table in
+`data/identify/birdnet-synonyms.json`. It maps nothing else.
 
 | Result | Species |
 | --- | --- |

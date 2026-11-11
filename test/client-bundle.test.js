@@ -1,23 +1,18 @@
 import assert from 'node:assert/strict'
-import { execFile } from 'node:child_process'
-import { mkdtemp, readdir, readFile, rm } from 'node:fs/promises'
-import { tmpdir } from 'node:os'
+import { readFile } from 'node:fs/promises'
 import path from 'node:path'
 import { test, before, after } from 'node:test'
-import { promisify } from 'node:util'
 import { fileURLToPath } from 'node:url'
-import { Miniflare } from 'miniflare'
 import { chromium, webkit } from 'playwright'
-import { loadStore } from './helpers.js'
+import { startBundledSite } from './bundle-site.js'
 import { bundlerHelpersIn, evaluateClient } from './client-module.js'
 
-const exec = promisify(execFile)
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..')
 const sourcePath = path.join(root, 'src/client/app.js')
 const svg =
   '<svg xmlns="http://www.w3.org/2000/svg" width="960" height="640"><rect width="960" height="640" fill="#1d4e2a"/></svg>'
 
-let outdir = ''
+let site
 let mf
 let origin = ''
 
@@ -249,63 +244,15 @@ const exerciseSearch = async (browser) => {
 
 before(
   async () => {
-    outdir = await mkdtemp(path.join(tmpdir(), 'knp-bundle-'))
-    await exec(
-      process.execPath,
-      [
-        path.join(root, 'node_modules/wrangler/bin/wrangler.js'),
-        'deploy',
-        '--dry-run',
-        '--outdir',
-        outdir,
-      ],
-      { cwd: root, timeout: 120000, maxBuffer: 8 * 1024 * 1024 },
-    )
-    const names = await readdir(outdir)
-    const appName = names.find((name) => name.endsWith('-app.js'))
-    assert.ok(appName, 'wrangler did not emit the browser text module')
-    const [workerJs, appJs] = await Promise.all([
-      readFile(path.join(outdir, 'worker.js'), 'utf8'),
-      readFile(path.join(outdir, appName), 'utf8'),
-    ])
-    mf = new Miniflare({
-      host: '127.0.0.1',
-      port: 0,
-      workers: [
-        {
-          config: {
-            name: 'knp-birds',
-            compatibilityDate: '2026-10-30',
-            compatibilityFlags: ['nodejs_compat'],
-            manifest: {
-              mainModule: 'worker.js',
-              modulesRoot: outdir,
-              modules: {
-                'worker.js': { type: 'esm', contents: workerJs },
-                [appName]: { type: 'text', contents: appJs },
-              },
-            },
-            env: {
-              BIRDS_KV: { type: 'kv', id: 'birds' },
-              IMAGES: { type: 'r2' },
-            },
-          },
-        },
-      ],
-    })
-    origin = String(await mf.ready).replace(/\/$/, '')
-    const kv = await mf.getKVNamespace('BIRDS_KV')
-    const { records } = await loadStore()
-    await Promise.all(
-      Object.entries(records).map(([key, value]) => kv.put(key, value)),
-    )
+    site = await startBundledSite()
+    mf = site.mf
+    origin = site.origin
   },
   { timeout: 180000 },
 )
 
 after(async () => {
-  await mf?.dispose()
-  if (outdir) await rm(outdir, { recursive: true, force: true })
+  await site?.dispose()
 })
 
 test(
@@ -321,6 +268,22 @@ test(
     const body = await response.text()
     assert.equal(body, source)
     assert.deepEqual(bundlerHelpersIn(body), [])
+    assert.deepEqual(Object.keys(site.scripts).sort(), [
+      'app.js',
+      'identify-capture.js',
+      'identify-worker.js',
+      'identify.js',
+    ])
+    for (const name of Object.keys(site.scripts)) {
+      const served = await mf.dispatchFetch(`${origin}/${name}`)
+      const text = await served.text()
+      assert.equal(
+        text,
+        await readFile(path.join(root, 'src/client', name), 'utf8'),
+        name,
+      )
+      assert.deepEqual(bundlerHelpersIn(text), [], name)
+    }
     const compare = await evaluateClient(body)
     assert.equal(
       compare(

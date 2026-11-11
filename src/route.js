@@ -1,6 +1,13 @@
 const SLUG = /^[a-z0-9]+(?:-[a-z0-9]+)*$/
 
 export const SEARCH_PATH = '/search'
+
+/** Browser scripts for /identify/sound: the page, its worker, its worklet. */
+export const IDENTIFY_SCRIPTS = [
+  '/identify.js',
+  '/identify-worker.js',
+  '/identify-capture.js',
+]
 export const SEARCH_MAX = 200
 
 /** Trims, collapses whitespace and caps a search query from the URL. */
@@ -78,6 +85,9 @@ export const parseUrl = (url) => {
     if (path === '/llms.txt') return route('llms', format, path)
     if (path === '/style.css') return route('style', format, path)
     if (path === '/app.js') return route('script', format, path)
+    if (IDENTIFY_SCRIPTS.includes(path))
+      return route('identify-script', format, path)
+    if (path.startsWith('/models/')) return modelRoute(path)
     if (path.startsWith('/images/')) return objectRoute('image', path, 'images')
     if (path.startsWith('/audio/')) return objectRoute('audio', path, 'audio')
   }
@@ -95,6 +105,11 @@ export const parseUrl = (url) => {
     return { ...route('families-index', format, path), kvKey: 'index/families' }
   if (path === '/credits')
     return { ...route('credits', format, path), kvKey: 'index/credits' }
+  if (path === '/identify/sound')
+    return {
+      ...route('identify-sound', format, path),
+      kvKey: 'index/identify-sound',
+    }
 
   const species = path.match(/^\/species\/([^/]+)$/)
   if (species) {
@@ -138,6 +153,13 @@ const objectRoute = (kind, path, prefix) => {
   const key = safeObjectKey(path.slice(`/${prefix}/`.length))
   if (!key) return route('not-found', 'html', path)
   return { kind, format: 'html', pathname: path, objectKey: key }
+}
+
+/** /models/<key> is the R2 object models/<key>: the prefix is kept. */
+const modelRoute = (path) => {
+  const key = safeObjectKey(path.slice(1))
+  if (!key) return route('not-found', 'html', path)
+  return { kind: 'model', format: 'html', pathname: path, objectKey: key }
 }
 
 const matchSlug = (segment) => {

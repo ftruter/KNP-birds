@@ -1,4 +1,4 @@
-import { OBJECT_CACHE, NOT_FOUND_CACHE } from './cache.js'
+import { MODEL_CACHE, OBJECT_CACHE, NOT_FOUND_CACHE } from './cache.js'
 import { objectResponse } from './respond.js'
 
 const IMAGE_EXT = {
@@ -63,6 +63,33 @@ export const objectHttpResponse = async (bucket, key) => {
     etag: object.httpEtag || '',
     size: object.size,
     disposition,
+  })
+}
+
+const MODEL_EXT = {
+  tflite: 'application/octet-stream',
+  wasm: 'application/wasm',
+  js: 'text/javascript; charset=utf-8',
+  mjs: 'text/javascript; charset=utf-8',
+}
+
+/**
+ * A recogniser file from `models/<version>/`. Only the four file types the
+ * recogniser uses are served, each with a fixed media type: `application/wasm`
+ * is required for streaming compilation, and nosniff needs a JavaScript type.
+ */
+export const modelHttpResponse = async (bucket, key) => {
+  const type = MODEL_EXT[key.split('.').pop()?.toLowerCase() ?? '']
+  if (!type) return null
+  const object = await openObject(bucket, key)
+  if (!object || !object.body) return null
+  return objectResponse({
+    body: object.body,
+    contentType: type,
+    cache: MODEL_CACHE,
+    etag: object.httpEtag || '',
+    size: object.size,
+    script: true,
   })
 }
 

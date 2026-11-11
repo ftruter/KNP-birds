@@ -616,11 +616,29 @@ ${note}
 
 ${groups.map(mdSpecies).join('\n\n')}
 
-${mdSite(doc?.site)}`,
+${mdModels(doc?.models)}${mdSite(doc?.site)}`,
   })
 }
 
-const pageMd = ({ path, title, sample, body, origin, suffix = '' }) => {
+const mdModels = (models) =>
+  listed(models).length === 0
+    ? ''
+    : `## Sound recognition model
+
+${listed(models)
+  .map(
+    (model) =>
+      `**[${inlineText(model.name)}](${model.url})**, by ${inlineText(model.authors)}. ${inlineText(model.publisher)}. Licence: [${inlineText(model.licence)}](${model.licenceUrl}).
+
+${inlineText(model.usedFor)} See [Identify by sound](/identify/sound.md).
+
+${inlineText(model.citation)}${model.runtime ? `\n\nIt runs in the browser with [${inlineText(model.runtime.name)}](${model.runtime.url}) (${inlineText(model.runtime.licence)}).` : ''}`,
+  )
+  .join('\n\n')}
+
+`
+
+export const pageMd = ({ path, title, sample, body, origin, suffix = '' }) => {
   const alts = alternates(path, suffix)
   const banner = sample ? `> ${SAMPLE_NOTICE}\n\n` : ''
   return `# ${inlineText(title)}\n\n${agentNote(origin)}\n\n${banner}${body.trim()}\n\n---\n\nAlso available as [HTML](${alts.html}) and [JSON](${alts.json}).\n`

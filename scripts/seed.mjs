@@ -30,10 +30,15 @@
  * docs/families-sources.md, docs/species-sources.md, and
  * docs/population-sources.md. A licence is null when it is not known. The
  * page says so, and this script does not invent one.
+ *
+ * index/identify-sound is derived from data/identify/birdnet-labels.json
+ * (written by scripts/map-birdnet-labels.mjs) and the species files. It
+ * lists the species the sound recogniser can return and those it cannot.
  */
 import { readdir, readFile, writeFile } from 'node:fs/promises'
 import path from 'node:path'
 import { fileURLToPath } from 'node:url'
+import { MODEL_CREDIT, deriveIdentifySound } from '../src/identify.js'
 import { applyRecordingOverlay, recordingOverlay } from '../src/recordings.js'
 import { residencyCoverage } from '../src/seasons.js'
 
@@ -375,11 +380,12 @@ export const deriveCredits = (speciesDocs, overlay = null) => {
     taxonomy: { ...TAXONOMY },
     mediaNote: images === 0 && recordings === 0 ? NO_MEDIA_NOTE : null,
     species,
+    models: [{ ...MODEL_CREDIT, runtime: { ...MODEL_CREDIT.runtime } }],
     site: { ...SITE },
   }
 }
 
-export const deriveAll = (speciesDocs, familyDocs) => {
+export const deriveAll = (speciesDocs, familyDocs, labelMap = null) => {
   const familiesBySlug = new Map(
     familyDocs.map((family) => [family.slug, family]),
   )
@@ -400,6 +406,30 @@ export const deriveAll = (speciesDocs, familyDocs) => {
     speciesIndex: deriveSpeciesIndex(speciesDocs),
     familiesIndex: deriveFamiliesIndex(families),
     credits: deriveCredits(speciesDocs, recordingOverlay),
+    identifySound: labelMap
+      ? deriveIdentifySound(
+          speciesDocs.map((species) =>
+            applyRecordingOverlay(species, recordingOverlay),
+          ),
+          families,
+          labelMap,
+        )
+      : null,
+  }
+}
+
+/** The BirdNET label map, or null for a data folder that has none. */
+export const readLabelMap = async (dataDir = path.join(root, 'data')) => {
+  try {
+    return JSON.parse(
+      await readFile(
+        path.join(dataDir, 'identify/birdnet-labels.json'),
+        'utf8',
+      ),
+    )
+  } catch (error) {
+    if (error.code === 'ENOENT') return null
+    throw error
   }
 }
 
@@ -417,7 +447,7 @@ export const readCatalog = async (dataDir = path.join(root, 'data')) => {
 
 export const writeDerived = async (dataDir = path.join(root, 'data')) => {
   const { species, families } = await readCatalog(dataDir)
-  const derived = deriveAll(species, families)
+  const derived = deriveAll(species, families, await readLabelMap(dataDir))
   const writes = []
   for (const family of derived.families) {
     writes.push(
@@ -439,6 +469,13 @@ export const writeDerived = async (dataDir = path.join(root, 'data')) => {
   writes.push(
     writeJson(path.join(dataDir, 'index', 'credits.json'), derived.credits),
   )
+  if (derived.identifySound)
+    writes.push(
+      writeJson(
+        path.join(dataDir, 'index', 'identify-sound.json'),
+        derived.identifySound,
+      ),
+    )
   await Promise.all(writes)
   return derived
 }
@@ -485,7 +522,7 @@ const assertKeyMatchesDocument = (key, data, relative) => {
     prefix === 'index' &&
     (data == null || typeof data !== 'object' || Array.isArray(data))
   ) {
-    throw new Error(`${relative} must be an object keyed by scientific name`)
+    throw new Error(`${relative} must be a JSON object`)
   }
   if (
     (prefix === 'species' || prefix === 'family') &&

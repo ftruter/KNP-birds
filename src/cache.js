@@ -9,6 +9,8 @@ export const ASSET_CACHE =
   'public, max-age=3600, s-maxage=86400, stale-while-revalidate=86400'
 export const OBJECT_CACHE =
   'public, max-age=604800, s-maxage=2592000, stale-while-revalidate=86400'
+/** Versioned in the path, so the bytes at one URL never change. */
+export const MODEL_CACHE = 'public, max-age=31536000, immutable'
 export const REDIRECT_CACHE = 'public, max-age=3600, s-maxage=86400'
 export const NO_STORE = 'no-store'
 
@@ -54,6 +56,8 @@ const formatsNumbers = (pathname) =>
   !pathname.endsWith('.json') &&
   !pathname.startsWith('/images/') &&
   !pathname.startsWith('/audio/') &&
+  !pathname.startsWith('/models/') &&
+  !pathname.startsWith('/identify') &&
   !pathname.startsWith('/.well-known/') &&
   pathname !== '/robots.txt' &&
   pathname !== '/sitemap.xml' &&

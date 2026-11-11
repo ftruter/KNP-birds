@@ -7,7 +7,8 @@
     { "$ref": "#/$defs/family" },
     { "$ref": "#/$defs/index" },
     { "$ref": "#/$defs/colours" },
-    { "$ref": "#/$defs/credits" }
+    { "$ref": "#/$defs/credits" },
+    { "$ref": "#/$defs/identifySound" }
   ],
   "$defs": {
     "slug": {
@@ -581,7 +582,7 @@
     "credits": {
       "type": "object",
       "additionalProperties": false,
-      "required": ["kind", "dataSources", "taxonomy", "mediaNote", "species", "site"],
+      "required": ["kind", "dataSources", "taxonomy", "mediaNote", "species", "models", "site"],
       "properties": {
         "kind": { "const": "credits" },
         "dataSources": {
@@ -599,6 +600,10 @@
           }
         },
         "mediaNote": { "$ref": "#/$defs/textOrNull" },
+        "models": {
+          "type": "array",
+          "items": { "$ref": "#/$defs/modelCredit" }
+        },
         "species": {
           "type": "array",
           "items": { "$ref": "#/$defs/speciesCredits" }
@@ -615,6 +620,377 @@
             "palette": { "type": "string", "minLength": 1 },
             "affiliation": { "type": "string", "minLength": 1 },
             "media": { "type": "string", "minLength": 1 }
+          }
+        }
+      }
+    },
+    "modelCredit": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "name",
+        "authors",
+        "publisher",
+        "citation",
+        "url",
+        "licence",
+        "licenceUrl",
+        "usedFor",
+        "runtime"
+      ],
+      "properties": {
+        "name": {
+          "type": "string",
+          "minLength": 1
+        },
+        "authors": {
+          "type": "string",
+          "minLength": 1
+        },
+        "publisher": {
+          "type": "string",
+          "minLength": 1
+        },
+        "citation": {
+          "type": "string",
+          "minLength": 1
+        },
+        "url": {
+          "type": "string",
+          "minLength": 1
+        },
+        "licence": {
+          "type": "string",
+          "minLength": 1
+        },
+        "licenceUrl": {
+          "type": "string",
+          "minLength": 1
+        },
+        "usedFor": {
+          "type": "string",
+          "minLength": 1
+        },
+        "runtime": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "name",
+            "url",
+            "licence",
+            "licenceUrl"
+          ],
+          "properties": {
+            "name": {
+              "type": "string",
+              "minLength": 1
+            },
+            "url": {
+              "type": "string",
+              "minLength": 1
+            },
+            "licence": {
+              "type": "string",
+              "minLength": 1
+            },
+            "licenceUrl": {
+              "type": "string",
+              "minLength": 1
+            }
+          }
+        }
+      }
+    },
+    "identifySound": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "kind",
+        "model",
+        "counts",
+        "families",
+        "covered",
+        "broaderLabelOnly",
+        "notInModel"
+      ],
+      "properties": {
+        "kind": {
+          "const": "identify-sound"
+        },
+        "model": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "name",
+            "labelCount",
+            "labelsSha256",
+            "sampleRate",
+            "windowSeconds"
+          ],
+          "properties": {
+            "name": {
+              "type": "string",
+              "minLength": 1
+            },
+            "labelCount": {
+              "type": "integer",
+              "minimum": 1
+            },
+            "labelsSha256": {
+              "type": "string",
+              "pattern": "^[a-f0-9]{64}$"
+            },
+            "sampleRate": {
+              "type": "integer"
+            },
+            "windowSeconds": {
+              "type": "integer"
+            }
+          }
+        },
+        "counts": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "species",
+            "covered",
+            "broaderLabelOnly",
+            "notInModel"
+          ],
+          "properties": {
+            "species": {
+              "type": "integer",
+              "minimum": 0
+            },
+            "covered": {
+              "type": "integer",
+              "minimum": 0
+            },
+            "broaderLabelOnly": {
+              "type": "integer",
+              "minimum": 0
+            },
+            "notInModel": {
+              "type": "integer",
+              "minimum": 0
+            }
+          }
+        },
+        "families": {
+          "type": "object",
+          "additionalProperties": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "scientificName",
+              "en"
+            ],
+            "properties": {
+              "scientificName": {
+                "type": "string",
+                "minLength": 1
+              },
+              "en": {
+                "type": "string",
+                "minLength": 1
+              }
+            }
+          }
+        },
+        "covered": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "slug",
+              "scientificName",
+              "en",
+              "af",
+              "family",
+              "labels",
+              "modelNames",
+              "monthsPresent",
+              "image",
+              "call"
+            ],
+            "properties": {
+              "slug": {
+                "$ref": "#/$defs/slug"
+              },
+              "scientificName": {
+                "type": "string",
+                "minLength": 1
+              },
+              "en": {
+                "type": "string",
+                "minLength": 1
+              },
+              "af": {
+                "$ref": "#/$defs/textOrNull"
+              },
+              "family": {
+                "$ref": "#/$defs/slug"
+              },
+              "labels": {
+                "type": "array",
+                "minItems": 1,
+                "items": {
+                  "type": "integer",
+                  "minimum": 0
+                }
+              },
+              "modelNames": {
+                "type": "array",
+                "minItems": 1,
+                "items": {
+                  "type": "string",
+                  "minLength": 1
+                }
+              },
+              "monthsPresent": {
+                "oneOf": [
+                  {
+                    "type": "null"
+                  },
+                  {
+                    "type": "array",
+                    "minItems": 1,
+                    "items": {
+                      "type": "integer",
+                      "minimum": 1,
+                      "maximum": 12
+                    }
+                  }
+                ]
+              },
+              "image": {
+                "oneOf": [
+                  {
+                    "type": "null"
+                  },
+                  {
+                    "type": "object",
+                    "additionalProperties": false,
+                    "required": [
+                      "src"
+                    ],
+                    "properties": {
+                      "src": {
+                        "type": "string",
+                        "minLength": 1
+                      },
+                      "alt": {
+                        "type": "string",
+                        "minLength": 1
+                      },
+                      "type": {
+                        "$ref": "#/$defs/textOrNull"
+                      }
+                    }
+                  }
+                ]
+              },
+              "call": {
+                "oneOf": [
+                  {
+                    "type": "null"
+                  },
+                  {
+                    "type": "object",
+                    "additionalProperties": false,
+                    "required": [
+                      "src"
+                    ],
+                    "properties": {
+                      "src": {
+                        "type": "string",
+                        "minLength": 1
+                      },
+                      "alt": {
+                        "type": "string",
+                        "minLength": 1
+                      },
+                      "type": {
+                        "$ref": "#/$defs/textOrNull"
+                      }
+                    }
+                  }
+                ]
+              },
+              "partial": {
+                "type": "string",
+                "minLength": 1
+              }
+            }
+          }
+        },
+        "broaderLabelOnly": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "slug",
+              "scientificName",
+              "en",
+              "af",
+              "modelLabel",
+              "reason"
+            ],
+            "properties": {
+              "slug": {
+                "$ref": "#/$defs/slug"
+              },
+              "scientificName": {
+                "type": "string",
+                "minLength": 1
+              },
+              "en": {
+                "type": "string",
+                "minLength": 1
+              },
+              "af": {
+                "$ref": "#/$defs/textOrNull"
+              },
+              "modelLabel": {
+                "type": "string",
+                "minLength": 1
+              },
+              "reason": {
+                "type": "string",
+                "minLength": 1
+              }
+            }
+          }
+        },
+        "notInModel": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "slug",
+              "scientificName",
+              "en",
+              "af"
+            ],
+            "properties": {
+              "slug": {
+                "$ref": "#/$defs/slug"
+              },
+              "scientificName": {
+                "type": "string",
+                "minLength": 1
+              },
+              "en": {
+                "type": "string",
+                "minLength": 1
+              },
+              "af": {
+                "$ref": "#/$defs/textOrNull"
+              }
+            }
           }
         }
       }
