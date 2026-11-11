@@ -15,10 +15,12 @@ uv venv --python 3.12 .venv
 uv pip install --python .venv/bin/python tensorflow==2.17.1 numpy==1.26.4 onnxruntime
 ```
 
+The label mapper and its tables now belong to the site: `scripts/map-birdnet-labels.mjs`,
+`data/identify/birdnet-synonyms.json` (hand-checked, edit this) and `data/identify/birdnet-labels.json`
+(generated).
+
 | File | What it does |
 | --- | --- |
-| `map-labels.mjs` | Maps BirdNET labels to our slugs. Writes `label-map.json`. Add `--hints` for candidates to hand-check. |
-| `synonyms.json` | The hand-checked table the mapper uses. Edit this, never `label-map.json`. |
 | `fetch-clips.mjs` | Downloads one reference clip per species to `data/audio/files/`. Writes `clips.json`. |
 | `score.py` | Scores the official model on those clips. Writes `score-results.json`. `--field` scores `field/<slug>/*`. |
 | `parity.py` | Checks a converted ONNX file against the official TFLite file. |

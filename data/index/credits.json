@@ -27365,6 +27365,24 @@
       ]
     }
   ],
+  "models": [
+    {
+      "name": "BirdNET GLOBAL 6K V2.4",
+      "authors": "Stefan Kahl, Connor M. Wood, Maximilian Eibl and Holger Klinck",
+      "publisher": "K. Lisa Yang Center for Conservation Bioacoustics, Cornell Lab of Ornithology, and Chemnitz University of Technology",
+      "citation": "Kahl, S., Wood, C. M., Eibl, M., & Klinck, H. (2021). BirdNET: A deep learning solution for avian diversity monitoring. Ecological Informatics 61, 101236.",
+      "url": "https://zenodo.org/records/15050749",
+      "licence": "CC BY-NC-SA 4.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+      "usedFor": "Recognising a bird from a recording on the Identify by sound page. The model file is served unchanged and runs on the visitor’s device.",
+      "runtime": {
+        "name": "LiteRT.js 2.6.0",
+        "url": "https://github.com/google-ai-edge/LiteRT",
+        "licence": "Apache-2.0",
+        "licenceUrl": "https://www.apache.org/licenses/LICENSE-2.0"
+      }
+    }
+  ],
   "site": {
     "repository": "https://github.com/ftruter/KNP-birds",
     "licence": "Apache-2.0",

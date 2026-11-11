@@ -77,6 +77,7 @@ export const sitemapEntries = (tree) => [
     href: '/species',
     children: tree.species,
   },
+  { name: 'Identify by sound', href: '/identify/sound' },
   { name: 'Credits', href: '/credits' },
 ]
 
@@ -103,7 +104,7 @@ export const sitemapPaths = (tree) => {
     seen.add(species.href)
     paths.push(species.href)
   }
-  paths.push('/credits')
+  paths.push('/identify/sound', '/credits')
   return paths
 }
 

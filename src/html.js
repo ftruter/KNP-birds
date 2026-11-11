@@ -48,6 +48,7 @@ const NAV = [
   ['home', '/', 'Home'],
   ['families', '/families', 'Families'],
   ['species', '/species', 'Species'],
+  ['identify', '/identify/sound', 'Identify'],
   ['colours', '/vocab/colours', 'Colours'],
   ['agents', '/llms.txt', 'For agents'],
 ]
@@ -88,6 +89,7 @@ ${agentHtml(origin)}
 </ol>
 </div>
 </div>
+<p class="identify-lead"><a href="/identify/sound">Identify a bird by its call</a>: record a few seconds, or choose a recording, and see the most likely Kruger species.</p>
 <div class="lead-split">
 <p>Age, season and sex are worked out by comparing structured field marks. A mark left blank is unknown, not a claim that the part has no colour. Flight and perched views use notes and photographs. Where nothing differs, the page says so.</p>
 <aside class="lead-note">
@@ -763,6 +765,28 @@ ${note}
 ${groups.map(speciesCreditHtml).join('\n')}`
 }
 
+const linked = (label, url) => {
+  const href = safeHttpUrl(url)
+  return href
+    ? `<a href="${escapeHtml(href)}">${escapeHtml(label)}</a>`
+    : escapeHtml(label)
+}
+
+const modelsHtml = (models) =>
+  listed(models).length === 0
+    ? ''
+    : `<h2>Sound recognition model</h2>
+${listed(models)
+  .map(
+    (
+      model,
+    ) => `<p><strong>${linked(model.name, model.url)}</strong>, by ${escapeHtml(model.authors)}. ${escapeHtml(model.publisher)}. Licence: ${linked(model.licence, model.licenceUrl)}.</p>
+<p>${escapeHtml(model.usedFor)} See <a href="/identify/sound">Identify by sound</a>.</p>
+<p>${escapeHtml(model.citation)}</p>
+${model.runtime ? `<p>It runs in the browser with ${linked(model.runtime.name, model.runtime.url)} (${linked(model.runtime.licence, model.runtime.licenceUrl)}).</p>` : ''}`,
+  )
+  .join('\n')}`
+
 const maintainerHtml = (handle) =>
   /^[A-Za-z0-9-]+$/.test(handle)
     ? `<a href="https://github.com/${escapeHtml(handle)}">${escapeHtml(handle)}</a>`
@@ -834,6 +858,7 @@ export const renderCreditsHtml = ({ origin, doc }) => {
 ${sources.length ? `<ol>\n${sources.map(dataSourceHtml).join('\n')}\n</ol>` : '<p>No data sources are recorded.</p>'}
 ${taxonomyHtml(doc?.taxonomy)}
 ${mediaHtml(doc)}
+${modelsHtml(doc?.models)}
 ${siteHtml(doc?.site)}`
   return layout({
     title: 'Credits · KNP Birds',
@@ -847,7 +872,7 @@ ${siteHtml(doc?.site)}`
   })
 }
 
-const layout = ({
+export const layout = ({
   title,
   description,
   origin,
@@ -857,6 +882,7 @@ const layout = ({
   main,
   searchQuery = '',
   noindex = false,
+  scripts = [],
 }) => {
   const alts = alternates(path, searchSuffix(searchQuery))
   return `<!DOCTYPE html>
@@ -873,7 +899,7 @@ ${noindex ? '<meta name="robots" content="noindex">\n' : ''}<link rel="canonical
 ${ARD_LINK}
 <link rel="stylesheet" href="/style.css">
 <script type="module" defer src="${clientSrc}"></script>
-</head>
+${scripts.map((src) => `<script type="module" defer src="${escapeHtml(src)}"></script>\n`).join('')}</head>
 <body>
 <a class="skip" href="#main">Skip to content</a>
 <header class="site-header">
@@ -1006,7 +1032,7 @@ const paragraphs = (text) =>
 
 const entries = (doc) => (Array.isArray(doc?.entries) ? doc.entries : [])
 
-const crumbs = (items) => {
+export const crumbs = (items) => {
   const rest = (items ?? []).map((item) =>
     item.current
       ? `<li aria-current="page">${escapeHtml(item.label)}</li>`

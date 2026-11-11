@@ -32,6 +32,7 @@ The file extension selects the format. Page paths come straight from the KV keys
 | \`vocab/colours\` | ${origin}/vocab/colours |
 | \`index/credits\` | ${origin}/credits |
 | (composed) | ${origin}/sitemap |
+| \`index/identify-sound\` | ${origin}/identify/sound |
 
 The home page is also ${origin}/.md and ${origin}/.json. Slugs are the lowercase scientific name with hyphens, for example \`coracias-caudatus\`.
 
@@ -92,6 +93,10 @@ Each family embeds its species and a population total. \`iconicSpecies\` is up t
 Images carry \`view\`, \`age\`, \`sex\`, \`season\`, \`source\`, \`author\`, \`license\`, an optional \`licenceUrl\`, and \`aiGenerated\`. \`sex\` may be \`mixed\` when the photograph shows a male and a female together. An optional \`caption\` is shown with the view label. \`fileUrl\` and \`hosted: false\` mean the file is not in the bucket yet: the page shows the source file when the licence allows it. Recordings use the same attribution fields. \`aiGenerated\` is optional on a recording. Photograph and recording licences stay with each file. They are not covered by the Apache-2.0 licence of the code. The page policy allows those HTTPS images and audio files. It still allows no scripts.
 
 \`index/credits\` is derived with the indexes. It lists the checklists behind the family and species lists, the IOC / BirdLife South Africa naming, photograph and recording credit grouped by species, and the Apache-2.0 licence for this site.
+
+## Identify by sound
+
+${origin}/identify/sound is an interactive page for people: it records or opens a bird call and names the most likely species, using the BirdNET V2.4 model on the visitor's own device. Agents cannot run it. ${origin}/identify/sound.md describes it, and ${origin}/identify/sound.json lists \`covered\` (species the model can return, with their model label numbers), \`broaderLabelOnly\` and \`notInModel\` (species it can never return). That page alone allows the microphone, WebAssembly and same-origin fetches; \`/models/<version>/<file>\` serves the model and its runtime.
 
 ## Start here
 

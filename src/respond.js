@@ -13,6 +13,17 @@ const SECURITY = {
 
 const PAGE_CSP =
   "default-src 'none'; style-src 'self'; img-src 'self' https:; media-src 'self' https:; base-uri 'none'; form-action 'self'; frame-ancestors 'none'; script-src 'self'"
+/**
+ * /identify/sound only. The recogniser is WebAssembly in a Web Worker and
+ * fetches its model from this origin; the page records from the microphone.
+ * The worker script is sent with the same policy, because a worker is
+ * governed by the policy on its own response, not the page's.
+ * PAGE_CSP ends with script-src, so the first addition extends that directive.
+ */
+export const IDENTIFY_CSP = `${PAGE_CSP} 'wasm-unsafe-eval'; worker-src 'self'; connect-src 'self'`
+export const IDENTIFY_PERMISSIONS =
+  'camera=(), microphone=(self), geolocation=()'
+
 const OBJECT_CSP =
   "default-src 'none'; style-src 'none'; script-src 'none'; sandbox"
 
@@ -26,10 +37,12 @@ export const pageResponse = ({
   cacheTag,
   vary,
   search = '',
+  identify = false,
 }) => {
   const headers = new Headers(SECURITY)
   headers.set('content-type', contentType)
-  headers.set('content-security-policy', PAGE_CSP)
+  headers.set('content-security-policy', identify ? IDENTIFY_CSP : PAGE_CSP)
+  if (identify) headers.set('permissions-policy', IDENTIFY_PERMISSIONS)
   headers.set('cache-control', cache)
   headers.set('access-control-allow-origin', '*')
   if (cacheTag) headers.set('cache-tag', cacheTag)
@@ -54,10 +67,14 @@ export const objectResponse = ({
   etag,
   size,
   disposition,
+  script = false,
 }) => {
   const headers = new Headers(SECURITY)
   headers.set('content-type', contentType)
+  // A script fetched by importScripts() or import() runs under its caller's
+  // policy. `sandbox` here would only matter if the file were opened as a page.
   headers.set('content-security-policy', OBJECT_CSP)
+  if (script) headers.set('cross-origin-resource-policy', 'same-origin')
   headers.set('cache-control', cache)
   headers.set('access-control-allow-origin', '*')
   if (etag) headers.set('etag', etag)

@@ -58,7 +58,13 @@ test('every data file matches the schema, slugs, and colour vocabulary', async (
     keys.filter(
       (key) => !key.startsWith('family/') && !key.startsWith('species/'),
     ),
-    ['index/credits', 'index/families', 'index/species', 'vocab/colours'],
+    [
+      'index/credits',
+      'index/families',
+      'index/identify-sound',
+      'index/species',
+      'vocab/colours',
+    ],
   )
   for (const entry of entries) {
     const data = JSON.parse(entry.value)
@@ -80,7 +86,10 @@ test('every data file matches the schema, slugs, and colour vocabulary', async (
       for (const value of Object.values(data)) {
         assert.deepEqual(Object.keys(value), ['en', 'af', 'population'])
       }
-    } else if (entry.key !== 'index/credits') {
+    } else if (
+      entry.key !== 'index/credits' &&
+      entry.key !== 'index/identify-sound'
+    ) {
       const sourcedFamily = new Set([
         'coraciidae',
         'alcedinidae',

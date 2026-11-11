@@ -156,7 +156,7 @@ def summarise(rows, family, labels_of):
 
 
 def main():
-    label_map = json.loads((HERE / "label-map.json").read_text())
+    label_map = json.loads((ROOT / "data/identify/birdnet-labels.json").read_text())
     labels = next((HERE / "models").rglob("labels/en_us.txt")).read_text().splitlines()
     family = {}
     for path in (ROOT / "data/species").glob("*.json"):

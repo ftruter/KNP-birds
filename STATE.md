@@ -20,6 +20,17 @@ Open reference to the birds of Kruger National Park (and bordering Marloth Park)
 - JavaScript is first-party progressive enhancement only (`src/client`). CSP includes `script-src 'self'`. The site must still work with JavaScript off.
 - Workers Builds on `main`: `npm ci` then `npm run deploy` (uploads `data/` to KV, then deploys the Worker with `DATA_VERSION` and `DATA_PUBLISHED_AT`). Node 22+.
 
+## Identify by sound (issue 150)
+
+`/identify/sound` records or opens a bird call and ranks the likely species with BirdNET V2.4, run on the visitor's device by LiteRT.js (WebAssembly, in a Web Worker). Background and measurements: `docs/identify-sound-spike.md`.
+
+- **The model is not deployed by `npm run deploy`.** Run `npm run models:publish` once per version (see `scripts/publish-models.mjs`). It uploads the model and runtime to R2 under `models/<version>/`; the Worker serves them at `/models/<version>/<file>`, immutable. Until that has run, the page loads but the download step fails with a message. A new model or runtime needs a new `version` in `src/identify.js`.
+- Coverage is `data/identify/birdnet-labels.json`, written by `scripts/map-birdnet-labels.mjs` from the hand-checked `data/identify/birdnet-synonyms.json`. `scripts/seed.mjs` turns it into `data/index/identify-sound.json` and fails if a species is in none of its three groups. Never map a species by guessing: 123 are not in the model and 8 have only a broader label, and the page lists both.
+- Only this page (and its worker script) allows the microphone, WebAssembly and same-origin `fetch`. Every other response keeps the site-wide headers. `test/identify.test.js` checks both.
+- The likely / possible / unlikely cut-offs and the out-of-season weight in `src/client/identify.js` come from reference clips, not field recordings. Reset them when phone recordings have been scored (`spike/identify-sound/score.py --field`).
+- `test/identify-browser.test.js` runs the real model in Chromium and WebKit. It is skipped unless the model and a test recording are on disk (`IDENTIFY_MODEL`, `IDENTIFY_CLIP`).
+- Not measured: any Android phone, field recordings, and whether Safari keeps the model in Cache Storage between visits (Playwright's WebKit cannot show this).
+
 ## Repo layout
 
 | Path | Role |
@@ -30,10 +41,11 @@ Open reference to the birds of Kruger National Park (and bordering Marloth Park)
 | `data/vocab/colours.json` | Controlled colour names used in field marks |
 | `data/audio/recordings.json` | Chosen xeno-canto recording and grade, merged onto `calls` at render time |
 | `data/audio/report.json` | Last `npm run audio` run log |
+| `data/identify/` | BirdNET label map for `/identify/sound` and its hand-checked synonym table |
 | `docs/schema.md`, `docs/content.schema.json` | Document shapes |
 | `docs/species-sources.md`, `docs/families-sources.md`, `docs/population-sources.md`, `docs/audio.md` | How lists, estimates and recordings were sourced |
-| `scripts/` | `seed.mjs`, `publish-kv.mjs`, `deploy.mjs`, `process-recordings.mjs` |
-| `src/` | Worker and the optional client script |
+| `scripts/` | `seed.mjs`, `publish-kv.mjs`, `deploy.mjs`, `process-recordings.mjs`, `map-birdnet-labels.mjs`, `publish-models.mjs` |
+| `src/` | Worker and the optional client scripts (`src/client/`) |
 | `test/` | Per-family tests plus worker, render, MCP and audio tests |
 
 A species slug is the scientific name in lowercase with spaces turned into hyphens (`Coracias caudatus` → `coracias-caudatus`). KV key `species/<slug>` is the page `/species/<slug>`.

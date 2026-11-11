@@ -89,6 +89,7 @@ test('the sitemap tree is alphabetical by English name', () => {
     '/species/coracias-caudatus',
     '/species',
     '/species/bucorvus-leadbeateri',
+    '/identify/sound',
     '/credits',
   ])
 })
@@ -155,7 +156,15 @@ test('the sitemap page is nested in html, markdown, and json', async () => {
   assert.equal(json.kind, 'sitemap')
   assert.deepEqual(
     json.entries.map((entry) => entry.name),
-    ['Home', 'Sitemap', 'Colours', 'Families', 'Species', 'Credits'],
+    [
+      'Home',
+      'Sitemap',
+      'Colours',
+      'Families',
+      'Species',
+      'Identify by sound',
+      'Credits',
+    ],
   )
   const familyNames = json.entries[3].children.map((family) => family.name)
   assert.deepEqual(
@@ -180,7 +189,8 @@ test('the sitemap page is nested in html, markdown, and json', async () => {
     'https://birds.truter.world/vocab/colours',
     'https://birds.truter.world/families',
   ])
-  assert.equal(locs.at(-2), 'https://birds.truter.world/species')
+  assert.equal(locs.at(-3), 'https://birds.truter.world/species')
+  assert.equal(locs.at(-2), 'https://birds.truter.world/identify/sound')
   assert.equal(locs.at(-1), 'https://birds.truter.world/credits')
   assert.equal(new Set(locs).size, locs.length)
   const familyAt = locs.indexOf(

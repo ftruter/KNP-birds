@@ -1,7 +1,9 @@
-// Phase 0 spike for issue 150: map BirdNET labels to our species slugs.
+// Maps BirdNET labels to our species slugs (issue 150). Writes
+// data/identify/birdnet-labels.json, which scripts/seed.mjs turns into the
+// index/identify-sound document.
 //
 // Pass 1 matches on scientific name. Pass 2 uses the hand-checked table in
-// synonyms.json, which has four sections:
+// data/identify/birdnet-synonyms.json, which has four sections:
 //   synonyms   the same taxon under another name (a genus move or a spelling)
 //   also       a second label inside one of our species (we lump, the model splits)
 //   ambiguous  the only candidate label is broader than our species; not mapped
@@ -9,15 +11,17 @@
 // Nothing else is mapped: a species with no entry is listed as not covered.
 // This script never guesses. The hints it prints are for a person to check.
 //
-// Usage: node map-labels.mjs [path/to/labels/en_us.txt] [--hints]
+// Usage: node scripts/map-birdnet-labels.mjs [path/to/labels/en_us.txt] [--hints]
+// Without a path it looks for the labels under spike/identify-sound/models/.
 
 import { createHash } from 'node:crypto'
 import { readFile, readdir, writeFile } from 'node:fs/promises'
 import path from 'node:path'
 import { fileURLToPath } from 'node:url'
-import { readCatalog } from '../../scripts/seed.mjs'
+import { readCatalog } from './seed.mjs'
 
-const here = path.dirname(fileURLToPath(import.meta.url))
+const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..')
+const dataDir = path.join(root, 'data/identify')
 const MODEL = 'BirdNET GLOBAL 6K V2.4'
 
 const findLabels = async (dir) => {
@@ -59,7 +63,7 @@ export const buildMap = (species, labels, table) => {
   )
   for (const slug of named) {
     if (!slugs.has(slug))
-      problems.push(`synonyms.json names an unknown slug: ${slug}`)
+      problems.push(`birdnet-synonyms.json names an unknown slug: ${slug}`)
   }
 
   const covered = {}
@@ -185,11 +189,11 @@ const main = async () => {
   const args = process.argv.slice(2)
   const labelsPath =
     args.find((arg) => !arg.startsWith('--')) ??
-    (await findLabels(path.join(here, 'models')))
+    (await findLabels(path.join(root, 'spike/identify-sound/models')))
   const text = await readFile(labelsPath, 'utf8')
   const labels = parseLabels(text)
   const table = JSON.parse(
-    await readFile(path.join(here, 'synonyms.json'), 'utf8'),
+    await readFile(path.join(dataDir, 'birdnet-synonyms.json'), 'utf8'),
   )
   const { species } = await readCatalog()
   const result = buildMap(species, labels, table)
@@ -225,7 +229,7 @@ const main = async () => {
     notCovered: result.notCovered,
   }
   await writeFile(
-    path.join(here, 'label-map.json'),
+    path.join(dataDir, 'birdnet-labels.json'),
     `${JSON.stringify(output, null, 2)}\n`,
   )
   console.log(counts)
