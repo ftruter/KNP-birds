@@ -1,0 +1,3493 @@
+{
+  "model": "BirdNET GLOBAL 6K V2.4",
+  "labelsFile": "en_us.txt",
+  "labelsSha256": "b50b77b7c3dfe40cd637e8cccdca0173a0a4ddee8867b830ff3c1a566f477f16",
+  "labelCount": 6522,
+  "counts": {
+    "species": 493,
+    "exact": 334,
+    "synonym": 28,
+    "ambiguous": 8,
+    "notCovered": 123
+  },
+  "covered": {
+    "acridotheres-tristis": {
+      "indices": [
+        49
+      ],
+      "labels": [
+        "Acridotheres tristis_Common Myna"
+      ],
+      "via": "exact"
+    },
+    "acrocephalus-arundinaceus": {
+      "indices": [
+        54
+      ],
+      "labels": [
+        "Acrocephalus arundinaceus_Great Reed Warbler"
+      ],
+      "via": "exact"
+    },
+    "acrocephalus-gracilirostris": {
+      "indices": [
+        60
+      ],
+      "labels": [
+        "Acrocephalus gracilirostris_Lesser Swamp Warbler"
+      ],
+      "via": "exact"
+    },
+    "acrocephalus-palustris": {
+      "indices": [
+        66
+      ],
+      "labels": [
+        "Acrocephalus palustris_Marsh Warbler"
+      ],
+      "via": "exact"
+    },
+    "acrocephalus-schoenobaenus": {
+      "indices": [
+        68
+      ],
+      "labels": [
+        "Acrocephalus schoenobaenus_Sedge Warbler"
+      ],
+      "via": "exact"
+    },
+    "acrocephalus-scirpaceus": {
+      "indices": [
+        69,
+        56
+      ],
+      "labels": [
+        "Acrocephalus scirpaceus_Eurasian Reed Warbler",
+        "Acrocephalus baeticatus_African Reed Warbler"
+      ],
+      "via": "exact",
+      "also": "BLSA 2026 lumps African Reed Warbler into Common Reed Warbler; the model keeps both"
+    },
+    "actitis-hypoleucos": {
+      "indices": [
+        82
+      ],
+      "labels": [
+        "Actitis hypoleucos_Common Sandpiper"
+      ],
+      "via": "exact"
+    },
+    "actophilornis-africanus": {
+      "indices": [
+        84
+      ],
+      "labels": [
+        "Actophilornis africanus_African Jacana"
+      ],
+      "via": "exact"
+    },
+    "aerospiza-tachiro": {
+      "indices": [
+        37
+      ],
+      "labels": [
+        "Accipiter tachiro_African Goshawk"
+      ],
+      "via": "synonym",
+      "reason": "Genus move",
+      "source": "docs/species-sources.md, \"Taxonomy remaps\""
+    },
+    "alopochen-aegyptiaca": {
+      "indices": [
+        183
+      ],
+      "labels": [
+        "Alopochen aegyptiaca_Egyptian Goose"
+      ],
+      "via": "exact"
+    },
+    "amblyospiza-albifrons": {
+      "indices": [
+        227
+      ],
+      "labels": [
+        "Amblyospiza albifrons_Grosbeak Weaver"
+      ],
+      "via": "exact"
+    },
+    "amirafra-rufocinnamomea": {
+      "indices": [
+        3615
+      ],
+      "labels": [
+        "Mirafra rufocinnamomea_Flappet Lark"
+      ],
+      "via": "synonym",
+      "reason": "Genus move",
+      "source": "docs/species-sources.md, \"Taxonomy remaps\""
+    },
+    "anas-undulata": {
+      "indices": [
+        271
+      ],
+      "labels": [
+        "Anas undulata_Yellow-billed Duck"
+      ],
+      "via": "exact"
+    },
+    "andropadus-importunus": {
+      "indices": [
+        291
+      ],
+      "labels": [
+        "Andropadus importunus_Sombre Greenbul"
+      ],
+      "via": "exact"
+    },
+    "anthus-cinnamomeus": {
+      "indices": [
+        342
+      ],
+      "labels": [
+        "Anthus cinnamomeus_African Pipit"
+      ],
+      "via": "exact"
+    },
+    "anthus-leucophrys": {
+      "indices": [
+        350
+      ],
+      "labels": [
+        "Anthus leucophrys_Plain-backed Pipit"
+      ],
+      "via": "exact"
+    },
+    "anthus-lineiventris": {
+      "indices": [
+        351
+      ],
+      "labels": [
+        "Anthus lineiventris_Striped Pipit"
+      ],
+      "via": "exact"
+    },
+    "apalis-flavida": {
+      "indices": [
+        390
+      ],
+      "labels": [
+        "Apalis flavida_Yellow-breasted Apalis"
+      ],
+      "via": "exact"
+    },
+    "apalis-ruddi": {
+      "indices": [
+        395
+      ],
+      "labels": [
+        "Apalis ruddi_Rudd's Apalis"
+      ],
+      "via": "exact"
+    },
+    "apalis-thoracica": {
+      "indices": [
+        398
+      ],
+      "labels": [
+        "Apalis thoracica_Bar-throated Apalis"
+      ],
+      "via": "exact"
+    },
+    "apaloderma-narina": {
+      "indices": [
+        399
+      ],
+      "labels": [
+        "Apaloderma narina_Narina Trogon"
+      ],
+      "via": "exact"
+    },
+    "aplopelia-larvata": {
+      "indices": [
+        1488
+      ],
+      "labels": [
+        "Columba larvata_Lemon Dove"
+      ],
+      "via": "synonym",
+      "reason": "Genus move",
+      "source": "docs/species-sources.md, \"Taxonomy remaps\""
+    },
+    "apus-affinis": {
+      "indices": [
+        422
+      ],
+      "labels": [
+        "Apus affinis_Little Swift"
+      ],
+      "via": "exact"
+    },
+    "apus-apus": {
+      "indices": [
+        423
+      ],
+      "labels": [
+        "Apus apus_Common Swift"
+      ],
+      "via": "exact"
+    },
+    "apus-caffer": {
+      "indices": [
+        424
+      ],
+      "labels": [
+        "Apus caffer_White-rumped Swift"
+      ],
+      "via": "exact"
+    },
+    "aquila-nipalensis": {
+      "indices": [
+        433
+      ],
+      "labels": [
+        "Aquila nipalensis_Steppe Eagle"
+      ],
+      "via": "exact"
+    },
+    "ardea-alba": {
+      "indices": [
+        467
+      ],
+      "labels": [
+        "Ardea alba_Great Egret"
+      ],
+      "via": "exact"
+    },
+    "ardea-cinerea": {
+      "indices": [
+        468
+      ],
+      "labels": [
+        "Ardea cinerea_Gray Heron"
+      ],
+      "via": "exact"
+    },
+    "ardea-melanocephala": {
+      "indices": [
+        472
+      ],
+      "labels": [
+        "Ardea melanocephala_Black-headed Heron"
+      ],
+      "via": "exact"
+    },
+    "ardea-purpurea": {
+      "indices": [
+        473
+      ],
+      "labels": [
+        "Ardea purpurea_Purple Heron"
+      ],
+      "via": "exact"
+    },
+    "ardeola-ralloides": {
+      "indices": [
+        483
+      ],
+      "labels": [
+        "Ardeola ralloides_Squacco Heron"
+      ],
+      "via": "exact"
+    },
+    "astur-melanoleucus": {
+      "indices": [
+        29
+      ],
+      "labels": [
+        "Accipiter melanoleucus_Black Goshawk"
+      ],
+      "via": "synonym",
+      "reason": "Genus move; the model calls it Black Goshawk",
+      "source": "docs/species-sources.md, \"Taxonomy remaps\""
+    },
+    "batis-capensis": {
+      "indices": [
+        664
+      ],
+      "labels": [
+        "Batis capensis_Cape Batis"
+      ],
+      "via": "exact"
+    },
+    "batis-molitor": {
+      "indices": [
+        667
+      ],
+      "labels": [
+        "Batis molitor_Chinspot Batis"
+      ],
+      "via": "exact"
+    },
+    "bostrychia-hagedash": {
+      "indices": [
+        702
+      ],
+      "labels": [
+        "Bostrychia hagedash_Hadada Ibis"
+      ],
+      "via": "exact"
+    },
+    "botaurus-minutus": {
+      "indices": [
+        2977
+      ],
+      "labels": [
+        "Ixobrychus minutus_Little Bittern"
+      ],
+      "via": "synonym",
+      "reason": "Genus move",
+      "source": "docs/species-sources.md, \"Taxonomy remaps\""
+    },
+    "bradypterus-baboecala": {
+      "indices": [
+        719
+      ],
+      "labels": [
+        "Bradypterus baboecala_Little Rush Warbler"
+      ],
+      "via": "exact"
+    },
+    "bradypterus-barratti": {
+      "indices": [
+        720
+      ],
+      "labels": [
+        "Bradypterus barratti_Barratt's Warbler"
+      ],
+      "via": "exact"
+    },
+    "bubalornis-niger": {
+      "indices": [
+        740
+      ],
+      "labels": [
+        "Bubalornis niger_Red-billed Buffalo-Weaver"
+      ],
+      "via": "exact"
+    },
+    "bubo-africanus": {
+      "indices": [
+        741
+      ],
+      "labels": [
+        "Bubo africanus_Spotted Eagle-Owl"
+      ],
+      "via": "exact"
+    },
+    "bucorvus-leadbeateri": {
+      "indices": [
+        763
+      ],
+      "labels": [
+        "Bucorvus leadbeateri_Southern Ground-Hornbill"
+      ],
+      "via": "exact"
+    },
+    "buphagus-africanus": {
+      "indices": [
+        765
+      ],
+      "labels": [
+        "Buphagus africanus_Yellow-billed Oxpecker"
+      ],
+      "via": "exact"
+    },
+    "buphagus-erythroryncha": {
+      "indices": [
+        766
+      ],
+      "labels": [
+        "Buphagus erythrorynchus_Red-billed Oxpecker"
+      ],
+      "via": "synonym",
+      "reason": "Spelling of the epithet",
+      "source": "docs/species-sources.md, \"Taxonomy remaps\""
+    },
+    "burhinus-capensis": {
+      "indices": [
+        768
+      ],
+      "labels": [
+        "Burhinus capensis_Spotted Thick-knee"
+      ],
+      "via": "exact"
+    },
+    "burhinus-vermiculatus": {
+      "indices": [
+        774
+      ],
+      "labels": [
+        "Burhinus vermiculatus_Water Thick-knee"
+      ],
+      "via": "exact"
+    },
+    "buteo-buteo": {
+      "indices": [
+        783
+      ],
+      "labels": [
+        "Buteo buteo_Common Buzzard"
+      ],
+      "via": "exact"
+    },
+    "bycanistes-bucinator": {
+      "indices": [
+        807
+      ],
+      "labels": [
+        "Bycanistes bucinator_Trumpeter Hornbill"
+      ],
+      "via": "exact"
+    },
+    "calamonastes-fasciolatus": {
+      "indices": [
+        834
+      ],
+      "labels": [
+        "Calamonastes fasciolatus_Barred Wren-Warbler"
+      ],
+      "via": "exact"
+    },
+    "calamonastes-stierlingi": {
+      "indices": [
+        836
+      ],
+      "labels": [
+        "Calamonastes stierlingi_Stierling's Wren-Warbler"
+      ],
+      "via": "exact"
+    },
+    "calandrella-cinerea": {
+      "indices": [
+        840
+      ],
+      "labels": [
+        "Calandrella cinerea_Red-capped Lark"
+      ],
+      "via": "exact"
+    },
+    "calendulauda-africanoides": {
+      "indices": [
+        845
+      ],
+      "labels": [
+        "Calendulauda africanoides_Fawn-colored Lark"
+      ],
+      "via": "exact"
+    },
+    "calendulauda-sabota": {
+      "indices": [
+        849
+      ],
+      "labels": [
+        "Calendulauda sabota_Sabota Lark"
+      ],
+      "via": "exact"
+    },
+    "calidris-ferruginea": {
+      "indices": [
+        857
+      ],
+      "labels": [
+        "Calidris ferruginea_Curlew Sandpiper"
+      ],
+      "via": "exact"
+    },
+    "calidris-melanotos": {
+      "indices": [
+        862
+      ],
+      "labels": [
+        "Calidris melanotos_Pectoral Sandpiper"
+      ],
+      "via": "exact"
+    },
+    "calidris-minuta": {
+      "indices": [
+        863
+      ],
+      "labels": [
+        "Calidris minuta_Little Stint"
+      ],
+      "via": "exact"
+    },
+    "calidris-pugnax": {
+      "indices": [
+        866
+      ],
+      "labels": [
+        "Calidris pugnax_Ruff"
+      ],
+      "via": "exact"
+    },
+    "camaroptera-brachyura": {
+      "indices": [
+        903
+      ],
+      "labels": [
+        "Camaroptera brachyura_Green-backed Camaroptera"
+      ],
+      "via": "exact",
+      "partial": "The model label is Green-backed Camaroptera only; Grey-backed (brevicaudata), which BLSA lumps into Bleating, has no label"
+    },
+    "campephaga-flava": {
+      "indices": [
+        906
+      ],
+      "labels": [
+        "Campephaga flava_Black Cuckooshrike"
+      ],
+      "via": "exact"
+    },
+    "campethera-abingoni": {
+      "indices": [
+        917
+      ],
+      "labels": [
+        "Campethera abingoni_Golden-tailed Woodpecker"
+      ],
+      "via": "exact"
+    },
+    "caprimulgus-europaeus": {
+      "indices": [
+        970
+      ],
+      "labels": [
+        "Caprimulgus europaeus_Eurasian Nightjar"
+      ],
+      "via": "exact"
+    },
+    "caprimulgus-fossii": {
+      "indices": [
+        971
+      ],
+      "labels": [
+        "Caprimulgus fossii_Square-tailed Nightjar"
+      ],
+      "via": "exact"
+    },
+    "caprimulgus-pectoralis": {
+      "indices": [
+        979
+      ],
+      "labels": [
+        "Caprimulgus pectoralis_Fiery-necked Nightjar"
+      ],
+      "via": "exact"
+    },
+    "caprimulgus-rufigena": {
+      "indices": [
+        982
+      ],
+      "labels": [
+        "Caprimulgus rufigena_Rufous-cheeked Nightjar"
+      ],
+      "via": "exact"
+    },
+    "caprimulgus-tristigma": {
+      "indices": [
+        983
+      ],
+      "labels": [
+        "Caprimulgus tristigma_Freckled Nightjar"
+      ],
+      "via": "exact"
+    },
+    "ceblepyris-caesius": {
+      "indices": [
+        1555
+      ],
+      "labels": [
+        "Coracina caesia_Gray Cuckooshrike"
+      ],
+      "via": "synonym",
+      "reason": "Genus move",
+      "source": "English name and species epithet are identical in the label file; genus differs between Clements (model) and IOC/BLSA 2026"
+    },
+    "ceblepyris-pectoralis": {
+      "indices": [
+        1562
+      ],
+      "labels": [
+        "Coracina pectoralis_White-breasted Cuckooshrike"
+      ],
+      "via": "synonym",
+      "reason": "Genus move",
+      "source": "English name and species epithet are identical in the label file; genus differs between Clements (model) and IOC/BLSA 2026"
+    },
+    "cecropis-abyssinica": {
+      "indices": [
+        1040
+      ],
+      "labels": [
+        "Cecropis abyssinica_Lesser Striped Swallow"
+      ],
+      "via": "exact"
+    },
+    "cecropis-cucullata": {
+      "indices": [
+        1041
+      ],
+      "labels": [
+        "Cecropis cucullata_Greater Striped Swallow"
+      ],
+      "via": "exact"
+    },
+    "cecropis-semirufa": {
+      "indices": [
+        1043
+      ],
+      "labels": [
+        "Cecropis semirufa_Rufous-chested Swallow"
+      ],
+      "via": "exact"
+    },
+    "centropus-senegalensis": {
+      "indices": [
+        1072
+      ],
+      "labels": [
+        "Centropus senegalensis_Senegal Coucal"
+      ],
+      "via": "exact"
+    },
+    "cercotrichas-leucophrys": {
+      "indices": [
+        1107
+      ],
+      "labels": [
+        "Cercotrichas leucophrys_Red-backed Scrub-Robin"
+      ],
+      "via": "exact"
+    },
+    "ceryle-rudis": {
+      "indices": [
+        1126
+      ],
+      "labels": [
+        "Ceryle rudis_Pied Kingfisher"
+      ],
+      "via": "exact"
+    },
+    "chalcomitra-amethystina": {
+      "indices": [
+        1144
+      ],
+      "labels": [
+        "Chalcomitra amethystina_Amethyst Sunbird"
+      ],
+      "via": "exact"
+    },
+    "chalcomitra-senegalensis": {
+      "indices": [
+        1145
+      ],
+      "labels": [
+        "Chalcomitra senegalensis_Scarlet-chested Sunbird"
+      ],
+      "via": "exact"
+    },
+    "charadrius-hiaticula": {
+      "indices": [
+        1168
+      ],
+      "labels": [
+        "Charadrius hiaticula_Common Ringed Plover"
+      ],
+      "via": "exact"
+    },
+    "chlidonias-hybrida": {
+      "indices": [
+        1206
+      ],
+      "labels": [
+        "Chlidonias hybrida_Whiskered Tern"
+      ],
+      "via": "exact"
+    },
+    "chlidonias-leucopterus": {
+      "indices": [
+        1207
+      ],
+      "labels": [
+        "Chlidonias leucopterus_White-winged Tern"
+      ],
+      "via": "exact"
+    },
+    "chlorocichla-flaviventris": {
+      "indices": [
+        1224
+      ],
+      "labels": [
+        "Chlorocichla flaviventris_Yellow-bellied Greenbul"
+      ],
+      "via": "exact"
+    },
+    "chlorophoneus-nigrifrons": {
+      "indices": [
+        5942
+      ],
+      "labels": [
+        "Telophorus nigrifrons_Black-fronted Bushshrike"
+      ],
+      "via": "synonym",
+      "reason": "Genus move",
+      "source": "English name and species epithet are identical in the label file; genus differs between Clements (model) and IOC/BLSA 2026"
+    },
+    "chlorophoneus-olivaceus": {
+      "indices": [
+        5943
+      ],
+      "labels": [
+        "Telophorus olivaceus_Olive Bushshrike"
+      ],
+      "via": "synonym",
+      "reason": "Genus move",
+      "source": "English name and species epithet are identical in the label file; genus differs between Clements (model) and IOC/BLSA 2026"
+    },
+    "chlorophoneus-sulfureopectus": {
+      "indices": [
+        5944
+      ],
+      "labels": [
+        "Telophorus sulfureopectus_Sulphur-breasted Bushshrike"
+      ],
+      "via": "synonym",
+      "reason": "Genus move; the model calls it Sulphur-breasted Bushshrike",
+      "source": "Same epithet; English names differ, so the owner should confirm"
+    },
+    "chloropicus-namaquus": {
+      "indices": [
+        1242
+      ],
+      "labels": [
+        "Chloropicus namaquus_Bearded Woodpecker"
+      ],
+      "via": "exact"
+    },
+    "chroicocephalus-cirrocephalus": {
+      "indices": [
+        1271
+      ],
+      "labels": [
+        "Chroicocephalus cirrocephalus_Gray-hooded Gull"
+      ],
+      "via": "exact"
+    },
+    "chrysococcyx-caprius": {
+      "indices": [
+        1279
+      ],
+      "labels": [
+        "Chrysococcyx caprius_Dideric Cuckoo"
+      ],
+      "via": "exact"
+    },
+    "chrysococcyx-cupreus": {
+      "indices": [
+        1280
+      ],
+      "labels": [
+        "Chrysococcyx cupreus_African Emerald Cuckoo"
+      ],
+      "via": "exact"
+    },
+    "chrysococcyx-klaas": {
+      "indices": [
+        1281
+      ],
+      "labels": [
+        "Chrysococcyx klaas_Klaas's Cuckoo"
+      ],
+      "via": "exact"
+    },
+    "cichladusa-arquata": {
+      "indices": [
+        1308
+      ],
+      "labels": [
+        "Cichladusa arquata_Collared Palm-Thrush"
+      ],
+      "via": "exact"
+    },
+    "ciconia-ciconia": {
+      "indices": [
+        1315
+      ],
+      "labels": [
+        "Ciconia ciconia_White Stork"
+      ],
+      "via": "exact"
+    },
+    "ciconia-nigra": {
+      "indices": [
+        1316
+      ],
+      "labels": [
+        "Ciconia nigra_Black Stork"
+      ],
+      "via": "exact"
+    },
+    "cinnyricinclus-leucogaster": {
+      "indices": [
+        1341
+      ],
+      "labels": [
+        "Cinnyricinclus leucogaster_Violet-backed Starling"
+      ],
+      "via": "exact"
+    },
+    "cinnyris-afer": {
+      "indices": [
+        1342
+      ],
+      "labels": [
+        "Cinnyris afer_Greater Double-collared Sunbird"
+      ],
+      "via": "exact"
+    },
+    "cinnyris-bifasciatus": {
+      "indices": [
+        1344
+      ],
+      "labels": [
+        "Cinnyris bifasciatus_Purple-banded Sunbird"
+      ],
+      "via": "exact"
+    },
+    "cinnyris-chalybeus": {
+      "indices": [
+        1345
+      ],
+      "labels": [
+        "Cinnyris chalybeus_Southern Double-collared Sunbird"
+      ],
+      "via": "exact"
+    },
+    "cinnyris-mariquensis": {
+      "indices": [
+        1355
+      ],
+      "labels": [
+        "Cinnyris mariquensis_Mariqua Sunbird"
+      ],
+      "via": "exact"
+    },
+    "cinnyris-talatala": {
+      "indices": [
+        1364
+      ],
+      "labels": [
+        "Cinnyris talatala_White-breasted Sunbird"
+      ],
+      "via": "exact"
+    },
+    "circus-macrourus": {
+      "indices": [
+        1372
+      ],
+      "labels": [
+        "Circus macrourus_Pallid Harrier"
+      ],
+      "via": "exact"
+    },
+    "circus-pygargus": {
+      "indices": [
+        1374
+      ],
+      "labels": [
+        "Circus pygargus_Montagu's Harrier"
+      ],
+      "via": "exact"
+    },
+    "cisticola-aberrans": {
+      "indices": [
+        1380
+      ],
+      "labels": [
+        "Cisticola aberrans_Rock-loving Cisticola"
+      ],
+      "via": "exact"
+    },
+    "cisticola-aridulus": {
+      "indices": [
+        1382
+      ],
+      "labels": [
+        "Cisticola aridulus_Desert Cisticola"
+      ],
+      "via": "exact"
+    },
+    "cisticola-chiniana": {
+      "indices": [
+        1387
+      ],
+      "labels": [
+        "Cisticola chiniana_Rattling Cisticola"
+      ],
+      "via": "exact"
+    },
+    "cisticola-erythrops": {
+      "indices": [
+        1390
+      ],
+      "labels": [
+        "Cisticola erythrops_Red-faced Cisticola"
+      ],
+      "via": "exact"
+    },
+    "cisticola-fulvicapilla": {
+      "indices": [
+        1392
+      ],
+      "labels": [
+        "Cisticola fulvicapilla_Piping Cisticola"
+      ],
+      "via": "exact"
+    },
+    "cisticola-juncidis": {
+      "indices": [
+        1395
+      ],
+      "labels": [
+        "Cisticola juncidis_Zitting Cisticola"
+      ],
+      "via": "exact"
+    },
+    "cisticola-natalensis": {
+      "indices": [
+        1399
+      ],
+      "labels": [
+        "Cisticola natalensis_Croaking Cisticola"
+      ],
+      "via": "exact"
+    },
+    "cisticola-tinniens": {
+      "indices": [
+        1406
+      ],
+      "labels": [
+        "Cisticola tinniens_Levaillant's Cisticola"
+      ],
+      "via": "exact"
+    },
+    "clamator-glandarius": {
+      "indices": [
+        1413
+      ],
+      "labels": [
+        "Clamator glandarius_Great Spotted Cuckoo"
+      ],
+      "via": "exact"
+    },
+    "clamator-jacobinus": {
+      "indices": [
+        1414
+      ],
+      "labels": [
+        "Clamator jacobinus_Pied Cuckoo"
+      ],
+      "via": "exact"
+    },
+    "clamator-levaillantii": {
+      "indices": [
+        1415
+      ],
+      "labels": [
+        "Clamator levaillantii_Levaillant's Cuckoo"
+      ],
+      "via": "exact"
+    },
+    "clanga-pomarina": {
+      "indices": [
+        1417
+      ],
+      "labels": [
+        "Clanga pomarina_Lesser Spotted Eagle"
+      ],
+      "via": "exact"
+    },
+    "coccopygia-melanotis": {
+      "indices": [
+        1432
+      ],
+      "labels": [
+        "Coccopygia melanotis_Swee Waxbill"
+      ],
+      "via": "exact"
+    },
+    "colius-striatus": {
+      "indices": [
+        1475
+      ],
+      "labels": [
+        "Colius striatus_Speckled Mousebird"
+      ],
+      "via": "exact"
+    },
+    "columba-arquatrix": {
+      "indices": [
+        1483
+      ],
+      "labels": [
+        "Columba arquatrix_Rameron Pigeon"
+      ],
+      "via": "exact"
+    },
+    "columba-guinea": {
+      "indices": [
+        1485
+      ],
+      "labels": [
+        "Columba guinea_Speckled Pigeon"
+      ],
+      "via": "exact"
+    },
+    "columba-livia": {
+      "indices": [
+        1489
+      ],
+      "labels": [
+        "Columba livia_Rock Pigeon"
+      ],
+      "via": "exact"
+    },
+    "coracias-caudatus": {
+      "indices": [
+        1553
+      ],
+      "labels": [
+        "Coracias caudatus_Lilac-breasted Roller"
+      ],
+      "via": "exact"
+    },
+    "coracias-garrulus": {
+      "indices": [
+        1554
+      ],
+      "labels": [
+        "Coracias garrulus_European Roller"
+      ],
+      "via": "exact"
+    },
+    "corvus-albicollis": {
+      "indices": [
+        1573
+      ],
+      "labels": [
+        "Corvus albicollis_White-necked Raven"
+      ],
+      "via": "exact"
+    },
+    "corvus-albus": {
+      "indices": [
+        1574
+      ],
+      "labels": [
+        "Corvus albus_Pied Crow"
+      ],
+      "via": "exact"
+    },
+    "corvus-capensis": {
+      "indices": [
+        1576
+      ],
+      "labels": [
+        "Corvus capensis_Cape Crow"
+      ],
+      "via": "exact"
+    },
+    "corythornis-cristatus": {
+      "indices": [
+        1615
+      ],
+      "labels": [
+        "Corythornis cristatus_Malachite Kingfisher"
+      ],
+      "via": "exact"
+    },
+    "cossypha-dichroa": {
+      "indices": [
+        1622
+      ],
+      "labels": [
+        "Cossypha dichroa_Chorister Robin-Chat"
+      ],
+      "via": "exact"
+    },
+    "cossypha-heuglini": {
+      "indices": [
+        1623
+      ],
+      "labels": [
+        "Cossypha heuglini_White-browed Robin-Chat"
+      ],
+      "via": "exact"
+    },
+    "cossypha-natalensis": {
+      "indices": [
+        1625
+      ],
+      "labels": [
+        "Cossypha natalensis_Red-capped Robin-Chat"
+      ],
+      "via": "exact"
+    },
+    "coturnix-coturnix": {
+      "indices": [
+        1631
+      ],
+      "labels": [
+        "Coturnix coturnix_Common Quail"
+      ],
+      "via": "exact"
+    },
+    "coturnix-delegorguei": {
+      "indices": [
+        1632
+      ],
+      "labels": [
+        "Coturnix delegorguei_Harlequin Quail"
+      ],
+      "via": "exact"
+    },
+    "creatophora-cinerea": {
+      "indices": [
+        1669
+      ],
+      "labels": [
+        "Creatophora cinerea_Wattled Starling"
+      ],
+      "via": "exact"
+    },
+    "crex-crex": {
+      "indices": [
+        1670
+      ],
+      "labels": [
+        "Crex crex_Corn Crake"
+      ],
+      "via": "exact"
+    },
+    "crinifer-concolor": {
+      "indices": [
+        1611
+      ],
+      "labels": [
+        "Corythaixoides concolor_Gray Go-away-bird"
+      ],
+      "via": "synonym",
+      "reason": "Genus move",
+      "source": "docs/species-sources.md, \"Taxonomy remaps\""
+    },
+    "crithagra-atrogularis": {
+      "indices": [
+        1676
+      ],
+      "labels": [
+        "Crithagra atrogularis_Black-throated Canary"
+      ],
+      "via": "exact"
+    },
+    "crithagra-gularis": {
+      "indices": [
+        1680
+      ],
+      "labels": [
+        "Crithagra gularis_Streaky-headed Seedeater"
+      ],
+      "via": "exact"
+    },
+    "crithagra-scotops": {
+      "indices": [
+        1685
+      ],
+      "labels": [
+        "Crithagra scotops_Forest Canary"
+      ],
+      "via": "exact"
+    },
+    "crithagra-sulphurata": {
+      "indices": [
+        1687
+      ],
+      "labels": [
+        "Crithagra sulphurata_Brimstone Canary"
+      ],
+      "via": "exact"
+    },
+    "cuculus-canorus": {
+      "indices": [
+        1715
+      ],
+      "labels": [
+        "Cuculus canorus_Common Cuckoo"
+      ],
+      "via": "exact"
+    },
+    "cuculus-clamosus": {
+      "indices": [
+        1716
+      ],
+      "labels": [
+        "Cuculus clamosus_Black Cuckoo"
+      ],
+      "via": "exact"
+    },
+    "cuculus-gularis": {
+      "indices": [
+        1717
+      ],
+      "labels": [
+        "Cuculus gularis_African Cuckoo"
+      ],
+      "via": "exact"
+    },
+    "cuculus-solitarius": {
+      "indices": [
+        1724
+      ],
+      "labels": [
+        "Cuculus solitarius_Red-chested Cuckoo"
+      ],
+      "via": "exact"
+    },
+    "curruca-communis": {
+      "indices": [
+        1730
+      ],
+      "labels": [
+        "Curruca communis_Greater Whitethroat"
+      ],
+      "via": "exact"
+    },
+    "cyanomitra-olivacea": {
+      "indices": [
+        1788
+      ],
+      "labels": [
+        "Cyanomitra olivacea_Olive Sunbird"
+      ],
+      "via": "exact"
+    },
+    "cypsiurus-parvus": {
+      "indices": [
+        1831
+      ],
+      "labels": [
+        "Cypsiurus parvus_African Palm-Swift"
+      ],
+      "via": "exact"
+    },
+    "delichon-urbicum": {
+      "indices": [
+        1853
+      ],
+      "labels": [
+        "Delichon urbicum_Common House-Martin"
+      ],
+      "via": "exact"
+    },
+    "dendrocygna-bicolor": {
+      "indices": [
+        1884
+      ],
+      "labels": [
+        "Dendrocygna bicolor_Fulvous Whistling-Duck"
+      ],
+      "via": "exact"
+    },
+    "dendrocygna-viduata": {
+      "indices": [
+        1887
+      ],
+      "labels": [
+        "Dendrocygna viduata_White-faced Whistling-Duck"
+      ],
+      "via": "exact"
+    },
+    "dendropicos-fuscescens": {
+      "indices": [
+        1239
+      ],
+      "labels": [
+        "Chloropicus fuscescens_Cardinal Woodpecker"
+      ],
+      "via": "synonym",
+      "reason": "Genus move",
+      "source": "English name and species epithet are identical in the label file; genus differs between Clements (model) and IOC/BLSA 2026"
+    },
+    "dendropicos-griseocephalus": {
+      "indices": [
+        1241
+      ],
+      "labels": [
+        "Chloropicus griseocephalus_Olive Woodpecker"
+      ],
+      "via": "synonym",
+      "reason": "Genus move",
+      "source": "English name and species epithet are identical in the label file; genus differs between Clements (model) and IOC/BLSA 2026"
+    },
+    "dessonornis-caffer": {
+      "indices": [
+        1620
+      ],
+      "labels": [
+        "Cossypha caffra_Cape Robin-Chat"
+      ],
+      "via": "synonym",
+      "reason": "Genus move",
+      "source": "docs/species-sources.md, \"Taxonomy remaps\""
+    },
+    "dessonornis-humeralis": {
+      "indices": [
+        1624
+      ],
+      "labels": [
+        "Cossypha humeralis_White-throated Robin-Chat"
+      ],
+      "via": "synonym",
+      "reason": "Genus move",
+      "source": "docs/species-sources.md, \"Taxonomy remaps\""
+    },
+    "dicrurus-adsimilis": {
+      "indices": [
+        1910
+      ],
+      "labels": [
+        "Dicrurus adsimilis_Fork-tailed Drongo"
+      ],
+      "via": "exact"
+    },
+    "dicrurus-ludwigii": {
+      "indices": [
+        1922
+      ],
+      "labels": [
+        "Dicrurus ludwigii_Common Square-tailed Drongo"
+      ],
+      "via": "exact"
+    },
+    "dryoscopus-cubla": {
+      "indices": [
+        2010
+      ],
+      "labels": [
+        "Dryoscopus cubla_Black-backed Puffback"
+      ],
+      "via": "exact"
+    },
+    "egretta-garzetta": {
+      "indices": [
+        2047
+      ],
+      "labels": [
+        "Egretta garzetta_Little Egret"
+      ],
+      "via": "exact"
+    },
+    "elanus-caeruleus": {
+      "indices": [
+        2074
+      ],
+      "labels": [
+        "Elanus caeruleus_Black-winged Kite"
+      ],
+      "via": "exact"
+    },
+    "emberiza-flaviventris": {
+      "indices": [
+        2100
+      ],
+      "labels": [
+        "Emberiza flaviventris_Golden-breasted Bunting"
+      ],
+      "via": "exact"
+    },
+    "emberiza-impetuani": {
+      "indices": [
+        2104
+      ],
+      "labels": [
+        "Emberiza impetuani_Lark-like Bunting"
+      ],
+      "via": "exact"
+    },
+    "emberiza-tahapisi": {
+      "indices": [
+        2117
+      ],
+      "labels": [
+        "Emberiza tahapisi_Cinnamon-breasted Bunting"
+      ],
+      "via": "exact"
+    },
+    "eremomela-icteropygialis": {
+      "indices": [
+        2169
+      ],
+      "labels": [
+        "Eremomela icteropygialis_Yellow-bellied Eremomela"
+      ],
+      "via": "exact"
+    },
+    "eremomela-scotops": {
+      "indices": [
+        2171
+      ],
+      "labels": [
+        "Eremomela scotops_Greencap Eremomela"
+      ],
+      "via": "exact"
+    },
+    "estrilda-astrild": {
+      "indices": [
+        2194
+      ],
+      "labels": [
+        "Estrilda astrild_Common Waxbill"
+      ],
+      "via": "exact"
+    },
+    "euplectes-afer": {
+      "indices": [
+        2252
+      ],
+      "labels": [
+        "Euplectes afer_Yellow-crowned Bishop"
+      ],
+      "via": "exact"
+    },
+    "euplectes-ardens": {
+      "indices": [
+        2253
+      ],
+      "labels": [
+        "Euplectes ardens_Red-collared Widowbird"
+      ],
+      "via": "exact"
+    },
+    "euplectes-orix": {
+      "indices": [
+        2257
+      ],
+      "labels": [
+        "Euplectes orix_Southern Red Bishop"
+      ],
+      "via": "exact"
+    },
+    "eurystomus-glaucurus": {
+      "indices": [
+        2281
+      ],
+      "labels": [
+        "Eurystomus glaucurus_Broad-billed Roller"
+      ],
+      "via": "exact"
+    },
+    "falco-amurensis": {
+      "indices": [
+        2287
+      ],
+      "labels": [
+        "Falco amurensis_Amur Falcon"
+      ],
+      "via": "exact"
+    },
+    "falco-naumanni": {
+      "indices": [
+        2293
+      ],
+      "labels": [
+        "Falco naumanni_Lesser Kestrel"
+      ],
+      "via": "exact"
+    },
+    "falco-peregrinus": {
+      "indices": [
+        2294
+      ],
+      "labels": [
+        "Falco peregrinus_Peregrine Falcon"
+      ],
+      "via": "exact"
+    },
+    "falco-subbuteo": {
+      "indices": [
+        2298
+      ],
+      "labels": [
+        "Falco subbuteo_Eurasian Hobby"
+      ],
+      "via": "exact"
+    },
+    "falco-vespertinus": {
+      "indices": [
+        2300
+      ],
+      "labels": [
+        "Falco vespertinus_Red-footed Falcon"
+      ],
+      "via": "exact"
+    },
+    "fraseria-caerulescens": {
+      "indices": [
+        2358
+      ],
+      "labels": [
+        "Fraseria caerulescens_Ashy Flycatcher"
+      ],
+      "via": "exact"
+    },
+    "fraseria-plumbea": {
+      "indices": [
+        2361
+      ],
+      "labels": [
+        "Fraseria plumbea_Gray Tit-Flycatcher"
+      ],
+      "via": "exact"
+    },
+    "fulica-cristata": {
+      "indices": [
+        2377
+      ],
+      "labels": [
+        "Fulica cristata_Red-knobbed Coot"
+      ],
+      "via": "exact"
+    },
+    "gallinula-chloropus": {
+      "indices": [
+        2420
+      ],
+      "labels": [
+        "Gallinula chloropus_Eurasian Moorhen"
+      ],
+      "via": "exact"
+    },
+    "glareola-pratincola": {
+      "indices": [
+        2510
+      ],
+      "labels": [
+        "Glareola pratincola_Collared Pratincole"
+      ],
+      "via": "exact"
+    },
+    "glaucidium-capense": {
+      "indices": [
+        2514
+      ],
+      "labels": [
+        "Glaucidium capense_African Barred Owlet"
+      ],
+      "via": "exact"
+    },
+    "glaucidium-perlatum": {
+      "indices": [
+        2529
+      ],
+      "labels": [
+        "Glaucidium perlatum_Pearl-spotted Owlet"
+      ],
+      "via": "exact"
+    },
+    "gymnoris-superciliaris": {
+      "indices": [
+        2626
+      ],
+      "labels": [
+        "Gymnoris superciliaris_Yellow-throated Bush Sparrow"
+      ],
+      "via": "exact"
+    },
+    "halcyon-albiventris": {
+      "indices": [
+        2653
+      ],
+      "labels": [
+        "Halcyon albiventris_Brown-hooded Kingfisher"
+      ],
+      "via": "exact"
+    },
+    "halcyon-chelicuti": {
+      "indices": [
+        2655
+      ],
+      "labels": [
+        "Halcyon chelicuti_Striped Kingfisher"
+      ],
+      "via": "exact"
+    },
+    "halcyon-leucocephala": {
+      "indices": [
+        2658
+      ],
+      "labels": [
+        "Halcyon leucocephala_Gray-headed Kingfisher"
+      ],
+      "via": "exact"
+    },
+    "halcyon-senegalensis": {
+      "indices": [
+        2661
+      ],
+      "labels": [
+        "Halcyon senegalensis_Woodland Kingfisher"
+      ],
+      "via": "exact"
+    },
+    "hedydipna-collaris": {
+      "indices": [
+        2691
+      ],
+      "labels": [
+        "Hedydipna collaris_Collared Sunbird"
+      ],
+      "via": "exact"
+    },
+    "hieraaetus-pennatus": {
+      "indices": [
+        2780
+      ],
+      "labels": [
+        "Hieraaetus pennatus_Booted Eagle"
+      ],
+      "via": "exact"
+    },
+    "himantopus-himantopus": {
+      "indices": [
+        2789
+      ],
+      "labels": [
+        "Himantopus himantopus_Black-winged Stilt"
+      ],
+      "via": "exact"
+    },
+    "hippolais-icterina": {
+      "indices": [
+        2793
+      ],
+      "labels": [
+        "Hippolais icterina_Icterine Warbler"
+      ],
+      "via": "exact"
+    },
+    "hippolais-olivetorum": {
+      "indices": [
+        2795
+      ],
+      "labels": [
+        "Hippolais olivetorum_Olive-tree Warbler"
+      ],
+      "via": "exact"
+    },
+    "hirundo-rustica": {
+      "indices": [
+        2802
+      ],
+      "labels": [
+        "Hirundo rustica_Barn Swallow"
+      ],
+      "via": "exact"
+    },
+    "hirundo-smithii": {
+      "indices": [
+        2803
+      ],
+      "labels": [
+        "Hirundo smithii_Wire-tailed Swallow"
+      ],
+      "via": "exact"
+    },
+    "icthyophaga-vocifer": {
+      "indices": [
+        2669
+      ],
+      "labels": [
+        "Haliaeetus vocifer_African Fish-Eagle"
+      ],
+      "via": "synonym",
+      "reason": "Genus move",
+      "source": "docs/species-sources.md, \"Taxonomy remaps\""
+    },
+    "iduna-natalensis": {
+      "indices": [
+        2932
+      ],
+      "labels": [
+        "Iduna natalensis_African Yellow-Warbler"
+      ],
+      "via": "exact"
+    },
+    "indicator-indicator": {
+      "indices": [
+        2949
+      ],
+      "labels": [
+        "Indicator indicator_Greater Honeyguide"
+      ],
+      "via": "exact"
+    },
+    "indicator-minor": {
+      "indices": [
+        2950
+      ],
+      "labels": [
+        "Indicator minor_Lesser Honeyguide"
+      ],
+      "via": "exact"
+    },
+    "indicator-variegatus": {
+      "indices": [
+        2951
+      ],
+      "labels": [
+        "Indicator variegatus_Scaly-throated Honeyguide"
+      ],
+      "via": "exact"
+    },
+    "jynx-ruficollis": {
+      "indices": [
+        2994
+      ],
+      "labels": [
+        "Jynx ruficollis_Rufous-necked Wryneck"
+      ],
+      "via": "exact"
+    },
+    "kaupifalco-monogrammicus": {
+      "indices": [
+        2997
+      ],
+      "labels": [
+        "Kaupifalco monogrammicus_Lizard Buzzard"
+      ],
+      "via": "exact"
+    },
+    "ketupa-lactea": {
+      "indices": [
+        745
+      ],
+      "labels": [
+        "Bubo lacteus_Verreaux's Eagle-Owl"
+      ],
+      "via": "synonym",
+      "reason": "Genus move",
+      "source": "docs/species-sources.md, \"Taxonomy remaps\""
+    },
+    "lagonosticta-rhodopareia": {
+      "indices": [
+        3012
+      ],
+      "labels": [
+        "Lagonosticta rhodopareia_Jameson's Firefinch"
+      ],
+      "via": "exact"
+    },
+    "lagonosticta-rubricata": {
+      "indices": [
+        3013
+      ],
+      "labels": [
+        "Lagonosticta rubricata_African Firefinch"
+      ],
+      "via": "exact"
+    },
+    "lagonosticta-senegala": {
+      "indices": [
+        3014
+      ],
+      "labels": [
+        "Lagonosticta senegala_Red-billed Firefinch"
+      ],
+      "via": "exact"
+    },
+    "lamprotornis-australis": {
+      "indices": [
+        3033
+      ],
+      "labels": [
+        "Lamprotornis australis_Burchell's Starling"
+      ],
+      "via": "exact"
+    },
+    "lamprotornis-chalybaeus": {
+      "indices": [
+        3036
+      ],
+      "labels": [
+        "Lamprotornis chalybaeus_Greater Blue-eared Starling"
+      ],
+      "via": "exact"
+    },
+    "lamprotornis-mevesii": {
+      "indices": [
+        3039
+      ],
+      "labels": [
+        "Lamprotornis mevesii_Meves's Starling"
+      ],
+      "via": "exact"
+    },
+    "lamprotornis-nitens": {
+      "indices": [
+        3040
+      ],
+      "labels": [
+        "Lamprotornis nitens_Cape Starling"
+      ],
+      "via": "exact"
+    },
+    "laniarius-atrococcineus": {
+      "indices": [
+        3046
+      ],
+      "labels": [
+        "Laniarius atrococcineus_Crimson-breasted Gonolek"
+      ],
+      "via": "exact"
+    },
+    "laniarius-ferrugineus": {
+      "indices": [
+        3051
+      ],
+      "labels": [
+        "Laniarius ferrugineus_Southern Boubou"
+      ],
+      "via": "exact"
+    },
+    "laniarius-major": {
+      "indices": [
+        3055
+      ],
+      "labels": [
+        "Laniarius major_Tropical Boubou"
+      ],
+      "via": "exact"
+    },
+    "lanius-collaris": {
+      "indices": [
+        3069
+      ],
+      "labels": [
+        "Lanius collaris_Southern Fiscal"
+      ],
+      "via": "exact"
+    },
+    "lanius-collurio": {
+      "indices": [
+        3070
+      ],
+      "labels": [
+        "Lanius collurio_Red-backed Shrike"
+      ],
+      "via": "exact"
+    },
+    "lanius-minor": {
+      "indices": [
+        3079
+      ],
+      "labels": [
+        "Lanius minor_Lesser Gray Shrike"
+      ],
+      "via": "exact"
+    },
+    "leptoptilos-crumenifer": {
+      "indices": [
+        3178
+      ],
+      "labels": [
+        "Leptoptilos crumenifer_Marabou Stork"
+      ],
+      "via": "exact"
+    },
+    "locustella-fluviatilis": {
+      "indices": [
+        3248
+      ],
+      "labels": [
+        "Locustella fluviatilis_River Warbler"
+      ],
+      "via": "exact"
+    },
+    "lophaetus-occipitalis": {
+      "indices": [
+        3265
+      ],
+      "labels": [
+        "Lophaetus occipitalis_Long-crested Eagle"
+      ],
+      "via": "exact"
+    },
+    "lophoceros-alboterminatus": {
+      "indices": [
+        3266
+      ],
+      "labels": [
+        "Lophoceros alboterminatus_Crowned Hornbill"
+      ],
+      "via": "exact"
+    },
+    "lophoceros-nasutus": {
+      "indices": [
+        3270
+      ],
+      "labels": [
+        "Lophoceros nasutus_African Gray Hornbill"
+      ],
+      "via": "exact"
+    },
+    "lophotis-ruficrista": {
+      "indices": [
+        2262
+      ],
+      "labels": [
+        "Eupodotis ruficrista_Red-crested Bustard"
+      ],
+      "via": "synonym",
+      "reason": "Genus move; the model calls it Red-crested Bustard",
+      "source": "Same epithet; English names differ, so the owner should confirm"
+    },
+    "luscinia-luscinia": {
+      "indices": [
+        3306
+      ],
+      "labels": [
+        "Luscinia luscinia_Thrush Nightingale"
+      ],
+      "via": "exact"
+    },
+    "lybius-torquatus": {
+      "indices": [
+        3312
+      ],
+      "labels": [
+        "Lybius torquatus_Black-collared Barbet"
+      ],
+      "via": "exact"
+    },
+    "macheiramphus-alcinus": {
+      "indices": [
+        3325
+      ],
+      "labels": [
+        "Macheiramphus alcinus_Bat Hawk"
+      ],
+      "via": "exact"
+    },
+    "macronyx-croceus": {
+      "indices": [
+        3339
+      ],
+      "labels": [
+        "Macronyx croceus_Yellow-throated Longclaw"
+      ],
+      "via": "exact"
+    },
+    "malaconotus-blanchoti": {
+      "indices": [
+        3354
+      ],
+      "labels": [
+        "Malaconotus blanchoti_Gray-headed Bushshrike"
+      ],
+      "via": "exact"
+    },
+    "megaceryle-maxima": {
+      "indices": [
+        3405
+      ],
+      "labels": [
+        "Megaceryle maxima_Giant Kingfisher"
+      ],
+      "via": "exact"
+    },
+    "melaenornis-pammelaina": {
+      "indices": [
+        3439
+      ],
+      "labels": [
+        "Melaenornis pammelaina_Southern Black-Flycatcher"
+      ],
+      "via": "exact"
+    },
+    "melaniparus-niger": {
+      "indices": [
+        3468
+      ],
+      "labels": [
+        "Melaniparus niger_Southern Black-Tit"
+      ],
+      "via": "exact"
+    },
+    "merops-apiaster": {
+      "indices": [
+        3529
+      ],
+      "labels": [
+        "Merops apiaster_European Bee-eater"
+      ],
+      "via": "exact"
+    },
+    "merops-bullockoides": {
+      "indices": [
+        3530
+      ],
+      "labels": [
+        "Merops bullockoides_White-fronted Bee-eater"
+      ],
+      "via": "exact"
+    },
+    "merops-hirundineus": {
+      "indices": [
+        3532
+      ],
+      "labels": [
+        "Merops hirundineus_Swallow-tailed Bee-eater"
+      ],
+      "via": "exact"
+    },
+    "merops-persicus": {
+      "indices": [
+        3537
+      ],
+      "labels": [
+        "Merops persicus_Blue-cheeked Bee-eater"
+      ],
+      "via": "exact"
+    },
+    "merops-pusillus": {
+      "indices": [
+        3539
+      ],
+      "labels": [
+        "Merops pusillus_Little Bee-eater"
+      ],
+      "via": "exact"
+    },
+    "micronisus-gabar": {
+      "indices": [
+        3571
+      ],
+      "labels": [
+        "Micronisus gabar_Gabar Goshawk"
+      ],
+      "via": "exact"
+    },
+    "milvus-migrans": {
+      "indices": [
+        3584
+      ],
+      "labels": [
+        "Milvus migrans_Black Kite"
+      ],
+      "via": "exact",
+      "partial": "The model label is Black Kite only; Yellow-billed Kite (aegyptius), which BLSA lumps into it, has no label"
+    },
+    "mirafra-passerina": {
+      "indices": [
+        3614
+      ],
+      "labels": [
+        "Mirafra passerina_Monotonous Lark"
+      ],
+      "via": "exact"
+    },
+    "monticola-rupestris": {
+      "indices": [
+        3654
+      ],
+      "labels": [
+        "Monticola rupestris_Cape Rock-Thrush"
+      ],
+      "via": "exact"
+    },
+    "motacilla-aguimp": {
+      "indices": [
+        3665
+      ],
+      "labels": [
+        "Motacilla aguimp_African Pied Wagtail"
+      ],
+      "via": "exact"
+    },
+    "motacilla-capensis": {
+      "indices": [
+        3667
+      ],
+      "labels": [
+        "Motacilla capensis_Cape Wagtail"
+      ],
+      "via": "exact"
+    },
+    "motacilla-clara": {
+      "indices": [
+        3670
+      ],
+      "labels": [
+        "Motacilla clara_Mountain Wagtail"
+      ],
+      "via": "exact"
+    },
+    "motacilla-flava": {
+      "indices": [
+        3671
+      ],
+      "labels": [
+        "Motacilla flava_Western Yellow Wagtail"
+      ],
+      "via": "exact"
+    },
+    "muscicapa-adusta": {
+      "indices": [
+        3678
+      ],
+      "labels": [
+        "Muscicapa adusta_African Dusky Flycatcher"
+      ],
+      "via": "exact"
+    },
+    "myrmecocichla-arnotti": {
+      "indices": [
+        3800
+      ],
+      "labels": [
+        "Myrmecocichla arnotti_Arnot's Chat"
+      ],
+      "via": "exact"
+    },
+    "nectarinia-famosa": {
+      "indices": [
+        3863
+      ],
+      "labels": [
+        "Nectarinia famosa_Malachite Sunbird"
+      ],
+      "via": "exact"
+    },
+    "nicator-gularis": {
+      "indices": [
+        3906
+      ],
+      "labels": [
+        "Nicator gularis_Eastern Nicator"
+      ],
+      "via": "exact"
+    },
+    "nilaus-afer": {
+      "indices": [
+        3909
+      ],
+      "labels": [
+        "Nilaus afer_Brubru"
+      ],
+      "via": "exact"
+    },
+    "notopholia-corusca": {
+      "indices": [
+        3951
+      ],
+      "labels": [
+        "Notopholia corusca_Black-bellied Starling"
+      ],
+      "via": "exact"
+    },
+    "numida-meleagris": {
+      "indices": [
+        3960
+      ],
+      "labels": [
+        "Numida meleagris_Helmeted Guineafowl"
+      ],
+      "via": "exact"
+    },
+    "nycticorax-nycticorax": {
+      "indices": [
+        3968
+      ],
+      "labels": [
+        "Nycticorax nycticorax_Black-crowned Night-Heron"
+      ],
+      "via": "exact"
+    },
+    "oena-capensis": {
+      "indices": [
+        4028
+      ],
+      "labels": [
+        "Oena capensis_Namaqua Dove"
+      ],
+      "via": "exact"
+    },
+    "oenanthe-familiaris": {
+      "indices": [
+        4030
+      ],
+      "labels": [
+        "Oenanthe familiaris_Familiar Chat"
+      ],
+      "via": "exact"
+    },
+    "oenanthe-pileata": {
+      "indices": [
+        4039
+      ],
+      "labels": [
+        "Oenanthe pileata_Capped Wheatear"
+      ],
+      "via": "exact"
+    },
+    "onychognathus-morio": {
+      "indices": [
+        4047
+      ],
+      "labels": [
+        "Onychognathus morio_Red-winged Starling"
+      ],
+      "via": "exact"
+    },
+    "oriolus-auratus": {
+      "indices": [
+        4080
+      ],
+      "labels": [
+        "Oriolus auratus_African Golden Oriole"
+      ],
+      "via": "exact"
+    },
+    "oriolus-larvatus": {
+      "indices": [
+        4087
+      ],
+      "labels": [
+        "Oriolus larvatus_African Black-headed Oriole"
+      ],
+      "via": "exact"
+    },
+    "oriolus-oriolus": {
+      "indices": [
+        4090
+      ],
+      "labels": [
+        "Oriolus oriolus_Eurasian Golden Oriole"
+      ],
+      "via": "exact"
+    },
+    "ortygornis-sephaena": {
+      "indices": [
+        4137
+      ],
+      "labels": [
+        "Ortygornis sephaena_Crested Francolin"
+      ],
+      "via": "exact"
+    },
+    "ortygospiza-atricollis": {
+      "indices": [
+        4138
+      ],
+      "labels": [
+        "Ortygospiza atricollis_Quailfinch"
+      ],
+      "via": "exact"
+    },
+    "otus-senegalensis": {
+      "indices": [
+        4156
+      ],
+      "labels": [
+        "Otus senegalensis_African Scops-Owl"
+      ],
+      "via": "exact"
+    },
+    "pandion-haliaetus": {
+      "indices": [
+        4211
+      ],
+      "labels": [
+        "Pandion haliaetus_Osprey"
+      ],
+      "via": "exact"
+    },
+    "passer-diffusus": {
+      "indices": [
+        4244
+      ],
+      "labels": [
+        "Passer diffusus_Southern Gray-headed Sparrow"
+      ],
+      "via": "exact"
+    },
+    "passer-domesticus": {
+      "indices": [
+        4245
+      ],
+      "labels": [
+        "Passer domesticus_House Sparrow"
+      ],
+      "via": "exact"
+    },
+    "passer-melanurus": {
+      "indices": [
+        4250
+      ],
+      "labels": [
+        "Passer melanurus_Cape Sparrow"
+      ],
+      "via": "exact"
+    },
+    "pernis-apivorus": {
+      "indices": [
+        4340
+      ],
+      "labels": [
+        "Pernis apivorus_European Honey-buzzard"
+      ],
+      "via": "exact"
+    },
+    "phalacrocorax-carbo": {
+      "indices": [
+        4408
+      ],
+      "labels": [
+        "Phalacrocorax carbo_Great Cormorant"
+      ],
+      "via": "exact"
+    },
+    "phoeniconaias-minor": {
+      "indices": [
+        4468
+      ],
+      "labels": [
+        "Phoeniconaias minor_Lesser Flamingo"
+      ],
+      "via": "exact"
+    },
+    "phoenicopterus-roseus": {
+      "indices": [
+        4472
+      ],
+      "labels": [
+        "Phoenicopterus roseus_Greater Flamingo"
+      ],
+      "via": "exact"
+    },
+    "phoeniculus-purpureus": {
+      "indices": [
+        4475
+      ],
+      "labels": [
+        "Phoeniculus purpureus_Green Woodhoopoe"
+      ],
+      "via": "exact"
+    },
+    "phyllastrephus-flavostriatus": {
+      "indices": [
+        4496
+      ],
+      "labels": [
+        "Phyllastrephus flavostriatus_Yellow-streaked Greenbul"
+      ],
+      "via": "exact"
+    },
+    "phyllastrephus-terrestris": {
+      "indices": [
+        4498
+      ],
+      "labels": [
+        "Phyllastrephus terrestris_Terrestrial Brownbul"
+      ],
+      "via": "exact"
+    },
+    "phylloscopus-ruficapilla": {
+      "indices": [
+        4575
+      ],
+      "labels": [
+        "Phylloscopus ruficapilla_Yellow-throated Woodland-Warbler"
+      ],
+      "via": "exact"
+    },
+    "phylloscopus-trochilus": {
+      "indices": [
+        4587
+      ],
+      "labels": [
+        "Phylloscopus trochilus_Willow Warbler"
+      ],
+      "via": "exact"
+    },
+    "platysteira-peltata": {
+      "indices": [
+        4720
+      ],
+      "labels": [
+        "Platysteira peltata_Black-throated Wattle-eye"
+      ],
+      "via": "exact"
+    },
+    "plegadis-falcinellus": {
+      "indices": [
+        4725
+      ],
+      "labels": [
+        "Plegadis falcinellus_Glossy Ibis"
+      ],
+      "via": "exact"
+    },
+    "plocepasser-mahali": {
+      "indices": [
+        4727
+      ],
+      "labels": [
+        "Plocepasser mahali_White-browed Sparrow-Weaver"
+      ],
+      "via": "exact"
+    },
+    "ploceus-capensis": {
+      "indices": [
+        4731
+      ],
+      "labels": [
+        "Ploceus capensis_Cape Weaver"
+      ],
+      "via": "exact"
+    },
+    "ploceus-cucullatus": {
+      "indices": [
+        4732
+      ],
+      "labels": [
+        "Ploceus cucullatus_Village Weaver"
+      ],
+      "via": "exact"
+    },
+    "ploceus-intermedius": {
+      "indices": [
+        4735
+      ],
+      "labels": [
+        "Ploceus intermedius_Lesser Masked-Weaver"
+      ],
+      "via": "exact"
+    },
+    "ploceus-ocularis": {
+      "indices": [
+        4743
+      ],
+      "labels": [
+        "Ploceus ocularis_Spectacled Weaver"
+      ],
+      "via": "exact"
+    },
+    "ploceus-subaureus": {
+      "indices": [
+        4747
+      ],
+      "labels": [
+        "Ploceus subaureus_African Golden-Weaver"
+      ],
+      "via": "exact"
+    },
+    "ploceus-velatus": {
+      "indices": [
+        4748
+      ],
+      "labels": [
+        "Ploceus velatus_Southern Masked-Weaver"
+      ],
+      "via": "exact"
+    },
+    "ploceus-xanthops": {
+      "indices": [
+        4750
+      ],
+      "labels": [
+        "Ploceus xanthops_Holub's Golden-Weaver"
+      ],
+      "via": "exact"
+    },
+    "ploceus-xanthopterus": {
+      "indices": [
+        4751
+      ],
+      "labels": [
+        "Ploceus xanthopterus_Southern Brown-throated Weaver"
+      ],
+      "via": "exact"
+    },
+    "pogoniulus-bilineatus": {
+      "indices": [
+        4796
+      ],
+      "labels": [
+        "Pogoniulus bilineatus_Yellow-rumped Tinkerbird"
+      ],
+      "via": "exact"
+    },
+    "pogoniulus-chrysoconus": {
+      "indices": [
+        4797
+      ],
+      "labels": [
+        "Pogoniulus chrysoconus_Yellow-fronted Tinkerbird"
+      ],
+      "via": "exact"
+    },
+    "pogonocichla-stellata": {
+      "indices": [
+        4803
+      ],
+      "labels": [
+        "Pogonocichla stellata_White-starred Robin"
+      ],
+      "via": "exact"
+    },
+    "poicephalus-cryptoxanthus": {
+      "indices": [
+        4804
+      ],
+      "labels": [
+        "Poicephalus cryptoxanthus_Brown-headed Parrot"
+      ],
+      "via": "exact"
+    },
+    "poicephalus-meyeri": {
+      "indices": [
+        4806
+      ],
+      "labels": [
+        "Poicephalus meyeri_Meyer's Parrot"
+      ],
+      "via": "exact"
+    },
+    "polyboroides-typus": {
+      "indices": [
+        4823
+      ],
+      "labels": [
+        "Polyboroides typus_African Harrier-Hawk"
+      ],
+      "via": "exact"
+    },
+    "porphyrio-porphyrio": {
+      "indices": [
+        4857
+      ],
+      "labels": [
+        "Porphyrio porphyrio_Western Swamphen"
+      ],
+      "via": "exact"
+    },
+    "prinia-flavicans": {
+      "indices": [
+        4874
+      ],
+      "labels": [
+        "Prinia flavicans_Black-chested Prinia"
+      ],
+      "via": "exact"
+    },
+    "prinia-hypoxantha": {
+      "indices": [
+        4878
+      ],
+      "labels": [
+        "Prinia hypoxantha_Drakensberg Prinia"
+      ],
+      "via": "exact"
+    },
+    "prinia-subflava": {
+      "indices": [
+        4887
+      ],
+      "labels": [
+        "Prinia subflava_Tawny-flanked Prinia"
+      ],
+      "via": "exact"
+    },
+    "prionops-plumatus": {
+      "indices": [
+        4893
+      ],
+      "labels": [
+        "Prionops plumatus_White Helmetshrike"
+      ],
+      "via": "exact"
+    },
+    "prionops-retzii": {
+      "indices": [
+        4894
+      ],
+      "labels": [
+        "Prionops retzii_Retz's Helmetshrike"
+      ],
+      "via": "exact"
+    },
+    "pternistis-afer": {
+      "indices": [
+        5031
+      ],
+      "labels": [
+        "Pternistis afer_Red-necked Francolin"
+      ],
+      "via": "exact"
+    },
+    "pternistis-natalensis": {
+      "indices": [
+        5038
+      ],
+      "labels": [
+        "Pternistis natalensis_Natal Francolin"
+      ],
+      "via": "exact"
+    },
+    "pternistis-swainsonii": {
+      "indices": [
+        5040
+      ],
+      "labels": [
+        "Pternistis swainsonii_Swainson's Francolin"
+      ],
+      "via": "exact"
+    },
+    "ptyonoprogne-fuligula": {
+      "indices": [
+        5121
+      ],
+      "labels": [
+        "Ptyonoprogne fuligula_Rock Martin"
+      ],
+      "via": "exact"
+    },
+    "pycnonotus-barbatus": {
+      "indices": [
+        5134
+      ],
+      "labels": [
+        "Pycnonotus barbatus_Common Bulbul"
+      ],
+      "via": "exact"
+    },
+    "pytilia-melba": {
+      "indices": [
+        5200
+      ],
+      "labels": [
+        "Pytilia melba_Green-winged Pytilia"
+      ],
+      "via": "exact"
+    },
+    "quelea-quelea": {
+      "indices": [
+        5201
+      ],
+      "labels": [
+        "Quelea quelea_Red-billed Quelea"
+      ],
+      "via": "exact"
+    },
+    "rallus-caerulescens": {
+      "indices": [
+        5215
+      ],
+      "labels": [
+        "Rallus caerulescens_African Rail"
+      ],
+      "via": "exact"
+    },
+    "recurvirostra-avosetta": {
+      "indices": [
+        5251
+      ],
+      "labels": [
+        "Recurvirostra avosetta_Pied Avocet"
+      ],
+      "via": "exact"
+    },
+    "rhinopomastus-cyanomelas": {
+      "indices": [
+        5271
+      ],
+      "labels": [
+        "Rhinopomastus cyanomelas_Common Scimitarbill"
+      ],
+      "via": "exact"
+    },
+    "riparia-paludicola": {
+      "indices": [
+        5324
+      ],
+      "labels": [
+        "Riparia paludicola_Plain Martin"
+      ],
+      "via": "exact"
+    },
+    "riparia-riparia": {
+      "indices": [
+        5325
+      ],
+      "labels": [
+        "Riparia riparia_Bank Swallow"
+      ],
+      "via": "exact"
+    },
+    "rostratula-benghalensis": {
+      "indices": [
+        5329
+      ],
+      "labels": [
+        "Rostratula benghalensis_Greater Painted-Snipe"
+      ],
+      "via": "exact"
+    },
+    "sarothrura-elegans": {
+      "indices": [
+        5364
+      ],
+      "labels": [
+        "Sarothrura elegans_Buff-spotted Flufftail"
+      ],
+      "via": "exact"
+    },
+    "sarothrura-rufa": {
+      "indices": [
+        5367
+      ],
+      "labels": [
+        "Sarothrura rufa_Red-chested Flufftail"
+      ],
+      "via": "exact"
+    },
+    "saxicola-torquatus": {
+      "indices": [
+        5380
+      ],
+      "labels": [
+        "Saxicola torquatus_African Stonechat"
+      ],
+      "via": "exact"
+    },
+    "scleroptila-shelleyi": {
+      "indices": [
+        5414
+      ],
+      "labels": [
+        "Scleroptila shelleyi_Shelley's Francolin"
+      ],
+      "via": "exact"
+    },
+    "scopus-umbretta": {
+      "indices": [
+        5425
+      ],
+      "labels": [
+        "Scopus umbretta_Hamerkop"
+      ],
+      "via": "exact"
+    },
+    "serinus-canicollis": {
+      "indices": [
+        5501
+      ],
+      "labels": [
+        "Serinus canicollis_Cape Canary"
+      ],
+      "via": "exact"
+    },
+    "sigelus-silens": {
+      "indices": [
+        3440
+      ],
+      "labels": [
+        "Melaenornis silens_Fiscal Flycatcher"
+      ],
+      "via": "synonym",
+      "reason": "Genus move",
+      "source": "docs/species-sources.md, \"Taxonomy remaps\""
+    },
+    "spermestes-cucullata": {
+      "indices": [
+        5601
+      ],
+      "labels": [
+        "Spermestes cucullata_Bronze Mannikin"
+      ],
+      "via": "exact"
+    },
+    "sphenoeacus-afer": {
+      "indices": [
+        5606
+      ],
+      "labels": [
+        "Sphenoeacus afer_Cape Grassbird"
+      ],
+      "via": "exact"
+    },
+    "spilopelia-senegalensis": {
+      "indices": [
+        5753
+      ],
+      "labels": [
+        "Streptopelia senegalensis_Laughing Dove"
+      ],
+      "via": "synonym",
+      "reason": "Genus move",
+      "source": "English name and species epithet are identical in the label file; genus differs between Clements (model) and IOC/BLSA 2026"
+    },
+    "sporopipes-squamifrons": {
+      "indices": [
+        5686
+      ],
+      "labels": [
+        "Sporopipes squamifrons_Scaly Weaver"
+      ],
+      "via": "exact"
+    },
+    "stephanoaetus-coronatus": {
+      "indices": [
+        5702
+      ],
+      "labels": [
+        "Stephanoaetus coronatus_Crowned Eagle"
+      ],
+      "via": "exact"
+    },
+    "streptopelia-capicola": {
+      "indices": [
+        5745
+      ],
+      "labels": [
+        "Streptopelia capicola_Ring-necked Dove"
+      ],
+      "via": "exact"
+    },
+    "streptopelia-decipiens": {
+      "indices": [
+        5748
+      ],
+      "labels": [
+        "Streptopelia decipiens_Mourning Collared-Dove"
+      ],
+      "via": "exact"
+    },
+    "streptopelia-semitorquata": {
+      "indices": [
+        5752
+      ],
+      "labels": [
+        "Streptopelia semitorquata_Red-eyed Dove"
+      ],
+      "via": "exact"
+    },
+    "strix-woodfordii": {
+      "indices": [
+        5774
+      ],
+      "labels": [
+        "Strix woodfordii_African Wood-Owl"
+      ],
+      "via": "exact"
+    },
+    "sylvia-borin": {
+      "indices": [
+        5803
+      ],
+      "labels": [
+        "Sylvia borin_Garden Warbler"
+      ],
+      "via": "exact"
+    },
+    "sylvietta-rufescens": {
+      "indices": [
+        5806
+      ],
+      "labels": [
+        "Sylvietta rufescens_Cape Crombec"
+      ],
+      "via": "exact"
+    },
+    "tachybaptus-ruficollis": {
+      "indices": [
+        5867
+      ],
+      "labels": [
+        "Tachybaptus ruficollis_Little Grebe"
+      ],
+      "via": "exact"
+    },
+    "tachymarptis-melba": {
+      "indices": [
+        425
+      ],
+      "labels": [
+        "Apus melba_Alpine Swift"
+      ],
+      "via": "synonym",
+      "reason": "Genus move",
+      "source": "English name and species epithet are identical in the label file; genus differs between Clements (model) and IOC/BLSA 2026"
+    },
+    "tachyspiza-badia": {
+      "indices": [
+        21
+      ],
+      "labels": [
+        "Accipiter badius_Shikra"
+      ],
+      "via": "synonym",
+      "reason": "Genus move",
+      "source": "docs/species-sources.md, \"Taxonomy remaps\""
+    },
+    "tachyspiza-minulla": {
+      "indices": [
+        30
+      ],
+      "labels": [
+        "Accipiter minullus_Little Sparrowhawk"
+      ],
+      "via": "synonym",
+      "reason": "Genus move",
+      "source": "docs/species-sources.md, \"Taxonomy remaps\""
+    },
+    "tauraco-corythaix": {
+      "indices": [
+        5926
+      ],
+      "labels": [
+        "Tauraco corythaix_Knysna Turaco"
+      ],
+      "via": "exact"
+    },
+    "tchagra-australis": {
+      "indices": [
+        5935
+      ],
+      "labels": [
+        "Tchagra australis_Brown-crowned Tchagra"
+      ],
+      "via": "exact"
+    },
+    "tchagra-senegalus": {
+      "indices": [
+        5936
+      ],
+      "labels": [
+        "Tchagra senegalus_Black-crowned Tchagra"
+      ],
+      "via": "exact"
+    },
+    "telophorus-viridis": {
+      "indices": [
+        5945
+      ],
+      "labels": [
+        "Telophorus viridis_Four-colored Bushshrike"
+      ],
+      "via": "exact"
+    },
+    "terpsiphone-viridis": {
+      "indices": [
+        5964
+      ],
+      "labels": [
+        "Terpsiphone viridis_African Paradise-Flycatcher"
+      ],
+      "via": "exact"
+    },
+    "thamnolaea-cinnamomeiventris": {
+      "indices": [
+        5985
+      ],
+      "labels": [
+        "Thamnolaea cinnamomeiventris_Mocking Cliff-Chat"
+      ],
+      "via": "exact"
+    },
+    "thinornis-tricollaris": {
+      "indices": [
+        1180
+      ],
+      "labels": [
+        "Charadrius tricollaris_Three-banded Plover"
+      ],
+      "via": "synonym",
+      "reason": "Genus move",
+      "source": "docs/species-sources.md, \"Taxonomy remaps\""
+    },
+    "tockus-leucomelas": {
+      "indices": [
+        6072
+      ],
+      "labels": [
+        "Tockus leucomelas_Southern Yellow-billed Hornbill"
+      ],
+      "via": "exact"
+    },
+    "tockus-rufirostris": {
+      "indices": [
+        6073
+      ],
+      "labels": [
+        "Tockus rufirostris_Southern Red-billed Hornbill"
+      ],
+      "via": "exact"
+    },
+    "trachyphonus-vaillantii": {
+      "indices": [
+        6122
+      ],
+      "labels": [
+        "Trachyphonus vaillantii_Crested Barbet"
+      ],
+      "via": "exact"
+    },
+    "treron-calvus": {
+      "indices": [
+        6126
+      ],
+      "labels": [
+        "Treron calvus_African Green-Pigeon"
+      ],
+      "via": "exact"
+    },
+    "tricholaema-leucomelas": {
+      "indices": [
+        6145
+      ],
+      "labels": [
+        "Tricholaema leucomelas_Pied Barbet"
+      ],
+      "via": "exact"
+    },
+    "tringa-glareola": {
+      "indices": [
+        6153
+      ],
+      "labels": [
+        "Tringa glareola_Wood Sandpiper"
+      ],
+      "via": "exact"
+    },
+    "tringa-nebularia": {
+      "indices": [
+        6157
+      ],
+      "labels": [
+        "Tringa nebularia_Common Greenshank"
+      ],
+      "via": "exact"
+    },
+    "tringa-ochropus": {
+      "indices": [
+        6158
+      ],
+      "labels": [
+        "Tringa ochropus_Green Sandpiper"
+      ],
+      "via": "exact"
+    },
+    "tringa-stagnatilis": {
+      "indices": [
+        6161
+      ],
+      "labels": [
+        "Tringa stagnatilis_Marsh Sandpiper"
+      ],
+      "via": "exact"
+    },
+    "trochocercus-cyanomelas": {
+      "indices": [
+        6178
+      ],
+      "labels": [
+        "Trochocercus cyanomelas_African Crested-Flycatcher"
+      ],
+      "via": "exact"
+    },
+    "turdoides-jardineii": {
+      "indices": [
+        6214
+      ],
+      "labels": [
+        "Turdoides jardineii_Arrow-marked Babbler"
+      ],
+      "via": "exact"
+    },
+    "turdus-libonyana": {
+      "indices": [
+        6248
+      ],
+      "labels": [
+        "Turdus libonyana_Kurrichane Thrush"
+      ],
+      "via": "exact"
+    },
+    "turdus-litsitsirupa": {
+      "indices": [
+        5024
+      ],
+      "labels": [
+        "Psophocichla litsitsirupa_Groundscraper Thrush"
+      ],
+      "via": "synonym",
+      "reason": "Genus move",
+      "source": "English name and species epithet are identical in the label file; genus differs between Clements (model) and IOC/BLSA 2026"
+    },
+    "turdus-olivaceus": {
+      "indices": [
+        6261
+      ],
+      "labels": [
+        "Turdus olivaceus_Olive Thrush"
+      ],
+      "via": "exact"
+    },
+    "turdus-smithi": {
+      "indices": [
+        6279
+      ],
+      "labels": [
+        "Turdus smithi_Karoo Thrush"
+      ],
+      "via": "exact"
+    },
+    "turnix-sylvaticus": {
+      "indices": [
+        6288
+      ],
+      "labels": [
+        "Turnix sylvaticus_Small Buttonquail"
+      ],
+      "via": "exact"
+    },
+    "turtur-afer": {
+      "indices": [
+        6291
+      ],
+      "labels": [
+        "Turtur afer_Blue-spotted Wood-Dove"
+      ],
+      "via": "exact"
+    },
+    "turtur-chalcospilos": {
+      "indices": [
+        6293
+      ],
+      "labels": [
+        "Turtur chalcospilos_Emerald-spotted Wood-Dove"
+      ],
+      "via": "exact"
+    },
+    "turtur-tympanistria": {
+      "indices": [
+        6294
+      ],
+      "labels": [
+        "Turtur tympanistria_Tambourine Dove"
+      ],
+      "via": "exact"
+    },
+    "tychaedon-quadrivirgata": {
+      "indices": [
+        1110
+      ],
+      "labels": [
+        "Cercotrichas quadrivirgata_Bearded Scrub-Robin"
+      ],
+      "via": "synonym",
+      "reason": "Genus move",
+      "source": "docs/species-sources.md, \"Taxonomy remaps\""
+    },
+    "tychaedon-signata": {
+      "indices": [
+        1111
+      ],
+      "labels": [
+        "Cercotrichas signata_Brown Scrub-Robin"
+      ],
+      "via": "synonym",
+      "reason": "Genus move",
+      "source": "docs/species-sources.md, \"Taxonomy remaps\""
+    },
+    "tyto-alba": {
+      "indices": [
+        6315
+      ],
+      "labels": [
+        "Tyto alba_Barn Owl"
+      ],
+      "via": "exact"
+    },
+    "upupa-epops": {
+      "indices": [
+        6321
+      ],
+      "labels": [
+        "Upupa epops_Eurasian Hoopoe"
+      ],
+      "via": "exact"
+    },
+    "uraeginthus-angolensis": {
+      "indices": [
+        6323
+      ],
+      "labels": [
+        "Uraeginthus angolensis_Southern Cordonbleu"
+      ],
+      "via": "exact"
+    },
+    "urocolius-indicus": {
+      "indices": [
+        6332
+      ],
+      "labels": [
+        "Urocolius indicus_Red-faced Mousebird"
+      ],
+      "via": "exact"
+    },
+    "vanellus-armatus": {
+      "indices": [
+        6347
+      ],
+      "labels": [
+        "Vanellus armatus_Blacksmith Lapwing"
+      ],
+      "via": "exact"
+    },
+    "vanellus-coronatus": {
+      "indices": [
+        6351
+      ],
+      "labels": [
+        "Vanellus coronatus_Crowned Lapwing"
+      ],
+      "via": "exact"
+    },
+    "vanellus-senegallus": {
+      "indices": [
+        6360
+      ],
+      "labels": [
+        "Vanellus senegallus_Wattled Lapwing"
+      ],
+      "via": "exact"
+    },
+    "vidua-chalybeata": {
+      "indices": [
+        6368
+      ],
+      "labels": [
+        "Vidua chalybeata_Village Indigobird"
+      ],
+      "via": "exact"
+    },
+    "vidua-funerea": {
+      "indices": [
+        6370
+      ],
+      "labels": [
+        "Vidua funerea_Variable Indigobird"
+      ],
+      "via": "exact"
+    },
+    "vidua-macroura": {
+      "indices": [
+        6371
+      ],
+      "labels": [
+        "Vidua macroura_Pin-tailed Whydah"
+      ],
+      "via": "exact"
+    },
+    "zapornia-flavirostra": {
+      "indices": [
+        6457
+      ],
+      "labels": [
+        "Zapornia flavirostra_Black Crake"
+      ],
+      "via": "exact"
+    },
+    "zosterops-anderssoni": {
+      "indices": [
+        6497
+      ],
+      "labels": [
+        "Zosterops anderssoni_Southern Yellow White-eye"
+      ],
+      "via": "exact"
+    }
+  },
+  "ambiguous": {
+    "anthus-nicholsoni": {
+      "candidate": "Anthus similis",
+      "reason": "The model has only Long-billed Pipit, from which IOC splits Nicholson’s Pipit"
+    },
+    "ardea-brachyrhyncha": {
+      "candidate": "Ardea intermedia",
+      "reason": "The model has only Intermediate Egret, which also covers the Asian and Australasian forms"
+    },
+    "ardea-ibis": {
+      "candidate": "Bubulcus ibis",
+      "reason": "The model has one Cattle Egret, which also covers Eastern Cattle Egret"
+    },
+    "butorides-atricapilla": {
+      "candidate": "Butorides striata",
+      "reason": "The model has only Striated Heron, from which IOC splits Little Heron"
+    },
+    "centropus-burchellii": {
+      "candidate": "Centropus superciliosus",
+      "reason": "The model has only White-browed Coucal, which Clements treats as including Burchell’s"
+    },
+    "corypha-africana": {
+      "candidate": "Mirafra africana",
+      "reason": "The model label predates the split of the Rufous-naped Lark complex"
+    },
+    "falco-rupicolus": {
+      "candidate": "Falco tinnunculus",
+      "reason": "The model has only Eurasian Kestrel, which Clements treats as including Rock Kestrel"
+    },
+    "guttera-edouardi": {
+      "candidate": "Guttera pucherani",
+      "reason": "The model has one Crested Guineafowl, which predates the split into Southern, Eastern and Western"
+    }
+  },
+  "notCovered": [
+    "accipiter-ovampensis",
+    "aenigmatolimnas-marginalis",
+    "agricola-pallidus",
+    "alcedo-semitorquata",
+    "amadina-erythrocephala",
+    "amadina-fasciata",
+    "amandava-subflava",
+    "anarhynchus-asiaticus",
+    "anarhynchus-marginatus",
+    "anarhynchus-pallidus",
+    "anarhynchus-pecuarius",
+    "anas-capensis",
+    "anas-erythrorhyncha",
+    "anas-sparsa",
+    "anastomus-lamelligerus",
+    "anhinga-rufa",
+    "anomalospiza-imberbis",
+    "anthoscopus-caroli",
+    "anthus-caffer",
+    "anthus-vaalensis",
+    "apus-barbatus",
+    "apus-horus",
+    "aquila-rapax",
+    "aquila-spilogaster",
+    "aquila-verreauxii",
+    "ardea-goliath",
+    "ardeotis-kori",
+    "aviceda-cuculoides",
+    "botaurus-sturmii",
+    "bradornis-mariquensis",
+    "brunhilda-erythronotos",
+    "bubo-capensis",
+    "buteo-rufofuscus",
+    "buteo-trizonatus",
+    "calherodius-leuconotus",
+    "campethera-bennettii",
+    "campocolinus-coqui",
+    "caprimulgus-vexillarius",
+    "catriscus-brevirostris",
+    "cecropis-senegalensis",
+    "centropus-grillii",
+    "ciconia-abdimii",
+    "ciconia-microscelis",
+    "circaetus-cinereus",
+    "circaetus-pectoralis",
+    "circus-ranivorus",
+    "cisticola-galactotes",
+    "coracias-naevius",
+    "coracias-spatulatus",
+    "crecopsis-egregia",
+    "crithagra-citrinipectus",
+    "cursorius-temminckii",
+    "egretta-ardesiaca",
+    "ephippiorhynchus-senegalensis",
+    "eremomela-usticollis",
+    "eremopterix-leucotis",
+    "eremopterix-verticalis",
+    "euplectes-albonotatus",
+    "euplectes-axillaris",
+    "eurocephalus-anguitimens",
+    "falco-biarmicus",
+    "falco-concolor",
+    "falco-dickinsoni",
+    "gallinago-nigripennis",
+    "geronticus-calvus",
+    "glareola-nordmanni",
+    "granatina-granatina",
+    "gypohierax-angolensis",
+    "gyps-africanus",
+    "gyps-coprotheres",
+    "hieraaetus-wahlbergi",
+    "hirundo-albigularis",
+    "hirundo-dimidiata",
+    "hypargos-margaritatus",
+    "ispidina-picta",
+    "lissotis-melanogaster",
+    "melierax-metabates",
+    "merops-nubicoides",
+    "microcarbo-africanus",
+    "microparra-capensis",
+    "mycteria-ibis",
+    "neafrapus-boehmi",
+    "necrosyrtes-monachus",
+    "neophedina-cincta",
+    "netta-erythrophthalma",
+    "nettapus-auritus",
+    "pachycoccyx-audeberti",
+    "paragallinula-angulata",
+    "pelecanus-onocrotalus",
+    "pelecanus-rufescens",
+    "pinarocorys-nigricans",
+    "platalea-alba",
+    "plectropterus-gambensis",
+    "podica-senegalensis",
+    "polemaetus-bellicosus",
+    "porphyrio-alleni",
+    "prodotiscus-regulus",
+    "pseudhirundo-griseopyga",
+    "pterocles-bicinctus",
+    "ptilopsis-granti",
+    "pytilia-afra",
+    "rhinoptilus-chalcopterus",
+    "rhinoptilus-cinctus",
+    "rynchops-flavirostris",
+    "sagittarius-serpentarius",
+    "sarkidiornis-melanotos",
+    "scotopelia-peli",
+    "spatula-hottentota",
+    "spermestes-bicolor",
+    "spermestes-fringilloides",
+    "struthio-camelus",
+    "telacanthura-ussheri",
+    "terathopius-ecaudatus",
+    "thalassornis-leuconotus",
+    "threskiornis-aethiopicus",
+    "torgos-tracheliotos",
+    "trigonoceps-occipitalis",
+    "urolestes-melanoleucus",
+    "vanellus-albiceps",
+    "vanellus-lugubris",
+    "vidua-paradisaea",
+    "vidua-purpurascens",
+    "vidua-regia"
+  ]
+}

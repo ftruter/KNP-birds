@@ -1,0 +1,3854 @@
+{
+  "clips": {
+    "accipiter-ovampensis": {
+      "key": "xeno-canto/XC613465",
+      "fileUrl": "https://xeno-canto.org/sounds/uploaded/HMBDEWEZVS/XC613465-3%20Ovambo%20SH.mp3",
+      "file": "XC613465.mp3",
+      "quality": "A",
+      "license": "CC BY-NC-SA 4.0",
+      "callType": "call"
+    },
+    "acridotheres-tristis": {
+      "key": "xeno-canto/XC533469",
+      "fileUrl": "https://xeno-canto.org/sounds/uploaded/HMBDEWEZVS/XC533469-1%20Myna.mp3",
+      "file": "XC533469.mp3",
+      "quality": "A",
+      "license": "CC BY-NC-SA 4.0",
+      "callType": "call"
+    },
+    "acrocephalus-arundinaceus": {
+      "key": "xeno-canto/XC364288",
+      "fileUrl": "https://xeno-canto.org/sounds/uploaded/TWAAJJHMEH/XC364288-Warbler%20Great%20Reed_Wilge_161231_56_A_short.mp3",
+      "file": "XC364288.mp3",
+      "quality": "A",
+      "license": "CC BY-NC-SA 4.0",
+      "callType": "song"
+    },
+    "acrocephalus-gracilirostris": {
+      "key": "xeno-canto/XC422219",
+      "fileUrl": "https://xeno-canto.org/sounds/uploaded/HMBDEWEZVS/XC422219-Buffeldoorn%20ext%20road%2024.6.2018.mp3",
+      "file": "XC422219.mp3",
+      "quality": "A",
+      "license": "CC BY-NC-SA 4.0",
+      "callType": "song"
+    },
+    "acrocephalus-palustris": {
+      "key": "xeno-canto/XC633451",
+      "fileUrl": "https://xeno-canto.org/sounds/uploaded/SGLTZLDXYI/XC633451-Marsh%20Warbler%20Kap%20River%20exc%20March%2021.mp3",
+      "file": "XC633451.mp3",
+      "quality": "A",
+      "license": "CC BY-NC-SA 4.0",
+      "callType": "song"
+    },
+    "acrocephalus-schoenobaenus": {
+      "key": "xeno-canto/XC129503",
+      "fileUrl": "https://xeno-canto.org/sounds/uploaded/AZXHPBEVSA/XC129503-SedgeWarblerSong210512.mp3",
+      "file": "XC129503.mp3",
+      "quality": "A",
+      "license": "CC BY-NC-SA 3.0",
+      "callType": "song"
+    },
+    "acrocephalus-scirpaceus": {
+      "key": "xeno-canto/XC488497",
+      "fileUrl": "https://xeno-canto.org/sounds/uploaded/DNKBTPCMSQ/XC488497-African%20Reed%20Warbler%20190710-072243.mp3",
+      "file": "XC488497.mp3",
+      "quality": "A",
+      "license": "CC BY-NC-SA 4.0",
+      "callType": "song"
+    },
+    "actitis-hypoleucos": {
+      "key": "xeno-canto/XC187104",
+      "fileUrl": "https://xeno-canto.org/sounds/uploaded/ZNCDXTUOFL/XC187104-Actitis_hypoleucos_Poland_Jarek_Matusiak_20140713_28.mp3",
+      "file": "XC187104.mp3",
+      "quality": "A",
+      "license": "CC BY-NC-SA 4.0",
+      "callType": "call"
+    },
+    "actophilornis-africanus": {
+      "key": "xeno-canto/XC651037",
+      "fileUrl": "https://xeno-canto.org/sounds/uploaded/HMBDEWEZVS/XC651037-6%20Very%20good%20Jacana.mp3",
+      "file": "XC651037.mp3",
+      "quality": "A",
+      "license": "CC BY-NC-SA 4.0",
+      "callType": "call"
+    },
+    "aenigmatolimnas-marginalis": {
+      "key": "xeno-canto/XC355772",
+      "fileUrl": "https://xeno-canto.org/sounds/uploaded/UNYBPEWWLO/XC355772-Striped%20Crake.mp3",
+      "file": "XC355772.mp3",
+      "quality": "A",
+      "license": "CC BY-NC-SA 4.0",
+      "callType": "call"
+    },
+    "aerospiza-tachiro": {
+      "key": "xeno-canto/XC1137538",
+      "fileUrl": "https://xeno-canto.org/sounds/uploaded/YSGTQVRQZI/XC1137538-20260509_KNP_AKaramitsos_XA60_A024C156_2605093H_SLE_-3dB_African-Goshawk.wav",
+      "file": "XC1137538.wav",
+      "quality": "A",
+      "license": "CC BY-NC-SA 4.0",
+      "callType": "call"
+    },
+    "agricola-pallidus": {
+      "key": "xeno-canto/XC660760",
+      "fileUrl": "https://xeno-canto.org/sounds/uploaded/IIJAXHKSCC/XC660760-Pale%20Flycatcher%20%28call%29%2020201206%2CMutinondo%2CMuchinga%2CZAMBIA.mp3",
+      "file": "XC660760.mp3",
+      "quality": "A",
+      "license": "CC BY-NC-SA 4.0",
+      "callType": "call"
+    },
+    "alcedo-semitorquata": {
+      "key": "xeno-canto/XC1102306",
+      "fileUrl": "https://xeno-canto.org/sounds/uploaded/CQARALZBNN/XC1102306-Half-collared-kingfisher-260227_2161.mp3",
+      "file": "XC1102306.mp3",
+      "quality": "A",
+      "license": "CC BY-NC-SA 4.0",
+      "callType": "call"
+    },
+    "alopochen-aegyptiaca": {
+      "key": "xeno-canto/XC909530",
+      "fileUrl": "https://xeno-canto.org/sounds/uploaded/JDCTKFMBKV/XC909530-GooseEgyptian_SypreshoekdamJpad_20240601_Zoom.mp3",
+      "file": "XC909530.mp3",
+      "quality": "A",
+      "license": "CC BY-NC-SA 4.0",
+      "callType": "call"
+    },
+    "amadina-erythrocephala": {
+      "key": "xeno-canto/XC337993",
+      "fileUrl": "https://xeno-canto.org/sounds/uploaded/SGLTZLDXYI/XC337993-Red-headed%20Finches%20exc.mp3",
+      "file": "XC337993.mp3",
+      "quality": "A",
+      "license": "CC BY-NC-SA 4.0",
+      "callType": "call"
+    },
+    "amadina-fasciata": {
+      "key": "xeno-canto/XC368188",
+      "fileUrl": "https://xeno-canto.org/sounds/uploaded/RFRTVEHIZX/XC368188-170403_Cut-throatFinch_Mopani_OC.mp3",
+      "file": "XC368188.mp3",
+      "quality": "B",
+      "license": "CC BY-NC-SA 4.0",
+      "callType": "call"
+    },
+    "amandava-subflava": {
+      "key": "xeno-canto/XC528267",
+      "fileUrl": "https://xeno-canto.org/sounds/uploaded/RGSEIIJGHA/XC528267-OrangebreastedWaxbill_Mbeubeusse_200216_0638_edited.mp3",
+      "file": "XC528267.mp3",
+      "quality": "A",
+      "license": "CC BY-NC-SA 4.0",
+      "callType": "call"
+    },
+    "amblyospiza-albifrons": {
+      "key": "xeno-canto/XC523322",
+      "fileUrl": "https://xeno-canto.org/sounds/uploaded/RGSEIIJGHA/XC523322-ThickbilledWeaver_Diani_200126_0550_edited.mp3",
+      "file": "XC523322.mp3",
+      "quality": "A",
+      "license": "CC BY-NC-SA 4.0",
+      "callType": "song"
+    },
+    "amirafra-rufocinnamomea": {
+      "key": "xeno-canto/XC266874",
+      "fileUrl": "https://xeno-canto.org/sounds/uploaded/CDTGHVBGZP/XC266874-Flappet%20Lark2014-12-15-2.mp3",
+      "file": "XC266874.mp3",
+      "quality": "A",
+      "license": "CC BY-NC-SA 4.0",
+      "callType": "song"
+    },
+    "anarhynchus-asiaticus": {
+      "key": "xeno-canto/XC399779",
+      "fileUrl": "https://xeno-canto.org/sounds/uploaded/KFLTRGJWKQ/XC399779-Caspian%20Plover_KajiadoCounty_S.Dolrenry_Jan%202018.mp3",
+      "file": "XC399779.mp3",
+      "quality": "B",
+      "license": "CC BY-NC-SA 4.0",
+      "callType": "call"
+    },
+    "anarhynchus-marginatus": {
+      "key": "xeno-canto/XC624791",
+      "fileUrl": "https://xeno-canto.org/sounds/uploaded/GABAHHYWYR/XC624791-VOC_210226-1876%20White-fronted%20Plover%20song%20ED%20UP.mp3",
+      "file": "XC624791.mp3",
+      "quality": "A",
+      "license": "CC BY-NC-SA 4.0",
+      "callType": "call"
+    },
+    "anarhynchus-pallidus": {
+      "key": "xeno-canto/XC28681",
+      "fileUrl": "https://xeno-canto.org/sounds/uploaded/BPSDQEOJWG/Chestnut-bandedPloverDeMond2006-12-28.mp3",
+      "file": "XC28681.mp3",
+      "quality": "B",
+      "license": "CC BY-NC-SA 3.0",
+      "callType": "call"
+    },
+    "anarhynchus-pecuarius": {
+      "key": "xeno-canto/XC676775",
+      "fileUrl": "https://xeno-canto.org/sounds/uploaded/HMBDEWEZVS/XC676775-5%20Kittlitz.mp3",
+      "file": "XC676775.mp3",
+      "quality": "A",
+      "license": "CC BY-NC-SA 4.0",
+      "callType": "call"
+    },
+    "anas-capensis": {
+      "key": "xeno-canto/XC1173615",
+      "fileUrl": "https://xeno-canto.org/sounds/uploaded/YSGTQVRQZI/XC1173615-20260320_STRNDF_AKaramitsos_XA60_A020C071_260320AB_SLE_250HP_-3dB_Cteal-cf.mp3",
+      "file": "XC1173615.mp3",
+      "quality": "A",
+      "license": "CC BY-NC-SA 4.0",
+      "callType": "call"
+    },
+    "anas-erythrorhyncha": {
+      "key": "xeno-canto/XC649290",
+      "fileUrl": "https://xeno-canto.org/sounds/uploaded/SGLTZLDXYI/XC649290-Red-billed%20Teal%20swimming.mp3",
+      "file": "XC649290.mp3",
+      "quality": "B",
+      "license": "CC BY-NC-SA 4.0",
+      "callType": "call"
+    },
+    "anas-sparsa": {
+      "key": "xeno-canto/XC1163841",
+      "fileUrl": "https://xeno-canto.org/sounds/uploaded/WSTMKZEHKY/XC1163841-260222-084605-ABDuck-B.mp3",
+      "file": "XC1163841.mp3",
+      "quality": "B",
+      "license": "CC BY-NC-SA 4.0",
+      "callType": "call"
+    },
+    "anas-undulata": {
+      "key": "xeno-canto/XC1053126",
+      "fileUrl": "https://xeno-canto.org/sounds/uploaded/THHNKSHUMO/XC1053126-053-Canard-%C3%A0-bec-jaune260127_0478.mp3",
+      "file": "XC1053126.mp3",
+      "quality": "A",
+      "license": "CC BY-NC-SA 4.0",
+      "callType": "call"
+    },
+    "anastomus-lamelligerus": {
+      "key": "xeno-canto/XC1189079",
+      "fileUrl": "https://xeno-canto.org/sounds/uploaded/KGENRQCZVH/XC1189079-ANALAM_Nome_06022026_17h25.mp3",
+      "file": "XC1189079.mp3",
+      "quality": "C",
+      "license": "CC BY-NC-SA 4.0",
+      "callType": "call"
+    },
+    "andropadus-importunus": {
+      "key": "xeno-canto/XC1001879",
+      "fileUrl": "https://xeno-canto.org/sounds/uploaded/YSGTQVRQZI/XC1001879-20240219_KNP_NSerpa_XA60_MVI_0004_SLE_1kHzHP_-3dBNORM_split.mp3",
+      "file": "XC1001879.mp3",
+      "quality": "A",
+      "license": "CC BY-NC-SA 4.0",
+      "callType": "call"
+    },
+    "anhinga-rufa": {
+      "key": "xeno-canto/XC326628",
+      "fileUrl": "https://xeno-canto.org/sounds/uploaded/SGLTZLDXYI/XC326628-African%20darter.mp3",
+      "file": "XC326628.mp3",
+      "quality": "B",
+      "license": "CC BY-NC-SA 4.0",
+      "callType": "call"
+    },
+    "anomalospiza-imberbis": {
+      "key": "xeno-canto/XC1080375",
+      "fileUrl": "https://xeno-canto.org/sounds/uploaded/LWQXRZHFCU/XC1080375-2026-02-14-13_00-cuckoo-finch.mp3",
+      "file": "XC1080375.mp3",
+      "quality": "B",
+      "license": "CC BY-NC-SA 4.0",
+      "callType": "call"
+    },
+    "anthoscopus-caroli": {
+      "key": "xeno-canto/XC552058",
+      "fileUrl": "https://xeno-canto.org/sounds/uploaded/IIJAXHKSCC/XC552058-African%20Penduline-tit%20%28call%29%2020200410%2CKasankaNP%2CZAMBIA.mp3",
+      "file": "XC552058.mp3",
+      "quality": "B",
+      "license": "CC BY-NC-SA 4.0",
+      "callType": "call"
+    },
+    "anthus-caffer": {
+      "key": "xeno-canto/XC199337",
+      "fileUrl": "https://xeno-canto.org/sounds/uploaded/LWQXRZHFCU/XC199337-2014-10-19%2008_37%20bush%20pipit.mp3",
+      "file": "XC199337.mp3",
+      "quality": "B",
+      "license": "CC BY-NC-SA 4.0",
+      "callType": "call"
+    },
+    "anthus-cinnamomeus": {
+      "key": "xeno-canto/XC938658",
+      "fileUrl": "https://xeno-canto.org/sounds/uploaded/JDCTKFMBKV/XC938658-OSF1561_92_PipitAfrican_WildealskloofBFN_0241006.mp3",
+      "file": "XC938658.mp3",
+      "quality": "A",
+      "license": "CC BY-NC-SA 4.0",
+      "callType": "call"
+    },
+    "anthus-leucophrys": {
+      "key": "xeno-canto/XC338352",
+      "fileUrl": "https://xeno-canto.org/sounds/uploaded/SGLTZLDXYI/XC338352-Plain-backed%20Pipit%20Diaz%20dam.mp3",
+      "file": "XC338352.mp3",
+      "quality": "B",
+      "license": "CC BY-NC-SA 4.0",
+      "callType": "call"
+    },
+    "anthus-lineiventris": {
+      "key": "xeno-canto/XC429533",
+      "fileUrl": "https://xeno-canto.org/sounds/uploaded/DNKBTPCMSQ/XC429533-Pipit%20Striped%20180530-111810.mp3",
+      "file": "XC429533.mp3",
+      "quality": "A",
+      "license": "CC BY-NC-SA 4.0",
+      "callType": "song"
+    },
+    "anthus-nicholsoni": {
+      "key": "xeno-canto/XC425855",
+      "fileUrl": "https://xeno-canto.org/sounds/uploaded/UKNJRQCOGA/XC425855-Pipit%20Long-billed%20Boskloof170718.mp3",
+      "file": "XC425855.mp3",
+      "quality": "A",
+      "license": "CC BY-NC-SA 4.0",
+      "callType": "call"
+    },
+    "anthus-vaalensis": {
+      "key": "xeno-canto/XC581613",
+      "fileUrl": "https://xeno-canto.org/sounds/uploaded/HMBDEWEZVS/XC581613-3%20Buffy%20and%20grebe.mp3",
+      "file": "XC581613.mp3",
+      "quality": "B",
+      "license": "CC BY-NC-SA 4.0",
+      "callType": "call"
+    },
+    "apalis-flavida": {
+      "key": "xeno-canto/XC655037",
+      "fileUrl": "https://xeno-canto.org/sounds/uploaded/GQMCPIVNXX/XC655037-Yellow-breasted%20Apalis.mp3",
+      "file": "XC655037.mp3",
+      "quality": "A",
+      "license": "CC BY-NC-SA 4.0",
+      "callType": "call"
+    },
+    "apalis-ruddi": {
+      "key": "xeno-canto/XC972485",
+      "fileUrl": "https://xeno-canto.org/sounds/uploaded/LWQXRZHFCU/XC972485-2025-02-02-11_21-Rudds-Apalis.mp3",
+      "file": "XC972485.mp3",
+      "quality": "A",
+      "license": "CC BY-NC-SA 4.0",
+      "callType": "call"
+    },
+    "apalis-thoracica": {
+      "key": "xeno-canto/XC1009172",
+      "fileUrl": "https://xeno-canto.org/sounds/uploaded/IQGZKQAMKT/XC1009172-Apalis_Bar-throated_SpringsideNR_20250618_NR10_UpGain.mp3",
+      "file": "XC1009172.mp3",
+      "quality": "A",
+      "license": "CC BY-NC-SA 4.0",
+      "callType": "call"
+    },
+    "apaloderma-narina": {
+      "key": "xeno-canto/XC607366",
+      "fileUrl": "https://xeno-canto.org/sounds/uploaded/LWQXRZHFCU/XC607366-2020-12-06%2006_16NarinaTrogon.mp3",
+      "file": "XC607366.mp3",
+      "quality": "A",
+      "license": "CC BY-NC-SA 4.0",
+      "callType": "call"
+    },
+    "aplopelia-larvata": {
+      "key": "xeno-canto/XC497030",
+      "fileUrl": "https://xeno-canto.org/sounds/uploaded/SGLTZLDXYI/XC497030-Lemon%20Dove%20brilliant%20clear.mp3",
+      "file": "XC497030.mp3",
+      "quality": "A",
+      "license": "CC BY-NC-SA 4.0",
+      "callType": "call"
+    },
+    "apus-affinis": {
+      "key": "xeno-canto/XC494123",
+      "fileUrl": "https://xeno-canto.org/sounds/uploaded/HMBDEWEZVS/XC494123-Little%20Swifts.mp3",
+      "file": "XC494123.mp3",
+      "quality": "A",
+      "license": "CC BY-NC-SA 4.0",
+      "callType": "call"
+    },
+    "apus-apus": {
+      "key": "xeno-canto/XC27236",
+      "fileUrl": "https://xeno-canto.org/sounds/uploaded/BPSDQEOJWG/Tornseglaresommarflock.mp3",
+      "file": "XC27236.mp3",
+      "quality": "A",
+      "license": "CC BY-NC-SA 3.0",
+      "callType": "call"
+    },
+    "apus-barbatus": {
+      "key": "xeno-canto/XC368196",
+      "fileUrl": "https://xeno-canto.org/sounds/uploaded/RFRTVEHIZX/XC368196-170406_AfricanBlackSwifts_flockcalls_God%27sWindow_OC.mp3",
+      "file": "XC368196.mp3",
+      "quality": "B",
+      "license": "CC BY-NC-SA 4.0",
+      "callType": "call"
+    },
+    "apus-caffer": {
+      "key": "xeno-canto/XC466641",
+      "fileUrl": "https://xeno-canto.org/sounds/uploaded/HMBDEWEZVS/XC466641-8%20WR%20Swift.mp3",
+      "file": "XC466641.mp3",
+      "quality": "B",
+      "license": "CC BY-NC-SA 4.0",
+      "callType": "call"
+    },
+    "apus-horus": {
+      "key": "xeno-canto/XC410343",
+      "fileUrl": "https://xeno-canto.org/sounds/uploaded/RGSEIIJGHA/XC410343-HorusSwift_GamadjiSare_180106_2570_edited.mp3",
+      "file": "XC410343.mp3",
+      "quality": "B",
+      "license": "CC BY-NC-SA 4.0",
+      "callType": "call"
+    },
+    "aquila-nipalensis": {
+      "key": "xeno-canto/XC1174915",
+      "fileUrl": "https://xeno-canto.org/sounds/uploaded/YNOAMCSSHX/XC1174915-Steppe-Eagle-%E8%8D%89%E5%8E%9F%E9%9B%95-call-%E8%B5%A4%E9%A2%88%E9%B8%ADX8-CICADA-%E5%8A%A8%E7%89%A9%E5%9B%AD202603070705_1864---A.mp3",
+      "file": "XC1174915.mp3",
+      "quality": "A",
+      "license": "CC BY-NC-SA 4.0",
+      "callType": "call"
+    },
+    "aquila-rapax": {
+      "key": "xeno-canto/XC1044220",
+      "fileUrl": "https://xeno-canto.org/sounds/uploaded/OHDVJMHMQE/XC1044220-20250928-100103_Tawny-Eagle_Samburu_trimmed.mp3",
+      "file": "XC1044220.mp3",
+      "quality": "A",
+      "license": "CC BY-NC-SA 4.0",
+      "callType": "call"
+    },
+    "aquila-spilogaster": {
+      "key": "xeno-canto/XC267752",
+      "fileUrl": "https://xeno-canto.org/sounds/uploaded/CDTGHVBGZP/XC267752-African%20Hawk-Eagle2015-1-1-1.mp3",
+      "file": "XC267752.mp3",
+      "quality": "A",
+      "license": "CC BY-NC-SA 4.0",
+      "callType": "call"
+    },
+    "aquila-verreauxii": {
+      "key": "xeno-canto/XC519736-cleaned.mp3",
+      "fileUrl": "https://xeno-canto.org/sounds/uploaded/SJRAXPTEKH/XC519736-Verreaux%27s%20Eagle.mp3",
+      "file": "XC519736.mp3",
+      "quality": "C",
+      "license": "CC BY-NC-SA 4.0",
+      "callType": "call"
+    },
+    "ardea-alba": {
+      "key": "xeno-canto/XC586205",
+      "fileUrl": "https://xeno-canto.org/sounds/uploaded/PJVGDPHDIM/XC586205-grande%20aigrette.mp3",
+      "file": "XC586205.mp3",
+      "quality": "A",
+      "license": "CC BY-NC-SA 4.0",
+      "callType": "call"
+    },
+    "ardea-cinerea": {
+      "key": "xeno-canto/XC497244",
+      "fileUrl": "https://xeno-canto.org/sounds/uploaded/LELYWQKUZX/XC497244-Ardea%20cinerea%20190906_002%2CAAAA1%2B.MP3",
+      "file": "XC497244.mp3",
+      "quality": "A",
+      "license": "CC BY-NC-SA 4.0",
+      "callType": "call"
+    },
+    "ardea-goliath": {
+      "key": "xeno-canto/XC1083152",
+      "fileUrl": "https://xeno-canto.org/sounds/uploaded/YIKAQIVHQJ/XC1083152-8088.-Goliath-Heron---Lutembe-Bay---21-FEB-2026---0850---1.mp3",
+      "file": "XC1083152.mp3",
+      "quality": "A",
+      "license": "CC BY-NC-SA 4.0",
+      "callType": "call"
+    },
+    "ardea-ibis": {
+      "key": "xeno-canto/XC369827",
+      "fileUrl": "https://xeno-canto.org/sounds/uploaded/GQMCPIVNXX/XC369827-Western%20Cattle%20Egret.mp3",
+      "file": "XC369827.mp3",
+      "quality": "A",
+      "license": "CC BY-NC-SA 4.0",
+      "callType": "call"
+    },
+    "ardea-melanocephala": {
+      "key": "xeno-canto/XC741404",
+      "fileUrl": "https://xeno-canto.org/sounds/uploaded/SGLTZLDXYI/XC741404-Black-headed%20Heron%20%282%29.mp3",
+      "file": "XC741404.mp3",
+      "quality": "A",
+      "license": "CC BY-NC-SA 4.0",
+      "callType": "call"
+    },
+    "ardea-purpurea": {
+      "key": "xeno-canto/XC1173600",
+      "fileUrl": "https://xeno-canto.org/sounds/uploaded/YSGTQVRQZI/XC1173600-20260320_STRNDF_AKaramitsos_XA60_A020C054_260320DQ_SLE_250HP_-3dB.mp3",
+      "file": "XC1173600.mp3",
+      "quality": "A",
+      "license": "CC BY-NC-SA 4.0",
+      "callType": "call"
+    },
+    "ardeola-ralloides": {
+      "key": "xeno-canto/XC1045966",
+      "fileUrl": "https://xeno-canto.org/sounds/uploaded/YSGTQVRQZI/XC1045966-20231006_KNP_CNadin_A014_A014C014_2310062E_KNP02_SLE_-3dBNORM_squacco.mp3",
+      "file": "XC1045966.mp3",
+      "quality": "A",
+      "license": "CC BY-NC-SA 4.0",
+      "callType": "call"
+    },
+    "ardeotis-kori": {
+      "key": "xeno-canto/XC209987",
+      "fileUrl": "https://xeno-canto.org/sounds/uploaded/CDTGHVBGZP/XC209987-Kori%20Bustard2014-12-23-1.mp3",
+      "file": "XC209987.mp3",
+      "quality": "A",
+      "license": "CC BY-NC-SA 4.0",
+      "callType": "call"
+    },
+    "astur-melanoleucus": {
+      "key": "xeno-canto/XC950482",
+      "fileUrl": "https://xeno-canto.org/sounds/uploaded/CCUCXWCPSW/XC950482-2024_10_10-Astur-melanoleucus2.mp3",
+      "file": "XC950482.mp3",
+      "quality": "A",
+      "license": "CC BY-NC-SA 4.0",
+      "callType": "call"
+    },
+    "aviceda-cuculoides": {
+      "key": "xeno-canto/XC788596",
+      "fileUrl": "https://xeno-canto.org/sounds/uploaded/NOJNUVZEHB/XC788596-Africancuckoohawk_1144XC.mp3",
+      "file": "XC788596.mp3",
+      "quality": "A",
+      "license": "CC BY-NC-SA 4.0",
+      "callType": "call"
+    },
+    "batis-capensis": {
+      "key": "xeno-canto/XC1004507",
+      "fileUrl": "https://xeno-canto.org/sounds/uploaded/IQGZKQAMKT/XC1004507-Batis_Cape_EvertonConservancy_20250606.mp3",
+      "file": "XC1004507.mp3",
+      "quality": "A",
+      "license": "CC BY-NC-SA 4.0",
+      "callType": "call"
+    },
+    "batis-molitor": {
+      "key": "xeno-canto/XC1149023",
+      "fileUrl": "https://xeno-canto.org/sounds/uploaded/YSGTQVRQZI/XC1149023-20260517_KNP_AKaramitsos_XA60_A026C196_260517XA_SLE_250HP_-3dB_Unid2.mp3",
+      "file": "XC1149023.mp3",
+      "quality": "A",
+      "license": "CC BY-NC-SA 4.0",
+      "callType": "call"
+    },
+    "bostrychia-hagedash": {
+      "key": "xeno-canto/XC1146089",
+      "fileUrl": "https://xeno-canto.org/sounds/uploaded/YSGTQVRQZI/XC1146089-20260511_KNP_AKaramitsos_XA60_A025C090_260511NP_SLE_-3dB_HI.mp3",
+      "file": "XC1146089.mp3",
+      "quality": "A",
+      "license": "CC BY-NC-SA 4.0",
+      "callType": "call"
+    },
+    "botaurus-minutus": {
+      "key": "xeno-canto/XC1037026",
+      "fileUrl": "https://xeno-canto.org/sounds/uploaded/POVBKDIADQ/XC1037026-250904_22h33-blongios.mp3",
+      "file": "XC1037026.mp3",
+      "quality": "A",
+      "license": "CC BY-NC-SA 4.0",
+      "callType": "call"
+    },
+    "botaurus-sturmii": {
+      "key": "xeno-canto/XC792321",
+      "fileUrl": "https://xeno-canto.org/sounds/uploaded/PEMGIBGFTN/XC792321-2023-04-10.mp3",
+      "file": "XC792321.mp3",
+      "quality": "A",
+      "license": "CC BY-NC-SA 4.0",
+      "callType": "call"
+    },
+    "bradornis-mariquensis": {
+      "key": "xeno-canto/XC1059224",
+      "fileUrl": "https://xeno-canto.org/sounds/uploaded/OYXLQBTHRH/XC1059224-MixPre-985_Bradornis-mariquensis_YB.mp3",
+      "file": "XC1059224.mp3",
+      "quality": "A",
+      "license": "CC BY-NC-SA 4.0",
+      "callType": "call"
+    },
+    "bradypterus-baboecala": {
+      "key": "xeno-canto/XC397750",
+      "fileUrl": "https://xeno-canto.org/sounds/uploaded/SGLTZLDXYI/XC397750-Little%20Rush%20Warbler30%20dec%20belmont.mp3",
+      "file": "XC397750.mp3",
+      "quality": "A",
+      "license": "CC BY-NC-SA 4.0",
+      "callType": "call"
+    },
+    "bradypterus-barratti": {
+      "key": "xeno-canto/XC368199",
+      "fileUrl": "https://xeno-canto.org/sounds/uploaded/RFRTVEHIZX/XC368199-170406a_Barratt%27sWarbler_call_God%27sWindow_OC.mp3",
+      "file": "XC368199.mp3",
+      "quality": "A",
+      "license": "CC BY-NC-SA 4.0",
+      "callType": "call"
+    },
+    "brunhilda-erythronotos": {
+      "key": "xeno-canto/XC382988",
+      "fileUrl": "https://xeno-canto.org/sounds/uploaded/TWAAJJHMEH/XC382988-Waxbill%20Blackfaced_Bloem_170715_10_B_edit.mp3",
+      "file": "XC382988.mp3",
+      "quality": "A",
+      "license": "CC BY-NC-SA 4.0",
+      "callType": "call"
+    },
+    "bubalornis-niger": {
+      "key": "xeno-canto/XC1188498",
+      "fileUrl": "https://xeno-canto.org/sounds/uploaded/QXGZDUUJUO/XC1188498-260127-161054_Tr1-Red-billed-bufflo-weaver-Nkorho-Bush-Lodge.mp3",
+      "file": "XC1188498.mp3",
+      "quality": "A",
+      "license": "CC BY-NC-SA 4.0",
+      "callType": "call"
+    },
+    "bubo-africanus": {
+      "key": "xeno-canto/XC252807",
+      "fileUrl": "https://xeno-canto.org/sounds/uploaded/SGLTZLDXYI/XC252807-Spotted%20eagle-owls.mp3",
+      "file": "XC252807.mp3",
+      "quality": "A",
+      "license": "CC BY-NC-SA 4.0",
+      "callType": "call"
+    },
+    "bubo-capensis": {
+      "key": "xeno-canto/XC808452",
+      "fileUrl": "https://xeno-canto.org/sounds/uploaded/SGLTZLDXYI/XC808452-Cape-Eagle-owl-brilliant.mp3",
+      "file": "XC808452.mp3",
+      "quality": "B",
+      "license": "CC BY-NC-SA 4.0",
+      "callType": "call"
+    },
+    "bucorvus-leadbeateri": {
+      "key": "xeno-canto/XC1149598",
+      "fileUrl": "https://xeno-canto.org/sounds/uploaded/YSGTQVRQZI/XC1149598-20260520_KNP_AKaramitsos_XA60_A028C013_2605207D_SLE_-3dB_Hornbill.mp3",
+      "file": "XC1149598.mp3",
+      "quality": "A",
+      "license": "CC BY-NC-SA 4.0",
+      "callType": "call"
+    },
+    "buphagus-africanus": {
+      "key": "xeno-canto/XC756251",
+      "fileUrl": "https://xeno-canto.org/sounds/uploaded/METGCVHSKD/XC756251-Lone-Adult.mp3",
+      "file": "XC756251.mp3",
+      "quality": "B",
+      "license": "CC BY-NC-SA 4.0",
+      "callType": "call"
+    },
+    "buphagus-erythroryncha": {
+      "key": "xeno-canto/XC237786",
+      "fileUrl": "https://xeno-canto.org/sounds/uploaded/ICUDBWGEGD/XC237786-1011_cut.mp3",
+      "file": "XC237786.mp3",
+      "quality": "A",
+      "license": "CC BY-NC-SA 4.0",
+      "callType": "call"
+    },
+    "burhinus-capensis": {
+      "key": "xeno-canto/XC503000",
+      "fileUrl": "https://xeno-canto.org/sounds/uploaded/JDCTKFMBKV/XC503000-191017_0422.MP3",
+      "file": "XC503000.mp3",
+      "quality": "A",
+      "license": "CC BY-NC-SA 4.0",
+      "callType": "call"
+    },
+    "burhinus-vermiculatus": {
+      "key": "xeno-canto/XC1014581",
+      "fileUrl": "https://xeno-canto.org/sounds/uploaded/ZXMUWLWYYQ/XC1014581-20250708_KNP_MHynes_20250708_174200_SLE_1000HzHP_-3dBNORM.mp3",
+      "file": "XC1014581.mp3",
+      "quality": "A",
+      "license": "CC BY-NC-SA 4.0",
+      "callType": "call"
+    },
+    "buteo-buteo": {
+      "key": "xeno-canto/XC151184",
+      "fileUrl": "https://xeno-canto.org/sounds/uploaded/ZNCDXTUOFL/XC151184-Buteo_buteo_Poland_Jarek_Matusiak_20131012_36.mp3",
+      "file": "XC151184.mp3",
+      "quality": "A",
+      "license": "CC BY-NC-SA 3.0",
+      "callType": "call"
+    },
+    "buteo-rufofuscus": {
+      "key": "xeno-canto/XC1090801",
+      "fileUrl": "https://xeno-canto.org/sounds/uploaded/YSGTQVRQZI/XC1090801-20260324_Newlands_ACharman_Phone_142049_SLE_250HP_-3dB_split.wav",
+      "file": "XC1090801.wav",
+      "quality": "A",
+      "license": "CC BY-NC-SA 4.0",
+      "callType": "call"
+    },
+    "buteo-trizonatus": {
+      "key": "xeno-canto/XC289313",
+      "fileUrl": "https://xeno-canto.org/sounds/uploaded/UDDNOHEKEN/XC289313-Buzzard%2C%20Forest%20%281%29%3B%20Seaview%20EC%2003-11-2015.mp3",
+      "file": "XC289313.mp3",
+      "quality": "B",
+      "license": "CC BY-NC-SA 4.0",
+      "callType": "call"
+    },
+    "butorides-atricapilla": {
+      "key": "xeno-canto/XC322170",
+      "fileUrl": "https://xeno-canto.org/sounds/uploaded/GQMCPIVNXX/XC322170-Green-backed%20Heron.mp3",
+      "file": "XC322170.mp3",
+      "quality": "A",
+      "license": "CC BY-NC-SA 4.0",
+      "callType": "call"
+    },
+    "bycanistes-bucinator": {
+      "key": "xeno-canto/XC1149405",
+      "fileUrl": "https://xeno-canto.org/sounds/uploaded/YSGTQVRQZI/XC1149405-20260519_KNP_AKaramitsos_XA60_A027C052_2605195O_SLE_250HP_-3dB_split_comb_THornbill.mp3",
+      "file": "XC1149405.mp3",
+      "quality": "A",
+      "license": "CC BY-NC-SA 4.0",
+      "callType": "call"
+    },
+    "calamonastes-fasciolatus": {
+      "key": "xeno-canto/XC520425",
+      "fileUrl": "https://xeno-canto.org/sounds/uploaded/HMBDEWEZVS/XC520425-8%20Wren%20W.mp3",
+      "file": "XC520425.mp3",
+      "quality": "A",
+      "license": "CC BY-NC-SA 4.0",
+      "callType": "call"
+    },
+    "calamonastes-stierlingi": {
+      "key": "xeno-canto/XC1023576",
+      "fileUrl": "https://xeno-canto.org/sounds/uploaded/IQGZKQAMKT/XC1023576-Wren-warbler_Stierlings_NdlovumziHoedspruit_20250723.mp3",
+      "file": "XC1023576.mp3",
+      "quality": "A",
+      "license": "CC BY-NC-SA 4.0",
+      "callType": "call"
+    },
+    "calandrella-cinerea": {
+      "key": "xeno-canto/XC666780",
+      "fileUrl": "https://xeno-canto.org/sounds/uploaded/GQMCPIVNXX/XC666780-Red-capped%20Lark.mp3",
+      "file": "XC666780.mp3",
+      "quality": "A",
+      "license": "CC BY-NC-SA 4.0",
+      "callType": "song"
+    },
+    "calendulauda-africanoides": {
+      "key": "xeno-canto/XC28606",
+      "fileUrl": "https://xeno-canto.org/sounds/uploaded/BPSDQEOJWG/Fawn-coloredLarkWitsand2006-12-22.mp3",
+      "file": "XC28606.mp3",
+      "quality": "A",
+      "license": "CC BY-NC-SA 3.0",
+      "callType": "song"
+    },
+    "calendulauda-sabota": {
+      "key": "xeno-canto/XC872621",
+      "fileUrl": "https://xeno-canto.org/sounds/uploaded/LWQXRZHFCU/XC872621-2024-02-06-07_49-sabota-lark.mp3",
+      "file": "XC872621.mp3",
+      "quality": "A",
+      "license": "CC BY-NC-SA 4.0",
+      "callType": "song"
+    },
+    "calherodius-leuconotus": {
+      "key": "xeno-canto/XC421209",
+      "fileUrl": "https://xeno-canto.org/sounds/uploaded/RGSEIIJGHA/XC421209-WhitebackedNightHeron_Wassadou_180616_2847_edited.mp3",
+      "file": "XC421209.mp3",
+      "quality": "A",
+      "license": "CC BY-NC-SA 4.0",
+      "callType": "call"
+    },
+    "calidris-ferruginea": {
+      "key": "xeno-canto/XC184321",
+      "fileUrl": "https://xeno-canto.org/sounds/uploaded/LELYWQKUZX/XC184321-Calidris%20ferruginea%200516_055125%2CAA.MP3",
+      "file": "XC184321.mp3",
+      "quality": "A",
+      "license": "CC BY-NC-SA 4.0",
+      "callType": "call"
+    },
+    "calidris-melanotos": {
+      "key": "xeno-canto/XC109917",
+      "fileUrl": "https://xeno-canto.org/sounds/uploaded/CDTGHVBGZP/XC109917-Pectoral%20Sandpiper2012-9-8-2.mp3",
+      "file": "XC109917.mp3",
+      "quality": "A",
+      "license": "CC BY-NC-SA 3.0",
+      "callType": "call"
+    },
+    "calidris-minuta": {
+      "key": "xeno-canto/XC185089",
+      "fileUrl": "https://xeno-canto.org/sounds/uploaded/LELYWQKUZX/XC185089-Calidris%20minuta%20140508_038%2CAAB%2B.MP3",
+      "file": "XC185089.mp3",
+      "quality": "A",
+      "license": "CC BY-NC-SA 4.0",
+      "callType": "call"
+    },
+    "calidris-pugnax": {
+      "key": "xeno-canto/XC233522",
+      "fileUrl": "https://xeno-canto.org/sounds/uploaded/ZNCDXTUOFL/XC233522-Phillomaus_pugnax_Poland_Jarek_Matusiak_20150329_04.mp3",
+      "file": "XC233522.mp3",
+      "quality": "A",
+      "license": "CC BY-NC-SA 4.0",
+      "callType": "call"
+    },
+    "camaroptera-brachyura": {
+      "key": "xeno-canto/XC1080046",
+      "fileUrl": "https://xeno-canto.org/sounds/uploaded/QXGZDUUJUO/XC1080046-Camaroptera-Kruger-Berg-en-Dal-260124-144819_Tr1-.mp3",
+      "file": "XC1080046.mp3",
+      "quality": "A",
+      "license": "CC BY-NC-SA 4.0",
+      "callType": "call"
+    },
+    "campephaga-flava": {
+      "key": "xeno-canto/XC350289",
+      "fileUrl": "https://xeno-canto.org/sounds/uploaded/GQMCPIVNXX/XC350289-Black%20Cuckooshrike%20xc.mp3",
+      "file": "XC350289.mp3",
+      "quality": "A",
+      "license": "CC BY-NC-SA 4.0",
+      "callType": "call"
+    },
+    "campethera-abingoni": {
+      "key": "xeno-canto/XC545718",
+      "fileUrl": "https://xeno-canto.org/sounds/uploaded/DNKBTPCMSQ/XC545718-Golden-tailed%20Woodpecker%20RV%20200414-061553.mp3",
+      "file": "XC545718.mp3",
+      "quality": "A",
+      "license": "CC BY-NC-SA 4.0",
+      "callType": "call"
+    },
+    "campethera-bennettii": {
+      "key": "xeno-canto/XC682056",
+      "fileUrl": "https://xeno-canto.org/sounds/uploaded/IIJAXHKSCC/XC682056-Bennetts%20woodpecker%20%28duet%2Ccall%29%2020210716%2CSamalaCamp%2CNorthLuangwaNP%2CZAMBIA_PB.mp3",
+      "file": "XC682056.mp3",
+      "quality": "A",
+      "license": "CC BY-NC-SA 4.0",
+      "callType": "call"
+    },
+    "campocolinus-coqui": {
+      "key": "xeno-canto/XC520229",
+      "fileUrl": "https://xeno-canto.org/sounds/uploaded/LWQXRZHFCU/XC520229-2019-11-04%2010_50plainbelliedcoqui.mp3",
+      "file": "XC520229.mp3",
+      "quality": "A",
+      "license": "CC BY-NC-SA 4.0",
+      "callType": "call"
+    },
+    "caprimulgus-fossii": {
+      "key": "xeno-canto/XC513152",
+      "fileUrl": "https://xeno-canto.org/sounds/uploaded/DNKBTPCMSQ/XC513152-Sqyare-tailed%20Nightjars%20SWI%2091202-043258.mp3",
+      "file": "XC513152.mp3",
+      "quality": "A",
+      "license": "CC BY-NC-SA 4.0",
+      "callType": "call"
+    },
+    "caprimulgus-pectoralis": {
+      "key": "xeno-canto/XC662460",
+      "fileUrl": "https://xeno-canto.org/sounds/uploaded/HMBDEWEZVS/XC662460-1%20FN%20N%20Jar%20windup.mp3",
+      "file": "XC662460.mp3",
+      "quality": "A",
+      "license": "CC BY-NC-SA 4.0",
+      "callType": "call"
+    },
+    "caprimulgus-rufigena": {
+      "key": "xeno-canto/XC625641",
+      "fileUrl": "https://xeno-canto.org/sounds/uploaded/HMBDEWEZVS/XC625641-2%20RC%20Nightjar.mp3",
+      "file": "XC625641.mp3",
+      "quality": "A",
+      "license": "CC BY-NC-SA 4.0",
+      "callType": "call"
+    },
+    "caprimulgus-tristigma": {
+      "key": "xeno-canto/XC793333",
+      "fileUrl": "https://xeno-canto.org/sounds/uploaded/TSMVYZCIWC/XC793333-04-September-2022-donkernaguil.mp3",
+      "file": "XC793333.mp3",
+      "quality": "A",
+      "license": "CC BY-NC-SA 4.0",
+      "callType": "call"
+    },
+    "caprimulgus-vexillarius": {
+      "key": "xeno-canto/XC682094",
+      "fileUrl": "https://xeno-canto.org/sounds/uploaded/IIJAXHKSCC/XC682094-pennant-winged%20nightjar%20%28male%2Ccall%2Cflight%29%2020211013%2CMutinondo%2CZAMBIA__PB2.mp3",
+      "file": "XC682094.mp3",
+      "quality": "A",
+      "license": "CC BY-NC-SA 4.0",
+      "callType": "call"
+    },
+    "catriscus-brevirostris": {
+      "key": "xeno-canto/XC930050",
+      "fileUrl": "https://xeno-canto.org/sounds/uploaded/HHXEHTNZKV/XC930050-M%C3%A9galure-%C3%A0-bec-court-cris.mp3",
+      "file": "XC930050.mp3",
+      "quality": "A",
+      "license": "CC BY-NC-SA 4.0",
+      "callType": "call"
+    },
+    "ceblepyris-caesius": {
+      "key": "xeno-canto/XC443640",
+      "fileUrl": "https://xeno-canto.org/sounds/uploaded/ITRQTFVLNT/XC443640-Grey%20Cuckooshrike_song_SaimoHills_5Nov2018_1010_J.Bradley.mp3",
+      "file": "XC443640.mp3",
+      "quality": "A",
+      "license": "CC BY-NC-SA 4.0",
+      "callType": "call"
+    },
+    "ceblepyris-pectoralis": {
+      "key": "xeno-canto/XC660763",
+      "fileUrl": "https://xeno-canto.org/sounds/uploaded/IIJAXHKSCC/XC660763-White-breasted%20Cuckooshrike%20%28call%29%2020201206%2CMutinondo%2CMuchinga%2CZAMBIA.mp3",
+      "file": "XC660763.mp3",
+      "quality": "A",
+      "license": "CC BY-NC-SA 4.0",
+      "callType": "call"
+    },
+    "cecropis-abyssinica": {
+      "key": "xeno-canto/XC227618",
+      "fileUrl": "https://xeno-canto.org/sounds/uploaded/WOPIRNCCSX/XC227618-Cecropis%20abyssinica%20%28Mburo-2015-02-23-07h46%29%20LS114130.mp3",
+      "file": "XC227618.mp3",
+      "quality": "A",
+      "license": "CC BY-NC-SA 4.0",
+      "callType": "call"
+    },
+    "cecropis-cucullata": {
+      "key": "xeno-canto/XC292890",
+      "fileUrl": "https://xeno-canto.org/sounds/uploaded/TWAAJJHMEH/XC292890-Swallow%20Greater%20Striped%20c_Sphinx_151123_28_B.mp3",
+      "file": "XC292890.mp3",
+      "quality": "A",
+      "license": "CC BY-NC-SA 4.0",
+      "callType": "call"
+    },
+    "cecropis-semirufa": {
+      "key": "xeno-canto/XC927171",
+      "fileUrl": "https://xeno-canto.org/sounds/uploaded/HHXEHTNZKV/XC927171-Hirondelle-%C3%A0-ventre-roux-chant.mp3",
+      "file": "XC927171.mp3",
+      "quality": "A",
+      "license": "CC BY-NC-SA 4.0",
+      "callType": "song"
+    },
+    "cecropis-senegalensis": {
+      "key": "xeno-canto/XC423237",
+      "fileUrl": "https://xeno-canto.org/sounds/uploaded/UZRIEUDUHM/XC423237-Mosque_Swallows_AwelaniLodge_Limpopo_20180807.mp3",
+      "file": "XC423237.mp3",
+      "quality": "B",
+      "license": "CC BY-NC-SA 4.0",
+      "callType": "call"
+    },
+    "centropus-burchellii": {
+      "key": "xeno-canto/XC247756",
+      "fileUrl": "https://xeno-canto.org/sounds/uploaded/SGLTZLDXYI/XC247756-Burchells%20coucal%20calling.mp3",
+      "file": "XC247756.mp3",
+      "quality": "A",
+      "license": "CC BY-NC-SA 4.0",
+      "callType": "call"
+    },
+    "centropus-grillii": {
+      "key": "xeno-canto/XC547993",
+      "fileUrl": "https://xeno-canto.org/sounds/uploaded/IIJAXHKSCC/XC547993-Black%20Coucal%20%28song%29%2020200218%2CKamfinsaFarm%2CKitwe%2CZAMBIA.mp3",
+      "file": "XC547993.mp3",
+      "quality": "A",
+      "license": "CC BY-NC-SA 4.0",
+      "callType": "song"
+    },
+    "centropus-senegalensis": {
+      "key": "xeno-canto/XC341752",
+      "fileUrl": "https://xeno-canto.org/sounds/uploaded/YSDNMROVID/XC341752-100501074026coucal.mp3",
+      "file": "XC341752.mp3",
+      "quality": "A",
+      "license": "CC BY-NC-SA 4.0",
+      "callType": "call"
+    },
+    "cercotrichas-leucophrys": {
+      "key": "xeno-canto/XC872615",
+      "fileUrl": "https://xeno-canto.org/sounds/uploaded/LWQXRZHFCU/XC872615-2024-02-05-10_10-white-browed-scrub-robin.mp3",
+      "file": "XC872615.mp3",
+      "quality": "A",
+      "license": "CC BY-NC-SA 4.0",
+      "callType": "song"
+    },
+    "ceryle-rudis": {
+      "key": "xeno-canto/XC1148067",
+      "fileUrl": "https://xeno-canto.org/sounds/uploaded/YSGTQVRQZI/XC1148067-20260514_KNP_AKaramitsos_XA40_A066C056_260514YG_SLE_250HP_-3dB_comb_PKing-Fisher.wav",
+      "file": "XC1148067.wav",
+      "quality": "A",
+      "license": "CC BY-NC-SA 4.0",
+      "callType": "call"
+    },
+    "chalcomitra-amethystina": {
+      "key": "xeno-canto/XC438652",
+      "fileUrl": "https://xeno-canto.org/sounds/uploaded/SGLTZLDXYI/XC438652-Amethyst%20sunbird%20male%20singing%20belmont.mp3",
+      "file": "XC438652.mp3",
+      "quality": "A",
+      "license": "CC BY-NC-SA 4.0",
+      "callType": "call"
+    },
+    "chalcomitra-senegalensis": {
+      "key": "xeno-canto/XC1149407",
+      "fileUrl": "https://xeno-canto.org/sounds/uploaded/YSGTQVRQZI/XC1149407-20260519_KNP_AKaramitsos_XA60_A027C049_260519NT_SLE_2000HP_-3dB_SCS.mp3",
+      "file": "XC1149407.mp3",
+      "quality": "A",
+      "license": "CC BY-NC-SA 4.0",
+      "callType": "call"
+    },
+    "charadrius-hiaticula": {
+      "key": "xeno-canto/XC1033971",
+      "fileUrl": "https://xeno-canto.org/sounds/uploaded/MMEJYLOPDO/XC1033971-St%C3%B6rre-strandpipare_07.mp3",
+      "file": "XC1033971.mp3",
+      "quality": "A",
+      "license": "CC BY-NC-SA 4.0",
+      "callType": "call"
+    },
+    "chlidonias-hybrida": {
+      "key": "xeno-canto/XC135814",
+      "fileUrl": "https://xeno-canto.org/sounds/uploaded/WHMHZHCMPX/XC135814-DSCN9952.mp3",
+      "file": "XC135814.mp3",
+      "quality": "A",
+      "license": "CC BY-NC-SA 3.0",
+      "callType": "call"
+    },
+    "chlidonias-leucopterus": {
+      "key": "xeno-canto/XC307306",
+      "fileUrl": "https://xeno-canto.org/sounds/uploaded/TWAAJJHMEH/XC307306-Tern%20Whitewinged_Vaalkop_151224_23_A.mp3",
+      "file": "XC307306.mp3",
+      "quality": "A",
+      "license": "CC BY-NC-SA 4.0",
+      "callType": "call"
+    },
+    "chlorocichla-flaviventris": {
+      "key": "xeno-canto/XC1072510",
+      "fileUrl": "https://xeno-canto.org/sounds/uploaded/ITRQTFVLNT/XC1072510-550257281.mp3",
+      "file": "XC1072510.mp3",
+      "quality": "A",
+      "license": "CC BY-NC-SA 4.0",
+      "callType": "call"
+    },
+    "chlorophoneus-nigrifrons": {
+      "key": "xeno-canto/XC703355",
+      "fileUrl": "https://xeno-canto.org/sounds/uploaded/FAMEEAPTYE/XC703355-bushx%20bou%2Cchama1112.mp3",
+      "file": "XC703355.mp3",
+      "quality": "A",
+      "license": "CC BY-NC-SA 4.0",
+      "callType": "call"
+    },
+    "chlorophoneus-olivaceus": {
+      "key": "xeno-canto/XC252390",
+      "fileUrl": "https://xeno-canto.org/sounds/uploaded/SGLTZLDXYI/XC252390-olive%20bush-shrike.mp3",
+      "file": "XC252390.mp3",
+      "quality": "A",
+      "license": "CC BY-NC-SA 4.0",
+      "callType": "call"
+    },
+    "chlorophoneus-sulfureopectus": {
+      "key": "xeno-canto/XC323343",
+      "fileUrl": "https://xeno-canto.org/sounds/uploaded/TWAAJJHMEH/XC323343-Shrike%20Orangebreasted%20Bush_Mjejane_160618_15_A.mp3",
+      "file": "XC323343.mp3",
+      "quality": "A",
+      "license": "CC BY-NC-SA 4.0",
+      "callType": "call"
+    },
+    "chloropicus-namaquus": {
+      "key": "xeno-canto/XC503724",
+      "fileUrl": "https://xeno-canto.org/sounds/uploaded/DNKBTPCMSQ/XC503724-Bearded%20Woodpecker%20191021-064127.mp3",
+      "file": "XC503724.mp3",
+      "quality": "A",
+      "license": "CC BY-NC-SA 4.0",
+      "callType": "call"
+    },
+    "chroicocephalus-cirrocephalus": {
+      "key": "xeno-canto/XC277587",
+      "fileUrl": "https://xeno-canto.org/sounds/uploaded/SGLTZLDXYI/XC277587-grey-headed%20gulls%20exc.mp3",
+      "file": "XC277587.mp3",
+      "quality": "A",
+      "license": "CC BY-NC-SA 4.0",
+      "callType": "call"
+    },
+    "chrysococcyx-caprius": {
+      "key": "xeno-canto/XC685548",
+      "fileUrl": "https://xeno-canto.org/sounds/uploaded/SGLTZLDXYI/XC685548-Diederik%20Cuckoo%20exc.mp3",
+      "file": "XC685548.mp3",
+      "quality": "A",
+      "license": "CC BY-NC-SA 4.0",
+      "callType": "call"
+    },
+    "chrysococcyx-cupreus": {
+      "key": "xeno-canto/XC780410",
+      "fileUrl": "https://xeno-canto.org/sounds/uploaded/CZDNDLXZWN/XC780410-20021122_23a1_Cuckoo%2C-Afr-Emerald_m_song_Ithala-GR%2C-Louwsburg%2C-KZN_XC_READY.mp3",
+      "file": "XC780410.mp3",
+      "quality": "A",
+      "license": "CC BY-NC-SA 4.0",
+      "callType": "call"
+    },
+    "chrysococcyx-klaas": {
+      "key": "xeno-canto/XC28650",
+      "fileUrl": "https://xeno-canto.org/sounds/uploaded/BPSDQEOJWG/KlaassCuckooKruger2007-01-08.mp3",
+      "file": "XC28650.mp3",
+      "quality": "A",
+      "license": "CC BY-NC-SA 4.0",
+      "callType": "call"
+    },
+    "cichladusa-arquata": {
+      "key": "xeno-canto/XC791944",
+      "fileUrl": "https://xeno-canto.org/sounds/uploaded/OHDVJMHMQE/XC791944-20230407-082501_Collared-Palm-Thrush_Mida-Creek_edited.mp3",
+      "file": "XC791944.mp3",
+      "quality": "A",
+      "license": "CC BY-NC-SA 4.0",
+      "callType": "song"
+    },
+    "ciconia-abdimii": {
+      "key": "xeno-canto/XC980343-cleaned.mp3",
+      "fileUrl": "https://xeno-canto.org/sounds/uploaded/MPDFSJHTXH/XC980343-abdim_wingbeats_mirbat_6_D.mp3",
+      "file": "XC980343.mp3",
+      "quality": "D",
+      "license": "CC BY-NC-SA 4.0",
+      "callType": "call"
+    },
+    "ciconia-ciconia": {
+      "key": "xeno-canto/XC922887",
+      "fileUrl": "https://xeno-canto.org/sounds/uploaded/BJAXFFKOML/XC922887-Cigogneblanche_juv_240724_09H15_cri.mp3",
+      "file": "XC922887.mp3",
+      "quality": "A",
+      "license": "CC0 1.0",
+      "callType": "call"
+    },
+    "ciconia-nigra": {
+      "key": "xeno-canto/XC980027",
+      "fileUrl": "https://xeno-canto.org/sounds/uploaded/ITHRUQEQCF/XC980027-Black-Stork_call_13032025__1040.mp3",
+      "file": "XC980027.mp3",
+      "quality": "A",
+      "license": "CC BY-NC-SA 4.0",
+      "callType": "call"
+    },
+    "cinnyricinclus-leucogaster": {
+      "key": "xeno-canto/XC476620",
+      "fileUrl": "https://xeno-canto.org/sounds/uploaded/RGSEIIJGHA/XC476620-VioletbackedStarling_Kafountine_190519_0231_edited.mp3",
+      "file": "XC476620.mp3",
+      "quality": "A",
+      "license": "CC BY-NC-SA 4.0",
+      "callType": "call"
+    },
+    "cinnyris-afer": {
+      "key": "xeno-canto/XC249315",
+      "fileUrl": "https://xeno-canto.org/sounds/uploaded/SGLTZLDXYI/XC249315-GDC%20sunbird%20male.mp3",
+      "file": "XC249315.mp3",
+      "quality": "A",
+      "license": "CC BY-NC-SA 4.0",
+      "callType": "call"
+    },
+    "cinnyris-bifasciatus": {
+      "key": "xeno-canto/XC345213",
+      "fileUrl": "https://xeno-canto.org/sounds/uploaded/ITRQTFVLNT/XC345213-Purple-banded%20Sunbird_call2_Oloololo_1Nov2016_0820_J.Bradley.mp3",
+      "file": "XC345213.mp3",
+      "quality": "A",
+      "license": "CC BY-NC-SA 4.0",
+      "callType": "call"
+    },
+    "cinnyris-chalybeus": {
+      "key": "xeno-canto/XC452668",
+      "fileUrl": "https://xeno-canto.org/sounds/uploaded/DNKBTPCMSQ/XC452668-Southern%20DC%20Sunbird%20K%20Moya%20190115-062707.mp3",
+      "file": "XC452668.mp3",
+      "quality": "A",
+      "license": "CC BY-NC-SA 4.0",
+      "callType": "call"
+    },
+    "cinnyris-mariquensis": {
+      "key": "xeno-canto/XC803757",
+      "fileUrl": "https://xeno-canto.org/sounds/uploaded/UWFNNKHNAE/XC803757-Marico-sunbird.mp3",
+      "file": "XC803757.mp3",
+      "quality": "A",
+      "license": "CC BY-NC-SA 4.0",
+      "callType": "call"
+    },
+    "cinnyris-talatala": {
+      "key": "xeno-canto/XC549784",
+      "fileUrl": "https://xeno-canto.org/sounds/uploaded/DNKBTPCMSQ/XC549784-White-bellied%20Sunbird%20RV%20200423-070600.mp3",
+      "file": "XC549784.mp3",
+      "quality": "A",
+      "license": "CC BY-NC-SA 4.0",
+      "callType": "call"
+    },
+    "circaetus-cinereus": {
+      "key": "xeno-canto/XC863207",
+      "fileUrl": "https://xeno-canto.org/sounds/uploaded/UCLIDPSAOG/XC863207-Brown-Snake-Eagle.mp3",
+      "file": "XC863207.mp3",
+      "quality": "A",
+      "license": "CC BY-NC-SA 4.0",
+      "callType": "call"
+    },
+    "circus-macrourus": {
+      "key": "xeno-canto/XC549572",
+      "fileUrl": "https://xeno-canto.org/sounds/uploaded/VZLEHMNYBX/XC549572-stepuak_1.mp3",
+      "file": "XC549572.mp3",
+      "quality": "A",
+      "license": "CC BY-NC-SA 4.0",
+      "callType": "call"
+    },
+    "circus-ranivorus": {
+      "key": "xeno-canto/XC433948",
+      "fileUrl": "https://xeno-canto.org/sounds/uploaded/SGLTZLDXYI/XC433948-african%20marsh%20harrier%20calling%20XC.mp3",
+      "file": "XC433948.mp3",
+      "quality": "B",
+      "license": "CC BY-NC-SA 4.0",
+      "callType": "call"
+    },
+    "cisticola-aberrans": {
+      "key": "xeno-canto/XC199448",
+      "fileUrl": "https://xeno-canto.org/sounds/uploaded/LWQXRZHFCU/XC199448-2014-10-19%2007_54%20lazy%20cis.mp3",
+      "file": "XC199448.mp3",
+      "quality": "A",
+      "license": "CC BY-NC-SA 4.0",
+      "callType": "call"
+    },
+    "cisticola-aridulus": {
+      "key": "xeno-canto/XC616563",
+      "fileUrl": "https://xeno-canto.org/sounds/uploaded/HMBDEWEZVS/XC616563-15%20VG%20Desert%20C%20chatting.mp3",
+      "file": "XC616563.mp3",
+      "quality": "A",
+      "license": "CC BY-NC-SA 4.0",
+      "callType": "call"
+    },
+    "cisticola-chiniana": {
+      "key": "xeno-canto/XC1001648",
+      "fileUrl": "https://xeno-canto.org/sounds/uploaded/YSGTQVRQZI/XC1001648-20240222_KNP_AKaramitsos_AX40_A023C041_240222Z9_KNP02_SLE_500HzHP_-3dBNORM.mp3",
+      "file": "XC1001648.mp3",
+      "quality": "A",
+      "license": "CC BY-NC-SA 4.0",
+      "callType": "call"
+    },
+    "cisticola-erythrops": {
+      "key": "xeno-canto/XC1137526",
+      "fileUrl": "https://xeno-canto.org/sounds/uploaded/YSGTQVRQZI/XC1137526-20260509_KNP_AKaramitsos_XA60_A024C140_260509MY_SLE_-3dB_RFCisticola.mp3",
+      "file": "XC1137526.mp3",
+      "quality": "A",
+      "license": "CC BY-NC-SA 4.0",
+      "callType": "call"
+    },
+    "cisticola-fulvicapilla": {
+      "key": "xeno-canto/XC514720",
+      "fileUrl": "https://xeno-canto.org/sounds/uploaded/HMBDEWEZVS/XC514720-2%20Neddicky.mp3",
+      "file": "XC514720.mp3",
+      "quality": "A",
+      "license": "CC BY-NC-SA 4.0",
+      "callType": "call"
+    },
+    "cisticola-galactotes": {
+      "key": "xeno-canto/XC408045",
+      "fileUrl": "https://xeno-canto.org/sounds/uploaded/SGLTZLDXYI/XC408045-Rufous-winged%20Cisticola.mp3",
+      "file": "XC408045.mp3",
+      "quality": "B",
+      "license": "CC BY-NC-SA 4.0",
+      "callType": "call"
+    },
+    "cisticola-juncidis": {
+      "key": "xeno-canto/XC692442",
+      "fileUrl": "https://xeno-canto.org/sounds/uploaded/JDCTKFMBKV/XC692442-04_CisticolaZitting_Philippolis%20RD_20211220_1076.MP3",
+      "file": "XC692442.mp3",
+      "quality": "A",
+      "license": "CC BY-NC-SA 4.0",
+      "callType": "call"
+    },
+    "cisticola-natalensis": {
+      "key": "xeno-canto/XC1101235",
+      "fileUrl": "https://xeno-canto.org/sounds/uploaded/CQARALZBNN/XC1101235-Croaking-Cist-song-and-call-260224_2091.mp3",
+      "file": "XC1101235.mp3",
+      "quality": "A",
+      "license": "CC BY-NC-SA 4.0",
+      "callType": "call"
+    },
+    "cisticola-tinniens": {
+      "key": "xeno-canto/XC737784",
+      "fileUrl": "https://xeno-canto.org/sounds/uploaded/JDCTKFMBKV/XC737784-CisticolaLevalliants_SevendamsBFN_20220716.MP3",
+      "file": "XC737784.mp3",
+      "quality": "A",
+      "license": "CC BY-NC-SA 4.0",
+      "callType": "call"
+    },
+    "clamator-glandarius": {
+      "key": "xeno-canto/XC290141",
+      "fileUrl": "https://xeno-canto.org/sounds/uploaded/TWAAJJHMEH/XC290141-Cuckoo%20Great%20Spotted_Vaalkop_151018_20_A_edit.mp3",
+      "file": "XC290141.mp3",
+      "quality": "A",
+      "license": "CC BY-NC-SA 4.0",
+      "callType": "call"
+    },
+    "clamator-jacobinus": {
+      "key": "xeno-canto/XC1188518",
+      "fileUrl": "https://xeno-canto.org/sounds/uploaded/QXGZDUUJUO/XC1188518-260129-074644_Tr1-jacob-cuckoo-call-Nkorho-Bush-Lodge.mp3",
+      "file": "XC1188518.mp3",
+      "quality": "A",
+      "license": "CC BY-NC-SA 4.0",
+      "callType": "call"
+    },
+    "clamator-levaillantii": {
+      "key": "xeno-canto/XC1010298",
+      "fileUrl": "https://xeno-canto.org/sounds/uploaded/CPQVBBQHWL/XC1010298-20250629_095356_1-lev-cuckoo.mp3",
+      "file": "XC1010298.mp3",
+      "quality": "A",
+      "license": "CC BY-NC-SA 4.0",
+      "callType": "call"
+    },
+    "clanga-pomarina": {
+      "key": "xeno-canto/XC1028980",
+      "fileUrl": "https://xeno-canto.org/sounds/uploaded/XIBLXHRPJO/XC1028980-CLAPOM-AIASTE-250814_1473-%282%29.mp3",
+      "file": "XC1028980.mp3",
+      "quality": "A",
+      "license": "CC BY-NC-SA 4.0",
+      "callType": "call"
+    },
+    "coccopygia-melanotis": {
+      "key": "xeno-canto/XC292907",
+      "fileUrl": "https://xeno-canto.org/sounds/uploaded/TWAAJJHMEH/XC292907-Waxbill%20Swee_Sphinx_151123_56_A_edit.mp3",
+      "file": "XC292907.mp3",
+      "quality": "B",
+      "license": "CC BY-NC-SA 4.0",
+      "callType": "call"
+    },
+    "colius-striatus": {
+      "key": "xeno-canto/XC1077960",
+      "fileUrl": "https://xeno-canto.org/sounds/uploaded/QXGZDUUJUO/XC1077960-Speckled-mousebird-De-Hoop-260117-145509_Tr1-.mp3",
+      "file": "XC1077960.mp3",
+      "quality": "A",
+      "license": "CC BY-NC-SA 4.0",
+      "callType": "call"
+    },
+    "columba-arquatrix": {
+      "key": "xeno-canto/XC386792",
+      "fileUrl": "https://xeno-canto.org/sounds/uploaded/SGLTZLDXYI/XC386792-African%20Olive%20Pigeon%20Eenzaamheid%20-%20edited%20two%20calls.mp3",
+      "file": "XC386792.mp3",
+      "quality": "B",
+      "license": "CC BY-NC-SA 4.0",
+      "callType": "call"
+    },
+    "columba-guinea": {
+      "key": "xeno-canto/XC529796",
+      "fileUrl": "https://xeno-canto.org/sounds/uploaded/HMBDEWEZVS/XC529796-4%20Growl%20S%20Pigeon.mp3",
+      "file": "XC529796.mp3",
+      "quality": "A",
+      "license": "CC BY-NC-SA 4.0",
+      "callType": "call"
+    },
+    "columba-livia": {
+      "key": "xeno-canto/XC541143",
+      "fileUrl": "https://xeno-canto.org/sounds/uploaded/CGRIFXISGE/XC541143-COLLIV-Lagarde-20200403-1021.mp3",
+      "file": "XC541143.mp3",
+      "quality": "A",
+      "license": "CC BY-NC-SA 4.0",
+      "callType": "call"
+    },
+    "coracias-caudatus": {
+      "key": "xeno-canto/XC949678",
+      "fileUrl": "https://xeno-canto.org/sounds/uploaded/CCUCXWCPSW/XC949678-2024_10_17-Coracias-caudatus2.mp3",
+      "file": "XC949678.mp3",
+      "quality": "A",
+      "license": "CC BY-NC-SA 4.0",
+      "callType": "call"
+    },
+    "coracias-garrulus": {
+      "key": "xeno-canto/XC113065",
+      "fileUrl": "https://xeno-canto.org/sounds/uploaded/ZXGYSIOPJJ/XC113065-european%20roller.mp3",
+      "file": "XC113065.mp3",
+      "quality": "A",
+      "license": "CC BY-NC-SA 3.0",
+      "callType": "call"
+    },
+    "coracias-naevius": {
+      "key": "xeno-canto/XC715786",
+      "fileUrl": "https://xeno-canto.org/sounds/uploaded/HMBDEWEZVS/XC715786-20%20G%20Away.mp3",
+      "file": "XC715786.mp3",
+      "quality": "A",
+      "license": "CC BY-NC-SA 4.0",
+      "callType": "call"
+    },
+    "coracias-spatulatus": {
+      "key": "xeno-canto/XC349879",
+      "fileUrl": "https://xeno-canto.org/sounds/uploaded/SGLTZLDXYI/XC349879-Racket-tailed%20Rollers%20exc.mp3",
+      "file": "XC349879.mp3",
+      "quality": "B",
+      "license": "CC BY-NC-SA 4.0",
+      "callType": "call"
+    },
+    "corvus-albicollis": {
+      "key": "xeno-canto/XC252930",
+      "fileUrl": "https://xeno-canto.org/sounds/uploaded/SGLTZLDXYI/XC252930-White-necked%20ravens%20calling%201.mp3",
+      "file": "XC252930.mp3",
+      "quality": "A",
+      "license": "CC BY-NC-SA 4.0",
+      "callType": "call"
+    },
+    "corvus-albus": {
+      "key": "xeno-canto/XC1060335",
+      "fileUrl": "https://xeno-canto.org/sounds/uploaded/YSGTQVRQZI/XC1060335-20251125_DV_AKaramitsos_XA60_A008C018_251125CE_SLE_250HzHP_-3dBNORM_crow.mp3",
+      "file": "XC1060335.mp3",
+      "quality": "A",
+      "license": "CC BY-NC-SA 4.0",
+      "callType": "call"
+    },
+    "corvus-capensis": {
+      "key": "xeno-canto/XC247932",
+      "fileUrl": "https://xeno-canto.org/sounds/uploaded/SGLTZLDXYI/XC247932-Cape%20Crow_1.mp3",
+      "file": "XC247932.mp3",
+      "quality": "A",
+      "license": "CC BY-NC-SA 4.0",
+      "callType": "call"
+    },
+    "corypha-africana": {
+      "key": "xeno-canto/XC391863",
+      "fileUrl": "https://xeno-canto.org/sounds/uploaded/LMIEGTGPZZ/XC391863-Rufous-naped%20Lark.mp3",
+      "file": "XC391863.mp3",
+      "quality": "A",
+      "license": "CC BY-NC-SA 4.0",
+      "callType": "song"
+    },
+    "corythornis-cristatus": {
+      "key": "xeno-canto/XC369825",
+      "fileUrl": "https://xeno-canto.org/sounds/uploaded/GQMCPIVNXX/XC369825-Malachite%20Kingfisher.mp3",
+      "file": "XC369825.mp3",
+      "quality": "A",
+      "license": "CC BY-NC-SA 4.0",
+      "callType": "call"
+    },
+    "cossypha-dichroa": {
+      "key": "xeno-canto/XC273367",
+      "fileUrl": "https://xeno-canto.org/sounds/uploaded/SGLTZLDXYI/XC273367-Chorister%20Robin.mp3",
+      "file": "XC273367.mp3",
+      "quality": "A",
+      "license": "CC BY-NC-SA 4.0",
+      "callType": "song"
+    },
+    "cossypha-heuglini": {
+      "key": "xeno-canto/XC365336",
+      "fileUrl": "https://xeno-canto.org/sounds/uploaded/TWAAJJHMEH/XC365336-Robin%20Chat%20Heuglins_Hazyview_150813_B_edit.mp3",
+      "file": "XC365336.mp3",
+      "quality": "A",
+      "license": "CC BY-NC-SA 4.0",
+      "callType": "song"
+    },
+    "cossypha-natalensis": {
+      "key": "xeno-canto/XC349556",
+      "fileUrl": "https://xeno-canto.org/sounds/uploaded/HKZHCDLLNS/XC349556-2016-11-28%20St%20Lucia%20Gwalagwala%20-%20Red-capped%20Robin%20Chat%20%28Natal%20Robin%29.mp3",
+      "file": "XC349556.mp3",
+      "quality": "A",
+      "license": "CC BY-NC-SA 4.0",
+      "callType": "call"
+    },
+    "coturnix-coturnix": {
+      "key": "xeno-canto/XC137862",
+      "fileUrl": "https://xeno-canto.org/sounds/uploaded/RFGQDPLDEC/XC137862-Vaktel%20%20XC%20-H%C3%B8sbj%C3%B8r%20-%2009.06.2013%20kl.%2013.00%20%201.mp3",
+      "file": "XC137862.mp3",
+      "quality": "A",
+      "license": "CC BY-NC-SA 3.0",
+      "callType": "call"
+    },
+    "coturnix-delegorguei": {
+      "key": "xeno-canto/XC746385",
+      "fileUrl": "https://xeno-canto.org/sounds/uploaded/AYKHDFBYIH/XC746385-Harliquin%20Quail%20singing%20very%20good%202022%2008%2020%20Sunbah%20Farm%2C%20Jizan%2C%20Saudi%20Arabia_1832_short.mp3",
+      "file": "XC746385.mp3",
+      "quality": "A",
+      "license": "CC BY-NC-SA 4.0",
+      "callType": "call"
+    },
+    "creatophora-cinerea": {
+      "key": "xeno-canto/XC489190",
+      "fileUrl": "https://xeno-canto.org/sounds/uploaded/DNKBTPCMSQ/XC489190-Wattled%20Starlings%20KNP%20190415-075512.mp3",
+      "file": "XC489190.mp3",
+      "quality": "A",
+      "license": "CC BY-NC-SA 4.0",
+      "callType": "call"
+    },
+    "crecopsis-egregia": {
+      "key": "xeno-canto/XC899593",
+      "fileUrl": "https://xeno-canto.org/sounds/uploaded/FHQVLXJQKW/XC899593-African-Crake-1.mp3",
+      "file": "XC899593.mp3",
+      "quality": "B",
+      "license": "CC BY-NC-SA 4.0",
+      "callType": "call"
+    },
+    "crex-crex": {
+      "key": "xeno-canto/XC1149182",
+      "fileUrl": "https://xeno-canto.org/sounds/uploaded/EUNWJADFAF/XC1149182-2306_crecre_n_%C3%84.mp3",
+      "file": "XC1149182.mp3",
+      "quality": "A",
+      "license": "CC BY-NC-SA 4.0",
+      "callType": "call"
+    },
+    "crinifer-concolor": {
+      "key": "xeno-canto/XC208606",
+      "fileUrl": "https://xeno-canto.org/sounds/uploaded/XKXDFWNSPA/XC208606-Grey%20Lourie%203%20the%20bridge.mp3",
+      "file": "XC208606.mp3",
+      "quality": "A",
+      "license": "CC BY-NC-SA 4.0",
+      "callType": "call"
+    },
+    "crithagra-atrogularis": {
+      "key": "xeno-canto/XC472484",
+      "fileUrl": "https://xeno-canto.org/sounds/uploaded/HMBDEWEZVS/XC472484-1%20BT%20Canary.mp3",
+      "file": "XC472484.mp3",
+      "quality": "A",
+      "license": "CC BY-NC-SA 4.0",
+      "callType": "song"
+    },
+    "crithagra-gularis": {
+      "key": "xeno-canto/XC252812",
+      "fileUrl": "https://xeno-canto.org/sounds/uploaded/SGLTZLDXYI/XC252812-Streaky-headed%20seedeater1.mp3",
+      "file": "XC252812.mp3",
+      "quality": "A",
+      "license": "CC BY-NC-SA 4.0",
+      "callType": "song"
+    },
+    "crithagra-scotops": {
+      "key": "xeno-canto/XC500264",
+      "fileUrl": "https://xeno-canto.org/sounds/uploaded/FBRAYAXGSJ/XC500264-20190928%20152850%20%28online-audio-converter.com%29.mp3",
+      "file": "XC500264.mp3",
+      "quality": "A",
+      "license": "CC BY-NC-SA 4.0",
+      "callType": "song"
+    },
+    "crithagra-sulphurata": {
+      "key": "xeno-canto/XC650874",
+      "fileUrl": "https://xeno-canto.org/sounds/uploaded/WQZFZWNHJB/XC650874-Bully%20Canary.mp3",
+      "file": "XC650874.mp3",
+      "quality": "A",
+      "license": "CC BY-NC-SA 4.0",
+      "callType": "song"
+    },
+    "cuculus-canorus": {
+      "key": "xeno-canto/XC27037",
+      "fileUrl": "https://xeno-canto.org/sounds/uploaded/BPSDQEOJWG/GokAmperna.mp3",
+      "file": "XC27037.mp3",
+      "quality": "A",
+      "license": "CC BY-NC-SA 4.0",
+      "callType": "song"
+    },
+    "cuculus-clamosus": {
+      "key": "xeno-canto/XC650879",
+      "fileUrl": "https://xeno-canto.org/sounds/uploaded/WQZFZWNHJB/XC650879-Black%20Cuckoo.mp3",
+      "file": "XC650879.mp3",
+      "quality": "A",
+      "license": "CC BY-NC-SA 4.0",
+      "callType": "song"
+    },
+    "cuculus-gularis": {
+      "key": "xeno-canto/XC682084",
+      "fileUrl": "https://xeno-canto.org/sounds/uploaded/IIJAXHKSCC/XC682084-African%20Cuckoo%20%28song%29%2020210921%2CMutinondoWilderness%2CMuchinga%2CZAMBIA.mp3",
+      "file": "XC682084.mp3",
+      "quality": "A",
+      "license": "CC BY-NC-SA 4.0",
+      "callType": "song"
+    },
+    "cuculus-solitarius": {
+      "key": "xeno-canto/XC202901",
+      "fileUrl": "https://xeno-canto.org/sounds/uploaded/LWQXRZHFCU/XC202901-2014-11-18_09.03_01-rc-cuckoo.mp3",
+      "file": "XC202901.mp3",
+      "quality": "A",
+      "license": "CC BY-NC-SA 4.0",
+      "callType": "call"
+    },
+    "curruca-communis": {
+      "key": "xeno-canto/XC931937",
+      "fileUrl": "https://xeno-canto.org/sounds/uploaded/SDPCHKOHRH/XC931937-Fauvette-grisette-cris-+++.mp3",
+      "file": "XC931937.mp3",
+      "quality": "A",
+      "license": "CC BY-NC-SA 4.0",
+      "callType": "call"
+    },
+    "cursorius-temminckii": {
+      "key": "xeno-canto/XC210305",
+      "fileUrl": "https://xeno-canto.org/sounds/uploaded/CDTGHVBGZP/XC210305-Temminck%27s%20Courser2015-1-4-1.mp3",
+      "file": "XC210305.mp3",
+      "quality": "A",
+      "license": "CC BY-NC-SA 4.0",
+      "callType": "call"
+    },
+    "cyanomitra-olivacea": {
+      "key": "xeno-canto/XC1009162",
+      "fileUrl": "https://xeno-canto.org/sounds/uploaded/IQGZKQAMKT/XC1009162-Sunbird_Olive_EvertonConservancy_20250624_2_InterestingPrelude_NR10.mp3",
+      "file": "XC1009162.mp3",
+      "quality": "A",
+      "license": "CC BY-NC-SA 4.0",
+      "callType": "call"
+    },
+    "cypsiurus-parvus": {
+      "key": "xeno-canto/XC710191",
+      "fileUrl": "https://xeno-canto.org/sounds/uploaded/HMBDEWEZVS/XC710191-4%20P%20Swift.mp3",
+      "file": "XC710191.mp3",
+      "quality": "A",
+      "license": "CC BY-NC-SA 4.0",
+      "callType": "call"
+    },
+    "delichon-urbicum": {
+      "key": "xeno-canto/XC27278",
+      "fileUrl": "https://xeno-canto.org/sounds/uploaded/BPSDQEOJWG/Hussvalabobygge.mp3",
+      "file": "XC27278.mp3",
+      "quality": "A",
+      "license": "CC BY-NC-SA 4.0",
+      "callType": "call"
+    },
+    "dendrocygna-bicolor": {
+      "key": "xeno-canto/XC1173525",
+      "fileUrl": "https://xeno-canto.org/sounds/uploaded/YSGTQVRQZI/XC1173525-20260317_STRNDF_AKaramitsos_XA60_A019C210_2603179G_SLE_250HP_-3dB_Fulvous-Duck.mp3",
+      "file": "XC1173525.mp3",
+      "quality": "A",
+      "license": "CC BY-NC-SA 4.0",
+      "callType": "call"
+    },
+    "dendrocygna-viduata": {
+      "key": "xeno-canto/XC225375",
+      "fileUrl": "https://xeno-canto.org/sounds/uploaded/TNPOVFLZMY/XC225375-215-White-faced-Whistling-Duck.mp3",
+      "file": "XC225375.mp3",
+      "quality": "A",
+      "license": "CC BY-NC-SA 4.0",
+      "callType": "call"
+    },
+    "dendropicos-fuscescens": {
+      "key": "xeno-canto/XC998772",
+      "fileUrl": "https://xeno-canto.org/sounds/uploaded/YSGTQVRQZI/XC998772-20240716_KNP_RProbert_CanonXA40_A029C211_240716E1_KNP02_SLE_600HzHP_-3dBNORM.mp3",
+      "file": "XC998772.mp3",
+      "quality": "A",
+      "license": "CC BY-NC-SA 4.0",
+      "callType": "call"
+    },
+    "dendropicos-griseocephalus": {
+      "key": "xeno-canto/XC650855",
+      "fileUrl": "https://xeno-canto.org/sounds/uploaded/WQZFZWNHJB/XC650855-Olive%20Woodpecker.mp3",
+      "file": "XC650855.mp3",
+      "quality": "A",
+      "license": "CC BY-NC-SA 4.0",
+      "callType": "call"
+    },
+    "dessonornis-caffer": {
+      "key": "xeno-canto/XC1049112",
+      "fileUrl": "https://xeno-canto.org/sounds/uploaded/YSGTQVRQZI/XC1049112-20251015_KBG_AKaramitsos_A003C199_2510150C_CXA60_SLE_250HzHP_-3dBNORM.mp3",
+      "file": "XC1049112.mp3",
+      "quality": "A",
+      "license": "CC BY-NC-SA 4.0",
+      "callType": "song"
+    },
+    "dessonornis-humeralis": {
+      "key": "xeno-canto/XC1001867",
+      "fileUrl": "https://xeno-canto.org/sounds/uploaded/YSGTQVRQZI/XC1001867-20240219_KNP_AKaramitsos_Iphone12_SLE_1kHzHP_-3dBNORM.mp3",
+      "file": "XC1001867.mp3",
+      "quality": "A",
+      "license": "CC BY-NC-SA 4.0",
+      "callType": "call"
+    },
+    "dicrurus-adsimilis": {
+      "key": "xeno-canto/XC298129",
+      "fileUrl": "https://xeno-canto.org/sounds/uploaded/SGLTZLDXYI/XC298129-Fork-tailed%20drongo.mp3",
+      "file": "XC298129.mp3",
+      "quality": "A",
+      "license": "CC BY-NC-SA 4.0",
+      "callType": "call"
+    },
+    "dicrurus-ludwigii": {
+      "key": "xeno-canto/XC1030331",
+      "fileUrl": "https://xeno-canto.org/sounds/uploaded/TSMVYZCIWC/XC1030331-kleinbyvanger-satara.mp3",
+      "file": "XC1030331.mp3",
+      "quality": "A",
+      "license": "CC BY-NC-SA 4.0",
+      "callType": "call"
+    },
+    "dryoscopus-cubla": {
+      "key": "xeno-canto/XC368159",
+      "fileUrl": "https://xeno-canto.org/sounds/uploaded/RFRTVEHIZX/XC368159-170328_Black-backedPuffback_SabiePark_OC.mp3",
+      "file": "XC368159.mp3",
+      "quality": "A",
+      "license": "CC BY-NC-SA 4.0",
+      "callType": "call"
+    },
+    "egretta-ardesiaca": {
+      "key": "xeno-canto/XC973475",
+      "fileUrl": "https://xeno-canto.org/sounds/uploaded/KGENRQCZVH/XC973475-EGRARD_calls3_Doubounoro_24012025_7h.mp3",
+      "file": "XC973475.mp3",
+      "quality": "A",
+      "license": "CC BY-NC-SA 4.0",
+      "callType": "call"
+    },
+    "egretta-garzetta": {
+      "key": "xeno-canto/XC307189",
+      "fileUrl": "https://xeno-canto.org/sounds/uploaded/TWAAJJHMEH/XC307189-Egret%20Little_Vaalkop_151231_29_A.mp3",
+      "file": "XC307189.mp3",
+      "quality": "A",
+      "license": "CC BY-NC-SA 4.0",
+      "callType": "call"
+    },
+    "elanus-caeruleus": {
+      "key": "xeno-canto/XC1087114",
+      "fileUrl": "https://xeno-canto.org/sounds/uploaded/YSGTQVRQZI/XC1087114-20260301_DV_AKaramitsos_XA60_A016C227_260301LN_SLE_350HP_-3dB_split_comb.wav",
+      "file": "XC1087114.wav",
+      "quality": "A",
+      "license": "CC BY-NC-SA 4.0",
+      "callType": "call"
+    },
+    "emberiza-flaviventris": {
+      "key": "xeno-canto/XC391998",
+      "fileUrl": "https://xeno-canto.org/sounds/uploaded/XVXHTBZRRW/XC391998-Golden-breasted%20Bunting%20S%2020170308%201426%20ZA%20Hluhluwe-iMfolozi-Park%20TW%20LS_5.mp3",
+      "file": "XC391998.mp3",
+      "quality": "A",
+      "license": "CC BY-NC-SA 4.0",
+      "callType": "song"
+    },
+    "emberiza-impetuani": {
+      "key": "xeno-canto/XC312689",
+      "fileUrl": "https://xeno-canto.org/sounds/uploaded/SGLTZLDXYI/XC312689-Lark-like%20bunting.mp3",
+      "file": "XC312689.mp3",
+      "quality": "A",
+      "license": "CC BY-NC-SA 4.0",
+      "callType": "song"
+    },
+    "emberiza-tahapisi": {
+      "key": "xeno-canto/XC364488",
+      "fileUrl": "https://xeno-canto.org/sounds/uploaded/TWAAJJHMEH/XC364488-Bunting%20Cinnamonbreasted_VK_161224_08_A_edit.mp3",
+      "file": "XC364488.mp3",
+      "quality": "A",
+      "license": "CC BY-NC-SA 4.0",
+      "callType": "song"
+    },
+    "eremomela-icteropygialis": {
+      "key": "xeno-canto/XC904173",
+      "fileUrl": "https://xeno-canto.org/sounds/uploaded/JDCTKFMBKV/XC904173-EremomelaYellowbellied_BankfonteinPhilippolis_20240514_LSP5.mp3",
+      "file": "XC904173.mp3",
+      "quality": "A",
+      "license": "CC BY-NC-SA 4.0",
+      "callType": "call"
+    },
+    "eremomela-scotops": {
+      "key": "xeno-canto/XC793332",
+      "fileUrl": "https://xeno-canto.org/sounds/uploaded/TSMVYZCIWC/XC793332-01-December-2022-donkerwangbossanger1.mp3",
+      "file": "XC793332.mp3",
+      "quality": "B",
+      "license": "CC BY-NC-SA 4.0",
+      "callType": "call"
+    },
+    "eremomela-usticollis": {
+      "key": "xeno-canto/XC177777",
+      "fileUrl": "https://xeno-canto.org/sounds/uploaded/ICUDBWGEGD/XC177777-1020_cut.mp3",
+      "file": "XC177777.mp3",
+      "quality": "A",
+      "license": "CC BY-NC-SA 4.0",
+      "callType": "call"
+    },
+    "eremopterix-leucotis": {
+      "key": "xeno-canto/XC989383",
+      "fileUrl": "https://xeno-canto.org/sounds/uploaded/KGENRQCZVH/XC989383-ERELEU_calls_NDJBilala_03042025_11h30.mp3",
+      "file": "XC989383.mp3",
+      "quality": "A",
+      "license": "CC BY-NC-SA 4.0",
+      "callType": "call"
+    },
+    "eremopterix-verticalis": {
+      "key": "xeno-canto/XC288401",
+      "fileUrl": "https://xeno-canto.org/sounds/uploaded/SJRAXPTEKH/XC288401-713_0175.mp3",
+      "file": "XC288401.mp3",
+      "quality": "B",
+      "license": "CC BY-NC-SA 4.0",
+      "callType": "call"
+    },
+    "estrilda-astrild": {
+      "key": "xeno-canto/XC1087071",
+      "fileUrl": "https://xeno-canto.org/sounds/uploaded/YSGTQVRQZI/XC1087071-20260305_BV_AKaramitsos_XA60_A017C156_2603058X_SLE_250HP_-3dB.mp3",
+      "file": "XC1087071.mp3",
+      "quality": "A",
+      "license": "CC BY-NC-SA 4.0",
+      "callType": "call"
+    },
+    "euplectes-afer": {
+      "key": "xeno-canto/XC829310",
+      "fileUrl": "https://xeno-canto.org/sounds/uploaded/JYPQCEFKAM/XC829310-230908-171338Arcebispo.mp3",
+      "file": "XC829310.mp3",
+      "quality": "A",
+      "license": "CC BY-NC-SA 4.0",
+      "callType": "call"
+    },
+    "euplectes-albonotatus": {
+      "key": "xeno-canto/XC364551",
+      "fileUrl": "https://xeno-canto.org/sounds/uploaded/TWAAJJHMEH/XC364551-Widowbird%20Whitewinged_VK_161224_23_A_edit.mp3",
+      "file": "XC364551.mp3",
+      "quality": "A",
+      "license": "CC BY-NC-SA 4.0",
+      "callType": "song"
+    },
+    "euplectes-ardens": {
+      "key": "xeno-canto/XC364550",
+      "fileUrl": "https://xeno-canto.org/sounds/uploaded/TWAAJJHMEH/XC364550-Widowbird%20Redcollared_RV_161230_10_B_edit.mp3",
+      "file": "XC364550.mp3",
+      "quality": "A",
+      "license": "CC BY-NC-SA 4.0",
+      "callType": "call"
+    },
+    "euplectes-axillaris": {
+      "key": "xeno-canto/XC441846",
+      "fileUrl": "https://xeno-canto.org/sounds/uploaded/SGLTZLDXYI/XC441846-Fan-tailed%20Widowbird%20then%20Cape%20Canary.mp3",
+      "file": "XC441846.mp3",
+      "quality": "B",
+      "license": "CC BY-NC-SA 4.0",
+      "callType": "call"
+    },
+    "euplectes-orix": {
+      "key": "xeno-canto/XC671581",
+      "fileUrl": "https://xeno-canto.org/sounds/uploaded/HMBDEWEZVS/XC671581-8%20SR%20Bishop%20and%20flying%20away.mp3",
+      "file": "XC671581.mp3",
+      "quality": "A",
+      "license": "CC BY-NC-SA 4.0",
+      "callType": "call"
+    },
+    "eurocephalus-anguitimens": {
+      "key": "xeno-canto/XC338378",
+      "fileUrl": "https://xeno-canto.org/sounds/uploaded/IMBONSYZGY/XC338378-Southern%20white-crowned%20shrike.mp3",
+      "file": "XC338378.mp3",
+      "quality": "A",
+      "license": "CC BY-NC-SA 4.0",
+      "callType": "call"
+    },
+    "eurystomus-glaucurus": {
+      "key": "xeno-canto/XC745582",
+      "fileUrl": "https://xeno-canto.org/sounds/uploaded/IIJAXHKSCC/XC745582-Broad-billed%20roller%20%28call%20flight%29%2020211201%2CKasankaNP%2CZAMBIA.mp3",
+      "file": "XC745582.mp3",
+      "quality": "A",
+      "license": "CC BY-NC-SA 4.0",
+      "callType": "call"
+    },
+    "falco-amurensis": {
+      "key": "xeno-canto/XC266729",
+      "fileUrl": "https://xeno-canto.org/sounds/uploaded/LELYWQKUZX/XC266729-Falco%20amurensis%20150505_024%2CAAA%2C%D0%A1%D0%B8%D0%B1%D0%B8%D1%80%D1%86%D0%B5%D0%B2%D0%BE%20%D1%83%D1%82%D1%80%D0%BE%206.05%2C%20%D1%81%D0%BF%D0%B0%D1%80%D0%B8%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5.MP3",
+      "file": "XC266729.mp3",
+      "quality": "A",
+      "license": "CC BY-NC-SA 4.0",
+      "callType": "call"
+    },
+    "falco-biarmicus": {
+      "key": "xeno-canto/XC577955",
+      "fileUrl": "https://xeno-canto.org/sounds/uploaded/JCPKCBKKAQ/XC577955-FALBIA_100401_Beaucens_GO2.mp3",
+      "file": "XC577955.mp3",
+      "quality": "A",
+      "license": "CC BY-NC-SA 4.0",
+      "callType": "call"
+    },
+    "falco-concolor": {
+      "key": "xeno-canto/XC739067",
+      "fileUrl": "https://xeno-canto.org/sounds/uploaded/AYKHDFBYIH/XC739067-Sooty%20Falcon%20call%20very%20good%202020%2010%2027%20Silah%20Main%20Island%2C%20at%20sea%20Duba_2439.mp3",
+      "file": "XC739067.mp3",
+      "quality": "A",
+      "license": "CC BY-NC-SA 4.0",
+      "callType": "call"
+    },
+    "falco-naumanni": {
+      "key": "xeno-canto/XC149085",
+      "fileUrl": "https://xeno-canto.org/sounds/uploaded/BPSDQEOJWG/XC149085-Rodfalk-%282013-03-28%2015.37%29-LS113091.mp3",
+      "file": "XC149085.mp3",
+      "quality": "A",
+      "license": "CC BY-NC-SA 4.0",
+      "callType": "call"
+    },
+    "falco-peregrinus": {
+      "key": "xeno-canto/XC48465",
+      "fileUrl": "https://xeno-canto.org/sounds/uploaded/BYLLSJRVDZ/Falco%20peregrinus_Lago%20Alumine%20%28El%20Puente%29_Villa%20Pehuenia_Neuquen_Argentina_20ENE2005_Bernabe%20Lopez-Lanus.mp3",
+      "file": "XC48465.mp3",
+      "quality": "A",
+      "license": "CC BY-NC-SA 4.0",
+      "callType": "call"
+    },
+    "falco-rupicolus": {
+      "key": "xeno-canto/XC1073735",
+      "fileUrl": "https://xeno-canto.org/sounds/uploaded/YSGTQVRQZI/XC1073735-20251129_MUIZ_TGridley_Iphone_133007_SLE_1000HP_-3dB.mp3",
+      "file": "XC1073735.mp3",
+      "quality": "A",
+      "license": "CC BY-NC-SA 4.0",
+      "callType": "call"
+    },
+    "falco-subbuteo": {
+      "key": "xeno-canto/XC42346",
+      "fileUrl": "https://xeno-canto.org/sounds/uploaded/BPSDQEOJWG/LarkfalktigglateflyggajuvSpeleby2009-08-23.mp3",
+      "file": "XC42346.mp3",
+      "quality": "A",
+      "license": "CC BY-NC-SA 4.0",
+      "callType": "call"
+    },
+    "falco-vespertinus": {
+      "key": "xeno-canto/XC154405",
+      "fileUrl": "https://xeno-canto.org/sounds/uploaded/JFWYCBDTFP/XC154405-Falco%20vespertinus%20calls%20in%20colony%20east%20of%20Akbykti%20Aqmola%20province%20Kazakhstan%203%20May%202013%20%28Arend%20Wassink%29.mp3",
+      "file": "XC154405.mp3",
+      "quality": "A",
+      "license": "CC BY-NC-SA 4.0",
+      "callType": "call"
+    },
+    "fraseria-caerulescens": {
+      "key": "xeno-canto/XC1145642",
+      "fileUrl": "https://xeno-canto.org/sounds/uploaded/YSGTQVRQZI/XC1145642-20260510_KNP_AKaramitsos_XA60_A025C072_2605104M_SLE_500HP_-3dB.mp3",
+      "file": "XC1145642.mp3",
+      "quality": "A",
+      "license": "CC BY-NC-SA 4.0",
+      "callType": "call"
+    },
+    "fraseria-plumbea": {
+      "key": "xeno-canto/XC1023579",
+      "fileUrl": "https://xeno-canto.org/sounds/uploaded/IQGZKQAMKT/XC1023579-Tit-Flycatcher_Grey_NdlovumziHoedspruit_20250722_NR14.mp3",
+      "file": "XC1023579.mp3",
+      "quality": "A",
+      "license": "CC BY-NC-SA 4.0",
+      "callType": "call"
+    },
+    "fulica-cristata": {
+      "key": "xeno-canto/XC649289",
+      "fileUrl": "https://xeno-canto.org/sounds/uploaded/SGLTZLDXYI/XC649289-Red-knobbed%20Coot%20exc%20edited.mp3",
+      "file": "XC649289.mp3",
+      "quality": "A",
+      "license": "CC BY-NC-SA 4.0",
+      "callType": "call"
+    },
+    "gallinago-nigripennis": {
+      "key": "xeno-canto/XC495341",
+      "fileUrl": "https://xeno-canto.org/sounds/uploaded/HMBDEWEZVS/XC495341-2%20Female%20snipe%20moorhen.mp3",
+      "file": "XC495341.mp3",
+      "quality": "A",
+      "license": "CC BY-NC-SA 4.0",
+      "callType": "call"
+    },
+    "gallinula-chloropus": {
+      "key": "xeno-canto/XC1166417",
+      "fileUrl": "https://xeno-canto.org/sounds/uploaded/YSGTQVRQZI/XC1166417-20260307_DV_EBras_XA60_A017C265_260307OB_SLE_250HP_-3sB_comb_moorhen.mp3",
+      "file": "XC1166417.mp3",
+      "quality": "A",
+      "license": "CC BY-NC-SA 4.0",
+      "callType": "call"
+    },
+    "geronticus-calvus": {
+      "key": "xeno-canto/XC902587",
+      "fileUrl": "https://xeno-canto.org/sounds/uploaded/VWCBCAIJUC/XC902587-MixPre-026_Southern_bald_ibis_01.mp3",
+      "file": "XC902587.mp3",
+      "quality": "B",
+      "license": "CC BY-NC-SA 4.0",
+      "callType": "call"
+    },
+    "glareola-nordmanni": {
+      "key": "xeno-canto/XC301539",
+      "fileUrl": "https://xeno-canto.org/sounds/uploaded/UDDNOHEKEN/XC301539-Pratincole%2C%20Black-winged%20%281%29%3B%20Mkhombo%20Dam%2C%20Mpumulanga%2022-01-2016%201200.mp3",
+      "file": "XC301539.mp3",
+      "quality": "A",
+      "license": "CC BY-NC-SA 4.0",
+      "callType": "call"
+    },
+    "glareola-pratincola": {
+      "key": "xeno-canto/XC379434",
+      "fileUrl": "https://xeno-canto.org/sounds/uploaded/SDPCHKOHRH/XC379434-glareole%20a%20collie%20cri%20court%202.mp3",
+      "file": "XC379434.mp3",
+      "quality": "A",
+      "license": "CC BY-NC-SA 4.0",
+      "callType": "call"
+    },
+    "glaucidium-capense": {
+      "key": "xeno-canto/XC358211",
+      "fileUrl": "https://xeno-canto.org/sounds/uploaded/DNKBTPCMSQ/XC358211-Barred%20Owlet%20ZOOM0013.MP3",
+      "file": "XC358211.mp3",
+      "quality": "A",
+      "license": "CC BY-NC-SA 4.0",
+      "callType": "call"
+    },
+    "glaucidium-perlatum": {
+      "key": "xeno-canto/XC194518",
+      "fileUrl": "https://xeno-canto.org/sounds/uploaded/LWQXRZHFCU/XC194518-2014-09-06%2010_23%20ps%20owlet%20x%202.mp3",
+      "file": "XC194518.mp3",
+      "quality": "A",
+      "license": "CC BY-NC-SA 4.0",
+      "callType": "call"
+    },
+    "granatina-granatina": {
+      "key": "xeno-canto/XC662464",
+      "fileUrl": "https://xeno-canto.org/sounds/uploaded/HMBDEWEZVS/XC662464-6%20VE%20Waxb.mp3",
+      "file": "XC662464.mp3",
+      "quality": "A",
+      "license": "CC BY-NC-SA 4.0",
+      "callType": "call"
+    },
+    "guttera-edouardi": {
+      "key": "xeno-canto/XC237779",
+      "fileUrl": "https://xeno-canto.org/sounds/uploaded/ICUDBWGEGD/XC237779-1062_cut.mp3",
+      "file": "XC237779.mp3",
+      "quality": "A",
+      "license": "CC BY-NC-SA 4.0",
+      "callType": "call"
+    },
+    "gymnoris-superciliaris": {
+      "key": "xeno-canto/XC421072",
+      "fileUrl": "https://xeno-canto.org/sounds/uploaded/HMBDEWEZVS/XC421072-NG%20Kerk%20camp%20grounds%2019.6.2018.mp3",
+      "file": "XC421072.mp3",
+      "quality": "A",
+      "license": "CC BY-NC-SA 4.0",
+      "callType": "call"
+    },
+    "gypohierax-angolensis": {
+      "key": "xeno-canto/XC620855",
+      "fileUrl": "https://xeno-canto.org/sounds/uploaded/SGNUEQHVBW/XC620855-210114_0491_plus_00m31s_PalmnutVulture_call_VolUpAggressLowPAss_StopBandFilter.mp3",
+      "file": "XC620855.mp3",
+      "quality": "B",
+      "license": "CC BY-NC-SA 4.0",
+      "callType": "call"
+    },
+    "gyps-africanus": {
+      "key": "xeno-canto/XC978231",
+      "fileUrl": "https://xeno-canto.org/sounds/uploaded/TSMVYZCIWC/XC978231-20250110Witrugaasv.mp3",
+      "file": "XC978231.mp3",
+      "quality": "A",
+      "license": "CC BY-NC-SA 4.0",
+      "callType": "call"
+    },
+    "gyps-coprotheres": {
+      "key": "xeno-canto/XC369789-cleaned.mp3",
+      "fileUrl": "https://xeno-canto.org/sounds/uploaded/RLSEYIEVCI/XC369789-cape%20vulture.mp3",
+      "file": "XC369789.mp3",
+      "quality": "C",
+      "license": "CC BY-NC-SA 4.0",
+      "callType": "call"
+    },
+    "halcyon-albiventris": {
+      "key": "xeno-canto/XC1137527",
+      "fileUrl": "https://xeno-canto.org/sounds/uploaded/YSGTQVRQZI/XC1137527-20260509_KNP_AKaramitsos_XA60_A024C140_260509MY_SLE_-3dB_split_Unid2.wav",
+      "file": "XC1137527.wav",
+      "quality": "A",
+      "license": "CC BY-NC-SA 4.0",
+      "callType": "call"
+    },
+    "halcyon-chelicuti": {
+      "key": "xeno-canto/XC462092",
+      "fileUrl": "https://xeno-canto.org/sounds/uploaded/ELJNEGDKGC/XC462092-Striped%20Kingfisher.mp3",
+      "file": "XC462092.mp3",
+      "quality": "A",
+      "license": "CC BY-NC-SA 4.0",
+      "callType": "song"
+    },
+    "halcyon-leucocephala": {
+      "key": "xeno-canto/XC697680",
+      "fileUrl": "https://xeno-canto.org/sounds/uploaded/FAMEEAPTYE/XC697680-Hleucocephalus%20excited%201805.mp3",
+      "file": "XC697680.mp3",
+      "quality": "A",
+      "license": "CC BY-NC-SA 4.0",
+      "callType": "call"
+    },
+    "halcyon-senegalensis": {
+      "key": "xeno-canto/XC780264",
+      "fileUrl": "https://xeno-canto.org/sounds/uploaded/CZDNDLXZWN/XC780264-19991210_04a1a_Kingfisher%2C-Woodland_Nambwe-Is%2C-Caprivi%2C-Namibia_XC_READY.mp3",
+      "file": "XC780264.mp3",
+      "quality": "A",
+      "license": "CC BY-NC-SA 4.0",
+      "callType": "song"
+    },
+    "hedydipna-collaris": {
+      "key": "xeno-canto/XC378029",
+      "fileUrl": "https://xeno-canto.org/sounds/uploaded/GQMCPIVNXX/XC378029-Collared%20Sunbird%20%282%29.mp3",
+      "file": "XC378029.mp3",
+      "quality": "A",
+      "license": "CC BY-NC-SA 4.0",
+      "callType": "call"
+    },
+    "hieraaetus-pennatus": {
+      "key": "xeno-canto/XC176712",
+      "fileUrl": "https://xeno-canto.org/sounds/uploaded/KIFILMEEEO/XC176712-Booted_Eagle_R1_0009.mp3",
+      "file": "XC176712.mp3",
+      "quality": "A",
+      "license": "CC BY-NC-SA 4.0",
+      "callType": "call"
+    },
+    "hieraaetus-wahlbergi": {
+      "key": "xeno-canto/XC881394",
+      "fileUrl": "https://xeno-canto.org/sounds/uploaded/OHDVJMHMQE/XC881394-20240307-073210_Wahlbergs-Eagle_Meru-NP_edited.wav",
+      "file": "XC881394.wav",
+      "quality": "B",
+      "license": "CC BY-NC-SA 4.0",
+      "callType": "call"
+    },
+    "himantopus-himantopus": {
+      "key": "xeno-canto/XC277591",
+      "fileUrl": "https://xeno-canto.org/sounds/uploaded/SGLTZLDXYI/XC277591-black-winged%20stilts.mp3",
+      "file": "XC277591.mp3",
+      "quality": "A",
+      "license": "CC BY-NC-SA 4.0",
+      "callType": "call"
+    },
+    "hippolais-icterina": {
+      "key": "xeno-canto/XC27125",
+      "fileUrl": "https://xeno-canto.org/sounds/uploaded/BPSDQEOJWG/HarmsangareHammarsudden1976.mp3",
+      "file": "XC27125.mp3",
+      "quality": "A",
+      "license": "CC BY-NC-SA 3.0",
+      "callType": "song"
+    },
+    "hippolais-olivetorum": {
+      "key": "xeno-canto/XC176955",
+      "fileUrl": "https://xeno-canto.org/sounds/uploaded/JPBSNBUUEF/XC176955-Olive-tree%20Warbler1.mp3",
+      "file": "XC176955.mp3",
+      "quality": "A",
+      "license": "CC BY-NC-SA 4.0",
+      "callType": "song"
+    },
+    "hirundo-albigularis": {
+      "key": "xeno-canto/XC523596",
+      "fileUrl": "https://xeno-canto.org/sounds/uploaded/SGLTZLDXYI/XC523596-white-throated%20swallows%20exc%20bbest.mp3",
+      "file": "XC523596.mp3",
+      "quality": "A",
+      "license": "CC BY-NC-SA 4.0",
+      "callType": "song"
+    },
+    "hirundo-dimidiata": {
+      "key": "xeno-canto/XC622640",
+      "fileUrl": "https://xeno-canto.org/sounds/uploaded/GQMCPIVNXX/XC622640-Pearl-breasted%20Swallow.mp3",
+      "file": "XC622640.mp3",
+      "quality": "B",
+      "license": "CC BY-NC-SA 4.0",
+      "callType": "call"
+    },
+    "hirundo-rustica": {
+      "key": "xeno-canto/XC46803",
+      "fileUrl": "https://xeno-canto.org/sounds/uploaded/BYLLSJRVDZ/Hirundo%20rustica_Barn%20Swallow_Albufera%20Mar%20Chiquita%20%28puente%20en%20la%20ruta%29_Mar%20Chiquita_Buenos%20Aires_Argentina%20a_Bernabe%20Lopez-Lanus.mp3",
+      "file": "XC46803.mp3",
+      "quality": "A",
+      "license": "CC BY-NC-SA 4.0",
+      "callType": "call"
+    },
+    "hirundo-smithii": {
+      "key": "xeno-canto/XC295234",
+      "fileUrl": "https://xeno-canto.org/sounds/uploaded/FNIOJOZADD/XC295234-WireTailedSwallow_Thailand_022015_call.mp3",
+      "file": "XC295234.mp3",
+      "quality": "A",
+      "license": "CC BY-NC-SA 4.0",
+      "callType": "call"
+    },
+    "hypargos-margaritatus": {
+      "key": "xeno-canto/XC815006",
+      "fileUrl": "https://xeno-canto.org/sounds/uploaded/UWFNNKHNAE/XC815006-20221214-Pink-throated-Twinspot-South-Africa-Mkhuze-Game-Reserve-Maarten-Sluijter-%281%29.mp3",
+      "file": "XC815006.mp3",
+      "quality": "A",
+      "license": "CC BY-NC-SA 4.0",
+      "callType": "call"
+    },
+    "icthyophaga-vocifer": {
+      "key": "xeno-canto/XC1149038",
+      "fileUrl": "https://xeno-canto.org/sounds/uploaded/YSGTQVRQZI/XC1149038-20260517_KNP_AKaramitsos_XA60_A026C224_260517YV_SLE_400HP_-3dB_comb.wav",
+      "file": "XC1149038.wav",
+      "quality": "B",
+      "license": "CC BY-NC-SA 4.0",
+      "callType": "call"
+    },
+    "iduna-natalensis": {
+      "key": "xeno-canto/XC292912",
+      "fileUrl": "https://xeno-canto.org/sounds/uploaded/TWAAJJHMEH/XC292912-Warbler%20DC%20Yellow_Sphinx_151123_37_A_edit2.mp3",
+      "file": "XC292912.mp3",
+      "quality": "A",
+      "license": "CC BY-NC-SA 4.0",
+      "callType": "song"
+    },
+    "indicator-indicator": {
+      "key": "xeno-canto/XC429103",
+      "fileUrl": "https://xeno-canto.org/sounds/uploaded/GQMCPIVNXX/XC429103-Greater%20Honeyguide.mp3",
+      "file": "XC429103.mp3",
+      "quality": "A",
+      "license": "CC BY-NC-SA 4.0",
+      "callType": "call"
+    },
+    "indicator-minor": {
+      "key": "xeno-canto/XC442035",
+      "fileUrl": "https://xeno-canto.org/sounds/uploaded/HMBDEWEZVS/XC442035-Indaba%20Hotel%20R%20Bay%2010.11.2018.mp3",
+      "file": "XC442035.mp3",
+      "quality": "A",
+      "license": "CC BY-NC-SA 4.0",
+      "callType": "call"
+    },
+    "indicator-variegatus": {
+      "key": "xeno-canto/XC532751",
+      "fileUrl": "https://xeno-canto.org/sounds/uploaded/FHQVLXJQKW/XC532751-Scaly-throated%20Honeyguide.mp3",
+      "file": "XC532751.mp3",
+      "quality": "A",
+      "license": "CC BY-NC-SA 4.0",
+      "callType": "call"
+    },
+    "ispidina-picta": {
+      "key": "xeno-canto/XC209955",
+      "fileUrl": "https://xeno-canto.org/sounds/uploaded/CDTGHVBGZP/XC209955-African%20Pygmy-Kingfisher2014-12-14-1.mp3",
+      "file": "XC209955.mp3",
+      "quality": "A",
+      "license": "CC BY-NC-SA 4.0",
+      "callType": "call"
+    },
+    "jynx-ruficollis": {
+      "key": "xeno-canto/XC342721",
+      "fileUrl": "https://xeno-canto.org/sounds/uploaded/GQMCPIVNXX/XC342721-Red-throated%20Wryneck2.xc.mp3",
+      "file": "XC342721.mp3",
+      "quality": "A",
+      "license": "CC BY-NC-SA 4.0",
+      "callType": "call"
+    },
+    "kaupifalco-monogrammicus": {
+      "key": "xeno-canto/XC975911",
+      "fileUrl": "https://xeno-canto.org/sounds/uploaded/YIKAQIVHQJ/XC975911-25408.-Lizard-Buzzard-%2B-Lesser-Honeyguide---Kiyanga%2C-Mitooma---25-FEB-2025---1.wav",
+      "file": "XC975911.wav",
+      "quality": "A",
+      "license": "CC BY-NC-SA 4.0",
+      "callType": "call"
+    },
+    "ketupa-lactea": {
+      "key": "xeno-canto/XC1007496",
+      "fileUrl": "https://xeno-canto.org/sounds/uploaded/YSGTQVRQZI/XC1007496-20240222_KNP_NSerpa_XA60_A001C113_240222HO_CANON_SLE_-3dBNORM.wav",
+      "file": "XC1007496.wav",
+      "quality": "A",
+      "license": "CC BY-NC-SA 4.0",
+      "callType": "call"
+    },
+    "lagonosticta-rhodopareia": {
+      "key": "xeno-canto/XC585252",
+      "fileUrl": "https://xeno-canto.org/sounds/uploaded/IIJAXHKSCC/XC585252-Jameson%27s%20Firefinch%20%28call%29%2020200711%2CNanzhilaPlains%2CKafueNP%2CZAMBIA.mp3",
+      "file": "XC585252.mp3",
+      "quality": "A",
+      "license": "CC BY-NC-SA 4.0",
+      "callType": "call"
+    },
+    "lagonosticta-rubricata": {
+      "key": "xeno-canto/XC952474",
+      "fileUrl": "https://xeno-canto.org/sounds/uploaded/EGCCECBTGC/XC952474-African-Firefinch-2024-05-24-13.05-ZOOM0226_MN.mp3",
+      "file": "XC952474.mp3",
+      "quality": "A",
+      "license": "CC BY-NC-SA 4.0",
+      "callType": "call"
+    },
+    "lagonosticta-senegala": {
+      "key": "xeno-canto/XC632302",
+      "fileUrl": "https://xeno-canto.org/sounds/uploaded/HMBDEWEZVS/XC632302-7%20Young%20RB%20FFinches.mp3",
+      "file": "XC632302.mp3",
+      "quality": "A",
+      "license": "CC BY-NC-SA 4.0",
+      "callType": "call"
+    },
+    "lamprotornis-australis": {
+      "key": "xeno-canto/XC299096",
+      "fileUrl": "https://xeno-canto.org/sounds/uploaded/SGLTZLDXYI/XC299096-burchell%27s%20starling%20whk.mp3",
+      "file": "XC299096.mp3",
+      "quality": "A",
+      "license": "CC BY-NC-SA 4.0",
+      "callType": "call"
+    },
+    "lamprotornis-chalybaeus": {
+      "key": "xeno-canto/XC584694",
+      "fileUrl": "https://xeno-canto.org/sounds/uploaded/IIJAXHKSCC/XC584694-Greater%20Blue-eared%20starling%20%28call%29%2020200722%2CBangweuluWetlands%2CZAMBIA_2.mp3",
+      "file": "XC584694.mp3",
+      "quality": "A",
+      "license": "CC BY-NC-SA 4.0",
+      "callType": "call"
+    },
+    "lamprotornis-mevesii": {
+      "key": "xeno-canto/XC213639",
+      "fileUrl": "https://xeno-canto.org/sounds/uploaded/XVXHTBZRRW/XC213639-Meve%27s%20Starling%202014_02_11%207-32%20Maun.mp3",
+      "file": "XC213639.mp3",
+      "quality": "A",
+      "license": "CC BY-NC-SA 4.0",
+      "callType": "call"
+    },
+    "lamprotornis-nitens": {
+      "key": "xeno-canto/XC1037326",
+      "fileUrl": "https://xeno-canto.org/sounds/uploaded/VWVVYWSUYS/XC1037326-Registrazione-18-Lamprotornis-visto.mp3",
+      "file": "XC1037326.mp3",
+      "quality": "A",
+      "license": "CC BY-NC-SA 4.0",
+      "callType": "song"
+    },
+    "laniarius-atrococcineus": {
+      "key": "xeno-canto/XC204670",
+      "fileUrl": "https://xeno-canto.org/sounds/uploaded/LWQXRZHFCU/XC204670-2014-11-28_16.51_01-cb-shrike.mp3",
+      "file": "XC204670.mp3",
+      "quality": "A",
+      "license": "CC BY-NC-SA 4.0",
+      "callType": "call"
+    },
+    "laniarius-ferrugineus": {
+      "key": "xeno-canto/XC331290",
+      "fileUrl": "https://xeno-canto.org/sounds/uploaded/EYSMZJZJYY/XC331290-KLCP1.mp3",
+      "file": "XC331290.mp3",
+      "quality": "A",
+      "license": "CC BY-NC-SA 4.0",
+      "callType": "call"
+    },
+    "laniarius-major": {
+      "key": "xeno-canto/XC259660",
+      "fileUrl": "https://xeno-canto.org/sounds/uploaded/LFMDRDHWTW/XC259660-TropicalBoubou%20120715.mp3",
+      "file": "XC259660.mp3",
+      "quality": "A",
+      "license": "CC BY-NC-SA 4.0",
+      "callType": "call"
+    },
+    "lanius-collaris": {
+      "key": "xeno-canto/XC309835",
+      "fileUrl": "https://xeno-canto.org/sounds/uploaded/SGLTZLDXYI/XC309835-Common%20fiscal%20exc.mp3",
+      "file": "XC309835.mp3",
+      "quality": "A",
+      "license": "CC BY-NC-SA 4.0",
+      "callType": "call"
+    },
+    "lanius-collurio": {
+      "key": "xeno-canto/XC27109",
+      "fileUrl": "https://xeno-canto.org/sounds/uploaded/BPSDQEOJWG/Tornskatafamiljegrupp.mp3",
+      "file": "XC27109.mp3",
+      "quality": "A",
+      "license": "CC BY-NC-SA 3.0",
+      "callType": "call"
+    },
+    "lanius-minor": {
+      "key": "xeno-canto/XC145242",
+      "fileUrl": "https://xeno-canto.org/sounds/uploaded/YEEQSGIKMT/XC145242-Kleine%20Klapekster_20130708_07_roep.mp3",
+      "file": "XC145242.mp3",
+      "quality": "A",
+      "license": "CC BY-NC-SA 3.0",
+      "callType": "call"
+    },
+    "leptoptilos-crumenifer": {
+      "key": "xeno-canto/XC1093586",
+      "fileUrl": "https://xeno-canto.org/sounds/uploaded/EDRTTPSCEN/XC1093586-Marabout-260213-1100-1CA-Murchinson-falls-Ouganda_012.mp3",
+      "file": "XC1093586.mp3",
+      "quality": "A",
+      "license": "CC BY-NC-SA 4.0",
+      "callType": "call"
+    },
+    "lissotis-melanogaster": {
+      "key": "xeno-canto/XC1052028",
+      "fileUrl": "https://xeno-canto.org/sounds/uploaded/THHNKSHUMO/XC1052028-007-Outarde-%C3%A0-ventre-noir-0154.1.mp3",
+      "file": "XC1052028.mp3",
+      "quality": "A",
+      "license": "CC BY-NC-SA 4.0",
+      "callType": "call"
+    },
+    "locustella-fluviatilis": {
+      "key": "xeno-canto/XC575434",
+      "fileUrl": "https://xeno-canto.org/sounds/uploaded/SDPCHKOHRH/XC575434-Locustelle%20fluviatile%20vol%20%2B.mp3",
+      "file": "XC575434.mp3",
+      "quality": "A",
+      "license": "CC BY-NC-SA 4.0",
+      "callType": "call"
+    },
+    "lophaetus-occipitalis": {
+      "key": "xeno-canto/XC449486",
+      "fileUrl": "https://xeno-canto.org/sounds/uploaded/ISPFAAOURA/XC449486-Long-crested%20Eagle%2C%20Clarens%2C%20Dec%202018_0411.mp3",
+      "file": "XC449486.mp3",
+      "quality": "A",
+      "license": "CC BY-NC-SA 4.0",
+      "callType": "call"
+    },
+    "lophoceros-alboterminatus": {
+      "key": "xeno-canto/XC444684",
+      "fileUrl": "https://xeno-canto.org/sounds/uploaded/ITRQTFVLNT/XC444684-Crowned%20Hornbill_call_Burnt%20Forest_10Nov2018_0940_J.Bradley.mp3",
+      "file": "XC444684.mp3",
+      "quality": "A",
+      "license": "CC BY-NC-SA 4.0",
+      "callType": "call"
+    },
+    "lophoceros-nasutus": {
+      "key": "xeno-canto/XC1080078",
+      "fileUrl": "https://xeno-canto.org/sounds/uploaded/QXGZDUUJUO/XC1080078-Africa-grey-hornbill--Kruger-Skukuza-260125-091311_Tr1-.mp3",
+      "file": "XC1080078.mp3",
+      "quality": "A",
+      "license": "CC BY-NC-SA 4.0",
+      "callType": "call"
+    },
+    "lophotis-ruficrista": {
+      "key": "xeno-canto/XC209351",
+      "fileUrl": "https://xeno-canto.org/sounds/uploaded/LWQXRZHFCU/XC209351-2015-01-04_05.58%20RC%20Korhaan.mp3",
+      "file": "XC209351.mp3",
+      "quality": "A",
+      "license": "CC BY-NC-SA 4.0",
+      "callType": "call"
+    },
+    "lybius-torquatus": {
+      "key": "xeno-canto/XC1137920",
+      "fileUrl": "https://xeno-canto.org/sounds/uploaded/YSGTQVRQZI/XC1137920-20260510_KNP_AKaramitsos_XA60_A025C030_260510PV_SLE_-3dB_barbet.mp3",
+      "file": "XC1137920.mp3",
+      "quality": "A",
+      "license": "CC BY-NC-SA 4.0",
+      "callType": "duet"
+    },
+    "macheiramphus-alcinus": {
+      "key": "xeno-canto/XC244201",
+      "fileUrl": "https://xeno-canto.org/sounds/uploaded/PWDLINYMKL/XC244201-Bat%20Hawk1GT2015.mp3",
+      "file": "XC244201.mp3",
+      "quality": "B",
+      "license": "CC BY-NC-SA 4.0",
+      "callType": "call"
+    },
+    "macronyx-croceus": {
+      "key": "xeno-canto/XC1011803",
+      "fileUrl": "https://xeno-canto.org/sounds/uploaded/SWDUSZIBPR/XC1011803-MLB_250508_MACCRO1_10.6kmSW_Bikourou_Ngounie%CC%81_GABON.mp3",
+      "file": "XC1011803.mp3",
+      "quality": "A",
+      "license": "CC BY-NC-SA 4.0",
+      "callType": "call"
+    },
+    "malaconotus-blanchoti": {
+      "key": "xeno-canto/XC382958",
+      "fileUrl": "https://xeno-canto.org/sounds/uploaded/TWAAJJHMEH/XC382958-Shrike%20GH%20Bush_Mjejane_170709_17_B_edit.mp3",
+      "file": "XC382958.mp3",
+      "quality": "A",
+      "license": "CC BY-NC-SA 4.0",
+      "callType": "call"
+    },
+    "megaceryle-maxima": {
+      "key": "xeno-canto/XC1152464",
+      "fileUrl": "https://xeno-canto.org/sounds/uploaded/YSGTQVRQZI/XC1152464-20260520_KNP_AKaramitsos_XA60_A028C016_260520Y4_SLE_250HP_-3dB_Giant-Kingfisher.wav",
+      "file": "XC1152464.wav",
+      "quality": "A",
+      "license": "CC BY-NC-SA 4.0",
+      "callType": "call"
+    },
+    "melaenornis-pammelaina": {
+      "key": "xeno-canto/XC307193",
+      "fileUrl": "https://xeno-canto.org/sounds/uploaded/TWAAJJHMEH/XC307193-Flycatcher%20S%20Black%20beg_Vaalkop_151224_15_A.mp3",
+      "file": "XC307193.mp3",
+      "quality": "A",
+      "license": "CC BY-NC-SA 4.0",
+      "callType": "call"
+    },
+    "melaniparus-niger": {
+      "key": "xeno-canto/XC368162",
+      "fileUrl": "https://xeno-canto.org/sounds/uploaded/RFRTVEHIZX/XC368162-170331_SouthernBlackTit_SabiePark_OC.mp3",
+      "file": "XC368162.mp3",
+      "quality": "A",
+      "license": "CC BY-NC-SA 4.0",
+      "callType": "call"
+    },
+    "melierax-metabates": {
+      "key": "xeno-canto/XC589156",
+      "fileUrl": "https://xeno-canto.org/sounds/uploaded/MVAUXAWNUX/XC589156-20200917_104631_darkchantghawk1.mp3",
+      "file": "XC589156.mp3",
+      "quality": "B",
+      "license": "CC BY-NC-SA 4.0",
+      "callType": "call"
+    },
+    "merops-apiaster": {
+      "key": "xeno-canto/XC181360",
+      "fileUrl": "https://xeno-canto.org/sounds/uploaded/ZNCDXTUOFL/XC181360-Merops_apiaster_Poland_Jarek_Matusiak_20140607_09.mp3",
+      "file": "XC181360.mp3",
+      "quality": "A",
+      "license": "CC BY-NC-SA 4.0",
+      "callType": "call"
+    },
+    "merops-bullockoides": {
+      "key": "xeno-canto/XC1149412",
+      "fileUrl": "https://xeno-canto.org/sounds/uploaded/YSGTQVRQZI/XC1149412-20260519_KNP_AKaramitsos_XA60_A027C058_26051986_SLE_1000HP_-3dB_Bee-eater.mp3",
+      "file": "XC1149412.mp3",
+      "quality": "A",
+      "license": "CC BY-NC-SA 4.0",
+      "callType": "call"
+    },
+    "merops-hirundineus": {
+      "key": "xeno-canto/XC475304",
+      "fileUrl": "https://xeno-canto.org/sounds/uploaded/RGSEIIJGHA/XC475304-SwallowtailedBeeeater_Kafountine_190517_0197_edited.mp3",
+      "file": "XC475304.mp3",
+      "quality": "A",
+      "license": "CC BY-NC-SA 4.0",
+      "callType": "call"
+    },
+    "merops-nubicoides": {
+      "key": "xeno-canto/XC1188475",
+      "fileUrl": "https://xeno-canto.org/sounds/uploaded/QXGZDUUJUO/XC1188475-260126-101336_Tr1-Carmine-bee-eater-Kruger-Skukuza.mp3",
+      "file": "XC1188475.mp3",
+      "quality": "A",
+      "license": "CC BY-NC-SA 4.0",
+      "callType": "call"
+    },
+    "merops-persicus": {
+      "key": "xeno-canto/XC133400",
+      "fileUrl": "https://xeno-canto.org/sounds/uploaded/KIFILMEEEO/XC133400-Blue_cheeked%20Bee_eater_R1_0029.mp3",
+      "file": "XC133400.mp3",
+      "quality": "A",
+      "license": "CC BY-NC-SA 3.0",
+      "callType": "call"
+    },
+    "merops-pusillus": {
+      "key": "xeno-canto/XC651027",
+      "fileUrl": "https://xeno-canto.org/sounds/uploaded/HMBDEWEZVS/XC651027-2%20LB%20Eaters.mp3",
+      "file": "XC651027.mp3",
+      "quality": "A",
+      "license": "CC BY-NC-SA 4.0",
+      "callType": "call"
+    },
+    "microcarbo-africanus": {
+      "key": "xeno-canto/XC860402",
+      "fileUrl": "https://xeno-canto.org/sounds/uploaded/MVAUXAWNUX/XC860402-ReedCormo_240102-1006.mp3",
+      "file": "XC860402.mp3",
+      "quality": "A",
+      "license": "CC BY-NC-SA 4.0",
+      "callType": "call"
+    },
+    "micronisus-gabar": {
+      "key": "xeno-canto/XC1100393",
+      "fileUrl": "https://xeno-canto.org/sounds/uploaded/DUPOCHKKUC/XC1100393-260124_1013ZaagkuildriftWitkruisSperwer.mp3",
+      "file": "XC1100393.mp3",
+      "quality": "A",
+      "license": "CC BY-NC-SA 4.0",
+      "callType": "call"
+    },
+    "microparra-capensis": {
+      "key": "xeno-canto/XC585195-cleaned.mp3",
+      "fileUrl": "https://xeno-canto.org/sounds/uploaded/IIJAXHKSCC/XC585195-Lesser%20Jacana%20%28flushed%29%2020200621%2CKasankaNP%2CZAMBIA.mp3",
+      "file": "XC585195.mp3",
+      "quality": "C",
+      "license": "CC BY-NC-SA 4.0",
+      "callType": "call"
+    },
+    "milvus-migrans": {
+      "key": "xeno-canto/XC168353",
+      "fileUrl": "https://xeno-canto.org/sounds/uploaded/ZXGYSIOPJJ/XC168353-black%20kite%20a131221_001xeno.mp3",
+      "file": "XC168353.mp3",
+      "quality": "A",
+      "license": "CC BY-NC-SA 3.0",
+      "callType": "call"
+    },
+    "mirafra-passerina": {
+      "key": "xeno-canto/XC203723",
+      "fileUrl": "https://xeno-canto.org/sounds/uploaded/QQQGKJQCCM/XC203723-monotenouslark.mp3",
+      "file": "XC203723.mp3",
+      "quality": "A",
+      "license": "CC BY-NC-SA 4.0",
+      "callType": "song"
+    },
+    "monticola-rupestris": {
+      "key": "xeno-canto/XC247950",
+      "fileUrl": "https://xeno-canto.org/sounds/uploaded/SGLTZLDXYI/XC247950-Cape%20rock-thrush%20calling.mp3",
+      "file": "XC247950.mp3",
+      "quality": "A",
+      "license": "CC BY-NC-SA 4.0",
+      "callType": "song"
+    },
+    "motacilla-aguimp": {
+      "key": "xeno-canto/XC620809",
+      "fileUrl": "https://xeno-canto.org/sounds/uploaded/HMBDEWEZVS/XC620809-5%20Good%20P%20Wagtail.mp3",
+      "file": "XC620809.mp3",
+      "quality": "A",
+      "license": "CC BY-NC-SA 4.0",
+      "callType": "call"
+    },
+    "motacilla-capensis": {
+      "key": "xeno-canto/XC1079741",
+      "fileUrl": "https://xeno-canto.org/sounds/uploaded/YSGTQVRQZI/XC1079741-20260212_DV_AKaramitsos_XA60_A015C134_260212SR_SLE_250HP_-3dB_split_comb.mp3",
+      "file": "XC1079741.mp3",
+      "quality": "A",
+      "license": "CC BY-NC-SA 4.0",
+      "callType": "call"
+    },
+    "motacilla-clara": {
+      "key": "xeno-canto/XC490751",
+      "fileUrl": "https://xeno-canto.org/sounds/uploaded/GQMCPIVNXX/XC490751-Mountain%20Wagtail%20%283%29.mp3",
+      "file": "XC490751.mp3",
+      "quality": "A",
+      "license": "CC BY-NC-SA 4.0",
+      "callType": "call"
+    },
+    "motacilla-flava": {
+      "key": "xeno-canto/XC140811",
+      "fileUrl": "https://xeno-canto.org/sounds/uploaded/RFGQDPLDEC/XC140811-Gulerle%20%20XC%20Gr%C3%B8nntj%C3%B8nnan%20-Kvikne130615_092914_AERY0406.mp3",
+      "file": "XC140811.mp3",
+      "quality": "A",
+      "license": "CC BY-NC-SA 3.0",
+      "callType": "call"
+    },
+    "muscicapa-adusta": {
+      "key": "xeno-canto/XC1163086",
+      "fileUrl": "https://xeno-canto.org/sounds/uploaded/WSTMKZEHKY/XC1163086-260222-081842-ADFlycatcher-A.mp3",
+      "file": "XC1163086.mp3",
+      "quality": "A",
+      "license": "CC BY-NC-SA 4.0",
+      "callType": "call"
+    },
+    "mycteria-ibis": {
+      "key": "xeno-canto/XC337857",
+      "fileUrl": "https://xeno-canto.org/sounds/uploaded/RGSEIIJGHA/XC337857-YellowbilledStork_Ziguinchor_161012_1787_edited.mp3",
+      "file": "XC337857.mp3",
+      "quality": "B",
+      "license": "CC BY-NC-SA 4.0",
+      "callType": "call"
+    },
+    "myrmecocichla-arnotti": {
+      "key": "xeno-canto/XC625567",
+      "fileUrl": "https://xeno-canto.org/sounds/uploaded/LWQXRZHFCU/XC625567-2021-02-18%2004_30-Arnots-Chat.mp3",
+      "file": "XC625567.mp3",
+      "quality": "A",
+      "license": "CC BY-NC-SA 4.0",
+      "callType": "call"
+    },
+    "neafrapus-boehmi": {
+      "key": "xeno-canto/XC688818-cleaned.mp3",
+      "fileUrl": "https://xeno-canto.org/sounds/uploaded/GABAHHYWYR/XC688818-VOC_211024-3124%20Bohm%27s%20Spinetail%20ED%20UP.mp3",
+      "file": "XC688818.mp3",
+      "quality": "D",
+      "license": "CC BY-NC-SA 4.0",
+      "callType": "call"
+    },
+    "nectarinia-famosa": {
+      "key": "xeno-canto/XC342018",
+      "fileUrl": "https://xeno-canto.org/sounds/uploaded/GQMCPIVNXX/XC342018-Malachite%20Sunbird.xc.mp3",
+      "file": "XC342018.mp3",
+      "quality": "A",
+      "license": "CC BY-NC-SA 4.0",
+      "callType": "call"
+    },
+    "neophedina-cincta": {
+      "key": "xeno-canto/XC459468",
+      "fileUrl": "https://xeno-canto.org/sounds/uploaded/KHGERYPVPK/XC459468-20181221_050946_Banded_martin.mp3",
+      "file": "XC459468.mp3",
+      "quality": "A",
+      "license": "CC BY-NC-SA 4.0",
+      "callType": "song"
+    },
+    "nettapus-auritus": {
+      "key": "xeno-canto/XC267474",
+      "fileUrl": "https://xeno-canto.org/sounds/uploaded/CDTGHVBGZP/XC267474-African%20Pygmy-Goose2015-1-9-4.mp3",
+      "file": "XC267474.mp3",
+      "quality": "A",
+      "license": "CC BY-NC-SA 4.0",
+      "callType": "call"
+    },
+    "nicator-gularis": {
+      "key": "xeno-canto/XC652445",
+      "fileUrl": "https://xeno-canto.org/sounds/uploaded/LWQXRZHFCU/XC652445-2021-05-14%2007_10-nicator.mp3",
+      "file": "XC652445.mp3",
+      "quality": "A",
+      "license": "CC BY-NC-SA 4.0",
+      "callType": "call"
+    },
+    "nilaus-afer": {
+      "key": "xeno-canto/XC441144",
+      "fileUrl": "https://xeno-canto.org/sounds/uploaded/HMBDEWEZVS/XC441144-Brubru%20FM%203.1.2018.mp3",
+      "file": "XC441144.mp3",
+      "quality": "A",
+      "license": "CC BY-NC-SA 4.0",
+      "callType": "call"
+    },
+    "notopholia-corusca": {
+      "key": "xeno-canto/XC285744",
+      "fileUrl": "https://xeno-canto.org/sounds/uploaded/SGLTZLDXYI/XC285744-Black-bellied%20starling%20imitating%20drongo%20-%20Copy.mp3",
+      "file": "XC285744.mp3",
+      "quality": "A",
+      "license": "CC BY-NC-SA 4.0",
+      "callType": "call"
+    },
+    "numida-meleagris": {
+      "key": "xeno-canto/XC126240",
+      "fileUrl": "https://xeno-canto.org/sounds/uploaded/HZKCNRIPRH/XC126240-HelmetedGuinneefowl04Jan2013BenfontijnFreeStateSouthAfrika.mp3",
+      "file": "XC126240.mp3",
+      "quality": "A",
+      "license": "CC BY-NC-SA 3.0",
+      "callType": "call"
+    },
+    "nycticorax-nycticorax": {
+      "key": "xeno-canto/XC505928",
+      "fileUrl": "https://xeno-canto.org/sounds/uploaded/SGLTZLDXYI/XC505928-Black-crowned%20night%20heron.mp3",
+      "file": "XC505928.mp3",
+      "quality": "A",
+      "license": "CC BY-NC-SA 4.0",
+      "callType": "call"
+    },
+    "oena-capensis": {
+      "key": "xeno-canto/XC496248",
+      "fileUrl": "https://xeno-canto.org/sounds/uploaded/HMBDEWEZVS/XC496248-10%20Nam%20Dove.mp3",
+      "file": "XC496248.mp3",
+      "quality": "A",
+      "license": "CC BY-NC-SA 4.0",
+      "callType": "call"
+    },
+    "oenanthe-familiaris": {
+      "key": "xeno-canto/XC1009198",
+      "fileUrl": "https://xeno-canto.org/sounds/uploaded/IQGZKQAMKT/XC1009198-Chat_Familiar_LeDomaine_20250618_NR10.mp3",
+      "file": "XC1009198.mp3",
+      "quality": "A",
+      "license": "CC BY-NC-SA 4.0",
+      "callType": "call"
+    },
+    "oenanthe-pileata": {
+      "key": "xeno-canto/XC596088",
+      "fileUrl": "https://xeno-canto.org/sounds/uploaded/GQMCPIVNXX/XC596088-Capped%20Wheatear%20%282%29.mp3",
+      "file": "XC596088.mp3",
+      "quality": "A",
+      "license": "CC BY-NC-SA 4.0",
+      "callType": "song"
+    },
+    "onychognathus-morio": {
+      "key": "xeno-canto/XC252685",
+      "fileUrl": "https://xeno-canto.org/sounds/uploaded/SGLTZLDXYI/XC252685-Red-winged%20starlings%20exc.mp3",
+      "file": "XC252685.mp3",
+      "quality": "A",
+      "license": "CC BY-NC-SA 4.0",
+      "callType": "call"
+    },
+    "oriolus-auratus": {
+      "key": "xeno-canto/XC660762",
+      "fileUrl": "https://xeno-canto.org/sounds/uploaded/IIJAXHKSCC/XC660762-African%20Golden%20Oriole%20%28call%29%2020201206%2CMutinondo%2CMuchinga%2CZAMBIA.mp3",
+      "file": "XC660762.mp3",
+      "quality": "A",
+      "license": "CC BY-NC-SA 4.0",
+      "callType": "call"
+    },
+    "oriolus-larvatus": {
+      "key": "xeno-canto/XC1149414",
+      "fileUrl": "https://xeno-canto.org/sounds/uploaded/YSGTQVRQZI/XC1149414-20260519_KNP_AKaramitsos_iPh12_102058_SLE_250HP_-3dB_comb_oriole.mp3",
+      "file": "XC1149414.mp3",
+      "quality": "A",
+      "license": "CC BY-NC-SA 4.0",
+      "callType": "call"
+    },
+    "oriolus-oriolus": {
+      "key": "xeno-canto/XC244231",
+      "fileUrl": "https://xeno-canto.org/sounds/uploaded/PNYKOPBQBQ/XC244231-ORIORI15h01m19s19may2015%20%282%29.mp3",
+      "file": "XC244231.mp3",
+      "quality": "A",
+      "license": "CC BY-NC-SA 4.0",
+      "callType": "call"
+    },
+    "ortygornis-sephaena": {
+      "key": "xeno-canto/XC210091",
+      "fileUrl": "https://xeno-canto.org/sounds/uploaded/XKXDFWNSPA/XC210091-Crested%20Francolin%201.mp3",
+      "file": "XC210091.mp3",
+      "quality": "A",
+      "license": "CC BY-NC-SA 4.0",
+      "callType": "call"
+    },
+    "ortygospiza-atricollis": {
+      "key": "xeno-canto/XC811127",
+      "fileUrl": "https://xeno-canto.org/sounds/uploaded/JDCTKFMBKV/XC811127-QuailfinchAfrican_GoedehoopJFpad_20230624_-29.3668_25.8735.mp3",
+      "file": "XC811127.mp3",
+      "quality": "A",
+      "license": "CC BY-NC-SA 4.0",
+      "callType": "call"
+    },
+    "otus-senegalensis": {
+      "key": "xeno-canto/XC361285",
+      "fileUrl": "https://xeno-canto.org/sounds/uploaded/PZJJDRPXPK/XC361285-African%20Scops-Owl%20%28Otus%20senegalensis%29.mp3",
+      "file": "XC361285.mp3",
+      "quality": "A",
+      "license": "CC BY-NC-SA 4.0",
+      "callType": "call"
+    },
+    "pachycoccyx-audeberti": {
+      "key": "xeno-canto/XC513828",
+      "fileUrl": "https://xeno-canto.org/sounds/uploaded/ISPFAAOURA/XC513828-MVI_1127%20Thick-billed%20Cuckoo.mp3",
+      "file": "XC513828.mp3",
+      "quality": "A",
+      "license": "CC BY-NC-SA 4.0",
+      "callType": "song"
+    },
+    "pandion-haliaetus": {
+      "key": "xeno-canto/XC143656",
+      "fileUrl": "https://xeno-canto.org/sounds/uploaded/RFTXRYBVBX/XC143656-Osprey%20FL%2C%20Orlando%20Wetlands%2C%20July%2018%2C%202013%2C%200703%20AM.mp3",
+      "file": "XC143656.mp3",
+      "quality": "A",
+      "license": "CC BY-NC-SA 3.0",
+      "callType": "call"
+    },
+    "paragallinula-angulata": {
+      "key": "xeno-canto/XC407075",
+      "fileUrl": "https://xeno-canto.org/sounds/uploaded/XMZZQLHWHS/XC407075-DR0000_0169.mp3",
+      "file": "XC407075.mp3",
+      "quality": "A",
+      "license": "CC BY-NC-SA 4.0",
+      "callType": "call"
+    },
+    "passer-diffusus": {
+      "key": "xeno-canto/XC526375",
+      "fileUrl": "https://xeno-canto.org/sounds/uploaded/DNKBTPCMSQ/XC526375-Southern%20Grey-headed%20Sparrow%20200210-054715.mp3",
+      "file": "XC526375.mp3",
+      "quality": "A",
+      "license": "CC BY-NC-SA 4.0",
+      "callType": "call"
+    },
+    "passer-domesticus": {
+      "key": "xeno-canto/XC444806",
+      "fileUrl": "https://xeno-canto.org/sounds/uploaded/HMBDEWEZVS/XC444806-Proper%20House%20Sparrow.mp3",
+      "file": "XC444806.mp3",
+      "quality": "A",
+      "license": "CC BY-NC-SA 4.0",
+      "callType": "call"
+    },
+    "passer-melanurus": {
+      "key": "xeno-canto/XC126129",
+      "fileUrl": "https://xeno-canto.org/sounds/uploaded/HZKCNRIPRH/XC126129-CapeSparrowMale22Jan2013BenfontijnFreeStateSouthAfrika.mp3",
+      "file": "XC126129.mp3",
+      "quality": "A",
+      "license": "CC BY-NC-SA 3.0",
+      "callType": "call"
+    },
+    "pelecanus-onocrotalus": {
+      "key": "xeno-canto/XC343693",
+      "fileUrl": "https://xeno-canto.org/sounds/uploaded/RGSEIIJGHA/XC343693-GreatWhitePelican_Djoudj_161117_1896_edited.mp3",
+      "file": "XC343693.mp3",
+      "quality": "A",
+      "license": "CC BY-NC-SA 4.0",
+      "callType": "call"
+    },
+    "pelecanus-rufescens": {
+      "key": "xeno-canto/XC862719",
+      "fileUrl": "https://xeno-canto.org/sounds/uploaded/EDRTTPSCEN/XC862719-Pelican-gris-231215-0700-1CB-Senegal-Kasel-MixPre32-225.mp3",
+      "file": "XC862719.mp3",
+      "quality": "B",
+      "license": "CC BY-NC-SA 4.0",
+      "callType": "call"
+    },
+    "pernis-apivorus": {
+      "key": "xeno-canto/XC154438",
+      "fileUrl": "https://xeno-canto.org/sounds/uploaded/EHAHTZIMID/XC154438-PEA%2015-08-2013.mp3",
+      "file": "XC154438.mp3",
+      "quality": "A",
+      "license": "CC BY-NC-SA 3.0",
+      "callType": "call"
+    },
+    "phalacrocorax-carbo": {
+      "key": "xeno-canto/XC323326",
+      "fileUrl": "https://xeno-canto.org/sounds/uploaded/TWAAJJHMEH/XC323326-Cormorant%20WB_Mjejane_160618_11_A.mp3",
+      "file": "XC323326.mp3",
+      "quality": "A",
+      "license": "CC BY-NC-SA 4.0",
+      "callType": "call"
+    },
+    "phoeniconaias-minor": {
+      "key": "xeno-canto/XC267539",
+      "fileUrl": "https://xeno-canto.org/sounds/uploaded/CDTGHVBGZP/XC267539-Lesser%20Flamingo2014-12-22-2.mp3",
+      "file": "XC267539.mp3",
+      "quality": "A",
+      "license": "CC BY-NC-SA 4.0",
+      "callType": "call"
+    },
+    "phoenicopterus-roseus": {
+      "key": "xeno-canto/XC135154",
+      "fileUrl": "https://xeno-canto.org/sounds/uploaded/TFEVTCGLWH/XC135154-Rosaflamingo_Rufe_Oman_130208_LS_30691.mp3",
+      "file": "XC135154.mp3",
+      "quality": "A",
+      "license": "CC BY-NC-SA 3.0",
+      "callType": "call"
+    },
+    "phoeniculus-purpureus": {
+      "key": "xeno-canto/XC301399",
+      "fileUrl": "https://xeno-canto.org/sounds/uploaded/SGLTZLDXYI/XC301399-Green%20Wood-hoopoe.mp3",
+      "file": "XC301399.mp3",
+      "quality": "A",
+      "license": "CC BY-NC-SA 4.0",
+      "callType": "call"
+    },
+    "phyllastrephus-flavostriatus": {
+      "key": "xeno-canto/XC1082530",
+      "fileUrl": "https://xeno-canto.org/sounds/uploaded/RGSEIIJGHA/XC1082530-YellowstreakedGreenbul_Kibira_260221_4975_edited.mp3",
+      "file": "XC1082530.mp3",
+      "quality": "A",
+      "license": "CC BY-NC-SA 4.0",
+      "callType": "alarm"
+    },
+    "phyllastrephus-terrestris": {
+      "key": "xeno-canto/XC252816",
+      "fileUrl": "https://xeno-canto.org/sounds/uploaded/SGLTZLDXYI/XC252816-Terrestrial%20brownbuls.mp3",
+      "file": "XC252816.mp3",
+      "quality": "A",
+      "license": "CC BY-NC-SA 4.0",
+      "callType": "call"
+    },
+    "phylloscopus-ruficapilla": {
+      "key": "xeno-canto/XC424827",
+      "fileUrl": "https://xeno-canto.org/sounds/uploaded/SGLTZLDXYI/XC424827-Yellow-throated%20Woodland%20Warbler%20exc%20wm.mp3",
+      "file": "XC424827.mp3",
+      "quality": "A",
+      "license": "CC BY-NC-SA 4.0",
+      "callType": "song"
+    },
+    "phylloscopus-trochilus": {
+      "key": "xeno-canto/XC364547",
+      "fileUrl": "https://xeno-canto.org/sounds/uploaded/TWAAJJHMEH/XC364547-Warbler%20Willow_VK_161224_13_B_edit.mp3",
+      "file": "XC364547.mp3",
+      "quality": "A",
+      "license": "CC BY-NC-SA 4.0",
+      "callType": "song"
+    },
+    "platalea-alba": {
+      "key": "xeno-canto/XC385073",
+      "fileUrl": "https://xeno-canto.org/sounds/uploaded/GQMCPIVNXX/XC385073-African%20Spoonbill.mp3",
+      "file": "XC385073.mp3",
+      "quality": "A",
+      "license": "CC BY-NC-SA 4.0",
+      "callType": "call"
+    },
+    "platysteira-peltata": {
+      "key": "xeno-canto/XC1185110",
+      "fileUrl": "https://xeno-canto.org/sounds/uploaded/CQARALZBNN/XC1185110-Black-throated-wattle-eye-A-song-260301_2186.mp3",
+      "file": "XC1185110.mp3",
+      "quality": "A",
+      "license": "CC BY-NC-SA 4.0",
+      "callType": "song"
+    },
+    "plectropterus-gambensis": {
+      "key": "xeno-canto/XC126343",
+      "fileUrl": "https://xeno-canto.org/sounds/uploaded/HZKCNRIPRH/XC126343-SpurWingedGoose21Jan2013BenfontijnFreeStateSouthAfrika.mp3",
+      "file": "XC126343.mp3",
+      "quality": "A",
+      "license": "CC BY-NC-SA 3.0",
+      "callType": "call"
+    },
+    "plegadis-falcinellus": {
+      "key": "xeno-canto/XC108823",
+      "fileUrl": "https://xeno-canto.org/sounds/uploaded/CDTGHVBGZP/Glossy%20Ibis2012-5-22-3rookery.mp3",
+      "file": "XC108823.mp3",
+      "quality": "A",
+      "license": "CC BY-NC-SA 3.0",
+      "callType": "call"
+    },
+    "plocepasser-mahali": {
+      "key": "xeno-canto/XC459505",
+      "fileUrl": "https://xeno-canto.org/sounds/uploaded/KHGERYPVPK/XC459505-20181223_165720_white-browed_weaver.mp3",
+      "file": "XC459505.mp3",
+      "quality": "A",
+      "license": "CC BY-NC-SA 4.0",
+      "callType": "call"
+    },
+    "ploceus-capensis": {
+      "key": "xeno-canto/XC1087110",
+      "fileUrl": "https://xeno-canto.org/sounds/uploaded/YSGTQVRQZI/XC1087110-20260301_DV_AKaramitsos_XA60_A016C219_260301V2_SLE_250HP_-3dB.mp3",
+      "file": "XC1087110.mp3",
+      "quality": "A",
+      "license": "CC BY-NC-SA 4.0",
+      "callType": "call"
+    },
+    "ploceus-cucullatus": {
+      "key": "xeno-canto/XC1080073",
+      "fileUrl": "https://xeno-canto.org/sounds/uploaded/QXGZDUUJUO/XC1080073-Village-weaver--Kruger-Skukuza-260125-173715_Tr1-.mp3",
+      "file": "XC1080073.mp3",
+      "quality": "A",
+      "license": "CC BY-NC-SA 4.0",
+      "callType": "call"
+    },
+    "ploceus-intermedius": {
+      "key": "xeno-canto/XC153490",
+      "fileUrl": "https://xeno-canto.org/sounds/uploaded/PTYTXQRLSZ/XC153490-1027_072820_LesserMaskedWeaver_edt.mp3",
+      "file": "XC153490.mp3",
+      "quality": "A",
+      "license": "CC BY-NC-SA 3.0",
+      "callType": "call"
+    },
+    "ploceus-ocularis": {
+      "key": "xeno-canto/XC1149077",
+      "fileUrl": "https://xeno-canto.org/sounds/uploaded/YSGTQVRQZI/XC1149077-20260518_KNP_AKaramitsos_XA60_A027C004_260518AS_SLE_-3dB_Weaver.mp3",
+      "file": "XC1149077.mp3",
+      "quality": "A",
+      "license": "CC BY-NC-SA 4.0",
+      "callType": "call"
+    },
+    "ploceus-subaureus": {
+      "key": "xeno-canto/XC438157",
+      "fileUrl": "https://xeno-canto.org/sounds/uploaded/GQMCPIVNXX/XC438157-Eastern%20Golden%20Weaver.mp3",
+      "file": "XC438157.mp3",
+      "quality": "A",
+      "license": "CC BY-NC-SA 4.0",
+      "callType": "call"
+    },
+    "ploceus-velatus": {
+      "key": "xeno-canto/XC1056542",
+      "fileUrl": "https://xeno-canto.org/sounds/uploaded/YSGTQVRQZI/XC1056542-20251110_DV_AKaramitsos_XA60_A005C121_2511105R_SLE_-3dBNORM.mp3",
+      "file": "XC1056542.mp3",
+      "quality": "A",
+      "license": "CC BY-NC-SA 4.0",
+      "callType": "call"
+    },
+    "ploceus-xanthops": {
+      "key": "xeno-canto/XC368216",
+      "fileUrl": "https://xeno-canto.org/sounds/uploaded/RFRTVEHIZX/XC368216-170327_Holub%27sGoldenWeaver_WhiteRiver_OC.mp3",
+      "file": "XC368216.mp3",
+      "quality": "B",
+      "license": "CC BY-NC-SA 4.0",
+      "callType": "call"
+    },
+    "ploceus-xanthopterus": {
+      "key": "xeno-canto/XC933092",
+      "fileUrl": "https://xeno-canto.org/sounds/uploaded/CQARALZBNN/XC933092-240225_1322-bthr-weaver-song.mp3",
+      "file": "XC933092.mp3",
+      "quality": "A",
+      "license": "CC BY-NC-SA 4.0",
+      "callType": "song"
+    },
+    "podica-senegalensis": {
+      "key": "xeno-canto/XC642694",
+      "fileUrl": "https://xeno-canto.org/sounds/uploaded/GQMCPIVNXX/XC642694-African%20Finfoot.mp3",
+      "file": "XC642694.mp3",
+      "quality": "B",
+      "license": "CC BY-NC-SA 4.0",
+      "callType": "call"
+    },
+    "pogoniulus-bilineatus": {
+      "key": "xeno-canto/XC265020",
+      "fileUrl": "https://xeno-canto.org/sounds/uploaded/WOPIRNCCSX/XC265020-Bunyangabu-2015-03-04-10h21%20LS114638.mp3",
+      "file": "XC265020.mp3",
+      "quality": "A",
+      "license": "CC BY-NC-SA 4.0",
+      "callType": "call"
+    },
+    "pogoniulus-chrysoconus": {
+      "key": "xeno-canto/XC1103079",
+      "fileUrl": "https://xeno-canto.org/sounds/uploaded/DUPOCHKKUC/XC1103079-260321_0750RoodeplaatGeelblesTinker.mp3",
+      "file": "XC1103079.mp3",
+      "quality": "A",
+      "license": "CC BY-NC-SA 4.0",
+      "callType": "call"
+    },
+    "pogonocichla-stellata": {
+      "key": "xeno-canto/XC527275",
+      "fileUrl": "https://xeno-canto.org/sounds/uploaded/SQRAIBCCZR/XC527275-200208_04_WhiteStarredRobin.mp3",
+      "file": "XC527275.mp3",
+      "quality": "A",
+      "license": "CC BY-NC-SA 4.0",
+      "callType": "call"
+    },
+    "poicephalus-cryptoxanthus": {
+      "key": "xeno-canto/XC368173",
+      "fileUrl": "https://xeno-canto.org/sounds/uploaded/RFRTVEHIZX/XC368173-170401_1_Brown-headedParrot_Satara_OC.mp3",
+      "file": "XC368173.mp3",
+      "quality": "A",
+      "license": "CC BY-NC-SA 4.0",
+      "callType": "call"
+    },
+    "poicephalus-meyeri": {
+      "key": "xeno-canto/XC1078757",
+      "fileUrl": "https://xeno-canto.org/sounds/uploaded/LWQXRZHFCU/XC1078757-2026-02-06-120052-meyers-parrot.mp3",
+      "file": "XC1078757.mp3",
+      "quality": "A",
+      "license": "CC BY-NC-SA 4.0",
+      "callType": "call"
+    },
+    "polemaetus-bellicosus": {
+      "key": "xeno-canto/XC1148983",
+      "fileUrl": "https://xeno-canto.org/sounds/uploaded/ZPOTJDOCCS/XC1148983-Martial-Eagle-3-mc.mp3",
+      "file": "XC1148983.mp3",
+      "quality": "A",
+      "license": "CC0 1.0",
+      "callType": "call"
+    },
+    "polyboroides-typus": {
+      "key": "xeno-canto/XC1039698",
+      "fileUrl": "https://xeno-canto.org/sounds/uploaded/YSGTQVRQZI/XC1039698-20250909_HB_AK_A050C005_250909RA_CXA60_SLE_250HzHP_-3dBNORM_Hawk-only.wav",
+      "file": "XC1039698.wav",
+      "quality": "A",
+      "license": "CC BY-NC-SA 4.0",
+      "callType": "call"
+    },
+    "porphyrio-alleni": {
+      "key": "xeno-canto/XC162127",
+      "fileUrl": "https://xeno-canto.org/sounds/uploaded/PWDLINYMKL/XC162127-Allen%27s%20GallinuleAK12013.mp3",
+      "file": "XC162127.mp3",
+      "quality": "B",
+      "license": "CC BY-NC-SA 3.0",
+      "callType": "call"
+    },
+    "porphyrio-porphyrio": {
+      "key": "xeno-canto/XC1183526",
+      "fileUrl": "https://xeno-canto.org/sounds/uploaded/YSGTQVRQZI/XC1183526-20260920_STRNDF_CPolicarpo_AKaramitsos_MicroMicParab_083230_SLE_1500HP_800LP_-3db_ASwamphen.mp3",
+      "file": "XC1183526.mp3",
+      "quality": "A",
+      "license": "CC BY-NC-SA 4.0",
+      "callType": "call"
+    },
+    "prinia-flavicans": {
+      "key": "xeno-canto/XC513752",
+      "fileUrl": "https://xeno-canto.org/sounds/uploaded/HMBDEWEZVS/XC513752-9%20BC%20Prinia%20Good.mp3",
+      "file": "XC513752.mp3",
+      "quality": "A",
+      "license": "CC BY-NC-SA 4.0",
+      "callType": "call"
+    },
+    "prinia-hypoxantha": {
+      "key": "xeno-canto/XC935289",
+      "fileUrl": "https://xeno-canto.org/sounds/uploaded/UKDFMOJDDN/XC935289-Drakensberg-prinia-calls-.mp3",
+      "file": "XC935289.mp3",
+      "quality": "A",
+      "license": "CC BY-NC-SA 4.0",
+      "callType": "call"
+    },
+    "prinia-subflava": {
+      "key": "xeno-canto/XC1001874",
+      "fileUrl": "https://xeno-canto.org/sounds/uploaded/YSGTQVRQZI/XC1001874-20240219_KNP_NSerpa_XA60_MVI_0002_SLE_1kHzHP_-3dBNORM.mp3",
+      "file": "XC1001874.mp3",
+      "quality": "A",
+      "license": "CC BY-NC-SA 4.0",
+      "callType": "call"
+    },
+    "prionops-plumatus": {
+      "key": "xeno-canto/XC447081",
+      "fileUrl": "https://xeno-canto.org/sounds/uploaded/UZRIEUDUHM/XC447081-White-crestedHelmetshrike_PopaFalls_Namibia_20180916_15h43.mp3",
+      "file": "XC447081.mp3",
+      "quality": "A",
+      "license": "CC BY-NC-SA 4.0",
+      "callType": "call"
+    },
+    "prionops-retzii": {
+      "key": "xeno-canto/XC237788",
+      "fileUrl": "https://xeno-canto.org/sounds/uploaded/ICUDBWGEGD/XC237788-1025_cut.mp3",
+      "file": "XC237788.mp3",
+      "quality": "A",
+      "license": "CC BY-NC-SA 4.0",
+      "callType": "call"
+    },
+    "prodotiscus-regulus": {
+      "key": "xeno-canto/XC342524",
+      "fileUrl": "https://xeno-canto.org/sounds/uploaded/RGSEIIJGHA/XC342524-BrownbackedHoneybird_Kirstenbosch_161112_1872_edited.mp3",
+      "file": "XC342524.mp3",
+      "quality": "B",
+      "license": "CC BY-NC-SA 4.0",
+      "callType": "call"
+    },
+    "pseudhirundo-griseopyga": {
+      "key": "xeno-canto/XC745610",
+      "fileUrl": "https://xeno-canto.org/sounds/uploaded/IIJAXHKSCC/XC745610-Grey-rumped%20swallow%20%28flight%20call%29%2020220705%2CKafueFloodplain%2CChimfunshi%2CZAMBIA.mp3",
+      "file": "XC745610.mp3",
+      "quality": "A",
+      "license": "CC BY-NC-SA 4.0",
+      "callType": "call"
+    },
+    "pternistis-afer": {
+      "key": "xeno-canto/XC501361",
+      "fileUrl": "https://xeno-canto.org/sounds/uploaded/GQMCPIVNXX/XC501361-Red-necked%20Spurfowl..mp3",
+      "file": "XC501361.mp3",
+      "quality": "A",
+      "license": "CC BY-NC-SA 4.0",
+      "callType": "call"
+    },
+    "pternistis-natalensis": {
+      "key": "xeno-canto/XC208083",
+      "fileUrl": "https://xeno-canto.org/sounds/uploaded/XKXDFWNSPA/XC208083-27-28%20November%202014%20Umzumbi.mp3",
+      "file": "XC208083.mp3",
+      "quality": "A",
+      "license": "CC BY-NC-SA 4.0",
+      "callType": "call"
+    },
+    "pternistis-swainsonii": {
+      "key": "xeno-canto/XC126346",
+      "fileUrl": "https://xeno-canto.org/sounds/uploaded/HZKCNRIPRH/XC126346-SwainssonsSpurfowl06Feb2013BenfontijnFreeStateSouthAfrika.mp3",
+      "file": "XC126346.mp3",
+      "quality": "A",
+      "license": "CC BY-NC-SA 3.0",
+      "callType": "call"
+    },
+    "pterocles-bicinctus": {
+      "key": "xeno-canto/XC793340",
+      "fileUrl": "https://xeno-canto.org/sounds/uploaded/TSMVYZCIWC/XC793340-25-August-2022-18-12-55.mp3",
+      "file": "XC793340.mp3",
+      "quality": "A",
+      "license": "CC BY-NC-SA 4.0",
+      "callType": "call"
+    },
+    "ptilopsis-granti": {
+      "key": "xeno-canto/XC1059179",
+      "fileUrl": "https://xeno-canto.org/sounds/uploaded/OYXLQBTHRH/XC1059179-MixPre-925_Ptilopsis-granti_YB.wav",
+      "file": "XC1059179.wav",
+      "quality": "A",
+      "license": "CC BY-NC-SA 4.0",
+      "callType": "call"
+    },
+    "ptyonoprogne-fuligula": {
+      "key": "xeno-canto/XC1149917",
+      "fileUrl": "https://xeno-canto.org/sounds/uploaded/YSGTQVRQZI/XC1149917-20260531_OPNR_AKaramitsos_XA60_A029C082_2605312D_SLE_250HP_-3dB.mp3",
+      "file": "XC1149917.mp3",
+      "quality": "A",
+      "license": "CC BY-NC-SA 4.0",
+      "callType": "call"
+    },
+    "pycnonotus-barbatus": {
+      "key": "xeno-canto/XC1016670",
+      "fileUrl": "https://xeno-canto.org/sounds/uploaded/YSGTQVRQZI/XC1016670-20250707_KNP_CNadin_E03_SLE_6kHzLP_500HzHP_Split1_-3dBNORM.mp3",
+      "file": "XC1016670.mp3",
+      "quality": "A",
+      "license": "CC BY-NC-SA 4.0",
+      "callType": "call"
+    },
+    "pytilia-afra": {
+      "key": "xeno-canto/XC200765",
+      "fileUrl": "https://xeno-canto.org/sounds/uploaded/OYJCYINHVL/XC200765-LS_30307%20Golden-winged%20pytilia%20Mwamagembe%20edit.mp3",
+      "file": "XC200765.mp3",
+      "quality": "A",
+      "license": "CC BY-NC-SA 4.0",
+      "callType": "call"
+    },
+    "pytilia-melba": {
+      "key": "xeno-canto/XC512189",
+      "fileUrl": "https://xeno-canto.org/sounds/uploaded/HMBDEWEZVS/XC512189-9%20GW%20Pytilia.mp3",
+      "file": "XC512189.mp3",
+      "quality": "A",
+      "license": "CC BY-NC-SA 4.0",
+      "callType": "call"
+    },
+    "quelea-quelea": {
+      "key": "xeno-canto/XC368172",
+      "fileUrl": "https://xeno-canto.org/sounds/uploaded/RFRTVEHIZX/XC368172-170401_Red-billedQuelea_flockcalls_Satara_OC.mp3",
+      "file": "XC368172.mp3",
+      "quality": "A",
+      "license": "CC BY-NC-SA 4.0",
+      "callType": "call"
+    },
+    "rallus-caerulescens": {
+      "key": "xeno-canto/XC321255",
+      "fileUrl": "https://xeno-canto.org/sounds/uploaded/SGLTZLDXYI/XC321255-african%20rail%20exc.mp3",
+      "file": "XC321255.mp3",
+      "quality": "B",
+      "license": "CC BY-NC-SA 4.0",
+      "callType": "call"
+    },
+    "recurvirostra-avosetta": {
+      "key": "xeno-canto/XC376940",
+      "fileUrl": "https://xeno-canto.org/sounds/uploaded/SDPCHKOHRH/XC376940-Cri%20avocette%20poussin%20%282%29.mp3",
+      "file": "XC376940.mp3",
+      "quality": "A",
+      "license": "CC BY-NC-SA 4.0",
+      "callType": "call"
+    },
+    "rhinopomastus-cyanomelas": {
+      "key": "xeno-canto/XC1077437",
+      "fileUrl": "https://xeno-canto.org/sounds/uploaded/LWQXRZHFCU/XC1077437-2026-01-31-02_24-common-scimitarbill.mp3",
+      "file": "XC1077437.mp3",
+      "quality": "A",
+      "license": "CC BY-NC-SA 4.0",
+      "callType": "call"
+    },
+    "rhinoptilus-chalcopterus": {
+      "key": "xeno-canto/XC696623",
+      "fileUrl": "https://xeno-canto.org/sounds/uploaded/DNKBTPCMSQ/XC696623-Bronze-winged%20Courser%20Pafuri%20211128.185245.mp3",
+      "file": "XC696623.mp3",
+      "quality": "A",
+      "license": "CC BY-NC-SA 4.0",
+      "callType": "call"
+    },
+    "rhinoptilus-cinctus": {
+      "key": "xeno-canto/XC210304",
+      "fileUrl": "https://xeno-canto.org/sounds/uploaded/CDTGHVBGZP/XC210304-Heuglin%27s%20Courser2014-12-23-1.mp3",
+      "file": "XC210304.mp3",
+      "quality": "A",
+      "license": "CC BY-NC-SA 4.0",
+      "callType": "call"
+    },
+    "riparia-paludicola": {
+      "key": "xeno-canto/XC536712",
+      "fileUrl": "https://xeno-canto.org/sounds/uploaded/IIJAXHKSCC/XC536712-Brown-throated%20Martin%20%28flight%20call%29%2020190815%2CBemanevika%2CMADAGASCAR.mp3",
+      "file": "XC536712.mp3",
+      "quality": "A",
+      "license": "CC BY-NC-SA 4.0",
+      "callType": "call"
+    },
+    "riparia-riparia": {
+      "key": "xeno-canto/XC27277",
+      "fileUrl": "https://xeno-canto.org/sounds/uploaded/BPSDQEOJWG/Backsvala.mp3",
+      "file": "XC27277.mp3",
+      "quality": "A",
+      "license": "CC BY-NC-SA 4.0",
+      "callType": "call"
+    },
+    "rostratula-benghalensis": {
+      "key": "xeno-canto/XC616415",
+      "fileUrl": "https://xeno-canto.org/sounds/uploaded/LVZUBCXBZC/XC616415-Greater%20Painted%20Snipe%202.mp3",
+      "file": "XC616415.mp3",
+      "quality": "B",
+      "license": "CC BY-NC-SA 4.0",
+      "callType": "call"
+    },
+    "rynchops-flavirostris": {
+      "key": "xeno-canto/XC608119",
+      "fileUrl": "https://xeno-canto.org/sounds/uploaded/GNEWSLMDAM/XC608119-AFRICAN%20SKIMMERS%202%20Kazinga%20Channel%20May%2020%20PG1635.mp3",
+      "file": "XC608119.mp3",
+      "quality": "A",
+      "license": "CC BY-NC-SA 4.0",
+      "callType": "call"
+    },
+    "sagittarius-serpentarius": {
+      "key": "xeno-canto/XC505982",
+      "fileUrl": "https://xeno-canto.org/sounds/uploaded/JDCTKFMBKV/XC505982-Secretarybird_LeeuwrandBFN_19881018.mp3",
+      "file": "XC505982.mp3",
+      "quality": "B",
+      "license": "CC BY-NC-SA 4.0",
+      "callType": "call"
+    },
+    "sarkidiornis-melanotos": {
+      "key": "xeno-canto/XC150138",
+      "fileUrl": "https://xeno-canto.org/sounds/uploaded/ZXGYSIOPJJ/XC150138-comb%20duck%20x.mp3",
+      "file": "XC150138.mp3",
+      "quality": "A",
+      "license": "CC BY-NC-SA 3.0",
+      "callType": "call"
+    },
+    "sarothrura-elegans": {
+      "key": "xeno-canto/XC952488",
+      "fileUrl": "https://xeno-canto.org/sounds/uploaded/EGCCECBTGC/XC952488-Buff-spotted-Flufftail-2024-02-29-05.45.mp3",
+      "file": "XC952488.mp3",
+      "quality": "A",
+      "license": "CC BY-NC-SA 4.0",
+      "callType": "call"
+    },
+    "sarothrura-rufa": {
+      "key": "xeno-canto/XC645330",
+      "fileUrl": "https://xeno-canto.org/sounds/uploaded/HMBDEWEZVS/XC645330-5%20Good%20RC%20F%20Tail%20with%20wind.mp3",
+      "file": "XC645330.mp3",
+      "quality": "A",
+      "license": "CC BY-NC-SA 4.0",
+      "callType": "call"
+    },
+    "saxicola-torquatus": {
+      "key": "xeno-canto/XC828513",
+      "fileUrl": "https://xeno-canto.org/sounds/uploaded/JDCTKFMBKV/XC828513-StonechatAfrican_VaalkraalReddersburg_20230909_-29.5152_26.2774.mp3",
+      "file": "XC828513.mp3",
+      "quality": "A",
+      "license": "CC BY-NC-SA 4.0",
+      "callType": "call"
+    },
+    "scleroptila-shelleyi": {
+      "key": "xeno-canto/XC415830",
+      "fileUrl": "https://xeno-canto.org/sounds/uploaded/UPBYYIQLUL/XC415830-Shelley%27s%20Francolin%202.mp3",
+      "file": "XC415830.mp3",
+      "quality": "A",
+      "license": "CC BY-NC-SA 4.0",
+      "callType": "call"
+    },
+    "scopus-umbretta": {
+      "key": "xeno-canto/XC983782",
+      "fileUrl": "https://xeno-canto.org/sounds/uploaded/HONDFLZMFW/XC983782-20250327_060917_KNP_CCS_HamerKop_soundLibrary.mp3",
+      "file": "XC983782.mp3",
+      "quality": "A",
+      "license": "CC BY-NC-SA 4.0",
+      "callType": "call"
+    },
+    "scotopelia-peli": {
+      "key": "xeno-canto/XC1190285",
+      "fileUrl": "https://xeno-canto.org/sounds/uploaded/ZMKKYDVHMN/XC1190285-Pels-1.wav",
+      "file": "XC1190285.wav",
+      "quality": "A",
+      "license": "CC BY-NC-SA 4.0",
+      "callType": "call"
+    },
+    "serinus-canicollis": {
+      "key": "xeno-canto/XC1046125",
+      "fileUrl": "https://xeno-canto.org/sounds/uploaded/YSGTQVRQZI/XC1046125-20251005_KBG_AKaramitsos_A054C034_251005CB_CXA60_SLE_-3dBNORM.mp3",
+      "file": "XC1046125.mp3",
+      "quality": "A",
+      "license": "CC BY-NC-SA 4.0",
+      "callType": "song"
+    },
+    "sigelus-silens": {
+      "key": "xeno-canto/XC287453",
+      "fileUrl": "https://xeno-canto.org/sounds/uploaded/SGLTZLDXYI/XC287453-fiscal%20flycatcher2.mp3",
+      "file": "XC287453.mp3",
+      "quality": "A",
+      "license": "CC BY-NC-SA 4.0",
+      "callType": "song"
+    },
+    "spatula-hottentota": {
+      "key": "xeno-canto/XC210051",
+      "fileUrl": "https://xeno-canto.org/sounds/uploaded/CDTGHVBGZP/XC210051-Hottentot%20Teal2015-1-9-1.mp3",
+      "file": "XC210051.mp3",
+      "quality": "A",
+      "license": "CC BY-NC-SA 4.0",
+      "callType": "call"
+    },
+    "spermestes-bicolor": {
+      "key": "xeno-canto/XC206436",
+      "fileUrl": "https://xeno-canto.org/sounds/uploaded/RGSEIIJGHA/XC206436-Black-and-whiteMannikin_Obala_141213_0113_edited.mp3",
+      "file": "XC206436.mp3",
+      "quality": "A",
+      "license": "CC BY-NC-SA 4.0",
+      "callType": "call"
+    },
+    "spermestes-cucullata": {
+      "key": "xeno-canto/XC1079624",
+      "fileUrl": "https://xeno-canto.org/sounds/uploaded/YSGTQVRQZI/XC1079624-20260211_KBG_AKaramitsos_XA60_A015C112_26021179_SLE_250HP_-3dB.mp3",
+      "file": "XC1079624.mp3",
+      "quality": "A",
+      "license": "CC BY-NC-SA 4.0",
+      "callType": "call"
+    },
+    "spermestes-fringilloides": {
+      "key": "xeno-canto/XC1063801",
+      "fileUrl": "https://xeno-canto.org/sounds/uploaded/YIKAQIVHQJ/XC1063801-2MM05037_20251021_171602.mp3",
+      "file": "XC1063801.mp3",
+      "quality": "A",
+      "license": "CC BY-NC-SA 4.0",
+      "callType": "call"
+    },
+    "sphenoeacus-afer": {
+      "key": "xeno-canto/XC28640",
+      "fileUrl": "https://xeno-canto.org/sounds/uploaded/BPSDQEOJWG/CapeGrassbirdCapePoint2006-12-27.mp3",
+      "file": "XC28640.mp3",
+      "quality": "A",
+      "license": "CC BY-NC-SA 3.0",
+      "callType": "song"
+    },
+    "spilopelia-senegalensis": {
+      "key": "xeno-canto/XC1077428",
+      "fileUrl": "https://xeno-canto.org/sounds/uploaded/LWQXRZHFCU/XC1077428-2026-01-31-01_50-laughing-dove.mp3",
+      "file": "XC1077428.mp3",
+      "quality": "A",
+      "license": "CC BY-NC-SA 4.0",
+      "callType": "call"
+    },
+    "sporopipes-squamifrons": {
+      "key": "xeno-canto/XC1037291",
+      "fileUrl": "https://xeno-canto.org/sounds/uploaded/VWVVYWSUYS/XC1037291-Registrazione-7-Sporopipes-squamofrons-visto.mp3",
+      "file": "XC1037291.mp3",
+      "quality": "A",
+      "license": "CC BY-NC-SA 4.0",
+      "callType": "call"
+    },
+    "stephanoaetus-coronatus": {
+      "key": "xeno-canto/XC1048064",
+      "fileUrl": "https://xeno-canto.org/sounds/uploaded/YSGTQVRQZI/XC1048064-20250312_DBN_RProbert_Rec2_SLE_150HzHP_-3dBNORM_comb.wav",
+      "file": "XC1048064.wav",
+      "quality": "A",
+      "license": "CC BY-NC-SA 4.0",
+      "callType": "call"
+    },
+    "streptopelia-capicola": {
+      "key": "xeno-canto/XC1149018",
+      "fileUrl": "https://xeno-canto.org/sounds/uploaded/YSGTQVRQZI/XC1149018-20260517_KNP_AKaramitsos_XA60_A026C193_260517TV_SLE_-3dB_RNDove.mp3",
+      "file": "XC1149018.mp3",
+      "quality": "A",
+      "license": "CC BY-NC-SA 4.0",
+      "callType": "call"
+    },
+    "streptopelia-decipiens": {
+      "key": "xeno-canto/XC472382",
+      "fileUrl": "https://xeno-canto.org/sounds/uploaded/RFRTVEHIZX/XC472382-20190401_MourningDove_call_LakeZiway_OC.mp3",
+      "file": "XC472382.mp3",
+      "quality": "A",
+      "license": "CC BY-NC-SA 4.0",
+      "callType": "call"
+    },
+    "streptopelia-semitorquata": {
+      "key": "xeno-canto/XC529795",
+      "fileUrl": "https://xeno-canto.org/sounds/uploaded/HMBDEWEZVS/XC529795-3%20good%20re%20dove.mp3",
+      "file": "XC529795.mp3",
+      "quality": "A",
+      "license": "CC BY-NC-SA 4.0",
+      "callType": "call"
+    },
+    "strix-woodfordii": {
+      "key": "xeno-canto/XC581119",
+      "fileUrl": "https://xeno-canto.org/sounds/uploaded/IIJAXHKSCC/XC581119-African%20Wood%20Owl%20%28call%29%2020200703%2CNyachisalaForest%2CKakoma%2CNorthwestern%2CZAMBIA_%5B%2Bfieryneckednightjar%5D.mp3",
+      "file": "XC581119.mp3",
+      "quality": "A",
+      "license": "CC BY-NC-SA 4.0",
+      "callType": "call"
+    },
+    "struthio-camelus": {
+      "key": "xeno-canto/XC845920",
+      "fileUrl": "https://xeno-canto.org/sounds/uploaded/WEWZUDAFQF/XC845920-Vibrato1_(200701_0762).mp3",
+      "file": "XC845920.mp3",
+      "quality": "A",
+      "license": "CC BY-NC-SA 4.0",
+      "callType": "call"
+    },
+    "sylvia-borin": {
+      "key": "xeno-canto/XC904341",
+      "fileUrl": "https://xeno-canto.org/sounds/uploaded/WKUHMYUJSN/XC904341-05-09-2024_11h8_fauvette-des-jardins.wav",
+      "file": "XC904341.wav",
+      "quality": "A",
+      "license": "CC BY-NC-SA 4.0",
+      "callType": "song"
+    },
+    "sylvietta-rufescens": {
+      "key": "xeno-canto/XC368190",
+      "fileUrl": "https://xeno-canto.org/sounds/uploaded/RFRTVEHIZX/XC368190-170405_Long-billedCrombec_Blydepoort_OC.mp3",
+      "file": "XC368190.mp3",
+      "quality": "A",
+      "license": "CC BY-NC-SA 4.0",
+      "callType": "song"
+    },
+    "tachybaptus-ruficollis": {
+      "key": "xeno-canto/XC640580",
+      "fileUrl": "https://xeno-canto.org/sounds/uploaded/SGLTZLDXYI/XC640580-Little%20Grebe%20mayfield%20dam%2016%20apr%202021.mp3",
+      "file": "XC640580.mp3",
+      "quality": "A",
+      "license": "CC BY-NC-SA 4.0",
+      "callType": "call"
+    },
+    "tachymarptis-melba": {
+      "key": "xeno-canto/XC187988",
+      "fileUrl": "https://xeno-canto.org/sounds/uploaded/JPBSNBUUEF/XC187988-Alpine%20Swift.mp3",
+      "file": "XC187988.mp3",
+      "quality": "A",
+      "license": "CC BY-NC-SA 4.0",
+      "callType": "call"
+    },
+    "tachyspiza-badia": {
+      "key": "xeno-canto/XC1095965",
+      "fileUrl": "https://xeno-canto.org/sounds/uploaded/FAMEEAPTYE/XC1095965-shikra-turkana637.mp3",
+      "file": "XC1095965.mp3",
+      "quality": "A",
+      "license": "CC BY-NC-SA 4.0",
+      "callType": "call"
+    },
+    "tachyspiza-minulla": {
+      "key": "xeno-canto/XC933196",
+      "fileUrl": "https://xeno-canto.org/sounds/uploaded/UKDFMOJDDN/XC933196-little-sparrowhawk.mp3",
+      "file": "XC933196.mp3",
+      "quality": "B",
+      "license": "CC BY-NC-SA 4.0",
+      "callType": "call"
+    },
+    "tauraco-corythaix": {
+      "key": "xeno-canto/XC1161576",
+      "fileUrl": "https://xeno-canto.org/sounds/uploaded/WSTMKZEHKY/XC1161576-260310-090406-Knysna-Turaco-A.mp3",
+      "file": "XC1161576.mp3",
+      "quality": "A",
+      "license": "CC BY-NC-SA 4.0",
+      "callType": "call"
+    },
+    "tchagra-australis": {
+      "key": "xeno-canto/XC446215",
+      "fileUrl": "https://xeno-canto.org/sounds/uploaded/UZRIEUDUHM/XC446215-Brown-crownedTchagra_MopaniRegion_KrugerNationalPark_SouthAfrica_20171005_06h14.mp3",
+      "file": "XC446215.mp3",
+      "quality": "A",
+      "license": "CC BY-NC-SA 4.0",
+      "callType": "call"
+    },
+    "tchagra-senegalus": {
+      "key": "xeno-canto/XC268619",
+      "fileUrl": "https://xeno-canto.org/sounds/uploaded/CDTGHVBGZP/XC268619-Black-crowned%20Tchagra2014-12-15-1.mp3",
+      "file": "XC268619.mp3",
+      "quality": "A",
+      "license": "CC BY-NC-SA 4.0",
+      "callType": "call"
+    },
+    "telacanthura-ussheri": {
+      "key": "xeno-canto/XC124661",
+      "fileUrl": "https://xeno-canto.org/sounds/uploaded/SGNUEQHVBW/XC124661-Telacanthura-ussheri_call_very_short_Ends-26-January-2003_specific-voices_sideB.mp3",
+      "file": "XC124661.mp3",
+      "quality": "B",
+      "license": "CC BY-NC-SA 3.0",
+      "callType": "call"
+    },
+    "telophorus-viridis": {
+      "key": "xeno-canto/XC148574",
+      "fileUrl": "https://xeno-canto.org/sounds/uploaded/RROSTWUTXO/XC148574-VN_20130922_00030.mp3",
+      "file": "XC148574.mp3",
+      "quality": "A",
+      "license": "CC BY-NC-SA 3.0",
+      "callType": "call"
+    },
+    "terathopius-ecaudatus": {
+      "key": "xeno-canto/XC940363",
+      "fileUrl": "https://xeno-canto.org/sounds/uploaded/TSGYTKHDSW/XC940363-Not-analyzed-2024-09-13-12-53-35-in-Berlin.wav",
+      "file": "XC940363.wav",
+      "quality": "A",
+      "license": "CC BY-NC-SA 4.0",
+      "callType": "call"
+    },
+    "terpsiphone-viridis": {
+      "key": "xeno-canto/XC1080072",
+      "fileUrl": "https://xeno-canto.org/sounds/uploaded/QXGZDUUJUO/XC1080072-Paradise-flycatcher-call-Kruger-Skukuza-260125-174812_Tr1-.mp3",
+      "file": "XC1080072.mp3",
+      "quality": "A",
+      "license": "CC BY-NC-SA 4.0",
+      "callType": "call"
+    },
+    "thalassornis-leuconotus": {
+      "key": "xeno-canto/XC809424",
+      "fileUrl": "https://xeno-canto.org/sounds/uploaded/RKQPZQAYOU/XC809424-WBD2.mp3",
+      "file": "XC809424.mp3",
+      "quality": "A",
+      "license": "CC BY-NC-SA 4.0",
+      "callType": "call"
+    },
+    "thamnolaea-cinnamomeiventris": {
+      "key": "xeno-canto/XC368166",
+      "fileUrl": "https://xeno-canto.org/sounds/uploaded/RFRTVEHIZX/XC368166-170329_MockingCliff-chat_MlondoziDam_OC.mp3",
+      "file": "XC368166.mp3",
+      "quality": "A",
+      "license": "CC BY-NC-SA 4.0",
+      "callType": "song"
+    },
+    "thinornis-tricollaris": {
+      "key": "xeno-canto/XC378030",
+      "fileUrl": "https://xeno-canto.org/sounds/uploaded/GQMCPIVNXX/XC378030-Three-banded%20Plover.mp3",
+      "file": "XC378030.mp3",
+      "quality": "A",
+      "license": "CC BY-NC-SA 4.0",
+      "callType": "call"
+    },
+    "threskiornis-aethiopicus": {
+      "key": "xeno-canto/XC309388",
+      "fileUrl": "https://xeno-canto.org/sounds/uploaded/SGLTZLDXYI/XC309388-sacred%20ibis%20chick.mp3",
+      "file": "XC309388.mp3",
+      "quality": "A",
+      "license": "CC BY-NC-SA 4.0",
+      "callType": "call"
+    },
+    "tockus-leucomelas": {
+      "key": "xeno-canto/XC610219",
+      "fileUrl": "https://xeno-canto.org/sounds/uploaded/JDCTKFMBKV/XC610219-14HornbillYellowbilled_Near%20Zaagkuilsdrift%20Lodge_20201220.MP3",
+      "file": "XC610219.mp3",
+      "quality": "A",
+      "license": "CC BY-NC-SA 4.0",
+      "callType": "call"
+    },
+    "tockus-rufirostris": {
+      "key": "xeno-canto/XC802491",
+      "fileUrl": "https://xeno-canto.org/sounds/uploaded/PSTCNWXKNE/XC802491-rbill1.mp3",
+      "file": "XC802491.mp3",
+      "quality": "A",
+      "license": "CC BY-NC-SA 4.0",
+      "callType": "call"
+    },
+    "trachyphonus-vaillantii": {
+      "key": "xeno-canto/XC208497",
+      "fileUrl": "https://xeno-canto.org/sounds/uploaded/XKXDFWNSPA/XC208497-Crested%20Barbet.mp3",
+      "file": "XC208497.mp3",
+      "quality": "A",
+      "license": "CC BY-NC-SA 4.0",
+      "callType": "call"
+    },
+    "treron-calvus": {
+      "key": "xeno-canto/XC394356",
+      "fileUrl": "https://xeno-canto.org/sounds/uploaded/XMZZQLHWHS/XC394356-24%20Nov%202017%20Green%20pigeon.mp3",
+      "file": "XC394356.mp3",
+      "quality": "B",
+      "license": "CC BY-NC-SA 4.0",
+      "callType": "call"
+    },
+    "tricholaema-leucomelas": {
+      "key": "xeno-canto/XC756685",
+      "fileUrl": "https://xeno-canto.org/sounds/uploaded/DNKBTPCMSQ/XC756685-Acacia-Pied-Barbet-Sausage-Tree-221003-064518.mp3",
+      "file": "XC756685.mp3",
+      "quality": "A",
+      "license": "CC BY-NC-SA 4.0",
+      "callType": "call"
+    },
+    "tringa-glareola": {
+      "key": "xeno-canto/XC745588",
+      "fileUrl": "https://xeno-canto.org/sounds/uploaded/IIJAXHKSCC/XC745588-wood%20sandpiper%20%28flight%20call%2Cflushed%29%2020211211%2CKalwelwaPlain%2CMwinilunga%2CZAMBIA%5B1211_172406%5D.mp3",
+      "file": "XC745588.mp3",
+      "quality": "A",
+      "license": "CC BY-NC-SA 4.0",
+      "callType": "call"
+    },
+    "tringa-nebularia": {
+      "key": "xeno-canto/XC27066",
+      "fileUrl": "https://xeno-canto.org/sounds/uploaded/BPSDQEOJWG/Gluttsnappalocklate.mp3",
+      "file": "XC27066.mp3",
+      "quality": "A",
+      "license": "CC BY-NC-SA 3.0",
+      "callType": "call"
+    },
+    "tringa-ochropus": {
+      "key": "xeno-canto/XC129379",
+      "fileUrl": "https://xeno-canto.org/sounds/uploaded/ZNCDXTUOFL/XC129379-Tringa_ochropus_Poland_Jarek_Matusiak_20130411-011.mp3",
+      "file": "XC129379.mp3",
+      "quality": "A",
+      "license": "CC BY-NC-SA 3.0",
+      "callType": "call"
+    },
+    "tringa-stagnatilis": {
+      "key": "xeno-canto/XC154257",
+      "fileUrl": "https://xeno-canto.org/sounds/uploaded/JFWYCBDTFP/XC154257-Tringa%20stagnatilis%20calls%20Zhanteke%20lake%20Aqmola%20province%204%20May%202013%20%28Arend%20Wassink%29.mp3",
+      "file": "XC154257.mp3",
+      "quality": "A",
+      "license": "CC BY-NC-SA 3.0",
+      "callType": "call"
+    },
+    "trochocercus-cyanomelas": {
+      "key": "xeno-canto/XC416342",
+      "fileUrl": "https://xeno-canto.org/sounds/uploaded/SGLTZLDXYI/XC416342-Blue-mantled%20Crested%20Flycatcher%20call.mp3",
+      "file": "XC416342.mp3",
+      "quality": "A",
+      "license": "CC BY-NC-SA 4.0",
+      "callType": "call"
+    },
+    "turdoides-jardineii": {
+      "key": "xeno-canto/XC368185",
+      "fileUrl": "https://xeno-canto.org/sounds/uploaded/RFRTVEHIZX/XC368185-170403_Arrow-markedBabbler_TzendseCamp_OC.mp3",
+      "file": "XC368185.mp3",
+      "quality": "A",
+      "license": "CC BY-NC-SA 4.0",
+      "callType": "call"
+    },
+    "turdus-libonyana": {
+      "key": "xeno-canto/XC237783",
+      "fileUrl": "https://xeno-canto.org/sounds/uploaded/ICUDBWGEGD/XC237783-1007_cut.mp3",
+      "file": "XC237783.mp3",
+      "quality": "A",
+      "license": "CC BY-NC-SA 4.0",
+      "callType": "call"
+    },
+    "turdus-litsitsirupa": {
+      "key": "xeno-canto/XC1188517",
+      "fileUrl": "https://xeno-canto.org/sounds/uploaded/QXGZDUUJUO/XC1188517-260129-073202_Tr1-Groundscraper-thrush-Nkorho-Bush-Lodge.mp3",
+      "file": "XC1188517.mp3",
+      "quality": "A",
+      "license": "CC BY-NC-SA 4.0",
+      "callType": "song"
+    },
+    "turdus-olivaceus": {
+      "key": "xeno-canto/XC502734",
+      "fileUrl": "https://xeno-canto.org/sounds/uploaded/HMBDEWEZVS/XC502734-2%20O%20Thrush.mp3",
+      "file": "XC502734.mp3",
+      "quality": "A",
+      "license": "CC BY-NC-SA 4.0",
+      "callType": "call"
+    },
+    "turdus-smithi": {
+      "key": "xeno-canto/XC503252",
+      "fileUrl": "https://xeno-canto.org/sounds/uploaded/HMBDEWEZVS/XC503252-2%20Karoo%20Thrush%20and%20sparrow.mp3",
+      "file": "XC503252.mp3",
+      "quality": "A",
+      "license": "CC BY-NC-SA 4.0",
+      "callType": "call"
+    },
+    "turnix-sylvaticus": {
+      "key": "xeno-canto/XC405435",
+      "fileUrl": "https://xeno-canto.org/sounds/uploaded/SGLTZLDXYI/XC405435-Common%20Buttonquail.mp3",
+      "file": "XC405435.mp3",
+      "quality": "B",
+      "license": "CC BY-NC-SA 4.0",
+      "callType": "call"
+    },
+    "turtur-afer": {
+      "key": "xeno-canto/XC1009898",
+      "fileUrl": "https://xeno-canto.org/sounds/uploaded/YIKAQIVHQJ/XC1009898-2MM05037_20250125_121302_66pc_Turtur_afer_Blue-spotted_Wood-Dove.mp3",
+      "file": "XC1009898.mp3",
+      "quality": "A",
+      "license": "CC BY-NC-SA 4.0",
+      "callType": "call"
+    },
+    "turtur-chalcospilos": {
+      "key": "xeno-canto/XC396568",
+      "fileUrl": "https://xeno-canto.org/sounds/uploaded/ITRQTFVLNT/XC396568-Emerald-spotted%20Wood%20Dove_song_Tambach_9Dec2017_1630_J.Bradley.mp3",
+      "file": "XC396568.mp3",
+      "quality": "A",
+      "license": "CC BY-NC-SA 4.0",
+      "callType": "call"
+    },
+    "turtur-tympanistria": {
+      "key": "xeno-canto/XC492722",
+      "fileUrl": "https://xeno-canto.org/sounds/uploaded/SGLTZLDXYI/XC492722-tambourine%20dove%20exc1.mp3",
+      "file": "XC492722.mp3",
+      "quality": "A",
+      "license": "CC BY-NC-SA 4.0",
+      "callType": "call"
+    },
+    "tychaedon-quadrivirgata": {
+      "key": "xeno-canto/XC1142770",
+      "fileUrl": "https://xeno-canto.org/sounds/uploaded/YSGTQVRQZI/XC1142770-20260510_KNP_AKaramitsos_XA60_A025C036_260510PH_SLE_800HP_-3dB_Bearded-Scrub-Robin.mp3",
+      "file": "XC1142770.mp3",
+      "quality": "A",
+      "license": "CC BY-NC-SA 4.0",
+      "callType": "song"
+    },
+    "tychaedon-signata": {
+      "key": "xeno-canto/XC323553",
+      "fileUrl": "https://xeno-canto.org/sounds/uploaded/GQMCPIVNXX/XC323553-Brown%20Scrub%20Robin%20alarm%20xc%20%282%29.mp3",
+      "file": "XC323553.mp3",
+      "quality": "A",
+      "license": "CC BY-NC-SA 4.0",
+      "callType": "alarm"
+    },
+    "tyto-alba": {
+      "key": "xeno-canto/XC353109",
+      "fileUrl": "https://xeno-canto.org/sounds/uploaded/YNRAJPRZMT/XC353109-MVI_1560%20barn%20owl%20pair.mp3",
+      "file": "XC353109.mp3",
+      "quality": "A",
+      "license": "CC BY-NC-SA 4.0",
+      "callType": "call"
+    },
+    "upupa-epops": {
+      "key": "xeno-canto/XC337010",
+      "fileUrl": "https://xeno-canto.org/sounds/uploaded/IERLEVXEIF/XC337010-African-Hoopoe-KrugerNP-CR.mp3",
+      "file": "XC337010.mp3",
+      "quality": "A",
+      "license": "CC BY-NC-SA 4.0",
+      "callType": "call"
+    },
+    "uraeginthus-angolensis": {
+      "key": "xeno-canto/XC368187",
+      "fileUrl": "https://xeno-canto.org/sounds/uploaded/RFRTVEHIZX/XC368187-170403_BlueWaxbill_Mopani_OC.mp3",
+      "file": "XC368187.mp3",
+      "quality": "A",
+      "license": "CC BY-NC-SA 4.0",
+      "callType": "call"
+    },
+    "urocolius-indicus": {
+      "key": "xeno-canto/XC350135",
+      "fileUrl": "https://xeno-canto.org/sounds/uploaded/SGLTZLDXYI/XC350135-Red-faced%20Mousebirds%20exc.mp3",
+      "file": "XC350135.mp3",
+      "quality": "A",
+      "license": "CC BY-NC-SA 4.0",
+      "callType": "call"
+    },
+    "urolestes-melanoleucus": {
+      "key": "xeno-canto/XC830442",
+      "fileUrl": "https://xeno-canto.org/sounds/uploaded/PSTCNWXKNE/XC830442-WhatsApp-Audio-2023-05-03-at-10.56.42.mpeg",
+      "file": "XC830442.mpeg",
+      "quality": "A",
+      "license": "CC BY-NC-SA 4.0",
+      "callType": "call"
+    },
+    "vanellus-albiceps": {
+      "key": "xeno-canto/XC444186",
+      "fileUrl": "https://xeno-canto.org/sounds/uploaded/FSCGENVPXK/XC444186-White-crowned%20Lapwing%20Mpala%20Lodge%20South%20Africa%2011102018%206.55pm.mp3",
+      "file": "XC444186.mp3",
+      "quality": "A",
+      "license": "CC BY-NC-SA 4.0",
+      "callType": "call"
+    },
+    "vanellus-armatus": {
+      "key": "xeno-canto/XC1015093",
+      "fileUrl": "https://xeno-canto.org/sounds/uploaded/QBGUQTOUWX/XC1015093-20250710_KNP_Mcassidy_250710_blacksmith_lapwing.mp3",
+      "file": "XC1015093.mp3",
+      "quality": "A",
+      "license": "CC BY-NC-SA 4.0",
+      "callType": "call"
+    },
+    "vanellus-coronatus": {
+      "key": "xeno-canto/XC1148046",
+      "fileUrl": "https://xeno-canto.org/sounds/uploaded/YSGTQVRQZI/XC1148046-20260512_KNP_AKaramitsos_XA60_A025C123_26051229_SLE_900HP_-3dB_Lapwing.mp3",
+      "file": "XC1148046.mp3",
+      "quality": "A",
+      "license": "CC BY-NC-SA 4.0",
+      "callType": "call"
+    },
+    "vanellus-lugubris": {
+      "key": "xeno-canto/XC1052419",
+      "fileUrl": "https://xeno-canto.org/sounds/uploaded/THHNKSHUMO/XC1052419-022-Vanneau-terne-260123_0264.mp3",
+      "file": "XC1052419.mp3",
+      "quality": "A",
+      "license": "CC BY-NC-SA 4.0",
+      "callType": "call"
+    },
+    "vanellus-senegallus": {
+      "key": "xeno-canto/XC585227",
+      "fileUrl": "https://xeno-canto.org/sounds/uploaded/IIJAXHKSCC/XC585227-African%20Wattled%20Plover%20%28call%29%2020200701%2CKalwelwa%2CMwinilunga%2CNorthwestern%2CZAMBIA.mp3",
+      "file": "XC585227.mp3",
+      "quality": "A",
+      "license": "CC BY-NC-SA 4.0",
+      "callType": "call"
+    },
+    "vidua-chalybeata": {
+      "key": "xeno-canto/XC522557",
+      "fileUrl": "https://xeno-canto.org/sounds/uploaded/HMBDEWEZVS/XC522557-1%20Villag.mp3",
+      "file": "XC522557.mp3",
+      "quality": "A",
+      "license": "CC BY-NC-SA 4.0",
+      "callType": "call"
+    },
+    "vidua-funerea": {
+      "key": "xeno-canto/XC641307",
+      "fileUrl": "https://xeno-canto.org/sounds/uploaded/SGLTZLDXYI/XC641307-Dusky%20Indigobird%20DHeights%2027%20Feb%202021.mp3",
+      "file": "XC641307.mp3",
+      "quality": "A",
+      "license": "CC BY-NC-SA 4.0",
+      "callType": "song"
+    },
+    "vidua-macroura": {
+      "key": "xeno-canto/XC353667",
+      "fileUrl": "https://xeno-canto.org/sounds/uploaded/GQMCPIVNXX/XC353667-Pin-tailed%20Whydah%20xc.mp3",
+      "file": "XC353667.mp3",
+      "quality": "A",
+      "license": "CC BY-NC-SA 4.0",
+      "callType": "call"
+    },
+    "vidua-paradisaea": {
+      "key": "xeno-canto/XC209990",
+      "fileUrl": "https://xeno-canto.org/sounds/uploaded/CDTGHVBGZP/XC209990-Eastern%20Paradise-Whydah2014-12-25-1.mp3",
+      "file": "XC209990.mp3",
+      "quality": "A",
+      "license": "CC BY-NC-SA 4.0",
+      "callType": "song"
+    },
+    "vidua-purpurascens": {
+      "key": "xeno-canto/XC631063",
+      "fileUrl": "https://xeno-canto.org/sounds/uploaded/HMBDEWEZVS/XC631063-3%20Purplt%20Indigobird.mp3",
+      "file": "XC631063.mp3",
+      "quality": "A",
+      "license": "CC BY-NC-SA 4.0",
+      "callType": "call"
+    },
+    "vidua-regia": {
+      "key": "xeno-canto/XC622267",
+      "fileUrl": "https://xeno-canto.org/sounds/uploaded/HMBDEWEZVS/XC622267-5%20Good%20ST%20Whydah.mp3",
+      "file": "XC622267.mp3",
+      "quality": "A",
+      "license": "CC BY-NC-SA 4.0",
+      "callType": "call"
+    },
+    "zapornia-flavirostra": {
+      "key": "xeno-canto/XC200591",
+      "fileUrl": "https://xeno-canto.org/sounds/uploaded/SGLTZLDXYI/XC200591-Black%20crake.mp3",
+      "file": "XC200591.mp3",
+      "quality": "A",
+      "license": "CC BY-NC-SA 4.0",
+      "callType": "call"
+    },
+    "zosterops-anderssoni": {
+      "key": "xeno-canto/XC660759",
+      "fileUrl": "https://xeno-canto.org/sounds/uploaded/IIJAXHKSCC/XC660759-Southern%20White-eye%20%28call%29%2020201206%2CMutinondo%2CMuchinga%2CZAMBIA.mp3",
+      "file": "XC660759.mp3",
+      "quality": "A",
+      "license": "CC BY-NC-SA 4.0",
+      "callType": "call"
+    }
+  },
+  "noClip": [
+    "ardea-brachyrhyncha",
+    "ciconia-microscelis",
+    "circaetus-pectoralis",
+    "crithagra-citrinipectus",
+    "ephippiorhynchus-senegalensis",
+    "falco-dickinsoni",
+    "necrosyrtes-monachus",
+    "netta-erythrophthalma",
+    "pinarocorys-nigricans",
+    "torgos-tracheliotos",
+    "trigonoceps-occipitalis"
+  ],
+  "failed": {
+    "caprimulgus-europaeus": "file too large https://xeno-canto.org/sounds/uploaded/YHOCFQHBDL/XC1019309-EuropeanNightjar.2025.07.10%282200%29.HankleyCommon.H5.mp3",
+    "circus-pygargus": "file too large https://xeno-canto.org/sounds/uploaded/PRVFBYIQYZ/XC1152357-circus-pygargus-5-hide-del-cenizo-15-04-2026.mp3",
+    "luscinia-luscinia": "file too large https://xeno-canto.org/sounds/uploaded/GELAPBFFDU/XC1138542-260528-2118-N%C3%A4ktergal-Pilkrogsviken.mp3"
+  }
+}

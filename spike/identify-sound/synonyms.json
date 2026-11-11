@@ -1,0 +1,191 @@
+{
+  "synonyms": {
+    "aerospiza-tachiro": {
+      "label": "Accipiter tachiro",
+      "reason": "Genus move",
+      "source": "docs/species-sources.md, \"Taxonomy remaps\""
+    },
+    "amirafra-rufocinnamomea": {
+      "label": "Mirafra rufocinnamomea",
+      "reason": "Genus move",
+      "source": "docs/species-sources.md, \"Taxonomy remaps\""
+    },
+    "aplopelia-larvata": {
+      "label": "Columba larvata",
+      "reason": "Genus move",
+      "source": "docs/species-sources.md, \"Taxonomy remaps\""
+    },
+    "astur-melanoleucus": {
+      "label": "Accipiter melanoleucus",
+      "reason": "Genus move; the model calls it Black Goshawk",
+      "source": "docs/species-sources.md, \"Taxonomy remaps\""
+    },
+    "botaurus-minutus": {
+      "label": "Ixobrychus minutus",
+      "reason": "Genus move",
+      "source": "docs/species-sources.md, \"Taxonomy remaps\""
+    },
+    "buphagus-erythroryncha": {
+      "label": "Buphagus erythrorynchus",
+      "reason": "Spelling of the epithet",
+      "source": "docs/species-sources.md, \"Taxonomy remaps\""
+    },
+    "ceblepyris-caesius": {
+      "label": "Coracina caesia",
+      "reason": "Genus move",
+      "source": "English name and species epithet are identical in the label file; genus differs between Clements (model) and IOC/BLSA 2026"
+    },
+    "ceblepyris-pectoralis": {
+      "label": "Coracina pectoralis",
+      "reason": "Genus move",
+      "source": "English name and species epithet are identical in the label file; genus differs between Clements (model) and IOC/BLSA 2026"
+    },
+    "chlorophoneus-nigrifrons": {
+      "label": "Telophorus nigrifrons",
+      "reason": "Genus move",
+      "source": "English name and species epithet are identical in the label file; genus differs between Clements (model) and IOC/BLSA 2026"
+    },
+    "chlorophoneus-olivaceus": {
+      "label": "Telophorus olivaceus",
+      "reason": "Genus move",
+      "source": "English name and species epithet are identical in the label file; genus differs between Clements (model) and IOC/BLSA 2026"
+    },
+    "chlorophoneus-sulfureopectus": {
+      "label": "Telophorus sulfureopectus",
+      "reason": "Genus move; the model calls it Sulphur-breasted Bushshrike",
+      "source": "Same epithet; English names differ, so the owner should confirm"
+    },
+    "crinifer-concolor": {
+      "label": "Corythaixoides concolor",
+      "reason": "Genus move",
+      "source": "docs/species-sources.md, \"Taxonomy remaps\""
+    },
+    "dendropicos-fuscescens": {
+      "label": "Chloropicus fuscescens",
+      "reason": "Genus move",
+      "source": "English name and species epithet are identical in the label file; genus differs between Clements (model) and IOC/BLSA 2026"
+    },
+    "dendropicos-griseocephalus": {
+      "label": "Chloropicus griseocephalus",
+      "reason": "Genus move",
+      "source": "English name and species epithet are identical in the label file; genus differs between Clements (model) and IOC/BLSA 2026"
+    },
+    "dessonornis-caffer": {
+      "label": "Cossypha caffra",
+      "reason": "Genus move",
+      "source": "docs/species-sources.md, \"Taxonomy remaps\""
+    },
+    "dessonornis-humeralis": {
+      "label": "Cossypha humeralis",
+      "reason": "Genus move",
+      "source": "docs/species-sources.md, \"Taxonomy remaps\""
+    },
+    "icthyophaga-vocifer": {
+      "label": "Haliaeetus vocifer",
+      "reason": "Genus move",
+      "source": "docs/species-sources.md, \"Taxonomy remaps\""
+    },
+    "ketupa-lactea": {
+      "label": "Bubo lacteus",
+      "reason": "Genus move",
+      "source": "docs/species-sources.md, \"Taxonomy remaps\""
+    },
+    "lophotis-ruficrista": {
+      "label": "Eupodotis ruficrista",
+      "reason": "Genus move; the model calls it Red-crested Bustard",
+      "source": "Same epithet; English names differ, so the owner should confirm"
+    },
+    "sigelus-silens": {
+      "label": "Melaenornis silens",
+      "reason": "Genus move",
+      "source": "docs/species-sources.md, \"Taxonomy remaps\""
+    },
+    "spilopelia-senegalensis": {
+      "label": "Streptopelia senegalensis",
+      "reason": "Genus move",
+      "source": "English name and species epithet are identical in the label file; genus differs between Clements (model) and IOC/BLSA 2026"
+    },
+    "tachymarptis-melba": {
+      "label": "Apus melba",
+      "reason": "Genus move",
+      "source": "English name and species epithet are identical in the label file; genus differs between Clements (model) and IOC/BLSA 2026"
+    },
+    "tachyspiza-badia": {
+      "label": "Accipiter badius",
+      "reason": "Genus move",
+      "source": "docs/species-sources.md, \"Taxonomy remaps\""
+    },
+    "tachyspiza-minulla": {
+      "label": "Accipiter minullus",
+      "reason": "Genus move",
+      "source": "docs/species-sources.md, \"Taxonomy remaps\""
+    },
+    "thinornis-tricollaris": {
+      "label": "Charadrius tricollaris",
+      "reason": "Genus move",
+      "source": "docs/species-sources.md, \"Taxonomy remaps\""
+    },
+    "turdus-litsitsirupa": {
+      "label": "Psophocichla litsitsirupa",
+      "reason": "Genus move",
+      "source": "English name and species epithet are identical in the label file; genus differs between Clements (model) and IOC/BLSA 2026"
+    },
+    "tychaedon-quadrivirgata": {
+      "label": "Cercotrichas quadrivirgata",
+      "reason": "Genus move",
+      "source": "docs/species-sources.md, \"Taxonomy remaps\""
+    },
+    "tychaedon-signata": {
+      "label": "Cercotrichas signata",
+      "reason": "Genus move",
+      "source": "docs/species-sources.md, \"Taxonomy remaps\""
+    }
+  },
+  "also": {
+    "acrocephalus-scirpaceus": {
+      "labels": [
+        "Acrocephalus baeticatus"
+      ],
+      "reason": "BLSA 2026 lumps African Reed Warbler into Common Reed Warbler; the model keeps both",
+      "source": "docs/species-sources.md, \"Taxonomy remaps\""
+    }
+  },
+  "ambiguous": {
+    "anthus-nicholsoni": {
+      "candidate": "Anthus similis",
+      "reason": "The model has only Long-billed Pipit, from which IOC splits Nicholson’s Pipit"
+    },
+    "ardea-brachyrhyncha": {
+      "candidate": "Ardea intermedia",
+      "reason": "The model has only Intermediate Egret, which also covers the Asian and Australasian forms"
+    },
+    "ardea-ibis": {
+      "candidate": "Bubulcus ibis",
+      "reason": "The model has one Cattle Egret, which also covers Eastern Cattle Egret"
+    },
+    "butorides-atricapilla": {
+      "candidate": "Butorides striata",
+      "reason": "The model has only Striated Heron, from which IOC splits Little Heron"
+    },
+    "centropus-burchellii": {
+      "candidate": "Centropus superciliosus",
+      "reason": "The model has only White-browed Coucal, which Clements treats as including Burchell’s"
+    },
+    "corypha-africana": {
+      "candidate": "Mirafra africana",
+      "reason": "The model label predates the split of the Rufous-naped Lark complex"
+    },
+    "falco-rupicolus": {
+      "candidate": "Falco tinnunculus",
+      "reason": "The model has only Eurasian Kestrel, which Clements treats as including Rock Kestrel"
+    },
+    "guttera-edouardi": {
+      "candidate": "Guttera pucherani",
+      "reason": "The model has one Crested Guineafowl, which predates the split into Southern, Eastern and Western"
+    }
+  },
+  "partial": {
+    "camaroptera-brachyura": "The model label is Green-backed Camaroptera only; Grey-backed (brevicaudata), which BLSA lumps into Bleating, has no label",
+    "milvus-migrans": "The model label is Black Kite only; Yellow-billed Kite (aegyptius), which BLSA lumps into it, has no label"
+  }
+}

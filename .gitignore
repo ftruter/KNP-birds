@@ -5,6 +5,12 @@ dist/
 *.log
 data/audio/.cache/
 data/audio/files/
+spike/identify-sound/models/
+spike/identify-sound/node_modules/
+spike/identify-sound/.venv/
+spike/identify-sound/field/
 .DS_Store
 data/.DS_Store
 .claude
+spike/identify-sound/bench/vendor/
+__pycache__/

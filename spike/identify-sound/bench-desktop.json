@@ -1,0 +1,230 @@
+{
+  "chrome": {
+    "version": "158.0.8127.18",
+    "results": [
+      {
+        "candidate": "ONNX Runtime Web, community ONNX FP32",
+        "pageHeapMbAfter": 10,
+        "modelMb": 49.9,
+        "downloadMs": 139,
+        "loadMs": 169,
+        "firstRunMs": 49,
+        "medianRunMs": 26,
+        "slowestRunMs": 29,
+        "outputs": 6522,
+        "fixture": true,
+        "top3": [
+          {
+            "index": 291,
+            "logit": 3.111
+          },
+          {
+            "index": 1281,
+            "logit": -4.596
+          },
+          {
+            "index": 3051,
+            "logit": -5.36
+          }
+        ],
+        "engine": {
+          "wasmSimd": true,
+          "jsLoopMs": 58,
+          "wasmLoopMs": 68
+        },
+        "engineMainThread": {
+          "wasmSimd": true,
+          "jsLoopMs": 57,
+          "wasmLoopMs": 24
+        }
+      },
+      {
+        "candidate": "LiteRT.js, TFLite FP16",
+        "pageHeapMbAfter": 10,
+        "modelMb": 24.7,
+        "downloadMs": 19,
+        "loadMs": 87,
+        "firstRunMs": 63,
+        "medianRunMs": 24,
+        "slowestRunMs": 24,
+        "outputs": 6522,
+        "fixture": true,
+        "top3": [
+          {
+            "index": 291,
+            "logit": 3.095
+          },
+          {
+            "index": 1281,
+            "logit": -4.587
+          },
+          {
+            "index": 3051,
+            "logit": -5.359
+          }
+        ],
+        "engine": {
+          "wasmSimd": true,
+          "jsLoopMs": 56,
+          "wasmLoopMs": 25
+        },
+        "engineMainThread": {
+          "wasmSimd": true,
+          "jsLoopMs": 56,
+          "wasmLoopMs": 25
+        }
+      },
+      {
+        "candidate": "LiteRT.js, TFLite FP32",
+        "pageHeapMbAfter": 10,
+        "modelMb": 49.3,
+        "downloadMs": 69,
+        "loadMs": 68,
+        "firstRunMs": 48,
+        "medianRunMs": 24,
+        "slowestRunMs": 24,
+        "outputs": 6522,
+        "fixture": true,
+        "top3": [
+          {
+            "index": 291,
+            "logit": 3.111
+          },
+          {
+            "index": 1281,
+            "logit": -4.596
+          },
+          {
+            "index": 3051,
+            "logit": -5.36
+          }
+        ],
+        "engine": {
+          "wasmSimd": true,
+          "jsLoopMs": 57,
+          "wasmLoopMs": 24
+        },
+        "engineMainThread": {
+          "wasmSimd": true,
+          "jsLoopMs": 57,
+          "wasmLoopMs": 24
+        }
+      }
+    ],
+    "problems": []
+  },
+  "webkit": {
+    "version": "27.2",
+    "results": [
+      {
+        "candidate": "ONNX Runtime Web, community ONNX FP32",
+        "pageHeapMbAfter": "not exposed by this browser",
+        "modelMb": 49.9,
+        "downloadMs": 57,
+        "loadMs": 174,
+        "firstRunMs": 36,
+        "medianRunMs": 26,
+        "slowestRunMs": 27,
+        "outputs": 6522,
+        "fixture": true,
+        "top3": [
+          {
+            "index": 291,
+            "logit": 3.111
+          },
+          {
+            "index": 1281,
+            "logit": -4.596
+          },
+          {
+            "index": 3051,
+            "logit": -5.36
+          }
+        ],
+        "engine": {
+          "wasmSimd": true,
+          "jsLoopMs": 57,
+          "wasmLoopMs": 26
+        },
+        "engineMainThread": {
+          "wasmSimd": true,
+          "jsLoopMs": 56,
+          "wasmLoopMs": 26
+        }
+      },
+      {
+        "candidate": "LiteRT.js, TFLite FP16",
+        "pageHeapMbAfter": "not exposed by this browser",
+        "modelMb": 24.7,
+        "downloadMs": 21,
+        "loadMs": 88,
+        "firstRunMs": 67,
+        "medianRunMs": 26,
+        "slowestRunMs": 28,
+        "outputs": 6522,
+        "fixture": true,
+        "top3": [
+          {
+            "index": 291,
+            "logit": 3.095
+          },
+          {
+            "index": 1281,
+            "logit": -4.587
+          },
+          {
+            "index": 3051,
+            "logit": -5.359
+          }
+        ],
+        "engine": {
+          "wasmSimd": true,
+          "jsLoopMs": 56,
+          "wasmLoopMs": 26
+        },
+        "engineMainThread": {
+          "wasmSimd": true,
+          "jsLoopMs": 56,
+          "wasmLoopMs": 26
+        }
+      },
+      {
+        "candidate": "LiteRT.js, TFLite FP32",
+        "pageHeapMbAfter": "not exposed by this browser",
+        "modelMb": 49.3,
+        "downloadMs": 35,
+        "loadMs": 77,
+        "firstRunMs": 49,
+        "medianRunMs": 27,
+        "slowestRunMs": 27,
+        "outputs": 6522,
+        "fixture": true,
+        "top3": [
+          {
+            "index": 291,
+            "logit": 3.111
+          },
+          {
+            "index": 1281,
+            "logit": -4.596
+          },
+          {
+            "index": 3051,
+            "logit": -5.36
+          }
+        ],
+        "engine": {
+          "wasmSimd": true,
+          "jsLoopMs": 57,
+          "wasmLoopMs": 26
+        },
+        "engineMainThread": {
+          "wasmSimd": true,
+          "jsLoopMs": 56,
+          "wasmLoopMs": 26
+        }
+      }
+    ],
+    "problems": []
+  }
+}
