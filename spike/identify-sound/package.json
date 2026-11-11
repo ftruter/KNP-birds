@@ -1,0 +1,11 @@
+{
+  "name": "knp-birds-identify-sound-spike",
+  "private": true,
+  "type": "module",
+  "description": "Phase 0 spike for issue 150. Not part of the site or its Worker bundle.",
+  "dependencies": {
+    "@litertjs/core": "^2.6.0",
+    "onnxruntime-node": "^1.31.1",
+    "onnxruntime-web": "^1.31.1"
+  }
+}
