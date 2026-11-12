@@ -86,6 +86,27 @@ The site can be saved to a phone's home screen (`/manifest.webmanifest`, `displa
 | `src/` | Worker and the optional client scripts (`src/client/`) |
 | `test/` | Per-family tests plus worker, render, MCP and audio tests |
 
+## Recognition time (issue 178)
+
+Both identify pages show how long the last recognition took under the results, for example "Recognised in 84 ms on this device. Runtime: relaxed SIMD build." The sound page adds the number of 3-second windows and the typical (median) time for one. This only measures; nothing was made faster.
+
+- `src/client/identify-worker.js` times each run of the model (tensor in, scores out) and sends `timing: { runs, total, build }` with the result. `total` is the sum of the runs, so decoding audio, resampling and cropping are not in it. `build` is `relaxed-simd` or `baseline`, read from the wasm file LiteRT.js asked for; the page calls `baseline` the "compatibility build".
+- `timingText` in `src/client/identify.js` and `src/client/identify-photo.js` writes the line into `#identify-timing`. The first window is usually much slower than the rest (warm-up), which is why the sound page quotes the median and the total separately.
+- Browsers round `performance.now()` (Safari to 1 ms), so short times are approximate.
+
+**The phone figures the issue asks for are not recorded yet.** They need the real devices: open each page on the deployed site, run one recognition, and copy the line here. For sound use the 10-second recording the page makes itself, so the window count is the same on every device.
+
+| Device | Runtime build | Photo | Sound: total | Sound: typical window |
+| --- | --- | --- | --- | --- |
+| iPhone, iOS 27 | | not measured | not measured | not measured |
+| iPhone, iOS 26 (compatibility build) | | not measured | not measured | not measured |
+| iPad | | not measured | not measured | not measured |
+| Android phone | | not measured | not measured | not measured |
+| Development Mac, Playwright Chromium (6-second tone, 3 windows) | relaxed SIMD | not measured (no photo model on disk) | 110 ms | 24 ms |
+| Development Mac, Playwright WebKit (6-second tone, 3 windows) | relaxed SIMD | not measured (no photo model on disk) | 120 ms | 27 ms |
+
+The desktop rows are only a check that the line works; they say nothing about phones.
+
 A species slug is the scientific name in lowercase with spaces turned into hyphens (`Coracias caudatus` → `coracias-caudatus`). KV key `species/<slug>` is the page `/species/<slug>`.
 
 ## What's done

@@ -319,6 +319,10 @@ const identifyPhoto = async (browser, { keepsCache }) => {
       await page.locator('#identify-status').textContent(),
       /^Finished\. \d candidates? listed below\.$/,
     )
+    assert.match(
+      await page.locator('#identify-timing').textContent(),
+      /^Recognised in \d+(\.\d)? m?s on this device\. Runtime: (relaxed SIMD|compatibility) build\.$/,
+    )
 
     // The photo stayed on the device: nothing was sent anywhere.
     assert.deepEqual(uploads, [])

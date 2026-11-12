@@ -79,6 +79,7 @@ export const renderIdentifySoundHtml = ({ origin, doc }) => {
 <h2 id="identify-results-heading" tabindex="-1">Results</h2>
 <p id="identify-summary"></p>
 <ol id="identify-list" class="identify-list"></ol>
+<p id="identify-timing" class="identify-timing" hidden></p>
 </section>
 </section>
 <h2 id="reading">How to read the results</h2>

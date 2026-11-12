@@ -145,6 +145,7 @@ export const renderIdentifyPhotoHtml = ({ origin, doc }) => {
 <p id="identify-close" hidden></p>
 <p><button type="button" id="identify-recrop" class="identify-button identify-quiet">Change the crop</button></p>
 <ol id="identify-list" class="identify-list"></ol>
+<p id="identify-timing" class="identify-timing" hidden></p>
 </section>
 </section>
 <h2 id="reading">How to read the results</h2>

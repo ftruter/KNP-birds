@@ -606,3 +606,20 @@ test('the photo model is credited, and the page is in the sitemap, the home page
   const llms = await (await fetch('/llms.txt')).text()
   assert.match(llms, /\/identify\/photo\.json/)
 })
+
+test('the photo page says how long recognition took', () => {
+  assert.equal(client.timingText(undefined), '')
+  assert.equal(client.timingText({ runs: [], total: 0, build: null }), '')
+  assert.equal(
+    client.timingText({ runs: [83.6], total: 83.6, build: 'relaxed-simd' }),
+    'Recognised in 84 ms on this device. Runtime: relaxed SIMD build.',
+  )
+  assert.equal(
+    client.timingText({ runs: [1234], total: 1234, build: 'baseline' }),
+    'Recognised in 1.2 s on this device. Runtime: compatibility build.',
+  )
+  assert.equal(
+    client.timingText({ runs: [40], total: 40, build: null }),
+    'Recognised in 40 ms on this device.',
+  )
+})
