@@ -113,6 +113,7 @@ const zoomAndRestore = async (page, plate, caption) => {
         pictureWidth: picture.width,
         pictureBottom: picture.bottom,
         caption: text.innerText,
+        description: text.querySelector('.plate-credit').textContent,
         captionBottom: text.getBoundingClientRect().bottom,
         focused: document.activeElement === figure.querySelector('.zoom'),
         open: document.querySelectorAll('.plate.is-zoomed').length,
@@ -132,7 +133,13 @@ const zoomAndRestore = async (page, plate, caption) => {
   assert.equal(before.zoomed, false)
   assert.equal(before.pressed, 'false')
   assert.ok(before.width < before.viewport / 2, 'the photograph starts small')
-  assert.doesNotMatch(before.caption, caption)
+  // What the picture shows is added on zoom. The credit disclosure beside a
+  // guide photograph is there all along, so it cannot tell the two apart.
+  assert.ok(before.description, 'the plate has no description')
+  assert.ok(
+    !before.caption.includes(before.description),
+    'the description shows before the photograph is zoomed',
+  )
 
   for (const restore of ['click', 'Escape']) {
     await button.click()
@@ -149,6 +156,7 @@ const zoomAndRestore = async (page, plate, caption) => {
     assert.ok(open.pictureBottom <= open.height + 1, 'the picture overflows')
     assert.ok(open.captionBottom <= open.height + 1, 'the caption is cut off')
     assert.match(open.caption, caption)
+    assert.ok(open.caption.includes(open.description))
 
     if (restore === 'click') await button.click()
     else await page.keyboard.press('Escape')
