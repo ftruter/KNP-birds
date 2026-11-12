@@ -86,6 +86,77 @@ const ready = async (page) => {
   assert.equal(await page.locator('#identify-nojs').isVisible(), false)
 }
 
+/**
+ * Clicks a photograph in the results, checks that it fills the screen with
+ * its caption, then restores it: once by clicking again, once with Esc.
+ */
+const zoomAndRestore = async (page, plate, caption) => {
+  const button = plate.locator('.zoom')
+  const state = () =>
+    plate.evaluate((figure) => {
+      const rect = figure.getBoundingClientRect()
+      const picture = figure
+        .querySelector('.zoom img, .zoom canvas')
+        .getBoundingClientRect()
+      const text = figure.querySelector('figcaption')
+      return {
+        zoomed: figure.classList.contains('is-zoomed'),
+        settled: getComputedStyle(figure).transform === 'none',
+        pressed: figure.querySelector('.zoom').getAttribute('aria-pressed'),
+        left: rect.left,
+        top: rect.top,
+        width: rect.width,
+        pictureWidth: picture.width,
+        pictureBottom: picture.bottom,
+        caption: text.innerText,
+        captionBottom: text.getBoundingClientRect().bottom,
+        focused: document.activeElement === figure.querySelector('.zoom'),
+        open: document.querySelectorAll('.plate.is-zoomed').length,
+        viewport: window.innerWidth,
+        height: window.innerHeight,
+      }
+    })
+  const settled = async (zoomed) =>
+    page.waitForFunction(
+      ([figure, want]) =>
+        figure.classList.contains('is-zoomed') === want &&
+        getComputedStyle(figure).transform === 'none',
+      [await plate.elementHandle(), zoomed],
+    )
+  await button.scrollIntoViewIfNeeded()
+  const before = await state()
+  assert.equal(before.zoomed, false)
+  assert.equal(before.pressed, 'false')
+  assert.ok(before.width < before.viewport / 2, 'the photograph starts small')
+  assert.doesNotMatch(before.caption, caption)
+
+  for (const restore of ['click', 'Escape']) {
+    await button.click()
+    await settled(true)
+    const open = await state()
+    assert.equal(open.pressed, 'true')
+    assert.equal(open.open, 1)
+    assert.ok(Math.abs(open.left) <= 1 && Math.abs(open.top) <= 1)
+    assert.ok(open.width >= open.viewport - 1, `plate is ${open.width} wide`)
+    assert.ok(
+      open.pictureWidth >= open.viewport - 4,
+      `picture is ${open.pictureWidth} wide`,
+    )
+    assert.ok(open.pictureBottom <= open.height + 1, 'the picture overflows')
+    assert.ok(open.captionBottom <= open.height + 1, 'the caption is cut off')
+    assert.match(open.caption, caption)
+
+    if (restore === 'click') await button.click()
+    else await page.keyboard.press('Escape')
+    await settled(false)
+    const closed = await state()
+    assert.equal(closed.pressed, 'false')
+    assert.equal(closed.open, 0)
+    assert.ok(Math.abs(closed.width - before.width) <= 1, 'size not restored')
+    if (restore === 'Escape') assert.equal(closed.focused, true)
+  }
+}
+
 const identifyFromFile = async (browser, { keepsCache }) => {
   const { context, page, problems } = await open(browser)
   try {
@@ -142,6 +213,14 @@ const identifyFromFile = async (browser, { keepsCache }) => {
       /^(Likely|Possible)/,
     )
     assert.ok(await first.locator('img').getAttribute('alt'))
+    // The guide photograph zooms as the plates on a species page do, and the
+    // name beside it is still the link.
+    assert.equal(await first.locator('a img').count(), 0)
+    await zoomAndRestore(
+      page,
+      first.locator('.plate'),
+      /(Photograph, not AI-generated|AI-generated image)/,
+    )
     assert.match(
       await first.locator('audio').getAttribute('aria-label'),
       /^Reference call of /,

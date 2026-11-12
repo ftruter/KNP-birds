@@ -1,5 +1,10 @@
 import { safeHttpUrl } from './escape.js'
-import { imageAlt, licenceForbidsDerivatives, objectPath } from './guide.js'
+import {
+  imageAlt,
+  imageCaptionParts,
+  licenceForbidsDerivatives,
+  objectPath,
+} from './guide.js'
 import { QUALITY_RANK } from './recordings.js'
 
 export const IDENTIFY_SOUND_PATH = '/identify/sound'
@@ -91,7 +96,21 @@ export const MODEL_CREDIT = {
 const text = (value) =>
   typeof value === 'string' && value.trim() ? value.trim() : null
 
-/** The first photograph the page may show, as the species page would. */
+/** A photograph's caption for the recogniser pages: the label, one line of text, and the source link. */
+const caption = (image) => {
+  const { label, detail, credit, source, sourceText } = imageCaptionParts(image)
+  const parts = [...detail, ...credit, ...(sourceText ? [sourceText] : [])]
+  return {
+    label,
+    text: parts.length ? `${parts.join('. ')}.` : '',
+    ...(source ? { source } : {}),
+  }
+}
+
+/**
+ * The first photograph the page may show, as the species page would. `src` is
+ * the full-size file, so the same picture is sharp when it is zoomed.
+ */
 const thumbnail = (species) => {
   for (const image of Array.isArray(species?.images) ? species.images : []) {
     const remote = safeHttpUrl(image?.fileUrl)
@@ -101,7 +120,8 @@ const thumbnail = (species) => {
         : remote && !licenceForbidsDerivatives(image?.license)
           ? remote
           : null
-    if (src) return { src, alt: imageAlt(species, image) }
+    if (src)
+      return { src, alt: imageAlt(species, image), caption: caption(image) }
   }
   return null
 }

@@ -837,10 +837,20 @@
               "image": {
                 "type": ["object", "null"],
                 "additionalProperties": false,
-                "required": ["src", "alt"],
+                "required": ["src", "alt", "caption"],
                 "properties": {
                   "src": { "type": "string", "minLength": 1 },
-                  "alt": { "type": "string" }
+                  "alt": { "type": "string" },
+                  "caption": {
+                    "type": "object",
+                    "additionalProperties": false,
+                    "required": ["label", "text"],
+                    "properties": {
+                      "label": { "type": "string", "minLength": 1 },
+                      "text": { "type": "string" },
+                      "source": { "type": "string", "minLength": 1 }
+                    }
+                  }
                 }
               },
               "trainingPhotos": { "type": "integer", "minimum": 0 },
@@ -1046,6 +1056,16 @@
                       "alt": {
                         "type": "string",
                         "minLength": 1
+                      },
+                      "caption": {
+                        "type": "object",
+                        "additionalProperties": false,
+                        "required": ["label", "text"],
+                        "properties": {
+                          "label": { "type": "string", "minLength": 1 },
+                          "text": { "type": "string" },
+                          "source": { "type": "string", "minLength": 1 }
+                        }
                       },
                       "type": {
                         "$ref": "#/$defs/textOrNull"
