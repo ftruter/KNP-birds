@@ -562,3 +562,41 @@ test('a file of the wrong kind is refused', async () => {
     /expected audio/,
   )
 })
+
+test('audio the source labels as something else is known by its first bytes', async () => {
+  const { download, sniff } = await import('../scripts/publish-media.mjs')
+  const wav = Buffer.concat([
+    Buffer.from('RIFF'),
+    Buffer.alloc(4),
+    Buffer.from('WAVEfmt '),
+  ])
+  const item = { group: 'audio', key: 'x', source: 'https://example.org/x.wav' }
+  const served = (bytes, type) => async () =>
+    new Response(bytes, { headers: { 'content-type': type } })
+  assert.deepEqual(
+    await download(item, served(wav, 'application/octet-stream')),
+    { bytes: wav, contentType: 'audio/wav' },
+  )
+  const mp3 = Buffer.from('ID3\u0004\u0000\u0000 rest of the file', 'latin1')
+  assert.equal(
+    (await download(item, served(mp3, 'video/mpeg'))).contentType,
+    'audio/mpeg',
+  )
+  // Bytes that are not sound are still refused, and so is a picture.
+  await assert.rejects(
+    download(
+      item,
+      served(Buffer.from('not sound'), 'application/octet-stream'),
+    ),
+    /expected audio/,
+  )
+  await assert.rejects(
+    download(
+      item,
+      served(Buffer.from([0xff, 0xd8, 0xff, 0xe0]), 'application/octet-stream'),
+    ),
+    /expected audio/,
+  )
+  assert.equal(sniff(Buffer.from([0xff, 0xfb, 0x90, 0x00])), 'audio/mpeg')
+  assert.equal(sniff(Buffer.from('<html>')), null)
+})

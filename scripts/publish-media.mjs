@@ -52,7 +52,7 @@ const STREAMS_PER_HOST = 4
 const UPLOAD_STREAMS = 4
 const SAVE_EVERY = 25
 /** A source that has not answered in this long is counted as failed. */
-const TIMEOUT_MS = 120000
+const TIMEOUT_MS = 600000
 const USER_AGENT =
   process.env.MEDIA_USER_AGENT ||
   'knp-birds-media-mirror/1.0 (https://birds.truter.world)'
@@ -84,7 +84,35 @@ export const mediaPlan = (speciesDocs) => {
 
 const KIND = { images: 'image/', audio: 'audio/' }
 
-/** The file at `item.source`: `{ bytes, contentType }`. Fails on anything that is not the expected kind. */
+/**
+ * The media type a file's first bytes show, or null when they show none of
+ * these. xeno-canto labels its WAV uploads application/octet-stream and some
+ * MP3s video/mpeg, so the label alone cannot be trusted.
+ */
+export const sniff = (bytes) => {
+  const text = (from, to) => bytes.subarray(from, to).toString('latin1')
+  if (text(0, 4) === 'RIFF' && text(8, 12) === 'WAVE') return 'audio/wav'
+  if (text(0, 3) === 'ID3') return 'audio/mpeg'
+  if (
+    bytes[0] === 0xff &&
+    (bytes[1] & 0xe0) === 0xe0 &&
+    (bytes[1] & 0x06) !== 0
+  )
+    return 'audio/mpeg'
+  if (text(0, 4) === 'OggS') return 'audio/ogg'
+  if (text(0, 4) === 'fLaC') return 'audio/flac'
+  if (bytes[0] === 0xff && bytes[1] === 0xd8 && bytes[2] === 0xff)
+    return 'image/jpeg'
+  if (text(1, 4) === 'PNG' && bytes[0] === 0x89) return 'image/png'
+  if (text(0, 4) === 'RIFF' && text(8, 12) === 'WEBP') return 'image/webp'
+  return null
+}
+
+/**
+ * The file at `item.source`: `{ bytes, contentType }`. Fails on anything that
+ * is not the expected kind. When the source's label is of another kind, the
+ * file's own first bytes decide.
+ */
 export const download = async (item, fetcher = fetch) => {
   const response = await fetcher(item.source, {
     headers: { 'user-agent': USER_AGENT },
@@ -97,13 +125,21 @@ export const download = async (item, fetcher = fetch) => {
     .split(';')[0]
     .trim()
     .toLowerCase()
-  if (!contentType.startsWith(KIND[item.group]))
+  const stated = (type) => type?.startsWith(KIND[item.group])
+  // A page of HTML or JSON is never read in full to find out what it is not.
+  if (!stated(contentType) && /^text\/|json|xml/.test(contentType))
     throw new Error(
-      `${item.source} is ${contentType || 'of no stated type'}, expected ${KIND[item.group]}*`,
+      `${item.source} is ${contentType}, expected ${KIND[item.group]}*`,
     )
   const bytes = Buffer.from(await response.arrayBuffer())
   if (bytes.length === 0) throw new Error(`${item.source} is empty`)
-  return { bytes, contentType }
+  if (stated(contentType)) return { bytes, contentType }
+  const found = sniff(bytes)
+  if (!stated(found))
+    throw new Error(
+      `${item.source} is ${contentType || 'of no stated type'}, expected ${KIND[item.group]}*`,
+    )
+  return { bytes, contentType: found }
 }
 
 /** The size a source states for a file, or null when it does not say. */

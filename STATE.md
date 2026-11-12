@@ -76,7 +76,7 @@ The site can be saved to a phone's home screen (`/manifest.webmanifest`, `displa
 | `data/vocab/colours.json` | Controlled colour names used in field marks |
 | `data/audio/recordings.json` | Chosen xeno-canto recording and grade, merged onto `calls` at render time |
 | `data/audio/report.json` | Last `pnpm run audio` run log |
-| `data/media/mirror.json` | Written by `pnpm run media:publish`: the photographs and clips copied into R2 for the installed web app, with sizes. Most files are copied; a few large clips time out and are still to copy, so rerun it until `--dry-run` says 0 to copy |
+| `data/media/mirror.json` | Written by `pnpm run media:publish`: the photographs and clips copied into R2 for the installed web app, with sizes. All 970 files are copied; rerun it when photographs or recordings change |
 | `data/identify/` | BirdNET label map for `/identify/sound` and its hand-checked synonym table; `photo-model.json` for `/identify/photo` |
 | `docs/schema.md`, `docs/content.schema.json` | Document shapes |
 | `docs/species-sources.md`, `docs/families-sources.md`, `docs/population-sources.md`, `docs/audio.md` | How lists, estimates and recordings were sourced |

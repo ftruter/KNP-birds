@@ -2991,6 +2991,12 @@
       "contentType": "audio/mpeg",
       "source": "https://xeno-canto.org/sounds/uploaded/IQGZKQAMKT/XC1004507-Batis_Cape_EvertonConservancy_20250606.mp3"
     },
+    "xeno-canto/XC1007496": {
+      "bytes": 9470292,
+      "sha256": "856ccddf4532db9ec0a63d8afa6ff1c13176e8abe15f1d1123fbcdd19bf0a323",
+      "contentType": "audio/wav",
+      "source": "https://xeno-canto.org/sounds/uploaded/YSGTQVRQZI/XC1007496-20240222_KNP_NSerpa_XA60_A001C113_240222HO_CANON_SLE_-3dBNORM.wav"
+    },
     "xeno-canto/XC1009162": {
       "bytes": 1322880,
       "sha256": "fdbe0edfd51052f0887d80dfb8a675075973866b9fa468f5c8d386253af7b1eb",
@@ -3045,6 +3051,12 @@
       "contentType": "audio/mpeg",
       "source": "https://xeno-canto.org/sounds/uploaded/YSGTQVRQZI/XC1016670-20250707_KNP_CNadin_E03_SLE_6kHzLP_500HzHP_Split1_-3dBNORM.mp3"
     },
+    "xeno-canto/XC1019309": {
+      "bytes": 23396230,
+      "sha256": "30ecbdc797af7c9575f5bc20e3e00a4190f4bde3bce18428abbb1fb9185ef6a6",
+      "contentType": "audio/mpeg",
+      "source": "https://xeno-canto.org/sounds/uploaded/YHOCFQHBDL/XC1019309-EuropeanNightjar.2025.07.10%282200%29.HankleyCommon.H5.mp3"
+    },
     "xeno-canto/XC1023576": {
       "bytes": 615360,
       "sha256": "507a08ee9f8cbc3e2d30ac9fa03a340df7f815a6aee772822e40b4ac6be1f049",
@@ -3093,6 +3105,12 @@
       "contentType": "audio/mpeg",
       "source": "https://xeno-canto.org/sounds/uploaded/VWVVYWSUYS/XC1037326-Registrazione-18-Lamprotornis-visto.mp3"
     },
+    "xeno-canto/XC1039698": {
+      "bytes": 291176,
+      "sha256": "1dc39fc890864fcd37a37cb24ea2bc4333c8a497928a621a340978a12db3d527",
+      "contentType": "audio/wav",
+      "source": "https://xeno-canto.org/sounds/uploaded/YSGTQVRQZI/XC1039698-20250909_HB_AK_A050C005_250909RA_CXA60_SLE_250HzHP_-3dBNORM_Hawk-only.wav"
+    },
     "xeno-canto/XC1044220": {
       "bytes": 1515840,
       "sha256": "947cbd40de4a2acc306fa6385e7d5614f7ccf392759d6828cc504fd871c47758",
@@ -3110,6 +3128,12 @@
       "sha256": "32e7ef956b362ed7f1d1708ba2d348d76cf09ceeb0f9ce066cb665802692fdef",
       "contentType": "audio/mpeg",
       "source": "https://xeno-canto.org/sounds/uploaded/YSGTQVRQZI/XC1046125-20251005_KBG_AKaramitsos_A054C034_251005CB_CXA60_SLE_-3dBNORM.mp3"
+    },
+    "xeno-canto/XC1048064": {
+      "bytes": 3160164,
+      "sha256": "8aab01c5f2c67d7602779dabf8512ab067a04f96fff0f68c568c1be23430cc44",
+      "contentType": "audio/wav",
+      "source": "https://xeno-canto.org/sounds/uploaded/YSGTQVRQZI/XC1048064-20250312_DBN_RProbert_Rec2_SLE_150HzHP_-3dBNORM_comb.wav"
     },
     "xeno-canto/XC1049112": {
       "bytes": 665280,
@@ -3140,6 +3164,12 @@
       "sha256": "3f2b45eeaeb2b5f9478ba48bfa717565b282f9a8d20bb6826bdefa96dc8188c6",
       "contentType": "audio/mpeg",
       "source": "https://xeno-canto.org/sounds/uploaded/YSGTQVRQZI/XC1056542-20251110_DV_AKaramitsos_XA60_A005C121_2511105R_SLE_-3dBNORM.mp3"
+    },
+    "xeno-canto/XC1059179": {
+      "bytes": 10919940,
+      "sha256": "3ef2dd49aaa9d84bfd85db3f2ad933da091e4cb4a197b6ae5ed948db73e97476",
+      "contentType": "audio/wav",
+      "source": "https://xeno-canto.org/sounds/uploaded/OYXLQBTHRH/XC1059179-MixPre-925_Ptilopsis-granti_YB.wav"
     },
     "xeno-canto/XC1059224": {
       "bytes": 721920,
@@ -3261,11 +3291,23 @@
       "contentType": "audio/mpeg",
       "source": "https://xeno-canto.org/sounds/uploaded/YSGTQVRQZI/XC1087110-20260301_DV_AKaramitsos_XA60_A016C219_260301V2_SLE_250HP_-3dB.mp3"
     },
+    "xeno-canto/XC1087114": {
+      "bytes": 5952434,
+      "sha256": "470f78715531f672231198a89bc4d985e7410904d1fb49023f41976a2bd3453b",
+      "contentType": "audio/wav",
+      "source": "https://xeno-canto.org/sounds/uploaded/YSGTQVRQZI/XC1087114-20260301_DV_AKaramitsos_XA60_A016C227_260301LN_SLE_350HP_-3dB_split_comb.wav"
+    },
     "xeno-canto/XC108823": {
       "bytes": 809888,
       "sha256": "ddd1f97c03af722e128f1de625a8490670a70db0335ca581ff23ae35b8927048",
       "contentType": "audio/mpeg",
       "source": "https://xeno-canto.org/sounds/uploaded/CDTGHVBGZP/Glossy%20Ibis2012-5-22-3rookery.mp3"
+    },
+    "xeno-canto/XC1090801": {
+      "bytes": 4969252,
+      "sha256": "7b28a71b5084cb1f6b50754663aee55dfdc0ca8fcef4e46527f45939f7038b79",
+      "contentType": "audio/wav",
+      "source": "https://xeno-canto.org/sounds/uploaded/YSGTQVRQZI/XC1090801-20260324_Newlands_ACharman_Phone_142049_SLE_250HP_-3dB_split.wav"
     },
     "xeno-canto/XC1093586": {
       "bytes": 50518,
@@ -3321,11 +3363,29 @@
       "contentType": "audio/mpeg",
       "source": "https://xeno-canto.org/sounds/uploaded/YSGTQVRQZI/XC1137526-20260509_KNP_AKaramitsos_XA60_A024C140_260509MY_SLE_-3dB_RFCisticola.mp3"
     },
+    "xeno-canto/XC1137527": {
+      "bytes": 2163276,
+      "sha256": "046fdcc3e02d0dc3e4bd6b9c206744af747dd104559e7caa0538daa8571b95ff",
+      "contentType": "audio/wav",
+      "source": "https://xeno-canto.org/sounds/uploaded/YSGTQVRQZI/XC1137527-20260509_KNP_AKaramitsos_XA60_A024C140_260509MY_SLE_-3dB_split_Unid2.wav"
+    },
+    "xeno-canto/XC1137538": {
+      "bytes": 7844894,
+      "sha256": "92708ae459bee63e08f40ce4b2a368d080869f99c119bc0409acf8d60a27f506",
+      "contentType": "audio/wav",
+      "source": "https://xeno-canto.org/sounds/uploaded/YSGTQVRQZI/XC1137538-20260509_KNP_AKaramitsos_XA60_A024C156_2605093H_SLE_-3dB_African-Goshawk.wav"
+    },
     "xeno-canto/XC1137920": {
       "bytes": 357164,
       "sha256": "eeebf4123231ce36a6f039730fab218b97984eaa7703b8770ea3cc9e2404cad4",
       "contentType": "audio/mpeg",
       "source": "https://xeno-canto.org/sounds/uploaded/YSGTQVRQZI/XC1137920-20260510_KNP_AKaramitsos_XA60_A025C030_260510PV_SLE_-3dB_barbet.mp3"
+    },
+    "xeno-canto/XC1138542": {
+      "bytes": 33983370,
+      "sha256": "bc89e28da8d0901e23f92ba3fd0bf6f2d10a839e0eb9f9cb5b89e9e272adc4c5",
+      "contentType": "audio/mpeg",
+      "source": "https://xeno-canto.org/sounds/uploaded/GELAPBFFDU/XC1138542-260528-2118-N%C3%A4ktergal-Pilkrogsviken.mp3"
     },
     "xeno-canto/XC1142770": {
       "bytes": 3791084,
@@ -3351,6 +3411,12 @@
       "contentType": "audio/mpeg",
       "source": "https://xeno-canto.org/sounds/uploaded/YSGTQVRQZI/XC1148046-20260512_KNP_AKaramitsos_XA60_A025C123_26051229_SLE_900HP_-3dB_Lapwing.mp3"
     },
+    "xeno-canto/XC1148067": {
+      "bytes": 7600226,
+      "sha256": "df707679fedeac79f5995a45f2cc7b0500e17301791558d751ac158ba76addd7",
+      "contentType": "audio/wav",
+      "source": "https://xeno-canto.org/sounds/uploaded/YSGTQVRQZI/XC1148067-20260514_KNP_AKaramitsos_XA40_A066C056_260514YG_SLE_250HP_-3dB_comb_PKing-Fisher.wav"
+    },
     "xeno-canto/XC1148983": {
       "bytes": 150235,
       "sha256": "8299fc0bd82483916dc3041e1ee493046b8d7e52314369592aa7d90fd248ac46",
@@ -3368,6 +3434,12 @@
       "sha256": "1c38e437b36fe9810fe288a1a1e6d23ca558f8e064ddaa0a365518bc7499dee0",
       "contentType": "audio/mpeg",
       "source": "https://xeno-canto.org/sounds/uploaded/YSGTQVRQZI/XC1149023-20260517_KNP_AKaramitsos_XA60_A026C196_260517XA_SLE_250HP_-3dB_Unid2.mp3"
+    },
+    "xeno-canto/XC1149038": {
+      "bytes": 2904350,
+      "sha256": "1ab0662780dbd3364c818b9e65fcbb90d338718d53b4620550570c81634696fb",
+      "contentType": "audio/wav",
+      "source": "https://xeno-canto.org/sounds/uploaded/YSGTQVRQZI/XC1149038-20260517_KNP_AKaramitsos_XA60_A026C224_260517YV_SLE_400HP_-3dB_comb.wav"
     },
     "xeno-canto/XC1149077": {
       "bytes": 75884,
@@ -3422,6 +3494,12 @@
       "sha256": "943881880e79811ffb5de9493658d610f0df81a481c09814d57aa832f1771aac",
       "contentType": "audio/mpeg",
       "source": "https://xeno-canto.org/sounds/uploaded/PRVFBYIQYZ/XC1152357-circus-pygargus-5-hide-del-cenizo-15-04-2026.mp3"
+    },
+    "xeno-canto/XC1152464": {
+      "bytes": 1672124,
+      "sha256": "1bdb63d7c744b39444fdca03d862e16425868b1b82c6a2014b4c57d05c521928",
+      "contentType": "audio/wav",
+      "source": "https://xeno-canto.org/sounds/uploaded/YSGTQVRQZI/XC1152464-20260520_KNP_AKaramitsos_XA60_A028C016_260520Y4_SLE_250HP_-3dB_Giant-Kingfisher.wav"
     },
     "xeno-canto/XC1161576": {
       "bytes": 378285,
@@ -3512,6 +3590,12 @@
       "sha256": "3763592f6c400b09578c675b94fbe2d1ff79d37c9d67568d0ac34419355955b8",
       "contentType": "audio/mpeg",
       "source": "https://xeno-canto.org/sounds/uploaded/KGENRQCZVH/XC1189079-ANALAM_Nome_06022026_17h25.mp3"
+    },
+    "xeno-canto/XC1190285": {
+      "bytes": 1027738,
+      "sha256": "a8a0992d2990a05d4315cbe5731ad4b10a67cbad7ae13da81807fdad124e940a",
+      "contentType": "audio/wav",
+      "source": "https://xeno-canto.org/sounds/uploaded/ZMKKYDVHMN/XC1190285-Pels-1.wav"
     },
     "xeno-canto/XC124661": {
       "bytes": 90347,
@@ -5535,6 +5619,12 @@
       "contentType": "audio/mpeg",
       "source": "https://xeno-canto.org/sounds/uploaded/JYPQCEFKAM/XC829310-230908-171338Arcebispo.mp3"
     },
+    "xeno-canto/XC830442": {
+      "bytes": 595645,
+      "sha256": "a839e3627a43152c0d90684a36d7dedc36a04aefb9643174565c0b1baa3654be",
+      "contentType": "audio/mpeg",
+      "source": "https://xeno-canto.org/sounds/uploaded/PSTCNWXKNE/XC830442-WhatsApp-Audio-2023-05-03-at-10.56.42.mpeg"
+    },
     "xeno-canto/XC845920": {
       "bytes": 48065,
       "sha256": "f261922bd010bb07f7bf1cf089b28a5b29fe579eb4be7894c30bbeffbacd29eb",
@@ -5571,6 +5661,12 @@
       "contentType": "audio/mpeg",
       "source": "https://xeno-canto.org/sounds/uploaded/LWQXRZHFCU/XC872621-2024-02-06-07_49-sabota-lark.mp3"
     },
+    "xeno-canto/XC881394": {
+      "bytes": 4792020,
+      "sha256": "65521fe3de18516207dac6207b349f56bf446fd4af01b02ba90bc8ba0958fb9a",
+      "contentType": "audio/wav",
+      "source": "https://xeno-canto.org/sounds/uploaded/OHDVJMHMQE/XC881394-20240307-073210_Wahlbergs-Eagle_Meru-NP_edited.wav"
+    },
     "xeno-canto/XC899593": {
       "bytes": 606114,
       "sha256": "1bf8ea3771b7a4bc600c2ba9b7eda2f3fbbf44c4884179eebee240ebbcd906cb",
@@ -5588,6 +5684,12 @@
       "sha256": "03bcde8ed6e9ae362670d0f228b062f10af8af0847328fb69a0e7d24a2f6b753",
       "contentType": "audio/mpeg",
       "source": "https://xeno-canto.org/sounds/uploaded/JDCTKFMBKV/XC904173-EremomelaYellowbellied_BankfonteinPhilippolis_20240514_LSP5.mp3"
+    },
+    "xeno-canto/XC904341": {
+      "bytes": 11130564,
+      "sha256": "54dea627cd262f649885c1288eb72bdee4c4d8df49d7914e10bc51ea139cea1a",
+      "contentType": "audio/wav",
+      "source": "https://xeno-canto.org/sounds/uploaded/WKUHMYUJSN/XC904341-05-09-2024_11h8_fauvette-des-jardins.wav"
     },
     "xeno-canto/XC909530": {
       "bytes": 967575,
@@ -5643,6 +5745,12 @@
       "contentType": "audio/mpeg",
       "source": "https://xeno-canto.org/sounds/uploaded/JDCTKFMBKV/XC938658-OSF1561_92_PipitAfrican_WildealskloofBFN_0241006.mp3"
     },
+    "xeno-canto/XC940363": {
+      "bytes": 506338,
+      "sha256": "6bfba7936fa5192587971da3a9ac64cc0c680663956b5afa70c795f7e272c3f5",
+      "contentType": "audio/wav",
+      "source": "https://xeno-canto.org/sounds/uploaded/TSGYTKHDSW/XC940363-Not-analyzed-2024-09-13-12-53-35-in-Berlin.wav"
+    },
     "xeno-canto/XC949678": {
       "bytes": 230314,
       "sha256": "e61cc24c1f55dc3e4f06c7d2699a2eb4b8eaf13b5b96ba64366c6f341f3755fa",
@@ -5678,6 +5786,12 @@
       "sha256": "ef6c37be55fe7b9e7e71a9195af55e0808edafab1631ddb4cf9dc0b2279f0073",
       "contentType": "audio/mpeg",
       "source": "https://xeno-canto.org/sounds/uploaded/KGENRQCZVH/XC973475-EGRARD_calls3_Doubounoro_24012025_7h.mp3"
+    },
+    "xeno-canto/XC975911": {
+      "bytes": 8954700,
+      "sha256": "9b139c8997c41a68946a3930ea848d38093f4956bfcdb544b828fc57aebe336b",
+      "contentType": "audio/wav",
+      "source": "https://xeno-canto.org/sounds/uploaded/YIKAQIVHQJ/XC975911-25408.-Lizard-Buzzard-%2B-Lesser-Honeyguide---Kiyanga%2C-Mitooma---25-FEB-2025---1.wav"
     },
     "xeno-canto/XC978231": {
       "bytes": 395786,

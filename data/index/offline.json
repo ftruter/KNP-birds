@@ -3806,6 +3806,12 @@
       "alias": "https://xeno-canto.org/sounds/uploaded/UNYBPEWWLO/XC355772-Striped%20Crake.mp3"
     },
     {
+      "slug": "aerospiza-tachiro",
+      "url": "/audio/offline/xeno-canto/XC1137538",
+      "bytes": 7844894,
+      "alias": "https://xeno-canto.org/sounds/uploaded/YSGTQVRQZI/XC1137538-20260509_KNP_AKaramitsos_XA60_A024C156_2605093H_SLE_-3dB_African-Goshawk.wav"
+    },
+    {
       "slug": "agricola-pallidus",
       "url": "/audio/offline/xeno-canto/XC660760",
       "bytes": 1176851,
@@ -4214,6 +4220,12 @@
       "alias": "https://xeno-canto.org/sounds/uploaded/ZNCDXTUOFL/XC151184-Buteo_buteo_Poland_Jarek_Matusiak_20131012_36.mp3"
     },
     {
+      "slug": "buteo-rufofuscus",
+      "url": "/audio/offline/xeno-canto/XC1090801",
+      "bytes": 4969252,
+      "alias": "https://xeno-canto.org/sounds/uploaded/YSGTQVRQZI/XC1090801-20260324_Newlands_ACharman_Phone_142049_SLE_250HP_-3dB_split.wav"
+    },
+    {
       "slug": "buteo-trizonatus",
       "url": "/audio/offline/xeno-canto/XC289313",
       "bytes": 866693,
@@ -4322,6 +4334,12 @@
       "alias": "https://xeno-canto.org/sounds/uploaded/LWQXRZHFCU/XC520229-2019-11-04%2010_50plainbelliedcoqui.mp3"
     },
     {
+      "slug": "caprimulgus-europaeus",
+      "url": "/audio/offline/xeno-canto/XC1019309",
+      "bytes": 23396230,
+      "alias": "https://xeno-canto.org/sounds/uploaded/YHOCFQHBDL/XC1019309-EuropeanNightjar.2025.07.10%282200%29.HankleyCommon.H5.mp3"
+    },
+    {
       "slug": "caprimulgus-fossii",
       "url": "/audio/offline/xeno-canto/XC513152",
       "bytes": 1291295,
@@ -4416,6 +4434,12 @@
       "url": "/audio/offline/xeno-canto/XC872615",
       "bytes": 1854169,
       "alias": "https://xeno-canto.org/sounds/uploaded/LWQXRZHFCU/XC872615-2024-02-05-10_10-white-browed-scrub-robin.mp3"
+    },
+    {
+      "slug": "ceryle-rudis",
+      "url": "/audio/offline/xeno-canto/XC1148067",
+      "bytes": 7600226,
+      "alias": "https://xeno-canto.org/sounds/uploaded/YSGTQVRQZI/XC1148067-20260514_KNP_AKaramitsos_XA40_A066C056_260514YG_SLE_250HP_-3dB_comb_PKing-Fisher.wav"
     },
     {
       "slug": "chalcomitra-amethystina",
@@ -4940,6 +4964,12 @@
       "alias": "https://xeno-canto.org/sounds/uploaded/TWAAJJHMEH/XC307189-Egret%20Little_Vaalkop_151231_29_A.mp3"
     },
     {
+      "slug": "elanus-caeruleus",
+      "url": "/audio/offline/xeno-canto/XC1087114",
+      "bytes": 5952434,
+      "alias": "https://xeno-canto.org/sounds/uploaded/YSGTQVRQZI/XC1087114-20260301_DV_AKaramitsos_XA60_A016C227_260301LN_SLE_350HP_-3dB_split_comb.wav"
+    },
+    {
       "slug": "emberiza-flaviventris",
       "url": "/audio/offline/xeno-canto/XC391998",
       "bytes": 1288404,
@@ -5174,6 +5204,12 @@
       "alias": "https://xeno-canto.org/sounds/uploaded/TSMVYZCIWC/XC978231-20250110Witrugaasv.mp3"
     },
     {
+      "slug": "halcyon-albiventris",
+      "url": "/audio/offline/xeno-canto/XC1137527",
+      "bytes": 2163276,
+      "alias": "https://xeno-canto.org/sounds/uploaded/YSGTQVRQZI/XC1137527-20260509_KNP_AKaramitsos_XA60_A024C140_260509MY_SLE_-3dB_split_Unid2.wav"
+    },
+    {
       "slug": "halcyon-chelicuti",
       "url": "/audio/offline/xeno-canto/XC462092",
       "bytes": 369495,
@@ -5202,6 +5238,12 @@
       "url": "/audio/offline/xeno-canto/XC176712",
       "bytes": 162716,
       "alias": "https://xeno-canto.org/sounds/uploaded/KIFILMEEEO/XC176712-Booted_Eagle_R1_0009.mp3"
+    },
+    {
+      "slug": "hieraaetus-wahlbergi",
+      "url": "/audio/offline/xeno-canto/XC881394",
+      "bytes": 4792020,
+      "alias": "https://xeno-canto.org/sounds/uploaded/OHDVJMHMQE/XC881394-20240307-073210_Wahlbergs-Eagle_Meru-NP_edited.wav"
     },
     {
       "slug": "himantopus-himantopus",
@@ -5252,6 +5294,12 @@
       "alias": "https://xeno-canto.org/sounds/uploaded/UWFNNKHNAE/XC815006-20221214-Pink-throated-Twinspot-South-Africa-Mkhuze-Game-Reserve-Maarten-Sluijter-%281%29.mp3"
     },
     {
+      "slug": "icthyophaga-vocifer",
+      "url": "/audio/offline/xeno-canto/XC1149038",
+      "bytes": 2904350,
+      "alias": "https://xeno-canto.org/sounds/uploaded/YSGTQVRQZI/XC1149038-20260517_KNP_AKaramitsos_XA60_A026C224_260517YV_SLE_400HP_-3dB_comb.wav"
+    },
+    {
       "slug": "iduna-natalensis",
       "url": "/audio/offline/xeno-canto/XC292912",
       "bytes": 1058513,
@@ -5286,6 +5334,18 @@
       "url": "/audio/offline/xeno-canto/XC342721",
       "bytes": 168115,
       "alias": "https://xeno-canto.org/sounds/uploaded/GQMCPIVNXX/XC342721-Red-throated%20Wryneck2.xc.mp3"
+    },
+    {
+      "slug": "kaupifalco-monogrammicus",
+      "url": "/audio/offline/xeno-canto/XC975911",
+      "bytes": 8954700,
+      "alias": "https://xeno-canto.org/sounds/uploaded/YIKAQIVHQJ/XC975911-25408.-Lizard-Buzzard-%2B-Lesser-Honeyguide---Kiyanga%2C-Mitooma---25-FEB-2025---1.wav"
+    },
+    {
+      "slug": "ketupa-lactea",
+      "url": "/audio/offline/xeno-canto/XC1007496",
+      "bytes": 9470292,
+      "alias": "https://xeno-canto.org/sounds/uploaded/YSGTQVRQZI/XC1007496-20240222_KNP_NSerpa_XA60_A001C113_240222HO_CANON_SLE_-3dBNORM.wav"
     },
     {
       "slug": "lagonosticta-rhodopareia",
@@ -5408,6 +5468,12 @@
       "alias": "https://xeno-canto.org/sounds/uploaded/LWQXRZHFCU/XC209351-2015-01-04_05.58%20RC%20Korhaan.mp3"
     },
     {
+      "slug": "luscinia-luscinia",
+      "url": "/audio/offline/xeno-canto/XC1138542",
+      "bytes": 33983370,
+      "alias": "https://xeno-canto.org/sounds/uploaded/GELAPBFFDU/XC1138542-260528-2118-N%C3%A4ktergal-Pilkrogsviken.mp3"
+    },
+    {
       "slug": "lybius-torquatus",
       "url": "/audio/offline/xeno-canto/XC1137920",
       "bytes": 357164,
@@ -5430,6 +5496,12 @@
       "url": "/audio/offline/xeno-canto/XC382958",
       "bytes": 330548,
       "alias": "https://xeno-canto.org/sounds/uploaded/TWAAJJHMEH/XC382958-Shrike%20GH%20Bush_Mjejane_170709_17_B_edit.mp3"
+    },
+    {
+      "slug": "megaceryle-maxima",
+      "url": "/audio/offline/xeno-canto/XC1152464",
+      "bytes": 1672124,
+      "alias": "https://xeno-canto.org/sounds/uploaded/YSGTQVRQZI/XC1152464-20260520_KNP_AKaramitsos_XA60_A028C016_260520Y4_SLE_250HP_-3dB_Giant-Kingfisher.wav"
     },
     {
       "slug": "melaenornis-pammelaina",
@@ -5888,6 +5960,12 @@
       "alias": "https://xeno-canto.org/sounds/uploaded/ZPOTJDOCCS/XC1148983-Martial-Eagle-3-mc.mp3"
     },
     {
+      "slug": "polyboroides-typus",
+      "url": "/audio/offline/xeno-canto/XC1039698",
+      "bytes": 291176,
+      "alias": "https://xeno-canto.org/sounds/uploaded/YSGTQVRQZI/XC1039698-20250909_HB_AK_A050C005_250909RA_CXA60_SLE_250HzHP_-3dBNORM_Hawk-only.wav"
+    },
+    {
       "slug": "porphyrio-alleni",
       "url": "/audio/offline/xeno-canto/XC162127",
       "bytes": 201545,
@@ -5964,6 +6042,12 @@
       "url": "/audio/offline/xeno-canto/XC793340",
       "bytes": 251635,
       "alias": "https://xeno-canto.org/sounds/uploaded/TSMVYZCIWC/XC793340-25-August-2022-18-12-55.mp3"
+    },
+    {
+      "slug": "ptilopsis-granti",
+      "url": "/audio/offline/xeno-canto/XC1059179",
+      "bytes": 10919940,
+      "alias": "https://xeno-canto.org/sounds/uploaded/OYXLQBTHRH/XC1059179-MixPre-925_Ptilopsis-granti_YB.wav"
     },
     {
       "slug": "ptyonoprogne-fuligula",
@@ -6092,6 +6176,12 @@
       "alias": "https://xeno-canto.org/sounds/uploaded/HONDFLZMFW/XC983782-20250327_060917_KNP_CCS_HamerKop_soundLibrary.mp3"
     },
     {
+      "slug": "scotopelia-peli",
+      "url": "/audio/offline/xeno-canto/XC1190285",
+      "bytes": 1027738,
+      "alias": "https://xeno-canto.org/sounds/uploaded/ZMKKYDVHMN/XC1190285-Pels-1.wav"
+    },
+    {
       "slug": "serinus-canicollis",
       "url": "/audio/offline/xeno-canto/XC1046125",
       "bytes": 1306560,
@@ -6146,6 +6236,12 @@
       "alias": "https://xeno-canto.org/sounds/uploaded/VWVVYWSUYS/XC1037291-Registrazione-7-Sporopipes-squamofrons-visto.mp3"
     },
     {
+      "slug": "stephanoaetus-coronatus",
+      "url": "/audio/offline/xeno-canto/XC1048064",
+      "bytes": 3160164,
+      "alias": "https://xeno-canto.org/sounds/uploaded/YSGTQVRQZI/XC1048064-20250312_DBN_RProbert_Rec2_SLE_150HzHP_-3dBNORM_comb.wav"
+    },
+    {
       "slug": "streptopelia-capicola",
       "url": "/audio/offline/xeno-canto/XC1149018",
       "bytes": 685484,
@@ -6174,6 +6270,12 @@
       "url": "/audio/offline/xeno-canto/XC845920",
       "bytes": 48065,
       "alias": "https://xeno-canto.org/sounds/uploaded/WEWZUDAFQF/XC845920-Vibrato1_(200701_0762).mp3"
+    },
+    {
+      "slug": "sylvia-borin",
+      "url": "/audio/offline/xeno-canto/XC904341",
+      "bytes": 11130564,
+      "alias": "https://xeno-canto.org/sounds/uploaded/WKUHMYUJSN/XC904341-05-09-2024_11h8_fauvette-des-jardins.wav"
     },
     {
       "slug": "sylvietta-rufescens",
@@ -6234,6 +6336,12 @@
       "url": "/audio/offline/xeno-canto/XC148574",
       "bytes": 415994,
       "alias": "https://xeno-canto.org/sounds/uploaded/RROSTWUTXO/XC148574-VN_20130922_00030.mp3"
+    },
+    {
+      "slug": "terathopius-ecaudatus",
+      "url": "/audio/offline/xeno-canto/XC940363",
+      "bytes": 506338,
+      "alias": "https://xeno-canto.org/sounds/uploaded/TSGYTKHDSW/XC940363-Not-analyzed-2024-09-13-12-53-35-in-Berlin.wav"
     },
     {
       "slug": "terpsiphone-viridis",
@@ -6414,6 +6522,12 @@
       "url": "/audio/offline/xeno-canto/XC350135",
       "bytes": 300666,
       "alias": "https://xeno-canto.org/sounds/uploaded/SGLTZLDXYI/XC350135-Red-faced%20Mousebirds%20exc.mp3"
+    },
+    {
+      "slug": "urolestes-melanoleucus",
+      "url": "/audio/offline/xeno-canto/XC830442",
+      "bytes": 595645,
+      "alias": "https://xeno-canto.org/sounds/uploaded/PSTCNWXKNE/XC830442-WhatsApp-Audio-2023-05-03-at-10.56.42.mpeg"
     },
     {
       "slug": "vanellus-albiceps",
