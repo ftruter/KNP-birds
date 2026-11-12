@@ -21,6 +21,7 @@ import {
   familyTotalModel,
   HOME_POPULATION_INTRO,
   imageAlt,
+  imageCaptionParts,
   indexRows,
   licenceForbidsDerivatives,
   mediaSexLabel,
@@ -595,28 +596,12 @@ const figures = (doc, images, imagesAvailable, colourMap) => {
 }
 
 const imageCaption = (image) => {
-  const label = image?.aiGenerated
-    ? 'AI-generated image'
-    : 'Photograph, not AI-generated'
-  const view = viewLabel(image?.view)
-  const sex = mediaSexLabel(image?.sex)
-  const captionText =
-    typeof image?.caption === 'string' ? image.caption.trim() : ''
-  const source = safeHttpUrl(image?.source)
-  const credit = [image?.author, image?.license]
-    .filter(Boolean)
-    .map((part) => escapeHtml(part))
-    .join('. ')
+  const { label, detail, credit, source, sourceText } = imageCaptionParts(image)
   const sourceHtml = source
     ? `<a href="${escapeHtml(source)}">Source</a>`
-    : image?.source
-      ? escapeHtml(image.source)
-      : ''
-  const detail = [sex, view, captionText].filter(Boolean)
-  const html = `<span class="ai-label">${escapeHtml(label)}</span>${detail.length ? ` ${detail.map((part) => escapeHtml(part)).join('. ')}.` : ''}${credit ? ` ${credit}.` : ''}${sourceHtml ? ` ${sourceHtml}.` : ''}`
-  const text = [label, sex, view, captionText, image?.author, image?.license]
-    .filter(Boolean)
-    .join('. ')
+    : escapeHtml(sourceText)
+  const html = `<span class="ai-label">${escapeHtml(label)}</span>${detail.length ? ` ${detail.map((part) => escapeHtml(part)).join('. ')}.` : ''}${credit.length ? ` ${credit.map((part) => escapeHtml(part)).join('. ')}.` : ''}${sourceHtml ? ` ${sourceHtml}.` : ''}`
+  const text = [label, ...detail, ...credit].join('. ')
   return { html, text }
 }
 

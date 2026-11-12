@@ -12,6 +12,9 @@ const sourcePath = path.join(root, 'src/client/app.js')
 const svg =
   '<svg xmlns="http://www.w3.org/2000/svg" width="960" height="640"><rect width="960" height="640" fill="#1d4e2a"/></svg>'
 
+const tallSvg =
+  '<svg xmlns="http://www.w3.org/2000/svg" width="400" height="1600"><rect width="400" height="1600" fill="#1d4e2a"/></svg>'
+
 let site
 let mf
 let origin = ''
@@ -61,7 +64,7 @@ const prepare = async (page) => {
       return route.fulfill({
         status: 200,
         contentType: 'image/svg+xml',
-        body: svg,
+        body: route.request().url().includes('tall') ? tallSvg : svg,
       })
     }
     if (type === 'document') {
@@ -150,6 +153,56 @@ const exercise = async (browser) => {
         `image stayed expanded at ${restored.imgWidth}`,
       )
     }
+    // A photograph added after the page loaded zooms too. A tall one is
+    // fitted to the screen's height with its caption in view, and Esc
+    // restores it and returns focus to it.
+    await page.evaluate(() => {
+      const late = document.querySelector('.plate').cloneNode(true)
+      late.id = 'late-plate'
+      const img = late.querySelector('img')
+      img.removeAttribute('loading')
+      img.src = '/images/tall.svg'
+      document.querySelector('.plate').before(late)
+      return img.decode()
+    })
+    await page.locator('#late-plate .zoom').click()
+    await page.waitForFunction(() => {
+      const plate = document.querySelector('#late-plate.is-zoomed')
+      return plate && getComputedStyle(plate).transform === 'none'
+    })
+    const tall = await page.evaluate(() => {
+      const plate = document.querySelector('#late-plate')
+      const image = plate.querySelector('img').getBoundingClientRect()
+      const caption = plate.querySelector('figcaption').getBoundingClientRect()
+      return {
+        open: document.querySelectorAll('.plate.is-zoomed').length,
+        pressed: plate.querySelector('.zoom').getAttribute('aria-pressed'),
+        imageWidth: image.width,
+        imageBottom: image.bottom,
+        captionTop: caption.top,
+        captionBottom: caption.bottom,
+        width: window.innerWidth,
+        height: window.innerHeight,
+      }
+    })
+    assert.equal(tall.open, 1)
+    assert.equal(tall.pressed, 'true')
+    assert.ok(tall.imageWidth >= tall.width - 4, 'the picture box is narrow')
+    assert.ok(
+      tall.imageBottom <= tall.captionTop + 1 &&
+        tall.captionBottom <= tall.height + 1,
+      `a tall photograph does not fit the screen: ${JSON.stringify(tall)}`,
+    )
+    await page.keyboard.press('Escape')
+    await page.waitForFunction(
+      () => !document.querySelector('.plate.is-zoomed'),
+    )
+    assert.equal(
+      await page.evaluate(() =>
+        document.activeElement?.matches('#late-plate .zoom'),
+      ),
+      true,
+    )
     let documentFetches = 0
     page.on('request', (request) => {
       if (request.resourceType() === 'document') documentFetches += 1
