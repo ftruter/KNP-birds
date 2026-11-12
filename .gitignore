@@ -15,3 +15,10 @@ data/.DS_Store
 .claude
 spike/identify-sound/bench/vendor/
 __pycache__/
+spike/identify-photo/models/
+spike/identify-photo/.venv*/
+spike/identify-photo/photos/
+spike/identify-photo/cache/
+spike/identify-photo/runs/
+spike/identify-photo/node_modules/
+spike/identify-photo/bench/vendor/

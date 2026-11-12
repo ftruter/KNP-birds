@@ -14,7 +14,14 @@ const style = {
 }
 
 export default [
-  { ignores: ['node_modules/**', 'dist/**', '.wrangler/**'] },
+  {
+    ignores: [
+      'node_modules/**',
+      'dist/**',
+      '.wrangler/**',
+      'spike/**/.venv*/**',
+    ],
+  },
   {
     files: ['src/**/*.js'],
     languageOptions: {

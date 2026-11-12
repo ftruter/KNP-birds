@@ -1,0 +1,734 @@
+{
+ "overall": {
+  "photos": 5889,
+  "species": 493,
+  "top1": 0.7522499575479707,
+  "top3": 0.8729835286126677,
+  "top5": 0.9057564951604686,
+  "familyOfTop": 0.8661912039395483,
+  "familyBySum": 0.8736627610799796,
+  "top3MeanOverSpecies": 0.872189879086431
+ },
+ "perFamily": {
+  "accipitridae": {
+   "photos": 480,
+   "top1": 0.63125,
+   "top3": 0.8083333333333333,
+   "family": 0.9541666666666667
+  },
+  "acrocephalidae": {
+   "photos": 96,
+   "top1": 0.4270833333333333,
+   "top3": 0.7083333333333334,
+   "family": 0.6458333333333334
+  },
+  "alaudidae": {
+   "photos": 108,
+   "top1": 0.8055555555555556,
+   "top3": 0.8703703703703703,
+   "family": 0.8703703703703703
+  },
+  "alcedinidae": {
+   "photos": 108,
+   "top1": 0.9166666666666666,
+   "top3": 0.9444444444444444,
+   "family": 0.9259259259259259
+  },
+  "anatidae": {
+   "photos": 156,
+   "top1": 0.782051282051282,
+   "top3": 0.8589743589743589,
+   "family": 0.8974358974358975
+  },
+  "anhingidae": {
+   "photos": 12,
+   "top1": 0.8333333333333334,
+   "top3": 0.9166666666666666,
+   "family": 0.8333333333333334
+  },
+  "apodidae": {
+   "photos": 102,
+   "top1": 0.4803921568627451,
+   "top3": 0.7941176470588235,
+   "family": 0.9117647058823529
+  },
+  "ardeidae": {
+   "photos": 180,
+   "top1": 0.7833333333333333,
+   "top3": 0.9222222222222223,
+   "family": 0.9111111111111111
+  },
+  "bucerotidae": {
+   "photos": 60,
+   "top1": 0.8666666666666667,
+   "top3": 0.9666666666666667,
+   "family": 0.9166666666666666
+  },
+  "bucorvidae": {
+   "photos": 12,
+   "top1": 0.9166666666666666,
+   "top3": 1.0,
+   "family": 0.9166666666666666
+  },
+  "buphagidae": {
+   "photos": 24,
+   "top1": 0.7083333333333334,
+   "top3": 0.9166666666666666,
+   "family": 0.875
+  },
+  "burhinidae": {
+   "photos": 24,
+   "top1": 0.9166666666666666,
+   "top3": 0.9583333333333334,
+   "family": 0.875
+  },
+  "campephagidae": {
+   "photos": 36,
+   "top1": 0.6944444444444444,
+   "top3": 0.8888888888888888,
+   "family": 0.75
+  },
+  "caprimulgidae": {
+   "photos": 72,
+   "top1": 0.6944444444444444,
+   "top3": 0.8194444444444444,
+   "family": 0.875
+  },
+  "charadriidae": {
+   "photos": 132,
+   "top1": 0.8409090909090909,
+   "top3": 0.9166666666666666,
+   "family": 0.9318181818181818
+  },
+  "ciconiidae": {
+   "photos": 96,
+   "top1": 0.8541666666666666,
+   "top3": 0.8958333333333334,
+   "family": 0.875
+  },
+  "cisticolidae": {
+   "photos": 252,
+   "top1": 0.6190476190476191,
+   "top3": 0.7658730158730159,
+   "family": 0.8531746031746031
+  },
+  "coliidae": {
+   "photos": 24,
+   "top1": 0.8333333333333334,
+   "top3": 0.9583333333333334,
+   "family": 0.8333333333333334
+  },
+  "columbidae": {
+   "photos": 156,
+   "top1": 0.8397435897435898,
+   "top3": 0.9294871794871795,
+   "family": 0.9102564102564102
+  },
+  "coraciidae": {
+   "photos": 60,
+   "top1": 0.9833333333333333,
+   "top3": 0.9833333333333333,
+   "family": 0.95
+  },
+  "corvidae": {
+   "photos": 36,
+   "top1": 0.6111111111111112,
+   "top3": 0.8611111111111112,
+   "family": 0.7222222222222222
+  },
+  "cuculidae": {
+   "photos": 166,
+   "top1": 0.7289156626506024,
+   "top3": 0.891566265060241,
+   "family": 0.8554216867469879
+  },
+  "dicruridae": {
+   "photos": 24,
+   "top1": 0.7083333333333334,
+   "top3": 0.8333333333333334,
+   "family": 0.75
+  },
+  "emberizidae": {
+   "photos": 36,
+   "top1": 0.9166666666666666,
+   "top3": 0.9722222222222222,
+   "family": 0.8611111111111112
+  },
+  "estrildidae": {
+   "photos": 215,
+   "top1": 0.8325581395348837,
+   "top3": 0.9162790697674419,
+   "family": 0.9441860465116279
+  },
+  "falconidae": {
+   "photos": 108,
+   "top1": 0.7037037037037037,
+   "top3": 0.7962962962962963,
+   "family": 0.8055555555555556
+  },
+  "fringillidae": {
+   "photos": 72,
+   "top1": 0.7916666666666666,
+   "top3": 0.8611111111111112,
+   "family": 0.8194444444444444
+  },
+  "glareolidae": {
+   "photos": 60,
+   "top1": 0.8666666666666667,
+   "top3": 0.8833333333333333,
+   "family": 0.8666666666666667
+  },
+  "heliornithidae": {
+   "photos": 12,
+   "top1": 0.8333333333333334,
+   "top3": 0.9166666666666666,
+   "family": 0.8333333333333334
+  },
+  "hirundinidae": {
+   "photos": 168,
+   "top1": 0.6130952380952381,
+   "top3": 0.7976190476190477,
+   "family": 0.8809523809523809
+  },
+  "indicatoridae": {
+   "photos": 48,
+   "top1": 0.6458333333333334,
+   "top3": 0.75,
+   "family": 0.6875
+  },
+  "jacanidae": {
+   "photos": 24,
+   "top1": 0.8333333333333334,
+   "top3": 1.0,
+   "family": 0.875
+  },
+  "laniidae": {
+   "photos": 60,
+   "top1": 0.8166666666666667,
+   "top3": 0.8833333333333333,
+   "family": 0.8666666666666667
+  },
+  "laridae": {
+   "photos": 48,
+   "top1": 0.625,
+   "top3": 0.7916666666666666,
+   "family": 0.6875
+  },
+  "leiothrichidae": {
+   "photos": 12,
+   "top1": 0.9166666666666666,
+   "top3": 1.0,
+   "family": 0.8333333333333334
+  },
+  "locustellidae": {
+   "photos": 43,
+   "top1": 0.6744186046511628,
+   "top3": 0.813953488372093,
+   "family": 0.6744186046511628
+  },
+  "lybiidae": {
+   "photos": 60,
+   "top1": 0.8666666666666667,
+   "top3": 0.9333333333333333,
+   "family": 0.8833333333333333
+  },
+  "macrosphenidae": {
+   "photos": 24,
+   "top1": 0.75,
+   "top3": 0.8333333333333334,
+   "family": 0.75
+  },
+  "malaconotidae": {
+   "photos": 144,
+   "top1": 0.7708333333333334,
+   "top3": 0.9166666666666666,
+   "family": 0.8958333333333334
+  },
+  "meropidae": {
+   "photos": 72,
+   "top1": 0.9444444444444444,
+   "top3": 0.9861111111111112,
+   "family": 0.9722222222222222
+  },
+  "monarchidae": {
+   "photos": 24,
+   "top1": 0.8333333333333334,
+   "top3": 0.9166666666666666,
+   "family": 0.8333333333333334
+  },
+  "motacillidae": {
+   "photos": 131,
+   "top1": 0.7175572519083969,
+   "top3": 0.8625954198473282,
+   "family": 0.8702290076335878
+  },
+  "muscicapidae": {
+   "photos": 288,
+   "top1": 0.7847222222222222,
+   "top3": 0.9166666666666666,
+   "family": 0.8784722222222222
+  },
+  "musophagidae": {
+   "photos": 24,
+   "top1": 0.6666666666666666,
+   "top3": 0.75,
+   "family": 0.7083333333333334
+  },
+  "nectariniidae": {
+   "photos": 120,
+   "top1": 0.625,
+   "top3": 0.8083333333333333,
+   "family": 0.8583333333333333
+  },
+  "nicatoridae": {
+   "photos": 12,
+   "top1": 1.0,
+   "top3": 1.0,
+   "family": 0.9166666666666666
+  },
+  "numididae": {
+   "photos": 24,
+   "top1": 0.9583333333333334,
+   "top3": 1.0,
+   "family": 1.0
+  },
+  "oriolidae": {
+   "photos": 36,
+   "top1": 0.7222222222222222,
+   "top3": 0.8611111111111112,
+   "family": 0.7777777777777778
+  },
+  "otididae": {
+   "photos": 36,
+   "top1": 1.0,
+   "top3": 1.0,
+   "family": 1.0
+  },
+  "pandionidae": {
+   "photos": 12,
+   "top1": 1.0,
+   "top3": 1.0,
+   "family": 0.75
+  },
+  "paridae": {
+   "photos": 12,
+   "top1": 0.6666666666666666,
+   "top3": 0.75,
+   "family": 0.6666666666666666
+  },
+  "passeridae": {
+   "photos": 48,
+   "top1": 0.625,
+   "top3": 0.7708333333333334,
+   "family": 0.6666666666666666
+  },
+  "pelecanidae": {
+   "photos": 24,
+   "top1": 0.5833333333333334,
+   "top3": 0.75,
+   "family": 0.7916666666666666
+  },
+  "phalacrocoracidae": {
+   "photos": 24,
+   "top1": 0.75,
+   "top3": 0.9583333333333334,
+   "family": 0.875
+  },
+  "phasianidae": {
+   "photos": 96,
+   "top1": 0.875,
+   "top3": 0.9375,
+   "family": 0.9479166666666666
+  },
+  "phoenicopteridae": {
+   "photos": 24,
+   "top1": 0.7083333333333334,
+   "top3": 0.9166666666666666,
+   "family": 0.875
+  },
+  "phoeniculidae": {
+   "photos": 24,
+   "top1": 0.7083333333333334,
+   "top3": 0.875,
+   "family": 0.7916666666666666
+  },
+  "phylloscopidae": {
+   "photos": 24,
+   "top1": 0.9583333333333334,
+   "top3": 0.9583333333333334,
+   "family": 0.9583333333333334
+  },
+  "picidae": {
+   "photos": 72,
+   "top1": 0.8333333333333334,
+   "top3": 0.8888888888888888,
+   "family": 0.9305555555555556
+  },
+  "platysteiridae": {
+   "photos": 36,
+   "top1": 0.8888888888888888,
+   "top3": 0.9444444444444444,
+   "family": 0.8611111111111112
+  },
+  "ploceidae": {
+   "photos": 216,
+   "top1": 0.75,
+   "top3": 0.8611111111111112,
+   "family": 0.875
+  },
+  "podicipedidae": {
+   "photos": 12,
+   "top1": 0.6666666666666666,
+   "top3": 0.9166666666666666,
+   "family": 0.5
+  },
+  "psittacidae": {
+   "photos": 24,
+   "top1": 0.875,
+   "top3": 0.875,
+   "family": 0.875
+  },
+  "pteroclidae": {
+   "photos": 12,
+   "top1": 0.9166666666666666,
+   "top3": 0.9166666666666666,
+   "family": 0.9166666666666666
+  },
+  "pycnonotidae": {
+   "photos": 60,
+   "top1": 0.75,
+   "top3": 0.9,
+   "family": 0.7833333333333333
+  },
+  "rallidae": {
+   "photos": 110,
+   "top1": 0.7909090909090909,
+   "top3": 0.8909090909090909,
+   "family": 0.9090909090909091
+  },
+  "recurvirostridae": {
+   "photos": 24,
+   "top1": 0.875,
+   "top3": 0.9583333333333334,
+   "family": 0.75
+  },
+  "remizidae": {
+   "photos": 12,
+   "top1": 0.5833333333333334,
+   "top3": 0.8333333333333334,
+   "family": 0.4166666666666667
+  },
+  "rostratulidae": {
+   "photos": 12,
+   "top1": 0.9166666666666666,
+   "top3": 1.0,
+   "family": 0.9166666666666666
+  },
+  "sagittariidae": {
+   "photos": 12,
+   "top1": 0.9166666666666666,
+   "top3": 0.9166666666666666,
+   "family": 0.9166666666666666
+  },
+  "sarothruridae": {
+   "photos": 22,
+   "top1": 0.7272727272727273,
+   "top3": 0.8636363636363636,
+   "family": 0.7727272727272727
+  },
+  "scolopacidae": {
+   "photos": 120,
+   "top1": 0.8166666666666667,
+   "top3": 0.925,
+   "family": 0.9583333333333334
+  },
+  "scopidae": {
+   "photos": 12,
+   "top1": 0.8333333333333334,
+   "top3": 0.8333333333333334,
+   "family": 0.8333333333333334
+  },
+  "strigidae": {
+   "photos": 108,
+   "top1": 0.7592592592592593,
+   "top3": 0.8611111111111112,
+   "family": 0.9074074074074074
+  },
+  "struthionidae": {
+   "photos": 12,
+   "top1": 0.8333333333333334,
+   "top3": 0.9166666666666666,
+   "family": 0.75
+  },
+  "sturnidae": {
+   "photos": 108,
+   "top1": 0.75,
+   "top3": 0.9074074074074074,
+   "family": 0.9166666666666666
+  },
+  "sylviidae": {
+   "photos": 24,
+   "top1": 0.375,
+   "top3": 0.6666666666666666,
+   "family": 0.4166666666666667
+  },
+  "threskiornithidae": {
+   "photos": 60,
+   "top1": 0.7833333333333333,
+   "top3": 0.8666666666666667,
+   "family": 0.8
+  },
+  "trogonidae": {
+   "photos": 12,
+   "top1": 1.0,
+   "top3": 1.0,
+   "family": 1.0
+  },
+  "turdidae": {
+   "photos": 48,
+   "top1": 0.875,
+   "top3": 0.9583333333333334,
+   "family": 0.9166666666666666
+  },
+  "turnicidae": {
+   "photos": 12,
+   "top1": 0.8333333333333334,
+   "top3": 0.9166666666666666,
+   "family": 0.8333333333333334
+  },
+  "tytonidae": {
+   "photos": 12,
+   "top1": 0.8333333333333334,
+   "top3": 1.0,
+   "family": 0.8333333333333334
+  },
+  "upupidae": {
+   "photos": 12,
+   "top1": 0.8333333333333334,
+   "top3": 0.8333333333333334,
+   "family": 0.75
+  },
+  "vangidae": {
+   "photos": 24,
+   "top1": 0.9166666666666666,
+   "top3": 0.9166666666666666,
+   "family": 0.9166666666666666
+  },
+  "viduidae": {
+   "photos": 84,
+   "top1": 0.6547619047619048,
+   "top3": 0.8095238095238095,
+   "family": 0.8333333333333334
+  },
+  "zosteropidae": {
+   "photos": 12,
+   "top1": 1.0,
+   "top3": 1.0,
+   "family": 1.0
+  }
+ },
+ "speciesScore": [
+  {
+   "atLeast": 0.9,
+   "photos": 1132,
+   "correct": 0.991166077738516
+  },
+  {
+   "atLeast": 0.75,
+   "photos": 2384,
+   "correct": 0.9794463087248322
+  },
+  {
+   "atLeast": 0.5,
+   "photos": 3705,
+   "correct": 0.9303643724696357
+  },
+  {
+   "atLeast": 0.25,
+   "photos": 4965,
+   "correct": 0.8424974823766365
+  },
+  {
+   "atLeast": 0.1,
+   "photos": 5724,
+   "correct": 0.7700908455625437
+  }
+ ],
+ "familyScore": [
+  {
+   "atLeast": 0.9,
+   "photos": 1736,
+   "correct": 0.9976958525345622
+  },
+  {
+   "atLeast": 0.75,
+   "photos": 3305,
+   "correct": 0.9948562783661119
+  },
+  {
+   "atLeast": 0.5,
+   "photos": 4525,
+   "correct": 0.9741436464088398
+  },
+  {
+   "atLeast": 0.25,
+   "photos": 5477,
+   "correct": 0.9169253240825269
+  }
+ ],
+ "familyFirst": {
+  "speciesUnder0.5": 2184,
+  "familyAtLeast0.5": 820,
+  "familyCorrectThere": 0.9341463414634147,
+  "neither": 1364
+ },
+ "monthPrior": [
+  {
+   "weight": 1.0,
+   "top1": 0.7522499575479707,
+   "top3": 0.8729835286126677
+  },
+  {
+   "weight": 0.5,
+   "top1": 0.7529291900152827,
+   "top3": 0.8729835286126677
+  },
+  {
+   "weight": 0.25,
+   "top1": 0.7530989981321107,
+   "top3": 0.8729835286126677
+  },
+  {
+   "weight": 0.1,
+   "top1": 0.7530989981321107,
+   "top3": 0.8731533367294957
+  }
+ ],
+ "weakSpecies": [
+  {
+   "slug": "cisticola-fulvicapilla",
+   "top3": 0.4166666666666667,
+   "mostOftenTakenFor": "cisticola-chiniana"
+  },
+  {
+   "slug": "euplectes-albonotatus",
+   "top3": 0.4166666666666667,
+   "mostOftenTakenFor": "cisticola-galactotes"
+  },
+  {
+   "slug": "apus-horus",
+   "top3": 0.5,
+   "mostOftenTakenFor": "apus-barbatus"
+  },
+  {
+   "slug": "eremomela-icteropygialis",
+   "top3": 0.5,
+   "mostOftenTakenFor": "apalis-flavida"
+  },
+  {
+   "slug": "falco-concolor",
+   "top3": 0.5,
+   "mostOftenTakenFor": "tachyspiza-badia"
+  },
+  {
+   "slug": "hippolais-olivetorum",
+   "top3": 0.5,
+   "mostOftenTakenFor": "eremomela-usticollis"
+  },
+  {
+   "slug": "prodotiscus-regulus",
+   "top3": 0.5,
+   "mostOftenTakenFor": "riparia-paludicola"
+  },
+  {
+   "slug": "bradypterus-barratti",
+   "top3": 0.5714285714285714,
+   "mostOftenTakenFor": "crinifer-concolor"
+  },
+  {
+   "slug": "acrocephalus-palustris",
+   "top3": 0.5833333333333334,
+   "mostOftenTakenFor": "phylloscopus-trochilus"
+  },
+  {
+   "slug": "aerospiza-tachiro",
+   "top3": 0.5833333333333334,
+   "mostOftenTakenFor": "tachyspiza-minulla"
+  },
+  {
+   "slug": "aquila-nipalensis",
+   "top3": 0.5833333333333334,
+   "mostOftenTakenFor": "clanga-pomarina"
+  },
+  {
+   "slug": "bubo-capensis",
+   "top3": 0.5833333333333334,
+   "mostOftenTakenFor": "bubo-africanus"
+  },
+  {
+   "slug": "caprimulgus-vexillarius",
+   "top3": 0.5833333333333334,
+   "mostOftenTakenFor": "granatina-granatina"
+  },
+  {
+   "slug": "cinnyris-chalybeus",
+   "top3": 0.5833333333333334,
+   "mostOftenTakenFor": "crithagra-gularis"
+  },
+  {
+   "slug": "curruca-communis",
+   "top3": 0.5833333333333334,
+   "mostOftenTakenFor": "cisticola-galactotes"
+  },
+  {
+   "slug": "hirundo-albigularis",
+   "top3": 0.5833333333333334,
+   "mostOftenTakenFor": "hirundo-rustica"
+  },
+  {
+   "slug": "pseudhirundo-griseopyga",
+   "top3": 0.5833333333333334,
+   "mostOftenTakenFor": "delichon-urbicum"
+  },
+  {
+   "slug": "vidua-macroura",
+   "top3": 0.5833333333333334,
+   "mostOftenTakenFor": "quelea-quelea"
+  },
+  {
+   "slug": "acrocephalus-arundinaceus",
+   "top3": 0.6666666666666666,
+   "mostOftenTakenFor": "acrocephalus-schoenobaenus"
+  },
+  {
+   "slug": "amirafra-rufocinnamomea",
+   "top3": 0.6666666666666666,
+   "mostOftenTakenFor": "calendulauda-sabota"
+  },
+  {
+   "slug": "anas-capensis",
+   "top3": 0.6666666666666666,
+   "mostOftenTakenFor": "dendrocygna-viduata"
+  },
+  {
+   "slug": "anthus-leucophrys",
+   "top3": 0.6666666666666666,
+   "mostOftenTakenFor": "anthus-vaalensis"
+  },
+  {
+   "slug": "chlidonias-hybrida",
+   "top3": 0.6666666666666666,
+   "mostOftenTakenFor": "chlidonias-leucopterus"
+  },
+  {
+   "slug": "circaetus-pectoralis",
+   "top3": 0.6666666666666666,
+   "mostOftenTakenFor": "hieraaetus-pennatus"
+  },
+  {
+   "slug": "columba-livia",
+   "top3": 0.6666666666666666,
+   "mostOftenTakenFor": "oena-capensis"
+  }
+ ]
+}
