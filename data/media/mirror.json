@@ -1783,6 +1783,12 @@
       "contentType": "image/jpeg",
       "source": "https://inaturalist-open-data.s3.amazonaws.com/photos/356992982/large.jpg"
     },
+    "lybius-torquatus/side.jpg": {
+      "bytes": 887847,
+      "sha256": "6ce35e65e1c720cd596f8b5262a2d222a455fd45151abec80cf924881bcac15d",
+      "contentType": "image/jpeg",
+      "source": "https://inaturalist-open-data.s3.amazonaws.com/photos/317415470/large.jpeg"
+    },
     "macheiramphus-alcinus/flight-below.jpg": {
       "bytes": 365101,
       "sha256": "fb0d7813d65662eec47346dd5091e4170dad3b5ea77c6a40004d2926cb079113",
@@ -3411,6 +3417,12 @@
       "contentType": "audio/mpeg",
       "source": "https://xeno-canto.org/sounds/uploaded/YSGTQVRQZI/XC1149917-20260531_OPNR_AKaramitsos_XA60_A029C082_2605312D_SLE_250HP_-3dB.mp3"
     },
+    "xeno-canto/XC1152357": {
+      "bytes": 18583016,
+      "sha256": "943881880e79811ffb5de9493658d610f0df81a481c09814d57aa832f1771aac",
+      "contentType": "audio/mpeg",
+      "source": "https://xeno-canto.org/sounds/uploaded/PRVFBYIQYZ/XC1152357-circus-pygargus-5-hide-del-cenizo-15-04-2026.mp3"
+    },
     "xeno-canto/XC1161576": {
       "bytes": 378285,
       "sha256": "94a79d79f2961c84f1e840e526825999c94cf7b09b236b974723d5f8e986a42d",
@@ -3560,6 +3572,12 @@
       "sha256": "ee44675a3ab144b6a2364f4b88b0f2f5fef3291873f7a5304ca8adae496dafcb",
       "contentType": "audio/mpeg",
       "source": "https://xeno-canto.org/sounds/uploaded/WHMHZHCMPX/XC135814-DSCN9952.mp3"
+    },
+    "xeno-canto/XC137862": {
+      "bytes": 4480397,
+      "sha256": "d7b1daf1101928b38c351d0a33171b3b47ae454e26ba5156dd1f10a64b485b8c",
+      "contentType": "audio/mpeg",
+      "source": "https://xeno-canto.org/sounds/uploaded/RFGQDPLDEC/XC137862-Vaktel%20%20XC%20-H%C3%B8sbj%C3%B8r%20-%2009.06.2013%20kl.%2013.00%20%201.mp3"
     },
     "xeno-canto/XC140811": {
       "bytes": 4074804,
@@ -4695,6 +4713,12 @@
       "contentType": "audio/mpeg",
       "source": "https://xeno-canto.org/sounds/uploaded/UZRIEUDUHM/XC446215-Brown-crownedTchagra_MopaniRegion_KrugerNationalPark_SouthAfrica_20171005_06h14.mp3"
     },
+    "xeno-canto/XC447081": {
+      "bytes": 2846966,
+      "sha256": "541610fcbc8569b8189b54f3f9b39f9a3a8cb74db80d4657805f0634ec22cd69",
+      "contentType": "audio/mpeg",
+      "source": "https://xeno-canto.org/sounds/uploaded/UZRIEUDUHM/XC447081-White-crestedHelmetshrike_PopaFalls_Namibia_20180916_15h43.mp3"
+    },
     "xeno-canto/XC449486": {
       "bytes": 2021097,
       "sha256": "e760ea35f256871b834bc9581afc9b2f9efdac449d28e06322d0c00d75eeafdb",
@@ -4725,17 +4749,35 @@
       "contentType": "audio/mpeg",
       "source": "https://xeno-canto.org/sounds/uploaded/ELJNEGDKGC/XC462092-Striped%20Kingfisher.mp3"
     },
+    "xeno-canto/XC466641": {
+      "bytes": 784208,
+      "sha256": "7d8a3c7336c00df8733b01b833448a024fdaf88146654ede93ea43f04d4982af",
+      "contentType": "audio/mpeg",
+      "source": "https://xeno-canto.org/sounds/uploaded/HMBDEWEZVS/XC466641-8%20WR%20Swift.mp3"
+    },
     "xeno-canto/XC46803": {
       "bytes": 191516,
       "sha256": "14184f40bacb3b60b17927a4c5e013c1deae41baf550f6185653d0fba06fe50a",
       "contentType": "audio/mpeg",
       "source": "https://xeno-canto.org/sounds/uploaded/BYLLSJRVDZ/Hirundo%20rustica_Barn%20Swallow_Albufera%20Mar%20Chiquita%20%28puente%20en%20la%20ruta%29_Mar%20Chiquita_Buenos%20Aires_Argentina%20a_Bernabe%20Lopez-Lanus.mp3"
     },
+    "xeno-canto/XC472382": {
+      "bytes": 609996,
+      "sha256": "1a1b4464b47c8d62fec36363969ecb31127ef437197701d3892c75d661675659",
+      "contentType": "audio/mpeg",
+      "source": "https://xeno-canto.org/sounds/uploaded/RFRTVEHIZX/XC472382-20190401_MourningDove_call_LakeZiway_OC.mp3"
+    },
     "xeno-canto/XC472484": {
       "bytes": 717326,
       "sha256": "9c83656e07b4d58c6c9e49e957496c4ab2d0f5fbe2b9c22ed4da21be0369c6d5",
       "contentType": "audio/mpeg",
       "source": "https://xeno-canto.org/sounds/uploaded/HMBDEWEZVS/XC472484-1%20BT%20Canary.mp3"
+    },
+    "xeno-canto/XC475304": {
+      "bytes": 249540,
+      "sha256": "5286263047207f49e2ecd0fee195779cc12e0154840fb0c27b63550c878ec12f",
+      "contentType": "audio/mpeg",
+      "source": "https://xeno-canto.org/sounds/uploaded/RGSEIIJGHA/XC475304-SwallowtailedBeeeater_Kafountine_190517_0197_edited.mp3"
     },
     "xeno-canto/XC476620": {
       "bytes": 1188379,

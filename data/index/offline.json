@@ -2568,6 +2568,12 @@
       "alias": "https://inaturalist-open-data.s3.amazonaws.com/photos/356992982/large.jpg"
     },
     {
+      "slug": "lybius-torquatus",
+      "url": "/images/offline/lybius-torquatus/side.jpg",
+      "bytes": 887847,
+      "alias": "https://inaturalist-open-data.s3.amazonaws.com/photos/317415470/large.jpeg"
+    },
+    {
       "slug": "macheiramphus-alcinus",
       "url": "/images/offline/macheiramphus-alcinus/flight-below.jpg",
       "bytes": 365101,
@@ -4010,6 +4016,12 @@
       "alias": "https://xeno-canto.org/sounds/uploaded/RFRTVEHIZX/XC368196-170406_AfricanBlackSwifts_flockcalls_God%27sWindow_OC.mp3"
     },
     {
+      "slug": "apus-caffer",
+      "url": "/audio/offline/xeno-canto/XC466641",
+      "bytes": 784208,
+      "alias": "https://xeno-canto.org/sounds/uploaded/HMBDEWEZVS/XC466641-8%20WR%20Swift.mp3"
+    },
+    {
       "slug": "apus-horus",
       "url": "/audio/offline/xeno-canto/XC410343",
       "bytes": 345512,
@@ -4556,6 +4568,12 @@
       "alias": "https://xeno-canto.org/sounds/uploaded/VZLEHMNYBX/XC549572-stepuak_1.mp3"
     },
     {
+      "slug": "circus-pygargus",
+      "url": "/audio/offline/xeno-canto/XC1152357",
+      "bytes": 18583016,
+      "alias": "https://xeno-canto.org/sounds/uploaded/PRVFBYIQYZ/XC1152357-circus-pygargus-5-hide-del-cenizo-15-04-2026.mp3"
+    },
+    {
       "slug": "circus-ranivorus",
       "url": "/audio/offline/xeno-canto/XC433948",
       "bytes": 663244,
@@ -4740,6 +4758,12 @@
       "url": "/audio/offline/xeno-canto/XC349556",
       "bytes": 390136,
       "alias": "https://xeno-canto.org/sounds/uploaded/HKZHCDLLNS/XC349556-2016-11-28%20St%20Lucia%20Gwalagwala%20-%20Red-capped%20Robin%20Chat%20%28Natal%20Robin%29.mp3"
+    },
+    {
+      "slug": "coturnix-coturnix",
+      "url": "/audio/offline/xeno-canto/XC137862",
+      "bytes": 4480397,
+      "alias": "https://xeno-canto.org/sounds/uploaded/RFGQDPLDEC/XC137862-Vaktel%20%20XC%20-H%C3%B8sbj%C3%B8r%20-%2009.06.2013%20kl.%2013.00%20%201.mp3"
     },
     {
       "slug": "coturnix-delegorguei",
@@ -5438,6 +5462,12 @@
       "alias": "https://xeno-canto.org/sounds/uploaded/YSGTQVRQZI/XC1149412-20260519_KNP_AKaramitsos_XA60_A027C058_26051986_SLE_1000HP_-3dB_Bee-eater.mp3"
     },
     {
+      "slug": "merops-hirundineus",
+      "url": "/audio/offline/xeno-canto/XC475304",
+      "bytes": 249540,
+      "alias": "https://xeno-canto.org/sounds/uploaded/RGSEIIJGHA/XC475304-SwallowtailedBeeeater_Kafountine_190517_0197_edited.mp3"
+    },
+    {
       "slug": "merops-nubicoides",
       "url": "/audio/offline/xeno-canto/XC1188475",
       "bytes": 906550,
@@ -5888,6 +5918,12 @@
       "alias": "https://xeno-canto.org/sounds/uploaded/YSGTQVRQZI/XC1001874-20240219_KNP_NSerpa_XA60_MVI_0002_SLE_1kHzHP_-3dBNORM.mp3"
     },
     {
+      "slug": "prionops-plumatus",
+      "url": "/audio/offline/xeno-canto/XC447081",
+      "bytes": 2846966,
+      "alias": "https://xeno-canto.org/sounds/uploaded/UZRIEUDUHM/XC447081-White-crestedHelmetshrike_PopaFalls_Namibia_20180916_15h43.mp3"
+    },
+    {
       "slug": "prionops-retzii",
       "url": "/audio/offline/xeno-canto/XC237788",
       "bytes": 233289,
@@ -6114,6 +6150,12 @@
       "url": "/audio/offline/xeno-canto/XC1149018",
       "bytes": 685484,
       "alias": "https://xeno-canto.org/sounds/uploaded/YSGTQVRQZI/XC1149018-20260517_KNP_AKaramitsos_XA60_A026C193_260517TV_SLE_-3dB_RNDove.mp3"
+    },
+    {
+      "slug": "streptopelia-decipiens",
+      "url": "/audio/offline/xeno-canto/XC472382",
+      "bytes": 609996,
+      "alias": "https://xeno-canto.org/sounds/uploaded/RFRTVEHIZX/XC472382-20190401_MourningDove_call_LakeZiway_OC.mp3"
     },
     {
       "slug": "streptopelia-semitorquata",
