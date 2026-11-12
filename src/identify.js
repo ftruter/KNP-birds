@@ -49,6 +49,20 @@ export const MODEL_ASSETS = {
 export const MODEL_PREFIX = 'models'
 export const modelBase = `/${MODEL_PREFIX}/${MODEL_ASSETS.version}/`
 
+/**
+ * The SHA-256 a recogniser page expects of its model and of each wasm build,
+ * by address. The page checks a copy saved on the device against these
+ * before using it.
+ */
+export const modelChecks = (modelUrl, sha256) => ({
+  [modelUrl]: sha256,
+  ...Object.fromEntries(
+    MODEL_ASSETS.runtime
+      .filter((item) => item.sha256)
+      .map((item) => [modelBase + item.file, item.sha256]),
+  ),
+})
+
 /** Bytes as mebibytes (1 MiB = 1,048,576 bytes) to one decimal place. */
 export const mebibytes = (bytes) => (bytes / 1048576).toFixed(1)
 

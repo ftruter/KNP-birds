@@ -1,3 +1,4 @@
+import { createHash } from 'node:crypto'
 import assert from 'node:assert/strict'
 import { access, readFile } from 'node:fs/promises'
 import path from 'node:path'
@@ -34,6 +35,21 @@ const skip =
 let site
 let roller
 let photo
+// The stand-in model and runtime files are zeros of the right size, so the
+// checksums the panel is given are replaced with theirs. `damaged` names
+// files whose checksum is left as the real file's, which the zeros fail.
+const zeros = (bytes) =>
+  createHash('sha256').update(new Uint8Array(bytes)).digest('hex')
+const standIns = Object.fromEntries([
+  ...[MODEL_ASSETS.model, ...MODEL_ASSETS.runtime].map((item) => [
+    `/models/${MODEL_ASSETS.version}/${item.file}`,
+    zeros(item.bytes),
+  ]),
+  [
+    `/models/${PHOTO_MODEL.version}/${PHOTO_MODEL.file}`,
+    zeros(PHOTO_MODEL.bytes),
+  ],
+])
 
 before(
   async () => {
@@ -107,10 +123,32 @@ after(
 )
 
 /** A page in a fresh browser profile. `standalone` opens it as from the home screen. */
-const open = async (browser, { standalone = true, connection = null } = {}) => {
+const open = async (
+  browser,
+  { standalone = true, connection = null, damaged = [], checks = {} } = {},
+) => {
   const context = await browser.newContext({
     viewport: { width: 390, height: 844 },
   })
+  await context.addInitScript(
+    ({ checks, skip }) => {
+      const real = window.fetch.bind(window)
+      window.fetch = async (input, init) => {
+        const response = await real(input, init)
+        const url = typeof input === 'string' ? input : input.url
+        if (!/\/offline\.json$/.test(url) || !response.ok) return response
+        const manifest = await response.json()
+        for (const file of manifest.files)
+          if (checks[file.url] && !skip.includes(file.url))
+            file.sha256 = checks[file.url]
+        return new Response(JSON.stringify(manifest), {
+          status: 200,
+          headers: { 'content-type': 'application/json' },
+        })
+      }
+    },
+    { checks: { ...standIns, ...checks }, skip: damaged },
+  )
   if (standalone)
     await context.addInitScript(() => {
       Object.defineProperty(navigator, 'standalone', { get: () => true })
@@ -279,7 +317,14 @@ each(
 each(
   'an interrupted model download carries on from the parts it has',
   async (browser) => {
-    const { page, errors } = await open(browser)
+    // What the finished file will be: the marked part, then the server's zeros.
+    const whole = new Uint8Array(MODEL_ASSETS.model.bytes)
+    whole.fill(7, 0, 4 * 1048576)
+    const { page, errors } = await open(browser, {
+      checks: {
+        [SOUND_MODEL]: createHash('sha256').update(whole).digest('hex'),
+      },
+    })
     // The first visit registers the service worker, as a first launch does.
     // (Playwright's WebKit drops Cache Storage written before that.)
     await page.goto(`${site.origin}/families`)
@@ -553,3 +598,52 @@ each(
     assert.equal(await message.isHidden(), true)
   },
 )
+
+each(
+  'the photo page says why a cloud photo will not open with no connection',
+  async (browser) => {
+    const { context, page, errors } = await open(browser, { standalone: false })
+    try {
+      await page.goto(`${site.origin}/identify/photo`)
+      const note = page.locator('#identify-offline')
+      await page.waitForFunction(
+        () => !document.querySelector('#identify')?.hidden,
+      )
+      assert.equal(await note.getAttribute('hidden'), '')
+      await context.setOffline(true)
+      await page.waitForFunction(
+        () => !document.querySelector('#identify-offline')?.hidden,
+      )
+      assert.match(await note.textContent(), /kept in the cloud/)
+      await context.setOffline(false)
+      await page.waitForFunction(
+        () => document.querySelector('#identify-offline')?.hidden,
+      )
+      assert.deepEqual(errors, [])
+    } finally {
+      await context.close()
+    }
+  },
+)
+
+each('a model that arrives damaged is refused, not kept', async (browser) => {
+  const model = `/models/${PHOTO_MODEL.version}/${PHOTO_MODEL.file}`
+  const { context, page } = await open(browser, { damaged: [model] })
+  try {
+    await page.goto(`${site.origin}/`)
+    await row(page, 'photo-model').check()
+    // Three attempts fail, and the row says so and offers to try again.
+    await page
+      .locator('#offline-photo-model-message')
+      .getByRole('button', { name: 'Retry' })
+      .waitFor({ timeout: 60000 })
+    const kept = await page.evaluate(async (url) => {
+      for (const name of await caches.keys())
+        if (await (await caches.open(name)).match(url)) return name
+      return null
+    }, model)
+    assert.equal(kept, null)
+  } finally {
+    await context.close()
+  }
+})

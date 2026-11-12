@@ -409,6 +409,7 @@ const boot = async () => {
           modelBytes,
           downloadBytes,
           cacheName,
+          checks: JSON.parse(root.dataset.checks || '{}'),
         },
         [],
         ({ received, total }) => {

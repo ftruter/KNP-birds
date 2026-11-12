@@ -12,6 +12,7 @@ import {
   downloadSummary,
   mebibytes,
   modelBase,
+  modelChecks,
 } from './identify.js'
 import { pageMd } from './markdown.js'
 
@@ -53,7 +54,7 @@ export const renderIdentifySoundHtml = ({ origin, doc }) => {
 <p>${escapeHtml(INTRO)}</p>
 <p class="identify-privacy">${escapeHtml(PRIVACY_NOTE)}</p>
 <p id="identify-nojs" class="identify-note"><span id="identify-nojs-reason">${escapeHtml(NO_JS_NOTE)}</span> You can still browse the <a href="/species">species list</a> or <a href="/search">search by name</a>, and every species page has its calls.</p>
-<section id="identify" class="identify" hidden data-doc="${IDENTIFY_SOUND_PATH}.json" data-worker="${escapeHtml(identifySrc('/identify-worker.js'))}" data-capture="${escapeHtml(identifySrc('/identify-capture.js'))}" data-models="${escapeHtml(modelBase)}" data-model-file="${escapeHtml(MODEL_ASSETS.model.file)}" data-model-bytes="${MODEL_ASSETS.model.bytes}" data-download-bytes="${downloadBytes}" data-cache="identify-sound-${escapeHtml(MODEL_ASSETS.version)}">
+<section id="identify" class="identify" hidden data-doc="${IDENTIFY_SOUND_PATH}.json" data-worker="${escapeHtml(identifySrc('/identify-worker.js'))}" data-capture="${escapeHtml(identifySrc('/identify-capture.js'))}" data-models="${escapeHtml(modelBase)}" data-model-file="${escapeHtml(MODEL_ASSETS.model.file)}" data-model-bytes="${MODEL_ASSETS.model.bytes}" data-download-bytes="${downloadBytes}" data-cache="identify-sound-${escapeHtml(MODEL_ASSETS.version)}" data-checks="${escapeHtml(JSON.stringify(modelChecks(modelBase + MODEL_ASSETS.model.file, MODEL_ASSETS.model.sha256)))}">
 <p id="identify-status" class="identify-status" role="status" aria-live="polite"></p>
 <div id="identify-consent" hidden>
 <h2>Download the recogniser</h2>
