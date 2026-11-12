@@ -101,6 +101,57 @@ Species least often in the top three include Barratt's Warbler (29%), Horus Swif
 Sunbird, Sooty Falcon, Southern Grey-headed Sparrow and Grey-rumped Swallow (58% each). The full tables are
 written by `training/identify-photo/analyse.py`.
 
+## Permissive-only comparison (for issue 158)
+
+The owner wants the published weights to be as permissive as possible. A second model was trained on CC0 and
+CC BY photos only: same base model, same settings, same 5,889 test photos, none of them in its training set.
+Its photo list is `training/identify-photo/manifest-permissive.csv.gz`.
+
+**Decision (owner, 2026-11-12): the permissive-only model is too weak and is dropped.** It is not shipped and
+not published. The model trained on all five licences is the one the site uses and the one that goes to
+Hugging Face, under a non-commercial licence; its Hugging Face model card must say that a permissive-only
+model was tried and why it was dropped, with the numbers below.
+
+| | All five licences (shipped) | CC0 and CC BY only |
+| --- | --- | --- |
+| Training photos | 180,892 | 124,882 |
+| Median training photos per species | 400 | 289 |
+| Median observers per species | 225 | 77 |
+| Species with fewer than 50 training photos | 3 | 78 |
+| Right species first | 82.3% | 73.3% |
+| Right species in the top three (target 80%) | 92.2% | 85.8% |
+| Right family (target 90%) | 92.4% | 87.5% |
+| Families reaching 90% on family, of 86 | 57 | 41 |
+| Families reaching 80% on species in the top three, of 86 | 83 | 69 |
+| Test photos where neither species nor family is confident | 1,231 | 2,027 |
+
+Both files are the 8-bit export at 288 pixels. The permissive-only model meets the top-three target and
+misses the family target.
+
+The loss falls almost entirely on species with few permissive photos:
+
+| CC0 and CC BY training photos | Species | Top three, shipped | Top three, permissive | Family, shipped | Family, permissive |
+| --- | --- | --- | --- | --- | --- |
+| 0 to 9 | 11 | 84% | 27% | 86% | 57% |
+| 10 to 49 | 67 | 87% | 63% | 89% | 73% |
+| 50 to 99 | 40 | 95% | 85% | 94% | 87% |
+| 100 to 199 | 78 | 93% | 89% | 94% | 90% |
+| 200 to 399 | 91 | 94% | 92% | 94% | 92% |
+| 400 | 206 | 92% | 92% | 92% | 91% |
+
+Bushveld Pipit has no CC0 or CC BY photo at all, so the permissive model can never return it. Grey-rumped
+Swallow has one, Barratt's Warbler and Orange-winged Pytilia two, Lemon-breasted Canary three. The look-alike
+groups suffer most: cisticolas fall from 87% to 70% in the top three, pipits and wagtails from 94% to 76%,
+grassbirds from 84% to 58%.
+
+Which licence the weights could carry, read cautiously (this is not legal advice, and whether model weights
+are a derivative of their training photos is not settled law):
+
+- **All five licences:** non-commercial, because 85% of the photos are CC BY-NC or CC BY-NC-SA, and arguably
+  share-alike, because CC BY-SA and CC BY-NC-SA photos are in the set. CC BY-NC-SA 4.0 is the safe choice.
+- **CC0 and CC BY only:** a permissive licence that keeps attribution, such as Apache 2.0 or CC BY 4.0, with
+  the photo list published beside the weights as the attribution. The base model's weights are Apache 2.0.
+
 ## Limits
 
 - **Not measured on a phone.** Speed and memory were measured on a desktop computer and in desktop Chromium
