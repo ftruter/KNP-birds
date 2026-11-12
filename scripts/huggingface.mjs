@@ -348,8 +348,74 @@ const few = (model) => {
   }
 }
 
+/**
+ * The model that was tried and dropped: trained on CC0 and CC BY photos
+ * only, so that the weights could carry a permissive licence. The owner
+ * decided on 2026-11-12 that it is too weak; the card has to say so, with
+ * the numbers. They come from the training folder's own result files.
+ */
+export const readPermissive = async (trainingDir) => {
+  const read = (name) => readJsonFile(path.join(trainingDir, name))
+  const [results, buckets] = await Promise.all([
+    read('results-mnv4m-2p-int8.json'),
+    read('compare-permissive.json'),
+  ])
+  const rows = parseCsv(
+    gunzipSync(
+      await readFile(path.join(trainingDir, 'manifest-permissive.csv.gz')),
+    ).toString('utf8'),
+  )
+  return {
+    photos: rows.filter((row) => row.split === 'train').length,
+    top1: results.overall.top1,
+    top3: results.overall.top3,
+    family: results.overall.familyBySum,
+    buckets,
+  }
+}
+
+const bucketName = (range) => {
+  const [from, to] = range.split('-')
+  return from === to ? from : `${from} to ${to}`
+}
+
+const permissiveSection = (model, permissive) => {
+  if (!permissive) return ''
+  const e = model.evaluation
+  const under50 = permissive.buckets
+    .filter((row) => Number(row.permissivePhotos.split('-')[1]) < 50)
+    .reduce((sum, row) => sum + row.species, 0)
+  return `
+### A permissive-only model was tried and dropped
+
+We wanted the weights to be as permissive as our own code and data. So a second model was trained on CC0 and CC BY photographs only, which could have been released under a permissive licence with attribution: same base model, same settings, same ${count(e.photos)} test photographs. It was too weak, and it is not published.
+
+| | This model (all five licences) | CC0 and CC BY only (dropped) |
+| --- | --- | --- |
+| Training photographs | ${count(model.training.photos)} | ${count(permissive.photos)} |
+| Species with fewer than 50 training photographs | ${few(model).under50} | ${under50} |
+| Right species first | ${pct(e.top1)} | ${pct(permissive.top1)} |
+| Right species in the top three | ${pct(e.top3)} | ${pct(permissive.top3)} |
+| Right family | ${pct(e.family)} | ${pct(permissive.family)} |
+
+The loss falls almost entirely on the species with few permissively licensed photographs, which are the rare and look-alike species a visitor most needs help with:
+
+| CC0 and CC BY training photographs | Species | Top three, this model | Top three, permissive | Family, this model | Family, permissive |
+| --- | --- | --- | --- | --- | --- |
+${permissive.buckets.map((row) => `| ${bucketName(row.permissivePhotos)} | ${row.species} | ${whole(row.allTop3)} | ${whole(row.permTop3)} | ${whole(row.allFamily)} | ${whole(row.permFamily)} |`).join('\n')}
+
+Its photo list and results are in \`training/\` (\`manifest-permissive.csv.gz\`, \`analysis-mnv4m-2p.md\`), and \`training/README.md\` says how to rebuild it.
+`
+}
+
 /** README.md of the Hugging Face repository. Every number comes from photo-model.json. */
-export const modelCard = ({ model, species, families, evaluation }) => {
+export const modelCard = ({
+  model,
+  species,
+  families,
+  evaluation,
+  permissive = null,
+}) => {
   const licence = weightsLicence(model.training.licences)
   const labels = labelRows(model, species, families)
   const e = model.evaluation
@@ -514,7 +580,7 @@ Full detail, file by file, is in [\`LICENSES.md\`](${tree}/LICENSES.md).
 ${whyThisLicence(licence, model.training.licences)}
 
 The base model's weights are Apache 2.0, which allows fine-tuned weights to be redistributed and adds no condition beyond these. Whether model weights are legally a derivative of their training photographs is not settled; this is the cautious reading and it is not legal advice.
-
+${permissiveSection(model, permissive)}
 **What we wrote ourselves is as permissive as we can make it:**
 
 - the training code in \`training/\`: [0BSD](https://opensource.org/license/0bsd), no attribution needed;
@@ -565,9 +631,9 @@ Different files have different owners, so they have different licences.
 | Files | Licence | Whose |
 | --- | --- | --- |
 | \`${PHOTO_MODEL.file}\`, \`${model.original.file}\` (the weights) | [${licence.name}](${licence.url}) | Derived from the training photographs and the base model; see below |
-| \`training/\` (code and its README), except \`training/manifest.csv.gz\` | [0BSD](https://opensource.org/license/0bsd); text in \`training/LICENSE\` | Ours |
+| \`training/\` (code, result files and README), except the two \`manifest\` photo lists | [0BSD](https://opensource.org/license/0bsd); text in \`training/LICENSE\` | Ours |
 | \`README.md\`, \`LICENSES.md\`, \`labels.csv\`, \`photo-model.json\`, \`sound/\` | [CC0 1.0](https://creativecommons.org/publicdomain/zero/1.0/) | Ours |
-| \`evaluation/photos.csv\`, \`training-photos.csv.gz\`, \`training/manifest.csv.gz\` | The species labels, splits and other columns we added: CC0 1.0. The photographer names, licences and attribution lines are facts about the photographs, repeated from iNaturalist | Ours, and the photographers' |
+| \`evaluation/photos.csv\`, \`training-photos.csv.gz\`, \`training/manifest.csv.gz\`, \`training/manifest-permissive.csv.gz\` | The species labels, splits and other columns we added: CC0 1.0. The photographer names, licences and attribution lines are facts about the photographs, repeated from iNaturalist | Ours, and the photographers' |
 | \`evaluation/photos/\` (the test photographs) | Each under its own Creative Commons licence, named in \`evaluation/photos.csv\` | Their photographers |
 
 ## The weights
@@ -740,6 +806,7 @@ export const huggingFaceFiles = async ({
       species,
       families,
       evaluation: { published: held.length, bytes: evaluationBytes },
+      permissive: await readPermissive(trainingDir),
     }),
   )
   add('LICENSES.md', licencesFile({ model }))

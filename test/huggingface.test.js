@@ -16,6 +16,7 @@ import {
   licencesFile,
   modelCard,
   parseCsv,
+  readPermissive,
   photoRow,
   toCsv,
   trainingFiles,
@@ -102,11 +103,15 @@ test('every training and test photo is listed with source, author and licence', 
   )
 })
 
-test('the model card covers what the issue asks for, from the data', () => {
+test('the model card covers what the issue asks for, from the data', async () => {
+  const permissive = await readPermissive(
+    new URL('../training/identify-photo/', import.meta.url).pathname,
+  )
   const card = modelCard({
     model,
     species,
     families,
+    permissive,
     evaluation: { published: model.evaluation.photos, bytes: 591000000 },
   })
   assert.doesNotMatch(card, /undefined|NaN|\[object/)
@@ -149,6 +154,19 @@ test('the model card covers what the issue asks for, from the data', () => {
   assert.ok(card.includes('| CC BY-NC 4.0 | 152,367 |'))
   assert.match(card, /\*\*Non-commercial\*\*, because 154,133 of the 180,892/)
   assert.match(card, /0BSD/)
+  // The owner's decision: say the permissive-only model was tried and dropped, with numbers.
+  assert.equal(permissive.photos, 124882)
+  assert.match(card, /### A permissive-only model was tried and dropped/)
+  assert.ok(card.includes('| Training photographs | 180,892 | 124,882 |'))
+  assert.ok(card.includes('| Right species in the top three | 92.2% | 85.8% |'))
+  assert.ok(card.includes('| Right family | 92.4% | 87.5% |'))
+  assert.ok(
+    card.includes(
+      '| Species with fewer than 50 training photographs | 3 | 78 |',
+    ),
+  )
+  assert.ok(card.includes('| 0 to 9 | 11 | 84% | 27% | 86% | 57% |'))
+  assert.ok(card.includes('| 400 | 206 | 92% | 92% | 92% | 91% |'))
   assert.match(card, /CC0 1\.0/)
   assert.match(licencesFile({ model }), /zenodo\.org\/records\/15050749/)
 })
