@@ -95,7 +95,7 @@ test('species HTML has the six comparisons, population, and no client script', a
   assert.match(html, /Habitat/)
   assert.match(html, /Similar species/)
   assert.match(html, /<h2>Sources<\/h2>/)
-  assert.match(html, /Not stored on this site yet/)
+  assert.match(html, /Saved on this site: no\. It loads from /)
   assert.match(html, /<img /)
   assert.doesNotMatch(html, /Sample content, to be verified/)
   assert.match(html, /rel="alternate" type="text\/markdown"/)

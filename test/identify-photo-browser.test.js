@@ -295,11 +295,14 @@ const identifyPhoto = async (browser, { keepsCache }) => {
     assert.equal(await side(), 192)
     await zoomAndRestore(page, plates.nth(0), /has not left this device/)
     assert.equal(await side(), 375)
-    await zoomAndRestore(
-      page,
-      plates.nth(1),
-      /(Photograph, not AI-generated|AI-generated image)/,
-    )
+    await zoomAndRestore(page, plates.nth(1), /Credit: \S/)
+    // The guide photograph carries a closed credit disclosure, zoomed or not.
+    const credit = plates.nth(1).locator('details.credit')
+    assert.equal(await credit.count(), 1)
+    assert.equal(await credit.getAttribute('open'), null)
+    assert.match(await credit.locator('summary').textContent(), /^Credit: \S/)
+    await credit.locator('summary').click()
+    assert.match(await credit.textContent(), /Saved on this site: (yes|no)\./)
     assert.match(
       await page.locator('#identify-summary').textContent(),
       /No result is certain/,

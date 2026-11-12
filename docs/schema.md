@@ -110,7 +110,7 @@ Each image:
 | `author` | Who made the photograph. |
 | `license` | Licence name, for example `CC BY 4.0`. The field name stays `license`. The credits page copies it to `licence`. |
 | `licenceUrl` | Optional. A link to the licence terms, or `null` when there is no URL. Omitted when it has not been filled in. |
-| `aiGenerated` | Shown in the caption. `true` is labelled "AI-generated image". `false` is labelled "Photograph, not AI-generated". |
+| `aiGenerated` | `true` is labelled "AI-generated image" in the caption. `false` is stated as "Photograph, not AI-generated" inside the credit disclosure. |
 | `alt` | Optional alt text. Otherwise the page builds alt text from the name and tags. |
 
 ### Calls
@@ -233,7 +233,7 @@ The colours page shows the name beside the swatch, so the colour is not the only
 
 `index/identify-sound` (`kind: "identify-sound"`) is the coverage document behind `/identify/sound`. `scripts/seed.mjs` writes it from `data/identify/birdnet-labels.json` and the species files; it is not edited by hand. Every species in the guide is in exactly one of three lists, and the build fails if one is missing.
 
-- `covered`: species the model can return. Each has `slug`, `scientificName`, `en`, `af`, `family` (a slug into `families`), `labels` (positions in the model's output), `modelNames` (the model's own names for those labels), `monthsPresent` (or `null` when the species file has none), `image` and `call` (`src` plus `alt` or `type`; `null` when the page has nothing it may show or play; an `image` also has `caption`, the credit shown when the photograph is zoomed: `label`, `text` and, when there is one, a `source` link), and `partial` when the model covers only part of the species.
+- `covered`: species the model can return. Each has `slug`, `scientificName`, `en`, `af`, `family` (a slug into `families`), `labels` (positions in the model's output), `modelNames` (the model's own names for those labels), `monthsPresent` (or `null` when the species file has none), `image` and `call` (`src` plus `alt` or `type`, and `credit`; `null` when the page has nothing it may show or play; an `image` also has `caption`, what the photograph shows, printed when it is zoomed: `text`, and `label` only for an AI-generated image; a `call` has `aiGenerated: true` only when it is), and `partial` when the model covers only part of the species.
 - `broaderLabelOnly`: species whose only candidate label also covers birds from elsewhere. They are not mapped. Each has `modelLabel` and `reason`.
 - `notInModel`: species with no label at all.
 
@@ -241,11 +241,13 @@ The colours page shows the name beside the swatch, so the colour is not the only
 
 A species is matched to a label by scientific name, or through the hand-checked table `data/identify/birdnet-synonyms.json`. Edit that table and rerun `node scripts/map-birdnet-labels.mjs`; never edit `birdnet-labels.json`, and never add a mapping that has not been checked.
 
+`credit` on an `image` or a `call` is the credit disclosure the result list shows, built by `creditModel` in `src/credit.js`, the same function the species page uses. `summary` is the closed line (`Credit: ` and the shortest form of the author's name). `lines` are the lines inside it, in order: each is a list of strings and `{ text, href }` links. The page prints them as given, so the wording is decided in one place.
+
 ## Identify by photo
 
 `index/identify-photo` (`kind: "identify-photo"`) is the coverage document behind `/identify/photo`. `scripts/seed.mjs` writes it from `data/identify/photo-model.json` and the species files; it is not edited by hand. `photo-model.json` is written by `training/identify-photo/describe.py` when a model is trained, and is not edited by hand either.
 
-- `covered`: species the model can return. Each has `slug`, `scientificName`, `en`, `af`, `family` (a slug into `families`), `label` (its position in the model's output), `monthsPresent` (or `null`), `image` (`src`, `alt` and `caption`, as on `index/identify-sound`, or `null` when the page has nothing it may show), `trainingPhotos` and `evaluationPhotos` (how many photos of it the model was trained and tested on).
+- `covered`: species the model can return. Each has `slug`, `scientificName`, `en`, `af`, `family` (a slug into `families`), `label` (its position in the model's output), `monthsPresent` (or `null`), `image` (`src`, `alt`, `caption` and `credit`, as on `index/identify-sound`, or `null` when the page has nothing it may show), `trainingPhotos` and `evaluationPhotos` (how many photos of it the model was trained and tested on).
 - `notInModel`: species added to the guide after the model was trained. The model can never return them. The list is empty when the model is current.
 - `families`: for each family in `covered`, its names and `evaluation`: the number of test `photos`, and the share of them where the species was first (`top1`), in the first three (`top3`) and where the `family` was right. `evaluation` is `null` for a family with no test photo.
 - `evaluation`: the same measures over all test photos, plus `speciesScore` and `familyScore` (how often the top answer was right when its score was at least a given value; the page's likely and possible cut-offs come from these), `familyWhenSpeciesUnsure` and `neitherConfident`.

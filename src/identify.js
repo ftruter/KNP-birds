@@ -1,4 +1,5 @@
 import { safeHttpUrl } from './escape.js'
+import { creditModel } from './credit.js'
 import {
   imageAlt,
   imageCaptionParts,
@@ -96,14 +97,15 @@ export const MODEL_CREDIT = {
 const text = (value) =>
   typeof value === 'string' && value.trim() ? value.trim() : null
 
-/** A photograph's caption for the recogniser pages: the label, one line of text, and the source link. */
+/**
+ * What a photograph shows, for the recogniser pages: one line of text, and
+ * a label only when the image is AI-generated. Who made it is in `credit`.
+ */
 const caption = (image) => {
-  const { label, detail, credit, source, sourceText } = imageCaptionParts(image)
-  const parts = [...detail, ...credit, ...(sourceText ? [sourceText] : [])]
+  const { detail } = imageCaptionParts(image)
   return {
-    label,
-    text: parts.length ? `${parts.join('. ')}.` : '',
-    ...(source ? { source } : {}),
+    ...(image?.aiGenerated ? { label: 'AI-generated image' } : {}),
+    text: detail.length ? `${detail.join('. ').replace(/\.$/, '')}.` : '',
   }
 }
 
@@ -121,7 +123,15 @@ const thumbnail = (species) => {
           ? remote
           : null
     if (src)
-      return { src, alt: imageAlt(species, image), caption: caption(image) }
+      return {
+        src,
+        alt: imageAlt(species, image),
+        caption: caption(image),
+        credit: creditModel(image, 'image', {
+          src,
+          onSite: image.hosted === true,
+        }),
+      }
   }
   return null
 }
@@ -146,10 +156,20 @@ const referenceCall = (species) => {
       if (!src) continue
       const rank = QUALITY_RANK[recording.quality] ?? 0
       if (!best || rank > best.rank)
-        best = { rank, src, type: text(call?.type) }
+        best = { rank, src, type: text(call?.type), recording }
     }
   }
-  return best ? { src: best.src, type: best.type } : null
+  return best
+    ? {
+        src: best.src,
+        type: best.type,
+        ...(best.recording.aiGenerated ? { aiGenerated: true } : {}),
+        credit: creditModel(best.recording, 'recording', {
+          src: best.src,
+          onSite: best.recording.hosted === true,
+        }),
+      }
+    : null
 }
 
 const months = (species) => {

@@ -180,27 +180,53 @@ const element = (tag, properties = {}, children = []) => {
 }
 
 /**
+ * The credit disclosure for a photograph or a recording, from the model
+ * the index stores. It mirrors creditHtml in src/credit.js, which decides
+ * the wording; test/credit.test.js holds the two to the same markup.
+ */
+const creditNode = (credit, file) =>
+  element(
+    'details',
+    { class: 'credit', ...(file ? { 'data-file': file } : {}) },
+    [
+      element('summary', { text: credit.summary }),
+      element(
+        'ul',
+        {},
+        credit.lines.map((line) =>
+          element(
+            'li',
+            {},
+            line.map((part) =>
+              typeof part === 'string'
+                ? part
+                : element('a', { href: part.href, text: part.text }),
+            ),
+          ),
+        ),
+      ),
+    ],
+  )
+
+/**
  * A guide photograph that zooms like the plates on a species page: the same
- * `figure.plate` and `button.zoom`, which app.js binds. Its caption shows only
- * once the photograph is zoomed.
+ * `figure.plate` and `button.zoom`, which app.js binds. The credit disclosure
+ * and an AI label always show; what the picture shows is added once it is
+ * zoomed.
  */
 const plate = (image, label) => {
   const caption = element('figcaption')
   if (label)
     caption.append(element('span', { class: 'plate-name', text: label }))
-  if (image.caption) {
-    const credit = element('span', { class: 'plate-credit' }, [
+  if (image.caption?.label)
+    caption.append(
       element('span', { class: 'ai-label', text: image.caption.label }),
-    ])
-    if (image.caption.text) credit.append(` ${image.caption.text}`)
-    if (image.caption.source)
-      credit.append(
-        ' ',
-        element('a', { href: image.caption.source, text: 'Source' }),
-        '.',
-      )
-    caption.append(credit)
-  }
+    )
+  if (image.caption?.text)
+    caption.append(
+      element('span', { class: 'plate-credit', text: image.caption.text }),
+    )
+  if (image.credit) caption.append(creditNode(image.credit, image.src))
   return element('figure', { class: 'plate plate-thumb' }, [
     element(
       'button',

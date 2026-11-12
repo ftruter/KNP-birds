@@ -216,15 +216,21 @@ const identifyFromFile = async (browser, { keepsCache }) => {
     // The guide photograph zooms as the plates on a species page do, and the
     // name beside it is still the link.
     assert.equal(await first.locator('a img').count(), 0)
-    await zoomAndRestore(
-      page,
-      first.locator('.plate'),
-      /(Photograph, not AI-generated|AI-generated image)/,
-    )
+    await zoomAndRestore(page, first.locator('.plate'), /Credit: \S/)
     assert.match(
       await first.locator('audio').getAttribute('aria-label'),
       /^Reference call of /,
     )
+    // One closed credit disclosure beside the photograph and one beside the call.
+    for (const place of ['.plate-thumb', '.identify-call']) {
+      const credit = first.locator(`${place} details.credit`)
+      assert.equal(await credit.count(), 1, place)
+      assert.equal(await credit.getAttribute('open'), null, place)
+      assert.match(await credit.locator('summary').textContent(), /^Credit: \S/)
+      assert.ok(await credit.getAttribute('data-file'), place)
+      await credit.locator('summary').click()
+      assert.match(await credit.textContent(), /Saved on this site: (yes|no)\./)
+    }
     assert.match(
       await page.locator('#identify-summary').textContent(),
       /No result is certain/,

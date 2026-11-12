@@ -917,6 +917,38 @@ audio {
 }
 .ai-label { font-weight: 700; color: var(--accent); }
 
+.credit { font-size: 0.9rem; }
+.plate figcaption .credit, .recording .credit { margin-block-start: 0.3rem; }
+.credit summary {
+  inline-size: fit-content;
+  max-inline-size: 100%;
+  padding-block: 0.25rem;
+  cursor: pointer;
+  font-family: var(--sans);
+  color: var(--muted, inherit);
+}
+.credit summary:focus-visible { outline: 3px solid var(--focus); outline-offset: 2px; }
+.credit ul { margin: 0.2rem 0 0.4rem; padding-inline-start: 1.2rem; }
+.credit li { margin: 0.15rem 0; }
+.plate.is-zoomed figcaption { max-block-size: 60vh; overflow-y: auto; }
+
+/* Beside a thumbnail the closed credit fits under the picture. Opened, it
+   is wider than the picture, so it lies over the text beside it. */
+.plate-thumb:not(.is-zoomed) { inline-size: 6rem; }
+.plate-thumb:not(.is-zoomed) .credit { font-size: 0.8rem; text-align: start; }
+.plate-thumb:not(.is-zoomed) .credit[open] {
+  position: relative;
+  z-index: 2;
+  inline-size: max-content;
+  max-inline-size: min(22rem, 78vw);
+  padding: 0 0.6rem 0.2rem;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: var(--surface);
+  box-shadow: var(--shadow-sm);
+}
+.identify-result .recording .credit, .identify-call .credit { font-size: 0.85rem; }
+
 .swatch {
   display: inline-block;
   inline-size: 0.95em;
