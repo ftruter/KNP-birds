@@ -24,7 +24,7 @@ For each species, where it applies:
 
 ### Server-side rendering, optional JavaScript
 
-Every page is fully rendered on the server. Visitors can read, navigate, and sort with JavaScript off. A small same-origin script adds in-browser table sorting and photo zoom.
+Every page is fully rendered on the server. Visitors can read, navigate, and sort with JavaScript off. A small same-origin script adds in-browser table sorting and photo zoom. Every photograph on the site zooms the same way: it is a `figure.plate` holding a `button.zoom`, and `src/client/app.js` binds them all with one listener, including those added after the page has loaded.
 
 ### One URL, three formats
 

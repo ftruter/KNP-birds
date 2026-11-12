@@ -12,6 +12,36 @@
     { "$ref": "#/$defs/identifyPhoto" }
   ],
   "$defs": {
+    "creditDisclosure": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["summary", "lines"],
+      "properties": {
+        "summary": { "type": "string", "pattern": "^Credit: ." },
+        "lines": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "array",
+            "minItems": 1,
+            "items": {
+              "oneOf": [
+                { "type": "string", "minLength": 1 },
+                {
+                  "type": "object",
+                  "additionalProperties": false,
+                  "required": ["text", "href"],
+                  "properties": {
+                    "text": { "type": "string", "minLength": 1 },
+                    "href": { "type": "string", "pattern": "^(https?://|/)" }
+                  }
+                }
+              ]
+            }
+          }
+        }
+      }
+    },
     "slug": {
       "type": "string",
       "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$"
@@ -837,10 +867,20 @@
               "image": {
                 "type": ["object", "null"],
                 "additionalProperties": false,
-                "required": ["src", "alt"],
+                "required": ["src", "alt", "caption", "credit"],
                 "properties": {
                   "src": { "type": "string", "minLength": 1 },
-                  "alt": { "type": "string" }
+                  "alt": { "type": "string" },
+                  "caption": {
+                    "type": "object",
+                    "additionalProperties": false,
+                    "required": ["text"],
+                    "properties": {
+                      "label": { "const": "AI-generated image" },
+                      "text": { "type": "string" }
+                    }
+                  },
+                  "credit": { "$ref": "#/$defs/creditDisclosure" }
                 }
               },
               "trainingPhotos": { "type": "integer", "minimum": 0 },
@@ -1036,16 +1076,32 @@
                     "type": "object",
                     "additionalProperties": false,
                     "required": [
-                      "src"
+                      "src",
+                      "credit"
                     ],
                     "properties": {
                       "src": {
                         "type": "string",
                         "minLength": 1
                       },
+                      "aiGenerated": {
+                        "const": true
+                      },
+                      "credit": {
+                        "$ref": "#/$defs/creditDisclosure"
+                      },
                       "alt": {
                         "type": "string",
                         "minLength": 1
+                      },
+                      "caption": {
+                        "type": "object",
+                        "additionalProperties": false,
+                        "required": ["text"],
+                        "properties": {
+                          "label": { "const": "AI-generated image" },
+                          "text": { "type": "string" }
+                        }
                       },
                       "type": {
                         "$ref": "#/$defs/textOrNull"
@@ -1063,12 +1119,19 @@
                     "type": "object",
                     "additionalProperties": false,
                     "required": [
-                      "src"
+                      "src",
+                      "credit"
                     ],
                     "properties": {
                       "src": {
                         "type": "string",
                         "minLength": 1
+                      },
+                      "aiGenerated": {
+                        "const": true
+                      },
+                      "credit": {
+                        "$ref": "#/$defs/creditDisclosure"
                       },
                       "alt": {
                         "type": "string",

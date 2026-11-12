@@ -153,6 +153,78 @@ const element = (tag, properties = {}, children = []) => {
   return node
 }
 
+/**
+ * The credit disclosure for a photograph or a recording, from the model
+ * the index stores. It mirrors creditHtml in src/credit.js, which decides
+ * the wording; test/credit.test.js holds the two to the same markup.
+ */
+const creditNode = (credit, file) =>
+  element(
+    'details',
+    { class: 'credit', ...(file ? { 'data-file': file } : {}) },
+    [
+      element('summary', { text: credit.summary }),
+      element(
+        'ul',
+        {},
+        credit.lines.map((line) =>
+          element(
+            'li',
+            {},
+            line.map((part) =>
+              typeof part === 'string'
+                ? part
+                : element('a', { href: part.href, text: part.text }),
+            ),
+          ),
+        ),
+      ),
+    ],
+  )
+
+/**
+ * A guide photograph that zooms like the plates on a species page: the same
+ * `figure.plate` and `button.zoom`, which app.js binds. The credit disclosure
+ * and an AI label always show; what the picture shows is added once it is
+ * zoomed.
+ */
+const plate = (image, label) => {
+  const caption = element('figcaption')
+  if (label)
+    caption.append(element('span', { class: 'plate-name', text: label }))
+  if (image.caption?.label)
+    caption.append(
+      element('span', { class: 'ai-label', text: image.caption.label }),
+    )
+  if (image.caption?.text)
+    caption.append(
+      element('span', { class: 'plate-credit', text: image.caption.text }),
+    )
+  if (image.credit) caption.append(creditNode(image.credit, image.src))
+  return element('figure', { class: 'plate plate-thumb' }, [
+    element(
+      'button',
+      {
+        type: 'button',
+        class: 'zoom',
+        'aria-pressed': 'false',
+        'aria-label': 'Zoom photograph',
+      },
+      [
+        element('img', {
+          src: image.src,
+          alt: image.alt,
+          loading: 'lazy',
+          draggable: 'false',
+          width: '120',
+          height: '120',
+        }),
+      ],
+    ),
+    caption,
+  ])
+}
+
 const resultItem = (item, families) => {
   const { bird } = item
   const family = families[bird.family]
@@ -184,14 +256,25 @@ const resultItem = (item, families) => {
   ])
   if (bird.call)
     body.append(
-      element('p', { class: 'identify-call' }, [
+      element('div', { class: 'identify-call' }, [
         element('span', { text: 'Reference call ' }),
+        ...(bird.call.aiGenerated
+          ? [
+              element('span', {
+                class: 'ai-label',
+                text: 'AI-generated recording',
+              }),
+            ]
+          : []),
         element('audio', {
           controls: '',
           preload: 'none',
           src: bird.call.src,
           'aria-label': `Reference call of ${bird.en}`,
         }),
+        ...(bird.call.credit
+          ? [creditNode(bird.call.credit, bird.call.src)]
+          : []),
       ]),
     )
   else
@@ -202,16 +285,7 @@ const resultItem = (item, families) => {
       }),
     )
   const row = element('li', { class: 'identify-result' })
-  if (bird.image)
-    row.append(
-      element('img', {
-        src: bird.image.src,
-        alt: bird.image.alt,
-        loading: 'lazy',
-        width: '120',
-        height: '120',
-      }),
-    )
+  if (bird.image) row.append(plate(bird.image))
   row.append(body)
   return row
 }

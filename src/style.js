@@ -823,39 +823,77 @@ caption, .season-note {
   cursor: zoom-in;
 }
 
-.zoom img {
+.zoom img, .zoom canvas {
   -webkit-user-drag: none;
   user-select: none;
 }
 
+/* A small photograph in a list, as on the recogniser pages. It is a plate
+   without the frame, and its credit shows only when it is zoomed. */
+.plate-thumb {
+  padding: 0;
+  border: 0;
+  border-radius: 0;
+  background: transparent;
+  box-shadow: none;
+}
+.plate-thumb img, .plate-thumb canvas {
+  display: block;
+  inline-size: 6rem;
+  block-size: 6rem;
+  object-fit: cover;
+  border-radius: 0.5rem;
+  background: var(--plate-bg);
+}
+.plate.plate-thumb figcaption { margin: 0; font: 0.8rem var(--sans); text-align: center; }
+.plate-thumb .plate-credit, .plate-thumb.is-zoomed .plate-name { display: none; }
+.plate-thumb.is-zoomed .plate-credit { display: inline; }
+
+/* A zoomed photograph fills the screen: the picture takes all the room above
+   its caption, at full width unless that would make it taller than the room,
+   and then at full height, centred. */
 .plate.is-zoomed {
   position: fixed;
   z-index: 999;
   inset: 0;
+  display: flex;
+  flex-direction: column;
   inline-size: 100vw;
   block-size: 100vh;
+  block-size: 100dvh;
   max-inline-size: none;
   margin: 0;
   padding: 0;
   overflow: auto;
+  border: 0;
   border-radius: 0;
+  box-shadow: none;
   background: var(--bg);
 }
 
-.plate.is-zoomed .zoom { cursor: zoom-out; }
+.plate.is-zoomed .zoom {
+  flex: 1 1 0;
+  min-block-size: 0;
+  cursor: zoom-out;
+}
 
-.plate.is-zoomed img {
+.plate.is-zoomed img, .plate.is-zoomed canvas {
   inline-size: 100%;
-  block-size: auto;
+  block-size: 100%;
+  object-fit: contain;
+  object-position: top;
   border-radius: 0;
+  background: transparent;
 }
 
 .plate.is-zoomed figcaption {
-  position: sticky;
-  inset-block-end: 0;
+  flex: none;
   margin: 0;
   padding: 0.75rem 1rem 1rem;
   background: var(--surface);
+  font: inherit;
+  font-size: 0.95rem;
+  text-align: start;
 }
 
 audio {
@@ -877,6 +915,38 @@ audio {
   font-size: 0.95rem;
 }
 .ai-label { font-weight: 700; color: var(--accent); }
+
+.credit { font-size: 0.9rem; }
+.plate figcaption .credit, .recording .credit { margin-block-start: 0.3rem; }
+.credit summary {
+  inline-size: fit-content;
+  max-inline-size: 100%;
+  padding-block: 0.25rem;
+  cursor: pointer;
+  font-family: var(--sans);
+  color: var(--muted, inherit);
+}
+.credit summary:focus-visible { outline: 3px solid var(--focus); outline-offset: 2px; }
+.credit ul { margin: 0.2rem 0 0.4rem; padding-inline-start: 1.2rem; }
+.credit li { margin: 0.15rem 0; }
+.plate.is-zoomed figcaption { max-block-size: 60vh; overflow-y: auto; }
+
+/* Beside a thumbnail the closed credit fits under the picture. Opened, it
+   is wider than the picture, so it lies over the text beside it. */
+.plate-thumb:not(.is-zoomed) { inline-size: 6rem; }
+.plate-thumb:not(.is-zoomed) .credit { font-size: 0.8rem; text-align: start; }
+.plate-thumb:not(.is-zoomed) .credit[open] {
+  position: relative;
+  z-index: 2;
+  inline-size: max-content;
+  max-inline-size: min(22rem, 78vw);
+  padding: 0 0.6rem 0.2rem;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: var(--surface);
+  box-shadow: var(--shadow-sm);
+}
+.identify-result .recording .credit, .identify-call .credit { font-size: 0.85rem; }
 
 .swatch {
   display: inline-block;
@@ -1104,8 +1174,11 @@ audio {
   padding: 0.35rem 0 0.35rem 0.85rem;
 }
 
+/* The panel takes the width it is given. Its own width, not the device,
+   decides how its contents are laid out. */
 .identify {
-  max-inline-size: 75ch;
+  container-type: inline-size;
+  container-name: identify;
   margin-block: 1rem;
   padding: 1rem 1.1rem 1.2rem;
   background: var(--surface);
@@ -1116,6 +1189,7 @@ audio {
 
 .identify [hidden] { display: none !important; }
 .identify h2 { margin-block: 0.2rem 0.5rem; }
+.identify p { max-inline-size: 75ch; }
 .identify-status { margin: 0 0 0.6rem; font-family: var(--sans); font-weight: 700; min-block-size: 1.5em; }
 .identify-progress { inline-size: 100%; block-size: 0.9rem; }
 
@@ -1124,6 +1198,16 @@ audio {
   flex-wrap: wrap;
   gap: 0.75rem;
   align-items: center;
+}
+
+/* Two ways in: the first on the left with its tip under it, the second on
+   the right. In a narrow panel they stack in source order. */
+.identify-choices { display: grid; gap: 0.75rem 2rem; align-items: start; margin-block-end: 1rem; }
+.identify-choices > p { margin-block: 0; }
+@container identify (min-width: 40rem) {
+  .identify-choices { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .identify-choices > * { grid-column: 1; }
+  .identify-choices > .identify-second { grid-column: 2; grid-row: 1; }
 }
 
 .identify-button {
@@ -1153,6 +1237,10 @@ audio {
   gap: 0.85rem;
 }
 
+@container identify (min-width: 58rem) {
+  .identify-list { grid-template-columns: repeat(2, minmax(0, 1fr)); align-items: start; }
+}
+
 .identify-result {
   display: grid;
   grid-template-columns: auto 1fr;
@@ -1164,31 +1252,70 @@ audio {
   background: var(--bg);
 }
 
-.identify-result img {
-  inline-size: 6rem;
-  block-size: 6rem;
-  object-fit: cover;
-  border-radius: 0.5rem;
-  background: var(--plate-bg);
-}
-
 .identify-body { min-inline-size: 0; }
 .identify-body h3 { margin: 0; font-family: var(--sans); }
 .identify-body p { margin: 0.2rem 0 0; }
 .identify-verdict strong { text-decoration: underline; text-underline-offset: 0.2em; }
 .identify-call audio { display: block; inline-size: 100%; max-inline-size: 22rem; margin-block-start: 0.2rem; }
 
-.identify-crop {
-  display: block;
-  max-inline-size: 100%;
-  max-block-size: 70vh;
-  margin-block: 0.5rem 0.75rem;
-  border-radius: var(--radius);
+/* The crop step fills the screen. The script sets data-controls to put the
+   controls beside the photo or below it, whichever leaves the photo larger,
+   and sizes the canvas to fit the stage. */
+.identify-cropper {
+  position: fixed;
+  inset: 0;
+  box-sizing: border-box;
+  inline-size: 100%;
+  block-size: 100%;
+  block-size: 100dvh;
+  max-inline-size: none;
+  max-block-size: none;
+  margin: 0;
+  border: 0;
+  padding: env(safe-area-inset-top) env(safe-area-inset-right) env(safe-area-inset-bottom) env(safe-area-inset-left);
+  background: var(--surface);
+  color: var(--text);
+  overflow: hidden;
+}
+.identify-cropper[open] {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  grid-template-rows: minmax(0, 1fr) auto;
+}
+.identify-cropper[open][data-controls="side"] {
+  grid-template-columns: minmax(0, 1fr) min(22rem, 40%);
+  grid-template-rows: minmax(0, 1fr);
+}
+.identify-stage {
+  display: grid;
+  place-items: center;
+  min-inline-size: 0;
+  min-block-size: 0;
+  overflow: hidden;
   background: var(--plate-bg);
   touch-action: none;
-  cursor: move;
+  user-select: none;
+  -webkit-user-select: none;
 }
-.identify-crop:focus-visible { outline: 3px solid var(--focus); outline-offset: 3px; }
+.identify-stage[data-zone="move"] { cursor: move; }
+.identify-stage[data-zone="n"], .identify-stage[data-zone="s"] { cursor: ns-resize; }
+.identify-stage[data-zone="e"], .identify-stage[data-zone="w"] { cursor: ew-resize; }
+.identify-stage[data-zone="nw"], .identify-stage[data-zone="se"] { cursor: nwse-resize; }
+.identify-stage[data-zone="ne"], .identify-stage[data-zone="sw"] { cursor: nesw-resize; }
+.identify-crop { display: block; touch-action: none; }
+.identify-crop:focus-visible { outline: 3px solid var(--focus); outline-offset: -3px; }
+.identify-crop-panel {
+  box-sizing: border-box;
+  max-block-size: 50dvh;
+  padding: 0.6rem 1rem 0.8rem;
+  overflow: auto;
+  overscroll-behavior: contain;
+}
+.identify-cropper[data-controls="side"] .identify-crop-panel { max-block-size: none; }
+.identify-crop-panel h2 { margin-block: 0 0.5rem; }
+.identify-crop-panel .identify-actions { gap: 0.5rem; }
+.identify-crop-panel .identify-button { min-block-size: 2.75rem; padding: 0.4rem 0.9rem; font-size: 0.95rem; }
+.identify-crop-panel p { margin-block: 0.6rem 0; font-size: 0.95rem; line-height: 1.45; }
 .identify-quiet { background: transparent; color: var(--heading); }
 
 .identify-photo-result { grid-template-columns: 1fr; }
@@ -1196,16 +1323,6 @@ audio {
   .identify-photo-result { grid-template-columns: auto 1fr; }
 }
 .identify-pair { display: flex; gap: 0.5rem; }
-.identify-pair figure { margin: 0; }
-.identify-pair img, .identify-pair canvas {
-  display: block;
-  inline-size: 6rem;
-  block-size: 6rem;
-  object-fit: cover;
-  border-radius: 0.5rem;
-  background: var(--plate-bg);
-}
-.identify-pair figcaption { font: 0.8rem var(--sans); text-align: center; }
 
 .identify-coverage { max-inline-size: 75ch; margin-block: 0.5rem; }
 .identify-coverage summary { cursor: pointer; font-family: var(--sans); font-weight: 700; padding-block: 0.4rem; }

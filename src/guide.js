@@ -1,3 +1,4 @@
+import { safeHttpUrl } from './escape.js'
 import { formatInteger } from './numbers.js'
 
 export const SAMPLE_NOTICE = 'Sample content, to be verified.'
@@ -326,6 +327,30 @@ export const mediaSexLabel = (sex) =>
       : sex === 'mixed'
         ? 'Male and female'
         : ''
+
+/**
+ * What a photograph's caption says, as plain parts: the AI label, what the
+ * picture shows, who made it and under which licence, and where it came from.
+ * The species page and the recogniser pages both build their caption from it.
+ */
+export const imageCaptionParts = (image) => {
+  const captionText =
+    typeof image?.caption === 'string' ? image.caption.trim() : ''
+  const source = safeHttpUrl(image?.source) || ''
+  return {
+    label: image?.aiGenerated
+      ? 'AI-generated image'
+      : 'Photograph, not AI-generated',
+    detail: [
+      mediaSexLabel(image?.sex),
+      viewLabel(image?.view),
+      captionText,
+    ].filter(Boolean),
+    credit: [image?.author, image?.license].filter(Boolean),
+    source,
+    sourceText: !source && image?.source ? String(image.source) : '',
+  }
+}
 
 export const imageAlt = (doc, image) => {
   if (typeof image?.alt === 'string' && image.alt.trim())

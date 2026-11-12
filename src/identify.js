@@ -1,5 +1,11 @@
 import { safeHttpUrl } from './escape.js'
-import { imageAlt, licenceForbidsDerivatives, objectPath } from './guide.js'
+import { creditModel } from './credit.js'
+import {
+  imageAlt,
+  imageCaptionParts,
+  licenceForbidsDerivatives,
+  objectPath,
+} from './guide.js'
 import { QUALITY_RANK } from './recordings.js'
 
 export const IDENTIFY_SOUND_PATH = '/identify/sound'
@@ -91,7 +97,22 @@ export const MODEL_CREDIT = {
 const text = (value) =>
   typeof value === 'string' && value.trim() ? value.trim() : null
 
-/** The first photograph the page may show, as the species page would. */
+/**
+ * What a photograph shows, for the recogniser pages: one line of text, and
+ * a label only when the image is AI-generated. Who made it is in `credit`.
+ */
+const caption = (image) => {
+  const { detail } = imageCaptionParts(image)
+  return {
+    ...(image?.aiGenerated ? { label: 'AI-generated image' } : {}),
+    text: detail.length ? `${detail.join('. ').replace(/\.$/, '')}.` : '',
+  }
+}
+
+/**
+ * The first photograph the page may show, as the species page would. `src` is
+ * the full-size file, so the same picture is sharp when it is zoomed.
+ */
 const thumbnail = (species) => {
   for (const image of Array.isArray(species?.images) ? species.images : []) {
     const remote = safeHttpUrl(image?.fileUrl)
@@ -101,7 +122,16 @@ const thumbnail = (species) => {
         : remote && !licenceForbidsDerivatives(image?.license)
           ? remote
           : null
-    if (src) return { src, alt: imageAlt(species, image) }
+    if (src)
+      return {
+        src,
+        alt: imageAlt(species, image),
+        caption: caption(image),
+        credit: creditModel(image, 'image', {
+          src,
+          onSite: image.hosted === true,
+        }),
+      }
   }
   return null
 }
@@ -126,10 +156,20 @@ const referenceCall = (species) => {
       if (!src) continue
       const rank = QUALITY_RANK[recording.quality] ?? 0
       if (!best || rank > best.rank)
-        best = { rank, src, type: text(call?.type) }
+        best = { rank, src, type: text(call?.type), recording }
     }
   }
-  return best ? { src: best.src, type: best.type } : null
+  return best
+    ? {
+        src: best.src,
+        type: best.type,
+        ...(best.recording.aiGenerated ? { aiGenerated: true } : {}),
+        credit: creditModel(best.recording, 'recording', {
+          src: best.src,
+          onSite: best.recording.hosted === true,
+        }),
+      }
+    : null
 }
 
 const months = (species) => {
