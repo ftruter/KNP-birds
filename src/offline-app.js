@@ -75,6 +75,7 @@ const runtimeFiles = () =>
     url: modelBase + item.file,
     bytes: item.bytes,
     cache: SOUND_CACHE,
+    ...(item.sha256 ? { sha256: item.sha256 } : {}),
     ...(item.file.startsWith('litert_wasm_')
       ? { when: item.file.includes('_compat_') ? 'baseline' : 'relaxed-simd' }
       : {}),
@@ -128,6 +129,7 @@ export const offlineManifest = (doc, version = '') => {
         url: photoModelBase + PHOTO_MODEL.file,
         bytes: PHOTO_MODEL.bytes,
         cache: PHOTO_CACHE,
+        sha256: PHOTO_MODEL.sha256,
       }),
       ...runtimeFiles().map(add),
     ],
@@ -136,6 +138,7 @@ export const offlineManifest = (doc, version = '') => {
         url: modelBase + MODEL_ASSETS.model.file,
         bytes: MODEL_ASSETS.model.bytes,
         cache: SOUND_CACHE,
+        sha256: MODEL_ASSETS.model.sha256,
       }),
       ...runtimeFiles().map(add),
     ],

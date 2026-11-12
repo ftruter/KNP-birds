@@ -527,6 +527,7 @@ const boot = async () => {
           modelBytes,
           downloadBytes,
           cacheName,
+          checks: JSON.parse(root.dataset.checks || '{}'),
         },
         [],
         ({ received, total }) => {
@@ -923,6 +924,13 @@ const boot = async () => {
     delete stage.dataset.zone
   })
   window.addEventListener('resize', fit)
+  // With no connection, a photo kept only in the cloud never arrives.
+  const connection = () => {
+    part('offline').hidden = window.navigator.onLine !== false
+  }
+  window.addEventListener('online', connection)
+  window.addEventListener('offline', connection)
+  connection()
   part('download').addEventListener('click', load)
   for (const input of inputs)
     input.addEventListener('change', async () => {

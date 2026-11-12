@@ -118,6 +118,11 @@ test('without javascript the page explains itself and links onward', async () =>
     body,
     /<label class="identify-file identify-second" for="identify-file">Choose a photo <input type="file" id="identify-file" accept="image\/\*"><\/label>/,
   )
+  // A note for when there is no connection, hidden until the script sees that.
+  assert.match(
+    body,
+    /<p id="identify-offline" class="identify-note" hidden>There is no connection\. A photo that is kept in the cloud/,
+  )
   assert.match(
     body,
     /id="identify-status"[^>]*role="status" aria-live="polite"/,
