@@ -63,14 +63,16 @@ export const renderIdentifySoundHtml = ({ origin, doc }) => {
 <progress id="identify-progress" class="identify-progress" max="1" value="0" aria-label="Progress" hidden></progress>
 <div id="identify-capture" hidden>
 <h2>Record or choose a recording</h2>
+<div class="identify-choices">
 <div class="identify-actions">
 <button type="button" id="identify-record" class="identify-button">Record</button>
 <button type="button" id="identify-stop" class="identify-button" hidden>Stop and identify</button>
-<label class="identify-file" for="identify-file">Choose a recording <input type="file" id="identify-file" accept="audio/*"></label>
 </div>
+<label class="identify-file identify-second" for="identify-file">Choose a recording <input type="file" id="identify-file" accept="audio/*"></label>
 <p id="identify-countdown" class="identify-countdown" hidden></p>
 <p id="identify-meter" hidden><label for="identify-level">Sound level</label> <meter id="identify-level" min="0" max="1" value="0"></meter></p>
 <p>${escapeHtml(TIPS)}</p>
+</div>
 </div>
 <section id="identify-results" aria-labelledby="identify-results-heading" hidden>
 <h2 id="identify-results-heading" tabindex="-1">Results</h2>

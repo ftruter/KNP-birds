@@ -145,6 +145,67 @@ export const scaleCrop = (crop, factor, width, height) => {
   )
 }
 
+/**
+ * What a press at `at` takes hold of: 'move' inside the square, 'outside'
+ * away from it, or the edge or corner within `slop` of it, named by compass
+ * point ('n', 'se', ...). Inside a small square the edges reach in a quarter
+ * of its side at most, so the middle always moves it.
+ */
+export const cropZone = (crop, at, slop) => {
+  const right = crop.x + crop.size
+  const bottom = crop.y + crop.size
+  if (
+    at.x < crop.x - slop ||
+    at.x > right + slop ||
+    at.y < crop.y - slop ||
+    at.y > bottom + slop
+  )
+    return 'outside'
+  const inner = Math.min(slop, crop.size / 4)
+  const vertical =
+    at.y <= crop.y + inner ? 'n' : at.y >= bottom - inner ? 's' : ''
+  const horizontal =
+    at.x <= crop.x + inner ? 'w' : at.x >= right - inner ? 'e' : ''
+  return vertical + horizontal || 'move'
+}
+
+/**
+ * The square after its `handle` edge or corner is dragged to `at`. It stays
+ * square. A corner keeps the opposite corner where it is. An edge keeps the
+ * opposite edge where it is and the square centred on it, moving sideways
+ * only where the photo's border is in the way.
+ */
+export const resizeCrop = (crop, handle, at, width, height) => {
+  const right = crop.x + crop.size
+  const bottom = crop.y + crop.size
+  const north = handle.includes('n')
+  const south = handle.includes('s')
+  const west = handle.includes('w')
+  const east = handle.includes('e')
+  // For each side being dragged: the size it asks for, and the most the
+  // photo allows on that side.
+  const sides = [
+    north && [bottom - at.y, bottom],
+    south && [at.y - crop.y, height - crop.y],
+    west && [right - at.x, right],
+    east && [at.x - crop.x, width - crop.x],
+  ].filter(Boolean)
+  if (sides.length === 0) return crop
+  const wanted = sides.map(([size]) => size)
+  const room = sides.map(([, most]) => most)
+  // An edge drag also grows the square across, so the other side limits it.
+  if (sides.length === 1) room.push(north || south ? width : height)
+  const least = Math.min(width, height) * MIN_CROP
+  const size = Math.min(Math.min(...room), Math.max(least, ...wanted))
+  const across = (start, limit) =>
+    Math.min(limit - size, Math.max(0, start + (crop.size - size) / 2))
+  return {
+    x: west ? right - size : east ? crop.x : across(crop.x, width),
+    y: north ? bottom - size : south ? crop.y : across(crop.y, height),
+    size,
+  }
+}
+
 /** Canvas pixels (RGBA bytes) as the model's input: RGB numbers from 0 to 255, row by row. */
 export const toPixels = (rgba) => {
   const pixels = new Float32Array((rgba.length / 4) * 3)
@@ -164,7 +225,12 @@ export const mebibytes = (bytes) => (bytes / 1048576).toFixed(1)
 
 const WORD = { likely: 'Likely', possible: 'Possible', unlikely: 'Unlikely' }
 const THUMB = 192
-const HANDLE = 0.12
+// Sizes on screen, in CSS pixels. A handle is caught within TOUCH of its
+// edge on either side, which makes a 44-pixel target.
+const TOUCH = 22
+const HANDLE = 14
+const MARGIN = 12
+const HANDLES = ['nw', 'n', 'ne', 'e', 'se', 's', 'sw', 'w']
 
 const element = (tag, properties = {}, children = []) => {
   const node = document.createElement(tag)
@@ -268,6 +334,7 @@ const boot = async () => {
   if (
     typeof WebAssembly !== 'object' ||
     typeof Worker !== 'function' ||
+    typeof HTMLDialogElement !== 'function' ||
     typeof createImageBitmap !== 'function'
   ) {
     const reason = note?.querySelector('#identify-nojs-reason')
@@ -282,11 +349,18 @@ const boot = async () => {
   const consent = part('consent')
   const capture = part('capture')
   const cropper = part('cropper')
+  const stage = part('stage')
   const view = part('crop')
   const run = part('run')
   const results = part('results')
   const inputs = [part('camera'), part('file')]
-  const tools = [run, part('smaller'), part('larger'), part('whole')]
+  const tools = [
+    run,
+    part('smaller'),
+    part('larger'),
+    part('whole'),
+    part('recrop'),
+  ]
   const { models, runtime, modelFile, cache: cacheName } = root.dataset
   const modelBytes = Number(root.dataset.modelBytes)
   const downloadBytes = Number(root.dataset.downloadBytes)
@@ -402,27 +476,64 @@ const boot = async () => {
     paint.fillRect(0, y + size, view.width, view.height - y - size)
     paint.fillRect(0, y, x, size)
     paint.fillRect(x + size, y, view.width - x - size, size)
-    const line = Math.max(2, view.width / 300)
+    // Sizes are set in screen pixels, so the handles stay finger-sized
+    // however large the photo is drawn.
+    const unit = view.width / (view.clientWidth || view.width)
+    const line = 2 * unit
     paint.lineWidth = line * 2
     paint.strokeStyle = '#000'
     paint.strokeRect(x, y, size, size)
     paint.lineWidth = line
     paint.strokeStyle = '#fff'
     paint.strokeRect(x, y, size, size)
-    const grip = Math.max(line * 5, size * HANDLE)
+    // A handle on each corner and each edge. On a small square they shrink
+    // so that they do not cover the bird.
+    const grip = Math.min(HANDLE * unit, size / 4)
     paint.fillStyle = '#fff'
     paint.strokeStyle = '#000'
-    paint.beginPath()
-    paint.moveTo(x + size, y + size - grip)
-    paint.lineTo(x + size, y + size)
-    paint.lineTo(x + size - grip, y + size)
-    paint.closePath()
-    paint.fill()
-    paint.stroke()
+    for (const handle of HANDLES) {
+      const across = handle.includes('w') ? 0 : handle.includes('e') ? 1 : 0.5
+      const down = handle.includes('n') ? 0 : handle.includes('s') ? 1 : 0.5
+      const left = x + size * across - grip / 2
+      const top = y + size * down - grip / 2
+      paint.fillRect(left, top, grip, grip)
+      paint.strokeRect(left, top, grip, grip)
+    }
+  }
+
+  /**
+   * Sizes the photo to the screen. Tries the controls below the photo and
+   * beside it, and keeps whichever leaves the photo larger. The square is
+   * kept in the photo's own pixels, so it survives a rotation.
+   */
+  const fit = () => {
+    if (!cropper.open || !work.width) return
+    let best = null
+    for (const controls of ['below', 'side']) {
+      cropper.dataset.controls = controls
+      const scale = Math.min(
+        (stage.clientWidth - MARGIN * 2) / work.width,
+        (stage.clientHeight - MARGIN * 2) / work.height,
+      )
+      if (!best || scale > best.scale) best = { controls, scale }
+    }
+    cropper.dataset.controls = best.controls
+    const scale = Math.max(best.scale, 0.01)
+    view.style.inlineSize = `${Math.floor(work.width * scale)}px`
+    view.style.blockSize = `${Math.floor(work.height * scale)}px`
+    draw()
+  }
+
+  const showCropper = () => {
+    if (!cropper.open) cropper.showModal()
+    fit()
+    part('crop-heading').focus()
   }
 
   const setCrop = (next) => {
     crop = clampCrop(next, work.width, work.height)
+    // The square in the photo's own pixels, for the browser tests.
+    view.dataset.crop = [crop.x, crop.y, crop.size].map(Math.round).join(' ')
     draw()
   }
 
@@ -459,12 +570,11 @@ const boot = async () => {
     const shown = fitWithin(fitted.width, fitted.height, 1280)
     view.width = shown.width
     view.height = shown.height
-    cropper.hidden = false
     setCrop(wholeCrop(work.width, work.height))
     say(
-      'Photo ready. Move the square over the bird, then choose Identify this bird.',
+      'Photo ready. Put the square on the bird, then choose Identify this bird.',
     )
-    part('crop-heading').focus()
+    showCropper()
   }
 
   /** The chosen square, shrunk to `size` pixels. Halves first, so a large square is averaged rather than sampled. */
@@ -517,6 +627,7 @@ const boot = async () => {
 
   const identify = async () => {
     if (!crop || !guide) return
+    if (cropper.open) cropper.close()
     busy(true)
     results.hidden = true
     say('Analysing the photo on this device.')
@@ -545,7 +656,9 @@ const boot = async () => {
     }
   }
 
-  // Pointer positions, in the photo's own pixels.
+  // Pointer positions, in the photo's own pixels. The stage takes the
+  // presses, not the canvas, so an edge at the photo's border can still be
+  // caught from just outside it.
   const point = (event) => {
     const box = view.getBoundingClientRect()
     return {
@@ -553,30 +666,45 @@ const boot = async () => {
       y: ((event.clientY - box.top) / box.height) * work.height,
     }
   }
+  const slop = () => (TOUCH * work.width) / (view.clientWidth || work.width)
+  const onPhoto = (at) =>
+    at.x >= 0 && at.x <= work.width && at.y >= 0 && at.y <= work.height
   const pointers = new Map()
   let drag = null
 
-  const beginDrag = () => {
+  const beginDrag = (lifted = false) => {
     const held = [...pointers.values()]
     if (held.length === 1) {
       const [at] = held
-      const grip = Math.max(crop.size * HANDLE * 2, work.width / 16)
-      const onGrip =
-        Math.abs(at.x - (crop.x + crop.size)) <= grip &&
-        Math.abs(at.y - (crop.y + crop.size)) <= grip
-      const inside =
-        at.x >= crop.x &&
-        at.x <= crop.x + crop.size &&
-        at.y >= crop.y &&
-        at.y <= crop.y + crop.size
-      // A touch outside the square brings the square to it.
-      if (!onGrip && !inside)
-        setCrop({
-          ...crop,
-          x: at.x - crop.size / 2,
-          y: at.y - crop.size / 2,
-        })
-      drag = { mode: onGrip ? 'resize' : 'move', at, crop }
+      // The finger left over from a pinch carries on moving the square.
+      const zone = lifted ? 'move' : cropZone(crop, at, slop())
+      if (zone === 'outside') {
+        if (!onPhoto(at)) {
+          drag = null
+          return
+        }
+        // A press on the photo outside the square brings the square to it.
+        setCrop({ ...crop, x: at.x - crop.size / 2, y: at.y - crop.size / 2 })
+      }
+      // How far the press is from the edge it took hold of, so the edge does
+      // not jump to the finger.
+      const offset = {
+        x: zone.includes('w')
+          ? at.x - crop.x
+          : zone.includes('e')
+            ? at.x - crop.x - crop.size
+            : 0,
+        y: zone.includes('n')
+          ? at.y - crop.y
+          : zone.includes('s')
+            ? at.y - crop.y - crop.size
+            : 0,
+      }
+      drag =
+        zone === 'move' || zone === 'outside'
+          ? { mode: 'move', at, crop }
+          : { mode: 'resize', handle: zone, offset, crop }
+      stage.dataset.zone = drag.mode === 'move' ? 'move' : zone
     } else if (held.length === 2) {
       const [a, b] = held
       drag = {
@@ -588,15 +716,28 @@ const boot = async () => {
     } else drag = null
   }
 
-  view.addEventListener('pointerdown', (event) => {
-    if (!crop) return
+  /** Shows, on a device with a pointer, what a drag from here would do. */
+  const hover = (event) => {
+    const zone =
+      crop && event.pointerType === 'mouse'
+        ? cropZone(crop, point(event), slop())
+        : 'outside'
+    if (zone === 'outside') delete stage.dataset.zone
+    else stage.dataset.zone = zone
+  }
+
+  stage.addEventListener('pointerdown', (event) => {
+    if (!crop || (event.pointerType === 'mouse' && event.button !== 0)) return
     event.preventDefault()
-    view.setPointerCapture?.(event.pointerId)
+    stage.setPointerCapture?.(event.pointerId)
     pointers.set(event.pointerId, point(event))
     beginDrag()
   })
-  view.addEventListener('pointermove', (event) => {
-    if (!drag || !pointers.has(event.pointerId)) return
+  stage.addEventListener('pointermove', (event) => {
+    if (!drag || !pointers.has(event.pointerId)) {
+      if (pointers.size === 0) hover(event)
+      return
+    }
     event.preventDefault()
     pointers.set(event.pointerId, point(event))
     const held = [...pointers.values()]
@@ -607,16 +748,15 @@ const boot = async () => {
         y: drag.crop.y + held[0].y - drag.at.y,
       })
     else if (drag.mode === 'resize')
-      setCrop({
-        ...drag.crop,
-        // The top left corner stays where it is, so the square stops at the
-        // photo's edge.
-        size: Math.min(
-          Math.max(held[0].x - drag.crop.x, held[0].y - drag.crop.y),
-          work.width - drag.crop.x,
-          work.height - drag.crop.y,
+      setCrop(
+        resizeCrop(
+          drag.crop,
+          drag.handle,
+          { x: held[0].x - drag.offset.x, y: held[0].y - drag.offset.y },
+          work.width,
+          work.height,
         ),
-      })
+      )
     else if (held.length === 2) {
       const [a, b] = held
       const scaled = scaleCrop(
@@ -634,10 +774,14 @@ const boot = async () => {
   })
   const release = (event) => {
     pointers.delete(event.pointerId)
-    beginDrag()
+    beginDrag(true)
+    if (pointers.size === 0) hover(event)
   }
-  view.addEventListener('pointerup', release)
-  view.addEventListener('pointercancel', release)
+  stage.addEventListener('pointerup', release)
+  stage.addEventListener('pointercancel', release)
+  stage.addEventListener('pointerleave', () => {
+    if (pointers.size === 0) delete stage.dataset.zone
+  })
 
   const resize = (factor) =>
     setCrop(scaleCrop(crop, factor, work.width, work.height))
@@ -664,6 +808,25 @@ const boot = async () => {
     setCrop(wholeCrop(work.width, work.height)),
   )
   run.addEventListener('click', identify)
+  // Leaving the crop view without identifying, by Cancel or Escape.
+  const cancelled = () => {
+    if (results.hidden) say('Ready. Take a photo of a bird, or choose one.')
+  }
+  part('cancel').addEventListener('click', () => {
+    cropper.close()
+    cancelled()
+  })
+  cropper.addEventListener('cancel', cancelled)
+  part('recrop').addEventListener('click', () => {
+    if (crop) showCropper()
+  })
+  // A drag that was under way ends when the crop view closes.
+  cropper.addEventListener('close', () => {
+    pointers.clear()
+    drag = null
+    delete stage.dataset.zone
+  })
+  window.addEventListener('resize', fit)
   part('download').addEventListener('click', load)
   for (const input of inputs)
     input.addEventListener('change', async () => {

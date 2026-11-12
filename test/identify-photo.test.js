@@ -116,7 +116,7 @@ test('without javascript the page explains itself and links onward', async () =>
   )
   assert.match(
     body,
-    /<label class="identify-file" for="identify-file">Choose a photo <input type="file" id="identify-file" accept="image\/\*"><\/label>/,
+    /<label class="identify-file identify-second" for="identify-file">Choose a photo <input type="file" id="identify-file" accept="image\/\*"><\/label>/,
   )
   assert.match(
     body,
@@ -129,7 +129,14 @@ test('without javascript the page explains itself and links onward', async () =>
     /<canvas id="identify-crop"[^>]*tabindex="0"[^>]*aria-label="[^"]+"[^>]*aria-describedby="identify-crop-help"/,
   )
   assert.match(body, /arrow keys/)
-  for (const id of ['run', 'smaller', 'larger', 'whole'])
+  // The help names the gestures there are: move, edge, corner and pinch.
+  const help = body.match(/<p id="identify-crop-help">[^<]*/)?.[0] ?? ''
+  assert.match(help, /Drag inside the square to move it/)
+  assert.match(help, /Drag an edge or a corner to resize it, or pinch/)
+  // The crop view is a dialog, closed until a photo is opened.
+  assert.match(body, /<dialog id="identify-cropper" class="identify-cropper" /)
+  assert.doesNotMatch(body, /<dialog[^>]* open/)
+  for (const id of ['run', 'cancel', 'smaller', 'larger', 'whole', 'recrop'])
     assert.match(body, new RegExp(`<button type="button" id="identify-${id}"`))
   // What it cannot do is stated on the page itself.
   assert.match(body, /cannot tell that a photo is not a bird/)
@@ -439,6 +446,76 @@ test('results lead with a species, then a family, then say there is no confident
   assert.deepEqual(rankResults({ species: [], scores: [], month: 1 }), {
     kind: 'none',
     candidates: [],
+  })
+})
+
+test('a press takes hold of an edge, a corner or the whole square', () => {
+  const { cropZone } = client
+  const crop = { x: 1000, y: 1000, size: 1000 }
+  const zone = (x, y) => cropZone(crop, { x, y }, 100)
+  assert.equal(zone(1500, 1500), 'move')
+  // Either side of an edge, within reach of it.
+  assert.equal(zone(1500, 950), 'n')
+  assert.equal(zone(1500, 1090), 'n')
+  assert.equal(zone(1500, 1101), 'move')
+  assert.equal(zone(1500, 2050), 's')
+  assert.equal(zone(950, 1500), 'w')
+  assert.equal(zone(2050, 1500), 'e')
+  assert.equal(zone(1000, 1000), 'nw')
+  assert.equal(zone(2080, 920), 'ne')
+  assert.equal(zone(1950, 2050), 'se')
+  assert.equal(zone(920, 1950), 'sw')
+  assert.equal(zone(1500, 899), 'outside')
+  assert.equal(zone(2101, 1500), 'outside')
+  // The middle of a small square still moves it.
+  const small = { x: 0, y: 0, size: 80 }
+  assert.equal(cropZone(small, { x: 40, y: 40 }, 100), 'move')
+  assert.equal(cropZone(small, { x: 40, y: 10 }, 100), 'n')
+})
+
+test('dragging an edge or a corner resizes the square about the opposite one', () => {
+  const { resizeCrop, MIN_CROP } = client
+  const crop = { x: 1000, y: 1000, size: 1000 }
+  const drag = (handle, x, y, from = crop) =>
+    resizeCrop(from, handle, { x, y }, 4000, 3000)
+
+  // The top edge: the bottom edge stays, and so does the centre line.
+  assert.deepEqual(drag('n', 1500, 500), { x: 750, y: 500, size: 1500 })
+  assert.deepEqual(drag('n', 1500, 1400), { x: 1200, y: 1400, size: 600 })
+  // Where the pointer is across the edge does not matter.
+  assert.deepEqual(drag('n', 0, 500), drag('n', 3999, 500))
+  assert.deepEqual(drag('s', 1500, 2400), { x: 800, y: 1000, size: 1400 })
+  assert.deepEqual(drag('w', 600, 1500), { x: 600, y: 800, size: 1400 })
+  assert.deepEqual(drag('e', 2200, 1500), { x: 1000, y: 900, size: 1200 })
+
+  // A corner: the opposite corner stays, and the larger pull wins.
+  assert.deepEqual(drag('se', 2500, 2200), { x: 1000, y: 1000, size: 1500 })
+  assert.deepEqual(drag('nw', 800, 900), { x: 800, y: 800, size: 1200 })
+  assert.deepEqual(drag('ne', 2300, 900), { x: 1000, y: 700, size: 1300 })
+  assert.deepEqual(drag('sw', 700, 2100), { x: 700, y: 1000, size: 1300 })
+
+  // It stops at the photo's border and at the smallest size.
+  assert.deepEqual(drag('n', 1500, -900), { x: 500, y: 0, size: 2000 })
+  assert.deepEqual(drag('se', 9000, 9000), { x: 1000, y: 1000, size: 2000 })
+  assert.deepEqual(drag('nw', -500, -500), { x: 0, y: 0, size: 2000 })
+  const least = 3000 * MIN_CROP
+  assert.deepEqual(drag('n', 1500, 5000), {
+    x: 1500 - least / 2,
+    y: 2000 - least,
+    size: least,
+  })
+  assert.deepEqual(drag('se', 0, 0), { x: 1000, y: 1000, size: least })
+  // Beside the photo's border an edge drag slides the square along it.
+  assert.deepEqual(drag('s', 500, 2000, { x: 0, y: 0, size: 1000 }), {
+    x: 0,
+    y: 0,
+    size: 2000,
+  })
+  // Never taller or wider than the photo.
+  assert.deepEqual(drag('e', 9000, 500, { x: 0, y: 1000, size: 1000 }), {
+    x: 0,
+    y: 0,
+    size: 3000,
   })
 })
 

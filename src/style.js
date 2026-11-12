@@ -1030,8 +1030,11 @@ audio {
   padding: 0.35rem 0 0.35rem 0.85rem;
 }
 
+/* The panel takes the width it is given. Its own width, not the device,
+   decides how its contents are laid out. */
 .identify {
-  max-inline-size: 75ch;
+  container-type: inline-size;
+  container-name: identify;
   margin-block: 1rem;
   padding: 1rem 1.1rem 1.2rem;
   background: var(--surface);
@@ -1042,6 +1045,7 @@ audio {
 
 .identify [hidden] { display: none !important; }
 .identify h2 { margin-block: 0.2rem 0.5rem; }
+.identify p { max-inline-size: 75ch; }
 .identify-status { margin: 0 0 0.6rem; font-family: var(--sans); font-weight: 700; min-block-size: 1.5em; }
 .identify-progress { inline-size: 100%; block-size: 0.9rem; }
 
@@ -1050,6 +1054,16 @@ audio {
   flex-wrap: wrap;
   gap: 0.75rem;
   align-items: center;
+}
+
+/* Two ways in: the first on the left with its tip under it, the second on
+   the right. In a narrow panel they stack in source order. */
+.identify-choices { display: grid; gap: 0.75rem 2rem; align-items: start; margin-block-end: 1rem; }
+.identify-choices > p { margin-block: 0; }
+@container identify (min-width: 40rem) {
+  .identify-choices { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .identify-choices > * { grid-column: 1; }
+  .identify-choices > .identify-second { grid-column: 2; grid-row: 1; }
 }
 
 .identify-button {
@@ -1079,6 +1093,10 @@ audio {
   gap: 0.85rem;
 }
 
+@container identify (min-width: 58rem) {
+  .identify-list { grid-template-columns: repeat(2, minmax(0, 1fr)); align-items: start; }
+}
+
 .identify-result {
   display: grid;
   grid-template-columns: auto 1fr;
@@ -1104,17 +1122,64 @@ audio {
 .identify-verdict strong { text-decoration: underline; text-underline-offset: 0.2em; }
 .identify-call audio { display: block; inline-size: 100%; max-inline-size: 22rem; margin-block-start: 0.2rem; }
 
-.identify-crop {
-  display: block;
-  max-inline-size: 100%;
-  max-block-size: 70vh;
-  margin-block: 0.5rem 0.75rem;
-  border-radius: var(--radius);
+/* The crop step fills the screen. The script sets data-controls to put the
+   controls beside the photo or below it, whichever leaves the photo larger,
+   and sizes the canvas to fit the stage. */
+.identify-cropper {
+  position: fixed;
+  inset: 0;
+  box-sizing: border-box;
+  inline-size: 100%;
+  block-size: 100%;
+  block-size: 100dvh;
+  max-inline-size: none;
+  max-block-size: none;
+  margin: 0;
+  border: 0;
+  padding: env(safe-area-inset-top) env(safe-area-inset-right) env(safe-area-inset-bottom) env(safe-area-inset-left);
+  background: var(--surface);
+  color: var(--text);
+  overflow: hidden;
+}
+.identify-cropper[open] {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  grid-template-rows: minmax(0, 1fr) auto;
+}
+.identify-cropper[open][data-controls="side"] {
+  grid-template-columns: minmax(0, 1fr) min(22rem, 40%);
+  grid-template-rows: minmax(0, 1fr);
+}
+.identify-stage {
+  display: grid;
+  place-items: center;
+  min-inline-size: 0;
+  min-block-size: 0;
+  overflow: hidden;
   background: var(--plate-bg);
   touch-action: none;
-  cursor: move;
+  user-select: none;
+  -webkit-user-select: none;
 }
-.identify-crop:focus-visible { outline: 3px solid var(--focus); outline-offset: 3px; }
+.identify-stage[data-zone="move"] { cursor: move; }
+.identify-stage[data-zone="n"], .identify-stage[data-zone="s"] { cursor: ns-resize; }
+.identify-stage[data-zone="e"], .identify-stage[data-zone="w"] { cursor: ew-resize; }
+.identify-stage[data-zone="nw"], .identify-stage[data-zone="se"] { cursor: nwse-resize; }
+.identify-stage[data-zone="ne"], .identify-stage[data-zone="sw"] { cursor: nesw-resize; }
+.identify-crop { display: block; touch-action: none; }
+.identify-crop:focus-visible { outline: 3px solid var(--focus); outline-offset: -3px; }
+.identify-crop-panel {
+  box-sizing: border-box;
+  max-block-size: 50dvh;
+  padding: 0.6rem 1rem 0.8rem;
+  overflow: auto;
+  overscroll-behavior: contain;
+}
+.identify-cropper[data-controls="side"] .identify-crop-panel { max-block-size: none; }
+.identify-crop-panel h2 { margin-block: 0 0.5rem; }
+.identify-crop-panel .identify-actions { gap: 0.5rem; }
+.identify-crop-panel .identify-button { min-block-size: 2.75rem; padding: 0.4rem 0.9rem; font-size: 0.95rem; }
+.identify-crop-panel p { margin-block: 0.6rem 0; font-size: 0.95rem; line-height: 1.45; }
 .identify-quiet { background: transparent; color: var(--heading); }
 
 .identify-photo-result { grid-template-columns: 1fr; }
