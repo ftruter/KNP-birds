@@ -361,6 +361,9 @@
       "image": {
         "src": "https://inaturalist-open-data.s3.amazonaws.com/photos/154106207/large.jpg",
         "alt": "Acacia Pied Barbet in Kruger",
+        "caption": {
+          "text": "Perched, side. Acacia Pied Barbet in Kruger."
+        },
         "credit": {
           "summary": "Credit: J Dirsuwei",
           "lines": [
@@ -448,6 +451,9 @@
       "image": {
         "src": "https://inaturalist-open-data.s3.amazonaws.com/photos/614481322/large.jpg",
         "alt": "African Yellow Warbler perched side-on in rank stems, Kruger",
+        "caption": {
+          "text": "Perched, side. African Yellow Warbler perched side-on in rank stems, Kruger."
+        },
         "credit": {
           "summary": "Credit: Nico",
           "lines": [
@@ -535,6 +541,9 @@
       "image": {
         "src": "https://inaturalist-open-data.s3.amazonaws.com/photos/402011839/large.jpeg",
         "alt": "Holub’s Golden Weaver at Jakkalsbessie, Malelane, Kruger, yellow head, black bill and a pale eye",
+        "caption": {
+          "text": "Male. Perched, side. Holub’s Golden Weaver at Jakkalsbessie, Malelane, Kruger, with a yellow head, a black bill, a pale eye and pinkish legs."
+        },
         "credit": {
           "summary": "Credit: A Deacon",
           "lines": [
@@ -622,6 +631,9 @@
       "image": {
         "src": "https://inaturalist-open-data.s3.amazonaws.com/photos/22450048/large.jpg",
         "alt": "African Barred Owlet at Tsendze in Kruger, white below with rows of brown spots",
+        "caption": {
+          "text": "Perched, side. African Barred Owlet at Tsendze in Kruger, white below with rows of brown spots and a finely barred head."
+        },
         "credit": {
           "summary": "Credit: P Thompson",
           "lines": [
@@ -696,6 +708,9 @@
       "image": {
         "src": "https://inaturalist-open-data.s3.amazonaws.com/photos/449036373/large.jpg",
         "alt": "Two African Cuckoos on a dead branch, one with wings raised",
+        "caption": {
+          "text": "Perched, front. Two African Cuckoos on the H1-2 west of Tshokwane. One holds its wings up, showing barred underwings and a barred belly."
+        },
         "credit": {
           "summary": "Credit: B DUPONT",
           "lines": [
@@ -783,6 +798,9 @@
       "image": {
         "src": "https://inaturalist-open-data.s3.amazonaws.com/photos/222268269/large.jpg",
         "alt": "African Dusky Flycatcher at Skukuza in Kruger",
+        "caption": {
+          "text": "Perched, side. African Dusky Flycatcher at Skukuza in Kruger."
+        },
         "credit": {
           "summary": "Credit: Maryse",
           "lines": [
@@ -857,6 +875,9 @@
       "image": {
         "src": "https://inaturalist-open-data.s3.amazonaws.com/photos/596334280/large.jpg",
         "alt": "Male African Emerald Cuckoo calling from a bare branch",
+        "caption": {
+          "text": "Male. Perched, front. African Emerald Cuckoo calling from a bare branch near Mbombela, green above with a yellow belly."
+        },
         "credit": {
           "summary": "Credit: H Human",
           "lines": [
@@ -944,6 +965,9 @@
       "image": {
         "src": "https://inaturalist-open-data.s3.amazonaws.com/photos/199796097/large.jpg",
         "alt": "African Firefinch in Kruger",
+        "caption": {
+          "text": "Perched, side. African Firefinch in Kruger National Park."
+        },
         "credit": {
           "summary": "Credit: J Pruett",
           "lines": [
@@ -1031,6 +1055,9 @@
       "image": {
         "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3c/African_Fish-Eagle_%28Haliaeetus_vocifer%29_%2853091141268%29.jpg/1280px-African_Fish-Eagle_%28Haliaeetus_vocifer%29_%2853091141268%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
         "alt": "African Fish Eagle — perched-side, adult. H4-2 Road East of Lower Sabie, Kruger NP, Mpumalanga, SOUTH AFRICA",
+        "caption": {
+          "text": "Perched, side. African Fish Eagle — perched-side, adult. H4-2 Road East of Lower Sabie, Kruger NP, Mpumalanga, SOUTH AFRICA."
+        },
         "credit": {
           "summary": "Credit: B DUPONT",
           "lines": [
@@ -1105,6 +1132,9 @@
       "image": {
         "src": "https://inaturalist-open-data.s3.amazonaws.com/photos/243038779/large.jpeg",
         "alt": "African Golden Oriole, yellow with a black eye-line and a pink bill",
+        "caption": {
+          "text": "Male. Perched, side. Male African Golden Oriole at Timbavati, yellow with a black line through the eye and a pink bill."
+        },
         "credit": {
           "summary": "Credit: joysglobal",
           "lines": [
@@ -1192,6 +1222,9 @@
       "image": {
         "src": "https://upload.wikimedia.org/wikipedia/commons/8/87/African_Goshawk%2C_Newlands%2C_Harare%2C_Zimbabwe_imported_from_iNaturalist_photo_385910841.jpg",
         "alt": "Juvenile African Goshawk perched, side view; Harare, Zimbabwe.",
+        "caption": {
+          "text": "Perched, side. Juvenile African Goshawk perched, side view; Harare, Zimbabwe."
+        },
         "credit": {
           "summary": "Credit: i_c_riddell",
           "lines": [
@@ -1279,6 +1312,9 @@
       "image": {
         "src": "https://inaturalist-open-data.s3.amazonaws.com/photos/481855530/large.jpg",
         "alt": "African Green Pigeon perched in Kruger",
+        "caption": {
+          "text": "Perched, side. African Green Pigeon perched in Kruger."
+        },
         "credit": {
           "summary": "Credit: T Doty",
           "lines": [
@@ -1366,6 +1402,9 @@
       "image": {
         "src": "https://inaturalist-open-data.s3.amazonaws.com/photos/599163460/large.jpg",
         "alt": "African Grey Hornbill perched in a Kruger treetop, facing forward, with a pale eyebrow and a dark bill",
+        "caption": {
+          "text": "Perched, front. African Grey Hornbill perched in a Kruger treetop, facing forward, with a pale eyebrow and a dark bill."
+        },
         "credit": {
           "summary": "Credit: A Gomez",
           "lines": [
@@ -1453,6 +1492,9 @@
       "image": {
         "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a3/African_Harrier-Hawk_%28Polyboroides_typus%29.jpg/1280px-African_Harrier-Hawk_%28Polyboroides_typus%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
         "alt": "African Harrier-Hawk — perched-side, adult. H4-1 Road East of Skukuza, Kruger NP, Mpumalanga, SOUTH AFRICA",
+        "caption": {
+          "text": "Perched, side. African Harrier-Hawk — perched-side, adult. H4-1 Road East of Skukuza, Kruger NP, Mpumalanga, SOUTH AFRICA."
+        },
         "credit": {
           "summary": "Credit: B DUPONT",
           "lines": [
@@ -1540,6 +1582,9 @@
       "image": {
         "src": "https://inaturalist-open-data.s3.amazonaws.com/photos/259642047/large.jpg",
         "alt": "African Jacana in reeds, chestnut body and blue bill",
+        "caption": {
+          "text": "Perched, side. African Jacana in the Ehlanzeni district, chestnut below, with a blue bill and a white neck."
+        },
         "credit": {
           "summary": "Credit: P Shukov",
           "lines": [
@@ -1627,6 +1672,9 @@
       "image": {
         "src": "https://inaturalist-open-data.s3.amazonaws.com/photos/466881786/large.jpeg",
         "alt": "African Mourning Dove perched in Kruger",
+        "caption": {
+          "text": "Perched, side. African Mourning Dove perched in Kruger."
+        },
         "credit": {
           "summary": "Credit: A Whitlock",
           "lines": [
@@ -1714,6 +1762,9 @@
       "image": {
         "src": "https://inaturalist-open-data.s3.amazonaws.com/photos/729516872/large.jpg",
         "alt": "African Olive Pigeon at Sir Lowry’s Pass, not Kruger, with a yellow eye-ring, a yellow bill and white-spotted dark plumage.",
+        "caption": {
+          "text": "Perched, side. African Olive Pigeon at Sir Lowry’s Pass, not Kruger, with a yellow eye-ring, a yellow bill and white-spotted dark plumage."
+        },
         "credit": {
           "summary": "Credit: C Viljoen",
           "lines": [
@@ -1801,6 +1852,9 @@
       "image": {
         "src": "https://inaturalist-open-data.s3.amazonaws.com/photos/345496892/large.jpg",
         "alt": "African Palm Swift clinging to a palm frond in Mopani, Kruger, beside a feather nest",
+        "caption": {
+          "text": "Perched, side. African Palm Swift clinging to a palm frond in Mopani, Kruger, beside a feather nest."
+        },
         "credit": {
           "summary": "Credit: D McKenzie",
           "lines": [
@@ -1888,6 +1942,9 @@
       "image": {
         "src": "https://inaturalist-open-data.s3.amazonaws.com/photos/258217942/large.jpeg",
         "alt": "African Paradise Flycatcher in Kruger, Mopani",
+        "caption": {
+          "text": "Perched, side. African Paradise Flycatcher in Kruger, Mopani."
+        },
         "credit": {
           "summary": "Credit: T ARMAND",
           "lines": [
@@ -1975,6 +2032,9 @@
       "image": {
         "src": "https://inaturalist-open-data.s3.amazonaws.com/photos/340933062/large.jpg",
         "alt": "African Pied Wagtail perched on driftwood, black and white",
+        "caption": {
+          "text": "Male. Perched, side. African Pied Wagtail in the Ehlanzeni district, black and white. Newman gives the black areas to the male."
+        },
         "credit": {
           "summary": "Credit: L Boscain",
           "lines": [
@@ -2062,6 +2122,9 @@
       "image": {
         "src": "https://inaturalist-open-data.s3.amazonaws.com/photos/13725557/large.jpeg",
         "alt": "African Pipit standing, streaked breast and a pale outer tail",
+        "caption": {
+          "text": "Perched, side. African Pipit near Babalala in Kruger, light brown with a streaked breast and a pale outer tail feather."
+        },
         "credit": {
           "summary": "Credit: copper",
           "lines": [
@@ -2149,6 +2212,9 @@
       "image": {
         "src": "https://inaturalist-open-data.s3.amazonaws.com/photos/376172372/large.jpg",
         "alt": "African Rail in Kruger, long red bill, red legs, grey underparts and a brown back",
+        "caption": {
+          "text": "Perched, side. African Rail in Kruger, Ehlanzeni, with a long red bill, red legs, grey underparts and a brown back."
+        },
         "credit": {
           "summary": "Credit: K Morejohn",
           "lines": [
@@ -2236,6 +2302,9 @@
       "image": {
         "src": "https://inaturalist-open-data.s3.amazonaws.com/photos/222238143/large.jpg",
         "alt": "African Scops Owl in Kruger, with ear tufts and bark-like plumage",
+        "caption": {
+          "text": "Perched, side. African Scops Owl in Kruger, on the Shingwedzi River loop, with ear tufts and bark-like plumage."
+        },
         "credit": {
           "summary": "Credit: Maryse",
           "lines": [
@@ -2323,6 +2392,9 @@
       "image": {
         "src": "https://inaturalist-open-data.s3.amazonaws.com/photos/279699914/large.jpg",
         "alt": "African Stonechat in Kruger, Mopani",
+        "caption": {
+          "text": "Perched, side. African Stonechat in Kruger, Mopani."
+        },
         "credit": {
           "summary": "Credit: H McCarthy",
           "lines": [
@@ -2410,6 +2482,9 @@
       "image": {
         "src": "https://inaturalist-open-data.s3.amazonaws.com/photos/432415022/large.jpeg",
         "alt": "African Wattled Lapwing standing side-on on dry Kruger grass, with yellow legs and a small pale forecrown",
+        "caption": {
+          "text": "Perched, side. African Wattled Lapwing standing side-on on dry Kruger grass, with yellow legs and a small pale forecrown."
+        },
         "credit": {
           "summary": "Credit: B Lensing",
           "lines": [
@@ -2497,6 +2572,9 @@
       "image": {
         "src": "https://inaturalist-open-data.s3.amazonaws.com/photos/346203216/large.jpeg",
         "alt": "African Wood Owl in Kruger, barred below and without ear tufts",
+        "caption": {
+          "text": "Perched, side. African Wood Owl in Kruger, Mopani, barred below and without ear tufts. The photograph is dark."
+        },
         "credit": {
           "summary": "Credit: C Viljoen",
           "lines": [
@@ -2584,6 +2662,9 @@
       "image": {
         "src": "https://inaturalist-open-data.s3.amazonaws.com/photos/737946670/large.jpg",
         "alt": "Alpine Swift in flight from below near Hoedspruit, with a white belly and a dark breast band",
+        "caption": {
+          "text": "In flight from below. Alpine Swift in flight from below near Hoedspruit, with a white belly and a dark breast band."
+        },
         "credit": {
           "summary": "Credit: C Spalding",
           "lines": [
@@ -2671,6 +2752,9 @@
       "image": {
         "src": "https://inaturalist-open-data.s3.amazonaws.com/photos/734191472/large.jpg",
         "alt": "Amethyst Sunbird perched, long bill and streaked underparts",
+        "caption": {
+          "text": "Female. Perched, side. Amethyst Sunbird in the Ehlanzeni district, a streaked bird with a long bill and a dark throat. The purple throat of the male is not what this photograph shows."
+        },
         "credit": {
           "summary": "Credit: A Gomez",
           "lines": [
@@ -2745,6 +2829,9 @@
       "image": {
         "src": "https://inaturalist-open-data.s3.amazonaws.com/photos/214067904/large.jpeg",
         "alt": "Female Amur Falcon on a Kruger bush",
+        "caption": {
+          "text": "Female. Perched, side. Amur Falcon on the H7 in Kruger. The spotted underparts match the female."
+        },
         "credit": {
           "summary": "Credit: sitszasadam",
           "lines": [
@@ -2832,6 +2919,9 @@
       "image": {
         "src": "https://inaturalist-open-data.s3.amazonaws.com/photos/607663521/large.jpg",
         "alt": "Arnot's Chat in Kruger, Mopani",
+        "caption": {
+          "text": "Perched, side. Arnot's Chat in Kruger, Mopani."
+        },
         "credit": {
           "summary": "Credit: N Perrins",
           "lines": [
@@ -2919,6 +3009,9 @@
       "image": {
         "src": "https://inaturalist-open-data.s3.amazonaws.com/photos/590802636/large.jpg",
         "alt": "Arrow-marked Babbler partly behind a wall, streaked breast and orange eye",
+        "caption": {
+          "text": "Perched, side. Arrow-marked Babbler in the Ehlanzeni district, with whitish arrow-like streaks, an orange eye and a dark bill. Part of the bird is hidden by a wall."
+        },
         "credit": {
           "summary": "Credit: F Derks",
           "lines": [
@@ -3006,6 +3099,9 @@
       "image": {
         "src": "https://inaturalist-open-data.s3.amazonaws.com/photos/77365758/large.jpeg",
         "alt": "Ashy Flycatcher at Malelane in Kruger",
+        "caption": {
+          "text": "Perched, side. Ashy Flycatcher at Malelane in Kruger."
+        },
         "credit": {
           "summary": "Credit: A Deacon",
           "lines": [
@@ -3093,6 +3189,9 @@
       "image": {
         "src": "https://inaturalist-open-data.s3.amazonaws.com/photos/272487045/large.jpg",
         "alt": "Bar-throated Apalis perched in Kruger woodland",
+        "caption": {
+          "text": "Perched, side. Bar-throated Apalis perched in Kruger woodland."
+        },
         "credit": {
           "summary": "Credit: H Human",
           "lines": [
@@ -3167,6 +3266,9 @@
       "image": {
         "src": "https://inaturalist-open-data.s3.amazonaws.com/photos/490483242/large.jpeg",
         "alt": "A flock of Barn Swallows perched in a Kruger tree",
+        "caption": {
+          "text": "Perched, side. Barn Swallows perched in a tree in the Mopani district, many with long tail streamers."
+        },
         "credit": {
           "summary": "Credit: jandutoit",
           "lines": [
@@ -3254,6 +3356,9 @@
       "image": {
         "src": "https://inaturalist-open-data.s3.amazonaws.com/photos/191075565/large.jpg",
         "alt": "Barratt’s Warbler at the Sani border post",
+        "caption": {
+          "text": "Perched, side. Barratt’s Warbler at the Sani border post."
+        },
         "credit": {
           "summary": "Credit: A Manson",
           "lines": [
@@ -3341,6 +3446,9 @@
       "image": {
         "src": "https://inaturalist-open-data.s3.amazonaws.com/photos/262677067/large.jpeg",
         "alt": "Barred Wren-Warbler in Vhembe, not Kruger, with dark barring across the underparts in a thorny thicket.",
+        "caption": {
+          "text": "Perched, side. Barred Wren-Warbler in Vhembe, not Kruger, with dark barring across the underparts in a thorny thicket."
+        },
         "credit": {
           "summary": "Credit: scaup",
           "lines": [
@@ -3428,6 +3536,9 @@
       "image": {
         "src": "https://inaturalist-open-data.s3.amazonaws.com/photos/607664679/large.jpg",
         "alt": "Bat Hawk in flight over the Mopani district, Kruger, dark with a white throat patch, seen from below.",
+        "caption": {
+          "text": "In flight from below. Bat Hawk in flight over the Mopani district, Kruger, dark with a white throat patch, seen from below."
+        },
         "credit": {
           "summary": "Credit: N Perrins",
           "lines": [
@@ -3515,6 +3626,9 @@
       "image": {
         "src": "https://inaturalist-open-data.s3.amazonaws.com/photos/695239914/large.jpg",
         "alt": "Bearded Scrub Robin in Kruger, Mopani",
+        "caption": {
+          "text": "Perched, side. Bearded Scrub Robin in Kruger, Mopani."
+        },
         "credit": {
           "summary": "Credit: H Human",
           "lines": [
@@ -3602,6 +3716,9 @@
       "image": {
         "src": "https://inaturalist-open-data.s3.amazonaws.com/photos/432502604/large.jpeg",
         "alt": "Male Bearded Woodpecker in Kruger, red crown, black forehead and black ear-patch",
+        "caption": {
+          "text": "Male. Perched, side. Male Bearded Woodpecker in Kruger, Ehlanzeni, with a red crown, a black forehead and a black ear-patch."
+        },
         "credit": {
           "summary": "Credit: B Lensing",
           "lines": [
@@ -3689,6 +3806,9 @@
       "image": {
         "src": "https://inaturalist-open-data.s3.amazonaws.com/photos/16072588/large.jpg",
         "alt": "Black Crake at Mopani, Kruger, yellow bill and red legs",
+        "caption": {
+          "text": "Perched, side. Black Crake at Mopani, Kruger, with a yellow bill and red legs."
+        },
         "credit": {
           "summary": "Credit: magdastlucia",
           "lines": [
@@ -3763,6 +3883,9 @@
       "image": {
         "src": "https://inaturalist-open-data.s3.amazonaws.com/photos/463573707/large.jpg",
         "alt": "Black Cuckoo perched in shade at Pafuri",
+        "caption": {
+          "text": "Perched, back. Black Cuckoo perched in shade at the Pafuri picnic site. The bird reads as entirely black."
+        },
         "credit": {
           "summary": "Credit: maritzasouthafrica",
           "lines": [
@@ -3837,6 +3960,9 @@
       "image": {
         "src": "https://inaturalist-open-data.s3.amazonaws.com/photos/317601658/large.jpeg",
         "alt": "Male Black Cuckooshrike perched side-on in Kruger woodland, black, with a yellow shoulder",
+        "caption": {
+          "text": "Male. Perched, side. Male Black Cuckooshrike perched side-on in Kruger woodland, black, with a yellow shoulder."
+        },
         "credit": {
           "summary": "Credit: jderasmus",
           "lines": [
@@ -3921,6 +4047,9 @@
       "image": {
         "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2b/20191203_Milvus_migrans_govinda_0541_6421_DxO.jpg/1280px-20191203_Milvus_migrans_govinda_0541_6421_DxO.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
         "alt": "Black Kite — perched-side, adult. Black kite ( Milvus migrans govinda ) in Delhi",
+        "caption": {
+          "text": "Perched, side. Black Kite — perched-side, adult. Black kite ( Milvus migrans govinda ) in Delhi."
+        },
         "credit": {
           "summary": "Credit: J Hałun",
           "lines": [
@@ -4009,6 +4138,9 @@
       "image": {
         "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c5/Black_Sparrowhawk_%28Accipiter_melanoleucus%29_melanistic_form_%2830688362345%29.jpg/1280px-Black_Sparrowhawk_%28Accipiter_melanoleucus%29_melanistic_form_%2830688362345%29.jpg",
         "alt": "Melanistic Black Sparrowhawk perched; South Africa (Bernard Dupont).",
+        "caption": {
+          "text": "Perched, side. Melanistic Black Sparrowhawk perched; South Africa (Bernard Dupont)."
+        },
         "credit": {
           "summary": "Credit: B Dupont",
           "lines": [
@@ -4096,6 +4228,9 @@
       "image": {
         "src": "https://inaturalist-open-data.s3.amazonaws.com/photos/177331788/large.jpeg",
         "alt": "Black Stork standing side-on in a Kruger river, black with a red bill and a white belly",
+        "caption": {
+          "text": "Perched, side. Black Stork standing side-on in a Kruger river, black with a red bill and a white belly."
+        },
         "credit": {
           "summary": "Credit: jandutoit",
           "lines": [
@@ -4183,6 +4318,9 @@
       "image": {
         "src": "https://inaturalist-open-data.s3.amazonaws.com/photos/315589834/large.jpeg",
         "alt": "Female Black-backed Puffback in foliage, white eyebrow and red eye",
+        "caption": {
+          "text": "Female. Perched, side. Black-backed Puffback in the Mopani district, a pied bird with a white eyebrow and a red eye. Newman gives the white forehead and eyebrow to the female."
+        },
         "credit": {
           "summary": "Credit: D Correia",
           "lines": [
@@ -4270,6 +4408,9 @@
       "image": {
         "src": "https://inaturalist-open-data.s3.amazonaws.com/photos/131462961/large.jpg",
         "alt": "Black-bellied Starling at Colchester, Gqeberha, appearing black. No Kruger photograph was found.",
+        "caption": {
+          "text": "Perched, side. Black-bellied Starling at Colchester, Gqeberha, appearing black. No Kruger photograph was found."
+        },
         "credit": {
           "summary": "Credit: M Delport",
           "lines": [
@@ -4357,6 +4498,9 @@
       "image": {
         "src": "https://inaturalist-open-data.s3.amazonaws.com/photos/346323272/large.jpeg",
         "alt": "Black-chested Prinia perched in Kruger",
+        "caption": {
+          "text": "Perched, side. Black-chested Prinia perched in Kruger."
+        },
         "credit": {
           "summary": "Credit: D McKenzie",
           "lines": [
@@ -4444,6 +4588,9 @@
       "image": {
         "src": "https://inaturalist-open-data.s3.amazonaws.com/photos/317415470/large.jpeg",
         "alt": "Black-collared Barbet in Kruger",
+        "caption": {
+          "text": "Perched, side. Black-collared Barbet in Kruger."
+        },
         "credit": {
           "summary": "Credit: bjoern1982",
           "lines": [
@@ -4531,6 +4678,9 @@
       "image": {
         "src": "https://inaturalist-open-data.s3.amazonaws.com/photos/294445488/large.jpeg",
         "alt": "Black-crowned Night Heron standing side-on in Kruger grass, with a black crown, red eye and grey wings",
+        "caption": {
+          "text": "Perched, side. Black-crowned Night Heron standing side-on in Kruger grass, with a black crown, red eye and grey wings."
+        },
         "credit": {
           "summary": "Credit: L Correia",
           "lines": [
@@ -4618,6 +4768,9 @@
       "image": {
         "src": "https://inaturalist-open-data.s3.amazonaws.com/photos/182439697/large.jpg",
         "alt": "Black-crowned Tchagra perched, black crown, pale eyebrow and rufous wing",
+        "caption": {
+          "text": "Perched, side. Black-crowned Tchagra in Kruger National Park, black crown, pale eyebrow, beige mantle and a rufous wing."
+        },
         "credit": {
           "summary": "Credit: maritzasouthafrica",
           "lines": [
@@ -4705,6 +4858,9 @@
       "image": {
         "src": "https://inaturalist-open-data.s3.amazonaws.com/photos/163390496/large.jpg",
         "alt": "Black-fronted Bush-shrike in Mopani, not Kruger, with a dark forehead, olive upperparts and yellow underparts.",
+        "caption": {
+          "text": "Perched, side. Black-fronted Bush-shrike in Mopani, not Kruger, with a dark forehead, olive upperparts and yellow underparts."
+        },
         "credit": {
           "summary": "Credit: dhfischer",
           "lines": [
@@ -4792,6 +4948,9 @@
       "image": {
         "src": "https://inaturalist-open-data.s3.amazonaws.com/photos/463546783/large.jpg",
         "alt": "Black-headed Heron standing side-on in Kruger grass, with a black cap and hindneck",
+        "caption": {
+          "text": "Perched, side. Black-headed Heron standing side-on in Kruger grass, with a black cap and hindneck."
+        },
         "credit": {
           "summary": "Credit: maritzasouthafrica",
           "lines": [
@@ -4879,6 +5038,9 @@
       "image": {
         "src": "https://inaturalist-open-data.s3.amazonaws.com/photos/10642826/large.jpeg",
         "alt": "Black-headed Oriole, black head and throat, pink bill and yellow body",
+        "caption": {
+          "text": "Perched, side. Black-headed Oriole in the Ehlanzeni district, black head and throat, a pink bill and a yellow body."
+        },
         "credit": {
           "summary": "Credit: D Renoult",
           "lines": [
@@ -4966,6 +5128,9 @@
       "image": {
         "src": "https://inaturalist-open-data.s3.amazonaws.com/photos/310656628/large.jpeg",
         "alt": "Black-throated Canary in Namakwa, not Kruger, showing the bright yellow rump and streaked brown plumage.",
+        "caption": {
+          "text": "Perched, side. Black-throated Canary in Namakwa, not Kruger, showing the bright yellow rump and streaked brown plumage."
+        },
         "credit": {
           "summary": "Credit: S Swanepoel",
           "lines": [
@@ -5053,6 +5218,9 @@
       "image": {
         "src": "https://inaturalist-open-data.s3.amazonaws.com/photos/559000555/large.jpg",
         "alt": "Male Black-throated Wattle-eye at Mopani, Kruger, narrow black breast-band, white underparts and a red eye-wattle",
+        "caption": {
+          "text": "Male. Perched, side. Male Black-throated Wattle-eye at Mopani, Kruger, with a narrow black breast-band, white underparts and a red eye-wattle."
+        },
         "credit": {
           "summary": "Credit: Л Артемьева",
           "lines": [
@@ -5140,6 +5308,9 @@
       "image": {
         "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6a/Day_23_Black-winged_Kite_%28Elanus_caeruleus%29_%2853469627758%29.jpg/1280px-Day_23_Black-winged_Kite_%28Elanus_caeruleus%29_%2853469627758%29.jpg",
         "alt": "Adult Black-winged Kite perched; Kruger National Park.",
+        "caption": {
+          "text": "Perched, side. Adult Black-winged Kite perched; Kruger National Park."
+        },
         "credit": {
           "summary": "Credit: B Dupont",
           "lines": [
@@ -5227,6 +5398,9 @@
       "image": {
         "src": "https://inaturalist-open-data.s3.amazonaws.com/photos/26082930/large.jpeg",
         "alt": "Black-winged Stilt at Grootvlei, Kruger, black and white, sitting so the legs are hidden",
+        "caption": {
+          "text": "Perched, side. Black-winged Stilt at Grootvlei dam, Kruger, black and white, with a long bill. It is sitting, so the red legs are not visible."
+        },
         "credit": {
           "summary": "Credit: copper",
           "lines": [
@@ -5314,6 +5488,9 @@
       "image": {
         "src": "https://inaturalist-open-data.s3.amazonaws.com/photos/267296358/large.jpg",
         "alt": "Blacksmith Lapwing standing side-on on a Kruger sandbank, pied with dark wings",
+        "caption": {
+          "text": "Perched, side. Blacksmith Lapwing standing side-on on a Kruger sandbank, pied with dark wings."
+        },
         "credit": {
           "summary": "Credit: liezelg",
           "lines": [
@@ -5401,6 +5578,9 @@
       "image": {
         "src": "https://inaturalist-open-data.s3.amazonaws.com/photos/348850681/large.jpeg",
         "alt": "Bleating Camaroptera perched in Kruger bush",
+        "caption": {
+          "text": "Perched, side. Bleating Camaroptera perched in Kruger bush."
+        },
         "credit": {
           "summary": "Credit: C Viljoen",
           "lines": [
@@ -5489,6 +5669,9 @@
       "image": {
         "src": "https://inaturalist-open-data.s3.amazonaws.com/photos/523392414/large.jpg",
         "alt": "Blue Waxbill at Nyawutsi Hide",
+        "caption": {
+          "text": "Perched, side. Blue Waxbill at Nyawutsi Hide."
+        },
         "credit": {
           "summary": "Credit: tjeerd",
           "lines": [
@@ -5563,6 +5746,9 @@
       "image": {
         "src": "https://inaturalist-open-data.s3.amazonaws.com/photos/484366906/large.jpeg",
         "alt": "Blue-cheeked Bee-eater in flight, green body and a blue cheek",
+        "caption": {
+          "text": "In flight, from the side. Blue-cheeked Bee-eater in the Ehlanzeni district, in flight, green with a blue cheek and a rufous throat."
+        },
         "credit": {
           "summary": "Credit: scaup",
           "lines": [
@@ -5650,6 +5836,9 @@
       "image": {
         "src": "https://inaturalist-open-data.s3.amazonaws.com/photos/15325147/large.jpg",
         "alt": "Blue-mantled Crested Flycatcher in Kruger, Satara",
+        "caption": {
+          "text": "Perched, side. Blue-mantled Crested Flycatcher in Kruger, Satara."
+        },
         "credit": {
           "summary": "Credit: B du Preez",
           "lines": [
@@ -5724,6 +5913,9 @@
       "image": {
         "src": "https://inaturalist-open-data.s3.amazonaws.com/photos/589731718/large.jpg",
         "alt": "Blue-spotted Wood Dove in Mopani, not Kruger, with blue wing spots and a pinkish-buff breast.",
+        "caption": {
+          "text": "Perched, side. Blue-spotted Wood Dove in Mopani, not Kruger, with blue wing spots and a pinkish-buff breast."
+        },
         "credit": {
           "summary": "Credit: maritzasouthafrica",
           "lines": [
@@ -5807,6 +5999,9 @@
       "image": {
         "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ea/Booted_Eagle_%28Hieraaetus_pennatus%29.jpg/1280px-Booted_Eagle_%28Hieraaetus_pennatus%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
         "alt": "Booted Eagle, adult, perched-side",
+        "caption": {
+          "text": "Perched, side. Booted Eagle, adult, perched-side."
+        },
         "credit": {
           "summary": "Credit: gilgit2",
           "lines": [
@@ -5894,6 +6089,9 @@
       "image": {
         "src": "https://inaturalist-open-data.s3.amazonaws.com/photos/348278414/large.jpg",
         "alt": "Brimstone Canary in Kruger",
+        "caption": {
+          "text": "Perched, side. Brimstone Canary in the Ehlanzeni district."
+        },
         "credit": {
           "summary": "Credit: D McKenzie",
           "lines": [
@@ -5976,6 +6174,9 @@
       "image": {
         "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/16/Broad-billed_roller%2C_Kruger_National_park_%2838184851631%29.jpg/1280px-Broad-billed_roller%2C_Kruger_National_park_%2838184851631%29.jpg",
         "alt": "Adult Broad-billed Roller perched side-on in Kruger National Park, with a yellow bill",
+        "caption": {
+          "text": "Perched, side."
+        },
         "credit": {
           "summary": "Credit: D Keats",
           "lines": [
@@ -6063,6 +6264,9 @@
       "image": {
         "src": "https://inaturalist-open-data.s3.amazonaws.com/photos/260820651/large.jpeg",
         "alt": "Bronze Mannikin in the Mopani district",
+        "caption": {
+          "text": "Perched, side. Bronze Mannikin in the Mopani district."
+        },
         "credit": {
           "summary": "Credit: emskakoon",
           "lines": [
@@ -6150,6 +6354,9 @@
       "image": {
         "src": "https://inaturalist-open-data.s3.amazonaws.com/photos/15930078/large.jpg",
         "alt": "Brown Scrub Robin at Umdoni Forest, Pennington",
+        "caption": {
+          "text": "Perched, side. Brown Scrub Robin at Umdoni Forest, Pennington."
+        },
         "credit": {
           "summary": "Credit: P Vos",
           "lines": [
@@ -6237,6 +6444,9 @@
       "image": {
         "src": "https://inaturalist-open-data.s3.amazonaws.com/photos/158825757/large.jpg",
         "alt": "Brown-crowned Tchagra perched, brown crown with a black border and a chestnut wing",
+        "caption": {
+          "text": "Perched, side. Brown-crowned Tchagra in the Kruger box, grey-brown crown edged black, pale eyebrow and a chestnut wing."
+        },
         "credit": {
           "summary": "Credit: N Perrins",
           "lines": [
@@ -6324,6 +6534,9 @@
       "image": {
         "src": "https://inaturalist-open-data.s3.amazonaws.com/photos/412280520/large.jpeg",
         "alt": "Brown-headed Parrot in Kruger, brown head and green body",
+        "caption": {
+          "text": "Perched, front. Brown-headed Parrot in Kruger, with a brown head and a green body."
+        },
         "credit": {
           "summary": "Credit: P Kotze",
           "lines": [
@@ -6411,6 +6624,9 @@
       "image": {
         "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e3/Brown-hooded_Kingfisher_%28Halcyon_albiventris%29_%2852516321036%29.jpg/1280px-Brown-hooded_Kingfisher_%28Halcyon_albiventris%29_%2852516321036%29.jpg",
         "alt": "Brown-hooded Kingfisher perched, front view; H10, Kruger National Park. Sex not determinable from the image.",
+        "caption": {
+          "text": "Perched, front. Brown-hooded Kingfisher perched, front view; H10, Kruger National Park. Sex not determinable from the image."
+        },
         "credit": {
           "summary": "Credit: B Dupont",
           "lines": [
@@ -6498,6 +6714,9 @@
       "image": {
         "src": "https://inaturalist-open-data.s3.amazonaws.com/photos/230879382/large.jpeg",
         "alt": "Brown-throated Martin in Vhembe",
+        "caption": {
+          "text": "Perched, side. Brown-throated Martin in Vhembe, Limpopo."
+        },
         "credit": {
           "summary": "Credit: agujaceratops",
           "lines": [
@@ -6585,6 +6804,9 @@
       "image": {
         "src": "https://inaturalist-open-data.s3.amazonaws.com/photos/317600086/large.jpeg",
         "alt": "Brubru perched, brown cap, white underparts, rufous flank and white wing-bar",
+        "caption": {
+          "text": "Female. Perched, side. Brubru at Mpondo Dam in Kruger, brown-capped and dark above, with a white wing-bar and a rufous flank. Newman gives the brown cap and dark brown upperparts to the female."
+        },
         "credit": {
           "summary": "Credit: jderasmus",
           "lines": [
@@ -6672,6 +6894,9 @@
       "image": {
         "src": "https://inaturalist-open-data.s3.amazonaws.com/photos/548367383/large.jpg",
         "alt": "Male Buff-spotted Flufftail in Kruger, chestnut on the head and breast with a spotted back",
+        "caption": {
+          "text": "Male. Perched, side. Male Buff-spotted Flufftail in Kruger, Bushbuckridge, with a chestnut head and breast and a spotted dark back."
+        },
         "credit": {
           "summary": "Credit: xihuhuri",
           "lines": [
@@ -6759,6 +6984,9 @@
       "image": {
         "src": "https://inaturalist-open-data.s3.amazonaws.com/photos/544989114/large.jpg",
         "alt": "Burchell's Starling in Kruger, Ehlanzeni.",
+        "caption": {
+          "text": "Perched, side. Burchell's Starling in Kruger, Ehlanzeni."
+        },
         "credit": {
           "summary": "Credit: D Wallace",
           "lines": [
@@ -6846,6 +7074,9 @@
       "image": {
         "src": "https://inaturalist-open-data.s3.amazonaws.com/photos/578280457/large.jpg",
         "alt": "Cape Starling in Kruger, Limpopo, glossy blue-green with a yellow eye.",
+        "caption": {
+          "text": "Perched, side. Cape Starling in Kruger, Limpopo, glossy blue-green with a yellow eye."
+        },
         "credit": {
           "summary": "Credit: cwlonie6626",
           "lines": [
@@ -6933,6 +7164,9 @@
       "image": {
         "src": "https://inaturalist-open-data.s3.amazonaws.com/photos/421257277/large.jpg",
         "alt": "Female Cape Batis in Kruger, rufous throat and breast-band",
+        "caption": {
+          "text": "Female. Perched, front. Female Cape Batis in Kruger, Ehlanzeni, with a rufous throat and breast-band. This is the only Kruger photograph found under an allowed licence."
+        },
         "credit": {
           "summary": "Credit: lance_robinson",
           "lines": [
@@ -7020,6 +7254,9 @@
       "image": {
         "src": "https://inaturalist-open-data.s3.amazonaws.com/photos/101251930/large.jpg",
         "alt": "Male Cape Canary at Port Elizabeth, not Kruger, yellow-green with a grey nape patch.",
+        "caption": {
+          "text": "Male. Perched, front. Male Cape Canary at Port Elizabeth, not Kruger, yellow-green with a grey nape patch."
+        },
         "credit": {
           "summary": "Credit: D Brown",
           "lines": [
@@ -7107,6 +7344,9 @@
       "image": {
         "src": "https://inaturalist-open-data.s3.amazonaws.com/photos/522435483/large.jpg",
         "alt": "Cape Crow at Addo Elephant National Park, not Kruger, all black, standing in dry grass.",
+        "caption": {
+          "text": "Perched, side. Cape Crow at Addo Elephant National Park, not Kruger, all black, standing in dry grass."
+        },
         "credit": {
           "summary": "Credit: bdhimes",
           "lines": [
@@ -7194,6 +7434,9 @@
       "image": {
         "src": "https://inaturalist-open-data.s3.amazonaws.com/photos/166655856/large.jpeg",
         "alt": "Cape Grassbird at Cape Point",
+        "caption": {
+          "text": "Perched, side. Cape Grassbird at Cape Point."
+        },
         "credit": {
           "summary": "Credit: G Laidler",
           "lines": [
@@ -7268,6 +7511,9 @@
       "image": {
         "src": "https://inaturalist-open-data.s3.amazonaws.com/photos/52929547/large.jpeg",
         "alt": "Cape Robin-Chat in Kruger, Ehlanzeni",
+        "caption": {
+          "text": "Perched, side. Cape Robin-Chat in Kruger, Ehlanzeni."
+        },
         "credit": {
           "summary": "Credit: R Hoverman",
           "lines": [
@@ -7355,6 +7601,9 @@
       "image": {
         "src": "https://inaturalist-open-data.s3.amazonaws.com/photos/754258168/large.jpg",
         "alt": "Cape Rock Thrush in Kruger",
+        "caption": {
+          "text": "Perched, side. Cape Rock Thrush in Kruger."
+        },
         "credit": {
           "summary": "Credit: Z Buchanan-Clarke",
           "lines": [
@@ -7442,6 +7691,9 @@
       "image": {
         "src": "https://inaturalist-open-data.s3.amazonaws.com/photos/59645206/large.jpeg",
         "alt": "Male and female Cape Sparrows, black-and-white male head and grey female head",
+        "caption": {
+          "text": "Male and female. Perched, side. Cape Sparrows at Satara. The male has a black-and-white head and a black upper breast. The female has a grey head and a chestnut back."
+        },
         "credit": {
           "summary": "Credit: copper",
           "lines": [
@@ -7529,6 +7781,9 @@
       "image": {
         "src": "https://inaturalist-open-data.s3.amazonaws.com/photos/385061692/large.jpeg",
         "alt": "Cape Turtle Dove perched in Kruger",
+        "caption": {
+          "text": "Perched, side. Cape Turtle Dove perched in Kruger."
+        },
         "credit": {
           "summary": "Credit: jandutoit",
           "lines": [
@@ -7616,6 +7871,9 @@
       "image": {
         "src": "https://inaturalist-open-data.s3.amazonaws.com/photos/150732535/large.jpg",
         "alt": "Cape Wagtail at the water’s edge, grey above and white on the throat",
+        "caption": {
+          "text": "Perched, side. Cape Wagtail in the Kruger box, grey above with a white throat, walking at the edge of the water. The breast-band is not clear in this photograph."
+        },
         "credit": {
           "summary": "Credit: N Forshaw",
           "lines": [
@@ -7690,6 +7948,9 @@
       "image": {
         "src": "https://inaturalist-open-data.s3.amazonaws.com/photos/152204448/large.jpg",
         "alt": "Cape Weaver at Pretoriuskop, Kruger, olive-yellow, with a pale pointed bill",
+        "caption": {
+          "text": "Perched, side. Cape Weaver at Pretoriuskop, Kruger, olive-yellow, with a pale pointed bill. The pale eye of a breeding male is not clear in this frame."
+        },
         "credit": {
           "summary": "Credit: William K",
           "lines": [
@@ -7777,6 +8038,9 @@
       "image": {
         "src": "https://inaturalist-open-data.s3.amazonaws.com/photos/568499875/large.jpg",
         "alt": "Capped Wheatear in Kruger, Ehlanzeni",
+        "caption": {
+          "text": "Perched, side. Capped Wheatear in Kruger, Ehlanzeni."
+        },
         "credit": {
           "summary": "Credit: M Bonvicini",
           "lines": [
@@ -7864,6 +8128,9 @@
       "image": {
         "src": "https://inaturalist-open-data.s3.amazonaws.com/photos/175182168/large.jpeg",
         "alt": "Male Cardinal Woodpecker at Skukuza, crimson crown, brown forehead and streaked breast",
+        "caption": {
+          "text": "Male. Perched, side. Male Cardinal Woodpecker at Skukuza, with a crimson crown, a brown forehead and a streaked breast."
+        },
         "credit": {
           "summary": "Credit: J Ponder",
           "lines": [
@@ -7951,6 +8218,9 @@
       "image": {
         "src": "https://inaturalist-open-data.s3.amazonaws.com/photos/25897/large.jpg",
         "alt": "Female Chinspot Batis at Skukuza, rufous chin-spot and breast-band, white underparts and a yellow eye",
+        "caption": {
+          "text": "Female. Perched, front. Female Chinspot Batis at Skukuza, with a rufous chin-spot and breast-band, white underparts and a yellow eye."
+        },
         "credit": {
           "summary": "Credit: S Loarie",
           "lines": [
@@ -8038,6 +8308,9 @@
       "image": {
         "src": "https://inaturalist-open-data.s3.amazonaws.com/photos/451109136/large.jpeg",
         "alt": "Chorister Robin-Chat in Kruger, Ehlanzeni",
+        "caption": {
+          "text": "Perched, side. Chorister Robin-Chat in Kruger, Ehlanzeni."
+        },
         "credit": {
           "summary": "Credit: C Mullen",
           "lines": [
@@ -8125,6 +8398,9 @@
       "image": {
         "src": "https://inaturalist-open-data.s3.amazonaws.com/photos/615606332/large.jpg",
         "alt": "Cinnamon-breasted Bunting on stony ground",
+        "caption": {
+          "text": "Male. Perched, side. Cinnamon-breasted Bunting on stony ground, cinnamon-brown below with a black-and-white streaked head."
+        },
         "credit": {
           "summary": "Credit: W Richardson",
           "lines": [
@@ -8199,6 +8475,9 @@
       "image": {
         "src": "https://inaturalist-open-data.s3.amazonaws.com/photos/355613066/large.jpg",
         "alt": "Collared Palm Thrush in Kruger, Ehlanzeni",
+        "caption": {
+          "text": "Perched, side. Collared Palm Thrush in Kruger, Ehlanzeni."
+        },
         "credit": {
           "summary": "Credit: D McKenzie",
           "lines": [
@@ -8273,6 +8552,9 @@
       "image": {
         "src": "https://inaturalist-open-data.s3.amazonaws.com/photos/320827732/large.jpeg",
         "alt": "Collared Pratincole on dry ground near Komatipoort",
+        "caption": {
+          "text": "Perched, side. Collared Pratincole near Komatipoort, with a buff throat edged black and red at the base of the bill."
+        },
         "credit": {
           "summary": "Credit: jderasmus",
           "lines": [
@@ -8347,6 +8629,9 @@
       "image": {
         "src": "https://inaturalist-open-data.s3.amazonaws.com/photos/172369165/large.jpg",
         "alt": "Collared Sunbird in a flowering tree, green head and yellow underparts",
+        "caption": {
+          "text": "Perched, side. Collared Sunbird at Shaws Gate in Kruger, green on the head and yellow below."
+        },
         "credit": {
           "summary": "Credit: M King",
           "lines": [
@@ -8434,6 +8719,9 @@
       "image": {
         "src": "https://inaturalist-open-data.s3.amazonaws.com/photos/410724753/large.jpeg",
         "alt": "Common Bulbul in the Mopani District, Kruger, dark crest, black bill and yellow vent",
+        "caption": {
+          "text": "Perched, front. Common Bulbul in the Mopani District, Kruger, with a dark crest, a black bill and a yellow vent."
+        },
         "credit": {
           "summary": "Credit: T Heijnen",
           "lines": [
@@ -8521,6 +8809,9 @@
       "image": {
         "src": "https://inaturalist-open-data.s3.amazonaws.com/photos/576982978/large.jpg",
         "alt": "Common Buttonquail in Kruger, streaked brown above",
+        "caption": {
+          "text": "Perched, side. Common Buttonquail in Kruger, Mopani, streaked above in dry grass."
+        },
         "credit": {
           "summary": "Credit: R Johnstone",
           "lines": [
@@ -8602,6 +8893,9 @@
       "image": {
         "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1e/Day_85_Steppe_Buzzard_%28Buteo_buteo_vulpinus%29_%2853399433721%29.jpg/1280px-Day_85_Steppe_Buzzard_%28Buteo_buteo_vulpinus%29_%2853399433721%29.jpg",
         "alt": "Adult Steppe Buzzard (Buteo buteo vulpinus) perched; Kruger National Park.",
+        "caption": {
+          "text": "Perched, side. Adult Steppe Buzzard (Buteo buteo vulpinus) perched; Kruger National Park."
+        },
         "credit": {
           "summary": "Credit: B Dupont",
           "lines": [
@@ -8676,6 +8970,9 @@
       "image": {
         "src": "https://inaturalist-open-data.s3.amazonaws.com/photos/460421003/large.jpeg",
         "alt": "Grey Common Cuckoo perched in the Malelane section",
+        "caption": {
+          "text": "Perched, front. Common Cuckoo in the Malelane section, grey above and barred below, with a yellow eye-ring and yellow feet. The sex was not labelled."
+        },
         "credit": {
           "summary": "Credit: P Kotze",
           "lines": [
@@ -8750,6 +9047,9 @@
       "image": {
         "src": "https://inaturalist-open-data.s3.amazonaws.com/photos/456312746/large.jpg",
         "alt": "Common Greenshank in Kruger, white below with a long bill",
+        "caption": {
+          "text": "Perched, side. Common Greenshank in Kruger, Mopani, white below with a long bill. The photograph is distant."
+        },
         "credit": {
           "summary": "Credit: S Shestakov",
           "lines": [
@@ -8837,6 +9137,9 @@
       "image": {
         "src": "https://inaturalist-open-data.s3.amazonaws.com/photos/605904761/large.jpg",
         "alt": "Common Hoopoe in Kruger, with a raised rufous crest and black-and-white wings",
+        "caption": {
+          "text": "Perched, side. Common Hoopoe in Kruger, with a raised rufous crest and black-and-white wings."
+        },
         "credit": {
           "summary": "Credit: G Laidler",
           "lines": [
@@ -8924,6 +9227,9 @@
       "image": {
         "src": "https://inaturalist-open-data.s3.amazonaws.com/photos/720069658/large.jpg",
         "alt": "Common Moorhen in Kruger, red bill and white flank marks",
+        "caption": {
+          "text": "Perched, side. Common Moorhen in Kruger, Bushbuckridge, with a red bill and white flank marks."
+        },
         "credit": {
           "summary": "Credit: L Zangl",
           "lines": [
@@ -9011,6 +9317,9 @@
       "image": {
         "src": "https://inaturalist-open-data.s3.amazonaws.com/photos/175621226/large.jpeg",
         "alt": "Common Myna in Kruger, Mopani, with a black head, brown body and yellow bill and legs.",
+        "caption": {
+          "text": "Perched, side. Common Myna in Kruger, Mopani, with a black head, brown body and yellow bill and legs."
+        },
         "credit": {
           "summary": "Credit: J Ponder",
           "lines": [
@@ -9085,6 +9394,9 @@
       "image": {
         "src": "https://inaturalist-open-data.s3.amazonaws.com/photos/598009995/large.jpg",
         "alt": "Common Quail at Richmond, not Kruger, crouched on bare ground with streaked brown plumage.",
+        "caption": {
+          "text": "Perched, side. Common Quail at Richmond, not Kruger, crouched on bare ground with streaked brown plumage."
+        },
         "credit": {
           "summary": "Credit: D Leonard",
           "lines": [
@@ -9171,6 +9483,9 @@
       "image": {
         "src": "https://inaturalist-open-data.s3.amazonaws.com/photos/447879379/large.jpg",
         "alt": "Common Reed Warbler, the African population, seen from behind in the Mopani district",
+        "caption": {
+          "text": "Perched, back. Common Reed Warbler, the African population, seen from behind in the Mopani district."
+        },
         "credit": {
           "summary": "Credit: A Manson",
           "lines": [
@@ -9245,6 +9560,9 @@
       "image": {
         "src": "https://inaturalist-open-data.s3.amazonaws.com/photos/345779465/large.jpg",
         "alt": "Common Ringed Plover standing side-on at a Kruger shoreline, with one dark breast-band and orange legs",
+        "caption": {
+          "text": "Perched, side. Common Ringed Plover standing side-on at a Kruger shoreline, with one dark breast-band and orange legs."
+        },
         "credit": {
           "summary": "Credit: D McKenzie",
           "lines": [
@@ -9319,6 +9637,9 @@
       "image": {
         "src": "https://inaturalist-open-data.s3.amazonaws.com/photos/604530485/large.jpg",
         "alt": "Common Sandpiper in Kruger, dark brown above with white around the folded wing",
+        "caption": {
+          "text": "Perched, side. Common Sandpiper in Kruger, on the Sabie River Road, dark brown above with white extending around the folded wing."
+        },
         "credit": {
           "summary": "Credit: M Brown",
           "lines": [
@@ -9406,6 +9727,9 @@
       "image": {
         "src": "https://inaturalist-open-data.s3.amazonaws.com/photos/159019334/large.jpeg",
         "alt": "Common Scimitarbill with a very curved black bill",
+        "caption": {
+          "text": "Perched, side. Common Scimitarbill in the Mopani district, very curved black bill."
+        },
         "credit": {
           "summary": "Credit: J Ponder",
           "lines": [
@@ -9493,6 +9817,9 @@
       "image": {
         "src": "https://inaturalist-open-data.s3.amazonaws.com/photos/501799051/large.jpg",
         "alt": "Common Square-tailed Drongo perched in Kruger woodland",
+        "caption": {
+          "text": "Perched, side. Common Square-tailed Drongo perched in Kruger woodland. The tail shows only a slight fork."
+        },
         "credit": {
           "summary": "Credit: M Cronje",
           "lines": [
@@ -9574,6 +9901,9 @@
       "image": {
         "src": "https://inaturalist-open-data.s3.amazonaws.com/photos/465195996/large.jpg",
         "alt": "Common Swift in flight from below in Kruger, dark all over, with the chin patch not resolved",
+        "caption": {
+          "text": "In flight from below. Common Swift in flight from below in Kruger, dark all over, with the chin patch not resolved."
+        },
         "credit": {
           "summary": "Credit: Ehren",
           "lines": [
@@ -9661,6 +9991,9 @@
       "image": {
         "src": "https://inaturalist-open-data.s3.amazonaws.com/photos/594450390/large.jpg",
         "alt": "Common Waxbill in Kruger",
+        "caption": {
+          "text": "Perched, side. Common Waxbill in the Ehlanzeni district."
+        },
         "credit": {
           "summary": "Credit: L Huber",
           "lines": [
@@ -9735,6 +10068,9 @@
       "image": {
         "src": "https://inaturalist-open-data.s3.amazonaws.com/photos/656795978/large.jpg",
         "alt": "Common Whitethroat in Russia, grey on the head with a white throat",
+        "caption": {
+          "text": "Male. Perched, side. Male Common Whitethroat at Znamensk, Russia, grey on the head with a white throat. No Kruger photograph was found."
+        },
         "credit": {
           "summary": "Credit: А Стрила",
           "lines": [
@@ -9809,6 +10145,9 @@
       "image": {
         "src": "https://inaturalist-open-data.s3.amazonaws.com/photos/184799381/large.jpg",
         "alt": "Corn Crake at Mopani, Kruger, streaked brown upper parts and a grey face",
+        "caption": {
+          "text": "Perched, side. Corn Crake at Mopani, Kruger, at night, with streaked brown upper parts, chestnut on the wing and a grey face."
+        },
         "credit": {
           "summary": "Credit: N Perrins",
           "lines": [
@@ -9896,6 +10235,9 @@
       "image": {
         "src": "https://inaturalist-open-data.s3.amazonaws.com/photos/524419882/large.jpg",
         "alt": "Crested Barbet at Letaba in Kruger",
+        "caption": {
+          "text": "Perched, side. Crested Barbet at Letaba in Kruger."
+        },
         "credit": {
           "summary": "Credit: tjeerd",
           "lines": [
@@ -9970,6 +10312,9 @@
       "image": {
         "src": "https://inaturalist-open-data.s3.amazonaws.com/photos/324970069/large.jpeg",
         "alt": "Crested Francolin with black-and-white facial marks and a spotted breast",
+        "caption": {
+          "text": "Perched, side. Crested Francolin in the Mopani district, black-and-white facial marks and a spotted breast."
+        },
         "credit": {
           "summary": "Credit: P Hoekman",
           "lines": [
@@ -10057,6 +10402,9 @@
       "image": {
         "src": "https://inaturalist-open-data.s3.amazonaws.com/photos/421992932/large.jpeg",
         "alt": "Crimson-breasted Shrike on a low branch, black above and scarlet below",
+        "caption": {
+          "text": "Perched, side. Crimson-breasted Shrike in Kruger National Park near Musina, small in the frame, black above and scarlet below with a white wing-stripe."
+        },
         "credit": {
           "summary": "Credit: rosshawkins",
           "lines": [
@@ -10144,6 +10492,9 @@
       "image": {
         "src": "https://inaturalist-open-data.s3.amazonaws.com/photos/43220719/large.jpeg",
         "alt": "Croaking Cisticola perched in Kruger",
+        "caption": {
+          "text": "Perched, side. Croaking Cisticola perched in Kruger."
+        },
         "credit": {
           "summary": "Credit: C L Abad",
           "lines": [
@@ -10231,6 +10582,9 @@
       "image": {
         "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/75/Crowned_Eagle_%28Stephanoaetus_coronatus%29%2C_at_Ndumo_Nature_Reserve%2C_KwaZulu-Natal%2C_South_Africa_%2828328495184%29.jpg/1280px-Crowned_Eagle_%28Stephanoaetus_coronatus%29%2C_at_Ndumo_Nature_Reserve%2C_KwaZulu-Natal%2C_South_Africa_%2828328495184%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
         "alt": "Crowned Eagle — perched-side, adult. Crowned eagle (African crowned eagle, crowned hawk-eagle) Stephanoaetus coronatus, at Ndumo Nature Reserve, KwaZulu-Nata",
+        "caption": {
+          "text": "Perched, side. Crowned Eagle — perched-side, adult. Crowned eagle (African crowned eagle, crowned hawk-eagle) Stephanoaetus coronatus, at Ndumo Nature Reserve, KwaZulu-Nata."
+        },
         "credit": {
           "summary": "Credit: D Keats",
           "lines": [
@@ -10318,6 +10672,9 @@
       "image": {
         "src": "https://inaturalist-open-data.s3.amazonaws.com/photos/316326483/large.jpg",
         "alt": "Crowned Hornbill perched side-on in Kruger woodland, with a red bill and dark upperparts",
+        "caption": {
+          "text": "Perched, side. Crowned Hornbill perched side-on in Kruger woodland, with a red bill and dark upperparts."
+        },
         "credit": {
           "summary": "Credit: Maryse",
           "lines": [
@@ -10405,6 +10762,9 @@
       "image": {
         "src": "https://inaturalist-open-data.s3.amazonaws.com/photos/521763349/large.jpg",
         "alt": "Crowned Lapwing facing the camera in Kruger, with a black cap inside a white circle",
+        "caption": {
+          "text": "Perched, front. Crowned Lapwing facing the camera in Kruger, with a black cap inside a white circle."
+        },
         "credit": {
           "summary": "Credit: P Hoekman",
           "lines": [
@@ -10479,6 +10839,9 @@
       "image": {
         "src": "https://inaturalist-open-data.s3.amazonaws.com/photos/593307562/large.jpg",
         "alt": "Curlew Sandpiper in Kruger, white below",
+        "caption": {
+          "text": "Perched, side. Curlew Sandpiper in Kruger, Mopani, white below. The photograph is distant."
+        },
         "credit": {
           "summary": "Credit: L Huber",
           "lines": [
@@ -10553,6 +10916,9 @@
       "image": {
         "src": "https://inaturalist-open-data.s3.amazonaws.com/photos/360548878/large.jpeg",
         "alt": "Desert Cisticola perched in Kruger grass",
+        "caption": {
+          "text": "Perched, side. Desert Cisticola perched in Kruger grass."
+        },
         "credit": {
           "summary": "Credit: C Viljoen",
           "lines": [
@@ -10627,6 +10993,9 @@
       "image": {
         "src": "https://inaturalist-open-data.s3.amazonaws.com/photos/224066/large.jpg",
         "alt": "Male Diederik Cuckoo perched at Satara",
+        "caption": {
+          "text": "Male. Perched, side. Male Diederik Cuckoo at Satara, green above and white below, with a red eye and white marks on the head and wing. The observer labelled it a male."
+        },
         "credit": {
           "summary": "Credit: G Lasley",
           "lines": [
@@ -10714,6 +11083,9 @@
       "image": {
         "src": "https://inaturalist-open-data.s3.amazonaws.com/photos/484415670/large.jpeg",
         "alt": "Drakensberg Prinia in Gert Sibande, not Kruger, with yellow underparts and a long thin tail in tall grass.",
+        "caption": {
+          "text": "Perched, side. Drakensberg Prinia in Gert Sibande, not Kruger, with yellow underparts and a long thin tail in tall grass."
+        },
         "credit": {
           "summary": "Credit: J Ponder",
           "lines": [
@@ -10801,6 +11173,9 @@
       "image": {
         "src": "https://inaturalist-open-data.s3.amazonaws.com/photos/14582756/large.jpeg",
         "alt": "Dusky Indigobird in Kruger, Ehlanzeni, with a whitish bill",
+        "caption": {
+          "text": "Perched, side. Dusky Indigobird in Kruger, Ehlanzeni, with a whitish bill."
+        },
         "credit": {
           "summary": "Credit: G Malan",
           "lines": [
@@ -10888,6 +11263,9 @@
       "image": {
         "src": "https://inaturalist-open-data.s3.amazonaws.com/photos/63170584/large.jpg",
         "alt": "Eastern Nicator perched, heavy bill and yellow spots on the wing",
+        "caption": {
+          "text": "Perched, side. Eastern Nicator in Kruger National Park, greenish, with a heavy bill and yellow spots on the wing."
+        },
         "credit": {
           "summary": "Credit: J Ponder",
           "lines": [
@@ -10975,6 +11353,9 @@
       "image": {
         "src": "https://inaturalist-open-data.s3.amazonaws.com/photos/451531191/large.jpeg",
         "alt": "Two Egyptian Geese flying over water near Skukuza, Kruger, showing the white upperwing panels",
+        "caption": {
+          "text": "In flight from above. Two Egyptian Geese flying over water near Skukuza, Kruger, showing the white upperwing panels."
+        },
         "credit": {
           "summary": "Credit: quentm",
           "lines": [
@@ -11062,6 +11443,9 @@
       "image": {
         "src": "https://inaturalist-open-data.s3.amazonaws.com/photos/666958408/large.jpg",
         "alt": "Emerald-spotted Wood Dove perched in Kruger",
+        "caption": {
+          "text": "Perched, side. Emerald-spotted Wood Dove perched in Kruger."
+        },
         "credit": {
           "summary": "Credit: rastor",
           "lines": [
@@ -11136,6 +11520,9 @@
       "image": {
         "src": "https://inaturalist-open-data.s3.amazonaws.com/photos/445008611/large.jpg",
         "alt": "Eurasian Golden Oriole, yellow with black wings and a pink bill",
+        "caption": {
+          "text": "Male. Perched, side. Male Eurasian Golden Oriole in the Ehlanzeni district, yellow with black wings and a pink bill."
+        },
         "credit": {
           "summary": "Credit: Katherine",
           "lines": [
@@ -11210,6 +11597,9 @@
       "image": {
         "src": "https://inaturalist-open-data.s3.amazonaws.com/photos/461464189/large.jpeg",
         "alt": "Eurasian Hobby in Kruger",
+        "caption": {
+          "text": "Perched, side. Eurasian Hobby in Kruger National Park."
+        },
         "credit": {
           "summary": "Credit: T Herbst",
           "lines": [
@@ -11284,6 +11674,9 @@
       "image": {
         "src": "https://inaturalist-open-data.s3.amazonaws.com/photos/119426104/large.jpeg",
         "alt": "Two European Bee-eaters perched, chestnut backs, yellow throats and turquoise underparts",
+        "caption": {
+          "text": "Perched, side. European Bee-eaters on Dipeni road in Kruger, chestnut and gold above, with yellow throats and turquoise underparts."
+        },
         "credit": {
           "summary": "Credit: copper",
           "lines": [
@@ -11366,6 +11759,9 @@
       "image": {
         "src": "https://inaturalist-open-data.s3.amazonaws.com/photos/177935143/large.jpeg",
         "alt": "European Honey Buzzard — perched-side, adult. Kruger National Park, Ehlanzeni, Mpumalanga, South Africa",
+        "caption": {
+          "text": "Perched, side. European Honey Buzzard — perched-side, adult. Kruger National Park, Ehlanzeni, Mpumalanga, South Africa."
+        },
         "credit": {
           "summary": "Credit: leuli",
           "lines": [
@@ -11449,6 +11845,9 @@
       "image": {
         "src": "https://inaturalist-open-data.s3.amazonaws.com/photos/159161808/large.jpg",
         "alt": "European Nightjar resting side-on on sand in Kruger",
+        "caption": {
+          "text": "Perched, side. European Nightjar resting side-on on sand in Kruger."
+        },
         "credit": {
           "summary": "Credit: N Perrins",
           "lines": [
@@ -11532,6 +11931,9 @@
       "image": {
         "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/33/Scharrelaar_-_European_roller_-_Coracias_garrulus.jpg/1280px-Scharrelaar_-_European_roller_-_Coracias_garrulus.jpg",
         "alt": "European Roller perched side-on, without tail streamers",
+        "caption": {
+          "text": "Perched, side."
+        },
         "credit": {
           "summary": "Credit: B ten Cate",
           "lines": [
@@ -11619,6 +12021,9 @@
       "image": {
         "src": "https://inaturalist-open-data.s3.amazonaws.com/photos/398524311/large.jpg",
         "alt": "Familiar Chat in Kruger, Mopani",
+        "caption": {
+          "text": "Perched, side. Familiar Chat in Kruger, Mopani."
+        },
         "credit": {
           "summary": "Credit: D McKenzie",
           "lines": [
@@ -11706,6 +12111,9 @@
       "image": {
         "src": "https://inaturalist-open-data.s3.amazonaws.com/photos/345007703/large.jpg",
         "alt": "Fawn-coloured Lark perched side-on in the Mopani district",
+        "caption": {
+          "text": "Perched, side. Fawn-coloured Lark perched side-on in the Mopani district."
+        },
         "credit": {
           "summary": "Credit: D McKenzie",
           "lines": [
@@ -11793,6 +12201,9 @@
       "image": {
         "src": "https://inaturalist-open-data.s3.amazonaws.com/photos/138991854/large.jpeg",
         "alt": "Fiery-necked Nightjar resting side-on on a Kruger road",
+        "caption": {
+          "text": "Perched, side. Fiery-necked Nightjar resting side-on on a Kruger road."
+        },
         "credit": {
           "summary": "Credit: T Rebelo",
           "lines": [
@@ -11880,6 +12291,9 @@
       "image": {
         "src": "https://inaturalist-open-data.s3.amazonaws.com/photos/416487095/large.jpeg",
         "alt": "Fiscal Flycatcher in Kruger, Ehlanzeni",
+        "caption": {
+          "text": "Perched, side. Fiscal Flycatcher in Kruger, Ehlanzeni."
+        },
         "credit": {
           "summary": "Credit: jandutoit",
           "lines": [
@@ -11967,6 +12381,9 @@
       "image": {
         "src": "https://inaturalist-open-data.s3.amazonaws.com/photos/622011736/large.jpg",
         "alt": "Flappet Lark perched from behind in Kruger National Park",
+        "caption": {
+          "text": "Perched, back. Flappet Lark perched from behind in Kruger National Park."
+        },
         "credit": {
           "summary": "Credit: S Shaik",
           "lines": [
@@ -12054,6 +12471,9 @@
       "image": {
         "src": "https://inaturalist-open-data.s3.amazonaws.com/photos/761517453/large.jpg",
         "alt": "Forest Canary in dense cover",
+        "caption": {
+          "text": "Perched, side. Forest Canary in the Ehlanzeni district, streaked yellow among branches."
+        },
         "credit": {
           "summary": "Credit: V Jessnitz",
           "lines": [
@@ -12141,6 +12561,9 @@
       "image": {
         "src": "https://inaturalist-open-data.s3.amazonaws.com/photos/720004835/large.jpg",
         "alt": "Fork-tailed Drongo perched in Kruger, black with a deep fork",
+        "caption": {
+          "text": "Perched, side. Fork-tailed Drongo perched in Kruger, black, with the outer tail feathers splayed into a deep fork."
+        },
         "credit": {
           "summary": "Credit: L Zangl",
           "lines": [
@@ -12228,6 +12651,9 @@
       "image": {
         "src": "https://inaturalist-open-data.s3.amazonaws.com/photos/345775256/large.jpeg",
         "alt": "Freckled Nightjar roosting on a Kruger rock face",
+        "caption": {
+          "text": "Perched, side. Freckled Nightjar roosting on a Kruger rock face."
+        },
         "credit": {
           "summary": "Credit: D McKenzie",
           "lines": [
@@ -12302,6 +12728,9 @@
       "image": {
         "src": "https://inaturalist-open-data.s3.amazonaws.com/photos/604526843/large.jpg",
         "alt": "Fulvous Whistling Ducks standing side-on along the Sabie River, Kruger",
+        "caption": {
+          "text": "Perched, side. Fulvous Whistling Ducks standing side-on along the Sabie River, Kruger."
+        },
         "credit": {
           "summary": "Credit: M Brown",
           "lines": [
@@ -12389,6 +12818,9 @@
       "image": {
         "src": "https://inaturalist-open-data.s3.amazonaws.com/photos/504321759/large.jpeg",
         "alt": "Gabar Goshawk — perched-side, adult. Vhembe, Kruger National Park, Limpopo, South Africa",
+        "caption": {
+          "text": "Perched, side. Gabar Goshawk — perched-side, adult. Vhembe, Kruger National Park, Limpopo, South Africa."
+        },
         "credit": {
           "summary": "Credit: P Hoekman",
           "lines": [
@@ -12463,6 +12895,9 @@
       "image": {
         "src": "https://inaturalist-open-data.s3.amazonaws.com/photos/222115620/large.jpg",
         "alt": "Garden Warbler in Kruger, plain and without an eye stripe",
+        "caption": {
+          "text": "Perched, side. Garden Warbler in Kruger, on the Skukuza to Lower Sabie road, plain and without an eye stripe."
+        },
         "credit": {
           "summary": "Credit: Maryse",
           "lines": [
@@ -12550,6 +12985,9 @@
       "image": {
         "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bf/Giant_Kingfisher%2C_Megaceryle_maxima%2C_at_Kruger_National_Park%2C_South_Africa_-_male.jpg/1280px-Giant_Kingfisher%2C_Megaceryle_maxima%2C_at_Kruger_National_Park%2C_South_Africa_-_male.jpg",
         "alt": "Male Giant Kingfisher perched, front view, showing the chestnut breast; Kruger National Park.",
+        "caption": {
+          "text": "Male. Perched, front. Male Giant Kingfisher perched, front view, showing the chestnut breast; Kruger National Park."
+        },
         "credit": {
           "summary": "Credit: D Keats",
           "lines": [
@@ -12637,6 +13075,9 @@
       "image": {
         "src": "https://inaturalist-open-data.s3.amazonaws.com/photos/481855050/large.jpg",
         "alt": "Glossy Ibis in Kruger, Ehlanzeni, with a long curved bill and green on the wing.",
+        "caption": {
+          "text": "Perched, side. Glossy Ibis in Kruger, Ehlanzeni, with a long curved bill and green on the wing."
+        },
         "credit": {
           "summary": "Credit: T Doty",
           "lines": [
@@ -12724,6 +13165,9 @@
       "image": {
         "src": "https://inaturalist-open-data.s3.amazonaws.com/photos/666962084/large.jpg",
         "alt": "Golden-breasted Bunting in Kruger bush",
+        "caption": {
+          "text": "Male. Perched, side. Golden-breasted Bunting in Kruger bush, with an orange breast and white streaks on a black head."
+        },
         "credit": {
           "summary": "Credit: rastor",
           "lines": [
@@ -12811,6 +13255,9 @@
       "image": {
         "src": "https://inaturalist-open-data.s3.amazonaws.com/photos/554133458/large.jpg",
         "alt": "Female Golden-tailed Woodpecker at Mopani, Kruger, black crown with white spots and a red nape",
+        "caption": {
+          "text": "Female. Perched, side. Female Golden-tailed Woodpecker at Mopani, Kruger. The crown is black with white spots and only the nape is red."
+        },
         "credit": {
           "summary": "Credit: Л Артемьева",
           "lines": [
@@ -12898,6 +13345,9 @@
       "image": {
         "src": "https://inaturalist-open-data.s3.amazonaws.com/photos/589957860/large.jpg",
         "alt": "Male Gorgeous Bush-Shrike perched, scarlet throat, black breast-band and yellow belly",
+        "caption": {
+          "text": "Male. Perched, side. Gorgeous Bush-Shrike in the Mopani district, scarlet throat, black breast-band and yellow belly. Newman gives the full black gorget to the male."
+        },
         "credit": {
           "summary": "Credit: M Ambrose",
           "lines": [
@@ -12985,6 +13435,9 @@
       "image": {
         "src": "https://inaturalist-open-data.s3.amazonaws.com/photos/746530913/large.jpg",
         "alt": "White-breasted Cormorant with a white throat and breast and dark wings",
+        "caption": {
+          "text": "Perched, side. Great (White-breasted) Cormorant in the Ehlanzeni district, white throat and breast, yellow facial skin and dark brown wings."
+        },
         "credit": {
           "summary": "Credit: P Jackson",
           "lines": [
@@ -13072,6 +13525,9 @@
       "image": {
         "src": "https://inaturalist-open-data.s3.amazonaws.com/photos/78673965/large.jpeg",
         "alt": "Great Egret standing side-on in Kruger with breeding plumes and a dark bill",
+        "caption": {
+          "text": "Perched, side. Great Egret standing side-on in Kruger with breeding plumes and a dark bill."
+        },
         "credit": {
           "summary": "Credit: sitszasadam",
           "lines": [
@@ -13153,6 +13609,9 @@
       "image": {
         "src": "https://inaturalist-open-data.s3.amazonaws.com/photos/356756087/large.jpg",
         "alt": "Adult Great Reed Warbler perched side-on in reeds, Mopani district",
+        "caption": {
+          "text": "Perched, side. Adult Great Reed Warbler perched side-on in reeds, Mopani district."
+        },
         "credit": {
           "summary": "Credit: D McKenzie",
           "lines": [
@@ -13227,6 +13686,9 @@
       "image": {
         "src": "https://inaturalist-open-data.s3.amazonaws.com/photos/347474835/large.jpg",
         "alt": "Immature Great Spotted Cuckoo beside a glossy starling",
+        "caption": {
+          "text": "Perched, side. Immature Great Spotted Cuckoo, black cap and chestnut in the wing, perched beside a glossy starling."
+        },
         "credit": {
           "summary": "Credit: D McKenzie",
           "lines": [
@@ -13314,6 +13776,9 @@
       "image": {
         "src": "https://inaturalist-open-data.s3.amazonaws.com/photos/55115116/large.jpeg",
         "alt": "Greater Blue-eared Starling at Skukuza in Kruger, with yellow eyes.",
+        "caption": {
+          "text": "Perched, side. Greater Blue-eared Starling at Skukuza in Kruger, with yellow eyes."
+        },
         "credit": {
           "summary": "Credit: A Horstmann",
           "lines": [
@@ -13388,6 +13853,9 @@
       "image": {
         "src": "https://inaturalist-open-data.s3.amazonaws.com/photos/107891818/large.jpg",
         "alt": "Sunbird at an aloe, green head, blue and red breast and a long bill",
+        "caption": {
+          "text": "Male. Perched, side. Greater Double-collared Sunbird in Mbombela, a male with a green head, a blue-and-red breast and a long bill. Newman’s matching text only says the bill is longer than the head."
+        },
         "credit": {
           "summary": "Credit: J Boerekamps",
           "lines": [
@@ -13462,6 +13930,9 @@
       "image": {
         "src": "https://inaturalist-open-data.s3.amazonaws.com/photos/582825501/large.jpg",
         "alt": "Greater Flamingo, white with a pink bill tipped black",
+        "caption": {
+          "text": "Perched, side. Greater Flamingo in Kruger, white, with a pink bill tipped black and long pink legs."
+        },
         "credit": {
           "summary": "Credit: Саакян К.С.",
           "lines": [
@@ -13549,6 +14020,9 @@
       "image": {
         "src": "https://inaturalist-open-data.s3.amazonaws.com/photos/470553103/large.jpg",
         "alt": "Male Greater Honeyguide with a pink bill",
+        "caption": {
+          "text": "Male. Perched, side. Male Greater Honeyguide in the Ehlanzeni district, with a pink bill and a dark throat."
+        },
         "credit": {
           "summary": "Credit: brewmaster",
           "lines": [
@@ -13636,6 +14110,9 @@
       "image": {
         "src": "https://inaturalist-open-data.s3.amazonaws.com/photos/600303549/large.jpg",
         "alt": "Greater Painted-snipe in Kruger, white patches around the eye, a rufous breast and a white band",
+        "caption": {
+          "text": "Perched, front. Greater Painted-snipe in Kruger, with white patches around the eye, a rufous breast and a white band."
+        },
         "credit": {
           "summary": "Credit: A Manson",
           "lines": [
@@ -13710,6 +14187,9 @@
       "image": {
         "src": "https://inaturalist-open-data.s3.amazonaws.com/photos/69920810/large.jpg",
         "alt": "Greater Striped Swallow in Kruger",
+        "caption": {
+          "text": "Perched, side. Greater Striped Swallow in Kruger National Park."
+        },
         "credit": {
           "summary": "Credit: C Harris",
           "lines": [
@@ -13784,6 +14264,9 @@
       "image": {
         "src": "https://inaturalist-open-data.s3.amazonaws.com/photos/532526479/large.jpg",
         "alt": "Green Sandpiper in Kruger, dark above and white below",
+        "caption": {
+          "text": "Perched, side. Green Sandpiper in Kruger, Mopani, dark above and white below."
+        },
         "credit": {
           "summary": "Credit: C Rautenbach",
           "lines": [
@@ -13871,6 +14354,9 @@
       "image": {
         "src": "https://inaturalist-open-data.s3.amazonaws.com/photos/118664180/large.jpeg",
         "alt": "Green Wood-hoopoe, curved red bill, red feet and a long tail",
+        "caption": {
+          "text": "Perched, side. Green Wood-hoopoe on the Mphongolo loop, deep iridescent blue, with a curved red bill, red feet and a long tail."
+        },
         "credit": {
           "summary": "Credit: copper",
           "lines": [
@@ -13945,6 +14431,9 @@
       "image": {
         "src": "https://inaturalist-open-data.s3.amazonaws.com/photos/406147380/large.jpg",
         "alt": "Green-capped Eremomela perched in Kruger",
+        "caption": {
+          "text": "Perched, side. Green-capped Eremomela perched in Kruger."
+        },
         "credit": {
           "summary": "Credit: D Kidwell",
           "lines": [
@@ -14032,6 +14521,9 @@
       "image": {
         "src": "https://inaturalist-open-data.s3.amazonaws.com/photos/13127989/large.jpeg",
         "alt": "Green-winged Pytilia in Kruger",
+        "caption": {
+          "text": "Perched, side. Green-winged Pytilia in the Ehlanzeni district."
+        },
         "credit": {
           "summary": "Credit: copper",
           "lines": [
@@ -14119,6 +14611,9 @@
       "image": {
         "src": "https://inaturalist-open-data.s3.amazonaws.com/photos/572408288/large.jpg",
         "alt": "Grey Cuckooshrike at Hankey, not Kruger, perched among needle foliage, with uniform grey plumage.",
+        "caption": {
+          "text": "Perched, side. Grey Cuckooshrike at Hankey, not Kruger, perched among needle foliage, with uniform grey plumage."
+        },
         "credit": {
           "summary": "Credit: I Buchner",
           "lines": [
@@ -14206,6 +14701,9 @@
       "image": {
         "src": "https://inaturalist-open-data.s3.amazonaws.com/photos/330928162/large.jpeg",
         "alt": "Grey Go-away-bird in a fruiting tree, all grey with a crest",
+        "caption": {
+          "text": "Perched, side. Grey Go-away-bird in the Mopani district, grey, with a crest, in a fruiting tree."
+        },
         "credit": {
           "summary": "Credit: jandutoit",
           "lines": [
@@ -14293,6 +14791,9 @@
       "image": {
         "src": "https://inaturalist-open-data.s3.amazonaws.com/photos/455622657/large.jpeg",
         "alt": "Grey Heron standing side-on on a hippo in Kruger, with a yellow bill and a black crown stripe",
+        "caption": {
+          "text": "Perched, side. Grey Heron standing side-on on a hippo in Kruger, with a yellow bill and a black crown stripe."
+        },
         "credit": {
           "summary": "Credit: P Shukov",
           "lines": [
@@ -14380,6 +14881,9 @@
       "image": {
         "src": "https://inaturalist-open-data.s3.amazonaws.com/photos/466760932/large.jpg",
         "alt": "Grey Tit-Flycatcher at Talamati in Kruger",
+        "caption": {
+          "text": "Perched, side. Grey Tit-Flycatcher at Talamati in Kruger."
+        },
         "credit": {
           "summary": "Credit: sharon stanton",
           "lines": [
@@ -14467,6 +14971,9 @@
       "image": {
         "src": "https://inaturalist-open-data.s3.amazonaws.com/photos/291921047/large.jpeg",
         "alt": "Grey-headed Bush-Shrike perched, grey hood, heavy bill, orange breast and yellow belly",
+        "caption": {
+          "text": "Perched, side. Grey-headed Bush-Shrike at Nwaswishaka in Kruger, grey hood, heavy bill, yellow eye, green back, orange breast and yellow belly."
+        },
         "credit": {
           "summary": "Credit: A Deacon",
           "lines": [
@@ -14554,6 +15061,9 @@
       "image": {
         "src": "https://inaturalist-open-data.s3.amazonaws.com/photos/414106667/large.jpg",
         "alt": "Grey-headed Gull in flight, grey upperwings and a pale head with an ear smudge",
+        "caption": {
+          "text": "In flight, from the side. Grey-headed Gull in the Mopani district, grey above with a white tail and a pale head that shows a grey ear smudge rather than a full hood."
+        },
         "credit": {
           "summary": "Credit: D McKenzie",
           "lines": [
@@ -14637,6 +15147,9 @@
       "image": {
         "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a8/Grey-headed_kingfisher_%28Halcyon_leucocephala%29_2.jpg/1280px-Grey-headed_kingfisher_%28Halcyon_leucocephala%29_2.jpg",
         "alt": "Grey-headed Kingfisher perched, front view, showing the grey breast and chestnut belly; Lake Naivasha, Kenya (nominate race).",
+        "caption": {
+          "text": "Perched, front. Grey-headed Kingfisher perched, front view, showing the grey breast and chestnut belly; Lake Naivasha, Kenya (nominate race)."
+        },
         "credit": {
           "summary": "Credit: C J Sharp",
           "lines": [
@@ -14724,6 +15237,9 @@
       "image": {
         "src": "https://inaturalist-open-data.s3.amazonaws.com/photos/208281284/large.jpeg",
         "alt": "Groundscraper Thrush in Kruger, spotted below",
+        "caption": {
+          "text": "Perched, side. Groundscraper Thrush in Kruger, Ehlanzeni, grey-brown above and boldly spotted white below."
+        },
         "credit": {
           "summary": "Credit: P Lupton",
           "lines": [
@@ -14811,6 +15327,9 @@
       "image": {
         "src": "https://inaturalist-open-data.s3.amazonaws.com/photos/470550564/large.jpg",
         "alt": "Hadeda Ibis in Kruger, Ehlanzeni, brown, with a decurved bill and a white cheek stripe.",
+        "caption": {
+          "text": "Perched, side. Hadeda Ibis in Kruger, Ehlanzeni, brown, with a decurved bill and a white cheek stripe."
+        },
         "credit": {
           "summary": "Credit: brewmaster",
           "lines": [
@@ -14898,6 +15417,9 @@
       "image": {
         "src": "https://inaturalist-open-data.s3.amazonaws.com/photos/598905083/large.jpg",
         "alt": "Hamerkop in Kruger, brown, with a backward crest and a black bill",
+        "caption": {
+          "text": "Perched, side. Hamerkop in Kruger, Mopani, brown, with a backward-projecting crest, a black bill and black legs."
+        },
         "credit": {
           "summary": "Credit: D Vollmar",
           "lines": [
@@ -14972,6 +15494,9 @@
       "image": {
         "src": "https://inaturalist-open-data.s3.amazonaws.com/photos/166083801/large.jpg",
         "alt": "Male Harlequin Quail, white throat with black markings and chestnut underparts",
+        "caption": {
+          "text": "Male. Perched, side. Male Harlequin Quail in the Mopani district, black markings on a white throat and chestnut underparts."
+        },
         "credit": {
           "summary": "Credit: N Perrins",
           "lines": [
@@ -15059,6 +15584,9 @@
       "image": {
         "src": "https://inaturalist-open-data.s3.amazonaws.com/photos/599751927/large.jpg",
         "alt": "Helmeted Guineafowl head, blue neck, red cap and a casque",
+        "caption": {
+          "text": "Perched, side. Helmeted Guineafowl in the Ehlanzeni district, blue neck, red cap and a horny casque."
+        },
         "credit": {
           "summary": "Credit: hermanmoller",
           "lines": [
@@ -15146,6 +15674,9 @@
       "image": {
         "src": "https://inaturalist-open-data.s3.amazonaws.com/photos/404191747/large.jpeg",
         "alt": "House Sparrow, paler than the male, with a pink bill",
+        "caption": {
+          "text": "Female. Perched, side. House Sparrow in Kruger, the paler plumage with a pink bill and pink legs."
+        },
         "credit": {
           "summary": "Credit: S Schumann",
           "lines": [
@@ -15228,6 +15759,9 @@
       "image": {
         "src": "https://inaturalist-open-data.s3.amazonaws.com/photos/604797705/large.jpg",
         "alt": "Icterine Warbler perched front-on in a tree, Ehlanzeni district",
+        "caption": {
+          "text": "Perched, front. Icterine Warbler perched front-on in a tree, Ehlanzeni district."
+        },
         "credit": {
           "summary": "Credit: M Cronje",
           "lines": [
@@ -15302,6 +15836,9 @@
       "image": {
         "src": "https://inaturalist-open-data.s3.amazonaws.com/photos/630851443/large.jpg",
         "alt": "Black-morph Jacobin Cuckoo on a bare branch",
+        "caption": {
+          "text": "Perched, side. Jacobin Cuckoo, the black morph, perched on a bare branch with a crest and a white mark in the wing."
+        },
         "credit": {
           "summary": "Credit: leuli",
           "lines": [
@@ -15389,6 +15926,9 @@
       "image": {
         "src": "https://inaturalist-open-data.s3.amazonaws.com/photos/455937050/large.jpeg",
         "alt": "Jameson’s Firefinch at Letaba",
+        "caption": {
+          "text": "Perched, side. Jameson’s Firefinch at Letaba Rest Camp."
+        },
         "credit": {
           "summary": "Credit: C Rautenbach",
           "lines": [
@@ -15476,6 +16016,9 @@
       "image": {
         "src": "https://inaturalist-open-data.s3.amazonaws.com/photos/701392615/large.jpg",
         "alt": "Karoo Thrush at Centurion, grey-brown with an orange-yellow bill",
+        "caption": {
+          "text": "Perched, side. Karoo Thrush at Centurion, Gauteng, grey-brown, with an orange-yellow bill. No Kruger photograph was found."
+        },
         "credit": {
           "summary": "Credit: Otherwhere",
           "lines": [
@@ -15550,6 +16093,9 @@
       "image": {
         "src": "https://inaturalist-open-data.s3.amazonaws.com/photos/347475138/large.jpg",
         "alt": "Male Klaas’s Cuckoo on a twig, green above and white below",
+        "caption": {
+          "text": "Male. Perched, side. Klaas’s Cuckoo perched on a twig, green above and white below, with a white mark behind the eye and white outer tail feathers."
+        },
         "credit": {
           "summary": "Credit: D McKenzie",
           "lines": [
@@ -15637,6 +16183,9 @@
       "image": {
         "src": "https://inaturalist-open-data.s3.amazonaws.com/photos/434570451/large.jpeg",
         "alt": "Knysna Turaco on the Garden Route, not Kruger, green with a white-tipped crest and a red bill among berries.",
+        "caption": {
+          "text": "Perched, side. Knysna Turaco on the Garden Route, not Kruger, green with a white-tipped crest and a red bill among berries."
+        },
         "credit": {
           "summary": "Credit: S Swanepoel",
           "lines": [
@@ -15724,6 +16273,9 @@
       "image": {
         "src": "https://inaturalist-open-data.s3.amazonaws.com/photos/523026643/large.jpg",
         "alt": "Kurrichane Thrush in Kruger, with an orange bill and pale throat",
+        "caption": {
+          "text": "Perched, side. Kurrichane Thrush in Kruger, with an orange bill, orange legs and a pale throat."
+        },
         "credit": {
           "summary": "Credit: G Laidler",
           "lines": [
@@ -15811,6 +16363,9 @@
       "image": {
         "src": "https://inaturalist-open-data.s3.amazonaws.com/photos/318490637/large.jpg",
         "alt": "Large Rock Martin in the Mopani district",
+        "caption": {
+          "text": "Perched, side. Large Rock Martin in the Mopani district."
+        },
         "credit": {
           "summary": "Credit: L Boscain",
           "lines": [
@@ -15898,6 +16453,9 @@
       "image": {
         "src": "https://inaturalist-open-data.s3.amazonaws.com/photos/347522697/large.jpeg",
         "alt": "Two Lark-like Buntings on a dead tree",
+        "caption": {
+          "text": "Perched, side. Two Lark-like Buntings on a dead tree. They are plain and pale, without a bold head pattern."
+        },
         "credit": {
           "summary": "Credit: D McKenzie",
           "lines": [
@@ -15985,6 +16543,9 @@
       "image": {
         "src": "https://inaturalist-open-data.s3.amazonaws.com/photos/445015753/large.jpeg",
         "alt": "Laughing Dove perched in Kruger",
+        "caption": {
+          "text": "Perched, side. Laughing Dove perched in Kruger."
+        },
         "credit": {
           "summary": "Credit: olwensands",
           "lines": [
@@ -16072,6 +16633,9 @@
       "image": {
         "src": "https://inaturalist-open-data.s3.amazonaws.com/photos/608365546/large.jpg",
         "alt": "Lemon Dove in Kruger forest",
+        "caption": {
+          "text": "Perched, side. Lemon Dove in Kruger forest."
+        },
         "credit": {
           "summary": "Credit: Y Oelsen",
           "lines": [
@@ -16146,6 +16710,9 @@
       "image": {
         "src": "https://inaturalist-open-data.s3.amazonaws.com/photos/520724726/large.jpg",
         "alt": "Lesser Flamingos in flight, pink with dark flight feathers",
+        "caption": {
+          "text": "In flight from above. Lesser Flamingos in the Mopani district, pink, with dark flight feathers."
+        },
         "credit": {
           "summary": "Credit: P Hoekman",
           "lines": [
@@ -16228,6 +16795,9 @@
       "image": {
         "src": "https://inaturalist-open-data.s3.amazonaws.com/photos/223287824/large.jpeg",
         "alt": "Lesser Grey Shrike perched, grey above, black mask and white below",
+        "caption": {
+          "text": "Perched, side. Lesser Grey Shrike in Mopani, grey above with a black mask and white underparts. The bird is distant."
+        },
         "credit": {
           "summary": "Credit: leuli",
           "lines": [
@@ -16315,6 +16885,9 @@
       "image": {
         "src": "https://inaturalist-open-data.s3.amazonaws.com/photos/471020327/large.jpeg",
         "alt": "Lesser Honeyguide with white outer tail feathers",
+        "caption": {
+          "text": "Perched, side. Lesser Honeyguide in the Ehlanzeni district, grey-headed, with pale edges on the wing and white outer tail feathers."
+        },
         "credit": {
           "summary": "Credit: R Johnstone",
           "lines": [
@@ -16389,6 +16962,9 @@
       "image": {
         "src": "https://inaturalist-open-data.s3.amazonaws.com/photos/473327188/large.jpg",
         "alt": "Lesser Kestrel in Kruger",
+        "caption": {
+          "text": "Perched, side. Lesser Kestrel in the Ehlanzeni district."
+        },
         "credit": {
           "summary": "Credit: lance_robinson",
           "lines": [
@@ -16476,6 +17052,9 @@
       "image": {
         "src": "https://inaturalist-open-data.s3.amazonaws.com/photos/324933423/large.jpg",
         "alt": "Lesser Masked Weaver in Kruger, yellow, with a pale eye and no black mask, at a nest",
+        "caption": {
+          "text": "Female. Perched, side. Lesser Masked Weaver in Kruger, yellow and greener above, with a pale eye and no black mask, at a nest."
+        },
         "credit": {
           "summary": "Credit: C Wolf",
           "lines": [
@@ -16557,6 +17136,9 @@
       "image": {
         "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e6/Lesser-spotted_eagle_%28Clanga_pomarina%29_Pieniny.jpg/1280px-Lesser-spotted_eagle_%28Clanga_pomarina%29_Pieniny.jpg",
         "alt": "Adult Lesser Spotted Eagle perched; Europe.",
+        "caption": {
+          "text": "Perched, side. Adult Lesser Spotted Eagle perched; Europe."
+        },
         "credit": {
           "summary": "Credit: C J Sharp",
           "lines": [
@@ -16631,6 +17213,9 @@
       "image": {
         "src": "https://inaturalist-open-data.s3.amazonaws.com/photos/25516758/large.jpeg",
         "alt": "Lesser Striped Swallow on the Gomondwane road",
+        "caption": {
+          "text": "Perched, side. Lesser Striped Swallow on the Gomondwane road in Kruger."
+        },
         "credit": {
           "summary": "Credit: copper",
           "lines": [
@@ -16718,6 +17303,9 @@
       "image": {
         "src": "https://inaturalist-open-data.s3.amazonaws.com/photos/543823605/large.jpg",
         "alt": "Adult Lesser Swamp Warbler clinging front-on to a reed, Malelane, Kruger",
+        "caption": {
+          "text": "Perched, front. Adult Lesser Swamp Warbler clinging front-on to a reed, Malelane, Kruger."
+        },
         "credit": {
           "summary": "Credit: T Kotze",
           "lines": [
@@ -16805,6 +17393,9 @@
       "image": {
         "src": "https://inaturalist-open-data.s3.amazonaws.com/photos/582826543/large.jpg",
         "alt": "Levaillant’s Cisticola perched in Kruger",
+        "caption": {
+          "text": "Perched, side. Levaillant’s Cisticola perched in Kruger."
+        },
         "credit": {
           "summary": "Credit: Саакян К.С.",
           "lines": [
@@ -16879,6 +17470,9 @@
       "image": {
         "src": "https://inaturalist-open-data.s3.amazonaws.com/photos/13211800/large.jpg",
         "alt": "Levaillant’s Cuckoo perched in a Kruger thorn tree",
+        "caption": {
+          "text": "Perched, back. Levaillant’s Cuckoo perched in a thorn tree at Gomondwane, crest raised and throat streaked."
+        },
         "credit": {
           "summary": "Credit: maritzasouthafrica",
           "lines": [
@@ -16966,6 +17560,9 @@
       "image": {
         "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f0/Carraca_lila_%28Coracias_caudata%29%2C_parque_nacional_Kruger%2C_Sud%C3%A1frica%2C_2018-07-26%2C_DD_17.jpg/1280px-Carraca_lila_%28Coracias_caudata%29%2C_parque_nacional_Kruger%2C_Sud%C3%A1frica%2C_2018-07-26%2C_DD_17.jpg",
         "alt": "Adult Lilac-breasted Roller perched front-on in Kruger National Park",
+        "caption": {
+          "text": "Perched, front."
+        },
         "credit": {
           "summary": "Credit: D Delso",
           "lines": [
@@ -17053,6 +17650,9 @@
       "image": {
         "src": "https://inaturalist-open-data.s3.amazonaws.com/photos/212986899/large.jpeg",
         "alt": "Little Bee-eater perched, yellow throat and green upperparts",
+        "caption": {
+          "text": "Perched, side. Little Bee-eater at Marloth Park, inside the Kruger search box, small, with a yellow throat."
+        },
         "credit": {
           "summary": "Credit: C Powers",
           "lines": [
@@ -17140,6 +17740,9 @@
       "image": {
         "src": "https://inaturalist-open-data.s3.amazonaws.com/photos/384049024/large.jpg",
         "alt": "Little Bittern clinging side-on to reeds in Kruger, with a black cap and a buff neck",
+        "caption": {
+          "text": "Female. Perched, side. Little Bittern clinging side-on to reeds in Kruger, with a black cap and a buff neck."
+        },
         "credit": {
           "summary": "Credit: H Human",
           "lines": [
@@ -17227,6 +17830,9 @@
       "image": {
         "src": "https://inaturalist-open-data.s3.amazonaws.com/photos/599751539/large.jpg",
         "alt": "Little Egret in flight from below in Kruger, white, with a black bill and yellow feet",
+        "caption": {
+          "text": "In flight from below. Little Egret in flight from below in Kruger, white, with a black bill and yellow feet."
+        },
         "credit": {
           "summary": "Credit: hermanmoller",
           "lines": [
@@ -17314,6 +17920,9 @@
       "image": {
         "src": "https://inaturalist-open-data.s3.amazonaws.com/photos/720093146/large.jpg",
         "alt": "Little Grebe in Kruger, dark brown above, chestnut face and neck, and a pale spot at the base of the bill",
+        "caption": {
+          "text": "Perched, side. Little Grebe in Kruger, Bushbuckridge, dark brown above, with a chestnut face and neck and a pale spot at the base of the bill."
+        },
         "credit": {
           "summary": "Credit: L Zangl",
           "lines": [
@@ -17401,6 +18010,9 @@
       "image": {
         "src": "https://inaturalist-open-data.s3.amazonaws.com/photos/318800632/large.jpeg",
         "alt": "Little Rush Warbler at Strandfontein, dark above with a rounded tail",
+        "caption": {
+          "text": "Perched, side. Little Rush Warbler at Strandfontein, dark above, with a rounded tail."
+        },
         "credit": {
           "summary": "Credit: G Laidler",
           "lines": [
@@ -17488,6 +18100,9 @@
       "image": {
         "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e8/Little_Sparrowhawk_%28Accipiter_minullus%29_%2817148898167%29.jpg/1280px-Little_Sparrowhawk_%28Accipiter_minullus%29_%2817148898167%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
         "alt": "Little Sparrowhawk — perched-side, adult. H7 Road East of Orpen, Kruger NP, SOUTH AFRICA",
+        "caption": {
+          "text": "Perched, side. Little Sparrowhawk — perched-side, adult. H7 Road East of Orpen, Kruger NP, SOUTH AFRICA."
+        },
         "credit": {
           "summary": "Credit: B DUPONT",
           "lines": [
@@ -17562,6 +18177,9 @@
       "image": {
         "src": "https://inaturalist-open-data.s3.amazonaws.com/photos/185633167/large.jpg",
         "alt": "Little Stint at Sunset Dam in Kruger, sandy-brown above and white below with a short black bill",
+        "caption": {
+          "text": "Perched, side. Little Stint at Sunset Dam in Kruger, sandy-brown above and white below, with a short black bill."
+        },
         "credit": {
           "summary": "Credit: stproc",
           "lines": [
@@ -17649,6 +18267,9 @@
       "image": {
         "src": "https://inaturalist-open-data.s3.amazonaws.com/photos/15734072/large.jpg",
         "alt": "Little Swift in flight from the side between Skukuza and Lower Sabie, Kruger, showing the white rump",
+        "caption": {
+          "text": "In flight, from the side. Little Swift in flight from the side between Skukuza and Lower Sabie, Kruger, showing the white rump."
+        },
         "credit": {
           "summary": "Credit: E Porter",
           "lines": [
@@ -17736,6 +18357,9 @@
       "image": {
         "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4b/Lizard_Buzzard_%28Kaupifalco_monogrammicus%29_%2852130888403%29.jpg/1280px-Lizard_Buzzard_%28Kaupifalco_monogrammicus%29_%2852130888403%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
         "alt": "Lizard Buzzard — perched-side, adult. S8 Road West of Pretoriuskop, Kruger NP, Mpumalanga, SOUTH AFRICA",
+        "caption": {
+          "text": "Perched, side. Lizard Buzzard — perched-side, adult. S8 Road West of Pretoriuskop, Kruger NP, Mpumalanga, SOUTH AFRICA."
+        },
         "credit": {
           "summary": "Credit: B DUPONT",
           "lines": [
@@ -17823,6 +18447,9 @@
       "image": {
         "src": "https://inaturalist-open-data.s3.amazonaws.com/photos/15172407/large.jpg",
         "alt": "Long-billed Crombec at Skukuza in Kruger",
+        "caption": {
+          "text": "Perched, side. Long-billed Crombec at Skukuza in Kruger."
+        },
         "credit": {
           "summary": "Credit: B du Preez",
           "lines": [
@@ -17910,6 +18537,9 @@
       "image": {
         "src": "https://upload.wikimedia.org/wikipedia/commons/1/1c/Long-crested_Eagle_%28Lophaetus_occipitalis%29_KwaZulu_Natal.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
         "alt": "Long-crested Eagle — perched-side, adult. Long-crested Eagle Lophaetus occipitalis , KwaZulu Natal, South Africa.",
+        "caption": {
+          "text": "Perched, side. Long-crested Eagle — perched-side, adult. Long-crested Eagle Lophaetus occipitalis , KwaZulu Natal, South Africa."
+        },
         "credit": {
           "summary": "Credit: D Keats",
           "lines": [
@@ -17997,6 +18627,9 @@
       "image": {
         "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/53/Malachite_Kingfisher_%28Corythornis_cristatus%29_%2852746880154%29.jpg/1280px-Malachite_Kingfisher_%28Corythornis_cristatus%29_%2852746880154%29.jpg",
         "alt": "Malachite Kingfisher perched, front view; S100 near Satara, Kruger National Park.",
+        "caption": {
+          "text": "Perched, front. Malachite Kingfisher perched, front view; S100 near Satara, Kruger National Park."
+        },
         "credit": {
           "summary": "Credit: B Dupont",
           "lines": [
@@ -18084,6 +18717,9 @@
       "image": {
         "src": "https://inaturalist-open-data.s3.amazonaws.com/photos/761529562/large.jpg",
         "alt": "Malachite Sunbird in a tree, yellow below and brownish above",
+        "caption": {
+          "text": "Male. Perched, side. Malachite Sunbird in Kruger Park, distant, yellow below. Newman says the non-breeding male is yellow below and speckled with green."
+        },
         "credit": {
           "summary": "Credit: V Jessnitz",
           "lines": [
@@ -18171,6 +18807,9 @@
       "image": {
         "src": "https://inaturalist-open-data.s3.amazonaws.com/photos/118496496/large.jpeg",
         "alt": "Two Marabou Storks in flight over Kruger, with bare heads and huge bills",
+        "caption": {
+          "text": "In flight from below. Two Marabou Storks in flight over Kruger, with bare heads and huge bills."
+        },
         "credit": {
           "summary": "Credit: copper",
           "lines": [
@@ -18258,6 +18897,9 @@
       "image": {
         "src": "https://inaturalist-open-data.s3.amazonaws.com/photos/308793120/large.jpeg",
         "alt": "Male Marico Sunbird feeding, green above with a purple-red breast band and black belly",
+        "caption": {
+          "text": "Male. Perched, side. Male Marico Sunbird in the Mopani district, glossy green with a purple and red breast-band and a black belly."
+        },
         "credit": {
           "summary": "Credit: D Correia",
           "lines": [
@@ -18332,6 +18974,9 @@
       "image": {
         "src": "https://inaturalist-open-data.s3.amazonaws.com/photos/13230241/large.jpg",
         "alt": "Marsh Sandpiper in Kruger, white below with a slender bill and long yellowish legs",
+        "caption": {
+          "text": "Perched, side. Marsh Sandpiper in Kruger, on the Skukuza to Lower Sabie road, white below with a slender bill and long yellowish legs."
+        },
         "credit": {
           "summary": "Credit: maritzasouthafrica",
           "lines": [
@@ -18413,6 +19058,9 @@
       "image": {
         "src": "https://inaturalist-open-data.s3.amazonaws.com/photos/683243226/large.jpg",
         "alt": "Marsh Warbler singing from dense leafy cover, Mopani district",
+        "caption": {
+          "text": "Perched, side. Marsh Warbler singing from dense leafy cover, Mopani district."
+        },
         "credit": {
           "summary": "Credit: N Perrins",
           "lines": [
@@ -18500,6 +19148,9 @@
       "image": {
         "src": "https://inaturalist-open-data.s3.amazonaws.com/photos/384050523/large.jpg",
         "alt": "Meves's Starling in Kruger, on the S63, with a long tail.",
+        "caption": {
+          "text": "Perched, side. Meves's Starling in Kruger, on the S63, with a long tail."
+        },
         "credit": {
           "summary": "Credit: Heather and Andrew Hodgson",
           "lines": [
@@ -18587,6 +19238,9 @@
       "image": {
         "src": "https://inaturalist-open-data.s3.amazonaws.com/photos/364733745/large.jpg",
         "alt": "Meyer’s Parrot in South Africa, not Kruger, brown head, yellow shoulder and green underparts",
+        "caption": {
+          "text": "Perched, side. Meyer’s Parrot in South Africa, not Kruger, with a yellow shoulder and green underparts."
+        },
         "credit": {
           "summary": "Credit: D McKenzie",
           "lines": [
@@ -18674,6 +19328,9 @@
       "image": {
         "src": "https://inaturalist-open-data.s3.amazonaws.com/photos/78326924/large.jpeg",
         "alt": "Mocking Cliff Chat at Punda Maria in Kruger",
+        "caption": {
+          "text": "Perched, side. Mocking Cliff Chat at Punda Maria in Kruger."
+        },
         "credit": {
           "summary": "Credit: E Bester",
           "lines": [
@@ -18758,6 +19415,9 @@
       "image": {
         "src": "https://inaturalist-open-data.s3.amazonaws.com/photos/33181283/large.jpeg",
         "alt": "Monotonous Lark singing side-on in the Mopani district, with a white throat",
+        "caption": {
+          "text": "Male. Perched, side. Monotonous Lark singing side-on in the Mopani district, with a white throat."
+        },
         "credit": {
           "summary": "Credit: tjeerd",
           "lines": [
@@ -18838,6 +19498,9 @@
       "image": {
         "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/02/Montague%27s_harrier_%28Circus_pygargus%29_male_in_flight_Kebili.jpg/1280px-Montague%27s_harrier_%28Circus_pygargus%29_male_in_flight_Kebili.jpg",
         "alt": "Adult male Montagu's Harrier in flight.",
+        "caption": {
+          "text": "Male. In flight, from the side. Adult male Montagu's Harrier in flight."
+        },
         "credit": {
           "summary": "Credit: C J Sharp",
           "lines": [
@@ -18925,6 +19588,9 @@
       "image": {
         "src": "https://inaturalist-open-data.s3.amazonaws.com/photos/612418840/large.jpg",
         "alt": "Mountain Wagtail perched, very long tail, grey above and white below",
+        "caption": {
+          "text": "Perched, side. Mountain Wagtail at Malalane, a very long white-edged tail, grey upperparts and white underparts with a narrow dark breast-band."
+        },
         "credit": {
           "summary": "Credit: P Kotze",
           "lines": [
@@ -19012,6 +19678,9 @@
       "image": {
         "src": "https://inaturalist-open-data.s3.amazonaws.com/photos/521763407/large.jpg",
         "alt": "Namaqua Dove perched in Kruger, with a long tail",
+        "caption": {
+          "text": "Perched, side. Namaqua Dove perched in Kruger, with a long tail."
+        },
         "credit": {
           "summary": "Credit: P Hoekman",
           "lines": [
@@ -19099,6 +19768,9 @@
       "image": {
         "src": "https://inaturalist-open-data.s3.amazonaws.com/photos/76520367/large.jpeg",
         "alt": "Narina Trogon in Kruger, green above and red below",
+        "caption": {
+          "text": "Perched, side. Narina Trogon in Kruger, on the S60, green above and red below."
+        },
         "credit": {
           "summary": "Credit: sitszasadam",
           "lines": [
@@ -19186,6 +19858,9 @@
       "image": {
         "src": "https://inaturalist-open-data.s3.amazonaws.com/photos/582864882/large.jpg",
         "alt": "Natal Spurfowl, barred black-and-white underparts and red legs",
+        "caption": {
+          "text": "Perched, side. Natal Spurfowl at Bushbuckridge, dark brown above, black-and-white underparts, red legs and a red bill with a yellow base."
+        },
         "credit": {
           "summary": "Credit: Y Oelsen",
           "lines": [
@@ -19273,6 +19948,9 @@
       "image": {
         "src": "https://inaturalist-open-data.s3.amazonaws.com/photos/383874580/large.jpeg",
         "alt": "Neddicky perched in Kruger",
+        "caption": {
+          "text": "Perched, side. Neddicky perched in Kruger."
+        },
         "credit": {
           "summary": "Credit: jandutoit",
           "lines": [
@@ -19360,6 +20038,9 @@
       "image": {
         "src": "https://inaturalist-open-data.s3.amazonaws.com/photos/464604137/large.jpg",
         "alt": "Olive Bush-Shrike perched, grey head, olive upperparts and yellow underparts",
+        "caption": {
+          "text": "Perched, side. Olive Bush-Shrike in the Ehlanzeni district, grey-headed with olive upperparts and yellow underparts, the yellow-underpart morph."
+        },
         "credit": {
           "summary": "Credit: brewmaster",
           "lines": [
@@ -19447,6 +20128,9 @@
       "image": {
         "src": "https://inaturalist-open-data.s3.amazonaws.com/photos/15308846/large.jpg",
         "alt": "Olive Sunbird feeding at red flowers, plain olive-green",
+        "caption": {
+          "text": "Perched, side. Olive Sunbird at the Lowveld National Botanical Garden, plain olive-green, darker above."
+        },
         "credit": {
           "summary": "Credit: B du Preez",
           "lines": [
@@ -19534,6 +20218,9 @@
       "image": {
         "src": "https://inaturalist-open-data.s3.amazonaws.com/photos/210837223/large.jpg",
         "alt": "Olive Thrush in Kruger, dark above with orange underparts",
+        "caption": {
+          "text": "Perched, side. Olive Thrush in Kruger, dark above, with orange-toned underparts and an orange-yellow bill."
+        },
         "credit": {
           "summary": "Credit: R Camponovo",
           "lines": [
@@ -19621,6 +20308,9 @@
       "image": {
         "src": "https://inaturalist-open-data.s3.amazonaws.com/photos/32583079/large.jpeg",
         "alt": "Male Olive Woodpecker in Kruger, red cap, olive mantle and red rump, partly behind a branch",
+        "caption": {
+          "text": "Male. Perched, side. Male Olive Woodpecker in Kruger, Ehlanzeni, partly behind a branch, with a red cap, an olive mantle and a red rump."
+        },
         "credit": {
           "summary": "Credit: S van Remmerden",
           "lines": [
@@ -19701,6 +20391,9 @@
       "image": {
         "src": "https://inaturalist-open-data.s3.amazonaws.com/photos/456663048/large.jpg",
         "alt": "Olive-tree Warbler perched side-on in flowering thorn, Mopani district",
+        "caption": {
+          "text": "Perched, side. Olive-tree Warbler perched side-on in flowering thorn, Mopani district."
+        },
         "credit": {
           "summary": "Credit: simonescrase",
           "lines": [
@@ -19788,6 +20481,9 @@
       "image": {
         "src": "https://inaturalist-open-data.s3.amazonaws.com/photos/194906921/large.jpeg",
         "alt": "Orange-breasted Bush-Shrike perched in a thicket, grey head and yellow underparts",
+        "caption": {
+          "text": "Perched, side. Orange-breasted Bush-Shrike in the Ehlanzeni district, distant in a thicket, with a grey head, an orange breast and yellow underparts."
+        },
         "credit": {
           "summary": "Credit: A Campbell",
           "lines": [
@@ -19862,6 +20558,9 @@
       "image": {
         "src": "https://inaturalist-open-data.s3.amazonaws.com/photos/616817253/large.jpg",
         "alt": "Osprey in flight, dark above, white below, with a dark mask and a strong breast-band",
+        "caption": {
+          "text": "In flight from below. Osprey at Jakkalsbessie, Malelane, dark above and white below, with a dark mask and a strong breast-band."
+        },
         "credit": {
           "summary": "Credit: A Deacon",
           "lines": [
@@ -19943,6 +20642,9 @@
       "image": {
         "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c6/Pallid_Harrier_%28Circus_macrourus%29_%2831620410527%29.jpg/1280px-Pallid_Harrier_%28Circus_macrourus%29_%2831620410527%29.jpg",
         "alt": "Pallid Harrier perched, side view.",
+        "caption": {
+          "text": "Perched, side. Pallid Harrier perched, side view."
+        },
         "credit": {
           "summary": "Credit: D Sherony",
           "lines": [
@@ -20030,6 +20732,9 @@
       "image": {
         "src": "https://inaturalist-open-data.s3.amazonaws.com/photos/378456919/large.jpg",
         "alt": "Pearl-spotted Owlet in Kruger, spotted white above and streaked below",
+        "caption": {
+          "text": "Perched, side. Pearl-spotted Owlet in Kruger, on the Orpen to Satara road, spotted white above and streaked below."
+        },
         "credit": {
           "summary": "Credit: J Stahl",
           "lines": [
@@ -20104,6 +20809,9 @@
       "image": {
         "src": "https://inaturalist-open-data.s3.amazonaws.com/photos/241524041/large.jpeg",
         "alt": "Pectoral Sandpiper in Panama, with a sharply marked breast and yellowish legs",
+        "caption": {
+          "text": "Perched, side. Pectoral Sandpiper at Ammo Dump Ponds, Panama, with a sharply marked breast and yellowish legs. No Kruger photograph was found."
+        },
         "credit": {
           "summary": "Credit: D Taraborelli",
           "lines": [
@@ -20178,6 +20886,9 @@
       "image": {
         "src": "https://inaturalist-open-data.s3.amazonaws.com/photos/360548152/large.jpeg",
         "alt": "Peregrine Falcon in the Mopani district",
+        "caption": {
+          "text": "Perched, side. Peregrine Falcon in the Mopani district."
+        },
         "credit": {
           "summary": "Credit: C Viljoen",
           "lines": [
@@ -20265,6 +20976,9 @@
       "image": {
         "src": "https://inaturalist-open-data.s3.amazonaws.com/photos/336628755/large.jpeg",
         "alt": "Pied Avocet in Kruger, black and white, with a thin upturned bill",
+        "caption": {
+          "text": "Perched, side. Pied Avocet in Kruger, Ehlanzeni, black and white, with a thin upturned bill."
+        },
         "credit": {
           "summary": "Credit: tjeerd",
           "lines": [
@@ -20352,6 +21066,9 @@
       "image": {
         "src": "https://inaturalist-open-data.s3.amazonaws.com/photos/730471232/large.jpg",
         "alt": "Pied Crow perched on a Kruger structure, black with a white collar",
+        "caption": {
+          "text": "Perched, side. Pied Crow perched on a Kruger structure, black with a white collar."
+        },
         "credit": {
           "summary": "Credit: A Gomez",
           "lines": [
@@ -20439,6 +21156,9 @@
       "image": {
         "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2d/Pied_kingfishers_%28Ceryle_rudis_rudis%29_Botswana_male_%28L%29_female_%28R%29_2.jpg/1280px-Pied_kingfishers_%28Ceryle_rudis_rudis%29_Botswana_male_%28L%29_female_%28R%29_2.jpg",
         "alt": "Pair of Pied Kingfishers perched, front view: male (left) with two breast-bands, female (right) with one; Botswana.",
+        "caption": {
+          "text": "Male and female. Perched, front. Pair of Pied Kingfishers perched, front view: male (left) with two breast-bands, female (right) with one; Botswana."
+        },
         "credit": {
           "summary": "Credit: C J Sharp",
           "lines": [
@@ -20526,6 +21246,9 @@
       "image": {
         "src": "https://inaturalist-open-data.s3.amazonaws.com/photos/596395383/large.jpg",
         "alt": "Pin-tailed Whydah in Kruger, a small pied bird with a very long tail",
+        "caption": {
+          "text": "Perched, side. Breeding male Pin-tailed Whydah in Kruger, Bushbuckridge, a small pied bird with a very long tail."
+        },
         "credit": {
           "summary": "Credit: xihuhuri",
           "lines": [
@@ -20613,6 +21336,9 @@
       "image": {
         "src": "https://inaturalist-open-data.s3.amazonaws.com/photos/158825602/large.jpg",
         "alt": "Plain-backed Pipit perched on a stump, pale eyebrow and a lightly streaked breast",
+        "caption": {
+          "text": "Perched, side. Plain-backed Pipit in the Kruger box, upright on a stump, with a pale eyebrow and light streaks on the breast."
+        },
         "credit": {
           "summary": "Credit: N Perrins",
           "lines": [
@@ -20700,6 +21426,9 @@
       "image": {
         "src": "https://inaturalist-open-data.s3.amazonaws.com/photos/447867602/large.jpg",
         "alt": "Purple Heron perched side-on on a dead branch in Kruger, with a striped neck and a thin bill",
+        "caption": {
+          "text": "Perched, side. Purple Heron perched side-on on a dead branch in Kruger, with a striped neck and a thin bill."
+        },
         "credit": {
           "summary": "Credit: H Human",
           "lines": [
@@ -20787,6 +21516,9 @@
       "image": {
         "src": "https://inaturalist-open-data.s3.amazonaws.com/photos/356756082/large.jpg",
         "alt": "African Swamphen in the Mopani District, Kruger, distant in reeds, with a red bill",
+        "caption": {
+          "text": "Perched, side. African Swamphen in the Mopani District, Kruger, distant in reeds, with a red bill and blue underparts."
+        },
         "credit": {
           "summary": "Credit: D McKenzie",
           "lines": [
@@ -20861,6 +21593,9 @@
       "image": {
         "src": "https://inaturalist-open-data.s3.amazonaws.com/photos/358746644/large.jpg",
         "alt": "Purple-banded Sunbird perched, green head, purple breast and black belly",
+        "caption": {
+          "text": "Male. Perched, side. Purple-banded Sunbird in the Ehlanzeni district, green on the head, with a purple breast and a black belly. SABAP1 does not describe these colours."
+        },
         "credit": {
           "summary": "Credit: D McKenzie",
           "lines": [
@@ -20935,6 +21670,9 @@
       "image": {
         "src": "https://inaturalist-open-data.s3.amazonaws.com/photos/447041348/large.jpeg",
         "alt": "Quailfinch on dry ground near Satara",
+        "caption": {
+          "text": "Male. Perched, side. Quailfinch on dry ground near Satara, with a red bill, white around the eye and barred flanks."
+        },
         "credit": {
           "summary": "Credit: P Kotze",
           "lines": [
@@ -21022,6 +21760,9 @@
       "image": {
         "src": "https://inaturalist-open-data.s3.amazonaws.com/photos/310955863/large.jpeg",
         "alt": "Rattling Cisticola perched in Kruger bush",
+        "caption": {
+          "text": "Perched, side. Rattling Cisticola perched in Kruger bush."
+        },
         "credit": {
           "summary": "Credit: R Gill",
           "lines": [
@@ -21104,6 +21845,9 @@
       "image": {
         "src": "https://inaturalist-open-data.s3.amazonaws.com/photos/486956099/large.jpg",
         "alt": "Male Red-backed Shrike perched, grey head, black mask and rufous back",
+        "caption": {
+          "text": "Male. Perched, side. Male Red-backed Shrike in the Ehlanzeni district, grey head, black mask, rufous back and pale underparts."
+        },
         "credit": {
           "summary": "Credit: R Douglas",
           "lines": [
@@ -21191,6 +21935,9 @@
       "image": {
         "src": "https://inaturalist-open-data.s3.amazonaws.com/photos/403929693/large.jpeg",
         "alt": "Red-billed Buffalo Weavers in Kruger, red bills and white patches on the flanks and shoulders",
+        "caption": {
+          "text": "Perched, front. Red-billed Buffalo Weavers in Kruger, Ehlanzeni, with red bills and white feathers on the flanks and shoulders."
+        },
         "credit": {
           "summary": "Credit: T Heijnen",
           "lines": [
@@ -21278,6 +22025,9 @@
       "image": {
         "src": "https://inaturalist-open-data.s3.amazonaws.com/photos/563714253/large.jpg",
         "alt": "Red-billed Firefinch in Kruger",
+        "caption": {
+          "text": "Perched, side. Red-billed Firefinch in the Ehlanzeni district."
+        },
         "credit": {
           "summary": "Credit: P Nieuwoudt",
           "lines": [
@@ -21365,6 +22115,9 @@
       "image": {
         "src": "https://inaturalist-open-data.s3.amazonaws.com/photos/318548771/large.jpg",
         "alt": "Two Red-billed Oxpeckers on the face of an antelope in Kruger, with red bills and yellow eye-wattles",
+        "caption": {
+          "text": "Perched, front. Two Red-billed Oxpeckers on the face of an antelope in Kruger, with red bills and yellow eye-wattles."
+        },
         "credit": {
           "summary": "Credit: L Boscain",
           "lines": [
@@ -21452,6 +22205,9 @@
       "image": {
         "src": "https://inaturalist-open-data.s3.amazonaws.com/photos/51113168/large.jpeg",
         "alt": "Red-billed Quelea in Kruger, streaked, with a red bill",
+        "caption": {
+          "text": "Perched, side. Red-billed Quelea in Kruger, Ehlanzeni, streaked, with a red bill."
+        },
         "credit": {
           "summary": "Credit: K Eichholz",
           "lines": [
@@ -21526,6 +22282,9 @@
       "image": {
         "src": "https://inaturalist-open-data.s3.amazonaws.com/photos/14187118/large.jpeg",
         "alt": "Red-breasted Swallow on the S100",
+        "caption": {
+          "text": "Perched, side. Red-breasted Swallow on the S100 in Kruger."
+        },
         "credit": {
           "summary": "Credit: copper",
           "lines": [
@@ -21609,6 +22368,9 @@
       "image": {
         "src": "https://inaturalist-open-data.s3.amazonaws.com/photos/261846156/large.jpeg",
         "alt": "Red-capped Lark walking side-on in Kruger, with a rufous cap and rufous breast patches",
+        "caption": {
+          "text": "Perched, side. Red-capped Lark walking side-on in Kruger, with a rufous cap and rufous breast patches."
+        },
         "credit": {
           "summary": "Credit: P Kotze",
           "lines": [
@@ -21696,6 +22458,9 @@
       "image": {
         "src": "https://inaturalist-open-data.s3.amazonaws.com/photos/411617186/large.jpeg",
         "alt": "Red-capped Robin-Chat at Skukuza in Kruger",
+        "caption": {
+          "text": "Perched, side. Red-capped Robin-Chat at Skukuza in Kruger."
+        },
         "credit": {
           "summary": "Credit: cirolana",
           "lines": [
@@ -21770,6 +22535,9 @@
       "image": {
         "src": "https://inaturalist-open-data.s3.amazonaws.com/photos/446218662/large.jpg",
         "alt": "Red-chested Cuckoo on a branch, seen through twigs",
+        "caption": {
+          "text": "Perched, front. Red-chested Cuckoo on a branch, partly behind twigs. The russet breast, grey head and banded belly are visible."
+        },
         "credit": {
           "summary": "Credit: Katherine",
           "lines": [
@@ -21857,6 +22625,9 @@
       "image": {
         "src": "https://inaturalist-open-data.s3.amazonaws.com/photos/599138704/large.jpg",
         "alt": "Male Red-chested Flufftail on the Garden Route, not Kruger, with a rufous head and breast and a black, white-streaked body.",
+        "caption": {
+          "text": "Male. Perched, side. Male Red-chested Flufftail on the Garden Route, not Kruger, with a rufous head and breast and a black, white-streaked body."
+        },
         "credit": {
           "summary": "Credit: C Viljoen",
           "lines": [
@@ -21944,6 +22715,9 @@
       "image": {
         "src": "https://inaturalist-open-data.s3.amazonaws.com/photos/341061274/large.jpeg",
         "alt": "Breeding male Red-collared Widowbird in Kruger, distant, with a red collar and a long tail",
+        "caption": {
+          "text": "Male. Perched, side. Breeding male Red-collared Widowbird in Kruger, Ehlanzeni, distant on a bush, with a red collar and a long tail."
+        },
         "credit": {
           "summary": "Credit: C Viljoen",
           "lines": [
@@ -22018,6 +22792,9 @@
       "image": {
         "src": "https://inaturalist-open-data.s3.amazonaws.com/photos/166069341/large.jpeg",
         "alt": "Red-crested Korhaan with the rufous crest erected and brown upper parts",
+        "caption": {
+          "text": "Perched, side. Red-crested Korhaan near Satara, rufous crest erected and brown upper parts with pale arrow shapes."
+        },
         "credit": {
           "summary": "Credit: M Bolnik",
           "lines": [
@@ -22105,6 +22882,9 @@
       "image": {
         "src": "https://inaturalist-open-data.s3.amazonaws.com/photos/423151828/large.jpg",
         "alt": "Red-eyed Dove perched in Kruger",
+        "caption": {
+          "text": "Perched, side. Red-eyed Dove perched in Kruger."
+        },
         "credit": {
           "summary": "Credit: W Downey",
           "lines": [
@@ -22179,6 +22959,9 @@
       "image": {
         "src": "https://inaturalist-open-data.s3.amazonaws.com/photos/181981683/large.jpeg",
         "alt": "Red-faced Cisticola perched in Kruger",
+        "caption": {
+          "text": "Perched, side. Red-faced Cisticola perched in Kruger."
+        },
         "credit": {
           "summary": "Credit: P Lupton",
           "lines": [
@@ -22266,6 +23049,9 @@
       "image": {
         "src": "https://inaturalist-open-data.s3.amazonaws.com/photos/316125583/large.jpeg",
         "alt": "Red-faced Mousebird perched in a Kruger bush, with a red face and a long tail",
+        "caption": {
+          "text": "Perched, side. Red-faced Mousebird perched in a Kruger bush, with a red face and a long tail."
+        },
         "credit": {
           "summary": "Credit: moxcalvitiumtorgos",
           "lines": [
@@ -22340,6 +23126,9 @@
       "image": {
         "src": "https://inaturalist-open-data.s3.amazonaws.com/photos/652308908/large.jpg",
         "alt": "Red-footed Falcon in flight over Kruger",
+        "caption": {
+          "text": "In flight from below. Red-footed Falcon in flight over Kruger. The streaked underparts match the juvenile."
+        },
         "credit": {
           "summary": "Credit: jefferson_silva",
           "lines": [
@@ -22427,6 +23216,9 @@
       "image": {
         "src": "https://inaturalist-open-data.s3.amazonaws.com/photos/710075486/large.jpg",
         "alt": "Red-knobbed Coot in Kruger, distant, dark, with a pale bill and frontal shield",
+        "caption": {
+          "text": "Perched, front. Red-knobbed Coot in Kruger, Ehlanzeni, distant on the water, dark, with a pale bill and frontal shield."
+        },
         "credit": {
           "summary": "Credit: K Hennige",
           "lines": [
@@ -22514,6 +23306,9 @@
       "image": {
         "src": "https://inaturalist-open-data.s3.amazonaws.com/photos/466119960/large.jpg",
         "alt": "Red-necked Spurfowl in the Eastern Cape, not Kruger, with red facial skin, a red throat and red legs.",
+        "caption": {
+          "text": "Perched, front. Red-necked Spurfowl in the Eastern Cape, not Kruger, with red facial skin, a red throat and red legs."
+        },
         "credit": {
           "summary": "Credit: H de Lange",
           "lines": [
@@ -22601,6 +23396,9 @@
       "image": {
         "src": "https://inaturalist-open-data.s3.amazonaws.com/photos/146299592/large.jpeg",
         "alt": "Red-throated Wryneck at Addo, speckled upperparts and a rust-brown throat",
+        "caption": {
+          "text": "Perched, side. Red-throated Wryneck at Addo Elephant National Park, not Kruger, with speckled upperparts and a rust-brown throat."
+        },
         "credit": {
           "summary": "Credit: C Viljoen",
           "lines": [
@@ -22688,6 +23486,9 @@
       "image": {
         "src": "https://inaturalist-open-data.s3.amazonaws.com/photos/30623398/large.jpg",
         "alt": "Female Red-winged Starling in Kruger, Mopani, grey on the head, with red-brown flight feathers.",
+        "caption": {
+          "text": "Female. Perched, side. Female Red-winged Starling in Kruger, Mopani, grey on the head, with red-brown flight feathers."
+        },
         "credit": {
           "summary": "Credit: tjeerd",
           "lines": [
@@ -22775,6 +23576,9 @@
       "image": {
         "src": "https://inaturalist-open-data.s3.amazonaws.com/photos/59021674/large.jpeg",
         "alt": "Retz’s Helmetshrike in Kruger, black, with a red bill and white tail tip",
+        "caption": {
+          "text": "Perched, side. Retz’s Helmetshrike in Kruger, Ehlanzeni, black, with a red bill, a red eye-wattle and a white tail tip."
+        },
         "credit": {
           "summary": "Credit: R Hoverman",
           "lines": [
@@ -22849,6 +23653,9 @@
       "image": {
         "src": "https://inaturalist-open-data.s3.amazonaws.com/photos/313414627/large.jpg",
         "alt": "River Warbler in the Waterberg",
+        "caption": {
+          "text": "Perched, side. River Warbler in the Waterberg."
+        },
         "credit": {
           "summary": "Credit: H Badenhorst",
           "lines": [
@@ -22936,6 +23743,9 @@
       "image": {
         "src": "https://inaturalist-open-data.s3.amazonaws.com/photos/143616137/large.jpeg",
         "alt": "Rock Dove in Kruger",
+        "caption": {
+          "text": "Perched, side. Rock Dove in Kruger."
+        },
         "credit": {
           "summary": "Credit: pat_ngobeni",
           "lines": [
@@ -23010,6 +23820,9 @@
       "image": {
         "src": "https://inaturalist-open-data.s3.amazonaws.com/photos/238448070/large.jpeg",
         "alt": "Rock-loving Cisticola perched in Kruger",
+        "caption": {
+          "text": "Perched, side. Rock-loving Cisticola perched in Kruger."
+        },
         "credit": {
           "summary": "Credit: P Lupton",
           "lines": [
@@ -23097,6 +23910,9 @@
       "image": {
         "src": "https://inaturalist-open-data.s3.amazonaws.com/photos/758772033/large.jpg",
         "alt": "Rudd’s Apalis in uMkhanyakude, not Kruger, with a grey head, olive upperparts and a white throat.",
+        "caption": {
+          "text": "Perched, side. Rudd’s Apalis in uMkhanyakude, not Kruger, with a grey head, olive upperparts and a white throat."
+        },
         "credit": {
           "summary": "Credit: Bruno - Yolande Zanette",
           "lines": [
@@ -23171,6 +23987,9 @@
       "image": {
         "src": "https://inaturalist-open-data.s3.amazonaws.com/photos/496484699/large.jpeg",
         "alt": "Ruff in Kruger, Mopani, scaled above and white below",
+        "caption": {
+          "text": "Perched, side. Ruff in Kruger, Mopani, scaled above and white below. The photograph is distant."
+        },
         "credit": {
           "summary": "Credit: jandutoit",
           "lines": [
@@ -23255,6 +24074,9 @@
       "image": {
         "src": "https://inaturalist-open-data.s3.amazonaws.com/photos/15413190/large.jpg",
         "alt": "Rufous-cheeked Nightjar resting side-on on a Kruger road at night",
+        "caption": {
+          "text": "Perched, side. Rufous-cheeked Nightjar resting side-on on a Kruger road at night."
+        },
         "credit": {
           "summary": "Credit: E Porter",
           "lines": [
@@ -23342,6 +24164,9 @@
       "image": {
         "src": "https://inaturalist-open-data.s3.amazonaws.com/photos/666954813/large.jpg",
         "alt": "Sabota Lark perched side-on in a tree in Kruger National Park",
+        "caption": {
+          "text": "Perched, side. Sabota Lark perched side-on in a tree in Kruger National Park."
+        },
         "credit": {
           "summary": "Credit: rastor",
           "lines": [
@@ -23416,6 +24241,9 @@
       "image": {
         "src": "https://inaturalist-open-data.s3.amazonaws.com/photos/440263155/large.jpg",
         "alt": "Sand Martin flying over water in Kruger",
+        "caption": {
+          "text": "In flight, from the side. Sand Martin over water in Kruger. A small brown martin, pale below. The breast-band is not clear in this frame."
+        },
         "credit": {
           "summary": "Credit: stproc",
           "lines": [
@@ -23503,6 +24331,9 @@
       "image": {
         "src": "https://inaturalist-open-data.s3.amazonaws.com/photos/363323114/large.jpg",
         "alt": "Scaly-feathered Weaver in the Mopani District, Kruger, pink bill, scaled forehead and black-and-white wing edges",
+        "caption": {
+          "text": "Perched, side. Scaly-feathered Weaver in the Mopani District, Kruger, with a pink bill, a scaled forehead and black wing feathers edged white."
+        },
         "credit": {
           "summary": "Credit: D McKenzie",
           "lines": [
@@ -23590,6 +24421,9 @@
       "image": {
         "src": "https://inaturalist-open-data.s3.amazonaws.com/photos/150323086/large.jpg",
         "alt": "Scaly-throated Honeyguide in Mopani",
+        "caption": {
+          "text": "Perched, side. Scaly-throated Honeyguide in Mopani."
+        },
         "credit": {
           "summary": "Credit: manatok",
           "lines": [
@@ -23677,6 +24511,9 @@
       "image": {
         "src": "https://inaturalist-open-data.s3.amazonaws.com/photos/358746862/large.jpg",
         "alt": "Male Scarlet-chested Sunbird perched, green forehead and scarlet breast",
+        "caption": {
+          "text": "Male. Perched, side. Male Scarlet-chested Sunbird in the Ehlanzeni district, black with a green forehead and a large red breast."
+        },
         "credit": {
           "summary": "Credit: D McKenzie",
           "lines": [
@@ -23759,6 +24596,9 @@
       "image": {
         "src": "https://upload.wikimedia.org/wikipedia/commons/a/a8/Acrocephalus_schoenobaenus_%28on_Phragmites_australis%29.jpg",
         "alt": "Sedge Warbler from behind on reed stems, showing the streaked mantle",
+        "caption": {
+          "text": "Perched, back. Sedge Warbler from behind on reed stems, showing the streaked mantle."
+        },
         "credit": {
           "summary": "Credit: H Hillewaert",
           "lines": [
@@ -23846,6 +24686,9 @@
       "image": {
         "src": "https://inaturalist-open-data.s3.amazonaws.com/photos/69921892/large.jpg",
         "alt": "Senegal Coucal perched in a Kruger tree",
+        "caption": {
+          "text": "Perched, side. Senegal Coucal perched in a tree in the far north of Kruger, black cap, rufous wing and white underparts."
+        },
         "credit": {
           "summary": "Credit: C Harris",
           "lines": [
@@ -23933,6 +24776,9 @@
       "image": {
         "src": "https://inaturalist-open-data.s3.amazonaws.com/photos/682617757/large.jpg",
         "alt": "Shelley’s Francolin, white throat with a black surround",
+        "caption": {
+          "text": "Perched, side. Shelley’s Francolin in the Ehlanzeni district, white throat with a black surround and a white stripe through the eye."
+        },
         "credit": {
           "summary": "Credit: cwlonie6626",
           "lines": [
@@ -24020,6 +24866,9 @@
       "image": {
         "src": "https://inaturalist-open-data.s3.amazonaws.com/photos/718009575/large.jpg",
         "alt": "Shikra — perched-side, adult. Kruger Park, South Africa",
+        "caption": {
+          "text": "Perched, side. Shikra — perched-side, adult. Kruger Park, South Africa."
+        },
         "credit": {
           "summary": "Credit: J Engelbrecht",
           "lines": [
@@ -24107,6 +24956,9 @@
       "image": {
         "src": "https://inaturalist-open-data.s3.amazonaws.com/photos/174231755/large.jpg",
         "alt": "Sombre Greenbul in Kruger, olive, with a pale eye",
+        "caption": {
+          "text": "Perched, side. Sombre Greenbul in Kruger, Ehlanzeni, olive, with a pale eye. Newman does not say whether this is the southern or the northern morph."
+        },
         "credit": {
           "summary": "Credit: bedazlesa",
           "lines": [
@@ -24194,6 +25046,9 @@
       "image": {
         "src": "https://inaturalist-open-data.s3.amazonaws.com/photos/356992664/large.jpeg",
         "alt": "Southern Black Flycatcher in Kruger, Ehlanzeni",
+        "caption": {
+          "text": "Perched, side. Southern Black Flycatcher in Kruger, Ehlanzeni."
+        },
         "credit": {
           "summary": "Credit: D McKenzie",
           "lines": [
@@ -24281,6 +25136,9 @@
       "image": {
         "src": "https://inaturalist-open-data.s3.amazonaws.com/photos/470142788/large.jpg",
         "alt": "Southern Black Tit, black with white in the wing and on the undertail",
+        "caption": {
+          "text": "Male. Perched, side. Southern Black Tit at Skukuza, black with much white in the wing and white on the undertail."
+        },
         "credit": {
           "summary": "Credit: brewmaster",
           "lines": [
@@ -24368,6 +25226,9 @@
       "image": {
         "src": "https://inaturalist-open-data.s3.amazonaws.com/photos/122516022/large.jpeg",
         "alt": "Southern Boubou perched, black above, white wing-bar and cinnamon belly",
+        "caption": {
+          "text": "Perched, side. Southern Boubou in the Ehlanzeni district, black above with a white wing-bar and a pale throat grading to a cinnamon belly."
+        },
         "credit": {
           "summary": "Credit: B Segerer",
           "lines": [
@@ -24455,6 +25316,9 @@
       "image": {
         "src": "https://inaturalist-open-data.s3.amazonaws.com/photos/363323451/large.jpeg",
         "alt": "Male Southern Brown-throated Weaver in Kruger, yellow, with a brown throat-patch and a black bill",
+        "caption": {
+          "text": "Male. Perched, side. Male Southern Brown-throated Weaver in Kruger, Ehlanzeni, yellow, with a brown throat-patch and a black bill."
+        },
         "credit": {
           "summary": "Credit: D McKenzie",
           "lines": [
@@ -24529,6 +25393,9 @@
       "image": {
         "src": "https://inaturalist-open-data.s3.amazonaws.com/photos/134843472/large.jpeg",
         "alt": "Sunbird on a flowering tree, green head and a red breast band",
+        "caption": {
+          "text": "Male. Perched, side. Southern Double-collared Sunbird in the Ehlanzeni district, green on the head with a red breast band and a pale belly. Newman’s matching text does not describe this plumage."
+        },
         "credit": {
           "summary": "Credit: P Lupton",
           "lines": [
@@ -24616,6 +25483,9 @@
       "image": {
         "src": "https://inaturalist-open-data.s3.amazonaws.com/photos/666567064/large.jpg",
         "alt": "Southern Fiscal perched, black above and white below",
+        "caption": {
+          "text": "Perched, side. Southern Fiscal on the Tshokwane–Lower Sabie road, black above and white below. The rufous flanks of a female are often hard to see, so the sex is not stated."
+        },
         "credit": {
           "summary": "Credit: S Atherton",
           "lines": [
@@ -24703,6 +25573,9 @@
       "image": {
         "src": "https://inaturalist-open-data.s3.amazonaws.com/photos/127374650/large.jpg",
         "alt": "Southern Grey-headed Sparrow, grey head and chestnut back",
+        "caption": {
+          "text": "Perched, side. Southern Grey-headed Sparrow at Satara, grey head and chestnut upperparts."
+        },
         "credit": {
           "summary": "Credit: K Harris",
           "lines": [
@@ -24790,6 +25663,9 @@
       "image": {
         "src": "https://inaturalist-open-data.s3.amazonaws.com/photos/13665470/large.jpeg",
         "alt": "Two Southern Ground-Hornbills at a tree in Kruger, black, with bare red faces",
+        "caption": {
+          "text": "Male and female. Perched, side. Two Southern Ground-Hornbills at a tree in Kruger, black, with bare red faces."
+        },
         "credit": {
           "summary": "Credit: copper",
           "lines": [
@@ -24877,6 +25753,9 @@
       "image": {
         "src": "https://inaturalist-open-data.s3.amazonaws.com/photos/109190384/large.jpeg",
         "alt": "Breeding male Southern Masked Weaver in Kruger, yellow crown, black mask and a red eye, at a nest",
+        "caption": {
+          "text": "Male. Perched, side. Breeding male Southern Masked Weaver in Kruger, Ehlanzeni, with a yellow crown, a black mask, a red eye and a plain back, at a nest."
+        },
         "credit": {
           "summary": "Credit: W Uys",
           "lines": [
@@ -24964,6 +25843,9 @@
       "image": {
         "src": "https://inaturalist-open-data.s3.amazonaws.com/photos/486970464/large.jpg",
         "alt": "Breeding male Southern Red Bishop in Kruger, red above and black below",
+        "caption": {
+          "text": "Male. Perched, side. Breeding male Southern Red Bishop in Kruger, Ehlanzeni, red above and black below."
+        },
         "credit": {
           "summary": "Credit: R Douglas",
           "lines": [
@@ -25051,6 +25933,9 @@
       "image": {
         "src": "https://inaturalist-open-data.s3.amazonaws.com/photos/107828646/large.jpg",
         "alt": "Southern Red-billed Hornbill standing side-on on open Kruger ground, with a red bill and chequered wings",
+        "caption": {
+          "text": "Perched, side. Southern Red-billed Hornbill standing side-on on open Kruger ground, with a red bill and chequered wings."
+        },
         "credit": {
           "summary": "Credit: J Boerekamps",
           "lines": [
@@ -25125,6 +26010,9 @@
       "image": {
         "src": "https://inaturalist-open-data.s3.amazonaws.com/photos/473195661/large.jpg",
         "alt": "Southern Yellow White-eye in Kruger, yellow below with a white eye-ring",
+        "caption": {
+          "text": "Perched, side. Southern Yellow White-eye in Kruger, Mopani, yellow below, with a white eye-ring."
+        },
         "credit": {
           "summary": "Credit: lance_robinson",
           "lines": [
@@ -25212,6 +26100,9 @@
       "image": {
         "src": "https://inaturalist-open-data.s3.amazonaws.com/photos/51102445/large.jpeg",
         "alt": "Adult Southern Yellow-billed Hornbill perched front-on in Kruger, with a large yellow bill and a smaller bird in front",
+        "caption": {
+          "text": "Perched, front. Adult Southern Yellow-billed Hornbill perched front-on in Kruger, with a large yellow bill and a smaller bird in front."
+        },
         "credit": {
           "summary": "Credit: K Eichholz",
           "lines": [
@@ -25299,6 +26190,9 @@
       "image": {
         "src": "https://inaturalist-open-data.s3.amazonaws.com/photos/188105353/large.jpg",
         "alt": "Speckled Mousebirds perched on Kruger aloes",
+        "caption": {
+          "text": "Perched, side. Speckled Mousebirds perched on Kruger aloes."
+        },
         "credit": {
           "summary": "Credit: cotinga",
           "lines": [
@@ -25386,6 +26280,9 @@
       "image": {
         "src": "https://inaturalist-open-data.s3.amazonaws.com/photos/574766083/large.jpg",
         "alt": "Speckled Pigeon perched in Kruger",
+        "caption": {
+          "text": "Perched, side. Speckled Pigeon perched in Kruger."
+        },
         "credit": {
           "summary": "Credit: S M Bell",
           "lines": [
@@ -25473,6 +26370,9 @@
       "image": {
         "src": "https://inaturalist-open-data.s3.amazonaws.com/photos/362230455/large.jpeg",
         "alt": "Male Spectacled Weaver in Kruger, yellow, with a black bib, a black eye-stripe and a pale eye",
+        "caption": {
+          "text": "Male. Perched, front. Male Spectacled Weaver in Kruger, Ehlanzeni, yellow, with a black bib, a black eye-stripe and a pale eye."
+        },
         "credit": {
           "summary": "Credit: K Eichholz",
           "lines": [
@@ -25560,6 +26460,9 @@
       "image": {
         "src": "https://inaturalist-open-data.s3.amazonaws.com/photos/222734777/large.jpeg",
         "alt": "Spotted Eagle-Owl at Letaba in Kruger, with yellow eyes and ear tufts",
+        "caption": {
+          "text": "Perched, side. Spotted Eagle-Owl at Letaba Rest Camp in Kruger, with yellow eyes and ear tufts."
+        },
         "credit": {
           "summary": "Credit: pgtz",
           "lines": [
@@ -25647,6 +26550,9 @@
       "image": {
         "src": "https://inaturalist-open-data.s3.amazonaws.com/photos/123170952/large.jpeg",
         "alt": "Spotted Thick-knee standing side-on at night in Kruger, with spotted upperparts and yellow legs",
+        "caption": {
+          "text": "Perched, side. Spotted Thick-knee standing side-on at night in Kruger, with spotted upperparts and yellow legs."
+        },
         "credit": {
           "summary": "Credit: B Segerer",
           "lines": [
@@ -25734,6 +26640,9 @@
       "image": {
         "src": "https://inaturalist-open-data.s3.amazonaws.com/photos/78330073/large.jpeg",
         "alt": "Squacco Heron perched side-on in a Kruger tree, buff above and white below",
+        "caption": {
+          "text": "Perched, side. Squacco Heron perched side-on in a Kruger tree, buff above and white below."
+        },
         "credit": {
           "summary": "Credit: E Bester",
           "lines": [
@@ -25821,6 +26730,9 @@
       "image": {
         "src": "https://inaturalist-open-data.s3.amazonaws.com/photos/253078434/large.jpg",
         "alt": "Square-tailed Nightjar held in Kruger with one wing opened, showing the upperwing",
+        "caption": {
+          "text": "In flight from above. Square-tailed Nightjar held in Kruger with one wing opened, showing the upperwing."
+        },
         "credit": {
           "summary": "Credit: A Rebelo",
           "lines": [
@@ -25903,6 +26815,9 @@
       "image": {
         "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/de/Steppe_Eagle_%28Aquila_nipalensis_orientalis%29_%2832477787604%29.jpg/1280px-Steppe_Eagle_%28Aquila_nipalensis_orientalis%29_%2832477787604%29.jpg",
         "alt": "Steppe Eagle perched, side view.",
+        "caption": {
+          "text": "Perched, side. Steppe Eagle perched, side view."
+        },
         "credit": {
           "summary": "Credit: B Dupont",
           "lines": [
@@ -25990,6 +26905,9 @@
       "image": {
         "src": "https://inaturalist-open-data.s3.amazonaws.com/photos/360794928/large.jpeg",
         "alt": "Stierling’s Wren-Warbler perched in Kruger woodland",
+        "caption": {
+          "text": "Perched, side. Stierling’s Wren-Warbler perched in Kruger woodland."
+        },
         "credit": {
           "summary": "Credit: C Viljoen",
           "lines": [
@@ -26077,6 +26995,9 @@
       "image": {
         "src": "https://inaturalist-open-data.s3.amazonaws.com/photos/272487805/large.jpg",
         "alt": "Streaky-headed Seedeater at Mbombela",
+        "caption": {
+          "text": "Perched, side. Streaky-headed Seedeater at Mbombela."
+        },
         "credit": {
           "summary": "Credit: H Human",
           "lines": [
@@ -26164,6 +27085,9 @@
       "image": {
         "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e5/Halcyon_chelicuti_chelicuti_230256798.jpg/1280px-Halcyon_chelicuti_chelicuti_230256798.jpg",
         "alt": "Striped Kingfisher perched, front view, showing the two-tone bill; Berg-en-Dal, Kruger National Park.",
+        "caption": {
+          "text": "Perched, front. Striped Kingfisher perched, front view, showing the two-tone bill; Berg-en-Dal, Kruger National Park."
+        },
         "credit": {
           "summary": "Credit: J N Lallensack",
           "lines": [
@@ -26238,6 +27162,9 @@
       "image": {
         "src": "https://inaturalist-open-data.s3.amazonaws.com/photos/718969496/large.jpg",
         "alt": "Striped Pipit on the ground, heavily streaked underparts",
+        "caption": {
+          "text": "Perched, side. Striped Pipit in Mbombela, on the ground in shade, with heavy streaking on the underparts."
+        },
         "credit": {
           "summary": "Credit: R Olivier",
           "lines": [
@@ -26325,6 +27252,9 @@
       "image": {
         "src": "https://inaturalist-open-data.s3.amazonaws.com/photos/115620611/large.jpg",
         "alt": "Swainson’s Spurfowl, dark brown with red facial skin and a red neck",
+        "caption": {
+          "text": "Perched, side. Swainson’s Spurfowl in Kruger, dark brown with red facial skin and a red neck."
+        },
         "credit": {
           "summary": "Credit: D Brown",
           "lines": [
@@ -26412,6 +27342,9 @@
       "image": {
         "src": "https://inaturalist-open-data.s3.amazonaws.com/photos/292336416/large.jpg",
         "alt": "Two Swallow-tailed Bee-eaters perched, yellow throats, blue collars and long blue tails",
+        "caption": {
+          "text": "Perched, side. Swallow-tailed Bee-eaters in the Ehlanzeni district, green above, yellow throats with a blue band, and long blue tails."
+        },
         "credit": {
           "summary": "Credit: Friso",
           "lines": [
@@ -26499,6 +27432,9 @@
       "image": {
         "src": "https://inaturalist-open-data.s3.amazonaws.com/photos/718983579/large.jpg",
         "alt": "Male Swee Waxbill in Cape Town, not Kruger, with a grey head, a red bill and a crimson rump on a lawn.",
+        "caption": {
+          "text": "Male. Perched, side. Male Swee Waxbill in Cape Town, not Kruger, with a grey head, a red bill and a crimson rump on a lawn."
+        },
         "credit": {
           "summary": "Credit: M Clarke",
           "lines": [
@@ -26586,6 +27522,9 @@
       "image": {
         "src": "https://inaturalist-open-data.s3.amazonaws.com/photos/477004146/large.jpeg",
         "alt": "Tambourine Dove perched in Kruger forest",
+        "caption": {
+          "text": "Perched, side. Tambourine Dove perched in Kruger forest."
+        },
         "credit": {
           "summary": "Credit: P Kotze",
           "lines": [
@@ -26673,6 +27612,9 @@
       "image": {
         "src": "https://inaturalist-open-data.s3.amazonaws.com/photos/258217534/large.jpeg",
         "alt": "Tawny-flanked Prinia perched in Kruger",
+        "caption": {
+          "text": "Perched, side. Tawny-flanked Prinia perched in Kruger."
+        },
         "credit": {
           "summary": "Credit: T ARMAND",
           "lines": [
@@ -26760,6 +27702,9 @@
       "image": {
         "src": "https://inaturalist-open-data.s3.amazonaws.com/photos/28548225/large.jpeg",
         "alt": "Terrestrial Brownbul at Pafuri, Kruger, drab brown with a white throat",
+        "caption": {
+          "text": "Perched, side. Terrestrial Brownbul at Pafuri, Kruger, drab brown, with a white throat."
+        },
         "credit": {
           "summary": "Credit: copper",
           "lines": [
@@ -26847,6 +27792,9 @@
       "image": {
         "src": "https://inaturalist-open-data.s3.amazonaws.com/photos/474781012/large.jpg",
         "alt": "Thick-billed Weaver at Mopani, Kruger, dark plumage, heavy dark bill and a white wing-spot",
+        "caption": {
+          "text": "Male. Perched, side. Thick-billed Weaver at Mopani, Kruger, dark, with a heavy dark bill and a white wing-spot. The white forehead is not clear in this frame."
+        },
         "credit": {
           "summary": "Credit: Л Артемьева",
           "lines": [
@@ -26934,6 +27882,9 @@
       "image": {
         "src": "https://inaturalist-open-data.s3.amazonaws.com/photos/599853058/large.jpg",
         "alt": "Three-banded Plover standing side-on at a Kruger shore, with two black breast-bands and a red bill",
+        "caption": {
+          "text": "Perched, side. Three-banded Plover standing side-on at a Kruger shore, with two black breast-bands and a red bill."
+        },
         "credit": {
           "summary": "Credit: G Laidler",
           "lines": [
@@ -27008,6 +27959,9 @@
       "image": {
         "src": "https://inaturalist-open-data.s3.amazonaws.com/photos/356992982/large.jpg",
         "alt": "Thrush Nightingale in Kruger, Mopani",
+        "caption": {
+          "text": "Perched, side. Thrush Nightingale in Kruger, Mopani."
+        },
         "credit": {
           "summary": "Credit: D McKenzie",
           "lines": [
@@ -27095,6 +28049,9 @@
       "image": {
         "src": "https://inaturalist-open-data.s3.amazonaws.com/photos/175621705/large.jpeg",
         "alt": "Tropical Boubou in a leafy tree, black above and pale below with a white wing-bar",
+        "caption": {
+          "text": "Perched, side. Tropical Boubou in the Mopani district, partly hidden in leaves, black above with a white wing-bar and pale underparts."
+        },
         "credit": {
           "summary": "Credit: J Ponder",
           "lines": [
@@ -27182,6 +28139,9 @@
       "image": {
         "src": "https://inaturalist-open-data.s3.amazonaws.com/photos/344886527/large.jpg",
         "alt": "Trumpeter Hornbill perched side-on in a Kruger fruiting tree, with a large dusky casque and white underparts",
+        "caption": {
+          "text": "Perched, side. Trumpeter Hornbill perched side-on in a Kruger fruiting tree, with a large dusky casque and white underparts."
+        },
         "credit": {
           "summary": "Credit: L Antoniades",
           "lines": [
@@ -27269,6 +28229,9 @@
       "image": {
         "src": "https://inaturalist-open-data.s3.amazonaws.com/photos/343446899/large.jpeg",
         "alt": "Verreaux's Eagle-Owl in Kruger, grey, with pink eyelids",
+        "caption": {
+          "text": "Perched, side. Verreaux's Eagle-Owl near Lower Sabie in Kruger, grey, with a black facial outline and pink eyelids."
+        },
         "credit": {
           "summary": "Credit: P Kotze",
           "lines": [
@@ -27356,6 +28319,9 @@
       "image": {
         "src": "https://inaturalist-open-data.s3.amazonaws.com/photos/331157451/large.jpeg",
         "alt": "Village Indigobird in Kruger, Mopani",
+        "caption": {
+          "text": "Perched, side. Village Indigobird in Kruger, Mopani. The bird is distant."
+        },
         "credit": {
           "summary": "Credit: jandutoit",
           "lines": [
@@ -27443,6 +28409,9 @@
       "image": {
         "src": "https://inaturalist-open-data.s3.amazonaws.com/photos/51107611/large.jpeg",
         "alt": "Breeding male Village Weaver in Kruger, yellow crown, black face and a spotted back",
+        "caption": {
+          "text": "Male. Perched, side. Breeding male Village Weaver in Kruger, Ehlanzeni, with a yellow crown, a black face and a spotted back. This matches the southern race. Newman does not say that this is the only race in the park."
+        },
         "credit": {
           "summary": "Credit: K Eichholz",
           "lines": [
@@ -27517,6 +28486,9 @@
       "image": {
         "src": "https://inaturalist-open-data.s3.amazonaws.com/photos/30623168/large.jpg",
         "alt": "Male Violet-backed Starling in Kruger, Mopani, with iridescent upperparts and white underparts.",
+        "caption": {
+          "text": "Male. Perched, side. Male Violet-backed Starling in Kruger, Mopani, with iridescent upperparts and white underparts."
+        },
         "credit": {
           "summary": "Credit: tjeerd",
           "lines": [
@@ -27604,6 +28576,9 @@
       "image": {
         "src": "https://inaturalist-open-data.s3.amazonaws.com/photos/13978104/large.jpeg",
         "alt": "Water Thick-knee standing side-on on a Kruger riverbank, buff and streaked, with a pale wing bar",
+        "caption": {
+          "text": "Perched, side. Water Thick-knee standing side-on on a Kruger riverbank, buff and streaked, with a pale wing bar."
+        },
         "credit": {
           "summary": "Credit: copper",
           "lines": [
@@ -27691,6 +28666,9 @@
       "image": {
         "src": "https://inaturalist-open-data.s3.amazonaws.com/photos/178821326/large.jpg",
         "alt": "Breeding male Wattled Starling in Kruger, on the Letaba to Mopani road, with a yellow-and-black head.",
+        "caption": {
+          "text": "Male. Perched, side. Breeding male Wattled Starling in Kruger, on the Letaba to Mopani road, with a yellow-and-black head."
+        },
         "credit": {
           "summary": "Credit: A Harmse",
           "lines": [
@@ -27778,6 +28756,9 @@
       "image": {
         "src": "https://inaturalist-open-data.s3.amazonaws.com/photos/22450068/large.jpg",
         "alt": "Western Barn Owl at Lower Sabie in Kruger, with a pale heart-shaped face",
+        "caption": {
+          "text": "Perched, front. Western Barn Owl at Lower Sabie in Kruger, with a pale heart-shaped face and spotted underparts."
+        },
         "credit": {
           "summary": "Credit: P Thompson",
           "lines": [
@@ -27852,6 +28833,9 @@
       "image": {
         "src": "https://inaturalist-open-data.s3.amazonaws.com/photos/447867617/large.jpg",
         "alt": "House Martin in flight, white rump and white underparts",
+        "caption": {
+          "text": "In flight from below. Western House Martin over Kruger, white below with a white rump and a shallow fork."
+        },
         "credit": {
           "summary": "Credit: H Human",
           "lines": [
@@ -27926,6 +28910,9 @@
       "image": {
         "src": "https://inaturalist-open-data.s3.amazonaws.com/photos/415255091/large.jpeg",
         "alt": "Western Yellow Wagtail walking on grass, grey-brown above with a little yellow on the breast",
+        "caption": {
+          "text": "Perched, side. Western Yellow Wagtail in the Mopani district, dull grey-brown above with only a little yellow on the breast and belly."
+        },
         "credit": {
           "summary": "Credit: F Ubbink",
           "lines": [
@@ -28013,6 +29000,9 @@
       "image": {
         "src": "https://inaturalist-open-data.s3.amazonaws.com/photos/631655983/large.jpg",
         "alt": "Whiskered Tern standing in shallow water, dark cap and pale cheek",
+        "caption": {
+          "text": "Perched, side. Whiskered Tern in the Ehlanzeni district, standing in shallow water with a dark cap, a pale cheek and a red bill. Newman’s breeding description names the short grey tail and white vent, not these head colours."
+        },
         "credit": {
           "summary": "Credit: leuli",
           "lines": [
@@ -28100,6 +29090,9 @@
       "image": {
         "src": "https://inaturalist-open-data.s3.amazonaws.com/photos/381505988/large.jpeg",
         "alt": "A flock of White Storks standing on a Kruger road, white with black wings and red bills",
+        "caption": {
+          "text": "Perched, side. A flock of White Storks standing on a Kruger road, white with black wings and red bills."
+        },
         "credit": {
           "summary": "Credit: redshift3",
           "lines": [
@@ -28187,6 +29180,9 @@
       "image": {
         "src": "https://inaturalist-open-data.s3.amazonaws.com/photos/217899512/large.jpeg",
         "alt": "Male White-bellied Sunbird at aloe flowers, blue-green breast and white belly",
+        "caption": {
+          "text": "Male. Perched, side. Male White-bellied Sunbird at Hoedspruit airfield, glossy blue-green on the head and breast with a white belly."
+        },
         "credit": {
           "summary": "Credit: W Uys",
           "lines": [
@@ -28274,6 +29270,9 @@
       "image": {
         "src": "https://inaturalist-open-data.s3.amazonaws.com/photos/279640542/large.jpg",
         "alt": "White-breasted Cuckooshrike perched side-on in Kruger woodland",
+        "caption": {
+          "text": "Perched, side. White-breasted Cuckooshrike perched side-on in Kruger woodland."
+        },
         "credit": {
           "summary": "Credit: N Perrins",
           "lines": [
@@ -28361,6 +29360,9 @@
       "image": {
         "src": "https://inaturalist-open-data.s3.amazonaws.com/photos/606428577/large.jpg",
         "alt": "White-browed Robin-Chat in Kruger",
+        "caption": {
+          "text": "Perched, side. White-browed Robin-Chat in Kruger."
+        },
         "credit": {
           "summary": "Credit: G Laidler",
           "lines": [
@@ -28448,6 +29450,9 @@
       "image": {
         "src": "https://inaturalist-open-data.s3.amazonaws.com/photos/360794931/large.jpeg",
         "alt": "White-browed Scrub Robin in Kruger, Mopani",
+        "caption": {
+          "text": "Perched, side. White-browed Scrub Robin in Kruger, Mopani."
+        },
         "credit": {
           "summary": "Credit: C Viljoen",
           "lines": [
@@ -28522,6 +29527,9 @@
       "image": {
         "src": "https://inaturalist-open-data.s3.amazonaws.com/photos/344769357/large.jpeg",
         "alt": "White-browed Sparrow-Weaver in the Mopani District, Kruger, white eyebrow, dark brown back and white wing edges",
+        "caption": {
+          "text": "Perched, back. White-browed Sparrow-Weaver in the Mopani District, Kruger, with a white eyebrow, a dark brown back and white edges to the wing feathers."
+        },
         "credit": {
           "summary": "Credit: K Eichholz",
           "lines": [
@@ -28609,6 +29617,9 @@
       "image": {
         "src": "https://inaturalist-open-data.s3.amazonaws.com/photos/43487591/large.jpeg",
         "alt": "White-crested Helmetshrike at Tamboti in Kruger, pied, with a grey crown",
+        "caption": {
+          "text": "Perched, side. White-crested Helmetshrike at Tamboti in Kruger, pied, with a grey crown and a yellow eye."
+        },
         "credit": {
           "summary": "Credit: C L Abad",
           "lines": [
@@ -28696,6 +29707,9 @@
       "image": {
         "src": "https://inaturalist-open-data.s3.amazonaws.com/photos/11631282/large.jpg",
         "alt": "White-faced Whistling Ducks swimming side-on in Ehlanzeni, Kruger",
+        "caption": {
+          "text": "Perched, side. White-faced Whistling Ducks swimming side-on in Ehlanzeni, Kruger."
+        },
         "credit": {
           "summary": "Credit: P Beja",
           "lines": [
@@ -28783,6 +29797,9 @@
       "image": {
         "src": "https://inaturalist-open-data.s3.amazonaws.com/photos/466662779/large.jpg",
         "alt": "White-fronted Bee-eater perched, white forehead, red throat, cinnamon breast and blue belly",
+        "caption": {
+          "text": "Perched, side. White-fronted Bee-eater in the Ehlanzeni district, white forehead, red throat, cinnamon breast, green back and a blue belly."
+        },
         "credit": {
           "summary": "Credit: brewmaster",
           "lines": [
@@ -28870,6 +29887,9 @@
       "image": {
         "src": "https://inaturalist-open-data.s3.amazonaws.com/photos/342022047/large.jpg",
         "alt": "White-necked Raven perched on a dead tree in Kruger",
+        "caption": {
+          "text": "Perched, side. White-necked Raven perched on a dead tree in Kruger."
+        },
         "credit": {
           "summary": "Credit: H Comstock",
           "lines": [
@@ -28955,6 +29975,9 @@
       "image": {
         "src": "https://inaturalist-open-data.s3.amazonaws.com/photos/320196385/large.jpg",
         "alt": "White-rumped Swift in flight from below near Malelane, Kruger, with a narrow white rump and a forked tail",
+        "caption": {
+          "text": "In flight from below. White-rumped Swift in flight from below near Malelane, Kruger, with a narrow white rump and a forked tail."
+        },
         "credit": {
           "summary": "Credit: Dmitrii",
           "lines": [
@@ -29029,6 +30052,9 @@
       "image": {
         "src": "https://inaturalist-open-data.s3.amazonaws.com/photos/25889927/large.jpg",
         "alt": "White-starred Robin at the Garden Route Botanical Garden",
+        "caption": {
+          "text": "Perched, side. White-starred Robin at the Garden Route Botanical Garden."
+        },
         "credit": {
           "summary": "Credit: C Ralston",
           "lines": [
@@ -29116,6 +30142,9 @@
       "image": {
         "src": "https://inaturalist-open-data.s3.amazonaws.com/photos/56740719/large.jpeg",
         "alt": "White-throated Robin-Chat at Skukuza in Kruger",
+        "caption": {
+          "text": "Perched, side. White-throated Robin-Chat at Skukuza in Kruger."
+        },
         "credit": {
           "summary": "Credit: B McDougall",
           "lines": [
@@ -29190,6 +30219,9 @@
       "image": {
         "src": "https://inaturalist-open-data.s3.amazonaws.com/photos/596653444/large.jpg",
         "alt": "Distant White-winged Tern in flight over a pan, pale body and dark ear-spot",
+        "caption": {
+          "text": "In flight, from the side. White-winged Tern at Mopani Rest Camp, a distant bird over the water with a pale body and a dark ear-spot."
+        },
         "credit": {
           "summary": "Credit: T Kotze",
           "lines": [
@@ -29274,6 +30306,9 @@
       "image": {
         "src": "https://inaturalist-open-data.s3.amazonaws.com/photos/448163955/large.jpg",
         "alt": "Willow Warbler in side-on flight in Kruger National Park, pale below and olive-brown above",
+        "caption": {
+          "text": "In flight, from the side. Willow Warbler in side-on flight in Kruger National Park, 11 October 2024, pale below and olive-brown above. The frame is distant, so the eyebrow and leg colour are not clear."
+        },
         "credit": {
           "summary": "Credit: A Manson",
           "lines": [
@@ -29361,6 +30396,9 @@
       "image": {
         "src": "https://inaturalist-open-data.s3.amazonaws.com/photos/352193452/large.jpg",
         "alt": "Wire-tailed Swallow in Kruger",
+        "caption": {
+          "text": "Perched, side. Wire-tailed Swallow in the Ehlanzeni district."
+        },
         "credit": {
           "summary": "Credit: sowadart",
           "lines": [
@@ -29435,6 +30473,9 @@
       "image": {
         "src": "https://inaturalist-open-data.s3.amazonaws.com/photos/598528183/large.jpg",
         "alt": "Wood Sandpiper in Kruger, speckled above with a pale eyebrow and yellowish legs",
+        "caption": {
+          "text": "Perched, side. Wood Sandpiper in Kruger, Mopani, speckled above, with a pale eyebrow, white belly and yellowish legs."
+        },
         "credit": {
           "summary": "Credit: candacemain",
           "lines": [
@@ -29517,6 +30558,9 @@
       "image": {
         "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b2/Woodland_Kingfisher_%28Halcyon_senegalensis_cyanoleuca%29_calling_..._%2833050691128%29.jpg/1280px-Woodland_Kingfisher_%28Halcyon_senegalensis_cyanoleuca%29_calling_..._%2833050691128%29.jpg",
         "alt": "Woodland Kingfisher calling, front view, showing the white underparts and red-and-black bill; Kruger National Park.",
+        "caption": {
+          "text": "Perched, front. Woodland Kingfisher calling, front view, showing the white underparts and red-and-black bill; Kruger National Park."
+        },
         "credit": {
           "summary": "Credit: B Dupont",
           "lines": [
@@ -29591,6 +30635,9 @@
       "image": {
         "src": "https://inaturalist-open-data.s3.amazonaws.com/photos/15586005/large.jpg",
         "alt": "Eastern Golden Weaver on the S25, Kruger, all-yellow and distant",
+        "caption": {
+          "text": "Perched, side. Eastern Golden Weaver on the S25 at the Crocodile River, Kruger, all-yellow and distant. The red eye is not clear at this range."
+        },
         "credit": {
           "summary": "Credit: A Deacon",
           "lines": [
@@ -29678,6 +30725,9 @@
       "image": {
         "src": "https://inaturalist-open-data.s3.amazonaws.com/photos/461386546/large.jpeg",
         "alt": "Yellow-bellied Eremomela perched in Kruger bush",
+        "caption": {
+          "text": "Perched, side. Yellow-bellied Eremomela perched in Kruger bush."
+        },
         "credit": {
           "summary": "Credit: C Callaghan",
           "lines": [
@@ -29765,6 +30815,9 @@
       "image": {
         "src": "https://inaturalist-open-data.s3.amazonaws.com/photos/52929449/large.jpeg",
         "alt": "Yellow-bellied Greenbul in Kruger, yellow underparts and a pale eyelid",
+        "caption": {
+          "text": "Perched, side. Yellow-bellied Greenbul in Kruger, Ehlanzeni, yellow below, with a pale eyelid."
+        },
         "credit": {
           "summary": "Credit: R Hoverman",
           "lines": [
@@ -29839,6 +30892,9 @@
       "image": {
         "src": "https://inaturalist-open-data.s3.amazonaws.com/photos/553623019/large.jpg",
         "alt": "Yellow-billed Duck standing side-on on concrete near Malelane, Kruger",
+        "caption": {
+          "text": "Perched, side. Yellow-billed Duck standing side-on on concrete near Malelane, Kruger."
+        },
         "credit": {
           "summary": "Credit: T Kotze",
           "lines": [
@@ -29926,6 +30982,9 @@
       "image": {
         "src": "https://inaturalist-open-data.s3.amazonaws.com/photos/453742261/large.jpeg",
         "alt": "Yellow-billed Oxpecker perched side-on on a giraffe in Kruger, with a yellow bill",
+        "caption": {
+          "text": "Perched, side. Yellow-billed Oxpecker perched side-on on a giraffe in Kruger, with a yellow bill."
+        },
         "credit": {
           "summary": "Credit: P Shukov",
           "lines": [
@@ -30013,6 +31072,9 @@
       "image": {
         "src": "https://inaturalist-open-data.s3.amazonaws.com/photos/134848104/large.jpeg",
         "alt": "Yellow-breasted Apalis perched in Kruger bush",
+        "caption": {
+          "text": "Perched, side. Yellow-breasted Apalis perched in Kruger bush."
+        },
         "credit": {
           "summary": "Credit: P Lupton",
           "lines": [
@@ -30100,6 +31162,9 @@
       "image": {
         "src": "https://inaturalist-open-data.s3.amazonaws.com/photos/270413356/large.jpeg",
         "alt": "Breeding male Yellow-crowned Bishop in Kruger, yellow crown and black body, distant in grass",
+        "caption": {
+          "text": "Male. Perched, side. Breeding male Yellow-crowned Bishop in Kruger, Ehlanzeni, distant in the grass, with a yellow crown and a black body."
+        },
         "credit": {
           "summary": "Credit: J Ponder",
           "lines": [
@@ -30187,6 +31252,9 @@
       "image": {
         "src": "https://inaturalist-open-data.s3.amazonaws.com/photos/338531365/large.jpg",
         "alt": "Yellow-fronted Tinkerbird in Kruger",
+        "caption": {
+          "text": "Perched, side. Yellow-fronted Tinkerbird in Kruger."
+        },
         "credit": {
           "summary": "Credit: J Dirsuwei",
           "lines": [
@@ -30274,6 +31342,9 @@
       "image": {
         "src": "https://inaturalist-open-data.s3.amazonaws.com/photos/727357851/large.jpg",
         "alt": "Yellow-rumped Tinkerbird in Kruger, Ehlanzeni",
+        "caption": {
+          "text": "Perched, side. Yellow-rumped Tinkerbird in Kruger, Ehlanzeni."
+        },
         "credit": {
           "summary": "Credit: maegdt",
           "lines": [
@@ -30348,6 +31419,9 @@
       "image": {
         "src": "https://inaturalist-open-data.s3.amazonaws.com/photos/334586693/large.jpg",
         "alt": "Yellow-streaked Greenbul at Graskop, not Kruger",
+        "caption": {
+          "text": "Perched, side. Yellow-streaked Greenbul at Graskop, not Kruger. No plumage description was available to caption the colours."
+        },
         "credit": {
           "summary": "Credit: F Hartmann",
           "lines": [
@@ -30435,6 +31509,9 @@
       "image": {
         "src": "https://inaturalist-open-data.s3.amazonaws.com/photos/92222824/large.jpeg",
         "alt": "Yellow-throated Longclaw standing, yellow throat, black gorget and yellow belly",
+        "caption": {
+          "text": "Perched, side. Yellow-throated Longclaw on the Tshokwane–Lower Sabie road, yellow throat and eyebrow, black gorget and yellow underparts."
+        },
         "credit": {
           "summary": "Credit: copper",
           "lines": [
@@ -30509,6 +31586,9 @@
       "image": {
         "src": "https://inaturalist-open-data.s3.amazonaws.com/photos/172295495/large.jpg",
         "alt": "Yellow-throated Petronia perched on a branch",
+        "caption": {
+          "text": "Perched, side. Yellow-throated Petronia in the Ehlanzeni district. The sources used do not describe the plumage, so the photograph is not used to add marks."
+        },
         "credit": {
           "summary": "Credit: M King",
           "lines": [
@@ -30583,6 +31663,9 @@
       "image": {
         "src": "https://inaturalist-open-data.s3.amazonaws.com/photos/485759722/large.jpeg",
         "alt": "Yellow-throated Woodland Warbler perched side-on at the Garden Route, chestnut crown, yellow eyebrow and breast, white belly",
+        "caption": {
+          "text": "Perched, side. Yellow-throated Woodland Warbler at the Garden Route, Western Cape. Chestnut crown, yellow eyebrow and breast, white belly. No Kruger photograph was found."
+        },
         "credit": {
           "summary": "Credit: C Viljoen",
           "lines": [
@@ -30657,6 +31740,9 @@
       "image": {
         "src": "https://inaturalist-open-data.s3.amazonaws.com/photos/21878245/large.jpeg",
         "alt": "Zitting Cisticola perched in Kruger grass",
+        "caption": {
+          "text": "Perched, side. Zitting Cisticola perched in Kruger grass."
+        },
         "credit": {
           "summary": "Credit: copper",
           "lines": [

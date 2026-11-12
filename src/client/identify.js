@@ -182,7 +182,48 @@ const creditNode = (credit, file) =>
     ],
   )
 
-const aiLabel = (text) => element('span', { class: 'ai-label', text })
+/**
+ * A guide photograph that zooms like the plates on a species page: the same
+ * `figure.plate` and `button.zoom`, which app.js binds. The credit disclosure
+ * and an AI label always show; what the picture shows is added once it is
+ * zoomed.
+ */
+const plate = (image, label) => {
+  const caption = element('figcaption')
+  if (label)
+    caption.append(element('span', { class: 'plate-name', text: label }))
+  if (image.caption?.label)
+    caption.append(
+      element('span', { class: 'ai-label', text: image.caption.label }),
+    )
+  if (image.caption?.text)
+    caption.append(
+      element('span', { class: 'plate-credit', text: image.caption.text }),
+    )
+  if (image.credit) caption.append(creditNode(image.credit, image.src))
+  return element('figure', { class: 'plate plate-thumb' }, [
+    element(
+      'button',
+      {
+        type: 'button',
+        class: 'zoom',
+        'aria-pressed': 'false',
+        'aria-label': 'Zoom photograph',
+      },
+      [
+        element('img', {
+          src: image.src,
+          alt: image.alt,
+          loading: 'lazy',
+          draggable: 'false',
+          width: '120',
+          height: '120',
+        }),
+      ],
+    ),
+    caption,
+  ])
+}
 
 const resultItem = (item, families) => {
   const { bird } = item
@@ -217,7 +258,14 @@ const resultItem = (item, families) => {
     body.append(
       element('div', { class: 'identify-call' }, [
         element('span', { text: 'Reference call ' }),
-        ...(bird.call.aiGenerated ? [aiLabel('AI-generated recording')] : []),
+        ...(bird.call.aiGenerated
+          ? [
+              element('span', {
+                class: 'ai-label',
+                text: 'AI-generated recording',
+              }),
+            ]
+          : []),
         element('audio', {
           controls: '',
           preload: 'none',
@@ -237,24 +285,7 @@ const resultItem = (item, families) => {
       }),
     )
   const row = element('li', { class: 'identify-result' })
-  if (bird.image)
-    row.append(
-      element('figure', { class: 'identify-thumb' }, [
-        element('img', {
-          src: bird.image.src,
-          alt: bird.image.alt,
-          loading: 'lazy',
-          width: '120',
-          height: '120',
-        }),
-        element('figcaption', {}, [
-          ...(bird.image.aiGenerated ? [aiLabel('AI-generated image')] : []),
-          ...(bird.image.credit
-            ? [creditNode(bird.image.credit, bird.image.src)]
-            : []),
-        ]),
-      ]),
-    )
+  if (bird.image) row.append(plate(bird.image))
   row.append(body)
   return row
 }

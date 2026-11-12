@@ -867,11 +867,19 @@
               "image": {
                 "type": ["object", "null"],
                 "additionalProperties": false,
-                "required": ["src", "alt", "credit"],
+                "required": ["src", "alt", "caption", "credit"],
                 "properties": {
                   "src": { "type": "string", "minLength": 1 },
                   "alt": { "type": "string" },
-                  "aiGenerated": { "const": true },
+                  "caption": {
+                    "type": "object",
+                    "additionalProperties": false,
+                    "required": ["text"],
+                    "properties": {
+                      "label": { "const": "AI-generated image" },
+                      "text": { "type": "string" }
+                    }
+                  },
                   "credit": { "$ref": "#/$defs/creditDisclosure" }
                 }
               },
@@ -1085,6 +1093,15 @@
                       "alt": {
                         "type": "string",
                         "minLength": 1
+                      },
+                      "caption": {
+                        "type": "object",
+                        "additionalProperties": false,
+                        "required": ["text"],
+                        "properties": {
+                          "label": { "const": "AI-generated image" },
+                          "text": { "type": "string" }
+                        }
                       },
                       "type": {
                         "$ref": "#/$defs/textOrNull"

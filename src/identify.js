@@ -1,6 +1,11 @@
 import { safeHttpUrl } from './escape.js'
 import { creditModel } from './credit.js'
-import { imageAlt, licenceForbidsDerivatives, objectPath } from './guide.js'
+import {
+  imageAlt,
+  imageCaptionParts,
+  licenceForbidsDerivatives,
+  objectPath,
+} from './guide.js'
 import { QUALITY_RANK } from './recordings.js'
 
 export const IDENTIFY_SOUND_PATH = '/identify/sound'
@@ -92,7 +97,22 @@ export const MODEL_CREDIT = {
 const text = (value) =>
   typeof value === 'string' && value.trim() ? value.trim() : null
 
-/** The first photograph the page may show, as the species page would. */
+/**
+ * What a photograph shows, for the recogniser pages: one line of text, and
+ * a label only when the image is AI-generated. Who made it is in `credit`.
+ */
+const caption = (image) => {
+  const { detail } = imageCaptionParts(image)
+  return {
+    ...(image?.aiGenerated ? { label: 'AI-generated image' } : {}),
+    text: detail.length ? `${detail.join('. ').replace(/\.$/, '')}.` : '',
+  }
+}
+
+/**
+ * The first photograph the page may show, as the species page would. `src` is
+ * the full-size file, so the same picture is sharp when it is zoomed.
+ */
 const thumbnail = (species) => {
   for (const image of Array.isArray(species?.images) ? species.images : []) {
     const remote = safeHttpUrl(image?.fileUrl)
@@ -106,7 +126,7 @@ const thumbnail = (species) => {
       return {
         src,
         alt: imageAlt(species, image),
-        ...(image.aiGenerated ? { aiGenerated: true } : {}),
+        caption: caption(image),
         credit: creditModel(image, 'image', {
           src,
           onSite: image.hosted === true,

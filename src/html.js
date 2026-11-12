@@ -22,6 +22,7 @@ import {
   familyTotalModel,
   HOME_POPULATION_INTRO,
   imageAlt,
+  imageCaptionParts,
   indexRows,
   licenceForbidsDerivatives,
   mediaSexLabel,
@@ -585,20 +586,12 @@ const figures = (doc, images, imagesAvailable, colourMap) => {
  * it, since that is the case a reader needs to notice.
  */
 const imageCaption = (image, shown) => {
-  const captionText =
-    typeof image?.caption === 'string' ? image.caption.trim() : ''
-  const detail = [
-    mediaSexLabel(image?.sex),
-    viewLabel(image?.view),
-    captionText,
-  ]
-    .filter(Boolean)
-    .map((part) => escapeHtml(part))
+  const { detail } = imageCaptionParts(image)
   return [
     image?.aiGenerated
       ? '<span class="ai-label">AI-generated image</span>'
       : '',
-    detail.length ? `${detail.join('. ')}.` : '',
+    detail.length ? `${escapeHtml(detail.join('. ').replace(/\.$/, ''))}.` : '',
     creditHtml(creditModel(image, 'image', shown), shown?.src),
   ]
     .filter(Boolean)

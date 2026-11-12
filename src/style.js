@@ -824,39 +824,77 @@ caption, .season-note {
   cursor: zoom-in;
 }
 
-.zoom img {
+.zoom img, .zoom canvas {
   -webkit-user-drag: none;
   user-select: none;
 }
 
+/* A small photograph in a list, as on the recogniser pages. It is a plate
+   without the frame, and its credit shows only when it is zoomed. */
+.plate-thumb {
+  padding: 0;
+  border: 0;
+  border-radius: 0;
+  background: transparent;
+  box-shadow: none;
+}
+.plate-thumb img, .plate-thumb canvas {
+  display: block;
+  inline-size: 6rem;
+  block-size: 6rem;
+  object-fit: cover;
+  border-radius: 0.5rem;
+  background: var(--plate-bg);
+}
+.plate.plate-thumb figcaption { margin: 0; font: 0.8rem var(--sans); text-align: center; }
+.plate-thumb .plate-credit, .plate-thumb.is-zoomed .plate-name { display: none; }
+.plate-thumb.is-zoomed .plate-credit { display: inline; }
+
+/* A zoomed photograph fills the screen: the picture takes all the room above
+   its caption, at full width unless that would make it taller than the room,
+   and then at full height, centred. */
 .plate.is-zoomed {
   position: fixed;
   z-index: 999;
   inset: 0;
+  display: flex;
+  flex-direction: column;
   inline-size: 100vw;
   block-size: 100vh;
+  block-size: 100dvh;
   max-inline-size: none;
   margin: 0;
   padding: 0;
   overflow: auto;
+  border: 0;
   border-radius: 0;
+  box-shadow: none;
   background: var(--bg);
 }
 
-.plate.is-zoomed .zoom { cursor: zoom-out; }
+.plate.is-zoomed .zoom {
+  flex: 1 1 0;
+  min-block-size: 0;
+  cursor: zoom-out;
+}
 
-.plate.is-zoomed img {
+.plate.is-zoomed img, .plate.is-zoomed canvas {
   inline-size: 100%;
-  block-size: auto;
+  block-size: 100%;
+  object-fit: contain;
+  object-position: top;
   border-radius: 0;
+  background: transparent;
 }
 
 .plate.is-zoomed figcaption {
-  position: sticky;
-  inset-block-end: 0;
+  flex: none;
   margin: 0;
   padding: 0.75rem 1rem 1rem;
   background: var(--surface);
+  font: inherit;
+  font-size: 0.95rem;
+  text-align: start;
 }
 
 audio {
@@ -893,6 +931,23 @@ audio {
 .credit ul { margin: 0.2rem 0 0.4rem; padding-inline-start: 1.2rem; }
 .credit li { margin: 0.15rem 0; }
 .plate.is-zoomed figcaption { max-block-size: 60vh; overflow-y: auto; }
+
+/* Beside a thumbnail the closed credit fits under the picture. Opened, it
+   is wider than the picture, so it lies over the text beside it. */
+.plate-thumb:not(.is-zoomed) { inline-size: 6rem; }
+.plate-thumb:not(.is-zoomed) .credit { font-size: 0.8rem; text-align: start; }
+.plate-thumb:not(.is-zoomed) .credit[open] {
+  position: relative;
+  z-index: 2;
+  inline-size: max-content;
+  max-inline-size: min(22rem, 78vw);
+  padding: 0 0.6rem 0.2rem;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: var(--surface);
+  box-shadow: var(--shadow-sm);
+}
+.identify-result .recording .credit, .identify-call .credit { font-size: 0.85rem; }
 
 .swatch {
   display: inline-block;
@@ -1105,21 +1160,6 @@ audio {
   background: var(--bg);
 }
 
-/* The photograph's credit runs under the whole result, so it has room to open. */
-.identify-thumb, .identify-guide, .identify-guide figcaption { display: contents; }
-.identify-thumb img { grid-area: 1 / 1; }
-.identify-thumb figcaption { grid-area: 2 / 1 / auto / -1; }
-.identify-thumb + .identify-body { grid-area: 1 / 2; }
-.identify-result .credit { font-size: 0.85rem; }
-
-.identify-result img {
-  inline-size: 6rem;
-  block-size: 6rem;
-  object-fit: cover;
-  border-radius: 0.5rem;
-  background: var(--plate-bg);
-}
-
 .identify-body { min-inline-size: 0; }
 .identify-body h3 { margin: 0; font-family: var(--sans); }
 .identify-body p { margin: 0.2rem 0 0; }
@@ -1143,27 +1183,7 @@ audio {
 @media (min-width: 34rem) {
   .identify-photo-result { grid-template-columns: auto 1fr; }
 }
-.identify-pair {
-  display: grid;
-  grid-template-columns: 6rem minmax(6rem, 1fr);
-  gap: 0 0.5rem;
-  max-inline-size: 22rem;
-}
-.identify-pair > figure:first-child { grid-area: 1 / 1 / span 2; }
-.identify-guide img { grid-area: 1 / 2; }
-.identify-guide-label { grid-area: 2 / 2; inline-size: 6rem; font: 0.8rem var(--sans); text-align: center; }
-.identify-guide .ai-label, .identify-guide .credit { grid-column: 1 / -1; }
-.identify-guide .credit { text-align: start; }
-.identify-pair figure { margin: 0; }
-.identify-pair img, .identify-pair canvas {
-  display: block;
-  inline-size: 6rem;
-  block-size: 6rem;
-  object-fit: cover;
-  border-radius: 0.5rem;
-  background: var(--plate-bg);
-}
-.identify-pair figcaption { font: 0.8rem var(--sans); text-align: center; }
+.identify-pair { display: flex; gap: 0.5rem; }
 
 .identify-coverage { max-inline-size: 75ch; margin-block: 0.5rem; }
 .identify-coverage summary { cursor: pointer; font-family: var(--sans); font-weight: 700; padding-block: 0.4rem; }

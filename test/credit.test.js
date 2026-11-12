@@ -264,12 +264,16 @@ const fakeDocument = {
   },
 }
 
-const clientHelper = (source) => {
-  const start = source.indexOf('const element = ')
-  const end = source.indexOf('const resultItem = ')
-  assert.ok(start > 0 && end > start)
-  return source.slice(start, end)
-}
+/** The `element` and `creditNode` helpers, as the page script declares them. */
+const clientHelper = (source) =>
+  ['const element = ', 'const creditNode = ']
+    .map((name) => {
+      const start = source.indexOf(name)
+      const end = source.indexOf('\n\n', start)
+      assert.ok(start > 0 && end > start, name)
+      return source.slice(start, end)
+    })
+    .join('\n')
 
 test('the recogniser pages print the same disclosure as the server', async () => {
   const helper = clientHelper(soundSource)
@@ -295,6 +299,6 @@ test('the recogniser pages print the same disclosure as the server', async () =>
     )
   }
   for (const source of [soundSource, photoSource])
-    assert.match(source, /creditNode\(bird\.image\.credit, bird\.image\.src\)/)
+    assert.match(source, /creditNode\(image\.credit, image\.src\)/)
   assert.match(soundSource, /creditNode\(bird\.call\.credit, bird\.call\.src\)/)
 })
