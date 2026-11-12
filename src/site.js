@@ -48,11 +48,16 @@ import {
 import { css } from './style.js'
 import { discoveryDocuments } from './ard.js'
 import { loadListCatalog, rowsForSpeciesIndex } from './catalog.js'
-import { HOME_POPULATION_INTRO, indexRows } from './guide.js'
+import {
+  HOME_BROWSE,
+  HOME_IDENTIFY,
+  HOME_POPULATION_INTRO,
+  indexRows,
+} from './guide.js'
 import { numberFormatFor } from './numbers.js'
 import { CARD_MEDIA_TYPE } from './mcp.js'
 import { applyRecordingOverlay } from './recordings.js'
-import { searchSuffix } from './route.js'
+import { alternates, searchSuffix } from './route.js'
 import { loadSearchRecords, searchRecords } from './search.js'
 import { colourMapFromKv, readDocument } from './store.js'
 import { buildSitemap, sitemapEntries, sitemapXml } from './sitemap.js'
@@ -133,19 +138,39 @@ export const renderRoute = async (request, env, route) => {
 }
 
 const renderHome = async (env, format, view) => {
-  const [species, families, catalog] = await Promise.all([
-    format === 'json' ? null : readOptional(env.BIRDS_KV, 'index/species'),
+  const [species, families] = await Promise.all([
+    readOptional(env.BIRDS_KV, 'index/species'),
     readOptional(env.BIRDS_KV, 'index/families'),
-    format === 'json' ? null : loadListCatalog(env.BIRDS_KV, env?.DATA_VERSION),
   ])
   const { origin } = view
   if (format === 'json') {
+    const pages = (href) => {
+      const alts = alternates(href)
+      return {
+        html: origin + alts.html,
+        md: origin + alts.md,
+        json: origin + alts.json,
+      }
+    }
+    const link = ({ name, href, description }) => ({
+      name,
+      ...(description ? { description } : {}),
+      pages: pages(href),
+    })
     return jsonPage(
       {
         kind: 'home',
         title: 'Birds of Kruger National Park',
         sampleData: false,
-        families: families?.data ?? {},
+        counts:
+          species || families
+            ? {
+                species: indexRows(species?.data).length,
+                families: indexRows(families?.data).length,
+              }
+            : null,
+        identify: HOME_IDENTIFY.map(link),
+        browse: HOME_BROWSE.map(link),
         census: HOME_POPULATION_INTRO,
       },
       origin,
@@ -157,18 +182,11 @@ const renderHome = async (env, format, view) => {
     origin,
     speciesIndex: species?.data,
     familiesIndex: families?.data,
-    catalog,
-    format: view.numbers.integer,
   }
   if (format === 'md') {
     return mdPage(renderHomeMarkdown(shared), origin, '/', 'home')
   }
-  return htmlPage(
-    renderHomeHtml({ ...shared, query: view.query }),
-    origin,
-    '/',
-    'home',
-  )
+  return htmlPage(renderHomeHtml(shared), origin, '/', 'home')
 }
 
 export const SEARCH_LIMIT = 50

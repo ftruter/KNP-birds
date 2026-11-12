@@ -19,6 +19,8 @@ import {
   FAMILY_TOTAL_INTRO,
   familyLabel,
   familyTotalModel,
+  HOME_BROWSE,
+  HOME_IDENTIFY,
   HOME_POPULATION_INTRO,
   imageAlt,
   indexRows,
@@ -46,40 +48,54 @@ import { sitemapEntries } from './sitemap.js'
 
 const NAV = [
   ['home', '/', 'Home'],
+  ['identify-photo', '/identify/photo', 'Identify by photo'],
+  ['identify', '/identify/sound', 'Identify by sound'],
   ['families', '/families', 'Families'],
   ['species', '/species', 'Species'],
-  ['identify', '/identify/sound', 'Identify by sound'],
-  ['identify-photo', '/identify/photo', 'Identify by photo'],
   ['colours', '/vocab/colours', 'Colours'],
   ['agents', '/llms.txt', 'For agents'],
 ]
 
-const omitHomeSpeciesTable = (html) =>
-  html.replace(
-    /<h2>Species<\/h2>\n(?:<div class="table-wrap">[\s\S]*?\n<\/div>|<p>No species are listed\.<\/p>)\n/,
-    '',
-  )
+const CAMERA_ICON =
+  '<svg class="home-action-icon" aria-hidden="true" focusable="false" viewBox="0 0 24 24" width="40" height="40"><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" d="M3 8.5A1.5 1.5 0 0 1 4.5 7h2.3a1 1 0 0 0 .8-.4l1-1.4a1.5 1.5 0 0 1 1.2-.6h4.4a1.5 1.5 0 0 1 1.2.6l1 1.4a1 1 0 0 0 .8.4h2.3A1.5 1.5 0 0 1 21 8.5v9a1.5 1.5 0 0 1-1.5 1.5h-15A1.5 1.5 0 0 1 3 17.5ZM15.75 12.75a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0Z"/></svg>'
 
-export const renderHomeHtml = ({
-  origin,
-  speciesIndex,
-  familiesIndex,
-  catalog,
-  format,
-  query,
-}) => {
+const MICROPHONE_ICON =
+  '<svg class="home-action-icon" aria-hidden="true" focusable="false" viewBox="0 0 24 24" width="40" height="40"><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" d="M12 3.5a3 3 0 0 1 3 3v5a3 3 0 0 1-6 0v-5a3 3 0 0 1 3-3ZM5.75 11.25a6.25 6.25 0 0 0 12.5 0M12 17.5v3M8.75 20.5h6.5"/></svg>'
+
+const identifyActionHtml = (action, icon) =>
+  `<li><a class="home-action" href="${action.href}">${icon}<span class="home-action-copy"><span class="home-action-title">${escapeHtml(action.name)}</span><span class="home-action-text">${escapeHtml(action.description)}</span></span></a></li>`
+
+const browseNote = (item, counts) =>
+  item.count && counts ? ` <span>${counts[item.count]}</span>` : ''
+
+export const renderHomeHtml = ({ origin, speciesIndex, familiesIndex }) => {
   const species = indexRows(speciesIndex)
   const families = indexRows(familiesIndex)
-  const main = omitHomeSpeciesTable(`
+  const counts =
+    speciesIndex || familiesIndex
+      ? { species: species.length, families: families.length }
+      : null
+  const [photo, sound] = HOME_IDENTIFY
+  const main = `
+<h1>Birds of Kruger National Park</h1>
+<ul class="home-actions">
+${identifyActionHtml(photo, CAMERA_ICON)}
+${identifyActionHtml(sound, MICROPHONE_ICON)}
+</ul>
+<nav aria-label="Browse the guide">
+<ul class="browse-links">
+${HOME_BROWSE.map((item) => `<li><a href="${item.href}">${escapeHtml(item.name)}</a>${browseNote(item, counts)}</li>`).join('\n')}
+</ul>
+</nav>
+<h2>About this guide</h2>
 <div class="hero">
 <div class="hero-copy">
-<h1>Birds of Kruger National Park</h1>
 <p>An open field guide to the birds of Kruger National Park and neighbouring Marloth Park. It is written for people and for AI agents. Pages are rendered on the server. JavaScript is optional: sorting and photo zoom still work from the links and the page when it is off.</p>
 ${agentHtml(origin)}
 <p>The full list is resident species, plus summer migrants. Rare vagrants are left out. ${escapeHtml(catalogSentence(species.length, families.length, speciesIndex, familiesIndex))}</p>
 </div>
 <div class="hero-points">
-<h2>What these pages compare</h2>
+<h3>What these pages compare</h3>
 <ol class="compare-list">
 <li>Chicks and juveniles against adults</li>
 <li>Winter (non-breeding) plumage against summer (breeding) plumage</li>
@@ -90,36 +106,17 @@ ${agentHtml(origin)}
 </ol>
 </div>
 </div>
-<p class="identify-lead"><a href="/identify/sound">Identify a bird by its call</a>: record a few seconds, or choose a recording, and see the most likely Kruger species.</p>
-<p class="identify-lead"><a href="/identify/photo">Identify a bird from a photo</a>: take or choose a photo, crop it to the bird, and see the most likely species or family.</p>
 <div class="lead-split">
 <p>Age, season and sex are worked out by comparing structured field marks. A mark left blank is unknown, not a claim that the part has no colour. Flight and perched views use notes and photographs. Where nothing differs, the page says so.</p>
 <aside class="lead-note">
 <p>${escapeHtml(HOME_POPULATION_INTRO)}</p>
 </aside>
 </div>
-<h2>Species</h2>
-${speciesTableHtml({
-  rows: rowsForSpeciesIndex(speciesIndex, catalog),
-  path: '/',
-  query,
-  format,
-  withFamily: true,
-  caption: 'Species',
-})}
-<h2>Families</h2>
-${familyTableHtml({
-  rows: rowsForFamilies(familiesIndex, catalog),
-  path: '/',
-  query,
-  format,
-  caption: 'Families',
-})}
-<p><a href="/vocab/colours">Colour names</a> used in the field marks.</p>`)
+<p><a href="/vocab/colours">Colour names</a> used in the field marks.</p>`
   return layout({
     title: 'Birds of Kruger National Park',
     description:
-      'A field guide to the birds of Kruger National Park, for people and for AI agents.',
+      'Identify a Kruger National Park bird from a photo or its call, or browse the field guide. For people and for AI agents.',
     origin,
     path: '/',
     nav: 'home',

@@ -4,6 +4,29 @@ export const SAMPLE_NOTICE = 'Sample content, to be verified.'
 export const APPROXIMATE_LABEL = 'Approximate estimate'
 export const APPROXIMATE_TOTAL = 'Approximate total'
 
+/** The two primary actions on the home page, in the order they are shown. */
+export const HOME_IDENTIFY = [
+  {
+    key: 'photo',
+    name: 'Identify by photo',
+    href: '/identify/photo',
+    description: 'Take or choose a picture.',
+  },
+  {
+    key: 'sound',
+    name: 'Identify by sound',
+    href: '/identify/sound',
+    description: 'Record or open a call.',
+  },
+]
+
+/** The browse links under them. `count` names the index that sizes the link. */
+export const HOME_BROWSE = [
+  { key: 'families', name: 'Families', href: '/families', count: 'families' },
+  { key: 'species', name: 'Species', href: '/species', count: 'species' },
+  { key: 'search', name: 'Search', href: '/search' },
+]
+
 export const HOME_POPULATION_INTRO =
   'Population figures are an approximate estimate. Many are Kemp et al. 2001 order-of-magnitude thresholds, stored as half to double the threshold in mature individuals. Family totals add only those mature-individual figures.'
 

@@ -518,7 +518,7 @@ test('the photo model is credited, and the page is in the sitemap, the home page
   const home = await (await fetch('/')).text()
   assert.match(
     home,
-    /<a href="\/identify\/photo">Identify a bird from a photo<\/a>/,
+    /<a class="home-action" href="\/identify\/photo">.*Identify by photo/,
   )
   assert.match(home, /<a href="\/identify\/photo">Identify by photo<\/a>/)
   const llms = await (await fetch('/llms.txt')).text()

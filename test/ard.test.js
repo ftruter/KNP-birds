@@ -96,7 +96,7 @@ test('ARD and ai-catalog manifests share entries and match the official schemas'
   assert.equal(errorsOf(validateCatalog, catalog), '')
   assert.equal(catalog.specVersion, '1.0')
   assert.deepEqual(catalog.entries, ard.entries)
-  assert.ok(ard.entries.length >= 2 && ard.entries.length <= 5)
+  assert.ok(ard.entries.length >= 2 && ard.entries.length <= 6)
   const urls = new Set()
   for (const item of ard.entries) {
     assert.equal(errorsOf(validateEntry, item), '', item.identifier)
@@ -125,6 +125,22 @@ test('ARD and ai-catalog manifests share entries and match the official schemas'
   )
   assert.match(home.description, /\/llms\.txt/)
   assert.ok(home.representativeQueries.length <= 5)
+  // The home JSON no longer embeds the family index, and no entry says it does.
+  assert.match(home.description, /does not embed either list/)
+  assert.equal(home.capabilities.includes('FamilyIndex'), false)
+  const families = ard.entries.find((item) =>
+    item.identifier.endsWith(':guide:families'),
+  )
+  assert.equal(families.url, `${origin}/families.json`)
+  assert.match(
+    families.description,
+    new RegExp(`${Object.keys(familiesIndex).length} families`),
+  )
+  const stored = await (await app.fetch('/families.json')).json()
+  const asked = families.representativeQueries
+    .join(' ')
+    .match(/Afrikaans name of the (\w+) family/)
+  assert.ok(stored[asked[1]].af)
   assert.equal(
     ard.entries.some((item) => item.type === 'text/plain'),
     false,
