@@ -33,10 +33,40 @@ const openStore = async (name) => {
   }
 }
 
-/** The model bytes, from Cache Storage when they are there. */
-const modelBytes = async (url, store, count) => {
+const hex = (buffer) =>
+  [...new Uint8Array(buffer)]
+    .map((byte) => byte.toString(16).padStart(2, '0'))
+    .join('')
+
+/**
+ * Whether `bytes` are the file the page expects. A copy that was put
+ * together wrongly on the device still loads, and then answers with
+ * nonsense, so a saved model or runtime is checked every time it is used.
+ * True when there is nothing to check against.
+ */
+const intact = async (bytes, sha256) => {
+  if (!sha256 || !self.crypto?.subtle) return true
+  return hex(await self.crypto.subtle.digest('SHA-256', bytes)) === sha256
+}
+
+/** Removes every saved copy of `url`, so the next fetch goes to the network. */
+const purge = async (url) => {
+  try {
+    for (const name of await self.caches.keys())
+      await (await self.caches.open(name)).delete(url)
+  } catch {
+    // Without Cache Storage there is no saved copy to remove.
+  }
+}
+
+/** The model bytes, from Cache Storage when they are there and intact. */
+const modelBytes = async (url, store, count, sha256) => {
   const saved = store ? await store.match(url) : null
-  if (saved) return new Uint8Array(await saved.arrayBuffer())
+  if (saved) {
+    const kept = new Uint8Array(await saved.arrayBuffer())
+    if (await intact(kept, sha256)) return kept
+    await purge(url)
+  }
   const response = await fetch(url)
   if (!response.ok) throw new Error(`${response.status} fetching the model`)
   const reader = response.body.getReader()
@@ -55,6 +85,8 @@ const modelBytes = async (url, store, count) => {
     bytes.set(chunk, offset)
     offset += chunk.length
   }
+  if (!(await intact(bytes, sha256)))
+    throw new Error('The model did not arrive intact')
   if (store)
     await store
       .put(
@@ -87,7 +119,7 @@ const counted = (response, count) => {
  * Keeps the runtime's own wasm download in Cache Storage as well, and counts
  * it towards the download progress.
  */
-const cacheRuntimeFetches = (base, store, count) => {
+const cacheRuntimeFetches = (base, store, count, checks = {}) => {
   const network = self.fetch.bind(self)
   self.fetch = async (input, init) => {
     const url = new URL(
@@ -97,9 +129,36 @@ const cacheRuntimeFetches = (base, store, count) => {
     if (!url.startsWith(base) || (init?.method ?? 'GET') !== 'GET')
       return network(input, init)
     const saved = store ? await store.match(url) : null
-    if (saved) return saved
-    const response = await network(input, init)
+    const sha256 = checks[url]
+    if (saved && !sha256) return saved
+    if (saved) {
+      const kept = await saved.arrayBuffer()
+      if (await intact(kept, sha256))
+        return new Response(kept, { headers: saved.headers })
+      await purge(url)
+    }
+    let response = await network(input, init)
     if (!response.ok) return response
+    if (sha256) {
+      // The service worker may have answered with a copy saved by the
+      // download panel. A damaged one is removed and fetched again.
+      let bytes = await response.arrayBuffer()
+      if (!(await intact(bytes, sha256))) {
+        await purge(url)
+        response = await network(input, init)
+        if (!response.ok) return response
+        bytes = await response.arrayBuffer()
+        if (!(await intact(bytes, sha256)))
+          throw new Error(`${url} did not arrive intact`)
+      }
+      count(bytes.byteLength)
+      const headers = { 'content-type': response.headers.get('content-type') }
+      if (store)
+        store
+          .put(url, new Response(bytes.slice(0), { headers }))
+          .catch(() => {})
+      return new Response(bytes, { headers })
+    }
     if (store) store.put(url, response.clone()).catch(() => {})
     return url.endsWith('.wasm') ? counted(response, count) : response
   }
@@ -112,7 +171,15 @@ const load = async ({
   modelBytes: expected,
   downloadBytes,
   cacheName,
+  checks: given = {},
 }) => {
+  // The expected SHA-256 of the model and of each wasm build, by address.
+  const checks = Object.fromEntries(
+    Object.entries(given).map(([address, sha256]) => [
+      new URL(address, self.location.href).href,
+      sha256,
+    ]),
+  )
   const folder = new URL(base, self.location.href).href
   const root = new URL(runtime ?? base, self.location.href).href
   const store = await openStore(cacheName)
@@ -124,8 +191,13 @@ const load = async ({
     received = Math.min(total, received + more)
     self.postMessage({ type: 'progress', received, total })
   }
-  const bytes = await modelBytes(folder + modelFile, store, count)
-  cacheRuntimeFetches(root, store, count)
+  const bytes = await modelBytes(
+    folder + modelFile,
+    store,
+    count,
+    checks[folder + modelFile],
+  )
+  cacheRuntimeFetches(root, store, count, checks)
   const { loadLiteRt, loadAndCompile, Tensor } = await import(
     `${root}litert.mjs`
   )

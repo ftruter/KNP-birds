@@ -344,10 +344,26 @@ const boot = async () => {
         partBytes.set(file.url, bytes)
         repaint()
       })
+      // A model or runtime that was put together wrongly still loads and
+      // then answers with nonsense, so its contents are checked, and it is
+      // stored as one piece.
+      let body = blob
+      if (file.sha256 && window.crypto?.subtle) {
+        body = await blob.arrayBuffer()
+        const digest = await window.crypto.subtle.digest('SHA-256', body)
+        const found = [...new Uint8Array(digest)]
+          .map((byte) => byte.toString(16).padStart(2, '0'))
+          .join('')
+        if (found !== file.sha256) {
+          if (file.bytes > CHUNK_BYTES) await dropParts(file)
+          else partBytes.delete(file.url)
+          throw new Error(`${file.url} did not arrive intact`)
+        }
+      }
       const store = await window.caches.open(file.cache)
       await store.put(
         new URL(file.url, window.location.origin).href,
-        new Response(blob, {
+        new Response(body, {
           headers: {
             'content-type': type || 'application/octet-stream',
             'content-length': String(blob.size),

@@ -10,6 +10,7 @@ import {
   PHOTO_MODEL_HUB_URL,
   TRAINING_MANIFEST_URL,
   modelBase,
+  modelChecks,
   photoDownloadBytes,
   downloadSummary,
   mebibytes,
@@ -21,6 +22,11 @@ const TITLE = 'Identify a bird from a photo'
 const INTRO =
   'Take a photo of a bird, or choose one you took earlier, crop it to the bird, and this page lists the most likely Kruger species. When it cannot tell the species, it names the family. Each result links to the species page and shows the guide’s photograph beside yours.'
 const DOWNLOAD_NOTE = `The recogniser runs on this device, so it is downloaded once: ${downloadSummary(PHOTO_MODEL.bytes, 'Identify by sound')}. It is then kept on this device. After that, recognition needs no signal for as long as this page stays open.`
+// Shown while the device has no connection. The photo picker cannot hand
+// over a photo whose original is only in the cloud, and it says nothing.
+const OFFLINE_NOTE =
+  'There is no connection. A photo that is kept in the cloud, such as iCloud Photos, with only a preview on this device will not open until there is one. Take a photo instead, or choose one that is stored on this device.'
+
 const TIPS =
   'Get as close as you safely can and keep the bird sharp. A bird that is small in the photo gives poor results, so crop closely.'
 const NO_JS_NOTE = 'Recognition needs JavaScript, which is off or blocked.'
@@ -100,7 +106,7 @@ export const renderIdentifyPhotoHtml = ({ origin, doc }) => {
 <p>${escapeHtml(INTRO)}</p>
 <p class="identify-privacy">${escapeHtml(PHOTO_PRIVACY_NOTE)}</p>
 <p id="identify-nojs" class="identify-note"><span id="identify-nojs-reason">${escapeHtml(NO_JS_NOTE)}</span> You can still browse the <a href="/families">families</a> and the <a href="/species">species list</a>, or <a href="/search">search by name</a>.</p>
-<section id="identify" class="identify" hidden data-doc="${IDENTIFY_PHOTO_PATH}.json" data-worker="${escapeHtml(identifySrc('/identify-worker.js'))}" data-models="${escapeHtml(photoModelBase)}" data-runtime="${escapeHtml(modelBase)}" data-model-file="${escapeHtml(PHOTO_MODEL.file)}" data-model-bytes="${PHOTO_MODEL.bytes}" data-download-bytes="${photoDownloadBytes}" data-input-size="${PHOTO_MODEL.inputSize}" data-cache="identify-photo-${escapeHtml(PHOTO_MODEL.version)}">
+<section id="identify" class="identify" hidden data-doc="${IDENTIFY_PHOTO_PATH}.json" data-worker="${escapeHtml(identifySrc('/identify-worker.js'))}" data-models="${escapeHtml(photoModelBase)}" data-runtime="${escapeHtml(modelBase)}" data-model-file="${escapeHtml(PHOTO_MODEL.file)}" data-model-bytes="${PHOTO_MODEL.bytes}" data-download-bytes="${photoDownloadBytes}" data-input-size="${PHOTO_MODEL.inputSize}" data-cache="identify-photo-${escapeHtml(PHOTO_MODEL.version)}" data-checks="${escapeHtml(JSON.stringify(modelChecks(photoModelBase + PHOTO_MODEL.file, PHOTO_MODEL.sha256)))}">
 <p id="identify-status" class="identify-status" role="status" aria-live="polite"></p>
 <div id="identify-consent" hidden>
 <h2>Download the recogniser</h2>
@@ -115,6 +121,7 @@ export const renderIdentifyPhotoHtml = ({ origin, doc }) => {
 <label class="identify-file identify-second" for="identify-file">Choose a photo <input type="file" id="identify-file" accept="image/*"></label>
 <p>${escapeHtml(TIPS)}</p>
 </div>
+<p id="identify-offline" class="identify-note" hidden>${escapeHtml(OFFLINE_NOTE)}</p>
 </div>
 <dialog id="identify-cropper" class="identify-cropper" aria-labelledby="identify-crop-heading">
 <div id="identify-stage" class="identify-stage">
