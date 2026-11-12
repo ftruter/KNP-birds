@@ -49,25 +49,26 @@ const homeDescription = (origin, speciesIndex, familiesIndex, guide) => {
     familiesIndex,
   )
   const agentGuide = `The agent guide at ${origin}/llms.txt explains how to fetch HTML, Markdown and JSON, and how field marks, calls and licences are stored.`
-  if (!guide.listed)
-    return `Home JSON for the Kruger National Park field guide. ${sentence} ${HOME_POPULATION_INTRO} ${agentGuide}`
-  return `Home JSON for the Kruger National Park field guide. ${sentence} ${guide.afrikaans} ${plural(guide.afrikaans, 'species has', 'species have')} an Afrikaans name. ${guide.populations} ${plural(guide.populations, 'species has', 'species have')} a mature-individual population midpoint. ${HOME_POPULATION_INTRO} ${agentGuide}`
+  return `Home JSON for the Kruger National Park field guide. It is the entry point: it gives the species and family counts and links to the families index, the species index, search, and the pages that identify a bird from a photo or a call. It does not embed either list. ${sentence} ${HOME_POPULATION_INTRO} ${agentGuide}`
 }
 
-const homeQueries = (guide) => {
-  const named = guide.species.find((row) => row.names.af)
+const HOME_QUERIES = [
+  'How many bird species and families are on the Kruger National Park list?',
+  'Where are the Kruger family and species indexes?',
+  'Can this guide identify a Kruger bird from a photo or a call?',
+]
+
+const familiesDescription = (guide) =>
+  `Family index for the Kruger National Park field guide: ${guide.familyCount} ${plural(guide.familyCount, 'family', 'families')}, keyed by scientific name, each with its English name, its Afrikaans name or null, and the midpoint of its mature-individual total (0 when no species in the family has that unit). The species index at /species.json has the same shape: ${guide.afrikaans} ${plural(guide.afrikaans, 'species has', 'species have')} an Afrikaans name and ${guide.populations} ${plural(guide.populations, 'species has', 'species have')} a population midpoint.`
+
+const familiesQueries = (guide) => {
   const family = guide.families.find((row) => row.names.af) || guide.families[0]
   return [
-    guide.speciesCount
-      ? 'Which bird species are on the Kruger National Park list?'
-      : 'How many species does this field guide list?',
-    named
-      ? `What is the Afrikaans name of the ${named.names.en}?`
-      : 'Which Kruger species have an Afrikaans name?',
-    'Which Kruger species have a mature-individual population midpoint?',
+    'Which bird families are on the Kruger National Park list?',
     family?.names?.af
       ? `What is the Afrikaans name of the ${family.scientificName} family?`
-      : 'How many bird families does this field guide list?',
+      : 'Which Kruger bird families have an Afrikaans name?',
+    'Which Kruger bird families have a mature-individual population total?',
   ]
 }
 
@@ -126,20 +127,28 @@ export const discoveryDocuments = ({
     }),
     entry({
       identifier: 'guide:home',
-      displayName: 'Kruger bird list',
+      displayName: 'Kruger field guide home',
       type: 'application/json',
       url: `${origin}/.json`,
       description: homeDescription(origin, speciesIndex, familiesIndex, guide),
-      capabilities: [
-        'SpeciesIndex',
-        'FamilyIndex',
-        'AfrikaansNames',
-        'PopulationEstimates',
-      ],
-      representativeQueries: homeQueries(guide),
-      tags: ['kruger', 'birds', 'species', 'families'],
+      capabilities: ['EntryPoint', 'SpeciesCount', 'FamilyCount'],
+      representativeQueries: HOME_QUERIES,
+      tags: ['kruger', 'birds', 'field-guide'],
     }),
   ]
+  if (familiesIndex && typeof familiesIndex === 'object')
+    entries.push(
+      entry({
+        identifier: 'guide:families',
+        displayName: 'Kruger bird families',
+        type: 'application/json',
+        url: `${origin}/families.json`,
+        description: familiesDescription(guide),
+        capabilities: ['FamilyIndex', 'AfrikaansNames', 'PopulationEstimates'],
+        representativeQueries: familiesQueries(guide),
+        tags: ['kruger', 'birds', 'families'],
+      }),
+    )
   if (credits && typeof credits === 'object') {
     const media =
       typeof credits.site?.media === 'string' ? credits.site.media : ''

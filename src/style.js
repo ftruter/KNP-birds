@@ -453,8 +453,7 @@ code {
   box-shadow: var(--shadow);
 }
 
-.hero h1 { margin-block-start: 0; }
-.hero h2 { margin-block-start: 0; }
+.hero h3 { margin-block-start: 0; }
 
 @container wrap (min-width: 58rem) {
   .hero {
@@ -1041,7 +1040,7 @@ audio {
   .site-header { border-block-end-color: CanvasText; }
   .site-search input, .site-search-hint kbd { border-color: CanvasText; }
   .search-result { border-color: CanvasText; box-shadow: none; }
-  .mark, .sample, .plate, .table-wrap, .population, .hero, .compare-list li, .species-card, .facts, .sitemap > li {
+  .mark, .sample, .plate, .table-wrap, .population, .hero, .home-action, .browse-links li, .compare-list li, .species-card, .facts, .sitemap > li {
     border-color: CanvasText;
     box-shadow: none;
   }
@@ -1092,7 +1091,82 @@ audio {
   }
 }
 
-.identify-lead { max-inline-size: 75ch; font-weight: 600; }
+/* Home page. The two identify actions use the header green and gold, which are the same in light and dark mode. */
+.home-actions {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 0.75rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  max-inline-size: 64rem;
+}
+
+.home-action {
+  display: flex;
+  align-items: center;
+  gap: 0.9rem;
+  block-size: 100%;
+  min-block-size: 5rem;
+  padding: 0.85rem 1.1rem;
+  background: var(--header-bg);
+  color: var(--header-fg);
+  border: 2px solid var(--header-fg);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow);
+  font-family: var(--sans);
+  text-decoration: none;
+}
+
+.home-action:hover { background: var(--nav-pill); }
+.home-action:hover .home-action-title { text-decoration: underline; text-underline-offset: 0.14em; }
+
+.home-action-icon { flex: none; inline-size: 2.5rem; block-size: 2.5rem; }
+
+.home-action-copy { display: grid; gap: 0.15rem; }
+
+.home-action-title {
+  font-size: clamp(1.25rem, 1.1rem + 0.6vw, 1.6rem);
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.home-action-text { color: #F3EFE0; font-size: 1rem; line-height: 1.35; }
+
+@container wrap (min-width: 40rem) {
+  .home-actions { grid-template-columns: 1fr 1fr; gap: 1rem; }
+  .home-action { min-block-size: 7rem; padding: 1.25rem 1.5rem; }
+  .home-action-icon { inline-size: 3.25rem; block-size: 3.25rem; }
+}
+
+.browse-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+  list-style: none;
+  margin-block: 1rem 0.5rem;
+  margin-inline: 0;
+  padding: 0;
+  font-family: var(--sans);
+}
+
+.browse-links li {
+  position: relative;
+  display: flex;
+  align-items: baseline;
+  gap: 0.4rem;
+  min-block-size: 2.75rem;
+  padding: 0.55rem 0.95rem;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+}
+
+.browse-links li:hover { background: var(--row-hover); }
+.browse-links a { font-weight: 700; }
+.browse-links a::after { content: ""; position: absolute; inset: 0; }
+.browse-links span { color: var(--muted); font-size: 0.92rem; }
+
 
 .identify-privacy, .identify-note {
   max-inline-size: 75ch;

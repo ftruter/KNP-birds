@@ -455,20 +455,60 @@ test('the home page counts the species and family indexes', async () => {
   assert.match(html, /href="\/credits"/)
   assert.doesNotMatch(html, /<h2>Species<\/h2>/)
   assert.doesNotMatch(html, /href="\/species\//)
-  assert.match(html, /<h2>Families<\/h2>/)
-  assert.match(html, /Summer species count/)
-  assert.match(html, /Winter species count/)
+  assert.doesNotMatch(html, /<h2>Families<\/h2>/)
+  assert.doesNotMatch(html, /href="\/family\//)
+  assert.doesNotMatch(html, /<table/)
   assert.doesNotMatch(markdown, /## Species\n/)
-  assert.match(markdown, /## Families/)
+  assert.doesNotMatch(markdown, /## Families/)
+  assert.doesNotMatch(markdown, /\]\(\/family\//)
+  // The two identify actions come first, as plain links, then the browse links.
+  const main = html.slice(html.indexOf('<main'), html.indexOf('</main>'))
+  const actions = [
+    ...main.matchAll(
+      /<a class="home-action" href="([^"]+)">[\s\S]*?<span class="home-action-title">([^<]+)<\/span><span class="home-action-text">([^<]+)<\/span>/g,
+    ),
+  ].map((match) => match.slice(1))
+  assert.deepEqual(actions, [
+    ['/identify/photo', 'Identify by photo', 'Take or choose a picture.'],
+    ['/identify/sound', 'Identify by sound', 'Record or open a call.'],
+  ])
+  const browse = main.match(/<ul class="browse-links">[\s\S]*?<\/ul>/)[0]
+  assert.deepEqual(
+    [...browse.matchAll(/<a href="([^"]+)">([^<]+)<\/a>/g)].map((match) =>
+      match.slice(1),
+    ),
+    [
+      ['/families', 'Families'],
+      ['/species', 'Species'],
+      ['/search', 'Search'],
+    ],
+  )
+  assert.match(browse, /<span>86<\/span>/)
+  assert.match(browse, /<span>493<\/span>/)
+  assert.ok(main.indexOf('<h1>') < main.indexOf('home-actions'))
+  assert.ok(main.indexOf('home-actions') < main.indexOf('browse-links'))
+  assert.ok(main.indexOf('browse-links') < main.indexOf('<h2>'))
+  assert.doesNotMatch(main, /<script|<button|<form/)
+  assert.match(
+    markdown,
+    /- \[Identify by photo\]\(\/identify\/photo\): Take or choose a picture\./,
+  )
+  assert.match(
+    markdown,
+    /- \[Identify by sound\]\(\/identify\/sound\): Record or open a call\./,
+  )
+  assert.match(markdown, /- \[Families\]\(\/families\) \(86\)/)
+  assert.match(markdown, /- \[Species\]\(\/species\) \(493\)/)
+  assert.match(markdown, /- \[Search\]\(\/search\)/)
   const nav = html.match(/<ul class="nav-list">[\s\S]*?<\/ul>/)[0]
   assert.deepEqual(
     [...nav.matchAll(/>([^<]+)<\/a>/g)].map((match) => match[1]),
     [
       'Home',
+      'Identify by photo',
+      'Identify by sound',
       'Families',
       'Species',
-      'Identify by sound',
-      'Identify by photo',
       'Colours',
       'For agents',
     ],
@@ -491,6 +531,7 @@ test('the home page counts the species and family indexes', async () => {
   assert.doesNotMatch(sized, /493/)
   const missing = renderHomeHtml({ origin: 'https://birds.truter.world' })
   assert.match(missing, /The species and family lists are not available/)
+  assert.match(missing, /<a href="\/families">Families<\/a><\/li>/)
   for (const slug of ['accipitridae', 'bucorvidae', 'coraciidae']) {
     const family = await readJson(`data/family/${slug}.json`)
     assert.doesNotMatch(family.summary, /loaded so far|this sample|not every/i)

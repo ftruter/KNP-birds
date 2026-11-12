@@ -35,7 +35,7 @@ The file extension selects the format. Page paths come straight from the KV keys
 | \`index/identify-sound\` | ${origin}/identify/sound |
 | \`index/identify-photo\` | ${origin}/identify/photo |
 
-The home page is also ${origin}/.md and ${origin}/.json. Slugs are the lowercase scientific name with hyphens, for example \`coracias-caudatus\`.
+The home page is also ${origin}/.md and ${origin}/.json. It does not list families or species: it links to the two identify pages, ${origin}/families, ${origin}/species and search, and its JSON carries the species and family counts. Slugs are the lowercase scientific name with hyphens, for example \`coracias-caudatus\`.
 
 HTML pages link their Markdown and JSON alternates with \`<link rel="alternate">\` and in the footer.
 

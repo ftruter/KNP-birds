@@ -436,7 +436,7 @@ test('the model credit is on the credits page and the page is in the sitemap', a
   const home = await (await fetch('/')).text()
   assert.match(
     home,
-    /<a href="\/identify\/sound">Identify a bird by its call<\/a>/,
+    /<a class="home-action" href="\/identify\/sound">.*Identify by sound/,
   )
   const llms = await (await fetch('/llms.txt')).text()
   assert.match(llms, /\/identify\/sound\.json/)

@@ -106,21 +106,67 @@ test('pages are served in html, markdown, and json', async () => {
   assert.match(familyPage, /First to look for/)
 })
 
-test('home json lists families and leaves the species index at /species', async () => {
+test('the home page points to the identify pages and the indexes, and embeds neither list', async () => {
   const { records } = await loadStore()
   const site = await app(records)
+  const origin = 'https://birds.truter.world'
   const home = await (await site.fetch('/.json')).json()
   assert.equal(home.kind, 'home')
   assert.equal(Object.hasOwn(home, 'species'), false)
-  assert.equal(Object.keys(home.families).length, 86)
-  assert.equal(home.families.Accipitridae.en, 'Hawks, eagles and kites')
+  assert.equal(Object.hasOwn(home, 'families'), false)
+  assert.deepEqual(home.counts, { species: 493, families: 86 })
+  assert.deepEqual(home.identify, [
+    {
+      name: 'Identify by photo',
+      description: 'Take or choose a picture.',
+      pages: {
+        html: `${origin}/identify/photo`,
+        md: `${origin}/identify/photo.md`,
+        json: `${origin}/identify/photo.json`,
+      },
+    },
+    {
+      name: 'Identify by sound',
+      description: 'Record or open a call.',
+      pages: {
+        html: `${origin}/identify/sound`,
+        md: `${origin}/identify/sound.md`,
+        json: `${origin}/identify/sound.json`,
+      },
+    },
+  ])
+  assert.deepEqual(
+    home.browse.map((item) => [item.name, item.pages.json]),
+    [
+      ['Families', `${origin}/families.json`],
+      ['Species', `${origin}/species.json`],
+      ['Search', `${origin}/search.json`],
+    ],
+  )
+  // Every page the home documents name is served, in all three formats.
+  for (const item of [...home.identify, ...home.browse])
+    for (const url of Object.values(item.pages))
+      assert.equal((await site.fetch(new URL(url).pathname)).status, 200, url)
   const html = await (await site.fetch('/')).text()
-  assert.match(html, /Summer species count/)
-  assert.match(html, /Winter species count/)
-  assert.doesNotMatch(html, /<h2>Species<\/h2>/)
+  assert.doesNotMatch(html, /<table/)
+  assert.doesNotMatch(html, /<h2>(Species|Families)<\/h2>/)
+  assert.match(html, /<a class="home-action" href="\/identify\/photo">/)
+  assert.match(html, /<a class="home-action" href="\/identify\/sound">/)
   const markdown = await (await site.fetch('/.md')).text()
-  assert.match(markdown, /## Families/)
-  assert.doesNotMatch(markdown, /## Species/)
+  assert.doesNotMatch(markdown, /## (Species|Families)/)
+  assert.doesNotMatch(markdown, /^\|/m)
+  assert.match(markdown, /\[Families\]\(\/families\)/)
+  // The table itself is unchanged at /families.
+  const families = await (await site.fetch('/families')).text()
+  assert.match(families, /Summer species count/)
+  assert.match(families, /Winter species count/)
+  assert.equal(
+    Object.keys(await (await site.fetch('/families.json')).json()).length,
+    86,
+  )
+  const empty = await (await (await app({})).fetch('/.json')).json()
+  assert.equal(empty.counts, null)
+  assert.equal(empty.identify.length, 2)
 })
 
 test('the Thrush Nightingale renders as a published species in html, markdown, and json', async () => {

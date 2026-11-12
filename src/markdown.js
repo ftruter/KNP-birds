@@ -20,6 +20,8 @@ import {
   FAMILY_TOTAL_INTRO,
   familyLabel,
   familyTotalModel,
+  HOME_BROWSE,
+  HOME_IDENTIFY,
   HOME_POPULATION_INTRO,
   imageAlt,
   indexRows,
@@ -42,15 +44,21 @@ import { familyTableMarkdown, speciesTableMarkdown } from './lists.js'
 import { alternates, searchSuffix } from './route.js'
 import { sitemapEntries } from './sitemap.js'
 
-export const renderHomeMarkdown = ({
-  origin,
-  speciesIndex,
-  familiesIndex,
-  catalog,
-  format,
-}) => {
+export const renderHomeMarkdown = ({ origin, speciesIndex, familiesIndex }) => {
   const species = indexRows(speciesIndex)
   const families = indexRows(familiesIndex)
+  const counts =
+    speciesIndex || familiesIndex
+      ? { species: species.length, families: families.length }
+      : null
+  const browse = HOME_BROWSE.map((item) => {
+    const note = item.count && counts ? ` (${counts[item.count]})` : ''
+    const hint =
+      item.key === 'search'
+        ? ': add `?q=` and a name, for example [/search.md?q=roller](/search.md?q=roller)'
+        : ''
+    return `- [${item.name}](${item.href})${note}${hint}`
+  }).join('\n')
   return pageMd({
     origin,
     path: '/',
@@ -59,6 +67,17 @@ export const renderHomeMarkdown = ({
     body: `An open field guide to the birds of Kruger National Park and neighbouring Marloth Park. Pages are server-rendered. JavaScript is optional.
 
 Resident species are included, plus summer migrants. Rare vagrants are left out. ${catalogSentence(species.length, families.length, speciesIndex, familiesIndex)}
+
+## Identify a bird
+
+These two pages are for people. They run a model in the visitor's browser and need JavaScript, so an agent cannot run them. Their Markdown and JSON list the species each model covers.
+
+${HOME_IDENTIFY.map((item) => `- [${item.name}](${item.href}): ${item.description}`).join('\n')}
+
+## Browse
+
+${browse}
+- [Colour names](/vocab/colours)
 
 ## What these pages compare
 
@@ -69,16 +88,7 @@ Resident species are included, plus summer migrants. Rare vagrants are left out.
 5. A perched or walking bird, from the front, the back and the side
 6. Calls and songs of males and females
 
-Age, season and sex come from diffing structured field marks. Null means unknown. Flight and perched views use notes and photographs. ${HOME_POPULATION_INTRO}
-
-## Families
-
-${familyTableMarkdown({
-  rows: rowsForFamilies(familiesIndex, catalog),
-  format,
-})}
-
-[Colour names](/vocab/colours)`,
+Age, season and sex come from diffing structured field marks. Null means unknown. Flight and perched views use notes and photographs. ${HOME_POPULATION_INTRO}`,
   })
 }
 
