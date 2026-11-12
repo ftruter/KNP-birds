@@ -42,6 +42,9 @@ Open reference to the birds of Kruger National Park (and bordering Marloth Park)
 - The page keeps the site-wide permissions policy (no camera or microphone permission: the camera button is a file input) and adds only WebAssembly, the worker and same-origin `fetch` to the CSP. The photo is drawn on a canvas, so `blob:` is not allowed.
 - The test photos are fixed. `fetch-observations.py` keeps the `eval` rows already in the manifest; do not delete the manifest before rerunning it.
 - Fine-tuning needs a backbone learning rate near 0.00005; 0.001 destroys the pretrained weights and scores at chance.
+- Layout (issue 163): the `.identify` panel on both identify pages is a container (`identify`) and lays itself out by its own width, not the device: two columns from 40rem, two columns of results from 58rem. Text inside it stays at 75ch.
+- The crop step is a modal `<dialog>` that fills the screen. `fit()` in `src/client/identify-photo.js` tries the controls below and beside the photo and keeps whichever leaves the photo larger, so a 4:3 photo on a 4:3 screen gets the controls beside it rather than the full width. The square is kept in the photo's own pixels and survives rotation. Edges and corners drag (`cropZone`, `resizeCrop`); the square stays square because the model's input is square.
+- `test/identify-layout-browser.test.js` checks the layout, the crop view and edge dragging in Chromium and WebKit at phone and iPad mini sizes. It replaces the recogniser with a stand-in, so it needs no model file. Not checked: a real iPad or phone, where touch and the browser's toolbars differ from Playwright.
 - `test/identify-photo-browser.test.js` runs the real model in Chromium and WebKit. It is skipped unless the model file is on disk (`IDENTIFY_PHOTO_MODEL`).
 - Not measured: any phone. The likely / possible cut-offs in `src/client/identify-photo.js` come from the held-out iNaturalist photos; reset them when phone photos have been scored.
 

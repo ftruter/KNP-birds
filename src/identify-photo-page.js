@@ -24,7 +24,7 @@ const TIPS =
   'Get as close as you safely can and keep the bird sharp. A bird that is small in the photo gives poor results, so crop closely.'
 const NO_JS_NOTE = 'Recognition needs JavaScript, which is off or blocked.'
 const CROP_HELP =
-  'Drag the square over the bird. Drag its corner, or pinch, to resize it. With a keyboard, focus the photo, move the square with the arrow keys and resize it with plus and minus. You can also skip this and identify the whole photo.'
+  'Drag inside the square to move it over the bird. Drag an edge or a corner to resize it, or pinch; it stays square. With a keyboard, focus the photo, move the square with the arrow keys and resize it with plus and minus. You can also skip this and identify the whole photo.'
 
 /** Families with enough test photos to judge, and under this share of species in the top three. */
 const WEAK_PHOTOS = 12
@@ -109,27 +109,33 @@ export const renderIdentifyPhotoHtml = ({ origin, doc }) => {
 <progress id="identify-progress" class="identify-progress" max="1" value="0" aria-label="Progress" hidden></progress>
 <div id="identify-capture" hidden>
 <h2>Take or choose a photo</h2>
-<div class="identify-actions">
+<div class="identify-choices">
 <label class="identify-file" for="identify-camera">Take a photo <input type="file" id="identify-camera" accept="image/*" capture="environment"></label>
-<label class="identify-file" for="identify-file">Choose a photo <input type="file" id="identify-file" accept="image/*"></label>
-</div>
+<label class="identify-file identify-second" for="identify-file">Choose a photo <input type="file" id="identify-file" accept="image/*"></label>
 <p>${escapeHtml(TIPS)}</p>
 </div>
-<div id="identify-cropper" hidden>
-<h2 id="identify-crop-heading" tabindex="-1">Crop to the bird</h2>
-<p id="identify-crop-help">${escapeHtml(CROP_HELP)}</p>
+</div>
+<dialog id="identify-cropper" class="identify-cropper" aria-labelledby="identify-crop-heading">
+<div id="identify-stage" class="identify-stage">
 <canvas id="identify-crop" class="identify-crop" tabindex="0" role="application" aria-label="Your photo, with a square that marks the part to identify" aria-describedby="identify-crop-help"></canvas>
+</div>
+<div class="identify-crop-panel">
+<h2 id="identify-crop-heading" tabindex="-1">Crop to the bird</h2>
 <div class="identify-actions">
 <button type="button" id="identify-run" class="identify-button">Identify this bird</button>
+<button type="button" id="identify-cancel" class="identify-button identify-quiet">Cancel</button>
 <button type="button" id="identify-smaller" class="identify-button identify-quiet">Smaller square</button>
 <button type="button" id="identify-larger" class="identify-button identify-quiet">Larger square</button>
 <button type="button" id="identify-whole" class="identify-button identify-quiet">Whole photo</button>
 </div>
+<p id="identify-crop-help">${escapeHtml(CROP_HELP)}</p>
 </div>
+</dialog>
 <section id="identify-results" aria-labelledby="identify-results-heading" hidden>
 <h2 id="identify-results-heading" tabindex="-1">Results</h2>
 <p id="identify-summary"></p>
 <p id="identify-close" hidden></p>
+<p><button type="button" id="identify-recrop" class="identify-button identify-quiet">Change the crop</button></p>
 <ol id="identify-list" class="identify-list"></ol>
 </section>
 </section>
