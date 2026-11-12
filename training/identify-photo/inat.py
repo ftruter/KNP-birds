@@ -10,7 +10,9 @@ API2 = "https://api.inaturalist.org/v2"
 KRUGER = 69020  # Kruger National Park, ZA
 SOUTH_AFRICA = 6986
 # Licences the issue allows for training. No ND, no all-rights-reserved.
-LICENCES = "cc0,cc-by,cc-by-sa,cc-by-nc,cc-by-nc-sa"
+# KNP_LICENCES and KNP_MANIFEST select another training set, for example the permissive-only
+# comparison: KNP_LICENCES=cc0,cc-by KNP_MANIFEST=manifest-permissive.csv.gz
+LICENCES = os.environ.get("KNP_LICENCES", "cc0,cc-by,cc-by-sa,cc-by-nc,cc-by-nc-sa")
 _last = [0.0]
 _lock = threading.Lock()
 
@@ -47,7 +49,8 @@ def species():
     return out
 
 
-MANIFEST = os.path.join(HERE, "manifest.csv.gz")
+BASE_MANIFEST = os.path.join(HERE, "manifest.csv.gz")  # owns the fixed evaluation photos
+MANIFEST = os.path.join(HERE, os.environ.get("KNP_MANIFEST", "manifest.csv.gz"))
 COLUMNS = ["slug", "split", "tier", "observation", "photo", "ext", "observer", "licence", "observedOn", "attribution"]
 
 
@@ -59,10 +62,10 @@ def write_manifest(rows):
         w.writerows(rows)
 
 
-def manifest():
+def manifest(path=None):
     """Every chosen photo: species, split, where it was taken, iNaturalist ids, observer and licence."""
     import csv, gzip
-    with gzip.open(MANIFEST, "rt", newline="", encoding="utf-8") as f:
+    with gzip.open(path or MANIFEST, "rt", newline="", encoding="utf-8") as f:
         rows = list(csv.DictReader(f))
     for r in rows:
         r["url"] = f'https://inaturalist-open-data.s3.amazonaws.com/photos/{r["photo"]}/medium.{r["ext"]}'
