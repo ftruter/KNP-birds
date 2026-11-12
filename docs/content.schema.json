@@ -720,6 +720,15 @@
             "note": { "type": "string", "minLength": 1 }
           }
         },
+        "published": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["url", "note"],
+          "properties": {
+            "url": { "type": "string", "minLength": 1 },
+            "note": { "type": "string", "minLength": 1 }
+          }
+        },
         "runtime": {
           "type": "object",
           "additionalProperties": false,
@@ -769,7 +778,10 @@
             "bytes": { "type": "integer", "minimum": 1 },
             "sha256": { "type": "string", "pattern": "^[a-f0-9]{64}$" },
             "trainingPhotos": { "type": "integer", "minimum": 0 },
-            "trainingLicences": { "type": "object", "additionalProperties": { "type": "integer", "minimum": 0 } }
+            "trainingLicences": { "type": "object", "additionalProperties": { "type": "integer", "minimum": 0 } },
+            "licence": { "type": "string", "minLength": 1 },
+            "licenceUrl": { "type": ["string", "null"], "minLength": 1 },
+            "huggingFace": { "type": "string", "pattern": "^https://huggingface\\.co/" }
           }
         },
         "counts": {

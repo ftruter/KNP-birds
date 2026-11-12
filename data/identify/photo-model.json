@@ -7,6 +7,22 @@
   "bytes": 9799040,
   "sha256": "18dab93441cc19e3b9b6747b2e278900cb095ac45a1c7fd0099febdefadb1cd3"
  },
+ "original": {
+  "file": "photo-model.safetensors",
+  "bytes": 36581316,
+  "sha256": "f95f4421bfdd6cbb62101bad78cb5d37f369e27c03caa11859c39e62efd962a9",
+  "trainedAtSize": 256,
+  "mean": [
+   0.485,
+   0.456,
+   0.406
+  ],
+  "std": [
+   0.229,
+   0.224,
+   0.225
+  ]
+ },
  "training": {
   "photos": 180892,
   "licences": {

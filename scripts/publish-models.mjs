@@ -11,6 +11,19 @@
  *   node scripts/publish-models.mjs --only photo     (or --only sound)
  *   node scripts/publish-models.mjs --model path/to/audio-model-fp16.tflite
  *   node scripts/publish-models.mjs --photo-model path/to/photo-model.tflite
+ *   node scripts/publish-models.mjs --only photo --no-hf    (R2 only)
+ *   node scripts/publish-models.mjs --hf-only               (Hugging Face only)
+ *
+ * The photo model is also published on Hugging Face, for people who want to
+ * build on it (issue 158; see scripts/huggingface.mjs for what goes there).
+ * The site never reads from Hugging Face. Everything for both places is read
+ * and checked first; then R2 is uploaded, then Hugging Face. If Hugging Face
+ * fails, R2 is already complete and the site has its model: rerun with
+ * --hf-only. Hugging Face needs more than R2 does: the PyTorch weights
+ * (--photo-weights, default data/models/photo-model.safetensors) and the test
+ * photos (--eval-photos, default training/identify-photo/photos/eval), and
+ * the `hf` command signed in. --hf-out <folder> keeps the staged repository
+ * for a look, and works with --dry-run. --local never touches Hugging Face.
  *
  * The photo model is not in the repository either. training/identify-photo
  * builds it and puts it in data/models/photo-model.tflite (see its README).
@@ -27,12 +40,23 @@
  * inside the free allowance; check with the owner if that ever changes.
  */
 import { createHash } from 'node:crypto'
-import { mkdtemp, readFile, rm, writeFile } from 'node:fs/promises'
+import { mkdir, mkdtemp, readFile, rm, writeFile } from 'node:fs/promises'
 import { tmpdir } from 'node:os'
 import path from 'node:path'
 import { fileURLToPath } from 'node:url'
 import { build } from 'esbuild'
-import { MODEL_ASSETS, MODEL_PREFIX, PHOTO_MODEL } from '../src/identify.js'
+import {
+  HUGGING_FACE_URL,
+  MODEL_ASSETS,
+  MODEL_PREFIX,
+  PHOTO_MODEL,
+  mebibytes,
+} from '../src/identify.js'
+import {
+  huggingFaceFiles,
+  uploadHuggingFace,
+  writeStaging,
+} from './huggingface.mjs'
 import { runWrangler } from './publish-kv.mjs'
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..')
@@ -143,18 +167,37 @@ export const photoModelFiles = async (modelPath = DEFAULT_PHOTO_MODEL) => {
 export const publishModels = async ({
   modelPath,
   photoModelPath,
+  photoWeightsPath,
+  evalPhotosDir,
   only = null,
   local = false,
   dryRun = false,
+  huggingFace = true,
+  huggingFaceOnly = false,
+  huggingFaceOut = null,
   run = runWrangler,
+  read = { sound: modelFiles, photo: photoModelFiles },
+  stage = huggingFaceFiles,
+  upload = uploadHuggingFace,
   log = console.log,
 } = {}) => {
   if (only && only !== 'sound' && only !== 'photo')
     throw new Error('--only takes sound or photo')
-  const files = [
-    ...(only === 'photo' ? [] : await modelFiles(modelPath)),
-    ...(only === 'sound' ? [] : await photoModelFiles(photoModelPath)),
-  ]
+  if (huggingFaceOnly && (only === 'sound' || local || !huggingFace))
+    throw new Error(
+      '--hf-only publishes the photo model to Hugging Face: it cannot be combined with --only sound, --local or --no-hf',
+    )
+  const files = huggingFaceOnly
+    ? []
+    : [
+        ...(only === 'photo' ? [] : await read.sound(modelPath)),
+        ...(only === 'sound' ? [] : await read.photo(photoModelPath)),
+      ]
+  // Read and check the Hugging Face copy before anything is uploaded anywhere.
+  const hub =
+    huggingFace && !local && only !== 'sound'
+      ? await stage({ photoModelPath, photoWeightsPath, evalPhotosDir })
+      : null
   const scratch = dryRun
     ? null
     : await mkdtemp(path.join(tmpdir(), 'knp-models-'))
@@ -181,7 +224,53 @@ export const publishModels = async ({
   } finally {
     if (scratch) await rm(scratch, { recursive: true, force: true })
   }
-  return files.map(({ key, bytes }) => ({ key, bytes: bytes.length }))
+  const uploaded = files.map(({ key, bytes }) => ({ key, bytes: bytes.length }))
+  if (!hub) return uploaded
+  // R2 is complete from here on. Nothing below can leave the site without its model.
+  try {
+    await publishHuggingFace(hub, { dryRun, out: huggingFaceOut, upload, log })
+  } catch (error) {
+    throw new Error(
+      `${huggingFaceOnly ? '' : 'R2 is done and the site has its model. '}Hugging Face failed: ${error instanceof Error ? error.message : error}. Fix it and rerun with --hf-only.`,
+      { cause: error },
+    )
+  }
+  return uploaded
+}
+
+/** The staged repository, summarised: the test photos as one line, every other file by name. */
+export const describeStaging = (hub) => {
+  const photos = hub.files.filter((file) =>
+    file.path.startsWith('evaluation/photos/'),
+  )
+  const sum = (list) => list.reduce((total, file) => total + file.bytes, 0)
+  return [
+    ...hub.files
+      .filter((file) => !photos.includes(file))
+      .map((file) => `${file.path} (${file.bytes} bytes)`),
+    `evaluation/photos/ (${photos.length} photos, ${mebibytes(sum(photos))} MiB)`,
+    `${hub.files.length} files, ${mebibytes(sum(hub.files))} MiB, weights under ${hub.licence.name}, tag ${hub.version}`,
+  ]
+}
+
+const publishHuggingFace = async (hub, { dryRun, out, upload, log }) => {
+  const verb = dryRun ? 'would upload' : 'uploading'
+  log(`${verb} to ${HUGGING_FACE_URL}:`)
+  for (const line of describeStaging(hub)) log(`  ${line}`)
+  if (dryRun && !out) return
+  const dir = out ?? (await mkdtemp(path.join(tmpdir(), 'knp-hf-')))
+  try {
+    if (out) {
+      await rm(out, { recursive: true, force: true })
+      await mkdir(out, { recursive: true })
+    }
+    await writeStaging(dir, hub.files)
+    if (out) log(`staged in ${out}`)
+    if (!dryRun)
+      await upload({ repo: hub.repo, version: hub.version, dir, log })
+  } finally {
+    if (!out) await rm(dir, { recursive: true, force: true })
+  }
 }
 
 if (
@@ -197,6 +286,11 @@ if (
   publishModels({
     modelPath: file('--model'),
     photoModelPath: file('--photo-model'),
+    photoWeightsPath: file('--photo-weights'),
+    evalPhotosDir: file('--eval-photos'),
+    huggingFace: !args.includes('--no-hf'),
+    huggingFaceOnly: args.includes('--hf-only'),
+    huggingFaceOut: file('--hf-out') ?? null,
     only: value('--only') ?? null,
     local: args.includes('--local'),
     dryRun: args.includes('--dry-run'),

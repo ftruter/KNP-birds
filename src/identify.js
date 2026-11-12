@@ -311,6 +311,16 @@ export const TRAINING_MANIFEST_URL =
 export const MODEL_CARD_URL =
   'https://github.com/ftruter/KNP-birds/blob/main/docs/identify-photo-model.md'
 
+/**
+ * The published copy for people who want to build on the model (issue 158):
+ * weights, model card, training code and test photographs. The site never
+ * fetches from it; R2 is the site's source. Each revision is tagged with the
+ * model version, so the version a page names can be traced to its weights.
+ */
+export const HUGGING_FACE_REPO = 'FTruter/knp-birds-photo'
+export const HUGGING_FACE_URL = `https://huggingface.co/${HUGGING_FACE_REPO}`
+export const PHOTO_MODEL_HUB_URL = `${HUGGING_FACE_URL}/tree/${PHOTO_MODEL.version}`
+
 export const PHOTO_MODEL_CREDIT = {
   name: 'KNP Birds photo model',
   authors: 'the KNP Birds project',
@@ -319,14 +329,18 @@ export const PHOTO_MODEL_CREDIT = {
   citation:
     'Qin, D., Leichner, C., Delakis, M., et al. (2024). MobileNetV4: Universal Models for the Mobile Ecosystem. ECCV 2024. Training photographs: iNaturalist contributors, each credited in the training manifest.',
   url: MODEL_CARD_URL,
-  licence: 'non-commercial use only',
-  licenceUrl: null,
+  licence: 'CC BY-NC-SA 4.0',
+  licenceUrl: 'https://creativecommons.org/licenses/by-nc-sa/4.0/',
   usedFor:
-    'Recognising a bird from a photo on the Identify by photo page. The model runs on the visitor’s device. Most of its training photographs are licensed for non-commercial use only, so the model is offered on the same terms.',
+    'Recognising a bird from a photo on the Identify by photo page. The model runs on the visitor’s device. Most of its training photographs are licensed for non-commercial use only and some are share-alike, so the model is offered on the same terms.',
   page: { href: IDENTIFY_PHOTO_PATH, label: 'Identify by photo' },
   manifest: {
     url: TRAINING_MANIFEST_URL,
     note: 'Every training and test photograph, with its iNaturalist observation, photographer and licence',
+  },
+  published: {
+    url: PHOTO_MODEL_HUB_URL,
+    note: 'The weights, model card, training code and test photographs on Hugging Face, for building on the model',
   },
   runtime: { ...MODEL_CREDIT.runtime },
 }
@@ -400,6 +414,9 @@ export const deriveIdentifyPhoto = (speciesDocs, familyDocs, model) => {
       sha256: model.file.sha256,
       trainingPhotos: model.training.photos,
       trainingLicences: model.training.licences,
+      licence: PHOTO_MODEL_CREDIT.licence,
+      licenceUrl: PHOTO_MODEL_CREDIT.licenceUrl,
+      huggingFace: PHOTO_MODEL_HUB_URL,
     },
     counts: {
       species: speciesDocs.length,

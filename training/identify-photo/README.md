@@ -1,9 +1,11 @@
 # Training the photo model for /identify/photo (issue 151)
 
 This folder builds the model behind `/identify/photo`. None of it is part of the Worker bundle. It runs on one
-machine with Python and writes two things the site uses:
+machine with Python and writes three things:
 
 - `data/models/photo-model.tflite`, the model file (gitignored; `pnpm run models:publish` uploads it to R2);
+- `data/models/photo-model.safetensors`, the PyTorch weights it was converted from (gitignored; the same
+  command publishes them on Hugging Face, so that others can fine-tune further);
 - `data/identify/photo-model.json`, the class list in model order, the photo counts and the test results
   (committed; `pnpm run seed` turns it into `data/index/identify-photo.json`).
 
@@ -12,6 +14,30 @@ The model card is `docs/identify-photo-model.md`. The Phase 0 spike that led her
 Photos, model files, the API cache and the Python environments are gitignored. `manifest.csv.gz` is committed:
 it lists every training and test photo with its iNaturalist observation and photo id, observer, licence and
 attribution line. `/credits` links to it.
+
+The code and this README are released under the BSD Zero Clause License (`LICENSE` in this folder): use them
+for anything, with no attribution needed. That does not cover `manifest.csv.gz`, which lists other people's
+photographs, or the weights; the model card says which licence the weights carry and why.
+
+A copy of this folder is published with the model at https://huggingface.co/FTruter/knp-birds-photo
+(issue 158). The scripts read the species list from `data/species/` two folders up, so run them from a clone of
+https://github.com/ftruter/KNP-birds, not from the Hugging Face copy alone.
+
+## What it costs
+
+Nothing here costs money: no paid service, no cloud compute and no API key. What it does take, measured on
+the machine that built `knp-photo-1-mnv4m-288-int8` (an Apple M5 Max with 128 GiB of memory, training on its
+GPU through PyTorch MPS):
+
+| Step | Time | Disk |
+| --- | --- | --- |
+| 1 and 2: iNaturalist API, one request a second | under an hour | 324 MiB of cached answers |
+| 3: 186,781 photos, 32 connections | not timed | 27 GiB of training photos, 576 MiB of test photos |
+| 4: ten passes over 180,892 photos at 256 pixels | 89 minutes | 35 MiB of weights |
+| 5 to 9: scoring, export and analysis | minutes | 61 MiB for the three exported files |
+
+Without a GPU, step 4 falls back to the CPU and takes many times longer; that was not measured. On another
+GPU, change the `dev = ...` line in `train.py`.
 
 ## Setting up
 
@@ -44,7 +70,10 @@ Then, in the repository root:
    `src/identify.js`. `test/identify-photo.test.js` fails if they differ from `photo-model.json`.
 2. `node scripts/seed.mjs --write` and `pnpm test`. With the model on disk, `test/identify-photo-browser.test.js`
    runs it in Chromium and WebKit on a test photo.
-3. `pnpm run models:publish -- --only photo`, before deploying a Worker that names the new version.
+3. `pnpm run models:publish -- --only photo`, before deploying a Worker that names the new version. It uploads
+   the model to R2 and then publishes it on Hugging Face (weights, model card, this folder, the test photos),
+   tagged with the version. Try it first with `--dry-run`; `--no-hf` uploads to R2 only. Hugging Face needs
+   the `hf` command (`uv tool install huggingface_hub`, then `hf auth login`) and `photos/eval/` on disk.
 
 Steps 1 and 2 call the iNaturalist API at one request a second and take under an hour; answers are cached in
 `cache/`. Nothing here costs money.
@@ -81,4 +110,4 @@ model would still return it: retrain first.
 | `train.py` | Fine-tunes the pretrained model. The backbone learning rate must stay near 0.00005 |
 | `export.py` | Converts to LiteRT, with scaling and softmax inside the file, in three weight formats |
 | `score-tflite.py`, `score-sizes.py`, `analyse.py` | Test-set scores of the exported files, of other input sizes, and the per-family tables |
-| `describe.py` | Hands the chosen file and its numbers to the site |
+| `describe.py` | Hands the chosen file, the PyTorch weights it came from and its numbers to the site |

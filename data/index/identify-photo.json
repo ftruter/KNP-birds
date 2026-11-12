@@ -15,7 +15,10 @@
       "cc-by-nc-sa": 1766,
       "cc-by-sa": 3615,
       "cc0": 3670
-    }
+    },
+    "licence": "CC BY-NC-SA 4.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+    "huggingFace": "https://huggingface.co/FTruter/knp-birds-photo/tree/knp-photo-1-mnv4m-288-int8"
   },
   "counts": {
     "species": 493,

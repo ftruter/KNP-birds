@@ -7,6 +7,7 @@ import {
   PHOTO_MODEL,
   PHOTO_MODEL_CREDIT,
   PHOTO_PRIVACY_NOTE,
+  PHOTO_MODEL_HUB_URL,
   TRAINING_MANIFEST_URL,
   modelBase,
   photoDownloadBytes,
@@ -158,7 +159,7 @@ ${weak.map((family) => `<li><a href="/family/${escapeHtml(family.slug)}">${escap
 }
 ${group(`${total.notInModel} species that are not in the model`, list(doc?.notInModel), speciesLink)}
 ${group(`${total.covered} species it can recognise`, list(doc?.covered), (item) => `${speciesLink(item)} (${photos(item.trainingPhotos)})`)}
-<p>The model is the ${escapeHtml(PHOTO_MODEL_CREDIT.name)}, trained for this guide on ${Number(doc?.model?.trainingPhotos ?? 0).toLocaleString('en')} openly licensed iNaturalist photographs. See the <a href="${escapeHtml(MODEL_CARD_URL)}">model card</a>, the <a href="${escapeHtml(TRAINING_MANIFEST_URL)}">list of training photographs</a> and the <a href="/credits">credits</a>.</p>`
+<p>The model is the ${escapeHtml(PHOTO_MODEL_CREDIT.name)}, trained for this guide on ${Number(doc?.model?.trainingPhotos ?? 0).toLocaleString('en')} openly licensed iNaturalist photographs. See the <a href="${escapeHtml(MODEL_CARD_URL)}">model card</a>, the <a href="${escapeHtml(TRAINING_MANIFEST_URL)}">list of training photographs</a> and the <a href="/credits">credits</a>. To build on the model, its weights, training code and test photographs are <a href="${escapeHtml(doc?.model?.huggingFace ?? PHOTO_MODEL_HUB_URL)}">published on Hugging Face</a> under ${escapeHtml(PHOTO_MODEL_CREDIT.licence)}; this page never downloads from there.</p>`
   return layout({
     title: 'Identify by photo · KNP Birds',
     description:
@@ -197,6 +198,7 @@ This is an interactive page for people. It needs a browser with JavaScript and W
 - The visitor crops the photo to a square around the bird. The square is shrunk to ${PHOTO_MODEL.inputSize} × ${PHOTO_MODEL.inputSize} pixels and scored once. The model returns one score per species; a family scores the sum of its species.
 - Only species in this guide can be returned.
 - [Model card](${MODEL_CARD_URL}) · [Training photographs, with photographer and licence](${TRAINING_MANIFEST_URL})
+- The weights, the PyTorch weights they were converted from, the training code and the test photographs are [published on Hugging Face](${doc?.model?.huggingFace ?? PHOTO_MODEL_HUB_URL}) under ${PHOTO_MODEL_CREDIT.licence}, at a revision tagged with the model version. The site itself never downloads from there.
 
 ## How to read the results
 
