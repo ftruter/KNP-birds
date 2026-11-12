@@ -3,7 +3,7 @@
  * KV is written first so the new version renders the data it advertises.
  * The build fails if either step fails.
  *
- *   npm run deploy
+ *   pnpm run deploy
  */
 import path from 'node:path'
 import { fileURLToPath } from 'node:url'

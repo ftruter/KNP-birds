@@ -23,7 +23,7 @@
  * anything is uploaded, so the wrong model cannot be published by mistake.
  *
  * This has to run once per version, before a Worker that names that version
- * is deployed. `npm run deploy` does not do it. Storing about 55 MiB in R2 is
+ * is deployed. `pnpm run deploy` does not do it. Storing about 55 MiB in R2 is
  * inside the free allowance; check with the owner if that ever changes.
  */
 import { createHash } from 'node:crypto'

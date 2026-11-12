@@ -18,13 +18,13 @@ Open reference to the birds of Kruger National Park (and bordering Marloth Park)
 - Each page is served three ways from the same KV key: no extension is HTML, `.md` is Markdown for agents, `.json` is the stored document. Same rule for species, families, indexes, credits, and home.
 - Machines also get `/.well-known/ard.json` and a public read-only MCP `search` tool at `POST /mcp`.
 - JavaScript is first-party progressive enhancement only (`src/client`). CSP includes `script-src 'self'`. The site must still work with JavaScript off.
-- Workers Builds on `main`: `npm ci` then `npm run deploy` (uploads `data/` to KV, then deploys the Worker with `DATA_VERSION` and `DATA_PUBLISHED_AT`). Node 22+.
+- Workers Builds on `main`: `pnpm install --frozen-lockfile` then `pnpm run deploy` (uploads `data/` to KV, then deploys the Worker with `DATA_VERSION` and `DATA_PUBLISHED_AT`). Node 22+.
 
 ## Identify by sound (issue 150)
 
 `/identify/sound` records or opens a bird call and ranks the likely species with BirdNET V2.4, run on the visitor's device by LiteRT.js (WebAssembly, in a Web Worker). Background and measurements: `docs/identify-sound-spike.md`.
 
-- **The model is not deployed by `npm run deploy`.** Run `npm run models:publish` once per version (see `scripts/publish-models.mjs`). It uploads the model and runtime to R2 under `models/<version>/`; the Worker serves them at `/models/<version>/<file>`, immutable. Until that has run, the page loads but the download step fails with a message. A new model or runtime needs a new `version` in `src/identify.js`.
+- **The model is not deployed by `pnpm run deploy`.** Run `pnpm run models:publish` once per version (see `scripts/publish-models.mjs`). It uploads the model and runtime to R2 under `models/<version>/`; the Worker serves them at `/models/<version>/<file>`, immutable. Until that has run, the page loads but the download step fails with a message. A new model or runtime needs a new `version` in `src/identify.js`.
 - Coverage is `data/identify/birdnet-labels.json`, written by `scripts/map-birdnet-labels.mjs` from the hand-checked `data/identify/birdnet-synonyms.json`. `scripts/seed.mjs` turns it into `data/index/identify-sound.json` and fails if a species is in none of its three groups. Never map a species by guessing: 123 are not in the model and 8 have only a broader label, and the page lists both.
 - Only this page (and its worker script) allows the microphone, WebAssembly and same-origin `fetch`. Every other response keeps the site-wide headers. `test/identify.test.js` checks both.
 - The likely / possible / unlikely cut-offs and the out-of-season weight in `src/client/identify.js` come from reference clips, not field recordings. Reset them when phone recordings have been scored (`spike/identify-sound/score.py --field`).
@@ -36,7 +36,7 @@ Open reference to the birds of Kruger National Park (and bordering Marloth Park)
 `/identify/photo` takes a photo from the camera or a file, lets the visitor put a square on the bird, and ranks the likely species with our own model, run on the visitor's device by the LiteRT.js runtime the sound page already serves. Model card: `docs/identify-photo-model.md`. Training scripts: `training/identify-photo/` (its README has the steps). Phase 0 spike report: `docs/identify-photo-spike.md`; its scripts and results: `spike/identify-photo/`.
 
 - Model `knp-photo-1-mnv4m-288-int8`: MobileNetV4 fine-tuned on 180,892 openly licensed iNaturalist photos, 9.3 MB. On 5,889 held-out photos: right species in the top three 92.2% (target 80%), right family 92.4% (target 90%).
-- **The model is not deployed by `npm run deploy`.** Run `npm run models:publish -- --only photo` once per version, before deploying a Worker that names it. Without `--only`, the command needs the sound model file on disk too. The model file is `data/models/photo-model.tflite` (gitignored); it exists only on the machine that trained it until it is published.
+- **The model is not deployed by `pnpm run deploy`.** Run `pnpm run models:publish -- --only photo` once per version, before deploying a Worker that names it. Without `--only`, the command needs the sound model file on disk too. The model file is `data/models/photo-model.tflite` (gitignored); it exists only on the machine that trained it until it is published.
 - `PHOTO_MODEL` in `src/identify.js` must match `data/identify/photo-model.json`, which `training/identify-photo/describe.py` writes. `test/identify-photo.test.js` checks this.
 - Most training photos are CC BY-NC, so `/credits` offers the model for non-commercial use only and links to the manifest of every photo (`training/identify-photo/manifest.csv.gz`).
 - The page keeps the site-wide permissions policy (no camera or microphone permission: the camera button is a file input) and adds only WebAssembly, the worker and same-origin `fetch` to the CSP. The photo is drawn on a canvas, so `blob:` is not allowed.
@@ -57,7 +57,7 @@ Open reference to the birds of Kruger National Park (and bordering Marloth Park)
 | `data/index/` | `species.json`, `families.json`, `credits.json` — generated by `scripts/seed.mjs`, not edited by hand |
 | `data/vocab/colours.json` | Controlled colour names used in field marks |
 | `data/audio/recordings.json` | Chosen xeno-canto recording and grade, merged onto `calls` at render time |
-| `data/audio/report.json` | Last `npm run audio` run log |
+| `data/audio/report.json` | Last `pnpm run audio` run log |
 | `data/identify/` | BirdNET label map for `/identify/sound` and its hand-checked synonym table; `photo-model.json` for `/identify/photo` |
 | `docs/schema.md`, `docs/content.schema.json` | Document shapes |
 | `docs/species-sources.md`, `docs/families-sources.md`, `docs/population-sources.md`, `docs/audio.md` | How lists, estimates and recordings were sourced |
@@ -83,7 +83,7 @@ Do not invent missing values. Record gaps in `research.note`. Grep the data rath
 - Omitted residency `status`: species files with no `status` field. Do not fill `status` from Kemp 2001 unless the owner explicitly asks. Kemp `RB`/`VB`/`NB` codes are already on `population.kemp` where a row exists.
 - `research.needsReview` flags uneven confidence, not unpublished stubs.
 
-**Cape Vulture cleaned audio is pending upload.** `npm run audio` built a cleaned mp3 under `data/audio/files/` (gitignored) because the best file is grade C, then failed to upload it to R2 (`CLOUDFLARE_API_TOKEN` missing). `report.json` still has `cleaned: 0`. The owner can rerun `npm run audio` with a bucket-scoped token. Do not claim a filter on the page until `hosted` is set.
+**Cape Vulture cleaned audio is pending upload.** `pnpm run audio` built a cleaned mp3 under `data/audio/files/` (gitignored) because the best file is grade C, then failed to upload it to R2 (`CLOUDFLARE_API_TOKEN` missing). `report.json` still has `cleaned: 0`. The owner can rerun `pnpm run audio` with a bucket-scoped token. Do not claim a filter on the page until `hosted` is set.
 
 ## Data conventions and media rules
 
@@ -111,10 +111,10 @@ Media licences that may be shown: CC0, CC BY, CC BY-SA, CC BY-NC, and the SA var
 ## Checks (run all four before a PR)
 
 ```sh
-npm test
-npm run lint
-npm run kv:dry-run
-npm run check
+pnpm test
+pnpm run lint
+pnpm run kv:dry-run
+pnpm run check
 ```
 
 `kv:dry-run` refreshes derived files under `data/` and prints keys and sizes; it does not touch the remote namespace. `check` is `wrangler deploy --dry-run`.

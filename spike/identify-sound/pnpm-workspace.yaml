@@ -1,0 +1,6 @@
+# This spike is its own project, so installing here leaves the site lockfile alone.
+packages:
+  - '.'
+allowBuilds:
+  onnxruntime-node: true
+  protobufjs: false

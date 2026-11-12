@@ -4,12 +4,12 @@
     .venv/bin/python describe.py mnv4m-2 int8 knp-photo-1-mnv4m-288-int8
 
 Copies models/<run>-<kind>.tflite to data/models/photo-model.tflite (gitignored; published to
-R2 by `npm run models:publish`) and writes data/identify/photo-model.json: the class list in
+R2 by `pnpm run models:publish`) and writes data/identify/photo-model.json: the class list in
 model order, how many photos each species was trained and tested on, and the test results the
 page quotes. Run score-tflite.py first, so the numbers are those of the exported file itself.
 
 Then copy the printed `version`, `bytes` and `sha256` into PHOTO_MODEL in src/identify.js and run
-`npm run seed`. A test fails if the two disagree."""
+`pnpm run seed`. A test fails if the two disagree."""
 import collections, hashlib, json, os, shutil, sys
 import numpy as np
 from common import rows, report, SLUGS, FAMILY, FAMILIES, family_matrix

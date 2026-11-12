@@ -11,7 +11,7 @@ uv venv --python 3.12 .venv
 uv pip install --python .venv/bin/python torch torchvision timm pillow numpy open_clip_torch birder transformers
 uv venv --python 3.12 .venv-export        # the converter pins its own PyTorch, so it gets its own environment
 uv pip install --python .venv-export/bin/python litert-torch timm pillow
-npm install                               # LiteRT.js and Playwright; npm, so the site's pnpm lockfile is not touched
+pnpm install                               # LiteRT.js and Playwright; this folder has its own pnpm workspace file and lockfile
 export SSL_CERT_FILE=$(.venv/bin/python -m certifi)   # the python.org build has no certificate bundle
 ```
 
@@ -58,5 +58,5 @@ the sound spike found iOS Safari 25 to 40 times slower from it than over HTTPS.
 The bench page needs two things that are not in the repo:
 
 - `bench/vendor/litert.mjs`, a single-file bundle of LiteRT.js:
-  `npx esbuild node_modules/@litertjs/core/dist/index.js --bundle --format=esm --outfile=bench/vendor/litert.mjs`
+  `pnpm exec esbuild node_modules/@litertjs/core/dist/index.js --bundle --format=esm --outfile=bench/vendor/litert.mjs`
 - the files from steps 8 and 9 in `models/`.

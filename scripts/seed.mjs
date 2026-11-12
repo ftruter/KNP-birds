@@ -2,13 +2,13 @@
  * Derived fields and the KV payload for data/.
  *
  *   node scripts/seed.mjs --write
- *   npm run kv:dry-run
- *   npm run deploy
+ *   pnpm run kv:dry-run
+ *   pnpm run deploy
  *
  * --write refreshes derived fields in family and index documents from the
  * species files, then the script prints bulk-put JSON. Without --write it
  * prints the files as they are. Derived fields are not edited by hand.
- * `npm run deploy` always derives first and uploads the remote namespace.
+ * `pnpm run deploy` always derives first and uploads the remote namespace.
  * A family index population is 0 when no mature-individual estimate is known.
  * A species index population stays null in that case, including when the
  * species is counted in another unit. iconicSpecies is empty when no species
