@@ -44,6 +44,7 @@ import {
 } from './catalog.js'
 import { agentUrls } from './head.js'
 import { clientSrc } from './client.js'
+import { ICON_LINKS } from './icon.js'
 import { familyTableHtml, speciesTableHtml } from './lists.js'
 import { alternates, SEARCH_MAX, searchSuffix } from './route.js'
 import { sitemapEntries } from './sitemap.js'
@@ -875,6 +876,7 @@ ${noindex ? '<meta name="robots" content="noindex">\n' : ''}<link rel="canonical
 <link rel="alternate" type="text/markdown" href="${escapeHtml(alts.md)}" title="Markdown">
 <link rel="alternate" type="application/json" href="${escapeHtml(alts.json)}" title="JSON">
 ${ARD_LINK}
+${ICON_LINKS}
 <link rel="stylesheet" href="/style.css">
 <script type="module" defer src="${clientSrc}"></script>
 ${scripts.map((src) => `<script type="module" defer src="${escapeHtml(src)}"></script>\n`).join('')}</head>

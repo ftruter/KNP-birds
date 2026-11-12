@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <!-- Master drawing for the site icon. scripts/build-icons.mjs reads the
+       "bird" and "letters" groups and writes every size into src/icons.js.
+       Green and gold are the site header colours (src/style.js). -->
+  <rect id="tile" width="512" height="512" rx="96" fill="#28602a"/>
+  <g id="bird" fill="#F6C64D">
+    <!-- A capital B read as a bird facing right: the upper bowl is the head,
+         the lower bowl the body, the stem the back, with a tail, beak and legs. -->
+    <path d="M168 76H258A54 54 0 0 1 300 164A68 68 0 0 1 276 300H104L168 222Z"/>
+    <path d="M304 108L360 128L308 150Z"/>
+    <path d="M224 296h14v38h-14zM264 296h14v38h-14z"/>
+    <circle cx="258" cy="128" r="13" fill="#28602a"/>
+    <path d="M212 210H272A24 24 0 0 1 272 258H212Z" fill="#28602a"/>
+  </g>
+  <g id="letters" fill="none" stroke="#F6C64D" stroke-width="26" clip-path="url(#band)">
+    <clipPath id="band"><rect x="0" y="334" width="512" height="108"/></clipPath>
+    <path d="M112 320V456M186 320L138 375L192 456"/>
+    <path d="M225 456V334L295 442V320"/>
+    <path d="M343 456V347H378A27 27 0 0 1 378 401H343"/>
+  </g>
+</svg>

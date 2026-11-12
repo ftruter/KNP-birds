@@ -113,6 +113,16 @@ The Cache API (`caches.default`) is separate. It is not partitioned by Worker ve
 
 KV reads can also keep a previous value for up to 60 seconds (the default `cacheTtl`). For 70 seconds after `DATA_PUBLISHED_AT`, responses are `no-store`, so a stale read is not frozen into the edge cache. Browsers still keep a normal response for `max-age` (five minutes on pages) once caching resumes.
 
+## Site icon
+
+The drawing is [`icons/icon.svg`](icons/icon.svg): a capital B drawn as a bird, perched on "KNP". After changing it, run:
+
+```bash
+pnpm icons
+```
+
+This needs `rsvg-convert` (librsvg) and rewrites `src/icons.generated.js`, which holds every size the Worker serves: `favicon.svg`, `favicon.ico`, `apple-touch-icon.png` and the 192 and 512 px PNGs. Browser tabs get the bird alone, because the lettering is unreadable at 16 px. The name under the icon on a phone's home screen is "Birds of KNP" (`SHORT_NAME` in `src/head.js`).
+
 ## Coding style
 
 The Worker, seed script, and tests run on current stable V8. Write modern JavaScript.

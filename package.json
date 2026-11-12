@@ -8,6 +8,7 @@
     "test": "NODE_OPTIONS='--import ./test/register-raw-client.mjs --experimental-vm-modules' node --test",
     "lint": "eslint . && prettier --check \"**/*.{js,mjs}\"",
     "format": "prettier --write \"**/*.{js,mjs}\"",
+    "icons": "node scripts/build-icons.mjs",
     "seed": "node scripts/seed.mjs",
     "models:download": "node scripts/prepare-audio-recognizer.mjs",
     "kv:dry-run": "node scripts/publish-kv.mjs --dry-run",

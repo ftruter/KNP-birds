@@ -1,6 +1,21 @@
 export const ARD_LINK =
   '<link rel="ard" type="application/json" href="/.well-known/ard.json">'
 
+/** The name under the icon on a phone's home screen. The page title is too long for it. */
+export const SHORT_NAME = 'Birds of KNP'
+
+/**
+ * The .ico is for browsers that do not take an SVG icon. `sizes` on it stops
+ * browsers that do from preferring it.
+ */
+export const iconLinks = (
+  version,
+) => `<meta name="application-name" content="${SHORT_NAME}">
+<meta name="apple-mobile-web-app-title" content="${SHORT_NAME}">
+<link rel="icon" href="/favicon.ico?v=${version}" sizes="32x32">
+<link rel="icon" href="/favicon.svg?v=${version}" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png?v=${version}">`
+
 const CANONICAL_ORIGIN = 'https://birds.truter.world'
 
 export const agentUrls = (origin) => {
