@@ -247,6 +247,11 @@ const identifyFromFile = async (browser, { keepsCache }) => {
       await page.locator('#identify-status').textContent(),
       /^Finished\. \d candidates? listed below\.$/,
     )
+    // A 10-second recording is more than one 3-second window.
+    assert.match(
+      await page.locator('#identify-timing').textContent(),
+      /^Recognised in \d+(\.\d)? m?s on this device: \d+ windows of 3 seconds, typically \d+(\.\d)? m?s each\. Runtime: (relaxed SIMD|compatibility) build\.$/,
+    )
 
     assert.deepEqual(problems, [])
     // Playwright's WebKit empties Cache Storage on every navigation, even

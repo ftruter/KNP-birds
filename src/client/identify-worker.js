@@ -9,8 +9,13 @@
 //               { type: 'analyse', samples, starts, columns }   (sound)
 //               { type: 'classify', pixels, size }              (photo)
 // Messages out: { type: 'progress', received, total }
-//               { type: 'ready' } | { type: 'result', scores, count }
+//               { type: 'ready' }
+//               { type: 'result', scores, count, timing }
 //               { type: 'error', message }
+//
+// `timing` is { runs, total, build }: the milliseconds each run of the model
+// took, their sum, and the runtime build in use ('relaxed-simd', 'baseline',
+// or null when it could not be told).
 //
 // `base` is the folder the model is in. `runtime` is the folder LiteRT.js is
 // in, when that is a different one: the photo page reuses the sound page's
@@ -20,6 +25,16 @@
 const WINDOW = 144000
 
 let infer = null
+// Which wasm build LiteRT.js chose, taken from the file it asked for.
+let build = null
+// The milliseconds each run of the model took, for the request in hand.
+let runs = []
+
+const timing = () => ({
+  runs,
+  total: runs.reduce((sum, ms) => sum + ms, 0),
+  build,
+})
 
 const openStore = async (name) => {
   try {
@@ -128,6 +143,8 @@ const cacheRuntimeFetches = (base, store, count, checks = {}) => {
     ).href
     if (!url.startsWith(base) || (init?.method ?? 'GET') !== 'GET')
       return network(input, init)
+    if (url.endsWith('.wasm'))
+      build = url.includes('_compat_') ? 'baseline' : 'relaxed-simd'
     const saved = store ? await store.match(url) : null
     const sha256 = checks[url]
     if (saved && !sha256) return saved
@@ -209,11 +226,15 @@ const load = async ({
   if (received > 0) count(total - received)
   const model = await loadAndCompile(bytes, { accelerator: 'wasm' })
   infer = async (values, shape) => {
+    // Timed from handing the values to the runtime until the scores are
+    // back in this worker's memory: what one recognition costs the device.
+    const started = performance.now()
     const input = new Tensor(values, shape)
     const output = await model.run(input)
     input.delete()
     const result = output[0].toTypedArray().slice()
     for (const tensor of output) tensor.delete()
+    runs.push(performance.now() - started)
     return result
   }
 }
@@ -258,13 +279,23 @@ self.addEventListener('message', async ({ data }) => {
       if (!infer) await load(data)
       self.postMessage({ type: 'ready' })
     } else if (data.type === 'analyse') {
+      runs = []
       const scores = await analyse(data)
-      self.postMessage({ type: 'result', scores, count: data.starts.length }, [
+      self.postMessage(
+        {
+          type: 'result',
+          scores,
+          count: data.starts.length,
+          timing: timing(),
+        },
+        [scores.buffer],
+      )
+    } else if (data.type === 'classify') {
+      runs = []
+      const scores = await classify(data)
+      self.postMessage({ type: 'result', scores, count: 1, timing: timing() }, [
         scores.buffer,
       ])
-    } else if (data.type === 'classify') {
-      const scores = await classify(data)
-      self.postMessage({ type: 'result', scores, count: 1 }, [scores.buffer])
     }
   } catch (error) {
     self.postMessage({

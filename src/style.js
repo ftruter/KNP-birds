@@ -1192,6 +1192,7 @@ audio {
 .identify p { max-inline-size: 75ch; }
 .identify-status { margin: 0 0 0.6rem; font-family: var(--sans); font-weight: 700; min-block-size: 1.5em; }
 .identify-progress { inline-size: 100%; block-size: 0.9rem; }
+.identify-timing { margin-block: 0.8rem 0; font-family: var(--sans); font-size: 0.85rem; color: var(--muted); }
 
 .identify-actions {
   display: flex;

@@ -441,3 +441,32 @@ test('the model credit is on the credits page and the page is in the sitemap', a
   const llms = await (await fetch('/llms.txt')).text()
   assert.match(llms, /\/identify\/sound\.json/)
 })
+
+test('the sound page says how long recognition took', () => {
+  assert.equal(client.timingText(undefined), '')
+  assert.equal(client.timingText({ runs: [], total: 0, build: null }), '')
+  assert.equal(
+    client.timingText({ runs: [83.6], total: 83.6, build: 'relaxed-simd' }),
+    'Recognised in 84 ms on this device: one window of 3 seconds. Runtime: relaxed SIMD build.',
+  )
+  // The typical window is the median, so a slow first one does not skew it.
+  assert.equal(
+    client.timingText({
+      runs: [900, 300, 310, 290],
+      total: 1800,
+      build: 'baseline',
+    }),
+    'Recognised in 1.8 s on this device: 4 windows of 3 seconds, typically 305 ms each. Runtime: compatibility build.',
+  )
+  // The build is left out when the worker could not tell which one loaded.
+  assert.equal(
+    client.timingText({ runs: [0.2, 0.2], total: 0.4, build: null }),
+    'Recognised in 1 ms on this device: 2 windows of 3 seconds, typically 1 ms each.',
+  )
+})
+
+test('the worker times each run and reports the runtime build', () => {
+  assert.match(workerSource, /runs\.push\(performance\.now\(\) - started\)/)
+  assert.match(workerSource, /timing: timing\(\)/)
+  assert.match(workerSource, /'baseline' : 'relaxed-simd'/)
+})

@@ -220,6 +220,28 @@ export const toPixels = (rgba) => {
 /** Bytes as mebibytes (1 MiB = 1,048,576 bytes) to one decimal place. */
 export const mebibytes = (bytes) => (bytes / 1048576).toFixed(1)
 
+const BUILD = {
+  'relaxed-simd': 'relaxed SIMD build',
+  baseline: 'compatibility build',
+}
+
+/** A time for reading: whole milliseconds under a second, then seconds. */
+export const duration = (ms) =>
+  ms < 1000
+    ? `${Math.max(1, Math.round(ms))} ms`
+    : `${(ms / 1000).toFixed(1)} s`
+
+/**
+ * How long the last recognition took, from the worker's `timing`. It is the
+ * time spent in the model; opening and cropping the photo are not in it.
+ * Empty when nothing was timed.
+ */
+export const timingText = (timing) => {
+  if (!timing?.runs?.length) return ''
+  const runtime = BUILD[timing.build]
+  return `Recognised in ${duration(timing.total)} on this device.${runtime ? ` Runtime: ${runtime}.` : ''}`
+}
+
 // ---------------------------------------------------------------------------
 // The page. Nothing below runs outside a browser.
 
@@ -694,7 +716,10 @@ const boot = async () => {
     return out
   }
 
-  const show = (result, yours) => {
+  const show = (result, yours, timing) => {
+    const text = timingText(timing)
+    part('timing').textContent = text
+    part('timing').hidden = !text
     const list = part('list')
     list.replaceChildren(
       ...result.candidates.map((item) =>
@@ -730,7 +755,7 @@ const boot = async () => {
       const pixels = toPixels(
         input.getContext('2d').getImageData(0, 0, inputSize, inputSize).data,
       )
-      const { scores } = await ask(
+      const { scores, timing } = await ask(
         { type: 'classify', pixels, size: inputSize },
         [pixels.buffer],
       )
@@ -744,6 +769,7 @@ const boot = async () => {
           small: cropped(THUMB),
           large: cropped(Math.min(Math.round(crop.size), ZOOM_SIDE)),
         },
+        timing,
       )
     } catch (error) {
       console.error(error)
