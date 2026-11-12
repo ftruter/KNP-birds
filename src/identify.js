@@ -67,6 +67,7 @@ export const MODEL_CREDIT = {
   licenceUrl: 'https://creativecommons.org/licenses/by-nc-sa/4.0/',
   usedFor:
     'Recognising a bird from a recording on the Identify by sound page. The model file is served unchanged and runs on the visitor’s device.',
+  page: { href: '/identify/sound', label: 'Identify by sound' },
   runtime: {
     name: 'LiteRT.js 2.6.0',
     url: 'https://github.com/google-ai-edge/LiteRT',
@@ -227,3 +228,140 @@ export const PRIVACY_NOTE =
 
 export const NO_JS_NOTE =
   'Recognition needs JavaScript, which is off or blocked.'
+
+// ---------------------------------------------------------------------------
+// Identify by photo (issue 151)
+
+export const IDENTIFY_PHOTO_PATH = '/identify/photo'
+export const IDENTIFY_PHOTO_KEY = 'index/identify-photo'
+
+/**
+ * The photo model: our own fine-tuned classifier, one output per species.
+ * It is built by training/identify-photo and described by
+ * data/identify/photo-model.json; a test fails if this block and that file
+ * disagree. It has its own version folder in R2 and runs on the LiteRT.js
+ * runtime the sound page already serves, so that is not uploaded twice.
+ */
+export const PHOTO_MODEL = {
+  version: 'knp-photo-1-mnv4m-288-int8',
+  file: 'photo-model.tflite',
+  inputSize: 288,
+  bytes: 9799040,
+  sha256: '18dab93441cc19e3b9b6747b2e278900cb095ac45a1c7fd0099febdefadb1cd3',
+}
+
+export const photoModelBase = `/${MODEL_PREFIX}/${PHOTO_MODEL.version}/`
+
+export const photoDownloadBytes =
+  downloadBytes - MODEL_ASSETS.model.bytes + PHOTO_MODEL.bytes
+export const photoDownloadMb = Math.round(photoDownloadBytes / 1e6)
+
+export const TRAINING_MANIFEST_URL =
+  'https://github.com/ftruter/KNP-birds/blob/main/training/identify-photo/manifest.csv.gz'
+export const MODEL_CARD_URL =
+  'https://github.com/ftruter/KNP-birds/blob/main/docs/identify-photo-model.md'
+
+export const PHOTO_MODEL_CREDIT = {
+  name: 'KNP Birds photo model',
+  authors: 'the KNP Birds project',
+  publisher:
+    'Fine-tuned from MobileNetV4-Conv-Medium (Qin et al., weights from the timm library by Ross Wightman, Apache-2.0, pretrained on ImageNet-12k) on research-grade iNaturalist photographs',
+  citation:
+    'Qin, D., Leichner, C., Delakis, M., et al. (2024). MobileNetV4: Universal Models for the Mobile Ecosystem. ECCV 2024. Training photographs: iNaturalist contributors, each credited in the training manifest.',
+  url: MODEL_CARD_URL,
+  licence: 'non-commercial use only',
+  licenceUrl: null,
+  usedFor:
+    'Recognising a bird from a photo on the Identify by photo page. The model runs on the visitor’s device. Most of its training photographs are licensed for non-commercial use only, so the model is offered on the same terms.',
+  page: { href: IDENTIFY_PHOTO_PATH, label: 'Identify by photo' },
+  manifest: {
+    url: TRAINING_MANIFEST_URL,
+    note: 'Every training and test photograph, with its iNaturalist observation, photographer and licence',
+  },
+  runtime: { ...MODEL_CREDIT.runtime },
+}
+
+const share = (value) =>
+  typeof value === 'number' && Number.isFinite(value) ? value : null
+
+/**
+ * The index/identify-photo document: every species the model can return,
+ * with its class number and what the result list needs, and the species it
+ * cannot. The class list in data/identify/photo-model.json is the only
+ * source of coverage. A species added to the guide after the model was
+ * trained is listed as not covered until the model is retrained.
+ */
+export const deriveIdentifyPhoto = (speciesDocs, familyDocs, model) => {
+  const families = new Map(familyDocs.map((family) => [family.slug, family]))
+  const bySlug = new Map(speciesDocs.map((species) => [species.slug, species]))
+  const unknown = model.classes.filter((slug) => !bySlug.has(slug))
+  if (unknown.length)
+    throw new Error(
+      `The photo model names unknown species: ${unknown.join(', ')}. Retrain it, or restore the species.`,
+    )
+  if (new Set(model.classes).size !== model.classes.length)
+    throw new Error('The photo model lists a species twice')
+  const covered = model.classes
+    .map((slug, label) => {
+      const species = bySlug.get(slug)
+      return {
+        ...named(species),
+        family: species.family,
+        label,
+        monthsPresent: months(species),
+        image: thumbnail(species),
+        trainingPhotos: model.trainingPhotos[label],
+        evaluationPhotos: model.evaluationPhotos[label],
+      }
+    })
+    .sort(byEnglish)
+  const inModel = new Set(model.classes)
+  const notInModel = speciesDocs
+    .filter((species) => !inModel.has(species.slug))
+    .map(named)
+    .sort(byEnglish)
+  const usedFamilies = {}
+  for (const slug of [...new Set(covered.map((item) => item.family))].sort()) {
+    const family = families.get(slug)
+    const tested = model.evaluation.perFamily[slug]
+    usedFamilies[slug] = {
+      scientificName: family?.scientificName ?? slug,
+      en: text(family?.commonNames?.en) || family?.scientificName || slug,
+      evaluation: tested
+        ? {
+            photos: tested.photos,
+            top1: share(tested.top1),
+            top3: share(tested.top3),
+            family: share(tested.family),
+          }
+        : null,
+    }
+  }
+  const { perFamily: _perFamily, ...evaluation } = model.evaluation
+  return {
+    kind: 'identify-photo',
+    model: {
+      name: PHOTO_MODEL_CREDIT.name,
+      version: model.version,
+      baseModel: model.baseModel,
+      inputSize: model.inputSize,
+      classCount: model.classes.length,
+      bytes: model.file.bytes,
+      sha256: model.file.sha256,
+      trainingPhotos: model.training.photos,
+      trainingLicences: model.training.licences,
+    },
+    counts: {
+      species: speciesDocs.length,
+      covered: covered.length,
+      notInModel: notInModel.length,
+    },
+    evaluation,
+    families: usedFamilies,
+    covered,
+    notInModel,
+  }
+}
+
+export const PHOTO_PRIVACY_NOTE =
+  'Your photo is analysed on this device. It is not uploaded and it is not kept: it is gone when you leave or reload the page.'

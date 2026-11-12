@@ -2,6 +2,7 @@ import clientJs from './client/app.js'
 import identifyJs from './client/identify.js'
 import identifyWorkerJs from './client/identify-worker.js'
 import identifyCaptureJs from './client/identify-capture.js'
+import identifyPhotoJs from './client/identify-photo.js'
 
 export const clientVersion = (source) => {
   let hash = 2166136261
@@ -15,11 +16,12 @@ export const clientVersion = (source) => {
 export { clientJs }
 export const clientSrc = `/app.js?v=${clientVersion(clientJs)}`
 
-/** Path to source for the three /identify/sound scripts. */
+/** Path to source for the /identify/sound and /identify/photo scripts. */
 export const identifyScripts = {
   '/identify.js': identifyJs,
   '/identify-worker.js': identifyWorkerJs,
   '/identify-capture.js': identifyCaptureJs,
+  '/identify-photo.js': identifyPhotoJs,
 }
 
 export const identifySrc = (path) =>

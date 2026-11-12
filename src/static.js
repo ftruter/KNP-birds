@@ -33,6 +33,7 @@ The file extension selects the format. Page paths come straight from the KV keys
 | \`index/credits\` | ${origin}/credits |
 | (composed) | ${origin}/sitemap |
 | \`index/identify-sound\` | ${origin}/identify/sound |
+| \`index/identify-photo\` | ${origin}/identify/photo |
 
 The home page is also ${origin}/.md and ${origin}/.json. Slugs are the lowercase scientific name with hyphens, for example \`coracias-caudatus\`.
 
@@ -97,6 +98,10 @@ Images carry \`view\`, \`age\`, \`sex\`, \`season\`, \`source\`, \`author\`, \`l
 ## Identify by sound
 
 ${origin}/identify/sound is an interactive page for people: it records or opens a bird call and names the most likely species, using the BirdNET V2.4 model on the visitor's own device. Agents cannot run it. ${origin}/identify/sound.md describes it, and ${origin}/identify/sound.json lists \`covered\` (species the model can return, with their model label numbers), \`broaderLabelOnly\` and \`notInModel\` (species it can never return). That page alone allows the microphone, WebAssembly and same-origin fetches; \`/models/<version>/<file>\` serves the model and its runtime.
+
+## Identify by photo
+
+${origin}/identify/photo is an interactive page for people: the visitor takes or chooses a photo, crops it to the bird, and the page names the most likely species or family, using a model trained for this guide that runs on the visitor's own device. Agents cannot run it. ${origin}/identify/photo.md describes it, and ${origin}/identify/photo.json lists \`covered\` (every species the model can return, with its class number and how many photos it was trained on), \`notInModel\`, and \`evaluation\` and \`families\` (how often it was right on photos it had not seen, overall and by family). That page allows WebAssembly and same-origin fetches, like the sound page, but not the microphone or the camera.
 
 ## Start here
 

@@ -416,7 +416,7 @@ test('channels are mixed down and chunks are joined', () => {
 test('the model credit is on the credits page and the page is in the sitemap', async () => {
   const fetch = await site()
   const credits = await (await fetch('/credits')).text()
-  assert.match(credits, /<h2>Sound recognition model<\/h2>/)
+  assert.match(credits, /<h2>Recognition models<\/h2>/)
   assert.match(credits, /BirdNET GLOBAL 6K V2\.4/)
   assert.match(credits, /CC BY-NC-SA 4\.0/)
   assert.match(
@@ -424,7 +424,7 @@ test('the model credit is on the credits page and the page is in the sitemap', a
     /Kahl, S\., Wood, C\. M\., Eibl, M\., &amp; Klinck, H\./,
   )
   const markdown = await (await fetch('/credits.md')).text()
-  assert.match(markdown, /## Sound recognition model/)
+  assert.match(markdown, /## Recognition models/)
   const stored = await (await fetch('/credits.json')).json()
   assert.equal(stored.models[0].url, 'https://zenodo.org/records/15050749')
 

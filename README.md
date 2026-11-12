@@ -59,6 +59,7 @@ All content lives in a Cloudflare Workers KV namespace as JSON values:
 | `index/families`       | The list of all families and their species                                       |
 | `index/credits`        | Sources, taxonomy, media credits, and site credits for `/credits`                |
 | `index/identify-sound` | Which species the sound recogniser on `/identify/sound` can and cannot return    |
+| `index/identify-photo` | Which species the photo recogniser on `/identify/photo` can return, and its test results |
 
 Call recordings are chosen by `node scripts/process-recordings.mjs` and stored in `data/audio/recordings.json`. Pages merge that overlay onto the species document. See [docs/audio.md](docs/audio.md).
 
@@ -85,6 +86,8 @@ Workers Builds on `main` should use:
 KV is written before the Worker so the new version renders the data it advertises.
 
 `/identify/sound` also needs its model and runtime in the `knp-birds-images` bucket. That is a separate, one-off step per model version, not part of the build: `npm run models:publish` (see `scripts/publish-models.mjs`; `npm run models:dry-run` lists the files without a token). It needs a token that can write to that bucket. Until it has run, the page loads but cannot download the recogniser.
+
+`/identify/photo` works the same way with its own model, which this project trains itself: see [training/identify-photo/README.md](training/identify-photo/README.md) and the model card, [docs/identify-photo-model.md](docs/identify-photo-model.md). `npm run models:publish -- --only photo` uploads just that model. It reuses the sound page's runtime, so that must be in the bucket too.
 
 Check the upload locally, without a Cloudflare token:
 

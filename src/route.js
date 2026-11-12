@@ -2,11 +2,15 @@ const SLUG = /^[a-z0-9]+(?:-[a-z0-9]+)*$/
 
 export const SEARCH_PATH = '/search'
 
-/** Browser scripts for /identify/sound: the page, its worker, its worklet. */
+/**
+ * Browser scripts for /identify/sound (the page, its worklet) and
+ * /identify/photo (the page). Both pages use the same worker.
+ */
 export const IDENTIFY_SCRIPTS = [
   '/identify.js',
   '/identify-worker.js',
   '/identify-capture.js',
+  '/identify-photo.js',
 ]
 export const SEARCH_MAX = 200
 
@@ -109,6 +113,11 @@ export const parseUrl = (url) => {
     return {
       ...route('identify-sound', format, path),
       kvKey: 'index/identify-sound',
+    }
+  if (path === '/identify/photo')
+    return {
+      ...route('identify-photo', format, path),
+      kvKey: 'index/identify-photo',
     }
 
   const species = path.match(/^\/species\/([^/]+)$/)

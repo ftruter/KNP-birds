@@ -38,7 +38,12 @@
 import { readdir, readFile, writeFile } from 'node:fs/promises'
 import path from 'node:path'
 import { fileURLToPath } from 'node:url'
-import { MODEL_CREDIT, deriveIdentifySound } from '../src/identify.js'
+import {
+  MODEL_CREDIT,
+  PHOTO_MODEL_CREDIT,
+  deriveIdentifyPhoto,
+  deriveIdentifySound,
+} from '../src/identify.js'
 import { applyRecordingOverlay, recordingOverlay } from '../src/recordings.js'
 import { residencyCoverage } from '../src/seasons.js'
 
@@ -380,12 +385,20 @@ export const deriveCredits = (speciesDocs, overlay = null) => {
     taxonomy: { ...TAXONOMY },
     mediaNote: images === 0 && recordings === 0 ? NO_MEDIA_NOTE : null,
     species,
-    models: [{ ...MODEL_CREDIT, runtime: { ...MODEL_CREDIT.runtime } }],
+    models: [
+      { ...MODEL_CREDIT, runtime: { ...MODEL_CREDIT.runtime } },
+      { ...PHOTO_MODEL_CREDIT, runtime: { ...PHOTO_MODEL_CREDIT.runtime } },
+    ],
     site: { ...SITE },
   }
 }
 
-export const deriveAll = (speciesDocs, familyDocs, labelMap = null) => {
+export const deriveAll = (
+  speciesDocs,
+  familyDocs,
+  labelMap = null,
+  photoModel = null,
+) => {
   const familiesBySlug = new Map(
     familyDocs.map((family) => [family.slug, family]),
   )
@@ -415,6 +428,21 @@ export const deriveAll = (speciesDocs, familyDocs, labelMap = null) => {
           labelMap,
         )
       : null,
+    identifyPhoto: photoModel
+      ? deriveIdentifyPhoto(speciesDocs, families, photoModel)
+      : null,
+  }
+}
+
+/** What training/identify-photo/describe.py wrote, or null for a data folder that has none. */
+export const readPhotoModel = async (dataDir = path.join(root, 'data')) => {
+  try {
+    return JSON.parse(
+      await readFile(path.join(dataDir, 'identify/photo-model.json'), 'utf8'),
+    )
+  } catch (error) {
+    if (error.code === 'ENOENT') return null
+    throw error
   }
 }
 
@@ -447,7 +475,12 @@ export const readCatalog = async (dataDir = path.join(root, 'data')) => {
 
 export const writeDerived = async (dataDir = path.join(root, 'data')) => {
   const { species, families } = await readCatalog(dataDir)
-  const derived = deriveAll(species, families, await readLabelMap(dataDir))
+  const derived = deriveAll(
+    species,
+    families,
+    await readLabelMap(dataDir),
+    await readPhotoModel(dataDir),
+  )
   const writes = []
   for (const family of derived.families) {
     writes.push(
@@ -474,6 +507,13 @@ export const writeDerived = async (dataDir = path.join(root, 'data')) => {
       writeJson(
         path.join(dataDir, 'index', 'identify-sound.json'),
         derived.identifySound,
+      ),
+    )
+  if (derived.identifyPhoto)
+    writes.push(
+      writeJson(
+        path.join(dataDir, 'index', 'identify-photo.json'),
+        derived.identifyPhoto,
       ),
     )
   await Promise.all(writes)

@@ -22,3 +22,8 @@ spike/identify-photo/cache/
 spike/identify-photo/runs/
 spike/identify-photo/node_modules/
 spike/identify-photo/bench/vendor/
+training/identify-photo/models/
+training/identify-photo/.venv*/
+training/identify-photo/photos/
+training/identify-photo/cache/
+training/identify-photo/runs/

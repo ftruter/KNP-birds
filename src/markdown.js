@@ -623,16 +623,16 @@ ${mdModels(doc?.models)}${mdSite(doc?.site)}`,
 const mdModels = (models) =>
   listed(models).length === 0
     ? ''
-    : `## Sound recognition model
+    : `## Recognition models
 
 ${listed(models)
   .map(
     (model) =>
-      `**[${inlineText(model.name)}](${model.url})**, by ${inlineText(model.authors)}. ${inlineText(model.publisher)}. Licence: [${inlineText(model.licence)}](${model.licenceUrl}).
+      `**[${inlineText(model.name)}](${model.url})**, by ${inlineText(model.authors)}. ${inlineText(model.publisher)}. Licence: ${model.licenceUrl ? `[${inlineText(model.licence)}](${model.licenceUrl})` : inlineText(model.licence)}.
 
-${inlineText(model.usedFor)} See [Identify by sound](/identify/sound.md).
+${inlineText(model.usedFor)} See [${inlineText(model.page?.label ?? 'Identify by sound')}](${model.page?.href ?? '/identify/sound'}.md).
 
-${inlineText(model.citation)}${model.runtime ? `\n\nIt runs in the browser with [${inlineText(model.runtime.name)}](${model.runtime.url}) (${inlineText(model.runtime.licence)}).` : ''}`,
+${inlineText(model.citation)}${model.manifest ? `\n\n[${inlineText(model.manifest.note)}](${model.manifest.url}).` : ''}${model.runtime ? `\n\nIt runs in the browser with [${inlineText(model.runtime.name)}](${model.runtime.url}) (${inlineText(model.runtime.licence)}).` : ''}`,
   )
   .join('\n\n')}
 
