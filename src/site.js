@@ -1,6 +1,7 @@
 import {
   ASSET_CACHE,
   NOT_FOUND_CACHE,
+  OBJECT_CACHE,
   PAGE_CACHE,
   REDIRECT_CACHE,
 } from './cache.js'
@@ -33,7 +34,13 @@ import {
   objectExists,
   objectHttpResponse,
 } from './objects.js'
-import { jsonBody, pageResponse, redirectResponse } from './respond.js'
+import {
+  jsonBody,
+  objectResponse,
+  pageResponse,
+  redirectResponse,
+} from './respond.js'
+import { iconFiles } from './icon.js'
 import { clientJs, identifyScripts } from './client.js'
 import {
   identifySoundJson,
@@ -93,6 +100,15 @@ export const renderRoute = async (request, env, route) => {
         ASSET_CACHE,
         'script',
       )
+    case 'icon': {
+      const icon = iconFiles[route.pathname]
+      return objectResponse({
+        body: icon.body,
+        contentType: icon.contentType,
+        cache: OBJECT_CACHE,
+        size: icon.body.length,
+      })
+    }
     case 'identify-script':
       return pageResponse({
         body: identifyScripts[route.pathname],

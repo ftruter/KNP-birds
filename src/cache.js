@@ -1,5 +1,5 @@
 import { resolveLocale } from './numbers.js'
-import { SEARCH_PATH, searchQuery } from './route.js'
+import { ICON_PATHS, SEARCH_PATH, searchQuery } from './route.js'
 
 export const PAGE_CACHE =
   'public, max-age=300, s-maxage=3600, stale-while-revalidate=86400'
@@ -64,6 +64,7 @@ const formatsNumbers = (pathname) =>
   pathname !== '/llms.txt' &&
   pathname !== '/style.css' &&
   pathname !== '/app.js' &&
+  !ICON_PATHS.includes(pathname) &&
   pathname !== '/mcp/server-card'
 
 const isSearchPath = (path) =>
