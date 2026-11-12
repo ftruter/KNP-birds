@@ -27375,6 +27375,34 @@
       "licence": "CC BY-NC-SA 4.0",
       "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
       "usedFor": "Recognising a bird from a recording on the Identify by sound page. The model file is served unchanged and runs on the visitor’s device.",
+      "page": {
+        "href": "/identify/sound",
+        "label": "Identify by sound"
+      },
+      "runtime": {
+        "name": "LiteRT.js 2.6.0",
+        "url": "https://github.com/google-ai-edge/LiteRT",
+        "licence": "Apache-2.0",
+        "licenceUrl": "https://www.apache.org/licenses/LICENSE-2.0"
+      }
+    },
+    {
+      "name": "KNP Birds photo model",
+      "authors": "the KNP Birds project",
+      "publisher": "Fine-tuned from MobileNetV4-Conv-Medium (Qin et al., weights from the timm library by Ross Wightman, Apache-2.0, pretrained on ImageNet-12k) on research-grade iNaturalist photographs",
+      "citation": "Qin, D., Leichner, C., Delakis, M., et al. (2024). MobileNetV4: Universal Models for the Mobile Ecosystem. ECCV 2024. Training photographs: iNaturalist contributors, each credited in the training manifest.",
+      "url": "https://github.com/ftruter/KNP-birds/blob/main/docs/identify-photo-model.md",
+      "licence": "non-commercial use only",
+      "licenceUrl": null,
+      "usedFor": "Recognising a bird from a photo on the Identify by photo page. The model runs on the visitor’s device. Most of its training photographs are licensed for non-commercial use only, so the model is offered on the same terms.",
+      "page": {
+        "href": "/identify/photo",
+        "label": "Identify by photo"
+      },
+      "manifest": {
+        "url": "https://github.com/ftruter/KNP-birds/blob/main/training/identify-photo/manifest.csv.gz",
+        "note": "Every training and test photograph, with its iNaturalist observation, photographer and licence"
+      },
       "runtime": {
         "name": "LiteRT.js 2.6.0",
         "url": "https://github.com/google-ai-edge/LiteRT",

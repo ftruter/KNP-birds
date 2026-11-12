@@ -463,7 +463,15 @@ test('the home page counts the species and family indexes', async () => {
   const nav = html.match(/<ul class="nav-list">[\s\S]*?<\/ul>/)[0]
   assert.deepEqual(
     [...nav.matchAll(/>([^<]+)<\/a>/g)].map((match) => match[1]),
-    ['Home', 'Families', 'Species', 'Identify', 'Colours', 'For agents'],
+    [
+      'Home',
+      'Families',
+      'Species',
+      'Identify by sound',
+      'Identify by photo',
+      'Colours',
+      'For agents',
+    ],
   )
   const sized = renderHomeHtml({
     origin: 'https://birds.truter.world',

@@ -8,7 +8,8 @@
     { "$ref": "#/$defs/index" },
     { "$ref": "#/$defs/colours" },
     { "$ref": "#/$defs/credits" },
-    { "$ref": "#/$defs/identifySound" }
+    { "$ref": "#/$defs/identifySound" },
+    { "$ref": "#/$defs/identifyPhoto" }
   ],
   "$defs": {
     "slug": {
@@ -664,12 +665,30 @@
           "minLength": 1
         },
         "licenceUrl": {
-          "type": "string",
+          "type": ["string", "null"],
           "minLength": 1
         },
         "usedFor": {
           "type": "string",
           "minLength": 1
+        },
+        "page": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["href", "label"],
+          "properties": {
+            "href": { "type": "string", "pattern": "^/" },
+            "label": { "type": "string", "minLength": 1 }
+          }
+        },
+        "manifest": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["url", "note"],
+          "properties": {
+            "url": { "type": "string", "minLength": 1 },
+            "note": { "type": "string", "minLength": 1 }
+          }
         },
         "runtime": {
           "type": "object",
@@ -696,6 +715,150 @@
             "licenceUrl": {
               "type": "string",
               "minLength": 1
+            }
+          }
+        }
+      }
+    },
+    "identifyPhoto": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["kind", "model", "counts", "evaluation", "families", "covered", "notInModel"],
+      "properties": {
+        "kind": { "const": "identify-photo" },
+        "model": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["name", "version", "baseModel", "inputSize", "classCount", "bytes", "sha256", "trainingPhotos", "trainingLicences"],
+          "properties": {
+            "name": { "type": "string", "minLength": 1 },
+            "version": { "type": "string", "minLength": 1 },
+            "baseModel": { "type": "string", "minLength": 1 },
+            "inputSize": { "type": "integer", "minimum": 1 },
+            "classCount": { "type": "integer", "minimum": 1 },
+            "bytes": { "type": "integer", "minimum": 1 },
+            "sha256": { "type": "string", "pattern": "^[a-f0-9]{64}$" },
+            "trainingPhotos": { "type": "integer", "minimum": 0 },
+            "trainingLicences": { "type": "object", "additionalProperties": { "type": "integer", "minimum": 0 } }
+          }
+        },
+        "counts": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["species", "covered", "notInModel"],
+          "properties": {
+            "species": { "type": "integer", "minimum": 0 },
+            "covered": { "type": "integer", "minimum": 0 },
+            "notInModel": { "type": "integer", "minimum": 0 }
+          }
+        },
+        "evaluation": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["photos", "species", "top1", "top3", "top5", "family", "top3MeanOverSpecies", "speciesScore", "familyScore", "familyWhenSpeciesUnsure", "neitherConfident"],
+          "properties": {
+            "photos": { "type": "integer", "minimum": 0 },
+            "species": { "type": "integer", "minimum": 0 },
+            "top1": { "type": ["number", "null"], "minimum": 0, "maximum": 1 },
+            "top3": { "type": ["number", "null"], "minimum": 0, "maximum": 1 },
+            "top5": { "type": ["number", "null"], "minimum": 0, "maximum": 1 },
+            "family": { "type": ["number", "null"], "minimum": 0, "maximum": 1 },
+            "top3MeanOverSpecies": { "type": ["number", "null"], "minimum": 0, "maximum": 1 },
+            "speciesScore": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": ["atLeast", "photos", "correct"],
+              "properties": {
+                "atLeast": { "type": "number" },
+                "photos": { "type": "integer", "minimum": 0 },
+                "correct": { "type": ["number", "null"], "minimum": 0, "maximum": 1 }
+              }
+            }
+          },
+            "familyScore": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": ["atLeast", "photos", "correct"],
+              "properties": {
+                "atLeast": { "type": "number" },
+                "photos": { "type": "integer", "minimum": 0 },
+                "correct": { "type": ["number", "null"], "minimum": 0, "maximum": 1 }
+              }
+            }
+          },
+            "familyWhenSpeciesUnsure": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": ["photos", "correct"],
+              "properties": { "photos": { "type": "integer", "minimum": 0 }, "correct": { "type": ["number", "null"], "minimum": 0, "maximum": 1 } }
+            },
+            "neitherConfident": { "type": "integer", "minimum": 0 }
+          }
+        },
+        "families": {
+          "type": "object",
+          "additionalProperties": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": ["scientificName", "en", "evaluation"],
+            "properties": {
+              "scientificName": { "type": "string", "minLength": 1 },
+              "en": { "type": "string", "minLength": 1 },
+              "evaluation": {
+                "type": ["object", "null"],
+                "additionalProperties": false,
+                "required": ["photos", "top1", "top3", "family"],
+                "properties": { "photos": { "type": "integer", "minimum": 0 }, "top1": { "type": ["number", "null"], "minimum": 0, "maximum": 1 }, "top3": { "type": ["number", "null"], "minimum": 0, "maximum": 1 }, "family": { "type": ["number", "null"], "minimum": 0, "maximum": 1 } }
+              }
+            }
+          }
+        },
+        "covered": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": ["slug", "scientificName", "en", "af", "family", "label", "monthsPresent", "image", "trainingPhotos", "evaluationPhotos"],
+            "properties": {
+              "slug": { "$ref": "#/$defs/slug" },
+              "scientificName": { "type": "string", "minLength": 1 },
+              "en": { "type": "string", "minLength": 1 },
+              "af": { "$ref": "#/$defs/textOrNull" },
+              "family": { "$ref": "#/$defs/slug" },
+              "label": { "type": "integer", "minimum": 0 },
+              "monthsPresent": {
+                "type": ["array", "null"],
+                "items": { "type": "integer", "minimum": 1, "maximum": 12 }
+              },
+              "image": {
+                "type": ["object", "null"],
+                "additionalProperties": false,
+                "required": ["src", "alt"],
+                "properties": {
+                  "src": { "type": "string", "minLength": 1 },
+                  "alt": { "type": "string" }
+                }
+              },
+              "trainingPhotos": { "type": "integer", "minimum": 0 },
+              "evaluationPhotos": { "type": "integer", "minimum": 0 }
+            }
+          }
+        },
+        "notInModel": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": ["slug", "scientificName", "en", "af"],
+            "properties": {
+              "slug": { "$ref": "#/$defs/slug" },
+              "scientificName": { "type": "string", "minLength": 1 },
+              "en": { "type": "string", "minLength": 1 },
+              "af": { "$ref": "#/$defs/textOrNull" }
             }
           }
         }

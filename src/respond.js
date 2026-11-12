@@ -14,10 +14,13 @@ const SECURITY = {
 const PAGE_CSP =
   "default-src 'none'; style-src 'self'; img-src 'self' https:; media-src 'self' https:; base-uri 'none'; form-action 'self'; frame-ancestors 'none'; script-src 'self'"
 /**
- * /identify/sound only. The recogniser is WebAssembly in a Web Worker and
- * fetches its model from this origin; the page records from the microphone.
- * The worker script is sent with the same policy, because a worker is
- * governed by the policy on its own response, not the page's.
+ * /identify/sound and /identify/photo only. The recogniser is WebAssembly in
+ * a Web Worker and fetches its model from this origin. The worker script is
+ * sent with the same policy, because a worker is governed by the policy on
+ * its own response, not the page's. Only the sound page may use the
+ * microphone. The photo page needs no camera permission: a file input opens
+ * the phone's own camera app, and the photo is drawn on a canvas, so no
+ * `blob:` image is allowed either.
  * PAGE_CSP ends with script-src, so the first addition extends that directive.
  */
 export const IDENTIFY_CSP = `${PAGE_CSP} 'wasm-unsafe-eval'; worker-src 'self'; connect-src 'self'`
@@ -38,11 +41,12 @@ export const pageResponse = ({
   vary,
   search = '',
   identify = false,
+  microphone = false,
 }) => {
   const headers = new Headers(SECURITY)
   headers.set('content-type', contentType)
   headers.set('content-security-policy', identify ? IDENTIFY_CSP : PAGE_CSP)
-  if (identify) headers.set('permissions-policy', IDENTIFY_PERMISSIONS)
+  if (microphone) headers.set('permissions-policy', IDENTIFY_PERMISSIONS)
   headers.set('cache-control', cache)
   headers.set('access-control-allow-origin', '*')
   if (cacheTag) headers.set('cache-tag', cacheTag)

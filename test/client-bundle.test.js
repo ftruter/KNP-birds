@@ -271,6 +271,7 @@ test(
     assert.deepEqual(Object.keys(site.scripts).sort(), [
       'app.js',
       'identify-capture.js',
+      'identify-photo.js',
       'identify-worker.js',
       'identify.js',
     ])

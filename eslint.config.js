@@ -20,6 +20,7 @@ export default [
       'dist/**',
       '.wrangler/**',
       'spike/**/.venv*/**',
+      'training/**',
     ],
   },
   {

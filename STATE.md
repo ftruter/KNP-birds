@@ -33,11 +33,17 @@ Open reference to the birds of Kruger National Park (and bordering Marloth Park)
 
 ## Identify by photo (issue 151)
 
-Phase 0 spike only; no page yet and nothing under `src/` changed. Report: `docs/identify-photo-spike.md`. Scripts and results: `spike/identify-photo/`.
+`/identify/photo` takes a photo from the camera or a file, lets the visitor put a square on the bird, and ranks the likely species with our own model, run on the visitor's device by the LiteRT.js runtime the sound page already serves. Model card: `docs/identify-photo-model.md`. Training scripts: `training/identify-photo/` (its README has the steps). Phase 0 spike report: `docs/identify-photo-spike.md`; its scripts and results: `spike/identify-photo/`.
 
-- No existing on-device model covers the list (best: 186 of 493 species). A MobileNetV4 fine-tuned on 72,305 openly licensed iNaturalist photos scores 87.3% species-in-top-three and 87.4% family on 5,889 held-out photos, in a 9.4 MB file that runs on the LiteRT.js runtime the sound page ships.
-- Waiting on the owner's decisions in section 7 of the report. Not measured: any phone.
+- Model `knp-photo-1-mnv4m-288-int8`: MobileNetV4 fine-tuned on 180,892 openly licensed iNaturalist photos, 9.3 MB. On 5,889 held-out photos: right species in the top three 92.2% (target 80%), right family 92.4% (target 90%).
+- **The model is not deployed by `npm run deploy`.** Run `npm run models:publish -- --only photo` once per version, before deploying a Worker that names it. Without `--only`, the command needs the sound model file on disk too. The model file is `data/models/photo-model.tflite` (gitignored); it exists only on the machine that trained it until it is published.
+- `PHOTO_MODEL` in `src/identify.js` must match `data/identify/photo-model.json`, which `training/identify-photo/describe.py` writes. `test/identify-photo.test.js` checks this.
+- Most training photos are CC BY-NC, so `/credits` offers the model for non-commercial use only and links to the manifest of every photo (`training/identify-photo/manifest.csv.gz`).
+- The page keeps the site-wide permissions policy (no camera or microphone permission: the camera button is a file input) and adds only WebAssembly, the worker and same-origin `fetch` to the CSP. The photo is drawn on a canvas, so `blob:` is not allowed.
+- The test photos are fixed. `fetch-observations.py` keeps the `eval` rows already in the manifest; do not delete the manifest before rerunning it.
 - Fine-tuning needs a backbone learning rate near 0.00005; 0.001 destroys the pretrained weights and scores at chance.
+- `test/identify-photo-browser.test.js` runs the real model in Chromium and WebKit. It is skipped unless the model file is on disk (`IDENTIFY_PHOTO_MODEL`).
+- Not measured: any phone. The likely / possible cut-offs in `src/client/identify-photo.js` come from the held-out iNaturalist photos; reset them when phone photos have been scored.
 
 ## Repo layout
 
@@ -49,7 +55,7 @@ Phase 0 spike only; no page yet and nothing under `src/` changed. Report: `docs/
 | `data/vocab/colours.json` | Controlled colour names used in field marks |
 | `data/audio/recordings.json` | Chosen xeno-canto recording and grade, merged onto `calls` at render time |
 | `data/audio/report.json` | Last `npm run audio` run log |
-| `data/identify/` | BirdNET label map for `/identify/sound` and its hand-checked synonym table |
+| `data/identify/` | BirdNET label map for `/identify/sound` and its hand-checked synonym table; `photo-model.json` for `/identify/photo` |
 | `docs/schema.md`, `docs/content.schema.json` | Document shapes |
 | `docs/species-sources.md`, `docs/families-sources.md`, `docs/population-sources.md`, `docs/audio.md` | How lists, estimates and recordings were sourced |
 | `scripts/` | `seed.mjs`, `publish-kv.mjs`, `deploy.mjs`, `process-recordings.mjs`, `map-birdnet-labels.mjs`, `publish-models.mjs` |

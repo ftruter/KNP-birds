@@ -56,7 +56,11 @@ test('format and KV key selection', () => {
     ['/identify-worker.js', 'identify-script', 'html', '/identify-worker.js'],
     ['/identify-capture.js', 'identify-script', 'html', '/identify-capture.js'],
     ['/identify', 'not-found', 'html', '/identify'],
-    ['/identify/photo', 'not-found', 'html', '/identify/photo'],
+    ['/identify/photo', 'identify-photo', 'html', '/identify/photo'],
+    ['/identify/photo.md', 'identify-photo', 'md', '/identify/photo'],
+    ['/identify/photo.json', 'identify-photo', 'json', '/identify/photo'],
+    ['/identify-photo.js', 'identify-script', 'html', '/identify-photo.js'],
+    ['/identify/video', 'not-found', 'html', '/identify/video'],
     ['/.well-known/ard.json', 'ard', 'json', '/.well-known/ard.json'],
     [
       '/.well-known/ai-catalog.json',

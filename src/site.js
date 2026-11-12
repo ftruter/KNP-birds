@@ -40,6 +40,11 @@ import {
   renderIdentifySoundHtml,
   renderIdentifySoundMarkdown,
 } from './identify-page.js'
+import {
+  identifyPhotoJson,
+  renderIdentifyPhotoHtml,
+  renderIdentifyPhotoMarkdown,
+} from './identify-photo-page.js'
 import { css } from './style.js'
 import { discoveryDocuments } from './ard.js'
 import { loadListCatalog, rowsForSpeciesIndex } from './catalog.js'
@@ -90,11 +95,14 @@ export const renderRoute = async (request, env, route) => {
         cache: ASSET_CACHE,
         cacheTag: 'script',
         identify: route.pathname === '/identify-worker.js',
+        microphone: route.pathname === '/identify-worker.js',
       })
     case 'model':
       return renderObject(env, route.objectKey, modelHttpResponse)
     case 'identify-sound':
-      return renderIdentifySound(env, route, origin)
+      return renderIdentify(env, route, origin, SOUND_PAGE)
+    case 'identify-photo':
+      return renderIdentify(env, route, origin, PHOTO_PAGE)
     case 'sitemap':
       return renderSitemap(env, origin)
     case 'sitemap-page':
@@ -447,32 +455,49 @@ const renderSitemapPage = async (env, route, view) => {
     : htmlPage(body, origin, '/sitemap', 'sitemap-page')
 }
 
-const renderIdentifySound = async (env, route, origin) => {
+const SOUND_PAGE = {
+  tag: 'index,identify-sound',
+  json: identifySoundJson,
+  markdown: renderIdentifySoundMarkdown,
+  html: renderIdentifySoundHtml,
+  microphone: true,
+}
+const PHOTO_PAGE = {
+  tag: 'index,identify-photo',
+  json: identifyPhotoJson,
+  markdown: renderIdentifyPhotoMarkdown,
+  html: renderIdentifyPhotoHtml,
+  microphone: false,
+}
+
+/** Only the HTML form runs the recogniser, so only it gets the wider policy. */
+const renderIdentify = async (env, route, origin, kind) => {
   const doc = await readDocument(env.BIRDS_KV, route.kvKey)
   if (!doc) return notFound(origin, route)
   const page = {
     cache: PAGE_CACHE,
     path: route.pathname,
     origin,
-    cacheTag: 'index,identify-sound',
+    cacheTag: kind.tag,
   }
   if (route.format === 'json')
     return pageResponse({
       ...page,
-      body: jsonBody(identifySoundJson(doc.data)),
+      body: jsonBody(kind.json(doc.data)),
       contentType: 'application/json; charset=utf-8',
     })
   if (route.format === 'md')
     return pageResponse({
       ...page,
-      body: renderIdentifySoundMarkdown({ origin, doc: doc.data }),
+      body: kind.markdown({ origin, doc: doc.data }),
       contentType: 'text/markdown; charset=utf-8',
     })
   return pageResponse({
     ...page,
-    body: renderIdentifySoundHtml({ origin, doc: doc.data }),
+    body: kind.html({ origin, doc: doc.data }),
     contentType: 'text/html; charset=utf-8',
     identify: true,
+    microphone: kind.microphone,
   })
 }
 

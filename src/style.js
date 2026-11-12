@@ -1104,6 +1104,35 @@ audio {
 .identify-verdict strong { text-decoration: underline; text-underline-offset: 0.2em; }
 .identify-call audio { display: block; inline-size: 100%; max-inline-size: 22rem; margin-block-start: 0.2rem; }
 
+.identify-crop {
+  display: block;
+  max-inline-size: 100%;
+  max-block-size: 70vh;
+  margin-block: 0.5rem 0.75rem;
+  border-radius: var(--radius);
+  background: var(--plate-bg);
+  touch-action: none;
+  cursor: move;
+}
+.identify-crop:focus-visible { outline: 3px solid var(--focus); outline-offset: 3px; }
+.identify-quiet { background: transparent; color: var(--heading); }
+
+.identify-photo-result { grid-template-columns: 1fr; }
+@media (min-width: 34rem) {
+  .identify-photo-result { grid-template-columns: auto 1fr; }
+}
+.identify-pair { display: flex; gap: 0.5rem; }
+.identify-pair figure { margin: 0; }
+.identify-pair img, .identify-pair canvas {
+  display: block;
+  inline-size: 6rem;
+  block-size: 6rem;
+  object-fit: cover;
+  border-radius: 0.5rem;
+  background: var(--plate-bg);
+}
+.identify-pair figcaption { font: 0.8rem var(--sans); text-align: center; }
+
 .identify-coverage { max-inline-size: 75ch; margin-block: 0.5rem; }
 .identify-coverage summary { cursor: pointer; font-family: var(--sans); font-weight: 700; padding-block: 0.4rem; }
 .identify-coverage ul { columns: 18rem; padding-inline-start: 1.2rem; }

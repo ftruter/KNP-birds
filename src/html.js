@@ -48,7 +48,8 @@ const NAV = [
   ['home', '/', 'Home'],
   ['families', '/families', 'Families'],
   ['species', '/species', 'Species'],
-  ['identify', '/identify/sound', 'Identify'],
+  ['identify', '/identify/sound', 'Identify by sound'],
+  ['identify-photo', '/identify/photo', 'Identify by photo'],
   ['colours', '/vocab/colours', 'Colours'],
   ['agents', '/llms.txt', 'For agents'],
 ]
@@ -90,6 +91,7 @@ ${agentHtml(origin)}
 </div>
 </div>
 <p class="identify-lead"><a href="/identify/sound">Identify a bird by its call</a>: record a few seconds, or choose a recording, and see the most likely Kruger species.</p>
+<p class="identify-lead"><a href="/identify/photo">Identify a bird from a photo</a>: take or choose a photo, crop it to the bird, and see the most likely species or family.</p>
 <div class="lead-split">
 <p>Age, season and sex are worked out by comparing structured field marks. A mark left blank is unknown, not a claim that the part has no colour. Flight and perched views use notes and photographs. Where nothing differs, the page says so.</p>
 <aside class="lead-note">
@@ -775,14 +777,15 @@ const linked = (label, url) => {
 const modelsHtml = (models) =>
   listed(models).length === 0
     ? ''
-    : `<h2>Sound recognition model</h2>
+    : `<h2>Recognition models</h2>
 ${listed(models)
   .map(
     (
       model,
     ) => `<p><strong>${linked(model.name, model.url)}</strong>, by ${escapeHtml(model.authors)}. ${escapeHtml(model.publisher)}. Licence: ${linked(model.licence, model.licenceUrl)}.</p>
-<p>${escapeHtml(model.usedFor)} See <a href="/identify/sound">Identify by sound</a>.</p>
+<p>${escapeHtml(model.usedFor)} See <a href="${escapeHtml(model.page?.href ?? '/identify/sound')}">${escapeHtml(model.page?.label ?? 'Identify by sound')}</a>.</p>
 <p>${escapeHtml(model.citation)}</p>
+${model.manifest ? `<p>${linked(model.manifest.note, model.manifest.url)}.</p>` : ''}
 ${model.runtime ? `<p>It runs in the browser with ${linked(model.runtime.name, model.runtime.url)} (${linked(model.runtime.licence, model.runtime.licenceUrl)}).</p>` : ''}`,
   )
   .join('\n')}`

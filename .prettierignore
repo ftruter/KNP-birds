@@ -4,3 +4,4 @@ dist
 package-lock.json
 data
 docs/content.schema.json
+training/
