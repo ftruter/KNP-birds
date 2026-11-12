@@ -3,6 +3,8 @@ import identifyJs from './client/identify.js'
 import identifyWorkerJs from './client/identify-worker.js'
 import identifyCaptureJs from './client/identify-capture.js'
 import identifyPhotoJs from './client/identify-photo.js'
+import offlineJs from './client/offline.js'
+import serviceWorkerJs from './client/sw.js'
 
 export const clientVersion = (source) => {
   let hash = 2166136261
@@ -13,8 +15,10 @@ export const clientVersion = (source) => {
   return (hash >>> 0).toString(16)
 }
 
-export { clientJs }
+export { clientJs, offlineJs, serviceWorkerJs }
 export const clientSrc = `/app.js?v=${clientVersion(clientJs)}`
+/** The installed web app's page script: the download panel and offline copies. */
+export const offlineSrc = `/offline.js?v=${clientVersion(offlineJs)}`
 
 /** Path to source for the /identify/sound and /identify/photo scripts. */
 export const identifyScripts = {

@@ -28,7 +28,7 @@ export const MODEL_ASSETS = {
     sha256: '5c64ba3ffab264ccbfafe784896392051a86be63b0cc507e7683db7df114546b',
   },
   runtime: [
-    { file: 'litert.mjs' },
+    { file: 'litert.mjs', bytes: 100876 },
     { file: 'litert_wasm_internal.js', bytes: 278825 },
     {
       file: 'litert_wasm_internal.wasm',
@@ -110,10 +110,11 @@ const caption = (image) => {
 }
 
 /**
- * The first photograph the page may show, as the species page would. `src` is
- * the full-size file, so the same picture is sharp when it is zoomed.
+ * The first photograph the species page may show, with the address it is
+ * shown from. A file that is not in the bucket is shown from its source,
+ * unless its licence forbids that.
  */
-const thumbnail = (species) => {
+export const displayImage = (species) => {
   for (const image of Array.isArray(species?.images) ? species.images : []) {
     const remote = safeHttpUrl(image?.fileUrl)
     const src =
@@ -122,25 +123,35 @@ const thumbnail = (species) => {
         : remote && !licenceForbidsDerivatives(image?.license)
           ? remote
           : null
-    if (src)
-      return {
-        src,
-        alt: imageAlt(species, image),
-        caption: caption(image),
-        credit: creditModel(image, 'image', {
-          src,
-          onSite: image.hosted === true,
-        }),
-      }
+    if (src) return { image, src }
   }
   return null
 }
 
 /**
- * One call to compare by ear: the best-graded recording the species page
- * is allowed to play. Ties keep the species file's order.
+ * The first photograph the page may show, as the species page would. `src` is
+ * the full-size file, so the same picture is sharp when it is zoomed.
  */
-const referenceCall = (species) => {
+const thumbnail = (species) => {
+  const shown = displayImage(species)
+  if (!shown) return null
+  const { image, src } = shown
+  return {
+    src,
+    alt: imageAlt(species, image),
+    caption: caption(image),
+    credit: creditModel(image, 'image', {
+      src,
+      onSite: image.hosted === true,
+    }),
+  }
+}
+
+/**
+ * The best-graded recording the species page is allowed to play, with the
+ * address it is played from. Ties keep the species file's order.
+ */
+export const bestRecording = (species) => {
   let best = null
   for (const call of Array.isArray(species?.calls) ? species.calls : []) {
     for (const recording of Array.isArray(call?.recordings)
@@ -159,6 +170,12 @@ const referenceCall = (species) => {
         best = { rank, src, type: text(call?.type), recording }
     }
   }
+  return best
+}
+
+/** One call to compare by ear: the best recording, with its credit. */
+const referenceCall = (species) => {
+  const best = bestRecording(species)
   return best
     ? {
         src: best.src,

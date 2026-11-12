@@ -327,6 +327,8 @@ test(
       'identify-photo.js',
       'identify-worker.js',
       'identify.js',
+      'offline.js',
+      'sw.js',
     ])
     for (const name of Object.keys(site.scripts)) {
       const served = await mf.dispatchFetch(`${origin}/${name}`)

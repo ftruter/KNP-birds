@@ -78,10 +78,12 @@ const MODEL_EXT = {
  * recogniser uses are served, each with a fixed media type: `application/wasm`
  * is required for streaming compilation, and nosniff needs a JavaScript type.
  */
-export const modelHttpResponse = async (bucket, key) => {
+export const modelHttpResponse = async (bucket, key, rangeHeader = null) => {
   const type = MODEL_EXT[key.split('.').pop()?.toLowerCase() ?? '']
   if (!type) return null
-  const object = await openObject(bucket, key)
+  const wanted = parseRange(rangeHeader)
+  const part = wanted ? await openPart(bucket, key, wanted) : null
+  const object = part ?? (await openObject(bucket, key))
   if (!object || !object.body) return null
   return objectResponse({
     body: object.body,
@@ -90,7 +92,44 @@ export const modelHttpResponse = async (bucket, key) => {
     etag: object.httpEtag || '',
     size: object.size,
     script: true,
+    ranges: true,
+    range: part ? sentRange(part, wanted) : null,
   })
+}
+
+/**
+ * `bytes=<first>-<last>` or `bytes=<first>-`, the only forms the download
+ * panel sends. Anything else is answered with the whole file, which HTTP
+ * allows.
+ */
+export const parseRange = (header) => {
+  const match = /^bytes=(\d+)-(\d*)$/.exec(String(header ?? '').trim())
+  if (!match) return null
+  const offset = Number(match[1])
+  const last = match[2] === '' ? null : Number(match[2])
+  if (!Number.isSafeInteger(offset)) return null
+  if (last != null && (!Number.isSafeInteger(last) || last < offset))
+    return null
+  return { offset, ...(last == null ? {} : { length: last - offset + 1 }) }
+}
+
+/** Part of an object, or null when the bucket cannot give that part. */
+const openPart = async (bucket, key, range) => {
+  if (!bucket || typeof bucket.get !== 'function') return null
+  try {
+    const object = await bucket.get(key, { range })
+    return object?.body && object.range ? object : null
+  } catch {
+    return null
+  }
+}
+
+const sentRange = (object, wanted) => {
+  const offset = object.range.offset ?? wanted.offset
+  return {
+    offset,
+    length: object.range.length ?? object.size - offset,
+  }
 }
 
 export { NOT_FOUND_CACHE }

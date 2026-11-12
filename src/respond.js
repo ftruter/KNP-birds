@@ -11,19 +11,33 @@ const SECURITY = {
   'content-language': 'en',
 }
 
+/**
+ * `manifest-src` is for the web app manifest. `connect-src` is for the
+ * installed web app's page script, which reads /offline.json and downloads
+ * what the visitor ticks, all from this origin. Registering the service
+ * worker needs no directive of its own: `worker-src` falls back to
+ * `script-src`.
+ */
 const PAGE_CSP =
-  "default-src 'none'; style-src 'self'; img-src 'self' https:; media-src 'self' https:; base-uri 'none'; form-action 'self'; frame-ancestors 'none'; script-src 'self'"
+  "default-src 'none'; style-src 'self'; img-src 'self' https:; media-src 'self' https:; manifest-src 'self'; connect-src 'self'; base-uri 'none'; form-action 'self'; frame-ancestors 'none'; script-src 'self'"
 /**
  * /identify/sound and /identify/photo only. The recogniser is WebAssembly in
- * a Web Worker and fetches its model from this origin. The worker script is
- * sent with the same policy, because a worker is governed by the policy on
- * its own response, not the page's. Only the sound page may use the
+ * a Web Worker. The worker script is sent with the same policy, because a
+ * worker is governed by the policy on its own response, not the page's. It
+ * fetches its model under `connect-src`. Only the sound page may use the
  * microphone. The photo page needs no camera permission: a file input opens
  * the phone's own camera app, and the photo is drawn on a canvas, so no
  * `blob:` image is allowed either.
  * PAGE_CSP ends with script-src, so the first addition extends that directive.
  */
-export const IDENTIFY_CSP = `${PAGE_CSP} 'wasm-unsafe-eval'; worker-src 'self'; connect-src 'self'`
+export const IDENTIFY_CSP = `${PAGE_CSP} 'wasm-unsafe-eval'; worker-src 'self'`
+
+/**
+ * /sw.js only. A service worker is governed by the policy on its own
+ * response. It fetches pages, scripts, styles, images, clips and models,
+ * and only ever from this origin.
+ */
+export const SERVICE_WORKER_CSP = "default-src 'self'"
 export const IDENTIFY_PERMISSIONS =
   'camera=(), microphone=(self), geolocation=()'
 
@@ -42,10 +56,14 @@ export const pageResponse = ({
   search = '',
   identify = false,
   microphone = false,
+  serviceWorker = false,
 }) => {
   const headers = new Headers(SECURITY)
   headers.set('content-type', contentType)
-  headers.set('content-security-policy', identify ? IDENTIFY_CSP : PAGE_CSP)
+  headers.set(
+    'content-security-policy',
+    serviceWorker ? SERVICE_WORKER_CSP : identify ? IDENTIFY_CSP : PAGE_CSP,
+  )
   if (microphone) headers.set('permissions-policy', IDENTIFY_PERMISSIONS)
   headers.set('cache-control', cache)
   headers.set('access-control-allow-origin', '*')
@@ -72,6 +90,8 @@ export const objectResponse = ({
   size,
   disposition,
   script = false,
+  range = null,
+  ranges = false,
 }) => {
   const headers = new Headers(SECURITY)
   headers.set('content-type', contentType)
@@ -82,9 +102,17 @@ export const objectResponse = ({
   headers.set('cache-control', cache)
   headers.set('access-control-allow-origin', '*')
   if (etag) headers.set('etag', etag)
-  if (Number.isFinite(size)) headers.set('content-length', String(size))
+  if (ranges) headers.set('accept-ranges', 'bytes')
+  if (range) {
+    // Part of the file: `size` is the whole file, `range` is what is sent.
+    headers.set(
+      'content-range',
+      `bytes ${range.offset}-${range.offset + range.length - 1}/${size}`,
+    )
+    headers.set('content-length', String(range.length))
+  } else if (Number.isFinite(size)) headers.set('content-length', String(size))
   if (disposition) headers.set('content-disposition', disposition)
-  return new Response(body, { status, headers })
+  return new Response(body, { status: range ? 206 : status, headers })
 }
 
 export const redirectResponse = (location, cache) => {

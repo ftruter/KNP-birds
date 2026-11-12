@@ -15,6 +15,8 @@
     "kv:publish": "node scripts/publish-kv.mjs",
     "models:dry-run": "node scripts/publish-models.mjs --dry-run",
     "models:publish": "node scripts/publish-models.mjs",
+    "media:dry-run": "node scripts/publish-media.mjs --dry-run",
+    "media:publish": "node scripts/publish-media.mjs",
     "deploy": "node scripts/deploy.mjs",
     "dev": "wrangler dev",
     "check": "wrangler deploy --dry-run --outdir dist",

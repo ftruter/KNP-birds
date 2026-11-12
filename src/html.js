@@ -43,8 +43,10 @@ import {
   rowsForSpeciesIndex,
 } from './catalog.js'
 import { agentUrls } from './head.js'
-import { clientSrc } from './client.js'
+import { clientSrc, offlineSrc } from './client.js'
 import { ICON_LINKS } from './icon.js'
+import { INSTALL_LINKS } from './offline-app.js'
+import { OFFLINE_PATH } from './offline.js'
 import { familyTableHtml, speciesTableHtml } from './lists.js'
 import { alternates, SEARCH_MAX, searchSuffix } from './route.js'
 import { sitemapEntries } from './sitemap.js'
@@ -64,6 +66,19 @@ const CAMERA_ICON =
 
 const MICROPHONE_ICON =
   '<svg class="home-action-icon" aria-hidden="true" focusable="false" viewBox="0 0 24 24" width="40" height="40"><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" d="M12 3.5a3 3 0 0 1 3 3v5a3 3 0 0 1-6 0v-5a3 3 0 0 1 3-3ZM5.75 11.25a6.25 6.25 0 0 0 12.5 0M12 17.5v3M8.75 20.5h6.5"/></svg>'
+
+/**
+ * The download panel. It stays hidden in a browser tab: the page script shows
+ * it only when the site was opened from the home screen, and fills in the
+ * options from /offline.json.
+ */
+const OFFLINE_PANEL = `<section id="offline-panel" class="offline-panel" aria-labelledby="offline-heading" data-manifest="${OFFLINE_PATH}.json" hidden>
+<h2 id="offline-heading">Use without a signal</h2>
+<p>Signal in much of the park is poor. Tick what to keep on this device. Untick it to remove it again.</p>
+<ul id="offline-rows" class="offline-rows"></ul>
+<p id="offline-pages" class="offline-note"></p>
+<p id="offline-status" class="visually-hidden" role="status" aria-live="polite"></p>
+</section>`
 
 const identifyActionHtml = (action, icon) =>
   `<li><a class="home-action" href="${action.href}">${icon}<span class="home-action-copy"><span class="home-action-title">${escapeHtml(action.name)}</span><span class="home-action-text">${escapeHtml(action.description)}</span></span></a></li>`
@@ -90,6 +105,7 @@ ${identifyActionHtml(sound, MICROPHONE_ICON)}
 ${HOME_BROWSE.map((item) => `<li><a href="${item.href}">${escapeHtml(item.name)}</a>${browseNote(item, counts)}</li>`).join('\n')}
 </ul>
 </nav>
+${OFFLINE_PANEL}
 <h2>About this guide</h2>
 <div class="hero">
 <div class="hero-copy">
@@ -877,8 +893,10 @@ ${noindex ? '<meta name="robots" content="noindex">\n' : ''}<link rel="canonical
 <link rel="alternate" type="application/json" href="${escapeHtml(alts.json)}" title="JSON">
 ${ARD_LINK}
 ${ICON_LINKS}
+${INSTALL_LINKS}
 <link rel="stylesheet" href="/style.css">
 <script type="module" defer src="${clientSrc}"></script>
+<script type="module" defer src="${offlineSrc}"></script>
 ${scripts.map((src) => `<script type="module" defer src="${escapeHtml(src)}"></script>\n`).join('')}</head>
 <body>
 <a class="skip" href="#main">Skip to content</a>

@@ -18,7 +18,7 @@ import {
 // What every other page sends today. Written out, not imported, so a change
 // to the shared policy fails here.
 const PAGE_CSP =
-  "default-src 'none'; style-src 'self'; img-src 'self' https:; media-src 'self' https:; base-uri 'none'; form-action 'self'; frame-ancestors 'none'; script-src 'self'"
+  "default-src 'none'; style-src 'self'; img-src 'self' https:; media-src 'self' https:; manifest-src 'self'; connect-src 'self'; base-uri 'none'; form-action 'self'; frame-ancestors 'none'; script-src 'self'"
 const PAGE_PERMISSIONS = 'camera=(), microphone=(), geolocation=()'
 
 const client = await import(
@@ -117,7 +117,7 @@ test('the microphone and wasm are allowed on this page only', async () => {
   assert.equal(page.headers.get('permissions-policy'), IDENTIFY_PERMISSIONS)
   assert.equal(
     IDENTIFY_CSP,
-    `${PAGE_CSP} 'wasm-unsafe-eval'; worker-src 'self'; connect-src 'self'`,
+    `${PAGE_CSP} 'wasm-unsafe-eval'; worker-src 'self'`,
   )
   assert.equal(
     IDENTIFY_PERMISSIONS,

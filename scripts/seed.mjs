@@ -34,6 +34,10 @@
  * index/identify-sound is derived from data/identify/birdnet-labels.json
  * (written by scripts/map-birdnet-labels.mjs) and the species files. It
  * lists the species the sound recogniser can return and those it cannot.
+ *
+ * index/offline is what a copy of the site saved to a phone's home screen
+ * can keep: the pages, and one photograph and one clip for each species,
+ * with sizes from data/media/mirror.json (scripts/publish-media.mjs).
  */
 import { readdir, readFile, writeFile } from 'node:fs/promises'
 import path from 'node:path'
@@ -44,6 +48,7 @@ import {
   deriveIdentifyPhoto,
   deriveIdentifySound,
 } from '../src/identify.js'
+import { deriveOffline } from '../src/offline.js'
 import { applyRecordingOverlay, recordingOverlay } from '../src/recordings.js'
 import { residencyCoverage } from '../src/seasons.js'
 
@@ -398,6 +403,7 @@ export const deriveAll = (
   familyDocs,
   labelMap = null,
   photoModel = null,
+  mirror = null,
 ) => {
   const familiesBySlug = new Map(
     familyDocs.map((family) => [family.slug, family]),
@@ -431,6 +437,28 @@ export const deriveAll = (
     identifyPhoto: photoModel
       ? deriveIdentifyPhoto(speciesDocs, families, photoModel)
       : null,
+    offline: deriveOffline(
+      speciesDocs.map((species) =>
+        applyRecordingOverlay(species, recordingOverlay),
+      ),
+      families,
+      mirror,
+    ),
+  }
+}
+
+/**
+ * What scripts/publish-media.mjs wrote: the photographs and clips it has
+ * copied into the bucket, with their sizes. Null until it has run.
+ */
+export const readMirror = async (dataDir = path.join(root, 'data')) => {
+  try {
+    return JSON.parse(
+      await readFile(path.join(dataDir, 'media/mirror.json'), 'utf8'),
+    )
+  } catch (error) {
+    if (error.code === 'ENOENT') return null
+    throw error
   }
 }
 
@@ -480,6 +508,7 @@ export const writeDerived = async (dataDir = path.join(root, 'data')) => {
     families,
     await readLabelMap(dataDir),
     await readPhotoModel(dataDir),
+    await readMirror(dataDir),
   )
   const writes = []
   for (const family of derived.families) {
@@ -516,6 +545,9 @@ export const writeDerived = async (dataDir = path.join(root, 'data')) => {
         derived.identifyPhoto,
       ),
     )
+  writes.push(
+    writeJson(path.join(dataDir, 'index', 'offline.json'), derived.offline),
+  )
   await Promise.all(writes)
   return derived
 }

@@ -4,6 +4,7 @@ import {
   OBJECT_CACHE,
   PAGE_CACHE,
   REDIRECT_CACHE,
+  cacheVersion,
 } from './cache.js'
 import {
   renderFamiliesIndexHtml,
@@ -41,7 +42,12 @@ import {
   redirectResponse,
 } from './respond.js'
 import { iconFiles } from './icon.js'
-import { clientJs, identifyScripts } from './client.js'
+import {
+  clientJs,
+  identifyScripts,
+  offlineJs,
+  serviceWorkerJs,
+} from './client.js'
 import {
   identifySoundJson,
   renderIdentifySoundHtml,
@@ -52,6 +58,7 @@ import {
   renderIdentifyPhotoHtml,
   renderIdentifyPhotoMarkdown,
 } from './identify-photo-page.js'
+import { offlineManifest, webManifest } from './offline-app.js'
 import { css } from './style.js'
 import { discoveryDocuments } from './ard.js'
 import { loadListCatalog, rowsForSpeciesIndex } from './catalog.js'
@@ -100,6 +107,30 @@ export const renderRoute = async (request, env, route) => {
         ASSET_CACHE,
         'script',
       )
+    case 'offline-script':
+      return textResponse(
+        offlineJs,
+        'text/javascript; charset=utf-8',
+        ASSET_CACHE,
+        'script',
+      )
+    case 'service-worker':
+      return pageResponse({
+        body: serviceWorkerJs,
+        contentType: 'text/javascript; charset=utf-8',
+        cache: ASSET_CACHE,
+        cacheTag: 'script',
+        serviceWorker: true,
+      })
+    case 'web-manifest':
+      return textResponse(
+        jsonBody(webManifest()),
+        'application/manifest+json; charset=utf-8',
+        ASSET_CACHE,
+        'web-manifest',
+      )
+    case 'offline':
+      return renderOffline(env, route)
     case 'icon': {
       const icon = iconFiles[route.pathname]
       return objectResponse({
@@ -119,7 +150,9 @@ export const renderRoute = async (request, env, route) => {
         microphone: route.pathname === '/identify-worker.js',
       })
     case 'model':
-      return renderObject(env, route.objectKey, modelHttpResponse)
+      return renderObject(env, route.objectKey, (bucket, key) =>
+        modelHttpResponse(bucket, key, request.headers.get('range')),
+      )
     case 'identify-sound':
       return renderIdentify(env, route, origin, SOUND_PAGE)
     case 'identify-photo':
@@ -532,6 +565,21 @@ const renderIdentify = async (env, route, origin, kind) => {
     contentType: 'text/html; charset=utf-8',
     identify: true,
     microphone: kind.microphone,
+  })
+}
+
+/**
+ * /offline.json: what an installed copy can keep on the device. The media
+ * lists come from KV; the models and the scripts are this Worker's own. It
+ * still answers when the stored document is missing, with the models alone.
+ */
+const renderOffline = async (env, route) => {
+  const doc = await readOptional(env.BIRDS_KV, route.kvKey)
+  return pageResponse({
+    body: jsonBody(offlineManifest(doc?.data ?? null, cacheVersion(env))),
+    contentType: 'application/json; charset=utf-8',
+    cache: PAGE_CACHE,
+    cacheTag: 'index,offline',
   })
 }
 
