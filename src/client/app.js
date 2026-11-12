@@ -156,20 +156,27 @@ const closeZoom = (plate, focus) => {
   if (focus) plate.querySelector('.zoom')?.focus()
 }
 
+// One listener on the document zooms every photograph, including the ones the
+// recogniser pages add after the page has loaded. A photograph is a
+// `figure.plate` holding a `button.zoom`. Before a plate changes, it is sent a
+// `plate-zoom` event, so that a page can swap in a sharper picture.
 const bindZoom = () => {
-  for (const button of document.querySelectorAll('.plate .zoom')) {
-    button.addEventListener('dragstart', (event) => {
-      event.preventDefault()
-    })
-    button.addEventListener('click', () => {
-      const plate = button.closest('.plate')
-      const open = !plate.classList.contains('is-zoomed')
-      for (const other of document.querySelectorAll('.plate.is-zoomed')) {
-        if (other !== plate) closeZoom(other, false)
-      }
-      flipPlate(plate, open)
-    })
-  }
+  document.addEventListener('dragstart', (event) => {
+    if (event.target.closest?.('.plate .zoom')) event.preventDefault()
+  })
+  document.addEventListener('click', (event) => {
+    const button = event.target.closest?.('.plate .zoom')
+    if (!button) return
+    const plate = button.closest('.plate')
+    const open = !plate.classList.contains('is-zoomed')
+    for (const other of document.querySelectorAll('.plate.is-zoomed')) {
+      if (other !== plate) closeZoom(other, false)
+    }
+    plate.dispatchEvent(
+      new CustomEvent('plate-zoom', { bubbles: true, detail: { open } }),
+    )
+    flipPlate(plate, open)
+  })
   document.addEventListener('keydown', (event) => {
     if (event.key !== 'Escape') return
     const open = document.querySelector('.plate.is-zoomed')

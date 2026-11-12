@@ -164,6 +164,8 @@ export const mebibytes = (bytes) => (bytes / 1048576).toFixed(1)
 
 const WORD = { likely: 'Likely', possible: 'Possible', unlikely: 'Unlikely' }
 const THUMB = 192
+// The longest side of the visitor's photo when it is zoomed.
+const ZOOM_SIDE = 1600
 const HANDLE = 0.12
 
 const element = (tag, properties = {}, children = []) => {
@@ -175,6 +177,92 @@ const element = (tag, properties = {}, children = []) => {
   }
   node.append(...children)
   return node
+}
+
+/**
+ * A guide photograph that zooms like the plates on a species page: the same
+ * `figure.plate` and `button.zoom`, which app.js binds. Its caption shows only
+ * once the photograph is zoomed.
+ */
+const plate = (image, label) => {
+  const caption = element('figcaption')
+  if (label)
+    caption.append(element('span', { class: 'plate-name', text: label }))
+  if (image.caption) {
+    const credit = element('span', { class: 'plate-credit' }, [
+      element('span', { class: 'ai-label', text: image.caption.label }),
+    ])
+    if (image.caption.text) credit.append(` ${image.caption.text}`)
+    if (image.caption.source)
+      credit.append(
+        ' ',
+        element('a', { href: image.caption.source, text: 'Source' }),
+        '.',
+      )
+    caption.append(credit)
+  }
+  return element('figure', { class: 'plate plate-thumb' }, [
+    element(
+      'button',
+      {
+        type: 'button',
+        class: 'zoom',
+        'aria-pressed': 'false',
+        'aria-label': 'Zoom photograph',
+      },
+      [
+        element('img', {
+          src: image.src,
+          alt: image.alt,
+          loading: 'lazy',
+          draggable: 'false',
+          width: '120',
+          height: '120',
+        }),
+      ],
+    ),
+    caption,
+  ])
+}
+
+/**
+ * The visitor's own cropped photo, as a plate that zooms. The small copy is
+ * what the list shows. The first time it is zoomed, the canvas is redrawn from
+ * the large copy kept in memory, so it is sharp at full width.
+ */
+const yoursPlate = (yours) => {
+  const copy = element('canvas', {
+    width: String(THUMB),
+    height: String(THUMB),
+    role: 'img',
+    'aria-label': 'Your photo',
+  })
+  copy.getContext('2d').drawImage(yours.small, 0, 0)
+  const figure = element('figure', { class: 'plate plate-thumb' }, [
+    element(
+      'button',
+      {
+        type: 'button',
+        class: 'zoom',
+        'aria-pressed': 'false',
+        'aria-label': 'Zoom your photo',
+      },
+      [copy],
+    ),
+    element('figcaption', {}, [
+      element('span', { class: 'plate-name', text: 'Yours' }),
+      element('span', {
+        class: 'plate-credit',
+        text: 'Your photo, cropped to the square you chose. It has not left this device.',
+      }),
+    ]),
+  ])
+  figure.addEventListener('plate-zoom', (event) => {
+    if (!event.detail.open || copy.width === yours.large.width) return
+    copy.width = copy.height = yours.large.width
+    copy.getContext('2d').drawImage(yours.large, 0, 0)
+  })
+  return figure
 }
 
 const resultItem = (item, families, yours) => {
@@ -206,29 +294,8 @@ const resultItem = (item, families, yours) => {
     ]),
     verdict,
   ])
-  const copy = element('canvas', {
-    width: String(THUMB),
-    height: String(THUMB),
-    role: 'img',
-    'aria-label': 'Your photo',
-  })
-  copy.getContext('2d').drawImage(yours, 0, 0)
-  const pair = element('div', { class: 'identify-pair' }, [
-    element('figure', {}, [copy, element('figcaption', { text: 'Yours' })]),
-  ])
-  if (bird.image)
-    pair.append(
-      element('figure', {}, [
-        element('img', {
-          src: bird.image.src,
-          alt: bird.image.alt,
-          loading: 'lazy',
-          width: '120',
-          height: '120',
-        }),
-        element('figcaption', { text: 'Guide' }),
-      ]),
-    )
+  const pair = element('div', { class: 'identify-pair' }, [yoursPlate(yours)])
+  if (bird.image) pair.append(plate(bird.image, 'Guide'))
   else body.append(element('p', { text: 'The guide has no photograph yet.' }))
   return element('li', { class: 'identify-result identify-photo-result' }, [
     pair,
@@ -535,7 +602,10 @@ const boot = async () => {
           scores,
           month: new Date().getMonth() + 1,
         }),
-        cropped(THUMB),
+        {
+          small: cropped(THUMB),
+          large: cropped(Math.min(Math.round(crop.size), ZOOM_SIDE)),
+        },
       )
     } catch (error) {
       console.error(error)

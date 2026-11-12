@@ -153,6 +153,52 @@ const element = (tag, properties = {}, children = []) => {
   return node
 }
 
+/**
+ * A guide photograph that zooms like the plates on a species page: the same
+ * `figure.plate` and `button.zoom`, which app.js binds. Its caption shows only
+ * once the photograph is zoomed.
+ */
+const plate = (image, label) => {
+  const caption = element('figcaption')
+  if (label)
+    caption.append(element('span', { class: 'plate-name', text: label }))
+  if (image.caption) {
+    const credit = element('span', { class: 'plate-credit' }, [
+      element('span', { class: 'ai-label', text: image.caption.label }),
+    ])
+    if (image.caption.text) credit.append(` ${image.caption.text}`)
+    if (image.caption.source)
+      credit.append(
+        ' ',
+        element('a', { href: image.caption.source, text: 'Source' }),
+        '.',
+      )
+    caption.append(credit)
+  }
+  return element('figure', { class: 'plate plate-thumb' }, [
+    element(
+      'button',
+      {
+        type: 'button',
+        class: 'zoom',
+        'aria-pressed': 'false',
+        'aria-label': 'Zoom photograph',
+      },
+      [
+        element('img', {
+          src: image.src,
+          alt: image.alt,
+          loading: 'lazy',
+          draggable: 'false',
+          width: '120',
+          height: '120',
+        }),
+      ],
+    ),
+    caption,
+  ])
+}
+
 const resultItem = (item, families) => {
   const { bird } = item
   const family = families[bird.family]
@@ -202,16 +248,7 @@ const resultItem = (item, families) => {
       }),
     )
   const row = element('li', { class: 'identify-result' })
-  if (bird.image)
-    row.append(
-      element('img', {
-        src: bird.image.src,
-        alt: bird.image.alt,
-        loading: 'lazy',
-        width: '120',
-        height: '120',
-      }),
-    )
+  if (bird.image) row.append(plate(bird.image))
   row.append(body)
   return row
 }
