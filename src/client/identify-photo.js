@@ -1,6 +1,7 @@
 // /identify/photo: take or choose a photo, find the bird in it, crop to the
 // bird, and rank the likely species. When no bird is found, or the detector
-// is not on the device, the visitor puts the square on the bird.
+// is not on the device, the visitor puts the square on the bird. Live mode
+// shows the camera in the page and names the bird in view as it goes.
 //
 // The first half is pure and has no browser dependency, so the tests import
 // it directly. The second half drives the page and only runs in a browser.
@@ -374,6 +375,126 @@ export const timingText = (timing, finding = null) => {
   return `${took} on this device.${runtime ? ` Runtime: ${runtime}.` : ''}`
 }
 
+// Live mode. The camera is shown in the page; a frame is taken from it, the
+// bird is found and named, and then the next frame is taken. At most one
+// frame is analysed every LIVE_EVERY_MS, and a slower device rests for
+// LIVE_REST_MS between frames so that the video stays smooth. A frame is
+// shrunk to LIVE_SIDE on its longer side before it is looked at.
+export const LIVE_SIDE = 1280
+export const LIVE_EVERY_MS = 100
+export const LIVE_REST_MS = 30
+// The name shown is taken from the average of the last LIVE_FRAMES frames
+// with a bird in them, and only once it has led for LIVE_RUN frames running.
+// After LIVE_MISSES frames with no bird the average starts again, so one
+// bird's scores are not mixed into the next one's.
+export const LIVE_FRAMES = 5
+export const LIVE_RUN = 3
+export const LIVE_MISSES = 3
+// Live mode stops by itself after this long with no bird in view, and when
+// three frames running each take longer than LIVE_SLOW_MS.
+export const LIVE_IDLE_SECONDS = 60
+export const LIVE_SLOW_MS = 1000
+
+/** Live mode before its first frame. */
+export const createLive = () => ({
+  recent: [],
+  misses: 0,
+  leader: null,
+  streak: 0,
+  shown: null,
+})
+
+/**
+ * Live mode after one more frame. `scores` is the recogniser's answer for
+ * the bird found in the frame, or null when no bird was found.
+ *
+ * `shown` is what the page names: `{ href, name, confidence, outOfSeason }`
+ * for a species, the same with `family: true` for a family, or null before
+ * anything has been named. It changes only when another name has led for
+ * LIVE_RUN frames running, and it stays when the bird leaves the view.
+ */
+export const liveNext = (state, scores, { species, families = {}, month }) => {
+  if (!scores) {
+    const misses = state.misses + 1
+    return misses >= LIVE_MISSES
+      ? { ...state, misses, recent: [], leader: null, streak: 0 }
+      : { ...state, misses }
+  }
+  const recent = [...state.recent, scores].slice(-LIVE_FRAMES)
+  const mean = new Float32Array(scores.length)
+  for (const frame of recent)
+    for (let index = 0; index < mean.length; index += 1)
+      mean[index] += frame[index] / recent.length
+  const result = rankResults({ species, scores: mean, month })
+  const [first] = result.candidates
+  const top =
+    result.kind === 'none'
+      ? null
+      : result.kind === 'family'
+        ? {
+            href: `/family/${result.family}`,
+            name: families[result.family]?.en ?? result.family,
+            family: true,
+            confidence: result.confidence,
+            outOfSeason: false,
+          }
+        : {
+            href: `/species/${first.bird.slug}`,
+            name: first.bird.en,
+            family: false,
+            confidence: first.confidence,
+            outOfSeason: first.outOfSeason,
+          }
+  const streak = !top ? 0 : top.href === state.leader ? state.streak + 1 : 1
+  const shown =
+    top && (streak >= LIVE_RUN || top.href === state.shown?.href)
+      ? top
+      : state.shown
+  return { recent, misses: 0, leader: top?.href ?? null, streak, shown }
+}
+
+/** How long to wait before the next frame, after one that took `elapsed` ms. */
+export const liveWait = (elapsed) =>
+  Math.max(LIVE_REST_MS, LIVE_EVERY_MS - elapsed)
+
+/**
+ * Why Live mode must stop by itself, or null. `seen` is when a bird was last
+ * in view (or when Live started) and `recent` is how long each frame took.
+ */
+export const liveStop = ({ now, seen, recent }) =>
+  now - seen >= LIVE_IDLE_SECONDS * 1000
+    ? 'idle'
+    : recent.length >= 3 && recent.slice(-3).every((ms) => ms > LIVE_SLOW_MS)
+      ? 'slow'
+      : null
+
+const middle = (values) => {
+  const sorted = [...values].sort((a, b) => a - b)
+  const half = Math.floor(sorted.length / 2)
+  return sorted.length % 2
+    ? sorted[half]
+    : (sorted[half - 1] + sorted[half]) / 2
+}
+
+/**
+ * What Live mode managed on this device: frames analysed a second, and the
+ * typical (median) time in each model. `ms` is how long Live ran; `find` and
+ * `name` are the milliseconds of each run of the detector and the
+ * recogniser. Empty when no frame was analysed.
+ */
+export const liveTimingText = ({ frames, ms, find, name, build }) => {
+  if (!frames || !(ms > 0)) return ''
+  const rate = (frames * 1000) / ms
+  const runtime = BUILD[build]
+  const parts = [
+    find.length
+      ? `finding the bird typically took ${duration(middle(find))}`
+      : '',
+    name.length ? `naming it ${duration(middle(name))}` : '',
+  ].filter(Boolean)
+  return `Live analysed ${rate >= 10 ? Math.round(rate) : rate.toFixed(1)} frames a second on this device${parts.length ? `: ${parts.join(', ')}` : ''}.${runtime ? ` Runtime: ${runtime}.` : ''}`
+}
+
 // ---------------------------------------------------------------------------
 // The page. Nothing below runs outside a browser.
 
@@ -604,6 +725,7 @@ const boot = async () => {
   const results = part('results')
   const inputs = [part('camera'), part('file')]
   const tools = [
+    part('live-start'),
     part('next-bird'),
     run,
     part('smaller'),
@@ -725,6 +847,7 @@ const boot = async () => {
     showProgress(null)
     capture.hidden = false
     part('upgrade').hidden = finder || !detector
+    offerLive()
     say('Ready. Take a photo of a bird, or choose one.')
   }
 
@@ -747,6 +870,7 @@ const boot = async () => {
     busy(false)
     part('add-finder').disabled = false
     part('upgrade').hidden = finder
+    offerLive()
     say(
       finder
         ? 'Ready. Take a photo of a bird, or choose one.'
@@ -857,14 +981,29 @@ const boot = async () => {
       say('That file could not be read as a photo. Try a JPEG or PNG file.')
       return
     }
-    const fitted = fitWithin(bitmap.width, bitmap.height, WORK_SIDE)
-    work.width = fitted.width
-    work.height = fitted.height
+    take(bitmap, bitmap.width, bitmap.height, WORK_SIDE)
+    bitmap.close?.()
+    await examine()
+  }
+
+  /** Puts a picture in the work canvas, shrunk to `side` on its longer side. */
+  const take = (source, width, height, side) => {
+    const fitted = fitWithin(width, height, side)
+    // Setting a canvas's size clears it and allocates it again, so a run of
+    // camera frames of one size reuses the canvas.
+    if (work.width !== fitted.width) work.width = fitted.width
+    if (work.height !== fitted.height) work.height = fitted.height
     const context = work.getContext('2d')
     context.imageSmoothingQuality = 'high'
-    context.drawImage(bitmap, 0, 0, fitted.width, fitted.height)
-    bitmap.close?.()
-    const shown = fitWithin(fitted.width, fitted.height, 1280)
+    context.drawImage(source, 0, 0, fitted.width, fitted.height)
+  }
+
+  /**
+   * Finds the bird in the picture in the work canvas and identifies it. With
+   * no bird found, or no detector, the crop view opens.
+   */
+  const examine = async () => {
+    const shown = fitWithin(work.width, work.height, 1280)
     view.width = shown.width
     view.height = shown.height
     birds = finder ? await findBirds() : []
@@ -920,54 +1059,70 @@ const boot = async () => {
   const cropped = (size) =>
     reduced({ x: crop.x, y: crop.y, w: crop.size, h: crop.size }, size, size)
 
+  // The detector's input, reused from one picture to the next.
+  const square = document.createElement('canvas')
+
   /**
-   * The birds the detector finds in the open photo, largest first. The
-   * photo goes in as the detector was trained: whole, in its own shape,
-   * against the top left corner of a mid-grey square. Any failure is an
-   * empty list, and the visitor crops by hand.
+   * Every bird the detector finds in the work canvas, largest first, and
+   * how long the detector took. The picture goes in as the detector was
+   * trained: whole, in its own shape, against the top left corner of a
+   * mid-grey square.
    */
-  const findBirds = async () => {
+  const locate = async () => {
     const { inputSize: size } = detector
-    busy(true)
-    say('Looking for the bird.')
-    finding = null
-    try {
-      const fitted = fitWithin(work.width, work.height, size)
-      const square = document.createElement('canvas')
-      square.width = square.height = size
-      const context = square.getContext('2d', { willReadFrequently: true })
-      context.fillStyle = 'rgb(127, 127, 127)'
-      context.fillRect(0, 0, size, size)
-      context.drawImage(
-        reduced(
-          { x: 0, y: 0, w: work.width, h: work.height },
-          fitted.width,
-          fitted.height,
-        ),
-        0,
-        0,
-      )
-      const pixels = toBytes(context.getImageData(0, 0, size, size).data)
-      const found = await ask(
-        {
-          type: 'detect',
-          pixels,
-          size,
-          label: detector.birdClass,
-          score: detector.score,
-        },
-        [pixels.buffer],
-      )
-      finding = found.timing
-      // The largest is the bird. The rest are offered only when the
-      // detector is surer of them: faint ones are often not birds.
-      return birdBoxes(found, {
+    const fitted = fitWithin(work.width, work.height, size)
+    if (square.width !== size) square.width = square.height = size
+    const context = square.getContext('2d', { willReadFrequently: true })
+    context.fillStyle = 'rgb(127, 127, 127)'
+    context.fillRect(0, 0, size, size)
+    context.drawImage(
+      reduced(
+        { x: 0, y: 0, w: work.width, h: work.height },
+        fitted.width,
+        fitted.height,
+      ),
+      0,
+      0,
+    )
+    const pixels = toBytes(context.getImageData(0, 0, size, size).data)
+    const found = await ask(
+      {
+        type: 'detect',
+        pixels,
+        size,
+        label: detector.birdClass,
+        score: detector.score,
+      },
+      [pixels.buffer],
+    )
+    return {
+      timing: found.timing,
+      boxes: birdBoxes(found, {
         width: work.width,
         height: work.height,
         size,
         score: detector.score,
         overlap: detector.overlap,
-      }).filter((box, index) => index === 0 || box.score >= detector.another)
+      }),
+    }
+  }
+
+  /**
+   * The birds in the open photo, largest first. Any failure is an empty
+   * list, and the visitor crops by hand.
+   */
+  const findBirds = async () => {
+    busy(true)
+    say('Looking for the bird.')
+    finding = null
+    try {
+      const found = await locate()
+      finding = found.timing
+      // The largest is the bird. The rest are offered only when the
+      // detector is surer of them: faint ones are often not birds.
+      return found.boxes.filter(
+        (box, index) => index === 0 || box.score >= detector.another,
+      )
     } catch (error) {
       console.error(error)
       return []
@@ -1013,6 +1168,15 @@ const boot = async () => {
     heading.focus()
   }
 
+  /** The recogniser's scores for the chosen square. */
+  const recognise = () => {
+    const input = cropped(inputSize)
+    const pixels = toPixels(
+      input.getContext('2d').getImageData(0, 0, inputSize, inputSize).data,
+    )
+    return ask({ type: 'classify', pixels, size: inputSize }, [pixels.buffer])
+  }
+
   const identify = async () => {
     if (!crop || !guide) return
     if (cropper.open) cropper.close()
@@ -1020,14 +1184,7 @@ const boot = async () => {
     results.hidden = true
     say('Analysing the photo on this device.')
     try {
-      const input = cropped(inputSize)
-      const pixels = toPixels(
-        input.getContext('2d').getImageData(0, 0, inputSize, inputSize).data,
-      )
-      const { scores, timing } = await ask(
-        { type: 'classify', pixels, size: inputSize },
-        [pixels.buffer],
-      )
+      const { scores, timing } = await recognise()
       show(
         rankResults({
           species: guide.covered,
@@ -1048,6 +1205,274 @@ const boot = async () => {
       busy(false)
     }
   }
+
+  // Live mode: the camera in the page, and the name of the bird in view.
+  const video = part('live-video')
+  const overlay = part('live-overlay')
+  const liveStart = part('live-start')
+  const liveName = part('live-name')
+  const zoom = part('live-zoom')
+  let live = null
+
+  /** Live needs a camera the page can show, and the detector. */
+  const offerLive = () => {
+    const can =
+      finder && typeof navigator.mediaDevices?.getUserMedia === 'function'
+    part('live-offer').hidden = !can
+  }
+
+  /** Outlines the bird on the video, in two tones so that it shows on any background. */
+  const outline = (box) => {
+    if (overlay.width !== work.width) overlay.width = work.width
+    if (overlay.height !== work.height) overlay.height = work.height
+    const context = overlay.getContext('2d')
+    context.clearRect(0, 0, overlay.width, overlay.height)
+    if (!box) return
+    const unit = overlay.width / (overlay.clientWidth || overlay.width)
+    const area = [box.left, box.top, box.right - box.left, box.bottom - box.top]
+    context.lineWidth = 6 * unit
+    context.strokeStyle = '#000'
+    context.strokeRect(...area)
+    context.lineWidth = 3 * unit
+    context.strokeStyle = '#fff'
+    context.strokeRect(...area)
+  }
+
+  /**
+   * Writes the name. The link is rebuilt only when the name changes, so it
+   * can be followed while frames keep arriving, and a change is announced
+   * once, in the status line. The name itself is not a live region.
+   */
+  const nameLive = (run, inView) => {
+    const { shown } = run.state
+    if (shown && shown.href !== run.named) {
+      run.named = shown.href
+      liveName.replaceChildren(
+        shown.family ? 'Family: ' : '',
+        element('a', { href: shown.href, text: shown.name }),
+        ' ',
+        element('span', { class: 'identify-live-word' }),
+      )
+      say(`${shown.family ? 'Family' : 'Seen'}: ${shown.name}.`)
+    }
+    if (shown) {
+      const word = `(${WORD[shown.confidence].toLowerCase()}${shown.outOfSeason ? ', not usually present this month' : ''})`
+      const node = liveName.querySelector('.identify-live-word')
+      if (node.textContent !== word) node.textContent = word
+    }
+    const where = !inView
+      ? 'No bird in view.'
+      : shown
+        ? 'A bird is in view.'
+        : 'A bird is in view. Keep the camera on it to name it.'
+    if (part('live-view').textContent !== where)
+      part('live-view').textContent = where
+    // For the browser tests: how many frames have been analysed.
+    root.dataset.liveFrames = String(run.frames)
+  }
+
+  /** One frame: find the bird, name it, and draw both. */
+  const look = async (run, began) => {
+    if (!video.videoWidth || !video.videoHeight) return
+    take(video, video.videoWidth, video.videoHeight, LIVE_SIDE)
+    const found = await locate()
+    if (live !== run) return
+    run.find.push(...(found.timing?.runs ?? []))
+    run.build = found.timing?.build ?? run.build
+    const [box] = found.boxes
+    let scores = null
+    if (box) {
+      crop = boxCrop(box, detector.margin, work.width, work.height)
+      const answer = await recognise()
+      if (live !== run) return
+      scores = answer.scores
+      run.name.push(...(answer.timing?.runs ?? []))
+      run.seen = began
+    }
+    run.frames += 1
+    run.recent.push(performance.now() - began)
+    run.state = liveNext(run.state, scores, {
+      species: guide.covered,
+      families: guide.families,
+      month: run.month,
+    })
+    outline(box)
+    nameLive(run, Boolean(box))
+  }
+
+  const LIVE_STOPPED = {
+    idle: `Live stopped: no bird was in view for ${LIVE_IDLE_SECONDS} seconds.`,
+    slow: 'This device is too slow to name birds live. Take a photo instead.',
+  }
+
+  const tick = (run) => {
+    if (live !== run) return
+    const began = performance.now()
+    run.busy = look(run, began).then(
+      () => {
+        run.busy = null
+        if (live !== run) return
+        const now = performance.now()
+        const reason = liveStop({ now, seen: run.seen, recent: run.recent })
+        if (reason) stopLive(LIVE_STOPPED[reason])
+        else run.timer = setTimeout(() => tick(run), liveWait(now - began))
+      },
+      (error) => {
+        console.error(error)
+        run.busy = null
+        stopLive(
+          'The camera picture could not be analysed. Reload the page and try again.',
+        )
+      },
+    )
+  }
+
+  /**
+   * Ends Live mode and releases the camera. With `hold`, the frame on screen
+   * is kept and identified as a photo is, with the full list of results.
+   */
+  const stopLive = async (message, hold = false) => {
+    const run = live
+    if (!run) return
+    live = null
+    clearTimeout(run.timer)
+    document.removeEventListener('visibilitychange', run.onHidden)
+    run.wake?.release().catch(() => {})
+    const held = hold && video.videoWidth > 0
+    // The frame on screen now, before the camera is let go.
+    if (held) take(video, video.videoWidth, video.videoHeight, WORK_SIDE)
+    for (const track of run.stream.getTracks()) {
+      track.removeEventListener('ended', run.onEnded)
+      track.stop()
+    }
+    video.pause()
+    video.srcObject = null
+    // A frame that is still with the recogniser is thrown away when it comes
+    // back. Nothing else may be sent until it has.
+    await run.busy
+    const text = liveTimingText({
+      frames: run.frames,
+      ms: performance.now() - run.began,
+      find: run.find,
+      name: run.name,
+      build: run.build,
+    })
+    part('live-timing').textContent = text
+    part('live-timing').hidden = !text
+    delete root.dataset.liveFrames
+    part('live').hidden = true
+    part('choices').hidden = false
+    busy(false)
+    if (held) {
+      await examine()
+      return
+    }
+    crop = null
+    say(message ?? 'Live stopped.')
+    liveStart.focus()
+  }
+
+  /** Offers the camera's own zoom, where the browser gives one. */
+  const offerZoom = (track) => {
+    let range = null
+    try {
+      range = track.getCapabilities?.().zoom ?? null
+    } catch {
+      range = null
+    }
+    const can = Boolean(range && range.max > range.min)
+    part('live-zoom-control').hidden = !can
+    part('live-zoom-none').hidden = can
+    if (!can) return
+    zoom.min = String(range.min)
+    zoom.max = String(range.max)
+    zoom.step = String(range.step || 0.1)
+    zoom.value = String(track.getSettings?.().zoom ?? range.min)
+  }
+
+  const startLive = async () => {
+    if (live || !finder || !guide) return
+    busy(true)
+    let stream = null
+    try {
+      stream = await navigator.mediaDevices.getUserMedia({
+        audio: false,
+        video: {
+          facingMode: { ideal: 'environment' },
+          width: { ideal: 1280 },
+          height: { ideal: 720 },
+        },
+      })
+      video.srcObject = stream
+      await video.play()
+    } catch (error) {
+      console.warn(error)
+      for (const track of stream?.getTracks() ?? []) track.stop()
+      video.srcObject = null
+      busy(false)
+      say(
+        error?.name === 'NotAllowedError' || error?.name === 'SecurityError'
+          ? 'The camera is not allowed for this page. Allow it in the browser’s settings, or take a photo instead.'
+          : 'The camera could not be opened. Take a photo instead.',
+      )
+      return
+    }
+    const [track] = stream.getVideoTracks()
+    const run = {
+      stream,
+      track,
+      state: createLive(),
+      named: null,
+      month: new Date().getMonth() + 1,
+      began: performance.now(),
+      seen: performance.now(),
+      frames: 0,
+      recent: [],
+      find: [],
+      name: [],
+      build: null,
+      busy: null,
+      timer: 0,
+      wake: null,
+      onHidden: () => {
+        if (document.hidden)
+          stopLive('Live stopped because this page was hidden.')
+      },
+      onEnded: () => stopLive('Live stopped: the camera was taken away.'),
+    }
+    live = run
+    document.addEventListener('visibilitychange', run.onHidden)
+    track?.addEventListener('ended', run.onEnded)
+    // Keep the screen on: a phone that locks hides the page, which stops
+    // Live. The idle limit still ends it.
+    navigator.wakeLock
+      ?.request('screen')
+      .then((lock) => {
+        if (live === run) run.wake = lock
+        else lock.release().catch(() => {})
+      })
+      .catch(() => {})
+    offerZoom(track)
+    results.hidden = true
+    part('choices').hidden = true
+    part('live-timing').hidden = true
+    liveName.replaceChildren('Point the camera at a bird.')
+    part('live-view').textContent = ''
+    outline(null)
+    part('live').hidden = false
+    say('Live. Point the camera at a bird.')
+    part('live-hold').focus()
+    tick(run)
+  }
+
+  liveStart.addEventListener('click', startLive)
+  part('live-stop').addEventListener('click', () => stopLive())
+  part('live-hold').addEventListener('click', () => stopLive(null, true))
+  zoom.addEventListener('input', () => {
+    live?.track
+      ?.applyConstraints({ advanced: [{ zoom: Number(zoom.value) }] })
+      .catch(() => {})
+  })
 
   // Pointer positions, in the photo's own pixels. The stage takes the
   // presses, not the canvas, so an edge at the photo's border can still be

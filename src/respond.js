@@ -25,9 +25,9 @@ const PAGE_CSP =
  * a Web Worker. The worker script is sent with the same policy, because a
  * worker is governed by the policy on its own response, not the page's. It
  * fetches its model under `connect-src`. Only the sound page may use the
- * microphone. The photo page needs no camera permission: a file input opens
- * the phone's own camera app, and the photo is drawn on a canvas, so no
- * `blob:` image is allowed either.
+ * microphone, and only the photo page the camera, for its Live mode. The
+ * camera picture is shown from a stream object and photos are drawn on a
+ * canvas, so neither needs `media-src` or `img-src` to allow `blob:`.
  * PAGE_CSP ends with script-src, so the first addition extends that directive.
  */
 export const IDENTIFY_CSP = `${PAGE_CSP} 'wasm-unsafe-eval'; worker-src 'self'`
@@ -40,6 +40,8 @@ export const IDENTIFY_CSP = `${PAGE_CSP} 'wasm-unsafe-eval'; worker-src 'self'`
 export const SERVICE_WORKER_CSP = "default-src 'self'"
 export const IDENTIFY_PERMISSIONS =
   'camera=(), microphone=(self), geolocation=()'
+/** /identify/photo only: its Live mode shows the camera in the page. */
+export const PHOTO_PERMISSIONS = 'camera=(self), microphone=(), geolocation=()'
 
 const OBJECT_CSP =
   "default-src 'none'; style-src 'none'; script-src 'none'; sandbox"
@@ -56,6 +58,7 @@ export const pageResponse = ({
   search = '',
   identify = false,
   microphone = false,
+  camera = false,
   serviceWorker = false,
 }) => {
   const headers = new Headers(SECURITY)
@@ -65,6 +68,7 @@ export const pageResponse = ({
     serviceWorker ? SERVICE_WORKER_CSP : identify ? IDENTIFY_CSP : PAGE_CSP,
   )
   if (microphone) headers.set('permissions-policy', IDENTIFY_PERMISSIONS)
+  else if (camera) headers.set('permissions-policy', PHOTO_PERMISSIONS)
   headers.set('cache-control', cache)
   headers.set('access-control-allow-origin', '*')
   if (cacheTag) headers.set('cache-tag', cacheTag)

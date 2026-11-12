@@ -537,6 +537,7 @@ const PHOTO_PAGE = {
   markdown: renderIdentifyPhotoMarkdown,
   html: renderIdentifyPhotoHtml,
   microphone: false,
+  camera: true,
 }
 
 /** Only the HTML form runs the recogniser, so only it gets the wider policy. */
@@ -567,6 +568,7 @@ const renderIdentify = async (env, route, origin, kind) => {
     contentType: 'text/html; charset=utf-8',
     identify: true,
     microphone: kind.microphone,
+    camera: kind.camera === true,
   })
 }
 
