@@ -156,7 +156,8 @@ export const toPixels = (rgba) => {
   return pixels
 }
 
-export const megabytes = (bytes) => Math.round(bytes / 1e6)
+/** Bytes as mebibytes (1 MiB = 1,048,576 bytes) to one decimal place. */
+export const mebibytes = (bytes) => (bytes / 1048576).toFixed(1)
 
 // ---------------------------------------------------------------------------
 // The page. Nothing below runs outside a browser.
@@ -288,6 +289,7 @@ const boot = async () => {
   const tools = [run, part('smaller'), part('larger'), part('whole')]
   const { models, runtime, modelFile, cache: cacheName } = root.dataset
   const modelBytes = Number(root.dataset.modelBytes)
+  const downloadBytes = Number(root.dataset.downloadBytes)
   const inputSize = Number(root.dataset.inputSize)
 
   const say = (text) => {
@@ -356,13 +358,14 @@ const boot = async () => {
           runtime,
           modelFile,
           modelBytes,
+          downloadBytes,
           cacheName,
         },
         [],
         ({ received, total }) => {
           showProgress(total ? received / total : 0)
           say(
-            `Downloading the recogniser: ${megabytes(received)} of ${megabytes(total)} MB.`,
+            `Downloading the recogniser: ${mebibytes(received)} of ${mebibytes(total)} MiB.`,
           )
         },
       )
@@ -425,7 +428,7 @@ const boot = async () => {
 
   const open = async (file) => {
     if (file.size > MAX_FILE_BYTES) {
-      say('That file is larger than 60 MB. Choose a smaller photo.')
+      say('That file is larger than 60 MiB. Choose a smaller photo.')
       return
     }
     busy(true)

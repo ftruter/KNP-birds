@@ -9,7 +9,6 @@ import {
   TRAINING_MANIFEST_URL,
   deriveIdentifyPhoto,
   modelBase,
-  photoDownloadMb,
   photoModelBase,
 } from '../src/identify.js'
 import { weakFamilies } from '../src/identify-photo-page.js'
@@ -123,10 +122,7 @@ test('without javascript the page explains itself and links onward', async () =>
     body,
     /id="identify-status"[^>]*role="status" aria-live="polite"/,
   )
-  assert.match(
-    body,
-    new RegExp(`Download the recogniser \\(about ${photoDownloadMb} MB\\)`),
-  )
+  assert.match(body, /Download the recogniser \(about 20\.2 MiB\)/)
   // The crop square has a label, keyboard help and buttons that do the same.
   assert.match(
     body,

@@ -12,7 +12,7 @@ JSON file is right.
 - Base model: MobileNetV4 conv-medium (`mobilenetv4_conv_medium.e250_r384_in12k` from the `timm` library,
   Apache 2.0), pretrained on ImageNet-12k, then fine-tuned here for ten passes at 256 pixels.
 - Input: a 288 × 288 pixel square. Output: a score per species; the scores sum to 1.
-- File: 9,799,040 bytes (9.3 MB), weights stored as 8-bit integers, in LiteRT (`.tflite`) format.
+- File: 9,799,040 bytes (9.3 MiB), weights stored as 8-bit integers, in LiteRT (`.tflite`) format.
 - It runs on the visitor's device with LiteRT.js (WebAssembly). No photo leaves the device.
 
 ## Training photos

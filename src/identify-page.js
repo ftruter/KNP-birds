@@ -9,7 +9,8 @@ import {
   PRIVACY_NOTE,
   coverageSentence,
   downloadBytes,
-  downloadMb,
+  downloadSummary,
+  mebibytes,
   modelBase,
 } from './identify.js'
 import { pageMd } from './markdown.js'
@@ -17,7 +18,7 @@ import { pageMd } from './markdown.js'
 const TITLE = 'Identify a bird by its call'
 const INTRO =
   'Record a few seconds of a bird calling, or choose a recording you made earlier, and this page lists the most likely Kruger species. Each result links to the species page and has a photograph and a reference call, so you can compare by ear.'
-const DOWNLOAD_NOTE = `The recogniser runs on this device, so it is downloaded once: about ${downloadMb} MB. It is then kept on this device. After that, recognition needs no signal for as long as this page stays open.`
+const DOWNLOAD_NOTE = `The recogniser runs on this device, so it is downloaded once: ${downloadSummary(MODEL_ASSETS.model.bytes, 'Identify by photo')}. It is then kept on this device. After that, recognition needs no signal for as long as this page stays open.`
 const READING = [
   'Each result is marked likely, possible or unlikely. None is certain: check the photograph and play the reference call before you trust a name.',
   'A bird that is not usually in Kruger in the current month is ranked lower and marked “Not usually present this month”. It is still shown.',
@@ -52,12 +53,12 @@ export const renderIdentifySoundHtml = ({ origin, doc }) => {
 <p>${escapeHtml(INTRO)}</p>
 <p class="identify-privacy">${escapeHtml(PRIVACY_NOTE)}</p>
 <p id="identify-nojs" class="identify-note"><span id="identify-nojs-reason">${escapeHtml(NO_JS_NOTE)}</span> You can still browse the <a href="/species">species list</a> or <a href="/search">search by name</a>, and every species page has its calls.</p>
-<section id="identify" class="identify" hidden data-doc="${IDENTIFY_SOUND_PATH}.json" data-worker="${escapeHtml(identifySrc('/identify-worker.js'))}" data-capture="${escapeHtml(identifySrc('/identify-capture.js'))}" data-models="${escapeHtml(modelBase)}" data-model-file="${escapeHtml(MODEL_ASSETS.model.file)}" data-model-bytes="${MODEL_ASSETS.model.bytes}" data-cache="identify-sound-${escapeHtml(MODEL_ASSETS.version)}">
+<section id="identify" class="identify" hidden data-doc="${IDENTIFY_SOUND_PATH}.json" data-worker="${escapeHtml(identifySrc('/identify-worker.js'))}" data-capture="${escapeHtml(identifySrc('/identify-capture.js'))}" data-models="${escapeHtml(modelBase)}" data-model-file="${escapeHtml(MODEL_ASSETS.model.file)}" data-model-bytes="${MODEL_ASSETS.model.bytes}" data-download-bytes="${downloadBytes}" data-cache="identify-sound-${escapeHtml(MODEL_ASSETS.version)}">
 <p id="identify-status" class="identify-status" role="status" aria-live="polite"></p>
 <div id="identify-consent" hidden>
 <h2>Download the recogniser</h2>
 <p>${escapeHtml(DOWNLOAD_NOTE)}</p>
-<button type="button" id="identify-download" class="identify-button">Download the recogniser (about ${downloadMb} MB)</button>
+<button type="button" id="identify-download" class="identify-button">Download the recogniser (about ${mebibytes(downloadBytes)} MiB)</button>
 </div>
 <progress id="identify-progress" class="identify-progress" max="1" value="0" aria-label="Progress" hidden></progress>
 <div id="identify-capture" hidden>
