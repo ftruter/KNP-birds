@@ -62,3 +62,23 @@ def report(probs, labels, covered=None):
 def show(name, r):
     print(f'{name}: {r["photos"]} photos, {r["species"]} species | top1 {r["top1"]:.1%} top3 {r["top3"]:.1%} '
           f'top5 {r["top5"]:.1%} | family of top {r["familyOfTop"]:.1%}, family by sum {r["familyBySum"]:.1%}')
+
+
+def anchors(side):
+    """An EfficientDet-Lite's fixed anchor boxes for a square input `side` pixels wide, as shares of
+    it: centre y, centre x, height, width. Five grids, coarser each time; nine boxes a cell.
+    src/client/identify-photo.js works out the same boxes, and strip-detector.py checks these
+    against the ones stored in the detector file."""
+    import math
+    import numpy as np
+    out = []
+    for level in range(3, 8):
+        cells = math.ceil(side / 2 ** level)
+        for row in range(cells):
+            for column in range(cells):
+                for octave in range(3):
+                    for aspect in (1.0, 2.0, 0.5):
+                        size = 3 * 2 ** (octave / 3) / cells
+                        out.append(((row + 0.5) / cells, (column + 0.5) / cells,
+                                    size / math.sqrt(aspect), size * math.sqrt(aspect)))
+    return np.array(out, "float32")

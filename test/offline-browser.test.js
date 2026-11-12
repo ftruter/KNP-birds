@@ -5,7 +5,7 @@ import path from 'node:path'
 import { test, before, after } from 'node:test'
 import { fileURLToPath } from 'node:url'
 import { chromium, webkit } from 'playwright'
-import { MODEL_ASSETS, PHOTO_MODEL } from '../src/identify.js'
+import { MODEL_ASSETS, PHOTO_DETECTOR, PHOTO_MODEL } from '../src/identify.js'
 import { deriveOffline } from '../src/offline.js'
 import { readCatalog } from '../scripts/seed.mjs'
 import { startBundledSite } from './bundle-site.js'
@@ -49,6 +49,10 @@ const standIns = Object.fromEntries([
     `/models/${PHOTO_MODEL.version}/${PHOTO_MODEL.file}`,
     zeros(PHOTO_MODEL.bytes),
   ],
+  [
+    `/models/${PHOTO_DETECTOR.version}/${PHOTO_DETECTOR.file}`,
+    zeros(PHOTO_DETECTOR.bytes),
+  ],
 ])
 
 before(
@@ -71,6 +75,10 @@ before(
     await bucket.put(
       `models/${PHOTO_MODEL.version}/${PHOTO_MODEL.file}`,
       new Uint8Array(PHOTO_MODEL.bytes),
+    )
+    await bucket.put(
+      `models/${PHOTO_DETECTOR.version}/${PHOTO_DETECTOR.file}`,
+      new Uint8Array(PHOTO_DETECTOR.bytes),
     )
     // One family's photographs and clips are copied into the bucket, as
     // scripts/publish-media.mjs would, and listed with their sizes.
@@ -286,7 +294,14 @@ each(
 
     const caches = await stored(page)
     // The model is where the identify page looks, so it will not ask again.
-    assert.deepEqual(caches[PHOTO_CACHE], [PHOTO_FILE])
+    // The detector that finds the bird is saved with it.
+    assert.deepEqual(
+      [...caches[PHOTO_CACHE]].sort(),
+      [
+        `/models/${PHOTO_DETECTOR.version}/${PHOTO_DETECTOR.file}`,
+        PHOTO_FILE,
+      ].sort(),
+    )
     assert.equal(caches[SOUND_CACHE].length, 3)
     assert.ok(!caches[SOUND_CACHE].includes(SOUND_MODEL))
     assert.equal((caches['offline-partial'] ?? []).length, 0)

@@ -4,6 +4,8 @@ import { crumbs, layout } from './html.js'
 import {
   IDENTIFY_PHOTO_PATH,
   MODEL_CARD_URL,
+  PHOTO_DETECTOR,
+  PHOTO_DETECTOR_CREDIT,
   PHOTO_MODEL,
   PHOTO_MODEL_CREDIT,
   PHOTO_PRIVACY_NOTE,
@@ -11,8 +13,9 @@ import {
   TRAINING_MANIFEST_URL,
   modelBase,
   modelChecks,
+  photoDetectorBase,
   photoDownloadBytes,
-  downloadSummary,
+  photoDownloadSummary,
   mebibytes,
   photoModelBase,
 } from './identify.js'
@@ -20,18 +23,38 @@ import { pageMd } from './markdown.js'
 
 const TITLE = 'Identify a bird from a photo'
 const INTRO =
-  'Take a photo of a bird, or choose one you took earlier, crop it to the bird, and this page lists the most likely Kruger species. When it cannot tell the species, it names the family. Each result links to the species page and shows the guide’s photograph beside yours.'
-const DOWNLOAD_NOTE = `The recogniser runs on this device, so it is downloaded once: ${downloadSummary(PHOTO_MODEL.bytes, 'Identify by sound')}. It is then kept on this device. After that, recognition needs no signal for as long as this page stays open.`
+  'Take a photo of a bird, or choose one you took earlier. This page finds the bird, crops the photo to it, and lists the most likely Kruger species. When it cannot tell the species, it names the family. Each result links to the species page and shows the guide’s photograph beside yours.'
+const DOWNLOAD_NOTE = `The recogniser runs on this device, so it is downloaded once: ${photoDownloadSummary()}. It is then kept on this device. After that, recognition needs no signal for as long as this page stays open.`
 // Shown while the device has no connection. The photo picker cannot hand
 // over a photo whose original is only in the cloud, and it says nothing.
 const OFFLINE_NOTE =
   'There is no connection. A photo that is kept in the cloud, such as iCloud Photos, with only a preview on this device will not open until there is one. Take a photo instead, or choose one that is stored on this device.'
 
 const TIPS =
-  'Get as close as you safely can and keep the bird sharp. A bird that is small in the photo gives poor results, so crop closely.'
+  'Get as close as you safely can and keep the bird sharp. The page crops to the bird for you; you can change the crop afterwards. When it finds no bird, it asks you to put a square on it.'
+// For a visitor who downloaded the recogniser before the page could find
+// the bird itself. Nothing more is downloaded until they ask.
+const UPGRADE_NOTE = `This page can now find the bird and crop the photo to it for you. That needs one more download of ${mebibytes(PHOTO_DETECTOR.bytes)} MiB, kept on this device. Without it, you put the square on the bird yourself.`
+const NO_BIRD_NOTE =
+  'No bird was found automatically. Put the square on the bird yourself.'
+const FOUND_NOTE =
+  'This page found the bird and cropped your photo to it. If the square is on the wrong thing, choose Change the crop.'
+
+/** What the page script needs to load the detector and read its boxes. */
+const detectorData = () => ({
+  url: photoDetectorBase + PHOTO_DETECTOR.file,
+  bytes: PHOTO_DETECTOR.bytes,
+  sha256: PHOTO_DETECTOR.sha256,
+  inputSize: PHOTO_DETECTOR.inputSize,
+  birdClass: PHOTO_DETECTOR.birdClass,
+  score: PHOTO_DETECTOR.score,
+  overlap: PHOTO_DETECTOR.overlap,
+  margin: PHOTO_DETECTOR.margin,
+  another: PHOTO_DETECTOR.another,
+})
 const NO_JS_NOTE = 'Recognition needs JavaScript, which is off or blocked.'
 const CROP_HELP =
-  'Drag inside the square to move it over the bird. Drag an edge or a corner to resize it, or pinch; it stays square. With a keyboard, focus the photo, move the square with the arrow keys and resize it with plus and minus. You can also skip this and identify the whole photo.'
+  'Drag inside the square to move it over the bird. Drag an edge or a corner to resize it, or pinch; it stays square. With a keyboard, focus the photo, move the square with the arrow keys and resize it with plus and minus.'
 
 /** Families with enough test photos to judge, and under this share of species in the top three. */
 const WEAK_PHOTOS = 12
@@ -60,6 +83,7 @@ const reading = (doc) =>
     'Each result is marked likely, possible or unlikely. None is certain: compare your photo with the guide’s photograph, then check the field marks on the species page.',
     'A bird that is not usually in Kruger in the current month is ranked lower and marked “Not usually present this month”. It is still shown.',
     'When no single species stands out but one family does, the page names the family and lists its closest species. When nothing stands out, it says “No confident match”.',
+    'The page looks for a bird in your photo and crops to the largest one it finds. It can pick the wrong bird, or something that is not a bird; your cropped photo is shown beside every result so that you can see what was used, and “Change the crop” lets you move the square. Small and distant birds are the ones it most often misses.',
     'The recogniser always answers with a bird from this guide. It cannot tell that a photo is not a bird, or that it shows a bird from outside the Kruger list, so an answer that looks sure can still be wrong.',
     'It does not tell male from female or young from adult. A species is one answer.',
     evaluationSentence(doc?.evaluation),
@@ -106,7 +130,7 @@ export const renderIdentifyPhotoHtml = ({ origin, doc }) => {
 <p>${escapeHtml(INTRO)}</p>
 <p class="identify-privacy">${escapeHtml(PHOTO_PRIVACY_NOTE)}</p>
 <p id="identify-nojs" class="identify-note"><span id="identify-nojs-reason">${escapeHtml(NO_JS_NOTE)}</span> You can still browse the <a href="/families">families</a> and the <a href="/species">species list</a>, or <a href="/search">search by name</a>.</p>
-<section id="identify" class="identify" hidden data-doc="${IDENTIFY_PHOTO_PATH}.json" data-worker="${escapeHtml(identifySrc('/identify-worker.js'))}" data-models="${escapeHtml(photoModelBase)}" data-runtime="${escapeHtml(modelBase)}" data-model-file="${escapeHtml(PHOTO_MODEL.file)}" data-model-bytes="${PHOTO_MODEL.bytes}" data-download-bytes="${photoDownloadBytes}" data-input-size="${PHOTO_MODEL.inputSize}" data-cache="identify-photo-${escapeHtml(PHOTO_MODEL.version)}" data-checks="${escapeHtml(JSON.stringify(modelChecks(photoModelBase + PHOTO_MODEL.file, PHOTO_MODEL.sha256)))}">
+<section id="identify" class="identify" hidden data-doc="${IDENTIFY_PHOTO_PATH}.json" data-worker="${escapeHtml(identifySrc('/identify-worker.js'))}" data-models="${escapeHtml(photoModelBase)}" data-runtime="${escapeHtml(modelBase)}" data-model-file="${escapeHtml(PHOTO_MODEL.file)}" data-model-bytes="${PHOTO_MODEL.bytes}" data-download-bytes="${photoDownloadBytes}" data-input-size="${PHOTO_MODEL.inputSize}" data-cache="identify-photo-${escapeHtml(PHOTO_MODEL.version)}" data-checks="${escapeHtml(JSON.stringify(modelChecks(photoModelBase + PHOTO_MODEL.file, PHOTO_MODEL.sha256)))}" data-detector="${escapeHtml(JSON.stringify(detectorData()))}">
 <p id="identify-status" class="identify-status" role="status" aria-live="polite"></p>
 <div id="identify-consent" hidden>
 <h2>Download the recogniser</h2>
@@ -122,6 +146,10 @@ export const renderIdentifyPhotoHtml = ({ origin, doc }) => {
 <p>${escapeHtml(TIPS)}</p>
 </div>
 <p id="identify-offline" class="identify-note" hidden>${escapeHtml(OFFLINE_NOTE)}</p>
+<div id="identify-upgrade" class="identify-note" hidden>
+<p>${escapeHtml(UPGRADE_NOTE)}</p>
+<button type="button" id="identify-add-finder" class="identify-button identify-quiet">Download automatic cropping (${mebibytes(PHOTO_DETECTOR.bytes)} MiB)</button>
+</div>
 </div>
 <dialog id="identify-cropper" class="identify-cropper" aria-labelledby="identify-crop-heading">
 <div id="identify-stage" class="identify-stage">
@@ -129,6 +157,7 @@ export const renderIdentifyPhotoHtml = ({ origin, doc }) => {
 </div>
 <div class="identify-crop-panel">
 <h2 id="identify-crop-heading" tabindex="-1">Crop to the bird</h2>
+<p id="identify-crop-note" class="identify-note" hidden>${escapeHtml(NO_BIRD_NOTE)}</p>
 <div class="identify-actions">
 <button type="button" id="identify-run" class="identify-button">Identify this bird</button>
 <button type="button" id="identify-cancel" class="identify-button identify-quiet">Cancel</button>
@@ -143,7 +172,8 @@ export const renderIdentifyPhotoHtml = ({ origin, doc }) => {
 <h2 id="identify-results-heading" tabindex="-1">Results</h2>
 <p id="identify-summary"></p>
 <p id="identify-close" hidden></p>
-<p><button type="button" id="identify-recrop" class="identify-button identify-quiet">Change the crop</button></p>
+<p id="identify-found" hidden>${escapeHtml(FOUND_NOTE)}</p>
+<p class="identify-actions"><button type="button" id="identify-recrop" class="identify-button identify-quiet">Change the crop</button> <button type="button" id="identify-next-bird" class="identify-button identify-quiet" hidden>Another bird in this photo</button></p>
 <ol id="identify-list" class="identify-list"></ol>
 <p id="identify-timing" class="identify-timing" hidden></p>
 </section>
@@ -167,7 +197,7 @@ ${weak.map((family) => `<li><a href="/family/${escapeHtml(family.slug)}">${escap
 }
 ${group(`${total.notInModel} species that are not in the model`, list(doc?.notInModel), speciesLink)}
 ${group(`${total.covered} species it can recognise`, list(doc?.covered), (item) => `${speciesLink(item)} (${photos(item.trainingPhotos)})`)}
-<p>The model is the ${escapeHtml(PHOTO_MODEL_CREDIT.name)}, trained for this guide on ${Number(doc?.model?.trainingPhotos ?? 0).toLocaleString('en')} openly licensed iNaturalist photographs. See the <a href="${escapeHtml(MODEL_CARD_URL)}">model card</a>, the <a href="${escapeHtml(TRAINING_MANIFEST_URL)}">list of training photographs</a> and the <a href="/credits">credits</a>. To build on the model, its weights, training code and test photographs are <a href="${escapeHtml(doc?.model?.huggingFace ?? PHOTO_MODEL_HUB_URL)}">published on Hugging Face</a> under ${escapeHtml(PHOTO_MODEL_CREDIT.licence)}; this page never downloads from there.</p>`
+<p>The model is the ${escapeHtml(PHOTO_MODEL_CREDIT.name)}, trained for this guide on ${Number(doc?.model?.trainingPhotos ?? 0).toLocaleString('en')} openly licensed iNaturalist photographs. See the <a href="${escapeHtml(MODEL_CARD_URL)}">model card</a>, the <a href="${escapeHtml(TRAINING_MANIFEST_URL)}">list of training photographs</a> and the <a href="/credits">credits</a>. To build on the model, its weights, training code and test photographs are <a href="${escapeHtml(doc?.model?.huggingFace ?? PHOTO_MODEL_HUB_URL)}">published on Hugging Face</a> under ${escapeHtml(PHOTO_MODEL_CREDIT.licence)}; this page never downloads from there. The bird is found with ${escapeHtml(PHOTO_DETECTOR_CREDIT.name)}, a general object detector from Google (${escapeHtml(PHOTO_DETECTOR_CREDIT.licence)}), with its weights unchanged.</p>`
   return layout({
     title: 'Identify by photo · KNP Birds',
     description:
@@ -203,7 +233,8 @@ This is an interactive page for people. It needs a browser with JavaScript and W
 - ${PHOTO_PRIVACY_NOTE}
 - ${DOWNLOAD_NOTE} The visitor is asked before the download starts.
 - The model is the ${PHOTO_MODEL_CREDIT.name} (version \`${inlineText(doc?.model?.version ?? PHOTO_MODEL.version)}\`): ${inlineText(doc?.model?.baseModel ?? 'a compact image classifier')} fine-tuned on ${Number(doc?.model?.trainingPhotos ?? 0).toLocaleString('en')} openly licensed, research-grade iNaturalist photographs. It runs with ${PHOTO_MODEL_CREDIT.runtime.name} as WebAssembly in a Web Worker. The model is served from this site, under \`${photoModelBase}\`.
-- The visitor crops the photo to a square around the bird. The square is shrunk to ${PHOTO_MODEL.inputSize} × ${PHOTO_MODEL.inputSize} pixels and scored once. The model returns one score per species; a family scores the sum of its species.
+- A second, smaller model finds the bird: ${PHOTO_DETECTOR_CREDIT.name} (${PHOTO_DETECTOR_CREDIT.licence}, trained on COCO, weights unchanged, served from \`${photoDetectorBase}\`). The page takes the largest box it labels a bird with a score of at least ${PHOTO_DETECTOR.score}, widens it to a square with a margin, and shows the crop it used beside the results. The visitor can change the crop, or try another bird when several were found. When no bird is found, the visitor puts the square on the bird.
+- The square is shrunk to ${PHOTO_MODEL.inputSize} × ${PHOTO_MODEL.inputSize} pixels and scored once. The model returns one score per species; a family scores the sum of its species.
 - Only species in this guide can be returned.
 - [Model card](${MODEL_CARD_URL}) · [Training photographs, with photographer and licence](${TRAINING_MANIFEST_URL})
 - The weights, the PyTorch weights they were converted from, the training code and the test photographs are [published on Hugging Face](${doc?.model?.huggingFace ?? PHOTO_MODEL_HUB_URL}) under ${PHOTO_MODEL_CREDIT.licence}, at a revision tagged with the model version. The site itself never downloads from there.
@@ -250,7 +281,9 @@ export const identifyPhotoJson = (doc) => ({
   privacy: PHOTO_PRIVACY_NOTE,
   reading: reading(doc),
   credit: PHOTO_MODEL_CREDIT,
+  detectorCredit: PHOTO_DETECTOR_CREDIT,
   assets: {
+    detector: detectorData(),
     base: photoModelBase,
     runtime: modelBase,
     version: PHOTO_MODEL.version,

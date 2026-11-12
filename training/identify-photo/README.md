@@ -64,6 +64,20 @@ export SSL_CERT_FILE=$(.venv/bin/python -m certifi)   # the python.org build has
 | 8 | `.venv/bin/python analyse.py runs/mnv4m-2/eval-probs-int8.npy mnv4m-2-int8 > analysis-mnv4m-2.md` | the tables in the model card |
 | 9 | `.venv/bin/python describe.py mnv4m-2 int8 knp-photo-1-mnv4m-288-int8` | `data/models/photo-model.tflite`, `data/identify/photo-model.json` |
 
+The detector that finds the bird for the page (issue 180) is not trained here. It is Google's EfficientDet-Lite0,
+with its last step removed so that LiteRT.js can run it:
+
+| Step | Command | Writes |
+| --- | --- | --- |
+| 10 | `curl -L -o models/efficientdet-lite0.tflite "https://tfhub.dev/tensorflow/lite-model/efficientdet/lite0/detection/metadata/1?lite-format=tflite"` | Google's file (Apache 2.0), 4,563,519 bytes |
+| 11 | `.venv-export/bin/python strip-detector.py efficientdet-lite0` | `models/efficientdet-lite0-raw.tflite` and `data/models/bird-detector.tflite`; prints the size and SHA-256 for `PHOTO_DETECTOR` in `src/identify.js` |
+| 12 | `.venv-export/bin/python score-detect.py efficientdet-lite0` | `detect-efficientdet-lite0.json`: detector-then-recogniser on the test photos, for the model card |
+
+Steps 11 and 12 need `ai-edge-litert`, `pillow` and `numpy` in `.venv-export`, the test photos in `photos/eval/`
+and `data/models/photo-model.tflite`. Both models and the test photos can be fetched instead of rebuilt: the
+recogniser and the photos are at https://huggingface.co/FTruter/knp-birds-photo, and the photos are also the
+`eval` rows of `manifest.csv.gz`.
+
 Then, in the repository root:
 
 1. Copy the `version`, `inputSize`, `bytes` and `sha256` that step 9 prints into `PHOTO_MODEL` in
@@ -71,7 +85,7 @@ Then, in the repository root:
 2. `node scripts/seed.mjs --write` and `pnpm test`. With the model on disk, `test/identify-photo-browser.test.js`
    runs it in Chromium and WebKit on a test photo.
 3. `pnpm run models:publish -- --only photo`, before deploying a Worker that names the new version. It uploads
-   the model to R2 and then publishes it on Hugging Face (weights, model card, this folder, the test photos),
+   the model and the detector (`data/models/bird-detector.tflite`) to R2 and then publishes it on Hugging Face (weights, model card, this folder, the test photos),
    tagged with the version. Try it first with `--dry-run`; `--no-hf` uploads to R2 only. Hugging Face needs
    the `hf` command (`uv tool install huggingface_hub`, then `hf auth login`) and `photos/eval/` on disk.
 
@@ -121,4 +135,6 @@ model would still return it: retrain first.
 | `train.py` | Fine-tunes the pretrained model. The backbone learning rate must stay near 0.00005 |
 | `export.py` | Converts to LiteRT, with scaling and softmax inside the file, in three weight formats |
 | `score-tflite.py`, `score-sizes.py`, `analyse.py` | Test-set scores of the exported files, of other input sizes, and the per-family tables |
+| `strip-detector.py` | Removes the last step of Google's detector file and checks the page's anchor arithmetic against it |
+| `score-detect.py` | Detector-then-recogniser on the test photos, with the boxes picked as the page picks them |
 | `describe.py` | Hands the chosen file, the PyTorch weights it came from and its numbers to the site |

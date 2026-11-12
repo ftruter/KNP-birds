@@ -103,6 +103,127 @@ Species least often in the top three include Barratt's Warbler (29%), Horus Swif
 Sunbird, Sooty Falcon, Southern Grey-headed Sparrow and Grey-rumped Swallow (58% each). The full tables are
 written by `training/identify-photo/analyse.py`.
 
+## Finding the bird and cropping to it (issue 180)
+
+The page no longer asks the visitor to put a square on the bird first. A second, smaller model finds the bird,
+the page crops to it and goes straight to recognition. The crop that was used is shown beside every result,
+and "Change the crop" opens the crop view on it. When no bird is found the crop view opens as before, with a
+line saying so.
+
+### The detector
+
+- EfficientDet-Lite0 (Tan, Pang and Le, 2020), Google's 8-bit file from TensorFlow Hub
+  (`efficientdet/lite0/detection/metadata/1`), trained on COCO 2017, which has a "bird" class. The publisher
+  gives its licence as Apache 2.0. It is a general object detector and was not trained here.
+- Input: a 320 × 320 pixel square. The whole photo is drawn into it in its own shape, against the top left
+  corner, with mid grey filling the rest.
+- **One change to the file.** Its last step picks the best 25 boxes, and the size of that step's outputs is
+  not fixed, which LiteRT.js cannot run (it fails with "Insufficient buffer size"). `strip-detector.py`
+  removes that step and nothing else. The file then returns, for each of 19,206 fixed anchor boxes, a score
+  for each of 90 classes and four numbers that move and resize the anchor. The page does the picking
+  (`birdBoxes` in `src/client/identify-photo.js`): anchors that score at least 0.3 as "bird"; where two boxes
+  overlap by more than half, the better one. The weights are untouched. `strip-detector.py` also checks that
+  the anchors the page works out are the ones stored in Google's file.
+- File: 4,562,456 bytes (4.4 MiB), `models/efficientdet-lite0-coco-raw-1/bird-detector.tflite` in R2. It is
+  not republished on Hugging Face.
+- The crop: the largest bird box, widened to a square, with 35% of the box's longer side added all round,
+  kept inside the photo.
+
+### The comparison
+
+`training/identify-photo/score-detect.py` ran detector-then-recogniser over the same 5,889 test photos, with
+the box picking written as the page does it. Results are in `training/identify-photo/detect-*.json`.
+
+**There are no hand-crop results to compare with.** Nobody cropped the test photos to the bird (see "Test
+photos"). The two crops the comparison is made against use no detector: the middle 88% of the frame, which
+the published results use, and the whole middle square, which is what the page did when the visitor pressed
+Identify without moving the square. Where the detector finds no bird, the automatic figure uses the whole
+middle square, because on the page the visitor is then asked to crop.
+
+| Crop | Right species first | In the top three | Right family |
+| --- | --- | --- | --- |
+| Whole middle square (the page before, square not moved) | 81.3% | 91.3% | 91.0% |
+| Middle 88% (as the published results) | 82.7% | 92.5% | 92.2% |
+| **Automatic: EfficientDet-Lite0, score 0.3, margin 35%** | **83.8%** | **92.6%** | **92.6%** |
+
+Automatic cropping is not worse on any measure, so it is the default and the manual step is the fallback.
+(The middle-88% row is 0.3 to 0.4 points off the published 82.3%, 92.2% and 92.4% because this script
+shrinks the crop in one step, as the page does, where `score-tflite.py` shrinks the photo and then crops.)
+
+The detector found a bird in 5,325 of the 5,889 photos (90.4%). On the 564 where it found none, the whole
+middle square is right first time for 58.5%, in the top three for 72.7%, and on family for 71.6%: these are
+the hard photos, and they are the ones where the visitor is still asked to crop.
+
+### Small and distant birds
+
+By how much of the photo the detected bird's box covers. The gain is almost all in the smallest group.
+
+| Bird's box covers | Photos | First, automatic | First, whole square | First, middle 88% | Top three, automatic | Top three, whole square |
+| --- | --- | --- | --- | --- | --- | --- |
+| Under 5% of the photo | 939 | 76.8% | 65.8% | 71.1% | 87.9% | 82.5% |
+| 5% to 20% | 2,267 | 86.9% | 85.0% | 86.3% | 95.4% | 94.4% |
+| 20% to 50% | 1,835 | 90.1% | 89.9% | 89.7% | 96.9% | 96.6% |
+| 50% or more | 284 | 91.9% | 91.9% | 91.9% | 97.9% | 97.5% |
+| No bird found | 564 | (58.5%) | 58.5% | not split out | (72.7%) | 72.7% |
+
+The groups are made from the detector's own boxes, so a small bird it missed is in the last row, not the
+first. There is no independent count of small birds in the test photos.
+
+### Choices measured
+
+Score cut-off and margin, EfficientDet-Lite0, all 5,889 photos (species first / top three / family):
+
+| Score at least | Photos with a bird found | Margin 0 | Margin 10% | Margin 20% | Margin 35% | Margin 50% |
+| --- | --- | --- | --- | --- | --- | --- |
+| 0.2 | 93.4% | 82.5 / 91.6 / 91.7 | 83.0 / 92.4 / 92.5 | 83.6 / 92.7 / 92.8 | 83.7 / 92.9 / 92.9 | 83.2 / 92.9 / 92.8 |
+| 0.3 | 90.4% | 82.7 / 91.6 / 91.8 | 83.1 / 92.4 / 92.3 | 83.5 / 92.7 / 92.5 | 83.8 / 92.6 / 92.6 | 83.3 / 92.7 / 92.6 |
+| 0.4 | 86.3% | 82.8 / 91.8 / 92.0 | 83.0 / 92.6 / 92.5 | 83.5 / 92.8 / 92.6 | 83.8 / 92.6 / 92.7 | 83.3 / 92.5 / 92.6 |
+| 0.5 | 81.1% | 82.6 / 91.7 / 91.9 | 82.8 / 92.4 / 92.3 | 83.2 / 92.7 / 92.4 | 83.4 / 92.5 / 92.5 | 82.8 / 92.3 / 92.3 |
+
+A tight box (no margin) is worse than the middle 88%: the recogniser was trained on photos with some
+surroundings. The differences between cut-offs are within a few tenths of a point; 0.3 was taken as the
+middle of the flat part.
+
+Larger detectors from the same family, at score 0.3 and margin 35%:
+
+| Detector | File | Input | Bird found | Species first | Top three | Family |
+| --- | --- | --- | --- | --- | --- | --- |
+| EfficientDet-Lite0 (shipped) | 4.4 MiB | 320 | 90.4% | 83.8% | 92.6% | 92.6% |
+| EfficientDet-Lite1 | 5.8 MiB | 384 | 92.5% | 84.0% | 93.1% | 92.8% |
+| EfficientDet-Lite2 | 7.2 MiB | 448 | 93.7% | 84.1% | 93.3% | 93.0% |
+
+Lite2 gains 0.3 points on species first for 2.8 MiB more download and about twice the work per photo
+(Google's published phone figures: 36 ms for Lite0, 69 ms for Lite2). Lite0 was chosen. If phone photos show that small
+birds are missed too often, Lite2 is a drop-in change: `strip-detector.py efficientdet-lite2`.
+
+### Several birds
+
+The page crops to the largest bird box. Other boxes are offered through "Another bird in this photo", but only
+those that score at least 0.5, because fainter ones are often leaves or stones: on the test photos, 15.2% have
+two or more boxes at 0.3 and 5.9% at 0.5, and most of those photos show one bird. That count was not checked
+by eye.
+
+### Cost
+
+- Download: 4.4 MiB more, once. The page now quotes 24.6 MiB (9.3 MiB recogniser, 4.4 MiB detector, 10.9 MiB
+  runtime). A visitor who already has the recogniser is not sent the detector unasked: the page works as
+  before and offers it as a separate download. The "Photo recognition model" option of the installed app
+  includes it and shows as an update.
+- Time: one more run of a model per photo. In desktop Chromium on the development machine (Apple M5 Max) the
+  page reported 49 ms to find the bird and 48 ms to recognise it. The page shows both figures (issue 178).
+  **No phone has been measured.**
+
+### What was not measured
+
+- **Phone photos.** The test photos are at most 500 pixels on the longer side and most are already framed on
+  the bird. On a phone photo the bird is often far smaller in the frame; that is where the detector is most
+  likely to miss, and where cropping matters most. The detector sees the whole photo at 320 pixels, so a bird
+  under about a twentieth of the frame's width is only a few pixels to it.
+- Whether a wrong box (a different bird, or not a bird) is worse than no box. The results above include those
+  cases but do not count them.
+- Birds the COCO "bird" class knows poorly. It was trained on everyday photographs; an ostrich, a nightjar on
+  the ground or a bird in flight far off may not be found. Not split out by family.
+
 ## Permissive-only comparison (for issue 158)
 
 The owner wants the published weights to be as permissive as possible. A second model was trained on CC0 and
@@ -159,7 +280,8 @@ are a derivative of their training photos is not settled law):
 - **Not measured on a phone.** Speed and memory were measured on a desktop computer and in desktop Chromium
   and WebKit only. No Android phone or iPhone has run it.
 - **The test photos are iNaturalist photos.** Many are taken with long lenses by practised observers. A phone
-  photo of a small, distant bird will do worse than these numbers; the crop square on the page exists to help.
+  photo of a small, distant bird will do worse than these numbers; the page crops to the bird to help (see
+  "Finding the bird and cropping to it").
 - **The cut-offs are a starting point.** They come from the test photos above and should be reset once phone
   photos have been scored.
 - **Twelve test photos a species is few.** A per-species figure moves 8 points with one photo.

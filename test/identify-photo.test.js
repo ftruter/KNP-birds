@@ -5,11 +5,16 @@ import source from '../src/client/identify-photo.js'
 import workerSource from '../src/client/identify-worker.js'
 import {
   MODEL_ASSETS,
+  PHOTO_DETECTOR,
   PHOTO_MODEL,
   TRAINING_MANIFEST_URL,
   deriveIdentifyPhoto,
+  mebibytes,
   modelBase,
+  photoDetectorBase,
+  photoDownloadBytes,
   photoModelBase,
+  runtimeBytes,
 } from '../src/identify.js'
 import { weakFamilies } from '../src/identify-photo-page.js'
 import { IDENTIFY_CSP } from '../src/respond.js'
@@ -127,7 +132,12 @@ test('without javascript the page explains itself and links onward', async () =>
     body,
     /id="identify-status"[^>]*role="status" aria-live="polite"/,
   )
-  assert.match(body, /Download the recogniser \(about 20\.2 MiB\)/)
+  assert.match(
+    body,
+    new RegExp(
+      `Download the recogniser \\(about ${mebibytes(photoDownloadBytes)} MiB\\)`,
+    ),
+  )
   // The crop square has a label, keyboard help and buttons that do the same.
   assert.match(
     body,
@@ -589,8 +599,13 @@ test('the photo model is credited, and the page is in the sitemap, the home page
   assert.match(markdown, /\[Identify by photo\]\(\/identify\/photo\.md\)/)
   assert.ok(markdown.includes(TRAINING_MANIFEST_URL))
   const stored = await (await fetch('/credits.json')).json()
-  assert.equal(stored.models.length, 2)
+  assert.equal(stored.models.length, 3)
   assert.equal(stored.models[1].page.href, '/identify/photo')
+  // The detector that finds the bird is someone else's model, credited too.
+  assert.equal(stored.models[2].name, 'EfficientDet-Lite0')
+  assert.equal(stored.models[2].licence, 'Apache-2.0')
+  assert.equal(stored.models[2].page.href, '/identify/photo')
+  assert.match(credits, /EfficientDet-Lite0/)
 
   const xml = await (await fetch('/sitemap.xml')).text()
   assert.match(
@@ -607,7 +622,216 @@ test('the photo model is credited, and the page is in the sitemap, the home page
   assert.match(llms, /\/identify\/photo\.json/)
 })
 
+test('the detector is served from its own folder, and the page tells the script how to use it', async () => {
+  assert.notEqual(PHOTO_DETECTOR.version, PHOTO_MODEL.version)
+  assert.notEqual(PHOTO_DETECTOR.version, MODEL_ASSETS.version)
+  const bytes = new Uint8Array([1, 2, 3])
+  const fetch = await site({
+    [`models/${PHOTO_DETECTOR.version}/${PHOTO_DETECTOR.file}`]: {
+      body: new Blob([bytes]).stream(),
+      size: bytes.byteLength,
+      httpEtag: '"d"',
+      httpMetadata: {},
+    },
+  })
+  const file = await fetch(photoDetectorBase + PHOTO_DETECTOR.file)
+  assert.equal(file.status, 200)
+  assert.equal(file.headers.get('cache-control'), MODEL_CACHE)
+  const body = await (await fetch('/identify/photo')).text()
+  const given = JSON.parse(
+    body
+      .match(/data-detector="([^"]*)"/)[1]
+      .replaceAll('&quot;', '"')
+      .replaceAll('&amp;', '&'),
+  )
+  assert.deepEqual(given, {
+    url: photoDetectorBase + PHOTO_DETECTOR.file,
+    bytes: PHOTO_DETECTOR.bytes,
+    sha256: PHOTO_DETECTOR.sha256,
+    inputSize: PHOTO_DETECTOR.inputSize,
+    birdClass: PHOTO_DETECTOR.birdClass,
+    score: PHOTO_DETECTOR.score,
+    overlap: PHOTO_DETECTOR.overlap,
+    margin: PHOTO_DETECTOR.margin,
+    another: PHOTO_DETECTOR.another,
+  })
+  // The quoted download is everything a first visit fetches.
+  assert.equal(
+    photoDownloadBytes,
+    PHOTO_MODEL.bytes + PHOTO_DETECTOR.bytes + runtimeBytes,
+  )
+  assert.ok(
+    body.includes(`${mebibytes(PHOTO_DETECTOR.bytes)} MiB model that finds it`),
+  )
+  // What the page says when it found the bird, when it did not, and to a
+  // visitor whose saved recogniser has no detector yet: all there, all hidden.
+  assert.match(body, /<p id="identify-found" hidden>This page found the bird/)
+  assert.match(
+    body,
+    /<p id="identify-crop-note" class="identify-note" hidden>No bird was found automatically\./,
+  )
+  assert.match(body, /<div id="identify-upgrade" class="identify-note" hidden>/)
+  assert.match(
+    body,
+    /<button type="button" id="identify-next-bird" class="identify-button identify-quiet" hidden>/,
+  )
+  const data = await (await fetch('/identify/photo.json')).json()
+  assert.equal(data.assets.detector.url, given.url)
+  assert.equal(data.detectorCredit.licence, 'Apache-2.0')
+  const markdown = await (await fetch('/identify/photo.md')).text()
+  assert.match(
+    markdown,
+    /EfficientDet-Lite0 \(Apache-2\.0, trained on COCO, weights unchanged/,
+  )
+})
+
+test('the page picks the same bird boxes as the scoring script', async () => {
+  const fixture = await readJson(
+    'test/fixtures/identify-photo/detector-barbet.json',
+  )
+  const { width, height, size } = fixture
+  const found = {
+    anchors: Int32Array.from(fixture.anchors),
+    scores: Float32Array.from(fixture.scores),
+    shifts: Float32Array.from(fixture.shifts),
+  }
+  const unit = Math.max(width, height)
+  const pick = (score) =>
+    client.birdBoxes(found, {
+      width,
+      height,
+      size,
+      score,
+      overlap: PHOTO_DETECTOR.overlap,
+    })
+  for (const score of [0.05, PHOTO_DETECTOR.score, 0.6]) {
+    const birds = pick(score)
+    // The script's boxes, cut off at the photo's edges like the page's.
+    const expected = fixture.picked
+      .filter(([value]) => value >= score)
+      .map(([value, top, left, bottom, right]) => ({
+        score: value,
+        left: Math.max(0, left * unit),
+        top: Math.max(0, top * unit),
+        right: Math.min(width, right * unit),
+        bottom: Math.min(height, bottom * unit),
+      }))
+      .filter((box) => box.right > box.left && box.bottom > box.top)
+    assert.equal(birds.length, expected.length, `at ${score}`)
+    assert.ok(birds.length > 0)
+    for (const [index, wanted] of expected.entries())
+      assert.ok(
+        birds.some((box) =>
+          ['left', 'top', 'right', 'bottom', 'score'].every(
+            (edge) => Math.abs(box[edge] - wanted[edge]) < 0.05,
+          ),
+        ),
+        `box ${index} at ${score}: ${JSON.stringify(wanted)}`,
+      )
+    // Largest first, which is the bird the page crops to.
+    const areas = birds.map(
+      (box) => (box.right - box.left) * (box.bottom - box.top),
+    )
+    assert.deepEqual(
+      areas,
+      [...areas].sort((a, b) => b - a),
+    )
+  }
+  // The barbet is the largest box, a little left of the middle of the frame.
+  const [barbet] = pick(PHOTO_DETECTOR.score)
+  assert.ok(barbet.left > 150 && barbet.right < 370, JSON.stringify(barbet))
+  assert.ok(barbet.top > 100 && barbet.bottom < 300, JSON.stringify(barbet))
+  // Nothing found is an empty list.
+  assert.deepEqual(
+    client.birdBoxes(
+      {
+        anchors: new Int32Array(0),
+        scores: new Float32Array(0),
+        shifts: new Float32Array(0),
+      },
+      { width, height, size, score: 0.3, overlap: 0.5 },
+    ),
+    [],
+  )
+})
+
+test('the anchors are five grids of nine boxes a cell', () => {
+  // 320 pixels: 40, 20, 10, 5 and 3 cells a side.
+  assert.equal(
+    [40, 20, 10, 5, 3].reduce((sum, cells) => sum + cells * cells * 9, 0),
+    19206,
+  )
+  const close = (actual, expected) =>
+    assert.ok(Math.abs(actual - expected) < 1e-4, `${actual}, ${expected}`)
+  // Values read from the anchors stored in Google's file.
+  const first = client.anchorBox(0, 320)
+  close(first.y, 0.0125)
+  close(first.x, 0.0125)
+  close(first.height, 0.075)
+  close(first.width, 0.075)
+  const wide = client.anchorBox(10, 320)
+  close(wide.x, 0.0375)
+  close(wide.height, 0.053)
+  close(wide.width, 0.1061)
+  const coarse = client.anchorBox(14400, 320)
+  close(coarse.y, 0.025)
+  close(coarse.height, 0.15)
+  const last = client.anchorBox(19205, 320)
+  close(last.y, 0.8333)
+  close(last.x, 0.8333)
+  close(last.height, 2.2449)
+  close(last.width, 1.1225)
+  assert.equal(client.anchorBox(19206, 320), null)
+})
+
+test('a detected bird becomes a square with a margin, inside the photo', () => {
+  const box = { left: 400, top: 200, right: 500, bottom: 260 }
+  // 100 wide: with 0.35 all round, 170 square, centred on the box.
+  assert.deepEqual(client.boxCrop(box, 0.35, 1000, 500), {
+    x: 365,
+    y: 145,
+    size: 170,
+  })
+  // At a corner the square moves in and keeps its size.
+  const corner = client.boxCrop(
+    { left: 0, top: 0, right: 100, bottom: 60 },
+    0.35,
+    1000,
+    500,
+  )
+  assert.deepEqual(corner, { x: 0, y: 0, size: 170 })
+  // A bird that fills the photo gets the largest square there is.
+  assert.deepEqual(
+    client.boxCrop(
+      { left: 0, top: 0, right: 1000, bottom: 500 },
+      0.35,
+      1000,
+      500,
+    ),
+    { x: 250, y: 0, size: 500 },
+  )
+  // A speck still gets the smallest square the page allows.
+  const speck = client.boxCrop(
+    { left: 500, top: 250, right: 502, bottom: 252 },
+    0.35,
+    1000,
+    500,
+  )
+  assert.equal(speck.size, 500 * client.MIN_CROP)
+  assert.deepEqual(
+    [...client.toBytes(new Uint8ClampedArray([255, 0, 10, 255, 1, 2, 3, 0]))],
+    [255, 0, 10, 1, 2, 3],
+  )
+})
+
 test('the photo page says how long recognition took', () => {
+  assert.equal(
+    client.timingText(
+      { runs: [69], total: 69, build: 'relaxed-simd' },
+      { runs: [31.4], total: 31.4, build: 'relaxed-simd' },
+    ),
+    'Found the bird in 31 ms and recognised it in 69 ms on this device. Runtime: relaxed SIMD build.',
+  )
   assert.equal(client.timingText(undefined), '')
   assert.equal(client.timingText({ runs: [], total: 0, build: null }), '')
   assert.equal(

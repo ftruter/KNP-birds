@@ -6,6 +6,7 @@ import { test } from 'node:test'
 import { fileURLToPath } from 'node:url'
 import {
   MODEL_ASSETS,
+  PHOTO_DETECTOR,
   PHOTO_MODEL,
   downloadBytes,
   modelBase,
@@ -195,6 +196,15 @@ test('the six options are listed in order with sizes added up from the files', a
       assert.equal(sound.bytes, downloadBytes + loader.bytes)
       assert.equal(photo.bytes, photoDownloadBytes + loader.bytes)
     }
+    // The detector that finds the bird comes with the photo model, checked
+    // like it, in the cache the photo page reads.
+    const detector = photo.files.find((file) =>
+      file.url.endsWith(PHOTO_DETECTOR.file),
+    )
+    assert.equal(detector.bytes, PHOTO_DETECTOR.bytes)
+    assert.equal(detector.sha256, PHOTO_DETECTOR.sha256)
+    assert.equal(detector.cache, photo.files[0].cache)
+    assert.ok(!sound.files.some((file) => file.url === detector.url))
     // The models go where the identify pages look for them.
     assert.equal(sound.files[0].cache, `identify-sound-${MODEL_ASSETS.version}`)
     assert.equal(photo.files[0].cache, `identify-photo-${PHOTO_MODEL.version}`)

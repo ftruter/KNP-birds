@@ -5,8 +5,10 @@ import {
   IDENTIFY_PHOTO_PATH,
   IDENTIFY_SOUND_PATH,
   MODEL_ASSETS,
+  PHOTO_DETECTOR,
   PHOTO_MODEL,
   modelBase,
+  photoDetectorBase,
   photoModelBase,
 } from './identify.js'
 import {
@@ -130,6 +132,13 @@ export const offlineManifest = (doc, version = '') => {
         bytes: PHOTO_MODEL.bytes,
         cache: PHOTO_CACHE,
         sha256: PHOTO_MODEL.sha256,
+      }),
+      // The detector that finds the bird, in the photo page's cache.
+      add({
+        url: photoDetectorBase + PHOTO_DETECTOR.file,
+        bytes: PHOTO_DETECTOR.bytes,
+        cache: PHOTO_CACHE,
+        sha256: PHOTO_DETECTOR.sha256,
       }),
       ...runtimeFiles().map(add),
     ],

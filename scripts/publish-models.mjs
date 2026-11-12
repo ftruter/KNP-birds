@@ -11,6 +11,7 @@
  *   node scripts/publish-models.mjs --only photo     (or --only sound)
  *   node scripts/publish-models.mjs --model path/to/audio-model-fp16.tflite
  *   node scripts/publish-models.mjs --photo-model path/to/photo-model.tflite
+ *   node scripts/publish-models.mjs --photo-detector path/to/bird-detector.tflite
  *   node scripts/publish-models.mjs --only photo --no-hf    (R2 only)
  *   node scripts/publish-models.mjs --hf-only               (Hugging Face only)
  *
@@ -27,6 +28,13 @@
  *
  * The photo model is not in the repository either. training/identify-photo
  * builds it and puts it in data/models/photo-model.tflite (see its README).
+ *
+ * The photo page's detector, which finds the bird (issue 180), is Google's
+ * EfficientDet-Lite0 with its last step removed, in its own version folder.
+ * It is not in the repository and not on Hugging Face:
+ * training/identify-photo/strip-detector.py makes it from Google's file and
+ * puts it in data/models/bird-detector.tflite (see that folder's README).
+ * It goes with --only photo.
  *
  * The model is not in the repository. Download BirdNET_v2.4_tflite_fp16.zip
  * from https://zenodo.org/records/15050749 and unpack it; by default the
@@ -49,6 +57,7 @@ import {
   HUGGING_FACE_URL,
   MODEL_ASSETS,
   MODEL_PREFIX,
+  PHOTO_DETECTOR,
   PHOTO_MODEL,
   mebibytes,
 } from '../src/identify.js'
@@ -74,6 +83,13 @@ export const DEFAULT_PHOTO_MODEL = path.join(
   'data',
   'models',
   PHOTO_MODEL.file,
+)
+
+export const DEFAULT_PHOTO_DETECTOR = path.join(
+  root,
+  'data',
+  'models',
+  PHOTO_DETECTOR.file,
 )
 
 const CONTENT_TYPE = {
@@ -147,6 +163,25 @@ export const modelFiles = async (modelPath = DEFAULT_MODEL) => {
   ]
 }
 
+/** The detector that finds the bird for the photo page, read and checked. */
+export const photoDetectorFiles = async (
+  detectorPath = DEFAULT_PHOTO_DETECTOR,
+) => {
+  const detector = await readFile(detectorPath).catch(() => {
+    throw new Error(
+      `No detector at ${detectorPath}. Make it with training/identify-photo/strip-detector.py (see that folder's README), or pass --photo-detector <path to ${PHOTO_DETECTOR.file}>.`,
+    )
+  })
+  return [
+    {
+      file: PHOTO_DETECTOR.file,
+      bytes: verified(PHOTO_DETECTOR.file, detector, PHOTO_DETECTOR),
+      key: `${MODEL_PREFIX}/${PHOTO_DETECTOR.version}/${PHOTO_DETECTOR.file}`,
+      contentType: CONTENT_TYPE['.tflite'],
+    },
+  ]
+}
+
 /** The photo model of the current version, read and checked. Its runtime is the sound page's. */
 export const photoModelFiles = async (modelPath = DEFAULT_PHOTO_MODEL) => {
   const model = await readFile(modelPath).catch(() => {
@@ -167,6 +202,7 @@ export const photoModelFiles = async (modelPath = DEFAULT_PHOTO_MODEL) => {
 export const publishModels = async ({
   modelPath,
   photoModelPath,
+  photoDetectorPath,
   photoWeightsPath,
   evalPhotosDir,
   only = null,
@@ -176,7 +212,11 @@ export const publishModels = async ({
   huggingFaceOnly = false,
   huggingFaceOut = null,
   run = runWrangler,
-  read = { sound: modelFiles, photo: photoModelFiles },
+  read = {
+    sound: modelFiles,
+    photo: photoModelFiles,
+    detector: photoDetectorFiles,
+  },
   stage = huggingFaceFiles,
   upload = uploadHuggingFace,
   log = console.log,
@@ -192,6 +232,9 @@ export const publishModels = async ({
     : [
         ...(only === 'photo' ? [] : await read.sound(modelPath)),
         ...(only === 'sound' ? [] : await read.photo(photoModelPath)),
+        ...(only === 'sound' || !read.detector
+          ? []
+          : await read.detector(photoDetectorPath)),
       ]
   // Read and check the Hugging Face copy before anything is uploaded anywhere.
   const hub =
@@ -286,6 +329,7 @@ if (
   publishModels({
     modelPath: file('--model'),
     photoModelPath: file('--photo-model'),
+    photoDetectorPath: file('--photo-detector'),
     photoWeightsPath: file('--photo-weights'),
     evalPhotosDir: file('--eval-photos'),
     huggingFace: !args.includes('--no-hf'),

@@ -4,8 +4,11 @@ import path from 'node:path'
 import { test, before, after } from 'node:test'
 import { fileURLToPath } from 'node:url'
 import { chromium, webkit } from 'playwright'
+import { mebibytes, photoDownloadBytes } from '../src/identify.js'
 import {
+  DEFAULT_PHOTO_DETECTOR,
   DEFAULT_PHOTO_MODEL,
+  photoDetectorFiles,
   photoModelFiles,
   runtimeFiles,
 } from '../scripts/publish-models.mjs'
@@ -15,6 +18,9 @@ import { startBundledSite } from './bundle-site.js'
 // the repository, so the test is skipped unless it is on disk:
 //   IDENTIFY_PHOTO_MODEL  photo-model.tflite (default: data/models/, where
 //                         training/identify-photo/describe.py puts it)
+//   IDENTIFY_PHOTO_DETECTOR  efficientdet-lite0.tflite (default: data/models/;
+//                         PHOTO_DETECTOR.source in src/identify.js says
+//                         where to download it)
 // The photo is in the repository: a CC0 picture, see its README.
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..')
 const modelPath = process.env.IDENTIFY_PHOTO_MODEL || DEFAULT_PHOTO_MODEL
@@ -28,12 +34,18 @@ const EXPECTED = {
   latin: 'Trachyphonus vaillantii',
 }
 
-const skip = (await access(modelPath).then(
-  () => true,
-  () => false,
-))
-  ? false
-  : `no photo model at ${modelPath}`
+const detectorPath =
+  process.env.IDENTIFY_PHOTO_DETECTOR || DEFAULT_PHOTO_DETECTOR
+const onDisk = (file) =>
+  access(file).then(
+    () => true,
+    () => false,
+  )
+const skip = !(await onDisk(modelPath))
+  ? `no photo model at ${modelPath}`
+  : !(await onDisk(detectorPath))
+    ? `no detector at ${detectorPath}`
+    : false
 
 let site
 
@@ -44,6 +56,7 @@ before(
     const bucket = await site.mf.getR2Bucket('IMAGES')
     for (const entry of [
       ...(await photoModelFiles(modelPath)),
+      ...(await photoDetectorFiles(detectorPath)),
       ...(await runtimeFiles()),
     ])
       await bucket.put(entry.key, entry.bytes)
@@ -185,7 +198,11 @@ const identifyPhoto = async (browser, { keepsCache }) => {
     })
     const download = page.locator('#identify-download')
     await download.waitFor({ state: 'visible' })
-    assert.match(await download.textContent(), /about 20\.2 MiB/)
+    assert.ok(
+      (await download.textContent()).includes(
+        `about ${mebibytes(photoDownloadBytes)} MiB`,
+      ),
+    )
     assert.equal(await page.locator('#identify-capture').isVisible(), false)
     assert.deepEqual(requested, [])
 
@@ -201,16 +218,52 @@ const identifyPhoto = async (browser, { keepsCache }) => {
       await page.locator('#identify-camera').getAttribute('capture'),
       'environment',
     )
+    // A photo with one clear bird: the page finds it, crops to it and names
+    // it, with no cropping step.
     await page.locator('#identify-file').setInputFiles(photoPath)
+    await page
+      .locator('#identify-results')
+      .waitFor({ state: 'visible', timeout: 120000 })
+    assert.equal(await page.locator('#identify-cropper').isVisible(), false)
+    assert.equal(
+      await page.locator('#identify-list > li h3 a').first().textContent(),
+      EXPECTED.name,
+    )
+    assert.equal(await page.locator('#identify-found').isVisible(), true)
+    assert.equal(await page.locator('#identify-upgrade').isVisible(), false)
+    assert.match(
+      await page.locator('#identify-timing').textContent(),
+      /^Found the bird in \d+(\.\d)? m?s and recognised it in \d+(\.\d)? m?s on this device\. Runtime: (relaxed SIMD|compatibility) build\.$/,
+    )
     const crop = page.locator('#identify-crop')
+    // The square is on the bird: smaller than the photo, and around the
+    // barbet, which sits a little left of the middle of the 500 by 375 frame.
+    const found = (await crop.getAttribute('data-crop')).split(' ').map(Number)
+    assert.ok(found[2] < 375, `the square is ${found[2]} wide`)
+    assert.ok(found[2] > 120, `the square is only ${found[2]} wide`)
+    const middle = [found[0] + found[2] / 2, found[1] + found[2] / 2]
+    assert.ok(
+      middle[0] > 150 && middle[0] < 350 && middle[1] > 100 && middle[1] < 275,
+      `the square is centred on ${middle}`,
+    )
+    // The crop that was used is shown, and says who chose it.
+    const yours = page.locator('#identify-list > li').first().locator('.plate')
+    assert.match(
+      await yours.first().locator('.plate-credit').textContent(),
+      /cropped to the bird this page found/,
+    )
+
+    // "Change the crop" opens the crop view on the square the page chose.
+    await page.locator('#identify-recrop').click()
     await crop.waitFor({ state: 'visible' })
     assert.equal(
       await page.evaluate(() => document.activeElement?.id),
       'identify-crop-heading',
     )
-    assert.match(
-      await page.locator('#identify-status').textContent(),
-      /^Photo ready/,
+    assert.equal(await page.locator('#identify-crop-note').isVisible(), false)
+    assert.deepEqual(
+      (await crop.getAttribute('data-crop')).split(' ').map(Number),
+      found,
     )
     assert.deepEqual(
       await crop.evaluate((canvas) => [canvas.width, canvas.height]),
@@ -323,6 +376,38 @@ const identifyPhoto = async (browser, { keepsCache }) => {
       await page.locator('#identify-timing').textContent(),
       /^Recognised in \d+(\.\d)? m?s on this device\. Runtime: (relaxed SIMD|compatibility) build\.$/,
     )
+
+    // The visitor chose this square, and the page says so.
+    assert.equal(await page.locator('#identify-found').isVisible(), false)
+    assert.match(
+      await first.locator('.plate-credit').first().textContent(),
+      /cropped to the square you chose/,
+    )
+
+    // A photo with no bird in it: the crop view opens, as it always did,
+    // with a line saying that no bird was found.
+    const plain = await page.evaluate(() => {
+      const canvas = document.createElement('canvas')
+      canvas.width = 400
+      canvas.height = 300
+      const context = canvas.getContext('2d')
+      context.fillStyle = '#7a9'
+      context.fillRect(0, 0, 400, 300)
+      return canvas.toDataURL('image/png').split(',')[1]
+    })
+    await page.locator('#identify-file').setInputFiles({
+      name: 'plain.png',
+      mimeType: 'image/png',
+      buffer: Buffer.from(plain, 'base64'),
+    })
+    await crop.waitFor({ state: 'visible' })
+    assert.equal(await page.locator('#identify-crop-note').isVisible(), true)
+    assert.match(
+      await page.locator('#identify-status').textContent(),
+      /^No bird was found automatically/,
+    )
+    assert.equal(await crop.getAttribute('data-crop'), '50 0 300')
+    await page.locator('#identify-cancel').click()
 
     // The photo stayed on the device: nothing was sent anywhere.
     assert.deepEqual(uploads, [])
