@@ -98,14 +98,19 @@ Both identify pages show how long the last recognition took under the results, f
 
 | Device | Runtime build | Photo | Sound: total | Sound: typical window |
 | --- | --- | --- | --- | --- |
-| iPhone, iOS 27 | | not measured | not measured | not measured |
+| iPhone 18 Pro Max, iOS 27.3 (owner, deployed site, 2026-11-12) | relaxed SIMD | 69 ms | 165 ms (4 windows) | 28 ms |
 | iPhone, iOS 26 (compatibility build) | | not measured | not measured | not measured |
 | iPad | | not measured | not measured | not measured |
 | Android phone | | not measured | not measured | not measured |
+| MacBook Pro (Mac17,6, Apple M5 Max), macOS 27.3, Safari Release 256 (WebKit 22627.1.6.3) (owner, deployed site, 2026-11-12) | relaxed SIMD | 70 ms | 70 ms (2 windows) | 35 ms |
 | Development Mac, Playwright Chromium (6-second tone, 3 windows) | relaxed SIMD | not measured (no photo model on disk) | 110 ms | 24 ms |
 | Development Mac, Playwright WebKit (6-second tone, 3 windows) | relaxed SIMD | not measured (no photo model on disk) | 120 ms | 27 ms |
 
-The desktop rows are only a check that the line works; they say nothing about phones.
+The Playwright rows are only a check that the line works; they say nothing about phones.
+
+The iPhone and MacBook photo figures are one recognition each, of different photos. The photo does not matter much: every crop is shrunk to the same input size before the model runs. A single run includes any warm-up, so a second recognition on the same page may be faster.
+
+The sound figures are one recording each: four windows on the iPhone, two on the MacBook. On the iPhone the four windows took 165 ms in all but typically 28 ms, so one window, most likely the first, took about 80 ms or more: that is the warm-up. With only two windows, as on the MacBook, the typical time is simply half the total and hides it.
 
 A species slug is the scientific name in lowercase with spaces turned into hyphens (`Coracias caudatus` → `coracias-caudatus`). KV key `species/<slug>` is the page `/species/<slug>`.
 
