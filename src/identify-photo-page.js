@@ -10,7 +10,8 @@ import {
   TRAINING_MANIFEST_URL,
   modelBase,
   photoDownloadBytes,
-  photoDownloadMb,
+  downloadSummary,
+  mebibytes,
   photoModelBase,
 } from './identify.js'
 import { pageMd } from './markdown.js'
@@ -18,7 +19,7 @@ import { pageMd } from './markdown.js'
 const TITLE = 'Identify a bird from a photo'
 const INTRO =
   'Take a photo of a bird, or choose one you took earlier, crop it to the bird, and this page lists the most likely Kruger species. When it cannot tell the species, it names the family. Each result links to the species page and shows the guide’s photograph beside yours.'
-const DOWNLOAD_NOTE = `The recogniser runs on this device, so it is downloaded once: about ${photoDownloadMb} MB. It is then kept on this device. After that, recognition needs no signal for as long as this page stays open.`
+const DOWNLOAD_NOTE = `The recogniser runs on this device, so it is downloaded once: ${downloadSummary(PHOTO_MODEL.bytes, 'Identify by sound')}. It is then kept on this device. After that, recognition needs no signal for as long as this page stays open.`
 const TIPS =
   'Get as close as you safely can and keep the bird sharp. A bird that is small in the photo gives poor results, so crop closely.'
 const NO_JS_NOTE = 'Recognition needs JavaScript, which is off or blocked.'
@@ -98,12 +99,12 @@ export const renderIdentifyPhotoHtml = ({ origin, doc }) => {
 <p>${escapeHtml(INTRO)}</p>
 <p class="identify-privacy">${escapeHtml(PHOTO_PRIVACY_NOTE)}</p>
 <p id="identify-nojs" class="identify-note"><span id="identify-nojs-reason">${escapeHtml(NO_JS_NOTE)}</span> You can still browse the <a href="/families">families</a> and the <a href="/species">species list</a>, or <a href="/search">search by name</a>.</p>
-<section id="identify" class="identify" hidden data-doc="${IDENTIFY_PHOTO_PATH}.json" data-worker="${escapeHtml(identifySrc('/identify-worker.js'))}" data-models="${escapeHtml(photoModelBase)}" data-runtime="${escapeHtml(modelBase)}" data-model-file="${escapeHtml(PHOTO_MODEL.file)}" data-model-bytes="${PHOTO_MODEL.bytes}" data-input-size="${PHOTO_MODEL.inputSize}" data-cache="identify-photo-${escapeHtml(PHOTO_MODEL.version)}">
+<section id="identify" class="identify" hidden data-doc="${IDENTIFY_PHOTO_PATH}.json" data-worker="${escapeHtml(identifySrc('/identify-worker.js'))}" data-models="${escapeHtml(photoModelBase)}" data-runtime="${escapeHtml(modelBase)}" data-model-file="${escapeHtml(PHOTO_MODEL.file)}" data-model-bytes="${PHOTO_MODEL.bytes}" data-download-bytes="${photoDownloadBytes}" data-input-size="${PHOTO_MODEL.inputSize}" data-cache="identify-photo-${escapeHtml(PHOTO_MODEL.version)}">
 <p id="identify-status" class="identify-status" role="status" aria-live="polite"></p>
 <div id="identify-consent" hidden>
 <h2>Download the recogniser</h2>
 <p>${escapeHtml(DOWNLOAD_NOTE)}</p>
-<button type="button" id="identify-download" class="identify-button">Download the recogniser (about ${photoDownloadMb} MB)</button>
+<button type="button" id="identify-download" class="identify-button">Download the recogniser (about ${mebibytes(photoDownloadBytes)} MiB)</button>
 </div>
 <progress id="identify-progress" class="identify-progress" max="1" value="0" aria-label="Progress" hidden></progress>
 <div id="identify-capture" hidden>

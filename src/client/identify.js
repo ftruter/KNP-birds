@@ -134,7 +134,8 @@ export const joinChunks = (chunks) => {
   return joined
 }
 
-export const megabytes = (bytes) => Math.round(bytes / 1e6)
+/** Bytes as mebibytes (1 MiB = 1,048,576 bytes) to one decimal place. */
+export const mebibytes = (bytes) => (bytes / 1048576).toFixed(1)
 
 // ---------------------------------------------------------------------------
 // The page. Nothing below runs outside a browser.
@@ -260,6 +261,7 @@ const boot = async () => {
   const results = part('results')
   const { models, modelFile, cache: cacheName } = root.dataset
   const modelBytes = Number(root.dataset.modelBytes)
+  const downloadBytes = Number(root.dataset.downloadBytes)
 
   const say = (text) => {
     status.textContent = text
@@ -326,12 +328,19 @@ const boot = async () => {
     try {
       if (!guide) await loadGuide()
       await ask(
-        { type: 'load', base: models, modelFile, modelBytes, cacheName },
+        {
+          type: 'load',
+          base: models,
+          modelFile,
+          modelBytes,
+          downloadBytes,
+          cacheName,
+        },
         [],
         ({ received, total }) => {
           showProgress(total ? received / total : 0)
           say(
-            `Downloading the recogniser: ${megabytes(received)} of ${megabytes(total)} MB.`,
+            `Downloading the recogniser: ${mebibytes(received)} of ${mebibytes(total)} MiB.`,
           )
         },
       )
@@ -572,7 +581,7 @@ const boot = async () => {
     const [chosen] = file.files
     if (!chosen) return
     if (chosen.size > MAX_FILE_BYTES) {
-      say('That file is larger than 50 MB. Choose a shorter recording.')
+      say('That file is larger than 50 MiB. Choose a shorter recording.')
       return
     }
     busy(true)

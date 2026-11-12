@@ -4,7 +4,8 @@
 // importScripts(), which module workers do not have. The runtime itself is
 // pulled in with dynamic import(), which classic workers do support.
 //
-// Messages in:  { type: 'load', base, runtime, modelFile, modelBytes, cacheName }
+// Messages in:  { type: 'load', base, runtime, modelFile, modelBytes,
+//                 downloadBytes, cacheName }
 //               { type: 'analyse', samples, starts, columns }   (sound)
 //               { type: 'classify', pixels, size }              (photo)
 // Messages out: { type: 'progress', received, total }
@@ -33,12 +34,11 @@ const openStore = async (name) => {
 }
 
 /** The model bytes, from Cache Storage when they are there. */
-const modelBytes = async (url, store, expected) => {
+const modelBytes = async (url, store, count) => {
   const saved = store ? await store.match(url) : null
   if (saved) return new Uint8Array(await saved.arrayBuffer())
   const response = await fetch(url)
   if (!response.ok) throw new Error(`${response.status} fetching the model`)
-  const total = Number(response.headers.get('content-length')) || expected
   const reader = response.body.getReader()
   const chunks = []
   let received = 0
@@ -47,7 +47,7 @@ const modelBytes = async (url, store, expected) => {
     if (done) break
     chunks.push(value)
     received += value.length
-    self.postMessage({ type: 'progress', received, total })
+    count(value.length)
   }
   const bytes = new Uint8Array(received)
   let offset = 0
@@ -67,9 +67,27 @@ const modelBytes = async (url, store, expected) => {
   return bytes
 }
 
-/** Keeps the runtime's own wasm download in Cache Storage as well. */
-const cacheRuntimeFetches = (base, store) => {
-  if (!store) return
+/** A copy of a response that reports each chunk's size as it is read. */
+const counted = (response, count) => {
+  if (!response.body || typeof TransformStream !== 'function') return response
+  const meter = new TransformStream({
+    transform(chunk, controller) {
+      count(chunk.length)
+      controller.enqueue(chunk)
+    },
+  })
+  return new Response(response.body.pipeThrough(meter), {
+    status: response.status,
+    statusText: response.statusText,
+    headers: response.headers,
+  })
+}
+
+/**
+ * Keeps the runtime's own wasm download in Cache Storage as well, and counts
+ * it towards the download progress.
+ */
+const cacheRuntimeFetches = (base, store, count) => {
   const network = self.fetch.bind(self)
   self.fetch = async (input, init) => {
     const url = new URL(
@@ -78,11 +96,12 @@ const cacheRuntimeFetches = (base, store) => {
     ).href
     if (!url.startsWith(base) || (init?.method ?? 'GET') !== 'GET')
       return network(input, init)
-    const saved = await store.match(url)
+    const saved = store ? await store.match(url) : null
     if (saved) return saved
     const response = await network(input, init)
-    if (response.ok) store.put(url, response.clone()).catch(() => {})
-    return response
+    if (!response.ok) return response
+    if (store) store.put(url, response.clone()).catch(() => {})
+    return url.endsWith('.wasm') ? counted(response, count) : response
   }
 }
 
@@ -91,13 +110,22 @@ const load = async ({
   runtime,
   modelFile,
   modelBytes: expected,
+  downloadBytes,
   cacheName,
 }) => {
   const folder = new URL(base, self.location.href).href
   const root = new URL(runtime ?? base, self.location.href).href
   const store = await openStore(cacheName)
-  const bytes = await modelBytes(folder + modelFile, store, expected)
-  cacheRuntimeFetches(root, store)
+  // One running total for the model and the runtime, against the size the
+  // page quoted before the visitor agreed.
+  const total = downloadBytes || expected
+  let received = 0
+  const count = (more) => {
+    received = Math.min(total, received + more)
+    self.postMessage({ type: 'progress', received, total })
+  }
+  const bytes = await modelBytes(folder + modelFile, store, count)
+  cacheRuntimeFetches(root, store, count)
   const { loadLiteRt, loadAndCompile, Tensor } = await import(
     `${root}litert.mjs`
   )
@@ -105,6 +133,8 @@ const load = async ({
   // it is told where the runtime folder is.
   self.Module = { locateFile: (file) => root + file }
   await loadLiteRt(root)
+  // The wasm loader script and a smaller wasm build make up the difference.
+  if (received > 0) count(total - received)
   const model = await loadAndCompile(bytes, { accelerator: 'wasm' })
   infer = async (values, shape) => {
     const input = new Tensor(values, shape)

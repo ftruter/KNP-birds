@@ -43,17 +43,29 @@ export const MODEL_ASSETS = {
 export const MODEL_PREFIX = 'models'
 export const modelBase = `/${MODEL_PREFIX}/${MODEL_ASSETS.version}/`
 
-/** What one visitor downloads: the model, one wasm build and its loader. */
-export const downloadBytes =
-  MODEL_ASSETS.model.bytes +
-  Math.max(
-    ...MODEL_ASSETS.runtime
-      .filter((item) => item.file.endsWith('.wasm'))
-      .map((item) => item.bytes),
-  ) +
-  400000
+/** Bytes as mebibytes (1 MiB = 1,048,576 bytes) to one decimal place. */
+export const mebibytes = (bytes) => (bytes / 1048576).toFixed(1)
 
-export const downloadMb = Math.round(downloadBytes / 1e6)
+const largestWasm = MODEL_ASSETS.runtime
+  .filter((item) => item.file.endsWith('.wasm'))
+  .reduce((largest, item) => (item.bytes > largest.bytes ? item : largest))
+
+/**
+ * The runtime one visitor downloads: one wasm build and its loader. The
+ * larger build is counted, so the figure is never an underestimate.
+ */
+export const runtimeBytes =
+  largestWasm.bytes +
+  MODEL_ASSETS.runtime.find(
+    (item) => item.file === largestWasm.file.replace(/\.wasm$/, '.js'),
+  ).bytes
+
+/** What one visitor downloads for the sound page: the model and the runtime. */
+export const downloadBytes = MODEL_ASSETS.model.bytes + runtimeBytes
+
+/** The sentence both pages use to say what the download is made of. */
+export const downloadSummary = (modelBytes, otherPage) =>
+  `about ${mebibytes(modelBytes + runtimeBytes)} MiB, made up of a ${mebibytes(modelBytes)} MiB model and a ${mebibytes(runtimeBytes)} MiB runtime that ${otherPage} also uses`
 
 export const MODEL_CREDIT = {
   name: 'BirdNET GLOBAL 6K V2.4',
@@ -252,9 +264,7 @@ export const PHOTO_MODEL = {
 
 export const photoModelBase = `/${MODEL_PREFIX}/${PHOTO_MODEL.version}/`
 
-export const photoDownloadBytes =
-  downloadBytes - MODEL_ASSETS.model.bytes + PHOTO_MODEL.bytes
-export const photoDownloadMb = Math.round(photoDownloadBytes / 1e6)
+export const photoDownloadBytes = PHOTO_MODEL.bytes + runtimeBytes
 
 export const TRAINING_MANIFEST_URL =
   'https://github.com/ftruter/KNP-birds/blob/main/training/identify-photo/manifest.csv.gz'

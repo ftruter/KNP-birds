@@ -97,7 +97,7 @@ const identifyFromFile = async (browser, { keepsCache }) => {
     })
     const download = page.locator('#identify-download')
     await download.waitFor({ state: 'visible' })
-    assert.match(await download.textContent(), /about 37 MB/)
+    assert.match(await download.textContent(), /about 35.6 MiB/)
     assert.equal(await page.locator('#identify-capture').isVisible(), false)
     assert.deepEqual(requested, [])
 

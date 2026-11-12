@@ -9,7 +9,6 @@ import {
   photoModelFiles,
   runtimeFiles,
 } from '../scripts/publish-models.mjs'
-import { photoDownloadMb } from '../src/identify.js'
 import { startBundledSite } from './bundle-site.js'
 
 // This test runs the real photo model in real browsers. The model is not in
@@ -107,10 +106,7 @@ const identifyPhoto = async (browser, { keepsCache }) => {
     })
     const download = page.locator('#identify-download')
     await download.waitFor({ state: 'visible' })
-    assert.match(
-      await download.textContent(),
-      new RegExp(`about ${photoDownloadMb} MB`),
-    )
+    assert.match(await download.textContent(), /about 20\.2 MiB/)
     assert.equal(await page.locator('#identify-capture').isVisible(), false)
     assert.deepEqual(requested, [])
 

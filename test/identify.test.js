@@ -103,7 +103,7 @@ test('without javascript the page explains itself and links onward', async () =>
     body,
     /id="identify-status"[^>]*role="status" aria-live="polite"/,
   )
-  assert.match(body, /Download the recogniser \(about 37 MB\)/)
+  assert.match(body, /Download the recogniser \(about 35.6 MiB\)/)
   // Coverage is stated on the page itself.
   assert.match(body, /It can never return the other 131/)
   assert.match(body, /123 species that are not in the model/)
