@@ -18,7 +18,9 @@
  *   evaluation/photos.csv         every test photo: the same, and our label
  *   evaluation/photos/<slug>/     the test photos themselves, each under its own licence
  *   training/                     the code that built the model (0BSD)
- *   sound/                        our BirdNET-label to Kruger-species mapping (CC0)
+ *
+ * The sound recogniser (BirdNET, not ours) has its own repository,
+ * SOUND_HUGGING_FACE_REPO. This script links to it and does not write it.
  *
  * The upload uses the `hf` command (huggingface_hub), signed in with
  * `hf auth login`. The revision is tagged with the model version, which is
@@ -45,6 +47,8 @@ import {
   IDENTIFY_PHOTO_PATH,
   MODEL_PREFIX,
   PHOTO_MODEL,
+  SOUND_HUGGING_FACE_REPO,
+  SOUND_HUGGING_FACE_URL,
   mebibytes,
 } from '../src/identify.js'
 
@@ -461,7 +465,6 @@ Do not use it:
 | \`evaluation/photos.csv\` | | Every one of the ${count(e.photos)} test photographs: the same, with the species we labelled it |
 | \`evaluation/photos/\` | ${mebibytes(evaluation.bytes)} MiB | The ${count(evaluation.published)} test photographs themselves, each under its own licence |
 | \`training/\` | | The code that built the model, and how to run it |
-| \`sound/\` | | For the site's sound recogniser: our mapping from BirdNET labels to Kruger species |
 | \`LICENSES.md\` | | Which licence covers which file |
 
 ## Using it
@@ -584,9 +587,11 @@ ${permissiveSection(model, permissive)}
 **What we wrote ourselves is as permissive as we can make it:**
 
 - the training code in \`training/\`: [0BSD](https://opensource.org/license/0bsd), no attribution needed;
-- this model card, \`labels.csv\`, \`photo-model.json\`, the labels and other columns we added in \`evaluation/photos.csv\` and \`training-photos.csv.gz\`, and the mapping in \`sound/\`: [CC0 1.0](https://creativecommons.org/publicdomain/zero/1.0/), public domain.
+- this model card, \`labels.csv\`, \`photo-model.json\`, the labels and other columns we added in \`evaluation/photos.csv\` and \`training-photos.csv.gz\`: [CC0 1.0](https://creativecommons.org/publicdomain/zero/1.0/), public domain.
 
 **The test photographs** in \`evaluation/photos/\` belong to their photographers. Each is republished under its own Creative Commons licence, named in \`evaluation/photos.csv\` with the photographer and the source URL. Our CC0 covers only the labels we added, not the photographs.
+
+**The sound recogniser** of the same site is a separate model, with its own card and licences: [${SOUND_HUGGING_FACE_REPO}](${SOUND_HUGGING_FACE_URL}).
 
 ## How to cite
 
@@ -632,7 +637,7 @@ Different files have different owners, so they have different licences.
 | --- | --- | --- |
 | \`${PHOTO_MODEL.file}\`, \`${model.original.file}\` (the weights) | [${licence.name}](${licence.url}) | Derived from the training photographs and the base model; see below |
 | \`training/\` (code, result files and README), except the two \`manifest\` photo lists | [0BSD](https://opensource.org/license/0bsd); text in \`training/LICENSE\` | Ours |
-| \`README.md\`, \`LICENSES.md\`, \`labels.csv\`, \`photo-model.json\`, \`sound/\` | [CC0 1.0](https://creativecommons.org/publicdomain/zero/1.0/) | Ours |
+| \`README.md\`, \`LICENSES.md\`, \`labels.csv\`, \`photo-model.json\` | [CC0 1.0](https://creativecommons.org/publicdomain/zero/1.0/) | Ours |
 | \`evaluation/photos.csv\`, \`training-photos.csv.gz\`, \`training/manifest.csv.gz\`, \`training/manifest-permissive.csv.gz\` | The species labels, splits and other columns we added: CC0 1.0. The photographer names, licences and attribution lines are facts about the photographs, repeated from iNaturalist | Ours, and the photographers' |
 | \`evaluation/photos/\` (the test photographs) | Each under its own Creative Commons licence, named in \`evaluation/photos.csv\` | Their photographers |
 
@@ -653,26 +658,9 @@ The training photographs are not republished here. \`training-photos.csv.gz\` li
 
 ## The sound recogniser
 
-The site's sound recogniser is BirdNET V2.4, unmodified, used under CC BY-NC-SA 4.0. It is not ours and it is not republished here: get it from its authors at https://zenodo.org/records/15050749. \`sound/\` holds only our own work around it.
+The site's sound recogniser is BirdNET V2.4, which is not ours. It is published separately, with its own licences and our mapping from its labels to the Kruger list, at [${SOUND_HUGGING_FACE_REPO}](${SOUND_HUGGING_FACE_URL}). Its authors distribute it at https://zenodo.org/records/15050749.
 `
 }
-
-const soundReadme = (
-  labels,
-) => `# BirdNET labels for the birds of Kruger National Park
-
-The site's [Identify by sound](${SITE}/identify/sound) page runs [BirdNET](https://github.com/birdnet-team/BirdNET-Analyzer) V2.4, unmodified. BirdNET is not ours and is not republished here: its authors distribute it at https://zenodo.org/records/15050749 under CC BY-NC-SA 4.0.
-
-What is ours is the mapping from BirdNET's ${count(labels.labelCount)} labels to the ${labels.counts.species} species of the Kruger list, checked by hand. It is released under [CC0 1.0](https://creativecommons.org/publicdomain/zero/1.0/).
-
-- \`birdnet-labels.json\` is the mapping, for the label file \`${labels.labelsFile}\` of ${labels.model} (SHA-256 \`${labels.labelsSha256}\`). Species are keyed by slug: the scientific name in lower case with hyphens.
-  - \`covered\` (${Object.keys(labels.covered).length} species): the BirdNET output indices and labels for the species, and whether the match is on the same scientific name (\`exact\`, ${labels.counts.exact}) or on a synonym (\`synonym\`, ${labels.counts.synonym}).
-  - \`ambiguous\` (${Object.keys(labels.ambiguous).length} species): BirdNET has only a broader label, which also covers birds from elsewhere. The site lists these as "broader label only" and never returns them.
-  - \`notCovered\` (${labels.notCovered.length} species): not in BirdNET at all.
-- \`birdnet-synonyms.json\` is the hand-checked table of name differences the mapping is built from, with the reason for each.
-
-No species was mapped by guessing. A species with no matching label is listed as not covered.
-`
 
 // ---------------------------------------------------------------------------
 // Staging: every file of the repository, checked, before anything is uploaded
@@ -833,13 +821,6 @@ export const huggingFaceFiles = async ({
       bytes: (await stat(source)).size,
     })
   }
-
-  const birdnet = await readJsonFile(
-    path.join(dataDir, 'identify/birdnet-labels.json'),
-  )
-  add('sound/README.md', soundReadme(birdnet))
-  for (const name of ['birdnet-labels.json', 'birdnet-synonyms.json'])
-    add(`sound/${name}`, await readFile(path.join(dataDir, 'identify', name)))
 
   return {
     repo: HUGGING_FACE_REPO,
