@@ -642,7 +642,7 @@ ${listed(models)
 
 ${inlineText(model.usedFor)} See [${inlineText(model.page?.label ?? 'Identify by sound')}](${model.page?.href ?? '/identify/sound'}.md).
 
-${inlineText(model.citation)}${model.manifest ? `\n\n[${inlineText(model.manifest.note)}](${model.manifest.url}).` : ''}${model.runtime ? `\n\nIt runs in the browser with [${inlineText(model.runtime.name)}](${model.runtime.url}) (${inlineText(model.runtime.licence)}).` : ''}`,
+${inlineText(model.citation)}${model.manifest ? `\n\n[${inlineText(model.manifest.note)}](${model.manifest.url}).` : ''}${model.published ? `\n\n[${inlineText(model.published.note)}](${model.published.url}).` : ''}${model.runtime ? `\n\nIt runs in the browser with [${inlineText(model.runtime.name)}](${model.runtime.url}) (${inlineText(model.runtime.licence)}).` : ''}`,
   )
   .join('\n\n')}
 

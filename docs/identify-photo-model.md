@@ -24,7 +24,9 @@ JSON file is right.
   all-rights-reserved photo was used.
 - Every photo is listed in `training/identify-photo/manifest.csv.gz` with its observation, photo id,
   observer, licence and attribution line. `/credits` links to that file.
-- Because most training photos are CC BY-NC, the model is offered for non-commercial use only.
+- Because most training photos are CC BY-NC and some are share-alike, the weights are offered under
+  CC BY-NC-SA 4.0. `scripts/huggingface.mjs` derives that from the licence counts, so a model trained on
+  other photos gets the licence its photos allow.
 - Three species have fewer than 50 training photos and 14 have fewer than 100; the fewest is 19.
 
 ## Test photos
@@ -166,6 +168,23 @@ are a derivative of their training photos is not settled law):
 - It knows only adult and young birds as they appear in the training photos. It was not told sex, age or
   plumage, and nests, eggs, feathers and tracks were not separated out.
 - A species added to the guide later is listed on the page as not covered until the model is retrained.
+
+## Published copy (issue 158)
+
+The model is also published at https://huggingface.co/FTruter/knp-birds-photo for people who want to build
+on it. The site never downloads from there; R2 stays its source. Each revision is tagged with the model
+version, which is the `models/<version>/` folder in R2, so a version on the site can be traced to its weights.
+
+It holds the `.tflite` file R2 serves (same SHA-256), the PyTorch weights it was converted from
+(`photo-model.safetensors`), a model card written from `data/identify/photo-model.json` by
+`scripts/huggingface.mjs`, the class list, the list of every training photo with its source URL, author and
+licence, the 5,889 test photos with the same details, `training/identify-photo/`, and the BirdNET label
+mapping the sound page uses. BirdNET itself is not republished.
+
+Licences there: the weights CC BY-NC-SA 4.0, bounded by the training photos; the training code 0BSD; the
+model card, labels and mapping CC0 1.0; each test photo under its photographer's own licence.
+
+`pnpm run models:publish -- --only photo` uploads to R2 and then to Hugging Face. `--dry-run` shows both.
 
 ## Rebuilding it
 

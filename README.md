@@ -87,7 +87,7 @@ KV is written before the Worker so the new version renders the data it advertise
 
 `/identify/sound` also needs its model and runtime in the `knp-birds-images` bucket. That is a separate, one-off step per model version, not part of the build: `pnpm run models:publish` (see `scripts/publish-models.mjs`; `pnpm run models:dry-run` lists the files without a token). It needs a token that can write to that bucket. Until it has run, the page loads but cannot download the recogniser.
 
-`/identify/photo` works the same way with its own model, which this project trains itself: see [training/identify-photo/README.md](training/identify-photo/README.md) and the model card, [docs/identify-photo-model.md](docs/identify-photo-model.md). `pnpm run models:publish -- --only photo` uploads just that model. It reuses the sound page's runtime, so that must be in the bucket too.
+`/identify/photo` works the same way with its own model, which this project trains itself: see [training/identify-photo/README.md](training/identify-photo/README.md) and the model card, [docs/identify-photo-model.md](docs/identify-photo-model.md). `pnpm run models:publish -- --only photo` uploads just that model. It reuses the sound page's runtime, so that must be in the bucket too. The same command then publishes the photo model on Hugging Face ([FTruter/knp-birds-photo](https://huggingface.co/FTruter/knp-birds-photo)) for people who want to build on it: weights, model card, training code and test photos, tagged with the model version. The site never downloads from Hugging Face. `--dry-run` shows both uploads and `--no-hf` skips Hugging Face.
 
 Check the upload locally, without a Cloudflare token:
 

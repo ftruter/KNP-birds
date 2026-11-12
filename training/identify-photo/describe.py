@@ -4,14 +4,17 @@
     .venv/bin/python describe.py mnv4m-2 int8 knp-photo-1-mnv4m-288-int8
 
 Copies models/<run>-<kind>.tflite to data/models/photo-model.tflite (gitignored; published to
-R2 by `pnpm run models:publish`) and writes data/identify/photo-model.json: the class list in
-model order, how many photos each species was trained and tested on, and the test results the
-page quotes. Run score-tflite.py first, so the numbers are those of the exported file itself.
+R2 by `pnpm run models:publish`), writes the fine-tuned PyTorch weights it was converted from to
+data/models/photo-model.safetensors (gitignored; published to Hugging Face by the same command,
+so the model can be fine-tuned further) and writes data/identify/photo-model.json: the class
+list in model order, how many photos each species was trained and tested on, and the test
+results the page quotes. Run score-tflite.py first, so the numbers are those of the exported file itself.
 
 Then copy the printed `version`, `bytes` and `sha256` into PHOTO_MODEL in src/identify.js and run
 `pnpm run seed`. A test fails if the two disagree."""
 import collections, hashlib, json, os, shutil, sys
-import numpy as np
+import numpy as np, torch
+from safetensors.torch import save_file
 from common import rows, report, SLUGS, FAMILY, FAMILIES, family_matrix
 from inat import HERE, REPO, manifest
 
@@ -24,6 +27,10 @@ target = os.path.join(REPO, "data", "models", "photo-model.tflite")
 os.makedirs(os.path.dirname(target), exist_ok=True)
 shutil.copyfile(source, target)
 blob = open(source, "rb").read()
+# The weights before conversion, as safetensors: a timm state dict, loadable without pickle.
+original = os.path.join(REPO, "data", "models", "photo-model.safetensors")
+save_file(torch.load(os.path.join(HERE, "runs", run, "model.pt"), map_location="cpu"), original)
+original_blob = open(original, "rb").read()
 
 held = rows("eval")
 y = np.array([c for _, c, _ in held])
@@ -48,6 +55,9 @@ out = {
     "inputSize": size,
     "weights": kind,
     "file": {"bytes": len(blob), "sha256": hashlib.sha256(blob).hexdigest()},
+    "original": {"file": "photo-model.safetensors", "bytes": len(original_blob),
+                 "sha256": hashlib.sha256(original_blob).hexdigest(),
+                 "trainedAtSize": cfg["size"], "mean": cfg["mean"], "std": cfg["std"]},
     "training": {"photos": sum(train.values()), "licences": dict(sorted(licences.items()))},
     "evaluation": {
         "photos": r["photos"], "species": r["species"],

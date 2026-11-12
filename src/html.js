@@ -762,6 +762,7 @@ ${listed(models)
 <p>${escapeHtml(model.usedFor)} See <a href="${escapeHtml(model.page?.href ?? '/identify/sound')}">${escapeHtml(model.page?.label ?? 'Identify by sound')}</a>.</p>
 <p>${escapeHtml(model.citation)}</p>
 ${model.manifest ? `<p>${linked(model.manifest.note, model.manifest.url)}.</p>` : ''}
+${model.published ? `<p>${linked(model.published.note, model.published.url)}.</p>` : ''}
 ${model.runtime ? `<p>It runs in the browser with ${linked(model.runtime.name, model.runtime.url)} (${linked(model.runtime.licence, model.runtime.licenceUrl)}).</p>` : ''}`,
   )
   .join('\n')}`
