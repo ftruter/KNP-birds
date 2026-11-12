@@ -44,6 +44,7 @@ import path from 'node:path'
 import { fileURLToPath } from 'node:url'
 import {
   MODEL_CREDIT,
+  PHOTO_DETECTOR_CREDIT,
   PHOTO_MODEL_CREDIT,
   deriveIdentifyPhoto,
   deriveIdentifySound,
@@ -393,6 +394,10 @@ export const deriveCredits = (speciesDocs, overlay = null) => {
     models: [
       { ...MODEL_CREDIT, runtime: { ...MODEL_CREDIT.runtime } },
       { ...PHOTO_MODEL_CREDIT, runtime: { ...PHOTO_MODEL_CREDIT.runtime } },
+      {
+        ...PHOTO_DETECTOR_CREDIT,
+        runtime: { ...PHOTO_DETECTOR_CREDIT.runtime },
+      },
     ],
     site: { ...SITE },
   }

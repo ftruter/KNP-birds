@@ -27413,6 +27413,26 @@
         "licence": "Apache-2.0",
         "licenceUrl": "https://www.apache.org/licenses/LICENSE-2.0"
       }
+    },
+    {
+      "name": "EfficientDet-Lite0",
+      "authors": "Mingxing Tan, Ruoming Pang and Quoc V. Le",
+      "publisher": "Google (TensorFlow Hub, “efficientdet/lite0/detection”), trained on the COCO 2017 dataset",
+      "citation": "Tan, M., Pang, R., & Le, Q. V. (2020). EfficientDet: Scalable and Efficient Object Detection. CVPR 2020. Training data: Lin, T.-Y., et al. (2014). Microsoft COCO: Common Objects in Context. ECCV 2014.",
+      "url": "https://www.kaggle.com/models/tensorflow/efficientdet",
+      "licence": "Apache-2.0",
+      "licenceUrl": "https://www.apache.org/licenses/LICENSE-2.0",
+      "usedFor": "Finding the bird in a photo on the Identify by photo page, so that the page can crop to it. The model runs on the visitor’s device. Its weights are unchanged; the file’s last step, which picks the best boxes, has been removed, and the page does that itself.",
+      "page": {
+        "href": "/identify/photo",
+        "label": "Identify by photo"
+      },
+      "runtime": {
+        "name": "LiteRT.js 2.6.0",
+        "url": "https://github.com/google-ai-edge/LiteRT",
+        "licence": "Apache-2.0",
+        "licenceUrl": "https://www.apache.org/licenses/LICENSE-2.0"
+      }
     }
   ],
   "site": {

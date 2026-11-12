@@ -5,13 +5,22 @@
 // pulled in with dynamic import(), which classic workers do support.
 //
 // Messages in:  { type: 'load', base, runtime, modelFile, modelBytes,
-//                 downloadBytes, cacheName }
+//                 downloadBytes, cacheName, detector }
+//               { type: 'load-detector', detector }             (photo)
 //               { type: 'analyse', samples, starts, columns }   (sound)
 //               { type: 'classify', pixels, size }              (photo)
+//               { type: 'detect', pixels, size, label, score }  (photo)
 // Messages out: { type: 'progress', received, total }
-//               { type: 'ready' }
+//               { type: 'ready', detector }
 //               { type: 'result', scores, count, timing }
+//               { type: 'boxes', anchors, scores, shifts, timing }
 //               { type: 'error', message }
+//
+// `detector` in a load is { url, sha256, bytes, fetch }: the second model of
+// the photo page, which finds the bird. It is optional in every sense: with
+// `fetch` false it is used only when a copy is already on the device, and
+// when it cannot be had the recogniser still loads. `ready` says whether it
+// is there. 'load-detector' fetches it afterwards.
 //
 // `timing` is { runs, total, build }: the milliseconds each run of the model
 // took, their sum, and the runtime build in use ('relaxed-simd', 'baseline',
@@ -25,6 +34,11 @@
 const WINDOW = 144000
 
 let infer = null
+// The photo page's detector, when it is loaded: values in, every output out.
+let locate = null
+// What the runtime gave us, kept so that the detector can be added later.
+let litert = null
+let store = null
 // Which wasm build LiteRT.js chose, taken from the file it asked for.
 let build = null
 // The milliseconds each run of the model took, for the request in hand.
@@ -75,13 +89,14 @@ const purge = async (url) => {
 }
 
 /** The model bytes, from Cache Storage when they are there and intact. */
-const modelBytes = async (url, store, count, sha256) => {
+const modelBytes = async (url, store, count, sha256, mayFetch = true) => {
   const saved = store ? await store.match(url) : null
   if (saved) {
     const kept = new Uint8Array(await saved.arrayBuffer())
     if (await intact(kept, sha256)) return kept
     await purge(url)
   }
+  if (!mayFetch) return null
   const response = await fetch(url)
   if (!response.ok) throw new Error(`${response.status} fetching the model`)
   const reader = response.body.getReader()
@@ -189,6 +204,7 @@ const load = async ({
   downloadBytes,
   cacheName,
   checks: given = {},
+  detector = null,
 }) => {
   // The expected SHA-256 of the model and of each wasm build, by address.
   const checks = Object.fromEntries(
@@ -199,7 +215,7 @@ const load = async ({
   )
   const folder = new URL(base, self.location.href).href
   const root = new URL(runtime ?? base, self.location.href).href
-  const store = await openStore(cacheName)
+  store = await openStore(cacheName)
   // One running total for the model and the runtime, against the size the
   // page quoted before the visitor agreed.
   const total = downloadBytes || expected
@@ -214,6 +230,8 @@ const load = async ({
     count,
     checks[folder + modelFile],
   )
+  // Before the runtime, so that the running total ends on the runtime.
+  const second = detector ? await detectorBytes(detector, count) : null
   cacheRuntimeFetches(root, store, count, checks)
   const { loadLiteRt, loadAndCompile, Tensor } = await import(
     `${root}litert.mjs`
@@ -224,18 +242,55 @@ const load = async ({
   await loadLiteRt(root)
   // The wasm loader script and a smaller wasm build make up the difference.
   if (received > 0) count(total - received)
-  const model = await loadAndCompile(bytes, { accelerator: 'wasm' })
-  infer = async (values, shape) => {
+  litert = { loadAndCompile, Tensor }
+  const run = await runner(bytes)
+  infer = async (values, shape) => (await run(values, shape))[0]
+  await useDetector(second)
+}
+
+/** A model, as a function from input values to every output's values. */
+const runner = async (bytes) => {
+  const model = await litert.loadAndCompile(bytes, { accelerator: 'wasm' })
+  return async (values, shape) => {
     // Timed from handing the values to the runtime until the scores are
     // back in this worker's memory: what one recognition costs the device.
     const started = performance.now()
-    const input = new Tensor(values, shape)
+    const input = new litert.Tensor(values, shape)
     const output = await model.run(input)
     input.delete()
-    const result = output[0].toTypedArray().slice()
+    const result = output.map((tensor) => tensor.toTypedArray().slice())
     for (const tensor of output) tensor.delete()
     runs.push(performance.now() - started)
     return result
+  }
+}
+
+/**
+ * The detector's file, when it can be had. Nothing about the detector may
+ * stop the recogniser: without one the page asks the visitor to crop, as it
+ * always did.
+ */
+const detectorBytes = async (detector, count) => {
+  try {
+    return await modelBytes(
+      new URL(detector.url, self.location.href).href,
+      store,
+      count,
+      detector.sha256,
+      detector.fetch !== false,
+    )
+  } catch (error) {
+    console.warn(error)
+    return null
+  }
+}
+
+const useDetector = async (bytes) => {
+  if (locate || !bytes) return
+  try {
+    locate = await runner(bytes)
+  } catch (error) {
+    console.warn(error)
   }
 }
 
@@ -273,11 +328,57 @@ const classify = async ({ pixels, size }) => {
   return infer(pixels, [1, size, size, 3])
 }
 
+/**
+ * Where one kind of thing may be in a photo. `pixels` is `size` x `size` RGB
+ * bytes. The detector scores each of its fixed anchor boxes for every class
+ * it knows, and says how to move and resize the anchor to fit. This returns
+ * the anchors that score at least `score` for class `label`: their numbers,
+ * their scores and their four shifts each. The page turns them into boxes.
+ */
+const detect = async ({ pixels, size, label, score }) => {
+  if (!locate) throw new Error('The detector is not loaded')
+  if (pixels.length !== size * size * 3)
+    throw new Error('The photo is not the size the detector expects')
+  // Two outputs: four shifts for each anchor, and a score for each class.
+  const [shifts, all] = (await locate(pixels, [1, size, size, 3])).sort(
+    (a, b) => a.length - b.length,
+  )
+  const count = shifts.length / 4
+  const classes = all.length / count
+  const found = []
+  for (let anchor = 0; anchor < count; anchor += 1)
+    if (all[anchor * classes + label] >= score) found.push(anchor)
+  return {
+    anchors: Int32Array.from(found),
+    scores: Float32Array.from(found, (anchor) => all[anchor * classes + label]),
+    shifts: Float32Array.from(
+      found.flatMap((anchor) => [
+        ...shifts.subarray(anchor * 4, anchor * 4 + 4),
+      ]),
+    ),
+  }
+}
+
 self.addEventListener('message', async ({ data }) => {
   try {
     if (data.type === 'load') {
       if (!infer) await load(data)
-      self.postMessage({ type: 'ready' })
+      self.postMessage({ type: 'ready', detector: Boolean(locate) })
+    } else if (data.type === 'load-detector') {
+      if (!infer) throw new Error('The recogniser is not loaded')
+      const total = data.detector.bytes
+      let received = 0
+      await useDetector(
+        await detectorBytes(data.detector, (more) => {
+          received = Math.min(total, received + more)
+          self.postMessage({ type: 'progress', received, total })
+        }),
+      )
+      self.postMessage({ type: 'ready', detector: Boolean(locate) })
+    } else if (data.type === 'detect') {
+      runs = []
+      const found = await detect(data)
+      self.postMessage({ type: 'boxes', ...found, timing: timing() })
     } else if (data.type === 'analyse') {
       runs = []
       const scores = await analyse(data)

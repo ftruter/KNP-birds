@@ -335,7 +335,47 @@ export const PHOTO_MODEL = {
 
 export const photoModelBase = `/${MODEL_PREFIX}/${PHOTO_MODEL.version}/`
 
-export const photoDownloadBytes = PHOTO_MODEL.bytes + runtimeBytes
+/**
+ * The detector that finds the bird in a photo, so the page can crop to it
+ * (issue 180): Google's EfficientDet-Lite0, trained on COCO, from `source`.
+ * training/identify-photo/strip-detector.py removes the file's last step,
+ * which picks the best boxes and which LiteRT.js cannot run; the page picks
+ * them itself. The weights are untouched. It has its own version folder and
+ * runs on the same runtime.
+ *
+ * `birdClass` is "bird" in the file's own label list. `score`, `overlap` and
+ * `margin` are how the page turns its answer into a crop: boxes that score
+ * at least `score` as a bird, one kept of any two that overlap by more than
+ * `overlap`, the largest widened by `margin`. Other boxes are offered as
+ * "another bird in this photo" only when they score at least `another`,
+ * because fainter ones are often leaves or stones. They were chosen on the
+ * held-out test photos (training/identify-photo/score-detect.py; results in
+ * docs/identify-photo-model.md).
+ */
+export const PHOTO_DETECTOR = {
+  version: 'efficientdet-lite0-coco-raw-1',
+  file: 'bird-detector.tflite',
+  inputSize: 320,
+  bytes: 4562456,
+  sha256: '5e1db17384b5008f4c30a66c2a00b743e7eccef1742b8c6b7d0d85801cf86370',
+  birdClass: 15,
+  score: 0.3,
+  overlap: 0.5,
+  margin: 0.35,
+  another: 0.5,
+  source:
+    'https://tfhub.dev/tensorflow/lite-model/efficientdet/lite0/detection/metadata/1?lite-format=tflite',
+}
+
+export const photoDetectorBase = `/${MODEL_PREFIX}/${PHOTO_DETECTOR.version}/`
+
+/** What one visitor downloads for the photo page: both models and the runtime. */
+export const photoDownloadBytes =
+  PHOTO_MODEL.bytes + PHOTO_DETECTOR.bytes + runtimeBytes
+
+/** The sentence the photo page uses to say what its download is made of. */
+export const photoDownloadSummary = () =>
+  `about ${mebibytes(photoDownloadBytes)} MiB, made up of a ${mebibytes(PHOTO_MODEL.bytes)} MiB model that names the bird, a ${mebibytes(PHOTO_DETECTOR.bytes)} MiB model that finds it in the photo, and a ${mebibytes(runtimeBytes)} MiB runtime that Identify by sound also uses`
 
 export const TRAINING_MANIFEST_URL =
   'https://github.com/ftruter/KNP-birds/blob/main/training/identify-photo/manifest.csv.gz'
@@ -373,6 +413,22 @@ export const PHOTO_MODEL_CREDIT = {
     url: PHOTO_MODEL_HUB_URL,
     note: 'The weights, model card, training code and test photographs on Hugging Face, for building on the model',
   },
+  runtime: { ...MODEL_CREDIT.runtime },
+}
+
+export const PHOTO_DETECTOR_CREDIT = {
+  name: 'EfficientDet-Lite0',
+  authors: 'Mingxing Tan, Ruoming Pang and Quoc V. Le',
+  publisher:
+    'Google (TensorFlow Hub, “efficientdet/lite0/detection”), trained on the COCO 2017 dataset',
+  citation:
+    'Tan, M., Pang, R., & Le, Q. V. (2020). EfficientDet: Scalable and Efficient Object Detection. CVPR 2020. Training data: Lin, T.-Y., et al. (2014). Microsoft COCO: Common Objects in Context. ECCV 2014.',
+  url: 'https://www.kaggle.com/models/tensorflow/efficientdet',
+  licence: 'Apache-2.0',
+  licenceUrl: 'https://www.apache.org/licenses/LICENSE-2.0',
+  usedFor:
+    'Finding the bird in a photo on the Identify by photo page, so that the page can crop to it. The model runs on the visitor’s device. Its weights are unchanged; the file’s last step, which picks the best boxes, has been removed, and the page does that itself.',
+  page: { href: IDENTIFY_PHOTO_PATH, label: 'Identify by photo' },
   runtime: { ...MODEL_CREDIT.runtime },
 }
 

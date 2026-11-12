@@ -1,5 +1,6 @@
-// /identify/photo: take or choose a photo, crop it to the bird, and rank the
-// likely species.
+// /identify/photo: take or choose a photo, find the bird in it, crop to the
+// bird, and rank the likely species. When no bird is found, or the detector
+// is not on the device, the visitor puts the square on the bird.
 //
 // The first half is pure and has no browser dependency, so the tests import
 // it directly. The second half drives the page and only runs in a browser.
@@ -206,6 +207,133 @@ export const resizeCrop = (crop, handle, at, width, height) => {
   }
 }
 
+/**
+ * One of the detector's fixed anchor boxes, by number, for a square input
+ * `size` pixels wide: centre and size as shares of that square. There are
+ * five grids, each coarser than the last, and nine boxes in every cell:
+ * three sizes of three shapes. training/identify-photo/strip-detector.py
+ * checks this arithmetic against the anchors stored in the detector file.
+ */
+export const anchorBox = (index, size) => {
+  let at = index
+  for (let level = 3; level <= 7; level += 1) {
+    const cells = Math.ceil(size / 2 ** level)
+    if (at >= cells * cells * 9) {
+      at -= cells * cells * 9
+      continue
+    }
+    const cell = Math.floor(at / 9)
+    const side = (3 * 2 ** (Math.floor((at % 9) / 3) / 3)) / cells
+    const shape = Math.sqrt([1, 2, 0.5][at % 3])
+    return {
+      y: (Math.floor(cell / cells) + 0.5) / cells,
+      x: ((cell % cells) + 0.5) / cells,
+      height: side / shape,
+      width: side * shape,
+    }
+  }
+  return null
+}
+
+/** How much of two boxes is shared: the area of overlap over the area covered. */
+const overlap = (a, b) => {
+  const shared =
+    Math.max(0, Math.min(a.right, b.right) - Math.max(a.left, b.left)) *
+    Math.max(0, Math.min(a.bottom, b.bottom) - Math.max(a.top, b.top))
+  const covered =
+    (a.right - a.left) * (a.bottom - a.top) +
+    (b.right - b.left) * (b.bottom - b.top) -
+    shared
+  return covered > 0 ? shared / covered : 0
+}
+
+/**
+ * The detector's answer as the birds in the photo, largest first. `found` is
+ * what the worker returns: the anchors that scored as a bird, with their
+ * scores and their four shifts each (down, across, taller, wider). Each
+ * anchor is moved and resized by its shifts. Where two boxes overlap by more
+ * than `overlap` they are the same bird, and the better-scoring one is kept.
+ * The photo was drawn against the top left corner of the detector's square,
+ * shrunk so that its longer side fills it; boxes come back in the photo's
+ * own pixels, cut off at its edges.
+ */
+export const birdBoxes = (
+  found,
+  { width, height, size, score, overlap: most },
+) => {
+  const unit = Math.max(width, height)
+  const order = [...found.scores.keys()]
+    .filter((index) => found.scores[index] >= score)
+    .sort((a, b) => found.scores[b] - found.scores[a] || a - b)
+  const birds = []
+  for (const index of order) {
+    const anchor = anchorBox(found.anchors[index], size)
+    if (!anchor) continue
+    const [down, across, taller, wider] = found.shifts.subarray(
+      index * 4,
+      index * 4 + 4,
+    )
+    const y = down * anchor.height + anchor.y
+    const x = across * anchor.width + anchor.x
+    const tall = Math.exp(taller) * anchor.height
+    const wide = Math.exp(wider) * anchor.width
+    const box = {
+      left: (x - wide / 2) * unit,
+      top: (y - tall / 2) * unit,
+      right: (x + wide / 2) * unit,
+      bottom: (y + tall / 2) * unit,
+      score: found.scores[index],
+    }
+    if (!birds.some((kept) => overlap(kept, box) > most)) birds.push(box)
+  }
+  const inside = birds
+    .map((box) => ({
+      left: Math.max(0, box.left),
+      top: Math.max(0, box.top),
+      right: Math.min(width, box.right),
+      bottom: Math.min(height, box.bottom),
+      score: box.score,
+    }))
+    .filter((box) => box.right > box.left && box.bottom > box.top)
+  const area = (box) => (box.right - box.left) * (box.bottom - box.top)
+  return inside.sort((a, b) => area(b) - area(a))
+}
+
+/**
+ * The square for a detected bird: its box widened to a square, with `margin`
+ * of the square's side added all round, kept inside the photo.
+ */
+export const boxCrop = (box, margin, width, height) => {
+  const side = Math.min(width, height)
+  const size = Math.min(
+    side,
+    Math.max(
+      side * MIN_CROP,
+      Math.max(box.right - box.left, box.bottom - box.top) * (1 + 2 * margin),
+    ),
+  )
+  return clampCrop(
+    {
+      x: (box.left + box.right) / 2 - size / 2,
+      y: (box.top + box.bottom) / 2 - size / 2,
+      size,
+    },
+    width,
+    height,
+  )
+}
+
+/** Canvas pixels (RGBA bytes) as the detector's input: RGB bytes, row by row. */
+export const toBytes = (rgba) => {
+  const bytes = new Uint8Array((rgba.length / 4) * 3)
+  for (let from = 0, to = 0; from < rgba.length; from += 4, to += 3) {
+    bytes[to] = rgba[from]
+    bytes[to + 1] = rgba[from + 1]
+    bytes[to + 2] = rgba[from + 2]
+  }
+  return bytes
+}
+
 /** Canvas pixels (RGBA bytes) as the model's input: RGB numbers from 0 to 255, row by row. */
 export const toPixels = (rgba) => {
   const pixels = new Float32Array((rgba.length / 4) * 3)
@@ -232,14 +360,18 @@ export const duration = (ms) =>
     : `${(ms / 1000).toFixed(1)} s`
 
 /**
- * How long the last recognition took, from the worker's `timing`. It is the
- * time spent in the model; opening and cropping the photo are not in it.
+ * How long the last recognition took, from the worker's `timing`, and how
+ * long finding the bird took when the page did that (`finding`). It is the
+ * time spent in the models; opening and cropping the photo are not in it.
  * Empty when nothing was timed.
  */
-export const timingText = (timing) => {
+export const timingText = (timing, finding = null) => {
   if (!timing?.runs?.length) return ''
   const runtime = BUILD[timing.build]
-  return `Recognised in ${duration(timing.total)} on this device.${runtime ? ` Runtime: ${runtime}.` : ''}`
+  const took = finding?.runs?.length
+    ? `Found the bird in ${duration(finding.total)} and recognised it in ${duration(timing.total)}`
+    : `Recognised in ${duration(timing.total)}`
+  return `${took} on this device.${runtime ? ` Runtime: ${runtime}.` : ''}`
 }
 
 // ---------------------------------------------------------------------------
@@ -367,7 +499,9 @@ const yoursPlate = (yours) => {
       element('span', { class: 'plate-name', text: 'Yours' }),
       element('span', {
         class: 'plate-credit',
-        text: 'Your photo, cropped to the square you chose. It has not left this device.',
+        text: yours.automatic
+          ? 'Your photo, cropped to the bird this page found in it. It has not left this device.'
+          : 'Your photo, cropped to the square you chose. It has not left this device.',
       }),
     ]),
   ])
@@ -470,6 +604,7 @@ const boot = async () => {
   const results = part('results')
   const inputs = [part('camera'), part('file')]
   const tools = [
+    part('next-bird'),
     run,
     part('smaller'),
     part('larger'),
@@ -480,6 +615,16 @@ const boot = async () => {
   const modelBytes = Number(root.dataset.modelBytes)
   const downloadBytes = Number(root.dataset.downloadBytes)
   const inputSize = Number(root.dataset.inputSize)
+  // The model that finds the bird: where it is, and how its boxes are read.
+  const detector = JSON.parse(root.dataset.detector || 'null')
+  // Whether the detector is loaded. Without it the visitor crops by hand.
+  let finder = false
+  // The birds found in the open photo, largest first, and the one in use.
+  let birds = []
+  let bird = 0
+  // Whether the square is one the page chose and the visitor has not seen.
+  let automatic = false
+  let finding = null
 
   const say = (text) => {
     status.textContent = text
@@ -534,13 +679,25 @@ const boot = async () => {
     }
   }
 
-  const load = async () => {
+  const downloading = ({ received, total }) => {
+    showProgress(total ? received / total : 0)
+    say(
+      `Downloading the recogniser: ${mebibytes(received)} of ${mebibytes(total)} MiB.`,
+    )
+  }
+
+  /**
+   * Loads the recogniser. `everything` is false when the recogniser was
+   * already on the device: the detector is then used only if it is there
+   * too, so that nothing is downloaded that the visitor has not agreed to.
+   */
+  const load = async (everything = true) => {
     consent.hidden = true
     say('Getting the recogniser ready.')
     showProgress(0)
     try {
       if (!guide) await loadGuide()
-      await ask(
+      const ready = await ask(
         {
           type: 'load',
           base: models,
@@ -550,15 +707,12 @@ const boot = async () => {
           downloadBytes,
           cacheName,
           checks: JSON.parse(root.dataset.checks || '{}'),
+          ...(detector ? { detector: { ...detector, fetch: everything } } : {}),
         },
         [],
-        ({ received, total }) => {
-          showProgress(total ? received / total : 0)
-          say(
-            `Downloading the recogniser: ${mebibytes(received)} of ${mebibytes(total)} MiB.`,
-          )
-        },
+        downloading,
       )
+      finder = ready.detector === true
     } catch (error) {
       console.error(error)
       showProgress(null)
@@ -570,7 +724,34 @@ const boot = async () => {
     }
     showProgress(null)
     capture.hidden = false
+    part('upgrade').hidden = finder || !detector
     say('Ready. Take a photo of a bird, or choose one.')
+  }
+
+  /** Fetches the detector for a visitor who has the recogniser without it. */
+  const upgrade = async () => {
+    busy(true)
+    part('add-finder').disabled = true
+    showProgress(0)
+    try {
+      const ready = await ask(
+        { type: 'load-detector', detector: { ...detector, fetch: true } },
+        [],
+        downloading,
+      )
+      finder = ready.detector === true
+    } catch (error) {
+      console.error(error)
+    }
+    showProgress(null)
+    busy(false)
+    part('add-finder').disabled = false
+    part('upgrade').hidden = finder
+    say(
+      finder
+        ? 'Ready. Take a photo of a bird, or choose one.'
+        : 'That could not be downloaded. Check your connection, then try again.',
+    )
   }
 
   // The opened photo, shrunk, and the square the visitor has chosen on it.
@@ -686,38 +867,123 @@ const boot = async () => {
     const shown = fitWithin(fitted.width, fitted.height, 1280)
     view.width = shown.width
     view.height = shown.height
+    birds = finder ? await findBirds() : []
+    bird = 0
+    const note = part('crop-note')
+    if (birds.length) {
+      note.hidden = true
+      useBird()
+      await identify()
+      return
+    }
+    automatic = false
+    note.hidden = !finder
     setCrop(wholeCrop(work.width, work.height))
     say(
-      'Photo ready. Put the square on the bird, then choose Identify this bird.',
+      finder
+        ? 'No bird was found automatically. Put the square on the bird, then choose Identify this bird.'
+        : 'Photo ready. Put the square on the bird, then choose Identify this bird.',
     )
     showCropper()
   }
 
-  /** The chosen square, shrunk to `size` pixels. Halves first, so a large square is averaged rather than sampled. */
-  const cropped = (size) => {
+  /**
+   * Part of the photo, shrunk to `width` by `height` pixels. Halves first, so
+   * a large area is averaged rather than sampled.
+   */
+  const reduced = (area, width, height) => {
     let source = work
-    let { x, y, size: side } = crop
-    while (side / 2 >= size) {
+    let { x, y, w, h } = area
+    while (w / 2 >= width && h / 2 >= height) {
       const half = document.createElement('canvas')
-      half.width = half.height = Math.round(side / 2)
+      half.width = Math.round(w / 2)
+      half.height = Math.round(h / 2)
       const context = half.getContext('2d')
       context.imageSmoothingQuality = 'high'
-      context.drawImage(source, x, y, side, side, 0, 0, half.width, half.height)
+      context.drawImage(source, x, y, w, h, 0, 0, half.width, half.height)
       source = half
       x = 0
       y = 0
-      side = half.width
+      w = half.width
+      h = half.height
     }
     const out = document.createElement('canvas')
-    out.width = out.height = size
+    out.width = width
+    out.height = height
     const context = out.getContext('2d', { willReadFrequently: true })
     context.imageSmoothingQuality = 'high'
-    context.drawImage(source, x, y, side, side, 0, 0, size, size)
+    context.drawImage(source, x, y, w, h, 0, 0, width, height)
     return out
   }
 
+  /** The chosen square, shrunk to `size` pixels. */
+  const cropped = (size) =>
+    reduced({ x: crop.x, y: crop.y, w: crop.size, h: crop.size }, size, size)
+
+  /**
+   * The birds the detector finds in the open photo, largest first. The
+   * photo goes in as the detector was trained: whole, in its own shape,
+   * against the top left corner of a mid-grey square. Any failure is an
+   * empty list, and the visitor crops by hand.
+   */
+  const findBirds = async () => {
+    const { inputSize: size } = detector
+    busy(true)
+    say('Looking for the bird.')
+    finding = null
+    try {
+      const fitted = fitWithin(work.width, work.height, size)
+      const square = document.createElement('canvas')
+      square.width = square.height = size
+      const context = square.getContext('2d', { willReadFrequently: true })
+      context.fillStyle = 'rgb(127, 127, 127)'
+      context.fillRect(0, 0, size, size)
+      context.drawImage(
+        reduced(
+          { x: 0, y: 0, w: work.width, h: work.height },
+          fitted.width,
+          fitted.height,
+        ),
+        0,
+        0,
+      )
+      const pixels = toBytes(context.getImageData(0, 0, size, size).data)
+      const found = await ask(
+        {
+          type: 'detect',
+          pixels,
+          size,
+          label: detector.birdClass,
+          score: detector.score,
+        },
+        [pixels.buffer],
+      )
+      finding = found.timing
+      // The largest is the bird. The rest are offered only when the
+      // detector is surer of them: faint ones are often not birds.
+      return birdBoxes(found, {
+        width: work.width,
+        height: work.height,
+        size,
+        score: detector.score,
+        overlap: detector.overlap,
+      }).filter((box, index) => index === 0 || box.score >= detector.another)
+    } catch (error) {
+      console.error(error)
+      return []
+    } finally {
+      busy(false)
+    }
+  }
+
+  /** Puts the square on the bird in turn. */
+  const useBird = () => {
+    automatic = true
+    setCrop(boxCrop(birds[bird], detector.margin, work.width, work.height))
+  }
+
   const show = (result, yours, timing) => {
-    const text = timingText(timing)
+    const text = timingText(timing, yours.automatic ? finding : null)
     part('timing').textContent = text
     part('timing').hidden = !text
     const list = part('list')
@@ -733,6 +999,9 @@ const boot = async () => {
     close.hidden = !pair
     if (pair)
       close.textContent = `${pair[0].bird.en} and ${pair[1].bird.en} scored close to each other. Open both species pages and compare the field marks.`
+    part('found').hidden = !yours.automatic
+    const next = part('next-bird')
+    next.hidden = birds.length < 2
     results.hidden = false
     const heading = part('results-heading')
     heading.textContent = HEADING[result.kind]
@@ -766,6 +1035,7 @@ const boot = async () => {
           month: new Date().getMonth() + 1,
         }),
         {
+          automatic,
           small: cropped(THUMB),
           large: cropped(Math.min(Math.round(crop.size), ZOOM_SIDE)),
         },
@@ -930,7 +1200,18 @@ const boot = async () => {
   part('whole').addEventListener('click', () =>
     setCrop(wholeCrop(work.width, work.height)),
   )
-  run.addEventListener('click', identify)
+  run.addEventListener('click', () => {
+    // The visitor has seen the square, and may have moved it.
+    automatic = false
+    identify()
+  })
+  part('next-bird').addEventListener('click', () => {
+    if (birds.length < 2) return
+    bird = (bird + 1) % birds.length
+    useBird()
+    identify()
+  })
+  part('add-finder').addEventListener('click', upgrade)
   // Leaving the crop view without identifying, by Cancel or Escape.
   const cancelled = () => {
     if (results.hidden) say('Ready. Take a photo of a bird, or choose one.')
@@ -941,7 +1222,9 @@ const boot = async () => {
   })
   cropper.addEventListener('cancel', cancelled)
   part('recrop').addEventListener('click', () => {
-    if (crop) showCropper()
+    if (!crop) return
+    part('crop-note').hidden = true
+    showCropper()
   })
   // A drag that was under way ends when the crop view closes.
   cropper.addEventListener('close', () => {
@@ -957,7 +1240,7 @@ const boot = async () => {
   window.addEventListener('online', connection)
   window.addEventListener('offline', connection)
   connection()
-  part('download').addEventListener('click', load)
+  part('download').addEventListener('click', () => load())
   for (const input of inputs)
     input.addEventListener('change', async () => {
       const [chosen] = input.files
@@ -965,7 +1248,7 @@ const boot = async () => {
       if (chosen) await open(chosen)
     })
 
-  if (await isSaved()) await load()
+  if (await isSaved()) await load(false)
   else {
     consent.hidden = false
     say('')
