@@ -177,6 +177,37 @@ const element = (tag, properties = {}, children = []) => {
   return node
 }
 
+/**
+ * The credit disclosure for a photograph or a recording, from the model
+ * the index stores. It mirrors creditHtml in src/credit.js, which decides
+ * the wording; test/credit.test.js holds the two to the same markup.
+ */
+const creditNode = (credit, file) =>
+  element(
+    'details',
+    { class: 'credit', ...(file ? { 'data-file': file } : {}) },
+    [
+      element('summary', { text: credit.summary }),
+      element(
+        'ul',
+        {},
+        credit.lines.map((line) =>
+          element(
+            'li',
+            {},
+            line.map((part) =>
+              typeof part === 'string'
+                ? part
+                : element('a', { href: part.href, text: part.text }),
+            ),
+          ),
+        ),
+      ),
+    ],
+  )
+
+const aiLabel = (text) => element('span', { class: 'ai-label', text })
+
 const resultItem = (item, families, yours) => {
   const { bird } = item
   const family = families[bird.family]
@@ -218,7 +249,7 @@ const resultItem = (item, families, yours) => {
   ])
   if (bird.image)
     pair.append(
-      element('figure', {}, [
+      element('figure', { class: 'identify-guide' }, [
         element('img', {
           src: bird.image.src,
           alt: bird.image.alt,
@@ -226,7 +257,13 @@ const resultItem = (item, families, yours) => {
           width: '120',
           height: '120',
         }),
-        element('figcaption', { text: 'Guide' }),
+        element('figcaption', {}, [
+          element('span', { class: 'identify-guide-label', text: 'Guide' }),
+          ...(bird.image.aiGenerated ? [aiLabel('AI-generated image')] : []),
+          ...(bird.image.credit
+            ? [creditNode(bird.image.credit, bird.image.src)]
+            : []),
+        ]),
       ]),
     )
   else body.append(element('p', { text: 'The guide has no photograph yet.' }))

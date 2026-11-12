@@ -1,5 +1,6 @@
 import { diffSpecies } from './diff.js'
 import { recordingNotes } from './recordings.js'
+import { creditHtml, creditModel } from './credit.js'
 import { escapeHtml, inlineText, safeHttpUrl } from './escape.js'
 import {
   APPROXIMATE_LABEL,
@@ -412,38 +413,26 @@ const recordingsHtml = (recordings) =>
     : recordings
         .map((recording) => {
           const hosted = recording?.hosted !== false && recording?.key
-          const href = hosted ? objectPath('audio', recording.key) : ''
-          const source = safeHttpUrl(recording?.source)
           const fileUrl = safeHttpUrl(recording?.fileUrl)
-          const playSrc =
-            recording?.hosted === true
-              ? href
-              : fileUrl && !licenceForbidsDerivatives(recording?.license)
-                ? fileUrl
-                : ''
-          const playable =
-            playSrc && !licenceForbidsDerivatives(recording?.license)
-              ? `<audio controls src="${escapeHtml(playSrc)}"></audio>`
+          const displayable = !licenceForbidsDerivatives(recording?.license)
+          const src = hosted
+            ? objectPath('audio', recording.key)
+            : fileUrl && displayable
+              ? fileUrl
               : ''
-          const link = href
-            ? `<a href="${escapeHtml(href)}">${escapeHtml(recording.key)}</a>`
+          const playable =
+            src && displayable
+              ? `<audio controls src="${escapeHtml(src)}"></audio>`
+              : ''
+          const ai = recording?.aiGenerated
+            ? ' <span class="ai-label">AI-generated recording</span>'
             : ''
-          const credit = [recording?.author, recording?.license]
-            .filter(Boolean)
-            .map((part) => escapeHtml(part))
-            .join('. ')
-          const licence = safeHttpUrl(recording?.licenceUrl)
-          const licenceLink = licence
-            ? `<a href="${escapeHtml(licence)}">Licence</a>`
-            : ''
-          const sourceLink = source
-            ? `<a href="${escapeHtml(source)}">Source</a>`
-            : ''
-          const stored = hosted ? '' : 'Not stored on this site.'
-          const notes = recordingNotes(recording).map((note) =>
-            escapeHtml(note),
+          const credit = creditModel(
+            recording,
+            'recording',
+            src ? { src, onSite: Boolean(hosted) } : null,
           )
-          return ` Recording: ${[link, credit, licenceLink, sourceLink, stored, ...notes].filter(Boolean).join('. ')}.${playable}`
+          return `<div class="recording">${ai}${playable}${creditHtml(credit, src)}</div>`
         })
         .join('')
 
@@ -568,56 +557,52 @@ const figures = (doc, images, imagesAvailable, colourMap) => {
   return images
     .map((image) => {
       const available = imagesAvailable?.[image.key] === true
-      const caption = imageCaption(image, colourMap)
       const remote =
         !available &&
         safeHttpUrl(image?.fileUrl) &&
         !licenceForbidsDerivatives(image?.license)
           ? safeHttpUrl(image.fileUrl)
           : ''
-      const alt = imageAlt(doc, image)
-      if (available)
-        return plateFigure(
-          `<img src="${escapeHtml(objectPath('images', image.key))}" alt="${escapeHtml(alt)}" loading="lazy">`,
-          caption.html,
-        )
-      if (remote)
-        return plateFigure(
-          `<img src="${escapeHtml(remote)}" alt="${escapeHtml(alt)}" loading="lazy">`,
-          `Not stored on this site yet. ${caption.html}`,
-        )
-      return placeholder(
-        `Photograph not in the store yet. ${caption.text}`,
-        caption.html,
+      const src = available ? objectPath('images', image.key) : remote
+      const caption = imageCaption(
+        image,
+        src ? { src, onSite: available } : null,
+        colourMap,
       )
+      return src
+        ? plateFigure(
+            `<img src="${escapeHtml(src)}" alt="${escapeHtml(imageAlt(doc, image))}" loading="lazy">`,
+            caption,
+          )
+        : placeholder('Photograph not in the store yet.', caption)
     })
     .join('\n')
 }
 
-const imageCaption = (image) => {
-  const label = image?.aiGenerated
-    ? 'AI-generated image'
-    : 'Photograph, not AI-generated'
-  const view = viewLabel(image?.view)
-  const sex = mediaSexLabel(image?.sex)
+/**
+ * What the picture shows stays in view; who made it and on what terms goes
+ * in the credit disclosure. Only an AI-generated image is flagged outside
+ * it, since that is the case a reader needs to notice.
+ */
+const imageCaption = (image, shown) => {
   const captionText =
     typeof image?.caption === 'string' ? image.caption.trim() : ''
-  const source = safeHttpUrl(image?.source)
-  const credit = [image?.author, image?.license]
+  const detail = [
+    mediaSexLabel(image?.sex),
+    viewLabel(image?.view),
+    captionText,
+  ]
     .filter(Boolean)
     .map((part) => escapeHtml(part))
-    .join('. ')
-  const sourceHtml = source
-    ? `<a href="${escapeHtml(source)}">Source</a>`
-    : image?.source
-      ? escapeHtml(image.source)
-      : ''
-  const detail = [sex, view, captionText].filter(Boolean)
-  const html = `<span class="ai-label">${escapeHtml(label)}</span>${detail.length ? ` ${detail.map((part) => escapeHtml(part)).join('. ')}.` : ''}${credit ? ` ${credit}.` : ''}${sourceHtml ? ` ${sourceHtml}.` : ''}`
-  const text = [label, sex, view, captionText, image?.author, image?.license]
+  return [
+    image?.aiGenerated
+      ? '<span class="ai-label">AI-generated image</span>'
+      : '',
+    detail.length ? `${detail.join('. ')}.` : '',
+    creditHtml(creditModel(image, 'image', shown), shown?.src),
+  ]
     .filter(Boolean)
-    .join('. ')
-  return { html, text }
+    .join(' ')
 }
 
 const plateFigure = (image, caption) => `<figure class="plate">

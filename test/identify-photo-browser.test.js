@@ -214,6 +214,13 @@ const identifyPhoto = async (browser, { keepsCache }) => {
       'Your photo',
     )
     assert.ok(await first.locator('img').getAttribute('alt'))
+    // The guide photograph carries a closed credit disclosure.
+    const credit = first.locator('.identify-pair details.credit')
+    assert.equal(await credit.count(), 1)
+    assert.equal(await credit.getAttribute('open'), null)
+    assert.match(await credit.locator('summary').textContent(), /^Credit: \S/)
+    await credit.locator('summary').click()
+    assert.match(await credit.textContent(), /Saved on this site: (yes|no)\./)
     assert.match(
       await page.locator('#identify-summary').textContent(),
       /No result is certain/,

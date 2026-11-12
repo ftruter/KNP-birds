@@ -879,6 +879,21 @@ audio {
 }
 .ai-label { font-weight: 700; color: var(--accent); }
 
+.credit { font-size: 0.9rem; }
+.plate figcaption .credit, .recording .credit { margin-block-start: 0.3rem; }
+.credit summary {
+  inline-size: fit-content;
+  max-inline-size: 100%;
+  padding-block: 0.25rem;
+  cursor: pointer;
+  font-family: var(--sans);
+  color: var(--muted, inherit);
+}
+.credit summary:focus-visible { outline: 3px solid var(--focus); outline-offset: 2px; }
+.credit ul { margin: 0.2rem 0 0.4rem; padding-inline-start: 1.2rem; }
+.credit li { margin: 0.15rem 0; }
+.plate.is-zoomed figcaption { max-block-size: 60vh; overflow-y: auto; }
+
 .swatch {
   display: inline-block;
   inline-size: 0.95em;
@@ -1090,6 +1105,13 @@ audio {
   background: var(--bg);
 }
 
+/* The photograph's credit runs under the whole result, so it has room to open. */
+.identify-thumb, .identify-guide, .identify-guide figcaption { display: contents; }
+.identify-thumb img { grid-area: 1 / 1; }
+.identify-thumb figcaption { grid-area: 2 / 1 / auto / -1; }
+.identify-thumb + .identify-body { grid-area: 1 / 2; }
+.identify-result .credit { font-size: 0.85rem; }
+
 .identify-result img {
   inline-size: 6rem;
   block-size: 6rem;
@@ -1121,7 +1143,17 @@ audio {
 @media (min-width: 34rem) {
   .identify-photo-result { grid-template-columns: auto 1fr; }
 }
-.identify-pair { display: flex; gap: 0.5rem; }
+.identify-pair {
+  display: grid;
+  grid-template-columns: 6rem minmax(6rem, 1fr);
+  gap: 0 0.5rem;
+  max-inline-size: 22rem;
+}
+.identify-pair > figure:first-child { grid-area: 1 / 1 / span 2; }
+.identify-guide img { grid-area: 1 / 2; }
+.identify-guide-label { grid-area: 2 / 2; inline-size: 6rem; font: 0.8rem var(--sans); text-align: center; }
+.identify-guide .ai-label, .identify-guide .credit { grid-column: 1 / -1; }
+.identify-guide .credit { text-align: start; }
 .identify-pair figure { margin: 0; }
 .identify-pair img, .identify-pair canvas {
   display: block;

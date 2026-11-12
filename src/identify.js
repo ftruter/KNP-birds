@@ -1,4 +1,5 @@
 import { safeHttpUrl } from './escape.js'
+import { creditModel } from './credit.js'
 import { imageAlt, licenceForbidsDerivatives, objectPath } from './guide.js'
 import { QUALITY_RANK } from './recordings.js'
 
@@ -101,7 +102,16 @@ const thumbnail = (species) => {
         : remote && !licenceForbidsDerivatives(image?.license)
           ? remote
           : null
-    if (src) return { src, alt: imageAlt(species, image) }
+    if (src)
+      return {
+        src,
+        alt: imageAlt(species, image),
+        ...(image.aiGenerated ? { aiGenerated: true } : {}),
+        credit: creditModel(image, 'image', {
+          src,
+          onSite: image.hosted === true,
+        }),
+      }
   }
   return null
 }
@@ -126,10 +136,20 @@ const referenceCall = (species) => {
       if (!src) continue
       const rank = QUALITY_RANK[recording.quality] ?? 0
       if (!best || rank > best.rank)
-        best = { rank, src, type: text(call?.type) }
+        best = { rank, src, type: text(call?.type), recording }
     }
   }
-  return best ? { src: best.src, type: best.type } : null
+  return best
+    ? {
+        src: best.src,
+        type: best.type,
+        ...(best.recording.aiGenerated ? { aiGenerated: true } : {}),
+        credit: creditModel(best.recording, 'recording', {
+          src: best.src,
+          onSite: best.recording.hosted === true,
+        }),
+      }
+    : null
 }
 
 const months = (species) => {

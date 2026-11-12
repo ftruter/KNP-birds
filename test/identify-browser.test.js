@@ -146,6 +146,16 @@ const identifyFromFile = async (browser, { keepsCache }) => {
       await first.locator('audio').getAttribute('aria-label'),
       /^Reference call of /,
     )
+    // One closed credit disclosure beside the photograph and one beside the call.
+    for (const place of ['.identify-thumb', '.identify-call']) {
+      const credit = first.locator(`${place} details.credit`)
+      assert.equal(await credit.count(), 1, place)
+      assert.equal(await credit.getAttribute('open'), null, place)
+      assert.match(await credit.locator('summary').textContent(), /^Credit: \S/)
+      assert.ok(await credit.getAttribute('data-file'), place)
+      await credit.locator('summary').click()
+      assert.match(await credit.textContent(), /Saved on this site: (yes|no)\./)
+    }
     assert.match(
       await page.locator('#identify-summary').textContent(),
       /No result is certain/,

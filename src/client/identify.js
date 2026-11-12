@@ -153,6 +153,37 @@ const element = (tag, properties = {}, children = []) => {
   return node
 }
 
+/**
+ * The credit disclosure for a photograph or a recording, from the model
+ * the index stores. It mirrors creditHtml in src/credit.js, which decides
+ * the wording; test/credit.test.js holds the two to the same markup.
+ */
+const creditNode = (credit, file) =>
+  element(
+    'details',
+    { class: 'credit', ...(file ? { 'data-file': file } : {}) },
+    [
+      element('summary', { text: credit.summary }),
+      element(
+        'ul',
+        {},
+        credit.lines.map((line) =>
+          element(
+            'li',
+            {},
+            line.map((part) =>
+              typeof part === 'string'
+                ? part
+                : element('a', { href: part.href, text: part.text }),
+            ),
+          ),
+        ),
+      ),
+    ],
+  )
+
+const aiLabel = (text) => element('span', { class: 'ai-label', text })
+
 const resultItem = (item, families) => {
   const { bird } = item
   const family = families[bird.family]
@@ -184,14 +215,18 @@ const resultItem = (item, families) => {
   ])
   if (bird.call)
     body.append(
-      element('p', { class: 'identify-call' }, [
+      element('div', { class: 'identify-call' }, [
         element('span', { text: 'Reference call ' }),
+        ...(bird.call.aiGenerated ? [aiLabel('AI-generated recording')] : []),
         element('audio', {
           controls: '',
           preload: 'none',
           src: bird.call.src,
           'aria-label': `Reference call of ${bird.en}`,
         }),
+        ...(bird.call.credit
+          ? [creditNode(bird.call.credit, bird.call.src)]
+          : []),
       ]),
     )
   else
@@ -204,13 +239,21 @@ const resultItem = (item, families) => {
   const row = element('li', { class: 'identify-result' })
   if (bird.image)
     row.append(
-      element('img', {
-        src: bird.image.src,
-        alt: bird.image.alt,
-        loading: 'lazy',
-        width: '120',
-        height: '120',
-      }),
+      element('figure', { class: 'identify-thumb' }, [
+        element('img', {
+          src: bird.image.src,
+          alt: bird.image.alt,
+          loading: 'lazy',
+          width: '120',
+          height: '120',
+        }),
+        element('figcaption', {}, [
+          ...(bird.image.aiGenerated ? [aiLabel('AI-generated image')] : []),
+          ...(bird.image.credit
+            ? [creditNode(bird.image.credit, bird.image.src)]
+            : []),
+        ]),
+      ]),
     )
   row.append(body)
   return row

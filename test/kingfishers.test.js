@@ -224,7 +224,7 @@ test('weak kingfisher claims stay attributed and the pair photo stays mixed', as
     imagesAvailable: {},
   })
   assert.match(html, /Male and female/)
-  assert.match(html, /Not stored on this site yet/)
+  assert.match(html, /Saved on this site: no\./)
   assert.doesNotMatch(html, /Sample content/)
   const hoverHtml = renderSpeciesHtml({
     origin: 'https://birds.truter.world',
