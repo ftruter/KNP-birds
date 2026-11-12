@@ -1,4 +1,5 @@
-// /identify/sound: record or open a bird call and rank the likely species.
+// /identify/sound: listen for bird calls, or record or open one, and rank
+// the likely species.
 //
 // The first half is pure and has no browser dependency, so the tests import
 // it directly. The second half drives the page and only runs in a browser.
@@ -11,6 +12,15 @@ export const RECORD_SECONDS = 10
 export const MAX_SECONDS = 60
 export const MAX_FILE_BYTES = 50 * 1024 * 1024
 export const MAX_RESULTS = 5
+
+// Listening: the newest 3-second window is analysed once a second, and the
+// list shows what was heard in the last LISTEN_SECONDS. A device that cannot
+// keep up is given LISTEN_SLOW_MS between windows. Listening stops by itself
+// after LISTEN_IDLE_SECONDS with nothing heard.
+export const LISTEN_SECONDS = 10
+export const LISTEN_EVERY_MS = 1000
+export const LISTEN_SLOW_MS = 2000
+export const LISTEN_IDLE_SECONDS = 180
 
 // Score cut-offs, from the Phase 0 reference-clip test: a top score of 0.5 or
 // more was right 92% of the time and 0.25 or more 89%. They are a starting
@@ -132,6 +142,105 @@ export const joinChunks = (chunks) => {
     offset += chunk.length
   }
   return joined
+}
+
+/** The newest `size` samples of a stream that arrives in chunks. */
+export const createRing = (size) => {
+  const data = new Float32Array(size)
+  let next = 0
+  let filled = 0
+  return {
+    get length() {
+      return filled
+    },
+    push(chunk) {
+      const part =
+        chunk.length > size ? chunk.subarray(chunk.length - size) : chunk
+      const room = size - next
+      if (part.length <= room) data.set(part, next)
+      else {
+        data.set(part.subarray(0, room), next)
+        data.set(part.subarray(room), 0)
+      }
+      next = (next + part.length) % size
+      filled = Math.min(size, filled + part.length)
+    },
+    /** A copy of what is held, oldest sample first. */
+    latest() {
+      if (filled < size) return data.slice(0, filled)
+      const samples = new Float32Array(size)
+      samples.set(data.subarray(next))
+      samples.set(data.subarray(0, next), size - next)
+      return samples
+    },
+    clear() {
+      next = 0
+      filled = 0
+    },
+  }
+}
+
+/**
+ * The species heard in one window: those at or above the "possible" cut-off
+ * once the month weight is applied, as for a clip. `scores` holds one score
+ * per species.
+ */
+export const heardInWindow = ({ species, scores, month }) =>
+  species.flatMap((bird, index) => {
+    const adjusted = monthPrior(scores[index], bird.monthsPresent, month)
+    return adjusted.score >= POSSIBLE ? [{ bird, ...adjusted }] : []
+  })
+
+const liveEntry = (bird, outOfSeason, hits) => {
+  const score = Math.max(...hits.map((hit) => hit.score))
+  return { bird, outOfSeason, hits, score, confidence: confidence(score) }
+}
+
+/**
+ * The running list after one more window. `list` is the list so far, `heard`
+ * is heardInWindow() for the window, and `now` is its time in milliseconds.
+ *
+ * A species stays while it was heard in the last LISTEN_SECONDS, and its
+ * score is its best in that time. A new species goes in where its score puts
+ * it. One already listed keeps its place, so the list does not jump about.
+ */
+export const liveList = (list, heard, now) => {
+  const since = now - LISTEN_SECONDS * 1000
+  const fresh = new Map(heard.map((item) => [item.bird.slug, item]))
+  const kept = []
+  for (const entry of list) {
+    const again = fresh.get(entry.bird.slug)
+    fresh.delete(entry.bird.slug)
+    const hits = entry.hits.filter((hit) => hit.at > since)
+    if (again) hits.push({ at: now, score: again.score })
+    if (hits.length)
+      kept.push(
+        liveEntry(entry.bird, again?.outOfSeason ?? entry.outOfSeason, hits),
+      )
+  }
+  const arrivals = [...fresh.values()]
+    .map((item) =>
+      liveEntry(item.bird, item.outOfSeason, [{ at: now, score: item.score }]),
+    )
+    .sort((a, b) => b.score - a.score || a.bird.en.localeCompare(b.bird.en))
+  for (const arrival of arrivals) {
+    const index = kept.findIndex((entry) => entry.score < arrival.score)
+    kept.splice(index === -1 ? kept.length : index, 0, arrival)
+  }
+  return kept
+}
+
+/**
+ * How long to wait between windows, from how long the last ones took (each
+ * from taking the samples to having the scores). Three in a row that used
+ * most of the wait mean the device cannot keep up: once a second becomes
+ * every two seconds, and every two seconds becomes null, which is "too slow
+ * to listen".
+ */
+export const listenPace = (recent, every) => {
+  const last = recent.slice(-3)
+  if (last.length < 3 || last.some((ms) => ms <= every * 0.8)) return every
+  return every === LISTEN_EVERY_MS ? LISTEN_SLOW_MS : null
 }
 
 /** Bytes as mebibytes (1 MiB = 1,048,576 bytes) to one decimal place. */
@@ -364,6 +473,9 @@ const boot = async () => {
   const capture = part('capture')
   const record = part('record')
   const stop = part('stop')
+  const listen = part('listen')
+  const listenStop = part('listen-stop')
+  const list = part('list')
   const file = part('file')
   const countdown = part('countdown')
   const meter = part('meter')
@@ -381,6 +493,7 @@ const boot = async () => {
     if (value != null) progress.value = value
   }
   const busy = (on) => {
+    listen.disabled = on
     record.disabled = on
     file.disabled = on
   }
@@ -466,7 +579,7 @@ const boot = async () => {
     }
     showProgress(null)
     capture.hidden = false
-    say('Ready. Record a bird, or choose a recording.')
+    say('Ready. Listen, record a clip, or choose a recording.')
   }
 
   const resample = async (samples, rate) => {
@@ -498,7 +611,6 @@ const boot = async () => {
     const text = timingText(timing)
     part('timing').textContent = text
     part('timing').hidden = !text
-    const list = part('list')
     list.replaceChildren(
       ...result.candidates.map((item) => resultItem(item, guide.families)),
     )
@@ -560,51 +672,17 @@ const boot = async () => {
     }
   }
 
-  let session = null
+  const CANNOT_RECORD =
+    'This browser cannot record here. Choose a recording made with another app instead.'
 
-  const finish = async () => {
-    if (!session) return
-    const { stream, context, chunks, recorder, timer, frame } = session
-    session = null
-    clearInterval(timer)
-    cancelAnimationFrame(frame)
-    stop.hidden = true
-    record.hidden = false
-    countdown.hidden = true
-    meter.hidden = true
-    file.disabled = false
-    say('Recording stopped.')
-    try {
-      let samples
-      if (recorder) {
-        const blob = await new Promise((resolve) => {
-          const parts = []
-          recorder.addEventListener('dataavailable', (event) =>
-            parts.push(event.data),
-          )
-          recorder.addEventListener('stop', () => resolve(new Blob(parts)))
-          recorder.stop()
-        })
-        samples = await decode(await blob.arrayBuffer())
-      } else {
-        samples = await resample(joinChunks(chunks), context.sampleRate)
-      }
-      for (const track of stream.getTracks()) track.stop()
-      await context.close().catch(() => {})
-      await analyse(samples)
-    } catch (error) {
-      console.error(error)
-      for (const track of stream.getTracks()) track.stop()
-      say('The recording could not be read. Try again.')
-    }
-  }
-
-  const start = async () => {
+  /**
+   * The microphone, with the browser's own processing off. Where there is
+   * none it says why and returns null.
+   */
+  const openMicrophone = async () => {
     if (!navigator.mediaDevices?.getUserMedia || !LiveContext) {
-      say(
-        'This browser cannot record here. Choose a recording made with another app instead.',
-      )
-      return
+      say(CANNOT_RECORD)
+      return null
     }
     // Created inside the tap, before any await, so iOS lets it run.
     const context = new LiveContext()
@@ -623,72 +701,386 @@ const boot = async () => {
       say(
         'The microphone is not available. Allow this site to use it, or choose a recording instead.',
       )
-      return
+      return null
     }
     const source = context.createMediaStreamSource(stream)
     const analyser = context.createAnalyser()
     analyser.fftSize = 2048
     source.connect(analyser)
-    const chunks = []
-    let recorder = null
-    try {
-      await context.audioWorklet.addModule(root.dataset.capture)
-      const tap = new AudioWorkletNode(context, 'identify-capture', {
-        numberOfInputs: 1,
-        numberOfOutputs: 1,
-        channelCount: 1,
-        channelCountMode: 'explicit',
-      })
-      tap.port.onmessage = ({ data }) => chunks.push(data)
-      // Some browsers only run nodes that reach the output, so route the tap
-      // there through a silent gain.
-      const silent = context.createGain()
-      silent.gain.value = 0
-      source.connect(tap)
-      tap.connect(silent)
-      silent.connect(context.destination)
-    } catch {
-      if (typeof MediaRecorder !== 'function') {
-        for (const track of stream.getTracks()) track.stop()
-        await context.close().catch(() => {})
-        say(
-          'This browser cannot record here. Choose a recording made with another app instead.',
-        )
-        return
-      }
-      recorder = new MediaRecorder(stream)
-      recorder.start()
+    const close = async () => {
+      for (const track of stream.getTracks()) track.stop()
+      await context.close().catch(() => {})
     }
+    return { context, stream, source, analyser, close }
+  }
 
-    const began = performance.now()
+  /**
+   * Hands the microphone's samples to `onChunk` as they arrive, at the
+   * device's own rate. Throws where the browser has no audio worklets.
+   */
+  const tapSamples = async ({ context, source }, onChunk) => {
+    await context.audioWorklet.addModule(root.dataset.capture)
+    const tap = new AudioWorkletNode(context, 'identify-capture', {
+      numberOfInputs: 1,
+      numberOfOutputs: 1,
+      channelCount: 1,
+      channelCountMode: 'explicit',
+    })
+    tap.port.onmessage = ({ data }) => onChunk(data)
+    // Some browsers only run nodes that reach the output, so route the tap
+    // there through a silent gain.
+    const silent = context.createGain()
+    silent.gain.value = 0
+    source.connect(tap)
+    tap.connect(silent)
+    silent.connect(context.destination)
+  }
+
+  /** Moves the sound level meter until `owner.closed` is set. */
+  const showLevel = (analyser, owner) => {
     const wave = new Float32Array(analyser.fftSize)
     const draw = () => {
-      if (!session) return
+      if (owner.closed) return
       analyser.getFloatTimeDomainData(wave)
       let sum = 0
       for (const value of wave) sum += value * value
       level.value = Math.min(1, Math.sqrt(sum / wave.length) * 6)
-      session.frame = requestAnimationFrame(draw)
+      owner.frame = requestAnimationFrame(draw)
     }
+    draw()
+  }
+
+  let session = null
+
+  const finish = async () => {
+    if (!session) return
+    const { mic, chunks, recorder, timer, frame } = session
+    session.closed = true
+    session = null
+    clearInterval(timer)
+    cancelAnimationFrame(frame)
+    stop.hidden = true
+    record.hidden = false
+    listen.hidden = false
+    countdown.hidden = true
+    meter.hidden = true
+    say('Recording stopped.')
+    try {
+      let samples
+      if (recorder) {
+        const blob = await new Promise((resolve) => {
+          const parts = []
+          recorder.addEventListener('dataavailable', (event) =>
+            parts.push(event.data),
+          )
+          recorder.addEventListener('stop', () => resolve(new Blob(parts)))
+          recorder.stop()
+        })
+        samples = await decode(await blob.arrayBuffer())
+      } else {
+        samples = await resample(joinChunks(chunks), mic.context.sampleRate)
+      }
+      await mic.close()
+      await analyse(samples)
+    } catch (error) {
+      console.error(error)
+      await mic.close()
+      say('The recording could not be read. Try again.')
+    } finally {
+      busy(false)
+    }
+  }
+
+  const start = async () => {
+    busy(true)
+    const mic = await openMicrophone()
+    if (!mic) {
+      busy(false)
+      return
+    }
+    const chunks = []
+    let recorder = null
+    try {
+      await tapSamples(mic, (chunk) => chunks.push(chunk))
+    } catch {
+      if (typeof MediaRecorder !== 'function') {
+        await mic.close()
+        busy(false)
+        say(CANNOT_RECORD)
+        return
+      }
+      recorder = new MediaRecorder(mic.stream)
+      recorder.start()
+    }
+
+    const began = performance.now()
     const tick = () => {
       const left = RECORD_SECONDS - (performance.now() - began) / 1000
       countdown.textContent = `Recording. ${Math.max(0, Math.ceil(left))} seconds left.`
       if (left <= 0) finish()
     }
-    session = { stream, context, chunks, recorder, timer: 0, frame: 0 }
+    session = { mic, chunks, recorder, timer: 0, frame: 0, closed: false }
     session.timer = setInterval(tick, 200)
     record.hidden = true
+    listen.hidden = true
     stop.hidden = false
     countdown.hidden = false
     meter.hidden = false
-    file.disabled = true
     results.hidden = true
     tick()
-    draw()
+    showLevel(mic.analyser, session)
     say(`Recording for up to ${RECORD_SECONDS} seconds.`)
     stop.focus()
   }
 
+  // Listening. `live` is the run in hand, or null. Its clock stops while a
+  // reference call plays or a photograph is zoomed, so the page neither
+  // hears itself nor empties the list behind the visitor's back.
+  let live = null
+
+  const CHECK =
+    'No result is certain: compare the photograph and play the reference call.'
+
+  const drawLive = (run) => {
+    const rows = run.list.map((entry) => {
+      const { slug } = entry.bird
+      let row = run.rows.get(slug)
+      if (!row) {
+        row = resultItem(entry, guide.families)
+        run.rows.set(slug, row)
+      }
+      const word = row.querySelector('.identify-verdict strong')
+      if (word.textContent !== WORD[entry.confidence])
+        word.textContent = WORD[entry.confidence]
+      return row
+    })
+    for (const [slug, row] of run.rows)
+      if (!rows.includes(row)) {
+        row.remove()
+        run.rows.delete(slug)
+      }
+    // A row that is already listed never moves, so only new rows are placed.
+    rows.forEach((row, index) => {
+      if (list.children[index] !== row)
+        list.insertBefore(row, list.children[index] ?? null)
+    })
+    list.hidden = rows.length === 0
+    part('summary').textContent =
+      rows.length === 0
+        ? `Nothing recognised in the last ${LISTEN_SECONDS} seconds.`
+        : `${rows.length} species heard in the last ${LISTEN_SECONDS} seconds. ${CHECK}`
+    // The list changes every second and is not a live region. A species is
+    // announced once, when it first appears.
+    const arrived = run.list
+      .map((entry) => entry.bird)
+      .filter((bird) => !run.announced.has(bird.slug))
+    for (const bird of arrived) run.announced.add(bird.slug)
+    if (arrived.length)
+      say(`Heard: ${arrived.map((bird) => bird.en).join(', ')}.`)
+  }
+
+  const stopListening = async (message) => {
+    const run = live
+    if (!run) return
+    live = null
+    run.closed = true
+    clearInterval(run.timer)
+    cancelAnimationFrame(run.frame)
+    document.removeEventListener('visibilitychange', run.onHidden)
+    run.wake?.release().catch(() => {})
+    run.ring.clear()
+    const focused = document.activeElement === listenStop
+    listenStop.hidden = true
+    listen.hidden = false
+    record.hidden = false
+    meter.hidden = true
+    await run.mic.close()
+    // A window that is still with the recogniser is thrown away when it
+    // comes back. Nothing else may be sent until it has.
+    await run.busy
+    part('results-heading').textContent = 'Heard before listening stopped'
+    part('summary').textContent =
+      run.list.length === 0
+        ? `Listening has stopped. Nothing was recognised in its last ${LISTEN_SECONDS} seconds.`
+        : `Listening has stopped. These species were heard in its last ${LISTEN_SECONDS} seconds. ${CHECK}`
+    const text = timingText({
+      runs: run.runs,
+      total: run.runs.reduce((sum, ms) => sum + ms, 0),
+      build: run.build,
+    })
+    part('timing').textContent = text
+    part('timing').hidden = !text
+    busy(false)
+    say(message ?? 'Stopped listening.')
+    if (focused) listen.focus()
+  }
+
+  /** Analyses the newest three seconds. Returns why listening must stop, or null. */
+  const hear = async (run, began) => {
+    const at = began - run.paused
+    const samples = await resample(
+      run.ring.latest(),
+      run.mic.context.sampleRate,
+    )
+    const clip = samples.slice(-WINDOW)
+    const { scores, timing } = await ask(
+      { type: 'analyse', samples: clip, starts: [0], columns },
+      [clip.buffer],
+    )
+    if (live !== run) return null
+    run.runs.push(...timing.runs)
+    run.build = timing.build
+    const heard = heardInWindow({
+      species: guide.covered,
+      scores: speciesScores([scores], columns, guide.covered),
+      month: run.month,
+    })
+    run.list = liveList(run.list, heard, at)
+    if (heard.length) run.lastHeard = at
+    drawLive(run)
+    if (at - run.lastHeard >= LISTEN_IDLE_SECONDS * 1000)
+      return `Listening stopped: nothing was recognised for ${LISTEN_IDLE_SECONDS / 60} minutes.`
+    run.recent.push(performance.now() - began)
+    const every = listenPace(run.recent, run.every)
+    if (every === null)
+      return 'This device is too slow to listen as birds call. Record a clip instead.'
+    if (every !== run.every) {
+      run.every = every
+      run.recent = []
+      clearInterval(run.timer)
+      run.timer = setInterval(() => step(run), every)
+      say(
+        `This device is slow, so it now checks every ${every / 1000} seconds.`,
+      )
+    }
+    return null
+  }
+
+  const step = (run) => {
+    if (live !== run || run.busy) return
+    const now = performance.now()
+    const held =
+      run.played ||
+      list.querySelector('.plate.is-zoomed') !== null ||
+      [...list.querySelectorAll('audio')].some(
+        (audio) => !audio.paused && !audio.ended,
+      )
+    run.played = false
+    if (held) {
+      if (run.pausedAt === null) {
+        run.pausedAt = now
+        say(
+          'Listening is paused while a reference call plays or a photograph is zoomed.',
+        )
+      }
+      return
+    }
+    if (run.pausedAt !== null) {
+      run.paused += now - run.pausedAt
+      run.pausedAt = null
+      // What the microphone picked up meanwhile is the reference call.
+      run.ring.clear()
+      say('Listening.')
+      return
+    }
+    if (run.ring.length < run.mic.context.sampleRate) return
+    run.busy = hear(run, now).then(
+      (reason) => {
+        run.busy = null
+        if (reason) stopListening(reason)
+      },
+      (error) => {
+        console.error(error)
+        run.busy = null
+        stopListening(
+          'The sound could not be analysed. Reload the page and try again.',
+        )
+      },
+    )
+  }
+
+  const startListening = async () => {
+    busy(true)
+    const mic = await openMicrophone()
+    if (!mic) {
+      busy(false)
+      return
+    }
+    const ring = createRing(
+      Math.round((mic.context.sampleRate * WINDOW) / SAMPLE_RATE),
+    )
+    try {
+      await tapSamples(mic, (chunk) => ring.push(chunk))
+    } catch {
+      await mic.close()
+      busy(false)
+      say('This browser cannot listen as birds call. Record a clip instead.')
+      return
+    }
+    const run = {
+      mic,
+      ring,
+      list: [],
+      rows: new Map(),
+      announced: new Set(),
+      month: new Date().getMonth() + 1,
+      every: LISTEN_EVERY_MS,
+      recent: [],
+      runs: [],
+      build: null,
+      busy: null,
+      paused: 0,
+      pausedAt: null,
+      played: false,
+      lastHeard: performance.now(),
+      timer: 0,
+      frame: 0,
+      closed: false,
+      wake: null,
+      onHidden: () => {
+        if (document.hidden)
+          stopListening('Listening stopped because this page was hidden.')
+      },
+    }
+    live = run
+    run.timer = setInterval(() => step(run), run.every)
+    document.addEventListener('visibilitychange', run.onHidden)
+    // Keep the screen on: a phone that locks hides the page, which stops
+    // listening. The idle limit still ends it.
+    navigator.wakeLock
+      ?.request('screen')
+      .then((lock) => {
+        if (live === run) run.wake = lock
+        else lock.release().catch(() => {})
+      })
+      .catch(() => {})
+    list.replaceChildren()
+    list.hidden = true
+    part('results-heading').textContent =
+      `Heard in the last ${LISTEN_SECONDS} seconds`
+    part('summary').textContent = 'Nothing recognised yet.'
+    part('timing').hidden = true
+    results.hidden = false
+    listen.hidden = true
+    record.hidden = true
+    listenStop.hidden = false
+    meter.hidden = false
+    showLevel(mic.analyser, run)
+    say('Listening. Species are listed below as they call.')
+    listenStop.focus()
+  }
+
+  // Media events do not bubble, so catch a reference call starting on its
+  // way down. One that starts and ends between two windows is still seen.
+  list.addEventListener(
+    'play',
+    () => {
+      if (live) live.played = true
+    },
+    true,
+  )
+  listen.addEventListener('click', startListening)
+  listenStop.addEventListener('click', () => stopListening())
   record.addEventListener('click', start)
   stop.addEventListener('click', finish)
   part('download').addEventListener('click', load)

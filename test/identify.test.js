@@ -95,6 +95,12 @@ test('without javascript the page explains itself and links onward', async () =>
   assert.match(body, /<section id="identify" class="identify" hidden /)
   assert.match(body, /not uploaded and it is not kept/)
   assert.match(body, /<button type="button" id="identify-record"/)
+  assert.match(body, /<button type="button" id="identify-listen"/)
+  // The list changes every second while listening, so it is not a live
+  // region: the status line announces each species once.
+  assert.match(body, /<ol id="identify-list" class="identify-list"><\/ol>/)
+  assert.match(body, /lists every species it has heard in the last 10 seconds/)
+  assert.match(body, /after 3 minutes with nothing recognised/)
   assert.match(
     body,
     /<input type="file" id="identify-file" accept="audio\/\*">/,
@@ -469,4 +475,139 @@ test('the worker times each run and reports the runtime build', () => {
   assert.match(workerSource, /runs\.push\(performance\.now\(\) - started\)/)
   assert.match(workerSource, /timing: timing\(\)/)
   assert.match(workerSource, /'baseline' : 'relaxed-simd'/)
+})
+
+test('the ring keeps the newest samples in order', () => {
+  const ring = client.createRing(5)
+  assert.equal(ring.length, 0)
+  assert.deepEqual([...ring.latest()], [])
+  ring.push(Float32Array.of(1, 2, 3))
+  assert.equal(ring.length, 3)
+  assert.deepEqual([...ring.latest()], [1, 2, 3])
+  // Wraps round, oldest first.
+  ring.push(Float32Array.of(4, 5, 6, 7))
+  assert.equal(ring.length, 5)
+  assert.deepEqual([...ring.latest()], [3, 4, 5, 6, 7])
+  // A chunk longer than the ring leaves only its end.
+  ring.push(Float32Array.of(10, 11, 12, 13, 14, 15, 16))
+  assert.deepEqual([...ring.latest()], [12, 13, 14, 15, 16])
+  // What comes out is a copy.
+  ring.latest().fill(0)
+  assert.deepEqual([...ring.latest()], [12, 13, 14, 15, 16])
+  ring.clear()
+  assert.equal(ring.length, 0)
+  ring.push(Float32Array.of(9))
+  assert.deepEqual([...ring.latest()], [9])
+})
+
+const LIVE_BIRDS = {
+  dove: { slug: 'dove', en: 'Dove', family: 'a', monthsPresent: null },
+  barbet: { slug: 'barbet', en: 'Barbet', family: 'b', monthsPresent: null },
+  cuckoo: {
+    slug: 'cuckoo',
+    en: 'Cuckoo',
+    family: 'c',
+    monthsPresent: [10, 11, 12, 1, 2, 3],
+  },
+}
+
+test('a window lists every species at or above possible, after the month weight', () => {
+  const { heardInWindow, POSSIBLE } = client
+  const species = Object.values(LIVE_BIRDS)
+  const heard = (scores, month) =>
+    heardInWindow({ species, scores, month }).map((item) => [
+      item.bird.slug,
+      item.score,
+      item.outOfSeason,
+    ])
+  // More than one species at once is the normal case.
+  assert.deepEqual(heard([0.9, POSSIBLE, 0.6], 12), [
+    ['dove', 0.9, false],
+    ['barbet', POSSIBLE, false],
+    ['cuckoo', 0.6, false],
+  ])
+  // Out of season the cuckoo keeps half its score, exactly as in a clip:
+  // 0.6 still shows, marked; 0.4 falls below the cut-off.
+  assert.deepEqual(heard([0.1, 0.24, 0.6], 7), [['cuckoo', 0.3, true]])
+  assert.deepEqual(heard([0.1, 0.24, 0.4], 7), [])
+})
+
+test('the running list holds the last 10 seconds and does not jump about', () => {
+  const { liveList } = client
+  const { dove, barbet, cuckoo } = LIVE_BIRDS
+  const hit = (bird, score) => ({ bird, score, outOfSeason: false })
+  const view = (list) =>
+    list.map((entry) => [entry.bird.slug, entry.score, entry.confidence])
+
+  let list = liveList([], [hit(dove, 0.3)], 1000)
+  assert.deepEqual(view(list), [['dove', 0.3, 'possible']])
+  // A new species goes in where its score puts it.
+  list = liveList(list, [hit(dove, 0.3), hit(barbet, 0.9)], 2000)
+  assert.deepEqual(view(list), [
+    ['barbet', 0.9, 'likely'],
+    ['dove', 0.3, 'possible'],
+  ])
+  // The dove's best score overtakes the barbet's, and it keeps its place.
+  list = liveList(list, [hit(dove, 0.95)], 3000)
+  assert.deepEqual(view(list), [
+    ['barbet', 0.9, 'likely'],
+    ['dove', 0.95, 'likely'],
+  ])
+  // Several arrivals at once are placed best first.
+  list = liveList(
+    list,
+    [hit(cuckoo, 0.92), { ...hit(LIVE_BIRDS.dove, 0.4) }],
+    4000,
+  )
+  assert.deepEqual(
+    list.map((entry) => entry.bird.slug),
+    ['cuckoo', 'barbet', 'dove'],
+  )
+  // Silence changes nothing until a species has gone 10 seconds unheard.
+  list = liveList(list, [], 11999)
+  assert.deepEqual(
+    list.map((entry) => entry.bird.slug),
+    ['cuckoo', 'barbet', 'dove'],
+  )
+  // The barbet was last heard at 2000.
+  list = liveList(list, [], 12000)
+  assert.deepEqual(
+    list.map((entry) => entry.bird.slug),
+    ['cuckoo', 'dove'],
+  )
+  // The dove's 0.95 window is now more than 10 seconds old, so its best
+  // score is the 0.4 from 4000. It still does not move.
+  list = liveList(list, [], 13500)
+  assert.deepEqual(view(list), [
+    ['cuckoo', 0.92, 'likely'],
+    ['dove', 0.4, 'possible'],
+  ])
+  list = liveList(list, [], 14000)
+  assert.deepEqual(list, [])
+  // A species that comes back is a new arrival.
+  list = liveList(list, [hit(barbet, 0.5)], 15000)
+  assert.deepEqual(view(list), [['barbet', 0.5, 'likely']])
+})
+
+test('a slow device listens every two seconds, then not at all', () => {
+  const { listenPace, LISTEN_EVERY_MS, LISTEN_SLOW_MS } = client
+  assert.equal(LISTEN_EVERY_MS, 1000)
+  assert.equal(listenPace([], 1000), 1000)
+  assert.equal(listenPace([900, 900], 1000), 1000)
+  assert.equal(listenPace([30, 40, 35, 28], 1000), 1000)
+  // One slow window, such as the first, is not enough.
+  assert.equal(listenPace([900, 40, 900, 900], 1000), 1000)
+  assert.equal(listenPace([40, 900, 850, 801], 1000), LISTEN_SLOW_MS)
+  assert.equal(listenPace([900, 900, 900], LISTEN_SLOW_MS), LISTEN_SLOW_MS)
+  assert.equal(listenPace([1700, 1700, 1700], LISTEN_SLOW_MS), null)
+})
+
+test('listening discards a late window, stops when hidden and announces once', () => {
+  // A window that comes back after Stop is not used.
+  assert.match(source, /if \(live !== run\) return null/)
+  assert.match(source, /await run\.busy/)
+  assert.match(source, /run\.ring\.clear\(\)/)
+  assert.match(source, /if \(document\.hidden\)\s+stopListening\(/)
+  assert.match(source, /LISTEN_IDLE_SECONDS \* 1000/)
+  assert.match(source, /run\.announced\.has\(bird\.slug\)/)
 })

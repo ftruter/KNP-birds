@@ -18,16 +18,19 @@ import { pageMd } from './markdown.js'
 
 const TITLE = 'Identify a bird by its call'
 const INTRO =
-  'Record a few seconds of a bird calling, or choose a recording you made earlier, and this page lists the most likely Kruger species. Each result links to the species page and has a photograph and a reference call, so you can compare by ear.'
+  'Listen as birds call, record a few seconds, or choose a recording you made earlier, and this page lists the most likely Kruger species. Each result links to the species page and has a photograph and a reference call, so you can compare by ear.'
 const DOWNLOAD_NOTE = `The recogniser runs on this device, so it is downloaded once: ${downloadSummary(MODEL_ASSETS.model.bytes, 'Identify by photo')}. It is then kept on this device. After that, recognition needs no signal for as long as this page stays open.`
 const READING = [
   'Each result is marked likely, possible or unlikely. None is certain: check the photograph and play the reference call before you trust a name.',
   'A bird that is not usually in Kruger in the current month is ranked lower and marked “Not usually present this month”. It is still shown.',
-  'When no single species stands out, the page names the most likely family instead. When nothing stands out, it says “No confident match”.',
+  'When no single species stands out in a recording, the page names the most likely family instead. When nothing stands out, it says “No confident match”.',
+  'While it listens, the page checks the last 3 seconds once a second and lists every species it has heard in the last 10 seconds. Birds that call together are all listed. A species leaves the list when it has not been heard for 10 seconds. Only likely and possible species are listed.',
   'In a test on one reference recording for each species, the first answer was right for 81% of them and the right bird was in the first three for 92%. Those recordings are clean and were probably used to train the model, so a phone recording in the field will do worse. Field recordings have not been measured yet.',
 ]
 const TIPS =
   'Get as close as you safely can, point the microphone at the bird, and keep still. Wind, engines and talking make recognition worse. Recording stops by itself after 10 seconds.'
+const LISTEN_NOTE =
+  'Listening keeps the screen on and uses more battery than a recording. It stops when you leave this page, or after 3 minutes with nothing recognised. It pauses while you play a reference call or zoom a photograph. Nothing is analysed after it stops, and no sound is kept.'
 
 const counts = (doc) =>
   doc?.counts ?? { species: 0, covered: 0, broaderLabelOnly: 0, notInModel: 0 }
@@ -63,16 +66,19 @@ export const renderIdentifySoundHtml = ({ origin, doc }) => {
 </div>
 <progress id="identify-progress" class="identify-progress" max="1" value="0" aria-label="Progress" hidden></progress>
 <div id="identify-capture" hidden>
-<h2>Record or choose a recording</h2>
+<h2>Listen, record or choose a recording</h2>
 <div class="identify-choices">
 <div class="identify-actions">
-<button type="button" id="identify-record" class="identify-button">Record</button>
+<button type="button" id="identify-listen" class="identify-button">Listen</button>
+<button type="button" id="identify-listen-stop" class="identify-button" hidden>Stop listening</button>
+<button type="button" id="identify-record" class="identify-button">Record a clip</button>
 <button type="button" id="identify-stop" class="identify-button" hidden>Stop and identify</button>
 </div>
 <label class="identify-file identify-second" for="identify-file">Choose a recording <input type="file" id="identify-file" accept="audio/*"></label>
 <p id="identify-countdown" class="identify-countdown" hidden></p>
 <p id="identify-meter" hidden><label for="identify-level">Sound level</label> <meter id="identify-level" min="0" max="1" value="0"></meter></p>
 <p>${escapeHtml(TIPS)}</p>
+<p>${escapeHtml(LISTEN_NOTE)}</p>
 </div>
 </div>
 <section id="identify-results" aria-labelledby="identify-results-heading" hidden>
@@ -95,7 +101,7 @@ ${group(`${total.covered} species it can recognise`, list(doc?.covered), (item) 
   return layout({
     title: 'Identify by sound · KNP Birds',
     description:
-      'Record or choose a bird call and see the most likely Kruger National Park species. Recognition runs on your device.',
+      'Listen for bird calls, or record or choose one, and see the most likely Kruger National Park species. Recognition runs on your device.',
     origin,
     path: IDENTIFY_SOUND_PATH,
     nav: 'identify',
@@ -127,6 +133,7 @@ This is an interactive page for people. It needs a browser with JavaScript, WebA
 - ${DOWNLOAD_NOTE} The visitor is asked before the download starts.
 - The model is ${inlineText(doc?.model?.name ?? MODEL_CREDIT.name)} (${MODEL_CREDIT.licence}), run with ${MODEL_CREDIT.runtime.name} as WebAssembly in a Web Worker. Model and runtime are served from this site, under \`${modelBase}\`.
 - The recording is resampled to 48 kHz mono and scored in 3-second windows that overlap by half. A species scores the mean of its three best windows.
+- In Listen mode the newest 3-second window is scored once a second, or every 2 seconds on a slow device. The list holds every species that reached “possible” in a window in the last 10 seconds, with its best score in that time. ${LISTEN_NOTE}
 - Only species in this guide can be returned.
 
 ## How to read the results
