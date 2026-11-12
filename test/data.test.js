@@ -63,6 +63,7 @@ test('every data file matches the schema, slugs, and colour vocabulary', async (
       'index/families',
       'index/identify-photo',
       'index/identify-sound',
+      'index/offline',
       'index/species',
       'vocab/colours',
     ],
@@ -90,7 +91,8 @@ test('every data file matches the schema, slugs, and colour vocabulary', async (
     } else if (
       entry.key !== 'index/credits' &&
       entry.key !== 'index/identify-sound' &&
-      entry.key !== 'index/identify-photo'
+      entry.key !== 'index/identify-photo' &&
+      entry.key !== 'index/offline'
     ) {
       const sourcedFamily = new Set([
         'coraciidae',

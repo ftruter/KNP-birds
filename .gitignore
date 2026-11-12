@@ -27,3 +27,4 @@ training/identify-photo/.venv*/
 training/identify-photo/photos/
 training/identify-photo/cache/
 training/identify-photo/runs/
+data/media/files/

@@ -50,6 +50,22 @@ Open reference to the birds of Kruger National Park (and bordering Marloth Park)
 - `test/identify-photo-browser.test.js` runs the real model in Chromium and WebKit. It is skipped unless the model file is on disk (`IDENTIFY_PHOTO_MODEL`).
 - Not measured: any phone. The likely / possible cut-offs in `src/client/identify-photo.js` come from the held-out iNaturalist photos; reset them when phone photos have been scored.
 
+## Installed web app and download panel (issue 157)
+
+The site can be saved to a phone's home screen (`/manifest.webmanifest`, `display: standalone`). Opened from there, and only there, `/offline.js` registers the service worker (`/sw.js`), saves the guide's pages, and shows a download panel on the home page with six options. In a browser tab the script does nothing.
+
+- **The four media options offer only what `pnpm run media:publish` has copied** (and say "not available yet" when that is nothing). Photographs and clips are not in R2: every page shows them from Wikimedia, iNaturalist or xeno-canto. A phone cannot download those with progress (xeno-canto sends no CORS header, and the sizes are unknown), so `scripts/publish-media.mjs` copies one photograph and one clip for each species to `offline/<key>` in the bucket and writes `data/media/mirror.json` with the measured sizes. Commit that file, then deploy. It stores a few hundred MiB: `node scripts/publish-media.mjs --measure` gives the figure. Check with the owner before running it. Rerun it when photographs or recordings change.
+- Sizes are never typed. `/offline.json` adds them up from `src/identify.js` (models and runtime, checked by `models:publish`) and `data/media/mirror.json`. The panel sums the files this browser will actually fetch, so the quoted total and the progress total are one number.
+- A model goes into the Cache Storage cache its identify page already uses (`identify-<page>-<version>`), so that page does not ask again, and a model that page fetched shows as ticked. Media go in `offline-media`, pages in `offline-pages-<version>`, parts of an unfinished large file in `offline-partial`. localStorage (`offline-rows`) holds only what was asked for; what is ticked is worked out from the files on the device.
+- A file over 4 MiB is fetched in 4 MiB parts with `Range`, so an interrupted model download carries on. `/models/` answers `Range` with 206; `withCache` skips the Cache API for those requests. Media run as six streams.
+- The family options are subsets of the species options. Each file is stored once; while the larger option is wanted the smaller one is ticked and disabled.
+- Mobile data: only `navigator.connection.type` is trusted (`wifi`, `cellular`, otherwise unknown). `effectiveType` and `downlink` are never read. Rules are in `downloadQuestion` in `src/client/offline.js`.
+- The service worker handles this origin only. Models and media: the copy on the device first. Everything else: the network first, a saved copy after 4 seconds or on failure. On Android the installed app and the browser share storage, so once installed the worker also answers in ordinary tabs; with a signal they see what they did before.
+- A photograph or clip on a saved page still points at its source. Where a copy is on the device the page script swaps the address for the copy (`useLocalCopies`), so the service worker never has to fetch from another origin and no page's policy allows more than `connect-src 'self'`.
+- CSP: every page gained `manifest-src 'self'` and `connect-src 'self'`. `/sw.js` has `default-src 'self'`.
+- `test/offline.test.js` covers the routes, sizes and rules. `test/offline-browser.test.js` runs the panel in Chromium and WebKit with stand-in files, including resuming, deleting and browsing with the network off. `test/offline-identify-browser.test.js` runs the real sound model offline; it is skipped unless the model is on disk (`IDENTIFY_MODEL`).
+- Not measured: any real phone. In particular: Add to Home Screen itself on iOS and Android, how much an iPhone keeps and for how long before it evicts, whether iOS keeps a download going when the app is in the background, and `navigator.connection` on a real Android phone.
+
 ## Repo layout
 
 | Path | Role |
@@ -60,6 +76,7 @@ Open reference to the birds of Kruger National Park (and bordering Marloth Park)
 | `data/vocab/colours.json` | Controlled colour names used in field marks |
 | `data/audio/recordings.json` | Chosen xeno-canto recording and grade, merged onto `calls` at render time |
 | `data/audio/report.json` | Last `pnpm run audio` run log |
+| `data/media/mirror.json` | Written by `pnpm run media:publish`: the photographs and clips copied into R2 for the installed web app, with sizes. All 970 files are copied; rerun it when photographs or recordings change |
 | `data/identify/` | BirdNET label map for `/identify/sound` and its hand-checked synonym table; `photo-model.json` for `/identify/photo` |
 | `docs/schema.md`, `docs/content.schema.json` | Document shapes |
 | `docs/species-sources.md`, `docs/families-sources.md`, `docs/population-sources.md`, `docs/audio.md` | How lists, estimates and recordings were sourced |

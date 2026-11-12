@@ -1329,6 +1329,58 @@ audio {
 .identify-coverage ul { columns: 18rem; padding-inline-start: 1.2rem; }
 .identify-coverage .latin { font-size: 0.9em; }
 
+/* The download panel on the home page. Shown only when the site was opened
+   from the home screen, by /offline.js. */
+.offline-panel {
+  margin-block: 1.5rem;
+  padding: 1rem 1.1rem;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-sm);
+}
+.offline-panel[hidden] { display: none; }
+.offline-panel h2 { margin-block: 0.2rem 0.5rem; }
+.offline-panel p { max-inline-size: 75ch; }
+.offline-rows { list-style: none; margin: 0.75rem 0; padding: 0; display: grid; gap: 0.25rem; }
+.offline-row label {
+  display: block;
+  min-block-size: 2.75rem;
+  padding: 0.55rem 0.4rem 0.55rem 2.6rem;
+  border-radius: var(--radius);
+  font-family: var(--sans);
+  cursor: pointer;
+}
+.offline-row label:hover { background: var(--row-hover); }
+.offline-row input {
+  inline-size: 1.4rem;
+  block-size: 1.4rem;
+  margin: 0 0.8rem 0 -2.2rem;
+  vertical-align: -0.3rem;
+  accent-color: var(--heading);
+}
+.offline-row input:focus-visible { outline: 3px solid var(--focus); outline-offset: 3px; }
+.offline-row input:disabled + span { color: var(--muted); }
+.offline-row label:has(input:disabled) { cursor: default; background: none; }
+.offline-size { color: var(--muted); font-variant-numeric: tabular-nums; white-space: nowrap; }
+.offline-message { margin: 0 0 0.5rem 2.6rem; font-family: var(--sans); }
+.offline-message[hidden] { display: none; }
+.offline-row[data-phase="failed"] .offline-message { font-weight: 700; }
+.offline-button {
+  min-block-size: 2.75rem;
+  margin-block: 0.3rem;
+  padding: 0.4rem 1rem;
+  border: 2px solid var(--heading);
+  border-radius: 999px;
+  background: var(--heading);
+  color: var(--bg);
+  font: 700 0.95rem var(--sans);
+  cursor: pointer;
+}
+.offline-button:focus-visible { outline: 3px solid var(--focus); outline-offset: 3px; }
+.offline-quiet { background: transparent; color: var(--heading); }
+.offline-note { color: var(--muted); font-family: var(--sans); font-size: 0.95rem; margin-block-end: 0.2rem; }
+
 .visually-hidden {
   position: absolute;
   inline-size: 1px;

@@ -64,6 +64,9 @@ const formatsNumbers = (pathname) =>
   pathname !== '/llms.txt' &&
   pathname !== '/style.css' &&
   pathname !== '/app.js' &&
+  pathname !== '/offline.js' &&
+  pathname !== '/sw.js' &&
+  pathname !== '/manifest.webmanifest' &&
   !ICON_PATHS.includes(pathname) &&
   pathname !== '/mcp/server-card'
 
@@ -134,6 +137,13 @@ const sharedCacheAllowed = (response) =>
 export const withCache = async (request, ctx, produce, env) => {
   const method = request.method.toUpperCase()
   if (method !== 'GET' && method !== 'HEAD') return produce()
+  // Part of a model file, for a download that is being resumed. The Cache
+  // API key carries no Range header, so a hit would be the whole file.
+  if (
+    request.headers.has('range') &&
+    new URL(request.url).pathname.startsWith('/models/')
+  )
+    return produce()
 
   const settling = kvReadMayBeStale(env)
   const cache = globalThis.caches?.default

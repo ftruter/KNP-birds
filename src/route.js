@@ -98,6 +98,10 @@ export const parseUrl = (url) => {
     if (path === '/llms.txt') return route('llms', format, path)
     if (path === '/style.css') return route('style', format, path)
     if (path === '/app.js') return route('script', format, path)
+    if (path === '/offline.js') return route('offline-script', format, path)
+    if (path === '/sw.js') return route('service-worker', format, path)
+    if (path === '/manifest.webmanifest')
+      return route('web-manifest', format, path)
     if (ICON_PATHS.includes(path)) return route('icon', format, path)
     if (IDENTIFY_SCRIPTS.includes(path))
       return route('identify-script', format, path)
@@ -106,6 +110,11 @@ export const parseUrl = (url) => {
     if (path.startsWith('/audio/')) return objectRoute('audio', path, 'audio')
   }
 
+  // The list of what an installed copy can keep. It has a JSON form only.
+  if (path === '/offline')
+    return format === 'json'
+      ? { ...route('offline', format, path), kvKey: 'index/offline' }
+      : route('not-found', format, path)
   if (path === '/') return route('home', format, '/')
   if (path === '/sitemap') return route('sitemap-page', format, path)
   if (path === SEARCH_PATH)

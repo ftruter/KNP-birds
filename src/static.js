@@ -53,6 +53,8 @@ Responses other than image and audio bytes, and other than \`POST /mcp\`, also s
 - ${origin}/mcp (public read-only MCP search; POST, one tool named \`search\`)
 - ${origin}/search?q=<words> (the same ranking as the MCP tool, as a page; also ${origin}/search.md?q=<words> and ${origin}/search.json?q=<words>)
 - ${origin}/style.css
+- ${origin}/manifest.webmanifest (web app manifest: the site can be saved to a phone's home screen and used with no signal)
+- ${origin}/offline.json (what a saved copy can keep on the device: the models, and one photograph and one clip for each species, with the size of every file in bytes)
 - ${origin}/images/<r2-key> streams a photograph from object storage
 - ${origin}/audio/<r2-key> streams a call recording from the same bucket
 

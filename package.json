@@ -15,6 +15,8 @@
     "kv:publish": "node scripts/publish-kv.mjs",
     "models:dry-run": "node scripts/publish-models.mjs --dry-run",
     "models:publish": "node scripts/publish-models.mjs",
+    "media:dry-run": "node scripts/publish-media.mjs --dry-run",
+    "media:publish": "node scripts/publish-media.mjs",
     "deploy": "node scripts/deploy.mjs",
     "dev": "wrangler dev",
     "check": "wrangler deploy --dry-run --outdir dist",
@@ -28,14 +30,14 @@
     "ajv": "^8.20.0",
     "esbuild": "0.28.2",
     "eslint": "^10.14.0",
-    "globals": "^17.13.0",
-    "playwright": "^1.56.1",
-    "prettier": "^3.9.10",
-    "wrangler": "^4.156.0"
+    "globals": "^17.14.0",
+    "playwright": "^1.65.0",
+    "prettier": "^3.10.0",
+    "wrangler": "^4.160.0"
   },
   "dependencies": {
-    "@modelcontextprotocol/server": "2.3.1",
-    "agents": "0.31.0",
+    "@modelcontextprotocol/server": "2.4.0",
+    "agents": "0.33.0",
     "zod": "4.6.7"
   }
 }

@@ -27,7 +27,7 @@ import {
 // What every other page sends today. Written out, not imported, so a change
 // to the shared policy fails here.
 const PAGE_CSP =
-  "default-src 'none'; style-src 'self'; img-src 'self' https:; media-src 'self' https:; base-uri 'none'; form-action 'self'; frame-ancestors 'none'; script-src 'self'"
+  "default-src 'none'; style-src 'self'; img-src 'self' https:; media-src 'self' https:; manifest-src 'self'; connect-src 'self'; base-uri 'none'; form-action 'self'; frame-ancestors 'none'; script-src 'self'"
 const PAGE_PERMISSIONS = 'camera=(), microphone=(), geolocation=()'
 
 const client = await import(
@@ -154,7 +154,7 @@ test('wasm is allowed on this page only, and no camera or microphone', async () 
   assert.equal(page.headers.get('content-security-policy'), IDENTIFY_CSP)
   assert.equal(
     IDENTIFY_CSP,
-    `${PAGE_CSP} 'wasm-unsafe-eval'; worker-src 'self'; connect-src 'self'`,
+    `${PAGE_CSP} 'wasm-unsafe-eval'; worker-src 'self'`,
   )
   // A file input opens the phone's own camera app, and the photo is drawn on
   // a canvas, so neither the camera nor blob: images are allowed.

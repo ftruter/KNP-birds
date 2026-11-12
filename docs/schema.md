@@ -15,6 +15,7 @@ Colour names are not enumerated in the schema. They must match `vocab/colours`, 
 | `index/credits` | `/credits` |
 | `index/identify-sound` | `/identify/sound` |
 | `index/identify-photo` | `/identify/photo` |
+| `index/offline` | `/offline.json` (JSON only) |
 | `vocab/colours` | `/vocab/colours` |
 
 `<slug>` is the scientific name in lowercase, with spaces turned into hyphens (`Coracias caudatus` → `coracias-caudatus`).
@@ -256,3 +257,15 @@ A species is matched to a label by scientific name, or through the hand-checked 
 `counts` gives the size of each list. `/identify/photo.json` adds the page text, the model credit and the location of the model files to this document.
 
 A model class is a species slug. The build fails if a class is not a species in the guide, and a species the model does not have is listed, never mapped to a similar bird.
+
+## Offline
+
+`index/offline` (`kind: "offline"`) lists what a copy of the site saved to a phone's home screen can keep on the device. `scripts/seed.mjs` writes it from the species and family files and `data/media/mirror.json`; it is not edited by hand.
+
+- `pages`: the paths of the pages the installed copy saves, so that families and species can be browsed with no signal.
+- `images` and `clips`: for each species, at most one photograph (the first its page may show) and one clip (its best-graded recording). Each has the species `slug`, the `url` of the copy on this site (`/images/offline/<key>` or `/audio/offline/<key>`), its size in `bytes`, and `alias`, the address the pages show the same file from.
+- `iconic`: every family's `iconicSpecies`. The two family options in the download panel are the photographs and clips of these species.
+
+`data/media/mirror.json` is written by `scripts/publish-media.mjs` when it copies a file into the bucket: its size, SHA-256, media type and the source address it was copied from. A file is listed in `index/offline` only when the mirror has it and was copied from the address the species file still names, so every size is a measured one.
+
+`/offline.json` adds the two recognition models and the site's own scripts and styles, and groups the files into the six options of the download panel. Each file is listed once in `files` (`url`, `bytes`, the Cache Storage `cache` it is kept in, and `alias` for media); each option lists positions in `files` and a `signature` that changes when its files do.
