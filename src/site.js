@@ -167,7 +167,9 @@ export const renderRoute = async (request, env, route) => {
       return renderDiscovery(env, origin, route.kind)
     case 'image':
     case 'audio':
-      return renderObject(env, route.objectKey)
+      return renderObject(env, route.objectKey, (bucket, key) =>
+        objectHttpResponse(bucket, key, request.headers.get('range')),
+      )
     case 'home':
       return renderHome(env, route.format, view)
     case 'search':
