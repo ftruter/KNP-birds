@@ -76,7 +76,7 @@ More index keys will be added as needed.
 Workers Builds on `main` should use:
 
 - Build command: none. Workers Builds sees `pnpm-lock.yaml` and runs `pnpm install --frozen-lockfile` itself, with pnpm 9. `pnpm-workspace.yaml` lists the root as its one package because pnpm 9 rejects a workspace file without a `packages` list.
-- Deploy command: `pnpm run deploy`
+- Deploy command: `npm run deploy`. This is the one place npm stays: the build image has it, and pnpm is used here only to make local installs and worktrees faster and smaller. Locally, run `pnpm run deploy`.
 
 `pnpm run deploy` fails the build if either step fails:
 

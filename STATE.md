@@ -18,7 +18,7 @@ Open reference to the birds of Kruger National Park (and bordering Marloth Park)
 - Each page is served three ways from the same KV key: no extension is HTML, `.md` is Markdown for agents, `.json` is the stored document. Same rule for species, families, indexes, credits, and home.
 - Machines also get `/.well-known/ard.json` and a public read-only MCP `search` tool at `POST /mcp`.
 - JavaScript is first-party progressive enhancement only (`src/client`). CSP includes `script-src 'self'`. The site must still work with JavaScript off.
-- Workers Builds on `main`: `pnpm install --frozen-lockfile` then `pnpm run deploy` (uploads `data/` to KV, then deploys the Worker with `DATA_VERSION` and `DATA_PUBLISHED_AT`). Node 22+.
+- Workers Builds on `main`: `pnpm install --frozen-lockfile` (automatic, from the lockfile) then `npm run deploy` (the dashboard setting, left on npm on purpose; use pnpm locally) (uploads `data/` to KV, then deploys the Worker with `DATA_VERSION` and `DATA_PUBLISHED_AT`). Node 22+.
 
 ## Identify by sound (issue 150)
 
