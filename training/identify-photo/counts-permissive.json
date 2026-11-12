@@ -1,0 +1,2960 @@
+[
+ {
+  "slug": "accipiter-ovampensis",
+  "kruger": 0,
+  "south-africa": 5,
+  "anywhere": 15
+ },
+ {
+  "slug": "acridotheres-tristis",
+  "kruger": 17,
+  "south-africa": 176,
+  "anywhere": 6222
+ },
+ {
+  "slug": "acrocephalus-arundinaceus",
+  "kruger": 0,
+  "south-africa": 0,
+  "anywhere": 693
+ },
+ {
+  "slug": "acrocephalus-gracilirostris",
+  "kruger": 0,
+  "south-africa": 137,
+  "anywhere": 141
+ },
+ {
+  "slug": "acrocephalus-palustris",
+  "kruger": 0,
+  "south-africa": 0,
+  "anywhere": 308
+ },
+ {
+  "slug": "acrocephalus-schoenobaenus",
+  "kruger": 0,
+  "south-africa": 2,
+  "anywhere": 1790
+ },
+ {
+  "slug": "acrocephalus-scirpaceus",
+  "kruger": 1,
+  "south-africa": 22,
+  "anywhere": 1107
+ },
+ {
+  "slug": "actitis-hypoleucos",
+  "kruger": 31,
+  "south-africa": 104,
+  "anywhere": 6647
+ },
+ {
+  "slug": "actophilornis-africanus",
+  "kruger": 77,
+  "south-africa": 204,
+  "anywhere": 642
+ },
+ {
+  "slug": "aenigmatolimnas-marginalis",
+  "kruger": 0,
+  "south-africa": 2,
+  "anywhere": 4
+ },
+ {
+  "slug": "aerospiza-tachiro",
+  "kruger": 4,
+  "south-africa": 60,
+  "anywhere": 92
+ },
+ {
+  "slug": "agricola-pallidus",
+  "kruger": 6,
+  "south-africa": 20,
+  "anywhere": 48
+ },
+ {
+  "slug": "alcedo-semitorquata",
+  "kruger": 0,
+  "south-africa": 66,
+  "anywhere": 81
+ },
+ {
+  "slug": "alopochen-aegyptiaca",
+  "kruger": 111,
+  "south-africa": 1504,
+  "anywhere": 8326
+ },
+ {
+  "slug": "amadina-erythrocephala",
+  "kruger": 0,
+  "south-africa": 63,
+  "anywhere": 94
+ },
+ {
+  "slug": "amadina-fasciata",
+  "kruger": 6,
+  "south-africa": 27,
+  "anywhere": 125
+ },
+ {
+  "slug": "amandava-subflava",
+  "kruger": 0,
+  "south-africa": 3,
+  "anywhere": 18
+ },
+ {
+  "slug": "amblyospiza-albifrons",
+  "kruger": 2,
+  "south-africa": 180,
+  "anywhere": 268
+ },
+ {
+  "slug": "amirafra-rufocinnamomea",
+  "kruger": 2,
+  "south-africa": 3,
+  "anywhere": 24
+ },
+ {
+  "slug": "anarhynchus-asiaticus",
+  "kruger": 0,
+  "south-africa": 2,
+  "anywhere": 13
+ },
+ {
+  "slug": "anarhynchus-marginatus",
+  "kruger": 3,
+  "south-africa": 272,
+  "anywhere": 360
+ },
+ {
+  "slug": "anarhynchus-pallidus",
+  "kruger": 0,
+  "south-africa": 12,
+  "anywhere": 40
+ },
+ {
+  "slug": "anarhynchus-pecuarius",
+  "kruger": 18,
+  "south-africa": 169,
+  "anywhere": 285
+ },
+ {
+  "slug": "anas-capensis",
+  "kruger": 2,
+  "south-africa": 224,
+  "anywhere": 305
+ },
+ {
+  "slug": "anas-erythrorhyncha",
+  "kruger": 5,
+  "south-africa": 258,
+  "anywhere": 444
+ },
+ {
+  "slug": "anas-sparsa",
+  "kruger": 6,
+  "south-africa": 146,
+  "anywhere": 159
+ },
+ {
+  "slug": "anas-undulata",
+  "kruger": 0,
+  "south-africa": 709,
+  "anywhere": 774
+ },
+ {
+  "slug": "anastomus-lamelligerus",
+  "kruger": 53,
+  "south-africa": 66,
+  "anywhere": 341
+ },
+ {
+  "slug": "andropadus-importunus",
+  "kruger": 12,
+  "south-africa": 265,
+  "anywhere": 291
+ },
+ {
+  "slug": "anhinga-rufa",
+  "kruger": 17,
+  "south-africa": 354,
+  "anywhere": 626
+ },
+ {
+  "slug": "anomalospiza-imberbis",
+  "kruger": 0,
+  "south-africa": 4,
+  "anywhere": 14
+ },
+ {
+  "slug": "anthoscopus-caroli",
+  "kruger": 1,
+  "south-africa": 4,
+  "anywhere": 16
+ },
+ {
+  "slug": "anthus-caffer",
+  "kruger": 0,
+  "south-africa": 1,
+  "anywhere": 1
+ },
+ {
+  "slug": "anthus-cinnamomeus",
+  "kruger": 28,
+  "south-africa": 275,
+  "anywhere": 367
+ },
+ {
+  "slug": "anthus-leucophrys",
+  "kruger": 1,
+  "south-africa": 55,
+  "anywhere": 111
+ },
+ {
+  "slug": "anthus-lineiventris",
+  "kruger": 0,
+  "south-africa": 12,
+  "anywhere": 29
+ },
+ {
+  "slug": "anthus-nicholsoni",
+  "kruger": 0,
+  "south-africa": 41,
+  "anywhere": 44
+ },
+ {
+  "slug": "anthus-vaalensis",
+  "kruger": 2,
+  "south-africa": 10,
+  "anywhere": 16
+ },
+ {
+  "slug": "apalis-flavida",
+  "kruger": 19,
+  "south-africa": 85,
+  "anywhere": 157
+ },
+ {
+  "slug": "apalis-ruddi",
+  "kruger": 0,
+  "south-africa": 14,
+  "anywhere": 14
+ },
+ {
+  "slug": "apalis-thoracica",
+  "kruger": 0,
+  "south-africa": 217,
+  "anywhere": 235
+ },
+ {
+  "slug": "apaloderma-narina",
+  "kruger": 0,
+  "south-africa": 89,
+  "anywhere": 113
+ },
+ {
+  "slug": "aplopelia-larvata",
+  "kruger": 0,
+  "south-africa": 61,
+  "anywhere": 83
+ },
+ {
+  "slug": "apus-affinis",
+  "kruger": 30,
+  "south-africa": 76,
+  "anywhere": 803
+ },
+ {
+  "slug": "apus-apus",
+  "kruger": 0,
+  "south-africa": 2,
+  "anywhere": 2934
+ },
+ {
+  "slug": "apus-barbatus",
+  "kruger": 1,
+  "south-africa": 18,
+  "anywhere": 18
+ },
+ {
+  "slug": "apus-caffer",
+  "kruger": 1,
+  "south-africa": 107,
+  "anywhere": 166
+ },
+ {
+  "slug": "apus-horus",
+  "kruger": 0,
+  "south-africa": 5,
+  "anywhere": 11
+ },
+ {
+  "slug": "aquila-nipalensis",
+  "kruger": 4,
+  "south-africa": 5,
+  "anywhere": 557
+ },
+ {
+  "slug": "aquila-rapax",
+  "kruger": 152,
+  "south-africa": 233,
+  "anywhere": 604
+ },
+ {
+  "slug": "aquila-spilogaster",
+  "kruger": 85,
+  "south-africa": 111,
+  "anywhere": 181
+ },
+ {
+  "slug": "aquila-verreauxii",
+  "kruger": 2,
+  "south-africa": 159,
+  "anywhere": 198
+ },
+ {
+  "slug": "ardea-alba",
+  "kruger": 51,
+  "south-africa": 147,
+  "anywhere": 39001
+ },
+ {
+  "slug": "ardea-brachyrhyncha",
+  "kruger": 2,
+  "south-africa": 47,
+  "anywhere": 140
+ },
+ {
+  "slug": "ardea-cinerea",
+  "kruger": 128,
+  "south-africa": 714,
+  "anywhere": 28614
+ },
+ {
+  "slug": "ardea-goliath",
+  "kruger": 53,
+  "south-africa": 196,
+  "anywhere": 367
+ },
+ {
+  "slug": "ardea-ibis",
+  "kruger": 33,
+  "south-africa": 470,
+  "anywhere": 8938
+ },
+ {
+  "slug": "ardea-melanocephala",
+  "kruger": 12,
+  "south-africa": 660,
+  "anywhere": 1028
+ },
+ {
+  "slug": "ardea-purpurea",
+  "kruger": 9,
+  "south-africa": 136,
+  "anywhere": 2459
+ },
+ {
+  "slug": "ardeola-ralloides",
+  "kruger": 21,
+  "south-africa": 68,
+  "anywhere": 1288
+ },
+ {
+  "slug": "ardeotis-kori",
+  "kruger": 92,
+  "south-africa": 150,
+  "anywhere": 472
+ },
+ {
+  "slug": "astur-melanoleucus",
+  "kruger": 0,
+  "south-africa": 111,
+  "anywhere": 144
+ },
+ {
+  "slug": "aviceda-cuculoides",
+  "kruger": 4,
+  "south-africa": 25,
+  "anywhere": 55
+ },
+ {
+  "slug": "batis-capensis",
+  "kruger": 0,
+  "south-africa": 225,
+  "anywhere": 227
+ },
+ {
+  "slug": "batis-molitor",
+  "kruger": 55,
+  "south-africa": 153,
+  "anywhere": 220
+ },
+ {
+  "slug": "bostrychia-hagedash",
+  "kruger": 60,
+  "south-africa": 1285,
+  "anywhere": 1708
+ },
+ {
+  "slug": "botaurus-minutus",
+  "kruger": 1,
+  "south-africa": 26,
+  "anywhere": 528
+ },
+ {
+  "slug": "botaurus-sturmii",
+  "kruger": 4,
+  "south-africa": 11,
+  "anywhere": 36
+ },
+ {
+  "slug": "bradornis-mariquensis",
+  "kruger": 3,
+  "south-africa": 43,
+  "anywhere": 130
+ },
+ {
+  "slug": "bradypterus-baboecala",
+  "kruger": 0,
+  "south-africa": 23,
+  "anywhere": 24
+ },
+ {
+  "slug": "bradypterus-barratti",
+  "kruger": 0,
+  "south-africa": 2,
+  "anywhere": 2
+ },
+ {
+  "slug": "brunhilda-erythronotos",
+  "kruger": 0,
+  "south-africa": 21,
+  "anywhere": 61
+ },
+ {
+  "slug": "bubalornis-niger",
+  "kruger": 60,
+  "south-africa": 77,
+  "anywhere": 180
+ },
+ {
+  "slug": "bubo-africanus",
+  "kruger": 9,
+  "south-africa": 327,
+  "anywhere": 392
+ },
+ {
+  "slug": "bubo-capensis",
+  "kruger": 0,
+  "south-africa": 9,
+  "anywhere": 13
+ },
+ {
+  "slug": "bucorvus-leadbeateri",
+  "kruger": 173,
+  "south-africa": 205,
+  "anywhere": 390
+ },
+ {
+  "slug": "buphagus-africanus",
+  "kruger": 54,
+  "south-africa": 63,
+  "anywhere": 238
+ },
+ {
+  "slug": "buphagus-erythroryncha",
+  "kruger": 151,
+  "south-africa": 322,
+  "anywhere": 508
+ },
+ {
+  "slug": "burhinus-capensis",
+  "kruger": 11,
+  "south-africa": 339,
+  "anywhere": 399
+ },
+ {
+  "slug": "burhinus-vermiculatus",
+  "kruger": 96,
+  "south-africa": 267,
+  "anywhere": 467
+ },
+ {
+  "slug": "buteo-buteo",
+  "kruger": 11,
+  "south-africa": 225,
+  "anywhere": 16601
+ },
+ {
+  "slug": "buteo-rufofuscus",
+  "kruger": 1,
+  "south-africa": 712,
+  "anywhere": 723
+ },
+ {
+  "slug": "buteo-trizonatus",
+  "kruger": 0,
+  "south-africa": 69,
+  "anywhere": 69
+ },
+ {
+  "slug": "butorides-atricapilla",
+  "kruger": 87,
+  "south-africa": 138,
+  "anywhere": 1691
+ },
+ {
+  "slug": "bycanistes-bucinator",
+  "kruger": 20,
+  "south-africa": 117,
+  "anywhere": 178
+ },
+ {
+  "slug": "calamonastes-fasciolatus",
+  "kruger": 0,
+  "south-africa": 3,
+  "anywhere": 20
+ },
+ {
+  "slug": "calamonastes-stierlingi",
+  "kruger": 6,
+  "south-africa": 7,
+  "anywhere": 14
+ },
+ {
+  "slug": "calandrella-cinerea",
+  "kruger": 1,
+  "south-africa": 126,
+  "anywhere": 208
+ },
+ {
+  "slug": "calendulauda-africanoides",
+  "kruger": 0,
+  "south-africa": 13,
+  "anywhere": 43
+ },
+ {
+  "slug": "calendulauda-sabota",
+  "kruger": 73,
+  "south-africa": 171,
+  "anywhere": 227
+ },
+ {
+  "slug": "calherodius-leuconotus",
+  "kruger": 3,
+  "south-africa": 7,
+  "anywhere": 27
+ },
+ {
+  "slug": "calidris-ferruginea",
+  "kruger": 0,
+  "south-africa": 68,
+  "anywhere": 1268
+ },
+ {
+  "slug": "calidris-melanotos",
+  "kruger": 0,
+  "south-africa": 7,
+  "anywhere": 1895
+ },
+ {
+  "slug": "calidris-minuta",
+  "kruger": 5,
+  "south-africa": 92,
+  "anywhere": 1862
+ },
+ {
+  "slug": "calidris-pugnax",
+  "kruger": 7,
+  "south-africa": 55,
+  "anywhere": 3910
+ },
+ {
+  "slug": "camaroptera-brachyura",
+  "kruger": 19,
+  "south-africa": 105,
+  "anywhere": 278
+ },
+ {
+  "slug": "campephaga-flava",
+  "kruger": 3,
+  "south-africa": 58,
+  "anywhere": 93
+ },
+ {
+  "slug": "campethera-abingoni",
+  "kruger": 15,
+  "south-africa": 81,
+  "anywhere": 111
+ },
+ {
+  "slug": "campethera-bennettii",
+  "kruger": 17,
+  "south-africa": 29,
+  "anywhere": 50
+ },
+ {
+  "slug": "campocolinus-coqui",
+  "kruger": 7,
+  "south-africa": 22,
+  "anywhere": 57
+ },
+ {
+  "slug": "caprimulgus-europaeus",
+  "kruger": 2,
+  "south-africa": 10,
+  "anywhere": 399
+ },
+ {
+  "slug": "caprimulgus-fossii",
+  "kruger": 4,
+  "south-africa": 9,
+  "anywhere": 25
+ },
+ {
+  "slug": "caprimulgus-pectoralis",
+  "kruger": 5,
+  "south-africa": 55,
+  "anywhere": 70
+ },
+ {
+  "slug": "caprimulgus-rufigena",
+  "kruger": 0,
+  "south-africa": 2,
+  "anywhere": 12
+ },
+ {
+  "slug": "caprimulgus-tristigma",
+  "kruger": 1,
+  "south-africa": 7,
+  "anywhere": 12
+ },
+ {
+  "slug": "caprimulgus-vexillarius",
+  "kruger": 6,
+  "south-africa": 6,
+  "anywhere": 15
+ },
+ {
+  "slug": "catriscus-brevirostris",
+  "kruger": 0,
+  "south-africa": 2,
+  "anywhere": 8
+ },
+ {
+  "slug": "ceblepyris-caesius",
+  "kruger": 0,
+  "south-africa": 54,
+  "anywhere": 57
+ },
+ {
+  "slug": "ceblepyris-pectoralis",
+  "kruger": 0,
+  "south-africa": 2,
+  "anywhere": 19
+ },
+ {
+  "slug": "cecropis-abyssinica",
+  "kruger": 46,
+  "south-africa": 245,
+  "anywhere": 469
+ },
+ {
+  "slug": "cecropis-cucullata",
+  "kruger": 0,
+  "south-africa": 239,
+  "anywhere": 253
+ },
+ {
+  "slug": "cecropis-semirufa",
+  "kruger": 26,
+  "south-africa": 55,
+  "anywhere": 99
+ },
+ {
+  "slug": "cecropis-senegalensis",
+  "kruger": 15,
+  "south-africa": 18,
+  "anywhere": 54
+ },
+ {
+  "slug": "centropus-burchellii",
+  "kruger": 75,
+  "south-africa": 274,
+  "anywhere": 284
+ },
+ {
+  "slug": "centropus-grillii",
+  "kruger": 0,
+  "south-africa": 2,
+  "anywhere": 17
+ },
+ {
+  "slug": "centropus-senegalensis",
+  "kruger": 1,
+  "south-africa": 1,
+  "anywhere": 144
+ },
+ {
+  "slug": "cercotrichas-leucophrys",
+  "kruger": 32,
+  "south-africa": 148,
+  "anywhere": 240
+ },
+ {
+  "slug": "ceryle-rudis",
+  "kruger": 92,
+  "south-africa": 385,
+  "anywhere": 1497
+ },
+ {
+  "slug": "chalcomitra-amethystina",
+  "kruger": 3,
+  "south-africa": 291,
+  "anywhere": 339
+ },
+ {
+  "slug": "chalcomitra-senegalensis",
+  "kruger": 35,
+  "south-africa": 105,
+  "anywhere": 318
+ },
+ {
+  "slug": "charadrius-hiaticula",
+  "kruger": 2,
+  "south-africa": 94,
+  "anywhere": 3237
+ },
+ {
+  "slug": "chlidonias-hybrida",
+  "kruger": 6,
+  "south-africa": 61,
+  "anywhere": 1977
+ },
+ {
+  "slug": "chlidonias-leucopterus",
+  "kruger": 1,
+  "south-africa": 13,
+  "anywhere": 528
+ },
+ {
+  "slug": "chlorocichla-flaviventris",
+  "kruger": 23,
+  "south-africa": 79,
+  "anywhere": 158
+ },
+ {
+  "slug": "chlorophoneus-nigrifrons",
+  "kruger": 0,
+  "south-africa": 1,
+  "anywhere": 7
+ },
+ {
+  "slug": "chlorophoneus-olivaceus",
+  "kruger": 0,
+  "south-africa": 42,
+  "anywhere": 43
+ },
+ {
+  "slug": "chlorophoneus-sulfureopectus",
+  "kruger": 34,
+  "south-africa": 73,
+  "anywhere": 109
+ },
+ {
+  "slug": "chloropicus-namaquus",
+  "kruger": 28,
+  "south-africa": 46,
+  "anywhere": 89
+ },
+ {
+  "slug": "chroicocephalus-cirrocephalus",
+  "kruger": 1,
+  "south-africa": 221,
+  "anywhere": 1101
+ },
+ {
+  "slug": "chrysococcyx-caprius",
+  "kruger": 19,
+  "south-africa": 108,
+  "anywhere": 177
+ },
+ {
+  "slug": "chrysococcyx-cupreus",
+  "kruger": 0,
+  "south-africa": 18,
+  "anywhere": 51
+ },
+ {
+  "slug": "chrysococcyx-klaas",
+  "kruger": 2,
+  "south-africa": 80,
+  "anywhere": 129
+ },
+ {
+  "slug": "cichladusa-arquata",
+  "kruger": 0,
+  "south-africa": 0,
+  "anywhere": 42
+ },
+ {
+  "slug": "ciconia-abdimii",
+  "kruger": 0,
+  "south-africa": 13,
+  "anywhere": 91
+ },
+ {
+  "slug": "ciconia-ciconia",
+  "kruger": 4,
+  "south-africa": 89,
+  "anywhere": 7514
+ },
+ {
+  "slug": "ciconia-microscelis",
+  "kruger": 73,
+  "south-africa": 219,
+  "anywhere": 323
+ },
+ {
+  "slug": "ciconia-nigra",
+  "kruger": 32,
+  "south-africa": 68,
+  "anywhere": 929
+ },
+ {
+  "slug": "cinnyricinclus-leucogaster",
+  "kruger": 42,
+  "south-africa": 123,
+  "anywhere": 274
+ },
+ {
+  "slug": "cinnyris-afer",
+  "kruger": 0,
+  "south-africa": 362,
+  "anywhere": 363
+ },
+ {
+  "slug": "cinnyris-bifasciatus",
+  "kruger": 1,
+  "south-africa": 25,
+  "anywhere": 68
+ },
+ {
+  "slug": "cinnyris-chalybeus",
+  "kruger": 0,
+  "south-africa": 683,
+  "anywhere": 683
+ },
+ {
+  "slug": "cinnyris-mariquensis",
+  "kruger": 31,
+  "south-africa": 61,
+  "anywhere": 130
+ },
+ {
+  "slug": "cinnyris-talatala",
+  "kruger": 37,
+  "south-africa": 185,
+  "anywhere": 252
+ },
+ {
+  "slug": "circaetus-cinereus",
+  "kruger": 98,
+  "south-africa": 166,
+  "anywhere": 312
+ },
+ {
+  "slug": "circaetus-pectoralis",
+  "kruger": 14,
+  "south-africa": 77,
+  "anywhere": 201
+ },
+ {
+  "slug": "circus-macrourus",
+  "kruger": 1,
+  "south-africa": 2,
+  "anywhere": 409
+ },
+ {
+  "slug": "circus-pygargus",
+  "kruger": 1,
+  "south-africa": 1,
+  "anywhere": 1538
+ },
+ {
+  "slug": "circus-ranivorus",
+  "kruger": 0,
+  "south-africa": 76,
+  "anywhere": 120
+ },
+ {
+  "slug": "cisticola-aberrans",
+  "kruger": 0,
+  "south-africa": 61,
+  "anywhere": 65
+ },
+ {
+  "slug": "cisticola-aridulus",
+  "kruger": 1,
+  "south-africa": 9,
+  "anywhere": 18
+ },
+ {
+  "slug": "cisticola-chiniana",
+  "kruger": 83,
+  "south-africa": 179,
+  "anywhere": 258
+ },
+ {
+  "slug": "cisticola-erythrops",
+  "kruger": 8,
+  "south-africa": 11,
+  "anywhere": 34
+ },
+ {
+  "slug": "cisticola-fulvicapilla",
+  "kruger": 3,
+  "south-africa": 337,
+  "anywhere": 347
+ },
+ {
+  "slug": "cisticola-galactotes",
+  "kruger": 0,
+  "south-africa": 6,
+  "anywhere": 7
+ },
+ {
+  "slug": "cisticola-juncidis",
+  "kruger": 10,
+  "south-africa": 72,
+  "anywhere": 1412
+ },
+ {
+  "slug": "cisticola-natalensis",
+  "kruger": 3,
+  "south-africa": 20,
+  "anywhere": 57
+ },
+ {
+  "slug": "cisticola-tinniens",
+  "kruger": 0,
+  "south-africa": 413,
+  "anywhere": 417
+ },
+ {
+  "slug": "clamator-glandarius",
+  "kruger": 6,
+  "south-africa": 19,
+  "anywhere": 132
+ },
+ {
+  "slug": "clamator-jacobinus",
+  "kruger": 27,
+  "south-africa": 54,
+  "anywhere": 289
+ },
+ {
+  "slug": "clamator-levaillantii",
+  "kruger": 11,
+  "south-africa": 22,
+  "anywhere": 64
+ },
+ {
+  "slug": "clanga-pomarina",
+  "kruger": 7,
+  "south-africa": 10,
+  "anywhere": 494
+ },
+ {
+  "slug": "coccopygia-melanotis",
+  "kruger": 0,
+  "south-africa": 174,
+  "anywhere": 175
+ },
+ {
+  "slug": "colius-striatus",
+  "kruger": 23,
+  "south-africa": 553,
+  "anywhere": 900
+ },
+ {
+  "slug": "columba-arquatrix",
+  "kruger": 0,
+  "south-africa": 134,
+  "anywhere": 152
+ },
+ {
+  "slug": "columba-guinea",
+  "kruger": 0,
+  "south-africa": 554,
+  "anywhere": 864
+ },
+ {
+  "slug": "columba-livia",
+  "kruger": 0,
+  "south-africa": 234,
+  "anywhere": 45679
+ },
+ {
+  "slug": "coracias-caudatus",
+  "kruger": 200,
+  "south-africa": 335,
+  "anywhere": 914
+ },
+ {
+  "slug": "coracias-garrulus",
+  "kruger": 59,
+  "south-africa": 145,
+  "anywhere": 1617
+ },
+ {
+  "slug": "coracias-naevius",
+  "kruger": 44,
+  "south-africa": 69,
+  "anywhere": 146
+ },
+ {
+  "slug": "coracias-spatulatus",
+  "kruger": 3,
+  "south-africa": 3,
+  "anywhere": 23
+ },
+ {
+  "slug": "corvus-albicollis",
+  "kruger": 0,
+  "south-africa": 254,
+  "anywhere": 319
+ },
+ {
+  "slug": "corvus-albus",
+  "kruger": 5,
+  "south-africa": 462,
+  "anywhere": 1040
+ },
+ {
+  "slug": "corvus-capensis",
+  "kruger": 0,
+  "south-africa": 205,
+  "anywhere": 257
+ },
+ {
+  "slug": "corypha-africana",
+  "kruger": 10,
+  "south-africa": 120,
+  "anywhere": 228
+ },
+ {
+  "slug": "corythornis-cristatus",
+  "kruger": 39,
+  "south-africa": 248,
+  "anywhere": 541
+ },
+ {
+  "slug": "cossypha-dichroa",
+  "kruger": 0,
+  "south-africa": 95,
+  "anywhere": 95
+ },
+ {
+  "slug": "cossypha-heuglini",
+  "kruger": 34,
+  "south-africa": 52,
+  "anywhere": 252
+ },
+ {
+  "slug": "cossypha-natalensis",
+  "kruger": 7,
+  "south-africa": 87,
+  "anywhere": 107
+ },
+ {
+  "slug": "coturnix-coturnix",
+  "kruger": 0,
+  "south-africa": 10,
+  "anywhere": 146
+ },
+ {
+  "slug": "coturnix-delegorguei",
+  "kruger": 5,
+  "south-africa": 8,
+  "anywhere": 15
+ },
+ {
+  "slug": "creatophora-cinerea",
+  "kruger": 31,
+  "south-africa": 111,
+  "anywhere": 253
+ },
+ {
+  "slug": "crecopsis-egregia",
+  "kruger": 0,
+  "south-africa": 9,
+  "anywhere": 17
+ },
+ {
+  "slug": "crex-crex",
+  "kruger": 0,
+  "south-africa": 0,
+  "anywhere": 195
+ },
+ {
+  "slug": "crinifer-concolor",
+  "kruger": 97,
+  "south-africa": 272,
+  "anywhere": 481
+ },
+ {
+  "slug": "crithagra-atrogularis",
+  "kruger": 0,
+  "south-africa": 41,
+  "anywhere": 94
+ },
+ {
+  "slug": "crithagra-citrinipectus",
+  "kruger": 0,
+  "south-africa": 1,
+  "anywhere": 2
+ },
+ {
+  "slug": "crithagra-gularis",
+  "kruger": 1,
+  "south-africa": 171,
+  "anywhere": 185
+ },
+ {
+  "slug": "crithagra-scotops",
+  "kruger": 0,
+  "south-africa": 133,
+  "anywhere": 133
+ },
+ {
+  "slug": "crithagra-sulphurata",
+  "kruger": 0,
+  "south-africa": 224,
+  "anywhere": 272
+ },
+ {
+  "slug": "cuculus-canorus",
+  "kruger": 3,
+  "south-africa": 5,
+  "anywhere": 1843
+ },
+ {
+  "slug": "cuculus-clamosus",
+  "kruger": 0,
+  "south-africa": 21,
+  "anywhere": 27
+ },
+ {
+  "slug": "cuculus-gularis",
+  "kruger": 5,
+  "south-africa": 10,
+  "anywhere": 28
+ },
+ {
+  "slug": "cuculus-solitarius",
+  "kruger": 11,
+  "south-africa": 44,
+  "anywhere": 80
+ },
+ {
+  "slug": "curruca-communis",
+  "kruger": 0,
+  "south-africa": 3,
+  "anywhere": 3623
+ },
+ {
+  "slug": "cursorius-temminckii",
+  "kruger": 13,
+  "south-africa": 22,
+  "anywhere": 56
+ },
+ {
+  "slug": "cyanomitra-olivacea",
+  "kruger": 0,
+  "south-africa": 54,
+  "anywhere": 77
+ },
+ {
+  "slug": "cypsiurus-parvus",
+  "kruger": 11,
+  "south-africa": 45,
+  "anywhere": 182
+ },
+ {
+  "slug": "delichon-urbicum",
+  "kruger": 2,
+  "south-africa": 8,
+  "anywhere": 3484
+ },
+ {
+  "slug": "dendrocygna-bicolor",
+  "kruger": 0,
+  "south-africa": 37,
+  "anywhere": 820
+ },
+ {
+  "slug": "dendrocygna-viduata",
+  "kruger": 63,
+  "south-africa": 231,
+  "anywhere": 1642
+ },
+ {
+  "slug": "dendropicos-fuscescens",
+  "kruger": 38,
+  "south-africa": 168,
+  "anywhere": 282
+ },
+ {
+  "slug": "dendropicos-griseocephalus",
+  "kruger": 0,
+  "south-africa": 132,
+  "anywhere": 141
+ },
+ {
+  "slug": "dessonornis-caffer",
+  "kruger": 0,
+  "south-africa": 676,
+  "anywhere": 718
+ },
+ {
+  "slug": "dessonornis-humeralis",
+  "kruger": 21,
+  "south-africa": 70,
+  "anywhere": 74
+ },
+ {
+  "slug": "dicrurus-adsimilis",
+  "kruger": 93,
+  "south-africa": 788,
+  "anywhere": 1219
+ },
+ {
+  "slug": "dicrurus-ludwigii",
+  "kruger": 0,
+  "south-africa": 26,
+  "anywhere": 28
+ },
+ {
+  "slug": "dryoscopus-cubla",
+  "kruger": 54,
+  "south-africa": 202,
+  "anywhere": 317
+ },
+ {
+  "slug": "egretta-ardesiaca",
+  "kruger": 7,
+  "south-africa": 16,
+  "anywhere": 125
+ },
+ {
+  "slug": "egretta-garzetta",
+  "kruger": 33,
+  "south-africa": 464,
+  "anywhere": 14135
+ },
+ {
+  "slug": "elanus-caeruleus",
+  "kruger": 30,
+  "south-africa": 363,
+  "anywhere": 1429
+ },
+ {
+  "slug": "emberiza-flaviventris",
+  "kruger": 29,
+  "south-africa": 119,
+  "anywhere": 212
+ },
+ {
+  "slug": "emberiza-impetuani",
+  "kruger": 2,
+  "south-africa": 86,
+  "anywhere": 143
+ },
+ {
+  "slug": "emberiza-tahapisi",
+  "kruger": 9,
+  "south-africa": 58,
+  "anywhere": 160
+ },
+ {
+  "slug": "ephippiorhynchus-senegalensis",
+  "kruger": 151,
+  "south-africa": 194,
+  "anywhere": 372
+ },
+ {
+  "slug": "eremomela-icteropygialis",
+  "kruger": 2,
+  "south-africa": 23,
+  "anywhere": 69
+ },
+ {
+  "slug": "eremomela-scotops",
+  "kruger": 0,
+  "south-africa": 3,
+  "anywhere": 18
+ },
+ {
+  "slug": "eremomela-usticollis",
+  "kruger": 4,
+  "south-africa": 12,
+  "anywhere": 26
+ },
+ {
+  "slug": "eremopterix-leucotis",
+  "kruger": 26,
+  "south-africa": 30,
+  "anywhere": 65
+ },
+ {
+  "slug": "eremopterix-verticalis",
+  "kruger": 1,
+  "south-africa": 33,
+  "anywhere": 61
+ },
+ {
+  "slug": "estrilda-astrild",
+  "kruger": 7,
+  "south-africa": 266,
+  "anywhere": 1483
+ },
+ {
+  "slug": "euplectes-afer",
+  "kruger": 1,
+  "south-africa": 18,
+  "anywhere": 82
+ },
+ {
+  "slug": "euplectes-albonotatus",
+  "kruger": 21,
+  "south-africa": 56,
+  "anywhere": 93
+ },
+ {
+  "slug": "euplectes-ardens",
+  "kruger": 2,
+  "south-africa": 66,
+  "anywhere": 85
+ },
+ {
+  "slug": "euplectes-axillaris",
+  "kruger": 2,
+  "south-africa": 63,
+  "anywhere": 128
+ },
+ {
+  "slug": "euplectes-orix",
+  "kruger": 14,
+  "south-africa": 499,
+  "anywhere": 583
+ },
+ {
+  "slug": "eurocephalus-anguitimens",
+  "kruger": 51,
+  "south-africa": 86,
+  "anywhere": 137
+ },
+ {
+  "slug": "eurystomus-glaucurus",
+  "kruger": 29,
+  "south-africa": 50,
+  "anywhere": 249
+ },
+ {
+  "slug": "falco-amurensis",
+  "kruger": 7,
+  "south-africa": 69,
+  "anywhere": 184
+ },
+ {
+  "slug": "falco-biarmicus",
+  "kruger": 6,
+  "south-africa": 89,
+  "anywhere": 357
+ },
+ {
+  "slug": "falco-concolor",
+  "kruger": 0,
+  "south-africa": 0,
+  "anywhere": 20
+ },
+ {
+  "slug": "falco-dickinsoni",
+  "kruger": 4,
+  "south-africa": 4,
+  "anywhere": 21
+ },
+ {
+  "slug": "falco-naumanni",
+  "kruger": 1,
+  "south-africa": 25,
+  "anywhere": 677
+ },
+ {
+  "slug": "falco-peregrinus",
+  "kruger": 2,
+  "south-africa": 88,
+  "anywhere": 6197
+ },
+ {
+  "slug": "falco-rupicolus",
+  "kruger": 0,
+  "south-africa": 323,
+  "anywhere": 360
+ },
+ {
+  "slug": "falco-subbuteo",
+  "kruger": 6,
+  "south-africa": 12,
+  "anywhere": 1605
+ },
+ {
+  "slug": "falco-vespertinus",
+  "kruger": 0,
+  "south-africa": 3,
+  "anywhere": 617
+ },
+ {
+  "slug": "fraseria-caerulescens",
+  "kruger": 22,
+  "south-africa": 66,
+  "anywhere": 102
+ },
+ {
+  "slug": "fraseria-plumbea",
+  "kruger": 4,
+  "south-africa": 8,
+  "anywhere": 17
+ },
+ {
+  "slug": "fulica-cristata",
+  "kruger": 0,
+  "south-africa": 704,
+  "anywhere": 866
+ },
+ {
+  "slug": "gallinago-nigripennis",
+  "kruger": 0,
+  "south-africa": 28,
+  "anywhere": 36
+ },
+ {
+  "slug": "gallinula-chloropus",
+  "kruger": 9,
+  "south-africa": 468,
+  "anywhere": 15074
+ },
+ {
+  "slug": "geronticus-calvus",
+  "kruger": 0,
+  "south-africa": 53,
+  "anywhere": 63
+ },
+ {
+  "slug": "glareola-nordmanni",
+  "kruger": 0,
+  "south-africa": 1,
+  "anywhere": 64
+ },
+ {
+  "slug": "glareola-pratincola",
+  "kruger": 10,
+  "south-africa": 29,
+  "anywhere": 432
+ },
+ {
+  "slug": "glaucidium-capense",
+  "kruger": 13,
+  "south-africa": 17,
+  "anywhere": 47
+ },
+ {
+  "slug": "glaucidium-perlatum",
+  "kruger": 49,
+  "south-africa": 73,
+  "anywhere": 153
+ },
+ {
+  "slug": "granatina-granatina",
+  "kruger": 0,
+  "south-africa": 25,
+  "anywhere": 82
+ },
+ {
+  "slug": "guttera-edouardi",
+  "kruger": 18,
+  "south-africa": 92,
+  "anywhere": 102
+ },
+ {
+  "slug": "gymnoris-superciliaris",
+  "kruger": 12,
+  "south-africa": 57,
+  "anywhere": 105
+ },
+ {
+  "slug": "gypohierax-angolensis",
+  "kruger": 1,
+  "south-africa": 29,
+  "anywhere": 252
+ },
+ {
+  "slug": "gyps-africanus",
+  "kruger": 217,
+  "south-africa": 416,
+  "anywhere": 911
+ },
+ {
+  "slug": "gyps-coprotheres",
+  "kruger": 13,
+  "south-africa": 133,
+  "anywhere": 136
+ },
+ {
+  "slug": "halcyon-albiventris",
+  "kruger": 92,
+  "south-africa": 542,
+  "anywhere": 705
+ },
+ {
+  "slug": "halcyon-chelicuti",
+  "kruger": 13,
+  "south-africa": 56,
+  "anywhere": 181
+ },
+ {
+  "slug": "halcyon-leucocephala",
+  "kruger": 9,
+  "south-africa": 12,
+  "anywhere": 280
+ },
+ {
+  "slug": "halcyon-senegalensis",
+  "kruger": 69,
+  "south-africa": 119,
+  "anywhere": 314
+ },
+ {
+  "slug": "hedydipna-collaris",
+  "kruger": 28,
+  "south-africa": 164,
+  "anywhere": 304
+ },
+ {
+  "slug": "hieraaetus-pennatus",
+  "kruger": 2,
+  "south-africa": 118,
+  "anywhere": 2105
+ },
+ {
+  "slug": "hieraaetus-wahlbergi",
+  "kruger": 104,
+  "south-africa": 148,
+  "anywhere": 270
+ },
+ {
+  "slug": "himantopus-himantopus",
+  "kruger": 38,
+  "south-africa": 375,
+  "anywhere": 6504
+ },
+ {
+  "slug": "hippolais-icterina",
+  "kruger": 1,
+  "south-africa": 1,
+  "anywhere": 263
+ },
+ {
+  "slug": "hippolais-olivetorum",
+  "kruger": 0,
+  "south-africa": 0,
+  "anywhere": 8
+ },
+ {
+  "slug": "hirundo-albigularis",
+  "kruger": 0,
+  "south-africa": 238,
+  "anywhere": 243
+ },
+ {
+  "slug": "hirundo-dimidiata",
+  "kruger": 0,
+  "south-africa": 70,
+  "anywhere": 75
+ },
+ {
+  "slug": "hirundo-rustica",
+  "kruger": 15,
+  "south-africa": 236,
+  "anywhere": 24141
+ },
+ {
+  "slug": "hirundo-smithii",
+  "kruger": 45,
+  "south-africa": 83,
+  "anywhere": 661
+ },
+ {
+  "slug": "hypargos-margaritatus",
+  "kruger": 0,
+  "south-africa": 8,
+  "anywhere": 8
+ },
+ {
+  "slug": "icthyophaga-vocifer",
+  "kruger": 169,
+  "south-africa": 495,
+  "anywhere": 1117
+ },
+ {
+  "slug": "iduna-natalensis",
+  "kruger": 0,
+  "south-africa": 11,
+  "anywhere": 26
+ },
+ {
+  "slug": "indicator-indicator",
+  "kruger": 7,
+  "south-africa": 43,
+  "anywhere": 89
+ },
+ {
+  "slug": "indicator-minor",
+  "kruger": 3,
+  "south-africa": 56,
+  "anywhere": 91
+ },
+ {
+  "slug": "indicator-variegatus",
+  "kruger": 0,
+  "south-africa": 24,
+  "anywhere": 27
+ },
+ {
+  "slug": "ispidina-picta",
+  "kruger": 3,
+  "south-africa": 39,
+  "anywhere": 140
+ },
+ {
+  "slug": "jynx-ruficollis",
+  "kruger": 0,
+  "south-africa": 84,
+  "anywhere": 94
+ },
+ {
+  "slug": "kaupifalco-monogrammicus",
+  "kruger": 10,
+  "south-africa": 27,
+  "anywhere": 181
+ },
+ {
+  "slug": "ketupa-lactea",
+  "kruger": 37,
+  "south-africa": 57,
+  "anywhere": 145
+ },
+ {
+  "slug": "lagonosticta-rhodopareia",
+  "kruger": 17,
+  "south-africa": 51,
+  "anywhere": 71
+ },
+ {
+  "slug": "lagonosticta-rubricata",
+  "kruger": 0,
+  "south-africa": 64,
+  "anywhere": 72
+ },
+ {
+  "slug": "lagonosticta-senegala",
+  "kruger": 45,
+  "south-africa": 136,
+  "anywhere": 660
+ },
+ {
+  "slug": "lamprotornis-australis",
+  "kruger": 104,
+  "south-africa": 150,
+  "anywhere": 207
+ },
+ {
+  "slug": "lamprotornis-chalybaeus",
+  "kruger": 93,
+  "south-africa": 119,
+  "anywhere": 290
+ },
+ {
+  "slug": "lamprotornis-mevesii",
+  "kruger": 25,
+  "south-africa": 36,
+  "anywhere": 145
+ },
+ {
+  "slug": "lamprotornis-nitens",
+  "kruger": 97,
+  "south-africa": 527,
+  "anywhere": 661
+ },
+ {
+  "slug": "laniarius-atrococcineus",
+  "kruger": 0,
+  "south-africa": 67,
+  "anywhere": 157
+ },
+ {
+  "slug": "laniarius-ferrugineus",
+  "kruger": 8,
+  "south-africa": 361,
+  "anywhere": 363
+ },
+ {
+  "slug": "laniarius-major",
+  "kruger": 3,
+  "south-africa": 3,
+  "anywhere": 107
+ },
+ {
+  "slug": "lanius-collaris",
+  "kruger": 2,
+  "south-africa": 1133,
+  "anywhere": 1170
+ },
+ {
+  "slug": "lanius-collurio",
+  "kruger": 50,
+  "south-africa": 147,
+  "anywhere": 4970
+ },
+ {
+  "slug": "lanius-minor",
+  "kruger": 17,
+  "south-africa": 36,
+  "anywhere": 549
+ },
+ {
+  "slug": "leptoptilos-crumenifer",
+  "kruger": 82,
+  "south-africa": 125,
+  "anywhere": 737
+ },
+ {
+  "slug": "lissotis-melanogaster",
+  "kruger": 19,
+  "south-africa": 44,
+  "anywhere": 152
+ },
+ {
+  "slug": "locustella-fluviatilis",
+  "kruger": 0,
+  "south-africa": 0,
+  "anywhere": 107
+ },
+ {
+  "slug": "lophaetus-occipitalis",
+  "kruger": 6,
+  "south-africa": 165,
+  "anywhere": 331
+ },
+ {
+  "slug": "lophoceros-alboterminatus",
+  "kruger": 21,
+  "south-africa": 168,
+  "anywhere": 273
+ },
+ {
+  "slug": "lophoceros-nasutus",
+  "kruger": 72,
+  "south-africa": 126,
+  "anywhere": 392
+ },
+ {
+  "slug": "lophotis-ruficrista",
+  "kruger": 94,
+  "south-africa": 135,
+  "anywhere": 189
+ },
+ {
+  "slug": "luscinia-luscinia",
+  "kruger": 0,
+  "south-africa": 1,
+  "anywhere": 485
+ },
+ {
+  "slug": "lybius-torquatus",
+  "kruger": 47,
+  "south-africa": 293,
+  "anywhere": 384
+ },
+ {
+  "slug": "macheiramphus-alcinus",
+  "kruger": 0,
+  "south-africa": 6,
+  "anywhere": 42
+ },
+ {
+  "slug": "macronyx-croceus",
+  "kruger": 15,
+  "south-africa": 97,
+  "anywhere": 193
+ },
+ {
+  "slug": "malaconotus-blanchoti",
+  "kruger": 26,
+  "south-africa": 63,
+  "anywhere": 88
+ },
+ {
+  "slug": "megaceryle-maxima",
+  "kruger": 53,
+  "south-africa": 200,
+  "anywhere": 369
+ },
+ {
+  "slug": "melaenornis-pammelaina",
+  "kruger": 34,
+  "south-africa": 170,
+  "anywhere": 246
+ },
+ {
+  "slug": "melaniparus-niger",
+  "kruger": 34,
+  "south-africa": 124,
+  "anywhere": 152
+ },
+ {
+  "slug": "melierax-metabates",
+  "kruger": 23,
+  "south-africa": 55,
+  "anywhere": 137
+ },
+ {
+  "slug": "merops-apiaster",
+  "kruger": 47,
+  "south-africa": 156,
+  "anywhere": 3023
+ },
+ {
+  "slug": "merops-bullockoides",
+  "kruger": 112,
+  "south-africa": 264,
+  "anywhere": 439
+ },
+ {
+  "slug": "merops-hirundineus",
+  "kruger": 0,
+  "south-africa": 25,
+  "anywhere": 153
+ },
+ {
+  "slug": "merops-nubicoides",
+  "kruger": 27,
+  "south-africa": 34,
+  "anywhere": 114
+ },
+ {
+  "slug": "merops-persicus",
+  "kruger": 1,
+  "south-africa": 33,
+  "anywhere": 382
+ },
+ {
+  "slug": "merops-pusillus",
+  "kruger": 51,
+  "south-africa": 158,
+  "anywhere": 642
+ },
+ {
+  "slug": "microcarbo-africanus",
+  "kruger": 27,
+  "south-africa": 723,
+  "anywhere": 1211
+ },
+ {
+  "slug": "micronisus-gabar",
+  "kruger": 11,
+  "south-africa": 49,
+  "anywhere": 126
+ },
+ {
+  "slug": "microparra-capensis",
+  "kruger": 0,
+  "south-africa": 2,
+  "anywhere": 21
+ },
+ {
+  "slug": "milvus-migrans",
+  "kruger": 50,
+  "south-africa": 382,
+  "anywhere": 13648
+ },
+ {
+  "slug": "mirafra-passerina",
+  "kruger": 3,
+  "south-africa": 4,
+  "anywhere": 6
+ },
+ {
+  "slug": "monticola-rupestris",
+  "kruger": 0,
+  "south-africa": 218,
+  "anywhere": 221
+ },
+ {
+  "slug": "motacilla-aguimp",
+  "kruger": 75,
+  "south-africa": 254,
+  "anywhere": 644
+ },
+ {
+  "slug": "motacilla-capensis",
+  "kruger": 1,
+  "south-africa": 951,
+  "anywhere": 1018
+ },
+ {
+  "slug": "motacilla-clara",
+  "kruger": 0,
+  "south-africa": 46,
+  "anywhere": 82
+ },
+ {
+  "slug": "motacilla-flava",
+  "kruger": 0,
+  "south-africa": 4,
+  "anywhere": 5330
+ },
+ {
+  "slug": "muscicapa-adusta",
+  "kruger": 4,
+  "south-africa": 364,
+  "anywhere": 469
+ },
+ {
+  "slug": "mycteria-ibis",
+  "kruger": 109,
+  "south-africa": 181,
+  "anywhere": 609
+ },
+ {
+  "slug": "myrmecocichla-arnotti",
+  "kruger": 5,
+  "south-africa": 5,
+  "anywhere": 43
+ },
+ {
+  "slug": "neafrapus-boehmi",
+  "kruger": 1,
+  "south-africa": 2,
+  "anywhere": 8
+ },
+ {
+  "slug": "necrosyrtes-monachus",
+  "kruger": 73,
+  "south-africa": 96,
+  "anywhere": 541
+ },
+ {
+  "slug": "nectarinia-famosa",
+  "kruger": 0,
+  "south-africa": 417,
+  "anywhere": 429
+ },
+ {
+  "slug": "neophedina-cincta",
+  "kruger": 0,
+  "south-africa": 11,
+  "anywhere": 34
+ },
+ {
+  "slug": "netta-erythrophthalma",
+  "kruger": 1,
+  "south-africa": 73,
+  "anywhere": 108
+ },
+ {
+  "slug": "nettapus-auritus",
+  "kruger": 0,
+  "south-africa": 16,
+  "anywhere": 74
+ },
+ {
+  "slug": "nicator-gularis",
+  "kruger": 5,
+  "south-africa": 13,
+  "anywhere": 21
+ },
+ {
+  "slug": "nilaus-afer",
+  "kruger": 9,
+  "south-africa": 29,
+  "anywhere": 95
+ },
+ {
+  "slug": "notopholia-corusca",
+  "kruger": 0,
+  "south-africa": 125,
+  "anywhere": 136
+ },
+ {
+  "slug": "numida-meleagris",
+  "kruger": 69,
+  "south-africa": 846,
+  "anywhere": 1745
+ },
+ {
+  "slug": "nycticorax-nycticorax",
+  "kruger": 7,
+  "south-africa": 81,
+  "anywhere": 14877
+ },
+ {
+  "slug": "oena-capensis",
+  "kruger": 13,
+  "south-africa": 154,
+  "anywhere": 641
+ },
+ {
+  "slug": "oenanthe-familiaris",
+  "kruger": 2,
+  "south-africa": 510,
+  "anywhere": 595
+ },
+ {
+  "slug": "oenanthe-pileata",
+  "kruger": 2,
+  "south-africa": 221,
+  "anywhere": 289
+ },
+ {
+  "slug": "onychognathus-morio",
+  "kruger": 25,
+  "south-africa": 738,
+  "anywhere": 838
+ },
+ {
+  "slug": "oriolus-auratus",
+  "kruger": 1,
+  "south-africa": 1,
+  "anywhere": 36
+ },
+ {
+  "slug": "oriolus-larvatus",
+  "kruger": 48,
+  "south-africa": 270,
+  "anywhere": 317
+ },
+ {
+  "slug": "oriolus-oriolus",
+  "kruger": 0,
+  "south-africa": 1,
+  "anywhere": 746
+ },
+ {
+  "slug": "ortygornis-sephaena",
+  "kruger": 90,
+  "south-africa": 179,
+  "anywhere": 286
+ },
+ {
+  "slug": "ortygospiza-atricollis",
+  "kruger": 0,
+  "south-africa": 6,
+  "anywhere": 26
+ },
+ {
+  "slug": "otus-senegalensis",
+  "kruger": 28,
+  "south-africa": 33,
+  "anywhere": 66
+ },
+ {
+  "slug": "pachycoccyx-audeberti",
+  "kruger": 1,
+  "south-africa": 1,
+  "anywhere": 5
+ },
+ {
+  "slug": "pandion-haliaetus",
+  "kruger": 4,
+  "south-africa": 42,
+  "anywhere": 20176
+ },
+ {
+  "slug": "paragallinula-angulata",
+  "kruger": 4,
+  "south-africa": 8,
+  "anywhere": 24
+ },
+ {
+  "slug": "passer-diffusus",
+  "kruger": 80,
+  "south-africa": 347,
+  "anywhere": 445
+ },
+ {
+  "slug": "passer-domesticus",
+  "kruger": 22,
+  "south-africa": 410,
+  "anywhere": 54342
+ },
+ {
+  "slug": "passer-melanurus",
+  "kruger": 4,
+  "south-africa": 663,
+  "anywhere": 749
+ },
+ {
+  "slug": "pelecanus-onocrotalus",
+  "kruger": 0,
+  "south-africa": 74,
+  "anywhere": 780
+ },
+ {
+  "slug": "pelecanus-rufescens",
+  "kruger": 1,
+  "south-africa": 27,
+  "anywhere": 226
+ },
+ {
+  "slug": "pernis-apivorus",
+  "kruger": 0,
+  "south-africa": 22,
+  "anywhere": 1507
+ },
+ {
+  "slug": "phalacrocorax-carbo",
+  "kruger": 6,
+  "south-africa": 603,
+  "anywhere": 18727
+ },
+ {
+  "slug": "phoeniconaias-minor",
+  "kruger": 1,
+  "south-africa": 78,
+  "anywhere": 332
+ },
+ {
+  "slug": "phoenicopterus-roseus",
+  "kruger": 0,
+  "south-africa": 295,
+  "anywhere": 3581
+ },
+ {
+  "slug": "phoeniculus-purpureus",
+  "kruger": 65,
+  "south-africa": 223,
+  "anywhere": 351
+ },
+ {
+  "slug": "phyllastrephus-flavostriatus",
+  "kruger": 0,
+  "south-africa": 5,
+  "anywhere": 8
+ },
+ {
+  "slug": "phyllastrephus-terrestris",
+  "kruger": 7,
+  "south-africa": 73,
+  "anywhere": 98
+ },
+ {
+  "slug": "phylloscopus-ruficapilla",
+  "kruger": 0,
+  "south-africa": 28,
+  "anywhere": 31
+ },
+ {
+  "slug": "phylloscopus-trochilus",
+  "kruger": 3,
+  "south-africa": 20,
+  "anywhere": 2583
+ },
+ {
+  "slug": "pinarocorys-nigricans",
+  "kruger": 3,
+  "south-africa": 5,
+  "anywhere": 12
+ },
+ {
+  "slug": "platalea-alba",
+  "kruger": 38,
+  "south-africa": 306,
+  "anywhere": 521
+ },
+ {
+  "slug": "platysteira-peltata",
+  "kruger": 6,
+  "south-africa": 15,
+  "anywhere": 29
+ },
+ {
+  "slug": "plectropterus-gambensis",
+  "kruger": 6,
+  "south-africa": 319,
+  "anywhere": 521
+ },
+ {
+  "slug": "plegadis-falcinellus",
+  "kruger": 7,
+  "south-africa": 133,
+  "anywhere": 3686
+ },
+ {
+  "slug": "plocepasser-mahali",
+  "kruger": 3,
+  "south-africa": 110,
+  "anywhere": 511
+ },
+ {
+  "slug": "ploceus-capensis",
+  "kruger": 0,
+  "south-africa": 818,
+  "anywhere": 820
+ },
+ {
+  "slug": "ploceus-cucullatus",
+  "kruger": 19,
+  "south-africa": 278,
+  "anywhere": 895
+ },
+ {
+  "slug": "ploceus-intermedius",
+  "kruger": 54,
+  "south-africa": 106,
+  "anywhere": 199
+ },
+ {
+  "slug": "ploceus-ocularis",
+  "kruger": 32,
+  "south-africa": 135,
+  "anywhere": 202
+ },
+ {
+  "slug": "ploceus-subaureus",
+  "kruger": 1,
+  "south-africa": 110,
+  "anywhere": 130
+ },
+ {
+  "slug": "ploceus-velatus",
+  "kruger": 22,
+  "south-africa": 633,
+  "anywhere": 811
+ },
+ {
+  "slug": "ploceus-xanthops",
+  "kruger": 5,
+  "south-africa": 19,
+  "anywhere": 90
+ },
+ {
+  "slug": "ploceus-xanthopterus",
+  "kruger": 0,
+  "south-africa": 12,
+  "anywhere": 27
+ },
+ {
+  "slug": "podica-senegalensis",
+  "kruger": 3,
+  "south-africa": 20,
+  "anywhere": 78
+ },
+ {
+  "slug": "pogoniulus-bilineatus",
+  "kruger": 0,
+  "south-africa": 51,
+  "anywhere": 94
+ },
+ {
+  "slug": "pogoniulus-chrysoconus",
+  "kruger": 1,
+  "south-africa": 14,
+  "anywhere": 69
+ },
+ {
+  "slug": "pogonocichla-stellata",
+  "kruger": 0,
+  "south-africa": 39,
+  "anywhere": 67
+ },
+ {
+  "slug": "poicephalus-cryptoxanthus",
+  "kruger": 50,
+  "south-africa": 69,
+  "anywhere": 80
+ },
+ {
+  "slug": "poicephalus-meyeri",
+  "kruger": 0,
+  "south-africa": 6,
+  "anywhere": 98
+ },
+ {
+  "slug": "polemaetus-bellicosus",
+  "kruger": 125,
+  "south-africa": 257,
+  "anywhere": 427
+ },
+ {
+  "slug": "polyboroides-typus",
+  "kruger": 31,
+  "south-africa": 239,
+  "anywhere": 471
+ },
+ {
+  "slug": "porphyrio-alleni",
+  "kruger": 0,
+  "south-africa": 2,
+  "anywhere": 23
+ },
+ {
+  "slug": "porphyrio-porphyrio",
+  "kruger": 0,
+  "south-africa": 0,
+  "anywhere": 318
+ },
+ {
+  "slug": "prinia-flavicans",
+  "kruger": 0,
+  "south-africa": 47,
+  "anywhere": 97
+ },
+ {
+  "slug": "prinia-hypoxantha",
+  "kruger": 0,
+  "south-africa": 29,
+  "anywhere": 29
+ },
+ {
+  "slug": "prinia-subflava",
+  "kruger": 68,
+  "south-africa": 245,
+  "anywhere": 400
+ },
+ {
+  "slug": "prionops-plumatus",
+  "kruger": 38,
+  "south-africa": 93,
+  "anywhere": 204
+ },
+ {
+  "slug": "prionops-retzii",
+  "kruger": 16,
+  "south-africa": 32,
+  "anywhere": 60
+ },
+ {
+  "slug": "prodotiscus-regulus",
+  "kruger": 1,
+  "south-africa": 16,
+  "anywhere": 23
+ },
+ {
+  "slug": "pseudhirundo-griseopyga",
+  "kruger": 0,
+  "south-africa": 0,
+  "anywhere": 1
+ },
+ {
+  "slug": "pternistis-afer",
+  "kruger": 0,
+  "south-africa": 124,
+  "anywhere": 245
+ },
+ {
+  "slug": "pternistis-natalensis",
+  "kruger": 104,
+  "south-africa": 188,
+  "anywhere": 216
+ },
+ {
+  "slug": "pternistis-swainsonii",
+  "kruger": 82,
+  "south-africa": 144,
+  "anywhere": 221
+ },
+ {
+  "slug": "pterocles-bicinctus",
+  "kruger": 50,
+  "south-africa": 57,
+  "anywhere": 121
+ },
+ {
+  "slug": "ptilopsis-granti",
+  "kruger": 5,
+  "south-africa": 13,
+  "anywhere": 22
+ },
+ {
+  "slug": "ptyonoprogne-fuligula",
+  "kruger": 1,
+  "south-africa": 188,
+  "anywhere": 235
+ },
+ {
+  "slug": "pycnonotus-barbatus",
+  "kruger": 90,
+  "south-africa": 641,
+  "anywhere": 1799
+ },
+ {
+  "slug": "pytilia-afra",
+  "kruger": 1,
+  "south-africa": 1,
+  "anywhere": 8
+ },
+ {
+  "slug": "pytilia-melba",
+  "kruger": 50,
+  "south-africa": 125,
+  "anywhere": 227
+ },
+ {
+  "slug": "quelea-quelea",
+  "kruger": 38,
+  "south-africa": 180,
+  "anywhere": 390
+ },
+ {
+  "slug": "rallus-caerulescens",
+  "kruger": 0,
+  "south-africa": 13,
+  "anywhere": 15
+ },
+ {
+  "slug": "recurvirostra-avosetta",
+  "kruger": 0,
+  "south-africa": 118,
+  "anywhere": 2987
+ },
+ {
+  "slug": "rhinopomastus-cyanomelas",
+  "kruger": 19,
+  "south-africa": 69,
+  "anywhere": 107
+ },
+ {
+  "slug": "rhinoptilus-chalcopterus",
+  "kruger": 7,
+  "south-africa": 15,
+  "anywhere": 27
+ },
+ {
+  "slug": "rhinoptilus-cinctus",
+  "kruger": 2,
+  "south-africa": 3,
+  "anywhere": 26
+ },
+ {
+  "slug": "riparia-paludicola",
+  "kruger": 3,
+  "south-africa": 82,
+  "anywhere": 129
+ },
+ {
+  "slug": "riparia-riparia",
+  "kruger": 1,
+  "south-africa": 2,
+  "anywhere": 3111
+ },
+ {
+  "slug": "rostratula-benghalensis",
+  "kruger": 12,
+  "south-africa": 43,
+  "anywhere": 306
+ },
+ {
+  "slug": "rynchops-flavirostris",
+  "kruger": 2,
+  "south-africa": 6,
+  "anywhere": 93
+ },
+ {
+  "slug": "sagittarius-serpentarius",
+  "kruger": 32,
+  "south-africa": 212,
+  "anywhere": 460
+ },
+ {
+  "slug": "sarkidiornis-melanotos",
+  "kruger": 35,
+  "south-africa": 50,
+  "anywhere": 228
+ },
+ {
+  "slug": "sarothrura-elegans",
+  "kruger": 0,
+  "south-africa": 6,
+  "anywhere": 6
+ },
+ {
+  "slug": "sarothrura-rufa",
+  "kruger": 0,
+  "south-africa": 11,
+  "anywhere": 12
+ },
+ {
+  "slug": "saxicola-torquatus",
+  "kruger": 13,
+  "south-africa": 617,
+  "anywhere": 806
+ },
+ {
+  "slug": "scleroptila-shelleyi",
+  "kruger": 5,
+  "south-africa": 7,
+  "anywhere": 18
+ },
+ {
+  "slug": "scopus-umbretta",
+  "kruger": 84,
+  "south-africa": 283,
+  "anywhere": 765
+ },
+ {
+  "slug": "scotopelia-peli",
+  "kruger": 1,
+  "south-africa": 15,
+  "anywhere": 36
+ },
+ {
+  "slug": "serinus-canicollis",
+  "kruger": 0,
+  "south-africa": 309,
+  "anywhere": 314
+ },
+ {
+  "slug": "sigelus-silens",
+  "kruger": 7,
+  "south-africa": 618,
+  "anywhere": 618
+ },
+ {
+  "slug": "spatula-hottentota",
+  "kruger": 0,
+  "south-africa": 37,
+  "anywhere": 109
+ },
+ {
+  "slug": "spermestes-bicolor",
+  "kruger": 0,
+  "south-africa": 29,
+  "anywhere": 99
+ },
+ {
+  "slug": "spermestes-cucullata",
+  "kruger": 14,
+  "south-africa": 200,
+  "anywhere": 524
+ },
+ {
+  "slug": "spermestes-fringilloides",
+  "kruger": 0,
+  "south-africa": 4,
+  "anywhere": 17
+ },
+ {
+  "slug": "sphenoeacus-afer",
+  "kruger": 0,
+  "south-africa": 171,
+  "anywhere": 174
+ },
+ {
+  "slug": "spilopelia-senegalensis",
+  "kruger": 76,
+  "south-africa": 677,
+  "anywhere": 3323
+ },
+ {
+  "slug": "sporopipes-squamifrons",
+  "kruger": 0,
+  "south-africa": 49,
+  "anywhere": 98
+ },
+ {
+  "slug": "stephanoaetus-coronatus",
+  "kruger": 3,
+  "south-africa": 74,
+  "anywhere": 97
+ },
+ {
+  "slug": "streptopelia-capicola",
+  "kruger": 52,
+  "south-africa": 400,
+  "anywhere": 770
+ },
+ {
+  "slug": "streptopelia-decipiens",
+  "kruger": 32,
+  "south-africa": 41,
+  "anywhere": 202
+ },
+ {
+  "slug": "streptopelia-semitorquata",
+  "kruger": 5,
+  "south-africa": 732,
+  "anywhere": 1137
+ },
+ {
+  "slug": "strix-woodfordii",
+  "kruger": 3,
+  "south-africa": 27,
+  "anywhere": 65
+ },
+ {
+  "slug": "struthio-camelus",
+  "kruger": 55,
+  "south-africa": 505,
+  "anywhere": 1042
+ },
+ {
+  "slug": "sylvia-borin",
+  "kruger": 0,
+  "south-africa": 0,
+  "anywhere": 744
+ },
+ {
+  "slug": "sylvietta-rufescens",
+  "kruger": 30,
+  "south-africa": 112,
+  "anywhere": 150
+ },
+ {
+  "slug": "tachybaptus-ruficollis",
+  "kruger": 9,
+  "south-africa": 478,
+  "anywhere": 6786
+ },
+ {
+  "slug": "tachymarptis-melba",
+  "kruger": 1,
+  "south-africa": 36,
+  "anywhere": 704
+ },
+ {
+  "slug": "tachyspiza-badia",
+  "kruger": 4,
+  "south-africa": 9,
+  "anywhere": 867
+ },
+ {
+  "slug": "tachyspiza-minulla",
+  "kruger": 19,
+  "south-africa": 57,
+  "anywhere": 87
+ },
+ {
+  "slug": "tauraco-corythaix",
+  "kruger": 0,
+  "south-africa": 197,
+  "anywhere": 197
+ },
+ {
+  "slug": "tchagra-australis",
+  "kruger": 26,
+  "south-africa": 70,
+  "anywhere": 143
+ },
+ {
+  "slug": "tchagra-senegalus",
+  "kruger": 28,
+  "south-africa": 60,
+  "anywhere": 165
+ },
+ {
+  "slug": "telacanthura-ussheri",
+  "kruger": 3,
+  "south-africa": 3,
+  "anywhere": 16
+ },
+ {
+  "slug": "telophorus-viridis",
+  "kruger": 3,
+  "south-africa": 12,
+  "anywhere": 12
+ },
+ {
+  "slug": "terathopius-ecaudatus",
+  "kruger": 185,
+  "south-africa": 240,
+  "anywhere": 510
+ },
+ {
+  "slug": "terpsiphone-viridis",
+  "kruger": 20,
+  "south-africa": 192,
+  "anywhere": 423
+ },
+ {
+  "slug": "thalassornis-leuconotus",
+  "kruger": 1,
+  "south-africa": 68,
+  "anywhere": 98
+ },
+ {
+  "slug": "thamnolaea-cinnamomeiventris",
+  "kruger": 27,
+  "south-africa": 162,
+  "anywhere": 209
+ },
+ {
+  "slug": "thinornis-tricollaris",
+  "kruger": 83,
+  "south-africa": 441,
+  "anywhere": 605
+ },
+ {
+  "slug": "threskiornis-aethiopicus",
+  "kruger": 9,
+  "south-africa": 734,
+  "anywhere": 1546
+ },
+ {
+  "slug": "tockus-leucomelas",
+  "kruger": 135,
+  "south-africa": 300,
+  "anywhere": 470
+ },
+ {
+  "slug": "tockus-rufirostris",
+  "kruger": 120,
+  "south-africa": 201,
+  "anywhere": 363
+ },
+ {
+  "slug": "torgos-tracheliotos",
+  "kruger": 64,
+  "south-africa": 85,
+  "anywhere": 404
+ },
+ {
+  "slug": "trachyphonus-vaillantii",
+  "kruger": 101,
+  "south-africa": 261,
+  "anywhere": 335
+ },
+ {
+  "slug": "treron-calvus",
+  "kruger": 42,
+  "south-africa": 127,
+  "anywhere": 252
+ },
+ {
+  "slug": "tricholaema-leucomelas",
+  "kruger": 8,
+  "south-africa": 137,
+  "anywhere": 172
+ },
+ {
+  "slug": "trigonoceps-occipitalis",
+  "kruger": 51,
+  "south-africa": 58,
+  "anywhere": 114
+ },
+ {
+  "slug": "tringa-glareola",
+  "kruger": 62,
+  "south-africa": 123,
+  "anywhere": 4007
+ },
+ {
+  "slug": "tringa-nebularia",
+  "kruger": 27,
+  "south-africa": 140,
+  "anywhere": 3705
+ },
+ {
+  "slug": "tringa-ochropus",
+  "kruger": 2,
+  "south-africa": 3,
+  "anywhere": 2665
+ },
+ {
+  "slug": "tringa-stagnatilis",
+  "kruger": 1,
+  "south-africa": 17,
+  "anywhere": 1030
+ },
+ {
+  "slug": "trochocercus-cyanomelas",
+  "kruger": 0,
+  "south-africa": 60,
+  "anywhere": 66
+ },
+ {
+  "slug": "turdoides-jardineii",
+  "kruger": 73,
+  "south-africa": 144,
+  "anywhere": 276
+ },
+ {
+  "slug": "turdus-libonyana",
+  "kruger": 61,
+  "south-africa": 173,
+  "anywhere": 250
+ },
+ {
+  "slug": "turdus-litsitsirupa",
+  "kruger": 25,
+  "south-africa": 93,
+  "anywhere": 151
+ },
+ {
+  "slug": "turdus-olivaceus",
+  "kruger": 0,
+  "south-africa": 310,
+  "anywhere": 310
+ },
+ {
+  "slug": "turdus-smithi",
+  "kruger": 0,
+  "south-africa": 122,
+  "anywhere": 126
+ },
+ {
+  "slug": "turnix-sylvaticus",
+  "kruger": 6,
+  "south-africa": 14,
+  "anywhere": 21
+ },
+ {
+  "slug": "turtur-afer",
+  "kruger": 0,
+  "south-africa": 0,
+  "anywhere": 58
+ },
+ {
+  "slug": "turtur-chalcospilos",
+  "kruger": 50,
+  "south-africa": 186,
+  "anywhere": 347
+ },
+ {
+  "slug": "turtur-tympanistria",
+  "kruger": 2,
+  "south-africa": 39,
+  "anywhere": 76
+ },
+ {
+  "slug": "tychaedon-quadrivirgata",
+  "kruger": 18,
+  "south-africa": 41,
+  "anywhere": 56
+ },
+ {
+  "slug": "tychaedon-signata",
+  "kruger": 0,
+  "south-africa": 23,
+  "anywhere": 23
+ },
+ {
+  "slug": "tyto-alba",
+  "kruger": 6,
+  "south-africa": 43,
+  "anywhere": 700
+ },
+ {
+  "slug": "upupa-epops",
+  "kruger": 47,
+  "south-africa": 380,
+  "anywhere": 4114
+ },
+ {
+  "slug": "uraeginthus-angolensis",
+  "kruger": 78,
+  "south-africa": 226,
+  "anywhere": 442
+ },
+ {
+  "slug": "urocolius-indicus",
+  "kruger": 8,
+  "south-africa": 192,
+  "anywhere": 240
+ },
+ {
+  "slug": "urolestes-melanoleucus",
+  "kruger": 91,
+  "south-africa": 160,
+  "anywhere": 256
+ },
+ {
+  "slug": "vanellus-albiceps",
+  "kruger": 59,
+  "south-africa": 68,
+  "anywhere": 167
+ },
+ {
+  "slug": "vanellus-armatus",
+  "kruger": 112,
+  "south-africa": 967,
+  "anywhere": 1386
+ },
+ {
+  "slug": "vanellus-coronatus",
+  "kruger": 49,
+  "south-africa": 360,
+  "anywhere": 612
+ },
+ {
+  "slug": "vanellus-lugubris",
+  "kruger": 15,
+  "south-africa": 26,
+  "anywhere": 54
+ },
+ {
+  "slug": "vanellus-senegallus",
+  "kruger": 55,
+  "south-africa": 158,
+  "anywhere": 372
+ },
+ {
+  "slug": "vidua-chalybeata",
+  "kruger": 11,
+  "south-africa": 22,
+  "anywhere": 130
+ },
+ {
+  "slug": "vidua-funerea",
+  "kruger": 4,
+  "south-africa": 16,
+  "anywhere": 19
+ },
+ {
+  "slug": "vidua-macroura",
+  "kruger": 11,
+  "south-africa": 282,
+  "anywhere": 634
+ },
+ {
+  "slug": "vidua-paradisaea",
+  "kruger": 34,
+  "south-africa": 55,
+  "anywhere": 116
+ },
+ {
+  "slug": "vidua-purpurascens",
+  "kruger": 3,
+  "south-africa": 6,
+  "anywhere": 11
+ },
+ {
+  "slug": "vidua-regia",
+  "kruger": 2,
+  "south-africa": 18,
+  "anywhere": 53
+ },
+ {
+  "slug": "zapornia-flavirostra",
+  "kruger": 75,
+  "south-africa": 189,
+  "anywhere": 335
+ },
+ {
+  "slug": "zosterops-anderssoni",
+  "kruger": 1,
+  "south-africa": 3,
+  "anywhere": 32
+ }
+]

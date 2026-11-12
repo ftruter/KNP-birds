@@ -78,6 +78,17 @@ Then, in the repository root:
 Steps 1 and 2 call the iNaturalist API at one request a second and take under an hour; answers are cached in
 `cache/`. Nothing here costs money.
 
+## Another training set
+
+`KNP_LICENCES` and `KNP_MANIFEST` point steps 2 to 8 at another licence set and photo list. The test photos
+always come from `manifest.csv.gz`. The permissive-only comparison in the model card was built with:
+
+```bash
+export KNP_LICENCES=cc0,cc-by KNP_MANIFEST=manifest-permissive.csv.gz
+python3 fetch-observations.py && python3 download.py
+.venv/bin/python train.py --name mnv4m-2p --size 256 --epochs 10
+```
+
 ## Rules the split follows
 
 - **The test photos are fixed.** `fetch-observations.py` keeps the `eval` rows already in `manifest.csv.gz`,

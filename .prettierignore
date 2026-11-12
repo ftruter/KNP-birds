@@ -5,3 +5,4 @@ pnpm-lock.yaml
 data
 docs/content.schema.json
 training/
+src/icons.generated.js

@@ -12,6 +12,15 @@ export const IDENTIFY_SCRIPTS = [
   '/identify-capture.js',
   '/identify-photo.js',
 ]
+/** The site icon in every size. Built by scripts/build-icons.mjs. */
+export const ICON_PATHS = [
+  '/favicon.ico',
+  '/favicon.svg',
+  '/apple-touch-icon.png',
+  '/icon-192.png',
+  '/icon-512.png',
+  '/icon-maskable-512.png',
+]
 export const SEARCH_MAX = 200
 
 /** Trims, collapses whitespace and caps a search query from the URL. */
@@ -89,6 +98,7 @@ export const parseUrl = (url) => {
     if (path === '/llms.txt') return route('llms', format, path)
     if (path === '/style.css') return route('style', format, path)
     if (path === '/app.js') return route('script', format, path)
+    if (ICON_PATHS.includes(path)) return route('icon', format, path)
     if (IDENTIFY_SCRIPTS.includes(path))
       return route('identify-script', format, path)
     if (path.startsWith('/models/')) return modelRoute(path)

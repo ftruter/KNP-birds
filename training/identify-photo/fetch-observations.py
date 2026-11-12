@@ -15,7 +15,7 @@ Split rules
 """
 import json, os, re, random, sys
 from concurrent.futures import ThreadPoolExecutor
-from inat import get, species, write_manifest, manifest as read_manifest, MANIFEST, HERE, KRUGER, SOUTH_AFRICA, \
+from inat import get, species, write_manifest, manifest as read_manifest, MANIFEST, BASE_MANIFEST, HERE, KRUGER, SOUTH_AFRICA, \
     LICENCES, API2
 
 EVAL_MAX, TRAIN_MAX = 12, 400
@@ -24,8 +24,8 @@ taxa = {r["slug"]: r for r in json.load(open(os.path.join(HERE, "taxa.json")))}
 rng = random.Random(151)
 
 kept = {}  # slug -> evaluation rows already published
-if os.path.exists(MANIFEST):
-    for r in read_manifest():
+if os.path.exists(BASE_MANIFEST):  # the evaluation photos are the same for every training set
+    for r in read_manifest(BASE_MANIFEST):
         if r["split"] == "eval":
             r.pop("url")
             kept.setdefault(r["slug"], []).append(r)
@@ -121,6 +121,7 @@ for slug in taxa:
 tested = {str(r["photo"]) for r in manifest if r["split"] == "eval"}
 manifest = [r for r in manifest if r["split"] == "eval" or str(r["photo"]) not in tested]
 
-json.dump(counts, open(os.path.join(HERE, "counts.json"), "w"), indent=1)
+suffix = os.path.basename(MANIFEST).replace("manifest", "").replace(".csv.gz", "")  # "" or "-permissive"
+json.dump(counts, open(os.path.join(HERE, f"counts{suffix}.json"), "w"), indent=1)
 write_manifest(manifest)
 print(len(manifest), "photos listed")

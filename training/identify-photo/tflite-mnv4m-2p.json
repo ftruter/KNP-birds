@@ -1,0 +1,39 @@
+{
+ "inputSize": 288,
+ "fp32": {
+  "photos": 5889,
+  "species": 493,
+  "top1": 0.7396841569027,
+  "top3": 0.8587196467991169,
+  "top5": 0.8970962812022415,
+  "familyOfTop": 0.8782475802343352,
+  "familyBySum": 0.8784173883511632,
+  "top3MeanOverSpecies": 0.8564232589587559,
+  "fileMB": 34.64,
+  "msPerPhotoOneThread": 6.9
+ },
+ "fp16": {
+  "photos": 5889,
+  "species": 493,
+  "top1": 0.739344540669044,
+  "top3": 0.8585498386822891,
+  "top5": 0.8970962812022415,
+  "familyOfTop": 0.8779079640006793,
+  "familyBySum": 0.8789268127016472,
+  "top3MeanOverSpecies": 0.8562542258282623,
+  "fileMB": 17.53,
+  "msPerPhotoOneThread": 8.5
+ },
+ "int8": {
+  "photos": 5889,
+  "species": 493,
+  "top1": 0.7330616403464085,
+  "top3": 0.8577007980981491,
+  "top5": 0.8970962812022415,
+  "familyOfTop": 0.870096790626592,
+  "familyBySum": 0.8745118016641196,
+  "top3MeanOverSpecies": 0.8556312180044431,
+  "fileMB": 9.35,
+  "msPerPhotoOneThread": 8.5
+ }
+}

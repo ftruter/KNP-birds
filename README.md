@@ -76,7 +76,7 @@ More index keys will be added as needed.
 Workers Builds on `main` should use:
 
 - Build command: none. Workers Builds sees `pnpm-lock.yaml` and runs `pnpm install --frozen-lockfile` itself, with pnpm 9. `pnpm-workspace.yaml` lists the root as its one package because pnpm 9 rejects a workspace file without a `packages` list.
-- Deploy command: `pnpm run deploy`
+- Deploy command: `npm run deploy`. This is the one place npm stays: the build image has it, and pnpm is used here only to make local installs and worktrees faster and smaller. Locally, run `pnpm run deploy`.
 
 `pnpm run deploy` fails the build if either step fails:
 
@@ -112,6 +112,16 @@ Workers Caching (`[cache] enabled` in `wrangler.toml`) sits in front of the Work
 The Cache API (`caches.default`) is separate. It is not partitioned by Worker version, and it ignores `stale-while-revalidate`. It would keep the previous render for `s-maxage` (one hour on pages, one day on assets such as CSS). The first request after deploy misses Workers Caching, can hit that Cache API entry, and Workers Caching would then store the stale body for the new version: one hour of freshness plus 24 hours of `stale-while-revalidate` on pages. The Cache API key includes `DATA_VERSION` and the Worker version id, so a data or code deploy misses both layers.
 
 KV reads can also keep a previous value for up to 60 seconds (the default `cacheTtl`). For 70 seconds after `DATA_PUBLISHED_AT`, responses are `no-store`, so a stale read is not frozen into the edge cache. Browsers still keep a normal response for `max-age` (five minutes on pages) once caching resumes.
+
+## Site icon
+
+The drawing is [`icons/icon.svg`](icons/icon.svg): a capital B drawn as a bird, perched on "KNP". After changing it, run:
+
+```bash
+pnpm icons
+```
+
+This needs `rsvg-convert` (librsvg) and rewrites `src/icons.generated.js`, which holds every size the Worker serves: `favicon.svg`, `favicon.ico`, `apple-touch-icon.png` and the 192 and 512 px PNGs. Browser tabs get the bird alone, because the lettering is unreadable at 16 px. The name under the icon on a phone's home screen is "Birds of KNP" (`SHORT_NAME` in `src/head.js`).
 
 ## Coding style
 
