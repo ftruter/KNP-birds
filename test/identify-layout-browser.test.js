@@ -379,9 +379,10 @@ const sound = async (browser) => {
       '/identify/sound',
     )
     try {
-      const record = await box(page, '#identify-record')
+      // Listen is the first button in the row that Record is also in.
+      const record = await box(page, '#identify-listen')
       const choose = await box(page, 'label[for="identify-file"]')
-      const tip = await box(page, '.identify-choices > p:not([id])')
+      const tip = await box(page, '.identify-choices > p:not([id]) >> nth=0')
       if (viewport === TABLET_WIDE) {
         // Record on the left with the tip under it, choose on the right.
         near(record.y, choose.y, 'record and choose are level')

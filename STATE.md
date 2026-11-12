@@ -28,8 +28,25 @@ Open reference to the birds of Kruger National Park (and bordering Marloth Park)
 - Coverage is `data/identify/birdnet-labels.json`, written by `scripts/map-birdnet-labels.mjs` from the hand-checked `data/identify/birdnet-synonyms.json`. `scripts/seed.mjs` turns it into `data/index/identify-sound.json` and fails if a species is in none of its three groups. Never map a species by guessing: 123 are not in the model and 8 have only a broader label, and the page lists both.
 - Only this page (and its worker script) allows the microphone, WebAssembly and same-origin `fetch`. Every other response keeps the site-wide headers. `test/identify.test.js` checks both.
 - The likely / possible / unlikely cut-offs and the out-of-season weight in `src/client/identify.js` come from reference clips, not field recordings. Reset them when phone recordings have been scored (`spike/identify-sound/score.py --field`).
-- `test/identify-browser.test.js` runs the real model in Chromium and WebKit. It is skipped unless the model and a test recording are on disk (`IDENTIFY_MODEL`, `IDENTIFY_CLIP`).
+- `test/identify-browser.test.js` runs the real model in Chromium and WebKit. It is skipped unless the model and a test recording are on disk (`IDENTIFY_MODEL`, `IDENTIFY_CLIP`). The model is looked for in this checkout's `data/models/`; in a git worktree, point `IDENTIFY_MODEL` at the main checkout's copy.
 - Not measured: any Android phone, field recordings, and whether Safari keeps the model in Cache Storage between visits (Playwright's WebKit cannot show this).
+
+## Listen mode on the sound page (issue 179)
+
+`/identify/sound` has a Listen button beside "Record a clip" and "Choose a recording". While it listens, the newest 3 seconds are analysed once a second and the page lists every species heard in the last 10 seconds, so birds calling together are all listed.
+
+- The logic is four pure functions in `src/client/identify.js`, tested in `test/identify.test.js`: `createRing` (the newest 3 seconds of samples), `heardInWindow` (species at or above the "possible" cut-off in one window, after the month weight, as for a clip), `liveList` (the running list) and `listenPace`.
+- **Order.** A new species goes in where its best score puts it. A species already on the list keeps its place until it drops off, even when its best score changes; only its Likely / Possible word is updated. That is how "ordered by best score" and "must not jump about" were reconciled. Rows are never rebuilt, so a reference call that is playing keeps playing.
+- A species drops off when it has not reached "possible" for 10 seconds. There is no family fallback in the live list.
+- **Pace.** A window is skipped while the one before it is still with the recogniser. When three windows in a row each take more than 0.8 s, the page says so and checks every 2 seconds; when three in a row then take more than 1.6 s it stops and says to record a clip. The figures in the table below put a window at about 30 ms on the devices measured, so neither has been seen to happen.
+- **Stops by itself** when the page is hidden, and after 3 minutes with nothing heard (`LISTEN_IDLE_SECONDS`). It asks for a screen wake lock while listening, because a phone that locks hides the page; browsers without one just lock as usual.
+- **Pauses** while a reference call in the list plays or a photograph is zoomed, and throws away what the microphone picked up meanwhile. Otherwise a reference call played on the phone's speaker would be heard as that bird and keep itself on the list.
+- **After Stop** the microphone is released, the samples are cleared, and a window still with the recogniser is discarded when it returns. The last list stays on screen under "Heard before listening stopped", so its links can be followed. No audio is kept.
+- **Screen readers.** The list is not a live region. The status line says "Heard: <name>." once for each species, the first time it appears in a listening session.
+- Listening needs audio worklets (raw samples). A browser that can only record with MediaRecorder is told to record a clip instead.
+- Samples arrive at the device's rate and each window is resampled to 48 kHz with an `OfflineAudioContext`, as a recorded clip is.
+- `test/identify-browser.test.js` replaces `getUserMedia` with two recordings played together (Ring-necked Dove and Fiery-necked Nightjar) and checks, in Chromium and WebKit, that both are listed at once, that rows keep their order, that they drop off after silence, that a species is announced once, and that Stop and a hidden page end it. `IDENTIFY_CLIP_2` is the second recording (default `data/audio/files/XC662460.mp3`). The reference clip for Black-collared Barbet is no good for this: the model hears it as White-browed Scrub Robin. `test/offline-identify-browser.test.js` listens with the network off.
+- Not measured: any real phone. In particular battery use and heat, whether the wake lock holds in the installed app on iOS, how loud a reference call has to be before pausing matters, and how the 0.25 cut-off behaves on single windows in the field (a clip averages its three best windows; a live window stands alone, so expect more false names than from a clip).
 
 ## Identify by photo (issue 151)
 

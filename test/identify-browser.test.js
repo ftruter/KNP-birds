@@ -1,5 +1,5 @@
 import assert from 'node:assert/strict'
-import { access } from 'node:fs/promises'
+import { access, readFile } from 'node:fs/promises'
 import path from 'node:path'
 import { test, before, after } from 'node:test'
 import { fileURLToPath } from 'node:url'
@@ -17,6 +17,13 @@ const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..')
 const modelPath = process.env.IDENTIFY_MODEL || DEFAULT_MODEL
 const clipPath =
   process.env.IDENTIFY_CLIP || path.join(root, 'data/audio/files/XC1149018.mp3')
+// Listening is fed two recordings at once, as the microphone:
+//   IDENTIFY_CLIP_2  a Fiery-necked Nightjar recording (default: xeno-canto
+//                    XC662460, from the same script)
+const secondClipPath =
+  process.env.IDENTIFY_CLIP_2 ||
+  path.join(root, 'data/audio/files/XC662460.mp3')
+const SECOND = 'caprimulgus-pectoralis'
 const EXPECTED = {
   name: 'Cape Turtle (Ring-necked) Dove',
   slug: 'streptopelia-capicola',
@@ -32,6 +39,11 @@ const missing = [
   (await exists(clipPath)) ? null : `no recording at ${clipPath}`,
 ].filter(Boolean)
 const skip = missing.length ? missing.join('; ') : false
+const skipListening =
+  skip ||
+  ((await exists(secondClipPath))
+    ? false
+    : `no second recording at ${secondClipPath}`)
 
 let site
 
@@ -350,3 +362,259 @@ test(
     }
   },
 )
+
+/**
+ * Replaces the microphone with the two recordings, looped and played
+ * together. `window.__mic.gain` mutes them; `window.__mic.stream` is what the
+ * page was given.
+ */
+const fakeMicrophone = async (context, page) => {
+  const clips = {
+    first: await readFile(clipPath),
+    second: await readFile(secondClipPath),
+  }
+  await page.route(`${site.origin}/test-clip/*`, (route) =>
+    route.fulfill({
+      contentType: 'audio/mpeg',
+      body: clips[new URL(route.request().url()).pathname.split('/').pop()],
+    }),
+  )
+  await context.addInitScript(() => {
+    const mic = { gain: null, stream: null }
+    window.__mic = mic
+    // On the prototype: WebKit does not keep a property that is set on
+    // navigator.mediaDevices itself.
+    window.MediaDevices.prototype.getUserMedia = async () => {
+      const Context = window.AudioContext || window.webkitAudioContext
+      const audio = new Context()
+      const out = audio.createMediaStreamDestination()
+      mic.gain = audio.createGain()
+      // Half each, so the two together do not clip.
+      mic.gain.gain.value = 0.5
+      mic.gain.connect(out)
+      for (const name of ['first', 'second']) {
+        const bytes = await (await fetch(`/test-clip/${name}`)).arrayBuffer()
+        const source = audio.createBufferSource()
+        source.buffer = await new Promise((resolve, reject) =>
+          audio.decodeAudioData(bytes, resolve, reject),
+        )
+        source.loop = true
+        source.connect(mic.gain)
+        source.start()
+      }
+      await audio.resume()
+      mic.stream = out.stream
+      return out.stream
+    }
+  })
+}
+
+const listed = (page) =>
+  page.evaluate(() =>
+    [...document.querySelectorAll('#identify-list > li h3 a')].map((link) =>
+      link.getAttribute('href').replace('/species/', ''),
+    ),
+  )
+
+const listensLive = async (browser) => {
+  const { context, page, problems } = await open(browser)
+  try {
+    await fakeMicrophone(context, page)
+    await ready(page)
+    await page.locator('#identify-download').click()
+    await page
+      .locator('#identify-capture')
+      .waitFor({ state: 'visible', timeout: 120000 })
+    // Everything the status line says from here on.
+    await page.evaluate(() => {
+      window.__said = []
+      const status = document.querySelector('#identify-status')
+      new MutationObserver(() =>
+        window.__said.push(status.textContent),
+      ).observe(status, { childList: true, characterData: true, subtree: true })
+    })
+
+    const listen = page.locator('#identify-listen')
+    const stop = page.locator('#identify-listen-stop')
+    await listen.click()
+    await stop.waitFor({ state: 'visible' })
+    assert.equal(await listen.isVisible(), false)
+    assert.equal(await page.locator('#identify-record').isVisible(), false)
+    assert.equal(await page.locator('#identify-file').isDisabled(), true)
+    assert.equal(await page.locator('#identify-level').isVisible(), true)
+    assert.equal(
+      await page.locator('#identify-results-heading').textContent(),
+      'Heard in the last 10 seconds',
+    )
+
+    // Both birds are calling at once, and both are listed at once.
+    await page.waitForFunction(
+      (slugs) =>
+        slugs.every((slug) =>
+          document.querySelector(
+            `#identify-list > li h3 a[href="/species/${slug}"]`,
+          ),
+        ),
+      [EXPECTED.slug, SECOND],
+      { timeout: 60000 },
+    )
+    const order = await listed(page)
+    const row = page.locator('#identify-list > li', {
+      has: page.locator(`a[href="/species/${EXPECTED.slug}"]`),
+    })
+    assert.match(
+      await row.locator('.identify-verdict').textContent(),
+      /^(Likely|Possible)/,
+    )
+    assert.match(
+      await row.locator('audio').getAttribute('aria-label'),
+      /^Reference call of /,
+    )
+    assert.match(
+      await page.locator('#identify-summary').textContent(),
+      /^\d+ species heard in the last 10 seconds\. No result is certain/,
+    )
+    // The list is not a live region: it changes every second.
+    assert.equal(
+      await page
+        .locator('#identify-list')
+        .evaluate((list) => list.closest('[aria-live], [role="status"]')),
+      null,
+    )
+
+    // While they keep calling, rows that are listed keep their order.
+    await page.waitForTimeout(4000)
+    const later = await listed(page)
+    assert.deepEqual(
+      later.filter((slug) => order.includes(slug)),
+      order.filter((slug) => later.includes(slug)),
+    )
+
+    // A reference call that plays pauses listening, so the page does not
+    // hear itself, and the list is as it was when listening carries on.
+    await page.evaluate(() => {
+      window.__mark = window.__said.length
+      document
+        .querySelector('#identify-list audio')
+        .dispatchEvent(new Event('play'))
+    })
+    await page.waitForFunction(() =>
+      window.__said
+        .slice(window.__mark)
+        .some((text) => /^Listening is paused while /.test(text)),
+    )
+    await page.waitForFunction(() =>
+      window.__said.slice(window.__mark).includes('Listening.'),
+    )
+    assert.deepEqual(await listed(page), later)
+
+    // Silence: a species stays for 10 seconds after it was last heard, then
+    // goes. The last window with sound in it ends up to 3 seconds from now.
+    await page.evaluate(() => {
+      window.__mic.gain.gain.value = 0
+    })
+    await page.waitForTimeout(6000)
+    assert.ok((await listed(page)).includes(EXPECTED.slug), 'dropped early')
+    await page.waitForFunction(
+      () => document.querySelector('#identify-list').children.length === 0,
+      null,
+      { timeout: 20000 },
+    )
+    assert.equal(await page.locator('#identify-list').isVisible(), false)
+    assert.equal(
+      await page.locator('#identify-summary').textContent(),
+      'Nothing recognised in the last 10 seconds.',
+    )
+
+    // It calls again and is listed again, but is announced only once.
+    await page.evaluate(() => {
+      window.__mic.gain.gain.value = 0.5
+    })
+    await page
+      .locator(`#identify-list a[href="/species/${EXPECTED.slug}"]`)
+      .waitFor({ timeout: 30000 })
+    const said = await page.evaluate(() => window.__said)
+    assert.equal(
+      said.filter(
+        (text) => /^Heard: /.test(text) && text.includes(EXPECTED.name),
+      ).length,
+      1,
+      JSON.stringify(said),
+    )
+    assert.ok(
+      said.every((text) =>
+        /^(Listening( is paused while .*)?\.|Heard: )/.test(text),
+      ),
+      JSON.stringify(said),
+    )
+
+    // Stop: the microphone is released and nothing more is analysed.
+    await stop.click()
+    await listen.waitFor({ state: 'visible' })
+    await page.waitForFunction(
+      () =>
+        document.querySelector('#identify-status').textContent ===
+        'Stopped listening.',
+    )
+    assert.equal(await stop.isVisible(), false)
+    assert.equal(await page.locator('#identify-record').isEnabled(), true)
+    assert.equal(await page.locator('#identify-file').isEnabled(), true)
+    assert.equal(
+      await page.evaluate(() =>
+        window.__mic.stream
+          .getTracks()
+          .every((track) => track.readyState === 'ended'),
+      ),
+      true,
+    )
+    assert.equal(
+      await page.locator('#identify-results-heading').textContent(),
+      'Heard before listening stopped',
+    )
+    const timing = await page.locator('#identify-timing').textContent()
+    assert.match(
+      timing,
+      /^Recognised in \d+(\.\d)? m?s on this device: \d+ windows of 3 seconds, typically \d+(\.\d)? m?s each\. Runtime: (relaxed SIMD|compatibility) build\.$/,
+    )
+    const kept = await listed(page)
+    await page.waitForTimeout(2500)
+    assert.deepEqual(await listed(page), kept)
+    assert.equal(await page.locator('#identify-timing').textContent(), timing)
+
+    // Listening again starts from an empty list, and stops when the page
+    // is hidden.
+    await listen.click()
+    await stop.waitFor({ state: 'visible' })
+    assert.deepEqual(await listed(page), [])
+    await page.evaluate(() => {
+      Object.defineProperty(document, 'hidden', { get: () => true })
+      document.dispatchEvent(new Event('visibilitychange'))
+    })
+    await page.waitForFunction(
+      () =>
+        document.querySelector('#identify-status').textContent ===
+        'Listening stopped because this page was hidden.',
+    )
+    assert.equal(await listen.isVisible(), true)
+    assert.deepEqual(problems, [])
+  } finally {
+    await context.close()
+  }
+}
+
+for (const [label, type] of [
+  ['chromium', chromium],
+  ['webkit', webkit],
+])
+  test(
+    `${label} listens and lists two birds calling at once`,
+    { skip: skipListening, timeout: 300000 },
+    async () => {
+      const browser = await type.launch()
+      try {
+        await listensLive(browser)
+      } finally {
+        await browser.close()
+      }
+    },
+  )

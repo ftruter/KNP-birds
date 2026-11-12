@@ -68,6 +68,21 @@ for (const [label, type] of [
         })
         await context.addInitScript(() => {
           Object.defineProperty(navigator, 'standalone', { get: () => true })
+          // Silence in place of the microphone: a tone would be heard as
+          // some bird, whose photograph is not on the device in this test.
+          window.MediaDevices.prototype.getUserMedia = async () => {
+            const Context = window.AudioContext || window.webkitAudioContext
+            const audio = new Context()
+            const out = audio.createMediaStreamDestination()
+            const quiet = audio.createGain()
+            quiet.gain.value = 0
+            const tone = audio.createOscillator()
+            tone.connect(quiet)
+            quiet.connect(out)
+            tone.start()
+            await audio.resume()
+            return out.stream
+          }
         })
         const page = await context.newPage()
         const problems = []
@@ -103,6 +118,26 @@ for (const [label, type] of [
         )
         assert.equal(await page.locator('#identify-consent').isHidden(), true)
         assert.equal(await page.locator('#identify-capture').isVisible(), true)
+
+        // Listening works with the network off too: a window of silence is
+        // analysed on the device and nothing is heard in it.
+        await page.locator('#identify-listen').click()
+        await page
+          .locator('#identify-listen-stop')
+          .waitFor({ state: 'visible' })
+        await page.waitForFunction(
+          () =>
+            document.querySelector('#identify-summary').textContent ===
+            'Nothing recognised in the last 10 seconds.',
+          null,
+          { timeout: 30000 },
+        )
+        await page.locator('#identify-listen-stop').click()
+        await page.waitForFunction(
+          () =>
+            document.querySelector('#identify-status').textContent ===
+            'Stopped listening.',
+        )
         assert.deepEqual(problems, [])
       } finally {
         await browser.close()
