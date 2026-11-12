@@ -7,7 +7,7 @@ Model files, runtimes, audio and the Python environment are gitignored. To rebui
 
 ```bash
 cd spike/identify-sound
-npm install                       # runtimes; npm, so the site's pnpm lockfile is not touched
+pnpm install                       # runtimes; this folder has its own pnpm workspace file and lockfile
 # Official model files, from https://zenodo.org/records/15050749
 #   BirdNET_v2.4_tflite.zip       -> models/BirdNET_v2.4_tflite/
 #   BirdNET_v2.4_tflite_fp16.zip  -> models/BirdNET_v2.4_tflite_fp16/

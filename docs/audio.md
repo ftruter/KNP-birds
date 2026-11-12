@@ -6,7 +6,7 @@ Species files keep the field notes. The recording played on a call slot comes fr
 node scripts/process-recordings.mjs
 ```
 
-`npm run audio` is the same command. It reads every species that already has a `calls` array. It does not invent a call slot, a grade, a recordist, a place, or a licence.
+`pnpm run audio` is the same command. It reads every species that already has a `calls` array. It does not invent a call slot, a grade, a recordist, a place, or a licence.
 
 ## Where the metadata comes from
 
@@ -36,6 +36,6 @@ The cleaned mp3 is uploaded to the existing R2 bucket `knp-birds-images`. That u
 Wind noise reduced (high-pass filter and noise reduction)
 ```
 
-That note is shown on the species HTML, Markdown, and JSON pages, and on the credits page. Local downloads under `data/audio/files/` are gitignored. The script does not publish KV and does not deploy the Worker. `npm run kv:dry-run` refreshes `data/index/credits.json` from the overlay.
+That note is shown on the species HTML, Markdown, and JSON pages, and on the credits page. Local downloads under `data/audio/files/` are gitignored. The script does not publish KV and does not deploy the Worker. `pnpm run kv:dry-run` refreshes `data/index/credits.json` from the overlay.
 
 `data/audio/report.json` is the run log: swapped, added, kept, cleaned, and slots that still have no usable recording.

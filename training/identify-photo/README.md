@@ -3,9 +3,9 @@
 This folder builds the model behind `/identify/photo`. None of it is part of the Worker bundle. It runs on one
 machine with Python and writes two things the site uses:
 
-- `data/models/photo-model.tflite`, the model file (gitignored; `npm run models:publish` uploads it to R2);
+- `data/models/photo-model.tflite`, the model file (gitignored; `pnpm run models:publish` uploads it to R2);
 - `data/identify/photo-model.json`, the class list in model order, the photo counts and the test results
-  (committed; `npm run seed` turns it into `data/index/identify-photo.json`).
+  (committed; `pnpm run seed` turns it into `data/index/identify-photo.json`).
 
 The model card is `docs/identify-photo-model.md`. The Phase 0 spike that led here is in `spike/identify-photo/`.
 
@@ -42,9 +42,9 @@ Then, in the repository root:
 
 1. Copy the `version`, `inputSize`, `bytes` and `sha256` that step 9 prints into `PHOTO_MODEL` in
    `src/identify.js`. `test/identify-photo.test.js` fails if they differ from `photo-model.json`.
-2. `node scripts/seed.mjs --write` and `npm test`. With the model on disk, `test/identify-photo-browser.test.js`
+2. `node scripts/seed.mjs --write` and `pnpm test`. With the model on disk, `test/identify-photo-browser.test.js`
    runs it in Chromium and WebKit on a test photo.
-3. `npm run models:publish -- --only photo`, before deploying a Worker that names the new version.
+3. `pnpm run models:publish -- --only photo`, before deploying a Worker that names the new version.
 
 Steps 1 and 2 call the iNaturalist API at one request a second and take under an hour; answers are cached in
 `cache/`. Nothing here costs money.
@@ -69,7 +69,7 @@ on purpose, and say so in the model card: results on a new test set cannot be co
 
 The model returns exactly the species it was trained on. A species added to the guide afterwards is listed on
 the page as not covered until the model is retrained; `describe.py` refuses to describe a model whose class
-list no longer matches `data/species/`. A species removed from the guide stops `npm run seed`, because the
+list no longer matches `data/species/`. A species removed from the guide stops `pnpm run seed`, because the
 model would still return it: retrain first.
 
 ## Files

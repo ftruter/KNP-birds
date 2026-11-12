@@ -76,26 +76,26 @@ More index keys will be added as needed.
 Workers Builds on `main` should use:
 
 - Build command: none. Workers Builds sees `pnpm-lock.yaml` and runs `pnpm install --frozen-lockfile` itself, with pnpm 9. `pnpm-workspace.yaml` lists the root as its one package because pnpm 9 rejects a workspace file without a `packages` list.
-- Deploy command: `npm run deploy`
+- Deploy command: `pnpm run deploy`
 
-`npm run deploy` fails the build if either step fails:
+`pnpm run deploy` fails the build if either step fails:
 
 1. Regenerates derived fields from `data/` and uploads them to the `BIRDS_KV` namespace (`wrangler kv bulk put --remote --binding BIRDS_KV`). Re-running writes the same keys again. Keys removed from `data/` are deleted only when they start with `species/`, `family/`, `index/`, or `vocab/`. Any other key in the namespace is left alone.
 2. Deploys the Worker with `DATA_VERSION` (a SHA-256 of that payload) and `DATA_PUBLISHED_AT` (the time the upload finished).
 
 KV is written before the Worker so the new version renders the data it advertises.
 
-`/identify/sound` also needs its model and runtime in the `knp-birds-images` bucket. That is a separate, one-off step per model version, not part of the build: `npm run models:publish` (see `scripts/publish-models.mjs`; `npm run models:dry-run` lists the files without a token). It needs a token that can write to that bucket. Until it has run, the page loads but cannot download the recogniser.
+`/identify/sound` also needs its model and runtime in the `knp-birds-images` bucket. That is a separate, one-off step per model version, not part of the build: `pnpm run models:publish` (see `scripts/publish-models.mjs`; `pnpm run models:dry-run` lists the files without a token). It needs a token that can write to that bucket. Until it has run, the page loads but cannot download the recogniser.
 
-`/identify/photo` works the same way with its own model, which this project trains itself: see [training/identify-photo/README.md](training/identify-photo/README.md) and the model card, [docs/identify-photo-model.md](docs/identify-photo-model.md). `npm run models:publish -- --only photo` uploads just that model. It reuses the sound page's runtime, so that must be in the bucket too.
+`/identify/photo` works the same way with its own model, which this project trains itself: see [training/identify-photo/README.md](training/identify-photo/README.md) and the model card, [docs/identify-photo-model.md](docs/identify-photo-model.md). `pnpm run models:publish -- --only photo` uploads just that model. It reuses the sound page's runtime, so that must be in the bucket too.
 
 Check the upload locally, without a Cloudflare token:
 
 ```sh
-npm run kv:dry-run
+pnpm run kv:dry-run
 ```
 
-That prints the keys and byte sizes. It still refreshes derived files under `data/`. It does not list or change the remote namespace, so it cannot show deletions. `npm run kv:publish` uploads KV and stops; it does not deploy the Worker, so it does not bust the edge cache. Production deploys go through `npm run deploy`.
+That prints the keys and byte sizes. It still refreshes derived files under `data/`. It does not list or change the remote namespace, so it cannot show deletions. `pnpm run kv:publish` uploads KV and stops; it does not deploy the Worker, so it does not bust the edge cache. Production deploys go through `pnpm run deploy`.
 
 The build token, supplied as `CLOUDFLARE_API_TOKEN`, needs:
 
@@ -136,20 +136,20 @@ const iconicMarkdown = (plates) =>
 ${plates.map(renderPlate).join('\n\n')}`
 ```
 
-`npm run format` runs Prettier (`semi: false`, `singleQuote: true`). `npm run lint` runs ESLint with `arrow-body-style`, `prefer-arrow-callback`, `func-style` set to expression (arrow functions allowed), `no-else-return`, `prefer-const`, and `quotes` aligned with Prettier.
+`pnpm run format` runs Prettier (`semi: false`, `singleQuote: true`). `pnpm run lint` runs ESLint with `arrow-body-style`, `prefer-arrow-callback`, `func-style` set to expression (arrow functions allowed), `no-else-return`, `prefer-const`, and `quotes` aligned with Prettier.
 
 ## AI Models
 
 **Download it**
 
 ```bash
-pnpm run models:download
+ppnpm run models:download
 ```
 
 ***Publish it***
 
 ```bash
-pnpm run models:publish
+ppnpm run models:publish
 ```
 
 ## Contributing
