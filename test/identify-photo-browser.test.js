@@ -1,5 +1,5 @@
 import assert from 'node:assert/strict'
-import { access } from 'node:fs/promises'
+import { access, readFile } from 'node:fs/promises'
 import path from 'node:path'
 import { test, before, after } from 'node:test'
 import { fileURLToPath } from 'node:url'
@@ -22,6 +22,9 @@ import { startBundledSite } from './bundle-site.js'
 //                         PHOTO_DETECTOR.source in src/identify.js says
 //                         where to download it)
 // The photo is in the repository: a CC0 picture, see its README.
+// Live mode is given the same photo as its camera: getUserMedia is replaced
+// with a canvas stream that shows the photo, shifting a few pixels from
+// frame to frame, or a plain colour with no bird in it.
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..')
 const modelPath = process.env.IDENTIFY_PHOTO_MODEL || DEFAULT_PHOTO_MODEL
 const photoPath = path.join(
@@ -460,3 +463,290 @@ test(
     }
   },
 )
+
+/**
+ * Replaces the camera with a stream of the test photo. `window.__camera`:
+ * `blank` shows a plain colour instead, `stream` is what the page was given
+ * and `asked` is what it asked for.
+ */
+const fakeCamera = async (context, page) => {
+  const photo = await readFile(photoPath)
+  await page.route(`${site.origin}/test-frame`, (route) =>
+    route.fulfill({ contentType: 'image/jpeg', body: photo }),
+  )
+  await context.addInitScript(() => {
+    const camera = { blank: false, stream: null, asked: null }
+    window.__camera = camera
+    // On the prototype: WebKit does not keep a property that is set on
+    // navigator.mediaDevices itself.
+    window.MediaDevices.prototype.getUserMedia = async (constraints) => {
+      camera.asked = constraints
+      const image = new Image()
+      image.src = '/test-frame'
+      await image.decode()
+      const canvas = document.createElement('canvas')
+      canvas.width = 500
+      canvas.height = 375
+      const context = canvas.getContext('2d')
+      let shift = 0
+      const paint = () => {
+        shift = (shift + 1) % 8
+        context.fillStyle = '#7a9'
+        context.fillRect(0, 0, 500, 375)
+        if (!camera.blank) context.drawImage(image, shift - 4, 0)
+      }
+      paint()
+      setInterval(paint, 50)
+      camera.stream = canvas.captureStream(20)
+      return camera.stream
+    }
+  })
+}
+
+const livesFromCamera = async (browser) => {
+  const { context, page, problems, elsewhere } = await open(browser)
+  try {
+    await fakeCamera(context, page)
+    const uploads = []
+    page.on('request', (request) => {
+      if (request.method() !== 'GET') uploads.push(request.url())
+    })
+    await page.goto(`${site.origin}/identify/photo`, { waitUntil: 'load' })
+    // Every line the status region is given, for the announcements.
+    await page.evaluate(() => {
+      window.__said = []
+      const status = document.querySelector('#identify-status')
+      new MutationObserver(() =>
+        window.__said.push(status.textContent),
+      ).observe(status, { childList: true, characterData: true, subtree: true })
+    })
+    // Live is not offered before the recogniser is on the device.
+    const start = page.locator('#identify-live-start')
+    assert.equal(await start.isVisible(), false)
+    await page.locator('#identify-download').click()
+    await start.waitFor({ state: 'visible', timeout: 120000 })
+    assert.equal(await page.locator('#identify-live').isVisible(), false)
+    assert.equal(await page.evaluate(() => window.__camera.asked), null)
+
+    const status = page.locator('#identify-status')
+    const name = page.locator('#identify-live-name')
+    const where = page.locator('#identify-live-view')
+    const frames = () =>
+      page.evaluate(() =>
+        Number(document.querySelector('#identify').dataset.liveFrames ?? -1),
+      )
+    const more = async (count) => {
+      const from = await frames()
+      await page.waitForFunction(
+        (target) =>
+          Number(document.querySelector('#identify').dataset.liveFrames) >=
+          target,
+        from + count,
+        { timeout: 120000 },
+      )
+    }
+    /** Whether anything is drawn over the video. */
+    const outlined = () =>
+      page.locator('#identify-live-overlay').evaluate((canvas) => {
+        const { data } = canvas
+          .getContext('2d')
+          .getImageData(0, 0, canvas.width, canvas.height)
+        return data.some((value, index) => index % 4 === 3 && value > 0)
+      })
+    const cameraOff = () =>
+      page.evaluate(
+        () =>
+          window.__camera.stream
+            .getTracks()
+            .every((track) => track.readyState === 'ended') &&
+          document.querySelector('#identify-live-video').srcObject === null,
+      )
+
+    // Start: the camera is asked for, the back one, with no sound.
+    await start.click()
+    await page.locator('#identify-live').waitFor({ state: 'visible' })
+    const asked = await page.evaluate(() => window.__camera.asked)
+    assert.equal(asked.audio, false)
+    assert.deepEqual(asked.video.facingMode, { ideal: 'environment' })
+    assert.equal(await page.locator('#identify-choices').isVisible(), false)
+    assert.equal(
+      await page.evaluate(() => document.activeElement?.id),
+      'identify-live-hold',
+    )
+    // The stand-in camera has no zoom, and the page says so.
+    assert.equal(
+      await page.locator('#identify-live-zoom-none').isVisible(),
+      true,
+    )
+    assert.equal(
+      await page.locator('#identify-live-zoom-control').isVisible(),
+      false,
+    )
+
+    // The bird in view is named, with its link, and outlined on the video.
+    const link = name.locator('a')
+    await link.waitFor({ state: 'visible', timeout: 120000 })
+    assert.equal(await link.textContent(), EXPECTED.name)
+    assert.equal(await link.getAttribute('href'), `/species/${EXPECTED.slug}`)
+    assert.match(await name.textContent(), /\((likely|possible)\)$/)
+    assert.equal(await where.textContent(), 'A bird is in view.')
+    assert.equal(await outlined(), true)
+    assert.deepEqual(
+      await page
+        .locator('#identify-live-video')
+        .evaluate((video) => [video.videoWidth, video.videoHeight]),
+      [500, 375],
+    )
+    // The outline's canvas lies exactly over the video, which fits the phone.
+    const picture = await page.locator('#identify-live-video').boundingBox()
+    const over = await page.locator('#identify-live-overlay').boundingBox()
+    for (const side of ['x', 'y', 'width', 'height'])
+      assert.ok(
+        Math.abs(picture[side] - over[side]) <= 1,
+        `the outline is off the video: ${JSON.stringify([picture, over])}`,
+      )
+    assert.ok(picture.x >= 0 && picture.x + picture.width <= 390)
+    // The name is not a live region. The change of species is announced
+    // once, however many frames follow, and the link is not rebuilt.
+    assert.equal(await name.getAttribute('aria-live'), null)
+    await link.evaluate((node) => {
+      node.dataset.kept = 'yes'
+    })
+    await more(8)
+    assert.equal(await link.getAttribute('data-kept'), 'yes')
+    const heard = () =>
+      page.evaluate(
+        (text) => window.__said.filter((line) => line === text).length,
+        `Seen: ${EXPECTED.name}.`,
+      )
+    assert.equal(await heard(), 1)
+
+    // The bird leaves: the outline goes, the page says so, the name stays.
+    await page.evaluate(() => {
+      window.__camera.blank = true
+    })
+    await page.waitForFunction(
+      () =>
+        document.querySelector('#identify-live-view').textContent ===
+        'No bird in view.',
+      null,
+      { timeout: 120000 },
+    )
+    assert.equal(await outlined(), false)
+    assert.equal(await link.textContent(), EXPECTED.name)
+    // It comes back, and is not announced a second time.
+    await page.evaluate(() => {
+      window.__camera.blank = false
+    })
+    await page.waitForFunction(
+      () =>
+        document.querySelector('#identify-live-view').textContent ===
+        'A bird is in view.',
+      null,
+      { timeout: 120000 },
+    )
+    await more(6)
+    assert.equal(await heard(), 1)
+
+    // Hold: the frame is kept and identified as a photo is, and the camera
+    // is let go.
+    await page.locator('#identify-live-hold').click()
+    await page
+      .locator('#identify-results')
+      .waitFor({ state: 'visible', timeout: 120000 })
+    assert.equal(await page.locator('#identify-live').isVisible(), false)
+    assert.equal(await cameraOff(), true)
+    assert.equal(
+      await page.locator('#identify-list > li h3 a').first().textContent(),
+      EXPECTED.name,
+    )
+    assert.equal(await page.locator('#identify-found').isVisible(), true)
+    assert.equal(await page.locator('#identify-recrop').isVisible(), true)
+    const pace = await page.locator('#identify-live-timing').textContent()
+    assert.match(
+      pace,
+      /^Live analysed \d+(\.\d)? frames a second on this device: finding the bird typically took \d+(\.\d)? m?s, naming it \d+(\.\d)? m?s\. Runtime: (relaxed SIMD|compatibility) build\.$/,
+    )
+    console.log(`${browser.browserType().name()}: ${pace}`)
+    // The held frame can be cropped again, like any photo.
+    await page.locator('#identify-recrop').click()
+    await page.locator('#identify-crop').waitFor({ state: 'visible' })
+    assert.deepEqual(
+      await page
+        .locator('#identify-crop')
+        .evaluate((canvas) => [canvas.width, canvas.height]),
+      [500, 375],
+    )
+    await page.locator('#identify-cancel').click()
+
+    // Live again, then the page is hidden: it stops, and analyses no more.
+    await start.click()
+    await link.waitFor({ state: 'visible', timeout: 120000 })
+    assert.equal(await page.locator('#identify-results').isVisible(), false)
+    await page.evaluate(() => {
+      Object.defineProperty(document, 'hidden', {
+        get: () => true,
+        configurable: true,
+      })
+      document.dispatchEvent(new Event('visibilitychange'))
+    })
+    await page.waitForFunction(
+      () =>
+        document.querySelector('#identify-status').textContent ===
+        'Live stopped because this page was hidden.',
+    )
+    assert.equal(await cameraOff(), true)
+    assert.equal(await page.locator('#identify-live').isVisible(), false)
+    assert.equal(await frames(), -1)
+    await page.evaluate(() => {
+      delete document.hidden
+    })
+
+    // Start and Stop.
+    await start.click()
+    await page.locator('#identify-live').waitFor({ state: 'visible' })
+    await more(2)
+    await page.locator('#identify-live-stop').click()
+    await page.waitForFunction(
+      () =>
+        document.querySelector('#identify-status').textContent ===
+        'Live stopped.',
+    )
+    assert.equal(await status.textContent(), 'Live stopped.')
+    assert.equal(await cameraOff(), true)
+    assert.equal(await start.isVisible(), true)
+    assert.equal(
+      await page.evaluate(() => document.activeElement?.id),
+      'identify-live-start',
+    )
+    // A photo still works afterwards.
+    await page.locator('#identify-file').setInputFiles(photoPath)
+    await page
+      .locator('#identify-results')
+      .waitFor({ state: 'visible', timeout: 120000 })
+
+    // No frame left the device.
+    assert.deepEqual(uploads, [])
+    assert.deepEqual(elsewhere, [])
+    assert.deepEqual(problems, [])
+  } finally {
+    await context.close()
+  }
+}
+
+for (const [label, type] of [
+  ['chromium', chromium],
+  ['webkit', webkit],
+])
+  test(
+    `${label} names the bird in the camera's view, live`,
+    { skip, timeout: 300000 },
+    async () => {
+      const browser = await type.launch()
+      try {
+        await livesFromCamera(browser)
+      } finally {
+        await browser.close()
+      }
+    },
+  )

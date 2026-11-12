@@ -23,7 +23,7 @@ import { pageMd } from './markdown.js'
 
 const TITLE = 'Identify a bird from a photo'
 const INTRO =
-  'Take a photo of a bird, or choose one you took earlier. This page finds the bird, crops the photo to it, and lists the most likely Kruger species. When it cannot tell the species, it names the family. Each result links to the species page and shows the guide’s photograph beside yours.'
+  'Take a photo of a bird, choose one you took earlier, or point the camera at a bird in Live mode. This page finds the bird, crops the photo to it, and lists the most likely Kruger species. When it cannot tell the species, it names the family. Each result links to the species page and shows the guide’s photograph beside yours.'
 const DOWNLOAD_NOTE = `The recogniser runs on this device, so it is downloaded once: ${photoDownloadSummary()}. It is then kept on this device. After that, recognition needs no signal for as long as this page stays open.`
 // Shown while the device has no connection. The photo picker cannot hand
 // over a photo whose original is only in the cloud, and it says nothing.
@@ -52,6 +52,13 @@ const detectorData = () => ({
   margin: PHOTO_DETECTOR.margin,
   another: PHOTO_DETECTOR.another,
 })
+// Live mode: the camera in the page (issue 181).
+const LIVE_NOTE =
+  'Live shows the camera on this page and names the bird in view as you point. It uses more battery than a photo, and it cannot zoom as far as your phone’s camera app: for a distant bird, take a photo. No picture leaves this device.'
+const LIVE_HELP =
+  'A name appears once it has led for a few frames, and stays until another takes over. Hold keeps the picture that is on screen and lists every likely species, as for a photo. Live stops by itself when this page is hidden, and after a minute with no bird in view.'
+const ZOOM_NONE =
+  'This browser gives the page no zoom for the camera. For a distant bird, choose Stop and take a photo: the phone’s camera app can zoom.'
 const NO_JS_NOTE = 'Recognition needs JavaScript, which is off or blocked.'
 const CROP_HELP =
   'Drag inside the square to move it over the bird. Drag an edge or a corner to resize it, or pinch; it stays square. With a keyboard, focus the photo, move the square with the arrow keys and resize it with plus and minus.'
@@ -84,6 +91,7 @@ const reading = (doc) =>
     'A bird that is not usually in Kruger in the current month is ranked lower and marked “Not usually present this month”. It is still shown.',
     'When no single species stands out but one family does, the page names the family and lists its closest species. When nothing stands out, it says “No confident match”.',
     'The page looks for a bird in your photo and crops to the largest one it finds. It can pick the wrong bird, or something that is not a bird; your cropped photo is shown beside every result so that you can see what was used, and “Change the crop” lets you move the square. Small and distant birds are the ones it most often misses.',
+    'Live mode shows the camera on the page, outlines the bird it finds and names it as you point. The name is taken from the last few frames together, so it lags a moment and does not flicker; it stays on screen after the bird has gone, and the line under it says whether a bird is in view. Treat it as a first guess, and choose Hold for the full list.',
     'The recogniser always answers with a bird from this guide. It cannot tell that a photo is not a bird, or that it shows a bird from outside the Kruger list, so an answer that looks sure can still be wrong.',
     'It does not tell male from female or young from adult. A species is one answer.',
     evaluationSentence(doc?.evaluation),
@@ -139,12 +147,35 @@ export const renderIdentifyPhotoHtml = ({ origin, doc }) => {
 </div>
 <progress id="identify-progress" class="identify-progress" max="1" value="0" aria-label="Progress" hidden></progress>
 <div id="identify-capture" hidden>
+<div id="identify-choices">
 <h2>Take or choose a photo</h2>
 <div class="identify-choices">
 <label class="identify-file" for="identify-camera">Take a photo <input type="file" id="identify-camera" accept="image/*" capture="environment"></label>
 <label class="identify-file identify-second" for="identify-file">Choose a photo <input type="file" id="identify-file" accept="image/*"></label>
 <p>${escapeHtml(TIPS)}</p>
 </div>
+<div id="identify-live-offer" class="identify-live-offer" hidden>
+<button type="button" id="identify-live-start" class="identify-button identify-quiet">Live: name birds as you point</button>
+<p>${escapeHtml(LIVE_NOTE)}</p>
+</div>
+</div>
+<div id="identify-live" class="identify-live" hidden>
+<h2>Live</h2>
+<div class="identify-live-frame">
+<video id="identify-live-video" class="identify-live-video" playsinline muted aria-label="The camera"></video>
+<canvas id="identify-live-overlay" class="identify-live-overlay" aria-hidden="true"></canvas>
+</div>
+<p id="identify-live-name" class="identify-live-name"></p>
+<p id="identify-live-view" class="identify-live-view"></p>
+<div class="identify-actions">
+<button type="button" id="identify-live-hold" class="identify-button">Hold</button>
+<button type="button" id="identify-live-stop" class="identify-button identify-quiet">Stop</button>
+</div>
+<p id="identify-live-zoom-control" class="identify-live-zoom" hidden><label for="identify-live-zoom">Zoom</label> <input type="range" id="identify-live-zoom"></p>
+<p id="identify-live-zoom-none" class="identify-note" hidden>${escapeHtml(ZOOM_NONE)}</p>
+<p>${escapeHtml(LIVE_HELP)}</p>
+</div>
+<p id="identify-live-timing" class="identify-timing" hidden></p>
 <p id="identify-offline" class="identify-note" hidden>${escapeHtml(OFFLINE_NOTE)}</p>
 <div id="identify-upgrade" class="identify-note" hidden>
 <p>${escapeHtml(UPGRADE_NOTE)}</p>
@@ -234,6 +265,7 @@ This is an interactive page for people. It needs a browser with JavaScript and W
 - ${DOWNLOAD_NOTE} The visitor is asked before the download starts.
 - The model is the ${PHOTO_MODEL_CREDIT.name} (version \`${inlineText(doc?.model?.version ?? PHOTO_MODEL.version)}\`): ${inlineText(doc?.model?.baseModel ?? 'a compact image classifier')} fine-tuned on ${Number(doc?.model?.trainingPhotos ?? 0).toLocaleString('en')} openly licensed, research-grade iNaturalist photographs. It runs with ${PHOTO_MODEL_CREDIT.runtime.name} as WebAssembly in a Web Worker. The model is served from this site, under \`${photoModelBase}\`.
 - A second, smaller model finds the bird: ${PHOTO_DETECTOR_CREDIT.name} (${PHOTO_DETECTOR_CREDIT.licence}, trained on COCO, weights unchanged, served from \`${photoDetectorBase}\`). The page takes the largest box it labels a bird with a score of at least ${PHOTO_DETECTOR.score}, widens it to a square with a margin, and shows the crop it used beside the results. The visitor can change the crop, or try another bird when several were found. When no bird is found, the visitor puts the square on the bird.
+- Live mode asks for the camera and shows it in the page. It takes a frame, finds the bird and scores it, then takes the next, at most ten frames a second. The name shown comes from the average of the last few frames. Frames are never stored or sent anywhere. This page alone allows the camera (\`Permissions-Policy: camera=(self)\`).
 - The square is shrunk to ${PHOTO_MODEL.inputSize} × ${PHOTO_MODEL.inputSize} pixels and scored once. The model returns one score per species; a family scores the sum of its species.
 - Only species in this guide can be returned.
 - [Model card](${MODEL_CARD_URL}) · [Training photographs, with photographer and licence](${TRAINING_MANIFEST_URL})

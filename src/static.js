@@ -103,7 +103,7 @@ ${origin}/identify/sound is an interactive page for people: it records or opens 
 
 ## Identify by photo
 
-${origin}/identify/photo is an interactive page for people: the visitor takes or chooses a photo, crops it to the bird, and the page names the most likely species or family, using a model trained for this guide that runs on the visitor's own device. Agents cannot run it. ${origin}/identify/photo.md describes it, and ${origin}/identify/photo.json lists \`covered\` (every species the model can return, with its class number and how many photos it was trained on), \`notInModel\`, and \`evaluation\` and \`families\` (how often it was right on photos it had not seen, overall and by family). That page allows WebAssembly and same-origin fetches, like the sound page, but not the microphone or the camera.
+${origin}/identify/photo is an interactive page for people: the visitor takes or chooses a photo, or points the camera at a bird in the page's Live mode, and the page finds the bird and names the most likely species or family, using a model trained for this guide that runs on the visitor's own device. Agents cannot run it. ${origin}/identify/photo.md describes it, and ${origin}/identify/photo.json lists \`covered\` (every species the model can return, with its class number and how many photos it was trained on), \`notInModel\`, and \`evaluation\` and \`families\` (how often it was right on photos it had not seen, overall and by family). That page allows WebAssembly and same-origin fetches, like the sound page, and it alone allows the camera, for Live mode. It does not allow the microphone.
 
 ## Start here
 

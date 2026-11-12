@@ -1318,6 +1318,17 @@ audio {
 .identify-crop-panel .identify-button { min-block-size: 2.75rem; padding: 0.4rem 0.9rem; font-size: 0.95rem; }
 .identify-crop-panel p { margin-block: 0.6rem 0; font-size: 0.95rem; line-height: 1.45; }
 .identify-quiet { background: transparent; color: var(--heading); }
+/* Live mode on the photo page: the camera, with the bird outlined on a canvas laid over it. */
+.identify-live-offer { margin-block-end: 1rem; }
+.identify-live-offer p { margin-block: 0.5rem 0; }
+.identify-live-frame { position: relative; inline-size: fit-content; max-inline-size: 100%; margin-block: 0.5rem; background: #000; }
+.identify-live-video { display: block; max-inline-size: 100%; max-block-size: 70vh; }
+.identify-live-overlay { position: absolute; inset: 0; inline-size: 100%; block-size: 100%; pointer-events: none; }
+.identify-live-name { margin-block: 0.5rem 0; font: 700 1.3rem var(--sans); min-block-size: 1.5em; }
+.identify-live-word { font-weight: 400; }
+.identify-live-view { margin-block: 0.2rem 0.6rem; font-family: var(--sans); color: var(--muted); min-block-size: 1.5em; }
+.identify-live-zoom { display: flex; gap: 0.6rem; align-items: center; font-family: var(--sans); }
+.identify-live-zoom input { flex: 1; max-inline-size: 22rem; }
 
 .identify-photo-result { grid-template-columns: 1fr; }
 @media (min-width: 34rem) {

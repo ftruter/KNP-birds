@@ -163,7 +163,7 @@ test('without javascript the page explains itself and links onward', async () =>
   )
 })
 
-test('wasm is allowed on this page only, and no camera or microphone', async () => {
+test('wasm and the camera are allowed on this page only, and no microphone', async () => {
   const fetch = await site()
   const page = await fetch('/identify/photo')
   assert.equal(page.headers.get('content-security-policy'), IDENTIFY_CSP)
@@ -171,10 +171,19 @@ test('wasm is allowed on this page only, and no camera or microphone', async () 
     IDENTIFY_CSP,
     `${PAGE_CSP} 'wasm-unsafe-eval'; worker-src 'self'`,
   )
-  // A file input opens the phone's own camera app, and the photo is drawn on
-  // a canvas, so neither the camera nor blob: images are allowed.
-  assert.equal(page.headers.get('permissions-policy'), PAGE_PERMISSIONS)
+  // Live mode shows the camera in the page, so this page alone allows it.
+  // Nothing else is widened: the picture is shown from a stream object and
+  // photos are drawn on a canvas, so no blob: address is allowed.
+  assert.equal(
+    page.headers.get('permissions-policy'),
+    'camera=(self), microphone=(), geolocation=()',
+  )
   assert.doesNotMatch(IDENTIFY_CSP, /blob:/)
+  // The sound page keeps the microphone and gains no camera.
+  assert.equal(
+    (await fetch('/identify/sound')).headers.get('permissions-policy'),
+    'camera=(), microphone=(self), geolocation=()',
+  )
 
   // The worker both pages share is governed by the policy on its own script.
   const worker = await fetch('/identify-worker.js')
@@ -845,5 +854,170 @@ test('the photo page says how long recognition took', () => {
   assert.equal(
     client.timingText({ runs: [40], total: 40, build: null }),
     'Recognised in 40 ms on this device.',
+  )
+})
+
+test('the page offers Live mode with Hold and Stop, hidden until the script shows it', async () => {
+  const fetch = await site()
+  const body = await (await fetch('/identify/photo')).text()
+  assert.match(
+    body,
+    /<div id="identify-live-offer" class="identify-live-offer" hidden>\n<button type="button" id="identify-live-start"/,
+  )
+  assert.match(body, /<div id="identify-live" class="identify-live" hidden>/)
+  // Inline, silent video: iOS plays anything else full screen.
+  assert.match(body, /<video id="identify-live-video"[^>]* playsinline muted /)
+  assert.match(body, /<button type="button" id="identify-live-hold"[^>]*>Hold</)
+  assert.match(body, /<button type="button" id="identify-live-stop"[^>]*>Stop</)
+  // The changing name is not a live region: only the status line is.
+  assert.match(
+    body,
+    /<p id="identify-live-name" class="identify-live-name"><\/p>/,
+  )
+  assert.equal(body.match(/aria-live=/g).length, 1)
+  // The page says that zoom is poor, and keeps "Take a photo".
+  assert.match(body, /cannot zoom as far as your phone’s camera app/)
+  assert.match(body, /id="identify-camera" accept="image\/\*" capture=/)
+  const markdown = await (await fetch('/identify/photo.md')).text()
+  assert.match(markdown, /Live mode asks for the camera/)
+})
+
+test('live mode names a bird once it has led, and keeps the name', () => {
+  const { createLive, liveNext, LIVE_RUN, LIVE_MISSES, LIVE_FRAMES } = client
+  const bird = (slug, en, label, family) => ({ slug, en, label, family })
+  const species = [
+    bird('a-barbet', 'A Barbet', 0, 'lybiidae'),
+    bird('b-barbet', 'B Barbet', 1, 'lybiidae'),
+    bird('c-roller', 'C Roller', 2, 'coraciidae'),
+  ]
+  const guide = { species, families: { lybiidae: { en: 'Barbets' } }, month: 1 }
+  const frame = (...scores) => Float32Array.of(...scores)
+  const barbet = frame(0.9, 0.05, 0.05)
+  const roller = frame(0.02, 0.02, 0.96)
+
+  // Nothing is named until one bird has led for LIVE_RUN frames running.
+  let state = createLive()
+  for (let count = 1; count < LIVE_RUN; count += 1) {
+    state = liveNext(state, barbet, guide)
+    assert.equal(state.shown, null, `named after ${count} frames`)
+  }
+  state = liveNext(state, barbet, guide)
+  assert.deepEqual(state.shown, {
+    href: '/species/a-barbet',
+    name: 'A Barbet',
+    family: false,
+    confidence: 'likely',
+    outOfSeason: false,
+  })
+
+  // One odd frame does not change the name: the average still says barbet.
+  state = liveNext(state, roller, guide)
+  assert.equal(state.shown.href, '/species/a-barbet')
+  // The roller takes over only once it has led for a run of frames.
+  let frames = 1
+  while (state.shown.href === '/species/a-barbet') {
+    state = liveNext(state, roller, guide)
+    frames += 1
+    assert.ok(frames <= LIVE_FRAMES + LIVE_RUN, 'the name never changed')
+  }
+  assert.equal(state.shown.href, '/species/c-roller')
+  assert.ok(frames >= LIVE_RUN, `changed after ${frames} frames`)
+
+  // The bird leaves: the name stays, and after LIVE_MISSES empty frames
+  // the average starts again, so the next bird is not mixed with this one.
+  for (let count = 0; count < LIVE_MISSES; count += 1)
+    state = liveNext(state, null, guide)
+  assert.equal(state.shown.href, '/species/c-roller')
+  assert.deepEqual(state.recent, [])
+  assert.equal(state.streak, 0)
+  for (let count = 0; count < LIVE_RUN; count += 1)
+    state = liveNext(state, barbet, guide)
+  assert.equal(state.shown.href, '/species/a-barbet')
+
+  // A single missed frame does not start the run again.
+  let fresh = liveNext(liveNext(createLive(), barbet, guide), null, guide)
+  for (let count = 1; count < LIVE_RUN; count += 1)
+    fresh = liveNext(fresh, barbet, guide)
+  assert.equal(fresh.shown.href, '/species/a-barbet')
+
+  // No species stands out but a family does: the family is named.
+  let family = createLive()
+  for (let count = 0; count < LIVE_RUN; count += 1)
+    family = liveNext(family, frame(0.45, 0.45, 0.1), guide)
+  assert.deepEqual(family.shown, {
+    href: '/family/lybiidae',
+    name: 'Barbets',
+    family: true,
+    confidence: 'likely',
+    outOfSeason: false,
+  })
+
+  // Nothing stands out: nothing is named.
+  let none = createLive()
+  for (let count = 0; count < LIVE_RUN + 2; count += 1)
+    none = liveNext(none, frame(0.1, 0.1, 0.1), {
+      ...guide,
+      species: species.map((item, index) => ({
+        ...item,
+        family: `family-${index}`,
+      })),
+    })
+  assert.equal(none.shown, null)
+})
+
+test('live mode paces itself, stops when idle or too slow, and reports its rate', () => {
+  const {
+    liveWait,
+    liveStop,
+    liveTimingText,
+    LIVE_EVERY_MS,
+    LIVE_REST_MS,
+    LIVE_IDLE_SECONDS,
+    LIVE_SLOW_MS,
+  } = client
+  // Never more than ten frames a second, and always a rest for the video.
+  assert.equal(LIVE_EVERY_MS, 100)
+  assert.equal(liveWait(20), 80)
+  assert.equal(liveWait(95), LIVE_REST_MS)
+  assert.equal(liveWait(400), LIVE_REST_MS)
+
+  const idle = LIVE_IDLE_SECONDS * 1000
+  assert.equal(liveStop({ now: idle - 1, seen: 0, recent: [] }), null)
+  assert.equal(liveStop({ now: idle, seen: 0, recent: [] }), 'idle')
+  assert.equal(liveStop({ now: idle + 500, seen: 600, recent: [] }), null)
+  const slow = LIVE_SLOW_MS + 1
+  assert.equal(liveStop({ now: 5000, seen: 0, recent: [slow, slow] }), null)
+  assert.equal(
+    liveStop({ now: 5000, seen: 0, recent: [slow, 200, slow, slow] }),
+    null,
+  )
+  assert.equal(
+    liveStop({ now: 5000, seen: 0, recent: [50, slow, slow, slow] }),
+    'slow',
+  )
+
+  assert.equal(
+    liveTimingText({
+      frames: 62,
+      ms: 10000,
+      find: [40, 44, 90],
+      name: [70, 72],
+      build: 'relaxed-simd',
+    }),
+    'Live analysed 6.2 frames a second on this device: finding the bird typically took 44 ms, naming it 71 ms. Runtime: relaxed SIMD build.',
+  )
+  assert.equal(
+    liveTimingText({
+      frames: 100,
+      ms: 10000,
+      find: [20],
+      name: [],
+      build: null,
+    }),
+    'Live analysed 10 frames a second on this device: finding the bird typically took 20 ms.',
+  )
+  assert.equal(
+    liveTimingText({ frames: 0, ms: 900, find: [], name: [], build: null }),
+    '',
   )
 })
