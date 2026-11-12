@@ -1,0 +1,338 @@
+{
+  "chrome": {
+    "version": "158.0.8127.18",
+    "results": [
+      {
+        "candidate": "LiteRT.js, mnv4m fp16",
+        "pageHeapMbAfter": 10,
+        "modelMb": 17.5,
+        "downloadMs": 21,
+        "loadMs": 59,
+        "firstRunMs": 33,
+        "medianRunMs": 26,
+        "slowestRunMs": 26,
+        "outputs": 493,
+        "top3": [
+          {
+            "index": 166,
+            "score": 0.5514
+          },
+          {
+            "index": 169,
+            "score": 0.2286
+          },
+          {
+            "index": 167,
+            "score": 0.0277
+          }
+        ],
+        "photo": {
+          "width": 4000,
+          "height": 3000,
+          "decodeAndShrinkMs": 16,
+          "top3": [
+            {
+              "index": 166,
+              "score": 0.3353
+            },
+            {
+              "index": 169,
+              "score": 0.2509
+            },
+            {
+              "index": 167,
+              "score": 0.1061
+            }
+          ]
+        },
+        "engine": {
+          "wasmSimd": true,
+          "jsLoopMs": 53,
+          "wasmLoopMs": 63
+        },
+        "engineMainThread": {
+          "wasmSimd": true,
+          "jsLoopMs": 53,
+          "wasmLoopMs": 23
+        }
+      },
+      {
+        "candidate": "LiteRT.js, mnv4m int8",
+        "pageHeapMbAfter": 10,
+        "modelMb": 9.3,
+        "downloadMs": 12,
+        "loadMs": 70,
+        "firstRunMs": 33,
+        "medianRunMs": 26,
+        "slowestRunMs": 27,
+        "outputs": 493,
+        "top3": [
+          {
+            "index": 166,
+            "score": 0.6576
+          },
+          {
+            "index": 169,
+            "score": 0.1329
+          },
+          {
+            "index": 167,
+            "score": 0.0289
+          }
+        ],
+        "photo": {
+          "width": 4000,
+          "height": 3000,
+          "decodeAndShrinkMs": 16,
+          "top3": [
+            {
+              "index": 166,
+              "score": 0.4205
+            },
+            {
+              "index": 169,
+              "score": 0.1643
+            },
+            {
+              "index": 167,
+              "score": 0.1133
+            }
+          ]
+        },
+        "engine": {
+          "wasmSimd": true,
+          "jsLoopMs": 53,
+          "wasmLoopMs": 23
+        },
+        "engineMainThread": {
+          "wasmSimd": true,
+          "jsLoopMs": 52,
+          "wasmLoopMs": 23
+        }
+      },
+      {
+        "candidate": "LiteRT.js, mnv4m fp32",
+        "pageHeapMbAfter": 10,
+        "modelMb": 34.6,
+        "downloadMs": 21,
+        "loadMs": 46,
+        "firstRunMs": 33,
+        "medianRunMs": 26,
+        "slowestRunMs": 26,
+        "outputs": 493,
+        "top3": [
+          {
+            "index": 166,
+            "score": 0.5538
+          },
+          {
+            "index": 169,
+            "score": 0.2271
+          },
+          {
+            "index": 167,
+            "score": 0.0274
+          }
+        ],
+        "photo": {
+          "width": 4000,
+          "height": 3000,
+          "decodeAndShrinkMs": 15,
+          "top3": [
+            {
+              "index": 166,
+              "score": 0.3374
+            },
+            {
+              "index": 169,
+              "score": 0.2495
+            },
+            {
+              "index": 167,
+              "score": 0.1052
+            }
+          ]
+        },
+        "engine": {
+          "wasmSimd": true,
+          "jsLoopMs": 53,
+          "wasmLoopMs": 23
+        },
+        "engineMainThread": {
+          "wasmSimd": true,
+          "jsLoopMs": 52,
+          "wasmLoopMs": 23
+        }
+      }
+    ],
+    "problems": []
+  },
+  "webkit": {
+    "version": "27.2",
+    "results": [
+      {
+        "candidate": "LiteRT.js, mnv4m fp16",
+        "pageHeapMbAfter": "not exposed by this browser",
+        "modelMb": 17.5,
+        "downloadMs": 12,
+        "loadMs": 81,
+        "firstRunMs": 38,
+        "medianRunMs": 32,
+        "slowestRunMs": 33,
+        "outputs": 493,
+        "top3": [
+          {
+            "index": 166,
+            "score": 0.5514
+          },
+          {
+            "index": 169,
+            "score": 0.2286
+          },
+          {
+            "index": 167,
+            "score": 0.0277
+          }
+        ],
+        "photo": {
+          "width": 4000,
+          "height": 3000,
+          "decodeAndShrinkMs": 71,
+          "top3": [
+            {
+              "index": 166,
+              "score": 0.3346
+            },
+            {
+              "index": 169,
+              "score": 0.2527
+            },
+            {
+              "index": 167,
+              "score": 0.1
+            }
+          ]
+        },
+        "engine": {
+          "wasmSimd": true,
+          "jsLoopMs": 52,
+          "wasmLoopMs": 24
+        },
+        "engineMainThread": {
+          "wasmSimd": true,
+          "jsLoopMs": 52,
+          "wasmLoopMs": 24
+        }
+      },
+      {
+        "candidate": "LiteRT.js, mnv4m int8",
+        "pageHeapMbAfter": "not exposed by this browser",
+        "modelMb": 9.3,
+        "downloadMs": 6,
+        "loadMs": 96,
+        "firstRunMs": 38,
+        "medianRunMs": 32,
+        "slowestRunMs": 33,
+        "outputs": 493,
+        "top3": [
+          {
+            "index": 166,
+            "score": 0.6576
+          },
+          {
+            "index": 169,
+            "score": 0.1329
+          },
+          {
+            "index": 167,
+            "score": 0.0289
+          }
+        ],
+        "photo": {
+          "width": 4000,
+          "height": 3000,
+          "decodeAndShrinkMs": 26,
+          "top3": [
+            {
+              "index": 166,
+              "score": 0.4339
+            },
+            {
+              "index": 169,
+              "score": 0.1621
+            },
+            {
+              "index": 167,
+              "score": 0.1075
+            }
+          ]
+        },
+        "engine": {
+          "wasmSimd": true,
+          "jsLoopMs": 53,
+          "wasmLoopMs": 24
+        },
+        "engineMainThread": {
+          "wasmSimd": true,
+          "jsLoopMs": 53,
+          "wasmLoopMs": 23
+        }
+      },
+      {
+        "candidate": "LiteRT.js, mnv4m fp32",
+        "pageHeapMbAfter": "not exposed by this browser",
+        "modelMb": 34.6,
+        "downloadMs": 23,
+        "loadMs": 67,
+        "firstRunMs": 38,
+        "medianRunMs": 32,
+        "slowestRunMs": 33,
+        "outputs": 493,
+        "top3": [
+          {
+            "index": 166,
+            "score": 0.5538
+          },
+          {
+            "index": 169,
+            "score": 0.2271
+          },
+          {
+            "index": 167,
+            "score": 0.0274
+          }
+        ],
+        "photo": {
+          "width": 4000,
+          "height": 3000,
+          "decodeAndShrinkMs": 25,
+          "top3": [
+            {
+              "index": 166,
+              "score": 0.3365
+            },
+            {
+              "index": 169,
+              "score": 0.2515
+            },
+            {
+              "index": 167,
+              "score": 0.0991
+            }
+          ]
+        },
+        "engine": {
+          "wasmSimd": true,
+          "jsLoopMs": 53,
+          "wasmLoopMs": 23
+        },
+        "engineMainThread": {
+          "wasmSimd": true,
+          "jsLoopMs": 52,
+          "wasmLoopMs": 24
+        }
+      }
+    ],
+    "problems": []
+  }
+}

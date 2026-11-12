@@ -1,0 +1,11 @@
+{
+  "name": "knp-birds-identify-photo-spike",
+  "private": true,
+  "type": "module",
+  "description": "Phase 0 spike for issue 151. Not part of the site or its Worker bundle.",
+  "dependencies": {
+    "@litertjs/core": "2.6.0",
+    "esbuild": "0.28.2",
+    "playwright": "^1.56.1"
+  }
+}

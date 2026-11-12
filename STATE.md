@@ -31,6 +31,14 @@ Open reference to the birds of Kruger National Park (and bordering Marloth Park)
 - `test/identify-browser.test.js` runs the real model in Chromium and WebKit. It is skipped unless the model and a test recording are on disk (`IDENTIFY_MODEL`, `IDENTIFY_CLIP`).
 - Not measured: any Android phone, field recordings, and whether Safari keeps the model in Cache Storage between visits (Playwright's WebKit cannot show this).
 
+## Identify by photo (issue 151)
+
+Phase 0 spike only; no page yet and nothing under `src/` changed. Report: `docs/identify-photo-spike.md`. Scripts and results: `spike/identify-photo/`.
+
+- No existing on-device model covers the list (best: 186 of 493 species). A MobileNetV4 fine-tuned on 72,305 openly licensed iNaturalist photos scores 87.3% species-in-top-three and 87.4% family on 5,889 held-out photos, in a 9.4 MB file that runs on the LiteRT.js runtime the sound page ships.
+- Waiting on the owner's decisions in section 7 of the report. Not measured: any phone.
+- Fine-tuning needs a backbone learning rate near 0.00005; 0.001 destroys the pretrained weights and scores at chance.
+
 ## Repo layout
 
 | Path | Role |
