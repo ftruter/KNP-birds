@@ -137,11 +137,12 @@ const sharedCacheAllowed = (response) =>
 export const withCache = async (request, ctx, produce, env) => {
   const method = request.method.toUpperCase()
   if (method !== 'GET' && method !== 'HEAD') return produce()
-  // Part of a model file, for a download that is being resumed. The Cache
-  // API key carries no Range header, so a hit would be the whole file.
+  // Part of a model, photograph or clip, for a download that is being
+  // resumed. The Cache API key carries no Range header, so a hit would be
+  // the whole file.
   if (
     request.headers.has('range') &&
-    new URL(request.url).pathname.startsWith('/models/')
+    /^\/(models|images|audio)\//.test(new URL(request.url).pathname)
   )
     return produce()
 

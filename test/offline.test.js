@@ -401,9 +401,8 @@ test('what is ticked follows what is on the device', () => {
   )
 })
 
-test('a model can be fetched in parts, and a part is never taken from the cache of whole files', async () => {
+const partsCase = (path, key) => async () => {
   const bytes = new Uint8Array(1000).map((_, index) => index % 251)
-  const key = `models/${PHOTO_MODEL.version}/${PHOTO_MODEL.file}`
   const requests = []
   const bucket = {
     async get(name, options) {
@@ -427,7 +426,7 @@ test('a model can be fetched in parts, and a part is never taken from the cache 
     const get = async (headers = {}) => {
       const ctx = requestContext()
       const response = await handleRequest(
-        new Request(`https://birds.truter.world/${key}`, { headers }),
+        new Request(`https://birds.truter.world${path}`, { headers }),
         env,
         ctx,
       )
@@ -466,7 +465,25 @@ test('a model can be fetched in parts, and a part is never taken from the cache 
   assert.equal(parseRange('bytes=5-2'), null)
   assert.equal(parseRange('bytes=0-1,4-5'), null)
   assert.equal(parseRange(null), null)
-})
+}
+
+test(
+  'a model can be fetched in parts, and a part is never taken from the cache of whole files',
+  partsCase(
+    `/models/${PHOTO_MODEL.version}/${PHOTO_MODEL.file}`,
+    `models/${PHOTO_MODEL.version}/${PHOTO_MODEL.file}`,
+  ),
+)
+
+test(
+  'a mirrored clip can be fetched in parts too',
+  partsCase('/audio/offline/xeno-canto/XC1', 'offline/xeno-canto/XC1'),
+)
+
+test(
+  'a mirrored photograph can be fetched in parts too',
+  partsCase('/images/offline/a/side.jpg', 'offline/a/side.jpg'),
+)
 
 test('the mirror plan is one photograph and one clip for each species at most', async () => {
   const { species } = await readCatalog()

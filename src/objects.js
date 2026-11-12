@@ -47,8 +47,15 @@ export const objectExists = async (bucket, key) => {
 export const openObject = async (bucket, key) =>
   !bucket || typeof bucket.get !== 'function' ? null : bucket.get(key)
 
-export const objectHttpResponse = async (bucket, key) => {
-  const object = await openObject(bucket, key)
+/**
+ * A photograph or clip. With a `Range` header it is answered in part, so a
+ * large clip the download panel was fetching carries on where it stopped and
+ * a player can seek.
+ */
+export const objectHttpResponse = async (bucket, key, rangeHeader = null) => {
+  const wanted = parseRange(rangeHeader)
+  const part = wanted ? await openPart(bucket, key, wanted) : null
+  const object = part ?? (await openObject(bucket, key))
   if (!object || !object.body) return null
   const type = mediaType(object, key)
   const filename = (key.split('/').pop() || 'file').replaceAll(/["\r\n\\]/g, '')
@@ -63,6 +70,8 @@ export const objectHttpResponse = async (bucket, key) => {
     etag: object.httpEtag || '',
     size: object.size,
     disposition,
+    ranges: true,
+    range: part ? sentRange(part, wanted) : null,
   })
 }
 
