@@ -87,6 +87,14 @@ export const downloadBytes = MODEL_ASSETS.model.bytes + runtimeBytes
 export const downloadSummary = (modelBytes, otherPage) =>
   `about ${mebibytes(modelBytes + runtimeBytes)} MiB, made up of a ${mebibytes(modelBytes)} MiB model and a ${mebibytes(runtimeBytes)} MiB runtime that ${otherPage} also uses`
 
+/**
+ * The published copy of the sound recogniser: the BirdNET file the site
+ * serves, unchanged, with its label file and our mapping from its labels to
+ * the Kruger list. The site never fetches from it; R2 is the site's source.
+ */
+export const SOUND_HUGGING_FACE_REPO = 'FTruter/knp-birds-sound'
+export const SOUND_HUGGING_FACE_URL = `https://huggingface.co/${SOUND_HUGGING_FACE_REPO}`
+
 export const MODEL_CREDIT = {
   name: 'BirdNET GLOBAL 6K V2.4',
   authors: 'Stefan Kahl, Connor M. Wood, Maximilian Eibl and Holger Klinck',
@@ -100,6 +108,10 @@ export const MODEL_CREDIT = {
   usedFor:
     'Recognising a bird from a recording on the Identify by sound page. The model file is served unchanged and runs on the visitor’s device.',
   page: { href: '/identify/sound', label: 'Identify by sound' },
+  published: {
+    url: SOUND_HUGGING_FACE_URL,
+    note: 'The model file, unchanged, with its label file and our mapping from its labels to the Kruger list on Hugging Face',
+  },
   runtime: {
     name: 'LiteRT.js 2.6.0',
     url: 'https://github.com/google-ai-edge/LiteRT',

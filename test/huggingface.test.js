@@ -8,6 +8,7 @@ import {
   HUGGING_FACE_REPO,
   PHOTO_MODEL,
   PHOTO_MODEL_CREDIT,
+  SOUND_HUGGING_FACE_URL,
   PHOTO_MODEL_HUB_URL,
 } from '../src/identify.js'
 import { handleRequest } from '../src/worker.js'
@@ -169,6 +170,10 @@ test('the model card covers what the issue asks for, from the data', async () =>
   assert.ok(card.includes('| 400 | 206 | 92% | 92% | 92% | 91% |'))
   assert.match(card, /CC0 1\.0/)
   assert.match(licencesFile({ model }), /zenodo\.org\/records\/15050749/)
+  // The sound recogniser has its own repository: linked, not written here.
+  assert.ok(licencesFile({ model }).includes(SOUND_HUGGING_FACE_URL))
+  assert.ok(card.includes(SOUND_HUGGING_FACE_URL))
+  assert.doesNotMatch(card + licencesFile({ model }), /`sound\//)
 })
 
 test('the training code is published with its licence and without photos or runs', async () => {
@@ -388,7 +393,13 @@ test('the site links the Hugging Face revision from credits and the photo page, 
     '/identify/photo.json',
   ])
     assert.ok((await fetch(page)).includes(PHOTO_MODEL_HUB_URL), page)
-  // The sound model is linked to its authors, never republished as ours.
+  // The credits link the published copy of the sound model too, beside its
+  // authors' own release. It is BirdNET's, unchanged, never presented as ours.
+  for (const page of ['/credits', '/credits.md', '/credits.json']) {
+    const body = await fetch(page)
+    assert.ok(body.includes(SOUND_HUGGING_FACE_URL), page)
+    assert.ok(body.includes('https://zenodo.org/records/15050749'), page)
+  }
   const credits = await fetch('/credits')
   assert.match(credits, /CC BY-NC-SA 4\.0/)
   assert.doesNotMatch(await fetch('/identify/sound'), /huggingface\.co/)

@@ -27379,6 +27379,10 @@
         "href": "/identify/sound",
         "label": "Identify by sound"
       },
+      "published": {
+        "url": "https://huggingface.co/FTruter/knp-birds-sound",
+        "note": "The model file, unchanged, with its label file and our mapping from its labels to the Kruger list on Hugging Face"
+      },
       "runtime": {
         "name": "LiteRT.js 2.6.0",
         "url": "https://github.com/google-ai-edge/LiteRT",

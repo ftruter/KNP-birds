@@ -178,8 +178,11 @@ version, which is the `models/<version>/` folder in R2, so a version on the site
 It holds the `.tflite` file R2 serves (same SHA-256), the PyTorch weights it was converted from
 (`photo-model.safetensors`), a model card written from `data/identify/photo-model.json` by
 `scripts/huggingface.mjs`, the class list, the list of every training photo with its source URL, author and
-licence, the 5,889 test photos with the same details, `training/identify-photo/`, and the BirdNET label
-mapping the sound page uses. BirdNET itself is not republished.
+licence, the 5,889 test photos with the same details, and `training/identify-photo/`.
+
+The sound recogniser is published separately at https://huggingface.co/FTruter/knp-birds-sound: the BirdNET
+file the site serves, unchanged and under its authors' licence, its label file, and our mapping from its
+labels to the Kruger list. `/credits` links both.
 
 Licences there: the weights CC BY-NC-SA 4.0, bounded by the training photos; the training code 0BSD; the
 model card, labels and mapping CC0 1.0; each test photo under its photographer's own licence.
