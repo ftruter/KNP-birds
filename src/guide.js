@@ -52,8 +52,13 @@ export const residencyGapText = (residency, format) => {
   return `${lead} The all-season total above does not need residency, so it still has a figure.`
 }
 
+/** Leads into the figure, so it ends with a colon. */
 export const FAMILY_TOTAL_INTRO =
-  'This adds mature-individual estimates only. Groups, breeding pairs, territories, and species without that unit are left out.'
+  'The total for the species counted in mature individuals:'
+
+/** Goes with an incomplete total: which species it leaves out, and why. */
+export const FAMILY_TOTAL_LEFT_OUT =
+  'Species counted in groups, breeding pairs or territories, and species with no estimate, are left out.'
 
 const UNIT_LABEL = {
   matureIndividuals: 'mature individuals',

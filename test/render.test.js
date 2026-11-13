@@ -48,6 +48,24 @@ test('text colours meet WCAG AA and the forbidden pairs are not used as text', (
   assert.ok(contrast(palette.dark.accent, palette.dark.bg) >= 4.5)
   assert.ok(contrast('#F6C64D', '#FDF6E3') < 4.5)
   assert.ok(contrast('#28602a', '#12301A') < 3)
+  // Each text role is readable on the page and on a card, in both modes.
+  const card = { light: '#FFFBF4', dark: '#1A3F27' }
+  for (const mode of ['light', 'dark']) {
+    assert.match(css, new RegExp(`--surface: ${card[mode]}`))
+    for (const role of ['heading', 'brand', 'link', 'muted', 'accent'])
+      for (const ground of [palette[mode].bg, card[mode]])
+        assert.ok(
+          contrast(palette[mode][role], ground) >= 4.5,
+          `${mode} ${role} on ${ground}`,
+        )
+  }
+  // On the dark page the header is darker than the page, and its text holds.
+  assert.ok(contrast(palette.dark.headerFg, palette.dark.headerBg) >= 4.5)
+  assert.ok(contrast(palette.dark.text, palette.dark.headerBg) >= 4.5)
+  // Only the brand colour is gold there: headings and links are quieter.
+  assert.equal(palette.dark.brand, '#F6C64D')
+  assert.notEqual(palette.dark.heading, palette.dark.brand)
+  assert.notEqual(palette.dark.link, palette.dark.brand)
   assert.match(css, /--header-fg: #F6C64D/)
   assert.match(css, /background: var\(--header-bg\)/)
   assert.doesNotMatch(css, /@import|javascript:/)
@@ -186,7 +204,7 @@ test('a family page shows the derived approximate total', async () => {
   assert.match(html, /Approximate total/)
   assert.match(html, /18,960–75,840 mature individuals/)
   assert.match(html, /Includes 5 of 5 species/)
-  assert.match(html, /mature-individual estimates only/)
+  assert.match(html, /The total for the species counted in mature individuals:/)
   assert.doesNotMatch(html, /This total is incomplete/)
   assert.match(html, /First to look for/)
   assert.ok(

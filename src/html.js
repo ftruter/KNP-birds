@@ -18,6 +18,7 @@ import {
   speciesDetailsPublished,
   UNPUBLISHED_SPECIES,
   FAMILY_TOTAL_INTRO,
+  FAMILY_TOTAL_LEFT_OUT,
   familyLabel,
   familyTotalModel,
   HOME_BROWSE,
@@ -43,13 +44,19 @@ import {
   rowsForSpeciesIndex,
 } from './catalog.js'
 import { agentUrls } from './head.js'
-import { clientSrc, offlineSrc } from './client.js'
+import { clientSrc, offlineSrc, styleSrc } from './client.js'
 import { ICON_LINKS } from './icon.js'
 import { INSTALL_LINKS } from './offline-app.js'
 import { OFFLINE_PATH } from './offline.js'
 import { familyTableHtml, speciesTableHtml } from './lists.js'
 import { alternates, SEARCH_MAX, searchSuffix } from './route.js'
 import { sitemapEntries } from './sitemap.js'
+
+/**
+ * Marks what is in the page for machines that read the markup. The stylesheet
+ * hides it from people: the "For agents" nav link and the MCP paragraph.
+ */
+const FOR_AGENTS = 'for-agents'
 
 const NAV = [
   ['home', '/', 'Home'],
@@ -516,7 +523,7 @@ const familyPopulationHtml = (population, residency, format) => {
 <p>${escapeHtml(FAMILY_TOTAL_INTRO)}</p>
 ${range}
 <p>${escapeHtml(model.coverage)}</p>
-${model.complete ? '' : '<p>This total is incomplete.</p>'}
+${model.complete ? '' : `<p>This total is incomplete. ${escapeHtml(FAMILY_TOTAL_LEFT_OUT)}</p>`}
 <div id="${RESIDENCY_ANCHOR}">
 <p>${escapeHtml(FAMILY_TOTAL_SEASONS)} <a href="/families">Families by season</a>.</p>
 ${gap ? `<p>${escapeHtml(gap)}</p>` : ''}
@@ -895,7 +902,7 @@ ${noindex ? '<meta name="robots" content="noindex">\n' : ''}<link rel="canonical
 ${ARD_LINK}
 ${ICON_LINKS}
 ${INSTALL_LINKS}
-<link rel="stylesheet" href="/style.css">
+<link rel="stylesheet" href="${styleSrc}">
 <script type="module" defer src="${clientSrc}"></script>
 <script type="module" defer src="${offlineSrc}"></script>
 ${scripts.map((src) => `<script type="module" defer src="${escapeHtml(src)}"></script>\n`).join('')}</head>
@@ -910,7 +917,7 @@ ${scripts.map((src) => `<script type="module" defer src="${escapeHtml(src)}"></s
 ${searchFormHtml(searchQuery)}
 <nav aria-label="Site">
 <ul class="nav-list">
-${NAV.map(([key, href, label]) => `<li><a href="${href}"${nav === key ? ' aria-current="page"' : ''}>${label}</a></li>`).join('\n')}
+${NAV.map(([key, href, label]) => `<li${key === 'agents' ? ` class="${FOR_AGENTS}"` : ''}><a href="${href}"${nav === key ? ' aria-current="page"' : ''}>${label}</a></li>`).join('\n')}
 </ul>
 </nav>
 </div>
@@ -924,15 +931,10 @@ ${main}
 <footer class="site-footer">
 <div class="wrap">
 <div class="footer-grid">
-<div>
-<p class="footer-lead">Birds of Kruger National Park. An open field guide for people and for AI agents.</p>
-<p>Also available as <a href="${escapeHtml(alts.md)}">Markdown</a> and <a href="${escapeHtml(alts.json)}">JSON</a>.</p>
+<p>Birds of Kruger National Park</p>
+<p><a href="/llms.txt">llms.txt</a> · <a href="/sitemap"${path === '/sitemap' ? ' aria-current="page"' : ''}>Sitemap</a> · <a href="/credits"${path === '/credits' ? ' aria-current="page"' : ''}>Credits</a> · <a href="${escapeHtml(alts.md)}">Markdown</a> · <a href="${escapeHtml(alts.json)}">JSON</a></p>
 </div>
-<div>
 ${agentHtml(origin)}
-<p><a href="/llms.txt">llms.txt</a> · <a href="/sitemap"${path === '/sitemap' ? ' aria-current="page"' : ''}>Sitemap</a> · <a href="/credits"${path === '/credits' ? ' aria-current="page"' : ''}>Credits</a></p>
-</div>
-</div>
 </div>
 </footer>
 </body>
@@ -1015,7 +1017,7 @@ ${body}`,
 
 const agentHtml = (origin) => {
   const urls = agentUrls(origin)
-  return `<p>AI agents: this guide has a public read-only MCP server at <a href="${escapeHtml(urls.mcp)}">${escapeHtml(urls.mcp)}</a> (streamable HTTP, one tool: <code>search</code>). <a href="${escapeHtml(urls.card)}">Server card</a>. <a href="${escapeHtml(urls.ard)}">Discovery</a>.</p>`
+  return `<p class="${FOR_AGENTS}">AI agents: this guide has a public read-only MCP server at <a href="${escapeHtml(urls.mcp)}">${escapeHtml(urls.mcp)}</a> (streamable HTTP, one tool: <code>search</code>). <a href="${escapeHtml(urls.card)}">Server card</a>. <a href="${escapeHtml(urls.ard)}">Discovery</a>.</p>`
 }
 
 const sampleNotice = () =>

@@ -18,6 +18,7 @@ import {
   speciesDetailsPublished,
   UNPUBLISHED_SPECIES,
   FAMILY_TOTAL_INTRO,
+  FAMILY_TOTAL_LEFT_OUT,
   familyLabel,
   familyTotalModel,
   HOME_BROWSE,
@@ -315,7 +316,7 @@ ${model.range || 'No numeric total yet.'}
 
 ${model.coverage}
 
-${model.complete ? '' : 'This total is incomplete.'}
+${model.complete ? '' : `This total is incomplete. ${FAMILY_TOTAL_LEFT_OUT}`}
 
 ${FAMILY_TOTAL_SEASONS} [Families by season](/families).${gap ? `\n\n${gap}` : ''}`
 }

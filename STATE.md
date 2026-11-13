@@ -20,6 +20,21 @@ Open reference to the birds of Kruger National Park (and bordering Marloth Park)
 - JavaScript is first-party progressive enhancement only (`src/client`). CSP includes `script-src 'self'`. The site must still work with JavaScript off.
 - Workers Builds on `main`: `pnpm install --frozen-lockfile` (automatic, from the lockfile) then `npm run deploy` (the dashboard setting, left on npm on purpose; use pnpm locally) (uploads `data/` to KV, then deploys the Worker with `DATA_VERSION` and `DATA_PUBLISHED_AT`). Node 22+.
 
+## Styling
+
+All CSS is the one template string in `src/style.js`. Pages link it as `/style.css?v=<hash>` (`styleSrc` in `src/client.js`). The hash changes with the CSS, so a page never meets an older stylesheet.
+
+- **Colour by role.** `--brand` is the site name, the page title (`h1`), primary buttons and the current nav item. `--heading` is every heading below the title, `--link` a link in running text, `--label` and `--muted` small labels and secondary text, and `--accent` a notice that flags something (`.mark`, `.sample`, `.ai-label`). On the dark page only `--brand` is gold. `test/render.test.js` checks each text role at 4.5:1 on the page and on a card.
+- **Dark mode** has three surfaces (page, card, inset), no shadows, and a header darker than the page.
+- **One frame per object.** A card holds nothing that is framed again. A page section is a heading and space, not a card.
+- **One gap.** All spacing is `--gap` (1em of the body text), `--gap-half` inside a tight group, or `--gap-2` before a new section. `--gap` is a registered `<length>` (`@property`) set on `body`, so the em is worked out once and the gap is the same under a large heading as between two buttons. Do not write a literal `rem` or `px` margin, padding or gap. The exceptions are measured geometry: the search field's icon offsets, the zoomed photograph, the crop dialog and the offline panel's checkbox rows.
+- **Page edges.** The page has one gap at each side and the footer one gap above and below. The header and footer are full width.
+- **Species bands.** "First to look for" on a family page is one full-width band per species (`.species-card`). Its photographs sit in one row at one height and the row scrolls sideways, so an odd number of species leaves no hole.
+- **Zoomed photograph.** While a `.plate` is zoomed, `html:has(.plate.is-zoomed)` stops the page behind from scrolling. Not yet tried with touch on a phone.
+- **Text size.** Font sizes (`--fs-*`) are in `rem`, never `px`, so text and gaps follow the reader's browser text size. Radii come from `--radius-*`.
+- Serif is for running text and the page title. Tables, facts, captions and controls are sans.
+- **For machines only.** The "For agents" nav link and the MCP paragraph (home page and every footer) stay in the markup with the class `for-agents`, and the stylesheet hides them from people (`display: none`). `test/agent-note.test.js` still requires them in the HTML.
+
 ## Identify by sound (issue 150)
 
 `/identify/sound` records or opens a bird call and ranks the likely species with BirdNET V2.4, run on the visitor's device by LiteRT.js (WebAssembly, in a Web Worker). Background and measurements: `docs/identify-sound-spike.md`.

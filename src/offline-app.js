@@ -1,4 +1,10 @@
-import { clientSrc, clientVersion, identifySrc, offlineSrc } from './client.js'
+import {
+  clientSrc,
+  clientVersion,
+  identifySrc,
+  offlineSrc,
+  styleSrc,
+} from './client.js'
 import { SHORT_NAME } from './head.js'
 import { iconVersion } from './icon.js'
 import {
@@ -59,6 +65,7 @@ export const webManifest = () => ({
 
 /** The tags that make "Add to Home Screen" open the site as an app. */
 export const INSTALL_LINKS = `<link rel="manifest" href="${WEB_MANIFEST_PATH}">
+<meta name="theme-color" media="(prefers-color-scheme: dark)" content="${palette.dark.headerBg}">
 <meta name="theme-color" content="${THEME_COLOUR}">
 <meta name="mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-capable" content="yes">
@@ -157,7 +164,7 @@ export const offlineManifest = (doc, version = '') => {
     'species-clips': media(clips),
   }
   const shell = [
-    '/style.css',
+    styleSrc,
     clientSrc,
     offlineSrc,
     identifySrc('/identify.js'),
