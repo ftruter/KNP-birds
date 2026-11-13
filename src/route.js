@@ -128,6 +128,8 @@ export const parseUrl = (url) => {
     return { ...route('families-index', format, path), kvKey: 'index/families' }
   if (path === '/credits')
     return { ...route('credits', format, path), kvKey: 'index/credits' }
+  if (path === '/facts')
+    return { ...route('facts', format, path), kvKey: 'index/facts' }
   if (path === '/identify/sound')
     return {
       ...route('identify-sound', format, path),

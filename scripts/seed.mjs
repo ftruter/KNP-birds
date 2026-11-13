@@ -31,6 +31,10 @@
  * docs/population-sources.md. A licence is null when it is not known. The
  * page says so, and this script does not invent one.
  *
+ * index/facts is one row per species: status, length, wingspan, mass,
+ * flightlessness, the population range and the regions of the park. A fact
+ * a species file does not record is null.
+ *
  * index/identify-sound is derived from data/identify/birdnet-labels.json
  * (written by scripts/map-birdnet-labels.mjs) and the species files. It
  * lists the species the sound recogniser can return and those it cannot.
@@ -49,6 +53,7 @@ import {
   deriveIdentifyPhoto,
   deriveIdentifySound,
 } from '../src/identify.js'
+import { deriveFacts } from '../src/facts.js'
 import { deriveOffline } from '../src/offline.js'
 import { applyRecordingOverlay, recordingOverlay } from '../src/recordings.js'
 import { residencyCoverage } from '../src/seasons.js'
@@ -430,6 +435,7 @@ export const deriveAll = (
     speciesIndex: deriveSpeciesIndex(speciesDocs),
     familiesIndex: deriveFamiliesIndex(families),
     credits: deriveCredits(speciesDocs, recordingOverlay),
+    facts: deriveFacts(speciesDocs),
     identifySound: labelMap
       ? deriveIdentifySound(
           speciesDocs.map((species) =>
@@ -535,6 +541,9 @@ export const writeDerived = async (dataDir = path.join(root, 'data')) => {
   )
   writes.push(
     writeJson(path.join(dataDir, 'index', 'credits.json'), derived.credits),
+  )
+  writes.push(
+    writeJson(path.join(dataDir, 'index', 'facts.json'), derived.facts),
   )
   if (derived.identifySound)
     writes.push(

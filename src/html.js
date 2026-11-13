@@ -47,6 +47,18 @@ import { clientSrc, offlineSrc } from './client.js'
 import { ICON_LINKS } from './icon.js'
 import { INSTALL_LINKS } from './offline-app.js'
 import { OFFLINE_PATH } from './offline.js'
+import {
+  FACTS_COLUMNS,
+  FACTS_INTRO,
+  FACTS_PATH,
+  FACTS_TITLE,
+  coverageSentence,
+  distributionLabel,
+  factsCells,
+  flightLabel,
+  massLabel,
+  wingspanLabel,
+} from './facts.js'
 import { familyTableHtml, speciesTableHtml } from './lists.js'
 import { alternates, SEARCH_MAX, searchSuffix } from './route.js'
 import { sitemapEntries } from './sitemap.js'
@@ -345,7 +357,8 @@ const publishedSpeciesHtml = (
 <dt>Status</dt><dd>${escapeHtml(statusLabel(doc.status))}</dd>
 ${monthsLabel(doc.monthsPresent) ? `<dt>Months in Kruger</dt><dd>${escapeHtml(monthsLabel(doc.monthsPresent))}</dd>` : ''}
 <dt>Size</dt><dd>${escapeHtml(sizeLabel(doc.size) || 'Not recorded')}</dd>
-${doc.habitat ? `<dt>Habitat</dt><dd>${escapeHtml(doc.habitat)}</dd>` : ''}
+${sizeFactsHtml(doc)}${doc.habitat ? `<dt>Habitat</dt><dd>${escapeHtml(doc.habitat)}</dd>` : ''}
+${distributionLabel(doc.distribution) ? `<dt>Where in Kruger</dt><dd>${escapeHtml(distributionLabel(doc.distribution))}</dd>` : ''}
 <dt>Family</dt><dd><a href="/family/${escapeHtml(doc.family)}">${escapeHtml(familyLabel(doc.family))}</a></dd>
 </dl>
 <h2>Photographs</h2>
@@ -356,6 +369,17 @@ ${figures(doc, images, imagesAvailable, colourMap)}
 ${comparisons.map((section) => comparisonSection(section, colourMap)).join('\n')}
 ${similarHtml(doc)}
 ${sourcesSection(doc.sources)}`
+
+/** Wingspan, mass and flight, each only when the species file records it. */
+const sizeFactsHtml = (doc) =>
+  [
+    ['Wingspan', wingspanLabel(doc.size)],
+    ['Mass', massLabel(doc.size)],
+    ['Flight', flightLabel(doc.flightless)],
+  ]
+    .filter(([, value]) => value)
+    .map(([label, value]) => `<dt>${label}</dt><dd>${escapeHtml(value)}</dd>\n`)
+    .join('')
 
 const comparisonSection = (section, colourMap) => {
   const context = section.rows?.find((row) => row.context)?.context
@@ -868,6 +892,43 @@ ${siteHtml(doc?.site)}`
   })
 }
 
+export const renderFactsHtml = ({ origin, doc, format }) => {
+  const rows = listed(doc?.species)
+  const regions = listed(doc?.regions)
+  const main = `
+<h1>${FACTS_TITLE}</h1>
+<p>${escapeHtml(FACTS_INTRO)}</p>
+<p>${escapeHtml(coverageSentence(doc))}</p>
+<h2>Regions of the park</h2>
+<dl class="facts">
+${regions.map((region) => `<dt>${escapeHtml(region.label)}</dt><dd>${escapeHtml(region.extent)}</dd>`).join('\n')}
+</dl>
+<h2>All species</h2>
+<div class="table-wrap">
+<table class="facts-table">
+<thead><tr><th scope="col">Species</th>${FACTS_COLUMNS.map(([, label]) => `<th scope="col">${escapeHtml(label)}</th>`).join('')}</tr></thead>
+<tbody>
+${rows
+  .map((row) => {
+    const cells = factsCells(row, format)
+    return `<tr><th scope="row"><a href="/species/${escapeHtml(row.slug)}">${escapeHtml(row.en)}</a> <i>${escapeHtml(row.scientificName)}</i></th>${FACTS_COLUMNS.map(([key]) => `<td>${escapeHtml(cells[key])}</td>`).join('')}</tr>`
+  })
+  .join('\n')}
+</tbody>
+</table>
+</div>`
+  return layout({
+    title: `${FACTS_TITLE} · KNP Birds`,
+    description:
+      'Status, length, wingspan, mass, population and park regions for every bird of Kruger National Park, in one table.',
+    origin,
+    path: FACTS_PATH,
+    nav: '',
+    crumbs: crumbs([{ href: FACTS_PATH, label: FACTS_TITLE, current: true }]),
+    main,
+  })
+}
+
 export const layout = ({
   title,
   description,
@@ -930,7 +991,7 @@ ${main}
 </div>
 <div>
 ${agentHtml(origin)}
-<p><a href="/llms.txt">llms.txt</a> · <a href="/sitemap"${path === '/sitemap' ? ' aria-current="page"' : ''}>Sitemap</a> · <a href="/credits"${path === '/credits' ? ' aria-current="page"' : ''}>Credits</a></p>
+<p><a href="/llms.txt">llms.txt</a> · <a href="/sitemap"${path === '/sitemap' ? ' aria-current="page"' : ''}>Sitemap</a> · <a href="/facts"${path === '/facts' ? ' aria-current="page"' : ''}>Facts table</a> · <a href="/credits"${path === '/credits' ? ' aria-current="page"' : ''}>Credits</a></p>
 </div>
 </div>
 </div>

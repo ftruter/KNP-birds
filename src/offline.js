@@ -68,6 +68,7 @@ export const deriveOffline = (speciesDocs, familyDocs, mirror = null) => {
       IDENTIFY_PHOTO_PATH,
       IDENTIFY_SOUND_PATH,
       '/credits',
+      '/facts',
       '/vocab/colours',
       '/sitemap',
       ...familyDocs.map((family) => `/family/${family.slug}`).sort(),

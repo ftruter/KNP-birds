@@ -31,6 +31,7 @@ The file extension selects the format. Page paths come straight from the KV keys
 | \`family/<slug>\` | ${origin}/family/<slug> |
 | \`vocab/colours\` | ${origin}/vocab/colours |
 | \`index/credits\` | ${origin}/credits |
+| \`index/facts\` | ${origin}/facts |
 | (composed) | ${origin}/sitemap |
 | \`index/identify-sound\` | ${origin}/identify/sound |
 | \`index/identify-photo\` | ${origin}/identify/photo |
@@ -79,6 +80,8 @@ The six comparisons on a species page are derived, not stored as prose:
 
 \`status\` is \`resident\`, \`intra-african-migrant\`, or \`palearctic-migrant\`. \`monthsPresent\` lists the months the bird is in Kruger. \`habitat\` and \`similar\` are optional. \`sources\` is the bibliography for the species text.
 
+\`size\` holds up to three measurements, each \`{ "min", "max" }\`: \`lengthCm\` (bill tip to tail tip, centimetres), \`wingspanCm\` (centimetres) and \`massG\` (grams). \`min\` equals \`max\` when the source gives one figure. \`flightless\` is \`true\` for a bird that cannot fly. \`distribution\` says where in the park the species is found: \`regions\` is a list from \`far-north\`, \`north\`, \`central\` and \`south\`, and \`note\` is free text that may name rivers or rest camps. Every one of these is optional. A field that is missing has not been recorded: do not read it as zero, as "flies", or as "absent from that region".
+
 When both sides are described and no mark differs, the page says "No visible difference".
 
 A species with empty \`variants\`, \`viewNotes\`, \`calls\`, and \`images\` has not had its field details published. The page says "The details for this species have not been published yet." and skips those sections. \`status\` and \`size\` may be omitted until they are known. \`population\` is still present, and may already cite a figure. The Afrikaans line is omitted when \`af\` is missing.
@@ -95,6 +98,8 @@ Each family embeds its species and a population total. \`iconicSpecies\` is up t
 
 Images carry \`view\`, \`age\`, \`sex\`, \`season\`, \`source\`, \`author\`, \`license\`, an optional \`licenceUrl\`, and \`aiGenerated\`. \`sex\` may be \`mixed\` when the photograph shows a male and a female together. An optional \`caption\` is shown with the view label. \`fileUrl\` and \`hosted: false\` mean the file is not in the bucket yet: the page shows the source file when the licence allows it. Recordings use the same attribution fields. \`aiGenerated\` is optional on a recording. Photograph and recording licences stay with each file. They are not covered by the Apache-2.0 licence of the code. The page policy allows those HTTPS images and audio files. It still allows no scripts.
 
+\`index/facts\` is the facts table: ${origin}/facts.md is one Markdown table with a row for every species (English name, scientific name, status, length, wingspan, mass, flight, approximate Kruger population, regions of the park), and ${origin}/facts.json is the same rows as data, with \`null\` where a fact is not recorded. Use it to compare species, for example the largest, the heaviest, or the birds of one region, in one request. It also defines the four regions. Sources for each figure are on the species page.
+
 \`index/credits\` is derived with the indexes. It lists the checklists behind the family and species lists, the IOC / BirdLife South Africa naming, photograph and recording credit grouped by species, and the Apache-2.0 licence for this site.
 
 ## Identify by sound
@@ -110,6 +115,7 @@ ${origin}/identify/photo is an interactive page for people: the visitor takes or
 - [Home, Markdown](${origin}/.md)
 - [Families index, Markdown](${origin}/families.md)
 - [Species index, Markdown](${origin}/species.md)
+- [Facts table, Markdown](${origin}/facts.md): size, population and park regions for every species in one fetch
 - [Colour vocabulary, JSON](${origin}/vocab/colours.json)
 - [Credits, Markdown](${origin}/credits.md)
 - [Sitemap, Markdown](${origin}/sitemap.md)

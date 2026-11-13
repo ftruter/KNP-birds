@@ -91,6 +91,7 @@ test('the sitemap tree is alphabetical by English name', () => {
     '/species/bucorvus-leadbeateri',
     '/identify/sound',
     '/identify/photo',
+    '/facts',
     '/credits',
   ])
 })
@@ -165,6 +166,7 @@ test('the sitemap page is nested in html, markdown, and json', async () => {
       'Species',
       'Identify by sound',
       'Identify by photo',
+      'Facts table',
       'Credits',
     ],
   )
@@ -191,9 +193,10 @@ test('the sitemap page is nested in html, markdown, and json', async () => {
     'https://birds.truter.world/vocab/colours',
     'https://birds.truter.world/families',
   ])
-  assert.equal(locs.at(-4), 'https://birds.truter.world/species')
-  assert.equal(locs.at(-3), 'https://birds.truter.world/identify/sound')
-  assert.equal(locs.at(-2), 'https://birds.truter.world/identify/photo')
+  assert.equal(locs.at(-5), 'https://birds.truter.world/species')
+  assert.equal(locs.at(-4), 'https://birds.truter.world/identify/sound')
+  assert.equal(locs.at(-3), 'https://birds.truter.world/identify/photo')
+  assert.equal(locs.at(-2), 'https://birds.truter.world/facts')
   assert.equal(locs.at(-1), 'https://birds.truter.world/credits')
   assert.equal(new Set(locs).size, locs.length)
   const familyAt = locs.indexOf(
