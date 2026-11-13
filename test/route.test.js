@@ -1,6 +1,7 @@
 import assert from 'node:assert/strict'
 import { test } from 'node:test'
 import { parseUrl } from '../src/route.js'
+import { INDEXNOW_KEY_PATH } from '../src/indexnow.js'
 
 const parsed = (pathname) =>
   parseUrl(new URL(`https://birds.truter.world${pathname}`))
@@ -53,6 +54,7 @@ test('format and KV key selection', () => {
     ['/robots.txt', 'robots', 'html', '/robots.txt'],
     ['/sitemap.xml', 'sitemap', 'html', '/sitemap.xml'],
     ['/llms.txt', 'llms', 'html', '/llms.txt'],
+    [INDEXNOW_KEY_PATH, 'indexnow-key', 'html', INDEXNOW_KEY_PATH],
     ['/style.css', 'style', 'html', '/style.css'],
     ['/app.js', 'script', 'html', '/app.js'],
     ['/identify/sound', 'identify-sound', 'html', '/identify/sound'],

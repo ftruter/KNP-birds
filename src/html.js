@@ -73,6 +73,13 @@ import {
 } from './prompt.js'
 import { alternates, SEARCH_MAX, searchSuffix } from './route.js'
 import { sitemapEntries } from './sitemap.js'
+import {
+  breadcrumbNode,
+  imageNode,
+  jsonLdScript,
+  siteNode,
+  taxonNode,
+} from './structured.js'
 
 /**
  * Marks what is in the page for machines that read the markup. The stylesheet
@@ -164,7 +171,8 @@ ${agentHtml(origin)}`
     origin,
     path: '/',
     nav: 'home',
-    crumbs: [],
+    crumbs: crumbs([]),
+    jsonLd: [siteNode(origin)],
     main,
   })
 }
@@ -266,6 +274,14 @@ ${speciesTableHtml({
       { href: '/families', label: 'Families' },
       { href: `/family/${doc.slug}`, label: englishName(doc), current: true },
     ]),
+    jsonLd: [
+      taxonNode({
+        origin,
+        path: `/family/${doc.slug}`,
+        doc,
+        rank: 'family',
+      }),
+    ],
     main,
   })
 }
@@ -338,6 +354,31 @@ ${populationRowHtml(population)}
       { href: '/species', label: 'Species' },
       { href: `/species/${doc.slug}`, label: englishName(doc), current: true },
     ]),
+    jsonLd: [
+      {
+        ...taxonNode({
+          origin,
+          path: `/species/${doc.slug}`,
+          doc,
+          rank: 'species',
+          parent: doc.family
+            ? { name: familyLabel(doc.family), path: `/family/${doc.family}` }
+            : null,
+        }),
+        image: published
+          ? images
+              .map((image) =>
+                imageNode({
+                  origin,
+                  src: imageSrc(image, imagesAvailable),
+                  alt: imageAlt(doc, image),
+                  image,
+                }),
+              )
+              .filter(Boolean)
+          : [],
+      },
+    ],
     main,
   })
 }
@@ -357,7 +398,7 @@ export const renderNotFoundHtml = ({ origin, path }) => {
     origin,
     path,
     nav: '',
-    crumbs: [],
+    crumbs: crumbs([]),
     main,
   })
 }
@@ -665,6 +706,14 @@ ${sources
 </ol>`
 }
 
+/** Where a photograph is shown from: this site's copy, else the source's. */
+const imageSrc = (image, imagesAvailable) => {
+  if (imagesAvailable?.[image?.key] === true)
+    return objectPath('images', image.key)
+  const remote = safeHttpUrl(image?.fileUrl)
+  return remote && !licenceForbidsDerivatives(image?.license) ? remote : ''
+}
+
 /**
  * `lead` is the photograph at the top of a species page. It is in view as
  * the page opens, so it is fetched at once and not when scrolled to.
@@ -675,13 +724,7 @@ const figures = (doc, images, imagesAvailable, colourMap, lead = false) => {
   return images
     .map((image) => {
       const available = imagesAvailable?.[image.key] === true
-      const remote =
-        !available &&
-        safeHttpUrl(image?.fileUrl) &&
-        !licenceForbidsDerivatives(image?.license)
-          ? safeHttpUrl(image.fileUrl)
-          : ''
-      const src = available ? objectPath('images', image.key) : remote
+      const src = imageSrc(image, imagesAvailable)
       const caption = imageCaption(
         image,
         src ? { src, onSite: available } : null,
@@ -1072,13 +1115,17 @@ export const layout = ({
   origin,
   path,
   nav,
-  crumbs: crumbHtml,
+  crumbs: crumbTrail,
   main,
   searchQuery = '',
   noindex = false,
   scripts = [],
+  jsonLd = [],
 }) => {
   const alts = alternates(path, searchSuffix(searchQuery))
+  const structured = noindex
+    ? ''
+    : jsonLdScript([breadcrumbNode(origin, crumbTrail?.items), ...jsonLd])
   return `<!DOCTYPE html>
 <html lang="en">
 <head>
@@ -1096,7 +1143,7 @@ ${INSTALL_LINKS}
 <link rel="stylesheet" href="${styleSrc}">
 <script type="module" defer src="${clientSrc}"></script>
 <script type="module" defer src="${offlineSrc}"></script>
-${scripts.map((src) => `<script type="module" defer src="${escapeHtml(src)}"></script>\n`).join('')}</head>
+${scripts.map((src) => `<script type="module" defer src="${escapeHtml(src)}"></script>\n`).join('')}${structured}</head>
 <body>
 <a class="skip" href="#main">Skip to content</a>
 <header class="site-header">
@@ -1115,7 +1162,7 @@ ${NAV.map(([key, href, label]) => `<li${key === 'agents' ? ` class="${FOR_AGENTS
 </header>
 <main id="main" tabindex="-1">
 <div class="wrap">
-${crumbHtml || ''}
+${crumbTrail?.html || ''}
 ${main}
 </div>
 </main>
@@ -1224,13 +1271,17 @@ const paragraphs = (text) =>
 
 const entries = (doc) => (Array.isArray(doc?.entries) ? doc.entries : [])
 
+/** The trail as HTML, with its items kept for the structured data. */
 export const crumbs = (items) => {
   const rest = (items ?? []).map((item) =>
     item.current
       ? `<li aria-current="page">${escapeHtml(item.label)}</li>`
       : `<li><a href="${escapeHtml(item.href)}">${escapeHtml(item.label)}</a></li>`,
   )
-  return !items?.length
-    ? ''
-    : `<nav aria-label="Breadcrumb"><ol class="crumbs"><li><a href="/">Home</a></li>${rest.join('')}</ol></nav>`
+  return {
+    items: items ?? [],
+    html: !items?.length
+      ? ''
+      : `<nav aria-label="Breadcrumb"><ol class="crumbs"><li><a href="/">Home</a></li>${rest.join('')}</ol></nav>`,
+  }
 }

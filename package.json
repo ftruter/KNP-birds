@@ -20,7 +20,8 @@
     "deploy": "node scripts/deploy.mjs",
     "dev": "wrangler dev",
     "check": "wrangler deploy --dry-run --outdir dist",
-    "audio": "node scripts/process-recordings.mjs"
+    "audio": "node scripts/process-recordings.mjs",
+    "indexnow:dry-run": "node scripts/indexnow.mjs --dry-run"
   },
   "engines": {
     "node": ">=22"

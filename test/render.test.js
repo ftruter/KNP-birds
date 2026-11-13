@@ -129,7 +129,10 @@ test('species HTML has the six comparisons, population, and no client script', a
     html,
     /<script type="module" defer src="\/app\.js\?v=[0-9a-f]+"><\/script>/,
   )
-  assert.doesNotMatch(html, /<script(?! type="module")/i)
+  assert.doesNotMatch(
+    html,
+    /<script(?! type="(module|application\/ld\+json)")/i,
+  )
   assert.doesNotMatch(html, /\sstyle=/)
   const headings = [...html.matchAll(/<h([1-6])\b/g)].map((match) =>
     Number(match[1]),
@@ -332,7 +335,10 @@ test('a family page shows the derived approximate total', async () => {
     html,
     /<script type="module" defer src="\/app\.js\?v=[0-9a-f]+"><\/script>/,
   )
-  assert.doesNotMatch(html, /<script(?! type="module")/i)
+  assert.doesNotMatch(
+    html,
+    /<script(?! type="(module|application\/ld\+json)")/i,
+  )
   const markdown = renderFamilyMarkdown(doc, [
     { doc: roller, imagesAvailable: {} },
   ])
@@ -503,7 +509,10 @@ test('a species stub states that details are unpublished and skips empty section
     html,
     /<script type="module" defer src="\/app\.js\?v=[0-9a-f]+"><\/script>/,
   )
-  assert.doesNotMatch(html, /<script(?! type="module")/i)
+  assert.doesNotMatch(
+    html,
+    /<script(?! type="(module|application\/ld\+json)")/i,
+  )
   const headings = [...html.matchAll(/<h([1-6])\b/g)].map((match) =>
     Number(match[1]),
   )
@@ -719,7 +728,10 @@ test('the credits page names sources, taxonomy, and the site, and credits media 
     html,
     /<script type="module" defer src="\/app\.js\?v=[0-9a-f]+"><\/script>/,
   )
-  assert.doesNotMatch(html, /<script(?! type="module")/i)
+  assert.doesNotMatch(
+    html,
+    /<script(?! type="(module|application\/ld\+json)")/i,
+  )
   for (const name of [
     'Birda SABAP2 Kruger checklist',
     'BirdLife South Africa Checklist of Birds in South Africa 2026',
