@@ -2,6 +2,7 @@ import { identifySrc } from './client.js'
 import { escapeHtml, inlineText } from './escape.js'
 import { crumbs, layout } from './html.js'
 import {
+  DOWNLOAD_LEAD,
   IDENTIFY_PHOTO_PATH,
   MODEL_CARD_URL,
   PHOTO_DETECTOR,
@@ -18,6 +19,7 @@ import {
   photoDownloadSummary,
   mebibytes,
   photoModelBase,
+  sentence,
 } from './identify.js'
 import { pageMd } from './markdown.js'
 
@@ -97,6 +99,21 @@ const reading = (doc) =>
     evaluationSentence(doc?.evaluation),
   ].filter(Boolean)
 
+/**
+ * What a visitor needs before trusting a name: none is certain, a bird out
+ * of season is marked, and the answer is always a bird from this guide. On
+ * the page these three stay in view and the rest opens under them.
+ */
+const FIRST_LINES = [0, 1, 5]
+
+const readingParts = (doc) => {
+  const lines = reading(doc)
+  return {
+    first: FIRST_LINES.map((index) => lines[index]),
+    more: lines.filter((_, index) => !FIRST_LINES.includes(index)),
+  }
+}
+
 export const weakFamilies = (doc) =>
   Object.entries(doc?.families ?? {})
     .filter(
@@ -133,6 +150,7 @@ const photos = (count) =>
 export const renderIdentifyPhotoHtml = ({ origin, doc }) => {
   const total = counts(doc)
   const weak = weakFamilies(doc)
+  const read = readingParts(doc)
   const main = `
 <h1>${TITLE}</h1>
 <p>${escapeHtml(INTRO)}</p>
@@ -142,8 +160,11 @@ export const renderIdentifyPhotoHtml = ({ origin, doc }) => {
 <p id="identify-status" class="identify-status" role="status" aria-live="polite"></p>
 <div id="identify-consent" hidden>
 <h2>Download the recogniser</h2>
-<p>${escapeHtml(DOWNLOAD_NOTE)}</p>
+<p>${escapeHtml(DOWNLOAD_LEAD)}</p>
 <button type="button" id="identify-download" class="identify-button">Download the recogniser (about ${mebibytes(photoDownloadBytes)} MiB)</button>
+<details class="more"><summary>What is in the download</summary>
+<p>${escapeHtml(sentence(photoDownloadSummary()))}</p>
+</details>
 </div>
 <progress id="identify-progress" class="identify-progress" max="1" value="0" aria-label="Progress" hidden></progress>
 <div id="identify-capture" hidden>
@@ -175,7 +196,9 @@ export const renderIdentifyPhotoHtml = ({ origin, doc }) => {
 <p id="identify-live-zoom-none" class="identify-note" hidden>${escapeHtml(ZOOM_NONE)}</p>
 <p>${escapeHtml(LIVE_HELP)}</p>
 </div>
+<details class="more identify-technical"><summary>Technical details</summary>
 <p id="identify-live-timing" class="identify-timing" hidden></p>
+</details>
 <p id="identify-offline" class="identify-note" hidden>${escapeHtml(OFFLINE_NOTE)}</p>
 <div id="identify-upgrade" class="identify-note" hidden>
 <p>${escapeHtml(UPGRADE_NOTE)}</p>
@@ -206,29 +229,37 @@ export const renderIdentifyPhotoHtml = ({ origin, doc }) => {
 <p id="identify-found" hidden>${escapeHtml(FOUND_NOTE)}</p>
 <p class="identify-actions"><button type="button" id="identify-recrop" class="identify-button identify-quiet">Change the crop</button> <button type="button" id="identify-next-bird" class="identify-button identify-quiet" hidden>Another bird in this photo</button></p>
 <ol id="identify-list" class="identify-list"></ol>
+<details class="more identify-technical"><summary>Technical details</summary>
 <p id="identify-timing" class="identify-timing" hidden></p>
+</details>
 </section>
 </section>
 <h2 id="reading">How to read the results</h2>
 <ul>
-${reading(doc)
-  .map((line) => `<li>${escapeHtml(line)}</li>`)
-  .join('\n')}
+${read.first.map((line) => `<li>${escapeHtml(line)}</li>`).join('\n')}
 </ul>
+<details class="more identify-more"><summary>How it works and how accurate it is</summary>
+<ul>
+${read.more.map((line) => `<li>${escapeHtml(line)}</li>`).join('\n')}
+</ul>
+<p>The model is the ${escapeHtml(PHOTO_MODEL_CREDIT.name)}, trained for this guide on ${Number(doc?.model?.trainingPhotos ?? 0).toLocaleString('en')} openly licensed iNaturalist photographs. See the <a href="${escapeHtml(MODEL_CARD_URL)}">model card</a>, the <a href="${escapeHtml(TRAINING_MANIFEST_URL)}">list of training photographs</a> and the <a href="/credits">credits</a>. To build on the model, its weights, training code and test photographs are <a href="${escapeHtml(doc?.model?.huggingFace ?? PHOTO_MODEL_HUB_URL)}">published on Hugging Face</a> under ${escapeHtml(PHOTO_MODEL_CREDIT.licence)}; this page never downloads from there. The bird is found with ${escapeHtml(PHOTO_DETECTOR_CREDIT.name)}, a general object detector from Google (${escapeHtml(PHOTO_DETECTOR_CREDIT.licence)}), with its weights unchanged.</p>
+</details>
 <h2 id="coverage">What it can and cannot recognise</h2>
 <p>${escapeHtml(photoCoverageSentence(total))}</p>
 ${
   weak.length
     ? `<h3>Weak groups</h3>
 <p>${escapeHtml(weakNote)}</p>
+<p>${weak.map((family) => `<a href="/family/${escapeHtml(family.slug)}">${escapeHtml(family.en)}</a>`).join(', ')}.</p>
+<details class="more"><summary>How often it was right for each</summary>
 <ul>
 ${weak.map((family) => `<li><a href="/family/${escapeHtml(family.slug)}">${escapeHtml(family.en)}</a>: right species in the first three for ${percent(family.evaluation.top3)} of ${family.evaluation.photos} test photos, right family for ${percent(family.evaluation.family)}</li>`).join('\n')}
-</ul>`
+</ul>
+</details>`
     : ''
 }
 ${group(`${total.notInModel} species that are not in the model`, list(doc?.notInModel), speciesLink)}
-${group(`${total.covered} species it can recognise`, list(doc?.covered), (item) => `${speciesLink(item)} (${photos(item.trainingPhotos)})`)}
-<p>The model is the ${escapeHtml(PHOTO_MODEL_CREDIT.name)}, trained for this guide on ${Number(doc?.model?.trainingPhotos ?? 0).toLocaleString('en')} openly licensed iNaturalist photographs. See the <a href="${escapeHtml(MODEL_CARD_URL)}">model card</a>, the <a href="${escapeHtml(TRAINING_MANIFEST_URL)}">list of training photographs</a> and the <a href="/credits">credits</a>. To build on the model, its weights, training code and test photographs are <a href="${escapeHtml(doc?.model?.huggingFace ?? PHOTO_MODEL_HUB_URL)}">published on Hugging Face</a> under ${escapeHtml(PHOTO_MODEL_CREDIT.licence)}; this page never downloads from there. The bird is found with ${escapeHtml(PHOTO_DETECTOR_CREDIT.name)}, a general object detector from Google (${escapeHtml(PHOTO_DETECTOR_CREDIT.licence)}), with its weights unchanged.</p>`
+${group(`${total.covered} species it can recognise`, list(doc?.covered), (item) => `${speciesLink(item)} (${photos(item.trainingPhotos)})`)}`
   return layout({
     title: 'Identify by photo · KNP Birds',
     description:

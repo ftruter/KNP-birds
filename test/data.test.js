@@ -20,6 +20,23 @@ import { readJson } from './helpers.js'
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..')
 
+test('a Kemp estimate is half to double its threshold, so a page can lead with the threshold', async () => {
+  // src/guide.js shows twice the low end of such a range as "± T". That is
+  // only the paper's own figure while this holds for every Kemp estimate.
+  const { species } = await readCatalog()
+  let checked = 0
+  for (const doc of species) {
+    const population = doc.population ?? {}
+    if (population.unit !== 'matureIndividuals') continue
+    const threshold = population.kemp?.threshold
+    if (!Number.isInteger(threshold)) continue
+    assert.equal(population.estimate.low * 2, threshold, doc.slug)
+    assert.equal(population.estimate.high, threshold * 2, doc.slug)
+    checked += 1
+  }
+  assert.ok(checked > 400, `only ${checked} Kemp estimates were checked`)
+})
+
 test('every data file matches the schema, slugs, and colour vocabulary', async () => {
   const schema = JSON.parse(
     await readFile(path.join(root, 'docs/content.schema.json'), 'utf8'),

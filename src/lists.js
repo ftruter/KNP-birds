@@ -2,9 +2,13 @@ import { escapeHtml } from './escape.js'
 import { compareSortKeys } from './sort.js'
 import {
   RESIDENCY_ANCHOR,
+  FIGURE_NOTE,
   SEASON_NOTE,
+  TABLE_CAPTION,
   formatEstimate,
+  formatFigure,
   formatSeasonCount,
+  formatSeasonFigure,
   formatSeasonTotal,
 } from './seasons.js'
 
@@ -122,16 +126,17 @@ const speciesCells = (row, format) => {
     en: `<th scope="row"${sortAttr(textOf(row.en))}><a href="/species/${escapeHtml(row.slug)}">${escapeHtml(row.en)}</a></th>`,
     af: `<td${sortAttr(textOf(row.af))}>${escapeHtml(row.af || '—')}</td>`,
     latin: `<td${sortAttr(textOf(row.scientificName))}><em>${escapeHtml(row.scientificName)}</em></td>`,
-    summer: `<td class="num"${sortAttr(speciesSortValue(row, 'summer'))}>${escapeHtml(seasonPopulation(view, 'summer'))}</td>`,
-    winter: `<td class="num"${sortAttr(speciesSortValue(row, 'winter'))}>${escapeHtml(seasonPopulation(view, 'winter'))}</td>`,
+    summer: `<td class="num"${sortAttr(speciesSortValue(row, 'summer'))}>${escapeHtml(seasonPopulation(view, 'summer', formatFigure))}</td>`,
+    winter: `<td class="num"${sortAttr(speciesSortValue(row, 'winter'))}>${escapeHtml(seasonPopulation(view, 'winter', formatFigure))}</td>`,
   }
 }
 
-const seasonPopulation = (row, season) => {
+/** A page passes `formatFigure` for the single figure; Markdown keeps the range. */
+const seasonPopulation = (row, season, figure = formatEstimate) => {
   const present = row.presence?.[season]
   if (present == null) return 'Unknown'
   if (!present) return '—'
-  return formatEstimate(row.estimate, row.format)
+  return figure(row.estimate, row.format)
 }
 
 /** True when a seasonal family figure has a residency gap to explain. */
@@ -151,8 +156,8 @@ const familyCells = (row, format) => ({
   en: `<th scope="row"${sortAttr(textOf(row.en))}><a href="/family/${escapeHtml(row.slug)}">${escapeHtml(row.en)}</a></th>`,
   af: `<td${sortAttr(textOf(row.af))}>${escapeHtml(row.af || '—')}</td>`,
   latin: `<td${sortAttr(textOf(row.scientificName))}><em>${escapeHtml(row.scientificName)}</em></td>`,
-  summer: `<td class="num"${sortAttr(familySortValue(row, 'summer'))}>${familySeasonHtml(row, row.summer, formatSeasonTotal(row.summer, format))}</td>`,
-  winter: `<td class="num"${sortAttr(familySortValue(row, 'winter'))}>${familySeasonHtml(row, row.winter, formatSeasonTotal(row.winter, format))}</td>`,
+  summer: `<td class="num"${sortAttr(familySortValue(row, 'summer'))}>${familySeasonHtml(row, row.summer, formatSeasonFigure(row.summer, format))}</td>`,
+  winter: `<td class="num"${sortAttr(familySortValue(row, 'winter'))}>${familySeasonHtml(row, row.winter, formatSeasonFigure(row.winter, format))}</td>`,
   summerCount: `<td class="num"${sortAttr(familySortValue(row, 'summerCount'))}>${familySeasonHtml(row, row.summer, formatSeasonCount(row.summer, format))}</td>`,
   winterCount: `<td class="num"${sortAttr(familySortValue(row, 'winterCount'))}>${familySeasonHtml(row, row.winter, formatSeasonCount(row.winter, format))}</td>`,
 })
@@ -162,7 +167,7 @@ const tableHtml = ({ caption, columns, rows, cells, path, active, empty }) => {
   const ordered = sortRows(rows, active.sort, active.dir, active.valueOf)
   return `<div class="table-wrap">
 <table class="species">
-<caption>${escapeHtml(caption)} ${escapeHtml(SEASON_NOTE)}</caption>
+<caption>${escapeHtml(caption)}. ${escapeHtml(TABLE_CAPTION)}</caption>
 <thead>
 <tr>
 ${columns.map((column) => headerHtml(column, active, path)).join('\n')}
@@ -177,7 +182,11 @@ ${ordered
   .join('\n')}
 </tbody>
 </table>
-</div>`
+</div>
+<details class="more table-note"><summary>About these figures</summary>
+<p>${escapeHtml(FIGURE_NOTE)}</p>
+<p>${escapeHtml(SEASON_NOTE)}</p>
+</details>`
 }
 
 export const speciesTableHtml = ({

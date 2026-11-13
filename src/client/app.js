@@ -261,7 +261,30 @@ const bindCopy = () => {
   })
 }
 
+// A link to something inside a closed disclosure, such as the note on a
+// family's total, opens the disclosure, so the reader lands on the text and
+// not on a closed heading. With the script off the link still lands there.
+const openTarget = () => {
+  let id = ''
+  try {
+    id = decodeURIComponent(window.location.hash.slice(1))
+  } catch {
+    return
+  }
+  const target = id ? document.getElementById(id) : null
+  const details = target?.closest('details')
+  if (!details || details.open) return
+  details.open = true
+  target.scrollIntoView()
+}
+
+const bindTargets = () => {
+  window.addEventListener('hashchange', openTarget)
+  openTarget()
+}
+
 bindTables()
 bindZoom()
 bindSearch()
 bindCopy()
+bindTargets()

@@ -84,6 +84,14 @@ export const runtimeBytes =
 export const downloadBytes = MODEL_ASSETS.model.bytes + runtimeBytes
 
 /** The sentence both pages use to say what the download is made of. */
+/** What a page says before the download. The size breakdown sits behind it. */
+export const DOWNLOAD_LEAD =
+  'The recogniser runs on this device, so it is downloaded once and then kept here. After that, recognition needs no signal for as long as this page stays open.'
+
+/** "about 35 MiB, made up of …" as a sentence of its own. */
+export const sentence = (text) =>
+  `${text.charAt(0).toUpperCase()}${text.slice(1)}.`
+
 export const downloadSummary = (modelBytes, otherPage) =>
   `about ${mebibytes(modelBytes + runtimeBytes)} MiB, made up of a ${mebibytes(modelBytes)} MiB model and a ${mebibytes(runtimeBytes)} MiB runtime that ${otherPage} also uses`
 

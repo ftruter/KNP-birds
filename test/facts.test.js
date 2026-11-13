@@ -193,7 +193,7 @@ test('the species page shows the new fields in HTML and Markdown, and nothing wh
   assert.match(html, /<dt>Flight<\/dt><dd>Flightless<\/dd>/)
   assert.match(
     html,
-    /<dt>Where in Kruger<\/dt><dd>Central, south\. Nests along the Sabie &amp; Olifants &lt;rivers&gt;\.<\/dd>/,
+    /<dt>Where in Kruger<\/dt><dd><details class="more"><summary>Central, south<\/summary>\n<p>Nests along the Sabie &amp; Olifants &lt;rivers&gt;\.<\/p>\n<\/details><\/dd>/,
   )
   assert.match(md, /^- Wingspan: 196–225 cm$/m)
   assert.match(md, /^- Mass: 4000–7200 g \(4–7\.2 kg\)$/m)

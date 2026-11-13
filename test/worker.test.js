@@ -102,7 +102,8 @@ test('pages are served in html, markdown, and json', async () => {
   assert.match(familyPage, /href="\/species\/coracias-caudatus"/)
   assert.match(familyPage, /Lilac-breasted Roller/)
   assert.match(familyPage, /Includes 5 of 5 species/)
-  assert.match(familyPage, /18,960–75,840 mature individuals/)
+  assert.match(familyPage, /about <\/span>37,920 mature individuals/)
+  assert.match(familyPage, /Range: 18,960 to 75,840\./)
   assert.match(familyPage, /First to look for/)
 })
 

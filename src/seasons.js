@@ -6,7 +6,15 @@ export const SUMMER_MONTHS = [10, 11, 12, 1, 2, 3]
 export const WINTER_MONTHS = [4, 5, 6, 7, 8, 9]
 
 export const SEASON_NOTE =
-  'Summer is October to March and winter is April to September (southern hemisphere). A species is listed in a season when monthsPresent meets that season. If months are missing, a resident is in both seasons and a migrant is in summer only. Anything still unknown is not guessed. Unknown or partial means residency (status or monthsPresent) is not published yet for that species, or for some species in a family. The approximate total on a family page covers all seasons, so it can have a figure where a season shows Unknown, and the seasons need not add up to it.'
+  'Summer is October to March and winter is April to September (southern hemisphere). A species is listed in a season when the months it is present include part of that season. If its months are not recorded, a resident is in both seasons and a migrant is in summer only. Anything still unknown is not guessed. Unknown or partial means the status or months of that species, or of some species in a family, are not published yet. The approximate total on a family page covers all seasons, so it can have a figure where a season shows Unknown, and the seasons need not add up to it.'
+
+/** Stays in view under a table on a page. The rest is behind "About these figures". */
+export const TABLE_CAPTION =
+  'Population figures are approximate. Summer is October to March, winter April to September.'
+
+/** How to read the single figure in a table cell on a page. */
+export const FIGURE_NOTE =
+  'Most population figures are the middle of a range that runs from half the figure to double it. The species page gives the range and where it comes from.'
 
 /** Anchor on a family page for the note that explains seasonal gaps. */
 export const RESIDENCY_ANCHOR = 'residency'
@@ -92,6 +100,26 @@ export const formatEstimate = (estimate, format) => {
   return label ? `${range} ${label}` : range
 }
 
+/** True for an estimate stored as half to double a figure, as Kemp's are. */
+const halfToDouble = (low, high) =>
+  Number.isInteger(low) && Number.isInteger(high) && low > 0 && high === low * 4
+
+/**
+ * One figure for a table cell on a page: the middle of a half-to-double
+ * range, or the estimate as stored when it is not such a range. The species
+ * page has the range. The Markdown tables keep `formatEstimate`.
+ */
+export const formatFigure = (estimate, format) => {
+  if (!estimate || !halfToDouble(estimate.low, estimate.high))
+    return formatEstimate(estimate, format)
+  const figure = formatInteger(estimate.low * 2, format)
+  const label =
+    estimate.unit && estimate.unit !== 'matureIndividuals'
+      ? unitLabel(estimate.unit)
+      : ''
+  return label ? `${figure} ${label}` : figure
+}
+
 export const seasonPopulation = (row, season) => {
   const present = row.presence?.[season]
   if (present == null) return 'Unknown'
@@ -151,4 +179,12 @@ export const formatSeasonTotal = (total, format) => {
       ? formatInteger(total.low, format)
       : `${formatInteger(total.low, format)}–${formatInteger(total.high, format)}`
   return total.partial ? `${range} (partial)` : range
+}
+
+/** The family figure for a table cell on a page. See `formatFigure`. */
+export const formatSeasonFigure = (total, format) => {
+  if (!total || total.present === 0 || !halfToDouble(total.low, total.high))
+    return formatSeasonTotal(total, format)
+  const figure = formatInteger(total.low * 2, format)
+  return total.partial ? `${figure} (partial)` : figure
 }

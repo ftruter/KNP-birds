@@ -4,6 +4,7 @@ import { crumbs, layout } from './html.js'
 import {
   IDENTIFY_SOUND_PATH,
   MODEL_ASSETS,
+  DOWNLOAD_LEAD,
   MODEL_CREDIT,
   NO_JS_NOTE,
   PRIVACY_NOTE,
@@ -13,6 +14,7 @@ import {
   mebibytes,
   modelBase,
   modelChecks,
+  sentence,
 } from './identify.js'
 import { pageMd } from './markdown.js'
 
@@ -27,6 +29,9 @@ const READING = [
   'While it listens, the page checks the last 3 seconds once a second and lists every species it has heard in the last 10 seconds. Birds that call together are all listed. A species leaves the list when it has not been heard for 10 seconds. Only likely and possible species are listed.',
   'In a test on one reference recording for each species, the first answer was right for 81% of them and the right bird was in the first three for 92%. Those recordings are clean and were probably used to train the model, so a phone recording in the field will do worse. Field recordings have not been measured yet.',
 ]
+/** What a visitor needs before trusting a name. The rest opens under it. */
+const READING_FIRST = READING.slice(0, 3)
+const READING_MORE = READING.slice(3)
 const TIPS =
   'Get as close as you safely can, point the microphone at the bird, and keep still. Wind, engines and talking make recognition worse. Recording stops by itself after 10 seconds.'
 const LISTEN_NOTE =
@@ -61,8 +66,11 @@ export const renderIdentifySoundHtml = ({ origin, doc }) => {
 <p id="identify-status" class="identify-status" role="status" aria-live="polite"></p>
 <div id="identify-consent" hidden>
 <h2>Download the recogniser</h2>
-<p>${escapeHtml(DOWNLOAD_NOTE)}</p>
+<p>${escapeHtml(DOWNLOAD_LEAD)}</p>
 <button type="button" id="identify-download" class="identify-button">Download the recogniser (about ${mebibytes(downloadBytes)} MiB)</button>
+<details class="more"><summary>What is in the download</summary>
+<p>${escapeHtml(sentence(downloadSummary(MODEL_ASSETS.model.bytes, 'Identify by photo')))}</p>
+</details>
 </div>
 <progress id="identify-progress" class="identify-progress" max="1" value="0" aria-label="Progress" hidden></progress>
 <div id="identify-capture" hidden>
@@ -85,19 +93,26 @@ export const renderIdentifySoundHtml = ({ origin, doc }) => {
 <h2 id="identify-results-heading" tabindex="-1">Results</h2>
 <p id="identify-summary"></p>
 <ol id="identify-list" class="identify-list"></ol>
+<details class="more identify-technical"><summary>Technical details</summary>
 <p id="identify-timing" class="identify-timing" hidden></p>
+</details>
 </section>
 </section>
 <h2 id="reading">How to read the results</h2>
 <ul>
-${READING.map((line) => `<li>${escapeHtml(line)}</li>`).join('\n')}
+${READING_FIRST.map((line) => `<li>${escapeHtml(line)}</li>`).join('\n')}
 </ul>
+<details class="more identify-more"><summary>How it works and how accurate it is</summary>
+<ul>
+${READING_MORE.map((line) => `<li>${escapeHtml(line)}</li>`).join('\n')}
+</ul>
+<p>The model is ${escapeHtml(doc?.model?.name ?? MODEL_CREDIT.name)}, used under ${escapeHtml(MODEL_CREDIT.licence)}. See the <a href="/credits">credits</a>.</p>
+</details>
 <h2 id="coverage">What it can and cannot recognise</h2>
 <p>${escapeHtml(coverageSentence(total))}</p>
 ${group(`${total.notInModel} species that are not in the model`, list(doc?.notInModel), speciesLink)}
 ${group(`${total.broaderLabelOnly} species with only a broader label`, list(doc?.broaderLabelOnly), (item) => `${speciesLink(item)}. ${escapeHtml(item.reason)}.`)}
-${group(`${total.covered} species it can recognise`, list(doc?.covered), (item) => `${speciesLink(item)}${item.partial ? `. Partly covered: ${escapeHtml(item.partial)}.` : ''}`)}
-<p>The model is ${escapeHtml(doc?.model?.name ?? MODEL_CREDIT.name)}, used under ${escapeHtml(MODEL_CREDIT.licence)}. See the <a href="/credits">credits</a>.</p>`
+${group(`${total.covered} species it can recognise`, list(doc?.covered), (item) => `${speciesLink(item)}${item.partial ? `. Partly covered: ${escapeHtml(item.partial)}.` : ''}`)}`
   return layout({
     title: 'Identify by sound · KNP Birds',
     description:

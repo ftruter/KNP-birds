@@ -162,7 +162,7 @@ Media licences are separate from the Apache-2.0 licence of the code. CC BY, CC B
 
 ### Population
 
-`population` is an approximate Kruger estimate. The method, the Kemp et al. 2001 citation, and the half-to-double interval are written once in [`population-sources.md`](population-sources.md).
+`population` is an approximate Kruger estimate. The method, the Kemp et al. 2001 citation, and the half-to-double interval are written once in [`population-sources.md`](population-sources.md), with how a page shows them: one figure in view and the range behind it.
 
 | Field | Meaning |
 | --- | --- |

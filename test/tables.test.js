@@ -4,6 +4,8 @@ import { numberFormatFor } from '../src/numbers.js'
 import {
   familySeasonTotal,
   formatEstimate,
+  formatFigure,
+  formatSeasonFigure,
   formatSeasonTotal,
   seasonPresence,
 } from '../src/seasons.js'
@@ -116,6 +118,40 @@ test('sort is English by default, nulls last both ways, and Latin breaks ties', 
   assert.equal(afDesc[0].af, 'B')
 })
 
+test('a page table shows one figure for a half-to-double range, and other estimates as stored', () => {
+  const integer = numberFormatFor('en-GB').integer
+  // The middle of a Kemp range is the threshold the paper gives.
+  assert.equal(
+    formatFigure(
+      { low: 8192, high: 32768, unit: 'matureIndividuals' },
+      integer,
+    ),
+    '16,384',
+  )
+  // Anything else is left as it is: no midpoint is worked out.
+  assert.equal(
+    formatFigure({ low: 742, high: 1066, unit: 'breedingPairs' }, integer),
+    '742–1,066 breeding pairs',
+  )
+  assert.equal(
+    formatFigure({ low: 180, high: 180, unit: 'groups' }, integer),
+    '180 groups',
+  )
+  assert.equal(formatFigure(null, integer), 'Unknown')
+  // A family season: the sum of the thresholds, with its qualifier kept.
+  const season = { present: 3, unknown: 1, low: 8, high: 32, partial: true }
+  assert.equal(formatSeasonFigure(season, integer), '16 (partial)')
+  assert.equal(formatSeasonTotal(season, integer), '8–32 (partial)')
+  assert.equal(
+    formatSeasonFigure({ present: 0, unknown: 2, low: null, high: null }),
+    'Unknown',
+  )
+  assert.equal(
+    formatSeasonFigure({ present: 0, unknown: 0, low: null, high: null }),
+    '—',
+  )
+})
+
 test('a species table sorts and does not add a family column', () => {
   const html = speciesTableHtml({
     rows: [
@@ -132,8 +168,11 @@ test('a species table sorts and does not add a family column', () => {
   assert.match(html, /href="\/species\?sort=latin&amp;dir=asc"/)
   assert.doesNotMatch(html, />Family</)
   assert.doesNotMatch(html, /Accipitridae/)
-  assert.match(html, /64–256/)
+  // A page shows the middle of the range; the species page has the range.
+  assert.match(html, /<td class="num"[^>]*>128<\/td>/)
+  assert.doesNotMatch(html, /64–256/)
   assert.match(html, /<td class="num">—<\/td>/)
+  assert.match(html, /<summary>About these figures<\/summary>/)
   assert.match(html, /October to March/)
   assert.doesNotMatch(html, /<script/i)
 })

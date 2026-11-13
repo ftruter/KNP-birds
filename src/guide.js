@@ -65,6 +65,10 @@ export const residencyGapText = (residency, format) => {
 export const FAMILY_TOTAL_INTRO =
   'The total for the species counted in mature individuals:'
 
+/** The same, as a sentence, for the detail under the figure on a page. */
+export const FAMILY_TOTAL_WHAT =
+  'This is the total for the species counted in mature individuals.'
+
 /** Goes with an incomplete total: which species it leaves out, and why. */
 export const FAMILY_TOTAL_LEFT_OUT =
   'Species counted in groups, breeding pairs or territories, and species with no estimate, are left out.'
@@ -177,7 +181,7 @@ export const catalogSentence = (
 export const listIntro = (count, one, many) =>
   count === 0
     ? `No ${many} are listed yet.`
-    : `The guide lists ${count} ${countWord(count, one, many)}. The list is alphabetical by scientific name.`
+    : `The guide lists ${count} ${countWord(count, one, many)}. The list is alphabetical by English name.`
 
 export const UNPUBLISHED_SPECIES =
   'The details for this species have not been published yet.'
@@ -243,12 +247,23 @@ export const statusLabel = (status) =>
 export const familyLabel = (slug) =>
   !slug ? '' : slug.charAt(0).toUpperCase() + slug.slice(1)
 
-export const sizeLabel = (size) => {
+/** The body length alone: a page shows it and puts the note behind it. */
+export const lengthLabel = (size) => {
   const range = size?.lengthCm
   if (!range || typeof range.min !== 'number' || typeof range.max !== 'number')
     return ''
-  const length =
-    range.min === range.max ? `${range.min} cm` : `${range.min}–${range.max} cm`
+  return range.min === range.max
+    ? `${range.min} cm`
+    : `${range.min}–${range.max} cm`
+}
+
+/** How the sources differ on size, and the like. Empty when there is none. */
+export const sizeNote = (size) =>
+  typeof size?.note === 'string' ? size.note.trim() : ''
+
+export const sizeLabel = (size) => {
+  const length = lengthLabel(size)
+  if (!length) return ''
   return size.note ? `${length}. ${size.note}` : length
 }
 
@@ -266,6 +281,35 @@ const rangeText = (low, high, unit, format) => {
   return range && label ? `${range} ${label}` : range
 }
 
+/**
+ * The one figure a page leads with, and the range behind it. A Kemp estimate
+ * is stored as half to double the paper's threshold, so twice its low end is
+ * the threshold itself, and a page shows that as "± T". Any other estimate is
+ * shown as it is stored. No midpoint is worked out for it, because that would
+ * be a figure the data does not hold.
+ */
+export const headlineFigure = (low, high, unit, format) => {
+  const fmt = (value) => formatInteger(value, format)
+  if (
+    Number.isInteger(low) &&
+    Number.isInteger(high) &&
+    low > 0 &&
+    high === low * 4
+  ) {
+    const label = unitLabel(unit)
+    return {
+      approx: true,
+      text: label ? `${fmt(low * 2)} ${label}` : fmt(low * 2),
+      rangeLine: `Range: ${fmt(low)} to ${fmt(high)}.`,
+    }
+  }
+  return {
+    approx: false,
+    text: rangeText(low, high, unit, format) || '',
+    rangeLine: '',
+  }
+}
+
 export const familyTotalModel = (population, format) => {
   const low = Number.isInteger(population?.low) ? population.low : null
   const high = Number.isInteger(population?.high) ? population.high : null
@@ -279,6 +323,7 @@ export const familyTotalModel = (population, format) => {
   const fmt = (value) => formatInteger(value, format)
   return {
     range,
+    headline: headlineFigure(low, high, 'matureIndividuals', format),
     counted,
     total,
     complete: population?.complete === true,
@@ -309,6 +354,7 @@ export const populationModel = (population, format) => {
   const high = Number.isInteger(estimate.high) ? estimate.high : null
   return {
     range: rangeText(low, high, population?.unit, format),
+    headline: headlineFigure(low, high, population?.unit, format),
     trend: TREND_LABEL[population?.trend] || TREND_LABEL.unknown,
     confidence: CONFIDENCE_LABEL[population?.confidence] || '',
     asOf: Number.isInteger(population?.asOf) ? population.asOf : null,

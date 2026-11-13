@@ -102,11 +102,11 @@ test('a family with estimates but no presence is Unknown by season and links to 
     4,
   )
   const bb = html.match(/<tr data-latin="Bbidae">.*<\/tr>/)[0]
-  assert.match(bb, /href="\/family\/bbidae#residency"[^>]*>8–32 \(partial\)</)
+  assert.match(bb, /href="\/family\/bbidae#residency"[^>]*>16 \(partial\)</)
   assert.match(bb, /href="\/family\/bbidae#residency"[^>]*>1 \(partial\)</)
   const cc = html.match(/<tr data-latin="Ccidae">.*<\/tr>/)[0]
   assert.doesNotMatch(cc, /#residency/)
-  assert.match(cc, />2–8</)
+  assert.match(cc, />4</)
   assert.ok(html.includes(SEASON_NOTE))
   assert.match(SEASON_NOTE, /covers all seasons/)
 
@@ -130,9 +130,11 @@ test('the family page labels its total as all seasons and explains seasonal Unkn
   }
   const html = renderFamilyHtml({ origin: 'https://birds.truter.world', doc })
   assert.match(html, /Approximate total, all seasons/)
-  assert.match(html, /12–48 mature individuals/)
+  assert.match(html, /about <\/span>24 mature individuals<\/summary>/)
+  assert.match(html, /Range: 12 to 48\./)
   assert.match(html, /Includes 2 of 2 species/)
-  assert.match(html, /<div id="residency">\n<p>This total covers all seasons\./)
+  assert.match(html, /<details class="more" id="residency">/)
+  assert.match(html, /<p>This total covers all seasons\./)
   assert.match(html, /<a href="\/families">Families by season<\/a>/)
   assert.match(html, /No species in this family has a published residency/)
   assert.match(html, /show Unknown/)
@@ -179,7 +181,7 @@ test('the family page labels its total as all seasons and explains seasonal Unkn
   })
   assert.match(
     knownHtml,
-    /<div id="residency">\n<p>This total covers all seasons\./,
+    /<details class="more" id="residency">[\s\S]*<p>This total covers all seasons\./,
   )
   assert.doesNotMatch(knownHtml, /published residency/)
 })

@@ -548,12 +548,12 @@ code {
 }
 
 /* Small labels are quiet: brown on the cream page, muted on the dark one. */
-.kicker, .estimate-label, .afrikaans {
+.kicker, .afrikaans {
   color: var(--label);
   font-family: var(--sans);
 }
 
-.kicker, .estimate-label {
+.kicker {
   margin-block: 0;
   margin-inline: 0;
   font-size: var(--fs-xs);
@@ -573,53 +573,9 @@ h1:has(+ .latin) { margin-block-end: var(--gap-half); }
 
 .afrikaans { margin: 0; font-size: var(--fs-md); }
 
-.species-layout,
-.split {
-  display: grid;
-  grid-template-columns: minmax(0, 1fr);
-  gap: var(--gap) var(--gap-2);
-  align-items: start;
-  margin-block: var(--gap);
-}
-
-/* A grid cell starts and ends flush, so the grid's gap is the only space between cells. The same goes for the contents of a card. */
-.hero > * > :first-child, .species-layout > * > :first-child, .split > * > :first-child { margin-block-start: 0; }
-.hero > * > :last-child, .species-layout > * > :last-child, .split > * > :last-child,
-.population > :last-child, .population > :last-child > :last-child,
-.search-snippets dd:last-child { margin-block-end: 0; }
-
-.lead-split {
-  display: grid;
-  grid-template-columns: minmax(0, 1fr);
-  gap: var(--gap) var(--gap-2);
-  align-items: start;
-  margin-block: var(--gap);
-}
-
-.lead-split > p { margin-block: 0; max-inline-size: none; }
-
-/* A side note: a rule beside it and quieter text, not a card. */
-.lead-note {
-  margin: 0;
-  padding-inline-start: var(--gap);
-  border-inline-start: 1px solid var(--line);
-  color: var(--muted);
-  font-family: var(--sans);
-  font-size: var(--fs-sm);
-}
-
-.lead-note p { margin: 0; }
-
-@container wrap (min-width: 52rem) {
-  .lead-split,
-  .split {
-    grid-template-columns: minmax(0, 75ch) minmax(18rem, 1fr);
-  }
-  .species-layout {
-    grid-template-columns: minmax(0, 1fr) minmax(18rem, 24rem);
-  }
-  .species-aside { position: sticky; inset-block-start: 1rem; }
-}
+/* A grid cell starts and ends flush, so the grid's gap is the only space between cells. */
+.hero > * > :first-child { margin-block-start: 0; }
+.hero > * > :last-child, .search-snippets dd:last-child { margin-block-end: 0; }
 
 .facts {
   display: grid;
@@ -643,26 +599,29 @@ h1:has(+ .latin) { margin-block-end: var(--gap-half); }
 
 .facts dd { margin: 0; }
 
-.population {
-  background: var(--surface);
-  border: 1px solid var(--line);
-  border-radius: var(--radius);
-  box-shadow: var(--shadow);
-  padding: var(--gap);
-}
+/* The facts and the comparisons keep to a readable width on a wide screen. */
+.facts, .comparison { max-inline-size: 60rem; }
 
-.population h2,
-.population h3 { margin-block-start: 0; }
-
-.estimate-range {
-  margin-block: 0 var(--gap-half);
+/* A fact with its detail behind it. The fact is the summary and stays in view; the detail opens under it and is quieter. It is used for the population figure, the size note, and the notes under a table and on the identify pages. */
+.more summary {
+  inline-size: fit-content;
+  max-inline-size: 100%;
+  cursor: pointer;
   font-family: var(--sans);
-  font-size: var(--fs-xl);
-  font-weight: 700;
-  line-height: 1.25;
-  color: var(--heading);
-  font-variant-numeric: tabular-nums;
 }
+.more summary:focus-visible { outline: 3px solid var(--focus); outline-offset: 2px; }
+.more[open] > summary { margin-block-end: var(--gap-half); }
+.more > :not(summary) { color: var(--muted); font-size: var(--fs-sm); }
+.more > p, .more > ul, .more > ol { margin-block: 0 var(--gap-half); }
+.more > ul, .more > ol { padding-inline-start: var(--gap); }
+.more > :last-child { margin-block-end: 0; }
+.more a { color: inherit; }
+.population summary { font-variant-numeric: tabular-nums; }
+.table-note { max-inline-size: 75ch; margin-block-end: var(--gap); font-family: var(--sans); }
+.identify-more { max-inline-size: 75ch; margin-block: var(--gap); }
+/* The time a recognition took. The box is there only when there is a time to show. */
+.identify-technical { margin-block-start: var(--gap); font-family: var(--sans); }
+.identify-technical:has(> [hidden]) { display: none; }
 
 .comparison {
   margin-block: var(--gap);
@@ -1101,7 +1060,7 @@ audio {
   .site-header { border-block-end-color: CanvasText; }
   .site-search input, .site-search-hint kbd { border-color: CanvasText; }
   .search-result { border-color: CanvasText; box-shadow: none; }
-  .sample, .plate, .table-wrap, .population, .comparison, .home-action, .browse-links li, .species-card, .facts, .sitemap > li {
+  .sample, .plate, .table-wrap, .comparison, .home-action, .browse-links li, .species-card, .facts, .sitemap > li {
     border-color: CanvasText;
     box-shadow: none;
   }
@@ -1253,7 +1212,7 @@ audio {
 .identify p { max-inline-size: 75ch; }
 .identify-status { margin: 0 0 var(--gap-half); font-family: var(--sans); font-weight: 600; min-block-size: 1.5em; }
 .identify-progress { inline-size: 100%; block-size: 0.9rem; }
-.identify-timing { margin-block: var(--gap) 0; font-family: var(--sans); font-size: var(--fs-xs); color: var(--muted); }
+.identify-timing { font-family: var(--sans); }
 
 .identify-actions {
   display: flex;
@@ -1398,7 +1357,7 @@ audio {
 .identify-pair { display: flex; gap: var(--gap-half); }
 
 .identify-coverage { max-inline-size: 75ch; margin-block: var(--gap-half); }
-.identify-coverage summary { cursor: pointer; font-family: var(--sans); font-weight: 600; padding-block: var(--gap-half); }
+.identify-coverage summary { cursor: pointer; font-family: var(--sans); padding-block: var(--gap-half); }
 .identify-coverage ul { columns: 18rem; padding-inline-start: var(--gap); }
 .identify-coverage .latin { font-size: 0.9em; }
 

@@ -101,9 +101,16 @@ test('species HTML has the six comparisons, population, and no client script', a
   }
   assert.match(html, /No visible difference/)
   assert.match(html, /fill="#B07CC8"/)
-  assert.match(html, /class="population"/)
-  assert.match(html, /Approximate estimate/)
-  assert.match(html, /8,192–32,768 mature individuals/)
+  // The population is a row of the facts list: one figure in view, and the
+  // range and the method behind it.
+  assert.match(html, /<dt>Numbers in Kruger<\/dt><dd class="population">/)
+  assert.match(
+    html,
+    /<summary><span aria-hidden="true">± <\/span><span class="visually-hidden">about <\/span>16,384 mature individuals<\/summary>/,
+  )
+  assert.match(html, /Approximate estimate\. Range: 8,192 to 32,768\./)
+  assert.doesNotMatch(html, /8,192–32,768/)
+  assert.doesNotMatch(html, /<aside/)
   assert.match(html, /Kemp et al\. 2001/)
   assert.match(html, /Confidence: Low/)
   assert.match(html, /As of 2001/)
@@ -193,6 +200,41 @@ test('escaped names cannot inject markup, and AI images are labelled', async () 
   assert.doesNotMatch(missing, /<img /)
 })
 
+test('a page leads with one population figure and never works one out', async () => {
+  const page = async (slug) =>
+    renderSpeciesHtml({
+      origin: 'https://birds.truter.world',
+      doc: await readJson(`data/species/${slug}.json`),
+      colourMap: new Map(),
+      imagesAvailable: {},
+    })
+  const row = (html) =>
+    html.match(
+      /<dt>Numbers in Kruger<\/dt><dd class="population">[\s\S]*?<\/details><\/dd>/,
+    )[0]
+  // An exact count is shown as it is, with no sign and no range line.
+  const hornbill = row(await page('bucorvus-leadbeateri'))
+  assert.match(hornbill, /<summary>180 groups<\/summary>/)
+  assert.doesNotMatch(hornbill, /±|Range:/)
+  // A measured range that is not half to double keeps both ends: a midpoint
+  // would be a figure that no source gives.
+  const stork = row(await page('ephippiorhynchus-senegalensis'))
+  assert.match(stork, /<summary>25–30 breeding pairs<\/summary>/)
+  assert.doesNotMatch(stork, /±|Range:/)
+  // No estimate says so, and still gives its trend behind the line.
+  const myna = row(await page('acridotheres-tristis'))
+  assert.match(myna, /<summary>No numeric estimate yet\.<\/summary>/)
+  assert.match(myna, /Trend: Unknown\./)
+  // The detail is closed until the visitor opens it.
+  for (const html of [hornbill, stork, myna])
+    assert.doesNotMatch(html, /<details[^>]* open/)
+  // The size leads with the length, and the note on sources is behind it.
+  assert.match(
+    await page('bucorvus-leadbeateri'),
+    /<dt>Size<\/dt><dd><details class="more"><summary>90 cm<\/summary>\n<p>Newman/,
+  )
+})
+
 test('a family page shows the derived approximate total', async () => {
   const doc = await readJson('data/family/coraciidae.json')
   const roller = await readJson('data/species/coracias-caudatus.json')
@@ -202,9 +244,16 @@ test('a family page shows the derived approximate total', async () => {
     plates: [{ doc: roller, imagesAvailable: {} }],
   })
   assert.match(html, /Approximate total/)
-  assert.match(html, /18,960–75,840 mature individuals/)
+  assert.match(
+    html,
+    /<summary><span aria-hidden="true">± <\/span><span class="visually-hidden">about <\/span>37,920 mature individuals<\/summary>/,
+  )
+  assert.match(html, /Range: 18,960 to 75,840\./)
   assert.match(html, /Includes 5 of 5 species/)
-  assert.match(html, /The total for the species counted in mature individuals:/)
+  assert.match(
+    html,
+    /This is the total for the species counted in mature individuals\./,
+  )
   assert.doesNotMatch(html, /This total is incomplete/)
   assert.match(html, /First to look for/)
   assert.ok(
@@ -362,7 +411,8 @@ test('a species stub states that details are unpublished and skips empty section
   assert.match(html, /class="afrikaans">Lysternagtegaal</)
   assert.match(html, new RegExp(UNPUBLISHED_SPECIES))
   assert.match(html, /href="\/family\/muscicapidae"/)
-  assert.match(html, /128–512 mature individuals/)
+  assert.match(html, /about <\/span>256 mature individuals<\/summary>/)
+  assert.match(html, /Range: 128 to 512\./)
   assert.match(html, /Kemp et al\. 2001/)
   assert.doesNotMatch(html, /No numeric estimate yet/)
   const unsourced = await readJson('data/species/buteo-buteo.json')

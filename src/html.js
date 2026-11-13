@@ -17,8 +17,8 @@ import {
   englishName,
   speciesDetailsPublished,
   UNPUBLISHED_SPECIES,
-  FAMILY_TOTAL_INTRO,
   FAMILY_TOTAL_LEFT_OUT,
+  FAMILY_TOTAL_WHAT,
   familyLabel,
   familyTotalModel,
   HOME_ASK_AI,
@@ -32,8 +32,9 @@ import {
   mediaSexLabel,
   monthsLabel,
   objectPath,
+  lengthLabel,
   populationModel,
-  sizeLabel,
+  sizeNote,
   statusLabel,
   viewLabel,
 } from './guide.js'
@@ -155,12 +156,10 @@ ${agentHtml(origin)}
 </ol>
 </div>
 </div>
-<div class="lead-split">
 <p>Age, season and sex are worked out by comparing structured field marks. A mark left blank is unknown, not a claim that the part has no colour. Flight and perched views use notes and photographs. Where nothing differs, the page says so.</p>
-<aside class="lead-note">
+<details class="more"><summary>About the population figures</summary>
 <p>${escapeHtml(HOME_POPULATION_INTRO)}</p>
-</aside>
-</div>
+</details>
 <p><a href="/vocab/colours">Colour names</a> used in the field marks.</p>`
   return layout({
     title: 'Birds of Kruger National Park',
@@ -248,12 +247,8 @@ ${doc.sampleData ? sampleNotice() : ''}
 <h1>${escapeHtml(englishName(doc))}</h1>
 <p class="latin">${escapeHtml(doc.scientificName || '')}</p>
 ${afrikaansName(doc) ? `<p class="afrikaans">${escapeHtml(afrikaansName(doc))}</p>` : ''}
-<div class="split">
-<div class="split-copy">
 ${paragraphs(doc.summary)}
-</div>
 ${familyPopulationHtml(doc.population, doc.residency, format)}
-</div>
 ${iconicHtml(plates)}
 <h2>${FAMILY_SPECIES_HEADING}</h2>
 ${speciesTableHtml({
@@ -322,14 +317,21 @@ ${doc.sampleData ? sampleNotice() : ''}
 <p class="latin">${escapeHtml(doc.scientificName || '')}</p>
 ${afrikaansName(doc) ? `<p class="afrikaans">${escapeHtml(afrikaansName(doc))}</p>` : ''}
 </div>
-<div class="species-layout">
-<div class="species-main">
-${published ? publishedSpeciesHtml(doc, comparisons, images, imagesAvailable, colourMap) : `<p>${escapeHtml(UNPUBLISHED_SPECIES)}</p>`}
-</div>
-<aside class="species-aside">
-${populationHtml(population)}
-</aside>
-</div>`
+${
+  published
+    ? publishedSpeciesHtml(
+        doc,
+        comparisons,
+        images,
+        imagesAvailable,
+        colourMap,
+        population,
+      )
+    : `<p>${escapeHtml(UNPUBLISHED_SPECIES)}</p>
+<dl class="facts">
+${populationRowHtml(population)}
+</dl>`
+}`
   return layout({
     title: `${englishName(doc)} (${doc.scientificName}) · KNP Birds`,
     description: inlineText(doc.summary || englishName(doc)),
@@ -370,13 +372,15 @@ const publishedSpeciesHtml = (
   images,
   imagesAvailable,
   colourMap,
+  population,
 ) => `${paragraphs(doc.summary)}
 <dl class="facts">
 <dt>Status</dt><dd>${escapeHtml(statusLabel(doc.status))}</dd>
 ${monthsLabel(doc.monthsPresent) ? `<dt>Months in Kruger</dt><dd>${escapeHtml(monthsLabel(doc.monthsPresent))}</dd>` : ''}
-<dt>Size</dt><dd>${escapeHtml(sizeLabel(doc.size) || 'Not recorded')}</dd>
+${sizeRowHtml(doc.size)}
 ${sizeFactsHtml(doc)}${doc.habitat ? `<dt>Habitat</dt><dd>${escapeHtml(doc.habitat)}</dd>` : ''}
-${distributionLabel(doc.distribution) ? `<dt>Where in Kruger</dt><dd>${escapeHtml(distributionLabel(doc.distribution))}</dd>` : ''}
+${whereRowHtml(doc.distribution)}
+${populationRowHtml(population)}
 <dt>Family</dt><dd><a href="/family/${escapeHtml(doc.family)}">${escapeHtml(familyLabel(doc.family))}</a></dd>
 </dl>
 <h2>Photographs</h2>
@@ -546,47 +550,95 @@ ${figures(plate.doc, Array.isArray(plate.doc.images) ? plate.doc.images : [], pl
   .join('\n')}
 </div>`
 
+/**
+ * "± 128 mature individuals". The sign is for the eye and the word is for a
+ * screen reader, which would say "plus-minus".
+ */
+const figureHtml = (headline, none) =>
+  !headline.text
+    ? none
+    : headline.approx
+      ? `<span aria-hidden="true">± </span><span class="visually-hidden">about </span>${escapeHtml(headline.text)}`
+      : escapeHtml(headline.text)
+
+/**
+ * A fact with its detail behind it. The fact is the summary and stays in
+ * view; the detail opens under it, with JavaScript on or off.
+ */
+const moreHtml = (summaryHtml, detailHtml, id = '') =>
+  `<details class="more"${id ? ` id="${id}"` : ''}><summary>${summaryHtml}</summary>
+${detailHtml}
+</details>`
+
+/**
+ * The parts of the park stay in view. The note, which gives the record
+ * counts they rest on, is behind them.
+ */
+const whereRowHtml = (distribution) => {
+  const regions = distributionLabel({ regions: distribution?.regions })
+  const note =
+    typeof distribution?.note === 'string' ? distribution.note.trim() : ''
+  if (!regions && !note) return ''
+  const value =
+    regions && note
+      ? moreHtml(escapeHtml(regions), `<p>${escapeHtml(note)}</p>`)
+      : escapeHtml(regions || note)
+  return `<dt>Where in Kruger</dt><dd>${value}</dd>`
+}
+
+const sizeRowHtml = (size) => {
+  const length = lengthLabel(size)
+  if (!length) return '<dt>Size</dt><dd>Not recorded</dd>'
+  const note = sizeNote(size)
+  return `<dt>Size</dt><dd>${note ? moreHtml(escapeHtml(length), `<p>${escapeHtml(note)}</p>`) : escapeHtml(length)}</dd>`
+}
+
+/**
+ * The family total leads with one figure. What it adds up, what it leaves
+ * out and how the seasons relate to it are the detail. The families table
+ * links here by id when a seasonal figure is partial.
+ */
 const familyPopulationHtml = (population, residency, format) => {
   const model = familyTotalModel(population, format)
   const gap = residencyGapText(residency, format)
-  const range = model.range
-    ? `<p class="estimate-range">${escapeHtml(model.range)}</p>`
-    : '<p class="estimate-range">No numeric total yet.</p>'
-  return `<section class="population" aria-labelledby="family-population-title">
-<h2 id="family-population-title">Population</h2>
-<p class="estimate-label">${escapeHtml(FAMILY_TOTAL_LABEL)}</p>
-<p>${escapeHtml(FAMILY_TOTAL_INTRO)}</p>
-${range}
-<p>${escapeHtml(model.coverage)}</p>
-${model.complete ? '' : `<p>This total is incomplete. ${escapeHtml(FAMILY_TOTAL_LEFT_OUT)}</p>`}
-<div id="${RESIDENCY_ANCHOR}">
-<p>${escapeHtml(FAMILY_TOTAL_SEASONS)} <a href="/families">Families by season</a>.</p>
-${gap ? `<p>${escapeHtml(gap)}</p>` : ''}
-</div>
-</section>`
+  const { rangeLine } = model.headline
+  const detail = [
+    `<p>${escapeHtml(FAMILY_TOTAL_LABEL)}.${rangeLine ? ` ${escapeHtml(rangeLine)}` : ''}</p>`,
+    `<p>${escapeHtml(FAMILY_TOTAL_WHAT)} ${escapeHtml(model.coverage)}${model.complete ? '' : ` This total is incomplete. ${escapeHtml(FAMILY_TOTAL_LEFT_OUT)}`}</p>`,
+    `<p>${escapeHtml(FAMILY_TOTAL_SEASONS)} <a href="/families">Families by season</a>.</p>`,
+    gap ? `<p>${escapeHtml(gap)}</p>` : '',
+  ]
+    .filter(Boolean)
+    .join('\n')
+  return `<dl class="facts">
+<dt>Numbers in Kruger</dt><dd class="population">${moreHtml(figureHtml(model.headline, 'No numeric total yet.'), detail, RESIDENCY_ANCHOR)}</dd>
+</dl>`
 }
 
-const populationHtml = (model) => {
-  const range = model.range
-    ? `<p class="estimate-range">${escapeHtml(model.range)}</p>`
-    : '<p class="estimate-range">No numeric estimate yet.</p>'
-  const extra = [
-    model.confidence
-      ? `<p>Confidence: ${escapeHtml(model.confidence)}.</p>`
-      : '',
-    model.asOf ? `<p>As of ${escapeHtml(String(model.asOf))}.</p>` : '',
-  ].join('')
-  return `<section class="population" aria-labelledby="population-title">
-<h2 id="population-title">Population</h2>
-<p class="estimate-label">${escapeHtml(APPROXIMATE_LABEL)}</p>
-${range}
-<p>Trend: ${escapeHtml(model.trend)}.</p>
-${model.notes ? `<p>${escapeHtml(model.notes)}</p>` : ''}
-${model.baseline ? `<p>${escapeHtml(model.baseline)}</p>` : ''}
-${extra}
-<h3>Sources</h3>
-${sourcesHtml(model.sources)}
-</section>`
+/**
+ * The population as one row of the facts list: the figure in view, and the
+ * range, trend, method, confidence, year and sources behind it.
+ */
+const populationRowHtml = (model) => {
+  const { rangeLine } = model.headline
+  const state = [
+    `Trend: ${escapeHtml(model.trend)}.`,
+    model.confidence ? `Confidence: ${escapeHtml(model.confidence)}.` : '',
+    model.asOf ? `As of ${escapeHtml(String(model.asOf))}.` : '',
+  ]
+    .filter(Boolean)
+    .join(' ')
+  const detail = [
+    `<p>${escapeHtml(APPROXIMATE_LABEL)}.${rangeLine ? ` ${escapeHtml(rangeLine)}` : ''}</p>`,
+    `<p>${state}</p>`,
+    model.notes ? `<p>${escapeHtml(model.notes)}</p>` : '',
+    model.baseline ? `<p>${escapeHtml(model.baseline)}</p>` : '',
+    '<p>Sources:</p>',
+    sourcesHtml(model.sources),
+  ]
+    .filter(Boolean)
+    .join('\n')
+  return `<dt>Numbers in Kruger</dt><dd class="population">${moreHtml(figureHtml(model.headline, 'No numeric estimate yet.'), detail)}</dd>`
 }
 
 const sourcesHtml = (sources) => {

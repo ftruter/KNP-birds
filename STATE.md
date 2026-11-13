@@ -6,7 +6,7 @@ Start here. Live site: https://birds.truter.world. Repo: https://github.com/ftru
 
 Open reference to the birds of Kruger National Park (and bordering Marloth Park), for people and agents. Scope: residents, regular migrants and regular visitors — **493 species in 86 families**. Rare vagrants are out. Names follow IOC / BirdLife South Africa 2026.
 
-- Never fabricate data. Never change population or Kemp figures.
+- Never fabricate data. Never change the stored population or Kemp figures. A page may lead with the Kemp threshold as a single figure (± T) and keep the half-to-double range in the detail under it. A page never shows a figure the data does not hold: an estimate that is not a half-to-double range is shown as it is stored, with no midpoint worked out.
 - Never commit the Kemp et al. 2001 PDF, and never reproduce its appendix.
 - Check with the owner before anything that costs money.
 - Only [@ftruter](https://github.com/ftruter) may approve or merge pull requests. Agents must not merge or approve.
@@ -34,6 +34,7 @@ All CSS is the one template string in `src/style.js`. Pages link it as `/style.c
 - **Zoomed photograph.** While a `.plate` is zoomed, `html:has(.plate.is-zoomed)` stops the page behind from scrolling. Not yet tried with touch on a phone.
 - **Text size.** Font sizes (`--fs-*`) are in `rem`, never `px`, so text and gaps follow the reader's browser text size. Radii come from `--radius-*`.
 - Serif is for running text and the page title. Tables, facts, captions and controls are sans.
+- **Detail on demand.** What a visitor needs stays in view and the method opens under it, in a native `<details class="more">` that works with JavaScript off. The population is a row of the facts list whose summary is the single figure (`headlineFigure` in `src/guide.js`); the range, trend, Kemp note, confidence, year and sources are behind it. The same pattern holds the size note, the note under a table, the download breakdown, the recognition time and the longer explanations on the identify pages. Page tables show the single figure too. The Markdown and JSON forms keep the full range and every note. A link to an id inside a closed disclosure opens it (`openTarget` in `src/client/app.js`).
 - **For machines only.** The "For agents" nav link and the MCP paragraph (home page and every footer) stay in the markup with the class `for-agents`, and the stylesheet hides them from people (`display: none`). `test/agent-note.test.js` still requires them in the HTML.
 
 ## Identify by sound (issue 150)
@@ -159,13 +160,13 @@ Species files may now carry `size.wingspanCm`, `size.massG`, `flightless` and `d
 
 ## Recognition time (issue 178)
 
-Both identify pages show how long the last recognition took under the results, for example "Recognised in 84 ms on this device. Runtime: relaxed SIMD build." The sound page adds the number of 3-second windows and the typical (median) time for one. This only measures; nothing was made faster.
+Both identify pages show how long the last recognition took, behind a closed "Technical details" line under the results, for example "Recognised in 84 ms on this device. Runtime: relaxed SIMD build." The sound page adds the number of 3-second windows and the typical (median) time for one. This only measures; nothing was made faster.
 
 - `src/client/identify-worker.js` times each run of the model (tensor in, scores out) and sends `timing: { runs, total, build }` with the result. `total` is the sum of the runs, so decoding audio, resampling and cropping are not in it. `build` is `relaxed-simd` or `baseline`, read from the wasm file LiteRT.js asked for; the page calls `baseline` the "compatibility build".
 - `timingText` in `src/client/identify.js` and `src/client/identify-photo.js` writes the line into `#identify-timing`. The first window is usually much slower than the rest (warm-up), which is why the sound page quotes the median and the total separately.
 - Browsers round `performance.now()` (Safari to 1 ms), so short times are approximate.
 
-**The phone figures the issue asks for are not recorded yet.** They need the real devices: open each page on the deployed site, run one recognition, and copy the line here. For sound use the 10-second recording the page makes itself, so the window count is the same on every device.
+**The phone figures the issue asks for are not recorded yet.** They need the real devices: open each page on the deployed site, run one recognition, open "Technical details" under the results, and copy the line here. For sound use the 10-second recording the page makes itself, so the window count is the same on every device.
 
 | Device | Runtime build | Photo | Sound: total | Sound: typical window |
 | --- | --- | --- | --- | --- |
