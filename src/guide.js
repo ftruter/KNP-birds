@@ -28,6 +28,15 @@ export const HOME_BROWSE = [
   { key: 'search', name: 'Search', href: '/search' },
 ]
 
+/** The link to the page with the prompt for a visitor's own chat AI. */
+export const HOME_ASK_AI = {
+  key: 'ask-ai',
+  name: 'Ask your AI about these birds',
+  href: '/ask-ai',
+  description:
+    'Copy a prompt into Claude, ChatGPT, Grok or Gemini and talk to it about Kruger birds.',
+}
+
 export const HOME_POPULATION_INTRO =
   'Population figures are an approximate estimate. Many are Kemp et al. 2001 order-of-magnitude thresholds, stored as half to double the threshold in mature individuals. Family totals add only those mature-individual figures.'
 

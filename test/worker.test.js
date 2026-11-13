@@ -143,8 +143,9 @@ test('the home page points to the identify pages and the indexes, and embeds nei
       ['Search', `${origin}/search.json`],
     ],
   )
+  assert.equal(home.askAi.pages.md, `${origin}/ask-ai.md`)
   // Every page the home documents name is served, in all three formats.
-  for (const item of [...home.identify, ...home.browse])
+  for (const item of [...home.identify, ...home.browse, home.askAi])
     for (const url of Object.values(item.pages))
       assert.equal((await site.fetch(new URL(url).pathname)).status, 200, url)
   const html = await (await site.fetch('/')).text()
@@ -155,7 +156,10 @@ test('the home page points to the identify pages and the indexes, and embeds nei
   const markdown = await (await site.fetch('/.md')).text()
   assert.doesNotMatch(markdown, /## (Species|Families)/)
   assert.doesNotMatch(markdown, /^\|/m)
-  assert.match(markdown, /\[Families\]\(\/families\)/)
+  assert.match(
+    markdown,
+    /\[Families\]\(https:\/\/birds\.truter\.world\/families\)/,
+  )
   // The table itself is unchanged at /families.
   const families = await (await site.fetch('/families')).text()
   assert.match(families, /Summer species count/)
@@ -240,7 +244,7 @@ test('a new family stub and the full families index render in every format', asy
   assert.match(markdownBody, /Visvangers/)
   assert.match(
     markdownBody,
-    /\[Malachite Kingfisher\]\(\/species\/corythornis-cristatus\)/,
+    /\[Malachite Kingfisher\]\(https:\/\/birds\.truter\.world\/species\/corythornis-cristatus\)/,
   )
 
   const json = await site.fetch('/family/alcedinidae.json')
@@ -269,8 +273,17 @@ test('a new family stub and the full families index render in every format', asy
   assert.match(indexHtml, /Visvangers/)
   assert.doesNotMatch(indexHtml, /about 0 individuals/)
   const indexMd = await (await site.fetch('/families.md')).text()
-  assert.equal((indexMd.match(/\]\(\/family\/[^)#]+\)/g) || []).length, 86)
-  assert.match(indexMd, /\]\(\/family\/phoenicopteridae#residency\)/)
+  assert.equal(
+    (
+      indexMd.match(/\]\(https:\/\/birds\.truter\.world\/family\/[^)#]+\)/g) ||
+      []
+    ).length,
+    86,
+  )
+  assert.match(
+    indexMd,
+    /\]\(https:\/\/birds\.truter\.world\/family\/phoenicopteridae#residency\)/,
+  )
   const indexJson = await (await site.fetch('/families.json')).json()
   assert.equal(Object.keys(indexJson).length, 86)
   assert.equal(indexJson.Accipitridae.af, null)

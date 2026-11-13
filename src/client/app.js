@@ -217,6 +217,51 @@ const bindSearch = () => {
   })
 }
 
+/** Copy buttons: shown only when the clipboard can be written to. */
+const bindCopy = () => {
+  if (typeof navigator === 'undefined' || !navigator.clipboard?.writeText)
+    return
+  document.querySelectorAll('[data-copy]').forEach((box) => {
+    const source = box.querySelector('[data-copy-text]')
+    const button = box.querySelector('[data-copy-button]')
+    const status = box.querySelector('[data-copy-status]')
+    const manual = box.querySelector('[data-copy-manual]')
+    if (!source || !button) return
+    button.hidden = false
+    if (manual) manual.hidden = true
+    let timer = 0
+    button.addEventListener('click', async () => {
+      let message = 'Copied. Now paste it into your AI.'
+      try {
+        await navigator.clipboard.writeText(source.textContent)
+      } catch {
+        // Fall back to selecting the text, which the older copy command needs
+        // and which leaves the visitor one keystroke from copying it.
+        const range = document.createRange()
+        range.selectNodeContents(source)
+        const selection = window.getSelection()
+        selection.removeAllRanges()
+        selection.addRange(range)
+        let copied = false
+        try {
+          copied = document.execCommand('copy')
+        } catch {
+          copied = false
+        }
+        if (!copied)
+          message = 'Could not copy. The text is selected: copy it yourself.'
+      }
+      if (!status) return
+      status.textContent = message
+      clearTimeout(timer)
+      timer = setTimeout(() => {
+        status.textContent = ''
+      }, 6000)
+    })
+  })
+}
+
 bindTables()
 bindZoom()
 bindSearch()
+bindCopy()
