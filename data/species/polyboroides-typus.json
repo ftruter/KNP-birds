@@ -27,9 +27,22 @@
       "min": 60,
       "max": 66
     },
-    "note": "Newman's 60–66 cm."
+    "massG": {
+      "min": 500,
+      "max": 950
+    },
+    "note": "Newman's 60–66 cm. Mass: Newman's Birds gives 500–950 g."
   },
   "habitat": "Woodland, forest edge, palm savanna and suburbia; clambers about tree cavities and weaver colonies using double-jointed legs (Newman's; SABAP1 Gymnogene).",
+  "distribution": {
+    "regions": [
+      "far-north",
+      "north",
+      "central",
+      "south"
+    ],
+    "note": "GBIF records per 10 000 bird records in each region: far north 31, north 9.5, central 18, south 16 (counted 13 November 2026). Recorded most often in the far north."
+  },
   "summary": "Large grey hawk with black flight feathers, black tail with a bold white band, and bare yellow facial skin. Immature brown. Also called Gymnogene (Newman's; SABAP1).",
   "sampleData": false,
   "similar": [
@@ -56,6 +69,12 @@
       "url": "https://en.wikipedia.org/wiki/African_harrier-hawk",
       "publisher": "Wikimedia Foundation",
       "year": null
+    },
+    {
+      "title": "GBIF occurrence counts for Polyboroides typus and for all birds (Aves) in four latitude bands of the Kruger bounding box (lon 31.0–32.04; lat −25.53 to −24.98, −24.98 to −24.00, −24.00 to −23.10, −23.10 to −22.33; country ZA), counted 13 November 2026: far north 2 496, north 660, central 2 570, south 2 361",
+      "url": "https://api.gbif.org/v1/occurrence/search",
+      "publisher": "GBIF.org",
+      "year": 2026
     }
   ],
   "population": {

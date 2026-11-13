@@ -11,6 +11,7 @@ import {
   renderFamiliesIndexHtml,
   renderFamilyHtml,
   renderCreditsHtml,
+  renderFactsHtml,
   renderHomeHtml,
   renderNotFoundHtml,
   renderSearchHtml,
@@ -24,6 +25,7 @@ import {
   renderFamiliesIndexMarkdown,
   renderFamilyMarkdown,
   renderCreditsMarkdown,
+  renderFactsMarkdown,
   renderHomeMarkdown,
   renderNotFoundMarkdown,
   renderSearchMarkdown,
@@ -191,6 +193,7 @@ export const renderRoute = async (request, env, route) => {
     case 'family':
     case 'vocab':
     case 'credits':
+    case 'facts':
       return renderDocument(env, route, view)
     case 'not-found':
       return notFound(origin, route)
@@ -433,6 +436,19 @@ const renderDocument = async (env, route, view) => {
       route.format === 'md'
         ? renderCreditsMarkdown(doc.data, origin)
         : renderCreditsHtml({ origin, doc: doc.data })
+    return route.format === 'md'
+      ? mdPage(body, origin, route.pathname, tag)
+      : htmlPage(body, origin, route.pathname, tag)
+  }
+  if (route.kind === 'facts') {
+    const body =
+      route.format === 'md'
+        ? renderFactsMarkdown(doc.data, origin)
+        : renderFactsHtml({
+            origin,
+            doc: doc.data,
+            format: view.numbers.integer,
+          })
     return route.format === 'md'
       ? mdPage(body, origin, route.pathname, tag)
       : htmlPage(body, origin, route.pathname, tag)
@@ -738,5 +754,6 @@ const cacheTag = (route, data) => {
   if (route.kind === 'species-index') return 'index,species'
   if (route.kind === 'families-index') return 'index,families'
   if (route.kind === 'credits') return 'index,credits'
+  if (route.kind === 'facts') return 'index,facts'
   return route.kind
 }

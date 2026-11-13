@@ -27,9 +27,26 @@
       "min": 35,
       "max": 40
     },
-    "note": "Newman's Birds gives about 40 cm; female much larger than male (Newman's)."
+    "wingspanCm": {
+      "min": 44,
+      "max": 70
+    },
+    "massG": {
+      "min": 200,
+      "max": 500
+    },
+    "note": "Newman's Birds gives about 40 cm; female much larger than male (Newman's). Wingspan: Wikipedia gives 44–57 cm in males and 54–70 cm in females. Mass: Newman's Birds gives 200–500 g."
   },
   "habitat": "Forest, dense woodland, riverine forest and well-wooded gardens; also plantations. Mostly sedentary (SABAP1; Newman's).",
+  "distribution": {
+    "regions": [
+      "far-north",
+      "north",
+      "central",
+      "south"
+    ],
+    "note": "GBIF records per 10 000 bird records in each region: far north 9.9, north 1.5, central 4.7, south 5.1 (counted 13 November 2026). Recorded most often in the far north."
+  },
   "summary": "A medium-sized goshawk, recently moved from Accipiter to Aerospiza. Adult is slate-grey above with rufous barring below; cere grey; eyes and legs yellow (Newman's). Female much larger than male.",
   "sampleData": false,
   "similar": [
@@ -83,6 +100,12 @@
       "title": "Wikimedia Commons species category images",
       "url": "https://commons.wikimedia.org/",
       "publisher": "Wikimedia Commons",
+      "year": 2026
+    },
+    {
+      "title": "GBIF occurrence counts for Accipiter tachiro (the name GBIF uses for Aerospiza tachiro) and for all birds (Aves) in four latitude bands of the Kruger bounding box (lon 31.0–32.04; lat −25.53 to −24.98, −24.98 to −24.00, −24.00 to −23.10, −23.10 to −22.33; country ZA), counted 13 November 2026: far north 791, north 105, central 681, south 769",
+      "url": "https://api.gbif.org/v1/occurrence/search",
+      "publisher": "GBIF.org",
       "year": 2026
     }
   ],

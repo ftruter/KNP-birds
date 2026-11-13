@@ -10,7 +10,8 @@
     { "$ref": "#/$defs/credits" },
     { "$ref": "#/$defs/identifySound" },
     { "$ref": "#/$defs/identifyPhoto" },
-    { "$ref": "#/$defs/offline" }
+    { "$ref": "#/$defs/offline" },
+    { "$ref": "#/$defs/facts" }
   ],
   "$defs": {
     "creditDisclosure": {
@@ -38,6 +39,102 @@
                   }
                 }
               ]
+            }
+          }
+        }
+      }
+    },
+    "measure": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["min", "max"],
+      "description": "A range. min equals max when the source gives one figure.",
+      "properties": {
+        "min": { "type": "number", "exclusiveMinimum": 0 },
+        "max": { "type": "number", "exclusiveMinimum": 0 }
+      }
+    },
+    "nullableMeasure": {
+      "anyOf": [{ "type": "null" }, { "$ref": "#/$defs/measure" }]
+    },
+    "parkRegion": {
+      "enum": ["far-north", "north", "central", "south"]
+    },
+    "facts": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["kind", "note", "regions", "species"],
+      "properties": {
+        "kind": { "const": "facts" },
+        "note": { "type": "string", "minLength": 1 },
+        "regions": {
+          "type": "array",
+          "minItems": 4,
+          "maxItems": 4,
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": ["id", "label", "extent"],
+            "properties": {
+              "id": { "$ref": "#/$defs/parkRegion" },
+              "label": { "type": "string", "minLength": 1 },
+              "extent": { "type": "string", "minLength": 1 }
+            }
+          }
+        },
+        "species": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "slug",
+              "scientificName",
+              "en",
+              "family",
+              "status",
+              "lengthCm",
+              "wingspanCm",
+              "massG",
+              "flightless",
+              "population",
+              "regions",
+              "regionsNote"
+            ],
+            "properties": {
+              "slug": { "$ref": "#/$defs/slug" },
+              "scientificName": { "type": "string", "minLength": 1 },
+              "en": { "type": "string", "minLength": 1 },
+              "family": { "$ref": "#/$defs/slug" },
+              "status": {
+                "anyOf": [{ "type": "null" }, { "$ref": "#/$defs/status" }]
+              },
+              "lengthCm": { "$ref": "#/$defs/nullableMeasure" },
+              "wingspanCm": { "$ref": "#/$defs/nullableMeasure" },
+              "massG": { "$ref": "#/$defs/nullableMeasure" },
+              "flightless": { "type": ["boolean", "null"] },
+              "population": {
+                "type": "object",
+                "additionalProperties": false,
+                "required": ["low", "high", "unit"],
+                "properties": {
+                  "low": { "$ref": "#/$defs/nullableInt" },
+                  "high": { "$ref": "#/$defs/nullableInt" },
+                  "unit": { "type": ["string", "null"] }
+                }
+              },
+              "regions": {
+                "anyOf": [
+                  { "type": "null" },
+                  {
+                    "type": "array",
+                    "minItems": 1,
+                    "uniqueItems": true,
+                    "items": { "$ref": "#/$defs/parkRegion" }
+                  }
+                ]
+              },
+              "regionsNote": { "$ref": "#/$defs/textOrNull" }
             }
           }
         }
@@ -372,18 +469,39 @@
         "size": {
           "type": "object",
           "additionalProperties": false,
-          "required": ["lengthCm"],
+          "description": "At least one measurement. A measurement that has not been published is left out.",
+          "anyOf": [
+            { "required": ["lengthCm"], "properties": { "lengthCm": true } },
+            { "required": ["wingspanCm"], "properties": { "wingspanCm": true } },
+            { "required": ["massG"], "properties": { "massG": true } }
+          ],
           "properties": {
-            "lengthCm": {
-              "type": "object",
-              "additionalProperties": false,
-              "required": ["min", "max"],
-              "properties": {
-                "min": { "type": "number", "exclusiveMinimum": 0 },
-                "max": { "type": "number", "exclusiveMinimum": 0 }
-              }
-            },
+            "lengthCm": { "$ref": "#/$defs/measure" },
+            "wingspanCm": { "$ref": "#/$defs/measure" },
+            "massG": { "$ref": "#/$defs/measure" },
             "note": { "type": "string" }
+          }
+        },
+        "flightless": {
+          "type": "boolean",
+          "description": "true when the species cannot fly. Omitted when not recorded."
+        },
+        "distribution": {
+          "type": "object",
+          "additionalProperties": false,
+          "description": "Where in the park the species is found. At least one region or a note.",
+          "anyOf": [
+            { "required": ["regions"], "properties": { "regions": true } },
+            { "required": ["note"], "properties": { "note": true } }
+          ],
+          "properties": {
+            "regions": {
+              "type": "array",
+              "minItems": 1,
+              "uniqueItems": true,
+              "items": { "$ref": "#/$defs/parkRegion" }
+            },
+            "note": { "type": "string", "minLength": 1 }
           }
         },
         "summary": { "type": "string", "minLength": 1 },

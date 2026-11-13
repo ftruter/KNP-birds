@@ -21,9 +21,26 @@
       "min": 40,
       "max": 48
     },
-    "note": "Size about 40–48 cm (Wikipedia). Newman's page returned 404 on 2026-11-07."
+    "wingspanCm": {
+      "min": 95,
+      "max": 120
+    },
+    "massG": {
+      "min": 315,
+      "max": 445
+    },
+    "note": "Size about 40–48 cm (Wikipedia). Newman's page returned 404 on 2026-11-07. Wingspan: Wikipedia gives 95–120 cm. Mass: Wikipedia gives males 315 g, females 445 g."
   },
   "habitat": "Open grassland and floodplains; often with Montagu's Harrier (SABAP1; Wikipedia).",
+  "distribution": {
+    "regions": [
+      "far-north",
+      "north",
+      "central",
+      "south"
+    ],
+    "note": "GBIF records per 10 000 bird records in each region: far north 0.94, north 1.7, central 1.1, south 0.22 (counted 13 November 2026). Recorded most often in the north."
+  },
   "summary": "A slim Palearctic harrier. Adult male is very pale grey with black primary wedge; female and immature are brown ringtails with a pale collar (Wikipedia). Uncommon summer visitor to the north-east.",
   "sampleData": false,
   "similar": [
@@ -78,6 +95,12 @@
       "url": "https://newmansbirds.com/birds/pallid-harrier/",
       "publisher": "Newman's Birds",
       "year": null
+    },
+    {
+      "title": "GBIF occurrence counts for Circus macrourus and for all birds (Aves) in four latitude bands of the Kruger bounding box (lon 31.0–32.04; lat −25.53 to −24.98, −24.98 to −24.00, −24.00 to −23.10, −23.10 to −22.33; country ZA), counted 13 November 2026: far north 75, north 120, central 157, south 34",
+      "url": "https://api.gbif.org/v1/occurrence/search",
+      "publisher": "GBIF.org",
+      "year": 2026
     }
   ],
   "population": {

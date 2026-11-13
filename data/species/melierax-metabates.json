@@ -27,9 +27,22 @@
       "min": 50,
       "max": 56
     },
-    "note": "Newman's 50–56 cm."
+    "massG": {
+      "min": 600,
+      "max": 850
+    },
+    "note": "Newman's 50–56 cm. Mass: Newman's Birds gives 600–850 g."
   },
   "habitat": "Broad-leaved woodland and mixed bushveld; usually perches within the canopy (Newman's). In southern Africa mainly northeastern lowveld/Zimbabwe; Kruger is in range (SABAP1).",
+  "distribution": {
+    "regions": [
+      "far-north",
+      "north",
+      "central",
+      "south"
+    ],
+    "note": "GBIF records per 10 000 bird records in each region: far north 8.2, north 10, central 14, south 14 (counted 13 November 2026). Recorded most often in the central region, and nearly as often in the south."
+  },
   "summary": "A large grey chanting goshawk, darker grey than Pale Chanting, with fine grey barring below, red cere and legs, and a dark tip to the secondaries in flight (Newman's).",
   "sampleData": false,
   "similar": [
@@ -56,6 +69,12 @@
       "url": "https://en.wikipedia.org/wiki/Dark_chanting_goshawk",
       "publisher": "Wikimedia Foundation",
       "year": null
+    },
+    {
+      "title": "GBIF occurrence counts for Melierax metabates and for all birds (Aves) in four latitude bands of the Kruger bounding box (lon 31.0–32.04; lat −25.53 to −24.98, −24.98 to −24.00, −24.00 to −23.10, −23.10 to −22.33; country ZA), counted 13 November 2026: far north 653, north 726, central 2 100, south 2 076",
+      "url": "https://api.gbif.org/v1/occurrence/search",
+      "publisher": "GBIF.org",
+      "year": 2026
     }
   ],
   "population": {

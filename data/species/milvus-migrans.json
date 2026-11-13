@@ -24,9 +24,26 @@
       "min": 55,
       "max": 55
     },
-    "note": "Newman's Yellow-billed Kite page (Milvus parasitus) gives 55 cm. Project slug is milvus-migrans with Afrikaans Swartwou; taxonomy note required."
+    "wingspanCm": {
+      "min": 150,
+      "max": 150
+    },
+    "massG": {
+      "min": 600,
+      "max": 1000
+    },
+    "note": "Newman's Yellow-billed Kite page (Milvus parasitus) gives 55 cm. Project slug is milvus-migrans with Afrikaans Swartwou; taxonomy note required. Wingspan: Wikipedia gives around 150 cm. Mass: Newman's Birds gives 0.6–1 kg."
   },
   "habitat": "Wide range of habitats; often aggregates at food sources. Common Kruger summer kite is the yellow-billed African form (Newman's; SABAP1).",
+  "distribution": {
+    "regions": [
+      "far-north",
+      "north",
+      "central",
+      "south"
+    ],
+    "note": "GBIF records per 10 000 bird records in each region: far north 10, north 26, central 20, south 19 (counted 13 November 2026). Recorded most often in the north."
+  },
   "summary": "Fork-tailed scavenger kite. In Kruger the abundant summer bird is the Yellow-billed form (often split as M. aegyptius/parasitus): adult with yellow-based bill, brown head, dark eye, deeply forked tail. Palearctic Black Kite (M. m. migrans) is scarcer, with darker bill and paler head (Newman's; SABAP1).",
   "sampleData": false,
   "similar": [
@@ -53,6 +70,12 @@
       "url": "https://en.wikipedia.org/wiki/Black_kite",
       "publisher": "Wikimedia Foundation",
       "year": null
+    },
+    {
+      "title": "GBIF occurrence counts for Milvus migrans and for all birds (Aves) in four latitude bands of the Kruger bounding box (lon 31.0–32.04; lat −25.53 to −24.98, −24.98 to −24.00, −24.00 to −23.10, −23.10 to −22.33; country ZA), counted 13 November 2026: far north 803, north 1 820, central 2 987, south 2 822",
+      "url": "https://api.gbif.org/v1/occurrence/search",
+      "publisher": "GBIF.org",
+      "year": 2026
     }
   ],
   "population": {

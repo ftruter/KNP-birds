@@ -27,9 +27,26 @@
       "min": 33,
       "max": 40
     },
-    "note": "Newman's Birds gives 33–40 cm.; Females are larger than males."
+    "wingspanCm": {
+      "min": 67,
+      "max": 67
+    },
+    "massG": {
+      "min": 100,
+      "max": 300
+    },
+    "note": "Newman's Birds gives 33–40 cm.; Females are larger than males. Wingspan: Wikipedia gives 67 cm. Mass: Newman's Birds gives 100–300 g."
   },
   "habitat": "Tall woodland and woodland edge, often hunting from high perches at the edge of open areas; also exotic plantations in parts of its range (Newman's; SABAP1).",
+  "distribution": {
+    "regions": [
+      "far-north",
+      "north",
+      "central",
+      "south"
+    ],
+    "note": "GBIF records per 10 000 bird records in each region: far north 1.6, north 0.61, central 0.36, south 0.33 (counted 13 November 2026). Recorded most often in the far north."
+  },
   "summary": "A medium-sized Accipiter of woodland. Adult is grey above with fine grey barring below that reaches the throat; eyes dark; cere red and legs orange (Newman's). Easily confused with other grey Accipiters; the dark eye and red cere help.",
   "sampleData": false,
   "similar": [
@@ -83,6 +100,12 @@
       "title": "Wikimedia Commons species category images",
       "url": "https://commons.wikimedia.org/",
       "publisher": "Wikimedia Commons",
+      "year": 2026
+    },
+    {
+      "title": "GBIF occurrence counts for Accipiter ovampensis and for all birds (Aves) in four latitude bands of the Kruger bounding box (lon 31.0–32.04; lat −25.53 to −24.98, −24.98 to −24.00, −24.00 to −23.10, −23.10 to −22.33; country ZA), counted 13 November 2026: far north 130, north 42, central 53, south 50",
+      "url": "https://api.gbif.org/v1/occurrence/search",
+      "publisher": "GBIF.org",
       "year": 2026
     }
   ],

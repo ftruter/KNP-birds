@@ -27,9 +27,26 @@
       "min": 80,
       "max": 90
     },
-    "note": "Newman's 80–90 cm. Wikipedia 80–99 cm."
+    "wingspanCm": {
+      "min": 151,
+      "max": 181
+    },
+    "massG": {
+      "min": 2000,
+      "max": 4700
+    },
+    "note": "Newman's 80–90 cm. Wikipedia 80–99 cm. Wingspan: Wikipedia gives typically 1.51–1.81 m. Mass: Newman's Birds gives 2–4.7 kg."
   },
   "habitat": "Evergreen and riverine forest, dense woodland; short wings adapted to forest manoeuvring. Scarce in Kruger relative to Martial; prefers denser riparian/forest patches (Newman's; SABAP1).",
+  "distribution": {
+    "regions": [
+      "far-north",
+      "north",
+      "central",
+      "south"
+    ],
+    "note": "GBIF records per 10 000 bird records in each region: far north 6.7, north 0.36, central 0.58, south 1.8 (counted 13 November 2026). Recorded most often in the far north."
+  },
   "summary": "Powerful forest eagle with a long crest, dark upperparts and heavily barred/rufous underparts. Immature very pale. Specialises on mammals including monkeys (Newman's).",
   "sampleData": false,
   "similar": [
@@ -56,6 +73,12 @@
       "url": "https://en.wikipedia.org/wiki/Crowned_eagle",
       "publisher": "Wikimedia Foundation",
       "year": null
+    },
+    {
+      "title": "GBIF occurrence counts for Stephanoaetus coronatus and for all birds (Aves) in four latitude bands of the Kruger bounding box (lon 31.0–32.04; lat −25.53 to −24.98, −24.98 to −24.00, −24.00 to −23.10, −23.10 to −22.33; country ZA), counted 13 November 2026: far north 531, north 25, central 85, south 265",
+      "url": "https://api.gbif.org/v1/occurrence/search",
+      "publisher": "GBIF.org",
+      "year": 2026
     }
   ],
   "population": {

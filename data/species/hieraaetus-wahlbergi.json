@@ -23,9 +23,26 @@
       "min": 53,
       "max": 61
     },
-    "note": "Wikipedia 53–61 cm. Newman's online size field was blank (#VALUE!); use Wikipedia with note."
+    "wingspanCm": {
+      "min": 130,
+      "max": 146
+    },
+    "massG": {
+      "min": 800,
+      "max": 1400
+    },
+    "note": "Wikipedia 53–61 cm. Newman's online size field was blank (#VALUE!); use Wikipedia with note. Wingspan: Wikipedia gives 130–146 cm. Mass: Newman's Birds gives 0.8–1.4 kg."
   },
   "habitat": "Woodland savanna; rarely montane forest. Nests in tall trees reused over years. Common summer-breeding brown eagle in Kruger (Newman's; SABAP1).",
+  "distribution": {
+    "regions": [
+      "far-north",
+      "north",
+      "central",
+      "south"
+    ],
+    "note": "GBIF records per 10 000 bird records in each region: far north 46, north 41, central 53, south 42 (counted 13 November 2026). Recorded most often in the central region."
+  },
   "summary": "A medium brown eagle and the most common brown eagle in Kruger in summer. Narrow parallel wings and a longish square tail held mostly closed. Feet, cere and gape yellow; eye dark. Several morphs including dark-headed and pale/white-headed birds (Newman's).",
   "sampleData": false,
   "similar": [
@@ -60,6 +77,12 @@
       "url": "https://en.wikipedia.org/wiki/Wahlberg%27s_eagle",
       "publisher": "Wikimedia Foundation",
       "year": null
+    },
+    {
+      "title": "GBIF occurrence counts for Hieraaetus wahlbergi and for all birds (Aves) in four latitude bands of the Kruger bounding box (lon 31.0–32.04; lat −25.53 to −24.98, −24.98 to −24.00, −24.00 to −23.10, −23.10 to −22.33; country ZA), counted 13 November 2026: far north 3 694, north 2 829, central 7 805, south 6 361",
+      "url": "https://api.gbif.org/v1/occurrence/search",
+      "publisher": "GBIF.org",
+      "year": 2026
     }
   ],
   "population": {

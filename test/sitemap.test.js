@@ -91,6 +91,7 @@ test('the sitemap tree is alphabetical by English name', () => {
     '/species/bucorvus-leadbeateri',
     '/identify/sound',
     '/identify/photo',
+    '/facts',
     '/ask-ai',
     '/credits',
   ])
@@ -166,6 +167,7 @@ test('the sitemap page is nested in html, markdown, and json', async () => {
       'Species',
       'Identify by sound',
       'Identify by photo',
+      'Facts table',
       'Ask your AI',
       'Credits',
     ],
@@ -193,9 +195,10 @@ test('the sitemap page is nested in html, markdown, and json', async () => {
     'https://birds.truter.world/vocab/colours',
     'https://birds.truter.world/families',
   ])
-  assert.equal(locs.at(-5), 'https://birds.truter.world/species')
-  assert.equal(locs.at(-4), 'https://birds.truter.world/identify/sound')
-  assert.equal(locs.at(-3), 'https://birds.truter.world/identify/photo')
+  assert.equal(locs.at(-6), 'https://birds.truter.world/species')
+  assert.equal(locs.at(-5), 'https://birds.truter.world/identify/sound')
+  assert.equal(locs.at(-4), 'https://birds.truter.world/identify/photo')
+  assert.equal(locs.at(-3), 'https://birds.truter.world/facts')
   assert.equal(locs.at(-2), 'https://birds.truter.world/ask-ai')
   assert.equal(locs.at(-1), 'https://birds.truter.world/credits')
   assert.equal(new Set(locs).size, locs.length)

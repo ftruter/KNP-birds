@@ -27,9 +27,26 @@
       "min": 78,
       "max": 83
     },
-    "note": "Newman's 78–83 cm. Wikipedia 78–96 cm (sexually dimorphic)."
+    "wingspanCm": {
+      "min": 188,
+      "max": 240
+    },
+    "massG": {
+      "min": 3000,
+      "max": 6000
+    },
+    "note": "Newman's 78–83 cm. Wikipedia 78–96 cm (sexually dimorphic). Wingspan: Wikipedia gives 188–240 cm. Mass: Newman's Birds gives 3–6 kg."
   },
   "habitat": "Bushveld, woodland and thornveld; also open plains. Relies on large trees for nests. Locally common in Kruger (Newman's; SABAP1).",
+  "distribution": {
+    "regions": [
+      "far-north",
+      "north",
+      "central",
+      "south"
+    ],
+    "note": "GBIF records per 10 000 bird records in each region: far north 33, north 41, central 39, south 32 (counted 13 November 2026). Recorded most often in the north, and nearly as often in the central region."
+  },
   "summary": "Africa's largest eagle: dark brown upperparts and throat, white underparts spotted dark, short crest, long legs. Immature pale below. Soars very high (Newman's).",
   "sampleData": false,
   "similar": [
@@ -60,6 +77,12 @@
       "url": "https://en.wikipedia.org/wiki/Martial_eagle",
       "publisher": "Wikimedia Foundation",
       "year": null
+    },
+    {
+      "title": "GBIF occurrence counts for Polemaetus bellicosus and for all birds (Aves) in four latitude bands of the Kruger bounding box (lon 31.0–32.04; lat −25.53 to −24.98, −24.98 to −24.00, −24.00 to −23.10, −23.10 to −22.33; country ZA), counted 13 November 2026: far north 2 646, north 2 811, central 5 700, south 4 913",
+      "url": "https://api.gbif.org/v1/occurrence/search",
+      "publisher": "GBIF.org",
+      "year": 2026
     }
   ],
   "population": {

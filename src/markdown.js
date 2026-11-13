@@ -41,6 +41,18 @@ import {
   rowsForSpeciesIndex,
 } from './catalog.js'
 import { agentNote, siteOrigin } from './head.js'
+import {
+  FACTS_COLUMNS,
+  FACTS_INTRO,
+  FACTS_PATH,
+  FACTS_TITLE,
+  coverageSentence,
+  distributionLabel,
+  factsCells,
+  flightLabel,
+  massLabel,
+  wingspanLabel,
+} from './facts.js'
 import { familyTableMarkdown, speciesTableMarkdown } from './lists.js'
 import {
   ASK_AI_EXAMPLES,
@@ -216,6 +228,52 @@ ${colours.map((colour) => `- ${colour.name} (${colour.hex})`).join('\n')}`,
   })
 }
 
+/** Wingspan, mass and flight, each only when the species file records it. */
+const sizeFactsMarkdown = (doc) =>
+  [
+    ['Wingspan', wingspanLabel(doc.size)],
+    ['Mass', massLabel(doc.size)],
+    ['Flight', flightLabel(doc.flightless)],
+  ]
+    .filter(([, value]) => value)
+    .map(([label, value]) => `- ${label}: ${value}\n`)
+    .join('')
+
+const tableCell = (value) => inlineText(value).replaceAll('|', '\\|')
+
+export const renderFactsMarkdown = (doc, origin) => {
+  const rows = listed(doc?.species)
+  return pageMd({
+    origin,
+    path: FACTS_PATH,
+    title: FACTS_TITLE,
+    sample: false,
+    body: `${FACTS_INTRO}
+
+${coverageSentence(doc)}
+
+## Regions of the park
+
+${listed(doc?.regions)
+  .map(
+    (region) =>
+      `- **${inlineText(region.label)}.** ${inlineText(region.extent)}`,
+  )
+  .join('\n')}
+
+## All species
+
+| Species | Scientific name | ${FACTS_COLUMNS.map(([, label]) => label).join(' | ')} |
+| --- | --- | ${FACTS_COLUMNS.map(() => '---').join(' | ')} |
+${rows
+  .map((row) => {
+    const cells = factsCells(row)
+    return `| [${tableCell(row.en)}](/species/${row.slug}) | ${tableCell(row.scientificName)} | ${FACTS_COLUMNS.map(([key]) => tableCell(cells[key])).join(' | ')} |`
+  })
+  .join('\n')}`,
+  })
+}
+
 export const renderSpeciesMarkdown = ({ doc, colourMap, origin, format }) => {
   const published = speciesDetailsPublished(doc)
   const comparisons = published ? diffSpecies(doc) : []
@@ -228,7 +286,7 @@ export const renderSpeciesMarkdown = ({ doc, colourMap, origin, format }) => {
 
 - Status: ${statusLabel(doc.status)}
 ${monthsLabel(doc.monthsPresent) ? `- Months in Kruger: ${monthsLabel(doc.monthsPresent)}\n` : ''}- Size: ${sizeLabel(doc.size) || 'Not recorded'}
-${doc.habitat ? `- Habitat: ${doc.habitat}\n` : ''}
+${sizeFactsMarkdown(doc)}${doc.habitat ? `- Habitat: ${doc.habitat}\n` : ''}${distributionLabel(doc.distribution) ? `- Where in Kruger: ${distributionLabel(doc.distribution)}\n` : ''}
 ## Photographs
 
 ${images.length === 0 ? '_No photograph is stored for this species yet._' : images.map((image) => imageMarkdown(doc, image)).join('\n\n')}

@@ -27,9 +27,25 @@
       "min": 44,
       "max": 53
     },
-    "note": "Newman's Birds gives 44–53 cm. Southern African endemic."
+    "wingspanCm": {
+      "min": 127,
+      "max": 143
+    },
+    "massG": {
+      "min": 800,
+      "max": 1700
+    },
+    "note": "Newman's Birds gives 44–53 cm. Southern African endemic. Wingspan: Wikipedia gives 127–143 cm. Mass: Newman's Birds gives 0.8–1.7 kg."
   },
   "habitat": "Hilly or montane regions and adjacent grassland (Newman's). Scarce in Kruger lowveld; more typical of escarpment and highveld.",
+  "distribution": {
+    "regions": [
+      "north",
+      "central",
+      "south"
+    ],
+    "note": "GBIF records per 10 000 bird records in each region: far north 0.05, north 0.32, central 0.29, south 0.79 (counted 13 November 2026). Recorded most often in the south."
+  },
   "summary": "A dark brown buzzard with a distinctive chestnut breast and tail; underwings dark brown and white (Newman's). Endemic resident.",
   "sampleData": false,
   "similar": [
@@ -83,6 +99,12 @@
       "title": "Wikimedia Commons species category images",
       "url": "https://commons.wikimedia.org/",
       "publisher": "Wikimedia Commons",
+      "year": 2026
+    },
+    {
+      "title": "GBIF occurrence counts for Buteo rufofuscus and for all birds (Aves) in four latitude bands of the Kruger bounding box (lon 31.0–32.04; lat −25.53 to −24.98, −24.98 to −24.00, −24.00 to −23.10, −23.10 to −22.33; country ZA), counted 13 November 2026: far north 4, north 22, central 42, south 119",
+      "url": "https://api.gbif.org/v1/occurrence/search",
+      "publisher": "GBIF.org",
       "year": 2026
     }
   ],

@@ -200,6 +200,12 @@
           "url": "https://commons.wikimedia.org/",
           "publisher": "Wikimedia Commons",
           "year": 2026
+        },
+        {
+          "title": "GBIF occurrence counts for Accipiter ovampensis and for all birds (Aves) in four latitude bands of the Kruger bounding box (lon 31.0–32.04; lat −25.53 to −24.98, −24.98 to −24.00, −24.00 to −23.10, −23.10 to −22.33; country ZA), counted 13 November 2026: far north 130, north 42, central 53, south 50",
+          "url": "https://api.gbif.org/v1/occurrence/search",
+          "publisher": "GBIF.org",
+          "year": 2026
         }
       ]
     },
@@ -861,6 +867,12 @@
           "title": "Wikimedia Commons species category images",
           "url": "https://commons.wikimedia.org/",
           "publisher": "Wikimedia Commons",
+          "year": 2026
+        },
+        {
+          "title": "GBIF occurrence counts for Accipiter tachiro (the name GBIF uses for Aerospiza tachiro) and for all birds (Aves) in four latitude bands of the Kruger bounding box (lon 31.0–32.04; lat −25.53 to −24.98, −24.98 to −24.00, −24.00 to −23.10, −23.10 to −22.33; country ZA), counted 13 November 2026: far north 791, north 105, central 681, south 769",
+          "url": "https://api.gbif.org/v1/occurrence/search",
+          "publisher": "GBIF.org",
           "year": 2026
         }
       ]
@@ -2963,6 +2975,12 @@
           "url": "https://commons.wikimedia.org/",
           "publisher": "Wikimedia Commons",
           "year": 2026
+        },
+        {
+          "title": "GBIF occurrence counts for Aquila nipalensis and for all birds (Aves) in four latitude bands of the Kruger bounding box (lon 31.0–32.04; lat −25.53 to −24.98, −24.98 to −24.00, −24.00 to −23.10, −23.10 to −22.33; country ZA), counted 13 November 2026: far north 249, north 250, central 648, south 422",
+          "url": "https://api.gbif.org/v1/occurrence/search",
+          "publisher": "GBIF.org",
+          "year": 2026
         }
       ]
     },
@@ -3077,6 +3095,12 @@
           "title": "Wikimedia Commons species category images",
           "url": "https://commons.wikimedia.org/",
           "publisher": "Wikimedia Commons",
+          "year": 2026
+        },
+        {
+          "title": "GBIF occurrence counts for Aquila rapax and for all birds (Aves) in four latitude bands of the Kruger bounding box (lon 31.0–32.04; lat −25.53 to −24.98, −24.98 to −24.00, −24.00 to −23.10, −23.10 to −22.33; country ZA), counted 13 November 2026: far north 2 879, north 3 779, central 9 884, south 7 710",
+          "url": "https://api.gbif.org/v1/occurrence/search",
+          "publisher": "GBIF.org",
           "year": 2026
         }
       ]
@@ -3224,6 +3248,12 @@
           "url": "https://commons.wikimedia.org/",
           "publisher": "Wikimedia Commons",
           "year": 2026
+        },
+        {
+          "title": "GBIF occurrence counts for Aquila spilogaster and for all birds (Aves) in four latitude bands of the Kruger bounding box (lon 31.0–32.04; lat −25.53 to −24.98, −24.98 to −24.00, −24.00 to −23.10, −23.10 to −22.33; country ZA), counted 13 November 2026: far north 3 041, north 2 316, central 3 965, south 2 339",
+          "url": "https://api.gbif.org/v1/occurrence/search",
+          "publisher": "GBIF.org",
+          "year": 2026
         }
       ]
     },
@@ -3333,6 +3363,12 @@
           "title": "Wikimedia Commons species category images",
           "url": "https://commons.wikimedia.org/",
           "publisher": "Wikimedia Commons",
+          "year": 2026
+        },
+        {
+          "title": "GBIF occurrence counts for Aquila verreauxii and for all birds (Aves) in four latitude bands of the Kruger bounding box (lon 31.0–32.04; lat −25.53 to −24.98, −24.98 to −24.00, −24.00 to −23.10, −23.10 to −22.33; country ZA), counted 13 November 2026: far north 896, north 101, central 89, south 71",
+          "url": "https://api.gbif.org/v1/occurrence/search",
+          "publisher": "GBIF.org",
           "year": 2026
         }
       ]
@@ -3849,6 +3885,12 @@
           "url": "https://commons.wikimedia.org/",
           "publisher": "Wikimedia Commons",
           "year": 2026
+        },
+        {
+          "title": "GBIF occurrence counts for Accipiter melanoleucus (the name GBIF uses for Astur melanoleucus) and for all birds (Aves) in four latitude bands of the Kruger bounding box (lon 31.0–32.04; lat −25.53 to −24.98, −24.98 to −24.00, −24.00 to −23.10, −23.10 to −22.33; country ZA), counted 13 November 2026: far north 38, north 23, central 51, south 148",
+          "url": "https://api.gbif.org/v1/occurrence/search",
+          "publisher": "GBIF.org",
+          "year": 2026
         }
       ]
     },
@@ -3954,6 +3996,12 @@
           "title": "Wikimedia Commons species category images",
           "url": "https://commons.wikimedia.org/",
           "publisher": "Wikimedia Commons",
+          "year": 2026
+        },
+        {
+          "title": "GBIF occurrence counts for Aviceda cuculoides and for all birds (Aves) in four latitude bands of the Kruger bounding box (lon 31.0–32.04; lat −25.53 to −24.98, −24.98 to −24.00, −24.00 to −23.10, −23.10 to −22.33; country ZA), counted 13 November 2026: far north 166, north 27, central 72, south 191",
+          "url": "https://api.gbif.org/v1/occurrence/search",
+          "publisher": "GBIF.org",
           "year": 2026
         }
       ]
@@ -4897,6 +4945,12 @@
           "url": "https://commons.wikimedia.org/",
           "publisher": "Wikimedia Commons",
           "year": 2026
+        },
+        {
+          "title": "GBIF occurrence counts for Buteo buteo and for all birds (Aves) in four latitude bands of the Kruger bounding box (lon 31.0–32.04; lat −25.53 to −24.98, −24.98 to −24.00, −24.00 to −23.10, −23.10 to −22.33; country ZA), counted 13 November 2026: far north 209, north 235, central 444, south 841",
+          "url": "https://api.gbif.org/v1/occurrence/search",
+          "publisher": "GBIF.org",
+          "year": 2026
         }
       ]
     },
@@ -5014,6 +5068,12 @@
           "url": "https://commons.wikimedia.org/",
           "publisher": "Wikimedia Commons",
           "year": 2026
+        },
+        {
+          "title": "GBIF occurrence counts for Buteo rufofuscus and for all birds (Aves) in four latitude bands of the Kruger bounding box (lon 31.0–32.04; lat −25.53 to −24.98, −24.98 to −24.00, −24.00 to −23.10, −23.10 to −22.33; country ZA), counted 13 November 2026: far north 4, north 22, central 42, south 119",
+          "url": "https://api.gbif.org/v1/occurrence/search",
+          "publisher": "GBIF.org",
+          "year": 2026
         }
       ]
     },
@@ -5108,6 +5168,12 @@
           "title": "Wikimedia Commons species category images",
           "url": "https://commons.wikimedia.org/",
           "publisher": "Wikimedia Commons",
+          "year": 2026
+        },
+        {
+          "title": "GBIF occurrence counts for Buteo trizonatus and for all birds (Aves) in four latitude bands of the Kruger bounding box (lon 31.0–32.04; lat −25.53 to −24.98, −24.98 to −24.00, −24.00 to −23.10, −23.10 to −22.33; country ZA), counted 13 November 2026: far north 0, north 0, central 2, south 20",
+          "url": "https://api.gbif.org/v1/occurrence/search",
+          "publisher": "GBIF.org",
           "year": 2026
         }
       ]
@@ -8205,6 +8271,12 @@
           "url": "https://commons.wikimedia.org/",
           "publisher": "Wikimedia Commons",
           "year": 2026
+        },
+        {
+          "title": "GBIF occurrence counts for Circaetus cinereus and for all birds (Aves) in four latitude bands of the Kruger bounding box (lon 31.0–32.04; lat −25.53 to −24.98, −24.98 to −24.00, −24.00 to −23.10, −23.10 to −22.33; country ZA), counted 13 November 2026: far north 3 616, north 2 612, central 7 651, south 6 877",
+          "url": "https://api.gbif.org/v1/occurrence/search",
+          "publisher": "GBIF.org",
+          "year": 2026
         }
       ]
     },
@@ -8292,6 +8364,12 @@
           "title": "Wikimedia Commons species category images",
           "url": "https://commons.wikimedia.org/",
           "publisher": "Wikimedia Commons",
+          "year": 2026
+        },
+        {
+          "title": "GBIF occurrence counts for Circaetus pectoralis and for all birds (Aves) in four latitude bands of the Kruger bounding box (lon 31.0–32.04; lat −25.53 to −24.98, −24.98 to −24.00, −24.00 to −23.10, −23.10 to −22.33; country ZA), counted 13 November 2026: far north 897, north 671, central 1 631, south 853",
+          "url": "https://api.gbif.org/v1/occurrence/search",
+          "publisher": "GBIF.org",
           "year": 2026
         }
       ]
@@ -8410,6 +8488,12 @@
           "url": "https://newmansbirds.com/birds/pallid-harrier/",
           "publisher": "Newman's Birds",
           "year": null
+        },
+        {
+          "title": "GBIF occurrence counts for Circus macrourus and for all birds (Aves) in four latitude bands of the Kruger bounding box (lon 31.0–32.04; lat −25.53 to −24.98, −24.98 to −24.00, −24.00 to −23.10, −23.10 to −22.33; country ZA), counted 13 November 2026: far north 75, north 120, central 157, south 34",
+          "url": "https://api.gbif.org/v1/occurrence/search",
+          "publisher": "GBIF.org",
+          "year": 2026
         }
       ]
     },
@@ -8527,6 +8611,12 @@
           "url": "https://commons.wikimedia.org/",
           "publisher": "Wikimedia Commons",
           "year": 2026
+        },
+        {
+          "title": "GBIF occurrence counts for Circus pygargus and for all birds (Aves) in four latitude bands of the Kruger bounding box (lon 31.0–32.04; lat −25.53 to −24.98, −24.98 to −24.00, −24.00 to −23.10, −23.10 to −22.33; country ZA), counted 13 November 2026: far north 70, north 78, central 200, south 30",
+          "url": "https://api.gbif.org/v1/occurrence/search",
+          "publisher": "GBIF.org",
+          "year": 2026
         }
       ]
     },
@@ -8632,6 +8722,12 @@
           "title": "Wikimedia Commons species category images",
           "url": "https://commons.wikimedia.org/",
           "publisher": "Wikimedia Commons",
+          "year": 2026
+        },
+        {
+          "title": "GBIF occurrence counts for Circus ranivorus and for all birds (Aves) in four latitude bands of the Kruger bounding box (lon 31.0–32.04; lat −25.53 to −24.98, −24.98 to −24.00, −24.00 to −23.10, −23.10 to −22.33; country ZA), counted 13 November 2026: far north 5, north 7, central 17, south 32",
+          "url": "https://api.gbif.org/v1/occurrence/search",
+          "publisher": "GBIF.org",
           "year": 2026
         }
       ]
@@ -9280,6 +9376,12 @@
           "title": "Wikimedia Commons species category images",
           "url": "https://commons.wikimedia.org/",
           "publisher": "Wikimedia Commons",
+          "year": 2026
+        },
+        {
+          "title": "GBIF occurrence counts for Clanga pomarina and for all birds (Aves) in four latitude bands of the Kruger bounding box (lon 31.0–32.04; lat −25.53 to −24.98, −24.98 to −24.00, −24.00 to −23.10, −23.10 to −22.33; country ZA), counted 13 November 2026: far north 1 077, north 699, central 1 703, south 803",
+          "url": "https://api.gbif.org/v1/occurrence/search",
+          "publisher": "GBIF.org",
           "year": 2026
         }
       ]
@@ -11990,6 +12092,12 @@
           "url": "https://commons.wikimedia.org/",
           "publisher": "Wikimedia Commons",
           "year": 2026
+        },
+        {
+          "title": "GBIF occurrence counts for Elanus caeruleus and for all birds (Aves) in four latitude bands of the Kruger bounding box (lon 31.0–32.04; lat −25.53 to −24.98, −24.98 to −24.00, −24.00 to −23.10, −23.10 to −22.33; country ZA), counted 13 November 2026: far north 1 551, north 897, central 3 567, south 3 905",
+          "url": "https://api.gbif.org/v1/occurrence/search",
+          "publisher": "GBIF.org",
+          "year": 2026
         }
       ]
     },
@@ -13949,6 +14057,12 @@
           "url": "https://commons.wikimedia.org/",
           "publisher": "Wikimedia Commons",
           "year": 2026
+        },
+        {
+          "title": "GBIF occurrence counts for Gypohierax angolensis and for all birds (Aves) in four latitude bands of the Kruger bounding box (lon 31.0–32.04; lat −25.53 to −24.98, −24.98 to −24.00, −24.00 to −23.10, −23.10 to −22.33; country ZA), counted 13 November 2026: far north 8, north 1, central 3, south 19",
+          "url": "https://api.gbif.org/v1/occurrence/search",
+          "publisher": "GBIF.org",
+          "year": 2026
         }
       ]
     },
@@ -14102,6 +14216,12 @@
           "url": "https://commons.wikimedia.org/",
           "publisher": "Wikimedia Commons",
           "year": 2026
+        },
+        {
+          "title": "GBIF occurrence counts for Gyps africanus and for all birds (Aves) in four latitude bands of the Kruger bounding box (lon 31.0–32.04; lat −25.53 to −24.98, −24.98 to −24.00, −24.00 to −23.10, −23.10 to −22.33; country ZA), counted 13 November 2026: far north 6 460, north 4 810, central 18 141, south 13 771",
+          "url": "https://api.gbif.org/v1/occurrence/search",
+          "publisher": "GBIF.org",
+          "year": 2026
         }
       ]
     },
@@ -14175,6 +14295,12 @@
           "url": "https://en.wikipedia.org/wiki/Cape_vulture",
           "publisher": "Wikimedia Foundation",
           "year": null
+        },
+        {
+          "title": "GBIF occurrence counts for Gyps coprotheres and for all birds (Aves) in four latitude bands of the Kruger bounding box (lon 31.0–32.04; lat −25.53 to −24.98, −24.98 to −24.00, −24.00 to −23.10, −23.10 to −22.33; country ZA), counted 13 November 2026: far north 412, north 583, central 1 848, south 1 045",
+          "url": "https://api.gbif.org/v1/occurrence/search",
+          "publisher": "GBIF.org",
+          "year": 2026
         }
       ]
     },
@@ -14871,6 +14997,12 @@
           "url": "https://en.wikipedia.org/wiki/Booted_eagle",
           "publisher": "Wikimedia Foundation",
           "year": null
+        },
+        {
+          "title": "GBIF occurrence counts for Hieraaetus pennatus and for all birds (Aves) in four latitude bands of the Kruger bounding box (lon 31.0–32.04; lat −25.53 to −24.98, −24.98 to −24.00, −24.00 to −23.10, −23.10 to −22.33; country ZA), counted 13 November 2026: far north 128, north 140, central 189, south 183",
+          "url": "https://api.gbif.org/v1/occurrence/search",
+          "publisher": "GBIF.org",
+          "year": 2026
         }
       ]
     },
@@ -14982,6 +15114,12 @@
           "url": "https://en.wikipedia.org/wiki/Wahlberg%27s_eagle",
           "publisher": "Wikimedia Foundation",
           "year": null
+        },
+        {
+          "title": "GBIF occurrence counts for Hieraaetus wahlbergi and for all birds (Aves) in four latitude bands of the Kruger bounding box (lon 31.0–32.04; lat −25.53 to −24.98, −24.98 to −24.00, −24.00 to −23.10, −23.10 to −22.33; country ZA), counted 13 November 2026: far north 3 694, north 2 829, central 7 805, south 6 361",
+          "url": "https://api.gbif.org/v1/occurrence/search",
+          "publisher": "GBIF.org",
+          "year": 2026
         }
       ]
     },
@@ -15542,6 +15680,12 @@
           "url": "https://en.wikipedia.org/wiki/African_fish_eagle",
           "publisher": "Wikimedia Foundation",
           "year": null
+        },
+        {
+          "title": "GBIF occurrence counts for Icthyophaga vocifer and for all birds (Aves) in four latitude bands of the Kruger bounding box (lon 31.0–32.04; lat −25.53 to −24.98, −24.98 to −24.00, −24.00 to −23.10, −23.10 to −22.33; country ZA), counted 13 November 2026: far north 5 722, north 8 057, central 12 763, south 15 515",
+          "url": "https://api.gbif.org/v1/occurrence/search",
+          "publisher": "GBIF.org",
+          "year": 2026
         }
       ]
     },
@@ -16039,6 +16183,12 @@
           "url": "https://en.wikipedia.org/wiki/Lizard_buzzard",
           "publisher": "Wikimedia Foundation",
           "year": null
+        },
+        {
+          "title": "GBIF occurrence counts for Kaupifalco monogrammicus and for all birds (Aves) in four latitude bands of the Kruger bounding box (lon 31.0–32.04; lat −25.53 to −24.98, −24.98 to −24.00, −24.00 to −23.10, −23.10 to −22.33; country ZA), counted 13 November 2026: far north 708, north 100, central 1 146, south 1 341",
+          "url": "https://api.gbif.org/v1/occurrence/search",
+          "publisher": "GBIF.org",
+          "year": 2026
         }
       ]
     },
@@ -16901,6 +17051,12 @@
           "url": "https://en.wikipedia.org/wiki/Long-crested_eagle",
           "publisher": "Wikimedia Foundation",
           "year": null
+        },
+        {
+          "title": "GBIF occurrence counts for Lophaetus occipitalis and for all birds (Aves) in four latitude bands of the Kruger bounding box (lon 31.0–32.04; lat −25.53 to −24.98, −24.98 to −24.00, −24.00 to −23.10, −23.10 to −22.33; country ZA), counted 13 November 2026: far north 174, north 46, central 150, south 904",
+          "url": "https://api.gbif.org/v1/occurrence/search",
+          "publisher": "GBIF.org",
+          "year": 2026
         }
       ]
     },
@@ -17217,6 +17373,12 @@
           "url": "https://en.wikipedia.org/wiki/Bat_hawk",
           "publisher": "Wikimedia Foundation",
           "year": null
+        },
+        {
+          "title": "GBIF occurrence counts for Macheiramphus alcinus and for all birds (Aves) in four latitude bands of the Kruger bounding box (lon 31.0–32.04; lat −25.53 to −24.98, −24.98 to −24.00, −24.00 to −23.10, −23.10 to −22.33; country ZA), counted 13 November 2026: far north 99, north 39, central 28, south 247",
+          "url": "https://api.gbif.org/v1/occurrence/search",
+          "publisher": "GBIF.org",
+          "year": 2026
         }
       ]
     },
@@ -17657,6 +17819,12 @@
           "url": "https://en.wikipedia.org/wiki/Dark_chanting_goshawk",
           "publisher": "Wikimedia Foundation",
           "year": null
+        },
+        {
+          "title": "GBIF occurrence counts for Melierax metabates and for all birds (Aves) in four latitude bands of the Kruger bounding box (lon 31.0–32.04; lat −25.53 to −24.98, −24.98 to −24.00, −24.00 to −23.10, −23.10 to −22.33; country ZA), counted 13 November 2026: far north 653, north 726, central 2 100, south 2 076",
+          "url": "https://api.gbif.org/v1/occurrence/search",
+          "publisher": "GBIF.org",
+          "year": 2026
         }
       ]
     },
@@ -18098,6 +18266,12 @@
           "url": "https://en.wikipedia.org/wiki/Gabar_goshawk",
           "publisher": "Wikimedia Foundation",
           "year": null
+        },
+        {
+          "title": "GBIF occurrence counts for Micronisus gabar and for all birds (Aves) in four latitude bands of the Kruger bounding box (lon 31.0–32.04; lat −25.53 to −24.98, −24.98 to −24.00, −24.00 to −23.10, −23.10 to −22.33; country ZA), counted 13 November 2026: far north 894, north 879, central 2 019, south 1 298",
+          "url": "https://api.gbif.org/v1/occurrence/search",
+          "publisher": "GBIF.org",
+          "year": 2026
         }
       ]
     },
@@ -18229,6 +18403,12 @@
           "url": "https://en.wikipedia.org/wiki/Black_kite",
           "publisher": "Wikimedia Foundation",
           "year": null
+        },
+        {
+          "title": "GBIF occurrence counts for Milvus migrans and for all birds (Aves) in four latitude bands of the Kruger bounding box (lon 31.0–32.04; lat −25.53 to −24.98, −24.98 to −24.00, −24.00 to −23.10, −23.10 to −22.33; country ZA), counted 13 November 2026: far north 803, north 1 820, central 2 987, south 2 822",
+          "url": "https://api.gbif.org/v1/occurrence/search",
+          "publisher": "GBIF.org",
+          "year": 2026
         }
       ]
     },
@@ -18795,6 +18975,12 @@
           "url": "https://en.wikipedia.org/wiki/Hooded_vulture",
           "publisher": "Wikimedia Foundation",
           "year": null
+        },
+        {
+          "title": "GBIF occurrence counts for Necrosyrtes monachus and for all birds (Aves) in four latitude bands of the Kruger bounding box (lon 31.0–32.04; lat −25.53 to −24.98, −24.98 to −24.00, −24.00 to −23.10, −23.10 to −22.33; country ZA), counted 13 November 2026: far north 744, north 1 625, central 6 615, south 4 608",
+          "url": "https://api.gbif.org/v1/occurrence/search",
+          "publisher": "GBIF.org",
+          "year": 2026
         }
       ]
     },
@@ -20137,6 +20323,12 @@
           "url": "https://en.wikipedia.org/wiki/European_honey_buzzard",
           "publisher": "Wikimedia Foundation",
           "year": null
+        },
+        {
+          "title": "GBIF occurrence counts for Pernis apivorus and for all birds (Aves) in four latitude bands of the Kruger bounding box (lon 31.0–32.04; lat −25.53 to −24.98, −24.98 to −24.00, −24.00 to −23.10, −23.10 to −22.33; country ZA), counted 13 November 2026: far north 45, north 15, central 39, south 64",
+          "url": "https://api.gbif.org/v1/occurrence/search",
+          "publisher": "GBIF.org",
+          "year": 2026
         }
       ]
     },
@@ -21794,6 +21986,12 @@
           "url": "https://en.wikipedia.org/wiki/Martial_eagle",
           "publisher": "Wikimedia Foundation",
           "year": null
+        },
+        {
+          "title": "GBIF occurrence counts for Polemaetus bellicosus and for all birds (Aves) in four latitude bands of the Kruger bounding box (lon 31.0–32.04; lat −25.53 to −24.98, −24.98 to −24.00, −24.00 to −23.10, −23.10 to −22.33; country ZA), counted 13 November 2026: far north 2 646, north 2 811, central 5 700, south 4 913",
+          "url": "https://api.gbif.org/v1/occurrence/search",
+          "publisher": "GBIF.org",
+          "year": 2026
         }
       ]
     },
@@ -21916,6 +22114,12 @@
           "url": "https://en.wikipedia.org/wiki/African_harrier-hawk",
           "publisher": "Wikimedia Foundation",
           "year": null
+        },
+        {
+          "title": "GBIF occurrence counts for Polyboroides typus and for all birds (Aves) in four latitude bands of the Kruger bounding box (lon 31.0–32.04; lat −25.53 to −24.98, −24.98 to −24.00, −24.00 to −23.10, −23.10 to −22.33; country ZA), counted 13 November 2026: far north 2 496, north 660, central 2 570, south 2 361",
+          "url": "https://api.gbif.org/v1/occurrence/search",
+          "publisher": "GBIF.org",
+          "year": 2026
         }
       ]
     },
@@ -24123,6 +24327,12 @@
           "url": "https://en.wikipedia.org/wiki/Crowned_eagle",
           "publisher": "Wikimedia Foundation",
           "year": null
+        },
+        {
+          "title": "GBIF occurrence counts for Stephanoaetus coronatus and for all birds (Aves) in four latitude bands of the Kruger bounding box (lon 31.0–32.04; lat −25.53 to −24.98, −24.98 to −24.00, −24.00 to −23.10, −23.10 to −22.33; country ZA), counted 13 November 2026: far north 531, north 25, central 85, south 265",
+          "url": "https://api.gbif.org/v1/occurrence/search",
+          "publisher": "GBIF.org",
+          "year": 2026
         }
       ]
     },
@@ -24662,6 +24872,12 @@
           "url": "https://en.wikipedia.org/wiki/Shikra",
           "publisher": "Wikimedia Foundation",
           "year": null
+        },
+        {
+          "title": "GBIF occurrence counts for Accipiter badius (the name GBIF uses for Tachyspiza badia) and for all birds (Aves) in four latitude bands of the Kruger bounding box (lon 31.0–32.04; lat −25.53 to −24.98, −24.98 to −24.00, −24.00 to −23.10, −23.10 to −22.33; country ZA), counted 13 November 2026: far north 390, north 322, central 571, south 246",
+          "url": "https://api.gbif.org/v1/occurrence/search",
+          "publisher": "GBIF.org",
+          "year": 2026
         }
       ]
     },
@@ -24784,6 +25000,12 @@
           "url": "https://en.wikipedia.org/wiki/Little_sparrowhawk",
           "publisher": "Wikimedia Foundation",
           "year": null
+        },
+        {
+          "title": "GBIF occurrence counts for Accipiter minullus (the name GBIF uses for Tachyspiza minulla) and for all birds (Aves) in four latitude bands of the Kruger bounding box (lon 31.0–32.04; lat −25.53 to −24.98, −24.98 to −24.00, −24.00 to −23.10, −23.10 to −22.33; country ZA), counted 13 November 2026: far north 687, north 367, central 821, south 638",
+          "url": "https://api.gbif.org/v1/occurrence/search",
+          "publisher": "GBIF.org",
+          "year": 2026
         }
       ]
     },
@@ -25122,6 +25344,12 @@
           "url": "https://en.wikipedia.org/wiki/Bateleur",
           "publisher": "Wikimedia Foundation",
           "year": null
+        },
+        {
+          "title": "GBIF occurrence counts for Terathopius ecaudatus and for all birds (Aves) in four latitude bands of the Kruger bounding box (lon 31.0–32.04; lat −25.53 to −24.98, −24.98 to −24.00, −24.00 to −23.10, −23.10 to −22.33; country ZA), counted 13 November 2026: far north 7 050, north 7 377, central 18 603, south 15 014",
+          "url": "https://api.gbif.org/v1/occurrence/search",
+          "publisher": "GBIF.org",
+          "year": 2026
         }
       ]
     },
@@ -25544,6 +25772,12 @@
           "url": "https://en.wikipedia.org/wiki/Lappet-faced_vulture",
           "publisher": "Wikimedia Foundation",
           "year": null
+        },
+        {
+          "title": "GBIF occurrence counts for Torgos tracheliotos and for all birds (Aves) in four latitude bands of the Kruger bounding box (lon 31.0–32.04; lat −25.53 to −24.98, −24.98 to −24.00, −24.00 to −23.10, −23.10 to −22.33; country ZA), counted 13 November 2026: far north 458, north 585, central 1 913, south 1 697",
+          "url": "https://api.gbif.org/v1/occurrence/search",
+          "publisher": "GBIF.org",
+          "year": 2026
         }
       ]
     },
@@ -25773,6 +26007,12 @@
           "url": "https://en.wikipedia.org/wiki/White-headed_vulture",
           "publisher": "Wikimedia Foundation",
           "year": null
+        },
+        {
+          "title": "GBIF occurrence counts for Trigonoceps occipitalis and for all birds (Aves) in four latitude bands of the Kruger bounding box (lon 31.0–32.04; lat −25.53 to −24.98, −24.98 to −24.00, −24.00 to −23.10, −23.10 to −22.33; country ZA), counted 13 November 2026: far north 519, north 1 246, central 4 157, south 2 516",
+          "url": "https://api.gbif.org/v1/occurrence/search",
+          "publisher": "GBIF.org",
+          "year": 2026
         }
       ]
     },

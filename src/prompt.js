@@ -19,7 +19,7 @@ export const ASK_AI_INTRO =
 export const ASK_AI_EXPECT = [
   'The AI must be able to open web pages. If it says it cannot, turn on web browsing or web search in its settings and paste the prompt again.',
   'It answers from this guide first and links the pages it used. Where the guide has no answer, it uses what else it knows and says so.',
-  'The guide has no locations inside the park, no wingspan and no weight yet, so answers about those come from the AI, not from the guide.',
+  'Wingspan, weight and where in the park a bird is found are in the guide for some families so far. Where the guide has none, those answers come from the AI, not from the guide.',
   'An AI can be wrong. Follow its links to check anything that matters.',
 ]
 
@@ -57,6 +57,7 @@ A reader may have pasted the prompt from ${origin}${ASK_AI_PATH} and be asking y
 - Search: ${origin}/search.md?q=WORDS, with one or two keywords in place of WORDS. Example: ${origin}/search.md?q=vulture
 - Search matches words, not meaning. A bird name (English, Afrikaans or Latin) or a family name works best. A whole sentence does not. It returns at most 50 results, each linking to a species or family page.
 - If you cannot open a search address, use the full lists instead: ${origin}/species.md (every species) and ${origin}/families.md (every family). Both link to every page.
-- A species page gives the summary, status, months present, body length, habitat, field marks, calls and an approximate Kruger population. Give population figures as a range with their year.
-- The guide does not hold locations inside the park, wingspan, weight or a ranking of songs. For those, answer from what else you know and say plainly that the answer is not from this guide.
+- A species page gives the summary, status, months present, body length, habitat, field marks, calls and an approximate Kruger population, and for some species wingspan, mass and where in the park it is recorded. Give population figures as a range with their year.
+- To compare species (the largest, the heaviest, the birds of one part of the park), open ${origin}/facts.md . It is one table with a row for every species: status, length, wingspan, mass, approximate population, and the regions of the park where it is recorded, with a note on where it is recorded most. It says how many species have each fact.
+- An empty cell in that table means the guide does not record the fact yet. For an empty cell, and for anything else the guide does not hold, such as a ranking of songs, answer from what else you know and say plainly that the answer is not from this guide.
 - Link the pages you used.`

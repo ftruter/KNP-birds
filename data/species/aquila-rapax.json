@@ -27,9 +27,26 @@
       "min": 65,
       "max": 72
     },
-    "note": "Newman's Birds gives 65–72 cm."
+    "wingspanCm": {
+      "min": 182.9,
+      "max": 182.9
+    },
+    "massG": {
+      "min": 1600,
+      "max": 3000
+    },
+    "note": "Newman's Birds gives 65–72 cm. Wingspan: Wikipedia gives a mean of 182.9 cm in a sample of 15 birds; no range is given. Mass: Newman's Birds gives 1.6–3 kg."
   },
   "habitat": "Wooded game areas where it perches conspicuously on tree tops; also Karoo grassland (Newman's). Widespread in Kruger savanna.",
+  "distribution": {
+    "regions": [
+      "far-north",
+      "north",
+      "central",
+      "south"
+    ],
+    "note": "GBIF records per 10 000 bird records in each region: far north 36, north 55, central 68, south 51 (counted 13 November 2026). Recorded most often in the central region."
+  },
   "summary": "A large resident Aquila with fully feathered legs and yellow cere and feet. Plumage highly variable: light brown, tawny, gingery-brown or darker mottled forms; flight feathers and tail blackish (Newman's).",
   "sampleData": false,
   "similar": [
@@ -87,6 +104,12 @@
       "title": "Wikimedia Commons species category images",
       "url": "https://commons.wikimedia.org/",
       "publisher": "Wikimedia Commons",
+      "year": 2026
+    },
+    {
+      "title": "GBIF occurrence counts for Aquila rapax and for all birds (Aves) in four latitude bands of the Kruger bounding box (lon 31.0–32.04; lat −25.53 to −24.98, −24.98 to −24.00, −24.00 to −23.10, −23.10 to −22.33; country ZA), counted 13 November 2026: far north 2 879, north 3 779, central 9 884, south 7 710",
+      "url": "https://api.gbif.org/v1/occurrence/search",
+      "publisher": "GBIF.org",
       "year": 2026
     }
   ],
