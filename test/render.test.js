@@ -48,6 +48,24 @@ test('text colours meet WCAG AA and the forbidden pairs are not used as text', (
   assert.ok(contrast(palette.dark.accent, palette.dark.bg) >= 4.5)
   assert.ok(contrast('#F6C64D', '#FDF6E3') < 4.5)
   assert.ok(contrast('#28602a', '#12301A') < 3)
+  // Each text role is readable on the page and on a card, in both modes.
+  const card = { light: '#FFFBF4', dark: '#1A3F27' }
+  for (const mode of ['light', 'dark']) {
+    assert.match(css, new RegExp(`--surface: ${card[mode]}`))
+    for (const role of ['heading', 'brand', 'link', 'muted', 'accent'])
+      for (const ground of [palette[mode].bg, card[mode]])
+        assert.ok(
+          contrast(palette[mode][role], ground) >= 4.5,
+          `${mode} ${role} on ${ground}`,
+        )
+  }
+  // On the dark page the header is darker than the page, and its text holds.
+  assert.ok(contrast(palette.dark.headerFg, palette.dark.headerBg) >= 4.5)
+  assert.ok(contrast(palette.dark.text, palette.dark.headerBg) >= 4.5)
+  // Only the brand colour is gold there: headings and links are quieter.
+  assert.equal(palette.dark.brand, '#F6C64D')
+  assert.notEqual(palette.dark.heading, palette.dark.brand)
+  assert.notEqual(palette.dark.link, palette.dark.brand)
   assert.match(css, /--header-fg: #F6C64D/)
   assert.match(css, /background: var\(--header-bg\)/)
   assert.doesNotMatch(css, /@import|javascript:/)
@@ -83,9 +101,16 @@ test('species HTML has the six comparisons, population, and no client script', a
   }
   assert.match(html, /No visible difference/)
   assert.match(html, /fill="#B07CC8"/)
-  assert.match(html, /class="population"/)
-  assert.match(html, /Approximate estimate/)
-  assert.match(html, /8,192–32,768 mature individuals/)
+  // The population is a row of the facts list: one figure in view, and the
+  // range and the method behind it.
+  assert.match(html, /<dt>Numbers in Kruger<\/dt><dd class="population">/)
+  assert.match(
+    html,
+    /<summary><span aria-hidden="true">± <\/span><span class="visually-hidden">about <\/span>16,384 mature individuals<\/summary>/,
+  )
+  assert.match(html, /Approximate estimate\. Range: 8,192 to 32,768\./)
+  assert.doesNotMatch(html, /8,192–32,768/)
+  assert.doesNotMatch(html, /<aside/)
   assert.match(html, /Kemp et al\. 2001/)
   assert.match(html, /Confidence: Low/)
   assert.match(html, /As of 2001/)
@@ -178,6 +203,108 @@ test('escaped names cannot inject markup, and AI images are labelled', async () 
   assert.doesNotMatch(missing, /<img /)
 })
 
+test('the home page says what a visitor can do before it says how the guide is built', async () => {
+  const html = renderHomeHtml({ origin: 'https://birds.truter.world' })
+  const order = [
+    '<ul class="home-actions">',
+    '<ul class="browse-links">',
+    '<h2>What these pages compare</h2>',
+    '<h2>About this guide</h2>',
+    'An open field guide to the birds of Kruger National Park',
+    'Pages are rendered on the server.',
+  ].map((mark) => html.indexOf(mark))
+  assert.ok(order.every((at) => at > 0))
+  assert.deepEqual(
+    order,
+    [...order].sort((a, b) => a - b),
+  )
+})
+
+test('a species page leads with its first photograph, and the rest follow the comparisons', async () => {
+  const page = async (slug) =>
+    renderSpeciesHtml({
+      origin: 'https://birds.truter.world',
+      doc: await readJson(`data/species/${slug}.json`),
+      colourMap: new Map(),
+      imagesAvailable: {},
+    })
+  const eagle = await page('icthyophaga-vocifer')
+  // The lead photograph is in view as the page opens, so it is not lazy.
+  // The summary and the facts sit with it.
+  const lead = eagle.match(
+    /<div class="species-lead">[\s\S]*?<div class="species-lead-text">/,
+  )[0]
+  assert.equal(lead.match(/<img /g).length, 1)
+  assert.doesNotMatch(lead, /loading="lazy"/)
+  const order = [
+    '<div class="species-lead">',
+    '<dl class="facts">',
+    '<h2>Telling it apart</h2>',
+    '<h2>More photographs</h2>',
+    '<h2>Sources</h2>',
+  ].map((mark) => eagle.indexOf(mark))
+  assert.ok(order.every((at) => at > 0))
+  assert.deepEqual(
+    order,
+    [...order].sort((a, b) => a - b),
+  )
+  // Every photograph is on the page once, and the others load when reached.
+  const more = eagle.slice(eagle.indexOf('<h2>More photographs</h2>'))
+  assert.equal(
+    more.match(/<img /g).length,
+    more.match(/loading="lazy"/g).length,
+  )
+  assert.equal(eagle.match(/<figure class="plate">/g).length, 6)
+  // A caption that opens by repeating the name and the view loses that
+  // sentence. A young bird keeps its age.
+  // (The alt text still carries it: that is what a screen reader is told.)
+  assert.doesNotMatch(eagle, /<figcaption>[^<]*African Fish Eagle — /)
+  assert.match(
+    eagle,
+    /<figcaption>Perched, side\. H4-2 Road East of Lower Sabie/,
+  )
+  assert.match(eagle, /<figcaption>Juvenile\. In flight from above\. /)
+  // A species with one photograph has no second heading for photographs.
+  const single = await page('acridotheres-tristis')
+  assert.equal(single.match(/<figure class="plate">/g).length, 1)
+  assert.doesNotMatch(single, /More photographs/)
+})
+
+test('a page leads with one population figure and never works one out', async () => {
+  const page = async (slug) =>
+    renderSpeciesHtml({
+      origin: 'https://birds.truter.world',
+      doc: await readJson(`data/species/${slug}.json`),
+      colourMap: new Map(),
+      imagesAvailable: {},
+    })
+  const row = (html) =>
+    html.match(
+      /<dt>Numbers in Kruger<\/dt><dd class="population">[\s\S]*?<\/details><\/dd>/,
+    )[0]
+  // An exact count is shown as it is, with no sign and no range line.
+  const hornbill = row(await page('bucorvus-leadbeateri'))
+  assert.match(hornbill, /<summary>180 groups<\/summary>/)
+  assert.doesNotMatch(hornbill, /±|Range:/)
+  // A measured range that is not half to double keeps both ends: a midpoint
+  // would be a figure that no source gives.
+  const stork = row(await page('ephippiorhynchus-senegalensis'))
+  assert.match(stork, /<summary>25–30 breeding pairs<\/summary>/)
+  assert.doesNotMatch(stork, /±|Range:/)
+  // No estimate says so, and still gives its trend behind the line.
+  const myna = row(await page('acridotheres-tristis'))
+  assert.match(myna, /<summary>No numeric estimate yet\.<\/summary>/)
+  assert.match(myna, /Trend: Unknown\./)
+  // The detail is closed until the visitor opens it.
+  for (const html of [hornbill, stork, myna])
+    assert.doesNotMatch(html, /<details[^>]* open/)
+  // The size leads with the length, and the note on sources is behind it.
+  assert.match(
+    await page('bucorvus-leadbeateri'),
+    /<dt>Size<\/dt><dd><details class="more"><summary>90 cm<\/summary>\n<p>Newman/,
+  )
+})
+
 test('a family page shows the derived approximate total', async () => {
   const doc = await readJson('data/family/coraciidae.json')
   const roller = await readJson('data/species/coracias-caudatus.json')
@@ -187,9 +314,16 @@ test('a family page shows the derived approximate total', async () => {
     plates: [{ doc: roller, imagesAvailable: {} }],
   })
   assert.match(html, /Approximate total/)
-  assert.match(html, /18,960–75,840 mature individuals/)
+  assert.match(
+    html,
+    /<summary><span aria-hidden="true">± <\/span><span class="visually-hidden">about <\/span>37,920 mature individuals<\/summary>/,
+  )
+  assert.match(html, /Range: 18,960 to 75,840\./)
   assert.match(html, /Includes 5 of 5 species/)
-  assert.match(html, /mature-individual estimates only/)
+  assert.match(
+    html,
+    /This is the total for the species counted in mature individuals\./,
+  )
   assert.doesNotMatch(html, /This total is incomplete/)
   assert.match(html, /First to look for/)
   assert.ok(
@@ -350,7 +484,8 @@ test('a species stub states that details are unpublished and skips empty section
   assert.match(html, /class="afrikaans">Lysternagtegaal</)
   assert.match(html, new RegExp(UNPUBLISHED_SPECIES))
   assert.match(html, /href="\/family\/muscicapidae"/)
-  assert.match(html, /128–512 mature individuals/)
+  assert.match(html, /about <\/span>256 mature individuals<\/summary>/)
+  assert.match(html, /Range: 128 to 512\./)
   assert.match(html, /Kemp et al\. 2001/)
   assert.doesNotMatch(html, /No numeric estimate yet/)
   const unsourced = await readJson('data/species/buteo-buteo.json')
@@ -531,15 +666,25 @@ test('the home page counts the species and family indexes', async () => {
   assert.deepEqual(
     [...nav.matchAll(/>([^<]+)<\/a>/g)].map((match) => match[1]),
     [
-      'Home',
       'Identify by photo',
       'Identify by sound',
       'Families',
       'Species',
-      'Colours',
       'Ask your AI',
       'For agents',
     ],
+  )
+  // The site name is the link home, the colour names are in the footer with
+  // the other reference pages, and the link for agents is in the markup but
+  // marked for the stylesheet to hide.
+  assert.match(html, /<p class="site-name"><a href="\/">KNP Birds<\/a><\/p>/)
+  assert.match(
+    html.match(/<footer[\s\S]*<\/footer>/)[0],
+    /<a href="\/vocab\/colours">Colours<\/a>/,
+  )
+  assert.match(
+    nav,
+    /<li class="for-agents"><a href="\/llms\.txt">For agents<\/a><\/li>/,
   )
   const sized = renderHomeHtml({
     origin: 'https://birds.truter.world',

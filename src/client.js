@@ -5,6 +5,7 @@ import identifyCaptureJs from './client/identify-capture.js'
 import identifyPhotoJs from './client/identify-photo.js'
 import offlineJs from './client/offline.js'
 import serviceWorkerJs from './client/sw.js'
+import { css } from './style.js'
 
 export const clientVersion = (source) => {
   let hash = 2166136261
@@ -19,6 +20,12 @@ export { clientJs, offlineJs, serviceWorkerJs }
 export const clientSrc = `/app.js?v=${clientVersion(clientJs)}`
 /** The installed web app's page script: the download panel and offline copies. */
 export const offlineSrc = `/offline.js?v=${clientVersion(offlineJs)}`
+/**
+ * The stylesheet, versioned like the scripts. A browser keeps it for an hour
+ * and a page for five minutes, so without the version new markup could meet
+ * an old stylesheet.
+ */
+export const styleSrc = `/style.css?v=${clientVersion(css)}`
 
 /** Path to source for the /identify/sound and /identify/photo scripts. */
 export const identifyScripts = {

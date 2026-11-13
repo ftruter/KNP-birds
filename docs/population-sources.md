@@ -18,6 +18,8 @@ The 2001 article sits in the journal’s pre-CC archive. Copyright covers the pa
 
 Kemp et al. estimated the number of **mature individuals** capable of reproduction, and snapped that estimate to a power of two. For a published threshold T = 2^n, the proportional band used here is **T/2 to 2T** (half to double). That is the only interval applied to Kemp rows.
 
+A page leads with the threshold itself, written `± T`, and gives the band in the detail under it (`Range: T/2 to 2T`). Tables on a page show `T`. The Markdown and JSON forms give the band. An estimate that is not a Kemp band (an exact count, or a measured range) is shown as it is stored, because a midpoint would be a figure no source gives.
+
 Status codes on `population.kemp.status`:
 
 | Code | Meaning | How Kemp placed the threshold |

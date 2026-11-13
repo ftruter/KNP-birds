@@ -157,6 +157,27 @@ test('without javascript the page explains itself and links onward', async () =>
   assert.match(body, /cannot tell that a photo is not a bird/)
   assert.match(body, /Phone photos have not been measured yet/)
   assert.match(body, /<h3>Weak groups<\/h3>/)
+  // Three things a visitor needs stay in view. The test figures, the time a
+  // recognition took and the size breakdown are each behind a closed line.
+  const inView = body.match(/<h2 id="reading">[\s\S]*?<\/ul>/)[0]
+  assert.equal(inView.match(/<li>/g).length, 3)
+  assert.match(inView, /None is certain/)
+  assert.match(inView, /cannot tell that a photo is not a bird/)
+  assert.doesNotMatch(inView, /Phone photos have not been measured/)
+  assert.match(
+    body,
+    /<summary>How it works and how accurate it is<\/summary>[\s\S]*Phone photos have not been measured yet/,
+  )
+  for (const id of ['identify-timing', 'identify-live-timing'])
+    assert.match(
+      body,
+      new RegExp(
+        `<details class="more identify-technical"><summary>Technical details</summary>\\n<p id="${id}" class="identify-timing" hidden></p>`,
+      ),
+    )
+  assert.match(body, /<summary>What is in the download<\/summary>/)
+  assert.match(body, /<summary>How often it was right for each<\/summary>/)
+  assert.doesNotMatch(body, /<details[^>]* open/)
   assert.match(
     body,
     /href="\/species\/coracias-caudatus">Lilac-breasted Roller/,

@@ -17,7 +17,8 @@ import {
   englishName,
   speciesDetailsPublished,
   UNPUBLISHED_SPECIES,
-  FAMILY_TOTAL_INTRO,
+  FAMILY_TOTAL_LEFT_OUT,
+  FAMILY_TOTAL_WHAT,
   familyLabel,
   familyTotalModel,
   HOME_ASK_AI,
@@ -31,8 +32,9 @@ import {
   mediaSexLabel,
   monthsLabel,
   objectPath,
+  lengthLabel,
   populationModel,
-  sizeLabel,
+  sizeNote,
   statusLabel,
   viewLabel,
 } from './guide.js'
@@ -44,7 +46,7 @@ import {
   rowsForSpeciesIndex,
 } from './catalog.js'
 import { agentUrls } from './head.js'
-import { clientSrc, offlineSrc } from './client.js'
+import { clientSrc, offlineSrc, styleSrc } from './client.js'
 import { ICON_LINKS } from './icon.js'
 import { INSTALL_LINKS } from './offline-app.js'
 import { OFFLINE_PATH } from './offline.js'
@@ -79,13 +81,21 @@ import {
   taxonNode,
 } from './structured.js'
 
+/**
+ * Marks what is in the page for machines that read the markup. The stylesheet
+ * hides it from people: the "For agents" nav link and the MCP paragraph.
+ */
+const FOR_AGENTS = 'for-agents'
+
+/**
+ * What a visitor comes to do. The site name is the link home, and the colour
+ * names are in the footer with the other reference pages.
+ */
 const NAV = [
-  ['home', '/', 'Home'],
   ['identify-photo', '/identify/photo', 'Identify by photo'],
   ['identify', '/identify/sound', 'Identify by sound'],
   ['families', '/families', 'Families'],
   ['species', '/species', 'Species'],
-  ['colours', '/vocab/colours', 'Colours'],
   ['ask-ai', '/ask-ai', 'Ask your AI'],
   ['agents', '/llms.txt', 'For agents'],
 ]
@@ -136,15 +146,7 @@ ${HOME_BROWSE.map((item) => `<li><a href="${item.href}">${escapeHtml(item.name)}
 </nav>
 <p class="ask-ai-link"><a href="${HOME_ASK_AI.href}">${escapeHtml(HOME_ASK_AI.name)}</a>: ${escapeHtml(HOME_ASK_AI.description)}</p>
 ${OFFLINE_PANEL}
-<h2>About this guide</h2>
-<div class="hero">
-<div class="hero-copy">
-<p>An open field guide to the birds of Kruger National Park and neighbouring Marloth Park. It is written for people and for AI agents. Pages are rendered on the server. JavaScript is optional: sorting and photo zoom still work from the links and the page when it is off.</p>
-${agentHtml(origin)}
-<p>The full list is resident species, plus summer migrants. Rare vagrants are left out. ${escapeHtml(catalogSentence(species.length, families.length, speciesIndex, familiesIndex))}</p>
-</div>
-<div class="hero-points">
-<h3>What these pages compare</h3>
+<h2>What these pages compare</h2>
 <ol class="compare-list">
 <li>Chicks and juveniles against adults</li>
 <li>Winter (non-breeding) plumage against summer (breeding) plumage</li>
@@ -153,15 +155,15 @@ ${agentHtml(origin)}
 <li>A perched or walking bird, from the front, the back and the side</li>
 <li>Calls and songs of males and females</li>
 </ol>
-</div>
-</div>
-<div class="lead-split">
+<h2>About this guide</h2>
+<p>An open field guide to the birds of Kruger National Park and neighbouring Marloth Park. The full list is resident species, plus summer migrants. Rare vagrants are left out. ${escapeHtml(catalogSentence(species.length, families.length, speciesIndex, familiesIndex))}</p>
 <p>Age, season and sex are worked out by comparing structured field marks. A mark left blank is unknown, not a claim that the part has no colour. Flight and perched views use notes and photographs. Where nothing differs, the page says so.</p>
-<aside class="lead-note">
+<details class="more"><summary>About the population figures</summary>
 <p>${escapeHtml(HOME_POPULATION_INTRO)}</p>
-</aside>
-</div>
-<p><a href="/vocab/colours">Colour names</a> used in the field marks.</p>`
+</details>
+<p><a href="/vocab/colours">Colour names</a> used in the field marks.</p>
+<p>The guide is written for people and for AI agents. Pages are rendered on the server. JavaScript is optional: sorting and photo zoom still work from the links and the page when it is off.</p>
+${agentHtml(origin)}`
   return layout({
     title: 'Birds of Kruger National Park',
     description:
@@ -249,12 +251,8 @@ ${doc.sampleData ? sampleNotice() : ''}
 <h1>${escapeHtml(englishName(doc))}</h1>
 <p class="latin">${escapeHtml(doc.scientificName || '')}</p>
 ${afrikaansName(doc) ? `<p class="afrikaans">${escapeHtml(afrikaansName(doc))}</p>` : ''}
-<div class="split">
-<div class="split-copy">
 ${paragraphs(doc.summary)}
-</div>
 ${familyPopulationHtml(doc.population, doc.residency, format)}
-</div>
 ${iconicHtml(plates)}
 <h2>${FAMILY_SPECIES_HEADING}</h2>
 ${speciesTableHtml({
@@ -331,14 +329,21 @@ ${doc.sampleData ? sampleNotice() : ''}
 <p class="latin">${escapeHtml(doc.scientificName || '')}</p>
 ${afrikaansName(doc) ? `<p class="afrikaans">${escapeHtml(afrikaansName(doc))}</p>` : ''}
 </div>
-<div class="species-layout">
-<div class="species-main">
-${published ? publishedSpeciesHtml(doc, comparisons, images, imagesAvailable, colourMap) : `<p>${escapeHtml(UNPUBLISHED_SPECIES)}</p>`}
-</div>
-<aside class="species-aside">
-${populationHtml(population)}
-</aside>
-</div>`
+${
+  published
+    ? publishedSpeciesHtml(
+        doc,
+        comparisons,
+        images,
+        imagesAvailable,
+        colourMap,
+        population,
+      )
+    : `<p>${escapeHtml(UNPUBLISHED_SPECIES)}</p>
+<dl class="facts">
+${populationRowHtml(population)}
+</dl>`
+}`
   return layout({
     title: `${englishName(doc)} (${doc.scientificName}) · KNP Birds`,
     description: inlineText(doc.summary || englishName(doc)),
@@ -404,22 +409,33 @@ const publishedSpeciesHtml = (
   images,
   imagesAvailable,
   colourMap,
-) => `${paragraphs(doc.summary)}
+  population,
+) => `<div class="species-lead">
+${figures(doc, images.slice(0, 1), imagesAvailable, colourMap, true)}
+<div class="species-lead-text">
+${paragraphs(doc.summary)}
 <dl class="facts">
 <dt>Status</dt><dd>${escapeHtml(statusLabel(doc.status))}</dd>
 ${monthsLabel(doc.monthsPresent) ? `<dt>Months in Kruger</dt><dd>${escapeHtml(monthsLabel(doc.monthsPresent))}</dd>` : ''}
-<dt>Size</dt><dd>${escapeHtml(sizeLabel(doc.size) || 'Not recorded')}</dd>
+${sizeRowHtml(doc.size)}
 ${sizeFactsHtml(doc)}${doc.habitat ? `<dt>Habitat</dt><dd>${escapeHtml(doc.habitat)}</dd>` : ''}
-${distributionLabel(doc.distribution) ? `<dt>Where in Kruger</dt><dd>${escapeHtml(distributionLabel(doc.distribution))}</dd>` : ''}
+${whereRowHtml(doc.distribution)}
+${populationRowHtml(population)}
 <dt>Family</dt><dd><a href="/family/${escapeHtml(doc.family)}">${escapeHtml(familyLabel(doc.family))}</a></dd>
 </dl>
-<h2>Photographs</h2>
-<div class="gallery">
-${figures(doc, images, imagesAvailable, colourMap)}
+</div>
 </div>
 <h2>Telling it apart</h2>
 ${comparisons.map((section) => comparisonSection(section, colourMap)).join('\n')}
 ${similarHtml(doc)}
+${
+  images.length > 1
+    ? `<h2>More photographs</h2>
+<div class="gallery">
+${figures(doc, images.slice(1), imagesAvailable, colourMap)}
+</div>`
+    : ''
+}
 ${sourcesSection(doc.sources)}`
 
 /** Wingspan, mass and flight, each only when the species file records it. */
@@ -580,47 +596,95 @@ ${figures(plate.doc, Array.isArray(plate.doc.images) ? plate.doc.images : [], pl
   .join('\n')}
 </div>`
 
+/**
+ * "± 128 mature individuals". The sign is for the eye and the word is for a
+ * screen reader, which would say "plus-minus".
+ */
+const figureHtml = (headline, none) =>
+  !headline.text
+    ? none
+    : headline.approx
+      ? `<span aria-hidden="true">± </span><span class="visually-hidden">about </span>${escapeHtml(headline.text)}`
+      : escapeHtml(headline.text)
+
+/**
+ * A fact with its detail behind it. The fact is the summary and stays in
+ * view; the detail opens under it, with JavaScript on or off.
+ */
+const moreHtml = (summaryHtml, detailHtml, id = '') =>
+  `<details class="more"${id ? ` id="${id}"` : ''}><summary>${summaryHtml}</summary>
+${detailHtml}
+</details>`
+
+/**
+ * The parts of the park stay in view. The note, which gives the record
+ * counts they rest on, is behind them.
+ */
+const whereRowHtml = (distribution) => {
+  const regions = distributionLabel({ regions: distribution?.regions })
+  const note =
+    typeof distribution?.note === 'string' ? distribution.note.trim() : ''
+  if (!regions && !note) return ''
+  const value =
+    regions && note
+      ? moreHtml(escapeHtml(regions), `<p>${escapeHtml(note)}</p>`)
+      : escapeHtml(regions || note)
+  return `<dt>Where in Kruger</dt><dd>${value}</dd>`
+}
+
+const sizeRowHtml = (size) => {
+  const length = lengthLabel(size)
+  if (!length) return '<dt>Size</dt><dd>Not recorded</dd>'
+  const note = sizeNote(size)
+  return `<dt>Size</dt><dd>${note ? moreHtml(escapeHtml(length), `<p>${escapeHtml(note)}</p>`) : escapeHtml(length)}</dd>`
+}
+
+/**
+ * The family total leads with one figure. What it adds up, what it leaves
+ * out and how the seasons relate to it are the detail. The families table
+ * links here by id when a seasonal figure is partial.
+ */
 const familyPopulationHtml = (population, residency, format) => {
   const model = familyTotalModel(population, format)
   const gap = residencyGapText(residency, format)
-  const range = model.range
-    ? `<p class="estimate-range">${escapeHtml(model.range)}</p>`
-    : '<p class="estimate-range">No numeric total yet.</p>'
-  return `<section class="population" aria-labelledby="family-population-title">
-<h2 id="family-population-title">Population</h2>
-<p class="estimate-label">${escapeHtml(FAMILY_TOTAL_LABEL)}</p>
-<p>${escapeHtml(FAMILY_TOTAL_INTRO)}</p>
-${range}
-<p>${escapeHtml(model.coverage)}</p>
-${model.complete ? '' : '<p>This total is incomplete.</p>'}
-<div id="${RESIDENCY_ANCHOR}">
-<p>${escapeHtml(FAMILY_TOTAL_SEASONS)} <a href="/families">Families by season</a>.</p>
-${gap ? `<p>${escapeHtml(gap)}</p>` : ''}
-</div>
-</section>`
+  const { rangeLine } = model.headline
+  const detail = [
+    `<p>${escapeHtml(FAMILY_TOTAL_LABEL)}.${rangeLine ? ` ${escapeHtml(rangeLine)}` : ''}</p>`,
+    `<p>${escapeHtml(FAMILY_TOTAL_WHAT)} ${escapeHtml(model.coverage)}${model.complete ? '' : ` This total is incomplete. ${escapeHtml(FAMILY_TOTAL_LEFT_OUT)}`}</p>`,
+    `<p>${escapeHtml(FAMILY_TOTAL_SEASONS)} <a href="/families">Families by season</a>.</p>`,
+    gap ? `<p>${escapeHtml(gap)}</p>` : '',
+  ]
+    .filter(Boolean)
+    .join('\n')
+  return `<dl class="facts">
+<dt>Numbers in Kruger</dt><dd class="population">${moreHtml(figureHtml(model.headline, 'No numeric total yet.'), detail, RESIDENCY_ANCHOR)}</dd>
+</dl>`
 }
 
-const populationHtml = (model) => {
-  const range = model.range
-    ? `<p class="estimate-range">${escapeHtml(model.range)}</p>`
-    : '<p class="estimate-range">No numeric estimate yet.</p>'
-  const extra = [
-    model.confidence
-      ? `<p>Confidence: ${escapeHtml(model.confidence)}.</p>`
-      : '',
-    model.asOf ? `<p>As of ${escapeHtml(String(model.asOf))}.</p>` : '',
-  ].join('')
-  return `<section class="population" aria-labelledby="population-title">
-<h2 id="population-title">Population</h2>
-<p class="estimate-label">${escapeHtml(APPROXIMATE_LABEL)}</p>
-${range}
-<p>Trend: ${escapeHtml(model.trend)}.</p>
-${model.notes ? `<p>${escapeHtml(model.notes)}</p>` : ''}
-${model.baseline ? `<p>${escapeHtml(model.baseline)}</p>` : ''}
-${extra}
-<h3>Sources</h3>
-${sourcesHtml(model.sources)}
-</section>`
+/**
+ * The population as one row of the facts list: the figure in view, and the
+ * range, trend, method, confidence, year and sources behind it.
+ */
+const populationRowHtml = (model) => {
+  const { rangeLine } = model.headline
+  const state = [
+    `Trend: ${escapeHtml(model.trend)}.`,
+    model.confidence ? `Confidence: ${escapeHtml(model.confidence)}.` : '',
+    model.asOf ? `As of ${escapeHtml(String(model.asOf))}.` : '',
+  ]
+    .filter(Boolean)
+    .join(' ')
+  const detail = [
+    `<p>${escapeHtml(APPROXIMATE_LABEL)}.${rangeLine ? ` ${escapeHtml(rangeLine)}` : ''}</p>`,
+    `<p>${state}</p>`,
+    model.notes ? `<p>${escapeHtml(model.notes)}</p>` : '',
+    model.baseline ? `<p>${escapeHtml(model.baseline)}</p>` : '',
+    '<p>Sources:</p>',
+    sourcesHtml(model.sources),
+  ]
+    .filter(Boolean)
+    .join('\n')
+  return `<dt>Numbers in Kruger</dt><dd class="population">${moreHtml(figureHtml(model.headline, 'No numeric estimate yet.'), detail)}</dd>`
 }
 
 const sourcesHtml = (sources) => {
@@ -650,7 +714,11 @@ const imageSrc = (image, imagesAvailable) => {
   return remote && !licenceForbidsDerivatives(image?.license) ? remote : ''
 }
 
-const figures = (doc, images, imagesAvailable, colourMap) => {
+/**
+ * `lead` is the photograph at the top of a species page. It is in view as
+ * the page opens, so it is fetched at once and not when scrolled to.
+ */
+const figures = (doc, images, imagesAvailable, colourMap, lead = false) => {
   if (images.length === 0)
     return placeholder('No photograph is stored for this species yet.')
   return images
@@ -664,7 +732,7 @@ const figures = (doc, images, imagesAvailable, colourMap) => {
       )
       return src
         ? plateFigure(
-            `<img src="${escapeHtml(src)}" alt="${escapeHtml(imageAlt(doc, image))}" loading="lazy">`,
+            `<img src="${escapeHtml(src)}" alt="${escapeHtml(imageAlt(doc, image))}"${lead ? '' : ' loading="lazy"'}>`,
             caption,
           )
         : placeholder('Photograph not in the store yet.', caption)
@@ -673,12 +741,34 @@ const figures = (doc, images, imagesAvailable, colourMap) => {
 }
 
 /**
+ * Some captions open by repeating the name and the view, as in "Cape Vulture
+ * — perched-side, adult." The view is already given in words, so that
+ * sentence is left out. A young bird keeps its age.
+ */
+const REPEATED_LEAD =
+  /^.+? — (?:perched|flight|display)-[a-z]+(?:, ([a-z]+))?\.\s*/
+
+const captionDetail = (image) => {
+  const { detail } = imageCaptionParts(image)
+  const text = typeof image?.caption === 'string' ? image.caption.trim() : ''
+  const lead = text.match(REPEATED_LEAD)
+  if (!lead) return detail
+  const age = lead[1] && lead[1] !== 'adult' ? lead[1] : ''
+  return [
+    age ? `${age.charAt(0).toUpperCase()}${age.slice(1)}` : '',
+    mediaSexLabel(image?.sex),
+    viewLabel(image?.view),
+    text.slice(lead[0].length),
+  ].filter(Boolean)
+}
+
+/**
  * What the picture shows stays in view; who made it and on what terms goes
  * in the credit disclosure. Only an AI-generated image is flagged outside
  * it, since that is the case a reader needs to notice.
  */
 const imageCaption = (image, shown) => {
-  const { detail } = imageCaptionParts(image)
+  const detail = captionDetail(image)
   return [
     image?.aiGenerated
       ? '<span class="ai-label">AI-generated image</span>'
@@ -1050,7 +1140,7 @@ ${noindex ? '<meta name="robots" content="noindex">\n' : ''}<link rel="canonical
 ${ARD_LINK}
 ${ICON_LINKS}
 ${INSTALL_LINKS}
-<link rel="stylesheet" href="/style.css">
+<link rel="stylesheet" href="${styleSrc}">
 <script type="module" defer src="${clientSrc}"></script>
 <script type="module" defer src="${offlineSrc}"></script>
 ${scripts.map((src) => `<script type="module" defer src="${escapeHtml(src)}"></script>\n`).join('')}${structured}</head>
@@ -1065,7 +1155,7 @@ ${scripts.map((src) => `<script type="module" defer src="${escapeHtml(src)}"></s
 ${searchFormHtml(searchQuery)}
 <nav aria-label="Site">
 <ul class="nav-list">
-${NAV.map(([key, href, label]) => `<li><a href="${href}"${nav === key ? ' aria-current="page"' : ''}>${label}</a></li>`).join('\n')}
+${NAV.map(([key, href, label]) => `<li${key === 'agents' ? ` class="${FOR_AGENTS}"` : ''}><a href="${href}"${nav === key ? ' aria-current="page"' : ''}>${label}</a></li>`).join('\n')}
 </ul>
 </nav>
 </div>
@@ -1079,15 +1169,10 @@ ${main}
 <footer class="site-footer">
 <div class="wrap">
 <div class="footer-grid">
-<div>
-<p class="footer-lead">Birds of Kruger National Park. An open field guide for people and for AI agents.</p>
-<p>Also available as <a href="${escapeHtml(alts.md)}">Markdown</a> and <a href="${escapeHtml(alts.json)}">JSON</a>.</p>
+<p>Birds of Kruger National Park</p>
+<p><a href="/llms.txt">llms.txt</a> · <a href="/sitemap"${path === '/sitemap' ? ' aria-current="page"' : ''}>Sitemap</a> · <a href="/facts"${path === '/facts' ? ' aria-current="page"' : ''}>Facts table</a> · <a href="/vocab/colours"${path === '/vocab/colours' ? ' aria-current="page"' : ''}>Colours</a> · <a href="/credits"${path === '/credits' ? ' aria-current="page"' : ''}>Credits</a> · <a href="${escapeHtml(alts.md)}">Markdown</a> · <a href="${escapeHtml(alts.json)}">JSON</a></p>
 </div>
-<div>
 ${agentHtml(origin)}
-<p><a href="/llms.txt">llms.txt</a> · <a href="/sitemap"${path === '/sitemap' ? ' aria-current="page"' : ''}>Sitemap</a> · <a href="/facts"${path === '/facts' ? ' aria-current="page"' : ''}>Facts table</a> · <a href="/credits"${path === '/credits' ? ' aria-current="page"' : ''}>Credits</a></p>
-</div>
-</div>
 </div>
 </footer>
 </body>
@@ -1170,7 +1255,7 @@ ${body}`,
 
 const agentHtml = (origin) => {
   const urls = agentUrls(origin)
-  return `<p>AI agents: this guide has a public read-only MCP server at <a href="${escapeHtml(urls.mcp)}">${escapeHtml(urls.mcp)}</a> (streamable HTTP, one tool: <code>search</code>). <a href="${escapeHtml(urls.card)}">Server card</a>. <a href="${escapeHtml(urls.ard)}">Discovery</a>.</p>`
+  return `<p class="${FOR_AGENTS}">AI agents: this guide has a public read-only MCP server at <a href="${escapeHtml(urls.mcp)}">${escapeHtml(urls.mcp)}</a> (streamable HTTP, one tool: <code>search</code>). <a href="${escapeHtml(urls.card)}">Server card</a>. <a href="${escapeHtml(urls.ard)}">Discovery</a>.</p>`
 }
 
 const sampleNotice = () =>

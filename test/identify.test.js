@@ -100,6 +100,22 @@ test('without javascript the page explains itself and links onward', async () =>
   // region: the status line announces each species once.
   assert.match(body, /<ol id="identify-list" class="identify-list"><\/ol>/)
   assert.match(body, /lists every species it has heard in the last 10 seconds/)
+  // The recognition time is behind a closed line, and so is the longer
+  // explanation. Three things a visitor needs stay in view.
+  assert.match(
+    body,
+    /<details class="more identify-technical"><summary>Technical details<\/summary>\n<p id="identify-timing" class="identify-timing" hidden><\/p>/,
+  )
+  const inView = body.match(/<h2 id="reading">[\s\S]*?<\/ul>/)[0]
+  assert.equal(inView.match(/<li>/g).length, 3)
+  assert.match(inView, /None is certain/)
+  assert.doesNotMatch(inView, /81%/)
+  assert.match(
+    body,
+    /<summary>How it works and how accurate it is<\/summary>[\s\S]*81%/,
+  )
+  assert.match(body, /<summary>What is in the download<\/summary>/)
+  assert.doesNotMatch(body, /<details[^>]* open/)
   assert.match(body, /after 3 minutes with nothing recognised/)
   assert.match(
     body,
