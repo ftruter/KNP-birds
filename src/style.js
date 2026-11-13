@@ -363,9 +363,22 @@ p { text-wrap: pretty; }
   .js .site-search input:placeholder-shown:not(:focus) ~ .site-search-hint { display: block; }
 }
 
+/* On a narrow screen the header is two rows: the name beside the search box, then the nav in one row that scrolls sideways. The padding, taken back by the margin, leaves room for a link's focus ring. */
 @container wrap (max-width: 46rem) {
-  .mast nav { flex-basis: 100%; }
-  .site-search { flex-basis: 100%; max-inline-size: none; }
+  .mast nav { flex-basis: 100%; min-inline-size: 0; }
+  .brand { min-inline-size: 0; }
+  .site-search { flex: 1 1 8rem; max-inline-size: none; }
+  .nav-list {
+    flex-wrap: nowrap;
+    margin: calc(var(--gap-half) * -1);
+    padding: var(--gap-half);
+    overflow-x: auto;
+    overscroll-behavior-x: contain;
+    scrollbar-width: none;
+  }
+  .nav-list::-webkit-scrollbar { display: none; }
+  .nav-list li { flex: none; }
+  .nav-list a { white-space: nowrap; }
 }
 
 .search-results {
@@ -476,28 +489,11 @@ code {
   color: var(--muted);
 }
 
-/* A page section, not a card: its heading and the space round it set it apart. */
-.hero {
-  display: grid;
-  grid-template-columns: minmax(0, 1fr);
-  gap: var(--gap) var(--gap-2);
-  align-items: start;
-  margin-block: var(--gap);
-}
-
-.hero h3 { margin-block-start: 0; }
-
-@container wrap (min-width: 58rem) {
-  .hero {
-    grid-template-columns: minmax(0, 1.15fr) minmax(18rem, 0.85fr);
-  }
-}
-
 .compare-list {
   counter-reset: step;
   list-style: none;
   display: grid;
-  grid-template-columns: minmax(0, 1fr);
+  grid-template-columns: repeat(auto-fill, minmax(min(100%, 18rem), 1fr));
   gap: var(--gap) var(--gap-2);
   margin: 0;
   padding: 0;
@@ -527,10 +523,6 @@ code {
   font-family: var(--sans);
   font-weight: 600;
   font-size: var(--fs-xs);
-}
-
-@container wrap (min-width: 58rem) {
-  .compare-list { grid-template-columns: 1fr 1fr; }
 }
 
 .sample, .mark { font-family: var(--sans); }
@@ -573,9 +565,7 @@ h1:has(+ .latin) { margin-block-end: var(--gap-half); }
 
 .afrikaans { margin: 0; font-size: var(--fs-md); }
 
-/* A grid cell starts and ends flush, so the grid's gap is the only space between cells. */
-.hero > * > :first-child { margin-block-start: 0; }
-.hero > * > :last-child, .search-snippets dd:last-child { margin-block-end: 0; }
+.search-snippets dd:last-child { margin-block-end: 0; }
 
 .facts {
   display: grid;
@@ -601,6 +591,22 @@ h1:has(+ .latin) { margin-block-end: var(--gap-half); }
 
 /* The facts and the comparisons keep to a readable width on a wide screen. */
 .facts, .comparison { max-inline-size: 60rem; }
+
+/* A species page leads with its first photograph. On a wide screen the summary and the facts sit beside it; on a narrow one they follow it. */
+.species-lead {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: var(--gap) var(--gap-2);
+  align-items: start;
+  margin-block: var(--gap);
+}
+.species-lead-text > :first-child { margin-block-start: 0; }
+.species-lead-text > p { max-inline-size: 75ch; }
+.species-lead .facts { margin-block-end: 0; }
+
+@container wrap (min-width: 40rem) {
+  .species-lead { grid-template-columns: minmax(16rem, 5fr) minmax(0, 7fr); }
+}
 
 /* A fact with its detail behind it. The fact is the summary and stays in view; the detail opens under it and is quieter. It is used for the population figure, the size note, and the notes under a table and on the identify pages. */
 .more summary {
@@ -650,7 +656,7 @@ h1:has(+ .latin) { margin-block-end: var(--gap-half); }
 
 .gallery {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(min(100%, 16.5rem), 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(min(100%, 16.5rem), 1fr));
   gap: var(--gap);
   margin-block: var(--gap);
 }
@@ -832,6 +838,10 @@ caption, .season-note {
   border-radius: var(--radius-sm);
 }
 
+/* Room is kept for a photograph before it arrives, so the page does not jump when it does. The whole picture is shown in that room and nothing is cropped. A band on a family page sets a height and lets each picture keep its own width. */
+.species-lead .plate img, .gallery .plate img { aspect-ratio: 3 / 2; object-fit: contain; }
+.species-card .gallery .plate img { aspect-ratio: auto; }
+
 .zoom {
   display: block;
   inline-size: 100%;
@@ -955,6 +965,8 @@ audio {
 .credit ul { margin: 0 0 var(--gap-half); padding-inline-start: var(--gap); }
 .credit li { margin: 0; }
 .plate.is-zoomed figcaption { max-block-size: 60vh; overflow-y: auto; }
+/* A zoomed photograph takes the room the screen gives it, not the room kept for it on the page. */
+.plate.is-zoomed img { aspect-ratio: auto; }
 
 /* Beside a thumbnail the closed credit fits under the picture. Opened, it
    is wider than the picture, so it lies over the text beside it. */

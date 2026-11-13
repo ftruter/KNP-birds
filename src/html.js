@@ -80,13 +80,15 @@ import { sitemapEntries } from './sitemap.js'
  */
 const FOR_AGENTS = 'for-agents'
 
+/**
+ * What a visitor comes to do. The site name is the link home, and the colour
+ * names are in the footer with the other reference pages.
+ */
 const NAV = [
-  ['home', '/', 'Home'],
   ['identify-photo', '/identify/photo', 'Identify by photo'],
   ['identify', '/identify/sound', 'Identify by sound'],
   ['families', '/families', 'Families'],
   ['species', '/species', 'Species'],
-  ['colours', '/vocab/colours', 'Colours'],
   ['ask-ai', '/ask-ai', 'Ask your AI'],
   ['agents', '/llms.txt', 'For agents'],
 ]
@@ -137,15 +139,7 @@ ${HOME_BROWSE.map((item) => `<li><a href="${item.href}">${escapeHtml(item.name)}
 </nav>
 <p class="ask-ai-link"><a href="${HOME_ASK_AI.href}">${escapeHtml(HOME_ASK_AI.name)}</a>: ${escapeHtml(HOME_ASK_AI.description)}</p>
 ${OFFLINE_PANEL}
-<h2>About this guide</h2>
-<div class="hero">
-<div class="hero-copy">
-<p>An open field guide to the birds of Kruger National Park and neighbouring Marloth Park. It is written for people and for AI agents. Pages are rendered on the server. JavaScript is optional: sorting and photo zoom still work from the links and the page when it is off.</p>
-${agentHtml(origin)}
-<p>The full list is resident species, plus summer migrants. Rare vagrants are left out. ${escapeHtml(catalogSentence(species.length, families.length, speciesIndex, familiesIndex))}</p>
-</div>
-<div class="hero-points">
-<h3>What these pages compare</h3>
+<h2>What these pages compare</h2>
 <ol class="compare-list">
 <li>Chicks and juveniles against adults</li>
 <li>Winter (non-breeding) plumage against summer (breeding) plumage</li>
@@ -154,13 +148,15 @@ ${agentHtml(origin)}
 <li>A perched or walking bird, from the front, the back and the side</li>
 <li>Calls and songs of males and females</li>
 </ol>
-</div>
-</div>
+<h2>About this guide</h2>
+<p>An open field guide to the birds of Kruger National Park and neighbouring Marloth Park. The full list is resident species, plus summer migrants. Rare vagrants are left out. ${escapeHtml(catalogSentence(species.length, families.length, speciesIndex, familiesIndex))}</p>
 <p>Age, season and sex are worked out by comparing structured field marks. A mark left blank is unknown, not a claim that the part has no colour. Flight and perched views use notes and photographs. Where nothing differs, the page says so.</p>
 <details class="more"><summary>About the population figures</summary>
 <p>${escapeHtml(HOME_POPULATION_INTRO)}</p>
 </details>
-<p><a href="/vocab/colours">Colour names</a> used in the field marks.</p>`
+<p><a href="/vocab/colours">Colour names</a> used in the field marks.</p>
+<p>The guide is written for people and for AI agents. Pages are rendered on the server. JavaScript is optional: sorting and photo zoom still work from the links and the page when it is off.</p>
+${agentHtml(origin)}`
   return layout({
     title: 'Birds of Kruger National Park',
     description:
@@ -373,7 +369,10 @@ const publishedSpeciesHtml = (
   imagesAvailable,
   colourMap,
   population,
-) => `${paragraphs(doc.summary)}
+) => `<div class="species-lead">
+${figures(doc, images.slice(0, 1), imagesAvailable, colourMap, true)}
+<div class="species-lead-text">
+${paragraphs(doc.summary)}
 <dl class="facts">
 <dt>Status</dt><dd>${escapeHtml(statusLabel(doc.status))}</dd>
 ${monthsLabel(doc.monthsPresent) ? `<dt>Months in Kruger</dt><dd>${escapeHtml(monthsLabel(doc.monthsPresent))}</dd>` : ''}
@@ -383,13 +382,19 @@ ${whereRowHtml(doc.distribution)}
 ${populationRowHtml(population)}
 <dt>Family</dt><dd><a href="/family/${escapeHtml(doc.family)}">${escapeHtml(familyLabel(doc.family))}</a></dd>
 </dl>
-<h2>Photographs</h2>
-<div class="gallery">
-${figures(doc, images, imagesAvailable, colourMap)}
+</div>
 </div>
 <h2>Telling it apart</h2>
 ${comparisons.map((section) => comparisonSection(section, colourMap)).join('\n')}
 ${similarHtml(doc)}
+${
+  images.length > 1
+    ? `<h2>More photographs</h2>
+<div class="gallery">
+${figures(doc, images.slice(1), imagesAvailable, colourMap)}
+</div>`
+    : ''
+}
 ${sourcesSection(doc.sources)}`
 
 /** Wingspan, mass and flight, each only when the species file records it. */
@@ -660,7 +665,11 @@ ${sources
 </ol>`
 }
 
-const figures = (doc, images, imagesAvailable, colourMap) => {
+/**
+ * `lead` is the photograph at the top of a species page. It is in view as
+ * the page opens, so it is fetched at once and not when scrolled to.
+ */
+const figures = (doc, images, imagesAvailable, colourMap, lead = false) => {
   if (images.length === 0)
     return placeholder('No photograph is stored for this species yet.')
   return images
@@ -680,7 +689,7 @@ const figures = (doc, images, imagesAvailable, colourMap) => {
       )
       return src
         ? plateFigure(
-            `<img src="${escapeHtml(src)}" alt="${escapeHtml(imageAlt(doc, image))}" loading="lazy">`,
+            `<img src="${escapeHtml(src)}" alt="${escapeHtml(imageAlt(doc, image))}"${lead ? '' : ' loading="lazy"'}>`,
             caption,
           )
         : placeholder('Photograph not in the store yet.', caption)
@@ -689,12 +698,34 @@ const figures = (doc, images, imagesAvailable, colourMap) => {
 }
 
 /**
+ * Some captions open by repeating the name and the view, as in "Cape Vulture
+ * — perched-side, adult." The view is already given in words, so that
+ * sentence is left out. A young bird keeps its age.
+ */
+const REPEATED_LEAD =
+  /^.+? — (?:perched|flight|display)-[a-z]+(?:, ([a-z]+))?\.\s*/
+
+const captionDetail = (image) => {
+  const { detail } = imageCaptionParts(image)
+  const text = typeof image?.caption === 'string' ? image.caption.trim() : ''
+  const lead = text.match(REPEATED_LEAD)
+  if (!lead) return detail
+  const age = lead[1] && lead[1] !== 'adult' ? lead[1] : ''
+  return [
+    age ? `${age.charAt(0).toUpperCase()}${age.slice(1)}` : '',
+    mediaSexLabel(image?.sex),
+    viewLabel(image?.view),
+    text.slice(lead[0].length),
+  ].filter(Boolean)
+}
+
+/**
  * What the picture shows stays in view; who made it and on what terms goes
  * in the credit disclosure. Only an AI-generated image is flagged outside
  * it, since that is the case a reader needs to notice.
  */
 const imageCaption = (image, shown) => {
-  const { detail } = imageCaptionParts(image)
+  const detail = captionDetail(image)
   return [
     image?.aiGenerated
       ? '<span class="ai-label">AI-generated image</span>'
@@ -1092,7 +1123,7 @@ ${main}
 <div class="wrap">
 <div class="footer-grid">
 <p>Birds of Kruger National Park</p>
-<p><a href="/llms.txt">llms.txt</a> · <a href="/sitemap"${path === '/sitemap' ? ' aria-current="page"' : ''}>Sitemap</a> · <a href="/facts"${path === '/facts' ? ' aria-current="page"' : ''}>Facts table</a> · <a href="/credits"${path === '/credits' ? ' aria-current="page"' : ''}>Credits</a> · <a href="${escapeHtml(alts.md)}">Markdown</a> · <a href="${escapeHtml(alts.json)}">JSON</a></p>
+<p><a href="/llms.txt">llms.txt</a> · <a href="/sitemap"${path === '/sitemap' ? ' aria-current="page"' : ''}>Sitemap</a> · <a href="/facts"${path === '/facts' ? ' aria-current="page"' : ''}>Facts table</a> · <a href="/vocab/colours"${path === '/vocab/colours' ? ' aria-current="page"' : ''}>Colours</a> · <a href="/credits"${path === '/credits' ? ' aria-current="page"' : ''}>Credits</a> · <a href="${escapeHtml(alts.md)}">Markdown</a> · <a href="${escapeHtml(alts.json)}">JSON</a></p>
 </div>
 ${agentHtml(origin)}
 </div>

@@ -283,8 +283,18 @@ const bindTargets = () => {
   openTarget()
 }
 
+// On a narrow screen the nav is one row that scrolls sideways. The link for
+// the page being read is brought into view, without moving the page.
+const showCurrentNav = () => {
+  const link = document.querySelector('.nav-list [aria-current="page"]')
+  const list = link?.closest('.nav-list')
+  if (!list || list.scrollWidth <= list.clientWidth) return
+  list.scrollLeft = Math.max(0, link.offsetLeft - list.offsetLeft)
+}
+
 bindTables()
 bindZoom()
 bindSearch()
 bindCopy()
 bindTargets()
+showCurrentNav()
