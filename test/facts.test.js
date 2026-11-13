@@ -253,10 +253,10 @@ test('/facts is served as HTML, Markdown and JSON with a row for every species',
   )
   const vulture = stored.species.find((row) => row.slug === 'gyps-africanus')
   const cells = factsCells(vulture)
-  const line = rows.find((row) => row.includes('(/species/gyps-africanus)'))
+  const line = rows.find((row) => row.includes('/species/gyps-africanus)'))
   assert.equal(
     line,
-    `| [White-backed Vulture](/species/gyps-africanus) | Gyps africanus | ${[cells.status, cells.length, cells.wingspan, cells.mass, cells.flight, cells.population, cells.regions].join(' | ')} |`,
+    `| [White-backed Vulture](${origin}/species/gyps-africanus) | Gyps africanus | ${[cells.status, cells.length, cells.wingspan, cells.mass, cells.flight, cells.population, cells.regions].join(' | ')} |`,
   )
   // Every row has the same number of cells, so an empty fact is an empty cell.
   for (const row of rows) assert.equal(row.split(' | ').length, 9, row)
@@ -285,7 +285,7 @@ test('the facts page is in the sitemap and the agent guide describes the new fie
   )
   assert.match(
     await (await fetch('/sitemap.md')).text(),
-    /\[Facts table\]\(\/facts\)/,
+    /\[Facts table\]\(https:\/\/birds\.example\/facts\)/,
   )
   const guide = llmsTxt(origin)
   for (const word of [

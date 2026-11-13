@@ -142,7 +142,10 @@ test('the family page labels its total as all seasons and explains seasonal Unkn
   const markdown = renderFamilyMarkdown(doc, [], 'https://birds.truter.world')
   assert.match(markdown, /\*\*Approximate total, all seasons\.\*\*/)
   assert.match(markdown, /12–48 mature individuals/)
-  assert.match(markdown, /\[Families by season\]\(\/families\)/)
+  assert.match(
+    markdown,
+    /\[Families by season\]\(https:\/\/birds\.truter\.world\/families\)/,
+  )
   assert.match(markdown, /No species in this family has a published residency/)
 
   const partial = deriveFamilyDocument(

@@ -64,7 +64,7 @@ test('the page is served as html, markdown and json', async () => {
   assert.match(text, /### Not in the model \(123\)/)
   assert.match(
     text,
-    /\[Magpie Shrike\]\(\/species\/urolestes-melanoleucus\.md\)/,
+    /\[Magpie Shrike\]\(https:\/\/birds\.truter\.world\/species\/urolestes-melanoleucus\.md\)/,
   )
 
   const json = await fetch('/identify/sound.json')

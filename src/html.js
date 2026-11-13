@@ -20,6 +20,7 @@ import {
   FAMILY_TOTAL_INTRO,
   familyLabel,
   familyTotalModel,
+  HOME_ASK_AI,
   HOME_BROWSE,
   HOME_IDENTIFY,
   HOME_POPULATION_INTRO,
@@ -60,6 +61,14 @@ import {
   wingspanLabel,
 } from './facts.js'
 import { familyTableHtml, speciesTableHtml } from './lists.js'
+import {
+  ASK_AI_EXAMPLES,
+  ASK_AI_EXPECT,
+  ASK_AI_INTRO,
+  ASK_AI_PATH,
+  ASK_AI_TITLE,
+  aiPrompt,
+} from './prompt.js'
 import { alternates, SEARCH_MAX, searchSuffix } from './route.js'
 import { sitemapEntries } from './sitemap.js'
 
@@ -70,6 +79,7 @@ const NAV = [
   ['families', '/families', 'Families'],
   ['species', '/species', 'Species'],
   ['colours', '/vocab/colours', 'Colours'],
+  ['ask-ai', '/ask-ai', 'Ask your AI'],
   ['agents', '/llms.txt', 'For agents'],
 ]
 
@@ -117,6 +127,7 @@ ${identifyActionHtml(sound, MICROPHONE_ICON)}
 ${HOME_BROWSE.map((item) => `<li><a href="${item.href}">${escapeHtml(item.name)}</a>${browseNote(item, counts)}</li>`).join('\n')}
 </ul>
 </nav>
+<p class="ask-ai-link"><a href="${HOME_ASK_AI.href}">${escapeHtml(HOME_ASK_AI.name)}</a>: ${escapeHtml(HOME_ASK_AI.description)}</p>
 ${OFFLINE_PANEL}
 <h2>About this guide</h2>
 <div class="hero">
@@ -925,6 +936,42 @@ ${rows
     path: FACTS_PATH,
     nav: '',
     crumbs: crumbs([{ href: FACTS_PATH, label: FACTS_TITLE, current: true }]),
+    main,
+  })
+}
+
+export const renderAskAiHtml = ({ origin }) => {
+  const mcp = agentUrls(origin).mcp
+  const main = `
+<h1>${escapeHtml(ASK_AI_TITLE)}</h1>
+<p>${escapeHtml(ASK_AI_INTRO)}</p>
+<div class="ask-ai" data-copy>
+<h2 id="ask-ai-prompt">The prompt</h2>
+<pre class="ask-ai-prompt" tabindex="0" aria-labelledby="ask-ai-prompt" data-copy-text>${escapeHtml(aiPrompt(origin))}</pre>
+<p class="ask-ai-actions"><button class="copy-button" type="button" data-copy-button hidden>Copy prompt</button> <span class="copy-status" role="status" data-copy-status></span></p>
+<p class="ask-ai-manual" data-copy-manual>Select all of the text in the box and copy it.</p>
+</div>
+<h2>Then ask it anything</h2>
+<p>Every question is taken to be about Kruger, so you need not say so. For example:</p>
+<ul>
+${ASK_AI_EXAMPLES.map((item) => `<li>${escapeHtml(item)}</li>`).join('\n')}
+</ul>
+<h2>What to expect</h2>
+<ul>
+${ASK_AI_EXPECT.map((item) => `<li>${escapeHtml(item)}</li>`).join('\n')}
+</ul>
+<h2>If your AI uses connectors</h2>
+<p>Some AI apps can add a connector (an MCP server). This guide has a public read-only one with a single <code>search</code> tool. Its address is <code>${escapeHtml(mcp)}</code>. The prompt above works without it.</p>`
+  return layout({
+    title: `${ASK_AI_TITLE} · KNP Birds`,
+    description:
+      'A prompt to paste into Claude, ChatGPT, Grok or Gemini so it can answer questions about the birds of Kruger National Park from this guide.',
+    origin,
+    path: ASK_AI_PATH,
+    nav: 'ask-ai',
+    crumbs: crumbs([
+      { href: ASK_AI_PATH, label: 'Ask your AI', current: true },
+    ]),
     main,
   })
 }

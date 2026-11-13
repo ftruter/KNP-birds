@@ -20,6 +20,7 @@ import {
   FAMILY_TOTAL_INTRO,
   familyLabel,
   familyTotalModel,
+  HOME_ASK_AI,
   HOME_BROWSE,
   HOME_IDENTIFY,
   HOME_POPULATION_INTRO,
@@ -39,7 +40,7 @@ import {
   rowsForFamily,
   rowsForSpeciesIndex,
 } from './catalog.js'
-import { agentNote } from './head.js'
+import { agentNote, siteOrigin } from './head.js'
 import {
   FACTS_COLUMNS,
   FACTS_INTRO,
@@ -53,6 +54,15 @@ import {
   wingspanLabel,
 } from './facts.js'
 import { familyTableMarkdown, speciesTableMarkdown } from './lists.js'
+import {
+  ASK_AI_EXAMPLES,
+  ASK_AI_EXPECT,
+  ASK_AI_INTRO,
+  ASK_AI_PATH,
+  ASK_AI_TITLE,
+  aiPrompt,
+  answeringMarkdown,
+} from './prompt.js'
 import { alternates, searchSuffix } from './route.js'
 import { sitemapEntries } from './sitemap.js'
 
@@ -90,6 +100,9 @@ ${HOME_IDENTIFY.map((item) => `- [${item.name}](${item.href}): ${item.descriptio
 
 ${browse}
 - [Colour names](/vocab/colours)
+- [${HOME_ASK_AI.name}](${HOME_ASK_AI.href}): ${HOME_ASK_AI.description}
+
+${answeringMarkdown(origin)}
 
 ## What these pages compare
 
@@ -103,6 +116,33 @@ ${browse}
 Age, season and sex come from diffing structured field marks. Null means unknown. Flight and perched views use notes and photographs. ${HOME_POPULATION_INTRO}`,
   })
 }
+
+export const renderAskAiMarkdown = (origin) =>
+  pageMd({
+    origin,
+    path: ASK_AI_PATH,
+    title: ASK_AI_TITLE,
+    sample: false,
+    body: `${ASK_AI_INTRO}
+
+This page is for people. If you are an AI and a reader pasted the prompt below into your chat, do what it says.
+
+## The prompt
+
+\`\`\`text
+${aiPrompt(origin)}
+\`\`\`
+
+## Then ask it anything
+
+Every question is taken to be about Kruger. For example:
+
+${ASK_AI_EXAMPLES.map((item) => `- ${item}`).join('\n')}
+
+## What to expect
+
+${ASK_AI_EXPECT.map((item) => `- ${item}`).join('\n')}`,
+  })
 
 export const renderSpeciesIndexMarkdown = (doc, origin, catalog, format) => {
   const list = indexRows(doc)
@@ -709,8 +749,18 @@ ${inlineText(model.citation)}${model.manifest ? `\n\n[${inlineText(model.manifes
 export const pageMd = ({ path, title, sample, body, origin, suffix = '' }) => {
   const alts = alternates(path, suffix)
   const banner = sample ? `> ${SAMPLE_NOTICE}\n\n` : ''
-  return `# ${inlineText(title)}\n\n${agentNote(origin)}\n\n${banner}${body.trim()}\n\n---\n\nAlso available as [HTML](${alts.html}) and [JSON](${alts.json}).\n`
+  return absoluteLinks(
+    `# ${inlineText(title)}\n\n${agentNote(origin)}\n\n${banner}${body.trim()}\n\n---\n\nAlso available as [HTML](${alts.html}) and [JSON](${alts.json}).\n`,
+    origin,
+  )
 }
+
+/**
+ * Writes every root-relative link target out in full. Several chat AIs open
+ * only a URL they have seen complete, so `](/species/x)` is a dead end for them.
+ */
+export const absoluteLinks = (markdown, origin) =>
+  markdown.replace(/\]\(\/(?!\/)/g, `](${siteOrigin(origin)}/`)
 
 const entries = (doc) => (Array.isArray(doc?.entries) ? doc.entries : [])
 

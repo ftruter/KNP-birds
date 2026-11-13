@@ -1378,7 +1378,29 @@ audio {
 .offline-message { margin: 0 0 0.5rem 2.6rem; font-family: var(--sans); }
 .offline-message[hidden] { display: none; }
 .offline-row[data-phase="failed"] .offline-message { font-weight: 700; }
-.offline-button {
+.ask-ai-link { font-family: var(--sans); margin-block: 0.75rem; }
+.ask-ai-link a { font-weight: 700; }
+
+.ask-ai-prompt {
+  margin-block: 0.75rem;
+  padding: 1rem;
+  max-block-size: 28rem;
+  overflow: auto;
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+  font-size: 0.92rem;
+  line-height: 1.5;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  user-select: all;
+}
+.ask-ai-prompt:focus-visible { outline: 3px solid var(--focus); outline-offset: 3px; }
+.ask-ai-actions { display: flex; flex-wrap: wrap; align-items: center; gap: 0.75rem; font-family: var(--sans); }
+.ask-ai [hidden] { display: none; }
+.copy-status { color: var(--muted); }
+
+.offline-button, .copy-button {
   min-block-size: 2.75rem;
   margin-block: 0.3rem;
   padding: 0.4rem 1rem;
@@ -1389,7 +1411,7 @@ audio {
   font: 700 0.95rem var(--sans);
   cursor: pointer;
 }
-.offline-button:focus-visible { outline: 3px solid var(--focus); outline-offset: 3px; }
+.offline-button:focus-visible, .copy-button:focus-visible { outline: 3px solid var(--focus); outline-offset: 3px; }
 .offline-quiet { background: transparent; color: var(--heading); }
 .offline-note { color: var(--muted); font-family: var(--sans); font-size: 0.95rem; margin-block-end: 0.2rem; }
 

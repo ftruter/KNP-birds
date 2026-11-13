@@ -52,6 +52,7 @@ Responses other than image and audio bytes, and other than \`POST /mcp\`, also s
 - ${origin}/.well-known/ai-catalog.json (predecessor catalog; same entries)
 - ${origin}/mcp/server-card (MCP server card, \`application/mcp-server-card+json\`)
 - ${origin}/mcp (public read-only MCP search; POST, one tool named \`search\`)
+- ${origin}/ask-ai (for people: a prompt to paste into their own chat AI so it reads this guide; also ${origin}/ask-ai.md and ${origin}/ask-ai.json, whose \`prompt\` field is the text)
 - ${origin}/search?q=<words> (the same ranking as the MCP tool, as a page; also ${origin}/search.md?q=<words> and ${origin}/search.json?q=<words>)
 - ${origin}/style.css
 - ${origin}/manifest.webmanifest (web app manifest: the site can be saved to a phone's home screen and used with no signal)
@@ -119,4 +120,5 @@ ${origin}/identify/photo is an interactive page for people: the visitor takes or
 - [Colour vocabulary, JSON](${origin}/vocab/colours.json)
 - [Credits, Markdown](${origin}/credits.md)
 - [Sitemap, Markdown](${origin}/sitemap.md)
+- [Prompt for a reader's own chat AI, Markdown](${origin}/ask-ai.md)
 `
