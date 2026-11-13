@@ -18,11 +18,14 @@ export const iconLinks = (
 
 const CANONICAL_ORIGIN = 'https://birds.truter.world'
 
+/** The origin a page was asked on, or the canonical one when none is given. */
+export const siteOrigin = (origin) =>
+  typeof origin === 'string' && /^https?:\/\//.test(origin)
+    ? origin.replace(/\/$/, '')
+    : CANONICAL_ORIGIN
+
 export const agentUrls = (origin) => {
-  const base =
-    typeof origin === 'string' && /^https?:\/\//.test(origin)
-      ? origin.replace(/\/$/, '')
-      : CANONICAL_ORIGIN
+  const base = siteOrigin(origin)
   return {
     mcp: `${base}/mcp`,
     card: `${base}/mcp/server-card`,

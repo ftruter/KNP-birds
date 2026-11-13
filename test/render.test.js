@@ -226,7 +226,7 @@ test('a family page lists its species and an empty family does not invent an Afr
   assert.match(markdown, /Visvangers/)
   assert.match(
     markdown,
-    /\[Malachite Kingfisher\]\(\/species\/corythornis-cristatus\)/,
+    /\[Malachite Kingfisher\]\(https:\/\/birds\.truter\.world\/species\/corythornis-cristatus\)/,
   )
   assert.doesNotMatch(markdown, /## First to look for/)
   assert.doesNotMatch(markdown, /No species from this family are published/)
@@ -286,11 +286,14 @@ test('the families index shows Afrikaans only when a name is recorded', () => {
   assert.doesNotMatch(html, /about 0 individuals/)
   assert.doesNotMatch(html, />null</)
   const markdown = renderFamiliesIndexMarkdown(doc)
-  assert.match(markdown, /\[Kingfishers\]\(\/family\/alcedinidae\)/)
+  assert.match(
+    markdown,
+    /\[Kingfishers\]\(https:\/\/birds\.truter\.world\/family\/alcedinidae\)/,
+  )
   assert.match(markdown, /Visvangers/)
   assert.match(
     markdown,
-    /\[Hawks, eagles and kites\]\(\/family\/accipitridae\)/,
+    /\[Hawks, eagles and kites\]\(https:\/\/birds\.truter\.world\/family\/accipitridae\)/,
   )
   assert.doesNotMatch(markdown, /null/)
 })
@@ -378,7 +381,10 @@ test('a species stub states that details are unpublished and skips empty section
   assert.match(markdown, /^# Thrush Nightingale/)
   assert.match(markdown, /Lysternagtegaal/)
   assert.match(markdown, new RegExp(UNPUBLISHED_SPECIES))
-  assert.match(markdown, /\[Muscicapidae\]\(\/family\/muscicapidae\)/)
+  assert.match(
+    markdown,
+    /\[Muscicapidae\]\(https:\/\/birds\.truter\.world\/family\/muscicapidae\)/,
+  )
   assert.doesNotMatch(markdown, /## Photographs/)
   assert.doesNotMatch(markdown, /## Telling it apart/)
   assert.match(markdown, /## Population/)
@@ -426,7 +432,10 @@ test('the species index lists every scientific name and skips a missing Afrikaan
   assert.doesNotMatch(html, />null</)
   assert.doesNotMatch(html, /about null/)
   const markdown = renderSpeciesIndexMarkdown(doc)
-  assert.match(markdown, /\[Common Ostrich\]\(\/species\/struthio-camelus\)/)
+  assert.match(
+    markdown,
+    /\[Common Ostrich\]\(https:\/\/birds\.truter\.world\/species\/struthio-camelus\)/,
+  )
   assert.match(markdown, /The guide lists 2 species/)
   assert.doesNotMatch(markdown, /null/)
 })
@@ -460,7 +469,7 @@ test('the home page counts the species and family indexes', async () => {
   assert.doesNotMatch(html, /<table/)
   assert.doesNotMatch(markdown, /## Species\n/)
   assert.doesNotMatch(markdown, /## Families/)
-  assert.doesNotMatch(markdown, /\]\(\/family\//)
+  assert.doesNotMatch(markdown, /\]\(https:\/\/birds\.truter\.world\/family\//)
   // The two identify actions come first, as plain links, then the browse links.
   const main = html.slice(html.indexOf('<main'), html.indexOf('</main>'))
   const actions = [
@@ -491,15 +500,24 @@ test('the home page counts the species and family indexes', async () => {
   assert.doesNotMatch(main, /<script|<button|<form/)
   assert.match(
     markdown,
-    /- \[Identify by photo\]\(\/identify\/photo\): Take or choose a picture\./,
+    /- \[Identify by photo\]\(https:\/\/birds\.truter\.world\/identify\/photo\): Take or choose a picture\./,
   )
   assert.match(
     markdown,
-    /- \[Identify by sound\]\(\/identify\/sound\): Record or open a call\./,
+    /- \[Identify by sound\]\(https:\/\/birds\.truter\.world\/identify\/sound\): Record or open a call\./,
   )
-  assert.match(markdown, /- \[Families\]\(\/families\) \(86\)/)
-  assert.match(markdown, /- \[Species\]\(\/species\) \(493\)/)
-  assert.match(markdown, /- \[Search\]\(\/search\)/)
+  assert.match(
+    markdown,
+    /- \[Families\]\(https:\/\/birds\.truter\.world\/families\) \(86\)/,
+  )
+  assert.match(
+    markdown,
+    /- \[Species\]\(https:\/\/birds\.truter\.world\/species\) \(493\)/,
+  )
+  assert.match(
+    markdown,
+    /- \[Search\]\(https:\/\/birds\.truter\.world\/search\)/,
+  )
   const nav = html.match(/<ul class="nav-list">[\s\S]*?<\/ul>/)[0]
   assert.deepEqual(
     [...nav.matchAll(/>([^<]+)<\/a>/g)].map((match) => match[1]),
@@ -510,6 +528,7 @@ test('the home page counts the species and family indexes', async () => {
       'Families',
       'Species',
       'Colours',
+      'Ask your AI',
       'For agents',
     ],
   )

@@ -17,6 +17,7 @@ Open reference to the birds of Kruger National Park (and bordering Marloth Park)
 - Photographs and cleaned audio live in the `knp-birds-images` R2 bucket. Custom domain: `birds.truter.world`.
 - Each page is served three ways from the same KV key: no extension is HTML, `.md` is Markdown for agents, `.json` is the stored document. Same rule for species, families, indexes, credits, and home.
 - Machines also get `/.well-known/ard.json` and a public read-only MCP `search` tool at `POST /mcp`.
+- `/ask-ai` gives visitors a prompt to paste into their own chat AI (`src/prompt.js`). It points the AI at `/.md` and `/search.md?q=…`. Markdown pages write every link out in full (`absoluteLinks` in `src/markdown.js`) so such an AI can follow them. Notes: `docs/ard.md`.
 - JavaScript is first-party progressive enhancement only (`src/client`). CSP includes `script-src 'self'`. The site must still work with JavaScript off.
 - Workers Builds on `main`: `pnpm install --frozen-lockfile` (automatic, from the lockfile) then `npm run deploy` (the dashboard setting, left on npm on purpose; use pnpm locally) (uploads `data/` to KV, then deploys the Worker with `DATA_VERSION` and `DATA_PUBLISHED_AT`). Node 22+.
 

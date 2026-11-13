@@ -85,7 +85,7 @@ test('the page is served as html, markdown and json', async () => {
   assert.match(text, /### Weak groups/)
   assert.match(
     text,
-    /\[Lilac-breasted Roller\]\(\/species\/coracias-caudatus\.md\) \(\*Coracias caudatus\*\): \d+ training photos/,
+    /\[Lilac-breasted Roller\]\(https:\/\/birds\.truter\.world\/species\/coracias-caudatus\.md\) \(\*Coracias caudatus\*\): \d+ training photos/,
   )
 
   const json = await fetch('/identify/photo.json')
@@ -605,7 +605,10 @@ test('the photo model is credited, and the page is in the sitemap, the home page
   // The sound model keeps its own line.
   assert.match(credits, /<a href="\/identify\/sound">Identify by sound<\/a>/)
   const markdown = await (await fetch('/credits.md')).text()
-  assert.match(markdown, /\[Identify by photo\]\(\/identify\/photo\.md\)/)
+  assert.match(
+    markdown,
+    /\[Identify by photo\]\(https:\/\/birds\.truter\.world\/identify\/photo\.md\)/,
+  )
   assert.ok(markdown.includes(TRAINING_MANIFEST_URL))
   const stored = await (await fetch('/credits.json')).json()
   assert.equal(stored.models.length, 3)

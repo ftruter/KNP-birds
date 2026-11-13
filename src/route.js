@@ -1,3 +1,5 @@
+import { ASK_AI_PATH } from './prompt.js'
+
 const SLUG = /^[a-z0-9]+(?:-[a-z0-9]+)*$/
 
 export const SEARCH_PATH = '/search'
@@ -128,6 +130,7 @@ export const parseUrl = (url) => {
     return { ...route('families-index', format, path), kvKey: 'index/families' }
   if (path === '/credits')
     return { ...route('credits', format, path), kvKey: 'index/credits' }
+  if (path === ASK_AI_PATH) return route('ask-ai', format, path)
   if (path === '/identify/sound')
     return {
       ...route('identify-sound', format, path),

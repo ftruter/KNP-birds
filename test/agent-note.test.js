@@ -33,6 +33,7 @@ test('every markdown route carries the same MCP note after the title', async () 
     '/species/coracias-caudatus.md',
     '/family/coraciidae.md',
     '/credits.md',
+    '/ask-ai.md',
     '/sitemap.md',
     '/vocab/colours.md',
     '/missing.md',

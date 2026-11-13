@@ -159,11 +159,11 @@ test('the markdown and json search pages carry names and links', async () => {
   assert.match(text, /## \d+ results for “roller”/)
   assert.match(
     text,
-    /- Species: \[Lilac-breasted Roller\]\(\/species\/coracias-caudatus\.md\) — \*Coracias caudatus\* · \S/,
+    /- Species: \[Lilac-breasted Roller\]\(https:\/\/birds\.truter\.world\/species\/coracias-caudatus\.md\) — \*Coracias caudatus\* · \S/,
   )
   assert.match(
     text,
-    /Also available as \[HTML\]\(\/search\?q=roller\) and \[JSON\]\(\/search\.json\?q=roller\)/,
+    /Also available as \[HTML\]\(https:\/\/birds\.truter\.world\/search\?q=roller\) and \[JSON\]\(https:\/\/birds\.truter\.world\/search\.json\?q=roller\)/,
   )
 
   const markup = await (await fetch('/search.md?q=a*b_[c]')).text()
@@ -196,6 +196,7 @@ test('every html page has the header search form before the site nav', async () 
     '/family/bucerotidae',
     '/vocab/colours',
     '/credits',
+    '/ask-ai',
     '/sitemap',
     '/search?q=roller',
     '/no-such-page',
