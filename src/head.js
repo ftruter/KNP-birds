@@ -16,7 +16,7 @@ export const iconLinks = (
 <link rel="icon" href="/favicon.svg?v=${version}" type="image/svg+xml">
 <link rel="apple-touch-icon" href="/apple-touch-icon.png?v=${version}">`
 
-const CANONICAL_ORIGIN = 'https://birds.truter.world'
+export const CANONICAL_ORIGIN = 'https://birds.truter.world'
 
 /** The origin a page was asked on, or the canonical one when none is given. */
 export const siteOrigin = (origin) =>
