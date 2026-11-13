@@ -3,10 +3,14 @@
  * KV is written first so the new version renders the data it advertises.
  * The build fails if either step fails.
  *
+ * Changed pages are then sent to IndexNow. A failure there is logged and
+ * does not fail the build: the pages are sent again by the next deploy.
+ *
  *   pnpm run deploy
  */
 import path from 'node:path'
 import { fileURLToPath } from 'node:url'
+import { announceIndexNow } from './indexnow.mjs'
 import { publishKv, runWrangler } from './publish-kv.mjs'
 
 export const deployWorkerArgs = (version, publishedAt) => {
@@ -28,9 +32,16 @@ export const deployWorkerArgs = (version, publishedAt) => {
 export const deploy = async ({
   publish = () => publishKv(),
   run = runWrangler,
+  announce = () => announceIndexNow({ run }),
 } = {}) => {
   const { version, publishedAt } = await publish()
   await run(deployWorkerArgs(version, publishedAt))
+  try {
+    await announce()
+  } catch (error) {
+    const reason = error instanceof Error ? error.message : String(error)
+    console.error(`indexnow: not submitted (${reason})`)
+  }
   return { version, publishedAt }
 }
 

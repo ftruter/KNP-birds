@@ -1,3 +1,4 @@
+import { INDEXNOW_KEY_PATH } from './indexnow.js'
 import { resolveLocale } from './numbers.js'
 import { ICON_PATHS, SEARCH_PATH, searchQuery } from './route.js'
 
@@ -62,6 +63,7 @@ const formatsNumbers = (pathname) =>
   pathname !== '/robots.txt' &&
   pathname !== '/sitemap.xml' &&
   pathname !== '/llms.txt' &&
+  pathname !== INDEXNOW_KEY_PATH &&
   pathname !== '/style.css' &&
   pathname !== '/app.js' &&
   pathname !== '/offline.js' &&

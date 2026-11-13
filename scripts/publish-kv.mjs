@@ -81,7 +81,9 @@ const keyName = (item) =>
       : null
 
 const capturesStdout = (args) =>
-  args[0] === 'kv' && args[1] === 'key' && args[2] === 'list'
+  args[0] === 'kv' &&
+  args[1] === 'key' &&
+  (args[2] === 'list' || args[2] === 'get')
 
 export const runWrangler = (args) =>
   new Promise((resolve, reject) => {

@@ -1,3 +1,4 @@
+import { INDEXNOW_KEY_PATH } from './indexnow.js'
 import { ASK_AI_PATH } from './prompt.js'
 
 const SLUG = /^[a-z0-9]+(?:-[a-z0-9]+)*$/
@@ -98,6 +99,7 @@ export const parseUrl = (url) => {
     if (path === '/robots.txt') return route('robots', format, path)
     if (path === '/sitemap.xml') return route('sitemap', format, path)
     if (path === '/llms.txt') return route('llms', format, path)
+    if (path === INDEXNOW_KEY_PATH) return route('indexnow-key', format, path)
     if (path === '/style.css') return route('style', format, path)
     if (path === '/app.js') return route('script', format, path)
     if (path === '/offline.js') return route('offline-script', format, path)

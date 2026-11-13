@@ -127,7 +127,7 @@ The site can be saved to a phone's home screen (`/manifest.webmanifest`, `displa
 | `data/identify/` | BirdNET label map for `/identify/sound` and its hand-checked synonym table; `photo-model.json` for `/identify/photo` |
 | `docs/schema.md`, `docs/content.schema.json` | Document shapes |
 | `docs/species-sources.md`, `docs/families-sources.md`, `docs/population-sources.md`, `docs/audio.md` | How lists, estimates and recordings were sourced |
-| `scripts/` | `seed.mjs`, `publish-kv.mjs`, `deploy.mjs`, `process-recordings.mjs`, `map-birdnet-labels.mjs`, `publish-models.mjs`, `huggingface.mjs` |
+| `scripts/` | `seed.mjs`, `publish-kv.mjs`, `deploy.mjs`, `indexnow.mjs`, `process-recordings.mjs`, `map-birdnet-labels.mjs`, `publish-models.mjs`, `huggingface.mjs` |
 | `src/` | Worker and the optional client scripts (`src/client/`) |
 | `test/` | Per-family tests plus worker, render, MCP and audio tests |
 

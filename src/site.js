@@ -85,6 +85,7 @@ import { loadSearchRecords, searchRecords } from './search.js'
 import { colourMapFromKv, readDocument } from './store.js'
 import { buildSitemap, sitemapEntries, sitemapXml } from './sitemap.js'
 import { llmsTxt, robotsTxt } from './static.js'
+import { INDEXNOW_KEY } from './indexnow.js'
 
 export const renderRoute = async (request, env, route) => {
   const origin = new URL(request.url).origin
@@ -106,6 +107,13 @@ export const renderRoute = async (request, env, route) => {
         'text/plain; charset=utf-8',
         ASSET_CACHE,
         'llms',
+      )
+    case 'indexnow-key':
+      return textResponse(
+        INDEXNOW_KEY,
+        'text/plain; charset=utf-8',
+        ASSET_CACHE,
+        'indexnow',
       )
     case 'style':
       return textResponse(css, 'text/css; charset=utf-8', ASSET_CACHE, 'style')

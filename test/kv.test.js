@@ -239,8 +239,12 @@ test('deploy seeds KV before the worker and passes the version vars', async () =
     run: async (args) => {
       order.push(args)
     },
+    announce: async () => {
+      order.push('announce')
+    },
   })
   assert.deepEqual(result, { version, publishedAt })
+  assert.equal(order[2], 'announce')
   assert.equal(order[0], 'publish')
   assert.deepEqual(order[1], deployWorkerArgs(version, publishedAt))
   assert.deepEqual(order[1], [
@@ -263,6 +267,9 @@ test('deploy does not upload the worker when KV publish fails', async () => {
           throw new Error('upload failed')
         },
         run: async () => {
+          ran = true
+        },
+        announce: async () => {
           ran = true
         },
       }),
