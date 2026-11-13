@@ -63,3 +63,18 @@ The card's `supportedProtocolVersions` is the `SUPPORTED_PROTOCOL_VERSIONS` list
 `GET /search?q=…` renders the same `searchRecords` ranking as an HTML page, with `.md` and `.json` alternates (`/search.md?q=…`, `/search.json?q=…`). It shows up to 50 results. The header on every HTML page holds a plain `<form role="search" method="get" action="/search">`, so search works with JavaScript off; the page CSP allows `form-action 'self'` for it. `src/client/app.js` only adds the `/` shortcut (ignored while typing in a field) and `Esc` to clear, then blur, the box.
 
 The query is trimmed, its whitespace collapsed, and it is capped at 200 characters. Results use the normal page cache. The Cache API key keeps that normalised `q` and drops every other parameter, next to `DATA_VERSION` and the Worker version, so a data deploy never serves old results. Search pages carry `<meta name="robots" content="noindex">` and are not in the sitemap.
+
+## Prompt for a reader's own chat AI
+
+`/ask-ai` (with `.md` and `.json`) holds a prompt a visitor copies into their own chat AI. The text is `aiPrompt(origin)` in `src/prompt.js`, and all three formats print the same text. The JSON form carries it in `prompt`.
+
+The prompt tells the AI to open the home page as Markdown (`/.md`) and follow it. The home Markdown has a section, "Answering questions from this guide" (`answeringMarkdown` in the same file), that explains search and says what the guide does not hold.
+
+Choices behind it:
+
+- **GET search, not MCP.** A chat AI's page-fetch tool can only GET a URL. It cannot POST to `/mcp`. So the prompt points at `/search.md?q=…`. The page also gives the MCP address for apps that can add a connector.
+- **Every URL is written out in full.** Several chat AIs open only a URL they have seen complete, in the chat or in a page they already fetched. For the same reason `pageMd` passes every Markdown page through `absoluteLinks`, which turns `](/path)` into `](https://…/path)`. An AI that cannot open a search address it built can still walk from `/species.md` or `/families.md` to any page.
+- **Guide first, then the AI's own knowledge, labelled.** The guide has wingspan, weight and locations inside the park for some families only (the facts table at `/facts` says how many species), and no ranking of songs. The prompt and the home Markdown tell the AI to say plainly when an answer is not from the guide.
+- **The Copy button is progressive enhancement.** It is rendered `hidden`, and `bindCopy` in `src/client/app.js` shows it only when the clipboard can be written to. With JavaScript off the page says to select the text and copy it. If the browser refuses the copy, the script selects the whole prompt so the visitor can copy it by hand. The page CSP is unchanged.
+
+A local server cannot be reached by an outside AI, so the prompt can only be tried against a real AI after a deploy.

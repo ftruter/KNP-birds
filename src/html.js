@@ -21,6 +21,7 @@ import {
   FAMILY_TOTAL_LEFT_OUT,
   familyLabel,
   familyTotalModel,
+  HOME_ASK_AI,
   HOME_BROWSE,
   HOME_IDENTIFY,
   HOME_POPULATION_INTRO,
@@ -48,7 +49,27 @@ import { clientSrc, offlineSrc, styleSrc } from './client.js'
 import { ICON_LINKS } from './icon.js'
 import { INSTALL_LINKS } from './offline-app.js'
 import { OFFLINE_PATH } from './offline.js'
+import {
+  FACTS_COLUMNS,
+  FACTS_INTRO,
+  FACTS_PATH,
+  FACTS_TITLE,
+  coverageSentence,
+  distributionLabel,
+  factsCells,
+  flightLabel,
+  massLabel,
+  wingspanLabel,
+} from './facts.js'
 import { familyTableHtml, speciesTableHtml } from './lists.js'
+import {
+  ASK_AI_EXAMPLES,
+  ASK_AI_EXPECT,
+  ASK_AI_INTRO,
+  ASK_AI_PATH,
+  ASK_AI_TITLE,
+  aiPrompt,
+} from './prompt.js'
 import { alternates, SEARCH_MAX, searchSuffix } from './route.js'
 import { sitemapEntries } from './sitemap.js'
 
@@ -65,6 +86,7 @@ const NAV = [
   ['families', '/families', 'Families'],
   ['species', '/species', 'Species'],
   ['colours', '/vocab/colours', 'Colours'],
+  ['ask-ai', '/ask-ai', 'Ask your AI'],
   ['agents', '/llms.txt', 'For agents'],
 ]
 
@@ -112,6 +134,7 @@ ${identifyActionHtml(sound, MICROPHONE_ICON)}
 ${HOME_BROWSE.map((item) => `<li><a href="${item.href}">${escapeHtml(item.name)}</a>${browseNote(item, counts)}</li>`).join('\n')}
 </ul>
 </nav>
+<p class="ask-ai-link"><a href="${HOME_ASK_AI.href}">${escapeHtml(HOME_ASK_AI.name)}</a>: ${escapeHtml(HOME_ASK_AI.description)}</p>
 ${OFFLINE_PANEL}
 <h2>About this guide</h2>
 <div class="hero">
@@ -352,7 +375,8 @@ const publishedSpeciesHtml = (
 <dt>Status</dt><dd>${escapeHtml(statusLabel(doc.status))}</dd>
 ${monthsLabel(doc.monthsPresent) ? `<dt>Months in Kruger</dt><dd>${escapeHtml(monthsLabel(doc.monthsPresent))}</dd>` : ''}
 <dt>Size</dt><dd>${escapeHtml(sizeLabel(doc.size) || 'Not recorded')}</dd>
-${doc.habitat ? `<dt>Habitat</dt><dd>${escapeHtml(doc.habitat)}</dd>` : ''}
+${sizeFactsHtml(doc)}${doc.habitat ? `<dt>Habitat</dt><dd>${escapeHtml(doc.habitat)}</dd>` : ''}
+${distributionLabel(doc.distribution) ? `<dt>Where in Kruger</dt><dd>${escapeHtml(distributionLabel(doc.distribution))}</dd>` : ''}
 <dt>Family</dt><dd><a href="/family/${escapeHtml(doc.family)}">${escapeHtml(familyLabel(doc.family))}</a></dd>
 </dl>
 <h2>Photographs</h2>
@@ -363,6 +387,17 @@ ${figures(doc, images, imagesAvailable, colourMap)}
 ${comparisons.map((section) => comparisonSection(section, colourMap)).join('\n')}
 ${similarHtml(doc)}
 ${sourcesSection(doc.sources)}`
+
+/** Wingspan, mass and flight, each only when the species file records it. */
+const sizeFactsHtml = (doc) =>
+  [
+    ['Wingspan', wingspanLabel(doc.size)],
+    ['Mass', massLabel(doc.size)],
+    ['Flight', flightLabel(doc.flightless)],
+  ]
+    .filter(([, value]) => value)
+    .map(([label, value]) => `<dt>${label}</dt><dd>${escapeHtml(value)}</dd>\n`)
+    .join('')
 
 const comparisonSection = (section, colourMap) => {
   const context = section.rows?.find((row) => row.context)?.context
@@ -875,6 +910,79 @@ ${siteHtml(doc?.site)}`
   })
 }
 
+export const renderFactsHtml = ({ origin, doc, format }) => {
+  const rows = listed(doc?.species)
+  const regions = listed(doc?.regions)
+  const main = `
+<h1>${FACTS_TITLE}</h1>
+<p>${escapeHtml(FACTS_INTRO)}</p>
+<p>${escapeHtml(coverageSentence(doc))}</p>
+<h2>Regions of the park</h2>
+<dl class="facts">
+${regions.map((region) => `<dt>${escapeHtml(region.label)}</dt><dd>${escapeHtml(region.extent)}</dd>`).join('\n')}
+</dl>
+<h2>All species</h2>
+<div class="table-wrap">
+<table class="facts-table">
+<thead><tr><th scope="col">Species</th>${FACTS_COLUMNS.map(([, label]) => `<th scope="col">${escapeHtml(label)}</th>`).join('')}</tr></thead>
+<tbody>
+${rows
+  .map((row) => {
+    const cells = factsCells(row, format)
+    return `<tr><th scope="row"><a href="/species/${escapeHtml(row.slug)}">${escapeHtml(row.en)}</a> <i>${escapeHtml(row.scientificName)}</i></th>${FACTS_COLUMNS.map(([key]) => `<td>${escapeHtml(cells[key])}</td>`).join('')}</tr>`
+  })
+  .join('\n')}
+</tbody>
+</table>
+</div>`
+  return layout({
+    title: `${FACTS_TITLE} · KNP Birds`,
+    description:
+      'Status, length, wingspan, mass, population and park regions for every bird of Kruger National Park, in one table.',
+    origin,
+    path: FACTS_PATH,
+    nav: '',
+    crumbs: crumbs([{ href: FACTS_PATH, label: FACTS_TITLE, current: true }]),
+    main,
+  })
+}
+
+export const renderAskAiHtml = ({ origin }) => {
+  const mcp = agentUrls(origin).mcp
+  const main = `
+<h1>${escapeHtml(ASK_AI_TITLE)}</h1>
+<p>${escapeHtml(ASK_AI_INTRO)}</p>
+<div class="ask-ai" data-copy>
+<h2 id="ask-ai-prompt">The prompt</h2>
+<pre class="ask-ai-prompt" tabindex="0" aria-labelledby="ask-ai-prompt" data-copy-text>${escapeHtml(aiPrompt(origin))}</pre>
+<p class="ask-ai-actions"><button class="copy-button" type="button" data-copy-button hidden>Copy prompt</button> <span class="copy-status" role="status" data-copy-status></span></p>
+<p class="ask-ai-manual" data-copy-manual>Select all of the text in the box and copy it.</p>
+</div>
+<h2>Then ask it anything</h2>
+<p>Every question is taken to be about Kruger, so you need not say so. For example:</p>
+<ul>
+${ASK_AI_EXAMPLES.map((item) => `<li>${escapeHtml(item)}</li>`).join('\n')}
+</ul>
+<h2>What to expect</h2>
+<ul>
+${ASK_AI_EXPECT.map((item) => `<li>${escapeHtml(item)}</li>`).join('\n')}
+</ul>
+<h2>If your AI uses connectors</h2>
+<p>Some AI apps can add a connector (an MCP server). This guide has a public read-only one with a single <code>search</code> tool. Its address is <code>${escapeHtml(mcp)}</code>. The prompt above works without it.</p>`
+  return layout({
+    title: `${ASK_AI_TITLE} · KNP Birds`,
+    description:
+      'A prompt to paste into Claude, ChatGPT, Grok or Gemini so it can answer questions about the birds of Kruger National Park from this guide.',
+    origin,
+    path: ASK_AI_PATH,
+    nav: 'ask-ai',
+    crumbs: crumbs([
+      { href: ASK_AI_PATH, label: 'Ask your AI', current: true },
+    ]),
+    main,
+  })
+}
+
 export const layout = ({
   title,
   description,
@@ -932,7 +1040,7 @@ ${main}
 <div class="wrap">
 <div class="footer-grid">
 <p>Birds of Kruger National Park</p>
-<p><a href="/llms.txt">llms.txt</a> · <a href="/sitemap"${path === '/sitemap' ? ' aria-current="page"' : ''}>Sitemap</a> · <a href="/credits"${path === '/credits' ? ' aria-current="page"' : ''}>Credits</a> · <a href="${escapeHtml(alts.md)}">Markdown</a> · <a href="${escapeHtml(alts.json)}">JSON</a></p>
+<p><a href="/llms.txt">llms.txt</a> · <a href="/sitemap"${path === '/sitemap' ? ' aria-current="page"' : ''}>Sitemap</a> · <a href="/facts"${path === '/facts' ? ' aria-current="page"' : ''}>Facts table</a> · <a href="/credits"${path === '/credits' ? ' aria-current="page"' : ''}>Credits</a> · <a href="${escapeHtml(alts.md)}">Markdown</a> · <a href="${escapeHtml(alts.json)}">JSON</a></p>
 </div>
 ${agentHtml(origin)}
 </div>

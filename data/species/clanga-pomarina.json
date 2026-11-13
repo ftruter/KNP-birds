@@ -21,9 +21,26 @@
       "min": 60,
       "max": 65
     },
-    "note": "Newman's Birds gives about 65 cm. Formerly Aquila pomarina."
+    "wingspanCm": {
+      "min": 150,
+      "max": 150
+    },
+    "massG": {
+      "min": 1200,
+      "max": 2200
+    },
+    "note": "Newman's Birds gives about 65 cm. Formerly Aquila pomarina. Wingspan: Wikipedia gives 150 cm. Mass: Newman's Birds gives 1.2–2.2 kg."
   },
   "habitat": "Game regions, open woodland and savanna; often with other migrant eagles (Newman's).",
+  "distribution": {
+    "regions": [
+      "far-north",
+      "north",
+      "central",
+      "south"
+    ],
+    "note": "GBIF records per 10 000 bird records in each region: far north 14, north 10, central 12, south 5.3 (counted 13 November 2026). Recorded most often in the far north."
+  },
   "summary": "A dark brown migrant eagle with narrowly feathered stovepipe legs; immature with white spots on the folded wings; cere and feet yellow (Newman's). Common summer visitor (Nov–Mar).",
   "sampleData": false,
   "similar": [
@@ -77,6 +94,12 @@
       "title": "Wikimedia Commons species category images",
       "url": "https://commons.wikimedia.org/",
       "publisher": "Wikimedia Commons",
+      "year": 2026
+    },
+    {
+      "title": "GBIF occurrence counts for Clanga pomarina and for all birds (Aves) in four latitude bands of the Kruger bounding box (lon 31.0–32.04; lat −25.53 to −24.98, −24.98 to −24.00, −24.00 to −23.10, −23.10 to −22.33; country ZA), counted 13 November 2026: far north 1 077, north 699, central 1 703, south 803",
+      "url": "https://api.gbif.org/v1/occurrence/search",
+      "publisher": "GBIF.org",
       "year": 2026
     }
   ],

@@ -21,9 +21,26 @@
       "min": 45,
       "max": 50
     },
-    "note": "Newman's Birds gives about 45 cm. Southern African non-breeding birds are race vulpinus (Steppe Buzzard)."
+    "wingspanCm": {
+      "min": 109,
+      "max": 140
+    },
+    "massG": {
+      "min": 400,
+      "max": 1200
+    },
+    "note": "Newman's Birds gives about 45 cm. Southern African non-breeding birds are race vulpinus (Steppe Buzzard). Wingspan: Wikipedia gives 109–140 cm, for the species as a whole. Mass: Newman's Birds gives 0.4–1.2 kg."
   },
   "habitat": "Open country, savanna and woodland edge; often on poles and roadside perches in summer (Newman's; SABAP1).",
+  "distribution": {
+    "regions": [
+      "far-north",
+      "north",
+      "central",
+      "south"
+    ],
+    "note": "GBIF records per 10 000 bird records in each region: far north 2.6, north 3.4, central 3.0, south 5.6 (counted 13 November 2026). Recorded most often in the south."
+  },
   "summary": "A common Palearctic summer visitor. Plumage highly variable from dark brown to red-brown; darkest above, streaked and banded below (Newman's). Southern African birds are the Steppe Buzzard race (B. b. vulpinus).",
   "sampleData": false,
   "similar": [
@@ -77,6 +94,12 @@
       "title": "Wikimedia Commons species category images",
       "url": "https://commons.wikimedia.org/",
       "publisher": "Wikimedia Commons",
+      "year": 2026
+    },
+    {
+      "title": "GBIF occurrence counts for Buteo buteo and for all birds (Aves) in four latitude bands of the Kruger bounding box (lon 31.0–32.04; lat −25.53 to −24.98, −24.98 to −24.00, −24.00 to −23.10, −23.10 to −22.33; country ZA), counted 13 November 2026: far north 209, north 235, central 444, south 841",
+      "url": "https://api.gbif.org/v1/occurrence/search",
+      "publisher": "GBIF.org",
       "year": 2026
     }
   ],

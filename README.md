@@ -47,6 +47,10 @@ Machines can find the same documents without a custom integration. The manifest 
 
 One of those entries is an MCP server card at `/mcp/server-card`. The card points at `POST /mcp`, which exposes a single public read-only tool, `search`, over the published bird records. There is no OAuth and no separate search service. [docs/ard.md](docs/ard.md) records the routes, the shared entry source, and the spec choices this Worker follows.
 
+### Ask your own AI
+
+[`/ask-ai`](https://birds.truter.world/ask-ai) gives visitors a prompt to paste into their own chat AI (Claude, ChatGPT, Grok, Gemini). The AI then reads the home page as Markdown, searches the guide with `/search.md?q=…`, and answers questions about Kruger birds. The prompt text lives in `src/prompt.js`. [docs/ard.md](docs/ard.md) explains why it works the way it does.
+
 ### Data model
 
 All content lives in a Cloudflare Workers KV namespace as JSON values:

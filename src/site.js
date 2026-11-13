@@ -7,9 +7,11 @@ import {
   cacheVersion,
 } from './cache.js'
 import {
+  renderAskAiHtml,
   renderFamiliesIndexHtml,
   renderFamilyHtml,
   renderCreditsHtml,
+  renderFactsHtml,
   renderHomeHtml,
   renderNotFoundHtml,
   renderSearchHtml,
@@ -19,9 +21,11 @@ import {
   renderVocabHtml,
 } from './html.js'
 import {
+  renderAskAiMarkdown,
   renderFamiliesIndexMarkdown,
   renderFamilyMarkdown,
   renderCreditsMarkdown,
+  renderFactsMarkdown,
   renderHomeMarkdown,
   renderNotFoundMarkdown,
   renderSearchMarkdown,
@@ -63,6 +67,7 @@ import { css } from './style.js'
 import { discoveryDocuments } from './ard.js'
 import { loadListCatalog, rowsForSpeciesIndex } from './catalog.js'
 import {
+  HOME_ASK_AI,
   HOME_BROWSE,
   HOME_IDENTIFY,
   HOME_POPULATION_INTRO,
@@ -70,6 +75,12 @@ import {
 } from './guide.js'
 import { numberFormatFor } from './numbers.js'
 import { CARD_MEDIA_TYPE } from './mcp.js'
+import {
+  ASK_AI_EXAMPLES,
+  ASK_AI_PATH,
+  ASK_AI_TITLE,
+  aiPrompt,
+} from './prompt.js'
 import { applyRecordingOverlay } from './recordings.js'
 import { alternates, searchSuffix } from './route.js'
 import { loadSearchRecords, searchRecords } from './search.js'
@@ -174,12 +185,15 @@ export const renderRoute = async (request, env, route) => {
       return renderHome(env, route.format, view)
     case 'search':
       return renderSearch(env, route, view)
+    case 'ask-ai':
+      return renderAskAi(route.format, origin)
     case 'species-index':
     case 'families-index':
     case 'species':
     case 'family':
     case 'vocab':
     case 'credits':
+    case 'facts':
       return renderDocument(env, route, view)
     case 'not-found':
       return notFound(origin, route)
@@ -222,6 +236,7 @@ const renderHome = async (env, format, view) => {
             : null,
         identify: HOME_IDENTIFY.map(link),
         browse: HOME_BROWSE.map(link),
+        askAi: link(HOME_ASK_AI),
         census: HOME_POPULATION_INTRO,
       },
       origin,
@@ -238,6 +253,32 @@ const renderHome = async (env, format, view) => {
     return mdPage(renderHomeMarkdown(shared), origin, '/', 'home')
   }
   return htmlPage(renderHomeHtml(shared), origin, '/', 'home')
+}
+
+/** /ask-ai: the prompt a visitor pastes into their own chat AI. No KV read. */
+const renderAskAi = (format, origin) => {
+  if (format === 'json') {
+    const alts = alternates(ASK_AI_PATH)
+    return jsonPage(
+      {
+        kind: 'ask-ai',
+        title: ASK_AI_TITLE,
+        prompt: aiPrompt(origin),
+        examples: ASK_AI_EXAMPLES,
+        pages: {
+          html: origin + alts.html,
+          md: origin + alts.md,
+          json: origin + alts.json,
+        },
+      },
+      origin,
+      ASK_AI_PATH,
+      'ask-ai',
+    )
+  }
+  return format === 'md'
+    ? mdPage(renderAskAiMarkdown(origin), origin, ASK_AI_PATH, 'ask-ai')
+    : htmlPage(renderAskAiHtml({ origin }), origin, ASK_AI_PATH, 'ask-ai')
 }
 
 export const SEARCH_LIMIT = 50
@@ -395,6 +436,19 @@ const renderDocument = async (env, route, view) => {
       route.format === 'md'
         ? renderCreditsMarkdown(doc.data, origin)
         : renderCreditsHtml({ origin, doc: doc.data })
+    return route.format === 'md'
+      ? mdPage(body, origin, route.pathname, tag)
+      : htmlPage(body, origin, route.pathname, tag)
+  }
+  if (route.kind === 'facts') {
+    const body =
+      route.format === 'md'
+        ? renderFactsMarkdown(doc.data, origin)
+        : renderFactsHtml({
+            origin,
+            doc: doc.data,
+            format: view.numbers.integer,
+          })
     return route.format === 'md'
       ? mdPage(body, origin, route.pathname, tag)
       : htmlPage(body, origin, route.pathname, tag)
@@ -700,5 +754,6 @@ const cacheTag = (route, data) => {
   if (route.kind === 'species-index') return 'index,species'
   if (route.kind === 'families-index') return 'index,families'
   if (route.kind === 'credits') return 'index,credits'
+  if (route.kind === 'facts') return 'index,facts'
   return route.kind
 }

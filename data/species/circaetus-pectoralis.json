@@ -27,9 +27,22 @@
       "min": 63,
       "max": 68
     },
-    "note": "Newman's Birds gives 63–68 cm."
+    "massG": {
+      "min": 1000,
+      "max": 2200
+    },
+    "note": "Newman's Birds gives 63–68 cm. Mass: Newman's Birds gives 1–2.2 kg."
   },
   "habitat": "Bushveld and grassland; often flying high and hovering — the only eagle that hovers regularly (Newman's).",
+  "distribution": {
+    "regions": [
+      "far-north",
+      "north",
+      "central",
+      "south"
+    ],
+    "note": "GBIF records per 10 000 bird records in each region: far north 11, north 9.7, central 11, south 5.6 (counted 13 November 2026). Recorded most often in the far north, and nearly as often in the central region."
+  },
   "summary": "Adult looks blackish with bare legs; in flight shows predominantly pale underwings and a white belly below a dark chest (Newman's). Differs from Martial Eagle in bare legs and unspotted underparts.",
   "sampleData": false,
   "similar": [
@@ -83,6 +96,12 @@
       "title": "Wikimedia Commons species category images",
       "url": "https://commons.wikimedia.org/",
       "publisher": "Wikimedia Commons",
+      "year": 2026
+    },
+    {
+      "title": "GBIF occurrence counts for Circaetus pectoralis and for all birds (Aves) in four latitude bands of the Kruger bounding box (lon 31.0–32.04; lat −25.53 to −24.98, −24.98 to −24.00, −24.00 to −23.10, −23.10 to −22.33; country ZA), counted 13 November 2026: far north 897, north 671, central 1 631, south 853",
+      "url": "https://api.gbif.org/v1/occurrence/search",
+      "publisher": "GBIF.org",
       "year": 2026
     }
   ],

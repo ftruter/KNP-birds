@@ -27,9 +27,26 @@
       "min": 105,
       "max": 115
     },
-    "note": "Newman's 105–115 cm. Wikipedia 96–115 cm."
+    "wingspanCm": {
+      "min": 226,
+      "max": 260
+    },
+    "massG": {
+      "min": 7000,
+      "max": 10500
+    },
+    "note": "Newman's 105–115 cm. Wikipedia 96–115 cm. Wingspan: Wikipedia gives 2.26–2.6 m. Mass: Newman's Birds gives 7–10.5 kg."
   },
   "habitat": "Forages over open country and woodland; breeds on tall cliffs (colonies May–Oct). In Kruger mainly a visitor/wanderer from escarpment colonies; often soars high and may perch on pylons (Newman's; SABAP1).",
+  "distribution": {
+    "regions": [
+      "far-north",
+      "north",
+      "central",
+      "south"
+    ],
+    "note": "GBIF records per 10 000 bird records in each region: far north 5.2, north 8.4, central 13, south 6.9 (counted 13 November 2026). Recorded most often in the central region."
+  },
   "summary": "A large, pale endemic African vulture. Adults are very pale brown to whitish on the body with dark flight feathers and a honey-coloured eye; immatures are warmer rufous-brown with pinker neck skin. Easily confused with White-backed Vulture where ranges overlap (Newman's).",
   "sampleData": false,
   "similar": [
@@ -60,6 +77,12 @@
       "url": "https://en.wikipedia.org/wiki/Cape_vulture",
       "publisher": "Wikimedia Foundation",
       "year": null
+    },
+    {
+      "title": "GBIF occurrence counts for Gyps coprotheres and for all birds (Aves) in four latitude bands of the Kruger bounding box (lon 31.0–32.04; lat −25.53 to −24.98, −24.98 to −24.00, −24.00 to −23.10, −23.10 to −22.33; country ZA), counted 13 November 2026: far north 412, north 583, central 1 848, south 1 045",
+      "url": "https://api.gbif.org/v1/occurrence/search",
+      "publisher": "GBIF.org",
+      "year": 2026
     }
   ],
   "population": {

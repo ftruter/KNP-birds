@@ -27,9 +27,26 @@
       "min": 46,
       "max": 58
     },
-    "note": "Newman's Birds gives 46–58 cm. Formerly Accipiter melanoleucus."
+    "wingspanCm": {
+      "min": 100,
+      "max": 100
+    },
+    "massG": {
+      "min": 450,
+      "max": 980
+    },
+    "note": "Newman's Birds gives 46–58 cm. Formerly Accipiter melanoleucus. Wingspan: Wikipedia gives about 1 m. Mass: Newman's Birds gives 450–980 g."
   },
   "habitat": "Tall trees, riverine forest, woodland and especially Eucalyptus plantations; retiring but increasingly suburban in parts of South Africa (Newman's; SABAP1).",
+  "distribution": {
+    "regions": [
+      "far-north",
+      "north",
+      "central",
+      "south"
+    ],
+    "note": "GBIF records per 10 000 bird records in each region: far north 0.48, north 0.33, central 0.35, south 0.98 (counted 13 November 2026). Recorded most often in the south."
+  },
   "summary": "A large black-and-white hawk (or all-dark melanistic form) with long yellow legs. Normal morph: blackish above, white below; thighs and vent speckled or barred (Newman's). Recently placed in Astur.",
   "sampleData": false,
   "similar": [
@@ -83,6 +100,12 @@
       "title": "Wikimedia Commons species category images",
       "url": "https://commons.wikimedia.org/",
       "publisher": "Wikimedia Commons",
+      "year": 2026
+    },
+    {
+      "title": "GBIF occurrence counts for Accipiter melanoleucus (the name GBIF uses for Astur melanoleucus) and for all birds (Aves) in four latitude bands of the Kruger bounding box (lon 31.0–32.04; lat −25.53 to −24.98, −24.98 to −24.00, −24.00 to −23.10, −23.10 to −22.33; country ZA), counted 13 November 2026: far north 38, north 23, central 51, south 148",
+      "url": "https://api.gbif.org/v1/occurrence/search",
+      "publisher": "GBIF.org",
       "year": 2026
     }
   ],

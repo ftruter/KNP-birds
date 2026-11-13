@@ -60,6 +60,7 @@ test('every data file matches the schema, slugs, and colour vocabulary', async (
     ),
     [
       'index/credits',
+      'index/facts',
       'index/families',
       'index/identify-photo',
       'index/identify-sound',
@@ -90,6 +91,7 @@ test('every data file matches the schema, slugs, and colour vocabulary', async (
       }
     } else if (
       entry.key !== 'index/credits' &&
+      entry.key !== 'index/facts' &&
       entry.key !== 'index/identify-sound' &&
       entry.key !== 'index/identify-photo' &&
       entry.key !== 'index/offline'
@@ -248,6 +250,7 @@ test('derived family and index fields match the species files', async () => {
   const committedFamilies = await readJson('data/index/families.json')
   assert.deepEqual(committedFamilies, derived.familiesIndex)
   assert.deepEqual(await readJson('data/index/credits.json'), derived.credits)
+  assert.deepEqual(await readJson('data/index/facts.json'), derived.facts)
   assert.equal(Object.keys(committedFamilies).length, 86)
   assert.equal(committedFamilies.Accipitridae.en, 'Hawks, eagles and kites')
   assert.equal(committedFamilies.Accipitridae.af, null)

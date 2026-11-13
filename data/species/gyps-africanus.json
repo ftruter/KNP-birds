@@ -27,9 +27,26 @@
       "min": 90,
       "max": 98
     },
-    "note": "Newman's Birds gives 90–98 cm."
+    "wingspanCm": {
+      "min": 196,
+      "max": 225
+    },
+    "massG": {
+      "min": 4000,
+      "max": 7000
+    },
+    "note": "Newman's Birds gives 90–98 cm. Wingspan: Wikipedia gives 1.96–2.25 m. Mass: Newman's Birds gives 4–7 kg."
   },
   "habitat": "Game regions with large mammals; nests in tall trees, often colonially (Newman's; SABAP1). The common Gyps vulture of Kruger.",
+  "distribution": {
+    "regions": [
+      "far-north",
+      "north",
+      "central",
+      "south"
+    ],
+    "note": "GBIF records per 10 000 bird records in each region: far north 81, north 70, central 124, south 91 (counted 13 November 2026). Recorded most often in the central region."
+  },
   "summary": "A large grey-brown vulture; back white; flight feathers, neck skin and soft parts black (Newman's). Adult difficult to distinguish from Cape Vulture unless the white back is seen (Newman's).",
   "sampleData": false,
   "similar": [
@@ -85,6 +102,12 @@
       "title": "Wikimedia Commons species category images",
       "url": "https://commons.wikimedia.org/",
       "publisher": "Wikimedia Commons",
+      "year": 2026
+    },
+    {
+      "title": "GBIF occurrence counts for Gyps africanus and for all birds (Aves) in four latitude bands of the Kruger bounding box (lon 31.0–32.04; lat −25.53 to −24.98, −24.98 to −24.00, −24.00 to −23.10, −23.10 to −22.33; country ZA), counted 13 November 2026: far north 6 460, north 4 810, central 18 141, south 13 771",
+      "url": "https://api.gbif.org/v1/occurrence/search",
+      "publisher": "GBIF.org",
       "year": 2026
     }
   ],

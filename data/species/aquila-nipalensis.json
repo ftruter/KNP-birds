@@ -22,9 +22,22 @@
       "min": 70,
       "max": 80
     },
-    "note": "Newman's Birds gives about 75 cm."
+    "massG": {
+      "min": 2000,
+      "max": 4100
+    },
+    "note": "Newman's Birds gives about 75 cm. Mass: Newman's Birds gives 2–4.1 kg."
   },
   "habitat": "Open savanna, woodland edge and game country; often near carcasses with other large eagles and vultures (Newman's; Wikipedia).",
+  "distribution": {
+    "regions": [
+      "far-north",
+      "north",
+      "central",
+      "south"
+    ],
+    "note": "GBIF records per 10 000 bird records in each region: far north 3.1, north 3.6, central 4.4, south 2.8 (counted 13 November 2026). Recorded most often in the central region."
+  },
   "summary": "A large, dark brown Palearctic migrant eagle with fully feathered legs. Adult is plain dark brown with orange-yellow gape and feet; the long gape line extending beyond the centre of the eye separates it from Tawny Eagle (Newman's; Wikipedia).",
   "sampleData": false,
   "similar": [
@@ -78,6 +91,12 @@
       "title": "Wikimedia Commons species category images",
       "url": "https://commons.wikimedia.org/",
       "publisher": "Wikimedia Commons",
+      "year": 2026
+    },
+    {
+      "title": "GBIF occurrence counts for Aquila nipalensis and for all birds (Aves) in four latitude bands of the Kruger bounding box (lon 31.0–32.04; lat −25.53 to −24.98, −24.98 to −24.00, −24.00 to −23.10, −23.10 to −22.33; country ZA), counted 13 November 2026: far north 249, north 250, central 648, south 422",
+      "url": "https://api.gbif.org/v1/occurrence/search",
+      "publisher": "GBIF.org",
       "year": 2026
     }
   ],

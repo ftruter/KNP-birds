@@ -132,7 +132,10 @@
             "identifier": { "type": "string" },
             "version": { "type": "string" },
             "governanceUri": { "type": "string", "format": "uri" },
-            "verificationMethods": { "type": "array", "items": { "type": "string" } }
+            "verificationMethods": {
+              "type": "array",
+              "items": { "type": "string" }
+            }
           },
           "additionalProperties": true
         },

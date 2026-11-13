@@ -22,9 +22,26 @@
       "min": 54,
       "max": 60
     },
-    "note": "Newman's 54–60 cm. Wikipedia 52–60 cm."
+    "wingspanCm": {
+      "min": 130,
+      "max": 150
+    },
+    "massG": {
+      "min": 400,
+      "max": 1000
+    },
+    "note": "Newman's 54–60 cm. Wikipedia 52–60 cm. Wingspan: Wikipedia gives 130–150 cm. Mass: Newman's Birds gives 0.4–1 kg."
   },
   "habitat": "Woodland and forest edge where wasp/bee nests are available; Palearctic non-breeding visitor (Newman's; SABAP1).",
+  "distribution": {
+    "regions": [
+      "far-north",
+      "north",
+      "central",
+      "south"
+    ],
+    "note": "GBIF records per 10 000 bird records in each region: far north 0.57, north 0.22, central 0.27, south 0.42 (counted 13 November 2026). Recorded most often in the far north."
+  },
   "summary": "Buzzard-sized but small-headed with a longish neck and pigeon-like face. Plumage highly variable (pale to dark); typically barred underparts and a banded tail. Specialises on wasp larvae (Newman's; Wikipedia).",
   "sampleData": false,
   "similar": [
@@ -51,6 +68,12 @@
       "url": "https://en.wikipedia.org/wiki/European_honey_buzzard",
       "publisher": "Wikimedia Foundation",
       "year": null
+    },
+    {
+      "title": "GBIF occurrence counts for Pernis apivorus and for all birds (Aves) in four latitude bands of the Kruger bounding box (lon 31.0–32.04; lat −25.53 to −24.98, −24.98 to −24.00, −24.00 to −23.10, −23.10 to −22.33; country ZA), counted 13 November 2026: far north 45, north 15, central 39, south 64",
+      "url": "https://api.gbif.org/v1/occurrence/search",
+      "publisher": "GBIF.org",
+      "year": 2026
     }
   ],
   "population": {

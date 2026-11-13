@@ -27,9 +27,26 @@
       "min": 80,
       "max": 90
     },
-    "note": "Newman's Birds gives about 84 cm."
+    "wingspanCm": {
+      "min": 181,
+      "max": 230
+    },
+    "massG": {
+      "min": 3000,
+      "max": 5800
+    },
+    "note": "Newman's Birds gives about 84 cm. Wingspan: Wikipedia gives 1.81–2.3 m. Mass: Newman's Birds gives 3–5.8 kg."
   },
   "habitat": "Mountains, cliffs and rocky hills with hyrax; scarce in Kruger, mainly on rocky outcrops/escarpment (Newman's; SABAP1).",
+  "distribution": {
+    "regions": [
+      "far-north",
+      "north",
+      "central",
+      "south"
+    ],
+    "note": "GBIF records per 10 000 bird records in each region: far north 11, north 1.5, central 0.61, south 0.47 (counted 13 November 2026). Recorded most often in the far north."
+  },
   "summary": "A very large black eagle with a diagnostic white V on the back; cere and feet yellow. In flight the wings are narrow-based with a pale flash in the primaries (Newman's).",
   "sampleData": false,
   "similar": [
@@ -83,6 +100,12 @@
       "title": "Wikimedia Commons species category images",
       "url": "https://commons.wikimedia.org/",
       "publisher": "Wikimedia Commons",
+      "year": 2026
+    },
+    {
+      "title": "GBIF occurrence counts for Aquila verreauxii and for all birds (Aves) in four latitude bands of the Kruger bounding box (lon 31.0–32.04; lat −25.53 to −24.98, −24.98 to −24.00, −24.00 to −23.10, −23.10 to −22.33; country ZA), counted 13 November 2026: far north 896, north 101, central 89, south 71",
+      "url": "https://api.gbif.org/v1/occurrence/search",
+      "publisher": "GBIF.org",
       "year": 2026
     }
   ],
