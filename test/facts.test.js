@@ -35,10 +35,13 @@ const site = async () => {
 }
 
 /** A real species file with the new fields added, so the renderers see a full document. */
-const sample = async (extra) => ({
-  ...(await readJson('data/species/gyps-africanus.json')),
-  ...extra,
-})
+const sample = async (extra) => {
+  const doc = await readJson('data/species/gyps-africanus.json')
+  delete doc.distribution
+  delete doc.flightless
+  doc.size = { lengthCm: doc.size.lengthCm }
+  return { ...doc, ...extra }
+}
 
 const render = async (doc) => {
   const colourMap = colourMapFromDoc(await readJson('data/vocab/colours.json'))
@@ -137,6 +140,7 @@ test('a facts row copies what the species file records and nulls the rest', asyn
     flightless: null,
     population: { low: null, high: null, unit: null },
     regions: null,
+    regionsNote: null,
   })
   const vulture = facts.species[1]
   assert.deepEqual(vulture.wingspanCm, { min: 196, max: 225 })
@@ -157,6 +161,7 @@ test('a facts row copies what the species file records and nulls the rest', asyn
     flight: 'Flies',
     population: '742–1066 breeding pairs',
     regions: 'Central, South',
+    regionsNote: '',
   })
   assert.deepEqual(
     Object.values(factsCells(facts.species[0])).filter(Boolean),
@@ -249,17 +254,17 @@ test('/facts is served as HTML, Markdown and JSON with a row for every species',
   assert.equal(rows.length, 493)
   assert.match(
     text,
-    /^\| Species \| Scientific name \| Status \| Length \(cm\) \| Wingspan \(cm\) \| Mass \(g\) \| Flight \| Population in Kruger \(approximate\) \| Regions of the park \|$/m,
+    /^\| Species \| Scientific name \| Status \| Length \(cm\) \| Wingspan \(cm\) \| Mass \(g\) \| Flight \| Population in Kruger \(approximate\) \| Regions of the park \| Where it is recorded most \|$/m,
   )
   const vulture = stored.species.find((row) => row.slug === 'gyps-africanus')
   const cells = factsCells(vulture)
   const line = rows.find((row) => row.includes('/species/gyps-africanus)'))
   assert.equal(
     line,
-    `| [White-backed Vulture](${origin}/species/gyps-africanus) | Gyps africanus | ${[cells.status, cells.length, cells.wingspan, cells.mass, cells.flight, cells.population, cells.regions].join(' | ')} |`,
+    `| [White-backed Vulture](${origin}/species/gyps-africanus) | Gyps africanus | ${[cells.status, cells.length, cells.wingspan, cells.mass, cells.flight, cells.population, cells.regions, cells.regionsNote].join(' | ')} |`,
   )
   // Every row has the same number of cells, so an empty fact is an empty cell.
-  for (const row of rows) assert.equal(row.split(' | ').length, 9, row)
+  for (const row of rows) assert.equal(row.split(' | ').length, 10, row)
   assert.match(text, /An empty cell means this guide does not record that fact/)
   assert.match(text, /^Of 493 species, \d+ have a length, /m)
 
@@ -321,4 +326,66 @@ test('no species file records a fact without the shape the schema asks for', asy
     )
       assert.ok(doc.sources?.length > 0, `${entry.key} has no sources`)
   }
+})
+
+test('the pilot family, hawks, eagles and vultures, is filled from cited sources', async () => {
+  const family = await readJson('data/family/accipitridae.json')
+  assert.equal(family.species.length, 40)
+  const birds = await Promise.all(
+    family.species.map((item) => readJson(`data/species/${item.slug}.json`)),
+  )
+  const has = (test) => birds.filter(test).map((bird) => bird.slug)
+  // Newman's misprints the mass of these two and Wikipedia gives none.
+  assert.deepEqual(
+    has((bird) => !bird.size?.massG),
+    ['buteo-trizonatus', 'elanus-caeruleus'],
+  )
+  assert.equal(has((bird) => bird.size?.wingspanCm).length, 30)
+  assert.equal(has((bird) => 'flightless' in bird).length, 0)
+  for (const bird of birds) {
+    assert.ok(bird.distribution?.note, bird.slug)
+    assert.ok(
+      bird.sources.some(
+        (source) =>
+          source.publisher === 'GBIF.org' &&
+          source.title.startsWith('GBIF occurrence counts for '),
+      ),
+      `${bird.slug} region source`,
+    )
+    if (bird.size?.wingspanCm)
+      assert.ok(
+        bird.sources.some((source) =>
+          source.url?.startsWith('https://en.wikipedia.org/wiki/'),
+        ),
+        `${bird.slug} wingspan source`,
+      )
+    if (bird.size?.massG)
+      assert.match(bird.size.note, /Mass: (Newman's Birds|Wikipedia) gives /)
+  }
+  const vulture = birds.find((bird) => bird.slug === 'gyps-africanus')
+  assert.deepEqual(vulture.size.wingspanCm, { min: 196, max: 225 })
+  assert.deepEqual(vulture.size.massG, { min: 4000, max: 7000 })
+  assert.deepEqual(vulture.size.lengthCm, { min: 90, max: 98 })
+  // The population is not touched by this work.
+  assert.deepEqual(vulture.population.estimate, { low: 742, high: 1066 })
+  assert.deepEqual(vulture.distribution.regions, [
+    'far-north',
+    'north',
+    'central',
+    'south',
+  ])
+  assert.match(
+    vulture.distribution.note,
+    /Recorded most often in the central region\.$/,
+  )
+  // Too few records: the region is listed, and no region is called best.
+  const forest = birds.find((bird) => bird.slug === 'buteo-trizonatus')
+  assert.deepEqual(forest.distribution.regions, ['south'])
+  assert.doesNotMatch(forest.distribution.note, /Recorded most often/)
+  // The widest wingspan in the family can now be read from the table.
+  const facts = await readJson('data/index/facts.json')
+  const widest = facts.species
+    .filter((row) => row.wingspanCm)
+    .sort((a, b) => b.wingspanCm.max - a.wingspanCm.max)[0]
+  assert.equal(widest.slug, 'torgos-tracheliotos')
 })

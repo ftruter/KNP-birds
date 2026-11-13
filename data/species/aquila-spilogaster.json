@@ -27,9 +27,26 @@
       "min": 60,
       "max": 65
     },
-    "note": "Newman's Birds gives 60–65 cm. Formerly placed in Hieraaetus."
+    "wingspanCm": {
+      "min": 141.7,
+      "max": 141.7
+    },
+    "massG": {
+      "min": 1000,
+      "max": 1700
+    },
+    "note": "Newman's Birds gives 60–65 cm. Formerly placed in Hieraaetus. Wingspan: Wikipedia gives a mean of 141.7 cm in 36 birds from southern Africa; no range is given. Mass: Newman's Birds gives 1–1.7 kg."
   },
   "habitat": "Woodland and savanna with tall trees; often in pairs (Newman's; SABAP1).",
+  "distribution": {
+    "regions": [
+      "far-north",
+      "north",
+      "central",
+      "south"
+    ],
+    "note": "GBIF records per 10 000 bird records in each region: far north 38, north 33, central 27, south 15 (counted 13 November 2026). Recorded most often in the far north."
+  },
   "summary": "A medium-large eagle, dark brown above and white below with dark breast-streaks; eyes, cere and feet yellow. In flight shows white underwing 'windows' and a black terminal tail band (Newman's). Female often more heavily streaked than male.",
   "sampleData": false,
   "similar": [
@@ -83,6 +100,12 @@
       "title": "Wikimedia Commons species category images",
       "url": "https://commons.wikimedia.org/",
       "publisher": "Wikimedia Commons",
+      "year": 2026
+    },
+    {
+      "title": "GBIF occurrence counts for Aquila spilogaster and for all birds (Aves) in four latitude bands of the Kruger bounding box (lon 31.0–32.04; lat −25.53 to −24.98, −24.98 to −24.00, −24.00 to −23.10, −23.10 to −22.33; country ZA), counted 13 November 2026: far north 3 041, north 2 316, central 3 965, south 2 339",
+      "url": "https://api.gbif.org/v1/occurrence/search",
+      "publisher": "GBIF.org",
       "year": 2026
     }
   ],

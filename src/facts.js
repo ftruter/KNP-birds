@@ -135,13 +135,18 @@ const factsRow = (species) => {
       unit: species.population?.unit ?? null,
     },
     regions: regions.length ? regions : null,
+    regionsNote:
+      typeof species.distribution?.note === 'string' &&
+      species.distribution.note.trim()
+        ? species.distribution.note.trim()
+        : null,
   }
 }
 
 /** index/facts: one row per species, English name A to Z. */
 export const deriveFacts = (speciesDocs) => ({
   kind: 'facts',
-  note: 'One row per species. null means this guide does not record the fact; it does not mean zero, absent or unknown to science. Lengths and wingspans are centimetres, mass is grams. population is the approximate Kruger estimate in the unit named. regions lists the parts of the park where the species is recorded.',
+  note: 'One row per species. null means this guide does not record the fact; it does not mean zero, absent or unknown to science. Lengths and wingspans are centimetres, mass is grams. population is the approximate Kruger estimate in the unit named. regions lists the parts of the park where the species is recorded, and regionsNote says where it is recorded most and on what count.',
   regions: PARK_REGIONS.map(({ id, label, extent }) => ({ id, label, extent })),
   species: speciesDocs
     .map(factsRow)
@@ -184,6 +189,7 @@ export const factsCells = (row, format = String) => {
     flight: flightLabel(row.flightless),
     population,
     regions: regionNames(row.regions).join(', '),
+    regionsNote: row.regionsNote ?? '',
   }
 }
 
@@ -195,12 +201,13 @@ export const FACTS_COLUMNS = [
   ['flight', 'Flight'],
   ['population', 'Population in Kruger (approximate)'],
   ['regions', 'Regions of the park'],
+  ['regionsNote', 'Where it is recorded most'],
 ]
 
 export const FACTS_TITLE = 'Facts table'
 
 export const FACTS_INTRO =
-  'One row for each species: status, body length, wingspan, mass, whether it flies, the approximate Kruger population, and the parts of the park where it is recorded. An empty cell means this guide does not record that fact. It does not mean zero or none. Each name links to the species page, which gives the sources.'
+  'One row for each species: status, body length, wingspan, mass, whether it flies, the approximate Kruger population, and the parts of the park where it is recorded, with a note on where it is recorded most. A region is listed when at least five records of the species fall in it; record counts are compared with all bird records in the same region, because the south and centre are far more heavily watched than the north. An empty cell means this guide does not record that fact. It does not mean zero or none. Each name links to the species page, which gives the sources.'
 
 /** How many rows record each fact, so a reader knows how complete a column is. */
 export const factsCoverage = (doc) => {

@@ -117,9 +117,11 @@ The site can be saved to a phone's home screen (`/manifest.webmanifest`, `displa
 
 Species files may now carry `size.wingspanCm`, `size.massG`, `flightless` and `distribution` (`regions` from `far-north`, `north`, `central`, `south`, plus a free-text `note`). All optional; shapes and the region boundaries are in `docs/schema.md`, the vocabulary in `src/facts.js`. The species page shows each only when present. `/facts` (`.md`, `.json`; KV `index/facts`, written by `scripts/seed.mjs`) is one row per species for an AI to read in one fetch; an empty cell or `null` means not recorded.
 
-- **No species has the new fields yet.** The field names, the region vocabulary and the sources were put to the owner on 2026-11-13 and data waits for the answer. Pilot family: Accipitridae (40 species), then show the owner before the rest.
-- Proposed sources: Newman's Birds (mass, where the page gives it), Wikipedia (wingspan and mass, CC BY-SA 4.0 text, figure cited), and for regions GBIF occurrence counts in the four latitude bands inside the Kruger box already used for `monthsPresent`. Never work a figure out from another one.
-- `src/prompt.js` (the `/ask-ai` branch) was not on this branch's base. When both are merged, mention `/facts.md` in its "Answering questions from this guide" text, and remove its sentence saying the guide has no locations, wingspan or weight only once the data is in.
+- **Filled so far: Accipitridae only (40 species), as the pilot** (owner approved the fields, regions, sources and the "recorded most" note on 2026-11-13). 38 have a mass, 30 a wingspan, all 40 a region note. The other 85 families wait for the owner to look at the pilot.
+- Sources, in this order: mass from the Newman's Birds page; wingspan from Wikipedia (and mass there when Newman's has none or misprints it); regions from GBIF record counts. The rule for regions and the "recorded most" sentence is in `docs/schema.md`. Never work a figure out from another one, and never correct a misprint by guessing: Newman's prints "0,7 g" for Forest Buzzard and "0,2-0,5 g" for Black-winged Kite, so those two have no mass.
+- GBIF does not know the 2026 genera of four hawks; they were counted as *Accipiter tachiro*, *A. melanoleucus*, *A. badius* and *A. minullus*, and their sources say so. Expect the same for other recently moved species.
+- Wikipedia rate-limits: fetch articles one or two at a time.
+- The `/ask-ai` home text (`src/prompt.js`) now points at `/facts.md` and says an empty cell means "not recorded yet". Reword it again when every family is filled.
 - `test/facts.test.js` covers the labels, the row derivation, the schema, the three formats and the sitemap, and checks every species file that records a new fact.
 
 ## Repo layout

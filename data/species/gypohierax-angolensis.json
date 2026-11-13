@@ -25,9 +25,24 @@
       "min": 57,
       "max": 65
     },
-    "note": "Newman's Birds gives about 60 cm."
+    "wingspanCm": {
+      "min": 150,
+      "max": 150
+    },
+    "massG": {
+      "min": 1000,
+      "max": 1800
+    },
+    "note": "Newman's Birds gives about 60 cm. Wingspan: Wikipedia gives 1.50 m. Mass: Newman's Birds gives 1–1.8 kg."
   },
   "habitat": "East coastal regions with oil/raffia palms; in South Africa largely the KZN coast (Newman's). Rare visitor to Kruger.",
+  "distribution": {
+    "regions": [
+      "far-north",
+      "south"
+    ],
+    "note": "Only 31 GBIF records in the park (far north 8, north 1, central 3, south 19; counted 13 November 2026), too few to say where it is recorded most."
+  },
   "summary": "A distinctive white vulture-like raptor with black wings and tail; horn-coloured bill and legs (Newman's). Rare visitor and localised resident to the KZN coast; not a regular Kruger species.",
   "sampleData": false,
   "similar": [
@@ -77,6 +92,12 @@
       "title": "Wikimedia Commons species category images",
       "url": "https://commons.wikimedia.org/",
       "publisher": "Wikimedia Commons",
+      "year": 2026
+    },
+    {
+      "title": "GBIF occurrence counts for Gypohierax angolensis and for all birds (Aves) in four latitude bands of the Kruger bounding box (lon 31.0–32.04; lat −25.53 to −24.98, −24.98 to −24.00, −24.00 to −23.10, −23.10 to −22.33; country ZA), counted 13 November 2026: far north 8, north 1, central 3, south 19",
+      "url": "https://api.gbif.org/v1/occurrence/search",
+      "publisher": "GBIF.org",
       "year": 2026
     }
   ],

@@ -98,7 +98,8 @@
               "massG",
               "flightless",
               "population",
-              "regions"
+              "regions",
+              "regionsNote"
             ],
             "properties": {
               "slug": { "$ref": "#/$defs/slug" },
@@ -132,7 +133,8 @@
                     "items": { "$ref": "#/$defs/parkRegion" }
                   }
                 ]
-              }
+              },
+              "regionsNote": { "$ref": "#/$defs/textOrNull" }
             }
           }
         }

@@ -27,9 +27,22 @@
       "min": 30,
       "max": 34
     },
-    "note": "Newman's 30–34 cm (as Accipiter badius). Wikipedia 26–30 cm for some Asian taxa; African birds around Newman's range.; Females are larger than males."
+    "massG": {
+      "min": 100,
+      "max": 270
+    },
+    "note": "Newman's 30–34 cm (as Accipiter badius). Wikipedia 26–30 cm for some Asian taxa; African birds around Newman's range.; Females are larger than males. Mass: Newman's Birds gives 100–270 g."
   },
   "habitat": "Wide range of woodland types, even semi-arid regions; singly (Newman's).",
+  "distribution": {
+    "regions": [
+      "far-north",
+      "north",
+      "central",
+      "south"
+    ],
+    "note": "GBIF records per 10 000 bird records in each region: far north 4.9, north 4.7, central 3.9, south 1.6 (counted 13 November 2026). Recorded most often in the far north, and nearly as often in the north."
+  },
   "summary": "Small Accipiter with rufous-banded underparts extending to the throat, grey upperparts, red eyes without a strong eye-ring, and slender yellow legs. Immature streaked/banded rufous below (Newman's). Formerly Accipiter badius; moved to Tachyspiza in recent taxonomy.",
   "sampleData": false,
   "similar": [
@@ -64,6 +77,12 @@
       "url": "https://en.wikipedia.org/wiki/Shikra",
       "publisher": "Wikimedia Foundation",
       "year": null
+    },
+    {
+      "title": "GBIF occurrence counts for Accipiter badius (the name GBIF uses for Tachyspiza badia) and for all birds (Aves) in four latitude bands of the Kruger bounding box (lon 31.0–32.04; lat −25.53 to −24.98, −24.98 to −24.00, −24.00 to −23.10, −23.10 to −22.33; country ZA), counted 13 November 2026: far north 390, north 322, central 571, south 246",
+      "url": "https://api.gbif.org/v1/occurrence/search",
+      "publisher": "GBIF.org",
+      "year": 2026
     }
   ],
   "population": {

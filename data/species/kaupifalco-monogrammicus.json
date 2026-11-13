@@ -27,9 +27,26 @@
       "min": 35,
       "max": 37
     },
-    "note": "Newman's 35–37 cm. Wikipedia agrees 35–37 cm."
+    "wingspanCm": {
+      "min": 79,
+      "max": 79
+    },
+    "massG": {
+      "min": 246,
+      "max": 304
+    },
+    "note": "Newman's 35–37 cm. Wikipedia agrees 35–37 cm. Wingspan: Wikipedia gives about 79 cm. Mass: Wikipedia gives males 246 g and females 304 g on average."
   },
   "habitat": "Broad-leaved woodland, mixed bushveld and well-treed farmlands. Often perches in canopy or on poles; nomadic toward more arid areas in winter (Newman's; SABAP1 higher winter reporting).",
+  "distribution": {
+    "regions": [
+      "far-north",
+      "north",
+      "central",
+      "south"
+    ],
+    "note": "GBIF records per 10 000 bird records in each region: far north 8.9, north 1.4, central 7.8, south 8.9 (counted 13 November 2026). Recorded most often in the far north, and nearly as often in the south."
+  },
   "summary": "A small stocky grey hawk with a diagnostic white throat crossed by a vertical black streak, red cere and legs, and a bold white band on a black tail (Newman's).",
   "sampleData": false,
   "similar": [
@@ -60,6 +77,12 @@
       "url": "https://en.wikipedia.org/wiki/Lizard_buzzard",
       "publisher": "Wikimedia Foundation",
       "year": null
+    },
+    {
+      "title": "GBIF occurrence counts for Kaupifalco monogrammicus and for all birds (Aves) in four latitude bands of the Kruger bounding box (lon 31.0–32.04; lat −25.53 to −24.98, −24.98 to −24.00, −24.00 to −23.10, −23.10 to −22.33; country ZA), counted 13 November 2026: far north 708, north 100, central 1 146, south 1 341",
+      "url": "https://api.gbif.org/v1/occurrence/search",
+      "publisher": "GBIF.org",
+      "year": 2026
     }
   ],
   "population": {

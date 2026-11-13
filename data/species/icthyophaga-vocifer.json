@@ -27,9 +27,26 @@
       "min": 63,
       "max": 73
     },
-    "note": "Newman's 63–73 cm. Wikipedia 63–75 cm. Scientific name on Newman's still Haliaeetus vocifer; IOC/Clements recently moved many fish-eagles to Icthyophaga."
+    "wingspanCm": {
+      "min": 200,
+      "max": 240
+    },
+    "massG": {
+      "min": 1800,
+      "max": 3500
+    },
+    "note": "Newman's 63–73 cm. Wikipedia 63–75 cm. Scientific name on Newman's still Haliaeetus vocifer; IOC/Clements recently moved many fish-eagles to Icthyophaga. Wingspan: Wikipedia gives around 2.0 m in males and 2.4 m in females. Mass: Newman's Birds gives 1.8–3.5 kg."
   },
   "habitat": "Territorial pairs at inland waters, rivers and remoter seashores; hunts mainly from a perch (Newman's; SABAP1).",
+  "distribution": {
+    "regions": [
+      "far-north",
+      "north",
+      "central",
+      "south"
+    ],
+    "note": "GBIF records per 10 000 bird records in each region: far north 72, north 116, central 87, south 103 (counted 13 November 2026). Recorded most often in the north."
+  },
   "summary": "Iconic African raptor with white head and breast, chestnut belly and dark wings; yellow cere and legs. Far-carrying ringing call. Immatures mottled brown for several years (Newman's).",
   "sampleData": false,
   "similar": [
@@ -56,6 +73,12 @@
       "url": "https://en.wikipedia.org/wiki/African_fish_eagle",
       "publisher": "Wikimedia Foundation",
       "year": null
+    },
+    {
+      "title": "GBIF occurrence counts for Icthyophaga vocifer and for all birds (Aves) in four latitude bands of the Kruger bounding box (lon 31.0–32.04; lat −25.53 to −24.98, −24.98 to −24.00, −24.00 to −23.10, −23.10 to −22.33; country ZA), counted 13 November 2026: far north 5 722, north 8 057, central 12 763, south 15 515",
+      "url": "https://api.gbif.org/v1/occurrence/search",
+      "publisher": "GBIF.org",
+      "year": 2026
     }
   ],
   "population": {

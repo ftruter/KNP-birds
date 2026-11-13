@@ -96,10 +96,9 @@ test('the home page links to the prompt and its markdown teaches search', async 
   assert.ok(markdown.includes(`${origin}/search.md?q=vulture`))
   assert.ok(markdown.includes(`${origin}/species.md`))
   assert.match(markdown, /at most 50 results/)
-  assert.match(
-    markdown,
-    /does not hold locations inside the park, wingspan, weight/,
-  )
+  assert.ok(markdown.includes(`${origin}/facts.md`))
+  assert.match(markdown, /An empty cell in that table means/)
+  assert.doesNotMatch(markdown, /does not hold locations/)
   assert.match(markdown, /about Kruger National Park/)
 })
 

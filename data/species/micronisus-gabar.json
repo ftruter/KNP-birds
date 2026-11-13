@@ -27,9 +27,26 @@
       "min": 30,
       "max": 36
     },
-    "note": "Newman's 30–34 cm. Wikipedia 28–36 cm."
+    "wingspanCm": {
+      "min": 63,
+      "max": 63
+    },
+    "massG": {
+      "min": 90,
+      "max": 240
+    },
+    "note": "Newman's 30–34 cm. Wikipedia 28–36 cm. Wingspan: Wikipedia gives 63 cm. Mass: Newman's Birds gives 90–240 g."
   },
   "habitat": "Open woodland, tree savanna and Acacia-dominated riparian bush (Newman's; SABAP1).",
+  "distribution": {
+    "regions": [
+      "far-north",
+      "north",
+      "central",
+      "south"
+    ],
+    "note": "GBIF records per 10 000 bird records in each region: far north 11, north 13, central 14, south 8.6 (counted 13 November 2026). Recorded most often in the central region, and nearly as often in the north."
+  },
   "summary": "A small goshawk with grey throat and breast, deep red eyes, finely barred belly, and a conspicuous white rump in flight. Melanistic morph (about 6–14% in southern Africa per SABAP1) is all-dark with the white rump still often visible (Newman's; SABAP1).",
   "sampleData": false,
   "similar": [
@@ -64,6 +81,12 @@
       "url": "https://en.wikipedia.org/wiki/Gabar_goshawk",
       "publisher": "Wikimedia Foundation",
       "year": null
+    },
+    {
+      "title": "GBIF occurrence counts for Micronisus gabar and for all birds (Aves) in four latitude bands of the Kruger bounding box (lon 31.0–32.04; lat −25.53 to −24.98, −24.98 to −24.00, −24.00 to −23.10, −23.10 to −22.33; country ZA), counted 13 November 2026: far north 894, north 879, central 2 019, south 1 298",
+      "url": "https://api.gbif.org/v1/occurrence/search",
+      "publisher": "GBIF.org",
+      "year": 2026
     }
   ],
   "population": {
