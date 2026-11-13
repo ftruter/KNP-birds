@@ -176,7 +176,10 @@ test('HTML heads advertise rel=ard and not the predecessor relation', async () =
       body,
       /<script type="module" defer src="\/app\.js\?v=[0-9a-f]+"><\/script>/,
     )
-    assert.doesNotMatch(body, /<script(?! type="module")/i)
+    assert.doesNotMatch(
+      body,
+      /<script(?! type="(module|application\/ld\+json)")/i,
+    )
   }
 })
 

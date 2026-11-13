@@ -75,7 +75,10 @@ test('the ask-ai page carries the same prompt as html, markdown and json', async
   )
   assert.match(html, /data-copy-manual>Select all of the text/)
   assert.match(html, /<a href="\/ask-ai" aria-current="page">Ask your AI<\/a>/)
-  assert.doesNotMatch(html, /<script(?![^>]*src="\/)/)
+  assert.doesNotMatch(
+    html,
+    /<script(?! type="application\/ld\+json")(?![^>]*src="\/)/,
+  )
 })
 
 test('the prompt follows the origin the page was asked on', async () => {
