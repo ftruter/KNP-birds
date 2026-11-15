@@ -100,6 +100,8 @@ const NAV = [
   ['agents', '/llms.txt', 'For agents'],
 ]
 
+export const MAMMALS_URL = 'https://mammals.truter.world'
+
 const CAMERA_ICON =
   '<svg class="home-action-icon" aria-hidden="true" focusable="false" viewBox="0 0 24 24" width="40" height="40"><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" d="M3 8.5A1.5 1.5 0 0 1 4.5 7h2.3a1 1 0 0 0 .8-.4l1-1.4a1.5 1.5 0 0 1 1.2-.6h4.4a1.5 1.5 0 0 1 1.2.6l1 1.4a1 1 0 0 0 .8.4h2.3A1.5 1.5 0 0 1 21 8.5v9a1.5 1.5 0 0 1-1.5 1.5h-15A1.5 1.5 0 0 1 3 17.5ZM15.75 12.75a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0Z"/></svg>'
 
@@ -1170,7 +1172,7 @@ ${main}
 <div class="wrap">
 <div class="footer-grid">
 <p>Birds of Kruger National Park</p>
-<p><a href="/llms.txt">llms.txt</a> · <a href="/sitemap"${path === '/sitemap' ? ' aria-current="page"' : ''}>Sitemap</a> · <a href="/facts"${path === '/facts' ? ' aria-current="page"' : ''}>Facts table</a> · <a href="/vocab/colours"${path === '/vocab/colours' ? ' aria-current="page"' : ''}>Colours</a> · <a href="/credits"${path === '/credits' ? ' aria-current="page"' : ''}>Credits</a> · <a href="${escapeHtml(alts.md)}">Markdown</a> · <a href="${escapeHtml(alts.json)}">JSON</a></p>
+<p><a href="${MAMMALS_URL}" title="Switch to our sister site">Mammaps</a> · <a href="/llms.txt">llms.txt</a> · <a href="/sitemap"${path === '/sitemap' ? ' aria-current="page"' : ''}>Sitemap</a> · <a href="/facts"${path === '/facts' ? ' aria-current="page"' : ''}>Facts table</a> · <a href="/vocab/colours"${path === '/vocab/colours' ? ' aria-current="page"' : ''}>Colours</a> · <a href="/credits"${path === '/credits' ? ' aria-current="page"' : ''}>Credits</a> · <a href="${escapeHtml(alts.md)}">Markdown</a> · <a href="${escapeHtml(alts.json)}">JSON</a></p>
 </div>
 ${agentHtml(origin)}
 </div>
