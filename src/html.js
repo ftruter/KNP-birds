@@ -1172,7 +1172,7 @@ ${main}
 <div class="wrap">
 <div class="footer-grid">
 <p>Birds of Kruger National Park</p>
-<p><a href="${MAMMALS_URL}" title="Switch to our sister site">Mammaps</a> · <a href="/llms.txt">llms.txt</a> · <a href="/sitemap"${path === '/sitemap' ? ' aria-current="page"' : ''}>Sitemap</a> · <a href="/facts"${path === '/facts' ? ' aria-current="page"' : ''}>Facts table</a> · <a href="/vocab/colours"${path === '/vocab/colours' ? ' aria-current="page"' : ''}>Colours</a> · <a href="/credits"${path === '/credits' ? ' aria-current="page"' : ''}>Credits</a> · <a href="${escapeHtml(alts.md)}">Markdown</a> · <a href="${escapeHtml(alts.json)}">JSON</a></p>
+<p><a href="${MAMMALS_URL}" title="Switch to our sister site">Mammals</a> · <a href="/llms.txt">llms.txt</a> · <a href="/sitemap"${path === '/sitemap' ? ' aria-current="page"' : ''}>Sitemap</a> · <a href="/facts"${path === '/facts' ? ' aria-current="page"' : ''}>Facts table</a> · <a href="/vocab/colours"${path === '/vocab/colours' ? ' aria-current="page"' : ''}>Colours</a> · <a href="/credits"${path === '/credits' ? ' aria-current="page"' : ''}>Credits</a> · <a href="${escapeHtml(alts.md)}">Markdown</a> · <a href="${escapeHtml(alts.json)}">JSON</a></p>
 </div>
 ${agentHtml(origin)}
 </div>
