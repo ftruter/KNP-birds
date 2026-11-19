@@ -95,6 +95,41 @@ test('pages, files, and errors share the discovery Link header', async () => {
   assert.equal(audio.headers.get('content-type'), 'text/plain; charset=utf-8')
 })
 
+test('markdown and json copies send X-Robots-Tag: noindex, and HTML stays indexable', async () => {
+  const { records } = await loadStore()
+  const app = await site(records)
+  const cases = [
+    ['/', false, true],
+    ['/.md', true, true],
+    ['/.json', true, true],
+    ['/species/coracias-caudatus', false, true],
+    ['/species/coracias-caudatus.md', true, true],
+    ['/species/coracias-caudatus.json', true, true],
+    ['/families.md', true, true],
+    ['/credits.json', true, true],
+    ['/search?q=roller', false, true],
+    ['/search.md?q=roller', true, true],
+    ['/identify/sound.json', true, true],
+    ['/robots.txt', false, false],
+    ['/sitemap.xml', false, false],
+    ['/llms.txt', false, false],
+  ]
+  for (const [pathname, noindex, canonical] of cases) {
+    const response = await app.fetch(pathname)
+    assert.equal(
+      response.headers.get('x-robots-tag'),
+      noindex ? 'noindex' : null,
+      pathname,
+    )
+    const link = response.headers.get('link') || ''
+    if (canonical) assert.match(link, /rel="canonical"/, pathname)
+    else assert.doesNotMatch(link, /rel="canonical"/, pathname)
+  }
+  const robots = await (await app.fetch('/robots.txt')).text()
+  assert.match(robots, /^User-agent: \*\nAllow: \/\n/m)
+  assert.doesNotMatch(robots, /disallow:/i)
+})
+
 test('a cached page keeps the Link header and its cache policy', async () => {
   const cache = cacheHarness()
   try {
