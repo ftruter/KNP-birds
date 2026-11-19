@@ -609,11 +609,29 @@ test('the home page counts the species and family indexes', async () => {
   assert.doesNotMatch(html, /<h2>Species<\/h2>/)
   assert.doesNotMatch(html, /href="\/species\//)
   assert.doesNotMatch(html, /<h2>Families<\/h2>/)
-  assert.doesNotMatch(html, /href="\/family\//)
   assert.doesNotMatch(html, /<table/)
   assert.doesNotMatch(markdown, /## Species\n/)
-  assert.doesNotMatch(markdown, /## Families/)
-  assert.doesNotMatch(markdown, /\]\(https:\/\/birds\.truter\.world\/family\//)
+  assert.doesNotMatch(markdown, /## Families\n/)
+  assert.match(html, /<h2>Browse by family<\/h2>/)
+  assert.match(html, /<ul class="family-index">/)
+  assert.match(html, /href="\/family\/psittacidae"/)
+  assert.match(html, /href="\/family\/picidae"/)
+  assert.equal(
+    (html.match(/href="\/family\/[^"]+"/g) || []).length,
+    familyCount,
+  )
+  assert.match(
+    markdown,
+    /## Browse by family\n\n- \[African and New World parrots\]\(https:\/\/birds\.truter\.world\/family\/psittacidae\) \(_Psittacidae_\)/,
+  )
+  assert.match(
+    markdown,
+    /\[Woodpeckers\]\(https:\/\/birds\.truter\.world\/family\/picidae\) \(_Picidae_\)/,
+  )
+  assert.equal(
+    (markdown.match(/\/family\/[a-z-]+\)/g) || []).length,
+    familyCount,
+  )
   // The two identify actions come first, as plain links, then the browse links.
   const main = html.slice(html.indexOf('<main'), html.indexOf('</main>'))
   const actions = [

@@ -110,7 +110,7 @@ test('pages are served in html, markdown, and json', async () => {
   assert.match(familyPage, /First to look for/)
 })
 
-test('the home page points to the identify pages and the indexes, and embeds neither list', async () => {
+test('the home page points to the identify pages and the indexes, and lists every family', async () => {
   const { records } = await loadStore()
   const site = await app(records)
   const origin = 'https://birds.truter.world'
@@ -152,17 +152,28 @@ test('the home page points to the identify pages and the indexes, and embeds nei
   for (const item of [...home.identify, ...home.browse, home.askAi])
     for (const url of Object.values(item.pages))
       assert.equal((await site.fetch(new URL(url).pathname)).status, 200, url)
+  assert.equal(home.familyList.length, 86)
+  assert.equal(home.familyList[0].name, 'African and New World parrots')
+  assert.equal(home.familyList[0].href, '/family/psittacidae')
+  assert.equal(home.familyList.at(-1).href, '/family/picidae')
   const html = await (await site.fetch('/')).text()
   assert.doesNotMatch(html, /<table/)
   assert.doesNotMatch(html, /<h2>(Species|Families)<\/h2>/)
+  assert.match(html, /<h2>Browse by family<\/h2>/)
+  assert.match(html, /href="\/family\/coraciidae"/)
+  assert.equal((html.match(/href="\/family\/[^"]+"/g) || []).length, 86)
   assert.match(html, /<a class="home-action" href="\/identify\/photo">/)
   assert.match(html, /<a class="home-action" href="\/identify\/sound">/)
   const markdown = await (await site.fetch('/.md')).text()
-  assert.doesNotMatch(markdown, /## (Species|Families)/)
+  assert.doesNotMatch(markdown, /## (Species|Families)$/m)
   assert.doesNotMatch(markdown, /^\|/m)
   assert.match(
     markdown,
     /\[Families\]\(https:\/\/birds\.truter\.world\/families\)/,
+  )
+  assert.match(
+    markdown,
+    /## Browse by family\n\n- \[African and New World parrots\]\(https:\/\/birds\.truter\.world\/family\/psittacidae\)/,
   )
   // The table itself is unchanged at /families.
   const families = await (await site.fetch('/families')).text()

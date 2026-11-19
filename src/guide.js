@@ -132,6 +132,20 @@ export const indexRows = (doc) => {
   })
 }
 
+/** Family pages linked from the home page, alphabetical by English name. */
+export const homeFamilyLinks = (familiesIndex) =>
+  indexRows(familiesIndex)
+    .map((row) => ({
+      name: row.names.en,
+      latin: row.scientificName,
+      href: `/family/${row.slug}`,
+    }))
+    .sort(
+      (a, b) =>
+        a.name.localeCompare(b.name, 'en', { sensitivity: 'base' }) ||
+        a.latin.localeCompare(b.latin, 'en', { sensitivity: 'base' }),
+    )
+
 export const orderFamilySpecies = (species, iconic) => {
   const list = Array.isArray(species) ? species : []
   const rank = new Map(
