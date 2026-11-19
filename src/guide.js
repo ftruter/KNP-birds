@@ -247,6 +247,24 @@ export const statusLabel = (status) =>
 export const familyLabel = (slug) =>
   !slug ? '' : slug.charAt(0).toUpperCase() + slug.slice(1)
 
+/** Other species in the same family, alphabetical by English name. */
+export const siblingSpecies = (familyDoc, currentSlug) =>
+  (Array.isArray(familyDoc?.species) ? familyDoc.species : [])
+    .filter((item) => item?.slug && item.slug !== currentSlug)
+    .map((item) => ({
+      name: englishName(item),
+      latin: typeof item.scientificName === 'string' ? item.scientificName : '',
+      href: `/species/${item.slug}`,
+    }))
+    .sort(
+      (a, b) =>
+        a.name.localeCompare(b.name, 'en', { sensitivity: 'base' }) ||
+        a.latin.localeCompare(b.latin, 'en', { sensitivity: 'base' }),
+    )
+
+export const siblingFamilyName = (familyDoc, familySlug) =>
+  familyDoc ? englishName(familyDoc) : familyLabel(familySlug)
+
 /** The body length alone: a page shows it and puts the note behind it. */
 export const lengthLabel = (size) => {
   const range = size?.lengthCm

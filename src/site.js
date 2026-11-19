@@ -72,6 +72,8 @@ import {
   HOME_IDENTIFY,
   HOME_POPULATION_INTRO,
   indexRows,
+  siblingFamilyName,
+  siblingSpecies,
 } from './guide.js'
 import { numberFormatFor } from './numbers.js'
 import { CARD_MEDIA_TYPE } from './mcp.js'
@@ -461,12 +463,17 @@ const renderDocument = async (env, route, view) => {
       ? mdPage(body, origin, route.pathname, tag)
       : htmlPage(body, origin, route.pathname, tag)
   }
-  const [colourMap, imagesAvailable] = await Promise.all([
+  const [colourMap, imagesAvailable, familyDoc] = await Promise.all([
     colourMapFromKv(env.BIRDS_KV),
     route.format === 'html'
       ? availability(env.IMAGES, data.images)
       : Promise.resolve({}),
+    data.family
+      ? readOptional(env.BIRDS_KV, `family/${data.family}`)
+      : Promise.resolve(null),
   ])
+  const siblings = siblingSpecies(familyDoc?.data, data.slug)
+  const familyName = siblingFamilyName(familyDoc?.data, data.family)
   const body =
     route.format === 'md'
       ? renderSpeciesMarkdown({
@@ -474,6 +481,8 @@ const renderDocument = async (env, route, view) => {
           colourMap,
           origin,
           format: view.numbers.integer,
+          siblings,
+          familyName,
         })
       : renderSpeciesHtml({
           origin,
@@ -481,6 +490,8 @@ const renderDocument = async (env, route, view) => {
           colourMap,
           imagesAvailable,
           format: view.numbers.integer,
+          siblings,
+          familyName,
         })
   return route.format === 'md'
     ? mdPage(body, origin, route.pathname, tag)

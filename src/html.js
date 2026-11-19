@@ -311,12 +311,33 @@ ${colours.map((colour) => `<li>${swatch(colour.hex)}<span>${escapeHtml(colour.na
   })
 }
 
+const moreInFamilyHtml = (siblings, familyName) => {
+  const list = Array.isArray(siblings) ? siblings : []
+  if (list.length === 0) return ''
+  const heading = familyName ? `More in ${familyName}` : 'More in this family'
+  return `<nav aria-labelledby="more-in-family">
+<h2 id="more-in-family">${escapeHtml(heading)}</h2>
+<ul>
+${list
+  .map((item) => {
+    const latin = item.latin
+      ? ` <span class="sitemap-latin">${escapeHtml(item.latin)}</span>`
+      : ''
+    return `<li><a href="${escapeHtml(item.href)}">${escapeHtml(item.name)}</a>${latin}</li>`
+  })
+  .join('\n')}
+</ul>
+</nav>`
+}
+
 export const renderSpeciesHtml = ({
   origin,
   doc,
   colourMap,
   imagesAvailable,
   format,
+  siblings = [],
+  familyName = '',
 }) => {
   const published = speciesDetailsPublished(doc)
   const comparisons = published ? diffSpecies(doc) : []
@@ -345,7 +366,8 @@ ${
 <dl class="facts">
 ${populationRowHtml(population)}
 </dl>`
-}`
+}
+${moreInFamilyHtml(siblings, familyName || familyLabel(doc.family))}`
   return layout({
     title: `${englishName(doc)} (${doc.scientificName}) · KNP Birds`,
     description: inlineText(doc.summary || englishName(doc)),
