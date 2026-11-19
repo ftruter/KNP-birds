@@ -286,7 +286,30 @@ ${rows
   })
 }
 
-export const renderSpeciesMarkdown = ({ doc, colourMap, origin, format }) => {
+const moreInFamilyMarkdown = (siblings, familyName) => {
+  const list = Array.isArray(siblings) ? siblings : []
+  if (list.length === 0) return ''
+  const heading = familyName ? `More in ${familyName}` : 'More in this family'
+  return `
+
+## ${heading}
+
+${list
+  .map((item) => {
+    const latin = item.latin ? ` (_${item.latin}_)` : ''
+    return `- [${item.name}](${item.href})${latin}`
+  })
+  .join('\n')}`
+}
+
+export const renderSpeciesMarkdown = ({
+  doc,
+  colourMap,
+  origin,
+  format,
+  siblings = [],
+  familyName = '',
+}) => {
   const published = speciesDetailsPublished(doc)
   const comparisons = published ? diffSpecies(doc) : []
   const population = populationModel(doc.population, format)
@@ -325,7 +348,7 @@ ${population.notes}
 
 ${population.baseline ? `${population.baseline}\n\n` : ''}${population.confidence ? `Confidence: ${population.confidence}.\n\n` : ''}${population.asOf ? `As of ${population.asOf}.\n\n` : ''}### Sources
 
-${population.sources.length === 0 ? 'No sources cited yet.' : population.sources.map((source) => sourceLine(source)).join('\n')}`
+${population.sources.length === 0 ? 'No sources cited yet.' : population.sources.map((source) => sourceLine(source)).join('\n')}${moreInFamilyMarkdown(siblings, familyName || familyLabel(doc.family))}`
   return pageMd({
     origin,
     path: `/species/${doc.slug}`,

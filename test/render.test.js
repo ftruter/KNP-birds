@@ -8,7 +8,11 @@ import {
   renderSpeciesHtml,
   renderSpeciesIndexHtml,
 } from '../src/html.js'
-import { UNPUBLISHED_SPECIES } from '../src/guide.js'
+import {
+  UNPUBLISHED_SPECIES,
+  siblingFamilyName,
+  siblingSpecies,
+} from '../src/guide.js'
 import {
   renderCreditsMarkdown,
   renderFamiliesIndexMarkdown,
@@ -859,4 +863,57 @@ test('the credits page names sources, taxonomy, and the site, and credits media 
   assert.match(mediaMd, /#### Recordings/)
   assert.match(mediaMd, /#### Sources/)
   assert.match(mediaMd, /A field note/)
+})
+
+test('a species page lists the other species in its family', async () => {
+  const doc = await readJson('data/species/coracias-caudatus.json')
+  const family = await readJson('data/family/coraciidae.json')
+  const siblings = siblingSpecies(family, doc.slug)
+  const familyName = siblingFamilyName(family, doc.family)
+  assert.equal(familyName, 'Rollers')
+  assert.deepEqual(
+    siblings.map((item) => [item.name, item.href]),
+    [
+      ['Broad-billed Roller', '/species/eurystomus-glaucurus'],
+      ['European Roller', '/species/coracias-garrulus'],
+      ['Purple Roller', '/species/coracias-naevius'],
+      ['Racket-tailed Roller', '/species/coracias-spatulatus'],
+    ],
+  )
+  const html = renderSpeciesHtml({
+    origin: 'https://birds.truter.world',
+    doc,
+    colourMap: new Map(),
+    imagesAvailable: {},
+    siblings,
+    familyName,
+  })
+  const nav = html.match(
+    /<nav aria-labelledby="more-in-family">[\s\S]*?<\/nav>/,
+  )[0]
+  assert.match(nav, /<h2 id="more-in-family">More in Rollers<\/h2>/)
+  assert.deepEqual(
+    [...nav.matchAll(/href="([^"]+)"/g)].map((match) => match[1]),
+    siblings.map((item) => item.href),
+  )
+  assert.doesNotMatch(nav, /coracias-caudatus/)
+  const markdown = renderSpeciesMarkdown({
+    doc,
+    colourMap: new Map(),
+    origin: 'https://birds.truter.world',
+    siblings,
+    familyName,
+  })
+  assert.match(markdown, /## More in Rollers\n/)
+  assert.match(
+    markdown,
+    /\[European Roller\]\(https:\/\/birds\.truter\.world\/species\/coracias-garrulus\) \(_Coracias garrulus_\)/,
+  )
+  const bare = renderSpeciesHtml({
+    origin: 'https://birds.truter.world',
+    doc,
+    colourMap: new Map(),
+    imagesAvailable: {},
+  })
+  assert.doesNotMatch(bare, /more-in-family/)
 })

@@ -188,6 +188,37 @@ test('the home page points to the identify pages and the indexes, and lists ever
   assert.equal(empty.identify.length, 2)
 })
 
+test('a species page links to the other species in its family', async () => {
+  const { records } = await loadStore()
+  const site = await app(records)
+  const html = await (await site.fetch('/species/coracias-caudatus')).text()
+  const nav = html.match(
+    /<nav aria-labelledby="more-in-family">[\s\S]*?<\/nav>/,
+  )[0]
+  assert.match(nav, /<h2 id="more-in-family">More in Rollers<\/h2>/)
+  assert.deepEqual(
+    [...nav.matchAll(/href="([^"]+)"/g)].map((match) => match[1]),
+    [
+      '/species/eurystomus-glaucurus',
+      '/species/coracias-garrulus',
+      '/species/coracias-naevius',
+      '/species/coracias-spatulatus',
+    ],
+  )
+  const markdown = await (
+    await site.fetch('/species/coracias-caudatus.md')
+  ).text()
+  assert.match(markdown, /## More in Rollers\n/)
+  assert.match(
+    markdown,
+    /\[Broad-billed Roller\]\(https:\/\/birds\.truter\.world\/species\/eurystomus-glaucurus\)/,
+  )
+  const json = await (
+    await site.fetch('/species/coracias-caudatus.json')
+  ).json()
+  assert.equal(Object.hasOwn(json, 'siblings'), false)
+})
+
 test('the Thrush Nightingale renders as a published species in html, markdown, and json', async () => {
   const { records } = await loadStore()
   const site = await app(records)
