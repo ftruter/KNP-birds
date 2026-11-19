@@ -86,7 +86,12 @@ import { applyRecordingOverlay } from './recordings.js'
 import { alternates, searchSuffix } from './route.js'
 import { loadSearchRecords, searchRecords } from './search.js'
 import { colourMapFromKv, readDocument } from './store.js'
-import { buildSitemap, sitemapEntries, sitemapXml } from './sitemap.js'
+import {
+  buildSitemap,
+  sitemapEntries,
+  sitemapLastmod,
+  sitemapXml,
+} from './sitemap.js'
 import { llmsTxt, robotsTxt } from './static.js'
 import { INDEXNOW_KEY } from './indexnow.js'
 
@@ -561,7 +566,11 @@ const loadSitemapTree = async (env) => {
 
 const renderSitemap = async (env, origin) =>
   textResponse(
-    sitemapXml(origin, await loadSitemapTree(env)),
+    sitemapXml(
+      origin,
+      await loadSitemapTree(env),
+      sitemapLastmod(env?.DATA_PUBLISHED_AT),
+    ),
     'application/xml; charset=utf-8',
     PAGE_CACHE,
     'sitemap',

@@ -6,7 +6,13 @@ import path from 'node:path'
 import { test } from 'node:test'
 import { fileURLToPath } from 'node:url'
 import { handleRequest } from '../src/worker.js'
-import { buildSitemap, sitemapPaths, sitemapXml } from '../src/sitemap.js'
+import {
+  SITEMAP_LASTMOD_FALLBACK,
+  buildSitemap,
+  sitemapLastmod,
+  sitemapPaths,
+  sitemapXml,
+} from '../src/sitemap.js'
 import { loadStore, mockBucket, mockKv, requestContext } from './helpers.js'
 
 const schema = path.resolve(
@@ -97,15 +103,22 @@ test('the sitemap tree is alphabetical by English name', () => {
   ])
 })
 
+test('sitemap lastmod uses the publish date or a documented fallback', () => {
+  assert.equal(sitemapLastmod(Date.UTC(2026, 2, 2, 15, 30)), '2026-03-02')
+  assert.equal(sitemapLastmod('not-a-date'), SITEMAP_LASTMOD_FALLBACK)
+  assert.equal(sitemapLastmod(), SITEMAP_LASTMOD_FALLBACK)
+})
+
 test('sitemap xml is schema-valid and has one loc per url', async () => {
-  const xml = sitemapXml('https://birds.truter.world', tree)
+  const xml = sitemapXml('https://birds.truter.world', tree, '2026-03-02')
   const blocks = xml.split('<url>').slice(1)
   assert.equal(blocks.length, sitemapPaths(tree).length)
   for (const block of blocks) {
     assert.equal((block.match(/<loc>/g) || []).length, 1)
+    assert.match(block, /<lastmod>2026-03-02<\/lastmod>/)
     assert.equal(block.includes('</url>'), true)
   }
-  assert.equal(xml.includes('<lastmod>'), false)
+  assert.equal(xml.includes('<lastmod>'), true)
   assert.equal(new Set(xml.match(/<loc>[^<]+<\/loc>/g)).size, blocks.length)
   const dir = await mkdtemp(path.join(tmpdir(), 'sitemap-'))
   const file = path.join(dir, 'sitemap.xml')
@@ -191,6 +204,11 @@ test('the sitemap page is nested in html, markdown, and json', async () => {
   const xml = await (await fetch('/sitemap.xml')).text()
   const locs = [...xml.matchAll(/<loc>([^<]+)<\/loc>/g)].map(
     (match) => match[1],
+  )
+  assert.equal((xml.match(/<lastmod>/g) || []).length, locs.length)
+  assert.match(
+    xml,
+    new RegExp(`<lastmod>${SITEMAP_LASTMOD_FALLBACK}</lastmod>`),
   )
   assert.deepEqual(locs.slice(0, 4), [
     'https://birds.truter.world/',

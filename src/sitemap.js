@@ -117,10 +117,35 @@ export const sitemapPaths = (tree) => {
   return paths
 }
 
-export const sitemapXml = (origin, tree) => {
+/**
+ * Species and family records have no updated or modified timestamp.
+ * Deploys set DATA_PUBLISHED_AT (milliseconds since epoch) when KV is
+ * published; that is the date we send as lastmod. When the binding is
+ * missing, for example in local tests, use this fallback date, which is
+ * the day of the current main tip.
+ */
+export const SITEMAP_LASTMOD_FALLBACK = '2026-11-15'
+
+/** A W3C date (YYYY-MM-DD) from a publish timestamp, or the fallback. */
+export const sitemapLastmod = (publishedAt) => {
+  const ms = Number(publishedAt)
+  if (Number.isFinite(ms) && ms > 0) {
+    return new Date(ms).toISOString().slice(0, 10)
+  }
+  return SITEMAP_LASTMOD_FALLBACK
+}
+
+const w3cDate = (value) =>
+  typeof value === 'string' && /^\d{4}-\d{2}-\d{2}$/.test(value)
+    ? value
+    : sitemapLastmod(value)
+
+export const sitemapXml = (origin, tree, lastmod = sitemapLastmod()) => {
+  const day = w3cDate(lastmod)
   const body = sitemapPaths(tree)
     .map(
-      (path) => `  <url>\n    <loc>${escapeXml(origin + path)}</loc>\n  </url>`,
+      (path) =>
+        `  <url>\n    <loc>${escapeXml(origin + path)}</loc>\n    <lastmod>${escapeXml(day)}</lastmod>\n  </url>`,
     )
     .join('\n')
   return `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${body}\n</urlset>\n`
