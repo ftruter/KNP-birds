@@ -1199,6 +1199,25 @@ audio {
 .browse-links a::after { content: ""; position: absolute; inset: 0; }
 .browse-links span { color: var(--muted); font-size: var(--fs-sm); }
 
+/* Compact family list on the home page, using the same latin style as the sitemap. */
+.family-index {
+  list-style: none;
+  margin: var(--gap) 0 0;
+  padding: 0;
+  display: grid;
+  gap: var(--gap-half) var(--gap);
+  font-family: var(--sans);
+}
+
+.family-index a { font-weight: 600; }
+
+@container wrap (min-width: 40rem) {
+  .family-index {
+    grid-template-columns: repeat(auto-fill, minmax(16rem, 1fr));
+    align-items: start;
+  }
+}
+
 
 .identify-privacy, .identify-note {
   max-inline-size: 75ch;

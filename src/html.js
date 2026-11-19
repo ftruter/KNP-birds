@@ -25,6 +25,7 @@ import {
   HOME_BROWSE,
   HOME_IDENTIFY,
   HOME_POPULATION_INTRO,
+  homeFamilyLinks,
   imageAlt,
   imageCaptionParts,
   indexRows,
@@ -127,6 +128,22 @@ const identifyActionHtml = (action, icon) =>
 const browseNote = (item, counts) =>
   item.count && counts ? ` <span>${counts[item.count]}</span>` : ''
 
+const familyIndexHtml = (familiesIndex) => {
+  const families = homeFamilyLinks(familiesIndex)
+  if (families.length === 0) return ''
+  return `<nav aria-label="Families">
+<h2>Browse by family</h2>
+<ul class="family-index">
+${families
+  .map(
+    (family) =>
+      `<li><a href="${escapeHtml(family.href)}">${escapeHtml(family.name)}</a> <span class="sitemap-latin">${escapeHtml(family.latin)}</span></li>`,
+  )
+  .join('\n')}
+</ul>
+</nav>`
+}
+
 export const renderHomeHtml = ({ origin, speciesIndex, familiesIndex }) => {
   const species = indexRows(speciesIndex)
   const families = indexRows(familiesIndex)
@@ -148,6 +165,7 @@ ${HOME_BROWSE.map((item) => `<li><a href="${item.href}">${escapeHtml(item.name)}
 </nav>
 <p class="ask-ai-link"><a href="${HOME_ASK_AI.href}">${escapeHtml(HOME_ASK_AI.name)}</a>: ${escapeHtml(HOME_ASK_AI.description)}</p>
 ${OFFLINE_PANEL}
+${familyIndexHtml(familiesIndex)}
 <h2>What these pages compare</h2>
 <ol class="compare-list">
 <li>Chicks and juveniles against adults</li>

@@ -25,6 +25,7 @@ import {
   HOME_BROWSE,
   HOME_IDENTIFY,
   HOME_POPULATION_INTRO,
+  homeFamilyLinks,
   imageAlt,
   indexRows,
   licenceForbidsDerivatives,
@@ -67,6 +68,16 @@ import {
 import { alternates, searchSuffix } from './route.js'
 import { sitemapEntries } from './sitemap.js'
 
+const familyIndexMarkdown = (familiesIndex) => {
+  const families = homeFamilyLinks(familiesIndex)
+  if (families.length === 0) return ''
+  return `## Browse by family
+
+${families.map((family) => `- [${family.name}](${family.href}) (_${family.latin}_)`).join('\n')}
+
+`
+}
+
 export const renderHomeMarkdown = ({ origin, speciesIndex, familiesIndex }) => {
   const species = indexRows(speciesIndex)
   const families = indexRows(familiesIndex)
@@ -103,7 +114,7 @@ ${browse}
 - [Colour names](/vocab/colours)
 - [${HOME_ASK_AI.name}](${HOME_ASK_AI.href}): ${HOME_ASK_AI.description}
 
-${answeringMarkdown(origin)}
+${familyIndexMarkdown(familiesIndex)}${answeringMarkdown(origin)}
 
 ## What these pages compare
 

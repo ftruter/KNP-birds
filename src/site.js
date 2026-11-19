@@ -71,6 +71,7 @@ import {
   HOME_BROWSE,
   HOME_IDENTIFY,
   HOME_POPULATION_INTRO,
+  homeFamilyLinks,
   indexRows,
 } from './guide.js'
 import { numberFormatFor } from './numbers.js'
@@ -244,6 +245,7 @@ const renderHome = async (env, format, view) => {
             : null,
         identify: HOME_IDENTIFY.map(link),
         browse: HOME_BROWSE.map(link),
+        familyList: homeFamilyLinks(families?.data),
         askAi: link(HOME_ASK_AI),
         census: HOME_POPULATION_INTRO,
       },
