@@ -81,6 +81,13 @@ export const pageResponse = ({
       ]
     : []
   headers.set('link', linkHeader(pageLinks))
+  if (
+    alts &&
+    (contentType.startsWith('text/markdown') ||
+      contentType.startsWith('application/json'))
+  ) {
+    headers.set('x-robots-tag', 'noindex')
+  }
   if (vary) headers.set('vary', vary)
   return new Response(body, { status, headers })
 }
