@@ -2,7 +2,7 @@ import { HOME_POPULATION_INTRO } from './guide.js'
 import { agentNote } from './head.js'
 
 export const robotsTxt = (origin) =>
-  `User-agent: *\nAllow: /\n\nSitemap: ${origin}/sitemap.xml\nAgentmap: ${origin}/.well-known/ard.json\n`
+  `User-agent: *\nAllow: /\n\nSitemap: ${origin}/sitemap.xml\n`
 
 export const llmsTxt = (origin) => `# Agent guide: birds of Kruger National Park
 

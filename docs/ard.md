@@ -12,7 +12,7 @@ The live site publishes [Agentic Resource Discovery (ARD) v0.91](https://github.
 | `/mcp/server-card`             | MCP server card, `Content-Type: application/mcp-server-card+json`.                                                                                                |
 | `POST /mcp`                    | The streamable HTTP transport for that card. One public tool, `search`.                                                                                           |
 
-`robots.txt` also carries `Agentmap:` pointing at the ARD manifest. v0.91 lists that directive as one way to advertise an entry source.
+ARD is advertised at `/.well-known/ard.json`, in the HTTP `Link` header (`rel="ard"`), and with `<link rel="ard">` in the HTML `<head>`. `robots.txt` does not carry an `Agentmap:` line, because Google Search Console treats that directive as a syntax error.
 
 ## HTTP Link header
 

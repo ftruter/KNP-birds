@@ -1,6 +1,7 @@
 import assert from 'node:assert/strict'
 import { test } from 'node:test'
 import { KV_CONSISTENCY_MS, NO_STORE, PAGE_CACHE } from '../src/cache.js'
+import { robotsTxt } from '../src/static.js'
 import { handleRequest } from '../src/worker.js'
 import {
   cacheHarness,
@@ -534,4 +535,18 @@ test('POST is rejected and HEAD has no body', async () => {
   })
   assert.equal(head.status, 200)
   assert.equal(await head.text(), '')
+})
+
+test('robots.txt contains only standard directives', async () => {
+  const expected =
+    'User-agent: *\nAllow: /\n\nSitemap: https://birds.truter.world/sitemap.xml\n'
+  assert.equal(robotsTxt('https://birds.truter.world'), expected)
+  assert.doesNotMatch(expected, /agentmap/i)
+  const directives = [...expected.matchAll(/^([A-Za-z-]+):/gm)].map(
+    (match) => match[1],
+  )
+  assert.deepEqual(directives, ['User-agent', 'Allow', 'Sitemap'])
+  const { records } = await loadStore()
+  const site = await app(records)
+  assert.equal(await (await site.fetch('/robots.txt')).text(), expected)
 })
