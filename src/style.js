@@ -388,11 +388,25 @@ p { text-wrap: pretty; }
   margin: var(--gap) 0 0;
   padding: 0;
   display: grid;
+  grid-template-columns: minmax(0, 1fr);
   gap: var(--gap);
-  max-inline-size: 75ch;
+  align-items: stretch;
+}
+
+/* One column on a phone, including the home-screen app. Two, then three, once the page itself is wide enough, not the device. */
+@container wrap (min-width: 44rem) {
+  .search-results { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+
+@container wrap (min-width: 68rem) {
+  .search-results { grid-template-columns: repeat(3, minmax(0, 1fr)); }
 }
 
 .search-result {
+  display: flex;
+  flex-direction: column;
+  gap: var(--gap-half);
+  min-inline-size: 0;
   background: var(--surface);
   border: 1px solid var(--line);
   border-radius: var(--radius);
@@ -400,14 +414,140 @@ p { text-wrap: pretty; }
   padding: var(--gap);
 }
 
+/* The photograph leads the card. It is not a second frame: the card is the frame. It sits in the card's padding so the picture reaches the card's edges, and keeps a 3:2 box so the list does not jump when it arrives. */
+.search-result .search-photo {
+  order: -1;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  border-radius: 0;
+  background: transparent;
+  box-shadow: none;
+}
+
+.search-photo .zoom,
+.search-photo .search-photo-fallback {
+  margin-inline: calc(var(--gap) * -1);
+  margin-block-start: calc(var(--gap) * -1);
+  background: var(--plate-bg);
+}
+
+.search-photo .zoom img,
+.search-photo .plate-art {
+  inline-size: 100%;
+  aspect-ratio: 3 / 2;
+  object-fit: contain;
+  border-radius: 0;
+  background: var(--plate-bg);
+}
+
+.search-photo.is-zoomed .zoom,
+.search-photo.is-zoomed .search-photo-fallback { margin: 0; }
+.search-photo.is-zoomed img { aspect-ratio: auto; background: transparent; }
+
+.search-photo-fallback { display: none; }
+.search-photo.is-missing .zoom { display: none; }
+.search-photo.is-missing .search-photo-fallback { display: block; }
+.search-photo-fallback p {
+  margin: 0;
+  padding-block: var(--gap-half);
+  padding-inline: var(--gap);
+  text-align: center;
+  font-family: var(--sans);
+  font-size: var(--fs-sm);
+  color: var(--muted);
+}
+
+.search-result .search-photo figcaption { margin-block: 0; }
+
 .search-result .kicker { margin: 0; }
 .search-result h3 { margin: 0; font-family: var(--sans); }
 .search-names { margin: 0; }
 .search-names .latin, .search-names .afrikaans { margin: 0; font-size: inherit; }
 
 .search-snippets {
-  margin: var(--gap-half) 0 0;
+  margin: 0;
   font-size: var(--fs-sm);
+}
+
+/* The same large play/stop control as a species page: a brand pill, a play glyph that becomes stop, and a meter. The button is hidden until the script connects it. With the script off, the audio element below is the control. On a phone the control sits under the name, ahead of the note, so it is on screen with the photograph. In a grid it drops to the foot of the card so the controls line up. */
+.search-snippets { order: 2; }
+.search-call { order: 1; }
+@container wrap (min-width: 44rem) {
+  .search-snippets { order: 2; margin-block-start: 0; }
+  .search-call { order: 3; margin-block-start: auto; }
+}
+.search-play {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--gap-half);
+  inline-size: 100%;
+  min-block-size: 4.25rem;
+  padding-block: var(--gap-half);
+  padding-inline: var(--gap);
+  overflow: hidden;
+  border: 3px solid var(--brand);
+  border-radius: var(--radius-pill);
+  background: var(--brand);
+  color: var(--bg);
+  font: 700 var(--fs-lg) var(--sans);
+  line-height: 1.2;
+  cursor: pointer;
+  touch-action: manipulation;
+}
+.search-play[hidden] { display: none; }
+.search-play-glyph { display: block; flex: none; }
+.search-play-glyph-stop { display: none; }
+.search-call.is-playing .search-play-glyph-play { display: none; }
+.search-call.is-playing .search-play-glyph-stop { display: block; }
+.search-play-meter {
+  display: none;
+  position: absolute;
+  inset-inline: var(--gap);
+  inset-block-end: 0.45rem;
+  block-size: 0.35rem;
+  border-radius: var(--radius-pill);
+  background: rgb(0 0 0 / 0.18);
+}
+.search-call.is-playing .search-play-meter { display: block; }
+.search-play-meter-bar {
+  display: block;
+  inline-size: 100%;
+  block-size: 100%;
+  border-radius: inherit;
+  background: currentColor;
+  opacity: 0.7;
+  transform: scaleX(0);
+  transform-origin: left center;
+}
+.search-play-status {
+  margin: var(--gap-half) 0 0;
+  font-family: var(--sans);
+  font-weight: 700;
+  color: var(--accent);
+}
+.search-play-status:empty { display: none; }
+.search-call.is-ready > audio {
+  position: absolute;
+  inline-size: 1px;
+  block-size: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+@media (forced-colors: active) {
+  .search-play {
+    border-color: ButtonText;
+    background: ButtonFace;
+    color: ButtonText;
+  }
+  .search-play-meter { background: ButtonText; }
 }
 
 .search-snippets dt {

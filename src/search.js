@@ -1,4 +1,13 @@
-import { afrikaansName, indexRows, unitLabel } from './guide.js'
+import { creditModel } from './credit.js'
+import {
+  CALL_TYPE,
+  afrikaansName,
+  imageAlt,
+  indexRows,
+  unitLabel,
+} from './guide.js'
+import { bestRecording, displayImage } from './identify.js'
+import { applyRecordingOverlay } from './recordings.js'
 import { readDocument } from './store.js'
 
 const SNIPPET = 180
@@ -49,6 +58,59 @@ const STOP = new Set([
 ])
 
 const caches = new WeakMap()
+
+/**
+ * Sample media for one result, keyed by the result object `searchRecords`
+ * returns. It is not a field of that object: the JSON and Markdown search
+ * pages, and the MCP tool, stay name and text. The HTML page reads it back
+ * with `searchSample`.
+ *
+ * The addresses are the ones the species page plays and shows (`displayImage`,
+ * and `bestRecording` after the recording overlay). The installed app saves
+ * a copy of those same files and swaps the address when the copy is on the
+ * device (`useLocalCopies`). A search page that was saved therefore plays and
+ * shows the local file. The service worker's offline search (PR #207) is
+ * built from the name lists, which have no media, and does not use this map.
+ */
+const resultSamples = new WeakMap()
+
+export const searchSample = (result) => resultSamples.get(result) ?? null
+
+const playName = (type) => {
+  const known = CALL_TYPE[type]
+  const word = !known || known === 'Other' ? 'call' : known.toLowerCase()
+  return `Play ${word}`
+}
+
+/** One photograph and one clip a search card can show. Either may be null. */
+const sampleFrom = (data) => {
+  const shown = displayImage(data)
+  const best = bestRecording(data)
+  return {
+    image: shown
+      ? {
+          src: shown.src,
+          alt: imageAlt(data, shown.image),
+          ai: shown.image?.aiGenerated === true,
+          credit: creditModel(shown.image, 'image', {
+            src: shown.src,
+            onSite: shown.image?.hosted === true,
+          }),
+        }
+      : null,
+    call: best
+      ? {
+          src: best.src,
+          play: playName(best.type),
+          ai: best.recording?.aiGenerated === true,
+          credit: creditModel(best.recording, 'recording', {
+            src: best.src,
+            onSite: best.recording?.hosted === true,
+          }),
+        }
+      : null,
+  }
+}
 
 export const fold = (value) =>
   String(value ?? '')
@@ -180,7 +242,7 @@ const readSafe = async (kv, key) => {
 }
 
 const speciesRecord = (row, doc) => {
-  const data = doc?.data
+  const data = doc?.data ? applyRecordingOverlay(doc.data) : null
   const af = afrikaansName(data) || row.names.af || ''
   return {
     kind: 'species',
@@ -192,6 +254,7 @@ const speciesRecord = (row, doc) => {
     habitat: textOrNull(data?.habitat),
     identification: identificationText(data),
     populationNotes: textOrNull(data?.population?.notes),
+    sample: sampleFrom(data),
   }
 }
 
@@ -208,6 +271,7 @@ const familyRecord = (row, doc) => {
     habitat: null,
     identification: textOrNull(data?.summary) || '',
     populationNotes: null,
+    sample: { image: null, call: null },
   }
 }
 
@@ -388,15 +452,19 @@ export const searchRecords = (records, rawQuery, limit, origin) => {
         sensitivity: 'base',
       }),
   )
-  const results = ranked.slice(0, limit).map(({ record }) => ({
-    kind: record.kind,
-    scientificName: record.scientificName,
-    englishName: record.en,
-    afrikaansName: record.af,
-    population: record.population,
-    pages: pagesFor(origin, record),
-    snippets: snippetsFor(record, query, tokens),
-  }))
+  const results = ranked.slice(0, limit).map(({ record }) => {
+    const result = {
+      kind: record.kind,
+      scientificName: record.scientificName,
+      englishName: record.en,
+      afrikaansName: record.af,
+      population: record.population,
+      pages: pagesFor(origin, record),
+      snippets: snippetsFor(record, query, tokens),
+    }
+    resultSamples.set(result, record.sample ?? { image: null, call: null })
+    return result
+  })
   return { total: ranked.length, results }
 }
 
