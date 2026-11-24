@@ -85,7 +85,7 @@ import {
   aiPrompt,
 } from './prompt.js'
 import { applyRecordingOverlay } from './recordings.js'
-import { alternates, searchSuffix } from './route.js'
+import { alternates, searchSuffix, speciesSearchQuery } from './route.js'
 import { loadSearchRecords, searchRecords } from './search.js'
 import { colourMapFromKv, readDocument } from './store.js'
 import {
@@ -481,6 +481,13 @@ const renderDocument = async (env, route, view) => {
   ])
   const siblings = siblingSpecies(familyDoc?.data, data.slug)
   const familyName = siblingFamilyName(familyDoc?.data, data.family)
+  const search =
+    route.format === 'html'
+      ? speciesSearchQuery(
+          route.pathname,
+          new URL(view.query).searchParams.get('q'),
+        )
+      : ''
   const body =
     route.format === 'md'
       ? renderSpeciesMarkdown({
@@ -499,6 +506,7 @@ const renderDocument = async (env, route, view) => {
           format: view.numbers.integer,
           siblings,
           familyName,
+          search,
         })
   return route.format === 'md'
     ? mdPage(body, origin, route.pathname, tag)

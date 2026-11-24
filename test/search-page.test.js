@@ -84,7 +84,7 @@ test('the html search page lists results under a counted heading', async () => {
   )
   assert.match(
     html,
-    /<a href="\/species\/coracias-caudatus">Lilac-breasted Roller<\/a>/,
+    /<a href="\/species\/coracias-caudatus\?q=lilac-breasted">Lilac-breasted Roller<\/a>/,
   )
   assert.match(html, /<span class="latin">Coracias caudatus<\/span>/)
   assert.match(html, /<span class="afrikaans">[^<]+<\/span>/)

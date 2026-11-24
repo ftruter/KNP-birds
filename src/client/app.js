@@ -352,6 +352,134 @@ const bindTargets = () => {
   openTarget()
 }
 
+// Same trimming as searchQuery in route.js. This script cannot import it.
+const SEARCH_MAX = 200
+const searchQuery = (raw) =>
+  String(raw ?? '')
+    .replace(/\s+/g, ' ')
+    .trim()
+    .slice(0, SEARCH_MAX)
+    .trim()
+
+const SPECIES_PATH = /^\/species\/[a-z0-9]+(?:-[a-z0-9]+)*$/
+
+const sameSearch = (url, query) => {
+  let parsed
+  try {
+    parsed = new URL(url, window.location.origin)
+  } catch {
+    return false
+  }
+  return (
+    parsed.origin === window.location.origin &&
+    parsed.pathname === '/search' &&
+    searchQuery(parsed.searchParams.get('q')) === query
+  )
+}
+
+/**
+ * True when the page before this one is the search these results came from.
+ * Going back restores that page, including the copy kept below for offline.
+ */
+const previousIsSearch = (query) => {
+  const nav = window.navigation
+  if (nav?.currentEntry && typeof nav.entries === 'function') {
+    const entries = nav.entries()
+    const index = entries.indexOf(nav.currentEntry)
+    if (index >= 0)
+      return index > 0 && sameSearch(entries[index - 1].url, query)
+  }
+  return window.history.length > 1 && sameSearch(document.referrer, query)
+}
+
+/**
+ * Species pages opened from search carry `?q=`. A copy saved for offline use
+ * has no query, and the service worker serves that copy for any query, so the
+ * trail is added here when the HTML does not already have it.
+ */
+const bindSearchReturn = () => {
+  const path = String(window.location.pathname ?? '')
+  if (!SPECIES_PATH.test(path)) return
+  const query = searchQuery(
+    new URLSearchParams(window.location.search || '').get('q'),
+  )
+  if (!query) return
+  const list = document.querySelector('nav[aria-label="Breadcrumb"] ol.crumbs')
+  if (!list) return
+  let link = list.querySelector('[data-search-crumb]')
+  if (!link) {
+    const current = list.querySelector(':scope > [aria-current="page"]')
+    if (!current) return
+    const item = document.createElement('li')
+    link = document.createElement('a')
+    link.setAttribute(
+      'href',
+      '/search?' + new URLSearchParams({ q: query }).toString(),
+    )
+    link.setAttribute('data-search-crumb', '')
+    link.textContent = 'Search results'
+    item.append(link)
+    current.before(item)
+  }
+  link.addEventListener('click', (event) => {
+    if (!plainClick(event)) return
+    if (!previousIsSearch(query)) return
+    event.preventDefault()
+    window.history.back()
+  })
+}
+
+// The newest search, so the trail can open it again with no signal. One
+// entry: the guide does not keep every search a visitor tries. The service
+// worker only uses it for the same address, never a different query.
+const SEARCH_CACHE = 'offline-search'
+let searchSaved = null
+
+const rememberSearch = () => {
+  if (String(window.location.pathname ?? '') !== '/search' || !window.caches)
+    return
+  const query = searchQuery(
+    new URLSearchParams(window.location.search || '').get('q'),
+  )
+  if (!query) return
+  const seen = window.location.pathname + window.location.search
+  const canonical = '/search?' + new URLSearchParams({ q: query }).toString()
+  searchSaved = fetch(window.location.href)
+    .then(async (response) => {
+      if (!response.ok || response.type !== 'basic') return
+      const cache = await window.caches.open(SEARCH_CACHE)
+      const keys = await cache.keys()
+      await Promise.all(keys.map((key) => cache.delete(key)))
+      await cache.put(seen, response.clone())
+      if (seen !== canonical) await cache.put(canonical, response.clone())
+    })
+    .catch(() => {})
+    .finally(() => {
+      searchSaved = null
+    })
+}
+
+// A result opened before that copy is stored would have nothing to come back
+// to once the signal drops. Wait, then go.
+const holdSearchLink = () => {
+  if (window.location.pathname !== '/search') return
+  document.addEventListener('click', (event) => {
+    const pending = searchSaved
+    if (!pending) return
+    const link = event.target.closest?.('a')
+    if (!link || !plainClick(event)) return
+    let url
+    try {
+      url = new URL(link.href, window.location.origin)
+    } catch {
+      return
+    }
+    if (!url.pathname.startsWith('/species/')) return
+    event.preventDefault()
+    pending.finally(() => window.location.assign(link.href))
+  })
+}
+
 // On a narrow screen the nav is one row that scrolls sideways. The link for
 // the page being read is brought into view, without moving the page.
 const showCurrentNav = () => {
@@ -431,4 +559,7 @@ bindSearch()
 bindCopy()
 bindTargets()
 bindCalls()
+bindSearchReturn()
+rememberSearch()
+holdSearchLink()
 showCurrentNav()

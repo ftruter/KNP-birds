@@ -359,6 +359,7 @@ export const renderSpeciesHtml = ({
   format,
   siblings = [],
   familyName = '',
+  search = '',
 }) => {
   const published = speciesDetailsPublished(doc)
   const comparisons = published ? visibleComparisons(doc) : []
@@ -395,10 +396,23 @@ ${moreInFamilyHtml(siblings, familyName || familyLabel(doc.family))}`
     origin,
     path: `/species/${doc.slug}`,
     nav: 'species',
-    crumbs: crumbs([
-      { href: '/species', label: 'Species' },
-      { href: `/species/${doc.slug}`, label: englishName(doc), current: true },
-    ]),
+    crumbs: crumbs(
+      [
+        { href: '/species', label: 'Species' },
+        search
+          ? {
+              href: `/search${searchSuffix(search)}`,
+              label: 'Search results',
+              returnToSearch: true,
+            }
+          : null,
+        {
+          href: `/species/${doc.slug}`,
+          label: englishName(doc),
+          current: true,
+        },
+      ].filter(Boolean),
+    ),
     jsonLd: [
       {
         ...taxonNode({
@@ -1395,13 +1409,17 @@ ${ai}${call.credit ? creditHtml(call.credit, call.src) : ''}
 </div>`
 }
 
-const resultHtml = (result) => {
+const resultHtml = (result, query) => {
   const path = new URL(result.pages.html).pathname
+  // A species hit keeps the query. The page then links back to these results,
+  // which is the way back in the installed app, where there is no back button.
+  const href =
+    query && result.kind === 'species' ? `${path}${searchSuffix(query)}` : path
   const snippets = result.snippets.filter((item) => SNIPPET_LABEL[item.field])
   const sample = searchSample(result)
   return `<li class="search-result">
 <p class="kicker">${result.kind === 'family' ? 'Family' : 'Species'}</p>
-<h3><a href="${escapeHtml(path)}">${escapeHtml(result.englishName || result.scientificName)}</a></h3>
+<h3><a href="${escapeHtml(href)}">${escapeHtml(result.englishName || result.scientificName)}</a></h3>
 <p class="search-names"><span class="latin">${escapeHtml(result.scientificName)}</span>${result.afrikaansName ? ` · <span class="afrikaans">${escapeHtml(result.afrikaansName)}</span>` : ''}</p>
 ${
   snippets.length
@@ -1434,7 +1452,7 @@ export const renderSearchHtml = ({ origin, query, found }) => {
       : `<h2 id="search-count">${escapeHtml(count)}</h2>
 ${more}
 <ol class="search-results" aria-labelledby="search-count">
-${found.results.map(resultHtml).join('\n')}
+${found.results.map((result) => resultHtml(result, query)).join('\n')}
 </ol>`
   return layout({
     title: query ? `Search: ${query} · KNP Birds` : 'Search · KNP Birds',
@@ -1471,11 +1489,12 @@ const entries = (doc) => (Array.isArray(doc?.entries) ? doc.entries : [])
 
 /** The trail as HTML, with its items kept for the structured data. */
 export const crumbs = (items) => {
-  const rest = (items ?? []).map((item) =>
-    item.current
-      ? `<li aria-current="page">${escapeHtml(item.label)}</li>`
-      : `<li><a href="${escapeHtml(item.href)}">${escapeHtml(item.label)}</a></li>`,
-  )
+  const rest = (items ?? []).map((item) => {
+    if (item.current)
+      return `<li aria-current="page">${escapeHtml(item.label)}</li>`
+    const mark = item.returnToSearch ? ' data-search-crumb' : ''
+    return `<li><a href="${escapeHtml(item.href)}"${mark}>${escapeHtml(item.label)}</a></li>`
+  })
   return {
     items: items ?? [],
     html: !items?.length
