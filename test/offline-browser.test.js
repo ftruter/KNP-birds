@@ -481,6 +481,21 @@ each(
     await until(page, 'species-clips', 'done')
     await page.evaluate(() => navigator.serviceWorker.ready)
 
+    // With a signal, search is still the server's page. The worker only
+    // answers /search itself when that fetch fails.
+    await page.goto(`${site.origin}/search?q=lilac-breasted`)
+    assert.match(await page.locator('h1').innerText(), /^Search$/)
+    assert.equal(await page.locator('body').getAttribute('data-offline'), null)
+    assert.match(await page.locator('#search-count').innerText(), /result/)
+    assert.equal(
+      await page
+        .locator(
+          '.search-results a[href="/species/coracias-caudatus?q=lilac-breasted"]',
+        )
+        .count(),
+      1,
+    )
+
     await context.setOffline(true)
     await page.goto(`${site.origin}/species/coracias-caudatus`)
     assert.match(await page.locator('h1').innerText(), /Lilac-breasted Roller/)
@@ -522,6 +537,48 @@ each(
     )
     await page.goto(`${site.origin}/species/merops-apiaster`)
     assert.match(await page.locator('h1').innerText(), /No signal/)
+    assert.equal(
+      await page.locator('body').getAttribute('data-offline'),
+      'no-signal',
+    )
+    assert.notEqual(
+      await page.evaluate(
+        () =>
+          getComputedStyle(document.querySelector('.site-header'))
+            .backgroundColor,
+      ),
+      'rgba(0, 0, 0, 0)',
+    )
+    // The page offers search of the saved names, and that search links only
+    // to pages that were saved.
+    await page.getByRole('link', { name: 'Search saved birds' }).click()
+    assert.match(await page.locator('h1').innerText(), /^Search$/)
+    await page.locator('#site-search-q').fill('Gewone Troupant')
+    await Promise.all([
+      page.waitForURL(/\/search\?q=Gewone(\+|%20)Troupant/),
+      page.locator('#site-search-q').press('Enter'),
+    ])
+    assert.equal(
+      await page.locator('body').getAttribute('data-offline'),
+      'search',
+    )
+    await page
+      .locator('.search-results a[href^="/species/coracias-caudatus?q="]')
+      .click()
+    assert.match(await page.locator('h1').innerText(), /Lilac-breasted Roller/)
+    assert.match(
+      await page.locator('[data-search-crumb]').getAttribute('href'),
+      /^\/search\?q=Gewone(\+|%20)Troupant$/,
+    )
+    await page.goto(`${site.origin}/search?q=bee-eater`)
+    assert.equal(
+      await page.locator('a[href="/species/merops-apiaster"]').count(),
+      0,
+    )
+    assert.match(
+      await page.locator('#main').innerText(),
+      /not saved on this device/,
+    )
 
     // Back on the home page, with no network, the boxes are still ticked.
     await page.goto(`${site.origin}/`)

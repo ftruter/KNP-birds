@@ -1,4 +1,4 @@
-import { diffSpecies } from './diff.js'
+import { visibleComparisons } from './diff.js'
 import { recordingNotes } from './recordings.js'
 import { inlineText, safeHttpUrl } from './escape.js'
 import {
@@ -7,6 +7,7 @@ import {
   FAMILY_TOTAL_SEASONS,
   residencyGapText,
   CALL_TYPE,
+  readerCallText,
   SAMPLE_NOTICE,
   afrikaansName,
   EMPTY_FAMILY_SPECIES,
@@ -125,7 +126,7 @@ ${familyIndexMarkdown(familiesIndex)}${answeringMarkdown(origin)}
 5. A perched or walking bird, from the front, the back and the side
 6. Calls and songs of males and females
 
-Age, season and sex come from diffing structured field marks. Null means unknown. Flight and perched views use notes and photographs. ${HOME_POPULATION_INTRO}`,
+Age, season and sex come from diffing structured field marks. Null means unknown. Flight and perched views use notes and photographs. A comparison with nothing to report is left off the page. ${HOME_POPULATION_INTRO}`,
   })
 }
 
@@ -311,7 +312,7 @@ export const renderSpeciesMarkdown = ({
   familyName = '',
 }) => {
   const published = speciesDetailsPublished(doc)
-  const comparisons = published ? diffSpecies(doc) : []
+  const comparisons = published ? visibleComparisons(doc) : []
   const population = populationModel(doc.population, format)
   const images = Array.isArray(doc.images) ? doc.images : []
   const af = afrikaansName(doc)
@@ -326,10 +327,7 @@ ${sizeFactsMarkdown(doc)}${doc.habitat ? `- Habitat: ${doc.habitat}\n` : ''}${di
 
 ${images.length === 0 ? '_No photograph is stored for this species yet._' : images.map((image) => imageMarkdown(doc, image)).join('\n\n')}
 
-## Telling it apart
-
-${comparisons.map((section) => comparisonMarkdown(section, colourMap)).join('\n\n')}
-${similarMarkdown(doc)}
+${tellingApartMarkdown(comparisons, colourMap)}${similarMarkdown(doc)}
 ${sourcesMarkdown(doc.sources)}`
     : UNPUBLISHED_SPECIES
   const body = `_${doc.scientificName}_ · [${familyLabel(doc.family)}](/family/${doc.family})${status}
@@ -453,6 +451,14 @@ ${model.complete ? '' : `This total is incomplete. ${FAMILY_TOTAL_LEFT_OUT}`}
 ${FAMILY_TOTAL_SEASONS} [Families by season](/families).${gap ? `\n\n${gap}` : ''}`
 }
 
+const tellingApartMarkdown = (comparisons, colourMap) =>
+  comparisons.length === 0
+    ? ''
+    : `## Telling it apart
+
+${comparisons.map((section) => comparisonMarkdown(section, colourMap)).join('\n\n')}
+`
+
 const comparisonMarkdown = (section, colourMap) => {
   const lines = [`### ${section.title}`]
   if (section.notice) lines.push('', `**${section.notice}.**`)
@@ -528,7 +534,7 @@ const callLines = (calls) =>
               return bits.length ? ` ${bits.join('. ')}.` : ''
             })
             .join('')
-          return `- ${CALL_TYPE[call.type] || 'Call'}: ${call.description || ''}${recordings}`
+          return `- ${CALL_TYPE[call.type] || 'Call'}: ${readerCallText(call.description || '')}${recordings}`
         })
         .join('\n')
 

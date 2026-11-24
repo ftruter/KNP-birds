@@ -56,7 +56,14 @@ const openStandalone = async (browser) => {
   const errors = []
   page.on('pageerror', (error) => {
     const message = String(error)
-    if (/offline\.json|Failed to fetch|access control checks/i.test(message))
+    // Going offline cuts off the guide download. WebKit reports each failed
+    // fetch as a page error, and the wording varies. The trail is checked
+    // on its own.
+    if (
+      /cannot load|load failed|failed to fetch|offline\.json|access control/i.test(
+        message,
+      )
+    )
       return
     errors.push(message)
   })
@@ -157,8 +164,17 @@ const exercise = async (browser) => {
       await page.locator('#search-count').innerText(),
       /results? for “lilac roller”/,
     )
+    // A different query must not reuse the saved lilac-breasted page. With
+    // the name lists on the device it is a new search; otherwise, no signal.
     await page.goto(`${origin}/search?q=hornbill`)
-    assert.match(await page.locator('h1').innerText(), /No signal/)
+    const offline = await page.locator('body').getAttribute('data-offline')
+    if (offline === 'search') {
+      assert.match(await page.locator('#search-count').innerText(), /hornbill/)
+      assert.doesNotMatch(await page.locator('#main').innerText(), /lilac/)
+    } else {
+      assert.equal(offline, 'no-signal')
+      assert.match(await page.locator('h1').innerText(), /No signal/)
+    }
     await context.setOffline(false)
     assert.deepEqual(errors, [])
   } finally {
