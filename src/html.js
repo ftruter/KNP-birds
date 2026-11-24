@@ -1,4 +1,4 @@
-import { diffSpecies } from './diff.js'
+import { visibleComparisons } from './diff.js'
 import { recordingNotes } from './recordings.js'
 import { creditHtml, creditModel } from './credit.js'
 import { escapeHtml, inlineText, safeHttpUrl } from './escape.js'
@@ -177,7 +177,7 @@ ${familyIndexHtml(familiesIndex)}
 </ol>
 <h2>About this guide</h2>
 <p>An open field guide to the birds of Kruger National Park and neighbouring Marloth Park. The full list is resident species, plus summer migrants. Rare vagrants are left out. ${escapeHtml(catalogSentence(species.length, families.length, speciesIndex, familiesIndex))}</p>
-<p>Age, season and sex are worked out by comparing structured field marks. A mark left blank is unknown, not a claim that the part has no colour. Flight and perched views use notes and photographs. Where nothing differs, the page says so.</p>
+<p>Age, season and sex are worked out by comparing structured field marks. A mark left blank is unknown, not a claim that the part has no colour. Flight and perched views use notes and photographs. A comparison with nothing to report is left off the page.</p>
 <details class="more"><summary>About the population figures</summary>
 <p>${escapeHtml(HOME_POPULATION_INTRO)}</p>
 </details>
@@ -358,7 +358,7 @@ export const renderSpeciesHtml = ({
   familyName = '',
 }) => {
   const published = speciesDetailsPublished(doc)
-  const comparisons = published ? diffSpecies(doc) : []
+  const comparisons = published ? visibleComparisons(doc) : []
   const population = populationModel(doc.population, format)
   const images = Array.isArray(doc.images) ? doc.images : []
   const status = doc.status ? ` · ${escapeHtml(statusLabel(doc.status))}` : ''
@@ -467,8 +467,12 @@ ${populationRowHtml(population)}
 </dl>
 </div>
 </div>
-<h2>Telling it apart</h2>
-${comparisons.map((section) => comparisonSection(section, colourMap)).join('\n')}
+${
+  comparisons.length
+    ? `<h2>Telling it apart</h2>
+${comparisons.map((section) => comparisonSection(section, colourMap)).join('\n')}`
+    : ''
+}
 ${similarHtml(doc)}
 ${
   images.length > 1

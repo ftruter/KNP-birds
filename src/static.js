@@ -83,7 +83,7 @@ The six comparisons on a species page are derived, not stored as prose:
 
 \`size\` holds up to three measurements, each \`{ "min", "max" }\`: \`lengthCm\` (bill tip to tail tip, centimetres), \`wingspanCm\` (centimetres) and \`massG\` (grams). \`min\` equals \`max\` when the source gives one figure. \`flightless\` is \`true\` for a bird that cannot fly. \`distribution\` says where in the park the species is found: \`regions\` is a list from \`far-north\`, \`north\`, \`central\` and \`south\`, and \`note\` is free text that may name rivers or rest camps. Every one of these is optional. A field that is missing has not been recorded: do not read it as zero, as "flies", or as "absent from that region".
 
-When both sides are described and no mark differs, the page says "No visible difference".
+A comparison section is left off the page when its only text would be that the sides cannot be compared, or that there is "No visible difference", and it has no note and no call. A section shown for a note or a call, whose marks do not differ, still says "No visible difference".
 
 A species with empty \`variants\`, \`viewNotes\`, \`calls\`, and \`images\` has not had its field details published. The page says "The details for this species have not been published yet." and skips those sections. \`status\` and \`size\` may be omitted until they are known. \`population\` is still present, and may already cite a figure. The Afrikaans line is omitted when \`af\` is missing.
 
