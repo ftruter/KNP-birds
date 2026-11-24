@@ -70,7 +70,7 @@
     {
       "sex": "any",
       "type": "alarm",
-      "description": "The sources used do not describe the voice. The grade A file is an alarm call from Port Alfred. The filename is XC323553-Brown Scrub Robin alarm xc (2).mp3.",
+      "description": "",
       "recordings": [
         {
           "key": "xeno-canto/XC323553",

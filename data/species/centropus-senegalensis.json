@@ -187,7 +187,7 @@
     {
       "sex": "any",
       "type": "call",
-      "description": "Newman’s species page does not describe the voice. Grade A call from Cairo. The filename is the generic coucal.mp3. The only South African file found was a grade D Kruger recording, so the higher grade was kept.",
+      "description": "",
       "recordings": [
         {
           "key": "xeno-canto/XC341752",

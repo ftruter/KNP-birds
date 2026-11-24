@@ -30,7 +30,7 @@
     "note": "Newman's Birds gives 10 cm."
   },
   "habitat": "Flocks in dry woodland, cultivated lands and coastal grassland, often with Yellow-fronted Canaries at seeding grasses.",
-  "summary": "A fairly common, localised near-endemic resident. Very small, dull greenish above, with a yellow breast and yellow rump. The colour line says the belly is white. The description says the male has buffy flanks and belly, and the female has buffy underparts and a yellow rump. The song is pretty and sparrow-like. It is somewhat nomadic when not breeding. No openly licensed recording was found. The Kemp code VB was left unchanged.",
+  "summary": "A fairly common, localised near-endemic resident. Very small, dull greenish above, with a yellow breast and yellow rump. The colour line says the belly is white. The description says the male has buffy flanks and belly, and the female has buffy underparts and a yellow rump. The song is pretty and sparrow-like. It is somewhat nomadic when not breeding. The Kemp code VB was left unchanged.",
   "sampleData": false,
   "similar": [
     {
@@ -201,7 +201,7 @@
     {
       "sex": "any",
       "type": "song",
-      "description": "A pretty song of sparrow-like quality. No openly licensed recording was found.",
+      "description": "A pretty song of sparrow-like quality.",
       "recordings": []
     }
   ],

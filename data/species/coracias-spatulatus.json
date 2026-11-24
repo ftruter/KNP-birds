@@ -261,7 +261,7 @@
     {
       "sex": "any",
       "type": "call",
-      "description": "A harsh guttural shriek, uttered as it swoops; the sexes are not given different calls.",
+      "description": "A harsh guttural shriek, uttered as it swoops.",
       "recordings": [
         {
           "key": "xeno-canto/XC660428",

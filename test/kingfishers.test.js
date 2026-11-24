@@ -182,7 +182,7 @@ test('weak kingfisher claims stay attributed and the pair photo stays mixed', as
   assert.match(striped.summary, /Wikipedia/)
   assert.equal(striped.research.confidence, 'medium')
   assert.equal(grey.research.needsReview, true)
-  assert.match(grey.calls[0].description, /Kenya/)
+  assert.match(grey.calls[0].description, /chi-chi-chi-chi/)
   assert.match(
     grey.images.find((image) => image.view === 'perched-front').caption,
     /Kenya/,
@@ -207,7 +207,7 @@ test('weak kingfisher claims stay attributed and the pair photo stays mixed', as
   )
   assert.match(
     woodland.calls.find((call) => call.type === 'song').description,
-    /not stored as a male-only song/,
+    /yimp-trrrrrrrrrr/,
   )
   assert.ok(woodland.images.some((image) => image.view === 'display-front'))
   assert.ok(woodland.images.some((image) => image.view === 'display-back'))

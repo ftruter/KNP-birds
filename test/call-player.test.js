@@ -80,7 +80,7 @@ test('a species page leads with a large play control and no filename', async () 
     ...html.matchAll(/<p class="call-copy">([\s\S]*?)<\/p>/g),
   ].map((match) => match[1])
   assert.deepEqual(copies, [
-    '<span class="call-type">Call</span> A querulous quirk and other similar sounds. Grade A call from near Skukuza, Kruger Park.',
+    '<span class="call-type">Call</span> A querulous quirk and other similar sounds.',
   ])
   assert.doesNotMatch(copies.join('\n'), /filename|\.mp3|XC1149412/i)
   assert.match(markdown, /A querulous quirk and other similar sounds/)

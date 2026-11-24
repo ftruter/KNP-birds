@@ -241,7 +241,7 @@
     {
       "sex": "any",
       "type": "song",
-      "description": "A loud 'yimp-trrrrrrrrrr', the last part drawn out and descending, sometimes given with the wings extended (Newman's; eBird). Newman's says the male gives this continuously after arrival until breeding ends. No different female song is described, and some recordings are of pairs, so it is not stored as a male-only song.",
+      "description": "A loud 'yimp-trrrrrrrrrr', the last part drawn out and descending, sometimes given with the wings extended (Newman's; eBird). Newman's says the male gives this continuously after arrival until breeding ends.",
       "recordings": [
         {
           "key": "xeno-canto/XC780264",
@@ -278,7 +278,7 @@
     {
       "sex": "any",
       "type": "alarm",
-      "description": "An alarm call, from a recording the recordist labelled as an alarm. The field-guide texts used here do not describe it.",
+      "description": "",
       "recordings": [
         {
           "key": "xeno-canto/XC213653",

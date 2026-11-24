@@ -15,7 +15,7 @@
     "note": "Newman's Birds gives 19 cm."
   },
   "habitat": "Grass and coarse vegetation fringing marshes, riverine reed beds and papyrus, cultivated fields, fallow lands and cane fields. In summer the male flies over his territory.",
-  "summary": "A common resident. The red shoulder is retained all year. The breeding male is identified by a pale bill and a short tail, as well as the red shoulders. The display call is a husky tseek, wirra, wirra, wirra, wirra. The female and non-breeding plumage, apart from the red shoulder, were not described. The only grade A recordings are ND, so the playable recording is grade B. The Kemp paper name Redshouldered Widow and the code RB were left unchanged.",
+  "summary": "A common resident. The red shoulder is retained all year. The breeding male is identified by a pale bill and a short tail, as well as the red shoulders. The display call is a husky tseek, wirra, wirra, wirra, wirra. The female and non-breeding plumage, apart from the red shoulder, were not described. The Kemp paper name Redshouldered Widow and the code RB were left unchanged.",
   "sampleData": false,
   "similar": [
     {
@@ -192,7 +192,7 @@
     {
       "sex": "male",
       "type": "call",
-      "description": "A husky tseek, wirra, wirra, wirra, wirra when displaying. The grade A recordings are CC BY-NC-ND, so they are not played here. Grade B call from near Bizana, Eastern Cape. The filename says a Cape Canary follows the widowbird. The filename is XC441846-Fan-tailed Widowbird then Cape Canary.mp3.",
+      "description": "A husky tseek, wirra, wirra, wirra, wirra when displaying.",
       "recordings": [
         {
           "key": "xeno-canto/XC441846",

@@ -280,7 +280,7 @@
     {
       "sex": "any",
       "type": "call",
-      "description": "Harsh hisses and cackles at carcasses; otherwise silent. Kruger recording included.",
+      "description": "Harsh hisses and cackles at carcasses; otherwise silent.",
       "recordings": [
         {
           "key": "xeno-canto/XC978231",

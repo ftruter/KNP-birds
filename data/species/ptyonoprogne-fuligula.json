@@ -158,7 +158,7 @@
     {
       "sex": "any",
       "type": "call",
-      "description": "A melodious twitter. Grade A call from near Montagu, Western Cape. The filename is generic and shows a 250 Hz high-pass. It was not cleaned again.",
+      "description": "A melodious twitter. It was not cleaned again.",
       "recordings": [
         {
           "key": "xeno-canto/XC1149917",

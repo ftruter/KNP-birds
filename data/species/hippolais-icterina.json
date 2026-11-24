@@ -206,7 +206,7 @@
     {
       "sex": "any",
       "type": "song",
-      "description": "A repetitive jumble of warbled notes, some pleasant and some harsh and nasal, often given from the canopy; the texts used here do not separate the sexes.",
+      "description": "A repetitive jumble of warbled notes, some pleasant and some harsh and nasal, often given from the canopy.",
       "recordings": [
         {
           "key": "xeno-canto/XC27125",
@@ -223,7 +223,7 @@
     {
       "sex": "any",
       "type": "call",
-      "description": "A short teck, or tec, tec, tec; the texts used here do not assign it to one sex.",
+      "description": "A short teck, or tec, tec, tec.",
       "recordings": [
         {
           "key": "xeno-canto/XC448260",

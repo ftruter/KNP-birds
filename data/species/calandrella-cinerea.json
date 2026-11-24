@@ -241,7 +241,7 @@
     {
       "sex": "male",
       "type": "song",
-      "description": "The male’s display song is a jumble of whistles and short trills, and it can imitate other birds. A female song is not described.",
+      "description": "The male’s display song is a jumble of whistles and short trills, and it can imitate other birds.",
       "recordings": [
         {
           "key": "xeno-canto/XC666780",
@@ -258,7 +258,7 @@
     {
       "sex": "any",
       "type": "call",
-      "description": "A brief cheep, chirrup or cheeree, compared with a sparrow; the texts used here do not assign it to one sex.",
+      "description": "A brief cheep, chirrup or cheeree, compared with a sparrow.",
       "recordings": [
         {
           "key": "xeno-canto/XC126286",

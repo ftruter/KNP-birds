@@ -167,13 +167,13 @@
     {
       "sex": "male",
       "type": "call",
-      "description": "Wikipedia says the scream has two pitches and that the higher pitch is the female’s, so the lower pitch is the male’s. The only grade A cut labelled male, XC561502, is typed song, and the recordist describes a pair inspecting a nest hole, so it was not used.",
+      "description": "Wikipedia says the scream has two pitches and that the higher pitch is the female’s, so the lower pitch is the male’s.",
       "recordings": []
     },
     {
       "sex": "female",
       "type": "call",
-      "description": "The higher of the two scream pitches. The catalogue cut is labelled as an adult female calling from the nest. Grade B, Russia, the breeding range.",
+      "description": "The higher of the two scream pitches.",
       "recordings": [
         {
           "key": "xeno-canto/XC269740",
@@ -190,7 +190,7 @@
     {
       "sex": "any",
       "type": "call",
-      "description": "A loud two-pitch scream, often from a screaming party. This grade A cut is from Sweden, the breeding range, and the filename uses the Swedish name tornseglare. No playable South African call was in the catalogue. It is not labelled by sex.",
+      "description": "A loud two-pitch scream, often from a screaming party.",
       "recordings": [
         {
           "key": "xeno-canto/XC27236",

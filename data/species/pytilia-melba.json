@@ -201,7 +201,7 @@
     {
       "sex": "any",
       "type": "call",
-      "description": "A single low wick. It also has a plaintive whistle and a short song, which were not given separate files. Grade A call from the North West. The filename is 9 GW Pytilia.mp3.",
+      "description": "A single low wick. It also has a plaintive whistle and a short song.",
       "recordings": [
         {
           "key": "xeno-canto/XC512189",

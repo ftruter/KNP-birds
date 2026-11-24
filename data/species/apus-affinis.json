@@ -184,7 +184,7 @@
     {
       "sex": "any",
       "type": "call",
-      "description": "A high twittering or chittering scream from the flock in flight. The texts do not separate the sexes. Grade A, North West, not labelled by sex.",
+      "description": "A high twittering or chittering scream from the flock in flight.",
       "recordings": [
         {
           "key": "xeno-canto/XC494123",

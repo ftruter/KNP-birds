@@ -194,7 +194,7 @@
     {
       "sex": "male",
       "type": "call",
-      "description": "No call was described in the Wikipedia or SABAP1 texts consulted. The file is a grade A call from Mutinondo, Zambia, and the filename says it is a male flight call.",
+      "description": "",
       "recordings": [
         {
           "key": "xeno-canto/XC682094",

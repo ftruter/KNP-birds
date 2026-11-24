@@ -429,13 +429,12 @@ export const diffCalls = (calls) => {
   const male = list.filter((call) => call?.sex === 'male')
   const female = list.filter((call) => call?.sex === 'female')
   let status = 'no-visible-difference'
-  let notice = NO_VISIBLE_DIFFERENCE
+  let notice = null
   if (list.length === 0) {
     status = 'not-described'
     notice = 'Calls are not described.'
   } else if (male.length > 0 || female.length > 0) {
     status = 'differs'
-    notice = null
   }
   return {
     id: 'calls',
