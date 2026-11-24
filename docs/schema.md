@@ -106,13 +106,13 @@ A more specific variant overrides `any` only where it sets a non-null mark. Null
 The page does not store comparison prose. It diffs the variants.
 
 1. **Chick and juvenile vs adult.** Marks are compared across ages. A mark that already differs inside one age (for example male and female throats) is left out of the age table. Immature birds get their own column when a variant exists.
-2. **Winter vs summer plumage.** Breeding is compared with non-breeding. A `season: "any"` variant applies to both, so identical values become "No visible difference".
+2. **Winter vs summer plumage.** Breeding is compared with non-breeding. A `season: "any"` variant applies to both.
 3. **Male vs female.** Same rule, with `sex: "any"` applying to both.
 4. **In flight, above vs below.** `wings.above` is compared with `wings.below` on the best-described age (adult first). Optional `viewNotes` tagged `flight-above` and `flight-below` are shown with that diff. These are not extra variants.
 5. **Perched or walking, front vs back vs side.** Optional notes tagged `perched-front`, `perched-back`, and `perched-side`. Photographs use the same tags.
-6. **Calls, males vs females.** The `calls` array. Entries with `sex: "any"` are shared. When only shared calls exist, the page says "No visible difference". The call text itself says when the sexes sound alike.
+6. **Calls, males vs females.** The `calls` array. Entries with `sex: "any"` are shared. When only shared calls exist, the section still lists them and says "No visible difference". The call text itself says when the sexes sound alike. When no call is recorded, the section is omitted.
 
-"No visible difference" is used only when both sides are described and no recorded mark differs. A side with no variant is "not described", which is not the same claim.
+A comparison section is rendered only when it has something to report: a mark that differs, a view note, or a recorded call. "No visible difference" appears only inside a section that is already shown for a note or a call, and only when both sides are described and no recorded mark differs. A comparison whose only text would be that notice, or that the sides cannot be compared because one side is missing, is left off the page.
 
 ### View notes and images
 
@@ -183,7 +183,7 @@ The page renders a range (`low–high`, `at least low`, or `up to high`) with a 
 
 A stub has the scientific name, English and Afrikaans names, the family slug, and `sampleData: true`. `variants`, `viewNotes`, `calls`, and `images` are empty arrays. `status` and `size` are omitted, because a placeholder resident status or a made-up length would be a false claim. `population` may still carry a cited estimate. The JSON Schema used to require `status`, `size`, and at least one variant. Those three constraints are relaxed so an unpublished species still validates. Calls, view notes, and images were already allowed to be empty.
 
-The page says "The details for this species have not been published yet." It does not render the photograph block or the six comparison sections, which would otherwise be empty or would say "No visible difference" with nothing recorded. It omits the Afrikaans line when `commonNames.af` is absent. The population section still shows a cited estimate, or says that no numeric estimate has been entered.
+The page says "The details for this species have not been published yet." It does not render the photograph block or the comparison sections. A published page also omits any comparison that has nothing to report. It omits the Afrikaans line when `commonNames.af` is absent. The population section still shows a cited estimate, or says that no numeric estimate has been entered.
 
 ## Family
 

@@ -1,6 +1,10 @@
 import assert from 'node:assert/strict'
 import { test } from 'node:test'
-import { diffSpecies } from '../src/diff.js'
+import {
+  comparisonHasContent,
+  diffSpecies,
+  visibleComparisons,
+} from '../src/diff.js'
 import { marksEqual } from '../src/marks.js'
 import { readJson } from './helpers.js'
 
@@ -34,6 +38,10 @@ test('lilac-breasted roller diffs', async () => {
   assert.equal(perched.status, 'differs')
   assert.equal(calls.status, 'no-visible-difference')
   assert.match(calls.shared[0].description, /harsh rattling/)
+  assert.deepEqual(
+    visibleComparisons(doc).map((section) => section.id),
+    ['age', 'flight', 'perched', 'calls'],
+  )
 })
 
 test('african fish eagle flight and age diffs', async () => {
@@ -74,5 +82,66 @@ test('southern ground hornbill sex diff is the throat only', async () => {
   assert.deepEqual(face.cells.Juvenile.names, ['yellow'])
   assert.equal(flight.status, 'no-visible-difference')
   assert.match(flight.sharedNote, /white patch/)
+  assert.equal(comparisonHasContent(flight), true)
   assert.equal(perched.status, 'differs')
+})
+
+test('a placeholder notice is not content, and a note or a call is', () => {
+  assert.equal(
+    comparisonHasContent({
+      id: 'season',
+      notice: 'No visible difference',
+      rows: [],
+      notes: [],
+      sharedNote: '',
+    }),
+    false,
+  )
+  assert.equal(
+    comparisonHasContent({
+      id: 'age',
+      notice: 'Only one age is described, so the ages cannot be compared.',
+      rows: [],
+    }),
+    false,
+  )
+  assert.equal(
+    comparisonHasContent({
+      id: 'flight',
+      rows: [{ mark: 'Wings' }],
+      notes: [],
+      sharedNote: '',
+    }),
+    true,
+  )
+  assert.equal(
+    comparisonHasContent({
+      id: 'perched',
+      rows: [],
+      notes: [{ label: 'Front', text: 'Upright.' }],
+      sharedNote: '',
+    }),
+    true,
+  )
+  assert.equal(
+    comparisonHasContent({
+      id: 'calls',
+      shared: [{ description: 'A harsh rattle.' }],
+    }),
+    true,
+  )
+  assert.equal(
+    comparisonHasContent({
+      id: 'calls',
+      shared: [{ description: '  ', recordings: [] }],
+    }),
+    false,
+  )
+  assert.equal(
+    comparisonHasContent({
+      id: 'calls',
+      shared: [{ description: '', recordings: [{ key: 'call.mp3' }] }],
+    }),
+    true,
+  )
 })

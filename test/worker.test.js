@@ -234,6 +234,12 @@ test('the Thrush Nightingale renders as a published species in html, markdown, a
     /The details for this species have not been published yet/,
   )
   assert.match(htmlBody, /Telling it apart/)
+  assert.doesNotMatch(htmlBody, /Only one age is described/)
+  assert.doesNotMatch(htmlBody, /Winter \(non-breeding\) vs summer/)
+  assert.doesNotMatch(
+    htmlBody,
+    /Wing colour from above and below is not described/,
+  )
   assert.match(
     htmlBody,
     /<script type="module" defer src="\/app\.js\?v=[0-9a-f]+"><\/script>/,
