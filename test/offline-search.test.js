@@ -82,6 +82,19 @@ test('offline search matches English, Afrikaans and Latin names', () => {
   assert.ok(family.unsaved >= 1)
 })
 
+test('offline search keeps the query on a species link', () => {
+  const found = api.searchSavedNames(species, families, 'rollers', saved)
+  const html = api.offlineSearchDocument({
+    query: 'rollers',
+    found,
+    assets: {},
+    paths: saved,
+  })
+  assert.match(html, /href="\/species\/coracias-caudatus\?q=rollers"/)
+  assert.match(html, /href="\/family\/coraciidae"/)
+  assert.doesNotMatch(html, /\/family\/coraciidae\?/)
+})
+
 test('offline search links only to pages saved on the device', () => {
   const found = api.searchSavedNames(species, families, 'bee-eater', saved)
   assert.equal(found.total, 0)
@@ -101,6 +114,19 @@ test('offline search links only to pages saved on the device', () => {
   assert.match(html, /href="\/style.css\?v=abc"/)
   assert.match(html, /class="site-header"/)
   assert.match(html, /data-offline="search"/)
+})
+
+test('offline search results stay text cards', () => {
+  const found = api.searchSavedNames(species, families, 'lilac-breasted', saved)
+  const html = api.offlineSearchDocument({
+    query: 'lilac-breasted',
+    found,
+    assets: {},
+    paths: saved,
+  })
+  assert.match(html, /class="search-results"/)
+  assert.match(html, /Lilac-breasted Roller/)
+  assert.doesNotMatch(html, /<img|<audio|search-photo|search-play/)
 })
 
 test('the offline search page escapes the query', () => {

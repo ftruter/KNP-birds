@@ -316,13 +316,19 @@ const offlineNextSteps = (paths, hasIndex) => {
   return steps
 }
 
-const resultHtml = (result) => {
+const resultHref = (result, query) => {
+  if (!query || result.kind !== 'species') return result.path
+  // The species page reads q to offer a way back here. A family page does not.
+  return `${result.path}?${new URLSearchParams({ q: query })}`
+}
+
+const resultHtml = (result, query) => {
   const af = result.af
     ? ` · <span class="afrikaans">${escapeHtml(result.af)}</span>`
     : ''
   return `<li class="search-result">
 <p class="kicker">${result.kind === 'family' ? 'Family' : 'Species'}</p>
-<h3><a href="${escapeHtml(result.path)}">${escapeHtml(result.en)}</a></h3>
+<h3><a href="${escapeHtml(resultHref(result, query))}">${escapeHtml(result.en)}</a></h3>
 <p class="search-names"><span class="latin">${escapeHtml(result.scientificName)}</span>${af}</p>
 </li>`
 }
@@ -371,7 +377,7 @@ ${note}
 <h2 id="search-count">${count}</h2>
 ${more}
 <ol class="search-results" aria-labelledby="search-count">
-${found.results.map(resultHtml).join('\n')}
+${found.results.map((result) => resultHtml(result, query)).join('\n')}
 </ol>
 ${rest}`
 }
@@ -569,13 +575,20 @@ const offlineSearchResponse = async (url) => {
 
 const fresh = async (event) => {
   const { request } = event
+  const url = new URL(request.url)
   const exact = await saved(request.url)
-  const copy = exact ?? (await saved(request.url, true))
+  // A search is a different page for every query. Matching loosely would
+  // answer one search with a different one that happens to be saved.
+  const copy =
+    exact ??
+    (url.pathname === '/search' ? null : await saved(request.url, true))
   const network = fetch(request).then(async (response) => {
     // Only what the page script saved is kept up to date, so the caches do
-    // not grow with every search or sort a visitor makes.
+    // not grow with every search or sort a visitor makes. The one search the
+    // page script keeps for the way back stays in its own cache.
     if (
       exact &&
+      url.pathname !== '/search' &&
       response.status === 200 &&
       response.type === 'basic' &&
       !response.redirected
@@ -591,6 +604,8 @@ const fresh = async (event) => {
     } catch (error) {
       if (request.mode !== 'navigate') throw error
       const url = new URL(request.url)
+      // A search already opened is served from its saved copy, above. Any
+      // other query is answered from the name lists saved on the device.
       return url.pathname === '/search' || url.pathname === '/search/'
         ? offlineSearchResponse(url)
         : noSignalPage()

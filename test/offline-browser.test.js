@@ -489,7 +489,9 @@ each(
     assert.match(await page.locator('#search-count').innerText(), /result/)
     assert.equal(
       await page
-        .locator('.search-results a[href="/species/coracias-caudatus"]')
+        .locator(
+          '.search-results a[href="/species/coracias-caudatus?q=lilac-breasted"]',
+        )
         .count(),
       1,
     )
@@ -561,9 +563,13 @@ each(
       'search',
     )
     await page
-      .locator('.search-results a[href="/species/coracias-caudatus"]')
+      .locator('.search-results a[href^="/species/coracias-caudatus?q="]')
       .click()
     assert.match(await page.locator('h1').innerText(), /Lilac-breasted Roller/)
+    assert.match(
+      await page.locator('[data-search-crumb]').getAttribute('href'),
+      /^\/search\?q=Gewone(\+|%20)Troupant$/,
+    )
     await page.goto(`${site.origin}/search?q=bee-eater`)
     assert.equal(
       await page.locator('a[href="/species/merops-apiaster"]').count(),
