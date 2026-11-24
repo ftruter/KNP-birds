@@ -463,3 +463,28 @@ export const diffSpecies = (doc) => {
     diffCalls(doc?.calls),
   ]
 }
+
+const callHasContent = (call) =>
+  noteText({ note: call?.description }) !== '' ||
+  (Array.isArray(call?.recordings) && call.recordings.length > 0)
+
+/**
+ * A comparison is worth a heading only when a mark differs, a view note
+ * says something, or a call is recorded. A notice such as "No visible
+ * difference" or "cannot be compared", on its own, is not.
+ */
+export const comparisonHasContent = (section) => {
+  if (!section) return false
+  if (section.rows?.length > 0) return true
+  if ((section.notes || []).some((note) => noteText({ note: note?.text })))
+    return true
+  if (noteText({ note: section.sharedNote })) return true
+  for (const list of [section.shared, section.male, section.female]) {
+    if (!Array.isArray(list)) continue
+    if (list.some(callHasContent)) return true
+  }
+  return false
+}
+
+export const visibleComparisons = (doc) =>
+  diffSpecies(doc).filter(comparisonHasContent)

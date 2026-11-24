@@ -1,5 +1,5 @@
 import { publicCallDescription } from './call-text.js'
-import { diffSpecies } from './diff.js'
+import { visibleComparisons } from './diff.js'
 import { recordingNotes } from './recordings.js'
 import { creditHtml, creditModel } from './credit.js'
 import { escapeHtml, inlineText, safeHttpUrl } from './escape.js'
@@ -9,6 +9,7 @@ import {
   FAMILY_TOTAL_SEASONS,
   residencyGapText,
   CALL_TYPE,
+  readerCallText,
   SAMPLE_NOTICE,
   afrikaansName,
   EMPTY_FAMILY_SPECIES,
@@ -178,7 +179,7 @@ ${familyIndexHtml(familiesIndex)}
 </ol>
 <h2>About this guide</h2>
 <p>An open field guide to the birds of Kruger National Park and neighbouring Marloth Park. The full list is resident species, plus summer migrants. Rare vagrants are left out. ${escapeHtml(catalogSentence(species.length, families.length, speciesIndex, familiesIndex))}</p>
-<p>Age, season and sex are worked out by comparing structured field marks. A mark left blank is unknown, not a claim that the part has no colour. Flight and perched views use notes and photographs. Where nothing differs, the page says so.</p>
+<p>Age, season and sex are worked out by comparing structured field marks. A mark left blank is unknown, not a claim that the part has no colour. Flight and perched views use notes and photographs. A comparison with nothing to report is left off the page.</p>
 <details class="more"><summary>About the population figures</summary>
 <p>${escapeHtml(HOME_POPULATION_INTRO)}</p>
 </details>
@@ -359,7 +360,7 @@ export const renderSpeciesHtml = ({
   familyName = '',
 }) => {
   const published = speciesDetailsPublished(doc)
-  const comparisons = published ? diffSpecies(doc) : []
+  const comparisons = published ? visibleComparisons(doc) : []
   const population = populationModel(doc.population, format)
   const images = Array.isArray(doc.images) ? doc.images : []
   const status = doc.status ? ` · ${escapeHtml(statusLabel(doc.status))}` : ''
@@ -453,7 +454,8 @@ const publishedSpeciesHtml = (
   imagesAvailable,
   colourMap,
   population,
-) => `<div class="species-lead">
+) => `${callDock(comparisons)}
+<div class="species-lead">
 ${figures(doc, images.slice(0, 1), imagesAvailable, colourMap, true)}
 <div class="species-lead-text">
 ${paragraphs(doc.summary)}
@@ -468,8 +470,12 @@ ${populationRowHtml(population)}
 </dl>
 </div>
 </div>
-<h2>Telling it apart</h2>
-${comparisons.map((section) => comparisonSection(section, colourMap)).join('\n')}
+${
+  comparisons.length
+    ? `<h2>Telling it apart</h2>
+${comparisons.map((section) => comparisonSection(section, colourMap)).join('\n')}`
+    : ''
+}
 ${similarHtml(doc)}
 ${
   images.length > 1
@@ -494,8 +500,9 @@ const sizeFactsHtml = (doc) =>
 
 const comparisonSection = (section, colourMap) => {
   const context = section.rows?.find((row) => row.context)?.context
-  return `<section class="comparison" id="${escapeHtml(section.id)}" aria-labelledby="${escapeHtml(section.id)}-title">
-<h3 id="${escapeHtml(section.id)}-title">${escapeHtml(section.title)}</h3>
+  const calls = section.id === 'calls'
+  return `<section class="comparison${calls ? ' comparison-calls' : ''}" id="${escapeHtml(section.id)}" aria-labelledby="${escapeHtml(section.id)}-title">
+<h3 id="${escapeHtml(section.id)}-title">${calls ? CALL_SECTION_ICON : ''}${escapeHtml(section.title)}</h3>
 ${section.notice ? `<p class="mark">${escapeHtml(section.notice)}</p>` : ''}
 ${context ? `<p>Compared on ${escapeHtml(context)} plumage.</p>` : ''}
 ${section.rows?.length ? markTable(section, colourMap) : ''}
@@ -541,51 +548,133 @@ const callsHtml = (section) => {
       ? shared
       : `${shared}
 <h4>Males</h4>
-${callList(section.male)}
+${callList(section.male, 'Male')}
 <h4>Females</h4>
-${callList(section.female)}`
+${callList(section.female, 'Female')}`
 }
 
 const callProse = (call) => {
-  const prose = publicCallDescription(call?.description || '')
+  const prose = readerCallText(publicCallDescription(call?.description || ''))
   return prose ? ` ${escapeHtml(prose)}` : ''
 }
 
-const callList = (calls) =>
+const callList = (calls, who = '') =>
   !calls?.length
     ? '<p>None recorded separately.</p>'
     : `<ul class="call-list">
-${calls.map((call) => `<li><span class="call-type">${escapeHtml(CALL_TYPE[call.type] || call.type || 'Call')}</span>${callProse(call)}${recordingsHtml(call.recordings)}</li>`).join('\n')}
+${calls.map((call) => `<li class="call-item">${recordingsHtml(call, who)}<p class="call-copy"><span class="call-type">${escapeHtml(CALL_TYPE[call.type] || call.type || 'Call')}</span>${callProse(call)}</p></li>`).join('\n')}
 </ul>`
 
-const recordingsHtml = (recordings) =>
-  !Array.isArray(recordings) || recordings.length === 0
+/**
+ * Where a recording loads from, and whether the page may play it. A
+ * no-derivatives file can still be credited without a player.
+ */
+const recordingMedia = (recording) => {
+  const hosted = recording?.hosted !== false && recording?.key
+  const fileUrl = safeHttpUrl(recording?.fileUrl)
+  const displayable = !licenceForbidsDerivatives(recording?.license)
+  const src = hosted
+    ? objectPath('audio', recording.key)
+    : fileUrl && displayable
+      ? fileUrl
+      : ''
+  return { src, hosted: Boolean(hosted), playable: Boolean(src && displayable) }
+}
+
+const playName = (call, who) => {
+  const known = CALL_TYPE[call?.type]
+  const type = !known || known === 'Other' ? 'call' : known.toLowerCase()
+  return `Play ${who ? `${who.toLowerCase()} ` : ''}${type}`
+}
+
+const CALL_PLAY_ICON =
+  '<svg class="call-play-glyph call-play-glyph-play" viewBox="0 0 24 24" width="32" height="32" aria-hidden="true" focusable="false"><path fill="currentColor" d="M8 5.2v13.6L19 12z"/></svg>'
+
+const CALL_STOP_ICON =
+  '<svg class="call-play-glyph call-play-glyph-stop" viewBox="0 0 24 24" width="32" height="32" aria-hidden="true" focusable="false"><rect fill="currentColor" x="6" y="6" width="12" height="12" rx="1.5"/></svg>'
+
+const CALL_SECTION_ICON =
+  '<svg class="call-section-icon" viewBox="0 0 24 24" width="32" height="32" aria-hidden="true" focusable="false"><path fill="currentColor" d="M3 9.5v5h3.5L12 19.5v-15L6.5 9.5H3zm13.2 2.5a4 4 0 0 0-2.2-3.56v7.12A4 4 0 0 0 16.2 12zM13.5 4.1v2.08a6.5 6.5 0 0 1 0 11.64v2.08a8.5 8.5 0 0 0 0-15.8z"/></svg>'
+
+/**
+ * A large play/stop control. The button stays hidden until the page script
+ * wires it up; with the script off the browser's own audio control remains.
+ */
+const playerHtml = ({ call, src, who }) => {
+  const play = playName(call, who)
+  const stop = play.replace(/^Play/, 'Stop')
+  return `<section class="call-player">
+<button type="button" class="call-play" hidden aria-pressed="false">
+${CALL_PLAY_ICON}${CALL_STOP_ICON}<span class="call-play-label" data-play="${escapeHtml(play)}" data-stop="${escapeHtml(stop)}">${escapeHtml(play)}</span>
+<span class="call-play-meter" aria-hidden="true"><span class="call-play-meter-bar"></span></span>
+</button>
+<audio controls preload="none" src="${escapeHtml(src)}"></audio>
+<p class="call-play-status" role="status"></p>
+</section>`
+}
+
+const callGroups = (section) => [
+  ['', section?.shared],
+  ['Male', section?.male],
+  ['Female', section?.female],
+]
+
+const playableCalls = (section) => {
+  const found = []
+  for (const [who, calls] of callGroups(section)) {
+    for (const call of calls || []) {
+      for (const recording of call.recordings || []) {
+        const media = recordingMedia(recording)
+        if (media.playable) found.push({ call, recording, src: media.src, who })
+      }
+    }
+  }
+  return found
+}
+
+/**
+ * The call control that stays on screen. It plays the first recording and
+ * links to the calls section, so a phone does not have to scroll past the
+ * comparison cards to reach it.
+ */
+const callDock = (comparisons) => {
+  const section = (comparisons || []).find((item) => item.id === 'calls')
+  const playable = playableCalls(section)
+  if (!playable.length) return ''
+  const more =
+    playable.length > 1
+      ? '<a class="call-dock-more" href="#calls">All calls</a>'
+      : '<a class="call-dock-more" href="#calls">Notes</a>'
+  return `<div class="call-dock">
+<div class="call-dock-bar">
+${playerHtml(playable[0])}
+${more}
+</div>
+</div>`
+}
+
+const recordingsHtml = (call, who = '') => {
+  const recordings = call?.recordings
+  return !Array.isArray(recordings) || recordings.length === 0
     ? ''
     : recordings
         .map((recording) => {
-          const hosted = recording?.hosted !== false && recording?.key
-          const fileUrl = safeHttpUrl(recording?.fileUrl)
-          const displayable = !licenceForbidsDerivatives(recording?.license)
-          const src = hosted
-            ? objectPath('audio', recording.key)
-            : fileUrl && displayable
-              ? fileUrl
-              : ''
-          const playable =
-            src && displayable
-              ? `<audio controls src="${escapeHtml(src)}"></audio>`
-              : ''
+          const media = recordingMedia(recording)
+          const playable = media.playable
+            ? playerHtml({ call, src: media.src, who })
+            : ''
           const ai = recording?.aiGenerated
-            ? ' <span class="ai-label">AI-generated recording</span>'
+            ? '<span class="ai-label">AI-generated recording</span>'
             : ''
           const credit = creditModel(
             recording,
             'recording',
-            src ? { src, onSite: Boolean(hosted) } : null,
+            media.src ? { src: media.src, onSite: media.hosted } : null,
           )
-          return `<div class="recording">${ai}${playable}${creditHtml(credit, src)}</div>`
+          return `<div class="recording">${ai}${playable}${creditHtml(credit, media.src)}</div>`
         })
         .join('')
+}
 
 const scientificFromSlug = (slug) => {
   const parts = String(slug || '').split('-')
@@ -1174,7 +1263,7 @@ export const layout = ({
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <meta name="color-scheme" content="light dark">
 <title>${escapeHtml(title)}</title>
 <meta name="description" content="${escapeHtml(description)}">

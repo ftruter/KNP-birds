@@ -80,7 +80,7 @@ test('text colours meet WCAG AA and the forbidden pairs are not used as text', (
   }
 })
 
-test('species HTML has the six comparisons, population, and no client script', async () => {
+test('species HTML keeps comparisons that differ, and drops empty ones', async () => {
   const doc = await readJson('data/species/coracias-caudatus.json')
   const vocab = await readJson('data/vocab/colours.json')
   const html = renderSpeciesHtml({
@@ -95,15 +95,21 @@ test('species HTML has the six comparisons, population, and no client script', a
   assert.match(html, /<h1>Lilac-breasted Roller<\/h1>/)
   for (const title of [
     'Chick and juvenile vs adult',
-    'Winter (non-breeding) vs summer (breeding) plumage',
-    'Male vs female',
     'In flight, from above vs from below',
     'Perched or walking, from the front, back and side',
     'Calls and songs, males vs females',
   ]) {
     assert.ok(html.includes(title), title)
   }
-  assert.match(html, /No visible difference/)
+  // Season and sex match on this species, so those sections are not rendered.
+  assert.doesNotMatch(html, /Winter \(non-breeding\) vs summer/)
+  assert.doesNotMatch(html, /Male vs female/)
+  assert.doesNotMatch(html, /cannot be compared/)
+  // The calls are real content, so the section stays. It lists the sound
+  // and does not add "No visible difference".
+  assert.match(html, /id="calls"/)
+  assert.match(html, /harsh rattling/)
+  assert.doesNotMatch(html, /id="calls"[\s\S]*No visible difference/)
   assert.match(html, /fill="#B07CC8"/)
   // The population is a row of the facts list: one figure in view, and the
   // range and the method behind it.
@@ -464,6 +470,82 @@ test('markdown and json-facing copy keep the population label', async () => {
   assert.match(markdown, /red \(#B4232C\)/)
   assert.match(markdown, /oomph/)
   assert.doesNotMatch(markdown, /Sample content, to be verified/)
+})
+
+test('placeholder comparisons are omitted, and a note or a call stays', async () => {
+  const doc = await readJson('data/species/luscinia-luscinia.json')
+  const html = renderSpeciesHtml({
+    origin: 'https://birds.truter.world',
+    doc,
+    colourMap: new Map(),
+    imagesAvailable: {},
+  })
+  assert.match(html, /<h2>Telling it apart<\/h2>/)
+  assert.match(html, /id="perched"/)
+  assert.match(html, /id="calls"/)
+  for (const id of ['age', 'season', 'sex', 'flight'])
+    assert.doesNotMatch(html, new RegExp(`id="${id}"`))
+  assert.doesNotMatch(html, /Only one age is described/)
+  assert.doesNotMatch(html, /cannot be compared/)
+  assert.doesNotMatch(html, /Winter \(non-breeding\) vs summer/)
+  assert.doesNotMatch(html, /Male vs female/)
+  assert.doesNotMatch(html, /Wing colour from above and below is not described/)
+  assert.match(html, /solemn song/)
+  assert.doesNotMatch(html, /No visible difference/)
+  assert.doesNotMatch(html, /not separated by sex/)
+  const markdown = renderSpeciesMarkdown({ doc, colourMap: new Map() })
+  assert.match(markdown, /## Telling it apart/)
+  assert.match(markdown, /### Perched or walking/)
+  assert.match(markdown, /### Calls and songs/)
+  assert.doesNotMatch(markdown, /Only one age is described/)
+  assert.doesNotMatch(markdown, /Winter \(non-breeding\) vs summer/)
+  assert.doesNotMatch(markdown, /### Male vs female/)
+  const hornbill = await readJson('data/species/bucorvus-leadbeateri.json')
+  const hornbillHtml = renderSpeciesHtml({
+    origin: 'https://birds.truter.world',
+    doc: hornbill,
+    colourMap: new Map(),
+    imagesAvailable: {},
+  })
+  assert.match(hornbillHtml, /id="age"/)
+  assert.match(hornbillHtml, /id="sex"/)
+  assert.match(hornbillHtml, /id="flight"/)
+  assert.match(hornbillHtml, /Black wings with a white patch in the primaries/)
+  assert.doesNotMatch(hornbillHtml, /Winter \(non-breeding\) vs summer/)
+})
+
+test('a published species with only placeholder comparisons has no telling-it-apart heading', async () => {
+  const doc = {
+    slug: 'example-example',
+    scientificName: 'Example example',
+    commonNames: { en: 'Example Bird' },
+    family: 'example',
+    status: 'resident',
+    summary: 'One adult plumage is described.',
+    variants: [{ age: 'adult', sex: 'any', season: 'any', marks: {} }],
+    viewNotes: [],
+    calls: [],
+    images: [],
+    sources: [],
+  }
+  const html = renderSpeciesHtml({
+    origin: 'https://birds.truter.world',
+    doc,
+    colourMap: new Map(),
+    imagesAvailable: {},
+  })
+  assert.match(html, /<h1>Example Bird<\/h1>/)
+  assert.doesNotMatch(html, /Telling it apart/)
+  assert.doesNotMatch(html, /No visible difference/)
+  assert.doesNotMatch(html, /cannot be compared/)
+  assert.doesNotMatch(html, /not described/)
+  assert.doesNotMatch(html, /class="comparison"/)
+  const markdown = renderSpeciesMarkdown({ doc, colourMap: new Map() })
+  assert.match(markdown, /## Photographs/)
+  assert.match(markdown, /## Population/)
+  assert.doesNotMatch(markdown, /Telling it apart/)
+  assert.doesNotMatch(markdown, /No visible difference/)
+  assert.doesNotMatch(markdown, /cannot be compared/)
 })
 
 test('a species stub states that details are unpublished and skips empty sections', async () => {

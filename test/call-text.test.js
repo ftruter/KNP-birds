@@ -88,10 +88,10 @@ test('the calls section states the thick-knee sound once', async () => {
     colourMap: new Map(),
     imagesAvailable: {},
   })
-  const section = html.slice(
-    html.indexOf('id="calls"'),
-    html.indexOf('</section>', html.indexOf('id="calls"')),
-  )
+  const fromCalls = html.slice(html.indexOf('id="calls"'))
+  const nextHeading = fromCalls.indexOf('<h2')
+  const section =
+    nextHeading === -1 ? fromCalls : fromCalls.slice(0, nextHeading)
   assert.match(section, /chwee-chwee/)
   assert.doesNotMatch(section, /No visible difference/)
   assert.doesNotMatch(section, /not separated by sex/)

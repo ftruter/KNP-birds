@@ -142,7 +142,7 @@
     {
       "sex": "any",
       "type": "call",
-      "description": "A querulous quirk and other similar sounds. It says Bee-eater and includes -3dB, and it does not name White-fronted.",
+      "description": "A querulous quirk and other similar sounds.",
       "recordings": [
         {
           "key": "xeno-canto/XC1149412",

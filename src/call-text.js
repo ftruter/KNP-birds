@@ -92,10 +92,18 @@ const isRecordingNote = (clause) => {
   return RECORDING.test(text) || PLACE_ONLY.test(text)
 }
 
+const FILENAME_FOLLOW =
+  /^(?:it says |it does not name |it includes )\b|\bis the (?:afrikaans|dutch|french|german|norwegian|portuguese|spanish|swedish) name\b/i
+
 const isCallNote = (clause) => {
   const text = bare(clause)
   if (!text) return true
-  return isRecordingNote(text) || SEX_GAP.test(text) || NO_VOICE.test(text)
+  return (
+    isRecordingNote(text) ||
+    SEX_GAP.test(text) ||
+    NO_VOICE.test(text) ||
+    FILENAME_FOLLOW.test(text)
+  )
 }
 
 const salvage = (sentence) => {

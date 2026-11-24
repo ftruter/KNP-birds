@@ -212,7 +212,7 @@
     {
       "sex": "any",
       "type": "call",
-      "description": "A loud, cheerful tseep-eep or tseeep. It does not name the bird and includes -3dB and split_comb.",
+      "description": "A loud, cheerful tseep-eep or tseeep.",
       "recordings": [
         {
           "key": "xeno-canto/XC1079741",
