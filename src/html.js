@@ -73,6 +73,7 @@ import {
   aiPrompt,
 } from './prompt.js'
 import { alternates, SEARCH_MAX, searchSuffix } from './route.js'
+import { searchSample } from './search.js'
 import { sitemapEntries } from './sitemap.js'
 import {
   breadcrumbNode,
@@ -1241,9 +1242,72 @@ const SNIPPET_LABEL = {
   populationNotes: 'Population notes',
 }
 
+const SEARCH_PLAY_ICON =
+  '<svg class="search-play-glyph search-play-glyph-play" viewBox="0 0 24 24" width="32" height="32" aria-hidden="true" focusable="false"><path fill="currentColor" d="M8 5.2v13.6L19 12z"/></svg>'
+
+const SEARCH_STOP_ICON =
+  '<svg class="search-play-glyph search-play-glyph-stop" viewBox="0 0 24 24" width="32" height="32" aria-hidden="true" focusable="false"><rect fill="currentColor" x="6" y="6" width="12" height="12" rx="1.5"/></svg>'
+
+/**
+ * The sample photograph. With no file, or once a file fails to load, the
+ * same drawn bird stands in the picture's place so the card keeps its shape.
+ * The button stays hidden until the script shows it; the drawing is what a
+ * reader sees until then when there is no photograph.
+ */
+const searchPhotoHtml = (result, image) => {
+  const missing =
+    result.kind === 'family'
+      ? 'No photograph for this family.'
+      : 'No photograph yet.'
+  const photo = image?.src
+    ? `<button type="button" class="zoom" aria-pressed="false" aria-label="Zoom photograph">
+<img draggable="false" src="${escapeHtml(image.src)}" alt="${escapeHtml(image.alt || '')}" loading="lazy" decoding="async">
+</button>`
+    : ''
+  const ai = image?.ai
+    ? '<span class="ai-label">AI-generated image</span> '
+    : ''
+  const credit = image?.credit
+    ? `<figcaption>${ai}${creditHtml(image.credit, image.src)}</figcaption>`
+    : ''
+  return `<figure class="plate search-photo${photo ? '' : ' is-missing'}">
+${photo}
+<div class="search-photo-fallback">
+${placeholderSvg()}
+<p>${escapeHtml(photo ? 'Photograph unavailable.' : missing)}</p>
+</div>
+${credit}
+</figure>`
+}
+
+/**
+ * The sample call. The button is hidden until the script connects it, and
+ * the audio element is the control when the script is off. `preload="none"`
+ * keeps the file from being fetched until someone plays it.
+ */
+const searchCallHtml = (result, call) => {
+  if (!call?.src) return ''
+  const play = call.play || 'Play call'
+  const stop = play.replace(/^Play/, 'Stop')
+  const name = result.englishName || result.scientificName || 'this bird'
+  const ai = call.ai
+    ? '<span class="ai-label">AI-generated recording</span>'
+    : ''
+  return `<div class="search-call">
+<button type="button" class="search-play" hidden aria-pressed="false">
+${SEARCH_PLAY_ICON}${SEARCH_STOP_ICON}<span class="search-play-label" data-play="${escapeHtml(play)}" data-stop="${escapeHtml(stop)}">${escapeHtml(play)}</span><span class="visually-hidden">, ${escapeHtml(name)}</span>
+<span class="search-play-meter" aria-hidden="true"><span class="search-play-meter-bar"></span></span>
+</button>
+<audio controls preload="none" src="${escapeHtml(call.src)}"></audio>
+<p class="search-play-status" role="status"></p>
+${ai}${call.credit ? creditHtml(call.credit, call.src) : ''}
+</div>`
+}
+
 const resultHtml = (result) => {
   const path = new URL(result.pages.html).pathname
   const snippets = result.snippets.filter((item) => SNIPPET_LABEL[item.field])
+  const sample = searchSample(result)
   return `<li class="search-result">
 <p class="kicker">${result.kind === 'family' ? 'Family' : 'Species'}</p>
 <h3><a href="${escapeHtml(path)}">${escapeHtml(result.englishName || result.scientificName)}</a></h3>
@@ -1258,6 +1322,7 @@ ${
         .join('')}</dl>`
     : ''
 }
+${searchPhotoHtml(result, sample?.image)}${searchCallHtml(result, sample?.call)}
 </li>`
 }
 
