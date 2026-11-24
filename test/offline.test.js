@@ -169,6 +169,8 @@ test('the six options are listed in order with sizes added up from the files', a
     ],
   )
   assert.equal(manifest.pages.length, 9 + 86 + 493)
+  assert.ok(manifest.shell.includes('/species.json'))
+  assert.ok(manifest.shell.includes('/families.json'))
   assert.ok(manifest.pages.includes('/species/coracias-caudatus'))
   assert.ok(manifest.pages.includes('/family/coraciidae'))
   for (const url of [...manifest.shell, '/'])

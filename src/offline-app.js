@@ -173,6 +173,10 @@ export const offlineManifest = (doc, version = '') => {
     identifySrc('/identify-photo.js'),
     `${IDENTIFY_PHOTO_PATH}.json`,
     `${IDENTIFY_SOUND_PATH}.json`,
+    // Name lists for /search when the network fails. The service worker
+    // matches English, Afrikaans and Latin names and links to saved pages.
+    '/species.json',
+    '/families.json',
     WEB_MANIFEST_PATH,
     `/favicon.ico?v=${iconVersion}`,
     `/favicon.svg?v=${iconVersion}`,
