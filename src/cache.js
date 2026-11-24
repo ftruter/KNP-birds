@@ -1,6 +1,11 @@
 import { INDEXNOW_KEY_PATH } from './indexnow.js'
 import { resolveLocale } from './numbers.js'
-import { ICON_PATHS, SEARCH_PATH, searchQuery } from './route.js'
+import {
+  ICON_PATHS,
+  SEARCH_PATH,
+  searchQuery,
+  speciesSearchQuery,
+} from './route.js'
 
 export const PAGE_CACHE =
   'public, max-age=300, s-maxage=3600, stale-while-revalidate=86400'
@@ -85,9 +90,11 @@ export const cacheRequest = (url, version, acceptLanguage) => {
     source.pathname.length > 1 && source.pathname.endsWith('/')
       ? source.pathname.slice(0, -1)
       : source.pathname
+  // A species page opened from search renders a trail back to those results,
+  // so that query is part of its cache key. The species index is not.
   const query = isSearchPath(path)
     ? searchQuery(source.searchParams.get('q'))
-    : ''
+    : speciesSearchQuery(path, source.searchParams.get('q'))
   source.search = ''
   source.hash = ''
   if (version) source.searchParams.set('v', version)

@@ -37,6 +37,16 @@ export const searchQuery = (raw) =>
 export const searchSuffix = (query) =>
   query ? `?${new URLSearchParams({ q: query })}` : ''
 
+const SPECIES_PATH = /^\/species\/[a-z0-9]+(?:-[a-z0-9]+)*$/
+
+/**
+ * The search a species HTML page was opened from, or '' for any other path.
+ * The species index and the markdown and JSON forms ignore `q`, so a query
+ * on those addresses does not change what is cached or shown.
+ */
+export const speciesSearchQuery = (pathname, raw) =>
+  SPECIES_PATH.test(pathname) ? searchQuery(raw) : ''
+
 export const alternates = (pathname, suffix = '') =>
   pathname === '/'
     ? { html: '/', md: '/.md', json: '/.json' }

@@ -112,13 +112,20 @@ const newestPages = async () => {
 
 const fresh = async (event) => {
   const { request } = event
+  const url = new URL(request.url)
   const exact = await saved(request.url)
-  const copy = exact ?? (await saved(request.url, true))
+  // A search is a different page for every query. Matching loosely would
+  // answer one search with a different one that happens to be saved.
+  const copy =
+    exact ??
+    (url.pathname === '/search' ? null : await saved(request.url, true))
   const network = fetch(request).then(async (response) => {
     // Only what the page script saved is kept up to date, so the caches do
-    // not grow with every search or sort a visitor makes.
+    // not grow with every search or sort a visitor makes. The one search the
+    // page script keeps for the way back stays in its own cache.
     if (
       exact &&
+      url.pathname !== '/search' &&
       response.status === 200 &&
       response.type === 'basic' &&
       !response.redirected
