@@ -103,6 +103,19 @@ test('offline search links only to pages saved on the device', () => {
   assert.match(html, /data-offline="search"/)
 })
 
+test('offline search results stay text cards', () => {
+  const found = api.searchSavedNames(species, families, 'lilac-breasted', saved)
+  const html = api.offlineSearchDocument({
+    query: 'lilac-breasted',
+    found,
+    assets: {},
+    paths: saved,
+  })
+  assert.match(html, /class="search-results"/)
+  assert.match(html, /Lilac-breasted Roller/)
+  assert.doesNotMatch(html, /<img|<audio|search-photo|search-play/)
+})
+
 test('the offline search page escapes the query', () => {
   const found = api.searchSavedNames(species, families, '<script>', saved)
   const html = api.offlineSearchDocument({
