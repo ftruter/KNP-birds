@@ -99,7 +99,7 @@
     {
       "sex": "any",
       "type": "call",
-      "description": "The call is 'HU-hu-hu' or 'HU-hu', with the emphasis on the first syllable. The alarm is 'wak-wak'. No grade A recording was found. The selected file is a grade B call from the Eastern Cape. The filename is XC808452-Cape-Eagle-owl-brilliant.mp3.",
+      "description": "The call is 'HU-hu-hu' or 'HU-hu', with the emphasis on the first syllable. The alarm is 'wak-wak'.",
       "recordings": [
         {
           "key": "xeno-canto/XC808452",

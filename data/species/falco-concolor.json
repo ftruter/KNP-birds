@@ -192,7 +192,7 @@
     {
       "sex": "any",
       "type": "call",
-      "description": "The Wikipedia text used here does not describe the voice. Grade A call from Duba, Saudi Arabia. The filename names Sooty Falcon.",
+      "description": "",
       "recordings": [
         {
           "key": "xeno-canto/XC739067",

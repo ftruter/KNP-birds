@@ -177,7 +177,7 @@
     {
       "sex": "male",
       "type": "call",
-      "description": "A husky wheeze. Newman says both sexes extend the head and neck when calling. Wikipedia also describes a hoarse, subdued quack and a breathy sequence. The catalogue cut is labelled male. Grade A, South Africa. Free State, not Kruger. Other species can be heard in the background.",
+      "description": "A husky wheeze. Newman says both sexes extend the head and neck when calling. Wikipedia also describes a hoarse, subdued quack and a breathy sequence.",
       "recordings": [
         {
           "key": "xeno-canto/XC909530",
@@ -194,7 +194,7 @@
     {
       "sex": "female",
       "type": "call",
-      "description": "A harsh, nasal, high-pitched hur-hur-hur-hur. The catalogue cut is labelled female. Grade A, South Africa. Cape Town, not Kruger. The recordist lists adults and juveniles.",
+      "description": "A harsh, nasal, high-pitched hur-hur-hur-hur.",
       "recordings": [
         {
           "key": "xeno-canto/XC1183527",
@@ -211,7 +211,7 @@
     {
       "sex": "any",
       "type": "call",
-      "description": "Newman separates the male wheeze from the female hur-hur-hur-hur. The recordist says a male and a female are calling together; the cut is not labelled by sex. Grade A, from Kruger. Another grade A file from Kruger was not used because its filename says african goose.",
+      "description": "Newman separates the male wheeze from the female hur-hur-hur-hur.",
       "recordings": [
         {
           "key": "xeno-canto/XC489216",

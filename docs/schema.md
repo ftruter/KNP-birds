@@ -6,18 +6,18 @@ Colour names are not enumerated in the schema. They must match `vocab/colours`, 
 
 ## Keys and URLs
 
-| KV key | Page |
-| --- | --- |
-| `species/<slug>` | `/species/<slug>` |
-| `family/<slug>` | `/family/<slug>` |
-| `index/species` | `/species` |
-| `index/families` | `/families` |
-| `index/credits` | `/credits` |
-| `index/facts` | `/facts` |
-| `index/identify-sound` | `/identify/sound` |
-| `index/identify-photo` | `/identify/photo` |
-| `index/offline` | `/offline.json` (JSON only) |
-| `vocab/colours` | `/vocab/colours` |
+| KV key                 | Page                        |
+| ---------------------- | --------------------------- |
+| `species/<slug>`       | `/species/<slug>`           |
+| `family/<slug>`        | `/family/<slug>`            |
+| `index/species`        | `/species`                  |
+| `index/families`       | `/families`                 |
+| `index/credits`        | `/credits`                  |
+| `index/facts`          | `/facts`                    |
+| `index/identify-sound` | `/identify/sound`           |
+| `index/identify-photo` | `/identify/photo`           |
+| `index/offline`        | `/offline.json` (JSON only) |
+| `vocab/colours`        | `/vocab/colours`            |
 
 `<slug>` is the scientific name in lowercase, with spaces turned into hyphens (`Coracias caudatus` → `coracias-caudatus`).
 
@@ -29,29 +29,29 @@ No extension is HTML. `.md` is Markdown (`text/markdown; charset=utf-8`). `.json
 
 `kind` is `"species"`.
 
-| Field | Meaning |
-| --- | --- |
-| `slug`, `scientificName` | Identity. The slug matches the KV key. |
-| `commonNames.en` | English name. `commonNames.af` is optional Afrikaans. |
-| `family` | Family slug. |
-| `status` | `resident`, `intra-african-migrant`, or `palearctic-migrant`. `summer-migrant` remains valid for older documents. Omitted when it has not been published. Vagrants are not in the list. |
-| `size.lengthCm` | `{ "min", "max" }` in centimetres, bill tip to tail tip. |
-| `size.wingspanCm` | Optional. `{ "min", "max" }` in centimetres, wing tip to wing tip. |
-| `size.massG` | Optional. `{ "min", "max" }` in grams. Grams for every species, so that masses compare without converting. |
-| `size.note` | Optional. Says where each figure comes from, or what it covers (one sex, one subspecies). |
-| `flightless` | Optional. `true` for a bird that cannot fly. Omitted when not recorded: a missing field does not mean the bird flies. |
-| `distribution` | Optional. Where in the park the species is found. See below. |
-| `summary` | A short plain-language description. |
-| `sampleData` | `true` while the text is still a sample. The page says "Sample content, to be verified." `false` once the species text is sourced. |
-| `monthsPresent` | Optional. Months the species is present in Kruger, as integers `1`–`12`. All twelve means all year. |
-| `habitat` | Optional. One plain sentence on habitat in Kruger. |
-| `similar` | Optional. Other species and how to tell them apart. Each item is `{ slug, note }`. |
-| `sources` | Optional bibliography for the species text. Same shape as a population citation. Population sources stay on `population.sources`. |
-| `variants` | Plumage described as structured marks. An empty array means the marks have not been published. See below. |
-| `viewNotes` | Optional notes for flight and perched views. Not variants. A note may set `age`, `sex`, and `season` when the view differs by variant. Omitted, those three mean `any`. |
-| `calls` | Vocalisations. |
-| `images` | Photographs. May be empty. A file can live in the R2 bucket or, until an upload exists, only as metadata plus `fileUrl`. |
-| `population` | An approximate Kruger population estimate. See below. |
+| Field                    | Meaning                                                                                                                                                                                 |
+| ------------------------ | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `slug`, `scientificName` | Identity. The slug matches the KV key.                                                                                                                                                  |
+| `commonNames.en`         | English name. `commonNames.af` is optional Afrikaans.                                                                                                                                   |
+| `family`                 | Family slug.                                                                                                                                                                            |
+| `status`                 | `resident`, `intra-african-migrant`, or `palearctic-migrant`. `summer-migrant` remains valid for older documents. Omitted when it has not been published. Vagrants are not in the list. |
+| `size.lengthCm`          | `{ "min", "max" }` in centimetres, bill tip to tail tip.                                                                                                                                |
+| `size.wingspanCm`        | Optional. `{ "min", "max" }` in centimetres, wing tip to wing tip.                                                                                                                      |
+| `size.massG`             | Optional. `{ "min", "max" }` in grams. Grams for every species, so that masses compare without converting.                                                                              |
+| `size.note`              | Optional. Says where each figure comes from, or what it covers (one sex, one subspecies).                                                                                               |
+| `flightless`             | Optional. `true` for a bird that cannot fly. Omitted when not recorded: a missing field does not mean the bird flies.                                                                   |
+| `distribution`           | Optional. Where in the park the species is found. See below.                                                                                                                            |
+| `summary`                | A short plain-language description.                                                                                                                                                     |
+| `sampleData`             | `true` while the text is still a sample. The page says "Sample content, to be verified." `false` once the species text is sourced.                                                      |
+| `monthsPresent`          | Optional. Months the species is present in Kruger, as integers `1`–`12`. All twelve means all year.                                                                                     |
+| `habitat`                | Optional. One plain sentence on habitat in Kruger.                                                                                                                                      |
+| `similar`                | Optional. Other species and how to tell them apart. Each item is `{ slug, note }`.                                                                                                      |
+| `sources`                | Optional bibliography for the species text. Same shape as a population citation. Population sources stay on `population.sources`.                                                       |
+| `variants`               | Plumage described as structured marks. An empty array means the marks have not been published. See below.                                                                               |
+| `viewNotes`              | Optional notes for flight and perched views. Not variants. A note may set `age`, `sex`, and `season` when the view differs by variant. Omitted, those three mean `any`.                 |
+| `calls`                  | Vocalisations.                                                                                                                                                                          |
+| `images`                 | Photographs. May be empty. A file can live in the R2 bucket or, until an upload exists, only as metadata plus `fileUrl`.                                                                |
+| `population`             | An approximate Kruger population estimate. See below.                                                                                                                                   |
 
 ### Size, flight and where in the park
 
@@ -61,12 +61,12 @@ No extension is HTML. `.md` is Markdown (`text/markdown; charset=utf-8`). `.json
 
 - `regions` is a list from a fixed vocabulary, north to south. The boundaries are the rivers. The bands of latitude are what `src/facts.js` uses when records are counted, because a river is not a line of latitude.
 
-| Value | Extent | Latitude |
-| --- | --- | --- |
-| `far-north` | North of the Shingwedzi River to the Limpopo: Punda Maria, Pafuri, the Luvuvhu | 23.10°S to 22.33°S |
-| `north` | Olifants River to the Shingwedzi: Letaba, Mopani, Shingwedzi | 24.00°S to 23.10°S |
-| `central` | Sabie River to the Olifants: Satara, Orpen, Tshokwane, Olifants | 24.98°S to 24.00°S |
-| `south` | Crocodile River to the Sabie, with Marloth Park: Skukuza, Lower Sabie, Pretoriuskop, Berg-en-Dal, Crocodile Bridge | 25.53°S to 24.98°S |
+| Value       | Extent                                                                                                             | Latitude           |
+| ----------- | ------------------------------------------------------------------------------------------------------------------ | ------------------ |
+| `far-north` | North of the Shingwedzi River to the Limpopo: Punda Maria, Pafuri, the Luvuvhu                                     | 23.10°S to 22.33°S |
+| `north`     | Olifants River to the Shingwedzi: Letaba, Mopani, Shingwedzi                                                       | 24.00°S to 23.10°S |
+| `central`   | Sabie River to the Olifants: Satara, Orpen, Tshokwane, Olifants                                                    | 24.98°S to 24.00°S |
+| `south`     | Crocodile River to the Sabie, with Marloth Park: Skukuza, Lower Sabie, Pretoriuskop, Berg-en-Dal, Crocodile Bridge | 25.53°S to 24.98°S |
 
 - `note` is one or two plain sentences that may name rivers, rest camps or habitats, each attributed to its source.
 
@@ -86,16 +86,16 @@ Each variant is one combination of:
 
 `marks` names body parts. Every part is present. Unknown fields are `null`.
 
-| Part | Fields |
-| --- | --- |
-| `bill` | `colour`, `shape` |
-| `eye` | `iris`, `ring` |
-| `legs` | `colour` |
-| `head` | `crown`, `face`, `throat` |
-| `upperparts` | `back`, `rump` |
-| `underparts` | `breast`, `belly` |
-| `wings` | `above`, `below` |
-| `tail` | `colour`, `shape` |
+| Part         | Fields                    |
+| ------------ | ------------------------- |
+| `bill`       | `colour`, `shape`         |
+| `eye`        | `iris`, `ring`            |
+| `legs`       | `colour`                  |
+| `head`       | `crown`, `face`, `throat` |
+| `upperparts` | `back`, `rump`            |
+| `underparts` | `breast`, `belly`         |
+| `wings`      | `above`, `below`          |
+| `tail`       | `colour`, `shape`         |
 
 Colour fields (`colour`, `iris`, `ring`, `crown`, `face`, `throat`, `back`, `rump`, `breast`, `belly`, `above`, `below`) take a name from [`vocab/colours`](../data/vocab/colours.json), or an array of names when the part is multi-coloured (`["chestnut", "black"]`). `shape` is a short plain phrase or `null`. There is no shape vocabulary.
 
@@ -110,14 +110,20 @@ The page does not store comparison prose. It diffs the variants.
 3. **Male vs female.** Same rule, with `sex: "any"` applying to both.
 4. **In flight, above vs below.** `wings.above` is compared with `wings.below` on the best-described age (adult first). Optional `viewNotes` tagged `flight-above` and `flight-below` are shown with that diff. These are not extra variants.
 5. **Perched or walking, front vs back vs side.** Optional notes tagged `perched-front`, `perched-back`, and `perched-side`. Photographs use the same tags.
-6. **Calls, males vs females.** The `calls` array. Entries with `sex: "any"` are shared. When only shared calls exist, the section still lists them and says "No visible difference". The call text itself says when the sexes sound alike. When no call is recorded, the section is omitted.
+6. **Calls, males vs females.** The `calls` array. Entries with `sex: "any"` are shared. When only shared calls exist, the page lists those calls once. It does not add "No visible difference" or a second line that the sexes were not separated. A call recorded as male or female is listed under that sex. The description is the sound. It does not repeat that the sources did not separate the sexes, and it does not include the recording's grade, filename, or why that file was chosen. When no call is recorded, the section is omitted.
 
-A comparison section is rendered only when it has something to report: a mark that differs, a view note, or a recorded call. "No visible difference" appears only inside a section that is already shown for a note or a call, and only when both sides are described and no recorded mark differs. A comparison whose only text would be that notice, or that the sides cannot be compared because one side is missing, is left off the page.
+A comparison section is rendered only when it has something to report: a mark that differs, a view note, or a recorded call. "No visible difference" is for a visible mark, when both sides are described and no recorded mark differs, and only inside a section already shown for a differing mark or a view note. It is not used for calls. A comparison whose only text would be that notice, or that the sides cannot be compared because one side is missing, is left off the page.
 
 ### View notes and images
 
 ```json
-{ "view": "perched-side", "age": "adult", "sex": "any", "season": "any", "note": "Lilac breast and long outer tail streamers." }
+{
+  "view": "perched-side",
+  "age": "adult",
+  "sex": "any",
+  "season": "any",
+  "note": "Lilac breast and long outer tail streamers."
+}
 ```
 
 `view` is `flight-above`, `flight-below`, `flight-side`, `perched-front`, `perched-back`, `perched-side`, `display-front`, or `display-back`. `flight-side` is a side-on flight or hover. `display-front` and `display-back` are wing-spread displays, not flight. The above-versus-below comparison uses only `flight-above` and `flight-below`. `age`, `sex`, and `season` are optional. The flight and perched comparisons use the adult note when one is set, and show other ages underneath. A note with no age still applies to the comparison.
@@ -130,18 +136,18 @@ An image may set `caption`. The page shows it with the view label. `sex: "mixed"
 
 Each image:
 
-| Field | Meaning |
-| --- | --- |
-| `key` | Object key. When the file is in the R2 bucket it is served at `/images/<key>`. |
-| `view`, `age`, `sex`, `season` | Same vocabularies as variants and view notes. |
-| `source` | Source page URL, or another short source note. The credits page copies this to `sourceUrl`. |
-| `fileUrl` | Optional file URL used for display when the photograph is not in the R2 bucket. It may be the original file or a rendition the licence already allows, such as a Wikimedia thumbnail. ND items are not displayed this way. |
-| `hosted` | Optional. `false` means the file is not in the R2 bucket. The page then shows `fileUrl` when the licence allows display, and does not link a missing `/images/` object. |
-| `author` | Who made the photograph. |
-| `license` | Licence name, for example `CC BY 4.0`. The field name stays `license`. The credits page copies it to `licence`. |
-| `licenceUrl` | Optional. A link to the licence terms, or `null` when there is no URL. Omitted when it has not been filled in. |
-| `aiGenerated` | `true` is labelled "AI-generated image" in the caption. `false` is stated as "Photograph, not AI-generated" inside the credit disclosure. |
-| `alt` | Optional alt text. Otherwise the page builds alt text from the name and tags. |
+| Field                          | Meaning                                                                                                                                                                                                                    |
+| ------------------------------ | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `key`                          | Object key. When the file is in the R2 bucket it is served at `/images/<key>`.                                                                                                                                             |
+| `view`, `age`, `sex`, `season` | Same vocabularies as variants and view notes.                                                                                                                                                                              |
+| `source`                       | Source page URL, or another short source note. The credits page copies this to `sourceUrl`.                                                                                                                                |
+| `fileUrl`                      | Optional file URL used for display when the photograph is not in the R2 bucket. It may be the original file or a rendition the licence already allows, such as a Wikimedia thumbnail. ND items are not displayed this way. |
+| `hosted`                       | Optional. `false` means the file is not in the R2 bucket. The page then shows `fileUrl` when the licence allows display, and does not link a missing `/images/` object.                                                    |
+| `author`                       | Who made the photograph.                                                                                                                                                                                                   |
+| `license`                      | Licence name, for example `CC BY 4.0`. The field name stays `license`. The credits page copies it to `licence`.                                                                                                            |
+| `licenceUrl`                   | Optional. A link to the licence terms, or `null` when there is no URL. Omitted when it has not been filled in.                                                                                                             |
+| `aiGenerated`                  | `true` is labelled "AI-generated image" in the caption. `false` is stated as "Photograph, not AI-generated" inside the credit disclosure.                                                                                  |
+| `alt`                          | Optional alt text. Otherwise the page builds alt text from the name and tags.                                                                                                                                              |
 
 ### Calls
 
@@ -154,7 +160,7 @@ Each image:
 }
 ```
 
-`type` is `song`, `call`, `alarm`, `contact`, `duet`, or `other`. `description` is one short sentence. A recording, when present, has a `key`, plus the same attribution as an image: `source`, `author`, `license`, and an optional `licenceUrl`. `fileUrl` is an optional direct audio URL. `hosted: false` means the file is not in the R2 bucket: the page links `source` and can play `fileUrl`, and it does not link a missing `/audio/` object. `quality` is the xeno-canto grade (`A` best, then `B`, `C`, `D`, `E`). `modified` is a short note when this site publishes a filtered derivative. `aiGenerated` is optional on a recording. The credits page treats `true` as an AI-generated recording. The call object itself has no attribution fields. Credit is collected from each recording.
+`type` is `song`, `call`, `alarm`, `contact`, `duet`, or `other`. `description` is the sound: one or more short sentences, or an empty string when the consulted texts do not describe the voice. It does not include the recording grade, the filename, or why a file was chosen. A recording, when present, has a `key`, plus the same attribution as an image: `source`, `author`, `license`, and an optional `licenceUrl`. `fileUrl` is an optional direct audio URL. `hosted: false` means the file is not in the R2 bucket: the page links `source` and can play `fileUrl`, and it does not link a missing `/audio/` object. `quality` is the xeno-canto grade (`A` best, then `B`, `C`, `D`, `E`). `modified` is a short note when this site publishes a filtered derivative. `aiGenerated` is optional on a recording. The credits page treats `true` as an AI-generated recording. The call object itself has no attribution fields. Credit is collected from each recording.
 
 Species files keep the field notes. The chosen recording, its grade, and any filter note live in [`data/audio/recordings.json`](audio.md) and are merged onto the call when HTML, Markdown, and JSON are rendered. A slot that is already grade A is left as it is. A cleaned file is hosted in R2 under the same licence. ND recordings are not edited.
 
@@ -164,18 +170,18 @@ Media licences are separate from the Apache-2.0 licence of the code. CC BY, CC B
 
 `population` is an approximate Kruger estimate. The method, the Kemp et al. 2001 citation, and the half-to-double interval are written once in [`population-sources.md`](population-sources.md), with how a page shows them: one figure in view and the range behind it.
 
-| Field | Meaning |
-| --- | --- |
-| `estimate.low`, `estimate.high` | Integers, or `null`. Both null means no sourced figure has been entered. |
-| `unit` | `matureIndividuals`, `groups`, `breedingPairs`, `territories`, `individuals`, `pairs`, `breeding pairs`, or `null` when there is no estimate. |
-| `trend` | `increasing`, `stable`, `decreasing`, or `unknown`. |
-| `confidence` | `low`, `medium`, `high`, or `null`. |
-| `asOf` | Year of the estimate, or `null`. |
-| `notes` | Plain text. One short sentence for a species with no sourced figure. |
-| `sources` | Citations: `title`, `url`, `publisher`, `year`. `url`, `publisher`, and `year` may be null. |
-| `kemp` | Optional. The Kemp et al. 2001 row: `paperName`, `threshold` (T = 2^n), `thresholdExponent`, and `status` (`RB`, `VB`, or `NB`). |
-| `kempBaseline` | Optional. The Kemp mature-individual range kept when a later survey replaces `estimate`. |
-| `tierApplied` | Optional. `D` for a Kemp threshold, `A` when a park survey replaces it. |
+| Field                           | Meaning                                                                                                                                       |
+| ------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------- |
+| `estimate.low`, `estimate.high` | Integers, or `null`. Both null means no sourced figure has been entered.                                                                      |
+| `unit`                          | `matureIndividuals`, `groups`, `breedingPairs`, `territories`, `individuals`, `pairs`, `breeding pairs`, or `null` when there is no estimate. |
+| `trend`                         | `increasing`, `stable`, `decreasing`, or `unknown`.                                                                                           |
+| `confidence`                    | `low`, `medium`, `high`, or `null`.                                                                                                           |
+| `asOf`                          | Year of the estimate, or `null`.                                                                                                              |
+| `notes`                         | Plain text. One short sentence for a species with no sourced figure.                                                                          |
+| `sources`                       | Citations: `title`, `url`, `publisher`, `year`. `url`, `publisher`, and `year` may be null.                                                   |
+| `kemp`                          | Optional. The Kemp et al. 2001 row: `paperName`, `threshold` (T = 2^n), `thresholdExponent`, and `status` (`RB`, `VB`, or `NB`).              |
+| `kempBaseline`                  | Optional. The Kemp mature-individual range kept when a later survey replaces `estimate`.                                                      |
+| `tierApplied`                   | Optional. `D` for a Kemp threshold, `A` when a park survey replaces it.                                                                       |
 
 The page renders a range (`low–high`, `at least low`, or `up to high`) with a readable unit, the label **Approximate estimate**, then the trend, the note, a Kemp baseline line when `kempBaseline` is set, and the sources. A species with no sourced figure keeps both bounds null. It does not invent a count. The note says so.
 
@@ -195,12 +201,12 @@ The page says "The details for this species have not been published yet." It doe
 
 `population` is an approximate total for the family, in mature individuals:
 
-| Field | Meaning |
-| --- | --- |
-| `low`, `high` | Sum of the species `matureIndividuals` bounds, or `null` when none of the species has that unit. |
-| `speciesCounted` | How many species had both bounds and `unit: "matureIndividuals"`. |
-| `speciesTotal` | How many species are embedded. |
-| `complete` | `true` only when every species was counted. Otherwise `false`, including when a species uses another unit. |
+| Field            | Meaning                                                                                                    |
+| ---------------- | ---------------------------------------------------------------------------------------------------------- |
+| `low`, `high`    | Sum of the species `matureIndividuals` bounds, or `null` when none of the species has that unit.           |
+| `speciesCounted` | How many species had both bounds and `unit: "matureIndividuals"`.                                          |
+| `speciesTotal`   | How many species are embedded.                                                                             |
+| `complete`       | `true` only when every species was counted. Otherwise `false`, including when a species uses another unit. |
 
 Other units are not converted and are not mixed into the sum. The page labels the total **Approximate total, all seasons** and says how many species are included. When `complete` is false it says the total is incomplete. A family with no species uses null bounds, with `speciesTotal` 0.
 
@@ -208,11 +214,11 @@ The total covers all seasons. It does not use `status` or `monthsPresent`. The s
 
 `residency` explains that gap:
 
-| Field | Meaning |
-| --- | --- |
-| `speciesKnown` | How many embedded species have a known presence in at least one season. |
-| `speciesUnknown` | How many have neither `status` nor `monthsPresent`. |
-| `unknownSpecies` | Their slugs, sorted. |
+| Field            | Meaning                                                                 |
+| ---------------- | ----------------------------------------------------------------------- |
+| `speciesKnown`   | How many embedded species have a known presence in at least one season. |
+| `speciesUnknown` | How many have neither `status` nor `monthsPresent`.                     |
+| `unknownSpecies` | Their slugs, sorted.                                                    |
 
 `residency` is always written by the seed script and is required by the JSON Schema. When `speciesUnknown` is above 0 the family page says why the seasonal figures are Unknown or partial, under the `#residency` anchor. On `/families` (HTML and Markdown) each Unknown or partial seasonal cell links there. The fix is to publish residency on the species, never to change `population`.
 
@@ -260,12 +266,12 @@ Every field is present in every row. `null` means the species file does not reco
 
 `vocab/colours` (`kind: "vocab"`, `name: "colours"`) is the controlled list of colour names. Each entry:
 
-| Field | Meaning |
-| --- | --- |
-| `name` | Plain English, lowercase, hyphenated (`slate-grey`, `dark-brown`). |
-| `hex` | `#RRGGBB` display swatch. Not a measured plumage colour. |
-| `ridgway` | Optional Ridgway equivalent. `null` until filled in. |
-| `smithe` | Optional Smithe equivalent. `null` until filled in. |
+| Field     | Meaning                                                            |
+| --------- | ------------------------------------------------------------------ |
+| `name`    | Plain English, lowercase, hyphenated (`slate-grey`, `dark-brown`). |
+| `hex`     | `#RRGGBB` display swatch. Not a measured plumage colour.           |
+| `ridgway` | Optional Ridgway equivalent. `null` until filled in.               |
+| `smithe`  | Optional Smithe equivalent. `null` until filled in.                |
 
 The colours page shows the name beside the swatch, so the colour is not the only way to read it.
 

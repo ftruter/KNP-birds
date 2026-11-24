@@ -8,7 +8,7 @@
   },
   "family": "pycnonotidae",
   "status": "resident",
-  "summary": "Newman has no species page for this greenbul, and the Wikipedia article does not describe the plumage, so no colours, size, habitat or status are stored. Avibase marks it rare or accidental in Kruger, so the months are unset. There is no Kemp estimate. The grade A calls from South Africa are ND, so the playable recording is a grade A alarm call from Kibira, Burundi.",
+  "summary": "Newman has no species page for this greenbul, and the Wikipedia article does not describe the plumage, so no colours, size, habitat or status are stored. Avibase marks it rare or accidental in Kruger, so the months are unset. There is no Kemp estimate.",
   "sampleData": false,
   "similar": [
     {
@@ -62,7 +62,7 @@
     {
       "sex": "any",
       "type": "alarm",
-      "description": "Newman has no call text. The grade A calls from Magoebaskloof, Limpopo, are ND. Grade A alarm call from Kibira National Park, Burundi. The filename is XC1082530-YellowstreakedGreenbul_Kibira_260221_4975_edited.mp3.",
+      "description": "",
       "recordings": [
         {
           "key": "xeno-canto/XC1082530",

@@ -201,7 +201,7 @@
     {
       "sex": "any",
       "type": "call",
-      "description": "Newman says it has no characteristic call, but sometimes utters a harsh croak. No grade A recording was in the set. Grade B call from Bathurst. The filename is African Finfoot.mp3.",
+      "description": "Newman says it has no characteristic call, but sometimes utters a harsh croak.",
       "recordings": [
         {
           "key": "xeno-canto/XC642694",

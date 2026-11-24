@@ -98,8 +98,9 @@ export const CALL_TYPE = {
 /**
  * A sentence that talks about the recording's filename, or that is the
  * filename. Catalogue ids such as XC123 stay: they name a recording, not a
- * file. The sentence after a filename sentence is dropped only when it
- * explains that name ("It says Bee-eater", "Gulerle is the Norwegian name").
+ * file. A sentence that only explains a filename ("It says Bee-eater",
+ * "Gulerle is the Norwegian name") is dropped too, including when the
+ * filename sentence itself is already gone.
  */
 const FILENAME_SENTENCE =
   /\bfile(?:'s|’s)?\s*names?\b|\bdate ?stamps?\b|\.(?:mp3|wav|m4a|ogg|flac)\b/i
@@ -115,12 +116,9 @@ export const readerCallText = (value) => {
   if (!text) return ''
   const sentences = text.split(/(?<=[.!?])\s+/)
   const kept = []
-  let dropped = false
   for (const sentence of sentences) {
-    const filename = FILENAME_SENTENCE.test(sentence)
-    const follow = dropped && FILENAME_FOLLOW.test(sentence)
-    dropped = filename
-    if (filename || follow) continue
+    if (FILENAME_SENTENCE.test(sentence) || FILENAME_FOLLOW.test(sentence))
+      continue
     kept.push(sentence)
   }
   return kept.join(' ')

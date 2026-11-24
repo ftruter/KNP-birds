@@ -170,7 +170,7 @@ test('the eighteen weavers are sourced without changing populations', async () =
 
   const fan = await readJson('data/species/euplectes-axillaris.json')
   assert.equal(fan.calls[0].recordings[0].key, 'xeno-canto/XC441846')
-  assert.match(fan.calls[0].description, /Cape Canary/)
+  assert.match(fan.calls[0].description, /tseek, wirra/)
 
   const lesser = await readJson('data/species/ploceus-intermedius.json')
   assert.equal(

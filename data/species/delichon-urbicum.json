@@ -191,7 +191,7 @@
     {
       "sex": "any",
       "type": "call",
-      "description": "A single dry chirrup. Grade A call from Västergötland. The filename is Hussvala, the Swedish name.",
+      "description": "A single dry chirrup.",
       "recordings": [
         {
           "key": "xeno-canto/XC27278",

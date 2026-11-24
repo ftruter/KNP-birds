@@ -201,7 +201,7 @@
     {
       "sex": "any",
       "type": "call",
-      "description": "Newman does not describe the voice. The texts do not separate the sexes. The catalogue cut is not labelled by sex. Grade A from South Africa, under the older genus Ixobrychus. The filename is a date, not the species name.",
+      "description": "",
       "recordings": [
         {
           "key": "xeno-canto/XC792321",

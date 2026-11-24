@@ -119,7 +119,7 @@
     {
       "sex": "any",
       "type": "call",
-      "description": "The matching Newman text does not describe a call. Grade A call from Grahamstown. The filename is XC249315-GDC sunbird male.mp3.",
+      "description": "",
       "recordings": [
         {
           "key": "xeno-canto/XC249315",

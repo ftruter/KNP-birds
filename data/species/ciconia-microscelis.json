@@ -201,7 +201,7 @@
     {
       "sex": "any",
       "type": "call",
-      "description": "No call was described, and no usable recording was found.",
+      "description": "",
       "recordings": []
     }
   ],

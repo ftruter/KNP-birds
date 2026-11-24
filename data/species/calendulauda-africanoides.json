@@ -159,7 +159,7 @@
     {
       "sex": "any",
       "type": "song",
-      "description": "A bustling song given from a bush or tree in the breeding season; the texts used here do not transcribe it or assign it to one sex.",
+      "description": "A bustling song given from a bush or tree in the breeding season.",
       "recordings": [
         {
           "key": "xeno-canto/XC28606",

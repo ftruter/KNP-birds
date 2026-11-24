@@ -224,7 +224,7 @@
     {
       "sex": "any",
       "type": "call",
-      "description": "Newman says it is normally silent. Grade A call from Akchi at Alakol lake, Kazakhstan. The filename is XC145242-Kleine Klapekster_20130708_07_roep.mp3. Kleine Klapekster is the Dutch name, and roep marks it as a call. It is a breeding-ground recording.",
+      "description": "Newman says it is normally silent.",
       "recordings": [
         {
           "key": "xeno-canto/XC145242",

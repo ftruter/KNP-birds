@@ -105,9 +105,11 @@ test('species HTML keeps comparisons that differ, and drops empty ones', async (
   assert.doesNotMatch(html, /Winter \(non-breeding\) vs summer/)
   assert.doesNotMatch(html, /Male vs female/)
   assert.doesNotMatch(html, /cannot be compared/)
-  // The calls are real content. That section still says the sexes do not differ.
-  assert.match(html, /id="calls"[\s\S]*No visible difference/)
+  // The calls are real content, so the section stays. It lists the sound
+  // and does not add "No visible difference".
+  assert.match(html, /id="calls"/)
   assert.match(html, /harsh rattling/)
+  assert.doesNotMatch(html, /id="calls"[\s\S]*No visible difference/)
   assert.match(html, /fill="#B07CC8"/)
   // The population is a row of the facts list: one figure in view, and the
   // range and the method behind it.
@@ -488,7 +490,9 @@ test('placeholder comparisons are omitted, and a note or a call stays', async ()
   assert.doesNotMatch(html, /Winter \(non-breeding\) vs summer/)
   assert.doesNotMatch(html, /Male vs female/)
   assert.doesNotMatch(html, /Wing colour from above and below is not described/)
-  assert.match(html, /No visible difference/)
+  assert.match(html, /solemn song/)
+  assert.doesNotMatch(html, /No visible difference/)
+  assert.doesNotMatch(html, /not separated by sex/)
   const markdown = renderSpeciesMarkdown({ doc, colourMap: new Map() })
   assert.match(markdown, /## Telling it apart/)
   assert.match(markdown, /### Perched or walking/)

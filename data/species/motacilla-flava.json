@@ -210,7 +210,7 @@
     {
       "sex": "any",
       "type": "call",
-      "description": "tsee-ip. Grade A call from Tynset, Hedmark, Norway. The filename is XC140811-Gulerle XC Grønntjønnan -Kvikne130615_092914_AERY0406.mp3. Gulerle is the Norwegian name.",
+      "description": "tsee-ip.",
       "recordings": [
         {
           "key": "xeno-canto/XC140811",

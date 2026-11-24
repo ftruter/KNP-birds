@@ -241,7 +241,7 @@
     {
       "sex": "any",
       "type": "song",
-      "description": "A high-pitched whistled song, tirritee tirritee tirritee, or sip sip sip sip pilly pilly pilly. The texts used here do not separate the sexes. Grade A song from Port Alfred, Eastern Cape. The filename is XC424827-Yellow-throated Woodland Warbler exc wm.mp3.",
+      "description": "A high-pitched whistled song, tirritee tirritee tirritee, or sip sip sip sip pilly pilly pilly.",
       "recordings": [
         {
           "key": "xeno-canto/XC424827",
@@ -258,7 +258,7 @@
     {
       "sex": "any",
       "type": "call",
-      "description": "A plaintive tieuu, repeated for long periods. The texts used here do not separate the sexes. Grade A call from near Nature's Valley, Western Cape. The xeno-canto catalogue marks other species in the background. The filename is XC1145307-260312-094400-Yellow-throated-Woodland-Warbler-A.mp3.",
+      "description": "A plaintive tieuu, repeated for long periods.",
       "recordings": [
         {
           "key": "xeno-canto/XC1145307",

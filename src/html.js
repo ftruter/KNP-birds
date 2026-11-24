@@ -1,3 +1,4 @@
+import { publicCallDescription } from './call-text.js'
 import { visibleComparisons } from './diff.js'
 import { recordingNotes } from './recordings.js'
 import { creditHtml, creditModel } from './credit.js'
@@ -541,15 +542,11 @@ const swatch = (hex) =>
     : `<svg class="swatch" viewBox="0 0 12 12" aria-hidden="true" focusable="false"><rect width="12" height="12" fill="${hex}"/></svg>`
 
 const callsHtml = (section) => {
-  const sharedIntro =
-    section.status === 'no-visible-difference'
-      ? '<p>The notes below are not separated by sex.</p>'
-      : ''
   const shared = callList(section.shared)
   return section.status === 'not-described'
     ? ''
     : section.status !== 'differs'
-      ? `${sharedIntro}\n${shared}`
+      ? shared
       : `${shared}
 <h4>Males</h4>
 ${callList(section.male, 'Male')}
@@ -557,11 +554,16 @@ ${callList(section.male, 'Male')}
 ${callList(section.female, 'Female')}`
 }
 
+const callProse = (call) => {
+  const prose = readerCallText(publicCallDescription(call?.description || ''))
+  return prose ? ` ${escapeHtml(prose)}` : ''
+}
+
 const callList = (calls, who = '') =>
   !calls?.length
     ? '<p>None recorded separately.</p>'
     : `<ul class="call-list">
-${calls.map((call) => `<li class="call-item">${recordingsHtml(call, who)}<p class="call-copy"><span class="call-type">${escapeHtml(CALL_TYPE[call.type] || call.type || 'Call')}</span> ${escapeHtml(readerCallText(call.description || ''))}</p></li>`).join('\n')}
+${calls.map((call) => `<li class="call-item">${recordingsHtml(call, who)}<p class="call-copy"><span class="call-type">${escapeHtml(CALL_TYPE[call.type] || call.type || 'Call')}</span>${callProse(call)}</p></li>`).join('\n')}
 </ul>`
 
 /**

@@ -205,7 +205,7 @@
     {
       "sex": "any",
       "type": "call",
-      "description": "A high-pitched, descending kr-rrrrk. Grade A call from Cape Town. The filename records a 250 Hz high-pass. The filename is XC1166417-20260307_DV_EBras_XA60_A017C265_260307OB_SLE_250HP_-3sB_comb_moorhen.mp3.",
+      "description": "A high-pitched, descending kr-rrrrk.",
       "recordings": [
         {
           "key": "xeno-canto/XC1166417",

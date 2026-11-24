@@ -198,7 +198,7 @@
     {
       "sex": "any",
       "type": "call",
-      "description": "Three to five rapid hoots, tu-tu-tu. Grade A call and flight call from Marracuene, Maputo, Mozambique, with another species in the background. The filename is XC407075-DR0000_0169.mp3.",
+      "description": "Three to five rapid hoots, tu-tu-tu.",
       "recordings": [
         {
           "key": "xeno-canto/XC407075",
@@ -227,8 +227,8 @@
       "licenceUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
       "aiGenerated": false,
       "hosted": false,
-"alt": "Lesser Moorhen at Leeupan, Kruger, yellow bill with a red culmen",
-            "caption": "Lesser Moorhen at Leeupan, Kruger, with a yellow bill and a red culmen."
+      "alt": "Lesser Moorhen at Leeupan, Kruger, yellow bill with a red culmen",
+      "caption": "Lesser Moorhen at Leeupan, Kruger, with a yellow bill and a red culmen."
     }
   ],
   "research": {

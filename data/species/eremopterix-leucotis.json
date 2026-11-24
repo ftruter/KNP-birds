@@ -239,7 +239,7 @@
     {
       "sex": "any",
       "type": "call",
-      "description": "A sharp rattling chip-chwep; the texts used here do not assign it to one sex.",
+      "description": "A sharp rattling chip-chwep.",
       "recordings": [
         {
           "key": "xeno-canto/XC989383",
@@ -256,7 +256,7 @@
     {
       "sex": "any",
       "type": "song",
-      "description": "A pretty song given in fluttering flight; the texts used here do not transcribe it or assign it to one sex.",
+      "description": "A pretty song given in fluttering flight.",
       "recordings": [
         {
           "key": "xeno-canto/XC209983",

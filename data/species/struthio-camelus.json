@@ -225,7 +225,7 @@
     {
       "sex": "male",
       "type": "call",
-      "description": "The male utters a lion-like roar. The grade A recordings from South Africa are ND. The highest-ranked playable file is a grade A gurgle from Texas. A playable grade B call from Limpopo was not selected because the Texas file is a higher grade. The filename is XC845920-Vibrato1_(200701_0762).mp3.",
+      "description": "The male utters a lion-like roar.",
       "recordings": [
         {
           "key": "xeno-canto/XC845920",

@@ -379,7 +379,7 @@
     {
       "sex": "any",
       "type": "call",
-      "description": "A harsh rattling or sawing 'rak rak rak', given in flight; the sexes are not known to sound different.",
+      "description": "A harsh rattling or sawing 'rak rak rak', given in flight.",
       "recordings": [
         {
           "key": "xeno-canto/XC949678",
@@ -396,7 +396,7 @@
     {
       "sex": "any",
       "type": "other",
-      "description": "The rolling display includes a harsh raucous 'kaaa, kaarsh', and the sources do not assign it to one sex.",
+      "description": "The rolling display includes a harsh raucous 'kaaa, kaarsh'.",
       "recordings": []
     }
   ],

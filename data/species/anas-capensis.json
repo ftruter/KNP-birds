@@ -164,7 +164,7 @@
     {
       "sex": "any",
       "type": "call",
-      "description": "Newman says the species is usually silent. The catalogue cut is not labelled male or female. Grade B, South Africa. A grade A file whose name ends in Cteal-cf was skipped because the cf marks an uncertain identification.",
+      "description": "Newman says the species is usually silent.",
       "recordings": [
         {
           "key": "xeno-canto/XC268591",
