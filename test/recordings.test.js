@@ -345,7 +345,7 @@ test('species pages show the grade and a filter note without editing the file', 
       /Wind noise reduced \(high-pass filter and noise reduction\)/,
     )
     assert.match(markdown, /Wind noise reduced/)
-    assert.match(html, /<audio controls src="\/audio\//)
+    assert.match(html, /<audio controls preload="none" src="\/audio\//)
   }
   const garrulus = report.slots.filter(
     (slot) => slot.slug === 'coracias-garrulus',
