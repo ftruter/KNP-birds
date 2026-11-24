@@ -132,7 +132,7 @@
     {
       "sex": "any",
       "type": "call",
-      "description": "Newman does not describe the voice. The grade A call is from Port Alfred. The filename is XC385073-African Spoonbill.mp3.",
+      "description": "",
       "recordings": [
         {
           "key": "xeno-canto/XC385073",

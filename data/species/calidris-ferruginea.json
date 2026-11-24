@@ -162,7 +162,7 @@
     {
       "sex": "any",
       "type": "call",
-      "description": "The Wikipedia description does not give the voice. No grade A recording from South Africa was found. The selected file is a grade A flight call from Kazakhstan. The filename is XC184321-Calidris ferruginea 0516_055125,AA.MP3.",
+      "description": "",
       "recordings": [
         {
           "key": "xeno-canto/XC184321",

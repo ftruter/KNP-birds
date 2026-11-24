@@ -1,3 +1,4 @@
+import { publicCallDescription } from './call-text.js'
 import { diffSpecies } from './diff.js'
 import { recordingNotes } from './recordings.js'
 import { inlineText, safeHttpUrl } from './escape.js'
@@ -495,7 +496,7 @@ const callsMarkdown = (section) => {
   return section.status === 'not-described'
     ? ''
     : section.status !== 'differs'
-      ? `The notes below are not separated by sex.\n\n${shared}`
+      ? shared
       : `${shared}\n\n#### Males\n\n${callLines(section.male)}\n\n#### Females\n\n${callLines(section.female)}`
 }
 
@@ -528,7 +529,9 @@ const callLines = (calls) =>
               return bits.length ? ` ${bits.join('. ')}.` : ''
             })
             .join('')
-          return `- ${CALL_TYPE[call.type] || 'Call'}: ${call.description || ''}${recordings}`
+          const prose = publicCallDescription(call.description || '')
+          const label = CALL_TYPE[call.type] || 'Call'
+          return `- ${label}${prose ? `: ${prose}` : ''}${recordings}`
         })
         .join('\n')
 

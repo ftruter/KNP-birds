@@ -238,7 +238,7 @@
     {
       "sex": "any",
       "type": "call",
-      "description": "Flocks give shrill chirps while feeding, and a chirping call in flight; the texts used here do not assign these calls to one sex.",
+      "description": "Flocks give shrill chirps while feeding, and a chirping call in flight.",
       "recordings": [
         {
           "key": "xeno-canto/XC288401",
@@ -255,7 +255,7 @@
     {
       "sex": "male",
       "type": "song",
-      "description": "The singing male circles in a series of undulations, often with the legs dangling. The texts used here do not transcribe that song.",
+      "description": "The singing male circles in a series of undulations, often with the legs dangling.",
       "recordings": []
     }
   ],

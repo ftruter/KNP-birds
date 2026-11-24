@@ -137,7 +137,7 @@
     {
       "sex": "any",
       "type": "song",
-      "description": "The Wikipedia page used here does not describe the voice. Grade A song from Dzalamyama, Malawi. The filename names Thick-billed Cuckoo. A Kruger alarm call is only grade B and has a generic filename, so it was not used.",
+      "description": "",
       "recordings": [
         {
           "key": "xeno-canto/XC513828",

@@ -62,7 +62,7 @@
     {
       "sex": "any",
       "type": "call",
-      "description": "The sources used do not describe the call. Grade A call from Boskloof, Cape Town, catalogued as Anthus nicholsoni. The filename is XC425855-Pipit Long-billed Boskloof170718.mp3.",
+      "description": "",
       "recordings": [
         {
           "key": "xeno-canto/XC425855",

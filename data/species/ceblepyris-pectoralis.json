@@ -113,7 +113,7 @@
     {
       "sex": "any",
       "type": "call",
-      "description": "No call was described in the Newman, SABAP1 or Wikipedia texts consulted. The file is a grade A call from Mutinondo, Zambia. A higher-ranked grade A flight call was not used because its filename says the bird was not seen and the identification was uncertain.",
+      "description": "",
       "recordings": [
         {
           "key": "xeno-canto/XC660763",

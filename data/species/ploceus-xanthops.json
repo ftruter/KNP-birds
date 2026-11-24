@@ -274,7 +274,7 @@
     {
       "sex": "any",
       "type": "call",
-      "description": "Newman has no call text. The grade A recordings are CC BY-NC-ND, so they are not played here. Grade B call from near White River, Mbombela, Mpumalanga. The filename is XC368216-170327_Holub'sGoldenWeaver_WhiteRiver_OC.mp3.",
+      "description": "",
       "recordings": [
         {
           "key": "xeno-canto/XC368216",

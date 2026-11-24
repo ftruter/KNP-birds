@@ -134,7 +134,7 @@
     {
       "sex": "any",
       "type": "call",
-      "description": "It mimics the bell-like call-note of Jameson's Firefinch. The grade A call is from near Klerksdorp. The filename is XC631063-3 Purplt Indigobird.mp3.",
+      "description": "It mimics the bell-like call-note of Jameson's Firefinch.",
       "recordings": [
         {
           "key": "xeno-canto/XC631063",

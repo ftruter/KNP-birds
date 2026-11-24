@@ -204,7 +204,7 @@
     {
       "sex": "any",
       "type": "song",
-      "description": "A fast, gruff, loud song that repeats chacking sounds with softer notes between them; the texts used here do not assign it to one sex.",
+      "description": "A fast, gruff, loud song that repeats chacking sounds with softer notes between them.",
       "recordings": [
         {
           "key": "xeno-canto/XC176955",
@@ -221,7 +221,7 @@
     {
       "sex": "any",
       "type": "call",
-      "description": "A deep chack; the texts used here do not assign it to one sex.",
+      "description": "A deep chack.",
       "recordings": [
         {
           "key": "xeno-canto/XC336507",

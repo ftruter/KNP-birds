@@ -215,7 +215,7 @@
     {
       "sex": "male",
       "type": "call",
-      "description": "Wikipedia says the male has a teal-like whistle. Newman says there is no distinctive call apart from the female take-off quacks. The catalogue cut is labelled male. Grade A, a flight call from Uganda, not southern Africa. The catalogue gives its life stage as uncertain. No South African cut is labelled male only.",
+      "description": "Wikipedia says the male has a teal-like whistle. Newman says there is no distinctive call apart from the female take-off quacks. No South African cut is labelled male only.",
       "recordings": [
         {
           "key": "xeno-canto/XC1053126",
@@ -232,7 +232,7 @@
     {
       "sex": "female",
       "type": "call",
-      "description": "Loud, evenly spaced quacks on take-off. The catalogue cut is labelled female. Grade B, South Africa. Western Cape.",
+      "description": "Loud, evenly spaced quacks on take-off.",
       "recordings": [
         {
           "key": "xeno-canto/XC1141380",
@@ -249,7 +249,7 @@
     {
       "sex": "any",
       "type": "call",
-      "description": "The sexed descriptions are from Newman and Wikipedia. The catalogue cut is not labelled male or female. Grade A, South Africa. The type is a flight call, from the Western Cape.",
+      "description": "",
       "recordings": [
         {
           "key": "xeno-canto/XC1051974",

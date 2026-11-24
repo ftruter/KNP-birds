@@ -283,7 +283,7 @@
     {
       "sex": "any",
       "type": "song",
-      "description": "A quick, often-repeated trrp-trrp-chiri-chiri-chiri-chiri; the texts used here do not say that females sing a different song.",
+      "description": "A quick, often-repeated trrp-trrp-chiri-chiri-chiri-chiri.",
       "recordings": [
         {
           "key": "xeno-canto/XC292912",
@@ -300,7 +300,7 @@
     {
       "sex": "any",
       "type": "alarm",
-      "description": "A sharp tsk or chirr; the texts used here do not assign the alarm to one sex.",
+      "description": "A sharp tsk or chirr.",
       "recordings": [
         {
           "key": "xeno-canto/XC390679",

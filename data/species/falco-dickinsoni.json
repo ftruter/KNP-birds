@@ -15,7 +15,7 @@
     "note": "Wikipedia gives 27–30 cm and a weight of 167–246 g. The female is slightly larger and heavier."
   },
   "habitat": "Savanna and open woodland, particularly swampy areas near water, miombo, palms and baobabs.",
-  "summary": "A fairly small, stocky kestrel with a large square head. Mostly dark grey, with a pale head and rump. The tail is grey with narrow black bars and a broad subterminal band, and the underside of the flight feathers is barred. The cere, the bare skin around the eye and the feet are yellow. The bill is dark grey and the eye is brown. Juveniles are grey-brown, with barred flanks and without the pale head and rump, and have a greenish cere and eye-ring. It is usually silent, with a high-pitched alarm and contact call. No openly licensed recording was found. Wikipedia does not state residency. The Kemp code RB was left unchanged.",
+  "summary": "A fairly small, stocky kestrel with a large square head. Mostly dark grey, with a pale head and rump. The tail is grey with narrow black bars and a broad subterminal band, and the underside of the flight feathers is barred. The cere, the bare skin around the eye and the feet are yellow. The bill is dark grey and the eye is brown. Juveniles are grey-brown, with barred flanks and without the pale head and rump, and have a greenish cere and eye-ring. It is usually silent, with a high-pitched alarm and contact call. Wikipedia does not state residency. The Kemp code RB was left unchanged.",
   "sampleData": false,
   "similar": [
     {
@@ -192,7 +192,7 @@
     {
       "sex": "any",
       "type": "call",
-      "description": "Wikipedia says it is usually silent and has a high-pitched alarm and contact call. No openly licensed recording was found.",
+      "description": "Wikipedia says it is usually silent and has a high-pitched alarm and contact call.",
       "recordings": []
     }
   ],

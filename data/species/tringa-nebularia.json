@@ -119,7 +119,7 @@
     {
       "sex": "any",
       "type": "call",
-      "description": "On take-off it calls a loud triple 'tew-tew-tew'. No grade A recording from South Africa was found. The selected file is a grade A call from Sweden. The filename is Gluttsnappalocklate.mp3.",
+      "description": "On take-off it calls a loud triple 'tew-tew-tew'.",
       "recordings": [
         {
           "key": "xeno-canto/XC27066",

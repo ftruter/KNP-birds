@@ -110,9 +110,9 @@ The page does not store comparison prose. It diffs the variants.
 3. **Male vs female.** Same rule, with `sex: "any"` applying to both.
 4. **In flight, above vs below.** `wings.above` is compared with `wings.below` on the best-described age (adult first). Optional `viewNotes` tagged `flight-above` and `flight-below` are shown with that diff. These are not extra variants.
 5. **Perched or walking, front vs back vs side.** Optional notes tagged `perched-front`, `perched-back`, and `perched-side`. Photographs use the same tags.
-6. **Calls, males vs females.** The `calls` array. Entries with `sex: "any"` are shared. When only shared calls exist, the page says "No visible difference". The call text itself says when the sexes sound alike.
+6. **Calls, males vs females.** The `calls` array. Entries with `sex: "any"` are shared. When only shared calls exist, the page lists those calls once. It does not add "No visible difference" or a second line that the sexes were not separated. A call recorded as male or female is listed under that sex. The description is the sound. It does not repeat that the sources did not separate the sexes, and it does not include the recording's grade, filename, or why that file was chosen.
 
-"No visible difference" is used only when both sides are described and no recorded mark differs. A side with no variant is "not described", which is not the same claim.
+"No visible difference" is used only when both sides of a visible mark are described and no recorded mark differs. It is not used for calls. A side with no variant is "not described", which is not the same claim.
 
 ### View notes and images
 
@@ -154,7 +154,7 @@ Each image:
 }
 ```
 
-`type` is `song`, `call`, `alarm`, `contact`, `duet`, or `other`. `description` is one short sentence. A recording, when present, has a `key`, plus the same attribution as an image: `source`, `author`, `license`, and an optional `licenceUrl`. `fileUrl` is an optional direct audio URL. `hosted: false` means the file is not in the R2 bucket: the page links `source` and can play `fileUrl`, and it does not link a missing `/audio/` object. `quality` is the xeno-canto grade (`A` best, then `B`, `C`, `D`, `E`). `modified` is a short note when this site publishes a filtered derivative. `aiGenerated` is optional on a recording. The credits page treats `true` as an AI-generated recording. The call object itself has no attribution fields. Credit is collected from each recording.
+`type` is `song`, `call`, `alarm`, `contact`, `duet`, or `other`. `description` is the sound: one or more short sentences, or an empty string when the consulted texts do not describe the voice. It does not include the recording grade, the filename, or why a file was chosen. A recording, when present, has a `key`, plus the same attribution as an image: `source`, `author`, `license`, and an optional `licenceUrl`. `fileUrl` is an optional direct audio URL. `hosted: false` means the file is not in the R2 bucket: the page links `source` and can play `fileUrl`, and it does not link a missing `/audio/` object. `quality` is the xeno-canto grade (`A` best, then `B`, `C`, `D`, `E`). `modified` is a short note when this site publishes a filtered derivative. `aiGenerated` is optional on a recording. The credits page treats `true` as an AI-generated recording. The call object itself has no attribution fields. Credit is collected from each recording.
 
 Species files keep the field notes. The chosen recording, its grade, and any filter note live in [`data/audio/recordings.json`](audio.md) and are merged onto the call when HTML, Markdown, and JSON are rendered. A slot that is already grade A is left as it is. A cleaned file is hosted in R2 under the same licence. ND recordings are not edited.
 

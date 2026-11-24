@@ -223,7 +223,7 @@
     {
       "sex": "any",
       "type": "call",
-      "description": "The sources used do not describe the call. The only openly licensed grade B recording has a filename that includes a grebe, so it was not used. Grade C call from open veld near Polokwane, Limpopo. The filename is XC444076-01BuffyPipit_Polokwane_20181117.MP3.",
+      "description": "",
       "recordings": [
         {
           "key": "xeno-canto/XC444076",

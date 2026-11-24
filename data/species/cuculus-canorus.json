@@ -272,7 +272,7 @@
     {
       "sex": "male",
       "type": "song",
-      "description": "The male song is goo-ko, usually from an open perch. The female has a loud bubbling call, which was not given a separate file. Grade A song from Västergötland. The filename is GokAmperna.mp3. Gok is the Swedish name on the file.",
+      "description": "The male song is goo-ko, usually from an open perch. The female has a loud bubbling call.",
       "recordings": [
         {
           "key": "xeno-canto/XC27037",

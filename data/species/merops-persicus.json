@@ -149,7 +149,7 @@
     {
       "sex": "any",
       "type": "call",
-      "description": "The colour key does not describe a call, and the call sentence on the page sits in the mismatched description, so it is not used. Grade A call from Karaulbazar District, Bukhara Province, Uzbekistan. The filename is XC133400-Blue_cheeked Bee_eater_R1_0029.mp3.",
+      "description": "",
       "recordings": [
         {
           "key": "xeno-canto/XC133400",

@@ -201,7 +201,7 @@
     {
       "sex": "any",
       "type": "call",
-      "description": "Newman’s species page does not describe the voice. Grade A call from near Cape Town. The filename is generic and shows a 1000 Hz high-pass. It was not cleaned again.",
+      "description": "It was not cleaned again.",
       "recordings": [
         {
           "key": "xeno-canto/XC1073735",

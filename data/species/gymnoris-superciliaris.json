@@ -62,7 +62,7 @@
     {
       "sex": "any",
       "type": "call",
-      "description": "SABAP1 says the call is not particularly distinctive and does not transcribe it. Wikipedia does not describe the voice. Grade A call from Klerksdorp, North West. No openly licensed Kruger grade A call outranked it. The filename is XC421072-NG Kerk camp grounds 19.6.2018.mp3.",
+      "description": "SABAP1 says the call is not particularly distinctive.",
       "recordings": [
         {
           "key": "xeno-canto/XC421072",

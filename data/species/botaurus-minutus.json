@@ -254,7 +254,7 @@
     {
       "sex": "any",
       "type": "call",
-      "description": "Newman does not describe the voice. The texts do not separate the sexes. The catalogue cut is not labelled by sex. Grade A from France, under the older genus Ixobrychus. No Botaurus minutus recording was in the catalogue.",
+      "description": "",
       "recordings": [
         {
           "key": "xeno-canto/XC1037026",
