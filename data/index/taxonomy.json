@@ -1,0 +1,3863 @@
+{
+  "kind": "taxonomy",
+  "source": {
+    "title": "IOC World Bird List (v15.2)",
+    "citation": "Gill, F., Donsker, D. & Rasmussen, P. (Eds). 2026. IOC World Bird List (v15.2). doi:10.14344/IOC.ML.15.2.",
+    "url": "https://www.worldbirdnames.org/new/",
+    "listUrl": "https://www.worldbirdnames.org/new/ioc-lists/master-list-2/",
+    "ordersUrl": "https://www.worldbirdnames.org/new/classification/orders-of-birds-draft/",
+    "doi": "https://doi.org/10.14344/IOC.ML.15.2",
+    "retrieved": "2026-11-24",
+    "placement": "Which family belongs to which order, and the sequence of both, follows the IOC 15.2 master spreadsheet. English order names follow the IOC Orders of Birds page, shortened where that 2019 page still uses a wider circumscription than v15.2.",
+    "afrikaans": "Afrikaans order names follow the Afrikaans Wikipedia where an article names the order. Where it does not, the name is the family's Afrikaans heading on this site, or those headings joined. The notes say which."
+  },
+  "root": {
+    "en": "Birds",
+    "af": "Voëls",
+    "scientificName": "Aves"
+  },
+  "notes": [
+    "Ground-hornbills are kept as Bucorvidae, as on this site and in IOC 15.1. IOC 15.2 moves Bucorvus into Bucerotidae, following AviList v2025. The order is Bucerotiformes either way, and the family is shown next to the hornbills.",
+    "Buttonquails (Turnicidae) are in Charadriiformes in the IOC list, not an order of their own. Hamerkop (Scopidae) and the ibises (Threskiornithidae) are Pelecaniformes. Cormorants and darters are Suliformes. Falcons are Falconiformes, separate from the hawks, eagles, osprey and secretarybird (Accipitriformes).",
+    "Suliformes has no Afrikaans name on Wikipedia, so the label joins this site's family headings (Duikers en slangeshalsvoëls). Coraciiformes has no current Afrikaans order name — the Wikipedia article still mixes in hoopoes and hornbills, which the IOC places in Bucerotiformes — so the label joins the three family headings. Pelikaanagtiges is the Wikipedia alias for Pelecaniformes; the article title Roeipotiges is the older totipalmate group, which now sits partly in Suliformes. Dagroofvoëls is used here for Accipitriformes only; falcons are the order Valke.",
+    "Orders with a single family in this guide (ostriches, nightjars, turacos, bustards, grebes, flamingos, mousebirds and falcons) use that family's Afrikaans heading, because Afrikaans Wikipedia has no separate name for the order.",
+    "Seven families have no Afrikaans heading on this site, so that row of the capsule is blank: hawks, eagles and kites; reed warblers; grassbirds; African warblers; monarchs; nicators; and leaf warblers."
+  ],
+  "orders": [
+    {
+      "scientificName": "Struthioniformes",
+      "en": "Ostriches",
+      "af": "Volstruise",
+      "families": [
+        {
+          "slug": "struthionidae",
+          "scientificName": "Struthionidae",
+          "en": "Ostriches",
+          "af": "Volstruis",
+          "species": [
+            {
+              "slug": "struthio-camelus",
+              "scientificName": "Struthio camelus",
+              "en": "Common Ostrich",
+              "af": "Volstruis"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "scientificName": "Anseriformes",
+      "en": "Waterfowl",
+      "af": "Eendvoëls",
+      "families": [
+        {
+          "slug": "anatidae",
+          "scientificName": "Anatidae",
+          "en": "Ducks, geese and swans",
+          "af": "Eende",
+          "species": [
+            {
+              "slug": "alopochen-aegyptiaca",
+              "scientificName": "Alopochen aegyptiaca",
+              "en": "Egyptian Goose",
+              "af": "Kolgans"
+            },
+            {
+              "slug": "anas-capensis",
+              "scientificName": "Anas capensis",
+              "en": "Cape Teal",
+              "af": "Teeleend"
+            },
+            {
+              "slug": "anas-erythrorhyncha",
+              "scientificName": "Anas erythrorhyncha",
+              "en": "Red-billed Teal",
+              "af": "Rooibekeend"
+            },
+            {
+              "slug": "anas-sparsa",
+              "scientificName": "Anas sparsa",
+              "en": "African Black Duck",
+              "af": "Swarteend"
+            },
+            {
+              "slug": "anas-undulata",
+              "scientificName": "Anas undulata",
+              "en": "Yellow-billed Duck",
+              "af": "Geelbekeend"
+            },
+            {
+              "slug": "dendrocygna-bicolor",
+              "scientificName": "Dendrocygna bicolor",
+              "en": "Fulvous Whistling Duck",
+              "af": "Fluiteend"
+            },
+            {
+              "slug": "dendrocygna-viduata",
+              "scientificName": "Dendrocygna viduata",
+              "en": "White-faced Whistling Duck",
+              "af": "Nonnetjie-eend"
+            },
+            {
+              "slug": "netta-erythrophthalma",
+              "scientificName": "Netta erythrophthalma",
+              "en": "Southern Pochard",
+              "af": "Bruineend"
+            },
+            {
+              "slug": "nettapus-auritus",
+              "scientificName": "Nettapus auritus",
+              "en": "African Pygmy Goose",
+              "af": "Dwerggans"
+            },
+            {
+              "slug": "plectropterus-gambensis",
+              "scientificName": "Plectropterus gambensis",
+              "en": "Spur-winged Goose",
+              "af": "Wildemakou"
+            },
+            {
+              "slug": "sarkidiornis-melanotos",
+              "scientificName": "Sarkidiornis melanotos",
+              "en": "Knob-billed Duck",
+              "af": "Knobbeleend"
+            },
+            {
+              "slug": "spatula-hottentota",
+              "scientificName": "Spatula hottentota",
+              "en": "Blue-billed Teal",
+              "af": "Gevlekte Eend"
+            },
+            {
+              "slug": "thalassornis-leuconotus",
+              "scientificName": "Thalassornis leuconotus",
+              "en": "White-backed Duck",
+              "af": "Witrugeend"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "scientificName": "Galliformes",
+      "en": "Landfowl",
+      "af": "Hoendervoëls",
+      "families": [
+        {
+          "slug": "numididae",
+          "scientificName": "Numididae",
+          "en": "Guineafowl",
+          "af": "Tarentaal",
+          "species": [
+            {
+              "slug": "guttera-edouardi",
+              "scientificName": "Guttera edouardi",
+              "en": "Southern Crested Guineafowl",
+              "af": "Kuifkoptarentaal"
+            },
+            {
+              "slug": "numida-meleagris",
+              "scientificName": "Numida meleagris",
+              "en": "Helmeted Guineafowl",
+              "af": "Gewone Tarentaal"
+            }
+          ]
+        },
+        {
+          "slug": "phasianidae",
+          "scientificName": "Phasianidae",
+          "en": "Francolins, spurfowl and quails",
+          "af": "Patryse",
+          "species": [
+            {
+              "slug": "campocolinus-coqui",
+              "scientificName": "Campocolinus coqui",
+              "en": "Coqui Francolin",
+              "af": "Swempie"
+            },
+            {
+              "slug": "coturnix-coturnix",
+              "scientificName": "Coturnix coturnix",
+              "en": "Common Quail",
+              "af": "Afrikaanse Kwartel"
+            },
+            {
+              "slug": "coturnix-delegorguei",
+              "scientificName": "Coturnix delegorguei",
+              "en": "Harlequin Quail",
+              "af": "Bontkwartel"
+            },
+            {
+              "slug": "ortygornis-sephaena",
+              "scientificName": "Ortygornis sephaena",
+              "en": "Crested Francolin",
+              "af": "Bospatrys"
+            },
+            {
+              "slug": "pternistis-afer",
+              "scientificName": "Pternistis afer",
+              "en": "Red-necked Spurfowl",
+              "af": "Rooikeelfisant"
+            },
+            {
+              "slug": "pternistis-natalensis",
+              "scientificName": "Pternistis natalensis",
+              "en": "Natal Spurfowl",
+              "af": "Natalse Fisant"
+            },
+            {
+              "slug": "pternistis-swainsonii",
+              "scientificName": "Pternistis swainsonii",
+              "en": "Swainson’s Spurfowl",
+              "af": "Bosveldfisant"
+            },
+            {
+              "slug": "scleroptila-shelleyi",
+              "scientificName": "Scleroptila shelleyi",
+              "en": "Shelley’s Francolin",
+              "af": "Laeveldpatrys"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "scientificName": "Caprimulgiformes",
+      "en": "Nightjars",
+      "af": "Naguile",
+      "families": [
+        {
+          "slug": "caprimulgidae",
+          "scientificName": "Caprimulgidae",
+          "en": "Nightjars",
+          "af": "Naguile",
+          "species": [
+            {
+              "slug": "caprimulgus-europaeus",
+              "scientificName": "Caprimulgus europaeus",
+              "en": "European Nightjar",
+              "af": "Europese Naguil"
+            },
+            {
+              "slug": "caprimulgus-fossii",
+              "scientificName": "Caprimulgus fossii",
+              "en": "Square-tailed Nightjar",
+              "af": "Laeveldnaguil"
+            },
+            {
+              "slug": "caprimulgus-pectoralis",
+              "scientificName": "Caprimulgus pectoralis",
+              "en": "Fiery-necked Nightjar",
+              "af": "Afrikaanse Naguil"
+            },
+            {
+              "slug": "caprimulgus-rufigena",
+              "scientificName": "Caprimulgus rufigena",
+              "en": "Rufous-cheeked Nightjar",
+              "af": "Rooiwangnaguil"
+            },
+            {
+              "slug": "caprimulgus-tristigma",
+              "scientificName": "Caprimulgus tristigma",
+              "en": "Freckled Nightjar",
+              "af": "Donkernaguil"
+            },
+            {
+              "slug": "caprimulgus-vexillarius",
+              "scientificName": "Caprimulgus vexillarius",
+              "en": "Pennant-winged Nightjar",
+              "af": "Wimpelvlerknaguil"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "scientificName": "Apodiformes",
+      "en": "Swifts and hummingbirds",
+      "af": "Windswaelagtiges",
+      "families": [
+        {
+          "slug": "apodidae",
+          "scientificName": "Apodidae",
+          "en": "Swifts",
+          "af": "Windswaels",
+          "species": [
+            {
+              "slug": "apus-affinis",
+              "scientificName": "Apus affinis",
+              "en": "Little Swift",
+              "af": "Kleinwindswael"
+            },
+            {
+              "slug": "apus-apus",
+              "scientificName": "Apus apus",
+              "en": "Common Swift",
+              "af": "Europese Windswael"
+            },
+            {
+              "slug": "apus-barbatus",
+              "scientificName": "Apus barbatus",
+              "en": "African Black Swift",
+              "af": "Swartwindswael"
+            },
+            {
+              "slug": "apus-caffer",
+              "scientificName": "Apus caffer",
+              "en": "White-rumped Swift",
+              "af": "Witkruiswindswael"
+            },
+            {
+              "slug": "apus-horus",
+              "scientificName": "Apus horus",
+              "en": "Horus Swift",
+              "af": "Horuswindswael"
+            },
+            {
+              "slug": "cypsiurus-parvus",
+              "scientificName": "Cypsiurus parvus",
+              "en": "African Palm Swift",
+              "af": "Palmwindswael"
+            },
+            {
+              "slug": "neafrapus-boehmi",
+              "scientificName": "Neafrapus boehmi",
+              "en": "Böhm’s Spinetail",
+              "af": "Witpensstekelstert"
+            },
+            {
+              "slug": "tachymarptis-melba",
+              "scientificName": "Tachymarptis melba",
+              "en": "Alpine Swift",
+              "af": "Witpenswindswael"
+            },
+            {
+              "slug": "telacanthura-ussheri",
+              "scientificName": "Telacanthura ussheri",
+              "en": "Mottled Spinetail",
+              "af": "Gevlekte Stekelstert"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "scientificName": "Musophagiformes",
+      "en": "Turacos",
+      "af": "Loeries",
+      "families": [
+        {
+          "slug": "musophagidae",
+          "scientificName": "Musophagidae",
+          "en": "Turacos",
+          "af": "Loeries",
+          "species": [
+            {
+              "slug": "crinifer-concolor",
+              "scientificName": "Crinifer concolor",
+              "en": "Grey Go-away-bird",
+              "af": "Kwêvoël"
+            },
+            {
+              "slug": "tauraco-corythaix",
+              "scientificName": "Tauraco corythaix",
+              "en": "Knysna Turaco",
+              "af": "Knysnaloerie"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "scientificName": "Otidiformes",
+      "en": "Bustards",
+      "af": "Korhane",
+      "families": [
+        {
+          "slug": "otididae",
+          "scientificName": "Otididae",
+          "en": "Bustards",
+          "af": "Korhane",
+          "species": [
+            {
+              "slug": "ardeotis-kori",
+              "scientificName": "Ardeotis kori",
+              "en": "Kori Bustard",
+              "af": "Gompou"
+            },
+            {
+              "slug": "lissotis-melanogaster",
+              "scientificName": "Lissotis melanogaster",
+              "en": "Black-bellied Bustard",
+              "af": "Langbeenkorhaan"
+            },
+            {
+              "slug": "lophotis-ruficrista",
+              "scientificName": "Lophotis ruficrista",
+              "en": "Red-crested Korhaan",
+              "af": "Boskorhaan"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "scientificName": "Cuculiformes",
+      "en": "Cuckoos",
+      "af": "Koekoekvoëls",
+      "families": [
+        {
+          "slug": "cuculidae",
+          "scientificName": "Cuculidae",
+          "en": "Cuckoos",
+          "af": "Koekoeke",
+          "species": [
+            {
+              "slug": "centropus-burchellii",
+              "scientificName": "Centropus burchellii",
+              "en": "Burchell’s Coucal",
+              "af": "Gewone Vleiloerie"
+            },
+            {
+              "slug": "centropus-grillii",
+              "scientificName": "Centropus grillii",
+              "en": "Black Coucal",
+              "af": "Swartvleiloerie"
+            },
+            {
+              "slug": "centropus-senegalensis",
+              "scientificName": "Centropus senegalensis",
+              "en": "Senegal Coucal",
+              "af": "Senegalvleiloerie"
+            },
+            {
+              "slug": "chrysococcyx-caprius",
+              "scientificName": "Chrysococcyx caprius",
+              "en": "Diederik Cuckoo",
+              "af": "Diederikkie"
+            },
+            {
+              "slug": "chrysococcyx-cupreus",
+              "scientificName": "Chrysococcyx cupreus",
+              "en": "African Emerald Cuckoo",
+              "af": "Mooimeisie"
+            },
+            {
+              "slug": "chrysococcyx-klaas",
+              "scientificName": "Chrysococcyx klaas",
+              "en": "Klaas’s Cuckoo",
+              "af": "Meitjie"
+            },
+            {
+              "slug": "clamator-glandarius",
+              "scientificName": "Clamator glandarius",
+              "en": "Great Spotted Cuckoo",
+              "af": "Gevlekte Koekoek"
+            },
+            {
+              "slug": "clamator-jacobinus",
+              "scientificName": "Clamator jacobinus",
+              "en": "Jacobin Cuckoo",
+              "af": "Bontnuwejaarsvoël"
+            },
+            {
+              "slug": "clamator-levaillantii",
+              "scientificName": "Clamator levaillantii",
+              "en": "Levaillant’s Cuckoo",
+              "af": "Gestreepte Nuwejaarsvoël"
+            },
+            {
+              "slug": "cuculus-canorus",
+              "scientificName": "Cuculus canorus",
+              "en": "Common Cuckoo",
+              "af": "Europese Koekoek"
+            },
+            {
+              "slug": "cuculus-clamosus",
+              "scientificName": "Cuculus clamosus",
+              "en": "Black Cuckoo",
+              "af": "Swartkoekoek"
+            },
+            {
+              "slug": "cuculus-gularis",
+              "scientificName": "Cuculus gularis",
+              "en": "African Cuckoo",
+              "af": "Afrikaanse Koekoek"
+            },
+            {
+              "slug": "cuculus-solitarius",
+              "scientificName": "Cuculus solitarius",
+              "en": "Red-chested Cuckoo",
+              "af": "Piet-my-vrou"
+            },
+            {
+              "slug": "pachycoccyx-audeberti",
+              "scientificName": "Pachycoccyx audeberti",
+              "en": "Thick-billed Cuckoo",
+              "af": "Dikbekkoekoek"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "scientificName": "Pterocliformes",
+      "en": "Sandgrouse",
+      "af": "Sandpatrysagtiges",
+      "families": [
+        {
+          "slug": "pteroclidae",
+          "scientificName": "Pteroclidae",
+          "en": "Sandgrouse",
+          "af": "Sandpatryse",
+          "species": [
+            {
+              "slug": "pterocles-bicinctus",
+              "scientificName": "Pterocles bicinctus",
+              "en": "Double-banded Sandgrouse",
+              "af": "Dubbelbandsandpatrys"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "scientificName": "Columbiformes",
+      "en": "Pigeons and doves",
+      "af": "Duifagtiges",
+      "families": [
+        {
+          "slug": "columbidae",
+          "scientificName": "Columbidae",
+          "en": "Pigeons and doves",
+          "af": "Duiwe",
+          "species": [
+            {
+              "slug": "aplopelia-larvata",
+              "scientificName": "Aplopelia larvata",
+              "en": "Lemon Dove",
+              "af": "Kaneelduifie"
+            },
+            {
+              "slug": "columba-arquatrix",
+              "scientificName": "Columba arquatrix",
+              "en": "African Olive Pigeon",
+              "af": "Geelbekbosduif"
+            },
+            {
+              "slug": "columba-guinea",
+              "scientificName": "Columba guinea",
+              "en": "Speckled Pigeon",
+              "af": "Kransduif"
+            },
+            {
+              "slug": "columba-livia",
+              "scientificName": "Columba livia",
+              "en": "Rock Dove",
+              "af": "Tuinduif"
+            },
+            {
+              "slug": "oena-capensis",
+              "scientificName": "Oena capensis",
+              "en": "Namaqua Dove",
+              "af": "Namakwaduifie"
+            },
+            {
+              "slug": "spilopelia-senegalensis",
+              "scientificName": "Spilopelia senegalensis",
+              "en": "Laughing Dove",
+              "af": "Rooiborsduifie"
+            },
+            {
+              "slug": "streptopelia-capicola",
+              "scientificName": "Streptopelia capicola",
+              "en": "Cape Turtle (Ring-necked) Dove",
+              "af": "Gewone Tortelduif"
+            },
+            {
+              "slug": "streptopelia-decipiens",
+              "scientificName": "Streptopelia decipiens",
+              "en": "African Mourning (Mourning Collared) Dove",
+              "af": "Rooioogtortelduif"
+            },
+            {
+              "slug": "streptopelia-semitorquata",
+              "scientificName": "Streptopelia semitorquata",
+              "en": "Red-eyed Dove",
+              "af": "Grootringduif"
+            },
+            {
+              "slug": "treron-calvus",
+              "scientificName": "Treron calvus",
+              "en": "African Green Pigeon",
+              "af": "Papegaaiduif"
+            },
+            {
+              "slug": "turtur-afer",
+              "scientificName": "Turtur afer",
+              "en": "Blue-spotted Wood Dove",
+              "af": "Blouvlekduifie"
+            },
+            {
+              "slug": "turtur-chalcospilos",
+              "scientificName": "Turtur chalcospilos",
+              "en": "Emerald-spotted Wood Dove",
+              "af": "Groenvlekduifie"
+            },
+            {
+              "slug": "turtur-tympanistria",
+              "scientificName": "Turtur tympanistria",
+              "en": "Tambourine Dove",
+              "af": "Witborsduifie"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "scientificName": "Gruiformes",
+      "en": "Rails, cranes and allies",
+      "af": "Kraanvoëlagtiges",
+      "families": [
+        {
+          "slug": "heliornithidae",
+          "scientificName": "Heliornithidae",
+          "en": "Finfoots",
+          "af": "Watertrapper",
+          "species": [
+            {
+              "slug": "podica-senegalensis",
+              "scientificName": "Podica senegalensis",
+              "en": "African Finfoot",
+              "af": "Watertrapper"
+            }
+          ]
+        },
+        {
+          "slug": "sarothruridae",
+          "scientificName": "Sarothruridae",
+          "en": "Flufftails",
+          "af": "Vleikuikens",
+          "species": [
+            {
+              "slug": "sarothrura-elegans",
+              "scientificName": "Sarothrura elegans",
+              "en": "Buff-spotted Flufftail",
+              "af": "Gevlekte Vleikuiken"
+            },
+            {
+              "slug": "sarothrura-rufa",
+              "scientificName": "Sarothrura rufa",
+              "en": "Red-chested Flufftail",
+              "af": "Rooiborsvleikuiken"
+            }
+          ]
+        },
+        {
+          "slug": "rallidae",
+          "scientificName": "Rallidae",
+          "en": "Rails, crakes and coots",
+          "af": "Riethane",
+          "species": [
+            {
+              "slug": "aenigmatolimnas-marginalis",
+              "scientificName": "Aenigmatolimnas marginalis",
+              "en": "Striped Crake",
+              "af": "Gestreepte Riethaan"
+            },
+            {
+              "slug": "crecopsis-egregia",
+              "scientificName": "Crecopsis egregia",
+              "en": "African Crake",
+              "af": "Afrikaanse Riethaan"
+            },
+            {
+              "slug": "crex-crex",
+              "scientificName": "Crex crex",
+              "en": "Corn Crake",
+              "af": "Kwartelkoning"
+            },
+            {
+              "slug": "fulica-cristata",
+              "scientificName": "Fulica cristata",
+              "en": "Red-knobbed Coot",
+              "af": "Bleshoender"
+            },
+            {
+              "slug": "gallinula-chloropus",
+              "scientificName": "Gallinula chloropus",
+              "en": "Common Moorhen",
+              "af": "Grootwaterhoender"
+            },
+            {
+              "slug": "paragallinula-angulata",
+              "scientificName": "Paragallinula angulata",
+              "en": "Lesser Moorhen",
+              "af": "Kleinwaterhoender"
+            },
+            {
+              "slug": "porphyrio-alleni",
+              "scientificName": "Porphyrio alleni",
+              "en": "Allen’s Gallinule",
+              "af": "Kleinkoningriethaan"
+            },
+            {
+              "slug": "porphyrio-porphyrio",
+              "scientificName": "Porphyrio porphyrio",
+              "en": "Purple Swamphen",
+              "af": "Grootkoningriethaan"
+            },
+            {
+              "slug": "rallus-caerulescens",
+              "scientificName": "Rallus caerulescens",
+              "en": "African Rail",
+              "af": "Grootriethaan"
+            },
+            {
+              "slug": "zapornia-flavirostra",
+              "scientificName": "Zapornia flavirostra",
+              "en": "Black Crake",
+              "af": "Swartriethaan"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "scientificName": "Podicipediformes",
+      "en": "Grebes",
+      "af": "Dobbertjies",
+      "families": [
+        {
+          "slug": "podicipedidae",
+          "scientificName": "Podicipedidae",
+          "en": "Grebes",
+          "af": "Dobbertjies",
+          "species": [
+            {
+              "slug": "tachybaptus-ruficollis",
+              "scientificName": "Tachybaptus ruficollis",
+              "en": "Little Grebe",
+              "af": "Kleindobbertjie"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "scientificName": "Phoenicopteriformes",
+      "en": "Flamingos",
+      "af": "Flaminke",
+      "families": [
+        {
+          "slug": "phoenicopteridae",
+          "scientificName": "Phoenicopteridae",
+          "en": "Flamingos",
+          "af": "Flaminke",
+          "species": [
+            {
+              "slug": "phoeniconaias-minor",
+              "scientificName": "Phoeniconaias minor",
+              "en": "Lesser Flamingo",
+              "af": "Kleinflamink"
+            },
+            {
+              "slug": "phoenicopterus-roseus",
+              "scientificName": "Phoenicopterus roseus",
+              "en": "Greater Flamingo",
+              "af": "Grootflamink"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "scientificName": "Charadriiformes",
+      "en": "Shorebirds",
+      "af": "Steltloperagtiges",
+      "families": [
+        {
+          "slug": "turnicidae",
+          "scientificName": "Turnicidae",
+          "en": "Buttonquails",
+          "af": "Kwarteltjie",
+          "species": [
+            {
+              "slug": "turnix-sylvaticus",
+              "scientificName": "Turnix sylvaticus",
+              "en": "Common (Kurrichane) Buttonquail",
+              "af": "Bosveldkwarteltjie"
+            }
+          ]
+        },
+        {
+          "slug": "burhinidae",
+          "scientificName": "Burhinidae",
+          "en": "Thick-knees",
+          "af": "Dikkoppe",
+          "species": [
+            {
+              "slug": "burhinus-capensis",
+              "scientificName": "Burhinus capensis",
+              "en": "Spotted Thick-knee",
+              "af": "Gewone Dikkop"
+            },
+            {
+              "slug": "burhinus-vermiculatus",
+              "scientificName": "Burhinus vermiculatus",
+              "en": "Water Thick-knee",
+              "af": "Waterdikkop"
+            }
+          ]
+        },
+        {
+          "slug": "recurvirostridae",
+          "scientificName": "Recurvirostridae",
+          "en": "Stilts and avocets",
+          "af": "Elsies",
+          "species": [
+            {
+              "slug": "himantopus-himantopus",
+              "scientificName": "Himantopus himantopus",
+              "en": "Black-winged Stilt",
+              "af": "Rooipootelsie"
+            },
+            {
+              "slug": "recurvirostra-avosetta",
+              "scientificName": "Recurvirostra avosetta",
+              "en": "Pied Avocet",
+              "af": "Bontelsie"
+            }
+          ]
+        },
+        {
+          "slug": "charadriidae",
+          "scientificName": "Charadriidae",
+          "en": "Plovers and lapwings",
+          "af": "Strandkiewiete",
+          "species": [
+            {
+              "slug": "anarhynchus-asiaticus",
+              "scientificName": "Anarhynchus asiaticus",
+              "en": "Caspian Plover",
+              "af": "Asiatiese Strandkiewiet"
+            },
+            {
+              "slug": "anarhynchus-marginatus",
+              "scientificName": "Anarhynchus marginatus",
+              "en": "White-fronted Plover",
+              "af": "Vaalstrandkiewiet"
+            },
+            {
+              "slug": "anarhynchus-pallidus",
+              "scientificName": "Anarhynchus pallidus",
+              "en": "Chestnut-banded Plover",
+              "af": "Rooibandstrandkiewiet"
+            },
+            {
+              "slug": "anarhynchus-pecuarius",
+              "scientificName": "Anarhynchus pecuarius",
+              "en": "Kittlitz’s Plover",
+              "af": "Geelborsstrandkiewiet"
+            },
+            {
+              "slug": "charadrius-hiaticula",
+              "scientificName": "Charadrius hiaticula",
+              "en": "Common Ringed Plover",
+              "af": "Ringnekstrandkiewiet"
+            },
+            {
+              "slug": "thinornis-tricollaris",
+              "scientificName": "Thinornis tricollaris",
+              "en": "Three-banded Plover",
+              "af": "Driebandstrandkiewiet"
+            },
+            {
+              "slug": "vanellus-albiceps",
+              "scientificName": "Vanellus albiceps",
+              "en": "White-crowned Lapwing",
+              "af": "Witkopkiewiet"
+            },
+            {
+              "slug": "vanellus-armatus",
+              "scientificName": "Vanellus armatus",
+              "en": "Blacksmith Lapwing",
+              "af": "Bontkiewiet"
+            },
+            {
+              "slug": "vanellus-coronatus",
+              "scientificName": "Vanellus coronatus",
+              "en": "Crowned Lapwing",
+              "af": "Kroonkiewiet"
+            },
+            {
+              "slug": "vanellus-lugubris",
+              "scientificName": "Vanellus lugubris",
+              "en": "Senegal Lapwing",
+              "af": "Kleinswartvlerkkiewiet"
+            },
+            {
+              "slug": "vanellus-senegallus",
+              "scientificName": "Vanellus senegallus",
+              "en": "African Wattled Lapwing",
+              "af": "Lelkiewiet"
+            }
+          ]
+        },
+        {
+          "slug": "rostratulidae",
+          "scientificName": "Rostratulidae",
+          "en": "Painted-snipes",
+          "af": "Goudsnip",
+          "species": [
+            {
+              "slug": "rostratula-benghalensis",
+              "scientificName": "Rostratula benghalensis",
+              "en": "Greater Painted-Snipe",
+              "af": "Goudsnip"
+            }
+          ]
+        },
+        {
+          "slug": "jacanidae",
+          "scientificName": "Jacanidae",
+          "en": "Jacanas",
+          "af": "Langtoon",
+          "species": [
+            {
+              "slug": "actophilornis-africanus",
+              "scientificName": "Actophilornis africanus",
+              "en": "African Jacana",
+              "af": "Grootlangtoon"
+            },
+            {
+              "slug": "microparra-capensis",
+              "scientificName": "Microparra capensis",
+              "en": "Lesser Jacana",
+              "af": "Dwerglangtoon"
+            }
+          ]
+        },
+        {
+          "slug": "scolopacidae",
+          "scientificName": "Scolopacidae",
+          "en": "Sandpipers and snipes",
+          "af": "Strandlopers",
+          "species": [
+            {
+              "slug": "actitis-hypoleucos",
+              "scientificName": "Actitis hypoleucos",
+              "en": "Common Sandpiper",
+              "af": "Gewone Ruiter"
+            },
+            {
+              "slug": "calidris-ferruginea",
+              "scientificName": "Calidris ferruginea",
+              "en": "Curlew Sandpiper",
+              "af": "Krombekstrandloper"
+            },
+            {
+              "slug": "calidris-melanotos",
+              "scientificName": "Calidris melanotos",
+              "en": "Pectoral Sandpiper",
+              "af": "Geelpootstrandloper"
+            },
+            {
+              "slug": "calidris-minuta",
+              "scientificName": "Calidris minuta",
+              "en": "Little Stint",
+              "af": "Kleinstrandloper"
+            },
+            {
+              "slug": "calidris-pugnax",
+              "scientificName": "Calidris pugnax",
+              "en": "Ruff",
+              "af": "Kemphaan"
+            },
+            {
+              "slug": "gallinago-nigripennis",
+              "scientificName": "Gallinago nigripennis",
+              "en": "African Snipe",
+              "af": "Afrikaanse Snip"
+            },
+            {
+              "slug": "tringa-glareola",
+              "scientificName": "Tringa glareola",
+              "en": "Wood Sandpiper",
+              "af": "Bosruiter"
+            },
+            {
+              "slug": "tringa-nebularia",
+              "scientificName": "Tringa nebularia",
+              "en": "Common Greenshank",
+              "af": "Groenpootruiter"
+            },
+            {
+              "slug": "tringa-ochropus",
+              "scientificName": "Tringa ochropus",
+              "en": "Green Sandpiper",
+              "af": "Witgatruiter"
+            },
+            {
+              "slug": "tringa-stagnatilis",
+              "scientificName": "Tringa stagnatilis",
+              "en": "Marsh Sandpiper",
+              "af": "Moerasruiter"
+            }
+          ]
+        },
+        {
+          "slug": "glareolidae",
+          "scientificName": "Glareolidae",
+          "en": "Coursers and pratincoles",
+          "af": "Drawwertjies",
+          "species": [
+            {
+              "slug": "cursorius-temminckii",
+              "scientificName": "Cursorius temminckii",
+              "en": "Temminck’s Courser",
+              "af": "Trekdrawwertjie"
+            },
+            {
+              "slug": "glareola-nordmanni",
+              "scientificName": "Glareola nordmanni",
+              "en": "Black-winged Pratincole",
+              "af": "Swartvlerksprinkaanvoël"
+            },
+            {
+              "slug": "glareola-pratincola",
+              "scientificName": "Glareola pratincola",
+              "en": "Collared Pratincole",
+              "af": "Rooivlerksprinkaanvoël"
+            },
+            {
+              "slug": "rhinoptilus-chalcopterus",
+              "scientificName": "Rhinoptilus chalcopterus",
+              "en": "Bronze-winged Courser",
+              "af": "Bronsvlerkdrawwertjie"
+            },
+            {
+              "slug": "rhinoptilus-cinctus",
+              "scientificName": "Rhinoptilus cinctus",
+              "en": "Three-banded Courser",
+              "af": "Driebanddrawwertjie"
+            }
+          ]
+        },
+        {
+          "slug": "laridae",
+          "scientificName": "Laridae",
+          "en": "Gulls, terns and skimmers",
+          "af": "Meeue",
+          "species": [
+            {
+              "slug": "chlidonias-hybrida",
+              "scientificName": "Chlidonias hybrida",
+              "en": "Whiskered Tern",
+              "af": "Witbaardsterretjie"
+            },
+            {
+              "slug": "chlidonias-leucopterus",
+              "scientificName": "Chlidonias leucopterus",
+              "en": "White-winged Tern",
+              "af": "Witvlerksterretjie"
+            },
+            {
+              "slug": "chroicocephalus-cirrocephalus",
+              "scientificName": "Chroicocephalus cirrocephalus",
+              "en": "Grey-headed Gull",
+              "af": "Gryskopmeeu"
+            },
+            {
+              "slug": "rynchops-flavirostris",
+              "scientificName": "Rynchops flavirostris",
+              "en": "African Skimmer",
+              "af": "Waterploeër"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "scientificName": "Ciconiiformes",
+      "en": "Storks",
+      "af": "Ooievaaragtiges",
+      "families": [
+        {
+          "slug": "ciconiidae",
+          "scientificName": "Ciconiidae",
+          "en": "Storks",
+          "af": "Ooievaars",
+          "species": [
+            {
+              "slug": "anastomus-lamelligerus",
+              "scientificName": "Anastomus lamelligerus",
+              "en": "African Openbill",
+              "af": "Oopbekooievaar"
+            },
+            {
+              "slug": "ciconia-abdimii",
+              "scientificName": "Ciconia abdimii",
+              "en": "Abdim’s Stork",
+              "af": "Kleinswartooievaar"
+            },
+            {
+              "slug": "ciconia-ciconia",
+              "scientificName": "Ciconia ciconia",
+              "en": "White Stork",
+              "af": "Witooievaar"
+            },
+            {
+              "slug": "ciconia-microscelis",
+              "scientificName": "Ciconia microscelis",
+              "en": "African Woolly-necked Stork",
+              "af": "Wolnekooievaar"
+            },
+            {
+              "slug": "ciconia-nigra",
+              "scientificName": "Ciconia nigra",
+              "en": "Black Stork",
+              "af": "Grootswartooievaar"
+            },
+            {
+              "slug": "ephippiorhynchus-senegalensis",
+              "scientificName": "Ephippiorhynchus senegalensis",
+              "en": "Saddle-billed Stork",
+              "af": "Saalbekooievaar"
+            },
+            {
+              "slug": "leptoptilos-crumenifer",
+              "scientificName": "Leptoptilos crumenifer",
+              "en": "Marabou Stork",
+              "af": "Maraboe"
+            },
+            {
+              "slug": "mycteria-ibis",
+              "scientificName": "Mycteria ibis",
+              "en": "Yellow-billed Stork",
+              "af": "Nimmersat"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "scientificName": "Suliformes",
+      "en": "Cormorants and allies",
+      "af": "Duikers en slangeshalsvoëls",
+      "families": [
+        {
+          "slug": "anhingidae",
+          "scientificName": "Anhingidae",
+          "en": "Darters",
+          "af": "Slanghalsvoël",
+          "species": [
+            {
+              "slug": "anhinga-rufa",
+              "scientificName": "Anhinga rufa",
+              "en": "African Darter",
+              "af": "Slanghalsvoël"
+            }
+          ]
+        },
+        {
+          "slug": "phalacrocoracidae",
+          "scientificName": "Phalacrocoracidae",
+          "en": "Cormorants",
+          "af": "Duikers",
+          "species": [
+            {
+              "slug": "microcarbo-africanus",
+              "scientificName": "Microcarbo africanus",
+              "en": "Reed Cormorant",
+              "af": "Rietduiker"
+            },
+            {
+              "slug": "phalacrocorax-carbo",
+              "scientificName": "Phalacrocorax carbo",
+              "en": "Great (White-breasted) Cormorant",
+              "af": "Witborsduiker"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "scientificName": "Pelecaniformes",
+      "en": "Herons, ibises and pelicans",
+      "af": "Pelikaanagtiges",
+      "families": [
+        {
+          "slug": "threskiornithidae",
+          "scientificName": "Threskiornithidae",
+          "en": "Ibises and spoonbills",
+          "af": "Ibisse",
+          "species": [
+            {
+              "slug": "bostrychia-hagedash",
+              "scientificName": "Bostrychia hagedash",
+              "en": "Hadeda (Hadada) Ibis",
+              "af": "Hadeda"
+            },
+            {
+              "slug": "geronticus-calvus",
+              "scientificName": "Geronticus calvus",
+              "en": "Southern Bald Ibis",
+              "af": "Kalkoenibis"
+            },
+            {
+              "slug": "platalea-alba",
+              "scientificName": "Platalea alba",
+              "en": "African Spoonbill",
+              "af": "Lepelaar"
+            },
+            {
+              "slug": "plegadis-falcinellus",
+              "scientificName": "Plegadis falcinellus",
+              "en": "Glossy Ibis",
+              "af": "Glansibis"
+            },
+            {
+              "slug": "threskiornis-aethiopicus",
+              "scientificName": "Threskiornis aethiopicus",
+              "en": "African Sacred Ibis",
+              "af": "Skoorsteenveër"
+            }
+          ]
+        },
+        {
+          "slug": "ardeidae",
+          "scientificName": "Ardeidae",
+          "en": "Herons, egrets and bitterns",
+          "af": "Reiers",
+          "species": [
+            {
+              "slug": "ardea-alba",
+              "scientificName": "Ardea alba",
+              "en": "Great Egret",
+              "af": "Grootwitreier"
+            },
+            {
+              "slug": "ardea-brachyrhyncha",
+              "scientificName": "Ardea brachyrhyncha",
+              "en": "Yellow-billed Egret",
+              "af": "Geelbekwitreier"
+            },
+            {
+              "slug": "ardea-cinerea",
+              "scientificName": "Ardea cinerea",
+              "en": "Grey Heron",
+              "af": "Bloureier"
+            },
+            {
+              "slug": "ardea-goliath",
+              "scientificName": "Ardea goliath",
+              "en": "Goliath Heron",
+              "af": "Reusereier"
+            },
+            {
+              "slug": "ardea-ibis",
+              "scientificName": "Ardea ibis",
+              "en": "Western Cattle Egret",
+              "af": "Veereier"
+            },
+            {
+              "slug": "ardea-melanocephala",
+              "scientificName": "Ardea melanocephala",
+              "en": "Black-headed Heron",
+              "af": "Swartkopreier"
+            },
+            {
+              "slug": "ardea-purpurea",
+              "scientificName": "Ardea purpurea",
+              "en": "Purple Heron",
+              "af": "Rooireier"
+            },
+            {
+              "slug": "ardeola-ralloides",
+              "scientificName": "Ardeola ralloides",
+              "en": "Squacco Heron",
+              "af": "Ralreier"
+            },
+            {
+              "slug": "botaurus-minutus",
+              "scientificName": "Botaurus minutus",
+              "en": "Little Bittern",
+              "af": "Kleinrietreier"
+            },
+            {
+              "slug": "botaurus-sturmii",
+              "scientificName": "Botaurus sturmii",
+              "en": "Dwarf Bittern",
+              "af": "Dwergrietreier"
+            },
+            {
+              "slug": "butorides-atricapilla",
+              "scientificName": "Butorides atricapilla",
+              "en": "Little Heron",
+              "af": "Groenrugreier"
+            },
+            {
+              "slug": "calherodius-leuconotus",
+              "scientificName": "Calherodius leuconotus",
+              "en": "White-backed Night Heron",
+              "af": "Witrugnagreier"
+            },
+            {
+              "slug": "egretta-ardesiaca",
+              "scientificName": "Egretta ardesiaca",
+              "en": "Black Heron",
+              "af": "Swartreier"
+            },
+            {
+              "slug": "egretta-garzetta",
+              "scientificName": "Egretta garzetta",
+              "en": "Little Egret",
+              "af": "Kleinwitreier"
+            },
+            {
+              "slug": "nycticorax-nycticorax",
+              "scientificName": "Nycticorax nycticorax",
+              "en": "Black-crowned Night Heron",
+              "af": "Gewone Nagreier"
+            }
+          ]
+        },
+        {
+          "slug": "scopidae",
+          "scientificName": "Scopidae",
+          "en": "Hamerkop",
+          "af": "Hamerkop",
+          "species": [
+            {
+              "slug": "scopus-umbretta",
+              "scientificName": "Scopus umbretta",
+              "en": "Hamerkop",
+              "af": "Hamerkop"
+            }
+          ]
+        },
+        {
+          "slug": "pelecanidae",
+          "scientificName": "Pelecanidae",
+          "en": "Pelicans",
+          "af": "Pelikane",
+          "species": [
+            {
+              "slug": "pelecanus-onocrotalus",
+              "scientificName": "Pelecanus onocrotalus",
+              "en": "Great White Pelican",
+              "af": "Witpelikaan"
+            },
+            {
+              "slug": "pelecanus-rufescens",
+              "scientificName": "Pelecanus rufescens",
+              "en": "Pink-backed Pelican",
+              "af": "Kleinpelikaan"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "scientificName": "Accipitriformes",
+      "en": "Hawks, eagles and vultures",
+      "af": "Dagroofvoëls",
+      "families": [
+        {
+          "slug": "sagittariidae",
+          "scientificName": "Sagittariidae",
+          "en": "Secretarybird",
+          "af": "Sekretarisvoël",
+          "species": [
+            {
+              "slug": "sagittarius-serpentarius",
+              "scientificName": "Sagittarius serpentarius",
+              "en": "Secretarybird",
+              "af": "Sekretarisvoël"
+            }
+          ]
+        },
+        {
+          "slug": "pandionidae",
+          "scientificName": "Pandionidae",
+          "en": "Ospreys",
+          "af": "Visvalk",
+          "species": [
+            {
+              "slug": "pandion-haliaetus",
+              "scientificName": "Pandion haliaetus",
+              "en": "Osprey",
+              "af": "Visvalk"
+            }
+          ]
+        },
+        {
+          "slug": "accipitridae",
+          "scientificName": "Accipitridae",
+          "en": "Hawks, eagles and kites",
+          "af": null,
+          "species": [
+            {
+              "slug": "accipiter-ovampensis",
+              "scientificName": "Accipiter ovampensis",
+              "en": "Ovambo Sparrowhawk",
+              "af": "Ovambosperwer"
+            },
+            {
+              "slug": "aerospiza-tachiro",
+              "scientificName": "Aerospiza tachiro",
+              "en": "African Goshawk",
+              "af": "Afrikaanse Sperwer"
+            },
+            {
+              "slug": "aquila-nipalensis",
+              "scientificName": "Aquila nipalensis",
+              "en": "Steppe Eagle",
+              "af": "Steppe-arend"
+            },
+            {
+              "slug": "aquila-rapax",
+              "scientificName": "Aquila rapax",
+              "en": "Tawny Eagle",
+              "af": "Roofarend"
+            },
+            {
+              "slug": "aquila-spilogaster",
+              "scientificName": "Aquila spilogaster",
+              "en": "African Hawk Eagle",
+              "af": "Grootjagarend"
+            },
+            {
+              "slug": "aquila-verreauxii",
+              "scientificName": "Aquila verreauxii",
+              "en": "Verreaux’s Eagle",
+              "af": "Witkruisarend"
+            },
+            {
+              "slug": "astur-melanoleucus",
+              "scientificName": "Astur melanoleucus",
+              "en": "Black Sparrowhawk",
+              "af": "Swartsperwer"
+            },
+            {
+              "slug": "aviceda-cuculoides",
+              "scientificName": "Aviceda cuculoides",
+              "en": "African Cuckoo Hawk",
+              "af": "Koekoekvalk"
+            },
+            {
+              "slug": "buteo-buteo",
+              "scientificName": "Buteo buteo",
+              "en": "Common (Steppe) Buzzard",
+              "af": "Bruinjakkalsvoël"
+            },
+            {
+              "slug": "buteo-rufofuscus",
+              "scientificName": "Buteo rufofuscus",
+              "en": "Jackal Buzzard",
+              "af": "Rooiborsjakkalsvoël"
+            },
+            {
+              "slug": "buteo-trizonatus",
+              "scientificName": "Buteo trizonatus",
+              "en": "Forest Buzzard",
+              "af": "Bosjakkalsvoël"
+            },
+            {
+              "slug": "circaetus-cinereus",
+              "scientificName": "Circaetus cinereus",
+              "en": "Brown Snake Eagle",
+              "af": "Bruinslangarend"
+            },
+            {
+              "slug": "circaetus-pectoralis",
+              "scientificName": "Circaetus pectoralis",
+              "en": "Black-chested Snake Eagle",
+              "af": "Swartborsslangarend"
+            },
+            {
+              "slug": "circus-macrourus",
+              "scientificName": "Circus macrourus",
+              "en": "Pallid Harrier",
+              "af": "Witborsvleivalk"
+            },
+            {
+              "slug": "circus-pygargus",
+              "scientificName": "Circus pygargus",
+              "en": "Montagu’s Harrier",
+              "af": "Blouvleivalk"
+            },
+            {
+              "slug": "circus-ranivorus",
+              "scientificName": "Circus ranivorus",
+              "en": "African Marsh Harrier",
+              "af": "Afrikaanse Vleivalk"
+            },
+            {
+              "slug": "clanga-pomarina",
+              "scientificName": "Clanga pomarina",
+              "en": "Lesser Spotted Eagle",
+              "af": "Gevlekte Arend"
+            },
+            {
+              "slug": "elanus-caeruleus",
+              "scientificName": "Elanus caeruleus",
+              "en": "Black-winged Kite",
+              "af": "Blouvalk"
+            },
+            {
+              "slug": "gypohierax-angolensis",
+              "scientificName": "Gypohierax angolensis",
+              "en": "Palm-nut Vulture",
+              "af": "Witaasvoël"
+            },
+            {
+              "slug": "gyps-africanus",
+              "scientificName": "Gyps africanus",
+              "en": "White-backed Vulture",
+              "af": "Witrugaasvoël"
+            },
+            {
+              "slug": "gyps-coprotheres",
+              "scientificName": "Gyps coprotheres",
+              "en": "Cape Vulture",
+              "af": "Kransaasvoël"
+            },
+            {
+              "slug": "hieraaetus-pennatus",
+              "scientificName": "Hieraaetus pennatus",
+              "en": "Booted Eagle",
+              "af": "Dwergarend"
+            },
+            {
+              "slug": "hieraaetus-wahlbergi",
+              "scientificName": "Hieraaetus wahlbergi",
+              "en": "Wahlberg’s Eagle",
+              "af": "Bruinarend"
+            },
+            {
+              "slug": "icthyophaga-vocifer",
+              "scientificName": "Icthyophaga vocifer",
+              "en": "African Fish Eagle",
+              "af": "Visarend"
+            },
+            {
+              "slug": "kaupifalco-monogrammicus",
+              "scientificName": "Kaupifalco monogrammicus",
+              "en": "Lizard Buzzard",
+              "af": "Akkedisvalk"
+            },
+            {
+              "slug": "lophaetus-occipitalis",
+              "scientificName": "Lophaetus occipitalis",
+              "en": "Long-crested Eagle",
+              "af": "Langkuifarend"
+            },
+            {
+              "slug": "macheiramphus-alcinus",
+              "scientificName": "Macheiramphus alcinus",
+              "en": "Bat Hawk",
+              "af": "Vlermuisvalk"
+            },
+            {
+              "slug": "melierax-metabates",
+              "scientificName": "Melierax metabates",
+              "en": "Dark Chanting Goshawk",
+              "af": "Donkersingvalk"
+            },
+            {
+              "slug": "micronisus-gabar",
+              "scientificName": "Micronisus gabar",
+              "en": "Gabar Goshawk",
+              "af": "Witkruissperwer"
+            },
+            {
+              "slug": "milvus-migrans",
+              "scientificName": "Milvus migrans",
+              "en": "Black Kite",
+              "af": "Swartwou"
+            },
+            {
+              "slug": "necrosyrtes-monachus",
+              "scientificName": "Necrosyrtes monachus",
+              "en": "Hooded Vulture",
+              "af": "Monnikaasvoël"
+            },
+            {
+              "slug": "pernis-apivorus",
+              "scientificName": "Pernis apivorus",
+              "en": "European Honey Buzzard",
+              "af": "Wespedief"
+            },
+            {
+              "slug": "polemaetus-bellicosus",
+              "scientificName": "Polemaetus bellicosus",
+              "en": "Martial Eagle",
+              "af": "Breëkoparend"
+            },
+            {
+              "slug": "polyboroides-typus",
+              "scientificName": "Polyboroides typus",
+              "en": "African Harrier-Hawk",
+              "af": "Kaalwangvalk"
+            },
+            {
+              "slug": "stephanoaetus-coronatus",
+              "scientificName": "Stephanoaetus coronatus",
+              "en": "Crowned Eagle",
+              "af": "Kroonarend"
+            },
+            {
+              "slug": "tachyspiza-badia",
+              "scientificName": "Tachyspiza badia",
+              "en": "Shikra",
+              "af": "Gebande Sperwer"
+            },
+            {
+              "slug": "tachyspiza-minulla",
+              "scientificName": "Tachyspiza minulla",
+              "en": "Little Sparrowhawk",
+              "af": "Kleinsperwer"
+            },
+            {
+              "slug": "terathopius-ecaudatus",
+              "scientificName": "Terathopius ecaudatus",
+              "en": "Bateleur",
+              "af": "Berghaan"
+            },
+            {
+              "slug": "torgos-tracheliotos",
+              "scientificName": "Torgos tracheliotos",
+              "en": "Lappet-faced Vulture",
+              "af": "Swartaasvoël"
+            },
+            {
+              "slug": "trigonoceps-occipitalis",
+              "scientificName": "Trigonoceps occipitalis",
+              "en": "White-headed Vulture",
+              "af": "Witkopaasvoël"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "scientificName": "Strigiformes",
+      "en": "Owls",
+      "af": "Uile",
+      "families": [
+        {
+          "slug": "tytonidae",
+          "scientificName": "Tytonidae",
+          "en": "Barn owls",
+          "af": "Tyto-uile",
+          "species": [
+            {
+              "slug": "tyto-alba",
+              "scientificName": "Tyto alba",
+              "en": "Western Barn Owl",
+              "af": "Nonnetjie-uil"
+            }
+          ]
+        },
+        {
+          "slug": "strigidae",
+          "scientificName": "Strigidae",
+          "en": "Owls",
+          "af": "Uile",
+          "species": [
+            {
+              "slug": "bubo-africanus",
+              "scientificName": "Bubo africanus",
+              "en": "Spotted Eagle-Owl",
+              "af": "Gevlekte Ooruil"
+            },
+            {
+              "slug": "bubo-capensis",
+              "scientificName": "Bubo capensis",
+              "en": "Cape Eagle-Owl",
+              "af": "Kaapse Ooruil"
+            },
+            {
+              "slug": "glaucidium-capense",
+              "scientificName": "Glaucidium capense",
+              "en": "African Barred Owlet",
+              "af": "Gebande Uil"
+            },
+            {
+              "slug": "glaucidium-perlatum",
+              "scientificName": "Glaucidium perlatum",
+              "en": "Pearl-spotted Owlet",
+              "af": "Witkoluil"
+            },
+            {
+              "slug": "ketupa-lactea",
+              "scientificName": "Ketupa lactea",
+              "en": "Verreaux’s Eagle-Owl",
+              "af": "Reuse-ooruil"
+            },
+            {
+              "slug": "otus-senegalensis",
+              "scientificName": "Otus senegalensis",
+              "en": "African Scops Owl",
+              "af": "Skopsuil"
+            },
+            {
+              "slug": "ptilopsis-granti",
+              "scientificName": "Ptilopsis granti",
+              "en": "Southern White-faced Owl",
+              "af": "Witwanguil"
+            },
+            {
+              "slug": "scotopelia-peli",
+              "scientificName": "Scotopelia peli",
+              "en": "Pel’s Fishing Owl",
+              "af": "Visuil"
+            },
+            {
+              "slug": "strix-woodfordii",
+              "scientificName": "Strix woodfordii",
+              "en": "African Wood Owl",
+              "af": "Bosuil"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "scientificName": "Coliiformes",
+      "en": "Mousebirds",
+      "af": "Muisvoëls",
+      "families": [
+        {
+          "slug": "coliidae",
+          "scientificName": "Coliidae",
+          "en": "Mousebirds",
+          "af": "Muisvoëls",
+          "species": [
+            {
+              "slug": "colius-striatus",
+              "scientificName": "Colius striatus",
+              "en": "Speckled Mousebird",
+              "af": "Gevlekte Muisvoël"
+            },
+            {
+              "slug": "urocolius-indicus",
+              "scientificName": "Urocolius indicus",
+              "en": "Red-faced Mousebird",
+              "af": "Rooiwangmuisvoël"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "scientificName": "Trogoniformes",
+      "en": "Trogons",
+      "af": "Bosloeries",
+      "families": [
+        {
+          "slug": "trogonidae",
+          "scientificName": "Trogonidae",
+          "en": "Trogons",
+          "af": "Bosloerie",
+          "species": [
+            {
+              "slug": "apaloderma-narina",
+              "scientificName": "Apaloderma narina",
+              "en": "Narina Trogon",
+              "af": "Bosloerie"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "scientificName": "Bucerotiformes",
+      "en": "Hornbills and hoopoes",
+      "af": "Neushoringvoëls en hoephoepe",
+      "families": [
+        {
+          "slug": "upupidae",
+          "scientificName": "Upupidae",
+          "en": "Hoopoes",
+          "af": "Hoephoep",
+          "species": [
+            {
+              "slug": "upupa-epops",
+              "scientificName": "Upupa epops",
+              "en": "Common Hoopoe",
+              "af": "Hoephoep"
+            }
+          ]
+        },
+        {
+          "slug": "phoeniculidae",
+          "scientificName": "Phoeniculidae",
+          "en": "Wood-hoopoes",
+          "af": "Kakelaars",
+          "species": [
+            {
+              "slug": "phoeniculus-purpureus",
+              "scientificName": "Phoeniculus purpureus",
+              "en": "Green Wood-hoopoe",
+              "af": "Rooibekkakelaar"
+            },
+            {
+              "slug": "rhinopomastus-cyanomelas",
+              "scientificName": "Rhinopomastus cyanomelas",
+              "en": "Common Scimitarbill",
+              "af": "Swartbekkakelaar"
+            }
+          ]
+        },
+        {
+          "slug": "bucorvidae",
+          "scientificName": "Bucorvidae",
+          "en": "Ground-hornbills",
+          "af": "Bromvoëls",
+          "species": [
+            {
+              "slug": "bucorvus-leadbeateri",
+              "scientificName": "Bucorvus leadbeateri",
+              "en": "Southern Ground-Hornbill",
+              "af": "Bromvoël"
+            }
+          ]
+        },
+        {
+          "slug": "bucerotidae",
+          "scientificName": "Bucerotidae",
+          "en": "Hornbills",
+          "af": "Neushoringvoëls",
+          "species": [
+            {
+              "slug": "bycanistes-bucinator",
+              "scientificName": "Bycanistes bucinator",
+              "en": "Trumpeter Hornbill",
+              "af": "Gewone Boskraai"
+            },
+            {
+              "slug": "lophoceros-alboterminatus",
+              "scientificName": "Lophoceros alboterminatus",
+              "en": "Crowned Hornbill",
+              "af": "Gekroonde Neushoringvoël"
+            },
+            {
+              "slug": "lophoceros-nasutus",
+              "scientificName": "Lophoceros nasutus",
+              "en": "African Grey Hornbill",
+              "af": "Grysneushoringvoël"
+            },
+            {
+              "slug": "tockus-leucomelas",
+              "scientificName": "Tockus leucomelas",
+              "en": "Southern Yellow-billed Hornbill",
+              "af": "Geelbekneushoringvoël"
+            },
+            {
+              "slug": "tockus-rufirostris",
+              "scientificName": "Tockus rufirostris",
+              "en": "Southern Red-billed Hornbill",
+              "af": "Rooibekneushoringvoël"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "scientificName": "Coraciiformes",
+      "en": "Kingfishers and allies",
+      "af": "Troupante, visvangers en byvreters",
+      "families": [
+        {
+          "slug": "coraciidae",
+          "scientificName": "Coraciidae",
+          "en": "Rollers",
+          "af": "Troupante",
+          "species": [
+            {
+              "slug": "coracias-caudatus",
+              "scientificName": "Coracias caudatus",
+              "en": "Lilac-breasted Roller",
+              "af": "Gewone Troupant"
+            },
+            {
+              "slug": "coracias-garrulus",
+              "scientificName": "Coracias garrulus",
+              "en": "European Roller",
+              "af": "Europese Troupant"
+            },
+            {
+              "slug": "coracias-naevius",
+              "scientificName": "Coracias naevius",
+              "en": "Purple Roller",
+              "af": "Groottroupant"
+            },
+            {
+              "slug": "coracias-spatulatus",
+              "scientificName": "Coracias spatulatus",
+              "en": "Racket-tailed Roller",
+              "af": "Knopsterttroupant"
+            },
+            {
+              "slug": "eurystomus-glaucurus",
+              "scientificName": "Eurystomus glaucurus",
+              "en": "Broad-billed Roller",
+              "af": "Geelbektroupant"
+            }
+          ]
+        },
+        {
+          "slug": "alcedinidae",
+          "scientificName": "Alcedinidae",
+          "en": "Kingfishers",
+          "af": "Visvangers",
+          "species": [
+            {
+              "slug": "alcedo-semitorquata",
+              "scientificName": "Alcedo semitorquata",
+              "en": "Half-collared Kingfisher",
+              "af": "Blouvisvanger"
+            },
+            {
+              "slug": "ceryle-rudis",
+              "scientificName": "Ceryle rudis",
+              "en": "Pied Kingfisher",
+              "af": "Bontvisvanger"
+            },
+            {
+              "slug": "corythornis-cristatus",
+              "scientificName": "Corythornis cristatus",
+              "en": "Malachite Kingfisher",
+              "af": "Kuifkopvisvanger"
+            },
+            {
+              "slug": "halcyon-albiventris",
+              "scientificName": "Halcyon albiventris",
+              "en": "Brown-hooded Kingfisher",
+              "af": "Bruinkopvisvanger"
+            },
+            {
+              "slug": "halcyon-chelicuti",
+              "scientificName": "Halcyon chelicuti",
+              "en": "Striped Kingfisher",
+              "af": "Gestreepte Visvanger"
+            },
+            {
+              "slug": "halcyon-leucocephala",
+              "scientificName": "Halcyon leucocephala",
+              "en": "Grey-headed Kingfisher",
+              "af": "Gryskopvisvanger"
+            },
+            {
+              "slug": "halcyon-senegalensis",
+              "scientificName": "Halcyon senegalensis",
+              "en": "Woodland Kingfisher",
+              "af": "Bosveldvisvanger"
+            },
+            {
+              "slug": "ispidina-picta",
+              "scientificName": "Ispidina picta",
+              "en": "African Pygmy Kingfisher",
+              "af": "Dwergvisvanger"
+            },
+            {
+              "slug": "megaceryle-maxima",
+              "scientificName": "Megaceryle maxima",
+              "en": "Giant Kingfisher",
+              "af": "Reusevisvanger"
+            }
+          ]
+        },
+        {
+          "slug": "meropidae",
+          "scientificName": "Meropidae",
+          "en": "Bee-eaters",
+          "af": "Byvreters",
+          "species": [
+            {
+              "slug": "merops-apiaster",
+              "scientificName": "Merops apiaster",
+              "en": "European Bee-eater",
+              "af": "Europese Byvreter"
+            },
+            {
+              "slug": "merops-bullockoides",
+              "scientificName": "Merops bullockoides",
+              "en": "White-fronted Bee-eater",
+              "af": "Rooikeelbyvreter"
+            },
+            {
+              "slug": "merops-hirundineus",
+              "scientificName": "Merops hirundineus",
+              "en": "Swallow-tailed Bee-eater",
+              "af": "Swaelstertbyvreter"
+            },
+            {
+              "slug": "merops-nubicoides",
+              "scientificName": "Merops nubicoides",
+              "en": "Southern Carmine Bee-eater",
+              "af": "Rooiborsbyvreter"
+            },
+            {
+              "slug": "merops-persicus",
+              "scientificName": "Merops persicus",
+              "en": "Blue-cheeked Bee-eater",
+              "af": "Blouwangbyvreter"
+            },
+            {
+              "slug": "merops-pusillus",
+              "scientificName": "Merops pusillus",
+              "en": "Little Bee-eater",
+              "af": "Kleinbyvreter"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "scientificName": "Piciformes",
+      "en": "Woodpeckers and allies",
+      "af": "Spegvoëls",
+      "families": [
+        {
+          "slug": "lybiidae",
+          "scientificName": "Lybiidae",
+          "en": "African barbets",
+          "af": "Houtkappers",
+          "species": [
+            {
+              "slug": "lybius-torquatus",
+              "scientificName": "Lybius torquatus",
+              "en": "Black-collared Barbet",
+              "af": "Rooikophoutkapper"
+            },
+            {
+              "slug": "pogoniulus-bilineatus",
+              "scientificName": "Pogoniulus bilineatus",
+              "en": "Yellow-rumped Tinkerbird",
+              "af": "Swartblestinker"
+            },
+            {
+              "slug": "pogoniulus-chrysoconus",
+              "scientificName": "Pogoniulus chrysoconus",
+              "en": "Yellow-fronted Tinkerbird",
+              "af": "Geelblestinker"
+            },
+            {
+              "slug": "trachyphonus-vaillantii",
+              "scientificName": "Trachyphonus vaillantii",
+              "en": "Crested Barbet",
+              "af": "Kuifkophoutkapper"
+            },
+            {
+              "slug": "tricholaema-leucomelas",
+              "scientificName": "Tricholaema leucomelas",
+              "en": "Acacia Pied Barbet",
+              "af": "Bonthoutkapper"
+            }
+          ]
+        },
+        {
+          "slug": "indicatoridae",
+          "scientificName": "Indicatoridae",
+          "en": "Honeyguides",
+          "af": "Heuningwysers",
+          "species": [
+            {
+              "slug": "indicator-indicator",
+              "scientificName": "Indicator indicator",
+              "en": "Greater Honeyguide",
+              "af": "Grootheuningwyser"
+            },
+            {
+              "slug": "indicator-minor",
+              "scientificName": "Indicator minor",
+              "en": "Lesser Honeyguide",
+              "af": "Kleinheuningwyser"
+            },
+            {
+              "slug": "indicator-variegatus",
+              "scientificName": "Indicator variegatus",
+              "en": "Scaly-throated Honeyguide",
+              "af": "Gevlekte Heuningwyser"
+            },
+            {
+              "slug": "prodotiscus-regulus",
+              "scientificName": "Prodotiscus regulus",
+              "en": "Brown-backed Honeybird",
+              "af": "Skerpbekheuningvoël"
+            }
+          ]
+        },
+        {
+          "slug": "picidae",
+          "scientificName": "Picidae",
+          "en": "Woodpeckers",
+          "af": "Spegte",
+          "species": [
+            {
+              "slug": "campethera-abingoni",
+              "scientificName": "Campethera abingoni",
+              "en": "Golden-tailed Woodpecker",
+              "af": "Goudstertspeg"
+            },
+            {
+              "slug": "campethera-bennettii",
+              "scientificName": "Campethera bennettii",
+              "en": "Bennett’s Woodpecker",
+              "af": "Bennettspeg"
+            },
+            {
+              "slug": "chloropicus-namaquus",
+              "scientificName": "Chloropicus namaquus",
+              "en": "Bearded Woodpecker",
+              "af": "Baardspeg"
+            },
+            {
+              "slug": "dendropicos-fuscescens",
+              "scientificName": "Dendropicos fuscescens",
+              "en": "Cardinal Woodpecker",
+              "af": "Kardinaalspeg"
+            },
+            {
+              "slug": "dendropicos-griseocephalus",
+              "scientificName": "Dendropicos griseocephalus",
+              "en": "Olive Woodpecker",
+              "af": "Gryskopspeg"
+            },
+            {
+              "slug": "jynx-ruficollis",
+              "scientificName": "Jynx ruficollis",
+              "en": "Red-throated Wryneck",
+              "af": "Draaihals"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "scientificName": "Falconiformes",
+      "en": "Falcons",
+      "af": "Valke",
+      "families": [
+        {
+          "slug": "falconidae",
+          "scientificName": "Falconidae",
+          "en": "Falcons and kestrels",
+          "af": "Valke",
+          "species": [
+            {
+              "slug": "falco-amurensis",
+              "scientificName": "Falco amurensis",
+              "en": "Amur Falcon",
+              "af": "Oostelike Rooipootvalk"
+            },
+            {
+              "slug": "falco-biarmicus",
+              "scientificName": "Falco biarmicus",
+              "en": "Lanner Falcon",
+              "af": "Edelvalk"
+            },
+            {
+              "slug": "falco-concolor",
+              "scientificName": "Falco concolor",
+              "en": "Sooty Falcon",
+              "af": "Roetvalk"
+            },
+            {
+              "slug": "falco-dickinsoni",
+              "scientificName": "Falco dickinsoni",
+              "en": "Dickinson’s Kestrel",
+              "af": "Dickinsongrysvalk"
+            },
+            {
+              "slug": "falco-naumanni",
+              "scientificName": "Falco naumanni",
+              "en": "Lesser Kestrel",
+              "af": "Kleinrooivalk"
+            },
+            {
+              "slug": "falco-peregrinus",
+              "scientificName": "Falco peregrinus",
+              "en": "Peregrine Falcon",
+              "af": "Swerfvalk"
+            },
+            {
+              "slug": "falco-rupicolus",
+              "scientificName": "Falco rupicolus",
+              "en": "Rock Kestrel",
+              "af": "Kransvalk"
+            },
+            {
+              "slug": "falco-subbuteo",
+              "scientificName": "Falco subbuteo",
+              "en": "Eurasian Hobby",
+              "af": "Europese Boomvalk"
+            },
+            {
+              "slug": "falco-vespertinus",
+              "scientificName": "Falco vespertinus",
+              "en": "Red-footed Falcon",
+              "af": "Westelike Rooipootvalk"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "scientificName": "Psittaciformes",
+      "en": "Parrots",
+      "af": "Papegaaie",
+      "families": [
+        {
+          "slug": "psittacidae",
+          "scientificName": "Psittacidae",
+          "en": "African and New World parrots",
+          "af": "Papegaai",
+          "species": [
+            {
+              "slug": "poicephalus-cryptoxanthus",
+              "scientificName": "Poicephalus cryptoxanthus",
+              "en": "Brown-headed Parrot",
+              "af": "Bruinkoppapegaai"
+            },
+            {
+              "slug": "poicephalus-meyeri",
+              "scientificName": "Poicephalus meyeri",
+              "en": "Meyer’s Parrot",
+              "af": "Bosveldpapegaai"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "scientificName": "Passeriformes",
+      "en": "Perching birds",
+      "af": "Sangvoëls",
+      "families": [
+        {
+          "slug": "platysteiridae",
+          "scientificName": "Platysteiridae",
+          "en": "Wattle-eyes and batises",
+          "af": "Bosbontrokkies",
+          "species": [
+            {
+              "slug": "batis-capensis",
+              "scientificName": "Batis capensis",
+              "en": "Cape Batis",
+              "af": "Kaapse Bosbontrokkie"
+            },
+            {
+              "slug": "batis-molitor",
+              "scientificName": "Batis molitor",
+              "en": "Chinspot Batis",
+              "af": "Witliesbosbontrokkie"
+            },
+            {
+              "slug": "platysteira-peltata",
+              "scientificName": "Platysteira peltata",
+              "en": "Black-throated Wattle-eye",
+              "af": "Beloogbosbontrokkie"
+            }
+          ]
+        },
+        {
+          "slug": "malaconotidae",
+          "scientificName": "Malaconotidae",
+          "en": "Bushshrikes",
+          "af": "Boslaksmanne",
+          "species": [
+            {
+              "slug": "chlorophoneus-nigrifrons",
+              "scientificName": "Chlorophoneus nigrifrons",
+              "en": "Black-fronted Bush-shrike",
+              "af": "Swartoogboslaksman"
+            },
+            {
+              "slug": "chlorophoneus-olivaceus",
+              "scientificName": "Chlorophoneus olivaceus",
+              "en": "Olive Bush-Shrike",
+              "af": "Olyfboslaksman"
+            },
+            {
+              "slug": "chlorophoneus-sulfureopectus",
+              "scientificName": "Chlorophoneus sulfureopectus",
+              "en": "Orange-breasted Bush-Shrike",
+              "af": "Oranjeborsboslaksman"
+            },
+            {
+              "slug": "dryoscopus-cubla",
+              "scientificName": "Dryoscopus cubla",
+              "en": "Black-backed Puffback",
+              "af": "Sneeubal"
+            },
+            {
+              "slug": "laniarius-atrococcineus",
+              "scientificName": "Laniarius atrococcineus",
+              "en": "Crimson-breasted Shrike",
+              "af": "Rooiborslaksman"
+            },
+            {
+              "slug": "laniarius-ferrugineus",
+              "scientificName": "Laniarius ferrugineus",
+              "en": "Southern Boubou",
+              "af": "Suidelike Waterfiskaal"
+            },
+            {
+              "slug": "laniarius-major",
+              "scientificName": "Laniarius major",
+              "en": "Tropical Boubou",
+              "af": "Tropiese Waterfiskaal"
+            },
+            {
+              "slug": "malaconotus-blanchoti",
+              "scientificName": "Malaconotus blanchoti",
+              "en": "Grey-headed Bush-Shrike",
+              "af": "Spookvoël"
+            },
+            {
+              "slug": "nilaus-afer",
+              "scientificName": "Nilaus afer",
+              "en": "Brubru",
+              "af": "Bontroklaksman"
+            },
+            {
+              "slug": "tchagra-australis",
+              "scientificName": "Tchagra australis",
+              "en": "Brown-crowned Tchagra",
+              "af": "Rooivlerktjagra"
+            },
+            {
+              "slug": "tchagra-senegalus",
+              "scientificName": "Tchagra senegalus",
+              "en": "Black-crowned Tchagra",
+              "af": "Swartkroontjagra"
+            },
+            {
+              "slug": "telophorus-viridis",
+              "scientificName": "Telophorus viridis",
+              "en": "Gorgeous Bush-Shrike",
+              "af": "Konkoit"
+            }
+          ]
+        },
+        {
+          "slug": "vangidae",
+          "scientificName": "Vangidae",
+          "en": "Helmetshrikes",
+          "af": "Helmlaksmanne",
+          "species": [
+            {
+              "slug": "prionops-plumatus",
+              "scientificName": "Prionops plumatus",
+              "en": "White-crested Helmet-Shrike",
+              "af": "Withelmlaksman"
+            },
+            {
+              "slug": "prionops-retzii",
+              "scientificName": "Prionops retzii",
+              "en": "Retz’s Helmet-Shrike",
+              "af": "Swarthelmlaksman"
+            }
+          ]
+        },
+        {
+          "slug": "campephagidae",
+          "scientificName": "Campephagidae",
+          "en": "Cuckooshrikes",
+          "af": "Katakoeroes",
+          "species": [
+            {
+              "slug": "campephaga-flava",
+              "scientificName": "Campephaga flava",
+              "en": "Black Cuckooshrike",
+              "af": "Swartkatakoeroe"
+            },
+            {
+              "slug": "ceblepyris-caesius",
+              "scientificName": "Ceblepyris caesius",
+              "en": "Grey Cuckooshrike",
+              "af": "Bloukatakoeroe"
+            },
+            {
+              "slug": "ceblepyris-pectoralis",
+              "scientificName": "Ceblepyris pectoralis",
+              "en": "White-breasted Cuckooshrike",
+              "af": "Witborskatakoeroe"
+            }
+          ]
+        },
+        {
+          "slug": "oriolidae",
+          "scientificName": "Oriolidae",
+          "en": "Orioles",
+          "af": "Wielewale",
+          "species": [
+            {
+              "slug": "oriolus-auratus",
+              "scientificName": "Oriolus auratus",
+              "en": "African Golden Oriole",
+              "af": "Afrikaanse Wielewaal"
+            },
+            {
+              "slug": "oriolus-larvatus",
+              "scientificName": "Oriolus larvatus",
+              "en": "Black-headed Oriole",
+              "af": "Swartkopwielewaal"
+            },
+            {
+              "slug": "oriolus-oriolus",
+              "scientificName": "Oriolus oriolus",
+              "en": "Eurasian Golden Oriole",
+              "af": "Europese Wielewaal"
+            }
+          ]
+        },
+        {
+          "slug": "dicruridae",
+          "scientificName": "Dicruridae",
+          "en": "Drongos",
+          "af": "Byvanger",
+          "species": [
+            {
+              "slug": "dicrurus-adsimilis",
+              "scientificName": "Dicrurus adsimilis",
+              "en": "Fork-tailed Drongo",
+              "af": "Mikstertbyvanger"
+            },
+            {
+              "slug": "dicrurus-ludwigii",
+              "scientificName": "Dicrurus ludwigii",
+              "en": "Common Square-tailed Drongo",
+              "af": "Kleinbyvanger"
+            }
+          ]
+        },
+        {
+          "slug": "monarchidae",
+          "scientificName": "Monarchidae",
+          "en": "Monarchs",
+          "af": null,
+          "species": [
+            {
+              "slug": "terpsiphone-viridis",
+              "scientificName": "Terpsiphone viridis",
+              "en": "African Paradise Flycatcher",
+              "af": "Paradysvlieëvanger"
+            },
+            {
+              "slug": "trochocercus-cyanomelas",
+              "scientificName": "Trochocercus cyanomelas",
+              "en": "Blue-mantled Crested Flycatcher",
+              "af": "Bloukuifvlieëvanger"
+            }
+          ]
+        },
+        {
+          "slug": "laniidae",
+          "scientificName": "Laniidae",
+          "en": "Shrikes",
+          "af": "Laksmanne",
+          "species": [
+            {
+              "slug": "eurocephalus-anguitimens",
+              "scientificName": "Eurocephalus anguitimens",
+              "en": "Southern White-crowned Shrike",
+              "af": "Kremetartlaksman"
+            },
+            {
+              "slug": "lanius-collaris",
+              "scientificName": "Lanius collaris",
+              "en": "Southern Fiscal",
+              "af": "Fiskaallaksman"
+            },
+            {
+              "slug": "lanius-collurio",
+              "scientificName": "Lanius collurio",
+              "en": "Red-backed Shrike",
+              "af": "Rooiruglaksman"
+            },
+            {
+              "slug": "lanius-minor",
+              "scientificName": "Lanius minor",
+              "en": "Lesser Grey Shrike",
+              "af": "Gryslaksman"
+            },
+            {
+              "slug": "urolestes-melanoleucus",
+              "scientificName": "Urolestes melanoleucus",
+              "en": "Magpie Shrike",
+              "af": "Langstertlaksman"
+            }
+          ]
+        },
+        {
+          "slug": "corvidae",
+          "scientificName": "Corvidae",
+          "en": "Crows and ravens",
+          "af": "Kraaie",
+          "species": [
+            {
+              "slug": "corvus-albicollis",
+              "scientificName": "Corvus albicollis",
+              "en": "White-necked Raven",
+              "af": "Withalskraai"
+            },
+            {
+              "slug": "corvus-albus",
+              "scientificName": "Corvus albus",
+              "en": "Pied Crow",
+              "af": "Witborskraai"
+            },
+            {
+              "slug": "corvus-capensis",
+              "scientificName": "Corvus capensis",
+              "en": "Cape Crow",
+              "af": "Swartkraai"
+            }
+          ]
+        },
+        {
+          "slug": "paridae",
+          "scientificName": "Paridae",
+          "en": "Tits",
+          "af": "Mese",
+          "species": [
+            {
+              "slug": "melaniparus-niger",
+              "scientificName": "Melaniparus niger",
+              "en": "Southern Black Tit",
+              "af": "Gewone Swartmees"
+            }
+          ]
+        },
+        {
+          "slug": "remizidae",
+          "scientificName": "Remizidae",
+          "en": "Penduline tits",
+          "af": "Kapokvoëls",
+          "species": [
+            {
+              "slug": "anthoscopus-caroli",
+              "scientificName": "Anthoscopus caroli",
+              "en": "Grey Penduline-tit",
+              "af": "Gryskapokvoël"
+            }
+          ]
+        },
+        {
+          "slug": "nicatoridae",
+          "scientificName": "Nicatoridae",
+          "en": "Nicators",
+          "af": null,
+          "species": [
+            {
+              "slug": "nicator-gularis",
+              "scientificName": "Nicator gularis",
+              "en": "Eastern Nicator",
+              "af": "Geelvleknikator"
+            }
+          ]
+        },
+        {
+          "slug": "alaudidae",
+          "scientificName": "Alaudidae",
+          "en": "Larks",
+          "af": "Lewerikke",
+          "species": [
+            {
+              "slug": "amirafra-rufocinnamomea",
+              "scientificName": "Amirafra rufocinnamomea",
+              "en": "Flappet Lark",
+              "af": "Laeveldklappertjie"
+            },
+            {
+              "slug": "calandrella-cinerea",
+              "scientificName": "Calandrella cinerea",
+              "en": "Red-capped Lark",
+              "af": "Rooikoplewerik"
+            },
+            {
+              "slug": "calendulauda-africanoides",
+              "scientificName": "Calendulauda africanoides",
+              "en": "Fawn-coloured Lark",
+              "af": "Vaalbruinlewerik"
+            },
+            {
+              "slug": "calendulauda-sabota",
+              "scientificName": "Calendulauda sabota",
+              "en": "Sabota Lark",
+              "af": "Sabotalewerik"
+            },
+            {
+              "slug": "corypha-africana",
+              "scientificName": "Corypha africana",
+              "en": "Rufous-naped Lark",
+              "af": "Rooineklewerik"
+            },
+            {
+              "slug": "eremopterix-leucotis",
+              "scientificName": "Eremopterix leucotis",
+              "en": "Chestnut-backed Sparrow-Lark",
+              "af": "Rooiruglewerik"
+            },
+            {
+              "slug": "eremopterix-verticalis",
+              "scientificName": "Eremopterix verticalis",
+              "en": "Grey-backed Sparrow-lark",
+              "af": "Grysruglewerik"
+            },
+            {
+              "slug": "mirafra-passerina",
+              "scientificName": "Mirafra passerina",
+              "en": "Monotonous Lark",
+              "af": "Bosveldlewerik"
+            },
+            {
+              "slug": "pinarocorys-nigricans",
+              "scientificName": "Pinarocorys nigricans",
+              "en": "Dusky Lark",
+              "af": "Donkerlewerik"
+            }
+          ]
+        },
+        {
+          "slug": "pycnonotidae",
+          "scientificName": "Pycnonotidae",
+          "en": "Bulbuls",
+          "af": "Tiptolle",
+          "species": [
+            {
+              "slug": "andropadus-importunus",
+              "scientificName": "Andropadus importunus",
+              "en": "Sombre Greenbul",
+              "af": "Gewone Willie"
+            },
+            {
+              "slug": "chlorocichla-flaviventris",
+              "scientificName": "Chlorocichla flaviventris",
+              "en": "Yellow-bellied Greenbul",
+              "af": "Geelborswillie"
+            },
+            {
+              "slug": "phyllastrephus-flavostriatus",
+              "scientificName": "Phyllastrephus flavostriatus",
+              "en": "Yellow-streaked Greenbul",
+              "af": "Geelstreepboskruiper"
+            },
+            {
+              "slug": "phyllastrephus-terrestris",
+              "scientificName": "Phyllastrephus terrestris",
+              "en": "Terrestrial Brownbul",
+              "af": "Boskrapper"
+            },
+            {
+              "slug": "pycnonotus-barbatus",
+              "scientificName": "Pycnonotus barbatus",
+              "en": "Common (Dark-capped) Bulbul",
+              "af": "Swartoogtiptol"
+            }
+          ]
+        },
+        {
+          "slug": "hirundinidae",
+          "scientificName": "Hirundinidae",
+          "en": "Swallows and martins",
+          "af": "Swaels",
+          "species": [
+            {
+              "slug": "cecropis-abyssinica",
+              "scientificName": "Cecropis abyssinica",
+              "en": "Lesser Striped Swallow",
+              "af": "Kleinstreepswael"
+            },
+            {
+              "slug": "cecropis-cucullata",
+              "scientificName": "Cecropis cucullata",
+              "en": "Greater Striped Swallow",
+              "af": "Grootstreepswael"
+            },
+            {
+              "slug": "cecropis-semirufa",
+              "scientificName": "Cecropis semirufa",
+              "en": "Red-breasted Swallow",
+              "af": "Rooiborsswael"
+            },
+            {
+              "slug": "cecropis-senegalensis",
+              "scientificName": "Cecropis senegalensis",
+              "en": "Mosque Swallow",
+              "af": "Moskeeswael"
+            },
+            {
+              "slug": "delichon-urbicum",
+              "scientificName": "Delichon urbicum",
+              "en": "Western House Martin",
+              "af": "Huisswael"
+            },
+            {
+              "slug": "hirundo-albigularis",
+              "scientificName": "Hirundo albigularis",
+              "en": "White-throated Swallow",
+              "af": "Witkeelswael"
+            },
+            {
+              "slug": "hirundo-dimidiata",
+              "scientificName": "Hirundo dimidiata",
+              "en": "Pearl-breasted Swallow",
+              "af": "Pêrelborsswael"
+            },
+            {
+              "slug": "hirundo-rustica",
+              "scientificName": "Hirundo rustica",
+              "en": "Barn Swallow",
+              "af": "Europese Swael"
+            },
+            {
+              "slug": "hirundo-smithii",
+              "scientificName": "Hirundo smithii",
+              "en": "Wire-tailed Swallow",
+              "af": "Draadstertswael"
+            },
+            {
+              "slug": "neophedina-cincta",
+              "scientificName": "Neophedina cincta",
+              "en": "Banded Martin",
+              "af": "Gebande Oewerswael"
+            },
+            {
+              "slug": "pseudhirundo-griseopyga",
+              "scientificName": "Pseudhirundo griseopyga",
+              "en": "Grey-rumped Swallow",
+              "af": "Gryskruisswael"
+            },
+            {
+              "slug": "ptyonoprogne-fuligula",
+              "scientificName": "Ptyonoprogne fuligula",
+              "en": "Large Rock Martin",
+              "af": "Grootkransswael"
+            },
+            {
+              "slug": "riparia-paludicola",
+              "scientificName": "Riparia paludicola",
+              "en": "Brown-throated Martin",
+              "af": "Afrikaanse Oewerswael"
+            },
+            {
+              "slug": "riparia-riparia",
+              "scientificName": "Riparia riparia",
+              "en": "Sand Martin",
+              "af": "Europese Oewerswael"
+            }
+          ]
+        },
+        {
+          "slug": "macrosphenidae",
+          "scientificName": "Macrosphenidae",
+          "en": "African warblers",
+          "af": null,
+          "species": [
+            {
+              "slug": "sphenoeacus-afer",
+              "scientificName": "Sphenoeacus afer",
+              "en": "Cape Grassbird",
+              "af": "Grasvoël"
+            },
+            {
+              "slug": "sylvietta-rufescens",
+              "scientificName": "Sylvietta rufescens",
+              "en": "Long-billed Crombec",
+              "af": "Bosveldstompstert"
+            }
+          ]
+        },
+        {
+          "slug": "phylloscopidae",
+          "scientificName": "Phylloscopidae",
+          "en": "Leaf warblers",
+          "af": null,
+          "species": [
+            {
+              "slug": "phylloscopus-ruficapilla",
+              "scientificName": "Phylloscopus ruficapilla",
+              "en": "Yellow-throated Woodland Warbler",
+              "af": "Geelkeelsanger"
+            },
+            {
+              "slug": "phylloscopus-trochilus",
+              "scientificName": "Phylloscopus trochilus",
+              "en": "Willow Warbler",
+              "af": "Hofsanger"
+            }
+          ]
+        },
+        {
+          "slug": "acrocephalidae",
+          "scientificName": "Acrocephalidae",
+          "en": "Reed warblers and allies",
+          "af": null,
+          "species": [
+            {
+              "slug": "acrocephalus-arundinaceus",
+              "scientificName": "Acrocephalus arundinaceus",
+              "en": "Great Reed Warbler",
+              "af": "Grootrietsanger"
+            },
+            {
+              "slug": "acrocephalus-gracilirostris",
+              "scientificName": "Acrocephalus gracilirostris",
+              "en": "Lesser Swamp Warbler",
+              "af": "Kaapse Rietsanger"
+            },
+            {
+              "slug": "acrocephalus-palustris",
+              "scientificName": "Acrocephalus palustris",
+              "en": "Marsh Warbler",
+              "af": "Europese Rietsanger"
+            },
+            {
+              "slug": "acrocephalus-schoenobaenus",
+              "scientificName": "Acrocephalus schoenobaenus",
+              "en": "Sedge Warbler",
+              "af": "Europese Vleisanger"
+            },
+            {
+              "slug": "acrocephalus-scirpaceus",
+              "scientificName": "Acrocephalus scirpaceus",
+              "en": "Common Reed Warbler",
+              "af": "Kleinrietsanger"
+            },
+            {
+              "slug": "hippolais-icterina",
+              "scientificName": "Hippolais icterina",
+              "en": "Icterine Warbler",
+              "af": "Spotsanger"
+            },
+            {
+              "slug": "hippolais-olivetorum",
+              "scientificName": "Hippolais olivetorum",
+              "en": "Olive-tree Warbler",
+              "af": "Olyfboomsanger"
+            },
+            {
+              "slug": "iduna-natalensis",
+              "scientificName": "Iduna natalensis",
+              "en": "African (Dark-capped) Yellow Warbler",
+              "af": "Geelsanger"
+            }
+          ]
+        },
+        {
+          "slug": "locustellidae",
+          "scientificName": "Locustellidae",
+          "en": "Grassbirds and allies",
+          "af": null,
+          "species": [
+            {
+              "slug": "bradypterus-baboecala",
+              "scientificName": "Bradypterus baboecala",
+              "en": "Little Rush Warbler",
+              "af": "Kaapse Vleisanger"
+            },
+            {
+              "slug": "bradypterus-barratti",
+              "scientificName": "Bradypterus barratti",
+              "en": "Barratt’s Warbler",
+              "af": "Ruigtesanger"
+            },
+            {
+              "slug": "catriscus-brevirostris",
+              "scientificName": "Catriscus brevirostris",
+              "en": "Broad-tailed Warbler (Fan-tailed Grassbird)",
+              "af": "Breëstertsanger"
+            },
+            {
+              "slug": "locustella-fluviatilis",
+              "scientificName": "Locustella fluviatilis",
+              "en": "River Warbler",
+              "af": "Sprinkaansanger"
+            }
+          ]
+        },
+        {
+          "slug": "cisticolidae",
+          "scientificName": "Cisticolidae",
+          "en": "Cisticolas and allies",
+          "af": "Klopklopies",
+          "species": [
+            {
+              "slug": "apalis-flavida",
+              "scientificName": "Apalis flavida",
+              "en": "Yellow-breasted Apalis",
+              "af": "Geelborskleinjantjie"
+            },
+            {
+              "slug": "apalis-ruddi",
+              "scientificName": "Apalis ruddi",
+              "en": "Rudd’s Apalis",
+              "af": "Ruddkleinjantjie"
+            },
+            {
+              "slug": "apalis-thoracica",
+              "scientificName": "Apalis thoracica",
+              "en": "Bar-throated Apalis",
+              "af": "Bandkeelkleinjantjie"
+            },
+            {
+              "slug": "calamonastes-fasciolatus",
+              "scientificName": "Calamonastes fasciolatus",
+              "en": "Barred Wren-Warbler",
+              "af": "Gebande Sanger"
+            },
+            {
+              "slug": "calamonastes-stierlingi",
+              "scientificName": "Calamonastes stierlingi",
+              "en": "Stierling’s Wren-Warbler",
+              "af": "Stierlingsanger"
+            },
+            {
+              "slug": "camaroptera-brachyura",
+              "scientificName": "Camaroptera brachyura",
+              "en": "Bleating Camaroptera",
+              "af": "Kwêkwêvoël"
+            },
+            {
+              "slug": "cisticola-aberrans",
+              "scientificName": "Cisticola aberrans",
+              "en": "Rock-loving (Lazy) Cisticola",
+              "af": "Luitinktinkie"
+            },
+            {
+              "slug": "cisticola-aridulus",
+              "scientificName": "Cisticola aridulus",
+              "en": "Desert Cisticola",
+              "af": "Woestynklopkloppie"
+            },
+            {
+              "slug": "cisticola-chiniana",
+              "scientificName": "Cisticola chiniana",
+              "en": "Rattling Cisticola",
+              "af": "Bosveldtinktinkie"
+            },
+            {
+              "slug": "cisticola-erythrops",
+              "scientificName": "Cisticola erythrops",
+              "en": "Red-faced Cisticola",
+              "af": "Rooiwangtinktinkie"
+            },
+            {
+              "slug": "cisticola-fulvicapilla",
+              "scientificName": "Cisticola fulvicapilla",
+              "en": "Neddicky",
+              "af": "Neddikkie"
+            },
+            {
+              "slug": "cisticola-galactotes",
+              "scientificName": "Cisticola galactotes",
+              "en": "Rufous-winged Cisticola",
+              "af": "Swartrugtinktinkie"
+            },
+            {
+              "slug": "cisticola-juncidis",
+              "scientificName": "Cisticola juncidis",
+              "en": "Zitting Cisticola",
+              "af": "Landeryklopkloppie"
+            },
+            {
+              "slug": "cisticola-natalensis",
+              "scientificName": "Cisticola natalensis",
+              "en": "Croaking Cisticola",
+              "af": "Groottinktinkie"
+            },
+            {
+              "slug": "cisticola-tinniens",
+              "scientificName": "Cisticola tinniens",
+              "en": "Levaillant’s Cisticola",
+              "af": "Vleitinktinkie"
+            },
+            {
+              "slug": "eremomela-icteropygialis",
+              "scientificName": "Eremomela icteropygialis",
+              "en": "Yellow-bellied Eremomela",
+              "af": "Geelpensbossanger"
+            },
+            {
+              "slug": "eremomela-scotops",
+              "scientificName": "Eremomela scotops",
+              "en": "Green-capped Eremomela",
+              "af": "Donkerwangbossanger"
+            },
+            {
+              "slug": "eremomela-usticollis",
+              "scientificName": "Eremomela usticollis",
+              "en": "Burnt-necked Eremomela",
+              "af": "Bruinkeelbossanger"
+            },
+            {
+              "slug": "prinia-flavicans",
+              "scientificName": "Prinia flavicans",
+              "en": "Black-chested Prinia",
+              "af": "Swartbandlangstertjie"
+            },
+            {
+              "slug": "prinia-hypoxantha",
+              "scientificName": "Prinia hypoxantha",
+              "en": "Drakensberg Prinia",
+              "af": "Drakensberglangstertjie"
+            },
+            {
+              "slug": "prinia-subflava",
+              "scientificName": "Prinia subflava",
+              "en": "Tawny-flanked Prinia",
+              "af": "Bruinsylangstertjie"
+            }
+          ]
+        },
+        {
+          "slug": "sylviidae",
+          "scientificName": "Sylviidae",
+          "en": "Sylviid warblers",
+          "af": "Sangers",
+          "species": [
+            {
+              "slug": "curruca-communis",
+              "scientificName": "Curruca communis",
+              "en": "Common Whitethroat",
+              "af": "Witkeelsanger"
+            },
+            {
+              "slug": "sylvia-borin",
+              "scientificName": "Sylvia borin",
+              "en": "Garden Warbler",
+              "af": "Tuinsanger"
+            }
+          ]
+        },
+        {
+          "slug": "zosteropidae",
+          "scientificName": "Zosteropidae",
+          "en": "White-eyes",
+          "af": "Glasogie",
+          "species": [
+            {
+              "slug": "zosterops-anderssoni",
+              "scientificName": "Zosterops anderssoni",
+              "en": "Southern Yellow White-eye",
+              "af": "Geelglasogie"
+            }
+          ]
+        },
+        {
+          "slug": "leiothrichidae",
+          "scientificName": "Leiothrichidae",
+          "en": "Laughingthrushes and babblers",
+          "af": "Katlagters",
+          "species": [
+            {
+              "slug": "turdoides-jardineii",
+              "scientificName": "Turdoides jardineii",
+              "en": "Arrow-marked Babbler",
+              "af": "Pylvlekkatlagter"
+            }
+          ]
+        },
+        {
+          "slug": "sturnidae",
+          "scientificName": "Sturnidae",
+          "en": "Starlings",
+          "af": "Spreeus",
+          "species": [
+            {
+              "slug": "acridotheres-tristis",
+              "scientificName": "Acridotheres tristis",
+              "en": "Common Myna",
+              "af": "Indiese Spreeu"
+            },
+            {
+              "slug": "cinnyricinclus-leucogaster",
+              "scientificName": "Cinnyricinclus leucogaster",
+              "en": "Violet-backed Starling",
+              "af": "Witborsspreeu"
+            },
+            {
+              "slug": "creatophora-cinerea",
+              "scientificName": "Creatophora cinerea",
+              "en": "Wattled Starling",
+              "af": "Lelspreeu"
+            },
+            {
+              "slug": "lamprotornis-australis",
+              "scientificName": "Lamprotornis australis",
+              "en": "Burchell’s Starling",
+              "af": "Grootglansspreeu"
+            },
+            {
+              "slug": "lamprotornis-chalybaeus",
+              "scientificName": "Lamprotornis chalybaeus",
+              "en": "Greater Blue-eared Starling",
+              "af": "Groot-blouoorglansspreeu"
+            },
+            {
+              "slug": "lamprotornis-mevesii",
+              "scientificName": "Lamprotornis mevesii",
+              "en": "Meves’s Starling",
+              "af": "Langstertglansspreeu"
+            },
+            {
+              "slug": "lamprotornis-nitens",
+              "scientificName": "Lamprotornis nitens",
+              "en": "Cape (Glossy) Starling",
+              "af": "Kleinglansspreeu"
+            },
+            {
+              "slug": "notopholia-corusca",
+              "scientificName": "Notopholia corusca",
+              "en": "Black-bellied Starling",
+              "af": "Swartpensglansspreeu"
+            },
+            {
+              "slug": "onychognathus-morio",
+              "scientificName": "Onychognathus morio",
+              "en": "Red-winged Starling",
+              "af": "Rooivlerkspreeu"
+            }
+          ]
+        },
+        {
+          "slug": "buphagidae",
+          "scientificName": "Buphagidae",
+          "en": "Oxpeckers",
+          "af": "Renostervoëls",
+          "species": [
+            {
+              "slug": "buphagus-africanus",
+              "scientificName": "Buphagus africanus",
+              "en": "Yellow-billed Oxpecker",
+              "af": "Geelbekrenostervoël"
+            },
+            {
+              "slug": "buphagus-erythroryncha",
+              "scientificName": "Buphagus erythroryncha",
+              "en": "Red-billed Oxpecker",
+              "af": "Rooibekrenostervoël"
+            }
+          ]
+        },
+        {
+          "slug": "turdidae",
+          "scientificName": "Turdidae",
+          "en": "Thrushes",
+          "af": "Lysters",
+          "species": [
+            {
+              "slug": "turdus-libonyana",
+              "scientificName": "Turdus libonyana",
+              "en": "Kurrichane Thrush",
+              "af": "Rooibeklyster"
+            },
+            {
+              "slug": "turdus-litsitsirupa",
+              "scientificName": "Turdus litsitsirupa",
+              "en": "Groundscraper Thrush",
+              "af": "Gevlekte Lyster"
+            },
+            {
+              "slug": "turdus-olivaceus",
+              "scientificName": "Turdus olivaceus",
+              "en": "Olive Thrush",
+              "af": "Olyflyster"
+            },
+            {
+              "slug": "turdus-smithi",
+              "scientificName": "Turdus smithi",
+              "en": "Karoo Thrush",
+              "af": "Geelbeklyster"
+            }
+          ]
+        },
+        {
+          "slug": "muscicapidae",
+          "scientificName": "Muscicapidae",
+          "en": "Chats and Old World flycatchers",
+          "af": "Vlieëvangers",
+          "species": [
+            {
+              "slug": "agricola-pallidus",
+              "scientificName": "Agricola pallidus",
+              "en": "Pale Flycatcher",
+              "af": "Muiskleurvlieëvanger"
+            },
+            {
+              "slug": "bradornis-mariquensis",
+              "scientificName": "Bradornis mariquensis",
+              "en": "Marico Flycatcher",
+              "af": "Maricovlieëvanger"
+            },
+            {
+              "slug": "cercotrichas-leucophrys",
+              "scientificName": "Cercotrichas leucophrys",
+              "en": "White-browed Scrub Robin",
+              "af": "Gestreepte Wipstert"
+            },
+            {
+              "slug": "cichladusa-arquata",
+              "scientificName": "Cichladusa arquata",
+              "en": "Collared Palm Thrush",
+              "af": "Palmmôrelyster"
+            },
+            {
+              "slug": "cossypha-dichroa",
+              "scientificName": "Cossypha dichroa",
+              "en": "Chorister Robin-chat",
+              "af": "Lawaaimakerjanfrederik"
+            },
+            {
+              "slug": "cossypha-heuglini",
+              "scientificName": "Cossypha heuglini",
+              "en": "White-browed Robin-chat",
+              "af": "Heuglinjanfrederik"
+            },
+            {
+              "slug": "cossypha-natalensis",
+              "scientificName": "Cossypha natalensis",
+              "en": "Red-capped Robin-chat",
+              "af": "Nataljanfrederik"
+            },
+            {
+              "slug": "dessonornis-caffer",
+              "scientificName": "Dessonornis caffer",
+              "en": "Cape Robin-chat",
+              "af": "Gewone Janfrederik"
+            },
+            {
+              "slug": "dessonornis-humeralis",
+              "scientificName": "Dessonornis humeralis",
+              "en": "White-throated Robin-chat",
+              "af": "Witkeeljanfrederik"
+            },
+            {
+              "slug": "fraseria-caerulescens",
+              "scientificName": "Fraseria caerulescens",
+              "en": "Ashy Flycatcher",
+              "af": "Blougrysvlieëvanger"
+            },
+            {
+              "slug": "fraseria-plumbea",
+              "scientificName": "Fraseria plumbea",
+              "en": "Grey Tit-flycatcher",
+              "af": "Waaierstertvlieëvanger"
+            },
+            {
+              "slug": "luscinia-luscinia",
+              "scientificName": "Luscinia luscinia",
+              "en": "Thrush Nightingale",
+              "af": "Lysternagtegaal"
+            },
+            {
+              "slug": "melaenornis-pammelaina",
+              "scientificName": "Melaenornis pammelaina",
+              "en": "Southern Black Flycatcher",
+              "af": "Swartvlieëvanger"
+            },
+            {
+              "slug": "monticola-rupestris",
+              "scientificName": "Monticola rupestris",
+              "en": "Cape Rock Thrush",
+              "af": "Kaapse Kliplyster"
+            },
+            {
+              "slug": "muscicapa-adusta",
+              "scientificName": "Muscicapa adusta",
+              "en": "African Dusky Flycatcher",
+              "af": "Donkervlieëvanger"
+            },
+            {
+              "slug": "myrmecocichla-arnotti",
+              "scientificName": "Myrmecocichla arnotti",
+              "en": "Arnot’s Chat",
+              "af": "Bontpiek"
+            },
+            {
+              "slug": "oenanthe-familiaris",
+              "scientificName": "Oenanthe familiaris",
+              "en": "Familiar Chat",
+              "af": "Gewone Spekvreter"
+            },
+            {
+              "slug": "oenanthe-pileata",
+              "scientificName": "Oenanthe pileata",
+              "en": "Capped Wheatear",
+              "af": "Hoëveldskaapwagter"
+            },
+            {
+              "slug": "pogonocichla-stellata",
+              "scientificName": "Pogonocichla stellata",
+              "en": "White-starred Robin",
+              "af": "Witkoljanfrederik"
+            },
+            {
+              "slug": "saxicola-torquatus",
+              "scientificName": "Saxicola torquatus",
+              "en": "African Stonechat",
+              "af": "Gewone Bontrokkie"
+            },
+            {
+              "slug": "sigelus-silens",
+              "scientificName": "Sigelus silens",
+              "en": "Fiscal Flycatcher",
+              "af": "Fiskaalvlieëvanger"
+            },
+            {
+              "slug": "thamnolaea-cinnamomeiventris",
+              "scientificName": "Thamnolaea cinnamomeiventris",
+              "en": "Mocking Cliff Chat",
+              "af": "Dassievoël"
+            },
+            {
+              "slug": "tychaedon-quadrivirgata",
+              "scientificName": "Tychaedon quadrivirgata",
+              "en": "Bearded Scrub Robin",
+              "af": "Baardwipstert"
+            },
+            {
+              "slug": "tychaedon-signata",
+              "scientificName": "Tychaedon signata",
+              "en": "Brown Scrub Robin",
+              "af": "Bruinwipstert"
+            }
+          ]
+        },
+        {
+          "slug": "nectariniidae",
+          "scientificName": "Nectariniidae",
+          "en": "Sunbirds",
+          "af": "Suikerbekkies",
+          "species": [
+            {
+              "slug": "chalcomitra-amethystina",
+              "scientificName": "Chalcomitra amethystina",
+              "en": "Amethyst Sunbird",
+              "af": "Swartsuikerbekkie"
+            },
+            {
+              "slug": "chalcomitra-senegalensis",
+              "scientificName": "Chalcomitra senegalensis",
+              "en": "Scarlet-chested Sunbird",
+              "af": "Rooiborssuikerbekkie"
+            },
+            {
+              "slug": "cinnyris-afer",
+              "scientificName": "Cinnyris afer",
+              "en": "Greater Double-collared Sunbird",
+              "af": "Groot-rooibandsuikerbekkie"
+            },
+            {
+              "slug": "cinnyris-bifasciatus",
+              "scientificName": "Cinnyris bifasciatus",
+              "en": "Purple-banded Sunbird",
+              "af": "Purperbandsuikerbekkie"
+            },
+            {
+              "slug": "cinnyris-chalybeus",
+              "scientificName": "Cinnyris chalybeus",
+              "en": "Southern Double-collared Sunbird",
+              "af": "Klein-rooibandsuikerbekkie"
+            },
+            {
+              "slug": "cinnyris-mariquensis",
+              "scientificName": "Cinnyris mariquensis",
+              "en": "Marico Sunbird",
+              "af": "Maricosuikerbekkie"
+            },
+            {
+              "slug": "cinnyris-talatala",
+              "scientificName": "Cinnyris talatala",
+              "en": "White-bellied Sunbird",
+              "af": "Witpenssuikerbekkie"
+            },
+            {
+              "slug": "cyanomitra-olivacea",
+              "scientificName": "Cyanomitra olivacea",
+              "en": "Olive Sunbird",
+              "af": "Olyfsuikerbekkie"
+            },
+            {
+              "slug": "hedydipna-collaris",
+              "scientificName": "Hedydipna collaris",
+              "en": "Collared Sunbird",
+              "af": "Kortbeksuikerbekkie"
+            },
+            {
+              "slug": "nectarinia-famosa",
+              "scientificName": "Nectarinia famosa",
+              "en": "Malachite Sunbird",
+              "af": "Jangroentjie"
+            }
+          ]
+        },
+        {
+          "slug": "passeridae",
+          "scientificName": "Passeridae",
+          "en": "Old World sparrows",
+          "af": "Mossies",
+          "species": [
+            {
+              "slug": "gymnoris-superciliaris",
+              "scientificName": "Gymnoris superciliaris",
+              "en": "Yellow-throated Petronia",
+              "af": "Geelvlekmossie"
+            },
+            {
+              "slug": "passer-diffusus",
+              "scientificName": "Passer diffusus",
+              "en": "Southern Grey-headed Sparrow",
+              "af": "Gryskopmossie"
+            },
+            {
+              "slug": "passer-domesticus",
+              "scientificName": "Passer domesticus",
+              "en": "House Sparrow",
+              "af": "Huismossie"
+            },
+            {
+              "slug": "passer-melanurus",
+              "scientificName": "Passer melanurus",
+              "en": "Cape Sparrow",
+              "af": "Gewone Mossie"
+            }
+          ]
+        },
+        {
+          "slug": "ploceidae",
+          "scientificName": "Ploceidae",
+          "en": "Weavers and widowbirds",
+          "af": "Wewers",
+          "species": [
+            {
+              "slug": "amblyospiza-albifrons",
+              "scientificName": "Amblyospiza albifrons",
+              "en": "Thick-billed Weaver",
+              "af": "Dikbekwewer"
+            },
+            {
+              "slug": "bubalornis-niger",
+              "scientificName": "Bubalornis niger",
+              "en": "Red-billed Buffalo Weaver",
+              "af": "Buffelwewer"
+            },
+            {
+              "slug": "euplectes-afer",
+              "scientificName": "Euplectes afer",
+              "en": "Yellow-crowned Bishop",
+              "af": "Goudgeelvink"
+            },
+            {
+              "slug": "euplectes-albonotatus",
+              "scientificName": "Euplectes albonotatus",
+              "en": "White-winged Widowbird",
+              "af": "Witvlerkflap"
+            },
+            {
+              "slug": "euplectes-ardens",
+              "scientificName": "Euplectes ardens",
+              "en": "Red-collared Widowbird",
+              "af": "Rooikeelflap"
+            },
+            {
+              "slug": "euplectes-axillaris",
+              "scientificName": "Euplectes axillaris",
+              "en": "Fan-tailed Widowbird",
+              "af": "Kortstertflap"
+            },
+            {
+              "slug": "euplectes-orix",
+              "scientificName": "Euplectes orix",
+              "en": "Southern Red Bishop",
+              "af": "Rooivink"
+            },
+            {
+              "slug": "plocepasser-mahali",
+              "scientificName": "Plocepasser mahali",
+              "en": "White-browed Sparrow-Weaver",
+              "af": "Koringvoël"
+            },
+            {
+              "slug": "ploceus-capensis",
+              "scientificName": "Ploceus capensis",
+              "en": "Cape Weaver",
+              "af": "Kaapse Wewer"
+            },
+            {
+              "slug": "ploceus-cucullatus",
+              "scientificName": "Ploceus cucullatus",
+              "en": "Village Weaver",
+              "af": "Bontrugwewer"
+            },
+            {
+              "slug": "ploceus-intermedius",
+              "scientificName": "Ploceus intermedius",
+              "en": "Lesser Masked Weaver",
+              "af": "Kleingeelvink"
+            },
+            {
+              "slug": "ploceus-ocularis",
+              "scientificName": "Ploceus ocularis",
+              "en": "Spectacled Weaver",
+              "af": "Brilwewer"
+            },
+            {
+              "slug": "ploceus-subaureus",
+              "scientificName": "Ploceus subaureus",
+              "en": "Yellow (Eastern Golden) Weaver",
+              "af": "Geelwewer"
+            },
+            {
+              "slug": "ploceus-velatus",
+              "scientificName": "Ploceus velatus",
+              "en": "Southern Masked Weaver",
+              "af": "Swartkeelgeelvink"
+            },
+            {
+              "slug": "ploceus-xanthops",
+              "scientificName": "Ploceus xanthops",
+              "en": "African (Holub’s) Golden Weaver",
+              "af": "Goudwewer"
+            },
+            {
+              "slug": "ploceus-xanthopterus",
+              "scientificName": "Ploceus xanthopterus",
+              "en": "Southern Brown-throated Weaver",
+              "af": "Bruinkeelwewer"
+            },
+            {
+              "slug": "quelea-quelea",
+              "scientificName": "Quelea quelea",
+              "en": "Red-billed Quelea",
+              "af": "Rooibekkwelea"
+            },
+            {
+              "slug": "sporopipes-squamifrons",
+              "scientificName": "Sporopipes squamifrons",
+              "en": "Scaly-feathered Finch (Weaver)",
+              "af": "Baardmannetjie"
+            }
+          ]
+        },
+        {
+          "slug": "estrildidae",
+          "scientificName": "Estrildidae",
+          "en": "Waxbills and allies",
+          "af": "Sysies",
+          "species": [
+            {
+              "slug": "amadina-erythrocephala",
+              "scientificName": "Amadina erythrocephala",
+              "en": "Red-headed Finch",
+              "af": "Rooikopvink"
+            },
+            {
+              "slug": "amadina-fasciata",
+              "scientificName": "Amadina fasciata",
+              "en": "Cut-throat Finch",
+              "af": "Bandkeelvink"
+            },
+            {
+              "slug": "amandava-subflava",
+              "scientificName": "Amandava subflava",
+              "en": "Orange-breasted Waxbill",
+              "af": "Rooiassie"
+            },
+            {
+              "slug": "brunhilda-erythronotos",
+              "scientificName": "Brunhilda erythronotos",
+              "en": "Black-faced Waxbill",
+              "af": "Swartwangsysie"
+            },
+            {
+              "slug": "coccopygia-melanotis",
+              "scientificName": "Coccopygia melanotis",
+              "en": "Swee Waxbill",
+              "af": "Suidelike Swie"
+            },
+            {
+              "slug": "estrilda-astrild",
+              "scientificName": "Estrilda astrild",
+              "en": "Common Waxbill",
+              "af": "Rooibeksysie"
+            },
+            {
+              "slug": "granatina-granatina",
+              "scientificName": "Granatina granatina",
+              "en": "Violet-eared Waxbill",
+              "af": "Koningblousysie"
+            },
+            {
+              "slug": "hypargos-margaritatus",
+              "scientificName": "Hypargos margaritatus",
+              "en": "Pink-throated Twinspot",
+              "af": "Rooskeelkolpensie"
+            },
+            {
+              "slug": "lagonosticta-rhodopareia",
+              "scientificName": "Lagonosticta rhodopareia",
+              "en": "Jameson’s Firefinch",
+              "af": "Jamesonvuurvinkie"
+            },
+            {
+              "slug": "lagonosticta-rubricata",
+              "scientificName": "Lagonosticta rubricata",
+              "en": "African Firefinch",
+              "af": "Kaapse Vuurvinkie"
+            },
+            {
+              "slug": "lagonosticta-senegala",
+              "scientificName": "Lagonosticta senegala",
+              "en": "Red-billed Firefinch",
+              "af": "Rooibekvuurvinkie"
+            },
+            {
+              "slug": "ortygospiza-atricollis",
+              "scientificName": "Ortygospiza atricollis",
+              "en": "Quailfinch",
+              "af": "Gewone Kwartelvinkie"
+            },
+            {
+              "slug": "pytilia-afra",
+              "scientificName": "Pytilia afra",
+              "en": "Orange-winged Pytilia",
+              "af": "Oranjevlerkmelba"
+            },
+            {
+              "slug": "pytilia-melba",
+              "scientificName": "Pytilia melba",
+              "en": "Green-winged Pytilia",
+              "af": "Gewone Melba"
+            },
+            {
+              "slug": "spermestes-bicolor",
+              "scientificName": "Spermestes bicolor",
+              "en": "Red-backed Mannikin",
+              "af": "Rooirugfret"
+            },
+            {
+              "slug": "spermestes-cucullata",
+              "scientificName": "Spermestes cucullata",
+              "en": "Bronze Mannikin",
+              "af": "Gewone Fret"
+            },
+            {
+              "slug": "spermestes-fringilloides",
+              "scientificName": "Spermestes fringilloides",
+              "en": "Magpie Mannikin",
+              "af": "Dikbekfret"
+            },
+            {
+              "slug": "uraeginthus-angolensis",
+              "scientificName": "Uraeginthus angolensis",
+              "en": "Blue Waxbill",
+              "af": "Gewone Blousysie"
+            }
+          ]
+        },
+        {
+          "slug": "viduidae",
+          "scientificName": "Viduidae",
+          "en": "Indigobirds and whydahs",
+          "af": "Rooibekkies",
+          "species": [
+            {
+              "slug": "anomalospiza-imberbis",
+              "scientificName": "Anomalospiza imberbis",
+              "en": "Cuckoo Finch",
+              "af": "Koekoekvink"
+            },
+            {
+              "slug": "vidua-chalybeata",
+              "scientificName": "Vidua chalybeata",
+              "en": "Village Indigobird",
+              "af": "Staalblouvinkie"
+            },
+            {
+              "slug": "vidua-funerea",
+              "scientificName": "Vidua funerea",
+              "en": "Dusky Indigobird",
+              "af": "Gewone Blouvinkie"
+            },
+            {
+              "slug": "vidua-macroura",
+              "scientificName": "Vidua macroura",
+              "en": "Pin-tailed Whydah",
+              "af": "Koningrooibekkie"
+            },
+            {
+              "slug": "vidua-paradisaea",
+              "scientificName": "Vidua paradisaea",
+              "en": "Long-tailed Paradise Whydah",
+              "af": "Gewone Paradysvink"
+            },
+            {
+              "slug": "vidua-purpurascens",
+              "scientificName": "Vidua purpurascens",
+              "en": "Purple Indigobird",
+              "af": "Witpootblouvinkie"
+            },
+            {
+              "slug": "vidua-regia",
+              "scientificName": "Vidua regia",
+              "en": "Shaft-tailed Whydah",
+              "af": "Pylstertrooibekkie"
+            }
+          ]
+        },
+        {
+          "slug": "motacillidae",
+          "scientificName": "Motacillidae",
+          "en": "Wagtails and pipits",
+          "af": "Kwikkies",
+          "species": [
+            {
+              "slug": "anthus-caffer",
+              "scientificName": "Anthus caffer",
+              "en": "Bushveld Pipit",
+              "af": "Bosveldkoester"
+            },
+            {
+              "slug": "anthus-cinnamomeus",
+              "scientificName": "Anthus cinnamomeus",
+              "en": "African Pipit",
+              "af": "Gewone Koester"
+            },
+            {
+              "slug": "anthus-leucophrys",
+              "scientificName": "Anthus leucophrys",
+              "en": "Plain-backed Pipit",
+              "af": "Donkerkoester"
+            },
+            {
+              "slug": "anthus-lineiventris",
+              "scientificName": "Anthus lineiventris",
+              "en": "Striped Pipit",
+              "af": "Gestreepte Koester"
+            },
+            {
+              "slug": "anthus-nicholsoni",
+              "scientificName": "Anthus nicholsoni",
+              "en": "Nicholson’s Pipit",
+              "af": "Nicholsonkoester"
+            },
+            {
+              "slug": "anthus-vaalensis",
+              "scientificName": "Anthus vaalensis",
+              "en": "Buffy Pipit",
+              "af": "Vaalkoester"
+            },
+            {
+              "slug": "macronyx-croceus",
+              "scientificName": "Macronyx croceus",
+              "en": "Yellow-throated Longclaw",
+              "af": "Geelkeelkalkoentjie"
+            },
+            {
+              "slug": "motacilla-aguimp",
+              "scientificName": "Motacilla aguimp",
+              "en": "African Pied Wagtail",
+              "af": "Bontkwikkie"
+            },
+            {
+              "slug": "motacilla-capensis",
+              "scientificName": "Motacilla capensis",
+              "en": "Cape Wagtail",
+              "af": "Gewone Kwikkie"
+            },
+            {
+              "slug": "motacilla-clara",
+              "scientificName": "Motacilla clara",
+              "en": "Mountain Wagtail",
+              "af": "Bergkwikkie"
+            },
+            {
+              "slug": "motacilla-flava",
+              "scientificName": "Motacilla flava",
+              "en": "Western Yellow Wagtail",
+              "af": "Geelkwikkie"
+            }
+          ]
+        },
+        {
+          "slug": "fringillidae",
+          "scientificName": "Fringillidae",
+          "en": "Finches and canaries",
+          "af": "Kanaries",
+          "species": [
+            {
+              "slug": "crithagra-atrogularis",
+              "scientificName": "Crithagra atrogularis",
+              "en": "Black-throated Canary",
+              "af": "Bergkanarie"
+            },
+            {
+              "slug": "crithagra-citrinipectus",
+              "scientificName": "Crithagra citrinipectus",
+              "en": "Lemon-breasted Canary",
+              "af": "Geelborskanarie"
+            },
+            {
+              "slug": "crithagra-gularis",
+              "scientificName": "Crithagra gularis",
+              "en": "Streaky-headed Seedeater",
+              "af": "Streepkopkanarie"
+            },
+            {
+              "slug": "crithagra-scotops",
+              "scientificName": "Crithagra scotops",
+              "en": "Forest Canary",
+              "af": "Gestreepte Kanarie"
+            },
+            {
+              "slug": "crithagra-sulphurata",
+              "scientificName": "Crithagra sulphurata",
+              "en": "Brimstone Canary",
+              "af": "Dikbekkanarie"
+            },
+            {
+              "slug": "serinus-canicollis",
+              "scientificName": "Serinus canicollis",
+              "en": "Cape Canary",
+              "af": "Kaapse Kanarie"
+            }
+          ]
+        },
+        {
+          "slug": "emberizidae",
+          "scientificName": "Emberizidae",
+          "en": "Buntings",
+          "af": "Streepkoppies",
+          "species": [
+            {
+              "slug": "emberiza-flaviventris",
+              "scientificName": "Emberiza flaviventris",
+              "en": "Golden-breasted Bunting",
+              "af": "Rooirugstreepkoppie"
+            },
+            {
+              "slug": "emberiza-impetuani",
+              "scientificName": "Emberiza impetuani",
+              "en": "Lark-like Bunting",
+              "af": "Vaalstreepkoppie"
+            },
+            {
+              "slug": "emberiza-tahapisi",
+              "scientificName": "Emberiza tahapisi",
+              "en": "Cinnamon-breasted Bunting",
+              "af": "Klipstreepkoppie"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

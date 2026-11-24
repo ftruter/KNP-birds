@@ -50,6 +50,7 @@ import {
 } from './catalog.js'
 import { agentUrls } from './head.js'
 import { clientSrc, offlineSrc, styleSrc } from './client.js'
+import { taxonomySectionHtml } from './taxonomy.js'
 import { ICON_LINKS } from './icon.js'
 import { INSTALL_LINKS } from './offline-app.js'
 import { OFFLINE_PATH } from './offline.js'
@@ -147,7 +148,12 @@ ${families
 </nav>`
 }
 
-export const renderHomeHtml = ({ origin, speciesIndex, familiesIndex }) => {
+export const renderHomeHtml = ({
+  origin,
+  speciesIndex,
+  familiesIndex,
+  taxonomy,
+}) => {
   const species = indexRows(speciesIndex)
   const families = indexRows(familiesIndex)
   const counts =
@@ -168,6 +174,7 @@ ${HOME_BROWSE.map((item) => `<li><a href="${item.href}">${escapeHtml(item.name)}
 </nav>
 <p class="ask-ai-link"><a href="${HOME_ASK_AI.href}">${escapeHtml(HOME_ASK_AI.name)}</a>: ${escapeHtml(HOME_ASK_AI.description)}</p>
 ${OFFLINE_PANEL}
+${taxonomySectionHtml(taxonomy)}
 ${familyIndexHtml(familiesIndex)}
 <h2>What these pages compare</h2>
 <ol class="compare-list">
@@ -185,7 +192,7 @@ ${familyIndexHtml(familiesIndex)}
 <p>${escapeHtml(HOME_POPULATION_INTRO)}</p>
 </details>
 <p><a href="/vocab/colours">Colour names</a> used in the field marks.</p>
-<p>The guide is written for people and for AI agents. Pages are rendered on the server. JavaScript is optional: sorting and photo zoom still work from the links and the page when it is off.</p>
+<p>The guide is written for people and for AI agents. Pages are rendered on the server. JavaScript is optional for reading the guide: sorting and photo zoom still work from the links and the page when it is off. The taxonomy diagram is drawn by the script.</p>
 ${agentHtml(origin)}`
   return layout({
     title: 'Birds of Kruger National Park',

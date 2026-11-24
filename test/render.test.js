@@ -141,7 +141,7 @@ test('species HTML keeps comparisons that differ, and drops empty ones', async (
   )
   assert.doesNotMatch(
     html,
-    /<script(?! type="(module|application\/ld\+json)")/i,
+    /<script(?! type="(module|application\/ld\+json|application\/json)")/i,
   )
   assert.doesNotMatch(html, /\sstyle=/)
   const headings = [...html.matchAll(/<h([1-6])\b/g)].map((match) =>
@@ -347,7 +347,7 @@ test('a family page shows the derived approximate total', async () => {
   )
   assert.doesNotMatch(
     html,
-    /<script(?! type="(module|application\/ld\+json)")/i,
+    /<script(?! type="(module|application\/ld\+json|application\/json)")/i,
   )
   const markdown = renderFamilyMarkdown(doc, [
     { doc: roller, imagesAvailable: {} },
@@ -597,7 +597,7 @@ test('a species stub states that details are unpublished and skips empty section
   )
   assert.doesNotMatch(
     html,
-    /<script(?! type="(module|application\/ld\+json)")/i,
+    /<script(?! type="(module|application\/ld\+json|application\/json)")/i,
   )
   const headings = [...html.matchAll(/<h([1-6])\b/g)].map((match) =>
     Number(match[1]),
@@ -834,7 +834,7 @@ test('the credits page names sources, taxonomy, and the site, and credits media 
   )
   assert.doesNotMatch(
     html,
-    /<script(?! type="(module|application\/ld\+json)")/i,
+    /<script(?! type="(module|application\/ld\+json|application\/json)")/i,
   )
   for (const name of [
     'Birda SABAP2 Kruger checklist',

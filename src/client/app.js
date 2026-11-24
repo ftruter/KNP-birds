@@ -552,6 +552,437 @@ const bindCalls = () => {
   }
 }
 
+const hiddenLabel = (count, one, many) =>
+  'Hides ' + count + ' ' + (count === 1 ? one : many)
+
+const taxCurve = (x1, y1, x2, y2) => {
+  const bend = Math.max(28, (x2 - x1) * 0.5)
+  const n = (value) => Math.round(value * 10) / 10
+  return (
+    'M ' +
+    n(x1) +
+    ' ' +
+    n(y1) +
+    ' C ' +
+    n(x1 + bend) +
+    ' ' +
+    n(y1) +
+    ', ' +
+    n(x2 - bend) +
+    ' ' +
+    n(y2) +
+    ', ' +
+    n(x2) +
+    ' ' +
+    n(y2)
+  )
+}
+
+const bindTaxonomy = () => {
+  const host = document.getElementById('taxonomy-tree')
+  const dataEl = document.getElementById('taxonomy-data')
+  if (!host || !dataEl) return
+  let data
+  try {
+    data = JSON.parse(dataEl.textContent)
+  } catch {
+    return
+  }
+  if (!data || !Array.isArray(data.orders)) return
+  host.setAttribute('role', 'group')
+  host.setAttribute('aria-label', 'Taxonomy, from birds to species')
+  const tip = document.createElement('div')
+  tip.className = 'tax-tip'
+  tip.setAttribute('role', 'tooltip')
+  tip.hidden = true
+  document.body.append(tip)
+  const hideTip = () => {
+    tip.hidden = true
+  }
+  const placeTip = (button) => {
+    const text = button.dataset.hides
+    if (!text || button.getAttribute('aria-expanded') === 'true') {
+      hideTip()
+      return
+    }
+    tip.textContent = text
+    tip.hidden = false
+    const rect = button.getBoundingClientRect()
+    tip.style.left = rect.left + rect.width / 2 + 'px'
+    tip.style.top = rect.top + 'px'
+  }
+  let state = { order: null, family: null }
+  let settled = new Set()
+  let canvas = null
+  let svg = null
+  let animating = false
+  let running = false
+
+  const line = (className, text, lang) => {
+    const span = document.createElement('span')
+    const blank = !String(text || '').trim()
+    span.className =
+      className + (blank && className === 'tax-af' ? ' is-blank' : '')
+    span.lang = lang
+    span.textContent = blank ? '\u00a0' : text
+    if (blank) span.setAttribute('aria-hidden', 'true')
+    return span
+  }
+
+  const nodeView = (item, level, open, childCount, one, many) => {
+    const node = document.createElement('div')
+    node.className = 'tax-node' + (open ? ' is-open' : '')
+    node.dataset.level = level
+    node.dataset.id = item.href || item.la
+    const capsule = item.href
+      ? document.createElement('a')
+      : document.createElement('div')
+    capsule.className = 'tax-capsule'
+    if (item.href) capsule.href = item.href
+    capsule.append(
+      line('tax-en', item.en, 'en'),
+      line('tax-af', item.af || '', 'af'),
+      line('tax-la', item.la, 'la'),
+    )
+    node.append(capsule)
+    if (!(childCount > 0)) return node
+    const button = document.createElement('button')
+    button.type = 'button'
+    button.className = 'tax-toggle'
+    button.dataset.level = level
+    button.dataset.id = node.dataset.id
+    button.setAttribute('aria-expanded', open ? 'true' : 'false')
+    const label = hiddenLabel(childCount, one, many)
+    button.setAttribute('aria-label', open ? 'Collapse' : label)
+    if (!open) button.dataset.hides = label
+    button.textContent = open ? '\u2212' : '+'
+    node.append(button)
+    return node
+  }
+
+  const column = (level, nodes) => {
+    const col = document.createElement('div')
+    col.className = 'tax-col'
+    col.dataset.level = level
+    for (const node of nodes) col.append(node)
+    return col
+  }
+
+  const align = () => {
+    const orderNode = canvas.querySelector(
+      '[data-level="order"] .tax-node.is-open',
+    )
+    const familyCol = canvas.querySelector('[data-level="family"]')
+    const familyNode = canvas.querySelector(
+      '[data-level="family"] .tax-node.is-open',
+    )
+    const speciesCol = canvas.querySelector('[data-level="species"]')
+    if (familyCol && orderNode)
+      familyCol.style.marginTop = orderNode.offsetTop + 'px'
+    if (speciesCol && orderNode && familyNode)
+      speciesCol.style.marginTop =
+        orderNode.offsetTop + familyNode.offsetTop + 'px'
+  }
+
+  const draw = () => {
+    if (!svg || !canvas) return
+    const width = Math.max(canvas.scrollWidth, 1)
+    const height = Math.max(canvas.scrollHeight, 1)
+    svg.setAttribute('width', String(width))
+    svg.setAttribute('height', String(height))
+    svg.setAttribute('viewBox', '0 0 ' + width + ' ' + height)
+    const base = canvas.getBoundingClientRect()
+    const point = (el, side) => {
+      const rect = el.getBoundingClientRect()
+      return {
+        x: (side === 'left' ? rect.left : rect.right) - base.left,
+        y: rect.top + rect.height / 2 - base.top,
+      }
+    }
+    const next = new Set()
+    const paths = []
+    const link = (fromEl, toEl, key) => {
+      if (!fromEl || !toEl) return
+      const from = point(fromEl, 'right')
+      const to = point(toEl, 'left')
+      next.add(key)
+      const path = document.createElementNS(
+        'http://www.w3.org/2000/svg',
+        'path',
+      )
+      path.setAttribute('pathLength', '1')
+      path.setAttribute('d', taxCurve(from.x, from.y, to.x, to.y))
+      if (settled.has(key)) path.setAttribute('class', 'is-settled')
+      paths.push(path)
+    }
+    const root = canvas.querySelector('[data-level="root"] .tax-capsule')
+    for (const orderNode of canvas.querySelectorAll(
+      '[data-level="order"] .tax-node',
+    ))
+      link(
+        root,
+        orderNode.querySelector('.tax-capsule'),
+        'root->' + orderNode.dataset.id,
+      )
+    const openOrder = canvas.querySelector(
+      '[data-level="order"] .tax-node.is-open',
+    )
+    if (openOrder) {
+      const from =
+        openOrder.querySelector('.tax-toggle') ||
+        openOrder.querySelector('.tax-capsule')
+      for (const familyNode of canvas.querySelectorAll(
+        '[data-level="family"] .tax-node',
+      ))
+        link(
+          from,
+          familyNode.querySelector('.tax-capsule'),
+          openOrder.dataset.id + '->' + familyNode.dataset.id,
+        )
+    }
+    const openFamily = canvas.querySelector(
+      '[data-level="family"] .tax-node.is-open',
+    )
+    if (openFamily) {
+      const from =
+        openFamily.querySelector('.tax-toggle') ||
+        openFamily.querySelector('.tax-capsule')
+      for (const speciesNode of canvas.querySelectorAll(
+        '[data-level="species"] .tax-node',
+      ))
+        link(
+          from,
+          speciesNode.querySelector('.tax-capsule'),
+          openFamily.dataset.id + '->' + speciesNode.dataset.id,
+        )
+    }
+    svg.replaceChildren(...paths)
+    settled = next
+  }
+
+  const reveal = () => {
+    const parent =
+      canvas.querySelector('[data-level="family"] .tax-node.is-open') ||
+      canvas.querySelector('[data-level="order"] .tax-node.is-open')
+    const col =
+      canvas.querySelector('[data-level="species"]') ||
+      canvas.querySelector('[data-level="family"]')
+    const behavior = reduced() ? 'auto' : 'smooth'
+    if (parent) {
+      const view = host.getBoundingClientRect()
+      const box = parent.getBoundingClientRect()
+      if (box.top < view.top + 8 || box.bottom > view.bottom - 8)
+        host.scrollBy({ top: box.top - view.top - 12, behavior })
+    }
+    if (!col) return
+    const view = host.getBoundingClientRect()
+    const box = col.getBoundingClientRect()
+    if (box.right > view.right - 12)
+      host.scrollBy({ left: box.right - view.right + 16, behavior })
+  }
+
+  const grow = (col) => {
+    if (!col || reduced()) return
+    animating = true
+    col.style.opacity = '0'
+    col.classList.add('is-animating')
+    col.getBoundingClientRect()
+    window.requestAnimationFrame(() => {
+      col.style.opacity = '1'
+    })
+    window.setTimeout(() => {
+      animating = false
+      if (!col.isConnected) return
+      col.style.opacity = ''
+      col.classList.remove('is-animating')
+      draw()
+    }, 460)
+  }
+
+  const collapse = (col) =>
+    new Promise((resolve) => {
+      if (!col || !col.isConnected || reduced()) {
+        resolve()
+        return
+      }
+      let settledDone = false
+      let timer = 0
+      const finish = () => {
+        if (settledDone) return
+        settledDone = true
+        window.clearTimeout(timer)
+        animating = false
+        resolve()
+      }
+      animating = true
+      col.style.opacity = '1'
+      col.classList.add('is-animating')
+      col.getBoundingClientRect()
+      window.requestAnimationFrame(() => {
+        col.style.opacity = '0'
+      })
+      col.addEventListener('transitionend', finish)
+      timer = window.setTimeout(finish, 450)
+    })
+
+  const paint = (enterLevel) => {
+    canvas = document.createElement('div')
+    canvas.className = 'tax-canvas'
+    svg = document.createElementNS('http://www.w3.org/2000/svg', 'svg')
+    svg.setAttribute('class', 'tax-links')
+    svg.setAttribute('aria-hidden', 'true')
+    const cols = document.createElement('div')
+    cols.className = 'tax-cols'
+    cols.append(
+      column('root', [nodeView(data.root, 'root', false)]),
+      column(
+        'order',
+        data.orders.map((order) =>
+          nodeView(
+            order,
+            'order',
+            state.order === order.la,
+            order.families.length,
+            'family',
+            'families',
+          ),
+        ),
+      ),
+    )
+    const order = data.orders.find((item) => item.la === state.order)
+    let entered = null
+    if (order) {
+      const familyCol = column(
+        'family',
+        order.families.map((family) =>
+          nodeView(
+            family,
+            'family',
+            state.family === family.href,
+            family.species.length,
+            'species',
+            'species',
+          ),
+        ),
+      )
+      cols.append(familyCol)
+      if (enterLevel === 'family') entered = familyCol
+      const family = order.families.find((item) => item.href === state.family)
+      if (family) {
+        const speciesCol = column(
+          'species',
+          family.species.map((species) => nodeView(species, 'species', false)),
+        )
+        cols.append(speciesCol)
+        if (enterLevel === 'species') entered = speciesCol
+      }
+    }
+    canvas.append(svg, cols)
+    host.replaceChildren(canvas)
+    align()
+    draw()
+    reveal()
+    if (entered) grow(entered)
+  }
+
+  const columnsLeaving = (next) => {
+    const cols = []
+    const family = host.querySelector('[data-level="family"]')
+    const species = host.querySelector('[data-level="species"]')
+    if (state.order && state.order !== next.order) {
+      if (family) cols.push(family)
+      if (species) cols.push(species)
+      return cols
+    }
+    if (state.family && state.family !== next.family && species)
+      cols.push(species)
+    return cols
+  }
+
+  const commit = async (next) => {
+    if (running) return
+    if (state.order === next.order && state.family === next.family) return
+    running = true
+    const leaving = columnsLeaving(next)
+    if (leaving.length) await Promise.all(leaving.map(collapse))
+    const enterLevel =
+      next.order && next.order !== state.order
+        ? 'family'
+        : next.family && next.family !== state.family
+          ? 'species'
+          : null
+    state = next
+    paint(enterLevel)
+    running = false
+  }
+
+  host.addEventListener('click', (event) => {
+    const button = event.target.closest('.tax-toggle')
+    if (!button || !host.contains(button)) return
+    hideTip()
+    const id = button.dataset.id
+    const restore = document.activeElement === button
+    const level = button.dataset.level
+    const next =
+      level === 'order'
+        ? state.order === id
+          ? { order: null, family: null }
+          : { order: id, family: null }
+        : state.family === id
+          ? { order: state.order, family: null }
+          : { order: state.order, family: id }
+    commit(next).then(() => {
+      if (!restore) return
+      const again = host.querySelector(
+        '.tax-toggle[data-level="' +
+          level +
+          '"][data-id="' +
+          CSS.escape(id) +
+          '"]',
+      )
+      if (again) again.focus({ preventScroll: true })
+    })
+  })
+  host.addEventListener('keydown', (event) => {
+    const button = event.target.closest?.('.tax-toggle')
+    if (!button || !host.contains(button)) return
+    const open = button.getAttribute('aria-expanded') === 'true'
+    if (event.key === 'ArrowRight' && !open) {
+      event.preventDefault()
+      button.click()
+    }
+    if (event.key === 'ArrowLeft' && open) {
+      event.preventDefault()
+      button.click()
+    }
+  })
+  host.addEventListener('pointerover', (event) => {
+    const button = event.target.closest?.('.tax-toggle')
+    if (button && host.contains(button)) placeTip(button)
+  })
+  host.addEventListener('pointerout', (event) => {
+    const button = event.target.closest?.('.tax-toggle')
+    if (button) hideTip()
+  })
+  host.addEventListener('focusin', (event) => {
+    const button = event.target.closest?.('.tax-toggle')
+    if (button && host.contains(button)) placeTip(button)
+  })
+  host.addEventListener('focusout', hideTip)
+  host.addEventListener('scroll', hideTip, { passive: true })
+  if (typeof ResizeObserver === 'function') {
+    const observer = new ResizeObserver(() => {
+      if (!animating) draw()
+    })
+    observer.observe(host)
+  }
+  if (document.fonts && document.fonts.ready)
+    document.fonts.ready.then(() => {
+      if (!animating) draw()
+    })
+  paint(null)
+}
+
 bindTables()
 bindZoom()
 bindSearchMedia()
@@ -562,4 +993,5 @@ bindCalls()
 bindSearchReturn()
 rememberSearch()
 holdSearchLink()
+bindTaxonomy()
 showCurrentNav()

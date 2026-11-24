@@ -151,7 +151,7 @@ test('the sitemap page is nested in html, markdown, and json', async () => {
   )
   assert.doesNotMatch(
     html,
-    /<script(?! type="(module|application\/ld\+json)")/i,
+    /<script(?! type="(module|application\/ld\+json|application\/json)")/i,
   )
   const nav = html.match(/<ul class="nav-list">[\s\S]*?<\/ul>/)[0]
   assert.equal(nav.includes('Sitemap'), false)

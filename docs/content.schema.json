@@ -11,7 +11,8 @@
     { "$ref": "#/$defs/identifySound" },
     { "$ref": "#/$defs/identifyPhoto" },
     { "$ref": "#/$defs/offline" },
-    { "$ref": "#/$defs/facts" }
+    { "$ref": "#/$defs/facts" },
+    { "$ref": "#/$defs/taxonomy" }
   ],
   "$defs": {
     "creditDisclosure": {
@@ -1400,6 +1401,90 @@
               "hex": { "type": "string", "pattern": "^#[0-9A-Fa-f]{6}$" },
               "ridgway": { "anyOf": [{ "type": "null" }, { "type": "string", "minLength": 1 }] },
               "smithe": { "anyOf": [{ "type": "null" }, { "type": "string", "minLength": 1 }] }
+            }
+          }
+        }
+      }
+    },
+    "taxonomySpecies": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["slug", "scientificName", "en", "af"],
+      "properties": {
+        "slug": { "$ref": "#/$defs/slug" },
+        "scientificName": { "type": "string", "minLength": 1 },
+        "en": { "type": "string", "minLength": 1 },
+        "af": { "$ref": "#/$defs/textOrNull" }
+      }
+    },
+    "taxonomyFamily": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["slug", "scientificName", "en", "af", "species"],
+      "properties": {
+        "slug": { "$ref": "#/$defs/slug" },
+        "scientificName": { "type": "string", "minLength": 1 },
+        "en": { "type": "string", "minLength": 1 },
+        "af": { "$ref": "#/$defs/textOrNull" },
+        "species": {
+          "type": "array",
+          "items": { "$ref": "#/$defs/taxonomySpecies" }
+        }
+      }
+    },
+    "taxonomy": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["kind", "source", "root", "notes", "orders"],
+      "properties": {
+        "kind": { "const": "taxonomy" },
+        "source": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["title", "citation", "url", "doi", "retrieved", "placement", "afrikaans"],
+          "properties": {
+            "title": { "type": "string", "minLength": 1 },
+            "citation": { "type": "string", "minLength": 1 },
+            "url": { "type": "string", "minLength": 1 },
+            "listUrl": { "type": "string", "minLength": 1 },
+            "ordersUrl": { "type": "string", "minLength": 1 },
+            "doi": { "type": "string", "minLength": 1 },
+            "retrieved": { "type": "string", "minLength": 1 },
+            "placement": { "type": "string", "minLength": 1 },
+            "afrikaans": { "type": "string", "minLength": 1 }
+          }
+        },
+        "root": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["en", "af", "scientificName"],
+          "properties": {
+            "en": { "type": "string", "minLength": 1 },
+            "af": { "type": "string", "minLength": 1 },
+            "scientificName": { "type": "string", "minLength": 1 }
+          }
+        },
+        "notes": {
+          "type": "array",
+          "minItems": 1,
+          "items": { "type": "string", "minLength": 1 }
+        },
+        "orders": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": ["scientificName", "en", "af", "families"],
+            "properties": {
+              "scientificName": { "type": "string", "minLength": 1 },
+              "en": { "type": "string", "minLength": 1 },
+              "af": { "type": "string", "minLength": 1 },
+              "families": {
+                "type": "array",
+                "minItems": 1,
+                "items": { "$ref": "#/$defs/taxonomyFamily" }
+              }
             }
           }
         }

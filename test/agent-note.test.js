@@ -102,7 +102,7 @@ test('the home page and every HTML footer mention the MCP server', async () => {
   )
   assert.doesNotMatch(
     home,
-    /<script(?! type="(module|application\/ld\+json)")/i,
+    /<script(?! type="(module|application\/ld\+json|application\/json)")/i,
   )
   const species = await (await app.fetch('/species/coracias-caudatus')).text()
   assert.match(species, /href="https:\/\/birds\.truter\.world\/mcp"/)
