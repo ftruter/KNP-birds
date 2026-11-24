@@ -58,6 +58,7 @@ import {
   wingspanLabel,
 } from './facts.js'
 import { familyTableMarkdown, speciesTableMarkdown } from './lists.js'
+import { taxonomyMarkdown } from './taxonomy.js'
 import {
   ASK_AI_EXAMPLES,
   ASK_AI_EXPECT,
@@ -80,7 +81,12 @@ ${families.map((family) => `- [${family.name}](${family.href}) (_${family.latin}
 `
 }
 
-export const renderHomeMarkdown = ({ origin, speciesIndex, familiesIndex }) => {
+export const renderHomeMarkdown = ({
+  origin,
+  speciesIndex,
+  familiesIndex,
+  taxonomy,
+}) => {
   const species = indexRows(speciesIndex)
   const families = indexRows(familiesIndex)
   const counts =
@@ -116,7 +122,8 @@ ${browse}
 - [Colour names](/vocab/colours)
 - [${HOME_ASK_AI.name}](${HOME_ASK_AI.href}): ${HOME_ASK_AI.description}
 
-${familyIndexMarkdown(familiesIndex)}${answeringMarkdown(origin)}
+${familyIndexMarkdown(familiesIndex)}
+${taxonomyMarkdown(taxonomy)}${answeringMarkdown(origin)}
 
 ## What these pages compare
 

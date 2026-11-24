@@ -42,6 +42,11 @@
  * index/offline is what a copy of the site saved to a phone's home screen
  * can keep: the pages, and one photograph and one clip for each species,
  * with sizes from data/media/mirror.json (scripts/publish-media.mjs).
+ *
+ * index/taxonomy is the home-page tree: orders from data/taxonomy/orders.json,
+ * families and species from the family documents. It is not edited by hand.
+ * The home page embeds it, so a saved copy of the site has the diagram
+ * without a further request.
  */
 import { readdir, readFile, writeFile } from 'node:fs/promises'
 import path from 'node:path'
@@ -55,6 +60,8 @@ import {
 } from '../src/identify.js'
 import { deriveFacts } from '../src/facts.js'
 import { deriveOffline } from '../src/offline.js'
+import { deriveTaxonomy } from '../src/taxonomy.js'
+import ordersDoc from '../data/taxonomy/orders.json' with { type: 'json' }
 import { applyRecordingOverlay, recordingOverlay } from '../src/recordings.js'
 import { residencyCoverage } from '../src/seasons.js'
 
@@ -432,6 +439,7 @@ export const deriveAll = (
   )
   return {
     families,
+    taxonomy: deriveTaxonomy(families, ordersDoc),
     speciesIndex: deriveSpeciesIndex(speciesDocs),
     familiesIndex: deriveFamiliesIndex(families),
     credits: deriveCredits(speciesDocs, recordingOverlay),
@@ -561,6 +569,9 @@ export const writeDerived = async (dataDir = path.join(root, 'data')) => {
     )
   writes.push(
     writeJson(path.join(dataDir, 'index', 'offline.json'), derived.offline),
+  )
+  writes.push(
+    writeJson(path.join(dataDir, 'index', 'taxonomy.json'), derived.taxonomy),
   )
   await Promise.all(writes)
   return derived

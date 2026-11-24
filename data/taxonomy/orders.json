@@ -1,0 +1,235 @@
+{
+  "source": {
+    "title": "IOC World Bird List (v15.2)",
+    "citation": "Gill, F., Donsker, D. & Rasmussen, P. (Eds). 2026. IOC World Bird List (v15.2). doi:10.14344/IOC.ML.15.2.",
+    "url": "https://www.worldbirdnames.org/new/",
+    "listUrl": "https://www.worldbirdnames.org/new/ioc-lists/master-list-2/",
+    "ordersUrl": "https://www.worldbirdnames.org/new/classification/orders-of-birds-draft/",
+    "doi": "https://doi.org/10.14344/IOC.ML.15.2",
+    "retrieved": "2026-11-24",
+    "placement": "Which family belongs to which order, and the sequence of both, follows the IOC 15.2 master spreadsheet. English order names follow the IOC Orders of Birds page, shortened where that 2019 page still uses a wider circumscription than v15.2.",
+    "afrikaans": "Afrikaans order names follow the Afrikaans Wikipedia where an article names the order. Where it does not, the name is the family's Afrikaans heading on this site, or those headings joined. The notes say which."
+  },
+  "root": {
+    "en": "Birds",
+    "af": "Voëls",
+    "scientificName": "Aves"
+  },
+  "notes": [
+    "Ground-hornbills are kept as Bucorvidae, as on this site and in IOC 15.1. IOC 15.2 moves Bucorvus into Bucerotidae, following AviList v2025. The order is Bucerotiformes either way, and the family is shown next to the hornbills.",
+    "Buttonquails (Turnicidae) are in Charadriiformes in the IOC list, not an order of their own. Hamerkop (Scopidae) and the ibises (Threskiornithidae) are Pelecaniformes. Cormorants and darters are Suliformes. Falcons are Falconiformes, separate from the hawks, eagles, osprey and secretarybird (Accipitriformes).",
+    "Suliformes has no Afrikaans name on Wikipedia, so the label joins this site's family headings (Duikers en slangeshalsvoëls). Coraciiformes has no current Afrikaans order name — the Wikipedia article still mixes in hoopoes and hornbills, which the IOC places in Bucerotiformes — so the label joins the three family headings. Pelikaanagtiges is the Wikipedia alias for Pelecaniformes; the article title Roeipotiges is the older totipalmate group, which now sits partly in Suliformes. Dagroofvoëls is used here for Accipitriformes only; falcons are the order Valke.",
+    "Orders with a single family in this guide (ostriches, nightjars, turacos, bustards, grebes, flamingos, mousebirds and falcons) use that family's Afrikaans heading, because Afrikaans Wikipedia has no separate name for the order.",
+    "Seven families have no Afrikaans heading on this site, so that row of the capsule is blank: hawks, eagles and kites; reed warblers; grassbirds; African warblers; monarchs; nicators; and leaf warblers."
+  ],
+  "orders": [
+    {
+      "scientificName": "Struthioniformes",
+      "en": "Ostriches",
+      "af": "Volstruise",
+      "families": ["struthionidae"]
+    },
+    {
+      "scientificName": "Anseriformes",
+      "en": "Waterfowl",
+      "af": "Eendvoëls",
+      "families": ["anatidae"]
+    },
+    {
+      "scientificName": "Galliformes",
+      "en": "Landfowl",
+      "af": "Hoendervoëls",
+      "families": ["numididae", "phasianidae"]
+    },
+    {
+      "scientificName": "Caprimulgiformes",
+      "en": "Nightjars",
+      "af": "Naguile",
+      "families": ["caprimulgidae"]
+    },
+    {
+      "scientificName": "Apodiformes",
+      "en": "Swifts and hummingbirds",
+      "af": "Windswaelagtiges",
+      "families": ["apodidae"]
+    },
+    {
+      "scientificName": "Musophagiformes",
+      "en": "Turacos",
+      "af": "Loeries",
+      "families": ["musophagidae"]
+    },
+    {
+      "scientificName": "Otidiformes",
+      "en": "Bustards",
+      "af": "Korhane",
+      "families": ["otididae"]
+    },
+    {
+      "scientificName": "Cuculiformes",
+      "en": "Cuckoos",
+      "af": "Koekoekvoëls",
+      "families": ["cuculidae"]
+    },
+    {
+      "scientificName": "Pterocliformes",
+      "en": "Sandgrouse",
+      "af": "Sandpatrysagtiges",
+      "families": ["pteroclidae"]
+    },
+    {
+      "scientificName": "Columbiformes",
+      "en": "Pigeons and doves",
+      "af": "Duifagtiges",
+      "families": ["columbidae"]
+    },
+    {
+      "scientificName": "Gruiformes",
+      "en": "Rails, cranes and allies",
+      "af": "Kraanvoëlagtiges",
+      "families": ["heliornithidae", "sarothruridae", "rallidae"]
+    },
+    {
+      "scientificName": "Podicipediformes",
+      "en": "Grebes",
+      "af": "Dobbertjies",
+      "families": ["podicipedidae"]
+    },
+    {
+      "scientificName": "Phoenicopteriformes",
+      "en": "Flamingos",
+      "af": "Flaminke",
+      "families": ["phoenicopteridae"]
+    },
+    {
+      "scientificName": "Charadriiformes",
+      "en": "Shorebirds",
+      "af": "Steltloperagtiges",
+      "families": [
+        "turnicidae",
+        "burhinidae",
+        "recurvirostridae",
+        "charadriidae",
+        "rostratulidae",
+        "jacanidae",
+        "scolopacidae",
+        "glareolidae",
+        "laridae"
+      ]
+    },
+    {
+      "scientificName": "Ciconiiformes",
+      "en": "Storks",
+      "af": "Ooievaaragtiges",
+      "families": ["ciconiidae"]
+    },
+    {
+      "scientificName": "Suliformes",
+      "en": "Cormorants and allies",
+      "af": "Duikers en slangeshalsvoëls",
+      "families": ["anhingidae", "phalacrocoracidae"]
+    },
+    {
+      "scientificName": "Pelecaniformes",
+      "en": "Herons, ibises and pelicans",
+      "af": "Pelikaanagtiges",
+      "families": ["threskiornithidae", "ardeidae", "scopidae", "pelecanidae"]
+    },
+    {
+      "scientificName": "Accipitriformes",
+      "en": "Hawks, eagles and vultures",
+      "af": "Dagroofvoëls",
+      "families": ["sagittariidae", "pandionidae", "accipitridae"]
+    },
+    {
+      "scientificName": "Strigiformes",
+      "en": "Owls",
+      "af": "Uile",
+      "families": ["tytonidae", "strigidae"]
+    },
+    {
+      "scientificName": "Coliiformes",
+      "en": "Mousebirds",
+      "af": "Muisvoëls",
+      "families": ["coliidae"]
+    },
+    {
+      "scientificName": "Trogoniformes",
+      "en": "Trogons",
+      "af": "Bosloeries",
+      "families": ["trogonidae"]
+    },
+    {
+      "scientificName": "Bucerotiformes",
+      "en": "Hornbills and hoopoes",
+      "af": "Neushoringvoëls en hoephoepe",
+      "families": ["upupidae", "phoeniculidae", "bucorvidae", "bucerotidae"]
+    },
+    {
+      "scientificName": "Coraciiformes",
+      "en": "Kingfishers and allies",
+      "af": "Troupante, visvangers en byvreters",
+      "families": ["coraciidae", "alcedinidae", "meropidae"]
+    },
+    {
+      "scientificName": "Piciformes",
+      "en": "Woodpeckers and allies",
+      "af": "Spegvoëls",
+      "families": ["lybiidae", "indicatoridae", "picidae"]
+    },
+    {
+      "scientificName": "Falconiformes",
+      "en": "Falcons",
+      "af": "Valke",
+      "families": ["falconidae"]
+    },
+    {
+      "scientificName": "Psittaciformes",
+      "en": "Parrots",
+      "af": "Papegaaie",
+      "families": ["psittacidae"]
+    },
+    {
+      "scientificName": "Passeriformes",
+      "en": "Perching birds",
+      "af": "Sangvoëls",
+      "families": [
+        "platysteiridae",
+        "malaconotidae",
+        "vangidae",
+        "campephagidae",
+        "oriolidae",
+        "dicruridae",
+        "monarchidae",
+        "laniidae",
+        "corvidae",
+        "paridae",
+        "remizidae",
+        "nicatoridae",
+        "alaudidae",
+        "pycnonotidae",
+        "hirundinidae",
+        "macrosphenidae",
+        "phylloscopidae",
+        "acrocephalidae",
+        "locustellidae",
+        "cisticolidae",
+        "sylviidae",
+        "zosteropidae",
+        "leiothrichidae",
+        "sturnidae",
+        "buphagidae",
+        "turdidae",
+        "muscicapidae",
+        "nectariniidae",
+        "passeridae",
+        "ploceidae",
+        "estrildidae",
+        "viduidae",
+        "motacillidae",
+        "fringillidae",
+        "emberizidae"
+      ]
+    }
+  ]
+}

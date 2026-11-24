@@ -219,9 +219,10 @@ export const renderRoute = async (request, env, route) => {
 }
 
 const renderHome = async (env, format, view) => {
-  const [species, families] = await Promise.all([
+  const [species, families, taxonomy] = await Promise.all([
     readOptional(env.BIRDS_KV, 'index/species'),
     readOptional(env.BIRDS_KV, 'index/families'),
+    readOptional(env.BIRDS_KV, 'index/taxonomy'),
   ])
   const { origin } = view
   if (format === 'json') {
@@ -255,6 +256,18 @@ const renderHome = async (env, format, view) => {
         familyList: homeFamilyLinks(families?.data),
         askAi: link(HOME_ASK_AI),
         census: HOME_POPULATION_INTRO,
+        taxonomy: taxonomy?.data
+          ? {
+              source: taxonomy.data.source?.citation || null,
+              url: taxonomy.data.source?.url || null,
+              orders: (taxonomy.data.orders || []).map((order) => ({
+                en: order.en,
+                af: order.af,
+                scientificName: order.scientificName,
+                families: order.families.length,
+              })),
+            }
+          : null,
       },
       origin,
       '/',
@@ -265,6 +278,7 @@ const renderHome = async (env, format, view) => {
     origin,
     speciesIndex: species?.data,
     familiesIndex: families?.data,
+    taxonomy: taxonomy?.data,
   }
   if (format === 'md') {
     return mdPage(renderHomeMarkdown(shared), origin, '/', 'home')

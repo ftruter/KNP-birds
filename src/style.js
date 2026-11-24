@@ -1351,7 +1351,7 @@ body:has(.call-dock) .site-footer { padding-block-end: var(--gap); }
   .site-header { border-block-end-color: CanvasText; }
   .site-search input, .site-search-hint kbd { border-color: CanvasText; }
   .search-result { border-color: CanvasText; box-shadow: none; }
-  .sample, .plate, .table-wrap, .comparison, .home-action, .browse-links li, .species-card, .facts, .sitemap > li {
+  .sample, .plate, .table-wrap, .comparison, .home-action, .browse-links li, .species-card, .facts, .sitemap > li, .tax-capsule, .tax-toggle {
     border-color: CanvasText;
     box-shadow: none;
   }
@@ -1755,6 +1755,149 @@ body:has(.call-dock) .site-footer { padding-block-end: var(--gap); }
 
 /* Kept in the page for machines that read the markup, and hidden from people: the "For agents" nav link and the MCP paragraph on the home page and in the footer. */
 .for-agents { display: none; }
+
+/* Home-page taxonomy. A horizontal tree: Birds, then orders, then one order's families, then one family's species. The scroll box is the whole diagram, so a phone can pan it without widening the page. */
+.taxonomy-source, .taxonomy-help { max-inline-size: 75ch; }
+.taxonomy-source { color: var(--muted); font-size: var(--fs-sm); }
+.taxonomy-help { font-family: var(--sans); font-size: var(--fs-sm); }
+.taxonomy-notes { max-inline-size: 75ch; }
+.taxonomy-pending { color: var(--muted); font-family: var(--sans); font-size: var(--fs-sm); }
+
+.taxonomy-tree {
+  max-inline-size: 100%;
+  max-block-size: min(70dvh, 40rem);
+  margin-block-start: var(--gap);
+  overflow: auto;
+  overscroll-behavior: contain;
+  -webkit-overflow-scrolling: touch;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow-sm);
+  touch-action: pan-x pan-y;
+}
+
+@media (display-mode: standalone) {
+  .taxonomy-tree { max-block-size: min(78dvh, 44rem); }
+}
+
+.tax-canvas { position: relative; inline-size: max-content; min-inline-size: 100%; }
+.tax-links {
+  position: absolute;
+  inset: 0;
+  overflow: visible;
+  pointer-events: none;
+}
+.tax-links path {
+  fill: none;
+  stroke: var(--brand);
+  stroke-width: 1.75;
+  stroke-linecap: round;
+  opacity: 0.72;
+  stroke-dasharray: 1;
+  stroke-dashoffset: 1;
+  animation: tax-draw 0.48s ease forwards;
+}
+.tax-links path.is-settled { animation: none; stroke-dashoffset: 0; }
+@keyframes tax-draw { to { stroke-dashoffset: 0; } }
+
+.tax-cols {
+  position: relative;
+  display: flex;
+  align-items: flex-start;
+  gap: 2.75rem;
+  inline-size: max-content;
+  padding: 0.85rem 1rem 1.1rem;
+}
+.tax-col {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 0.55rem;
+  flex: 0 0 auto;
+}
+.tax-col.is-animating { transition: opacity 0.38s ease; }
+
+.tax-node {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+.tax-capsule {
+  display: grid;
+  align-content: center;
+  gap: 0.08rem;
+  inline-size: 13.5rem;
+  min-block-size: 4.4rem;
+  margin: 0;
+  padding: 0.45rem 0.95rem;
+  background: var(--bg);
+  color: var(--text);
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  box-shadow: var(--shadow-sm);
+  text-decoration: none;
+}
+a.tax-capsule { color: inherit; }
+a.tax-capsule:hover .tax-en,
+a.tax-capsule:focus-visible .tax-en { text-decoration: underline; text-underline-offset: 0.12em; }
+.tax-node.is-open .tax-capsule { border-color: var(--brand); }
+.tax-en {
+  font-family: var(--sans);
+  font-weight: 700;
+  font-size: var(--fs-sm);
+  line-height: 1.25;
+  color: var(--heading);
+}
+.tax-af {
+  font-family: var(--sans);
+  font-size: var(--fs-xs);
+  line-height: 1.25;
+  color: var(--muted);
+}
+.tax-af.is-blank { visibility: hidden; }
+.tax-la {
+  font-family: var(--serif);
+  font-style: italic;
+  font-size: var(--fs-xs);
+  line-height: 1.25;
+  color: var(--label);
+}
+.tax-toggle {
+  flex: none;
+  inline-size: 2.75rem;
+  block-size: 2.75rem;
+  padding: 0;
+  border: 1px solid var(--brand);
+  border-radius: 999px;
+  background: var(--bg);
+  color: var(--brand);
+  font: 700 1.35rem/1 var(--sans);
+  cursor: pointer;
+}
+.tax-node.is-open .tax-toggle {
+  background: var(--brand);
+  color: var(--bg);
+}
+.tax-toggle:focus-visible { outline: 3px solid var(--focus); outline-offset: 3px; }
+.tax-tip {
+  position: fixed;
+  z-index: 5;
+  transform: translate(-50%, calc(-100% - 0.45rem));
+  padding: 0.28rem 0.65rem;
+  border-radius: var(--radius-pill);
+  background: var(--header-bg);
+  color: var(--header-fg);
+  font: 600 var(--fs-xs)/1.3 var(--sans);
+  pointer-events: none;
+  white-space: nowrap;
+}
+.tax-tip[hidden] { display: none; }
+
+@container wrap (max-width: 40rem) {
+  .tax-cols { gap: 1.75rem; padding-inline: 0.7rem; }
+  .tax-capsule { inline-size: 11.25rem; padding-inline: 0.75rem; }
+}
 
 .visually-hidden {
   position: absolute;

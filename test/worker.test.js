@@ -55,7 +55,7 @@ test('pages are served in html, markdown, and json', async () => {
   )
   assert.doesNotMatch(
     body,
-    /<script(?! type="(module|application\/ld\+json)")/i,
+    /<script(?! type="(module|application\/ld\+json|application\/json)")/i,
   )
 
   const markdown = await site.fetch('/species/coracias-caudatus.md')
@@ -246,7 +246,7 @@ test('the Thrush Nightingale renders as a published species in html, markdown, a
   )
   assert.doesNotMatch(
     htmlBody,
-    /<script(?! type="(module|application\/ld\+json)")/i,
+    /<script(?! type="(module|application\/ld\+json|application\/json)")/i,
   )
   const markdown = await site.fetch('/species/luscinia-luscinia.md')
   assert.equal(
@@ -291,7 +291,7 @@ test('a new family stub and the full families index render in every format', asy
   )
   assert.doesNotMatch(
     htmlBody,
-    /<script(?! type="(module|application\/ld\+json)")/i,
+    /<script(?! type="(module|application\/ld\+json|application\/json)")/i,
   )
 
   const markdown = await site.fetch('/family/alcedinidae.md')
@@ -439,7 +439,7 @@ test('credits is served in html, markdown, and json from index/credits', async (
   )
   assert.doesNotMatch(
     body,
-    /<script(?! type="(module|application\/ld\+json)")/i,
+    /<script(?! type="(module|application\/ld\+json|application\/json)")/i,
   )
   assert.match(html.headers.get('link') || '', /\/credits\.md/)
   const markdown = await site.fetch('/credits.md')

@@ -17,6 +17,7 @@ Colour names are not enumerated in the schema. They must match `vocab/colours`, 
 | `index/identify-sound` | `/identify/sound`           |
 | `index/identify-photo` | `/identify/photo`           |
 | `index/offline`        | `/offline.json` (JSON only) |
+| `index/taxonomy`       | (no page of its own; embedded in `/`) |
 | `vocab/colours`        | `/vocab/colours`            |
 
 `<slug>` is the scientific name in lowercase, with spaces turned into hyphens (`Coracias caudatus` → `coracias-caudatus`).
@@ -304,6 +305,12 @@ A species is matched to a label by scientific name, or through the hand-checked 
 `counts` gives the size of each list. `/identify/photo.json` adds the page text, the model credit and the location of the model files to this document.
 
 A model class is a species slug. The build fails if a class is not a species in the guide, and a species the model does not have is listed, never mapped to a similar bird.
+
+## Taxonomy
+
+`index/taxonomy` (`kind: "taxonomy"`) is the order, family and species tree for the home page. `scripts/seed.mjs` writes it from `data/taxonomy/orders.json` and the family documents. It is not edited by hand, and it has no URL of its own: the home page embeds it, so a saved copy of the site already has the diagram.
+
+`source` records the IOC World Bird List version the orders follow, and where the Afrikaans order names come from. `root` is Birds / Voëls / Aves. `orders` follows the IOC sequence. Each order has its English, Afrikaans and scientific names and its `families`; each family has the species already stored on the family document. `notes` records placements that are easy to misread, and Afrikaans names that are not a Wikipedia order heading. `af` is null when this guide has no Afrikaans heading for that family or species.
 
 ## Offline
 

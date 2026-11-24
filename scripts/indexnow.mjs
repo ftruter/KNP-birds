@@ -34,6 +34,7 @@ const STATIC_PATHS = ['/ask-ai']
 const INDEX_PATHS = {
   'index/species': ['/species', '/', '/sitemap'],
   'index/families': ['/families', '/', '/sitemap'],
+  'index/taxonomy': ['/'],
   'index/credits': ['/credits'],
   'index/identify-sound': ['/identify/sound'],
   'index/identify-photo': ['/identify/photo'],
