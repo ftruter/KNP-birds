@@ -7,6 +7,7 @@ import {
   FAMILY_TOTAL_SEASONS,
   residencyGapText,
   CALL_TYPE,
+  readerCallText,
   SAMPLE_NOTICE,
   afrikaansName,
   EMPTY_FAMILY_SPECIES,
@@ -533,7 +534,7 @@ const callLines = (calls) =>
               return bits.length ? ` ${bits.join('. ')}.` : ''
             })
             .join('')
-          return `- ${CALL_TYPE[call.type] || 'Call'}: ${call.description || ''}${recordings}`
+          return `- ${CALL_TYPE[call.type] || 'Call'}: ${readerCallText(call.description || '')}${recordings}`
         })
         .join('\n')
 

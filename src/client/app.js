@@ -292,9 +292,73 @@ const showCurrentNav = () => {
   list.scrollLeft = Math.max(0, link.offsetLeft - list.offsetLeft)
 }
 
+// One play control per recording, plus the bar that stays on screen. Only
+// one call plays at a time. Stop returns to the start, so the next press
+// plays the call again rather than resuming mid-phrase.
+const stopAudio = (audio) => {
+  audio.pause()
+  try {
+    audio.currentTime = 0
+  } catch {
+    // The browser has not loaded enough of the file to seek yet.
+  }
+}
+
+const bindCalls = () => {
+  const players = [...document.querySelectorAll('.call-player')]
+  if (!players.length) return
+  const bound = []
+  for (const player of players) {
+    const button = player.querySelector('.call-play')
+    const audio = player.querySelector('audio')
+    const label = player.querySelector('.call-play-label')
+    const bar = player.querySelector('.call-play-meter-bar')
+    const status = player.querySelector('.call-play-status')
+    if (!button || !audio || !audio.getAttribute('src')) continue
+    button.hidden = false
+    audio.removeAttribute('controls')
+    player.classList.add('is-ready')
+    const playText = label?.dataset.play || 'Play'
+    const stopText = label?.dataset.stop || 'Stop'
+    const setPlaying = (playing) => {
+      player.classList.toggle('is-playing', playing)
+      button.setAttribute('aria-pressed', playing ? 'true' : 'false')
+      if (label) label.textContent = playing ? stopText : playText
+      if (!playing && bar) bar.style.transform = 'scaleX(0)'
+    }
+    button.addEventListener('click', () => {
+      if (status) status.textContent = ''
+      if (!audio.paused && !audio.ended) {
+        stopAudio(audio)
+        return
+      }
+      for (const other of bound) {
+        if (other !== audio && !other.paused) stopAudio(other)
+      }
+      const pending = audio.play()
+      if (pending && typeof pending.catch === 'function') {
+        pending.catch(() => {
+          setPlaying(false)
+          if (status) status.textContent = 'This call could not be played.'
+        })
+      }
+    })
+    audio.addEventListener('play', () => setPlaying(true))
+    audio.addEventListener('pause', () => setPlaying(false))
+    audio.addEventListener('ended', () => setPlaying(false))
+    audio.addEventListener('timeupdate', () => {
+      if (!bar || !audio.duration) return
+      const fraction = Math.min(1, audio.currentTime / audio.duration)
+      bar.style.transform = 'scaleX(' + fraction + ')'
+    })
+    bound.push(audio)
+  }
+}
+
 bindTables()
 bindZoom()
 bindSearch()
 bindCopy()
 bindTargets()
+bindCalls()
 showCurrentNav()

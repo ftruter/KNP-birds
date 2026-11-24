@@ -207,7 +207,7 @@ test('species HTML keeps the description in view and the credit in a disclosure'
   assert.equal(calls.length, 2)
   assert.match(
     calls[0][1],
-    /^<audio controls src="\/audio\/xeno-canto\/XC1"><\/audio><details class="credit"/,
+    /^<section class="call-player">[\s\S]*<button type="button" class="call-play" hidden[\s\S]*Play call[\s\S]*<audio controls preload="none" src="\/audio\/xeno-canto\/XC1"><\/audio>[\s\S]*<\/section><details class="credit"/,
   )
   assert.match(calls[0][1], /<summary>Credit: C J Sharp<\/summary>/)
   assert.match(calls[1][1], /<summary>Credit: copper<\/summary>/)

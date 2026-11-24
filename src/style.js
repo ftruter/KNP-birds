@@ -149,6 +149,7 @@ body {
 .wrap {
   width: min(100rem, calc(100% - 2 * var(--gap)));
   margin-inline: auto;
+  padding-inline: env(safe-area-inset-left, 0px) env(safe-area-inset-right, 0px);
   container-type: inline-size;
   container-name: wrap;
 }
@@ -188,6 +189,7 @@ p { text-wrap: pretty; }
   background: var(--header-bg);
   color: var(--header-fg);
   border-block-end: 1px solid var(--line);
+  padding-top: env(safe-area-inset-top, 0px);
 }
 
 /* On the dark page the nav links are cream, so that only the site name and the current page are gold. */
@@ -1023,13 +1025,150 @@ audio {
 .call-list { padding-inline-start: var(--gap); }
 .call-type { font-family: var(--sans); font-weight: 600; color: var(--label); }
 
+/* The calls card is the one place a reader comes to listen, so it is tinted and bordered instead of matching the other comparison cards. */
+.comparison-calls {
+  border: 3px solid var(--brand);
+  background: var(--thead);
+}
+.comparison-calls > h3 {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  font-size: var(--fs-xl);
+}
+.call-section-icon { flex: none; color: var(--brand); }
+.comparison-calls .call-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: var(--gap);
+}
+.call-item { display: grid; gap: var(--gap-half); margin: 0; }
+.call-copy { margin: 0; }
+.call-item .call-player { max-inline-size: 28rem; }
+
+/* Play and stop are one control. The button is hidden until the script connects it; the audio element is the control when the script is off. */
+.call-player { position: relative; }
+.call-play {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+  inline-size: 100%;
+  min-block-size: 4.25rem;
+  padding: 0.7rem 1.25rem;
+  overflow: hidden;
+  border: 3px solid var(--brand);
+  border-radius: var(--radius-pill);
+  background: var(--brand);
+  color: var(--bg);
+  font: 700 1.2rem var(--sans);
+  line-height: 1.2;
+  cursor: pointer;
+  touch-action: manipulation;
+  -webkit-tap-highlight-color: transparent;
+}
+.call-play[hidden] { display: none; }
+.call-play-glyph { display: block; flex: none; }
+.call-play-glyph-stop { display: none; }
+.call-player.is-playing .call-play-glyph-play { display: none; }
+.call-player.is-playing .call-play-glyph-stop { display: block; }
+.call-play-meter {
+  display: none;
+  position: absolute;
+  inset-inline: 0.9rem;
+  inset-block-end: 0.45rem;
+  block-size: 0.35rem;
+  border-radius: var(--radius-pill);
+  background: rgb(0 0 0 / 0.18);
+}
+.call-player.is-playing .call-play-meter { display: block; }
+.call-play-meter-bar {
+  display: block;
+  inline-size: 100%;
+  block-size: 100%;
+  border-radius: inherit;
+  background: currentColor;
+  opacity: 0.7;
+  transform: scaleX(0);
+  transform-origin: left center;
+}
+.call-play-status {
+  margin: var(--gap-half) 0 0;
+  font-family: var(--sans);
+  font-weight: 700;
+  color: var(--accent);
+}
+.call-play-status:empty { display: none; }
+.call-player.is-ready > audio {
+  position: absolute;
+  inline-size: 1px;
+  block-size: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+.call-dock audio {
+  display: block;
+  inline-size: 100%;
+  min-block-size: 3rem;
+}
+
+/* Stays at the bottom of the screen, including above the home indicator when the site is opened from the home screen. */
+.call-dock {
+  position: fixed;
+  z-index: 4;
+  inset-inline: 0;
+  inset-block-end: 0;
+  padding-block: 0.75rem calc(0.75rem + env(safe-area-inset-bottom, 0px));
+  padding-inline: max(var(--gap), env(safe-area-inset-left, 0px)) max(var(--gap), env(safe-area-inset-right, 0px));
+  background: var(--header-bg);
+  color: var(--header-fg);
+  box-shadow: 0 -10px 28px rgb(0 0 0 / 0.22);
+}
+.call-dock:not(:has(audio)) { display: none; }
+.call-dock-bar {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  max-inline-size: 36rem;
+  margin-inline: auto;
+}
+.call-dock .call-player { flex: 1 1 auto; min-inline-size: 0; }
+.call-dock .call-play {
+  border-color: var(--header-fg);
+  background: var(--header-fg);
+  color: var(--header-bg);
+}
+.call-dock .call-play:focus-visible { outline-color: #fff; }
+.call-dock-more {
+  flex: 0 0 auto;
+  display: inline-flex;
+  align-items: center;
+  min-block-size: 3rem;
+  padding-inline: 0.35rem;
+  color: var(--header-fg);
+  font-family: var(--sans);
+  font-weight: 700;
+  font-size: 1.05rem;
+  text-underline-offset: 0.18em;
+}
+body:has(.call-dock) { padding-bottom: calc(6.5rem + env(safe-area-inset-bottom, 0px)); }
+html:has(.plate.is-zoomed) .call-dock { visibility: hidden; pointer-events: none; }
+
 .site-footer {
   background: var(--footer-bg);
   border-block-start: 1px solid var(--line);
-  padding-block: var(--gap);
+  padding-block: var(--gap) calc(var(--gap) + env(safe-area-inset-bottom, 0px));
   font-family: var(--sans);
   font-size: var(--fs-sm);
 }
+body:has(.call-dock) .site-footer { padding-block-end: var(--gap); }
 
 .site-footer p { margin: 0; }
 
@@ -1081,6 +1220,14 @@ audio {
     color: HighlightText;
     box-shadow: none;
   }
+  .call-play, .call-dock {
+    border-color: ButtonText;
+    background: ButtonFace;
+    color: ButtonText;
+    box-shadow: none;
+  }
+  .call-dock .call-play { background: ButtonText; color: ButtonFace; }
+  .call-play-meter { background: ButtonText; }
 }
 
 .sitemap {

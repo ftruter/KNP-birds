@@ -95,6 +95,37 @@ export const CALL_TYPE = {
   other: 'Other',
 }
 
+/**
+ * A sentence that talks about the recording's filename, or that is the
+ * filename. Catalogue ids such as XC123 stay: they name a recording, not a
+ * file. The sentence after a filename sentence is dropped only when it
+ * explains that name ("It says Bee-eater", "Gulerle is the Norwegian name").
+ */
+const FILENAME_SENTENCE =
+  /\bfile(?:'s|’s)?\s*names?\b|\bdate ?stamps?\b|\.(?:mp3|wav|m4a|ogg|flac)\b/i
+
+const FILENAME_FOLLOW =
+  /^(?:it says |it does not name |it includes )\b|\bis the (?:afrikaans|dutch|french|german|norwegian|portuguese|spanish|swedish) name\b/i
+
+/** Call text for a reader: the voice, without filename commentary. */
+export const readerCallText = (value) => {
+  const text = String(value ?? '')
+    .replaceAll(/\s+/g, ' ')
+    .trim()
+  if (!text) return ''
+  const sentences = text.split(/(?<=[.!?])\s+/)
+  const kept = []
+  let dropped = false
+  for (const sentence of sentences) {
+    const filename = FILENAME_SENTENCE.test(sentence)
+    const follow = dropped && FILENAME_FOLLOW.test(sentence)
+    dropped = filename
+    if (filename || follow) continue
+    kept.push(sentence)
+  }
+  return kept.join(' ')
+}
+
 export const TREND_LABEL = {
   increasing: 'Increasing',
   stable: 'Stable',
