@@ -145,6 +145,9 @@ ${families
   )
   .join('\n')}
 </ul>
+<script>
+  document.body.queryElement('nav[aria-label="Families]')?.style.display = 'none'
+</script>
 </nav>`
 }
 

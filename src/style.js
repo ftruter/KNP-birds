@@ -1766,7 +1766,7 @@ body:has(.call-dock) .site-footer { padding-block-end: var(--gap); }
 .taxonomy-tree {
   max-inline-size: 100%;
   max-block-size: min(70dvh, 40rem);
-  margin-block-start: var(--gap);
+  --margin-block-start: var(--gap);
   overflow: auto;
   overscroll-behavior: contain;
   -webkit-overflow-scrolling: touch;
@@ -1778,7 +1778,7 @@ body:has(.call-dock) .site-footer { padding-block-end: var(--gap); }
 }
 
 @media (display-mode: standalone) {
-  .taxonomy-tree { max-block-size: min(78dvh, 44rem); }
+  .taxonomy-tree { --max-block-size: min(78dvh, 44rem); }
 }
 
 .tax-canvas { position: relative; inline-size: max-content; min-inline-size: 100%; }
